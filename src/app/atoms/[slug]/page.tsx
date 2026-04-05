@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { loadAtoms, getAtomBySlug, getAudioUrl } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -20,14 +21,21 @@ export default async function AtomPage({
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", slug);
 
+  // Pluralize type for concept hub URL
+  const typePlural = fm.type === "axiom" ? "axioms"
+    : fm.type === "antipattern" ? "antipatterns"
+    : fm.type + "s";
+
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <Link
-        href="/"
-        className="text-sm text-foreground/40 hover:text-foreground/60 mb-8 block"
-      >
-        &larr; Back
-      </Link>
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Concepts", href: "/#concepts" },
+          { label: typePlural, href: `/concepts/${typePlural}` },
+          { label: fm.title },
+        ]}
+      />
 
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">

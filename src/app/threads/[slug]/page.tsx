@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadThreads, getThreadBySlug, getAtomBySlug, getAudioUrl } from "@/lib/content";
+import { loadThreads, getThreadBySlug, getAtomBySlug, getAudioUrl, getParentPath } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -20,6 +21,9 @@ export default async function ThreadPage({
   const fm = thread.frontmatter;
   const audioUrl = getAudioUrl("threads", slug);
 
+  // Find parent path for breadcrumb
+  const parentPath = await getParentPath(slug);
+
   // Resolve atom references
   const atoms = await Promise.all(
     (fm.atoms ?? []).map(async (id) => {
@@ -28,14 +32,18 @@ export default async function ThreadPage({
     })
   );
 
+  const crumbs: { label: string; href?: string }[] = [{ label: "Home", href: "/" }];
+  if (parentPath) {
+    crumbs.push({
+      label: parentPath.frontmatter.title,
+      href: `/paths/${parentPath.frontmatter.id}`,
+    });
+  }
+  crumbs.push({ label: fm.title });
+
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <Link
-        href="/"
-        className="text-sm text-foreground/40 hover:text-foreground/60 mb-8 block"
-      >
-        &larr; Back
-      </Link>
+      <Breadcrumb crumbs={crumbs} />
 
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">

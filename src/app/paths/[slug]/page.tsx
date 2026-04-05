@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { loadPaths, getPathBySlug, getThreadBySlug, getAudioUrl } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
   const paths = await loadPaths();
@@ -30,14 +31,17 @@ export default async function PathPage({
     })
   );
 
+  const firstAudience = fm.audience?.[0] ?? "beginner";
+
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <Link
-        href="/"
-        className="text-sm text-foreground/40 hover:text-foreground/60 mb-8 block"
-      >
-        &larr; Back
-      </Link>
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Learn", href: `/learn/${firstAudience}` },
+          { label: fm.title },
+        ]}
+      />
 
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">

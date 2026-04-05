@@ -102,6 +102,26 @@ export async function getBridgeBySlug(slug: string) {
   return bridges.find((b) => b.slug === slug);
 }
 
+// ─── Reverse lookups ────────────────────────────────────────────────────────
+
+/** Find the first path that sequences a given thread */
+export async function getParentPath(threadId: string) {
+  const paths = await loadPaths();
+  return paths.find((p) => p.frontmatter.threads?.includes(threadId)) ?? null;
+}
+
+/** Find all threads that compose a given atom */
+export async function getThreadsForAtom(atomId: string) {
+  const threads = await loadThreads();
+  return threads.filter((t) => t.frontmatter.atoms?.includes(atomId));
+}
+
+/** Find all bridges that reference a given atom as an entry atom */
+export async function getBridgesForAtom(atomId: string) {
+  const bridges = await loadBridges();
+  return bridges.filter((b) => b.frontmatter.entry_atoms?.includes(atomId));
+}
+
 // ─── Audio ──────────────────────────────────────────────────────────────────
 
 /**

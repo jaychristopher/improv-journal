@@ -8,6 +8,7 @@ import {
   getAudioUrl,
 } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export async function generateStaticParams() {
   const bridges = await loadBridges();
@@ -154,12 +155,13 @@ export default async function GuidePage({
 
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
-      <Link
-        href="/"
-        className="text-sm text-foreground/40 hover:text-foreground/60 mb-8 block"
-      >
-        &larr; Home
-      </Link>
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Guides", href: "/#guides" },
+          { label: fm.title },
+        ]}
+      />
 
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
