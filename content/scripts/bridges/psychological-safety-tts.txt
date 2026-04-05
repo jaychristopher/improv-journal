@@ -1,0 +1,155 @@
+[contemplative] So Google spent two years and millions of dollars trying to figure out what makes a great team. [pause]
+
+[curious] Project Aristotle, right?
+
+[teaching] Right. They studied 180 teams. Looked at everything. Who was on the team, how senior they were, where they went to school, personality mix, management style. And the single most important factor wasn't any of that.
+
+[leaning in] It was psychological safety.
+
+[serious] Amy Edmondson defined it as a shared belief that the team is safe for interpersonal risk taking. More important than talent. More important than experience. More important than having the smartest people in the room.
+
+[conversational] And everyone agrees it matters. But here's the thing that bugs me. HOW do you build it? Because the standard advice is useless.
+
+[matter-of-fact] "Create a culture of trust." "Model vulnerability." "Frame failure as learning."
+
+[emphatic] Those are descriptions of the output. They say nothing about the mechanism. It's like telling someone to bake a cake by saying "make it taste good."
+
+[curious] So is there an actual mechanism? Something structural?
+
+[teaching] There is. And it was discovered by a practice that's been building functional trust in strangers for sixty years. [pause]
+
+[conversational] Let me guess. Improv.
+
+[warm] An improv ensemble, six strangers who've never performed together, can achieve functional trust within a single warm-up. Not because they happen to be trusting people. Because the warm-up structurally produces the conditions under which trust emerges.
+
+[curious] Structurally. What does that mean exactly?
+
+[serious] Viola Spolin, who invented modern improv pedagogy in the 1960s, didn't tell teachers to "be nicer to students." She redesigned the container. She identified what she called the Approval/Disapproval Syndrome. From birth, we get categorized as good or bad, and we become so enmeshed with that dynamic that we're creatively paralyzed.
+
+[leaning in] So what did she do about it?
+
+[emphatic] She replaced the teacher's evaluative authority with a shared problem to solve. She called it the Point of Concentration. When everyone's attention is on the problem rather than on performance evaluation, the approval/disapproval dynamic can't operate.
+
+[contemplative] So safety wasn't a feeling she cultivated. It was a structural condition she engineered.
+
+[teaching] Exactly. And that distinction is everything.
+
+[curious] Okay, so what's the framework? Why does trust break so easily?
+
+[serious] Every team operates in a shared reality. A collective understanding of the project, the problem, the priorities. And here's the critical thing. That shared reality has no external substrate. It exists only in the ongoing signals between people. [pause]
+
+[matter-of-fact] Like an improv scene. No script, no blueprint.
+
+[teaching] Right. Two performers building a scene have nothing to fall back on. Their shared reality exists only in the offers they make and accept. And three things make that shared reality fragile.
+
+[curious] Three things.
+
+[emphatic] First. Every rejection of input forks the reality.
+
+[conversational] Forks it?
+
+[serious] In improv, this is called blocking. When you dismiss someone's contribution, redirect it, or just ignore it, the shared reality splits. They're now tracking a different version of the conversation than everyone else. Over time, the team APPEARS aligned but is actually operating on divergent models.
+
+[leaning in] And nobody can see the divergence from inside.
+
+[curious] What's the second?
+
+[teaching] Self-censorship degrades signal quality. When people feel unsafe, they distort their signals. They say "sounds good" when they see problems. They nod in meetings and raise objections in private Slack messages. They hedge and qualify and route around the official conversation.
+
+[serious] Every distorted signal is corrupted data entering the team's shared model. Bad decisions happen not because people are stupid but because the group is operating on corrupted data.
+
+[emphatic] That's a really important reframe. It's not a people problem. It's a signal quality problem.
+
+[teaching] And the third thing. Self-censorship burns bandwidth. Before every contribution in an unsafe environment, a person runs an internal simulation. Is this safe to say? How will it land? Who might take offense?
+
+[conversational] That simulation draws from the same cognitive resource pool as the actual work.
+
+[warm] It's like trying to collaborate over a 56K modem connection. The signal exists, but the throughput is so throttled by defensive overhead that the collaboration degrades.
+
+[curious] Okay I want to talk about "yes, and" because everyone's heard it, and everyone rolls their eyes at it.
+
+[conversational] The corporate workshop version.
+
+[emphatic] Right. And the corporate version strips out everything that makes the principle work. Here's what it actually means mechanically.
+
+[teaching] "Yes" means I acknowledge that what you just introduced is now part of our shared reality. Not "I agree with you." Not "that's a great idea." Just: I received your signal, and I'm incorporating it into our shared model.
+
+[curious] And the "and" part?
+
+[serious] "And" means I'm building on what you gave me rather than replacing it. This preserves the shared context instead of forcing the group to rebuild from scratch.
+
+[contemplative] So it's not about being agreeable. It's about maintaining the integrity of the shared model.
+
+[emphatic] The opposite, blocking, is when someone's input is treated as if it was never made. The words might be polite. "That's interesting, but..." But the effect is structural. The shared reality didn't update with the new information.
+
+[serious] And the contributor learns that their signals don't get processed. So over time [short pause]
+
+[matter-of-fact] They stop sending them.
+
+[teaching] That's the mechanism behind Edmondson's finding. Psychological safety isn't about niceness. It's about whether the team's communication channel is operating at full fidelity or throttled by defensive noise.
+
+[leaning in] So what do you actually DO with this? Like, Monday morning, in a real team?
+
+[warm] Four structural behaviors. First: accept offers before evaluating them. When someone raises an idea, a problem, or an objection, the first move is to incorporate it. "What does this tell us?" Not to evaluate it. "Is this right?" Evaluation comes later. Incorporation comes first.
+
+[curious] Diverge before you converge.
+
+[teaching] Second: send honest signals. This requires safety to already exist, which is why it's a continuous process, not a one-time setup. But it also builds safety. When one person models honest signaling and isn't punished for it, the threshold for honesty drops for everyone.
+
+[conversational] So someone has to go first.
+
+[serious] Someone always has to go first.
+
+[emphatic] Third: make support visible. In improv, the highest-status move is making your partner look good. Building on their offer so it becomes the scene's best moment.
+
+[curious] What does that look like in a meeting?
+
+[warm] Taking someone's half-formed idea and developing it further, publicly. Not "that's a good idea," which is evaluation. But "if we took that further, we could..." which is building.
+
+[matter-of-fact] The difference between clapping and joining in.
+
+[teaching] And fourth: name the fractures. When the shared reality has diverged, when different people clearly have different understandings, say it out loud. "I think we might be tracking different versions of this. Let me check."
+
+[conversational] That's not conflict. That's repair.
+
+[serious] Exactly. It's debugging the shared model.
+
+[curious] Can I play devil's advocate for a second?
+
+[conversational] Please.
+
+[leaning in] If improv builds trust so well, why don't we just do improv exercises with our teams?
+
+[emphatic] Do NOT do improv exercises with your team to build psychological safety.
+
+[surprised] Wait, what?
+
+[serious] This reverses the causal arrow. Psychological safety enables the kind of risk-taking that improv requires. If safety hasn't been established first, the exercises become threat events.
+
+[teaching] The person who "fails" at an improv game in front of their boss hasn't practiced vulnerability. They've been involuntarily exposed.
+
+[contemplative] That's [short pause] yeah. That's exactly what those corporate workshops feel like.
+
+[warm] As one researcher put it: you can't force a flower to bloom by pulling its petals open. You can't manufacture intimacy by demanding vulnerability.
+
+[matter-of-fact] Build the structural conditions first. Then, if you want, use exercises to deepen what's already there.
+
+[curious] I appreciate the honesty. What does the research actually say about the improv-to-workplace transfer?
+
+[teaching] The honest answer: it's theoretically compelling but empirically undersupported. A literature review found only limited empirical research on the workplace application of improvisation training. Google validated the concept of psychological safety. They did not validate improv as the method for building it.
+
+[serious] So what improv provides isn't a proven intervention.
+
+[emphatic] What it provides is a structural framework. Principles about signal quality, offer acceptance, and shared reality maintenance, discovered under the most demanding conditions, real-time creation in front of an audience, and applicable wherever humans build shared understanding in real time.
+
+[contemplative] The physics are the same. [pause]
+
+[warm] The stage just makes them visible.
+
+[conversational] So to bring it back. The next time you're in a meeting and someone's idea gets dismissed and they go quiet for the rest of the hour [short pause]
+
+[serious] That's not a personality thing. That's a signal processing failure. The channel rejected their input. They learned the channel doesn't process their data. So they stopped transmitting.
+
+[emphatic] And every person who goes quiet is bandwidth your team just lost.
+
+[warm] Build the structure. Accept the offers. Watch what happens when people believe their signals actually get through.
