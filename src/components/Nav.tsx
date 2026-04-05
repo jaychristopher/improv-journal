@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { href: "/#guides", label: "Guides" },
   { href: "/#learn", label: "Learn" },
   { href: "/#concepts", label: "Concepts" },
+  { href: "/library", label: "Library" },
 ];
 
 export function Nav() {
