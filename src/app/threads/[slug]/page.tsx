@@ -21,8 +21,29 @@ export default async function ThreadPage({
   const fm = thread.frontmatter;
   const audioUrl = getAudioUrl("threads", slug);
 
-  // Find parent path for breadcrumb
+  // Find parent path for breadcrumb + prev/next
   const parentPath = await getParentPath(slug);
+
+  // Compute prev/next threads within the parent path
+  let prevThread: { id: string; title: string } | null = null;
+  let nextThread: { id: string; title: string } | null = null;
+  let positionInPath: { current: number; total: number } | null = null;
+
+  if (parentPath) {
+    const siblingIds = parentPath.frontmatter.threads ?? [];
+    const idx = siblingIds.indexOf(slug);
+    if (idx !== -1) {
+      positionInPath = { current: idx + 1, total: siblingIds.length };
+      if (idx > 0) {
+        const prev = await getThreadBySlug(siblingIds[idx - 1]);
+        if (prev) prevThread = { id: prev.frontmatter.id, title: prev.frontmatter.title };
+      }
+      if (idx < siblingIds.length - 1) {
+        const next = await getThreadBySlug(siblingIds[idx + 1]);
+        if (next) nextThread = { id: next.frontmatter.id, title: next.frontmatter.title };
+      }
+    }
+  }
 
   // Resolve atom references
   const atoms = await Promise.all(
@@ -48,6 +69,9 @@ export default async function ThreadPage({
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
           thread
+          {positionInPath && (
+            <> · {positionInPath.current} of {positionInPath.total}</>
+          )}
         </span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
         <div className="mt-3 flex flex-wrap gap-2">
@@ -89,6 +113,42 @@ export default async function ThreadPage({
           ))}
         </ul>
       </nav>
+
+      {/* Prev/Next within path */}
+      {(prevThread || nextThread) && (
+        <nav className="mt-8 pt-8 border-t border-foreground/10 flex justify-between items-start">
+          <div>
+            {prevThread && (
+              <Link
+                href={`/threads/${prevThread.id}`}
+                className="group"
+              >
+                <span className="text-xs text-foreground/40 group-hover:text-foreground/60">
+                  &larr; Previous
+                </span>
+                <span className="block text-sm font-medium group-hover:underline">
+                  {prevThread.title}
+                </span>
+              </Link>
+            )}
+          </div>
+          <div className="text-right">
+            {nextThread && (
+              <Link
+                href={`/threads/${nextThread.id}`}
+                className="group"
+              >
+                <span className="text-xs text-foreground/40 group-hover:text-foreground/60">
+                  Next &rarr;
+                </span>
+                <span className="block text-sm font-medium group-hover:underline">
+                  {nextThread.title}
+                </span>
+              </Link>
+            )}
+          </div>
+        </nav>
+      )}
     </main>
   );
 }
