@@ -1,7 +1,7 @@
 ---
 id: emotional-truth
 title: Emotional Truth
-type: principle
+type: technique
 status: seed
 tags: [techniques, north-stars, authenticity, vulnerability]
 links:
