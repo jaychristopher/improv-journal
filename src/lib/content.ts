@@ -13,6 +13,7 @@ import { glob } from "glob";
 import type {
   SourceFrontmatter,
   AtomFrontmatter,
+  AtomType,
   ThreadFrontmatter,
   PathFrontmatter,
   BridgeFrontmatter,
@@ -100,6 +101,55 @@ export async function loadBridges() {
 export async function getBridgeBySlug(slug: string) {
   const bridges = await loadBridges();
   return bridges.find((b) => b.slug === slug);
+}
+
+// ─── URL resolution ─────────────────────────────────────────────────────────
+
+/** Resolve an atom to its canonical URL based on type */
+export function getAtomUrl(atom: { id: string; type: AtomType }): string {
+  switch (atom.type) {
+    case "axiom":
+    case "insight":
+      return `/system/${atom.id}`;
+    case "principle":
+      return `/system/principles/${atom.id}`;
+    case "antipattern":
+    case "pattern":
+    case "framework":
+      return `/system/diagnosis/${atom.id}`;
+    case "exercise":
+      return `/practice/exercises/${atom.id}`;
+    case "technique":
+    case "pedagogy":
+      return `/practice/techniques/${atom.id}`;
+    case "format":
+      return `/practice/formats/${atom.id}`;
+    case "definition":
+      return `/practice/vocabulary/${atom.id}`;
+    case "reference":
+      return `/library/${atom.id}`;
+    default:
+      return `/system/${atom.id}`;
+  }
+}
+
+/** Resolve an atom ID to its URL (loads atom to determine type) */
+export async function getAtomUrlById(id: string): Promise<string> {
+  const atom = await getAtomBySlug(id);
+  if (!atom) return `/system/${id}`;
+  return getAtomUrl({ id, type: atom.frontmatter.type });
+}
+
+/** Generate redirect entries for all atoms: old /atoms/{id} → new URL */
+export async function getAtomRedirects(): Promise<
+  { source: string; destination: string; permanent: boolean }[]
+> {
+  const atoms = await loadAtoms();
+  return atoms.map((a) => ({
+    source: `/atoms/${a.frontmatter.id}`,
+    destination: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+    permanent: true,
+  }));
 }
 
 // ─── Reverse lookups ────────────────────────────────────────────────────────
