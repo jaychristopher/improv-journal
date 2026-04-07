@@ -41,7 +41,13 @@ export default async function ShowPage({
         <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
         <p className="text-foreground/60 mt-2">{fm.description}</p>
         <p className="text-sm text-foreground/40 mt-2">
-          {totalEpisodes} episodes
+          {totalEpisodes} episodes &middot;{" "}
+          <Link
+            href={`/listen/${fm.id}/feed.xml`}
+            className="hover:text-foreground/60"
+          >
+            RSS Feed
+          </Link>
         </p>
       </header>
 
