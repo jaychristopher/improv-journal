@@ -17,7 +17,7 @@ export function Nav() {
           href="/"
           className="font-semibold text-sm tracking-tight"
         >
-          Improv Journal
+          Physics of Connection
         </Link>
         <div className="flex gap-4">
           {NAV_ITEMS.map((item) => (

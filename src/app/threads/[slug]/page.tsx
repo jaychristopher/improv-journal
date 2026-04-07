@@ -76,19 +76,6 @@ export default async function ThreadPage({
           )}
         </span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {fm.tags?.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs px-2 py-0.5 rounded-full bg-foreground/5 text-foreground/50"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        <span className="text-xs text-foreground/30 mt-2 block">
-          Status: {fm.status}
-        </span>
       </header>
 
       {audioUrl && <AudioPlayer src={audioUrl} />}

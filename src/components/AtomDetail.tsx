@@ -14,6 +14,29 @@ import type { AtomFrontmatter } from "@/lib/schema";
 import fs from "fs";
 import path from "path";
 
+const TYPE_LABELS: Record<string, string> = {
+  principle: "principle",
+  technique: "technique",
+  exercise: "exercise",
+  insight: "insight",
+  definition: "concept",
+  pattern: "pattern",
+  antipattern: "failure mode",
+  axiom: "axiom",
+  framework: "framework",
+  format: "format",
+  pedagogy: "teaching method",
+  reference: "reference",
+};
+
+const RELATION_LABELS: Record<string, string> = {
+  requires: "builds on",
+  enables: "unlocks",
+  contrasts: "compare with",
+  extends: "related",
+  illustrates: "example of",
+};
+
 interface AtomDetailProps {
   atom: {
     frontmatter: AtomFrontmatter;
@@ -85,19 +108,9 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
 
       <header className="mb-8">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
-          {fm.type}
+          {TYPE_LABELS[fm.type] ?? fm.type}
         </span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {fm.tags?.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs px-2 py-0.5 rounded-full bg-foreground/5 text-foreground/50"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
       </header>
 
       {audioUrl && (
@@ -129,7 +142,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
                   {link.title}
                 </Link>
                 <span className="text-xs text-foreground/40 ml-2">
-                  {link.relation}
+                  {RELATION_LABELS[link.relation] ?? link.relation}
                 </span>
               </li>
             ))}
@@ -201,7 +214,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
           {appearsInBridges.length > 0 && (
             <div>
               <h3 className="text-xs text-foreground/30 mb-2">
-                Featured in guides
+                Guides
               </h3>
               <ul className="space-y-1">
                 {appearsInBridges.map((b) => (
