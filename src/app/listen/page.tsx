@@ -1,113 +1,105 @@
 import Link from "next/link";
-import { loadBridges, loadPaths, loadThreads, loadAtoms, getAudioUrl, getAtomUrl } from "@/lib/content";
-
-interface Episode {
-  title: string;
-  href: string;
-  audioUrl: string;
-  category: string;
-}
+import { loadShows, getEpisodesForShow, getAudioUrl } from "@/lib/content";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export default async function ListenPage() {
-  const [bridges, paths, threads, atoms] = await Promise.all([
-    loadBridges(),
-    loadPaths(),
-    loadThreads(),
-    loadAtoms(),
-  ]);
+  const shows = await loadShows();
 
-  const episodes: Episode[] = [];
+  // Resolve episode counts and find a featured episode
+  const showsWithCounts = await Promise.all(
+    shows.map(async (s) => {
+      const seasons = await getEpisodesForShow(s.frontmatter.id);
+      const totalEpisodes = seasons.reduce(
+        (sum, season) => sum + season.episodes.length,
+        0
+      );
+      const firstEpisode = seasons[0]?.episodes[0] ?? null;
+      return {
+        id: s.frontmatter.id,
+        title: s.frontmatter.title,
+        description: s.frontmatter.description,
+        episodeCount: totalEpisodes,
+        firstEpisode,
+      };
+    })
+  );
 
-  // Bridge episodes
-  for (const b of bridges) {
-    const audio = getAudioUrl("bridges", b.slug);
-    if (audio) {
-      episodes.push({ title: b.frontmatter.title, href: `/${b.slug}`, audioUrl: audio, category: "Guides" });
-    }
-  }
+  const totalEpisodes = showsWithCounts.reduce(
+    (sum, s) => sum + s.episodeCount,
+    0
+  );
 
-  // Path episodes
-  for (const p of paths) {
-    const audio = getAudioUrl("paths", p.frontmatter.id);
-    if (audio) {
-      episodes.push({ title: p.frontmatter.title, href: `/paths/${p.frontmatter.id}`, audioUrl: audio, category: "Paths" });
-    }
-  }
-
-  // Thread episodes
-  for (const t of threads) {
-    const audio = getAudioUrl("threads", t.frontmatter.id);
-    if (audio) {
-      episodes.push({ title: t.frontmatter.title, href: `/threads/${t.frontmatter.id}`, audioUrl: audio, category: "Threads" });
-    }
-  }
-
-  // Atom episodes (principles + exercises)
-  for (const a of atoms) {
-    const audio = getAudioUrl("atoms", a.frontmatter.id);
-    if (audio) {
-      episodes.push({
-        title: a.frontmatter.title,
-        href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
-        audioUrl: audio,
-        category: a.frontmatter.type === "principle" ? "Principles" : "Exercises",
-      });
-    }
-  }
-
-  // Group by category
-  const categories = ["Guides", "Paths", "Threads", "Principles", "Exercises"];
-  const grouped = new Map<string, Episode[]>();
-  for (const cat of categories) {
-    const catEpisodes = episodes.filter((e) => e.category === cat);
-    if (catEpisodes.length > 0) grouped.set(cat, catEpisodes);
-  }
+  // Feature the flagship show's first episode
+  const flagship = showsWithCounts.find(
+    (s) => s.id === "physics-of-connection"
+  );
+  const featured = flagship?.firstEpisode ?? null;
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
+      <Breadcrumb
+        crumbs={[{ label: "Home", href: "/" }, { label: "Listen" }]}
+      />
+
       <header className="mb-12">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
           podcast
         </span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">Listen</h1>
         <p className="text-foreground/60 mt-2">
-          {episodes.length} two-host conversations exploring the physics of
-          human connection. Chris asks the questions; Sarah has the framework.
+          {totalEpisodes} conversations between Chris and Sarah — exploring the
+          physics of human connection through the lens of improvisation.
         </p>
       </header>
 
-      {Array.from(grouped.entries()).map(([category, eps]) => (
-        <section key={category} className="mb-12">
-          <h2 className="text-lg font-semibold mb-4">
-            {category}{" "}
-            <span className="text-foreground/40 font-normal">
-              ({eps.length})
-            </span>
+      {/* Featured episode */}
+      {featured && (
+        <section className="mb-12">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+            Featured
           </h2>
-          <div className="space-y-4">
-            {eps.map((ep) => (
-              <div
-                key={ep.href}
-                className="border border-foreground/10 rounded-lg p-4"
-              >
-                <Link
-                  href={ep.href}
-                  className="font-medium text-sm hover:underline"
-                >
-                  {ep.title}
-                </Link>
-                <audio
-                  controls
-                  preload="none"
-                  className="w-full mt-2"
-                >
-                  <source src={ep.audioUrl} type="audio/mpeg" />
-                </audio>
-              </div>
-            ))}
+          <div className="border border-foreground/10 rounded-lg p-5">
+            <Link
+              href={featured.href}
+              className="font-medium hover:underline"
+            >
+              {featured.title}
+            </Link>
+            {featured.description && (
+              <p className="text-sm text-foreground/50 mt-1">
+                {featured.description}
+              </p>
+            )}
+            <audio controls preload="none" className="w-full mt-3">
+              <source src={featured.audioUrl} type="audio/mpeg" />
+            </audio>
           </div>
         </section>
-      ))}
+      )}
+
+      {/* Show cards */}
+      <section>
+        <h2 className="text-lg font-semibold mb-4">Three Shows</h2>
+        <div className="space-y-4">
+          {showsWithCounts.map((s) => (
+            <Link
+              key={s.id}
+              href={`/listen/${s.id}`}
+              className="block border border-foreground/10 rounded-lg p-5 hover:border-foreground/30 transition-colors"
+            >
+              <div className="flex justify-between items-baseline">
+                <h3 className="font-semibold">{s.title}</h3>
+                <span className="text-sm text-foreground/40">
+                  {s.episodeCount} episodes
+                </span>
+              </div>
+              <p className="text-sm text-foreground/50 mt-1">
+                {s.description}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
