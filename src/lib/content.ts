@@ -17,6 +17,7 @@ import type {
   ThreadFrontmatter,
   PathFrontmatter,
   BridgeFrontmatter,
+  ShowFrontmatter,
   KnowledgeGraph,
   GraphNode,
   GraphEdge,
@@ -101,6 +102,77 @@ export async function loadBridges() {
 export async function getBridgeBySlug(slug: string) {
   const bridges = await loadBridges();
   return bridges.find((b) => b.slug === slug);
+}
+
+// ─── Shows (podcast) ────────────────────────────────────────────────────────
+
+export async function loadShows() {
+  return loadFiles<ShowFrontmatter>("shows");
+}
+
+export async function getShowBySlug(slug: string) {
+  const shows = await loadShows();
+  return shows.find((s) => s.frontmatter.id === slug);
+}
+
+export interface Episode {
+  title: string;
+  href: string;
+  audioUrl: string;
+  description?: string;
+}
+
+/** Resolve all episodes for a show season filter */
+export async function getEpisodesForShow(showId: string): Promise<{ label: string; episodes: Episode[] }[]> {
+  const show = await getShowBySlug(showId);
+  if (!show) return [];
+
+  const [bridges, atoms, threads, paths] = await Promise.all([
+    loadBridges(), loadAtoms(), loadThreads(), loadPaths(),
+  ]);
+
+  const seasons: { label: string; episodes: Episode[] }[] = [];
+
+  for (const season of show.frontmatter.seasons) {
+    const eps: Episode[] = [];
+    const filter = season.filter;
+
+    if (filter.content_type === "bridge") {
+      for (const b of bridges) {
+        const audio = getAudioUrl("bridges", b.slug);
+        if (audio) {
+          eps.push({ title: b.frontmatter.title, href: `/${b.slug}`, audioUrl: audio, description: b.frontmatter.description });
+        }
+      }
+    } else if (filter.content_type === "atom" && filter.atom_types) {
+      for (const a of atoms) {
+        if (filter.atom_types.includes(a.frontmatter.type)) {
+          const audio = getAudioUrl("atoms", a.frontmatter.id);
+          if (audio) {
+            eps.push({ title: a.frontmatter.title, href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }), audioUrl: audio });
+          }
+        }
+      }
+    } else if (filter.content_type === "thread") {
+      for (const t of threads) {
+        const audio = getAudioUrl("threads", t.frontmatter.id);
+        if (audio) {
+          eps.push({ title: t.frontmatter.title, href: `/threads/${t.frontmatter.id}`, audioUrl: audio });
+        }
+      }
+    } else if (filter.content_type === "path") {
+      for (const p of paths) {
+        const audio = getAudioUrl("paths", p.frontmatter.id);
+        if (audio) {
+          eps.push({ title: p.frontmatter.title, href: `/paths/${p.frontmatter.id}`, audioUrl: audio });
+        }
+      }
+    }
+
+    seasons.push({ label: season.label, episodes: eps });
+  }
+
+  return seasons;
 }
 
 // ─── Traditions ─────────────────────────────────────────────────────────────

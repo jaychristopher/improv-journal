@@ -40,6 +40,26 @@ export interface Link {
   relation: "requires" | "enables" | "contrasts" | "extends" | "illustrates";
 }
 
+// ─── Shows (podcast) ────────────────────────────────────────────────────────
+
+export interface ShowEpisodeFilter {
+  content_type: "bridge" | "atom" | "thread" | "path";
+  atom_types?: AtomType[];  // only for content_type "atom"
+}
+
+export interface ShowSeason {
+  label: string;
+  filter: ShowEpisodeFilter;
+}
+
+export interface ShowFrontmatter {
+  id: string;
+  title: string;
+  description: string;
+  seasons: ShowSeason[];
+  created: string;
+}
+
 // ─── Atoms ───────────────────────────────────────────────────────────────────
 
 export interface SourceFrontmatter {
