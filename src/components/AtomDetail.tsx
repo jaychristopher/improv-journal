@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
+import { PodcastJsonLd } from "./PodcastJsonLd";
 import {
   getAtomUrl,
   getAudioUrl,
@@ -10,6 +11,8 @@ import {
   getAtomBySlug,
 } from "@/lib/content";
 import type { AtomFrontmatter } from "@/lib/schema";
+import fs from "fs";
+import path from "path";
 
 interface AtomDetailProps {
   atom: {
@@ -23,6 +26,17 @@ interface AtomDetailProps {
 export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", atom.slug);
+  const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
+
+  // Get duration for structured data
+  let audioDuration: string | undefined;
+  if (audioUrl) {
+    try {
+      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
+      const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
+      audioDuration = durations[audioUrl]?.formatted;
+    } catch { /* no duration cache */ }
+  }
 
   // Reverse lookups
   const [appearsInThreads, appearsInBridges] = await Promise.all([
@@ -86,7 +100,17 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
         </div>
       </header>
 
-      {audioUrl && <AudioPlayer src={audioUrl} />}
+      {audioUrl && (
+        <>
+          <AudioPlayer src={audioUrl} />
+          <PodcastJsonLd
+            title={fm.title}
+            audioUrl={audioUrl}
+            pageUrl={atomUrl}
+            duration={audioDuration}
+          />
+        </>
+      )}
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"

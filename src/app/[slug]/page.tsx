@@ -10,6 +10,9 @@ import {
 } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { PodcastJsonLd } from "@/components/PodcastJsonLd";
+import fs from "fs";
+import path from "path";
 import type { AtomType } from "@/lib/schema";
 
 export async function generateStaticParams() {
@@ -155,6 +158,16 @@ export default async function BridgePage({
   const entryPath = fm.entry_path ? await getPathBySlug(fm.entry_path) : null;
   const audioUrl = getAudioUrl("bridges", slug);
 
+  // Get duration for structured data
+  let audioDuration: string | undefined;
+  if (audioUrl) {
+    try {
+      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
+      const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
+      audioDuration = durations[audioUrl]?.formatted;
+    } catch { /* no duration cache */ }
+  }
+
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: fm.title }]} />
@@ -164,7 +177,18 @@ export default async function BridgePage({
         <p className="text-foreground/60 mt-2 text-sm">{fm.description}</p>
       </header>
 
-      {audioUrl && <AudioPlayer src={audioUrl} />}
+      {audioUrl && (
+        <>
+          <AudioPlayer src={audioUrl} />
+          <PodcastJsonLd
+            title={fm.title}
+            description={fm.description}
+            audioUrl={audioUrl}
+            pageUrl={`/${slug}`}
+            duration={audioDuration}
+          />
+        </>
+      )}
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"

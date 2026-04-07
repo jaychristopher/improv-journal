@@ -117,7 +117,7 @@ export default async function ShowPage({
                     href={ep.href}
                     className="text-xs text-foreground/40 hover:text-foreground/60 shrink-0 ml-3"
                   >
-                    Read &rarr;
+                    Transcript &rarr;
                   </Link>
                 </div>
                 {ep.description && (
