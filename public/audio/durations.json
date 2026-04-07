@@ -1,0 +1,262 @@
+{
+  "/audio/threads/traditions-in-tension.mp3": {
+    "seconds": 392,
+    "formatted": "6:32"
+  },
+  "/audio/threads/the-teachers-toolkit.mp3": {
+    "seconds": 333,
+    "formatted": "5:33"
+  },
+  "/audio/threads/the-system-underneath.mp3": {
+    "seconds": 260,
+    "formatted": "4:20"
+  },
+  "/audio/threads/the-plateau-is-a-map.mp3": {
+    "seconds": 269,
+    "formatted": "4:29"
+  },
+  "/audio/threads/the-performers-edge.mp3": {
+    "seconds": 289,
+    "formatted": "4:49"
+  },
+  "/audio/threads/the-game-beneath-the-game.mp3": {
+    "seconds": 276,
+    "formatted": "4:36"
+  },
+  "/audio/threads/show-as-architecture.mp3": {
+    "seconds": 278,
+    "formatted": "4:38"
+  },
+  "/audio/threads/quieting-the-planning-mind.mp3": {
+    "seconds": 268,
+    "formatted": "4:28"
+  },
+  "/audio/threads/presence-and-commitment.mp3": {
+    "seconds": 266,
+    "formatted": "4:26"
+  },
+  "/audio/threads/playing-together-at-the-highest-level.mp3": {
+    "seconds": 258,
+    "formatted": "4:18"
+  },
+  "/audio/threads/physics-of-every-room.mp3": {
+    "seconds": 301,
+    "formatted": "5:01"
+  },
+  "/audio/threads/hardest-thing-youll-never-plan.mp3": {
+    "seconds": 307,
+    "formatted": "5:07"
+  },
+  "/audio/threads/first-rule-you-already-know.mp3": {
+    "seconds": 250,
+    "formatted": "4:10"
+  },
+  "/audio/threads/empty-stage-problem.mp3": {
+    "seconds": 244,
+    "formatted": "4:04"
+  },
+  "/audio/threads/diagnosing-scene-failure.mp3": {
+    "seconds": 258,
+    "formatted": "4:18"
+  },
+  "/audio/threads/conversation-that-felt-like-magic.mp3": {
+    "seconds": 191,
+    "formatted": "3:11"
+  },
+  "/audio/threads/clear-signal-simple-signal.mp3": {
+    "seconds": 320,
+    "formatted": "5:20"
+  },
+  "/audio/threads/character-as-discovery.mp3": {
+    "seconds": 261,
+    "formatted": "4:21"
+  },
+  "/audio/threads/building-on-offers.mp3": {
+    "seconds": 194,
+    "formatted": "3:14"
+  },
+  "/audio/threads/beyond-the-harold.mp3": {
+    "seconds": 256,
+    "formatted": "4:16"
+  },
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 217,
+    "formatted": "3:37"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 185,
+    "formatted": "3:05"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 223,
+    "formatted": "3:43"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 187,
+    "formatted": "3:07"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 199,
+    "formatted": "3:19"
+  },
+  "/audio/bridges/team-building-activities.mp3": {
+    "seconds": 557,
+    "formatted": "9:17"
+  },
+  "/audio/bridges/stage-fright.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/psychological-safety.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-stop-overthinking.mp3": {
+    "seconds": 568,
+    "formatted": "9:28"
+  },
+  "/audio/bridges/how-to-give-feedback.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-deal-with-conflict.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/how-to-be-more-creative.mp3": {
+    "seconds": 510,
+    "formatted": "8:30"
+  },
+  "/audio/bridges/how-to-be-more-confident.mp3": {
+    "seconds": 530,
+    "formatted": "8:50"
+  },
+  "/audio/bridges/how-to-be-funny.mp3": {
+    "seconds": 531,
+    "formatted": "8:51"
+  },
+  "/audio/bridges/active-listening.mp3": {
+    "seconds": 617,
+    "formatted": "10:17"
+  },
+  "/audio/atoms/yes-and-chain.mp3": {
+    "seconds": 164,
+    "formatted": "2:44"
+  },
+  "/audio/atoms/status-transfer.mp3": {
+    "seconds": 157,
+    "formatted": "2:37"
+  },
+  "/audio/atoms/space-work-scene.mp3": {
+    "seconds": 158,
+    "formatted": "2:38"
+  },
+  "/audio/atoms/organic-opening-exercise.mp3": {
+    "seconds": 150,
+    "formatted": "2:30"
+  },
+  "/audio/atoms/one-word-scene.mp3": {
+    "seconds": 141,
+    "formatted": "2:21"
+  },
+  "/audio/atoms/no-backspace-scene.mp3": {
+    "seconds": 145,
+    "formatted": "2:25"
+  },
+  "/audio/atoms/mirroring.mp3": {
+    "seconds": 149,
+    "formatted": "2:29"
+  },
+  "/audio/atoms/last-word-response.mp3": {
+    "seconds": 139,
+    "formatted": "2:19"
+  },
+  "/audio/atoms/group-mind-cultivation.mp3": {
+    "seconds": 156,
+    "formatted": "2:36"
+  },
+  "/audio/atoms/gift-giving.mp3": {
+    "seconds": 147,
+    "formatted": "2:27"
+  },
+  "/audio/atoms/genre-scene.mp3": {
+    "seconds": 155,
+    "formatted": "2:35"
+  },
+  "/audio/atoms/fracture-repair-drill.mp3": {
+    "seconds": 156,
+    "formatted": "2:36"
+  },
+  "/audio/atoms/first-line-drill.mp3": {
+    "seconds": 147,
+    "formatted": "2:27"
+  },
+  "/audio/atoms/emotional-truth.mp3": {
+    "seconds": 204,
+    "formatted": "3:24"
+  },
+  "/audio/atoms/emotional-honesty-scene.mp3": {
+    "seconds": 148,
+    "formatted": "2:28"
+  },
+  "/audio/atoms/emotion-switch.mp3": {
+    "seconds": 153,
+    "formatted": "2:33"
+  },
+  "/audio/atoms/directed-scene.mp3": {
+    "seconds": 168,
+    "formatted": "2:48"
+  },
+  "/audio/atoms/blind-offer.mp3": {
+    "seconds": 168,
+    "formatted": "2:48"
+  },
+  "/audio/atoms/be-thankful.mp3": {
+    "seconds": 203,
+    "formatted": "3:23"
+  },
+  "/audio/atoms/be-supportive.mp3": {
+    "seconds": 206,
+    "formatted": "3:26"
+  },
+  "/audio/atoms/be-simple.mp3": {
+    "seconds": 204,
+    "formatted": "3:24"
+  },
+  "/audio/atoms/be-present.mp3": {
+    "seconds": 204,
+    "formatted": "3:24"
+  },
+  "/audio/atoms/be-positive.mp3": {
+    "seconds": 188,
+    "formatted": "3:08"
+  },
+  "/audio/atoms/be-honest.mp3": {
+    "seconds": 200,
+    "formatted": "3:20"
+  },
+  "/audio/atoms/be-changeable.mp3": {
+    "seconds": 212,
+    "formatted": "3:32"
+  },
+  "/audio/atoms/be-brave.mp3": {
+    "seconds": 215,
+    "formatted": "3:35"
+  }
+}

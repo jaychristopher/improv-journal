@@ -94,12 +94,19 @@ export default async function ShowPage({
                 className="border border-foreground/10 rounded-lg p-4"
               >
                 <div className="flex justify-between items-start">
-                  <Link
-                    href={ep.href}
-                    className="font-medium text-sm hover:underline"
-                  >
-                    {ep.title}
-                  </Link>
+                  <div>
+                    <Link
+                      href={ep.href}
+                      className="font-medium text-sm hover:underline"
+                    >
+                      {ep.title}
+                    </Link>
+                    {ep.duration && (
+                      <span className="text-xs text-foreground/30 ml-2">
+                        {ep.duration}
+                      </span>
+                    )}
+                  </div>
                   <Link
                     href={ep.href}
                     className="text-xs text-foreground/40 hover:text-foreground/60 shrink-0 ml-3"

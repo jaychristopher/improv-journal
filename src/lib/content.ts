@@ -120,6 +120,23 @@ export interface Episode {
   href: string;
   audioUrl: string;
   description?: string;
+  duration?: string; // formatted, e.g. "4:32"
+}
+
+/** Load duration cache from public/audio/durations.json */
+function loadDurations(): Record<string, { seconds: number; formatted: string }> {
+  const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
+  if (!fs.existsSync(durPath)) return {};
+  try {
+    return JSON.parse(fs.readFileSync(durPath, "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
+function getDuration(audioUrl: string): string | undefined {
+  const durations = loadDurations();
+  return durations[audioUrl]?.formatted;
 }
 
 /** Resolve all episodes for a show season filter */
@@ -141,7 +158,7 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
       for (const b of bridges) {
         const audio = getAudioUrl("bridges", b.slug);
         if (audio) {
-          eps.push({ title: b.frontmatter.title, href: `/${b.slug}`, audioUrl: audio, description: b.frontmatter.description });
+          eps.push({ title: b.frontmatter.title, href: `/${b.slug}`, audioUrl: audio, description: b.frontmatter.description, duration: getDuration(audio) });
         }
       }
     } else if (filter.content_type === "atom" && filter.atom_types) {
@@ -149,7 +166,7 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
         if (filter.atom_types.includes(a.frontmatter.type)) {
           const audio = getAudioUrl("atoms", a.frontmatter.id);
           if (audio) {
-            eps.push({ title: a.frontmatter.title, href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }), audioUrl: audio });
+            eps.push({ title: a.frontmatter.title, href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }), audioUrl: audio, duration: getDuration(audio) });
           }
         }
       }
@@ -157,14 +174,14 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
       for (const t of threads) {
         const audio = getAudioUrl("threads", t.frontmatter.id);
         if (audio) {
-          eps.push({ title: t.frontmatter.title, href: `/threads/${t.frontmatter.id}`, audioUrl: audio });
+          eps.push({ title: t.frontmatter.title, href: `/threads/${t.frontmatter.id}`, audioUrl: audio, duration: getDuration(audio) });
         }
       }
     } else if (filter.content_type === "path") {
       for (const p of paths) {
         const audio = getAudioUrl("paths", p.frontmatter.id);
         if (audio) {
-          eps.push({ title: p.frontmatter.title, href: `/paths/${p.frontmatter.id}`, audioUrl: audio });
+          eps.push({ title: p.frontmatter.title, href: `/paths/${p.frontmatter.id}`, audioUrl: audio, duration: getDuration(audio) });
         }
       }
     }
