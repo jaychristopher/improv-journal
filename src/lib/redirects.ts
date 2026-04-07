@@ -1,15 +1,44 @@
 /**
  * Generate redirect map for the site restructure.
  * Old URLs → new physics-first URLs.
+ *
+ * NOTE: This file must NOT import from content.ts because content.ts
+ * depends on remark (ESM-only) which breaks next.config.ts loading.
+ * The URL mapping logic is duplicated here intentionally.
  */
 
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import type { AtomFrontmatter } from "./schema";
-import { getAtomUrl } from "./content";
 
-/** Read all atom frontmatter and generate /atoms/{id} → new URL redirects */
+/** Duplicate of getAtomUrl logic — kept in sync manually to avoid ESM import chain */
+function atomTypeToUrl(id: string, type: string): string {
+  switch (type) {
+    case "axiom":
+    case "insight":
+      return `/system/${id}`;
+    case "principle":
+      return `/system/principles/${id}`;
+    case "antipattern":
+    case "pattern":
+    case "framework":
+      return `/system/diagnosis/${id}`;
+    case "exercise":
+      return `/practice/exercises/${id}`;
+    case "technique":
+    case "pedagogy":
+      return `/practice/techniques/${id}`;
+    case "format":
+      return `/practice/formats/${id}`;
+    case "definition":
+      return `/practice/vocabulary/${id}`;
+    case "reference":
+      return `/library/${id}`;
+    default:
+      return `/system/${id}`;
+  }
+}
+
 export function generateAtomRedirects(): {
   source: string;
   destination: string;
@@ -22,16 +51,16 @@ export function generateAtomRedirects(): {
   return files.map((file) => {
     const raw = fs.readFileSync(path.join(dir, file), "utf-8");
     const { data } = matter(raw);
-    const fm = data as AtomFrontmatter;
+    const id = (data as { id: string }).id;
+    const type = (data as { type: string }).type;
     return {
-      source: `/atoms/${fm.id}`,
-      destination: getAtomUrl({ id: fm.id, type: fm.type }),
+      source: `/atoms/${id}`,
+      destination: atomTypeToUrl(id, type),
       permanent: true,
     };
   });
 }
 
-/** Read all bridge slugs for /guides/{slug} → /{slug} redirects */
 export function generateBridgeRedirects(): {
   source: string;
   destination: string;
@@ -48,7 +77,6 @@ export function generateBridgeRedirects(): {
   }));
 }
 
-/** All hub page redirects */
 export function generateHubRedirects(): {
   source: string;
   destination: string;
