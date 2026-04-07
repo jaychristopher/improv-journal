@@ -2,7 +2,7 @@
 id: gratitude-reframing
 title: Gratitude Reframing
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, resilience, reframing]
 links:
   - { id: be-thankful, relation: requires }

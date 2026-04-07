@@ -2,7 +2,7 @@
 id: latency-recovery
 title: "Recovery: Latency"
 type: pattern
-status: seed
+status: draft
 tags: [patterns, recovery, collapse-modes, presence]
 links:
   - { id: systemic-collapse-modes, relation: extends }

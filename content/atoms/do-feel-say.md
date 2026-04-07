@@ -2,7 +2,7 @@
 id: do-feel-say
 title: "Do, Feel, Say"
 type: technique
-status: seed
+status: draft
 tags: [techniques, ordering, emotion, authenticity]
 links:
   - { id: emotional-truth, relation: extends }

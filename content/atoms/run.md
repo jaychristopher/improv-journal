@@ -2,7 +2,7 @@
 id: run
 title: Run
 type: technique
-status: seed
+status: draft
 tags: [techniques, show-craft, harold, performance, advanced]
 links:
   - { id: editing, relation: requires }

@@ -2,7 +2,7 @@
 id: ref-napier-improvise
 title: "Ref: Improvise — Mick Napier (2004)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, napier, chicago]
 links:
   - { id: be-brave, relation: illustrates }

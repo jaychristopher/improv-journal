@@ -2,7 +2,7 @@
 id: group-mind-cultivation
 title: "Exercise: Group Mind Cultivation"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, ensemble, advanced, group-mind, presence]
 links:
   - { id: group-mind, relation: illustrates }

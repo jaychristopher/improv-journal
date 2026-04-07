@@ -2,7 +2,7 @@
 id: failing-forward
 title: Failing Forward
 type: technique
-status: seed
+status: draft
 tags: [techniques, performance, mastery, recovery, advanced]
 links:
   - { id: fear-of-failure, relation: contrasts }

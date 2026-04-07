@@ -2,7 +2,7 @@
 id: heat-and-weight
 title: Heat and Weight
 type: technique
-status: seed
+status: draft
 tags: [techniques, show-craft, performance, energy, advanced]
 links:
   - { id: show-dynamic, relation: extends }

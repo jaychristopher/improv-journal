@@ -2,7 +2,7 @@
 id: ref-fey-bossypants
 title: "Ref: Bossypants — Tina Fey (2011)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, fey, popularization]
 links:
   - { id: yes-and, relation: illustrates }

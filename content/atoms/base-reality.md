@@ -2,7 +2,7 @@
 id: base-reality
 title: Base Reality
 type: definition
-status: seed
+status: draft
 tags: [definitions, scene-work, UCB, grounding]
 links:
   - { id: game-of-the-scene, relation: requires }

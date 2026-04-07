@@ -2,7 +2,7 @@
 id: ref-carrane-improv-nerd
 title: "Ref: Improv Nerd Podcast & Blog — Jimmy Carrane (ongoing)"
 type: reference
-status: seed
+status: draft
 tags: [references, podcast, blog, carrane, chicago]
 links:
   - { id: editing, relation: illustrates }

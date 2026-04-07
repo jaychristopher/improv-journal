@@ -2,7 +2,7 @@
 id: shared-reality-fragility
 title: Shared Reality Is Fragile
 type: axiom
-status: seed
+status: draft
 tags: [axioms, systems-thinking, constraints, shared-state]
 links:
   - { id: irreversibility, relation: extends }

@@ -2,7 +2,7 @@
 id: be-simple
 title: "Be Simple (North Star #5)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, bandwidth, clarity]
 links:
   - { id: obvious-choice, relation: extends }

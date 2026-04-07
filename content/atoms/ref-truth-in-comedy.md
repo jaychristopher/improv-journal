@@ -2,7 +2,7 @@
 id: ref-truth-in-comedy
 title: "Ref: Truth in Comedy — Halpern, Close, Johnson (1994)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, close, halpern, foundational]
 links:
   - { id: be-positive, relation: illustrates }

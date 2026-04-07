@@ -2,7 +2,7 @@
 id: fracture-recovery
 title: "Recovery: Fracture"
 type: pattern
-status: seed
+status: draft
 tags: [patterns, recovery, collapse-modes, agreement]
 links:
   - { id: systemic-collapse-modes, relation: extends }

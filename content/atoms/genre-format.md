@@ -2,7 +2,7 @@
 id: genre-format
 title: Genre Format
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, genre, performance]
 links:
   - { id: narrative-longform, relation: extends }

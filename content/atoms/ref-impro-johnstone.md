@@ -2,7 +2,7 @@
 id: ref-impro-johnstone
 title: "Ref: Impro — Keith Johnstone (1979)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, johnstone, foundational]
 links:
   - { id: offers, relation: illustrates }

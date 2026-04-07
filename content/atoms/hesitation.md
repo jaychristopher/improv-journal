@@ -2,7 +2,7 @@
 id: hesitation
 title: Hesitation
 type: antipattern
-status: seed
+status: draft
 tags: [antipatterns, north-stars, fear, initiation]
 links:
   - { id: be-brave, relation: contrasts }

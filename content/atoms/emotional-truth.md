@@ -2,7 +2,7 @@
 id: emotional-truth
 title: Emotional Truth
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, authenticity, vulnerability]
 links:
   - { id: be-honest, relation: illustrates }

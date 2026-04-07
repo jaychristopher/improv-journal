@@ -2,7 +2,7 @@
 id: ensemble
 title: Ensemble
 type: definition
-status: seed
+status: draft
 tags: [definitions, ensemble, collaboration, interdependence]
 links:
   - { id: interdependence, relation: illustrates }

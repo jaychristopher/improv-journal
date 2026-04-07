@@ -2,7 +2,7 @@
 id: scene-structure
 title: Scene Structure
 type: definition
-status: seed
+status: draft
 tags: [definitions, scene-work, structure]
 links:
   - { id: base-reality, relation: requires }

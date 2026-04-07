@@ -2,7 +2,7 @@
 id: curriculum-design
 title: Curriculum Design
 type: pedagogy
-status: seed
+status: draft
 tags: [pedagogy, teaching, structure, progression]
 links:
   - { id: safety-in-the-room, relation: requires }

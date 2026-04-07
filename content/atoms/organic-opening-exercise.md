@@ -2,7 +2,7 @@
 id: organic-opening-exercise
 title: "Exercise: Organic Opening"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, advanced, ensemble, harold, free-association]
 links:
   - { id: organic-opening, relation: illustrates }

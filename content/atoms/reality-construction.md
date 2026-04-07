@@ -2,7 +2,7 @@
 id: reality-construction
 title: Reality Construction
 type: insight
-status: seed
+status: draft
 tags: [meta, systems-thinking, philosophy, beyond-stage]
 links:
   - { id: irreversibility, relation: requires }

@@ -2,7 +2,7 @@
 id: group-scene
 title: Group Scene
 type: definition
-status: seed
+status: draft
 tags: [definitions, scene-work, ensemble, structure]
 links:
   - { id: ensemble, relation: requires }

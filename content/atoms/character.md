@@ -2,7 +2,7 @@
 id: character
 title: Character
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, scene-work]
 links:
   - { id: point-of-view, relation: extends }

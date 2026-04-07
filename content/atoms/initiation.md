@@ -2,7 +2,7 @@
 id: initiation
 title: Initiation
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, courage, starting]
 links:
   - { id: be-brave, relation: illustrates }

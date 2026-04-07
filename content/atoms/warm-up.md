@@ -2,7 +2,7 @@
 id: warm-up
 title: Warm-Up
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, ensemble, preparation]
 links:
   - { id: presence, relation: enables }

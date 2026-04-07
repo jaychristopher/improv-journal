@@ -2,7 +2,7 @@
 id: analogous-scene
 title: Analogous Scene
 type: technique
-status: seed
+status: draft
 tags: [techniques, harold, game, structure, advanced]
 links:
   - { id: game-of-the-scene, relation: requires }

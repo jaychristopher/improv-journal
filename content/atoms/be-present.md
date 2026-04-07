@@ -2,7 +2,7 @@
 id: be-present
 title: "Be Present (North Star #2)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, attention, cognition]
 links:
   - { id: active-listening, relation: extends }

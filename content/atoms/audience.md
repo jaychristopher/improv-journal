@@ -2,7 +2,7 @@
 id: audience
 title: Audience
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, co-creation, performance]
 links:
   - { id: meaning-is-relational, relation: illustrates }

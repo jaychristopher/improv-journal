@@ -2,7 +2,7 @@
 id: game-evolution
 title: Game Evolution
 type: technique
-status: seed
+status: draft
 tags: [techniques, game, advanced, heightening, UCB]
 links:
   - { id: game-of-the-scene, relation: extends }

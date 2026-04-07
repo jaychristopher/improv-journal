@@ -2,7 +2,7 @@
 id: organic-longform
 title: Organic Longform
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, organic, advanced]
 links:
   - { id: harold, relation: extends }

@@ -2,7 +2,7 @@
 id: continuous-signaling
 title: Continuous Signaling
 type: axiom
-status: seed
+status: draft
 tags: [axioms, systems-thinking, constraints, communication]
 links:
   - { id: shared-reality-fragility, relation: extends }

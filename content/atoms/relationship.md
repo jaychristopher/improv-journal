@@ -2,7 +2,7 @@
 id: relationship
 title: Relationship
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, scene-work, dynamics]
 links:
   - { id: offers, relation: requires }

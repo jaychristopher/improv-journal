@@ -2,7 +2,7 @@
 id: be-brave
 title: "Be Brave (North Star #7)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, initiation, courage]
 links:
   - { id: initiation, relation: illustrates }

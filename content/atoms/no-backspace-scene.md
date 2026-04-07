@@ -2,7 +2,7 @@
 id: no-backspace-scene
 title: "Exercise: No Backspace Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, axioms, irreversibility, path-dependence]
 links:
   - { id: irreversibility, relation: illustrates }

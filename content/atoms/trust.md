@@ -2,7 +2,7 @@
 id: trust
 title: Trust
 type: definition
-status: seed
+status: draft
 tags: [definitions, ensemble, fundamentals, safety]
 links:
   - { id: interdependence, relation: illustrates }

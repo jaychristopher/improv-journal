@@ -2,7 +2,7 @@
 id: emotional-honesty-scene
 title: "Exercise: Emotional Honesty Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, authenticity, vulnerability, north-stars]
 links:
   - { id: be-honest, relation: illustrates }

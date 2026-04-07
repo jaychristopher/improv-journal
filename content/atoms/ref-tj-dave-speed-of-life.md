@@ -2,7 +2,7 @@
 id: ref-tj-dave-speed-of-life
 title: "Ref: Improvisation at the Speed of Life — TJ & Dave (2015)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, tj-dave, longform, partnership]
 links:
   - { id: be-changeable, relation: illustrates }

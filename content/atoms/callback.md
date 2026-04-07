@@ -2,7 +2,7 @@
 id: callback
 title: Callback
 type: pattern
-status: seed
+status: draft
 tags: [patterns, scene-work, decay-prevention, memory]
 links:
   - { id: decay-recovery, relation: extends }

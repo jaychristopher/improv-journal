@@ -2,7 +2,7 @@
 id: mirroring
 title: "Exercise: Mirroring"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, fundamentals, presence, ensemble, spolin]
 links:
   - { id: be-present, relation: illustrates }

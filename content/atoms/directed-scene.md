@@ -2,7 +2,7 @@
 id: directed-scene
 title: "Exercise: Directed Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, advanced, adaptability, side-coaching, pedagogy]
 links:
   - { id: side-coaching, relation: illustrates }

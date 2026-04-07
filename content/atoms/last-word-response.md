@@ -2,7 +2,7 @@
 id: last-word-response
 title: "Exercise: Last Word Response"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, presence, listening, north-stars]
 links:
   - { id: be-present, relation: illustrates }

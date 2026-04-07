@@ -2,7 +2,7 @@
 id: be-honest
 title: "Be Honest (North Star #4)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, authenticity, signal-clarity]
 links:
   - { id: emotional-truth, relation: extends }

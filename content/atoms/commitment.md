@@ -2,7 +2,7 @@
 id: commitment
 title: Commitment
 type: technique
-status: seed
+status: draft
 tags: [fundamentals, presence, performance]
 links:
   - { id: yes-and, relation: extends }

@@ -2,7 +2,7 @@
 id: tag-run
 title: Tag Run
 type: technique
-status: seed
+status: draft
 tags: [techniques, editing, harold, game, advanced]
 links:
   - { id: editing, relation: extends }

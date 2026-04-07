@@ -2,7 +2,7 @@
 id: one-word-scene
 title: "Exercise: One-Word Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, simplicity, bandwidth, north-stars]
 links:
   - { id: be-simple, relation: enables }

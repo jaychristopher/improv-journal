@@ -2,7 +2,7 @@
 id: status
 title: Status
 type: definition
-status: seed
+status: draft
 tags: [definitions, dynamics, johnstone, relationships]
 links:
   - { id: be-honest, relation: extends }

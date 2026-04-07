@@ -2,7 +2,7 @@
 id: space-work-scene
 title: "Exercise: Silent Space Work Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, space-work, environment, physicality]
 links:
   - { id: space-work, relation: illustrates }

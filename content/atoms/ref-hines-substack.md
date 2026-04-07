@@ -2,7 +2,7 @@
 id: ref-hines-substack
 title: "Ref: Improv Nonsense Substack — Will Hines (ongoing)"
 type: reference
-status: seed
+status: draft
 tags: [references, substack, hines, UCB, contemporary]
 links:
   - { id: be-present, relation: illustrates }

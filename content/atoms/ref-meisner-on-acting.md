@@ -2,7 +2,7 @@
 id: ref-meisner-on-acting
 title: "Ref: Sanford Meisner on Acting — Meisner & Longwell (1987)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, meisner, acting, emotional-truth]
 links:
   - { id: emotional-truth, relation: illustrates }

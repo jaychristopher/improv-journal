@@ -2,7 +2,7 @@
 id: emotion-switch
 title: "Exercise: Emotion Switch"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, adaptability, emotion, north-stars]
 links:
   - { id: be-changeable, relation: illustrates }

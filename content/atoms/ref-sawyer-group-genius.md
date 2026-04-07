@@ -2,7 +2,7 @@
 id: ref-sawyer-group-genius
 title: "Ref: Group Genius — Keith Sawyer (2007)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, sawyer, academic, creativity]
 links:
   - { id: ensemble, relation: illustrates }

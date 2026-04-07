@@ -2,7 +2,7 @@
 id: reincorporation
 title: Reincorporation
 type: technique
-status: seed
+status: draft
 tags: [techniques, narrative, johnstone, structure]
 links:
   - { id: callback, relation: contrasts }

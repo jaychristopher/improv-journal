@@ -2,7 +2,7 @@
 id: emotional-range
 title: Emotional Range
 type: technique
-status: seed
+status: draft
 tags: [techniques, emotion, vulnerability, advanced, meisner]
 links:
   - { id: emotional-truth, relation: extends }

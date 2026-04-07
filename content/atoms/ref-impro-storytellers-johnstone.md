@@ -2,7 +2,7 @@
 id: ref-impro-storytellers-johnstone
 title: "Ref: Impro for Storytellers — Keith Johnstone (1999)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, johnstone, narrative]
 links:
   - { id: blocking, relation: illustrates }

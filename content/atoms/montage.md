@@ -2,7 +2,7 @@
 id: montage
 title: Montage
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, accessible]
 links:
   - { id: harold, relation: contrasts }

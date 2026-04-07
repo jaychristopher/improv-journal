@@ -2,7 +2,7 @@
 id: two-person-scene
 title: Two-Person Scene
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, scene-work, structure]
 links:
   - { id: relationship, relation: requires }

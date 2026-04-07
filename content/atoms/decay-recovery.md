@@ -2,7 +2,7 @@
 id: decay-recovery
 title: "Recovery: Decay"
 type: pattern
-status: seed
+status: draft
 tags: [patterns, recovery, collapse-modes, shared-state]
 links:
   - { id: systemic-collapse-modes, relation: extends }

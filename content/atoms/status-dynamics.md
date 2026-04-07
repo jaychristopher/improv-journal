@@ -2,7 +2,7 @@
 id: status-dynamics
 title: Status Dynamics
 type: technique
-status: seed
+status: draft
 tags: [techniques, status, dynamics, johnstone, advanced, relationships]
 links:
   - { id: status, relation: extends }

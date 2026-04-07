@@ -2,7 +2,7 @@
 id: show-dynamic
 title: Show Dynamic
 type: definition
-status: seed
+status: draft
 tags: [definitions, performance, show-craft, structure]
 links:
   - { id: harold, relation: extends }

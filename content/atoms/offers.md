@@ -2,7 +2,7 @@
 id: offers
 title: Offers
 type: definition
-status: seed
+status: draft
 tags: [fundamentals, building-blocks]
 links:
   - { id: yes-and, relation: enables }

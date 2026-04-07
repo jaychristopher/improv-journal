@@ -2,7 +2,7 @@
 id: opening
 title: Opening
 type: technique
-status: seed
+status: draft
 tags: [techniques, longform, harold, ensemble]
 links:
   - { id: harold, relation: requires }

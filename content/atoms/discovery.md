@@ -2,7 +2,7 @@
 id: discovery
 title: Discovery
 type: pattern
-status: seed
+status: draft
 tags: [patterns, scene-work, game, emergence]
 links:
   - { id: game-of-the-scene, relation: extends }

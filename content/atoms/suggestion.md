@@ -2,7 +2,7 @@
 id: suggestion
 title: Suggestion
 type: technique
-status: seed
+status: draft
 tags: [techniques, audience, show-craft, performance]
 links:
   - { id: audience, relation: requires }

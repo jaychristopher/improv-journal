@@ -2,7 +2,7 @@
 id: beats
 title: Beats (First / Second / Third)
 type: definition
-status: seed
+status: draft
 tags: [definitions, longform, harold, structure]
 links:
   - { id: harold, relation: requires }

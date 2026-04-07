@@ -2,7 +2,7 @@
 id: connections
 title: Connections
 type: technique
-status: seed
+status: draft
 tags: [techniques, longform, harold, group-mind]
 links:
   - { id: harold, relation: requires }

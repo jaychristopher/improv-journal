@@ -2,7 +2,7 @@
 id: genre-scene
 title: "Exercise: Genre Scene"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, advanced, genre, commitment, specificity]
 links:
   - { id: genre-format, relation: illustrates }

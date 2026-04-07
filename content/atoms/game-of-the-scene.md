@@ -2,7 +2,7 @@
 id: game-of-the-scene
 title: Game of the Scene
 type: definition
-status: seed
+status: draft
 tags: [definitions, scene-work, pattern, UCB]
 links:
   - { id: offers, relation: requires }

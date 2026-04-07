@@ -2,7 +2,7 @@
 id: be-thankful
 title: "Be Thankful (North Star #3)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, resilience, reframing]
 links:
   - { id: gratitude-reframing, relation: illustrates }

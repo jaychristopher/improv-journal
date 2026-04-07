@@ -2,7 +2,7 @@
 id: be-positive
 title: "Be Positive (North Star #1)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, data-acceptance]
 links:
   - { id: yes-and, relation: extends }

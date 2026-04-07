@@ -2,7 +2,7 @@
 id: pattern-break
 title: Pattern Break
 type: technique
-status: seed
+status: draft
 tags: [techniques, game, comedy, advanced, structure]
 links:
   - { id: heightening, relation: extends }

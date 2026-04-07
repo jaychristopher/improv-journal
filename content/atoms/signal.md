@@ -2,7 +2,7 @@
 id: signal
 title: Signal
 type: definition
-status: seed
+status: draft
 tags: [definitions, systems-thinking, communication]
 links:
   - { id: continuous-signaling, relation: illustrates }

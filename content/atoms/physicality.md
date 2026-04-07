@@ -2,7 +2,7 @@
 id: physicality
 title: Physicality
 type: technique
-status: seed
+status: draft
 tags: [techniques, character, body, movement, advanced]
 links:
   - { id: character, relation: extends }

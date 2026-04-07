@@ -2,7 +2,7 @@
 id: cognitive-bandwidth
 title: Cognitive Bandwidth
 type: axiom
-status: seed
+status: draft
 tags: [axioms, systems-thinking, constraints, cognition]
 links:
   - { id: bandwidth, relation: extends }

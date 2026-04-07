@@ -2,7 +2,7 @@
 id: performing-cleverness
 title: Performing Cleverness
 type: antipattern
-status: seed
+status: draft
 tags: [antipatterns, north-stars, authenticity, ego]
 links:
   - { id: be-honest, relation: contrasts }

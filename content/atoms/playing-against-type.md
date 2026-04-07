@@ -2,7 +2,7 @@
 id: playing-against-type
 title: Playing Against Type
 type: technique
-status: seed
+status: draft
 tags: [techniques, character, subversion, advanced, pattern]
 links:
   - { id: character, relation: extends }

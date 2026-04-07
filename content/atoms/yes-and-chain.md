@@ -2,7 +2,7 @@
 id: yes-and-chain
 title: "Exercise: Yes, And Chain"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, fundamentals, north-stars]
 links:
   - { id: be-positive, relation: illustrates }

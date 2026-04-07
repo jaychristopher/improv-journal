@@ -2,7 +2,7 @@
 id: performance-state
 title: Performance State
 type: insight
-status: seed
+status: draft
 tags: [insights, performance, mastery, presence, psychology]
 links:
   - { id: presence, relation: extends }

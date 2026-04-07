@@ -2,7 +2,7 @@
 id: group-mind
 title: Group Mind
 type: definition
-status: seed
+status: draft
 tags: [definitions, ensemble, emergence, close]
 links:
   - { id: ensemble, relation: requires }

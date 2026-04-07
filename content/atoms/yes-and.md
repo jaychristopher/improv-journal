@@ -2,7 +2,7 @@
 id: yes-and
 title: "Yes, And"
 type: technique
-status: seed
+status: draft
 tags: [fundamentals, agreement, building, north-stars]
 links:
   - { id: active-listening, relation: requires }

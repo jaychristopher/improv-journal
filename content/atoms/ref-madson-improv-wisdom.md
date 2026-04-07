@@ -2,7 +2,7 @@
 id: ref-madson-improv-wisdom
 title: "Ref: Improv Wisdom — Patricia Ryan Madson (2005)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, madson, applied-improv, philosophy]
 links:
   - { id: beyond-the-stage, relation: illustrates }

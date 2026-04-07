@@ -2,7 +2,7 @@
 id: status-transfer
 title: "Exercise: Status Transfer"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, status, dynamics, johnstone]
 links:
   - { id: status, relation: illustrates }

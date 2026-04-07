@@ -2,7 +2,7 @@
 id: beyond-the-stage
 title: Beyond the Stage
 type: insight
-status: seed
+status: draft
 tags: [meta, philosophy, beyond-stage, transfer]
 links:
   - { id: reality-construction, relation: extends }

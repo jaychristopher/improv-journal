@@ -2,7 +2,7 @@
 id: systemic-collapse-modes
 title: Systemic Collapse Modes
 type: framework
-status: seed
+status: draft
 tags: [systems-thinking, diagnostics, failure-modes]
 links:
   - { id: systemic-health-indicators, relation: contrasts }

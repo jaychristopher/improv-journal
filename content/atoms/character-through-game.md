@@ -2,7 +2,7 @@
 id: character-through-game
 title: Character Through Game
 type: technique
-status: seed
+status: draft
 tags: [techniques, character, game, UCB, advanced]
 links:
   - { id: game-of-the-scene, relation: extends }

@@ -2,7 +2,7 @@
 id: reading-the-room
 title: Reading the Room
 type: technique
-status: seed
+status: draft
 tags: [techniques, performance, audience, show-craft]
 links:
   - { id: audience, relation: requires }

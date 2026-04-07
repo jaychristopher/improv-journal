@@ -2,7 +2,7 @@
 id: support-moves
 title: Support Moves
 type: technique
-status: seed
+status: draft
 tags: [techniques, ensemble, backline, show-craft]
 links:
   - { id: be-supportive, relation: illustrates }

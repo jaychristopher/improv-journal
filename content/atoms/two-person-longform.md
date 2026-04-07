@@ -2,7 +2,7 @@
 id: two-person-longform
 title: Two-Person Longform
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, duo, mastery]
 links:
   - { id: two-person-scene, relation: extends }

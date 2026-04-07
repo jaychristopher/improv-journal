@@ -2,7 +2,7 @@
 id: negation
 title: Negation
 type: antipattern
-status: seed
+status: draft
 tags: [antipatterns, north-stars, data-rejection]
 links:
   - { id: be-positive, relation: contrasts }

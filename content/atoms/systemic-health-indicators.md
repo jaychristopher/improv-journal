@@ -2,7 +2,7 @@
 id: systemic-health-indicators
 title: Systemic Health Indicators
 type: framework
-status: seed
+status: draft
 tags: [systems-thinking, diagnostics, momentum]
 links:
   - { id: shared-reality-fragility, relation: extends }

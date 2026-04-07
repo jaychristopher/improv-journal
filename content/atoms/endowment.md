@@ -2,7 +2,7 @@
 id: endowment
 title: Endowment
 type: technique
-status: seed
+status: draft
 tags: [techniques, offers, support, johnstone]
 links:
   - { id: offers, relation: extends }

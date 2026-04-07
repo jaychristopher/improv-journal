@@ -2,7 +2,7 @@
 id: heightening
 title: Heightening
 type: pattern
-status: seed
+status: draft
 tags: [patterns, scene-work, game, momentum]
 links:
   - { id: game-of-the-scene, relation: extends }

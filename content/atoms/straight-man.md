@@ -2,7 +2,7 @@
 id: straight-man
 title: Straight Man
 type: technique
-status: seed
+status: draft
 tags: [techniques, game, scene-work, roles]
 links:
   - { id: game-of-the-scene, relation: extends }

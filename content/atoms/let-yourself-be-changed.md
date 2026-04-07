@@ -2,7 +2,7 @@
 id: let-yourself-be-changed
 title: Let Yourself Be Changed
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, adaptability, vulnerability]
 links:
   - { id: be-changeable, relation: illustrates }

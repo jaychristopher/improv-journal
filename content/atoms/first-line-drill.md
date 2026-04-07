@@ -2,7 +2,7 @@
 id: first-line-drill
 title: "Exercise: First Line Drill"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, initiation, courage, north-stars]
 links:
   - { id: be-brave, relation: illustrates }

@@ -2,7 +2,7 @@
 id: backline-craft
 title: Backline Craft
 type: technique
-status: seed
+status: draft
 tags: [techniques, ensemble, show-craft, harold, advanced]
 links:
   - { id: active-listening, relation: requires }

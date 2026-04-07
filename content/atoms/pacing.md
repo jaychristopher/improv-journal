@@ -2,7 +2,7 @@
 id: pacing
 title: Pacing
 type: technique
-status: seed
+status: draft
 tags: [techniques, performance, rhythm, show-craft]
 links:
   - { id: editing, relation: extends }

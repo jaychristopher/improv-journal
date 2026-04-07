@@ -2,7 +2,7 @@
 id: safety-in-the-room
 title: Safety in the Room
 type: pedagogy
-status: seed
+status: draft
 tags: [pedagogy, teaching, trust, consent, fundamentals]
 links:
   - { id: trust, relation: enables }

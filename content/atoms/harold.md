@@ -2,7 +2,7 @@
 id: harold
 title: Harold
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, close]
 links:
   - { id: beats, relation: extends }

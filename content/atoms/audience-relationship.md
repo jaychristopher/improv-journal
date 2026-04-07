@@ -2,7 +2,7 @@
 id: audience-relationship
 title: Audience Relationship
 type: technique
-status: seed
+status: draft
 tags: [techniques, performance, mastery, show-craft]
 links:
   - { id: audience, relation: extends }

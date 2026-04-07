@@ -2,7 +2,7 @@
 id: stage-presence
 title: Stage Presence
 type: technique
-status: seed
+status: draft
 tags: [techniques, performance, physicality, show-craft]
 links:
   - { id: presence, relation: extends }

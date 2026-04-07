@@ -2,7 +2,7 @@
 id: game-types
 title: Game Types
 type: definition
-status: seed
+status: draft
 tags: [definitions, game, advanced, UCB, taxonomy]
 links:
   - { id: game-of-the-scene, relation: extends }

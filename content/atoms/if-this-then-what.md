@@ -2,7 +2,7 @@
 id: if-this-then-what
 title: If This, Then What?
 type: technique
-status: seed
+status: draft
 tags: [techniques, game, UCB, exploration]
 links:
   - { id: game-of-the-scene, relation: illustrates }

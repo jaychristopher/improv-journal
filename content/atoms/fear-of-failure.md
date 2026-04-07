@@ -2,7 +2,7 @@
 id: fear-of-failure
 title: Fear of Failure
 type: definition
-status: seed
+status: draft
 tags: [definitions, fundamentals, psychology, obstacles]
 links:
   - { id: hesitation, relation: enables }

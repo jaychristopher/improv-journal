@@ -2,7 +2,7 @@
 id: be-supportive
 title: "Be Supportive (North Star #8)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, ensemble, generosity]
 links:
   - { id: elevating, relation: extends }

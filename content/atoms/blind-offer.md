@@ -2,7 +2,7 @@
 id: blind-offer
 title: "Exercise: Blind Offer"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, support, justification, north-stars]
 links:
   - { id: be-supportive, relation: illustrates }

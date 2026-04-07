@@ -2,7 +2,7 @@
 id: overcomplication
 title: Overcomplication
 type: antipattern
-status: seed
+status: draft
 tags: [antipatterns, north-stars, bandwidth, ego]
 links:
   - { id: be-simple, relation: illustrates }

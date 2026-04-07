@@ -2,7 +2,7 @@
 id: blocking
 title: Blocking
 type: antipattern
-status: seed
+status: draft
 tags: [fundamentals, pitfalls, antipatterns, umbrella-concept]
 links:
   - { id: yes-and, relation: contrasts }

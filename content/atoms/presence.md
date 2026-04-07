@@ -2,7 +2,7 @@
 id: presence
 title: Presence
 type: definition
-status: seed
+status: draft
 tags: [definitions, mindfulness, fundamentals]
 links:
   - { id: be-present, relation: illustrates }

@@ -2,7 +2,7 @@
 id: bandwidth
 title: Bandwidth
 type: definition
-status: seed
+status: draft
 tags: [definitions, systems-thinking, cognition]
 links:
   - { id: cognitive-bandwidth, relation: illustrates }

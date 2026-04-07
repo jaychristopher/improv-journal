@@ -2,7 +2,7 @@
 id: side-coaching
 title: Side-Coaching
 type: pedagogy
-status: seed
+status: draft
 tags: [pedagogy, teaching, spolin, fundamentals]
 links:
   - { id: presence, relation: enables }

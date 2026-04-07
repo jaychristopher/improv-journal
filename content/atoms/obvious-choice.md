@@ -2,7 +2,7 @@
 id: obvious-choice
 title: The Obvious Choice
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, simplicity, bandwidth]
 links:
   - { id: be-simple, relation: illustrates }

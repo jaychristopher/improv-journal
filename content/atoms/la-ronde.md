@@ -2,7 +2,7 @@
 id: la-ronde
 title: La Ronde
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, character, relationship]
 links:
   - { id: relationship, relation: requires }

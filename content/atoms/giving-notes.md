@@ -2,7 +2,7 @@
 id: giving-notes
 title: Giving Notes
 type: pedagogy
-status: seed
+status: draft
 tags: [pedagogy, teaching, feedback, ensemble]
 links:
   - { id: be-thankful, relation: extends }

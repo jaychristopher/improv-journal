@@ -2,7 +2,7 @@
 id: bulldozing
 title: Bulldozing
 type: antipattern
-status: seed
+status: draft
 tags: [antipatterns, north-stars, selfishness, ensemble]
 links:
   - { id: be-supportive, relation: contrasts }

@@ -2,7 +2,7 @@
 id: elevating
 title: Elevating
 type: technique
-status: seed
+status: draft
 tags: [techniques, north-stars, ensemble, generosity]
 links:
   - { id: be-supportive, relation: illustrates }

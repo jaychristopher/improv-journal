@@ -2,7 +2,7 @@
 id: mapping
 title: Mapping
 type: technique
-status: seed
+status: draft
 tags: [techniques, game, UCB, advanced]
 links:
   - { id: game-of-the-scene, relation: extends }

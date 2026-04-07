@@ -2,7 +2,7 @@
 id: editing
 title: Editing
 type: technique
-status: seed
+status: draft
 tags: [techniques, structure, show-craft, ensemble]
 links:
   - { id: scene-structure, relation: extends }

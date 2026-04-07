@@ -2,7 +2,7 @@
 id: environment
 title: Environment
 type: definition
-status: seed
+status: draft
 tags: [definitions, physicality, shared-state, scene-work]
 links:
   - { id: space-work, relation: enables }

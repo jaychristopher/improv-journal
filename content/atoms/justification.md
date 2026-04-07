@@ -2,7 +2,7 @@
 id: justification
 title: Justification
 type: definition
-status: seed
+status: draft
 tags: [definitions, technique, resilience, close]
 links:
   - { id: be-thankful, relation: illustrates }

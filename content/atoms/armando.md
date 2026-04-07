@@ -2,7 +2,7 @@
 id: armando
 title: Armando
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, monologue]
 links:
   - { id: montage, relation: extends }

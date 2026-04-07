@@ -2,7 +2,7 @@
 id: point-of-view
 title: Point of View
 type: definition
-status: seed
+status: draft
 tags: [definitions, character, scene-work, UCB]
 links:
   - { id: character, relation: requires }

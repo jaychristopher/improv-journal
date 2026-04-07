@@ -2,7 +2,7 @@
 id: be-changeable
 title: "Be Changeable (North Star #6)"
 type: principle
-status: seed
+status: draft
 tags: [north-stars, fundamentals, adaptability, mutability]
 links:
   - { id: let-yourself-be-changed, relation: extends }

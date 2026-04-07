@@ -2,7 +2,7 @@
 id: narrative-longform
 title: Narrative Longform
 type: format
-status: seed
+status: draft
 tags: [formats, longform, structure, narrative, johnstone]
 links:
   - { id: harold, relation: contrasts }

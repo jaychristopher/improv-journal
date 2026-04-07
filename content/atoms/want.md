@@ -2,7 +2,7 @@
 id: want
 title: Want
 type: definition
-status: seed
+status: draft
 tags: [definitions, scene-work, dramatic-engine]
 links:
   - { id: character, relation: requires }

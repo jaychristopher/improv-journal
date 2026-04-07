@@ -2,7 +2,7 @@
 id: active-listening
 title: Active Listening
 type: technique
-status: seed
+status: draft
 tags: [fundamentals, presence, awareness]
 links:
   - { id: yes-and, relation: enables }

@@ -2,7 +2,7 @@
 id: coherence
 title: Coherence
 type: definition
-status: seed
+status: draft
 tags: [definitions, systems-thinking, shared-state, diagnostics]
 links:
   - { id: systemic-health-indicators, relation: illustrates }

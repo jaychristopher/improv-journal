@@ -2,7 +2,7 @@
 id: interdependence
 title: Interdependence
 type: axiom
-status: seed
+status: draft
 tags: [axioms, systems-thinking, constraints, ensemble]
 links:
   - { id: meaning-is-relational, relation: requires }

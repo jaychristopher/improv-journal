@@ -2,7 +2,7 @@
 id: meaning-is-relational
 title: Meaning Is Relational
 type: axiom
-status: seed
+status: draft
 tags: [axioms, systems-thinking, constraints, co-creation]
 links:
   - { id: shared-reality-fragility, relation: enables }

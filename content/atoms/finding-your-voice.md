@@ -2,7 +2,7 @@
 id: finding-your-voice
 title: Finding Your Voice
 type: insight
-status: seed
+status: draft
 tags: [insights, mastery, artistry, identity, advanced]
 links:
   - { id: commitment, relation: requires }

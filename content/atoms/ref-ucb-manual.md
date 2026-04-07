@@ -2,7 +2,7 @@
 id: ref-ucb-manual
 title: "Ref: UCB Comedy Improvisation Manual (2013)"
 type: reference
-status: seed
+status: draft
 tags: [references, books, UCB, game]
 links:
   - { id: game-of-the-scene, relation: illustrates }

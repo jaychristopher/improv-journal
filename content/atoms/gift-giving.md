@@ -2,7 +2,7 @@
 id: gift-giving
 title: "Exercise: Gift Giving"
 type: exercise
-status: seed
+status: draft
 tags: [exercises, gratitude, reframing, north-stars]
 links:
   - { id: be-thankful, relation: illustrates }
