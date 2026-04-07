@@ -103,6 +103,33 @@ export async function getBridgeBySlug(slug: string) {
   return bridges.find((b) => b.slug === slug);
 }
 
+// ─── Traditions ─────────────────────────────────────────────────────────────
+
+/** Map tradition names to their reference atom IDs */
+const TRADITION_REFS: Record<string, string[]> = {
+  johnstone: ["ref-impro-johnstone", "ref-impro-storytellers-johnstone"],
+  spolin: ["ref-spolin-improvisation-for-theater"],
+  close: ["ref-truth-in-comedy"],
+  ucb: ["ref-ucb-manual", "ref-hines-substack", "ref-hines-greatest-improviser"],
+  annoyance: ["ref-napier-improvise", "ref-tj-dave-speed-of-life"],
+};
+
+/** Get all non-reference atoms that link to a tradition's reference atoms */
+export async function getAtomsForTradition(tradition: string) {
+  const refIds = TRADITION_REFS[tradition];
+  if (!refIds) return [];
+  const atoms = await loadAtoms();
+  return atoms.filter(
+    (a) =>
+      a.frontmatter.type !== "reference" &&
+      a.frontmatter.links?.some((link) => refIds.includes(link.id))
+  );
+}
+
+export function getTraditionNames(): string[] {
+  return Object.keys(TRADITION_REFS);
+}
+
 // ─── URL resolution ─────────────────────────────────────────────────────────
 
 /** Resolve an atom to its canonical URL based on type */
