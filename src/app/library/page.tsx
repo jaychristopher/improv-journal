@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { loadAtoms } from "@/lib/content";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 // Curated tiers matching the sitemap outline
 const TIERS: { label: string; description: string; ids: string[] }[] = [
@@ -61,12 +62,7 @@ export default async function LibraryPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
-      <Link
-        href="/"
-        className="text-sm text-foreground/40 hover:text-foreground/60 mb-8 block"
-      >
-        &larr; Home
-      </Link>
+      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Library" }]} />
 
       <header className="mb-12">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
@@ -106,7 +102,7 @@ export default async function LibraryPage() {
                 return (
                   <Link
                     key={id}
-                    href={`/atoms/${id}`}
+                    href={`/library/${id}`}
                     className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
                   >
                     <h3 className="font-medium text-sm">
