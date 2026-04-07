@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadThreads, getThreadBySlug, getAtomBySlug, getAudioUrl, getParentPath } from "@/lib/content";
+import { loadThreads, getThreadBySlug, getAtomBySlug, getAtomUrl, getAudioUrl, getParentPath } from "@/lib/content";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
@@ -45,11 +45,13 @@ export default async function ThreadPage({
     }
   }
 
-  // Resolve atom references
+  // Resolve atom references with URLs
   const atoms = await Promise.all(
     (fm.atoms ?? []).map(async (id) => {
       const atom = await getAtomBySlug(id);
-      return atom ? { id, title: atom.frontmatter.title, found: true } : { id, title: id, found: false };
+      return atom
+        ? { id, title: atom.frontmatter.title, url: getAtomUrl({ id, type: atom.frontmatter.type }), found: true }
+        : { id, title: id, url: `/system/${id}`, found: false };
     })
   );
 
@@ -104,7 +106,7 @@ export default async function ThreadPage({
           {atoms.map((atom) => (
             <li key={atom.id}>
               <Link
-                href={`/atoms/${atom.id}`}
+                href={atom.url}
                 className="text-sm hover:underline"
               >
                 {atom.title}
