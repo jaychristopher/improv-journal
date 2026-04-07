@@ -1,229 +1,167 @@
 import Link from "next/link";
-import {
-  loadPaths,
-  loadAtoms,
-  loadThreads,
-  loadSources,
-  loadBridges,
-} from "@/lib/content";
-
-const AUDIENCE_LABELS: Record<string, { label: string; desc: string }> = {
-  beginner: { label: "I'm just starting", desc: "Foundations, first principles, and the physics of connection" },
-  intermediate: { label: "I'm stuck at a plateau", desc: "Self-coaching, diagnostics, and how to break through" },
-  teacher: { label: "I teach or want to teach", desc: "Curriculum, feedback, side-coaching, and the WHY layer" },
-  performer: { label: "I want to level up", desc: "Formats, advanced game, character mastery, and ensemble craft" },
-  advanced: { label: "I research or write about improv", desc: "Cross-referenced, multi-tradition analysis" },
-};
+import { loadPaths, loadAtoms, loadBridges, getAudioUrl } from "@/lib/content";
 
 export default async function Home() {
-  const [sources, paths, atoms, threads, bridges] = await Promise.all([
-    loadSources(),
+  const [paths, atoms, bridges] = await Promise.all([
     loadPaths(),
     loadAtoms(),
-    loadThreads(),
     loadBridges(),
   ]);
 
-  // Group paths by audience
-  const pathsByAudience: Record<string, typeof paths> = {};
-  for (const p of paths) {
-    for (const aud of p.frontmatter.audience ?? []) {
-      if (!pathsByAudience[aud]) pathsByAudience[aud] = [];
-      pathsByAudience[aud].push(p);
-    }
-  }
+  const nonRefAtoms = atoms.filter((a) => a.frontmatter.type !== "reference");
 
-  // Group atoms by type
-  const atomTypes = new Map<string, number>();
-  for (const a of atoms) {
-    const t = a.frontmatter.type;
-    atomTypes.set(t, (atomTypes.get(t) ?? 0) + 1);
-  }
+  // Find a featured episode with audio
+  const featuredBridge = bridges.find((b) => getAudioUrl("bridges", b.slug));
+  const featuredAudio = featuredBridge
+    ? getAudioUrl("bridges", featuredBridge.slug)
+    : null;
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
-      <header className="mb-16">
-        <h1 className="text-4xl font-bold tracking-tight mb-3">
-          The Physics of Improvisation
+      {/* ── Hero ──────────────────────────────────────────────────── */}
+      <header className="mb-20">
+        <h1 className="text-4xl font-bold tracking-tight mb-4">
+          Every conversation you've ever had runs on the same physics.
         </h1>
         <p className="text-lg text-foreground/60">
-          A knowledge graph for the art of human connection — discovered on the
-          improv stage, applicable everywhere.
+          Six constraints. Eight principles. Discovered on the improv stage.
+          Applicable everywhere. This is the knowledge graph.
         </p>
-        <p className="text-sm text-foreground/40 mt-2">
-          {atoms.length} concepts · {threads.length} threads ·{" "}
-          {paths.length} paths · {bridges.length} guides
+        <p className="text-sm text-foreground/40 mt-3">
+          {nonRefAtoms.length} concepts &middot; {paths.length} learning paths
+          &middot; {bridges.length} guides &middot; 65 audio episodes
         </p>
       </header>
 
-      {/* ── Guides: The Front Doors ─────────────────────────────── */}
-      {bridges.length > 0 && (
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-2">
-            Not sure where to start?
+      {/* ── Three Doors ───────────────────────────────────────────── */}
+      <section className="mb-20 space-y-4">
+        <Link
+          href="/system"
+          className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
+        >
+          <h2 className="text-xl font-semibold">Understand the system</h2>
+          <p className="text-sm text-foreground/50 mt-1">
+            The physics underneath — axioms, principles, and what happens when
+            the system breaks. Start here if you want to know WHY.
+          </p>
+        </Link>
+
+        <Link
+          href="/practice"
+          className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
+        >
+          <h2 className="text-xl font-semibold">Practice the craft</h2>
+          <p className="text-sm text-foreground/50 mt-1">
+            Exercises, techniques, formats, and vocabulary. Everything you can
+            DO — from mirroring to the Harold.
+          </p>
+        </Link>
+
+        <div className="border border-foreground/10 rounded-lg p-6">
+          <h2 className="text-xl font-semibold mb-3">
+            Apply it to your life
           </h2>
-          <p className="text-foreground/60 mb-6 text-sm">
+          <p className="text-sm text-foreground/50 mb-4">
             These guides apply improv's discoveries to problems you already
             have. No stage required.
           </p>
-          <div className="space-y-3">
+          <div className="grid grid-cols-2 gap-2">
             {bridges.map((b) => (
               <Link
                 key={b.slug}
-                href={`/guides/${b.slug}`}
-                className="block border border-foreground/10 rounded-lg p-5 hover:border-foreground/30 transition-colors"
+                href={`/${b.slug}`}
+                className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
               >
-                <h3 className="font-semibold mb-1">
+                <span className="text-sm font-medium">
                   {b.frontmatter.title}
-                </h3>
-                <p className="text-sm text-foreground/60">
-                  {b.frontmatter.description}
-                </p>
+                </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Listen ────────────────────────────────────────────────── */}
+      {featuredBridge && featuredAudio && (
+        <section className="mb-20">
+          <div className="flex justify-between items-baseline mb-4">
+            <h2 className="text-lg font-semibold">Listen</h2>
+            <Link
+              href="/listen"
+              className="text-sm text-foreground/40 hover:text-foreground/60"
+            >
+              All episodes &rarr;
+            </Link>
+          </div>
+          <div className="border border-foreground/10 rounded-lg p-5">
+            <Link
+              href={`/${featuredBridge.slug}`}
+              className="font-medium text-sm hover:underline"
+            >
+              {featuredBridge.frontmatter.title}
+            </Link>
+            <p className="text-xs text-foreground/40 mt-1">
+              {featuredBridge.frontmatter.description}
+            </p>
+            <audio controls preload="none" className="w-full mt-3">
+              <source src={featuredAudio} type="audio/mpeg" />
+            </audio>
           </div>
         </section>
       )}
 
-      {/* ── Audience Selector ───────────────────────────────────── */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-2">I do improv</h2>
-        <p className="text-foreground/60 mb-6 text-sm">
-          Pick your level. Each path is a curated journey through the knowledge
-          graph.
-        </p>
-        <div className="space-y-4">
-          {Object.entries(AUDIENCE_LABELS).map(([aud, { label, desc }]) => {
-            const audiencePaths = pathsByAudience[aud] ?? [];
-            if (audiencePaths.length === 0) return null;
-            return (
-              <div
-                key={aud}
-                className="border border-foreground/10 rounded-lg p-5"
-              >
-                <h3 className="font-semibold">{label}</h3>
-                <p className="text-xs text-foreground/40 mb-3">{desc}</p>
-                <div className="space-y-2">
-                  {audiencePaths.map((p) => (
-                    <Link
-                      key={p.frontmatter.id}
-                      href={`/paths/${p.frontmatter.id}`}
-                      className="block text-sm hover:underline"
-                    >
-                      {p.frontmatter.title}
-                      <span className="text-foreground/40 ml-2">
-                        {p.frontmatter.threads?.length ?? 0} threads
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+      {/* ── Paths ─────────────────────────────────────────────────── */}
+      <section className="mb-20">
+        <div className="flex justify-between items-baseline mb-4">
+          <h2 className="text-lg font-semibold">Learning Paths</h2>
+          <Link
+            href="/paths"
+            className="text-sm text-foreground/40 hover:text-foreground/60"
+          >
+            All paths &rarr;
+          </Link>
         </div>
-      </section>
-
-      {/* ── Explore by Concept Type ─────────────────────────────── */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-2">Explore by concept</h2>
-        <p className="text-foreground/60 mb-6 text-sm">
-          {atoms.length} concepts across {atomTypes.size} types.
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {Array.from(atomTypes.entries())
-            .sort((a, b) => b[1] - a[1])
-            .filter(([type]) => type !== "reference")
-            .map(([type, count]) => (
-              <div
-                key={type}
-                className="border border-foreground/10 rounded-lg p-4 text-center"
-              >
-                <span className="text-2xl font-bold">{count}</span>
-                <span className="block text-xs text-foreground/40 mt-1 capitalize">
-                  {type}s
-                </span>
-              </div>
-            ))}
-        </div>
-      </section>
-
-      {/* ── Threads ─────────────────────────────────────────────── */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-2">Threads</h2>
-        <p className="text-foreground/60 mb-6 text-sm">
-          Concepts woven into full thoughts.
-        </p>
         <div className="space-y-3">
-          {threads.map((t) => (
+          {paths.map((p) => (
             <Link
-              key={t.frontmatter.id}
-              href={`/threads/${t.frontmatter.id}`}
+              key={p.frontmatter.id}
+              href={`/paths/${p.frontmatter.id}`}
               className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
             >
-              <h3 className="font-medium">{t.frontmatter.title}</h3>
-              <span className="text-xs text-foreground/40">
-                {t.frontmatter.atoms?.length ?? 0} atoms
-              </span>
+              <h3 className="font-medium text-sm">
+                {p.frontmatter.title}
+              </h3>
+              <div className="flex gap-2 mt-1">
+                {p.frontmatter.audience?.map((a) => (
+                  <span
+                    key={a}
+                    className="text-xs px-2 py-0.5 rounded-full bg-foreground/5 text-foreground/40"
+                  >
+                    {a}
+                  </span>
+                ))}
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* ── All Atoms ───────────────────────────────────────────── */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-2">All concepts</h2>
-        <p className="text-foreground/60 mb-6 text-sm">
-          The primitives — smallest meaningful units of improv knowledge.
-        </p>
-        <div className="grid grid-cols-2 gap-3">
-          {atoms
-            .filter((a) => a.frontmatter.type !== "reference")
-            .map((a) => (
-              <Link
-                key={a.frontmatter.id}
-                href={`/atoms/${a.frontmatter.id}`}
-                className="border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
-              >
-                <h3 className="font-medium text-sm">
-                  {a.frontmatter.title}
-                </h3>
-                <span className="text-xs text-foreground/40">
-                  {a.frontmatter.type}
-                </span>
-              </Link>
-            ))}
+      {/* ── Traditions ────────────────────────────────────────────── */}
+      <section>
+        <div className="flex justify-between items-baseline mb-4">
+          <h2 className="text-lg font-semibold">Five Traditions</h2>
+          <Link
+            href="/traditions"
+            className="text-sm text-foreground/40 hover:text-foreground/60"
+          >
+            Compare traditions &rarr;
+          </Link>
         </div>
+        <p className="text-sm text-foreground/50">
+          Johnstone &middot; Spolin &middot; Close &middot; UCB &middot;
+          Annoyance — where they agree, where they disagree, and why it matters.
+        </p>
       </section>
-
-      {/* ── Sources ─────────────────────────────────────────────── */}
-      {sources.length > 0 && (
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">Sources</h2>
-          <p className="text-foreground/60 mb-6 text-sm">
-            Raw material from which knowledge was extracted.
-          </p>
-          <div className="space-y-3">
-            {sources.map((s) => (
-              <Link
-                key={s.frontmatter.id}
-                href={`/sources/${s.frontmatter.id}`}
-                className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
-              >
-                <h3 className="font-medium">{s.frontmatter.title}</h3>
-                <div className="flex gap-3 mt-1">
-                  <span className="text-xs text-foreground/40">
-                    {s.frontmatter.type}
-                  </span>
-                  <span className="text-xs text-foreground/40">
-                    {s.frontmatter.atoms_extracted?.length ?? 0} atoms
-                    extracted
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
     </main>
   );
 }

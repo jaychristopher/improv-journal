@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Improv Journal",
-  description: "A knowledge graph for the art of improvisation",
+  title: "The Physics of Connection",
+  description:
+    "Six constraints. Eight principles. Discovered on the improv stage. Applicable everywhere.",
 };
 
 export default function RootLayout({

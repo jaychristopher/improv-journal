@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/#guides", label: "Guides" },
-  { href: "/#learn", label: "Learn" },
-  { href: "/#concepts", label: "Concepts" },
+  { href: "/system", label: "System" },
+  { href: "/practice", label: "Practice" },
+  { href: "/paths", label: "Paths" },
+  { href: "/traditions", label: "Traditions" },
+  { href: "/listen", label: "Listen" },
   { href: "/library", label: "Library" },
 ];
 
