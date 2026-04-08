@@ -4,23 +4,14 @@ import { loadPaths, loadBridges, getAudioUrl } from "@/lib/content";
 export default async function Home() {
   const [paths, bridges] = await Promise.all([loadPaths(), loadBridges()]);
 
-  // Curate the featured episode — pick "how-to-stop-overthinking" (highest search volume)
   const featuredBridge =
     bridges.find((b) => b.slug === "how-to-stop-overthinking") ?? bridges[0];
   const featuredAudio = featuredBridge
     ? getAudioUrl("bridges", featuredBridge.slug)
     : null;
 
-  // Group paths by audience for cleaner display
   const beginnerPaths = paths.filter((p) =>
     p.frontmatter.audience?.includes("beginner")
-  );
-  const advancedPaths = paths.filter(
-    (p) =>
-      !p.frontmatter.audience?.includes("beginner") ||
-      p.frontmatter.audience?.some((a) =>
-        ["intermediate", "teacher", "performer", "advanced"].includes(a)
-      )
   );
 
   return (
@@ -28,24 +19,27 @@ export default async function Home() {
       {/* ── Hero ──────────────────────────────────────────────────── */}
       <header className="mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          Every conversation you've ever had runs on the same physics.
+          What makes some conversations magic and others fall flat?
         </h1>
         <p className="text-lg text-foreground/60">
-          Six constraints. Eight principles. Discovered on the improv stage.
-          Applicable everywhere.
+          There are real reasons — and they're learnable. Improv performers
+          have been studying them on stage for 60 years. This is what they
+          found.
         </p>
       </header>
 
-      {/* ── Three Doors (equal weight) ────────────────────────────── */}
+      {/* ── Three Doors ───────────────────────────────────────────── */}
       <section className="mb-16 space-y-4">
         <Link
           href="/system"
           className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
         >
-          <h2 className="text-xl font-semibold">Understand the system</h2>
+          <h2 className="text-xl font-semibold">
+            Why conversations work (or don't)
+          </h2>
           <p className="text-sm text-foreground/50 mt-1">
-            The physics underneath — axioms, principles, and what happens when
-            it breaks.
+            The hidden forces behind every interaction — why some click and
+            others die, and what you can do about it.
           </p>
         </Link>
 
@@ -53,10 +47,10 @@ export default async function Home() {
           href="/practice"
           className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
         >
-          <h2 className="text-xl font-semibold">Practice the craft</h2>
+          <h2 className="text-xl font-semibold">Try something tonight</h2>
           <p className="text-sm text-foreground/50 mt-1">
-            Exercises, techniques, formats, and vocabulary — everything you can
-            do.
+            Exercises you can do with a partner, techniques for better scenes,
+            and formats for shows.
           </p>
         </Link>
 
@@ -64,15 +58,17 @@ export default async function Home() {
           href="#guides"
           className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
         >
-          <h2 className="text-xl font-semibold">Apply it to your life</h2>
+          <h2 className="text-xl font-semibold">
+            Solve a specific problem
+          </h2>
           <p className="text-sm text-foreground/50 mt-1">
-            Guides for real problems — overthinking, stage fright, team
-            dynamics, giving feedback. No stage required.
+            Guides for overthinking, stage fright, team dynamics, giving
+            feedback, and more. No stage required.
           </p>
         </Link>
       </section>
 
-      {/* ── Guides (separate section, not nested in a door) ───────── */}
+      {/* ── Guides ────────────────────────────────────────────────── */}
       <section id="guides" className="mb-16">
         <h2 className="text-lg font-semibold mb-4">Guides</h2>
         <div className="space-y-3">
@@ -122,10 +118,10 @@ export default async function Home() {
         </section>
       )}
 
-      {/* ── Paths (grouped, not flat) ─────────────────────────────── */}
+      {/* ── Paths ─────────────────────────────────────────────────── */}
       <section className="mb-16">
         <div className="flex justify-between items-baseline mb-4">
-          <h2 className="text-lg font-semibold">Learning Paths</h2>
+          <h2 className="text-lg font-semibold">Start learning</h2>
           <Link
             href="/paths"
             className="text-sm text-foreground/40 hover:text-foreground/60"
@@ -151,10 +147,10 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* ── Traditions (with actual value prop) ────────────────────── */}
+      {/* ── Traditions ────────────────────────────────────────────── */}
       <section>
         <div className="flex justify-between items-baseline mb-4">
-          <h2 className="text-lg font-semibold">Five Traditions</h2>
+          <h2 className="text-lg font-semibold">Five schools of thought</h2>
           <Link
             href="/traditions"
             className="text-sm text-foreground/40 hover:text-foreground/60"
@@ -163,9 +159,9 @@ export default async function Home() {
           </Link>
         </div>
         <p className="text-sm text-foreground/50 mb-3">
-          Johnstone, Spolin, Close, UCB, and Annoyance disagree on fundamental
-          questions. Understanding where — and why — is what separates citation
-          from knowledge.
+          Improv isn't one thing. Johnstone, Spolin, Close, UCB, and Annoyance
+          each have their own philosophy — and they disagree on fundamental
+          questions.
         </p>
         <div className="flex gap-2 flex-wrap">
           {["johnstone", "spolin", "close", "ucb", "annoyance"].map((t) => (

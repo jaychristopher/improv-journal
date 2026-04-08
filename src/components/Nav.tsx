@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { href: "/system", label: "System" },
+  { href: "/system", label: "How It Works" },
   { href: "/practice", label: "Practice" },
-  { href: "/paths", label: "Paths" },
+  { href: "/paths", label: "Learn" },
   { href: "/traditions", label: "Traditions" },
   { href: "/listen", label: "Listen" },
-  { href: "/library", label: "Library" },
+  { href: "/library", label: "Reading" },
 ];
 
 export function Nav() {

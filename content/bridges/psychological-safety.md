@@ -1,6 +1,6 @@
 ---
 title: "Psychological Safety: The Physics of Trust"
-description: "Psychological safety isn't about being nice. It's about maintaining signal coherence in a bandwidth-limited system. Here's the structural mechanics — discovered on the improv stage, applicable to every team."
+description: "Psychological safety isn't about being nice. It's about specific behaviors that make people feel safe enough to speak up. Here's what improv ensembles figured out about building trust — fast."
 target_keywords:
   - { keyword: "psychological safety", volume: 11000 }
   - { keyword: "psychological safety at work", volume: 2700 }
