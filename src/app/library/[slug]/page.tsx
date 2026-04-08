@@ -66,7 +66,7 @@ export default async function LibraryDetailPage({
                 rel="noopener noreferrer"
                 className="text-sm px-4 py-2 rounded-lg border border-foreground/10 hover:border-foreground/30 transition-colors text-foreground/60 hover:text-foreground/80"
               >
-                {el.label} &nearr;
+                {el.label} {"\u2197"}
               </a>
             ))}
           </div>
@@ -81,7 +81,7 @@ export default async function LibraryDetailPage({
       {citingAtoms.length > 0 && (
         <nav className="mt-12 pt-8 border-t border-foreground/10">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
-            {citingAtoms.length} concepts cite this source
+            Ideas shaped by this work
           </h2>
           {Array.from(byType.entries())
             .sort((a, b) => b[1].length - a[1].length)

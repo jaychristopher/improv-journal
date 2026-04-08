@@ -129,7 +129,7 @@ export default async function LibraryPage() {
                       </Link>
                       {cites > 0 && (
                         <span className="text-xs text-foreground/30 shrink-0 ml-3">
-                          cited by {cites}
+                          {cites} ideas
                         </span>
                       )}
                     </div>
@@ -146,7 +146,7 @@ export default async function LibraryPage() {
                             rel="noopener noreferrer"
                             className="text-xs px-3 py-1 rounded-full border border-foreground/10 hover:border-foreground/30 transition-colors text-foreground/50 hover:text-foreground/70"
                           >
-                            {el.label} &nearr;
+                            {el.label} {"\u2197"}
                           </a>
                         ))}
                         <Link
