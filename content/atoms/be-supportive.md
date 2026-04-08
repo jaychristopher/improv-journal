@@ -1,6 +1,6 @@
 ---
 id: be-supportive
-title: "Be Supportive (North Star #8)"
+title: "Be Supportive"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, ensemble, generosity]

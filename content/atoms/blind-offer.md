@@ -1,6 +1,6 @@
 ---
 id: blind-offer
-title: "Exercise: Blind Offer"
+title: "Blind Offer"
 type: exercise
 status: draft
 tags: [exercises, support, justification, north-stars]

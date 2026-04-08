@@ -1,6 +1,6 @@
 ---
 id: organic-opening-exercise
-title: "Exercise: Organic Opening"
+title: "Organic Opening"
 type: exercise
 status: draft
 tags: [exercises, advanced, ensemble, harold, free-association]

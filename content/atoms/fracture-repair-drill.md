@@ -1,6 +1,6 @@
 ---
 id: fracture-repair-drill
-title: "Exercise: Fracture Repair Drill"
+title: "Fracture Repair Drill"
 type: exercise
 status: draft
 tags: [exercises, recovery, collapse-modes, coherence]

@@ -1,6 +1,6 @@
 ---
 id: be-changeable
-title: "Be Changeable (North Star #6)"
+title: "Be Changeable"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, adaptability, mutability]

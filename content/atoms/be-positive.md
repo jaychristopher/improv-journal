@@ -1,6 +1,6 @@
 ---
 id: be-positive
-title: "Be Positive (North Star #1)"
+title: "Be Positive"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, data-acceptance]

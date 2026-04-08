@@ -1,6 +1,6 @@
 ---
 id: directed-scene
-title: "Exercise: Directed Scene"
+title: "Directed Scene"
 type: exercise
 status: draft
 tags: [exercises, advanced, adaptability, side-coaching, pedagogy]

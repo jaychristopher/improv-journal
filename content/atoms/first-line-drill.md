@@ -1,6 +1,6 @@
 ---
 id: first-line-drill
-title: "Exercise: First Line Drill"
+title: "First Line Drill"
 type: exercise
 status: draft
 tags: [exercises, initiation, courage, north-stars]

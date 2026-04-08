@@ -1,6 +1,6 @@
 ---
 id: gift-giving
-title: "Exercise: Gift Giving"
+title: "Gift Giving"
 type: exercise
 status: draft
 tags: [exercises, gratitude, reframing, north-stars]

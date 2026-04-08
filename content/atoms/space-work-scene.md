@@ -1,6 +1,6 @@
 ---
 id: space-work-scene
-title: "Exercise: Silent Space Work Scene"
+title: "Silent Space Work Scene"
 type: exercise
 status: draft
 tags: [exercises, space-work, environment, physicality]

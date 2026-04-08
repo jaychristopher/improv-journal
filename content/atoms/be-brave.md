@@ -1,6 +1,6 @@
 ---
 id: be-brave
-title: "Be Brave (North Star #7)"
+title: "Be Brave"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, initiation, courage]

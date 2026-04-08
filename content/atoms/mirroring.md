@@ -1,6 +1,6 @@
 ---
 id: mirroring
-title: "Exercise: Mirroring"
+title: "Mirroring"
 type: exercise
 status: draft
 tags: [exercises, fundamentals, presence, ensemble, spolin]

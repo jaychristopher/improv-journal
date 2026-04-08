@@ -1,6 +1,6 @@
 ---
 id: last-word-response
-title: "Exercise: Last Word Response"
+title: "Last Word Response"
 type: exercise
 status: draft
 tags: [exercises, presence, listening, north-stars]

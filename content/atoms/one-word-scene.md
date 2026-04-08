@@ -1,6 +1,6 @@
 ---
 id: one-word-scene
-title: "Exercise: One-Word Scene"
+title: "One-Word Scene"
 type: exercise
 status: draft
 tags: [exercises, simplicity, bandwidth, north-stars]

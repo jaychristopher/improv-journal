@@ -1,6 +1,6 @@
 ---
 id: group-mind-cultivation
-title: "Exercise: Group Mind Cultivation"
+title: "Group Mind Cultivation"
 type: exercise
 status: draft
 tags: [exercises, ensemble, advanced, group-mind, presence]

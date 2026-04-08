@@ -1,6 +1,6 @@
 ---
 id: emotion-switch
-title: "Exercise: Emotion Switch"
+title: "Emotion Switch"
 type: exercise
 status: draft
 tags: [exercises, adaptability, emotion, north-stars]

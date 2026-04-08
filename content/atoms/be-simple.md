@@ -1,6 +1,6 @@
 ---
 id: be-simple
-title: "Be Simple (North Star #5)"
+title: "Be Simple"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, bandwidth, clarity]

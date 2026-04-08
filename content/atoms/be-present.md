@@ -1,6 +1,6 @@
 ---
 id: be-present
-title: "Be Present (North Star #2)"
+title: "Be Present"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, attention, cognition]

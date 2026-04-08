@@ -1,6 +1,6 @@
 ---
 id: genre-scene
-title: "Exercise: Genre Scene"
+title: "Genre Scene"
 type: exercise
 status: draft
 tags: [exercises, advanced, genre, commitment, specificity]

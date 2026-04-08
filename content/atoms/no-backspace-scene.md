@@ -1,6 +1,6 @@
 ---
 id: no-backspace-scene
-title: "Exercise: No Backspace Scene"
+title: "No Backspace Scene"
 type: exercise
 status: draft
 tags: [exercises, axioms, irreversibility, path-dependence]

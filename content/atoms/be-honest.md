@@ -1,6 +1,6 @@
 ---
 id: be-honest
-title: "Be Honest (North Star #4)"
+title: "Be Honest"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, authenticity, signal-clarity]

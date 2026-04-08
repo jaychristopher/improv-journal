@@ -1,6 +1,6 @@
 ---
 id: be-thankful
-title: "Be Thankful (North Star #3)"
+title: "Be Thankful"
 type: principle
 status: draft
 tags: [north-stars, fundamentals, resilience, reframing]

@@ -1,6 +1,6 @@
 ---
 id: emotional-honesty-scene
-title: "Exercise: Emotional Honesty Scene"
+title: "Emotional Honesty Scene"
 type: exercise
 status: draft
 tags: [exercises, authenticity, vulnerability, north-stars]

@@ -1,6 +1,6 @@
 ---
 id: yes-and-chain
-title: "Exercise: Yes, And Chain"
+title: "Yes, And Chain"
 type: exercise
 status: draft
 tags: [exercises, fundamentals, north-stars]

@@ -1,6 +1,6 @@
 ---
 id: status-transfer
-title: "Exercise: Status Transfer"
+title: "Status Transfer"
 type: exercise
 status: draft
 tags: [exercises, status, dynamics, johnstone]
