@@ -219,6 +219,24 @@ export function getTraditionNames(): string[] {
   return Object.keys(TRADITION_REFS);
 }
 
+/** Extract counter-position text from an atom's raw markdown */
+export function extractCounterPositions(
+  content: string
+): { text: string; tradition?: string }[] {
+  const results: { text: string; tradition?: string }[] = [];
+  // Match **Counter-position:** or **Counter-position (Tradition):** or **Counter-argument:**
+  const regex =
+    /\*\*Counter-(?:position|argument)(?:\s*\(([^)]+)\))?:\*\*\s*([\s\S]+?)(?=\n\n|\n\*\*[A-Z]|$)/g;
+  let match;
+  while ((match = regex.exec(content)) !== null) {
+    results.push({
+      tradition: match[1]?.trim(),
+      text: match[2].trim().replace(/\*\*/g, "").replace(/\*([^*]+)\*/g, "$1"),
+    });
+  }
+  return results;
+}
+
 // ─── URL resolution ─────────────────────────────────────────────────────────
 
 /** Resolve an atom to its canonical URL based on type */

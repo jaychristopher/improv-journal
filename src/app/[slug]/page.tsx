@@ -195,65 +195,58 @@ export default async function BridgePage({
         dangerouslySetInnerHTML={{ __html: bridge.html }}
       />
 
-      <div className="mt-16 pt-8 border-t border-foreground/10 space-y-8">
-        <h2 className="text-xl font-semibold">Go Deeper</h2>
-
-        {entryPath && (
+      {/* ── Post-article: focused CTAs, not a wall ────────────── */}
+      <div className="mt-16 pt-8 border-t border-foreground/10 space-y-6">
+        {/* Try this — exercises are the most actionable takeaway */}
+        {exercises.length > 0 && (
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">The full path</h3>
-            <Link href={`/paths/${entryPath.frontmatter.id}`} className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors">
-              <span className="font-medium">{entryPath.frontmatter.title}</span>
-              <p className="text-sm text-foreground/60 mt-1">{entryPath.frontmatter.description}</p>
-            </Link>
-          </div>
-        )}
-
-        {entryAtoms.length > 0 && (
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">Related concepts</h3>
-            <div className="grid grid-cols-2 gap-2">
-              {entryAtoms.map((atom) => (
-                <Link key={atom.id} href={atom.url} className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors">
-                  <span className="text-sm font-medium">{atom.title}</span>
-                  <span className="text-xs text-foreground/40 block mt-0.5">{atom.type}</span>
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+              Try this
+            </h2>
+            <div className="space-y-2">
+              {exercises.map((ex) => (
+                <Link
+                  key={ex.id}
+                  href={ex.url}
+                  className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                >
+                  <span className="text-sm font-medium">{ex.title}</span>
                 </Link>
               ))}
             </div>
           </div>
         )}
 
-        {exercises.length > 0 && (
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">Try these exercises</h3>
-            <ul className="space-y-2">
-              {exercises.map((ex) => (
-                <li key={ex.id}><Link href={ex.url} className="text-sm hover:underline">{ex.title}</Link></li>
-              ))}
-            </ul>
+        {/* Keep going — the path + one other guide */}
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+            Keep going
+          </h2>
+          <div className="space-y-2">
+            {entryPath && (
+              <Link
+                href={`/paths/${entryPath.frontmatter.id}`}
+                className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+              >
+                <span className="text-sm font-medium">
+                  {entryPath.frontmatter.title}
+                </span>
+                <span className="text-xs text-foreground/40 block mt-0.5">
+                  The full learning path
+                </span>
+              </Link>
+            )}
+            {relations.otherGuides.slice(0, 2).map((g) => (
+              <Link
+                key={g.slug}
+                href={`/${g.slug}`}
+                className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+              >
+                <span className="text-sm font-medium">{g.label}</span>
+              </Link>
+            ))}
           </div>
-        )}
-
-        {relations.threads.length > 0 && (
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">Related threads</h3>
-            <ul className="space-y-2">
-              {relations.threads.map((t) => (
-                <li key={t.id}><Link href={`/threads/${t.id}`} className="text-sm hover:underline">{t.label}</Link></li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {relations.otherGuides.length > 0 && (
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">More guides</h3>
-            <ul className="space-y-2">
-              {relations.otherGuides.map((g) => (
-                <li key={g.slug}><Link href={`/${g.slug}`} className="text-sm hover:underline">{g.label}</Link></li>
-              ))}
-            </ul>
-          </div>
-        )}
+        </div>
       </div>
     </main>
   );

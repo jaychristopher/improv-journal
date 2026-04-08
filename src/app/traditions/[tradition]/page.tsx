@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getTraditionNames, getAtomsForTradition, getAtomUrl } from "@/lib/content";
+import {
+  getTraditionNames,
+  getAtomsForTradition,
+  getAtomUrl,
+  extractCounterPositions,
+} from "@/lib/content";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
 const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: string[] }> = {
@@ -46,6 +51,31 @@ export default async function TraditionPage({
 
   const atoms = await getAtomsForTradition(tradition);
 
+  // Extract counter-positions that mention this tradition
+  const disagreements: {
+    atomTitle: string;
+    atomUrl: string;
+    text: string;
+  }[] = [];
+  for (const a of atoms) {
+    const cps = extractCounterPositions(a.content);
+    for (const cp of cps) {
+      if (cp.text.length > 20) {
+        disagreements.push({
+          atomTitle: a.frontmatter.title,
+          atomUrl: getAtomUrl({
+            id: a.frontmatter.id,
+            type: a.frontmatter.type,
+          }),
+          text:
+            cp.text.length > 200
+              ? cp.text.substring(0, 200).replace(/\s+\S*$/, "") + "..."
+              : cp.text,
+        });
+      }
+    }
+  }
+
   // Group by type
   const byType = new Map<string, typeof atoms>();
   for (const a of atoms) {
@@ -72,42 +102,70 @@ export default async function TraditionPage({
           {info.label}
         </h1>
         <p className="text-foreground/60 mt-2">{info.desc}</p>
-        <div className="mt-3">
-          <span className="text-xs text-foreground/40">Key texts: </span>
-          <span className="text-xs text-foreground/50">
-            {info.keyTexts.join(" · ")}
-          </span>
-        </div>
-        <p className="text-sm text-foreground/40 mt-2">
-          {atoms.length} concepts in the graph cite this tradition
+        <p className="text-xs text-foreground/40 mt-3">
+          Key texts: {info.keyTexts.join(" · ")}
         </p>
       </header>
 
-      {Array.from(byType.entries())
-        .sort((a, b) => b[1].length - a[1].length)
-        .map(([type, typeAtoms]) => (
-          <section key={type} className="mb-10">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
-              {type}s ({typeAtoms.length})
-            </h2>
-            <div className="grid grid-cols-2 gap-2">
-              {typeAtoms.map((a) => (
+      {/* Disagreements — the unique value */}
+      {disagreements.length > 0 && (
+        <section className="mb-12">
+          <h2 className="text-lg font-semibold mb-4">
+            Where this tradition pushes back
+          </h2>
+          <div className="space-y-4">
+            {disagreements.slice(0, 8).map((d, i) => (
+              <div
+                key={i}
+                className="border-l-2 border-foreground/10 pl-4"
+              >
+                <p className="text-sm text-foreground/70">{d.text}</p>
                 <Link
-                  key={a.frontmatter.id}
-                  href={getAtomUrl({
-                    id: a.frontmatter.id,
-                    type: a.frontmatter.type,
-                  })}
-                  className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                  href={d.atomUrl}
+                  className="text-xs text-foreground/40 hover:text-foreground/60 mt-1 inline-block"
                 >
-                  <span className="text-sm font-medium">
-                    {a.frontmatter.title}
-                  </span>
+                  from {d.atomTitle} &rarr;
                 </Link>
-              ))}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Concepts that cite this tradition */}
+      <section>
+        <h2 className="text-lg font-semibold mb-4">
+          Concepts citing this tradition
+          <span className="text-foreground/40 font-normal ml-2">
+            ({atoms.length})
+          </span>
+        </h2>
+        {Array.from(byType.entries())
+          .sort((a, b) => b[1].length - a[1].length)
+          .map(([type, typeAtoms]) => (
+            <div key={type} className="mb-6">
+              <h3 className="text-xs text-foreground/30 mb-2 capitalize">
+                {type}s ({typeAtoms.length})
+              </h3>
+              <div className="grid grid-cols-2 gap-2">
+                {typeAtoms.map((a) => (
+                  <Link
+                    key={a.frontmatter.id}
+                    href={getAtomUrl({
+                      id: a.frontmatter.id,
+                      type: a.frontmatter.type,
+                    })}
+                    className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                  >
+                    <span className="text-sm font-medium">
+                      {a.frontmatter.title}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </section>
-        ))}
+          ))}
+      </section>
     </main>
   );
 }
