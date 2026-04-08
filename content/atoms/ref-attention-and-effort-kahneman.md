@@ -1,6 +1,6 @@
 ---
 id: ref-attention-and-effort-kahneman
-title: "Ref: Attention and Effort — Daniel Kahneman (1973)"
+title: "Attention and Effort — Daniel Kahneman (1973)"
 type: reference
 status: draft
 tags: [references, books, cognitive-science, attention]
@@ -9,6 +9,7 @@ links:
   - { id: bandwidth, relation: illustrates }
   - { id: internal-computation, relation: illustrates }
   - { id: be-present, relation: illustrates }
+external_links: []
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

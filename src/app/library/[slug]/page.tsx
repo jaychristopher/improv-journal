@@ -3,6 +3,11 @@ import Link from "next/link";
 import { loadAtoms, getAtomBySlug, getAtomUrl } from "@/lib/content";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
+interface ExternalLink {
+  label: string;
+  url: string;
+}
+
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
   return atoms
@@ -20,6 +25,8 @@ export default async function LibraryDetailPage({
   if (!atom || atom.frontmatter.type !== "reference") notFound();
 
   const fm = atom.frontmatter;
+  const extLinks: ExternalLink[] =
+    (fm as unknown as { external_links?: ExternalLink[] }).external_links ?? [];
 
   // Find all atoms that cite this reference
   const allAtoms = await loadAtoms();
@@ -48,10 +55,22 @@ export default async function LibraryDetailPage({
       />
 
       <header className="mb-8">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          reference
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
+        <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>
+        {extLinks.length > 0 && (
+          <div className="flex gap-3 mt-4">
+            {extLinks.map((el) => (
+              <a
+                key={el.url}
+                href={el.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm px-4 py-2 rounded-lg border border-foreground/10 hover:border-foreground/30 transition-colors text-foreground/60 hover:text-foreground/80"
+              >
+                {el.label} &nearr;
+              </a>
+            ))}
+          </div>
+        )}
       </header>
 
       <article
@@ -62,17 +81,17 @@ export default async function LibraryDetailPage({
       {citingAtoms.length > 0 && (
         <nav className="mt-12 pt-8 border-t border-foreground/10">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
-            Cited by {citingAtoms.length} concepts
+            {citingAtoms.length} concepts cite this source
           </h2>
           {Array.from(byType.entries())
             .sort((a, b) => b[1].length - a[1].length)
-            .map(([type, atoms]) => (
+            .map(([type, typeAtoms]) => (
               <div key={type} className="mb-4">
                 <h3 className="text-xs text-foreground/30 mb-2 capitalize">
-                  {type}s ({atoms.length})
+                  {type}s ({typeAtoms.length})
                 </h3>
                 <ul className="space-y-1">
-                  {atoms.map((a) => (
+                  {typeAtoms.map((a) => (
                     <li key={a.frontmatter.id}>
                       <Link
                         href={getAtomUrl({

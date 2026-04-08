@@ -1,6 +1,6 @@
 ---
 id: ref-ucb-manual
-title: "Ref: UCB Comedy Improvisation Manual (2013)"
+title: "UCB Comedy Improvisation Manual (2013)"
 type: reference
 status: draft
 tags: [references, books, UCB, game]
@@ -16,6 +16,8 @@ links:
   - { id: group-scene, relation: illustrates }
   - { id: be-positive, relation: illustrates }
   - { id: point-of-view, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0989387801" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

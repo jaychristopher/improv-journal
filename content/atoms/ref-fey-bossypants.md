@@ -1,6 +1,6 @@
 ---
 id: ref-fey-bossypants
-title: "Ref: Bossypants — Tina Fey (2011)"
+title: "Bossypants — Tina Fey (2011)"
 type: reference
 status: draft
 tags: [references, books, fey, popularization]
@@ -10,6 +10,8 @@ links:
   - { id: be-thankful, relation: illustrates }
   - { id: negation, relation: illustrates }
   - { id: beyond-the-stage, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0316056898" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

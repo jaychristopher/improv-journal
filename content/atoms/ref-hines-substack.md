@@ -1,6 +1,6 @@
 ---
 id: ref-hines-substack
-title: "Ref: Improv Nonsense Substack — Will Hines (ongoing)"
+title: "Improv Nonsense Substack — Will Hines (ongoing)"
 type: reference
 status: draft
 tags: [references, substack, hines, UCB, contemporary]
@@ -13,6 +13,8 @@ links:
   - { id: harold, relation: illustrates }
   - { id: editing, relation: illustrates }
   - { id: opening, relation: illustrates }
+external_links:
+  - { label: "Substack", url: "https://willhines.substack.com" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

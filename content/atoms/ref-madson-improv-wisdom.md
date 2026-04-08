@@ -1,6 +1,6 @@
 ---
 id: ref-madson-improv-wisdom
-title: "Ref: Improv Wisdom — Patricia Ryan Madson (2005)"
+title: "Improv Wisdom — Patricia Ryan Madson (2005)"
 type: reference
 status: draft
 tags: [references, books, madson, applied-improv, philosophy]
@@ -11,6 +11,8 @@ links:
   - { id: be-supportive, relation: illustrates }
   - { id: be-brave, relation: illustrates }
   - { id: be-changeable, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0307341550" }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

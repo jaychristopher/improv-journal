@@ -1,6 +1,6 @@
 ---
 id: ref-viewpoints-bogart-landau
-title: "Ref: The Viewpoints Book — Anne Bogart & Tina Landau (2005)"
+title: "The Viewpoints Book — Anne Bogart & Tina Landau (2005)"
 type: reference
 status: draft
 tags: [references, books, viewpoints, movement, physicality]
@@ -10,6 +10,8 @@ links:
   - { id: be-present, relation: illustrates }
   - { id: space-work, relation: illustrates }
   - { id: ensemble, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/1559362413" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

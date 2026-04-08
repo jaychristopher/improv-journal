@@ -1,6 +1,6 @@
 ---
 id: ref-napier-improvise
-title: "Ref: Improvise — Mick Napier (2004)"
+title: "Improvise — Mick Napier (2004)"
 type: reference
 status: draft
 tags: [references, books, napier, chicago]
@@ -10,6 +10,8 @@ links:
   - { id: commitment, relation: illustrates }
   - { id: hesitation, relation: illustrates }
   - { id: internal-computation, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/032500630X" }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

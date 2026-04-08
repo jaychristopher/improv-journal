@@ -1,6 +1,6 @@
 ---
 id: ref-sawyer-group-genius
-title: "Ref: Group Genius — Keith Sawyer (2007)"
+title: "Group Genius — Keith Sawyer (2007)"
 type: reference
 status: draft
 tags: [references, books, sawyer, academic, creativity]
@@ -10,6 +10,8 @@ links:
   - { id: interdependence, relation: illustrates }
   - { id: discovery, relation: illustrates }
   - { id: trust, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0465071937" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

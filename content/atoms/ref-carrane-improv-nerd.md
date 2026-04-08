@@ -1,6 +1,6 @@
 ---
 id: ref-carrane-improv-nerd
-title: "Ref: Improv Nerd Podcast & Blog — Jimmy Carrane (ongoing)"
+title: "Improv Nerd Podcast & Blog — Jimmy Carrane (ongoing)"
 type: reference
 status: draft
 tags: [references, podcast, blog, carrane, chicago]
@@ -10,6 +10,10 @@ links:
   - { id: giving-notes, relation: illustrates }
   - { id: initiation, relation: illustrates }
   - { id: montage, relation: illustrates }
+external_links:
+  - { label: "Website", url: "https://jimmycarrane.com" }
+  - { label: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/improv-nerd-with-jimmy-carrane/id587855360" }
+  - { label: "Spotify", url: "https://open.spotify.com/show/0sSFAmOyOBBOqJCVlJBFlH" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

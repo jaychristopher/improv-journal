@@ -1,6 +1,6 @@
 ---
 id: ref-impro-storytellers-johnstone
-title: "Ref: Impro for Storytellers — Keith Johnstone (1999)"
+title: "Impro for Storytellers — Keith Johnstone (1999)"
 type: reference
 status: draft
 tags: [references, books, johnstone, narrative]
@@ -12,6 +12,8 @@ links:
   - { id: heightening, relation: illustrates }
   - { id: game-of-the-scene, relation: illustrates }
   - { id: callback, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0571190995" }
 sources: []
 created: "2026-04-05"
 updated: "2026-04-05"

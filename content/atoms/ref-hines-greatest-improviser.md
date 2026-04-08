@@ -1,6 +1,6 @@
 ---
 id: ref-hines-greatest-improviser
-title: "Ref: How to Be the Greatest Improviser on Earth — Will Hines (2016)"
+title: "How to Be the Greatest Improviser on Earth — Will Hines (2016)"
 type: reference
 status: draft
 tags: [references, books, hines, UCB]
@@ -11,6 +11,8 @@ links:
   - { id: obvious-choice, relation: illustrates }
   - { id: accepting-the-offer, relation: illustrates }
   - { id: initiation, relation: illustrates }
+external_links:
+  - { label: "Amazon (Kindle)", url: "https://amazon.com/dp/B01F2IS2XY" }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

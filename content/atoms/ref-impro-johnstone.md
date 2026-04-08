@@ -1,6 +1,6 @@
 ---
 id: ref-impro-johnstone
-title: "Ref: Impro — Keith Johnstone (1979)"
+title: "Impro — Keith Johnstone (1979)"
 type: reference
 status: draft
 tags: [references, books, johnstone, foundational]
@@ -11,6 +11,8 @@ links:
   - { id: be-changeable, relation: illustrates }
   - { id: accepting-the-offer, relation: illustrates }
   - { id: yes-and, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/0878301178" }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

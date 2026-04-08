@@ -1,6 +1,6 @@
 ---
 id: ref-spolin-improvisation-for-theater
-title: "Ref: Improvisation for the Theater — Viola Spolin (1963)"
+title: "Improvisation for the Theater — Viola Spolin (1963)"
 type: reference
 status: draft
 tags: [references, books, spolin, foundational]
@@ -13,6 +13,8 @@ links:
   - { id: meaning-is-relational, relation: illustrates }
   - { id: physicality, relation: illustrates }
   - { id: emotional-range, relation: illustrates }
+external_links:
+  - { label: "Amazon", url: "https://amazon.com/dp/081014008X" }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

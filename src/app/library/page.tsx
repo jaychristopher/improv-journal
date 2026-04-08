@@ -2,10 +2,14 @@ import Link from "next/link";
 import { loadAtoms } from "@/lib/content";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-// Curated tiers matching the sitemap outline
+interface ExternalLink {
+  label: string;
+  url: string;
+}
+
 const TIERS: { label: string; description: string; ids: string[] }[] = [
   {
-    label: "Start here — The essential 5",
+    label: "Start here",
     description:
       "If you read nothing else, read these. Each one shaped how improv is taught today.",
     ids: [
@@ -31,7 +35,7 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
   {
     label: "The teachers",
     description:
-      "Ongoing writing from practitioners who think seriously about improv pedagogy and craft.",
+      "Ongoing writing from practitioners who think seriously about the craft.",
     ids: [
       "ref-hines-substack",
       "ref-carrane-improv-nerd",
@@ -41,7 +45,7 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
   {
     label: "The science",
     description:
-      "Academic and research sources that ground the knowledge graph's axioms in cognitive science, sociology, and performance studies.",
+      "Academic sources that ground the axioms in cognitive science and performance studies.",
     ids: [
       "ref-attention-and-effort-kahneman",
       "ref-viewpoints-bogart-landau",
@@ -53,31 +57,36 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
 export default async function LibraryPage() {
   const atoms = await loadAtoms();
 
-  // Build a lookup map for reference atoms
   const refMap = new Map(
     atoms
       .filter((a) => a.frontmatter.type === "reference")
       .map((a) => [a.frontmatter.id, a])
   );
 
+  // Count how many non-reference atoms cite each reference
+  const citeCounts = new Map<string, number>();
+  for (const a of atoms) {
+    if (a.frontmatter.type === "reference") continue;
+    for (const link of a.frontmatter.links ?? []) {
+      if (refMap.has(link.id)) {
+        citeCounts.set(link.id, (citeCounts.get(link.id) ?? 0) + 1);
+      }
+    }
+  }
+
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
-      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Library" }]} />
+      <Breadcrumb
+        crumbs={[{ label: "Home", href: "/" }, { label: "Library" }]}
+      />
 
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          library
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">
-          The Improv Library
+        <h1 className="text-3xl font-bold tracking-tight">
+          The Reading List
         </h1>
         <p className="text-foreground/60 mt-2">
-          Every source cited in the knowledge graph, organized by where to
-          start.
-        </p>
-        <p className="text-xs text-foreground/40 mt-2">
-          {refMap.size} references — each page shows every concept in the graph
-          that cites it
+          The books, podcasts, and research behind the knowledge graph —
+          organized by where to start.
         </p>
       </header>
 
@@ -88,48 +97,73 @@ export default async function LibraryPage() {
             <p className="text-sm text-foreground/40 mb-4">
               {tier.description}
             </p>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {tier.ids.map((id) => {
                 const atom = refMap.get(id);
                 if (!atom) return null;
-                // Extract first sentence from body for preview
+                const fm = atom.frontmatter;
+                const extLinks: ExternalLink[] =
+                  (fm as unknown as { external_links?: ExternalLink[] })
+                    .external_links ?? [];
+                const cites = citeCounts.get(id) ?? 0;
+
+                // Extract first sentence for preview
                 const preview = atom.content
                   .replace(/^---[\s\S]*?---\n*/m, "")
                   .replace(/^#{1,6}\s+.*$/gm, "")
                   .replace(/\*\*[^*]+\*\*/g, "")
                   .trim()
                   .split(/\.\s/)[0];
+
                 return (
-                  <Link
+                  <div
                     key={id}
-                    href={`/library/${id}`}
-                    className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+                    className="border border-foreground/10 rounded-lg p-5"
                   >
-                    <h3 className="font-medium text-sm">
-                      {atom.frontmatter.title}
-                    </h3>
-                    <p className="text-xs text-foreground/40 mt-1 line-clamp-2">
+                    <div className="flex justify-between items-start">
+                      <Link
+                        href={`/library/${id}`}
+                        className="font-semibold hover:underline"
+                      >
+                        {fm.title}
+                      </Link>
+                      {cites > 0 && (
+                        <span className="text-xs text-foreground/30 shrink-0 ml-3">
+                          cited by {cites}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-foreground/50 mt-1">
                       {preview}.
                     </p>
-                  </Link>
+                    {extLinks.length > 0 && (
+                      <div className="flex gap-3 mt-3">
+                        {extLinks.map((el) => (
+                          <a
+                            key={el.url}
+                            href={el.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs px-3 py-1 rounded-full border border-foreground/10 hover:border-foreground/30 transition-colors text-foreground/50 hover:text-foreground/70"
+                          >
+                            {el.label} &nearr;
+                          </a>
+                        ))}
+                        <Link
+                          href={`/library/${id}`}
+                          className="text-xs px-3 py-1 rounded-full border border-foreground/10 hover:border-foreground/30 transition-colors text-foreground/50 hover:text-foreground/70"
+                        >
+                          In the graph
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                 );
               })}
             </div>
           </section>
         ))}
       </div>
-
-      <section className="mt-16 pt-8 border-t border-foreground/10">
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
-          How to use the library
-        </h2>
-        <p className="text-sm text-foreground/60">
-          Each reference page shows every atom in the graph that cites it.
-          Follow the links to see how each source's ideas are distributed across
-          the knowledge graph — which principles it informs, which exercises it
-          inspired, which counter-positions it provokes.
-        </p>
-      </section>
     </main>
   );
 }
