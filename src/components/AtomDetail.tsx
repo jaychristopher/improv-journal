@@ -55,10 +55,17 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   let audioDuration: string | undefined;
   if (audioUrl) {
     try {
-      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
+      const durPath = path.join(
+        process.cwd(),
+        "public",
+        "audio",
+        "durations.json"
+      );
       const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
       audioDuration = durations[audioUrl]?.formatted;
-    } catch { /* no duration cache */ }
+    } catch {
+      /* no duration cache */
+    }
   }
 
   // Reverse lookups
@@ -102,11 +109,17 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
     })
   );
 
+  const hasSidebar =
+    resolvedLinks.length > 0 ||
+    appearsInThreads.length > 0 ||
+    appearsInPaths.length > 0 ||
+    appearsInBridges.length > 0;
+
   return (
-    <main className="max-w-2xl mx-auto px-6 py-16">
+    <main className="max-w-5xl mx-auto px-6 py-16">
       <Breadcrumb crumbs={breadcrumbs} />
 
-      <header className="mb-8">
+      <header className="mb-8 max-w-2xl">
         <span className="text-xs uppercase tracking-wider text-foreground/40">
           {TYPE_LABELS[fm.type] ?? fm.type}
         </span>
@@ -114,7 +127,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
       </header>
 
       {audioUrl && (
-        <>
+        <div className="max-w-2xl">
           <AudioPlayer src={audioUrl} />
           <PodcastJsonLd
             title={fm.title}
@@ -122,116 +135,125 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
             pageUrl={atomUrl}
             duration={audioDuration}
           />
-        </>
+        </div>
       )}
 
-      <article
-        className="prose prose-neutral dark:prose-invert max-w-none"
-        dangerouslySetInnerHTML={{ __html: atom.html }}
-      />
+      {/* Two-column layout: content left, sidebar right on desktop */}
+      <div
+        className={
+          hasSidebar
+            ? "lg:grid lg:grid-cols-[1fr_260px] lg:gap-12"
+            : ""
+        }
+      >
+        {/* ── Main content ─────────────────────────────────────── */}
+        <article
+          className="prose prose-neutral dark:prose-invert max-w-none"
+          dangerouslySetInnerHTML={{ __html: atom.html }}
+        />
 
-      {resolvedLinks.length > 0 && (
-        <nav className="mt-12 pt-8 border-t border-foreground/10">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
-            Connections
-          </h2>
-          <ul className="space-y-2">
-            {resolvedLinks.map((link) => (
-              <li key={link.id}>
-                <Link href={link.url} className="text-sm hover:underline">
-                  {link.title}
-                </Link>
-                <span className="text-xs text-foreground/40 ml-2">
-                  {RELATION_LABELS[link.relation] ?? link.relation}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+        {/* ── Sidebar (right on desktop, below on mobile) ──────── */}
+        {hasSidebar && (
+          <aside className="mt-12 lg:mt-0 space-y-8 text-sm">
+            {/* Related concepts */}
+            {resolvedLinks.length > 0 && (
+              <div>
+                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                  Related
+                </h2>
+                <ul className="space-y-2">
+                  {resolvedLinks.map((link) => (
+                    <li key={link.id}>
+                      <Link
+                        href={link.url}
+                        className="hover:underline text-foreground/70"
+                      >
+                        {link.title}
+                      </Link>
+                      <span className="text-xs text-foreground/30 ml-1.5">
+                        &middot; {RELATION_LABELS[link.relation] ?? link.relation}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-      {fm.sources && fm.sources.length > 0 && (
-        <nav className="mt-8 pt-8 border-t border-foreground/10">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
-            Provenance
-          </h2>
-          <ul className="space-y-2">
-            {fm.sources.map((sourceId) => (
-              <li key={sourceId}>
-                <Link
-                  href={`/sources/${sourceId}`}
-                  className="text-sm hover:underline"
-                >
-                  {sourceId}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+            {/* Part of (paths + threads + guides) */}
+            {(appearsInPaths.length > 0 ||
+              appearsInThreads.length > 0 ||
+              appearsInBridges.length > 0) && (
+              <div>
+                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                  Part of
+                </h2>
+                <ul className="space-y-2">
+                  {appearsInPaths.map((p) => (
+                    <li key={p.id}>
+                      <Link
+                        href={`/paths/${p.id}`}
+                        className="hover:underline text-foreground/70"
+                      >
+                        {p.title}
+                      </Link>
+                      <span className="text-xs text-foreground/30 ml-1.5">
+                        &middot; path
+                      </span>
+                    </li>
+                  ))}
+                  {appearsInThreads.map((t) => (
+                    <li key={t.frontmatter.id}>
+                      <Link
+                        href={`/threads/${t.frontmatter.id}`}
+                        className="hover:underline text-foreground/70"
+                      >
+                        {t.frontmatter.title}
+                      </Link>
+                      <span className="text-xs text-foreground/30 ml-1.5">
+                        &middot; thread
+                      </span>
+                    </li>
+                  ))}
+                  {appearsInBridges.map((b) => (
+                    <li key={b.slug}>
+                      <Link
+                        href={`/${b.slug}`}
+                        className="hover:underline text-foreground/70"
+                      >
+                        {b.frontmatter.title}
+                      </Link>
+                      <span className="text-xs text-foreground/30 ml-1.5">
+                        &middot; guide
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-      {(appearsInThreads.length > 0 ||
-        appearsInPaths.length > 0 ||
-        appearsInBridges.length > 0) && (
-        <nav className="mt-8 pt-8 border-t border-foreground/10">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
-            Appears in
-          </h2>
-          {appearsInPaths.length > 0 && (
-            <div className="mb-4">
-              <h3 className="text-xs text-foreground/30 mb-2">Paths</h3>
-              <ul className="space-y-1">
-                {appearsInPaths.map((p) => (
-                  <li key={p.id}>
-                    <Link
-                      href={`/paths/${p.id}`}
-                      className="text-sm hover:underline"
-                    >
-                      {p.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {appearsInThreads.length > 0 && (
-            <div className="mb-4">
-              <h3 className="text-xs text-foreground/30 mb-2">Threads</h3>
-              <ul className="space-y-1">
-                {appearsInThreads.map((t) => (
-                  <li key={t.frontmatter.id}>
-                    <Link
-                      href={`/threads/${t.frontmatter.id}`}
-                      className="text-sm hover:underline"
-                    >
-                      {t.frontmatter.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {appearsInBridges.length > 0 && (
-            <div>
-              <h3 className="text-xs text-foreground/30 mb-2">
-                Guides
-              </h3>
-              <ul className="space-y-1">
-                {appearsInBridges.map((b) => (
-                  <li key={b.slug}>
-                    <Link
-                      href={`/${b.slug}`}
-                      className="text-sm hover:underline"
-                    >
-                      {b.frontmatter.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </nav>
-      )}
+            {/* Source */}
+            {fm.sources && fm.sources.length > 0 && (
+              <div>
+                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                  Source
+                </h2>
+                <ul className="space-y-1">
+                  {fm.sources.map((sourceId) => (
+                    <li key={sourceId}>
+                      <Link
+                        href={`/sources/${sourceId}`}
+                        className="hover:underline text-foreground/70"
+                      >
+                        {sourceId.replace(/-/g, " ")}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </aside>
+        )}
+      </div>
     </main>
   );
 }
