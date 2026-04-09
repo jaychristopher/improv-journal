@@ -19,7 +19,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
   - { id: status-dynamics, relation: extends }
   - { id: playing-against-type, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

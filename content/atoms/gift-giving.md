@@ -16,7 +16,7 @@ links:
   - { id: commitment, relation: extends }
   - { id: active-listening, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

@@ -26,7 +26,7 @@ links:
   - { id: discovery, relation: requires }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-sawyer-group-genius, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

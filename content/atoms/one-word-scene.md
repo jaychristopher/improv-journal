@@ -15,7 +15,7 @@ links:
   - { id: offers, relation: illustrates }
   - { id: obvious-choice, relation: enables }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

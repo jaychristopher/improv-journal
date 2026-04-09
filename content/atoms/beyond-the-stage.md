@@ -23,7 +23,7 @@ links:
   - { id: ref-madson-improv-wisdom, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-sawyer-group-genius, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

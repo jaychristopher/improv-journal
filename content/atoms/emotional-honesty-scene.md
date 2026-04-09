@@ -15,7 +15,7 @@ links:
   - { id: signal, relation: illustrates }
   - { id: be-brave, relation: requires }
   - { id: relationship, relation: enables }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

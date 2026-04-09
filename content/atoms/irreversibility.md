@@ -15,7 +15,7 @@ links:
   - { id: callback, relation: extends }
   - { id: blocking, relation: contrasts }
   - { id: no-backspace-scene, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

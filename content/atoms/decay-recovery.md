@@ -18,7 +18,7 @@ links:
   - { id: be-present, relation: requires }
   - { id: relationship, relation: requires }
   - { id: environment, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

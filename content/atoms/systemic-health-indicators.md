@@ -13,7 +13,7 @@ links:
   - { id: yes-and, relation: requires }
   - { id: game-of-the-scene, relation: extends }
   - { id: coherence, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

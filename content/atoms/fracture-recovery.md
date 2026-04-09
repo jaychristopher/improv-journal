@@ -17,7 +17,7 @@ links:
   - { id: relationship, relation: extends }
   - { id: be-supportive, relation: requires }
   - { id: fracture-repair-drill, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

@@ -14,7 +14,7 @@ links:
   - { id: active-listening, relation: requires }
   - { id: internal-computation, relation: enables }
   - { id: ref-attention-and-effort-kahneman, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

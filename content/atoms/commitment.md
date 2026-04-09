@@ -22,7 +22,7 @@ links:
   - { id: heightening, relation: enables }
   - { id: ref-napier-improvise, relation: illustrates }
   - { id: ref-impro-johnstone, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

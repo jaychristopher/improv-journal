@@ -17,7 +17,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-napier-improvise, relation: contrasts }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

@@ -14,7 +14,7 @@ links:
   - { id: internal-computation, relation: contrasts }
   - { id: hesitation, relation: illustrates }
   - { id: obvious-choice, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

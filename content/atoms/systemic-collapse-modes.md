@@ -13,7 +13,7 @@ links:
   - { id: shared-reality-fragility, relation: extends }
   - { id: cognitive-bandwidth, relation: extends }
   - { id: active-listening, relation: requires }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

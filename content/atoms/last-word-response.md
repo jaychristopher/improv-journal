@@ -13,7 +13,7 @@ links:
   - { id: cognitive-bandwidth, relation: requires }
   - { id: offers, relation: extends }
   - { id: signal, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

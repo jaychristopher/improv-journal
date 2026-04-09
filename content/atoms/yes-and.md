@@ -18,7 +18,7 @@ links:
   - { id: irreversibility, relation: requires }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-fey-bossypants, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

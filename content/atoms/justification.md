@@ -16,7 +16,7 @@ links:
   - { id: fracture-recovery, relation: enables }
   - { id: callback, relation: extends }
   - { id: ref-truth-in-comedy, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

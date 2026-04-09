@@ -25,7 +25,7 @@ links:
   - { id: ref-hines-greatest-improviser, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
   - { id: ref-hines-substack, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

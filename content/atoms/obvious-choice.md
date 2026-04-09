@@ -15,7 +15,7 @@ links:
   - { id: offers, relation: illustrates }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-ucb-manual, relation: contrasts }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

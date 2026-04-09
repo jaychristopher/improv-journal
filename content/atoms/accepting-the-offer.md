@@ -19,7 +19,7 @@ links:
   - { id: do-feel-say, relation: extends }
   - { id: ref-hines-substack, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

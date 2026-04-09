@@ -13,7 +13,7 @@ links:
   - { id: active-listening, relation: enables }
   - { id: emotional-truth, relation: enables }
   - { id: meaning-is-relational, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

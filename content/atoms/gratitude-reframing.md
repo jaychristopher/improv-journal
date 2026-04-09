@@ -15,7 +15,7 @@ links:
   - { id: fracture-recovery, relation: enables }
   - { id: discovery, relation: enables }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

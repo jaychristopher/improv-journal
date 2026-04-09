@@ -17,7 +17,7 @@ links:
   - { id: discovery, relation: enables }
   - { id: stage-presence, relation: contrasts }
   - { id: warm-up, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-04-03"
 updated: "2026-04-03"
 ---

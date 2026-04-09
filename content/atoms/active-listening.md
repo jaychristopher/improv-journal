@@ -17,7 +17,7 @@ links:
   - { id: relationship, relation: enables }
   - { id: ref-truth-in-comedy, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

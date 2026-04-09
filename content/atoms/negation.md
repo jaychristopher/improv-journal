@@ -13,7 +13,7 @@ links:
   - { id: trust, relation: illustrates }
   - { id: coherence, relation: illustrates }
   - { id: fracture-recovery, relation: extends }
-sources: [improv-is-high-stakes-reality-construction]
+sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
 ---
