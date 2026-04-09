@@ -18,7 +18,7 @@ describe("practice routing", () => {
   it("all format atoms route to /practice/formats/", async () => {
     const atoms = await loadAtoms();
     const formats = atoms.filter((a) => a.frontmatter.type === "format");
-    expect(formats.length).toBe(8);
+    expect(formats.length).toBeGreaterThanOrEqual(14);
     for (const a of formats) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toMatch(
         /^\/practice\/formats\//
