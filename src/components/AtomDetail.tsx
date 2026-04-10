@@ -22,7 +22,7 @@ const TYPE_LABELS: Record<string, string> = {
   definition: "concept",
   pattern: "pattern",
   antipattern: "failure mode",
-  axiom: "axiom",
+  axiom: "why it's hard",
   framework: "framework",
   format: "format",
   pedagogy: "teaching method",
