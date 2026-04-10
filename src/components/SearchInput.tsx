@@ -119,7 +119,7 @@ export function SearchInput() {
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         placeholder="Search..."
-        className="w-32 sm:w-40 text-sm bg-transparent border border-foreground/10 rounded-lg px-3 py-1.5 text-foreground/70 placeholder:text-foreground/30 focus:outline-none focus:border-foreground/30 transition-colors"
+        className="w-32 sm:w-40 text-sm bg-surface border border-foreground/10 rounded-lg px-3 py-1.5 text-foreground/70 placeholder:text-foreground/30 focus:outline-none focus:border-foreground/30 transition-colors"
         aria-label="Search"
         role="combobox"
         aria-expanded={open && suggestions.length > 0}
