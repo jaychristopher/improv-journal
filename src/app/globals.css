@@ -2,9 +2,9 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
+  --background: #f0f0f0;
   --foreground: #171717;
-  --surface: #f7f7f7;
+  --surface: #ffffff;
 }
 
 :root.dark {
