@@ -208,7 +208,7 @@ export default async function BridgePage({
                 <Link
                   key={ex.id}
                   href={ex.url}
-                  className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                  className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
                 >
                   <span className="text-sm font-medium">{ex.title}</span>
                 </Link>
@@ -226,7 +226,7 @@ export default async function BridgePage({
             {entryPath && (
               <Link
                 href={`/paths/${entryPath.frontmatter.id}`}
-                className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
               >
                 <span className="text-sm font-medium">
                   {entryPath.frontmatter.title}
@@ -240,7 +240,7 @@ export default async function BridgePage({
               <Link
                 key={g.slug}
                 href={`/${g.slug}`}
-                className="block border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
               >
                 <span className="text-sm font-medium">{g.label}</span>
               </Link>

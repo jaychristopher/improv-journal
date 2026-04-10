@@ -72,7 +72,7 @@ export default async function PathPage({
         {threads.map((thread, i) => (
           <section
             key={thread.id}
-            className="border border-foreground/10 rounded-lg p-6"
+            className="border border-foreground/10 rounded-lg bg-surface p-6"
           >
             <span className="text-xs text-foreground/30">
               {i + 1} of {threads.length}

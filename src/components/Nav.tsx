@@ -63,7 +63,7 @@ export function Nav() {
                   className="fixed inset-0 z-10"
                   onClick={() => setMoreOpen(false)}
                 />
-                <div className="absolute right-0 top-full mt-2 z-20 bg-background border border-foreground/10 rounded-lg py-2 min-w-[160px] shadow-lg">
+                <div className="absolute right-0 top-full mt-2 z-20 bg-surface border border-foreground/10 rounded-lg py-2 min-w-[160px] shadow-lg">
                   {MORE_ITEMS.map((item) => (
                     <Link
                       key={item.href}

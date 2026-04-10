@@ -25,7 +25,7 @@ export default async function PrinciplesPage() {
           <Link
             key={a.frontmatter.id}
             href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-            className="block border border-foreground/10 rounded-lg p-5 hover:border-foreground/30 transition-colors"
+            className="block border border-foreground/10 rounded-lg bg-surface p-5 hover:border-foreground/30 transition-colors"
           >
             <h3 className="font-semibold">{a.frontmatter.title}</h3>
             <p className="text-sm text-foreground/50 mt-1 line-clamp-2">

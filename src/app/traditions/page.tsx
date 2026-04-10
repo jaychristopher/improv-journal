@@ -55,7 +55,7 @@ export default async function TraditionsPage() {
           <Link
             key={t.name}
             href={`/traditions/${t.name}`}
-            className="block border border-foreground/10 rounded-lg p-5 hover:border-foreground/30 transition-colors"
+            className="block border border-foreground/10 rounded-lg bg-surface p-5 hover:border-foreground/30 transition-colors"
           >
             <div className="flex justify-between items-baseline">
               <h2 className="text-lg font-semibold">{t.label}</h2>

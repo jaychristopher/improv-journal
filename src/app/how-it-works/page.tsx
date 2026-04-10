@@ -41,7 +41,7 @@ export default async function SystemPage() {
                 id: a.frontmatter.id,
                 type: a.frontmatter.type,
               })}
-              className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+              className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
             >
               <h3 className="font-medium">{a.frontmatter.title}</h3>
             </Link>
@@ -67,7 +67,7 @@ export default async function SystemPage() {
                 id: a.frontmatter.id,
                 type: a.frontmatter.type,
               })}
-              className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+              className="border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
             >
               <span className="text-sm font-medium">
                 {a.frontmatter.title}
@@ -109,7 +109,7 @@ export default async function SystemPage() {
                   id: a.frontmatter.id,
                   type: a.frontmatter.type,
                 })}
-                className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+                className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
               >
                 <h3 className="font-medium">{a.frontmatter.title}</h3>
               </Link>

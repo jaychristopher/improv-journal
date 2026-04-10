@@ -29,7 +29,7 @@ export function MiniGraph({
   const radius = 90;
 
   return (
-    <div className="border border-foreground/10 rounded-lg p-4 mb-6">
+    <div className="border border-foreground/10 rounded-lg bg-surface p-4 mb-6">
       <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
         Connections
       </h3>

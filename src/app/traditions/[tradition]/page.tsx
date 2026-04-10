@@ -155,7 +155,7 @@ export default async function TraditionPage({
                       id: a.frontmatter.id,
                       type: a.frontmatter.type,
                     })}
-                    className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                    className="border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
                   >
                     <span className="text-sm font-medium">
                       {a.frontmatter.title}

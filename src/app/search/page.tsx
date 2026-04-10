@@ -195,7 +195,7 @@ function SearchResults() {
           <Link
             key={r.id}
             href={r.url}
-            className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+            className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
           >
             <h3 className="font-medium text-sm">{r.title}</h3>
             <span className="text-xs text-foreground/30 mt-0.5 block">

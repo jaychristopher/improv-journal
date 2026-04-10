@@ -57,7 +57,7 @@ export default async function ShowPage({
           <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
             Start here
           </h2>
-          <div className="border border-foreground/10 rounded-lg p-5">
+          <div className="border border-foreground/10 rounded-lg bg-surface p-5">
             <Link
               href={startHere.href}
               className="font-medium hover:underline"
@@ -97,7 +97,7 @@ export default async function ShowPage({
             {season.episodes.map((ep) => (
               <div
                 key={ep.audioUrl}
-                className="border border-foreground/10 rounded-lg p-4"
+                className="border border-foreground/10 rounded-lg bg-surface p-4"
               >
                 <div className="flex justify-between items-start">
                   <div>

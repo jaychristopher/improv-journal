@@ -45,7 +45,7 @@ export default async function PathsIndexPage() {
                 <Link
                   key={p.frontmatter.id}
                   href={`/paths/${p.frontmatter.id}`}
-                  className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+                  className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
                 >
                   <h3 className="font-medium">{p.frontmatter.title}</h3>
                   <p className="text-sm text-foreground/50 mt-1">{p.frontmatter.description}</p>

@@ -101,7 +101,7 @@ export function TagFilter({
           <Link
             key={item.id}
             href={item.href}
-            className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+            className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
           >
             <h3 className="font-medium text-sm">{item.title}</h3>
             {showPreview && item.preview && (

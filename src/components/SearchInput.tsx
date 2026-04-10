@@ -128,7 +128,7 @@ export function SearchInput() {
 
       {/* Suggestions dropdown */}
       {open && (suggestions.length > 0 || loading) && (
-        <div className="absolute right-0 top-full mt-1 z-30 bg-background border border-foreground/10 rounded-lg py-1 min-w-[200px] shadow-lg">
+        <div className="absolute right-0 top-full mt-1 z-30 bg-surface border border-foreground/10 rounded-lg py-1 min-w-[200px] shadow-lg">
           {loading && (
             <div className="px-3 py-2 text-xs text-foreground/30">
               Loading search...

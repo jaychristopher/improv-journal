@@ -68,7 +68,7 @@ export default async function SourcePage({
               <Link
                 key={atom.id}
                 href={atom.url}
-                className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors"
+                className="border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
               >
                 <span className="font-medium text-sm block">{atom.title}</span>
                 <span className="text-xs text-foreground/40">{atom.type}</span>

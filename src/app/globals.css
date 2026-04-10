@@ -4,16 +4,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --surface: #f7f7f7;
 }
 
 :root.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --surface: #141414;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

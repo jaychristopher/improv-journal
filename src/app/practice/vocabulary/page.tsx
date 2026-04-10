@@ -24,7 +24,7 @@ export default async function VocabularyPage() {
       </header>
       <div className="grid grid-cols-2 gap-3">
         {definitions.map((a) => (
-          <Link key={a.frontmatter.id} href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })} className="border border-foreground/10 rounded-lg p-3 hover:border-foreground/30 transition-colors">
+          <Link key={a.frontmatter.id} href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })} className="border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors">
             <span className="text-sm font-medium">{a.frontmatter.title}</span>
           </Link>
         ))}

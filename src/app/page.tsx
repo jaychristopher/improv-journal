@@ -32,7 +32,7 @@ export default async function Home() {
       <section className="mb-16 space-y-4">
         <Link
           href="/how-it-works"
-          className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
+          className="block border border-foreground/10 rounded-lg bg-surface p-6 hover:border-foreground/30 transition-colors"
         >
           <h2 className="text-xl font-semibold">
             Why conversations work (or don't)
@@ -45,7 +45,7 @@ export default async function Home() {
 
         <Link
           href="/practice"
-          className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
+          className="block border border-foreground/10 rounded-lg bg-surface p-6 hover:border-foreground/30 transition-colors"
         >
           <h2 className="text-xl font-semibold">Try something tonight</h2>
           <p className="text-sm text-foreground/50 mt-1">
@@ -56,7 +56,7 @@ export default async function Home() {
 
         <Link
           href="#guides"
-          className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
+          className="block border border-foreground/10 rounded-lg bg-surface p-6 hover:border-foreground/30 transition-colors"
         >
           <h2 className="text-xl font-semibold">
             Solve a specific problem
@@ -76,7 +76,7 @@ export default async function Home() {
             <Link
               key={b.slug}
               href={`/${b.slug}`}
-              className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+              className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
             >
               <h3 className="font-medium text-sm">
                 {b.frontmatter.title}
@@ -101,7 +101,7 @@ export default async function Home() {
               All episodes &rarr;
             </Link>
           </div>
-          <div className="border border-foreground/10 rounded-lg p-5">
+          <div className="border border-foreground/10 rounded-lg bg-surface p-5">
             <Link
               href={`/${featuredBridge.slug}`}
               className="font-medium text-sm hover:underline"
@@ -134,7 +134,7 @@ export default async function Home() {
             <Link
               key={p.frontmatter.id}
               href={`/paths/${p.frontmatter.id}`}
-              className="block border border-foreground/10 rounded-lg p-4 hover:border-foreground/30 transition-colors"
+              className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
             >
               <h3 className="font-medium text-sm">
                 {p.frontmatter.title}

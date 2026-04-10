@@ -58,7 +58,7 @@ export default async function ListenPage() {
           <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
             Featured
           </h2>
-          <div className="border border-foreground/10 rounded-lg p-5">
+          <div className="border border-foreground/10 rounded-lg bg-surface p-5">
             <Link
               href={featured.href}
               className="font-medium hover:underline"
@@ -85,7 +85,7 @@ export default async function ListenPage() {
             <Link
               key={s.id}
               href={`/listen/${s.id}`}
-              className="block border border-foreground/10 rounded-lg p-5 hover:border-foreground/30 transition-colors"
+              className="block border border-foreground/10 rounded-lg bg-surface p-5 hover:border-foreground/30 transition-colors"
             >
               <div className="flex justify-between items-baseline">
                 <h3 className="font-semibold">{s.title}</h3>

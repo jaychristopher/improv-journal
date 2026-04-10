@@ -119,7 +119,7 @@ export default async function LibraryPage() {
                 return (
                   <div
                     key={id}
-                    className="border border-foreground/10 rounded-lg p-5"
+                    className="border border-foreground/10 rounded-lg bg-surface p-5"
                   >
                     <div className="flex justify-between items-start">
                       <Link
