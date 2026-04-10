@@ -17,7 +17,7 @@ export function Nav() {
 
   return (
     <nav className="border-b border-foreground/10 px-6 py-3">
-      <div className="max-w-3xl mx-auto flex items-center justify-between">
+      <div className="max-w-5xl mx-auto flex items-center justify-between">
         <Link href="/" className="font-semibold text-sm tracking-tight">
           Physics of Connection
         </Link>
