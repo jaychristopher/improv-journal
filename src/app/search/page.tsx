@@ -3,13 +3,14 @@
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import MiniSearch from "minisearch";
+import { MiniGraph } from "@/components/MiniGraph";
 
 const INDEX_URL = "/search-index.json";
 const MINISEARCH_OPTS = {
   fields: ["title", "body", "tags"],
-  storeFields: ["title", "url", "layer", "type", "docId"],
+  storeFields: ["title", "url", "layer", "type", "docId", "links"],
 };
 
 const LAYER_LABELS: Record<string, string> = {
@@ -37,6 +38,11 @@ const TYPE_LABELS: Record<string, string> = {
   path: "path",
 };
 
+interface GraphLink {
+  id: string;
+  relation: string;
+}
+
 interface SearchResult {
   id: number;
   title: string;
@@ -44,6 +50,7 @@ interface SearchResult {
   layer: string;
   type: string;
   score: number;
+  links?: GraphLink[];
 }
 
 function SearchResults() {
@@ -71,14 +78,21 @@ function SearchResults() {
         boost: { title: 3 },
       });
       setResults(
-        hits.map((h) => ({
-          id: h.id,
-          title: h.title as string,
-          url: h.url as string,
-          layer: h.layer as string,
-          type: h.type as string,
-          score: h.score,
-        }))
+        hits.map((h) => {
+          let links: GraphLink[] | undefined;
+          try {
+            if (h.links) links = JSON.parse(h.links as string);
+          } catch { /* no links */ }
+          return {
+            id: h.id,
+            title: h.title as string,
+            url: h.url as string,
+            layer: h.layer as string,
+            type: h.type as string,
+            score: h.score,
+            links,
+          };
+        })
       );
       setLoading(false);
     })();
@@ -114,6 +128,26 @@ function SearchResults() {
     );
   }
 
+  // Graph: show when top result has connections and results are focused
+  const topResult = filtered[0];
+  const showGraph =
+    topResult?.links &&
+    topResult.links.length >= 3 &&
+    filtered.length <= 8;
+
+  // Build a title/url lookup from all results for graph node resolution
+  const resultLookup = useMemo(() => {
+    const map = new Map<string, { title: string; url: string }>();
+    for (const r of results) {
+      // Use docId if available via the index
+      map.set(r.title.toLowerCase().replace(/\s+/g, "-"), {
+        title: r.title,
+        url: r.url,
+      });
+    }
+    return map;
+  }, [results]);
+
   return (
     <div>
       {/* Facet pills */}
@@ -144,6 +178,16 @@ function SearchResults() {
           </button>
         ))}
       </div>
+
+      {/* Mini graph for focused queries */}
+      {showGraph && topResult.links && (
+        <MiniGraph
+          centerTitle={topResult.title}
+          centerUrl={topResult.url}
+          links={topResult.links}
+          resolvedLinks={resultLookup}
+        />
+      )}
 
       {/* Results */}
       <div className="space-y-3">

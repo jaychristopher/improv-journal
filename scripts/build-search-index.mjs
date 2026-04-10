@@ -75,6 +75,12 @@ function main() {
     const fm = a.frontmatter;
     if (!fm.id || !fm.type) continue;
     const body = stripMarkdown(a.content).substring(0, 500);
+    // Resolve links for graph viz (store as JSON string)
+    const links = (fm.links ?? [])
+      .filter((l) => l.id && !l.id.startsWith("ref-"))
+      .slice(0, 8)
+      .map((l) => ({ id: l.id, relation: l.relation }));
+
     docs.push({
       id: id++,
       docId: fm.id,
@@ -84,6 +90,7 @@ function main() {
       type: fm.type,
       tags: (fm.tags ?? []).join(" "),
       body,
+      links: JSON.stringify(links),
     });
   }
 
@@ -140,7 +147,7 @@ function main() {
   // Build index
   const miniSearch = new MiniSearch({
     fields: ["title", "body", "tags"],
-    storeFields: ["title", "url", "layer", "type", "docId"],
+    storeFields: ["title", "url", "layer", "type", "docId", "links"],
     searchOptions: {
       boost: { title: 3 },
       fuzzy: 0.2,

@@ -14,7 +14,7 @@ describe("search index", () => {
     const json = fs.readFileSync(indexPath, "utf-8");
     const ms = MiniSearch.loadJSON(json, {
       fields: ["title", "body", "tags"],
-      storeFields: ["title", "url", "layer", "type", "docId"],
+      storeFields: ["title", "url", "layer", "type", "docId", "links"],
     });
     expect(ms).toBeDefined();
     expect(ms.documentCount).toBeGreaterThan(150);
@@ -24,7 +24,7 @@ describe("search index", () => {
     const json = fs.readFileSync(indexPath, "utf-8");
     const ms = MiniSearch.loadJSON(json, {
       fields: ["title", "body", "tags"],
-      storeFields: ["title", "url", "layer", "type", "docId"],
+      storeFields: ["title", "url", "layer", "type", "docId", "links"],
     });
     const results = ms.search("mirroring");
     expect(results.length).toBeGreaterThan(0);
@@ -35,7 +35,7 @@ describe("search index", () => {
     const json = fs.readFileSync(indexPath, "utf-8");
     const ms = MiniSearch.loadJSON(json, {
       fields: ["title", "body", "tags"],
-      storeFields: ["title", "url", "layer", "type", "docId"],
+      storeFields: ["title", "url", "layer", "type", "docId", "links"],
     });
     const results = ms.search("overhtinking", { fuzzy: 0.2 });
     const titles = results.map((r) => r.title.toLowerCase());
@@ -46,7 +46,7 @@ describe("search index", () => {
     const json = fs.readFileSync(indexPath, "utf-8");
     const ms = MiniSearch.loadJSON(json, {
       fields: ["title", "body", "tags"],
-      storeFields: ["title", "url", "layer", "type", "docId"],
+      storeFields: ["title", "url", "layer", "type", "docId", "links"],
     });
     const suggestions = ms.autoSuggest("mirr", { fuzzy: 0.2, prefix: true });
     expect(suggestions.length).toBeGreaterThan(0);

@@ -7,7 +7,7 @@ import MiniSearch from "minisearch";
 const INDEX_URL = "/search-index.json";
 const MINISEARCH_OPTS = {
   fields: ["title", "body", "tags"],
-  storeFields: ["title", "url", "layer", "type", "docId"],
+  storeFields: ["title", "url", "layer", "type", "docId", "links"],
 };
 
 let cachedIndex: MiniSearch | null = null;
