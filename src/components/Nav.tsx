@@ -101,6 +101,10 @@ export function Nav() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="sm:hidden mt-4 pb-2">
+          {/* Search */}
+          <div className="mb-4">
+            <SearchInput />
+          </div>
           {/* Primary — large */}
           <div className="space-y-1 mb-4">
             <Link
