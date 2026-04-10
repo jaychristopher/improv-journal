@@ -3,7 +3,7 @@ id: emotional-honesty-scene
 title: "Emotional Honesty Scene"
 type: exercise
 status: draft
-tags: [exercises, authenticity, vulnerability, north-stars]
+tags: [exercises, intermediate, authenticity, vulnerability, north-stars]
 links:
   - { id: be-honest, relation: illustrates }
   - { id: performing-cleverness, relation: contrasts }

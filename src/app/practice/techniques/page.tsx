@@ -1,17 +1,27 @@
 import { loadAtoms, getAtomUrl } from "@/lib/content";
 import { TagFilter } from "@/components/TagFilter";
 
-const FILTER_TAGS = [
-  { label: "Beginner", tag: "fundamentals" },
-  { label: "Advanced", tag: "advanced" },
-  { label: "Scene work", tag: "scene-work" },
-  { label: "Game", tag: "game" },
-  { label: "Show craft", tag: "show-craft" },
-  { label: "Character", tag: "character" },
-  { label: "Ensemble", tag: "ensemble" },
-  { label: "Editing", tag: "editing" },
-  { label: "Teaching", tag: "pedagogy" },
-  { label: "Harold", tag: "harold" },
+const FILTER_GROUPS = [
+  {
+    label: "Level",
+    tags: [
+      { label: "Beginner", tag: "beginner" },
+      { label: "Intermediate", tag: "intermediate" },
+      { label: "Advanced", tag: "advanced" },
+    ],
+  },
+  {
+    label: "Area",
+    tags: [
+      { label: "Game", tag: "game" },
+      { label: "Show craft", tag: "show-craft" },
+      { label: "Character", tag: "character" },
+      { label: "Ensemble", tag: "ensemble" },
+      { label: "Performance", tag: "performance" },
+      { label: "Teaching", tag: "pedagogy" },
+      { label: "Harold", tag: "harold" },
+    ],
+  },
 ];
 
 export default async function TechniquesPage() {
@@ -41,7 +51,7 @@ export default async function TechniquesPage() {
           heighten, and recover.
         </p>
       </header>
-      <TagFilter items={items} filterTags={FILTER_TAGS} showPreview={false} />
+      <TagFilter items={items} filterGroups={FILTER_GROUPS} showPreview={false} />
     </main>
   );
 }

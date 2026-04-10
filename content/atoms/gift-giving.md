@@ -3,7 +3,7 @@ id: gift-giving
 title: "Gift Giving"
 type: exercise
 status: draft
-tags: [exercises, gratitude, reframing, north-stars]
+tags: [exercises, beginner, gratitude, reframing, north-stars]
 links:
   - { id: be-thankful, relation: illustrates }
   - { id: judgment, relation: contrasts }

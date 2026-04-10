@@ -3,7 +3,7 @@ id: last-word-response
 title: "Last Word Response"
 type: exercise
 status: draft
-tags: [exercises, presence, listening, north-stars]
+tags: [exercises, beginner, presence, listening, north-stars]
 links:
   - { id: be-present, relation: illustrates }
   - { id: internal-computation, relation: contrasts }

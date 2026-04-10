@@ -3,7 +3,7 @@ id: support-moves
 title: Support Moves
 type: technique
 status: draft
-tags: [techniques, ensemble, backline, show-craft]
+tags: [techniques, beginner, ensemble, backline, show-craft]
 links:
   - { id: be-supportive, relation: illustrates }
   - { id: ensemble, relation: requires }

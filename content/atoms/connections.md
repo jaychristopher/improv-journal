@@ -3,7 +3,7 @@ id: connections
 title: Connections
 type: technique
 status: draft
-tags: [techniques, longform, harold, group-mind]
+tags: [techniques, intermediate, longform, harold, group-mind]
 links:
   - { id: harold, relation: requires }
   - { id: beats, relation: requires }

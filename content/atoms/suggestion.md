@@ -3,7 +3,7 @@ id: suggestion
 title: Suggestion
 type: technique
 status: draft
-tags: [techniques, audience, show-craft, performance]
+tags: [techniques, beginner, audience, show-craft, performance]
 links:
   - { id: audience, relation: requires }
   - { id: offers, relation: extends }

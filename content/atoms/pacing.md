@@ -3,7 +3,7 @@ id: pacing
 title: Pacing
 type: technique
 status: draft
-tags: [techniques, performance, rhythm, show-craft]
+tags: [techniques, intermediate, performance, rhythm, show-craft]
 links:
   - { id: editing, relation: extends }
   - { id: show-dynamic, relation: extends }

@@ -3,7 +3,7 @@ id: no-backspace-scene
 title: "No Backspace Scene"
 type: exercise
 status: draft
-tags: [exercises, axioms, irreversibility, path-dependence]
+tags: [exercises, intermediate, axioms, irreversibility, path-dependence]
 links:
   - { id: irreversibility, relation: illustrates }
   - { id: be-brave, relation: requires }

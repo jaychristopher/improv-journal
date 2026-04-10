@@ -3,7 +3,7 @@ id: if-this-then-what
 title: If This, Then What?
 type: technique
 status: draft
-tags: [techniques, game, UCB, exploration]
+tags: [techniques, intermediate, game, UCB, exploration]
 links:
   - { id: game-of-the-scene, relation: illustrates }
   - { id: base-reality, relation: requires }

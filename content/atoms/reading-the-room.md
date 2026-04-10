@@ -3,7 +3,7 @@ id: reading-the-room
 title: Reading the Room
 type: technique
 status: draft
-tags: [techniques, performance, audience, show-craft]
+tags: [techniques, intermediate, performance, audience, show-craft]
 links:
   - { id: audience, relation: requires }
   - { id: active-listening, relation: extends }

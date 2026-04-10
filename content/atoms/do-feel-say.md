@@ -3,7 +3,7 @@ id: do-feel-say
 title: "Do, Feel, Say"
 type: technique
 status: draft
-tags: [techniques, ordering, emotion, authenticity]
+tags: [techniques, beginner, ordering, emotion, authenticity]
 links:
   - { id: emotional-truth, relation: extends }
   - { id: be-honest, relation: illustrates }

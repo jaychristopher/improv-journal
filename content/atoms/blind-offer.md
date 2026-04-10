@@ -3,7 +3,7 @@ id: blind-offer
 title: "Blind Offer"
 type: exercise
 status: draft
-tags: [exercises, support, justification, north-stars]
+tags: [exercises, beginner, support, justification, north-stars]
 links:
   - { id: be-supportive, relation: illustrates }
   - { id: bulldozing, relation: contrasts }

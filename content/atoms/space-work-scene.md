@@ -3,7 +3,7 @@ id: space-work-scene
 title: "Silent Space Work Scene"
 type: exercise
 status: draft
-tags: [exercises, space-work, environment, physicality]
+tags: [exercises, beginner, space-work, environment, physicality]
 links:
   - { id: space-work, relation: illustrates }
   - { id: shared-reality-fragility, relation: illustrates }

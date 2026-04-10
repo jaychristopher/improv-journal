@@ -3,7 +3,7 @@ id: audience-relationship
 title: Audience Relationship
 type: technique
 status: draft
-tags: [techniques, performance, mastery, show-craft]
+tags: [techniques, advanced, performance, mastery, show-craft]
 links:
   - { id: audience, relation: extends }
   - { id: reading-the-room, relation: extends }

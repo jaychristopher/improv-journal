@@ -3,7 +3,7 @@ id: endowment
 title: Endowment
 type: technique
 status: draft
-tags: [techniques, offers, support, johnstone]
+tags: [techniques, beginner, offers, support, johnstone]
 links:
   - { id: offers, relation: extends }
   - { id: be-supportive, relation: illustrates }

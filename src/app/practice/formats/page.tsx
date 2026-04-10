@@ -1,16 +1,31 @@
 import { loadAtoms, getAtomUrl } from "@/lib/content";
 import { TagFilter } from "@/components/TagFilter";
 
-const FILTER_TAGS = [
-  { label: "Longform", tag: "longform" },
-  { label: "Shortform", tag: "shortform" },
-  { label: "Competition", tag: "competition" },
-  { label: "Narrative", tag: "narrative" },
-  { label: "Audience interaction", tag: "audience-interaction" },
-  { label: "Beginner-friendly", tag: "accessible" },
-  { label: "Advanced", tag: "advanced" },
-  { label: "Duo", tag: "duo" },
-  { label: "Music", tag: "music" },
+const FILTER_GROUPS = [
+  {
+    label: "Form",
+    tags: [
+      { label: "Longform", tag: "longform" },
+      { label: "Shortform", tag: "shortform" },
+    ],
+  },
+  {
+    label: "Level",
+    tags: [
+      { label: "Beginner-friendly", tag: "accessible" },
+      { label: "Advanced", tag: "advanced" },
+    ],
+  },
+  {
+    label: "Style",
+    tags: [
+      { label: "Competition", tag: "competition" },
+      { label: "Narrative", tag: "narrative" },
+      { label: "Audience interaction", tag: "audience-interaction" },
+      { label: "Duo", tag: "duo" },
+      { label: "Music", tag: "music" },
+    ],
+  },
 ];
 
 export default async function FormatsPage() {
@@ -43,7 +58,7 @@ export default async function FormatsPage() {
           Performance structures — from 2-minute games to 60-minute shows.
         </p>
       </header>
-      <TagFilter items={items} filterTags={FILTER_TAGS} />
+      <TagFilter items={items} filterGroups={FILTER_GROUPS} />
     </main>
   );
 }

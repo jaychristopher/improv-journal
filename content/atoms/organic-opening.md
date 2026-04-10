@@ -3,7 +3,7 @@ id: organic-opening
 title: Organic Opening
 type: technique
 status: draft
-tags: [techniques, harold, ensemble, show-craft]
+tags: [techniques, advanced, harold, ensemble, show-craft]
 links:
   - { id: opening, relation: extends }
   - { id: harold, relation: extends }

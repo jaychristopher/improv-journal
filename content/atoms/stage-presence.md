@@ -3,7 +3,7 @@ id: stage-presence
 title: Stage Presence
 type: technique
 status: draft
-tags: [techniques, performance, physicality, show-craft]
+tags: [techniques, advanced, performance, physicality, show-craft]
 links:
   - { id: presence, relation: extends }
   - { id: status, relation: extends }

@@ -3,7 +3,7 @@ id: rest-beat
 title: Rest Beat
 type: technique
 status: draft
-tags: [techniques, game, pacing, structure]
+tags: [techniques, intermediate, game, pacing, structure]
 links:
   - { id: heightening, relation: requires }
   - { id: base-reality, relation: extends }

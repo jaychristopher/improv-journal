@@ -3,7 +3,7 @@ id: sweep-edit
 title: Sweep Edit
 type: technique
 status: draft
-tags: [techniques, editing, harold, show-craft]
+tags: [techniques, advanced, editing, harold, show-craft]
 links:
   - { id: editing, relation: extends }
   - { id: harold, relation: extends }

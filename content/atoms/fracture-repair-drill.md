@@ -3,7 +3,7 @@ id: fracture-repair-drill
 title: "Fracture Repair Drill"
 type: exercise
 status: draft
-tags: [exercises, recovery, collapse-modes, coherence]
+tags: [exercises, intermediate, recovery, collapse-modes, coherence]
 links:
   - { id: fracture-recovery, relation: illustrates }
   - { id: coherence, relation: illustrates }

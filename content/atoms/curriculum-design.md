@@ -3,7 +3,7 @@ id: curriculum-design
 title: Curriculum Design
 type: pedagogy
 status: draft
-tags: [pedagogy, teaching, structure, progression]
+tags: [intermediate, pedagogy, teaching, structure, progression]
 links:
   - { id: safety-in-the-room, relation: requires }
   - { id: warm-up, relation: extends }

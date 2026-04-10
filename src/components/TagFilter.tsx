@@ -11,15 +11,20 @@ interface FilterableItem {
   preview?: string;
 }
 
+interface FilterGroup {
+  label: string;
+  tags: { label: string; tag: string }[];
+}
+
 interface TagFilterProps {
   items: FilterableItem[];
-  filterTags: { label: string; tag: string }[];
+  filterGroups: FilterGroup[];
   showPreview?: boolean;
 }
 
 export function TagFilter({
   items,
-  filterTags,
+  filterGroups,
   showPreview = true,
 }: TagFilterProps) {
   const [activeTags, setActiveTags] = useState<Set<string>>(new Set());
@@ -45,25 +50,39 @@ export function TagFilter({
 
   return (
     <div>
-      {/* Filter pills */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        {filterTags.map((ft) => {
-          const isActive = activeTags.has(ft.tag);
-          const count = items.filter((i) => i.tags.includes(ft.tag)).length;
-          if (count === 0) return null;
+      {/* Filter groups */}
+      <div className="space-y-3 mb-6">
+        {filterGroups.map((group) => {
+          const visibleTags = group.tags.filter(
+            (ft) => items.some((i) => i.tags.includes(ft.tag))
+          );
+          if (visibleTags.length === 0) return null;
           return (
-            <button
-              key={ft.tag}
-              onClick={() => toggleTag(ft.tag)}
-              className={`text-xs px-3 py-1 rounded-full border transition-colors ${
-                isActive
-                  ? "border-foreground/40 text-foreground/80 bg-foreground/5"
-                  : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
-              }`}
-            >
-              {ft.label}
-              <span className="ml-1 text-foreground/30">{count}</span>
-            </button>
+            <div key={group.label} className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs text-foreground/30 w-14 shrink-0">
+                {group.label}
+              </span>
+              {visibleTags.map((ft) => {
+                const isActive = activeTags.has(ft.tag);
+                const count = items.filter((i) =>
+                  i.tags.includes(ft.tag)
+                ).length;
+                return (
+                  <button
+                    key={ft.tag}
+                    onClick={() => toggleTag(ft.tag)}
+                    className={`text-xs px-3 py-1 rounded-full border transition-colors ${
+                      isActive
+                        ? "border-foreground/40 text-foreground/80 bg-foreground/5"
+                        : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
+                    }`}
+                  >
+                    {ft.label}
+                    <span className="ml-1 text-foreground/30">{count}</span>
+                  </button>
+                );
+              })}
+            </div>
           );
         })}
         {activeTags.size > 0 && (
@@ -71,7 +90,7 @@ export function TagFilter({
             onClick={() => setActiveTags(new Set())}
             className="text-xs px-3 py-1 text-foreground/40 hover:text-foreground/60"
           >
-            Clear
+            Clear filters
           </button>
         )}
       </div>
@@ -99,7 +118,6 @@ export function TagFilter({
         )}
       </div>
 
-      {/* Count */}
       {activeTags.size > 0 && (
         <p className="text-xs text-foreground/30 mt-4">
           Showing {filtered.length} of {items.length}

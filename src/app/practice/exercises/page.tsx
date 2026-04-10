@@ -1,15 +1,26 @@
 import { loadAtoms, getAtomUrl } from "@/lib/content";
 import { TagFilter } from "@/components/TagFilter";
 
-const FILTER_TAGS = [
-  { label: "Beginner", tag: "fundamentals" },
-  { label: "Advanced", tag: "advanced" },
-  { label: "Presence", tag: "presence" },
-  { label: "Ensemble", tag: "ensemble" },
-  { label: "Emotion", tag: "emotion" },
-  { label: "Physicality", tag: "physicality" },
-  { label: "Courage", tag: "courage" },
-  { label: "Recovery", tag: "recovery" },
+const FILTER_GROUPS = [
+  {
+    label: "Level",
+    tags: [
+      { label: "Beginner", tag: "beginner" },
+      { label: "Intermediate", tag: "intermediate" },
+      { label: "Advanced", tag: "advanced" },
+    ],
+  },
+  {
+    label: "Focus",
+    tags: [
+      { label: "Presence", tag: "presence" },
+      { label: "Ensemble", tag: "ensemble" },
+      { label: "Emotion", tag: "emotion" },
+      { label: "Physicality", tag: "physicality" },
+      { label: "Courage", tag: "courage" },
+      { label: "Recovery", tag: "recovery" },
+    ],
+  },
 ];
 
 export default async function ExercisesPage() {
@@ -42,7 +53,7 @@ export default async function ExercisesPage() {
           Structured activities that build specific skills through constraints.
         </p>
       </header>
-      <TagFilter items={items} filterTags={FILTER_TAGS} />
+      <TagFilter items={items} filterGroups={FILTER_GROUPS} />
     </main>
   );
 }

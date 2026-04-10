@@ -3,7 +3,7 @@ id: emotion-switch
 title: "Emotion Switch"
 type: exercise
 status: draft
-tags: [exercises, adaptability, emotion, north-stars]
+tags: [exercises, intermediate, adaptability, emotion, north-stars]
 links:
   - { id: be-changeable, relation: illustrates }
   - { id: emotional-truth, relation: requires }

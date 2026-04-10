@@ -3,7 +3,7 @@ id: status-transfer
 title: "Status Transfer"
 type: exercise
 status: draft
-tags: [exercises, status, dynamics, johnstone]
+tags: [exercises, intermediate, status, dynamics, johnstone]
 links:
   - { id: status, relation: illustrates }
   - { id: signal, relation: illustrates }

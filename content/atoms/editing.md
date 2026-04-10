@@ -3,7 +3,7 @@ id: editing
 title: Editing
 type: technique
 status: draft
-tags: [techniques, structure, show-craft, ensemble]
+tags: [techniques, intermediate, structure, show-craft, ensemble]
 links:
   - { id: scene-structure, relation: extends }
   - { id: game-of-the-scene, relation: extends }

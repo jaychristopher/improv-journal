@@ -3,7 +3,7 @@ id: elevating
 title: Elevating
 type: technique
 status: draft
-tags: [techniques, north-stars, ensemble, generosity]
+tags: [techniques, intermediate, north-stars, ensemble, generosity]
 links:
   - { id: be-supportive, relation: illustrates }
   - { id: bulldozing, relation: contrasts }
