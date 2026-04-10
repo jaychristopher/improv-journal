@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { loadAtoms } from "@/lib/content";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export default async function PracticePage() {
   const atoms = await loadAtoms();
@@ -19,8 +20,10 @@ export default async function PracticePage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
+      <Breadcrumb
+        crumbs={[{ label: "Home", href: "/" }, { label: "Practice" }]}
+      />
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">the craft</span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">Practice</h1>
         <p className="text-foreground/60 mt-2">
           Everything you can DO — exercises to train, techniques to deploy,

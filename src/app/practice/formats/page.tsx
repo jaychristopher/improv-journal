@@ -1,5 +1,6 @@
 import { loadAtoms, getAtomUrl } from "@/lib/content";
 import { TagFilter } from "@/components/TagFilter";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const FILTER_GROUPS = [
   {
@@ -47,10 +48,14 @@ export default async function FormatsPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Practice", href: "/practice" },
+          { label: "Formats" },
+        ]}
+      />
       <header className="mb-8">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          practice · formats
-        </span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">
           Formats ({formats.length})
         </h1>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { loadAtoms, getAtomUrl } from "@/lib/content";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 export default async function VocabularyPage() {
   const atoms = await loadAtoms();
@@ -7,8 +8,14 @@ export default async function VocabularyPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Practice", href: "/practice" },
+          { label: "Vocabulary" },
+        ]}
+      />
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">practice · vocabulary</span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">Vocabulary ({definitions.length})</h1>
         <p className="text-foreground/60 mt-2">
           The foundational concepts that name what's happening in scenes, shows, and conversations.
