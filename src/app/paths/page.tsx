@@ -28,7 +28,9 @@ export default async function PathsIndexPage() {
         <span className="text-xs uppercase tracking-wider text-foreground/40">journeys</span>
         <h1 className="text-3xl font-bold tracking-tight mt-1">Learning Paths</h1>
         <p className="text-foreground/60 mt-2">
-          Curated journeys through the knowledge graph. Pick your level.
+          Structured guides — whether you're brand new, hitting a plateau,
+          teaching, or pushing toward mastery. Each one builds on what
+          improvisers have learned about connection.
         </p>
       </header>
 

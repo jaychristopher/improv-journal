@@ -85,8 +85,9 @@ export default async function LibraryPage() {
           The Reading List
         </h1>
         <p className="text-foreground/60 mt-2">
-          The books, podcasts, and research behind the knowledge graph —
-          organized by where to start.
+          The books, podcasts, and research behind these ideas —
+          from improv's foundational texts to cognitive science.
+          Organized by where to start.
         </p>
       </header>
 

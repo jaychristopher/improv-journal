@@ -26,8 +26,9 @@ export default async function PracticePage() {
       <header className="mb-12">
         <h1 className="text-3xl font-bold tracking-tight mt-1">Practice</h1>
         <p className="text-foreground/60 mt-2">
-          Everything you can DO — exercises to train, techniques to deploy,
-          formats to perform in, and vocabulary to think with.
+          The tools improvisers use — exercises you can try with a partner,
+          techniques for better conversations and scenes, show formats, and
+          the vocabulary to name what's happening.
         </p>
       </header>
 
