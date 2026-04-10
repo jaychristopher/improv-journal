@@ -26,7 +26,7 @@ export default async function DiagnosisPage() {
 
       {frameworks.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-lg font-semibold mb-4">System Frameworks</h2>
+          <h2 className="text-lg font-semibold mb-4">Frameworks</h2>
           <div className="space-y-3">
             {frameworks.map((a) => (
               <Link

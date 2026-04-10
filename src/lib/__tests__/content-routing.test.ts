@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { loadAtoms, getAtomUrl } from "../content";
 
 describe("content routing completeness", () => {
-  it("every atom has a URL that starts with /system/, /practice/, or /library/", async () => {
+  it("every atom has a URL that starts with /how-it-works/, /practice/, or /library/", async () => {
     const atoms = await loadAtoms();
     expect(atoms.length).toBeGreaterThan(100); // sanity check
 
@@ -12,29 +12,29 @@ describe("content routing completeness", () => {
         type: atom.frontmatter.type,
       });
       expect(url, `${atom.frontmatter.id} (${atom.frontmatter.type})`).toMatch(
-        /^\/(system|practice|library)\//
+        /^\/(how-it-works|practice|library)\//
       );
     }
   });
 
-  it("axiom atoms route to /system/{id}", async () => {
+  it("axiom atoms route to /how-it-works/{id}", async () => {
     const atoms = await loadAtoms();
     const axioms = atoms.filter((a) => a.frontmatter.type === "axiom");
     expect(axioms.length).toBe(6);
     for (const a of axioms) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toBe(
-        `/system/${a.frontmatter.id}`
+        `/how-it-works/${a.frontmatter.id}`
       );
     }
   });
 
-  it("principle atoms route to /system/principles/{id}", async () => {
+  it("principle atoms route to /how-it-works/principles/{id}", async () => {
     const atoms = await loadAtoms();
     const principles = atoms.filter((a) => a.frontmatter.type === "principle");
     expect(principles.length).toBe(8);
     for (const a of principles) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toBe(
-        `/system/principles/${a.frontmatter.id}`
+        `/how-it-works/principles/${a.frontmatter.id}`
       );
     }
   });

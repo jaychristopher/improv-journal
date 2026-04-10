@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { href: "/system", label: "How It Works" },
+  { href: "/how-it-works", label: "How It Works" },
   { href: "/practice", label: "Practice" },
   { href: "/paths", label: "Learn" },
   { href: "/traditions", label: "Traditions" },

@@ -5,49 +5,49 @@ import type { AtomType } from "../schema";
 describe("getAtomUrl", () => {
   // ─── System URLs ──────────────────────────────────────────────────────────
 
-  it("maps axiom atoms to /system/{id}", () => {
+  it("maps axiom atoms to /how-it-works/{id}", () => {
     expect(getAtomUrl({ id: "irreversibility", type: "axiom" })).toBe(
-      "/system/irreversibility"
+      "/how-it-works/irreversibility"
     );
     expect(getAtomUrl({ id: "cognitive-bandwidth", type: "axiom" })).toBe(
-      "/system/cognitive-bandwidth"
+      "/how-it-works/cognitive-bandwidth"
     );
   });
 
-  it("maps insight atoms to /system/{id}", () => {
+  it("maps insight atoms to /how-it-works/{id}", () => {
     expect(getAtomUrl({ id: "reality-construction", type: "insight" })).toBe(
-      "/system/reality-construction"
+      "/how-it-works/reality-construction"
     );
     expect(getAtomUrl({ id: "beyond-the-stage", type: "insight" })).toBe(
-      "/system/beyond-the-stage"
+      "/how-it-works/beyond-the-stage"
     );
   });
 
-  it("maps principle atoms to /system/principles/{id}", () => {
+  it("maps principle atoms to /how-it-works/principles/{id}", () => {
     expect(getAtomUrl({ id: "be-present", type: "principle" })).toBe(
-      "/system/principles/be-present"
+      "/how-it-works/principles/be-present"
     );
     expect(getAtomUrl({ id: "be-brave", type: "principle" })).toBe(
-      "/system/principles/be-brave"
+      "/how-it-works/principles/be-brave"
     );
   });
 
-  it("maps antipattern atoms to /system/diagnosis/{id}", () => {
+  it("maps antipattern atoms to /how-it-works/diagnosis/{id}", () => {
     expect(getAtomUrl({ id: "bulldozing", type: "antipattern" })).toBe(
-      "/system/diagnosis/bulldozing"
+      "/how-it-works/diagnosis/bulldozing"
     );
   });
 
-  it("maps pattern atoms to /system/diagnosis/{id}", () => {
+  it("maps pattern atoms to /how-it-works/diagnosis/{id}", () => {
     expect(getAtomUrl({ id: "heightening", type: "pattern" })).toBe(
-      "/system/diagnosis/heightening"
+      "/how-it-works/diagnosis/heightening"
     );
   });
 
-  it("maps framework atoms to /system/diagnosis/{id}", () => {
+  it("maps framework atoms to /how-it-works/diagnosis/{id}", () => {
     expect(
       getAtomUrl({ id: "systemic-collapse-modes", type: "framework" })
-    ).toBe("/system/diagnosis/systemic-collapse-modes");
+    ).toBe("/how-it-works/diagnosis/systemic-collapse-modes");
   });
 
   // ─── Practice URLs ────────────────────────────────────────────────────────
@@ -120,7 +120,7 @@ describe("getAtomUrl", () => {
       const url = getAtomUrl({ id: "test", type });
       expect(url).not.toBe("/atoms/test"); // should never fall to old URL
       expect(url).toMatch(
-        /^\/(system|practice|library)\//
+        /^\/(how-it-works|practice|library)\//
       );
     }
   });

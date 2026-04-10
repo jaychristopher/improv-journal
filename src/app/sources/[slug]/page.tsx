@@ -25,7 +25,7 @@ export default async function SourcePage({
       const atom = await getAtomBySlug(id);
       return atom
         ? { id, title: atom.frontmatter.title, type: atom.frontmatter.type, url: getAtomUrl({ id, type: atom.frontmatter.type }), found: true }
-        : { id, title: id, type: "unknown" as AtomType, url: `/system/${id}`, found: false };
+        : { id, title: id, type: "unknown" as AtomType, url: `/how-it-works/${id}`, found: false };
     })
   );
 

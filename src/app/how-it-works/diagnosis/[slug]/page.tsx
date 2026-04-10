@@ -25,8 +25,8 @@ export default async function DiagnosisDetailPage({
       atom={atom}
       breadcrumbs={[
         { label: "Home", href: "/" },
-        { label: "System", href: "/system" },
-        { label: "Diagnosis", href: "/system/diagnosis" },
+        { label: "How It Works", href: "/how-it-works" },
+        { label: "Diagnosis", href: "/how-it-works/diagnosis" },
         { label: atom.frontmatter.title },
       ]}
     />

@@ -16,13 +16,13 @@ function atomTypeToUrl(id: string, type: string): string {
   switch (type) {
     case "axiom":
     case "insight":
-      return `/system/${id}`;
+      return `/how-it-works/${id}`;
     case "principle":
-      return `/system/principles/${id}`;
+      return `/how-it-works/principles/${id}`;
     case "antipattern":
     case "pattern":
     case "framework":
-      return `/system/diagnosis/${id}`;
+      return `/how-it-works/diagnosis/${id}`;
     case "exercise":
       return `/practice/exercises/${id}`;
     case "technique":
@@ -83,10 +83,18 @@ export function generateHubRedirects(): {
   permanent: boolean;
 }[] {
   return [
-    { source: "/concepts/axioms", destination: "/system", permanent: true },
-    { source: "/concepts/principles", destination: "/system/principles", permanent: true },
-    { source: "/concepts/antipatterns", destination: "/system/diagnosis", permanent: true },
-    { source: "/concepts/patterns", destination: "/system/diagnosis", permanent: true },
+    // Old /system/ URLs → /how-it-works/
+    { source: "/system", destination: "/how-it-works", permanent: true },
+    { source: "/system/principles", destination: "/how-it-works/principles", permanent: true },
+    { source: "/system/principles/:slug", destination: "/how-it-works/principles/:slug", permanent: true },
+    { source: "/system/diagnosis", destination: "/how-it-works/diagnosis", permanent: true },
+    { source: "/system/diagnosis/:slug", destination: "/how-it-works/diagnosis/:slug", permanent: true },
+    { source: "/system/:slug", destination: "/how-it-works/:slug", permanent: true },
+    // Old /concepts/ URLs
+    { source: "/concepts/axioms", destination: "/how-it-works", permanent: true },
+    { source: "/concepts/principles", destination: "/how-it-works/principles", permanent: true },
+    { source: "/concepts/antipatterns", destination: "/how-it-works/diagnosis", permanent: true },
+    { source: "/concepts/patterns", destination: "/how-it-works/diagnosis", permanent: true },
     { source: "/concepts/exercises", destination: "/practice/exercises", permanent: true },
     { source: "/concepts/techniques", destination: "/practice/techniques", permanent: true },
     { source: "/concepts/formats", destination: "/practice/formats", permanent: true },

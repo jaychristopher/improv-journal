@@ -244,13 +244,13 @@ export function getAtomUrl(atom: { id: string; type: AtomType }): string {
   switch (atom.type) {
     case "axiom":
     case "insight":
-      return `/system/${atom.id}`;
+      return `/how-it-works/${atom.id}`;
     case "principle":
-      return `/system/principles/${atom.id}`;
+      return `/how-it-works/principles/${atom.id}`;
     case "antipattern":
     case "pattern":
     case "framework":
-      return `/system/diagnosis/${atom.id}`;
+      return `/how-it-works/diagnosis/${atom.id}`;
     case "exercise":
       return `/practice/exercises/${atom.id}`;
     case "technique":

@@ -104,7 +104,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
         title: linked?.frontmatter.title ?? link.id,
         url: linked
           ? getAtomUrl({ id: link.id, type: linked.frontmatter.type })
-          : `/system/${link.id}`,
+          : `/how-it-works/${link.id}`,
       };
     })
   );

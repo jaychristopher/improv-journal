@@ -51,7 +51,7 @@ export default async function SystemPage() {
 
       <section className="mb-12">
         <h2 className="text-lg font-semibold mb-2">
-          <Link href="/system/principles" className="hover:underline">
+          <Link href="/how-it-works/principles" className="hover:underline">
             Eight things that help
           </Link>
         </h2>
@@ -79,7 +79,7 @@ export default async function SystemPage() {
 
       <section className="mb-12">
         <h2 className="text-lg font-semibold mb-2">
-          <Link href="/system/diagnosis" className="hover:underline">
+          <Link href="/how-it-works/diagnosis" className="hover:underline">
             When it goes wrong
           </Link>
         </h2>
@@ -88,7 +88,7 @@ export default async function SystemPage() {
           pattern, you can fix it.
         </p>
         <Link
-          href="/system/diagnosis"
+          href="/how-it-works/diagnosis"
           className="text-sm hover:underline text-foreground/60"
         >
           See the failure patterns &rarr;

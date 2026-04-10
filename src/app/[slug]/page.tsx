@@ -140,7 +140,7 @@ export default async function BridgePage({
             type: atom.frontmatter.type,
             url: getAtomUrl({ id, type: atom.frontmatter.type }),
           }
-        : { id, title: id, type: "unknown" as AtomType, url: `/system/${id}` };
+        : { id, title: id, type: "unknown" as AtomType, url: `/how-it-works/${id}` };
     })
   );
 

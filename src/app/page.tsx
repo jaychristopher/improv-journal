@@ -31,7 +31,7 @@ export default async function Home() {
       {/* ── Three Doors ───────────────────────────────────────────── */}
       <section className="mb-16 space-y-4">
         <Link
-          href="/system"
+          href="/how-it-works"
           className="block border border-foreground/10 rounded-lg p-6 hover:border-foreground/30 transition-colors"
         >
           <h2 className="text-xl font-semibold">

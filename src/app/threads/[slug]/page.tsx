@@ -51,7 +51,7 @@ export default async function ThreadPage({
       const atom = await getAtomBySlug(id);
       return atom
         ? { id, title: atom.frontmatter.title, url: getAtomUrl({ id, type: atom.frontmatter.type }), found: true }
-        : { id, title: id, url: `/system/${id}`, found: false };
+        : { id, title: id, url: `/how-it-works/${id}`, found: false };
     })
   );
 
