@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { SearchInput } from "./SearchInput";
 
 const MORE_ITEMS = [
   { href: "/paths", label: "Learning Paths" },
@@ -76,6 +77,7 @@ export function Nav() {
               </>
             )}
           </div>
+          <SearchInput />
         </div>
 
         {/* Mobile hamburger */}
