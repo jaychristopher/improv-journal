@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { SearchInput } from "./SearchInput";
+import { ThemeToggle } from "./ThemeToggle";
 
 const MORE_ITEMS = [
   { href: "/paths", label: "Learning Paths" },
@@ -78,6 +79,7 @@ export function Nav() {
             )}
           </div>
           <SearchInput />
+          <ThemeToggle />
         </div>
 
         {/* Mobile hamburger */}
