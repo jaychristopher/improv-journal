@@ -164,26 +164,28 @@ export function SearchInput() {
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm">
           <div className="max-w-2xl mx-auto px-6 pt-20">
-            {/* Close button */}
-            <button
-              onClick={close}
-              className="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60"
-              aria-label="Close search"
-            >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            {/* Close button — above the input, right-aligned */}
+            <div className="flex justify-end mb-3">
+              <button
+                onClick={close}
+                className="w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60"
+                aria-label="Close search"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
 
             {/* Search input */}
             <input

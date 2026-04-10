@@ -108,6 +108,19 @@ function SearchResults() {
     ? results.filter((r) => r.layer === activeLayer)
     : results;
 
+  // Build a title/url lookup from all results for graph node resolution
+  // (must be before early returns to satisfy Rules of Hooks)
+  const resultLookup = useMemo(() => {
+    const map = new Map<string, { title: string; url: string }>();
+    for (const r of results) {
+      map.set(r.title.toLowerCase().replace(/\s+/g, "-"), {
+        title: r.title,
+        url: r.url,
+      });
+    }
+    return map;
+  }, [results]);
+
   if (!q) {
     return (
       <p className="text-foreground/40 text-sm">
@@ -134,19 +147,6 @@ function SearchResults() {
     topResult?.links &&
     topResult.links.length >= 3 &&
     filtered.length <= 8;
-
-  // Build a title/url lookup from all results for graph node resolution
-  const resultLookup = useMemo(() => {
-    const map = new Map<string, { title: string; url: string }>();
-    for (const r of results) {
-      // Use docId if available via the index
-      map.set(r.title.toLowerCase().replace(/\s+/g, "-"), {
-        title: r.title,
-        url: r.url,
-      });
-    }
-    return map;
-  }, [results]);
 
   return (
     <div>
