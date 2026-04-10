@@ -119,26 +119,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
     <main className="max-w-5xl mx-auto px-6 py-16">
       <Breadcrumb crumbs={breadcrumbs} />
 
-      <header className="mb-8 max-w-2xl">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          {TYPE_LABELS[fm.type] ?? fm.type}
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
-      </header>
-
-      {audioUrl && (
-        <div className="max-w-2xl">
-          <AudioPlayer src={audioUrl} />
-          <PodcastJsonLd
-            title={fm.title}
-            audioUrl={audioUrl}
-            pageUrl={atomUrl}
-            duration={audioDuration}
-          />
-        </div>
-      )}
-
-      {/* Two-column layout: content left, sidebar right on desktop */}
+      {/* Two-column layout: card left, sidebar right on desktop */}
       <div
         className={
           hasSidebar
@@ -146,11 +127,34 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
             : ""
         }
       >
-        {/* ── Main content ─────────────────────────────────────── */}
-        <article
-          className="prose prose-neutral dark:prose-invert max-w-none"
-          dangerouslySetInnerHTML={{ __html: atom.html }}
-        />
+        {/* ── Main content in card ─────────────────────────────── */}
+        <div className="bg-surface rounded-xl p-6 sm:p-8 shadow-sm dark:shadow-none">
+          <header className="mb-8">
+            <span className="text-xs uppercase tracking-wider text-foreground/40">
+              {TYPE_LABELS[fm.type] ?? fm.type}
+            </span>
+            <h1 className="text-3xl font-bold tracking-tight mt-1 text-foreground-strong">
+              {fm.title}
+            </h1>
+          </header>
+
+          {audioUrl && (
+            <div>
+              <AudioPlayer src={audioUrl} />
+              <PodcastJsonLd
+                title={fm.title}
+                audioUrl={audioUrl}
+                pageUrl={atomUrl}
+                duration={audioDuration}
+              />
+            </div>
+          )}
+
+          <article
+            className="prose prose-neutral dark:prose-invert max-w-none"
+            dangerouslySetInnerHTML={{ __html: atom.html }}
+          />
+        </div>
 
         {/* ── Sidebar (right on desktop, below on mobile) ──────── */}
         {hasSidebar && (
