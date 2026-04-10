@@ -32,6 +32,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Prose body text on surface cards — near black */
+.prose {
+  color: #1a1a1a;
+}
+
+:root.dark .prose {
+  color: #d0d0d0;
+}
+
 /* Prose typography */
 .prose h1, .prose h2, .prose h3, .prose h4 {
   color: var(--foreground-strong);
