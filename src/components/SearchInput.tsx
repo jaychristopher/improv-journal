@@ -20,11 +20,17 @@ async function getIndex(): Promise<MiniSearch> {
   return cachedIndex;
 }
 
+interface QuickResult {
+  title: string;
+  url: string;
+  type: string;
+}
+
 export function SearchInput() {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const [suggestions, setSuggestions] = useState<string[]>([]);
-  const [open, setOpen] = useState(false);
+  const [results, setResults] = useState<QuickResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -32,19 +38,25 @@ export function SearchInput() {
 
   const suggest = useCallback(async (q: string) => {
     if (q.length < 2) {
-      setSuggestions([]);
+      setResults([]);
       return;
     }
     try {
       const ms = await getIndex();
-      const results = ms.autoSuggest(q, {
+      const suggestions = ms.autoSuggest(q, {
         fuzzy: 0.2,
         prefix: true,
         boost: { title: 3 },
       });
-      setSuggestions(results.slice(0, 5).map((r) => r.suggestion));
+      setResults(
+        suggestions.slice(0, 6).map((s) => ({
+          title: s.suggestion,
+          url: `/search?q=${encodeURIComponent(s.suggestion)}`,
+          type: "",
+        }))
+      );
     } catch {
-      setSuggestions([]);
+      setResults([]);
     }
   }, []);
 
@@ -55,103 +67,192 @@ export function SearchInput() {
     debounceRef.current = setTimeout(() => suggest(value), 150);
   };
 
-  const navigate = (q: string) => {
-    setOpen(false);
-    setSuggestions([]);
-    if (q.trim()) {
-      router.push(`/search?q=${encodeURIComponent(q.trim())}`);
-    }
+  const close = () => {
+    setIsOpen(false);
+    setQuery("");
+    setResults([]);
+    setSelectedIdx(-1);
+  };
+
+  const navigate = (url: string) => {
+    close();
+    router.push(url);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Escape") {
-      setOpen(false);
-      setSuggestions([]);
-      inputRef.current?.blur();
+      close();
     } else if (e.key === "ArrowDown") {
       e.preventDefault();
       setSelectedIdx((prev) =>
-        prev < suggestions.length - 1 ? prev + 1 : prev
+        prev < results.length - 1 ? prev + 1 : prev
       );
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setSelectedIdx((prev) => (prev > 0 ? prev - 1 : -1));
     } else if (e.key === "Enter") {
       e.preventDefault();
-      if (selectedIdx >= 0 && suggestions[selectedIdx]) {
-        navigate(suggestions[selectedIdx]);
-      } else {
-        navigate(query);
+      if (selectedIdx >= 0 && results[selectedIdx]) {
+        navigate(results[selectedIdx].url);
+      } else if (query.trim()) {
+        navigate(`/search?q=${encodeURIComponent(query.trim())}`);
       }
     }
   };
 
-  const handleFocus = async () => {
-    setOpen(true);
+  const open = async () => {
+    setIsOpen(true);
     if (!cachedIndex) {
       setLoading(true);
       await getIndex();
       setLoading(false);
     }
+    // Focus after render
+    setTimeout(() => inputRef.current?.focus(), 50);
   };
 
-  // Close on outside click
+  // Lock body scroll when overlay is open
   useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (
-        inputRef.current &&
-        !inputRef.current.parentElement?.contains(e.target as Node)
-      ) {
-        setOpen(false);
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // Cmd/Ctrl+K shortcut
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        if (isOpen) close();
+        else open();
       }
     };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
+  });
 
   return (
-    <div className="relative">
-      <input
-        ref={inputRef}
-        type="text"
-        value={query}
-        onChange={(e) => handleChange(e.target.value)}
-        onFocus={handleFocus}
-        onKeyDown={handleKeyDown}
-        placeholder="Search..."
-        className="w-32 sm:w-40 text-sm bg-surface border border-foreground/10 rounded-lg px-3 py-1.5 text-foreground/70 placeholder:text-foreground/30 focus:outline-none focus:border-foreground/30 transition-colors"
-        aria-label="Search"
-        role="combobox"
-        aria-expanded={open && suggestions.length > 0}
-        aria-autocomplete="list"
-      />
+    <>
+      {/* Search icon button */}
+      <button
+        onClick={open}
+        className="w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60 hover:bg-foreground/5 transition-colors"
+        aria-label="Search (Ctrl+K)"
+        title="Search (Ctrl+K)"
+      >
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </button>
 
-      {/* Suggestions dropdown */}
-      {open && (suggestions.length > 0 || loading) && (
-        <div className="absolute right-0 top-full mt-1 z-30 bg-surface border border-foreground/10 rounded-lg py-1 min-w-[200px] shadow-lg">
-          {loading && (
-            <div className="px-3 py-2 text-xs text-foreground/30">
-              Loading search...
-            </div>
-          )}
-          {suggestions.map((s, i) => (
+      {/* Full-page overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm">
+          <div className="max-w-2xl mx-auto px-6 pt-20">
+            {/* Close button */}
             <button
-              key={s}
-              onMouseDown={(e) => {
-                e.preventDefault();
-                navigate(s);
-              }}
-              className={`block w-full text-left px-3 py-2 text-sm transition-colors ${
-                i === selectedIdx
-                  ? "bg-foreground/5 text-foreground/80"
-                  : "text-foreground/50 hover:bg-foreground/5 hover:text-foreground/70"
-              }`}
+              onClick={close}
+              className="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60"
+              aria-label="Close search"
             >
-              {s}
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-          ))}
+
+            {/* Search input */}
+            <input
+              ref={inputRef}
+              type="text"
+              value={query}
+              onChange={(e) => handleChange(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Search concepts, exercises, guides..."
+              className="w-full text-xl bg-surface border border-foreground/10 rounded-xl px-5 py-4 text-foreground/80 placeholder:text-foreground/30 focus:outline-none focus:border-foreground/30 transition-colors"
+              role="combobox"
+              aria-expanded={results.length > 0}
+              aria-autocomplete="list"
+            />
+
+            {/* Hint */}
+            {query.length === 0 && !loading && (
+              <p className="text-xs text-foreground/30 mt-3 px-1">
+                Type to search. Press Esc to close.
+              </p>
+            )}
+
+            {loading && (
+              <p className="text-sm text-foreground/30 mt-4 px-1">
+                Loading search...
+              </p>
+            )}
+
+            {/* Suggestions */}
+            {results.length > 0 && (
+              <div className="mt-4 space-y-1">
+                {results.map((r, i) => (
+                  <button
+                    key={r.title}
+                    onClick={() => navigate(r.url)}
+                    className={`w-full text-left px-5 py-3 rounded-lg transition-colors flex items-center gap-3 ${
+                      i === selectedIdx
+                        ? "bg-surface text-foreground/90"
+                        : "text-foreground/60 hover:bg-surface hover:text-foreground/80"
+                    }`}
+                  >
+                    <svg
+                      className="w-4 h-4 shrink-0 text-foreground/20"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                    <span className="text-lg">{r.title}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* No results */}
+            {query.length >= 2 && !loading && results.length === 0 && (
+              <p className="text-sm text-foreground/30 mt-4 px-1">
+                No results for &ldquo;{query}&rdquo;
+              </p>
+            )}
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
