@@ -388,12 +388,44 @@ export async function getBridgesForAtom(atomId: string) {
  * Check if an audio file exists for a given content type and slug.
  * Returns the public URL path if found, null otherwise.
  */
+/**
+ * Audio CDN base URL. In production, MP3s are served from Cloudflare R2.
+ * Locally, they're served from public/audio/ via Next.js dev server.
+ */
+const AUDIO_CDN = process.env.NEXT_PUBLIC_AUDIO_CDN || "";
+
+/** Cache durations.json to know which audio files exist */
+let _durationsCache: Record<string, unknown> | null = null;
+function loadDurationsManifest(): Record<string, unknown> {
+  if (_durationsCache) return _durationsCache;
+  try {
+    const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
+    _durationsCache = JSON.parse(fs.readFileSync(durPath, "utf-8"));
+  } catch {
+    _durationsCache = {};
+  }
+  return _durationsCache!;
+}
+
 export function getAudioUrl(
   type: "bridges" | "paths" | "threads" | "atoms",
   slug: string,
 ): string | null {
+  const relativePath = `/audio/${type}/${slug}.mp3`;
+
+  // Check durations manifest (works in both local and production)
+  const durations = loadDurationsManifest();
+  if (durations[relativePath]) {
+    return `${AUDIO_CDN}${relativePath}`;
+  }
+
+  // Fallback: check local filesystem (dev only)
   const audioPath = path.join(process.cwd(), "public", "audio", type, `${slug}.mp3`);
-  return fs.existsSync(audioPath) ? `/audio/${type}/${slug}.mp3` : null;
+  if (fs.existsSync(audioPath)) {
+    return `${AUDIO_CDN}${relativePath}`;
+  }
+
+  return null;
 }
 
 // ─── Graph compilation ───────────────────────────────────────────────────────

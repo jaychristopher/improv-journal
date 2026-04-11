@@ -35,7 +35,8 @@ yarn-error.log*
 
 # audio output staging
 /output/
-# MP3s are tracked via Git LFS (see .gitattributes)
+# MP3s served from Cloudflare R2 in production, local copies for dev
+/public/audio/**/*.mp3
 
 # vercel
 .vercel
