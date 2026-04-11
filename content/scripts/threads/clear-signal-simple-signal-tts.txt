@@ -1,57 +1,97 @@
-[conversational] We've been talking a lot about receiving. Accepting offers, staying present, integrating surprises. But now I want to flip it. Because you're always transmitting, whether you intend to or not. And the question is: what kind of signal are you putting out?
+[curious] Okay so we've been talking a lot about receiving — accepting offers, staying present, letting surprises in. But there's this other half that I feel like gets less attention. What you're putting out. What you're transmitting.
 
-[teaching] Let me paint two scenes and you tell me which one is alive.
+[teaching] Yeah, and here's the thing — you're always transmitting. It's not optional. The moment you step on stage, signal is going out. The only real question is what kind of signal, and whether it's clear.
 
-[curious] Go for it.
+[curious] Okay. Paint me two scenes. I want to feel the difference.
 
-[conversational] Scene one. A husband and wife are doing their taxes. He finds a receipt he doesn't recognize. He looks at her. She looks at the table. He's scared to ask. She's scared he'll ask. Neither of them says anything for three seconds.
+[teaching] Scene one. Husband and wife, kitchen table, doing their taxes. He picks up a receipt he doesn't recognize. He looks at her. She looks at the table. He's scared to ask. She's scared he'll ask. Three seconds of silence. Nobody says a word.
 
-[pause]
+[curious] Oh. Okay. I'm in. I already want to know what's on that receipt.
 
-[teaching] Scene two. A cyborg from the future bursts through a door. "I'm here to steal your toaster!" The other player blinks. "Why a toaster?" "Because in the future, all toasters are sentient and I need to save them before..." And now we're five lines deep in exposition and no one is connecting about anything.
+[teaching] Right? Now scene two. A cyborg from the future kicks down a door. "I'm here to steal your toaster!" The other player goes, "Why a toaster?" "Because in the future all toasters are sentient and I have to save them before the uprising —" and now we're five lines into exposition and nobody has actually connected with anybody about anything.
 
-[leaning in] The tax scene. Obviously the tax scene. But that's weird, right? Because on paper the cyborg scene has way more going on.
+[curious] [short pause] And the weird thing is, scene two has more happening. Time travel. Robots. Stakes. Scene one is literally two people filing taxes. But I know which one I'd rather watch.
 
-[warm] And that's exactly the point. The first scene is honest. Every signal is clear. He's afraid. She's hiding something. The audience reads it instantly because the emotions are real, or at least the performers are fully committed to them being real. No winking, no ironic distance. Just two people in a situation, behaving as that situation would actually make them behave.
+[teaching] Everyone does. And it's worth sitting with why. Because the first scene is honest. Every signal is clean. He's afraid. She's hiding something. The audience reads it in half a second because the emotions are real — or the performers are committed enough that they may as well be. No winking. No ironic distance. No "look how clever this premise is." Just two people in a situation, behaving like that situation would actually make them behave.
 
-[contemplative] And the cyborg?
+[curious] And the cyborg scene?
 
-[serious] The cyborg is clever. And cleverness is armor. If I'm a robot from the future, I can't really fail, because I was never really me up there. The irony is a shield. The complexity is a display. And every layer of cleverness adds noise to the signal.
+[teaching] Cyborg scene is clever. And cleverness is armor.
 
-[curious] So it's not that clever premises are bad. It's that they interfere with the transmission.
+[curious] [contemplative] Say more about that.
 
-[teaching] Exactly. It's a transmission quality issue. When you're genuinely scared, your partner receives a clear signal. "He's scared." They can build on that. When you're performing scared while winking at the audience to show you know it's silly, the signal fractures. Your partner doesn't know if you're scared or joking. The audience can smell the fake.
+[teaching] The premise is a way of not being vulnerable. If I'm a robot from the future, I can't really fail up there, because I was never really me in the first place. The irony is a shield. The complexity is a display. And every layer of cleverness adds noise to the signal you're sending your partner.
 
-[conversational] Think about how often this happens in real life. Someone asks how you're doing and you say "fine" in a tone that clearly means not fine. You've sent a contradictory signal. Your partner now has to decode which channel to trust. That decoding costs bandwidth and creates ambiguity.
+[curious] So the rule is — what. Say the true thing?
 
-[leaning in] Versus just saying "honestly, I'm having a rough day."
+[teaching] Say what's true in the scene, clearly, without distortion. And I want to be careful here — this isn't a moral instruction. I'm not telling you to be a better person. It's a transmission quality issue.
 
-[warm] Clear signal. Your partner knows exactly where they are and what to do with it. Honesty gives your partner something solid to grab. Cleverness gives them nothing. You can't build on a joke that's aware it's a joke.
+[curious] [emphatic] Transmission quality. Okay.
 
-[pause]
+[teaching] When you're genuinely scared, your partner receives a clear signal — *he's scared* — and they can build on it. They know where they are. But when you're *performing* scared while winking at the audience to show you know it's silly, the signal fractures. Your partner doesn't know if you're scared or joking. The audience can smell the fake. And the shared state — the thing you're supposed to be co-creating — just goes fuzzy.
 
-[curious] Okay, so clarity matters. But you're also saying the signal needs to be simple?
+[curious] That's such a real thing off stage too. Like, someone asks how you're doing and you say "fine" in a tone that clearly means not fine. You just sent two contradictory signals on two different channels.
 
-[teaching] Even if the signal is perfectly clear, it also needs to be simple. Think of your partner, or your audience, or the person across the meeting table, as connecting via a slow modem. Limited bandwidth. If you send a complex, twisting plot with three layers of irony and an eighteenth-century literary reference, the file is too large. The modem chokes. Packet loss. They disengage.
+[teaching] And now the other person has to decode which channel to trust. Which costs bandwidth. Which creates this low hum of ambiguity in the room. Compare it to: "Honestly? I'm having a rough day." Clear signal. They know exactly where they are and exactly what to do with it.
 
-[contemplative] But if you send "I'm sad because you ate my cake"...
+[curious] It almost makes the interaction easier for the other person, not harder.
 
-[warm] Small file. Downloads instantly. Everyone understands. And because the channel is clear, the relationship has room to develop. That's where the real scene lives.
+[warm] Yeah. Honesty gives your partner something solid to grab. Cleverness gives them nothing. You can't build on a joke that knows it's a joke. Irony is a dead end — it acknowledges the scene without advancing it. But a genuine emotion, fully committed to, is infinitely buildable. Because it's grounded in something real.
 
-[conversational] This is counterintuitive because our egos want complexity. We want to be the smartest person in the room. In meetings, we reach for the elaborate framing to signal competence. On stage, beginners invent elaborate premises to show range. But complexity is a tax on everyone else's attention.
+[curious] [short pause] Del Close had that line, right? The truth is funny.
 
-[curious] Keith Johnstone had that phrase, right? The cult of the obvious?
+[teaching] Not clever observations *about* the truth. The truth itself, played straight. That's the whole thing.
 
-[teaching] "The more obvious an improviser is, the more original he appears." Obvious moves feel risky because they feel exposed. Complex moves feel safe because they have layers to hide behind. But the obvious choice leaves bandwidth for connection. The complex choice consumes it.
+[curious] Okay. So signal clarity. But I want to push on something. Even if the signal is clear, it can still be too much, right? Like you can be honest *and* overloaded.
 
-[leaning in] So a master walks on stage and says "happy birthday" and that's it.
+[teaching] Yes. That's the second thing. Clear isn't enough. It also has to be simple.
 
-[warm] And because the premise costs almost nothing to process, the entire scene can be about the relationship. Compare that to the cyborg toaster opener, where five minutes of exposition are required before anyone can interact about anything that matters.
+[curious] Unpack that.
 
-[contemplative] Simplicity isn't lazy.
+[teaching] Think of your partner — or your audience, or the person across the meeting table — as connecting via a slow modem. Limited bandwidth. If you send a complex, twisting plot with three layers of irony and an 18th-century literary reference, the file is too big. The modem chokes. Packet loss. They disengage because they literally can't follow what's happening fast enough to participate.
 
-[teaching] Simplicity is generous. It means your partner can immediately receive what you're offering and build on it without cognitive overhead. In collaboration, on stage, in a meeting, in a marriage, high status comes from clarity, not complexity.
+[curious] [conversational] But if you just say —
 
-[conversational] There's an exercise for this. Do a scene using only one word per turn, alternating. "I." "Think." "We." "Should." "Leave." You can't overcomplicate. And stories still emerge.
+[teaching] "I'm sad because you ate my cake." Small file. Downloads instantly. Everyone in the room has it. And because the channel is clear, now there's room for the relationship to actually develop.
 
-[warm] And then try a mundane scene, folding laundry, washing dishes, with one rule. No jokes, no irony. Every line is emotionally honest. If it's boring, be bored. If something your partner says makes you feel something, feel it. Notice how compelling sincerity is when nothing is competing with it for bandwidth.
+[curious] That's counterintuitive though. Because our instinct is — complexity equals competence. I want to be the smartest one in the room. On stage I want to show range.
+
+[teaching] Right. In meetings we reach for elaborate framings to signal that we belong. Beginners on stage invent elaborate premises to show they have ideas. But complexity is a tax on everyone else's attention. It consumes the shared bandwidth that should be available for — connection. For the thing you're actually there to make together.
+
+[curious] [contemplative] So a master walks in and says...
+
+[teaching] "Happy birthday." That's it. That's the whole offer. Simple. Obvious. And because the premise costs nothing to process, the entire scene can be about the relationship. Every second of attention is freed up for the thing that matters.
+
+[curious] Versus the cyborg opener, where we need five minutes of exposition before anyone can interact.
+
+[teaching] By the time we're done explaining, the audience has checked out and your partner has no idea what their character even cares about.
+
+[curious] [emphatic] Okay, this reframes something for me. I always thought simple meant lazy. Like, if I didn't bring a big idea, I wasn't pulling my weight.
+
+[warm] Simplicity isn't lazy. It's generous. It means your partner can receive what you're offering immediately and build on it without cognitive overhead. Johnstone calls it the cult of the obvious — the more obvious an improviser is, the more original they appear. Because obvious moves feel risky. They feel exposed. Complex moves feel safe because they have layers to hide behind.
+
+[curious] So the complexity is actually the scared choice.
+
+[teaching] Almost always. The instinct to complicate is a status play. The discipline to simplify is a gift to the ensemble. And in any real collaboration — on stage, in a meeting, in a marriage — high status comes from clarity, not from how much you brought.
+
+[curious] [short pause] I want to give people something to try. What's an exercise?
+
+[teaching] Here's a good one. Do a scene with a partner, one word per turn, alternating. "I." "think." "we." "should." "leave." You can't overcomplicate, because you get one word. And you'll notice — stories still emerge. Characters still form. The signal gets through on almost no bandwidth.
+
+[curious] That's humbling.
+
+[teaching] It's supposed to be. Then try the opposite extreme. Do a mundane scene — folding laundry, washing dishes — with one rule. No jokes. No irony. Every line is emotionally honest. If you're bored, be bored. If something your partner says makes you feel something, feel it. Don't decorate it.
+
+[curious] And just — let it be whatever it is.
+
+[teaching] Let it be whatever it is. And notice how compelling sincerity is when nothing is competing with it for bandwidth. It's almost uncomfortable how much attention a sincere moment commands.
+
+[curious] [contemplative] Because there's nothing to hide behind.
+
+[warm] There's nothing to hide behind. That exposure is exactly what makes the signal clear. Terry Withers said it: don't try to be funny, be brave and be yourself. The bravery is the point. And honesty isn't about being a saint — it's about being legible. Letting your partner actually see where you are, so they can meet you there.
+
+[curious] [pause] I think the thing I'm taking from this is that every time I've reached for cleverness on stage, I was protecting something.
+
+[teaching] Usually you were. And the audience could feel it. They couldn't always name it, but they could feel the channel get fuzzy. The best compliment you can give a scene partner isn't a big swing or a surprising twist. It's a clean signal they can build on. Small file. No distortion. Delivered with your whole chest.
+
+[rewritten]
