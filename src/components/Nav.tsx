@@ -162,7 +162,7 @@ export function Nav() {
               <Link
                 href={section.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-foreground/80 block text-xl font-semibold"
+                className="text-foreground/80 block text-2xl font-semibold"
               >
                 {section.label}
               </Link>
@@ -172,7 +172,7 @@ export function Nav() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
-                    className="text-foreground/50 hover:text-foreground/70 block text-base"
+                    className="text-foreground/50 hover:text-foreground/70 block text-lg"
                   >
                     {item.label}
                   </Link>

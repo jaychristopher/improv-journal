@@ -87,7 +87,7 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
     results.push({
       frontmatter: data as T,
       content,
-      html: linkSources(rendered.toString()),
+      html: linkAtomRefs(linkSources(rendered.toString())),
       slug: path.basename(file, ".md"),
     });
   }
@@ -108,6 +108,44 @@ function cachedLoad<T>(subdir: string): Promise<ContentFile<T>[]> {
 
 export function loadSources() {
   return cachedLoad<SourceFrontmatter>("sources");
+}
+
+/**
+ * Atom slug → URL map, built from filesystem frontmatter (no HTML rendering).
+ * Used to resolve `<code>atom-id</code>` references into links.
+ */
+let _atomUrlMap: Map<string, { title: string; url: string }> | null = null;
+
+function getAtomUrlMap(): Map<string, { title: string; url: string }> {
+  if (_atomUrlMap) return _atomUrlMap;
+  _atomUrlMap = new Map();
+  const dir = path.join(CONTENT_DIR, "atoms");
+  if (!fs.existsSync(dir)) return _atomUrlMap;
+  for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".md"))) {
+    const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+    const { data } = matter(raw);
+    const fm = data as AtomFrontmatter;
+    if (fm.id && fm.type) {
+      _atomUrlMap.set(fm.id, {
+        title: fm.title,
+        url: getAtomUrl({ id: fm.id, type: fm.type }),
+      });
+    }
+  }
+  return _atomUrlMap;
+}
+
+/**
+ * Replace <code>atom-id</code> references in HTML with links to the atom page.
+ * Only matches IDs that exist in the atom index.
+ */
+function linkAtomRefs(htmlStr: string): string {
+  const urlMap = getAtomUrlMap();
+  return htmlStr.replace(/<code>([a-z][a-z0-9-]*)<\/code>/g, (match, id) => {
+    const atom = urlMap.get(id);
+    if (!atom) return match;
+    return `<a href="${atom.url}">${atom.title}</a>`;
+  });
 }
 
 export function loadAtoms() {
