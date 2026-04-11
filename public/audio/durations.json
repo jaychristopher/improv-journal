@@ -48,8 +48,8 @@
     "formatted": "5:07"
   },
   "/audio/threads/first-rule-you-already-know.mp3": {
-    "seconds": 250,
-    "formatted": "4:10"
+    "seconds": 505,
+    "formatted": "8:25"
   },
   "/audio/threads/empty-stage-problem.mp3": {
     "seconds": 565,
@@ -78,6 +78,46 @@
   "/audio/threads/beyond-the-harold.mp3": {
     "seconds": 512,
     "formatted": "8:32"
+  },
+  "/audio/bridges/team-building-activities.mp3": {
+    "seconds": 557,
+    "formatted": "9:17"
+  },
+  "/audio/bridges/stage-fright.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/psychological-safety.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-stop-overthinking.mp3": {
+    "seconds": 568,
+    "formatted": "9:28"
+  },
+  "/audio/bridges/how-to-give-feedback.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-deal-with-conflict.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/how-to-be-more-creative.mp3": {
+    "seconds": 510,
+    "formatted": "8:30"
+  },
+  "/audio/bridges/how-to-be-more-confident.mp3": {
+    "seconds": 530,
+    "formatted": "8:50"
+  },
+  "/audio/bridges/how-to-be-funny.mp3": {
+    "seconds": 531,
+    "formatted": "8:51"
+  },
+  "/audio/bridges/active-listening.mp3": {
+    "seconds": 617,
+    "formatted": "10:17"
   },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 164,
@@ -182,46 +222,6 @@
   "/audio/atoms/be-brave.mp3": {
     "seconds": 215,
     "formatted": "3:35"
-  },
-  "/audio/bridges/team-building-activities.mp3": {
-    "seconds": 557,
-    "formatted": "9:17"
-  },
-  "/audio/bridges/stage-fright.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
-  },
-  "/audio/bridges/psychological-safety.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
-  },
-  "/audio/bridges/how-to-stop-overthinking.mp3": {
-    "seconds": 568,
-    "formatted": "9:28"
-  },
-  "/audio/bridges/how-to-give-feedback.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
-  },
-  "/audio/bridges/how-to-deal-with-conflict.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
-  },
-  "/audio/bridges/how-to-be-more-creative.mp3": {
-    "seconds": 510,
-    "formatted": "8:30"
-  },
-  "/audio/bridges/how-to-be-more-confident.mp3": {
-    "seconds": 530,
-    "formatted": "8:50"
-  },
-  "/audio/bridges/how-to-be-funny.mp3": {
-    "seconds": 531,
-    "formatted": "8:51"
-  },
-  "/audio/bridges/active-listening.mp3": {
-    "seconds": 617,
-    "formatted": "10:17"
   },
   "/audio/paths/the-art-of-ensemble.mp3": {
     "seconds": 193,
