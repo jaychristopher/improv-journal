@@ -3,7 +3,7 @@ id: hardest-thing-youll-never-plan
 title: "The Hardest Thing You'll Never Plan"
 status: seed
 atoms: [be-present, active-listening, internal-computation, cognitive-bandwidth, be-thankful, judgment, last-word-response, gift-giving]
-tags: [north-stars, presence, cognition, trust]
+tags: [principles, presence, cognition, trust]
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

@@ -1,12 +1,13 @@
-import { notFound } from "next/navigation";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { Breadcrumb } from "@/components/Breadcrumb";
 import {
-  getTraditionNames,
+  extractCounterPositions,
   getAtomsForTradition,
   getAtomUrl,
-  extractCounterPositions,
+  getTraditionNames,
 } from "@/lib/content";
-import { Breadcrumb } from "@/components/Breadcrumb";
 
 const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: string[] }> = {
   johnstone: {
@@ -85,7 +86,7 @@ export default async function TraditionPage({
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
@@ -95,34 +96,23 @@ export default async function TraditionPage({
       />
 
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          tradition
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">
-          {info.label}
-        </h1>
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">tradition</span>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">{info.label}</h1>
         <p className="text-foreground/60 mt-2">{info.desc}</p>
-        <p className="text-xs text-foreground/40 mt-3">
-          Key texts: {info.keyTexts.join(" · ")}
-        </p>
+        <p className="text-foreground/40 mt-3 text-xs">Key texts: {info.keyTexts.join(" · ")}</p>
       </header>
 
       {/* Disagreements — the unique value */}
       {disagreements.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-lg font-semibold mb-4">
-            Where this tradition pushes back
-          </h2>
+          <h2 className="mb-4 text-lg font-semibold">Where this tradition pushes back</h2>
           <div className="space-y-4">
             {disagreements.slice(0, 8).map((d, i) => (
-              <div
-                key={i}
-                className="border-l-2 border-foreground/10 pl-4"
-              >
-                <p className="text-sm text-foreground/70">{d.text}</p>
+              <div key={i} className="border-foreground/10 border-l-2 pl-4">
+                <p className="text-foreground/70 text-sm">{d.text}</p>
                 <Link
                   href={d.atomUrl}
-                  className="text-xs text-foreground/40 hover:text-foreground/60 mt-1 inline-block"
+                  className="text-foreground/40 hover:text-foreground/60 mt-1 inline-block text-xs"
                 >
                   from {d.atomTitle} &rarr;
                 </Link>
@@ -134,17 +124,15 @@ export default async function TraditionPage({
 
       {/* Concepts that cite this tradition */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">
+        <h2 className="mb-4 text-lg font-semibold">
           Concepts citing this tradition
-          <span className="text-foreground/40 font-normal ml-2">
-            ({atoms.length})
-          </span>
+          <span className="text-foreground/40 ml-2 font-normal">({atoms.length})</span>
         </h2>
         {Array.from(byType.entries())
           .sort((a, b) => b[1].length - a[1].length)
           .map(([type, typeAtoms]) => (
             <div key={type} className="mb-6">
-              <h3 className="text-xs text-foreground/30 mb-2 capitalize">
+              <h3 className="text-foreground/30 mb-2 text-xs capitalize">
                 {type}s ({typeAtoms.length})
               </h3>
               <div className="grid grid-cols-2 gap-2">
@@ -155,11 +143,9 @@ export default async function TraditionPage({
                       id: a.frontmatter.id,
                       type: a.frontmatter.type,
                     })}
-                    className="border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-3 transition-colors"
                   >
-                    <span className="text-sm font-medium">
-                      {a.frontmatter.title}
-                    </span>
+                    <span className="text-sm font-medium">{a.frontmatter.title}</span>
                   </Link>
                 ))}
               </div>

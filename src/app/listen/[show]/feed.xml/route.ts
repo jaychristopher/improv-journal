@@ -1,7 +1,8 @@
-import { NextResponse } from "next/server";
-import { getShowBySlug, getEpisodesForShow } from "@/lib/content";
 import fs from "fs";
+import { NextResponse } from "next/server";
 import path from "path";
+
+import { getEpisodesForShow, getShowBySlug } from "@/lib/content";
 
 // Base URL — override via NEXT_PUBLIC_SITE_URL env var
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
@@ -41,10 +42,7 @@ export async function generateStaticParams() {
   return shows.map((s) => ({ show: s.frontmatter.id }));
 }
 
-export async function GET(
-  _request: Request,
-  { params }: { params: Promise<{ show: string }> }
-) {
+export async function GET(_request: Request, { params }: { params: Promise<{ show: string }> }) {
   const { show: showSlug } = await params;
   const show = await getShowBySlug(showSlug);
 

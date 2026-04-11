@@ -3,7 +3,7 @@ id: coherence
 title: Coherence
 type: definition
 status: draft
-tags: [definitions, systems-thinking, shared-state, diagnostics]
+tags: [definitions, systems-thinking, shared-reality, diagnostics]
 links:
   - { id: systemic-health-indicators, relation: illustrates }
   - { id: shared-reality-fragility, relation: extends }
@@ -36,6 +36,6 @@ Coherence is a **spectrum**, not a switch, and it fluctuates beat to beat. You c
 
 **Coherence requires relational meaning.** Because meaning lives between minds, coherence is a property of the *connection*, not of individual performance. One player can be inventive, skilled, and fully committed and still be incoherent with their partner. Coherence cannot be a solo achievement. It is a property of the connection, measured between players, never within one.
 
-**Coherence is one of three systemic health indicators** (alongside cumulative state and mutual recognition). It is the indicator that most directly measures whether the North Stars are working — because every North Star, in its own way, serves the maintenance of coherent shared reality.
+**Coherence is one of three systemic health indicators** (alongside cumulative state and mutual recognition). It is the indicator that most directly measures whether the principles are working — because every principle, in its own way, serves the maintenance of coherent shared reality.
 
 **Specific sources:** Clark & Brennan, "Grounding in Communication" (1991, in *Perspectives on Socially Shared Cognition*, APA; [PDF](https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf)) — grounding as the interactive process of establishing mutual understanding through presentation, acceptance, and repair. Their "least collaborative effort" principle explains why simple, clear signals build coherence faster. *Truth in Comedy*: "Agreement is the one rule that can never be broken." Sawyer, *Improvised Dialogues* (2003) — coherent structure emerges from cleared signals without pre-planning. **Counter-position:** Absurdist improv deliberately fractures coherence — but even surreal comedy maintains "rigorous internal logic" once an absurd premise is established. Absurdism shifts the *content* of coherence (we agree the world is nonsensical) while maintaining the *process* (we're tracking the same nonsense).

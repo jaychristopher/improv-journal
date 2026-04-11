@@ -3,7 +3,7 @@ id: overcomplication
 title: Overcomplication
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, bandwidth, ego]
+tags: [antipatterns, principles, bandwidth, ego]
 links:
   - { id: be-simple, relation: illustrates }
   - { id: cognitive-bandwidth, relation: extends }

@@ -3,7 +3,7 @@ id: decay-recovery
 title: "Recovery: Decay"
 type: pattern
 status: draft
-tags: [patterns, recovery, collapse-modes, shared-state]
+tags: [patterns, recovery, collapse-modes, shared-reality]
 links:
   - { id: systemic-collapse-modes, relation: extends }
   - { id: shared-reality-fragility, relation: requires }

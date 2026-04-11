@@ -3,7 +3,7 @@ id: performing-cleverness
 title: Performing Cleverness
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, authenticity, ego]
+tags: [antipatterns, principles, authenticity, ego]
 links:
   - { id: be-honest, relation: contrasts }
   - { id: emotional-truth, relation: contrasts }

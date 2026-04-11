@@ -1,10 +1,11 @@
 "use client";
 
-import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import Link from "next/link";
-import { useState, useEffect, useMemo } from "react";
 import MiniSearch from "minisearch";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
+import { useEffect, useMemo, useState } from "react";
+
 import { MiniGraph } from "@/components/MiniGraph";
 
 const INDEX_URL = "/search-index.json";
@@ -25,7 +26,7 @@ const TYPE_LABELS: Record<string, string> = {
   technique: "technique",
   exercise: "exercise",
   definition: "concept",
-  axiom: "why it's hard",
+  law: "why it's hard",
   antipattern: "failure mode",
   pattern: "pattern",
   framework: "framework",
@@ -62,8 +63,11 @@ function SearchResults() {
 
   useEffect(() => {
     if (!q) {
-      setResults([]);
-      setLoading(false);
+      // Use a microtask to avoid synchronous setState in effect body
+      queueMicrotask(() => {
+        setResults([]);
+        setLoading(false);
+      });
       return;
     }
 
@@ -82,7 +86,9 @@ function SearchResults() {
           let links: GraphLink[] | undefined;
           try {
             if (h.links) links = JSON.parse(h.links as string);
-          } catch { /* no links */ }
+          } catch {
+            /* no links */
+          }
           return {
             id: h.id,
             title: h.title as string,
@@ -92,7 +98,7 @@ function SearchResults() {
             score: h.score,
             links,
           };
-        })
+        }),
       );
       setLoading(false);
     })();
@@ -104,9 +110,7 @@ function SearchResults() {
     return acc;
   }, {});
 
-  const filtered = activeLayer
-    ? results.filter((r) => r.layer === activeLayer)
-    : results;
+  const filtered = activeLayer ? results.filter((r) => r.layer === activeLayer) : results;
 
   // Build a title/url lookup from all results for graph node resolution
   // (must be before early returns to satisfy Rules of Hooks)
@@ -143,18 +147,15 @@ function SearchResults() {
 
   // Graph: show when top result has connections and results are focused
   const topResult = filtered[0];
-  const showGraph =
-    topResult?.links &&
-    topResult.links.length >= 3 &&
-    filtered.length <= 8;
+  const showGraph = topResult?.links && topResult.links.length >= 3 && filtered.length <= 8;
 
   return (
     <div>
       {/* Facet pills */}
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="mb-6 flex flex-wrap gap-2">
         <button
           onClick={() => setActiveLayer(null)}
-          className={`text-xs px-3 py-1 rounded-full border transition-colors ${
+          className={`rounded-full border px-3 py-1 text-xs transition-colors ${
             !activeLayer
               ? "border-foreground/40 text-foreground/80 bg-foreground/5"
               : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
@@ -165,10 +166,8 @@ function SearchResults() {
         {Object.entries(layerCounts).map(([layer, count]) => (
           <button
             key={layer}
-            onClick={() =>
-              setActiveLayer(activeLayer === layer ? null : layer)
-            }
-            className={`text-xs px-3 py-1 rounded-full border transition-colors ${
+            onClick={() => setActiveLayer(activeLayer === layer ? null : layer)}
+            className={`rounded-full border px-3 py-1 text-xs transition-colors ${
               activeLayer === layer
                 ? "border-foreground/40 text-foreground/80 bg-foreground/5"
                 : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
@@ -195,10 +194,10 @@ function SearchResults() {
           <Link
             key={r.id}
             href={r.url}
-            className="block border border-foreground/10 rounded-lg bg-surface p-4 hover:border-foreground/30 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
           >
-            <h3 className="font-medium text-sm">{r.title}</h3>
-            <span className="text-xs text-foreground/30 mt-0.5 block">
+            <h3 className="text-sm font-medium">{r.title}</h3>
+            <span className="text-foreground/30 mt-0.5 block text-xs">
               {TYPE_LABELS[r.type] ?? r.type}
             </span>
           </Link>
@@ -210,15 +209,11 @@ function SearchResults() {
 
 export default function SearchPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">Search</h1>
       </header>
-      <Suspense
-        fallback={
-          <p className="text-foreground/40 text-sm">Loading...</p>
-        }
-      >
+      <Suspense fallback={<p className="text-foreground/40 text-sm">Loading...</p>}>
         <SearchResults />
       </Suspense>
     </main>

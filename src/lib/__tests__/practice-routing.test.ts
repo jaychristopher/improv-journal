@@ -1,16 +1,17 @@
-import { describe, it, expect } from "vitest";
-import { loadAtoms, getAtomUrl } from "../content";
+import { describe, expect, it } from "vitest";
+
+import { getAtomUrl, loadAtoms } from "../content";
 
 describe("practice routing", () => {
   it("all technique + pedagogy atoms route to /practice/techniques/", async () => {
     const atoms = await loadAtoms();
     const techs = atoms.filter(
-      (a) => a.frontmatter.type === "technique" || a.frontmatter.type === "pedagogy"
+      (a) => a.frontmatter.type === "technique" || a.frontmatter.type === "pedagogy",
     );
     expect(techs.length).toBeGreaterThanOrEqual(42);
     for (const a of techs) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toMatch(
-        /^\/practice\/techniques\//
+        /^\/practice\/techniques\//,
       );
     }
   });
@@ -21,7 +22,7 @@ describe("practice routing", () => {
     expect(formats.length).toBeGreaterThanOrEqual(14);
     for (const a of formats) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toMatch(
-        /^\/practice\/formats\//
+        /^\/practice\/formats\//,
       );
     }
   });
@@ -32,7 +33,7 @@ describe("practice routing", () => {
     expect(defs.length).toBeGreaterThanOrEqual(27);
     for (const a of defs) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toMatch(
-        /^\/practice\/vocabulary\//
+        /^\/practice\/vocabulary\//,
       );
     }
   });

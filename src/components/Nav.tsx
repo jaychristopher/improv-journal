@@ -1,143 +1,185 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { SearchInput } from "./SearchInput";
-import { ThemeToggle } from "./ThemeToggle";
+import { useEffect, useRef, useState } from "react";
 
-const MORE_ITEMS = [
-  { href: "/paths", label: "Learning Paths" },
-  { href: "/listen", label: "Listen" },
-  { href: "/traditions", label: "Traditions" },
-  { href: "/library", label: "Reading List" },
+import { SearchInput } from "./SearchInput";
+
+interface NavSection {
+  href: string;
+  label: string;
+  children: { href: string; label: string }[];
+}
+
+const NAV_SECTIONS: NavSection[] = [
+  {
+    href: "/how-it-works",
+    label: "How It Works",
+    children: [
+      { href: "/how-it-works", label: "Overview" },
+      { href: "/how-it-works/principles", label: "Principles" },
+      { href: "/how-it-works/diagnosis", label: "Diagnosis" },
+    ],
+  },
+  {
+    href: "/practice",
+    label: "Practice",
+    children: [
+      { href: "/practice/exercises", label: "Exercises" },
+      { href: "/practice/techniques", label: "Techniques" },
+      { href: "/practice/formats", label: "Formats" },
+      { href: "/practice/vocabulary", label: "Vocabulary" },
+    ],
+  },
+  {
+    href: "/resources",
+    label: "Resources",
+    children: [
+      { href: "/paths", label: "Learning Paths" },
+      { href: "/guides", label: "Guides" },
+      { href: "/listen", label: "Listen" },
+      { href: "/traditions", label: "Traditions" },
+      { href: "/library", label: "Reading List" },
+    ],
+  },
 ];
 
-export function Nav() {
-  const [moreOpen, setMoreOpen] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+function NavDropdown({ section }: { section: NavSection }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [open]);
 
   return (
-    <nav className="border-b border-foreground/10 px-6 py-3">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
-        <Link href="/" className="font-semibold text-sm tracking-tight">
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="text-foreground/50 hover:text-foreground/80 flex cursor-pointer items-center gap-1 text-sm transition-colors"
+      >
+        {section.label}
+        <svg
+          className={`h-3 w-3 transition-transform ${open ? "rotate-180" : ""}`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {open && (
+        <div className="bg-surface border-foreground/10 absolute top-full left-0 z-20 mt-2 min-w-[160px] rounded-lg border py-2 shadow-lg">
+          {section.children.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="text-foreground/50 hover:text-foreground/80 hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function Nav() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  return (
+    <nav className="border-foreground/10 relative z-50 border-b px-6 py-3">
+      <div className="mx-auto flex max-w-5xl items-center justify-between">
+        <Link href="/" className="text-sm font-semibold tracking-tight">
           Physics of Connection
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden sm:flex items-center gap-4">
-          <Link
-            href="/how-it-works"
-            className="text-sm text-foreground/50 hover:text-foreground/80 transition-colors"
+        <div className="hidden items-center gap-4 sm:flex">
+          {NAV_SECTIONS.map((section) => (
+            <NavDropdown key={section.href} section={section} />
+          ))}
+          <SearchInput />
+        </div>
+
+        {/* Mobile: search + hamburger */}
+        <div className="flex items-center gap-2 sm:hidden">
+          <SearchInput />
+          <button
+            className="text-foreground/50 hover:text-foreground/80 cursor-pointer"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Menu"
           >
-            How It Works
-          </Link>
-          <Link
-            href="/practice"
-            className="text-sm text-foreground/50 hover:text-foreground/80 transition-colors"
-          >
-            Practice
-          </Link>
-          <div className="relative">
-            <button
-              onClick={() => setMoreOpen(!moreOpen)}
-              className="text-sm text-foreground/50 hover:text-foreground/80 transition-colors flex items-center gap-1"
-            >
-              More
-              <svg
-                className={`w-3 h-3 transition-transform ${moreOpen ? "rotate-180" : ""}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+            {mobileOpen ? (
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
+                  d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            </button>
-            {moreOpen && (
-              <>
-                <div
-                  className="fixed inset-0 z-10"
-                  onClick={() => setMoreOpen(false)}
+            ) : (
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
-                <div className="absolute right-0 top-full mt-2 z-20 bg-surface border border-foreground/10 rounded-lg py-2 min-w-[160px] shadow-lg">
-                  {MORE_ITEMS.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setMoreOpen(false)}
-                      className="block px-4 py-2 text-sm text-foreground/50 hover:text-foreground/80 hover:bg-foreground/5 transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </>
+              </svg>
             )}
-          </div>
-          <SearchInput />
-          <ThemeToggle />
+          </button>
         </div>
-
-        {/* Mobile hamburger */}
-        <button
-          className="sm:hidden text-foreground/50 hover:text-foreground/80"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menu"
-        >
-          {mobileOpen ? (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
-        </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — full viewport overlay */}
       {mobileOpen && (
-        <div className="sm:hidden mt-4 pb-2">
-          {/* Search */}
-          <div className="mb-4">
-            <SearchInput />
-          </div>
-          {/* Primary — large */}
-          <div className="space-y-1 mb-4">
-            <Link
-              href="/how-it-works"
-              onClick={() => setMobileOpen(false)}
-              className="block text-lg font-semibold text-foreground/70 hover:text-foreground/90 py-2"
-            >
-              How It Works
-            </Link>
-            <Link
-              href="/practice"
-              onClick={() => setMobileOpen(false)}
-              className="block text-lg font-semibold text-foreground/70 hover:text-foreground/90 py-2"
-            >
-              Practice
-            </Link>
-          </div>
-          {/* Secondary — smaller, de-emphasized */}
-          <div className="space-y-1 border-t border-foreground/5 pt-3">
-            <span className="sr-only">More</span>
-            {MORE_ITEMS.map((item) => (
+        <div className="bg-background fixed inset-0 top-[49px] z-40 overflow-y-auto px-6 pt-8 pb-12 sm:hidden">
+          {NAV_SECTIONS.map((section) => (
+            <div key={section.href} className="mb-8">
               <Link
-                key={item.href}
-                href={item.href}
+                href={section.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-sm text-foreground/40 hover:text-foreground/60 py-1.5"
+                className="text-foreground/80 block text-xl font-semibold"
               >
-                {item.label}
+                {section.label}
               </Link>
-            ))}
-          </div>
+              <div className="mt-2 space-y-2 pl-4">
+                {section.children.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-foreground/50 hover:text-foreground/70 block text-base"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       )}
     </nav>

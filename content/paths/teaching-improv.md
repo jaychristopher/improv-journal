@@ -17,7 +17,7 @@ You've been doing improv for years. You're good at it. Someone asked you to teac
 
 This path bridges the gap.
 
-We start with **the system underneath** — not to teach directly to your students, but to build your own explanatory foundation. When a student asks "why does yes-and matter?" you need an answer that goes deeper than "because it's the rule." The six axioms (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) give you that depth. You'll understand why certain behaviors work at a systems level — and that understanding will make every teaching decision more grounded.
+We start with **the system underneath** — not to teach directly to your students, but to build your own explanatory foundation. When a student asks "why does yes-and matter?" you need an answer that goes deeper than "because it's the rule." The six laws (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) give you that depth. You'll understand why certain behaviors work at a systems level — and that understanding will make every teaching decision more grounded.
 
 Then **the teacher's toolkit** — the actual pedagogy. How to create safety (the prerequisite for everything). How to structure a curriculum (skills build on prerequisites, and the sequence matters). How to warm up a room (and read its energy). How to side-coach (real-time guidance without stopping the work). How to give notes (less is more; exercises beat verbal feedback). How to read the room (the meta-skill that governs all the others).
 

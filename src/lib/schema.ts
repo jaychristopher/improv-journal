@@ -22,18 +22,13 @@ export type AtomType =
   | "definition"
   | "pattern"
   | "antipattern"
-  | "axiom"
+  | "law"
   | "framework"
   | "reference"
   | "format"
   | "pedagogy";
 
-export type Audience =
-  | "beginner"
-  | "intermediate"
-  | "advanced"
-  | "teacher"
-  | "performer";
+export type Audience = "beginner" | "intermediate" | "advanced" | "teacher" | "performer";
 
 export interface Link {
   id: string;
@@ -44,7 +39,7 @@ export interface Link {
 
 export interface ShowEpisodeFilter {
   content_type: "bridge" | "atom" | "thread" | "path";
-  atom_types?: AtomType[];  // only for content_type "atom"
+  atom_types?: AtomType[]; // only for content_type "atom"
 }
 
 export interface ShowSeason {
@@ -67,7 +62,7 @@ export interface SourceFrontmatter {
   title: string;
   type: SourceType;
   status: ContentStatus;
-  origin: string;            // where it came from (URL, file, event, etc.)
+  origin: string; // where it came from (URL, file, event, etc.)
   atoms_extracted: string[]; // IDs of atoms mined from this source
   tags: string[];
   created: string;
@@ -81,9 +76,9 @@ export interface AtomFrontmatter {
   status: ContentStatus;
   tags: string[];
   links: Link[];
-  sources: string[];  // IDs of sources this atom was extracted from
-  created: string;   // ISO date
-  updated: string;   // ISO date
+  sources: string[]; // IDs of sources this atom was extracted from
+  created: string; // ISO date
+  updated: string; // ISO date
 }
 
 // ─── Threads ─────────────────────────────────────────────────────────────────
@@ -92,7 +87,7 @@ export interface ThreadFrontmatter {
   id: string;
   title: string;
   status: ContentStatus;
-  atoms: string[];    // ordered list of atom IDs that compose this thought
+  atoms: string[]; // ordered list of atom IDs that compose this thought
   tags: string[];
   created: string;
   updated: string;
@@ -109,8 +104,8 @@ export interface BridgeFrontmatter {
   title: string;
   description: string;
   target_keywords: BridgeTargetKeyword[];
-  entry_atoms: string[];   // atom IDs this bridge links into
-  entry_path: string;      // primary path ID
+  entry_atoms: string[]; // atom IDs this bridge links into
+  entry_path: string; // primary path ID
   status: ContentStatus;
   created: string;
   updated?: string;
@@ -123,7 +118,7 @@ export interface PathFrontmatter {
   title: string;
   description: string;
   audience: Audience[];
-  threads: string[];  // ordered sequence of thread IDs
+  threads: string[]; // ordered sequence of thread IDs
   status: ContentStatus;
   created: string;
   updated: string;

@@ -3,7 +3,7 @@ id: yes-and
 title: "Yes, And"
 type: technique
 status: draft
-tags: [fundamentals, agreement, building, north-stars]
+tags: [fundamentals, agreement, building, principles]
 links:
   - { id: active-listening, relation: requires }
   - { id: blocking, relation: contrasts }

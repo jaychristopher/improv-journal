@@ -19,7 +19,7 @@ Here's what nobody told you: your analytical mind isn't the problem. It's an ass
 
 This path is built for systems-thinkers — engineers, scientists, programmers, analysts, anyone whose brain wants to understand the machine before operating it. Instead of asking you to abandon your nature, we start with it. Here are the constraints. Here's why certain behaviors work and others don't. Here's the system underneath.
 
-We begin with **the physics** — six axioms that govern every improv scene (and every conversation). These aren't rules invented by teachers. They're constraints discovered through decades of practice: irreversibility, bandwidth limits, reality fragility, continuous signaling, relational meaning, and interdependence. Understand these and "yes-and" stops being an arbitrary rule and becomes an engineering requirement.
+We begin with **the physics** — six laws that govern every improv scene (and every conversation). These aren't rules invented by teachers. They're constraints discovered through decades of practice: irreversibility, bandwidth limits, reality fragility, continuous signaling, relational meaning, and interdependence. Understand these and "yes-and" stops being an arbitrary rule and becomes an engineering requirement.
 
 Then we move to **the first protocol** — yes-and as acceptance architecture, not personality trait. Why it works at a systems level. What it actually means (not what the corporate workshop told you).
 

@@ -3,7 +3,7 @@ id: empty-stage-problem
 title: "The Empty Stage Problem"
 status: seed
 atoms: [irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, reality-construction]
-tags: [axioms, constraints, systems-thinking]
+tags: [laws, constraints, systems-thinking]
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

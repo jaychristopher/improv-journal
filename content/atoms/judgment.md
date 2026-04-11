@@ -3,7 +3,7 @@ id: judgment
 title: Judgment (Mid-Scene Evaluation)
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, evaluation, flow]
+tags: [antipatterns, principles, evaluation, flow]
 links:
   - { id: be-thankful, relation: contrasts }
   - { id: be-present, relation: contrasts }

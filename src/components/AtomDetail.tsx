@@ -1,18 +1,20 @@
+import fs from "fs";
 import Link from "next/link";
+import path from "path";
+
+import {
+  getAtomBySlug,
+  getAtomUrl,
+  getAudioUrl,
+  getBridgesForAtom,
+  getParentPath,
+  getThreadsForAtom,
+} from "@/lib/content";
+import type { AtomFrontmatter } from "@/lib/schema";
+
 import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
 import { PodcastJsonLd } from "./PodcastJsonLd";
-import {
-  getAtomUrl,
-  getAudioUrl,
-  getThreadsForAtom,
-  getParentPath,
-  getBridgesForAtom,
-  getAtomBySlug,
-} from "@/lib/content";
-import type { AtomFrontmatter } from "@/lib/schema";
-import fs from "fs";
-import path from "path";
 
 const TYPE_LABELS: Record<string, string> = {
   principle: "principle",
@@ -22,7 +24,7 @@ const TYPE_LABELS: Record<string, string> = {
   definition: "concept",
   pattern: "pattern",
   antipattern: "failure mode",
-  axiom: "why it's hard",
+  law: "why it's hard",
   framework: "framework",
   format: "format",
   pedagogy: "teaching method",
@@ -30,12 +32,15 @@ const TYPE_LABELS: Record<string, string> = {
 };
 
 const RELATION_LABELS: Record<string, string> = {
-  requires: "builds on",
-  enables: "unlocks",
-  contrasts: "compare with",
-  extends: "related",
-  illustrates: "example of",
+  requires: "Builds on",
+  enables: "Unlocks",
+  contrasts: "Compare",
+  extends: "Related",
+  illustrates: "Example of",
 };
+
+/** Display order for relation types in the sidebar */
+const RELATION_ORDER = ["requires", "enables", "extends", "contrasts", "illustrates"];
 
 interface AtomDetailProps {
   atom: {
@@ -55,12 +60,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   let audioDuration: string | undefined;
   if (audioUrl) {
     try {
-      const durPath = path.join(
-        process.cwd(),
-        "public",
-        "audio",
-        "durations.json"
-      );
+      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
       const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
       audioDuration = durations[audioUrl]?.formatted;
     } catch {
@@ -83,14 +83,14 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
         pathId: parentPath?.frontmatter.id ?? null,
         pathTitle: parentPath?.frontmatter.title ?? null,
       };
-    })
+    }),
   );
 
   const appearsInPaths = [
     ...new Map(
       threadWithPaths
         .filter((t) => t.pathId)
-        .map((t) => [t.pathId, { id: t.pathId!, title: t.pathTitle! }])
+        .map((t) => [t.pathId, { id: t.pathId!, title: t.pathTitle! }]),
     ).values(),
   ];
 
@@ -106,7 +106,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
           ? getAtomUrl({ id: link.id, type: linked.frontmatter.type })
           : `/how-it-works/${link.id}`,
       };
-    })
+    }),
   );
 
   const hasSidebar =
@@ -116,24 +116,18 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
     appearsInBridges.length > 0;
 
   return (
-    <main className="max-w-5xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-5xl px-6 py-16">
       <Breadcrumb crumbs={breadcrumbs} />
 
       {/* Two-column layout: card left, sidebar right on desktop */}
-      <div
-        className={
-          hasSidebar
-            ? "lg:grid lg:grid-cols-[1fr_260px] lg:gap-12"
-            : ""
-        }
-      >
+      <div className={hasSidebar ? "lg:grid lg:grid-cols-[1fr_260px] lg:gap-12" : ""}>
         {/* ── Main content in card ─────────────────────────────── */}
-        <div className="bg-surface rounded-xl p-6 sm:p-8 shadow-sm dark:shadow-none">
+        <div className="sm:bg-surface sm:rounded-xl sm:p-8 sm:shadow-sm sm:dark:shadow-none">
           <header className="mb-8">
-            <span className="text-xs uppercase tracking-wider text-foreground/40">
+            <span className="text-foreground/40 text-xs tracking-wider uppercase">
               {TYPE_LABELS[fm.type] ?? fm.type}
             </span>
-            <h1 className="text-3xl font-bold tracking-tight mt-1 text-foreground-strong">
+            <h1 className="text-foreground-strong mt-1 text-3xl font-bold tracking-tight">
               {fm.title}
             </h1>
           </header>
@@ -150,95 +144,148 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
             </div>
           )}
 
-          <article
-            className="prose prose-neutral dark:prose-invert max-w-none"
-            dangerouslySetInnerHTML={{ __html: atom.html }}
-          />
+          {(() => {
+            const FOOTER_LABELS = [
+              "Attribution note",
+              "Specific sources",
+              "Counter-position",
+              "Counter-positions",
+              "Lineage",
+              "Referenced by atoms",
+              "Traditions diverge",
+              "Success condition",
+              "Also relevant",
+              "Transfer to scene work",
+              "Transfer",
+              "Debrief questions",
+              "Value to the graph",
+              "When to use vs\\. other formats",
+            ];
+            const footerPattern = new RegExp(
+              `(<p><strong>(?:${FOOTER_LABELS.join("|")}):?</strong>[\\s\\S]*)$`,
+              "i",
+            );
+            const attrMatch = atom.html.match(footerPattern);
+            const mainHtml = attrMatch ? atom.html.slice(0, attrMatch.index) : atom.html;
+            const attrHtml = attrMatch ? attrMatch[1] : null;
+            return (
+              <>
+                <article
+                  className="prose prose-neutral dark:prose-invert max-w-none"
+                  dangerouslySetInnerHTML={{ __html: mainHtml }}
+                />
+                {attrHtml && (
+                  <aside
+                    className="border-foreground/10 text-foreground/40 mt-8 border-t pt-6 text-xs leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: attrHtml }}
+                  />
+                )}
+              </>
+            );
+          })()}
         </div>
 
         {/* ── Sidebar (right on desktop, below on mobile) ──────── */}
         {hasSidebar && (
-          <aside className="mt-12 lg:mt-0 space-y-8 text-sm">
-            {/* Related concepts */}
+          <aside className="mt-12 space-y-8 text-sm lg:mt-0">
+            {/* Related concepts — grouped by relation type */}
             {resolvedLinks.length > 0 && (
               <div>
-                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
                   Related
                 </h2>
-                <ul className="space-y-2">
-                  {resolvedLinks.map((link) => (
-                    <li key={link.id}>
-                      <Link
-                        href={link.url}
-                        className="hover:underline text-foreground/70"
-                      >
-                        {link.title}
-                      </Link>
-                      <span className="text-xs text-foreground/30 ml-1.5">
-                        &middot; {RELATION_LABELS[link.relation] ?? link.relation}
-                      </span>
-                    </li>
+                <dl className="space-y-3">
+                  {RELATION_ORDER.filter((rel) =>
+                    resolvedLinks.some((l) => l.relation === rel),
+                  ).map((rel) => (
+                    <div key={rel}>
+                      <dt className="text-foreground/40 mb-1 text-xs font-medium">
+                        {RELATION_LABELS[rel] ?? rel}
+                      </dt>
+                      <dd className="space-y-1 pl-0">
+                        {resolvedLinks
+                          .filter((l) => l.relation === rel)
+                          .map((link) => (
+                            <Link
+                              key={link.id}
+                              href={link.url}
+                              className="text-foreground/70 block hover:underline"
+                            >
+                              {link.title}
+                            </Link>
+                          ))}
+                      </dd>
+                    </div>
                   ))}
-                </ul>
+                </dl>
               </div>
             )}
 
-            {/* Part of (paths + threads + guides) */}
+            {/* Part of — grouped by content type */}
             {(appearsInPaths.length > 0 ||
               appearsInThreads.length > 0 ||
               appearsInBridges.length > 0) && (
               <div>
-                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
                   Part of
                 </h2>
-                <ul className="space-y-2">
-                  {appearsInPaths.map((p) => (
-                    <li key={p.id}>
-                      <Link
-                        href={`/paths/${p.id}`}
-                        className="hover:underline text-foreground/70"
-                      >
-                        {p.title}
-                      </Link>
-                      <span className="text-xs text-foreground/30 ml-1.5">
-                        &middot; path
-                      </span>
-                    </li>
-                  ))}
-                  {appearsInThreads.map((t) => (
-                    <li key={t.frontmatter.id}>
-                      <Link
-                        href={`/threads/${t.frontmatter.id}`}
-                        className="hover:underline text-foreground/70"
-                      >
-                        {t.frontmatter.title}
-                      </Link>
-                      <span className="text-xs text-foreground/30 ml-1.5">
-                        &middot; thread
-                      </span>
-                    </li>
-                  ))}
-                  {appearsInBridges.map((b) => (
-                    <li key={b.slug}>
-                      <Link
-                        href={`/${b.slug}`}
-                        className="hover:underline text-foreground/70"
-                      >
-                        {b.frontmatter.title}
-                      </Link>
-                      <span className="text-xs text-foreground/30 ml-1.5">
-                        &middot; guide
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <dl className="space-y-3">
+                  {appearsInPaths.length > 0 && (
+                    <div>
+                      <dt className="text-foreground/40 mb-1 text-xs font-medium">Paths</dt>
+                      <dd className="space-y-1">
+                        {appearsInPaths.map((p) => (
+                          <Link
+                            key={p.id}
+                            href={`/paths/${p.id}`}
+                            className="text-foreground/70 block hover:underline"
+                          >
+                            {p.title}
+                          </Link>
+                        ))}
+                      </dd>
+                    </div>
+                  )}
+                  {appearsInThreads.length > 0 && (
+                    <div>
+                      <dt className="text-foreground/40 mb-1 text-xs font-medium">Threads</dt>
+                      <dd className="space-y-1">
+                        {appearsInThreads.map((t) => (
+                          <Link
+                            key={t.frontmatter.id}
+                            href={`/threads/${t.frontmatter.id}`}
+                            className="text-foreground/70 block hover:underline"
+                          >
+                            {t.frontmatter.title}
+                          </Link>
+                        ))}
+                      </dd>
+                    </div>
+                  )}
+                  {appearsInBridges.length > 0 && (
+                    <div>
+                      <dt className="text-foreground/40 mb-1 text-xs font-medium">Guides</dt>
+                      <dd className="space-y-1">
+                        {appearsInBridges.map((b) => (
+                          <Link
+                            key={b.slug}
+                            href={`/${b.slug}`}
+                            className="text-foreground/70 block hover:underline"
+                          >
+                            {b.frontmatter.title}
+                          </Link>
+                        ))}
+                      </dd>
+                    </div>
+                  )}
+                </dl>
               </div>
             )}
 
             {/* Source */}
             {fm.sources && fm.sources.length > 0 && (
               <div>
-                <h2 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+                <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
                   Source
                 </h2>
                 <ul className="space-y-1">
@@ -246,7 +293,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
                     <li key={sourceId}>
                       <Link
                         href={`/sources/${sourceId}`}
-                        className="hover:underline text-foreground/70"
+                        className="text-foreground/70 hover:underline"
                       >
                         {sourceId.replace(/-/g, " ")}
                       </Link>

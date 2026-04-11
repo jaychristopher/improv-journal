@@ -1,9 +1,9 @@
 ---
 id: shared-reality-fragility
 title: Shared Reality Is Fragile
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints, shared-state]
+tags: [laws, systems-thinking, constraints, shared-reality]
 links:
   - { id: irreversibility, relation: extends }
   - { id: continuous-signaling, relation: enables }

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
-import { loadAtoms, getAtomBySlug } from "@/lib/content";
+
 import { AtomDetail } from "@/components/AtomDetail";
+import { getAtomBySlug, loadAtoms } from "@/lib/content";
 
 const VALID_TYPES = ["antipattern", "pattern", "framework"];
 

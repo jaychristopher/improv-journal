@@ -3,7 +3,7 @@ id: one-word-scene
 title: "One-Word Scene"
 type: exercise
 status: draft
-tags: [exercises, beginner, simplicity, bandwidth, north-stars]
+tags: [exercises, beginner, simplicity, bandwidth, principles]
 links:
   - { id: be-simple, relation: enables }
   - { id: overcomplication, relation: contrasts }

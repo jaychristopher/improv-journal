@@ -23,7 +23,7 @@ updated: "2026-04-04"
 A practitioner's guide organizing improv around behavioral mantras: Be Present, Be Changeable, Be Brave, Be Playful. Deeply influenced by Del Close and Keith Johnstone, translated for contemporary UCB-lineage performers.
 
 **Key concepts drawn from here:**
-- "Be Present" as a chapter-level principle — matches our North Star #2 exactly
+- "Be Present" as a chapter-level principle — matches our second principle exactly
 - "Be Changeable" — "It's not just changing the present. It's changing the past. You are adjusting who you are with every line."
 - "Be Brave" — courage to initiate, to act before ready
 - The fact/opinion distinction in accepting offers — accept facts, retain agency over opinions

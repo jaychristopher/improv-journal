@@ -1,4 +1,5 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+
 import { getEpisodesForShow } from "../content";
 
 describe("episode durations", () => {
@@ -6,9 +7,7 @@ describe("episode durations", () => {
     const seasons = await getEpisodesForShow("physics-of-connection");
     for (const season of seasons) {
       for (const ep of season.episodes) {
-        expect(ep.duration, `${ep.title} missing duration`).toMatch(
-          /^\d+:\d{2}$/
-        );
+        expect(ep.duration, `${ep.title} missing duration`).toMatch(/^\d+:\d{2}$/);
       }
     }
   });
@@ -17,9 +16,7 @@ describe("episode durations", () => {
     const seasons = await getEpisodesForShow("improv-lab");
     for (const season of seasons) {
       for (const ep of season.episodes) {
-        expect(ep.duration, `${ep.title} missing duration`).toMatch(
-          /^\d+:\d{2}$/
-        );
+        expect(ep.duration, `${ep.title} missing duration`).toMatch(/^\d+:\d{2}$/);
       }
     }
   });

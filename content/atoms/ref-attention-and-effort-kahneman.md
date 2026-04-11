@@ -20,7 +20,7 @@ updated: "2026-04-04"
 The foundational capacity model of attention. Establishes that attention is a limited, general-purpose resource pool with flexible allocation. When total demand exceeds available capacity, lower-priority channels degrade — directly supporting the claim that reception fails under cognitive load.
 
 **Key contributions to the knowledge graph:**
-- Attention as finite resource — the scientific basis for the cognitive-bandwidth axiom
+- Attention as finite resource — the scientific basis for the cognitive-bandwidth law
 - Capacity allocation is flexible but competitive — doing more of one thing means less capacity for another
 - Under overload, secondary tasks degrade before primary tasks — supports "reception degrades first" when planning consumes bandwidth
 

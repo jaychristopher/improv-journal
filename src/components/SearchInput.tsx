@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
-import { useRouter } from "next/navigation";
 import MiniSearch from "minisearch";
+import { useRouter } from "next/navigation";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const INDEX_URL = "/search-index.json";
 const MINISEARCH_OPTS = {
@@ -53,7 +53,7 @@ export function SearchInput() {
           title: s.suggestion,
           url: `/search?q=${encodeURIComponent(s.suggestion)}`,
           type: "",
-        }))
+        })),
       );
     } catch {
       setResults([]);
@@ -84,9 +84,7 @@ export function SearchInput() {
       close();
     } else if (e.key === "ArrowDown") {
       e.preventDefault();
-      setSelectedIdx((prev) =>
-        prev < results.length - 1 ? prev + 1 : prev
-      );
+      setSelectedIdx((prev) => (prev < results.length - 1 ? prev + 1 : prev));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setSelectedIdx((prev) => (prev > 0 ? prev - 1 : -1));
@@ -141,16 +139,11 @@ export function SearchInput() {
       {/* Search icon button */}
       <button
         onClick={open}
-        className="w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60 hover:bg-foreground/5 transition-colors"
+        className="text-foreground/40 hover:text-foreground/60 hover:bg-foreground/5 flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg transition-colors"
         aria-label="Search (Ctrl+K)"
         title="Search (Ctrl+K)"
       >
-        <svg
-          className="w-4 h-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
+        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -162,21 +155,16 @@ export function SearchInput() {
 
       {/* Full-page overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm">
-          <div className="max-w-2xl mx-auto px-6 pt-20">
+        <div className="bg-background/80 fixed inset-0 z-50 backdrop-blur-sm">
+          <div className="mx-auto max-w-2xl px-6 pt-20">
             {/* Close button — above the input, right-aligned */}
-            <div className="flex justify-end mb-3">
+            <div className="mb-3 flex justify-end">
               <button
                 onClick={close}
-                className="w-8 h-8 flex items-center justify-center rounded-lg text-foreground/40 hover:text-foreground/60"
+                className="text-foreground/40 hover:text-foreground/60 flex h-8 w-8 items-center justify-center rounded-lg"
                 aria-label="Close search"
               >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -195,40 +183,37 @@ export function SearchInput() {
               onChange={(e) => handleChange(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Search concepts, exercises, guides..."
-              className="w-full text-xl bg-surface border border-foreground/10 rounded-xl px-5 py-4 text-foreground/80 placeholder:text-foreground/30 focus:outline-none focus:border-foreground/30 transition-colors"
+              className="bg-surface border-foreground/10 text-foreground/80 placeholder:text-foreground/30 focus:border-foreground/30 w-full rounded-xl border px-5 py-4 text-xl transition-colors focus:outline-none"
               role="combobox"
               aria-expanded={results.length > 0}
+              aria-controls="search-suggestions"
               aria-autocomplete="list"
             />
 
             {/* Hint */}
             {query.length === 0 && !loading && (
-              <p className="text-xs text-foreground/30 mt-3 px-1">
+              <p className="text-foreground/30 mt-3 px-1 text-xs">
                 Type to search. Press Esc to close.
               </p>
             )}
 
-            {loading && (
-              <p className="text-sm text-foreground/30 mt-4 px-1">
-                Loading search...
-              </p>
-            )}
+            {loading && <p className="text-foreground/30 mt-4 px-1 text-sm">Loading search...</p>}
 
             {/* Suggestions */}
             {results.length > 0 && (
-              <div className="mt-4 space-y-1">
+              <div id="search-suggestions" role="listbox" className="mt-4 space-y-1">
                 {results.map((r, i) => (
                   <button
                     key={r.title}
                     onClick={() => navigate(r.url)}
-                    className={`w-full text-left px-5 py-3 rounded-lg transition-colors flex items-center gap-3 ${
+                    className={`flex w-full items-center gap-3 rounded-lg px-5 py-3 text-left transition-colors ${
                       i === selectedIdx
                         ? "bg-surface text-foreground/90"
                         : "text-foreground/60 hover:bg-surface hover:text-foreground/80"
                     }`}
                   >
                     <svg
-                      className="w-4 h-4 shrink-0 text-foreground/20"
+                      className="text-foreground/20 h-4 w-4 shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -248,7 +233,7 @@ export function SearchInput() {
 
             {/* No results */}
             {query.length >= 2 && !loading && results.length === 0 && (
-              <p className="text-sm text-foreground/30 mt-4 px-1">
+              <p className="text-foreground/30 mt-4 px-1 text-sm">
                 No results for &ldquo;{query}&rdquo;
               </p>
             )}

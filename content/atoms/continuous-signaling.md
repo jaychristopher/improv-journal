@@ -1,9 +1,9 @@
 ---
 id: continuous-signaling
 title: Continuous Signaling
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints, communication]
+tags: [laws, systems-thinking, constraints, communication]
 links:
   - { id: shared-reality-fragility, relation: extends }
   - { id: irreversibility, relation: requires }
@@ -34,6 +34,6 @@ Since you can't stop the scene to clarify (because time advances irreversibly), 
 
 But continuous signaling is not only a minefield — it is the entire engine of play. Skilled improvisers read and send signals with such fluency that the gap between intention and reception narrows toward zero. The craft is not to stop signaling accidentally (you can't) but to make your signals so clear and committed that they require no decoding. This is what Be Honest and Be Simple serve at the behavioral level.
 
-This axiom means you cannot opt out of participation. You can only choose between conscious signaling and unconscious signaling. The North Stars are a framework for making your signals intentional.
+This law means you cannot opt out of participation. You can only choose between conscious signaling and unconscious signaling. The principles are a framework for making your signals intentional.
 
 **Specific sources:** Watzlawick, Beavin, & Jackson, *Pragmatics of Human Communication* (1967), Ch. 2, S2.24, Axiom 1: "One cannot not communicate. Activity or inactivity, words or silence all have message value." Ekman & Friesen, "Nonverbal Leakage and Clues to Deception" (*Psychiatry*, 1969) — even when suppressing emotions, the face "leaks." Johnstone, *Impro*, Ch. 2 ("Status") — status transactions happen continuously and involuntarily. **Counter-position:** Watzlawick's axiom has been formally challenged: Motley (1990) argues that behavior without communicative intent is not truly "communication." However, in the improv context this objection may not hold — because partners and audience WILL interpret your stillness regardless of intent, making the functional effect the same.

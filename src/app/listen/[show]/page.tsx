@@ -1,18 +1,15 @@
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadShows, getShowBySlug, getEpisodesForShow } from "@/lib/content";
+import { notFound } from "next/navigation";
+
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
 
 export async function generateStaticParams() {
   const shows = await loadShows();
   return shows.map((s) => ({ show: s.frontmatter.id }));
 }
 
-export default async function ShowPage({
-  params,
-}: {
-  params: Promise<{ show: string }>;
-}) {
+export default async function ShowPage({ params }: { params: Promise<{ show: string }> }) {
   const { show: showSlug } = await params;
   const show = await getShowBySlug(showSlug);
   if (!show) notFound();
@@ -25,7 +22,7 @@ export default async function ShowPage({
   const startHere = seasons[0]?.episodes[0] ?? null;
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
@@ -35,17 +32,12 @@ export default async function ShowPage({
       />
 
       <header className="mb-10">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          podcast
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">podcast</span>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
         <p className="text-foreground/60 mt-2">{fm.description}</p>
-        <p className="text-sm text-foreground/40 mt-2">
+        <p className="text-foreground/40 mt-2 text-sm">
           {totalEpisodes} episodes &middot;{" "}
-          <Link
-            href={`/listen/${fm.id}/feed.xml`}
-            className="hover:text-foreground/60"
-          >
+          <Link href={`/listen/${fm.id}/feed.xml`} className="hover:text-foreground/60">
             RSS Feed
           </Link>
         </p>
@@ -54,22 +46,17 @@ export default async function ShowPage({
       {/* Start Here */}
       {startHere && (
         <section className="mb-12">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+          <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
             Start here
           </h2>
-          <div className="border border-foreground/10 rounded-lg bg-surface p-5">
-            <Link
-              href={startHere.href}
-              className="font-medium hover:underline"
-            >
+          <div className="border-foreground/10 bg-surface rounded-lg border p-5">
+            <Link href={startHere.href} className="font-medium hover:underline">
               {startHere.title}
             </Link>
             {startHere.description && (
-              <p className="text-sm text-foreground/50 mt-1">
-                {startHere.description}
-              </p>
+              <p className="text-foreground/50 mt-1 text-sm">{startHere.description}</p>
             )}
-            <audio controls preload="none" className="w-full mt-3">
+            <audio controls preload="none" className="mt-3 w-full">
               <source src={startHere.audioUrl} type="audio/mpeg" />
             </audio>
           </div>
@@ -79,7 +66,7 @@ export default async function ShowPage({
       {/* Show intro content */}
       {show.html && (
         <article
-          className="prose prose-neutral dark:prose-invert prose-sm max-w-none mb-12"
+          className="prose prose-neutral dark:prose-invert prose-sm mb-12 max-w-none"
           dangerouslySetInnerHTML={{ __html: show.html }}
         />
       )}
@@ -87,45 +74,36 @@ export default async function ShowPage({
       {/* Seasons */}
       {seasons.map((season) => (
         <section key={season.label} className="mb-12">
-          <h2 className="text-lg font-semibold mb-4">
+          <h2 className="mb-4 text-lg font-semibold">
             {season.label}
-            <span className="text-foreground/40 font-normal ml-2">
-              ({season.episodes.length})
-            </span>
+            <span className="text-foreground/40 ml-2 font-normal">({season.episodes.length})</span>
           </h2>
           <div className="space-y-3">
             {season.episodes.map((ep) => (
               <div
                 key={ep.audioUrl}
-                className="border border-foreground/10 rounded-lg bg-surface p-4"
+                className="border-foreground/10 bg-surface rounded-lg border p-4"
               >
-                <div className="flex justify-between items-start">
+                <div className="flex items-start justify-between">
                   <div>
-                    <Link
-                      href={ep.href}
-                      className="font-medium text-sm hover:underline"
-                    >
+                    <Link href={ep.href} className="text-sm font-medium hover:underline">
                       {ep.title}
                     </Link>
                     {ep.duration && (
-                      <span className="text-xs text-foreground/30 ml-2">
-                        {ep.duration}
-                      </span>
+                      <span className="text-foreground/30 ml-2 text-xs">{ep.duration}</span>
                     )}
                   </div>
                   <Link
                     href={ep.href}
-                    className="text-xs text-foreground/40 hover:text-foreground/60 shrink-0 ml-3"
+                    className="text-foreground/40 hover:text-foreground/60 ml-3 shrink-0 text-xs"
                   >
                     Transcript &rarr;
                   </Link>
                 </div>
                 {ep.description && (
-                  <p className="text-xs text-foreground/40 mt-1 line-clamp-1">
-                    {ep.description}
-                  </p>
+                  <p className="text-foreground/40 mt-1 line-clamp-1 text-xs">{ep.description}</p>
                 )}
-                <audio controls preload="none" className="w-full mt-2">
+                <audio controls preload="none" className="mt-2 w-full">
                   <source src={ep.audioUrl} type="audio/mpeg" />
                 </audio>
               </div>

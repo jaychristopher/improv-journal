@@ -3,7 +3,7 @@ id: be-present
 title: "Be Present"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, attention, cognition]
+tags: [principles, fundamentals, attention, cognition]
 links:
   - { id: active-listening, relation: extends }
   - { id: presence, relation: extends }
@@ -31,9 +31,9 @@ updated: "2026-03-29"
 
 **Alias:** Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
 
-Presence is the precondition for every other North Star. You cannot accept an offer you did not hear, simplify what you did not understand, or be honest about a moment you were not in. This is the foundation — the principle that makes all the others possible.
+Presence is the precondition for every other principle. You cannot accept an offer you did not hear, simplify what you did not understand, or be honest about a moment you were not in. This is the foundation — the principle that makes all the others possible.
 
-The hardest North Star to execute. Our brains are prediction engines — we want to secure safety by knowing what happens next. But the architecture of presence demands: **external reality takes priority over internal computation**.
+The hardest principle to execute. Our brains are prediction engines — we want to secure safety by knowing what happens next. But the architecture of presence demands: **external reality takes priority over internal computation**.
 
 Internal computation is standing there thinking "OK, he said he likes pizza, so I should make a joke about Italy or maybe Chicago." While you scroll through your mental Rolodex, time advances irreversibly. Your partner may have added "this pizza tastes like poison" — but you missed it. When you deliver your Chicago joke, you've created **latency**, and latency kills flow.
 

@@ -3,7 +3,7 @@ id: be-changeable
 title: "Be Changeable"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, adaptability, mutability]
+tags: [principles, fundamentals, adaptability, mutability]
 links:
   - { id: let-yourself-be-changed, relation: extends }
   - { id: steering, relation: contrasts }
@@ -32,7 +32,7 @@ updated: "2026-04-04"
 
 **Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
 
-You can accept an offer without being changed by it. You can value a surprise without letting it touch you. You can follow every other North Star and still remain fundamentally rigid — absorbing inputs politely while your internal state stays fixed. Be Changeable closes that loophole.
+You can accept an offer without being changed by it. You can value a surprise without letting it touch you. You can follow every other principle and still remain fundamentally rigid — absorbing inputs politely while your internal state stays fixed. Be Changeable closes that loophole.
 
 The principle: when your partner makes an offer, it doesn't just enter your awareness. It **rewrites you**. Your posture shifts. Your emotional state moves. Your character's history retroactively adjusts. The audience can see that the offer *landed* — that performer A's words actually changed performer B.
 
@@ -44,7 +44,7 @@ Will Hines takes it further into the narrative dimension: you "Yes, And" the pre
 
 TJ Jagodowski and Dave Pasquesi embody this in practice. Their philosophy — "Look to your partner. Listen to your partner. Respond to your partner" — suggests that changeability is not a separate skill but the inevitable result of deep listening. If you are genuinely hearing your partner, you cannot remain unchanged. Resistance is a symptom of not-listening, not a separate problem to solve.
 
-The distinction from the earlier North Stars:
+The distinction from the earlier principles:
 
 - **Be Positive** says: accept the data. *My partner says I'm afraid of heights. I accept it.*
 - **Be Thankful** says: integrate the data. *Good — that's something I can play.*
@@ -54,7 +54,7 @@ Be Thankful integrates data into the *scene*. Be Changeable integrates data into
 
 A potential confusion: if you should commit fully, how can you also be changeable? Commitment *creates the conditions* for visible change. A character with no commitments can't be changed — there's nothing to change. You commit fully to this moment's truth; when your partner's offer shifts the ground, you commit fully to the new truth. The audience sees the arc *because* the starting position was clear. Commitment without changeability is rigidity. Changeability without commitment is shapelessness.
 
-Changeability is the meaning-is-relational axiom in action. If meaning lives between minds, then your response *completes* your partner's offer. A response that shows no change leaves the offer's meaning unfinished.
+Changeability is the meaning-is-relational law in action. If meaning lives between minds, then your response *completes* your partner's offer. A response that shows no change leaves the offer's meaning unfinished.
 
 Without changeability, scenes become "polite improv" — everyone agrees, nobody is moved. The offers are accepted but they don't land. The shared reality exists but nothing is at stake because nothing is changing anyone.
 

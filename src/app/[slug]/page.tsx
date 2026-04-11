@@ -1,19 +1,19 @@
-import { notFound } from "next/navigation";
+import fs from "fs";
 import Link from "next/link";
-import {
-  loadBridges,
-  getBridgeBySlug,
-  getAtomBySlug,
-  getAtomUrl,
-  getPathBySlug,
-  getAudioUrl,
-} from "@/lib/content";
+import { notFound } from "next/navigation";
+import path from "path";
+
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
-import fs from "fs";
-import path from "path";
-import type { AtomType } from "@/lib/schema";
+import {
+  getAtomBySlug,
+  getAtomUrl,
+  getAudioUrl,
+  getBridgeBySlug,
+  getPathBySlug,
+  loadBridges,
+} from "@/lib/content";
 
 export async function generateStaticParams() {
   const bridges = await loadBridges();
@@ -118,31 +118,12 @@ const BRIDGE_RELATIONS: Record<
   },
 };
 
-export default async function BridgePage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function BridgePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const bridge = await getBridgeBySlug(slug);
   if (!bridge) notFound();
 
   const fm = bridge.frontmatter;
-
-  // Resolve entry atoms with proper URLs
-  const entryAtoms = await Promise.all(
-    (fm.entry_atoms ?? []).map(async (id) => {
-      const atom = await getAtomBySlug(id);
-      return atom
-        ? {
-            id,
-            title: atom.frontmatter.title,
-            type: atom.frontmatter.type,
-            url: getAtomUrl({ id, type: atom.frontmatter.type }),
-          }
-        : { id, title: id, type: "unknown" as AtomType, url: `/how-it-works/${id}` };
-    })
-  );
 
   // Resolve exercises with proper URLs
   const relations = BRIDGE_RELATIONS[slug] ?? { exercises: [], threads: [], otherGuides: [] };
@@ -150,9 +131,13 @@ export default async function BridgePage({
     relations.exercises.map(async (id) => {
       const atom = await getAtomBySlug(id);
       return atom
-        ? { id, title: atom.frontmatter.title, url: getAtomUrl({ id, type: atom.frontmatter.type }) }
+        ? {
+            id,
+            title: atom.frontmatter.title,
+            url: getAtomUrl({ id, type: atom.frontmatter.type }),
+          }
         : { id, title: id, url: `/practice/exercises/${id}` };
-    })
+    }),
   );
 
   const entryPath = fm.entry_path ? await getPathBySlug(fm.entry_path) : null;
@@ -165,11 +150,13 @@ export default async function BridgePage({
       const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
       const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
       audioDuration = durations[audioUrl]?.formatted;
-    } catch { /* no duration cache */ }
+    } catch {
+      /* no duration cache */
+    }
   }
 
   return (
-    <main className="max-w-2xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-2xl px-6 py-16">
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: fm.title }]} />
 
       <header className="mb-8">
@@ -192,15 +179,15 @@ export default async function BridgePage({
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"
-        dangerouslySetInnerHTML={{ __html: bridge.html }}
+        dangerouslySetInnerHTML={{ __html: bridge.html.replace(/^<h1[^>]*>.*?<\/h1>\s*/i, "") }}
       />
 
       {/* ── Post-article: focused CTAs, not a wall ────────────── */}
-      <div className="mt-16 pt-8 border-t border-foreground/10 space-y-6">
+      <div className="border-foreground/10 mt-16 space-y-6 border-t pt-8">
         {/* Try this — exercises are the most actionable takeaway */}
         {exercises.length > 0 && (
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+            <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
               Try this
             </h2>
             <div className="space-y-2">
@@ -208,7 +195,7 @@ export default async function BridgePage({
                 <Link
                   key={ex.id}
                   href={ex.url}
-                  className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
+                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
                 >
                   <span className="text-sm font-medium">{ex.title}</span>
                 </Link>
@@ -219,19 +206,17 @@ export default async function BridgePage({
 
         {/* Keep going — the path + one other guide */}
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+          <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
             Keep going
           </h2>
           <div className="space-y-2">
             {entryPath && (
               <Link
                 href={`/paths/${entryPath.frontmatter.id}`}
-                className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
+                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
               >
-                <span className="text-sm font-medium">
-                  {entryPath.frontmatter.title}
-                </span>
-                <span className="text-xs text-foreground/40 block mt-0.5">
+                <span className="text-sm font-medium">{entryPath.frontmatter.title}</span>
+                <span className="text-foreground/40 mt-0.5 block text-xs">
                   The full learning path
                 </span>
               </Link>
@@ -240,7 +225,7 @@ export default async function BridgePage({
               <Link
                 key={g.slug}
                 href={`/${g.slug}`}
-                className="block border border-foreground/10 rounded-lg bg-surface p-3 hover:border-foreground/30 transition-colors"
+                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
               >
                 <span className="text-sm font-medium">{g.label}</span>
               </Link>

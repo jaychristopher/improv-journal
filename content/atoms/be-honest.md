@@ -3,7 +3,7 @@ id: be-honest
 title: "Be Honest"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, authenticity, signal-clarity]
+tags: [principles, fundamentals, authenticity, signal-clarity]
 links:
   - { id: emotional-truth, relation: extends }
   - { id: commitment, relation: extends }

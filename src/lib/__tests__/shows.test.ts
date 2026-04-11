@@ -1,5 +1,6 @@
-import { describe, it, expect } from "vitest";
-import { loadShows, getShowBySlug, getEpisodesForShow } from "../content";
+import { describe, expect, it } from "vitest";
+
+import { getEpisodesForShow, loadShows } from "../content";
 
 describe("shows", () => {
   it("loads 3 shows", async () => {

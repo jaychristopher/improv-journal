@@ -3,7 +3,7 @@ id: be-positive
 title: "Be Positive"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, data-acceptance]
+tags: [principles, fundamentals, data-acceptance]
 links:
   - { id: yes-and, relation: extends }
   - { id: accepting-the-offer, relation: extends }

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { loadShows, getEpisodesForShow, getAudioUrl } from "@/lib/content";
+
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { getEpisodesForShow, loadShows } from "@/lib/content";
 
 export default async function ListenPage() {
   const shows = await loadShows();
@@ -9,10 +10,7 @@ export default async function ListenPage() {
   const showsWithCounts = await Promise.all(
     shows.map(async (s) => {
       const seasons = await getEpisodesForShow(s.frontmatter.id);
-      const totalEpisodes = seasons.reduce(
-        (sum, season) => sum + season.episodes.length,
-        0
-      );
+      const totalEpisodes = seasons.reduce((sum, season) => sum + season.episodes.length, 0);
       const firstEpisode = seasons[0]?.episodes[0] ?? null;
       return {
         id: s.frontmatter.id,
@@ -21,56 +19,42 @@ export default async function ListenPage() {
         episodeCount: totalEpisodes,
         firstEpisode,
       };
-    })
+    }),
   );
 
-  const totalEpisodes = showsWithCounts.reduce(
-    (sum, s) => sum + s.episodeCount,
-    0
-  );
+  const totalEpisodes = showsWithCounts.reduce((sum, s) => sum + s.episodeCount, 0);
 
   // Feature the flagship show's first episode
-  const flagship = showsWithCounts.find(
-    (s) => s.id === "physics-of-connection"
-  );
+  const flagship = showsWithCounts.find((s) => s.id === "physics-of-connection");
   const featured = flagship?.firstEpisode ?? null;
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
-      <Breadcrumb
-        crumbs={[{ label: "Home", href: "/" }, { label: "Listen" }]}
-      />
+    <main className="mx-auto max-w-3xl px-6 py-16">
+      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Listen" }]} />
 
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          podcast
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">Listen</h1>
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">podcast</span>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Listen</h1>
         <p className="text-foreground/60 mt-2">
-          {totalEpisodes} conversations between Chris and Sarah — exploring the
-          physics of human connection through the lens of improvisation.
+          {totalEpisodes} conversations between Chris and Sarah — exploring the physics of human
+          connection through the lens of improvisation.
         </p>
       </header>
 
       {/* Featured episode */}
       {featured && (
         <section className="mb-12">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+          <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
             Featured
           </h2>
-          <div className="border border-foreground/10 rounded-lg bg-surface p-5">
-            <Link
-              href={featured.href}
-              className="font-medium hover:underline"
-            >
+          <div className="border-foreground/10 bg-surface rounded-lg border p-5">
+            <Link href={featured.href} className="font-medium hover:underline">
               {featured.title}
             </Link>
             {featured.description && (
-              <p className="text-sm text-foreground/50 mt-1">
-                {featured.description}
-              </p>
+              <p className="text-foreground/50 mt-1 text-sm">{featured.description}</p>
             )}
-            <audio controls preload="none" className="w-full mt-3">
+            <audio controls preload="none" className="mt-3 w-full">
               <source src={featured.audioUrl} type="audio/mpeg" />
             </audio>
           </div>
@@ -79,23 +63,19 @@ export default async function ListenPage() {
 
       {/* Show cards */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">Three Shows</h2>
+        <h2 className="mb-4 text-lg font-semibold">Three Shows</h2>
         <div className="space-y-4">
           {showsWithCounts.map((s) => (
             <Link
               key={s.id}
               href={`/listen/${s.id}`}
-              className="block border border-foreground/10 rounded-lg bg-surface p-5 hover:border-foreground/30 transition-colors"
+              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
             >
-              <div className="flex justify-between items-baseline">
+              <div className="flex items-baseline justify-between">
                 <h3 className="font-semibold">{s.title}</h3>
-                <span className="text-sm text-foreground/40">
-                  {s.episodeCount} episodes
-                </span>
+                <span className="text-foreground/40 text-sm">{s.episodeCount} episodes</span>
               </div>
-              <p className="text-sm text-foreground/50 mt-1">
-                {s.description}
-              </p>
+              <p className="text-foreground/50 mt-1 text-sm">{s.description}</p>
             </Link>
           ))}
         </div>

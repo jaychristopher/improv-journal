@@ -1,9 +1,9 @@
 ---
 id: cognitive-bandwidth
 title: Cognitive Bandwidth
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints, cognition]
+tags: [laws, systems-thinking, constraints, cognition]
 links:
   - { id: bandwidth, relation: extends }
   - { id: irreversibility, relation: extends }

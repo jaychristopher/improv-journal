@@ -4,34 +4,72 @@
  */
 
 import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
-import remarkGfm from "remark-gfm";
 import { glob } from "glob";
+import matter from "gray-matter";
+import path from "path";
+import { remark } from "remark";
+import remarkGfm from "remark-gfm";
+import html from "remark-html";
+
 import type {
-  SourceFrontmatter,
   AtomFrontmatter,
   AtomType,
-  ThreadFrontmatter,
-  PathFrontmatter,
   BridgeFrontmatter,
-  ShowFrontmatter,
-  KnowledgeGraph,
-  GraphNode,
   GraphEdge,
+  GraphNode,
+  KnowledgeGraph,
+  PathFrontmatter,
+  ShowFrontmatter,
+  SourceFrontmatter,
+  ThreadFrontmatter,
 } from "./schema";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
+
+// ─── Source auto-linking ────────────────────────────────────────────────────
+// Maps italic book/source titles in rendered HTML to their /library/ reference pages.
+// Matches <em>Title</em> that is NOT already inside an <a> tag.
+
+const SOURCE_TITLE_MAP: [RegExp, string][] = [
+  [/Truth in Comedy/g, "/library/ref-truth-in-comedy"],
+  [/Bossypants/g, "/library/ref-fey-bossypants"],
+  [/Impro for Storytellers/g, "/library/ref-impro-storytellers-johnstone"],
+  [/Improvisation for the Theater/g, "/library/ref-spolin-improvisation-for-theater"],
+  [/Improv Wisdom/g, "/library/ref-madson-improv-wisdom"],
+  [/Group Genius/g, "/library/ref-sawyer-group-genius"],
+  [/Improvisation at the Speed of Life/g, "/library/ref-tj-dave-speed-of-life"],
+  [/Speed of Life/g, "/library/ref-tj-dave-speed-of-life"],
+  [/Improv Nonsense/g, "/library/ref-hines-substack"],
+  [/UCB Comedy Improvisation Manual/g, "/library/ref-ucb-manual"],
+  [/Attention and Effort/g, "/library/ref-attention-and-effort-kahneman"],
+  [/The Viewpoints Book/g, "/library/ref-viewpoints-bogart-landau"],
+  [/Sanford Meisner on Acting/g, "/library/ref-meisner-on-acting"],
+  [/Improvise/g, "/library/ref-napier-improvise"],
+  [/Impro(?!v)/g, "/library/ref-impro-johnstone"],
+];
+
+function linkSources(htmlStr: string): string {
+  let result = htmlStr;
+  for (const [pattern, url] of SOURCE_TITLE_MAP) {
+    // Replace <em>Title</em> with linked version, but skip if already inside an <a> tag.
+    // We use a two-pass approach: first find all <em>Title</em>, then check context.
+    const emPattern = new RegExp(`<em>(${pattern.source})</em>`, "g");
+    result = result.replace(emPattern, (match, title, offset) => {
+      const before = result.slice(Math.max(0, offset - 100), offset);
+      if (before.includes("<a ") && !before.includes("</a>")) return match;
+      return `<a href="${url}"><em>${title}</em></a>`;
+    });
+  }
+  return result;
+}
 
 // ─── File loading ────────────────────────────────────────────────────────────
 
 interface ContentFile<T> {
   frontmatter: T;
-  content: string;      // raw markdown
-  html: string;         // rendered HTML
-  slug: string;         // filename without extension
+  content: string; // raw markdown
+  html: string; // rendered HTML
+  slug: string; // filename without extension
 }
 
 async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
@@ -49,7 +87,7 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
     results.push({
       frontmatter: data as T,
       content,
-      html: rendered.toString(),
+      html: linkSources(rendered.toString()),
       slug: path.basename(file, ".md"),
     });
   }
@@ -140,12 +178,17 @@ function getDuration(audioUrl: string): string | undefined {
 }
 
 /** Resolve all episodes for a show season filter */
-export async function getEpisodesForShow(showId: string): Promise<{ label: string; episodes: Episode[] }[]> {
+export async function getEpisodesForShow(
+  showId: string,
+): Promise<{ label: string; episodes: Episode[] }[]> {
   const show = await getShowBySlug(showId);
   if (!show) return [];
 
   const [bridges, atoms, threads, paths] = await Promise.all([
-    loadBridges(), loadAtoms(), loadThreads(), loadPaths(),
+    loadBridges(),
+    loadAtoms(),
+    loadThreads(),
+    loadPaths(),
   ]);
 
   const seasons: { label: string; episodes: Episode[] }[] = [];
@@ -158,7 +201,13 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
       for (const b of bridges) {
         const audio = getAudioUrl("bridges", b.slug);
         if (audio) {
-          eps.push({ title: b.frontmatter.title, href: `/${b.slug}`, audioUrl: audio, description: b.frontmatter.description, duration: getDuration(audio) });
+          eps.push({
+            title: b.frontmatter.title,
+            href: `/${b.slug}`,
+            audioUrl: audio,
+            description: b.frontmatter.description,
+            duration: getDuration(audio),
+          });
         }
       }
     } else if (filter.content_type === "atom" && filter.atom_types) {
@@ -166,7 +215,12 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
         if (filter.atom_types.includes(a.frontmatter.type)) {
           const audio = getAudioUrl("atoms", a.frontmatter.id);
           if (audio) {
-            eps.push({ title: a.frontmatter.title, href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }), audioUrl: audio, duration: getDuration(audio) });
+            eps.push({
+              title: a.frontmatter.title,
+              href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+              audioUrl: audio,
+              duration: getDuration(audio),
+            });
           }
         }
       }
@@ -174,14 +228,24 @@ export async function getEpisodesForShow(showId: string): Promise<{ label: strin
       for (const t of threads) {
         const audio = getAudioUrl("threads", t.frontmatter.id);
         if (audio) {
-          eps.push({ title: t.frontmatter.title, href: `/threads/${t.frontmatter.id}`, audioUrl: audio, duration: getDuration(audio) });
+          eps.push({
+            title: t.frontmatter.title,
+            href: `/threads/${t.frontmatter.id}`,
+            audioUrl: audio,
+            duration: getDuration(audio),
+          });
         }
       }
     } else if (filter.content_type === "path") {
       for (const p of paths) {
         const audio = getAudioUrl("paths", p.frontmatter.id);
         if (audio) {
-          eps.push({ title: p.frontmatter.title, href: `/paths/${p.frontmatter.id}`, audioUrl: audio, duration: getDuration(audio) });
+          eps.push({
+            title: p.frontmatter.title,
+            href: `/paths/${p.frontmatter.id}`,
+            audioUrl: audio,
+            duration: getDuration(audio),
+          });
         }
       }
     }
@@ -211,7 +275,7 @@ export async function getAtomsForTradition(tradition: string) {
   return atoms.filter(
     (a) =>
       a.frontmatter.type !== "reference" &&
-      a.frontmatter.links?.some((link) => refIds.includes(link.id))
+      a.frontmatter.links?.some((link) => refIds.includes(link.id)),
   );
 }
 
@@ -220,9 +284,7 @@ export function getTraditionNames(): string[] {
 }
 
 /** Extract counter-position text from an atom's raw markdown */
-export function extractCounterPositions(
-  content: string
-): { text: string; tradition?: string }[] {
+export function extractCounterPositions(content: string): { text: string; tradition?: string }[] {
   const results: { text: string; tradition?: string }[] = [];
   // Match **Counter-position:** or **Counter-position (Tradition):** or **Counter-argument:**
   const regex =
@@ -231,7 +293,10 @@ export function extractCounterPositions(
   while ((match = regex.exec(content)) !== null) {
     results.push({
       tradition: match[1]?.trim(),
-      text: match[2].trim().replace(/\*\*/g, "").replace(/\*([^*]+)\*/g, "$1"),
+      text: match[2]
+        .trim()
+        .replace(/\*\*/g, "")
+        .replace(/\*([^*]+)\*/g, "$1"),
     });
   }
   return results;
@@ -242,7 +307,7 @@ export function extractCounterPositions(
 /** Resolve an atom to its canonical URL based on type */
 export function getAtomUrl(atom: { id: string; type: AtomType }): string {
   switch (atom.type) {
-    case "axiom":
+    case "law":
     case "insight":
       return `/how-it-works/${atom.id}`;
     case "principle":
@@ -314,15 +379,9 @@ export async function getBridgesForAtom(atomId: string) {
  */
 export function getAudioUrl(
   type: "bridges" | "paths" | "threads" | "atoms",
-  slug: string
+  slug: string,
 ): string | null {
-  const audioPath = path.join(
-    process.cwd(),
-    "public",
-    "audio",
-    type,
-    `${slug}.mp3`
-  );
+  const audioPath = path.join(process.cwd(), "public", "audio", type, `${slug}.mp3`);
   return fs.existsSync(audioPath) ? `/audio/${type}/${slug}.mp3` : null;
 }
 

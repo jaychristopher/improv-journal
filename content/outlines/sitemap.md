@@ -17,11 +17,11 @@
 │   ├── /guides/how-to-be-funny
 │   └── /guides/stage-fright
 ├── /concepts/                       ← NEW: Hub by atom type
-│   ├── /concepts/principles         ← 8 North Stars
+│   ├── /concepts/principles         ← 8 principles
 │   ├── /concepts/techniques         ← 26 techniques
 │   ├── /concepts/exercises          ← 16 exercises
 │   ├── /concepts/formats            ← 8 formats
-│   ├── /concepts/axioms             ← 6 axioms
+│   ├── /concepts/laws               ← 6 laws
 │   ├── /concepts/definitions        ← 26 definitions
 │   ├── /concepts/antipatterns       ← 9 antipatterns
 │   └── /concepts/patterns           ← 6 patterns
@@ -82,7 +82,7 @@ Two entry lanes:
 [SECTION 2: "Explore by concept"]
 Visual grid of 8 concept types with counts:
   Principles (8) · Techniques (26) · Exercises (16) · Formats (8)
-  Axioms (6) · Definitions (26) · Antipatterns (9) · Patterns (6)
+  Laws (6) · Definitions (26) · Antipatterns (9) · Patterns (6)
 Each links to → /concepts/{type}
 
 [SECTION 3: "The learning paths"]
@@ -308,7 +308,7 @@ ability to explain WHY.
                        organic-opening-exercise
 
 [SECTION 4: "The WHY layer"]
-  Axioms: irreversibility, cognitive-bandwidth, shared-reality-fragility,
+  Laws: irreversibility, cognitive-bandwidth, shared-reality-fragility,
            continuous-signaling, meaning-is-relational, interdependence
   "These give you the explanatory depth to answer 'why does yes-and matter?'"
 
@@ -373,7 +373,7 @@ Links to atoms grouped by which tradition they're most associated with:
                        emotional-truth
 
 [SECTION 2: "By concept type"]
-  → /concepts/axioms (the physics)
+  → /concepts/laws (the physics)
   → /concepts/principles (the behavioral guidelines)
   → /concepts/techniques (the specific moves)
   → /concepts/exercises (the training vehicles)
@@ -396,8 +396,7 @@ Links to atoms grouped by which tradition they're most associated with:
 
 ```
 H1: The 8 Principles of Improv
-Subtitle: The behavioral guidelines — the "North Stars" that prevent shared
-reality from collapsing.
+Subtitle: The behavioral guidelines that prevent shared reality from collapsing.
 
 [INTRO]
 Brief paragraph explaining what principles are in the graph: "Not moral rules.
@@ -422,7 +421,7 @@ For each of the 8 principle atoms:
 - `/concepts/techniques` (26 atoms) — "The specific moves"
 - `/concepts/exercises` (16 atoms) — "The training vehicles"
 - `/concepts/formats` (8 atoms) — "The performance structures"
-- `/concepts/axioms` (6 atoms) — "The physics underneath"
+- `/concepts/laws` (6 atoms) — "The physics underneath"
 - `/concepts/definitions` (26 atoms) — "The vocabulary"
 - `/concepts/antipatterns` (9 atoms) — "The failure modes"
 - `/concepts/patterns` (6 atoms) — "The emergent dynamics"

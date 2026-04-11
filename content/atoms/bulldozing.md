@@ -3,7 +3,7 @@ id: bulldozing
 title: Bulldozing
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, selfishness, ensemble]
+tags: [antipatterns, principles, selfishness, ensemble]
 links:
   - { id: be-supportive, relation: contrasts }
   - { id: active-listening, relation: contrasts }

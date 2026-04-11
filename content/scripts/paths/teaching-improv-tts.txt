@@ -8,7 +8,7 @@
 
 [curious] What's the first thing it covers?
 
-[teaching] The system underneath. Six axioms that explain why improv works at a fundamental level. Irreversibility, bandwidth limits, fragility, continuous signaling, relational meaning, interdependence. You're not going to teach these directly to your level one students, but they give you an explanatory foundation.
+[teaching] The system underneath. Six laws that explain why improv works at a fundamental level. Irreversibility, bandwidth limits, fragility, continuous signaling, relational meaning, interdependence. You're not going to teach these directly to your level one students, but they give you an explanatory foundation.
 
 [leaning in] So when a student asks "why does yes-and matter" I have a real answer?
 

@@ -3,7 +3,7 @@ id: the-system-underneath
 title: "The System Underneath: Why Improv Works"
 status: seed
 atoms: [reality-construction, irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, meaning-is-relational, interdependence]
-tags: [systems-thinking, axioms, fundamentals, meta]
+tags: [systems-thinking, laws, fundamentals, meta]
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

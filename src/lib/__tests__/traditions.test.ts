@@ -1,11 +1,10 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+
 import { getAtomsForTradition, getTraditionNames } from "../content";
 
 describe("traditions", () => {
   it("returns 5 tradition names", () => {
-    expect(getTraditionNames()).toEqual([
-      "johnstone", "spolin", "close", "ucb", "annoyance",
-    ]);
+    expect(getTraditionNames()).toEqual(["johnstone", "spolin", "close", "ucb", "annoyance"]);
   });
 
   it("johnstone tradition has atoms linking to ref-impro-johnstone", async () => {
@@ -14,7 +13,7 @@ describe("traditions", () => {
     // Every returned atom should link to a johnstone ref
     for (const a of atoms) {
       const linksToJohnstone = a.frontmatter.links?.some(
-        (l) => l.id === "ref-impro-johnstone" || l.id === "ref-impro-storytellers-johnstone"
+        (l) => l.id === "ref-impro-johnstone" || l.id === "ref-impro-storytellers-johnstone",
       );
       expect(linksToJohnstone, `${a.frontmatter.id} should link to Johnstone`).toBe(true);
     }

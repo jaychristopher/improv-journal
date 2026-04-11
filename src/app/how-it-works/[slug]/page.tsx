@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
-import { loadAtoms, getAtomBySlug } from "@/lib/content";
-import { AtomDetail } from "@/components/AtomDetail";
 
-// Axiom + insight atoms live at /how-it-works/{slug}
-const VALID_TYPES = ["axiom", "insight"];
+import { AtomDetail } from "@/components/AtomDetail";
+import { getAtomBySlug, loadAtoms } from "@/lib/content";
+
+// Law + insight atoms live at /how-it-works/{slug}
+const VALID_TYPES = ["law", "insight"];
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -12,11 +13,7 @@ export async function generateStaticParams() {
     .map((a) => ({ slug: a.frontmatter.id }));
 }
 
-export default async function SystemAtomPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function SystemAtomPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const atom = await getAtomBySlug(slug);
   if (!atom || !VALID_TYPES.includes(atom.frontmatter.type)) notFound();

@@ -3,7 +3,7 @@ id: negation
 title: Negation
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, data-rejection]
+tags: [antipatterns, principles, data-rejection]
 links:
   - { id: be-positive, relation: contrasts }
   - { id: accepting-the-offer, relation: contrasts }

@@ -3,7 +3,7 @@ id: environment
 title: Environment
 type: definition
 status: draft
-tags: [definitions, physicality, shared-state, scene-work]
+tags: [definitions, physicality, shared-reality, scene-work]
 links:
   - { id: space-work, relation: enables }
   - { id: shared-reality-fragility, relation: illustrates }

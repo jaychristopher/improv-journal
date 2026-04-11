@@ -12,7 +12,7 @@
 
 [conversational] Atoms. What are atoms in this context?
 
-[teaching] The smallest meaningful unit of improv knowledge. There are over a hundred of them, across twelve types. Axioms, principles, techniques, exercises, antipatterns, pedagogy. Each one has source citations and counter-positions.
+[teaching] The smallest meaningful unit of improv knowledge. There are over a hundred of them, across twelve types. Laws, principles, techniques, exercises, antipatterns, pedagogy. Each one has source citations and counter-positions.
 
 [curious] So if I wanted to understand what different schools think about "game of the scene," I could look that up?
 
@@ -28,7 +28,7 @@
 
 [conversational] What's the second?
 
-[warm] The System Underneath. Six axioms drawn from cognitive science, sociology, and performance studies. These bridge practitioner language and academic frameworks. They're the foundation the whole graph is built on.
+[warm] The System Underneath. Six laws drawn from cognitive science, sociology, and performance studies. These bridge practitioner language and academic frameworks. They're the foundation the whole graph is built on.
 
 [curious] And then?
 

@@ -42,8 +42,8 @@ How to sequence improv concepts for progressive skill-building — the meta-skil
 **What comes later:** Game of the scene, editing, group scenes, callbacks, heightening. These require the foundation to be in place — not as theory but as embodied habit. A student who is still fighting the urge to plan can't also track a game.
 
 **The knowledge graph as curriculum map:** The graph's own structure mirrors curriculum progression:
-- **Axioms** (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) describe the *physics* students must internalize
-- **Principles** (the 8 North Stars) are the *behavioral guidelines* introduced across all levels
+- **Laws** (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) describe the *physics* students must internalize
+- **Principles** (the 8 principles) are the *behavioral guidelines* introduced across all levels
 - **Techniques** (yes-and, initiation, editing, etc.) are the *specific skills* taught level by level
 - **Exercises** are the *vehicles* at every level — and the progression through exercises IS the curriculum
 

@@ -33,6 +33,6 @@ The 56K modem analogy: your partner and your audience are connecting via limited
 
 Bandwidth recovers. Warm-ups clear the channel. Flow states reduce consumption — automaticity replaces deliberation, so expert improvisers don't have more bandwidth, they waste less of it. The goal of training is not to increase capacity but to stop spending it on internal computation.
 
-Bandwidth is the resource that connects the cognitive-bandwidth axiom (why it's scarce) to the Be Present and Be Simple principles (how to manage it).
+Bandwidth is the resource that connects the cognitive-bandwidth law (why it's scarce) to the Be Present and Be Simple principles (how to manage it).
 
 **Specific sources:** Kahneman, *Attention and Effort* (1973) — the foundational capacity model. Wickens, Multiple Resource Theory (1984, 2002, 2008) — the refinement: not a single pool but overlapping resource pools. **Attribution note:** The 56K modem analogy is original to this knowledge graph — no published source uses it. The Shannon-Weaver model (1948) that inspired it has known limits: linear, one-way, focused on fidelity rather than meaning construction, no feedback loop. Clark & Brennan's grounding theory (1991) may be a stronger metaphor: communication as collaborative and iterative rather than transmissive. The atom already acknowledges these limits parenthetically.

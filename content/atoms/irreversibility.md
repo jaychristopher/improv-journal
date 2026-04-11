@@ -1,9 +1,9 @@
 ---
 id: irreversibility
 title: Irreversibility (Path Dependence)
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints]
+tags: [laws, systems-thinking, constraints]
 links:
   - { id: cognitive-bandwidth, relation: enables }
   - { id: shared-reality-fragility, relation: enables }

@@ -1,7 +1,6 @@
 import Link from "next/link";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
 
 export interface Crumb {
   label: string;
@@ -29,7 +28,7 @@ export function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
       />
       <nav
         aria-label="Breadcrumb"
-        className="text-xs text-foreground/40 mb-8 flex flex-wrap items-center gap-1"
+        className="text-foreground/40 mb-8 flex flex-wrap items-center gap-1 text-xs"
       >
         {crumbs.map((crumb, i) => (
           <span key={i} className="flex items-center gap-1">

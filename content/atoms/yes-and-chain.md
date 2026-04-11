@@ -3,7 +3,7 @@ id: yes-and-chain
 title: "Yes, And Chain"
 type: exercise
 status: draft
-tags: [exercises, fundamentals, north-stars]
+tags: [exercises, fundamentals, principles]
 links:
   - { id: be-positive, relation: illustrates }
   - { id: negation, relation: contrasts }

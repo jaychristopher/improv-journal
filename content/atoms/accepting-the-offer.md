@@ -3,7 +3,7 @@ id: accepting-the-offer
 title: Accepting the Offer
 type: technique
 status: draft
-tags: [techniques, north-stars, data-acceptance, fundamentals]
+tags: [techniques, principles, data-acceptance, fundamentals]
 links:
   - { id: be-positive, relation: illustrates }
   - { id: yes-and, relation: extends }

@@ -33,7 +33,7 @@ updated: "2026-03-29"
 
 The central reframe: improv isn't about comedy. Comedy is a byproduct. Improv is a **high-stakes game of reality construction** — two interdependent agents building a coherent world in real time without a blueprint, under the irreversible flow of time. The engine that sustains it is mutual delight — the system runs on play, not discipline.
 
-This is a systemic problem as much as an artistic one. The eight North Stars aren't moral rules — they're structural commands to prevent the collapse of the shared fabric of reality. You aren't being positive to be nice. You're being positive because if you reject input, the shared reality forks. You aren't being honest to be a saint. You're being honest because distorted signals erode coherence.
+This is a systemic problem as much as an artistic one. The eight principles aren't moral rules — they're structural commands to prevent the collapse of the shared fabric of reality. You aren't being positive to be nice. You're being positive because if you reject input, the shared reality forks. You aren't being honest to be a saint. You're being honest because distorted signals erode coherence.
 
 But the architecture serves something beyond itself. Del Close called the Harold a "spiritual endeavor." When the system works — when presence, support, honesty, and changeability converge — the players disappear into something larger. The engineering enables the transcendence. That's not a byproduct. That's the point.
 

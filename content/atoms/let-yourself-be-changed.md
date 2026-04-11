@@ -3,7 +3,7 @@ id: let-yourself-be-changed
 title: Let Yourself Be Changed
 type: technique
 status: draft
-tags: [techniques, beginner, north-stars, adaptability, vulnerability]
+tags: [techniques, beginner, principles, adaptability, vulnerability]
 links:
   - { id: be-changeable, relation: illustrates }
   - { id: steering, relation: contrasts }

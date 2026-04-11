@@ -3,7 +3,7 @@ id: internal-computation
 title: Internal Computation
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, cognition, presence]
+tags: [antipatterns, principles, cognition, presence]
 links:
   - { id: be-present, relation: contrasts }
   - { id: active-listening, relation: contrasts }

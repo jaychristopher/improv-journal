@@ -1,19 +1,23 @@
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { loadThreads, getThreadBySlug, getAtomBySlug, getAtomUrl, getAudioUrl, getParentPath } from "@/lib/content";
+import { notFound } from "next/navigation";
+
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import {
+  getAtomBySlug,
+  getAtomUrl,
+  getAudioUrl,
+  getParentPath,
+  getThreadBySlug,
+  loadThreads,
+} from "@/lib/content";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
   return threads.map((t) => ({ slug: t.frontmatter.id }));
 }
 
-export default async function ThreadPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function ThreadPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const thread = await getThreadBySlug(slug);
   if (!thread) notFound();
@@ -50,9 +54,14 @@ export default async function ThreadPage({
     (fm.atoms ?? []).map(async (id) => {
       const atom = await getAtomBySlug(id);
       return atom
-        ? { id, title: atom.frontmatter.title, url: getAtomUrl({ id, type: atom.frontmatter.type }), found: true }
+        ? {
+            id,
+            title: atom.frontmatter.title,
+            url: getAtomUrl({ id, type: atom.frontmatter.type }),
+            found: true,
+          }
         : { id, title: id, url: `/how-it-works/${id}`, found: false };
-    })
+    }),
   );
 
   const crumbs: { label: string; href?: string }[] = [{ label: "Home", href: "/" }];
@@ -65,17 +74,20 @@ export default async function ThreadPage({
   crumbs.push({ label: fm.title });
 
   return (
-    <main className="max-w-2xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-2xl px-6 py-16">
       <Breadcrumb crumbs={crumbs} />
 
       <header className="mb-8">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">
           thread
           {positionInPath && (
-            <> · {positionInPath.current} of {positionInPath.total}</>
+            <>
+              {" "}
+              · {positionInPath.current} of {positionInPath.total}
+            </>
           )}
         </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">{fm.title}</h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
       </header>
 
       {audioUrl && <AudioPlayer src={audioUrl} />}
@@ -85,17 +97,14 @@ export default async function ThreadPage({
         dangerouslySetInnerHTML={{ __html: thread.html }}
       />
 
-      <nav className="mt-12 pt-8 border-t border-foreground/10">
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-foreground/40 mb-4">
+      <nav className="border-foreground/10 mt-12 border-t pt-8">
+        <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
           Composed from
         </h2>
         <ul className="space-y-2">
           {atoms.map((atom) => (
             <li key={atom.id}>
-              <Link
-                href={atom.url}
-                className="text-sm hover:underline"
-              >
+              <Link href={atom.url} className="text-sm hover:underline">
                 {atom.title}
               </Link>
             </li>
@@ -105,14 +114,11 @@ export default async function ThreadPage({
 
       {/* Prev/Next within path */}
       {(prevThread || nextThread) && (
-        <nav className="mt-8 pt-8 border-t border-foreground/10 flex justify-between items-start">
+        <nav className="border-foreground/10 mt-8 flex items-start justify-between border-t pt-8">
           <div>
             {prevThread && (
-              <Link
-                href={`/threads/${prevThread.id}`}
-                className="group"
-              >
-                <span className="text-xs text-foreground/40 group-hover:text-foreground/60">
+              <Link href={`/threads/${prevThread.id}`} className="group">
+                <span className="text-foreground/40 group-hover:text-foreground/60 text-xs">
                   &larr; Previous
                 </span>
                 <span className="block text-sm font-medium group-hover:underline">
@@ -123,11 +129,8 @@ export default async function ThreadPage({
           </div>
           <div className="text-right">
             {nextThread && (
-              <Link
-                href={`/threads/${nextThread.id}`}
-                className="group"
-              >
-                <span className="text-xs text-foreground/40 group-hover:text-foreground/60">
+              <Link href={`/threads/${nextThread.id}`} className="group">
+                <span className="text-foreground/40 group-hover:text-foreground/60 text-xs">
                   Next &rarr;
                 </span>
                 <span className="block text-sm font-medium group-hover:underline">

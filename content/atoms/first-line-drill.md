@@ -3,7 +3,7 @@ id: first-line-drill
 title: "First Line Drill"
 type: exercise
 status: draft
-tags: [exercises, intermediate, initiation, courage, north-stars]
+tags: [exercises, intermediate, initiation, courage, principles]
 links:
   - { id: be-brave, relation: illustrates }
   - { id: hesitation, relation: contrasts }

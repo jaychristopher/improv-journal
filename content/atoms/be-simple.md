@@ -3,7 +3,7 @@ id: be-simple
 title: "Be Simple"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, bandwidth, clarity]
+tags: [principles, fundamentals, bandwidth, clarity]
 links:
   - { id: obvious-choice, relation: extends }
   - { id: bandwidth, relation: extends }
@@ -30,7 +30,7 @@ updated: "2026-03-29"
 
 **Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
 
-The most counterintuitive North Star. It goes against everything our egos tell us — we want to be the cleverest person in the room. But Keith Johnstone: *"The improviser has to realise that the more obvious he is, the more original he appears."*
+The most counterintuitive principle. It goes against everything our egos tell us — we want to be the cleverest person in the room. But Keith Johnstone: *"The improviser has to realise that the more obvious he is, the more original he appears."*
 
 Simplicity is not the absence of depth. It is the *condition* for depth. When you say "happy birthday" instead of "I'm a cyborg from the future here to steal your toaster," the relationship has room to breathe. The audience doesn't need five minutes of exposition. They immediately project the history, the emotion, the stakes — and the scene can live in the space between two people rather than inside one person's elaborate premise.
 

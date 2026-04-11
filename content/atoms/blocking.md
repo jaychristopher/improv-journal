@@ -3,7 +3,7 @@ id: blocking
 title: Blocking
 type: antipattern
 status: draft
-tags: [fundamentals, pitfalls, antipatterns, umbrella-concept]
+tags: [fundamentals, antipatterns, umbrella-concept]
 links:
   - { id: yes-and, relation: contrasts }
   - { id: accepting-the-offer, relation: contrasts }
@@ -26,7 +26,7 @@ created: "2026-03-29"
 updated: "2026-03-29"
 ---
 
-Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other North Star shadows are its species.
+Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other principle-shadows are its species.
 
 The most visible form is verbal denial: "No, we're not in a hospital." But blocking operates at every level. You can block **emotionally** — accepting the words, ignoring the feeling ("You seem upset" / "I'm fine, let's move on"). You can block **physically** — turning away, breaking eye contact, retreating from your partner. You can block through **inaction** — refusing to add, forcing your partner to carry the scene alone. And you can block **your own offers** before they leave your mouth — having an impulse, judging it, suppressing it.
 

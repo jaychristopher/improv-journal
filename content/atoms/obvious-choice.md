@@ -3,7 +3,7 @@ id: obvious-choice
 title: The Obvious Choice
 type: technique
 status: draft
-tags: [techniques, beginner, north-stars, simplicity, bandwidth]
+tags: [techniques, beginner, principles, simplicity, bandwidth]
 links:
   - { id: be-simple, relation: illustrates }
   - { id: overcomplication, relation: contrasts }

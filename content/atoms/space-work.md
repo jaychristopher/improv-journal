@@ -3,7 +3,7 @@ id: space-work
 title: Space Work
 type: technique
 status: draft
-tags: [techniques, beginner, physicality, environment, shared-state]
+tags: [techniques, beginner, physicality, environment, shared-reality]
 links:
   - { id: shared-reality-fragility, relation: illustrates }
   - { id: environment, relation: requires }

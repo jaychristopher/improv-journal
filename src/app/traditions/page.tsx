@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { getTraditionNames, getAtomsForTradition } from "@/lib/content";
+
+import { getAtomsForTradition, getTraditionNames } from "@/lib/content";
 
 const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
   johnstone: {
@@ -31,22 +32,18 @@ export default async function TraditionsPage() {
     names.map(async (name) => {
       const atoms = await getAtomsForTradition(name);
       return { name, count: atoms.length, ...TRADITION_INFO[name] };
-    })
+    }),
   );
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <header className="mb-12">
-        <span className="text-xs uppercase tracking-wider text-foreground/40">
-          the lineages
-        </span>
-        <h1 className="text-3xl font-bold tracking-tight mt-1">
-          Traditions in Tension
-        </h1>
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">the lineages</span>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Traditions in Tension</h1>
         <p className="text-foreground/60 mt-2">
-          There is no single "improv." Five major traditions, each with distinct
-          philosophies, and they disagree on fundamental questions. Understanding
-          where they diverge — and why — is what separates citation from knowledge.
+          There is no single &quot;improv.&quot; Five major traditions, each with distinct
+          philosophies, and they disagree on fundamental questions. Understanding where they diverge
+          — and why — is what separates citation from knowledge.
         </p>
       </header>
 
@@ -55,15 +52,13 @@ export default async function TraditionsPage() {
           <Link
             key={t.name}
             href={`/traditions/${t.name}`}
-            className="block border border-foreground/10 rounded-lg bg-surface p-5 hover:border-foreground/30 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
           >
-            <div className="flex justify-between items-baseline">
+            <div className="flex items-baseline justify-between">
               <h2 className="text-lg font-semibold">{t.label}</h2>
-              <span className="text-sm text-foreground/40">
-                {t.count} concepts
-              </span>
+              <span className="text-foreground/40 text-sm">{t.count} concepts</span>
             </div>
-            <p className="text-sm text-foreground/50 mt-1">{t.desc}</p>
+            <p className="text-foreground/50 mt-1 text-sm">{t.desc}</p>
           </Link>
         ))}
       </div>

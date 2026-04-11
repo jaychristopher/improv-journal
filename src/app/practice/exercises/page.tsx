@@ -1,6 +1,6 @@
-import { loadAtoms, getAtomUrl } from "@/lib/content";
-import { TagFilter } from "@/components/TagFilter";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { TagFilter } from "@/components/TagFilter";
+import { getAtomUrl, loadAtoms } from "@/lib/content";
 
 const FILTER_GROUPS = [
   {
@@ -42,7 +42,7 @@ export default async function ExercisesPage() {
   }));
 
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
@@ -51,9 +51,7 @@ export default async function ExercisesPage() {
         ]}
       />
       <header className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight mt-1">
-          Exercises ({exercises.length})
-        </h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Exercises ({exercises.length})</h1>
         <p className="text-foreground/60 mt-2 mb-2">
           Structured activities that build specific skills through constraints.
         </p>

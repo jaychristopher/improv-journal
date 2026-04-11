@@ -3,7 +3,7 @@ id: clear-signal-simple-signal
 title: "Clear Signal, Simple Signal"
 status: seed
 atoms: [be-honest, performing-cleverness, commitment, be-simple, overcomplication, continuous-signaling, emotional-honesty-scene, one-word-scene]
-tags: [north-stars, authenticity, bandwidth, clarity]
+tags: [principles, authenticity, bandwidth, clarity]
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

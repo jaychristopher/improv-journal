@@ -8,13 +8,13 @@
  */
 
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
+import path from "path";
 
 /** Duplicate of getAtomUrl logic — kept in sync manually to avoid ESM import chain */
 function atomTypeToUrl(id: string, type: string): string {
   switch (type) {
-    case "axiom":
+    case "law":
     case "insight":
       return `/how-it-works/${id}`;
     case "principle":
@@ -86,12 +86,21 @@ export function generateHubRedirects(): {
     // Old /system/ URLs → /how-it-works/
     { source: "/system", destination: "/how-it-works", permanent: true },
     { source: "/system/principles", destination: "/how-it-works/principles", permanent: true },
-    { source: "/system/principles/:slug", destination: "/how-it-works/principles/:slug", permanent: true },
+    {
+      source: "/system/principles/:slug",
+      destination: "/how-it-works/principles/:slug",
+      permanent: true,
+    },
     { source: "/system/diagnosis", destination: "/how-it-works/diagnosis", permanent: true },
-    { source: "/system/diagnosis/:slug", destination: "/how-it-works/diagnosis/:slug", permanent: true },
+    {
+      source: "/system/diagnosis/:slug",
+      destination: "/how-it-works/diagnosis/:slug",
+      permanent: true,
+    },
     { source: "/system/:slug", destination: "/how-it-works/:slug", permanent: true },
     // Old /concepts/ URLs
     { source: "/concepts/axioms", destination: "/how-it-works", permanent: true },
+    { source: "/concepts/laws", destination: "/how-it-works", permanent: true },
     { source: "/concepts/principles", destination: "/how-it-works/principles", permanent: true },
     { source: "/concepts/antipatterns", destination: "/how-it-works/diagnosis", permanent: true },
     { source: "/concepts/patterns", destination: "/how-it-works/diagnosis", permanent: true },
@@ -99,10 +108,5 @@ export function generateHubRedirects(): {
     { source: "/concepts/techniques", destination: "/practice/techniques", permanent: true },
     { source: "/concepts/formats", destination: "/practice/formats", permanent: true },
     { source: "/concepts/definitions", destination: "/practice/vocabulary", permanent: true },
-    { source: "/learn/beginner", destination: "/paths", permanent: true },
-    { source: "/learn/intermediate", destination: "/paths", permanent: true },
-    { source: "/learn/advanced", destination: "/paths", permanent: true },
-    { source: "/learn/teacher", destination: "/paths", permanent: true },
-    { source: "/learn/performer", destination: "/paths", permanent: true },
   ];
 }

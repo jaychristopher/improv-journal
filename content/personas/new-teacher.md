@@ -20,7 +20,7 @@ The performer-to-teacher transition is an identity shift, not just a skill trans
 
 **Functional:**
 1. **Structure a class or curriculum** — "What do I teach in week 1? What exercises do I use? How do I sequence skills?" They need frameworks like BED (Brief/Execute/Debrief) and the 5-level progression.
-2. **Explain WHY things work** — Not just "do yes-and" but WHY acceptance is structural, WHY simplicity serves scenes, WHY listening is the scarce resource. The graph's axioms provide this explanatory layer.
+2. **Explain WHY things work** — Not just "do yes-and" but WHY acceptance is structural, WHY simplicity serves scenes, WHY listening is the scarce resource. The graph's laws provide this explanatory layer.
 3. **Give effective feedback/notes** — The hardest teaching skill. "Exercises are better than notes" (Hines). Less is more. Be specific. Don't over-talk.
 4. **Side-coach in the moment** — A distinct skill from performing or giving post-scene notes. Spolin Games Online: "sidecoaching is as much a skill as it is an art."
 
@@ -42,7 +42,7 @@ The core gap — they feel it but can't explain it.
 
 > Terje Brevik: beginners interpret "Yes And" as rigid law because they're "desperately looking for rules" — and teachers reinforce this because they can't explain the nuance. — Medium
 
-**Atoms that address this:** `irreversibility`, `cognitive-bandwidth`, `shared-reality-fragility`, `meaning-is-relational`, `reality-construction` (the axioms ARE the explanatory layer)
+**Atoms that address this:** `irreversibility`, `cognitive-bandwidth`, `shared-reality-fragility`, `meaning-is-relational`, `reality-construction` (the laws ARE the explanatory layer)
 
 ### 2. No Curriculum Structure
 Performer-teachers wing it because they've never seen the architecture of a class.
@@ -110,7 +110,7 @@ The most consequential failure — and the one new teachers are least prepared f
 ## Desires
 
 1. **A curriculum framework they can adapt** — Not a rigid syllabus, but a progression: what builds on what, what prerequisites exist, how to sequence from safety → fundamentals → scene work → game → form. The `curriculum-design` atom maps this exactly.
-2. **The WHY behind every principle** — The axioms give them the explanatory power they lack. Instead of "just say yes-and," they can say "acceptance preserves the shared reality because..."
+2. **The WHY behind every principle** — The laws give them the explanatory power they lack. Instead of "just say yes-and," they can say "acceptance preserves the shared reality because..."
 3. **Feedback frameworks** — BED (Brief/Execute/Debrief). Hines' "exercise > note" principle. The antipattern vocabulary for naming what they see.
 4. **Side-coaching skills** — Real-time intervention without breaking the scene. Spolin's methodology provides the foundation.
 5. **Confidence in their own voice** — Billy Merritt: "Improv teachers should all teach differently." The New Teacher needs permission to develop their own philosophy, not just copy their best teacher.
@@ -161,7 +161,7 @@ The most consequential failure — and the one new teachers are least prepared f
 ### Entry Point: "How do I teach what I can feel but can't explain?"
 Start with the explanatory framework, then build pedagogical skills.
 
-**Phase 1: The Explanatory Layer** (Why things work — for the teacher's understanding)
+**Phase 1: The Explanatory Layer** (Why things work -- for the teacher's understanding)
 1. `reality-construction` — What improv actually IS (reality construction, not comedy)
 2. `irreversibility` — Why you can't plan (the physics the teacher needs to explain)
 3. `cognitive-bandwidth` — Why simplicity matters (and why students overcomplicate)
@@ -198,7 +198,7 @@ Start with the explanatory framework, then build pedagogical skills.
 26. `trust` — What trust looks like and how to build it
 
 ### Thread Sequence
-- Thread: "The Physics of Every Room" → axioms as the teacher's explanatory foundation
+- Thread: "The Physics of Every Room" → laws as the teacher's explanatory foundation
 - Thread: "The First Rule You Already Know" → how to teach yes-and with depth
 - Thread: "Presence and Commitment" → the inner game that students need
 - New thread needed: "The Teacher's Toolkit" → pedagogy atoms woven into teaching methodology
@@ -206,11 +206,11 @@ Start with the explanatory framework, then build pedagogical skills.
 ### Path Alignment
 No existing path serves this persona. Both paths target beginners/general audience.
 
-**Recommended:** Create a new path `teaching-improv` targeting `teacher` audience. Sequence: explanatory layer (axioms) → pedagogical skills (curriculum, safety, notes, side-coaching) → what-to-teach curriculum atoms → diagnostic toolkit for reading students. The key differentiator: this path teaches the teacher to EXPLAIN, not just to DO.
+**Recommended:** Create a new path `teaching-improv` targeting `teacher` audience. Sequence: explanatory layer (laws) → pedagogical skills (curriculum, safety, notes, side-coaching) → what-to-teach curriculum atoms → diagnostic toolkit for reading students. The key differentiator: this path teaches the teacher to EXPLAIN, not just to DO.
 
 ## User Stories
 
-1. **As a new teacher**, I want to understand the systems mechanics behind improv principles (irreversibility, bandwidth, fragility), so that when a student asks "why does yes-and matter?" I can give a real answer instead of repeating a rule.
+1. **As a new teacher**, I want to understand the systems mechanics behind the laws of improv (irreversibility, bandwidth, fragility), so that when a student asks "why does yes-and matter?" I can give a real answer instead of repeating a rule.
 
 2. **As a new teacher**, I want a curriculum framework I can adapt to my style, so that I can plan classes with confidence instead of winging it or copying my old teacher's syllabus.
 

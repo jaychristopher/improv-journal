@@ -42,7 +42,10 @@ body {
 }
 
 /* Prose typography */
-.prose h1, .prose h2, .prose h3, .prose h4 {
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
   color: var(--foreground-strong);
 }
 

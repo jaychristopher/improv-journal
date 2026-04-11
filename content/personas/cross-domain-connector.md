@@ -21,7 +21,7 @@ Their core frustration: the shallow version insults their intelligence. The deep
 ## Jobs to Be Done
 
 **Functional:**
-1. **Understand WHY "yes-and" works** — not the slogan, but the systems mechanics (irreversibility, bandwidth, fragility, signaling). Strategy+Business: "a philosophy, not just a tactic — a fundamental orientation toward noticing and accepting what is here."
+1. **Understand WHY "yes-and" works** — not the slogan, but the underlying laws (irreversibility, bandwidth, fragility, signaling). Strategy+Business: "a philosophy, not just a tactic — a fundamental orientation toward noticing and accepting what is here."
 2. **Apply improv principles to their specific domain** — therapy (ACT integration, emotion vocabulary), education (teaching as improvisation), leadership (psychological safety), parenting (sharing focus), relationships (active listening).
 3. **Distinguish real principles from corporate platitudes** — Know what actually transfers and what doesn't. Know the limits.
 
@@ -80,7 +80,7 @@ Improv books assume you want to perform. Business books assume you want a quick 
 
 ## Desires
 
-1. **The physics, not the performance** — The axioms (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) ARE what they want. These describe the physics of every conversation, not just improv scenes.
+1. **The physics, not the performance** — The laws (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) ARE what they want. These describe the physics of every conversation, not just improv scenes.
 2. **Honest evidence assessment** — Not "improv fixes everything!" but "here's what the research actually shows, here's where it's thin, and here's what's theoretically compelling but unproven."
 3. **Domain-specific applications** — Exercises and frameworks adapted for their context: therapy sessions, team meetings, classrooms, difficult conversations, parenting moments.
 4. **The nuance of limits** — When does "yes-and" NOT apply? When does forced vulnerability backfire? What are the boundary conditions?
@@ -88,7 +88,7 @@ Improv books assume you want to perform. Business books assume you want a quick 
 
 ## Objections
 
-1. **"This is just another corporate improv thing"** — Must immediately distinguish from the shallow version. Lead with the axioms and systems language, not "yes-and."
+1. **"This is just another corporate improv thing"** — Must immediately distinguish from the shallow version. Lead with the laws and systems language, not "yes-and."
 2. **"I don't want to perform"** — The graph doesn't require performance. It's a thinking tool, not a stage tool. (Though the exercises are available for those who want them.)
 3. **"Where's the evidence?"** — Fair question. Medical improv has peer-reviewed RCTs. Sawyer has academic rigor. Beyond that, the evidence base is thin. Be honest about this.
 4. **"This seems very intellectual for something that's supposed to be embodied"** — Valid tension. The graph provides the intellectual framework; the exercises provide the embodied practice. Both are necessary.
@@ -136,7 +136,7 @@ Improv books assume you want to perform. Business books assume you want a quick 
 ### Entry Point: "What's really going on in improv — beyond the buzzwords?"
 Start with the physics. No stage required. No performance assumed.
 
-**Phase 1: The Physics** (Why it works — the axioms)
+**Phase 1: The Physics** (Why it works — the laws)
 1. `reality-construction` — Every conversation is reality construction
 2. `irreversibility` — Time only moves forward; you can't unsay it
 3. `shared-reality-fragility` — Why rejection breaks conversations (not just scenes)
@@ -174,19 +174,19 @@ Start with the physics. No stage required. No performance assumed.
 27. `ensemble` — The ensemble as a model for any high-functioning team
 
 ### Thread Sequence
-- Thread: "The Physics of Every Room" → axioms applied to all contexts
+- Thread: "The Physics of Every Room" → laws applied to all contexts
 - Thread: "The First Rule You Already Know" → yes-and with real depth
 - Thread: "The Conversation That Felt Like Magic" → peak connection experience
 - New thread needed: "Beyond the Stage" → honest transfer guide with domain-specific examples
 
 ### Path Alignment
-The existing `physics-of-connection` path is the CLOSEST match — it starts with the "why" and covers axioms. But it's framed for improv beginners, not cross-domain professionals.
+The existing `physics-of-connection` path is the CLOSEST match — it starts with the "why" and covers the laws. But it's framed for improv beginners, not cross-domain professionals.
 
 **Recommended:** Refine `physics-of-connection` path to explicitly serve this persona OR create a new path `improv-physics-for-life` targeting `beginner` audience but with cross-domain framing. The content is the same — the framing and entry points differ.
 
 ## User Stories
 
-1. **As a cross-domain connector**, I want to understand the systems mechanics behind "yes-and" (irreversibility, bandwidth, fragility), so that I can explain to my team WHY these principles work instead of just saying "trust me."
+1. **As a cross-domain connector**, I want to understand the laws behind "yes-and" (irreversibility, bandwidth, fragility), so that I can explain to my team WHY these principles work instead of just saying "trust me."
 
 2. **As a cross-domain connector**, I want an honest assessment of what transfers from stage to life and what doesn't, so that I can apply the principles intelligently rather than dogmatically.
 

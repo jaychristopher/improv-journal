@@ -33,9 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# audio output (large MP3s — serve from CDN in production)
+# audio output staging
 /output/
-/public/audio/**/*.mp3
+# MP3s are tracked via Git LFS (see .gitattributes)
 
 # vercel
 .vercel

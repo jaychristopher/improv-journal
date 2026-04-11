@@ -3,7 +3,7 @@ id: first-rule-you-already-know
 title: "The First Rule You Already Know"
 status: seed
 atoms: [be-positive, yes-and, negation, blocking, offers, yes-and-chain]
-tags: [north-stars, fundamentals, show-dont-tell]
+tags: [principles, fundamentals, show-dont-tell]
 created: "2026-03-29"
 updated: "2026-03-29"
 ---

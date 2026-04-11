@@ -87,7 +87,7 @@ Engineering/analytical training actively reinforces habits that undermine improv
 
 ## Desires
 
-1. **A mental model for WHY improv works** — not just rules, but the underlying system. The axioms (irreversibility, bandwidth, fragility, signaling, meaning-is-relational, interdependence) ARE this mental model.
+1. **A mental model for WHY improv works** — not just rules, but the underlying system. The laws (irreversibility, bandwidth, fragility, signaling, meaning-is-relational, interdependence) ARE this mental model.
 2. **Permission structure for failure** — understanding that failure is not a bug but the mechanism. The knowledge that Rich Baker performed ~5,000 scenes before consistency.
 3. **Concrete skills that transfer to work** — active listening, yes-and as collaboration, reading the room. Evidence: Doug Neale became better at code review after improv training.
 4. **A practice path with clear progression** — "I'm at Level 1. Here's what Level 2 looks like." The curriculum-design atom maps this exactly.
@@ -96,7 +96,7 @@ Engineering/analytical training actively reinforces habits that undermine improv
 ## Objections
 
 1. **"I'm not funny"** — Every improv school FAQ addresses this. National Comedy Theatre: "the people who say these things? They're the ones who end up loving improv the most."
-2. **"This isn't rigorous / it's just goofing around"** — The systems framing (reality construction, axioms, collapse modes) directly addresses this. Improv IS rigorous — just in domains they haven't mapped yet.
+2. **"This isn't rigorous / it's just goofing around"** — The systems framing (reality construction, laws, collapse modes) directly addresses this. Improv IS rigorous — just in domains they haven't mapped yet.
 3. **"I'll look stupid"** — True. And that's the point. The safety-in-the-room atom is prerequisite infrastructure.
 4. **"I can learn this from a book"** — Partly true (this knowledge graph exists for that reason), but improv is embodied. Reading about swimming isn't swimming. The graph is a complement to practice, not a replacement.
 
@@ -131,7 +131,7 @@ Engineering/analytical training actively reinforces habits that undermine improv
 ### Entry Point: "Why does improv work?"
 Start with the SYSTEM, not the exercises. Give the analytical mind what it needs — a model.
 
-**Phase 1: The Model** (Axioms + Reality Construction)
+**Phase 1: The Model** (Laws + Reality Construction)
 1. `reality-construction` — The central reframe: improv as high-stakes reality construction
 2. `irreversibility` — Time only moves forward; you can't unsay it
 3. `cognitive-bandwidth` — Why you can't think AND do simultaneously
@@ -140,7 +140,7 @@ Start with the SYSTEM, not the exercises. Give the analytical mind what it needs
 6. `meaning-is-relational` — Meaning emerges between people, not from individuals
 7. `interdependence` — You cannot succeed alone
 
-**Phase 2: The Principles** (North Stars as behavioral algorithms)
+**Phase 2: The Principles** (principles as behavioral algorithms)
 8. `be-present` — Attention is the scarce resource
 9. `be-positive` — Acceptance isn't niceness; it's structural integrity
 10. `be-honest` — Distorted signals erode coherence
@@ -170,15 +170,15 @@ Start with the SYSTEM, not the exercises. Give the analytical mind what it needs
 28. `systemic-collapse-modes` — How to know when it breaks
 
 ### Thread Sequence
-- Thread: "The Physics of Every Room" → axioms as mental model
+- Thread: "The Physics of Every Room" → laws as mental model
 - Thread: "The First Rule You Already Know" → yes-and as the entry protocol
 - Thread: "Presence and Commitment" → the inner game
 - Thread: "The Hardest Thing You'll Never Plan" → embracing discovery
 
 ### Path Alignment
-The existing `beginner-foundations` path partially serves this persona but lacks the axiom/systems layer that the analytical beginner NEEDS as an entry point. The `physics-of-connection` path is closer — it starts with the "why" — but targets a general beginner audience, not specifically the analytical mind.
+The existing `beginner-foundations` path partially serves this persona but lacks the law/systems layer that the analytical beginner NEEDS as an entry point. The `physics-of-connection` path is closer — it starts with the "why" — but targets a general beginner audience, not specifically the analytical mind.
 
-**Recommended:** Create a new path `systems-of-improv` targeting `beginner` audience, specifically for the analytical beginner. Sequence: axioms first → principles as behavioral algorithms → techniques as implementations → exercises as practice → diagnostics as self-coaching.
+**Recommended:** Create a new path `systems-of-improv` targeting `beginner` audience, specifically for the analytical beginner. Sequence: laws first → principles as behavioral algorithms → techniques as implementations → exercises as practice → diagnostics as self-coaching.
 
 ## User Stories
 

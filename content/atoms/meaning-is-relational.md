@@ -1,9 +1,9 @@
 ---
 id: meaning-is-relational
 title: Meaning Is Relational
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints, co-creation]
+tags: [laws, systems-thinking, constraints, co-creation]
 links:
   - { id: shared-reality-fragility, relation: enables }
   - { id: continuous-signaling, relation: enables }

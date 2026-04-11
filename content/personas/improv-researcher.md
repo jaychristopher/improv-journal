@@ -52,7 +52,7 @@ The academic study of improv is split across five silos that rarely cross-cite:
 
 A management researcher citing Johnstone may be unaware of Sawyer's cognitive work. A drama educator citing Spolin may never have read Crossan's organizational improvisation papers.
 
-**Atoms that address this:** The reference atoms (`ref-*`) bridge traditions; the axiom atoms bridge disciplines
+**Atoms that address this:** The reference atoms (`ref-*`) bridge traditions; the law atoms bridge disciplines
 
 ### 3. Misrepresentation in Non-Improv Contexts
 Business writers flatten "yes-and" into "agree with everything." Psychology writers reduce Johnstone to status hierarchies.
@@ -93,7 +93,7 @@ The debate is really about **explicit vs. tacit knowledge** — even anti-theory
 1. **A cross-referenced knowledge graph** — Not a linear book but a networked structure where every concept links to related concepts, source material, and counter-positions across traditions. This is literally what the project IS.
 2. **Specific citations** — Not "Johnstone says..." but "Johnstone, *Impro*, Ch. 4 ('Narrative Skills'), p. 116." The graph's sourcing convention directly serves this.
 3. **Honest counter-positions** — Not diplomatic "everyone's right" but "Napier argues X; UCB argues Y; here's why they disagree." The `**Counter-position:**` convention in every atom serves this.
-4. **Bridge between academic and practitioner language** — Sawyer's "collaborative emergence" translated into performer language. Crossan's organizational improvisation connected to Johnstone's offers. The axiom atoms do this.
+4. **Bridge between academic and practitioner language** — Sawyer's "collaborative emergence" translated into performer language. Crossan's organizational improvisation connected to Johnstone's offers. The law atoms do this.
 5. **Citable, linkable reference material** — Atoms with stable IDs that podcast hosts can reference, bloggers can link to, and writers can cite.
 
 ## Objections
@@ -133,8 +133,8 @@ Start with the graph itself. This persona doesn't need a guided path — they ne
 
 **Phase 1: The Architecture** (How the graph works)
 1. `reality-construction` — The central reframe that organizes everything
-2. The six axioms — the underlying physics
-3. The eight North Stars — behavioral principles derived from axioms
+2. The six laws — the underlying physics
+3. The eight principles — behavioral guidelines derived from laws
 4. Counter-position convention — how disagreements are structured
 5. Reference atoms — the sourcing methodology
 
@@ -146,7 +146,7 @@ Start with the graph itself. This persona doesn't need a guided path — they ne
    - `presence` (Spolin's POC vs. Meisner's attention vs. mindfulness)
    - `editing` (UCB time-dash vs. Annoyance organic vs. Harold sweep)
 
-**Phase 3: The Axiom Layer** (Bridging disciplines)
+**Phase 3: The Law Layer** (Bridging disciplines)
 7. `irreversibility` — connects to performance studies, flow research, temporal cognition
 8. `cognitive-bandwidth` — connects to Kahneman, cognitive load theory, expertise research
 9. `shared-reality-fragility` — connects to Berger & Luckmann, social construction of reality
@@ -162,7 +162,7 @@ Start with the graph itself. This persona doesn't need a guided path — they ne
 ### Path Alignment
 This persona doesn't want a linear path. They want a **reference guide** — an index into the graph organized by topic, tradition, and type.
 
-**Recommended:** Create a path `reference-guide` targeting `advanced` audience that functions as an index rather than a journey. Organized by: traditions (Johnstone, Spolin, Close, UCB, Annoyance), concept types (axioms, principles, techniques, exercises, antipatterns), and cross-cutting themes (game, narrative, ensemble, pedagogy). No assumed reading order.
+**Recommended:** Create a path `reference-guide` targeting `advanced` audience that functions as an index rather than a journey. Organized by: traditions (Johnstone, Spolin, Close, UCB, Annoyance), concept types (laws, principles, techniques, exercises, antipatterns), and cross-cutting themes (game, narrative, ensemble, pedagogy). No assumed reading order.
 
 ## User Stories
 
@@ -174,4 +174,4 @@ This persona doesn't want a linear path. They want a **reference guide** — an 
 
 4. **As an improv researcher**, I want a networked reference I can navigate by concept rather than read linearly, so that I can find exactly the depth I need on any specific topic.
 
-5. **As an improv researcher**, I want the axiom layer to bridge improv practice and academic frameworks (cognitive science, sociology, education), so that I can connect improv knowledge to research in my own field.
+5. **As an improv researcher**, I want the law layer to bridge improv practice and academic frameworks (cognitive science, sociology, education), so that I can connect improv knowledge to research in my own field.

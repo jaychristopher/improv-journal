@@ -1,5 +1,4 @@
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
 
 interface PodcastJsonLdProps {
   title: string;

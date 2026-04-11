@@ -3,7 +3,7 @@ id: hesitation
 title: Hesitation
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, fear, initiation]
+tags: [antipatterns, principles, fear, initiation]
 links:
   - { id: be-brave, relation: contrasts }
   - { id: obvious-choice, relation: contrasts }

@@ -27,7 +27,7 @@ atoms_extracted:
   - gift-giving
   - emotional-honesty-scene
   - one-word-scene
-tags: [deep-dive, systems-thinking, north-stars, axioms]
+tags: [deep-dive, systems-thinking, principles, laws]
 created: "2026-03-29"
 updated: "2026-03-29"
 ---
@@ -36,7 +36,7 @@ A two-voice deep-dive dialogue analyzing improv as a systemic engineering proble
 
 Key argument: improv is a high-stakes game of reality construction where two independent agents build a coherent world in real time without a blueprint, under the irreversible flow of time. Comedy is a byproduct, not the goal.
 
-Structures the discipline around four axioms (constraints of the system) and five North Stars (behavioral commands to maintain reality). Frames improv as applicable far beyond the stage — the same physics govern every human interaction.
+Structures the discipline around four laws (constraints of the system) and five North Stars (behavioral commands to maintain reality). Frames improv as applicable far beyond the stage — the same physics govern every human interaction.
 
 ## Referenced practitioners and sources
 

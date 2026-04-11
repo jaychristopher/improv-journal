@@ -3,7 +3,7 @@ id: steering
 title: Steering
 type: antipattern
 status: draft
-tags: [antipatterns, north-stars, control, rigidity]
+tags: [antipatterns, principles, control, rigidity]
 links:
   - { id: be-changeable, relation: contrasts }
   - { id: be-brave, relation: contrasts }

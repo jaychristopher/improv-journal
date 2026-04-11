@@ -15,12 +15,7 @@ interface MiniGraphProps {
   resolvedLinks: Map<string, { title: string; url: string }>;
 }
 
-export function MiniGraph({
-  centerTitle,
-  centerUrl,
-  links,
-  resolvedLinks,
-}: MiniGraphProps) {
+export function MiniGraph({ centerTitle, links, resolvedLinks }: MiniGraphProps) {
   if (links.length === 0) return null;
 
   const displayLinks = links.slice(0, 6);
@@ -29,8 +24,8 @@ export function MiniGraph({
   const radius = 90;
 
   return (
-    <div className="border border-foreground/10 rounded-lg bg-surface p-4 mb-6">
-      <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground/40 mb-3">
+    <div className="border-foreground/10 bg-surface mb-6 rounded-lg border p-4">
+      <h3 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
         Connections
       </h3>
       <svg
@@ -58,8 +53,20 @@ export function MiniGraph({
         })}
 
         {/* Center node */}
-        <circle cx={cx} cy={cy} r={24} className="fill-foreground/5 stroke-foreground/20" strokeWidth={1} />
-        <text x={cx} y={cy} textAnchor="middle" dominantBaseline="central" className="fill-foreground/70 text-[9px] font-medium">
+        <circle
+          cx={cx}
+          cy={cy}
+          r={24}
+          className="fill-foreground/5 stroke-foreground/20"
+          strokeWidth={1}
+        />
+        <text
+          x={cx}
+          y={cy}
+          textAnchor="middle"
+          dominantBaseline="central"
+          className="fill-foreground/70 text-[9px] font-medium"
+        >
           {centerTitle.length > 18 ? centerTitle.substring(0, 16) + "..." : centerTitle}
         </text>
 
@@ -74,15 +81,33 @@ export function MiniGraph({
 
           return (
             <g key={link.id}>
-              <circle cx={x} cy={y} r={18} className="fill-foreground/[0.03] stroke-foreground/10 hover:stroke-foreground/30 cursor-pointer" strokeWidth={1} />
+              <circle
+                cx={x}
+                cy={y}
+                r={18}
+                className="fill-foreground/[0.03] stroke-foreground/10 hover:stroke-foreground/30 cursor-pointer"
+                strokeWidth={1}
+              />
               {resolved?.url ? (
                 <Link href={resolved.url}>
-                  <text x={x} y={y} textAnchor="middle" dominantBaseline="central" className="fill-foreground/50 text-[8px] cursor-pointer hover:fill-foreground/80">
+                  <text
+                    x={x}
+                    y={y}
+                    textAnchor="middle"
+                    dominantBaseline="central"
+                    className="fill-foreground/50 hover:fill-foreground/80 cursor-pointer text-[8px]"
+                  >
                     {shortLabel}
                   </text>
                 </Link>
               ) : (
-                <text x={x} y={y} textAnchor="middle" dominantBaseline="central" className="fill-foreground/40 text-[8px]">
+                <text
+                  x={x}
+                  y={y}
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  className="fill-foreground/40 text-[8px]"
+                >
                   {shortLabel}
                 </text>
               )}

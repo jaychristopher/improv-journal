@@ -1,5 +1,6 @@
-import { describe, it, expect } from "vitest";
-import { loadShows, getEpisodesForShow } from "../content";
+import { describe, expect, it } from "vitest";
+
+import { getEpisodesForShow, loadShows } from "../content";
 
 describe("RSS feed data", () => {
   it("every show has episodes for feed generation", async () => {

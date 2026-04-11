@@ -1,9 +1,9 @@
 ---
 id: interdependence
 title: Interdependence
-type: axiom
+type: law
 status: draft
-tags: [axioms, systems-thinking, constraints, ensemble]
+tags: [laws, systems-thinking, constraints, ensemble]
 links:
   - { id: meaning-is-relational, relation: requires }
   - { id: cognitive-bandwidth, relation: requires }
@@ -26,13 +26,13 @@ updated: "2026-04-04"
 
 You cannot build shared reality alone. The system requires multiple agents. No individual performer has enough bandwidth, perspective, or creative capacity to sustain a scene by themselves.
 
-Interdependence is not merely an observation about cognition — it is a foundational commitment to build together. The roots below explain *why* it holds; the axiom declares *that you must act on it*. You can know intellectually that meaning requires a receiver and still try to play solo. The axiom says: don't.
+Interdependence is not merely an observation about cognition — it is a foundational commitment to build together. The roots below explain *why* it holds; the law declares *that you must act on it*. You can know intellectually that meaning requires a receiver and still try to play solo. The law says: don't.
 
 This is a constraint with three roots:
 
 **Meaning requires a receiver.** If meaning is relational — constituted between minds, not within them — then a single agent literally cannot generate meaning. The offer needs a response. The emotion needs a witness. The reality needs co-construction. This is not about loneliness; it's about the structure of meaning itself.
 
-**Bandwidth is insufficient.** A single agent must simultaneously generate offers, maintain the environment, track the narrative, manage their body, and sustain emotional truth. The cognitive bandwidth axiom says simultaneous optimization is impossible. Two agents can distribute this load — one can hold the emotional thread while the other maintains the physical world. The distributed system has more capacity than either agent alone.
+**Bandwidth is insufficient.** A single agent must simultaneously generate offers, maintain the environment, track the narrative, manage their body, and sustain emotional truth. The cognitive bandwidth law says simultaneous optimization is impossible. Two agents can distribute this load — one can hold the emotional thread while the other maintains the physical world. The distributed system has more capacity than either agent alone.
 
 **Perspective is partial.** Each agent sees the scene from one vantage point. The scene's full reality exists only in the overlap of all perspectives. This is why the audience often understands something the performers don't — they hold the meta-view that no individual performer can access.
 

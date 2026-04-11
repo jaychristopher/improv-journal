@@ -3,7 +3,7 @@ id: be-brave
 title: "Be Brave"
 type: principle
 status: draft
-tags: [north-stars, fundamentals, initiation, courage]
+tags: [principles, fundamentals, initiation, courage]
 links:
   - { id: initiation, relation: illustrates }
   - { id: hesitation, relation: contrasts }
@@ -30,7 +30,7 @@ updated: "2026-04-04"
 
 **Alias:** Act before you're ready. The scene needs offers more than it needs perfect offers.
 
-Every other North Star assumes data is already flowing. Someone has to *start* the flow — and someone has to keep pushing it deeper. Bravery is the principle that governs thresholds: the moment before the first offer, but also the moment mid-scene when the truth is visible and nobody has named it yet.
+Every other principle assumes data is already flowing. Someone has to *start* the flow — and someone has to keep pushing it deeper. Bravery is the principle that governs thresholds: the moment before the first offer, but also the moment mid-scene when the truth is visible and nobody has named it yet.
 
 Mick Napier's formulation is the clearest: "At the top of an improv scene, in the first crucial moments, it is far more important that you DO something than WHAT it is you actually do." His method, paraphrased: do something, notice what you did, commit to it. The quality of the initial offer matters less than the fact that it was made.
 

@@ -3,7 +3,7 @@ id: initiation
 title: Initiation
 type: technique
 status: draft
-tags: [techniques, beginner, north-stars, courage, starting]
+tags: [techniques, beginner, principles, courage, starting]
 links:
   - { id: be-brave, relation: illustrates }
   - { id: hesitation, relation: contrasts }

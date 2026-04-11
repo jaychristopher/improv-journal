@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
 import fs from "fs";
-import path from "path";
 import { glob } from "glob";
+import path from "path";
+import { describe, expect, it } from "vitest";
 
 describe("link audit", () => {
   it("no TSX file contains /atoms/ href (old URL pattern)", async () => {
@@ -10,7 +10,10 @@ describe("link audit", () => {
 
     for (const file of files) {
       const content = fs.readFileSync(path.join(srcDir, file), "utf-8");
-      const hasOldAtomLink = content.includes('"/atoms/') || content.includes("'/atoms/") || content.includes("`/atoms/");
+      const hasOldAtomLink =
+        content.includes('"/atoms/') ||
+        content.includes("'/atoms/") ||
+        content.includes("`/atoms/");
       expect(hasOldAtomLink, `${file} still contains /atoms/ link`).toBe(false);
     }
   });
@@ -21,7 +24,10 @@ describe("link audit", () => {
 
     for (const file of files) {
       const content = fs.readFileSync(path.join(srcDir, file), "utf-8");
-      const hasOldGuideLink = content.includes('"/guides/') || content.includes("'/guides/") || content.includes("`/guides/");
+      const hasOldGuideLink =
+        content.includes('"/guides/') ||
+        content.includes("'/guides/") ||
+        content.includes("`/guides/");
       expect(hasOldGuideLink, `${file} still contains /guides/ link`).toBe(false);
     }
   });
@@ -32,7 +38,10 @@ describe("link audit", () => {
 
     for (const file of files) {
       const content = fs.readFileSync(path.join(srcDir, file), "utf-8");
-      const hasOldConceptLink = content.includes('"/concepts/') || content.includes("'/concepts/") || content.includes("`/concepts/");
+      const hasOldConceptLink =
+        content.includes('"/concepts/') ||
+        content.includes("'/concepts/") ||
+        content.includes("`/concepts/");
       expect(hasOldConceptLink, `${file} still contains /concepts/ link`).toBe(false);
     }
   });

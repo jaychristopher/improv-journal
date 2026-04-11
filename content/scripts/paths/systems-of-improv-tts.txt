@@ -8,7 +8,7 @@
 
 [curious] What do you mean by "the system underneath"?
 
-[confident] Six axioms. Not rules invented by improv teachers. Constraints discovered through decades of practice, backed by cognitive science. Irreversibility, bandwidth limits, reality fragility, continuous signaling, relational meaning, and interdependence.
+[confident] Six laws. Not rules invented by improv teachers. Constraints discovered through decades of practice, backed by cognitive science. Irreversibility, bandwidth limits, reality fragility, continuous signaling, relational meaning, and interdependence.
 
 [matter-of-fact] That sounds like a physics textbook.
 
@@ -18,7 +18,7 @@
 
 [emphatic] It's an asset. You just haven't learned where to deploy it. The thinking doesn't stop. It moves to where it belongs: between practices, not during them.
 
-[curious] Walk me through the journey. What comes after the axioms?
+[curious] Walk me through the journey. What comes after the laws?
 
 [teaching] Second thread is yes-and itself, but understood as acceptance architecture, not as a personality trait. Not the corporate workshop version. The real mechanics of why accepting incoming data is a systems requirement.
 
@@ -46,4 +46,4 @@
 
 [teaching] Engineers. Scientists. Programmers. Lawyers. Anyone whose brain has a "but why" reflex that fires before they can commit to anything. [short pause] If you've ever been told your biggest weakness in improv is that you think too much, this path was built for you.
 
-[emphatic] Start with the axioms. Let your brain do what it does best. Understand the system. Then let the exercises teach your body the rest.
+[emphatic] Start with the laws. Let your brain do what it does best. Understand the system. Then let the exercises teach your body the rest.

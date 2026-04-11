@@ -20,7 +20,7 @@ created: "2026-04-05"
 updated: "2026-04-05"
 ---
 
-Creating the conditions under which vulnerability, risk, and honest play become possible. Without safety, bravery is recklessness, honesty is exposure, and changeability is surrender. Safety is the container that makes every North Star safe to practice.
+Creating the conditions under which vulnerability, risk, and honest play become possible. Without safety, bravery is recklessness, honesty is exposure, and changeability is surrender. Safety is the container that makes every principle safe to practice.
 
 **Safety doesn't mean avoiding risk — it means the risk is chosen, not imposed.** The distinction between a **safe space** (protection-focused) and a **brave space** (growth-focused) matters. A brave space is "a place to try, stumble, laugh, and grow — knowing they'll be supported the whole way through." It requires personal accountability, respect, and the willingness to sit with discomfort.
 

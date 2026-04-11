@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
 import fs from "fs";
-import path from "path";
 import MiniSearch from "minisearch";
+import path from "path";
+import { describe, expect, it } from "vitest";
 
 describe("search index", () => {
   const indexPath = path.join(process.cwd(), "public", "search-index.json");
