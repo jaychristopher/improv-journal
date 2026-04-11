@@ -95,20 +95,31 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
   return results;
 }
 
-export async function loadSources() {
-  return loadFiles<SourceFrontmatter>("sources");
+// ─── Cached loaders (prevent re-reading 155+ files per page during SSG) ─────
+
+const _cache = new Map<string, Promise<ContentFile<unknown>[]>>();
+
+function cachedLoad<T>(subdir: string): Promise<ContentFile<T>[]> {
+  if (!_cache.has(subdir)) {
+    _cache.set(subdir, loadFiles<T>(subdir));
+  }
+  return _cache.get(subdir) as Promise<ContentFile<T>[]>;
 }
 
-export async function loadAtoms() {
-  return loadFiles<AtomFrontmatter>("atoms");
+export function loadSources() {
+  return cachedLoad<SourceFrontmatter>("sources");
 }
 
-export async function loadThreads() {
-  return loadFiles<ThreadFrontmatter>("threads");
+export function loadAtoms() {
+  return cachedLoad<AtomFrontmatter>("atoms");
 }
 
-export async function loadPaths() {
-  return loadFiles<PathFrontmatter>("paths");
+export function loadThreads() {
+  return cachedLoad<ThreadFrontmatter>("threads");
+}
+
+export function loadPaths() {
+  return cachedLoad<PathFrontmatter>("paths");
 }
 
 export async function getAtomBySlug(slug: string) {
@@ -133,8 +144,8 @@ export async function getSourceBySlug(slug: string) {
 
 // ─── Bridges ────────────────────────────────────────────────────────────────
 
-export async function loadBridges() {
-  return loadFiles<BridgeFrontmatter>("bridges");
+export function loadBridges() {
+  return cachedLoad<BridgeFrontmatter>("bridges");
 }
 
 export async function getBridgeBySlug(slug: string) {
