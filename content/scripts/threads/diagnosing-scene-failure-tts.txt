@@ -1,59 +1,71 @@
-[conversational] You know the feeling. The scene ends and you know it didn't work. You can feel it in your body. But when someone asks "what happened?" all you can say is "I don't know, it just... died."
+[curious] Okay so I want to start with that feeling. You walk off stage, scene's over, and you know it didn't work. Someone asks what happened and you just go... "I don't know, it just died." What is that?
 
-[teaching] That feeling, knowing something failed without being able to name it, is the vocabulary gap that keeps intermediate improvisers stuck. So let's fill it.
+[teaching] That's the gap. And it's the specific thing that keeps intermediate players stuck. Not lack of skill — lack of vocabulary. You can feel the failure but you can't name it, so you can't fix it. Next week you walk into the same scene and make the same mistake, because "it just died" isn't a diagnosis.
 
-[curious] Okay, give me the vocabulary.
+[curious] So give me the vocabulary. What are we naming?
 
-[serious] Every scene failure falls into one of three collapse modes. Latency, fracture, or decay.
+[teaching] Three collapse modes. Every scene that doesn't work fails in one of three ways. Latency, fracture, or decay.
 
-[leaning in] Three modes. That's it?
+[curious] Start with latency.
 
-[teaching] That's it. Let's go through them. Latency means the responses came too slow or landed on the wrong beat. Someone retreated into their head, what we'd call internal computation, and by the time they resurfaced, the scene had moved on. The rhythm broke. The energy dropped. Both players felt the lag but couldn't name it.
+[teaching] Latency is when the responses come too slow, or they land on the wrong beat. Someone went into their head — they're computing, they're trying to figure out the smart move — and by the time they come back up for air, the scene has moved on. The rhythm is gone. You both feel the lag. Neither of you can name it, but the audience felt it the second it happened. Latency is the overthinker's collapse mode.
 
-[contemplative] Latency is the collapse mode of the overthinker.
+[conversational] And you can feel it in life too, right? That meeting where you had the thing to say but you were workshopping it in your head, and by the time you opened your mouth the conversation was two topics downstream.
 
-[conversational] Exactly. Now, fracture. This is when two players end up in different scenes. One thought they were having a serious conversation. The other thought they were doing a bit. The signals diverged somewhere, an offer was missed or misread, and the shared reality split.
+[warm] Exactly. The room registered your silence. Same in a scene.
 
-[curious] And neither player can see it because they're both inside their own version.
+[curious] Okay, fracture.
 
-[warm] Right. They can't figure out why it feels off because they can't see the scene from outside. And then there's decay. The scene goes thin. Details stop mattering. Earlier threads are dropped. Nothing accumulates. The scene doesn't break or lag. It just fades.
+[teaching] Fracture is when the two players end up in different scenes. One of you thinks you're having a serious conversation about a dying parent. The other one thinks you're doing a bit about how weird hospitals smell. The signals diverged somewhere — an offer got missed, or it got read the wrong way — and now you have two scenes happening in the same physical space.
 
-[contemplative] Like a campfire that nobody's feeding.
+[curious] And the killer is you can't see it from inside.
 
-[teaching] Perfect analogy. Now, within those modes, specific antipatterns are usually at work. And this is where it gets really useful for self-coaching.
+[teaching] That's the thing. From the inside, you just feel the wrongness. You think your partner is being weird. Your partner thinks you're being weird. Neither of you can figure out that you're literally not in the same scene anymore.
 
-[leaning in] Walk me through them.
+[curious] And decay?
 
-[serious] Performing cleverness. You're crafting a joke instead of responding to your partner. The audience gets a punchline but the scene gets nothing. This is the intermediate trap. You're skilled enough to be funny and it's killing your scenes.
+[teaching] Decay is the quiet one. The scene doesn't break. It doesn't lag. It just... thins out. Details stop mattering. The thing you established in minute one never comes back. Offers get made but nothing gets built on them. The scene fades.
 
-[curious] That's brutal. What else?
+[conversational] This is the one that feels the most like "I don't know, it just died."
 
-[conversational] Hesitation. The gap between impulse and action. You had the response but you second-guessed it. The moment passed. In an irreversible system, the scene registers that absence. There's a hole where your response should have been.
+[warm] Because nothing went wrong in any one moment. It's the absence of deepening. Nobody stepped on a rake — nobody watered the plant either.
 
-[teaching] Bulldozing. You're driving your agenda regardless of what your partner offers. You're in the scene but not in the same scene. You're generating but not receiving.
+[curious] So those are the modes. But if I'm trying to practice, "my scene had decay" isn't enough. What was I actually doing wrong?
 
-[contemplative] And then there's steering, which sounds like bulldozing but subtler?
+[teaching] Right, that's the next layer. Inside those collapse modes there are specific antipatterns — specific behaviors you can actually catch yourself doing. Let me name the big ones.
 
-[warm] Much subtler. You're accepting your partner's offers on the surface, but redirecting everything toward where you want the scene to go. You look collaborative. But you're not. Your partner can feel it even if they can't articulate it.
+[emphatic] Performing cleverness. You're crafting a joke instead of responding to your partner. You're writing a punchline in your head while they're talking. The audience gets the joke and the scene gets nothing. And here's the brutal part — this is the intermediate trap. You're skilled enough to be funny. That skill is now killing your scenes.
 
-[curious] What about when scenes just get too heavy? Too much going on?
+[curious] Oof.
 
-[teaching] Overcomplication. You added a fourth element when two would have served. You introduced a new character when the relationship needed deepening. You invented plot when the game needed heightening. The scene got heavy and stopped moving.
+[teaching] Hesitation. That half-second between the impulse and the action. You had the response. You second-guessed. The moment passed. And improv is an irreversible system — the scene registers the absence. The silence where your yes should have been is itself an offer, just a bad one.
 
-[serious] And finally, judgment. You're evaluating the scene while you're in it. "This isn't working." "My partner's choices are weird." "I should have said something different." The evaluation circuit fires and the creation circuit shuts down.
+[curious] What about the player who's generating a ton but nothing's landing?
 
-[leaning in] You can't build and audit simultaneously.
+[teaching] Two flavors. Bulldozing — you're driving your agenda, you don't care what your partner just offered, you're in a scene but not the same one as them. And then the subtler version — steering. Steering looks collaborative. You're accepting their offers on the surface. Yes, and. But everything you yes-and gets quietly redirected toward where you wanted the scene to go. You're a polite bulldozer.
 
-[warm] You really can't. The moment you step outside the scene to judge it, you've left the scene. You're a critic, not a player.
+[conversational] That one's insidious because you can convince yourself you're being a great scene partner.
 
-[pause]
+[warm] You'll have video of yourself saying yes to everything and still be the reason the scene collapsed.
 
-[curious] So how do you actually use this vocabulary? Like, after a scene?
+[curious] Keep going.
 
-[teaching] Three questions. First: which collapse mode was it? Latency, fracture, or decay? Second: which antipattern was operating? Was I computing, performing cleverness, hesitating, bulldozing, steering, overcomplicating, or judging? Third, and this is the one that turns diagnosis into practice: what would the opposite behavior have looked like?
+[teaching] Overcomplication. You added a fourth element when two would've worked. You introduced a new character when what the relationship needed was to get deeper. You invented plot when the game needed heightening. The scene gets heavy, and heavy scenes stop moving.
 
-[contemplative] The opposite behavior. So if I was hesitating, the opposite is committing to the first impulse.
+[contemplative] And then the one that runs underneath all of them — judgment. You're evaluating the scene while you're in it. "This isn't working." "Why did they say that." "I should have done the other thing." The evaluation circuit fires and the creation circuit shuts off. You literally cannot build and audit at the same time. Your brain won't let you.
 
-[conversational] If I was overcomplicating, the opposite is stripping down to the simplest version. If I was judging, the opposite is staying inside the scene and building.
+[curious] So how do I actually use all this? I do a scene, it dies, now what?
 
-[warm] The vocabulary isn't just for naming what went wrong. It's for seeing what to try next. That's what makes it a tool and not just a taxonomy.
+[teaching] Three questions. Ask them the second you step offstage, before the feeling fades. One — which collapse mode was it? Latency, fracture, or decay. Two — which antipattern was running? Was I computing, performing cleverness, hesitating, bulldozing, steering, overcomplicating, judging. Three — and this is the one that matters — what would the opposite have looked like?
+
+[curious] Why is that third one the one?
+
+[warm] Because the first two questions are diagnosis. Naming what went wrong. The third one turns it into practice. "I was performing cleverness" is a label. "I should have just repeated back what she said and watched her face" is a rehearsal. You can actually walk into the next scene and do the opposite thing.
+
+[conversational] And this is the part that bleeds into life. The vocabulary isn't just for the stage. The next time a conversation with your partner goes sideways and you feel that same "I don't know, it just died" feeling — ask the questions. Was I latent? Were we fractured? Did it decay because neither of us deepened? Was I steering?
+
+[teaching] You'll be surprised how often the answer is obvious the moment you have the words for it.
+
+[contemplative] The thing nobody tells you about getting better at improv is that most of the work is linguistic. Not doing different things — *seeing* different things. And you can't see what you can't name.
+
+[rewritten]
