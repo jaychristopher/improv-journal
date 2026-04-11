@@ -1,40 +1,4 @@
 {
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 193,
-    "formatted": "3:13"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 210,
-    "formatted": "3:30"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 214,
-    "formatted": "3:34"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 222,
-    "formatted": "3:42"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 217,
-    "formatted": "3:37"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 185,
-    "formatted": "3:05"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 223,
-    "formatted": "3:43"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 187,
-    "formatted": "3:07"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 199,
-    "formatted": "3:19"
-  },
   "/audio/threads/traditions-in-tension.mp3": {
     "seconds": 392,
     "formatted": "6:32"
@@ -96,8 +60,8 @@
     "formatted": "4:18"
   },
   "/audio/threads/conversation-that-felt-like-magic.mp3": {
-    "seconds": 191,
-    "formatted": "3:11"
+    "seconds": 555,
+    "formatted": "9:15"
   },
   "/audio/threads/clear-signal-simple-signal.mp3": {
     "seconds": 546,
@@ -115,45 +79,41 @@
     "seconds": 512,
     "formatted": "8:32"
   },
-  "/audio/bridges/team-building-activities.mp3": {
-    "seconds": 557,
-    "formatted": "9:17"
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
   },
-  "/audio/bridges/stage-fright.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
   },
-  "/audio/bridges/psychological-safety.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
   },
-  "/audio/bridges/how-to-stop-overthinking.mp3": {
-    "seconds": 568,
-    "formatted": "9:28"
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
   },
-  "/audio/bridges/how-to-give-feedback.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 217,
+    "formatted": "3:37"
   },
-  "/audio/bridges/how-to-deal-with-conflict.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 185,
+    "formatted": "3:05"
   },
-  "/audio/bridges/how-to-be-more-creative.mp3": {
-    "seconds": 510,
-    "formatted": "8:30"
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 223,
+    "formatted": "3:43"
   },
-  "/audio/bridges/how-to-be-more-confident.mp3": {
-    "seconds": 530,
-    "formatted": "8:50"
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 187,
+    "formatted": "3:07"
   },
-  "/audio/bridges/how-to-be-funny.mp3": {
-    "seconds": 531,
-    "formatted": "8:51"
-  },
-  "/audio/bridges/active-listening.mp3": {
-    "seconds": 617,
-    "formatted": "10:17"
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 199,
+    "formatted": "3:19"
   },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 164,
@@ -258,5 +218,45 @@
   "/audio/atoms/be-brave.mp3": {
     "seconds": 215,
     "formatted": "3:35"
+  },
+  "/audio/bridges/team-building-activities.mp3": {
+    "seconds": 557,
+    "formatted": "9:17"
+  },
+  "/audio/bridges/stage-fright.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/psychological-safety.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-stop-overthinking.mp3": {
+    "seconds": 568,
+    "formatted": "9:28"
+  },
+  "/audio/bridges/how-to-give-feedback.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-deal-with-conflict.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/how-to-be-more-creative.mp3": {
+    "seconds": 510,
+    "formatted": "8:30"
+  },
+  "/audio/bridges/how-to-be-more-confident.mp3": {
+    "seconds": 530,
+    "formatted": "8:50"
+  },
+  "/audio/bridges/how-to-be-funny.mp3": {
+    "seconds": 531,
+    "formatted": "8:51"
+  },
+  "/audio/bridges/active-listening.mp3": {
+    "seconds": 617,
+    "formatted": "10:17"
   }
 }
