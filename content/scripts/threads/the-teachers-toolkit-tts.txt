@@ -1,69 +1,87 @@
-[conversational] So you can do improv. You've been performing for a while. And then someone asks you to teach it. And you discover something uncomfortable.
+[curious] So you can do improv. You've been on stage, you've had the good nights and the terrible nights, you know the feeling of a scene clicking into place. And then someone hands you a group of students and says, "teach them." What happens in that moment?
 
-[nervous] Knowing how to ride a bicycle and knowing how to teach someone to ride a bicycle are completely different skills.
+[teaching] You discover that knowing how to ride a bicycle and knowing how to teach someone to ride a bicycle are completely different skills. You've got all this tacit knowledge in your body, and suddenly you have to translate it into words, exercises, feedback, timing. And none of the things that made you a good player automatically make you a good teacher.
 
-[warm] Completely different. The performer-to-teacher transition isn't about learning new improv skills. It's about developing a whole new set of capacities: reading a room, structuring a class, giving feedback that actually changes behavior, and creating the conditions where other people can fail safely.
+[curious] Okay, but if it's not just "be good at improv and pass it on," what is it? What's the actual skill?
 
-[curious] Let's start with that last one. Because I've heard people say safety is the foundation of everything in improv teaching.
+[teaching] It's a whole new set of capacities. Reading a room. Structuring a class. Giving feedback that actually changes behavior instead of just describing it. And maybe most importantly, creating the conditions where other people can fail safely. That last one — that's where you start.
 
-[teaching] Before any improv skill can be taught, the environment must support failure. This is non-negotiable. Students who fear judgment won't take risks. Students who don't take risks won't learn. Your job isn't to make them comfortable, because improv is inherently uncomfortable. Your job is to make the discomfort safe.
+[curious] Safety in the room. I hear that phrase a lot and I'm not always sure what people mean by it. Is it like, everyone hugs at the start of class?
 
-[leaning in] How do you actually do that? What does safety look like in practice?
+[warm] [short pause] No. And this is the thing people get wrong. Safety isn't comfort. Improv is inherently uncomfortable — you're asking people to be stupid in front of strangers, to commit to things they don't believe, to be seen. Your job isn't to take the discomfort away. Your job is to make the discomfort survivable.
 
-[conversational] Boundaries matter. Start on time, end on time. That predictability is a container. Names matter. Learn everyone's name immediately. It signals that each person is seen. And modeling matters enormously. Fail in front of your students. Do an exercise and bomb it. Show them it's survivable.
+[curious] So how do you actually build that?
 
-[contemplative] You're not just telling them failure is okay. You're proving it with your own body.
+[teaching] Boundaries. Boring, unsexy boundaries. Start on time. End on time. Learn everyone's name immediately — like, before the first exercise. Because the second a student feels like a number in your class, they're going to protect themselves, and protected students don't take risks, and students who don't take risks don't learn.
 
-[warm] Exactly. Safety isn't a speech you give at the beginning of class. It's a reality you demonstrate continuously.
+[curious] That sounds almost administrative.
 
-[pause]
+[matter-of-fact] It is administrative. And it's the foundation. The other piece is modeling. You have to fail in front of your students. Visibly. Not a fake stumble — a real one. Because they're watching you to see what happens when it goes wrong. If you can bomb a side-coach, laugh, and keep going, they learn that bombing is survivable. If you get tight and defensive, they learn the opposite, and no exercise you run after that is going to undo it.
 
-[curious] What about structuring a class? Because I imagine you can't just run random exercises.
+[curious] Okay, safety is the floor. What's built on top of it?
 
-[teaching] Curriculum design is the architecture underneath your class plan. Skills build on prerequisites. You need listening before yes-and, because you can't accept what you didn't hear. You need yes-and before game, because you can't play a pattern you keep denying. You need scene work before editing, because you can't judge when a scene is done if you can't recognize what a scene is doing.
+[teaching] Curriculum. And I don't mean your lesson plan for Tuesday night — I mean the architecture underneath it. Skills have prerequisites. You can't teach yes-and to someone who isn't listening, because you can't accept what you didn't hear. You can't teach game to someone who's still denying, because you can't play a pattern you keep blocking. You can't teach editing to someone who can't yet recognize what a scene is doing.
 
-[matter-of-fact] Every school follows roughly the same progression. Safety, then listening and acceptance, then scene work, then game, then form, then performance. The details differ. The architecture is universal.
+[curious] So there's an order.
 
-[curious] And warm-ups? I always assumed those were just to get people loose.
+[teaching] Every school teaches roughly the same progression. Safety, then listening and acceptance, then scene work, then game, then form, then performance. The flavors differ — UCB leans into game, iO leans into relationship, the Johnstone world leans into status and narrative — but the architecture is universal. If you try to teach a later skill before the earlier one is in place, it doesn't land. You're not building on rock; you're building on air.
 
-[conversational] Warm-ups aren't filler. They're your diagnostic instrument. The warm-up tells you where the group's energy is today. And today's energy may be nothing like last week's. They might be exhausted. They might be wired. They might be checked out.
+[curious] [short pause] That actually explains something. I've been in workshops where a concept felt slippery and I couldn't figure out why, and in retrospect it's because I hadn't nailed the thing underneath it.
 
-[teaching] Jay Sukow puts it perfectly: "Over prepare, then throw your lesson plan out the window and hear what the students want to do." The warm-up is where you hear what they want to do.
+[warm] Right. And as a teacher, when a student is struggling, your first question shouldn't be "how do I explain this better?" It should be "what's the prerequisite they don't have yet?" Usually the fix is one layer down.
 
-[contemplative] So you over-prepare and then adapt.
+[curious] So you walk in with your beautiful lesson plan, prerequisites all mapped out, and then what?
 
-[warm] Always. The plan gives you options. The room tells you which option to use.
+[conversational] Then you throw it away. [short pause] Or you're ready to.
 
-[pause]
+[curious] Wait, really?
 
-[curious] Let's talk about side-coaching. Because I've been in classes where the teacher just says "go" and watches, and classes where the teacher is guiding from the side of the room. Big difference.
+[teaching] Warm-ups aren't filler. They're your diagnostic instrument. The first ten minutes of class tell you where the group actually is today — and today's energy may be nothing like last week's. Maybe they're exhausted. Maybe someone had a bad day and brought it in. Maybe they're wired and can't focus. Jay Sukow says it beautifully: over-prepare, then throw your lesson plan out the window and hear what the students want to do.
 
-[teaching] Side-coaching is the skill that separates a teacher from someone who runs exercises. It's real-time guidance delivered into the work without stopping it. "Slower." "Stay with your partner." "What do you feel?" "Name what you see."
+[curious] That's terrifying advice for a new teacher.
 
-[leaning in] That sounds a lot like improv itself.
+[matter-of-fact] It's terrifying because it sounds like improv. Which it is. Teaching is improv. You're responding to what's in front of you, not executing a plan. The over-preparation isn't wasted — it's what gives you the confidence to abandon it. You can't improvise from nothing. You improvise from readiness.
 
-[warm] Viola Spolin called it an art as much as a skill. And she was right. Side-coaching requires the same presence and responsiveness you use in a scene. You are your students' scene partner from the side of the room. You're reading what's happening and making offers that redirect without interrupting.
+[curious] Let's say the class is rolling. People are doing scenes. What do you do while they're working?
 
-[curious] What about giving notes after exercises? Because I've definitely had teachers who give notes for thirty minutes and you forget everything.
+[teaching] You side-coach. And this is the skill that separates a teacher from someone who just runs exercises. Side-coaching is real-time guidance delivered into the work without stopping it. "Slower." "Stay with your partner." "What do you feel?" "Name what you see." Short, specific, low in the throat, delivered from the side of the room so it enters the scene without interrupting it.
 
-[conversational] This is where most new teachers go wrong. The instinct is to say everything you noticed. Don't. Will Hines says notes should be ten to fifteen minutes max, with a very simple takeaway for each scene.
+[curious] So you're kind of playing with them.
 
-[teaching] And here's the deeper principle: an exercise that creates the right experience is almost always more effective than a verbal note that describes the right behavior. Once a team can feel something working, they can keep doing it. Talking about what they should feel is a poor substitute.
+[warm] You are their scene partner. From the side of the room. Spolin called side-coaching an art as much as a skill, and she was right — it requires the same presence and responsiveness you use on stage. You're listening for what the scene needs and offering it, one word at a time. If you're not present, your coaches land as notes. If you're present, they land as support.
 
-[serious] Show, don't tell. Even in teaching.
+[curious] [short pause] Okay — and then the scene ends. Now you talk about it. This is where I always thought the teaching happens.
 
-[pause]
+[teaching] This is where most new teachers go wrong. The instinct is to say everything you noticed. Every choice, every miss, every opportunity. Don't. Will Hines has this rule: notes are ten to fifteen minutes, max, and each scene gets one very simple take-away. One.
 
-[curious] There's a meta-skill underneath all of this, isn't there?
+[curious] Just one?
 
-[warm] Reading the room. It governs all the other skills. Are they tired? Push them physically. Are they stuck in their heads? Switch to exercises that bypass thinking. Are they playing safe? Raise the stakes. Is someone checking out? Find a way to include them that doesn't spotlight them.
+[matter-of-fact] Just one. Because a student can only change one thing at a time. Give them six notes and they'll try to hold all six in their head in the next scene and their body will lock up and nothing will change. Give them one and there's a chance they'll actually integrate it.
 
-[teaching] This is where teaching becomes improv. You're responding to what's in front of you, not executing a plan. The best teachers I've watched are improvisers in the deepest sense, even when they're not on stage.
+[curious] That's hard. You see so much.
 
-[contemplative] One more thing. I've noticed some teachers are really rigid about rules. Like, "this is how it works, period." And others are more open.
+[teaching] And here's the deeper principle. An exercise that creates the right experience is almost always more effective than a verbal note that describes the right behavior. If a team isn't listening, don't tell them to listen — run an exercise that makes listening unavoidable. Once a team can feel something working, they can keep doing it. Feeling beats explanation every single time.
 
-[conversational] Billy Merritt warns that insecure teachers teach in absolutes. Rigid rules delivered with false certainty. Mature teaching means holding multiple truths simultaneously. Yes-and is powerful and it has limits. Game is useful and not every scene needs one. Johnstone and UCB disagree and they're both right about different things.
+[curious] So notes should almost be a last resort.
 
-[teaching] Your job isn't to have all the answers. Your job is to create the conditions where your students discover their own.
+[teaching] Notes are for naming what they already felt. "Remember that moment in the scene where you slowed down and everything opened up? That. Do more of that." You're pointing at an experience they had, not instructions they need to memorize.
 
-[warm] Trust your teaching voice. Even when it says "I don't know." Especially when it says "I don't know."
+[curious] We keep coming back to this — reading the room, responding to the group, giving one note instead of ten. It all sounds like the same underlying skill.
+
+[contemplative] It is. Reading the room is the meta-skill that governs all the others. Are they tired? Push them physically. Are they stuck in their heads? Switch to exercises that bypass thinking. Are they playing safe? Raise the stakes. Is someone checking out? Find a way to include them that doesn't spotlight them and make it worse. This is where teaching becomes improv again. You're reading and responding, reading and responding.
+
+[curious] And what about when you're not sure? When you genuinely don't know if yes-and applies here, or if game is the right frame, or if this scene needed an edit three beats ago?
+
+[teaching] Trust your teaching voice. And know that uncertainty is not weakness — it's maturity. Billy Merritt has this warning that insecure teachers teach in absolutes. Rigid rules delivered with false certainty. "Never ask questions." "Always raise the stakes." "Never do X." And students hear the confidence and write it down and then they're stuck with a rule that doesn't actually hold up.
+
+[curious] Because the real answer is "it depends."
+
+[confident] The real answer is always "it depends." Mature teaching holds multiple truths at once. Yes-and is powerful and it has limits. Game is useful and not every scene needs one. Johnstone and UCB disagree and they're both right about different things. Your job isn't to have all the answers. Your job is to create the conditions where your students find their own.
+
+[curious] [short pause] That actually feels true outside the classroom too. The people I trust most in my life aren't the ones with the cleanest takes. They're the ones who can sit with "it depends" and still help me move.
+
+[warm] Yeah. Certainty is cheap. Presence is expensive. And teaching improv — really teaching it, not just running the drills — is one of the places you learn the difference.
+
+[emphatic] You started as a player. Now you're the room. The skill isn't bigger improv. It's quieter improv. You listen harder, you speak less, you trust the work to do the work, and you fail in front of them so they know they can fail too.
+
+[rewritten]
