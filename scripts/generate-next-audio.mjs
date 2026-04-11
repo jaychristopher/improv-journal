@@ -28,13 +28,13 @@ const TYPE_PRIORITY = {
   law: 1,
   antipattern: 2,
   technique: 3,
-  definition: 4,
-  pattern: 5,
-  format: 6,
+  definition: null,
+  pattern: null,
+  format: null,
   insight: 7,
-  pedagogy: 8,
+  pedagogy: null,
   framework: 9,
-  reference: 10,
+  reference: null,
 };
 
 function getNextItem() {
@@ -48,14 +48,15 @@ function getNextItem() {
     const { data } = matter(raw);
     const hasScript = fs.existsSync(path.join(SCRIPTS_DIR, "atoms", `${slug}-tts.txt`));
     const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "atoms", `${slug}.mp3`));
-    if (!hasAudio) {
+    const priority = TYPE_PRIORITY[data.type];
+    if (!hasAudio && priority != null) {
       items.push({
         layer: "atom",
         type: data.type || "unknown",
         slug,
         title: data.title || slug,
         hasScript,
-        priority: TYPE_PRIORITY[data.type] ?? 99,
+        priority,
         scriptDir: "atoms",
         audioDir: "atoms",
       });
@@ -88,14 +89,74 @@ function getNextItem() {
   return items[0] || null;
 }
 
+/**
+ * Find next item that has an existing script needing rewrite.
+ * Returns items with audio (i.e., script + audio exist, need refresh).
+ */
+function getNextRewrite() {
+  const items = [];
+
+  // Atoms with existing scripts
+  const atomsDir = path.join(CONTENT_DIR, "atoms");
+  for (const file of fs.readdirSync(atomsDir).filter((f) => f.endsWith(".md"))) {
+    const slug = path.basename(file, ".md");
+    const raw = fs.readFileSync(path.join(atomsDir, file), "utf-8");
+    const { data } = matter(raw);
+    const priority = TYPE_PRIORITY[data.type];
+    const scriptFile = path.join(SCRIPTS_DIR, "atoms", `${slug}-tts.txt`);
+    const hasScript = fs.existsSync(scriptFile);
+    const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "atoms", `${slug}.mp3`));
+    // Rewrite items that already have both script and audio
+    if (hasScript && hasAudio && priority != null) {
+      // Check if script has been rewritten (marker comment at end)
+      const script = fs.readFileSync(scriptFile, "utf-8");
+      if (!script.includes("[rewritten]")) {
+        items.push({
+          layer: "atom", type: data.type || "unknown", slug,
+          title: data.title || slug, hasScript: true,
+          priority, scriptDir: "atoms", audioDir: "atoms",
+        });
+      }
+    }
+  }
+
+  // Threads with existing scripts
+  const threadsDir = path.join(CONTENT_DIR, "threads");
+  for (const file of fs.readdirSync(threadsDir).filter((f) => f.endsWith(".md"))) {
+    const slug = path.basename(file, ".md");
+    const raw = fs.readFileSync(path.join(threadsDir, file), "utf-8");
+    const { data } = matter(raw);
+    const scriptFile = path.join(SCRIPTS_DIR, "threads", `${slug}-tts.txt`);
+    const hasScript = fs.existsSync(scriptFile);
+    const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "threads", `${slug}.mp3`));
+    if (hasScript && hasAudio) {
+      const script = fs.readFileSync(scriptFile, "utf-8");
+      if (!script.includes("[rewritten]")) {
+        items.push({
+          layer: "thread", type: "thread", slug,
+          title: data.title || slug, hasScript: true,
+          priority: 0, scriptDir: "threads", audioDir: "threads",
+        });
+      }
+    }
+  }
+
+  items.sort((a, b) => a.priority - b.priority || a.slug.localeCompare(b.slug));
+  return items[0] || null;
+}
+
 const args = process.argv.slice(2);
 const isDryRun = args.includes("--dry-run") || args.includes("-n");
 const scriptOnly = args.includes("--script-only");
+const rewriteMode = args.includes("--rewrite");
 
-const item = getNextItem();
+// In rewrite mode, pick an existing script to refresh; otherwise pick from backlog
+const item = rewriteMode ? getNextRewrite() : getNextItem();
 
 if (!item) {
-  console.log("✓ Backlog complete! All items have audio.");
+  console.log(rewriteMode
+    ? "✓ All existing scripts have been rewritten!"
+    : "✓ Backlog complete! All items have audio.");
   process.exit(0);
 }
 
@@ -119,47 +180,42 @@ if (isDryRun) {
   process.exit(0);
 }
 
-// Step 1: Write TTS script if missing
-if (!item.hasScript) {
+// Step 1: Write TTS script (if missing, or if rewriting)
+if (!item.hasScript || rewriteMode) {
   console.log("Step 1: Writing TTS script...");
 
   // Ensure script directory exists
   fs.mkdirSync(path.dirname(scriptPath), { recursive: true });
 
-  // Read the source content
+  // Read the source content and script guide
   const sourceContent = fs.readFileSync(contentPath, "utf-8");
   const { content: markdown } = matter(sourceContent);
+  const scriptGuide = fs.readFileSync(
+    path.join(SCRIPTS_DIR, "SCRIPT_GUIDE.md"), "utf-8"
+  );
 
-  // Read a reference script for style
-  const refDir = path.join(SCRIPTS_DIR, item.scriptDir);
-  const refFiles = fs.existsSync(refDir)
-    ? fs.readdirSync(refDir).filter((f) => f.endsWith("-tts.txt"))
-    : [];
-  const refScript =
-    refFiles.length > 0
-      ? fs.readFileSync(path.join(refDir, refFiles[0]), "utf-8").slice(0, 2000)
-      : "";
+  // Check if this is organizational content
+  const ORG_ATOMS = ["curriculum-design", "giving-notes", "safety-in-the-room", "side-coaching"];
+  const isOrg = ORG_ATOMS.includes(item.slug);
+  const audienceNote = isOrg
+    ? "AUDIENCE: This is ORGANIZATIONAL content. Frame for someone applying improv principles in a team or classroom — not a performer on stage."
+    : "AUDIENCE: Frame for an improv performer. Tie into life off stage where it fits naturally.";
 
-  // Build prompt for Claude to write the script
-  const prompt = `Write a TTS podcast script for this ${item.type} content. The script should be a two-voice dialogue between curious and knowledgeable hosts exploring this topic conversationally.
+  const wordTarget = item.layer === "thread" ? "1500-2500 words (6-10 min)" : "800-1200 words (3-5 min)";
 
-FORMAT RULES:
-- Each paragraph is a new speaker turn (they alternate)
-- Start each paragraph with an [emote] tag: [curious], [teaching], [conversational], [warm], [emphatic], [contemplative], [serious], [matter-of-fact], [confident]
-- Use [short pause], [pause], [long pause] for pacing
-- No markdown, no headers, no bold — plain text only
-- No speaker labels (A:/B:) — just emote tags and text
-- Aim for 800-1500 words (3-6 minutes of audio)
-- Cover the key ideas faithfully but make it feel like a real conversation
-- End naturally, don't summarize
+  // Build prompt
+  const prompt = `${scriptGuide}
 
-REFERENCE STYLE (from an existing script):
-${refScript}
+---
 
-SOURCE CONTENT TO ADAPT:
+${audienceNote}
+
+TARGET LENGTH: ${wordTarget}
+
+SOURCE CONTENT TO ADAPT (type: ${item.type}):
 ${markdown}
 
-Write ONLY the TTS script, nothing else.`;
+Write ONLY the TTS script following the guide above. No preamble, no markdown fences.`;
 
   // Write prompt to temp file and call Claude
   const promptPath = path.join(process.cwd(), ".tmp-tts-prompt.txt");
@@ -179,7 +235,9 @@ Write ONLY the TTS script, nothing else.`;
       .replace(/```$/gm, "")
       .trim();
 
-    fs.writeFileSync(scriptPath, script);
+    // Add rewritten marker so we don't reprocess
+    const finalScript = script + "\n\n[rewritten]";
+    fs.writeFileSync(scriptPath, finalScript);
     console.log(`  ✓ Script written: ${scriptPath} (${script.length} chars)`);
   } catch (e) {
     console.error(`  ✗ Failed to write script: ${e.message}`);
@@ -197,7 +255,7 @@ if (scriptOnly) {
 // Step 2: Generate audio
 console.log("Step 2: Generating audio...");
 try {
-  execSync(`node scripts/generate-episode.mjs "${scriptPath}" "${audioPath}"`, {
+  execSync(`node scripts/generate-episode.mjs "${scriptPath}" "${audioPath}" --public`, {
     stdio: "inherit",
     timeout: 600000,
   });

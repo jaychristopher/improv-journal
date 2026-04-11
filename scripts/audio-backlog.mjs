@@ -15,18 +15,18 @@ const CONTENT_DIR = path.join(process.cwd(), "content");
 const SCRIPTS_DIR = path.join(CONTENT_DIR, "scripts");
 const AUDIO_DIR = path.join(process.cwd(), "public", "audio");
 
-/** Priority order for atom types (lower = higher priority) */
+/** Priority order for atom types (lower = higher priority, null = skip) */
 const TYPE_PRIORITY = {
   law: 1,
   antipattern: 2,
   technique: 3,
-  definition: 4,
-  pattern: 5,
-  format: 6,
+  definition: null,   // skip for now
+  pattern: null,       // skip for now
+  format: null,        // skip for now
   insight: 7,
-  pedagogy: 8,
+  pedagogy: null,      // skip for now
   framework: 9,
-  reference: 10,
+  reference: null,     // skip for now
 };
 
 function getBacklog() {
@@ -42,8 +42,9 @@ function getBacklog() {
       const type = data.type || "unknown";
       const hasScript = fs.existsSync(path.join(SCRIPTS_DIR, "atoms", `${slug}-tts.txt`));
       const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "atoms", `${slug}.mp3`));
+      const priority = TYPE_PRIORITY[type];
 
-      if (!hasAudio) {
+      if (!hasAudio && priority != null) {
         items.push({
           layer: "atom",
           type,
@@ -51,7 +52,7 @@ function getBacklog() {
           title: data.title || slug,
           hasScript,
           hasAudio,
-          priority: TYPE_PRIORITY[type] ?? 99,
+          priority,
           scriptPath: `content/scripts/atoms/${slug}-tts.txt`,
           audioPath: `public/audio/atoms/${slug}.mp3`,
           contentPath: `content/atoms/${slug}.md`,

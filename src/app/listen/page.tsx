@@ -36,8 +36,8 @@ export default async function ListenPage() {
         <span className="text-foreground/40 text-xs tracking-wider uppercase">podcast</span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">Listen</h1>
         <p className="text-foreground/60 mt-2">
-          {totalEpisodes} conversations between Chris and Sarah — exploring the physics of human
-          connection through the lens of improvisation.
+          {totalEpisodes} conversations exploring the physics of human connection through the lens
+          of improvisation.
         </p>
       </header>
 
