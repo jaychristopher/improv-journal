@@ -57,7 +57,9 @@ function linkSources(htmlStr: string): string {
     result = result.replace(emPattern, (match, title, offset) => {
       const before = result.slice(Math.max(0, offset - 100), offset);
       if (before.includes("<a ") && !before.includes("</a>")) return match;
-      return `<a href="${url}"><em>${title}</em></a>`;
+      const ref = getAtomUrlMap().get(url.replace("/library/", ""));
+      const tip = ref ? ref.tip.replace(/"/g, "&quot;") : title;
+      return `<a href="${url}" title="${tip}"><em>${title}</em></a>`;
     });
   }
   return result;
@@ -114,21 +116,33 @@ export function loadSources() {
  * Atom slug → URL map, built from filesystem frontmatter (no HTML rendering).
  * Used to resolve `<code>atom-id</code>` references into links.
  */
-let _atomUrlMap: Map<string, { title: string; url: string }> | null = null;
+let _atomUrlMap: Map<string, { title: string; url: string; tip: string }> | null = null;
 
-function getAtomUrlMap(): Map<string, { title: string; url: string }> {
+function getAtomUrlMap(): Map<string, { title: string; url: string; tip: string }> {
   if (_atomUrlMap) return _atomUrlMap;
   _atomUrlMap = new Map();
   const dir = path.join(CONTENT_DIR, "atoms");
   if (!fs.existsSync(dir)) return _atomUrlMap;
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".md"))) {
     const raw = fs.readFileSync(path.join(dir, file), "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const fm = data as AtomFrontmatter;
     if (fm.id && fm.type) {
+      // Extract first sentence for tooltip (strip markdown formatting)
+      const firstSentence =
+        content
+          .replace(/^\s*\*\*[^*]+\*\*:?\s*/m, "") // strip leading bold label
+          .replace(/\*\*([^*]+)\*\*/g, "$1") // strip bold
+          .replace(/\*([^*]+)\*/g, "$1") // strip italic
+          .replace(/`([^`]+)`/g, "$1") // strip code
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // strip links
+          .trim()
+          .split(/(?<=[.!?])\s/)[0] // first sentence
+          ?.substring(0, 120) || fm.title;
       _atomUrlMap.set(fm.id, {
         title: fm.title,
         url: getAtomUrl({ id: fm.id, type: fm.type }),
+        tip: firstSentence,
       });
     }
   }
@@ -144,7 +158,8 @@ function linkAtomRefs(htmlStr: string): string {
   return htmlStr.replace(/<code>([a-z][a-z0-9-]*)<\/code>/g, (match, id) => {
     const atom = urlMap.get(id);
     if (!atom) return match;
-    return `<a href="${atom.url}">${atom.title}</a>`;
+    const tip = atom.tip.replace(/"/g, "&quot;");
+    return `<a href="${atom.url}" title="${tip}">${atom.title}</a>`;
   });
 }
 
