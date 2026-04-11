@@ -68,8 +68,8 @@
     "formatted": "5:20"
   },
   "/audio/threads/character-as-discovery.mp3": {
-    "seconds": 724,
-    "formatted": "12:04"
+    "seconds": 646,
+    "formatted": "10:46"
   },
   "/audio/threads/building-on-offers.mp3": {
     "seconds": 582,
@@ -78,42 +78,6 @@
   "/audio/threads/beyond-the-harold.mp3": {
     "seconds": 512,
     "formatted": "8:32"
-  },
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 193,
-    "formatted": "3:13"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 210,
-    "formatted": "3:30"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 214,
-    "formatted": "3:34"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 222,
-    "formatted": "3:42"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 217,
-    "formatted": "3:37"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 185,
-    "formatted": "3:05"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 223,
-    "formatted": "3:43"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 187,
-    "formatted": "3:07"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 199,
-    "formatted": "3:19"
   },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 557,
@@ -154,6 +118,42 @@
   "/audio/bridges/active-listening.mp3": {
     "seconds": 617,
     "formatted": "10:17"
+  },
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 217,
+    "formatted": "3:37"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 185,
+    "formatted": "3:05"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 223,
+    "formatted": "3:43"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 187,
+    "formatted": "3:07"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 199,
+    "formatted": "3:19"
   },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 164,
