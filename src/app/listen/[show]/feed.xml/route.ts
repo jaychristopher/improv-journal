@@ -26,9 +26,16 @@ function loadDurations(): Record<string, { seconds: number; formatted: string }>
   }
 }
 
-function getFileSize(audioUrl: string): number {
-  const filePath = path.join(process.cwd(), "public", audioUrl);
+function getFileSize(
+  audioUrl: string,
+  durations: Record<string, { seconds: number; formatted: string; size?: number }>,
+): number {
+  // Try durations cache first (avoids fs access on audio files in serverless)
+  const dur = durations[audioUrl];
+  if (dur && "size" in dur) return dur.size as number;
+  // Fallback to filesystem (local dev only)
   try {
+    const filePath = path.join(process.cwd(), "public", audioUrl);
     return fs.statSync(filePath).size;
   } catch {
     return 0;
@@ -62,7 +69,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
   const items = allEpisodes
     .map((ep, i) => {
       const dur = durations[ep.audioUrl];
-      const fileSize = getFileSize(ep.audioUrl);
+      const fileSize = getFileSize(ep.audioUrl, durations);
       const durationSecs = dur?.seconds ?? 0;
       const hours = Math.floor(durationSecs / 3600);
       const mins = Math.floor((durationSecs % 3600) / 60);
