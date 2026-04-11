@@ -1,53 +1,91 @@
-[conversational] Alright, so you can find the game of the scene. You can heighten it. You know when to rest. That's solid Level 3 work. But I keep hearing there's another level to this.
+[curious] Okay, so I want to talk about game at the mastery level. Because I think most of us get taught game like it's one skill. You find it, you heighten it, you rest, you heighten again. And that works. That gets you through a lot of scenes. But there's a ceiling you hit, right? Where you know you're doing it "correctly" and the scene still feels mechanical.
 
-[teaching] There is. And the first thing to understand is that "game" isn't one thing. It's a taxonomy. Most improvisers learn game as a single concept, one repeatable pattern of unusual behavior. But there are distinct types, and each one works differently.
+[teaching] Yeah. And the ceiling is usually because you're treating game as one thing. It isn't. It's a taxonomy. There are at least seven kinds of games, and they don't all behave the same way. If you heighten a status game the way you'd heighten a behavioral game, you're going to flatten it.
 
-[curious] Break that down for me.
+[curious] Wait, seven? Break that down for me.
 
-[matter-of-fact] Behavioral games, where a character has a tic or habit. Emotional games, where someone has an inappropriate feeling for the situation. Verbal games built on speech patterns. Physical games driven by the body. Status games where power dynamics are the engine. Mapping games where you treat X as Y. And scenic games where the space itself generates the pattern.
+[teaching] Sure. Behavioral game — a character has a tic, a habit, a way of moving through the world. Emotional game — the wrong feeling in the wrong place, like grief at a birthday party. Verbal game — a speech pattern, a word they can't stop saying, a rhythm. Physical game — the body is the engine, a posture or a gesture that keeps generating comedy. Status game — power is the pattern, who's up, who's down, who thinks they're up and isn't. Mapping game — you're treating one thing as another, the board meeting as a funeral, the dog as a teenager. And scenic game — the space itself is generating the pattern. A waiting room where nobody can stop apologizing.
 
-[leaning in] And these aren't just categories for fun. They actually heighten differently?
+[curious] Okay, so why does this taxonomy matter? I mean, isn't it still "find the unusual thing and do more of it"?
 
-[teaching] They heighten differently, rest differently, and resolve differently. A behavioral game heightens by the behavior becoming more extreme or appearing in higher-stakes contexts. An emotional game heightens by the emotion becoming more inappropriate to the circumstances. Knowing which type you're playing lets you make more precise choices about where to go next.
+[teaching] [short pause] At the surface, yes. But each type heightens differently. A behavioral game heightens by escalation — the tic becomes more disruptive, more costly. A mapping game heightens by drawing more of the mapped world in — if the board meeting is a funeral, now someone's giving a eulogy, now someone's choosing hymns. A status game heightens by stakes, not by volume. If you try to heighten a status game by making the high-status person louder, you're not heightening, you're just yelling.
 
-[contemplative] That's a huge shift. From "find the game and make it bigger" to "identify what kind of game this is and heighten it in the way that suits its type."
+[conversational] Oh. Yeah. I've seen that scene. I've *been* in that scene.
 
-[warm] Exactly. And here's the second thing: games don't just get bigger. They evolve.
+[teaching] Everyone has. And rests work differently too. You can rest a behavioral game by just letting the character do normal things for thirty seconds. You cannot rest a scenic game that way, because the moment you stop playing the space, the game dies. Scenic games rest by shifting focus within the space, not by leaving it.
 
-[curious] Evolve how?
+[curious] So knowing the type is like knowing which tool you're holding.
 
-[conversational] A game can pivot, shifting to a new expression of the same underlying pattern. It can invert, where the mechanism reverses entirely. It can combine with another game, where two patterns merge into something new. Or it can transcend, where the mechanical pattern suddenly reveals a genuine emotional truth underneath.
+[teaching] Right. And the second thing — this is the part that took me years to really get — games don't just get bigger. They evolve.
 
-[serious] That last one. That's what separates a clever scene from a moving one.
+[curious] What do you mean by evolve?
 
-[teaching] Game evolution is the advanced skill. Anyone can make a pattern bigger. The mastery is knowing when to let the pattern transform. When the audience has gotten the joke, and the scene needs to go somewhere deeper.
+[teaching] There are four moves. A game can pivot. It can invert. It can combine. Or it can transcend. Pivoting is when the underlying pattern stays but the expression changes. Say the game is "this character can't receive a compliment." Pivot: now they can't receive an apology. Same pattern — inability to accept something offered — new surface.
 
-[pause]
+[curious] So the engine is the same, but the fuel changes.
 
-[curious] What about breaking the pattern? The rule of three, right? Two establish, the third subverts?
+[teaching] Exactly. Inverting is when you reverse the mechanism. The character who can't receive compliments suddenly demands them. Same territory, opposite vector. The audience gets the rhyme without the repetition. Combining is when two games merge. You've got a verbal game going in one scene and a mapping game in another, and by the third beat they fuse into something that's neither one alone.
 
-[conversational] That's the simplest structure, yes. But the discipline is knowing when to break. Break too early and the audience feels cheated. They didn't get enough of the pattern to enjoy the disruption. Break for cleverness rather than truth and it reads as abandonment, like you got bored with your own scene.
+[curious] And transcending?
 
-[contemplative] So the best breaks aren't punchlines. They're revelations.
+[teaching] [pause] Transcending is the one that matters most. That's when the mechanical pattern reveals an actual emotional truth underneath. The character who can't receive compliments — turns out it's because their mother only praised them when she wanted something. And now the game isn't a game anymore. It's a person.
 
-[warm] The best breaks reveal something about the character that the pattern alone couldn't show. The character who's been lying compulsively suddenly tells the truth, and in that single honest moment, you understand why they were lying all along.
+[contemplative] That's the thing that separates a clever scene from a moving one.
 
-[curious] Let me ask about analogous scenes. Because that's a Harold concept, right? Second beat?
+[teaching] That's *exactly* the thing. And you can't force transcendence. You can't decide to do it. What you can do is stay open to it. Keep asking what the pattern means for this person, not just what it means for the laugh. And when it opens up, you follow it down. That's when people leave a show remembering a specific moment instead of just remembering they had a good time.
 
-[teaching] The analogous scene transplants a game into a completely different context. Different characters, different world, same underlying logic. And the key is the level of abstraction. Not "the doctor who lies" but "a trusted professional who betrays trust."
+[curious] Okay. Third thing. Because I know there's a third thing.
 
-[leaning in] Abstract enough to generate fresh scenes. Specific enough that the audience feels the connection.
+[teaching] [warm] Yeah. Sometimes you need to break the pattern. And this is where improvisers get into trouble, because we all know the rule of three. Two iterations establish, the third subverts. Fine. Everyone learns that. The real discipline isn't knowing the rule — it's knowing *when*.
 
-[matter-of-fact] If you go too specific, the second beat is just a retread. "Another liar." If you go too abstract, the audience loses the thread. "Wait, how is this related?" The sweet spot is finding the principle underneath the behavior.
+[curious] When's the wrong time to break?
 
-[contemplative] This is really about pattern recognition at a deeper level.
+[teaching] Too early, the audience feels cheated. You showed them a pattern, they started investing in it, and you yanked it before they got to enjoy recognizing it. They feel like they were set up and then ignored. The other wrong time is when you break for cleverness instead of truth. You subvert because you thought of a funny thing to subvert with. The audience can tell. It reads as abandonment. Like you got bored with your own scene.
 
-[teaching] And that brings us to the master question that operates at every level of game work. "If this is true, what else is true?" At the beginner level, you ask it within a single moment. What's the next move in this pattern? At the mastery level, you're asking it across scenes, across beats, across the whole show.
+[curious] So what's the right time?
 
-[curious] So the same question scales from a single line to an entire Harold.
+[teaching] When the break reveals something the pattern alone couldn't. The character who's been cheerfully denying a problem for two beats — the third beat, they break, and we see the real cost. The pattern was hiding the pain. Breaking it shows us the pain. Now the audience feels something they couldn't have felt if you just kept going.
 
-[warm] The same question. Just applied with a wider lens. The game beneath the game isn't a different skill. It's the same skill, played at a higher resolution. You're not just finding patterns. You're understanding what kind of pattern you've found, how it wants to move, when it needs to break, and where it can travel.
+[conversational] It's almost like the pattern earns the break.
 
-[conversational] And that understanding isn't intellectual in the moment. It's felt. You develop the instinct through volume. Through playing hundreds of games and noticing how each type behaves.
+[teaching] That's the right way to say it. The pattern does work, and the work it does is making the break land. If the break comes free, it's worth nothing.
 
-[teaching] The taxonomy gives you language for what your instincts are already doing. And language lets you be precise where before you could only be lucky.
+[curious] [short pause] Fourth thing.
+
+[teaching] The analogous scene. This is the Harold's second-beat engine, but it's not just a Harold thing. It's the move where you take a game from one scene and transplant it into a completely different context. Different characters, different world, same underlying logic.
+
+[curious] Give me one.
+
+[teaching] First beat — a surgeon is casually lying to a patient about how the surgery went. The game is, let's say, a trusted professional performing calm while hiding disaster. Second beat, analogous — it's a wedding, the officiant has lost the rings, and they're improvising a ceremony with total confidence. Totally different scene. Same engine. Trusted professional performing calm while hiding disaster.
+
+[curious] Oh that's nice. It's not the same joke, but the audience *feels* the connection.
+
+[teaching] Yeah. And the reason that move is so powerful is that it proves the pattern is a *pattern*. One instance could be a quirk. Two instances across different worlds — now it's a theme. Now the show has a through-line. The audience didn't know they were watching a show about people performing competence through crisis until beat two told them.
+
+[curious] What's the most common mistake on analogous scenes?
+
+[teaching] Abstraction level. People abstract too literally — "the doctor who lies" becomes "the dentist who lies" — and it's not an analogous scene, it's the same scene with different props. Or they abstract too loosely — they keep only "professional" and drop the lying and the stakes, and the audience can't feel the echo. The sweet spot is abstract enough to generate a fresh situation, specific enough that when it lands, everyone in the audience feels the click of recognition without being able to articulate why.
+
+[contemplative] Not "the doctor who lies." "A trusted professional who betrays trust."
+
+[teaching] Exactly. That's the right altitude.
+
+[curious] Okay. So taxonomy, evolution, breaking, analogous. What ties it all together?
+
+[teaching] [pause] One question. The same question you've been asking since your first level one class. "If this is true, what else is true?"
+
+[curious] Really? That's the master question?
+
+[teaching] It never stops being the master question. What changes is the scope. At level one, you're asking it inside a single moment — if my scene partner just said their mother is a ghost, what else is true in this world? At level three, you're asking it across a scene — if this character is terrified of silence, what else is true about them? At level five, you're asking it across the whole show. If beat one established that professionals hide disaster, what else is true about this show? What's the show *about*, and what hasn't been said yet that needs to be?
+
+[conversational] It's the same move. Just at a higher altitude.
+
+[teaching] Yeah. And honestly, this is where improv stops being different from other art forms. Good novelists ask it. Good directors ask it. Good therapists ask it. The difference is we have to ask it in real time, standing up, with three other people.
+
+[curious] [warm] I want to say one thing about the life piece, because I keep thinking about it while you're talking. This taxonomy thing — knowing which *type* of pattern you're in — that's a thing I wish I could do in my own head. Like, I'll be in a bad mood, and I'll heighten it the wrong way. I'll treat an emotional pattern like it's a behavioral one. I'll try to *do* something about it when what it needed was for me to just sit with it for thirty seconds.
+
+[teaching] [warm] Yeah. And "if this is true, what else is true?" works in a marriage. It works in a meeting. It works in the conversation you're having with yourself at two in the morning. You're already doing it on stage. The question is whether you bring it with you when you step off.
+
+[contemplative] [pause] The mechanical pattern, revealing the emotional truth underneath. That's not just a definition of transcendence in a scene. That's a definition of growing up.
+
+[rewritten]
