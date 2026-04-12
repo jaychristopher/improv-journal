@@ -95,6 +95,42 @@
     "seconds": 615,
     "formatted": "10:15"
   },
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 430,
+    "formatted": "7:10"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 480,
+    "formatted": "8:00"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 412,
+    "formatted": "6:52"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 349,
+    "formatted": "5:49"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 372,
+    "formatted": "6:12"
+  },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 367,
     "formatted": "6:07"
@@ -134,42 +170,6 @@
   "/audio/bridges/active-listening.mp3": {
     "seconds": 361,
     "formatted": "6:01"
-  },
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 193,
-    "formatted": "3:13"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 210,
-    "formatted": "3:30"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 214,
-    "formatted": "3:34"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 222,
-    "formatted": "3:42"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 217,
-    "formatted": "3:37"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 480,
-    "formatted": "8:00"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 412,
-    "formatted": "6:52"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 349,
-    "formatted": "5:49"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 372,
-    "formatted": "6:12"
   },
   "/audio/atoms/yes-and.mp3": {
     "seconds": 325,

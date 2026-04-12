@@ -1,47 +1,83 @@
-[conversational] Okay, this one is different from the other paths. This isn't really a journey you walk through. It's more like [short pause] an index?
+[curious] Have you ever noticed that every improv book you pick up feels like it was written in a different language?
 
-[teaching] It's the entry point to a knowledge graph. Built for people who write about improv, teach it, research it, or just think seriously about it. And the thing that makes it different from every improv book you've ever read is scope.
+[teaching] Not literally, but yes. Johnstone talks about status and spontaneity. Close and Halpern talk about group mind and game. UCB talks about unusual things and base realities. Spolin talks about space and focus. And they're all describing the same art form — allegedly.
 
-[curious] What do you mean by scope?
+[curious] Right, and you read one, you think you get it, and then someone from a different tradition gives you a note and you realize you've been standing in one room of a very large house.
 
-[emphatic] Every improv book comes from one tradition. Keith Johnstone's perspective. UCB's perspective. Spolin's perspective. This graph holds five traditions in one linked structure. Johnstone, Spolin, Close and Halpern, UCB, and Annoyance slash TJ and Dave.
+[teaching] That's exactly the problem. Every tradition gives you a complete-feeling system. Johnstone's world makes total sense on its own. UCB's framework is internally consistent. But they contradict each other in specific, important ways — and nobody maps where.
 
-[leaning in] And it shows where they disagree?
+[curious] Like what?
 
-[confident] Specifically. Not the diplomatic version where everyone's great and it's all the same thing. The real disagreements. On yes-and, on game, on status, on presence, on what improv is even for. Every atom in the graph carries counter-positions from competing traditions.
+[teaching] Take "yes, and." Johnstone means accept the offer and let it change you. UCB means yes, and heighten the game. Annoyance means yes, and follow your honest impulse even if it destroys the scene's premise. Same two words. Three genuinely different instructions for what to do in the moment.
 
-[conversational] Atoms. What are atoms in this context?
+[short pause]
 
-[teaching] The smallest meaningful unit of improv knowledge. There are over a hundred of them, across twelve types. Laws, principles, techniques, exercises, antipatterns, pedagogy. Each one has source citations and counter-positions.
+[curious] And we just... pretend that's not happening?
 
-[curious] So if I wanted to understand what different schools think about "game of the scene," I could look that up?
+[matter-of-fact] Mostly. Teachers pick a lineage, teach within it, and treat the others as either compatible or wrong. Which means if you've trained in multiple places — and most serious performers have — you're carrying contradictions you've never been given language for.
 
-[warm] And you'd find what UCB means by it, how Johnstone's approach differs, what Close was actually after, and where the traditions genuinely conflict. Not a summary. A cross-referenced analysis.
+[contemplative] That's what this whole project is, actually. Naming those contradictions. Not to resolve them — some of them can't be resolved — but to make them visible so you can make real choices instead of just defaulting to whoever taught you last.
 
-[matter-of-fact] That sounds like something that should exist but doesn't.
+[curious] So it's like a map of improv knowledge that includes the disagreements.
 
-[emphatic] It didn't. If you've ever Googled "is there anything that compares different improv approaches," this is that thing.
+[teaching] A knowledge graph. One hundred nineteen atoms — small, precise units of improv knowledge — organized by type. Laws, principles, techniques, exercises, antipatterns, pedagogy. Each one sourced. Each one carrying counter-positions from the traditions that see it differently.
 
-[curious] How do you navigate it? Where do you start?
+[curious] Give me an example of what an atom looks like.
 
-[teaching] Four entry points. The first thread, Traditions in Tension, maps the five schools and their agreements and disagreements. That's your orientation.
+[warm] Take game-of-the-scene. The atom defines it precisely, cites where the concept originates — Close and Halpern through the Harold, refined by UCB into their manual — and then flags the counter-positions. Johnstone doesn't use the concept at all. TJ and Dave actively argue against identifying game as a discrete move. The atom holds all of that without picking a winner.
 
-[conversational] What's the second?
+[curious] That's different from how it usually gets taught.
 
-[warm] The System Underneath. Six laws drawn from cognitive science, sociology, and performance studies. These bridge practitioner language and academic frameworks. They're the foundation the whole graph is built on.
+[emphatic] Because usually it gets taught as gospel or heresy. Either game is the thing or game is a trap. The actual interesting question is under what conditions does finding game serve the scene, and when does it constrain it? But you can't even ask that question until you see the full landscape.
 
-[curious] And then?
+[pause]
 
-[teaching] The Physics of Every Room is the synthesis. What improv's discoveries mean beyond the stage, including an honest assessment of what transfers and what doesn't. And Diagnosing Scene Failure gives you analytical vocabulary for what's happening in a scene. Collapse modes, antipatterns, health indicators.
+[curious] Okay, so there's this graph with atoms and traditions. How does a performer actually use it?
 
-[leaning in] You said every claim cites a source?
+[conversational] A few ways in. If you're chasing a concept — say you keep hearing "status" and you want to really understand it — you find the atom, read it, and follow the links. It connects to related atoms, to the source texts, to the counter-positions. You go as deep as you want.
 
-[confident] Every one. Where the source is oral tradition, it's flagged. Where the synthesis is original, it's labeled. Where a claim is unverifiable, it says so. The methodology is the credibility.
+[teaching] If you're interested in a tradition, there are reference atoms for each major text. Follow Johnstone's Impro through the graph and you see every concept it touches and where other traditions push back. Same for Truth in Comedy, the UCB Manual, Spolin's book, all of them.
 
-[conversational] Who is this actually for? Because it sounds kind of academic.
+[curious] So you can trace a lineage.
 
-[teaching] It's for anyone who's tired of improv knowledge being scattered across twenty books, fifty blogs, and a thousand workshop handouts that all say slightly different things. [short pause] Teachers who want to ground their curriculum in more than one tradition. Writers working on improv-related projects. Advanced performers who want to understand why different theaters teach different things.
+[confident] Exactly. Or trace a type. Want every antipattern? Every exercise? Every law? They're categorized. The types aren't arbitrary buckets — they reflect how the knowledge actually functions. A law explains why something works. A principle guides what to do. A technique is a specific move. An antipattern names a specific way scenes die.
 
-[warm] And honestly, anyone who's curious enough to want the real map instead of one tradition's tourist brochure.
+[short pause]
 
-[emphatic] Start with Traditions in Tension. See where the schools agree and where they fight. That alone will change how you think about everything you've been taught.
+[curious] You said laws. What laws?
+
+[teaching] Six of them. Drawn from cognitive science, sociology, performance studies. They're the physics underneath everything — the constraints that explain why improv works the way it does, regardless of tradition. Things like why offers decay if you don't build on them immediately. Why status is always being negotiated whether you want it to be or not. Why group agreement is structurally fragile.
+
+[contemplative] They bridge this gap between how performers talk about improv and how researchers talk about human interaction. Not to make improv academic — to make the academic insights useful on stage.
+
+[curious] That's the part that always frustrated me. The research exists, but it never connects to what I'm actually doing in a scene.
+
+[warm] Right. And the practitioner wisdom exists, but it's often just "trust it" or "you'll feel it." The laws give you a third language — one that explains the feel in terms of mechanism, without killing the feel.
+
+[pause]
+
+[curious] Where should someone actually start?
+
+[teaching] Traditions in Tension, if you want to understand where the schools agree and disagree. The System Underneath, if you want the deeper mechanics. Diagnosing Scene Failure, if you're a director or teacher who needs precise vocabulary for what's going wrong. And there's a thread on what improv's discoveries actually mean beyond the stage — honestly assessed, not oversold.
+
+[curious] "Not oversold" — say more about that.
+
+[serious] There's a whole industry of people claiming improv fixes everything. Leadership, communication, creativity, trauma. Some of that transfers. Some of it really doesn't, and the reasons why are interesting. The graph is honest about the boundary.
+
+[short pause]
+
+[curious] I think what strikes me is the sourcing. Every claim has a citation?
+
+[matter-of-fact] Every claim. Where the source is oral tradition — something a teacher said in a workshop that became community knowledge — it's flagged as oral tradition. Where the synthesis is original — a connection the graph draws that no single source makes — it's labeled as original. Where something is unverifiable, it says so.
+
+[warm] The methodology is the credibility. It's not "trust me, I've been doing this for twenty years." It's "here's the claim, here's where it comes from, here's who disagrees, decide for yourself."
+
+[pause]
+
+[contemplative] Which is really the improv ethos applied to improv knowledge itself. Stay open. Hold multiple things. Don't commit to one frame before you've seen the others.
+
+[curious] Make the invisible visible so you can actually choose.
+
+[teaching] That's the whole thing. Not a curriculum. Not a method. A map — with the territories clearly marked, the borders honestly drawn, and the disputed zones flagged in red. Navigate it however serves your work.
+
+[rewritten]
