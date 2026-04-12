@@ -1,51 +1,109 @@
-[conversational] Alright, so this one hits close to home for a lot of improvisers. You've been at it for a year, maybe two. You know yes-and. You've done Harold. And you still can't figure out why some scenes fly and others just die.
+[curious] Here's a question nobody asks in their first year of improv. They only ask it in their second or third. Ready?
 
-[serious] And the worst part is what you say after. "I don't know, it just didn't work." That's all you've got. A feeling.
+[teaching] "Why was that scene bad?"
 
-[emphatic] Exactly. And feelings don't give you a practice plan.
+[curious] Right. Because in year one, you know why. You dropped the yes-and or you blocked an offer or you forgot to name your scene partner. The rules are clear, the mistakes are obvious. But by year two —
 
-[warm] That's what this path is for. It gives you the vocabulary. After this, you'll never say "I don't know what happened" again.
+[teaching] By year two you've had scenes that followed every rule and still died. And scenes that broke half the rules and flew. And you're standing on the back line going — what just happened?
 
-[curious] Okay, so what's the first thing we're tackling?
+[curious] And the answer you get is a feeling. "It just didn't click." "We weren't on the same page." Which is true but useless.
 
-[teaching] Diagnosing scene failure. And I mean specifically. There's a taxonomy here. Three modes of collapse: latency, fracture, and decay. Each one has specific antipatterns that cause it. Bulldozing. Steering. Hesitation. Performing cleverness. Overcomplication. Judgment.
+[teaching] Because feelings don't give you a practice plan.
 
-[leaning in] Wait, so instead of "that scene sucked," I'd be able to say something specific?
+[pause]
 
-[confident] Like, "that was a fracture. I was in a different emotional reality than my partner." Or, "that was latency. I retreated into planning and missed two offers." Suddenly you know what to practice. That's the difference between vague frustration and actual growth.
+[curious] So let's fix that. Let's give you the vocabulary.
 
-[conversational] What comes after the diagnosis?
+[teaching] Scenes fail in three ways. Not thirty. Three. And once you can name them, you stop being mystified and start being diagnostic.
 
-[teaching] Discovery. The skill of finding what the scene is about after it starts, instead of deciding in advance. And this is where the intermediate plateau lives. [short pause] You've learned enough to have preferences, and those preferences have become cages.
+[curious] What are the three?
 
-[curious] That's a harsh way to put it.
+[teaching] Latency. Fracture. Decay. Latency is when someone goes internal — they're computing, planning their next move, and the scene rhythm breaks. There's a gap between impulse and action, and in that gap, offers sail past unnoticed.
 
-[warm] But it's accurate. When you were a beginner, everything was new, so you had no choice but to discover. Now you have go-to moves, favorite patterns, things that got laughs before. And you reach for them instead of listening to what this particular scene needs.
+[curious] That's the stuck-in-your-head thing.
 
-[serious] So discovery is about giving up control.
+[teaching] Exactly. And then fracture — that's when two people are in different scenes. You think you're at a funeral, your partner thinks you're at a surprise party. The shared reality splits and neither person knows why it feels wrong.
 
-[emphatic] It's about surrendering the plan and trusting what emerges. Which is terrifying for an intermediate improviser who just started feeling competent.
+[curious] And decay?
 
-[conversational] Okay, what's the third thread?
+[teaching] Decay is the slow death. Scene starts fine, but nothing accumulates. Details get dropped. Threads go nowhere. Five minutes in, it's thinner than it was at thirty seconds. Nobody did anything wrong — they just didn't build.
 
-[teaching] Signal clarity. The principle that in a system with limited bandwidth, simplicity isn't laziness. It's engineering. A lot of intermediate improvisers overcomplicate because they think complexity equals quality.
+[short pause]
 
-[matter-of-fact] The cyborg-from-the-future problem.
+[curious] Okay. So I can name what happened. But what's causing it? Because "I went internal" doesn't tell me what to do differently.
 
-[warm] Exactly. Meanwhile, the clearest, simplest choice is almost always the strongest. "Happy birthday" beats a three-layer premise every time. Because when your signal is clean, your partner can actually play with you.
+[teaching] That's where the antipatterns come in. Six of them, and they map onto those collapse modes. Performing cleverness — that's the intermediate special. You've gotten good enough to craft jokes, so you start writing lines instead of responding to your partner. That feeds latency every time.
 
-[curious] And the fourth thread?
+[curious] Because you're in your head constructing instead of out there receiving.
 
-[teaching] The plateau itself. What it actually is, which is the gap between your knowledge and your ability. Why it feels like you're getting worse, which is because your standards outgrew your execution. And specific recovery strategies for each of those collapse modes we talked about.
+[teaching] Right. Then there's steering — which looks like agreement but isn't. You're saying yes-and but you're redirecting every offer toward your predetermined idea. Your partner feels it. The audience feels it. That's fracture dressed up as collaboration.
 
-[leaning in] There are specific strategies for each one?
+[curious] That one's sneaky.
 
-[emphatic] Each one. Latency has different medicine than fracture. Decay needs different exercises than bulldozing. It's not one-size-fits-all advice. It's diagnostic.
+[teaching] It's the hardest to catch in yourself. And then overcomplication — adding more elements when you should be deepening the ones you have. That's your decay engine. The scene gets wider instead of deeper, and width without depth is just noise.
 
-[warm] And there's one more piece that nobody talks about. Reconnecting with joy. [short pause] Not as a platitude. As a technical skill. Gratitude is a system requirement for staying present, and somewhere in the intermediate grind, most people lose sight of that.
+[pause]
 
-[conversational] So this path won't make me funnier.
+[conversational] You know what's interesting? Once you have this vocabulary, you start hearing it everywhere. Not just in scenes. In meetings where someone's steering. In conversations where someone's performing cleverness instead of actually listening.
 
-[confident] It'll make you diagnosable. To yourself. And that's how you break through the plateau. [short pause] Because you can't fix what you can't name.
+[teaching] The diagnostic framework doesn't care where you apply it. Human interaction is human interaction.
 
-[emphatic] Start with the scene failure thread. Learn the three modes. Then start watching your own work through that lens. Everything changes once you have the vocabulary.
+[short pause]
+
+[curious] So now I can name the failure. I can identify the antipattern. What do I actually do about it?
+
+[teaching] Two things. First — discovery. Which is maybe the most important skill nobody teaches explicitly.
+
+[curious] What do you mean by discovery?
+
+[teaching] I mean the willingness to find out what the scene is about after it starts, instead of deciding in advance. This is where the intermediate plateau lives. You've learned enough to have preferences. You walk out with ideas now. And those ideas become cages.
+
+[curious] Because in year one you had nothing, so you had to discover. You had to listen because you didn't have a plan.
+
+[teaching] And that nothing was actually something. That openness — that willingness to be surprised, to be changed by what your partner gives you — that's the skill. Discovery isn't a beginner's limitation. It's a master's practice.
+
+[contemplative] The paradox is that knowing more can make you worse. Your taste outgrew your execution, and in the gap between what you can see and what you can do, you start gripping tighter.
+
+[curious] Which feeds every antipattern we just named.
+
+[teaching] Every single one. The fix isn't learning more. The fix is surrendering more. Letting the scene tell you what it is.
+
+[short pause]
+
+[curious] And the second thing?
+
+[teaching] Signal clarity. Here's what intermediate improvisers get wrong — they think complexity equals quality. So they add layers. Irony. Subtext. Elaborate premises. And every layer they add is bandwidth their partner has to decode instead of build with.
+
+[curious] You're saying simplicity is a skill, not a limitation.
+
+[teaching] I'm saying simplicity is engineering. You're in a bandwidth-limited system — two humans, real time, no script. The clearest signal wins. Not the cleverest signal. The clearest. Say what's true in the scene. React honestly. Make the obvious choice.
+
+[curious] That feels counterintuitive. Like you're giving up the good stuff.
+
+[teaching] Watch the best improvisers in the world. Their choices are obvious. "Happy birthday." "I missed you." "You look different." They're not clever. They're clear. And because they're clear, their partner can build instantly. The complexity emerges from the connection, not from individual brilliance.
+
+[pause]
+
+[warm] Here's the thing about the plateau. It feels like regression. It feels like you're getting worse. But you're not getting worse — your standards got better faster than your skills. That gap is real, and it hurts, and every improviser I know has stood in it going "I am terrible at this."
+
+[curious] Word for word.
+
+[teaching] Word for word. And the way through isn't grinding harder. It's targeted. If your scenes die from latency — practice starting from physical action, not from ideas. Get out of your head by getting into your body. If they die from fracture — practice naming what you see. "You seem upset." "You're excited." Boring? Maybe. But it rebuilds the shared reality.
+
+[curious] And decay?
+
+[teaching] Reincorporation. Bring back the thing from the first thirty seconds. The detail everyone forgot. It's not a callback for laughs — it's structural. It says this scene is accumulating, not dissipating.
+
+[short pause]
+
+[contemplative] And underneath all of it — this is the part nobody talks about — reconnecting with joy is not a platitude. It's a system requirement.
+
+[curious] What do you mean?
+
+[teaching] I mean "I get to do this" and "I have to do this" produce different improv. Literally different. The grateful version is looser, more responsive, more discoverable. Jimmy Carrane's insight — that not caring about getting better is what makes you get better faster — sounds like a fortune cookie until you experience it. Then it sounds like the most technical advice anyone's ever given you.
+
+[long pause]
+
+[warm] This path won't make you funnier. It'll make you diagnosable — to yourself. And a performer who can name what went wrong, who can choose simplicity over cleverness, who can surrender the plan and discover what's actually there — that performer breaks through. Not by pushing harder. By seeing clearly.
+
+[rewritten]
