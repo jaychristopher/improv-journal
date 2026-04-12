@@ -1,4 +1,40 @@
 {
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 217,
+    "formatted": "3:37"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 185,
+    "formatted": "3:05"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 223,
+    "formatted": "3:43"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 187,
+    "formatted": "3:07"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 199,
+    "formatted": "3:19"
+  },
   "/audio/threads/traditions-in-tension.mp3": {
     "seconds": 574,
     "formatted": "9:34"
@@ -135,42 +171,6 @@
     "seconds": 617,
     "formatted": "10:17"
   },
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 193,
-    "formatted": "3:13"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 210,
-    "formatted": "3:30"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 214,
-    "formatted": "3:34"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 222,
-    "formatted": "3:42"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 217,
-    "formatted": "3:37"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 185,
-    "formatted": "3:05"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 223,
-    "formatted": "3:43"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 187,
-    "formatted": "3:07"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 199,
-    "formatted": "3:19"
-  },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 164,
     "formatted": "2:44"
@@ -278,6 +278,10 @@
   "/audio/atoms/emotion-switch.mp3": {
     "seconds": 153,
     "formatted": "2:33"
+  },
+  "/audio/atoms/elevating.mp3": {
+    "seconds": 321,
+    "formatted": "5:21"
   },
   "/audio/atoms/editing.mp3": {
     "seconds": 368,
