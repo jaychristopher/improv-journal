@@ -1,45 +1,81 @@
-[conversational] So you know Harold. You can do montage. You've probably performed a bunch of shows. Now what?
+Now I have the full picture — the existing thread script, both threads' content, and all the underlying atoms. Let me write the path-level script. This needs to cover both threads (the format landscape AND show-as-architecture) at a higher altitude than the existing thread script, hitting ~800-1200 words.
 
-[warm] Now the real work starts. Because here's the thing about the Harold that nobody tells you when you're learning it.
+[curious] Here's something nobody tells you when you start doing Harolds. The Harold is not the thing. The Harold is the way you learn the thing.
 
-[curious] What's that?
+[teaching] Del Close designed it as a gym circuit. Every core skill, every rep, every show. Opening. Group game. Scene work. Callbacks. Thematic thinking. You can't run a Harold without touching all of it. That's the genius of it as a training form.
 
-[teaching] It's training wheels. Brilliant training wheels. Designed to force you to practice every core skill simultaneously. But training wheels.
+[conversational] But nobody thinks the gym circuit is the sport.
 
-[emphatic] Okay, that's going to upset some people.
+[warm] And most improvisers hit a moment — could be six months in, could be three years — where they realize the Harold has become the ceiling and the floor. It's the only longform they know, so it's the only longform they can imagine.
 
-[warm] Maybe. But it's true. The Harold is one format. And there's a whole landscape of longform structures out there, each one designed to teach you something the Harold can't.
+[curious] So what's on the other side of that ceiling?
 
-[curious] Like what? What other formats are we talking about?
+[teaching] Six formats, at least. Each one built around something the Harold doesn't prioritize. The Armando strips away all that structural complexity and replaces it with a real person telling a real story. Your scenes come from someone's actual life, not from an opening game. And something shifts when the source material is true.
 
-[teaching] Six beyond the Harold. The Armando, which is driven by monologues and real-life stories. La Ronde, where characters chain from scene to scene. Narrative longform, which commits fully to story. Organic longform, which rejects all predetermined structure. Two-person longform, which is the most exposed you'll ever be on stage. And genre formats, which use cultural literacy as scaffolding.
+[conversational] The scenes get warmer.
 
-[leaning in] And each one teaches something different?
+[warm] They get specific in a way that's hard to manufacture. You're not riffing on an abstraction — you're riffing on someone's actual Tuesday.
 
-[confident] Each one forces you to develop a skill you can coast on in the Harold. The Armando forces deep listening to source material. La Ronde forces character consistency across scenes. Narrative forces you to serve story instead of yourself. Organic forces you to trust group mind completely.
+[short pause]
 
-[conversational] What about the two-person one? That sounds terrifying.
+[teaching] La Ronde does something the Harold almost never lets you do. It shows you how a single character changes depending on who they're across from. Same person with their mother, their boss, a stranger — and you watch them become three different people. The Harold is built around theme and game. La Ronde is built around the fact that you are partially assembled by whoever's in the room with you.
 
-[serious] It is. There's no backline to save you. No one to tag in. It's just you and one other person for thirty minutes. And that intimacy, that terrifying exposure, teaches you things about commitment and partnership that a team of eight never will.
+[contemplative] [pause] That's not just an improv insight. That's a life insight.
 
-[curious] Okay, so that's the first thread. The landscape of formats. What's the second?
+[curious] Then there's narrative longform, organic longform, two-person, genre formats — each one demanding a different muscle entirely.
 
-[teaching] Show-level craft. And this is the shift from building scenes to building shows. [short pause] Think of it this way. In your first few years, you're learning to build rooms. Good rooms, with interesting furniture and working doors. But a show isn't a collection of rooms. It's a house. And the house is what the audience actually lives in.
+[teaching] Narrative makes you track consequence. What happens in scene three has to be caused by scene two. Organic makes you throw away the scaffolding and trust what the show is asking for. Two-person strips you down to nothing but listening — TJ and Dave did it for twenty years, one suggestion, one hour, and the whole thing assembles itself out of the paying attention. Genre formats hand you a set of conventions the audience already knows, which frees you to do the actually hard work of being a real person inside a familiar shape.
 
-[warm] That's a great way to put it.
+[emphatic] The Harold taught you the grammar. These formats teach you the dialects.
 
-[emphatic] Show-level craft is about the architecture. How organic openings generate raw material for the whole show. How heat and weight create dynamic contrast between scenes. How editing decisions at the top of a scene make it land harder. How backline awareness holds everything together.
+[curious] [short pause] Okay. But here's what I want to know. Say you learn all six. You can do an Armando, you can do a La Ronde, you can run narrative or organic or whatever the show needs. Are you done?
 
-[curious] What do you mean by heat and weight?
+[teaching] No. And this is where it gets interesting. Because knowing formats is like knowing how to build rooms. It matters. But the audience doesn't live in a room. The audience lives in the house.
 
-[teaching] Energy dynamics. A loud, fast scene followed by another loud, fast scene is exhausting. But a loud, fast scene followed by a slow, quiet one makes both more powerful. The contrast creates shape. The audience feels it even if they can't name it.
+[conversational] Meaning the whole show.
 
-[leaning in] And there's something about callbacks? How shows circle back?
+[warm] Meaning the whole show. And shaping a full show — not just individual scenes, not just your format — is a completely different skill. It's architecture.
 
-[warm] Runs and callbacks. The best shows feel authored even though nothing was planned. That happens when performers are tracking the whole show, not just their own scenes. When something from the opening resurfaces in the closing. When a throwaway detail from scene two becomes the climax of scene seven.
+[curious] What does that look like in practice?
 
-[conversational] That sounds like it requires superhuman awareness.
+[teaching] Start with the opening. An organic opening isn't a warm-up you get through. It's a palette. It generates themes, images, emotional textures — raw material the ensemble mines for the next thirty minutes. The skill isn't in doing the opening. It's in extraction. Listening for what recurs, what resonates, what the show wants to be about tonight.
 
-[confident] It requires practice. And it requires a framework, which is what this thread provides. [short pause] This is where improv becomes architecture. Where you stop thinking about your next scene and start thinking about the show your audience is experiencing.
+[conversational] So the opening tells you what kind of show you're in.
 
-[emphatic] If you're ready to move past the Harold and start performing at the show level, start with the formats thread. Learn what each one demands. Then move into show-level craft and see how the pieces fit together.
+[matter-of-fact] If you're listening. Most ensembles treat the opening like a checkbox. The great ones treat it like a seismograph.
+
+[short pause]
+
+[teaching] Then there's heat and weight. This is the thing that separates shows that work from shows that are just a collection of good scenes. Heat is high energy — fast, loud, physical, absurd. Weight is quiet — still, honest, vulnerable. And the art is in alternation.
+
+[curious] The roller coaster thing.
+
+[teaching] Besser's metaphor. You need the slow climb to make the drop exciting. A show that's all heat becomes exhausting. A show that's all weight becomes ponderous. But a show that swings — big physical scene, then something quiet and grounded, then a group game that builds to something unhinged, then two people just talking — that show breathes.
+
+[contemplative] [pause] The audience doesn't know why it works. They just feel it.
+
+[warm] They feel it because contrast is how humans process experience. It's not an improv principle, it's a nervous system principle. You can't feel how loud something is without the quiet before it.
+
+[curious] And who's managing all this? Who decides "okay, we need weight now"?
+
+[teaching] Everyone. And no one. The backline — the performers not in the scene — they're tracking the whole show. What themes have come up, what energy they've been running, what connections are forming. And the best backline performers know something counterintuitive: the most generous move is often staying out. Not entering. Letting the scene that's working keep working.
+
+[conversational] And then editing.
+
+[emphatic] Editing is pacing at the show level. Edit at the top — sweep when the scene is at its best, not when it's dying. The audience should feel slight loss, not relief. That one principle changes everything about how a show feels.
+
+[curious] [short pause] And the ending?
+
+[teaching] The run. Rapid-fire callbacks, collisions, scenes getting shorter and faster. Content becomes almost secondary to momentum. The audience is carried by recognition — they're watching everything they invested in over the last twenty-five minutes come back at triple speed.
+
+[warm] And the strongest endings circle back to the opening. When a show returns to where it started, it feels authored. It feels like someone wrote it. And no one did.
+
+[contemplative] [pause] That's the whole game, isn't it. Making something feel shaped when nothing was planned.
+
+[teaching] That's the whole game. The Harold teaches you the moves. The formats teach you the languages. But show-level craft — heat, weight, pacing, editing, the run, the callback to the opening — that's where improv becomes architecture.
+
+[emphatic] You're not just building rooms anymore. You're building a house. And the house is what the audience lives in for the next forty-five minutes of their life.
+
+[warm] The rooms matter. But the house is the thing they remember walking out.
+
+[rewritten]
