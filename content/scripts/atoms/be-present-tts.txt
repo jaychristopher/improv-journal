@@ -1,29 +1,69 @@
-[curious] "Be Present." I feel like every improv teacher says this. But what does it actually mean beyond just paying attention?
+[curious] So here's what I keep coming back to. Every other principle we talk about — yes-and, honesty, simplicity — they all assume you're actually *here*. And most of the time... we're not.
 
-[serious] It's the precondition for every other principle. You cannot accept an offer you did not hear, simplify what you did not understand, or be honest about a moment you were not in. [short pause] Without presence, none of the other principles can function.
+[teaching] Not even close. You're standing on stage and your brain is three moves ahead. "OK, she said something about a dog, so maybe I should—" and while you're computing, she's already moved on. She said the dog is dead. You missed it. Now you're doing a bit about fetch.
 
-[conversational] OK, so it's foundational. But why is it so hard?
+[short pause]
 
-[teaching] Because our brains are prediction engines. We want to secure safety by knowing what happens next. So here you are on stage, your partner says "I like pizza," and your brain immediately starts computing: "OK, should I make a joke about Italy? Maybe Chicago deep dish?" [short pause] While you're scrolling through your mental Rolodex, your partner has added "this pizza tastes like poison." But you missed it. You deliver your Chicago joke, and now you've created latency.
+[curious] That's the latency thing.
 
-[curious] Latency?
+[matter-of-fact] That's the latency thing. And latency kills flow. Because improv is happening *now* — not in the version of now you're constructing in your head. External reality takes priority over internal computation. That's the whole principle in one line.
 
-[emphatic] A gap between what's happening and what you're responding to. And latency kills flow. Time in improv is irreversible. That moment your partner said "poison" is gone. You can't rewind. [short pause] Susan Messing nailed it: "If you're in your head, you're not here with me." You can literally see it in someone's eyes when they've drifted. They glaze over, looking at the script in their head instead of at you.
+[contemplative] Susan Messing puts it more simply. "If you're in your head, you're not here with me."
 
-[conversational] So how do you stay present when your brain is wired to plan?
+[teaching] And you can *see* it. You've seen it. That moment when someone's eyes go glassy — they're reading the teleprompter behind their forehead instead of looking at you. The body's on stage but the person left.
 
-[warm] The fastest return path is through the body. When you notice you've drifted into your head, feel your feet on the floor. Make eye contact. Touch an object in the scene. [short pause] Viola Spolin addressed this brilliantly with what she called the Point of Concentration, a shared focus problem like counting floorboards while talking. When the planning mind is occupied by that task, what remains is direct response.
+[curious] OK but here's the thing that's hard about this. Our brains are literally prediction engines. That's what they do. They compute what's coming next so we can be safe. So asking someone to stop doing that — that's asking them to fight their own hardware.
 
-[curious] That's interesting. So you're not suppressing the planning, you're redirecting it?
+[teaching] Right. And that's why this is the hardest principle to actually execute. Every other principle is a choice you make in the moment. Presence is the *capacity* to make any choice at all. Without it, you're just running pre-written code.
 
-[matter-of-fact] Exactly. Redirection, not suppression. [pause] And presence operates in three registers. Presence to your partner, which is listening, eye contact, reading their emotion. Presence to the environment, space work, object permanence. And presence to yourself, noticing your own impulses and emotions without censoring them.
+[short pause]
 
-[conversational] That third one surprises me. Isn't presence about focusing on your partner?
+[contemplative] TJ Jagodowski talks about what happens on the other side of that leap — when you actually commit to having no plan. He says presence becomes heightened sensation. You can see better. You hear everything more. It's not the absence of thought. It's the full activation of your senses.
 
-[teaching] Most training emphasizes that, yes. But self-presence is equally critical. TJ Jagodowski describes what happens when you commit to full presence: it becomes heightened sensation. You can see better and hear everything more. [short pause] You can be so focused on your partner that you override your own honest reaction, and that's a different failure mode than being in your head.
+[curious] That's such a different frame than "get out of your head." It's not about emptying something. It's about filling up with something else.
 
-[curious] What does neuroscience say about this?
+[emphatic] Exactly. And that's what Spolin understood with her Point of Concentration. Give the planning mind a task — count the floorboards, track an invisible ball — and what's left underneath is direct response. You're not suppressing the monkey mind. You're redirecting it. Giving it a job so the rest of you can actually be here.
 
-[contemplative] There's a fascinating fMRI study of jazz improvisation by Limb and Braun. They found that during improvisation, the brain's self-monitoring regions go quiet while self-expressive regions activate. [short pause] It's the neurological signature of the censor releasing. The same thing improv teachers have been describing for decades, now visible on a brain scan.
+[curious] So the return path is physical.
 
-[warm] The success condition is simple to state and hard to achieve. Responses emerge from contact with the moment rather than from rehearsal. [short pause] When there's a gap, it's a listening gap, not a planning gap.
+[teaching] Almost always. When you notice you've drifted — and noticing is the first skill — the fastest way back is through the body. Feel your feet on the floor. Make eye contact. Touch something in the space. Your body is always in the present tense. Your mind wanders; your feet don't.
+
+[pause]
+
+[curious] You said there are three registers of presence. I think most people only think about one.
+
+[warm] Most training emphasizes presence to your partner. Listening. Eye contact. Reading their emotion, their status. And that matters enormously. But there are two more. Presence to the environment — your space work, object permanence, the physical world of the scene. And presence to yourself.
+
+[curious] That third one is the sneaky one.
+
+[teaching] It's the one people miss. You can be so locked in on your scene partner that you override your own honest reaction. You heard them perfectly, but you didn't notice that what they said made you sad. Or angry. Or confused. And that internal response — that's gold. That's the most honest thing you could bring to the next moment. But you bulldozed right past it because you were "listening so hard."
+
+[contemplative] It's a different failure mode than being in your head. You're present to everything except yourself.
+
+[short pause]
+
+[curious] This connects to something off stage for me. I think most of us spend our days in that latency state. Someone's talking to us and we're composing our response. We're in a meeting but we're in the meeting after this one.
+
+[warm] Or someone you love is telling you something real and you're already problem-solving. You heard the words. You missed the person.
+
+[curious] So how do you know when presence is actually working? What's the observable sign?
+
+[matter-of-fact] The inner censor goes quiet. Not because you fought it into submission — because there's nothing for it to do. You're not generating material to judge. You're just receiving and responding. And when there's a gap — a silence on stage — it's a listening gap, not a planning gap. You can feel the difference. The audience can feel the difference.
+
+[teaching] The performer's attention is visibly on their partner, not behind their own eyes. That's the tell. Every time.
+
+[pause]
+
+[contemplative] There's a brain study — jazz musicians improvising inside an fMRI. The self-monitoring regions went quiet while the self-expressive regions lit up. The neurological signature of the censor releasing. It's not mystical. It's measurable. When you stop watching yourself, you start actually playing.
+
+[curious] So presence isn't some zen achievement you unlock after years of meditation.
+
+[confident] It's a skill with a practice. Meditation trains the noticing muscle — am I here or did I drift? Improv takes that same muscle and puts it under load. You notice *and* you respond. Mindfulness with an output channel.
+
+[short pause]
+
+[warm] And the beautiful thing is — it's available right now. Not after more training. Not after you've earned it. You just have to trust that if you show up with no plan, you'll still have something to say when it's your turn.
+
+[contemplative] Because you will. You always do. The moment is already full. You just have to be in it long enough to find out.
+
+[rewritten]
