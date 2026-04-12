@@ -195,6 +195,10 @@
     "seconds": 355,
     "formatted": "5:55"
   },
+  "/audio/atoms/pattern-break.mp3": {
+    "seconds": 369,
+    "formatted": "6:09"
+  },
   "/audio/atoms/pacing.mp3": {
     "seconds": 372,
     "formatted": "6:12"
