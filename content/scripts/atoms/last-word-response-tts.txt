@@ -1,23 +1,75 @@
-[curious] Last Word Response. How does this one work?
+[curious] You ever notice how most people in a scene stop listening after about four words?
 
-[teaching] Two players in a scene. One rule. Your first word must be the last word your partner said. That's it. This forces you to actually hear their final word before you can speak. Sixty to ninety seconds per pair.
+[teaching] Four is generous. Try two. Someone says "I can't believe you forgot our anniversary" and their scene partner heard "anniversary" before the sentence was half done. They're already building their response. The rest is just... waiting for their turn.
 
-[conversational] Give me an example.
+[curious] It's like they're on a five-second delay, except the delay is filled with their own thoughts.
 
-[matter-of-fact] "I can't believe you forgot our anniversary." "Anniversary? I thought that was next week." "Week? You've been saying that for a month." "Month... has it really been that long?" [short pause] You can hear how the constraint creates a specific rhythm and keeps both players tethered to each other's words.
+[warm] Right. And here's the thing — you can't catch yourself doing it. That's what makes it so insidious. You genuinely believe you're listening. You heard the words. You can repeat them back. But you weren't *with* your partner. You were with your reply.
 
-[curious] What does this actually train?
+[short pause]
 
-[emphatic] Presence. It breaks the planning habit. Most people start constructing their reply after their partner's first few words. This drill makes that impossible because you literally don't know the constraint until the last syllable. [short pause] You can see exactly when someone stops listening and starts composing. It surfaces the internal computation circuit.
+[conversational] So there's this exercise. Last Word, First Word. Dead simple. Two players in a scene, one rule — the first word out of your mouth has to be the last word your partner just said.
 
-[conversational] What goes wrong?
+[teaching] So if someone says "I can't believe you forgot our anniversary," you have to start with "anniversary." "Anniversary? I thought that was next week." "Week? You've been saying that for a month." "Month... has it really been that long?"
 
-[serious] Three main failures. Speed ramp, where players accelerate and it becomes a planning game instead of a listening game. The coach says "Slow down." [short pause] Semantic emptiness, where players grab the word but say nothing meaningful, just pure word association with no connection to their partner. And last-word fixation, where they listen only to the final word and tune out everything before it. The exercise was supposed to improve listening and now it's narrowed it.
+[curious] And the magic is that you literally cannot plan your response until you hear their last syllable.
 
-[curious] That last one is interesting. So the exercise can actually make listening worse?
+[emphatic] That's exactly it. The constraint makes the invisible visible. You can see the exact moment someone stops listening and starts composing. Their eyes glaze for a half-second. They lean forward. They're loading up. And then their partner's last word lands and it's not the word they expected, and you watch them scramble.
 
-[teaching] I'll be honest. This exercise is more diagnostic than training. The mechanical constraint can be gamed. Players learn to snatch the word while mentally composing their sentence, which is worse listening than before. [short pause] The real teaching happens in the side-coaching and the debrief, not in the constraint itself. Without facilitation, this exercise teaches a trick. With facilitation, it reveals a habit.
+[short pause]
 
-[contemplative] So it's a training wheel.
+[curious] It's like a diagnostic tool.
 
-[warm] Exactly. The goal isn't to always start with their last word in real scenes. The goal is to build the habit of listening all the way to the end before formulating a response. [short pause] The debrief question that does the most work is simple. "When did you stop listening and start planning?"
+[teaching] That's the honest thing about this exercise — it's more diagnostic than it is training. The constraint itself doesn't teach you to listen better. You can absolutely game it. Grab the last word, stash it, and keep right on pre-planning. Some players get really good at that, which is actually worse than where they started. Now they're splitting their attention between snatching a word and composing a sentence, and they've gotten even further from their partner.
+
+[contemplative] So the exercise without facilitation is almost... counterproductive?
+
+[serious] It can be. Without someone in the room coaching — "slow down," "let the word land before you speak," "stay connected to your partner, not just their last syllable" — the exercise teaches a trick. A party game. With facilitation, it reveals a habit. And revealing the habit is the whole point.
+
+[pause]
+
+[curious] What does the facilitation actually look like in the room?
+
+[warm] You run it as pairs performing for the group first, sixty to ninety seconds each. That way you can coach in real time. "Don't plan ahead." "Slow down — this is not a speed game." Because the number one failure mode is the speed ramp. Players start accelerating, turning it into a word association game, and speed rewards planning, not listening.
+
+[conversational] It becomes a performance instead of practice.
+
+[teaching] Exactly. The second failure is semantic emptiness — they use the word but say nothing. "Month? Months are long. Long roads. Roads to nowhere." It's jazz hands for your mouth. No connection to the other person, just word dominoes falling over.
+
+[curious] And the third?
+
+[matter-of-fact] Last-word fixation. They start listening only to the final word and tune out everything before it. The exercise that was supposed to expand their listening has now narrowed it to a single syllable. That's why the debrief matters as much as the exercise. One question does all the work — "When did you stop listening and start planning?"
+
+[short pause]
+
+[contemplative] That's a question that goes way beyond improv.
+
+[warm] Way beyond. Think about the last real conversation you had. Not a scene — a conversation. With your partner, your friend, your coworker. How many words in were you before you started building your response? Before you were just waiting politely for them to finish so you could say the thing you'd already decided to say?
+
+[curious] It's the same circuit.
+
+[emphatic] It's the exact same circuit. The planning mind is always running. It's not a flaw — it's how we navigate the world. But in a scene, and honestly in a conversation, it puts you about three seconds ahead of where the actual exchange is happening. You're responding to what you think they're going to say, not to what they said.
+
+[pause]
+
+[conversational] So if the exercise is just a diagnostic, what actually builds the muscle?
+
+[teaching] There's a variation that gets closer. Split Focus. You count objects in the room — floorboards, ceiling tiles, chairs — while having a conversation. The counting task occupies the planning mind. If your brain is busy counting, it can't pre-plan your dialogue. So you're forced to just... react.
+
+[curious] You're essentially distracting the part of your brain that gets in the way.
+
+[warm] That's exactly it. Johnstone was big on this — give the conscious mind a task so the spontaneous mind can work. It's counterintuitive. You'd think adding a task would make you worse. But the task you're adding is replacing the task you were already doing, which was planning. And planning was the problem.
+
+[contemplative] So the counting is almost... permission to stop trying so hard.
+
+[teaching] That's a beautiful way to put it. The planning habit isn't laziness — it's effort. It's your brain working overtime to make sure you don't look stupid. The counting task redirects that effort somewhere harmless and leaves you with nothing to do but be present.
+
+[short pause]
+
+[curious] This is a training wheel, then. Last Word, First Word. You're not supposed to do it in real scenes.
+
+[confident] No. The goal was never to always start with your partner's last word. The goal is to build the habit of listening all the way to the end before you formulate a response. To stay with them for the whole sentence. And once you can do that on stage, try it on Tuesday morning. In the meeting. In the argument. Listen to the last word before you decide what you think.
+
+[warm] You might be surprised what you hear.
+
+[rewritten]
