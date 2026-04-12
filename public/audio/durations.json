@@ -131,6 +131,46 @@
     "seconds": 199,
     "formatted": "3:19"
   },
+  "/audio/bridges/team-building-activities.mp3": {
+    "seconds": 557,
+    "formatted": "9:17"
+  },
+  "/audio/bridges/stage-fright.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/psychological-safety.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-stop-overthinking.mp3": {
+    "seconds": 568,
+    "formatted": "9:28"
+  },
+  "/audio/bridges/how-to-give-feedback.mp3": {
+    "seconds": 576,
+    "formatted": "9:36"
+  },
+  "/audio/bridges/how-to-deal-with-conflict.mp3": {
+    "seconds": 535,
+    "formatted": "8:55"
+  },
+  "/audio/bridges/how-to-be-more-creative.mp3": {
+    "seconds": 510,
+    "formatted": "8:30"
+  },
+  "/audio/bridges/how-to-be-more-confident.mp3": {
+    "seconds": 530,
+    "formatted": "8:50"
+  },
+  "/audio/bridges/how-to-be-funny.mp3": {
+    "seconds": 531,
+    "formatted": "8:51"
+  },
+  "/audio/bridges/active-listening.mp3": {
+    "seconds": 617,
+    "formatted": "10:17"
+  },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 164,
     "formatted": "2:44"
@@ -162,6 +202,10 @@
   "/audio/atoms/last-word-response.mp3": {
     "seconds": 139,
     "formatted": "2:19"
+  },
+  "/audio/atoms/irreversibility.mp3": {
+    "seconds": 353,
+    "formatted": "5:53"
   },
   "/audio/atoms/interdependence.mp3": {
     "seconds": 381,
@@ -246,45 +290,5 @@
   "/audio/atoms/be-brave.mp3": {
     "seconds": 215,
     "formatted": "3:35"
-  },
-  "/audio/bridges/team-building-activities.mp3": {
-    "seconds": 557,
-    "formatted": "9:17"
-  },
-  "/audio/bridges/stage-fright.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
-  },
-  "/audio/bridges/psychological-safety.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
-  },
-  "/audio/bridges/how-to-stop-overthinking.mp3": {
-    "seconds": 568,
-    "formatted": "9:28"
-  },
-  "/audio/bridges/how-to-give-feedback.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
-  },
-  "/audio/bridges/how-to-deal-with-conflict.mp3": {
-    "seconds": 535,
-    "formatted": "8:55"
-  },
-  "/audio/bridges/how-to-be-more-creative.mp3": {
-    "seconds": 510,
-    "formatted": "8:30"
-  },
-  "/audio/bridges/how-to-be-more-confident.mp3": {
-    "seconds": 530,
-    "formatted": "8:50"
-  },
-  "/audio/bridges/how-to-be-funny.mp3": {
-    "seconds": 531,
-    "formatted": "8:51"
-  },
-  "/audio/bridges/active-listening.mp3": {
-    "seconds": 617,
-    "formatted": "10:17"
   }
 }
