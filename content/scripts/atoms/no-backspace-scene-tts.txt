@@ -1,23 +1,77 @@
-[curious] No Backspace Scene. What's happening here?
+[curious] So there's this exercise called Trains, and the name alone tells you something — you're on the tracks, you're moving forward, there's no reverse gear.
 
-[teaching] Two players do a scene, three to five minutes. A coach watches for any attempt to retcon, undo, or contradict previously established facts. [short pause] When a retcon happens, "Actually, I meant..." or "Wait, no, we're not in a hospital," or even subtly ignoring an established detail, the coach calls "Keep it!" The scene does not rewind. The player must justify and continue from the unwanted thing, making it true.
+[teaching] Right. And the setup is deceptively simple. Two players do a scene. A coach watches. And any time someone tries to undo something — retcon a detail, contradict what was established, even subtly let something drop — the coach just calls out "Keep it." That's it. Keep it. The scene doesn't rewind. You build forward from the unwanted thing.
 
-[conversational] So the retcon attempt itself becomes real?
+[curious] So it's like Johnstone's New Choice, but inverted.
 
-[emphatic] Exactly. You tried to undo something, the coach caught you, and now the fact that you said it is another established fact that has to be honored. Everything moves forward. Nothing gets erased.
+[teaching] Exactly inverted. New Choice says "replace that, try again." Trains says "no, that's real now. Justify it." Which is a completely different muscle. New Choice trains flexibility. Trains trains commitment.
 
-[curious] What does this train?
+[pause]
 
-[matter-of-fact] Irreversibility. The felt experience of path dependence. You are always living in the consequences of the last three seconds. [short pause] But the deeper skill isn't memory. It's justification. The ability to build forward from any point, including the point you didn't want to be at.
+[contemplative] And the first thing you notice when you run this exercise is how often people try to edit history. It's constant.
 
-[contemplative] I imagine people freeze when they get caught.
+[curious] Like how? What does a retcon actually look like in a scene?
 
-[teaching] That's the most common failure. Players stop dead, afraid to move. The coach says "The scene didn't stop. Keep going." [short pause] The second failure is subtle retcons. Not saying "no" outright, but simply ignoring a detail until it decays. Harder to catch, more damaging. The third is over-monitoring, where players become so afraid of retconning that they stop making offers entirely. The coach has to say "Being bold is more important than being careful."
+[teaching] The obvious ones are easy to spot. "Actually, I meant—" or "Wait, no, we're not in a hospital." But the sneaky ones are worse. Someone establishes that there's a dog in the room, and the other player just... never mentions the dog again. Never interacts with it. Lets it quietly disappear. That's a retcon too. It's just a slow one.
 
-[curious] What drives the retcon impulse?
+[serious] And that slow retcon is honestly more damaging than the loud one, because at least the loud one you can catch and correct. The quiet one just erodes the reality of the scene until nothing feels solid anymore.
 
-[serious] Almost always fear. Fear that the last offer was wrong. Fear that the scene is going somewhere you didn't want. [short pause] And here's what's interesting. Every time the coach forces you forward, the scene finds territory more interesting than what you were trying to get back to. Every time.
+[curious] What happens when the coach calls "Keep it" and the player freezes?
 
-[warm] That's the deeper lesson. Irreversibility is not a punishment. It's the source of all dramatic stakes. If you could undo anything, nothing would matter. The permanence of your choices is what gives them weight.
+[teaching] That's the most common failure mode. Player gets called, and they just stop. Deer in headlights. And the coaching note there is simple — "The scene didn't stop. Keep going." You don't have to fix it. You don't have to make it make sense yet. You just have to take the next step forward from wherever you are.
 
-[emphatic] The transfer is clean. In every scene, you're always building forward from where you are, not backward to where you wish you were. This exercise makes that habit physical.
+[warm] And here's what's beautiful — almost every time someone is forced to keep the thing they were trying to get rid of, the scene goes somewhere more interesting than where they were trying to steer it.
+
+[curious] Every time?
+
+[teaching] I mean, not literally every time. But surprisingly often. Because the thing you're trying to retcon is usually the thing that scares you. And the thing that scares you is almost always where the scene has the most energy.
+
+[pause]
+
+[contemplative] There's something in that. The impulse to retcon is almost always fear-driven, isn't it?
+
+[teaching] Almost always. Fear that the last offer was wrong. Fear that the scene is heading somewhere you don't have a plan for. Fear that you look stupid. And what Trains does is it takes that fear and says, "Okay. And?"
+
+[curious] There's another failure mode you see with this, right? Where people overcorrect?
+
+[teaching] Yeah, over-monitoring. Players get so afraid of accidentally retconning that they stop making offers entirely. They get careful. They get small. And careful and small is worse than accidentally contradicting something, because at least a contradiction gives you material to work with. Caution gives you nothing.
+
+[emphatic] So the coaching note there is "Being bold is more important than being careful." Make the offer. If you accidentally contradict something, we'll catch it and you'll justify forward. But don't let the fear of contradiction stop you from building.
+
+[pause]
+
+[contemplative] You know what this reminds me of? Every conversation I've ever had where I said something I immediately wished I could take back.
+
+[warm] Right.
+
+[contemplative] And the ones that went well were the ones where I didn't try to pretend I hadn't said it. Where I just... dealt with what I'd put into the room.
+
+[teaching] That's exactly it. And that's the transfer. In every scene — and honestly in every moment of your life — you are living in the consequences of the last three seconds. That's just true. The question is whether you spend your energy trying to get back to three seconds ago, or whether you spend it building forward from where you actually are.
+
+[curious] There's a variation on this exercise too, right? The fact-check version?
+
+[teaching] Yeah, the Fact-Check Scene. Different exercise, different muscle. A third player sits to the side and tracks every established fact. And at any point they can call out "Where's the gun?" or "What happened to Bob?" Forcing the scene to account for things that were dropped.
+
+[curious] How is that different from Trains?
+
+[teaching] Trains is about commitment — you made a choice, live with it. The Fact-Check Scene is about continuity — you built a world, maintain it. One trains you to move forward from what you don't want. The other trains you to hold onto what you already have. Commitment drill versus continuity drill.
+
+[contemplative] Both are about taking the reality of the scene seriously, though.
+
+[teaching] Both are about taking reality seriously. Which is maybe the deepest improv skill there is.
+
+[long pause]
+
+[serious] Here's the thing that Trains teaches you that nothing else quite does. Irreversibility is not a punishment. It feels like one in the moment — "Oh no, I said the wrong thing, and now I'm stuck with it." But irreversibility is actually the source of all dramatic stakes. If you could undo anything, nothing would matter. The permanence of your choices is what gives them weight.
+
+[curious] So the skill isn't really memory. It's not about remembering what was established.
+
+[teaching] No. The skill is justification. The ability to build forward from any point. Including — especially — the point you didn't want to be at. That's where the interesting stuff lives. That's where you find out what you're actually capable of as a performer.
+
+[warm] And honestly? As a person.
+
+[contemplative] The tracks only go one way.
+
+[teaching] The tracks only go one way. Might as well look out the window.
+
+[rewritten]
