@@ -1,45 +1,79 @@
-[conversational] So someone asked you to teach improv. And you said yes. And now you're staring at a blank lesson plan wondering why being good at improv doesn't automatically make you good at explaining it.
+Here's the script:
 
-[warm] That's the gap, isn't it? Knowing how to ride a bicycle and being a cycling instructor are completely different skills.
+[conversational] You know what's funny? Nobody tells you how different it is. You've been doing improv for years, you're solid, someone says "hey, can you teach a class?" and you think — sure. I know this stuff. How hard can it be?
 
-[emphatic] Completely. I can do a great scene but ask me why it worked and I'm like [short pause] "I don't know, it just felt right."
+[warm] And then you're standing in front of twelve people who are terrified, and you realize knowing how to ride a bicycle does not make you a cycling instructor.
 
-[teaching] Which is fine as a performer. But as a teacher, "it felt right" isn't a lesson plan. This path bridges that gap.
+[emphatic] Not even close. I could do a great scene. But ask me to explain why it worked? I'd just stare at you.
 
-[curious] What's the first thing it covers?
+[teaching] That's the gap. And it's not a knowledge gap — it's an articulation gap. You have the instincts. What you don't have is the explanatory layer underneath them. The part that turns "it just felt right" into something you can actually teach.
 
-[teaching] The system underneath. Six laws that explain why improv works at a fundamental level. Irreversibility, bandwidth limits, fragility, continuous signaling, relational meaning, interdependence. You're not going to teach these directly to your level one students, but they give you an explanatory foundation.
+[pause]
 
-[leaning in] So when a student asks "why does yes-and matter" I have a real answer?
+[curious] So where do you start? Because "go study pedagogy" feels overwhelming.
 
-[confident] An answer that goes deeper than "because it's the rule." You can say, "because shared reality is fragile, and rejection corrupts the shared database both performers are building from." That kind of grounding makes every teaching decision more confident.
+[teaching] You start with the system. Not your system for teaching — the system underneath improv itself. There are six laws that govern why this art form works. Irreversibility. Bandwidth limits. Fragility. Continuous signaling. Relational meaning. Interdependence.
 
-[conversational] Okay, what's next?
+[curious] And you're not teaching those to your students.
 
-[warm] The actual pedagogy. The teacher's toolkit. And this is the big one. How to create safety in the room, which is the prerequisite for literally everything else. How to structure a curriculum so skills build on each other in the right order. How to warm up a room. How to side-coach without stopping the work.
+[teaching] No. These are for you. They're your foundation. Because here's what happens without them — a student raises their hand and says "why does yes-and matter?" and you say "because it's the rule." And they nod. And they don't really get it. And you feel it.
 
-[curious] Side-coaching is the thing where you call out instructions during a scene?
+[conversational] But with the system —
 
-[teaching] Right. Real-time guidance. It's an art. Too much and you're directing. Too little and they're floundering. The path covers the principles of when to intervene and what to say.
+[confident] You say "because shared reality is fragile. Every denial corrupts the database both performers are building from. Yes-and isn't a courtesy — it's structural integrity." Now they get it. And you got it deeper by saying it.
 
-[matter-of-fact] And giving notes after scenes?
+[short pause]
 
-[emphatic] Less is more. That's the headline. And exercises beat verbal feedback almost every time. If someone's not listening to their partner, don't tell them to listen harder. Put them in an exercise where listening is the only option. The structure teaches what words can't.
+[curious] What about the actual mechanics of teaching? Because understanding why improv works and being able to run a room are also different skills.
 
-[curious] What comes after the pedagogy section?
+[teaching] Completely different. And the first one is safety. Not as a nice-to-have. As the prerequisite for everything else.
 
-[warm] We revisit the fundamentals through a teacher's lens. Building on offers and presence and commitment. Not as a refresher for you, but as a framework for how to teach them. Because these are the first things your students need, and the sequence matters.
+[curious] Everything?
 
-[leaning in] So the path is: understand why improv works, learn how to teach, then learn how to teach the fundamentals specifically.
+[emphatic] Everything. A student who doesn't feel safe won't take risks. A student who won't take risks can't discover anything. And discovery is the whole game. So before you teach a single exercise, you're building a container where failure is genuinely okay. Not "we say it's okay" okay. Actually okay.
 
-[confident] In that order. And by the end, you'll have a framework for structuring classes, a vocabulary for giving specific feedback, and something that's maybe the most important piece.
+[teaching] Then structure. Skills build on prerequisites, and the sequence matters. You wouldn't teach game-of-the-scene before someone can make and accept an offer. Sounds obvious, but I've watched teachers throw pattern games at people who can't sustain eye contact yet. Curriculum design is just knowing what unlocks what.
 
-[curious] What's that?
+[short pause]
 
-[teaching] Permission to develop your own teaching voice. [short pause] A lot of new teachers just copy their best teacher. Same exercises, same notes, same energy. But improv teachers should all teach differently. What they share is the ability to explain, to create safety, and to design experiences where students discover the principles themselves.
+[curious] What about in the moment? When a scene's happening and you can see something going wrong?
 
-[conversational] So it's not a recipe book.
+[teaching] Side-coaching. And this is an art. You're giving real-time guidance without stopping the work. Too much and you're directing — the students are performing for you instead of each other. Too little and they're floundering without language for what's happening.
 
-[emphatic] It's a set of principles you can build your own approach from. Just like improv itself.
+[conversational] It's like improv itself. You're reading and responding.
 
-[warm] If you've been asked to teach and you're feeling the gap between doing and explaining, start here. The system underneath thread first. Get your foundation. Then the toolkit will feel like it has somewhere to land.
+[warm] Exactly. Teaching is a scene. You're making offers, reading your scene partners, adjusting in real time. The same instincts that make you a good performer make you a good teacher — you just have to point them in a different direction.
+
+[pause]
+
+[curious] And giving notes after scenes? That's the part I dread.
+
+[teaching] Less is more. That's the whole thing. One note per scene. Maybe two if they're related. Because a student who gets five notes remembers zero of them.
+
+[curious] Just one?
+
+[confident] The one that unlocks the most. And here's the real move — exercises beat verbal feedback almost every time. If someone's not listening to their partner, don't tell them to listen harder. Put them in a repetition exercise where listening is the only option. Let the structure teach what words can't.
+
+[short pause]
+
+[curious] After all that — the system, the toolkit — the path revisits fundamentals. Why?
+
+[teaching] Because building on offers and presence and commitment look different when you're teaching them versus doing them. As a performer, you just accept offers. As a teacher, you need to see why a student isn't accepting them. Are they afraid? Are they in their head planning? Are they so focused on being funny that they can't hear what's actually being given to them? The diagnosis changes the intervention.
+
+[conversational] So you're not relearning the basics. You're learning to see them in other people.
+
+[teaching] Which requires understanding them at a level you never needed as a performer. The best teachers I know understand fundamentals more deeply than they understand advanced technique. Because fundamentals are where students live.
+
+[pause]
+
+[warm] Here's the thing nobody tells new teachers. You're going to want to copy your best teacher. Same exercises, same energy, same notes. And that makes sense — they're your model for what good teaching looks like.
+
+[teaching] But improv teachers should all teach differently. That's the whole point. Your voice, your metaphors, your way of seeing — that's what makes your class yours. What every good teacher shares isn't a method. It's the ability to explain, to create safety, and to design experiences where students discover principles for themselves.
+
+[short pause]
+
+[contemplative] You know what's underneath all of this? The same thing that's underneath good improv. Trust. Trust that the system works. Trust that your students will find it if you build the right container. Trust that you don't have to control every moment for the learning to happen.
+
+[warm] You already know how to surrender to a scene. Now learn to surrender to a classroom. The principles are the same. The stakes feel different — but the practice is identical.
+
+[rewritten]
