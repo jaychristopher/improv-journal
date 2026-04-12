@@ -1,21 +1,65 @@
-[curious] Genre Scene. So you're doing improv in the style of film noir or horror or whatever?
+[curious] So genre scenes. You pick a genre — noir, horror, rom-com — and you just... do scenes in that genre. Sounds like a party game.
 
-[teaching] Yes, but there's an important distinction. This is not parody. The key instruction is "play it straight." Commit to the genre rather than commenting on it or winking at the audience. [short pause] Half-hearted noir is just a funny voice. Committed noir is a world the audience enters.
+[teaching] It sounds like a party game, and that's actually the trap. Because the moment you treat it like a party game, you're doing an impression of noir instead of doing noir. And those are completely different things.
 
-[conversational] How do you set it up?
+[curious] What's the difference?
 
-[matter-of-fact] The ensemble picks a genre. Film noir, romantic comedy, horror, Western, sci-fi, Shakespeare, whatever. You briefly discuss the conventions. Tropes, character types, language patterns, physical vocabulary, typical settings, narrative structures. Then you perform scenes within that genre.
+[warm] The difference is commitment. When you do an impression, you're standing outside the thing, pointing at it. "Look, I'm doing a funny voice, I'm saying 'dame' a lot." When you commit, you're inside it. You actually care whether the detective finds the killer. The audience can feel that difference instantly.
 
-[curious] What skills does this actually develop? It seems like it could be a gimmick.
+[short pause]
 
-[emphatic] Four specific things. First, specificity. Genre demands specific choices. Noir requires vocabulary like "the rain came down like God was trying to drown his regrets." It requires character types, tonal commitment. It forces you out of vague, generic scene work. [short pause] Second, commitment. Playing genre authentically means going all the way. That muscle transfers to everything. Third, shared vocabulary. When the ensemble shares genre knowledge, they share expectations that work like a second language. Fourth, heightening through convention. Genre conventions are pre-built heightening structures. Horror escalates naturally. Rom-com has built-in arc.
+[curious] So the key instruction is "play it straight."
 
-[contemplative] What goes wrong?
+[emphatic] Play it straight. That's the whole exercise, really. Everything else is scaffolding. You pick the genre, you talk about what makes it tick — the tropes, the rhythms, the physical vocabulary — and then you step into it like it's real. Half-hearted noir is just a funny voice. Committed noir is a world the audience enters.
 
-[serious] The biggest failure is lazy parody. Players play cliches instead of genuine conventions. They comment on the genre instead of living in it. [short pause] The side-coaching for that is direct. "You're commenting on the genre, not living in it." "Commit more." "What does this world sound like?"
+[contemplative] And that "play it straight" muscle — that's not just a genre thing, is it?
 
-[curious] What if someone doesn't know the genre well?
+[teaching] No, that's the sneaky part. Genre is the training wheels. What you're actually practicing is going all the way with a choice. Any choice. Because the thing that kills most scenes isn't bad ideas, it's half-committed ideas. You make an offer and then you hedge. You start something bold and then you pull back because it feels too big. Genre forces you past that instinct because the genre itself is big. Noir is operatic. Horror is primal. You can't do those things at sixty percent.
 
-[warm] That's a real practical issue. Genre knowledge is unevenly distributed. The exercise can accidentally exclude performers unfamiliar with a genre's tropes. [short pause] The fix is to spend real time on that pre-scene discussion. Make sure everyone has enough shared vocabulary to play. And choose genres the group actually knows.
+[short pause]
 
-[emphatic] When it works, genre is one of the most powerful tools in improv. It gives the ensemble a shared blueprint that makes every scene structurally richer. The audience gets a world, not just a conversation.
+[curious] Let's get specific. Say the group picks film noir. What does commitment actually look like in practice?
+
+[warm] Okay, so first — the language changes. Not just adding "sweetheart" to every sentence, but actually finding the poetry of it. "The rain came down like God was trying to drown his regrets." That's a different relationship with language than most improvisers have in a scene. You're reaching for metaphor, for texture.
+
+[teaching] Then the physicality. Noir characters move differently. The detective leans against things. The femme fatale owns space. Shadows matter. You're not just standing in the back line — you're creating atmosphere with your body. And the pacing slows down. Noir breathes. There are silences where someone lights a cigarette and you feel the weight of what's not being said.
+
+[curious] That's a lot of specificity to pull out of thin air.
+
+[matter-of-fact] Which is exactly the point. Genre demands specific choices. It forces you out of that vague, generic scene work where two people stand center stage and negotiate who they are to each other for three minutes. In noir, you already know who you are. You're the world-weary detective. She's the woman who just walked in with a problem and a secret. Now you can skip the negotiation and get to the actual scene.
+
+[contemplative] So genre gives you a shared vocabulary with your scene partners.
+
+[emphatic] That's one of the most underrated benefits. When the whole ensemble knows the conventions of horror, you all share expectations. Everyone knows that the strange noise means someone investigates. Everyone knows the investigation reveals something worse than expected. Those shared expectations function like a second language. You can build on each other's moves without negotiating because you're all reading from the same playbook.
+
+[curious] And horror has that natural escalation built in, right? Noise, investigation, revelation, chase —
+
+[teaching] Exactly. Genre conventions are pre-built heightening structures. Horror escalates naturally. Rom-com has built-in architecture — meet-cute, obstacle, misunderstanding, resolution. You're not inventing structure from scratch, you're riding structure that already exists. And by riding it, you're training your instinct for narrative escalation that you can then apply to scenes that have no genre at all.
+
+[pause]
+
+[curious] Okay, but here's the pushback I've heard. Doesn't genre work just become lazy parody? You're playing cliches, not doing real scene work.
+
+[serious] That's a real risk, and it's the reason the side-coaching matters so much. The coach has to keep pushing: "More specific. You're commenting on the genre, not living in it." Because there's a version of this exercise that's just improvisers doing bad accents and mugging at the audience. That's worthless. The whole value is in the authenticity.
+
+[teaching] And here's the thing about cliches versus conventions. A cliche is a convention you're not taking seriously. The femme fatale is a cliche if she's just a sexy voice. She's a convention if she's a fully realized person who happens to be operating within a world that has specific rules about power and desire and deception. The difference is whether you're using the genre or wearing it like a costume.
+
+[curious] There's also the problem of uneven knowledge. What if half the group doesn't know the genre?
+
+[warm] That's a practical issue, yeah. If three people know Westerns and two people have never seen one, it fractures the ensemble. The brief discussion at the top helps — you name the conventions, the character types, the typical settings. But honestly, the best approach is picking genres the whole group can access. Everyone's seen enough horror to play horror. Not everyone's seen enough Shakespeare to play Shakespeare.
+
+[contemplative] It's interesting — you're essentially saying genre is a delivery mechanism for fundamentals.
+
+[teaching] Specificity. Commitment. Shared vocabulary. Narrative structure. Those are the fundamentals. Genre just makes them unavoidable. You can do a generic scene and get away with being vague. You cannot do noir and be vague. The genre won't let you.
+
+[short pause]
+
+[curious] And off stage?
+
+[warm] Think about the last time you told a story at dinner. The good version has genre instincts in it — you set the atmosphere, you committed to the emotional tone, you used specific details instead of summaries. "Play it straight" is advice for every story you'll ever tell. Stop winking. Stop hedging. Just go all the way.
+
+[contemplative] Go all the way. That's really what every improv exercise is trying to teach, isn't it?
+
+[teaching] And genre is the one that won't let you pretend you did.
+
+[rewritten]
