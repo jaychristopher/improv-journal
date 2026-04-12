@@ -1,40 +1,4 @@
 {
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 193,
-    "formatted": "3:13"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 210,
-    "formatted": "3:30"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 214,
-    "formatted": "3:34"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 222,
-    "formatted": "3:42"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 217,
-    "formatted": "3:37"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 185,
-    "formatted": "3:05"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 223,
-    "formatted": "3:43"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 187,
-    "formatted": "3:07"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 199,
-    "formatted": "3:19"
-  },
   "/audio/threads/traditions-in-tension.mp3": {
     "seconds": 574,
     "formatted": "9:34"
@@ -130,6 +94,42 @@
   "/audio/threads/anatomy-of-a-scene.mp3": {
     "seconds": 615,
     "formatted": "10:15"
+  },
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 193,
+    "formatted": "3:13"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 210,
+    "formatted": "3:30"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 214,
+    "formatted": "3:34"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 222,
+    "formatted": "3:42"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 217,
+    "formatted": "3:37"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 185,
+    "formatted": "3:05"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 223,
+    "formatted": "3:43"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 187,
+    "formatted": "3:07"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 199,
+    "formatted": "3:19"
   },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 557,
@@ -270,6 +270,10 @@
   "/audio/atoms/emotional-truth.mp3": {
     "seconds": 291,
     "formatted": "4:51"
+  },
+  "/audio/atoms/emotional-range.mp3": {
+    "seconds": 420,
+    "formatted": "7:00"
   },
   "/audio/atoms/emotional-honesty-scene.mp3": {
     "seconds": 148,
