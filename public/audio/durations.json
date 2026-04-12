@@ -239,6 +239,10 @@
     "seconds": 168,
     "formatted": "2:48"
   },
+  "/audio/atoms/continuous-signaling.mp3": {
+    "seconds": 370,
+    "formatted": "6:10"
+  },
   "/audio/atoms/cognitive-bandwidth.mp3": {
     "seconds": 369,
     "formatted": "6:09"
