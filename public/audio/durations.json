@@ -203,6 +203,10 @@
     "seconds": 150,
     "formatted": "2:30"
   },
+  "/audio/atoms/opening.mp3": {
+    "seconds": 381,
+    "formatted": "6:21"
+  },
   "/audio/atoms/one-word-scene.mp3": {
     "seconds": 141,
     "formatted": "2:21"
