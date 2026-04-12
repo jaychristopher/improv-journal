@@ -1,4 +1,40 @@
 {
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 447,
+    "formatted": "7:27"
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 359,
+    "formatted": "5:59"
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 366,
+    "formatted": "6:06"
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 452,
+    "formatted": "7:32"
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 430,
+    "formatted": "7:10"
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 480,
+    "formatted": "8:00"
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 412,
+    "formatted": "6:52"
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 349,
+    "formatted": "5:49"
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 372,
+    "formatted": "6:12"
+  },
   "/audio/threads/traditions-in-tension.mp3": {
     "seconds": 574,
     "formatted": "9:34"
@@ -94,42 +130,6 @@
   "/audio/threads/anatomy-of-a-scene.mp3": {
     "seconds": 615,
     "formatted": "10:15"
-  },
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 447,
-    "formatted": "7:27"
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 359,
-    "formatted": "5:59"
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 366,
-    "formatted": "6:06"
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 452,
-    "formatted": "7:32"
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 430,
-    "formatted": "7:10"
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 480,
-    "formatted": "8:00"
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 412,
-    "formatted": "6:52"
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 349,
-    "formatted": "5:49"
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 372,
-    "formatted": "6:12"
   },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 367,
@@ -476,8 +476,8 @@
     "formatted": "3:23"
   },
   "/audio/atoms/be-supportive.mp3": {
-    "seconds": 206,
-    "formatted": "3:26"
+    "seconds": 355,
+    "formatted": "5:55"
   },
   "/audio/atoms/be-simple.mp3": {
     "seconds": 352,
