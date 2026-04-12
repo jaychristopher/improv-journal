@@ -1,147 +1,73 @@
-[conversational] You just watched someone give a presentation. It was fine in parts. Rough in others. Now they're looking at you, waiting.
+[conversational] So here's something I've been stuck on. I give someone a note after a scene — a good note, a specific note — and they nod, they say thanks, and then they do the exact same thing next time. What am I doing wrong?
 
-[warm] So you do the thing. Start positive. Constructive criticism in the middle. End with encouragement.
+[warm] Probably nothing wrong with your diagnosis. The note is probably accurate. The problem is that accurate isn't the same as useful.
 
-[emphatic] The feedback sandwich. They nod. They say thanks. [short pause] They give the exact same presentation next time with the exact same problems.
+[curious] What do you mean?
 
-[serious] Your feedback changed nothing.
+[teaching] Okay, think about the most common note in improv. "Listen to your scene partner." Has anyone in the history of improv heard that note and gone, "Oh! Listening! I forgot that was a thing!" No. They know they should be listening. They're not failing to listen because they lack the information that listening matters. They're failing because their bandwidth is eaten up by something else — they're planning ahead, they're anxious, they're monitoring themselves. The note adds one more thing to monitor, which actually makes the problem worse.
 
-[curious] And that's not because I delivered it wrong?
+[contemplative] That's... kind of brutal. You're saying the note is making them a worse listener.
 
-[teaching] It's because the entire model of feedback has a structural flaw. Describing a problem doesn't create the conditions for solving it. [pause]
+[matter-of-fact] It can. Will Hines has this line I love: "An exercise is better than a note." And once you hear it, you can't unhear it. Because an exercise doesn't describe the right behavior. It creates conditions where the right behavior is the only option.
 
-[contemplative] Huh.
+[curious] Give me an example.
 
-[emphatic] For fifty years, improv teachers have been giving feedback to performers multiple times per class, every class, every week. The feedback loop in improv is tighter than almost any other domain. And the best teachers discovered something most feedback advice ignores.
+[teaching] Mirroring. Two people face each other, one moves, the other mirrors exactly. You literally cannot do that exercise without paying exquisite attention to the other person. Five minutes of mirroring teaches your body what listening feels like in a way that no note ever could. The note is "listen more." The exercise makes not-listening physically impossible. Which one do you think sticks?
 
-[curious] Which is?
+[emphatic] The exercise. Obviously.
 
-[teaching] Telling someone what's wrong doesn't help if they can't feel the alternative. [pause]
+[warm] Right. Or one-word scenes. You're building a story one word at a time. You can't be complex. You can't steamroll. Simplicity is structurally required. The performer experiences what simplicity feels like when it's working, and they didn't need anyone to tell them about it.
 
-[leaning in] Say more about that.
+[contemplative] So the principle is — don't describe the change, design the experience of it.
 
-[warm] In improv, post-performance feedback is called "notes." The director watches a scene and tells performers what worked and what didn't. Notes are the most common form of feedback in improv. They're also the least effective.
+[confident] Exactly. The best feedback doesn't add information. It creates experience. And this works way beyond improv.
 
-[conversational] Will Hines puts it bluntly, right?
+[curious] How so?
 
-[emphatic] "An exercise is better than a note."
+[teaching] Think about someone on your team who overexplains in meetings. The standard feedback is "try to be more concise." But they're not being verbose because they forgot that brevity exists. They're overexplaining because they're anxious about being understood. So instead of the note, you give them a role: "In the next meeting, your job is to summarize each person's point in one sentence before we move on." Now they're practicing deep listening and compression because the role demands it. After the meeting you ask, "Did you notice anything different about your attention?" The experience teaches. You just name what happened.
 
-[curious] Why?
+[warm] That's the exercise-over-note principle applied to a Tuesday morning standup.
 
-[teaching] When you tell a performer "you're not listening to your scene partner," you've accurately described the symptom. But the performer already knows they should be listening. They're not failing because they lack the information that listening matters.
+[short pause]
 
-[serious] They're failing because their cognitive bandwidth is consumed by something else. Fear of failure. Internal planning. Status anxiety.
+[curious] Okay, but sometimes you can't design an exercise. Sometimes you just watched a set and you need to give notes. What then?
 
-[warm] And the note adds a new item to their monitoring list, "remember to listen," which perversely consumes more of the bandwidth that listening requires.
+[serious] One note. That's it. The single most important one.
 
-[contemplative] The note describes the output failure without addressing the input problem. [pause]
+[surprised] One?
 
-[curious] And this translates outside improv?
+[matter-of-fact] One. Here's why. A performer who gets eight notes after a scene can't work on eight things simultaneously. They'll either try to — and become so self-conscious they're worse — or they'll pick one or two and forget the rest, in which case six of your notes were noise. The volume of feedback degraded their ability to improve. So you find the keystone note. The one thing that, if it changes, improves three other things downstream.
 
-[emphatic] Everywhere. "You need to be more concise in meetings." The person knows. They're overexplaining because they're anxious about being understood. "Your code reviews should be more thorough." They know. They're rushing because they're overwhelmed. "Speak up more in discussions." They know. They're quiet because the environment doesn't feel safe enough.
+[contemplative] The keystone note. I like that. It's like finding the load-bearing wall.
 
-[teaching] In every case, the feedback accurately identifies the gap between current and desired behavior. And in every case, the person cannot close the gap with the information alone. Because the gap isn't caused by missing information.
+[teaching] And then — this is the part people skip — you follow the note with practice. Immediately. "The main thing I'd change: when you initiate, you're starting with premise instead of relationship. Want to run two scenes right now where the first line is just how you feel about the other person?" One note, specific, followed by a chance to try it while the context is still warm.
 
-[serious] So what's the alternative?
+[short pause]
 
-[warm] The exercise approach. Design an experience where the correct behavior emerges naturally from the constraints.
+[curious] There's another tool you haven't mentioned. Side-coaching. That's a different animal, right?
 
-[curious] Instead of telling someone to listen better [short pause]
+[emphatic] Totally different, and underrated outside of improv. Side-coaching is feedback during the scene, not after. "Slow down." "Look at her." "Say less." "Let that land." It works because you're intervening at the moment the behavior is happening, not after it's been packaged into memory as a finished event.
 
-[teaching] You run a mirroring exercise. Two people face each other. One moves, the other mirrors. The exercise makes not-listening physically impossible. You can't mirror someone without paying exquisite attention. After five minutes, the performer's body knows what listening feels like. No note could produce that.
+[conversational] So the performer can feel the difference in real time.
 
-[emphatic] Instead of telling someone "make simpler choices," run a one-word scene. Two people build a story one word at a time. With only one word per turn, complexity is structurally impossible. The performer experiences simplicity working.
+[confident] Right. "Slow down" during a scene is infinitely more useful than "you were rushing" after it. During the scene, they experience what slowing down actually produces. They feel the room shift. That's data their body stores.
 
-[leaning in] The note becomes redundant because the exercise already taught it.
+[curious] But that requires a lot of trust.
 
-[teaching] That's the core insight. The best feedback doesn't describe correct behavior. It creates conditions where correct behavior is the only available option. Experienced change sticks in a way that described change doesn't.
+[serious] It requires safety. Full stop. If the person being side-coached doesn't trust that the interruption is support and not judgment, it feels like surveillance. This is why the first exercises in any improv class aren't about improv. They're about establishing one thing: can I be bad at something here and survive? Can I look ridiculous and be supported? Until people answer yes to those questions through experience — not because someone announced "this is a safe space" — feedback is decoration. It bounces off.
 
-[curious] There's a second tool here too, right? Something about real-time feedback?
+[contemplative] So safety isn't a nice-to-have prerequisite. It's the thing that makes feedback metabolizable.
 
-[warm] Side-coaching. Instead of watching a scene, waiting for it to end, and delivering notes after, the teacher calls instructions during the scene while it's happening.
+[warm] That's the perfect word. Metabolizable. Amy Edmondson found that psychologically safe teams didn't make fewer mistakes. They reported more, processed more, and improved faster. Safety didn't reduce errors. It made errors available for learning instead of concealment. Same thing in a scene. Same thing in a one-on-one with your manager.
 
-[conversational] "Slow down." "Look at your partner." "Say less." "Let that land."
+[pause]
 
-[teaching] Side-coaching works because it intervenes at the moment the behavior is occurring. The performer adjusts in real time and immediately feels the difference. "Slow down" during a scene is infinitely more useful than "you were rushing" after it.
+[conversational] So if I'm boiling this down for the person who has to give feedback tomorrow morning —
 
-[curious] How does that translate to, say, a workplace?
+[teaching] Diagnose the input, not the output. Before you give the note, ask what's causing the behavior. Then, if you can, design an experience instead of delivering a description. If you can't, give one note — the keystone — and create a chance to practice it immediately. And if you have the trust, side-coach in the moment instead of waiting for the debrief.
 
-[emphatic] A manager who sits in on a meeting and passes a note card, "let Maria finish her thought before jumping in," that's side-coaching. Way more effective than the post-meeting debrief.
+[contemplative] The best note is the one you didn't have to give because the exercise already taught it.
 
-[warm] A writing mentor who reads a draft in progress and says "stay with this paragraph, you're about to run away from the interesting part." More effective than margin notes on a finished piece.
+[warm] That's the whole thing. Experience is the feedback. Everything else is just talking about it.
 
-[serious] Sports coaches do this instinctively. There's a reason they don't wait until after practice to give all their feedback at once.
-
-[contemplative] But side-coaching requires trust. [pause]
-
-[teaching] Critical point. The person must believe the coach is on their side and the interruption is support, not judgment. This is why safety is a prerequisite, not a nice-to-have. Without safety, side-coaching feels like surveillance. With safety, it feels like guidance.
-
-[curious] What about the amount of feedback? Is more better?
-
-[emphatic] The opposite. The best improv teachers give fewer notes, not more.
-
-[conversational] That seems counterintuitive.
-
-[teaching] A performer who receives eight notes after a scene can't work on all eight simultaneously. They'll either try to, and become so self-monitoring they're worse, or pick one and forget the rest.
-
-[serious] Either way, the volume degraded their ability to improve rather than enhancing it.
-
-[warm] The improv principle is one note. The most important one. Then an exercise that trains it.
-
-[teaching] This maps everywhere. Don't list every problem. Identify the one that, if solved, would improve the most other things. The keystone note. Deliver it clearly. Then create an opportunity to practice.
-
-[curious] Buckingham's research supports this?
-
-[emphatic] His work at Gallup found the best managers focused on strengths and when they addressed a weakness, they focused on one specific, actionable change. Not a comprehensive critique. The improv approach arrives at the same conclusion from a different direction.
-
-[contemplative] Fewer notes work better because human bandwidth can only process one correction at a time. [pause]
-
-[serious] But all of this depends on one condition.
-
-[leaning in] Safety again.
-
-[teaching] Consider what feedback actually asks of someone. Admit your behavior is wrong. Accept that someone else understands your performance better than you do. Change in a direction they specify. That's a high-vulnerability request.
-
-[warm] In a low-trust environment, the rational response isn't openness. It's defense.
-
-[emphatic] Edmondson's research showed teams with higher psychological safety didn't make fewer mistakes. They reported more, learned faster, and improved more consistently. Safety didn't reduce errors. It made errors available for processing.
-
-[serious] The same applies to feedback. Safety makes people receptive not because they're nicer, but because the cost of accepting feedback is low enough that the benefit of improvement outweighs it.
-
-[curious] So give me the practical framework. How do I actually do this?
-
-[teaching] Four steps. First. Diagnose the input, not the output. Before giving feedback, ask what's causing this behavior. If someone is too verbose, it's probably not because they forgot conciseness matters.
-
-[warm] "I notice you tend to elaborate. Are you feeling uncertain about whether your point is landing?" That addresses the cause. "Try to be more concise" just describes the desired output and hopes they reverse-engineer the path.
-
-[curious] Step two?
-
-[emphatic] Design an experience before delivering a note. If someone needs to listen better, put them in a role where listening is the only task. "In the next meeting, your job is to summarize each person's point before the group moves on."
-
-[teaching] They practice listening because the role requires it. After the meeting, ask "did you notice anything different about your attention?" The experience teaches. Your naming reinforces.
-
-[conversational] And if someone needs to make faster decisions?
-
-[warm] Give them a timed constraint. "Sixty seconds to choose a direction. Whatever you pick, we run with it and adjust later." The constraint creates the behavior. The debrief creates the awareness.
-
-[curious] Step three?
-
-[teaching] Side-coach when possible. In the moment, not after. "Hey, I want to make sure I understand your core point. Can you give me the one-sentence version?" That teaches conciseness in real time without ever using the word.
-
-[emphatic] And step four. One note, then practice. When you must give post-hoc feedback, resist being comprehensive. Pick the single most impactful change.
-
-[serious] "The main thing I'd change. When you present data, lead with the conclusion, then show the evidence. Your current structure means people are uncertain about your point for the first three minutes. Want to try restructuring the first slide right now?"
-
-[warm] One note. Specific. Actionable. Followed by immediate practice. [pause]
-
-[conversational] There's a caveat here.
-
-[teaching] This is for developmental feedback. Helping someone improve at something they're genuinely trying to improve at. It assumes good faith on both sides.
-
-[serious] It doesn't cover performance management conversations where documentation requires completeness. It doesn't cover large power differentials where admitting imperfection feels dangerous. And it doesn't work when the person doesn't want to improve.
-
-[contemplative] So what's the underlying principle? [pause]
-
-[emphatic] The best feedback doesn't add information. It creates experience. When someone feels what listening is like, feels what conciseness produces, feels what commitment unlocks, they don't need to be told. They know.
-
-[warm] The best feedback is the note you didn't have to give.
+[rewritten]
