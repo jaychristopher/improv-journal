@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { RecommendedBadge } from "@/components/RecommendedBadge";
 import { loadPaths } from "@/lib/content";
 import type { Audience } from "@/lib/schema";
 
@@ -63,7 +64,10 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
             href={`/paths/${p.frontmatter.id}`}
             className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
           >
-            <h2 className="font-semibold">{p.frontmatter.title}</h2>
+            <h2 className="flex items-center font-semibold">
+              {p.frontmatter.title}
+              <RecommendedBadge pathId={p.frontmatter.id} />
+            </h2>
             <p className="text-foreground/50 mt-1 text-sm">{p.frontmatter.description}</p>
           </Link>
         ))}
