@@ -186,6 +186,38 @@ const BRIDGE_RELATIONS: Record<
       { slug: "how-to-be-more-confident", label: "How to Be More Confident" },
     ],
   },
+  "group-dynamics": {
+    exercises: ["mirroring", "group-mind-cultivation", "status-transfer"],
+    threads: [{ id: "playing-together-at-the-highest-level", label: "Playing Together" }],
+    otherGuides: [
+      { slug: "collaboration-skills", label: "Collaboration Skills" },
+      { slug: "team-building-activities", label: "Team Building Activities" },
+    ],
+  },
+  "interpersonal-communication-skills": {
+    exercises: ["last-word-response", "mirroring", "one-word-scene"],
+    threads: [{ id: "building-on-offers", label: "Building on Offers" }],
+    otherGuides: [
+      { slug: "active-listening", label: "Active Listening Skills" },
+      { slug: "how-to-be-present", label: "How to Be Present" },
+    ],
+  },
+  "how-to-overcome-fear-of-failure": {
+    exercises: ["blind-offer", "first-line-drill", "emotional-honesty-scene"],
+    threads: [{ id: "the-inner-game-expanded", label: "The Inner Game" }],
+    otherGuides: [
+      { slug: "stage-fright", label: "Stage Fright Is Not Your Enemy" },
+      { slug: "how-to-be-vulnerable", label: "How to Be Vulnerable" },
+    ],
+  },
+  "how-to-stop-overthinking-in-a-relationship": {
+    exercises: ["mirroring", "emotional-honesty-scene", "last-word-response"],
+    threads: [{ id: "quieting-the-planning-mind", label: "Quieting the Planning Mind" }],
+    otherGuides: [
+      { slug: "how-to-stop-overthinking", label: "How to Stop Overthinking" },
+      { slug: "how-to-be-vulnerable", label: "How to Be Vulnerable" },
+    ],
+  },
 };
 
 export default async function BridgePage({ params }: { params: Promise<{ slug: string }> }) {
