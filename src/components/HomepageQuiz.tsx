@@ -59,14 +59,14 @@ export function HomepageQuiz({ paths }: QuizProps) {
     // Step 1: "Understand people" sub-choices
     [
       {
-        label: "Show me the big picture",
-        desc: "Start with what improv reveals about every conversation.",
-        action: () => goToPath("physics-of-connection"),
+        label: "I want better conversations and relationships",
+        desc: "Improv principles applied to everyday life — no stage required.",
+        action: () => goToPath("improv-for-life"),
       },
       {
-        label: "I\u2019m analytical — explain the system",
-        desc: "Laws, principles, and how they fit together.",
-        action: () => goToPath("systems-of-improv"),
+        label: "I want my team to work better together",
+        desc: "Trust, collaboration, and group dynamics from improv ensembles.",
+        action: () => goToPath("improv-for-teams"),
       },
       {
         label: "I have a specific problem right now",
