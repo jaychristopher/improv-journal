@@ -9,7 +9,7 @@ import type { Audience } from "@/lib/schema";
 
 const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   beginner: {
-    title: "Just Starting",
+    title: "Improv for Beginners: Where to Start",
     description:
       "The fundamentals of connection — why conversations work, what makes them break, and how to practice. No stage experience required.",
   },

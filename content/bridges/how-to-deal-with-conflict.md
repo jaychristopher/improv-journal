@@ -1,6 +1,6 @@
 ---
 title: "How to Deal with Conflict: The Acceptance Paradox"
-description: "Most conflict advice says 'communicate better' without explaining the mechanism. Improv's insight: conflict escalates when people block each other's reality. Accepting the offer isn't the same as accepting the demand."
+description: "Most conflict advice says 'communicate better' without explaining the mechanism. Conflict escalates when people block each other's reality. Here's the fix."
 target_keywords:
   - { keyword: "how to deal with conflict", volume: 5000 }
 entry_atoms: [yes-and, blocking, offers, accepting-the-offer, status, be-positive]

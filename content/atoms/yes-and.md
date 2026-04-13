@@ -1,6 +1,6 @@
 ---
 id: yes-and
-title: "Yes, And"
+title: "Yes, And: The First Rule of Improv"
 type: technique
 status: draft
 tags: [fundamentals, agreement, building, principles]

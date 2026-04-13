@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "The 8 Principles",
+  title: "Rules of Improv: 8 Principles That Make Connection Work",
   description:
     "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
   alternates: { canonical: "/how-it-works/principles" },

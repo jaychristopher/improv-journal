@@ -37,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Hub pages
   const hubs = [
     "/how-it-works",
+    "/improv-games",
     "/practice",
     "/guides",
     "/resources",

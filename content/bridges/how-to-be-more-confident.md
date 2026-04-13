@@ -1,6 +1,6 @@
 ---
 title: "How to Be More Confident (Without Faking It)"
-description: "Confidence isn't a feeling you summon — it's a byproduct of commitment. Improv discovered the mechanism: full commitment to any choice reads as confidence. Half-commitment to the perfect choice reads as doubt."
+description: "Confidence isn't a feeling you summon — it's a byproduct of commitment. Full commitment to any choice reads as confidence. Half-commitment reads as doubt."
 target_keywords:
   - { keyword: "how to be more confident", volume: 7900 }
 entry_atoms: [commitment, obvious-choice, fear-of-failure, be-brave, be-honest]

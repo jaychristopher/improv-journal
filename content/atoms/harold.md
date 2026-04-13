@@ -1,6 +1,6 @@
 ---
 id: harold
-title: Harold
+title: "The Harold: Improv's Most Important Long-Form Format"
 type: format
 status: draft
 tags: [formats, longform, structure, close]

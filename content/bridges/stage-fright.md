@@ -1,6 +1,6 @@
 ---
 title: "Stage Fright Is Not Your Enemy"
-description: "Stage fright and peak performance have identical physiology. The difference is a single cognitive reframe. Here's the neuroscience — and the practice that turned fear into fuel for 60 years."
+description: "Stage fright and peak performance have identical physiology. The difference is a single cognitive reframe. Here's the practice that turns fear into fuel."
 target_keywords:
   - { keyword: "stage fright", volume: 6200 }
   - { keyword: "how to overcome stage fright", volume: 450 }

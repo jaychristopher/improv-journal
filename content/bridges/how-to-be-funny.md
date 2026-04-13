@@ -1,6 +1,6 @@
 ---
 title: "How to Be Funny (It's Not What You Think)"
-description: "Funny isn't a skill you add on top. It's what happens when two people are being honest and specific together. Here's what improv's 50 years of nightly experiments reveal about where humor actually comes from."
+description: "Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor."
 target_keywords:
   - { keyword: "how to be funny", volume: 6600 }
   - { keyword: "how to be funnier", volume: 0 }

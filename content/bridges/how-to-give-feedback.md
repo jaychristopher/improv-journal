@@ -1,6 +1,6 @@
 ---
 title: "How to Give Feedback That Actually Changes Behavior"
-description: "Most feedback describes the problem without creating conditions for change. Improv's insight: an exercise is better than a note. Design experiences where the right behavior emerges, then name it."
+description: "Most feedback describes problems without creating conditions for change. Design experiences where the right behavior emerges naturally, then name it."
 target_keywords:
   - { keyword: "how to give feedback", volume: 900 }
   - { keyword: "how to give constructive feedback", volume: 900 }

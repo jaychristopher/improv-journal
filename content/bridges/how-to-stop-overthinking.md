@@ -1,6 +1,6 @@
 ---
 title: "How to Stop Overthinking: The Bandwidth Problem"
-description: "Overthinking isn't a thinking problem. It's a bandwidth allocation error. Here's the neuroscience — and the 50-year-old practice that discovered the fix before science caught up."
+description: "Overthinking isn't a thinking problem — it's a bandwidth allocation error. Here's the neuroscience and the practice that discovered the fix first."
 target_keywords:
   - { keyword: "how to stop overthinking", volume: 16000 }
   - { keyword: "get out of your head", volume: 3600 }

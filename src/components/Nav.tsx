@@ -25,6 +25,7 @@ const NAV_SECTIONS: NavSection[] = [
     href: "/practice",
     label: "Practice",
     children: [
+      { href: "/improv-games", label: "Improv Games" },
       { href: "/practice/exercises", label: "Exercises" },
       { href: "/practice/techniques", label: "Techniques" },
       { href: "/practice/formats", label: "Formats" },

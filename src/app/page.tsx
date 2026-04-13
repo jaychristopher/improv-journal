@@ -50,6 +50,9 @@ export default async function Home() {
         <Link href="/how-it-works" className="hover:text-foreground/50">
           How It Works
         </Link>
+        <Link href="/improv-games" className="hover:text-foreground/50">
+          Improv Games
+        </Link>
         <Link href="/practice" className="hover:text-foreground/50">
           Practice
         </Link>

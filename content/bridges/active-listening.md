@@ -1,6 +1,6 @@
 ---
-title: "Active Listening: Why You're Doing It Wrong"
-description: "Most active listening advice teaches you to perform the signals of listening while your brain is still composing a reply. Here's the actual mechanism — and the practice that makes fake listening impossible."
+title: "Active Listening Skills: Why You're Doing It Wrong"
+description: "Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible."
 target_keywords:
   - { keyword: "active listening skills", volume: 7500 }
   - { keyword: "how to be a better listener", volume: 1100 }

@@ -1,6 +1,6 @@
 ---
 title: "Team Building Activities That Actually Change How Your Team Works"
-description: "Most team building is theater — fun in the moment, zero behavioral change on Monday. Here's why, and what improv's structural model of trust reveals about activities that actually shift how people work together."
+description: "Most team building is theater — fun in the moment, zero behavioral change on Monday. Here's what improv reveals about activities that actually work."
 target_keywords:
   - { keyword: "team building activities", volume: 487000 }
   - { keyword: "team building activities for work", volume: 8800 }

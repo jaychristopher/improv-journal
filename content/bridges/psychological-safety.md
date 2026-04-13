@@ -1,6 +1,6 @@
 ---
 title: "Psychological Safety: The Physics of Trust"
-description: "Psychological safety isn't about being nice. It's about specific behaviors that make people feel safe enough to speak up. Here's what improv ensembles figured out about building trust — fast."
+description: "Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust."
 target_keywords:
   - { keyword: "psychological safety", volume: 11000 }
   - { keyword: "psychological safety at work", volume: 2700 }

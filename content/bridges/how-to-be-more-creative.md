@@ -1,6 +1,6 @@
 ---
 title: "How to Be More Creative: Stop Trying to Be Original"
-description: "Creativity isn't originality — it's the willingness to follow the obvious. Johnstone's paradox: the more obvious you are, the more original you appear. Here's the neuroscience and the practice."
+description: "Creativity isn't originality — it's the willingness to follow the obvious. The more obvious you are, the more original you appear. Here's the science."
 target_keywords:
   - { keyword: "how to be more creative", volume: 1200 }
 entry_atoms: [obvious-choice, discovery, be-simple, internal-computation, cognitive-bandwidth]
