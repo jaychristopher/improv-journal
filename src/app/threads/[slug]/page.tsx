@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { JourneyProgressBar } from "@/components/JourneyProgressBar";
+import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAtomBySlug,
   getAtomUrl,
@@ -11,6 +13,7 @@ import {
   getThreadBySlug,
   loadThreads,
 } from "@/lib/content";
+import { getNextPath } from "@/lib/path-progression";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -32,19 +35,27 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
   let prevThread: { id: string; title: string } | null = null;
   let nextThread: { id: string; title: string } | null = null;
   let positionInPath: { current: number; total: number } | null = null;
+  let pathThreads: { id: string; title: string }[] = [];
 
   if (parentPath) {
     const siblingIds = parentPath.frontmatter.threads ?? [];
     const idx = siblingIds.indexOf(slug);
+
+    // Resolve all thread titles for progress bar
+    pathThreads = await Promise.all(
+      siblingIds.map(async (id) => {
+        const t = await getThreadBySlug(id);
+        return { id, title: t?.frontmatter.title ?? id };
+      }),
+    );
+
     if (idx !== -1) {
       positionInPath = { current: idx + 1, total: siblingIds.length };
       if (idx > 0) {
-        const prev = await getThreadBySlug(siblingIds[idx - 1]);
-        if (prev) prevThread = { id: prev.frontmatter.id, title: prev.frontmatter.title };
+        prevThread = pathThreads[idx - 1];
       }
       if (idx < siblingIds.length - 1) {
-        const next = await getThreadBySlug(siblingIds[idx + 1]);
-        if (next) nextThread = { id: next.frontmatter.id, title: next.frontmatter.title };
+        nextThread = pathThreads[idx + 1];
       }
     }
   }
@@ -73,9 +84,23 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
   }
   crumbs.push({ label: fm.title });
 
+  // What's next after this thread?
+  const isLastThread = parentPath && !nextThread;
+  const nextPathInfo = isLastThread ? getNextPath(parentPath.frontmatter.id) : null;
+
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
       <Breadcrumb crumbs={crumbs} />
+
+      {/* Journey progress bar */}
+      {parentPath && positionInPath && (
+        <JourneyProgressBar
+          pathId={parentPath.frontmatter.id}
+          pathTitle={parentPath.frontmatter.title}
+          threads={pathThreads}
+          currentThreadIndex={positionInPath.current - 1}
+        />
+      )}
 
       <header className="mb-8">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">
@@ -140,6 +165,22 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
             )}
           </div>
         </nav>
+      )}
+
+      {/* What's Next — after the nav */}
+      {nextThread && (
+        <WhatsNext
+          variant="next-thread"
+          title={nextThread.title}
+          href={`/threads/${nextThread.id}`}
+        />
+      )}
+      {isLastThread && nextPathInfo && (
+        <WhatsNext
+          variant="path-complete"
+          nextPathTitle={nextPathInfo.title}
+          nextPathHref={`/paths/${nextPathInfo.id}`}
+        />
       )}
     </main>
   );

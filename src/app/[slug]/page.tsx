@@ -6,11 +6,13 @@ import path from "path";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
+import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAtomBySlug,
   getAtomUrl,
   getAudioUrl,
   getBridgeBySlug,
+  getFirstThreadOfPath,
   getPathBySlug,
   loadBridges,
 } from "@/lib/content";
@@ -141,6 +143,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
   );
 
   const entryPath = fm.entry_path ? await getPathBySlug(fm.entry_path) : null;
+  const entryPathFirstThread = fm.entry_path ? await getFirstThreadOfPath(fm.entry_path) : null;
   const audioUrl = getAudioUrl("bridges", slug);
 
   // Get duration for structured data
@@ -204,34 +207,14 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           </div>
         )}
 
-        {/* Keep going — the path + one other guide */}
-        <div>
-          <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
-            Keep going
-          </h2>
-          <div className="space-y-2">
-            {entryPath && (
-              <Link
-                href={`/paths/${entryPath.frontmatter.id}`}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
-              >
-                <span className="text-sm font-medium">{entryPath.frontmatter.title}</span>
-                <span className="text-foreground/40 mt-0.5 block text-xs">
-                  The full learning path
-                </span>
-              </Link>
-            )}
-            {relations.otherGuides.slice(0, 2).map((g) => (
-              <Link
-                key={g.slug}
-                href={`/${g.slug}`}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
-              >
-                <span className="text-sm font-medium">{g.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* Go deeper — single CTA into the learning path */}
+        {entryPath && entryPathFirstThread && (
+          <WhatsNext
+            variant="bridge-funnel"
+            pathTitle={entryPath.frontmatter.title}
+            href={`/threads/${entryPathFirstThread.id}`}
+          />
+        )}
       </div>
     </main>
   );

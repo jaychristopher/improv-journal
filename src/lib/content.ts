@@ -435,6 +435,71 @@ export async function getBridgesForAtom(atomId: string) {
   return bridges.filter((b) => b.frontmatter.entry_atoms?.includes(atomId));
 }
 
+/** Find ALL paths that sequence a given thread (not just the first) */
+export async function getAllPathsForThread(threadId: string) {
+  const paths = await loadPaths();
+  return paths.filter((p) => p.frontmatter.threads?.includes(threadId));
+}
+
+/** Get the first thread of a path */
+export async function getFirstThreadOfPath(
+  pathId: string,
+): Promise<{ id: string; title: string } | null> {
+  const pathData = await getPathBySlug(pathId);
+  if (!pathData) return null;
+  const firstThreadId = pathData.frontmatter.threads?.[0];
+  if (!firstThreadId) return null;
+  const thread = await getThreadBySlug(firstThreadId);
+  return thread ? { id: thread.frontmatter.id, title: thread.frontmatter.title } : null;
+}
+
+/** Get the next atom in a thread's sequence after the given atom */
+export async function getNextAtomInThread(
+  atomId: string,
+  threadId: string,
+): Promise<{ id: string; title: string; url: string } | null> {
+  const thread = await getThreadBySlug(threadId);
+  if (!thread) return null;
+  const atomIds = thread.frontmatter.atoms ?? [];
+  const idx = atomIds.indexOf(atomId);
+  if (idx === -1 || idx >= atomIds.length - 1) return null;
+  const nextId = atomIds[idx + 1];
+  const nextAtom = await getAtomBySlug(nextId);
+  if (!nextAtom) return null;
+  return {
+    id: nextId,
+    title: nextAtom.frontmatter.title,
+    url: getAtomUrl({ id: nextId, type: nextAtom.frontmatter.type }),
+  };
+}
+
+/** Get audio duration for a thread (from durations.json) */
+export function getThreadDuration(threadId: string): string | null {
+  const durations = loadDurationsManifest();
+  const dur = durations[`/audio/threads/${threadId}.mp3`] as { formatted?: string } | undefined;
+  return dur?.formatted ?? null;
+}
+
+/** Get total path duration by summing thread durations */
+export function getPathTotalDuration(pathThreadIds: string[]): string | null {
+  const durations = loadDurationsManifest();
+  let totalSeconds = 0;
+  let found = false;
+  for (const id of pathThreadIds) {
+    const dur = durations[`/audio/threads/${id}.mp3`] as { seconds?: number } | undefined;
+    if (dur?.seconds) {
+      totalSeconds += dur.seconds;
+      found = true;
+    }
+  }
+  if (!found) return null;
+  const mins = Math.round(totalSeconds / 60);
+  if (mins < 60) return `${mins} min`;
+  const hrs = Math.floor(mins / 60);
+  const rem = mins % 60;
+  return rem > 0 ? `${hrs}h ${rem}m` : `${hrs}h`;
+}
+
 // ─── Audio ──────────────────────────────────────────────────────────────────
 
 /**

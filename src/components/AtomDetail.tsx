@@ -7,6 +7,7 @@ import {
   getAtomUrl,
   getAudioUrl,
   getBridgesForAtom,
+  getNextAtomInThread,
   getParentPath,
   getThreadsForAtom,
 } from "@/lib/content";
@@ -14,7 +15,9 @@ import type { AtomFrontmatter } from "@/lib/schema";
 
 import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
+import { ContextBanner } from "./ContextBanner";
 import { PodcastJsonLd } from "./PodcastJsonLd";
+import { WhatsNext } from "./WhatsNext";
 
 const TYPE_LABELS: Record<string, string> = {
   principle: "principle",
@@ -115,8 +118,28 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
     appearsInPaths.length > 0 ||
     appearsInBridges.length > 0;
 
+  // Context banner: find the primary thread/path this atom belongs to
+  const primaryThread = appearsInThreads[0] ?? null;
+  const primaryPath = appearsInPaths[0] ?? null;
+  const otherPaths = appearsInPaths.slice(1);
+
+  // What's next: find next atom in the primary thread
+  const nextAtomInThread = primaryThread
+    ? await getNextAtomInThread(fm.id, primaryThread.frontmatter.id)
+    : null;
+
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
+      {/* Context banner for Google-landing users */}
+      {primaryThread && primaryPath && (
+        <ContextBanner
+          threadTitle={primaryThread.frontmatter.title}
+          threadHref={`/threads/${primaryThread.frontmatter.id}`}
+          pathTitle={primaryPath.title}
+          pathHref={`/paths/${primaryPath.id}`}
+          alsoIn={otherPaths.map((p) => ({ title: p.title, href: `/paths/${p.id}` }))}
+        />
+      )}
       <Breadcrumb crumbs={breadcrumbs} />
 
       {/* Two-column layout: card left, sidebar right on desktop */}
@@ -183,6 +206,22 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
               </>
             );
           })()}
+
+          {/* What's next */}
+          {nextAtomInThread && (
+            <WhatsNext
+              variant="next-atom"
+              title={nextAtomInThread.title}
+              href={nextAtomInThread.url}
+            />
+          )}
+          {!nextAtomInThread && primaryThread && (
+            <WhatsNext
+              variant="back-to-thread"
+              threadTitle={primaryThread.frontmatter.title}
+              threadHref={`/threads/${primaryThread.frontmatter.id}`}
+            />
+          )}
         </div>
 
         {/* ── Sidebar (right on desktop, below on mobile) ──────── */}
