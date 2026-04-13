@@ -13,6 +13,7 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
     "check": "npm run format:check && npm run lint && npm test",
     "seo:audit": "node scripts/seo-audit.mjs",
+    "seo:monitor": "node scripts/seo-monitor.mjs",
     "knip": "knip",
     "test": "vitest run",
     "test:watch": "vitest",
