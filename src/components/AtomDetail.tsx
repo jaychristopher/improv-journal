@@ -12,7 +12,9 @@ import {
   getThreadsForAtom,
 } from "@/lib/content";
 import type { AtomFrontmatter } from "@/lib/schema";
+import { extractDescription } from "@/lib/seo";
 
+import { ArticleJsonLd } from "./ArticleJsonLd";
 import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
 import { ContextBanner } from "./ContextBanner";
@@ -130,6 +132,13 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
+      <ArticleJsonLd
+        title={fm.title}
+        description={extractDescription(atom.html.replace(/<[^>]+>/g, " "))}
+        url={atomUrl}
+        datePublished={fm.created}
+        dateModified={fm.updated}
+      />
       {/* Context banner for Google-landing users */}
       {primaryThread && primaryPath && (
         <ContextBanner

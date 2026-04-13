@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Reading List",
+  description:
+    "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
+  alternates: { canonical: "/library" },
+};
 
 interface ExternalLink {
   label: string;

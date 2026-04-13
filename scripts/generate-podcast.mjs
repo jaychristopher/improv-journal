@@ -55,13 +55,13 @@ const MAX_CHARS = 4500; // API limit is 5000, leave buffer
 // Two contrasting voices for the podcast hosts
 const VOICES = {
   A: {
-    id: env.ELEVENLABS_VOICE_A || 'iP95p4xoKVk53GoZ742B', // Chris — Charming, Down-to-Earth
-    name: 'Chris (Host A)',
+    id: env.ELEVENLABS_VOICE_A || 'sNKKDngZymUvjZVKvNU1',
+    name: 'Host A',
     settings: { stability: 0.45, similarity_boost: 0.75 },
   },
   B: {
-    id: env.ELEVENLABS_VOICE_B || 'EXAVITQu4vr4xnSDxMaL', // Sarah — Mature, Reassuring, Confident
-    name: 'Sarah (Host B)',
+    id: env.ELEVENLABS_VOICE_B || 'kdnRe2koJdOK4Ovxn2DI',
+    name: 'Host B',
     settings: { stability: 0.45, similarity_boost: 0.75 },
   },
 };

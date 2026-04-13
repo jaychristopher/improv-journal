@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Why Conversations Work (or Don't)",
+  description:
+    "Six reasons every conversation is hard — and eight things you can do about it. Discovered by improv performers doing it live, every night, with no script.",
+  alternates: { canonical: "/how-it-works" },
+};
 
 export default async function SystemPage() {
   const atoms = await loadAtoms();

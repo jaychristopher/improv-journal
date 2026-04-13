@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Improv Vocabulary",
+  description:
+    "The foundational concepts that name what's happening in scenes, shows, and conversations.",
+  alternates: { canonical: "/practice/vocabulary" },
+};
 
 export default async function VocabularyPage() {
   const atoms = await loadAtoms();

@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Resources",
+  description:
+    "Learning paths, guides, podcasts, reading lists, and the traditions that shaped improv.",
+  alternates: { canonical: "/resources" },
+};
 
 const SECTIONS = [
   {

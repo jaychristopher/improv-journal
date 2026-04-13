@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getEpisodesForShow, loadShows } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Listen",
+  description:
+    "Podcast conversations exploring the physics of human connection through the lens of improvisation.",
+  alternates: { canonical: "/listen" },
+};
 
 export default async function ListenPage() {
   const shows = await loadShows();

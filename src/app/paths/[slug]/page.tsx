@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { CourseJsonLd } from "@/components/CourseJsonLd";
 import { SyllabusCheckmark, SyllabusProgress } from "@/components/SyllabusProgress";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
@@ -18,6 +20,27 @@ import { getNextPath } from "@/lib/path-progression";
 export async function generateStaticParams() {
   const paths = await loadPaths();
   return paths.map((p) => ({ slug: p.frontmatter.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const pathData = await getPathBySlug(slug);
+  if (!pathData) return {};
+  return {
+    title: pathData.frontmatter.title,
+    description: pathData.frontmatter.description,
+    alternates: { canonical: `/paths/${slug}` },
+    openGraph: {
+      title: pathData.frontmatter.title,
+      description: pathData.frontmatter.description,
+      url: `/paths/${slug}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function PathPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -56,6 +79,14 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
+      <CourseJsonLd
+        title={fm.title}
+        description={fm.description}
+        url={`/paths/${slug}`}
+        audience={firstAudience}
+        duration={totalDuration}
+        threadCount={threads.length}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

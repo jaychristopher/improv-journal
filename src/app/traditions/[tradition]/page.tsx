@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -39,6 +40,27 @@ const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: st
 
 export async function generateStaticParams() {
   return getTraditionNames().map((tradition) => ({ tradition }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tradition: string }>;
+}): Promise<Metadata> {
+  const { tradition } = await params;
+  const info = TRADITION_INFO[tradition];
+  if (!info) return {};
+  return {
+    title: info.label,
+    description: info.desc,
+    alternates: { canonical: `/traditions/${tradition}` },
+    openGraph: {
+      title: info.label,
+      description: info.desc,
+      url: `/traditions/${tradition}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function TraditionPage({

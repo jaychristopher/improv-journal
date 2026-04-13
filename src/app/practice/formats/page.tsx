@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
+
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Improv Formats",
+  description:
+    "Performance structures from Harold to Montage to Armando. What each format demands and what it teaches.",
+  alternates: { canonical: "/practice/formats" },
+};
 
 const FILTER_GROUPS = [
   {

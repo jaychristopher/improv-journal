@@ -1,6 +1,15 @@
+import type { Metadata } from "next";
+
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Improv Techniques",
+  description:
+    "The specific moves — how to listen, initiate, edit, support, heighten, and recover in improv scenes.",
+  alternates: { canonical: "/practice/techniques" },
+};
 
 const FILTER_GROUPS = [
   {

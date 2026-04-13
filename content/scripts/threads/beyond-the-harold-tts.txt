@@ -1,81 +1,111 @@
-[curious] So you've done your Harold. You can run the beats, find the game, hit the connections. What comes next?
+[curious] So you've done your Harold. You've run the beats, found the game, made the callbacks land. And now there's this question sitting there — is this it? Is this what longform is?
 
-[teaching] Honestly? Everything else. [short pause] The Harold is a training format. It's brilliantly designed to make you practice every core skill at once — but it's one structure among many. Most experienced players eventually graduate into other forms.
+[teaching] And the honest answer is no. The Harold is one format. A brilliant one, but one. It's like spending four years learning the sonnet and then discovering poetry.
 
-[curious] Graduate feels like a strong word. It's not that the Harold stops working, right?
+[curious] That's a big reframe. Because in a lot of schools, the Harold isn't taught as *a* form. It's taught as *the* form.
 
-[warm] No, not at all. The Harold gave you grammar. [pause] What's out there now is dialects. Different forms that demand different skills, reward different strengths, reveal different truths about what improv can even be.
+[teaching] Right. And there's a reason for that. The Harold is a teaching tool as much as it is a performance structure. Del designed it to force you to practice every core skill at once. Opening. Group game. Scene work. Callbacks. Connections. Thematic thinking. You can't do a Harold without rehearsing all of it.
 
-[curious] Okay, walk me through a few. Where would you start?
+[conversational] It's like a gym circuit.
 
-[teaching] Let's start with the Armando. You strip away all of Harold's structural complexity — the opening, the group game, the beats — and replace it with one thing. A monologist. A real person telling real stories from their life, and the team inspires scenes from what they just heard.
+[warm] Exactly that. It's a gym circuit for improvisers. Which is why it's such a good training form. But nobody thinks the gym circuit is the sport.
 
-[conversational] It's the format behind ASSSSCAT at UCB. Probably the most performed longform in the world right now.
+[curious] [short pause] Okay. So what's the sport? Or — what are the sports?
 
-[curious] What does that change for the performer?
+[teaching] The longform landscape is much wider than any one school teaches. Let's walk through it. Start with the Armando.
 
-[teaching] Everything, because you're not mining an abstract word suggestion anymore. You're mining a human being. [short pause] Someone just told you about their dad's funeral, or the time they got fired, or a weird thing their neighbor does. Your job is to find what's *true* in that — and play it back in a way that surprises them.
+[curious] The Armando. That's the monologue one.
 
-[contemplative] It makes you a better listener off stage too. Armando trains the muscle of hearing what someone actually said versus what you expected them to say.
+[teaching] A monologist — usually a comedian, sometimes a guest — tells a true story from their life based on a suggestion. And the players pull scenes out of that story. Not the events of the story. The *feeling* of it. The texture. The characters lurking inside it.
 
-[curious] What else?
+[conversational] So instead of an opening game generating your material, a human being generating their actual life generates your material.
 
-[teaching] La Ronde. [short pause] It's a character study disguised as a format. Each scene shares one character with the next scene. So you open with A and B. Next scene is B and C. Then C and D. Eventually the chain circles back to A.
+[warm] Yeah. And something happens when the source is real. The scenes get warmer. They get weirder in a more specific way. You're not improvising off an abstraction anymore, you're improvising off someone's actual Tuesday.
 
-[curious] Oh, that's clever. So every character shows up twice, with two different partners.
+[curious] ASSSSCAT is an Armando.
 
-[warm] Exactly. And here's the thing — it reveals something the Harold almost never does. How the same person *changes* depending on who they're with. [pause] You are not one character. You're the version of you that exists in relation to this specific other human. La Ronde puts that under a microscope.
+[teaching] ASSSSCAT is the Armando. UCB has been running that show in New York and LA for decades. It's one of the most performed longform structures in the world, and most improvisers don't realize that's what they're watching.
 
-[contemplative] Which is a real thing. Think about how you are with your boss versus your best friend versus your mother. Same you. Completely different operating system.
+[curious] [short pause] What's next — La Ronde?
 
-[curious] Okay. What about story? Harold isn't really about story, is it?
+[teaching] La Ronde. This one I love because it's sneaky. On the surface it looks structural — each scene shares one character with the next scene, and the chain eventually closes back on the first character. Mathematical. Tidy.
 
-[teaching] Not really. Harold runs on *game* — patterns, connections, heightening. Narrative longform runs on *consequence*. [short pause] What happens in scene three is caused by what happened in scene two. Beginning, middle, end. Somebody wants something, something gets in the way, something changes.
+[conversational] So it's a daisy chain of two-handers.
 
-[curious] That sounds like a completely different muscle.
+[warm] Right. But what it actually is, is a character study. Because you watch the same person across three scenes — with their mother, with their boss, with a stranger on a train — and you see something the Harold almost never lets you see.
 
-[emphatic] It is. This is Johnstone's territory. He talks about the improviser walking backwards — you reincorporate what you've already established. Everything that's happened has to matter. You can't just drop a choice and move on.
+[curious] Which is?
 
-[conversational] Harold players sometimes struggle with this at first because they're trained to find the pattern and heighten it. Narrative asks you to find the *stakes* and honor them.
+[teaching] How someone changes depending on who they're with. The Harold is built around theme and game, so characters serve the idea. La Ronde inverts that. The theme emerges from watching a person code-switch through their own life.
 
-[curious] So where does that leave, like, pure freedom? What if you don't want *any* predetermined structure?
+[contemplative] [pause] That's a real thing off stage too. The version of you at work is not the version of you on the phone with your dad.
 
-[teaching] Then you're doing organic longform. No mandated beats. No required group game. No preset scene order. The form emerges from the content.
+[warm] Right. And most of us pretend it's one self that's just showing different faces. La Ronde quietly argues the opposite — that you are partially assembled by the person across from you. Every scene partner is building a slightly different you.
 
-[warm] This is actually what Del Close was pointing at. When he said "the first rule is there are no rules" — the Harold was a teaching tool on the way there. Organic is the destination. [short pause] You trust the ensemble, you trust the first suggestion, and whatever shape the show wants to take, you follow it.
+[curious] [short pause] Okay. Narrative longform.
+
+[teaching] Narrative is where improv tries to tell an actual story. Beginning, middle, end. Protagonist, complication, resolution. The engine isn't game — it's consequence. What happens in scene three is *caused* by what happened in scene two.
+
+[conversational] That sounds hard.
+
+[matter-of-fact] It's harder than it looks and easier than people think. Harder because you have to remember things. You have to track who wanted what and who got hurt and what promise hasn't been kept yet. Easier because the audience is meeting you halfway — they know how stories work, so you can lean on their instincts.
+
+[curious] This is Johnstone territory, right?
+
+[teaching] Very much. Johnstone's whole thing is the improviser walking backwards. You don't plan ahead, you reincorporate behind. Whatever you already put on the table is your next move. The gun on the mantel in scene one fires in scene five — not because you knew it would, but because you noticed it was still sitting there.
+
+[emphatic] That's the discipline. Noticing what you've already made true.
+
+[curious] [short pause] Then there's organic longform.
+
+[teaching] Organic is the post-Harold move. No opening, no mandated beats, no group game requirement, no preset scene order. The form is whatever the show needs it to be tonight.
 
 [curious] That sounds terrifying.
 
-[matter-of-fact] It is, until it isn't. [pause] Once you've played it a few times you realize structure was never the thing holding the show up. Attention was. Structure just gave you something to hide behind while you learned to pay attention.
+[warm] It's terrifying until it's the most natural thing in the world. Because here's the secret — when experienced players do a Harold, they're already ignoring half the structure. They're letting scenes run long when the scene is alive. They're cutting the group game when the group game isn't serving anything. Organic just makes the permission explicit.
 
-[curious] Speaking of nowhere to hide — what about two-person longform?
+[conversational] So it's what the Harold becomes when you stop pretending you're doing a Harold.
 
-[teaching] That's the purest test of improv partnership. No ensemble. No backline to tag you out. No group game to bail you out of a dying scene. Just two people and one suggestion for a full hour.
+[teaching] That's exactly it. And it's what Del was actually aiming for. There's a quote — "the first rule is, there are no rules." People treat that like a slogan. It's not a slogan. It's a destination.
 
-[confident] TJ and Dave built careers on this. Middleditch and Schwartz took it to Netflix. [short pause] When you watch them work, the thing you notice is how little they're *inventing*. They're mostly just agreeing with what the other person already half-committed to. Noticing a look. Honoring a breath.
+[contemplative] [pause] He wanted you to earn your way to no form.
 
-[contemplative] Two-person form teaches you that improv isn't really about being clever. It's about being *present enough* that your partner never has to work alone.
+[warm] He wanted you to internalize so much form that you didn't need it hung on the wall anymore.
 
-[curious] That applies way past the stage.
+[curious] [short pause] Two-person longform.
 
-[warm] Oh, completely. Any real relationship is two-person longform. You only get good at it by paying attention, not by having better material.
+[teaching] The purest test of improv partnership. No ensemble to hide behind. No backline to edit you out when you're drowning. No group game to cover a slow start. Just you, one other person, and an hour.
 
-[curious] Last one — what about genre formats? Musical, noir, horror, all that.
+[curious] TJ and Dave.
 
-[teaching] Genre formats use shared cultural literacy as the structure. Everyone in the room — players and audience — already knows the rules of a film noir or a haunted house movie or a Broadway musical. The conventions become the scaffold.
+[warm] TJ and Dave. They've been doing it for twenty-plus years. One suggestion, one hour, full show. And what you learn watching them is that longform at its highest level is almost entirely about listening. They make almost no big moves. They just pay attention to each other so hard that the story assembles itself out of the paying attention.
 
-[conversational] Baby Wants Candy has done over four thousand fully improvised musicals. Four *thousand*. [short pause] That only works because nobody in the theater needs to be told what a musical is. The form is pre-installed in all of us.
+[conversational] Middleditch and Schwartz brought that form to Netflix.
 
-[curious] So the skill shift there is...
+[teaching] They did. And it's worth watching those specials for a specific reason — they laugh. On stage. At each other. And it's not a bit. They're genuinely delighted, and the audience can *feel* that the delight is real.
 
-[teaching] Fluency in the language you picked. If you're doing noir, you need to actually know noir — the voiceover, the femme fatale, the moral compromise, the rain. Genre formats punish people who only know the parody version. They reward people who love the real thing.
+[emphatic] Two-person forms reveal whether you actually like the person across from you. There's nowhere to hide it.
 
-[contemplative] Which is a nice lesson by itself. [pause] You can't riff well on something you don't actually respect.
+[curious] [short pause] And then genre formats.
 
-[curious] So if someone's standing at this crossroads — Harold done, what now — what do you tell them?
+[teaching] Genre formats use shared cultural literacy as structure. Film noir. Horror. Musical. The conventions of the genre become your scaffolding. You don't have to invent what the rules of the world are — the audience already knows.
 
-[warm] Try all of them. [short pause] Each format is a different question the art form is asking you. Armando asks, can you listen to a real person? La Ronde asks, do you know who you are in relationship? Narrative asks, can you honor consequence? Organic asks, can you trust attention alone? Two-person asks, can you be fully present with one other human? Genre asks, what do you actually love?
+[curious] So a horror improv show — everyone already knows someone's going in the basement.
 
-[emphatic] The Harold taught you the grammar. [pause] These formats — they're how you find out what you actually have to say.
+[warm] Everyone knows someone's going in the basement. Everyone knows the dumb one dies first. Everyone knows the twist is coming in act three. You're not building the genre, you're inhabiting it, which frees you to do the actually hard work of being a specific person inside a familiar shape.
+
+[conversational] Baby Wants Candy is the musical one.
+
+[teaching] Baby Wants Candy. Over four thousand fully improvised musicals at this point. That's not a typo. Four thousand. Different title every night, new songs every night, full band, no writing. And it works because the musical as a form has such a strong spine that they can hang anything on it.
+
+[curious] [short pause] Okay. So — six formats. Armando, La Ronde, narrative, organic, two-person, genre. Why does any of this matter if I already have a Harold I can do?
+
+[teaching] Because each of these teaches you something the Harold can't. La Ronde teaches you that character is relational. Narrative teaches you consequence. Two-person teaches you attention. Organic teaches you to trust what the show is asking for instead of what the form is asking for. Genre teaches you how much you can borrow from the audience's own brain.
+
+[warm] The Harold taught you the grammar. These formats teach you the dialects. And the point of learning dialects is never that one is better — it's that each one makes certain sentences possible that no other one can.
+
+[contemplative] [pause] Same as life, honestly. You don't get one shape for being a person. You get a different shape for every room you walk into.
+
+[emphatic] And the improvisers who stop at the Harold are the ones who think the gym circuit is the sport. The ones who go further — they figure out they were always training for a much bigger game.
 
 [rewritten]

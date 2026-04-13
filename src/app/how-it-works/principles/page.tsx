@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "The 8 Principles",
+  description:
+    "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
+  alternates: { canonical: "/how-it-works/principles" },
+};
 
 export default async function PrinciplesPage() {
   const atoms = await loadAtoms();

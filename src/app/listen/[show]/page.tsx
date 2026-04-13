@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -7,6 +8,27 @@ import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
 export async function generateStaticParams() {
   const shows = await loadShows();
   return shows.map((s) => ({ show: s.frontmatter.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ show: string }>;
+}): Promise<Metadata> {
+  const { show: showSlug } = await params;
+  const show = await getShowBySlug(showSlug);
+  if (!show) return {};
+  return {
+    title: show.frontmatter.title,
+    description: show.frontmatter.description,
+    alternates: { canonical: `/listen/${showSlug}` },
+    openGraph: {
+      title: show.frontmatter.title,
+      description: show.frontmatter.description,
+      url: `/listen/${showSlug}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function ShowPage({ params }: { params: Promise<{ show: string }> }) {

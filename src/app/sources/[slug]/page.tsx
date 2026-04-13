@@ -1,13 +1,37 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomBySlug, getAtomUrl, getSourceBySlug, loadSources } from "@/lib/content";
 import type { AtomType } from "@/lib/schema";
+import { extractDescription } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const sources = await loadSources();
   return sources.map((s) => ({ slug: s.frontmatter.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const source = await getSourceBySlug(slug);
+  if (!source) return {};
+  const desc = extractDescription(source.content);
+  return {
+    title: source.frontmatter.title,
+    description: desc,
+    alternates: { canonical: `/sources/${slug}` },
+    openGraph: {
+      title: source.frontmatter.title,
+      description: desc,
+      url: `/sources/${slug}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function SourcePage({ params }: { params: Promise<{ slug: string }> }) {

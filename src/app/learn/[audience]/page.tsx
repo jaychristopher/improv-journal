@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -38,6 +39,27 @@ const VALID_AUDIENCES = new Set(Object.keys(AUDIENCE_META));
 
 export function generateStaticParams() {
   return Object.keys(AUDIENCE_META).map((audience) => ({ audience }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ audience: string }>;
+}): Promise<Metadata> {
+  const { audience } = await params;
+  const meta = AUDIENCE_META[audience];
+  if (!meta) return {};
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: { canonical: `/learn/${audience}` },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `/learn/${audience}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function AudiencePage({ params }: { params: Promise<{ audience: string }> }) {

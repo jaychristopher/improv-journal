@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JourneyProgressBar } from "@/components/JourneyProgressBar";
@@ -14,10 +16,33 @@ import {
   loadThreads,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
+import { extractDescription } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
   return threads.map((t) => ({ slug: t.frontmatter.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const thread = await getThreadBySlug(slug);
+  if (!thread) return {};
+  const desc = extractDescription(thread.content);
+  return {
+    title: thread.frontmatter.title,
+    description: desc,
+    alternates: { canonical: `/threads/${slug}` },
+    openGraph: {
+      title: thread.frontmatter.title,
+      description: desc,
+      url: `/threads/${slug}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function ThreadPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -90,6 +115,13 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
+      <ArticleJsonLd
+        title={fm.title}
+        description={extractDescription(thread.content)}
+        url={`/threads/${slug}`}
+        datePublished={fm.created}
+        dateModified={fm.updated}
+      />
       <Breadcrumb crumbs={crumbs} />
 
       {/* Journey progress bar */}

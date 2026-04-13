@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getAtomsForTradition, getTraditionNames } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Traditions in Tension",
+  description:
+    "Five schools of improv thought — Johnstone, Spolin, Close, UCB, and Annoyance — compared, contrasted, and connected.",
+  alternates: { canonical: "/traditions" },
+};
 
 const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
   johnstone: {

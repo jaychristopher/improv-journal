@@ -16,7 +16,7 @@ const OUTPUT = path.join(__dirname, "..", "public", "search-index.json");
 // Duplicate of getAtomUrl — avoids ESM import chain from content.ts
 function atomTypeToUrl(id, type) {
   switch (type) {
-    case "axiom":
+    case "law":
     case "insight":
       return `/how-it-works/${id}`;
     case "principle":

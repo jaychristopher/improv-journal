@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadBridges } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Practical Guides",
+  description:
+    "Guides for overthinking, stage fright, team dynamics, feedback, and more — connecting improv principles to everyday challenges.",
+  alternates: { canonical: "/guides" },
+};
 
 export default async function GuidesPage() {
   const bridges = await loadBridges();

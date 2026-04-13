@@ -1,8 +1,10 @@
 import fs from "fs";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import path from "path";
 
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
@@ -16,6 +18,24 @@ import {
   getPathBySlug,
   loadBridges,
 } from "@/lib/content";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const bridge = await getBridgeBySlug(slug);
+  if (!bridge) return {};
+  const fm = bridge.frontmatter;
+  return {
+    title: fm.title,
+    description: fm.description,
+    keywords: fm.target_keywords?.map((k: { keyword: string }) => k.keyword),
+    alternates: { canonical: `/${slug}` },
+    openGraph: { title: fm.title, description: fm.description, url: `/${slug}`, type: "article" },
+  };
+}
 
 export async function generateStaticParams() {
   const bridges = await loadBridges();
@@ -160,6 +180,13 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
+      <ArticleJsonLd
+        title={fm.title}
+        description={fm.description}
+        url={`/${slug}`}
+        datePublished={fm.created}
+        dateModified={fm.updated}
+      />
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: fm.title }]} />
 
       <header className="mb-8">

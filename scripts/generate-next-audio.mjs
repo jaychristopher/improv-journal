@@ -18,7 +18,19 @@
 import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
+import { fileURLToPath } from "url";
 import matter from "gray-matter";
+
+// Load .env
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const envPath = path.join(__dirname, "..", ".env");
+const env = {};
+try {
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const m = line.match(/^([^#=]+)=(.*)$/);
+    if (m) env[m[1].trim()] = m[2].trim();
+  }
+} catch { /* .env may not exist */ }
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const SCRIPTS_DIR = path.join(CONTENT_DIR, "scripts");
@@ -96,46 +108,79 @@ function getNextItem() {
 function getNextRewrite() {
   const items = [];
 
-  // Atoms with existing scripts
+  // Helper: check if script needs rewrite (no [rewritten] marker)
+  function needsRewrite(scriptFile) {
+    if (!fs.existsSync(scriptFile)) return false;
+    return !fs.readFileSync(scriptFile, "utf-8").includes("[rewritten]");
+  }
+
+  // Atoms with existing scripts (all types, not filtered by priority)
   const atomsDir = path.join(CONTENT_DIR, "atoms");
   for (const file of fs.readdirSync(atomsDir).filter((f) => f.endsWith(".md"))) {
     const slug = path.basename(file, ".md");
     const raw = fs.readFileSync(path.join(atomsDir, file), "utf-8");
     const { data } = matter(raw);
-    const priority = TYPE_PRIORITY[data.type];
     const scriptFile = path.join(SCRIPTS_DIR, "atoms", `${slug}-tts.txt`);
-    const hasScript = fs.existsSync(scriptFile);
     const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "atoms", `${slug}.mp3`));
-    // Rewrite items that already have both script and audio
-    if (hasScript && hasAudio && priority != null) {
-      // Check if script has been rewritten (marker comment at end)
-      const script = fs.readFileSync(scriptFile, "utf-8");
-      if (!script.includes("[rewritten]")) {
-        items.push({
-          layer: "atom", type: data.type || "unknown", slug,
-          title: data.title || slug, hasScript: true,
-          priority, scriptDir: "atoms", audioDir: "atoms",
-        });
-      }
+    if (hasAudio && needsRewrite(scriptFile)) {
+      items.push({
+        layer: "atom", type: data.type || "unknown", slug,
+        title: data.title || slug, hasScript: true,
+        priority: TYPE_PRIORITY[data.type] ?? 5, scriptDir: "atoms", audioDir: "atoms",
+      });
     }
   }
 
-  // Threads with existing scripts
+  // Threads
   const threadsDir = path.join(CONTENT_DIR, "threads");
   for (const file of fs.readdirSync(threadsDir).filter((f) => f.endsWith(".md"))) {
     const slug = path.basename(file, ".md");
     const raw = fs.readFileSync(path.join(threadsDir, file), "utf-8");
     const { data } = matter(raw);
     const scriptFile = path.join(SCRIPTS_DIR, "threads", `${slug}-tts.txt`);
-    const hasScript = fs.existsSync(scriptFile);
     const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "threads", `${slug}.mp3`));
-    if (hasScript && hasAudio) {
-      const script = fs.readFileSync(scriptFile, "utf-8");
-      if (!script.includes("[rewritten]")) {
+    if (hasAudio && needsRewrite(scriptFile)) {
+      items.push({
+        layer: "thread", type: "thread", slug,
+        title: data.title || slug, hasScript: true,
+        priority: 0, scriptDir: "threads", audioDir: "threads",
+      });
+    }
+  }
+
+  // Bridges
+  const bridgesDir = path.join(CONTENT_DIR, "bridges");
+  if (fs.existsSync(bridgesDir)) {
+    for (const file of fs.readdirSync(bridgesDir).filter((f) => f.endsWith(".md"))) {
+      const slug = path.basename(file, ".md");
+      const raw = fs.readFileSync(path.join(bridgesDir, file), "utf-8");
+      const { data } = matter(raw);
+      const scriptFile = path.join(SCRIPTS_DIR, "bridges", `${slug}-tts.txt`);
+      const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "bridges", `${slug}.mp3`));
+      if (hasAudio && needsRewrite(scriptFile)) {
         items.push({
-          layer: "thread", type: "thread", slug,
+          layer: "bridge", type: "bridge", slug,
           title: data.title || slug, hasScript: true,
-          priority: 0, scriptDir: "threads", audioDir: "threads",
+          priority: 1, scriptDir: "bridges", audioDir: "bridges",
+        });
+      }
+    }
+  }
+
+  // Paths
+  const pathsDir = path.join(CONTENT_DIR, "paths");
+  if (fs.existsSync(pathsDir)) {
+    for (const file of fs.readdirSync(pathsDir).filter((f) => f.endsWith(".md"))) {
+      const slug = path.basename(file, ".md");
+      const raw = fs.readFileSync(path.join(pathsDir, file), "utf-8");
+      const { data } = matter(raw);
+      const scriptFile = path.join(SCRIPTS_DIR, "paths", `${slug}-tts.txt`);
+      const hasAudio = fs.existsSync(path.join(AUDIO_DIR, "paths", `${slug}.mp3`));
+      if (hasAudio && needsRewrite(scriptFile)) {
+        items.push({
+          layer: "path", type: "path", slug,
+          title: data.title || slug, hasScript: true,
+          priority: 2, scriptDir: "paths", audioDir: "paths",
         });
       }
     }
@@ -160,11 +205,8 @@ if (!item) {
   process.exit(0);
 }
 
-const contentPath = path.join(
-  CONTENT_DIR,
-  item.layer === "thread" ? "threads" : "atoms",
-  `${item.slug}.md`,
-);
+const LAYER_DIR = { atom: "atoms", thread: "threads", bridge: "bridges", path: "paths" };
+const contentPath = path.join(CONTENT_DIR, LAYER_DIR[item.layer] || "atoms", `${item.slug}.md`);
 const scriptPath = path.join(SCRIPTS_DIR, item.scriptDir, `${item.slug}-tts.txt`);
 const audioPath = path.join(AUDIO_DIR, item.audioDir, `${item.slug}.mp3`);
 
@@ -222,10 +264,12 @@ Write ONLY the TTS script following the guide above. No preamble, no markdown fe
   fs.writeFileSync(promptPath, prompt);
 
   try {
-    const result = execSync(`claude -p "$(cat ${JSON.stringify(promptPath)})" --no-input`, {
+    // Use --system-prompt-file approach: pass prompt via stdin
+    const result = execSync(`cat "${promptPath.replace(/\\/g, "/")}" | claude -p`, {
       encoding: "utf-8",
       maxBuffer: 1024 * 1024,
-      timeout: 120000,
+      timeout: 300000,
+      shell: "bash",
     });
 
     // Clean the result — remove any markdown fences Claude might add
@@ -255,7 +299,7 @@ if (scriptOnly) {
 // Step 2: Generate audio
 console.log("Step 2: Generating audio...");
 try {
-  execSync(`node scripts/generate-episode.mjs "${scriptPath}" "${audioPath}" --public`, {
+  execSync(`node scripts/generate-podcast.mjs "${scriptPath}" "${audioPath}"`, {
     stdio: "inherit",
     timeout: 600000,
   });
@@ -271,6 +315,43 @@ try {
   execSync("node scripts/generate-durations.mjs", { stdio: "inherit", timeout: 30000 });
 } catch (e) {
   console.log("  (duration update skipped)");
+}
+
+// Step 4: Upload to Cloudflare R2
+console.log("Step 4: Uploading to R2...");
+try {
+  const r2Key = `audio/${item.audioDir}/${item.slug}.mp3`;
+  const cfAccount = process.env.CLOUDFLARE_ACCOUNT_ID || env.CLOUDFLARE_ACCOUNT_ID;
+  const cfToken = process.env.CLOUDFLARE_API_TOKEN || env.CLOUDFLARE_API_TOKEN;
+  const bucket = "physics-audio";
+
+  if (cfAccount && cfToken) {
+    execSync(
+      `curl -s -X PUT "https://api.cloudflare.com/client/v4/accounts/${cfAccount}/r2/buckets/${bucket}/objects/${r2Key}" ` +
+      `-H "Authorization: Bearer ${cfToken}" -H "Content-Type: audio/mpeg" ` +
+      `--data-binary @"${audioPath}"`,
+      { stdio: "pipe", timeout: 120000 }
+    );
+    console.log(`  ✓ Uploaded to R2: ${r2Key}`);
+  } else {
+    console.log("  (R2 upload skipped — CLOUDFLARE_ACCOUNT_ID/CLOUDFLARE_API_TOKEN not set)");
+  }
+} catch (e) {
+  console.log(`  ⚠ R2 upload failed: ${e.message}`);
+}
+
+// Step 5: Commit and push (scripts + durations only, not MP3s)
+console.log("Step 5: Committing to git...");
+try {
+  execSync(`git add "${scriptPath}" public/audio/durations.json`, { stdio: "pipe" });
+  execSync(
+    `git commit -m "Audio: ${item.slug} (${item.type}) — script + durations"`,
+    { stdio: "pipe" }
+  );
+  execSync("git push origin main", { stdio: "pipe", timeout: 30000 });
+  console.log("  ✓ Pushed to main");
+} catch (e) {
+  console.log(`  (git push skipped: ${e.message})`);
 }
 
 // Show remaining count

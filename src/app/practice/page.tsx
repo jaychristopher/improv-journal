@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadAtoms } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Practice",
+  description:
+    "Exercises, techniques, show formats, and the vocabulary to name what's happening in scenes and conversations.",
+  alternates: { canonical: "/practice" },
+};
 
 export default async function PracticePage() {
   const atoms = await loadAtoms();

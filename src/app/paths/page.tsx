@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Learning Paths",
+  description:
+    "Structured guides for wherever you are in your journey — beginner through performer.",
+  alternates: { canonical: "/paths" },
+};
 
 const STEPS = [
   {
