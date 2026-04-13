@@ -138,6 +138,54 @@ const BRIDGE_RELATIONS: Record<
       { slug: "team-building-activities", label: "Team Building Activities" },
     ],
   },
+  "what-is-improv": {
+    exercises: ["yes-and-chain", "one-word-scene", "mirroring"],
+    threads: [{ id: "first-rule-you-already-know", label: "The First Rule You Already Know" }],
+    otherGuides: [
+      { slug: "how-to-be-funny", label: "How to Be Funny" },
+      { slug: "how-to-stop-overthinking", label: "How to Stop Overthinking" },
+    ],
+  },
+  "team-building-questions": {
+    exercises: ["mirroring", "gift-giving"],
+    threads: [{ id: "physics-of-every-room", label: "The Physics of Every Room" }],
+    otherGuides: [
+      { slug: "team-building-activities", label: "Team Building Activities" },
+      { slug: "psychological-safety", label: "Psychological Safety" },
+    ],
+  },
+  "5-minute-team-building": {
+    exercises: ["mirroring", "yes-and-chain", "gift-giving", "one-word-scene"],
+    threads: [{ id: "building-on-offers", label: "Building on Offers" }],
+    otherGuides: [
+      { slug: "team-building-activities", label: "Team Building Activities" },
+      { slug: "team-building-questions", label: "Team Building Questions" },
+    ],
+  },
+  "collaboration-skills": {
+    exercises: ["mirroring", "group-mind-cultivation", "one-word-scene"],
+    threads: [{ id: "playing-together-at-the-highest-level", label: "Playing Together" }],
+    otherGuides: [
+      { slug: "team-building-activities", label: "Team Building Activities" },
+      { slug: "active-listening", label: "Active Listening Skills" },
+    ],
+  },
+  "how-to-be-present": {
+    exercises: ["mirroring", "last-word-response", "one-word-scene"],
+    threads: [{ id: "quieting-the-planning-mind", label: "Quieting the Planning Mind" }],
+    otherGuides: [
+      { slug: "how-to-stop-overthinking", label: "How to Stop Overthinking" },
+      { slug: "active-listening", label: "Active Listening Skills" },
+    ],
+  },
+  "how-to-be-vulnerable": {
+    exercises: ["emotional-honesty-scene", "blind-offer"],
+    threads: [{ id: "the-inner-game-expanded", label: "The Inner Game" }],
+    otherGuides: [
+      { slug: "psychological-safety", label: "Psychological Safety" },
+      { slug: "how-to-be-more-confident", label: "How to Be More Confident" },
+    ],
+  },
 };
 
 export default async function BridgePage({ params }: { params: Promise<{ slug: string }> }) {
