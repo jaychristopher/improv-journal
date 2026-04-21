@@ -1,7 +1,8 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { useRef } from "react";
+
+import { trackEvent } from "@/lib/analytics";
 
 export function AudioPlayer({ src }: { src: string }) {
   const tracked = useRef(false);
@@ -16,7 +17,7 @@ export function AudioPlayer({ src }: { src: string }) {
         onPlay={() => {
           if (!tracked.current) {
             tracked.current = true;
-            track("audio_play", { page: window.location.pathname });
+            trackEvent("audio_play", { page: window.location.pathname });
           }
         }}
       >

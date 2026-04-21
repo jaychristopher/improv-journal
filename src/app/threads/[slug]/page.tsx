@@ -6,12 +6,15 @@ import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JourneyProgressBar } from "@/components/JourneyProgressBar";
+import { LessonCheckpoint } from "@/components/LessonCheckpoint";
+import { LessonFrame } from "@/components/LessonFrame";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAtomBySlug,
   getAtomUrl,
   getAudioUrl,
   getParentPath,
+  getPracticeRecommendationsForThread,
   getThreadBySlug,
   loadThreads,
 } from "@/lib/content";
@@ -20,7 +23,7 @@ import { extractDescription } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
-  return threads.map((t) => ({ slug: t.frontmatter.id }));
+  return threads.map((thread) => ({ slug: thread.frontmatter.id }));
 }
 
 export async function generateMetadata({
@@ -31,6 +34,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const thread = await getThreadBySlug(slug);
   if (!thread) return {};
+
   const desc = extractDescription(thread.content);
   return {
     title: thread.frontmatter.title,
@@ -52,11 +56,11 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
 
   const fm = thread.frontmatter;
   const audioUrl = getAudioUrl("threads", slug);
+  const [parentPath, practiceRecommendations] = await Promise.all([
+    getParentPath(slug),
+    getPracticeRecommendationsForThread(slug),
+  ]);
 
-  // Find parent path for breadcrumb + prev/next
-  const parentPath = await getParentPath(slug);
-
-  // Compute prev/next threads within the parent path
   let prevThread: { id: string; title: string } | null = null;
   let nextThread: { id: string; title: string } | null = null;
   let positionInPath: { current: number; total: number } | null = null;
@@ -66,26 +70,20 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
     const siblingIds = parentPath.frontmatter.threads ?? [];
     const idx = siblingIds.indexOf(slug);
 
-    // Resolve all thread titles for progress bar
     pathThreads = await Promise.all(
       siblingIds.map(async (id) => {
-        const t = await getThreadBySlug(id);
-        return { id, title: t?.frontmatter.title ?? id };
+        const sibling = await getThreadBySlug(id);
+        return { id, title: sibling?.frontmatter.title ?? id };
       }),
     );
 
     if (idx !== -1) {
       positionInPath = { current: idx + 1, total: siblingIds.length };
-      if (idx > 0) {
-        prevThread = pathThreads[idx - 1];
-      }
-      if (idx < siblingIds.length - 1) {
-        nextThread = pathThreads[idx + 1];
-      }
+      if (idx > 0) prevThread = pathThreads[idx - 1];
+      if (idx < siblingIds.length - 1) nextThread = pathThreads[idx + 1];
     }
   }
 
-  // Resolve atom references with URLs
   const atoms = await Promise.all(
     (fm.atoms ?? []).map(async (id) => {
       const atom = await getAtomBySlug(id);
@@ -94,9 +92,8 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
             id,
             title: atom.frontmatter.title,
             url: getAtomUrl({ id, type: atom.frontmatter.type }),
-            found: true,
           }
-        : { id, title: id, url: `/how-it-works/${id}`, found: false };
+        : { id, title: id, url: `/how-it-works/${id}` };
     }),
   );
 
@@ -109,12 +106,11 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
   }
   crumbs.push({ label: fm.title });
 
-  // What's next after this thread?
-  const isLastThread = parentPath && !nextThread;
-  const nextPathInfo = isLastThread ? getNextPath(parentPath.frontmatter.id) : null;
+  const isLastThread = Boolean(parentPath && !nextThread);
+  const nextPathInfo = isLastThread && parentPath ? getNextPath(parentPath.frontmatter.id) : null;
 
   return (
-    <main className="mx-auto max-w-2xl px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16">
       <ArticleJsonLd
         title={fm.title}
         description={extractDescription(thread.content)}
@@ -124,7 +120,6 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
       />
       <Breadcrumb crumbs={crumbs} />
 
-      {/* Journey progress bar */}
       {parentPath && positionInPath && (
         <JourneyProgressBar
           pathId={parentPath.frontmatter.id}
@@ -140,19 +135,34 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
           {positionInPath && (
             <>
               {" "}
-              · {positionInPath.current} of {positionInPath.total}
+              &middot; {positionInPath.current} of {positionInPath.total}
             </>
           )}
         </span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
       </header>
 
-      {audioUrl && <AudioPlayer src={audioUrl} />}
-
-      <article
-        className="prose prose-neutral dark:prose-invert max-w-none"
-        dangerouslySetInnerHTML={{ __html: thread.html }}
-      />
+      <LessonFrame
+        lessonGoal={fm.lesson_goal}
+        keyTakeaway={fm.key_takeaway}
+        commonMistake={fm.common_mistake}
+        practicePrompt={fm.practice_prompt}
+        practiceLinks={practiceRecommendations.map((recommendation) => ({
+          id: recommendation.id,
+          href: recommendation.url,
+          title: recommendation.title,
+        }))}
+        reflectionPrompt={fm.reflection_prompt}
+        pathTitle={parentPath?.frontmatter.title}
+        pathHref={parentPath ? `/paths/${parentPath.frontmatter.id}` : undefined}
+        listenContent={audioUrl ? <AudioPlayer src={audioUrl} /> : undefined}
+      >
+        <article
+          className="prose prose-neutral dark:prose-invert max-w-none"
+          dangerouslySetInnerHTML={{ __html: thread.html }}
+        />
+      </LessonFrame>
+      <LessonCheckpoint threadId={slug} />
 
       <nav className="border-foreground/10 mt-12 border-t pt-8">
         <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
@@ -169,7 +179,6 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         </ul>
       </nav>
 
-      {/* Prev/Next within path */}
       {(prevThread || nextThread) && (
         <nav className="border-foreground/10 mt-8 flex items-start justify-between border-t pt-8">
           <div>
@@ -199,7 +208,6 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         </nav>
       )}
 
-      {/* What's Next — after the nav */}
       {nextThread && (
         <WhatsNext
           variant="next-thread"

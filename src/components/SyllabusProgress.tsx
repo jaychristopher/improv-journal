@@ -1,26 +1,40 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { getNextUnvisitedThread, isThreadVisited, setCurrentPath } from "@/lib/journey";
+import { trackEvent } from "@/lib/analytics";
+import {
+  getJourneyRecommendation,
+  getThreadJourneyState,
+  isThreadVisited,
+  setCurrentPath,
+} from "@/lib/journey";
 
 interface SyllabusProgressProps {
   pathId: string;
   threadIds: string[];
 }
 
+interface RecommendationState {
+  kind: "continue" | "review" | "practice";
+  threadId: string;
+  current: number;
+  total: number;
+  reason: string;
+}
+
 export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
-  const [nextThread, setNextThread] = useState<string | null>(null);
+  const [recommendation, setRecommendation] = useState<RecommendationState | null>(null);
   const [visitedCount, setVisitedCount] = useState(0);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const next = getNextUnvisitedThread(threadIds);
+    const nextRecommendation = getJourneyRecommendation(threadIds);
     const count = threadIds.filter((id) => isThreadVisited(id)).length;
+
     queueMicrotask(() => {
-      setNextThread(next);
+      setRecommendation(nextRecommendation);
       setVisitedCount(count);
       setMounted(true);
     });
@@ -28,32 +42,48 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
 
   if (!mounted) return null;
 
-  const allDone = !nextThread;
+  if (!recommendation) {
+    return (
+      <div className="mb-8">
+        <span className="text-foreground/40 text-sm">
+          You&apos;ve visited all {threadIds.length} threads in this path.
+        </span>
+      </div>
+    );
+  }
+
   const isStarted = visitedCount > 0;
+  const ctaLabel =
+    recommendation.kind === "continue"
+      ? isStarted
+        ? `Continue - Thread ${recommendation.current} of ${recommendation.total}`
+        : "Start this path"
+      : recommendation.kind === "practice"
+        ? `Practice - Thread ${recommendation.current} of ${recommendation.total}`
+        : `Review - Thread ${recommendation.current} of ${recommendation.total}`;
+
+  const threadState = getThreadJourneyState(recommendation.threadId);
 
   return (
     <div className="mb-8">
-      {!allDone && nextThread && (
-        <Link
-          href={`/threads/${nextThread}`}
-          onClick={() => {
-            if (!isStarted) {
-              track("path_started", { path: pathId, source: "syllabus" });
-            }
-            setCurrentPath(pathId);
-          }}
-          className="bg-foreground text-background hover:bg-foreground/90 inline-block rounded-lg px-6 py-3 text-sm font-semibold transition-colors"
-        >
-          {isStarted
-            ? `Continue — Thread ${visitedCount + 1} of ${threadIds.length}`
-            : "Start this path"}
-        </Link>
-      )}
-      {allDone && (
-        <span className="text-foreground/40 text-sm">
-          ✓ You&apos;ve visited all {threadIds.length} threads in this path
-        </span>
-      )}
+      <Link
+        href={`/threads/${recommendation.threadId}`}
+        onClick={() => {
+          if (!isStarted) {
+            trackEvent("path_started", { path: pathId, source: "syllabus" });
+          }
+          setCurrentPath(pathId);
+        }}
+        className="bg-foreground text-background hover:bg-foreground/90 inline-block rounded-lg px-6 py-3 text-sm font-semibold transition-colors"
+      >
+        {ctaLabel}
+      </Link>
+      <p className="text-foreground/40 mt-2 text-sm">
+        {recommendation.reason}
+        {threadState?.confidence === "low"
+          ? " Use the lesson practice block before moving on."
+          : ""}
+      </p>
     </div>
   );
 }
@@ -67,5 +97,5 @@ export function SyllabusCheckmark({ threadId }: { threadId: string }) {
 
   if (!visited) return null;
 
-  return <span className="text-foreground/30 text-xs">✓</span>;
+  return <span className="text-foreground/30 text-xs">&#10003;</span>;
 }

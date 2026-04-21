@@ -1,9 +1,9 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { trackEvent } from "@/lib/analytics";
 import { setCurrentPath } from "@/lib/journey";
 import { getRecommendedPath } from "@/lib/path-recommendations";
 
@@ -30,19 +30,19 @@ export function HomepageQuiz({ paths }: QuizProps) {
   const starterPath = paths[beginnerRecommendation.id];
 
   useEffect(() => {
-    track("quiz_step_viewed", { step: 0 });
+    trackEvent("quiz_step_viewed", { step: 0 });
   }, []);
 
   function goToPath(pathId: string) {
     const p = paths[pathId];
     if (!p) return;
-    track("path_started", { path: pathId, source: "quiz" });
+    trackEvent("path_started", { path: pathId, source: "quiz" });
     setCurrentPath(pathId);
     router.push(`/threads/${p.firstThread}`);
   }
 
   function goToStep(n: number) {
-    track("quiz_step_viewed", { step: n });
+    trackEvent("quiz_step_viewed", { step: n });
     setFadeKey((k) => k + 1);
     setStep(n);
   }

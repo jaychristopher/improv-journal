@@ -1,10 +1,10 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { isThreadVisited, markThreadVisited } from "@/lib/journey";
+import { trackEvent } from "@/lib/analytics";
+import { isThreadVisited, markThreadVisited, setCurrentPath } from "@/lib/journey";
 
 interface ThreadInfo {
   id: string;
@@ -28,32 +28,29 @@ export function JourneyProgressBar({
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    // Mark current thread as visited
+    setCurrentPath(pathId);
     markThreadVisited(threads[currentThreadIndex]?.id ?? "");
 
-    // Read all visited state
-    const v = new Set<string>();
-    for (const t of threads) {
-      if (isThreadVisited(t.id)) v.add(t.id);
+    const nextVisited = new Set<string>();
+    for (const thread of threads) {
+      if (isThreadVisited(thread.id)) nextVisited.add(thread.id);
     }
-    queueMicrotask(() => setVisited(v));
+    queueMicrotask(() => setVisited(nextVisited));
 
-    track("thread_viewed", {
+    trackEvent("thread_viewed", {
       thread: threads[currentThreadIndex]?.id ?? "",
       path: pathId,
       position: currentThreadIndex + 1,
       total: threads.length,
     });
 
-    // Check for path completion (all threads visited after marking current)
-    if (v.size === threads.length) {
-      track("path_completed", { path: pathId, threads_count: threads.length });
+    if (nextVisited.size === threads.length) {
+      trackEvent("path_completed", { path: pathId, threads_count: threads.length });
     }
   }, [threads, currentThreadIndex, pathId]);
 
   return (
     <div className="mb-8">
-      {/* Compact bar */}
       <button
         onClick={() => setExpanded(!expanded)}
         className="flex w-full cursor-pointer items-center gap-3 text-left"
@@ -63,19 +60,18 @@ export function JourneyProgressBar({
             <span className="font-medium">{pathTitle}</span>
             <span>
               {" "}
-              · {currentThreadIndex + 1} of {threads.length}
+              &middot; {currentThreadIndex + 1} of {threads.length}
             </span>
           </div>
-          {/* Segmented progress bar */}
           <div className="mt-1.5 flex gap-1">
-            {threads.map((t, i) => (
+            {threads.map((thread, index) => (
               <div
-                key={t.id}
+                key={thread.id}
                 className={[
                   "h-1 flex-1 rounded-full",
-                  i === currentThreadIndex
+                  index === currentThreadIndex
                     ? "bg-foreground/40"
-                    : visited.has(t.id)
+                    : visited.has(thread.id)
                       ? "bg-foreground/20"
                       : "bg-foreground/5",
                 ]
@@ -95,26 +91,24 @@ export function JourneyProgressBar({
         </svg>
       </button>
 
-      {/* Expanded outline */}
       {expanded && (
         <div className="border-foreground/10 mt-3 rounded-lg border p-4">
           <ol className="space-y-2">
-            {threads.map((t, i) => (
-              <li key={t.id} className="flex items-center gap-2 text-sm">
-                {/* Checkmark or number */}
-                {visited.has(t.id) ? (
-                  <span className="text-foreground/30 w-5 text-center text-xs">✓</span>
+            {threads.map((thread, index) => (
+              <li key={thread.id} className="flex items-center gap-2 text-sm">
+                {visited.has(thread.id) ? (
+                  <span className="text-foreground/30 w-5 text-center text-xs">&#10003;</span>
                 ) : (
-                  <span className="text-foreground/20 w-5 text-center text-xs">{i + 1}</span>
+                  <span className="text-foreground/20 w-5 text-center text-xs">{index + 1}</span>
                 )}
-                {i === currentThreadIndex ? (
-                  <span className="font-medium">{t.title}</span>
+                {index === currentThreadIndex ? (
+                  <span className="font-medium">{thread.title}</span>
                 ) : (
                   <Link
-                    href={`/threads/${t.id}`}
+                    href={`/threads/${thread.id}`}
                     className="text-foreground/50 hover:text-foreground/80 hover:underline"
                   >
-                    {t.title}
+                    {thread.title}
                   </Link>
                 )}
               </li>

@@ -1,7 +1,8 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import Link from "next/link";
+
+import { trackEvent } from "@/lib/analytics";
 
 type WhatsNextVariant =
   | { variant: "next-thread"; title: string; href: string }
@@ -48,7 +49,7 @@ export function WhatsNext(props: WhatsNextVariant) {
       href={href}
       onClick={() => {
         if (props.variant === "bridge-funnel") {
-          track("bridge_cta_clicked", {
+          trackEvent("bridge_cta_clicked", {
             bridge: window.location.pathname.replace(/^\//, ""),
             target: title,
           });

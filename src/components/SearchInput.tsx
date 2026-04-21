@@ -1,9 +1,9 @@
 "use client";
 
-import { track } from "@vercel/analytics";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { trackEvent } from "@/lib/analytics";
 import { getSearchIndex, hasSearchIndex } from "@/lib/search-index";
 
 interface QuickResult {
@@ -95,7 +95,7 @@ export function SearchInput() {
     (url: string, source: "suggestion" | "query") => {
       const normalizedQuery = query.trim();
       if (normalizedQuery) {
-        track("search_submitted", {
+        trackEvent("search_submitted", {
           destination: url,
           query: normalizedQuery,
           source,
@@ -111,7 +111,7 @@ export function SearchInput() {
   const open = useCallback(
     async (source: "button" | "shortcut") => {
       if (!isOpen) {
-        track("search_opened", { source });
+        trackEvent("search_opened", { source });
       }
 
       setIsOpen(true);

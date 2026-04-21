@@ -4,10 +4,14 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
 
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
+import { PostHogPageView } from "@/components/PostHogPageView";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
+
+import { PostHogProvider } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -94,11 +98,16 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-full flex-col">
-        <Nav />
-        {children}
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <PostHogProvider>
+          <Suspense fallback={null}>
+            <PostHogPageView />
+          </Suspense>
+          <Nav />
+          {children}
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </PostHogProvider>
       </body>
     </html>
   );
