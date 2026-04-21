@@ -1,6 +1,11 @@
 ---
 id: conversation-that-felt-like-magic
 title: "The Conversation That Felt Like Magic"
+lesson_goal: "Notice the felt difference between alive and dead conversations and start seeing shared reality as something built."
+key_takeaway: "Connection is not random - it depends on two people actively sustaining the same reality together."
+common_mistake: "Treating connection as chemistry instead of a fragile system that needs attention."
+practice_prompt: "After your next good or bad conversation, write down the signals that made the exchange feel richer or thinner."
+reflection_prompt: "What was being actively built between you, and when did that shared world strengthen or weaken?"
 status: seed
 atoms: [shared-reality-fragility, continuous-signaling, systemic-health-indicators]
 tags: [hook, experience, beyond-stage]

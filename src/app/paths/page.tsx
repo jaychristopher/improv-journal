@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { getRecommendedPath } from "@/lib/path-recommendations";
+
 export const metadata: Metadata = {
   title: "Learning Paths",
   description:
-    "Structured guides for wherever you are in your journey — beginner through performer.",
+    "Structured guides for wherever you are in your journey - beginner through performer.",
   alternates: { canonical: "/paths" },
 };
 
@@ -15,20 +17,19 @@ const STEPS = [
     href: "/learn/beginner",
     body: (
       <>
-        Three ways in, depending on how you think.{" "}
+        Start with{" "}
         <Link href="/paths/beginner-foundations" className="text-foreground underline">
           Foundations
         </Link>{" "}
-        teaches the essential principles and skills every improviser needs.{" "}
+        for the clearest beginner sequence. Then branch into{" "}
         <Link href="/paths/physics-of-connection" className="text-foreground underline">
           The Physics of Connection
         </Link>{" "}
-        starts with what improv reveals about every conversation you&apos;ll ever have. And{" "}
+        if you want the big-picture lens, or{" "}
         <Link href="/paths/systems-of-improv" className="text-foreground underline">
           Systems of Improv
         </Link>{" "}
-        is for analytical minds who need the <em>why</em> before they can commit to the <em>how</em>
-        .
+        if you want the system-level explanation first.
       </>
     ),
   },
@@ -72,7 +73,7 @@ const STEPS = [
         <Link href="/paths/advanced-game-and-character" className="text-foreground underline">
           Advanced Game and Character
         </Link>{" "}
-        goes beyond &ldquo;find the game&rdquo; into how games evolve, invert, and break — and how
+        goes beyond &ldquo;find the game&rdquo; into how games evolve, invert, and break - and how
         character emerges from body and status rather than biography.{" "}
         <Link href="/paths/mastering-the-form" className="text-foreground underline">
           Mastering the Form
@@ -82,17 +83,18 @@ const STEPS = [
         <Link href="/paths/the-art-of-ensemble" className="text-foreground underline">
           The Art of Ensemble
         </Link>{" "}
-        is about performing at the highest level — backline mastery, group mind, and the practices
+        is about performing at the highest level - backline mastery, group mind, and the practices
         that make an ensemble more than a collection of individuals.
       </>
     ),
   },
 ];
 
-/* Dot sizes grow along the journey — a quiet visual cue */
 const DOT_SIZE = ["h-2 w-2", "h-2.5 w-2.5", "h-3 w-3", "h-3.5 w-3.5"];
 
 export default function PathsIndexPage() {
+  const beginnerRecommendation = getRecommendedPath("beginner");
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <header className="mb-12">
@@ -102,21 +104,42 @@ export default function PathsIndexPage() {
         </p>
       </header>
 
-      {/* ── Journey progression ──────────────────────────────────── */}
+      <section className="border-foreground/10 bg-foreground/[0.03] mb-12 rounded-xl border p-6">
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">
+          {beginnerRecommendation.label}
+        </span>
+        <h2 className="mt-1 text-xl font-semibold">{beginnerRecommendation.title}</h2>
+        <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+          {beginnerRecommendation.rationale}
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href={`/paths/${beginnerRecommendation.id}`}
+            className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+          >
+            Start with Foundations
+          </Link>
+          <Link
+            href="/learn/beginner"
+            className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+          >
+            See alternate beginner routes
+          </Link>
+        </div>
+      </section>
+
       <div>
         {STEPS.map((step, i) => (
           <div
             key={step.level}
             className={["relative pl-10", i > 0 && "pt-10"].filter(Boolean).join(" ")}
           >
-            {/* Connector line — from this dot center down to bottom edge */}
             {i < STEPS.length - 1 && (
               <div
                 className="border-foreground/10 absolute top-1/2 bottom-0 left-[11px] border-l-2 border-dashed"
                 aria-hidden="true"
               />
             )}
-            {/* Connector line — from top edge down to this dot center */}
             {i > 0 && (
               <div
                 className="border-foreground/10 absolute top-0 bottom-1/2 left-[11px] border-l-2 border-dashed"
@@ -124,7 +147,6 @@ export default function PathsIndexPage() {
               />
             )}
 
-            {/* Step dot — vertically centered with the card */}
             <div className="absolute top-1/2 left-0 z-10 flex w-6 -translate-y-1/2 justify-center">
               <div className={`bg-foreground/20 rounded-full ${DOT_SIZE[i]}`} aria-hidden="true" />
             </div>
@@ -147,7 +169,6 @@ export default function PathsIndexPage() {
         ))}
       </div>
 
-      {/* ── Reference (separate from the player journey) ─────────── */}
       <div className="border-foreground/10 mt-16 border-t pt-12">
         <section className="border-foreground/10 bg-surface rounded-lg border p-6">
           <Link href="/learn/advanced" className="group">
@@ -163,7 +184,7 @@ export default function PathsIndexPage() {
             <Link href="/paths/reference-guide" className="text-foreground underline">
               The Improv Reference Guide
             </Link>{" "}
-            is a cross-referenced, multi-tradition analysis of improvisation — sourced claims,
+            is a cross-referenced, multi-tradition analysis of improvisation - sourced claims,
             counter-positions, and a knowledge graph that holds Johnstone, Spolin, Close, UCB, and
             Annoyance in one linked structure.
           </p>

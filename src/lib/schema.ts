@@ -86,6 +86,11 @@ export interface AtomFrontmatter {
 export interface ThreadFrontmatter {
   id: string;
   title: string;
+  lesson_goal?: string;
+  key_takeaway?: string;
+  common_mistake?: string;
+  practice_prompt?: string;
+  reflection_prompt?: string;
   status: ContentStatus;
   atoms: string[]; // ordered list of atom IDs that compose this thought
   tags: string[];

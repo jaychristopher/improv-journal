@@ -1,6 +1,11 @@
 ---
 id: building-on-offers
 title: "Building on Offers: The Engine of Scene Work"
+lesson_goal: "Understand offers as the basic unit of scene work and learn the cycle of listen, receive, and build."
+key_takeaway: "A scene stays alive when each response clearly receives what came before and turns it into the next offer."
+common_mistake: "Trying to invent something clever before fully receiving what your partner already gave you."
+practice_prompt: "In your next scene or conversation, name one concrete offer you received before you respond and add one specific detail to it."
+reflection_prompt: "Where did you actually build on what was given, and where did you replace it with your own plan?"
 status: seed
 atoms: [active-listening, offers, yes-and, blocking]
 tags: [fundamentals, scene-work]

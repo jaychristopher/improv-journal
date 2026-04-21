@@ -1,6 +1,11 @@
 ---
 id: quieting-the-planning-mind
 title: "Quieting the Planning Mind"
+lesson_goal: "Recognize internal computation and learn practices that redirect attention outward."
+key_takeaway: "The planning mind gets quieter when the structure of the exercise forces attention onto live input."
+common_mistake: "Trying to suppress overthinking through willpower instead of giving the mind a better task."
+practice_prompt: "Run mirroring, a one-word scene, or a blind offer and notice which constraint most effectively breaks planning."
+reflection_prompt: "What does your planning mind seem to be protecting you from?"
 status: seed
 atoms: [be-present, internal-computation, fear-of-failure, obvious-choice, mirroring, one-word-scene, blind-offer]
 tags: [presence, exercises, analytical, inner-game]

@@ -1,6 +1,11 @@
 ---
 id: clear-signal-simple-signal
 title: "Clear Signal, Simple Signal"
+lesson_goal: "Improve what you send into the scene by favoring honesty and simplicity over cleverness."
+key_takeaway: "Clear, simple signals give your partner something real to build on; clever noise makes the channel harder to read."
+common_mistake: "Using irony, exposition, or complexity to avoid saying the honest thing."
+practice_prompt: "Play a scene using only emotionally honest, ordinary responses and notice how quickly the relationship becomes playable."
+reflection_prompt: "When do you reach for complexity because it feels safer than clarity?"
 status: seed
 atoms: [be-honest, performing-cleverness, commitment, be-simple, overcomplication, continuous-signaling, emotional-honesty-scene, one-word-scene]
 tags: [principles, authenticity, bandwidth, clarity]

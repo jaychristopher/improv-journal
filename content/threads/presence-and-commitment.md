@@ -1,6 +1,11 @@
 ---
 id: presence-and-commitment
 title: "Presence and Commitment: Being Fully in the Scene"
+lesson_goal: "Distinguish presence from commitment and see how inner attention becomes visible on stage."
+key_takeaway: "Presence is the internal act of fully entering the scene; commitment is the outward proof that you did."
+common_mistake: "Trying to look committed while still holding back internally."
+practice_prompt: "Run a short scene where you make one simple choice and play it with your full body, voice, and attention."
+reflection_prompt: "What changed when you stopped hedging and let one choice become real?"
 status: seed
 atoms: [active-listening, commitment]
 tags: [fundamentals, mindset]

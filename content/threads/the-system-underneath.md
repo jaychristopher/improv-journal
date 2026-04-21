@@ -1,6 +1,11 @@
 ---
 id: the-system-underneath
 title: "The System Underneath: Why Improv Works"
+lesson_goal: "Understand the six constraints that make improv principles make sense."
+key_takeaway: "The moves of improv are consequences of system constraints, not arbitrary rules teachers invented."
+common_mistake: "Using analysis in the middle of performance instead of using it between repetitions to understand the system."
+practice_prompt: "Pick one recent scene problem and explain it through one of the six constraints rather than through taste or talent."
+reflection_prompt: "Which of the six constraints most changes how you think about improv?"
 status: seed
 atoms: [reality-construction, irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, meaning-is-relational, interdependence]
 tags: [systems-thinking, laws, fundamentals, meta]

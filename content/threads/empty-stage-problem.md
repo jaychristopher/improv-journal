@@ -1,6 +1,11 @@
 ---
 id: empty-stage-problem
 title: "The Empty Stage Problem"
+lesson_goal: "Understand the base constraints that make improv hard before learning techniques."
+key_takeaway: "Improv works because performers follow principles that stabilize an inherently unstable system."
+common_mistake: "Assuming scene failure means lack of talent instead of mismatch with the system's constraints."
+practice_prompt: "Watch a scene and identify one moment shaped by irreversibility, bandwidth, fragility, or signaling."
+reflection_prompt: "Which constraint pressures you most when you're on stage or in a live conversation?"
 status: seed
 atoms: [irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, reality-construction]
 tags: [laws, constraints, systems-thinking]

@@ -1,6 +1,11 @@
 ---
 id: the-inner-game-expanded
 title: "The Inner Game Expanded: Depth, Vulnerability, and What Transfers"
+lesson_goal: "Extend inner-game work into vulnerability, support, signal coherence, and transfer beyond the stage."
+key_takeaway: "Technique becomes moving when emotional honesty, support, and clear signals make real risk possible."
+common_mistake: "Trying to perform vulnerability instead of letting real response and support create it."
+practice_prompt: "In your next scene, choose one moment to respond honestly instead of strategically and notice what support makes that possible."
+reflection_prompt: "What kind of support helps you take more genuine risks?"
 status: draft
 atoms: [emotional-truth, vulnerability, be-supportive, gratitude-reframing, accepting-the-offer, beyond-the-stage, audience, signal, bandwidth, coherence]
 tags: [inner-game, emotional, beyond-stage, depth]

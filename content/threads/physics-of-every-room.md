@@ -1,6 +1,11 @@
 ---
 id: physics-of-every-room
 title: "The Physics of Every Room You'll Ever Walk Into"
+lesson_goal: "Synthesize the path's principles into a model you can apply beyond the stage."
+key_takeaway: "The same forces that govern improv scenes govern everyday conversations, meetings, and relationships."
+common_mistake: "Learning principles in isolation without noticing the collapse modes they are meant to prevent."
+practice_prompt: "After your next meeting or conversation, diagnose it: where did it accumulate, fracture, lag, or decay?"
+reflection_prompt: "Which collapse mode shows up most often in your daily life, and which principle counters it?"
 status: seed
 atoms: [reality-construction, systemic-health-indicators, systemic-collapse-modes, irreversibility, shared-reality-fragility]
 tags: [synthesis, beyond-stage, meta, systems-thinking]

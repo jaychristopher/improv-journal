@@ -1,6 +1,11 @@
 ---
 id: hardest-thing-youll-never-plan
 title: "The Hardest Thing You'll Never Plan"
+lesson_goal: "See why listening and planning compete for the same bandwidth and why presence requires trust."
+key_takeaway: "What is happening now matters more than the response you are trying to prepare for later."
+common_mistake: "Confusing preparation with responsiveness and missing the live scene while searching for a better line."
+practice_prompt: "Use a last-word-response constraint in conversation or scene work so you cannot pre-plan your reply."
+reflection_prompt: "What do you notice about your attention when you stop preparing and simply receive?"
 status: seed
 atoms: [be-present, active-listening, internal-computation, cognitive-bandwidth, be-thankful, judgment, last-word-response, gift-giving]
 tags: [principles, presence, cognition, trust]

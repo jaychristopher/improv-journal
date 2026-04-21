@@ -1,6 +1,11 @@
 ---
 id: first-rule-you-already-know
 title: "The First Rule You Already Know"
+lesson_goal: "Understand yes-and as an engineering rule for shared reality, not a positivity slogan."
+key_takeaway: "Accepting incoming reality and extending it is what keeps two people in the same scene."
+common_mistake: "Hearing yes-and as forced agreement instead of accepting the reality while keeping your own agency."
+practice_prompt: "Do a 60-second yes-and chain or rewrite one recent 'no, but' moment into an additive response."
+reflection_prompt: "Where do you tend to reject offers because you feel defensive, clever, or in control?"
 status: seed
 atoms: [be-positive, yes-and, negation, blocking, offers, yes-and-chain]
 tags: [principles, fundamentals, show-dont-tell]

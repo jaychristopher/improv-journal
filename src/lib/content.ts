@@ -415,6 +415,60 @@ export async function getThreadsForAtom(atomId: string) {
   return threads.filter((t) => t.frontmatter.atoms?.includes(atomId));
 }
 
+export interface ThreadPracticeRecommendation {
+  id: string;
+  title: string;
+  url: string;
+  source: "direct" | "linked";
+}
+
+export async function getPracticeRecommendationsForThread(
+  threadId: string,
+): Promise<ThreadPracticeRecommendation[]> {
+  const [thread, atoms] = await Promise.all([getThreadBySlug(threadId), loadAtoms()]);
+  if (!thread) return [];
+
+  const atomById = new Map(atoms.map((atom) => [atom.frontmatter.id, atom]));
+  const directRecommendations: ThreadPracticeRecommendation[] = [];
+  const linkedRecommendations: ThreadPracticeRecommendation[] = [];
+  const seen = new Set<string>();
+
+  const addRecommendation = (atomId: string, source: "direct" | "linked") => {
+    if (seen.has(atomId)) return;
+
+    const atom = atomById.get(atomId);
+    if (!atom || atom.frontmatter.type !== "exercise") return;
+
+    seen.add(atomId);
+    const recommendation = {
+      id: atomId,
+      title: atom.frontmatter.title,
+      url: getAtomUrl({ id: atomId, type: atom.frontmatter.type }),
+      source,
+    };
+
+    if (source === "direct") {
+      directRecommendations.push(recommendation);
+      return;
+    }
+
+    linkedRecommendations.push(recommendation);
+  };
+
+  for (const atomId of thread.frontmatter.atoms ?? []) {
+    const atom = atomById.get(atomId);
+    if (!atom) continue;
+
+    addRecommendation(atomId, "direct");
+
+    for (const link of atom.frontmatter.links ?? []) {
+      addRecommendation(link.id, "linked");
+    }
+  }
+
+  return [...directRecommendations, ...linkedRecommendations].slice(0, 3);
+}
+
 /** Find all bridges that reference a given atom as an entry atom */
 export async function getBridgesForAtom(atomId: string) {
   const bridges = await loadBridges();

@@ -3,15 +3,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { RecommendedBadge } from "@/components/RecommendedBadge";
 import { loadPaths } from "@/lib/content";
+import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendations";
 import type { Audience } from "@/lib/schema";
 
 const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   beginner: {
     title: "Improv for Beginners: Where to Start",
     description:
-      "The fundamentals of connection — why conversations work, what makes them break, and how to practice. No stage experience required.",
+      "The fundamentals of connection - why conversations work, what makes them break, and how to practice. No stage experience required.",
   },
   intermediate: {
     title: "Breaking Through a Plateau",
@@ -21,7 +21,7 @@ const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   teacher: {
     title: "Learning to Teach",
     description:
-      "Teaching improv is its own skill. Curriculum design, feedback, progression — how to help others grow.",
+      "Teaching improv is its own skill. Curriculum design, feedback, progression - how to help others grow.",
   },
   performer: {
     title: "Pushing Toward Mastery",
@@ -31,7 +31,7 @@ const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   advanced: {
     title: "Research & Reference",
     description:
-      "The full system map — laws, principles, patterns, and connections. For deep study and reference.",
+      "The full system map - laws, principles, patterns, and connections. For deep study and reference.",
   },
 };
 
@@ -66,9 +66,18 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
   const { audience } = await params;
   if (!VALID_AUDIENCES.has(audience)) notFound();
 
+  const typedAudience = audience as Audience;
   const meta = AUDIENCE_META[audience];
   const allPaths = await loadPaths();
-  const paths = allPaths.filter((p) => p.frontmatter.audience?.includes(audience as Audience));
+  const paths = allPaths.filter((path) => path.frontmatter.audience?.includes(typedAudience));
+  const recommendation = getRecommendedPath(typedAudience);
+  const recommendedPath = paths.find((path) => path.frontmatter.id === recommendation.id) ?? null;
+  const orderedPaths = [
+    ...paths.filter((path) => isRecommendedPath(path.frontmatter.id, typedAudience)),
+    ...paths.filter((path) => !isRecommendedPath(path.frontmatter.id, typedAudience)),
+  ];
+  const alternatePaths = orderedPaths.filter((path) => path.frontmatter.id !== recommendation.id);
+  const isBeginner = typedAudience === "beginner";
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -79,21 +88,83 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
         <p className="text-foreground/60 mt-2">{meta.description}</p>
       </header>
 
-      <div className="space-y-4">
-        {paths.map((p) => (
-          <Link
-            key={p.frontmatter.id}
-            href={`/paths/${p.frontmatter.id}`}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
-          >
-            <h2 className="flex items-center font-semibold">
-              {p.frontmatter.title}
-              <RecommendedBadge pathId={p.frontmatter.id} />
-            </h2>
-            <p className="text-foreground/50 mt-1 text-sm">{p.frontmatter.description}</p>
-          </Link>
-        ))}
-      </div>
+      {isBeginner && recommendedPath ? (
+        <>
+          <section className="border-foreground/10 bg-foreground/[0.03] mb-6 rounded-xl border p-6">
+            <span className="text-foreground/40 text-xs tracking-wider uppercase">
+              {recommendation.label}
+            </span>
+            <h2 className="mt-1 text-xl font-semibold">{recommendedPath.frontmatter.title}</h2>
+            <p className="text-foreground/60 mt-2 text-sm">
+              {recommendedPath.frontmatter.description}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href={`/paths/${recommendedPath.frontmatter.id}`}
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+              >
+                Start with Foundations
+              </Link>
+              <Link
+                href="/paths"
+                className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+              >
+                Compare all paths
+              </Link>
+            </div>
+          </section>
+
+          <section className="border-foreground/10 bg-surface mb-10 rounded-xl border p-6">
+            <h2 className="text-lg font-semibold">Why this path first?</h2>
+            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+              {recommendation.rationale}
+            </p>
+            <ul className="mt-4 list-disc space-y-2 pl-5">
+              {recommendedPath.frontmatter.learning_objectives.map((objective) => (
+                <li key={objective} className="text-foreground/70 text-sm">
+                  {objective}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-lg font-semibold">Other good ways in</h2>
+            <div className="space-y-4">
+              {alternatePaths.map((path) => (
+                <Link
+                  key={path.frontmatter.id}
+                  href={`/paths/${path.frontmatter.id}`}
+                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                >
+                  <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                  <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </>
+      ) : (
+        <div className="space-y-4">
+          {orderedPaths.map((path) => (
+            <Link
+              key={path.frontmatter.id}
+              href={`/paths/${path.frontmatter.id}`}
+              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+            >
+              <h2 className="flex items-center gap-2 font-semibold">
+                {path.frontmatter.title}
+                {isRecommendedPath(path.frontmatter.id, typedAudience) && (
+                  <span className="bg-foreground/10 text-foreground/50 rounded-full px-2 py-0.5 text-xs">
+                    {recommendation.label}
+                  </span>
+                )}
+              </h2>
+              <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
+            </Link>
+          ))}
+        </div>
+      )}
     </main>
   );
 }
