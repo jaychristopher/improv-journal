@@ -100,4 +100,4 @@ Five minutes. No props. Pick one exercise, do it before your next meeting, and n
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. To understand the deeper principles behind these exercises — mirroring, Yes And, gift giving, and more — explore the [Physics of Connection](/paths/physics-of-connection) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). To understand the deeper principles behind these exercises — mirroring, Yes And, gift giving, and more — explore the [Physics of Connection](/paths/physics-of-connection) path.*

@@ -94,6 +94,6 @@ Vulnerability isn't a personality trait you cultivate. It's a rational response 
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full framework behind vulnerability, safety, and trust in performance, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Vulnerability](/atoms/vulnerability) and [Safety in the Room](/atoms/safety-in-the-room).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind vulnerability, safety, and trust in performance, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Vulnerability](/atoms/vulnerability) and [Safety in the Room](/atoms/safety-in-the-room).*
 
 **Sources cited:** Brown (2012), *Daring Greatly*. Lencioni (2002), *The Five Dysfunctions of a Team*. Edmondson (1999), *Administrative Science Quarterly*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

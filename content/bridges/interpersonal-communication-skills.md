@@ -88,6 +88,6 @@ Communication is not about finding the right words. It's about being present eno
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
 
 **Sources cited:** Spolin (1963), *Improvisation for the Theater*. Johnstone (1979), *Impro*. Watzlawick et al. (1967), *Pragmatics of Human Communication*. Mehrabian (1971), *Silent Messages*. Kahneman (1973), *Attention and Effort*.

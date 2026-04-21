@@ -100,6 +100,6 @@ The practical question isn't "how do I become a more present person." It's "how 
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind presence, bandwidth, and internal computation, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Be Present](/atoms/be-present) and [Cognitive Bandwidth](/atoms/cognitive-bandwidth).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind presence, bandwidth, and internal computation, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Be Present](/atoms/be-present) and [Cognitive Bandwidth](/atoms/cognitive-bandwidth).*
 
 **Sources cited:** Miller (1956), *Psychological Review*. Cowan (2001), *Behavioral and Brain Sciences*. Kahneman (2011), *Thinking, Fast and Slow*. Hines, *Improv Nonsense* Substack.

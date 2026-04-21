@@ -6,11 +6,11 @@ key_takeaway: "Presence is the internal act of fully entering the scene; commitm
 common_mistake: "Trying to look committed while still holding back internally."
 practice_prompt: "Run a short scene where you make one simple choice and play it with your full body, voice, and attention."
 reflection_prompt: "What changed when you stopped hedging and let one choice become real?"
-status: seed
+status: validated
 atoms: [active-listening, commitment]
 tags: [fundamentals, mindset]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-04-21"
 ---
 
 The two invisible skills that separate okay improv from electric improv are presence and commitment. Neither is a technique you perform — they're states you inhabit.

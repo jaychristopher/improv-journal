@@ -141,6 +141,6 @@ Accept the offer. Add your own. Build from both. That's not compromise — it's 
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full structural model of offers, blocking, and the physics of human connection, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Yes, And](/atoms/yes-and) and [Accepting the Offer](/atoms/accepting-the-offer).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full structural model of offers, blocking, and the physics of human connection, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Yes, And](/atoms/yes-and) and [Accepting the Offer](/atoms/accepting-the-offer).*
 
 **Sources cited:** Johnstone (1979), *Impro*. Gottman (1994), *What Predicts Divorce?* Halpern, Close & Johnson (1994), *Truth in Comedy*. Fisher & Ury (1981), *Getting to Yes*. Hines, *Improv Nonsense* Substack.

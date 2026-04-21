@@ -106,4 +106,4 @@ The questions aren't magic. The progression is. Each tier asks for a slightly hi
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. To explore how trust, safety, and supportive response connect in a full system, start with the [Physics of Connection](/paths/physics-of-connection) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore how trust, safety, and supportive response connect in a full system, start with the [Physics of Connection](/paths/physics-of-connection) path.*

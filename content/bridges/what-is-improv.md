@@ -6,7 +6,7 @@ target_keywords:
   - { keyword: "what is improvisation", volume: 800 }
 entry_atoms: [yes-and, offers, discovery, be-present, ensemble, reality-construction]
 entry_path: beginner-foundations
-status: draft
+status: validated
 created: "2026-04-13"
 ---
 
@@ -70,4 +70,4 @@ It's the hardest easy thing in the world. And the reason it matters — whether 
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. To explore the foundational principles — offers, Yes And, presence, and more — start with the [Beginner Foundations](/paths/beginner-foundations) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore the foundational principles — offers, Yes And, presence, and more — start with the [Beginner Foundations](/paths/beginner-foundations) path.*

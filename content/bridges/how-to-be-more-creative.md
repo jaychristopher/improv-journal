@@ -112,6 +112,6 @@ Stop trying to be original. Follow the obvious. The original stuff is hiding beh
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind the obvious choice, discovery, and the cognitive mechanics of creative performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [The Obvious Choice](/atoms/obvious-choice) and [Discovery](/atoms/discovery).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind the obvious choice, discovery, and the cognitive mechanics of creative performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [The Obvious Choice](/atoms/obvious-choice) and [Discovery](/atoms/discovery).*
 
 **Sources cited:** Limb & Braun (2008), *PLoS ONE*. Csikszentmihalyi (1990), *Flow*. Sweller (1988), *Cognitive Science*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

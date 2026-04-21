@@ -16,9 +16,9 @@ practice_cadence: "Read one thread, run one short exercise, then return the next
 completion_outcome: "You'll have a working model of how scenes stay alive and the first habits to practice in every class."
 audience: [beginner]
 threads: [building-on-offers, presence-and-commitment]
-status: seed
+status: validated
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-04-21"
 ---
 
 Welcome. If you're new to improv — or if you've been doing it a while and want to re-examine the fundamentals — this is where to start.

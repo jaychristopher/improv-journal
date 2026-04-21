@@ -2,7 +2,7 @@
 id: active-listening
 title: Active Listening
 type: technique
-status: draft
+status: validated
 tags: [fundamentals, presence, awareness]
 links:
   - { id: yes-and, relation: enables }
@@ -17,6 +17,8 @@ links:
   - { id: relationship, relation: enables }
   - { id: ref-truth-in-comedy, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
+  - { id: mirroring, relation: illustrates }
+  - { id: last-word-response, relation: illustrates }
 sources: []
 created: "2026-03-29"
 updated: "2026-03-29"

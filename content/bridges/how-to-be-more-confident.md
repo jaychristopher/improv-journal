@@ -111,6 +111,6 @@ The chain doesn't start with confidence. It starts with the willingness to commi
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind commitment, the obvious choice, and the cognitive mechanics of performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Commitment](/atoms/commitment) and [The Obvious Choice](/atoms/obvious-choice).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind commitment, the obvious choice, and the cognitive mechanics of performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Commitment](/atoms/commitment) and [The Obvious Choice](/atoms/obvious-choice).*
 
 **Sources cited:** Bandura (1977), *Psychological Review*. Sweller (1988), *Cognitive Science*. Dweck (2006), *Mindset*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

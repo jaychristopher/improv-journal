@@ -142,6 +142,6 @@ The best feedback is the note you didn't have to give.
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full model of teaching, feedback, and creating conditions for growth, explore the [Teaching Improv](/paths/teaching-improv) path, or start with [Giving Notes](/atoms/giving-notes) and [Side-Coaching](/atoms/side-coaching).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full model of teaching, feedback, and creating conditions for growth, explore the [Teaching Improv](/paths/teaching-improv) path, or start with [Giving Notes](/atoms/giving-notes) and [Side-Coaching](/atoms/side-coaching).*
 
 **Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Buckingham & Coffman (1999), *First, Break All the Rules*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack. Halpern, Close & Johnson (1994), *Truth in Comedy*.

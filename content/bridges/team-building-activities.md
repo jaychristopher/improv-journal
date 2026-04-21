@@ -116,6 +116,6 @@ If those things aren't changing, the activity was entertainment. Entertainment i
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the structural model of trust and connection that underpins these exercises, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Safety in the Room](/atoms/safety-in-the-room) and [Yes, And](/atoms/yes-and).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the structural model of trust and connection that underpins these exercises, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Safety in the Room](/atoms/safety-in-the-room) and [Yes, And](/atoms/yes-and).*
 
 **Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Klein et al. (2009), *Small Group Research*. Duhigg (2016), "What Google Learned From Its Quest to Build the Perfect Team," *New York Times*. Johnstone (1979), *Impro*. Halpern, Close & Johnson (1994), *Truth in Comedy*.

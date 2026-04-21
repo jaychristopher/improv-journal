@@ -2,7 +2,7 @@
 id: offers
 title: Offers
 type: definition
-status: draft
+status: validated
 tags: [fundamentals, building-blocks]
 links:
   - { id: yes-and, relation: enables }
@@ -18,6 +18,8 @@ links:
   - { id: ref-impro-johnstone, relation: illustrates }
   - { id: endowment, relation: extends }
   - { id: ref-impro-storytellers-johnstone, relation: extends }
+  - { id: gift-giving, relation: illustrates }
+  - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
 updated: "2026-03-29"

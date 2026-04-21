@@ -2,7 +2,7 @@
 id: blocking
 title: Blocking
 type: antipattern
-status: draft
+status: validated
 tags: [fundamentals, antipatterns, umbrella-concept]
 links:
   - { id: yes-and, relation: contrasts }
@@ -21,6 +21,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-impro-storytellers-johnstone, relation: extends }
+  - { id: one-word-scene, relation: contrasts }
 sources: []
 created: "2026-03-29"
 updated: "2026-03-29"

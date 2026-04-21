@@ -99,6 +99,6 @@ The goal isn't to think less. It's to **spend your thinking on the right things.
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — start with [The System Underneath](/threads/the-system-underneath) or explore the [Systems of Improv](/paths/systems-of-improv) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — start with [The System Underneath](/threads/the-system-underneath) or explore the [Systems of Improv](/paths/systems-of-improv) path.*
 
 **Sources cited:** Limb & Braun (2008), *PLoS ONE*. Kahneman (1973), *Attention and Effort*. Sweller (1988), *Cognitive Science*. Nolen-Hoeksema et al. (2008), *Perspectives on Psychological Science*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

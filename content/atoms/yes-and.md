@@ -2,7 +2,7 @@
 id: yes-and
 title: "Yes, And: The First Rule of Improv"
 type: technique
-status: draft
+status: validated
 tags: [fundamentals, agreement, building, principles]
 links:
   - { id: active-listening, relation: requires }

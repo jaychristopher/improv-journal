@@ -95,6 +95,6 @@ For the rest of us — the ones staring at the email, rehearsing the conversatio
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Systems of Improv](/paths/systems-of-improv) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Systems of Improv](/paths/systems-of-improv) path.*
 
 **Sources cited:** Atkinson (1957), *Psychological Review*. Elliot & Church (1997), *Journal of Personality and Social Psychology*. Dweck (2006), *Mindset*. Tedeschi & Calhoun (2004), *Psychological Inquiry*. Close, via Halpern, Close & Johnson (1994), *Truth in Comedy*. Johnstone (1979), *Impro*.

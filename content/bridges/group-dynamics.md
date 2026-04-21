@@ -90,6 +90,6 @@ Start by watching. Notice who defers to whom, who fills the silences, who gets i
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — start with the [Improv for Teams](/paths/improv-for-teams) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — start with the [Improv for Teams](/paths/improv-for-teams) path.*
 
 **Sources cited:** Lewin (1947), *Frontiers in Group Dynamics*. Johnstone (1979), *Impro*. Tuckman (1965), *Psychological Bulletin*. Woolley et al. (2010), *Science*. Edmondson (1999), *Administrative Science Quarterly*. Google Project Aristotle (2015).

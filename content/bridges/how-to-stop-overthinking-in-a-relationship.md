@@ -102,6 +102,6 @@ The overthinking is your brain trying to script the scene in advance. But the sc
 
 ---
 
-*This article draws on the improv knowledge graph at [site]. For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
 
 **Sources cited:** Sweller (1988), *Cognitive Science*. Eisenberger et al. (2003), *Science*. Gottman (1994), *What Predicts Divorce?*. Bowlby (1969), *Attachment and Loss*. Johnstone (1979), *Impro*.

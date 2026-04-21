@@ -2,7 +2,7 @@
 id: commitment
 title: Commitment
 type: technique
-status: draft
+status: validated
 tags: [fundamentals, presence, performance]
 links:
   - { id: yes-and, relation: extends }
@@ -22,6 +22,8 @@ links:
   - { id: heightening, relation: enables }
   - { id: ref-napier-improvise, relation: illustrates }
   - { id: ref-impro-johnstone, relation: illustrates }
+  - { id: one-word-scene, relation: illustrates }
+  - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
 updated: "2026-03-29"
