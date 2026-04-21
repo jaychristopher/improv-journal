@@ -403,10 +403,18 @@ export async function getAtomRedirects(): Promise<
 
 // ─── Reverse lookups ────────────────────────────────────────────────────────
 
-/** Find the first path that sequences a given thread */
+/** Find the best parent path for a thread.
+ *  When a thread appears in multiple paths, prefer the path where it appears
+ *  earliest (lowest index) — biasing toward the path where it's most foundational. */
 export async function getParentPath(threadId: string) {
   const paths = await loadPaths();
-  return paths.find((p) => p.frontmatter.threads?.includes(threadId)) ?? null;
+  const candidates = paths.filter((p) => p.frontmatter.threads?.includes(threadId));
+  if (candidates.length <= 1) return candidates[0] ?? null;
+  return candidates.reduce((best, p) => {
+    const bestIdx = best.frontmatter.threads?.indexOf(threadId) ?? Infinity;
+    const pIdx = p.frontmatter.threads?.indexOf(threadId) ?? Infinity;
+    return pIdx < bestIdx ? p : best;
+  });
 }
 
 /** Find all threads that compose a given atom */

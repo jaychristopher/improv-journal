@@ -208,13 +208,6 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         </nav>
       )}
 
-      {nextThread && (
-        <WhatsNext
-          variant="next-thread"
-          title={nextThread.title}
-          href={`/threads/${nextThread.id}`}
-        />
-      )}
       {isLastThread && nextPathInfo && (
         <WhatsNext
           variant="path-complete"
