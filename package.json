@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "glob": "^13.0.6",
     "gray-matter": "^4.0.3",
     "minisearch": "^7.2.0",

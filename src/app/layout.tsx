@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -72,11 +74,31 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Organization structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: SITE_NAME,
+              url: SITE_URL,
+              founder: {
+                "@type": "Person",
+                name: "Jay Christopher",
+              },
+              description:
+                "Six laws, eight principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.",
+            }),
+          }}
+        />
       </head>
       <body className="flex min-h-full flex-col">
         <Nav />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

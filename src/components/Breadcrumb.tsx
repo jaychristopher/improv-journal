@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
+import { SITE_URL } from "@/lib/seo";
 
 export interface Crumb {
   label: string;
