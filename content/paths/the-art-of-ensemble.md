@@ -2,6 +2,18 @@
 id: the-art-of-ensemble
 title: "The Art of Ensemble"
 description: "The craft of performing at the highest level — backline mastery, ensemble coherence, managing performance state, developing an artistic voice, and the practices that make group mind more than a metaphor."
+learning_objectives:
+  - "Understand the conditions that make group mind practical rather than mystical."
+  - "Improve backline awareness, ensemble coherence, and performance-state management."
+  - "See the relationship between personal artistic voice and collective craft."
+who_this_is_for:
+  - "Experienced performers working on ensemble depth rather than just individual technique."
+  - "Teams that want to study the practices behind high-level group play."
+prerequisites:
+  - "Enough stage experience to recognize the difference between technique and ensemble presence."
+estimated_time: "2 threads, about 60-75 minutes plus ensemble practice"
+practice_cadence: "Read a thread, then take one ensemble lens into rehearsal or performance."
+completion_outcome: "You'll have a clearer sense of how to train group mind, backline craft, and artistic voice together."
 audience: [performer]
 threads:
   - playing-together-at-the-highest-level

@@ -2,6 +2,18 @@
 id: mastering-the-form
 title: "Mastering the Form"
 description: "You know Harold. You can do montage. Now what? A guide to every major longform format — what each demands, what each teaches — and how show-level craft turns a collection of scenes into a shaped experience."
+learning_objectives:
+  - "Understand what different longform structures teach and demand."
+  - "Develop show-level craft instead of treating scenes as isolated successes."
+  - "Think about form as architecture rather than a list of bits."
+who_this_is_for:
+  - "Performers who already have meaningful longform experience."
+  - "Improvisers ready to study how whole shows are shaped."
+prerequisites:
+  - "Familiarity with basic longform formats such as Harold or montage."
+estimated_time: "2 threads, about 60-75 minutes plus show review"
+practice_cadence: "Read one thread, then watch or perform a show with that lens in mind."
+completion_outcome: "You'll have a stronger framework for choosing forms and shaping entire performances, not just individual scenes."
 audience: [performer]
 threads:
   - beyond-the-harold

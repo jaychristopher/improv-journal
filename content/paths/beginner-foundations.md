@@ -2,6 +2,18 @@
 id: beginner-foundations
 title: "Foundations: Your First Steps in Improv"
 description: "The essential principles and skills every improviser needs. Start here."
+learning_objectives:
+  - "Accept and build on offers without collapsing the shared reality."
+  - "Separate scene mechanics from inner-state problems like hesitation and overthinking."
+  - "Use two foundational threads as a repeatable first practice loop."
+who_this_is_for:
+  - "Brand-new improvisers who want the clearest first steps."
+  - "Returning improvisers who want to rebuild fundamentals on purpose."
+prerequisites:
+  - "No prior improv experience required."
+estimated_time: "2 threads, about 45-60 minutes of reading plus practice"
+practice_cadence: "Read one thread, run one short exercise, then return the next day."
+completion_outcome: "You'll have a working model of how scenes stay alive and the first habits to practice in every class."
 audience: [beginner]
 threads: [building-on-offers, presence-and-commitment]
 status: seed

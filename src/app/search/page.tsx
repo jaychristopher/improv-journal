@@ -1,18 +1,11 @@
 "use client";
 
-import MiniSearch from "minisearch";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 
 import { MiniGraph } from "@/components/MiniGraph";
-
-const INDEX_URL = "/search-index.json";
-const MINISEARCH_OPTS = {
-  fields: ["title", "body", "tags"],
-  storeFields: ["title", "url", "layer", "type", "docId", "links"],
-};
+import { getSearchIndex } from "@/lib/search-index";
 
 const LAYER_LABELS: Record<string, string> = {
   guide: "Guides",
@@ -62,66 +55,88 @@ function SearchResults() {
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
+    setActiveLayer(null);
+
     if (!q) {
-      // Use a microtask to avoid synchronous setState in effect body
-      queueMicrotask(() => {
-        setResults([]);
-        setLoading(false);
-      });
-      return;
+      setResults([]);
+      setLoading(false);
+      return () => {
+        cancelled = true;
+      };
     }
 
-    (async () => {
+    async function runSearch() {
       setLoading(true);
-      const res = await fetch(INDEX_URL);
-      const json = await res.text();
-      const ms = MiniSearch.loadJSON(json, MINISEARCH_OPTS);
-      const hits = ms.search(q, {
-        fuzzy: 0.2,
-        prefix: true,
-        boost: { title: 3 },
-      });
-      setResults(
-        hits.map((h) => {
-          let links: GraphLink[] | undefined;
-          try {
-            if (h.links) links = JSON.parse(h.links as string);
-          } catch {
-            /* no links */
-          }
-          return {
-            id: h.id,
-            title: h.title as string,
-            url: h.url as string,
-            layer: h.layer as string,
-            type: h.type as string,
-            score: h.score,
-            links,
-          };
-        }),
-      );
-      setLoading(false);
-    })();
+
+      try {
+        const ms = await getSearchIndex();
+        const hits = ms.search(q, {
+          fuzzy: 0.2,
+          prefix: true,
+          boost: { title: 3 },
+        });
+
+        if (cancelled) return;
+
+        setResults(
+          hits.map((hit) => {
+            let links: GraphLink[] | undefined;
+
+            try {
+              if (hit.links) {
+                links = JSON.parse(hit.links as string) as GraphLink[];
+              }
+            } catch {
+              links = undefined;
+            }
+
+            return {
+              id: hit.id,
+              title: hit.title as string,
+              url: hit.url as string,
+              layer: hit.layer as string,
+              type: hit.type as string,
+              score: hit.score,
+              links,
+            };
+          }),
+        );
+      } catch {
+        if (!cancelled) {
+          setResults([]);
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    void runSearch();
+
+    return () => {
+      cancelled = true;
+    };
   }, [q]);
 
-  // Facet counts
-  const layerCounts = results.reduce<Record<string, number>>((acc, r) => {
-    acc[r.layer] = (acc[r.layer] ?? 0) + 1;
+  const layerCounts = results.reduce<Record<string, number>>((acc, result) => {
+    acc[result.layer] = (acc[result.layer] ?? 0) + 1;
     return acc;
   }, {});
 
-  const filtered = activeLayer ? results.filter((r) => r.layer === activeLayer) : results;
+  const filtered = activeLayer ? results.filter((result) => result.layer === activeLayer) : results;
 
-  // Build a title/url lookup from all results for graph node resolution
-  // (must be before early returns to satisfy Rules of Hooks)
   const resultLookup = useMemo(() => {
     const map = new Map<string, { title: string; url: string }>();
-    for (const r of results) {
-      map.set(r.title.toLowerCase().replace(/\s+/g, "-"), {
-        title: r.title,
-        url: r.url,
+
+    for (const result of results) {
+      map.set(result.title.toLowerCase().replace(/\s+/g, "-"), {
+        title: result.title,
+        url: result.url,
       });
     }
+
     return map;
   }, [results]);
 
@@ -145,19 +160,17 @@ function SearchResults() {
     );
   }
 
-  // Graph: show when top result has connections and results are focused
   const topResult = filtered[0];
   const showGraph = topResult?.links && topResult.links.length >= 3 && filtered.length <= 8;
 
   return (
     <div>
-      {/* Facet pills */}
       <div className="mb-6 flex flex-wrap gap-2">
         <button
           onClick={() => setActiveLayer(null)}
           className={`rounded-full border px-3 py-1 text-xs transition-colors ${
             !activeLayer
-              ? "border-foreground/40 text-foreground/80 bg-foreground/5"
+              ? "border-foreground/40 bg-foreground/5 text-foreground/80"
               : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
           }`}
         >
@@ -169,7 +182,7 @@ function SearchResults() {
             onClick={() => setActiveLayer(activeLayer === layer ? null : layer)}
             className={`rounded-full border px-3 py-1 text-xs transition-colors ${
               activeLayer === layer
-                ? "border-foreground/40 text-foreground/80 bg-foreground/5"
+                ? "border-foreground/40 bg-foreground/5 text-foreground/80"
                 : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
             }`}
           >
@@ -178,7 +191,6 @@ function SearchResults() {
         ))}
       </div>
 
-      {/* Mini graph for focused queries */}
       {showGraph && topResult.links && (
         <MiniGraph
           centerTitle={topResult.title}
@@ -188,17 +200,16 @@ function SearchResults() {
         />
       )}
 
-      {/* Results */}
       <div className="space-y-3">
-        {filtered.map((r) => (
+        {filtered.map((result) => (
           <Link
-            key={r.id}
-            href={r.url}
+            key={result.id}
+            href={result.url}
             className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
           >
-            <h3 className="text-sm font-medium">{r.title}</h3>
+            <h3 className="text-sm font-medium">{result.title}</h3>
             <span className="text-foreground/30 mt-0.5 block text-xs">
-              {TYPE_LABELS[r.type] ?? r.type}
+              {TYPE_LABELS[result.type] ?? result.type}
             </span>
           </Link>
         ))}

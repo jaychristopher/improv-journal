@@ -2,6 +2,18 @@
 id: systems-of-improv
 title: "Systems of Improv: A Thinking Person's Guide"
 description: "Why improv works, explained as a system. For analytical minds who need the WHY before they can commit to the HOW. Start with the physics, end with the practice."
+learning_objectives:
+  - "Understand the six laws that make improv principles coherent instead of arbitrary."
+  - "Translate yes-and, presence, and practice into a systems model you can reason about."
+  - "Choose exercises that reduce overthinking through structure rather than willpower."
+who_this_is_for:
+  - "Analytical beginners who need the why before the how."
+  - "Improvisers who overthink and want a systems explanation they can trust."
+prerequisites:
+  - "No improv experience required, but a theory-first learning style helps."
+estimated_time: "4 threads, about 90-120 minutes of reading plus experiments"
+practice_cadence: "Read one lesson, then run the matching exercise before continuing."
+completion_outcome: "You'll have a mental model that makes improv principles feel grounded, testable, and worth practicing."
 audience: [beginner]
 threads:
   - the-system-underneath

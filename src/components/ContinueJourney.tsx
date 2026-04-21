@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -17,6 +18,7 @@ interface ContinueJourneyProps {
 export function ContinueJourney({ paths }: ContinueJourneyProps) {
   const [state, setState] = useState<{
     pathTitle: string;
+    pathId: string;
     nextThreadId: string;
     current: number;
     total: number;
@@ -34,9 +36,16 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
 
     const visitedCount = pathInfo.threads.filter((t) => journey.visitedThreads.includes(t)).length;
 
+    track("continue_shown", {
+      path: journey.pathId,
+      threads_visited: visitedCount,
+      total_threads: pathInfo.threads.length,
+    });
+
     queueMicrotask(() =>
       setState({
         pathTitle: pathInfo.title,
+        pathId: journey.pathId,
         nextThreadId: nextThread,
         current: visitedCount + 1,
         total: pathInfo.threads.length,
@@ -50,6 +59,9 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
     <section className="mb-8">
       <Link
         href={`/threads/${state.nextThreadId}`}
+        onClick={() =>
+          track("continue_clicked", { path: state.pathId, thread: state.nextThreadId })
+        }
         className="border-foreground/10 bg-surface hover:border-foreground/30 group block rounded-lg border p-5 transition-colors"
       >
         <span className="text-foreground/40 text-xs tracking-wider uppercase">

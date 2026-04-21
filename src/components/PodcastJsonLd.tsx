@@ -1,4 +1,5 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
+import { toAbsoluteSiteUrl } from "@/lib/audio";
+import { SITE_URL } from "@/lib/seo";
 
 interface PodcastJsonLdProps {
   title: string;
@@ -27,17 +28,17 @@ export function PodcastJsonLd({
     "@type": "PodcastEpisode",
     name: title,
     description: description ?? title,
-    url: `${SITE_URL}${pageUrl}`,
+    url: toAbsoluteSiteUrl(pageUrl, SITE_URL),
     associatedMedia: {
       "@type": "MediaObject",
-      contentUrl: `${SITE_URL}${audioUrl}`,
+      contentUrl: toAbsoluteSiteUrl(audioUrl, SITE_URL),
       encodingFormat: "audio/mpeg",
     },
     ...(isoDuration && { duration: isoDuration }),
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "The Physics of Connection",
-      url: `${SITE_URL}/listen`,
+      url: toAbsoluteSiteUrl("/listen", SITE_URL),
     },
   };
 

@@ -1,7 +1,6 @@
-import fs from "fs";
 import Link from "next/link";
-import path from "path";
 
+import { getAudioDuration } from "@/lib/audio-manifest";
 import {
   getAtomBySlug,
   getAtomUrl,
@@ -60,18 +59,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", atom.slug);
   const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
-
-  // Get duration for structured data
-  let audioDuration: string | undefined;
-  if (audioUrl) {
-    try {
-      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
-      const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
-      audioDuration = durations[audioUrl]?.formatted;
-    } catch {
-      /* no duration cache */
-    }
-  }
+  const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
 
   // Reverse lookups
   const [appearsInThreads, appearsInBridges] = await Promise.all([

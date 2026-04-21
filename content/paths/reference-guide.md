@@ -2,6 +2,18 @@
 id: reference-guide
 title: "The Improv Reference Guide"
 description: "A cross-referenced, multi-tradition analysis of improvisation. Sourced claims, counter-positions, and the first knowledge graph that holds Johnstone, Spolin, Close, UCB, and Annoyance in one linked structure."
+learning_objectives:
+  - "Navigate the graph by concept, tradition, type, and disagreement."
+  - "Understand how the major improv lineages agree, diverge, and source their claims."
+  - "Use the graph as a research and synthesis tool rather than a linear curriculum."
+who_this_is_for:
+  - "Writers, teachers, researchers, and advanced practitioners studying improvisation seriously."
+  - "Learners who want source-grounded claims and competing traditions in one place."
+prerequisites:
+  - "A willingness to study improv as a system rather than as a starter curriculum."
+estimated_time: "4 threads to orient yourself, then open-ended reference use"
+practice_cadence: "Use the first four threads to learn the map, then return by question, concept, or tradition."
+completion_outcome: "You'll know how to navigate the graph and use it as a serious reference tool for further study."
 audience: [advanced]
 threads:
   - traditions-in-tension

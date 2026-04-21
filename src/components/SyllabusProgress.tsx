@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,12 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
       {!allDone && nextThread && (
         <Link
           href={`/threads/${nextThread}`}
-          onClick={() => setCurrentPath(pathId)}
+          onClick={() => {
+            if (!isStarted) {
+              track("path_started", { path: pathId, source: "syllabus" });
+            }
+            setCurrentPath(pathId);
+          }}
           className="bg-foreground text-background hover:bg-foreground/90 inline-block rounded-lg px-6 py-3 text-sm font-semibold transition-colors"
         >
           {isStarted

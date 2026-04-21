@@ -1,9 +1,11 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { setCurrentPath } from "@/lib/journey";
+import { getRecommendedPath } from "@/lib/path-recommendations";
 
 interface PathConfig {
   title: string;
@@ -24,15 +26,23 @@ export function HomepageQuiz({ paths }: QuizProps) {
   const router = useRouter();
   const [step, setStep] = useState(0);
   const [fadeKey, setFadeKey] = useState(0);
+  const beginnerRecommendation = getRecommendedPath("beginner");
+  const starterPath = paths[beginnerRecommendation.id];
+
+  useEffect(() => {
+    track("quiz_step_viewed", { step: 0 });
+  }, []);
 
   function goToPath(pathId: string) {
     const p = paths[pathId];
     if (!p) return;
+    track("path_started", { path: pathId, source: "quiz" });
     setCurrentPath(pathId);
     router.push(`/threads/${p.firstThread}`);
   }
 
   function goToStep(n: number) {
+    track("quiz_step_viewed", { step: n });
     setFadeKey((k) => k + 1);
     setStep(n);
   }
@@ -124,6 +134,23 @@ export function HomepageQuiz({ paths }: QuizProps) {
     <section className="mb-16">
       <div key={fadeKey} className="animate-fade-in">
         <h2 className="mb-6 text-lg font-semibold">{stepLabels[step]}</h2>
+        {step === 0 && starterPath && (
+          <div className="border-foreground/10 bg-foreground/[0.03] mb-6 rounded-xl border p-5">
+            <span className="text-foreground/40 text-xs tracking-wider uppercase">
+              {beginnerRecommendation.label}
+            </span>
+            <h3 className="mt-1 text-lg font-semibold">{starterPath.title}</h3>
+            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+              {beginnerRecommendation.rationale}
+            </p>
+            <button
+              onClick={() => goToPath(beginnerRecommendation.id)}
+              className="bg-foreground text-background hover:bg-foreground/90 mt-4 inline-flex cursor-pointer items-center rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+            >
+              Start here
+            </button>
+          </div>
+        )}
         <div className="space-y-3">
           {currentCards.map((card) => (
             <button

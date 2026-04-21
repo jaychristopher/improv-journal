@@ -117,6 +117,12 @@ export interface PathFrontmatter {
   id: string;
   title: string;
   description: string;
+  learning_objectives: string[];
+  who_this_is_for: string[];
+  prerequisites: string[];
+  estimated_time: string;
+  practice_cadence: string;
+  completion_outcome: string;
   audience: Audience[];
   threads: string[]; // ordered sequence of thread IDs
   status: ContentStatus;

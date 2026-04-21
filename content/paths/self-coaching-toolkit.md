@@ -2,6 +2,18 @@
 id: self-coaching-toolkit
 title: "The Self-Coaching Toolkit"
 description: "A diagnostic vocabulary for intermediate improvisers who can feel what's wrong but can't name it. Stop saying 'I don't know, it just died' and start saying exactly what happened."
+learning_objectives:
+  - "Diagnose scene failure with a more precise vocabulary than 'it just died.'"
+  - "Recognize plateau patterns, collapse modes, and signal clarity problems in your own work."
+  - "Turn vague frustration into a targeted practice plan."
+who_this_is_for:
+  - "Improvisers with some class or show experience who know the basics but feel stuck."
+  - "Learners who want better self-review after rehearsals, classes, and shows."
+prerequisites:
+  - "Basic familiarity with yes-and, scene work, and common improv classroom language."
+estimated_time: "4 threads, about 2 hours plus note-taking after scenes"
+practice_cadence: "Read one thread, then use it to review your next rehearsal or class."
+completion_outcome: "You'll be able to name what broke in a scene and choose a better next practice step."
 audience: [intermediate]
 threads:
   - diagnosing-scene-failure

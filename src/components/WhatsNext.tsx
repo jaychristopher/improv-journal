@@ -1,3 +1,6 @@
+"use client";
+
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 
 type WhatsNextVariant =
@@ -43,6 +46,14 @@ export function WhatsNext(props: WhatsNextVariant) {
   return (
     <Link
       href={href}
+      onClick={() => {
+        if (props.variant === "bridge-funnel") {
+          track("bridge_cta_clicked", {
+            bridge: window.location.pathname.replace(/^\//, ""),
+            target: title,
+          });
+        }
+      }}
       className="border-foreground/10 bg-surface hover:border-foreground/30 group mt-8 block rounded-lg border p-6 transition-colors"
     >
       <span className="text-foreground/40 text-xs tracking-wider uppercase">{label}</span>

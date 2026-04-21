@@ -2,6 +2,18 @@
 id: advanced-game-and-character
 title: "Advanced Game and Character"
 description: "Beyond 'find the game' and 'make a character choice.' Advanced game mechanics — how games evolve, invert, and break. Advanced character — built from body, status, and game rather than biography and accent."
+learning_objectives:
+  - "Recognize higher-order game mechanics like inversion, transformation, and earned breakage."
+  - "Build character from body, status, and scenic pattern instead of biography alone."
+  - "Shift from deciding characters to discovering them in play."
+who_this_is_for:
+  - "Experienced performers who already know basic game and character language."
+  - "Improvisers pushing toward more distinctive, higher-level scene work."
+prerequisites:
+  - "Comfort with finding and heightening the game of the scene."
+estimated_time: "2 threads, about 60-75 minutes plus rehearsal focus"
+practice_cadence: "Read a thread, then bring one specific lens into your next rehearsal."
+completion_outcome: "You'll have a sharper framework for advanced pattern work and more discoverable, less forced characters."
 audience: [performer]
 threads:
   - the-game-beneath-the-game

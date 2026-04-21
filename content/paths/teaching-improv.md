@@ -2,6 +2,18 @@
 id: teaching-improv
 title: "Teaching Improv: From Performer to Pedagogue"
 description: "For good improvisers who've been asked to teach. You can DO it — now learn to explain WHY it works, structure a class, give feedback that changes behavior, and create safety in the room."
+learning_objectives:
+  - "Explain core improv principles in a way students can actually use."
+  - "Design classes with sequencing, safety, and specific feedback in mind."
+  - "Develop a teaching voice that is grounded without copying your own teachers."
+who_this_is_for:
+  - "Experienced improvisers who have started teaching or are about to."
+  - "Teachers who want stronger pedagogy, not just more exercises."
+prerequisites:
+  - "Solid personal improv experience and a real interest in helping others improve."
+estimated_time: "4 threads, about 2 hours plus classroom application"
+practice_cadence: "Read one thread, then apply it to your next class plan or teaching session."
+completion_outcome: "You'll have a sturdier framework for class design, explanation, feedback, and safety."
 audience: [teacher]
 threads:
   - the-system-underneath

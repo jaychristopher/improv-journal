@@ -11,6 +11,8 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html from "remark-html";
 
+import { type AudioContentType, getAudioAssetUrl, getRelativeAudioPath } from "./audio";
+import { getAudioDuration, loadAudioManifest } from "./audio-manifest";
 import type {
   AtomFrontmatter,
   AtomType,
@@ -209,7 +211,7 @@ export async function getBridgeBySlug(slug: string) {
 // ─── Shows (podcast) ────────────────────────────────────────────────────────
 
 export async function loadShows() {
-  return loadFiles<ShowFrontmatter>("shows");
+  return cachedLoad<ShowFrontmatter>("shows");
 }
 
 export async function getShowBySlug(slug: string) {
@@ -223,22 +225,6 @@ export interface Episode {
   audioUrl: string;
   description?: string;
   duration?: string; // formatted, e.g. "4:32"
-}
-
-/** Load duration cache from public/audio/durations.json */
-function loadDurations(): Record<string, { seconds: number; formatted: string }> {
-  const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
-  if (!fs.existsSync(durPath)) return {};
-  try {
-    return JSON.parse(fs.readFileSync(durPath, "utf-8"));
-  } catch {
-    return {};
-  }
-}
-
-function getDuration(audioUrl: string): string | undefined {
-  const durations = loadDurations();
-  return durations[audioUrl]?.formatted;
 }
 
 /** Resolve all episodes for a show season filter */
@@ -270,7 +256,7 @@ export async function getEpisodesForShow(
             href: `/${b.slug}`,
             audioUrl: audio,
             description: b.frontmatter.description,
-            duration: getDuration(audio),
+            duration: getAudioDuration(audio),
           });
         }
       }
@@ -283,7 +269,7 @@ export async function getEpisodesForShow(
               title: a.frontmatter.title,
               href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
               audioUrl: audio,
-              duration: getDuration(audio),
+              duration: getAudioDuration(audio),
             });
           }
         }
@@ -296,7 +282,7 @@ export async function getEpisodesForShow(
             title: t.frontmatter.title,
             href: `/threads/${t.frontmatter.id}`,
             audioUrl: audio,
-            duration: getDuration(audio),
+            duration: getAudioDuration(audio),
           });
         }
       }
@@ -308,7 +294,7 @@ export async function getEpisodesForShow(
             title: p.frontmatter.title,
             href: `/paths/${p.frontmatter.id}`,
             audioUrl: audio,
-            duration: getDuration(audio),
+            duration: getAudioDuration(audio),
           });
         }
       }
@@ -475,14 +461,14 @@ export async function getNextAtomInThread(
 
 /** Get audio duration for a thread (from durations.json) */
 export function getThreadDuration(threadId: string): string | null {
-  const durations = loadDurationsManifest();
+  const durations = loadAudioManifest();
   const dur = durations[`/audio/threads/${threadId}.mp3`] as { formatted?: string } | undefined;
   return dur?.formatted ?? null;
 }
 
 /** Get total path duration by summing thread durations */
 export function getPathTotalDuration(pathThreadIds: string[]): string | null {
-  const durations = loadDurationsManifest();
+  const durations = loadAudioManifest();
   let totalSeconds = 0;
   let found = false;
   for (const id of pathThreadIds) {
@@ -502,45 +488,19 @@ export function getPathTotalDuration(pathThreadIds: string[]): string | null {
 
 // ─── Audio ──────────────────────────────────────────────────────────────────
 
-/**
- * Check if an audio file exists for a given content type and slug.
- * Returns the public URL path if found, null otherwise.
- */
-/**
- * Audio CDN base URL. In production, MP3s are served from Cloudflare R2.
- * Locally, they're served from public/audio/ via Next.js dev server.
- */
-const AUDIO_CDN = process.env.NEXT_PUBLIC_AUDIO_CDN || "";
-
-/** Cache durations.json to know which audio files exist */
-let _durationsCache: Record<string, unknown> | null = null;
-function loadDurationsManifest(): Record<string, unknown> {
-  if (_durationsCache) return _durationsCache;
-  try {
-    const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
-    _durationsCache = JSON.parse(fs.readFileSync(durPath, "utf-8"));
-  } catch {
-    _durationsCache = {};
-  }
-  return _durationsCache!;
-}
-
-export function getAudioUrl(
-  type: "bridges" | "paths" | "threads" | "atoms",
-  slug: string,
-): string | null {
-  const relativePath = `/audio/${type}/${slug}.mp3`;
+export function getAudioUrl(type: AudioContentType, slug: string): string | null {
+  const relativePath = getRelativeAudioPath(type, slug);
 
   // Check durations manifest (works in both local and production)
-  const durations = loadDurationsManifest();
+  const durations = loadAudioManifest();
   if (durations[relativePath]) {
-    return `${AUDIO_CDN}${relativePath}`;
+    return getAudioAssetUrl(relativePath);
   }
 
   // Fallback: check local filesystem (dev only)
   const audioPath = path.join(process.cwd(), "public", "audio", type, `${slug}.mp3`);
   if (fs.existsSync(audioPath)) {
-    return `${AUDIO_CDN}${relativePath}`;
+    return getAudioAssetUrl(relativePath);
   }
 
   return null;

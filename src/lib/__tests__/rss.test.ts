@@ -18,7 +18,9 @@ describe("RSS feed data", () => {
       const seasons = await getEpisodesForShow(show.frontmatter.id);
       for (const season of seasons) {
         for (const ep of season.episodes) {
-          expect(ep.audioUrl, `${ep.title} missing audioUrl`).toMatch(/^\/audio\//);
+          expect(ep.audioUrl, `${ep.title} missing audioUrl`).toMatch(
+            /^(\/audio\/|https?:\/\/.+\/audio\/)/,
+          );
         }
       }
     }

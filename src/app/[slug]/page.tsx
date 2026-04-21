@@ -1,14 +1,13 @@
-import fs from "fs";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import path from "path";
 
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { WhatsNext } from "@/components/WhatsNext";
+import { getAudioDuration } from "@/lib/audio-manifest";
 import {
   getAtomBySlug,
   getAtomUrl,
@@ -245,18 +244,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
   const entryPath = fm.entry_path ? await getPathBySlug(fm.entry_path) : null;
   const entryPathFirstThread = fm.entry_path ? await getFirstThreadOfPath(fm.entry_path) : null;
   const audioUrl = getAudioUrl("bridges", slug);
-
-  // Get duration for structured data
-  let audioDuration: string | undefined;
-  if (audioUrl) {
-    try {
-      const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
-      const durations = JSON.parse(fs.readFileSync(durPath, "utf-8"));
-      audioDuration = durations[audioUrl]?.formatted;
-    } catch {
-      /* no duration cache */
-    }
-  }
+  const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">

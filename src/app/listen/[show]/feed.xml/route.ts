@@ -1,11 +1,9 @@
-import fs from "fs";
 import { NextResponse } from "next/server";
-import path from "path";
 
+import { toAbsoluteSiteUrl } from "@/lib/audio";
+import { getAudioFileSize, getAudioManifestEntry } from "@/lib/audio-manifest";
 import { getEpisodesForShow, getShowBySlug } from "@/lib/content";
-
-// Base URL — override via NEXT_PUBLIC_SITE_URL env var
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://improv.jaychristopher.com";
+import { SITE_URL } from "@/lib/seo";
 
 function escapeXml(str: string): string {
   return str
@@ -16,34 +14,7 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
-function loadDurations(): Record<string, { seconds: number; formatted: string }> {
-  const durPath = path.join(process.cwd(), "public", "audio", "durations.json");
-  if (!fs.existsSync(durPath)) return {};
-  try {
-    return JSON.parse(fs.readFileSync(durPath, "utf-8"));
-  } catch {
-    return {};
-  }
-}
-
-function getFileSize(
-  audioUrl: string,
-  durations: Record<string, { seconds: number; formatted: string; size?: number }>,
-): number {
-  // Try durations cache first (avoids fs access on audio files in serverless)
-  const dur = durations[audioUrl];
-  if (dur && "size" in dur) return dur.size as number;
-  // Fallback to filesystem (local dev only)
-  try {
-    const filePath = path.join(process.cwd(), "public", audioUrl);
-    return fs.statSync(filePath).size;
-  } catch {
-    return 0;
-  }
-}
-
 export async function generateStaticParams() {
-  // Import here to avoid circular dependency issues
   const { loadShows } = await import("@/lib/content");
   const shows = await loadShows();
   return shows.map((s) => ({ show: s.frontmatter.id }));
@@ -59,18 +30,13 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
 
   const fm = show.frontmatter;
   const seasons = await getEpisodesForShow(fm.id);
-  const durations = loadDurations();
-
-  // Flatten episodes across seasons
   const allEpisodes = seasons.flatMap((s) => s.episodes);
-
   const pubDate = new Date().toUTCString();
 
   const items = allEpisodes
     .map((ep, i) => {
-      const dur = durations[ep.audioUrl];
-      const fileSize = getFileSize(ep.audioUrl, durations);
-      const durationSecs = dur?.seconds ?? 0;
+      const entry = getAudioManifestEntry(ep.audioUrl);
+      const durationSecs = entry?.seconds ?? 0;
       const hours = Math.floor(durationSecs / 3600);
       const mins = Math.floor((durationSecs % 3600) / 60);
       const secs = durationSecs % 60;
@@ -78,10 +44,10 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
 
       return `    <item>
       <title>${escapeXml(ep.title)}</title>
-      <link>${SITE_URL}${ep.href}</link>
+      <link>${toAbsoluteSiteUrl(ep.href, SITE_URL)}</link>
       <guid isPermaLink="false">${showSlug}-${i}</guid>
       <description>${escapeXml(ep.description ?? ep.title)}</description>
-      <enclosure url="${SITE_URL}${ep.audioUrl}" length="${fileSize}" type="audio/mpeg" />
+      <enclosure url="${toAbsoluteSiteUrl(ep.audioUrl, SITE_URL)}" length="${getAudioFileSize(ep.audioUrl)}" type="audio/mpeg" />
       <itunes:duration>${itunesDuration}</itunes:duration>
       <itunes:episode>${i + 1}</itunes:episode>
       <pubDate>${pubDate}</pubDate>
@@ -96,8 +62,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${escapeXml(fm.title)}</title>
-    <link>${SITE_URL}/listen/${showSlug}</link>
-    <atom:link href="${SITE_URL}/listen/${showSlug}/feed.xml" rel="self" type="application/rss+xml" />
+    <link>${toAbsoluteSiteUrl(`/listen/${showSlug}`, SITE_URL)}</link>
+    <atom:link href="${toAbsoluteSiteUrl(`/listen/${showSlug}/feed.xml`, SITE_URL)}" rel="self" type="application/rss+xml" />
     <description>${escapeXml(fm.description)}</description>
     <language>en-us</language>
     <pubDate>${pubDate}</pubDate>

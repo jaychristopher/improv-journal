@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -36,7 +37,19 @@ export function JourneyProgressBar({
       if (isThreadVisited(t.id)) v.add(t.id);
     }
     queueMicrotask(() => setVisited(v));
-  }, [threads, currentThreadIndex]);
+
+    track("thread_viewed", {
+      thread: threads[currentThreadIndex]?.id ?? "",
+      path: pathId,
+      position: currentThreadIndex + 1,
+      total: threads.length,
+    });
+
+    // Check for path completion (all threads visited after marking current)
+    if (v.size === threads.length) {
+      track("path_completed", { path: pathId, threads_count: threads.length });
+    }
+  }, [threads, currentThreadIndex, pathId]);
 
   return (
     <div className="mb-8">
