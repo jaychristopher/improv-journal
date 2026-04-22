@@ -1,172 +1,104 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 import { setCurrentPath } from "@/lib/journey";
-import { getRecommendedPath } from "@/lib/path-recommendations";
 
-interface PathConfig {
-  title: string;
-  firstThread: string;
-}
-
-interface QuizProps {
-  paths: Record<string, PathConfig>;
-}
-
-interface QuizCard {
+interface SymptomRecommendation {
+  id: string;
   label: string;
-  desc: string;
-  action: () => void;
+  description: string;
+  diagnosis: string;
+  program: {
+    pathId: string;
+    title: string;
+    href: string;
+  };
+  guide: {
+    slug: string;
+    title: string;
+    href: string;
+  };
+  thread: {
+    id: string;
+    title: string;
+    href: string;
+  };
 }
 
-export function HomepageQuiz({ paths }: QuizProps) {
+interface HomepageQuizProps {
+  symptoms: SymptomRecommendation[];
+}
+
+export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
   const router = useRouter();
-  const [step, setStep] = useState(0);
-  const [fadeKey, setFadeKey] = useState(0);
-  const beginnerRecommendation = getRecommendedPath("beginner");
-  const starterPath = paths[beginnerRecommendation.id];
+  const [selectedSymptomId, setSelectedSymptomId] = useState<string | null>(null);
+  const selectedSymptom = useMemo(
+    () => symptoms.find((symptom) => symptom.id === selectedSymptomId) ?? null,
+    [selectedSymptomId, symptoms],
+  );
 
   useEffect(() => {
-    trackEvent("quiz_step_viewed", { step: 0 });
-  }, []);
+    trackEvent("symptom_quiz_viewed", { symptom_count: symptoms.length });
+  }, [symptoms.length]);
 
-  function goToPath(pathId: string) {
-    const p = paths[pathId];
-    if (!p) return;
-    trackEvent("path_started", { path: pathId, source: "quiz" });
-    setCurrentPath(pathId);
-    router.push(`/threads/${p.firstThread}`);
+  function selectSymptom(symptomId: string) {
+    trackEvent("symptom_selected", { symptom: symptomId });
+    setSelectedSymptomId(symptomId);
   }
 
-  function goToStep(n: number) {
-    trackEvent("quiz_step_viewed", { step: n });
-    setFadeKey((k) => k + 1);
-    setStep(n);
+  function openRecommendation(
+    symptomId: string,
+    targetType: "program" | "guide" | "thread",
+    href: string,
+    targetId: string,
+    pathId?: string,
+  ) {
+    trackEvent("symptom_route_clicked", {
+      symptom: symptomId,
+      target_type: targetType,
+      target: targetId,
+    });
+
+    if (pathId) {
+      setCurrentPath(pathId);
+    }
+
+    router.push(href);
   }
-
-  const steps: QuizCard[][] = [
-    // Step 0: "What brings you here?"
-    [
-      {
-        label: "I want to understand people better",
-        desc: "How connection works — on stage and off.",
-        action: () => goToStep(1),
-      },
-      {
-        label: "I lead a team and want it to work better",
-        desc: "Trust, collaboration, and group dynamics from improv ensembles.",
-        action: () => goToPath("improv-for-teams"),
-      },
-      {
-        label: "I do improv and want to get better",
-        desc: "Exercises, techniques, and the system underneath.",
-        action: () => goToStep(2),
-      },
-      {
-        label: "I teach or want to teach improv",
-        desc: "Curriculum, feedback, and creating safety.",
-        action: () => goToPath("teaching-improv"),
-      },
-    ],
-    // Step 1: "Understand people" sub-choices
-    [
-      {
-        label: "I want better conversations and relationships",
-        desc: "Improv principles applied to everyday life — no stage required.",
-        action: () => goToPath("improv-for-life"),
-      },
-      {
-        label: "I want my team to work better together",
-        desc: "Trust, collaboration, and group dynamics from improv ensembles.",
-        action: () => goToPath("improv-for-teams"),
-      },
-      {
-        label: "I have a specific problem right now",
-        desc: "Overthinking, stage fright, feedback, conflict, and more.",
-        action: () => router.push("/guides"),
-      },
-    ],
-    // Step 2: "I do improv" sub-choices
-    [
-      {
-        label: "Just starting out",
-        desc: "The essentials every improviser needs first.",
-        action: () => goToPath("beginner-foundations"),
-      },
-      {
-        label: "I know the basics but I\u2019m stuck",
-        desc: "Name what\u2019s going wrong and break through the plateau.",
-        action: () => goToPath("self-coaching-toolkit"),
-      },
-      {
-        label: "I want to push toward mastery",
-        desc: "Advanced game, form, and ensemble.",
-        action: () => goToStep(3),
-      },
-    ],
-    // Step 3: Mastery sub-choices
-    [
-      {
-        label: "Game & character",
-        desc: "Beyond \u2018find the game\u2019 — how games evolve, invert, and break.",
-        action: () => goToPath("advanced-game-and-character"),
-      },
-      {
-        label: "Show craft & formats",
-        desc: "Harold, montage, and how to shape a whole show.",
-        action: () => goToPath("mastering-the-form"),
-      },
-      {
-        label: "Ensemble & group mind",
-        desc: "Backline mastery, performance state, and playing as one.",
-        action: () => goToPath("the-art-of-ensemble"),
-      },
-    ],
-  ];
-
-  const currentCards = steps[step] ?? steps[0];
-  const stepLabels = [
-    "What brings you here?",
-    "What are you looking for?",
-    "Where are you in your journey?",
-    "What do you want to focus on?",
-  ];
 
   return (
     <section className="mb-16">
-      <div key={fadeKey} className="animate-fade-in">
-        <h2 className="mb-6 text-lg font-semibold">{stepLabels[step]}</h2>
-        {step === 0 && starterPath && (
-          <div className="border-foreground/10 bg-foreground/[0.03] mb-6 rounded-xl border p-5">
-            <span className="text-foreground/40 text-xs tracking-wider uppercase">
-              {beginnerRecommendation.label}
-            </span>
-            <h3 className="mt-1 text-lg font-semibold">{starterPath.title}</h3>
-            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-              {beginnerRecommendation.rationale}
-            </p>
+      <div className="animate-fade-in">
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">
+          Start from the problem
+        </span>
+        <h2 className="mt-1 text-2xl font-semibold">What keeps breaking right now?</h2>
+        <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+          Pick the closest symptom. You&apos;ll get one beginner program, one guide, and one lesson
+          to start with.
+        </p>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          {symptoms.map((symptom) => (
             <button
-              onClick={() => goToPath(beginnerRecommendation.id)}
-              className="bg-foreground text-background hover:bg-foreground/90 mt-4 inline-flex cursor-pointer items-center rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
-            >
-              Start here
-            </button>
-          </div>
-        )}
-        <div className="space-y-3">
-          {currentCards.map((card) => (
-            <button
-              key={card.label}
-              onClick={card.action}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 group block w-full cursor-pointer rounded-lg border p-5 text-left transition-colors"
+              key={symptom.id}
+              onClick={() => selectSymptom(symptom.id)}
+              className={[
+                "group block w-full cursor-pointer rounded-lg border p-5 text-left transition-colors",
+                selectedSymptomId === symptom.id
+                  ? "border-foreground/30 bg-foreground/[0.03]"
+                  : "border-foreground/10 bg-surface hover:border-foreground/30",
+              ].join(" ")}
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="font-semibold">{card.label}</span>
-                  <span className="text-foreground/50 mt-0.5 block text-sm">{card.desc}</span>
+                  <span className="font-semibold">{symptom.label}</span>
+                  <span className="text-foreground/50 mt-0.5 block text-sm">
+                    {symptom.description}
+                  </span>
                 </div>
                 <span className="text-foreground/30 shrink-0 transition-transform group-hover:translate-x-1">
                   &rarr;
@@ -175,13 +107,83 @@ export function HomepageQuiz({ paths }: QuizProps) {
             </button>
           ))}
         </div>
-        {step > 0 && (
-          <button
-            onClick={() => goToStep(step === 3 ? 2 : 0)}
-            className="text-foreground/30 hover:text-foreground/50 mt-4 cursor-pointer text-sm"
-          >
-            &larr; Back
-          </button>
+
+        {selectedSymptom && (
+          <div className="border-foreground/10 bg-foreground/[0.03] mt-6 rounded-xl border p-6">
+            <span className="text-foreground/40 text-xs tracking-wider uppercase">
+              Recommended route
+            </span>
+            <h3 className="mt-1 text-xl font-semibold">{selectedSymptom.label}</h3>
+            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+              {selectedSymptom.diagnosis}
+            </p>
+
+            <div className="mt-5 flex flex-col gap-3">
+              <button
+                onClick={() =>
+                  openRecommendation(
+                    selectedSymptom.id,
+                    "program",
+                    selectedSymptom.program.href,
+                    selectedSymptom.program.pathId,
+                    selectedSymptom.program.pathId,
+                  )
+                }
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-left text-sm font-semibold transition-colors"
+              >
+                <span>Start the beginner program: {selectedSymptom.program.title}</span>
+                <span>&rarr;</span>
+              </button>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                <button
+                  onClick={() =>
+                    openRecommendation(
+                      selectedSymptom.id,
+                      "guide",
+                      selectedSymptom.guide.href,
+                      selectedSymptom.guide.slug,
+                    )
+                  }
+                  className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 text-left transition-colors"
+                >
+                  <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                    Read this guide
+                  </span>
+                  <span className="mt-1 block text-sm font-semibold">
+                    {selectedSymptom.guide.title}
+                  </span>
+                </button>
+
+                <button
+                  onClick={() =>
+                    openRecommendation(
+                      selectedSymptom.id,
+                      "thread",
+                      selectedSymptom.thread.href,
+                      selectedSymptom.thread.id,
+                      selectedSymptom.program.pathId,
+                    )
+                  }
+                  className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 text-left transition-colors"
+                >
+                  <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                    Jump to the lesson
+                  </span>
+                  <span className="mt-1 block text-sm font-semibold">
+                    {selectedSymptom.thread.title}
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <button
+              onClick={() => setSelectedSymptomId(null)}
+              className="text-foreground/30 hover:text-foreground/50 mt-4 cursor-pointer text-sm"
+            >
+              Choose a different problem
+            </button>
+          </div>
         )}
       </div>
     </section>

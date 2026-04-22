@@ -63,4 +63,18 @@ describe("path course scaffolding", () => {
     expect(starter, `recommended beginner path ${recommended.id} missing`).toBeDefined();
     expect(starter?.frontmatter.audience).toContain("beginner");
   });
+
+  it("the recommended beginner path is configured as a finishable program", async () => {
+    const recommended = getRecommendedPath("beginner");
+    const paths = await loadPaths();
+    const starter = paths.find((path) => path.frontmatter.id === recommended.id);
+
+    expect(starter, `recommended beginner path ${recommended.id} missing`).toBeDefined();
+
+    const frontmatter = starter!.frontmatter;
+    expect(frontmatter.program_type).toBe("course");
+    expect(frontmatter.program_length_days).toBeGreaterThanOrEqual(7);
+    expect(frontmatter.default_cadence).toBe("daily");
+    expect(frontmatter.core_habits?.length).toBeGreaterThanOrEqual(3);
+  });
 });

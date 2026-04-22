@@ -2,6 +2,8 @@
 
 Incremental product and content-system roadmap for turning the site into a stronger beginner teaching tool without introducing a backend or heavy operational overhead.
 
+See also: [Learning Product Roadmap](./learning-product-roadmap.md) for the higher-level prioritization, data model direction, file-level change map, and next implementation sprint.
+
 ## Sprint 1: Course Shell for Beginners
 
 ### Issue: Extend path frontmatter with course scaffolding

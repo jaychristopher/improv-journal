@@ -8,13 +8,17 @@ target_keywords:
   - { keyword: "fear of public speaking", volume: 3300 }
 entry_atoms: [performance-state, fear-of-failure, be-brave, presence, warm-up]
 entry_path: the-art-of-ensemble
+primary_problem: "fear is making you hesitate instead of making the first move"
+primary_cta_type: thread
+primary_cta_target: presence-and-commitment
+secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
 ---
 
 # Stage Fright Is Not Your Enemy
 
-Your heart is pounding. Your palms are sweating. Your stomach is doing something it shouldn't. Your brain is screaming: *They're all looking at you. You're going to fail. Get out.*
+Your heart is pounding. Your palms are sweating. Your stomach is doing something it shouldn't. Your brain is screaming: _They're all looking at you. You're going to fail. Get out._
 
 Every article about stage fright treats this as a problem to solve. Deep breathing. Visualization. Beta blockers. The implicit message: something is wrong with you, and here's how to fix it.
 
@@ -28,9 +32,9 @@ The body is doing the same thing in both cases: activating the sympathetic nervo
 
 The difference between stage fright and stage readiness isn't in the body. It's in a single cognitive variable:
 
-**Stage fright** = self-focused attention. *"They're watching me. I might fail. What if I forget my lines?"*
+**Stage fright** = self-focused attention. _"They're watching me. I might fail. What if I forget my lines?"_
 
-**Stage readiness** = task-focused attention. *"Something is about to happen. I get to discover it. What's in front of me?"*
+**Stage readiness** = task-focused attention. _"Something is about to happen. I get to discover it. What's in front of me?"_
 
 Same physiology. Different frame. Radically different outcomes.
 
@@ -40,7 +44,7 @@ In 2014, Harvard researcher Alison Wood Brooks ran a series of experiments that 
 
 The results: **people who said "I am excited" performed significantly better** — across all three tasks. They sang more accurately, spoke more persuasively, and solved more math problems.
 
-The mechanism: telling yourself to calm down fights the arousal. Your body is activated, and you're trying to deactivate it — a conflict that consumes cognitive resources. Reframing the arousal as excitement *channels* it. The activation stays, but it's directed outward instead of inward.
+The mechanism: telling yourself to calm down fights the arousal. Your body is activated, and you're trying to deactivate it — a conflict that consumes cognitive resources. Reframing the arousal as excitement _channels_ it. The activation stays, but it's directed outward instead of inward.
 
 Brooks's finding maps to what Yuri Hanin's research on athletic performance (the Individual Zone of Optimal Functioning model) has shown for decades: there is no single "ideal" arousal level. Some people perform best at high activation. Others at low. The goal isn't to reach some universal calm — it's to find YOUR zone and learn to recognize when you're in it.
 
@@ -50,30 +54,35 @@ Improv performers face this exact problem every night — walking on stage with 
 
 Close's insight: **the moments performers want to avoid — the uncomfortable, the strange, the failing — are exactly where the interesting material lives.** Fear is not a warning to retreat. It's directional information pointing toward the creative edge. The scary choice is usually the right choice — because it's the honest one.
 
-Susan Messing, one of Chicago's most respected improv performers and teachers, puts the principle in starker terms: *"If you're not having fun, you're the asshole."* This sounds flip. It isn't. Her point: if a scene is dying and you check out or get paralyzed, you've abandoned your partner. The instruction is to find genuine engagement *even in the wreckage* — because your visible enjoyment of the difficulty gives the audience permission to enjoy it too.
+Susan Messing, one of Chicago's most respected improv performers and teachers, puts the principle in starker terms: _"If you're not having fun, you're the asshole."_ This sounds flip. It isn't. Her point: if a scene is dying and you check out or get paralyzed, you've abandoned your partner. The instruction is to find genuine engagement _even in the wreckage_ — because your visible enjoyment of the difficulty gives the audience permission to enjoy it too.
 
-Viola Spolin, who invented modern improv training, addressed stage fright structurally rather than psychologically. Her concept of **Point of Concentration** — a specific, shared focus for each exercise — works as an attention anchor. You cannot simultaneously monitor yourself *and* be genuinely absorbed in a task. The absorption displaces the self-monitoring. The exercises don't fight the fear. They redirect the bandwidth.
+Viola Spolin, who invented modern improv training, addressed stage fright structurally rather than psychologically. Her concept of **Point of Concentration** — a specific, shared focus for each exercise — works as an attention anchor. You cannot simultaneously monitor yourself _and_ be genuinely absorbed in a task. The absorption displaces the self-monitoring. The exercises don't fight the fear. They redirect the bandwidth.
 
 ## A Five-Minute Protocol
 
 This isn't a cure for clinical performance anxiety. This is what experienced performers actually do in the five minutes before they go on.
 
 ### 1. The Reappraisal (30 seconds)
+
 Say out loud: "I am excited." Not "I am calm." Your body is already activated — don't fight it, relabel it. This is the single most evidence-backed technique in the performance anxiety literature (Brooks, 2014).
 
 ### 2. The Discharge (2 minutes)
+
 Move your body. Shake out your hands. Jump up and down. Do vocal exercises. The adrenaline surplus needs a physical outlet. Improv ensembles do this through group warm-up games — Zip Zap Zop, Sound Ball, physical shakeouts. These aren't silly icebreakers. They're neurological transition protocols: discharging excess arousal while raising baseline energy and shifting attention from internal to external.
 
 ### 3. The Anchor (1 minute)
+
 Pick one sensory focus for the performance: the sound of the room, the feeling of your feet on the floor, your partner's face, the first object you'll interact with. When self-monitoring starts — and it will — return to that anchor. This is Spolin's Point of Concentration in its simplest form. You're not fighting the fear. You're giving your attention somewhere specific to go.
 
 ### 4. The Connection (1 minute)
-Make eye contact with someone — a fellow performer, a friendly face in the audience, even your own reflection. The shift from *"I am alone and they are watching"* to *"I am connected and we are here together"* is the transition from stage fright to stage readiness. Improv's mirroring exercise trains this at the deepest level: two people, eye contact, matching movement, the self-monitor goes quiet because the connection takes all the bandwidth.
+
+Make eye contact with someone — a fellow performer, a friendly face in the audience, even your own reflection. The shift from _"I am alone and they are watching"_ to _"I am connected and we are here together"_ is the transition from stage fright to stage readiness. Improv's mirroring exercise trains this at the deepest level: two people, eye contact, matching movement, the self-monitor goes quiet because the connection takes all the bandwidth.
 
 ### 5. The First Move
+
 Don't wait until you feel ready. You won't. Go.
 
-Del Close: *"Follow the fear."* Keith Johnstone: the student hesitates not because they lack an idea, but to conceal the "inappropriate" ones that arrive uninvited. The hesitation IS the stage fright. The first move — any move — breaks it.
+Del Close: _"Follow the fear."_ Keith Johnstone: the student hesitates not because they lack an idea, but to conceal the "inappropriate" ones that arrive uninvited. The hesitation IS the stage fright. The first move — any move — breaks it.
 
 ## The Honest Caveat
 
@@ -95,6 +104,6 @@ Trust the activation. Redirect the attention. Make the first move.
 
 ---
 
-*For the full performance framework: [The Performer's Edge](/threads/the-performers-edge). For the exercises: [Group Mind Cultivation](/atoms/group-mind-cultivation). For the complete path: [The Art of Ensemble](/paths/the-art-of-ensemble).*
+_For the full performance framework: [The Performer's Edge](/threads/the-performers-edge). For the exercises: [Group Mind Cultivation](/atoms/group-mind-cultivation). For the complete path: [The Art of Ensemble](/paths/the-art-of-ensemble)._
 
-**Sources cited:** Brooks (2014), *Journal of Experimental Psychology*. Limb & Braun (2008), *PLoS ONE*. Hanin (2000), *Emotions in Sport*. Csikszentmihalyi (1990), *Flow*. Spolin (1963), *Improvisation for the Theater*. Johnstone (1979), *Impro*. Close, Halpern, Johnson (1994), *Truth in Comedy*.
+**Sources cited:** Brooks (2014), _Journal of Experimental Psychology_. Limb & Braun (2008), _PLoS ONE_. Hanin (2000), _Emotions in Sport_. Csikszentmihalyi (1990), _Flow_. Spolin (1963), _Improvisation for the Theater_. Johnstone (1979), _Impro_. Close, Halpern, Johnson (1994), _Truth in Comedy_.

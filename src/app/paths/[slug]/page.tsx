@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CourseJsonLd } from "@/components/CourseJsonLd";
-import { LevelRedirect } from "@/components/LevelRedirect";
 import { SyllabusCheckmark, SyllabusProgress } from "@/components/SyllabusProgress";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
@@ -17,10 +16,11 @@ import {
   loadPaths,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
+import { extractDescription } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const paths = await loadPaths();
-  return paths.map((p) => ({ slug: p.frontmatter.id }));
+  return paths.map((path) => ({ slug: path.frontmatter.id }));
 }
 
 export async function generateMetadata({
@@ -31,6 +31,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const pathData = await getPathBySlug(slug);
   if (!pathData) return {};
+
   return {
     title: pathData.frontmatter.title,
     description: pathData.frontmatter.description,
@@ -52,29 +53,41 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
   const fm = pathData.frontmatter;
   const audioUrl = getAudioUrl("paths", slug);
   const threadIds = fm.threads ?? [];
-
   const threads = await Promise.all(
     threadIds.map(async (id) => {
       const thread = await getThreadBySlug(id);
-      const duration = getThreadDuration(id);
-      const desc = thread
-        ? (thread.content
-            .replace(/^---[\s\S]*?---\n*/m, "")
-            .replace(/^#{1,6}\s+.*$/gm, "")
-            .replace(/\*\*[^*]+\*\*/g, "")
-            .trim()
-            .split(/\n\n/)[0]
-            ?.substring(0, 200) ?? "")
-        : "";
+      if (!thread) {
+        return {
+          id,
+          title: id,
+          desc: "",
+          duration: null,
+          practiceReps: undefined,
+          successSignal: undefined,
+          transferPrompt: undefined,
+          found: false,
+        };
+      }
 
-      return thread
-        ? { id, title: thread.frontmatter.title, desc, duration, found: true }
-        : { id, title: id, desc: "", duration: null, found: false };
+      return {
+        id,
+        title: thread.frontmatter.title,
+        desc: extractDescription(thread.content).slice(0, 200),
+        duration: getThreadDuration(id),
+        practiceReps: thread.frontmatter.practice_reps,
+        successSignal: thread.frontmatter.success_signal,
+        transferPrompt: thread.frontmatter.transfer_prompt,
+        found: true,
+      };
     }),
   );
 
   const totalDuration = getPathTotalDuration(threadIds);
   const firstAudience = fm.audience?.[0] ?? "beginner";
+  const firstThread = threads.find((thread) => thread.found);
+  const isProgram = fm.program_type === "course";
+  const programDays = fm.program_length_days;
+  const revisitDays = programDays ? Math.max(programDays - threads.length, 0) : 0;
   const nextPath = getNextPath(slug);
 
   return (
@@ -97,7 +110,11 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
 
       <div className="mb-10 grid gap-6 lg:grid-cols-[minmax(0,1.35fr)_320px]">
         <header className="border-foreground/10 bg-surface rounded-xl border p-6">
-          <span className="text-foreground/40 text-xs tracking-wider uppercase">course path</span>
+          <span className="text-foreground/40 text-xs tracking-wider uppercase">
+            {isProgram && programDays
+              ? `${programDays}-day ${firstAudience} program`
+              : "course path"}
+          </span>
           <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
           <p className="text-foreground/60 mt-3">{fm.description}</p>
 
@@ -110,10 +127,33 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
                 {audience}
               </span>
             ))}
+            {programDays && <span className="text-foreground/30 text-xs">{programDays} days</span>}
+            {fm.default_cadence && (
+              <span className="text-foreground/30 text-xs">{fm.default_cadence}</span>
+            )}
             <span className="text-foreground/30 text-xs">
-              {threads.length} threads{totalDuration ? ` · ${totalDuration}` : ""}
+              {threads.length} lessons{totalDuration ? ` | ${totalDuration}` : ""}
             </span>
           </div>
+
+          {firstThread && (
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href={`/threads/${firstThread.id}`}
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+              >
+                {isProgram ? "Start day 1" : "Start this path"}
+              </Link>
+              {audioUrl && (
+                <a
+                  href="#path-listen"
+                  className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+                >
+                  Listen to the overview
+                </a>
+              )}
+            </div>
+          )}
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <section>
@@ -156,11 +196,26 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
             </ul>
           </section>
 
-          <LevelRedirect level={firstAudience} context="path" />
+          {fm.core_habits && fm.core_habits.length > 0 && (
+            <section className="mt-6">
+              <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                What you&apos;ll repeat every day
+              </h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5">
+                {fm.core_habits.map((habit) => (
+                  <li key={habit} className="text-foreground/70 text-sm">
+                    {habit}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </header>
 
         <aside className="border-foreground/10 bg-foreground/[0.03] rounded-xl border p-6">
-          <h2 className="text-lg font-semibold">How to use this path</h2>
+          <h2 className="text-lg font-semibold">
+            {isProgram ? "How the program works" : "How to use this path"}
+          </h2>
           <dl className="mt-4 space-y-4 text-sm">
             <div>
               <dt className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
@@ -182,12 +237,35 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
             </div>
           </dl>
 
+          {isProgram && (
+            <div className="mt-6 space-y-3">
+              <div className="border-foreground/10 bg-surface rounded-lg border p-3">
+                <p className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  Daily loop
+                </p>
+                <p className="text-foreground/70 mt-2 text-sm">
+                  Read the lesson, listen once, run the rep, then use it in one real interaction the
+                  same day.
+                </p>
+              </div>
+              <div className="border-foreground/10 bg-surface rounded-lg border p-3">
+                <p className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  What matters
+                </p>
+                <p className="text-foreground/70 mt-2 text-sm">
+                  Finishable beats exhaustive. Move in order, then repeat the same core lessons
+                  until the ideas start to feel automatic.
+                </p>
+              </div>
+            </div>
+          )}
+
           <div className="mt-6">
             <SyllabusProgress pathId={slug} threadIds={threadIds} />
           </div>
 
           {audioUrl && (
-            <div className="mt-6">
+            <div id="path-listen" className="mt-6">
               <p className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
                 Listen
               </p>
@@ -197,18 +275,28 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
         </aside>
       </div>
 
-      <section>
-        <div className="mb-4 flex items-center justify-between">
-          <div>
-            <h2 className="text-lg font-semibold">Course syllabus</h2>
-            <p className="text-foreground/50 mt-1 text-sm">
-              Move in order. Each thread builds on the one before it.
-            </p>
-          </div>
+      <section id="program-map">
+        <div className="mb-4">
+          <h2 className="text-lg font-semibold">{isProgram ? "Program map" : "Course syllabus"}</h2>
+          <p className="text-foreground/50 mt-1 text-sm">
+            {isProgram
+              ? "Move in order. The first pass teaches the ideas. The rest of the program is where the reps and transfer start to make them stick."
+              : "Move in order. Each thread builds on the one before it."}
+          </p>
         </div>
 
+        {revisitDays > 0 && (
+          <div className="border-foreground/10 bg-foreground/[0.03] mb-4 rounded-lg border p-4">
+            <p className="text-foreground/70 text-sm leading-relaxed">
+              This program is built around {threads.length} core lessons across {programDays} days.
+              After the first pass, spend the remaining {revisitDays} days repeating the drills,
+              replaying the audio, and using the ideas in real conversations or scenes.
+            </p>
+          </div>
+        )}
+
         <div className="space-y-4">
-          {threads.map((thread, i) => (
+          {threads.map((thread, index) => (
             <Link
               key={thread.id}
               href={`/threads/${thread.id}`}
@@ -217,12 +305,49 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-foreground/30 text-xs font-medium">{i + 1}</span>
+                    <span className="text-foreground/30 text-xs font-medium">
+                      {isProgram ? `Day ${index + 1}` : index + 1}
+                    </span>
                     <SyllabusCheckmark threadId={thread.id} />
                   </div>
                   <h3 className="mt-0.5 font-semibold group-hover:underline">{thread.title}</h3>
                   {thread.desc && (
                     <p className="text-foreground/50 mt-1 line-clamp-2 text-sm">{thread.desc}</p>
+                  )}
+
+                  {(thread.practiceReps || thread.successSignal || thread.transferPrompt) && (
+                    <div className="mt-3 grid gap-3 text-xs sm:grid-cols-3">
+                      {thread.practiceReps && (
+                        <div>
+                          <p className="text-foreground/40 font-semibold tracking-wider uppercase">
+                            Rep target
+                          </p>
+                          <p className="text-foreground/60 mt-1 leading-relaxed">
+                            {thread.practiceReps}
+                          </p>
+                        </div>
+                      )}
+                      {thread.successSignal && (
+                        <div>
+                          <p className="text-foreground/40 font-semibold tracking-wider uppercase">
+                            Success signal
+                          </p>
+                          <p className="text-foreground/60 mt-1 leading-relaxed">
+                            {thread.successSignal}
+                          </p>
+                        </div>
+                      )}
+                      {thread.transferPrompt && (
+                        <div>
+                          <p className="text-foreground/40 font-semibold tracking-wider uppercase">
+                            Transfer
+                          </p>
+                          <p className="text-foreground/60 mt-1 leading-relaxed">
+                            {thread.transferPrompt}
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   )}
                 </div>
                 <div className="flex shrink-0 items-center gap-3">

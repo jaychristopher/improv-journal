@@ -5,8 +5,13 @@ target_keywords:
   - { keyword: "active listening skills", volume: 7500 }
   - { keyword: "how to be a better listener", volume: 1100 }
   - { keyword: "how to be more present", volume: 500 }
-entry_atoms: [active-listening, offers, continuous-signaling, cognitive-bandwidth, internal-computation]
+entry_atoms:
+  [active-listening, offers, continuous-signaling, cognitive-bandwidth, internal-computation]
 entry_path: physics-of-connection
+primary_problem: "you stop receiving because you are composing your reply"
+primary_cta_type: thread
+primary_cta_target: building-on-offers
+secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
 ---
@@ -39,7 +44,7 @@ When an improviser stops receiving and starts planning, three things happen in r
 
 The scene dies. Not from a bad idea. From a bandwidth allocation error.
 
-This is why improv training develops listening skills that corporate "active listening" workshops don't. Improv doesn't teach you to *perform* listening. It puts you in situations where **fake listening is structurally impossible** and real listening is the only available strategy.
+This is why improv training develops listening skills that corporate "active listening" workshops don't. Improv doesn't teach you to _perform_ listening. It puts you in situations where **fake listening is structurally impossible** and real listening is the only available strategy.
 
 ## What Real Listening Looks Like
 
@@ -49,21 +54,24 @@ Real listening is a **bandwidth allocation decision**: directing your processing
 
 **You receive more than words.** Everything your partner does is a signal — word choices, tone, pace, pauses, what they emphasize, what they skip over, their body language. Improv calls these **offers** — and every one is information. When your bandwidth is consumed by response planning, you catch maybe 30% of the offers. When your bandwidth is allocated to reception, you catch 80%+.
 
-**You notice when you leave.** The most valuable skill isn't "listen harder." It's noticing the exact moment you *stop* listening and start composing. That moment — the one where your attention shifts from external to internal — is the gap where real listening dies. Just noticing it, consistently, begins to change the pattern.
+**You notice when you leave.** The most valuable skill isn't "listen harder." It's noticing the exact moment you _stop_ listening and start composing. That moment — the one where your attention shifts from external to internal — is the gap where real listening dies. Just noticing it, consistently, begins to change the pattern.
 
 ## Three Exercises That Train Real Listening
 
 ### 1. Last Word Response
-In a conversation, your first word must be the last word your partner said. This makes it impossible to pre-plan a response because you don't know the constraint until the final syllable. It surfaces the planning habit with brutal clarity — you can *feel* the moment you stopped listening to compose.
 
-*Try this:* In your next conversation, silently practice this. Don't say it out loud — just notice whether you could. When you can't, you know exactly when you left.
+In a conversation, your first word must be the last word your partner said. This makes it impossible to pre-plan a response because you don't know the constraint until the final syllable. It surfaces the planning habit with brutal clarity — you can _feel_ the moment you stopped listening to compose.
+
+_Try this:_ In your next conversation, silently practice this. Don't say it out loud — just notice whether you could. When you can't, you know exactly when you left.
 
 ### 2. Mirroring
+
 Two people face each other. One moves slowly; the other mirrors as precisely as possible. The task saturates your visual processing channel with external input. There's no bandwidth left for internal planning. The peak state — where neither person leads — is what full-bandwidth listening feels like in the body.
 
-*Try this:* With a partner, do 2 minutes of slow hand mirroring in silence. Notice the qualitative difference between "I'm watching and deciding what to do" and "I'm just following." That second state is real listening.
+_Try this:_ With a partner, do 2 minutes of slow hand mirroring in silence. Notice the qualitative difference between "I'm watching and deciding what to do" and "I'm just following." That second state is real listening.
 
 ### 3. The Pause Practice
+
 After someone finishes speaking, wait one full second before responding. Not to be polite — to notice what arises in the gap. If your response was pre-composed, it'll feel like a relief to deliver it. If your response forms from what you just heard, it'll feel slightly surprising — you didn't know you were going to say that.
 
 The surprise is the signal that you actually listened.
@@ -78,6 +86,6 @@ Improvisers have a principle for this: **let yourself be changed.** It's not abo
 
 ---
 
-*For the full framework: [Building on Offers](/threads/building-on-offers). For the exercises: [Quieting the Planning Mind](/threads/quieting-the-planning-mind). For the complete path: [Physics of Connection](/paths/physics-of-connection).*
+_For the full framework: [Building on Offers](/threads/building-on-offers). For the exercises: [Quieting the Planning Mind](/threads/quieting-the-planning-mind). For the complete path: [Physics of Connection](/paths/physics-of-connection)._
 
-**Sources cited:** Kahneman (1973), *Attention and Effort*. Sweller (1988), *Cognitive Science*. Cherry (1953), *Journal of the Acoustical Society of America*. Wickens (2002), *Theoretical Issues in Ergonomic Science*. Spolin (1963), *Improvisation for the Theater*.
+**Sources cited:** Kahneman (1973), _Attention and Effort_. Sweller (1988), _Cognitive Science_. Cherry (1953), _Journal of the Acoustical Society of America_. Wickens (2002), _Theoretical Issues in Ergonomic Science_. Spolin (1963), _Improvisation for the Theater_.

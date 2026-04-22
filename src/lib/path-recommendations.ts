@@ -11,9 +11,9 @@ const RECOMMENDED_PATHS: Record<Audience, PathRecommendation> = {
   beginner: {
     id: "beginner-foundations",
     title: "Foundations: Your First Steps in Improv",
-    label: "Recommended start",
+    label: "Recommended beginner program",
     rationale:
-      "Start here if you are new to improv. It builds the habits every other path assumes: receiving offers, building on them, and staying present enough to act before you overthink.",
+      "Start here if you want one clear beginner sequence. It turns receiving offers, building on them, and staying present into a short daily loop you can actually finish.",
   },
   intermediate: {
     id: "self-coaching-toolkit",

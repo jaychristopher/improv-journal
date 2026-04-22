@@ -6,6 +6,10 @@ target_keywords:
   - { keyword: "how to be funnier", volume: 0 }
 entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness]
 entry_path: systems-of-improv
+primary_problem: "trying to be clever is making the moment feel forced"
+primary_cta_type: path
+primary_cta_target: beginner-foundations
+secondary_cta_target: building-on-offers
 status: draft
 created: "2026-04-05"
 ---
@@ -20,11 +24,11 @@ For 50 years, improv comedy has been running nightly experiments in what makes p
 
 ## The First Rule of Being Funny: Stop Trying to Be Funny
 
-Del Close, who invented longform improv comedy and trained Tina Fey, Amy Poehler, Bill Murray, and hundreds of other comedians, put it directly: *"One of the biggest mistakes an improviser can make is attempting to be funny."* His foundational text, *Truth in Comedy* (1994), makes the case: *"The truth is funny. Honest discovery, observation, and reaction is better than contrived invention."*
+Del Close, who invented longform improv comedy and trained Tina Fey, Amy Poehler, Bill Murray, and hundreds of other comedians, put it directly: _"One of the biggest mistakes an improviser can make is attempting to be funny."_ His foundational text, _Truth in Comedy_ (1994), makes the case: _"The truth is funny. Honest discovery, observation, and reaction is better than contrived invention."_
 
 This sounds like a paradox. It isn't. It's a bandwidth problem.
 
-When you're trying to be funny, your brain is running a search process: *What's the clever thing? What's the unexpected angle? How can I get the laugh?* That search consumes the processing bandwidth you need for the thing that actually produces humor: **paying attention to what's happening and responding honestly.**
+When you're trying to be funny, your brain is running a search process: _What's the clever thing? What's the unexpected angle? How can I get the laugh?_ That search consumes the processing bandwidth you need for the thing that actually produces humor: **paying attention to what's happening and responding honestly.**
 
 Charles Limb's fMRI research on jazz improvisation (2008) showed the neural mechanism: during spontaneous creation, the brain's self-monitoring system (dorsolateral prefrontal cortex) goes quiet while the self-expression system (medial prefrontal cortex) activates. The internal censor turns off so the creative response can run at full bandwidth.
 
@@ -36,15 +40,15 @@ Trying to be funny is the censor on overdrive. Genuine humor emerges when it qui
 
 The funniest moment in a conversation is almost never the prepared joke. It's the moment someone says something **unexpectedly true** — a specific detail, an honest reaction, an observation so precise it catches everyone off guard.
 
-*"I don't hate my job. I hate that my job requires me to pretend I read the emails."*
+_"I don't hate my job. I hate that my job requires me to pretend I read the emails."_
 
-That's not a joke structure. It's a specific truth delivered without hedging. The humor comes from recognition — the audience (or conversation partner) thinks *yes, that's exactly right,* and the surprise of hearing it said out loud produces the laugh.
+That's not a joke structure. It's a specific truth delivered without hedging. The humor comes from recognition — the audience (or conversation partner) thinks _yes, that's exactly right,_ and the surprise of hearing it said out loud produces the laugh.
 
-Improv calls this **the obvious choice** — and Keith Johnstone documented the paradox: *"The more obvious an improviser is, the more original he appears."* Your first instinct is connected to the real situation. Your second thought is connected to your ego trying to be impressive. The first is specific and alive. The second is generic and dead.
+Improv calls this **the obvious choice** — and Keith Johnstone documented the paradox: _"The more obvious an improviser is, the more original he appears."_ Your first instinct is connected to the real situation. Your second thought is connected to your ego trying to be impressive. The first is specific and alive. The second is generic and dead.
 
 ### 2. Specificity — Not Exaggeration
 
-"My boss is annoying" isn't funny. "My boss starts every Zoom call by saying 'Can everyone see my screen?' and then waits 30 seconds for confirmation from each individual person" is funny — because it's *specific.* The detail creates the picture. The picture creates the recognition.
+"My boss is annoying" isn't funny. "My boss starts every Zoom call by saying 'Can everyone see my screen?' and then waits 30 seconds for confirmation from each individual person" is funny — because it's _specific._ The detail creates the picture. The picture creates the recognition.
 
 Improv teachers call this the difference between **playing the idea** and **playing the reality.** The idea ("my boss is annoying") is abstract and leads to generic ranting. The reality (the exact, specific, observable behavior) is concrete and leads to comedy.
 
@@ -52,7 +56,7 @@ Every "how to be funny" article tells you to exaggerate. The better instruction:
 
 ### 3. Pattern Recognition — Not Joke Construction
 
-The Upright Citizens Brigade's core framework — the "game of the scene" — is essentially: notice the first unusual thing, then follow it. *If this is true, what else is true?*
+The Upright Citizens Brigade's core framework — the "game of the scene" — is essentially: notice the first unusual thing, then follow it. _If this is true, what else is true?_
 
 Your friend always apologizes for things that aren't their fault. That's the pattern. If they apologize for the weather, that's funny. If they apologize for being born, that's funnier. You didn't construct a joke — you recognized a pattern and followed it.
 
@@ -82,6 +86,6 @@ Also: some people are funnier than others, and that's partly temperament. But "n
 
 ---
 
-*For the full framework on pattern recognition in scenes: [Game of the Scene](/atoms/game-of-the-scene). For why the obvious choice is the best choice: [The Obvious Choice](/atoms/obvious-choice). For the complete beginner's path: [Systems of Improv](/paths/systems-of-improv).*
+_For the full framework on pattern recognition in scenes: [Game of the Scene](/atoms/game-of-the-scene). For why the obvious choice is the best choice: [The Obvious Choice](/atoms/obvious-choice). For the complete beginner's path: [Systems of Improv](/paths/systems-of-improv)._
 
-**Sources cited:** Close, Halpern, Johnson (1994), *Truth in Comedy*. Johnstone (1979), *Impro*. Besser, Roberts, Walsh (2013), *UCB Comedy Improvisation Manual*. Limb & Braun (2008), *PLoS ONE*. Hurley, Dennett, Adams (2011), *Inside Jokes*, MIT Press.
+**Sources cited:** Close, Halpern, Johnson (1994), _Truth in Comedy_. Johnstone (1979), _Impro_. Besser, Roberts, Walsh (2013), _UCB Comedy Improvisation Manual_. Limb & Braun (2008), _PLoS ONE_. Hurley, Dennett, Adams (2011), _Inside Jokes_, MIT Press.

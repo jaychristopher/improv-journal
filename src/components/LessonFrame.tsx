@@ -12,6 +12,9 @@ interface LessonFrameProps {
   keyTakeaway?: string;
   commonMistake?: string;
   practicePrompt?: string;
+  practiceReps?: string;
+  successSignal?: string;
+  transferPrompt?: string;
   practiceLinks?: LessonPracticeLink[];
   reflectionPrompt?: string;
   pathTitle?: string;
@@ -25,6 +28,9 @@ export function LessonFrame({
   keyTakeaway,
   commonMistake,
   practicePrompt,
+  practiceReps,
+  successSignal,
+  transferPrompt,
   practiceLinks = [],
   reflectionPrompt,
   pathTitle,
@@ -35,7 +41,13 @@ export function LessonFrame({
   const hasIntro = Boolean(pathTitle || lessonGoal || keyTakeaway);
   const hasListen = Boolean(listenContent);
   const hasOutro = Boolean(
-    commonMistake || practicePrompt || reflectionPrompt || practiceLinks.length,
+    commonMistake ||
+    practicePrompt ||
+    practiceReps ||
+    successSignal ||
+    transferPrompt ||
+    reflectionPrompt ||
+    practiceLinks.length,
   );
 
   return (
@@ -100,21 +112,54 @@ export function LessonFrame({
       {hasOutro && (
         <section className="border-foreground/10 bg-foreground/[0.03] mt-10 rounded-xl border p-6">
           <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
-            Practice and reflect
+            Turn this into reps
           </h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
-            {practicePrompt && (
+            {(practicePrompt || practiceReps) && (
               <section>
                 <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
-                  Solo rep
+                  Do this now
                 </h2>
-                <p className="text-foreground/70 mt-2 text-sm leading-relaxed">{practicePrompt}</p>
+                {practicePrompt && (
+                  <p className="text-foreground/70 mt-2 text-sm leading-relaxed">
+                    {practicePrompt}
+                  </p>
+                )}
+                {practiceReps && (
+                  <p className="text-foreground/50 mt-2 text-xs leading-relaxed">
+                    Rep target: {practiceReps}
+                  </p>
+                )}
+              </section>
+            )}
+            {successSignal && (
+              <section>
+                <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  Know it worked when
+                </h2>
+                <p className="text-foreground/70 mt-2 text-sm leading-relaxed">{successSignal}</p>
+              </section>
+            )}
+            {commonMistake && (
+              <section>
+                <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  Watch for this
+                </h2>
+                <p className="text-foreground/70 mt-2 text-sm leading-relaxed">{commonMistake}</p>
+              </section>
+            )}
+            {transferPrompt && (
+              <section>
+                <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  Use this in life
+                </h2>
+                <p className="text-foreground/70 mt-2 text-sm leading-relaxed">{transferPrompt}</p>
               </section>
             )}
             {practiceLinks.length > 0 && (
               <section>
                 <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
-                  With others
+                  Practice with others
                 </h2>
                 <div className="mt-2 space-y-2">
                   {practiceLinks.map((practiceLink) => (
@@ -127,14 +172,6 @@ export function LessonFrame({
                     </Link>
                   ))}
                 </div>
-              </section>
-            )}
-            {commonMistake && (
-              <section>
-                <h2 className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
-                  Watch for this
-                </h2>
-                <p className="text-foreground/70 mt-2 text-sm leading-relaxed">{commonMistake}</p>
               </section>
             )}
             {reflectionPrompt && (

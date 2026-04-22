@@ -6,6 +6,10 @@ target_keywords:
   - { keyword: "what is improvisation", volume: 800 }
 entry_atoms: [yes-and, offers, discovery, be-present, ensemble, reality-construction]
 entry_path: beginner-foundations
+primary_problem: "you need a clear model of what improv actually is and how scenes stay alive"
+primary_cta_type: path
+primary_cta_target: beginner-foundations
+secondary_cta_target: building-on-offers
 status: validated
 created: "2026-04-13"
 ---
@@ -70,4 +74,4 @@ It's the hardest easy thing in the world. And the reason it matters — whether 
 
 ---
 
-*This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore the foundational principles — offers, Yes And, presence, and more — start with the [Beginner Foundations](/paths/beginner-foundations) path.*
+_This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore the foundational principles — offers, Yes And, presence, and more — start with the [Beginner Foundations](/paths/beginner-foundations) path._

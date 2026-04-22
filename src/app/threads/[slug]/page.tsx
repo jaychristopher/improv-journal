@@ -147,6 +147,9 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         keyTakeaway={fm.key_takeaway}
         commonMistake={fm.common_mistake}
         practicePrompt={fm.practice_prompt}
+        practiceReps={fm.practice_reps}
+        successSignal={fm.success_signal}
+        transferPrompt={fm.transfer_prompt}
         practiceLinks={practiceRecommendations.map((recommendation) => ({
           id: recommendation.id,
           href: recommendation.url,

@@ -14,10 +14,11 @@ import {
   getAtomUrl,
   getAudioUrl,
   getBridgeBySlug,
-  getFirstThreadOfPath,
   getPathBySlug,
+  getThreadBySlug,
   loadBridges,
 } from "@/lib/content";
+import type { BridgeFrontmatter } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -27,11 +28,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const bridge = await getBridgeBySlug(slug);
   if (!bridge) return {};
+
   const fm = bridge.frontmatter;
   return {
     title: fm.title,
     description: fm.description,
-    keywords: fm.target_keywords?.map((k: { keyword: string }) => k.keyword),
+    keywords: fm.target_keywords?.map((keyword: { keyword: string }) => keyword.keyword),
     alternates: { canonical: `/${slug}` },
     openGraph: { title: fm.title, description: fm.description, url: `/${slug}`, type: "article" },
   };
@@ -39,10 +41,9 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const bridges = await loadBridges();
-  return bridges.map((b) => ({ slug: b.slug }));
+  return bridges.map((bridge) => ({ slug: bridge.slug }));
 }
 
-// Related content for "Go Deeper" sections
 const BRIDGE_RELATIONS: Record<
   string,
   {
@@ -220,32 +221,158 @@ const BRIDGE_RELATIONS: Record<
   },
 };
 
+interface BridgeActionLink {
+  href: string;
+  label: string;
+  title: string;
+}
+
+interface BridgePrimaryCta extends BridgeActionLink {
+  description?: string;
+  eventTarget: string;
+}
+
+async function resolveBridgePrimaryCta(fm: BridgeFrontmatter): Promise<BridgePrimaryCta | null> {
+  const description = fm.primary_problem
+    ? `If your main issue is ${fm.primary_problem}, this is the clearest next step.`
+    : undefined;
+
+  if (!fm.primary_cta_type || !fm.primary_cta_target) return null;
+
+  switch (fm.primary_cta_type) {
+    case "path": {
+      const path = await getPathBySlug(fm.primary_cta_target);
+      if (!path) return null;
+
+      return {
+        label:
+          path.frontmatter.id === "beginner-foundations"
+            ? "Start the beginner sequence"
+            : "Start this path",
+        title: path.frontmatter.title,
+        href: `/paths/${path.frontmatter.id}`,
+        description,
+        eventTarget: path.frontmatter.id,
+      };
+    }
+    case "thread": {
+      const thread = await getThreadBySlug(fm.primary_cta_target);
+      if (!thread) return null;
+
+      return {
+        label: "Read this next",
+        title: thread.frontmatter.title,
+        href: `/threads/${thread.frontmatter.id}`,
+        description,
+        eventTarget: thread.frontmatter.id,
+      };
+    }
+    case "exercise": {
+      const atom = await getAtomBySlug(fm.primary_cta_target);
+      if (!atom || atom.frontmatter.type !== "exercise") return null;
+
+      return {
+        label: "Do this drill",
+        title: atom.frontmatter.title,
+        href: getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type }),
+        description,
+        eventTarget: atom.frontmatter.id,
+      };
+    }
+    case "challenge":
+      return null;
+  }
+}
+
+async function resolveBridgeSecondaryCta(targetId?: string): Promise<BridgeActionLink | null> {
+  if (!targetId) return null;
+
+  const path = await getPathBySlug(targetId);
+  if (path) {
+    return {
+      label: "Then start this path",
+      title: path.frontmatter.title,
+      href: `/paths/${path.frontmatter.id}`,
+    };
+  }
+
+  const thread = await getThreadBySlug(targetId);
+  if (thread) {
+    return {
+      label: "Then read this lesson",
+      title: thread.frontmatter.title,
+      href: `/threads/${thread.frontmatter.id}`,
+    };
+  }
+
+  const atom = await getAtomBySlug(targetId);
+  if (atom) {
+    return {
+      label: atom.frontmatter.type === "exercise" ? "Then do this drill" : "Then read this",
+      title: atom.frontmatter.title,
+      href: getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type }),
+    };
+  }
+
+  return null;
+}
+
 export default async function BridgePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const bridge = await getBridgeBySlug(slug);
   if (!bridge) notFound();
 
   const fm = bridge.frontmatter;
-
-  // Resolve exercises with proper URLs
   const relations = BRIDGE_RELATIONS[slug] ?? { exercises: [], threads: [], otherGuides: [] };
-  const exercises = await Promise.all(
-    relations.exercises.map(async (id) => {
-      const atom = await getAtomBySlug(id);
-      return atom
-        ? {
-            id,
-            title: atom.frontmatter.title,
-            url: getAtomUrl({ id, type: atom.frontmatter.type }),
-          }
-        : { id, title: id, url: `/practice/exercises/${id}` };
-    }),
-  );
-
-  const entryPath = fm.entry_path ? await getPathBySlug(fm.entry_path) : null;
-  const entryPathFirstThread = fm.entry_path ? await getFirstThreadOfPath(fm.entry_path) : null;
+  const [exercises, entryPath, primaryCta, secondaryCta] = await Promise.all([
+    Promise.all(
+      relations.exercises.map(async (id) => {
+        const atom = await getAtomBySlug(id);
+        return atom
+          ? {
+              id,
+              title: atom.frontmatter.title,
+              url: getAtomUrl({ id, type: atom.frontmatter.type }),
+            }
+          : { id, title: id, url: `/practice/exercises/${id}` };
+      }),
+    ),
+    fm.entry_path ? getPathBySlug(fm.entry_path) : null,
+    resolveBridgePrimaryCta(fm),
+    resolveBridgeSecondaryCta(fm.secondary_cta_target),
+  ]);
   const audioUrl = getAudioUrl("bridges", slug);
   const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
+  const fallbackPrimaryCta: BridgePrimaryCta | null = entryPath
+    ? {
+        label:
+          entryPath.frontmatter.id === "beginner-foundations"
+            ? "Start the beginner sequence"
+            : "Start this path",
+        title: entryPath.frontmatter.title,
+        href: `/paths/${entryPath.frontmatter.id}`,
+        description: fm.primary_problem
+          ? `If your main issue is ${fm.primary_problem}, this is the clearest next step.`
+          : "This is the clearest next step from this guide.",
+        eventTarget: entryPath.frontmatter.id,
+      }
+    : null;
+  const resolvedPrimaryCta = primaryCta ?? fallbackPrimaryCta;
+  const relatedLinks = [
+    secondaryCta,
+    exercises[0]
+      ? {
+          label: "Or do this drill",
+          title: exercises[0].title,
+          href: exercises[0].url,
+        }
+      : null,
+  ].filter((link): link is BridgeActionLink => Boolean(link));
+  const uniqueRelatedLinks = relatedLinks.filter(
+    (link, index, collection) =>
+      link.href !== resolvedPrimaryCta?.href &&
+      collection.findIndex((candidate) => candidate.href === link.href) === index,
+  );
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
@@ -281,38 +408,41 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
         dangerouslySetInnerHTML={{ __html: bridge.html.replace(/^<h1[^>]*>.*?<\/h1>\s*/i, "") }}
       />
 
-      {/* ── Post-article: focused CTAs, not a wall ────────────── */}
       <div className="border-foreground/10 mt-16 space-y-6 border-t pt-8">
-        {/* Try this — exercises are the most actionable takeaway */}
-        {exercises.length > 0 && (
+        {resolvedPrimaryCta && (
+          <WhatsNext
+            variant="bridge-primary-cta"
+            label={resolvedPrimaryCta.label}
+            title={resolvedPrimaryCta.title}
+            href={resolvedPrimaryCta.href}
+            description={resolvedPrimaryCta.description}
+            eventTarget={resolvedPrimaryCta.eventTarget}
+          />
+        )}
+
+        {uniqueRelatedLinks.length > 0 && (
           <div>
             <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
-              Try this
+              One more useful step
             </h2>
             <div className="space-y-2">
-              {exercises.map((ex) => (
+              {uniqueRelatedLinks.map((link) => (
                 <Link
-                  key={ex.id}
-                  href={ex.url}
+                  key={link.href}
+                  href={link.href}
                   className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
                 >
-                  <span className="text-sm font-medium">{ex.title}</span>
+                  <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                    {link.label}
+                  </span>
+                  <span className="mt-1 block text-sm font-medium">{link.title}</span>
                 </Link>
               ))}
             </div>
           </div>
         )}
 
-        {/* Go deeper — single CTA into the learning path */}
-        {entryPath && entryPathFirstThread && (
-          <WhatsNext
-            variant="bridge-funnel"
-            pathTitle={entryPath.frontmatter.title}
-            href={`/threads/${entryPathFirstThread.id}`}
-          />
-        )}
-
-        {entryPath?.frontmatter.audience?.[0] && (
+        {!resolvedPrimaryCta && entryPath?.frontmatter.audience?.[0] && (
           <LevelRedirect level={entryPath.frontmatter.audience[0]} context="bridge" />
         )}
       </div>

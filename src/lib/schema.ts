@@ -90,7 +90,13 @@ export interface ThreadFrontmatter {
   key_takeaway?: string;
   common_mistake?: string;
   practice_prompt?: string;
+  practice_reps?: string;
+  success_signal?: string;
+  transfer_prompt?: string;
   reflection_prompt?: string;
+  estimated_minutes?: number;
+  challenge_day?: number;
+  difficulty?: "beginner" | "core" | "stretch";
   status: ContentStatus;
   atoms: string[]; // ordered list of atom IDs that compose this thought
   tags: string[];
@@ -111,6 +117,10 @@ export interface BridgeFrontmatter {
   target_keywords: BridgeTargetKeyword[];
   entry_atoms: string[]; // atom IDs this bridge links into
   entry_path: string; // primary path ID
+  primary_problem?: string;
+  primary_cta_type?: "thread" | "path" | "exercise" | "challenge";
+  primary_cta_target?: string;
+  secondary_cta_target?: string;
   status: ContentStatus;
   created: string;
   updated?: string;
@@ -128,6 +138,11 @@ export interface PathFrontmatter {
   estimated_time: string;
   practice_cadence: string;
   completion_outcome: string;
+  program_type?: "course" | "challenge" | "reference";
+  program_length_days?: number;
+  default_cadence?: "daily" | "weekly" | "self-paced";
+  core_habits?: string[];
+  transfer_contexts?: ("stage" | "life" | "work" | "relationships")[];
   audience: Audience[];
   threads: string[]; // ordered sequence of thread IDs
   status: ContentStatus;
