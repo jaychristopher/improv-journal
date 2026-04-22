@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 import {
+  formatJourneyDueDate,
   getJourneyRecommendation,
   getThreadJourneyState,
   isThreadVisited,
@@ -63,6 +64,10 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
         : `Review - Thread ${recommendation.current} of ${recommendation.total}`;
 
   const threadState = getThreadJourneyState(recommendation.threadId);
+  const reviewNote =
+    recommendation.kind === "review" && threadState?.reviewDueAt
+      ? ` Scheduled for ${formatJourneyDueDate(threadState.reviewDueAt)}.`
+      : "";
 
   return (
     <div className="mb-8">
@@ -83,6 +88,7 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
         {threadState?.confidence === "low"
           ? " Use the lesson practice block before moving on."
           : ""}
+        {reviewNote}
       </p>
     </div>
   );

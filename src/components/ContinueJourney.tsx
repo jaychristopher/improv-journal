@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { trackEvent } from "@/lib/analytics";
 import {
   clearJourney,
+  formatJourneyDueDate,
   formatJourneyRecency,
   getJourneyRecommendation,
   getJourneyState,
@@ -30,6 +31,9 @@ interface ContinueJourneyState {
   total: number;
   reason: string;
   recency?: string;
+  reviewDueAt?: string;
+  practiceCount?: number;
+  reviewCount?: number;
 }
 
 export function ContinueJourney({ paths }: ContinueJourneyProps) {
@@ -66,6 +70,9 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
         recency: threadState?.lastVisitedAt
           ? formatJourneyRecency(threadState.lastVisitedAt)
           : undefined,
+        reviewDueAt: threadState?.reviewDueAt,
+        practiceCount: threadState?.timesPracticed,
+        reviewCount: threadState?.timesReviewed,
       }),
     );
   }, [paths]);
@@ -74,10 +81,23 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
 
   const label =
     state.kind === "continue"
-      ? "Continue your journey"
+      ? "Today's next step"
       : state.kind === "practice"
-        ? "Practice this next"
-        : "Pick back up here";
+        ? "Today's practice"
+        : "Review due";
+  const extraContext = [
+    state.kind === "review" && state.reviewDueAt
+      ? `Scheduled for ${formatJourneyDueDate(state.reviewDueAt)}.`
+      : null,
+    state.kind === "practice" && state.practiceCount
+      ? `Practiced ${state.practiceCount} time${state.practiceCount === 1 ? "" : "s"} so far.`
+      : null,
+    state.kind === "review" && state.reviewCount
+      ? `Reviewed ${state.reviewCount} time${state.reviewCount === 1 ? "" : "s"} already.`
+      : null,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <section className="mb-8">
@@ -104,6 +124,7 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
             <p className="text-foreground/50 mt-2 text-sm">
               {state.reason}
               {state.recency ? ` Last touched ${state.recency}.` : ""}
+              {extraContext ? ` ${extraContext}` : ""}
             </p>
           </div>
           <span className="text-foreground/30 shrink-0 transition-transform group-hover:translate-x-1">

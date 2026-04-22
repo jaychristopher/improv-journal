@@ -5,7 +5,10 @@ import {
   getJourneyRecommendation,
   getJourneyState,
   getThreadJourneyState,
+  markThreadPracticed,
+  markThreadReviewed,
   markThreadVisited,
+  scheduleThreadReview,
   setCurrentPath,
   setThreadCompleted,
   setThreadConfidence,
@@ -84,8 +87,11 @@ describe("journey state", () => {
     expect(getThreadJourneyState("building-on-offers")).toMatchObject({
       confidence: "medium",
       completedAt: "2026-04-21T12:00:00.000Z",
+      reviewDueAt: "2026-04-22T12:00:00.000Z",
+      reviewQueuedAt: "2026-04-21T12:00:00.000Z",
       savedAt: "2026-04-21T12:00:00.000Z",
     });
+    expect(getJourneyState()?.reviewQueue).toEqual(["building-on-offers"]);
 
     expect(toggleThreadSaved("building-on-offers")).toBe(false);
     expect(getThreadJourneyState("building-on-offers")?.savedAt).toBeUndefined();
@@ -103,6 +109,52 @@ describe("journey state", () => {
       kind: "practice",
       threadId: "building-on-offers",
     });
+  });
+
+  it("surfaces due reviews before continuation once they are scheduled", () => {
+    setCurrentPath("beginner-foundations");
+    markThreadVisited("building-on-offers");
+    setThreadCompleted("building-on-offers", true);
+
+    expect(
+      getJourneyRecommendation(["building-on-offers", "presence-and-commitment"]),
+    ).toMatchObject({
+      kind: "continue",
+      threadId: "presence-and-commitment",
+    });
+
+    vi.advanceTimersByTime(24 * 60 * 60 * 1000 + 1000);
+
+    expect(
+      getJourneyRecommendation(["building-on-offers", "presence-and-commitment"]),
+    ).toMatchObject({
+      kind: "review",
+      threadId: "building-on-offers",
+    });
+  });
+
+  it("tracks practice reps and clears the review queue when reviewed", () => {
+    setCurrentPath("beginner-foundations");
+    markThreadVisited("building-on-offers");
+    markThreadPracticed("building-on-offers");
+    markThreadPracticed("building-on-offers");
+    scheduleThreadReview("building-on-offers");
+
+    expect(getThreadJourneyState("building-on-offers")).toMatchObject({
+      timesPracticed: 2,
+      reviewDueAt: "2026-04-22T12:00:00.000Z",
+    });
+    expect(getJourneyState()?.reviewQueue).toEqual(["building-on-offers"]);
+
+    markThreadReviewed("building-on-offers");
+
+    expect(getThreadJourneyState("building-on-offers")).toMatchObject({
+      timesPracticed: 2,
+      timesReviewed: 1,
+      lastReviewedAt: "2026-04-21T12:00:00.000Z",
+    });
+    expect(getThreadJourneyState("building-on-offers")?.reviewDueAt).toBeUndefined();
+    expect(getJourneyState()?.reviewQueue).toEqual([]);
   });
 
   it("falls back to continuation when there is a clear next lesson", () => {

@@ -403,6 +403,66 @@ Convert the existing beginner path into a true beginner program with a single do
 - `content/paths/beginner-foundations.md`
 - selected beginner thread markdown files in `content/threads/`
 
+## Second Implementation Sprint
+
+This is the next sprint to make the learning loop sticky without adding a backend or new publishing surfaces.
+
+### Sprint Name
+
+Spaced Recall and Review Queue
+
+### Objective
+
+Turn learner state into a usable repetition loop so returning visitors see a specific review or practice action instead of a generic continuation prompt.
+
+### Scope
+
+#### 1. Extend learner state with repetition memory
+
+- Add review queue fields and review scheduling to `JourneyState`.
+- Track practice and review counts and timestamps in `ThreadJourneyState`.
+- Automatically queue a next-day review when a learner marks a lesson complete.
+
+#### 2. Add review and practice controls to the lesson checkpoint
+
+- Let learners save a lesson, log a practice rep, schedule a review, and mark a review complete.
+- Reflect that state immediately in the checkpoint surface.
+
+#### 3. Upgrade continuation surfaces to understand due reviews
+
+- Update the continue/resume card to prioritize review-due lessons ahead of generic continuation.
+- Show lightweight due-date context in the syllabus progress UI.
+
+#### 4. Lock the behavior down with learner-state tests
+
+- Add coverage for:
+  - review scheduling on completion
+  - review prioritization once due
+  - practice and review counters
+  - queue clearing when reviewed
+
+### Deliverables
+
+- A local review queue that gives returning learners a real next repetition.
+- Lesson checkpoint actions for practice and review.
+- Continue/progress components that explain when a review is due.
+- Automated coverage for the new learner-state behavior.
+
+### Acceptance Criteria
+
+- Completing a lesson schedules a review for the following day.
+- A due review is recommended before the next untouched lesson.
+- Learners can log practice and reviews from the thread page without leaving the lesson.
+- The journey test suite fails if review scheduling or prioritization regresses.
+
+### Files for Sprint 2
+
+- [src/lib/journey.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/journey.ts)
+- [src/components/LessonCheckpoint.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/LessonCheckpoint.tsx)
+- [src/components/ContinueJourney.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/ContinueJourney.tsx)
+- [src/components/SyllabusProgress.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/SyllabusProgress.tsx)
+- [src/lib/__tests__/journey.test.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/__tests__/journey.test.ts)
+
 ## What Not To Build Yet
 
 - Full accounts and sync across devices before the local learner loop proves useful.

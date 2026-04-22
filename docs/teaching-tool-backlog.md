@@ -122,6 +122,23 @@ See also: [Learning Product Roadmap](./learning-product-roadmap.md) for the high
 - Scope:
   - Upgrade continue/resume components to recommend review, practice, or continuation.
 
+### Issue: Add a lightweight review queue and repetition memory
+
+- Labels: `type:product`, `area:retention`, `sprint:4`
+- Status: `completed`
+- Scope:
+  - Schedule a next-day review when a learner completes a lesson.
+  - Track practice count, review count, and last-action timestamps in local storage.
+  - Keep a simple review queue that can drive due-state recommendations without adding accounts or backend state.
+
+### Issue: Surface due review actions inside lessons and progress UI
+
+- Labels: `type:ux`, `area:retention`, `sprint:4`
+- Status: `completed`
+- Scope:
+  - Add checkpoint actions for practice, review scheduling, and review completion.
+  - Show review-due context in continue/resume and syllabus progress components.
+
 ## Sprint 5: Learning Analytics
 
 ### Issue: Normalize learning funnel events
