@@ -41,18 +41,30 @@ export function LessonFrame({
   return (
     <>
       {hasIntro && (
-        <section className="border-foreground/10 bg-surface mb-8 rounded-xl border p-6">
-          {pathTitle && pathHref && (
-            <p className="text-foreground/40 text-xs tracking-wider uppercase">
-              Part of{" "}
-              <Link
-                href={pathHref}
-                className="hover:text-foreground/60 underline-offset-2 hover:underline"
-              >
-                {pathTitle}
-              </Link>
-            </p>
-          )}
+        <details
+          open
+          className="border-foreground/10 bg-surface mb-8 rounded-xl border p-6 [&>summary]:cursor-pointer [&>summary]:list-none [&>summary::-webkit-details-marker]:hidden"
+        >
+          <summary className="flex items-center justify-between">
+            <div>
+              {pathTitle && pathHref ? (
+                <p className="text-foreground/40 text-xs tracking-wider uppercase">
+                  Part of{" "}
+                  <Link
+                    href={pathHref}
+                    className="hover:text-foreground/60 underline-offset-2 hover:underline"
+                  >
+                    {pathTitle}
+                  </Link>
+                </p>
+              ) : (
+                <p className="text-foreground/40 text-xs font-semibold tracking-wider uppercase">
+                  Lesson overview
+                </p>
+              )}
+            </div>
+            <span className="text-foreground/30 text-xs">collapse</span>
+          </summary>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {lessonGoal && (
               <section>
@@ -71,7 +83,7 @@ export function LessonFrame({
               </section>
             )}
           </div>
-        </section>
+        </details>
       )}
 
       {hasListen && (

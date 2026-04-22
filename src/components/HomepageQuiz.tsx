@@ -56,6 +56,11 @@ export function HomepageQuiz({ paths }: QuizProps) {
         action: () => goToStep(1),
       },
       {
+        label: "I lead a team and want it to work better",
+        desc: "Trust, collaboration, and group dynamics from improv ensembles.",
+        action: () => goToPath("improv-for-teams"),
+      },
+      {
         label: "I do improv and want to get better",
         desc: "Exercises, techniques, and the system underneath.",
         action: () => goToStep(2),
