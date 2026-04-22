@@ -144,16 +144,18 @@ See also: [Learning Product Roadmap](./learning-product-roadmap.md) for the high
 ### Issue: Normalize learning funnel events
 
 - Labels: `type:analytics`, `area:instrumentation`, `sprint:5`
-- Status: `planned`
+- Status: `completed`
 - Scope:
   - Define a funnel event vocabulary for recommendation, start, lesson completion, practice engagement, and return behavior.
+  - Route core learner-flow components through the shared vocabulary instead of one-off event names.
 
 ### Issue: Add reporting for beginner drop-off
 
 - Labels: `type:analytics`, `area:review`, `sprint:5`
-- Status: `planned`
+- Status: `completed`
 - Scope:
   - Create a lightweight weekly workflow for reviewing path start and continuation rates.
+  - Document the scorecard and review questions in `docs/weekly-learning-review.md`.
 
 ## Sprint 6: Structured Community Input
 

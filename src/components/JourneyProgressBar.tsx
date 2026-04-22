@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { trackEvent } from "@/lib/analytics";
+import { trackLearningLessonViewed, trackLearningPathCompleted } from "@/lib/analytics";
 import { isThreadVisited, markThreadVisited, setCurrentPath } from "@/lib/journey";
 
 interface ThreadInfo {
@@ -28,8 +28,14 @@ export function JourneyProgressBar({
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
+    const currentThreadId = threads[currentThreadIndex]?.id ?? "";
+    const visitedBefore = new Set<string>();
+    for (const thread of threads) {
+      if (isThreadVisited(thread.id)) visitedBefore.add(thread.id);
+    }
+
     setCurrentPath(pathId);
-    markThreadVisited(threads[currentThreadIndex]?.id ?? "");
+    markThreadVisited(currentThreadId);
 
     const nextVisited = new Set<string>();
     for (const thread of threads) {
@@ -37,15 +43,25 @@ export function JourneyProgressBar({
     }
     queueMicrotask(() => setVisited(nextVisited));
 
-    trackEvent("thread_viewed", {
-      thread: threads[currentThreadIndex]?.id ?? "",
-      path: pathId,
-      position: currentThreadIndex + 1,
-      total: threads.length,
+    trackLearningLessonViewed({
+      pathId,
+      threadId: currentThreadId,
+      surface: "journey_progress",
+      threadPosition: currentThreadIndex + 1,
+      threadTotal: threads.length,
     });
 
-    if (nextVisited.size === threads.length) {
-      trackEvent("path_completed", { path: pathId, threads_count: threads.length });
+    if (
+      currentThreadId &&
+      !visitedBefore.has(currentThreadId) &&
+      visitedBefore.size === threads.length - 1 &&
+      nextVisited.size === threads.length
+    ) {
+      trackLearningPathCompleted({
+        pathId,
+        surface: "journey_progress",
+        threadTotal: threads.length,
+      });
     }
   }, [threads, currentThreadIndex, pathId]);
 

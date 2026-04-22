@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { trackEvent } from "@/lib/analytics";
+import {
+  trackLearningPathStarted,
+  trackLearningRecommendationClicked,
+  trackLearningRecommendationShown,
+} from "@/lib/analytics";
 import {
   formatJourneyDueDate,
   getJourneyRecommendation,
@@ -33,6 +37,17 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
   useEffect(() => {
     const nextRecommendation = getJourneyRecommendation(threadIds);
     const count = threadIds.filter((id) => isThreadVisited(id)).length;
+
+    if (nextRecommendation) {
+      trackLearningRecommendationShown({
+        pathId,
+        threadId: nextRecommendation.threadId,
+        recommendationKind: nextRecommendation.kind,
+        surface: "syllabus_progress",
+        threadPosition: nextRecommendation.current,
+        threadTotal: nextRecommendation.total,
+      });
+    }
 
     queueMicrotask(() => {
       setRecommendation(nextRecommendation);
@@ -74,8 +89,20 @@ export function SyllabusProgress({ pathId, threadIds }: SyllabusProgressProps) {
       <Link
         href={`/threads/${recommendation.threadId}`}
         onClick={() => {
+          trackLearningRecommendationClicked({
+            pathId,
+            threadId: recommendation.threadId,
+            recommendationKind: recommendation.kind,
+            surface: "syllabus_progress",
+            threadPosition: recommendation.current,
+            threadTotal: recommendation.total,
+          });
           if (!isStarted) {
-            trackEvent("path_started", { path: pathId, source: "syllabus" });
+            trackLearningPathStarted({
+              pathId,
+              surface: "syllabus_progress",
+              threadTotal: threadIds.length,
+            });
           }
           setCurrentPath(pathId);
         }}

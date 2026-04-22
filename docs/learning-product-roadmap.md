@@ -461,7 +461,75 @@ Turn learner state into a usable repetition loop so returning visitors see a spe
 - [src/components/LessonCheckpoint.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/LessonCheckpoint.tsx)
 - [src/components/ContinueJourney.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/ContinueJourney.tsx)
 - [src/components/SyllabusProgress.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/SyllabusProgress.tsx)
-- [src/lib/__tests__/journey.test.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/__tests__/journey.test.ts)
+- [src/lib/**tests**/journey.test.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/__tests__/journey.test.ts)
+
+## Third Implementation Sprint
+
+This is the next sprint to make the learner loop measurable before introducing heavier product or community features.
+
+### Sprint Name
+
+Learning Funnel Instrumentation
+
+### Objective
+
+Normalize learner-flow event names and capture a reviewable weekly scorecard so path start, continuation, practice, and review behavior can be compared over time.
+
+### Scope
+
+#### 1. Replace one-off learner event names with a shared vocabulary
+
+- Define canonical learning events for:
+  - recommendation shown
+  - recommendation clicked
+  - path started
+  - lesson viewed
+  - lesson completed
+  - practice logged
+  - review scheduled
+  - review completed
+  - path completed
+
+#### 2. Instrument the core learning flow surfaces
+
+- Track normalized learner events from:
+  - the continue/resume card
+  - syllabus progress CTA
+  - journey progress bar
+  - lesson checkpoint actions
+
+#### 3. Add a lightweight weekly review workflow
+
+- Document the scorecard for beginner path starts, recommendation click-through, lesson completion, practice, and review completion.
+- Keep the workflow compatible with the analytics tools already present in the repo.
+
+#### 4. Add coverage for the event contract
+
+- Test the analytics helpers so both Vercel Analytics and PostHog receive the normalized event names and flat payloads.
+
+### Deliverables
+
+- A shared learner analytics vocabulary in `src/lib/analytics.ts`.
+- Normalized instrumentation across the main beginner learning loop.
+- A weekly analytics review document.
+- Tests covering the learner event helper contract.
+
+### Acceptance Criteria
+
+- The beginner learning flow stops emitting ad hoc event names for recommendation, lesson, and review actions.
+- Lesson checkpoint actions emit practice, completion, save, confidence, and review events with flat payloads.
+- The repo includes a documented weekly review workflow for path start and continuation rates.
+- The analytics helper test suite fails if event names or payload shapes drift.
+
+### Files for Sprint 3
+
+- [src/lib/analytics.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/analytics.ts)
+- [src/components/ContinueJourney.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/ContinueJourney.tsx)
+- [src/components/JourneyProgressBar.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/JourneyProgressBar.tsx)
+- [src/components/LessonCheckpoint.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/LessonCheckpoint.tsx)
+- [src/components/SyllabusProgress.tsx](/C:/Users/jaywe/projects/personal/improv-journal/src/components/SyllabusProgress.tsx)
+- [src/lib/**tests**/analytics.test.ts](/C:/Users/jaywe/projects/personal/improv-journal/src/lib/__tests__/analytics.test.ts)
+- [docs/weekly-learning-review.md](/C:/Users/jaywe/projects/personal/improv-journal/docs/weekly-learning-review.md)
 
 ## What Not To Build Yet
 

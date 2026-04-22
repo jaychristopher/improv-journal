@@ -2,10 +2,19 @@
 
 import { useEffect, useState } from "react";
 
+import {
+  trackLearningConfidenceSet,
+  trackLearningLessonCompleted,
+  trackLearningLessonSaved,
+  trackLearningPracticeLogged,
+  trackLearningReviewCompleted,
+  trackLearningReviewScheduled,
+} from "@/lib/analytics";
 import type { ConfidenceLevel } from "@/lib/journey";
 import {
   formatJourneyDueDate,
   formatJourneyRecency,
+  getJourneyState,
   getThreadJourneyState,
   isThreadQueuedForReview,
   markThreadPracticed,
@@ -65,6 +74,14 @@ function readCheckpointState(threadId: string): LessonCheckpointState {
   };
 }
 
+function getTrackingContext(threadId: string) {
+  return {
+    pathId: getJourneyState()?.pathId,
+    threadId,
+    surface: "lesson_checkpoint" as const,
+  };
+}
+
 export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
   const [state, setState] = useState<LessonCheckpointState | null>(null);
 
@@ -105,13 +122,14 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
 
       <div className="mt-4 flex flex-wrap gap-2">
         <button
-          onClick={() =>
-            setState((current) => {
-              if (!current) return current;
-              const saved = toggleThreadSaved(threadId);
-              return { ...current, saved };
-            })
-          }
+          onClick={() => {
+            const saved = toggleThreadSaved(threadId);
+            trackLearningLessonSaved({
+              ...getTrackingContext(threadId),
+              saved,
+            });
+            setState((current) => (current ? { ...current, saved } : current));
+          }}
           className={getButtonClasses(state.saved)}
         >
           {state.saved ? "Saved" : "Save lesson"}
@@ -119,7 +137,12 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
         <button
           onClick={() => {
             markThreadPracticed(threadId);
-            setState(readCheckpointState(threadId));
+            const nextState = readCheckpointState(threadId);
+            trackLearningPracticeLogged({
+              ...getTrackingContext(threadId),
+              practiceCount: nextState.practicedCount,
+            });
+            setState(nextState);
           }}
           className={getButtonClasses(state.practicedCount > 0)}
         >
@@ -129,7 +152,12 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
           <button
             onClick={() => {
               markThreadReviewed(threadId);
-              setState(readCheckpointState(threadId));
+              const nextState = readCheckpointState(threadId);
+              trackLearningReviewCompleted({
+                ...getTrackingContext(threadId),
+                reviewCount: nextState.reviewedCount,
+              });
+              setState(nextState);
             }}
             className={getButtonClasses(state.reviewedCount > 0)}
           >
@@ -139,7 +167,14 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
           <button
             onClick={() => {
               scheduleThreadReview(threadId);
-              setState(readCheckpointState(threadId));
+              const nextState = readCheckpointState(threadId);
+              trackLearningReviewScheduled({
+                ...getTrackingContext(threadId),
+                reviewCount: nextState.reviewedCount,
+                reviewDueDays: 1,
+                trigger: "manual",
+              });
+              setState(nextState);
             }}
             className={getButtonClasses(false)}
           >
@@ -147,14 +182,25 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
           </button>
         )}
         <button
-          onClick={() =>
-            setState((current) => {
-              if (!current) return current;
-              const completed = !current.completed;
-              setThreadCompleted(threadId, completed);
-              return readCheckpointState(threadId);
-            })
-          }
+          onClick={() => {
+            const completed = !state.completed;
+            setThreadCompleted(threadId, completed);
+            const nextState = readCheckpointState(threadId);
+            trackLearningLessonCompleted({
+              ...getTrackingContext(threadId),
+              completed,
+              reviewQueued: nextState.reviewQueued,
+            });
+            if (completed && nextState.reviewQueued && !state.reviewQueued) {
+              trackLearningReviewScheduled({
+                ...getTrackingContext(threadId),
+                reviewCount: nextState.reviewedCount,
+                reviewDueDays: 1,
+                trigger: "completion",
+              });
+            }
+            setState(nextState);
+          }}
           className={getButtonClasses(state.completed)}
         >
           {state.completed ? "Completed" : "Mark complete"}
@@ -177,13 +223,16 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
           {CONFIDENCE_OPTIONS.map((option) => (
             <button
               key={option.value}
-              onClick={() =>
-                setState((current) => {
-                  if (!current) return current;
-                  setThreadConfidence(threadId, option.value);
-                  return { ...current, confidence: option.value };
-                })
-              }
+              onClick={() => {
+                setThreadConfidence(threadId, option.value);
+                trackLearningConfidenceSet({
+                  ...getTrackingContext(threadId),
+                  confidence: option.value,
+                });
+                setState((current) =>
+                  current ? { ...current, confidence: option.value } : current,
+                );
+              }}
               className={getButtonClasses(state.confidence === option.value)}
             >
               {option.label}

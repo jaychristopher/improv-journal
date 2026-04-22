@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { trackEvent } from "@/lib/analytics";
+import {
+  trackLearningRecommendationClicked,
+  trackLearningRecommendationShown,
+} from "@/lib/analytics";
 import {
   clearJourney,
   formatJourneyDueDate,
@@ -51,11 +54,13 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
 
     const threadState = getThreadJourneyState(recommendation.threadId);
 
-    trackEvent("continue_shown", {
-      path: journey.pathId,
-      thread: recommendation.threadId,
-      recommendation: recommendation.kind,
-      total_threads: pathInfo.threads.length,
+    trackLearningRecommendationShown({
+      pathId: journey.pathId,
+      threadId: recommendation.threadId,
+      recommendationKind: recommendation.kind,
+      surface: "continue_journey",
+      threadPosition: recommendation.current,
+      threadTotal: recommendation.total,
     });
 
     queueMicrotask(() =>
@@ -104,10 +109,13 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
       <Link
         href={`/threads/${state.threadId}`}
         onClick={() =>
-          trackEvent("continue_clicked", {
-            path: state.pathId,
-            thread: state.threadId,
-            recommendation: state.kind,
+          trackLearningRecommendationClicked({
+            pathId: state.pathId,
+            threadId: state.threadId,
+            recommendationKind: state.kind,
+            surface: "continue_journey",
+            threadPosition: state.current,
+            threadTotal: state.total,
           })
         }
         className="border-foreground/10 bg-surface hover:border-foreground/30 group block rounded-lg border p-5 transition-colors"
