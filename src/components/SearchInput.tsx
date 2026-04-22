@@ -11,6 +11,41 @@ interface QuickResult {
   url: string;
 }
 
+const POPULAR_QUERIES = [
+  "yes and",
+  "active listening",
+  "blocking",
+  "game of the scene",
+  "mirroring",
+  "status",
+  "how to stop overthinking",
+  "group mind",
+];
+
+const RECENT_SEARCHES_KEY = "improv-recent-searches";
+const MAX_RECENT = 5;
+
+function getRecentSearches(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(RECENT_SEARCHES_KEY);
+    return raw ? (JSON.parse(raw) as string[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveRecentSearch(query: string) {
+  if (typeof window === "undefined") return;
+  try {
+    const recent = getRecentSearches().filter((q) => q !== query);
+    recent.unshift(query);
+    localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+  } catch {
+    /* ignore */
+  }
+}
+
 export function SearchInput() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +53,7 @@ export function SearchInput() {
   const [results, setResults] = useState<QuickResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(-1);
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const requestIdRef = useRef(0);
@@ -92,7 +128,7 @@ export function SearchInput() {
   );
 
   const navigate = useCallback(
-    (url: string, source: "suggestion" | "query") => {
+    (url: string, source: "suggestion" | "query" | "recent" | "popular") => {
       const normalizedQuery = query.trim();
       if (normalizedQuery) {
         trackEvent("search_submitted", {
@@ -100,6 +136,7 @@ export function SearchInput() {
           query: normalizedQuery,
           source,
         });
+        saveRecentSearch(normalizedQuery);
       }
 
       close();
@@ -115,6 +152,7 @@ export function SearchInput() {
       }
 
       setIsOpen(true);
+      setRecentSearches(getRecentSearches());
       focusInput();
 
       if (hasSearchIndex()) return;
@@ -241,9 +279,49 @@ export function SearchInput() {
             />
 
             {query.length === 0 && !loading && (
-              <p className="text-foreground/30 mt-3 px-1 text-xs">
-                Type to search. Press Esc to close.
-              </p>
+              <div className="mt-6 space-y-6">
+                {recentSearches.length > 0 && (
+                  <div>
+                    <p className="text-foreground/30 px-1 text-xs font-semibold tracking-wider uppercase">
+                      Recent
+                    </p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {recentSearches.map((q) => (
+                        <button
+                          key={q}
+                          onClick={() => {
+                            setQuery(q);
+                            navigate(`/search?q=${encodeURIComponent(q)}`, "recent");
+                          }}
+                          className="text-foreground/50 bg-foreground/5 hover:bg-foreground/10 rounded-lg px-3 py-1.5 text-sm transition-colors"
+                        >
+                          {q}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                <div>
+                  <p className="text-foreground/30 px-1 text-xs font-semibold tracking-wider uppercase">
+                    Popular
+                  </p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {POPULAR_QUERIES.map((q) => (
+                      <button
+                        key={q}
+                        onClick={() => {
+                          setQuery(q);
+                          navigate(`/search?q=${encodeURIComponent(q)}`, "popular");
+                        }}
+                        className="text-foreground/40 bg-foreground/[0.03] hover:bg-foreground/10 hover:text-foreground/60 rounded-lg px-3 py-1.5 text-sm transition-colors"
+                      >
+                        {q}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <p className="text-foreground/20 px-1 text-xs">Press Esc to close.</p>
+              </div>
             )}
 
             {loading && <p className="text-foreground/30 mt-4 px-1 text-sm">Loading search...</p>}
