@@ -10,14 +10,14 @@
 |---|-------------|----------------|-------------|----|-----------:|--------|
 | 1 | Team bonding through improv | team bonding activities, trust building activities | 5,600 | 2-3 | improv-for-teams | DONE |
 | 2 | Fear of public speaking | fear of public speaking, fear of judgment | 3,450 | 6-50 | systems-of-improv | DONE |
-| 3 | How to be witty | how to be witty, how to be quick witted | 700+ | 0 | systems-of-improv | TODO |
-| 4 | How to be less awkward | how to be less awkward | 700 | 1 | improv-for-life | TODO |
-| 5 | Rules of improv | rules of improv, yes and improv | 1,050 | 7 | beginner-foundations | TODO |
-| 6 | How to be a good listener | how to be a good listener | 900 | 12 | improv-for-life | TODO |
-| 7 | How to be a better conversationalist | how to be a better conversationalist | 450 | 0 | improv-for-life | TODO |
-| 8 | How to let go of control | how to let go of control | 350 | 0 | systems-of-improv | TODO |
-| 9 | How to read the room | how to read the room | 200 | 0 | improv-for-teams | TODO |
-| 10 | How to get better at improv | how to get better at improv | 150 | 0 | self-coaching-toolkit | TODO |
+| 3 | How to be witty | how to be witty, how to be quick witted | 700+ | 0 | systems-of-improv | DONE |
+| 4 | How to be less awkward | how to be less awkward | 700 | 1 | improv-for-life | DONE |
+| 5 | Rules of improv | rules of improv, yes and improv | 1,050 | 7 | beginner-foundations | DONE |
+| 6 | How to be a good listener | how to be a good listener | 900 | 12 | improv-for-life | DONE |
+| 7 | How to be a better conversationalist | how to be a better conversationalist | 450 | 0 | improv-for-life | DONE |
+| 8 | How to let go of control | how to let go of control | 350 | 0 | systems-of-improv | DONE |
+| 9 | How to read the room | how to read the room | 200 | 0 | improv-for-teams | DONE |
+| 10 | How to get better at improv | how to get better at improv | 150 | 0 | self-coaching-toolkit | DONE |
 
 ## Existing Bridge Optimizations
 
