@@ -79,6 +79,15 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
   const alternatePaths = orderedPaths.filter((path) => path.frontmatter.id !== recommendation.id);
   const isBeginner = typedAudience === "beginner";
 
+  // Group beginner alternates by focus
+  const IMPROV_PATH_IDS = new Set(["physics-of-connection", "systems-of-improv"]);
+  const LIFE_PATH_IDS = new Set(["improv-for-life", "improv-for-teams"]);
+  const beginnerImprovPaths = alternatePaths.filter((p) => IMPROV_PATH_IDS.has(p.frontmatter.id));
+  const beginnerLifePaths = alternatePaths.filter((p) => LIFE_PATH_IDS.has(p.frontmatter.id));
+  const beginnerOtherPaths = alternatePaths.filter(
+    (p) => !IMPROV_PATH_IDS.has(p.frontmatter.id) && !LIFE_PATH_IDS.has(p.frontmatter.id),
+  );
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: meta.title }]} />
@@ -128,42 +137,140 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
             </ul>
           </section>
 
-          <section>
-            <h2 className="mb-4 text-lg font-semibold">Other good ways in</h2>
-            <div className="space-y-4">
-              {alternatePaths.map((path) => (
-                <Link
-                  key={path.frontmatter.id}
-                  href={`/paths/${path.frontmatter.id}`}
-                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
-                >
-                  <h3 className="font-semibold">{path.frontmatter.title}</h3>
-                  <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
+          {beginnerLifePaths.length > 0 && (
+            <section className="mb-8">
+              <h2 className="mb-1 text-lg font-semibold">Not an improviser?</h2>
+              <p className="text-foreground/40 mb-4 text-sm">
+                These paths apply improv principles to everyday life — no stage required.
+              </p>
+              <div className="space-y-3">
+                {beginnerLifePaths.map((path) => (
+                  <Link
+                    key={path.frontmatter.id}
+                    href={`/paths/${path.frontmatter.id}`}
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                  >
+                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <p className="text-foreground/50 mt-1 text-sm">
+                      {path.frontmatter.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {beginnerImprovPaths.length > 0 && (
+            <section className="mb-8">
+              <h2 className="mb-1 text-lg font-semibold">Go deeper into the system</h2>
+              <p className="text-foreground/40 mb-4 text-sm">
+                For analytical minds who want to understand why improv works before practicing it.
+              </p>
+              <div className="space-y-3">
+                {beginnerImprovPaths.map((path) => (
+                  <Link
+                    key={path.frontmatter.id}
+                    href={`/paths/${path.frontmatter.id}`}
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                  >
+                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <p className="text-foreground/50 mt-1 text-sm">
+                      {path.frontmatter.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {beginnerOtherPaths.length > 0 && (
+            <section>
+              <h2 className="mb-4 text-lg font-semibold">More paths</h2>
+              <div className="space-y-3">
+                {beginnerOtherPaths.map((path) => (
+                  <Link
+                    key={path.frontmatter.id}
+                    href={`/paths/${path.frontmatter.id}`}
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                  >
+                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <p className="text-foreground/50 mt-1 text-sm">
+                      {path.frontmatter.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
         </>
       ) : (
-        <div className="space-y-4">
-          {orderedPaths.map((path) => (
-            <Link
-              key={path.frontmatter.id}
-              href={`/paths/${path.frontmatter.id}`}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
-            >
-              <h2 className="flex items-center gap-2 font-semibold">
-                {path.frontmatter.title}
-                {isRecommendedPath(path.frontmatter.id, typedAudience) && (
-                  <span className="bg-foreground/10 text-foreground/50 rounded-full px-2 py-0.5 text-xs">
-                    {recommendation.label}
-                  </span>
-                )}
-              </h2>
-              <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
-            </Link>
-          ))}
-        </div>
+        <>
+          <div className="space-y-4">
+            {orderedPaths.map((path) => (
+              <Link
+                key={path.frontmatter.id}
+                href={`/paths/${path.frontmatter.id}`}
+                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+              >
+                <h2 className="flex items-center gap-2 font-semibold">
+                  {path.frontmatter.title}
+                  {isRecommendedPath(path.frontmatter.id, typedAudience) && (
+                    <span className="bg-foreground/10 text-foreground/50 rounded-full px-2 py-0.5 text-xs">
+                      {recommendation.label}
+                    </span>
+                  )}
+                </h2>
+                <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
+              </Link>
+            ))}
+          </div>
+
+          {typedAudience === "teacher" && (
+            <section className="mt-10">
+              <h2 className="mb-1 text-lg font-semibold">Also explore</h2>
+              <p className="text-foreground/40 mb-4 text-sm">
+                Supplementary resources for improv teachers.
+              </p>
+              <div className="text-foreground/50 space-y-2 text-sm">
+                <Link href="/how-to-give-feedback" className="block hover:underline">
+                  Guide: How to Give Feedback That Actually Changes Behavior
+                </Link>
+                <Link href="/practice/exercises" className="block hover:underline">
+                  Exercise Library — browse exercises for class planning
+                </Link>
+                <Link href="/traditions" className="block hover:underline">
+                  Traditions — compare Johnstone, Spolin, Close, UCB, and Annoyance
+                </Link>
+                <Link href="/library" className="block hover:underline">
+                  Reading List — source texts organized by depth
+                </Link>
+              </div>
+            </section>
+          )}
+
+          {typedAudience === "advanced" && (
+            <section className="mt-10">
+              <h2 className="mb-1 text-lg font-semibold">Also explore</h2>
+              <p className="text-foreground/40 mb-4 text-sm">
+                Deep-dive resources for serious study.
+              </p>
+              <div className="text-foreground/50 space-y-2 text-sm">
+                <Link href="/improv-theory" className="block hover:underline">
+                  Guide: The Five Traditions That Shaped Modern Improvisation
+                </Link>
+                <Link href="/traditions" className="block hover:underline">
+                  Traditions — counter-positions and lineage maps
+                </Link>
+                <Link href="/library" className="block hover:underline">
+                  Reading List — every source text cited in the graph
+                </Link>
+                <Link href="/how-it-works" className="block hover:underline">
+                  How It Works — laws, principles, and the system underneath
+                </Link>
+              </div>
+            </section>
+          )}
+        </>
       )}
     </main>
   );

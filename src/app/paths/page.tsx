@@ -128,6 +128,19 @@ export default function PathsIndexPage() {
         </div>
       </section>
 
+      <section className="text-foreground/40 mb-12 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+        <span>Not following the improv track?</span>
+        <Link href="/paths/improv-for-life" className="hover:text-foreground/60 underline">
+          Improv for Everyday Life
+        </Link>
+        <Link href="/paths/improv-for-teams" className="hover:text-foreground/60 underline">
+          Improv for Teams
+        </Link>
+        <Link href="/guides" className="hover:text-foreground/60 underline">
+          Browse guides by topic
+        </Link>
+      </section>
+
       <div>
         {STEPS.map((step, i) => (
           <div
