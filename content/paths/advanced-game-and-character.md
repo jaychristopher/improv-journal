@@ -11,16 +11,17 @@ who_this_is_for:
   - "Improvisers pushing toward more distinctive, higher-level scene work."
 prerequisites:
   - "Comfort with finding and heightening the game of the scene."
-estimated_time: "2 threads, about 60-75 minutes plus rehearsal focus"
+estimated_time: "3 threads, about 90-105 minutes plus rehearsal focus"
 practice_cadence: "Read a thread, then bring one specific lens into your next rehearsal."
-completion_outcome: "You'll have a sharper framework for advanced pattern work and more discoverable, less forced characters."
+completion_outcome: "You'll have a sharper framework for advanced pattern work, the mental discipline to access it in the moment, and more discoverable, less forced characters."
 audience: [performer]
 threads:
   - the-game-beneath-the-game
+  - quieting-the-planning-mind
   - character-as-discovery
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-04-22"
 ---
 
 At Level 2, you learn to find the game. At Level 3, you learn to heighten it. This path is Level 5: the game beneath the game.

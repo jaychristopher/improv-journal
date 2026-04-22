@@ -11,16 +11,17 @@ who_this_is_for:
   - "Teams that want to study the practices behind high-level group play."
 prerequisites:
   - "Enough stage experience to recognize the difference between technique and ensemble presence."
-estimated_time: "2 threads, about 60-75 minutes plus ensemble practice"
+estimated_time: "3 threads, about 90-105 minutes plus ensemble practice"
 practice_cadence: "Read a thread, then take one ensemble lens into rehearsal or performance."
-completion_outcome: "You'll have a clearer sense of how to train group mind, backline craft, and artistic voice together."
+completion_outcome: "You'll have a clearer sense of how to train group mind, the emotional conditions that make it possible, and your own artistic voice within the ensemble."
 audience: [performer]
 threads:
   - playing-together-at-the-highest-level
+  - the-inner-game-expanded
   - the-performers-edge
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-04-22"
 ---
 
 At a certain point, you know all the techniques. The question shifts from "how do I do this?" to "who am I when I do this?" and "how do we become more than the sum of our parts?"
