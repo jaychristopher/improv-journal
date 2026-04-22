@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CourseJsonLd } from "@/components/CourseJsonLd";
+import { LevelRedirect } from "@/components/LevelRedirect";
 import { SyllabusCheckmark, SyllabusProgress } from "@/components/SyllabusProgress";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
@@ -154,6 +155,8 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
               ))}
             </ul>
           </section>
+
+          <LevelRedirect level={firstAudience} context="path" />
         </header>
 
         <aside className="border-foreground/10 bg-foreground/[0.03] rounded-xl border p-6">

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { LevelRedirect } from "@/components/LevelRedirect";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { WhatsNext } from "@/components/WhatsNext";
 import { getAudioDuration } from "@/lib/audio-manifest";
@@ -309,6 +310,10 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
             pathTitle={entryPath.frontmatter.title}
             href={`/threads/${entryPathFirstThread.id}`}
           />
+        )}
+
+        {entryPath?.frontmatter.audience?.[0] && (
+          <LevelRedirect level={entryPath.frontmatter.audience[0]} context="bridge" />
         )}
       </div>
     </main>
