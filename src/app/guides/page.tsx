@@ -33,6 +33,11 @@ const CATEGORIES: GuideCategory[] = [
       "how-to-overcome-fear-of-failure",
       "fear-of-public-speaking",
       "stage-fright",
+      "how-to-stop-caring-what-people-think",
+      "how-to-be-more-assertive",
+      "how-to-deal-with-rejection",
+      "how-to-stop-people-pleasing",
+      "how-to-be-more-charismatic",
     ]),
   },
   {
@@ -45,6 +50,10 @@ const CATEGORIES: GuideCategory[] = [
       "interpersonal-communication-skills",
       "how-to-stop-overthinking-in-a-relationship",
       "how-to-deal-with-conflict",
+      "how-to-read-body-language",
+      "how-to-make-small-talk",
+      "how-to-have-difficult-conversations",
+      "types-of-listening",
     ]),
   },
   {
@@ -60,6 +69,7 @@ const CATEGORIES: GuideCategory[] = [
       "group-dynamics",
       "how-to-read-the-room",
       "how-to-give-feedback",
+      "emotional-safety",
     ]),
   },
   {
