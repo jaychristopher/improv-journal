@@ -82,16 +82,16 @@ We have 155 atoms but only 31 bridges. High-value atoms with search-demand keywo
 
 | # | Bridge Topic | Target Keywords | Combined Vol | KD | Entry Path |
 |---|-------------|----------------|-------------|----|-----------:|
-| 1 | How to stop caring what people think | how to stop caring what people think | 2,400 | 4 | systems-of-improv |
-| 2 | How to read body language | how to read body language | 2,100 | 2 | improv-for-life |
-| 3 | How to be more assertive | how to be more assertive | 2,000 | 0 | improv-for-life |
-| 4 | How to deal with rejection | how to deal with rejection | 1,700 | 0 | systems-of-improv |
-| 5 | How to stop people pleasing | how to stop people pleasing | 1,200 | 1 | improv-for-life |
-| 6 | Emotional safety | emotional safety, emotional safety in teams | 2,300 | 12 | improv-for-teams |
-| 7 | How to have difficult conversations | how to have difficult conversations | 600 | 6 | improv-for-life |
-| 8 | How to be more charismatic | how to be more charismatic | 700 | 6 | improv-for-life |
-| 9 | How to make small talk | how to make small talk | 2,200 | 41 | improv-for-life |
-| 10 | Types of listening | types of listening, types of listening skills | 2,000 | 7 | improv-for-life |
+| 1 | How to stop caring what people think | how to stop caring what people think | 2,400 | 4 | systems-of-improv | DONE |
+| 2 | How to read body language | how to read body language | 2,100 | 2 | improv-for-life | DONE |
+| 3 | How to be more assertive | how to be more assertive | 2,000 | 0 | improv-for-life | DONE |
+| 4 | How to deal with rejection | how to deal with rejection | 1,700 | 0 | systems-of-improv | DONE |
+| 5 | How to stop people pleasing | how to stop people pleasing | 1,200 | 1 | improv-for-life | DONE |
+| 6 | Emotional safety | emotional safety, emotional safety in teams | 2,300 | 12 | improv-for-teams | DONE |
+| 7 | How to have difficult conversations | how to have difficult conversations | 600 | 6 | improv-for-life | DONE |
+| 8 | How to be more charismatic | how to be more charismatic | 700 | 6 | improv-for-life | DONE |
+| 9 | How to make small talk | how to make small talk | 2,200 | 41 | improv-for-life | DONE |
+| 10 | Types of listening | types of listening, types of listening skills | 2,000 | 7 | improv-for-life | DONE |
 
 **Combined new monthly volume: ~17,200**
 
