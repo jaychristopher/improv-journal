@@ -22,6 +22,13 @@ The Physics of Connection is an educational site that applies improv principles 
 - Feedback, conflict resolution, and difficult conversations
 - Improv theory, traditions, and pedagogy
 
+## Interactive Tools
+
+- /tools/exercise-picker — Find the right improv exercise by level and skill focus. 17 exercises, filterable by beginner/intermediate/advanced and 6 focus areas.
+- /tools/exercise-picker/beginner — Beginner improv exercises
+- /tools/exercise-picker/beginner/presence — Beginner exercises for presence and listening
+- /tools/exercise-picker/for-teams — Team-focused improv exercises
+
 ## Most Cited Content
 
 - /how-to-stop-overthinking — How overthinking is a bandwidth problem, not a willpower problem

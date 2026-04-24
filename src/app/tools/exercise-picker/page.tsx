@@ -70,6 +70,34 @@ export default async function ExercisePickerPage() {
 
       <ExercisePickerClient exercises={exercises} />
 
+      {/* Browse by level — direct links to pre-filtered pages */}
+      <div className="mt-12 mb-4">
+        <h2 className="mb-4 text-lg font-semibold">Or browse by level</h2>
+        <div className="grid gap-3 sm:grid-cols-3">
+          <Link
+            href="/tools/exercise-picker/beginner"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 transition-colors"
+          >
+            <span className="font-medium">Beginner</span>
+            <span className="text-foreground/50 mt-0.5 block text-xs">No experience needed</span>
+          </Link>
+          <Link
+            href="/tools/exercise-picker/intermediate"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 transition-colors"
+          >
+            <span className="font-medium">Intermediate</span>
+            <span className="text-foreground/50 mt-0.5 block text-xs">Knows the basics</span>
+          </Link>
+          <Link
+            href="/tools/exercise-picker/advanced"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 transition-colors"
+          >
+            <span className="font-medium">Advanced</span>
+            <span className="text-foreground/50 mt-0.5 block text-xs">Experienced performers</span>
+          </Link>
+        </div>
+      </div>
+
       {/* SEO content sections — give Google text to index */}
       <div className="border-foreground/10 mt-20 space-y-12 border-t pt-12">
         <section>

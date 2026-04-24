@@ -341,6 +341,17 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
           </aside>
         )}
       </div>
+
+      {fm.type === "exercise" && (
+        <div className="border-foreground/10 mt-12 border-t pt-8">
+          <Link
+            href="/tools/exercise-picker"
+            className="text-foreground/40 hover:text-foreground/60 text-sm underline decoration-dotted"
+          >
+            Find more exercises like this &rarr;
+          </Link>
+        </div>
+      )}
     </main>
   );
 }
