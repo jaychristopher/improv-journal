@@ -73,6 +73,19 @@ export default async function ImprovGamesPage() {
         </p>
       </header>
 
+      <Link
+        href="/tools/exercise-picker"
+        className="border-foreground/10 bg-foreground/[0.03] hover:border-foreground/30 mb-8 block rounded-xl border p-5 transition-colors"
+      >
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
+        <span className="mt-1 block font-semibold">
+          Not sure where to start? Try the Exercise Picker &rarr;
+        </span>
+        <span className="text-foreground/50 mt-1 block text-sm">
+          Answer 2 questions, get 3 exercises matched to your group.
+        </span>
+      </Link>
+
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
       {/* SEO sections targeting long-tail keywords */}
