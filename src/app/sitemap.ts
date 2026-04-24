@@ -50,15 +50,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entries.push({ url: `${SITE_URL}${hub}`, priority: 0.7, changeFrequency: "monthly" });
   }
 
-  // Tools (free interactive tools)
-  const tools = [
-    "/tools/exercise-picker",
-    "/tools/exercise-picker/for-teams",
-    "/tools/exercise-picker/for-beginners",
-    "/tools/exercise-picker/warm-ups",
-  ];
-  for (const tool of tools) {
-    entries.push({ url: `${SITE_URL}${tool}`, priority: 0.7, changeFrequency: "monthly" });
+  // Tools — exercise picker with level/focus hierarchy
+  const levels = ["beginner", "intermediate", "advanced"];
+  const focuses = ["presence", "ensemble", "emotion", "courage", "physicality", "recovery"];
+  entries.push({
+    url: `${SITE_URL}/tools/exercise-picker`,
+    priority: 0.7,
+    changeFrequency: "monthly",
+  });
+  for (const level of levels) {
+    entries.push({
+      url: `${SITE_URL}/tools/exercise-picker/${level}`,
+      priority: 0.6,
+      changeFrequency: "monthly",
+    });
+    for (const focus of focuses) {
+      entries.push({
+        url: `${SITE_URL}/tools/exercise-picker/${level}/${focus}`,
+        priority: 0.5,
+        changeFrequency: "monthly",
+      });
+    }
   }
 
   // Sub-hub pages
