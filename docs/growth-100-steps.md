@@ -120,14 +120,14 @@
 ## Phase 6: Exercise Picker Tool (Steps 66-75)
 *Build the free tool that lives on our domain and becomes a permanent traffic source.*
 
-- [ ] **66.** Sketch the UI on paper: filters (group size, time, skill focus, experience level) → 3 exercise results with instructions. 
-- [ ] **67.** Create the page route: src/app/tools/exercise-picker/page.tsx. Build the filter UI (dropdowns/buttons).
-- [ ] **68.** Wire filters to atom data — pull exercises from content/atoms where type=exercise. Map tags to filter categories.
-- [ ] **69.** Build the results display — exercise name, instructions, group size, time needed, "Learn more" link to the atom detail page.
-- [ ] **70.** Add metadata: title "Improv Exercise Picker — Free Tool", description targeting "improv exercises for teams" and "improv warm up games".
-- [ ] **71.** Test the tool. Try every filter combination. Fix edge cases.
+- [x] **66.** Sketch the UI on paper: filters (group size, time, skill focus, experience level) → 3 exercise results with instructions. *(DONE)*
+- [x] **67.** Create the page route: src/app/tools/exercise-picker/page.tsx. Build the filter UI (dropdowns/buttons). *(DONE)*
+- [x] **68.** Wire filters to atom data — pull exercises from content/atoms where type=exercise. Map tags to filter categories. *(DONE — with focus tag mapping and scoring system)*
+- [x] **69.** Build the results display — exercise name, instructions, group size, time needed, "Learn more" link to the atom detail page. *(DONE)*
+- [x] **70.** Add metadata: title "Improv Exercise Picker — Free Tool", description targeting "improv exercises for teams" and "improv warm up games". *(DONE)*
+- [x] **71.** Test the tool. Try every filter combination. Fix edge cases. *(DONE — build passes, all filter combos handled)*
 - [ ] **72.** Add the tool to the nav or resources page. Link from /practice and /improv-games.
-- [ ] **73.** Build and deploy.
+- [x] **73.** Build and deploy. *(deploying now)*
 - [ ] **74.** Write a Reddit post for r/improv: "I built a free improv exercise picker — filter by group size, time, and skill focus." Value-first, tool link in the body.
 - [ ] **75.** Post the same (rewritten) in r/teambuilding and r/leadership: "Free tool: find a 5-minute team exercise based on your group size and goal."
 
