@@ -15,6 +15,8 @@ interface Exercise {
 
 interface ExercisePickerClientProps {
   exercises: Exercise[];
+  /** Pre-set the level filter and hide the level selector */
+  defaultLevel?: Level;
 }
 
 type Level = "beginner" | "intermediate" | "advanced" | null;
@@ -105,10 +107,11 @@ function scoreExercise(exercise: Exercise, level: Level, focus: Focus): number {
   return score;
 }
 
-export function ExercisePickerClient({ exercises }: ExercisePickerClientProps) {
-  const [level, setLevel] = useState<Level>(null);
+export function ExercisePickerClient({ exercises, defaultLevel }: ExercisePickerClientProps) {
+  const [level, setLevel] = useState<Level>(defaultLevel ?? null);
   const [focus, setFocus] = useState<Focus>(null);
   const [results, setResults] = useState<Exercise[] | null>(null);
+  const hideLevel = defaultLevel !== undefined && defaultLevel !== null;
 
   function pickExercises() {
     let candidates = exercises.filter((e) => matchesLevel(e, level) && matchesFocus(e, focus));
@@ -207,29 +210,31 @@ export function ExercisePickerClient({ exercises }: ExercisePickerClientProps) {
 
   return (
     <div className="space-y-10">
-      {/* Step 1: Level */}
-      <section>
-        <h2 className="mb-1 text-lg font-semibold">What level is the group?</h2>
-        <p className="text-foreground/40 mb-4 text-sm">
-          Pick the experience level of most participants.
-        </p>
-        <div className="space-y-2">
-          {LEVEL_OPTIONS.map((option) => (
-            <button
-              key={option.value}
-              onClick={() => setLevel(option.value)}
-              className={`block w-full cursor-pointer rounded-lg border p-4 text-left transition-colors ${
-                level === option.value
-                  ? "border-foreground/30 bg-foreground/5"
-                  : "border-foreground/10 bg-surface hover:border-foreground/20"
-              }`}
-            >
-              <span className="font-medium">{option.label}</span>
-              <span className="text-foreground/50 ml-2 text-sm">{option.desc}</span>
-            </button>
-          ))}
-        </div>
-      </section>
+      {/* Step 1: Level (hidden when pre-set by variant page) */}
+      {!hideLevel && (
+        <section>
+          <h2 className="mb-1 text-lg font-semibold">What level is the group?</h2>
+          <p className="text-foreground/40 mb-4 text-sm">
+            Pick the experience level of most participants.
+          </p>
+          <div className="space-y-2">
+            {LEVEL_OPTIONS.map((option) => (
+              <button
+                key={option.value}
+                onClick={() => setLevel(option.value)}
+                className={`block w-full cursor-pointer rounded-lg border p-4 text-left transition-colors ${
+                  level === option.value
+                    ? "border-foreground/30 bg-foreground/5"
+                    : "border-foreground/10 bg-surface hover:border-foreground/20"
+                }`}
+              >
+                <span className="font-medium">{option.label}</span>
+                <span className="text-foreground/50 ml-2 text-sm">{option.desc}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Step 2: Focus */}
       <section>

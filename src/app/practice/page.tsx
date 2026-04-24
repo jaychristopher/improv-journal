@@ -60,6 +60,19 @@ export default async function PracticePage() {
         </p>
       </header>
 
+      <Link
+        href="/tools/exercise-picker"
+        className="border-foreground/10 bg-foreground/[0.03] hover:border-foreground/30 mb-8 block rounded-xl border p-5 transition-colors"
+      >
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
+        <span className="mt-1 block font-semibold">
+          Exercise Picker: find the right exercise in seconds &rarr;
+        </span>
+        <span className="text-foreground/50 mt-1 block text-sm">
+          Filter by level and skill focus. Great for planning classes, workshops, and team meetings.
+        </span>
+      </Link>
+
       <div className="space-y-4">
         {sections.map((s) => (
           <Link

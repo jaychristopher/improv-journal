@@ -22,6 +22,11 @@ const SECTIONS = [
     desc: "Practical guides for overthinking, stage fright, team dynamics, feedback, and more.",
   },
   {
+    href: "/tools/exercise-picker",
+    label: "Exercise Picker",
+    desc: "Free tool — find the right improv exercise for your group by level and focus.",
+  },
+  {
     href: "/listen",
     label: "Listen",
     desc: "Podcast conversations exploring the physics of human connection through improv.",

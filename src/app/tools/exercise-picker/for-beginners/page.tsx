@@ -61,7 +61,7 @@ export default async function ExercisePickerForBeginnersPage() {
         </p>
       </header>
 
-      <ExercisePickerClient exercises={exercises} />
+      <ExercisePickerClient exercises={exercises} defaultLevel="beginner" />
 
       <div className="border-foreground/10 mt-16 space-y-8 border-t pt-12">
         <section>

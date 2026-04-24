@@ -50,6 +50,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entries.push({ url: `${SITE_URL}${hub}`, priority: 0.7, changeFrequency: "monthly" });
   }
 
+  // Tools (free interactive tools)
+  const tools = [
+    "/tools/exercise-picker",
+    "/tools/exercise-picker/for-teams",
+    "/tools/exercise-picker/for-beginners",
+    "/tools/exercise-picker/warm-ups",
+  ];
+  for (const tool of tools) {
+    entries.push({ url: `${SITE_URL}${tool}`, priority: 0.7, changeFrequency: "monthly" });
+  }
+
   // Sub-hub pages
   const subHubs = [
     "/how-it-works/principles",
