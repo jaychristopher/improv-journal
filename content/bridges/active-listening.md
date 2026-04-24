@@ -18,6 +18,8 @@ created: "2026-04-05"
 
 # Active Listening: Why You're Doing It Wrong
 
+**Active listening is the practice of receiving another person's full communication — words, tone, emotion, body language, and silence — without composing your response while they speak.** Most listening advice focuses on performing the signals of attention (eye contact, nodding, paraphrasing) while the real skill is redirecting your internal attention from response-planning to genuine reception.
+
 You've read the articles. Make eye contact. Don't interrupt. Nod. Reflect back what they said. Ask open-ended questions. Put your phone away.
 
 You've done all of this while simultaneously composing your reply in your head.

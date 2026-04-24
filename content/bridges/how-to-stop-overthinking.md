@@ -19,6 +19,8 @@ created: "2026-04-05"
 
 # How to Stop Overthinking: The Bandwidth Problem
 
+**Overthinking is not a character flaw — it's a bandwidth problem.** Your brain has a limited processing budget, and when you spend it on evaluating, simulating, and rehearsing, there's nothing left for the actual moment in front of you. Improv performers call this _internal computation_ — the planning loop that consumes the attention you need for connection, creativity, and action.
+
 You know the pattern. Someone asks you a question and instead of answering, your brain launches a background process: _What's the right thing to say? How will this land? What if I'm wrong?_ By the time you've run the simulation, the moment is gone. You deliver something safe and dead.
 
 Or: it's 2am and you're replaying a conversation from Tuesday, rewriting your lines, rehearsing what you should have said. Your body is in bed. Your brain is in a meeting that ended three days ago.

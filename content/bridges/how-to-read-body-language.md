@@ -12,6 +12,8 @@ created: "2026-04-22"
 
 # How to Read Body Language: What 60 Years of Improv Performance Reveals
 
+**Body language is not a code to decode — it's a conversation to join.** Reading bodies effectively means tracking changes (not positions), reading the whole person (not individual signals), and reading relationships between bodies (not just individuals). Improv performers read bodies in real time under performance pressure, and what they've learned contradicts most body language advice.
+
 Most body language advice treats the body like a code: crossed arms means defensive, eye contact means engaged, leaning in means interested. Memorize the signals, decode the person.
 
 This is almost entirely wrong. Crossed arms might mean someone is cold. Eye contact might mean someone is performing attentiveness. Leaning in might mean the chair is uncomfortable. Individual gestures, in isolation, tell you almost nothing.

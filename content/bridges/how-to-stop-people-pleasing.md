@@ -12,6 +12,8 @@ created: "2026-04-22"
 
 # How to Stop People Pleasing: What Improv Teaches About Authentic Response
 
+**People pleasing is self-blocking — the same mechanism that kills improv scenes.** You have an authentic response (a boundary, a disagreement, a need) and you suppress it before it reaches the surface, replacing it with accommodation. Improv reveals why this happens and how to reverse it.
+
 People pleasing looks like generosity. It feels like kindness. And most advice treats it as an excess of caring — "you care too much about what others want."
 
 But improv reveals something more specific: people pleasing is a form of **blocking** — the same mechanism that kills improv scenes. And understanding it as blocking changes everything about how you address it.

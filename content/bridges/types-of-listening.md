@@ -13,6 +13,8 @@ created: "2026-04-22"
 
 # Types of Listening: The Improv Framework for Understanding How We Hear
 
+**There are three listening modes that matter: broadcast (composing your reply while they talk), evaluative (judging what they say in real time), and receptive (fully receiving their complete communication without agenda).** Most people default to broadcast. Improv performers train receptive listening because their art form dies without it.
+
 You've probably heard that there are different "types of listening" — active vs. passive, empathic vs. critical. Most frameworks list five to seven types and advise you to use the right one for the right context. This is technically correct and practically useless, because in the moment, you're not choosing a listening type from a menu. You're doing whatever your brain defaults to.
 
 Improv offers a more useful framework — not a taxonomy of types, but a way of understanding what your attention is actually doing when you listen, and how to redirect it.

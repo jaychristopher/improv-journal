@@ -35,9 +35,9 @@
 - [ ] **13.** Implement fix #1 from the AI readiness report.
 - [ ] **14.** Implement fix #2 from the AI readiness report.
 - [ ] **15.** Implement fix #3 from the AI readiness report.
-- [ ] **16.** Add llms.txt or llms-full.txt to public/ if recommended (plain-text site summary for AI crawlers).
-- [ ] **17.** Review our top 5 bridge pages — does each one have a clear, quotable one-sentence answer in the first paragraph? Fix any that don't.
-- [ ] **18.** Review our top 5 bridge pages — does each one have a numbered list or clear framework that AI could extract? Add if missing.
+- [x] **16.** Add llms.txt or llms-full.txt to public/ if recommended (plain-text site summary for AI crawlers). *(DONE: created public/llms.txt with site structure, key topics, and most-cited content.)*
+- [x] **17.** Review our top 5 bridge pages — does each one have a clear, quotable one-sentence answer in the first paragraph? Fix any that don't. *(DONE: added bold quotable definitions to how-to-stop-overthinking, active-listening, how-to-stop-caring, how-to-read-body-language, how-to-be-more-assertive, how-to-stop-people-pleasing, types-of-listening.)*
+- [x] **18.** Review our top 5 bridge pages — does each one have a numbered list or clear framework that AI could extract? Add if missing. *(DONE: rules-of-improv already has numbered list, types-of-listening has 3-mode framework, most bridges already have numbered technique sections.)*
 - [ ] **19.** Re-run isitagentready.com. Verify fixes landed.
 - [ ] **20.** Re-search our 3 target queries in ChatGPT/Perplexity/Claude. Compare to step 4-6 baselines. (Results won't change yet — this establishes the check cadence.)
 

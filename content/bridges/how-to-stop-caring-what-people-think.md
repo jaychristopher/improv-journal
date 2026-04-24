@@ -12,6 +12,8 @@ created: "2026-04-22"
 
 # How to Stop Caring What People Think: The Performer's Secret
 
+**The fear of what people think is not a confidence problem — it's an audience problem.** You're performing for an imaginary internal critic instead of engaging with the real people in front of you. Improv performers face this exact challenge nightly and have developed specific techniques to redirect attention from self-monitoring to connection.
+
 Here's a paradox: improv performers care deeply about their audience's experience and simultaneously don't care at all what the audience thinks of them personally. These aren't contradictions. They're two different kinds of caring — and the distinction is the entire answer to the question you're asking.
 
 Most advice on "not caring what people think" falls into two useless categories: "just don't care" (which is like telling an insomniac to "just sleep") or "their opinion doesn't matter" (which is false — social feedback is how humans navigate reality). Neither works because neither addresses the actual mechanism.

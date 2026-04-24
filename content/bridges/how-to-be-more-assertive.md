@@ -12,6 +12,8 @@ created: "2026-04-22"
 
 # How to Be More Assertive: The Status Secret from Improv
 
+**Assertiveness is not a personality trait — it's a set of physical behaviors called "status" that are learnable and adjustable.** Keith Johnstone identified that assertiveness is communicated through stillness, eye contact, pausing, and spatial claiming — all trainable skills, not fixed character traits.
+
 Assertiveness advice usually boils down to: speak up, set boundaries, don't apologize. Useful in theory. Useless in practice — because the problem was never not knowing *what* to do. The problem is that when the moment arrives, your body does something different from what your mind intended.
 
 You planned to ask for the raise. But when your boss looked at you, your voice got quieter, your posture shrank, and you heard yourself saying "It's not a big deal, but I was wondering if maybe..." That's not a knowledge problem. It's a status problem.
