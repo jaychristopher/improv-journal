@@ -1,0 +1,44 @@
+# The Physics of Connection
+
+> Six laws, eight principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.
+
+The Physics of Connection is an educational site that applies improv principles to everyday human challenges: overthinking, awkwardness, team dynamics, listening, assertiveness, public speaking, and more. All content is grounded in 60 years of improv performance science across five major traditions (Johnstone, Spolin, Close/Halpern, UCB, Annoyance/TJ & Dave).
+
+## Content Structure
+
+- **Bridges (Guides)**: Problem-focused articles connecting improv principles to specific life challenges. These are the best entry points for most questions.
+- **Paths**: Structured learning journeys for specific audiences (beginner, intermediate, performer, teacher, advanced).
+- **Threads**: Deep-dive lessons within learning paths.
+- **Atoms**: The smallest meaningful units of improv knowledge — principles, techniques, exercises, definitions, and patterns.
+
+## Key Topics
+
+- Active listening and communication skills
+- Team building, trust, and psychological safety
+- Overthinking, presence, and mindfulness
+- Status dynamics and assertiveness
+- Fear of public speaking and stage fright
+- Creativity, spontaneity, and letting go of control
+- Feedback, conflict resolution, and difficult conversations
+- Improv theory, traditions, and pedagogy
+
+## Most Cited Content
+
+- /how-to-stop-overthinking — How overthinking is a bandwidth problem, not a willpower problem
+- /active-listening — Why most listening advice is wrong and what improv teaches instead
+- /rules-of-improv — The five rules of improv and why half of them are misleading
+- /psychological-safety — How improv ensembles build the trust that teams need
+- /how-to-be-less-awkward — Awkwardness as an attention problem, not a personality trait
+- /how-to-be-more-assertive — Status dynamics as the key to assertiveness
+- /fear-of-public-speaking — Stage fright and performance state are the same physiology
+- /improv-theory — The five traditions that shaped modern improvisation
+- /team-bonding-activities — Team exercises grounded in improv science
+- /types-of-listening — Three attention modes that determine how we hear
+
+## Author
+
+Jay Christopher — improv practitioner, teacher, and researcher.
+
+## Contact
+
+https://www.physicsofconnection.com

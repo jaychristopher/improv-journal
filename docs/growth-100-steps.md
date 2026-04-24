@@ -12,12 +12,12 @@
 *Set up everything before creating or distributing anything.*
 
 ### AI Readiness
-- [ ] **1.** Run physicsofconnection.com through isitagentready.com. Screenshot results.
+- [ ] **1.** Run physicsofconnection.com through isitagentready.com. Screenshot results. *(do in browser — tool requires interactive JS)*
 - [ ] **2.** Read the report. List every fix needed in a checklist.
-- [ ] **3.** Check robots.txt — ensure AI crawlers (GPTBot, anthropic-ai, PerplexityBot, Google-Extended) are allowed. Fix if blocked.
-- [ ] **4.** Search "what is improv" in ChatGPT. Note whether we appear. Save the response.
-- [ ] **5.** Search "how to stop overthinking" in Perplexity. Note whether we appear. Save.
-- [ ] **6.** Search "rules of improv" in Claude. Note whether we appear. Save.
+- [x] **3.** Check robots.txt — ensure AI crawlers (GPTBot, anthropic-ai, PerplexityBot, Google-Extended) are allowed. Fix if blocked. *(DONE: added explicit rules for GPTBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, Google-Extended. Created llms.txt.)*
+- [ ] **4.** Search "what is improv" in ChatGPT. Note whether we appear. Save the response. *(do in browser)*
+- [ ] **5.** Search "how to stop overthinking" in Perplexity. Note whether we appear. Save. *(do in browser)*
+- [ ] **6.** Search "rules of improv" in Claude. Note whether we appear. Save. *(do in browser)*
 
 ### Account Setup
 - [ ] **7.** Create or verify Reddit account for community engagement. Set profile picture, bio linking to site, hide post history (Settings > Curate Profile > Hide All).
