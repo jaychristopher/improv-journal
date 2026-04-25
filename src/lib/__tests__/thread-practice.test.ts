@@ -18,7 +18,10 @@ describe("thread practice recommendations", () => {
     const recommendations = await getPracticeRecommendationsForThread("building-on-offers");
 
     expect(recommendations.length).toBeGreaterThan(0);
-    expect(recommendations.some((item) => item.id === "yes-and-chain")).toBe(true);
+    expect(recommendations.every((item) => item.source === "linked")).toBe(true);
+    expect(recommendations.map((item) => item.id)).toEqual(
+      expect.arrayContaining(["mirroring", "last-word-response", "gift-giving"]),
+    );
   });
 
   it("returns an empty list for unknown threads", async () => {

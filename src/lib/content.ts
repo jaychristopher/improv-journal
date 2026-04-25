@@ -27,6 +27,77 @@ import type {
 } from "./schema";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
+const AUTOLINK_BLOCKED_NODE_TYPES = new Set([
+  "code",
+  "definition",
+  "heading",
+  "html",
+  "image",
+  "imageReference",
+  "inlineCode",
+  "link",
+  "linkReference",
+]);
+const GENERIC_ONE_WORD_ATOM_TITLES = new Set([
+  "audience",
+  "bandwidth",
+  "beats",
+  "callback",
+  "character",
+  "coherence",
+  "commitment",
+  "connections",
+  "discovery",
+  "ensemble",
+  "environment",
+  "judgment",
+  "mapping",
+  "opening",
+  "pacing",
+  "point-of-view",
+  "presence",
+  "relationship",
+  "run",
+  "signal",
+  "status",
+  "steering",
+  "suggestion",
+  "trust",
+  "vulnerability",
+  "want",
+  "warm-up",
+]);
+const LEGACY_HUB_ROUTE_MAP: Record<string, string> = {
+  "/concepts/antipatterns": "/how-it-works/diagnosis",
+  "/concepts/definitions": "/practice/vocabulary",
+  "/concepts/exercises": "/practice/exercises",
+  "/concepts/formats": "/practice/formats",
+  "/concepts/laws": "/how-it-works",
+  "/concepts/patterns": "/how-it-works/diagnosis",
+  "/concepts/principles": "/how-it-works/principles",
+  "/concepts/techniques": "/practice/techniques",
+};
+
+type RoutableContentSubdir = "atoms" | "bridges" | "paths" | "shows" | "sources" | "threads";
+
+interface MarkdownNode {
+  children?: MarkdownNode[];
+  title?: string;
+  type: string;
+  url?: string;
+  value?: string;
+}
+
+interface ContentLinkTarget {
+  matcher: RegExp;
+  phrase: string;
+  priority: number;
+  title: string;
+  url: string;
+}
+
+let _bridgeSlugSet: Set<string> | null = null;
+let _contentLinkTargets: ContentLinkTarget[] | null = null;
 
 // ─── Source auto-linking ────────────────────────────────────────────────────
 // Maps italic book/source titles in rendered HTML to their /library/ reference pages.
@@ -67,6 +138,341 @@ function linkSources(htmlStr: string): string {
   return result;
 }
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function normalizePhrase(value: string): string {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function titleCaseLike(sourceWord: string, nextWord: string): string {
+  if (sourceWord === sourceWord.toUpperCase()) return nextWord.toUpperCase();
+  if (sourceWord[0] === sourceWord[0]?.toUpperCase()) {
+    return `${nextWord[0]?.toUpperCase() ?? ""}${nextWord.slice(1)}`;
+  }
+  return nextWord;
+}
+
+function pluralizeAlias(phrase: string): string | null {
+  const words = phrase.split(/\s+/);
+  const lastWord = words.at(-1);
+  if (!lastWord) return null;
+
+  const replacements: Record<string, string> = {
+    drill: "drills",
+    exercise: "exercises",
+    offer: "offers",
+    scene: "scenes",
+  };
+  const replacement = replacements[lastWord.toLowerCase()];
+  if (!replacement) return null;
+
+  words[words.length - 1] = titleCaseLike(lastWord, replacement);
+  return words.join(" ");
+}
+
+function getTitlePrefix(title: string): string | null {
+  const prefix = title.split(":")[0]?.trim();
+  return prefix && prefix !== title ? prefix : null;
+}
+
+function shouldAutolinkPhrase(
+  phrase: string,
+  kind: "atom" | "path" | "thread",
+  atomType?: AtomType,
+) {
+  const normalized = normalizePhrase(phrase);
+  const wordCount = normalized.split(/\s+/).length;
+  if (normalized.length < 6) return false;
+
+  if (kind === "path" || kind === "thread") {
+    return wordCount >= 2 || normalized.length >= 18;
+  }
+
+  if (wordCount >= 2) return true;
+  if (GENERIC_ONE_WORD_ATOM_TITLES.has(normalized.toLowerCase())) return false;
+
+  if (atomType === "definition") return normalized.length >= 12;
+  return normalized.length >= 9;
+}
+
+function getAutolinkPhrases(title: string, kind: "atom" | "path" | "thread", atomType?: AtomType) {
+  const variants = new Set<string>();
+  const normalizedTitle = normalizePhrase(title);
+  if (normalizedTitle) variants.add(normalizedTitle);
+
+  const titlePrefix = getTitlePrefix(title);
+  if (titlePrefix) variants.add(normalizePhrase(titlePrefix));
+
+  for (const variant of [...variants]) {
+    const punctuationFree = normalizePhrase(variant.replace(/,/g, ""));
+    if (punctuationFree && punctuationFree !== variant) {
+      variants.add(punctuationFree);
+    }
+
+    if (kind === "atom") {
+      const plural = pluralizeAlias(variant);
+      if (plural) variants.add(normalizePhrase(plural));
+    }
+  }
+
+  return [...variants].filter((phrase) => shouldAutolinkPhrase(phrase, kind, atomType));
+}
+
+function createAutolinkMatcher(phrase: string): RegExp {
+  return new RegExp(`(?<![A-Za-z0-9])${escapeRegExp(phrase)}(?![A-Za-z0-9])`, "gi");
+}
+
+function readFrontmatterEntries<T>(subdir: string): { frontmatter: T; slug: string }[] {
+  const dir = path.join(CONTENT_DIR, subdir);
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+      const { data } = matter(raw);
+      return {
+        frontmatter: data as T,
+        slug: path.basename(file, ".md"),
+      };
+    });
+}
+
+function getContentDocumentUrl(
+  subdir: RoutableContentSubdir,
+  slug: string,
+  frontmatter: Record<string, unknown>,
+): string | null {
+  switch (subdir) {
+    case "atoms":
+      if (typeof frontmatter.id !== "string" || typeof frontmatter.type !== "string") return null;
+      return getAtomUrl({ id: frontmatter.id, type: frontmatter.type as AtomType });
+    case "bridges":
+      return `/${slug}`;
+    case "paths":
+      return typeof frontmatter.id === "string" ? `/paths/${frontmatter.id}` : null;
+    case "shows":
+      return typeof frontmatter.id === "string" ? `/listen/${frontmatter.id}` : null;
+    case "sources":
+      return typeof frontmatter.id === "string" ? `/sources/${frontmatter.id}` : null;
+    case "threads":
+      return typeof frontmatter.id === "string" ? `/threads/${frontmatter.id}` : null;
+    default:
+      return null;
+  }
+}
+
+function getBridgeSlugSet(): Set<string> {
+  if (_bridgeSlugSet) return _bridgeSlugSet;
+  _bridgeSlugSet = new Set(
+    readFrontmatterEntries<BridgeFrontmatter>("bridges").map((bridge) => bridge.slug),
+  );
+  return _bridgeSlugSet;
+}
+
+function getContentLinkTargets(): ContentLinkTarget[] {
+  if (_contentLinkTargets) return _contentLinkTargets;
+
+  const targets = new Map<
+    string,
+    { phrase: string; priority: number; title: string; url: string }
+  >();
+  const addTarget = (phrase: string, url: string, title: string, priority: number) => {
+    const key = phrase.toLowerCase();
+    const existing = targets.get(key);
+    if (!existing || priority > existing.priority) {
+      targets.set(key, { phrase, priority, title, url });
+    }
+  };
+
+  for (const atom of readFrontmatterEntries<AtomFrontmatter>("atoms")) {
+    const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
+    const phrases = getAutolinkPhrases(atom.frontmatter.title, "atom", atom.frontmatter.type);
+    for (const phrase of phrases) {
+      addTarget(phrase, url, atom.frontmatter.title, 200);
+    }
+  }
+
+  for (const thread of readFrontmatterEntries<ThreadFrontmatter>("threads")) {
+    const url = `/threads/${thread.frontmatter.id}`;
+    const phrases = getAutolinkPhrases(thread.frontmatter.title, "thread");
+    for (const phrase of phrases) {
+      addTarget(phrase, url, thread.frontmatter.title, 300);
+    }
+  }
+
+  for (const pathEntry of readFrontmatterEntries<PathFrontmatter>("paths")) {
+    const url = `/paths/${pathEntry.frontmatter.id}`;
+    const phrases = getAutolinkPhrases(pathEntry.frontmatter.title, "path");
+    for (const phrase of phrases) {
+      addTarget(phrase, url, pathEntry.frontmatter.title, 400);
+    }
+  }
+
+  _contentLinkTargets = [...targets.values()]
+    .map((target) => ({
+      ...target,
+      matcher: createAutolinkMatcher(target.phrase),
+    }))
+    .sort(
+      (a, b) =>
+        b.phrase.length - a.phrase.length ||
+        b.priority - a.priority ||
+        a.phrase.localeCompare(b.phrase),
+    );
+
+  return _contentLinkTargets;
+}
+
+function splitHrefSuffix(href: string): { pathname: string; suffix: string } {
+  const match = href.match(/^([^?#]+)([?#].*)?$/);
+  return {
+    pathname: match?.[1] ?? href,
+    suffix: match?.[2] ?? "",
+  };
+}
+
+function rewriteLegacyInternalHref(href: string): string {
+  if (!href.startsWith("/")) return href;
+
+  const { pathname, suffix } = splitHrefSuffix(href);
+  const directHubMatch = LEGACY_HUB_ROUTE_MAP[pathname];
+  if (directHubMatch) return `${directHubMatch}${suffix}`;
+
+  if (pathname.startsWith("/atoms/")) {
+    const atomId = pathname.replace(/^\/atoms\//, "");
+    const atom = getAtomUrlMap().get(atomId);
+    return atom ? `${atom.url}${suffix}` : href;
+  }
+
+  if (pathname.startsWith("/guides/")) {
+    const bridgeSlug = pathname.replace(/^\/guides\//, "");
+    return getBridgeSlugSet().has(bridgeSlug) ? `/${bridgeSlug}${suffix}` : href;
+  }
+
+  return href;
+}
+
+function rewriteLegacyInternalLinks(htmlStr: string): string {
+  return htmlStr
+    .replace(/href="([^"]+)"/g, (match, href) => {
+      const rewrittenHref = rewriteLegacyInternalHref(href);
+      return rewrittenHref === href ? match : `href="${rewrittenHref}"`;
+    })
+    .replace(
+      /<a href="\/">The Physics of Connection<\/a>/g,
+      '<a href="/paths/physics-of-connection">The Physics of Connection</a>',
+    );
+}
+
+function collectExistingLinkUrls(node: MarkdownNode, urls: Set<string>) {
+  if (node.type === "link" && typeof node.url === "string") {
+    urls.add(rewriteLegacyInternalHref(node.url));
+  }
+
+  for (const child of node.children ?? []) {
+    collectExistingLinkUrls(child, urls);
+  }
+}
+
+function autolinkTextNode(
+  value: string,
+  currentUrl: string | null,
+  linkedUrls: Set<string>,
+): MarkdownNode[] {
+  const nodes: MarkdownNode[] = [];
+  const targets = getContentLinkTargets();
+  let cursor = 0;
+
+  while (cursor < value.length) {
+    let bestMatch: {
+      end: number;
+      start: number;
+      target: ContentLinkTarget;
+      text: string;
+    } | null = null;
+
+    for (const target of targets) {
+      if (target.url === currentUrl || linkedUrls.has(target.url)) continue;
+
+      target.matcher.lastIndex = cursor;
+      const match = target.matcher.exec(value);
+      if (!match) continue;
+
+      const start = match.index;
+      const text = match[0];
+      const end = start + text.length;
+
+      if (
+        !bestMatch ||
+        start < bestMatch.start ||
+        (start === bestMatch.start &&
+          (text.length > bestMatch.text.length ||
+            (text.length === bestMatch.text.length && target.priority > bestMatch.target.priority)))
+      ) {
+        bestMatch = { end, start, target, text };
+      }
+    }
+
+    if (!bestMatch) {
+      if (cursor < value.length) {
+        nodes.push({ type: "text", value: value.slice(cursor) });
+      }
+      break;
+    }
+
+    if (bestMatch.start > cursor) {
+      nodes.push({ type: "text", value: value.slice(cursor, bestMatch.start) });
+    }
+
+    nodes.push({
+      children: [{ type: "text", value: bestMatch.text }],
+      title: bestMatch.target.title,
+      type: "link",
+      url: bestMatch.target.url,
+    });
+    linkedUrls.add(bestMatch.target.url);
+    cursor = bestMatch.end;
+  }
+
+  return nodes.length > 0 ? nodes : [{ type: "text", value }];
+}
+
+function interlinkContentTree(
+  node: MarkdownNode,
+  currentUrl: string | null,
+  linkedUrls: Set<string>,
+) {
+  if (!node.children || AUTOLINK_BLOCKED_NODE_TYPES.has(node.type)) return;
+
+  const nextChildren: MarkdownNode[] = [];
+
+  for (const child of node.children) {
+    if (child.type === "text" && typeof child.value === "string") {
+      nextChildren.push(...autolinkTextNode(child.value, currentUrl, linkedUrls));
+      continue;
+    }
+
+    interlinkContentTree(child, currentUrl, linkedUrls);
+    nextChildren.push(child);
+  }
+
+  node.children = nextChildren;
+}
+
+function remarkInterlinkDocuments(options: { currentUrl: string | null }) {
+  return (tree: MarkdownNode) => {
+    const linkedUrls = new Set<string>();
+    if (options.currentUrl) linkedUrls.add(options.currentUrl);
+
+    collectExistingLinkUrls(tree, linkedUrls);
+    interlinkContentTree(tree, options.currentUrl, linkedUrls);
+  };
+}
+
 // ─── File loading ────────────────────────────────────────────────────────────
 
 interface ContentFile<T> {
@@ -86,13 +492,23 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
   for (const file of files) {
     const raw = fs.readFileSync(path.join(dir, file), "utf-8");
     const { data, content } = matter(raw);
-    const rendered = await remark().use(remarkGfm).use(html).process(content);
+    const slug = path.basename(file, ".md");
+    const currentUrl = getContentDocumentUrl(
+      subdir as RoutableContentSubdir,
+      slug,
+      data as Record<string, unknown>,
+    );
+    const rendered = await remark()
+      .use(remarkGfm)
+      .use(remarkInterlinkDocuments, { currentUrl })
+      .use(html)
+      .process(content);
 
     results.push({
       frontmatter: data as T,
       content,
-      html: linkAtomRefs(linkSources(rendered.toString())),
-      slug: path.basename(file, ".md"),
+      html: rewriteLegacyInternalLinks(linkAtomRefs(linkSources(rendered.toString()))),
+      slug,
     });
   }
 
