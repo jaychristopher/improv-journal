@@ -67,6 +67,15 @@ Layout: 5×2 grid, 1920×1080 each, 200px gap.
 4. Once approved, export each frame as PNG (2x for retina) for import into DaVinci Resolve.
 5. Tween/animate transitions per `keyframe-strategy.md` Part 3.
 
+## All three FINAL pages (channel-consistent design language)
+
+Same headline font (Playfair Display Black), same Inter body/utility, same gradient background, same watermark, same script-position peak badges across L1, L23, and L31.
+
+**Variant pull patterns** observed across the three videos:
+- **L1 (mental game / inner work):** 7 typographic, 2 diagrammatic, 1 metaphoric — abstract concepts pull toward typography
+- **L23 (team building exercises):** 8 typographic, 2 diagrammatic, 2 metaphoric — exercise spec cards dominate; metaphoric breaks rhythm
+- **L31 (rules / taxonomy):** 9 diagrammatic, 2 typographic, 0 metaphoric — citation-magnet content needs structural describability
+
 ## L1 FINAL page (`🌟 L1 FINAL`)
 
 After a 30-frame variant + critique round, the FINAL page contains the production-ready keyframes:
@@ -95,6 +104,45 @@ After a 30-frame variant + critique round, the FINAL page contains the productio
 - Watermark + safe-area discipline consistent across all 10
 - Per-peak script-position badge added (`01 · the hook`, `02 · 0.4 sec inside the brain`, etc.) for editor reference
 - Italic Playfair used for kicker captions (e.g., "you cannot mirror someone while thinking about your email")
+
+## L23 FINAL page (`🌟 L23 FINAL`)
+
+12 production-ready frames in a 4×3 grid in script order. Critique notes in `L23-variant-critique.md`.
+
+| Peak | Frame | Refinement applied |
+|------|-------|--------------------|
+| 1  | `L23 · 01 · Most team bonding fails` | Stacked typographic with struck activity list |
+| 2  | `L23 · 02 · Fun is not trust` | `Fun ≠ Trust.` over `Vulnerability → Trust.` equation |
+| 3  | `L23 · 03 · Trust = the art form` | Three-tagline rhythm: EVERY NIGHT · IMMEDIATELY · UNFORGIVING |
+| 4  | `L23 · 04 · Mirroring (spec card)` | 2×2 field grid + 4 numbered steps (matches L1 Peak 7 pattern) |
+| 5  | `L23 · 05 · No leader` | Stacked `No / Leader.` with disconnected dotted line |
+| 6  | `L23 · 06 · Gift Giving (mystery box)` | Wrapped box with bow + huge "?" inside — visual outlier breaks rhythm |
+| 7  | `L23 · 07 · Yes And Chain` | Two-column comparison: Yes-but vs Yes-and |
+| 8  | `L23 · 08 · One-Word Scene` | Color-coded speaker words (A grey, B white) with speaker tags |
+| 9  | `L23 · 09 · The sequence` | 4 numbered cards with arrows + skill labels (citation frame) |
+| 10 | `L23 · 10 · Vulnerability rises` | Thermometer with 4 exercise tick-marks + serif side text |
+| 11 | `L23 · 11 · Debrief` | 3 numbered question cards (green) |
+| 12 | `L23 · 12 · TEAMWORK = THESE SKILLS` | Big serif `Teamwork.` + 4 skill chips + URL bar |
+
+## L31 FINAL page (`🌟 L31 FINAL`)
+
+11 production-ready frames in a 4×3 grid (last cell empty). Critique notes in `L31-variant-critique.md`.
+
+**Critical:** Peaks 8 and 9 share IDENTICAL geometry — same rule positions, same circle, same arrows. Only the center transforms from "?" to "Get out of your head." This is the cinematic payoff for the video.
+
+| Peak | Frame | Refinement applied |
+|------|-------|--------------------|
+| 1  | `L31 · 01 · search` | Search bar with shadow, magnifying glass, serif query |
+| 2  | `L31 · 02 · the standard list` | 5 numbered rules with red strikethroughs + "mostly wrong." kicker |
+| 3  | `L31 · 03 · Yes And · 3 traditions` | Three panels: Johnstone / UCB / Napier with serif-italic interpretations |
+| 4  | `L31 · 04 · empty vs loaded` | Stacked `Empty.` / `Loaded.` with example sentences in italic |
+| 5  | `L31 · 05 · 5 traditions agree` | 5 cards with green checkmarks + bottom kicker |
+| 6  | `L31 · 06 · blocking taxonomy` | Tree diagram: BLOCKING parent + 5 children (Wimping / Cancelling / Bridging / Hedging / Pimping) |
+| 7  | `L31 · 07 · Del Close quote` | Massive serif quote + attribution with orange line + role subtitle |
+| 8  | `L31 · 08 · strip away` | Rules circle with inward arrows → empty center "?" |
+| 9  | `L31 · 09 · GET OUT OF YOUR HEAD` | SAME circle, faded rules, center filled with the answer |
+| 10 | `L31 · 10 · training wheels` | Two bicycles side-by-side: with rules (red training wheels) vs beyond rules (green) |
+| 11 | `L31 · 11 · the closing` | URL bar + 3 book covers (Impro / Improvise / Truth in Comedy) + chip row |
 
 ## Reusable assets identified for cross-video reuse
 
