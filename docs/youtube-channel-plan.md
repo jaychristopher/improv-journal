@@ -5,7 +5,7 @@
 **Tagline:** Six laws, eight principles — discovered on the improv stage, applicable everywhere.
 **Strategy:** Chase citations, not views. Each video is a permanent SEO asset that ranks on Google AND gets cited by AI.
 
-**Status:** Iteration 5 of ~10 complete. Last updated 2026-04-25.
+**Status:** Iteration 6 of ~10 complete. Last updated 2026-04-25.
 
 ---
 
@@ -18,7 +18,7 @@
 | 3 | YouTube competitor analysis | 2026-04-25 | Section "Competitive Landscape & White Space" |
 | 4 | Video inventory generation | 2026-04-25 | Section "Video Inventory" |
 | 5 | Prioritization scoring | 2026-04-25 | Section "Production Priority" |
-| 6 | Schema completion (titles, descriptions, thumbs) | TODO | — |
+| 6 | Schema completion (titles, descriptions, thumbs) | 2026-04-25 | Section "Video Upload Schema" |
 | 7+ | Refinement loops | TODO | — |
 
 ---
@@ -659,18 +659,246 @@ This bundle approach lets each week produce 1-2 long-forms and 2-3 supporting Sh
 
 ---
 
+## 9. Video Upload Schema (Iteration 6)
+
+**Purpose:** Lock in every formatting decision so each upload is consistent and SEO-optimized without needing to think. The schema below is the single source of truth for the upload checklist.
+
+### 9A. Title Format
+
+**Master pattern:** `[Direct Question/Promise]: [Counterintuitive Hook] (What [Domain] Teaches)`
+
+- 60 characters max for full visibility on mobile/sidebar
+- Lead with the search query — what people type into Google/YouTube
+- Add the counterintuitive twist after the colon
+- The parenthetical adds the unique angle and acts as a brand signal
+- Capitalize Title Case Throughout
+- Year-stamping ONLY for content that needs annual refresh (avoid by default — videos compound longer without dates)
+
+**Per-pillar variants:**
+
+| Pillar | Pattern | Examples |
+|--------|---------|----------|
+| P1 Mental Game | `How to [problem]: [Reframe] (What Improv Teaches)` | "How to Stop Overthinking: The Bandwidth Problem (What Improv Teaches)" |
+| P2 Better Conversations | `How to [skill]: [Counterintuitive Insight]` | "How to Be a Better Listener — Three Modes of Attention" |
+| P3 Team Dynamics | `[Goal]: [Honest Promise / Challenge]` | "Team Building Activities That Actually Work (None Are Trust Falls)" |
+| P4 Improv Practice | `[Improv Topic]: [Practitioner Frame]` | "The Rules of Improv (And Why Half of Them Are Wrong)" |
+| P5 Improv Theory | `[Concept]: [Multi-Tradition Lens]` | "Improv Theory — The Five Traditions That Shaped Modern Improvisation" |
+
+**Validation checklist:**
+- [ ] Target keyword appears in first 50 characters
+- [ ] Counterintuitive element ("not", "actually", "what nobody tells you", "wrong")
+- [ ] No clickbait — promise must match content
+- [ ] Reads naturally, not stuffed
+
+### 9B. Description Template
+
+**Master template (5 sections):**
+
+```
+[1-sentence keyword-rich hook restating the title problem.]
+
+[2-3 sentences: the unique angle improv brings to this topic. Mention the
+specific concept (e.g., "bandwidth problem", "status dynamics", "internal
+computation") and gesture at where it comes from.]
+
+In this video:
+- [Insight or exercise 1]
+- [Insight or exercise 2]
+- [Insight or exercise 3]
+
+Full written breakdown with more exercises:
+https://www.physicsofconnection.com/[bridge-slug]?utm_source=youtube&utm_medium=video&utm_campaign=[short-keyword]
+
+Also recommended:
+- [Complementary book or resource — never another improv site, always
+  adjacent: psychology, leadership, philosophy]
+
+[Timestamps]
+00:00 The hook
+00:30 [Section 1]
+[etc.]
+
+[Hashtags — 5 max, primary keyword first]
+#[primary-keyword] #improv #[adjacent-topic] #[broad-niche] #[platform-niche]
+```
+
+**Per-pillar adjustments:**
+
+- **P1 Mental Game:** Hashtags include `#mentalhealth #anxiety #productivity`
+- **P2 Better Conversations:** Hashtags include `#communication #relationships #socialskills`
+- **P3 Team Dynamics:** Hashtags include `#leadership #teambuilding #management`
+- **P4 Improv Practice:** Hashtags include `#improv #improvisation #comedy #theater`
+- **P5 Improv Theory:** Hashtags include `#improv #theater #performance #philosophy`
+
+**UTM convention:** `utm_source=youtube&utm_medium=video&utm_campaign=[short-slug]` where short-slug is 1-3 words like `overthinking`, `team-bonding`, `rules`. Track which videos drive site traffic.
+
+**Description char count:** Aim for 800-1500 chars. YouTube indexes the first 100 chars heavily — make them keyword-rich.
+
+### 9C. Thumbnail Composition
+
+**Brand consistency rules:**
+- Background: dark slate gradient (#0f172a → #1e293b → #334155) — same as site OG image
+- Title text: white serif (Geist or similar), all caps, 1-3 words
+- Accent word: red/orange (#ef4444 or #f97316), bigger than rest
+- Icon: simple white outline, top-right or bottom-left
+- No face/photo unless we have brand recognition (year 2+)
+- Negative space matters — don't cram
+
+**Per-pillar icon system:**
+
+| Pillar | Icon | Accent word examples |
+|--------|------|----------------------|
+| P1 Mental Game | Brain outline / thought bubble | OVERTHINKING, PRESENT, CONFIDENT, REJECTION |
+| P2 Better Conversations | Speech bubbles / ear | LISTEN, WITTY, AWKWARD, SMALL TALK |
+| P3 Team Dynamics | Group of people / circle of dots | TRUST, MEETINGS, TEAM, TOGETHER |
+| P4 Improv Practice | Stage / spotlight / microphone | YES AND, GAME, RULES, IMPROV |
+| P5 Improv Theory | Map / network diagram / book | TRADITIONS, SYSTEMS, JOHNSTONE |
+
+**Thumbnail layout grid:**
+```
++------------------------+
+| [accent word HUGE]     |
+| [secondary text small] |
+| [pillar icon]          |
++------------------------+
+```
+
+**A/B test rule:** First 24 hours after upload, swap thumbnail once if CTR < 4%. Keep what wins.
+
+### 9D. End Card Configuration
+
+YouTube end cards: 3 elements appearing in the last 20 seconds of every video.
+
+**Card 1 (Subscribe):** "Subscribe for more — new video every week"
+- Position: top-right
+- Timing: appears at -20s, lasts to end
+
+**Card 2 (Same-pillar video):** Most relevant deeper-dive on the same topic
+- Position: middle-right
+- Timing: appears at -15s
+- Example: L1 (overthinking) end-cards to L7 (less awkward) — same P1 pillar
+
+**Card 3 (Cross-pillar video):** A bridge to the adjacent persona
+- Position: bottom-right
+- Timing: appears at -10s
+- Example: L1 (P1 mental game) end-cards to L25 (P3 emotional safety) — bridge to team leader audience
+
+**Outro (last 20 seconds, on-screen + verbal):**
+1. "If you found this useful, subscribe for more."
+2. Verbal: "Read the full breakdown at physicsofconnection.com/[slug]"
+3. On-screen: card grid showing the 2 suggested videos
+4. Mention the relevant learning path on the site
+
+### 9E. Tag Strategy
+
+YouTube allows ~500 chars of tags. Use 12-20 tags per video.
+
+**Tag formula (in this priority order):**
+1. **Primary keyword exact match** (1 tag)
+2. **Primary keyword variants** (2-3 tags)
+3. **Long-tail variations** (3-4 tags)
+4. **Adjacent topics** (3-4 tags)
+5. **Broad niche tags** (2-3 tags)
+6. **Brand tag** (1 tag — `physics of connection` or `improv journal`)
+
+**Example for L1 (How to Stop Overthinking):**
+```
+how to stop overthinking, overthinking, stop overthinking, overthinking anxiety,
+how to stop worrying, anxiety, mental health, mindfulness, productivity,
+focus, deep work, improv, psychology, presence, physics of connection
+```
+
+### 9F. Hashtag Strategy
+
+**3-5 hashtags max, in description not title.** YouTube only shows the first 3 above the title, so order matters.
+
+**Formula:**
+1. Primary keyword (compressed): `#overthinking`
+2. Improv brand: `#improv`
+3. Adjacent niche: `#mentalhealth` or `#leadership` etc.
+4. (optional) Broader topic: `#productivity` or `#communication`
+5. (optional) Platform-specific: `#shorts` (only on Shorts)
+
+### 9G. Chapters / Timestamps
+
+**Required for every video over 4 minutes.** Improves AI citation, navigation, and accessibility.
+
+**Format:**
+```
+00:00 The hook
+00:30 [Section heading — keyword-rich]
+03:00 [Section heading]
+05:00 [Specific exercise / technique]
+07:00 [Resources and CTA]
+```
+
+**Rules:**
+- First chapter must be `00:00`
+- Each chapter ≥ 10 seconds
+- Use keyword-rich headings (e.g., "Three Exercises to Stop Overthinking" not "Exercises")
+- Last chapter is always the CTA segment
+
+### 9H. Cross-pillar Linking Rules
+
+For maximum SEO benefit + AI citation strength, every video links to:
+
+1. **Bridge page** (the canonical written version on our site) — in description, with UTM
+2. **Related pillar video** (end card 2)
+3. **Adjacent pillar video** (end card 3)
+4. **Learning path** (verbal outro + on-screen card)
+5. **Free tool** (if relevant — exercise picker for P3/P4 videos)
+
+This builds a content web where every YouTube video reinforces site SEO and vice versa.
+
+### 9I. Upload Checklist (Use for Every Video)
+
+```
+[ ] Title (60 chars, keyword first, counterintuitive twist)
+[ ] Description (800-1500 chars, hook → angle → list → bridge link → also recommended → timestamps → hashtags)
+[ ] UTM link to bridge page (utm_source=youtube&utm_medium=video&utm_campaign=...)
+[ ] 12-20 tags following priority formula
+[ ] 3-5 hashtags in description (primary keyword first)
+[ ] Thumbnail (dark slate, 1-3 words, accent color, pillar icon)
+[ ] Chapters/timestamps (every chapter ≥ 10s, keyword-rich headings)
+[ ] End cards (subscribe + same-pillar video + cross-pillar video)
+[ ] Visible captions/subtitles enabled
+[ ] Category: Education
+[ ] Default audience: "Not made for kids"
+[ ] Schedule for Tuesday or Thursday 9am ET (peak educational content windows)
+[ ] After upload: embed on the matching bridge page on the site
+[ ] After upload: post to Reddit/LinkedIn following the playbook
+```
+
+### 9J. Per-Format Schema Variants
+
+**Long-form (8-12 min):**
+- All schema applies as written above
+
+**Tutorial / demo (5-7 min):**
+- Title pattern: `[Exercise Name] — A [N-Minute] [Skill] Tool` (e.g., "Mirroring — A 5-Minute Trust-Building Tool")
+- Description: ALSO include "Group size: X-Y" and "Time needed: N minutes"
+- Thumbnail: feature an icon of the activity (not just brand template)
+- Tags: include exercise name + variants (`mirroring exercise`, `mirroring drill`, `mirror exercise team building`)
+
+**Shorts (≤60 sec):**
+- Title: must include `#shorts` at end
+- Description: 2-3 sentences max + `#shorts` + 2 niche hashtags
+- No timestamps (under 1 min)
+- No end cards (Shorts don't support them)
+- DO link to long-form pair in description: "Full breakdown: youtube.com/watch?v=..."
+
+---
+
 ## Next Iteration Focus
 
-**Iteration 6: Schema completion.**
+**Iteration 7: Refinement and validation.**
 
-Define exact templates per pillar:
-- Title format (chars, structure, keyword placement)
-- Description template (hook, summary, link UTM, timestamps, hashtags)
-- Thumbnail composition (background color, accent word, icon system)
-- End card configuration (3 cards: subscribe + 2 video suggestions)
-- Hashtag strategy (3-5 per video, mix of broad + specific)
-- Tag strategy (15-20 per video, all keyword variants)
+Now that the inventory + schema are locked, time for refinement loops:
+- Re-run Ahrefs on top 10 priority keywords to confirm volumes haven't shifted
+- Verify the bridges referenced in the inventory all have the assumed quotable definitions (iteration 17 of growth-100-steps work)
+- Identify any gaps — keywords we didn't research but should have
+- Check that pillar distribution is balanced (right now P3 has only 8 long-forms; should we add more team content?)
 
-Output: a single "video upload checklist" that locks in consistency across every upload.
+**Iteration 8+:** Compile a final "playbook handoff" doc — single-page summary that any video producer (or AI agent) could pick up and execute the next 30 days of production.
 
-**After iteration 6:** refinement loops (iteration 7+) to find any gaps, validate priorities against fresh Ahrefs data, and ensure the plan is truly executable.
+After 8-10 iterations, the plan will be production-complete and the loop can stop.
