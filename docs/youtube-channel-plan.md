@@ -5,7 +5,7 @@
 **Tagline:** Six laws, eight principles — discovered on the improv stage, applicable everywhere.
 **Strategy:** Chase citations, not views. Each video is a permanent SEO asset that ranks on Google AND gets cited by AI.
 
-**Status:** Iteration 2 of ~10 complete. Last updated 2026-04-25.
+**Status:** Iteration 3 of ~10 complete. Last updated 2026-04-25.
 
 ---
 
@@ -15,7 +15,7 @@
 |---|-------|------|--------|
 | 1 | Channel architecture — playlists, pillars, naming | 2026-04-25 | Section "Channel Architecture" |
 | 2 | Keyword research per playlist (Ahrefs) | 2026-04-25 | Section "Keyword Opportunity Matrix" |
-| 3 | YouTube competitor analysis | TODO | — |
+| 3 | YouTube competitor analysis | 2026-04-25 | Section "Competitive Landscape & White Space" |
 | 4 | Video inventory generation | TODO | — |
 | 5 | Prioritization scoring | TODO | — |
 | 6 | Schema completion (titles, descriptions, thumbs) | TODO | — |
@@ -294,14 +294,104 @@ Our existing schema (Article JSON-LD on bridges) plus video schema on YouTube em
 
 ---
 
+## 6. Competitive Landscape & White Space (Iteration 3)
+
+**Source:** Ahrefs SERP overview on 5 top sweet-spot keywords, 2026-04-25.
+
+**Method:** Analyzed top 10 organic results to see (a) how many YouTube videos rank, (b) which channels dominate, (c) what content angles win.
+
+### Per-keyword competitive map
+
+| Keyword | YouTube videos in top 10 | Top organic competitor | DR | Our angle vs. theirs |
+|---------|-------------------------|------------------------|-----|---------------------|
+| **how to be funny** (6.6K, KD 0) | 2 (generic conversation hacks) | standupcomedyclinic.com | 35 | **WIDE OPEN.** No improv-perspective video. White space: "the obvious choice" framing, Mick Napier insights |
+| **team bonding activities** (5.4K, KD 11) | 1 (single video at #8) | Asana, SessionLab, ttu.edu PDF | 91, 81, 81 | **Tutorial format white space.** Lists dominate but nobody DEMOS the activities. We can show exercises being done |
+| **improv games** (3.1K, KD 1) | **0 YouTube videos in top 10** | improvencyclopedia.org, hooplaimpro.com | 47, 45 | **MASSIVE WHITE SPACE.** Pure first-mover advantage on YouTube |
+| **how to stop overthinking** (16K, KD 15) | **0 YouTube videos in top 10** | Washington Post, Psyche.co | 93, 75 | **Video white space.** WaPo has the article but no video. Bandwidth-problem framing differentiates |
+| **how to read body language** (2.1K, KD 2) | 4+ videos (Vanessa Van Edwards style) | helpguide.org, verywellmind, Forbes | 87, 90 | **Crowded — need clear differentiation.** Improv angle: "read changes not positions, whole person not signals, relationships not individuals" |
+
+### Key findings
+
+**Finding 1: YouTube is barely competing for some keywords.**
+
+For "improv games" (3.1K vol) and "how to stop overthinking" (16K vol), there are **zero YouTube videos in the top 10**. Combined search volume of these alone: ~19K/mo. We can be the first ranking video for both.
+
+**Finding 2: Tutorial/demo format is the white space for team building.**
+
+Every top result for "team bonding activities" is a list article. No videos show the exercises being performed. A short video showing "Mirroring exercise — 90-second demo" or "Yes And Chain in action" would be highly differentiated and shareable.
+
+**Finding 3: Improv encyclopedia and learnimprov have NO YouTube presence.**
+
+Our two direct improv competitors are text-only. They have moderate authority on Google but zero video moat. We can dominate the YouTube layer of improv keywords entirely if we move fast.
+
+**Finding 4: Reddit and Forums tab presence is universal.**
+
+Every keyword has 3-5 Reddit posts in top 10. This validates our existing strategy: post genuine answers to those Reddit threads with our YouTube video as a citation. Each Reddit answer can drive video views AND vice versa.
+
+**Finding 5: Body language is crowded but our angle is unique.**
+
+Vanessa Van Edwards (Science of People), TalentSmartEQ, and similar dominate. They focus on individual signal decoding ("crossed arms = defensive"). Our improv angle — read changes, read whole-person, read relationships — is genuinely different and matches what serious performers actually do. Strong opportunity if we lead with "Why every body language video gets it wrong."
+
+### YouTube channel competitors to study (for content cues, not to beat)
+
+- **Charisma on Command** — life-skill / charisma niche, polished talking-head format
+- **Vanessa Van Edwards / Science of People** — body language, charisma research-backed
+- **Watcher / Try Guys** — improv comedy creators (entertainment, not education)
+- **Second City Theatre** (@SecondCity) — institutional brand, not focused on tutorials
+- **iO Theater** — minimal YouTube presence
+
+**No dominant educational improv channel on YouTube exists.** This is the actual competitive insight: there is a vacant lot in the search results, and we have 24 threads + 17 exercises + 40 bridges of source material to fill it.
+
+### Competitive Differentiation Per Pillar
+
+| Pillar | What competitors do | What we do differently |
+|--------|---------------------|------------------------|
+| P1 Mental Game | Affirmations, self-help platitudes, "just be confident" | Improv reframes problems as bandwidth/attention/status mechanics. Not feelings — physics. |
+| P2 Better Conversations | Generic listening tips, eye contact reminders | Improv listening = receiving the full signal. Specific exercises (Last Word, Mirroring). Backed by Spolin and Johnstone. |
+| P3 Team Dynamics | List articles ("53 activities"), no demos | Tutorial format showing the exercises. Why each one builds specific skills. Sequencing matters. |
+| P4 Improv Practice | Game lists with rules, no philosophy | Multi-tradition analysis. Why rules differ between Johnstone, UCB, Annoyance. The disagreements ARE the knowledge. |
+| P5 Improv Theory | Practitioner blogs, single-tradition books | Five-tradition cross-reference. The Zettelkasten structure itself is unique. |
+
+### Re-prioritized Sweet Spot List (with white space context)
+
+Updated rankings considering both keyword opportunity AND competitive vacuum:
+
+**Tier S (immediate priority — pure white space):**
+1. **how to be funny** (6.6K, KD 0, ZERO improv-angle videos) — make this NEXT
+2. **improv games** (3.1K, KD 1, ZERO YouTube top 10) — make this SOON
+3. **how to stop overthinking** (16K, KD 15, ZERO videos in top 10) — already scripted/audio'd, upload first
+
+**Tier A (high-value, differentiated):**
+4. **team bonding activities** (5.4K, KD 11) — already scripted/audio'd, tutorial format wins
+5. **rules of improv** (450, KD 7) — already scripted/audio'd, becomes channel pillar
+6. **what is improv** (1.6K, KD 9) — foundational explainer
+7. **how to deal with rejection** (1.7K, KD 0) — life-app, no improv-angle video exists
+8. **how to stop people pleasing** (1.2K, KD 1) — life-app, status-blocking framing is unique
+9. **types of listening** (800, KD 7) — listicle format perfect for video
+
+**Tier B (high volume, harder ranking — make for SEO depth):**
+10. **how to read body language** (2.1K, KD 2) — need clear "improv lens" framing
+11. **how to be a better listener** (1.1K, KD 2)
+12. **emotional safety** (2.3K, KD 12)
+13. **group dynamics** (3.7K, KD 6)
+14. **how to be witty** (700, KD 0)
+15. **how to be less awkward** (700, KD 1)
+
+---
+
 ## Next Iteration Focus
 
-**Iteration 3:** YouTube-specific competitor analysis. Use Ahrefs site-explorer on:
-- youtube.com/@charisma — life-application competitor (Charisma on Command)
-- youtube.com/@improvencyclopedia — direct improv competitor
-- youtube.com/@SecondCity — name brand improv channel
-- Search YouTube directly for top results on "how to stop overthinking", "improv games", "team building activities"
+**Iteration 4: Video inventory generation.**
 
-Goal: identify what video formats, lengths, and angles dominate the SERP for our sweet-spot keywords. Find white space where video content is weak (talking heads only, no exercises, generic advice) and we can win on depth.
+Turn the prioritized keyword list into a complete video roster of ~50 videos with:
+- Specific video title (using naming convention from iteration 1)
+- Target keyword
+- Pillar / playlist
+- Source bridge or atom
+- Format (long-form / tutorial / Short)
+- Production status (script ready / needs writing / needs research)
+- Estimated production time
 
-After iteration 3: video inventory generation (iteration 4) — turn the 26 sweet-spot keywords into 50+ videos with mapped bridges/atoms.
+This becomes the canonical "make these videos in this order" list.
+
+**Iteration 5 will then add scoring** (volume × low competition × content readiness) and **iteration 6 will define exact title/description/thumbnail schema per pillar**.
