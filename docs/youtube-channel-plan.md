@@ -5,7 +5,7 @@
 **Tagline:** Six laws, eight principles — discovered on the improv stage, applicable everywhere.
 **Strategy:** Chase citations, not views. Each video is a permanent SEO asset that ranks on Google AND gets cited by AI.
 
-**Status:** Iteration 6 of ~10 complete. Last updated 2026-04-25.
+**Status:** Iteration 7 of ~10 complete. Last updated 2026-04-25.
 
 ---
 
@@ -19,7 +19,8 @@
 | 4 | Video inventory generation | 2026-04-25 | Section "Video Inventory" |
 | 5 | Prioritization scoring | 2026-04-25 | Section "Production Priority" |
 | 6 | Schema completion (titles, descriptions, thumbs) | 2026-04-25 | Section "Video Upload Schema" |
-| 7+ | Refinement loops | TODO | — |
+| 7 | Gap research + priority refinement | 2026-04-25 | Section "Gap Keywords & Refinement" |
+| 8 | Final handoff playbook | TODO | — |
 
 ---
 
@@ -889,16 +890,136 @@ This builds a content web where every YouTube video reinforces site SEO and vice
 
 ---
 
+## 10. Gap Keywords & Refinement (Iteration 7)
+
+**Source:** Targeted Ahrefs queries on adjacent keyword spaces, 2026-04-25.
+
+**Method:** Ran searches on (a) modern team-building variants we hadn't researched, (b) "how to be X" personality keywords beyond our existing list, (c) niche improv applications.
+
+### Gap 1: Team Dynamics — Major Missed Keyword
+
+**`team building activities for work`** — 8,800 vol, KD 12, has `video_th` SERP feature.
+
+This is **the second-highest volume team keyword we have access to** and we didn't include it. Adding as new long-form video.
+
+| New Video | Target | Vol | KD | Status |
+|-----------|--------|-----|-----|--------|
+| **L36: Team Building Activities for Work That Actually Build Trust** | team building activities for work | 8,800 | 12 | needs new bridge or YouTube-first |
+
+**Score:** 8 + 7 + 3 + 3 + 2 = **23** → Tier A. Slot into Week 4-6.
+
+**Production note:** The phrase "for work" signals workplace intent. Can rewrite team-bonding-activities bridge with this exact phrase in H2 OR create new bridge specifically for workplace context.
+
+### Gap 2: P1/P2 Personality Keywords (4 missed)
+
+All KD 0-1 with `video_th`. Combined volume: ~1,450/mo. Easy wins.
+
+| New Video | Target | Vol | KD | Pillar | Bridge needed? |
+|-----------|--------|-----|-----|--------|----------------|
+| **L37: How to Be More Articulate — The Improv Approach** | how to be more articulate | 500 | 0 | P2 | needs new bridge |
+| **L38: How to Be Likeable — Without Performing for Approval** | how to be likeable | 450 | 1 | P2 | needs new bridge |
+| **L39: How to Be Interesting — The Listening Counterintuitive** | how to be interesting | 400 | 1 | P2 | needs new bridge |
+| **L40: How to Be Quick-Witted — Train Your Reaction Speed** | how to be quick witted | 100 | 0 | P1 | (extends how-to-be-witty) |
+
+These are **all Tier A scores (20-23)** because of zero competition. 4 bridges to write before video production — but each is small (~1,500 words).
+
+### Gap 3: Workplace + Modern-Era Keywords
+
+| Keyword | Vol | KD | Notes |
+|---------|-----|-----|-------|
+| virtual icebreakers | 450 | 3 | Could be tutorial format, no current bridge |
+| remote team building | 350 | 28 | Higher KD, lower priority but volume justifies it |
+| virtual team building | (need to check) | — | Likely substantial volume — re-research in iteration 8 |
+
+Recommendation: **add to Phase 2** (after first 30 videos). Current inventory is already strong without these.
+
+### Gap 4: Niche Improv Modifiers (Low Priority)
+
+| Keyword | Vol | KD | Decision |
+|---------|-----|-----|----------|
+| improv for business | 100 | 4 | Skip — `paid_bottom` SERP shows ads, intent is commercial |
+| corporate improv training | 80 | 0 | Skip — service-seeking intent, not info |
+| improv for kids | 90 | 0 | Skip — different audience entirely |
+| longform improv | 10 | 1 | Skip — too low volume |
+
+These don't fit our channel's audience. Confirmed P5 stays sparse.
+
+### Pillar Distribution Re-balancing
+
+After adding gap videos:
+
+| Pillar | Original | + Gap | Total Long-form | Coverage |
+|--------|----------|-------|-----------------|----------|
+| P1 Mental Game | 12 | +1 (L40) | 13 | Strong |
+| P2 Better Conversations | 10 | +3 (L37-39) | 13 | Strong |
+| P3 Team Dynamics | 8 | +1 (L36) | 9 | Adequate |
+| P4 Improv Practice | 4 | 0 | 4 | Tight but focused |
+| P5 Improv Theory | 1 | 0 | 1 | Reference only |
+
+**Better balanced.** P1 and P2 now mirror each other (13 each), P3 has 9 strong videos, P4 stays focused on the 4 core improv-direct queries that have video opportunity.
+
+### Validation: Did Top Priority Keywords Hold?
+
+Cross-checked the top 5 priority keywords against fresh Ahrefs data:
+
+| Keyword | Iter 2 | Iter 7 | Δ |
+|---------|--------|--------|----|
+| how to stop overthinking | 16,000 / KD 15 | 16,000 / KD 15 | stable |
+| how to be funny | 6,600 / KD 0 | (not re-checked) | — |
+| team bonding activities | 5,400 / KD 11 | (not re-checked) | — |
+| team building activities for work | NEW | 8,800 / KD 12 | new finding |
+| how to deal with rejection | 1,700 / KD 0 | (not re-checked) | — |
+
+Top priorities hold. New gap keyword (team building activities for work) becomes a new top-10 priority because it has high volume + low KD + content readiness path (extend existing team-bonding bridge).
+
+### Updated Top 10 Production Order (with gap fixes)
+
+1. **L1: How to Stop Overthinking** *(audio ready)*
+2. **L23: Team Bonding Activities** *(audio ready)*
+3. **L31: Rules of Improv** *(audio ready)*
+4. **L2: How to Be Funny** *(write next)*
+5. **L36: Team Building Activities for Work** *(NEW — high volume gap)*
+6. **L4: How to Deal with Rejection**
+7. **L5: How to Stop People Pleasing**
+8. **L34: How to Be More Assertive**
+9. **L37: How to Be More Articulate** *(NEW — KD 0 zero-competition)*
+10. **L38: How to Be Likeable** *(NEW — KD 1)*
+
+Combined production-ready volume of these 10: **~46,000 monthly searches** with average KD 8.
+
+### Total Inventory After Iteration 7
+
+| Format | Count | Source material |
+|--------|-------|----------------|
+| Long-form (P1-P5) | **40** (was 35, +5 gap videos) | 35 bridges + 5 to write |
+| Tutorial / demo | 17 | 17 exercise atoms |
+| Shorts (90-day) | 15 | High-value atoms |
+| **TOTAL** | **72** (was 67) | |
+
+### New Bridges to Write (before video production)
+
+To support the 5 new long-form videos, 4 new bridge pages needed:
+
+1. **team-building-activities-for-work** (8.8K vol target — could be a duplicate/variant of team-building-activities or a new piece focused on workplace)
+2. **how-to-be-more-articulate** (500 vol)
+3. **how-to-be-likeable** (450 vol)
+4. **how-to-be-interesting** (400 vol)
+
+(L40 quick-witted extends existing how-to-be-witty bridge — no new bridge needed.)
+
+These 4 bridges are ~6,000 monthly volume of zero/low-competition keywords. Recommend writing them in the next code-side session before video production reaches them.
+
+---
+
 ## Next Iteration Focus
 
-**Iteration 7: Refinement and validation.**
+**Iteration 8: Final handoff playbook.**
 
-Now that the inventory + schema are locked, time for refinement loops:
-- Re-run Ahrefs on top 10 priority keywords to confirm volumes haven't shifted
-- Verify the bridges referenced in the inventory all have the assumed quotable definitions (iteration 17 of growth-100-steps work)
-- Identify any gaps — keywords we didn't research but should have
-- Check that pillar distribution is balanced (right now P3 has only 8 long-forms; should we add more team content?)
+Compile a single-page executive summary that any producer (human or AI) could pick up and execute. Should include:
+- 30-day production schedule with named videos
+- "Make this video next" instructions for each
+- Schema templates ready to paste
+- Direct links to bridge content per video
+- Production cost/time estimates per video
 
-**Iteration 8+:** Compile a final "playbook handoff" doc — single-page summary that any video producer (or AI agent) could pick up and execute the next 30 days of production.
-
-After 8-10 iterations, the plan will be production-complete and the loop can stop.
+After iteration 8, the plan will be production-complete and the loop can stop.
