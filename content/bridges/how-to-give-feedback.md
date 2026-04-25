@@ -4,6 +4,8 @@ description: "Most feedback describes problems without creating conditions for c
 target_keywords:
   - { keyword: "how to give feedback", volume: 900 }
   - { keyword: "how to give constructive feedback", volume: 900 }
+  - { keyword: "constructive feedback", volume: 7000 }
+  - { keyword: "constructive criticism", volume: 4400 }
 entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive]
 entry_path: teaching-improv
 status: draft

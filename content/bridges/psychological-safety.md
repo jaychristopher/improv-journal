@@ -6,6 +6,7 @@ target_keywords:
   - { keyword: "psychological safety at work", volume: 2700 }
   - { keyword: "what is psychological safety", volume: 1300 }
   - { keyword: "creating psychological safety in the workplace", volume: 200 }
+  - { keyword: "emotional safety", volume: 2300 }
 entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, vulnerability]
 entry_path: physics-of-connection
 status: draft
