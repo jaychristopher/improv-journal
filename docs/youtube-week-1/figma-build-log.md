@@ -67,6 +67,35 @@ Layout: 5×2 grid, 1920×1080 each, 200px gap.
 4. Once approved, export each frame as PNG (2x for retina) for import into DaVinci Resolve.
 5. Tween/animate transitions per `keyframe-strategy.md` Part 3.
 
+## L1 FINAL page (`🌟 L1 FINAL`)
+
+After a 30-frame variant + critique round, the FINAL page contains the production-ready keyframes:
+
+- **Headline font:** Playfair Display Black (committed; serif headlines per the keyframe-strategy spec)
+- **Body / utility font:** Inter (Bold, Semi Bold, Regular)
+- **Layout:** 5×2 grid in script order (peaks 1-5 row 1, peaks 6-10 row 2)
+- **Pattern:** 7 of 10 finals lean Typographic, 2 stay Diagrammatic (Peak 4 anchor + Peak 5 continuation), 1 stays Metaphoric (Peak 3 EKG flat-line)
+
+| Peak | Frame name | Refinement applied |
+|------|------------|--------------------|
+| 1 | `L1 · 01 · OVERTHINKING` | Serif "Overthinking?" + ghost ? + thin red underline accent |
+| 2 | `L1 · 02 · The simulation` | Escalating questions with +0.1s/+0.2s/+0.4s timestamps, serif lead |
+| 3 | `L1 · 03 · SAFE. DEAD.` | ECG monitor frame, green active beats → red flat-line, stacked Safe./Dead. in serif |
+| 4 ⭐ | `L1 · 04 · BANDWIDTH PROBLEM (anchor)` | Chip with INTEGRATED gauge + italic "vs." between competing arrows |
+| 5 | `L1 · 05 · Internal Computation` | "↳ SAME DIAGRAM. ONE BEAT LATER." continuity tag, red border, overloaded gauge |
+| 6 | `L1 · 06 · Forget Yourself` | Keith Johnstone pull quote, italic open/close quotes, "not to try" highlighted red |
+| 7 | `L1 · 07 · Mirroring` | Spec card: serif title + 2×2 fields (TIME/FORMAT/TARGETS/OUTPUT) + 4 numbered steps |
+| 8 | `L1 · 08 · First Line Drill` | 1ST winner in serif + orange chip; 2ND/3RD greyed with strikethroughs |
+| 9 | `L1 · 09 · Last Word Response` | Rule banner + THEM/YOU dialogue boxes with last-word/first-word red highlighting |
+| 10 | `L1 · 10 · REDIRECT` | "Redirect." serif headline + URL bar + Bridge/Tool/Subscribe chip row |
+
+**Cross-cutting refinements applied:**
+- Variant tags (A/B/C corner badges) removed — they were scaffolding
+- Stick figures retired in favor of typographic and diagrammatic compositions
+- Watermark + safe-area discipline consistent across all 10
+- Per-peak script-position badge added (`01 · the hook`, `02 · 0.4 sec inside the brain`, etc.) for editor reference
+- Italic Playfair used for kicker captions (e.g., "you cannot mirror someone while thinking about your email")
+
 ## Reusable assets identified for cross-video reuse
 
 - **CPU/chip diagram** (L1 Peak 4, 5) — reusable in any "bandwidth/cognitive load" video
