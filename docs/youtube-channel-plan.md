@@ -5,7 +5,7 @@
 **Tagline:** Six laws, eight principles — discovered on the improv stage, applicable everywhere.
 **Strategy:** Chase citations, not views. Each video is a permanent SEO asset that ranks on Google AND gets cited by AI.
 
-**Status:** Iteration 3 of ~10 complete. Last updated 2026-04-25.
+**Status:** Iteration 4 of ~10 complete. Last updated 2026-04-25.
 
 ---
 
@@ -16,7 +16,7 @@
 | 1 | Channel architecture — playlists, pillars, naming | 2026-04-25 | Section "Channel Architecture" |
 | 2 | Keyword research per playlist (Ahrefs) | 2026-04-25 | Section "Keyword Opportunity Matrix" |
 | 3 | YouTube competitor analysis | 2026-04-25 | Section "Competitive Landscape & White Space" |
-| 4 | Video inventory generation | TODO | — |
+| 4 | Video inventory generation | 2026-04-25 | Section "Video Inventory" |
 | 5 | Prioritization scoring | TODO | — |
 | 6 | Schema completion (titles, descriptions, thumbs) | TODO | — |
 | 7+ | Refinement loops | TODO | — |
@@ -379,19 +379,177 @@ Updated rankings considering both keyword opportunity AND competitive vacuum:
 
 ---
 
+## 7. Video Inventory (Iteration 4)
+
+**Total videos planned: 67** across 3 formats (long-form, tutorial/demo, Shorts).
+
+Status legend:
+- 🟢 = script + audio ready (3 videos)
+- 🟡 = bridge content ready, needs script conversion
+- 🔴 = needs new content / research
+
+### 7A. Long-form Videos (35 videos)
+
+Format: 8-12 min talking head + slides/whiteboard. One per bridge with YouTube ranking opportunity.
+
+#### Pillar P1: Mental Game (12 videos)
+
+| # | Title | Target keyword | Vol | KD | Bridge | Status |
+|---|-------|---------------|-----|-----|--------|--------|
+| L1 | How to Stop Overthinking — The Bandwidth Problem (What Improv Teaches) | how to stop overthinking | 16,000 | 15 | how-to-stop-overthinking | 🟢 |
+| L2 | How to Be Funny — The Improv Secret to Quick Wit | how to be funny | 6,600 | 0 | how-to-be-funny | 🟡 |
+| L3 | How to Stop Caring What People Think — The Performer's Secret | how to stop caring what people think | 2,400 | 4 | how-to-stop-caring-what-people-think | 🟡 |
+| L4 | How to Deal with Rejection — The Improv Philosophy of Failing Forward | how to deal with rejection | 1,700 | 0 | how-to-deal-with-rejection | 🟡 |
+| L5 | How to Stop People Pleasing — Why It's Self-Blocking | how to stop people pleasing | 1,200 | 1 | how-to-stop-people-pleasing | 🟡 |
+| L6 | How to Be Witty — The Improv Method for Sharp Responses | how to be witty | 700 | 0 | how-to-be-witty | 🟡 |
+| L7 | How to Be Less Awkward — It's an Attention Problem, Not a Trait | how to be less awkward | 700 | 1 | how-to-be-less-awkward | 🟡 |
+| L8 | How to Let Go of Control — What Improv Teaches About Surrender | how to let go of control | 350 | 2 | how-to-let-go-of-control | 🟡 |
+| L9 | How to Be Vulnerable Without Getting Destroyed | how to be vulnerable | 300 | 9 | how-to-be-vulnerable | 🟡 |
+| L10 | Fear of Public Speaking — Why It's the Same as Peak Performance | fear of public speaking | 3,300 | 50 | fear-of-public-speaking | 🟡 |
+| L11 | Stage Fright Is Not Your Enemy — The Reframe That Changes Everything | stage fright | 6,200 | 38 | stage-fright | 🟡 |
+| L12 | How to Be More Confident — The Status Approach | how to be more confident | 4,400 | 16 | how-to-be-more-confident | 🟡 |
+
+#### Pillar P2: Better Conversations (10 videos)
+
+| # | Title | Target keyword | Vol | KD | Bridge | Status |
+|---|-------|---------------|-----|-----|--------|--------|
+| L13 | How to Read Body Language — Why Most Advice Gets It Wrong | how to read body language | 2,100 | 2 | how-to-read-body-language | 🟡 |
+| L14 | How to Be a Better Listener — Three Modes of Attention | how to be a better listener | 1,100 | 2 | how-to-be-a-good-listener | 🟡 |
+| L15 | Types of Listening — The Improv Framework | types of listening | 800 | 7 | types-of-listening | 🟡 |
+| L16 | How to Be a Better Conversationalist — Receive, Build, Commit | how to be a better conversationalist | 450 | 0 | how-to-be-a-better-conversationalist | 🟡 |
+| L17 | How to Have Difficult Conversations — Without Scripts | how to have difficult conversations | 500 | 13 | how-to-have-difficult-conversations | 🟡 |
+| L18 | How to Make Small Talk — The Improv Approach | how to make small talk | 2,200 | 41 | how-to-make-small-talk | 🟡 |
+| L19 | How to Deal with Conflict — The Acceptance Paradox | how to deal with conflict | 350 | 14 | how-to-deal-with-conflict | 🟡 |
+| L20 | Active Listening — Why You're Doing It Wrong | active listening | 41,000 | 66 | active-listening | 🟡 |
+| L21 | Interpersonal Communication Skills — What 60 Years of Improv Reveals | interpersonal communication skills | 3,400 | 24 | interpersonal-communication-skills | 🟡 |
+| L22 | How to Be More Charismatic — The Improv Framework | how to be more charismatic | 700 | 6 | how-to-be-more-charismatic | 🟡 |
+
+#### Pillar P3: Team Dynamics (8 videos)
+
+| # | Title | Target keyword | Vol | KD | Bridge | Status |
+|---|-------|---------------|-----|-----|--------|--------|
+| L23 | Team Building Activities That Actually Work (None Are Trust Falls) | team bonding activities | 5,400 | 11 | team-bonding-activities | 🟢 |
+| L24 | Group Dynamics — What Improv Ensembles Know About How Groups Work | group dynamics | 3,700 | 6 | group-dynamics | 🟡 |
+| L25 | Emotional Safety — How Improv Ensembles Build Trust | emotional safety | 2,300 | 12 | emotional-safety | 🟡 |
+| L26 | Psychological Safety — The Physics of Trust | psychological safety | 11,000 | 75 | psychological-safety | 🟡 |
+| L27 | Collaboration Skills — Working Together Like Ensembles | collaboration skills | 2,400 | 22 | collaboration-skills | 🟡 |
+| L28 | How to Read the Room — The Skill Improv Performers Train | how to read the room | 200 | 0 | how-to-read-the-room | 🟡 |
+| L29 | How to Give Feedback That Actually Changes Behavior | how to give feedback | 600 | 26 | how-to-give-feedback | 🟡 |
+| L30 | Team Building Questions That Actually Build Trust | team building questions | 2,900 | 40 | team-building-questions | 🟡 |
+
+#### Pillar P4: Improv Practice (4 videos)
+
+| # | Title | Target keyword | Vol | KD | Bridge | Status |
+|---|-------|---------------|-----|-----|--------|--------|
+| L31 | The Rules of Improv (And Why Half of Them Are Wrong) | rules of improv | 450 | 7 | rules-of-improv | 🟢 |
+| L32 | What Is Improv? It's Not What You Think | what is improv | 1,600 | 9 | what-is-improv | 🟡 |
+| L33 | How to Get Better at Improv — A Practitioner's Guide | how to get better at improv | 150 | 0 | how-to-get-better-at-improv | 🟡 |
+| L34 | How to Be More Assertive — The Status Secret from Improv | how to be more assertive | 2,000 | 0 | how-to-be-more-assertive | 🟡 |
+
+#### Pillar P5: Improv Theory (1 video)
+
+| # | Title | Target keyword | Vol | KD | Bridge | Status |
+|---|-------|---------------|-----|-----|--------|--------|
+| L35 | Improv Theory — The Five Traditions That Shaped Modern Improvisation | improv theory | 50 | — | improv-theory | 🟡 |
+
+### 7B. Tutorial / Demo Videos (17 videos)
+
+Format: 5-7 min, shows the exercise being performed (or animated diagram) + voiceover explaining what it builds. These dominate the white space competitors leave open.
+
+| # | Exercise (atom) | Title | Pillar | Status |
+|---|----------------|-------|--------|--------|
+| T1 | mirroring | Mirroring Exercise — A 5-Minute Trust-Building Tool | P3 | 🔴 |
+| T2 | yes-and-chain | Yes And Chain — How to Train Your Team to Build on Ideas | P3 | 🔴 |
+| T3 | gift-giving | Gift Giving Exercise — Improv's Trust-Building Game | P3 | 🔴 |
+| T4 | one-word-scene | One Word Scene — How to Make Collaboration Impossible to Fake | P4 | 🔴 |
+| T5 | last-word-response | Last Word Response — The Listening Drill That Changes Everything | P2 | 🔴 |
+| T6 | blind-offer | Blind Offer Exercise — How to Train Spontaneity | P4 | 🔴 |
+| T7 | first-line-drill | First Line Drill — How to Stop Overthinking on Stage | P4 | 🔴 |
+| T8 | emotional-honesty-scene | Emotional Honesty Scene — The Vulnerability Exercise | P4 | 🔴 |
+| T9 | status-transfer | Status Transfer — Johnstone's Power Dynamics Exercise | P5 | 🔴 |
+| T10 | space-work-scene | Silent Space Work — How to Make a Room Real | P4 | 🔴 |
+| T11 | group-mind-cultivation | Group Mind Cultivation — Three Drills for Ensemble Awareness | P4 | 🔴 |
+| T12 | no-backspace-scene | No Backspace Scene — Living with Your Choices | P4 | 🔴 |
+| T13 | fracture-repair-drill | Fracture Repair Drill — How to Recover When a Scene Falls Apart | P4 | 🔴 |
+| T14 | directed-scene | Directed Scene — How Side-Coaching Works | P4 | 🔴 |
+| T15 | emotion-switch | Emotion Switch — Training Emotional Range | P4 | 🔴 |
+| T16 | genre-scene | Genre Scene — Playing in Different Worlds | P4 | 🔴 |
+| T17 | organic-opening-exercise | Organic Opening — How Long-Form Improv Begins | P4 | 🔴 |
+
+### 7C. YouTube Shorts (15 videos for first 90 days, ~155 possible total)
+
+Format: 30-60 second insight from an atom. Hook + insight + visual + "full breakdown link in description".
+
+| # | Atom / Concept | Hook | Pillar | Long-form pair |
+|---|---------------|------|--------|----------------|
+| S1 | internal-computation | "Overthinking isn't willpower. It's bandwidth." | P1 | L1 |
+| S2 | offers | "Everything is an offer. Most people miss them." | P2 | L20 |
+| S3 | yes-and | "Yes And isn't agreement. It's acceptance." | P4 | L31 |
+| S4 | status (Johnstone) | "The single most powerful behavior: don't move." | P1 | L34 |
+| S5 | obvious-choice | "The obvious choice is always funnier." | P1 | L2 |
+| S6 | failing-forward | "Fall, then figure out what to do on the way down." | P1 | L4 |
+| S7 | blocking | "People pleasing is blocking your own offers." | P1 | L5 |
+| S8 | active-listening | "Most listening is composing while waiting." | P2 | L20 |
+| S9 | be-present | "Awkwardness is an attention problem, not a trait." | P1 | L7 |
+| S10 | commitment | "A committed mediocre choice beats a hedged brilliant one." | P4 | — |
+| S11 | safety-in-the-room | "Safety isn't a policy. It's a practice." | P3 | L26 |
+| S12 | game-of-the-scene | "Game is the unusual thing, heightened." | P4 | — |
+| S13 | mirroring (concept) | "Mirroring kills overthinking instantly. Here's why." | P1 | L1 |
+| S14 | spontaneity | "Your first idea is always better than your third." | P1 | L1 |
+| S15 | reality-construction | "Improv isn't comedy. It's reality construction." | P5 | L32 |
+
+### Inventory Summary
+
+| Format | Count | Source material | Status |
+|--------|-------|----------------|--------|
+| Long-form (P1-P5) | 35 | 35 of 40 bridges | 3 ready (🟢), 32 scripts to write (🟡) |
+| Tutorial / demo | 17 | 17 exercise atoms | All need new scripts (🔴) |
+| Shorts (first 90 days) | 15 | High-value atoms | All need new scripts (🔴) |
+| **TOTAL videos planned** | **67** | | 3 ready, 64 to produce |
+
+### What's NOT in the inventory (deliberate exclusions)
+
+- **5 bridges with low YouTube opportunity:** stage-fright (already covered), how-to-be-more-creative, how-to-overcome-fear-of-failure, how-to-stop-overthinking-in-a-relationship, 5-minute-team-building (use as Shorts source instead)
+- **Atoms beyond exercise type** — converted to Shorts inventory if high-value, otherwise reserved for Phase 2 (after 90 days)
+- **Threads (24)** — these are advanced/teacher content. Phase 2 once core 67 are produced
+
+### Production Plan (90-Day Schedule)
+
+**Days 1-30: Foundation (10 videos)**
+- L1 (overthinking) — UPLOAD WEEK 1 (script + audio ready)
+- L23 (team bonding) — UPLOAD WEEK 1 (script + audio ready)
+- L31 (rules of improv) — UPLOAD WEEK 2 (script + audio ready)
+- L2 (how to be funny) — TIER S, no competition, write next
+- L4 (how to deal with rejection) — TIER A, zero KD
+- T1 (mirroring tutorial) — paired with L1
+- T2 (yes and chain tutorial) — paired with L23
+- S1, S6, S13 — Shorts paired with foundation longs
+
+**Days 31-60: Expand (20 videos)**
+- L13 (body language) + L5 (people pleasing) + L7 (less awkward) + L34 (assertive)
+- T5 (last word response) + T3 (gift giving) + T4 (one-word) + T7 (first line)
+- 8 more Shorts
+
+**Days 61-90: Saturate (37 videos)**
+- All remaining Tier A and Tier B long-form
+- All remaining tutorials
+- 10 more Shorts
+
+After 90 days: 67 videos uploaded, channel established as the educational improv resource on YouTube.
+
+---
+
 ## Next Iteration Focus
 
-**Iteration 4: Video inventory generation.**
+**Iteration 5: Prioritization scoring.**
 
-Turn the prioritized keyword list into a complete video roster of ~50 videos with:
-- Specific video title (using naming convention from iteration 1)
-- Target keyword
-- Pillar / playlist
-- Source bridge or atom
-- Format (long-form / tutorial / Short)
-- Production status (script ready / needs writing / needs research)
-- Estimated production time
+Score every video using a unified rubric:
+- Volume score (0-10 based on monthly searches)
+- Competition score (0-10 based on KD inverse)
+- White space bonus (0-5 if no top-10 video competition)
+- Content readiness (0-5 based on bridge availability)
+- Cross-pillar bonus (0-3 if it supports multiple pillars)
 
-This becomes the canonical "make these videos in this order" list.
+Total possible: 33 points. Will produce a single "make this video next" sorted list.
 
-**Iteration 5 will then add scoring** (volume × low competition × content readiness) and **iteration 6 will define exact title/description/thumbnail schema per pillar**.
+After iteration 5: schema completion (iteration 6) — exact title format, description template, thumbnail composition rules per pillar.
