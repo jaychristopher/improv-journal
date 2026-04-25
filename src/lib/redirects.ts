@@ -108,5 +108,21 @@ export function generateHubRedirects(): {
     { source: "/concepts/techniques", destination: "/practice/techniques", permanent: true },
     { source: "/concepts/formats", destination: "/practice/formats", permanent: true },
     { source: "/concepts/definitions", destination: "/practice/vocabulary", permanent: true },
+    // Deleted exercise picker variants → new dynamic routes
+    {
+      source: "/tools/exercise-picker/for-teams",
+      destination: "/tools/exercise-picker",
+      permanent: true,
+    },
+    {
+      source: "/tools/exercise-picker/for-beginners",
+      destination: "/tools/exercise-picker/beginner",
+      permanent: true,
+    },
+    {
+      source: "/tools/exercise-picker/warm-ups",
+      destination: "/tools/exercise-picker",
+      permanent: true,
+    },
   ];
 }
