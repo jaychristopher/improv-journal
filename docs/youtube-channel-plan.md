@@ -5,7 +5,7 @@
 **Tagline:** Six laws, eight principles — discovered on the improv stage, applicable everywhere.
 **Strategy:** Chase citations, not views. Each video is a permanent SEO asset that ranks on Google AND gets cited by AI.
 
-**Status:** Iteration 4 of ~10 complete. Last updated 2026-04-25.
+**Status:** Iteration 5 of ~10 complete. Last updated 2026-04-25.
 
 ---
 
@@ -17,7 +17,7 @@
 | 2 | Keyword research per playlist (Ahrefs) | 2026-04-25 | Section "Keyword Opportunity Matrix" |
 | 3 | YouTube competitor analysis | 2026-04-25 | Section "Competitive Landscape & White Space" |
 | 4 | Video inventory generation | 2026-04-25 | Section "Video Inventory" |
-| 5 | Prioritization scoring | TODO | — |
+| 5 | Prioritization scoring | 2026-04-25 | Section "Production Priority" |
 | 6 | Schema completion (titles, descriptions, thumbs) | TODO | — |
 | 7+ | Refinement loops | TODO | — |
 
@@ -539,17 +539,138 @@ After 90 days: 67 videos uploaded, channel established as the educational improv
 
 ---
 
+## 8. Production Priority (Iteration 5)
+
+**Method:** Score every video on 5 axes (max 33 points), then sort. The score answers "what should we make NEXT?" — weighted toward shippable content with clear ranking opportunity.
+
+### Scoring Rubric
+
+| Axis | Range | Logic |
+|------|-------|-------|
+| **Volume** | 0-10 | 10K+ vol → 10. 5-10K → 8. 2-5K → 6. 1-2K → 5. 500-999 → 4. 200-499 → 3. 100-199 → 2. <100 → 1 |
+| **Low Competition (KD inverse)** | 0-10 | KD 0 → 10. 1-5 → 9. 6-10 → 8. 11-15 → 7. 16-20 → 6. 21-30 → 5. 31-50 → 3. 51+ → 1 |
+| **White Space Bonus** | 0-5 | No top-10 video → 5. One video competitor → 3. Crowded but differentiated → 2. Crowded same-angle → 0 |
+| **Content Readiness** | 0-5 | Script + audio ready → 5. Bridge with quotable defs → 4. Bridge needs script work → 3. Atom-only (Shorts/tutorial) → 2. Needs research → 1 |
+| **Cross-pillar Reach** | 0-3 | Supports 3+ pillars → 3. 2 pillars → 2. Strong adjacency → 1. Single-pillar → 0 |
+
+**Max possible:** 33 points. **Threshold:** 25+ = "make next quarter," 20-24 = "produce in next 90 days," <20 = phase 2.
+
+### Top 30 Videos by Score (Production Order)
+
+| # | Video | Vol | KD | WS | Ready | XP | **Total** | Notes |
+|---|-------|-----|-----|----|----|----|-----------|-------|
+| 1 | **L1: How to Stop Overthinking** | 10 | 7 | 5 | **5** | 1 | **28** | Audio ready, zero video competition. Upload week 1. |
+| 2 | **L2: How to Be Funny** | 8 | 10 | 5 | 4 | 2 | **29** | KD 0, no improv-angle video exists. Highest-leverage NEW production. |
+| 3 | **L23: Team Bonding Activities** | 8 | 7 | 5 | **5** | 2 | **27** | Audio ready. Tutorial-format white space. Upload week 1. |
+| 4 | **L34: How to Be More Assertive** | 6 | 10 | 5 | 4 | 2 | **27** | KD 0, status framing unique. |
+| 5 | **L4: How to Deal with Rejection** | 5 | 10 | 5 | 4 | 1 | **25** | KD 0, failing-forward angle is unique. |
+| 6 | **L5: How to Stop People Pleasing** | 5 | 9 | 5 | 4 | 2 | **25** | "Self-blocking" reframe is unique. |
+| 7 | **L13: How to Read Body Language** | 6 | 9 | 2 | 4 | 1 | **22** | Crowded but our "read changes" angle differentiates. |
+| 8 | **L11: Stage Fright Is Not Your Enemy** | 8 | 3 | 3 | 4 | 1 | **19** | High volume, partial competition. Reframe is strong. |
+| 9 | **L12: How to Be More Confident** | 6 | 7 | 3 | 4 | 1 | **21** | Status approach differentiates from generic advice. |
+| 10 | **L31: Rules of Improv** | 3 | 8 | 3 | **5** | 0 | **19** | Audio ready. Highly citable for AI. |
+| 11 | **L24: Group Dynamics** | 6 | 9 | 3 | 4 | 1 | **23** | Multi-tradition framing unique. |
+| 12 | **L25: Emotional Safety** | 6 | 7 | 3 | 4 | 2 | **22** | Workplace + life crossover. |
+| 13 | **L7: How to Be Less Awkward** | 4 | 9 | 3 | 4 | 1 | **21** | Attention-problem framing is unique. |
+| 14 | **L6: How to Be Witty** | 4 | 10 | 3 | 4 | 1 | **22** | KD 0, obvious-choice angle. |
+| 15 | **L33: How to Get Better at Improv** | 2 | 10 | 5 | 4 | 0 | **21** | Direct improv audience. |
+| 16 | **L20: Active Listening** | 10 | 1 | 2 | 4 | 1 | **18** | High volume, very hard, but cornerstone. |
+| 17 | **L32: What Is Improv?** | 5 | 8 | 3 | 4 | 0 | **20** | Foundational explainer for all incoming traffic. |
+| 18 | **L18: How to Make Small Talk** | 6 | 3 | 2 | 4 | 1 | **16** | Hard ranking, unique offers angle. |
+| 19 | **L14: How to Be a Better Listener** | 5 | 9 | 3 | 4 | 1 | **22** | KD 2, three-modes framework unique. |
+| 20 | **L15: Types of Listening** | 4 | 8 | 3 | 4 | 1 | **20** | Listicle format, listed for SEO depth. |
+| 21 | **L3: How to Stop Caring What People Think** | 6 | 9 | 3 | 4 | 1 | **23** | Audience problem framing unique. |
+| 22 | **T1: Mirroring Tutorial** | 2 | 10 | 5 | 2 | 2 | **21** | Demo format wins SEO. Pair with L1. |
+| 23 | **T5: Last Word Response Tutorial** | 1 | 10 | 5 | 2 | 2 | **20** | Listening exercise demo. Pair with L14. |
+| 24 | **T2: Yes And Chain Tutorial** | 2 | 10 | 5 | 2 | 2 | **21** | Pair with L23. Brainstorming reframe. |
+| 25 | **T3: Gift Giving Tutorial** | 1 | 10 | 5 | 2 | 1 | **19** | Pair with L23. |
+| 26 | **L16: How to Be a Better Conversationalist** | 3 | 10 | 5 | 4 | 1 | **23** | KD 0, listicle format. |
+| 27 | **L17: How to Have Difficult Conversations** | 4 | 7 | 3 | 4 | 1 | **19** | Workplace + life. |
+| 28 | **L29: How to Give Feedback** | 4 | 5 | 3 | 4 | 1 | **17** | Cross-pillar (teams + teacher). |
+| 29 | **L21: Interpersonal Communication Skills** | 6 | 5 | 3 | 4 | 1 | **19** | High volume, partial KD. |
+| 30 | **L19: How to Deal with Conflict** | 3 | 7 | 3 | 4 | 1 | **18** | Cross-pillar (life + teams). |
+
+### What "Make Next" Actually Looks Like
+
+Re-sorting by **production order** (not score) — accounting for content readiness, dependency chains, and what cross-promotes:
+
+**WEEK 1 (3 uploads — all ready):**
+1. L1: How to Stop Overthinking *(audio ready)*
+2. L23: Team Bonding Activities *(audio ready)*
+3. L31: Rules of Improv *(audio ready)*
+
+**WEEK 2-3 (4 uploads — Tier S new content):**
+4. L2: How to Be Funny *(write next — biggest open opportunity)*
+5. L4: How to Deal with Rejection
+6. L5: How to Stop People Pleasing
+7. L34: How to Be More Assertive
+
+**WEEK 4-6 (paired tutorials):**
+8. T1: Mirroring tutorial *(pair with L1)*
+9. T2: Yes And Chain tutorial *(pair with L23)*
+10. T5: Last Word Response tutorial *(differentiator video)*
+
+**WEEK 7-9 (Tier A long-form):**
+11. L24: Group Dynamics
+12. L25: Emotional Safety
+13. L13: How to Read Body Language
+14. L3: How to Stop Caring What People Think
+15. L14: How to Be a Better Listener
+
+**WEEK 10-12 (Tier B + foundation):**
+16. L32: What Is Improv (foundational explainer)
+17. L11: Stage Fright Is Not Your Enemy
+18. L33: How to Get Better at Improv
+19. L7: How to Be Less Awkward
+20. L6: How to Be Witty
+
+**Beyond week 12:** continue down the priority list. Resume scoring on next refresh of Ahrefs data.
+
+### Cross-Promotion Strategy
+
+Each upload week should include:
+- 1 long-form video as the anchor
+- 1 tutorial OR short paired with it (pulls viewers deeper)
+- Engagement with comments on previous videos (every reply is a ranking signal)
+
+Pairing examples:
+- **L1 (overthinking)** ↔ **T1 (Mirroring tutorial)** ↔ **S1 ("bandwidth not willpower" Short)**
+- **L23 (team bonding)** ↔ **T2 (Yes And Chain)** ↔ **T3 (Gift Giving)**
+- **L31 (rules)** ↔ **S3 ("Yes And isn't agreement")** ↔ **L32 (what is improv)**
+
+This bundle approach lets each week produce 1-2 long-forms and 2-3 supporting Shorts/tutorials.
+
+### Score Distribution Across Inventory
+
+| Score range | Count | Strategy |
+|------------|-------|----------|
+| 25-29 (Tier S) | 7 | Produce in 30 days — every one is a winner |
+| 20-24 (Tier A) | 14 | Produce in 90 days — strong candidates |
+| 15-19 (Tier B) | 11 | Produce months 4-6 — fill out catalog |
+| <15 (Tier C) | rest | Phase 2 / catalog completion (after 6 months) |
+
+### Key Insight from Scoring
+
+**3 of the top 5 videos are already produced.** L1, L23, L31 are sitting in `public/audio/youtube/` waiting to be uploaded.
+
+**The 4 next-priority videos to write (L2, L4, L5, L34) all have KD 0-1.** Combined volume: ~11.5K/mo. All have bridge content ready. Total writing time: ~4 hours of TTS scripting.
+
+**Production efficiency:** 7 of the top 30 are tutorials with no associated keyword research burden — just need exercise instruction text → TTS conversion. Each tutorial is 2-3 hours from atom to upload.
+
+---
+
 ## Next Iteration Focus
 
-**Iteration 5: Prioritization scoring.**
+**Iteration 6: Schema completion.**
 
-Score every video using a unified rubric:
-- Volume score (0-10 based on monthly searches)
-- Competition score (0-10 based on KD inverse)
-- White space bonus (0-5 if no top-10 video competition)
-- Content readiness (0-5 based on bridge availability)
-- Cross-pillar bonus (0-3 if it supports multiple pillars)
+Define exact templates per pillar:
+- Title format (chars, structure, keyword placement)
+- Description template (hook, summary, link UTM, timestamps, hashtags)
+- Thumbnail composition (background color, accent word, icon system)
+- End card configuration (3 cards: subscribe + 2 video suggestions)
+- Hashtag strategy (3-5 per video, mix of broad + specific)
+- Tag strategy (15-20 per video, all keyword variants)
 
-Total possible: 33 points. Will produce a single "make this video next" sorted list.
+Output: a single "video upload checklist" that locks in consistency across every upload.
 
-After iteration 5: schema completion (iteration 6) — exact title format, description template, thumbnail composition rules per pillar.
+**After iteration 6:** refinement loops (iteration 7+) to find any gaps, validate priorities against fresh Ahrefs data, and ensure the plan is truly executable.
