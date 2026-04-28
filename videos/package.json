@@ -1,0 +1,28 @@
+{
+  "name": "improv-journal-videos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion mock videos for The Physics of Connection YouTube channel",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render",
+    "build:l1": "remotion render L1Overthinking out/L1.mp4",
+    "build:l23": "remotion render L23TeamBonding out/L23.mp4",
+    "build:l31": "remotion render L31RulesOfImprov out/L31.mp4",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

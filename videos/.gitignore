@@ -1,0 +1,7 @@
+node_modules/
+out/
+.cache/
+*.log
+
+# Audio is gitignored in the parent repo too; copy from ../public/audio/youtube/
+public/audio/*.mp3
