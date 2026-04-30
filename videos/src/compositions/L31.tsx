@@ -4,19 +4,20 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// L31 v2 audio: 463.21s = 13896 frames at 30fps. Same 11 peaks; just retimed.
+// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
+// v2 audio: 462.88s = 13886 frames. See docs/youtube-week-1/peak-sync-audit.json.
 export const L31_PEAKS = [
-  { id: "01-search", durationInFrames: 18 * 30 }, // 0:00–0:18
-  { id: "02-list", durationInFrames: 35 * 30 }, // 0:18–0:53
-  { id: "03-yes-and-traditions", durationInFrames: 80 * 30 }, // 0:53–2:13
-  { id: "04-empty-loaded", durationInFrames: 60 * 30 }, // 2:13–3:13
-  { id: "05-five-traditions", durationInFrames: 60 * 30 }, // 3:13–4:13
-  { id: "06-blocking", durationInFrames: 70 * 30 }, // 4:13–5:23
-  { id: "07-del-close", durationInFrames: 50 * 30 }, // 5:23–6:13
-  { id: "08-strip-away", durationInFrames: 18 * 30 }, // 6:13–6:31
-  { id: "09-reveal", durationInFrames: 18 * 30 }, // 6:31–6:49
-  { id: "10-training-wheels", durationInFrames: 22 * 30 }, // 6:49–7:11
-  { id: "11-closing", durationInFrames: 32.2 * 30 }, // 7:11–7:43
+  { id: "01-search", durationInFrames: 406 }, // 0.18–13.70s
+  { id: "02-list", durationInFrames: 332 }, // 13.70–24.78s
+  { id: "03-yes-and-traditions", durationInFrames: 2461 }, // 24.78–106.82s
+  { id: "04-empty-loaded", durationInFrames: 1518 }, // 106.82–157.42s
+  { id: "05-five-traditions", durationInFrames: 2006 }, // 157.42–224.30s
+  { id: "06-blocking", durationInFrames: 2528 }, // 224.30–308.58s
+  { id: "07-del-close", durationInFrames: 1704 }, // 308.58–365.38s
+  { id: "08-strip-away", durationInFrames: 231 }, // 365.38–373.08s
+  { id: "09-reveal", durationInFrames: 983 }, // 373.08–405.86s
+  { id: "10-training-wheels", durationInFrames: 431 }, // 405.86–420.22s
+  { id: "11-closing", durationInFrames: 1290 }, // 420.22–463.20s (+10 for rounding)
 ];
 export const L31_DURATION = L31_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 

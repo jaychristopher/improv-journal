@@ -13,18 +13,19 @@ import {
   Watermark,
 } from "../lib/primitives";
 
-// Peak timings (frames at 30fps). v2 audio duration: 283.04s = 8491 frames.
+// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
+// v2 audio: 283.01s = 8490 frames. See docs/youtube-week-1/peak-sync-audit.json.
 export const L1_PEAKS = [
-  { id: "01-overthinking", durationInFrames: 9 * 30 }, // 0:00–0:09
-  { id: "02-simulation", durationInFrames: 16 * 30 }, // 0:09–0:25
-  { id: "03-safe-dead", durationInFrames: 8 * 30 }, // 0:25–0:33
-  { id: "04-bandwidth", durationInFrames: 50 * 30 }, // 0:33–1:23 (anchor)
-  { id: "05-internal", durationInFrames: 32 * 30 }, // 1:23–1:55
-  { id: "06-forget-yourself", durationInFrames: 32 * 30 }, // 1:55–2:27
-  { id: "07-mirroring", durationInFrames: 30 * 30 }, // 2:27–2:57
-  { id: "08-first-line", durationInFrames: 28 * 30 }, // 2:57–3:25
-  { id: "09-last-word", durationInFrames: 28 * 30 }, // 3:25–3:53
-  { id: "10-redirect", durationInFrames: 50 * 30 }, // 3:53–4:43 (closing + CTA)
+  { id: "01-overthinking", durationInFrames: 245 }, // 0.00–8.18s
+  { id: "02-simulation", durationInFrames: 447 }, // 8.18–23.08s
+  { id: "03-safe-dead", durationInFrames: 112 }, // 23.08–26.81s
+  { id: "04-bandwidth", durationInFrames: 860 }, // 26.81–55.48s (anchor)
+  { id: "05-internal", durationInFrames: 787 }, // 55.48–81.71s
+  { id: "06-forget-yourself", durationInFrames: 1543 }, // 81.71–133.15s
+  { id: "07-mirroring", durationInFrames: 943 }, // 133.15–164.58s
+  { id: "08-first-line", durationInFrames: 698 }, // 164.58–187.85s
+  { id: "09-last-word", durationInFrames: 712 }, // 187.85–211.57s
+  { id: "10-redirect", durationInFrames: 2143 }, // 211.57–283.00s (closing + CTA, +4 to absorb rounding)
 ];
 
 export const L1_DURATION = L1_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);

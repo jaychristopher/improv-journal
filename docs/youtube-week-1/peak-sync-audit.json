@@ -1,0 +1,119 @@
+{
+  "L31": {
+    "videoKey": "L31",
+    "peaks": [
+      {
+        "num": 1,
+        "label": "Search bar",
+        "anchor": [
+          "you",
+          "searched"
+        ],
+        "start": 0.18,
+        "duration": 13.52
+      },
+      {
+        "num": 2,
+        "label": "Standard list (strikes)",
+        "anchor": [
+          "about",
+          "half"
+        ],
+        "start": 13.7,
+        "duration": 11.080000000000002
+      },
+      {
+        "num": 3,
+        "label": "Yes And · 3 traditions",
+        "anchor": [
+          "rule",
+          "one"
+        ],
+        "start": 24.78,
+        "duration": 82.03999999999999
+      },
+      {
+        "num": 4,
+        "label": "Empty vs Loaded",
+        "anchor": [
+          "rule",
+          "two"
+        ],
+        "start": 106.82,
+        "duration": 50.599999999999994
+      },
+      {
+        "num": 5,
+        "label": "5 traditions agree",
+        "anchor": [
+          "rule",
+          "three"
+        ],
+        "start": 157.42,
+        "duration": 66.88000000000002
+      },
+      {
+        "num": 6,
+        "label": "Blocking taxonomy",
+        "anchor": [
+          "rule",
+          "four"
+        ],
+        "start": 224.3,
+        "duration": 84.27999999999997
+      },
+      {
+        "num": 7,
+        "label": "Del Close quote",
+        "anchor": [
+          "rule",
+          "five"
+        ],
+        "start": 308.58,
+        "duration": 56.80000000000001
+      },
+      {
+        "num": 8,
+        "label": "Strip away",
+        "anchor": [
+          "now",
+          "strip"
+        ],
+        "start": 365.38,
+        "duration": 7.699999999999989
+      },
+      {
+        "num": 9,
+        "label": "Get out of your head",
+        "anchor": [
+          "get",
+          "out"
+        ],
+        "start": 373.08,
+        "duration": 32.78000000000003
+      },
+      {
+        "num": 10,
+        "label": "Training wheels",
+        "anchor": [
+          "training",
+          "wheels"
+        ],
+        "start": 405.86,
+        "duration": 14.360000000000014
+      },
+      {
+        "num": 11,
+        "label": "Closing / books",
+        "anchor": [
+          "if",
+          "you",
+          "want"
+        ],
+        "start": 420.22,
+        "duration": 42.65999999999997
+      }
+    ],
+    "audioEnd": 462.88
+  }
+}

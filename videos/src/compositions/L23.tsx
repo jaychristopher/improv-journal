@@ -4,21 +4,21 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// L23 v2 audio: 434.03s = 13021 frames at 30fps. Peak 10 was "vulnerability"; v2 swaps to "debrief"
-// at peak 10 and adds "return weekly" at peak 11.
+// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
+// v2 audio: 433.70s = 13011 frames. See docs/youtube-week-1/peak-sync-audit.json.
 export const L23_PEAKS = [
-  { id: "01-fails", durationInFrames: 14 * 30 }, // 0:00–0:14
-  { id: "02-fun-trust", durationInFrames: 14 * 30 }, // 0:14–0:28
-  { id: "03-art-form", durationInFrames: 30 * 30 }, // 0:28–0:58
-  { id: "04-mirroring", durationInFrames: 60 * 30 }, // 0:58–1:58
-  { id: "05-no-leader", durationInFrames: 18 * 30 }, // 1:58–2:16
-  { id: "06-gift-giving", durationInFrames: 50 * 30 }, // 2:16–3:06
-  { id: "07-yes-and", durationInFrames: 50 * 30 }, // 3:06–3:56
-  { id: "08-one-word", durationInFrames: 40 * 30 }, // 3:56–4:36
-  { id: "09-sequence", durationInFrames: 28 * 30 }, // 4:36–5:04
-  { id: "10-debrief", durationInFrames: 35 * 30 }, // 5:04–5:39 (was vulnerability)
-  { id: "11-return-weekly", durationInFrames: 30 * 30 }, // 5:39–6:09 (NEW, replaces vulnerability)
-  { id: "12-teamwork", durationInFrames: 65 * 30 }, // 6:09–7:14 (closing + CTA)
+  { id: "01-fails", durationInFrames: 932 }, // 0.10–31.18s
+  { id: "02-fun-trust", durationInFrames: 1048 }, // 31.18–66.12s
+  { id: "03-art-form", durationInFrames: 1026 }, // 66.12–100.32s
+  { id: "04-mirroring", durationInFrames: 657 }, // 100.32–122.22s
+  { id: "05-no-leader", durationInFrames: 547 }, // 122.22–140.44s
+  { id: "06-gift-giving", durationInFrames: 1199 }, // 140.44–180.42s
+  { id: "07-yes-and", durationInFrames: 1556 }, // 180.42–232.30s
+  { id: "08-one-word", durationInFrames: 1492 }, // 232.30–282.02s
+  { id: "09-sequence", durationInFrames: 1214 }, // 282.02–322.50s
+  { id: "10-debrief", durationInFrames: 650 }, // 322.50–344.18s
+  { id: "11-return-weekly", durationInFrames: 527 }, // 344.18–361.74s
+  { id: "12-teamwork", durationInFrames: 2163 }, // 361.74–433.70s (+4 for rounding)
 ];
 export const L23_DURATION = L23_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 
