@@ -13,20 +13,18 @@ import {
   Watermark,
 } from "../lib/primitives";
 
-// Peak timings (frames at 30fps).
-// Audio duration is ~3:40 (220s), giving ~6600 frames; we add a small tail buffer.
-// These match the script-position timestamps in keyframe-strategy.md.
+// Peak timings (frames at 30fps). v2 audio duration: 283.04s = 8491 frames.
 export const L1_PEAKS = [
-  { id: "01-overthinking", durationInFrames: 8 * 30 }, // 0:00–0:08
-  { id: "02-simulation", durationInFrames: 12 * 30 }, // 0:08–0:20
-  { id: "03-safe-dead", durationInFrames: 10 * 30 }, // 0:20–0:30
-  { id: "04-bandwidth", durationInFrames: 60 * 30 }, // 0:30–1:30 (anchor)
-  { id: "05-internal", durationInFrames: 30 * 30 }, // 1:30–2:00
-  { id: "06-forget-yourself", durationInFrames: 30 * 30 }, // 2:00–2:30
-  { id: "07-mirroring", durationInFrames: 45 * 30 }, // 2:30–3:15
-  { id: "08-first-line", durationInFrames: 45 * 30 }, // 3:15–4:00
-  { id: "09-last-word", durationInFrames: 30 * 30 }, // 4:00–4:30
-  { id: "10-redirect", durationInFrames: 25 * 30 }, // 4:30–4:55 (closing)
+  { id: "01-overthinking", durationInFrames: 9 * 30 }, // 0:00–0:09
+  { id: "02-simulation", durationInFrames: 16 * 30 }, // 0:09–0:25
+  { id: "03-safe-dead", durationInFrames: 8 * 30 }, // 0:25–0:33
+  { id: "04-bandwidth", durationInFrames: 50 * 30 }, // 0:33–1:23 (anchor)
+  { id: "05-internal", durationInFrames: 32 * 30 }, // 1:23–1:55
+  { id: "06-forget-yourself", durationInFrames: 32 * 30 }, // 1:55–2:27
+  { id: "07-mirroring", durationInFrames: 30 * 30 }, // 2:27–2:57
+  { id: "08-first-line", durationInFrames: 28 * 30 }, // 2:57–3:25
+  { id: "09-last-word", durationInFrames: 28 * 30 }, // 3:25–3:53
+  { id: "10-redirect", durationInFrames: 50 * 30 }, // 3:53–4:43 (closing + CTA)
 ];
 
 export const L1_DURATION = L1_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
@@ -68,7 +66,7 @@ const Peak1: React.FC = () => (
       </div>
       <FadeIn startFrame={20} duration={18} style={{ marginTop: 60 }}>
         <Caps tracking={8} size={32} color={colors.fg.slate300}>
-          the bandwidth thief
+          {"in less than half a second"}
         </Caps>
       </FadeIn>
       <FadeIn startFrame={32} style={{ marginTop: 32 }}>

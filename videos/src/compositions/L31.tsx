@@ -4,19 +4,19 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// L31 audio is ~7-8 minutes; apportioned to 11 peaks per script timestamps.
+// L31 v2 audio: 463.21s = 13896 frames at 30fps. Same 11 peaks; just retimed.
 export const L31_PEAKS = [
-  { id: "01-search", durationInFrames: 20 * 30 }, // 0:00–0:20
-  { id: "02-list", durationInFrames: 40 * 30 }, // 0:20–1:00
-  { id: "03-yes-and-traditions", durationInFrames: 120 * 30 }, // 1:00–3:00
-  { id: "04-empty-loaded", durationInFrames: 60 * 30 }, // 3:00–4:00
-  { id: "05-five-traditions", durationInFrames: 60 * 30 }, // 4:00–5:00
-  { id: "06-blocking", durationInFrames: 60 * 30 }, // 5:00–6:00
-  { id: "07-del-close", durationInFrames: 60 * 30 }, // 6:00–7:00
-  { id: "08-strip-away", durationInFrames: 15 * 30 }, // 7:00–7:15
-  { id: "09-reveal", durationInFrames: 15 * 30 }, // 7:15–7:30
-  { id: "10-training-wheels", durationInFrames: 15 * 30 }, // 7:30–7:45
-  { id: "11-closing", durationInFrames: 25 * 30 }, // 7:45–8:10
+  { id: "01-search", durationInFrames: 18 * 30 }, // 0:00–0:18
+  { id: "02-list", durationInFrames: 35 * 30 }, // 0:18–0:53
+  { id: "03-yes-and-traditions", durationInFrames: 80 * 30 }, // 0:53–2:13
+  { id: "04-empty-loaded", durationInFrames: 60 * 30 }, // 2:13–3:13
+  { id: "05-five-traditions", durationInFrames: 60 * 30 }, // 3:13–4:13
+  { id: "06-blocking", durationInFrames: 70 * 30 }, // 4:13–5:23
+  { id: "07-del-close", durationInFrames: 50 * 30 }, // 5:23–6:13
+  { id: "08-strip-away", durationInFrames: 18 * 30 }, // 6:13–6:31
+  { id: "09-reveal", durationInFrames: 18 * 30 }, // 6:31–6:49
+  { id: "10-training-wheels", durationInFrames: 22 * 30 }, // 6:49–7:11
+  { id: "11-closing", durationInFrames: 32.2 * 30 }, // 7:11–7:43
 ];
 export const L31_DURATION = L31_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 
@@ -135,6 +135,27 @@ const Peak1: React.FC = () => (
       style={{ position: "absolute", left: 0, right: 0, top: 720, textAlign: "center" }}
     >
       <Kicker size={32}>millions search this every year. they all find the same five rules.</Kicker>
+    </FadeIn>
+    {/* Open-loop promise pill — honors v2 hook "I'll show you in seven minutes" */}
+    <FadeIn
+      startFrame={42}
+      style={{ position: "absolute", left: 0, right: 0, top: 830, textAlign: "center" }}
+    >
+      <div
+        style={{
+          display: "inline-block",
+          padding: "16px 36px",
+          background: colors.accent.red,
+          borderRadius: 30,
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: 22,
+          letterSpacing: 4,
+          color: colors.fg.white,
+        }}
+      >
+        IN 7 MIN: WHY HALF ARE WRONG
+      </div>
     </FadeIn>
     <Watermark />
   </BaseFrame>

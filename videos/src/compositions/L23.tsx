@@ -4,20 +4,21 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// L23 audio is ~7 minutes (12,600 frames at 30fps); we apportion to 12 peaks per script timestamps.
+// L23 v2 audio: 434.03s = 13021 frames at 30fps. Peak 10 was "vulnerability"; v2 swaps to "debrief"
+// at peak 10 and adds "return weekly" at peak 11.
 export const L23_PEAKS = [
-  { id: "01-fails", durationInFrames: 30 * 30 }, // 0:00–0:30
-  { id: "02-fun-trust", durationInFrames: 30 * 30 }, // 0:30–1:00
-  { id: "03-art-form", durationInFrames: 30 * 30 }, // 1:00–1:30
-  { id: "04-mirroring", durationInFrames: 60 * 30 }, // 1:30–2:30
-  { id: "05-no-leader", durationInFrames: 30 * 30 }, // 2:30–3:00
-  { id: "06-gift-giving", durationInFrames: 60 * 30 }, // 3:00–4:00
-  { id: "07-yes-and", durationInFrames: 60 * 30 }, // 4:00–5:00
-  { id: "08-one-word", durationInFrames: 60 * 30 }, // 5:00–6:00
-  { id: "09-sequence", durationInFrames: 30 * 30 }, // 6:00–6:30
-  { id: "10-vulnerability", durationInFrames: 30 * 30 }, // 6:30–7:00
-  { id: "11-debrief", durationInFrames: 30 * 30 }, // 7:00–7:30
-  { id: "12-teamwork", durationInFrames: 30 * 30 }, // 7:30–8:00
+  { id: "01-fails", durationInFrames: 14 * 30 }, // 0:00–0:14
+  { id: "02-fun-trust", durationInFrames: 14 * 30 }, // 0:14–0:28
+  { id: "03-art-form", durationInFrames: 30 * 30 }, // 0:28–0:58
+  { id: "04-mirroring", durationInFrames: 60 * 30 }, // 0:58–1:58
+  { id: "05-no-leader", durationInFrames: 18 * 30 }, // 1:58–2:16
+  { id: "06-gift-giving", durationInFrames: 50 * 30 }, // 2:16–3:06
+  { id: "07-yes-and", durationInFrames: 50 * 30 }, // 3:06–3:56
+  { id: "08-one-word", durationInFrames: 40 * 30 }, // 3:56–4:36
+  { id: "09-sequence", durationInFrames: 28 * 30 }, // 4:36–5:04
+  { id: "10-debrief", durationInFrames: 35 * 30 }, // 5:04–5:39 (was vulnerability)
+  { id: "11-return-weekly", durationInFrames: 30 * 30 }, // 5:39–6:09 (NEW, replaces vulnerability)
+  { id: "12-teamwork", durationInFrames: 65 * 30 }, // 6:09–7:14 (closing + CTA)
 ];
 export const L23_DURATION = L23_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 
@@ -62,11 +63,11 @@ const Peak1: React.FC = () => (
         color={colors.accent.orange}
         style={{ fontStyle: "italic", lineHeight: 1.3 }}
       >
-        fine.
+        fine afternoon.
         <br />
         then Monday.
         <br />
-        still disconnected.
+        exactly as before.
       </Kicker>
     </FadeIn>
     <Watermark />
@@ -696,110 +697,8 @@ const Peak9: React.FC = () => {
   );
 };
 
+// v2 Peak 10 — Debrief (was Peak 11 in v1, promoted to peak 10)
 const Peak10: React.FC = () => {
-  const ticks = [
-    { yPct: 0.85, label: "Mirroring", num: "1" },
-    { yPct: 0.65, label: "Gift Giving", num: "2" },
-    { yPct: 0.45, label: "Yes And", num: "3" },
-    { yPct: 0.25, label: "One-Word", num: "4" },
-  ];
-  const thermW = 100,
-    thermH = 580,
-    thermY = 320;
-  const cx = 1920 * 0.35;
-  return (
-    <BaseFrame>
-      <PeakBadge num={10} label="the scale" />
-      <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 160, textAlign: "center" }}>
-        <Title size={88}>Vulnerability rises.</Title>
-      </FadeIn>
-      <FadeIn
-        startFrame={16}
-        style={{
-          position: "absolute",
-          left: cx - thermW / 2,
-          top: thermY,
-          width: thermW,
-          height: thermH,
-          background: colors.bg.slate900,
-          border: `4px solid ${colors.fg.slate300}`,
-          borderRadius: thermW / 2,
-        }}
-      >
-        {/* mercury */}
-        <div
-          style={{
-            position: "absolute",
-            left: 6,
-            right: 6,
-            bottom: 0,
-            height: thermH * 0.78,
-            background: colors.accent.red,
-            borderRadius: (thermW - 12) / 2,
-          }}
-        />
-      </FadeIn>
-      <FadeIn
-        startFrame={16}
-        style={{
-          position: "absolute",
-          left: cx - 90,
-          top: thermY + thermH - 60,
-          width: 180,
-          height: 180,
-          background: colors.accent.red,
-          border: `4px solid ${colors.fg.slate300}`,
-          borderRadius: "50%",
-        }}
-      >
-        <div />
-      </FadeIn>
-      {ticks.map((t, i) => (
-        <FadeIn
-          key={i}
-          startFrame={32 + i * 8}
-          style={{
-            position: "absolute",
-            left: cx + thermW / 2 + 10,
-            top: thermY + thermH * t.yPct - 24,
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div style={{ width: 40, height: 4, background: colors.fg.slate300 }} />
-            <div
-              style={{
-                marginLeft: 20,
-                fontFamily: '"Playfair Display", serif',
-                fontWeight: 900,
-                fontSize: 36,
-                color: colors.accent.red,
-              }}
-            >
-              {t.num}
-            </div>
-            <Title size={32} style={{ marginLeft: 20 }}>
-              {t.label}
-            </Title>
-          </div>
-        </FadeIn>
-      ))}
-      <FadeIn startFrame={60} style={{ position: "absolute", left: 1920 * 0.65, top: 380 }}>
-        <Kicker size={56} color={colors.fg.slate300} style={{ lineHeight: 1.3 }}>
-          each exercise
-          <br />
-          increases
-          <br />
-          the <span style={{ color: colors.accent.red }}>vulnerability</span>
-          <br />
-          required.
-        </Kicker>
-      </FadeIn>
-      <Watermark />
-    </BaseFrame>
-  );
-};
-
-const Peak11: React.FC = () => {
   const items = [
     { num: "1", q: "What was hard about Mirroring?" },
     { num: "2", q: "What was easy?" },
@@ -807,7 +706,7 @@ const Peak11: React.FC = () => {
   ];
   return (
     <BaseFrame>
-      <PeakBadge num={11} label="integration" />
+      <PeakBadge num={10} label="integration" />
       <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 130, textAlign: "center" }}>
         <Title size={96}>5-Minute Debrief.</Title>
       </FadeIn>
@@ -856,6 +755,137 @@ const Peak11: React.FC = () => {
           <Kicker size={30} color={colors.ok.green}>
             the bonding comes from what you do with the experience.
           </Kicker>
+        </div>
+      </FadeIn>
+      <Watermark />
+    </BaseFrame>
+  );
+};
+
+// v2 Peak 11 — Return weekly (NEW; replaces v1 vulnerability thermometer)
+const Peak11: React.FC = () => {
+  const days = ["MON", "TUE", "WED", "THU", "FRI"];
+  const exercises = ["MIRRORING", "GIFT GIVING", "YES AND", "ONE-WORD"];
+  const calLeft = 200;
+  const calTop = 290;
+  const cellW = 280;
+  const cellH = 130;
+  const gap = 20;
+  return (
+    <BaseFrame>
+      <PeakBadge num={11} label="the habit" />
+      <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 130, textAlign: "center" }}>
+        <Title size={96}>Return to it.</Title>
+      </FadeIn>
+      {/* Day headers */}
+      <FadeIn startFrame={12} style={{ position: "absolute", left: 0, top: calTop }}>
+        <div style={{ display: "flex", marginLeft: calLeft, gap }}>
+          {days.map((d, i) => (
+            <div
+              key={d}
+              style={{
+                width: cellW,
+                textAlign: "center",
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: 22,
+                letterSpacing: 6,
+                color: i === 0 ? colors.accent.orange : colors.fg.slate600,
+              }}
+            >
+              {d}
+            </div>
+          ))}
+        </div>
+      </FadeIn>
+      {/* 4 weeks of cells */}
+      {[0, 1, 2, 3].map((week) => {
+        const cy = calTop + 50 + week * (cellH + gap);
+        return (
+          <FadeIn
+            key={week}
+            startFrame={20 + week * 8}
+            style={{ position: "absolute", left: 0, top: cy, width: 1920 }}
+          >
+            {/* Week label */}
+            <div
+              style={{
+                position: "absolute",
+                left: 100,
+                top: cellH / 2 - 12,
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: 16,
+                letterSpacing: 4,
+                color: colors.fg.slate500,
+              }}
+            >
+              WK {week + 1}
+            </div>
+            <div style={{ display: "flex", marginLeft: calLeft, gap }}>
+              {days.map((_, d) => {
+                if (d === 0) {
+                  return (
+                    <div
+                      key={d}
+                      style={{
+                        width: cellW,
+                        height: cellH,
+                        borderRadius: 12,
+                        background: "rgba(249,115,22,0.25)",
+                        border: `2px solid ${colors.accent.orange}`,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: 6,
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontFamily: "Inter",
+                          fontWeight: 700,
+                          fontSize: 24,
+                          letterSpacing: 4,
+                          color: colors.accent.orange,
+                        }}
+                      >
+                        5 MIN
+                      </div>
+                      <Title size={22}>{exercises[week]}</Title>
+                    </div>
+                  );
+                }
+                return (
+                  <div
+                    key={d}
+                    style={{
+                      width: cellW,
+                      height: cellH,
+                      borderRadius: 12,
+                      background: "rgba(15,23,42,0.55)",
+                      border: `1px solid ${colors.bg.slate700}`,
+                    }}
+                  />
+                );
+              })}
+            </div>
+          </FadeIn>
+        );
+      })}
+      <FadeIn startFrame={56} style={{ position: "absolute", left: 100, right: 100, bottom: 60 }}>
+        <div
+          style={{
+            height: 70,
+            background: "rgba(249,115,22,0.12)",
+            border: `1px solid ${colors.accent.orange}`,
+            borderRadius: 12,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Kicker size={30}>{"the muscle is built in repetition, not a single session."}</Kicker>
         </div>
       </FadeIn>
       <Watermark />
