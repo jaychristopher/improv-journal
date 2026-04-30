@@ -2,7 +2,16 @@ import React from "react";
 import { Audio, Series, staticFile } from "remotion";
 
 import { colors } from "../lib/design";
-import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
+import {
+  BaseFrame,
+  Caps,
+  FadeIn,
+  FadeInOut,
+  Kicker,
+  PeakBadge,
+  Title,
+  Watermark,
+} from "../lib/primitives";
 
 // Peak timings synced to dead-air-compressed v2 audio. Audio: 438.60s.
 // See docs/youtube-week-1/peak-sync-audit.json.
@@ -231,46 +240,105 @@ const Peak3: React.FC = () => {
   return (
     <BaseFrame>
       <PeakBadge num={3} label="rule 1" />
+      {/* Beat anchors (peak starts at audio 23.72s):
+            0     "Rule one. Yes, And."
+            82    "What people think it means" -- common belief appears
+            270   "Three different things" -- title shows complexity
+            337   Johnstone tradition card
+            570   Johnstone "be changed by what happens" interp visible
+            664   UCB tradition card
+            888   Napier tradition card
+            1060  "wimpy, compliant, passionless"
+            1167  "So which is it?" turn
+            1265  "not about agreement" answer
+            1958  "accept the shared reality" closing principle
+      */}
       <FadeIn style={{ position: "absolute", left: 100, top: 130 }}>
         <Caps tracking={8} size={28} color={colors.accent.red}>
           RULE 1 · YES, AND
         </Caps>
       </FadeIn>
-      <FadeIn startFrame={8} style={{ position: "absolute", left: 100, top: 170 }}>
-        <Title size={72}>Means three different things.</Title>
-      </FadeIn>
-      <FadeIn startFrame={20} style={{ position: "absolute", left: 0, right: 0, top: 360 }}>
-        <div style={{ display: "flex", justifyContent: "center", gap: 40 }}>
-          {panels.map((p, i) => (
-            <div
-              key={i}
-              style={{
-                width: 540,
-                height: 540,
-                background: colors.bg.slate900,
-                border: `3px solid ${p.color}`,
-                borderRadius: 16,
-                padding: 50,
-                textAlign: "center",
-              }}
-            >
-              <Caps tracking={6} size={36} color={p.color}>
-                {p.name}
-              </Caps>
-              <div style={{ width: "60%", height: 2, background: p.color, margin: "30px auto" }} />
-              <Kicker
-                size={40}
-                color={colors.fg.slate300}
-                style={{ lineHeight: 1.3, whiteSpace: "pre-line" }}
-              >
-                {p.interp}
-              </Kicker>
-            </div>
-          ))}
+
+      {/* Common belief (fades out before three panels appear) */}
+      <FadeInOut
+        startFrame={82}
+        visibleFrames={170}
+        outDuration={20}
+        style={{ position: "absolute", left: 0, right: 0, top: 200, textAlign: "center" }}
+      >
+        <Caps tracking={6} size={22} color={colors.fg.slate400}>
+          WHAT PEOPLE THINK IT MEANS:
+        </Caps>
+        <div style={{ marginTop: 24 }}>
+          <Kicker size={56} color={colors.fg.slate500}>
+            agree with everything, add something.
+          </Kicker>
         </div>
-      </FadeIn>
+      </FadeInOut>
+
+      {/* "Three different things" reveal */}
       <FadeIn
-        startFrame={50}
+        startFrame={270}
+        style={{ position: "absolute", left: 0, right: 0, top: 200, textAlign: "center" }}
+      >
+        <Title size={72}>
+          Means <span style={{ color: colors.accent.red }}>three different things.</span>
+        </Title>
+      </FadeIn>
+
+      {/* Three tradition panels — stagger by frame */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 360 }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 40 }}>
+          {panels.map((p, i) => {
+            const startFrames = [337, 664, 888];
+            return (
+              <FadeIn key={p.name} startFrame={startFrames[i]} duration={16} rise={28}>
+                <div
+                  style={{
+                    width: 540,
+                    height: 540,
+                    background: colors.bg.slate900,
+                    border: `3px solid ${p.color}`,
+                    borderRadius: 16,
+                    padding: 50,
+                    textAlign: "center",
+                  }}
+                >
+                  <Caps tracking={6} size={36} color={p.color}>
+                    {p.name}
+                  </Caps>
+                  <div
+                    style={{ width: "60%", height: 2, background: p.color, margin: "30px auto" }}
+                  />
+                  <Kicker
+                    size={40}
+                    color={colors.fg.slate300}
+                    style={{ lineHeight: 1.3, whiteSpace: "pre-line" }}
+                  >
+                    {p.interp}
+                  </Kicker>
+                </div>
+              </FadeIn>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* "So which is it?" turn — appears once all 3 panels are visible */}
+      <FadeInOut
+        startFrame={1167}
+        visibleFrames={80}
+        outDuration={16}
+        style={{ position: "absolute", left: 0, right: 0, bottom: 130, textAlign: "center" }}
+      >
+        <Kicker size={48} color={colors.accent.orange} style={{ fontStyle: "italic" }}>
+          so which is it?
+        </Kicker>
+      </FadeInOut>
+
+      {/* Closing principle */}
+      <FadeIn
+        startFrame={1265}
         style={{ position: "absolute", left: 0, right: 0, bottom: 70, textAlign: "center" }}
       >
         <Kicker size={30} color={colors.fg.slate300}>
@@ -412,23 +480,96 @@ const Peak5: React.FC = () => {
   );
 };
 
+// Peak 6 — Rule 4: Blocking taxonomy. 80 seconds. 5 named children appear
+// one at a time as the audio names them.
+//
+// Audio anchors (peak starts at 214.42s):
+//   0     "Rule four. Don't negate." -- header
+//   128   "never say no" -- common interpretation
+//   179   "oversimplified" reframe
+//   767   "taxonomy" -- BLOCKING parent appears
+//   989   "Wimping" -- child 1
+//   1074  "canceling" -- child 2
+//   1207  "bridging" -- child 3
+//   1335  "hedging" -- child 4
+//   1454  "pimping" -- child 5
+//   1578  "Meanwhile" Napier counterpoint
+//   1649  "fear of negation"
+//   1927  "no tension, no stakes"
+//   2102  "real principle" closer
 const Peak6: React.FC = () => {
   const children = [
-    { label: "Wimping", def: "soft refusal" },
-    { label: "Cancelling", def: "undo offer" },
-    { label: "Bridging", def: "delay action" },
-    { label: "Hedging", def: "vague reply" },
-    { label: "Pimping", def: "overload partner" },
+    { label: "Wimping", def: "soft refusal", startFrame: 989 },
+    { label: "Canceling", def: "undo offer", startFrame: 1074 },
+    { label: "Bridging", def: "delay action", startFrame: 1207 },
+    { label: "Hedging", def: "vague reply", startFrame: 1335 },
+    { label: "Pimping", def: "overload partner", startFrame: 1454 },
   ];
   return (
     <BaseFrame>
       <PeakBadge num={6} label="rule 4" />
+
+      {/* Header */}
       <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 100, textAlign: "center" }}>
         <Caps tracking={8} size={28} color={colors.accent.red}>
           {"RULE 4 · DON'T NEGATE"}
         </Caps>
       </FadeIn>
-      <FadeIn startFrame={10} style={{ position: "absolute", left: 0, right: 0, top: 200 }}>
+
+      {/* Common interpretation (gets struck through) */}
+      <FadeInOut
+        startFrame={128}
+        visibleFrames={580}
+        outDuration={20}
+        style={{ position: "absolute", left: 0, right: 0, top: 220, textAlign: "center" }}
+      >
+        <Caps tracking={6} size={22} color={colors.fg.slate400}>
+          WHAT PEOPLE THINK:
+        </Caps>
+        <div style={{ marginTop: 20, position: "relative", display: "inline-block" }}>
+          <Title size={88} color={colors.fg.slate500} style={{ opacity: 0.7 }}>
+            {'"Never say no."'}
+          </Title>
+        </div>
+      </FadeInOut>
+
+      {/* Strikethrough on "Never say no" once "oversimplified" hits */}
+      <FadeInOut
+        startFrame={179}
+        visibleFrames={530}
+        outDuration={20}
+        style={{
+          position: "absolute",
+          left: "50%",
+          top: 360,
+          width: 600,
+          height: 6,
+          background: colors.accent.red,
+          opacity: 0.85,
+          transform: "translateX(-50%)",
+        }}
+      >
+        <div />
+      </FadeInOut>
+
+      {/* "Oversimplified" callout */}
+      <FadeInOut
+        startFrame={210}
+        visibleFrames={500}
+        outDuration={20}
+        style={{ position: "absolute", left: 0, right: 0, top: 440, textAlign: "center" }}
+      >
+        <Kicker size={48} color={colors.accent.red}>
+          oversimplified.
+        </Kicker>
+      </FadeInOut>
+
+      {/* BLOCKING parent appears at frame 767 (audio "taxonomy") */}
+      <FadeIn
+        startFrame={767}
+        duration={16}
+        style={{ position: "absolute", left: 0, right: 0, top: 200 }}
+      >
         <div
           style={{
             width: 480,
@@ -446,40 +587,85 @@ const Peak6: React.FC = () => {
           </Title>
         </div>
       </FadeIn>
-      <FadeIn startFrame={20} style={{ position: "absolute", left: 0, right: 0, top: 460 }}>
-        <div style={{ display: "flex", justifyContent: "center", gap: 30 }}>
-          {children.map((c, i) => (
-            <div
-              key={i}
-              style={{
-                width: 320,
-                height: 280,
-                background: colors.bg.slate800,
-                border: `2px solid ${colors.fg.slate400}`,
-                borderRadius: 16,
-                padding: 30,
-                textAlign: "center",
-              }}
-            >
-              <Title size={36} color={colors.accent.orange}>
-                {c.label}
-              </Title>
+
+      {/* Subhead: "= 5 named family members" */}
+      <FadeIn
+        startFrame={920}
+        duration={14}
+        style={{ position: "absolute", left: 0, right: 0, top: 340, textAlign: "center" }}
+      >
+        <Caps tracking={6} size={22} color={colors.fg.slate400}>
+          5 NAMED FAMILY MEMBERS
+        </Caps>
+      </FadeIn>
+
+      {/* 5 child cards — fade in one-by-one as named */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 460 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 30,
+            paddingLeft: 30,
+            paddingRight: 30,
+          }}
+        >
+          {children.map((c) => (
+            <FadeIn key={c.label} startFrame={c.startFrame} duration={14} rise={32}>
               <div
                 style={{
-                  width: "60%",
-                  margin: "20px auto",
-                  height: 2,
-                  background: colors.fg.slate600,
+                  width: 320,
+                  height: 280,
+                  background: colors.bg.slate800,
+                  border: `2px solid ${colors.accent.orange}`,
+                  borderRadius: 16,
+                  padding: 30,
+                  textAlign: "center",
                 }}
-              />
-              <Kicker size={26} color={colors.fg.slate300}>
-                {c.def}
-              </Kicker>
-            </div>
+              >
+                <Title size={36} color={colors.accent.orange}>
+                  {c.label}
+                </Title>
+                <div
+                  style={{
+                    width: "60%",
+                    margin: "20px auto",
+                    height: 2,
+                    background: colors.fg.slate600,
+                  }}
+                />
+                <Kicker size={26} color={colors.fg.slate300}>
+                  {c.def}
+                </Kicker>
+              </div>
+            </FadeIn>
           ))}
         </div>
+      </div>
+
+      {/* Napier counterpoint at frame 1578 — subtle bottom callout */}
+      <FadeIn startFrame={1578} style={{ position: "absolute", left: 100, right: 100, top: 800 }}>
+        <div
+          style={{
+            background: "rgba(15,23,42,0.6)",
+            border: `1px solid ${colors.fg.slate600}`,
+            borderRadius: 12,
+            padding: "20px 32px",
+          }}
+        >
+          <Caps tracking={4} size={18} color={colors.accent.orange}>
+            BUT NAPIER WARNS:
+          </Caps>
+          <div style={{ marginTop: 12 }}>
+            <Kicker size={28} color={colors.fg.slate300}>
+              fear of negation produces scenes with no tension and no stakes.
+            </Kicker>
+          </div>
+        </div>
       </FadeIn>
-      <FadeIn startFrame={60} style={{ position: "absolute", left: 100, right: 100, bottom: 80 }}>
+
+      {/* Bottom kicker — closes the peak with "real principle" beat */}
+      <FadeIn startFrame={2102} style={{ position: "absolute", left: 100, right: 100, bottom: 60 }}>
         <div
           style={{
             height: 90,
@@ -492,10 +678,11 @@ const Peak6: React.FC = () => {
           }}
         >
           <Kicker size={32} color={colors.accent.red}>
-            blocking is a family of behaviors. name them to stop them.
+            don&apos;t destroy the shared reality. conflict and refusal are necessary.
           </Kicker>
         </div>
       </FadeIn>
+
       <Watermark />
     </BaseFrame>
   );
