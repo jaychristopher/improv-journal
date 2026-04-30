@@ -402,8 +402,27 @@ const Peak4: React.FC = () => (
   </BaseFrame>
 );
 
+// Peak 5 — Rule 3: 5 traditions agree (63s). Cards appear together
+// matching the "all five agree" collective statement, then sub-captions
+// fade in as Johnstone / Close+Halpern / UCB are individually named.
+//
+// Audio anchors (peak starts at 151.08s):
+//   0     "Rule three. Make your partner look good." -- header
+//   121   "all five major improv traditions essentially agree" -- 5 cards in
+//   319   "create conditions where your partner can succeed" -- principle kicker
+//   457   "lowering your status" -- Johnstone caption
+//   570   "Del Close and Charna Halpern" -- Close caption
+//   767   "UCB game structure" -- UCB caption
+//   1021  "doesn't mean avoiding conflict" -- anti-pattern callout
+//   1724  "shared creation" -- final principle
 const Peak5: React.FC = () => {
-  const traditions = ["Johnstone", "Spolin", "Close", "UCB", "Annoyance"];
+  const traditions: { name: string; caption: string; captionStart: number | null }[] = [
+    { name: "Johnstone", caption: "lower your status", captionStart: 457 },
+    { name: "Spolin", caption: "", captionStart: null },
+    { name: "Close", caption: "ensemble responsibility", captionStart: 570 },
+    { name: "UCB", caption: "set up the game", captionStart: 767 },
+    { name: "Annoyance", caption: "", captionStart: null },
+  ];
   return (
     <BaseFrame>
       <PeakBadge num={5} label="rule 3" />
@@ -412,17 +431,20 @@ const Peak5: React.FC = () => {
           RULE 3 · MAKE YOUR PARTNER LOOK GOOD
         </Caps>
       </FadeIn>
+
+      {/* "Five major traditions agree" — appears at frame 121 with the cards */}
       <FadeIn
-        startFrame={10}
+        startFrame={121}
         style={{ position: "absolute", left: 0, right: 0, top: 170, textAlign: "center" }}
       >
         <Title size={64}>Five major traditions agree.</Title>
       </FadeIn>
-      <FadeIn startFrame={24} style={{ position: "absolute", left: 0, right: 0, top: 360 }}>
+
+      <FadeIn startFrame={121} style={{ position: "absolute", left: 0, right: 0, top: 360 }}>
         <div style={{ display: "flex", justifyContent: "center", gap: 24 }}>
-          {traditions.map((t, i) => (
+          {traditions.map((t) => (
             <div
-              key={i}
+              key={t.name}
               style={{
                 width: 320,
                 height: 360,
@@ -431,9 +453,10 @@ const Peak5: React.FC = () => {
                 borderRadius: 16,
                 padding: 30,
                 textAlign: "center",
+                position: "relative",
               }}
             >
-              <Title size={36}>{t}</Title>
+              <Title size={36}>{t.name}</Title>
               <div
                 style={{
                   marginTop: 60,
@@ -454,11 +477,60 @@ const Peak5: React.FC = () => {
                   />
                 </svg>
               </div>
+              {/* Per-tradition caption (only on the 3 named ones) */}
+              {t.captionStart !== null && (
+                <FadeIn
+                  startFrame={t.captionStart}
+                  duration={14}
+                  style={{
+                    position: "absolute",
+                    left: 0,
+                    right: 0,
+                    bottom: 24,
+                    textAlign: "center",
+                  }}
+                >
+                  <Caps tracking={4} size={16} color={colors.ok.green}>
+                    {t.caption}
+                  </Caps>
+                </FadeIn>
+              )}
             </div>
           ))}
         </div>
       </FadeIn>
-      <FadeIn startFrame={70} style={{ position: "absolute", left: 100, right: 100, bottom: 80 }}>
+
+      {/* Principle kicker — appears at frame 319 ("create conditions for success") */}
+      <FadeInOut
+        startFrame={319}
+        visibleFrames={680}
+        outDuration={20}
+        style={{ position: "absolute", left: 100, right: 100, top: 770 }}
+      >
+        <Kicker size={32} color={colors.fg.slate300} style={{ textAlign: "center" }}>
+          create conditions where your partner can succeed.
+        </Kicker>
+      </FadeInOut>
+
+      {/* Anti-pattern callout — frame 1021 */}
+      <FadeInOut
+        startFrame={1021}
+        visibleFrames={620}
+        outDuration={20}
+        style={{ position: "absolute", left: 100, right: 100, top: 770, textAlign: "center" }}
+      >
+        <Caps tracking={4} size={20} color={colors.accent.orange}>
+          DOES NOT MEAN:
+        </Caps>
+        <div style={{ marginTop: 12 }}>
+          <Kicker size={28} color={colors.fg.slate400}>
+            avoiding conflict, being agreeable, or suppressing yourself.
+          </Kicker>
+        </div>
+      </FadeInOut>
+
+      {/* Final principle — frame 1724 ("shared creation") */}
+      <FadeIn startFrame={1724} style={{ position: "absolute", left: 100, right: 100, bottom: 80 }}>
         <div
           style={{
             height: 100,
@@ -470,11 +542,12 @@ const Peak5: React.FC = () => {
             justifyContent: "center",
           }}
         >
-          <Title size={56} color={colors.ok.green}>
-            Make your partner look good.
+          <Title size={48} color={colors.ok.green}>
+            your success and your partner&apos;s — same thing.
           </Title>
         </div>
       </FadeIn>
+
       <Watermark />
     </BaseFrame>
   );
