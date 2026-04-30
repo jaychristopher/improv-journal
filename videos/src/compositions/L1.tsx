@@ -725,12 +725,84 @@ const Peak5: React.FC = () => {
 };
 
 // =====================================================================
-// Peak 6 — Forget Yourself (Johnstone quote)
-// =====================================================================
+// Peak 6 — Forget Yourself + Johnstone quote (47s, audio 74.82–121.68s).
+//
+// Audio anchors (peak frame offsets):
+//   0     "Improv performers discover something every night on stage" -- setup
+//   148   "performers who monitor themselves" -- WORST shows
+//   279   "performers who forget themselves" -- BEST shows (contrast reveal)
+//   367   "Trying to be good makes you worse" -- counterintuitive interlude
+//   464   "Keith Johnstone, the founder of modern improv"
+//   589   "quote -" -- big quote enters
+//   640   "the decision not to try" -- "not to try" highlight
+//   763   "spontaneous" -- closing word emphasis
 const Peak6: React.FC = () => (
   <BaseFrame>
     <PeakBadge num={6} label="the reframe" />
-    <FadeIn style={{ position: "absolute", left: 140, top: 80 }}>
+
+    {/* Two-state contrast -- exits before the quote enters */}
+    <FadeInOut
+      startFrame={0}
+      visibleFrames={440}
+      outDuration={20}
+      style={{ position: "absolute", left: 0, right: 0, top: 200 }}
+    >
+      <div style={{ display: "flex", justifyContent: "center", gap: 80 }}>
+        <div
+          style={{
+            width: 760,
+            background: colors.bg.slate800,
+            border: `2px solid ${colors.fg.slate600}`,
+            borderRadius: 16,
+            padding: "40px 50px",
+            textAlign: "center",
+          }}
+        >
+          <Caps tracking={6} size={20} color={colors.fg.slate400}>
+            MONITOR YOURSELF
+          </Caps>
+          <div style={{ marginTop: 30 }}>
+            <Title size={64} color={colors.accent.red}>
+              worst shows.
+            </Title>
+          </div>
+        </div>
+        <div
+          style={{
+            width: 760,
+            background: "rgba(34,197,94,0.18)",
+            border: `2px solid ${colors.ok.green}`,
+            borderRadius: 16,
+            padding: "40px 50px",
+            textAlign: "center",
+          }}
+        >
+          <Caps tracking={6} size={20} color={colors.ok.green}>
+            FORGET YOURSELF
+          </Caps>
+          <div style={{ marginTop: 30 }}>
+            <Title size={64} color={colors.ok.green}>
+              best shows.
+            </Title>
+          </div>
+        </div>
+      </div>
+    </FadeInOut>
+
+    {/* "Trying to be good MAKES YOU WORSE" interlude -- frame 367 */}
+    <FadeInOut
+      startFrame={367}
+      visibleFrames={75}
+      outDuration={20}
+      style={{ position: "absolute", left: 0, right: 0, top: 540, textAlign: "center" }}
+    >
+      <Title size={72}>
+        trying to be good <span style={{ color: colors.accent.red }}>makes you worse.</span>
+      </Title>
+    </FadeInOut>
+
+    {/* Johnstone attribution + ghost quote mark -- frame 464 */}
+    <FadeIn startFrame={464} style={{ position: "absolute", left: 140, top: 80 }}>
       <div
         style={{
           fontFamily: '"Playfair Display", serif',
@@ -745,7 +817,9 @@ const Peak6: React.FC = () => (
         “
       </div>
     </FadeIn>
-    <FadeIn startFrame={16} style={{ position: "absolute", left: 320, top: 240 }}>
+
+    {/* Big Johnstone quote -- enters at frame 589 ("quote -") */}
+    <FadeIn startFrame={589} duration={20} style={{ position: "absolute", left: 320, top: 240 }}>
       <Title size={88} style={{ lineHeight: 1.25 }}>
         The decision
         <br />
@@ -755,10 +829,12 @@ const Peak6: React.FC = () => (
         <br />
         allows students
         <br />
-        to be spontaneous.
+        to be <span style={{ color: colors.accent.orange }}>spontaneous.</span>
       </Title>
     </FadeIn>
-    <FadeIn startFrame={40} style={{ position: "absolute", left: 320, bottom: 180 }}>
+
+    {/* Attribution at frame 640 (after "not to try" lands) */}
+    <FadeIn startFrame={640} style={{ position: "absolute", left: 320, bottom: 120 }}>
       <div style={{ width: 60, height: 4, background: colors.accent.orange, marginBottom: 12 }} />
       <Title size={36} color={colors.accent.orange}>
         Keith Johnstone
@@ -769,6 +845,7 @@ const Peak6: React.FC = () => (
         </Caps>
       </div>
     </FadeIn>
+
     <Watermark />
   </BaseFrame>
 );

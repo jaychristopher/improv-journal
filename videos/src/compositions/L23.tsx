@@ -2,7 +2,16 @@ import React from "react";
 import { Audio, Series, staticFile } from "remotion";
 
 import { colors } from "../lib/design";
-import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
+import {
+  BaseFrame,
+  Caps,
+  FadeIn,
+  FadeInOut,
+  Kicker,
+  PeakBadge,
+  Title,
+  Watermark,
+} from "../lib/primitives";
 
 // Peak timings synced to dead-air-compressed v2 audio. Audio: 406.46s.
 // See docs/youtube-week-1/peak-sync-audit.json.
@@ -423,6 +432,16 @@ const Peak6: React.FC = () => (
   </BaseFrame>
 );
 
+// Peak 7 — Yes And Chain (50s). Worked example builds before the antipattern
+// contrast appears.
+//
+// Audio anchors (peak starts at 167.96s):
+//   0     "Exercise three" -- header
+//   303   "we're on a spaceship" -- first bubble
+//   428   "yes, and the oxygen is running low" -- chain forms
+//   488   "Continue building" -- "..." continuation cue
+//   863   "silently evaluating each idea" -- antipattern reveal
+//   1041  "muscle of acceptance" -- closing principle
 const Peak7: React.FC = () => (
   <BaseFrame>
     <PeakBadge num={7} label="exercise 3" />
@@ -434,7 +453,72 @@ const Peak7: React.FC = () => (
     <FadeIn startFrame={8} style={{ position: "absolute", left: 420, top: 130 }}>
       <Title size={200}>Yes, And.</Title>
     </FadeIn>
-    <FadeIn startFrame={20} style={{ position: "absolute", left: 100, top: 440, width: 800 }}>
+
+    {/* Worked example chain: bubbles build as the audio names each line */}
+    <FadeInOut
+      startFrame={303}
+      visibleFrames={500}
+      outDuration={20}
+      style={{
+        position: "absolute",
+        left: 200,
+        top: 440,
+        width: 760,
+        background: colors.bg.slate800,
+        border: `2px solid ${colors.fg.slate600}`,
+        borderRadius: 24,
+        padding: "24px 36px",
+      }}
+    >
+      <Caps tracking={4} size={18} color={colors.fg.slate400}>
+        PERSON A
+      </Caps>
+      <div style={{ marginTop: 12 }}>
+        <Title size={48} color={colors.fg.white}>
+          {'"We\'re on a spaceship."'}
+        </Title>
+      </div>
+    </FadeInOut>
+
+    <FadeInOut
+      startFrame={428}
+      visibleFrames={375}
+      outDuration={20}
+      style={{
+        position: "absolute",
+        right: 200,
+        top: 600,
+        width: 760,
+        background: "rgba(34,197,94,0.18)",
+        border: `2px solid ${colors.ok.green}`,
+        borderRadius: 24,
+        padding: "24px 36px",
+      }}
+    >
+      <Caps tracking={4} size={18} color={colors.ok.green}>
+        PERSON B · YES, AND
+      </Caps>
+      <div style={{ marginTop: 12 }}>
+        <Title size={48} color={colors.fg.white}>
+          {'"...the oxygen is running low."'}
+        </Title>
+      </div>
+    </FadeInOut>
+
+    {/* "Continue building..." fading dots/ellipsis */}
+    <FadeInOut
+      startFrame={488}
+      visibleFrames={315}
+      outDuration={20}
+      style={{ position: "absolute", left: 0, right: 0, top: 800, textAlign: "center" }}
+    >
+      <Kicker size={36} color={colors.fg.slate400}>
+        ... continue building.
+      </Kicker>
+    </FadeInOut>
+
+    {/* Yes-but vs Yes-and antipattern reveal at frame 863 */}
+    <FadeIn startFrame={863} style={{ position: "absolute", left: 100, top: 440, width: 800 }}>
       <div
         style={{
           background: colors.bg.slate800,
@@ -457,7 +541,7 @@ const Peak7: React.FC = () => (
         </div>
       </div>
     </FadeIn>
-    <FadeIn startFrame={36} style={{ position: "absolute", right: 100, top: 440, width: 800 }}>
+    <FadeIn startFrame={920} style={{ position: "absolute", right: 100, top: 440, width: 800 }}>
       <div
         style={{
           background: "rgba(34,197,94,0.18)",
@@ -480,7 +564,7 @@ const Peak7: React.FC = () => (
         </div>
       </div>
     </FadeIn>
-    <FadeIn startFrame={56} style={{ position: "absolute", left: 100, right: 100, bottom: 80 }}>
+    <FadeIn startFrame={1041} style={{ position: "absolute", left: 100, right: 100, bottom: 80 }}>
       <div
         style={{
           height: 70,

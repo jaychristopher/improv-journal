@@ -761,10 +761,63 @@ const Peak6: React.FC = () => {
   );
 };
 
+// Peak 7 — Rule 5: There Are No Mistakes (Del Close, 53s).
+//
+// Audio anchors (peak starts at 294.34s):
+//   0     "Rule five." -- header
+//   139   "everything is fine" -- common interpretation
+//   282   "unplanned moments are material" -- reframe
+//   497   "fall" -- big quote enters
+//   536   "figure out what to do on the way down" -- quote completes
+//   940   attribution + "best scenes"
+//   1537  "mistake you build on is a gift" -- final principle
 const Peak7: React.FC = () => (
   <BaseFrame>
     <PeakBadge num={7} label="rule 5" />
-    <FadeIn style={{ position: "absolute", left: 100, top: 80 }}>
+
+    {/* Header */}
+    <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 100, textAlign: "center" }}>
+      <Caps tracking={8} size={28} color={colors.accent.red}>
+        RULE 5 · THERE ARE NO MISTAKES
+      </Caps>
+    </FadeIn>
+
+    {/* Common interpretation -- exits before quote enters */}
+    <FadeInOut
+      startFrame={139}
+      visibleFrames={130}
+      outDuration={20}
+      style={{ position: "absolute", left: 0, right: 0, top: 240, textAlign: "center" }}
+    >
+      <Caps tracking={6} size={22} color={colors.fg.slate400}>
+        WHAT PEOPLE THINK:
+      </Caps>
+      <div style={{ marginTop: 24 }}>
+        <Kicker size={56} color={colors.fg.slate500}>
+          everything is fine.
+        </Kicker>
+      </div>
+    </FadeInOut>
+
+    {/* Reframe -- exits before quote enters */}
+    <FadeInOut
+      startFrame={282}
+      visibleFrames={195}
+      outDuration={20}
+      style={{ position: "absolute", left: 0, right: 0, top: 240, textAlign: "center" }}
+    >
+      <Caps tracking={6} size={22} color={colors.accent.orange}>
+        WHAT IT ACTUALLY MEANS:
+      </Caps>
+      <div style={{ marginTop: 24 }}>
+        <Title size={56} color={colors.fg.white}>
+          unplanned moments are <span style={{ color: colors.accent.red }}>material.</span>
+        </Title>
+      </div>
+    </FadeInOut>
+
+    {/* Big Del Close quote -- enters at frame 497 */}
+    <FadeIn startFrame={497} duration={20} style={{ position: "absolute", left: 100, top: 80 }}>
       <div
         style={{
           fontFamily: '"Playfair Display", serif',
@@ -779,7 +832,7 @@ const Peak7: React.FC = () => (
         “
       </div>
     </FadeIn>
-    <FadeIn startFrame={16} style={{ position: "absolute", left: 280, top: 240 }}>
+    <FadeIn startFrame={497} duration={20} style={{ position: "absolute", left: 280, top: 240 }}>
       <Title size={116} style={{ lineHeight: 1.2 }}>
         Fall,
         <br />
@@ -790,7 +843,9 @@ const Peak7: React.FC = () => (
         on the way down.
       </Title>
     </FadeIn>
-    <FadeIn startFrame={42} style={{ position: "absolute", left: 360, bottom: 200 }}>
+
+    {/* Attribution -- enters at frame 940 ("best scenes" beat) */}
+    <FadeIn startFrame={940} style={{ position: "absolute", left: 360, bottom: 220 }}>
       <div style={{ width: 60, height: 4, background: colors.accent.orange, marginBottom: 12 }} />
       <Title size={44} color={colors.accent.orange}>
         Del Close
@@ -801,6 +856,26 @@ const Peak7: React.FC = () => (
         </Caps>
       </div>
     </FadeIn>
+
+    {/* Final principle box -- frame 1537 */}
+    <FadeIn startFrame={1537} style={{ position: "absolute", left: 100, right: 100, bottom: 60 }}>
+      <div
+        style={{
+          height: 80,
+          background: "rgba(239,68,68,0.12)",
+          border: `1px solid ${colors.accent.red}`,
+          borderRadius: 12,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Kicker size={28} color={colors.accent.red}>
+          a mistake you ignore is missed. a mistake you build on is a gift.
+        </Kicker>
+      </div>
+    </FadeIn>
+
     <Watermark />
   </BaseFrame>
 );
