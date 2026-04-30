@@ -13,19 +13,19 @@ import {
   Watermark,
 } from "../lib/primitives";
 
-// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
-// v2 audio: 283.01s = 8490 frames. See docs/youtube-week-1/peak-sync-audit.json.
+// Peak timings synced to dead-air-compressed v2 audio (silence > 0.4s
+// trimmed to 0.25s). Audio: 257.95s. See docs/youtube-week-1/peak-sync-audit.json.
 export const L1_PEAKS = [
-  { id: "01-overthinking", durationInFrames: 245 }, // 0.00–8.18s
-  { id: "02-simulation", durationInFrames: 447 }, // 8.18–23.08s
-  { id: "03-safe-dead", durationInFrames: 112 }, // 23.08–26.81s
-  { id: "04-bandwidth", durationInFrames: 860 }, // 26.81–55.48s (anchor)
-  { id: "05-internal", durationInFrames: 787 }, // 55.48–81.71s
-  { id: "06-forget-yourself", durationInFrames: 1543 }, // 81.71–133.15s
-  { id: "07-mirroring", durationInFrames: 943 }, // 133.15–164.58s
-  { id: "08-first-line", durationInFrames: 698 }, // 164.58–187.85s
-  { id: "09-last-word", durationInFrames: 712 }, // 187.85–211.57s
-  { id: "10-redirect", durationInFrames: 2143 }, // 211.57–283.00s (closing + CTA, +4 to absorb rounding)
+  { id: "01-overthinking", durationInFrames: 192 }, // 0.18–6.58s
+  { id: "02-simulation", durationInFrames: 438 }, // 6.58–21.18s
+  { id: "03-safe-dead", durationInFrames: 88 }, // 21.18–24.10s
+  { id: "04-bandwidth", durationInFrames: 813 }, // 24.10–51.19s (anchor)
+  { id: "05-internal", durationInFrames: 709 }, // 51.19–74.82s
+  { id: "06-forget-yourself", durationInFrames: 1406 }, // 74.82–121.68s
+  { id: "07-mirroring", durationInFrames: 852 }, // 121.68–150.08s
+  { id: "08-first-line", durationInFrames: 631 }, // 150.08–171.10s
+  { id: "09-last-word", durationInFrames: 644 }, // 171.10–192.57s
+  { id: "10-redirect", durationInFrames: 1965 }, // 192.57–258.00s (closing + CTA, +4 rounding)
 ];
 
 export const L1_DURATION = L1_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
@@ -86,32 +86,32 @@ const Peak1: React.FC = () => (
 // =====================================================================
 const Peak2: React.FC = () => {
   const items = [
-    // "What's the right thing" audio at 13.76s = peak+5.58s = frame 167
+    // "What's the right thing" audio at 11.92s = peak+5.34s = frame 160
     {
       text: "What's the right thing to say?",
       size: 60,
       color: colors.fg.slate300,
       weight: 600,
       ts: "+0.1s",
-      startFrame: 167,
+      startFrame: 160,
     },
-    // "How will this land" audio at 15.62s = peak+7.44s = frame 223
+    // "How will this land" audio at 13.80s = peak+7.22s = frame 217
     {
       text: "How will this land?",
       size: 84,
       color: colors.fg.white,
       weight: 700,
       ts: "+0.2s",
-      startFrame: 223,
+      startFrame: 217,
     },
-    // "What if I'm wrong" audio at 17.22s = peak+9.04s = frame 271
+    // "What if I'm wrong" audio at 15.40s = peak+8.82s = frame 265
     {
       text: "What if I'm wrong?",
       size: 116,
       color: colors.accent.red,
       weight: 700,
       ts: "+0.4s",
-      startFrame: 271,
+      startFrame: 265,
     },
   ];
   return (
@@ -156,9 +156,9 @@ const Peak2: React.FC = () => {
           </FadeIn>
         ))}
       </div>
-      {/* "meanwhile, the moment is gone" — audio "moment is gone" at 21.34s = peak+13.16s = frame 395 */}
+      {/* "meanwhile, the moment is gone" — audio "moment is gone" at 19.26s = peak+12.68s = frame 380 */}
       <FadeIn
-        startFrame={395}
+        startFrame={380}
         style={{ position: "absolute", left: 0, right: 0, bottom: 140, textAlign: "center" }}
       >
         <Kicker size={40}>meanwhile, the moment is gone.</Kicker>

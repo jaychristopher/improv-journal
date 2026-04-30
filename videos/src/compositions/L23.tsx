@@ -4,21 +4,21 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
-// v2 audio: 433.70s = 13011 frames. See docs/youtube-week-1/peak-sync-audit.json.
+// Peak timings synced to dead-air-compressed v2 audio. Audio: 406.46s.
+// See docs/youtube-week-1/peak-sync-audit.json.
 export const L23_PEAKS = [
-  { id: "01-fails", durationInFrames: 932 }, // 0.10–31.18s
-  { id: "02-fun-trust", durationInFrames: 1048 }, // 31.18–66.12s
-  { id: "03-art-form", durationInFrames: 1026 }, // 66.12–100.32s
-  { id: "04-mirroring", durationInFrames: 657 }, // 100.32–122.22s
-  { id: "05-no-leader", durationInFrames: 547 }, // 122.22–140.44s
-  { id: "06-gift-giving", durationInFrames: 1199 }, // 140.44–180.42s
-  { id: "07-yes-and", durationInFrames: 1556 }, // 180.42–232.30s
-  { id: "08-one-word", durationInFrames: 1492 }, // 232.30–282.02s
-  { id: "09-sequence", durationInFrames: 1214 }, // 282.02–322.50s
-  { id: "10-debrief", durationInFrames: 650 }, // 322.50–344.18s
-  { id: "11-return-weekly", durationInFrames: 527 }, // 344.18–361.74s
-  { id: "12-teamwork", durationInFrames: 2163 }, // 361.74–433.70s (+4 for rounding)
+  { id: "01-fails", durationInFrames: 860 }, // 0.10–28.76s
+  { id: "02-fun-trust", durationInFrames: 959 }, // 28.76–60.74s
+  { id: "03-art-form", durationInFrames: 956 }, // 60.74–92.62s
+  { id: "04-mirroring", durationInFrames: 614 }, // 92.62–113.10s
+  { id: "05-no-leader", durationInFrames: 505 }, // 113.10–129.92s
+  { id: "06-gift-giving", durationInFrames: 1141 }, // 129.92–167.96s
+  { id: "07-yes-and", durationInFrames: 1495 }, // 167.96–217.80s
+  { id: "08-one-word", durationInFrames: 1412 }, // 217.80–264.86s
+  { id: "09-sequence", durationInFrames: 1142 }, // 264.86–302.94s
+  { id: "10-debrief", durationInFrames: 592 }, // 302.94–322.68s
+  { id: "11-return-weekly", durationInFrames: 483 }, // 322.68–338.78s
+  { id: "12-teamwork", durationInFrames: 2035 }, // 338.78–406.50s (+5 rounding)
 ];
 export const L23_DURATION = L23_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 

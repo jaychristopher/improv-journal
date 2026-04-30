@@ -4,20 +4,20 @@ import { Audio, Series, staticFile } from "remotion";
 import { colors } from "../lib/design";
 import { BaseFrame, Caps, FadeIn, Kicker, PeakBadge, Title, Watermark } from "../lib/primitives";
 
-// Peak timings synced to actual audio via ElevenLabs Scribe word-level timings.
-// v2 audio: 462.88s = 13886 frames. See docs/youtube-week-1/peak-sync-audit.json.
+// Peak timings synced to dead-air-compressed v2 audio. Audio: 438.60s.
+// See docs/youtube-week-1/peak-sync-audit.json.
 export const L31_PEAKS = [
-  { id: "01-search", durationInFrames: 406 }, // 0.18–13.70s
-  { id: "02-list", durationInFrames: 332 }, // 13.70–24.78s
-  { id: "03-yes-and-traditions", durationInFrames: 2461 }, // 24.78–106.82s
-  { id: "04-empty-loaded", durationInFrames: 1518 }, // 106.82–157.42s
-  { id: "05-five-traditions", durationInFrames: 2006 }, // 157.42–224.30s
-  { id: "06-blocking", durationInFrames: 2528 }, // 224.30–308.58s
-  { id: "07-del-close", durationInFrames: 1704 }, // 308.58–365.38s
-  { id: "08-strip-away", durationInFrames: 231 }, // 365.38–373.08s
-  { id: "09-reveal", durationInFrames: 983 }, // 373.08–405.86s
-  { id: "10-training-wheels", durationInFrames: 431 }, // 405.86–420.22s
-  { id: "11-closing", durationInFrames: 1290 }, // 420.22–463.20s (+10 for rounding)
+  { id: "01-search", durationInFrames: 396 }, // 0.18–13.38s
+  { id: "02-list", durationInFrames: 310 }, // 13.38–23.72s
+  { id: "03-yes-and-traditions", durationInFrames: 2383 }, // 23.72–103.14s
+  { id: "04-empty-loaded", durationInFrames: 1438 }, // 103.14–151.08s
+  { id: "05-five-traditions", durationInFrames: 1900 }, // 151.08–214.42s
+  { id: "06-blocking", durationInFrames: 2398 }, // 214.42–294.34s
+  { id: "07-del-close", durationInFrames: 1606 }, // 294.34–347.86s
+  { id: "08-strip-away", durationInFrames: 208 }, // 347.86–354.80s
+  { id: "09-reveal", durationInFrames: 917 }, // 354.80–385.38s
+  { id: "10-training-wheels", durationInFrames: 384 }, // 385.38–398.18s
+  { id: "11-closing", durationInFrames: 1218 }, // 398.18–438.78s (+5 rounding)
 ];
 export const L31_DURATION = L31_PEAKS.reduce((s, p) => s + p.durationInFrames, 0);
 

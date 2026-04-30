@@ -1,4 +1,245 @@
 {
+  "L1": {
+    "videoKey": "L1",
+    "peaks": [
+      {
+        "num": 1,
+        "label": "Hook",
+        "anchor": [
+          "you",
+          "can",
+          "stop"
+        ],
+        "start": 0.18,
+        "duration": 6.4
+      },
+      {
+        "num": 2,
+        "label": "Simulation",
+        "anchor": [
+          "someone",
+          "asks",
+          "you"
+        ],
+        "start": 6.58,
+        "duration": 14.6
+      },
+      {
+        "num": 3,
+        "label": "Safe/Dead",
+        "anchor": [
+          "deliver",
+          "something",
+          "safe"
+        ],
+        "start": 21.18,
+        "duration": 2.9200000000000017
+      },
+      {
+        "num": 4,
+        "label": "Bandwidth (anchor)",
+        "anchor": [
+          "that's",
+          "not",
+          "a",
+          "willpower"
+        ],
+        "start": 24.1,
+        "duration": 27.089999999999996
+      },
+      {
+        "num": 5,
+        "label": "Internal computation",
+        "anchor": [
+          "internal",
+          "computation"
+        ],
+        "start": 51.19,
+        "duration": 23.629999999999995
+      },
+      {
+        "num": 6,
+        "label": "Forget yourself + Johnstone",
+        "anchor": [
+          "improv",
+          "performers",
+          "discover"
+        ],
+        "start": 74.82,
+        "duration": 46.860000000000014
+      },
+      {
+        "num": 7,
+        "label": "Mirroring (Exercise 1)",
+        "anchor": [
+          "three",
+          "exercises"
+        ],
+        "start": 121.68,
+        "duration": 28.400000000000006
+      },
+      {
+        "num": 8,
+        "label": "First Line Drill (Exercise 2)",
+        "anchor": [
+          "exercise",
+          "two"
+        ],
+        "start": 150.08,
+        "duration": 21.019999999999982
+      },
+      {
+        "num": 9,
+        "label": "Last Word Response (Exercise 3)",
+        "anchor": [
+          "exercise",
+          "three"
+        ],
+        "start": 171.1,
+        "duration": 21.47
+      },
+      {
+        "num": 10,
+        "label": "Closing / Redirect",
+        "anchor": [
+          "these",
+          "three",
+          "exercises"
+        ],
+        "start": 192.57,
+        "duration": 65.38
+      }
+    ],
+    "audioEnd": 257.95
+  },
+  "L23": {
+    "videoKey": "L23",
+    "peaks": [
+      {
+        "num": 1,
+        "label": "Most team bonding fails",
+        "anchor": [
+          "most"
+        ],
+        "start": 0.1,
+        "duration": 28.66
+      },
+      {
+        "num": 2,
+        "label": "Fun ≠ Trust",
+        "anchor": [
+          "the",
+          "problem",
+          "isn't"
+        ],
+        "start": 28.76,
+        "duration": 31.98
+      },
+      {
+        "num": 3,
+        "label": "Trust = the art form",
+        "anchor": [
+          "improv",
+          "ensembles"
+        ],
+        "start": 60.74,
+        "duration": 31.880000000000003
+      },
+      {
+        "num": 4,
+        "label": "Mirroring",
+        "anchor": [
+          "exercise",
+          "one"
+        ],
+        "start": 92.62,
+        "duration": 20.47999999999999
+      },
+      {
+        "num": 5,
+        "label": "No leader",
+        "anchor": [
+          "why",
+          "it",
+          "works"
+        ],
+        "start": 113.1,
+        "duration": 16.819999999999993
+      },
+      {
+        "num": 6,
+        "label": "Gift Giving",
+        "anchor": [
+          "exercise",
+          "two"
+        ],
+        "start": 129.92,
+        "duration": 38.04000000000002
+      },
+      {
+        "num": 7,
+        "label": "Yes And Chain",
+        "anchor": [
+          "exercise",
+          "three"
+        ],
+        "start": 167.96,
+        "duration": 49.84
+      },
+      {
+        "num": 8,
+        "label": "One-Word Scene",
+        "anchor": [
+          "exercise",
+          "four"
+        ],
+        "start": 217.8,
+        "duration": 47.06
+      },
+      {
+        "num": 9,
+        "label": "Sequence (1→2→3→4)",
+        "anchor": [
+          "don't",
+          "just"
+        ],
+        "start": 264.86,
+        "duration": 38.079999999999984
+      },
+      {
+        "num": 10,
+        "label": "Debrief",
+        "anchor": [
+          "two",
+          "more",
+          "rules"
+        ],
+        "start": 302.94,
+        "duration": 19.74000000000001
+      },
+      {
+        "num": 11,
+        "label": "Return weekly",
+        "anchor": [
+          "rule",
+          "two"
+        ],
+        "start": 322.68,
+        "duration": 16.099999999999966
+      },
+      {
+        "num": 12,
+        "label": "Closing / Teamwork",
+        "anchor": [
+          "60",
+          "years"
+        ],
+        "start": 338.78,
+        "duration": 67.68
+      }
+    ],
+    "audioEnd": 406.46
+  },
   "L31": {
     "videoKey": "L31",
     "peaks": [
@@ -10,7 +251,7 @@
           "searched"
         ],
         "start": 0.18,
-        "duration": 13.52
+        "duration": 13.200000000000001
       },
       {
         "num": 2,
@@ -19,8 +260,8 @@
           "about",
           "half"
         ],
-        "start": 13.7,
-        "duration": 11.080000000000002
+        "start": 13.38,
+        "duration": 10.339999999999998
       },
       {
         "num": 3,
@@ -29,8 +270,8 @@
           "rule",
           "one"
         ],
-        "start": 24.78,
-        "duration": 82.03999999999999
+        "start": 23.72,
+        "duration": 79.42
       },
       {
         "num": 4,
@@ -39,8 +280,8 @@
           "rule",
           "two"
         ],
-        "start": 106.82,
-        "duration": 50.599999999999994
+        "start": 103.14,
+        "duration": 47.94000000000001
       },
       {
         "num": 5,
@@ -49,8 +290,8 @@
           "rule",
           "three"
         ],
-        "start": 157.42,
-        "duration": 66.88000000000002
+        "start": 151.08,
+        "duration": 63.339999999999975
       },
       {
         "num": 6,
@@ -59,8 +300,8 @@
           "rule",
           "four"
         ],
-        "start": 224.3,
-        "duration": 84.27999999999997
+        "start": 214.42,
+        "duration": 79.91999999999999
       },
       {
         "num": 7,
@@ -69,8 +310,8 @@
           "rule",
           "five"
         ],
-        "start": 308.58,
-        "duration": 56.80000000000001
+        "start": 294.34,
+        "duration": 53.52000000000004
       },
       {
         "num": 8,
@@ -79,8 +320,8 @@
           "now",
           "strip"
         ],
-        "start": 365.38,
-        "duration": 7.699999999999989
+        "start": 347.86,
+        "duration": 6.939999999999998
       },
       {
         "num": 9,
@@ -89,8 +330,8 @@
           "get",
           "out"
         ],
-        "start": 373.08,
-        "duration": 32.78000000000003
+        "start": 354.8,
+        "duration": 30.579999999999984
       },
       {
         "num": 10,
@@ -99,8 +340,8 @@
           "training",
           "wheels"
         ],
-        "start": 405.86,
-        "duration": 14.360000000000014
+        "start": 385.38,
+        "duration": 12.800000000000011
       },
       {
         "num": 11,
@@ -110,10 +351,10 @@
           "you",
           "want"
         ],
-        "start": 420.22,
-        "duration": 42.65999999999997
+        "start": 398.18,
+        "duration": 40.420000000000016
       }
     ],
-    "audioEnd": 462.88
+    "audioEnd": 438.6
   }
 }
