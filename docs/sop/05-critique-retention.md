@@ -1,5 +1,9 @@
 # SOP 05 · Critique Round 1 — Retention KPIs
 
+**Lens:** algorithm-facing. Score what YouTube's ranking signals reward (CTR proxies, AVD proxies, structural hooks). This is the "does the script tick the boxes the algorithm watches?" pass.
+
+**This SOP is NOT:** a taste pass. Don't ask "does the bridge feel earned?" here — that's SOP 06.
+
 ## Purpose
 
 Score the v1 script against the 30 engagement rules. Identify the 3-5 highest-ROI fixes for v2. This is a checklist pass, not a creative pass.
@@ -7,7 +11,7 @@ Score the v1 script against the 30 engagement rules. Identify the 3-5 highest-RO
 ## Inputs
 
 - Script v1 from SOP 04
-- The 30 engagement rules (canonical reference: see Lessons section below or `docs/youtube-week-1/script-rewrite-v2.md`)
+- The 30 engagement rules — canonical reference: [`REFERENCE-engagement-rules.md`](./REFERENCE-engagement-rules.md)
 
 ## Outputs
 
@@ -67,17 +71,7 @@ Skip visual-only rules (20-25); they apply at the Remotion stage.
 
 ## The 30 rules canonical list
 
-Hook & first 30 seconds: (1) hook in 3s · (2) payoff before earned · (3) title+thumbnail inseparable · (4) curiosity gap · (5) stakes in 15s · (6) no channel intro
-
-Pacing: (7) cut every 3-7s · (8) re-hook every 30-60s · (9) cuts on verbal pauses · (10) vary shot scale · (11) sound design as punctuation · (12) speed-ramp at structural breaks · (13) one visual surprise per chapter
-
-Narrative: (14) open loops · (15) midpoint reveal · (16) 3-act structure · (17) CTA after value · (18) specificity · (19) callback or cliff
-
-Visual: (20) faces · (21) concept-first text · (22) color-coded concepts · (23) animation matches speech · (24) negative space · (25) captions as design
-
-Audio/voice: (26) conversational delivery · (27) dynamic range · (28) silence is louder than music
-
-Channel-level: (29) one question · (30) thumbnail is the product
+Moved to [`REFERENCE-engagement-rules.md`](./REFERENCE-engagement-rules.md). Read it once; the rule numbers above (1, 2, 5, 8, 14, 15, 16, 17, 18, 19, 26, 27, 29) are the script-relevant subset scored here.
 
 ## Estimated time
 

@@ -4,6 +4,17 @@
 
 Confirm the supporting article (bridge) exists, is well-cited, and is in publishable shape before producing the video. The video drives traffic to the bridge; the bridge can't be a placeholder.
 
+## Pre-condition (hard gate)
+
+A bridge file MUST exist at `content/bridges/<slug>.md` before any video work begins. If it doesn't, **stop the cycle** and either:
+
+1. **Write the bridge first.** Bridge writing is its own workflow (tracked in `docs/growth-100-steps.md`), not a step inside this pipeline. A typical bridge is 800-1500 words, 3-7 cited sources, 1-3 worked examples. Plan ~3-6 hours.
+2. **Pick a different topic** for this cycle that already has a bridge.
+
+The channel's value loop depends on bridges being publishable. Producing a video pointing at a placeholder breaks the loop and trains the audience to expect thin content. Do not start at SOP 04 with a missing or `seed`-status bridge.
+
+This gate is enforced at SOP 03 step 1. Don't try to skip ahead.
+
 ## Inputs
 
 - Bridge slug from SOP 01 (e.g. `how-to-deal-with-rejection`)

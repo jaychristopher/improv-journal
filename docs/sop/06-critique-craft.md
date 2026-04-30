@@ -1,5 +1,9 @@
 # SOP 06 · Critique Round 2 — Best-Practice Craft
 
+**Lens:** audience-facing. Score the felt experience — does the bridge from hook to reveal feel earned? Does the complexity gradient land? Does the voice ring true? This is the "would a smart viewer who's not a YouTube optimization nerd enjoy this?" pass.
+
+**This SOP is NOT:** a checklist. If you find yourself scoring 1-5 against fixed rules, you've drifted into SOP 05 territory.
+
 ## Purpose
 
 Audit v1 against successful YouTubers' specific craft principles. Round 1 (SOP 05) was rule-based; this round is taste-based — the patterns that distinguish "B+ retention" from "A retention".

@@ -12,7 +12,8 @@ Build a 1280×720 thumbnail in Figma matching the channel design system. Thumbna
 
 ## Outputs
 
-`docs/youtube-week-N/thumbnails/<NN>-<slug>.png` — 1280×720 PNG, sRGB, < 2 MB (YouTube's hard cap).
+- **Primary:** `docs/youtube-week-N/thumbnails/<NN>-<slug>.png` — 1280×720 PNG, sRGB, < 2 MB
+- **A/B variants (recommended):** `docs/youtube-week-N/thumbnails/<NN>-<slug>-b.png` and `-c.png` — 2 alternative versions for YouTube's thumbnail test feature
 
 ## Tools
 
@@ -41,6 +42,23 @@ Build a 1280×720 thumbnail in Figma matching the channel design system. Thumbna
 6. **Verify mobile readability.** Zoom Figma to 25%. If the headline is unreadable, make it bigger.
 7. **Export at 1280×720 PNG.** File size should be < 2 MB. If over, reduce gradient stops or simplify the supporting visual.
 8. **Save to `docs/youtube-week-N/thumbnails/<NN>-<slug>.png`** and commit.
+
+## A/B variants (recommended)
+
+YouTube Studio's "Thumbnail Test" feature lets you upload up to 3 thumbnails per video; YouTube serves them and picks the winner by CTR after a few days.
+
+To get value from this, the variants must be **structurally different**, not cosmetically different. A different headline word is noise; a different framing is signal.
+
+Three useful variant axes (pick two per video):
+
+- **Promise vs. cost framing.** "STOP TRYING" (cost) vs. "GET FUNNIER" (promise).
+- **Number vs. word.** "60 SECONDS" (number) vs. "TINY" (word).
+- **Image vs. type-only.** Custom illustration on right vs. all-typography.
+- **Emotional valence.** Red+tense vs. green+resolved.
+
+Build variant B and variant C in Figma as duplicates of the primary, change one axis per variant. Save to `<slug>-b.png` and `<slug>-c.png`.
+
+Upload all three at publish time (SOP 16 step 5). Check the winner at 7d (SOP 17 7d window) and feed back into next cycle's SOP 14.
 
 ## Quality bar
 
