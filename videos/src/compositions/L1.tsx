@@ -1,5 +1,5 @@
 import React from "react";
-import { Audio, Series, staticFile } from "remotion";
+import { Audio, Series, staticFile, useCurrentFrame } from "remotion";
 
 import { colors } from "../lib/design";
 import {
@@ -7,6 +7,7 @@ import {
   Caps,
   Center,
   FadeIn,
+  FadeInOut,
   Kicker,
   PeakBadge,
   Title,
@@ -268,7 +269,20 @@ const Peak3: React.FC = () => {
 };
 
 // =====================================================================
-// Peak 4 — BANDWIDTH PROBLEM (anchor)
+// Peak 4 — BANDWIDTH PROBLEM (anchor) — 27s peak with sub-beats every ~3s
+//
+// Audio anchors (peak starts at audio 24.10s):
+//    0  "That's not a willpower problem"     -> title in
+//   70  "It's a bandwidth problem"           -> (PROBLEM. already red)
+//  121  "improv performers solved it"        -> 60 YEARS stat fades in
+//  182  "60 years ago"                       -> 60 YEARS visible (peak)
+//  263  "Here's the math"                    -> 60 YEARS out, chip drops in
+//  307  "Cognitive scientists call attention 'bandwidth'" -> BANDWIDTH highlights
+//  415  "Your brain has a fixed supply"      -> gauge fills 4 of 8 red
+//  445  (continued)                          -> LIMITED label
+//  497  "evaluating, simulating, rehearsing" -> words flash through gauge
+//  645  "nothing left for the actual moment" -> arrows out + Planning label
+//  685  (...moment in front of you)          -> Receiving label + vs.
 // =====================================================================
 const Peak4: React.FC = () => {
   const W = 1920;
@@ -276,11 +290,12 @@ const Peak4: React.FC = () => {
     chipH = 280;
   const chipX = (W - chipW) / 2;
   const chipY = 360;
-  const segs = Array.from({ length: 8 }, (_, i) => i);
 
   return (
     <BaseFrame>
       <PeakBadge num={4} label="the reframe" />
+
+      {/* Title appears at start */}
       <FadeIn style={{ position: "absolute", left: 0, right: 0, top: 130, textAlign: "center" }}>
         <Title size={132}>
           Bandwidth <span style={{ color: colors.accent.red }}>Problem.</span>
@@ -291,63 +306,70 @@ const Peak4: React.FC = () => {
           </Caps>
         </div>
       </FadeIn>
-      {/* Chip */}
-      <FadeIn startFrame={20} style={{ position: "absolute", left: chipX, top: chipY }}>
-        <div
-          style={{
-            width: chipW,
-            height: chipH,
-            background: colors.bg.slate800,
-            borderRadius: 18,
-            border: `4px solid ${colors.fg.slate300}`,
-            position: "relative",
-          }}
-        >
-          {/* Bandwidth label */}
-          <div style={{ position: "absolute", left: 0, right: 0, top: 28, textAlign: "center" }}>
-            <Caps tracking={6} size={16} color={colors.fg.slate500}>
-              BANDWIDTH
-            </Caps>
-          </div>
-          {/* Inner die */}
-          <div
-            style={{
-              position: "absolute",
-              left: 36,
-              top: 60,
-              width: chipW - 72,
-              height: chipH - 96,
-              background: colors.bg.slate900,
-              border: `2px solid ${colors.bg.slate700}`,
-              borderRadius: 10,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 4,
-            }}
-          >
-            {segs.map((i) => (
-              <div
-                key={i}
-                style={{
-                  width: 30,
-                  height: 32,
-                  borderRadius: 4,
-                  background: i < 4 ? colors.accent.red : colors.bg.slate700,
-                }}
-              />
-            ))}
-          </div>
-          {/* LIMITED */}
-          <div style={{ position: "absolute", left: 0, right: 0, bottom: 16, textAlign: "center" }}>
-            <Caps tracking={6} size={14} color={colors.accent.orange}>
-              LIMITED
-            </Caps>
-          </div>
+
+      {/* "60 YEARS" stat — visible from frame 121 to ~263 (audio "improv performers solved it 60 years ago"),
+          fully exits before chip drops in at 263 */}
+      <FadeInOut
+        startFrame={121}
+        inDuration={14}
+        visibleFrames={116}
+        outDuration={12}
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: 380,
+          textAlign: "center",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", gap: 24 }}>
+          <Title size={320} color={colors.accent.orange}>
+            60
+          </Title>
+          <Title size={120} color={colors.fg.white}>
+            years
+          </Title>
         </div>
+        <div style={{ marginTop: 24 }}>
+          <Caps tracking={8} size={26} color={colors.fg.slate400}>
+            IMPROV PERFORMERS SOLVED THIS IN 1959
+          </Caps>
+        </div>
+      </FadeInOut>
+
+      {/* Chip drops in at frame 263 ("Here's the math") */}
+      <FadeIn
+        startFrame={263}
+        duration={20}
+        style={{ position: "absolute", left: chipX, top: chipY }}
+      >
+        <ChipBody chipW={chipW} chipH={chipH} />
       </FadeIn>
-      {/* Arrows + labels */}
-      <FadeIn startFrame={36} style={{ position: "absolute", inset: 0 }}>
+
+      {/* Gauge segments fill at frame 415 ("Your brain has a fixed supply") — overlay on the chip's empty die */}
+      <GaugeFill startFrame={415} chipX={chipX} chipY={chipY} chipW={chipW} chipH={chipH} />
+
+      {/* LIMITED label at frame 445 */}
+      <FadeIn
+        startFrame={445}
+        style={{
+          position: "absolute",
+          left: 0,
+          right: 0,
+          top: chipY + chipH - 28,
+          textAlign: "center",
+        }}
+      >
+        <Caps tracking={6} size={14} color={colors.accent.orange}>
+          LIMITED
+        </Caps>
+      </FadeIn>
+
+      {/* Word flash at 497 — three words flash through over ~5s */}
+      <WordFlash startFrame={497} />
+
+      {/* Arrows + Planning/Receiving labels at frame 645 */}
+      <FadeIn startFrame={645} style={{ position: "absolute", inset: 0 }}>
         <svg width={W} height={1080} style={{ position: "absolute", inset: 0 }}>
           <defs>
             <marker
@@ -396,7 +418,7 @@ const Peak4: React.FC = () => {
         </svg>
       </FadeIn>
       <FadeIn
-        startFrame={50}
+        startFrame={665}
         style={{ position: "absolute", left: 0, right: 0, top: 750, textAlign: "center" }}
       >
         <Kicker size={64} color={colors.fg.slate300} style={{ opacity: 0.4 }}>
@@ -404,7 +426,7 @@ const Peak4: React.FC = () => {
         </Kicker>
       </FadeIn>
       <FadeIn
-        startFrame={60}
+        startFrame={665}
         style={{ position: "absolute", left: 540, top: 900, transform: "translateX(-50%)" }}
       >
         <Title size={64} color={colors.accent.red}>
@@ -417,7 +439,7 @@ const Peak4: React.FC = () => {
         </div>
       </FadeIn>
       <FadeIn
-        startFrame={70}
+        startFrame={685}
         style={{ position: "absolute", left: 1380, top: 900, transform: "translateX(-50%)" }}
       >
         <Title size={64}>Receiving</Title>
@@ -429,6 +451,126 @@ const Peak4: React.FC = () => {
       </FadeIn>
       <Watermark />
     </BaseFrame>
+  );
+};
+
+// Empty chip body (no gauge fill yet) — extracted so we can fill the gauge separately.
+const ChipBody: React.FC<{ chipW: number; chipH: number }> = ({ chipW, chipH }) => (
+  <div
+    style={{
+      width: chipW,
+      height: chipH,
+      background: colors.bg.slate800,
+      borderRadius: 18,
+      border: `4px solid ${colors.fg.slate300}`,
+      position: "relative",
+    }}
+  >
+    <div style={{ position: "absolute", left: 0, right: 0, top: 28, textAlign: "center" }}>
+      <Caps tracking={6} size={16} color={colors.fg.slate500}>
+        BANDWIDTH
+      </Caps>
+    </div>
+    <div
+      style={{
+        position: "absolute",
+        left: 36,
+        top: 60,
+        width: chipW - 72,
+        height: chipH - 96,
+        background: colors.bg.slate900,
+        border: `2px solid ${colors.bg.slate700}`,
+        borderRadius: 10,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 4,
+      }}
+    >
+      {Array.from({ length: 8 }, (_, i) => (
+        <div
+          key={i}
+          style={{
+            width: 30,
+            height: 32,
+            borderRadius: 4,
+            background: colors.bg.slate700,
+          }}
+        />
+      ))}
+    </div>
+  </div>
+);
+
+// Gauge fill — overlays red on the leftmost 4 of the chip body's 8 grey segments,
+// fading them in one-by-one starting at startFrame (~8 frames apart).
+// Hidden until startFrame so it doesn't leak before the chip drops in.
+const GaugeFill: React.FC<{
+  startFrame: number;
+  chipX: number;
+  chipY: number;
+  chipW: number;
+  chipH: number;
+}> = ({ startFrame, chipX, chipY, chipW, chipH }) => {
+  const frame = useCurrentFrame();
+  if (frame < startFrame) return null;
+  // Match chip body's die layout: 8 segments × 30w with gap 4, centered in (chipW - 72).
+  const dieInnerW = chipW - 72;
+  const totalSegW = 8 * 30 + 7 * 4; // 268
+  const padX = (dieInnerW - totalSegW) / 2; // 20
+  const firstSegX = chipX + 36 + padX; // chipX + 56
+  const segY = chipY + 60 + (chipH - 96 - 32) / 2; // vertical center of die
+  return (
+    <>
+      {Array.from({ length: 4 }, (_, i) => {
+        const segStart = startFrame + i * 8;
+        const opacity = Math.min(1, Math.max(0, (frame - segStart) / 8));
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: firstSegX + i * 34,
+              top: segY,
+              width: 30,
+              height: 32,
+              borderRadius: 4,
+              background: colors.accent.red,
+              opacity,
+            }}
+          />
+        );
+      })}
+    </>
+  );
+};
+
+// Three words flash through, one at a time, around the chip — "evaluating · simulating · rehearsing"
+const WordFlash: React.FC<{ startFrame: number }> = ({ startFrame }) => {
+  const words = ["evaluating", "simulating", "rehearsing"];
+  return (
+    <>
+      {words.map((w, i) => (
+        <FadeInOut
+          key={w}
+          startFrame={startFrame + i * 30}
+          visibleFrames={20}
+          inDuration={6}
+          outDuration={6}
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: 720,
+            textAlign: "center",
+          }}
+        >
+          <Kicker size={56} color={colors.accent.red}>
+            {w}.
+          </Kicker>
+        </FadeInOut>
+      ))}
+    </>
   );
 };
 

@@ -148,3 +148,23 @@ export const Center: React.FC<{ children: React.ReactNode; style?: React.CSSProp
     {children}
   </div>
 );
+
+// Fade in, hold, fade out — for transient sub-beats inside a longer peak.
+export const FadeInOut: React.FC<{
+  children: React.ReactNode;
+  startFrame: number;
+  visibleFrames: number;
+  inDuration?: number;
+  outDuration?: number;
+  style?: React.CSSProperties;
+}> = ({ children, startFrame, visibleFrames, inDuration = 14, outDuration = 14, style }) => {
+  const frame = useCurrentFrame();
+  const inEnd = startFrame + inDuration;
+  const visEnd = inEnd + visibleFrames;
+  const outEnd = visEnd + outDuration;
+  let opacity = 0;
+  if (frame >= inEnd && frame < visEnd) opacity = 1;
+  else if (frame >= startFrame && frame < inEnd) opacity = (frame - startFrame) / inDuration;
+  else if (frame >= visEnd && frame < outEnd) opacity = 1 - (frame - visEnd) / outDuration;
+  return <div style={{ ...style, opacity }}>{children}</div>;
+};
