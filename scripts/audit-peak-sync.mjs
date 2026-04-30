@@ -58,6 +58,19 @@ const ANCHORS = {
       { num: 12, label: "Closing / Teamwork", anchor: ["60", "years"] },
     ],
   },
+  L2: {
+    timingsPath: "docs/youtube-week-2/L2-timings.json",
+    currentPeaks: [25, 30, 50, 40, 40, 30, 50],
+    peaks: [
+      { num: 1, label: "Hook + reframe", anchor: ["stop", "trying"] },
+      { num: 2, label: "fMRI / Limb 2008", anchor: ["in", "2008"] },
+      { num: 3, label: "Move 1 · Honesty", anchor: ["move", "one"] },
+      { num: 4, label: "Move 2 · Specificity", anchor: ["move", "two"] },
+      { num: 5, label: "Move 3 · Pattern recognition", anchor: ["move", "three"] },
+      { num: 6, label: "Antipattern · Performing cleverness", anchor: ["now", "the", "antipattern"] },
+      { num: 7, label: "Closing + CTA", anchor: ["three", "moves", "honesty"] },
+    ],
+  },
   L31: {
     timingsPath: "docs/youtube-week-1/L31-timings.json",
     currentPeaks: [18, 35, 80, 60, 60, 70, 50, 18, 18, 22, 32.2],

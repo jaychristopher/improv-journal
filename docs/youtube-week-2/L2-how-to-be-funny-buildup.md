@@ -277,8 +277,63 @@ v2 lands within target range. Final audio after dead-air compression should hit 
 
 ---
 
-### Iter 6 — final draft + audio generation
+### Iter 6 (DONE) — audio generation + alignment
 
-- [ ] Final TTS-formatted script with [emote] tags
-- [ ] ElevenLabs generation (`generate-episode.mjs --public`)
-- [ ] Sync into `videos/public/audio/` if proceeding to Remotion
+**Audio file:** `public/audio/youtube/04-how-to-be-funny.mp3`
+
+| Stage | Duration | Notes |
+|-------|----------|-------|
+| ElevenLabs raw | 362.27s (6:02) | eleven_v3, 4812 chars in 2 chunks, 188s gen time |
+| After silenceremove (-38dB / 0.4s / keep 0.25s) | 346.88s (5:47) | Saved 15s of dead air |
+| Original preserved at | `04-how-to-be-funny.original.mp3` | for re-processing if params change |
+
+**Word timings:** `docs/youtube-week-2/L2-timings.json` (668 words, Scribe transcription).
+
+**Peak-sync audit results** (anchored to actual word timestamps):
+
+| # | Peak | Anchor word | Audio start | Frames @ 30fps |
+|---|------|-------------|-------------|----------------|
+| 1 | Hook + reframe | "Stop" | 0.16s | 1481 |
+| 2 | fMRI / Limb 2008 | "in 2008" | 49.52s | 1680 |
+| 3 | Move 1 · Honesty | "move one" | 105.52s | 1939 |
+| 4 | Move 2 · Specificity | "move two" | 170.14s | 1282 |
+| 5 | Move 3 · Pattern recognition | "move three" | 212.88s | 1424 |
+| 6 | Antipattern · Performing cleverness | "now the antipattern" | 260.34s | 1052 |
+| 7 | Closing + CTA | "three moves honesty" | 295.42s | 1541 |
+
+Total: 10,399 frames = 346.63s ✓ (matches audio 346.80s within rounding tolerance).
+
+**Pipeline complete.** Audio is upload-ready. If proceeding to Remotion video, peak frame counts above plug directly into `L2_PEAKS` array following the same pattern as L1/L23/L31.
+
+---
+
+## Final stats
+
+| Metric | Value |
+|--------|-------|
+| Total iterations | 6 |
+| Total time spent (cron-driven) | ~90 min wall-clock |
+| Persona research | iter 1 |
+| SEO research (SERP, related, suggestions) | iter 2 |
+| Bridge content reviewed | iter 2 |
+| Script v1 | iter 3 (839 raw, ~720 spoken, ~5:08 audio) |
+| Retention critique (round 1) | iter 4 — score 53/65 |
+| Craft critique (round 2) | iter 5 |
+| Script v2 | iter 5 (749 raw, ~640 spoken) |
+| Audio generation | iter 6 — ElevenLabs Pro, eleven_v3 |
+| Audio compression | iter 6 — silenceremove, -15s dead air |
+| Audio final duration | **5:47** |
+| Word timings | iter 6 — Scribe, 668 words |
+| Peak alignment data | iter 6 — 7 peaks, all anchored |
+| Final retention score (projected) | 60/65 = 92% (A) |
+
+**Artifacts produced:**
+- `content/scripts/youtube/04-how-to-be-funny-tts-v1.txt` (draft)
+- `content/scripts/youtube/04-how-to-be-funny-tts-v2.txt` (final)
+- `public/audio/youtube/04-how-to-be-funny.mp3` (5:47, upload-ready)
+- `public/audio/youtube/04-how-to-be-funny.original.mp3` (pre-compression backup)
+- `docs/youtube-week-2/L2-timings.json` (word-level timings)
+- `docs/youtube-week-2/L2-how-to-be-funny-buildup.md` (this doc)
+- L2 added to `scripts/audit-peak-sync.mjs` ANCHORS for re-runs
+
+**Ready to upload.** Bridge content already exists. Title/description writing is the only remaining step before YouTube upload — those derive from the script directly.
