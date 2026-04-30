@@ -80,18 +80,39 @@ const Peak1: React.FC = () => (
 
 // =====================================================================
 // Peak 2 — Simulation (3 escalating questions)
+// Internal startFrame values are anchored to actual word timings:
+//   Peak 2 starts at frame 245 (audio 8.18s).
+//   Each Q fires when its phrase is spoken (relative to peak start).
 // =====================================================================
 const Peak2: React.FC = () => {
   const items = [
+    // "What's the right thing" audio at 13.76s = peak+5.58s = frame 167
     {
       text: "What's the right thing to say?",
       size: 60,
       color: colors.fg.slate300,
       weight: 600,
       ts: "+0.1s",
+      startFrame: 167,
     },
-    { text: "How will this land?", size: 84, color: colors.fg.white, weight: 700, ts: "+0.2s" },
-    { text: "What if I'm wrong?", size: 116, color: colors.accent.red, weight: 700, ts: "+0.4s" },
+    // "How will this land" audio at 15.62s = peak+7.44s = frame 223
+    {
+      text: "How will this land?",
+      size: 84,
+      color: colors.fg.white,
+      weight: 700,
+      ts: "+0.2s",
+      startFrame: 223,
+    },
+    // "What if I'm wrong" audio at 17.22s = peak+9.04s = frame 271
+    {
+      text: "What if I'm wrong?",
+      size: 116,
+      color: colors.accent.red,
+      weight: 700,
+      ts: "+0.4s",
+      startFrame: 271,
+    },
   ];
   return (
     <BaseFrame>
@@ -106,7 +127,7 @@ const Peak2: React.FC = () => {
       </FadeIn>
       <div style={{ position: "absolute", left: 200, top: 340 }}>
         {items.map((item, i) => (
-          <FadeIn key={i} startFrame={20 + i * 24} duration={20}>
+          <FadeIn key={i} startFrame={item.startFrame} duration={14}>
             <div style={{ display: "flex", alignItems: "center", marginBottom: 60 }}>
               <div
                 style={{
@@ -135,8 +156,9 @@ const Peak2: React.FC = () => {
           </FadeIn>
         ))}
       </div>
+      {/* "meanwhile, the moment is gone" — audio "moment is gone" at 21.34s = peak+13.16s = frame 395 */}
       <FadeIn
-        startFrame={120}
+        startFrame={395}
         style={{ position: "absolute", left: 0, right: 0, bottom: 140, textAlign: "center" }}
       >
         <Kicker size={40}>meanwhile, the moment is gone.</Kicker>
