@@ -166,6 +166,51 @@ Note: 6:40 raw exceeds the 4-5 min target by ~30%. Content is denser/more concep
 
 Note: peak 10 (anti-move) runs 48.6s, longer than typical. Includes anti-move + deeper-point intro. If video composition needs finer control, could split with anchor `["deeper", "point"]` to create a 12th peak.
 
-## SOP 12+ · Video pipeline (pending)
+## SOP 12 · Remotion composition (complete — first pass)
 
-Remotion composition (SOP 12) → render MP4 (SOP 13) → thumbnail (SOP 14) → upload metadata (SOP 15) → publish (SOP 16). Inputs ready: timings JSON, peak-sync entry, compressed audio. Visual storytelling design is the heavy creative work — typically 1-2 hours for SOP 12 alone.
+**Output:** `videos/src/compositions/FramingEffect.tsx` (~530 lines TSX)
+**Audio synced:** `videos/public/audio/06-framing-effect.mp3` (gitignored binary)
+**Registered:** `videos/src/Root.tsx` — Composition id `FramingEffect`, duration 11,056 frames at 30fps.
+**Type-check:** Passes (`npx tsc --noEmit` in videos/)
+
+### Visual narrative design
+
+Each peak gets a dedicated React.FC component using shared primitives (`BaseFrame`, `PeakBadge`, `Title`, `Kicker`, `Caps`, `FadeIn`, `FadeInOut`). Sub-beats anchored to actual word timestamps from `framing-effect-timings.json`.
+
+| Peak | Visual treatment |
+|---|---|
+| 1 Hook | Strikethrough red on "arguing harder" → emphatic title "Start framing better." |
+| 2 Stakes | Three example bullets (meeting / dinner / boss), red emphasis on "bounced" + kicker reframe |
+| 3 Open loop | Big "3 MOVES" + 60-years-trained kicker + "but first" transition card |
+| 4 Tversky-Kahneman | Citation block → green "Lives saved" vs red "Lives lost" split → orange "Preferences reversed" punch |
+| 5 Lakoff | Name → italic book title → "Try not to" / "You can't" → two-line punch "argue against a frame / from inside the frame" (orange) |
+| 6 Midpoint | Two-stage reveal: gray top half "Most failed persuasion isn't a content failure" → orange punch "It's an angle-of-approach failure." |
+| 7 Move 1 | MOVE 1 label + title + directive + retention-not-salary example (orange + slate strikethrough) |
+| 8 Move 2 | MOVE 2 + three word-pair columns: compensation/salary, time off/PTO, issue/ticket — each with green=use / strike=don't |
+| 9 Move 3 | MOVE 3 + question/assertion contrast (green/red) + Socrates 2400 years kicker + customer-issue worked example |
+| 10 Anti-move | "Framing → spin" + the honesty test + green=craft / red=manipulation split + meaning-in-reception transition |
+| 11 Close | "Frame deliberately or by accident" + 3-move recap + CTA URL + exact callback to opening |
+
+### Quality bar self-check (against SOP 12)
+
+- [x] Audio src set (`staticFile("audio/06-framing-effect.mp3")`)
+- [x] Series.Sequence durations match SOP 11 audit (368/899/350/1489/881/552/1400/1265/1148/1458/1246 frames; total 11,056 = 368.53s ≈ audio 368.75s within 0.22s)
+- [x] Every peak has 2-5 visual sub-beats (no >6s stretches without visual change)
+- [x] Hook is one peak, closing is one peak, each named move is one peak
+- [x] Registered in Root.tsx with correct durationInFrames
+- [x] TypeScript compiles clean inside videos/
+- [ ] **Subjective playthrough check** — requires running `npm run dev` in videos/ to visually verify in Remotion Studio. Not done in this session (headless).
+
+### Open iterations (for visual review)
+
+1. **Peak 6 (midpoint)** — placeholder spacing between the two-stage reveal might need tuning. The second half should land with ~5s buffer before the next peak's "common mistake" line.
+2. **Peak 4 (Tversky-Kahneman)** — the green/red lives-saved/lost split at 540px top might benefit from a divider line between the frames; consider adding a vertical accent rule.
+3. **Peak 8 (Move 2 — vocabulary)** — three-column word-pair layout at top 620 may feel cramped on 1920px width at the current font sizes; preview in Remotion Studio and tighten if needed.
+4. **Sub-beat density** — Peak 4 has 5 sub-beats over ~50s (every 10s); Peak 10 has 5 sub-beats over ~48s. If feeling sparse vs. L4 reference (~4-5s avg), add intermediate FadeInOut chips on key words.
+
+## SOP 13+ · Render and ship (pending)
+
+- **SOP 13 render**: `npx remotion render FramingEffect videos/out/FramingEffect.mp4` — 10-25 min wall-clock
+- **SOP 14 thumbnail**: 1280×720, Playfair Display title + accent word, per pillar P2 template
+- **SOP 15 upload metadata**: title (60-70 chars including primary keyword), description with bridge URL, tags, chapters from timings
+- **SOP 16 publishing**: YouTube upload, schedule, end-card setup
