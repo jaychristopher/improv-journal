@@ -132,17 +132,40 @@ Note: 6:40 raw exceeds the 4-5 min target by ~30%. Content is denser/more concep
 
 **Final audio:** 6:08.87 — still over the 4-5 min sweet spot. Trim candidates if needed: cut "I lose this constantly, by the way" confessional (saves ~3s) or shorten one of the Move sections. Defer trim decision pending video composition; if visual pacing carries the length, no trim needed.
 
-## SOP 10 · Transcription (pending)
+## SOP 10 · Transcription (complete)
 
-**Purpose:** Word-level timing data via ElevenLabs Scribe for peak-sync.
-**Output:** `docs/youtube-week-N/06-timings.json`
-**Tools:** Scribe API
+**Tool:** `node scripts/transcribe-with-timings.mjs` (ElevenLabs Scribe)
+**Output:** `docs/youtube-week-4/framing-effect-timings.json` — 762 word timings
+**Verification:**
+- First word "Stop" at 0.24-0.50s ✓
+- Last word "better." at 368.44-368.75s — within 0.5s of compressed duration ✓
+- WPM: 124 (TTS pacing; slightly under typical 125-145 range — denser conceptual content)
 
-## SOP 11 · Peak-sync audit (pending)
+## SOP 11 · Peak-sync audit (complete)
 
-**Purpose:** Map script anchor phrases to exact timestamps; produce peaks for Remotion sub-beat anchoring.
-**Output:** `docs/youtube-week-N/peak-sync-audit.json` entry for episode 06.
+**Tool:** `node scripts/audit-peak-sync.mjs framing-effect`
+**Audit entry added:** `scripts/audit-peak-sync.mjs` ANCHORS["framing-effect"]
+
+**11 peaks identified** (within 7-12 sweet spot), all anchors found:
+
+| # | Peak | Anchor | Start | Duration | Frames@30 |
+|---|------|--------|------:|---------:|----------:|
+| 1 | Hook | `stop arguing` | 0.24s | 12.26s | 368 |
+| 2 | Stakes (consequences) | `was your idea` | 12.50s | 29.96s | 899 |
+| 3 | Open loop + setup | `three moves improv` | 42.46s | 11.66s | 350 |
+| 4 | Tversky-Kahneman 1981 | `in 1981` | 54.12s | 49.64s | 1489 |
+| 5 | Lakoff mechanism (Elephant) | `george lakoff` | 103.76s | 29.36s | 881 |
+| 6 | Midpoint reveal | `failed persuasion` | 133.12s | 18.40s | 552 |
+| 7 | Move 1 · Lead with the frame | `common mistake` | 151.52s | 46.66s | 1400 |
+| 8 | Move 2 · Use their vocabulary | `words carry` | 198.18s | 42.16s | 1265 |
+| 9 | Move 3 · Ask, don't assert | `question lets` | 240.34s | 38.27s | 1148 |
+| 10 | Anti-move (craft vs spin) | `framing slides` | 278.61s | 48.61s | 1458 |
+| 11 | Deeper point + CTA + callback | `choice isn't` | 327.22s | 41.53s | 1246 |
+
+**Total:** corrected 368.51s vs audio 368.75s (delta 0.24s — within 0.5s quality bar).
+
+Note: peak 10 (anti-move) runs 48.6s, longer than typical. Includes anti-move + deeper-point intro. If video composition needs finer control, could split with anchor `["deeper", "point"]` to create a 12th peak.
 
 ## SOP 12+ · Video pipeline (pending)
 
-Remotion composition, render, thumbnail, upload metadata — once timing data exists.
+Remotion composition (SOP 12) → render MP4 (SOP 13) → thumbnail (SOP 14) → upload metadata (SOP 15) → publish (SOP 16). Inputs ready: timings JSON, peak-sync entry, compressed audio. Visual storytelling design is the heavy creative work — typically 1-2 hours for SOP 12 alone.

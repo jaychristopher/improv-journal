@@ -1,360 +1,120 @@
 {
-  "L1": {
-    "videoKey": "L1",
+  "framing-effect": {
+    "videoKey": "framing-effect",
     "peaks": [
       {
         "num": 1,
         "label": "Hook",
         "anchor": [
-          "you",
-          "can",
-          "stop"
+          "stop",
+          "arguing"
         ],
-        "start": 0.18,
-        "duration": 6.4
+        "start": 0.24,
+        "duration": 12.26
       },
       {
         "num": 2,
-        "label": "Simulation",
+        "label": "Stakes (specific consequences)",
         "anchor": [
-          "someone",
-          "asks",
-          "you"
+          "was",
+          "your",
+          "idea"
         ],
-        "start": 6.58,
-        "duration": 14.6
+        "start": 12.5,
+        "duration": 29.96
       },
       {
         "num": 3,
-        "label": "Safe/Dead",
+        "label": "Open loop + setup",
         "anchor": [
-          "deliver",
-          "something",
-          "safe"
+          "three",
+          "moves",
+          "improv"
         ],
-        "start": 21.18,
-        "duration": 2.9200000000000017
+        "start": 42.46,
+        "duration": 11.659999999999997
       },
       {
         "num": 4,
-        "label": "Bandwidth (anchor)",
+        "label": "Tversky-Kahneman 1981 study",
         "anchor": [
-          "that's",
-          "not",
-          "a",
-          "willpower"
+          "in",
+          "1981"
         ],
-        "start": 24.1,
-        "duration": 27.089999999999996
+        "start": 54.12,
+        "duration": 49.64000000000001
       },
       {
         "num": 5,
-        "label": "Internal computation",
+        "label": "Lakoff mechanism (Elephant)",
         "anchor": [
-          "internal",
-          "computation"
+          "george",
+          "lakoff"
         ],
-        "start": 51.19,
-        "duration": 23.629999999999995
+        "start": 103.76,
+        "duration": 29.36
       },
       {
         "num": 6,
-        "label": "Forget yourself + Johnstone",
+        "label": "Midpoint reveal",
         "anchor": [
-          "improv",
-          "performers",
-          "discover"
+          "failed",
+          "persuasion"
         ],
-        "start": 74.82,
-        "duration": 46.860000000000014
+        "start": 133.12,
+        "duration": 18.400000000000006
       },
       {
         "num": 7,
-        "label": "Mirroring (Exercise 1)",
+        "label": "Move 1 · Lead with the frame",
         "anchor": [
-          "three",
-          "exercises"
+          "common",
+          "mistake"
         ],
-        "start": 121.68,
-        "duration": 28.400000000000006
+        "start": 151.52,
+        "duration": 46.66
       },
       {
         "num": 8,
-        "label": "First Line Drill (Exercise 2)",
+        "label": "Move 2 · Use their vocabulary",
         "anchor": [
-          "exercise",
-          "two"
+          "words",
+          "carry"
         ],
-        "start": 150.08,
-        "duration": 21.019999999999982
+        "start": 198.18,
+        "duration": 42.16
       },
       {
         "num": 9,
-        "label": "Last Word Response (Exercise 3)",
+        "label": "Move 3 · Ask, don't assert",
         "anchor": [
-          "exercise",
-          "three"
+          "question",
+          "lets"
         ],
-        "start": 171.1,
-        "duration": 21.47
+        "start": 240.34,
+        "duration": 38.27000000000001
       },
       {
         "num": 10,
-        "label": "Closing / Redirect",
+        "label": "Anti-move (craft vs spin)",
         "anchor": [
-          "these",
-          "three",
-          "exercises"
+          "framing",
+          "slides"
         ],
-        "start": 192.57,
-        "duration": 65.38
-      }
-    ],
-    "audioEnd": 257.95
-  },
-  "L23": {
-    "videoKey": "L23",
-    "peaks": [
-      {
-        "num": 1,
-        "label": "Most team bonding fails",
-        "anchor": [
-          "most"
-        ],
-        "start": 0.1,
-        "duration": 28.66
+        "start": 278.61,
+        "duration": 48.610000000000014
       },
       {
-        "num": 2,
-        "label": "Fun ≠ Trust",
+        "num": 11,
+        "label": "Deeper point + CTA + callback",
         "anchor": [
-          "the",
-          "problem",
+          "choice",
           "isn't"
         ],
-        "start": 28.76,
-        "duration": 31.98
-      },
-      {
-        "num": 3,
-        "label": "Trust = the art form",
-        "anchor": [
-          "improv",
-          "ensembles"
-        ],
-        "start": 60.74,
-        "duration": 31.880000000000003
-      },
-      {
-        "num": 4,
-        "label": "Mirroring",
-        "anchor": [
-          "exercise",
-          "one"
-        ],
-        "start": 92.62,
-        "duration": 20.47999999999999
-      },
-      {
-        "num": 5,
-        "label": "No leader",
-        "anchor": [
-          "why",
-          "it",
-          "works"
-        ],
-        "start": 113.1,
-        "duration": 16.819999999999993
-      },
-      {
-        "num": 6,
-        "label": "Gift Giving",
-        "anchor": [
-          "exercise",
-          "two"
-        ],
-        "start": 129.92,
-        "duration": 38.04000000000002
-      },
-      {
-        "num": 7,
-        "label": "Yes And Chain",
-        "anchor": [
-          "exercise",
-          "three"
-        ],
-        "start": 167.96,
-        "duration": 49.84
-      },
-      {
-        "num": 8,
-        "label": "One-Word Scene",
-        "anchor": [
-          "exercise",
-          "four"
-        ],
-        "start": 217.8,
-        "duration": 47.06
-      },
-      {
-        "num": 9,
-        "label": "Sequence (1→2→3→4)",
-        "anchor": [
-          "don't",
-          "just"
-        ],
-        "start": 264.86,
-        "duration": 38.079999999999984
-      },
-      {
-        "num": 10,
-        "label": "Debrief",
-        "anchor": [
-          "two",
-          "more",
-          "rules"
-        ],
-        "start": 302.94,
-        "duration": 19.74000000000001
-      },
-      {
-        "num": 11,
-        "label": "Return weekly",
-        "anchor": [
-          "rule",
-          "two"
-        ],
-        "start": 322.68,
-        "duration": 16.099999999999966
-      },
-      {
-        "num": 12,
-        "label": "Closing / Teamwork",
-        "anchor": [
-          "60",
-          "years"
-        ],
-        "start": 338.78,
-        "duration": 67.68
+        "start": 327.22,
+        "duration": 41.52999999999997
       }
     ],
-    "audioEnd": 406.46
-  },
-  "L31": {
-    "videoKey": "L31",
-    "peaks": [
-      {
-        "num": 1,
-        "label": "Search bar",
-        "anchor": [
-          "you",
-          "searched"
-        ],
-        "start": 0.18,
-        "duration": 13.200000000000001
-      },
-      {
-        "num": 2,
-        "label": "Standard list (strikes)",
-        "anchor": [
-          "about",
-          "half"
-        ],
-        "start": 13.38,
-        "duration": 10.339999999999998
-      },
-      {
-        "num": 3,
-        "label": "Yes And · 3 traditions",
-        "anchor": [
-          "rule",
-          "one"
-        ],
-        "start": 23.72,
-        "duration": 79.42
-      },
-      {
-        "num": 4,
-        "label": "Empty vs Loaded",
-        "anchor": [
-          "rule",
-          "two"
-        ],
-        "start": 103.14,
-        "duration": 47.94000000000001
-      },
-      {
-        "num": 5,
-        "label": "5 traditions agree",
-        "anchor": [
-          "rule",
-          "three"
-        ],
-        "start": 151.08,
-        "duration": 63.339999999999975
-      },
-      {
-        "num": 6,
-        "label": "Blocking taxonomy",
-        "anchor": [
-          "rule",
-          "four"
-        ],
-        "start": 214.42,
-        "duration": 79.91999999999999
-      },
-      {
-        "num": 7,
-        "label": "Del Close quote",
-        "anchor": [
-          "rule",
-          "five"
-        ],
-        "start": 294.34,
-        "duration": 53.52000000000004
-      },
-      {
-        "num": 8,
-        "label": "Strip away",
-        "anchor": [
-          "now",
-          "strip"
-        ],
-        "start": 347.86,
-        "duration": 6.939999999999998
-      },
-      {
-        "num": 9,
-        "label": "Get out of your head",
-        "anchor": [
-          "get",
-          "out"
-        ],
-        "start": 354.8,
-        "duration": 30.579999999999984
-      },
-      {
-        "num": 10,
-        "label": "Training wheels",
-        "anchor": [
-          "training",
-          "wheels"
-        ],
-        "start": 385.38,
-        "duration": 12.800000000000011
-      },
-      {
-        "num": 11,
-        "label": "Closing / books",
-        "anchor": [
-          "if",
-          "you",
-          "want"
-        ],
-        "start": 398.18,
-        "duration": 40.420000000000016
-      }
-    ],
-    "audioEnd": 438.6
+    "audioEnd": 368.75
   }
 }
