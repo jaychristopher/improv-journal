@@ -19,6 +19,7 @@ links:
   - { id: game-of-the-scene, relation: extends }
   - { id: fracture-repair-drill, relation: illustrates }
   - { id: group-scene, relation: extends }
+  - { id: belief-as-architecture, relation: enables }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"

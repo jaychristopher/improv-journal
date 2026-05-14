@@ -17,6 +17,7 @@ links:
   - { id: interdependence, relation: requires }
   - { id: irreversibility, relation: extends }
   - { id: shared-reality-fragility, relation: requires }
+  - { id: belief-as-architecture, relation: contrasts }
   - { id: discovery, relation: enables }
   - { id: relationship, relation: enables }
   - { id: heightening, relation: enables }

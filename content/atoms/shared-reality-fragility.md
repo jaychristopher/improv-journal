@@ -16,6 +16,7 @@ links:
   - { id: decay-recovery, relation: enables }
   - { id: callback, relation: extends }
   - { id: audience, relation: extends }
+  - { id: belief-as-architecture, relation: enables }
 sources: []
 created: "2026-03-29"
 updated: "2026-03-29"

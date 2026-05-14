@@ -13,6 +13,8 @@ links:
   - { id: active-listening, relation: enables }
   - { id: emotional-truth, relation: enables }
   - { id: meaning-is-relational, relation: extends }
+  - { id: model-of-their-model, relation: enables }
+  - { id: framing-as-angle-of-approach, relation: enables }
 sources: []
 created: "2026-04-03"
 updated: "2026-04-03"

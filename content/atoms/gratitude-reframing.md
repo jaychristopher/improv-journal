@@ -14,6 +14,7 @@ links:
   - { id: commitment, relation: extends }
   - { id: fracture-recovery, relation: enables }
   - { id: discovery, relation: enables }
+  - { id: framing-as-angle-of-approach, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-03"

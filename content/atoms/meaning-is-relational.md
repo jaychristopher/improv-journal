@@ -14,6 +14,9 @@ links:
   - { id: active-listening, relation: enables }
   - { id: offers, relation: extends }
   - { id: group-mind, relation: enables }
+  - { id: model-of-their-model, relation: enables }
+  - { id: belief-as-architecture, relation: enables }
+  - { id: framing-as-angle-of-approach, relation: enables }
   - { id: ref-impro-johnstone, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []

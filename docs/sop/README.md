@@ -2,6 +2,25 @@
 
 End-to-end pipeline for producing one YouTube video. Each artifact has its own SOP, and each round produces all artifacts before turning in for critique.
 
+## Upstream pipeline (concept → channel-plan entry)
+
+The 00-18 pipeline below assumes you're starting from a video already chosen from `docs/youtube-channel-plan.md`. The **A-series** SOPs cover the upstream half — taking concept-level content (atoms, threads) through research and validation until it has a channel-plan home.
+
+```
+┌─ A-01 Atom development (seed → draft)    [drafted — A01-atom-development.md]
+├─ A-02 Atom SEO validation                [drafted — A02-atom-seo-validation.md]
+├─ A-03 Thread composition                 [drafted — A03-thread-composition.md]
+├─ A-04 Candidate keyword scan             [drafted — A04-candidate-keyword-scan.md]
+├─ A-05 Thread → channel-plan routing      [drafted — A05-thread-channel-plan-routing.md]
+└─ A-06 Bridge creation from thread/atom   [drafted — A06-bridge-creation.md]
+```
+
+**All A-series upstream SOPs drafted from real production runs (2026-05-14).** End-to-end traversable: seed atom → draft atom (A-01) → SEO validation (A-02) → thread composition (A-03) → candidate keyword scan (A-04) → channel-plan routing (A-05) → bridge creation (A-06) → existing 18-step video pipeline.
+
+First full run produced: thread `shaping-shared-reality`, 4 new atoms, bridge `framing-effect`, all wired into the graph. Total cost: ~3,600 Ahrefs API units + ~4 hours wall-clock for the run + ~3 hours wall-clock for SOP codification.
+
+The full gap analysis that produced this list lives at `docs/concepts/upstream-gaps.md`. The first A-04 + A-05 run is documented at `docs/concepts/shaping-shared-reality-buildup.md`.
+
 ## Pipeline
 
 ```

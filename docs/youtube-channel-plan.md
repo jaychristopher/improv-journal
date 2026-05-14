@@ -590,7 +590,7 @@ After 90 days: 67 videos uploaded, channel established as the educational improv
 | 24 | **T2: Yes And Chain Tutorial** | 2 | 10 | 5 | 2 | 2 | **21** | Pair with L23. Brainstorming reframe. |
 | 25 | **T3: Gift Giving Tutorial** | 1 | 10 | 5 | 2 | 1 | **19** | Pair with L23. |
 | 26 | **L16: How to Be a Better Conversationalist** | 3 | 10 | 5 | 4 | 1 | **23** | KD 0, listicle format. |
-| 27 | **L17: How to Have Difficult Conversations** | 4 | 7 | 3 | 4 | 1 | **19** | Workplace + life. |
+| 27 | **L17: How to Have Difficult Conversations** | 4 | 7 | 3 | 4 | 1 | **19** | Workplace + life. **Conceptual source:** thread `shaping-shared-reality` + 4 atoms (`model-of-their-model`, `belief-as-architecture`, `rigid-core-malleable-edge`, `framing-as-angle-of-approach`). See `docs/concepts/shaping-shared-reality-buildup.md`. |
 | 28 | **L29: How to Give Feedback** | 4 | 5 | 3 | 4 | 1 | **17** | Cross-pillar (teams + teacher). |
 | 29 | **L21: Interpersonal Communication Skills** | 6 | 5 | 3 | 4 | 1 | **19** | High volume, partial KD. |
 | 30 | **L19: How to Deal with Conflict** | 3 | 7 | 3 | 4 | 1 | **18** | Cross-pillar (life + teams). |

@@ -15,6 +15,7 @@ links:
   - { id: irreversibility, relation: requires }
   - { id: fracture-recovery, relation: enables }
   - { id: callback, relation: extends }
+  - { id: framing-as-angle-of-approach, relation: extends }
   - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-03"

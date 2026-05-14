@@ -16,6 +16,7 @@ links:
   - { id: be-brave, relation: requires }
   - { id: do-feel-say, relation: extends }
   - { id: status, relation: illustrates }
+  - { id: belief-as-architecture, relation: contrasts }
 sources: []
 created: "2026-04-04"
 updated: "2026-04-04"
