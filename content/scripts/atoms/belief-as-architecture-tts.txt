@@ -1,0 +1,69 @@
+[curious] Here's something I want to understand. Why does telling someone the truth — directly, clearly, with evidence — so often make things worse?
+
+[warm] Because you're not arguing with a position. You're trying to remove a beam.
+
+[curious] Unpack that.
+
+[teaching] People defend their belief systems by default. Not as a preference — as architecture. The brain minimizes surprise; a coherent self-story is load-bearing for the identity sitting on top of it. Pull on one structural belief and the whole shape wobbles. The defense reflex is your body protecting the building. Not the opinion.
+
+[short pause]
+
+[contemplative] So when I tell a friend "you're being unreasonable about this" and they get furious — they're not really mad about the topic. They're mad because I just shook a beam.
+
+[matter-of-fact] You shook a beam that's holding up "I am a reasonable person." That's a load-bearing belief about who they are. Your sentence — even if it's perfectly accurate about the topic — is structurally a demolition.
+
+[curious] Friston's free energy stuff lives here, doesn't it?
+
+[teaching] Yeah. The brain is a prediction engine; its main job is keeping the model in agreement with the signal. Long-held beliefs are high-confidence priors. New evidence that contradicts them generates prediction error, and prediction error is expensive — metabolically, emotionally. The cheapest move is almost always to update the interpretation of the evidence, not the prior. That's the system functioning exactly as evolved.
+
+[curious] So it's not stubbornness. It's energy minimization.
+
+[matter-of-fact] It's structural. Stubbornness is the surface; this is the mechanism underneath.
+
+[short pause]
+
+[curious] And it gets worse with smarter people, right?
+
+[warm] This is the part that should ruin your day. Dan Kahan's identity-protective cognition work — people reason more skillfully against evidence when it threatens their group identity. Greater cognitive ability widens the gap. The defense gets better with intelligence, because the intelligence is in service of the architecture.
+
+[contemplative] So the smartest person in the room isn't the one most likely to update. They might be the one most able to construct a clever-sounding reason not to.
+
+[emphatic] Especially on identity-anchored topics. Politics, religion, professional identity, the meaning of your own past choices.
+
+[long pause]
+
+[curious] How do you know you've hit architecture and not just an opinion?
+
+[teaching] Disproportion. The defense is too fast, too hot, or too elaborate for the size of the claim. You said something pretty small; they reach for a frame-shift, an ad hominem on your source, or a sudden topic change. The intensity is a measurement. It tells you how load-bearing the belief is — and therefore how far back from the core you need to start.
+
+[curious] On stage too?
+
+[matter-of-fact] Same physics. Blocking in improv is architecture defense at the performer level. The offer threatens your status, your sense of self, your comfort. You refuse it to keep the structure intact. Johnstone's whole point in "Impro" — students protect themselves from imagined danger. The imagined danger is the structural cost of saying yes.
+
+[curious] Status-protection blocking, then. Not just fear blocking.
+
+[teaching] Right. High-status players block to keep authority. Low-status players block to keep safety. Either way the move is the same: refuse the offer to avoid letting the building re-settle.
+
+[short pause]
+
+[curious] So what's the practical move when you actually need to move someone?
+
+[matter-of-fact] Three. Identify the load-bearing belief before you speak — if the architecture is in the way, the words don't matter; if it isn't, the words are almost incidental. Don't ask for demolition — asking someone to give up a structural belief in one exchange is asking them to live in rubble. And notice when you're being asked to demolish. The reflex you feel when your own architecture is threatened is the same reflex they feel. Naming it interrupts it.
+
+[warm] "I notice I'm getting defensive here." Six words. Breaks more loops than any rebuttal you could have built.
+
+[long pause]
+
+[contemplative] There's something almost dignifying in this framing. Like — when someone refuses to update, they're not just being closed-minded. They're protecting something real about themselves.
+
+[teaching] They're protecting the building. You don't ask someone to demolish their own house just because you have a better blueprint. You walk them through, room by room, and let them notice what isn't load-bearing.
+
+[curious] So beliefs aren't held...
+
+[emphatic] They hold you. That's the deepest implication. The work of being changeable is structurally harder than it sounds, because changing a load-bearing belief requires temporarily living in a less-coherent self. That's what improv trains. Low-stakes substrate, real skill.
+
+[short pause]
+
+[warm] The reframe that's earned the most for me — they're not being stubborn. They're under load.
+
+[teaching] And so are you. Whenever you can't hear the obvious thing your partner is telling you — that's not failure of intelligence. That's a beam.

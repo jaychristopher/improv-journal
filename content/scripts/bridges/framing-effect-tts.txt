@@ -1,0 +1,111 @@
+[curious] So the framing effect. Most people know it as a cognitive bias — humans aren't rational, beware. But there's another reading.
+
+[warm] It's also a skill. And improv has been training it for sixty years.
+
+[curious] Walk me through both readings. Because they sound contradictory.
+
+[teaching] The famous study — Tversky and Kahneman, 1981, in Science. Identical statistical outcomes described two ways. Once in terms of lives saved. Once in terms of lives lost. Same numbers. Same outcomes. Different angle of presentation.
+
+[matter-of-fact] Subjects' preferences reversed.
+
+[short pause]
+
+[contemplative] The standard takeaway — humans are irrational, easy to manipulate. Beware framing.
+
+[teaching] That's reading one. Reading two — if the angle of presentation is part of the signal, then choosing the angle is part of the work. The framing effect isn't only a bias. It's a measurement of how meaning gets constituted.
+
+[curious] And if meaning is constituted in reception...
+
+[warm] Then framing isn't decoration on identical content. It's recognition that content and reception aren't the same thing. A signal that doesn't account for the substrate it's landing on will bounce — no matter how true it is.
+
+[long pause]
+
+[curious] Lakoff's the bridge to the mechanism, right?
+
+[teaching] Don't Think of an Elephant — 2004. Frames don't just decorate content. They activate inferences. A word, a metaphor, an image pulls an entire web of associations into play. The listener reasons from inside that web. Try not to think of an elephant. You can't. The frame is already activated.
+
+[matter-of-fact] You can't argue against a frame from inside the frame.
+
+[contemplative] So negating the frame reinforces it.
+
+[teaching] Right. Which is why "this isn't about money" makes money the topic. The instruction to ignore the frame invokes the frame. The only move that actually changes the conversation is providing a different frame — and letting the new web of inferences do the work.
+
+[short pause]
+
+[curious] Improv knows this without having to name it.
+
+[teaching] Multiple names for the same skill. Justification — after-the-fact framing of an offer. Finding the angle from which the weird thing makes sense within the scene's reality. Same trip-and-fall, framed as poison kicking in, becomes a plot point. Same content. Different scene.
+
+[warm] Endowment — framing your partner's character before they have to define it. The audience doesn't need to be told the character is shy or powerful or terrified. The frame establishes it.
+
+[matter-of-fact] Reframing — when the scene seems to be one thing and a clean new frame reveals it as another. Same words. Different meaning. The audience re-interprets everything that came before.
+
+[curious] None of these are manipulation techniques.
+
+[teaching] They're recognition that the angle of approach is itself part of the message. Choosing the angle deliberately is what separates skilled communicators from people whose words bounce.
+
+[long pause]
+
+[curious] Why does direct argument fail then?
+
+[matter-of-fact] Beliefs — especially identity-anchored ones — are defended structurally, not as preferences. Friston's free energy principle, Festinger's cognitive dissonance, Kahan's identity-protective cognition. All converging on the same finding. When you hit a load-bearing belief head-on, the defense fires before the content is processed.
+
+[curious] So you can be entirely right and still get rejected on contact.
+
+[warm] Audience isn't being stubborn. They're protecting structural integrity.
+
+[teaching] A reframe doesn't ask the audience to dismantle structure. It supplies a new frame in which the same content is no longer a threat. The conclusion lands by a different route. Often through the audience's own reasoning. And that route avoids the defense system entirely.
+
+[short pause]
+
+[curious] Three practical moves then.
+
+[teaching] First — lead with the frame, not the conclusion. The common mistake is stating the conclusion inside the wrong frame. The listener evaluates the conclusion before the frame arrives. Defense fires. The framing, when it shows up a sentence later, reads as rationalization.
+
+[matter-of-fact] Establish the frame first. Then let the conclusion land inside it. "What we're really negotiating here is retention, not salary" — before the position. "This is a learning conversation, not a performance review" — before the feedback.
+
+[warm] The frame primes the listener. Conclusions that fit the frame feel like discovery rather than imposition.
+
+[curious] Second move.
+
+[teaching] Use their vocabulary. Words carry frames. Their words carry their frames. Using your in-group vocabulary signals you're outside their architecture. The boundary defense reflex fires before any reasoning happens.
+
+[matter-of-fact] Compensation, not salary. Issue, not ticket. Time off, not PTO. Small swaps. Structural effect. The listener stays inside the conversation instead of leaving to defend a frame.
+
+[short pause]
+
+[curious] Third.
+
+[teaching] Ask, don't assert. A question lets the listener do the framing. An assertion forces them to evaluate yours. Socrates has been running this play for 2,400 years. When you ask a question that points at the conclusion, the listener reasons their way there using premises they already hold.
+
+[warm] The conclusion arrives as their discovery, not your invasion. The defense doesn't fire because the architecture hasn't been threatened. It's been consulted.
+
+[matter-of-fact] "How would you handle this if it were a customer issue instead of a personnel one?" Opens an analogical reframe without asserting anything. The listener answers. Their answer often resolves the original disagreement — without anyone having argued.
+
+[long pause]
+
+[curious] When is framing the wrong tool?
+
+[teaching] Three cases. Urgent truth — when the cost of indirection is greater than the cost of rejection. Safety, accountability, time pressure. Shared-frame already exists — if you're both inside the same frame, framing is overhead and they'll read it as evasion. The frame itself is the issue — when the disagreement is about which frame is appropriate, working inside any one frame concedes the argument.
+
+[matter-of-fact] In that last case the honest move is naming the frames directly. "I think we're operating from different frames here. Can we name them?" Lakoff's elephant turned inside out.
+
+[curious] The line between framing and spin.
+
+[emphatic] The honesty test. Would you be comfortable with the listener seeing the framing move you just made? If yes — it's craft. If no — it's manipulation.
+
+[warm] The line is real. The technique is value-neutral. The use is not.
+
+[long pause]
+
+[contemplative] The deeper point — the framing effect is usually presented as a bias to defend against because the audience is treated as the problem. But the actual finding is structural.
+
+[teaching] Communication doesn't transfer content intact. Meaning is constituted in reception. The frame is part of the signal because it has to be. There's no frameless way to say anything.
+
+[matter-of-fact] Which means the choice isn't whether to frame. The choice is whether to frame deliberately, or by accident.
+
+[curious] People who refuse to think about framing aren't avoiding it.
+
+[emphatic] They're framing badly.
+
+[warm] Frame on purpose. Use their words. Ask the question. And when the frame itself is the issue — name it.
