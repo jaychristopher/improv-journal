@@ -43,7 +43,7 @@ Awkwardness thrives in attention vacuums. When your attention has nowhere specif
 
 In a scene, that focus is the scene partner: what are they doing? What did they just give me to work with? What do they need from me right now? There's no bandwidth left for "am I being weird?" because the attention is fully consumed by tracking another person.
 
-You can do this in any conversation. Instead of monitoring yourself, give yourself a specific listening task: _What is this person actually trying to tell me? Not the words — the underlying thing._ This is the improv skill of reading offers — recognizing that people communicate on multiple channels simultaneously, and the words are often the least important one.
+You can do this in any conversation. That redirection is `be-present` in its most literal form. Instead of monitoring yourself, give yourself a specific listening task: _What is this person actually trying to tell me? Not the words — the underlying thing._ This is the improv skill of reading `offers` — recognizing that people communicate on multiple channels simultaneously, and the words are often the least important one.
 
 When you're genuinely trying to understand someone, you stop performing. And when you stop performing, the awkwardness evaporates — because awkwardness _is_ the performance of trying to seem normal.
 
@@ -59,7 +59,7 @@ Practice noticing offers. When someone gives you something — any something —
 
 Awkwardness loves hedging. The half-laugh. The mumbled response. The immediate qualification of anything you just said. These are all forms of uncommitted behavior, and they read as social uncertainty — which makes everyone else uncertain too.
 
-Improv performers learn that commitment — saying a thing and meaning it, fully — solves half the problems you think you have. A committed "I have no idea what I'm doing here" is more socially effective than a hedged attempt to seem like you belong. People respond to honesty and confidence. They feel destabilized by hedging.
+Improv performers learn that `commitment` — saying a thing and meaning it, fully — solves half the problems you think you have. A committed "I have no idea what I'm doing here" is more socially effective than a hedged attempt to seem like you belong. People respond to honesty and confidence. They feel destabilized by hedging.
 
 The practical version: when you say something, don't immediately soften it. Don't add "I don't know" or "that's probably wrong" or a nervous laugh. Let it sit. The silence after a committed statement feels terrifying from the inside. From the outside, it reads as presence.
 
@@ -69,7 +69,33 @@ Most socially awkward moments happen because someone is following an internal sc
 
 Improv performers can't do this. There is no script. Every moment requires responding to what actually just happened, not to what you expected to happen. This is terrifying at first and liberating after practice.
 
-In conversation, this means: stop planning your next sentence while the other person is talking. You'll miss what they're saying, your response will be slightly off-topic, and the interaction will feel disconnected. Instead, trust that when they finish, a response will appear. It will. It always does. The response that emerges from listening is always better than the one you prepared while not listening.
+Improv names the planning itself: `internal-computation`, the background process that consumes the attention reception needs. In conversation, this means: stop planning your next sentence while the other person is talking. You'll miss what they're saying, your response will be slightly off-topic, and the interaction will feel disconnected. Instead, trust that when they finish, a response will appear. It will. It always does. The response that emerges from listening is always better than the one you prepared while not listening.
+
+## About the Silence
+
+The awkward pause is the thing most people actually mean, so it is worth treating on its own.
+
+A silence is not awkward because it is empty. It is awkward because both people have decided it means something — that the conversation has failed, that someone should be fixing it, that the failure is theirs. Two people racing to end a pause is what produces the scramble that everyone remembers as awkward. The pause itself was neutral.
+
+Improvisers spend a lot of time in silence on stage and it does not read as awkward to an audience, because the performers are visibly still engaged. That is the entire difference. A silence with attention in it looks like thought. A silence with self-monitoring in it looks like panic, and self-monitoring is legible from across a room — the eye contact breaks, the posture changes, someone reaches for their phone.
+
+So the move is not to fill it faster. It is to stay in it without leaving.
+
+- **Let it run three seconds longer than is comfortable.** Most pauses resolve on their own, and the person who waits is not the one who looked uncomfortable.
+- **If you fill it, fill it with the room.** Something present and specific, not a topic retrieved from storage. Retrieved topics are audibly retrieved.
+- **Do not apologise for it.** Naming a silence as awkward is what makes it so; until someone says it, it was just a pause.
+
+## How to Practise This
+
+None of this is learnable by intending it harder in the moment. The attention shift has to be rehearsed somewhere the stakes are low.
+
+**Give attention somewhere it cannot wander.** `mirroring` asks you to match a partner's movement precisely, which occupies exactly the capacity that would otherwise be watching yourself. It is uncomfortable for about ninety seconds and then it is not.
+
+**Make planning impossible.** `last-word-response` requires building your reply from the final words your partner said. You cannot compose ahead, because you do not know what the last words will be until they arrive.
+
+**Practise committing to something unpolished.** `first-line-drill` is starting before you know where you are going. It trains the specific thing hedging avoids — saying a thing and letting it stand.
+
+**Then use it once a day, on something small.** One exchange where you answer with your first response and do not soften it afterwards. The goal is not a better conversation. It is one repetition of not editing.
 
 ## The Uncomfortable Truth
 
