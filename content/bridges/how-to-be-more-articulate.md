@@ -1,6 +1,6 @@
 ---
 title: "How to Be More Articulate: It Is Not About Vocabulary"
-description: "Articulate people do not use more words than you. They use fewer, and they cost the listener less. That is a habit rather than a gift, and it is trainable."
+description: "You can be intelligent and inarticulate — they run on different constraints. Articulate people are not thinking faster, they have fewer processes running."
 target_keywords:
   - { keyword: "how to be more articulate", volume: 1000, difficulty: 0, traffic_potential: 1200, parent: "how to be more articulate" }
   - { keyword: "how to speak more clearly", volume: 300, difficulty: 0, parent: "how to speak more clearly" }
@@ -27,6 +27,23 @@ The advice is always the same. Read more. Build your vocabulary. Learn some rhet
 None of it addresses what is actually happening when somebody sounds articulate, which is this: **their sentences cost you almost nothing to process.** You are not admiring their word choice. You are noticing the absence of effort on your side.
 
 That reframes the whole problem. Articulacy is not a supply of words. It is a discipline about the listener.
+
+## Why You Struggle to Say What You Mean
+
+Almost everybody who looks this up is carrying the same specific worry: that they sound less intelligent than they are, and that people are quietly grading them on it.
+
+So it is worth answering the question directly. **You can be intelligent and inarticulate, and the two are close to independent.** Thought and speech run on different constraints. A thought arrives compressed and mostly wordless — a shape, a sense of how several things relate. Saying it out loud means converting that into a single line of words, in order, in real time, with no chance to revise. Being good at the first has almost no bearing on being good at the second, which is why the pattern is so common in people who read a great deal and say little.
+
+That also explains the particular frustration of it. You are not failing to understand your own point. You are watching a good internal version come out as a worse external one, and the gap between the two is the thing that stings.
+
+Four things cause most of it, and none is a shortage of words:
+
+- **You are drafting and judging at the same time.** Composing the sentence while assessing how it is landing means two jobs competing for one channel, and the composing is what gets starved.
+- **You started before the sentence had a destination.** Most stumbling is not a lost word. It is a sentence begun on the assumption that the end would arrive on its own, and then it does not.
+- **You are trying to be complete rather than clear.** Fear of being misunderstood produces qualifications, and each one adds a clause. Past about two, the qualifications are what makes you misunderstood.
+- **You have imagined the room as an examiner.** Speaking to people you have cast as judges makes every sentence a submission, and submissions get edited to death before they leave.
+
+The useful part of all this: people who sound well spoken are not thinking faster than you. **They have fewer processes running.** That is a smaller and much more fixable difference than a gap in intelligence, and everything below is about closing it.
 
 ## Why More Vocabulary Makes It Worse
 
