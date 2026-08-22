@@ -9,6 +9,7 @@ import { HOMEPAGE_SYMPTOMS } from "@/lib/homepage-symptoms";
 import { getRecommendedPath } from "@/lib/path-recommendations";
 import { ogImages, SITE_NAME } from "@/lib/seo";
 import { getSystemCounts } from "@/lib/system-counts";
+import { getTopGuides } from "@/lib/top-guides";
 
 /**
  * The homepage previously inherited the bare site name as its title, which
@@ -38,7 +39,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Home() {
-  const [paths, threads, bridges] = await Promise.all([loadPaths(), loadThreads(), loadBridges()]);
+  const [paths, threads, bridges, topGuides] = await Promise.all([
+    loadPaths(),
+    loadThreads(),
+    loadBridges(),
+    getTopGuides(8),
+  ]);
   const beginnerRecommendation = getRecommendedPath("beginner");
   const pathById = new Map(paths.map((path) => [path.frontmatter.id, path]));
   const threadById = new Map(threads.map((thread) => [thread.frontmatter.id, thread]));
@@ -175,6 +181,57 @@ export default async function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* The homepage linked only to hubs, so the strongest pages on the site
+          got nothing from the page that has the most to give. A body link from
+          here is worth more than the same link in site-wide footer chrome. */}
+      <section className="mt-14">
+        <h2 className="text-foreground/80 text-lg font-semibold">Where most people start</h2>
+        <p className="text-foreground/50 mt-1 mb-5 text-sm">
+          These go furthest into a single situation — what is actually going wrong, why it happens,
+          and what to do differently on Thursday.
+        </p>
+        <ul className="grid gap-2 sm:grid-cols-2">
+          {topGuides.map((guide) => (
+            <li key={guide.slug}>
+              <Link
+                href={`/${guide.slug}`}
+                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border px-4 py-3 text-sm transition-colors"
+              >
+                {guide.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-14">
+        <h2 className="text-foreground/80 text-lg font-semibold">What sits underneath them</h2>
+        <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+          Every guide is assembled from the same vocabulary rather than written from scratch — a{" "}
+          <Link href="/practice/vocabulary" className="underline">
+            glossary of improv terms
+          </Link>{" "}
+          where each concept is defined once and linked everywhere it applies, alongside the
+          techniques, failure modes,{" "}
+          <Link href="/practice/exercises" className="underline">
+            exercises
+          </Link>{" "}
+          and{" "}
+          <Link href="/practice/formats" className="underline">
+            formats
+          </Link>{" "}
+          they draw on. When a guide says a question blocks, there is a page defining exactly what{" "}
+          <Link href="/how-it-works/diagnosis/blocking" className="underline">
+            blocking
+          </Link>{" "}
+          is and how to recognise it — and a page on{" "}
+          <Link href="/how-it-works/diagnosis" className="underline">
+            everything else that goes wrong
+          </Link>{" "}
+          when a conversation stops working.
+        </p>
       </section>
 
       <div className="text-foreground/30 mt-10 flex flex-wrap gap-x-4 gap-y-1 text-sm">

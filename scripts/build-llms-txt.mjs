@@ -1,8 +1,8 @@
 /**
  * Build public/llms.txt from the content.
  *
- * robots.txt explicitly welcomes GPTBot, ClaudeBot, PerplexityBot and
- * Google-Extended, and llms.txt is the index those crawlers look for. It was
+ * The edge policy is no AI training but reference use allowed, so the
+ * live-fetch agents still come and llms.txt is the index they look for. It was
  * hand-maintained, so it drifted: it named 14 URLs against 295 pages — 4%
  * coverage — with no hub, no glossary, no atom and no guide category in it.
  *
