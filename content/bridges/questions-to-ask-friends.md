@@ -208,22 +208,24 @@ Every list includes some of these. They are worth knowing about because each one
 
 ## How to Ask
 
-The questions are the easy part. What you do after the answer decides whether you get another one.
+The questions are the easy part. Almost everything that decides whether you get a real answer happens in how you put it and what you do in the ten seconds afterwards.
 
-**Receive before you respond.** Take in what was actually said, including the part they nearly did not say. `be-thankful` on this site means treating what arrives as usable rather than evaluating it — a friend telling you something awkward or unflattering is handing you information about their real life.
+**One at a time.** Two questions in a row hands somebody the easier one, and they will take it every time — not evasively, just because it was offered.
 
-**Do not trade.** "That happened to me too" and then your version. It feels like empathy and functions as a topic change. The tell is that they never get back to what they were saying.
+**Ask the second question.** Hardly anyone does. The first answer is the summary. "What was the worst part of it?" or "How long has that been going on?" costs nothing and is where the actual conversation starts.
 
-**Ask the second question.** Almost nobody does. The first answer is the summary; the second question is where the actual thing is. "What was the worst part?" or "How long has that been going on?" costs nothing and changes the conversation entirely.
+**Let the silence run past comfortable.** The polite answer arrives fast and the true one arrives a few seconds behind it. Most people fill the gap before it gets there, and then wonder why the exchange stayed on the surface.
 
-**Let it stay unresolved.** Sitting with something unfixed is a real contribution and it feels like doing nothing, which is why people reach for advice instead. If you are not sure which conversation you are in, ask: "do you want thoughts, or do you want to be annoyed about it for a bit?"
+**Take a deflection as the answer it is.** A joke where a reply should be is information — usually "not yet", occasionally "not ever". Asking again converts a conversation into an interrogation, and the second refusal is much more expensive than the first.
 
-## Practise the Receiving Part
+**Do not stack the heavy ones.** After a real answer, go lighter for a while. Sustained depth stops registering as interest and starts feeling like being processed, which is the failure mode of every list like this one.
 
-**Receiving without evaluating.** `gift-giving` hands over an undefined object that the receiver names and values specifically. It is two minutes long and it is the entire skill above.
+**Finish with something still unsaid.** A conversation that ends while there is more to say is the one that picks up again next time.
 
-**Extending rather than replacing.** `last-word-response` forces your reply to build from your partner's final words, which makes changing the subject structurally impossible.
+## Practise the Asking Part
 
-For the rest of it: [how to be a good listener](/how-to-be-a-good-listener) for the receiving half in detail, [how to be a good friend](/how-to-be-a-good-friend) for what support actually is, and [team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
+**Nothing but questions.** `questions-only` requires every line of a scene to be a genuine question, and puts you out on a statement — or on a question that does not follow from the one before it. That second rule is the one worth having. It tests directly whether you took in the last answer before producing your next question, which is the skill this whole page depends on.
+
+The other half of this — what to do once somebody has actually answered — belongs elsewhere and is most of the work: [how to be a good friend](/how-to-be-a-good-friend) for what support is and why advice so often costs you the next disclosure, and [how to be a good listener](/how-to-be-a-good-listener) for the receiving mechanics in detail. [Team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
 
 _For the deeper end specifically, and what has to be true before any of it works: [deep questions to ask](/deep-questions-to-ask)._

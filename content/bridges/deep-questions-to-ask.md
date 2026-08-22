@@ -217,20 +217,22 @@ These are only for a relationship with history. Asked too early they are intrusi
 
 ## What to Do With the Answer
 
-The questions are the easy half. What happens next decides whether you get a second one.
+The questions are the easy half. A deep answer is a small risk somebody has just taken in front of you, and the next thirty seconds decide whether they take another one.
 
-**Ask the follow-up.** Almost nobody does. The first answer is the version they have told before; the second question is where the unrehearsed thing is. "What was the worst part?" or "how long has that been true?" costs nothing.
+**Ask the follow-up.** The first answer is usually the version they have told before. The unrehearsed one sits behind it and needs almost nothing to reach — "what was the worst part of that?" is generally enough.
 
-**Do not fix it.** The urge to solve is about your discomfort, not their problem. Accompanying someone in something unfixable is the whole job, and it feels like doing nothing precisely because the doing is not the point.
+**Do not respond with more feeling than they showed.** Visible distress on your side turns their disclosure into something they now have to look after. Steadiness reads as capacity, and capacity is what makes someone tell you the next thing.
 
-**Do not match it.** "That happened to me too", followed by your version, is a topic change that feels like empathy. The tell is that they never get back to what they were saying.
+**Do not escalate immediately.** A deeper question straight after a deep answer reads as extraction rather than interest. Stay in the one you were given for a while.
 
-**Receive rather than assess.** `be-thankful` here means treating what arrives as usable rather than evaluating it. Reacting to how heavy something was — rather than to its content — is how people learn what not to tell you.
+**Answer at their depth, not past it.** Going further than they did looks generous and works as pressure — it resets the floor and quietly turns the exchange into a competition about who can be more exposed.
 
-**Let it be unresolved.** Not every answer needs a landing. Sitting with something open is a real contribution, and the silence after a hard answer is usually more useful than anything you could put in it.
+**Never repeat it in company.** A single instance of something private resurfacing in front of other people undoes a great deal of accumulated evidence, and no apology afterwards puts it back.
+
+**Let the silence sit.** The pause after a hard answer is usually doing more work than anything you could put into it.
 
 ## Practise the Following-Up Part
 
-**Building from their last words.** `last-word-response` forces your reply to start from your partner's final words, which makes changing the subject structurally impossible. It is two minutes long and it is the whole skill above.
+**Building from their last words.** `last-word-response` leaves you no opening except their final word, which removes changing the subject as an available move rather than merely discouraging it. Two minutes, and it is the whole skill above.
 
 For the neighbouring versions of this: [questions to ask friends](/questions-to-ask-friends) for 120 sorted by what they open, [how to be a good listener](/how-to-be-a-good-listener) for the receiving half, and [how to be vulnerable](/how-to-be-vulnerable) for going first.
