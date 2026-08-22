@@ -4,6 +4,9 @@ description: "Small talk fails when you treat it as performance. Improv reveals 
 target_keywords:
   - { keyword: "how to make small talk", volume: 2200, difficulty: 11, traffic_potential: 2000, parent: "how to make small talk" }
   - { keyword: "small talk tips", volume: 200, parent: "how to make small talk" }
+serp_checked: "2026-08-23"
+serp_min_dr: 36
+serp_verdict: winnable
 entry_atoms: [offers, yes-and, active-listening, be-present, commitment]
 entry_path: improv-for-life
 status: draft

@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "what is emotional safety", volume: 500, difficulty: 4, parent: "emotional safety" }
   - { keyword: "emotional safety definition", volume: 400, difficulty: 1, parent: "emotional safety" }
   - { keyword: "how to create emotional safety", volume: 80, difficulty: 1, parent: "emotional safety" }
+serp_checked: "2026-08-23"
+serp_min_dr: 16
+serp_verdict: winnable
 entry_atoms: [safety-in-the-room, trust, ensemble, be-supportive, vulnerability]
 entry_path: improv-for-teams
 status: draft

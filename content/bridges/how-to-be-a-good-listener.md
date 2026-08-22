@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "how to be a good listener", volume: 900, difficulty: 3, traffic_potential: 1500, parent: "how to be a better listener" }
   - { keyword: "how to be a better listener", volume: 1100, parent: "how to be a better listener" }
   - { keyword: "listening skills", volume: 800, parent: "how to practice active listening" }
+serp_checked: "2026-08-23"
+serp_min_dr: 24
+serp_verdict: winnable
 entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
 status: draft

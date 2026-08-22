@@ -228,10 +228,21 @@ function topicTokens(fm: BridgeFrontmatter): Set<string> {
  * Measured across the guides, 42% of curated related-guide slots pointed at
  * pages above difficulty 30, and the site's highest-reach page received fewer
  * in-body links than three pages that cannot rank at all.
+ *
+ * Difficulty alone was not enough. It is a backlink measure, so a guide can
+ * clear the bar and still face a page of results held by Slack or Verywell —
+ * and because those guides carry high traffic potential, they were winning
+ * every tiebreak rather than losing it. 31 of 240 related slots were going to
+ * pages already checked and found closed. A checked-and-closed guide now
+ * scores zero here, the same as a stranded one.
  */
-function rankability(keywords: BridgeTargetKeyword[] | undefined): number {
+function rankability(
+  keywords: BridgeTargetKeyword[] | undefined,
+  verdict?: BridgeFrontmatter["serp_verdict"],
+): number {
   const primary = keywords?.[0];
   if (!primary) return 0;
+  if (verdict === "authority") return 0;
   if (primary.difficulty !== undefined && primary.difficulty > STRANDED_DIFFICULTY) return 0;
   return primary.traffic_potential ?? primary.volume ?? 0;
 }
@@ -279,8 +290,8 @@ export async function getRelatedBridges(
     .sort(
       (a, b) =>
         b.score - a.score ||
-        rankability(b.bridge.frontmatter.target_keywords) -
-          rankability(a.bridge.frontmatter.target_keywords) ||
+        rankability(b.bridge.frontmatter.target_keywords, b.bridge.frontmatter.serp_verdict) -
+          rankability(a.bridge.frontmatter.target_keywords, a.bridge.frontmatter.serp_verdict) ||
         a.bridge.slug.localeCompare(b.bridge.slug),
     );
 

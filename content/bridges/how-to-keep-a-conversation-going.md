@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "how to keep a conversation going", volume: 4500, difficulty: 2, traffic_potential: 2800, parent: "how to keep a conversation going" }
   - { keyword: "how to be a better conversationalist", volume: 450, parent: "how to be a good conversationalist" }
   - { keyword: "conversation skills", volume: 300, parent: "conversation skills" }
+serp_checked: "2026-08-23"
+serp_min_dr: 17
+serp_verdict: winnable
 entry_atoms: [active-listening, yes-and, offers, commitment, be-present]
 entry_path: improv-for-life
 status: draft
