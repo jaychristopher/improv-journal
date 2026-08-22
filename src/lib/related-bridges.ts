@@ -113,7 +113,12 @@ export const CURATED_RELATED: Record<string, string[]> = {
     "how-to-be-a-good-listener",
   ],
   "how-to-be-funny": ["how-to-be-a-good-listener", "fear-of-public-speaking"],
-  "stage-fright": ["confidence-building-exercises", "fear-of-public-speaking", "how-to-be-present"],
+  "stage-fright": ["confidence-building-exercises", "public-speaking-tips", "how-to-be-present"],
+  "public-speaking-tips": [
+    "fear-of-public-speaking",
+    "how-to-be-more-articulate",
+    "how-to-read-the-room",
+  ],
   "team-building-activities": ["emotional-safety", "how-to-give-feedback"],
   "how-to-be-more-confident": [
     "confidence-building-exercises",

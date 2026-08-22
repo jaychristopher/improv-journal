@@ -41,6 +41,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "how-to-be-vulnerable",
       "how-to-be-present",
       "how-to-overcome-fear-of-failure",
+      "public-speaking-tips",
       "fear-of-public-speaking",
       "stage-fright",
       "how-to-stop-caring-what-people-think",

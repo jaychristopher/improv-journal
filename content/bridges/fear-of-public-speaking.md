@@ -88,3 +88,5 @@ The performers who look fearless on stage aren't. They're afraid and performing 
 _For the drills: [public speaking and confidence exercises](/confidence-building-exercises), including why calming down is the wrong target._
 
 _For the fear of judgment underneath it, rather than the speaking situation: [how to stop caring what people think](/how-to-stop-caring-what-people-think)._
+
+_Once the fear is handled, the craft is a separate problem: [public speaking tips for the parts you cannot rehearse](/public-speaking-tips)._

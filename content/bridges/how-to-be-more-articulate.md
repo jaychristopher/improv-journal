@@ -88,3 +88,5 @@ Two things that help immediately: **answer the question that was asked** rather 
 **Building without reframing.** `yes-and-chain` requires accepting the previous statement and adding to it, with no restatement and no "yes, but". Most verbal clutter is restatement.
 
 Neighbouring guides: [how to make small talk](/how-to-make-small-talk) for opening, [how to have difficult conversations](/how-to-have-difficult-conversations) for when the pressure is real, and [how to stop overthinking](/how-to-stop-overthinking) if the loop above is the whole problem.
+
+_Standing up in front of a room is a different problem again: [public speaking tips](/public-speaking-tips)._
