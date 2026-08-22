@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (53)
+## Guides (54)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -70,6 +70,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Interpersonal Communication Skills: What Improv Reveals](https://www.physicsofconnection.com/interpersonal-communication-skills): Communication isn't a list of tips — it's a real-time system with specific mechanics. Improv performers practice those mechanics every night.
 - [Psychological Safety: The Physics of Trust](https://www.physicsofconnection.com/psychological-safety): Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust.
 - [Questions to Ask Friends: 120 That Go Somewhere](https://www.physicsofconnection.com/questions-to-ask-friends): Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands.
+- [Questions to Ask in an Interview: 90 That Change the Room](https://www.physicsofconnection.com/questions-to-ask-in-an-interview): In an interview your questions are the one move that levels the status gap. Sorted by what each one gets you, plus the ones that quietly cost you the offer.
 - [The Rules of Improv (And Why Half of Them Are Wrong)](https://www.physicsofconnection.com/rules-of-improv): Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works.
 - [Stage Fright Is Not Your Enemy](https://www.physicsofconnection.com/stage-fright): Stage fright and peak performance have identical physiology. The difference is a single cognitive reframe. Here's the practice that turns fear into fuel.
 - [Team Bonding Activities That Actually Build Trust](https://www.physicsofconnection.com/team-bonding-activities): Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles solved this — here are the activities and the science.
