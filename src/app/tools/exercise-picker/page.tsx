@@ -10,7 +10,7 @@ import { ExercisePickerClient } from "./ExercisePickerClient";
 export const metadata: Metadata = {
   title: pageTitle("Improv Exercise Picker: Find the Right Warm-Up Game for Your Group"),
   description:
-    "Free tool: pick improv warm-up games and exercises by experience level and skill focus. Works for improv classes, team meetings, workshops, and classroom warm-ups.",
+    "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",
   alternates: { canonical: "/tools/exercise-picker" },
   keywords: [
     "improv warm up games",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Improv Exercise Picker: Find the Right Warm-Up Game for Your Group",
     description:
-      "Free tool: pick improv warm-up games and exercises by experience level and skill focus. Works for improv classes, team meetings, workshops, and classroom warm-ups.",
+      "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",
     url: "/tools/exercise-picker",
     type: "website",
     images: ogImages("Improv Exercise Picker: Find the Right Warm-Up Game for Your Group"),

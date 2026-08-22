@@ -16,8 +16,10 @@ import type { BridgeFrontmatter } from "./schema";
 export interface GuideCategory {
   slug: string;
   title: string;
-  /** Shown on the hub and used as the category page's meta description. */
+  /** Shown on the hub. Deliberately terse. */
   description: string;
+  /** The search snippet. Separate because the visible blurb is far too short for one. */
+  metaDescription: string;
   slugs: string[];
 }
 
@@ -26,6 +28,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slug: "personal-growth",
     title: "Personal Growth",
     description: "Overthinking, confidence, creativity, fear, and presence.",
+    metaDescription:
+      "Overthinking, confidence, creativity, fear, and presence — improv practices for the parts of life that go wrong inside your own head.",
     slugs: [
       "how-to-stop-overthinking",
       "how-to-be-more-confident",
@@ -50,6 +54,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slug: "communication",
     title: "Relationships & Communication",
     description: "Listening, conversation, conflict, and connection.",
+    metaDescription:
+      "Listening, conversation, conflict, and connection — what improv knows about the mechanics of being understood and understanding someone else.",
     slugs: [
       "active-listening",
       "active-listening-exercises",
@@ -70,6 +76,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slug: "teams",
     title: "Teams & Leadership",
     description: "Team building, trust, collaboration, feedback, and group dynamics.",
+    metaDescription:
+      "Team building, trust, collaboration, feedback, and group dynamics — improv methods for groups that have to think together under pressure.",
     slugs: [
       "team-building-activities",
       "team-bonding-activities",
@@ -89,6 +97,8 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slug: "improv-skills",
     title: "Improv Skills",
     description: "For improvisers — fundamentals, practice, and getting unstuck.",
+    metaDescription:
+      "For improvisers: fundamentals, practice, and getting unstuck — the craft itself, from first principles to diagnosing a scene that died.",
     slugs: [
       "what-is-improv",
       "rules-of-improv",

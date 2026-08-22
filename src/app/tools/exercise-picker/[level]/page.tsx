@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { getPopulatedCombinations } from "@/lib/exercise-picker";
-import { extractDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, metaDescription, pageTitle } from "@/lib/seo";
 
 import { EXERCISE_FOCUS_MAP, FOCUSES, getLevelBySlug, LEVELS } from "../picker-config";
 
@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!config) return {};
   return {
     title: pageTitle(`${config.title}: Warm-Up Games and Drills`),
-    description: config.description,
+    description: metaDescription(config.description),
     alternates: { canonical: `/tools/exercise-picker/${level}` },
     keywords: config.keywords,
   };

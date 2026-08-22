@@ -54,6 +54,45 @@ export function ogImages(title: string, eyebrow?: string) {
 }
 
 /**
+ * Remove inline emphasis markers, including nested pairs.
+ *
+ * The old single-pass `\*\*([^*]+)\*\*` could not cross an asterisk, so a
+ * bibliographic line like `**Author. *Title.* Publisher, 1979.**` matched
+ * nothing on the bold pass and then matched the wrong pair on the italic
+ * pass, leaving an orphan `*` at the head of the text. Every one of the
+ * sixteen reference pages — the best-ranking cluster on the site — opened its
+ * meta description with that stray asterisk.
+ */
+function stripEmphasis(text: string): string {
+  let out = text;
+  // Nesting unwraps one layer per pass; four is well clear of any depth the
+  // content actually uses.
+  for (let i = 0; i < 4; i += 1) {
+    const next = out.replace(/(\*{1,3}|_{1,3})(?=\S)([\s\S]*?\S)\1/g, "$2");
+    if (next === out) break;
+    out = next;
+  }
+  return out;
+}
+
+/**
+ * Drop a leading paragraph that is entirely bold.
+ *
+ * Reference atoms open with the full citation — author, title, publisher,
+ * year — which is already the page title. Using it as the description spends
+ * the whole SERP snippet restating the headline.
+ */
+function dropBoldLeadParagraph(body: string): string {
+  const blocks = body.split(/\n{2,}/);
+  const firstIndex = blocks.findIndex((block) => block.trim().length > 0);
+  if (firstIndex === -1) return body;
+  if (!/^\*\*[\s\S]+\*\*$/.test(blocks[firstIndex].trim())) return body;
+  // Never leave a page with nothing left to describe it.
+  if (!blocks.slice(firstIndex + 1).some((block) => block.trim().length > 0)) return body;
+  return blocks.slice(firstIndex + 1).join("\n\n");
+}
+
+/**
  * Pull the first prose paragraph out of a markdown document and strip
  * formatting. Unlike `extractDescription`, paragraph boundaries are
  * preserved so a definition is never spliced onto the sentence after it.
@@ -69,9 +108,7 @@ export function leadParagraph(markdownContent: string, maxLen = 300): string {
     .find((block) => block.length > 0 && !block.startsWith(">"));
   if (!paragraph) return "";
 
-  const text = paragraph
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/\*([^*]+)\*/g, "$1")
+  const text = stripEmphasis(paragraph)
     .replace(/`([^`]+)`/g, "$1")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/\s*\n\s*/g, " ")
@@ -140,12 +177,19 @@ export function pageTitle(title: string): string | { absolute: string } {
  * Returns first 1-2 sentences up to maxLen characters.
  */
 export function extractDescription(markdownContent: string, maxLen = 155): string {
-  const text = markdownContent
-    .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
-    .replace(/^#{1,6}\s+.*$/gm, "") // headings
-    .replace(/^\s*\*\*[^*]+\*\*:?\s*/m, "") // leading bold labels
-    .replace(/\*\*([^*]+)\*\*/g, "$1") // bold
-    .replace(/\*([^*]+)\*/g, "$1") // italic
+  const prose = dropBoldLeadParagraph(
+    markdownContent
+      .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
+      .replace(/^#{1,6}\s+.*$/gm, "") // headings
+      .replace(/^\s*\|.*$/gm, ""), // table rows, which collapse into pipe soup
+  );
+  // Anchored to the string start: a bold run mid-document is content, not a
+  // label. The old /m flag let it fire on any line. Keep the label when it is
+  // the whole entry — stripping it there leaves nothing to describe the page.
+  const labelled = prose.replace(/^\s*\*\*[^*\n]+\*\*:?\s*/, "");
+  const body = labelled.trim().length > 0 ? labelled : prose;
+
+  const text = stripEmphasis(body)
     .replace(/`([^`]+)`/g, "$1") // inline code
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // links
     .replace(/\n{2,}/g, " ") // collapse paragraphs
@@ -194,6 +238,35 @@ function fitSentences(text: string, maxLen: number): string {
     out = next;
   }
   return out.trim();
+}
+
+/**
+ * Clamp a hand-written description to the SERP limit at a sentence boundary.
+ *
+ * Descriptions written directly in a route were never measured, so eleven
+ * pages shipped snippets Google cuts mid-word. Trimming to a whole sentence
+ * loses less than the truncation does.
+ */
+export function metaDescription(text: string, maxLen = DESCRIPTION_MAX): string {
+  const trimmed = text.replace(/\s+/g, " ").trim();
+  if (trimmed.length <= maxLen) return trimmed;
+
+  // Whole sentences from the front. The lookbehind tolerates a closing quote
+  // after the stop, so `...a character choice.'` is not split mid-quotation.
+  const sentences = trimmed.split(/(?<=[.!?]["'\u201d\u2019)\]]?)\s+/);
+  let kept = "";
+  for (const sentence of sentences) {
+    const next = kept ? `${kept} ${sentence}` : sentence;
+    if (next.length > maxLen) break;
+    kept = next;
+  }
+
+  // Keeping only a short opening clause says less than a trimmed full snippet
+  // would, and the snippet is the only thing a searcher reads before deciding.
+  if (kept.length >= maxLen * 0.6) return kept;
+  const cut = trimmed.slice(0, maxLen - 1);
+  const space = cut.lastIndexOf(" ");
+  return `${space > maxLen * 0.5 ? cut.slice(0, space) : cut}\u2026`;
 }
 
 /**

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getPickerExercises, getPopulatedCombinations } from "@/lib/exercise-picker";
+import { metaDescription } from "@/lib/seo";
 
 import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
 
@@ -24,7 +25,9 @@ export async function generateMetadata({
   if (!levelConfig || !focusConfig) return {};
 
   const title = `${levelConfig.label} ${focusConfig.label} Improv Exercises`;
-  const description = `${levelConfig.label}-level improv exercises focused on ${focusConfig.label.toLowerCase()}. ${focusConfig.description}`;
+  const description = metaDescription(
+    `${levelConfig.label}-level improv exercises focused on ${focusConfig.label.toLowerCase()}. ${focusConfig.description}`,
+  );
 
   return {
     title,

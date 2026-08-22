@@ -23,11 +23,11 @@ export async function generateMetadata({
   const url = `/topics/${category.slug}`;
   return {
     title: pageTitle(title),
-    description: category.description,
+    description: category.metaDescription,
     alternates: { canonical: url },
     openGraph: {
       title,
-      description: category.description,
+      description: category.metaDescription,
       url,
       type: "website",
       images: ogImages(title, "Guides"),

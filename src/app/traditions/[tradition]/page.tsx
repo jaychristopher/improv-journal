@@ -11,30 +11,40 @@ import {
 } from "@/lib/content";
 import { ogImages, pageTitle } from "@/lib/seo";
 
-const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: string[] }> = {
+// `desc` is the visible tagline and is deliberately terse. `meta` is the search
+// snippet, which has 158 characters to spend and was spending fifty.
+const TRADITION_INFO: Record<
+  string,
+  { label: string; desc: string; meta: string; keyTexts: string[] }
+> = {
   johnstone: {
     label: "Keith Johnstone",
     desc: "Story-first. Status as the engine. Spontaneity through surrender.",
+    meta: "Keith Johnstone's improv: story first, status as the engine of every scene, and spontaneity reached by surrender rather than effort. Impro, 1979.",
     keyTexts: ["Impro (1979)", "Impro for Storytellers (1999)"],
   },
   spolin: {
     label: "Viola Spolin",
     desc: "Present-moment awareness. The body as primary instrument. Point of Concentration.",
+    meta: "Viola Spolin's improv: present-moment awareness, the body as the primary instrument, and Point of Concentration. Improvisation for the Theater, 1963.",
     keyTexts: ["Improvisation for the Theater (1963)"],
   },
   close: {
     label: "Del Close & Charna Halpern",
     desc: "Group mind. Connections across scenes. The Harold as spiritual endeavor.",
+    meta: "Del Close and Charna Halpern's improv: group mind, connections carried across scenes, and the Harold as a spiritual endeavor. Truth in Comedy, 1994.",
     keyTexts: ["Truth in Comedy (1994)"],
   },
   ucb: {
     label: "Upright Citizens Brigade",
     desc: "Game-first. Pattern recognition and heightening. Comedy as the goal.",
+    meta: "The UCB school of improv: game first, pattern recognition and heightening, and comedy as the explicit goal. From the UCB Comedy Improvisation Manual.",
     keyTexts: ["UCB Comedy Improvisation Manual (2013)", "Will Hines Substack"],
   },
   annoyance: {
     label: "Annoyance Theatre / TJ & Dave",
     desc: "Commitment-first. Honest behavior. Trust the relationship.",
+    meta: "The Annoyance and TJ & Dave: commitment first, honest behavior ahead of cleverness, and trusting the relationship. Napier's Improvise, 2004.",
     keyTexts: ["Improvise (Napier, 2004)", "Speed of Life (TJ & Dave, 2015)"],
   },
 };
@@ -53,11 +63,11 @@ export async function generateMetadata({
   if (!info) return {};
   return {
     title: pageTitle(info.label),
-    description: info.desc,
+    description: info.meta,
     alternates: { canonical: `/traditions/${tradition}` },
     openGraph: {
       title: info.label,
-      description: info.desc,
+      description: info.meta,
       url: `/traditions/${tradition}`,
       type: "article",
       images: ogImages(info.label, "Tradition"),
