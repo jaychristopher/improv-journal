@@ -10,6 +10,7 @@ import {
   getParentPath,
   getThreadsForAtom,
 } from "@/lib/content";
+import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
 import { extractDescription } from "@/lib/seo";
@@ -18,6 +19,7 @@ import { ArticleJsonLd } from "./ArticleJsonLd";
 import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
 import { ContextBanner } from "./ContextBanner";
+import { DefinedTermJsonLd } from "./DefinedTermJsonLd";
 import { PodcastJsonLd } from "./PodcastJsonLd";
 import { TableOfContents } from "./TableOfContents";
 import { WhatsNext } from "./WhatsNext";
@@ -122,6 +124,20 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
+      {/* Every named concept is a term of art, not just the 28 typed
+          `definition`. A generic Article tells a crawler nothing about what
+          "Pattern Break" is. */}
+      {isGlossaryType(fm.type) && (
+        <DefinedTermJsonLd
+          term={{
+            id: fm.id,
+            term: fm.title,
+            url: atomUrl,
+            type: fm.type,
+            definition: definitionFromHtml(atom.html),
+          }}
+        />
+      )}
       <ArticleJsonLd
         title={fm.title}
         description={extractDescription(atom.html.replace(/<[^>]+>/g, " "))}

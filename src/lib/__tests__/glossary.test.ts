@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { loadAtoms } from "../content";
+import { getAtomUrl, loadAtoms } from "../content";
 import { loadGlossaryTerms } from "../glossary";
 import { leadParagraph } from "../seo";
 
@@ -36,15 +36,15 @@ describe("leadParagraph", () => {
 });
 
 describe("glossary terms", () => {
-  it("covers every definition atom", async () => {
+  it("still covers every definition atom, and more besides", async () => {
     const atoms = await loadAtoms();
     const definitions = atoms.filter((a) => a.frontmatter.type === "definition");
-    const terms = await loadGlossaryTerms();
+    const ids = new Set((await loadGlossaryTerms()).map((t) => t.id));
 
-    expect(terms).toHaveLength(definitions.length);
-    expect(new Set(terms.map((t) => t.id))).toEqual(
-      new Set(definitions.map((a) => a.frontmatter.id)),
-    );
+    // The glossary used to be exactly these. It is now every named concept,
+    // so this asserts containment rather than equality.
+    for (const atom of definitions) expect(ids.has(atom.frontmatter.id)).toBe(true);
+    expect(ids.size).toBeGreaterThan(definitions.length);
   });
 
   it("gives every term a real definition", async () => {
@@ -55,9 +55,16 @@ describe("glossary terms", () => {
     expect(thin).toEqual([]);
   });
 
-  it("points every term at its canonical vocabulary URL", async () => {
+  it("points every term at the page it actually lives on", async () => {
+    const atoms = await loadAtoms();
+    const byId = new Map(atoms.map((a) => [a.frontmatter.id, a]));
+
     for (const term of await loadGlossaryTerms()) {
-      expect(term.url).toBe(`/practice/vocabulary/${term.id}`);
+      const atom = byId.get(term.id);
+      expect(atom, term.id).toBeDefined();
+      expect(term.url, term.id).toBe(
+        getAtomUrl({ id: atom!.frontmatter.id, type: atom!.frontmatter.type }),
+      );
     }
   });
 

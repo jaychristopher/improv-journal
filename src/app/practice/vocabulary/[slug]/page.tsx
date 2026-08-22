@@ -2,17 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
-import { DefinedTermJsonLd } from "@/components/DefinedTermJsonLd";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
 import { GLOSSARY_URL } from "@/lib/glossary";
-import {
-  atomDescription,
-  conceptTitle,
-  extractDescription,
-  leadParagraph,
-  ogImages,
-  pageTitle,
-} from "@/lib/seo";
+import { atomDescription, conceptTitle, extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -61,14 +53,6 @@ export default async function VocabularyDetailPage({
 
   return (
     <>
-      <DefinedTermJsonLd
-        term={{
-          id: atom.frontmatter.id,
-          term: atom.frontmatter.title,
-          url: getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type }),
-          definition: leadParagraph(atom.content),
-        }}
-      />
       <AtomDetail
         atom={atom}
         breadcrumbs={[
