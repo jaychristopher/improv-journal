@@ -29,7 +29,13 @@ export const RELATED_GUIDE_LIMIT = 4;
 
 /** Editorial pairings that take precedence over computed matches. */
 export const CURATED_RELATED: Record<string, string[]> = {
+  "how-to-be-a-good-friend": [
+    "how-to-make-friends-as-an-adult",
+    "how-to-be-a-good-listener",
+    "how-to-give-feedback",
+  ],
   "how-to-make-friends-as-an-adult": [
+    "how-to-be-a-good-friend",
     "how-to-make-small-talk",
     "how-to-be-vulnerable",
     "how-to-be-a-good-listener",

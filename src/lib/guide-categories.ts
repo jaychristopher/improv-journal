@@ -55,6 +55,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "active-listening-exercises",
       "how-to-be-a-better-conversationalist",
       "how-to-make-friends-as-an-adult",
+      "how-to-be-a-good-friend",
       "how-to-be-a-good-listener",
       "interpersonal-communication-skills",
       "how-to-stop-overthinking-in-a-relationship",
