@@ -19,6 +19,7 @@ import {
   getThreadBySlug,
   loadBridges,
 } from "@/lib/content";
+import { getCategoryForGuide } from "@/lib/guide-categories";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
 import { ogImages, pageTitle } from "@/lib/seo";
@@ -251,6 +252,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
 
   const fm = bridge.frontmatter;
   const relations = BRIDGE_RELATIONS[slug] ?? { exercises: [], threads: [] };
+  const category = getCategoryForGuide(slug);
   const [exercises, entryPath, primaryCta, secondaryCta, relatedGuides] = await Promise.all([
     Promise.all(
       relations.exercises.map(async (id) => {
@@ -311,7 +313,14 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
         datePublished={fm.created}
         dateModified={fm.updated}
       />
-      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: fm.title }]} />
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "Guides", href: "/guides" },
+          ...(category ? [{ label: category.title, href: `/topics/${category.slug}` }] : []),
+          { label: fm.title },
+        ]}
+      />
 
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>

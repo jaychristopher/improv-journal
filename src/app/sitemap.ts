@@ -8,6 +8,7 @@ import {
   loadShows,
   loadThreads,
 } from "@/lib/content";
+import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -49,6 +50,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
   for (const hub of hubs) {
     entries.push({ url: `${SITE_URL}${hub}`, priority: 0.7, changeFrequency: "monthly" });
+  }
+
+  // Guide category hubs
+  for (const category of GUIDE_CATEGORIES) {
+    entries.push({
+      url: `${SITE_URL}/topics/${category.slug}`,
+      priority: 0.8,
+      changeFrequency: "monthly",
+    });
   }
 
   // Tools — exercise picker with level/focus hierarchy
