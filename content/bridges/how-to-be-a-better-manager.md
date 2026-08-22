@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "how to be a better manager", volume: 400, difficulty: 1, traffic_potential: 1800, parent: "how to be a good manager" }
   - { keyword: "how to be a better leader", volume: 700, parent: "leadership" }
   - { keyword: "one on one meetings", volume: 500, parent: "one on one meeting" }
+serp_checked: "2026-08-22"
+serp_min_dr: 59
+serp_verdict: authority
 entry_atoms: [side-coaching, be-supportive, safety-in-the-room, status, ensemble]
 entry_path: improv-for-teams
 primary_problem: "the team defers to you and you cannot tell whether they agree"

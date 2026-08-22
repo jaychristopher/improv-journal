@@ -148,6 +148,8 @@ function scoreBridge(file) {
     difficulty: primary.difficulty,
     trafficPotential: primary.traffic_potential,
     keywords: (data.target_keywords || []).map((k) => String(k.keyword).toLowerCase()),
+    serpVerdict: data.serp_verdict,
+    serpMinDr: data.serp_min_dr,
     words: content.trim().split(/\s+/).length,
   };
 }
@@ -270,8 +272,14 @@ const graded = results.filter((r) => typeof r.difficulty === "number");
 // Volume alone put what-is-improv top of this list, on a query that is
 // answered in the result page and sends almost nobody anywhere.
 const reach = (r) => r.trafficPotential ?? r.volume;
+// Difficulty is a backlink measure, so it says nothing about a page of results
+// held by Slack, Forbes and the NIH. Three pages sat at the top of this list on
+// a difficulty of 1, 5 and 0 with no opening behind any of them. Where the
+// results have been looked at, that reading wins over the score.
+const authorityGated = graded.filter((r) => r.serpVerdict === "authority");
+const thinAndCheap = (r) => r.difficulty <= WINNABLE_KD && r.words < THIN_WORDS;
 const missed = graded
-  .filter((r) => r.difficulty <= WINNABLE_KD && r.words < THIN_WORDS)
+  .filter((r) => thinAndCheap(r) && r.serpVerdict === "winnable")
   .sort((a, b) => reach(b) - reach(a));
 const stranded = graded.filter((r) => r.difficulty > STRANDED_KD).sort((a, b) => b.words - a.words);
 
@@ -281,6 +289,25 @@ const row = (r) =>
 if (missed.length > 0) {
   console.log(`Winnable and thin — where depth pays (${missed.length}):`);
   for (const r of missed.slice(0, 12)) console.log(row(r));
+  console.log();
+}
+
+if (authorityGated.length > 0) {
+  console.log(
+    `Authority-gated — low difficulty, but the results are not open (${authorityGated.length}):`,
+  );
+  for (const r of authorityGated.sort((a, b) => reach(b) - reach(a))) {
+    console.log(
+      `  ${r.id.padEnd(40)} TP ${String(r.trafficPotential ?? "—").padStart(5)}  KD ${String(r.difficulty).padStart(2)}  lowest DR in top 10: ${r.serpMinDr}`,
+    );
+  }
+  console.log();
+}
+
+const unchecked = graded.filter((r) => thinAndCheap(r) && !r.serpVerdict);
+if (unchecked.length > 0) {
+  console.log(`Winnable on difficulty, results not yet checked (${unchecked.length}):`);
+  for (const r of unchecked.sort((a, b) => reach(b) - reach(a)).slice(0, 8)) console.log(row(r));
   console.log();
 }
 

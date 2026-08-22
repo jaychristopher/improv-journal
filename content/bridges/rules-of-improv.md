@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "yes and improv", volume: 600, parent: "yes and" }
   - { keyword: "improv rules", volume: 150, parent: "rules of improv" }
   - { keyword: "improv yes and", volume: 250, parent: "yes and" }
+serp_checked: "2026-08-22"
+serp_min_dr: 23
+serp_verdict: winnable
 entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontaneity]
 entry_path: beginner-foundations
 status: draft

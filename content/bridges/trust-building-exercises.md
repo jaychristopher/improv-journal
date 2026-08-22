@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "team trust exercises", volume: 150, parent: "team trust building activities" }
   - { keyword: "psychological safety exercises", volume: 100, parent: "team trust exercises" }
   - { keyword: "group trust exercises", volume: 80, parent: "trust building exercises for leadership teams" }
+serp_checked: "2026-08-22"
+serp_min_dr: 13
+serp_verdict: winnable
 entry_atoms: [trust, be-thankful, be-supportive, be-honest, offers]
 entry_path: improv-for-teams
 primary_problem: "the team is polite but nobody says the real thing"

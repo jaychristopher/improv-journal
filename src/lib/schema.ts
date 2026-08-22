@@ -186,6 +186,27 @@ export interface BridgeFrontmatter {
   target_keywords: BridgeTargetKeyword[];
   entry_atoms: string[]; // atom IDs this bridge links into
   entry_path: string; // primary path ID
+  /**
+   * What the search results for the primary keyword actually look like.
+   *
+   * Keyword difficulty is computed from the backlinks of the pages ranking,
+   * and on a commercial or institutional query it is a poor guide to whether
+   * this site can enter at all. "how to be a better manager" is difficulty 1
+   * and its first page is Reddit, Forbes, LinkedIn, Indeed and Asana.
+   * "team building activities" is difficulty 5 against Slack, BambooHR and
+   * Gusto. "what is active listening" is difficulty 0 against NIH, Berkeley
+   * and Carnegie Mellon. The audit was sending work at all three.
+   *
+   * `serp_min_dr` is the lowest domain rating observed holding a top-ten
+   * position, and `serp_verdict` is the reading of the whole page of results
+   * rather than that one number — a single low-rated outlier among nine
+   * institutions is not an opening. Absent where the results have not been
+   * looked at, and the audit says so rather than guessing.
+   */
+  serp_checked?: string;
+  serp_min_dr?: number;
+  serp_verdict?: "winnable" | "authority";
+
   primary_problem?: string;
   primary_cta_type?: "thread" | "path" | "exercise" | "challenge";
   primary_cta_target?: string;

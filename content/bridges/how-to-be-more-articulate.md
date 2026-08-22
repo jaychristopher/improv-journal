@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "how to speak more clearly", volume: 300, difficulty: 0, parent: "how to speak more clearly" }
   - { keyword: "how to think before you speak", volume: 350, difficulty: 0, parent: "how to think before you speak" }
   - { keyword: "how to stop stumbling over words", volume: 40, difficulty: 0, parent: "how to stop stumbling over words" }
+serp_checked: "2026-08-22"
+serp_min_dr: 7
+serp_verdict: winnable
 entry_atoms: [be-simple, signal, overcomplication, performing-cleverness, cognitive-bandwidth]
 entry_path: improv-for-life
 primary_problem: "you know what you mean and it comes out as three false starts and a shrug"

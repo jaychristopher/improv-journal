@@ -12,6 +12,9 @@ target_keywords:
   - { keyword: "team building activities for work", volume: 8800, parent: "team building activities" }
   - { keyword: "team bonding activities", volume: 5500, difficulty: 55, parent: "team building activities" }
   - { keyword: "team bonding", volume: 2500, difficulty: 0, parent: "team building activities" }
+serp_checked: "2026-08-22"
+serp_min_dr: 36
+serp_verdict: authority
 entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

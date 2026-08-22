@@ -4,6 +4,9 @@ description: "Control feels safe but kills connection. Improv performers surrend
 target_keywords:
   - { keyword: "how to let go of control", volume: 350, difficulty: 3, traffic_potential: 800, parent: "how to let go" }
   - { keyword: "letting go of control", volume: 200, parent: "how to let go" }
+serp_checked: "2026-08-22"
+serp_min_dr: 53
+serp_verdict: authority
 entry_atoms: [spontaneity, offers, yes-and, discovery, internal-computation, irreversibility]
 entry_path: systems-of-improv
 status: draft

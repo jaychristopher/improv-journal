@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "listening exercises", volume: 400, parent: "active listening exercises" }
   - { keyword: "communication exercises", volume: 200, parent: "communication games" }
   - { keyword: "active listening activities", volume: 150, parent: "active listening activities" }
+serp_checked: "2026-08-22"
+serp_min_dr: 30
+serp_verdict: winnable
 entry_atoms: [active-listening, be-present, offers, internal-computation, signal]
 entry_path: improv-for-life
 primary_problem: "you know you should listen better and practising it never seems to change anything"

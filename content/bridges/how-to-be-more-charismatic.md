@@ -4,6 +4,9 @@ description: "Charisma isn't a trait — it's a specific combination of presence
 target_keywords:
   - { keyword: "how to be more charismatic", volume: 700, difficulty: 5, traffic_potential: 1400, parent: "how to be charismatic" }
   - { keyword: "charisma", volume: 4400, parent: "charisma" }
+serp_checked: "2026-08-22"
+serp_min_dr: 64
+serp_verdict: authority
 entry_atoms: [commitment, status, be-present, active-listening, signal]
 entry_path: improv-for-life
 status: draft

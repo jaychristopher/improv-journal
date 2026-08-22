@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "public speaking exercises", volume: 150, parent: "public speaking activities" }
   - { keyword: "confidence exercises", volume: 100, parent: "confidence building exercises" }
   - { keyword: "self confidence exercises", volume: 80, parent: "confidence building exercises" }
+serp_checked: "2026-08-22"
+serp_min_dr: 1
+serp_verdict: winnable
 entry_atoms: [be-brave, fear-of-failure, hesitation, status, performance-state]
 entry_path: improv-for-life
 primary_problem: "you keep waiting to feel ready and the moment keeps passing"

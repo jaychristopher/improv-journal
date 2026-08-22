@@ -4,6 +4,9 @@ description: "Reading the room isn't intuition — it's a specific set of attent
 target_keywords:
   - { keyword: "how to read the room", volume: 200, difficulty: 1, traffic_potential: 400, parent: "what is the best way to read the room?" }
   - { keyword: "reading the room", volume: 150, parent: "what is the best way to read the room?" }
+serp_checked: "2026-08-22"
+serp_min_dr: 27
+serp_verdict: winnable
 entry_atoms: [audience-relationship, active-listening, ensemble, signal, bandwidth]
 entry_path: improv-for-teams
 status: draft

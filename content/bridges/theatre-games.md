@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "drama games", volume: 800, parent: "theater games" }
   - { keyword: "theatre games for kids", volume: 300, parent: "theater games" }
   - { keyword: "theater games for adults", volume: 20, parent: "acting games" }
+serp_checked: "2026-08-22"
+serp_min_dr: 5
+serp_verdict: winnable
 entry_atoms: [be-present, space-work, physicality, warm-up, side-coaching]
 entry_path: beginner-foundations
 primary_problem: "you need structured drama exercises that build skills rather than just fill time"
