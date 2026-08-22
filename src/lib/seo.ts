@@ -39,6 +39,20 @@ export function publisherRef() {
   return { "@type": "Organization", "@id": ORGANIZATION_ID, name: SITE_NAME, url: SITE_URL };
 }
 
+/**
+ * Share-card image for a page's `openGraph.images`.
+ *
+ * Declaring an `openGraph` block in a page's metadata suppresses the
+ * root-level opengraph-image, so every page that set one previewed with no
+ * image at all. Pointing each block at the /og route restores a card, and
+ * makes it specific to the page rather than a generic site banner.
+ */
+export function ogImages(title: string, eyebrow?: string) {
+  const params = new URLSearchParams({ title });
+  if (eyebrow) params.set("eyebrow", eyebrow);
+  return [{ url: `/og?${params.toString()}`, width: 1200, height: 630, alt: title }];
+}
+
 /** Roughly where Google truncates a title in results. */
 export const TITLE_MAX = 60;
 

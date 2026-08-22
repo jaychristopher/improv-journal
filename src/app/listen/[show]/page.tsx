@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const shows = await loadShows();
@@ -28,6 +28,7 @@ export async function generateMetadata({
       description: show.frontmatter.description,
       url: `/listen/${showSlug}`,
       type: "article",
+      images: ogImages(show.frontmatter.title, "Listen"),
     },
   };
 }

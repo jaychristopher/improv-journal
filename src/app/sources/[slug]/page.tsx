@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomBySlug, getAtomUrl, getSourceBySlug, loadSources } from "@/lib/content";
 import type { AtomType } from "@/lib/schema";
-import { extractDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const sources = await loadSources();
@@ -30,6 +30,7 @@ export async function generateMetadata({
       description: desc,
       url: `/sources/${slug}`,
       type: "article",
+      images: ogImages(source.frontmatter.title, "Source"),
     },
   };
 }

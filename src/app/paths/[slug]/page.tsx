@@ -16,7 +16,7 @@ import {
   loadPaths,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const paths = await loadPaths();
@@ -41,6 +41,7 @@ export async function generateMetadata({
       description: pathData.frontmatter.description,
       url: `/paths/${slug}`,
       type: "article",
+      images: ogImages(pathData.frontmatter.title, "Learning Path"),
     },
   };
 }

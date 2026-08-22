@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadPaths } from "@/lib/content";
 import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendations";
 import type { Audience } from "@/lib/schema";
-import { pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle } from "@/lib/seo";
 
 const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   beginner: {
@@ -59,6 +59,7 @@ export async function generateMetadata({
       description: meta.description,
       url: `/learn/${audience}`,
       type: "article",
+      images: ogImages(meta.title, "Learn"),
     },
   };
 }

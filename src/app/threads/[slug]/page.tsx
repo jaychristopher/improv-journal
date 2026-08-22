@@ -19,7 +19,7 @@ import {
   loadThreads,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -45,6 +45,7 @@ export async function generateMetadata({
       description: desc,
       url: `/threads/${slug}`,
       type: "article",
+      images: ogImages(thread.frontmatter.title, "Lesson"),
     },
   };
 }

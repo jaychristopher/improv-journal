@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Games: The Complete Collection"),
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
       "Every improv game and exercise, organized by level and skill. From warm-ups for beginners to advanced ensemble work.",
     url: "/improv-games",
     type: "website",
+    images: ogImages("Improv Games: The Complete Collection"),
   },
 };
 

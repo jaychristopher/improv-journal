@@ -21,7 +21,7 @@ import {
 } from "@/lib/content";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
-import { pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -38,7 +38,13 @@ export async function generateMetadata({
     description: fm.description,
     keywords: fm.target_keywords?.map((keyword: { keyword: string }) => keyword.keyword),
     alternates: { canonical: `/${slug}` },
-    openGraph: { title: fm.title, description: fm.description, url: `/${slug}`, type: "article" },
+    openGraph: {
+      title: fm.title,
+      description: fm.description,
+      url: `/${slug}`,
+      type: "article",
+      images: ogImages(fm.title, "Guide"),
+    },
   };
 }
 

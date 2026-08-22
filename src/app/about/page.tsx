@@ -7,6 +7,7 @@ import {
   AUTHOR_ID,
   AUTHOR_NAME,
   AUTHOR_PATH,
+  ogImages,
   ORGANIZATION_ID,
   pageTitle,
   SITE_NAME,
@@ -20,7 +21,12 @@ export const metadata: Metadata = {
   title: pageTitle("About This Site"),
   description: DESCRIPTION,
   alternates: { canonical: AUTHOR_PATH },
-  openGraph: { title: "About This Site", description: DESCRIPTION, url: AUTHOR_PATH },
+  openGraph: {
+    title: "About This Site",
+    description: DESCRIPTION,
+    url: AUTHOR_PATH,
+    images: ogImages("About This Site"),
+  },
 };
 
 const TRADITIONS: { slug: string; label: string }[] = [

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { extractDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 import { ExercisePickerClient } from "./ExercisePickerClient";
 
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
       "Free tool: pick improv warm-up games and exercises by experience level and skill focus. Works for improv classes, team meetings, workshops, and classroom warm-ups.",
     url: "/tools/exercise-picker",
     type: "website",
+    images: ogImages("Improv Exercise Picker: Find the Right Warm-Up Game for Your Group"),
   },
 };
 

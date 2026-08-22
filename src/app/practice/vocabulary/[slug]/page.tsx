@@ -5,7 +5,7 @@ import { AtomDetail } from "@/components/AtomDetail";
 import { DefinedTermJsonLd } from "@/components/DefinedTermJsonLd";
 import { getAtomBySlug, getAtomUrl, loadAtoms } from "@/lib/content";
 import { GLOSSARY_URL, leadParagraph } from "@/lib/glossary";
-import { atomDescription, extractDescription, pageTitle } from "@/lib/seo";
+import { atomDescription, extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -32,7 +32,13 @@ export async function generateMetadata({
     title: pageTitle(atom.frontmatter.title),
     description: desc,
     alternates: { canonical: url },
-    openGraph: { title: atom.frontmatter.title, description: desc, url, type: "article" },
+    openGraph: {
+      title: atom.frontmatter.title,
+      description: desc,
+      url,
+      type: "article",
+      images: ogImages(atom.frontmatter.title, "Glossary"),
+    },
   };
 }
 

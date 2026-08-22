@@ -9,7 +9,7 @@ import {
   getAtomUrl,
   getTraditionNames,
 } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle } from "@/lib/seo";
 
 const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: string[] }> = {
   johnstone: {
@@ -60,6 +60,7 @@ export async function generateMetadata({
       description: info.desc,
       url: `/traditions/${tradition}`,
       type: "article",
+      images: ogImages(info.label, "Tradition"),
     },
   };
 }
