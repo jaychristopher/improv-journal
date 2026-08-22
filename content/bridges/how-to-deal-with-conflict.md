@@ -150,3 +150,5 @@ Accept the offer. Add your own. Build from both. That's not compromise — it's 
 **Sources cited:** Johnstone (1979), *Impro*. Gottman (1994), *What Predicts Divorce?* Halpern, Close & Johnson (1994), *Truth in Comedy*. Fisher & Ury (1981), *Getting to Yes*. Hines, *Improv Nonsense* Substack.
 
 _For the specific case of a conversation you have been putting off: [how to have difficult conversations](/how-to-have-difficult-conversations)._
+
+_And for the condition that decides whether disagreement is survivable in the first place: [emotional safety](/emotional-safety)._

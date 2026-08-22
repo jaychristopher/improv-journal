@@ -77,3 +77,5 @@ Letting go of control doesn't mean being passive. Improv performers are intensel
 The paradox resolves when you realize that control was never giving you what you wanted anyway. What you wanted was safety, connection, and good outcomes. Control promises all three and delivers none of them. Surrender — real surrender, with full participation and zero attachment to outcome — delivers all three. Not every time. But far more reliably than the alternative.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind spontaneity, discovery, and why planning undermines your best work, explore the [Systems of Improv](/paths/systems-of-improv) path.*
+
+_The same mechanism, from the inside: [how to stop overthinking](/how-to-stop-overthinking) covers why planning consumes the attention the moment needs._

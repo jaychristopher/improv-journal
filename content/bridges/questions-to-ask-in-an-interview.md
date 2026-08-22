@@ -201,3 +201,5 @@ Each of these fails in a way worth understanding, and most of them fail on statu
 **Playing both ends.** `status-transfer` runs the same scene high, then low, then shifts mid-scene. It is the fastest way to feel the difference between asking a question from a lowered position and asking the same question from a level one — which, in an interview, is most of what separates a good question from an identical one that lands badly.
 
 For the neighbouring territory: [how to have difficult conversations](/how-to-have-difficult-conversations), [how to be more assertive](/how-to-be-more-assertive) for the status work in general, and [how to be a better manager](/how-to-be-a-better-manager) for the same mechanic seen from the other side of the table.
+
+_If you are the one running the room rather than being interviewed, [icebreaker questions for work](/icebreaker-questions-for-work) covers asking in a setting with a power gap._

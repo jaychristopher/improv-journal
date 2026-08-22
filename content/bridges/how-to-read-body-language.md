@@ -189,3 +189,5 @@ Three more, once mirroring stops feeling difficult:
 - **`blind-offer`** — respond to an undefined gesture by deciding what it meant. The hypothesis-and-check discipline, isolated.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, status dynamics, and reading physical signals, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+_Reading one person is the narrow case. For the group version — energy, attention and what a room is ready for — see [how to read the room](/how-to-read-the-room)._

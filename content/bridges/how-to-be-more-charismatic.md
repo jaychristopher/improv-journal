@@ -93,3 +93,5 @@ The fastest path to charisma is the simplest: in your next conversation, make th
 The person you're talking to will feel it immediately. They won't call it charisma — they'll call it "I really like talking to you" or "there's something about you." What they're responding to is the rarest thing in modern life: someone who is actually, fully, present.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind presence, commitment, and status dynamics, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+_The two halves of this in practice: [how to make small talk](/how-to-make-small-talk) for the opening, and [how to read the room](/how-to-read-the-room) for knowing what the room needs before you give it._
