@@ -7,7 +7,7 @@ import type { ExternalLink } from "@/lib/schema";
 import { pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Reading List"),
+  title: pageTitle("Improv Reading List: Books That Shaped the Craft"),
   description:
     "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
   alternates: { canonical: "/library" },

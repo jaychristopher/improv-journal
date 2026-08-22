@@ -155,6 +155,45 @@ export function qualifyIfSiteName(title: string, qualifier: string): string {
 }
 
 /**
+ * Name the domain in a concept page's title tag.
+ *
+ * The 133 concept pages are the best-ranking cluster on the site — Search
+ * Console has them at positions 7 to 11 where the guides sit at 40 to 90 —
+ * and three of them had the word "improv" anywhere in the title. The rest
+ * were bare English words: Blocking, Discovery, Negation, Steering, Callback,
+ * Judgment. Nothing in the strongest on-page signal said which Blocking this
+ * is, and the median title spent 41 of the 60 characters available.
+ *
+ * The qualifier is an appositive rather than a prepositional phrase because
+ * titles like "Recovery: Decay" and "Rigid Core, Malleable Edge" do not take
+ * "in Improv" gracefully, and every one of them takes an em-dashed label.
+ *
+ * The H1 keeps the bare term. Only the title tag carries the qualifier.
+ */
+const CONCEPT_QUALIFIERS: Record<string, string> = {
+  technique: "Improv Technique",
+  definition: "Improv Term",
+  exercise: "Improv Exercise",
+  format: "Improv Format",
+  principle: "Improv Principle",
+  antipattern: "Improv Failure Mode",
+  pattern: "Improv Pattern",
+  insight: "Improv Insight",
+  law: "A Law of Improv",
+  pedagogy: "Improv Teaching Method",
+  framework: "Improv Framework",
+};
+
+export function conceptTitle(title: string, type: string): string {
+  const qualifier = CONCEPT_QUALIFIERS[type];
+  if (!qualifier) return title;
+  // Already says it. Adding a second "improv" reads as keyword stuffing.
+  if (/improv/i.test(title)) return title;
+  const qualified = `${title} \u2014 ${qualifier}`;
+  return qualified.length <= TITLE_MAX ? qualified : title;
+}
+
+/**
  * Title for a page's `metadata.title`.
  *
  * The root layout appends " | The Physics of Connection" to every title. On a

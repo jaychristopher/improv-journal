@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
-import { atomDescription, extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { atomDescription, conceptTitle, extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 const VALID_TYPES = ["antipattern", "pattern", "framework"];
 
@@ -30,7 +30,7 @@ export async function generateMetadata({
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
-    title: pageTitle(displayTitle),
+    title: pageTitle(conceptTitle(displayTitle, atom.frontmatter.type)),
     description: desc,
     alternates: { canonical: url },
     openGraph: {

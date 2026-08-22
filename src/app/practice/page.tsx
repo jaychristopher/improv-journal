@@ -6,7 +6,7 @@ import { loadAtoms } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Practice"),
+  title: pageTitle("Improv Practice: Techniques, Exercises, and Formats"),
   description:
     "Exercises, techniques, show formats, and the vocabulary to name what's happening in scenes and conversations.",
   alternates: { canonical: "/practice" },

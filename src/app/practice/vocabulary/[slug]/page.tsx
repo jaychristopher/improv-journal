@@ -5,7 +5,14 @@ import { AtomDetail } from "@/components/AtomDetail";
 import { DefinedTermJsonLd } from "@/components/DefinedTermJsonLd";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
 import { GLOSSARY_URL } from "@/lib/glossary";
-import { atomDescription, extractDescription, leadParagraph, ogImages, pageTitle } from "@/lib/seo";
+import {
+  atomDescription,
+  conceptTitle,
+  extractDescription,
+  leadParagraph,
+  ogImages,
+  pageTitle,
+} from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -30,7 +37,7 @@ export async function generateMetadata({
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
-    title: pageTitle(displayTitle),
+    title: pageTitle(conceptTitle(displayTitle, atom.frontmatter.type)),
     description: desc,
     alternates: { canonical: url },
     openGraph: {

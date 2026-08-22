@@ -6,7 +6,7 @@ import { getAtomsForTradition, getTraditionNames } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Traditions in Tension"),
+  title: pageTitle("Improv Traditions: Johnstone, Spolin, Close, and UCB"),
   description:
     "Five schools of improv thought — Johnstone, Spolin, Close, UCB, and Annoyance — compared, contrasted, and connected.",
   alternates: { canonical: "/traditions" },

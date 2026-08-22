@@ -7,7 +7,7 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("When It Breaks"),
+  title: pageTitle("When It Breaks: Improv Failure Modes and Recovery"),
   description:
     "Collapse modes, failure patterns, and recovery — the diagnostic vocabulary for naming what went wrong and finding the way back.",
   alternates: { canonical: "/how-it-works/diagnosis" },

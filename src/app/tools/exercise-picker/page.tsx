@@ -8,7 +8,7 @@ import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
 import { ExercisePickerClient } from "./ExercisePickerClient";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Exercise Picker: Find the Right Warm-Up Game for Your Group"),
+  title: pageTitle("Improv Exercise Picker: Find the Right Warm-Up Game"),
   description:
     "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",
   alternates: { canonical: "/tools/exercise-picker" },
@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     "team warm up exercises",
   ],
   openGraph: {
-    title: "Improv Exercise Picker: Find the Right Warm-Up Game for Your Group",
+    title: "Improv Exercise Picker: Find the Right Warm-Up Game",
     description:
       "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",
     url: "/tools/exercise-picker",
     type: "website",
-    images: ogImages("Improv Exercise Picker: Find the Right Warm-Up Game for Your Group"),
+    images: ogImages("Improv Exercise Picker: Find the Right Warm-Up Game"),
   },
 };
 

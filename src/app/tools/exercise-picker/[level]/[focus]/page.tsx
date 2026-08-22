@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getPickerExercises, getPopulatedCombinations } from "@/lib/exercise-picker";
-import { metaDescription } from "@/lib/seo";
+import { metaDescription, pageTitle } from "@/lib/seo";
 
 import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
 
@@ -30,7 +30,7 @@ export async function generateMetadata({
   );
 
   return {
-    title,
+    title: pageTitle(title),
     description,
     alternates: { canonical: `/tools/exercise-picker/${level}/${focus}` },
   };
