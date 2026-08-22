@@ -336,6 +336,21 @@ if (stranded.length > 0) {
   console.log();
 }
 
+// Where the declared potential actually sits. Difficulty alone gave no way to
+// ask this, and the answer changes what is worth doing: about half of it is on
+// pages whose results are held by domains this site cannot reach.
+const bucketTp = (predicate) =>
+  graded.filter(predicate).reduce((sum, r) => sum + (r.trafficPotential ?? 0), 0);
+const openTp = bucketTp((r) => r.serpVerdict === "winnable");
+const gatedTp = bucketTp((r) => r.serpVerdict === "authority");
+const unknownTp = bucketTp((r) => !r.serpVerdict);
+const fmt = (n) => `${Math.round(n / 1000)}k`;
+console.log(
+  `Traffic potential by whether the results are open: open ${fmt(openTp)}, ` +
+    `gated ${fmt(gatedTp)}, not yet checked ${fmt(unknownTp)}`,
+);
+console.log();
+
 // Write JSON report
 const outputDir = path.join(process.cwd(), "output");
 fs.mkdirSync(outputDir, { recursive: true });

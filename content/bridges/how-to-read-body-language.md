@@ -4,6 +4,9 @@ description: "Body language isn't a code to decode — it's a conversation to jo
 target_keywords:
   - { keyword: "how to read body language", volume: 2100, difficulty: 3, traffic_potential: 37000, parent: "body language" }
   - { keyword: "reading body language", volume: 500, parent: "body language" }
+serp_checked: "2026-08-22"
+serp_min_dr: 67
+serp_verdict: authority
 entry_atoms: [active-listening, signal, audience-relationship, status, offers]
 entry_path: improv-for-life
 status: draft
@@ -139,7 +142,7 @@ These are the ones every list includes and nearly always gets wrong.
 - **"Power poses."** The confidence-boosting claim failed to replicate. Taking up space still reads as confidence to observers, which is a different and smaller claim.
 - **Microexpressions.** Real in a laboratory, weak in a noisy room by an untrained observer, and near-useless over video.
 - **Pupil dilation.** Mostly light.
-- **"93 percent of communication is nonverbal."** The most repeated statistic in this field and a misreading of Mehrabian, whose experiments were about single spoken words with conflicting tone — not about communication generally. He said so himself.
+- **"93 percent of communication is nonverbal" — the 7-38-55 rule.** The most repeated statistic in this field and a misreading of Mehrabian, whose experiments were about single spoken words delivered with conflicting tone, and whose 7, 38 and 55 refer only to how much each channel contributed to judging *that* mismatch. Not communication generally. He said so himself.
 
 ### The One Thing That Beats All of It
 

@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "weird questions to ask", volume: 6000, difficulty: 2, parent: "weird questions" }
   - { keyword: "funny questions to ask friends", volume: 1900, parent: "funny questions to ask" }
   - { keyword: "random funny questions", volume: 400, parent: "funny questions to ask" }
+serp_checked: "2026-08-22"
+serp_min_dr: 71
+serp_verdict: authority
 entry_atoms: [obvious-choice, performing-cleverness, game-of-the-scene, heightening, be-honest]
 entry_path: improv-for-life
 primary_problem: "you ask the funny question, everyone laughs at the question, and then nobody has anything to say"

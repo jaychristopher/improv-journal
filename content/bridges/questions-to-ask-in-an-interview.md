@@ -14,6 +14,9 @@ target_keywords:
   - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, parent: "questions to ask at the end of an interview" }
   - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview" }
   - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4, parent: "unique interview questions to ask employer" }
+serp_checked: "2026-08-22"
+serp_min_dr: 78
+serp_verdict: authority
 entry_atoms: [status, initiation, offers, safety-in-the-room, be-brave]
 entry_path: physics-of-connection
 primary_problem: "you get to the end of the interview and the only question you can think of is about the next steps"
