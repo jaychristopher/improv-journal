@@ -61,7 +61,7 @@ The first ten minutes. Specific, easy, and impossible to get wrong.
 - Have you got anything coming up you are looking forward to?
 - What is the last thing you watched that you would tell someone about?
 - What are you reading, if anything?
-- What did you nearly do instead of coming here?
+- What is the last thing you said yes to without thinking about it?
 - What is something you did recently for the first time?
 - What is the weather doing where you grew up?
 - What is your usual order somewhere?
@@ -73,7 +73,7 @@ The transition is one move: pick something they mentioned in passing and ask abo
 
 - What made you pick that?
 - What is the part of that you actually enjoy?
-- What did you think it would be like before you started?
+- What did you expect to dislike and end up enjoying?
 - What is the bit people always get wrong about it?
 - What would you be doing if that had not worked out?
 - What is something you have changed your mind about recently?
@@ -84,7 +84,7 @@ The transition is one move: pick something they mentioned in passing and ask abo
 - What is taking up most of your head at the moment?
 - What is the last thing that genuinely surprised you?
 - What would you do with a year off?
-- What do you do when you cannot sleep?
+- What do you do with an evening that suddenly has nothing in it?
 - What is a rule you have for yourself?
 - What is something you have been putting off?
 - What is something you keep going back and forth on?
@@ -97,12 +97,12 @@ The transition is one move: pick something they mentioned in passing and ask abo
 People are far more forthcoming about the past than the present, and the past is where the explanation for the present lives.
 
 - Where did you grow up, and what was that like?
-- What did you want to be at fourteen?
-- What was your first job?
+- What did you assume adult life would involve that it does not?
+- What is the first thing you remember being trusted with?
 - What did you study, and would you do it again?
 - How did you end up in this line of work?
 - What was the first big decision you made on your own?
-- Who was the teacher who mattered?
+- Who influenced you before you noticed it was happening?
 - What is a place you have lived that you think about?
 - What made you move here?
 - What did your family do?
@@ -134,7 +134,7 @@ By this point the estimate has moved. These probe values without asking for a su
 - What is enough, for you?
 - What is something you keep going back to?
 - What is the best thing you have been part of?
-- What would you want to be doing at seventy?
+- What do you hope is still true about you in twenty years?
 - What do you think you are for?
 - What is a piece of advice you would give that you have not taken?
 - What do you notice that other people do not?
@@ -146,7 +146,7 @@ By this point the estimate has moved. These probe values without asking for a su
 
 Different constraint: several people, short attention, nobody wants to be interviewed. These are answerable in a sentence and everybody can join in.
 
-- What is the worst job anyone here has had?
+- What is the hardest work you have ever done?
 - What is something everyone here has done that nobody would admit to?
 - What is the best thing you have eaten this year?
 - What was everyone doing at twenty?
@@ -155,17 +155,17 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What is something you can do that never comes up?
 - What is something you will not switch away from?
 - What is something small that always works on a bad day?
-- What is the strangest job you have heard of?
-- What is your most-used app that is not messaging?
+- What job did you not know existed until you met someone doing it?
+- What do you always have with you?
 - What is a thing you would happily never do again?
-- What is something you have got much better at?
-- Where would everyone go with a free flight?
+- What has taken you longest to learn?
+- Which place do you keep meaning to go back to?
 - What is something everyone here learned the hard way?
 - What is a hill you would die on?
 - What is the last photo on your phone, described not shown?
 - What is something you learned this year?
 - What is the best thing about where you live?
-- What did everyone nearly do instead of coming out?
+- What does an ordinary Sunday look like for you?
 
 ## Questions That Do Not Work on a Stranger
 

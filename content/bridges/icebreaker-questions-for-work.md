@@ -52,7 +52,7 @@ The second rule is a filter. A workplace question should not touch income, famil
 
 The problem here is not awkwardness, it is boredom. These assume familiarity and go somewhere new.
 
-- What is something you have got noticeably better at this year?
+- What has got easier this year that used to take effort?
 - What part of your job would you keep if you could only keep one?
 - What is a thing you are good at that nobody here has seen?
 - What is the last thing you learned that surprised you?
@@ -82,13 +82,13 @@ Nobody knows anybody. Keep the answers short, concrete, and impossible to get wr
 - What is the first job you ever had?
 - What is on your desk that is not work?
 - What is your usual coffee or tea order?
-- What is something you are currently trying to get better at?
+- What is the most unusual thing a previous job taught you?
 - What did you think this industry was like before you joined it?
 - What is a thing you are known for among your friends?
 - What is the last thing you watched or read that you would recommend?
 - What is your commute, and what do you do during it?
 - What is a place you would go back to?
-- What did you want to be when you were fourteen?
+- What is the best piece of work advice you have ignored?
 - What is something small you are good at?
 - What is a hobby you have had for longer than this job?
 - What is the best thing you have eaten this month?

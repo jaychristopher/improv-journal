@@ -111,7 +111,7 @@ Everyone can answer these in a sentence, which is what stops one person taking t
 
 - What is everyone's worst job?
 - What is the best thing anyone has eaten this week?
-- What did everyone want to be at fourteen?
+- What did everyone assume they would be doing by now?
 - What is a small thing that improves any day?
 - Where would everyone go with a free flight tomorrow?
 - What is something you have never got round to learning?
@@ -134,10 +134,10 @@ The problem with old friends is not awkwardness, it is that the conversation def
 - What are you avoiding at the moment?
 - What have you changed your mind about since I last saw you?
 - What is taking up most of your head?
-- What is a decision you are sitting on?
+- What is everyone putting off this week?
 - What is going well that you have not mentioned because it is small?
 - What would you do with a free month?
-- What is something you have stopped doing that you miss?
+- What did everyone give up that they still think about?
 - Who have you been thinking about that you have not contacted?
 - What is the last thing that properly surprised you?
 - What is the best thing that has happened since we spoke?

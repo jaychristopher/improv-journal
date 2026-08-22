@@ -37,7 +37,7 @@ A question is an `offers` — a thing you hand your friend to build with. That r
 
 You have to go first.
 
-`vulnerability` on this site is being seen without armour, and it is not something you can ask someone else to do on your behalf. A question that asks for more openness than you have offered reads as an interview, and people answer interviews carefully.
+`vulnerability` on this site is being seen without armour, and it is not a thing one person can request from another while declining to do it themselves. Ask for more than you have put in and the exchange turns into an interview, which people answer accurately and tell you nothing.
 
 The move is small: answer your own question first, or answer it immediately after they do, at the same depth. `trust` is an accumulated estimate built from many small exchanges of exactly this kind — one person goes slightly further than is comfortable, nothing bad happens, and the estimate updates. Asking without offering never updates anything.
 
@@ -47,8 +47,8 @@ Low stakes, specific, and answerable by anyone. Use these to start, not to finis
 
 - What's in your fridge that shouldn't be?
 - What did you last look up on your phone?
-- What's the best thing you've eaten this month?
-- What's your most-used app that isn't messaging?
+- What's the last thing that genuinely delighted you?
+- What have you been quietly obsessed with lately?
 - What did you do last Sunday, hour by hour?
 - What's something small you've bought recently that you love?
 - What's your commute like?
@@ -70,9 +70,9 @@ Low stakes, specific, and answerable by anyone. Use these to start, not to finis
 
 "How's work" produces a status report. These produce a conversation.
 
-- What's the part of your job you'd keep if you could only keep one?
+- What part of your week are you actually looking forward to?
 - Who at work do you actually like?
-- What's a thing you're good at that nobody notices?
+- What do you do better than you let on?
 - What is the thing on your list that keeps moving to tomorrow?
 - What's been taking up the most space in your head lately?
 - What's a decision you're sitting on?
@@ -120,18 +120,18 @@ Memory questions are the cheapest depth there is. Nobody has to be clever, and e
 
 Do not open with these. They work once the room is warm and you have already answered something at this level yourself.
 
-- What's something you're proud of that you never get to mention?
+- What have you done that never comes up?
 - Where do you think you're hardest on yourself?
 - What do people assume about you that is nearly right?
-- What's a compliment you don't believe?
-- What's something you've forgiven yourself for?
+- What do people thank you for that costs you nothing?
+- What have you stopped being hard on yourself about?
 - What's something you haven't?
 - Whose opinion of your work do you actually want?
-- What do you think you're avoiding finding out?
-- What would you want said about you, honestly, not kindly?
+- What question have you been putting off asking someone?
+- What would you want me to say if someone asked what you're like?
 - What is something you have done recently that you would do again?
-- What's a fear you have that you know is disproportionate?
-- What's something you want that feels embarrassing to want?
+- What worries you far more than it should?
+- What have you wanted for years and never said out loud?
 - Where in your life are you pretending things are fine?
 - What's the thing you'd change about how you were raised?
 - What do you do when something has annoyed you and you cannot say so?
@@ -158,7 +158,7 @@ The conditions matter more than the questions. Side by side, no eye contact, and
 - What do you think you're wrong about right now?
 - Is there anything you'd want to be famous for?
 - What's the closest you've come to a completely different life?
-- What's a small thing that would make your life noticeably better?
+- What would you change about an ordinary week?
 - What's something you'd never do again?
 - What do you think is the point?
 - What's something you've never said out loud because it sounds stupid?

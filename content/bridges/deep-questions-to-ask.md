@@ -62,7 +62,7 @@ Each rung is easier if you have just answered the same question. Skipping three 
 
 The cheapest depth available. Start here.
 
-- What was your bedroom like at twelve?
+- What did you believe about yourself at twelve that took years to shake?
 - What did you believe for far too long?
 - Who did you want to be like?
 - What was the first big thing that went wrong?
@@ -191,8 +191,8 @@ These are only for a relationship with history. Asked too early they are intrusi
 - When have you been disappointed in me?
 - What do you think I am wasting?
 - What would you want me to do if you stopped being able to ask?
-- What have I got wrong about your life?
-- Is there anything you have needed from me that you did not get?
+- What part of your life do people consistently misread?
+- What have you needed from people and never known how to ask for?
 - What do you think I am afraid of?
 - What would you tell me if you knew I would not get defensive?
 - What is something you have decided not to tell me?

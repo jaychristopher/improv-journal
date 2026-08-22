@@ -99,7 +99,7 @@ Reliable, because everybody has an answer and nobody has to perform.
 - What did you steal from your parents?
 - What is the pettiest thing your siblings still hold against you?
 - What was the worst meal you were made to finish?
-- What did you want to be at fourteen, and how did that go?
+- What is the most confident you have ever been while completely wrong?
 - What is the strangest thing your grandparents said with total confidence?
 - What was the thing you were unaccountably obsessed with at nine?
 - What is a birthday present that went wrong?
@@ -146,11 +146,11 @@ These open a pattern rather than closing with a punchline. `game-of-the-scene` i
 - Who here has the strangest family tradition?
 - What is the worst haircut in this room, historically?
 - What is a thing everyone here pretends to understand?
-- What is the most inconvenient place anyone has fallen asleep?
+- What is the most inconvenient place anyone here has got lost?
 - What is the pettiest argument anyone here has won?
 - What is everyone's worst holiday story?
 - What is a thing we would all be terrible at?
-- What is the strangest job anyone here has heard of?
+- What is the most pointless rule anyone here has had to follow?
 - What is the worst nickname in this room?
 - What is a rule everyone here breaks?
 - What is something everyone here owns and cannot explain?
