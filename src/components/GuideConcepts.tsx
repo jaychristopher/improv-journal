@@ -23,13 +23,15 @@ export function GuideConcepts({ concepts }: { concepts: GuideConcept[] }) {
       <ul className="space-y-2">
         {concepts.map((concept) => (
           <li key={concept.id}>
-            <Link
-              href={concept.url}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
-            >
-              <span className="block text-sm font-medium">{concept.title}</span>
+            <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-3 transition-colors">
+              <Link
+                href={concept.url}
+                className="block text-sm font-medium after:absolute after:inset-0"
+              >
+                {concept.title}
+              </Link>
               <span className="text-foreground/60 mt-1 block text-xs">{concept.description}</span>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

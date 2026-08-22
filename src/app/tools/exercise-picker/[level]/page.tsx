@@ -115,12 +115,15 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       {/* Exercise list */}
       <div className="space-y-4">
         {exercises.map((exercise) => (
-          <Link
+          <div
             key={exercise.id}
-            href={exercise.href}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 group block rounded-xl border p-6 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 group relative rounded-xl border p-6 transition-colors"
           >
-            <h2 className="font-semibold group-hover:underline">{exercise.title}</h2>
+            <h2 className="font-semibold group-hover:underline">
+              <Link href={exercise.href} className="after:absolute after:inset-0">
+                {exercise.title}
+              </Link>
+            </h2>
             <p className="text-foreground/50 mt-1 text-sm">{exercise.description}</p>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {exercise.focuses.slice(0, 3).map((f) => (
@@ -132,7 +135,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
                 </span>
               ))}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 

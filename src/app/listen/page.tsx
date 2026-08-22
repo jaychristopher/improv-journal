@@ -88,17 +88,20 @@ export default async function ListenPage() {
         <h2 className="mb-4 text-lg font-semibold">Three Shows</h2>
         <div className="space-y-4">
           {showsWithCounts.map((s) => (
-            <Link
+            <div
               key={s.id}
-              href={`/listen/${s.id}`}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+              className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
             >
               <div className="flex items-baseline justify-between">
-                <h3 className="font-semibold">{s.title}</h3>
+                <h3 className="font-semibold">
+                  <Link href={`/listen/${s.id}`} className="after:absolute after:inset-0">
+                    {s.title}
+                  </Link>
+                </h3>
                 <span className="text-foreground/40 text-sm">{s.episodeCount} episodes</span>
               </div>
               <p className="text-foreground/50 mt-1 text-sm">{s.description}</p>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

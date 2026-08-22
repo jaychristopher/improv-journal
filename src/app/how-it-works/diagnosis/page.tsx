@@ -55,16 +55,22 @@ export default async function DiagnosisPage() {
           <h2 className="mb-4 text-lg font-semibold">Frameworks</h2>
           <div className="space-y-3">
             {frameworks.map((a) => (
-              <Link
+              <div
                 key={a.frontmatter.id}
-                href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
+                className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors"
               >
-                <h3 className="font-medium">{a.frontmatter.title}</h3>
+                <h3 className="font-medium">
+                  <Link
+                    href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
+                    className="after:absolute after:inset-0"
+                  >
+                    {a.frontmatter.title}
+                  </Link>
+                </h3>
                 <p className="text-foreground/60 mt-1 text-sm">
                   {leadParagraph(stripLeadLabel(a.content), 180)}
                 </p>
-              </Link>
+              </div>
             ))}
           </div>
         </section>

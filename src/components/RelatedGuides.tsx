@@ -21,13 +21,15 @@ export function RelatedGuides({ guides }: { guides: RelatedGuide[] }) {
       <ul className="grid gap-2 sm:grid-cols-2">
         {guides.map((guide) => (
           <li key={guide.slug}>
-            <Link
-              href={`/${guide.slug}`}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 block h-full rounded-lg border p-3 transition-colors"
-            >
-              <span className="block text-sm font-medium">{guide.title}</span>
+            <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative h-full rounded-lg border p-3 transition-colors">
+              <Link
+                href={`/${guide.slug}`}
+                className="block text-sm font-medium after:absolute after:inset-0"
+              >
+                {guide.title}
+              </Link>
               <span className="text-foreground/60 mt-1 block text-xs">{guide.description}</span>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

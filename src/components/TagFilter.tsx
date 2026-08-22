@@ -86,16 +86,19 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
       {/* Results */}
       <div className="space-y-3">
         {filtered.map((item) => (
-          <Link
+          <div
             key={item.id}
-            href={item.href}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors"
           >
-            <h3 className="text-sm font-medium">{item.title}</h3>
+            <h3 className="text-sm font-medium">
+              <Link href={item.href} className="after:absolute after:inset-0">
+                {item.title}
+              </Link>
+            </h3>
             {showPreview && item.preview && (
               <p className="text-foreground/40 mt-1 line-clamp-2 text-xs">{item.preview}</p>
             )}
-          </Link>
+          </div>
         ))}
         {filtered.length === 0 && (
           <p className="text-foreground/30 py-4 text-sm">No matches. Try different filters.</p>

@@ -94,13 +94,15 @@ export default async function GuideCategoryPage({
       <ul className="space-y-4">
         {guides.map((guide) => (
           <li key={guide.slug}>
-            <Link
-              href={`/${guide.slug}`}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
-            >
-              <span className="block font-semibold">{guide.title}</span>
+            <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors">
+              <Link
+                href={`/${guide.slug}`}
+                className="block font-semibold after:absolute after:inset-0"
+              >
+                {guide.title}
+              </Link>
               <span className="text-foreground/60 mt-1 block text-sm">{guide.description}</span>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>
