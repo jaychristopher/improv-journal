@@ -78,6 +78,42 @@ In conversation, this is the person who waits for an opening to deliver their pr
 
 The distinction: **funny WITH someone** (responding to what's happening between you) vs. **funny AT someone** (performing for an audience, even an audience of one). The first builds connection. The second interrupts it.
 
+## How to Practise This
+
+Everything above is a mechanism, and mechanisms are only useful if you can rehearse them. These are the drills improvisers use, and every one works alone or in an ordinary conversation.
+
+**Say the first thing, once a day.** Pick one low-stakes exchange — a colleague asking how your weekend was, a friend texting — and answer with your first response instead of your second. Not a bolder response. The first one. `first-line-drill` is the formal version: commit to an opening before you know where it goes.
+
+**Practise being specific about something dull.** Take the least interesting thing that happened today and describe it in one sentence with one exact detail. Not funnier — more precise. This is the whole trick behind the boss-on-Zoom line above, and it trains the muscle that makes honesty land.
+
+**Use the last word.** In your next conversation, build your reply off the final thing your partner said rather than the point you were waiting to make. `last-word-response` drills exactly this, and it makes composing-while-they-talk impossible.
+
+**Do a scene with no room to be clever.** `one-word-scene` limits you to a single word at a time, so there is no sentence to craft. `emotional-honesty-scene` removes the option of hiding behind a joke. Both are two-person exercises and both take five minutes.
+
+Expect the first week to feel worse, not better. You are removing the thing you have been using to feel safe in conversations, and the replacement takes a little while to arrive.
+
+## Why It Isn't Landing
+
+When someone follows all of this and it still falls flat, the cause is usually one of four, and they need different fixes.
+
+**You are still writing ahead.** If you notice you were composing while they were speaking, that is `internal-computation` — the mechanism at the top of this page, showing up in practice. The fix is attention, not effort. Go back to the last-word drill.
+
+**You are grading yourself mid-sentence.** `judgment` is evaluating the move while making it. It reliably produces a hedged, half-committed version of a line that would have worked delivered whole. Commit first, evaluate afterwards.
+
+**You are giving too much.** `overcomplication` is flooding the exchange with more than it can carry — three ideas where one would land. The specific detail works because it is one detail. Two is usually one too many.
+
+**You are performing rather than responding.** Covered above as `performing-cleverness`, and it is the most common of the four. The test is simple: did the line build on what just happened, or could you have said it to anyone?
+
+Diagnosis matters more than volume here. Repeating an attempt that fails for the third reason will not fix it, and most people just try harder in the same direction.
+
+## Being Funny at Work, and With People You Don't Know
+
+The mechanism does not change with context, but the stakes do — and stakes are what activate the censor.
+
+At work the risk is real rather than imagined, so the useful adjustment is not "be braver" but "be specific about safe things." Precise observation about a shared, neutral situation — the meeting, the process, the coffee machine — carries almost no risk and produces most of the effect. The honesty that gets people in trouble is honesty aimed at people. Aim it at situations.
+
+With strangers, the constraint is that you have no shared history to be specific about. So build one fast: the only material you both have is what is happening right now, in this room. That is why observational humour works with people you have just met, and why a rehearsed anecdote usually does not.
+
 ## The Honest Caveat
 
 "How to be funny in conversation" is genuinely different from "how to be funny on stage." Stage comedy has format conventions (the Harold, the sketch, the set), audience dynamics (group laughter, stage energy), and a performance context that conversation doesn't. What transfers: honesty, specificity, pattern recognition, not forcing it. What doesn't: timing structures, escalation patterns, audience management techniques.
