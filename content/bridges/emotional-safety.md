@@ -22,13 +22,13 @@ The difference between improv ensembles and corporate teams isn't that improvise
 
 Emotional safety is not the absence of conflict. It's not "everyone is nice." It's not a safe space where nothing uncomfortable happens. In fact, the opposite: emotionally safe environments are where people can be *more* uncomfortable, because the discomfort is contained by trust.
 
-In an improv ensemble, emotional safety means:
+In an improv `ensemble`, emotional safety means:
 - You can make a bold choice and know your partner will support it, even if it's weird
 - You can fail publicly and know the group will help you recover, not punish you
 - You can express a real emotion and know it will be received, not dismissed
 - You can disagree and know the relationship will survive it
 
-The key word is **know** — not hope, not assume. Know, through repeated experience, that the group will catch you. That knowing is built through specific behaviors, practiced until they're automatic.
+The key word is **know** — not hope, not assume. Know, through repeated experience, that the group will catch you. That accumulated knowing is `trust`, and the condition it produces is what improvisers call `safety-in-the-room`. That knowing is built through specific behaviors, practiced until they're automatic.
 
 ## The Five Practices
 
@@ -70,11 +70,37 @@ In improv, this means: experienced performers actively set up newer ones. They c
 
 **For teams:** Notice who hasn't spoken. Create explicit invitations: "I'd love to hear your perspective on this." Don't cold-call people who are anxious about speaking — instead, create low-pressure channels (written input before discussion, small-group breakouts, async contributions).
 
+## Emotional Safety and Psychological Safety
+
+Anyone reading about this at work runs into both terms, usually without being told how they relate. They are not synonyms and the difference is practical.
+
+**Psychological safety** is the narrower and more precisely defined of the two. Amy Edmondson's formulation is a shared belief held by members of a team that the team is safe for interpersonal risk taking — and the risk she means is largely the risk of *speaking up*. Asking the obvious question, admitting the mistake, disagreeing with the senior person. It is a team-level construct, it is measurable, and it is about voice.
+
+**Emotional safety** is wider. It covers whether feeling itself can be present in the room — whether you can be visibly frustrated, uncertain or affected without it being filed away and used later. A team can have reasonable psychological safety and poor emotional safety: people say the difficult thing, but they say it in a flattened register, and anything that reads as feeling gets treated as unprofessional.
+
+The relationship runs one way. Emotional safety tends to produce psychological safety, because a group that can absorb feeling can certainly absorb a dissenting question. The reverse does not reliably hold.
+
+What matters for practice is that both are built the same way, and not by declaring them. They are estimates people form from repeated small exchanges about whether exposure is survivable here. That is why the practices below are small and frequent rather than large and annual — and it is the same mechanism described in [psychological safety](/psychological-safety).
+
+## How to Practise It
+
+The five practices are behaviours, and behaviours are easier to adopt after rehearsing them somewhere the stakes are low. These are the drills for it, in the order to run them.
+
+**Start with being received.** `gift-giving` hands over an undefined object that the receiver names and values. It rehearses the first practice — supporting the offer even when it is strange — with nothing riding on it.
+
+**Then being noticed.** `mirroring` demands precise attention on one person, which is uncomfortable for about ninety seconds and then is not.
+
+**Then being wrong in public.** `fracture-repair-drill` establishes a rupture deliberately and repairs it without stopping. This is the second practice — making failure survivable — and a group that has done it has evidence rather than reassurance.
+
+**Only then, honesty.** `emotional-honesty-scene` asks for real signal rather than a performed version. Run early it produces polite compliance; run late it does the thing.
+
+The full sequence, with what each isolates and what to watch for, is in [trust building exercises](/trust-building-exercises).
+
 ## What Emotional Safety Is Not
 
 It's not:
 - **Agreement.** Safe teams disagree more, not less. They can disagree because the relationship is strong enough to hold tension.
-- **Comfort.** Safe teams do harder things because they trust each other to handle difficulty.
+- **Comfort.** Safe teams do harder things because they trust each other to handle difficulty. `vulnerability` is the point of it, not a side effect.
 - **Niceness.** Safe teams give honest feedback because they know the person receiving it won't be destroyed by it.
 - **A policy.** You can't memo emotional safety into existence. It's built through repeated micro-interactions, not through declarations.
 
