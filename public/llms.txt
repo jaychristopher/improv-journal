@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (46)
+## Guides (47)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -52,6 +52,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [How to Give Feedback That Actually Changes Behavior](https://www.physicsofconnection.com/how-to-give-feedback): Most feedback describes problems without creating conditions for change. Design experiences where the right behavior emerges naturally, then name it.
 - [How to Have Difficult Conversations: The Improv Approach](https://www.physicsofconnection.com/how-to-have-difficult-conversations): Difficult conversations fail when people plan scripts and defend positions. Improv teaches another way: listen first, respond to what's real.
 - [How to Let Go of Control: What Improv Teaches](https://www.physicsofconnection.com/how-to-let-go-of-control): Control feels safe but kills connection. Improv performers surrender it every night — and the results beat anything they could have planned.
+- [How to Make Friends as an Adult: The Ensemble Problem](https://www.physicsofconnection.com/how-to-make-friends-as-an-adult): Adults don't lose the skill of making friends. They lose the conditions it needs — repeated contact and shared low-stakes activity. Both can be rebuilt.
 - [How to Make Small Talk: The Improv Method](https://www.physicsofconnection.com/how-to-make-small-talk): Small talk fails when you treat it as performance. Improv reveals it's actually a collaboration — and the skills that make it work are learnable.
 - [How to Overcome Fear of Failure: The Improv Reframe](https://www.physicsofconnection.com/how-to-overcome-fear-of-failure): Fear of failure is really fear of irreversibility — the belief a wrong move is permanent. Improv's insight: everything is an offer to build on.
 - [How to Read Body Language: What Improv Reveals](https://www.physicsofconnection.com/how-to-read-body-language): Body language isn't a code to decode — it's a conversation to join. Improv performers read bodies in real time under pressure. Here's what they've learned.
