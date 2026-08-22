@@ -141,15 +141,17 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
           <ul className="space-y-2">
             {informs.map((a) => (
               <li key={a.frontmatter.id}>
-                <Link
-                  href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
-                >
-                  <span className="block text-sm font-medium">{a.frontmatter.title}</span>
+                <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-3 transition-colors">
+                  <Link
+                    href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
+                    className="block text-sm font-medium after:absolute after:inset-0"
+                  >
+                    {a.frontmatter.title}
+                  </Link>
                   <span className="text-foreground/60 mt-1 block text-xs">
                     {leadParagraph(stripLeadLabel(a.content), 150)}
                   </span>
-                </Link>
+                </div>
               </li>
             ))}
           </ul>

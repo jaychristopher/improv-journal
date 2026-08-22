@@ -73,7 +73,7 @@ Low stakes, specific, and answerable by anyone. Use these to start, not to finis
 - What's the part of your job you'd keep if you could only keep one?
 - Who at work do you actually like?
 - What's a thing you're good at that nobody notices?
-- What are you avoiding at the moment?
+- What is the thing on your list that keeps moving to tomorrow?
 - What's been taking up the most space in your head lately?
 - What's a decision you're sitting on?
 - What would you do with an unexpected free week?
@@ -98,23 +98,23 @@ Memory questions are the cheapest depth there is. Nobody has to be clever, and e
 - What was your bedroom like when you were twelve?
 - Who was your first proper friend?
 - What was your family's rule that other families didn't have?
-- What did you want to be at fourteen?
-- What was your first job's uniform?
-- Where did you go on holiday as a child?
-- What was the first thing you bought with your own money?
+- What did you assume your life would look like by now?
+- What did you have to wear to your first job?
+- Where did your family always end up going?
+- What was the first thing you saved up for?
 - What subject were you unexpectedly good at?
-- Who was the teacher who mattered?
+- Who taught you something you still use?
 - What did your parents argue about?
 - What was the first film that frightened you?
-- What did you do all summer when you were ten?
+- Where did you go when you wanted to be on your own?
 - What's a place you've driven past a hundred times and never stopped?
 - What was the last thing you owned that fell apart?
 - Which of your childhood friends would you most like an update on?
-- What did you believe for far too long?
-- What was the first big thing that went wrong?
+- What did you accept as normal that turned out not to be?
+- What was the first thing you had to sort out on your own?
 - What did your house smell like?
 - What was the first thing you were properly obsessed with?
-- Who did you want to be like?
+- Who did you copy without realising it?
 
 ## Questions That Need Some Trust
 
@@ -122,22 +122,22 @@ Do not open with these. They work once the room is warm and you have already ans
 
 - What's something you're proud of that you never get to mention?
 - Where do you think you're hardest on yourself?
-- What do you think people get wrong about you?
+- What do people assume about you that is nearly right?
 - What's a compliment you don't believe?
 - What's something you've forgiven yourself for?
 - What's something you haven't?
-- Who do you compare yourself to?
+- Whose opinion of your work do you actually want?
 - What do you think you're avoiding finding out?
 - What would you want said about you, honestly, not kindly?
-- When did you last feel genuinely competent?
+- What is something you have done recently that you would do again?
 - What's a fear you have that you know is disproportionate?
 - What's something you want that feels embarrassing to want?
 - Where in your life are you pretending things are fine?
 - What's the thing you'd change about how you were raised?
-- What do you do with anger?
+- What do you do when something has annoyed you and you cannot say so?
 - What's something you've never told anyone because it's too small to mention?
-- Who do you owe an apology to?
-- What are you grieving that nobody would call grief?
+- What is something you would put right if it cost you nothing?
+- What have you stopped mentioning because people stopped asking?
 - What's the loneliest you've been?
 - What would you need in order to feel less like that?
 
@@ -145,7 +145,7 @@ Do not open with these. They work once the room is warm and you have already ans
 
 The conditions matter more than the questions. Side by side, no eye contact, and nowhere else to be — people say things in a car at night that they would not say across a table.
 
-- What do you think happens when we die?
+- What do you believe that you have never had to defend?
 - What's the best decision you've ever made by accident?
 - If you had to move abroad next month, where?
 - What's something you believe that most people you know don't?

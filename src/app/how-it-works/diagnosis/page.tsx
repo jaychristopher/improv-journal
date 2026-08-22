@@ -83,16 +83,20 @@ export default async function DiagnosisPage() {
         </p>
         <div className="space-y-3">
           {antipatterns.map((a) => (
-            <Link
+            <div
               key={a.frontmatter.id}
-              href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-3 transition-colors"
+              className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-3 transition-colors"
             >
-              <span className="block text-sm font-medium">{a.frontmatter.title}</span>
+              <Link
+                href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
+                className="block text-sm font-medium after:absolute after:inset-0"
+              >
+                {a.frontmatter.title}
+              </Link>
               <span className="text-foreground/60 mt-1 block text-xs">
                 {leadParagraph(stripLeadLabel(a.content), 180)}
               </span>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

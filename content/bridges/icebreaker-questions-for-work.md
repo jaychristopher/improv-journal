@@ -82,7 +82,7 @@ Nobody knows anybody. Keep the answers short, concrete, and impossible to get wr
 - What is on your desk that is not work?
 - What is your usual coffee or tea order?
 - What is something you are currently trying to get better at?
-- How did you end up in this line of work?
+- What did you think this industry was like before you joined it?
 - What is a thing you are known for among your friends?
 - What is the last thing you watched or read that you would recommend?
 - What is your commute, and what do you do during it?

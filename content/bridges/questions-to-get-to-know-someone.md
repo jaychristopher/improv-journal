@@ -48,11 +48,11 @@ The first ten minutes. Specific, easy, and impossible to get wrong.
 - What brought you here tonight?
 - How do you know the people here?
 - Where did you come from to get here?
-- Have you been to one of these before?
-- What have you got on this week?
+- Is this the sort of thing you usually come to?
+- What does the rest of your week look like?
 - Where do you live, and how did you end up there?
 - What is the best thing about that part of town?
-- What did you do today before this?
+- How has your day been up to now?
 - What is the last thing you ate that you would recommend?
 - Are you a morning person, honestly?
 - What is your commute?
@@ -86,7 +86,7 @@ The transition is one move: pick something they mentioned in passing and ask abo
 - What do you do when you cannot sleep?
 - What is a rule you have for yourself?
 - What is something you have been putting off?
-- What is a decision you are sitting on?
+- What is something you keep going back and forth on?
 - What is the last thing you made?
 - What is something you have got wrong about yourself?
 - What do you do that makes you lose track of time?
@@ -107,12 +107,12 @@ People are far more forthcoming about the past than the present, and the past is
 - What did your family do?
 - What was the first thing you bought with your own money?
 - What is something you were obsessed with as a kid?
-- What did you do all summer when you were ten?
+- What did you do after school before anyone got home?
 - What is a job you had that you would not do again?
 - What is the longest you have stayed anywhere?
 - What was the last thing you learned properly rather than dabbled in?
 - What did you nearly become?
-- Who did you want to be like?
+- Who did you look up to that you would not now?
 - What is a risk you took that worked?
 - What is one that did not?
 
@@ -148,18 +148,18 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What is the worst job anyone here has had?
 - What is something everyone here has done that nobody would admit to?
 - What is the best thing you have eaten this year?
-- What did everyone want to be at fourteen?
+- What was everyone doing at twenty?
 - What is a film everyone else loves and you do not?
 - What is the last thing you all argued about?
-- What is the most useless skill you have?
-- What is something you are irrationally loyal to?
-- What is a small thing that improves any day?
+- What is something you can do that never comes up?
+- What is something you will not switch away from?
+- What is something small that always works on a bad day?
 - What is the strangest job you have heard of?
 - What is your most-used app that is not messaging?
 - What is a thing you would happily never do again?
 - What is something you have got much better at?
 - Where would everyone go with a free flight?
-- What is the best advice anyone here has been given?
+- What is something everyone here learned the hard way?
 - What is a hill you would die on?
 - What is the last photo on your phone, described not shown?
 - What is something you learned this year?

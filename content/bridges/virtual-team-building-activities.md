@@ -20,6 +20,7 @@ primary_cta_target: one-word-story
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # Virtual Team Building Activities That Work on a Call
