@@ -3,7 +3,6 @@ title: "Questions to Ask Friends: 120 That Go Somewhere"
 description: "Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands."
 target_keywords:
   - { keyword: "questions to ask friends", volume: 13000, difficulty: 1, traffic_potential: 41000 }
-  - { keyword: "deep questions to ask friends", volume: 900 }
   - { keyword: "fun questions to ask friends", volume: 700 }
   - { keyword: "hard questions to ask friends", volume: 450 }
   - { keyword: "questions to ask your best friend", volume: 400 }
@@ -225,3 +224,5 @@ The questions are the easy part. What you do after the answer decides whether yo
 **Extending rather than replacing.** `last-word-response` forces your reply to build from your partner's final words, which makes changing the subject structurally impossible.
 
 For the rest of it: [how to be a good listener](/how-to-be-a-good-listener) for the receiving half in detail, [how to be a good friend](/how-to-be-a-good-friend) for what support actually is, and [team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
+
+_For the deeper end specifically, and what has to be true before any of it works: [deep questions to ask](/deep-questions-to-ask)._
