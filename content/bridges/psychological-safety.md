@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "psychological safety at work", volume: 2700, difficulty: 24, traffic_potential: 3900, parent: "psychological safety" }
   - { keyword: "what is psychological safety", volume: 1300, parent: "psychological safety" }
   - { keyword: "creating psychological safety in the workplace", volume: 200, parent: "psychological safety at work" }
+serp_checked: "2026-08-23"
+serp_min_dr: 52
+serp_verdict: authority
 entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, vulnerability]
 entry_path: physics-of-connection
 status: draft

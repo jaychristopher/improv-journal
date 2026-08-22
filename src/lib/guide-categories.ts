@@ -136,7 +136,22 @@ function reachOf(bridge: { frontmatter: BridgeFrontmatter }): number {
   return keywords.length > 0 ? Math.max(...keywords.map((k) => k.volume)) : 0;
 }
 
+/**
+ * Whether a guide should be placed after the reachable ones.
+ *
+ * Difficulty is the stand-in. Where the results have actually been looked at,
+ * that reading wins in both directions — which matters here because the two
+ * highest-reach guides in the teams cluster clear the difficulty bar easily
+ * and cannot rank: team building activities at difficulty 5 against Asana and
+ * BambooHR, questions to ask in an interview at 9 against Indeed. They were
+ * holding first and second place on that hub. Meanwhile how-to-stop-
+ * overthinking is difficulty 34 with a DR 1 site at position five, and was
+ * being pushed to the back on the score alone.
+ */
 function isStranded(bridge: { frontmatter: BridgeFrontmatter }): boolean {
+  const verdict = bridge.frontmatter.serp_verdict;
+  if (verdict === "authority") return true;
+  if (verdict === "winnable") return false;
   const difficulty = (bridge.frontmatter.target_keywords ?? [])[0]?.difficulty;
   return difficulty !== undefined && difficulty > STRANDED_DIFFICULTY;
 }

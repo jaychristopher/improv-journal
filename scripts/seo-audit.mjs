@@ -281,7 +281,15 @@ const thinAndCheap = (r) => r.difficulty <= WINNABLE_KD && r.words < THIN_WORDS;
 const missed = graded
   .filter((r) => thinAndCheap(r) && r.serpVerdict === "winnable")
   .sort((a, b) => reach(b) - reach(a));
-const stranded = graded.filter((r) => r.difficulty > STRANDED_KD).sort((a, b) => b.words - a.words);
+// Stranded means hard and unexamined. Once the results have been looked at, the
+// answer is in the verdict rather than the difficulty, and this bucket said the
+// opposite of the open-results bucket about the same page: how-to-stop-
+// overthinking is difficulty 34 with a DR 1 site at position five, and appeared
+// in both "the results are open" and "depth here does not convert" in one run.
+// Pages already reported as gated are not repeated here either.
+const stranded = graded
+  .filter((r) => r.difficulty > STRANDED_KD && !r.serpVerdict)
+  .sort((a, b) => b.words - a.words);
 
 const row = (r) =>
   `  ${r.id.padEnd(40)} TP ${String(r.trafficPotential ?? "—").padStart(5)}  ${String(r.volume).padStart(6)}/mo  KD ${String(r.difficulty).padStart(2)}  ${String(r.words).padStart(5)}w`;
@@ -330,7 +338,7 @@ if (unchecked.length > 0) {
 
 if (stranded.length > 0) {
   console.log(
-    `Stranded above KD ${STRANDED_KD} — depth here does not convert (${stranded.length}):`,
+    `Hard on difficulty, results not yet checked (${stranded.length}):`,
   );
   for (const r of stranded.slice(0, 8)) console.log(row(r));
   console.log();

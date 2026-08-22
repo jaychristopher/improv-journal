@@ -75,22 +75,30 @@ describe("cluster ordering", () => {
       bridges.map((b) => [b.slug, (b.frontmatter.target_keywords ?? [])[0]?.difficulty]),
     );
 
+    const verdictBySlug = new Map(bridges.map((b) => [b.slug, b.frontmatter.serp_verdict]));
+
     for (const category of GUIDE_CATEGORIES) {
       const guides = await getGuidesInCategory(category.slug);
       if (guides.length < 2) continue;
-      const first = kd.get(guides[0].slug);
-      expect(
-        first === undefined || first <= 30,
-        `${category.slug} opens with ${guides[0].slug}`,
-      ).toBe(true);
+      const slug = guides[0].slug;
+      const verdict = verdictBySlug.get(slug);
+      const first = kd.get(slug);
+      // Difficulty is the stand-in; a checked verdict overrides it either way.
+      const reachable =
+        verdict === "winnable" || (verdict !== "authority" && (first === undefined || first <= 30));
+      expect(reachable, `${category.slug} opens with ${slug}`).toBe(true);
     }
   });
 
   it("places reachable guides ahead of stranded ones", async () => {
     const bridges = await loadBridges();
+    // Mirrors isStranded: where the results have been checked, that wins over
+    // the difficulty estimate — in both directions.
     const stranded = (slug: string) => {
-      const d = (bridges.find((b) => b.slug === slug)?.frontmatter.target_keywords ?? [])[0]
-        ?.difficulty;
+      const fm = bridges.find((b) => b.slug === slug)?.frontmatter;
+      if (fm?.serp_verdict === "authority") return true;
+      if (fm?.serp_verdict === "winnable") return false;
+      const d = (fm?.target_keywords ?? [])[0]?.difficulty;
       return d !== undefined && d > 30;
     };
 
