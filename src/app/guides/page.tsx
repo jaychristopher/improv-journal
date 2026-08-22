@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadBridges } from "@/lib/content";
-import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
+import { byReach, GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -19,7 +19,9 @@ export default async function GuidesPage() {
 
   const categorized = GUIDE_CATEGORIES.map((cat) => ({
     ...cat,
-    bridges: cat.slugs.map((slug) => bridgeBySlug.get(slug)).filter((b) => b !== undefined),
+    bridges: byReach(
+      cat.slugs.map((slug) => bridgeBySlug.get(slug)).filter((b) => b !== undefined),
+    ),
   }));
 
   // Catch any bridges not placed in a category

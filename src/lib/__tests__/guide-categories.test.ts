@@ -62,3 +62,51 @@ describe("guide categories", () => {
     expect(await getGuidesInCategory("nope")).toEqual([]);
   });
 });
+
+describe("cluster ordering", () => {
+  /**
+   * First position on a cluster hub is the most valuable slot it has. The
+   * declared order was roughly biggest-first, which tracks volume, so
+   * /topics/personal-growth opened with two guides at difficulty 34 and 54.
+   */
+  it("never opens a cluster with a guide that cannot rank", async () => {
+    const bridges = await loadBridges();
+    const kd = new Map(
+      bridges.map((b) => [b.slug, (b.frontmatter.target_keywords ?? [])[0]?.difficulty]),
+    );
+
+    for (const category of GUIDE_CATEGORIES) {
+      const guides = await getGuidesInCategory(category.slug);
+      if (guides.length < 2) continue;
+      const first = kd.get(guides[0].slug);
+      expect(
+        first === undefined || first <= 30,
+        `${category.slug} opens with ${guides[0].slug}`,
+      ).toBe(true);
+    }
+  });
+
+  it("places reachable guides ahead of stranded ones", async () => {
+    const bridges = await loadBridges();
+    const stranded = (slug: string) => {
+      const d = (bridges.find((b) => b.slug === slug)?.frontmatter.target_keywords ?? [])[0]
+        ?.difficulty;
+      return d !== undefined && d > 30;
+    };
+
+    for (const category of GUIDE_CATEGORIES) {
+      const flags = (await getGuidesInCategory(category.slug)).map((g) => stranded(g.slug));
+      const firstStranded = flags.indexOf(true);
+      if (firstStranded === -1) continue;
+      // Once a stranded guide appears, no reachable one may follow it.
+      expect(flags.slice(firstStranded).every(Boolean), category.slug).toBe(true);
+    }
+  });
+
+  it("keeps every guide listed, rather than hiding the stranded ones", async () => {
+    for (const category of GUIDE_CATEGORIES) {
+      const guides = await getGuidesInCategory(category.slug);
+      expect(guides.length, category.slug).toBe(category.slugs.length);
+    }
+  });
+});

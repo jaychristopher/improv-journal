@@ -11,6 +11,7 @@
  */
 
 import { loadBridges } from "./content";
+import type { BridgeFrontmatter } from "./schema";
 
 export interface GuideCategory {
   slug: string;
@@ -97,6 +98,44 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
   },
 ];
 
+/** Above this, a term is not winnable from the site's current authority. */
+const STRANDED_DIFFICULTY = 30;
+
+/**
+ * What a guide could bring in: traffic potential where measured, peak declared
+ * volume where not.
+ */
+function reachOf(bridge: { frontmatter: BridgeFrontmatter }): number {
+  const keywords = bridge.frontmatter.target_keywords ?? [];
+  const primary = keywords[0];
+  if (primary?.traffic_potential) return primary.traffic_potential;
+  return keywords.length > 0 ? Math.max(...keywords.map((k) => k.volume)) : 0;
+}
+
+function isStranded(bridge: { frontmatter: BridgeFrontmatter }): boolean {
+  const difficulty = (bridge.frontmatter.target_keywords ?? [])[0]?.difficulty;
+  return difficulty !== undefined && difficulty > STRANDED_DIFFICULTY;
+}
+
+/**
+ * Order guides within a cluster by what they can actually bring in.
+ *
+ * The declared order was roughly biggest-first, which tracks volume and so put
+ * the least reachable pages at the top: /topics/personal-growth opened with
+ * how-to-stop-overthinking at difficulty 34 and how-to-be-more-confident at
+ * 54, while how-to-be-vulnerable sat eighth. First position on a cluster hub
+ * is the most valuable slot it has.
+ *
+ * Stranded guides are not hidden — they are placed after the reachable ones.
+ */
+export function byReach<T extends { frontmatter: BridgeFrontmatter }>(bridges: T[]): T[] {
+  return [...bridges].sort((a, b) => {
+    const strandedDiff = Number(isStranded(a)) - Number(isStranded(b));
+    if (strandedDiff !== 0) return strandedDiff;
+    return reachOf(b) - reachOf(a);
+  });
+}
+
 export function getCategoryBySlug(slug: string): GuideCategory | undefined {
   return GUIDE_CATEGORIES.find((c) => c.slug === slug);
 }
@@ -120,12 +159,13 @@ export async function getGuidesInCategory(categorySlug: string): Promise<Categor
   const bridges = await loadBridges();
   const bySlug = new Map(bridges.map((b) => [b.slug, b]));
 
-  return category.slugs
+  const found = category.slugs
     .map((slug) => bySlug.get(slug))
-    .filter((bridge) => bridge !== undefined)
-    .map((bridge) => ({
-      slug: bridge.slug,
-      title: bridge.frontmatter.title,
-      description: bridge.frontmatter.description,
-    }));
+    .filter((bridge) => bridge !== undefined);
+
+  return byReach(found).map((bridge) => ({
+    slug: bridge.slug,
+    title: bridge.frontmatter.title,
+    description: bridge.frontmatter.description,
+  }));
 }
