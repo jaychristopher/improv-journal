@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 
+import { getSystemCounts } from "@/lib/system-counts";
+
 export const alt = "The Physics of Connection";
 export const size = {
   width: 1200,
@@ -7,7 +9,9 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const { tagline } = await getSystemCounts();
+
   return new ImageResponse(
     <div
       style={{
@@ -42,7 +46,7 @@ export default function Image() {
           lineHeight: 1.5,
         }}
       >
-        Six laws, eight principles — discovered on the improv stage, applicable everywhere.
+        {`${tagline} — discovered on the improv stage, applicable everywhere.`}
       </div>
     </div>,
     { ...size },

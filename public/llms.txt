@@ -1,6 +1,6 @@
 # The Physics of Connection
 
-> Six laws, eight principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.
+> Seven laws, nine principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.
 
 The Physics of Connection is an educational site that applies improv principles to everyday human challenges: overthinking, awkwardness, team dynamics, listening, assertiveness, public speaking, and more. All content is grounded in 60 years of improv performance science across five major traditions (Johnstone, Spolin, Close/Halpern, UCB, Annoyance/TJ & Dave).
 
@@ -26,11 +26,8 @@ The Physics of Connection is an educational site that applies improv principles 
 
 - /tools/exercise-picker — Find the right improv exercise by level and skill focus. 17 exercises, filterable by beginner/intermediate/advanced and 6 focus areas.
 - /tools/exercise-picker/beginner — Beginner improv exercises
-- /tools/exercise-picker/intermediate — Intermediate improv exercises
-- /tools/exercise-picker/advanced — Advanced improv exercises
 - /tools/exercise-picker/beginner/presence — Beginner exercises for presence and listening
-- /tools/exercise-picker/beginner/ensemble — Beginner exercises for ensemble work
-- /tools/exercise-picker/intermediate/courage — Intermediate exercises for courage and commitment
+- /tools/exercise-picker/for-teams — Team-focused improv exercises
 
 ## Most Cited Content
 

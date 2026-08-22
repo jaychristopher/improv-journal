@@ -21,7 +21,9 @@ describe("content routing completeness", () => {
   it("law atoms route to /how-it-works/{id}", async () => {
     const atoms = await loadAtoms();
     const laws = atoms.filter((a) => a.frontmatter.type === "law");
-    expect(laws.length).toBe(6);
+    // Not a fixed count: laws get written. The claim is checked against the
+    // content in system-counts.test.ts instead.
+    expect(laws.length).toBeGreaterThan(0);
     for (const a of laws) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toBe(
         `/how-it-works/${a.frontmatter.id}`,
@@ -32,7 +34,7 @@ describe("content routing completeness", () => {
   it("principle atoms route to /how-it-works/principles/{id}", async () => {
     const atoms = await loadAtoms();
     const principles = atoms.filter((a) => a.frontmatter.type === "principle");
-    expect(principles.length).toBe(8);
+    expect(principles.length).toBeGreaterThan(0);
     for (const a of principles) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toBe(
         `/how-it-works/principles/${a.frontmatter.id}`,

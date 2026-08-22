@@ -13,6 +13,7 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
+import { getSystemCounts } from "@/lib/system-counts";
 
 const DESCRIPTION =
   "Who writes The Physics of Connection, where the material comes from, and how the site is put together.";
@@ -45,6 +46,7 @@ export default async function AboutPage() {
     loadPaths(),
   ]);
   const references = atoms.filter((a) => a.frontmatter.type === "reference");
+  const counts = await getSystemCounts();
 
   // The author and organization entities are defined here, once. Every article
   // on the site points its author and publisher at these @ids.
@@ -81,8 +83,7 @@ export default async function AboutPage() {
         name: SITE_NAME,
         url: SITE_URL,
         founder: { "@id": AUTHOR_ID },
-        description:
-          "Six laws, eight principles — discovered on the improv stage, applicable everywhere.",
+        description: `${counts.tagline} — discovered on the improv stage, applicable everywhere.`,
       },
     ],
   };

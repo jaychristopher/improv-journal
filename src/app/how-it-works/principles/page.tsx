@@ -5,13 +5,17 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { getSystemCounts } from "@/lib/system-counts";
 
-export const metadata: Metadata = {
-  title: pageTitle("Rules of Improv: 8 Principles That Make Connection Work"),
-  description:
-    "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
-  alternates: { canonical: "/how-it-works/principles" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { principles } = await getSystemCounts();
+  return {
+    title: pageTitle(`Rules of Improv: ${principles} Principles That Make Connection Work`),
+    description:
+      "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
+    alternates: { canonical: "/how-it-works/principles" },
+  };
+}
 
 export default async function PrinciplesPage() {
   const atoms = await loadAtoms();
@@ -20,7 +24,7 @@ export default async function PrinciplesPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       <CollectionJsonLd
-        name="The 8 Principles of Improv"
+        name={`The ${principles.length} Principles of Improv`}
         description="Behavioral guidelines derived from the physics of connection — structural commands that prevent shared reality from collapsing."
         url="/how-it-works/principles"
         partOf="/how-it-works"
@@ -41,7 +45,9 @@ export default async function PrinciplesPage() {
         <span className="text-foreground/40 text-xs tracking-wider uppercase">
           system · principles
         </span>
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">The 8 Principles</h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">
+          The {principles.length} Principles
+        </h1>
         <p className="text-foreground/60 mt-2">
           Behavioral guidelines derived from the physics. Not moral rules — structural commands that
           prevent shared reality from collapsing.

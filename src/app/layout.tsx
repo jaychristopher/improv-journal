@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { PostHogPageView } from "@/components/PostHogPageView";
 import { authorRef, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { getSystemCounts } from "@/lib/system-counts";
 
 import { PostHogProvider } from "./providers";
 
@@ -23,32 +24,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: SITE_NAME,
-    template: `%s | ${SITE_NAME}`,
-  },
-  description:
-    "What makes some conversations magic and others fall flat? Six laws, eight principles — discovered on the improv stage, applicable everywhere.",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    siteName: SITE_NAME,
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { tagline } = await getSystemCounts();
 
-export default function RootLayout({
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: SITE_NAME,
+      template: `%s | ${SITE_NAME}`,
+    },
+    description: `What makes some conversations magic and others fall flat? ${tagline} — discovered on the improv stage, applicable everywhere.`,
+    alternates: {
+      canonical: "/",
+    },
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { tagline } = await getSystemCounts();
   return (
     <html
       lang="en"
@@ -91,8 +96,7 @@ export default function RootLayout({
               name: SITE_NAME,
               url: SITE_URL,
               founder: authorRef(),
-              description:
-                "Six laws, eight principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.",
+              description: `${tagline} — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.`,
             }),
           }}
         />
