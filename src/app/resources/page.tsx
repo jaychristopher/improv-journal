@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Resources",
+  title: pageTitle("Resources"),
   description:
     "Learning paths, guides, podcasts, reading lists, and the traditions that shaped improv.",
   alternates: { canonical: "/resources" },

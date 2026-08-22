@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "When It Breaks",
+  title: pageTitle("When It Breaks"),
   description:
     "Collapse modes, failure patterns, and recovery — the diagnostic vocabulary for naming what went wrong and finding the way back.",
   alternates: { canonical: "/how-it-works/diagnosis" },

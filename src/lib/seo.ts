@@ -9,6 +9,28 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.physics
 
 export const SITE_NAME = "The Physics of Connection";
 
+/** Roughly where Google truncates a title in results. */
+export const TITLE_MAX = 60;
+
+/** Roughly where Google truncates a description in results. */
+export const DESCRIPTION_MAX = 158;
+
+const BRAND_SUFFIX_LENGTH = " | ".length + SITE_NAME.length;
+
+/**
+ * Title for a page's `metadata.title`.
+ *
+ * The root layout appends " | The Physics of Connection" to every title. On a
+ * long title that suffix is not just wasted — it pushes the keyword-bearing
+ * end of the title past the truncation point. Return an absolute title in that
+ * case so the page keeps its own words, and let the template add the brand
+ * only where it genuinely fits.
+ */
+export function pageTitle(title: string): string | { absolute: string } {
+  if (title.length + BRAND_SUFFIX_LENGTH <= TITLE_MAX) return title;
+  return { absolute: title };
+}
+
 /**
  * Strip markdown formatting and extract clean text for meta descriptions.
  * Removes frontmatter, headings, bold labels, links, code, emphasis.
@@ -55,16 +77,46 @@ const TYPE_LABELS: Record<string, string> = {
 };
 
 /**
- * Build a type-aware meta description for an atom.
+ * Longest run of complete sentences from `text` that fits within `maxLen`.
+ * Returns "" when even the first sentence is too long, so callers can fall
+ * back rather than emit a fragment.
  */
-export function atomDescription(title: string, type: AtomType, extracted: string): string {
+function fitSentences(text: string, maxLen: number): string {
+  if (text.length <= maxLen) return text.trim();
+
+  let out = "";
+  for (const sentence of text.match(/[^.!?]+[.!?]+(\s|$)/g) ?? []) {
+    const next = out + sentence;
+    if (next.trimEnd().length > maxLen) break;
+    out = next;
+  }
+  return out.trim();
+}
+
+/**
+ * Build a meta description for an atom.
+ *
+ * Leads with the concept's own words rather than restating the title: the
+ * title already sits directly above the description in a result, so repeating
+ * it there spent roughly a third of the snippet saying nothing new — and the
+ * remainder was then cut mid-word. The type label is appended only when the
+ * text alone leaves room for it.
+ */
+export function atomDescription(
+  title: string,
+  type: AtomType,
+  extracted: string,
+  maxLen = DESCRIPTION_MAX,
+): string {
   const label = TYPE_LABELS[type] ?? "an improv concept";
-  const prefix = `${title} — ${label}.`;
-  const remaining = 155 - prefix.length - 1;
-  if (remaining < 30) return prefix;
-  const desc = extracted.substring(0, remaining).trim();
-  const lastSpace = desc.lastIndexOf(" ");
-  return `${prefix} ${lastSpace > 0 ? desc.substring(0, lastSpace) : desc}...`;
+  const fallback = `${title} — ${label}.`;
+
+  const body = fitSentences(extracted, maxLen);
+  if (!body) return fallback.length <= maxLen ? fallback : extractDescription(extracted, maxLen);
+
+  const suffix = ` ${title} is ${label}.`;
+  if (body.length + suffix.length <= maxLen) return `${body}${suffix}`;
+  return body;
 }
 
 /**

@@ -3,9 +3,10 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Practice",
+  title: pageTitle("Practice"),
   description:
     "Exercises, techniques, show formats, and the vocabulary to name what's happening in scenes and conversations.",
   alternates: { canonical: "/practice" },

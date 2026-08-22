@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const shows = await loadShows();
@@ -19,7 +20,7 @@ export async function generateMetadata({
   const show = await getShowBySlug(showSlug);
   if (!show) return {};
   return {
-    title: show.frontmatter.title,
+    title: pageTitle(show.frontmatter.title),
     description: show.frontmatter.description,
     alternates: { canonical: `/listen/${showSlug}` },
     openGraph: {

@@ -4,10 +4,10 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadAtoms } from "@/lib/content";
 import type { ExternalLink } from "@/lib/schema";
-import { SITE_URL } from "@/lib/seo";
+import { pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Reading List",
+  title: pageTitle("Reading List"),
   description:
     "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
   alternates: { canonical: "/library" },

@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadPaths } from "@/lib/content";
 import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendations";
 import type { Audience } from "@/lib/schema";
+import { pageTitle } from "@/lib/seo";
 
 const AUDIENCE_META: Record<string, { title: string; description: string }> = {
   beginner: {
@@ -50,7 +51,7 @@ export async function generateMetadata({
   const meta = AUDIENCE_META[audience];
   if (!meta) return {};
   return {
-    title: meta.title,
+    title: pageTitle(meta.title),
     description: meta.description,
     alternates: { canonical: `/learn/${audience}` },
     openGraph: {

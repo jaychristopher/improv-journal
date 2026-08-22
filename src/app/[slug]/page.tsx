@@ -21,6 +21,7 @@ import {
 } from "@/lib/content";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
+import { pageTitle } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -33,7 +34,7 @@ export async function generateMetadata({
 
   const fm = bridge.frontmatter;
   return {
-    title: fm.title,
+    title: pageTitle(fm.title),
     description: fm.description,
     keywords: fm.target_keywords?.map((keyword: { keyword: string }) => keyword.keyword),
     alternates: { canonical: `/${slug}` },

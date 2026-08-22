@@ -3,10 +3,10 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { GLOSSARY_URL, loadGlossaryTerms } from "@/lib/glossary";
-import { SITE_URL } from "@/lib/seo";
+import { pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Glossary: Vocabulary and Terms Explained",
+  title: pageTitle("Improv Glossary: Vocabulary and Terms Explained"),
   description:
     "A glossary of improv terms — what each one means and what it names in a scene, a show, or a conversation.",
   alternates: { canonical: GLOSSARY_URL },

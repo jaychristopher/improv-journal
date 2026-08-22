@@ -16,7 +16,7 @@ import {
   loadPaths,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription } from "@/lib/seo";
+import { extractDescription, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const paths = await loadPaths();
@@ -33,7 +33,7 @@ export async function generateMetadata({
   if (!pathData) return {};
 
   return {
-    title: pathData.frontmatter.title,
+    title: pageTitle(pathData.frontmatter.title),
     description: pathData.frontmatter.description,
     alternates: { canonical: `/paths/${slug}` },
     openGraph: {

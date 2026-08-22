@@ -9,6 +9,7 @@ import {
   getAtomUrl,
   getTraditionNames,
 } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 const TRADITION_INFO: Record<string, { label: string; desc: string; keyTexts: string[] }> = {
   johnstone: {
@@ -51,7 +52,7 @@ export async function generateMetadata({
   const info = TRADITION_INFO[tradition];
   if (!info) return {};
   return {
-    title: info.label,
+    title: pageTitle(info.label),
     description: info.desc,
     alternates: { canonical: `/traditions/${tradition}` },
     openGraph: {

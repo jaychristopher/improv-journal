@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Exercises",
+  title: pageTitle("Improv Exercises"),
   description:
     "Structured activities that build specific improv skills through constraints. Filter by level and focus area.",
   alternates: { canonical: "/practice/exercises" },

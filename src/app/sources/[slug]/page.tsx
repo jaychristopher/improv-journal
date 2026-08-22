@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomBySlug, getAtomUrl, getSourceBySlug, loadSources } from "@/lib/content";
 import type { AtomType } from "@/lib/schema";
-import { extractDescription } from "@/lib/seo";
+import { extractDescription, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const sources = await loadSources();
@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!source) return {};
   const desc = extractDescription(source.content);
   return {
-    title: source.frontmatter.title,
+    title: pageTitle(source.frontmatter.title),
     description: desc,
     alternates: { canonical: `/sources/${slug}` },
     openGraph: {

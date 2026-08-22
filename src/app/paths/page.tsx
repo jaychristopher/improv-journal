@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getRecommendedPath } from "@/lib/path-recommendations";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Learning Paths",
+  title: pageTitle("Learning Paths"),
   description:
     "Structured guides for wherever you are in your journey - beginner through performer.",
   alternates: { canonical: "/paths" },

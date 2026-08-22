@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Formats",
+  title: pageTitle("Improv Formats"),
   description:
     "Performance structures from Harold to Montage to Armando. What each format demands and what it teaches.",
   alternates: { canonical: "/practice/formats" },

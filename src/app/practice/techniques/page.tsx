@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Techniques",
+  title: pageTitle("Improv Techniques"),
   description:
     "The specific moves — how to listen, initiate, edit, support, heighten, and recover in improv scenes.",
   alternates: { canonical: "/practice/techniques" },

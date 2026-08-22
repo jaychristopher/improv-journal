@@ -4,9 +4,10 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Games: The Complete Collection",
+  title: pageTitle("Improv Games: The Complete Collection"),
   description:
     "Every improv game and exercise, organized by level and skill. From warm-ups for beginners to advanced ensemble work.",
   alternates: { canonical: "/improv-games" },

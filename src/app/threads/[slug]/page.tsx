@@ -19,7 +19,7 @@ import {
   loadThreads,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription } from "@/lib/seo";
+import { extractDescription, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -37,7 +37,7 @@ export async function generateMetadata({
 
   const desc = extractDescription(thread.content);
   return {
-    title: thread.frontmatter.title,
+    title: pageTitle(thread.frontmatter.title),
     description: desc,
     alternates: { canonical: `/threads/${slug}` },
     openGraph: {
