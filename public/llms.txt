@@ -138,7 +138,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Want](https://www.physicsofconnection.com/practice/vocabulary/want): What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters do things rather than merely exist.
 - [Warm-Up](https://www.physicsofconnection.com/practice/vocabulary/warm-up): The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life...
 
-## Techniques (46)
+## Techniques (47)
 
 - [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer)
 - [Active Listening](https://www.physicsofconnection.com/practice/techniques/active-listening): Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language,...
@@ -179,6 +179,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Space Work](https://www.physicsofconnection.com/practice/techniques/space-work): The practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible...
 - [Stage Presence](https://www.physicsofconnection.com/practice/techniques/stage-presence): The ability to project your internal state outward so the audience can receive it.
 - [Status Dynamics](https://www.physicsofconnection.com/practice/techniques/status-dynamics): The mastery-level work on status is not "who is high and who is low" — it is the movement of status within a scene.
+- [Story Spine](https://www.physicsofconnection.com/practice/techniques/story-spine): A fixed sequence of eight sentence stems that produces a complete story with a beginning, a turn, consequences and an ending.
 - [Straight Man](https://www.physicsofconnection.com/practice/techniques/straight-man): The player who sees the world the way the audience does — the grounding force that makes the game player's unusual behavior legible.
 - [Suggestion](https://www.physicsofconnection.com/practice/techniques/suggestion): How to take and use audience input. The suggestion is the ritual that proves the show is improvised, gives the audience ownership, and provides a creative...
 - [Support Moves](https://www.physicsofconnection.com/practice/techniques/support-moves): What you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're...
@@ -187,8 +188,9 @@ This file is generated from the site's content, so it lists everything rather th
 - [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice)
 - [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the...
 
-## Exercises and games (17)
+## Exercises and games (22)
 
+- [Big Booty](https://www.physicsofconnection.com/practice/exercises/big-booty): working under enough load that deliberation becomes impossible. A rhythm game whose real function is to flood attention until players stop planning and start...
 - [Blind Offer](https://www.physicsofconnection.com/practice/exercises/blind-offer): The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them.
 - [Directed Scene](https://www.physicsofconnection.com/practice/exercises/directed-scene): Adaptability under constraint, external awareness, ego dissolution, rapid integration of abstract direction into specific behavior.
 - [Emotion Switch](https://www.physicsofconnection.com/practice/exercises/emotion-switch): Be Changeable — the ability to fully shift emotional state in response to input.
@@ -202,10 +204,14 @@ This file is generated from the site's content, so it lists everything rather th
 - [Mirroring](https://www.physicsofconnection.com/practice/exercises/mirroring): Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum.
 - [No Backspace Scene](https://www.physicsofconnection.com/practice/exercises/no-backspace-scene): Irreversibility — the felt experience of path dependence. Borrows from Johnstone's New Choice mechanic but enforces forward rather than replacing.
 - [One-Word Scene](https://www.physicsofconnection.com/practice/exercises/one-word-scene): Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across...
+- [One-Word Story](https://www.physicsofconnection.com/practice/exercises/one-word-story): giving up authorship. A circle tells one story, one word per person, and nobody is allowed to know where it is going.
 - [Organic Opening](https://www.physicsofconnection.com/practice/exercises/organic-opening-exercise): Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence.
+- [Pass the Clap](https://www.physicsofconnection.com/practice/exercises/pass-the-clap): shared timing. Two people clap at the same instant, round a circle, until the group stops passing a clap and starts keeping one.
+- [Questions Only](https://www.physicsofconnection.com/practice/exercises/questions-only): noticing how much of a conversation is deferral. Two players hold a scene in which every line must be a question — and the exercise is most useful for what it...
 - [Silent Space Work Scene](https://www.physicsofconnection.com/practice/exercises/space-work-scene): Space work — building and maintaining a shared physical environment with no dialogue.
 - [Status Transfer](https://www.physicsofconnection.com/practice/exercises/status-transfer): Status awareness and the ability to shift status dynamically within a scene.
 - [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
+- [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 
 ## Formats (14)
 
