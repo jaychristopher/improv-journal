@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (57)
+## Guides (58)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -82,6 +82,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Theatre Games: What They Are and How to Run Them](https://www.physicsofconnection.com/theatre-games): Theatre games were invented to teach non-actors, not to get laughs. Here's where they came from, how they differ from improv games, and how to run them.
 - [Trust Building Exercises That Aren't Trust Falls](https://www.physicsofconnection.com/trust-building-exercises): Trust isn't built by dramatic gestures. It's built by small, repeated, reliable exchanges — which is exactly what these seven improv exercises rehearse.
 - [Types of Listening: The Three Modes That Matter](https://www.physicsofconnection.com/types-of-listening): There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation.
+- [Virtual Team Building Activities That Work on a Call](https://www.physicsofconnection.com/virtual-team-building-activities): Most virtual team building is an in-person activity ported onto video, where every constraint that made it work has gone. These are built for the call itself.
 - [What Is Improv? (It's Not What You Think)](https://www.physicsofconnection.com/what-is-improv): Improv isn't comedy — it's the art of building shared reality in real time with no script. Here's what actually happens on stage and why it matters.
 
 ## Laws — the underlying physics (7)

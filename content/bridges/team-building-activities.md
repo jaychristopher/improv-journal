@@ -139,7 +139,7 @@ not running it at all.
 
 ### If Your Team Is Remote
 
-The constraint is different: no side conversations, silences carry, and everybody is looking at themselves. Favour short answers and visible ones.
+The constraint is different: no side conversations, silences carry, and everybody is looking at themselves. Favour short answers and visible ones — and for the full set, see [virtual team building activities](/virtual-team-building-activities).
 
 - **Show Us One Thing** — 3 min. Everyone holds up an object within arm's reach and says why they have it.
 - **One-Word Check-In** — 2 min. A single word each for current capacity. No elaboration, no follow-up.

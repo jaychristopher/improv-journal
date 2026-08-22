@@ -85,6 +85,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "Team building, trust, collaboration, feedback, and group dynamics — improv methods for groups that have to think together under pressure.",
     slugs: [
       "team-building-activities",
+      "virtual-team-building-activities",
       "team-bonding-activities",
       "team-building-questions",
       "icebreaker-questions-for-work",
