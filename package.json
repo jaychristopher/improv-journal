@@ -19,7 +19,8 @@
     "test:watch": "vitest",
     "prepare": "husky",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
-    "content:dates": "node scripts/sync-content-dates.mjs"
+    "content:dates": "node scripts/sync-content-dates.mjs",
+    "seo:rendered": "node scripts/seo-audit-rendered.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
