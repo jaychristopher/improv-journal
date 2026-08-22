@@ -20,7 +20,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Trains:** The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them. Primary mechanism: justification applied as generosity. Adapted from Keith Johnstone's blind offer concept (*Impro*, *Impro for Storytellers*); Johnstone's original drill is a rapid volley of intentionless gestures and interpretations. This exercise applies the same principle as a scene-starter.

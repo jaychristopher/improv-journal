@@ -20,7 +20,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.

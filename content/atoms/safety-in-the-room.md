@@ -17,7 +17,7 @@ links:
   - { id: side-coaching, relation: enables }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Creating the conditions under which vulnerability, risk, and honest play become possible. Without safety, bravery is recklessness, honesty is exposure, and changeability is surrender. Safety is the container that makes every principle safe to practice.

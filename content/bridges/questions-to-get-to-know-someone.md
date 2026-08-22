@@ -18,6 +18,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # Questions to Get to Know Someone: 100 That Start Small

@@ -22,7 +22,7 @@ links:
   - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 An offer is anything that advances the scene — any word, gesture, expression, movement, or silence that adds to the shared reality. Johnstone's core principle: treat everything your partner does as an offer. The shift from "is an offer" to "treat as an offer" matters — it puts agency on the receiver, not the sender.

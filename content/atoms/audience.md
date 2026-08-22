@@ -20,7 +20,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The audience is not a passive recipient of the show. They are a **co-creator** of the shared reality — the third player in every scene.

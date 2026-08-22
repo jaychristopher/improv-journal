@@ -26,7 +26,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.

@@ -18,7 +18,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Technique for: Be Supportive**

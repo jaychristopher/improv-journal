@@ -19,7 +19,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Longform improv performed within the conventions of a specific genre — film noir, horror, Western, rom-com, musical. Genre knowledge becomes the structural framework: the audience's familiarity with the genre creates a shared vocabulary that performers can fulfill, subvert, or heighten.

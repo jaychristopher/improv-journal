@@ -10,6 +10,7 @@ entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, 
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 # Psychological Safety: The Physics of Trust

@@ -21,7 +21,7 @@ work:
   authors: ["Will Hines"]
   name: "Improv Nonsense"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Will Hines. *Improv Nonsense* (Substack). willhines.substack.com. Ongoing.**

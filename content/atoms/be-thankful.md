@@ -24,7 +24,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Alias:** Treat every outcome as usable information and postpone evaluation.

@@ -24,7 +24,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Building character from the body first — not from concept, biography, or dialogue. The physical choice precedes (and generates) everything else: point of view, emotional state, status, want. The body leads; the mind follows.

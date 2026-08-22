@@ -19,7 +19,7 @@ links:
   - { id: fracture-repair-drill, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 How to recover when two players are in different scenes — when the shared state has split and neither person can figure out why it feels off.

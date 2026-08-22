@@ -17,7 +17,7 @@ links:
   - { id: no-backspace-scene, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 Time advances irreversibly. Once a signal is sent, it becomes part of the shared history. You cannot edit, undo, or retract.

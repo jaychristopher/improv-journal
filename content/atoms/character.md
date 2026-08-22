@@ -28,7 +28,7 @@ links:
   - { id: ref-viewpoints-bogart-landau, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A distinct identity inhabited by the performer — with its own way of seeing the world, its own desires, its own physical life. Character is what separates the performer from the role: the performer observes and responds; the character *lives*.

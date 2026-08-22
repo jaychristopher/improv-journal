@@ -30,7 +30,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 The repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.

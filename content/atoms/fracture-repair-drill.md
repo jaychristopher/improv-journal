@@ -15,7 +15,7 @@ links:
   - { id: gift-giving, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Trains:** Fracture recovery — the ability to re-establish shared reality when two players have diverged.

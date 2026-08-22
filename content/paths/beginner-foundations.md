@@ -26,7 +26,7 @@ audience: [beginner]
 threads: [building-on-offers, presence-and-commitment]
 status: validated
 created: "2026-03-29"
-updated: "2026-04-21"
+updated: "2026-04-22"
 ---
 
 Welcome. If you're new to improv - or if you've been doing it a while and want to re-examine the fundamentals - this is where to start.

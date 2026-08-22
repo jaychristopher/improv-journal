@@ -10,7 +10,7 @@ status: seed
 atoms: [shared-reality-fragility, continuous-signaling, systemic-health-indicators]
 tags: [hook, experience, beyond-stage]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-04-21"
 ---
 
 Think about the last conversation where you lost track of time.

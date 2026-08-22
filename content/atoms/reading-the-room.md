@@ -17,7 +17,7 @@ links:
   - { id: ensemble, relation: requires }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.

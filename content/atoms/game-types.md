@@ -17,7 +17,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A taxonomy of the different categories of games that can emerge in improv scenes. While the UCB tradition doesn't publish a formal taxonomy with these exact labels, these categories are taught across UCB 201-301 levels and documented across multiple sources.

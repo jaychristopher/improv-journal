@@ -17,7 +17,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A specific game type where one reality is played through the lens of another entirely. The characters treat their mundane situation with the gravity, vocabulary, and stakes of a mapped scenario. Typically introduced at UCB 301 level.

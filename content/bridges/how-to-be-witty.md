@@ -9,6 +9,7 @@ entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commit
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Be Witty: The Improv Secret to Quick, Sharp Responses

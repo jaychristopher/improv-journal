@@ -18,7 +18,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Finding thematic links across unrelated scenes in a Harold or longform show — the "it was all one thing" realization. Connections are the Harold's payoff: the proof that improvisation can produce something that feels authored and intentional without any planning.

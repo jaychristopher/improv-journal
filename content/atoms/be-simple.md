@@ -25,7 +25,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.

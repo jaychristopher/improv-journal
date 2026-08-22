@@ -22,7 +22,7 @@ links:
   - { id: genre-format, relation: extends }
 sources: []
 created: "2026-04-09"
-updated: "2026-04-09"
+updated: "2026-08-22"
 ---
 
 Improvised scenes performed with live musical accompaniment, where performers spontaneously create songs — lyrics, melody, and sometimes choreography — in real time. Ranges from individual musical games within a shortform show to full-length improvised musicals running 60-90 minutes. The highest skill-barrier format in improv.

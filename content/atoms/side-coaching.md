@@ -16,7 +16,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Viola Spolin's core teaching method: coaching players **during** the exercise, not stopping to lecture. Spolin called it "the most subtle and essential element in Spolin Games." The side-coach is simultaneously fellow participant, grounded instructor, and observant director.

@@ -12,6 +12,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: validated
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # What Is Improv? (It's Not What You Think)

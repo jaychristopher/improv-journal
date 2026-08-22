@@ -17,7 +17,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Trains:** Irreversibility — the felt experience of path dependence. Borrows from Johnstone's New Choice mechanic but enforces forward rather than replacing.

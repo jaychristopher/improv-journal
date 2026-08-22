@@ -15,6 +15,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # Trust Building Exercises That Aren't Trust Falls

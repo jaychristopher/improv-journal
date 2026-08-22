@@ -25,7 +25,7 @@ links:
   - { id: ref-hines-greatest-improviser, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Alias:** Act before you're ready. The scene needs offers more than it needs perfect offers.

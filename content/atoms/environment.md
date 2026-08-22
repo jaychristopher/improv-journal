@@ -18,7 +18,7 @@ links:
   - { id: stage-presence, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The imagined physical and temporal conditions of the scene — the room, the weather, the objects, the spatial relationships between characters, and the pressures of time (a ticking clock, a closing restaurant, a train about to depart). The environment doesn't physically exist, but when it's well-maintained, the audience and the performers *feel* it.

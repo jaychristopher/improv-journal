@@ -17,7 +17,7 @@ links:
   - { id: framing-as-angle-of-approach, relation: enables }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 Any information transmitted from one participant to another, whether intentional or not. In improv and in life, signals are always being sent — there is no "off" state.

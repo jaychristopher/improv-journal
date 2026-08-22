@@ -22,7 +22,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody explicitly planned, and responding to the scene's needs before they're verbalized.

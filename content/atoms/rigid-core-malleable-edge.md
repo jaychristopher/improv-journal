@@ -17,7 +17,7 @@ links:
   - { id: negation, relation: contrasts }
 sources: []
 created: "2026-05-14"
-updated: "2026-05-14"
+updated: "2026-08-22"
 ---
 
 Beliefs are not defended uniformly. Every belief system has a *core* — the identity-anchored commitments that produce rejection on contact — and an *edge* — the implications, adjacent cases, applications, and inferences that are surprisingly negotiable. The same person who will not engage with a direct challenge to a core belief will reason their way across the edge without noticing the ground move under them. The pattern is universal; the work is identifying which layer you are touching before you speak.

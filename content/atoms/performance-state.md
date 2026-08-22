@@ -17,7 +17,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables spontaneous creative work. Not the absence of anxiety, but its transmutation into presence.

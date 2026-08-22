@@ -15,7 +15,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 How to take and use audience input. The suggestion is the ritual that proves the show is improvised, gives the audience ownership, and provides a creative constraint that provokes discovery.

@@ -8,6 +8,7 @@ entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # Fear of Public Speaking: What Improv Performers Know That You Don't

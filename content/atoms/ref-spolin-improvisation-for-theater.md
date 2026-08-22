@@ -24,7 +24,7 @@ work:
   published: "1963"
   isbn: "081014008X"
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Viola Spolin. *Improvisation for the Theater.* Northwestern University Press, 1963.**

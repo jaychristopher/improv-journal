@@ -9,6 +9,7 @@ entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, a
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # How to Be Present: The Bandwidth Trick That Actually Works

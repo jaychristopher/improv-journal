@@ -7,6 +7,7 @@ entry_atoms: [commitment, obvious-choice, fear-of-failure, be-brave, be-honest]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-07"
+updated: "2026-08-22"
 ---
 
 # How to Be More Confident (Without Faking It)

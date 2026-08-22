@@ -22,7 +22,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 A three-step ordering principle for authentic scene work: take a **physical action** first, let the **emotion** arrive from that action, then — and only then — **speak**. This is a synthesis drawn from several traditions — Spolin's physicalization, Napier's "give yourself one thing," Meisner's reaction-before-thought, Hines's "do something" — rather than a received technique with a single origin.

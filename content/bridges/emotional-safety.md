@@ -8,6 +8,7 @@ entry_atoms: [safety-in-the-room, trust, ensemble, be-supportive, vulnerability]
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # Emotional Safety: How Improv Ensembles Build the Trust That Teams Need

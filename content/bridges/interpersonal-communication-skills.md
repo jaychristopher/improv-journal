@@ -8,6 +8,7 @@ entry_atoms: [active-listening, offers, continuous-signaling, status, be-present
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # Interpersonal Communication Skills: What 60 Years of Improv Reveals

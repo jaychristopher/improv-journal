@@ -18,7 +18,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Trains:** Collective attention, shared decision-making without verbal negotiation, ensemble coherence beyond basic mirroring. These exercises develop the practical foundation for group mind — not mystical, but the result of deep mutual attention.

@@ -9,6 +9,7 @@ entry_atoms: [diagnosing-scene-failure, active-listening, commitment, be-present
 entry_path: self-coaching-toolkit
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Get Better at Improv: A Practitioner's Guide to Deliberate Growth

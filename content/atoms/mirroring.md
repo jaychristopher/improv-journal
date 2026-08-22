@@ -18,7 +18,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Trains:** Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum. Viola Spolin's core exercise — taught at every school, in every first class.

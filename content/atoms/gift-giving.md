@@ -18,7 +18,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Trains:** Be Thankful — receiving unexpected input as a gift rather than a problem.

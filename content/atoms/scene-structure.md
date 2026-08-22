@@ -21,7 +21,7 @@ links:
   - { id: two-person-scene, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The arc of an improv scene — not a rigid template but a recognizable shape that emerges when the principles are working.

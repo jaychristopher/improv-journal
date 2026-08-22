@@ -20,7 +20,7 @@ links:
   - { id: fear-of-failure, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.

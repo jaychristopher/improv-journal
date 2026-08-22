@@ -18,7 +18,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The shadow of **Be Supportive**. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the center at the expense of the ensemble.

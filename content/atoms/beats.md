@@ -20,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The concept of first, second, and third beats in a Harold — how scenes recur and transform across the show. Each beat has a distinct function, and the progression from first to third is the arc that gives a Harold its shape.

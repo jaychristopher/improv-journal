@@ -7,6 +7,7 @@ entry_atoms: [obvious-choice, discovery, be-simple, internal-computation, cognit
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-07"
+updated: "2026-08-22"
 ---
 
 # How to Be More Creative: Stop Trying to Be Original

@@ -13,7 +13,7 @@ status: validated
 atoms: [active-listening, commitment]
 tags: [fundamentals, mindset]
 created: "2026-03-29"
-updated: "2026-04-21"
+updated: "2026-04-22"
 ---
 
 The two invisible skills that separate okay improv from electric improv are presence and commitment. Neither is a technique you perform - they're states you inhabit.

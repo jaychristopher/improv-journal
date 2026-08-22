@@ -12,6 +12,7 @@ primary_cta_target: building-on-offers
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 # Active Listening: Why You're Doing It Wrong

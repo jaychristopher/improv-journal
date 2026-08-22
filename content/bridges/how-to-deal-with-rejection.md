@@ -8,6 +8,7 @@ entry_atoms: [failing-forward, be-brave, commitment, performance-state, acceptin
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Deal with Rejection: The Improv Philosophy of Failing Forward

@@ -12,6 +12,7 @@ primary_cta_target: presence-and-commitment
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Be Less Awkward: Lessons from People Who Make Things Up for a Living

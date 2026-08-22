@@ -18,7 +18,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A group free-association exercise that generates raw thematic material for a Harold or other longform show. Takes a single audience suggestion and expands it into a web of associations, images, themes, and ideas the ensemble mines throughout the show.

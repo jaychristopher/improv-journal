@@ -17,7 +17,7 @@ links:
   - { id: be-honest, relation: contrasts }
 sources: []
 created: "2026-05-14"
-updated: "2026-05-14"
+updated: "2026-08-22"
 ---
 
 The content of an idea and the angle at which it arrives are not the same thing. The same proposition — reached through the person's own reasoning, or arriving inside a frame that fits their existing architecture — can pass through cleanly where a head-on version would be rejected on contact. You are not changing what you are saying. You are changing the angle of approach.

@@ -17,7 +17,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The shadow of **Be Honest**. Performing cleverness is the substitution of authentic signal with a display of wit — playing to the audience instead of inhabiting the scene. For the principle and its full rationale, see `be-honest`. This atom owns the diagnostic: what cleverness looks like, what it costs your partner, and how to catch yourself doing it.

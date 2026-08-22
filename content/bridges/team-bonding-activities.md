@@ -8,6 +8,7 @@ entry_atoms: [mirroring, gift-giving, yes-and-chain, one-word-scene, ensemble, t
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # Team Bonding Activities That Actually Work (According to Improv Science)

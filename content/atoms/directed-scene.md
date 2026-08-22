@@ -16,7 +16,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Trains:** Adaptability under constraint, external awareness, ego dissolution, rapid integration of abstract direction into specific behavior. Performers do a scene while receiving real-time direction from a side-coach.

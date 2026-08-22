@@ -21,6 +21,7 @@ primary_cta_target: status-transfer
 secondary_cta_target: physics-of-connection
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # Questions to Ask in an Interview: 90 That Change the Room

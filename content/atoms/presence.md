@@ -19,7 +19,7 @@ links:
   - { id: warm-up, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 The capacity to sustain sensory contact with what is happening right now — with your partner, the environment, and yourself — rather than retreating into internal processing. `Be-present` is the directive; presence is the thing you're developing. One is "do this." The other is "this is the capacity that makes doing it possible."

@@ -20,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A scene with three or more performers. Fundamentally different from two-person scenes — the challenge shifts from building a relationship between two people to **managing focus, agreement, and pattern across multiple bodies and voices**.

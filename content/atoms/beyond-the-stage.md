@@ -25,7 +25,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The principles of improv are not theater techniques. They are the operating requirements for human connection — discovered on stage because the stage strips away every *narrative* buffer that normally hides the physics from view. Patricia Ryan Madson built an entire philosophy on this insight — her *Improv Wisdom* frames improv's maxims (Say Yes, Pay Attention, Take Care of Each Other) as life principles, not performance techniques. Keith Johnstone never saw it differently: *Impro* is a book about education, creativity, and social conditioning that happens to use theater as its laboratory.

@@ -28,7 +28,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Alias:** Accept the current state and extend it forward, rather than resisting or undoing it.

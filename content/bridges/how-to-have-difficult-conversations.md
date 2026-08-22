@@ -8,6 +8,7 @@ entry_atoms: [active-listening, offers, yes-and, be-honest, emotional-truth, sta
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Have Difficult Conversations: The Improv Approach

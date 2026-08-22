@@ -8,6 +8,7 @@ entry_atoms: [spontaneity, offers, yes-and, discovery, internal-computation, irr
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Let Go of Control: What Improv Teaches About Surrender

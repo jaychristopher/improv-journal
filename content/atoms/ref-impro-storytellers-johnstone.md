@@ -23,7 +23,7 @@ work:
   published: "1999"
   isbn: "0571190995"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Keith Johnstone. *Impro for Storytellers.* Faber & Faber, 1999.**

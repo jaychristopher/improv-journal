@@ -21,7 +21,7 @@ work:
   published: "2004"
   isbn: "032500630X"
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Mick Napier. *Improvise: Scene from the Inside Out.* Heinemann, 2004.**

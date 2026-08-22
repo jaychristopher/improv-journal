@@ -22,7 +22,7 @@ work:
   published: "1987"
   isbn: "0394750594"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Sanford Meisner & Dennis Longwell. *Sanford Meisner on Acting.* Vintage Books, 1987.**

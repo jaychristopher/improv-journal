@@ -18,7 +18,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The shadow of **Be Changeable**. Steering is the subtle act of accepting your partner's offers on the surface while redirecting the scene toward your predetermined destination.

@@ -15,7 +15,7 @@ links:
   - { id: coherence, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.

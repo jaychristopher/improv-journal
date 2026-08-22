@@ -15,6 +15,7 @@ primary_cta_target: mirroring
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # Theatre Games: What They Are and How to Run Them

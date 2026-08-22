@@ -20,7 +20,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 How to sequence improv concepts for progressive skill-building — the meta-skill of designing a learning path from beginner to mastery.

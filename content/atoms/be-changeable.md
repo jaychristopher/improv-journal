@@ -28,7 +28,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.

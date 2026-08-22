@@ -28,7 +28,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The central reframe: improv isn't about comedy. Comedy is a byproduct. Improv is a **high-stakes game of reality construction** — two interdependent agents building a coherent world in real time without a blueprint, under the irreversible flow of time. The engine that sustains it is mutual delight — the system runs on play, not discipline.

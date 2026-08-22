@@ -13,6 +13,7 @@ primary_cta_target: directed-scene
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # How to Be a Better Manager: Coach Without Taking Over

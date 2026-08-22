@@ -8,6 +8,7 @@ entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Stop Caring What People Think: The Performer's Secret

@@ -17,7 +17,7 @@ links:
   - { id: relationship, relation: enables }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Trains:** Be Honest — sending clear, authentic signals without distortion. This is the scene-length application of Do-Feel-Say.

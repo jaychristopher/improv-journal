@@ -24,7 +24,7 @@ links:
   - { id: ref-impro-johnstone, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The UCB principle that character emerges from the game pattern, not from biography, backstory, or accent. A character who apologizes for everything IS the character — the game defines them. This inverts the traditional actor's process: instead of building a character who then behaves, you discover a behavior and that behavior becomes the character.

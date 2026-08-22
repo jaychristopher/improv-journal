@@ -20,7 +20,7 @@ work:
   authors: ["Jimmy Carrane"]
   name: "Improv Nerd"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Jimmy Carrane. *Improv Nerd* podcast & jimmycarrane.com blog. Ongoing (~290+ episodes).**

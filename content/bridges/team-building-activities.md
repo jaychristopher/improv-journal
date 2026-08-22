@@ -8,6 +8,7 @@ entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportiv
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-07"
+updated: "2026-08-22"
 ---
 
 # Team Building Activities That Actually Change How Your Team Works

@@ -19,7 +19,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.

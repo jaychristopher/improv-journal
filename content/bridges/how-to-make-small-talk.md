@@ -8,6 +8,7 @@ entry_atoms: [offers, yes-and, active-listening, be-present, commitment]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Make Small Talk: The Improv Method That Turns Any Conversation Into Connection

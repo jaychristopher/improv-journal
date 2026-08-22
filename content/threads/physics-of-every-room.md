@@ -10,7 +10,7 @@ status: seed
 atoms: [reality-construction, systemic-health-indicators, systemic-collapse-modes, irreversibility, shared-reality-fragility]
 tags: [synthesis, beyond-stage, meta, systems-thinking]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-04-21"
 ---
 
 Let's name what we've been building toward.

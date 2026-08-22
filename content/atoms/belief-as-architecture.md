@@ -18,7 +18,7 @@ links:
   - { id: judgment, relation: illustrates }
 sources: []
 created: "2026-05-14"
-updated: "2026-05-14"
+updated: "2026-08-22"
 ---
 
 People defend their belief systems by default — not as a preference, but as architecture. A coherent self-story is load-bearing for the identity that sits on top of it; the beliefs aren't decorations on the building, they *are* the building. Knock out a structural belief and the whole shape wobbles. The defense reflex is the body protecting the structure, not the opinion.

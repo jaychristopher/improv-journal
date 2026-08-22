@@ -23,7 +23,7 @@ work:
   published: "2015"
   isbn: "0977309347"
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **TJ Jagodowski & Dave Pasquesi. *Improvisation at the Speed of Life.* Solo Roma, 2015.**

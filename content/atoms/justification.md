@@ -19,7 +19,7 @@ links:
   - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 The act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.

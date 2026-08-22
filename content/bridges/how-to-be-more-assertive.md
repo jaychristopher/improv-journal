@@ -8,6 +8,7 @@ entry_atoms: [status, commitment, initiation, be-brave, signal]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Be More Assertive: The Status Secret from Improv

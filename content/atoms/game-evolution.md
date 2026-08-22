@@ -15,7 +15,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 How a game transforms within a scene — not just repeating at higher intensity, but changing in kind. Four modes of evolution.

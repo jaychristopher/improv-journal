@@ -15,7 +15,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Trains:** Specificity, commitment, shared vocabulary, narrative heightening through convention. Not parody — authentic engagement with genre as a vehicle for developing advanced performance skills.

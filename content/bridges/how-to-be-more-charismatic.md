@@ -8,6 +8,7 @@ entry_atoms: [commitment, status, be-present, active-listening, signal]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # How to Be More Charismatic: The Improv Framework for Magnetic Presence

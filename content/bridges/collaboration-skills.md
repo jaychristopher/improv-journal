@@ -8,6 +8,7 @@ entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, 
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # Collaboration Skills: What Improv Ensembles Know About Working Together

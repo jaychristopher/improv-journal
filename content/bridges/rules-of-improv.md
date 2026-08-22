@@ -10,6 +10,7 @@ entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontanei
 entry_path: beginner-foundations
 status: draft
 created: "2026-04-22"
+updated: "2026-08-22"
 ---
 
 # The Rules of Improv (And Why Half of Them Are Wrong)

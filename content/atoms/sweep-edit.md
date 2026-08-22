@@ -15,7 +15,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The Harold's signature transition device. One player walks briskly across the front of the stage, perpendicular to the audience's sightline, signaling that the current scene is over and a new beat begins. The most common edit in Harold and standard across many longform formats.

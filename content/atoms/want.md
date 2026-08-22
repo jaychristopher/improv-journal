@@ -16,7 +16,7 @@ links:
   - { id: discovery, relation: enables }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters *do things* rather than merely exist.

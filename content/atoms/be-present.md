@@ -26,7 +26,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 **Alias:** Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.

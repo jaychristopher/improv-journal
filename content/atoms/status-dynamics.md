@@ -23,7 +23,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The mastery-level work on status is not "who is high and who is low" — it is the **movement** of status within a scene. Raising, lowering, transfers, mismatches, and the gap between performed status and actual status. Johnstone's *Impro*, Ch. 2 ("Status") is the core text. The `status` atom covers the fundamentals; this atom covers the dynamics.

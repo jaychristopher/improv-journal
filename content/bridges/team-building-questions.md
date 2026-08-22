@@ -7,6 +7,7 @@ entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # Team Building Questions That Actually Build Trust

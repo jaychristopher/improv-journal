@@ -15,7 +15,7 @@ links:
   - { id: obvious-choice, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Trains:** Be Brave — the threshold moment of starting.

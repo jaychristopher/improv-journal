@@ -21,7 +21,7 @@ work:
   publisher: "Self-published"
   published: "2016"
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Will Hines. *How to Be the Greatest Improviser on Earth.* Self-published, 2016.**

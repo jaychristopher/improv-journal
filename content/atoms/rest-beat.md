@@ -18,7 +18,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The return to base reality between heightened beats of the game. Rest beats are what give each escalation its impact — without them, heightening is just noise.

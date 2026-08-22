@@ -19,7 +19,7 @@ links:
   - { id: belief-as-architecture, relation: enables }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The shared reality of an improv scene — that you're in a freezer, that you're husband and wife — isn't physically real. There are no walls, no costumes. The reality only exists as long as the participants are actively maintaining it. This fragility exists because meaning is relational: there is no external substrate holding the reality in place. It lives only in the ongoing signals between minds.

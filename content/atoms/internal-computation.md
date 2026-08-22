@@ -20,7 +20,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 The shadow of **Be Present**. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues without you.

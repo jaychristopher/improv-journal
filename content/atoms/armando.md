@@ -20,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes. The most widely performed longform structure after the Harold.

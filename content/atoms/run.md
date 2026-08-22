@@ -19,7 +19,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 A rapid-fire sequence of short scenes or callbacks that builds momentum toward a show's climax. Scenes get progressively shorter and faster, with pace becoming as important as content. Runs typically appear at the end of longform shows, especially Harold third beats.

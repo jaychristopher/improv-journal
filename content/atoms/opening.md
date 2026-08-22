@@ -16,7 +16,7 @@ links:
   - { id: commitment, relation: requires }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The 3-5 minute ensemble ritual that transforms a single audience suggestion into multiple themes, ideas, and premises for a longform show. The opening warms ensemble cohesion and gives the team shared source material to mine for scenes.

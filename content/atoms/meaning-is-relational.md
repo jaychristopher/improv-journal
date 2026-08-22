@@ -21,7 +21,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 Meaning is completed in reception. A single mind can intend things, but the meaning of any offer — its value, its consequence, its place in the scene — is indeterminate until another mind responds. A gesture means nothing definite until someone receives it. An emotion is incomplete until someone witnesses it. An offer has no settled value until someone builds on it.

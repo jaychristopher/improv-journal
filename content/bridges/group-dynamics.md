@@ -8,6 +8,7 @@ entry_atoms: [group-mind, ensemble, status-dynamics, interdependence, safety-in-
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # Group Dynamics: What Improv Ensembles Know About How Groups Work

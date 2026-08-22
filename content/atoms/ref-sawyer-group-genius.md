@@ -21,7 +21,7 @@ work:
   published: "2007"
   isbn: "0465071937"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Keith Sawyer. *Group Genius: The Creative Power of Collaboration.* Basic Books, 2007 (revised 2017).**

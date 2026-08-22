@@ -18,7 +18,7 @@ links:
   - { id: harold, relation: contrasts }
 sources: []
 created: "2026-04-09"
-updated: "2026-04-09"
+updated: "2026-08-22"
 ---
 
 Audience suggestions written on slips of paper before the show, placed in a hat (or bowl, or bucket), pulled randomly, and performed as rapid-fire scenes lasting 10-30 seconds each. The purest form of suggestion-to-scene: no warm-up, no development, just premise and execution.

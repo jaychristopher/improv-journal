@@ -22,7 +22,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.

@@ -21,7 +21,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 You cannot build shared reality alone. The system requires multiple agents. No individual performer has enough bandwidth, perspective, or creative capacity to sustain a scene by themselves.

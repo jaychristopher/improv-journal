@@ -21,7 +21,7 @@ work:
   published: "2011"
   isbn: "0316056898"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Tina Fey. *Bossypants.* Reagan Arthur Books / Little, Brown and Company, 2011.**

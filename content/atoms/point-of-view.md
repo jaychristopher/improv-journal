@@ -18,7 +18,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.

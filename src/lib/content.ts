@@ -759,7 +759,13 @@ export interface Episode {
   audioUrl: string;
   description?: string;
   duration?: string; // formatted, e.g. "4:32"
-  /** ISO date the underlying content was published, for feed pubDate ordering. */
+  /**
+   * ISO date the underlying content was published, for feed pubDate ordering.
+   *
+   * `created`, not `updated`. An episode's publication date does not move
+   * because the page was edited, and reading `updated` here meant that
+   * syncing modification dates collapsed every episode onto one pubDate.
+   */
   published?: string;
 }
 
@@ -793,7 +799,7 @@ export async function getEpisodesForShow(
             audioUrl: audio,
             description: b.frontmatter.description,
             duration: getAudioDuration(audio),
-            published: b.frontmatter.updated ?? b.frontmatter.created,
+            published: b.frontmatter.created,
           });
         }
       }
@@ -807,7 +813,7 @@ export async function getEpisodesForShow(
               href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
               audioUrl: audio,
               duration: getAudioDuration(audio),
-              published: a.frontmatter.updated ?? a.frontmatter.created,
+              published: a.frontmatter.created,
             });
           }
         }
@@ -821,7 +827,7 @@ export async function getEpisodesForShow(
             href: `/threads/${t.frontmatter.id}`,
             audioUrl: audio,
             duration: getAudioDuration(audio),
-            published: t.frontmatter.updated ?? t.frontmatter.created,
+            published: t.frontmatter.created,
           });
         }
       }
@@ -834,7 +840,7 @@ export async function getEpisodesForShow(
             href: `/paths/${p.frontmatter.id}`,
             audioUrl: audio,
             duration: getAudioDuration(audio),
-            published: p.frontmatter.updated ?? p.frontmatter.created,
+            published: p.frontmatter.created,
           });
         }
       }

@@ -8,6 +8,7 @@ entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vuln
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
+updated: "2026-08-22"
 ---
 
 # How to Stop Overthinking in a Relationship

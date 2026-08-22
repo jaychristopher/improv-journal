@@ -27,7 +27,7 @@ work:
   published: "2013"
   isbn: "0989387801"
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-21"
 ---
 
 **Matt Besser, Ian Roberts, Matt Walsh. *Upright Citizens Brigade Comedy Improvisation Manual.* Comedy Council of Nicea, 2013.**

@@ -22,7 +22,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support. The purest test of improv partnership: nowhere to hide, no one to rescue you, every choice carries full weight.

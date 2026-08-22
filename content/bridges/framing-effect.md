@@ -10,6 +10,7 @@ entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-
 entry_path: improv-for-life
 status: draft
 created: "2026-05-14"
+updated: "2026-08-22"
 ---
 
 # The Framing Effect: How to Use the Skill That Looks Like a Bias

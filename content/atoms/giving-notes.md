@@ -18,7 +18,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 How to give feedback after scenes and shows — the teacher's and director's core skill. Distinct from side-coaching (which happens during play): notes happen after, in a reflective space.

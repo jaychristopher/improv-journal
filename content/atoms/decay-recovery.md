@@ -20,7 +20,7 @@ links:
   - { id: environment, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 How to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless.

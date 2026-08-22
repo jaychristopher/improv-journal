@@ -18,7 +18,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 **Trains:** Space work — building and maintaining a shared physical environment with no dialogue.

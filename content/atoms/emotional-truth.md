@@ -19,7 +19,7 @@ links:
   - { id: character, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-04-03"
+updated: "2026-08-22"
 ---
 
 **Quality of: Be Honest**

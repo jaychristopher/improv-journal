@@ -15,7 +15,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 **Trains:** Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence. The Harold opening practiced as a standalone exercise, removed from performance context.

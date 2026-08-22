@@ -21,7 +21,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-09"
-updated: "2026-04-09"
+updated: "2026-08-22"
 ---
 
 Keith Johnstone's format where performers take turns directing each other's scenes. Each performer pitches a scene idea to the audience, then directs fellow performers in it. Good scenes earn the director a banana (literally — a foam banana, a trophy, a token). Bad scenes earn the director a forfeit (a humiliating task chosen by the audience or host). The performer with the most bananas at the end wins.

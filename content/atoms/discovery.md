@@ -23,7 +23,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-04-04"
+updated: "2026-08-22"
 ---
 
 The moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene *this scene* clicks into place. Discovery is not planned. It emerges from the interaction and is recognized, not invented.

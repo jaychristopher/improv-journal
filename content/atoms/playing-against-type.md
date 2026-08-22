@@ -23,7 +23,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Subverting the audience's expectations at the character level. The tough guy who is tender. The librarian who is dangerous. The child who is wise. The drill sergeant who is afraid. Playing against type creates character depth through the gap between what the audience expects and what the performer delivers.

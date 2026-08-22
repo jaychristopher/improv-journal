@@ -26,7 +26,7 @@ links:
   - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 Commitment is the willingness to fully invest in a choice, even — especially — when you're unsure it's the "right" one. In improv, a fully committed mediocre choice will always outperform a half-hearted brilliant one.

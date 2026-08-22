@@ -24,7 +24,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the 1980s at iO Chicago, further refined by the Upright Citizens Brigade. Described in *Truth in Comedy* (1994) as "a collage of scenes inspired by a single suggestion which are interwoven and connected."
