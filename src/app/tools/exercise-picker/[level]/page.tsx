@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { getPopulatedCombinations } from "@/lib/exercise-picker";
 import { extractDescription, pageTitle } from "@/lib/seo";
 
 import { EXERCISE_FOCUS_MAP, FOCUSES, getLevelBySlug, LEVELS } from "../picker-config";
@@ -41,6 +42,8 @@ function getExerciseFocuses(id: string, tags: string[]): string[] {
 
 export default async function LevelPage({ params }: { params: Promise<{ level: string }> }) {
   const { level } = await params;
+  const populated = await getPopulatedCombinations();
+  const hasCombo = (l: string, f: string) => populated.some((c) => c.level === l && c.focus === f);
   const config = getLevelBySlug(level);
   if (!config) notFound();
 
@@ -98,7 +101,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
         >
           All
         </Link>
-        {FOCUSES.map((f) => (
+        {FOCUSES.filter((f) => hasCombo(level, f.slug)).map((f) => (
           <Link
             key={f.slug}
             href={`/tools/exercise-picker/${level}/${f.slug}`}

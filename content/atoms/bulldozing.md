@@ -16,7 +16,7 @@ links:
   - { id: elevating, relation: contrasts }
   - { id: cognitive-bandwidth, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
-sources: [ref-truth-in-comedy]
+sources: []
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

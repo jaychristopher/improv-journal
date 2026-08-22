@@ -8,6 +8,7 @@ import {
   loadShows,
   loadThreads,
 } from "@/lib/content";
+import { getPopulatedCombinations } from "@/lib/exercise-picker";
 import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { SITE_URL } from "@/lib/seo";
 
@@ -96,7 +97,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Tools — exercise picker with level/focus hierarchy
   const levels = ["beginner", "intermediate", "advanced"];
-  const focuses = ["presence", "ensemble", "emotion", "courage", "physicality", "recovery"];
   entries.push({
     url: `${SITE_URL}/tools/exercise-picker`,
     lastModified: newest(atomsOfType("exercise")),
@@ -110,14 +110,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
       changeFrequency: "monthly",
     });
-    for (const focus of focuses) {
-      entries.push({
-        url: `${SITE_URL}/tools/exercise-picker/${level}/${focus}`,
-        lastModified: newest(atomsOfType("exercise")),
-        priority: 0.5,
-        changeFrequency: "monthly",
-      });
-    }
+  }
+  // Only combinations that actually have exercises are published, so only
+  // those belong in the sitemap.
+  for (const combo of await getPopulatedCombinations()) {
+    entries.push({
+      url: `${SITE_URL}/tools/exercise-picker/${combo.level}/${combo.focus}`,
+      lastModified: newest(atomsOfType("exercise")),
+      priority: 0.5,
+      changeFrequency: "monthly",
+    });
   }
 
   // Sub-hub pages, each as fresh as the atoms it lists

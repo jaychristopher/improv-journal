@@ -3,25 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { extractDescription } from "@/lib/seo";
+import { getPickerExercises, getPopulatedCombinations } from "@/lib/exercise-picker";
 
-import {
-  EXERCISE_FOCUS_MAP,
-  FOCUSES,
-  getFocusBySlug,
-  getLevelBySlug,
-  LEVELS,
-} from "../../picker-config";
+import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
 
-export function generateStaticParams() {
-  const params: { level: string; focus: string }[] = [];
-  for (const l of LEVELS) {
-    for (const f of FOCUSES) {
-      params.push({ level: l.slug, focus: f.slug });
-    }
-  }
-  return params;
+export async function generateStaticParams() {
+  // Combinations with no exercises are not published: the page would promise
+  // exercises in its title and deliver none.
+  return getPopulatedCombinations();
 }
 
 export async function generateMetadata({
@@ -44,21 +33,6 @@ export async function generateMetadata({
   };
 }
 
-function matchesLevel(tags: string[], level: string): boolean {
-  if (tags.includes("fundamentals")) return true;
-  return tags.includes(level);
-}
-
-function matchesFocus(id: string, tags: string[], focusTag: string, extraTags: string[]): boolean {
-  if (tags.includes(focusTag)) return true;
-  const mapped = EXERCISE_FOCUS_MAP[id] ?? [];
-  if (mapped.includes(focusTag)) return true;
-  for (const extra of extraTags) {
-    if (tags.includes(extra) || mapped.includes(extra)) return true;
-  }
-  return false;
-}
-
 export default async function LevelFocusPage({
   params,
 }: {
@@ -69,26 +43,11 @@ export default async function LevelFocusPage({
   const focusConfig = getFocusBySlug(focus);
   if (!levelConfig || !focusConfig) notFound();
 
-  const atoms = await loadAtoms();
-  const exercises = atoms
-    .filter(
-      (a) =>
-        a.frontmatter.type === "exercise" &&
-        matchesLevel(a.frontmatter.tags ?? [], level) &&
-        matchesFocus(
-          a.frontmatter.id,
-          a.frontmatter.tags ?? [],
-          focusConfig.tag,
-          focusConfig.extraTags,
-        ),
-    )
-    .map((a) => ({
-      id: a.frontmatter.id,
-      title: a.frontmatter.title,
-      tags: a.frontmatter.tags ?? [],
-      href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
-      description: extractDescription(a.content, 200),
-    }));
+  const exercises = await getPickerExercises(level, focusConfig.tag, focusConfig.extraTags);
+  if (exercises.length === 0) notFound();
+
+  const populated = await getPopulatedCombinations();
+  const hasCombo = (l: string, f: string) => populated.some((c) => c.level === l && c.focus === f);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -110,7 +69,7 @@ export default async function LevelFocusPage({
 
       {/* Level tabs */}
       <nav className="mb-4 flex gap-2" aria-label="Level">
-        {LEVELS.map((l) => (
+        {LEVELS.filter((l) => hasCombo(l.slug, focus)).map((l) => (
           <Link
             key={l.slug}
             href={`/tools/exercise-picker/${l.slug}/${focus}`}
@@ -133,7 +92,7 @@ export default async function LevelFocusPage({
         >
           All
         </Link>
-        {FOCUSES.map((f) => (
+        {FOCUSES.filter((f) => hasCombo(level, f.slug)).map((f) => (
           <Link
             key={f.slug}
             href={`/tools/exercise-picker/${level}/${f.slug}`}
@@ -174,16 +133,6 @@ export default async function LevelFocusPage({
           </Link>
         ))}
       </div>
-
-      {exercises.length === 0 && (
-        <p className="text-foreground/40 text-sm">
-          No exercises match this combination yet.{" "}
-          <Link href={`/tools/exercise-picker/${level}`} className="underline">
-            See all {levelConfig.label.toLowerCase()} exercises
-          </Link>
-          .
-        </p>
-      )}
 
       <div className="text-foreground/30 mt-12 text-xs">
         {exercises.length} exercises · {levelConfig.label} · {focusConfig.label} ·{" "}
