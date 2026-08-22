@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { GuideConcepts } from "@/components/GuideConcepts";
 import { LevelRedirect } from "@/components/LevelRedirect";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { RelatedGuides } from "@/components/RelatedGuides";
@@ -20,6 +21,7 @@ import {
   loadBridges,
 } from "@/lib/content";
 import { getCategoryForGuide } from "@/lib/guide-categories";
+import { getGuideConcepts } from "@/lib/guide-concepts";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
 import { ogImages, pageTitle } from "@/lib/seo";
@@ -253,24 +255,26 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
   const fm = bridge.frontmatter;
   const relations = BRIDGE_RELATIONS[slug] ?? { exercises: [], threads: [] };
   const category = getCategoryForGuide(slug);
-  const [exercises, entryPath, primaryCta, secondaryCta, relatedGuides] = await Promise.all([
-    Promise.all(
-      relations.exercises.map(async (id) => {
-        const atom = await getAtomBySlug(id);
-        return atom
-          ? {
-              id,
-              title: atom.frontmatter.title,
-              url: getAtomUrl({ id, type: atom.frontmatter.type }),
-            }
-          : { id, title: id, url: `/practice/exercises/${id}` };
-      }),
-    ),
-    fm.entry_path ? getPathBySlug(fm.entry_path) : null,
-    resolveBridgePrimaryCta(fm),
-    resolveBridgeSecondaryCta(fm.secondary_cta_target),
-    getRelatedBridges(slug),
-  ]);
+  const [exercises, entryPath, primaryCta, secondaryCta, relatedGuides, concepts] =
+    await Promise.all([
+      Promise.all(
+        relations.exercises.map(async (id) => {
+          const atom = await getAtomBySlug(id);
+          return atom
+            ? {
+                id,
+                title: atom.frontmatter.title,
+                url: getAtomUrl({ id, type: atom.frontmatter.type }),
+              }
+            : { id, title: id, url: `/practice/exercises/${id}` };
+        }),
+      ),
+      fm.entry_path ? getPathBySlug(fm.entry_path) : null,
+      resolveBridgePrimaryCta(fm),
+      resolveBridgeSecondaryCta(fm.secondary_cta_target),
+      getRelatedBridges(slug),
+      getGuideConcepts(slug),
+    ]);
   const audioUrl = getAudioUrl("bridges", slug);
   const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
   const fallbackPrimaryCta: BridgePrimaryCta | null = entryPath
@@ -378,6 +382,8 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
             </div>
           </div>
         )}
+
+        <GuideConcepts concepts={concepts} />
 
         <RelatedGuides guides={relatedGuides} />
 
