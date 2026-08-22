@@ -29,6 +29,11 @@ export const RELATED_GUIDE_LIMIT = 4;
 
 /** Editorial pairings that take precedence over computed matches. */
 export const CURATED_RELATED: Record<string, string[]> = {
+  "questions-to-get-to-know-someone": [
+    "how-to-make-small-talk",
+    "questions-to-ask-friends",
+    "how-to-make-friends-as-an-adult",
+  ],
   "questions-to-ask-in-an-interview": [
     "how-to-have-difficult-conversations",
     "how-to-be-more-assertive",
