@@ -7,17 +7,17 @@ import { loadImprovGames } from "@/lib/games";
 import { ogImages, pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Games: The Complete Collection"),
+  title: pageTitle("Improv Games: Warm-Ups, Exercises and Scene Games"),
   description:
-    "Every improv game and exercise, organized by level and skill. From warm-ups for beginners to advanced ensemble work.",
+    "Every game on the site, with what each one trains and when to reach for it — plus how to pick one by what is going wrong rather than by what sounds fun.",
   alternates: { canonical: "/improv-games" },
   openGraph: {
-    title: "Improv Games: The Complete Collection",
+    title: "Improv Games: Warm-Ups, Exercises and Scene Games",
     description:
-      "Every improv game and exercise, organized by level and skill. From warm-ups for beginners to advanced ensemble work.",
+      "Every game on the site, with what each one trains and when to reach for it — plus how to pick one by what is going wrong rather than by what sounds fun.",
     url: "/improv-games",
     type: "website",
-    images: ogImages("Improv Games: The Complete Collection"),
+    images: ogImages("Improv Games: Warm-Ups, Exercises and Scene Games"),
   },
 };
 
@@ -60,7 +60,7 @@ export default async function ImprovGamesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${SITE_URL}/improv-games`,
-    name: "Improv Games: The Complete Collection",
+    name: "Improv Games: Warm-Ups, Exercises and Scene Games",
     url: `${SITE_URL}/improv-games`,
     mainEntity: {
       "@type": "ItemList",
@@ -87,12 +87,12 @@ export default async function ImprovGamesPage() {
 
       <header className="mb-8">
         <h1 className="mt-1 text-3xl font-bold tracking-tight">
-          Improv Games: The Complete Collection
+          Improv Games: Warm-Ups, Exercises and Scene Games
         </h1>
         <p className="text-foreground/60 mt-2">
-          Every improv game and exercise, organized by level and skill. Each one includes how to run
-          it, what it builds, and why it works. Whether you&apos;re warming up before a show,
-          teaching a class, or looking for team building games — start here.
+          Every game on the site, each with how to run it, what it trains and how it fails. Filter
+          by level and focus below, or read on for how to choose one, how to run it, and why a game
+          teaches faster than an instruction does.
         </p>
       </header>
 
@@ -109,63 +109,124 @@ export default async function ImprovGamesPage() {
         </span>
       </Link>
 
+      {/* The list carries an h2 of its own so the game entries below it do not
+          jump the outline straight from h1 to h3. */}
+      <h2 className="mb-4 text-xl font-semibold">Every Game ({games.length})</h2>
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
-      {/* SEO sections targeting long-tail keywords */}
       <section className="border-foreground/10 mt-16 border-t pt-12">
-        <h2 className="mb-4 text-lg font-semibold">Improv Games for Beginners</h2>
-        <p className="text-foreground/60 mb-4 text-sm">
-          New to improv? These games require no experience and teach the fundamentals — saying yes,
-          listening, and building on what your partner gives you.
+        <h2 className="mb-3 text-xl font-semibold">How to Choose One</h2>
+        <p className="text-foreground/70 mb-4">
+          The usual way to pick a game is to find one that sounds fun. The better way is to name
+          what is going wrong and pick the game that isolates it. Almost every game here exists
+          because some specific thing was failing and somebody built a constraint that made it
+          impossible.
         </p>
-        <div className="flex flex-wrap gap-2">
-          {items
-            .filter((i) => i.tags.includes("beginner"))
-            .map((i) => (
-              <Link
-                key={i.id}
-                href={i.href}
-                className="border-foreground/10 hover:border-foreground/30 rounded-full border px-3 py-1 text-sm transition-colors"
-              >
-                {i.title}
-              </Link>
-            ))}
-        </div>
+        <ul className="text-foreground/70 mb-4 space-y-2">
+          <li>
+            <strong>Nobody is listening.</strong> Games where you cannot succeed alone:{" "}
+            <Link href="/practice/exercises/mirroring" className="underline">
+              Mirroring
+            </Link>
+            ,{" "}
+            <Link href="/practice/exercises/pass-the-clap" className="underline">
+              Pass the Clap
+            </Link>
+            .
+          </li>
+          <li>
+            <strong>Everyone is planning.</strong> Games that load attention until deliberation
+            stops being possible:{" "}
+            <Link href="/practice/exercises/zip-zap-zop" className="underline">
+              Zip Zap Zop
+            </Link>
+            ,{" "}
+            <Link href="/practice/exercises/big-booty" className="underline">
+              Big Booty
+            </Link>
+            .
+          </li>
+          <li>
+            <strong>Scenes are clever but cold.</strong>{" "}
+            <Link href="/practice/exercises/emotional-honesty-scene" className="underline">
+              Emotional Honesty Scene
+            </Link>
+            ,{" "}
+            <Link href="/practice/exercises/gift-giving" className="underline">
+              Gift Giving
+            </Link>
+            .
+          </li>
+          <li>
+            <strong>Nobody will start.</strong>{" "}
+            <Link href="/practice/exercises/first-line-drill" className="underline">
+              First Line Drill
+            </Link>
+            ,{" "}
+            <Link href="/practice/exercises/blind-offer" className="underline">
+              Blind Offer
+            </Link>
+            .
+          </li>
+          <li>
+            <strong>Scenes come apart halfway through.</strong>{" "}
+            <Link href="/practice/exercises/fracture-repair-drill" className="underline">
+              Fracture Repair Drill
+            </Link>
+            .
+          </li>
+          <li>
+            <strong>Everyone talks at once.</strong>{" "}
+            <Link href="/practice/exercises/group-mind-cultivation" className="underline">
+              Group Mind Cultivation
+            </Link>
+            .
+          </li>
+        </ul>
+        <p className="text-foreground/70">
+          If you cannot name what is wrong yet, that is its own problem and worth solving first
+          &mdash; see{" "}
+          <Link href="/how-it-works/diagnosis" className="underline">
+            what it looks like when a scene breaks
+          </Link>
+          .
+        </p>
       </section>
 
-      <section className="mt-10">
-        <h2 className="mb-4 text-lg font-semibold">Improv Warm-Up Games</h2>
-        <p className="text-foreground/60 mb-4 text-sm">
-          Quick games to get a group connected, present, and ready to play. Use these before
-          rehearsals, shows, or workshops.
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Warm-Up, Exercise, or Performance Game</h2>
+        <p className="text-foreground/70 mb-4">
+          These get lumped together as &ldquo;improv games&rdquo; and they do three different jobs.
+          Reaching for the wrong kind is the most common way a session goes flat.
         </p>
-        <div className="flex flex-wrap gap-2">
-          {items
-            .filter(
-              (i) =>
-                i.tags.includes("presence") ||
-                i.tags.includes("ensemble") ||
-                i.tags.includes("beginner"),
-            )
-            .slice(0, 8)
-            .map((i) => (
-              <Link
-                key={i.id}
-                href={i.href}
-                className="border-foreground/10 hover:border-foreground/30 rounded-full border px-3 py-1 text-sm transition-colors"
-              >
-                {i.title}
-              </Link>
-            ))}
-        </div>
+        <ul className="text-foreground/70 mb-4 space-y-2">
+          <li>
+            <strong>A warm-up</strong> is cheap, fast, and has no wrong answers. Its only job is to
+            move attention out of people&apos;s heads and into the room. Two minutes, no notes.
+          </li>
+          <li>
+            <strong>An exercise</strong> isolates one skill and has a failure mode you can coach. It
+            is run slowly, interrupted often, and is usually not much fun to watch &mdash; which is
+            fine, because nobody is watching.
+          </li>
+          <li>
+            <strong>A performance game</strong> has rules an audience can follow and a comic engine
+            of its own. It is built to be watched.
+          </li>
+        </ul>
+        <p className="text-foreground/70">
+          The classic mistake is running an exercise as though it were a performance game. The
+          moment players sense an audience they start playing for the laugh, and whatever the
+          exercise was isolating is gone.
+        </p>
       </section>
 
       {shortForm.length > 0 && (
-        <section className="mt-10">
-          <h2 className="mb-4 text-lg font-semibold">Short-Form Improv Games</h2>
-          <p className="text-foreground/60 mb-4 text-sm">
-            Games with rules, a structure, and usually an audience — the short-form formats played
-            at shows and jams, as opposed to the drills used in rehearsal.
+        <section className="mt-12">
+          <h2 className="mb-3 text-xl font-semibold">Short-Form Games</h2>
+          <p className="text-foreground/70 mb-4">
+            The performance kind: rules, a structure, and usually an audience &mdash; as opposed to
+            the drills used in rehearsal.
           </p>
           <div className="flex flex-wrap gap-2">
             {shortForm.map((game) => (
@@ -181,30 +242,75 @@ export default async function ImprovGamesPage() {
         </section>
       )}
 
-      <section className="mt-10">
-        <h2 className="mb-4 text-lg font-semibold">Looking for theatre games?</h2>
-        <p className="text-foreground/60 text-sm">
-          Many of these come from Viola Spolin&apos;s theatre games, which were built to train
-          skills rather than to get laughs — a distinction that changes how you run them.{" "}
-          <Link href="/theatre-games" className="text-foreground underline">
-            What theatre games are and how to run them
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">How to Run One</h2>
+        <p className="text-foreground/70 mb-4">
+          <strong>Coach during, not after.</strong>{" "}
+          <Link href="/practice/techniques/side-coaching" className="underline">
+            Side-coaching
+          </Link>{" "}
+          is Viola Spolin&apos;s method and the defining rule is that the note is acted on at the
+          moment it is needed. A short redirect called into a running game is worth more than five
+          minutes of notes afterwards, when the moment is unrecoverable.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>Say what it trains before you start.</strong> A game explained afterwards is a
+          game people played blind. Thirty seconds of framing changes what players pay attention to
+          for the whole round.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>Stop it while it is still working.</strong> Games have a ceiling, and the second
+          half of a round that has peaked teaches nothing except that the game is tiring.
+        </p>
+        <p className="text-foreground/70">
+          <strong>Think twice about elimination.</strong> Being out is a small public failure, and
+          in a room that has not built any trust yet it is the wrong first experience &mdash; see{" "}
+          <Link href="/practice/techniques/safety-in-the-room" className="underline">
+            safety in the room
           </Link>
-          .
+          . Most elimination games work perfectly well without it.
         </p>
       </section>
 
-      <section className="mt-10">
-        <h2 className="mb-4 text-lg font-semibold">Want to understand why these games work?</h2>
-        <p className="text-foreground/60 text-sm">
-          Every improv game trains a specific skill rooted in how human connection works.{" "}
-          <Link href="/how-it-works" className="text-foreground underline">
-            See the system underneath
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">
+          Why a Game Teaches Faster Than an Instruction
+        </h2>
+        <p className="text-foreground/70 mb-4">
+          Telling somebody to stop planning does not work, because the planning is not a decision. A
+          game that occupies the conscious mind removes the option, and the habit stops on its own
+          &mdash; which is the whole design of{" "}
+          <Link href="/practice/exercises/big-booty" className="underline">
+            Big Booty
           </Link>
-          , or{" "}
-          <Link href="/paths" className="text-foreground underline">
-            start a learning path
-          </Link>{" "}
-          to go deeper.
+          , where your own number keeps changing so the answer you rehearsed is wrong by the time
+          your turn arrives.
+        </p>
+        <p className="text-foreground/70">
+          Games also make invisible things visible. Hesitation inside a scene reads as the scene
+          going badly. Hesitation in a circle passing three syllables reads as exactly what it is,
+          to everyone including the person doing it. That is most of what a game is for: not to
+          practise a skill, but to let a room watch a habit happen.
+        </p>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Related</h2>
+        <p className="text-foreground/70">
+          Many of these descend from Viola Spolin&apos;s{" "}
+          <Link href="/theatre-games" className="underline">
+            theatre games
+          </Link>
+          , which were built to train skills rather than get laughs. If you need something to start
+          a scene with rather than a game to play, there are{" "}
+          <Link href="/improv-prompts" className="underline">
+            110 improv prompts
+          </Link>
+          . And for the model underneath all of it, see{" "}
+          <Link href="/how-it-works" className="underline">
+            how it works
+          </Link>
+          .
         </p>
       </section>
     </main>
