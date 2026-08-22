@@ -115,12 +115,30 @@ export function leadParagraph(markdownContent: string, maxLen = 300): string {
     .replace(/\s{2,}/g, " ")
     .trim();
 
-  if (text.length <= maxLen) return text;
+  return metaDescription(text, maxLen, EXTRACTOR_SENTENCE_FLOOR);
+}
 
-  const truncated = text.substring(0, maxLen);
-  const lastSentence = truncated.lastIndexOf(". ");
-  if (lastSentence > maxLen * 0.5) return truncated.substring(0, lastSentence + 1);
-  return `${truncated.substring(0, truncated.lastIndexOf(" "))}...`;
+/**
+ * Repair a description that a stripped label left dangling.
+ *
+ * Dropping the lead label assumes it introduces a fresh sentence, which holds
+ * for "**Trains:** Be Changeable — the ability to shift emotional state" but
+ * not for "**Trains:** working under enough load that deliberation becomes
+ * impossible." There the label is the sentence's subject, so removing it
+ * leaves a lowercase fragment as the entire search snippet. Six exercise
+ * pages shipped one.
+ *
+ * The clause the label governed does not describe anything on its own, so it
+ * goes, and the sentence after it — which is reliably what the thing actually
+ * is — becomes the snippet. Where nothing follows, capitalise rather than
+ * publish a fragment.
+ */
+function dropDanglingLabelClause(text: string): string {
+  const trimmed = text.trimStart();
+  if (!trimmed || !/^\p{Ll}/u.test(trimmed)) return text;
+  const rest = trimmed.replace(/^[^.!?]*[.!?]+\s+/, "");
+  if (rest && rest !== trimmed) return rest;
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
 }
 
 /**
@@ -137,6 +155,13 @@ export function stripLeadLabel(markdownContent: string): string {
 
 /** Roughly where Google truncates a title in results. */
 export const TITLE_MAX = 60;
+
+/**
+ * The sentence floor the atom extractors use. Matches the ratio their own
+ * truncation applied before they shared the clamp, so routing them through it
+ * fixes the fragments without cutting snippets that already ended cleanly.
+ */
+const EXTRACTOR_SENTENCE_FLOOR = 0.5;
 
 /** Roughly where Google truncates a description in results. */
 export const DESCRIPTION_MAX = 158;
@@ -225,7 +250,7 @@ export function extractDescription(markdownContent: string, maxLen = 155): strin
   // Anchored to the string start: a bold run mid-document is content, not a
   // label. The old /m flag let it fire on any line. Keep the label when it is
   // the whole entry — stripping it there leaves nothing to describe the page.
-  const labelled = prose.replace(/^\s*\*\*[^*\n]+\*\*:?\s*/, "");
+  const labelled = dropDanglingLabelClause(prose.replace(/^\s*\*\*[^*\n]+\*\*:?\s*/, ""));
   const body = labelled.trim().length > 0 ? labelled : prose;
 
   const text = stripEmphasis(body)
@@ -236,15 +261,9 @@ export function extractDescription(markdownContent: string, maxLen = 155): strin
     .replace(/\s{2,}/g, " ") // collapse whitespace
     .trim();
 
-  // Take up to maxLen characters, breaking at sentence boundary if possible
-  if (text.length <= maxLen) return text;
-
-  const truncated = text.substring(0, maxLen);
-  const lastSentence = truncated.lastIndexOf(". ");
-  if (lastSentence > maxLen * 0.5) {
-    return truncated.substring(0, lastSentence + 1);
-  }
-  return truncated.substring(0, truncated.lastIndexOf(" ")) + "...";
+  // Both extractors used to cut at maxLen and append "...", which is uglier
+  // than a real ellipsis and spends three characters of budget saying nothing.
+  return metaDescription(text, maxLen, EXTRACTOR_SENTENCE_FLOOR);
 }
 
 const TYPE_LABELS: Record<string, string> = {
@@ -286,7 +305,18 @@ function fitSentences(text: string, maxLen: number): string {
  * pages shipped snippets Google cuts mid-word. Trimming to a whole sentence
  * loses less than the truncation does.
  */
-export function metaDescription(text: string, maxLen = DESCRIPTION_MAX): string {
+export function metaDescription(
+  text: string,
+  maxLen = DESCRIPTION_MAX,
+  /**
+   * How much of the budget a whole-sentence snippet must fill to be preferred
+   * over a trimmed one. Hand-written descriptions hold out for 0.6; the atom
+   * extractors pass 0.5, which is the ratio their own truncation used before
+   * they shared this clamp. Raising it to 0.6 for them cut fifteen snippets
+   * mid-thought that had been ending cleanly.
+   */
+  sentenceFloor = 0.6,
+): string {
   const trimmed = text.replace(/\s+/g, " ").trim();
   if (trimmed.length <= maxLen) return trimmed;
 
@@ -302,7 +332,7 @@ export function metaDescription(text: string, maxLen = DESCRIPTION_MAX): string 
 
   // Keeping only a short opening clause says less than a trimmed full snippet
   // would, and the snippet is the only thing a searcher reads before deciding.
-  if (kept.length >= maxLen * 0.6) return kept;
+  if (kept.length >= maxLen * sentenceFloor) return kept;
   const cut = trimmed.slice(0, maxLen - 1);
   const space = cut.lastIndexOf(" ");
   return `${space > maxLen * 0.5 ? cut.slice(0, space) : cut}\u2026`;

@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { atomDescription, DESCRIPTION_MAX, pageTitle, SITE_NAME, TITLE_MAX } from "../seo";
+import {
+  atomDescription,
+  DESCRIPTION_MAX,
+  extractDescription,
+  pageTitle,
+  SITE_NAME,
+  TITLE_MAX,
+} from "../seo";
 
 const BRAND = ` | ${SITE_NAME}`;
 
@@ -62,5 +69,59 @@ describe("atomDescription", () => {
     const desc = atomDescription("Mirroring", "exercise", unbroken);
     expect(desc.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
     expect(desc.length).toBeGreaterThan(0);
+  });
+});
+
+describe("extractDescription", () => {
+  const atom = (body: string) => `---
+id: x
+---
+
+# Heading
+
+${body}
+`;
+
+  it("drops the clause a stripped label was the subject of", () => {
+    const out = extractDescription(
+      atom(
+        "**Trains:** working under enough load that deliberation becomes impossible. " +
+          "A rhythm game whose real function is to flood attention.",
+      ),
+    );
+    expect(out).toBe("A rhythm game whose real function is to flood attention.");
+  });
+
+  it("keeps a label whose clause already starts a sentence", () => {
+    const out = extractDescription(atom("**Trains:** Be Changeable — shifting state on input."));
+    expect(out).toBe("Be Changeable — shifting state on input.");
+  });
+
+  it("capitalises rather than shipping a fragment when nothing follows", () => {
+    expect(extractDescription(atom("**Trains:** giving up authorship"))).toBe(
+      "Giving up authorship",
+    );
+  });
+
+  it("never opens a snippet mid-sentence", () => {
+    const cases = [
+      "**Trains:** shared timing. Two people clap at the same instant.",
+      "**Trains:** noticing how much of a conversation is deferral.",
+      "A perfectly ordinary opening sentence.",
+    ];
+    for (const body of cases) {
+      const out = extractDescription(atom(body));
+      expect(out.length).toBeGreaterThan(0);
+      expect(/^\p{Ll}/u.test(out)).toBe(false);
+    }
+  });
+
+  it("clamps to a whole sentence rather than cutting mid-thought", () => {
+    const long =
+      "You cannot build shared reality alone. The system requires multiple agents. " +
+      "No individual performer has enough bandwidth, perspective, or creative range to do it.";
+    const out = extractDescription(atom(long), DESCRIPTION_MAX);
+    expect(out.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
+    expect(out.endsWith("...")).toBe(false);
   });
 });

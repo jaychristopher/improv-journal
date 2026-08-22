@@ -95,6 +95,14 @@ for (const [url, html] of pages) {
         add("critical", url, `description opens with markdown: ${desc.slice(0, 40)}`);
       if (/\*\*|\]\(|\|/.test(desc)) add("critical", url, "markdown syntax inside description");
       if (/\n/.test(desc)) add("critical", url, "raw newline inside description");
+      // Stripping a "**Trains:**" label off a sentence that the label was the
+      // subject of leaves the rest of that sentence as the whole snippet, so
+      // the search result opened mid-thought in lowercase. Six pages shipped
+      // one, and the extractor gives no sign it happened.
+      if (/^\p{Ll}/u.test(desc.trim()))
+        add("critical", url, `description starts mid-sentence: ${desc.slice(0, 45)}`);
+      if (/\.\.\.$/.test(desc.trim()))
+        add("warning", url, "description ends in three dots, not an ellipsis");
       if (desc.length > DESC_MAX) add("warning", url, `description ${desc.length} chars`);
       if (desc.length < DESC_MIN) add("warning", url, `description ${desc.length} chars`);
     }
