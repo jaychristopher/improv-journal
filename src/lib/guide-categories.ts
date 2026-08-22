@@ -50,6 +50,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     description: "Listening, conversation, conflict, and connection.",
     slugs: [
       "active-listening",
+      "active-listening-exercises",
       "how-to-be-a-better-conversationalist",
       "how-to-be-a-good-listener",
       "interpersonal-communication-skills",

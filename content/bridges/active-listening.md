@@ -88,6 +88,8 @@ Improvisers have a principle for this: **let yourself be changed.** It's not abo
 
 ---
 
+_To practise it rather than read about it: [active listening exercises](/active-listening-exercises) — seven drills that make composing your reply structurally impossible._
+
 _For the full framework: [Building on Offers](/threads/building-on-offers). For the exercises: [Quieting the Planning Mind](/threads/quieting-the-planning-mind). For the complete path: [Physics of Connection](/paths/physics-of-connection)._
 
 **Sources cited:** Kahneman (1973), _Attention and Effort_. Sweller (1988), _Cognitive Science_. Cherry (1953), _Journal of the Acoustical Society of America_. Wickens (2002), _Theoretical Issues in Ergonomic Science_. Spolin (1963), _Improvisation for the Theater_.

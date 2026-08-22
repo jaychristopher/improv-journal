@@ -28,7 +28,16 @@ export const RELATED_GUIDE_LIMIT = 4;
 const CURATED_RELATED: Record<string, string[]> = {
   "how-to-stop-overthinking": ["active-listening", "stage-fright", "how-to-be-funny"],
   "psychological-safety": ["active-listening", "how-to-stop-overthinking"],
-  "active-listening": ["psychological-safety", "how-to-stop-overthinking"],
+  "active-listening": [
+    "active-listening-exercises",
+    "types-of-listening",
+    "how-to-stop-overthinking",
+  ],
+  "active-listening-exercises": [
+    "active-listening",
+    "types-of-listening",
+    "how-to-be-a-good-listener",
+  ],
   "how-to-be-funny": ["active-listening", "stage-fright"],
   "stage-fright": ["how-to-stop-overthinking", "psychological-safety"],
   "team-building-activities": ["psychological-safety", "how-to-give-feedback"],
