@@ -3,6 +3,7 @@ title: "Conversation Starters: 100 That Survive the Second Exchange"
 description: "A starter only buys you one exchange. What you do with the second decides the rest. 100 sorted by the room you are in, and why the clever ones die fastest."
 target_keywords:
   - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "conversation topics", volume: 7200, difficulty: 25, traffic_potential: 143000, parent: "conversation starters" }
   - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters" }
   - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters" }
   - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids" }
@@ -166,6 +167,29 @@ Shorter, concrete, and with an obvious way in. The dinner-table versions work be
 - What made someone laugh today?
 - If you could swap jobs with anyone here, who?
 - What was the best thing you ate today?
+
+## Conversation Topics: Which Ones Behave Differently
+
+People look for conversation topics because they are afraid of running out. Mostly that fear is misplaced, and the argument against it is made properly in [how to keep a conversation going](/how-to-keep-a-conversation-going): running dry is almost always a receiving problem rather than a supply problem, and another twenty subjects in your pocket will not fix it.
+
+That said, topics genuinely are not equal — just not along the axis people assume. The difference is not how interesting a subject is. It is how much the other person can do with it.
+
+**The ones that keep producing:**
+
+- **Whatever they are currently making, fixing or learning.** In progress means unresolved, and unresolved means there is something to say that they have not already said forty times.
+- **A recent change.** New job, new city, new baby, new knee. Change generates specifics automatically.
+- **Something they know that you do not.** People are close to inexhaustible on the thing they happen to be expert in, and being asked is rare enough to be flattering without being flattery.
+- **A decision they have not made yet.** Settled decisions get a summary. Open ones get thinking out loud, which is far better company.
+- **The thing physically in front of both of you.** The venue, the food, the queue, the weather in the room rather than the weather in general.
+
+**The ones that die, and why:**
+
+- **Weather, traffic, the commute.** Not because they are boring but because they have no branches. One exchange and the subject is spent.
+- **The news, in general terms.** Either you agree and there is nothing to build, or you do not and now you are managing that instead.
+- **Anything where one of you has all the material.** A topic only one person can speak to is a lecture with a delay, however interesting it is.
+- **Their job title, as opposed to their work.** The title is a noun. What they actually do all day has verbs in it.
+
+The move that removes the problem entirely: **every answer you get contains two or three possible next topics, and the skill is taking one rather than reaching for a fresh subject.** "We drove down, it was awful" offers the drive, the place they came from, and whatever made it awful. Nobody who is listening properly needs a list.
 
 ## Why Conversation Starters Fail
 
