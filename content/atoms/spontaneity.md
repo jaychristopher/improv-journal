@@ -13,7 +13,10 @@ links:
   - { id: discovery, relation: enables }
   - { id: yes-and, relation: enables }
   - { id: blocking, relation: contrasts }
+  - { id: safety-in-the-room, relation: requires }
+  - { id: judgment, relation: contrasts }
   - { id: ref-impro-johnstone, relation: illustrates }
+  - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-08-22"
 updated: "2026-08-22"

@@ -3,7 +3,6 @@ title: "Team Building Questions That Actually Build Trust"
 description: "Most team building questions are trivially safe or performatively deep. Neither builds trust. Here's the improv principle that does — and 20 questions."
 target_keywords:
   - { keyword: "team building questions", volume: 3700, difficulty: 30, traffic_potential: 3700 }
-  - { keyword: "icebreaker questions for teams", volume: 1400 }
 entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive]
 entry_path: physics-of-connection
 status: draft
@@ -107,3 +106,5 @@ The questions aren't magic. The progression is. Each tier asks for a slightly hi
 ---
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore how trust, safety, and supportive response connect in a full system, start with the [Physics of Connection](/paths/physics-of-connection) path.*
+
+_For opening a meeting rather than deepening a team, and for the power gap that changes what a question means: [icebreaker questions for work](/icebreaker-questions-for-work)._
