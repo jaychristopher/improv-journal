@@ -63,15 +63,38 @@ Perfectionism is wit's assassin. The perfect response doesn't exist. There is on
 
 Every witty person you admire has said things that didn't land. Hundreds of times. The difference is they didn't stop. They said the next thing. And the next. Most people try once, it doesn't get a laugh, and they retreat into silence for the rest of the conversation. Witty people understand that misses are part of the process, not evidence of failure.
 
+## When Nothing Comes
+
+The advice above is about removing a filter. But there is a specific moment it does not cover: the two seconds when a response is expected, everyone is looking at you, and nothing has arrived.
+
+Quick-witted people are not generating material faster in that window. They are reaching for something already in the room, and there are only ever four things there.
+
+- **The last thing said.** Take their final few words and extend them. This is the improv drill `last-word-response` applied to real life, and it works because it needs no invention — the material is two seconds old and everyone just heard it.
+- **The obvious thing.** Say what everyone in the room is already half-thinking. `obvious-choice` is the whole technique: the response that feels too plain to be worth saying is usually the one that lands, because it is the one everybody recognises.
+- **The situation.** Describe what is actually happening, precisely. Not a joke about it — a specific description of it. Precision is doing the work.
+- **A genuine question.** If nothing else is available, ask the real question. It buys three seconds, it is never wrong, and it usually produces better material than whatever you were straining for.
+
+What none of those require is originality. That is the point. The two-second window is too short to invent anything, which is exactly why people who try to invent something come up empty, and people who reach for what is already there do not.
+
+## When It Doesn't Land
+
+Wit fails in public, which is why most people stop attempting it. The recoveries are learnable and mostly consist of not doing the thing instinct suggests.
+
+**The instinct is to explain.** Explaining a line that missed is the only move guaranteed to make it worse. It converts a small silence into a large one and signals that you needed it to work.
+
+**The move is to keep going.** Improvisers treat a dead line the way they treat any other event in a scene: as something that happened, which the next moment builds on. `latency-recovery` is the formal version — the fix for a stalled exchange is to re-enter it, not to repair the last beat.
+
+**A miss you carry lightly is not a miss.** The line landing badly costs almost nothing. Visibly minding that it landed badly is what people actually remember, because it tells them the attempt was a bid for approval rather than a contribution.
+
 ## How to Practice
 
-You don't need to take an improv class (though it's the fastest path). Here are three daily practices:
+You don't need to take an improv class (though it's the fastest path). Here are three daily practices, each with the improv exercise it corresponds to if you want the concentrated version.
 
-**Lower the stakes first.** Start being more spontaneous in low-risk contexts — texting, casual conversations, commenting on mundane things. Say the first thing that comes to mind instead of the third. The goal isn't to be funny. It's to train the muscle of expression-before-evaluation.
+**Lower the stakes first.** Start being more spontaneous in low-risk contexts — texting, casual conversations, commenting on mundane things. Say the first thing that comes to mind instead of the third. The goal isn't to be funny. It's to train the muscle of expression-before-evaluation. `first-line-drill` is the same thing under pressure: commit to an opening line before you know where it goes.
 
-**Notice what you censor.** For one day, pay attention to the thoughts you suppress. The ones you almost say but don't. Those suppressed thoughts are your wit. They're already there. Your editor is just deleting them before they reach your mouth.
+**Notice what you censor.** For one day, pay attention to the thoughts you suppress. The ones you almost say but don't. Those suppressed thoughts are your wit. They're already there. Your editor is just deleting them before they reach your mouth. `one-word-scene` makes the editing impossible rather than merely discouraged — with one word at a time there is no sentence to improve.
 
-**React to what's actually happening.** Wit isn't about having material. It's about seeing what's in front of you and responding honestly to it. The weather, the situation, the absurdity of whatever just happened. If you can describe reality with specificity and timing, you're witty. That's the whole thing.
+**React to what's actually happening.** Wit isn't about having material. It's about seeing what's in front of you and responding honestly to it. The weather, the situation, the absurdity of whatever just happened. If you can describe reality with specificity and timing, you're witty. That's the whole thing. `blind-offer` trains the reading half of it: responding to what your partner actually did rather than to what you assumed.
 
 ## The Real Secret
 
