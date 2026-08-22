@@ -3,7 +3,13 @@ title: "How to Be Funny (It's Not What You Think)"
 description: "Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor."
 target_keywords:
   - { keyword: "how to be funny", volume: 6600, difficulty: 2, traffic_potential: 3500, parent: "how to be funny" }
-  - { keyword: "how to be funnier", volume: 0, parent: "how to be funny" }
+  - { keyword: "how to be funnier", volume: 500, difficulty: 0, parent: "how to be funny" }
+  - { keyword: "how to be more funny", volume: 350, difficulty: 1, parent: "how to be funny" }
+  - { keyword: "how to be a funny person", volume: 70, difficulty: 0, traffic_potential: 3700, parent: "how to be funny" }
+  - { keyword: "how to be naturally funny", volume: 50, difficulty: 2, parent: "how to be funny" }
+serp_checked: "2026-08-22"
+serp_min_dr: 2
+serp_verdict: winnable
 entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness]
 entry_path: systems-of-improv
 primary_problem: "trying to be clever is making the moment feel forced"
@@ -22,6 +28,18 @@ Every article about being funny tells you the same things: observe the world lik
 It's like telling someone who can't swim: "Move your arms like this and kick your legs." Technically accurate. Functionally useless. Because the thing that makes swimming work isn't the arm movement — it's the relationship with the water.
 
 For 50 years, improv comedy has been running nightly experiments in what makes people laugh. Not scripted jokes. Not rehearsed bits. Unscripted scenes created in front of live audiences with no preparation. And the single most consistent finding contradicts almost everything the "how to be funny" articles tell you.
+
+## Can You Learn to Be Funny If You Are Not Naturally Funny?
+
+Yes, and the evidence is not an opinion. Improv schools take in people with no comedic background whatsoever — accountants, nurses, engineers who have never performed — and within a few months have them getting consistent laughs out of strangers with no written material and no preparation. That is not a hopeful claim, it is the operating model of an entire art form, running nightly for sixty years. If funniness were a fixed trait, the business would not exist.
+
+What does vary is arrival speed. Some people have quicker timing, or a taste for the absurd, or a childhood that rewarded being the one who made everyone laugh. Those are real advantages and they are not the mechanism.
+
+**The mechanism is that most people who call themselves not funny are not short of funny thoughts. They are editing them out.** Watch anyone in a group who is reliably funny and the difference is rarely wit. It is threshold. They have the observation and say it; the person beside them has the same observation two seconds earlier, decides it is not good enough, and keeps it. Both had the material. One shipped.
+
+That reframes the whole problem, because a threshold is much easier to move than a capacity. Everything below is about lowering it safely — and about the fact that the edited-out version is usually the funnier one, since the thing you *almost* said was honest and the thing you said instead was constructed.
+
+One distinction worth making, because the two get conflated and only one of them is hard. **Being fun and being funny are different, and being fun is the more valuable of the two.** Being funny means producing the laugh. Being fun means being easy to play with — you take what people offer, you commit to something silly without needing it to succeed, you make it safe for other people to be ridiculous. Fun people generate far more laughter than funny people do, because they cause it in everybody else rather than supplying it themselves. If you only get one, take fun.
 
 ## The First Rule of Being Funny: Stop Trying to Be Funny
 

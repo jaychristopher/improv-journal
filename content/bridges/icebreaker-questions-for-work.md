@@ -12,6 +12,9 @@ target_keywords:
   - { keyword: "funny icebreaker questions for work", volume: 700, parent: "ice breaker questions for work" }
   - { keyword: "work icebreakers", volume: 200, parent: "virtual ice breakers" }
   - { keyword: "virtual icebreaker questions", volume: 100, parent: "icebreaker questions for work" }
+serp_checked: "2026-08-22"
+serp_min_dr: 31
+serp_verdict: winnable
 entry_atoms: [safety-in-the-room, status, trust, vulnerability, be-thankful]
 entry_path: improv-for-teams
 primary_problem: "you have to open a meeting and every icebreaker you can think of makes people wince"
