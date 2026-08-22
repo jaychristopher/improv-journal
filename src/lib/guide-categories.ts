@@ -72,6 +72,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "team-building-questions",
       "5-minute-team-building",
       "psychological-safety",
+      "trust-building-exercises",
       "collaboration-skills",
       "group-dynamics",
       "how-to-read-the-room",

@@ -27,7 +27,12 @@ export const RELATED_GUIDE_LIMIT = 4;
 /** Editorial pairings that take precedence over computed matches. */
 const CURATED_RELATED: Record<string, string[]> = {
   "how-to-stop-overthinking": ["active-listening", "stage-fright", "how-to-be-funny"],
-  "psychological-safety": ["active-listening", "how-to-stop-overthinking"],
+  "psychological-safety": ["trust-building-exercises", "emotional-safety", "active-listening"],
+  "trust-building-exercises": [
+    "psychological-safety",
+    "team-building-activities",
+    "emotional-safety",
+  ],
   "active-listening": [
     "active-listening-exercises",
     "types-of-listening",

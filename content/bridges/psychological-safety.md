@@ -81,6 +81,10 @@ As one researcher put it: *"We can't force a flower to bloom by pulling its peta
 
 Build the structural conditions first. Then, if you want, use exercises to deepen what's already there.
 
+## The Exercises
+
+The protocols above are practised rather than adopted. For the drills themselves — what each one isolates, the order to run them in, and why the trust fall is not among them — see [trust building exercises](/trust-building-exercises).
+
 ## The Honest Assessment
 
 The improv-to-workplace transfer is **theoretically compelling but empirically undersupported.** A literature review by Huffaker & West found "only limited empirical research on the workplace application of improvisation training." Google's Project Aristotle validated the *concept* of psychological safety; it did not validate improv as the *method* for building it.
