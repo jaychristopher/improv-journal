@@ -1023,10 +1023,31 @@ export async function getPracticeRecommendationsForThread(
   return [...directRecommendations, ...linkedRecommendations].slice(0, 3);
 }
 
-/** Find all bridges that reference a given atom as an entry atom */
+/**
+ * Find all bridges that reference a given atom as an entry atom.
+ *
+ * Ordered rather than returned as found. The concept pages are the cluster
+ * that actually ranks — Search Console has them at positions 7 to 11 where the
+ * guides sit far lower — so the list of guides on a concept page is where the
+ * site's real search visibility hands readers on to something. Some atoms are
+ * referenced by fifteen or twenty guides, and the order was whatever
+ * `loadBridges` happened to produce, which put a guide that cannot rank first
+ * on eleven concept pages.
+ *
+ * Guides whose results have been checked and found closed sort last. Above
+ * them, reach — traffic potential where measured, volume otherwise — so the
+ * pages that can convert a reader appear first.
+ */
 export async function getBridgesForAtom(atomId: string) {
   const bridges = await loadBridges();
-  return bridges.filter((b) => b.frontmatter.entry_atoms?.includes(atomId));
+  const promotion = (b: (typeof bridges)[number]) => {
+    if (b.frontmatter.serp_verdict === "authority") return -1;
+    const primary = (b.frontmatter.target_keywords ?? [])[0];
+    return primary?.traffic_potential ?? primary?.volume ?? 0;
+  };
+  return bridges
+    .filter((b) => b.frontmatter.entry_atoms?.includes(atomId))
+    .sort((a, b) => promotion(b) - promotion(a) || a.slug.localeCompare(b.slug));
 }
 
 /** Find ALL paths that sequence a given thread (not just the first) */
