@@ -123,6 +123,65 @@ for (const [url, html] of pages) {
   }
 }
 
+// A stretched link makes a whole card clickable by absolutely positioning the
+// anchor's ::after. That lands on the nearest *positioned* ancestor — not the
+// immediate parent — so a card whose `relative` was dropped silently loses its
+// click target while still looking clickable. Two earlier hand-rolled checks
+// got this wrong in opposite directions by testing the parent instead.
+const VOID = new Set([
+  "area",
+  "base",
+  "br",
+  "col",
+  "embed",
+  "hr",
+  "img",
+  "input",
+  "link",
+  "meta",
+  "source",
+  "track",
+  "wbr",
+]);
+const POSITIONED = /\b(relative|absolute|fixed|sticky)\b/;
+const TAG = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>/g;
+const STRETCHED = /<a\b[^>]*after:absolute after:inset-0[^>]*>/g;
+
+function nearestPositioned(html, index) {
+  const stack = [];
+  for (const m of html.slice(0, index).matchAll(TAG)) {
+    const closing = m[1];
+    const tag = m[2].toLowerCase();
+    const attrs = m[3];
+    if (VOID.has(tag) || attrs.trimEnd().endsWith("/")) continue;
+    if (closing) {
+      for (let i = stack.length - 1; i >= 0; i -= 1) {
+        if (stack[i].tag === tag) {
+          stack.length = i;
+          break;
+        }
+      }
+    } else {
+      stack.push({ tag, attrs });
+    }
+  }
+  for (let i = stack.length - 1; i >= 0; i -= 1) {
+    const hit = POSITIONED.exec(stack[i].attrs);
+    if (hit) return hit[1];
+  }
+  return null;
+}
+
+let stretched = 0;
+for (const [url, html] of pages) {
+  let broken = 0;
+  for (const m of html.matchAll(STRETCHED)) {
+    stretched += 1;
+    if (nearestPositioned(html, m.index) !== "relative") broken += 1;
+  }
+  if (broken) add("critical", url, `${broken} stretched links with no positioned card`);
+}
+
 // Podcast episodes must name a series whose feed actually carries them.
 const feedCounts = new Map();
 for (const [url, html] of pages) {
@@ -179,7 +238,7 @@ for (const i of issues) bySeverity[i.severity]?.push(i);
 
 console.log("\nRendered SEO Audit");
 console.log("=".repeat(50));
-console.log(`Pages checked: ${pages.size}`);
+console.log(`Pages checked: ${pages.size}   stretched links: ${stretched}`);
 console.log(`Critical: ${bySeverity.critical.length}   Warnings: ${bySeverity.warning.length}\n`);
 
 for (const severity of ["critical", "warning"]) {
