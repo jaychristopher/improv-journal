@@ -22,7 +22,7 @@ import {
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
 import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
-import { SHOW_FOR_KIND } from "@/lib/shows-for-content";
+import { getSeriesForPage } from "@/lib/shows-for-content";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -60,6 +60,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
 
   const fm = thread.frontmatter;
   const audioUrl = getAudioUrl("threads", slug);
+  const series = audioUrl ? await getSeriesForPage(`/threads/${slug}`) : null;
   const [parentPath, practiceRecommendations] = await Promise.all([
     getParentPath(slug),
     getPracticeRecommendationsForThread(slug),
@@ -170,13 +171,13 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         pathTitle={parentPath?.frontmatter.title}
         pathHref={parentPath ? `/paths/${parentPath.frontmatter.id}` : undefined}
         listenContent={
-          audioUrl ? (
+          audioUrl && series ? (
             <>
               <AudioPlayer src={audioUrl} />
               <p className="text-foreground/50 mt-2 text-xs">
                 An episode of{" "}
-                <Link href={`/listen/${SHOW_FOR_KIND.thread.id}`} className="underline">
-                  {SHOW_FOR_KIND.thread.title}
+                <Link href={`/listen/${series.id}`} className="underline">
+                  {series.title}
                 </Link>
                 .
               </p>
@@ -185,7 +186,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
                 description={fm.lesson_goal}
                 audioUrl={audioUrl}
                 pageUrl={`/threads/${slug}`}
-                series={SHOW_FOR_KIND.thread}
+                series={series}
               />
             </>
           ) : undefined

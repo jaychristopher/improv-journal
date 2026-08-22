@@ -14,7 +14,7 @@ import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
 import { extractDescription } from "@/lib/seo";
-import { SHOW_FOR_KIND } from "@/lib/shows-for-content";
+import { getSeriesForPage } from "@/lib/shows-for-content";
 
 import { ArticleJsonLd } from "./ArticleJsonLd";
 import { AudioPlayer } from "./AudioPlayer";
@@ -64,6 +64,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", atom.slug);
   const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
+  const series = audioUrl ? await getSeriesForPage(atomUrl) : null;
   const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
 
   // Reverse lookups
@@ -174,20 +175,24 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
           {audioUrl && (
             <div>
               <AudioPlayer src={audioUrl} />
-              <p className="text-foreground/50 mt-2 text-xs">
-                An episode of{" "}
-                <Link href={`/listen/${SHOW_FOR_KIND.atom.id}`} className="underline">
-                  {SHOW_FOR_KIND.atom.title}
-                </Link>
-                .
-              </p>
-              <PodcastJsonLd
-                title={fm.title}
-                audioUrl={audioUrl}
-                pageUrl={atomUrl}
-                duration={audioDuration}
-                series={SHOW_FOR_KIND.atom}
-              />
+              {series && (
+                <>
+                  <p className="text-foreground/50 mt-2 text-xs">
+                    An episode of{" "}
+                    <Link href={`/listen/${series.id}`} className="underline">
+                      {series.title}
+                    </Link>
+                    .
+                  </p>
+                  <PodcastJsonLd
+                    title={fm.title}
+                    audioUrl={audioUrl}
+                    pageUrl={atomUrl}
+                    duration={audioDuration}
+                    series={series}
+                  />
+                </>
+              )}
             </div>
           )}
 

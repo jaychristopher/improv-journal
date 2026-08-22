@@ -1,15 +1,39 @@
-/**
- * Which show a page's audio belongs to.
- *
- * The shows define their own membership by content type — Deep Cuts filters on
- * threads, The Improv Lab on atoms, The Physics of Connection on the guides —
- * so this mirrors that rather than inventing a second rule. Kept as a small
- * literal so it can be used from a server component without loading content.
- */
-export type AudioKind = "atom" | "bridge" | "thread";
+import { getEpisodesForShow, loadShows } from "./content";
 
-export const SHOW_FOR_KIND: Record<AudioKind, { id: string; title: string }> = {
-  atom: { id: "improv-lab", title: "The Improv Lab" },
-  bridge: { id: "physics-of-connection", title: "The Physics of Connection" },
-  thread: { id: "deep-cuts", title: "Deep Cuts" },
-};
+/**
+ * Which show, if any, carries a given page as an episode.
+ *
+ * Derived from the shows' own season filters rather than from content type.
+ * The Improv Lab's seasons are the principles and the exercises, so a
+ * technique page with audio is a page with audio — not an episode of it. An
+ * earlier version mapped by type and had 95 atom pages claiming membership of
+ * a show whose feed carries 26.
+ */
+export interface EpisodeSeries {
+  id: string;
+  title: string;
+}
+
+let cache: Map<string, EpisodeSeries> | null = null;
+
+async function buildIndex(): Promise<Map<string, EpisodeSeries>> {
+  if (cache) return cache;
+  const index = new Map<string, EpisodeSeries>();
+
+  for (const show of await loadShows()) {
+    const series = { id: show.frontmatter.id, title: show.frontmatter.title };
+    for (const season of await getEpisodesForShow(show.frontmatter.id)) {
+      for (const episode of season.episodes) {
+        // First show wins, so a page cannot claim two series.
+        if (!index.has(episode.href)) index.set(episode.href, series);
+      }
+    }
+  }
+
+  cache = index;
+  return index;
+}
+
+export async function getSeriesForPage(pageUrl: string): Promise<EpisodeSeries | null> {
+  return (await buildIndex()).get(pageUrl) ?? null;
+}
