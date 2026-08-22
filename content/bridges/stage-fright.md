@@ -3,8 +3,8 @@ title: "Stage Fright Is Not Your Enemy"
 description: "Stage fright and peak performance have identical physiology. The difference is a single cognitive reframe. Here's the practice that turns fear into fuel."
 target_keywords:
   - { keyword: "stage fright", volume: 6200, difficulty: 38, parent: "stage fright" }
-  - { keyword: "how to overcome stage fright", volume: 450, parent: "how to overcome stage fright" }
-  - { keyword: "how to get over stage fright", volume: 500, parent: "how to get over stage fright" }
+  - { keyword: "how to overcome stage fright", volume: 400, difficulty: 12, traffic_potential: 150, parent: "how to overcome stage fright" }
+  - { keyword: "how to get over stage fright", volume: 450, difficulty: 15, traffic_potential: 350, parent: "how to get over stage fright" }
 entry_atoms: [performance-state, fear-of-failure, be-brave, presence, warm-up]
 entry_path: the-art-of-ensemble
 primary_problem: "fear is making you hesitate instead of making the first move"

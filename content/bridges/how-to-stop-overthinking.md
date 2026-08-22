@@ -1,11 +1,11 @@
 ---
-title: "How to Stop Overthinking: The Bandwidth Problem"
-description: "Overthinking isn't a thinking problem - it's a bandwidth allocation error. Here's the neuroscience and the practice that discovered the fix first."
+title: "How to Stop Overthinking and Get Out of Your Head"
+description: "Overthinking is not a thinking problem, it is a bandwidth problem — which is why you cannot think your way out of your head. What works instead."
 target_keywords:
   - { keyword: "how to stop overthinking", volume: 16000, difficulty: 34, parent: "how to stop overthinking" }
-  - { keyword: "get out of your head", volume: 3600, parent: "get out of your head" }
-  - { keyword: "how to get out of your head", volume: 2000, parent: "how to get out of your head" }
-  - { keyword: "overthinking", volume: 23000, parent: "overthinking" }
+  - { keyword: "get out of your head", volume: 3300, difficulty: 6, traffic_potential: 1400, parent: "get out of your head" }
+  - { keyword: "how to get out of your head", volume: 1800, difficulty: 0, traffic_potential: 1000, parent: "how to get out of your head" }
+  - { keyword: "overthinking", volume: 23000, difficulty: 49, traffic_potential: 3400, parent: "overthinking" }
 entry_atoms:
   [cognitive-bandwidth, internal-computation, obvious-choice, be-present, fear-of-failure]
 entry_path: systems-of-improv
@@ -18,7 +18,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-# How to Stop Overthinking: The Bandwidth Problem
+# How to Stop Overthinking and Get Out of Your Head
 
 **Overthinking is not a character flaw — it's a bandwidth problem.** Your brain has a limited processing budget, and when you spend it on evaluating, simulating, and rehearsing, there's nothing left for the actual moment in front of you. Improv performers call this _internal computation_ — the planning loop that consumes the attention you need for connection, creativity, and action.
 
@@ -29,6 +29,21 @@ Or: it's 2am and you're replaying a conversation from Tuesday, rewriting your li
 Every article about overthinking tells you the same things: journal your thoughts, practice mindfulness, challenge your cognitive distortions. These are fine outputs. But they don't explain the _mechanism_ - what your brain is actually doing and why it gets stuck.
 
 Here's what's actually happening.
+
+## How to Get Out of Your Head, Right Now
+
+**You cannot think your way out of a loop, because the thinking is the loop.** What ends it is handing your attention a task outside yourself that keeps demanding a response — something that carries on arriving whether or not you are ready for it.
+
+That single mechanism is what the rest of this page explains. If you want it in the next sixty seconds:
+
+- **Put your attention on something that keeps changing.** A person talking, hands moving, traffic. A static object leaves the loop running underneath; anything that updates has to be tracked, and tracking is not free.
+- **Ask a question and wait for an answer you did not predict.** Listening properly is expensive, which is precisely why it works — it spends the exact resource the loop was using.
+- **Say the first true thing rather than the best one.** The first thought was a response to what happened; the third was a response to how you would like to appear.
+- **Give your hands a real job.** Not a fidget object, which needs no attention. Something with a next step and a way of going wrong — cooking, tuning, tidying, an instrument.
+- **Change what your body is doing.** Stand up, walk, go outside. Attention has to re-map the room, and re-mapping is a large external task run at no conscious cost.
+- **Answer before you are finished deciding.** The loop survives on the belief that one more pass will improve the answer. It will not, and acting is what proves it.
+
+None of these are distraction, which is the usual objection to them. Distraction is running a second internal process alongside the first — scrolling while ruminating is famously compatible with ruminating. These work because the demand is **external and continuous**, so there is nothing left over to run the loop with.
 
 ## Your Brain Has a Bandwidth Problem
 
