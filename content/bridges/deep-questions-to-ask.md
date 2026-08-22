@@ -1,10 +1,12 @@
 ---
-title: "Deep Questions to Ask: 120 That Get an Honest Answer"
+title: "Deep Questions to Ask: 125 That Get an Honest Answer"
 description: "Most deep questions ask for a conclusion, so they get a performance. These ask for an experience — plus what has to be true before any of them work at all."
 target_keywords:
   - { keyword: "deep questions to ask", volume: 24000, difficulty: 8, traffic_potential: 67000, parent: "deep questions to ask" }
   - { keyword: "deep conversation starters", volume: 6600, difficulty: 3, parent: "deep conversation starters" }
   - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2, parent: "deep questions to ask" }
+  - { keyword: "thought provoking questions", volume: 5900, difficulty: 3, traffic_potential: 74000, parent: "deep questions to ask" }
+  - { keyword: "questions that make you think", volume: 3200, difficulty: 0, traffic_potential: 82000, parent: "deep questions to ask" }
   - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12, parent: "deep questions to ask" }
 serp_checked: "2026-08-22"
 serp_min_dr: 12
@@ -20,13 +22,13 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Deep Questions to Ask: 120 That Get an Honest Answer
+# Deep Questions to Ask: 125 That Get an Honest Answer
 
 A deep question that gets a shallow answer has not failed because the other person was guarded. It has usually failed because of how it was built.
 
 "What is your greatest fear?" asks somebody to summarise themselves. Summaries are performances — the answer arrives pre-edited, because to produce it you had to review your whole life and select. "When were you last properly frightened?" asks for a memory instead, and memories come with detail, and detail is where the actual thing is.
 
-That is the difference these 120 are built on: **ask for an experience, not a conclusion.**
+That is the difference these 125 are built on: **ask for an experience, not a conclusion.**
 
 ## Why Most Deep Questions Get Shallow Answers
 
@@ -47,6 +49,28 @@ You cannot make a conversation deep by choosing a deeper question. Depth is a pr
 **Reciprocity, which has to start with you.** `vulnerability` is being seen without armour, and it is not something you can ask another person to supply on your behalf. A question that asks for more openness than you have offered reads as an interview, and people answer interviews carefully. Answer your own question — first, or immediately after, at the same depth.
 
 The practical version of both: `safety-in-the-room` is a precondition rather than an outcome. Asking for depth in order to create closeness has the causation backwards.
+
+## If You Only Ask Five
+
+The list below is long because it is sorted by what each question opens. If you want five to take into an actual conversation tonight, use these, in this order. It is a climb rather than a set, and the order is doing most of the work.
+
+1. **What have you spent money on recently that you would defend?** A preference with a reason attached, which is the cheapest thing on the ladder that is not small talk.
+2. **What is a place from before you were twenty that you could still draw from memory?** Recall rather than summary — the answer is already sitting there and does not have to be composed on the spot.
+3. **What is currently taking more out of you than you let on?** The first rung that costs something. Ask it only after the first two have been answered on both sides.
+4. **What do you suspect you have got worse at?** Self-assessment, and much easier to answer than its opposite, because admitting a decline is less exposing than claiming an improvement.
+5. **What have you not finished thinking about?** The unresolved, without requiring anybody to name a grief or a regret directly. People often go there anyway, which is the point of asking it this way round.
+
+Answer each one yourself before moving to the next. Five questions asked in a row, unanswered by the asker, is an interview.
+
+## Thought-Provoking Is Not the Same as Deep
+
+Most lists of deep questions are really lists of thought-provoking ones — hypotheticals, would-you-rathers, philosophical posers. *If you could know the date of your death, would you want to?* These are enjoyable, and they are a different tool from the one most people are looking for.
+
+**A question that makes you think produces a considered answer, and considered is the problem.** Thinking is the step in which the answer gets shaped for its audience. The hypothetical also asks about a person who does not exist — the you that would face that situation — which is a safe distance to speak from and reveals about as much as any other piece of fiction.
+
+The questions that build a relationship do the opposite. They ask for something that has already happened, so there is nothing to construct and no position to defend. You are not being asked what you believe about regret; you are being asked what you still think about at four in the morning, and one of those has a specific answer.
+
+Both belong in a conversation. Hypotheticals are excellent openers and poor closers: they warm a room up and let people be entertaining at no risk. Use them early, then stop using them, because a conversation that stays hypothetical all evening is one where two people were interesting at each other for three hours and learned nothing.
 
 ## The Ladder
 
