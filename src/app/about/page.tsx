@@ -10,10 +10,8 @@ import {
   ogImages,
   ORGANIZATION_ID,
   pageTitle,
-  SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
-import { getSystemCounts } from "@/lib/system-counts";
 
 const DESCRIPTION =
   "Who writes The Physics of Connection, where the material comes from, and how the site is put together.";
@@ -46,10 +44,15 @@ export default async function AboutPage() {
     loadPaths(),
   ]);
   const references = atoms.filter((a) => a.frontmatter.type === "reference");
-  const counts = await getSystemCounts();
 
-  // The author and organization entities are defined here, once. Every article
-  // on the site points its author and publisher at these @ids.
+  // The author entity is defined here, once. Every article on the site points
+  // its author at this @id.
+  //
+  // The organization is deliberately not redefined. The root layout emits an
+  // Organization node under the same @id on every page, this one included, and
+  // it carried a different description — so the page shipped two definitions of
+  // one entity and left a consumer merging them to pick a description at
+  // random. Referencing it by @id says the same thing without the conflict.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -76,14 +79,6 @@ export default async function AboutPage() {
           "Interpersonal communication",
           "Psychological safety",
         ],
-      },
-      {
-        "@type": "Organization",
-        "@id": ORGANIZATION_ID,
-        name: SITE_NAME,
-        url: SITE_URL,
-        founder: { "@id": AUTHOR_ID },
-        description: `${counts.tagline} — discovered on the improv stage, applicable everywhere.`,
       },
     ],
   };

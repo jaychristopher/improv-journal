@@ -190,6 +190,39 @@ for (const [url, html] of pages) {
   if (broken) add("critical", url, `${broken} stretched links with no positioned card`);
 }
 
+// One @id, one definition. Nodes sharing an @id are merged by consumers, so a
+// page that defines the same entity twice with different properties leaves the
+// choice between them arbitrary. The about page defined Organization a second
+// time, with a shorter description than the one the root layout emits on every
+// page — including that one. A bare {"@id": ...} reference is not a definition
+// and is the correct way to point at an entity defined elsewhere.
+let jsonLdNodes = 0;
+for (const [url, html] of pages) {
+  const defined = new Map();
+  for (const m of html.matchAll(
+    /<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g,
+  )) {
+    let parsed;
+    try {
+      parsed = JSON.parse(m[1]);
+    } catch {
+      add("critical", url, "JSON-LD does not parse");
+      continue;
+    }
+    for (const node of parsed["@graph"] ?? [parsed]) {
+      if (!node || typeof node !== "object" || !node["@id"]) continue;
+      const keys = Object.keys(node).filter((k) => k !== "@context");
+      if (keys.length < 2) continue; // a reference, not a definition
+      jsonLdNodes += 1;
+      const shape = JSON.stringify(node, Object.keys(node).sort());
+      const prior = defined.get(node["@id"]);
+      if (prior === undefined) defined.set(node["@id"], shape);
+      else if (prior !== shape)
+        add("critical", url, `defines ${node["@id"]} twice with different content`);
+    }
+  }
+}
+
 // Podcast episodes must name a series whose feed actually carries them.
 const feedCounts = new Map();
 for (const [url, html] of pages) {
@@ -246,7 +279,9 @@ for (const i of issues) bySeverity[i.severity]?.push(i);
 
 console.log("\nRendered SEO Audit");
 console.log("=".repeat(50));
-console.log(`Pages checked: ${pages.size}   stretched links: ${stretched}`);
+console.log(
+  `Pages checked: ${pages.size}   stretched links: ${stretched}   json-ld nodes: ${jsonLdNodes}`,
+);
 console.log(`Critical: ${bySeverity.critical.length}   Warnings: ${bySeverity.warning.length}\n`);
 
 for (const severity of ["critical", "warning"]) {

@@ -25,7 +25,11 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/search"],
+        // "/search?" rather than "/search": the bare page now carries a
+        // noindex, and a crawler has to be allowed to fetch it to ever see
+        // that. The query form stays blocked because it is an unbounded space
+        // of generated result pages.
+        disallow: ["/api/", "/search?"],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
