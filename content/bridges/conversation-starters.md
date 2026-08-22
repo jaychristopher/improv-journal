@@ -64,8 +64,8 @@ The zany ones are the ones that die. "If you were a kitchen appliance, which wou
 
 The funny ones that actually run are specific and mundane. Comedy comes from the detail, and detail is something the other person can add to.
 
-- What is the worst thing currently in your fridge?
-- What is a small thing you are unreasonably competitive about?
+- What is in your bag right now that needs explaining?
+- What is a chore you secretly enjoy?
 - What is the most useless skill you have?
 - What is something you are irrationally loyal to?
 - What is the worst haircut you have had?
@@ -73,7 +73,7 @@ The funny ones that actually run are specific and mundane. Comedy comes from the
 - What is the pettiest reason you have fallen out with someone?
 - What is the strangest job you have heard of someone doing?
 - What did you get told off for most as a kid?
-- What is your least defensible opinion about food?
+- What is a word you always mispronounce?
 - What is something you are bad at and have made peace with?
 - What is the worst present you have ever received?
 - What is a rule in your house that would confuse a visitor?
@@ -82,7 +82,7 @@ The funny ones that actually run are specific and mundane. Comedy comes from the
 - What is the most embarrassing thing in your search history that you can say out loud?
 - What is a lie you tell regularly and harmlessly?
 - What would you be famous for if you had to be famous for something stupid?
-- What is the most inconvenient place you have fallen asleep?
+- What is the last thing you argued about that did not matter?
 - What is something you own that you would be embarrassed to explain?
 
 ## Starters That Work at Work
@@ -113,7 +113,7 @@ Everyone can answer these in a sentence, which is what stops one person taking t
 - What did everyone want to be at fourteen?
 - What is a small thing that improves any day?
 - Where would everyone go with a free flight tomorrow?
-- What is the most useless skill around this table?
+- What is something you have never got round to learning?
 - What is something everyone here has done that nobody admits to?
 - What is the last thing anyone learned that stuck?
 - What is a hill somebody would die on?
