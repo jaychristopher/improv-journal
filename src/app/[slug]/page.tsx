@@ -25,6 +25,7 @@ import { getGuideConcepts } from "@/lib/guide-concepts";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
 import { ogImages, pageTitle } from "@/lib/seo";
+import { SHOW_FOR_KIND } from "@/lib/shows-for-content";
 
 export async function generateMetadata({
   params,
@@ -334,12 +335,20 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
       {audioUrl && (
         <>
           <AudioPlayer src={audioUrl} />
+          <p className="text-foreground/50 mt-2 text-xs">
+            An episode of{" "}
+            <Link href={`/listen/${SHOW_FOR_KIND.bridge.id}`} className="underline">
+              {SHOW_FOR_KIND.bridge.title}
+            </Link>
+            .
+          </p>
           <PodcastJsonLd
             title={fm.title}
             description={fm.description}
             audioUrl={audioUrl}
             pageUrl={`/${slug}`}
             duration={audioDuration}
+            series={SHOW_FOR_KIND.bridge}
           />
         </>
       )}

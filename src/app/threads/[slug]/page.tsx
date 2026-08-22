@@ -8,6 +8,7 @@ import { JourneyProgressBar } from "@/components/JourneyProgressBar";
 import { LessonCheckpoint } from "@/components/LessonCheckpoint";
 import { LessonFrame } from "@/components/LessonFrame";
 import { LessonJsonLd } from "@/components/LessonJsonLd";
+import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAllPathsForThread,
@@ -21,6 +22,7 @@ import {
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
 import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { SHOW_FOR_KIND } from "@/lib/shows-for-content";
 
 export async function generateStaticParams() {
   const threads = await loadThreads();
@@ -167,7 +169,27 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         reflectionPrompt={fm.reflection_prompt}
         pathTitle={parentPath?.frontmatter.title}
         pathHref={parentPath ? `/paths/${parentPath.frontmatter.id}` : undefined}
-        listenContent={audioUrl ? <AudioPlayer src={audioUrl} /> : undefined}
+        listenContent={
+          audioUrl ? (
+            <>
+              <AudioPlayer src={audioUrl} />
+              <p className="text-foreground/50 mt-2 text-xs">
+                An episode of{" "}
+                <Link href={`/listen/${SHOW_FOR_KIND.thread.id}`} className="underline">
+                  {SHOW_FOR_KIND.thread.title}
+                </Link>
+                .
+              </p>
+              <PodcastJsonLd
+                title={fm.title}
+                description={fm.lesson_goal}
+                audioUrl={audioUrl}
+                pageUrl={`/threads/${slug}`}
+                series={SHOW_FOR_KIND.thread}
+              />
+            </>
+          ) : undefined
+        }
       >
         <article
           className="prose prose-neutral dark:prose-invert max-w-none"

@@ -7,6 +7,8 @@ interface PodcastJsonLdProps {
   audioUrl: string;
   pageUrl: string;
   duration?: string; // formatted "M:SS"
+  /** The show this episode belongs to. */
+  series: { id: string; title: string };
 }
 
 export function PodcastJsonLd({
@@ -15,6 +17,7 @@ export function PodcastJsonLd({
   audioUrl,
   pageUrl,
   duration,
+  series,
 }: PodcastJsonLdProps) {
   // Convert "M:SS" to ISO 8601 duration "PTxMxS"
   let isoDuration: string | undefined;
@@ -37,11 +40,12 @@ export function PodcastJsonLd({
     ...(isoDuration && { duration: isoDuration }),
     partOfSeries: {
       "@type": "PodcastSeries",
-      // Reference the series defined on its own page rather than restating a
-      // hardcoded name, so an episode and its series resolve to one entity.
-      "@id": `${SITE_URL}/listen/physics-of-connection#series`,
-      name: "The Physics of Connection",
-      url: toAbsoluteSiteUrl("/listen/physics-of-connection", SITE_URL),
+      // Reference the series defined on its own page so an episode and its
+      // series resolve to one entity. This was hardcoded to the guides show,
+      // which meant every atom and thread episode named the wrong series.
+      "@id": `${SITE_URL}/listen/${series.id}#series`,
+      name: series.title,
+      url: toAbsoluteSiteUrl(`/listen/${series.id}`, SITE_URL),
     },
   };
 
