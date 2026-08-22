@@ -180,7 +180,7 @@ export default async function ExercisePickerPage() {
             <Link href="/improv-games" className="hover:text-foreground/60 underline">
               Full exercise library
             </Link>
-            <Link href="/team-bonding-activities" className="hover:text-foreground/60 underline">
+            <Link href="/team-building-activities" className="hover:text-foreground/60 underline">
               Team bonding guide
             </Link>
             <Link href="/guides" className="hover:text-foreground/60 underline">

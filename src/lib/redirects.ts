@@ -88,6 +88,13 @@ export function generateHubRedirects(): {
     // Same retarget: "group dynamics" is the academic phrasing at a traffic
     // potential of 250; "team dynamics" is what the audience types, at 3,500.
     { source: "/group-dynamics", destination: "/team-dynamics", permanent: true },
+    // Consolidated: "team bonding activities" has "team building activities"
+    // as its parent topic, so the two pages were competing for one term.
+    {
+      source: "/team-bonding-activities",
+      destination: "/team-building-activities",
+      permanent: true,
+    },
     {
       source: "/interpersonal-communication-skills",
       destination: "/people-skills",
