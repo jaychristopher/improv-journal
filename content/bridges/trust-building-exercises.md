@@ -2,7 +2,7 @@
 title: "Trust Building Exercises That Aren't Trust Falls"
 description: "Trust isn't built by dramatic gestures. It's built by small, repeated, reliable exchanges — which is exactly what these seven improv exercises rehearse."
 target_keywords:
-  - { keyword: "trust building exercises", volume: 200, difficulty: 6 }
+  - { keyword: "trust building exercises", volume: 200, difficulty: 6, traffic_potential: 700 }
   - { keyword: "trust building activities", volume: 150 }
   - { keyword: "team trust exercises", volume: 150 }
   - { keyword: "psychological safety exercises", volume: 100 }

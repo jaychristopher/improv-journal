@@ -2,7 +2,7 @@
 title: "How to Be Less Awkward: Lessons from Improvisers"
 description: "Awkwardness isn't a personality trait — it's a specific attention problem. Improv performers fix it by redirecting focus from self-monitoring to connection."
 target_keywords:
-  - { keyword: "how to be less awkward", volume: 700, difficulty: 2 }
+  - { keyword: "how to be less awkward", volume: 700, difficulty: 2, traffic_potential: 900 }
   - { keyword: "social awkwardness", volume: 300 }
 entry_atoms: [be-present, active-listening, offers, commitment, internal-computation]
 entry_path: improv-for-life

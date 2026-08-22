@@ -2,7 +2,7 @@
 title: "How to Be Funny (It's Not What You Think)"
 description: "Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor."
 target_keywords:
-  - { keyword: "how to be funny", volume: 6600, difficulty: 2 }
+  - { keyword: "how to be funny", volume: 6600, difficulty: 2, traffic_potential: 3500 }
   - { keyword: "how to be funnier", volume: 0 }
 entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness]
 entry_path: systems-of-improv

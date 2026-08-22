@@ -144,6 +144,17 @@ export interface BridgeTargetKeyword {
    * reports the gap.
    */
   difficulty?: number;
+  /**
+   * Ahrefs traffic potential: the traffic the top-ranking page actually
+   * receives across every keyword it ranks for.
+   *
+   * Recorded because volume misranks badly on its own. "what is improv" is
+   * 1,600 a month with a traffic potential of 50 — the query is answered in
+   * the result page, so ranking first earns almost nothing. "how to read body
+   * language" is 2,100 a month with a traffic potential of 37,000. Prioritise
+   * on this where it exists.
+   */
+  traffic_potential?: number;
 }
 
 export interface BridgeFrontmatter {

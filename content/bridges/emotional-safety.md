@@ -2,7 +2,7 @@
 title: "Emotional Safety: How Ensembles Build Real Trust"
 description: "Emotional safety isn't a policy — it's a practice. Improv ensembles have spent 60 years developing specific techniques to create it. Here's what works."
 target_keywords:
-  - { keyword: "emotional safety", volume: 2300, difficulty: 13 }
+  - { keyword: "emotional safety", volume: 2300, difficulty: 13, traffic_potential: 800 }
   - { keyword: "emotional safety in the workplace", volume: 200 }
 entry_atoms: [safety-in-the-room, trust, ensemble, be-supportive, vulnerability]
 entry_path: improv-for-teams

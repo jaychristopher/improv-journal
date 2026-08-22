@@ -2,7 +2,7 @@
 title: "How to Be More Charismatic: The Presence Framework"
 description: "Charisma isn't a trait — it's a specific combination of presence, commitment, and status fluency. Improv performers train all three. Here's how."
 target_keywords:
-  - { keyword: "how to be more charismatic", volume: 700, difficulty: 5 }
+  - { keyword: "how to be more charismatic", volume: 700, difficulty: 5, traffic_potential: 1400 }
   - { keyword: "charisma", volume: 4400 }
 entry_atoms: [commitment, status, be-present, active-listening, signal]
 entry_path: improv-for-life

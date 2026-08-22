@@ -2,7 +2,7 @@
 title: "How to Deal with Rejection: Failing Forward"
 description: "Rejection hurts because your brain treats social exclusion like physical pain. Improv performers face it nightly and have a system for metabolizing it."
 target_keywords:
-  - { keyword: "how to deal with rejection", volume: 1700, difficulty: 1 }
+  - { keyword: "how to deal with rejection", volume: 1700, difficulty: 1, traffic_potential: 1400 }
   - { keyword: "dealing with rejection", volume: 400 }
 entry_atoms: [failing-forward, be-brave, commitment, performance-state, accepting-the-offer]
 entry_path: systems-of-improv

@@ -146,6 +146,7 @@ function scoreBridge(file) {
     issues,
     volume: primary.volume,
     difficulty: primary.difficulty,
+    trafficPotential: primary.traffic_potential,
     words: content.trim().split(/\s+/).length,
   };
 }
@@ -247,13 +248,17 @@ const STRANDED_KD = 30;
 const THIN_WORDS = 1400;
 
 const graded = results.filter((r) => typeof r.difficulty === "number");
+// Rank on traffic potential where it is known, falling back to volume.
+// Volume alone put what-is-improv top of this list, on a query that is
+// answered in the result page and sends almost nobody anywhere.
+const reach = (r) => r.trafficPotential ?? r.volume;
 const missed = graded
   .filter((r) => r.difficulty <= WINNABLE_KD && r.words < THIN_WORDS)
-  .sort((a, b) => b.volume - a.volume);
+  .sort((a, b) => reach(b) - reach(a));
 const stranded = graded.filter((r) => r.difficulty > STRANDED_KD).sort((a, b) => b.words - a.words);
 
 const row = (r) =>
-  `  ${r.id.padEnd(42)} ${String(r.volume).padStart(6)}/mo  KD ${String(r.difficulty).padStart(2)}  ${String(r.words).padStart(5)}w`;
+  `  ${r.id.padEnd(40)} TP ${String(r.trafficPotential ?? "—").padStart(5)}  ${String(r.volume).padStart(6)}/mo  KD ${String(r.difficulty).padStart(2)}  ${String(r.words).padStart(5)}w`;
 
 if (missed.length > 0) {
   console.log(`Winnable and thin — where depth pays (${missed.length}):`);

@@ -2,7 +2,7 @@
 title: "How to Stop People Pleasing: The Authentic Response"
 description: "People pleasing is blocking in disguise: refusing your own offers to protect someone else's comfort. Improv reveals the mechanism — and the way out."
 target_keywords:
-  - { keyword: "how to stop people pleasing", volume: 1200, difficulty: 0 }
+  - { keyword: "how to stop people pleasing", volume: 1200, difficulty: 0, traffic_potential: 1900 }
   - { keyword: "people pleasing", volume: 3600 }
 entry_atoms: [blocking, commitment, be-honest, status, performing-cleverness, yes-and]
 entry_path: improv-for-life
@@ -12,7 +12,7 @@ created: "2026-04-22"
 
 # How to Stop People Pleasing: What Improv Teaches About Authentic Response
 
-**People pleasing is self-blocking — the same mechanism that kills improv scenes.** You have an authentic response (a boundary, a disagreement, a need) and you suppress it before it reaches the surface, replacing it with accommodation. Improv reveals why this happens and how to reverse it.
+**People pleasing is self-blocking** — `blocking` is the same mechanism that kills improv scenes. You have an authentic response (a boundary, a disagreement, a need) and you suppress it before it reaches the surface, replacing it with accommodation. Improv reveals why this happens and how to reverse it.
 
 People pleasing looks like generosity. It feels like kindness. And most advice treats it as an excess of caring — "you care too much about what others want."
 
@@ -61,6 +61,33 @@ In a scene, the performer who accommodates everything and contributes nothing is
 The same is true in life. The friend who always agrees with you isn't a friend — they're a mirror. The partner who never pushes back isn't supportive — they're absent. The colleague who takes on everything without objection isn't helpful — they're creating dependency.
 
 Your honest response is the offer. Withholding it is the block. People pleasing isn't generosity — it's the refusal to participate fully in the relationship.
+
+## What Happens When You Stop
+
+The reason most people do not act on any of this is a prediction: that if they stop accommodating, people will be upset and some will leave. It is worth answering honestly rather than reassuring past it.
+
+Some of that prediction is right. A few relationships are calibrated to your accommodation and will register its withdrawal as a loss, because it was. `status` explains why: status is complementary, so a person used to you routinely lowering yours will feel the change as them being lowered, even though nothing was taken from them. The reaction is real and it is not evidence you did something wrong.
+
+What is wrong is the scope. The prediction generalises one likely outcome across every relationship you have, and that is what makes it paralysing. In practice the split is usually stark: most people barely register the change or quietly prefer it, and a small number object loudly. The loud minority is what the fear is modelled on.
+
+Two things worth knowing before you find out which is which:
+
+- **A relationship that only works while you are self-blocking was already not working.** It was working for one person. That is a real loss, and it is a different loss from the one being imagined.
+- **The objection usually arrives once and then stops.** Most people recalibrate within a couple of exchanges. The catastrophic version, where someone objects permanently, is rare enough that it should not be doing this much work in your decision-making.
+
+None of which makes it comfortable. But "some of this will cost something, and much less than you think" is a workable expectation, and "everyone will be fine with it" is not — because the first time someone is not fine with it, the second version tells you to stop.
+
+## How to Practise It
+
+The instruction to express the first honest thing is right and hard to start on. Improv breaks it into smaller pieces, each of which removes one part of the reflex.
+
+**Say it before the edit runs.** `emotional-honesty-scene` requires authentic signal rather than a performed version. It is the skill in the section above, isolated and rehearsed where nothing is at stake.
+
+**Stop softening afterwards.** `no-backspace-scene` allows no qualification or retraction. People-pleasing rarely shows up as silence — it shows up as the sentence that follows the honest one and takes it back.
+
+**Start before you are ready.** `first-line-drill` trains committing to an opening without knowing where it goes, which is the moment the suppression usually happens.
+
+For the specific case of refusing a request, see the section on saying no in [how to be more assertive](/how-to-be-more-assertive). For the fear of judgment underneath the pattern, see [how to stop caring what people think](/how-to-stop-caring-what-people-think).
 
 ## The Status Shift
 
