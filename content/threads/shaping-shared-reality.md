@@ -1,6 +1,6 @@
 ---
 id: shaping-shared-reality
-title: "On Shaping Shared Reality"
+title: "On Shaping Shared Reality: Your Model of Their Model"
 lesson_goal: "Apply the physics of shared reality to social negotiation: model others humbly, frame carefully, and play the role you actually want to occupy."
 key_takeaway: "Belief systems are load-bearing for the self, but they're rigid only at the core and malleable at the edges — framing, stakes, and role decide whether a signal lands or bounces."
 common_mistake: "Hitting a belief head-on as if it were a preference rather than architecture, and pushing harder on what feels like resistance."

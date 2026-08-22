@@ -1,6 +1,6 @@
 ---
 id: hardest-thing-youll-never-plan
-title: "The Hardest Thing You'll Never Plan"
+title: "The Hardest Thing You'll Never Plan: Actually Listening"
 lesson_goal: "See why listening and planning compete for the same bandwidth and why presence requires trust."
 key_takeaway: "What is happening now matters more than the response you are trying to prepare for later."
 common_mistake: "Confusing preparation with responsiveness and missing the live scene while searching for a better line."

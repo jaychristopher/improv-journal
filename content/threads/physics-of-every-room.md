@@ -1,6 +1,6 @@
 ---
 id: physics-of-every-room
-title: "The Physics of Every Room You'll Ever Walk Into"
+title: "The Physics of Every Room: The Five Principles Applied"
 lesson_goal: "Synthesize the path's principles into a model you can apply beyond the stage."
 key_takeaway: "The same forces that govern improv scenes govern everyday conversations, meetings, and relationships."
 common_mistake: "Learning principles in isolation without noticing the collapse modes they are meant to prevent."

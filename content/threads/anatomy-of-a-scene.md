@@ -1,6 +1,6 @@
 ---
 id: anatomy-of-a-scene
-title: "The Anatomy of a Scene"
+title: "The Anatomy of a Scene: Relationship, Want and Where"
 status: draft
 atoms: [initiation, relationship, want, base-reality, environment, scene-structure, two-person-scene, group-scene, opening, suggestion, space-work, endowment, do-feel-say]
 tags: [fundamentals, scene-work, definitions, structure]

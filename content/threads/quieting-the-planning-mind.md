@@ -1,6 +1,6 @@
 ---
 id: quieting-the-planning-mind
-title: "Quieting the Planning Mind"
+title: "Quieting the Planning Mind: Responding Without Rehearsing"
 lesson_goal: "Recognize internal computation and learn practices that redirect attention outward."
 key_takeaway: "The planning mind gets quieter when the structure of the exercise forces attention onto live input."
 common_mistake: "Trying to suppress overthinking through willpower instead of giving the mind a better task."

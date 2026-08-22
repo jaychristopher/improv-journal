@@ -1,6 +1,6 @@
 ---
 id: clear-signal-simple-signal
-title: "Clear Signal, Simple Signal"
+title: "Clear Signal, Simple Signal: How to Be Understood"
 lesson_goal: "Improve what you send into the scene by favoring honesty and simplicity over cleverness."
 key_takeaway: "Clear, simple signals give your partner something real to build on; clever noise makes the channel harder to read."
 common_mistake: "Using irony, exposition, or complexity to avoid saying the honest thing."

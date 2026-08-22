@@ -1,6 +1,6 @@
 ---
 id: empty-stage-problem
-title: "The Empty Stage Problem"
+title: "The Empty Stage Problem: Building Reality From Nothing"
 lesson_goal: "Understand the base constraints that make improv hard before learning techniques."
 key_takeaway: "Improv works because performers follow principles that stabilize an inherently unstable system."
 common_mistake: "Assuming scene failure means lack of talent instead of mismatch with the system's constraints."

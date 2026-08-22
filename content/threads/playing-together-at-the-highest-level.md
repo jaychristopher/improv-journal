@@ -1,6 +1,6 @@
 ---
 id: playing-together-at-the-highest-level
-title: "Playing Together at the Highest Level"
+title: "Playing Together at the Highest Level: Ensemble Craft"
 status: seed
 atoms: [backline-craft, group-mind-cultivation, ensemble, group-mind, trust, support-moves, interdependence]
 tags: [ensemble, mastery, group-mind, advanced]

@@ -1,6 +1,6 @@
 ---
 id: first-rule-you-already-know
-title: "The First Rule You Already Know"
+title: "The First Rule You Already Know: Yes, And in Practice"
 lesson_goal: "Understand yes-and as an engineering rule for shared reality, not a positivity slogan."
 key_takeaway: "Accepting incoming reality and extending it is what keeps two people in the same scene."
 common_mistake: "Hearing yes-and as forced agreement instead of accepting the reality while keeping your own agency."

@@ -1,6 +1,6 @@
 ---
 id: conversation-that-felt-like-magic
-title: "The Conversation That Felt Like Magic"
+title: "The Conversation That Felt Like Magic: What Was Happening"
 lesson_goal: "Notice the felt difference between alive and dead conversations and start seeing shared reality as something built."
 key_takeaway: "Connection is not random - it depends on two people actively sustaining the same reality together."
 common_mistake: "Treating connection as chemistry instead of a fragile system that needs attention."
