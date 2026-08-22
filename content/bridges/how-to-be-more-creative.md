@@ -2,7 +2,7 @@
 title: "How to Be More Creative: Stop Trying to Be Original"
 description: "Creativity isn't originality — it's the willingness to follow the obvious. The more obvious you are, the more original you appear. Here's the science."
 target_keywords:
-  - { keyword: "how to be more creative", volume: 1200, difficulty: 4 }
+  - { keyword: "how to be more creative", volume: 1200, difficulty: 4, traffic_potential: 1500 }
 entry_atoms: [obvious-choice, discovery, be-simple, internal-computation, cognitive-bandwidth]
 entry_path: systems-of-improv
 status: draft

@@ -9,19 +9,33 @@ describe("top guides", () => {
     expect(await getTopGuides(3)).toHaveLength(3);
   });
 
-  it("ranks by peak target volume, descending", async () => {
-    const volumes = (await getTopGuides(12)).map((g) => g.volume);
-    expect(volumes).toEqual([...volumes].sort((a, b) => b - a));
+  it("ranks by reach, descending", async () => {
+    const reach = (await getTopGuides(12)).map((g) => g.reach);
+    expect(reach).toEqual([...reach].sort((a, b) => b - a));
   });
 
-  it("picks the highest-volume guides on the site", async () => {
-    const bridges = await loadBridges();
-    const peak = bridges
-      .map((b) => Math.max(0, ...(b.frontmatter.target_keywords ?? []).map((k) => k.volume)))
-      .sort((a, b) => b - a);
+  /**
+   * The footer is eight links on every page on the site. Ranking it by raw
+   * volume put four guides in the list whose terms sit above difficulty 30 and
+   * are not reachable, spending half the promotion capacity on pages that
+   * cannot convert.
+   */
+  it("never promotes a guide on a term it cannot rank for", async () => {
+    const stranded = (await getTopGuides(12))
+      .filter((g) => g.difficulty !== undefined && g.difficulty > 30)
+      .map((g) => `${g.slug} (KD ${g.difficulty})`);
 
-    const top = await getTopGuides(5);
-    expect(top.map((g) => g.volume)).toEqual(peak.slice(0, 5));
+    expect(stranded).toEqual([]);
+  });
+
+  it("prefers traffic potential over volume where it is known", async () => {
+    const bridges = await loadBridges();
+    const bySlug = new Map(bridges.map((b) => [b.slug, b]));
+
+    for (const guide of await getTopGuides(8)) {
+      const primary = (bySlug.get(guide.slug)!.frontmatter.target_keywords ?? [])[0];
+      if (primary?.traffic_potential) expect(guide.reach).toBe(primary.traffic_potential);
+    }
   });
 
   it("resolves every guide to a real bridge slug with anchor text", async () => {

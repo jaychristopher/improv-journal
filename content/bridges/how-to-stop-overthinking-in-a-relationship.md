@@ -2,7 +2,7 @@
 title: "How to Stop Overthinking in a Relationship"
 description: "Relationship overthinking has a specific mechanism — social-threat bandwidth hijacking. The fix requires both trust and presence, together."
 target_keywords:
-  - { keyword: "how to stop overthinking in a relationship", volume: 1000, difficulty: 2 }
+  - { keyword: "how to stop overthinking in a relationship", volume: 1000, difficulty: 2, traffic_potential: 600 }
   - { keyword: "overthinking in relationships", volume: 500 }
 entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vulnerability, active-listening]
 entry_path: improv-for-life

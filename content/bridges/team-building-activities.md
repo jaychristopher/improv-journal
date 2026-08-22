@@ -2,7 +2,7 @@
 title: "Team Building Activities That Actually Change Teams"
 description: "Most team building is theater — fun in the moment, zero behavioral change on Monday. Here's what improv reveals about activities that actually work."
 target_keywords:
-  - { keyword: "team building activities", volume: 487000, difficulty: 5 }
+  - { keyword: "team building activities", volume: 487000, difficulty: 5, traffic_potential: 109000 }
   - { keyword: "team building activities for work", volume: 8800 }
 entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection

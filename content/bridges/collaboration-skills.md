@@ -2,7 +2,7 @@
 title: "Collaboration Skills: What Improv Ensembles Know"
 description: "Real collaboration isn't brainstorming or consensus — it's building on each other's ideas in real time. Improv ensembles train this skill every night."
 target_keywords:
-  - { keyword: "collaboration skills", volume: 1200, difficulty: 7 }
+  - { keyword: "collaboration skills", volume: 1200, difficulty: 7, traffic_potential: 250 }
   - { keyword: "how to collaborate better", volume: 200 }
 entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection

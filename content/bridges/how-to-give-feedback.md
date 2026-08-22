@@ -2,7 +2,7 @@
 title: "How to Give Feedback That Actually Changes Behavior"
 description: "Most feedback describes problems without creating conditions for change. Design experiences where the right behavior emerges naturally, then name it."
 target_keywords:
-  - { keyword: "how to give feedback", volume: 900, difficulty: 21 }
+  - { keyword: "how to give feedback", volume: 900, difficulty: 21, traffic_potential: 350 }
   - { keyword: "how to give constructive feedback", volume: 900 }
   - { keyword: "constructive feedback", volume: 7000 }
   - { keyword: "constructive criticism", volume: 4400 }

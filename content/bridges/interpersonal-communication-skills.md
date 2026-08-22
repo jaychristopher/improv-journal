@@ -2,7 +2,7 @@
 title: "Interpersonal Communication Skills: What Improv Reveals"
 description: "Communication isn't a list of tips — it's a real-time system with specific mechanics. Improv performers practice those mechanics every night."
 target_keywords:
-  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14 }
+  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14, traffic_potential: 30 }
   - { keyword: "communication skills", volume: 8100 }
 entry_atoms: [active-listening, offers, continuous-signaling, status, be-present, be-honest]
 entry_path: improv-for-life

@@ -2,7 +2,7 @@
 title: "How to Be Vulnerable (Without Getting Destroyed)"
 description: "Vulnerability isn't emotional exhibition — it's the willingness to make an offer that could be rejected. The secret is building the container first."
 target_keywords:
-  - { keyword: "how to be vulnerable", volume: 300, difficulty: 11 }
+  - { keyword: "how to be vulnerable", volume: 300, difficulty: 11, traffic_potential: 2400 }
   - { keyword: "how to be more vulnerable", volume: 200 }
 entry_atoms: [vulnerability, safety-in-the-room, trust, be-brave, be-honest, commitment]
 entry_path: physics-of-connection
