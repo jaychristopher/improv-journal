@@ -47,15 +47,57 @@ The constraint is doing the work. With one clear object of attention, there is n
 
 This is why the instruction "just relax and have fun" fails and a game succeeds. One is a request. The other is a structure.
 
-## Five to Start With
+## The Games, Grouped by What They Train
 
-Each of these is a Spolin-lineage exercise with a single point of concentration:
+A list of thirty games sorted alphabetically is not much use, because the only question that matters when planning a session is what the group needs. These are grouped by that instead. Each links to the full write-up with setup, progressions and what to watch for.
 
-- **`mirroring`** — two players face each other and one mirrors the other's movement precisely. Trains attention, and the yielding-and-leading spectrum that underlies ensemble work.
-- **`one-word-scene`** — players build a scene one word at a time. Removes the possibility of planning a clever line, because you never own the sentence.
-- **`space-work-scene`** — a scene with no dialogue, built entirely from physical objects and environment. Trains the specificity that makes an invisible world believable.
-- **`group-mind-cultivation`** — the ensemble moves and responds as a single unit. Trains peripheral awareness rather than partner-focus.
-- **`emotion-switch`** — players shift emotional state fully on cue. Trains range and commitment without requiring a story to justify it.
+### Attention and listening
+
+The starting point, and where most groups need the most time.
+
+- **`mirroring`** — one player moves slowly, the other matches precisely. Sustained eye contact, no speaking. Spolin's core exercise, taught in nearly every first class.
+- **`last-word-response`** — your first word must be your partner's last word. Makes planning ahead structurally impossible.
+- **`one-word-scene`** — a story built one word at a time. Nobody owns a sentence, so nobody can draft one.
+- **`blind-offer`** — respond to an undefined gesture by deciding what it meant. Trains reading what someone did rather than what you assumed.
+
+### Ensemble and group awareness
+
+For a group that works as individuals taking turns rather than as a unit.
+
+- **`group-mind-cultivation`** — the group moves, stops and starts as one, silently, with no appointed leader.
+- **`yes-and-chain`** — each person accepts the previous statement literally and adds to it. The most universal beginner drill there is.
+- **`gift-giving`** — hand over an invisible object without deciding what it is; your partner names it and says why it matters.
+- **`organic-opening-exercise`** — group free-association producing themes from nothing. The Harold opening, run standalone.
+
+### Physicality and space
+
+Spolin's own emphasis, and the fastest route out of talking-heads scenes.
+
+- **`space-work-scene`** — a scene with no dialogue, built entirely from invisible objects and environment.
+- **`heat-and-weight`** — physical specificity as the route into a scene rather than dialogue.
+
+### Spontaneity and committing
+
+For groups that hesitate, hedge, or plan visibly.
+
+- **`first-line-drill`** — begin a scene before you know where it goes. The threshold moment, isolated.
+- **`no-backspace-scene`** — nothing can be retracted or qualified. Removes hedging by removing the option.
+- **`freeze-tag`** — the most universal short-form game: freeze the scene, take a position, start something new from it.
+
+### Emotional range
+
+Usually later in a group's development, and worth not rushing.
+
+- **`emotion-switch`** — shift emotional state fully on cue, without a story to justify it.
+- **`emotional-honesty-scene`** — authentic signal rather than a performed version of it. The most exposing on this page.
+- **`status-transfer`** — play the same scene at high status, then low, then shift mid-scene. Johnstone's territory.
+
+### Structure and recovery
+
+- **`genre-scene`** — commit to the conventions of a genre. Specificity through shared vocabulary, not parody.
+- **`directed-scene`** — a director calls adjustments mid-scene. Trains adaptability and ego dissolution.
+- **`fracture-repair-drill`** — deliberately establish conflicting realities, then repair without stopping. The one most collections omit.
+- **`scenes-from-a-hat`** — short prompts drawn at random. Useful for ending a session on volume rather than depth.
 
 ## Running Them Well
 
@@ -63,12 +105,20 @@ Each of these is a Spolin-lineage exercise with a single point of concentration:
 
 **Give one instruction, not three.** If a game needs a paragraph of setup, the point of concentration is not clear enough yet.
 
-**Play with the group, especially with children.** Spolin taught the games as play among equals. A teacher standing outside directing produces performance-for-approval, which is precisely the reflex the games are meant to dissolve.
-
 **Let it be boring sometimes.** A mirroring exercise that produces nothing entertaining but genuine attention has succeeded. Judge the game by whether people were actually present, not by whether the room laughed.
 
-## For Kids and for Beginners
+## Drama Games for Kids and Classrooms
 
-Theatre games work with children for the same reason they worked for Spolin's original students: they ask for participation rather than performance, and they do not require anyone to be clever. Mirroring, space work and group-mind exercises need no experience and no verbal fluency at all.
+Theatre games work with children for the same reason they worked for Spolin's original students: they ask for participation rather than performance, and they do not require anyone to be clever or verbally fluent. That origin is not incidental — she developed the method in Chicago partly for children and for immigrants learning English.
+
+**Start with the non-verbal ones.** `mirroring`, `space-work-scene` and `group-mind-cultivation` need no dialogue at all, which removes the two things that make children self-conscious: being heard and being judged on what they said.
+
+**Keep rounds short and rotate often.** Attention is the resource being trained, and a game that outlasts it teaches the opposite lesson.
+
+**Play with them.** Spolin taught the games as play among equals. An adult standing outside directing produces performance-for-approval, which is precisely the reflex the games exist to dissolve.
+
+**Do not cast anyone as the funny one.** The moment a group has a designated comedian, everyone else has been assigned the audience, and the exercise has stopped being a game.
+
+**Avoid the exposing ones early.** `emotional-honesty-scene` and `status-transfer` are for groups with established trust. Run them too soon and you get compliance on the surface and withdrawal underneath.
 
 For adults new to this, the same games are the standard entry point — and the same warning applies. The instinct to entertain is stronger in adults, and it is the main thing that gets in the way.
