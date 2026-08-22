@@ -1,6 +1,6 @@
 ---
-title: "Questions to Get to Know Someone: 100 That Start Small"
-description: "A stranger has no trust bank to draw on, so depth is not the goal — increments that go unpunished are. 100 questions, and why the boring ones work best."
+title: "Questions to Get to Know Someone: 140 That Start Small"
+description: "A stranger has no trust bank to draw on, so depth is not the goal — increments that go unpunished are. 140 questions, and why the boring ones work best."
 target_keywords:
   - {
       keyword: "questions to get to know someone",
@@ -27,7 +27,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Questions to Get to Know Someone: 100 That Start Small
+# Questions to Get to Know Someone: 140 That Start Small
 
 Almost every list of questions to get to know someone is a list of *deep* questions, on the theory that a better question produces a closer conversation. With somebody you have just met, that gets it exactly backwards.
 
@@ -71,6 +71,14 @@ The first ten minutes. Specific, easy, and impossible to get wrong.
 - What is the weather doing where you grew up?
 - What is your usual order somewhere?
 - What is on in the background when you are at home?
+- How long have you been in this part of the world?
+- What did you have to rearrange to be here?
+- Have you eaten, or are you pretending you have?
+- What does the rest of your day look like?
+- Is this your usual crowd?
+- Who did you come with?
+- What were you told this would be?
+- Is this an annual thing or a one-off?
 
 ## Questions That Move Past Small Talk
 
@@ -96,6 +104,14 @@ The transition is one move: pick something they mentioned in passing and ask abo
 - What is the last thing you made?
 - What is something you have got wrong about yourself?
 - What do you do that makes you lose track of time?
+- What has been taking up your evenings?
+- What have you got opinions about that never come up?
+- What is something you have been meaning to start?
+- What do you do that nobody would guess from meeting you?
+- What have you been reading or listening to lately?
+- What is the last thing you made with your hands?
+- What do you find easy that other people seem to struggle with?
+- What is something you have changed your approach to recently?
 
 ## Questions About How They Got Here
 
@@ -121,6 +137,14 @@ People are far more forthcoming about the past than the present, and the past is
 - Who did you look up to that you would not now?
 - What is a risk you took that worked?
 - What is one that did not?
+- What did the path here look like — straight or scenic?
+- Was there a point where it nearly went differently?
+- Who suggested you try this?
+- What did you train for that you no longer do?
+- What is the job you had that taught you the most?
+- Where were you living when things changed?
+- What did you have to learn quickly?
+- What nearly put you off early on?
 
 ## Questions That Find What They Care About
 
@@ -146,6 +170,14 @@ By this point the estimate has moved. These probe values without asking for a su
 - What would you fix first if you could fix one thing?
 - What is something you have changed your mind about that mattered?
 - What do you hope somebody asks you?
+- What could you talk about for an hour without preparing?
+- What do you go out of your way for?
+- What do you consider money well spent?
+- What do you find yourself defending to people?
+- What is a small thing that consistently improves your week?
+- What are you slowly getting better at?
+- What would you do more of if the day had more hours?
+- What is something you protect time for?
 
 ## Questions for a Group or a Party
 
@@ -171,6 +203,14 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What is something you learned this year?
 - What is the best thing about where you live?
 - What does an ordinary Sunday look like for you?
+- What is everyone avoiding doing this week?
+- What is the best thing anyone here has watched recently?
+- Who here has the longest commute, and is it worth it?
+- What is everyone's position on the food at these things?
+- What has somebody here done that nobody would expect?
+- Who here has moved house the most times?
+- What did everyone nearly wear instead?
+- Who here is the most and least organised, and how do you know?
 
 ## Using These as Ice Breaker Questions
 
