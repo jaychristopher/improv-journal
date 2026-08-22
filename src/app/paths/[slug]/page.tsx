@@ -101,8 +101,12 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
         description={fm.description}
         url={`/paths/${slug}`}
         audience={firstAudience}
-        duration={totalDuration}
-        threadCount={threads.length}
+        duration={totalDuration ?? fm.estimated_time}
+        lessons={threads.filter((t) => t.found).map((t) => ({ id: t.id, title: t.title }))}
+        teaches={fm.learning_objectives}
+        prerequisites={fm.prerequisites}
+        lengthInDays={fm.program_length_days}
+        cadence={fm.default_cadence}
       />
       <Breadcrumb
         crumbs={[
