@@ -9,7 +9,6 @@ target_keywords:
       traffic_potential: 17000,
       parent: "ice breaker questions for work",
     }
-  - { keyword: "icebreaker questions for teams", volume: 1400, parent: "ice breaker questions" }
   - { keyword: "funny icebreaker questions for work", volume: 700, parent: "ice breaker questions for work" }
   - { keyword: "work icebreakers", volume: 200, parent: "virtual ice breakers" }
   - { keyword: "virtual icebreaker questions", volume: 100, parent: "icebreaker questions for work" }

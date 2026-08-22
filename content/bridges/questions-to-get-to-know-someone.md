@@ -10,6 +10,8 @@ target_keywords:
       parent: "icebreaker questions",
     }
   - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone" }
+  - { keyword: "ice breaker questions", volume: 51000, difficulty: 19, traffic_potential: 90000, parent: "ice breaker questions" }
+  - { keyword: "icebreaker questions", volume: 24000, difficulty: 34, traffic_potential: 92000, parent: "ice breaker questions" }
   - { keyword: "questions to get to know someone better", volume: 900, parent: "questions to get to know someone" }
 serp_checked: "2026-08-22"
 serp_min_dr: 17
@@ -169,6 +171,23 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What is something you learned this year?
 - What is the best thing about where you live?
 - What does an ordinary Sunday look like for you?
+
+## Using These as Ice Breaker Questions
+
+Put any of these to a group rather than to one person and they become icebreaker questions, which is the word most people use for this and also a word that makes a lot of rooms flinch. The flinch is earned. It is worth being exact about what goes wrong, because it is not the questions.
+
+An icebreaker in a social setting fails differently from one at work — the workplace version is a power problem and has its [own page](/icebreaker-questions-for-work). Among strangers the failure is simpler: **a bad icebreaker asks people to be interesting in front of an audience of people they have not met.** It is an audition with a queue, and everybody spends their turn drafting instead of listening. Anything phrased as "tell us something surprising about yourself" is this.
+
+What survives contact with a real group:
+
+- **Everybody must already have the answer.** If a question requires inventing something, the people who invent quickly look charming and everybody else looks slow, which is the opposite of the intended effect.
+- **A short answer has to be acceptable.** One that only works at length excludes anyone who does not want the floor. Let three words be a complete turn.
+- **Avoid superlatives.** Best, worst, favourite and most all quietly ask people to compete, and the third person to answer is now trying to beat the first two.
+- **It has to survive being answered badly.** The test is what happens when somebody gives a flat answer. If the room goes awkward, the question was too demanding for the room.
+- **Nobody should have to go first cold.** Whoever is running it answers before asking, and answers briefly — a long model answer sets a length everyone else now has to match.
+- **Let people pass.** A round nobody can opt out of is not a warm-up, and one person visibly trapped costs more than any question gains.
+
+The reliable ones are unglamorous on purpose. Where somebody grew up, what they nearly studied, what they had for breakfast, how they know the host. They work because the answer already exists, it can be one line or five, and nobody is being scored.
 
 ## Questions That Do Not Work on a Stranger
 
