@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JourneyProgressBar } from "@/components/JourneyProgressBar";
 import { LessonCheckpoint } from "@/components/LessonCheckpoint";
 import { LessonFrame } from "@/components/LessonFrame";
+import { LessonJsonLd } from "@/components/LessonJsonLd";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
+  getAllPathsForThread,
   getAtomBySlug,
   getAtomUrl,
   getAudioUrl,
@@ -85,6 +86,8 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
     }
   }
 
+  const coursePaths = await getAllPathsForThread(slug);
+
   const atoms = await Promise.all(
     (fm.atoms ?? []).map(async (id) => {
       const atom = await getAtomBySlug(id);
@@ -112,12 +115,17 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
-      <ArticleJsonLd
+      <LessonJsonLd
         title={fm.title}
         description={extractDescription(thread.content)}
         url={`/threads/${slug}`}
         datePublished={fm.created}
         dateModified={fm.updated}
+        teaches={[fm.lesson_goal, fm.key_takeaway].filter((t): t is string => Boolean(t))}
+        minutes={fm.estimated_minutes}
+        difficulty={fm.difficulty}
+        concepts={atoms.map((a) => ({ name: a.title, url: a.url }))}
+        partOfCourses={coursePaths.map((p) => `/paths/${p.frontmatter.id}`)}
       />
       <Breadcrumb crumbs={crumbs} />
 
