@@ -35,7 +35,7 @@ export const CURATED_RELATED: Record<string, string[]> = {
     "how-to-be-more-charismatic",
   ],
   "how-to-be-more-articulate": [
-    "how-to-be-a-better-conversationalist",
+    "how-to-keep-a-conversation-going",
     "how-to-have-difficult-conversations",
     "how-to-make-small-talk",
   ],

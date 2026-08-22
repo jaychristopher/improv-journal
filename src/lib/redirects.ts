@@ -88,6 +88,13 @@ export function generateHubRedirects(): {
     // Same retarget: "group dynamics" is the academic phrasing at a traffic
     // potential of 250; "team dynamics" is what the audience types, at 3,500.
     { source: "/group-dynamics", destination: "/team-dynamics", permanent: true },
+    // The slug named a 450-a-month secondary while the page targets "how to
+    // keep a conversation going" at 4,500 and difficulty 2.
+    {
+      source: "/how-to-be-a-better-conversationalist",
+      destination: "/how-to-keep-a-conversation-going",
+      permanent: true,
+    },
     // Consolidated: "team bonding activities" has "team building activities"
     // as its parent topic, so the two pages were competing for one term.
     {

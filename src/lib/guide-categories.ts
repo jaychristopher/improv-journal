@@ -59,7 +59,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slugs: [
       "active-listening",
       "active-listening-exercises",
-      "how-to-be-a-better-conversationalist",
+      "how-to-keep-a-conversation-going",
       "how-to-be-more-articulate",
       "how-to-make-friends-as-an-adult",
       "how-to-be-a-good-friend",
