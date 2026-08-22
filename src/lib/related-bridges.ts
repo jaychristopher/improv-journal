@@ -243,8 +243,24 @@ function rankability(
   const primary = keywords?.[0];
   if (!primary) return 0;
   if (verdict === "authority") return 0;
-  if (primary.difficulty !== undefined && primary.difficulty > STRANDED_DIFFICULTY) return 0;
+  // Difficulty is only a stand-in for whether the results are reachable. Where
+  // they have been looked at and found open, that beats the stand-in.
+  if (
+    verdict !== "winnable" &&
+    primary.difficulty !== undefined &&
+    primary.difficulty > STRANDED_DIFFICULTY
+  ) {
+    return 0;
+  }
   return primary.traffic_potential ?? primary.volume ?? 0;
+}
+
+/** Highest-volume keyword sharing the primary's parent topic; see top-guides. */
+function anchorKeyword(keywords: BridgeTargetKeyword[]): BridgeTargetKeyword | undefined {
+  const primary = keywords[0];
+  if (!primary) return undefined;
+  const sameTopic = keywords.filter((k) => !primary.parent || k.parent === primary.parent);
+  return [...(sameTopic.length > 0 ? sameTopic : [primary])].sort((a, b) => b.volume - a.volume)[0];
 }
 
 function overlap<T>(a: Iterable<T>, b: Set<T>): number {
@@ -317,7 +333,8 @@ export async function getRelatedBridges(
     slug: b.slug,
     title: b.frontmatter.title,
     description: b.frontmatter.description,
-    keyword: [...(b.frontmatter.target_keywords ?? [])].sort((x, y) => y.volume - x.volume)[0]
-      ?.keyword,
+    // Same rule as the footer: the highest-volume keyword that shares the
+    // primary's parent topic, so the label never names a different subject.
+    keyword: anchorKeyword(b.frontmatter.target_keywords ?? [])?.keyword,
   }));
 }

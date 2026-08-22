@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "stage fright", volume: 6200, difficulty: 38, parent: "stage fright" }
   - { keyword: "how to overcome stage fright", volume: 400, difficulty: 12, traffic_potential: 150, parent: "how to overcome stage fright" }
   - { keyword: "how to get over stage fright", volume: 450, difficulty: 15, traffic_potential: 350, parent: "how to get over stage fright" }
+serp_checked: "2026-08-23"
+serp_min_dr: 45
+serp_verdict: authority
 entry_atoms: [performance-state, fear-of-failure, be-brave, presence, warm-up]
 entry_path: the-art-of-ensemble
 primary_problem: "fear is making you hesitate instead of making the first move"

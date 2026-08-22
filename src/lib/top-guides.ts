@@ -37,6 +37,28 @@ export interface TopGuide {
   difficulty?: number;
 }
 
+/**
+ * Anchor text for a guide, chosen from its declared keywords.
+ *
+ * The highest-volume keyword is not always the right label. Twelve guides
+ * declare one whose parent topic differs from their primary's, and on those the
+ * anchor was describing a topic the page is not aiming at: "overthinking" for
+ * a guide targeting "how to stop overthinking", "communication skills" for
+ * people-skills, "constructive feedback" for how-to-give-feedback. Sitewide
+ * anchor text is a strong signal about what a page is for, and it was pointing
+ * at the wrong subject on 330 pages at a time.
+ *
+ * So: the highest-volume keyword that shares the primary's parent topic, which
+ * keeps the better-phrased variants ("theater games" over "theatre games") and
+ * rejects the ones that belong to another topic. Falls back to the primary.
+ */
+function anchorKeyword(keywords: BridgeTargetKeyword[]): BridgeTargetKeyword | undefined {
+  const primary = keywords[0];
+  if (!primary) return undefined;
+  const sameTopic = keywords.filter((k) => !primary.parent || k.parent === primary.parent);
+  return [...(sameTopic.length > 0 ? sameTopic : [primary])].sort((a, b) => b.volume - a.volume)[0];
+}
+
 function titleCase(keyword: string): string {
   return keyword.charAt(0).toUpperCase() + keyword.slice(1);
 }
@@ -61,7 +83,7 @@ export async function getTopGuides(limit = 8): Promise<TopGuide[]> {
       .map((bridge) => {
         const keywords = bridge.frontmatter.target_keywords ?? [];
         const primary = keywords[0];
-        const head = [...keywords].sort((a, b) => b.volume - a.volume)[0];
+        const head = anchorKeyword(keywords);
         return {
           slug: bridge.slug,
           label: head ? titleCase(head.keyword) : bridge.frontmatter.title,
@@ -72,8 +94,17 @@ export async function getTopGuides(limit = 8): Promise<TopGuide[]> {
       })
       .filter((guide) => guide.reach > 0)
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
-      .filter((guide) => guide.difficulty === undefined || guide.difficulty <= STRANDED_DIFFICULTY)
       .filter((guide) => guide.verdict !== "authority")
+      // A checked-open guide beats the difficulty proxy. "How to stop
+      // overthinking" is difficulty 34 and had been excluded on that alone,
+      // while a DR 1 site holds position five on it — 16,000 a month the
+      // footer was declining to promote because of a backlink estimate.
+      .filter(
+        (guide) =>
+          guide.verdict === "winnable" ||
+          guide.difficulty === undefined ||
+          guide.difficulty <= STRANDED_DIFFICULTY,
+      )
       .sort((a, b) => b.reach - a.reach || a.slug.localeCompare(b.slug))
       .slice(0, limit)
   );
