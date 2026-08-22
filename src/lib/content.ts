@@ -641,6 +641,8 @@ export interface Episode {
   audioUrl: string;
   description?: string;
   duration?: string; // formatted, e.g. "4:32"
+  /** ISO date the underlying content was published, for feed pubDate ordering. */
+  published?: string;
 }
 
 /** Resolve all episodes for a show season filter */
@@ -673,6 +675,7 @@ export async function getEpisodesForShow(
             audioUrl: audio,
             description: b.frontmatter.description,
             duration: getAudioDuration(audio),
+            published: b.frontmatter.updated ?? b.frontmatter.created,
           });
         }
       }
@@ -686,6 +689,7 @@ export async function getEpisodesForShow(
               href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
               audioUrl: audio,
               duration: getAudioDuration(audio),
+              published: a.frontmatter.updated ?? a.frontmatter.created,
             });
           }
         }
@@ -699,6 +703,7 @@ export async function getEpisodesForShow(
             href: `/threads/${t.frontmatter.id}`,
             audioUrl: audio,
             duration: getAudioDuration(audio),
+            published: t.frontmatter.updated ?? t.frontmatter.created,
           });
         }
       }
@@ -711,6 +716,7 @@ export async function getEpisodesForShow(
             href: `/paths/${p.frontmatter.id}`,
             audioUrl: audio,
             duration: getAudioDuration(audio),
+            published: p.frontmatter.updated ?? p.frontmatter.created,
           });
         }
       }

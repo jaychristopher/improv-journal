@@ -20,6 +20,17 @@ export async function generateStaticParams() {
   return shows.map((s) => ({ show: s.frontmatter.id }));
 }
 
+/** Shown as the podcast author in directories. */
+const PODCAST_AUTHOR = "The Physics of Connection";
+
+/**
+ * Apple Podcasts requires an owner email to verify a submission. It is read
+ * from the environment rather than committed, so a personal address is never
+ * baked into a public feed; without it the feed is still valid, but cannot be
+ * submitted to Apple until the variable is set.
+ */
+const OWNER_EMAIL = process.env.PODCAST_OWNER_EMAIL;
+
 export async function GET(_request: Request, { params }: { params: Promise<{ show: string }> }) {
   const { show: showSlug } = await params;
   const show = await getShowBySlug(showSlug);
@@ -31,7 +42,29 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
   const fm = show.frontmatter;
   const seasons = await getEpisodesForShow(fm.id);
   const allEpisodes = seasons.flatMap((s) => s.episodes);
-  const pubDate = new Date().toUTCString();
+
+  // Every item previously carried `new Date()`, so all episodes shared one
+  // timestamp that changed on each request. Clients order by pubDate and use it
+  // to detect new episodes, so identical churning dates broke both. Fall back to
+  // the show's own created date rather than to "now".
+  const showDate = new Date(fm.created);
+  const episodeDate = (ep: (typeof allEpisodes)[number]) => {
+    const parsed = ep.published ? new Date(ep.published) : showDate;
+    return Number.isNaN(parsed.getTime()) ? showDate : parsed;
+  };
+  const channelDate = allEpisodes.reduce(
+    (latest, ep) => (episodeDate(ep) > latest ? episodeDate(ep) : latest),
+    showDate,
+  );
+  const artworkUrl = `${SITE_URL}/og/podcast?title=${encodeURIComponent(fm.title)}`;
+
+  const ownerBlock = OWNER_EMAIL
+    ? `
+    <itunes:owner>
+      <itunes:name>${escapeXml(PODCAST_AUTHOR)}</itunes:name>
+      <itunes:email>${escapeXml(OWNER_EMAIL)}</itunes:email>
+    </itunes:owner>`
+    : "";
 
   const items = allEpisodes
     .map((ep, i) => {
@@ -50,7 +83,10 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
       <enclosure url="${toAbsoluteSiteUrl(ep.audioUrl, SITE_URL)}" length="${getAudioFileSize(ep.audioUrl)}" type="audio/mpeg" />
       <itunes:duration>${itunesDuration}</itunes:duration>
       <itunes:episode>${i + 1}</itunes:episode>
-      <pubDate>${pubDate}</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="${escapeXml(artworkUrl)}" />
+      <pubDate>${episodeDate(ep).toUTCString()}</pubDate>
     </item>`;
     })
     .join("\n");
@@ -66,10 +102,13 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
     <atom:link href="${toAbsoluteSiteUrl(`/listen/${showSlug}/feed.xml`, SITE_URL)}" rel="self" type="application/rss+xml" />
     <description>${escapeXml(fm.description)}</description>
     <language>en-us</language>
-    <pubDate>${pubDate}</pubDate>
-    <itunes:author>The Physics of Connection</itunes:author>
+    <pubDate>${channelDate.toUTCString()}</pubDate>
+    <lastBuildDate>${channelDate.toUTCString()}</lastBuildDate>
+    <itunes:author>${escapeXml(PODCAST_AUTHOR)}</itunes:author>
     <itunes:summary>${escapeXml(fm.description)}</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="${escapeXml(artworkUrl)}" />${ownerBlock}
     <itunes:category text="Education">
       <itunes:category text="Self-Improvement" />
     </itunes:category>
