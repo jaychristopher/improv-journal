@@ -10,6 +10,7 @@ import {
   getParentPath,
   getThreadsForAtom,
 } from "@/lib/content";
+import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
 import { extractDescription } from "@/lib/seo";
 
@@ -18,6 +19,7 @@ import { AudioPlayer } from "./AudioPlayer";
 import { Breadcrumb, type Crumb } from "./Breadcrumb";
 import { ContextBanner } from "./ContextBanner";
 import { PodcastJsonLd } from "./PodcastJsonLd";
+import { TableOfContents } from "./TableOfContents";
 import { WhatsNext } from "./WhatsNext";
 
 const TYPE_LABELS: Record<string, string> = {
@@ -190,6 +192,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
             const attrHtml = attrMatch ? attrMatch[1] : null;
             return (
               <>
+                <TableOfContents headings={contentsFor(mainHtml)} />
                 <article
                   className="prose prose-neutral dark:prose-invert max-w-none"
                   dangerouslySetInnerHTML={{ __html: mainHtml }}

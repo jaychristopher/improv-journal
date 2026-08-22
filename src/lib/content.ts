@@ -192,14 +192,14 @@ function getTitlePrefix(title: string): string | null {
 
 function shouldAutolinkPhrase(
   phrase: string,
-  kind: "atom" | "path" | "thread",
+  kind: "atom" | "bridge" | "path" | "thread",
   atomType?: AtomType,
 ) {
   const normalized = normalizePhrase(phrase);
   const wordCount = normalized.split(/\s+/).length;
   if (normalized.length < 6) return false;
 
-  if (kind === "path" || kind === "thread") {
+  if (kind === "bridge" || kind === "path" || kind === "thread") {
     return wordCount >= 2 || normalized.length >= 18;
   }
 
@@ -210,7 +210,11 @@ function shouldAutolinkPhrase(
   return normalized.length >= 9;
 }
 
-function getAutolinkPhrases(title: string, kind: "atom" | "path" | "thread", atomType?: AtomType) {
+function getAutolinkPhrases(
+  title: string,
+  kind: "atom" | "bridge" | "path" | "thread",
+  atomType?: AtomType,
+) {
   const variants = new Set<string>();
   const normalizedTitle = normalizePhrase(title);
   if (normalizedTitle) variants.add(normalizedTitle);
@@ -322,6 +326,26 @@ function getContentLinkTargets(): ContentLinkTarget[] {
     const phrases = getAutolinkPhrases(pathEntry.frontmatter.title, "path");
     for (const phrase of phrases) {
       addTarget(phrase, url, pathEntry.frontmatter.title, 400);
+    }
+  }
+
+  // Guides were never registered, so the flow ran one way: the guides poured
+  // 327 in-body links into the concept pages and the concept pages sent back
+  // none. Most guides had zero in-body inbound links and the best had four,
+  // while 151 concept pages — the site's best-ranking cluster — had no path to
+  // the pages that target real search volume.
+  //
+  // Priority 100 keeps them below atoms: inside a concept page "status" should
+  // still resolve to the status atom, not to a guide that happens to mention it.
+  for (const bridge of readFrontmatterEntries<BridgeFrontmatter>("bridges")) {
+    const url = `/${bridge.slug}`;
+    const phrases = new Set<string>();
+    // The term the guide is written to answer is also what prose calls it.
+    const primary = bridge.frontmatter.target_keywords?.[0]?.keyword;
+    if (primary) for (const p of getAutolinkPhrases(primary, "bridge")) phrases.add(p);
+    for (const p of getAutolinkPhrases(bridge.frontmatter.title, "bridge")) phrases.add(p);
+    for (const phrase of phrases) {
+      addTarget(phrase, url, bridge.frontmatter.title, 100);
     }
   }
 
