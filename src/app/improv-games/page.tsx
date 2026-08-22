@@ -182,6 +182,18 @@ export default async function ImprovGamesPage() {
       )}
 
       <section className="mt-10">
+        <h2 className="mb-4 text-lg font-semibold">Looking for theatre games?</h2>
+        <p className="text-foreground/60 text-sm">
+          Many of these come from Viola Spolin&apos;s theatre games, which were built to train
+          skills rather than to get laughs — a distinction that changes how you run them.{" "}
+          <Link href="/theatre-games" className="text-foreground underline">
+            What theatre games are and how to run them
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section className="mt-10">
         <h2 className="mb-4 text-lg font-semibold">Want to understand why these games work?</h2>
         <p className="text-foreground/60 text-sm">
           Every improv game trains a specific skill rooted in how human connection works.{" "}

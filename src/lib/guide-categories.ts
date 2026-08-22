@@ -89,6 +89,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "how-to-get-better-at-improv",
       "improv-theory",
       "framing-effect",
+      "theatre-games",
     ],
   },
 ];
