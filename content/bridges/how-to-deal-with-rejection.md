@@ -44,7 +44,7 @@ The most counterintuitive rejection strategy: **seek it out.** Not recklessly �
 
 The purpose isn't masochism. It's **calibration.** Your threat system is miscalibrated — it predicts catastrophe when the actual consequence is discomfort. The only way to recalibrate is to collect evidence. Each small rejection where you survive recalibrates the system's estimate of danger.
 
-Improv performers do this automatically. Every class is a failure laboratory. Every show is a rejection opportunity. The volume of exposure is what makes the skill develop — not reading about it, not thinking about it, but doing it until the system adjusts.
+This is `failing-forward`, and improv performers do it automatically. Every class is a failure laboratory. Every show is a rejection opportunity. The volume of exposure is what makes the skill develop — not reading about it, not thinking about it, but doing it until the system adjusts.
 
 ### 2. Move immediately
 
@@ -60,10 +60,36 @@ Your boss didn't like the proposal. That's the event. "I'm not valued here" — 
 
 Improv performers practice this separation constantly. "That scene died" is very different from "I'm a bad improviser." They can hold both truths simultaneously: the scene was terrible AND I'm developing as a performer. The failure is real. The identity conclusion is optional.
 
+## What a Rejection Actually Tells You
+
+The third practice says to note what the rejection tells you and move. That is the right instruction and it is incomplete, because most people cannot tell the difference between the information and the verdict — and the verdict is what they end up carrying.
+
+Improv has a cleaner version of this, because the feedback is immediate and public. A room that does not laugh has told you something specific: that moment, with that audience, did not land. It has not told you whether you are any good. Performers who conflate the two burn out inside a year, and every teacher has watched it happen.
+
+Three questions separate them:
+
+- **How many data points is this?** A single rejection is one decision by one person under constraints you cannot see. Treating one as a verdict is a sampling error, and the reason volume works — the third rejection is informative in a way the first is not.
+- **Is it about fit or about quality?** Most rejections are about fit, and fit is largely not a property of you. A job, a pitch and a person all have requirements you were never told.
+- **Does it name something specific?** "Not what we're looking for" contains no information. "The middle section lost us" does. `signal` is the useful part; the rest is noise that feels like signal because it arrived attached to a loss.
+
+The improv framing underneath all of this: being rejected is having your offer blocked. `blocking` is a thing that happened in the scene, not a statement about the person who made the offer — and the trained response is to keep offering rather than to retaliate or withdraw.
+
+## How to Practise It
+
+The three practices are dispositions, and dispositions are hard to adopt by intending them. These are the rehearsals.
+
+**Fail on purpose, cheaply.** `first-line-drill` starts a scene before you know where it goes, so a proportion of attempts land badly by design. Small failures at high frequency are what recalibrate the prediction — this is the first practice, made concrete.
+
+**Remove the retreat.** `no-backspace-scene` allows nothing to be retracted or qualified. Most of what makes rejection linger is not the event but the rehearsal of it afterwards, and this trains the habit of leaving the last thing where it fell.
+
+**Practise the recovery, not the avoidance.** `fracture-repair-drill` establishes a rupture deliberately and repairs it without stopping. It is the second practice — move immediately — with the moving built into the exercise rather than left to willpower.
+
+**Be seen and survive it.** `emotional-honesty-scene` asks for real signal rather than a performed version. Run last, and only once the others are comfortable.
+
 ## The Long Game
 
 The relationship with rejection that improv develops isn't toughness — it's **resilience with honesty.** You don't pretend the rejection didn't hurt. You don't minimize it. You feel it, you note what it tells you, and you move. The feeling passes. The information stays. And the next time, the feeling is a little quieter — not because you care less, but because you've accumulated evidence that you survive.
 
-The improvisers who reach the highest level aren't the ones who stopped feeling rejection. They're the ones who feel it and perform anyway. That's not courage as a personality trait. It's courage as a practiced habit — built through hundreds of small failures, each one slightly less terrifying than the last.
+The improvisers who reach the highest level aren't the ones who stopped feeling rejection. They're the ones who feel it and perform anyway — `be-brave` as a practice rather than a trait. That's not courage as a personality trait. It's courage as a practiced habit — built through hundreds of small failures, each one slightly less terrifying than the last.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind performance state, failing forward, and the cognitive mechanics of risk-taking, explore the [Systems of Improv](/paths/systems-of-improv) path.*
