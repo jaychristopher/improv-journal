@@ -2,7 +2,7 @@
 title: "5-Minute Team Building Activities That Actually Work"
 description: "You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work."
 target_keywords:
-  - { keyword: "5 minute team building activities", volume: 1100 }
+  - { keyword: "5 minute team building activities", volume: 1100, difficulty: 0 }
   - { keyword: "quick team building activities", volume: 1000 }
 entry_atoms: [mirroring, yes-and-chain, gift-giving, one-word-scene, warm-up]
 entry_path: physics-of-connection

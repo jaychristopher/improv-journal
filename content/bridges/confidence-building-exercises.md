@@ -2,7 +2,7 @@
 title: "Confidence Building Exercises That Aren't Affirmations"
 description: "Confidence isn't a feeling you generate before acting — it's what's left after acting anyway. Seven improv exercises that train the doing, not the feeling."
 target_keywords:
-  - { keyword: "confidence building exercises", volume: 600 }
+  - { keyword: "confidence building exercises", volume: 600, difficulty: 8 }
   - { keyword: "confidence building activities", volume: 200 }
   - { keyword: "public speaking exercises", volume: 150 }
   - { keyword: "confidence exercises", volume: 100 }

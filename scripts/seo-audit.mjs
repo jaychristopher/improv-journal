@@ -25,7 +25,11 @@ function scoreAtom(file) {
   // Title check
   if (data.title) {
     score += 20;
-    if (data.title.length > 60) issues.push({ severity: "warning", msg: `Title too long (${data.title.length} chars): "${data.title}"` });
+    if (data.title.length > 60)
+      issues.push({
+        severity: "warning",
+        msg: `Title too long (${data.title.length} chars): "${data.title}"`,
+      });
   } else {
     issues.push({ severity: "critical", msg: "Missing title" });
   }
@@ -58,7 +62,13 @@ function scoreAtom(file) {
   // generateMetadata exists (check if page file has it)
   score += 20; // We just added it to all pages
 
-  return { id: data.id || path.basename(file, ".md"), title: data.title, type: data.type, score, issues };
+  return {
+    id: data.id || path.basename(file, ".md"),
+    title: data.title,
+    type: data.type,
+    score,
+    issues,
+  };
 }
 
 function scoreBridge(file) {
@@ -69,7 +79,8 @@ function scoreBridge(file) {
   // Title
   if (data.title) {
     score += 15;
-    if (data.title.length > 60) issues.push({ severity: "warning", msg: `Title too long (${data.title.length} chars)` });
+    if (data.title.length > 60)
+      issues.push({ severity: "warning", msg: `Title too long (${data.title.length} chars)` });
   } else {
     issues.push({ severity: "critical", msg: "Missing title" });
   }
@@ -77,8 +88,16 @@ function scoreBridge(file) {
   // Description
   if (data.description) {
     score += 15;
-    if (data.description.length < 120) issues.push({ severity: "warning", msg: `Description short (${data.description.length} chars)` });
-    if (data.description.length > 160) issues.push({ severity: "warning", msg: `Description long (${data.description.length} chars)` });
+    if (data.description.length < 120)
+      issues.push({
+        severity: "warning",
+        msg: `Description short (${data.description.length} chars)`,
+      });
+    if (data.description.length > 160)
+      issues.push({
+        severity: "warning",
+        msg: `Description long (${data.description.length} chars)`,
+      });
   } else {
     issues.push({ severity: "critical", msg: "Missing description" });
   }
@@ -91,7 +110,10 @@ function scoreBridge(file) {
     // Match on words, not raw characters: search engines treat hyphens and
     // punctuation as separators, so "5-Minute" does target "5 minute".
     const words = (text) =>
-      ` ${text.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `.replace(/\s+/g, " ");
+      ` ${text
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim()} `.replace(/\s+/g, " ");
     if (data.title && words(data.title).includes(words(primaryKw).trim())) {
       score += 10;
     } else {
@@ -115,7 +137,17 @@ function scoreBridge(file) {
   // Metadata exists
   score += 20;
 
-  return { id: path.basename(file, ".md"), title: data.title, type: "bridge", score: Math.min(score, 100), issues };
+  const primary = (data.target_keywords || [])[0] || {};
+  return {
+    id: path.basename(file, ".md"),
+    title: data.title,
+    type: "bridge",
+    score: Math.min(score, 100),
+    issues,
+    volume: primary.volume,
+    difficulty: primary.difficulty,
+    words: content.trim().split(/\s+/).length,
+  };
 }
 
 function scorePath(file) {
@@ -126,7 +158,8 @@ function scorePath(file) {
   if (data.title) score += 20;
   if (data.description) {
     score += 20;
-    if (data.description.length > 160) issues.push({ severity: "info", msg: `Description long (${data.description.length} chars)` });
+    if (data.description.length > 160)
+      issues.push({ severity: "info", msg: `Description long (${data.description.length} chars)` });
   } else {
     issues.push({ severity: "critical", msg: "Missing description" });
   }
@@ -156,34 +189,34 @@ const results = [];
 
 // Atoms
 const atomDir = path.join(CONTENT_DIR, "atoms");
-for (const file of fs.readdirSync(atomDir).filter(f => f.endsWith(".md"))) {
+for (const file of fs.readdirSync(atomDir).filter((f) => f.endsWith(".md"))) {
   results.push(scoreAtom(path.join(atomDir, file)));
 }
 
 // Bridges
 const bridgeDir = path.join(CONTENT_DIR, "bridges");
-for (const file of fs.readdirSync(bridgeDir).filter(f => f.endsWith(".md"))) {
+for (const file of fs.readdirSync(bridgeDir).filter((f) => f.endsWith(".md"))) {
   results.push(scoreBridge(path.join(bridgeDir, file)));
 }
 
 // Paths
 const pathDir = path.join(CONTENT_DIR, "paths");
-for (const file of fs.readdirSync(pathDir).filter(f => f.endsWith(".md"))) {
+for (const file of fs.readdirSync(pathDir).filter((f) => f.endsWith(".md"))) {
   results.push(scorePath(path.join(pathDir, file)));
 }
 
 // Threads
 const threadDir = path.join(CONTENT_DIR, "threads");
-for (const file of fs.readdirSync(threadDir).filter(f => f.endsWith(".md"))) {
+for (const file of fs.readdirSync(threadDir).filter((f) => f.endsWith(".md"))) {
   results.push(scoreThread(path.join(threadDir, file)));
 }
 
 // Summary
 const total = results.length;
 const avgScore = Math.round(results.reduce((sum, r) => sum + r.score, 0) / total);
-const critical = results.filter(r => r.issues.some(i => i.severity === "critical"));
-const warnings = results.filter(r => r.issues.some(i => i.severity === "warning"));
-const below80 = results.filter(r => r.score < 80);
+const critical = results.filter((r) => r.issues.some((i) => i.severity === "critical"));
+const warnings = results.filter((r) => r.issues.some((i) => i.severity === "warning"));
+const below80 = results.filter((r) => r.score < 80);
 
 console.log(`\nSEO Audit Report`);
 console.log(`${"=".repeat(50)}`);
@@ -206,11 +239,45 @@ if (below80.length > 0) {
   console.log();
 }
 
+// Winnability. Volume alone does not say where effort pays: a thin page on a
+// difficulty-2 term is a missed opportunity, and a deep one on a difficulty-60
+// term is effort that will not convert. Both were happening here.
+const WINNABLE_KD = 15;
+const STRANDED_KD = 30;
+const THIN_WORDS = 1400;
+
+const graded = results.filter((r) => typeof r.difficulty === "number");
+const missed = graded
+  .filter((r) => r.difficulty <= WINNABLE_KD && r.words < THIN_WORDS)
+  .sort((a, b) => b.volume - a.volume);
+const stranded = graded.filter((r) => r.difficulty > STRANDED_KD).sort((a, b) => b.words - a.words);
+
+const row = (r) =>
+  `  ${r.id.padEnd(42)} ${String(r.volume).padStart(6)}/mo  KD ${String(r.difficulty).padStart(2)}  ${String(r.words).padStart(5)}w`;
+
+if (missed.length > 0) {
+  console.log(`Winnable and thin — where depth pays (${missed.length}):`);
+  for (const r of missed.slice(0, 12)) console.log(row(r));
+  console.log();
+}
+
+if (stranded.length > 0) {
+  console.log(
+    `Stranded above KD ${STRANDED_KD} — depth here does not convert (${stranded.length}):`,
+  );
+  for (const r of stranded.slice(0, 8)) console.log(row(r));
+  console.log();
+}
+
 // Write JSON report
 const outputDir = path.join(process.cwd(), "output");
 fs.mkdirSync(outputDir, { recursive: true });
 fs.writeFileSync(
   path.join(outputDir, "seo-report.json"),
-  JSON.stringify({ summary: { total, avgScore, critical: critical.length, warnings: warnings.length }, results }, null, 2)
+  JSON.stringify(
+    { summary: { total, avgScore, critical: critical.length, warnings: warnings.length }, results },
+    null,
+    2,
+  ),
 );
 console.log(`Full report: output/seo-report.json`);

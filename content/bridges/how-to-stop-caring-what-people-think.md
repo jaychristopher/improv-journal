@@ -2,7 +2,7 @@
 title: "How to Stop Caring What People Think: The Performer's Secret"
 description: "The fear of judgment isn't weakness — it's a misfire of your social-threat system. Improv performers face it nightly and know how to disarm it."
 target_keywords:
-  - { keyword: "how to stop caring what people think", volume: 2400 }
+  - { keyword: "how to stop caring what people think", volume: 2400, difficulty: 2 }
   - { keyword: "fear of judgment", volume: 150 }
 entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave, internal-computation]
 entry_path: systems-of-improv

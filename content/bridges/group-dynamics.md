@@ -2,7 +2,7 @@
 title: "Group Dynamics: What Improv Ensembles Understand"
 description: "Improv ensembles have decoded how groups actually function — status transactions, signaling patterns, coherence. Here's their operating manual."
 target_keywords:
-  - { keyword: "group dynamics", volume: 3700 }
+  - { keyword: "group dynamics", volume: 3700, difficulty: 0 }
   - { keyword: "group dynamics definition", volume: 500 }
 entry_atoms: [group-mind, ensemble, status-dynamics, interdependence, safety-in-the-room, be-supportive]
 entry_path: improv-for-teams

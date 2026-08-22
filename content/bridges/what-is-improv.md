@@ -2,7 +2,7 @@
 title: "What Is Improv? (It's Not What You Think)"
 description: "Improv isn't comedy — it's the art of building shared reality in real time with no script. Here's what actually happens on stage and why it matters."
 target_keywords:
-  - { keyword: "what is improv", volume: 1600 }
+  - { keyword: "what is improv", volume: 1600, difficulty: 4 }
   - { keyword: "what is improvisation", volume: 800 }
 entry_atoms: [yes-and, offers, discovery, be-present, ensemble, reality-construction]
 entry_path: beginner-foundations

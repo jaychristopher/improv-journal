@@ -2,7 +2,7 @@
 title: "How to Have Difficult Conversations: The Improv Approach"
 description: "Difficult conversations fail when people plan scripts and defend positions. Improv teaches another way: listen first, respond to what's real."
 target_keywords:
-  - { keyword: "how to have difficult conversations", volume: 600 }
+  - { keyword: "how to have difficult conversations", volume: 600, difficulty: 12 }
   - { keyword: "difficult conversations", volume: 2900 }
 entry_atoms: [active-listening, offers, yes-and, be-honest, emotional-truth, status]
 entry_path: improv-for-life

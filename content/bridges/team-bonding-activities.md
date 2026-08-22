@@ -2,7 +2,7 @@
 title: "Team Bonding Activities That Actually Build Trust"
 description: "Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles solved this — here are the activities and the science."
 target_keywords:
-  - { keyword: "team bonding activities", volume: 5400 }
+  - { keyword: "team bonding activities", volume: 5400, difficulty: 55 }
   - { keyword: "trust building activities", volume: 200 }
   - { keyword: "team bonding exercises", volume: 150 }
 entry_atoms: [mirroring, gift-giving, yes-and-chain, one-word-scene, ensemble, trust]

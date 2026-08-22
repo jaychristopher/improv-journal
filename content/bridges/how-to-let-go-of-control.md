@@ -2,7 +2,7 @@
 title: "How to Let Go of Control: What Improv Teaches"
 description: "Control feels safe but kills connection. Improv performers surrender it every night — and the results beat anything they could have planned."
 target_keywords:
-  - { keyword: "how to let go of control", volume: 350 }
+  - { keyword: "how to let go of control", volume: 350, difficulty: 3 }
   - { keyword: "letting go of control", volume: 200 }
 entry_atoms: [spontaneity, offers, yes-and, discovery, internal-computation, irreversibility]
 entry_path: systems-of-improv

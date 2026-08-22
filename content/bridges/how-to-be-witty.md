@@ -2,7 +2,7 @@
 title: "How to Be Witty: The Improv Secret to Quick, Sharp Responses"
 description: "Witty people aren't faster thinkers — they're less filtered ones. Improv training reveals why your best responses come when you stop trying to be clever."
 target_keywords:
-  - { keyword: "how to be witty", volume: 700 }
+  - { keyword: "how to be witty", volume: 700, difficulty: 0 }
   - { keyword: "how to be quick witted", volume: 200 }
   - { keyword: "how to be clever", volume: 100 }
 entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment]

@@ -2,7 +2,7 @@
 title: "How to Get Better at Improv: A Practitioner's Guide"
 description: "Getting better at improv isn't about doing more shows. It's about diagnosing what's actually breaking and practicing the specific skill that fixes it."
 target_keywords:
-  - { keyword: "how to get better at improv", volume: 150 }
+  - { keyword: "how to get better at improv", volume: 150, difficulty: 0 }
   - { keyword: "improve at improv", volume: 50 }
   - { keyword: "improv practice", volume: 70 }
 entry_atoms: [diagnosing-scene-failure, active-listening, commitment, be-present, game-of-the-scene]

@@ -2,7 +2,7 @@
 title: "How to Read Body Language: What Improv Reveals"
 description: "Body language isn't a code to decode — it's a conversation to join. Improv performers read bodies in real time under pressure. Here's what they've learned."
 target_keywords:
-  - { keyword: "how to read body language", volume: 2100 }
+  - { keyword: "how to read body language", volume: 2100, difficulty: 3 }
   - { keyword: "reading body language", volume: 500 }
 entry_atoms: [active-listening, signal, audience-relationship, status, offers]
 entry_path: improv-for-life

@@ -135,6 +135,15 @@ export interface ThreadFrontmatter {
 export interface BridgeTargetKeyword {
   keyword: string;
   volume: number;
+  /**
+   * Ahrefs keyword difficulty, 0-100, on the primary keyword.
+   *
+   * Recorded because volume alone hid a systematic misallocation: guides
+   * aimed at terms in the 30-70 range were being deepened while winnable
+   * ones at difficulty 0-5 with comparable volume sat thin. scripts/seo-audit
+   * reports the gap.
+   */
+  difficulty?: number;
 }
 
 export interface BridgeFrontmatter {
