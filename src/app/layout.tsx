@@ -66,6 +66,15 @@ export default async function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches);if(d)document.documentElement.classList.add('dark')}catch(e){}})()`,
           }}
         />
+        {/* Feed autodiscovery. Emitted here rather than through metadata
+            alternates: a page that sets its own `alternates` replaces the
+            layout's, and every content page sets a canonical. */}
+        <link
+          rel="alternate"
+          type="application/atom+xml"
+          title={`${SITE_NAME} — guides and lessons`}
+          href="/feed.xml"
+        />
         {/* WebSite + SearchAction structured data */}
         <script
           type="application/ld+json"

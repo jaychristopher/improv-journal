@@ -43,6 +43,7 @@ const FOOTER_SECTIONS: { heading: string; links: { href: string; label: string }
       { href: "/library", label: "Reading List" },
       { href: "/listen", label: "Listen" },
       { href: "/about", label: "About" },
+      { href: "/feed.xml", label: "RSS Feed" },
     ],
   },
 ];

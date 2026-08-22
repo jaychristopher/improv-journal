@@ -13,7 +13,8 @@ function page(rel: string) {
 }
 
 function jsonLd(html: string) {
-  return [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map((m) =>
+  // [\s\S] instead of the `s` flag, which this tsconfig target predates.
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) =>
     JSON.parse(m[1]),
   );
 }
