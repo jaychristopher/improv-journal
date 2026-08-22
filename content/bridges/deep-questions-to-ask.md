@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "deep conversation starters", volume: 6600, difficulty: 3, parent: "deep conversation starters" }
   - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2, parent: "deep questions to ask" }
   - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12, parent: "deep questions to ask" }
+serp_checked: "2026-08-22"
+serp_min_dr: 12
+serp_verdict: winnable
 entry_atoms: [vulnerability, trust, safety-in-the-room, be-thankful, blocking]
 entry_path: improv-for-life
 primary_problem: "you ask something real and get an answer that sounds like a CV"

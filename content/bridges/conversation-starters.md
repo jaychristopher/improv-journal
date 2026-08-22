@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters" }
   - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids" }
   - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5, parent: "conversation starters for kids" }
+serp_checked: "2026-08-22"
+serp_min_dr: 28
+serp_verdict: winnable
 entry_atoms: [offers, obvious-choice, blocking, initiation, be-thankful]
 entry_path: improv-for-life
 primary_problem: "you open with something fine and the conversation is dead within thirty seconds"

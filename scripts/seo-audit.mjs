@@ -292,6 +292,23 @@ if (missed.length > 0) {
   console.log();
 }
 
+// The thin-page list only looks below THIN_WORDS, so the biggest pages on the
+// site never appeared on it however open their results were. These are where
+// the upside actually is: four of them carry more traffic potential than
+// everything on the winnable-and-thin list put together.
+const bigAndOpen = graded
+  .filter((r) => r.serpVerdict === "winnable" && reach(r) >= 10000)
+  .sort((a, b) => reach(b) - reach(a));
+if (bigAndOpen.length > 0) {
+  console.log(`Highest potential, and the results are open (${bigAndOpen.length}):`);
+  for (const r of bigAndOpen) {
+    console.log(
+      `  ${r.id.padEnd(40)} TP ${String(r.trafficPotential ?? "—").padStart(6)}  KD ${String(r.difficulty).padStart(2)}  lowest DR in top 10: ${r.serpMinDr}  ${String(r.words).padStart(5)}w`,
+    );
+  }
+  console.log();
+}
+
 if (authorityGated.length > 0) {
   console.log(
     `Authority-gated — low difficulty, but the results are not open (${authorityGated.length}):`,

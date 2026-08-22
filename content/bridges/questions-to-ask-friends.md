@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "fun questions to ask friends", volume: 700, parent: "fun questions to ask friends" }
   - { keyword: "hard questions to ask friends", volume: 450, parent: "hard questions to ask your friends" }
   - { keyword: "questions to ask your best friend", volume: 400, parent: "questions to ask friends" }
+serp_checked: "2026-08-22"
+serp_min_dr: 20
+serp_verdict: winnable
 entry_atoms: [offers, vulnerability, trust, be-thankful, active-listening]
 entry_path: improv-for-life
 primary_problem: "you want to talk about something other than work and neither of you knows how to start"

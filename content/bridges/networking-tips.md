@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "how to network effectively", volume: 150, difficulty: 7, parent: "networking techniques" }
   - { keyword: "networking advice", volume: 70, difficulty: 8, parent: "how to network" }
   - { keyword: "how to network as an introvert", volume: 70, difficulty: 6, parent: "networking for introverts" }
+serp_checked: "2026-08-22"
+serp_min_dr: 53
+serp_verdict: authority
 entry_atoms: [offers, be-supportive, status, trust, safety-in-the-room]
 entry_path: improv-for-life
 primary_problem: "you go to the event, collect three business cards, and feel slightly grubby afterwards"

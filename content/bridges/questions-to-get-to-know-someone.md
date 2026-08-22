@@ -11,6 +11,9 @@ target_keywords:
     }
   - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone" }
   - { keyword: "questions to get to know someone better", volume: 900, parent: "questions to get to know someone" }
+serp_checked: "2026-08-22"
+serp_min_dr: 17
+serp_verdict: winnable
 entry_atoms: [trust, offers, obvious-choice, be-thankful, safety-in-the-room]
 entry_path: improv-for-life
 primary_problem: "you meet someone you might like and the conversation stays on weather and jobs"

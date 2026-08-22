@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips" }
   - { keyword: "public speaking skills", volume: 900, difficulty: 38, parent: "public speaking tips" }
   - { keyword: "tips for public speaking", volume: 700, difficulty: 15, parent: "public speaking tips" }
+serp_checked: "2026-08-22"
+serp_min_dr: 27
+serp_verdict: winnable
 entry_atoms: [performance-state, obvious-choice, internal-computation, cognitive-bandwidth, audience-relationship]
 entry_path: improv-for-life
 primary_problem: "you are fine until somebody asks a question you did not prepare for"
