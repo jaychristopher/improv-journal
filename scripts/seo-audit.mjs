@@ -147,6 +147,7 @@ function scoreBridge(file) {
     volume: primary.volume,
     difficulty: primary.difficulty,
     trafficPotential: primary.traffic_potential,
+    keywords: (data.target_keywords || []).map((k) => String(k.keyword).toLowerCase()),
     words: content.trim().split(/\s+/).length,
   };
 }
@@ -237,6 +238,23 @@ if (below80.length > 0) {
       console.log(`           ${issue.severity}: ${issue.msg}`);
     }
   }
+  console.log();
+}
+
+// Keyword collisions. Two guides bidding for the same term split the signal
+// between them, and it was consistently a stranded page holding a target that
+// belonged to a winnable one.
+const owners = new Map();
+for (const r of results.filter((x) => x.keywords)) {
+  for (const k of r.keywords) {
+    if (!owners.has(k)) owners.set(k, []);
+    owners.get(k).push(r.id);
+  }
+}
+const collisions = [...owners.entries()].filter(([, pages]) => pages.length > 1);
+if (collisions.length > 0) {
+  console.log(`Keyword collisions — two guides targeting one term (${collisions.length}):`);
+  for (const [kw, pages] of collisions) console.log(`  "${kw}" — ${pages.join(", ")}`);
   console.log();
 }
 

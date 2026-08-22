@@ -3,7 +3,6 @@ title: "Active Listening Skills: Why You're Doing It Wrong"
 description: "Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible."
 target_keywords:
   - { keyword: "active listening skills", volume: 7500, difficulty: 68 }
-  - { keyword: "how to be more present", volume: 500 }
 entry_atoms:
   [active-listening, offers, continuous-signaling, cognitive-bandwidth, internal-computation]
 entry_path: physics-of-connection
@@ -94,3 +93,5 @@ _To practise it rather than read about it: [active listening exercises](/active-
 _For the full framework: [Building on Offers](/threads/building-on-offers). For the exercises: [Quieting the Planning Mind](/threads/quieting-the-planning-mind). For the complete path: [Physics of Connection](/paths/physics-of-connection)._
 
 **Sources cited:** Kahneman (1973), _Attention and Effort_. Sweller (1988), _Cognitive Science_. Cherry (1953), _Journal of the Acoustical Society of America_. Wickens (2002), _Theoretical Issues in Ergonomic Science_. Spolin (1963), _Improvisation for the Theater_.
+
+_On presence as its own subject: [how to be present](/how-to-be-present)._

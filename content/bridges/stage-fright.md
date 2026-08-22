@@ -5,7 +5,6 @@ target_keywords:
   - { keyword: "stage fright", volume: 6200, difficulty: 38 }
   - { keyword: "how to overcome stage fright", volume: 450 }
   - { keyword: "how to get over stage fright", volume: 500 }
-  - { keyword: "fear of public speaking", volume: 3300 }
 entry_atoms: [performance-state, fear-of-failure, be-brave, presence, warm-up]
 entry_path: the-art-of-ensemble
 primary_problem: "fear is making you hesitate instead of making the first move"
@@ -107,3 +106,5 @@ Trust the activation. Redirect the attention. Make the first move.
 _For the full performance framework: [The Performer's Edge](/threads/the-performers-edge). For the exercises: [Group Mind Cultivation](/atoms/group-mind-cultivation). For the complete path: [The Art of Ensemble](/paths/the-art-of-ensemble)._
 
 **Sources cited:** Brooks (2014), _Journal of Experimental Psychology_. Limb & Braun (2008), _PLoS ONE_. Hanin (2000), _Emotions in Sport_. Csikszentmihalyi (1990), _Flow_. Spolin (1963), _Improvisation for the Theater_. Johnstone (1979), _Impro_. Close, Halpern, Johnson (1994), _Truth in Comedy_.
+
+_The public-speaking case specifically, including why calming down is the wrong target: [fear of public speaking](/fear-of-public-speaking)._

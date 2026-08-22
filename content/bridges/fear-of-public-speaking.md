@@ -3,7 +3,6 @@ title: "Fear of Public Speaking: What Performers Know"
 description: "The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how."
 target_keywords:
   - { keyword: "fear of public speaking", volume: 3300 }
-  - { keyword: "fear of judgment", volume: 150 }
   - { keyword: "glossophobia", volume: 1300 }
 entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience-relationship]
 entry_path: systems-of-improv
@@ -86,3 +85,5 @@ The performers who look fearless on stage aren't. They're afraid and performing 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind performance state, audience relationship, and the cognitive mechanics of fear, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Performance State](/how-it-works/performance-state) and [Commitment](/practice/techniques/commitment).*
 
 _For the drills: [public speaking and confidence exercises](/confidence-building-exercises), including why calming down is the wrong target._
+
+_For the fear of judgment underneath it, rather than the speaking situation: [how to stop caring what people think](/how-to-stop-caring-what-people-think)._

@@ -3,7 +3,6 @@ title: "Team Bonding Activities That Actually Build Trust"
 description: "Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles solved this — here are the activities and the science."
 target_keywords:
   - { keyword: "team bonding activities", volume: 5400, difficulty: 55 }
-  - { keyword: "trust building activities", volume: 200 }
   - { keyword: "team bonding exercises", volume: 150 }
 entry_atoms: [mirroring, gift-giving, yes-and-chain, one-word-scene, ensemble, trust]
 entry_path: improv-for-teams
@@ -87,3 +86,5 @@ The activities create a shared experience of vulnerability and mutual support. B
 The improv tradition has sixty years of evidence that these exercises build genuine trust, not just temporary fun. The reason is simple: they require people to take small social risks, support each other through those risks, and build something together that no individual could have planned. That's not a metaphor for good teamwork. It's the definition of it.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind ensemble dynamics, trust, and group coordination, explore the [Improv for Teams](/paths/improv-for-teams) path.*
+
+_For trust specifically, and why the trust fall is not on the list: [trust building exercises](/trust-building-exercises)._
