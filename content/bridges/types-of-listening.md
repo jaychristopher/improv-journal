@@ -2,9 +2,9 @@
 title: "Types of Listening: The Three Modes That Matter"
 description: "There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation."
 target_keywords:
-  - { keyword: "types of listening", volume: 800, difficulty: 0, traffic_potential: 400 }
-  - { keyword: "types of listening skills", volume: 1200 }
-  - { keyword: "listening styles", volume: 300 }
+  - { keyword: "types of listening", volume: 800, difficulty: 0, traffic_potential: 400, parent: "types of listening" }
+  - { keyword: "types of listening skills", volume: 1200, parent: "types of listening" }
+  - { keyword: "listening styles", volume: 300, parent: "listening styles" }
 entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
 status: draft

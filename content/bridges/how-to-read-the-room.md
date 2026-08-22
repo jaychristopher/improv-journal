@@ -2,8 +2,8 @@
 title: "How to Read the Room: The Skill Performers Train"
 description: "Reading the room isn't intuition — it's a specific set of attention skills. Improv performers train them systematically. Here's how they work."
 target_keywords:
-  - { keyword: "how to read the room", volume: 200, difficulty: 1, traffic_potential: 400 }
-  - { keyword: "reading the room", volume: 150 }
+  - { keyword: "how to read the room", volume: 200, difficulty: 1, traffic_potential: 400, parent: "what is the best way to read the room?" }
+  - { keyword: "reading the room", volume: 150, parent: "what is the best way to read the room?" }
 entry_atoms: [audience-relationship, active-listening, ensemble, signal, bandwidth]
 entry_path: improv-for-teams
 status: draft

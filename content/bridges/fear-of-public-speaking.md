@@ -2,8 +2,8 @@
 title: "Fear of Public Speaking: What Performers Know"
 description: "The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how."
 target_keywords:
-  - { keyword: "fear of public speaking", volume: 3300 }
-  - { keyword: "glossophobia", volume: 1300 }
+  - { keyword: "fear of public speaking", volume: 3300, parent: "fear of public speaking" }
+  - { keyword: "glossophobia", volume: 1300, parent: "glossophobia" }
 entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience-relationship]
 entry_path: systems-of-improv
 status: draft

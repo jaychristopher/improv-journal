@@ -2,8 +2,8 @@
 title: "How to Be a Good Friend: The Support Most People Miss"
 description: "Most bad friending is well-intentioned blocking — solving, redirecting, reassuring. Improv names each one, and what to do instead of all of them."
 target_keywords:
-  - { keyword: "how to be a good friend", volume: 9200, difficulty: 5, traffic_potential: 2200 }
-  - { keyword: "how to be less defensive", volume: 200 }
+  - { keyword: "how to be a good friend", volume: 9200, difficulty: 5, traffic_potential: 2200, parent: "how to be a good friend" }
+  - { keyword: "how to be less defensive", volume: 200, parent: "how to stop being defensive" }
 entry_atoms: [be-supportive, be-thankful, offers, blocking, trust]
 entry_path: improv-for-life
 primary_problem: "you care about them and they have stopped telling you things"

@@ -2,10 +2,10 @@
 title: "Deep Questions to Ask: 120 That Get an Honest Answer"
 description: "Most deep questions ask for a conclusion, so they get a performance. These ask for an experience — plus what has to be true before any of them work at all."
 target_keywords:
-  - { keyword: "deep questions to ask", volume: 24000, difficulty: 8, traffic_potential: 67000 }
-  - { keyword: "deep conversation starters", volume: 6600, difficulty: 3 }
-  - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2 }
-  - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12 }
+  - { keyword: "deep questions to ask", volume: 24000, difficulty: 8, traffic_potential: 67000, parent: "deep questions to ask" }
+  - { keyword: "deep conversation starters", volume: 6600, difficulty: 3, parent: "deep conversation starters" }
+  - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2, parent: "deep questions to ask" }
+  - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12, parent: "deep questions to ask" }
 entry_atoms: [vulnerability, trust, safety-in-the-room, be-thankful, blocking]
 entry_path: improv-for-life
 primary_problem: "you ask something real and get an answer that sounds like a CV"

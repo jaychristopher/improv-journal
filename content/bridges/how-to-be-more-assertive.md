@@ -2,8 +2,8 @@
 title: "How to Be More Assertive: The Status Secret from Improv"
 description: "Assertiveness isn't aggression — it's a physical and vocal pattern improv calls 'status.' It's learnable, and doesn't require changing who you are."
 target_keywords:
-  - { keyword: "how to be more assertive", volume: 2000, difficulty: 4, traffic_potential: 1300 }
-  - { keyword: "assertiveness", volume: 1500 }
+  - { keyword: "how to be more assertive", volume: 2000, difficulty: 4, traffic_potential: 1300, parent: "how to be more assertive" }
+  - { keyword: "assertiveness", volume: 1500, parent: "assertiveness" }
 entry_atoms: [status, commitment, initiation, be-brave, signal]
 entry_path: improv-for-life
 status: draft

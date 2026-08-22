@@ -2,7 +2,7 @@
 title: "Team Building Questions That Actually Build Trust"
 description: "Most team building questions are trivially safe or performatively deep. Neither builds trust. Here's the improv principle that does — and 20 questions."
 target_keywords:
-  - { keyword: "team building questions", volume: 3700, difficulty: 30, traffic_potential: 3700 }
+  - { keyword: "team building questions", volume: 3700, difficulty: 30, traffic_potential: 3700, parent: "team building questions" }
 entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive]
 entry_path: physics-of-connection
 status: draft

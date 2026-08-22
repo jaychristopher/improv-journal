@@ -2,10 +2,10 @@
 title: "Questions to Ask Friends: 120 That Go Somewhere"
 description: "Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands."
 target_keywords:
-  - { keyword: "questions to ask friends", volume: 13000, difficulty: 1, traffic_potential: 41000 }
-  - { keyword: "fun questions to ask friends", volume: 700 }
-  - { keyword: "hard questions to ask friends", volume: 450 }
-  - { keyword: "questions to ask your best friend", volume: 400 }
+  - { keyword: "questions to ask friends", volume: 13000, difficulty: 1, traffic_potential: 41000, parent: "questions to ask friends" }
+  - { keyword: "fun questions to ask friends", volume: 700, parent: "fun questions to ask friends" }
+  - { keyword: "hard questions to ask friends", volume: 450, parent: "hard questions to ask your friends" }
+  - { keyword: "questions to ask your best friend", volume: 400, parent: "questions to ask friends" }
 entry_atoms: [offers, vulnerability, trust, be-thankful, active-listening]
 entry_path: improv-for-life
 primary_problem: "you want to talk about something other than work and neither of you knows how to start"

@@ -2,10 +2,10 @@
 title: "How to Be More Articulate: It Is Not About Vocabulary"
 description: "Articulate people do not use more words than you. They use fewer, and they cost the listener less. That is a habit rather than a gift, and it is trainable."
 target_keywords:
-  - { keyword: "how to be more articulate", volume: 1000, difficulty: 0, traffic_potential: 1200 }
-  - { keyword: "how to speak more clearly", volume: 300, difficulty: 0 }
-  - { keyword: "how to think before you speak", volume: 350, difficulty: 0 }
-  - { keyword: "how to stop stumbling over words", volume: 40, difficulty: 0 }
+  - { keyword: "how to be more articulate", volume: 1000, difficulty: 0, traffic_potential: 1200, parent: "how to be more articulate" }
+  - { keyword: "how to speak more clearly", volume: 300, difficulty: 0, parent: "how to speak more clearly" }
+  - { keyword: "how to think before you speak", volume: 350, difficulty: 0, parent: "how to think before you speak" }
+  - { keyword: "how to stop stumbling over words", volume: 40, difficulty: 0, parent: "how to stop stumbling over words" }
 entry_atoms: [be-simple, signal, overcomplication, performing-cleverness, cognitive-bandwidth]
 entry_path: improv-for-life
 primary_problem: "you know what you mean and it comes out as three false starts and a shrug"

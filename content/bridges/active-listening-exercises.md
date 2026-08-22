@@ -2,10 +2,10 @@
 title: "Active Listening Exercises That Actually Train It"
 description: "Most listening exercises rehearse looking attentive. These seven make composing your reply structurally impossible — which is the part that has to change."
 target_keywords:
-  - { keyword: "active listening exercises", volume: 700, difficulty: 3, traffic_potential: 1200 }
-  - { keyword: "listening exercises", volume: 400 }
-  - { keyword: "communication exercises", volume: 200 }
-  - { keyword: "active listening activities", volume: 150 }
+  - { keyword: "active listening exercises", volume: 700, difficulty: 3, traffic_potential: 1200, parent: "active listening activities" }
+  - { keyword: "listening exercises", volume: 400, parent: "active listening exercises" }
+  - { keyword: "communication exercises", volume: 200, parent: "communication games" }
+  - { keyword: "active listening activities", volume: 150, parent: "active listening activities" }
 entry_atoms: [active-listening, be-present, offers, internal-computation, signal]
 entry_path: improv-for-life
 primary_problem: "you know you should listen better and practising it never seems to change anything"

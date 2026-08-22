@@ -2,11 +2,11 @@
 title: "Theatre Games: What They Are and How to Run Them"
 description: "Theatre games were invented to teach non-actors, not to get laughs. Here's where they came from, how they differ from improv games, and how to run them."
 target_keywords:
-  - { keyword: "theatre games", volume: 1400, difficulty: 3, traffic_potential: 2500 }
-  - { keyword: "theater games", volume: 1900 }
-  - { keyword: "drama games", volume: 800 }
-  - { keyword: "theatre games for kids", volume: 300 }
-  - { keyword: "theater games for adults", volume: 20 }
+  - { keyword: "theatre games", volume: 1400, difficulty: 3, traffic_potential: 2500, parent: "theater games" }
+  - { keyword: "theater games", volume: 1900, parent: "theater games" }
+  - { keyword: "drama games", volume: 800, parent: "theater games" }
+  - { keyword: "theatre games for kids", volume: 300, parent: "theater games" }
+  - { keyword: "theater games for adults", volume: 20, parent: "acting games" }
 entry_atoms: [be-present, space-work, physicality, warm-up, side-coaching]
 entry_path: beginner-foundations
 primary_problem: "you need structured drama exercises that build skills rather than just fill time"

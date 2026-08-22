@@ -2,10 +2,10 @@
 title: "How to Stop Overthinking: The Bandwidth Problem"
 description: "Overthinking isn't a thinking problem - it's a bandwidth allocation error. Here's the neuroscience and the practice that discovered the fix first."
 target_keywords:
-  - { keyword: "how to stop overthinking", volume: 16000, difficulty: 34 }
-  - { keyword: "get out of your head", volume: 3600 }
-  - { keyword: "how to get out of your head", volume: 2000 }
-  - { keyword: "overthinking", volume: 23000 }
+  - { keyword: "how to stop overthinking", volume: 16000, difficulty: 34, parent: "how to stop overthinking" }
+  - { keyword: "get out of your head", volume: 3600, parent: "get out of your head" }
+  - { keyword: "how to get out of your head", volume: 2000, parent: "how to get out of your head" }
+  - { keyword: "overthinking", volume: 23000, parent: "overthinking" }
 entry_atoms:
   [cognitive-bandwidth, internal-computation, obvious-choice, be-present, fear-of-failure]
 entry_path: systems-of-improv

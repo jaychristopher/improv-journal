@@ -2,8 +2,8 @@
 title: "How to Stop People Pleasing: The Authentic Response"
 description: "People pleasing is blocking in disguise: refusing your own offers to protect someone else's comfort. Improv reveals the mechanism — and the way out."
 target_keywords:
-  - { keyword: "how to stop people pleasing", volume: 1200, difficulty: 0, traffic_potential: 1900 }
-  - { keyword: "people pleasing", volume: 3600 }
+  - { keyword: "how to stop people pleasing", volume: 1200, difficulty: 0, traffic_potential: 1900, parent: "how to stop being a people pleaser" }
+  - { keyword: "people pleasing", volume: 3600, parent: "people pleasing" }
 entry_atoms: [blocking, commitment, be-honest, status, performing-cleverness, yes-and]
 entry_path: improv-for-life
 status: draft

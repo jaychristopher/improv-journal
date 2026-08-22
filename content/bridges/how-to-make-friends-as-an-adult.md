@@ -2,11 +2,11 @@
 title: "How to Make Friends as an Adult: The Ensemble Problem"
 description: "Adults don't lose the skill of making friends. They lose the conditions it needs — repeated contact and shared low-stakes activity. Both can be rebuilt."
 target_keywords:
-  - { keyword: "how to make friends as an adult", volume: 9200, difficulty: 12, traffic_potential: 4500 }
-  - { keyword: "how to connect with people", volume: 500 }
-  - { keyword: "how to be more likeable", volume: 400 }
-  - { keyword: "how to be more outgoing", volume: 400 }
-  - { keyword: "how to be more approachable", volume: 400 }
+  - { keyword: "how to make friends as an adult", volume: 9200, difficulty: 12, traffic_potential: 4500, parent: "how to make friends as an adult" }
+  - { keyword: "how to connect with people", volume: 500, parent: "how to connect with people" }
+  - { keyword: "how to be more likeable", volume: 400, parent: "how to be more likeable" }
+  - { keyword: "how to be more outgoing", volume: 400, parent: "how to be more outgoing" }
+  - { keyword: "how to be more approachable", volume: 400, parent: "how to be more approachable" }
 entry_atoms: [trust, ensemble, vulnerability, safety-in-the-room, be-present]
 entry_path: improv-for-life
 primary_problem: "you get on with people fine and none of it turns into friendship"

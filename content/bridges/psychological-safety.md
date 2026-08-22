@@ -2,10 +2,10 @@
 title: "Psychological Safety: The Physics of Trust"
 description: "Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust."
 target_keywords:
-  - { keyword: "psychological safety", volume: 11000, difficulty: 64 }
-  - { keyword: "psychological safety at work", volume: 2700 }
-  - { keyword: "what is psychological safety", volume: 1300 }
-  - { keyword: "creating psychological safety in the workplace", volume: 200 }
+  - { keyword: "psychological safety", volume: 11000, difficulty: 64, parent: "psychological safety" }
+  - { keyword: "psychological safety at work", volume: 2700, parent: "psychological safety" }
+  - { keyword: "what is psychological safety", volume: 1300, parent: "psychological safety" }
+  - { keyword: "creating psychological safety in the workplace", volume: 200, parent: "psychological safety at work" }
 entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, vulnerability]
 entry_path: physics-of-connection
 status: draft

@@ -7,9 +7,10 @@ target_keywords:
       volume: 60000,
       difficulty: 13,
       traffic_potential: 69000,
+      parent: "icebreaker questions",
     }
-  - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9 }
-  - { keyword: "questions to get to know someone better", volume: 900 }
+  - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone" }
+  - { keyword: "questions to get to know someone better", volume: 900, parent: "questions to get to know someone" }
 entry_atoms: [trust, offers, obvious-choice, be-thankful, safety-in-the-room]
 entry_path: improv-for-life
 primary_problem: "you meet someone you might like and the conversation stays on weather and jobs"

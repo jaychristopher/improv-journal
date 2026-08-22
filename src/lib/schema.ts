@@ -155,6 +155,29 @@ export interface BridgeTargetKeyword {
    * on this where it exists.
    */
   traffic_potential?: number;
+
+  /**
+   * Ahrefs parent topic: the broader keyword Google actually ranks a page for
+   * when it ranks for this one.
+   *
+   * Recorded because it is the only reliable test of whether two pages compete.
+   * Distinct keyword strings are not enough — no two guides have ever declared
+   * the same string, and two collisions still shipped. `/emotional-safety`
+   * declared "emotional safety in the workplace", whose parent is
+   * "psychological safety", putting it behind the site's own KD 64 page.
+   * `/5-minute-team-building` declared "quick team building activities", whose
+   * parent is "team building activities" — the primary of the biggest page on
+   * the site.
+   *
+   * Both were secondary keywords, which is why an earlier audit comparing only
+   * primaries passed. Storing the parent here lets a test check every declared
+   * keyword instead, so the next one fails before it ships rather than being
+   * found by a manual sweep of the Ahrefs API.
+   *
+   * Absent where Ahrefs reports no parent, which happens on terms too small to
+   * have one.
+   */
+  parent?: string;
 }
 
 export interface BridgeFrontmatter {

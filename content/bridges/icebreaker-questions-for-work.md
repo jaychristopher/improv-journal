@@ -7,11 +7,12 @@ target_keywords:
       volume: 8400,
       difficulty: 7,
       traffic_potential: 17000,
+      parent: "ice breaker questions for work",
     }
-  - { keyword: "icebreaker questions for teams", volume: 1400 }
-  - { keyword: "funny icebreaker questions for work", volume: 700 }
-  - { keyword: "work icebreakers", volume: 200 }
-  - { keyword: "virtual icebreaker questions", volume: 100 }
+  - { keyword: "icebreaker questions for teams", volume: 1400, parent: "ice breaker questions" }
+  - { keyword: "funny icebreaker questions for work", volume: 700, parent: "ice breaker questions for work" }
+  - { keyword: "work icebreakers", volume: 200, parent: "virtual ice breakers" }
+  - { keyword: "virtual icebreaker questions", volume: 100, parent: "icebreaker questions for work" }
 entry_atoms: [safety-in-the-room, status, trust, vulnerability, be-thankful]
 entry_path: improv-for-teams
 primary_problem: "you have to open a meeting and every icebreaker you can think of makes people wince"

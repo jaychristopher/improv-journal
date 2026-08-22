@@ -6,7 +6,7 @@ target_keywords:
   - { keyword: "history of improv", volume: 480 }
   - { keyword: "improv philosophy", volume: 170 }
   - { keyword: "keith johnstone improv", volume: 320 }
-  - { keyword: "viola spolin games", volume: 260 }
+  - { keyword: "viola spolin games", volume: 260, parent: "viola spolin theatre games" }
 entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction, spontaneity]
 entry_path: reference-guide
 status: draft

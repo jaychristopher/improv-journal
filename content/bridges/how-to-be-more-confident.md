@@ -2,7 +2,7 @@
 title: "How to Be More Confident (Without Faking It)"
 description: "Confidence isn't a feeling you summon — it's a byproduct of commitment. Full commitment to any choice reads as confidence. Half-commitment reads as doubt."
 target_keywords:
-  - { keyword: "how to be more confident", volume: 7900, difficulty: 54 }
+  - { keyword: "how to be more confident", volume: 7900, difficulty: 54, parent: "how to be more confident" }
 entry_atoms: [commitment, obvious-choice, fear-of-failure, be-brave, be-honest]
 entry_path: systems-of-improv
 status: draft

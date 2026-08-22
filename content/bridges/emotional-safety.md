@@ -2,10 +2,10 @@
 title: "Emotional Safety: What It Is and How It Gets Built"
 description: "Emotional safety is the confidence that showing what you feel will not be used against you. It is built by repetition, not by announcement — here is how."
 target_keywords:
-  - { keyword: "emotional safety", volume: 2300, difficulty: 13, traffic_potential: 800 }
-  - { keyword: "what is emotional safety", volume: 500, difficulty: 4 }
-  - { keyword: "emotional safety definition", volume: 400, difficulty: 1 }
-  - { keyword: "how to create emotional safety", volume: 80, difficulty: 1 }
+  - { keyword: "emotional safety", volume: 2300, difficulty: 13, traffic_potential: 800, parent: "emotional safety" }
+  - { keyword: "what is emotional safety", volume: 500, difficulty: 4, parent: "emotional safety" }
+  - { keyword: "emotional safety definition", volume: 400, difficulty: 1, parent: "emotional safety" }
+  - { keyword: "how to create emotional safety", volume: 80, difficulty: 1, parent: "emotional safety" }
 entry_atoms: [safety-in-the-room, trust, ensemble, be-supportive, vulnerability]
 entry_path: improv-for-teams
 status: draft

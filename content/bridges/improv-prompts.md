@@ -2,12 +2,12 @@
 title: "Improv Prompts: 110 Scene Starters and How to Use Them"
 description: "A hundred and ten prompts you can use tonight — relationships, first lines, locations, situations — and why the zany ones make worse scenes."
 target_keywords:
-  - { keyword: "improv prompts", volume: 700, difficulty: 0, traffic_potential: 1700 }
-  - { keyword: "improv ideas", volume: 300 }
-  - { keyword: "improv scenarios", volume: 150 }
-  - { keyword: "improv topics", volume: 90 }
-  - { keyword: "improv scene ideas", volume: 50 }
-  - { keyword: "improv situations", volume: 20 }
+  - { keyword: "improv prompts", volume: 700, difficulty: 0, traffic_potential: 1700, parent: "improv prompts" }
+  - { keyword: "improv ideas", volume: 300, parent: "improv prompts" }
+  - { keyword: "improv scenarios", volume: 150, parent: "improv prompts" }
+  - { keyword: "improv topics", volume: 90, parent: "improv prompts" }
+  - { keyword: "improv scene ideas", volume: 50, parent: "improv prompts" }
+  - { keyword: "improv situations", volume: 20, parent: "improv prompts" }
 entry_atoms: [suggestion, base-reality, initiation, obvious-choice, offers]
 entry_path: beginner-foundations
 primary_problem: "you need something to start a scene with and everything you think of is either boring or too clever"

@@ -7,10 +7,11 @@ target_keywords:
       volume: 487000,
       difficulty: 5,
       traffic_potential: 109000,
+      parent: "team building activities",
     }
-  - { keyword: "team building activities for work", volume: 8800 }
-  - { keyword: "team bonding activities", volume: 5500, difficulty: 55 }
-  - { keyword: "team bonding", volume: 2500, difficulty: 0 }
+  - { keyword: "team building activities for work", volume: 8800, parent: "team building activities" }
+  - { keyword: "team bonding activities", volume: 5500, difficulty: 55, parent: "team building activities" }
+  - { keyword: "team bonding", volume: 2500, difficulty: 0, parent: "team building activities" }
 entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

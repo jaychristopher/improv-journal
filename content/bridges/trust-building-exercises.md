@@ -2,11 +2,11 @@
 title: "Trust Building Exercises That Aren't Trust Falls"
 description: "Trust isn't built by dramatic gestures. It's built by small, repeated, reliable exchanges — which is exactly what these seven improv exercises rehearse."
 target_keywords:
-  - { keyword: "trust building exercises", volume: 200, difficulty: 6, traffic_potential: 700 }
-  - { keyword: "trust building activities", volume: 150 }
-  - { keyword: "team trust exercises", volume: 150 }
-  - { keyword: "psychological safety exercises", volume: 100 }
-  - { keyword: "group trust exercises", volume: 80 }
+  - { keyword: "trust building exercises", volume: 200, difficulty: 6, traffic_potential: 700, parent: "trust exercises" }
+  - { keyword: "trust building activities", volume: 150, parent: "trust exercises" }
+  - { keyword: "team trust exercises", volume: 150, parent: "team trust building activities" }
+  - { keyword: "psychological safety exercises", volume: 100, parent: "team trust exercises" }
+  - { keyword: "group trust exercises", volume: 80, parent: "trust building exercises for leadership teams" }
 entry_atoms: [trust, be-thankful, be-supportive, be-honest, offers]
 entry_path: improv-for-teams
 primary_problem: "the team is polite but nobody says the real thing"

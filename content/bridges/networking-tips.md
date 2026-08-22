@@ -2,11 +2,11 @@
 title: "Networking Tips That Work If You Hate Networking"
 description: "Networking feels bad because it is framed as extraction, and everyone can tell. The fix is not a better opener — it is arriving with something to offer."
 target_keywords:
-  - { keyword: "networking tips", volume: 129000, difficulty: 11, traffic_potential: 53000 }
-  - { keyword: "how to network", volume: 2900, difficulty: 7 }
-  - { keyword: "how to network effectively", volume: 150, difficulty: 7 }
-  - { keyword: "networking advice", volume: 70, difficulty: 8 }
-  - { keyword: "how to network as an introvert", volume: 70, difficulty: 6 }
+  - { keyword: "networking tips", volume: 129000, difficulty: 11, traffic_potential: 53000, parent: "networking tips" }
+  - { keyword: "how to network", volume: 2900, difficulty: 7, parent: "networking tips" }
+  - { keyword: "how to network effectively", volume: 150, difficulty: 7, parent: "networking techniques" }
+  - { keyword: "networking advice", volume: 70, difficulty: 8, parent: "how to network" }
+  - { keyword: "how to network as an introvert", volume: 70, difficulty: 6, parent: "networking for introverts" }
 entry_atoms: [offers, be-supportive, status, trust, safety-in-the-room]
 entry_path: improv-for-life
 primary_problem: "you go to the event, collect three business cards, and feel slightly grubby afterwards"

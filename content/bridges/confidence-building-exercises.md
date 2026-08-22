@@ -2,11 +2,11 @@
 title: "Confidence Building Exercises That Aren't Affirmations"
 description: "Confidence isn't a feeling you generate before acting — it's what's left after acting anyway. Seven improv exercises that train the doing, not the feeling."
 target_keywords:
-  - { keyword: "confidence building exercises", volume: 600, difficulty: 8, traffic_potential: 700 }
-  - { keyword: "confidence building activities", volume: 200 }
-  - { keyword: "public speaking exercises", volume: 150 }
-  - { keyword: "confidence exercises", volume: 100 }
-  - { keyword: "self confidence exercises", volume: 80 }
+  - { keyword: "confidence building exercises", volume: 600, difficulty: 8, traffic_potential: 700, parent: "confidence building exercises" }
+  - { keyword: "confidence building activities", volume: 200, parent: "confidence building exercises" }
+  - { keyword: "public speaking exercises", volume: 150, parent: "public speaking activities" }
+  - { keyword: "confidence exercises", volume: 100, parent: "confidence building exercises" }
+  - { keyword: "self confidence exercises", volume: 80, parent: "confidence building exercises" }
 entry_atoms: [be-brave, fear-of-failure, hesitation, status, performance-state]
 entry_path: improv-for-life
 primary_problem: "you keep waiting to feel ready and the moment keeps passing"

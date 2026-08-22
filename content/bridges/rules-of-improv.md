@@ -2,10 +2,10 @@
 title: "The Rules of Improv (And Why Half of Them Are Wrong)"
 description: "Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works."
 target_keywords:
-  - { keyword: "rules of improv", volume: 450, difficulty: 3, traffic_potential: 400 }
-  - { keyword: "yes and improv", volume: 600 }
-  - { keyword: "improv rules", volume: 150 }
-  - { keyword: "improv yes and", volume: 250 }
+  - { keyword: "rules of improv", volume: 450, difficulty: 3, traffic_potential: 400, parent: "rules of improv" }
+  - { keyword: "yes and improv", volume: 600, parent: "yes and" }
+  - { keyword: "improv rules", volume: 150, parent: "rules of improv" }
+  - { keyword: "improv yes and", volume: 250, parent: "yes and" }
 entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontaneity]
 entry_path: beginner-foundations
 status: draft

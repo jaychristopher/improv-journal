@@ -7,12 +7,13 @@ target_keywords:
       volume: 32000,
       difficulty: 9,
       traffic_potential: 27000,
+      parent: "questions to ask during an interview",
     }
-  - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4 }
-  - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2 }
-  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3 }
-  - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3 }
-  - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4 }
+  - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4, parent: "questions to ask interviewer" }
+  - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2, parent: "best questions to ask an interviewer" }
+  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, parent: "questions to ask at the end of an interview" }
+  - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview" }
+  - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4, parent: "unique interview questions to ask employer" }
 entry_atoms: [status, initiation, offers, safety-in-the-room, be-brave]
 entry_path: physics-of-connection
 primary_problem: "you get to the end of the interview and the only question you can think of is about the next steps"

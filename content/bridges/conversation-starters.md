@@ -2,11 +2,11 @@
 title: "Conversation Starters: 100 That Survive the Second Exchange"
 description: "A starter only buys you one exchange. What you do with the second decides the rest. 100 sorted by the room you are in, and why the clever ones die fastest."
 target_keywords:
-  - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000 }
-  - { keyword: "funny conversation starters", volume: 2200, difficulty: 4 }
-  - { keyword: "what are good conversation starters", volume: 600, difficulty: 9 }
-  - { keyword: "family conversation starters", volume: 600, difficulty: 1 }
-  - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5 }
+  - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters" }
+  - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters" }
+  - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids" }
+  - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5, parent: "conversation starters for kids" }
 entry_atoms: [offers, obvious-choice, blocking, initiation, be-thankful]
 entry_path: improv-for-life
 primary_problem: "you open with something fine and the conversation is dead within thirty seconds"

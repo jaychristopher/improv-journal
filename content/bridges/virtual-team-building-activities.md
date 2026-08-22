@@ -7,11 +7,12 @@ target_keywords:
       volume: 2500,
       difficulty: 8,
       traffic_potential: 5800,
+      parent: "virtual team building activities",
     }
-  - { keyword: "virtual team building", volume: 1900 }
-  - { keyword: "remote team building activities", volume: 900 }
-  - { keyword: "online team building activities", volume: 700 }
-  - { keyword: "virtual team building games", volume: 600 }
+  - { keyword: "virtual team building", volume: 1900, parent: "virtual team building activities" }
+  - { keyword: "remote team building activities", volume: 900, parent: "remote team building activities" }
+  - { keyword: "online team building activities", volume: 700, parent: "virtual team building activities" }
+  - { keyword: "virtual team building games", volume: 600, parent: "virtual team building games" }
 entry_atoms: [signal, trust, safety-in-the-room, internal-computation, cognitive-bandwidth]
 entry_path: improv-for-teams
 primary_problem: "you run the activity that worked in the office and on video it dies"

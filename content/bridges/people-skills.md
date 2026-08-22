@@ -2,9 +2,9 @@
 title: "People Skills Are a System, Not a Personality Trait"
 description: "Most people-skills advice is a parts catalogue — eye contact, I-statements, paraphrasing. It is a real-time system, and the mechanics are learnable."
 target_keywords:
-  - { keyword: "people skills", volume: 6900, difficulty: 14, traffic_potential: 1100 }
-  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14 }
-  - { keyword: "communication skills", volume: 8100 }
+  - { keyword: "people skills", volume: 6900, difficulty: 14, traffic_potential: 1100, parent: "people skills" }
+  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14, parent: "what is interpersonal communication skills" }
+  - { keyword: "communication skills", volume: 8100, parent: "communication skills" }
 entry_atoms: [active-listening, offers, continuous-signaling, status, be-present, be-honest]
 entry_path: improv-for-life
 status: draft

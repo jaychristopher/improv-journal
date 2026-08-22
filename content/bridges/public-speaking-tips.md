@@ -2,11 +2,11 @@
 title: "Public Speaking Tips for the Parts You Cannot Rehearse"
 description: "Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains."
 target_keywords:
-  - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000 }
-  - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11 }
-  - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22 }
-  - { keyword: "public speaking skills", volume: 900, difficulty: 38 }
-  - { keyword: "tips for public speaking", volume: 700, difficulty: 15 }
+  - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000, parent: "public speaking tips" }
+  - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11, parent: "public speaking tips" }
+  - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips" }
+  - { keyword: "public speaking skills", volume: 900, difficulty: 38, parent: "public speaking tips" }
+  - { keyword: "tips for public speaking", volume: 700, difficulty: 15, parent: "public speaking tips" }
 entry_atoms: [performance-state, obvious-choice, internal-computation, cognitive-bandwidth, audience-relationship]
 entry_path: improv-for-life
 primary_problem: "you are fine until somebody asks a question you did not prepare for"
