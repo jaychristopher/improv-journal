@@ -59,6 +59,28 @@ Improv calls the parallel process **internal computation** — the planning, eva
 
 This is what Viola Spolin meant by "receiving" and what improv performers train as **active listening**. It's not a technique you apply — it's a state you enter by quieting the internal computation that normally runs in the background.
 
+## The Seven Types, and What They Actually Are
+
+The conventional taxonomy is worth having, because it is what most training uses and it names real distinctions. Here it is, and here is what the attention-mode lens says about each.
+
+| Conventional type | What it names | Attention mode underneath |
+| --- | --- | --- |
+| **Discriminative** | Distinguishing sounds, tone, register — the earliest listening we develop | Reception, pre-verbal |
+| **Comprehensive** (informational) | Understanding content, following an explanation | Evaluative |
+| **Critical** (evaluative) | Weighing an argument, testing a claim | Evaluative |
+| **Appreciative** | Listening for enjoyment — music, a story well told | Receptive |
+| **Empathetic** (therapeutic) | Attending to what someone feels rather than what they assert | Receptive |
+| **Selective** | Hearing only the parts that match what you already want | Broadcast |
+| **Active** | Signalling reception — nodding, paraphrasing, reflecting back | Either, and that is the problem |
+
+Two things fall out of the mapping.
+
+**Most of the list distinguishes purpose, not attention.** Comprehensive and critical listening feel like different skills, but the thing your attention is doing is identical — taking in content and running it through your own framework. What differs is what you do with the verdict. That is why people who are excellent at critical listening are often poor at emotional conversations: they have not learned a second mode, they have learned one mode very well and applied it everywhere.
+
+**Active listening is not a type at all.** It is a set of behaviours — eye contact, paraphrasing, "what I'm hearing is" — and those behaviours can be produced from any mode. Performed from broadcast mode, they are the most convincing bad listening there is: the paraphrase is accurate, the eye contact is steady, and the person is still composing. Most people who have been trained in active listening and still get told they do not listen are doing exactly this. The technique is real; it was layered onto the wrong attention mode.
+
+Which is the practical case for thinking in modes instead of types. The taxonomy tells you what to aim at. It does not tell you what your attention is doing, and that is the part you can actually change.
+
 ## How to Shift Between Modes
 
 The shift from broadcast/evaluative to receptive isn't intellectual — it's attentional. You can't think your way into it. But you can use these specific practices:
@@ -69,17 +91,21 @@ Notice the moment you start composing your reply. That's the signal that you've 
 
 This is terrifying the first few times. The silence after they stop talking — before your response has formed — feels enormous. But the response that emerges from full reception is always more relevant, more specific, and more connecting than the one you had prepared.
 
+Improvisers drill this directly with `last-word-response`: you must build your reply from the final words your partner said, which makes composing ahead impossible. Ten minutes of it is enough to feel where your attention actually goes.
+
 ### Track the thing beneath the words
 
 Shift your attention from *what* they're saying to *how* they're saying it. The emotion in their voice. The energy shift mid-sentence. The thing they almost said but pulled back from. This moves your attention from content (which triggers evaluation) to signal (which triggers reception).
 
-In improv, this is called tracking **offers** — not just the verbal content, but the complete communication. The performer who tracks offers builds scenes that feel alive. The listener who tracks offers has conversations that feel real.
+In improv, this is called tracking `offers` — not just the verbal content, but the complete communication. The performer who tracks offers builds scenes that feel alive. The listener who tracks offers has conversations that feel real.
+
+`one-word-scene` isolates this. Restricted to a single word at a time, there is nothing to compose and nothing to evaluate, so all that is left is tracking what your partner just gave you.
 
 ### Use the body channel
 
 Your body receives communication that your conscious mind misses. Notice what you feel in your body when the other person is talking. Tension, warmth, restlessness, openness — these are your body's interpretation of their signal, and they're often more accurate than your mind's analysis.
 
-Spolin's training centered on this: the body knows before the mind does. By attending to your physical response, you bypass the analytical layer and access a deeper kind of listening.
+Spolin's training centered on this: the body knows before the mind does. By attending to your physical response, you bypass the analytical layer and access a deeper kind of listening. `mirroring` is the exercise built for it — matching a partner's movement demands the whole of your attention and leaves none spare for evaluation.
 
 ## The Practical Version
 
