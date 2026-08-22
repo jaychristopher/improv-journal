@@ -1,10 +1,41 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ContinueJourney } from "@/components/ContinueJourney";
 import { HomepageQuiz } from "@/components/HomepageQuiz";
 import { loadBridges, loadPaths, loadThreads } from "@/lib/content";
+import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { HOMEPAGE_SYMPTOMS } from "@/lib/homepage-symptoms";
 import { getRecommendedPath } from "@/lib/path-recommendations";
+import { ogImages, SITE_NAME } from "@/lib/seo";
+import { getSystemCounts } from "@/lib/system-counts";
+
+/**
+ * The homepage previously inherited the bare site name as its title, which
+ * spends the most valuable title tag on the site on a brand term nobody
+ * searches for yet. It now names the category the site actually belongs to.
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const { tagline } = await getSystemCounts();
+  const title = "Improv Skills for Everyday Life";
+  // Set absolutely rather than relying on the layout's title template: a
+  // template declared in an async generateMetadata does not reach this page,
+  // and the homepage should still carry the brand.
+  const fullTitle = `${title} | ${SITE_NAME}`;
+
+  return {
+    title: { absolute: fullTitle },
+    description: `What makes some conversations magic and others fall flat? ${tagline} — discovered on the improv stage, applicable everywhere.`,
+    alternates: { canonical: "/" },
+    openGraph: {
+      title,
+      description: `${tagline} — discovered on the improv stage, applicable everywhere.`,
+      url: "/",
+      type: "website",
+      images: ogImages(title),
+    },
+  };
+}
 
 export default async function Home() {
   const [paths, threads, bridges] = await Promise.all([loadPaths(), loadThreads(), loadBridges()]);
@@ -60,6 +91,13 @@ export default async function Home() {
       },
     ];
   });
+
+  const guideClusters = GUIDE_CATEGORIES.map((cluster) => ({
+    slug: cluster.slug,
+    title: cluster.title,
+    description: cluster.description,
+    count: cluster.slugs.filter((slug) => bridgeBySlug.has(slug)).length,
+  }));
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -117,7 +155,29 @@ export default async function Home() {
       <ContinueJourney paths={continueConfig} />
       <HomepageQuiz symptoms={symptomRecommendations} />
 
-      <div className="text-foreground/30 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+      <section className="border-foreground/10 mt-16 border-t pt-10">
+        <h2 className="text-foreground/80 text-lg font-semibold">Where this applies</h2>
+        <p className="text-foreground/50 mt-1 mb-5 text-sm">
+          {bridges.length} guides, grouped by the kind of problem they solve.
+        </p>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {guideClusters.map((cluster) => (
+            <li key={cluster.slug}>
+              <Link
+                href={`/topics/${cluster.slug}`}
+                className="border-foreground/10 bg-surface hover:border-foreground/30 block h-full rounded-lg border p-4 transition-colors"
+              >
+                <span className="block text-sm font-medium">
+                  {cluster.title} ({cluster.count})
+                </span>
+                <span className="text-foreground/60 mt-1 block text-xs">{cluster.description}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <div className="text-foreground/30 mt-10 flex flex-wrap gap-x-4 gap-y-1 text-sm">
         <span>Already know what you want?</span>
         <Link href="/how-it-works" className="hover:text-foreground/50">
           How It Works
@@ -128,8 +188,14 @@ export default async function Home() {
         <Link href="/practice" className="hover:text-foreground/50">
           Practice
         </Link>
+        <Link href="/practice/vocabulary" className="hover:text-foreground/50">
+          Improv Glossary
+        </Link>
         <Link href="/guides" className="hover:text-foreground/50">
           Guides
+        </Link>
+        <Link href="/library" className="hover:text-foreground/50">
+          Reading List
         </Link>
         <Link href="/paths" className="hover:text-foreground/50">
           All Paths

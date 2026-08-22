@@ -64,7 +64,9 @@ describe("cross-section title collisions", () => {
     const [shows, bridges, paths] = await Promise.all([loadShows(), loadBridges(), loadPaths()]);
     const seen = new Map<string, string>();
 
-    seen.set(SITE_NAME, "homepage");
+    // The homepage leads with its category now, but nothing else may claim
+    // the bare site name either.
+    seen.set(SITE_NAME, "site name");
     for (const show of shows) seen.set(`${show.frontmatter.title} Podcast`, "show");
     for (const path of paths) {
       const title = qualifyIfSiteName(path.frontmatter.title, "Learning Path");
