@@ -73,6 +73,80 @@ This is why reading a single body tells you so little. A person is not fidgeting
 
 **Your own default is part of what you are reading.** Most people have a habitual status they return to, and it shapes every interaction they are in. If you default low, people will read as higher-status to you than they are to others — not because they changed, but because the seesaw tilts around you. Knowing your own default is the correction factor on all your readings.
 
+## What to Actually Watch
+
+The principles above are the method. This is the catalogue — not a dictionary
+of gestures, because there is no such thing, but the specific things that carry
+information once you are looking for change rather than for meaning.
+
+### Changes Worth Noticing
+
+A change tells you *that* something shifted, not what. That is still far more
+than a static reading gives you, because you also know exactly what it shifted
+in response to.
+
+- **The feet reorient.** Where someone's feet point is where they intend to go, and they usually move before the person decides anything consciously.
+- **Breathing changes depth or rhythm.** The most reliable signal on this list and the least watched. A held breath in particular is almost always a response to the last thing said.
+- **Sudden stillness.** People who were moving and stop have started processing something. Stillness is the tell people miss because they are watching for movement.
+- **Blink rate rises or falls.** Not a lie detector. A marker that cognitive load or arousal has changed.
+- **The mirroring stops.** Two people in rapport unconsciously match posture and pace. Somebody breaking that pattern is more informative than any posture they hold.
+- **Voice pitch lifts at the end of a sentence** that was not a question. Usually a bid for agreement — and a `status` move rather than a grammatical one.
+- **A gesture gets smaller.** Someone whose hands were moving freely and now keeps them close has narrowed, whatever their face is doing.
+- **The face lags the words.** An expression that arrives a beat after what it is reacting to has been assembled rather than felt.
+- **Someone takes up more or less space.** Expansion and contraction track confidence far better than any single posture does.
+- **The distance closes or opens by a step.** Nobody adjusts proximity for no reason.
+- **They start doing something with an object.** Turning a cup, straightening papers. Displacement activity arrives when there is something to displace.
+- **They stop looking at whoever is talking** and start looking at whoever they think is deciding.
+
+### Clusters, Not Signals
+
+One signal is noise. Three that arrive together and point the same way are worth acting on.
+
+- **Contraction cluster** — smaller gestures, feet turned out, shorter answers. Somebody has decided to stop contributing. Ask them a direct question before the meeting ends.
+- **Overload cluster** — held breath, sudden stillness, delayed responses. You have given somebody more than they can process. Stop adding, and wait.
+- **Disagreement-without-saying-it cluster** — a slower nod, eye contact that breaks downward, a pause before agreement. The nod is politeness; the pause is the actual answer.
+- **Wanting-in cluster** — leaning, an in-breath before speaking, a raised hand that does not quite raise. Somebody has been trying to speak for a while. Everyone else has missed it too.
+- **Wanting-out cluster** — feet to the door, phone touched, glances at the exit or the clock. The meeting ended some minutes ago.
+- **Genuine engagement cluster** — mirroring, faster responses, unconscious movement toward. Rare enough that it is worth noticing when you have it.
+- **Performing-agreement cluster** — enthusiastic verbal assent with a still body. The body is the honest one.
+- **Distress cluster** — self-touch, changed breathing, voice pitch up, less eye contact. This one deserves a private conversation, not a public read.
+
+### The Space Between People
+
+The reading most guides skip entirely, and the one improvisers rely on most.
+
+- **Who orients toward whom.** In any group, bodies point at the person people believe holds status — which is frequently not the person with the title.
+- **Who moves first after a silence.** The person who breaks a pause is telling you who feels responsible for the room.
+- **Who mirrors whom.** Mirroring flows toward status. The person being copied is the one being deferred to.
+- **Who gets interrupted and who does not.** The most reliable status measurement available, and it is countable.
+- **Who checks a face before speaking.** They are asking permission from that person.
+- **Where the gaps in the circle are.** Groups leave space around people they are not including, and nobody decides to do it.
+- **Who is at an angle rather than square on.** Side-by-side is collaboration; square-on is negotiation or confrontation.
+- **What happens when a specific person speaks.** The room's response to one voice, repeated over a meeting, is a complete map of its politics.
+
+### What the Common Tells Actually Mean
+
+These are the ones every list includes and nearly always gets wrong.
+
+- **Crossed arms.** Usually temperature, or a chair with no armrests. Informative only if they cross *at the moment* something is said.
+- **Broken eye contact.** Frequently recall — people look away to think. Sustained unbroken eye contact is the less usual behaviour and the more worth noticing.
+- **Touching the face or nose.** Not a lie tell. Repeatedly cited, never reliably replicated.
+- **A firm handshake.** Tells you what someone has been advised to do, which is a fact about their advice rather than about them.
+- **Leaning back.** Comfort as often as disengagement. Read it against how they were sitting ten minutes ago.
+- **Fidgeting.** Baseline for a lot of people. Only a signal if it starts.
+- **A smile that does not reach the eyes.** Real, but far less diagnostic than it is claimed to be, and unreliable on a screen.
+- **Mirroring your posture.** Genuine and useful — but deliberately copying someone to build rapport is usually detected, and reads as strange.
+- **"Power poses."** The confidence-boosting claim failed to replicate. Taking up space still reads as confidence to observers, which is a different and smaller claim.
+- **Microexpressions.** Real in a laboratory, weak in a noisy room by an untrained observer, and near-useless over video.
+- **Pupil dilation.** Mostly light.
+- **"93 percent of communication is nonverbal."** The most repeated statistic in this field and a misreading of Mehrabian, whose experiments were about single spoken words with conflicting tone — not about communication generally. He said so himself.
+
+### The One Thing That Beats All of It
+
+You can just ask. `offers` are what people hand you deliberately, and a question — "you went quiet, what are you thinking?" — gets a better answer than any amount of inference, and costs a fraction of the attention.
+
+The reading is for the moment before you can ask, and for deciding *what* to ask. It was never meant to replace the asking. Treating it as a substitute is how people end up confidently wrong about a colleague for two years.
+
 ## Reading Is Only Half of It
 
 Everything so far is perception, and perception alone is where most body-language advice stops. Improvisers cannot stop there, because a read is worthless until it is acted on — and acting on it is also how you find out whether it was right.
