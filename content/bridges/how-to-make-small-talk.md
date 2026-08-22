@@ -28,7 +28,7 @@ The result: two parallel monologues that occasionally overlap. "How was your wee
 
 ### 1. Listen for the offer, not the content
 
-In improv, an **offer** is anything your partner gives you that you can build on. It's rarely the main point of what they said — it's the detail, the tone, the energy, the thing that was almost said.
+Improv calls these `offers`: anything your partner gives you that you can build on. It's rarely the main point of what they said — it's the detail, the tone, the energy, the thing that was almost said.
 
 "How was your weekend?" "Good, went to the park." Most people hear: they went to the park. An improv performer hears: the *way* they said "good" (was it enthusiastic or flat?), the specificity (which park?), what wasn't said (were they alone? with family?), and the energy (are they excited about it or mentioning it because they can't think of anything better?).
 
@@ -40,7 +40,7 @@ Every piece is an offer. Every offer is a doorway to connection. The problem isn
 
 The most common small talk killer is the **redirect**: someone shares something, and you immediately pivot to your own related experience. "I went to the park." "Oh cool, I watched the game." The conversation bounces between two separate realities that never connect.
 
-In improv, this is called **scene stealing** — abandoning your partner's reality to impose your own. The alternative is **Yes, And**: accept what they gave you and add to *their* reality before introducing yours.
+In improv, this is called **scene stealing** — abandoning your partner's reality to impose your own. The alternative is `yes-and`: accept what they gave you and add to *their* reality before introducing yours.
 
 "I went to the park." → "Nice — was it packed? I feel like every park in the city is overrun on weekends." Now you're in the same conversation. You accepted their reality (the park), added something (your observation about parks), and created space for them to continue. That's building.
 
@@ -52,9 +52,53 @@ The deepest reason small talk feels terrible: neither person is actually committ
 
 Improv performers treat every scene — even the mundane ones — as if it matters. Not because it's important, but because **commitment creates importance.** A committed small talk exchange generates more connection than a half-hearted deep conversation.
 
-The commitment is simple: for the duration of this exchange, this person and this conversation are what matter. Not what you'll say next. Not who else is in the room. Not whether this is "meaningful." Just this, right now.
+That is `commitment`, and it is simple: for the duration of this exchange, this person and this conversation are what matter. Not what you'll say next. Not who else is in the room. Not whether this is "meaningful." Just this, right now.
 
 **Practice:** Next time you're stuck in small talk, silently decide: "I'm going to find one genuinely interesting thing about this person in the next two minutes." That decision changes your attention from "how do I get through this?" to "what's here?" — and the other person will feel the shift.
+
+## Opening It
+
+Everything above assumes a conversation is already running. For most people the hard part is earlier than that, and improv has a specific view of it: an opening line is an offer, and the quality of an offer is judged by how easy it is to build on.
+
+That rules out most of what people reach for. "How are you?" is a low-information offer — it has one socially correct answer and nowhere to go. So is anything requiring the other person to be interesting on demand.
+
+What works is the situation you are both already in, because it is the one thing you demonstrably share.
+
+- **Name something present and specific.** Not "nice venue" but "I cannot work out where the coffee is." Specific gives them something to take.
+- **Ask about the thing rather than the person.** "How do you know the host?" is easier than "so what do you do?", because it has a story attached and no status attached.
+- **Say the mildly true thing.** "I never know what to do with my hands at these" is disarming precisely because it is honest, and honesty is a stronger opener than polish.
+
+The test is not whether the line is clever. It is whether their easiest possible reply gives you something to work with.
+
+## When They Give You Nothing
+
+"Good." Full stop. This is the moment most people read as rejection and it is usually not — it is a low-information offer returned, often because they are as uncomfortable as you are.
+
+Three moves, in order of effort:
+
+- **Take the smallest detail anyway.** Even "good" has tone. Respond to the tone rather than the word.
+- **Offer something of your own instead of asking again.** A second question after a one-word answer feels like an interview. A statement gives them somewhere to stand.
+- **Change the channel.** If words are not producing anything, move to the situation, the room, the thing in front of you. Shared attention on an object is easier than shared attention on each other.
+
+If all three produce nothing, that is information rather than failure. Some people do not want to talk right now, which is allowed.
+
+## Getting Out
+
+The dread of small talk is often not the talking but the sense of being trapped in it. Improvisers do not have this problem, and the reason is instructive: scenes get **edited**. A scene ends when it has peaked, deliberately, and nobody experiences the ending as rejection because everyone understands editing is part of the form.
+
+Conversations work the same way and almost nobody treats them so. `sweep-edit` is the stage version — a clean, unapologetic cut at a high point rather than waiting for decay.
+
+Applied: leave while it is still good. "I'm going to grab a drink — this was good, I want to hear the rest of that story later" ends on a high note and leaves the relationship open. The alternative most people choose is to stay until the conversation dies and then leave awkwardly, which is the version that actually damages things.
+
+Ending well is a skill, and it is the one that makes starting easier — because most reluctance to begin a conversation is really reluctance to be unable to end it.
+
+## How to Practise This
+
+**Build off the last thing said.** `last-word-response` requires your reply to start from your partner's final words. It is the second rule above, drilled, and it makes redirecting impossible.
+
+**Read beneath the surface.** `blind-offer` trains responding to what someone actually did rather than what you assumed. That is the first rule.
+
+**Commit to something unpolished.** `first-line-drill` is starting before you know where it goes — the opener problem, isolated.
 
 ## The Deeper Truth
 
