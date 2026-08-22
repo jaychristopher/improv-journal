@@ -93,6 +93,67 @@ For the first 10 minutes of a brainstorming session, every response to an idea m
 
 **How to run it:** Timeboxed to 10-15 minutes. Make it explicit: "For the next 10 minutes, no evaluation. Only building. We'll critique after." Having a facilitator catch and redirect blocking responses ("Actually..." or "The problem with that is...") matters. Name the blocking gently, redirect to building. After the building phase, evaluate everything — the constraint doesn't replace critique, it sequences it.
 
+## The Full List, by What It Builds
+
+The four above are worth running properly, with a debrief. These are the rest of
+the repertoire — enough to build a session out of, or to drop one into a meeting
+that has half an hour in it.
+
+Each is tagged with how long it takes and how many people it needs. Within each
+group they run from lowest-stakes to highest, and that order matters: a room
+that is not ready for the last one will simply perform it, which is worse than
+not running it at all.
+
+### Activities That Build Safety
+
+- **Name and Gesture** — 5 min, 6–20. Round the circle: say your name with a movement, and the whole group repeats both back. The first public risk anyone takes, at the lowest possible cost, met by everyone copying you rather than assessing you.
+- **The Failure Round** — 5 min, 4–12. Each person names one small thing they got wrong this week. The most senior person goes first, and briefly — whatever depth they set is the ceiling for everyone after them.
+- **`zip-zap-zop`** — 5 min, 6–20. Three syllables passed round a circle with eye contact. It has no content at all, which is exactly why hesitation in it is so visibly not about difficulty.
+- **`pass-the-clap`** — 5 min, 6–20. Two people clap at the same instant, round the circle. Nothing in it can be done alone and a mistimed clap is audible, so it is the cheapest possible lesson in reading someone else.
+- **Sound Ball** — 5 min, 6–15. Throw an imaginary ball with a sound attached; whoever catches it repeats the sound exactly, then throws a new one. Making a strange noise in front of colleagues and having it copied back is a surprisingly large amount of the work.
+- **Count to Twenty** — 10 min, 4–15. The group counts to twenty. Anyone may say the next number, nobody may plan an order, and two people speaking at once restarts it. Teams discover their own interruption patterns in about ninety seconds.
+- **Everyone Who** — 10 min, 8–30. One person names something true of them — "everyone who has moved house this year" — and everyone it applies to stands. Surfaces shared experience without asking anyone to disclose anything they did not choose.
+- **`big-booty`** — 10 min, 8–16. A rhythm game that renumbers players on every mistake, so the answer you rehearsed is wrong by the time your turn arrives. Save it for a group that has already built some trust, and rename it before you run it in a work room.
+
+### Activities That Build Offer Acceptance
+
+- **Yes Let's** — 5 min, 6–20. Someone proposes an activity — "let's all be trees" — the group says "yes, let's" and does it, until someone proposes the next. Nothing may be declined, which is the entire point.
+- **Praise Before Critique** — 10 min, 4–12. Before anyone may object to a proposal, every person names one thing that would have to be true for it to work. Not agreement — the discipline of building the strongest version of an idea before testing it.
+- **`yes-and-chain`** — 10 min, 4–12. Each person accepts the previous statement and adds to it, with no reframes and no "yes, but". The "but" is what people notice about themselves.
+- **The Worst Idea** — 10 min, 4–12. Deliberately generate the worst possible solutions to a real problem, then take the least bad one seriously and build on it. Removes the fear of the bad suggestion by making it the assignment.
+- **Two-Word Pitch** — 15 min, 6–16. Pairs get two unrelated words and ninety seconds to pitch a product combining them. Everyone applauds every pitch, which is the part that does the work.
+- **Expert Panel** — 15 min, 4–12. A panel takes questions on a subject none of them knows anything about, each answer building on the last rather than competing with it.
+- **`blind-offer`** — 10 min, 4–12. One person makes an undefined physical offer and the other names what it is. Practises putting something forward without controlling how it lands.
+- **Build the Thing** — 20 min, 6–20. Small groups construct something physical from whatever is in the room, with a rule that no idea may be rejected, only extended. The constraint produces worse objects and much better conversations.
+
+### Activities That Build Honest Signaling
+
+- **Emotional Weather Report** — 5 min, 4–15. One sentence each on your actual state today, with a hard rule that nobody may respond, fix, or follow up. The no-fixing rule is what makes people tell the truth.
+- **Silent Line-Up** — 10 min, 6–20. Arrange yourselves by tenure, birthday or commute distance without speaking. Non-verbal signalling under mild pressure, and it always reveals who takes charge.
+- **`last-word-response`** — 10 min, 4–12. Each reply must begin from your partner's final words, which makes changing the subject structurally impossible.
+- **What I Heard** — 10 min, pairs. One person talks for ninety seconds; the other reflects back what they heard before responding at all. Most people discover they had stopped listening around the twenty-second mark.
+- **`status-transfer`** — 15 min, 6–16. The same short scene played high, then low, then shifting. The fastest way to make a team notice the status moves it makes without deciding to.
+- **The Thing I Nearly Said** — 10 min, 4–12. Immediately after a real meeting, each person names one thing they nearly said and did not. Cheap, uncomfortable, and the single most informative ten minutes on this page.
+- **Ask Me Anything, Answered Honestly** — 20 min, 6–20. Anonymous written questions to the most senior person in the room, answered in order, including the ones with no good answer.
+- **Round Without the Loudest** — 15 min, 5–15. Run a real agenda item with the two people who normally speak most agreeing to go last. What surfaces is the point.
+
+### If Your Team Is Remote
+
+The constraint is different: no side conversations, silences carry, and everybody is looking at themselves. Favour short answers and visible ones.
+
+- **Show Us One Thing** — 3 min. Everyone holds up an object within arm's reach and says why they have it.
+- **One-Word Check-In** — 2 min. A single word each for current capacity. No elaboration, no follow-up.
+- **Chat Storm** — 5 min. Everyone types an answer and nobody presses enter until a count of three, so there is no first mover and no anchoring.
+- **Silent Document** — 10 min. Five minutes of everyone writing into a shared document before a word is spoken. The quietest people are frequently the ones with the most in there.
+- **Two-Person Breakouts** — 10 min. Pairs, five minutes, one question. The only reliable way to get real conversation on a call of more than eight.
+- **Camera-Off Sound Ball** — 5 min. As above, by voice only, using names to pass. Works better than it sounds and rescues a call where everybody has gone flat.
+
+### How to Sequence a Session
+
+Safety first, always, and for longer than feels necessary. A group that has done two low-stakes rounds will do the third properly; a group thrown straight into the third will do a performance of it and you will not be able to tell the difference from the front of the room.
+
+Twenty minutes of the first group, twenty of the second, and one activity from the third is a better hour than five activities chosen because they sounded fun. And stop each one while it is still working.
+
 ## The Honest Caveat
 
 These exercises work when the soil is ready. They don't work — and can actively backfire — in three specific conditions:
