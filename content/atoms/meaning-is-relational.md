@@ -34,14 +34,21 @@ Paul Merton: *"It's not about what you say. It's about what you hear."* The mean
 
 Viola Spolin understood this structurally. Her pedagogy centered on "the problem" — a shared focus point between players. She eliminated the conventional separation between performers and audience because if meaning is relational, the audience is a participant, not a passive receiver. The audience doesn't *watch* meaning — they *co-create* it. Spolin called the audience "the most revered member of the theater." They close the semiotic loop: without them, the meaning circuit between performers is still partially open.
 
-**Why this is deeper than Shared Reality Fragility:** Fragility says the shared world needs constant maintenance to persist. Meaning Is Relational says something more foundational: *the shared world is the only place meaning exists at all*. There is no private meaning to fall back on. If the relation breaks, meaning doesn't retreat to individual minds — it ceases to exist.
+## Why this is deeper than Shared Reality Fragility
 
-**Consequences for performers:**
+Fragility says the shared world needs constant maintenance to persist. Meaning Is Relational says something more foundational: *the shared world is the only place meaning exists at all*. There is no private meaning to fall back on. If the relation breaks, meaning doesn't retreat to individual minds — it ceases to exist.
+
+## Consequences for performers
+
 - You cannot plan meaning in your head — it will be overwritten by the interaction
 - Listening is not optional politeness — it is *perception of meaning itself*. If meaning lives between minds, active listening is how you access it.
 - Judgment mid-scene is structurally premature — the meaning of any move is incomplete until the response arrives
 - The quality of a scene is a property of the connection, not of individual performances
 
-**A question this raises:** If meaning is relational, what about solo practice? The answer is that solo practice internalizes the relational frame. You rehearse with imagined others — mirror exercises, viewpoints work, journaling. The practitioner splits into actor and witness, creator and receiver. Solo practice works precisely because you simulate the relation, not because you escape it.
+## A question this raises
 
-**Specific sources:** Wittgenstein, *Philosophical Investigations* (1953), §43: "The meaning of a word is its use in the language" — meaning as constituted by practice, not by private mental content. Spolin, *Improvisation for the Theater* (1963) — "the audience is the most revered member of the theater." Paul Merton's quote is widely attributed but has no verified original published source — it circulates as oral tradition. **Note:** "Signal" as used in this knowledge graph is novel synthesis bridging Shannon-Weaver communication theory into improv vocabulary — no improv author uses it as a technical term. This is acknowledged as a productive metaphor, not inherited terminology.
+If meaning is relational, what about solo practice? The answer is that solo practice internalizes the relational frame. You rehearse with imagined others — mirror exercises, viewpoints work, journaling. The practitioner splits into actor and witness, creator and receiver. Solo practice works precisely because you simulate the relation, not because you escape it.
+
+## Specific sources
+
+Wittgenstein, *Philosophical Investigations* (1953), §43: "The meaning of a word is its use in the language" — meaning as constituted by practice, not by private mental content. Spolin, *Improvisation for the Theater* (1963) — "the audience is the most revered member of the theater." Paul Merton's quote is widely attributed but has no verified original published source — it circulates as oral tradition. **Note:** "Signal" as used in this knowledge graph is novel synthesis bridging Shannon-Weaver communication theory into improv vocabulary — no improv author uses it as a technical term. This is acknowledged as a productive metaphor, not inherited terminology.

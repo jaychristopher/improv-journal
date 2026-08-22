@@ -38,16 +38,30 @@ Keith Johnstone would resist the word "bravery." His frame: the problem is not t
 
 Bravery operates at two levels:
 
-**Physical initiation** — stepping off the backline, opening your mouth, starting. This is the threshold problem: the gap between nothing and something. Every moment of hesitation is a moment where shared reality starves for data. The system demands offers because time never stops, and silence without intention is decay.
+## Physical initiation
 
-**Emotional exposure** — the willingness to be sincere, specific, and vulnerable rather than hiding behind irony or vagueness. Terry Withers: *"Don't try to be funny. Be brave and be yourself."* Specificity requires bravery because specific choices are falsifiable. "I'm a tax accountant who just found a $40,000 discrepancy in my wife's charity" is braver than "I work in an office" — because it commits to a reality that can fail.
+Stepping off the backline, opening your mouth, starting. This is the threshold problem: the gap between nothing and something. Every moment of hesitation is a moment where shared reality starves for data. The system demands offers because time never stops, and silence without intention is decay.
 
-**Sustained bravery** — the ongoing willingness to deepen, escalate, and let yourself be changed mid-scene. This is not threshold bravery; it is the courage to stay exposed after the initial offer. TJ Jagodowski frames this as "impressionability" — remaining open to being affected by what your partner does, rather than armoring up after your first move. Mid-scene bravery is the choice to say "I love you" when the scene has been circling it for two minutes, or to let a silence land instead of filling it with a joke.
+## Emotional exposure
 
-**Bravery is a practice, not a trait.** Brene Brown's research finds that courage is not a reserve of willpower but a muscle built through repeated vulnerability: *"Vulnerability is the birthplace of innovation, creativity and change."* You do not summon bravery from some internal store. You build it by repeatedly crossing the threshold in a container safe enough to fail in — the class, the ensemble, the warm-up. This is why ensemble trust is a precondition, not a nice-to-have. Without trust, bravery is recklessness. With it, bravery becomes a sustainable practice.
+The willingness to be sincere, specific, and vulnerable rather than hiding behind irony or vagueness. Terry Withers: *"Don't try to be funny. Be brave and be yourself."* Specificity requires bravery because specific choices are falsifiable. "I'm a tax accountant who just found a $40,000 discrepancy in my wife's charity" is braver than "I work in an office" — because it commits to a reality that can fail.
 
-**The relationship to commitment:** Bravery is the *precondition* for commitment. You cannot commit to a choice you never made. Bravery gets you across the threshold; commitment is what happens once you're there. Bravery is jumping off the diving board. Commitment is how you enter the water — fully extended, not curled up. But bravery doesn't end at the splash. Mid-scene bravery is swimming toward the deep end instead of paddling back to where you can touch the bottom.
+## Sustained bravery
 
-**The bandwidth paradox:** Hesitating and planning burns more cognitive bandwidth than acting. Internal computation consumes the resource you need for reception. Acting immediately — Napier's "do something" — actually *frees* bandwidth because you shift from simulation to response. The brave move is the cheaper move.
+The ongoing willingness to deepen, escalate, and let yourself be changed mid-scene. This is not threshold bravery; it is the courage to stay exposed after the initial offer. TJ Jagodowski frames this as "impressionability" — remaining open to being affected by what your partner does, rather than armoring up after your first move. Mid-scene bravery is the choice to say "I love you" when the scene has been circling it for two minutes, or to let a silence land instead of filling it with a joke.
 
-**Specific sources:** Napier, *Improvise*, Ch. 1: "It is far more important that you DO something than what it is you actually do." Brown, TED2012 ["Listening to Shame"](https://blog.ted.com/vulnerability-is-the-birthplace-of-innovation-creativity-and-change-brene-brown-at-ted2012/): "Vulnerability is the birthplace of innovation, creativity and change." Hines, *Greatest Improviser*, Ch. 8: "Be Brave." **Counter-position:** Johnstone (*Impro*, Ch. 2 "Spontaneity") frames the problem not as lacking courage but as having been trained out of natural spontaneity. His metaphor: releasing a censor, not summoning willpower. The practical result is the same — action before deliberation — but the frame differs: recovery vs. conquest.
+## Bravery is a practice, not a trait
+
+Brene Brown's research finds that courage is not a reserve of willpower but a muscle built through repeated vulnerability: *"Vulnerability is the birthplace of innovation, creativity and change."* You do not summon bravery from some internal store. You build it by repeatedly crossing the threshold in a container safe enough to fail in — the class, the ensemble, the warm-up. This is why ensemble trust is a precondition, not a nice-to-have. Without trust, bravery is recklessness. With it, bravery becomes a sustainable practice.
+
+## The relationship to commitment
+
+Bravery is the *precondition* for commitment. You cannot commit to a choice you never made. Bravery gets you across the threshold; commitment is what happens once you're there. Bravery is jumping off the diving board. Commitment is how you enter the water — fully extended, not curled up. But bravery doesn't end at the splash. Mid-scene bravery is swimming toward the deep end instead of paddling back to where you can touch the bottom.
+
+## The bandwidth paradox
+
+Hesitating and planning burns more cognitive bandwidth than acting. Internal computation consumes the resource you need for reception. Acting immediately — Napier's "do something" — actually *frees* bandwidth because you shift from simulation to response. The brave move is the cheaper move.
+
+## Specific sources
+
+Napier, *Improvise*, Ch. 1: "It is far more important that you DO something than what it is you actually do." Brown, TED2012 ["Listening to Shame"](https://blog.ted.com/vulnerability-is-the-birthplace-of-innovation-creativity-and-change-brene-brown-at-ted2012/): "Vulnerability is the birthplace of innovation, creativity and change." Hines, *Greatest Improviser*, Ch. 8: "Be Brave." **Counter-position:** Johnstone (*Impro*, Ch. 2 "Spontaneity") frames the problem not as lacking courage but as having been trained out of natural spontaneity. His metaphor: releasing a censor, not summoning willpower. The practical result is the same — action before deliberation — but the frame differs: recovery vs. conquest.

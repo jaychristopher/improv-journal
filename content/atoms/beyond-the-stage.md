@@ -36,16 +36,21 @@ The stage makes the physics visible because it removes the narrative buffers —
 
 But the stage also offers something life does not: a frame. The audience knows this is play. If you fail, you lose a laugh — not a relationship, not a job, not your child's trust. The stage removes *narrative* buffers but provides an *existential* buffer (nothing is permanently at stake). Life inverts this: you have narrative buffers (you can hedge, delay, change the subject) but no existential buffer (everything counts). This is why the transfer is harder than it looks. The same physics, yes. But the courage required to apply them where it matters is categorically greater.
 
-**When the principles fail in life:**
+## When the principles fail in life
+
 - **Be Positive:** Your partner says "I feel like you aren't listening." You say "No, I am." You denied their reality. Fracture.
 - **Be Thankful:** Your friend cancels plans. Instead of noticing the unexpected free evening, you stew in resentment. The disruption consumed you instead of freeing you.
 - **Be Brave:** You know what you need to say — the honest thing, the vulnerable thing — and you don't say it. You wait for a better moment. The moment passes.
 - **Be Supportive:** Your colleague presents an idea. Instead of building on it, you redirect to your own. They stop contributing. Trust erodes.
 
-**When the principles work in life:** Your partner says something that stings. Instead of defending, you breathe and say "tell me more." They do. Twenty minutes later you understand something about them you didn't before. That's Be Positive, Be Present, Be Brave, and Be Changeable operating together — not as rules you followed, but as physics you stopped resisting.
+## When the principles work in life
+
+Your partner says something that stings. Instead of defending, you breathe and say "tell me more." They do. Twenty minutes later you understand something about them you didn't before. That's Be Positive, Be Present, Be Brave, and Be Changeable operating together — not as rules you followed, but as physics you stopped resisting.
 
 In improv, failure costs a laugh. In life, failure costs relationships, trust, intimacy, collaboration. The physics are the same. The stakes are higher.
 
 The stage is a crucible — not a place where you learn techniques, but a place where the physics of connection become impossible to ignore. What you see there is already operating in every room you walk into.
 
-**Specific sources:** Madson, *Improv Wisdom* (2005) — 13 chapters each framing an improv maxim as a life principle. Ch. 1 (Say Yes), Ch. 6 (Pay Attention), Ch. 12 (Take Care of Each Other) map most directly. Sawyer, *Group Genius* (2007) — academic bridge between improv ensemble and organizational creativity. **Counter-position:** The transfer claim is theoretically compelling but empirically undersupported. Huffaker & West found "only limited empirical research on workplace application of improvisation training." The Frontiers in Psychology mini-review (2025) notes ambiguous definitions and difficulty comparing results. Honest position: the physics metaphor is productive, the empirical base is thin.
+## Specific sources
+
+Madson, *Improv Wisdom* (2005) — 13 chapters each framing an improv maxim as a life principle. Ch. 1 (Say Yes), Ch. 6 (Pay Attention), Ch. 12 (Take Care of Each Other) map most directly. Sawyer, *Group Genius* (2007) — academic bridge between improv ensemble and organizational creativity. **Counter-position:** The transfer claim is theoretically compelling but empirically undersupported. Huffaker & West found "only limited empirical research on workplace application of improvisation training." The Frontiers in Psychology mini-review (2025) notes ambiguous definitions and difficulty comparing results. Honest position: the physics metaphor is productive, the empirical base is thin.

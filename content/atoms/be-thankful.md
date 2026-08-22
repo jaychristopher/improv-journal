@@ -45,6 +45,10 @@ Some improvisers literally whisper "thank you" under their breath when a surpris
 
 When a whole ensemble practices this, risk becomes cheap. The team that treats every accident as a gift will take bigger swings than the team that punishes error. Thankfulness scales from individual technique to ensemble culture.
 
-**Success condition:** unexpected inputs are integrated rather than rejected. A mistake is just an offer you didn't expect. Evaluation isn't abolished — it's relocated to after the scene, where it can be objective and shared rather than reactive and private.
+## Success condition
 
-**Specific sources:** Fey, *Bossypants* (2011), pp. 83-84, "Rules of Improvisation That Will Change Your Life." Close/Halpern, *Truth in Comedy*, Ch. 3 on justification. **Counter-position:** Professional comedy writing rooms value evaluation and editorial selection. The Harold Night model at iO involved coaching notes — evaluation was postponed during performance but not eliminated. Second City's revue model explicitly selects what works. "Defer evaluation" is a performance principle, not a universal creative philosophy.
+unexpected inputs are integrated rather than rejected. A mistake is just an offer you didn't expect. Evaluation isn't abolished — it's relocated to after the scene, where it can be objective and shared rather than reactive and private.
+
+## Specific sources
+
+Fey, *Bossypants* (2011), pp. 83-84, "Rules of Improvisation That Will Change Your Life." Close/Halpern, *Truth in Comedy*, Ch. 3 on justification. **Counter-position:** Professional comedy writing rooms value evaluation and editorial selection. The Harold Night model at iO involved coaching notes — evaluation was postponed during performance but not eliminated. Second City's revue model explicitly selects what works. "Defer evaluation" is a performance principle, not a universal creative philosophy.

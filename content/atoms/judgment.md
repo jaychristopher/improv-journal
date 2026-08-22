@@ -29,15 +29,23 @@ Judgment mid-scene is not just unwise — it's structurally premature. Because m
 
 But judgment doesn't wait for retrospect. It fires instantly: *That was a weird choice. That didn't land. I shouldn't have said that. Why did she go there?* Each judgment is a micro-exit from the scene. Your body is on stage but your mind has stepped outside to become a critic.
 
-**Why it happens:** The evaluating mind is our default operating system. We are trained — by school, by work, by social life — to constantly assess quality. Good/bad. Smart/dumb. Funny/not funny. Viola Spolin named this the **Approval/Disapproval Syndrome** — the internalized audience that replaces direct experience with evaluation. Turning off that circuit feels unnatural, even dangerous. What if we commit to something terrible?
+## Why it happens
 
-**The physical signature:** Judgment lives in the face first — a micro-squint, a lip press, a chin tuck, shoulders lifting toward the ears. Breath shortens. Your scene partner reads these cues 200 milliseconds before you even form the thought "that was wrong."
+The evaluating mind is our default operating system. We are trained — by school, by work, by social life — to constantly assess quality. Good/bad. Smart/dumb. Funny/not funny. Viola Spolin named this the **Approval/Disapproval Syndrome** — the internalized audience that replaces direct experience with evaluation. Turning off that circuit feels unnatural, even dangerous. What if we commit to something terrible?
 
-**Two modes with different costs:**
+## The physical signature
+
+Judgment lives in the face first — a micro-squint, a lip press, a chin tuck, shoulders lifting toward the ears. Breath shortens. Your scene partner reads these cues 200 milliseconds before you even form the thought "that was wrong."
+
+## Two modes with different costs
 
 - **Self-judgment** freezes *you*. You judge your last move and hesitate on the next one. Your physicality shrinks. You start hedging — qualifying, softening, retreating. The internal critic consumes the bandwidth you need for reception. Napier: "Judging yourself is just narcissism with a frown."
 - **Partner-judgment** freezes *them*. You subtly signal disapproval — a flicker of disappointment, a beat of non-response, a shift away — and they feel it. Collaborative trust erodes. Your partner stops risking because they sense evaluation instead of support. The scene gets careful, which is death.
 
-**The reframe:** A mistake is just an offer you didn't expect. The only bad move is the one you refuse to build on. The practiced recovery for judgment is `gratitude-reframing` — the cognitive interrupt that converts evaluation into reception before the judgment loop completes.
+## The reframe
 
-**Specific sources:** Spolin, *Improvisation for the Theater*, Ch. 1: "trying to be 'good' and avoiding 'bad' develops into a way of life for those needing approval/disapproval from authority." Csikszentmihalyi, *Flow* (1990), Ch. 2 (dimensions of flow): "loss of self-consciousness" — "in a flow state we are too involved in the activity to care about protecting our ego." **Counter-position:** Post-scene evaluation is essential pedagogy. Spolin herself built evaluation into her method. Johnstone's Theatresports uses judges. The pathology is real-time judgment during action, not discernment as a faculty. Judgment-during-action disrupts flow; judgment-after-action enables learning. The atom targets the former.
+A mistake is just an offer you didn't expect. The only bad move is the one you refuse to build on. The practiced recovery for judgment is `gratitude-reframing` — the cognitive interrupt that converts evaluation into reception before the judgment loop completes.
+
+## Specific sources
+
+Spolin, *Improvisation for the Theater*, Ch. 1: "trying to be 'good' and avoiding 'bad' develops into a way of life for those needing approval/disapproval from authority." Csikszentmihalyi, *Flow* (1990), Ch. 2 (dimensions of flow): "loss of self-consciousness" — "in a flow state we are too involved in the activity to care about protecting our ego." **Counter-position:** Post-scene evaluation is essential pedagogy. Spolin herself built evaluation into her method. Johnstone's Theatresports uses judges. The pathology is real-time judgment during action, not discernment as a faculty. Judgment-during-action disrupts flow; judgment-after-action enables learning. The atom targets the former.

@@ -43,7 +43,9 @@ The gun example from Tina Fey (*Bossypants*): "Freeze, I have a gun." / "That's 
 
 Acceptance also has **amplitude**. You can accept reluctantly (the offer is real but you resist its implications), fully (you receive and extend with energy), or in Johnstone's term, **overaccept** — take a small offer and treat it as enormous. Someone says "it's Tuesday" and you panic because that's when your surgery is scheduled. All three are positive. What matters is that the shared state is preserved.
 
-**Critical clarification:** "Yes, And" means accepting the reality, not the command. "Jump off this cliff" can be met with "It's a high cliff... I'm too scared to jump." You accepted the physics. You kept your agency. That's still yes-and. This also applies to your own offers — the word that escaped your mouth, the position you stumbled into. Accept what you already did rather than trying to backtrack.
+## Critical clarification
+
+"Yes, And" means accepting the reality, not the command. "Jump off this cliff" can be met with "It's a high cliff... I'm too scared to jump." You accepted the physics. You kept your agency. That's still yes-and. This also applies to your own offers — the word that escaped your mouth, the position you stumbled into. Accept what you already did rather than trying to backtrack.
 
 Mick Napier offers an important counter-frame: "Yes, And" as a *first* principle can produce weak, passive improvisation if the performer has nothing of their own to bring. His alternative: enter with a strong personal commitment, and acceptance becomes natural because you're grounded enough to receive anything. Acceptance without investment is compliance. Acceptance with investment is collaboration.
 
@@ -51,4 +53,6 @@ The one limit: acceptance serves the ensemble, not the individual. If an offer e
 
 Keith Johnstone: *"Those who say yes are rewarded by the adventures they have."* If you reject the input, the shared reality forks — and the adventure dies.
 
-**Traditions diverge:** Napier (*Improvise*) deprioritizes yes-and as a first principle, arguing that entering with a bold committed "deal" produces better improv than leading with acceptance. Withers (Radical Agreement) explores cases where saying no serves the scene. Johnstone frames acceptance through offers/blocks rather than as a behavioral command.
+## Traditions diverge
+
+Napier (*Improvise*) deprioritizes yes-and as a first principle, arguing that entering with a bold committed "deal" produces better improv than leading with acceptance. Withers (Radical Agreement) explores cases where saying no serves the scene. Johnstone frames acceptance through offers/blocks rather than as a behavioral command.

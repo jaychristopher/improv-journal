@@ -88,14 +88,14 @@ This file is generated from the site's content, so it lists everything rather th
 
 ## Principles — behavioural guidelines (9)
 
-- [Be Brave](https://www.physicsofconnection.com/how-it-works/principles/be-brave): Act before you're ready. The scene needs offers more than it needs perfect offers. Every other principle assumes data is already flowing.
-- [Be Changeable](https://www.physicsofconnection.com/how-it-works/principles/be-changeable): Let your partner's offers transform your state — your plans, your emotions, your character, your history. You can accept an offer without being changed by it.
-- [Be Honest](https://www.physicsofconnection.com/how-it-works/principles/be-honest): Signal the shared reality as it currently exists, clearly and without distortion. This principle operates on two levels that converge in practice: Signal...
-- [Be Positive](https://www.physicsofconnection.com/how-it-works/principles/be-positive): Accept the current state and extend it forward, rather than resisting or undoing it. "Positive" doesn't mean happy.
+- [Be Brave](https://www.physicsofconnection.com/how-it-works/principles/be-brave): Act before you're ready. The scene needs offers more than it needs perfect offers.
+- [Be Changeable](https://www.physicsofconnection.com/how-it-works/principles/be-changeable): Let your partner's offers transform your state — your plans, your emotions, your character, your history.
+- [Be Honest](https://www.physicsofconnection.com/how-it-works/principles/be-honest): Signal the shared reality as it currently exists, clearly and without distortion.
+- [Be Positive](https://www.physicsofconnection.com/how-it-works/principles/be-positive): Accept the current state and extend it forward, rather than resisting or undoing it.
 - [Be Present](https://www.physicsofconnection.com/how-it-works/principles/be-present): Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
-- [Be Simple](https://www.physicsofconnection.com/how-it-works/principles/be-simple): Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use. The most counterintuitive principle.
+- [Be Simple](https://www.physicsofconnection.com/how-it-works/principles/be-simple): Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
 - [Be Supportive](https://www.physicsofconnection.com/how-it-works/principles/be-supportive): Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
-- [Be Thankful](https://www.physicsofconnection.com/how-it-works/principles/be-thankful): Treat every outcome as usable information and postpone evaluation. This sounds nice but it's a tactical maneuver.
+- [Be Thankful](https://www.physicsofconnection.com/how-it-works/principles/be-thankful): Treat every outcome as usable information and postpone evaluation.
 - [Framing as Angle of Approach](https://www.physicsofconnection.com/how-it-works/principles/framing-as-angle-of-approach): The content of an idea and the angle at which it arrives are not the same thing. The same proposition — reached through the person's own reasoning, or arriving...
 
 ## Insights (5)
@@ -139,7 +139,7 @@ This file is generated from the site's content, so it lists everything rather th
 
 ## Techniques (46)
 
-- [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer): Accepting the offer is the disciplined practice of receiving incoming information and treating it as valid before you evaluate it.
+- [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer)
 - [Active Listening](https://www.physicsofconnection.com/practice/techniques/active-listening): Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language,...
 - [Analogous Scene](https://www.physicsofconnection.com/practice/techniques/analogous-scene): A second or third beat scene that transplants the game from an earlier scene into a completely different context — different characters, different setting,...
 - [Audience Relationship](https://www.physicsofconnection.com/practice/techniques/audience-relationship): The dynamic, bidirectional exchange between performers and audience in which both parties actively shape the performance.
@@ -150,18 +150,18 @@ This file is generated from the site's content, so it lists everything rather th
 - [Curriculum Design](https://www.physicsofconnection.com/practice/techniques/curriculum-design): How to sequence improv concepts for progressive skill-building — the meta-skill of designing a learning path from beginner to mastery.
 - [Do, Feel, Say](https://www.physicsofconnection.com/practice/techniques/do-feel-say): A three-step ordering principle for authentic scene work: take a physical action first, let the emotion arrive from that action, then — and only then — speak.
 - [Editing](https://www.physicsofconnection.com/practice/techniques/editing): How to end scenes. One of the hardest ensemble skills — it requires reading the scene from outside while respecting what's happening inside.
-- [Elevating](https://www.physicsofconnection.com/practice/techniques/elevating): Elevating is the practice of taking your partner's offer and making it look intentional, important, and brilliant — even (especially) when it wasn't.
+- [Elevating](https://www.physicsofconnection.com/practice/techniques/elevating)
 - [Emotional Range](https://www.physicsofconnection.com/practice/techniques/emotional-range): Accessing the full spectrum of emotion in scenes — not just the comfortable defaults.
-- [Emotional Truth](https://www.physicsofconnection.com/practice/techniques/emotional-truth): Emotional truth is the quality of sending signals that match the character's actual internal state — without distortion, commentary, or ironic distance.
+- [Emotional Truth](https://www.physicsofconnection.com/practice/techniques/emotional-truth)
 - [Endowment](https://www.physicsofconnection.com/practice/techniques/endowment): Giving your scene partner qualities, attributes, or history through your behavior toward them — rather than through direct statement about yourself.
 - [Failing Forward](https://www.physicsofconnection.com/practice/techniques/failing-forward): The skill of metabolizing on-stage failure — a dropped scene, a missed connection, a joke that dies — and converting it into material, energy, or deeper truth...
 - [Game Evolution](https://www.physicsofconnection.com/practice/techniques/game-evolution): How a game transforms within a scene — not just repeating at higher intensity, but changing in kind. Four modes of evolution.
 - [Giving Notes](https://www.physicsofconnection.com/practice/techniques/giving-notes): How to give feedback after scenes and shows — the teacher's and director's core skill.
-- [Gratitude Reframing](https://www.physicsofconnection.com/practice/techniques/gratitude-reframing): Gratitude reframing is the practice of converting your internal response to unexpected input from evaluation to reception.
+- [Gratitude Reframing](https://www.physicsofconnection.com/practice/techniques/gratitude-reframing)
 - [Heat and Weight](https://www.physicsofconnection.com/practice/techniques/heat-and-weight): Managing the two poles of energy in an improv show. Heat is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity.
 - [If This, Then What?](https://www.physicsofconnection.com/practice/techniques/if-this-then-what): The UCB engine for exploring game. Once the first unusual thing is identified, you don't simply repeat it — you ask: "If this person is really the kind of...
-- [Initiation](https://www.physicsofconnection.com/practice/techniques/initiation): Initiation is the craft of starting a scene — making one specific choice that implies the world, the relationship, and the stakes without trying to establish...
-- [Let Yourself Be Changed](https://www.physicsofconnection.com/practice/techniques/let-yourself-be-changed): The practice of allowing your partner's offers to visibly, behaviorally alter your character's state — rather than absorbing them without effect.
+- [Initiation](https://www.physicsofconnection.com/practice/techniques/initiation)
+- [Let Yourself Be Changed](https://www.physicsofconnection.com/practice/techniques/let-yourself-be-changed)
 - [Mapping](https://www.physicsofconnection.com/practice/techniques/mapping): A specific game type where one reality is played through the lens of another entirely.
 - [Opening](https://www.physicsofconnection.com/practice/techniques/opening): The 3-5 minute ensemble ritual that transforms a single audience suggestion into multiple themes, ideas, and premises for a longform show.
 - [Organic Opening](https://www.physicsofconnection.com/practice/techniques/organic-opening): A group free-association exercise that generates raw thematic material for a Harold or other longform show.
@@ -183,21 +183,21 @@ This file is generated from the site's content, so it lists everything rather th
 - [Support Moves](https://www.physicsofconnection.com/practice/techniques/support-moves): What you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're...
 - [Sweep Edit](https://www.physicsofconnection.com/practice/techniques/sweep-edit): The Harold's signature transition device. One player walks briskly across the front of the stage, perpendicular to the audience's sightline, signaling that the...
 - [Tag Run](https://www.physicsofconnection.com/practice/techniques/tag-run): A rapid sequence of tag-outs exploring one game or pattern across multiple contexts.
-- [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice): The obvious choice is the practice of acting on your first impulse without censoring it — before the internal editor intervenes with something "better."...
+- [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice)
 - [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the...
 
 ## Exercises and games (17)
 
 - [Blind Offer](https://www.physicsofconnection.com/practice/exercises/blind-offer): The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them.
 - [Directed Scene](https://www.physicsofconnection.com/practice/exercises/directed-scene): Adaptability under constraint, external awareness, ego dissolution, rapid integration of abstract direction into specific behavior.
-- [Emotion Switch](https://www.physicsofconnection.com/practice/exercises/emotion-switch): Be Changeable — the ability to fully shift emotional state in response to input. Setup: Two players in a scene.
+- [Emotion Switch](https://www.physicsofconnection.com/practice/exercises/emotion-switch): Be Changeable — the ability to fully shift emotional state in response to input.
 - [Emotional Honesty Scene](https://www.physicsofconnection.com/practice/exercises/emotional-honesty-scene): Be Honest — sending clear, authentic signals without distortion. This is the scene-length application of Do-Feel-Say.
-- [First Line Drill](https://www.physicsofconnection.com/practice/exercises/first-line-drill): Be Brave — the threshold moment of starting. Setup: Players line up. One at a time, each steps out and delivers a single declarative first line that commits to...
+- [First Line Drill](https://www.physicsofconnection.com/practice/exercises/first-line-drill): Be Brave — the threshold moment of starting.
 - [Fracture Repair Drill](https://www.physicsofconnection.com/practice/exercises/fracture-repair-drill): Fracture recovery — the ability to re-establish shared reality when two players have diverged.
 - [Genre Scene](https://www.physicsofconnection.com/practice/exercises/genre-scene): Specificity, commitment, shared vocabulary, narrative heightening through convention.
-- [Gift Giving](https://www.physicsofconnection.com/practice/exercises/gift-giving): Be Thankful — receiving unexpected input as a gift rather than a problem. Setup: Two players face each other.
+- [Gift Giving](https://www.physicsofconnection.com/practice/exercises/gift-giving): Be Thankful — receiving unexpected input as a gift rather than a problem.
 - [Group Mind Cultivation](https://www.physicsofconnection.com/practice/exercises/group-mind-cultivation): Collective attention, shared decision-making without verbal negotiation, ensemble coherence beyond basic mirroring.
-- [Last Word Response](https://www.physicsofconnection.com/practice/exercises/last-word-response): Be Present — forcing attention onto the immediate moment, breaking the planning habit. Setup: Two players in a scene.
+- [Last Word Response](https://www.physicsofconnection.com/practice/exercises/last-word-response): Be Present — forcing attention onto the immediate moment, breaking the planning habit.
 - [Mirroring](https://www.physicsofconnection.com/practice/exercises/mirroring): Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum.
 - [No Backspace Scene](https://www.physicsofconnection.com/practice/exercises/no-backspace-scene): Irreversibility — the felt experience of path dependence. Borrows from Johnstone's New Choice mechanic but enforces forward rather than replacing.
 - [One-Word Scene](https://www.physicsofconnection.com/practice/exercises/one-word-scene): Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across...
@@ -237,7 +237,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Negation](https://www.physicsofconnection.com/how-it-works/diagnosis/negation): The shadow of Be Positive. Negation is specifically the contradiction of established reality — denying what your partner has written to the shared state.
 - [Overcomplication](https://www.physicsofconnection.com/how-it-works/diagnosis/overcomplication): The shadow of Be Simple. Overcomplication is flooding the shared channel with more data than it can carry — until the scene collapses under its own weight.
 - [Performing Cleverness](https://www.physicsofconnection.com/how-it-works/diagnosis/performing-cleverness): The shadow of Be Honest. Performing cleverness is the substitution of authentic signal with a display of wit — playing to the audience instead of inhabiting...
-- [Recovery: Decay](https://www.physicsofconnection.com/how-it-works/diagnosis/decay-recovery): How to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless. Recognize it.
+- [Recovery: Decay](https://www.physicsofconnection.com/how-it-works/diagnosis/decay-recovery): How to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless.
 - [Recovery: Fracture](https://www.physicsofconnection.com/how-it-works/diagnosis/fracture-recovery): How to recover when two players are in different scenes — when the shared state has split and neither person can figure out why it feels off.
 - [Recovery: Latency](https://www.physicsofconnection.com/how-it-works/diagnosis/latency-recovery): How to recover when the scene has developed response lag — when one or both players are behind the moment, responding to things that happened thirty seconds...
 - [Rigid Core, Malleable Edge](https://www.physicsofconnection.com/how-it-works/diagnosis/rigid-core-malleable-edge): Beliefs are not defended uniformly. Every belief system has a core — the identity-anchored commitments that produce rejection on contact — and an edge — the...

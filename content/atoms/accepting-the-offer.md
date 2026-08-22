@@ -30,11 +30,17 @@ Accepting the offer is the disciplined practice of receiving incoming informatio
 
 Three moves, in order:
 
-**1. Receive.** Let your partner's offer land. Don't start forming your response at the first word — wait until the offer is complete. This means receiving with your body, not just your ears: let the information change your posture, your breathing, your facial expression.
+## 1. Receive
 
-**2. Acknowledge.** Signal that the offer is now part of the shared reality. This can be verbal ("The gun I gave you for Christmas...") or physical (reacting to the cold, flinching at the news). The acknowledgment is what writes the data to the shared state.
+Let your partner's offer land. Don't start forming your response at the first word — wait until the offer is complete. This means receiving with your body, not just your ears: let the information change your posture, your breathing, your facial expression.
 
-**3. Extend.** Add your layer on top. This is the "and" — your contribution that moves the reality forward. The extension should build from what was given, not redirect to something unrelated. The extension doesn't have to be verbal. A visible emotional shift, a change in posture, or even silence that lets the weight of the offer land — these are all valid extensions. The audience needs to see that the offer changed you; they don't need to hear a sentence about it.
+## 2. Acknowledge
+
+Signal that the offer is now part of the shared reality. This can be verbal ("The gun I gave you for Christmas...") or physical (reacting to the cold, flinching at the news). The acknowledgment is what writes the data to the shared state.
+
+## 3. Extend
+
+Add your layer on top. This is the "and" — your contribution that moves the reality forward. The extension should build from what was given, not redirect to something unrelated. The extension doesn't have to be verbal. A visible emotional shift, a change in posture, or even silence that lets the weight of the offer land — these are all valid extensions. The audience needs to see that the offer changed you; they don't need to hear a sentence about it.
 
 In practice, these three steps collapse into a near-simultaneous flow. Beginners should practice them as distinct beats to build the muscle. Experienced improvisers move through them so quickly they feel like a single act of reception-and-response.
 
@@ -52,4 +58,6 @@ When acceptance fails, it's usually because the receiver's ego intervened: they 
 
 This applies to your own offers too. The word that escaped your mouth, the physical position you stumbled into, the emotion that arrived uninvited — these are offers from yourself to yourself, and they deserve the same acceptance.
 
-**Specific sources:** Hines, ["Accepting Offers"](https://willhines.substack.com/p/accepting-offers) — the fact/opinion distinction: facts must always be accepted; opinions can be adjusted. Johnstone, *Impro*, Ch. 3: offers and blocks as the binary of scene work. **Counter-position:** Johnstone would resist the three-step decomposition (receive, acknowledge, extend). For him, acceptance is a state of being unblocked, not a mechanical process. The granularity of receive/acknowledge/extend is a UCB-lineage pedagogical addition — useful for teaching but not how masters experience it.
+## Specific sources
+
+Hines, ["Accepting Offers"](https://willhines.substack.com/p/accepting-offers) — the fact/opinion distinction: facts must always be accepted; opinions can be adjusted. Johnstone, *Impro*, Ch. 3: offers and blocks as the binary of scene work. **Counter-position:** Johnstone would resist the three-step decomposition (receive, acknowledge, extend). For him, acceptance is a state of being unblocked, not a mechanical process. The granularity of receive/acknowledge/extend is a UCB-lineage pedagogical addition — useful for teaching but not how masters experience it.

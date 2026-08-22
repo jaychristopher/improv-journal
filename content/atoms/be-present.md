@@ -43,7 +43,9 @@ Paul Merton: *"The thing about improvisation is that it's not about what you say
 
 This requires trust — the leap of faith that if you have no plan, you'll still be able to speak when it's your turn. TJ Jagodowski describes what happens when you commit to this: presence becomes *heightened sensation* — "you can see better and hear everything more." It is not the absence of thought. It is the full activation of your senses.
 
-**Presence lives in the body first.** When you notice you've drifted into your head, the fastest return path is somatic: feel your feet on the floor, make eye contact, touch an object in the scene. Viola Spolin addressed this through the Point of Concentration — a shared focus problem (like counting floorboards while talking) that redirects attention from internal planning to an external task. When the planning mind is occupied by the POC, what remains is direct response. The mechanism is not suppression but redirection.
+## Presence lives in the body first
+
+When you notice you've drifted into your head, the fastest return path is somatic: feel your feet on the floor, make eye contact, touch an object in the scene. Viola Spolin addressed this through the Point of Concentration — a shared focus problem (like counting floorboards while talking) that redirects attention from internal planning to an external task. When the planning mind is occupied by the POC, what remains is direct response. The mechanism is not suppression but redirection.
 
 Presence operates in three registers:
 1. **Presence to your partner** — listening, eye contact, reading emotion and status
@@ -54,6 +56,10 @@ Most training emphasizes #1. But #3 is equally critical — TJ's "heightened sen
 
 Jon Kabat-Zinn defines mindfulness as "awareness that arises through paying attention, on purpose, in the present moment, non-judgmentally." Improv presence shares three of these four qualities but diverges on reactivity. Meditation mindfulness observes without responding. Improv presence observes and responds — it is mindfulness with an output channel. Meditation trains the noticing muscle; improv applies it under load. Neuroscience confirms the overlap: Limb & Braun's fMRI study of jazz improvisation (2008) found that the brain's self-monitoring regions go quiet while self-expressive regions activate — the neurological signature of the censor releasing.
 
-**Success condition:** the inner censor is quiet. Responses — whether immediate or deliberately held — emerge from contact with the moment rather than from rehearsal. The observable sign: the performer's attention is visibly on their partner, not behind their own eyes. When there is a gap, it is a listening gap, not a planning gap.
+## Success condition
 
-**Specific sources:** Hines, ["Getting Out of Your Head on the Back-Line"](https://willhines.substack.com/p/getting-out-of-your-head-on-the-back) — three external-focus techniques. Merton quote confirmed at AllGreatQuotes. Messing's "if you're in your head" phrasing is oral tradition, widely attributed but without a verified published source.
+the inner censor is quiet. Responses — whether immediate or deliberately held — emerge from contact with the moment rather than from rehearsal. The observable sign: the performer's attention is visibly on their partner, not behind their own eyes. When there is a gap, it is a listening gap, not a planning gap.
+
+## Specific sources
+
+Hines, ["Getting Out of Your Head on the Back-Line"](https://willhines.substack.com/p/getting-out-of-your-head-on-the-back) — three external-focus techniques. Merton quote confirmed at AllGreatQuotes. Messing's "if you're in your head" phrasing is oral tradition, widely attributed but without a verified published source.

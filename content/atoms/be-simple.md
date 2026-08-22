@@ -46,6 +46,10 @@ This also applies to emotion. One clear feeling is more playable than a complica
 
 Note: simplicity governs individual *offers*, not accumulated *structure*. A Harold's third beat can be architecturally complex — because each move within it was simple enough to track.
 
-**Success condition:** your partner can immediately receive and build on your offer. The audience can follow without explanation. The relationship has room to develop.
+## Success condition
 
-**Specific sources:** Johnstone, *Impro*, Ch. 3 ("Narrative Skills"): "The improviser has to realise that the more obvious he is, the more original he appears... An artist who is inspired is being obvious. He's not making any decisions, he's not weighing one idea against another. He's accepting his first thoughts." Close/Halpern, *Truth in Comedy*, Ch. 6: "Keep it simple — less is more." **Counter-position:** UCB's analytical game framework asks improvisers to identify, frame, and heighten patterns — a more deliberate, structured process. Critics argue this makes improv cerebral. The tension: simplicity in execution vs. sophistication in pattern recognition.
+your partner can immediately receive and build on your offer. The audience can follow without explanation. The relationship has room to develop.
+
+## Specific sources
+
+Johnstone, *Impro*, Ch. 3 ("Narrative Skills"): "The improviser has to realise that the more obvious he is, the more original he appears... An artist who is inspired is being obvious. He's not making any decisions, he's not weighing one idea against another. He's accepting his first thoughts." Close/Halpern, *Truth in Comedy*, Ch. 6: "Keep it simple — less is more." **Counter-position:** UCB's analytical game framework asks improvisers to identify, frame, and heighten patterns — a more deliberate, structured process. Critics argue this makes improv cerebral. The tension: simplicity in execution vs. sophistication in pattern recognition.

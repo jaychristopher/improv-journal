@@ -61,4 +61,6 @@ Without changeability, scenes become "polite improv" — everyone agrees, nobody
 
 Listening, at its deepest, is the willingness to be changed. Lisa Rowland names this explicitly: the question of changeability is ultimately a question of faith — whether you trust the unfolding scene enough to let it reshape you.
 
-**Specific sources:** Hines, ["Rewrite History"](https://willhines.substack.com/p/rewrite-history) — changeability as rewriting the past, not just accepting the present. Rowland, ["Let Yourself Be Changed"](https://animalearning.com/improv-wisdom-musings-vol-1-let-yourself-be-changed/). Johnstone workshop notes (via [Brad Fortier, 2010](https://bradfortier.com/2010/08/14/notes-i-took-at-the-keith-johnstone-workshop/)): "Drama is about one person being changed by another" — documented as workshop teaching, not confirmed in *Impro* text.
+## Specific sources
+
+Hines, ["Rewrite History"](https://willhines.substack.com/p/rewrite-history) — changeability as rewriting the past, not just accepting the present. Rowland, ["Let Yourself Be Changed"](https://animalearning.com/improv-wisdom-musings-vol-1-let-yourself-be-changed/). Johnstone workshop notes (via [Brad Fortier, 2010](https://bradfortier.com/2010/08/14/notes-i-took-at-the-keith-johnstone-workshop/)): "Drama is about one person being changed by another" — documented as workshop teaching, not confirmed in *Impro* text.

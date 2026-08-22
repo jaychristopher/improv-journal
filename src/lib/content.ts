@@ -82,6 +82,7 @@ type RoutableContentSubdir = "atoms" | "bridges" | "paths" | "shows" | "sources"
 
 interface MarkdownNode {
   children?: MarkdownNode[];
+  data?: { hProperties?: Record<string, string> };
   title?: string;
   type: string;
   url?: string;
@@ -120,6 +121,18 @@ const SOURCE_TITLE_MAP: [RegExp, string][] = [
   [/Improvise/g, "/library/ref-napier-improvise"],
   [/Impro(?!v)/g, "/library/ref-impro-johnstone"],
 ];
+
+/**
+ * Drop the `user-content-` prefix remark-html's sanitiser puts on ids.
+ *
+ * The prefix guards against DOM clobbering by untrusted markup. Every heading
+ * here comes from markdown in this repository, and a citable anchor is worth
+ * more than the guard: `#the-discipline` is something a person can share and a
+ * passage result can point at, `#user-content-the-discipline` is not.
+ */
+function stripHeadingIdPrefix(htmlStr: string): string {
+  return htmlStr.replace(/(<h[2-6][^>]*\sid=")user-content-/g, "$1");
+}
 
 function linkSources(htmlStr: string): string {
   let result = htmlStr;
@@ -463,6 +476,47 @@ function interlinkContentTree(
   node.children = nextChildren;
 }
 
+/**
+ * Slug ids on rendered headings.
+ *
+ * Sections nobody can link to are sections Google cannot cite. With ids, a
+ * heading becomes an anchor a passage result can point at, and the in-page
+ * structure is addressable from anywhere else on the site.
+ */
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[\u2018\u2019\u201c\u201d']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function headingText(node: MarkdownNode): string {
+  if (typeof node.value === "string") return node.value;
+  return (node.children ?? []).map(headingText).join("");
+}
+
+function remarkHeadingIds() {
+  return (tree: MarkdownNode) => {
+    const used = new Map<string, number>();
+
+    const walk = (node: MarkdownNode) => {
+      if (node.type === "heading") {
+        const base = slugifyHeading(headingText(node));
+        if (base) {
+          const seen = used.get(base) ?? 0;
+          used.set(base, seen + 1);
+          const id = seen === 0 ? base : `${base}-${seen + 1}`;
+          node.data = { ...(node.data ?? {}), hProperties: { id } };
+        }
+      }
+      for (const child of node.children ?? []) walk(child);
+    };
+
+    walk(tree);
+  };
+}
+
 function remarkInterlinkDocuments(options: { currentUrl: string | null }) {
   return (tree: MarkdownNode) => {
     const linkedUrls = new Set<string>();
@@ -501,13 +555,16 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
     const rendered = await remark()
       .use(remarkGfm)
       .use(remarkInterlinkDocuments, { currentUrl })
+      .use(remarkHeadingIds)
       .use(html)
       .process(content);
 
     results.push({
       frontmatter: data as T,
       content,
-      html: rewriteLegacyInternalLinks(linkAtomRefs(linkSources(rendered.toString()))),
+      html: stripHeadingIdPrefix(
+        rewriteLegacyInternalLinks(linkAtomRefs(linkSources(rendered.toString()))),
+      ),
       slug,
     });
   }

@@ -31,7 +31,9 @@ Blocking is the general term for any behavior that refuses, deflects, or undermi
 
 The most visible form is verbal denial: "No, we're not in a hospital." But blocking operates at every level. You can block **emotionally** — accepting the words, ignoring the feeling ("You seem upset" / "I'm fine, let's move on"). You can block **physically** — turning away, breaking eye contact, retreating from your partner. You can block through **inaction** — refusing to add, forcing your partner to carry the scene alone. And you can block **your own offers** before they leave your mouth — having an impulse, judging it, suppressing it.
 
-**Two roots, not one.** Fear produces blocking — fear of the unknown, fear of vulnerability, fear of not being funny. But so does dominance. Johnstone observed that high-status players block to maintain control: the offer is refused not because it is scary but because accepting it would mean ceding authority. The question "am I serving the scene or my comfort?" should be expanded: *am I protecting myself from uncertainty, or am I protecting my status?*
+## Two roots, not one
+
+Fear produces blocking — fear of the unknown, fear of vulnerability, fear of not being funny. But so does dominance. Johnstone observed that high-status players block to maintain control: the offer is refused not because it is scary but because accepting it would mean ceding authority. The question "am I serving the scene or my comfort?" should be expanded: *am I protecting myself from uncertainty, or am I protecting my status?*
 
 A critical distinction: the word "blocking" operates at **two levels** that must not be confused. A *character* can refuse another character's request — that is drama, not blocking. Blocking in the improv sense is when the *performer* refuses the other *performer's* creative offer. TJ and Dave's characters say no to each other constantly; TJ and Dave the improvisers never block. Character-level denial can be the game of the scene. Performer-level denial kills it.
 
@@ -41,4 +43,6 @@ Napier offers an important counter-frame: the fear of blocking can itself become
 
 Understanding blocking matters not to create shame but to build recognition speed. Every improviser blocks. The goal is not to eliminate the impulse but to notice it faster and choose the scene over the self.
 
-**Specific sources:** Johnstone, *Impro*, Ch. 3 ("Spontaneity") — formal definition of blocking vs. accepting in the offer framework. *Impro for Storytellers*, Ch. 6 ("Making Things Happen," p. 101+) — the full blocking taxonomy (wimping, cancelling, bridging, hedging, pimping). See [The Improvisation School analysis](https://theimprovisationschool.com/2021/07/30/the-forgotten-gems-of-chapter-6/) for a detailed walkthrough.
+## Specific sources
+
+Johnstone, *Impro*, Ch. 3 ("Spontaneity") — formal definition of blocking vs. accepting in the offer framework. *Impro for Storytellers*, Ch. 6 ("Making Things Happen," p. 101+) — the full blocking taxonomy (wimping, cancelling, bridging, hedging, pimping). See [The Improvisation School analysis](https://theimprovisationschool.com/2021/07/30/the-forgotten-gems-of-chapter-6/) for a detailed walkthrough.

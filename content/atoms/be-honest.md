@@ -32,9 +32,13 @@ updated: "2026-03-29"
 
 This principle operates on two levels that converge in practice:
 
-**Signal fidelity** — what you transmit matches what is happening in the scene. Your words, tone, body, and timing all say the same thing. When channels contradict each other (saying "I'm fine" through a clenched jaw), the signal distorts and your partner has to decode which channel to trust.
+## Signal fidelity
 
-**Emotional authenticity** — the performer is genuinely engaged, not performing a performance. If you're scared in the scene, the fear lives in your body. If you're acting scared while winking at the audience, you've added a layer of irony that muddies everything. The audience may not consciously name the fake, but they feel the incoherence — trust erodes and the scene loses ground.
+What you transmit matches what is happening in the scene. Your words, tone, body, and timing all say the same thing. When channels contradict each other (saying "I'm fine" through a clenched jaw), the signal distorts and your partner has to decode which channel to trust.
+
+## Emotional authenticity
+
+The performer is genuinely engaged, not performing a performance. If you're scared in the scene, the fear lives in your body. If you're acting scared while winking at the audience, you've added a layer of irony that muddies everything. The audience may not consciously name the fake, but they feel the incoherence — trust erodes and the scene loses ground.
 
 Emotional authenticity is the *mechanism* by which signal fidelity is most reliably achieved. When you're genuinely in it, your channels align automatically.
 
@@ -44,7 +48,9 @@ Honesty expresses itself as **specificity**. "I'm upset" is a report. "I found a
 
 Terry Withers: *"You have to be brave, because it is very scary to get in front of an audience, tell them you are going to be funny and then just be honest instead."*
 
-**A common misreading:** "be honest" does not mean your character should always tell the truth. Characters lie constantly in great scenes. The honesty is the *performer's* — honestly committing to the character's fear, desire, or deception. The husband who says "I don't know anything about a receipt" while his hands shake is a lying character played by an honest performer. The audience reads both layers. Performer honesty is about commitment to the reality; character honesty is optional and often dramatically wrong.
+## A common misreading
+
+"be honest" does not mean your character should always tell the truth. Characters lie constantly in great scenes. The honesty is the *performer's* — honestly committing to the character's fear, desire, or deception. The husband who says "I don't know anything about a receipt" while his hands shake is a lying character played by an honest performer. The audience reads both layers. Performer honesty is about commitment to the reality; character honesty is optional and often dramatically wrong.
 
 Keith Johnstone reframes this entirely: the problem is not dishonesty but *censorship*. Performers have been trained to reject their first impulse in favor of something "better." *"The more obvious he is, the more original he appears."* His version of "be honest" is "stop blocking yourself." The honest response is whatever you were going to do before you decided it wasn't good enough.
 
@@ -52,4 +58,6 @@ Mick Napier would caution that "be honest" as an instruction can itself become a
 
 **Be honest isn't a moral instruction. It's a clarity instruction.** It raises the signal-to-noise ratio. Honest signals are clear. Clever signals are muddy. Authenticity maintains shared state coherence — it gives other players something solid to react to. Constant irony or wackiness gives your partner nothing to grab onto.
 
-**Specific sources:** Close, *Truth in Comedy*, Ch. 1: "The truth is funny. Honest discovery, observation, and reaction is better than contrived invention." Hines, ["Can I Be Honest With You?"](https://willhines.substack.com/p/can-i-be-honest-with-you). **Traditions diverge:** Commedia dell'arte, clown, and mask work traditions value heightened performance and craft over raw personal authenticity. In Lecoq's physical theater, honesty means fidelity to the mask/character, not to the performer's inner state. The character IS the mask.
+## Specific sources
+
+Close, *Truth in Comedy*, Ch. 1: "The truth is funny. Honest discovery, observation, and reaction is better than contrived invention." Hines, ["Can I Be Honest With You?"](https://willhines.substack.com/p/can-i-be-honest-with-you). **Traditions diverge:** Commedia dell'arte, clown, and mask work traditions value heightened performance and craft over raw personal authenticity. In Lecoq's physical theater, honesty means fidelity to the mask/character, not to the performer's inner state. The character IS the mask.
