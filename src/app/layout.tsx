@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { PostHogPageView } from "@/components/PostHogPageView";
-import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { authorRef, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 import { PostHogProvider } from "./providers";
 
@@ -68,8 +68,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${SITE_URL}#website`,
               name: SITE_NAME,
               url: SITE_URL,
+              publisher: { "@id": ORGANIZATION_ID },
               potentialAction: {
                 "@type": "SearchAction",
                 target: `${SITE_URL}/search?q={search_term_string}`,
@@ -85,12 +87,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": ORGANIZATION_ID,
               name: SITE_NAME,
               url: SITE_URL,
-              founder: {
-                "@type": "Person",
-                name: "Jay Christopher",
-              },
+              founder: authorRef(),
               description:
                 "Six laws, eight principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.",
             }),

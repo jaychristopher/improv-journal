@@ -9,6 +9,36 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.physics
 
 export const SITE_NAME = "The Physics of Connection";
 
+export const AUTHOR_NAME = "Jay Christopher";
+
+export const AUTHOR_PATH = "/about";
+
+/**
+ * Stable identifier for the author entity.
+ *
+ * Every article on the site names its author, but named a bare string, which
+ * resolves to nothing. Pointing each mention at one @id — defined once, on the
+ * about page — lets the mentions be understood as the same person.
+ */
+export const AUTHOR_ID = `${SITE_URL}${AUTHOR_PATH}#author`;
+
+export const ORGANIZATION_ID = `${SITE_URL}#organization`;
+
+/** Reference to the author entity, for embedding in other structured data. */
+export function authorRef() {
+  return {
+    "@type": "Person",
+    "@id": AUTHOR_ID,
+    name: AUTHOR_NAME,
+    url: `${SITE_URL}${AUTHOR_PATH}`,
+  };
+}
+
+/** Reference to the publishing organization. */
+export function publisherRef() {
+  return { "@type": "Organization", "@id": ORGANIZATION_ID, name: SITE_NAME, url: SITE_URL };
+}
+
 /** Roughly where Google truncates a title in results. */
 export const TITLE_MAX = 60;
 

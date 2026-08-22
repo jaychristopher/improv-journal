@@ -45,6 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/traditions",
     "/library",
     "/listen",
+    "/about",
   ];
   for (const hub of hubs) {
     entries.push({ url: `${SITE_URL}${hub}`, priority: 0.7, changeFrequency: "monthly" });

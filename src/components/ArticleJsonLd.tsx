@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL } from "@/lib/seo";
+import { authorRef, publisherRef, SITE_URL } from "@/lib/seo";
 
 interface ArticleJsonLdProps {
   title: string;
@@ -23,8 +23,8 @@ export function ArticleJsonLd({
     url: `${SITE_URL}${url}`,
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),
-    author: { "@type": "Person", name: "Jay Christopher" },
-    publisher: { "@type": "Organization", name: SITE_NAME },
+    author: authorRef(),
+    publisher: publisherRef(),
   };
 
   return (
