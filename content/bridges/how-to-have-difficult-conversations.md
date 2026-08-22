@@ -30,7 +30,7 @@ Improv's insight: **you cannot prepare your way through a conversation you don't
 
 The first discipline: when the other person speaks, **your only job is to understand what they said.** Not to evaluate it. Not to prepare your rebuttal. Not to decide whether they're right. Just to take in their complete communication — words, tone, emotion, what's underneath.
 
-In improv, this is the discipline of tracking offers. Your partner gives you something — maybe something you didn't expect, maybe something you disagree with — and your first move is to receive it. Not to agree with it. To *see* it.
+In improv, this is the discipline of tracking `offers`. Your partner gives you something — maybe something you didn't expect, maybe something you disagree with — and your first move is to receive it. Not to agree with it. To *see* it.
 
 In a difficult conversation, this means: when they say the thing that triggers you, pause. Let the trigger happen. Then, before you respond, verify that you actually heard what they said — not what you expected them to say.
 
@@ -48,7 +48,7 @@ The true thing lands because it's real. The tactical thing bounces because it's 
 
 The hardest part of a difficult conversation isn't what you say — it's not leaving. Not physically leaving (though that happens), but mentally leaving: retreating into defensiveness, going silent, checking out, planning your exit.
 
-Improv performers train a skill called **commitment** — the discipline of staying fully present in an uncomfortable moment instead of protecting yourself from it. On stage, this means playing the emotion that's happening rather than deflecting to humor or moving to a new topic.
+Improv performers train `commitment` — the discipline of staying fully present in an uncomfortable moment instead of protecting yourself from it. On stage, this means playing the emotion that's happening rather than deflecting to humor or moving to a new topic.
 
 In a difficult conversation, staying in the room means: when it gets uncomfortable, notice your urge to deflect, minimize, or escape — and choose to stay present instead. "This is hard. I want to get it right. Can we slow down?" is staying in the room. Changing the subject, making a joke, or going silent are all forms of leaving.
 
@@ -65,6 +65,32 @@ Difficult conversations don't need scripts, but they benefit from **structure.**
 **Respond to what they said, not to what you planned to say.** If their response changes the conversation, let it change. Following the actual conversation is always more productive than forcing the planned one.
 
 **Close with next steps, not resolution.** Most difficult conversations don't resolve in one sitting. That's okay. "Here's what I'm taking away from this, and here's what I'd like to try" is a better ending than "So are we good?"
+
+## When It Goes Badly
+
+The three principles assume the other person is broadly willing. The reason most people avoid these conversations is the case where they are not — and that deserves an answer rather than an assumption.
+
+**They get defensive.** This is usually `blocking`: your offer gets refused rather than built on. The improv response to a block is not to repeat the offer louder, which is what everyone does. It is to accept what they gave you instead — including the defensiveness itself. "You seem to be hearing this as an accusation. That's worth sorting out before anything else" receives their actual response rather than the one you wanted.
+
+**They escalate.** Status is complementary, so raising yours pushes theirs down and they feel it. If a conversation is spiralling, it is usually two people raising in turn. Lowering deliberately — slower, quieter, less certain — breaks the loop faster than matching them, and it is not capitulation. You can lower status and hold the content.
+
+**You lose the thread entirely.** Both people end up in different conversations, which improv calls a fracture. The repair is not to start again from the top. It is to say plainly where you are: "I've lost what we're actually deciding. Can we name it?" `fracture-recovery` is the same move on stage — re-establish the shared reality rather than continue in separate ones.
+
+**It does not get resolved.** Some difficult conversations do not resolve in one sitting and treating that as failure is what makes people avoid the next one. A conversation that ends with the disagreement clearly stated and the relationship intact has succeeded, even if nothing was settled.
+
+## How to Practise It
+
+You cannot rehearse a difficult conversation with the person you need to have it with, which is why most preparation goes into scripting instead — and scripting is the thing that backfires. These rehearse the underlying moves.
+
+**Receiving before responding.** `last-word-response` requires your reply to build from your partner's final words, which makes composing during their turn impossible. It is the first principle, drilled.
+
+**Saying the true thing rather than the tactical one.** `emotional-honesty-scene` asks for authentic signal rather than a managed version. Uncomfortable, and precisely the discomfort the second principle needs.
+
+**Staying in the room.** `no-backspace-scene` allows nothing to be retracted or softened. Most leaving is not walking out — it is the qualification that takes the difficult thing back.
+
+**Repairing a rupture.** `fracture-repair-drill` establishes conflicting realities deliberately and repairs them without stopping.
+
+For conflict as a broader subject — blocking, status, and the acceptance paradox — see [how to deal with conflict](/how-to-deal-with-conflict).
 
 ## Why This Works
 
