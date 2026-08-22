@@ -48,6 +48,26 @@ The constraint is doing the work. With one clear object of attention, there is n
 
 This is why the instruction "just relax and have fun" fails and a game succeeds. One is a request. The other is a structure.
 
+## The Circle Games Everyone Starts With
+
+These are the ones that get played first, and in most drama classrooms they are the only ones that ever get played. All of them work standing in a circle, need no props, no script and no stage, and scale from eight people to thirty without changing.
+
+- **`zip-zap-zop`** — "Zip" is sent across the circle with a point and direct eye contact, the receiver sends "Zap" to someone else, then "Zop", and round it goes. *Whole group, five minutes.* Trains attention that can be redirected instantly. It is the most played warm-up in existence and the most often played badly: the game is the eye contact, not the speed.
+- **`pass-the-clap`** — two neighbours clap simultaneously, aiming for a single sound rather than two close together, and it travels round the ring. *Whole group, three minutes.* Trains shared timing, and it is the simplest demonstration there is that a group can do something together that no individual is doing.
+- **`the-machine`** — somebody begins a repeating gesture with a noise to match, and everyone else attaches themselves to it in turn until the whole group is one contraption. *Whole group, five minutes.* Trains building something collective out of parts nobody agreed in advance.
+- **`one-word-story`** — a single story travels round the ring at one word each, with no conferring and nobody allowed to pass. *Whole group, five minutes.* Trains giving up authorship, which is the hardest thing on this list and the reason the story always goes somewhere nobody planned.
+- **`what-are-you-doing`** — one player mimes an activity; the next asks what they are doing; the answer must be a different activity, which the asker then has to mime. *Pairs or a line, ten minutes.* Trains the split between what your hands are doing and what your mouth is saying, and it is where most people first learn to mime at all.
+- **`big-booty`** — a numbered circle keeps a beat and passes a call between positions, and anyone who fumbles the rhythm goes to the end. *Whole group, ten minutes.* Trains working under enough load that deliberating becomes impossible.
+- **`questions-only`** — a two-hander in which nobody may say anything that is not a question, and you are out the moment you do. *Two at a time, the rest watching, ten minutes.* Trains noticing how much ordinary conversation is deferral — and it is more useful for what it exposes than as a habit to keep.
+
+### Which ones suit which age
+
+The circle games above work from about seven upward, because none of them requires a character, a story or a joke. **Below ten, stay with the non-verbal and rhythmic ones** — pass the clap, the machine, mirroring — where nobody has to produce words under observation.
+
+**Around eleven to fourteen, self-consciousness is the whole problem**, and the games that help are the ones where the group is the unit and no individual is on display for long. Zip zap zop and one-word story are built for exactly this. Avoid anything that puts one person in front of a watching group until the room has been playing for a few weeks.
+
+**From fifteen upward the scene-based exercises further down become usable**, because a group that age can sustain a situation rather than a round. The failure mode changes too: younger groups go silly, older groups go clever, and clever is the harder one to undo.
+
 ## The Games, Grouped by What They Train
 
 A list of thirty games sorted alphabetically is not much use, because the only question that matters when planning a session is what the group needs. These are grouped by that instead. Each links to the full write-up with setup, progressions and what to watch for.
