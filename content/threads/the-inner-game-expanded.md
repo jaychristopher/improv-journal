@@ -10,7 +10,7 @@ status: draft
 atoms: [emotional-truth, vulnerability, be-supportive, gratitude-reframing, accepting-the-offer, beyond-the-stage, audience, signal, bandwidth, coherence]
 tags: [inner-game, emotional, beyond-stage, depth]
 created: "2026-04-07"
-updated: "2026-04-21"
+updated: "2026-08-22"
 ---
 
 The outer game of improv is technique — yes-and, game, heightening, editing. The inner game is everything underneath: the emotional honesty, the willingness to be changed, the support that makes risk possible, and the question of whether any of this applies beyond the stage.
