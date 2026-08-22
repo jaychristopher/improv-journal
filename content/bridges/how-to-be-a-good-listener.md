@@ -3,6 +3,7 @@ title: "How to Be a Good Listener (Not the Kind You Think)"
 description: "Most listening advice tells you to nod and paraphrase. Real listening — the kind improv performers stake their careers on — works completely differently."
 target_keywords:
   - { keyword: "how to be a good listener", volume: 900, difficulty: 3, traffic_potential: 1500 }
+  - { keyword: "how to be a better listener", volume: 1100 }
   - { keyword: "listening skills", volume: 800 }
 entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
@@ -74,11 +75,39 @@ If they say "...and I just don't know what to do about my sister," your response
 
 You'll notice something remarkable: the quality of your responses changes immediately. They become more relevant, more specific, and more connecting — because they're responding to what was actually said rather than to your interpretation of the gist.
 
-Try it for one conversation. Then notice how different it feels — for both of you.
+`last-word-response` is the full version, and there are six more in [active listening exercises](/active-listening-exercises) if this one stops being difficult.
 
-## The Payoff
+## The Two Failures That Look Like Listening
 
-Being a genuinely good listener is rare enough that people notice it immediately. Not because you're performing listening behaviors — maintaining eye contact, nodding, paraphrasing — but because they *feel* heard. The experience of being fully received by another person is so uncommon that it registers as something close to intimacy.
+Most people trying to listen better adopt behaviours rather than changing where their attention is, and there are two that fail in opposite directions.
+
+**Performing attention.** Nodding, sustained eye contact, "what I'm hearing is." All genuinely useful, and all producible while composing underneath. This is the version most listening training installs, which is why people who have been trained in it still get told they do not listen: the technique was real and it got layered onto the wrong attention mode.
+
+**Waiting in silence.** The correction to the first is often just not talking — no interruption, no redirect, full pause after they finish. It looks better and it is not listening either, because attention that is merely withheld from speaking has not gone anywhere in particular. It usually goes to self-monitoring.
+
+What separates both from the real thing is that reception is active. You are tracking something specific: what they are giving you, what is underneath it, what changed mid-sentence. `offers` names the material. Attention has to be *on* something, and if you do not give it a job it takes one.
+
+## When You Should Not Just Listen
+
+Advice to listen more comes with an implicit claim that more is always better, and it is not.
+
+**When they want a decision, listening reads as evasion.** Someone asking whether to take the job and receiving only reflective questions will conclude you are avoiding the answer. Reception is not always the contribution.
+
+**When you actually disagree, silence is not neutral.** Withheld disagreement gets read as agreement, and it surfaces later as a surprise. The listening move is to receive it fully and then say the true thing, not to receive it instead of saying the true thing.
+
+**When someone is rehearsing rather than thinking.** Some conversations are a loop the speaker has run many times. Sustained attentive listening reinforces the loop. Interrupting it gently is the more useful act.
+
+The improv version of this distinction is that listening and contributing are not opposites — the whole point of receiving an offer is to build on it. A scene where one player only receives is as dead as one where nobody does.
+
+## Practising It Outside a Conversation
+
+The problem with practising listening in real conversations is that the stakes make it worse: you notice you drifted, feel bad, and the noticing takes more attention than the drifting did.
+
+**Give attention somewhere it cannot wander.** `mirroring` demands precise physical matching, which occupies exactly the capacity that would otherwise run commentary.
+
+**Remove the ability to plan.** `one-word-scene` limits you to a single word at a time, so there is no sentence to draft.
+
+**Then take one rule into a real exchange.** The last-word rule is silent — nobody knows you are doing it, and ten minutes of it tells you honestly how much of your listening was queue management.
 
 This is what improv performers create on stage every night. Two people, fully tracking each other, responding to the complete signal, building a shared reality from genuine mutual attention. It looks like magic from the outside. From the inside, it's just listening — real listening, without the obstacles.
 

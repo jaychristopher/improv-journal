@@ -3,7 +3,6 @@ title: "Active Listening Skills: Why You're Doing It Wrong"
 description: "Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible."
 target_keywords:
   - { keyword: "active listening skills", volume: 7500, difficulty: 68 }
-  - { keyword: "how to be a better listener", volume: 1100 }
   - { keyword: "how to be more present", volume: 500 }
 entry_atoms:
   [active-listening, offers, continuous-signaling, cognitive-bandwidth, internal-computation]
@@ -87,6 +86,8 @@ Real listening requires something most listening advice never mentions: **the wi
 Improvisers have a principle for this: **let yourself be changed.** It's not about being agreeable. It's about being permeable — letting the other person's reality affect yours. That's what listening actually is. Not a skill you perform. A state you enter.
 
 ---
+
+_This page is the mechanism. For the practical version — what to actually do differently in a conversation — see [how to be a good listener](/how-to-be-a-good-listener)._
 
 _To practise it rather than read about it: [active listening exercises](/active-listening-exercises) — seven drills that make composing your reply structurally impossible._
 
