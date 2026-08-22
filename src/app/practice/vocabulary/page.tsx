@@ -2,21 +2,45 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { GLOSSARY_URL, loadGlossaryTerms } from "@/lib/glossary";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Improv Vocabulary",
+  title: "Improv Glossary: Vocabulary and Terms Explained",
   description:
-    "The foundational concepts that name what's happening in scenes, shows, and conversations.",
-  alternates: { canonical: "/practice/vocabulary" },
+    "A glossary of improv terms — what each one means and what it names in a scene, a show, or a conversation.",
+  alternates: { canonical: GLOSSARY_URL },
 };
 
 export default async function VocabularyPage() {
-  const atoms = await loadAtoms();
-  const definitions = atoms.filter((a) => a.frontmatter.type === "definition");
+  const terms = await loadGlossaryTerms();
+
+  // DefinedTermSet ties the individual DefinedTerm entries together, so the
+  // page reads as a glossary rather than a list of links.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": `${SITE_URL}${GLOSSARY_URL}`,
+    name: "Improv Vocabulary",
+    description:
+      "A glossary of improv terms — what each one means and what it names in a scene, a show, or a conversation.",
+    url: `${SITE_URL}${GLOSSARY_URL}`,
+    hasDefinedTerm: terms.map((term) => ({
+      "@type": "DefinedTerm",
+      "@id": `${SITE_URL}${term.url}`,
+      name: term.term,
+      description: term.definition,
+      termCode: term.id,
+      url: `${SITE_URL}${term.url}`,
+    })),
+  };
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
@@ -25,25 +49,28 @@ export default async function VocabularyPage() {
         ]}
       />
       <header className="mb-12">
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">
-          Vocabulary ({definitions.length})
-        </h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Improv Glossary ({terms.length})</h1>
         <p className="text-foreground/60 mt-2">
           The foundational concepts that name what&apos;s happening in scenes, shows, and
           conversations. The shared language that makes diagnosis possible.
         </p>
       </header>
-      <div className="grid grid-cols-2 gap-3">
-        {definitions.map((a) => (
-          <Link
-            key={a.frontmatter.id}
-            href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-3 transition-colors"
+
+      <dl className="space-y-6">
+        {terms.map((term) => (
+          <div
+            key={term.id}
+            className="border-foreground/10 border-b pb-6 last:border-b-0 last:pb-0"
           >
-            <span className="text-sm font-medium">{a.frontmatter.title}</span>
-          </Link>
+            <dt>
+              <Link href={term.url} className="text-lg font-semibold hover:underline">
+                {term.term}
+              </Link>
+            </dt>
+            <dd className="text-foreground/60 mt-1 text-sm">{term.definition}</dd>
+          </div>
         ))}
-      </div>
+      </dl>
     </main>
   );
 }

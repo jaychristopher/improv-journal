@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
+import { DefinedTermJsonLd } from "@/components/DefinedTermJsonLd";
 import { getAtomBySlug, getAtomUrl, loadAtoms } from "@/lib/content";
+import { GLOSSARY_URL, leadParagraph } from "@/lib/glossary";
 import { atomDescription, extractDescription } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -44,14 +46,24 @@ export default async function VocabularyDetailPage({
   if (!atom || atom.frontmatter.type !== "definition") notFound();
 
   return (
-    <AtomDetail
-      atom={atom}
-      breadcrumbs={[
-        { label: "Home", href: "/" },
-        { label: "Practice", href: "/practice" },
-        { label: "Vocabulary", href: "/practice/vocabulary" },
-        { label: atom.frontmatter.title },
-      ]}
-    />
+    <>
+      <DefinedTermJsonLd
+        term={{
+          id: atom.frontmatter.id,
+          term: atom.frontmatter.title,
+          url: getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type }),
+          definition: leadParagraph(atom.content),
+        }}
+      />
+      <AtomDetail
+        atom={atom}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Practice", href: "/practice" },
+          { label: "Vocabulary", href: GLOSSARY_URL },
+          { label: atom.frontmatter.title },
+        ]}
+      />
+    </>
   );
 }
