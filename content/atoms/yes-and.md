@@ -35,6 +35,18 @@ The "yes" is not literal agreement — it's the acknowledgment that what your pa
 
 You can say the word "yes" while actually denying the reality your partner established. Mechanical yes-and — accepting offers robotically without personal investment — is its own kind of scene-death. True yes-and lives in behavior, not vocabulary. When it's working, you aren't thinking "yes, and" — you're just *with* the other person.
 
+## The opposite
+
+Asked directly, the opposite of "yes, and" is `blocking` — refusing what your partner has established. Your partner greets you as their brother and you tell them you are an only child. It is the textbook answer and also the rarest version in practice, because a flat contradiction is obvious enough that people stop doing it within about two classes.
+
+The common opposite is quieter and has no single name in ordinary speech. `negation` covers the family: accepting the words while replacing the content. "Yes, and" has an evil twin in "yes, but", and a subtler one still in the reframe that agrees enthusiastically and then quietly relocates the scene to somewhere the speaker preferred. The offer was heard, acknowledged, and discarded, and because nobody said no it can be difficult to point at afterwards. The tell is the same on stage as in a meeting: the thing that was offered never comes back.
+
+Worth separating out, because it is the most common misunderstanding of the whole idea: **the opposite of "yes, and" is not disagreement.** Characters can argue, refuse each other, lie and fight, and the scene is still being built. What cannot happen is one *performer* declining the other *performer's* contribution. The distinction is between the fiction and the people making it.
+
+## Practising it
+
+`yes-and-chain` leaves exactly one legal move — treat what was just said as true, then extend it — with both refusal and the reframe ruled out. It is deliberately monotonous, and the monotony is what makes it diagnostic: the instant somebody relocates the idea instead of building on it, the chain stops going anywhere and the whole group hears it.
+
 ## The counter-argument
 
 Mick Napier warns that "yes, and" as a *first instruction* can paralyze beginners — they monitor for compliance instead of playing. His frame: yes-and describes good scene work better than it teaches it. The technique works as a retrospective lens ("that scene worked because everyone was yes-and-ing") more than as a real-time directive ("remember to yes-and"). The prescription is `be-positive` and `accepting-the-offer`; "yes, and" is the name we give to the result.

@@ -3,9 +3,7 @@ title: "The Rules of Improv (And Why Half of Them Are Wrong)"
 description: "Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works."
 target_keywords:
   - { keyword: "rules of improv", volume: 450, difficulty: 3, traffic_potential: 400, parent: "rules of improv" }
-  - { keyword: "yes and improv", volume: 600, parent: "yes and" }
   - { keyword: "improv rules", volume: 150, parent: "rules of improv" }
-  - { keyword: "improv yes and", volume: 250, parent: "yes and" }
 serp_checked: "2026-08-22"
 serp_min_dr: 23
 serp_verdict: winnable
@@ -42,7 +40,7 @@ Understanding what the rules actually mean — and where they break — is the d
 
 Johnstone doesn't use the phrase "Yes, And" at all. His version is "be changed by what happens" — which is deeper. UCB teaches Yes And as a specific technique with structure. Mick Napier (Annoyance) argues that obsessing over Yes And produces "wimpy, compliant, passionless" scenes.
 
-**The real principle:** Accept the shared reality and bring something of yourself to it. The acceptance is non-negotiable. The "and" is where your personality, your point of view, and your creative contribution live.
+**The real principle:** Accept the shared reality and bring something of yourself to it. The acceptance is non-negotiable. The "and" is where your personality, your point of view, and your creative contribution live. The phrase itself — where it came from, what it is not, and the argument against teaching it first — is covered in `yes-and`.
 
 ## Rule 2: "Don't Ask Questions"
 
