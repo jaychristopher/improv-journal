@@ -65,6 +65,32 @@ An ensemble maintains itself. When several people know each other independently 
 
 **Introduce people to each other.** The ensemble move. It converts a set of individual relationships into a group that survives without you running it.
 
+## Turning Acquaintances Into Friends
+
+Most people reading this are not starting from nothing. They have colleagues, gym acquaintances, parents at the same school gate, a friend-of-a-friend they always enjoy talking to — and none of it becomes friendship. That is a different problem from having nobody, and it has a specific cause.
+
+Those relationships have the repetition already. What they lack is any exchange that would update the estimate. `trust` is built from moments where being exposed turned out fine, and a relationship confined to its original context never produces one: you can see someone weekly for three years in a setting that only ever calls for the pleasant version of both of you.
+
+Two things move it, and only two.
+
+**Take it out of its context.** A colleague is a colleague until you do something together that is not work. The change is not the activity — it is that the shared context no longer supplies a script, so you both have to bring something else. This is the single highest-yield move available, and it is why "want to get lunch?" does more than three months of good corridor conversation.
+
+**Say one true thing slightly earlier than is comfortable.** Not a confession. A real opinion, an actual difficulty, an admission that you found something hard. The polite phase persists because both people are waiting for evidence that the other will not use it against them, and someone has to supply that evidence first. Whoever goes first is doing the other person a favour, though it rarely feels that way at the time.
+
+The failure mode is asking for closeness without offering any — the person who wants deeper friendship and waits to be invited into it. `vulnerability` on this site is being seen without armour, and it is not something the other person can do on your behalf.
+
+## When You Are Starting From Nothing
+
+New city, remote job, life stage that scattered everyone — the conditions have to be built rather than found, and the advice changes.
+
+**Pick the thing with the longest commitment.** An eight-week course beats a drop-in; a season beats a one-off; a weekly rehearsal beats a monthly meetup. You are buying repetition, and length of commitment is the only reliable way to buy it.
+
+**Accept that the first attempt is reconnaissance.** The first group you join may produce nothing, which is normal rather than diagnostic. What it produces is information about what kind of room you are usable in.
+
+**If you work remotely, the office is not coming back.** Remote work removed the last reliable source of unplanned repeated contact for a lot of people, and nothing replaces it by default. It has to be deliberately reconstructed outside work, and treating that as an ordinary weekly commitment rather than an occasional effort is the whole difference.
+
+**Go before you want to go.** The decision to attend is made on a day when you feel like it, and attendance is required on days when you do not. Committing to the slot rather than to the feeling is what gets anyone through the eight weeks the estimate needs.
+
 ## The Part That Is Skill
 
 Conditions do most of the work, but some of it is skill, and this site treats those as practisable rather than innate.
