@@ -138,7 +138,7 @@ const BRIDGE_RELATIONS: Record<
     exercises: ["mirroring", "group-mind-cultivation", "status-transfer"],
     threads: [{ id: "playing-together-at-the-highest-level", label: "Playing Together" }],
   },
-  "interpersonal-communication-skills": {
+  "people-skills": {
     exercises: ["last-word-response", "mirroring", "one-word-scene"],
     threads: [{ id: "building-on-offers", label: "Building on Offers" }],
   },

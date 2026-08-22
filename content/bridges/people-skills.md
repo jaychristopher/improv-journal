@@ -1,8 +1,9 @@
 ---
-title: "Interpersonal Communication Skills: What Improv Reveals"
-description: "Communication isn't a list of tips — it's a real-time system with specific mechanics. Improv performers practice those mechanics every night."
+title: "People Skills Are a System, Not a Personality Trait"
+description: "Most people-skills advice is a parts catalogue — eye contact, I-statements, paraphrasing. It is a real-time system, and the mechanics are learnable."
 target_keywords:
-  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14, traffic_potential: 30 }
+  - { keyword: "people skills", volume: 6900, difficulty: 14, traffic_potential: 1100 }
+  - { keyword: "interpersonal communication skills", volume: 2900, difficulty: 14 }
   - { keyword: "communication skills", volume: 8100 }
 entry_atoms: [active-listening, offers, continuous-signaling, status, be-present, be-honest]
 entry_path: improv-for-life
@@ -11,11 +12,11 @@ created: "2026-04-13"
 updated: "2026-08-22"
 ---
 
-# Interpersonal Communication Skills: What 60 Years of Improv Reveals
+# People Skills Are a System, Not a Personality Trait
 
-Most advice about interpersonal communication skills reads like a checklist. Make eye contact. Use "I" statements. Practice active listening. Paraphrase what you heard. These aren't wrong. But they describe communication the way a parts catalog describes an engine — you can name every component and still not understand how the thing runs.
+Most advice about people skills reads like a checklist. Make eye contact. Use "I" statements. Practice active listening. Paraphrase what you heard. These aren't wrong. But they describe communication the way a parts catalog describes an engine — you can name every component and still not understand how the thing runs.
 
-Communication is not a collection of techniques. It's a real-time system with specific mechanics, and those mechanics operate whether you understand them or not. Getting better means understanding the system — not memorizing more tips.
+People skills are not a collection of techniques, and they are not a personality you either have or lack. It's a real-time system with specific mechanics, and those mechanics operate whether you understand them or not. Getting better means understanding the system — not memorizing more tips.
 
 There is a practice that has been reverse-engineering this system for over sixty years: improvisation. Not improv comedy as entertainment, but improvisation as a discipline — building meaning between people in real time, without a script. Improv performers aren't just good communicators. They are practitioners of communication mechanics. They have names for the parts most people can only feel.
 
@@ -27,7 +28,7 @@ Viola Spolin and Keith Johnstone independently recognized this in the mid-20th c
 
 When you think of communication as messaging, the focus is on transmission: did I say what I meant clearly enough? When you think of communication as offers, the focus shifts to responsiveness: did I notice what they gave me, and did I build on it?
 
-This shift changes everything. Consider telling a friend about a problem at work. In the "messaging" frame, the question is whether your friend understood the facts. In the "offers" frame, the question is whether your friend noticed the emotional offer underneath — the worry, the frustration, the request for solidarity — and responded to *that*.
+This shift changes everything. Consider telling a friend about a problem at work. In the "messaging" frame, the question is whether your friend understood the facts. In the "offers" frame, the question is whether your friend noticed the emotional offer underneath — the worry, the frustration, the request for solidarity — and responded to _that_.
 
 Most communication breakdowns aren't failures of clarity. They're failures of offer recognition. The signal was sent. It wasn't received — not because it was unclear, but because the other person was listening for content and missed the offer.
 
@@ -39,7 +40,7 @@ Paul Watzlawick formalized this as the first axiom of communication: "One cannot
 
 The same thing happens in every conversation you have. You're just not under stage lighting, so the signal loss is invisible.
 
-*Try this:* In your next conversation, notice what your body is doing while the other person talks. Are you composing your response? Are you glancing at your phone? Are you nodding on autopilot? Your body is sending a signal about where your attention actually is. The other person is receiving that signal, even if neither of you acknowledges it.
+_Try this:_ In your next conversation, notice what your body is doing while the other person talks. Are you composing your response? Are you glancing at your phone? Are you nodding on autopilot? Your body is sending a signal about where your attention actually is. The other person is receiving that signal, even if neither of you acknowledges it.
 
 ## The Mechanics of Listening
 
@@ -65,7 +66,7 @@ Most communication problems are status problems disguised as content problems. A
 
 Understanding the status channel doesn't mean manipulating it. It means seeing what's actually happening instead of only seeing what's being said. Once you can read status transactions, conflicts that seemed irrational become perfectly logical — they just weren't about what you thought they were about.
 
-*Try this:* Watch a conversation you're not part of — at a cafe, in a meeting. Ignore the content. Just watch the bodies. Who takes up space? Who contracts? Who maintains eye contact? Who breaks it first? You're reading the status channel. Now notice you do this instinctively in your own conversations — you've just never had a name for it.
+_Try this:_ Watch a conversation you're not part of — at a cafe, in a meeting. Ignore the content. Just watch the bodies. Who takes up space? Who contracts? Who maintains eye contact? Who breaks it first? You're reading the status channel. Now notice you do this instinctively in your own conversations — you've just never had a name for it.
 
 ## Honesty as Mechanism
 
@@ -77,7 +78,7 @@ The audience (or your conversation partner) processes all of these channels simu
 
 Albert Mehrabian's research (1971) is often misquoted as "93% of communication is nonverbal." The actual finding: when verbal and nonverbal signals conflict, people trust the nonverbal. Honesty isn't about radical transparency. It's about signal coherence — making sure your channels aren't contradicting each other.
 
-*Try this:* The next time someone asks how you are and the true answer isn't "fine," try a one-degree-more-honest response. Not a full emotional download — just one step closer to the truth. "I'm a little tired" instead of "I'm fine." "This week has been a lot" instead of "all good." Notice how the conversation shifts when you give the other person a real offer to respond to instead of a closed one.
+_Try this:_ The next time someone asks how you are and the true answer isn't "fine," try a one-degree-more-honest response. Not a full emotional download — just one step closer to the truth. "I'm a little tired" instead of "I'm fine." "This week has been a lot" instead of "all good." Notice how the conversation shifts when you give the other person a real offer to respond to instead of a closed one.
 
 ## The System in Practice
 
@@ -89,6 +90,6 @@ Communication is not about finding the right words. It's about being present eno
 
 ---
 
-*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
+_This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path._
 
-**Sources cited:** Spolin (1963), *Improvisation for the Theater*. Johnstone (1979), *Impro*. Watzlawick et al. (1967), *Pragmatics of Human Communication*. Mehrabian (1971), *Silent Messages*. Kahneman (1973), *Attention and Effort*.
+**Sources cited:** Spolin (1963), _Improvisation for the Theater_. Johnstone (1979), _Impro_. Watzlawick et al. (1967), _Pragmatics of Human Communication_. Mehrabian (1971), _Silent Messages_. Kahneman (1973), _Attention and Effort_.

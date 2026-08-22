@@ -69,7 +69,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "funny-questions-to-ask",
       "deep-questions-to-ask",
       "how-to-be-a-good-listener",
-      "interpersonal-communication-skills",
+      "people-skills",
       "how-to-stop-overthinking-in-a-relationship",
       "how-to-deal-with-conflict",
       "how-to-read-body-language",

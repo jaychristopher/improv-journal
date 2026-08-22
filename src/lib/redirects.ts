@@ -83,6 +83,13 @@ export function generateHubRedirects(): {
   permanent: boolean;
 }[] {
   return [
+    // Retargeted: the page always described people skills, and the term it
+    // used to carry has a traffic potential of 30 against 1,100 for this one.
+    {
+      source: "/interpersonal-communication-skills",
+      destination: "/people-skills",
+      permanent: true,
+    },
     // Old /system/ URLs → /how-it-works/
     { source: "/system", destination: "/how-it-works", permanent: true },
     { source: "/system/principles", destination: "/how-it-works/principles", permanent: true },

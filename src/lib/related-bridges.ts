@@ -136,7 +136,7 @@ export const CURATED_RELATED: Record<string, string[]> = {
   "how-to-be-present": ["how-to-stop-overthinking", "how-to-be-a-good-listener"],
   "how-to-be-vulnerable": ["emotional-safety", "confidence-building-exercises"],
   "group-dynamics": ["collaboration-skills", "team-building-activities"],
-  "interpersonal-communication-skills": ["how-to-be-a-good-listener", "how-to-be-present"],
+  "people-skills": ["how-to-be-a-good-listener", "how-to-be-present"],
   "how-to-overcome-fear-of-failure": ["fear-of-public-speaking", "how-to-be-vulnerable"],
   "how-to-stop-overthinking-in-a-relationship": ["how-to-be-present", "how-to-be-vulnerable"],
 };
