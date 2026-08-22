@@ -1,5 +1,5 @@
 ---
-title: "Public Speaking Tips for the Parts You Cannot Rehearse"
+title: "10 Public Speaking Tips for the Parts You Cannot Rehearse"
 description: "Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains."
 target_keywords:
   - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000, parent: "public speaking tips" }
@@ -22,13 +22,30 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Public Speaking Tips for the Parts You Cannot Rehearse
+# 10 Public Speaking Tips for the Parts You Cannot Rehearse
 
 Nearly all public speaking advice is about the prepared talk: structure it in three parts, open with a story, cut your slides, rehearse it aloud, know your first line cold.
 
 That advice is fine, and it addresses maybe half of what happens when you actually speak. The half it ignores is where things go wrong — the question from the back, the point you lose halfway through, the projector that dies, the moment somebody looks at their phone and your concentration goes with it, the meeting where you are asked to say a few words with ninety seconds of notice.
 
 **Nobody rehearses the unrehearsed parts.** And there is one discipline that trains nothing else.
+
+## The Ten, in Short
+
+Everything on this page in one place. Each of these is argued properly further down, and every one of them is about the part of a talk you could not rehearse.
+
+1. **Prepare beats, not sentences.** Five phrases on a card beats a script, because a script has one path through it and losing any word loses the path.
+2. **Memorise two things only — the first line and the last.** The opening because nerves are loudest there, the close because trailing off is how good talks end badly.
+3. **Rehearse the joins.** Getting from point two to point three is where people stall. The paragraphs look after themselves.
+4. **Give your attention a job outside your own head.** Self-monitoring and delivering compete for the same budget, and monitoring wins unless something external outranks it.
+5. **Talk to one person at a time.** Finish a thought with one face before moving to another. Sweeping the room reaches nobody.
+6. **Say the obvious thing out loud.** The fire alarm, the late arrivals, the fact that you are the last item before lunch. Ignoring it costs more attention than naming it.
+7. **If you lose your place, say so and stand still.** Two seconds of "where was I" keeps the room. Fifteen seconds of noise while you search does not.
+8. **Recover forwards.** Start a fresh sentence rather than rescuing a mangled one — repair costs more than replacement.
+9. **Answer the question you were actually asked.** Pivoting to the answer you prepared reads as evasion even when it is not.
+10. **Stop when you have finished.** The most common failure in speaking is not starting badly. It is continuing.
+
+If you only take one: **numbers 4 and 10 do most of the work**, and neither requires you to become a better speaker — only to stop doing something.
 
 ## The Preparation Paradox
 
