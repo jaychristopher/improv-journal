@@ -66,9 +66,48 @@ The difference is subtle but the impact is massive. When you control the eye con
 
 **Practice:** In your next conversation, try initiating eye contact instead of responding to it. Look at the person when you're speaking (most people look away when they talk). Hold it a beat longer than feels natural. You'll notice the dynamic shift immediately.
 
+## Assertive or Aggressive: What Actually Separates Them
+
+This is the question underneath most reluctance to be assertive, and "don't go too far" is not an answer anyone can act on. `status` gives a mechanism instead.
+
+Johnstone's insight is that status is complementary. It is a property of the relationship rather than of either person, and when one party raises, the other feels pressure to lower. That pressure is exactly what makes assertiveness feel risky — done carelessly, taking up more space does push the other person down, and they feel it.
+
+Which supplies the distinction:
+
+- **Aggression raises your status by lowering theirs.** Interrupting, correcting in front of others, holding eye contact past the point where they yield, occupying the room. The gain is extracted from them.
+- **Assertiveness raises your own and leaves theirs alone.** Finishing your sentence, holding a pause, saying the thing without the disclaimer. Nothing is taken from anybody.
+
+The site's own note on this is that both-high status produces competition and both-low produces indecision. Neither is the target. What you are aiming for is a room where you have taken your own space and the other person still has theirs, which is a genuinely available outcome and the one most assertiveness advice never names.
+
+The practical test is not how you felt. It is whether they got smaller. If your becoming clearer required them to become quieter, that was the aggressive version.
+
+## Saying No
+
+Most people who want to be more assertive have one specific thing in mind, and it is this.
+
+The improv observation is that a refusal fails on delivery far more often than on content. The word "no" is rarely the problem; what undoes it is the hedging wrapped around it — the apology, the over-explanation, the trailing "...unless that's a problem?" Those are low-status `signal`, and they invite renegotiation, because a qualified refusal reads as an opening position.
+
+Three adjustments, all from the section above:
+
+- **Say it and then stop.** The pause after a refusal is the whole thing. Filling it is where the ground gets given back.
+- **Give one reason, not three.** Multiple reasons read as building a case, and a case can be argued with. One reason, or none, is a decision.
+- **Do not soften it retroactively.** The instinct to add "sorry, I know that's annoying" a beat later is the same hedging reflex that makes a committed statement collapse.
+
+None of this requires being unkind. Warmth is a separate channel from status, and the pairing that works best — a clear refusal delivered warmly — is unavailable to anyone who thinks assertiveness means being harder.
+
+## How to Practise It
+
+**Play both ends deliberately.** `status-transfer` runs the same scene at high status, then low, then shifts mid-scene. Producing status on purpose is what makes your own default visible, and the default is the thing actually limiting you.
+
+**Remove the hedge.** `no-backspace-scene` allows nothing to be retracted or qualified. Most under-assertiveness is not silence; it is the softening that follows.
+
+**Start before you are ready.** `first-line-drill` trains `initiation` — the threshold moment, which is where assertiveness is usually lost rather than in the argument itself.
+
+If you want the other half of this — reading status rather than producing it — see [how to read body language](/how-to-read-body-language).
+
 ## Status Is Adjustable, Not Fixed
 
-The reason this framework is more useful than standard assertiveness advice is that it's **adjustable.** You don't need to be high-status all the time. Johnstone observed that the most socially skilled people — and the best improvisers — can **fluidly adjust their status** to match what the situation needs.
+The reason this framework is more useful than standard assertiveness advice is that it's **adjustable.** You don't need to be high-status all the time. Johnstone observed that the most socially skilled people — and the best improvisers — can fluidly adjust their `status` to match what the situation needs.
 
 Sometimes you need to raise your status: negotiations, presentations, standing your ground. The tools are stillness, pause, and initiatory eye contact.
 
@@ -78,7 +117,7 @@ The point isn't to always be assertive. It's to **choose** your level of asserti
 
 ## The Deeper Insight
 
-Assertiveness isn't about dominating a room or winning a negotiation. It's about being able to **take up the space you actually need.** Not more than you need (that's aggression). Not less than you need (that's submission). Exactly what the situation calls for.
+Assertiveness isn't about dominating a room or winning a negotiation. It is about `commitment` to taking up the space you actually need. Not more than you need (that's aggression). Not less than you need (that's submission). Exactly what the situation calls for.
 
 Improv performers train this because scenes require constant status adjustment. A scene where both players are high-status is a power struggle. A scene where both are low-status is a puddle. The art is in the movement — raising, lowering, matching, complementing. The same art applies to every conversation you'll ever have.
 
