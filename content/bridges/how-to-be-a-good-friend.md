@@ -66,6 +66,30 @@ Two things make repair possible:
 
 **Do not defend before you have understood.** Defensiveness is a block on an offer that happens to be critical. You can receive the complaint fully and still disagree with it afterwards — but doing it in that order is what makes the disagreement survivable. Reversing the order is what turns a small rupture into a permanent one.
 
+## When They Are Going Through Something Serious
+
+Illness, grief, a marriage ending, a job lost. This is where people most want to be good friends and most reliably are not, and it is not for lack of effort. Every failure mode above gets stronger under these conditions, because the discomfort is larger and the urge to resolve it is proportional.
+
+**"Let me know if you need anything" transfers the work.** It sounds generous and it asks the person with least capacity to identify a task, ask for it, and manage your involvement. Specific offers do not: "I'm bringing food Tuesday, tell me if that's a bad day." A specific offer is refusable, which is what makes it easy to accept.
+
+**Do not try to make it better.** There is nothing to fix and attempting to fix it communicates that their state is a problem you would like resolved. Accompanying someone in something unfixable is the whole job, and it feels like doing nothing precisely because the doing is not the point.
+
+**Say the awkward thing rather than nothing.** Most people go quiet around grief and illness because they are afraid of saying the wrong thing, and the silence is worse than almost any wrong thing. "I don't know what to say and I'm not going anywhere" is enough. The absence is what gets remembered.
+
+**Show up after the first fortnight.** Everyone appears immediately and most disappear within a month, which is roughly when the situation stops being acute and starts being long. Being the person still asking in week six costs very little and is rarer than any amount of early intensity.
+
+## When It Is One-Sided
+
+The most common friendship question that advice never answers: what to do when you are always the one initiating.
+
+Two possibilities, and they are worth distinguishing before deciding anything.
+
+**It is structural.** Some people initiate almost nothing with anyone and it means very little about you. The `ensemble` point applies here — if contact only exists because one person organises it, the relationship is fragile whoever that person is. Introducing them into a group where several people know each other removes the dependence on you without ending anything.
+
+**It is one-directional interest.** Sometimes the honest reading is that you value it more than they do, which is uncomfortable and survivable. The useful move is to stop escalating, not to withdraw sharply — meet the level of investment that is being returned and see whether it holds there. Friendships can be perfectly good at a lower intensity than you wanted; what does not work is quietly resenting a level you chose to keep exceeding.
+
+The test that resolves it: stop initiating for a while and observe rather than score. If nothing happens and you mind, that is information about what you want, not evidence of anything they did wrong.
+
 ## The Boring Part That Does Most of the Work
 
 `trust` is an accumulated estimate built from many small exchanges, which means reliability beats intensity by a wide margin. Turning up predictably, remembering the thing they mentioned last month, answering the message — these are unglamorous and they are most of it.
