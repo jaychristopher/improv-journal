@@ -105,10 +105,10 @@ Nobody knows anybody. Keep the answers short, concrete, and impossible to get wr
 The constraint is different: no side conversations, awkward silences carry, and everyone is looking at themselves. Favour questions with a visible or very short answer.
 
 - Show us one thing within arm's reach and say why you have it.
-- What is behind you that we cannot see?
+- What is the view like from where you are sitting?
 - What is the view out of your nearest window?
 - One word for how this week has gone so far.
-- What is on your screen that you are trying to finish?
+- What are you halfway through right now?
 - What is your background noise right now?
 - What is the last photo in your camera roll — describe it, do not show it.
 - Where in the house are you?

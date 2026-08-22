@@ -92,7 +92,15 @@ describe("question lists", () => {
 
     for (const bridge of bridges) {
       for (const line of bridge.content.split("\n")) {
-        const match = /^\s*(?:[-*]|\d+\.)\s+(.*\?)\s*$/.exec(line.trim());
+        // Two shapes carry a question: a plain list item ending in "?", and a
+        // numbered item whose question is bolded with prose after it —
+        // "1. **What has today been like?** Better than...". The second was
+        // invisible here, and fifteen questions across two pages had been added
+        // in that shape without ever being checked against anything.
+        const trimmed = line.trim();
+        const match =
+          /^\s*(?:[-*]|\d+\.)\s+\*\*(.+?\?)\*\*/.exec(trimmed) ??
+          /^\s*(?:[-*]|\d+\.)\s+(.*\?)\s*$/.exec(trimmed);
         if (!match) continue;
         const question = match[1].replace(/\*\*(.+?)\*\*/g, "$1").trim();
         const words = contentWords(question);

@@ -76,7 +76,7 @@ Every question below is built that way.
 - What is the team currently arguing about?
 - What is something the team is proud of that an outsider would not notice?
 - How much of the work is done together versus alone?
-- What happens when something goes wrong?
+- What does a bad day look like here?
 - Who on the team would I learn the most from?
 - What does the team do that you would change if it were up to you?
 - How do new people usually get up to speed — and how does that actually happen, rather than how it is meant to?

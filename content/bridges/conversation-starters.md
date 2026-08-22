@@ -40,6 +40,25 @@ Three things, and none of them is being interesting.
 
 **The obvious one is the good one.** `obvious-choice` says your first thought is connected to the situation and your second is connected to your ego. The opener you reach for when you stop trying to be memorable is almost always better, because the other person can tell the difference between a question and an audition.
 
+## The Ten That Work in Any Room
+
+Everything below this is sorted by the room you are in, which is the right way to use a list this long and no help at all if you are about to walk into one. So here are ten that do not care where you are — they work at a party, in a meeting, at a family table, or standing next to a stranger at a bus stop.
+
+What they have in common is the whole argument of this page: each one can be answered in four words or forty, none of them asks anybody to be interesting, and every one of them has somewhere to go afterwards.
+
+1. **What has today been like?** Better than "how are you", which has a one-word answer everybody has memorised.
+2. **What were you doing before this?** Concrete, recent, and impossible to have no answer to.
+3. **What is keeping you busy at the moment?** Works whether the honest answer is a job, a toddler or a leaking roof.
+4. **What is coming up that you are glad about?** The only future-facing one here, and reliably the one that changes somebody's face.
+5. **What got you into that?** The follow-up to almost any answer above. Origin stories are the cheapest depth there is.
+6. **What is something you have got into recently?** Enthusiasm is easy to talk about and people rarely get asked for theirs.
+7. **What would you be doing if you were not here?** Light, slightly funny, and it tells you what they actually like.
+8. **What was the last thing that made you laugh?** Trivial on purpose. Nobody has to perform, and everybody has an answer.
+9. **What is taking up most of your head right now?** The one with the most range — it goes as deep as the other person decides.
+10. **What have I not asked you that I should have?** Best kept for late in a conversation, where it is close to unfailing.
+
+If you take one thing rather than ten: **ask about now, not about them.** Questions about the present have an answer sitting ready. Questions about the person require a self-assessment first, which is why "tell me about yourself" is the worst opener in common use.
+
 ## Starters for a Room Where You Know Nobody
 
 - How do you know everyone here?
