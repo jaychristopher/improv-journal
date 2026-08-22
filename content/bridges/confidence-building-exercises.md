@@ -1,6 +1,6 @@
 ---
 title: "Confidence Building Exercises That Aren't Affirmations"
-description: "Confidence isn't a feeling you generate before acting — it's what's left after acting anyway. Seven improv exercises that train the doing, not the feeling."
+description: "Confidence is not a feeling you generate before acting — it is what accumulates after acting anyway. Seven exercises for pairs, six you can do alone."
 target_keywords:
   - { keyword: "confidence building exercises", volume: 600, difficulty: 8, traffic_potential: 700, parent: "confidence building exercises" }
   - { keyword: "confidence building activities", volume: 200, parent: "confidence building exercises" }
@@ -118,6 +118,30 @@ Public speaking deserves its own note, because the standard advice is to calm do
 `performance-state` describes the calibration performers actually aim for: nervous arousal *and* relaxed openness, together. Not the absence of activation. The physiological signature of fear and of excitement is largely the same — raised heart rate, shallow breath, heightened attention — and the difference is substantially in what you call it. Performers do not eliminate the arousal, because the arousal is the fuel. They stop labelling it as a problem.
 
 Practically, before speaking: `first-line-drill` for the opening, so the first sentence exists before you need it. `no-backspace-scene` for the hedging habit, which is far more visible to an audience than nerves are. And rehearse the recovery rather than the perfect run — an audience forgives a stumble and remembers what you did next.
+
+## If You Do Not Have Anybody to Practise With
+
+Every exercise above needs at least one other person, which is a real limitation of borrowing from a group art form. The mechanism does not need one, though. What it needs is a small action taken before you feel ready and a chance to notice that nothing collapsed — and that can be arranged alone.
+
+These are deliberately unimpressive. That is the point: the estimate updates on repetition at low stakes, not on one brave afternoon.
+
+**Act inside the hesitation.** `hesitation` on this site is the pause where the decision to act gets reconsidered into not acting. Pick one thing a day you notice yourself about to skip — a question in a meeting, a message you are drafting for the fourth time — and move while the pause is still open. The window is genuinely about a second wide.
+
+**Make one unrehearsed request.** Ask a colleague for ten minutes, a shop for a substitution, a friend for a favour, with no preamble and no justification stacked in front of it. Most people discover their fear was not of refusal but of asking plainly, and refusals turn out to cost almost nothing.
+
+**Send it on the second read, not the fifth.** The no-backspace rule applied to writing. Rereading past twice is not improving the message, it is rehearsing the reaction to it — and the versions people send on the fifth read are usually more hedged and less clear.
+
+**Take the obvious option on purpose.** Once a day, when you catch yourself reaching past the first workable answer for a cleverer one, use the first. `obvious-choice` holds outside a scene too, and this is the cheapest available rep of choosing before you are certain.
+
+**Do one thing at seventy per cent ready.** Send the draft, book the thing, start the piece. Waiting for a hundred is what the whole page is about, and seventy is usually the point past which the extra thirty comes from doing rather than preparing.
+
+**Keep a list of the times nothing happened.** This is the one people skip and it is the one that does the work. Confidence here is an accumulated estimate, and the estimate only updates on evidence you actually registered. Three words a day is enough — "asked, fine".
+
+None of these require courage in any large sense. They require doing something a second earlier than usual, repeatedly, which is the only version of this that has ever worked.
+
+### Who these exercises suit
+
+The seven above assume adult social stakes and a willingness to be briefly ridiculous in front of somebody, which is what makes them work and also what makes them unsuitable as written for children — the mechanism transfers, the format does not. For a team or a class, run the partnered ones as a warm-up rather than as a workshop — a short recurring slot does far more than one long session, for the same reason frequency beats intensity everywhere else here.
 
 ## How to Actually Use These
 
