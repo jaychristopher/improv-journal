@@ -76,6 +76,7 @@ export const CURATED_RELATED: Record<string, string[]> = {
   ],
   "how-to-be-more-creative": ["how-to-be-funny", "how-to-be-present"],
   "how-to-deal-with-conflict": ["how-to-be-a-good-listener", "emotional-safety"],
+  "how-to-be-a-better-manager": ["how-to-give-feedback", "psychological-safety", "group-dynamics"],
   "how-to-give-feedback": ["emotional-safety", "team-building-activities"],
   "what-is-improv": ["how-to-be-funny", "how-to-be-present"],
   "team-building-questions": ["team-building-activities", "emotional-safety"],

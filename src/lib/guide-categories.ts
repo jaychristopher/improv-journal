@@ -75,6 +75,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "team-bonding-activities",
       "team-building-questions",
       "5-minute-team-building",
+      "how-to-be-a-better-manager",
       "psychological-safety",
       "trust-building-exercises",
       "collaboration-skills",

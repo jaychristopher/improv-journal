@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (48)
+## Guides (49)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -36,6 +36,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [The Framing Effect: The Skill That Looks Like a Bias](https://www.physicsofconnection.com/framing-effect): The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years.
 - [Group Dynamics: What Improv Ensembles Understand](https://www.physicsofconnection.com/group-dynamics): Improv ensembles have decoded how groups actually function — status transactions, signaling patterns, coherence. Here's their operating manual.
 - [How to Keep a Conversation Going Without More Topics](https://www.physicsofconnection.com/how-to-be-a-better-conversationalist): Conversations don't die from a shortage of topics. They die from redirects. Improv shows why, and the three moves that keep an exchange alive.
+- [How to Be a Better Manager: Coach Without Taking Over](https://www.physicsofconnection.com/how-to-be-a-better-manager): Your job is not to have the best ideas — it's to make other people's work land. Improv directing has a precise method for that, and most managers invert it.
 - [How to Be a Good Friend: The Support Most People Miss](https://www.physicsofconnection.com/how-to-be-a-good-friend): Most bad friending is well-intentioned blocking — solving, redirecting, reassuring. Improv names each one, and what to do instead of all of them.
 - [How to Be a Good Listener (Not the Kind You Think)](https://www.physicsofconnection.com/how-to-be-a-good-listener): Most listening advice tells you to nod and paraphrase. Real listening — the kind improv performers stake their careers on — works completely differently.
 - [How to Be Funny (It's Not What You Think)](https://www.physicsofconnection.com/how-to-be-funny): Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor.
