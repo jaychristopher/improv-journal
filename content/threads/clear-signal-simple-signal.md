@@ -10,7 +10,7 @@ status: seed
 atoms: [be-honest, performing-cleverness, commitment, be-simple, overcomplication, continuous-signaling, emotional-honesty-scene, one-word-scene]
 tags: [principles, authenticity, bandwidth, clarity]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 So far we've talked about *receiving* — accepting offers, staying present, integrating surprises. Now we need to talk about *sending*. Because you're always transmitting, whether you intend to or not. The question is: what kind of signal are you putting out?

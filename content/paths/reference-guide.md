@@ -33,7 +33,7 @@ Every improv book comes from one tradition. This graph holds five. Every improv 
 
 **Traditions in Tension** maps where the five major schools — Johnstone, Spolin, Close/Halpern, UCB, and Annoyance/TJ & Dave — agree and disagree. Not diplomatically ("they're all great!") but specifically: on yes-and, on game, on status, on presence, on editing, on what improv is even for. Every atom in the graph carries counter-positions using this multi-tradition lens.
 
-**The System Underneath** presents the six laws that the graph is built on — the constraints that explain why improv works the way it does, drawn from cognitive science, sociology, and performance studies. These bridge the gap between practitioner language and academic frameworks.
+**The System Underneath** presents the laws that the graph is built on — the constraints that explain why improv works the way it does, drawn from cognitive science, sociology, and performance studies. These bridge the gap between practitioner language and academic frameworks.
 
 **The Physics of Every Room** is the synthesis — what improv's discoveries mean beyond the stage, including an honest assessment of what transfers and what doesn't.
 

@@ -10,7 +10,7 @@ status: seed
 atoms: [be-positive, yes-and, negation, blocking, offers, yes-and-chain]
 tags: [principles, fundamentals, show-dont-tell]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 Let's watch a scene break.

@@ -51,7 +51,7 @@ Game of the scene, editing, group scenes, callbacks, heightening. These require 
 
 The graph's own structure mirrors curriculum progression:
 - **Laws** (irreversibility, bandwidth, fragility, signaling, relational meaning, interdependence) describe the *physics* students must internalize
-- **Principles** (the 8 principles) are the *behavioral guidelines* introduced across all levels
+- **Principles** are the *behavioral guidelines* introduced across all levels
 - **Techniques** (yes-and, initiation, editing, etc.) are the *specific skills* taught level by level
 - **Exercises** are the *vehicles* at every level — and the progression through exercises IS the curriculum
 

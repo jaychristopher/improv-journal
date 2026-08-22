@@ -10,7 +10,7 @@ status: seed
 atoms: [be-present, active-listening, internal-computation, cognitive-bandwidth, be-thankful, judgment, last-word-response, gift-giving]
 tags: [principles, presence, cognition, trust]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-22"
 ---
 
 Accepting what your partner gives you is the first principle. But it assumes you actually *heard* what they gave you. And that turns out to be the harder problem.

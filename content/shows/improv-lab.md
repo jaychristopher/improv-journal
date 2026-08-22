@@ -3,7 +3,7 @@ id: improv-lab
 title: "The Improv Lab"
 description: "One concept. Three minutes. Try it tonight. Quick explainers for principles and exercises — the building blocks of the craft."
 seasons:
-  - label: "The 8 Principles"
+  - label: "The Principles"
     filter: { content_type: atom, atom_types: [principle] }
   - label: "The Exercises"
     filter: { content_type: atom, atom_types: [exercise] }

@@ -14,7 +14,7 @@ status: draft
 atoms: [model-of-their-model, belief-as-architecture, rigid-core-malleable-edge, framing-as-angle-of-approach, status, shared-reality-fragility]
 tags: [synthesis, beyond-stage, beliefs, framing, social-reality, status]
 created: "2026-05-14"
-updated: "2026-05-14"
+updated: "2026-08-22"
 ---
 
 You can't see into someone else's model of the world. You only have your model of their model — and it's almost always wrong. This is the first thing to get honest about.

@@ -10,7 +10,7 @@ status: seed
 atoms: [be-present, internal-computation, fear-of-failure, obvious-choice, mirroring, one-word-scene, blind-offer]
 tags: [presence, exercises, analytical, inner-game]
 created: "2026-04-05"
-updated: "2026-04-21"
+updated: "2026-08-22"
 ---
 
 You know the feeling. Your scene partner says something and instead of responding, your brain launches a search: *What's the funny thing to say? What's the right move? What would a good improviser do here?* By the time you've evaluated your options, the moment is gone. You deliver something competent and dead.

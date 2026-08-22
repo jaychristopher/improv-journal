@@ -5,7 +5,7 @@ status: seed
 atoms: [backline-craft, group-mind-cultivation, ensemble, group-mind, trust, support-moves, interdependence]
 tags: [ensemble, mastery, group-mind, advanced]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 Every improv student learns "make your partner look good." At the mastery level, you stop thinking about it — your partner's success becomes indistinguishable from your own. The ensemble becomes a single creative intelligence, not through mysticism but through deep mutual attention refined over thousands of hours.

@@ -31,7 +31,7 @@ describe("shows", () => {
   it("improv-lab has principle and exercise episodes", async () => {
     const seasons = await getEpisodesForShow("improv-lab");
     expect(seasons.length).toBe(2);
-    expect(seasons[0].label).toBe("The 8 Principles");
+    expect(seasons[0].label).toBe("The Principles");
     expect(seasons[1].label).toBe("The Exercises");
     expect(seasons[0].episodes.length).toBeGreaterThan(0);
     expect(seasons[1].episodes.length).toBeGreaterThan(0);

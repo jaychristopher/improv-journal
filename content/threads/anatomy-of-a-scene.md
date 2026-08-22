@@ -5,7 +5,7 @@ status: draft
 atoms: [initiation, relationship, want, base-reality, environment, scene-structure, two-person-scene, group-scene, opening, suggestion, space-work, endowment, do-feel-say]
 tags: [fundamentals, scene-work, definitions, structure]
 created: "2026-04-07"
-updated: "2026-04-07"
+updated: "2026-08-22"
 ---
 
 Before game, before format, before any of the advanced mechanics — there is the scene. Two people, a space, a relationship, and something at stake. Everything in improv is built from this unit.
