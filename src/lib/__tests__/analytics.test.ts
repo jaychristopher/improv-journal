@@ -9,7 +9,7 @@ vi.mock("@vercel/analytics", () => ({
   track: trackMock,
 }));
 
-vi.mock("posthog-js", () => ({
+vi.mock("../posthog", () => ({
   default: {
     capture: captureMock,
   },

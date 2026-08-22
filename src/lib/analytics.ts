@@ -1,5 +1,6 @@
 import { track } from "@vercel/analytics";
-import posthog from "posthog-js";
+
+import posthog from "./posthog";
 
 export type AnalyticsScalar = string | number | boolean | null;
 export type AnalyticsProperties = Record<string, AnalyticsScalar>;
