@@ -1,6 +1,6 @@
 ---
 title: "Trust Building Exercises That Aren't Trust Falls"
-description: "Trust isn't built by dramatic gestures. It's built by small, repeated, reliable exchanges — which is exactly what these seven improv exercises rehearse."
+description: "Trust is not built by dramatic gestures but by small repeated exchanges. Seven exercises that rehearse them — for a team, or for two people."
 target_keywords:
   - { keyword: "trust building exercises", volume: 200, difficulty: 6, traffic_potential: 700, parent: "trust exercises" }
   - { keyword: "trust building activities", volume: 150, parent: "trust exercises" }
@@ -103,6 +103,26 @@ This trains peripheral rather than partner-focused attention, which is the versi
 Deliberately establish conflicting realities — one person in a kitchen, the other on a boat — then repair it without stopping or explaining.
 
 This is the one most trust exercises omit, and it is the one that matters most. Trust is not the absence of rupture; groups that have never had one have untested trust. What builds it is a rupture that gets repaired without anyone being punished, which is why `fracture-repair-drill` belongs in a trust session rather than a scene-work one.
+
+## Using These With One Other Person
+
+Six of the seven are two-person exercises. Only group mind cultivation needs a room. So most of this works between a couple, two friends, a manager and a report, or any pair whose trust has gone thin — and the pair version is in some ways the harder one, because there is nowhere to hide in a group of two and no one else to carry a round.
+
+What changes is not the exercise but the ordering and the stakes.
+
+**Start further down than you would with a team.** A group can begin at gift giving because everybody is slightly embarrassed together. Two people who already have history skip the embarrassment and arrive at the content immediately, which sounds like an advantage and is not — it removes the low-stakes rungs that make the high-stakes ones survivable. Do the silly ones anyway, and do them for longer than feels necessary.
+
+**Mirroring is the one to start with, and it will feel absurd.** Two people who know each other well will laugh, and the laugh is the exercise working: sustained mutual attention is uncomfortable between intimates in a way it is not between colleagues, precisely because there is more to see.
+
+**Do not run the honesty scene to solve a live argument.** These rehearse a capacity; they do not adjudicate a dispute. Using an exercise to raise something you have been avoiding turns the exercise into the argument, and afterwards the pair has evidence that this kind of thing is a trap.
+
+**Take the rupture drill seriously as a pair.** Fracture repair is the only one here that rehearses recovery rather than accumulation. A pair that has never repaired anything does not have strong trust, it has untested trust, and the first real rupture is where they find that out.
+
+### Where this page stops
+
+These exercises train the ordinary accumulation of trust and the recovery from ordinary damage — a commitment dropped, something said badly in a meeting, a confidence passed on. **They are not a method for rebuilding a relationship after a serious breach**, and treating them as one is unfair to both people involved. That situation needs time, changed behaviour and usually a third party, not a drill.
+
+For the case where the problem is that being honest does not feel survivable in the first place, see [emotional safety](/emotional-safety). For the friendship version, see [how to be a good friend](/how-to-be-a-good-friend).
 
 ## Running These With a Team
 
