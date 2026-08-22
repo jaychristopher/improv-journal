@@ -117,13 +117,14 @@ export default async function GuideCategoryPage({
         <ul className="grid gap-2 sm:grid-cols-2">
           {others.map((other) => (
             <li key={other.slug}>
-              <Link
-                href={`/topics/${other.slug}`}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block h-full rounded-lg border p-3 transition-colors"
-              >
-                <span className="block text-sm font-medium">{other.title}</span>
+              <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative h-full rounded-lg border p-3 transition-colors">
+                <span className="block text-sm font-medium">
+                  <Link href={`/topics/${other.slug}`} className="after:absolute after:inset-0">
+                    {other.title}
+                  </Link>
+                </span>
                 <span className="text-foreground/60 mt-1 block text-xs">{other.description}</span>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

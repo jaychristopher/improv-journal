@@ -59,14 +59,17 @@ export default function ResourcesPage() {
 
       <div className="space-y-4">
         {SECTIONS.map((s) => (
-          <Link
+          <div
             key={s.href}
-            href={s.href}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
           >
-            <h2 className="font-semibold">{s.label}</h2>
+            <h2 className="font-semibold">
+              <Link href={s.href} className="after:absolute after:inset-0">
+                {s.label}
+              </Link>
+            </h2>
             <p className="text-foreground/50 mt-1 text-sm">{s.desc}</p>
-          </Link>
+          </div>
         ))}
       </div>
     </main>

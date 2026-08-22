@@ -311,10 +311,9 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
 
         <div className="space-y-4">
           {threads.map((thread, index) => (
-            <Link
+            <div
               key={thread.id}
-              href={`/threads/${thread.id}`}
-              className="border-foreground/10 bg-surface hover:border-foreground/30 group block rounded-lg border p-5 transition-colors"
+              className="border-foreground/10 bg-surface hover:border-foreground/30 group relative rounded-lg border p-5 transition-colors"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1">
@@ -324,7 +323,11 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
                     </span>
                     <SyllabusCheckmark threadId={thread.id} />
                   </div>
-                  <h3 className="mt-0.5 font-semibold group-hover:underline">{thread.title}</h3>
+                  <h3 className="mt-0.5 font-semibold group-hover:underline">
+                    <Link href={`/threads/${thread.id}`} className="after:absolute after:inset-0">
+                      {thread.title}
+                    </Link>
+                  </h3>
                   {thread.desc && (
                     <p className="text-foreground/50 mt-1 line-clamp-2 text-sm">{thread.desc}</p>
                   )}
@@ -373,7 +376,7 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
                   </span>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

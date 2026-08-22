@@ -202,16 +202,19 @@ function SearchResults() {
 
       <div className="space-y-3">
         {filtered.map((result) => (
-          <Link
+          <div
             key={result.id}
-            href={result.url}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors"
           >
-            <h3 className="text-sm font-medium">{result.title}</h3>
+            <h3 className="text-sm font-medium">
+              <Link href={result.url} className="after:absolute after:inset-0">
+                {result.title}
+              </Link>
+            </h3>
             <span className="text-foreground/30 mt-0.5 block text-xs">
               {TYPE_LABELS[result.type] ?? result.type}
             </span>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

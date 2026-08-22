@@ -147,16 +147,22 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
               </p>
               <div className="space-y-3">
                 {beginnerLifePaths.map((path) => (
-                  <Link
+                  <div
                     key={path.frontmatter.id}
-                    href={`/paths/${path.frontmatter.id}`}
-                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
                   >
-                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <h3 className="font-semibold">
+                      <Link
+                        href={`/paths/${path.frontmatter.id}`}
+                        className="after:absolute after:inset-0"
+                      >
+                        {path.frontmatter.title}
+                      </Link>
+                    </h3>
                     <p className="text-foreground/50 mt-1 text-sm">
                       {path.frontmatter.description}
                     </p>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </section>
@@ -170,16 +176,22 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
               </p>
               <div className="space-y-3">
                 {beginnerImprovPaths.map((path) => (
-                  <Link
+                  <div
                     key={path.frontmatter.id}
-                    href={`/paths/${path.frontmatter.id}`}
-                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
                   >
-                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <h3 className="font-semibold">
+                      <Link
+                        href={`/paths/${path.frontmatter.id}`}
+                        className="after:absolute after:inset-0"
+                      >
+                        {path.frontmatter.title}
+                      </Link>
+                    </h3>
                     <p className="text-foreground/50 mt-1 text-sm">
                       {path.frontmatter.description}
                     </p>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </section>
@@ -190,16 +202,22 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
               <h2 className="mb-4 text-lg font-semibold">More paths</h2>
               <div className="space-y-3">
                 {beginnerOtherPaths.map((path) => (
-                  <Link
+                  <div
                     key={path.frontmatter.id}
-                    href={`/paths/${path.frontmatter.id}`}
-                    className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                    className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
                   >
-                    <h3 className="font-semibold">{path.frontmatter.title}</h3>
+                    <h3 className="font-semibold">
+                      <Link
+                        href={`/paths/${path.frontmatter.id}`}
+                        className="after:absolute after:inset-0"
+                      >
+                        {path.frontmatter.title}
+                      </Link>
+                    </h3>
                     <p className="text-foreground/50 mt-1 text-sm">
                       {path.frontmatter.description}
                     </p>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </section>
@@ -209,13 +227,17 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
         <>
           <div className="space-y-4">
             {orderedPaths.map((path) => (
-              <Link
+              <div
                 key={path.frontmatter.id}
-                href={`/paths/${path.frontmatter.id}`}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
               >
                 <h2 className="flex items-center gap-2 font-semibold">
-                  {path.frontmatter.title}
+                  <Link
+                    href={`/paths/${path.frontmatter.id}`}
+                    className="after:absolute after:inset-0"
+                  >
+                    {path.frontmatter.title}
+                  </Link>
                   {isRecommendedPath(path.frontmatter.id, typedAudience) && (
                     <span className="bg-foreground/10 text-foreground/50 rounded-full px-2 py-0.5 text-xs">
                       {recommendation.label}
@@ -223,7 +245,7 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
                   )}
                 </h2>
                 <p className="text-foreground/50 mt-1 text-sm">{path.frontmatter.description}</p>
-              </Link>
+              </div>
             ))}
           </div>
 

@@ -8,7 +8,7 @@ seasons:
   - label: "The Exercises"
     filter: { content_type: atom, atom_types: [exercise] }
 created: "2026-04-07"
-updated: "2026-04-07"
+updated: "2026-08-22"
 ---
 
 Before class, during warm-up, on the walk home after a show. Each episode explains one concept — what it is, why it matters, how to practice it — in under three minutes.

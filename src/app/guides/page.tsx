@@ -71,14 +71,17 @@ export default async function GuidesPage() {
           <h2 className="text-foreground/80 text-lg font-semibold">More Guides</h2>
           <div className="mt-4 space-y-3">
             {uncategorized.map((b) => (
-              <Link
+              <div
                 key={b.slug}
-                href={`/${b.slug}`}
-                className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+                className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
               >
-                <h3 className="font-semibold">{b.frontmatter.title}</h3>
+                <h3 className="font-semibold">
+                  <Link href={`/${b.slug}`} className="after:absolute after:inset-0">
+                    {b.frontmatter.title}
+                  </Link>
+                </h3>
                 <p className="text-foreground/50 mt-1 text-sm">{b.frontmatter.description}</p>
-              </Link>
+              </div>
             ))}
           </div>
         </section>

@@ -56,17 +56,23 @@ export default async function PrinciplesPage() {
 
       <div className="space-y-4">
         {principles.map((a) => (
-          <Link
+          <div
             key={a.frontmatter.id}
-            href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
           >
-            <h3 className="font-semibold">{a.frontmatter.title}</h3>
+            <h3 className="font-semibold">
+              <Link
+                href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
+                className="after:absolute after:inset-0"
+              >
+                {a.frontmatter.title}
+              </Link>
+            </h3>
             <p className="text-foreground/50 mt-1 line-clamp-2 text-sm">
               {leadParagraph(stripLeadLabel(a.content), 180)}
               ...
             </p>
-          </Link>
+          </div>
         ))}
       </div>
     </main>

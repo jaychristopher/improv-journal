@@ -1,6 +1,6 @@
 ---
 id: the-inner-game-expanded
-title: "The Inner Game Expanded: Depth, Vulnerability, and What Transfers"
+title: "The Inner Game Expanded: Depth, Vulnerability, Transfer"
 lesson_goal: "Extend inner-game work into vulnerability, support, signal coherence, and transfer beyond the stage."
 key_takeaway: "Technique becomes moving when emotional honesty, support, and clear signals make real risk possible."
 common_mistake: "Trying to perform vulnerability instead of letting real response and support create it."

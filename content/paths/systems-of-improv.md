@@ -22,7 +22,7 @@ threads:
   - quieting-the-planning-mind
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 You think too much. Everyone's told you. Your improv teacher, your scene partners, maybe even yourself at 2am after a rough show. "Get out of your head." "Just do it." "Stop planning."

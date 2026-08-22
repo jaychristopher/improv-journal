@@ -60,17 +60,20 @@ export default async function TraditionsPage() {
 
       <div className="space-y-4">
         {traditionsWithCounts.map((t) => (
-          <Link
+          <div
             key={t.name}
-            href={`/traditions/${t.name}`}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-5 transition-colors"
+            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-5 transition-colors"
           >
             <div className="flex items-baseline justify-between">
-              <h2 className="text-lg font-semibold">{t.label}</h2>
+              <h2 className="text-lg font-semibold">
+                <Link href={`/traditions/${t.name}`} className="after:absolute after:inset-0">
+                  {t.label}
+                </Link>
+              </h2>
               <span className="text-foreground/40 text-sm">{t.count} concepts</span>
             </div>
             <p className="text-foreground/50 mt-1 text-sm">{t.desc}</p>
-          </Link>
+          </div>
         ))}
       </div>
     </main>

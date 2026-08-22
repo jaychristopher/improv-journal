@@ -22,7 +22,7 @@ threads:
   - presence-and-commitment
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 You've been doing improv for years. You're good at it. Someone asked you to teach a class. You said yes. And now you're staring at a blank lesson plan wondering why knowing how to ride a bicycle doesn't make you a cycling instructor.

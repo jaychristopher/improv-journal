@@ -22,7 +22,7 @@ threads:
   - diagnosing-scene-failure
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-22"
 ---
 
 This isn't a path in the usual sense. It's an index — a way into a knowledge graph designed for people who write, teach, research, or think seriously about improvisation.
