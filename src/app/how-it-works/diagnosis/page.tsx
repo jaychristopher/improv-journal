@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("When It Breaks"),
@@ -19,6 +21,24 @@ export default async function DiagnosisPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <CollectionJsonLd
+        name="When It Breaks: Improv Failure Modes and Recovery"
+        description="Collapse modes, failure patterns, and recovery — the diagnostic vocabulary for naming what went wrong and finding the way back."
+        url="/how-it-works/diagnosis"
+        partOf="/how-it-works"
+        items={[...frameworks, ...antipatterns, ...patterns].map((a) => ({
+          name: a.frontmatter.title,
+          url: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+          description: leadParagraph(stripLeadLabel(a.content), 180),
+        }))}
+      />
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "How It Works", href: "/how-it-works" },
+          { label: "Diagnosis" },
+        ]}
+      />
       <header className="mb-12">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">
           system · diagnosis
@@ -41,6 +61,9 @@ export default async function DiagnosisPage() {
                 className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-4 transition-colors"
               >
                 <h3 className="font-medium">{a.frontmatter.title}</h3>
+                <p className="text-foreground/60 mt-1 text-sm">
+                  {leadParagraph(stripLeadLabel(a.content), 180)}
+                </p>
               </Link>
             ))}
           </div>
@@ -52,14 +75,17 @@ export default async function DiagnosisPage() {
         <p className="text-foreground/40 mb-4 text-sm">
           Named failure modes. You can&apos;t fix what you can&apos;t name.
         </p>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="space-y-3">
           {antipatterns.map((a) => (
             <Link
               key={a.frontmatter.id}
               href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
               className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-3 transition-colors"
             >
-              <span className="text-sm font-medium">{a.frontmatter.title}</span>
+              <span className="block text-sm font-medium">{a.frontmatter.title}</span>
+              <span className="text-foreground/60 mt-1 block text-xs">
+                {leadParagraph(stripLeadLabel(a.content), 180)}
+              </span>
             </Link>
           ))}
         </div>
@@ -70,14 +96,17 @@ export default async function DiagnosisPage() {
         <p className="text-foreground/40 mb-4 text-sm">
           Emergent dynamics — heightening, discovery, recovery.
         </p>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="space-y-3">
           {patterns.map((a) => (
             <Link
               key={a.frontmatter.id}
               href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
               className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-3 transition-colors"
             >
-              <span className="text-sm font-medium">{a.frontmatter.title}</span>
+              <span className="block text-sm font-medium">{a.frontmatter.title}</span>
+              <span className="text-foreground/60 mt-1 block text-xs">
+                {leadParagraph(stripLeadLabel(a.content), 180)}
+              </span>
             </Link>
           ))}
         </div>

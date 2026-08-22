@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Rules of Improv: 8 Principles That Make Connection Work"),
@@ -17,6 +19,24 @@ export default async function PrinciplesPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <CollectionJsonLd
+        name="The 8 Principles of Improv"
+        description="Behavioral guidelines derived from the physics of connection — structural commands that prevent shared reality from collapsing."
+        url="/how-it-works/principles"
+        partOf="/how-it-works"
+        items={principles.map((a) => ({
+          name: a.frontmatter.title,
+          url: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+          description: leadParagraph(stripLeadLabel(a.content), 180),
+        }))}
+      />
+      <Breadcrumb
+        crumbs={[
+          { label: "Home", href: "/" },
+          { label: "How It Works", href: "/how-it-works" },
+          { label: "Principles" },
+        ]}
+      />
       <header className="mb-12">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">
           system · principles
@@ -37,12 +57,7 @@ export default async function PrinciplesPage() {
           >
             <h3 className="font-semibold">{a.frontmatter.title}</h3>
             <p className="text-foreground/50 mt-1 line-clamp-2 text-sm">
-              {a.content
-                .replace(/^---[\s\S]*?---\n*/m, "")
-                .replace(/^#{1,6}\s+.*$/gm, "")
-                .replace(/\*\*[^*]+\*\*/g, "")
-                .trim()
-                .substring(0, 150)}
+              {leadParagraph(stripLeadLabel(a.content), 180)}
               ...
             </p>
           </Link>

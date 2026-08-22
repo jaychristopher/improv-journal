@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Techniques"),
@@ -46,10 +47,18 @@ export default async function TechniquesPage() {
     title: a.frontmatter.title,
     href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
     tags: a.frontmatter.tags ?? [],
+    preview: leadParagraph(stripLeadLabel(a.content), 180),
   }));
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <CollectionJsonLd
+        name="Improv Techniques"
+        description="The specific moves — how to listen, initiate, edit, support, heighten, and recover in improv scenes."
+        url="/practice/techniques"
+        partOf="/practice"
+        items={items.map((i) => ({ name: i.title, url: i.href, description: i.preview }))}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
@@ -63,7 +72,7 @@ export default async function TechniquesPage() {
           The specific moves — how to listen, initiate, edit, support, heighten, and recover.
         </p>
       </header>
-      <TagFilter items={items} filterGroups={FILTER_GROUPS} showPreview={false} />
+      <TagFilter items={items} filterGroups={FILTER_GROUPS} />
     </main>
   );
 }

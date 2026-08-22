@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Exercises"),
@@ -43,16 +44,18 @@ export default async function ExercisesPage() {
     title: a.frontmatter.title,
     href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
     tags: a.frontmatter.tags ?? [],
-    preview: a.content
-      .replace(/^---[\s\S]*?---\n*/m, "")
-      .replace(/^#{1,6}\s+.*$/gm, "")
-      .replace(/\*\*[^*]+\*\*/g, "")
-      .trim()
-      .substring(0, 150),
+    preview: leadParagraph(stripLeadLabel(a.content), 180),
   }));
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <CollectionJsonLd
+        name="Improv Exercises"
+        description="Drills for training specific improv skills — presence, listening, ensemble, emotion, physicality, and recovery."
+        url="/practice/exercises"
+        partOf="/practice"
+        items={items.map((i) => ({ name: i.title, url: i.href, description: i.preview }))}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

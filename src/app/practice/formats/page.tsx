@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Formats"),
@@ -48,16 +49,18 @@ export default async function FormatsPage() {
     title: a.frontmatter.title,
     href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
     tags: a.frontmatter.tags ?? [],
-    preview: a.content
-      .replace(/^---[\s\S]*?---\n*/m, "")
-      .replace(/^#{1,6}\s+.*$/gm, "")
-      .replace(/\*\*[^*]+\*\*/g, "")
-      .trim()
-      .substring(0, 150),
+    preview: leadParagraph(stripLeadLabel(a.content), 180),
   }));
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <CollectionJsonLd
+        name="Improv Formats"
+        description="The structures improv is performed in — short-form games and long-form forms, and what each one asks of a cast."
+        url="/practice/formats"
+        partOf="/practice"
+        items={items.map((i) => ({ name: i.title, url: i.href, description: i.preview }))}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

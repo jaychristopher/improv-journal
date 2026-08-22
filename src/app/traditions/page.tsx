@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomsForTradition, getTraditionNames } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
@@ -46,6 +47,7 @@ export default async function TraditionsPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Traditions" }]} />
       <header className="mb-12">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">the lineages</span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">Traditions in Tension</h1>

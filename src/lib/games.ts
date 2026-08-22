@@ -13,19 +13,7 @@
  */
 
 import { getAtomUrl, loadAtoms } from "./content";
-import { leadParagraph } from "./seo";
-
-/**
- * Exercise atoms open with a bold "Trains:" label naming the skill built.
- * Useful on the page itself, but as a description it reads as a stray label,
- * so the prefix is dropped and the sentence it introduces is kept.
- */
-function stripLeadLabel(markdownContent: string): string {
-  const match = /^---[\s\S]*?---\n*/m.exec(markdownContent);
-  const frontmatter = match ? match[0] : "";
-  const body = markdownContent.slice(frontmatter.length);
-  return frontmatter + body.replace(/^\s*\*\*[^*]+\*\*:?\s*/, "");
-}
+import { leadParagraph, stripLeadLabel } from "./seo";
 
 export interface ImprovGame {
   id: string;

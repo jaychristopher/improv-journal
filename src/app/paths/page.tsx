@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { getRecommendedPath } from "@/lib/path-recommendations";
 import { pageTitle } from "@/lib/seo";
 
@@ -98,6 +99,7 @@ export default function PathsIndexPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Learning Paths" }]} />
       <header className="mb-12">
         <h1 className="text-3xl font-bold tracking-tight">Learning Paths</h1>
         <p className="text-foreground/60 mt-2">
