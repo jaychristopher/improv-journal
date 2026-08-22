@@ -64,6 +64,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "how-to-be-a-good-friend",
       "questions-to-ask-friends",
       "questions-to-get-to-know-someone",
+      "conversation-starters",
       "deep-questions-to-ask",
       "how-to-be-a-good-listener",
       "interpersonal-communication-skills",
