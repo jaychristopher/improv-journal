@@ -1,6 +1,6 @@
 ---
 title: "Active Listening Exercises That Actually Train It"
-description: "Most listening exercises rehearse looking attentive. These seven make composing your reply structurally impossible — which is the part that has to change."
+description: "Most listening exercises rehearse looking attentive. These eleven make composing your reply structurally impossible — seven for pairs, four for a group."
 target_keywords:
   - { keyword: "active listening exercises", volume: 700, difficulty: 3, traffic_potential: 1200, parent: "active listening activities" }
   - { keyword: "listening exercises", volume: 400, parent: "active listening exercises" }
@@ -23,7 +23,7 @@ Most active listening exercises train the wrong thing. Paraphrase what your part
 
 Improv has a harder constraint. A performer who is planning cannot function, because there is no script to plan against, and the failure is immediate and public. So the exercises below share one property: they make composing ahead structurally impossible rather than merely discouraged. You are not asked to listen better. You are put in a position where not listening does not work.
 
-All seven take between two and ten minutes, and all but one need only two people.
+The first seven take between two and ten minutes and need only two people. Four more, for running this with a whole group, follow them.
 
 ## 1. Last Word Response
 
@@ -102,6 +102,68 @@ See `group-mind-cultivation`.
 **Why it works:** Every other exercise trains prevention. This one trains the far more common situation: you already missed it, and the useful question is what to do next rather than how to have avoided it.
 
 See `fracture-repair-drill`.
+
+## Running These With a Whole Group
+
+The seven above are built for two people, which is the right scale for learning and the wrong one for a room of twenty. Pair work in a large group is hard to supervise and easy to coast through — one person carries the exercise while the other performs participation, which is the exact failure the page opens by describing.
+
+These four work in a circle at any size. The reason they hold up is structural: the turn arrives whether or not you were ready for it, and in a ring everyone can see who was not.
+
+## 8. Zip Zap Zop
+
+**What it trains:** attention that can be redirected with no warning, and a point of focus that sits in the room instead of inside anyone's head.
+
+**How to run it:** Standing circle. One person throws a sound at another, choosing them unmistakably — a point, and eyes locked on — and the receiver throws the next sound onward without pausing. Five minutes, from about eight people upward.
+
+**Why it works:** the turn is unpredictable, so the only way to be ready is to watch without stopping. It applies the same constraint as the pair exercises — no useful preparation is possible — at the scale of a whole room.
+
+**What to watch for:** speed being mistaken for the point. A fast round with unfocused eye contact trains nothing. The send has to arrive at one identifiable person, and slowing down is usually what fixes a round that has gone loose.
+
+See `zip-zap-zop` for the full version, including why it is the most commonly mis-run warm-up there is.
+
+## 9. Pass the Clap
+
+**What it trains:** reception timed to another person exactly rather than roughly.
+
+**How to run it:** Circle. Each pair of neighbours claps together, aiming at a single sound rather than two near-misses, and it travels round. Three minutes.
+
+**Why it works:** a shared instant cannot be reached by deciding on it. You have to read the other person's preparation and commit at the same moment, which is reception as a physical act — and much harder to fake than nodding.
+
+**What to watch for:** the group speeding up to prove it can. Two claps a fraction apart is the failure, and it is audible, so let the sound itself do the correcting.
+
+See `pass-the-clap` for the full version and its progressions.
+
+## 10. The Machine
+
+**What it trains:** building on what is already in front of you rather than inserting what you arrived with.
+
+**How to run it:** One person begins a repeating action with a sound attached. The others attach themselves one by one, each new part having to fit what is already turning. Five minutes, any size.
+
+**Why it works:** joining well is impossible without having watched. The people who struggle are not the shy ones — they are the ones who decided what they were going to do while somebody else was still establishing the shape.
+
+**What to watch for:** additions that ignore the existing rhythm. It is the clearest possible demonstration of what a reply composed in advance looks like from outside.
+
+See `the-machine` for the full version and the ways it usually stalls.
+
+## 11. Questions Only
+
+**What it trains:** hearing how much of an ordinary exchange is deferral rather than reception.
+
+**How to run it:** Two at a time with the rest watching. Every line must be a genuine question; a player is out on a statement, a repeat, a long hesitation, or a question that does not follow from the last one. Ten minutes for a whole group.
+
+**Why it works:** the last condition is the one that does the teaching. Asking anything at all is easy; asking something that genuinely follows requires having taken in the previous line, and the failures are obvious to everyone watching.
+
+**What to watch for:** treating it as a game to survive rather than a diagnostic. It is not a habit worth keeping — questions are not automatically good listening — and its value is in what it exposes about the conversations you already have.
+
+See `questions-only` for the full version and the argument about when it stops helping.
+
+### Which to pick
+
+**For a team meeting or workshop**, the circle games open a session better than pair work does, because nobody has to be interesting in front of anyone and the warm-up cost is low. Run one for five minutes, then move to the pairs.
+
+**For a classroom**, the same four are the safest starting point, for the same reason they work in drama teaching: none of them asks a young person to be funny or verbal in front of a watching group.
+
+**For two people who actually want to change how they listen**, ignore all of this and use the seven above. Group games build the attention; pairs are where the habit gets rebuilt.
 
 ## How to Get Anything Out of These
 
