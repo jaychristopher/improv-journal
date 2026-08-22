@@ -2,50 +2,301 @@
 
 > Seven laws, nine principles — discovered on the improv stage, applicable everywhere. A knowledge graph for the art of human connection.
 
-The Physics of Connection is an educational site that applies improv principles to everyday human challenges: overthinking, awkwardness, team dynamics, listening, assertiveness, public speaking, and more. All content is grounded in 60 years of improv performance science across five major traditions (Johnstone, Spolin, Close/Halpern, UCB, Annoyance/TJ & Dave).
+The Physics of Connection applies improv principles to everyday human challenges: overthinking, awkwardness, team dynamics, listening, assertiveness, public speaking, and more. The material is grounded in roughly sixty years of improv practice across five traditions (Johnstone, Spolin, Close/Halpern, UCB, Annoyance/TJ & Dave), and cites its primary sources.
 
-## Content Structure
+This file is generated from the site's content, so it lists everything rather than a selection.
 
-- **Bridges (Guides)**: Problem-focused articles connecting improv principles to specific life challenges. These are the best entry points for most questions.
-- **Paths**: Structured learning journeys for specific audiences (beginner, intermediate, performer, teacher, advanced).
-- **Threads**: Deep-dive lessons within learning paths.
-- **Atoms**: The smallest meaningful units of improv knowledge — principles, techniques, exercises, definitions, and patterns.
+## Start here
 
-## Key Topics
+- [Guides](https://www.physicsofconnection.com/guides): Problem-first entry points connecting a difficulty to improv practice.
+- [Personal Growth guides](https://www.physicsofconnection.com/topics/personal-growth): Overthinking, confidence, creativity, fear, presence.
+- [Relationships & Communication guides](https://www.physicsofconnection.com/topics/communication): Listening, conversation, conflict, connection.
+- [Teams & Leadership guides](https://www.physicsofconnection.com/topics/teams): Team building, trust, collaboration, feedback.
+- [Improv Skills guides](https://www.physicsofconnection.com/topics/improv-skills): Fundamentals, practice, and getting unstuck.
+- [How It Works](https://www.physicsofconnection.com/how-it-works): The laws and principles the whole system rests on.
+- [Practice](https://www.physicsofconnection.com/practice): Exercises, techniques, formats and vocabulary.
+- [Improv Games](https://www.physicsofconnection.com/improv-games): Every improv game and exercise, by level and skill focus.
+- [Improv Glossary](https://www.physicsofconnection.com/practice/vocabulary): Improv terms, each defined in one line.
+- [Reading List](https://www.physicsofconnection.com/library): The books and sources behind the material.
+- [Learning Paths](https://www.physicsofconnection.com/paths): Structured journeys for a particular kind of reader.
+- [Traditions](https://www.physicsofconnection.com/traditions): Johnstone, Spolin, Close, UCB and Annoyance compared.
+- [Listen](https://www.physicsofconnection.com/listen): The material as podcast audio.
+- [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
+- [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-- Active listening and communication skills
-- Team building, trust, and psychological safety
-- Overthinking, presence, and mindfulness
-- Status dynamics and assertiveness
-- Fear of public speaking and stage fright
-- Creativity, spontaneity, and letting go of control
-- Feedback, conflict resolution, and difficult conversations
-- Improv theory, traditions, and pedagogy
+## Guides (42)
 
-## Interactive Tools
+- [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
+- [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
+- [Collaboration Skills: What Improv Ensembles Know](https://www.physicsofconnection.com/collaboration-skills): Real collaboration isn't brainstorming or consensus — it's building on each other's ideas in real time. Improv ensembles train this skill every night.
+- [Emotional Safety: How Ensembles Build Real Trust](https://www.physicsofconnection.com/emotional-safety): Emotional safety isn't a policy — it's a practice. Improv ensembles have spent 60 years developing specific techniques to create it. Here's what works.
+- [Fear of Public Speaking: What Performers Know](https://www.physicsofconnection.com/fear-of-public-speaking): The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how.
+- [The Framing Effect: The Skill That Looks Like a Bias](https://www.physicsofconnection.com/framing-effect): The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years.
+- [Group Dynamics: What Improv Ensembles Understand](https://www.physicsofconnection.com/group-dynamics): Improv ensembles have decoded how groups actually function — status transactions, signaling patterns, coherence. Here's their operating manual.
+- [How to Be a Better Conversationalist: The Improv Approach](https://www.physicsofconnection.com/how-to-be-a-better-conversationalist): Great conversationalists aren't charismatic — they're responsive. Improv reveals the three skills behind it: receiving, building, committing.
+- [How to Be a Good Listener (Not the Kind You Think)](https://www.physicsofconnection.com/how-to-be-a-good-listener): Most listening advice tells you to nod and paraphrase. Real listening — the kind improv performers stake their careers on — works completely differently.
+- [How to Be Funny (It's Not What You Think)](https://www.physicsofconnection.com/how-to-be-funny): Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor.
+- [How to Be Less Awkward: Lessons from Improvisers](https://www.physicsofconnection.com/how-to-be-less-awkward): Awkwardness isn't a personality trait — it's a specific attention problem. Improv performers fix it by redirecting focus from self-monitoring to connection.
+- [How to Be More Assertive: The Status Secret from Improv](https://www.physicsofconnection.com/how-to-be-more-assertive): Assertiveness isn't aggression — it's a physical and vocal pattern improv calls 'status.' It's learnable, and doesn't require changing who you are.
+- [How to Be More Charismatic: The Presence Framework](https://www.physicsofconnection.com/how-to-be-more-charismatic): Charisma isn't a trait — it's a specific combination of presence, commitment, and status fluency. Improv performers train all three. Here's how.
+- [How to Be More Confident (Without Faking It)](https://www.physicsofconnection.com/how-to-be-more-confident): Confidence isn't a feeling you summon — it's a byproduct of commitment. Full commitment to any choice reads as confidence. Half-commitment reads as doubt.
+- [How to Be More Creative: Stop Trying to Be Original](https://www.physicsofconnection.com/how-to-be-more-creative): Creativity isn't originality — it's the willingness to follow the obvious. The more obvious you are, the more original you appear. Here's the science.
+- [How to Be Present: The Bandwidth Trick That Actually Works](https://www.physicsofconnection.com/how-to-be-present): Presence isn't a spiritual practice — it's a bandwidth allocation problem. Your brain has finite processing capacity, and internal chatter hogs it.
+- [How to Be Vulnerable (Without Getting Destroyed)](https://www.physicsofconnection.com/how-to-be-vulnerable): Vulnerability isn't emotional exhibition — it's the willingness to make an offer that could be rejected. The secret is building the container first.
+- [How to Be Witty: The Improv Secret to Quick, Sharp Responses](https://www.physicsofconnection.com/how-to-be-witty): Witty people aren't faster thinkers — they're less filtered ones. Improv training reveals why your best responses come when you stop trying to be clever.
+- [How to Deal with Conflict: The Acceptance Paradox](https://www.physicsofconnection.com/how-to-deal-with-conflict): Most conflict advice says 'communicate better' without explaining the mechanism. Conflict escalates when people block each other's reality. Here's the fix.
+- [How to Deal with Rejection: Failing Forward](https://www.physicsofconnection.com/how-to-deal-with-rejection): Rejection hurts because your brain treats social exclusion like physical pain. Improv performers face it nightly and have a system for metabolizing it.
+- [How to Get Better at Improv: A Practitioner's Guide](https://www.physicsofconnection.com/how-to-get-better-at-improv): Getting better at improv isn't about doing more shows. It's about diagnosing what's actually breaking and practicing the specific skill that fixes it.
+- [How to Give Feedback That Actually Changes Behavior](https://www.physicsofconnection.com/how-to-give-feedback): Most feedback describes problems without creating conditions for change. Design experiences where the right behavior emerges naturally, then name it.
+- [How to Have Difficult Conversations: The Improv Approach](https://www.physicsofconnection.com/how-to-have-difficult-conversations): Difficult conversations fail when people plan scripts and defend positions. Improv teaches another way: listen first, respond to what's real.
+- [How to Let Go of Control: What Improv Teaches](https://www.physicsofconnection.com/how-to-let-go-of-control): Control feels safe but kills connection. Improv performers surrender it every night — and the results beat anything they could have planned.
+- [How to Make Small Talk: The Improv Method](https://www.physicsofconnection.com/how-to-make-small-talk): Small talk fails when you treat it as performance. Improv reveals it's actually a collaboration — and the skills that make it work are learnable.
+- [How to Overcome Fear of Failure: The Improv Reframe](https://www.physicsofconnection.com/how-to-overcome-fear-of-failure): Fear of failure is really fear of irreversibility — the belief a wrong move is permanent. Improv's insight: everything is an offer to build on.
+- [How to Read Body Language: What Improv Reveals](https://www.physicsofconnection.com/how-to-read-body-language): Body language isn't a code to decode — it's a conversation to join. Improv performers read bodies in real time under pressure. Here's what they've learned.
+- [How to Read the Room: The Skill Performers Train](https://www.physicsofconnection.com/how-to-read-the-room): Reading the room isn't intuition — it's a specific set of attention skills. Improv performers train them systematically. Here's how they work.
+- [How to Stop Caring What People Think: The Performer's Secret](https://www.physicsofconnection.com/how-to-stop-caring-what-people-think): The fear of judgment isn't weakness — it's a misfire of your social-threat system. Improv performers face it nightly and know how to disarm it.
+- [How to Stop Overthinking: The Bandwidth Problem](https://www.physicsofconnection.com/how-to-stop-overthinking): Overthinking isn't a thinking problem - it's a bandwidth allocation error. Here's the neuroscience and the practice that discovered the fix first.
+- [How to Stop Overthinking in a Relationship](https://www.physicsofconnection.com/how-to-stop-overthinking-in-a-relationship): Relationship overthinking has a specific mechanism — social-threat bandwidth hijacking. The fix requires both trust and presence, together.
+- [How to Stop People Pleasing: The Authentic Response](https://www.physicsofconnection.com/how-to-stop-people-pleasing): People pleasing is blocking in disguise: refusing your own offers to protect someone else's comfort. Improv reveals the mechanism — and the way out.
+- [Improv Theory: The Five Traditions That Shaped It](https://www.physicsofconnection.com/improv-theory): Johnstone, Spolin, Close, UCB, and Annoyance built improv on different foundations. Here's where they agree, where they clash, and why it matters.
+- [Interpersonal Communication Skills: What Improv Reveals](https://www.physicsofconnection.com/interpersonal-communication-skills): Communication isn't a list of tips — it's a real-time system with specific mechanics. Improv performers practice those mechanics every night.
+- [Psychological Safety: The Physics of Trust](https://www.physicsofconnection.com/psychological-safety): Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust.
+- [The Rules of Improv (And Why Half of Them Are Wrong)](https://www.physicsofconnection.com/rules-of-improv): Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works.
+- [Stage Fright Is Not Your Enemy](https://www.physicsofconnection.com/stage-fright): Stage fright and peak performance have identical physiology. The difference is a single cognitive reframe. Here's the practice that turns fear into fuel.
+- [Team Bonding Activities That Actually Build Trust](https://www.physicsofconnection.com/team-bonding-activities): Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles solved this — here are the activities and the science.
+- [Team Building Activities That Actually Change Teams](https://www.physicsofconnection.com/team-building-activities): Most team building is theater — fun in the moment, zero behavioral change on Monday. Here's what improv reveals about activities that actually work.
+- [Team Building Questions That Actually Build Trust](https://www.physicsofconnection.com/team-building-questions): Most team building questions are trivially safe or performatively deep. Neither builds trust. Here's the improv principle that does — and 20 questions.
+- [Types of Listening: The Three Modes That Matter](https://www.physicsofconnection.com/types-of-listening): There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation.
+- [What Is Improv? (It's Not What You Think)](https://www.physicsofconnection.com/what-is-improv): Improv isn't comedy — it's the art of building shared reality in real time with no script. Here's what actually happens on stage and why it matters.
 
-- /tools/exercise-picker — Find the right improv exercise by level and skill focus. 17 exercises, filterable by beginner/intermediate/advanced and 6 focus areas.
-- /tools/exercise-picker/beginner — Beginner improv exercises
-- /tools/exercise-picker/beginner/presence — Beginner exercises for presence and listening
-- /tools/exercise-picker/for-teams — Team-focused improv exercises
+## Laws — the underlying physics (7)
 
-## Most Cited Content
+- [Belief as Architecture](https://www.physicsofconnection.com/how-it-works/belief-as-architecture): People defend their belief systems by default — not as a preference, but as architecture.
+- [Cognitive Bandwidth](https://www.physicsofconnection.com/how-it-works/cognitive-bandwidth): Attention is limited. Action consumes capacity. Simultaneous optimization is impossible.
+- [Continuous Signaling](https://www.physicsofconnection.com/how-it-works/continuous-signaling): You signal continuously. You are always communicating, whether you intend to or not.
+- [Interdependence](https://www.physicsofconnection.com/how-it-works/interdependence): You cannot build shared reality alone. The system requires multiple agents. No individual performer has enough bandwidth, perspective, or creative capacity to...
+- [Irreversibility (Path Dependence)](https://www.physicsofconnection.com/how-it-works/irreversibility): Time advances irreversibly. Once a signal is sent, it becomes part of the shared history. You cannot edit, undo, or retract.
+- [Meaning Is Relational](https://www.physicsofconnection.com/how-it-works/meaning-is-relational): Meaning is completed in reception. A single mind can intend things, but the meaning of any offer — its value, its consequence, its place in the scene — is...
+- [Shared Reality Is Fragile](https://www.physicsofconnection.com/how-it-works/shared-reality-fragility): The shared reality of an improv scene — that you're in a freezer, that you're husband and wife — isn't physically real. There are no walls, no costumes.
 
-- /how-to-stop-overthinking — How overthinking is a bandwidth problem, not a willpower problem
-- /active-listening — Why most listening advice is wrong and what improv teaches instead
-- /rules-of-improv — The five rules of improv and why half of them are misleading
-- /psychological-safety — How improv ensembles build the trust that teams need
-- /how-to-be-less-awkward — Awkwardness as an attention problem, not a personality trait
-- /how-to-be-more-assertive — Status dynamics as the key to assertiveness
-- /fear-of-public-speaking — Stage fright and performance state are the same physiology
-- /improv-theory — The five traditions that shaped modern improvisation
-- /team-bonding-activities — Team exercises grounded in improv science
-- /types-of-listening — Three attention modes that determine how we hear
+## Principles — behavioural guidelines (9)
+
+- [Be Brave](https://www.physicsofconnection.com/how-it-works/principles/be-brave): Act before you're ready. The scene needs offers more than it needs perfect offers. Every other principle assumes data is already flowing.
+- [Be Changeable](https://www.physicsofconnection.com/how-it-works/principles/be-changeable): Let your partner's offers transform your state — your plans, your emotions, your character, your history. You can accept an offer without being changed by it.
+- [Be Honest](https://www.physicsofconnection.com/how-it-works/principles/be-honest): Signal the shared reality as it currently exists, clearly and without distortion. This principle operates on two levels that converge in practice: Signal...
+- [Be Positive](https://www.physicsofconnection.com/how-it-works/principles/be-positive): Accept the current state and extend it forward, rather than resisting or undoing it. "Positive" doesn't mean happy.
+- [Be Present](https://www.physicsofconnection.com/how-it-works/principles/be-present): Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
+- [Be Simple](https://www.physicsofconnection.com/how-it-works/principles/be-simple): Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use. The most counterintuitive principle.
+- [Be Supportive](https://www.physicsofconnection.com/how-it-works/principles/be-supportive): Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
+- [Be Thankful](https://www.physicsofconnection.com/how-it-works/principles/be-thankful): Treat every outcome as usable information and postpone evaluation. This sounds nice but it's a tactical maneuver.
+- [Framing as Angle of Approach](https://www.physicsofconnection.com/how-it-works/principles/framing-as-angle-of-approach): The content of an idea and the angle at which it arrives are not the same thing. The same proposition — reached through the person's own reasoning, or arriving...
+
+## Insights (5)
+
+- [Beyond the Stage](https://www.physicsofconnection.com/how-it-works/beyond-the-stage): The principles of improv are not theater techniques. They are the operating requirements for human connection — discovered on stage because the stage strips...
+- [Finding Your Voice](https://www.physicsofconnection.com/how-it-works/finding-your-voice): The emergence over years of practice of a recognizable artistic identity — a characteristic set of choices, instincts, interests, and energies that makes one...
+- [Model of Their Model](https://www.physicsofconnection.com/how-it-works/model-of-their-model): You cannot see into another person's mind. You only ever have your model of their model — a second-order representation, assembled from signals you happened to...
+- [Performance State](https://www.physicsofconnection.com/how-it-works/performance-state): The psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables...
+- [Reality Construction](https://www.physicsofconnection.com/how-it-works/reality-construction): The central reframe: improv isn't about comedy. Comedy is a byproduct. Improv is a high-stakes game of reality construction — two interdependent agents...
+
+## Vocabulary — improv terms defined (27)
+
+- [Audience](https://www.physicsofconnection.com/practice/vocabulary/audience): The audience is not a passive recipient of the show. They are a co-creator of the shared reality — the third player in every scene.
+- [Bandwidth](https://www.physicsofconnection.com/practice/vocabulary/bandwidth): The total processing capacity available to participants in a shared interaction at any given moment.
+- [Base Reality](https://www.physicsofconnection.com/practice/vocabulary/base-reality): The normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.
+- [Beats (First / Second / Third)](https://www.physicsofconnection.com/practice/vocabulary/beats): The concept of first, second, and third beats in a Harold — how scenes recur and transform across the show.
+- [Character](https://www.physicsofconnection.com/practice/vocabulary/character): A distinct identity inhabited by the performer — with its own way of seeing the world, its own desires, its own physical life.
+- [Coherence](https://www.physicsofconnection.com/practice/vocabulary/coherence): The state in which all participants are tracking the same shared reality without having to explicitly negotiate it.
+- [Ensemble](https://www.physicsofconnection.com/practice/vocabulary/ensemble): The group of performers operating as a single creative unit. Not a collection of individuals taking turns, but an interdependent system where each player's...
+- [Environment](https://www.physicsofconnection.com/practice/vocabulary/environment): The imagined physical and temporal conditions of the scene — the room, the weather, the objects, the spatial relationships between characters, and the...
+- [Fear of Failure](https://www.physicsofconnection.com/practice/vocabulary/fear-of-failure): The primary obstacle for every improv student — and the root cause of nearly every antipattern in the graph. Not lack of talent, creativity, or wit. Fear.
+- [Game of the Scene](https://www.physicsofconnection.com/practice/vocabulary/game-of-the-scene): The repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.
+- [Game Types](https://www.physicsofconnection.com/practice/vocabulary/game-types): A taxonomy of the different categories of games that can emerge in improv scenes. While the UCB tradition doesn't publish a formal taxonomy with these exact...
+- [Group Mind](https://www.physicsofconnection.com/practice/vocabulary/group-mind): The emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody...
+- [Group Scene](https://www.physicsofconnection.com/practice/vocabulary/group-scene): A scene with three or more performers. Fundamentally different from two-person scenes — the challenge shifts from building a relationship between two people to...
+- [Justification](https://www.physicsofconnection.com/practice/vocabulary/justification): The act of finding or creating a reason why something that happened should have happened, within the reality of the scene.
+- [Offers](https://www.physicsofconnection.com/practice/vocabulary/offers): An offer is anything that advances the scene — any word, gesture, expression, movement, or silence that adds to the shared reality.
+- [Point of View](https://www.physicsofconnection.com/practice/vocabulary/point-of-view): The filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.
+- [Presence](https://www.physicsofconnection.com/practice/vocabulary/presence): The capacity to sustain sensory contact with what is happening right now — with your partner, the environment, and yourself — rather than retreating into...
+- [Relationship](https://www.physicsofconnection.com/practice/vocabulary/relationship): The connection between characters in a scene — who they are to each other, what they feel about each other, and what they want from each other.
+- [Scene Structure](https://www.physicsofconnection.com/practice/vocabulary/scene-structure): The arc of an improv scene — not a rigid template but a recognizable shape that emerges when the principles are working.
+- [Show Dynamic](https://www.physicsofconnection.com/practice/vocabulary/show-dynamic): How a full improv show builds — not a set of scenes but a shaped experience with a beginning, middle, and end.
+- [Signal](https://www.physicsofconnection.com/practice/vocabulary/signal): Any information transmitted from one participant to another, whether intentional or not.
+- [Status](https://www.physicsofconnection.com/practice/vocabulary/status): The relative social position a character occupies in a scene, expressed through behavior rather than title or rank.
+- [Trust](https://www.physicsofconnection.com/practice/vocabulary/trust): The foundation that makes every other principle safe to practice. Without trust, bravery is recklessness, honesty is exposure, changeability is surrender, and...
+- [Two-Person Scene](https://www.physicsofconnection.com/practice/vocabulary/two-person-scene): The fundamental unit of all improv. Virtually every longform structure — Harold, Armando, La Ronde, Deconstruction — is built from two-person scenes as its...
+- [Vulnerability](https://www.physicsofconnection.com/practice/vocabulary/vulnerability): The willingness to be seen without armor — to let your emotional state, your uncertainty, and your investment be visible to your partner and the audience.
+- [Want](https://www.physicsofconnection.com/practice/vocabulary/want): What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters do things rather than merely exist.
+- [Warm-Up](https://www.physicsofconnection.com/practice/vocabulary/warm-up): The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life...
+
+## Techniques (46)
+
+- [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer): Accepting the offer is the disciplined practice of receiving incoming information and treating it as valid before you evaluate it.
+- [Active Listening](https://www.physicsofconnection.com/practice/techniques/active-listening): Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language,...
+- [Analogous Scene](https://www.physicsofconnection.com/practice/techniques/analogous-scene): A second or third beat scene that transplants the game from an earlier scene into a completely different context — different characters, different setting,...
+- [Audience Relationship](https://www.physicsofconnection.com/practice/techniques/audience-relationship): The dynamic, bidirectional exchange between performers and audience in which both parties actively shape the performance.
+- [Backline Craft](https://www.physicsofconnection.com/practice/techniques/backline-craft): What you do when you're NOT in the scene — standing at the back or sides of the stage, watching, tracking patterns, and preparing to support.
+- [Character Through Game](https://www.physicsofconnection.com/practice/techniques/character-through-game): The UCB principle that character emerges from the game pattern, not from biography, backstory, or accent.
+- [Commitment](https://www.physicsofconnection.com/practice/techniques/commitment): Commitment is the willingness to fully invest in a choice, even — especially — when you're unsure it's the "right" one.
+- [Connections](https://www.physicsofconnection.com/practice/techniques/connections): Finding thematic links across unrelated scenes in a Harold or longform show — the "it was all one thing" realization.
+- [Curriculum Design](https://www.physicsofconnection.com/practice/techniques/curriculum-design): How to sequence improv concepts for progressive skill-building — the meta-skill of designing a learning path from beginner to mastery.
+- [Do, Feel, Say](https://www.physicsofconnection.com/practice/techniques/do-feel-say): A three-step ordering principle for authentic scene work: take a physical action first, let the emotion arrive from that action, then — and only then — speak.
+- [Editing](https://www.physicsofconnection.com/practice/techniques/editing): How to end scenes. One of the hardest ensemble skills — it requires reading the scene from outside while respecting what's happening inside.
+- [Elevating](https://www.physicsofconnection.com/practice/techniques/elevating): Elevating is the practice of taking your partner's offer and making it look intentional, important, and brilliant — even (especially) when it wasn't.
+- [Emotional Range](https://www.physicsofconnection.com/practice/techniques/emotional-range): Accessing the full spectrum of emotion in scenes — not just the comfortable defaults.
+- [Emotional Truth](https://www.physicsofconnection.com/practice/techniques/emotional-truth): Emotional truth is the quality of sending signals that match the character's actual internal state — without distortion, commentary, or ironic distance.
+- [Endowment](https://www.physicsofconnection.com/practice/techniques/endowment): Giving your scene partner qualities, attributes, or history through your behavior toward them — rather than through direct statement about yourself.
+- [Failing Forward](https://www.physicsofconnection.com/practice/techniques/failing-forward): The skill of metabolizing on-stage failure — a dropped scene, a missed connection, a joke that dies — and converting it into material, energy, or deeper truth...
+- [Game Evolution](https://www.physicsofconnection.com/practice/techniques/game-evolution): How a game transforms within a scene — not just repeating at higher intensity, but changing in kind. Four modes of evolution.
+- [Giving Notes](https://www.physicsofconnection.com/practice/techniques/giving-notes): How to give feedback after scenes and shows — the teacher's and director's core skill.
+- [Gratitude Reframing](https://www.physicsofconnection.com/practice/techniques/gratitude-reframing): Gratitude reframing is the practice of converting your internal response to unexpected input from evaluation to reception.
+- [Heat and Weight](https://www.physicsofconnection.com/practice/techniques/heat-and-weight): Managing the two poles of energy in an improv show. Heat is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity.
+- [If This, Then What?](https://www.physicsofconnection.com/practice/techniques/if-this-then-what): The UCB engine for exploring game. Once the first unusual thing is identified, you don't simply repeat it — you ask: "If this person is really the kind of...
+- [Initiation](https://www.physicsofconnection.com/practice/techniques/initiation): Initiation is the craft of starting a scene — making one specific choice that implies the world, the relationship, and the stakes without trying to establish...
+- [Let Yourself Be Changed](https://www.physicsofconnection.com/practice/techniques/let-yourself-be-changed): The practice of allowing your partner's offers to visibly, behaviorally alter your character's state — rather than absorbing them without effect.
+- [Mapping](https://www.physicsofconnection.com/practice/techniques/mapping): A specific game type where one reality is played through the lens of another entirely.
+- [Opening](https://www.physicsofconnection.com/practice/techniques/opening): The 3-5 minute ensemble ritual that transforms a single audience suggestion into multiple themes, ideas, and premises for a longform show.
+- [Organic Opening](https://www.physicsofconnection.com/practice/techniques/organic-opening): A group free-association exercise that generates raw thematic material for a Harold or other longform show.
+- [Pacing](https://www.physicsofconnection.com/practice/techniques/pacing): Speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.
+- [Pattern Break](https://www.physicsofconnection.com/practice/techniques/pattern-break): Intentionally breaking an established pattern for dramatic or comic effect. The audience has been trained to expect the pattern; the break exploits that...
+- [Physicality](https://www.physicsofconnection.com/practice/techniques/physicality): Building character from the body first — not from concept, biography, or dialogue.
+- [Playing Against Type](https://www.physicsofconnection.com/practice/techniques/playing-against-type): Subverting the audience's expectations at the character level. The tough guy who is tender. The librarian who is dangerous. The child who is wise.
+- [Reading the Room](https://www.physicsofconnection.com/practice/techniques/reading-the-room): The real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly.
+- [Reincorporation](https://www.physicsofconnection.com/practice/techniques/reincorporation): Bringing back an element from earlier in the scene or show so that it returns with added significance, changed meaning, or narrative resolution.
+- [Rest Beat](https://www.physicsofconnection.com/practice/techniques/rest-beat): The return to base reality between heightened beats of the game. Rest beats are what give each escalation its impact — without them, heightening is just noise.
+- [Run](https://www.physicsofconnection.com/practice/techniques/run): A rapid-fire sequence of short scenes or callbacks that builds momentum toward a show's climax.
+- [Safety in the Room](https://www.physicsofconnection.com/practice/techniques/safety-in-the-room): Creating the conditions under which vulnerability, risk, and honest play become possible.
+- [Side-Coaching](https://www.physicsofconnection.com/practice/techniques/side-coaching): Viola Spolin's core teaching method: coaching players during the exercise, not stopping to lecture.
+- [Space Work](https://www.physicsofconnection.com/practice/techniques/space-work): The practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible...
+- [Stage Presence](https://www.physicsofconnection.com/practice/techniques/stage-presence): The ability to project your internal state outward so the audience can receive it.
+- [Status Dynamics](https://www.physicsofconnection.com/practice/techniques/status-dynamics): The mastery-level work on status is not "who is high and who is low" — it is the movement of status within a scene.
+- [Straight Man](https://www.physicsofconnection.com/practice/techniques/straight-man): The player who sees the world the way the audience does — the grounding force that makes the game player's unusual behavior legible.
+- [Suggestion](https://www.physicsofconnection.com/practice/techniques/suggestion): How to take and use audience input. The suggestion is the ritual that proves the show is improvised, gives the audience ownership, and provides a creative...
+- [Support Moves](https://www.physicsofconnection.com/practice/techniques/support-moves): What you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're...
+- [Sweep Edit](https://www.physicsofconnection.com/practice/techniques/sweep-edit): The Harold's signature transition device. One player walks briskly across the front of the stage, perpendicular to the audience's sightline, signaling that the...
+- [Tag Run](https://www.physicsofconnection.com/practice/techniques/tag-run): A rapid sequence of tag-outs exploring one game or pattern across multiple contexts.
+- [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice): The obvious choice is the practice of acting on your first impulse without censoring it — before the internal editor intervenes with something "better."...
+- [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the...
+
+## Exercises and games (17)
+
+- [Blind Offer](https://www.physicsofconnection.com/practice/exercises/blind-offer): The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them.
+- [Directed Scene](https://www.physicsofconnection.com/practice/exercises/directed-scene): Adaptability under constraint, external awareness, ego dissolution, rapid integration of abstract direction into specific behavior.
+- [Emotion Switch](https://www.physicsofconnection.com/practice/exercises/emotion-switch): Be Changeable — the ability to fully shift emotional state in response to input. Setup: Two players in a scene.
+- [Emotional Honesty Scene](https://www.physicsofconnection.com/practice/exercises/emotional-honesty-scene): Be Honest — sending clear, authentic signals without distortion. This is the scene-length application of Do-Feel-Say.
+- [First Line Drill](https://www.physicsofconnection.com/practice/exercises/first-line-drill): Be Brave — the threshold moment of starting. Setup: Players line up. One at a time, each steps out and delivers a single declarative first line that commits to...
+- [Fracture Repair Drill](https://www.physicsofconnection.com/practice/exercises/fracture-repair-drill): Fracture recovery — the ability to re-establish shared reality when two players have diverged.
+- [Genre Scene](https://www.physicsofconnection.com/practice/exercises/genre-scene): Specificity, commitment, shared vocabulary, narrative heightening through convention.
+- [Gift Giving](https://www.physicsofconnection.com/practice/exercises/gift-giving): Be Thankful — receiving unexpected input as a gift rather than a problem. Setup: Two players face each other.
+- [Group Mind Cultivation](https://www.physicsofconnection.com/practice/exercises/group-mind-cultivation): Collective attention, shared decision-making without verbal negotiation, ensemble coherence beyond basic mirroring.
+- [Last Word Response](https://www.physicsofconnection.com/practice/exercises/last-word-response): Be Present — forcing attention onto the immediate moment, breaking the planning habit. Setup: Two players in a scene.
+- [Mirroring](https://www.physicsofconnection.com/practice/exercises/mirroring): Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum.
+- [No Backspace Scene](https://www.physicsofconnection.com/practice/exercises/no-backspace-scene): Irreversibility — the felt experience of path dependence. Borrows from Johnstone's New Choice mechanic but enforces forward rather than replacing.
+- [One-Word Scene](https://www.physicsofconnection.com/practice/exercises/one-word-scene): Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across...
+- [Organic Opening](https://www.physicsofconnection.com/practice/exercises/organic-opening-exercise): Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence.
+- [Silent Space Work Scene](https://www.physicsofconnection.com/practice/exercises/space-work-scene): Space work — building and maintaining a shared physical environment with no dialogue.
+- [Status Transfer](https://www.physicsofconnection.com/practice/exercises/status-transfer): Status awareness and the ability to shift status dynamically within a scene.
+- [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
+
+## Formats (14)
+
+- [Armando](https://www.physicsofconnection.com/practice/formats/armando): A monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes.
+- [Freeze Tag](https://www.physicsofconnection.com/practice/formats/freeze-tag): The most universal shortform improv game. Two performers begin a scene. At any point, someone on the sideline calls "Freeze!" Both performers stop in their...
+- [Genre Format](https://www.physicsofconnection.com/practice/formats/genre-format): Longform improv performed within the conventions of a specific genre — film noir, horror, Western, rom-com, musical.
+- [Gorilla Theatre](https://www.physicsofconnection.com/practice/formats/gorilla-theatre): Keith Johnstone's format where performers take turns directing each other's scenes.
+- [La Ronde](https://www.physicsofconnection.com/practice/formats/la-ronde): A character-chain longform format where each two-person scene shares one character with the next, forming a circle that returns to the first character.
+- [Micetro](https://www.physicsofconnection.com/practice/formats/micetro): Keith Johnstone's elimination format (also spelled "Maestro"). Individual performers compete; the audience votes to eliminate one player each round until a...
+- [Montage](https://www.physicsofconnection.com/practice/formats/montage): The most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters.
+- [Musical Improv](https://www.physicsofconnection.com/practice/formats/musical-improv): Improvised scenes performed with live musical accompaniment, where performers spontaneously create songs — lyrics, melody, and sometimes choreography — in real...
+- [Narrative Longform](https://www.physicsofconnection.com/practice/formats/narrative-longform): Longform improv that creates a coherent story with beginning, middle, and end — an improvised play or film.
+- [Organic Longform](https://www.physicsofconnection.com/practice/formats/organic-longform): Longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined scene order.
+- [Scenes from a Hat](https://www.physicsofconnection.com/practice/formats/scenes-from-a-hat): Audience suggestions written on slips of paper before the show, placed in a hat (or bowl, or bucket), pulled randomly, and performed as rapid-fire scenes...
+- [The Harold: Improv's Most Important Long-Form Format](https://www.physicsofconnection.com/practice/formats/harold): The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the...
+- [Theatresports](https://www.physicsofconnection.com/practice/formats/theatresports): Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience.
+- [Two-Person Longform](https://www.physicsofconnection.com/practice/formats/two-person-longform): Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support.
+
+## Failure modes and patterns (18)
+
+- [Blocking](https://www.physicsofconnection.com/how-it-works/diagnosis/blocking): Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene.
+- [Bulldozing](https://www.physicsofconnection.com/how-it-works/diagnosis/bulldozing): The shadow of Be Supportive. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the...
+- [Callback](https://www.physicsofconnection.com/how-it-works/diagnosis/callback): The pattern of referencing an earlier established detail — a name, an object, a line, a gesture — later in the scene or show, reactivating meaning that has...
+- [Discovery](https://www.physicsofconnection.com/how-it-works/diagnosis/discovery): The moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene this scene clicks into place.
+- [Heightening](https://www.physicsofconnection.com/how-it-works/diagnosis/heightening): The pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the...
+- [Hesitation](https://www.physicsofconnection.com/how-it-works/diagnosis/hesitation): The shadow of Be Brave. Hesitation is the failure to act at a decision point — not just at the threshold of a scene, but at every moment where the scene needs...
+- [Internal Computation](https://www.physicsofconnection.com/how-it-works/diagnosis/internal-computation): The shadow of Be Present. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues...
+- [Judgment (Mid-Scene Evaluation)](https://www.physicsofconnection.com/how-it-works/diagnosis/judgment): The shadow of Be Thankful. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.
+- [Negation](https://www.physicsofconnection.com/how-it-works/diagnosis/negation): The shadow of Be Positive. Negation is specifically the contradiction of established reality — denying what your partner has written to the shared state.
+- [Overcomplication](https://www.physicsofconnection.com/how-it-works/diagnosis/overcomplication): The shadow of Be Simple. Overcomplication is flooding the shared channel with more data than it can carry — until the scene collapses under its own weight.
+- [Performing Cleverness](https://www.physicsofconnection.com/how-it-works/diagnosis/performing-cleverness): The shadow of Be Honest. Performing cleverness is the substitution of authentic signal with a display of wit — playing to the audience instead of inhabiting...
+- [Recovery: Decay](https://www.physicsofconnection.com/how-it-works/diagnosis/decay-recovery): How to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless. Recognize it.
+- [Recovery: Fracture](https://www.physicsofconnection.com/how-it-works/diagnosis/fracture-recovery): How to recover when two players are in different scenes — when the shared state has split and neither person can figure out why it feels off.
+- [Recovery: Latency](https://www.physicsofconnection.com/how-it-works/diagnosis/latency-recovery): How to recover when the scene has developed response lag — when one or both players are behind the moment, responding to things that happened thirty seconds...
+- [Rigid Core, Malleable Edge](https://www.physicsofconnection.com/how-it-works/diagnosis/rigid-core-malleable-edge): Beliefs are not defended uniformly. Every belief system has a core — the identity-anchored commitments that produce rejection on contact — and an edge — the...
+- [Steering](https://www.physicsofconnection.com/how-it-works/diagnosis/steering): The shadow of Be Changeable. Steering is the subtle act of accepting your partner's offers on the surface while redirecting the scene toward your predetermined...
+- [Systemic Collapse Modes](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-collapse-modes): The warning lights. How shared reality falls apart.
+- [Systemic Health Indicators](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-health-indicators): The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
+
+## Reading list — the works this site cites (16)
+
+- [Attention and Effort — Daniel Kahneman (1973)](https://www.physicsofconnection.com/library/ref-attention-and-effort-kahneman): *Daniel Kahneman. Attention and Effort. Prentice-Hall, 1973.*
+- [Bossypants — Tina Fey (2011)](https://www.physicsofconnection.com/library/ref-fey-bossypants): *Tina Fey. Bossypants. Reagan Arthur Books / Little, Brown and Company, 2011.*
+- [Group Genius — Keith Sawyer (2007)](https://www.physicsofconnection.com/library/ref-sawyer-group-genius): *Keith Sawyer. Group Genius: The Creative Power of Collaboration. Basic Books, 2007 (revised 2017).*
+- [How to Be the Greatest Improviser on Earth — Will Hines (2016)](https://www.physicsofconnection.com/library/ref-hines-greatest-improviser): *Will Hines. How to Be the Greatest Improviser on Earth. Self-published, 2016.*
+- [Impro — Keith Johnstone (1979)](https://www.physicsofconnection.com/library/ref-impro-johnstone): *Keith Johnstone. Impro: Improvisation and the Theatre. Faber & Faber, 1979.*
+- [Impro for Storytellers — Keith Johnstone (1999)](https://www.physicsofconnection.com/library/ref-impro-storytellers-johnstone): *Keith Johnstone. Impro for Storytellers. Faber & Faber, 1999.*
+- [Improv Nerd Podcast & Blog — Jimmy Carrane (ongoing)](https://www.physicsofconnection.com/library/ref-carrane-improv-nerd): *Jimmy Carrane. Improv Nerd podcast & jimmycarrane.com blog. Ongoing (~290+ episodes).*
+- [Improv Nonsense Substack — Will Hines (ongoing)](https://www.physicsofconnection.com/library/ref-hines-substack): *Will Hines. Improv Nonsense (Substack). willhines.substack.com. Ongoing.*
+- [Improv Wisdom — Patricia Ryan Madson (2005)](https://www.physicsofconnection.com/library/ref-madson-improv-wisdom): *Patricia Ryan Madson. Improv Wisdom: Don't Prepare, Just Show Up. Bell Tower, 2005.*
+- [Improvisation at the Speed of Life — TJ & Dave (2015)](https://www.physicsofconnection.com/library/ref-tj-dave-speed-of-life): *TJ Jagodowski & Dave Pasquesi. Improvisation at the Speed of Life. Solo Roma, 2015.*
+- [Improvisation for the Theater — Viola Spolin (1963)](https://www.physicsofconnection.com/library/ref-spolin-improvisation-for-theater): *Viola Spolin. Improvisation for the Theater. Northwestern University Press, 1963.*
+- [Improvise — Mick Napier (2004)](https://www.physicsofconnection.com/library/ref-napier-improvise): *Mick Napier. Improvise: Scene from the Inside Out. Heinemann, 2004.*
+- [Sanford Meisner on Acting — Meisner & Longwell (1987)](https://www.physicsofconnection.com/library/ref-meisner-on-acting): *Sanford Meisner & Dennis Longwell. Sanford Meisner on Acting. Vintage Books, 1987.*
+- [The Viewpoints Book — Anne Bogart & Tina Landau (2005)](https://www.physicsofconnection.com/library/ref-viewpoints-bogart-landau): *Anne Bogart & Tina Landau. The Viewpoints Book: A Practical Guide to Viewpoints and Composition. Theatre Communications Group, 2005.*
+- [Truth in Comedy — Halpern, Close, Johnson (1994)](https://www.physicsofconnection.com/library/ref-truth-in-comedy): *Charna Halpern, Del Close, Kim "Howard" Johnson. Truth in Comedy: The Manual of Improvisation. Meriwether Publishing, 1994.*
+- [UCB Comedy Improvisation Manual (2013)](https://www.physicsofconnection.com/library/ref-ucb-manual): *Matt Besser, Ian Roberts, Matt Walsh. Upright Citizens Brigade Comedy Improvisation Manual. Comedy Council of Nicea, 2013.*
+
+## Lessons (25)
+
+- [Beyond the Harold: The Longform Landscape](https://www.physicsofconnection.com/threads/beyond-the-harold): You've learned the Harold. You can run its beats, find its games, make its connections. Now what?
+- [Building on Offers: The Engine of Scene Work](https://www.physicsofconnection.com/threads/building-on-offers): Every improv scene is a chain of offers given and received. Understanding this chain - and what breaks it - is the first real skill an improviser develops.
+- [Character as Discovery: Beyond Accents and Attitudes](https://www.physicsofconnection.com/threads/character-as-discovery): Most improv characters are built from the neck up — a voice, an attitude, maybe an occupation.
+- [Clear Signal, Simple Signal](https://www.physicsofconnection.com/threads/clear-signal-simple-signal): So far we've talked about receiving — accepting offers, staying present, integrating surprises. Now we need to talk about sending.
+- [Diagnosing Scene Failure: A Vocabulary for What Went Wrong](https://www.physicsofconnection.com/threads/diagnosing-scene-failure): You know the scene didn't work. You can feel it. But when someone asks "what happened?" all you can say is "I don't know, it just...
+- [On Shaping Shared Reality](https://www.physicsofconnection.com/threads/shaping-shared-reality): You can't see into someone else's model of the world. You only have your model of their model — and it's almost always wrong.
+- [Playing Together at the Highest Level](https://www.physicsofconnection.com/threads/playing-together-at-the-highest-level): Every improv student learns "make your partner look good." At the mastery level, you stop thinking about it — your partner's success becomes indistinguishable...
+- [Presence and Commitment: Being Fully in the Scene](https://www.physicsofconnection.com/threads/presence-and-commitment): The two invisible skills that separate okay improv from electric improv are presence and commitment.
+- [Quieting the Planning Mind](https://www.physicsofconnection.com/threads/quieting-the-planning-mind): You know the feeling. Your scene partner says something and instead of responding, your brain launches a search: What's the funny thing to say? What's the...
+- [Show as Architecture: Building a Shaped Experience](https://www.physicsofconnection.com/threads/show-as-architecture): A great improv show isn't a set of scenes. It's a shaped experience — with a beginning that establishes, a middle that develops, and an end that converges.
+- [The Anatomy of a Scene](https://www.physicsofconnection.com/threads/anatomy-of-a-scene): Before game, before format, before any of the advanced mechanics — there is the scene. Two people, a space, a relationship, and something at stake.
+- [The Connective Tissue: How Scenes Become Shows](https://www.physicsofconnection.com/threads/the-connective-tissue): A great improv show isn't a collection of unrelated scenes. It's a web — and the web is woven from techniques that connect what came before to what comes next.
+- [The Conversation That Felt Like Magic](https://www.physicsofconnection.com/threads/conversation-that-felt-like-magic): Think about the last conversation where you lost track of time.
+- [The Empty Stage Problem](https://www.physicsofconnection.com/threads/empty-stage-problem): Imagine you're standing on a stage. Wooden floor, bright lights in your face. No props. No set. No script. Across from you is another person.
+- [The First Rule You Already Know](https://www.physicsofconnection.com/threads/first-rule-you-already-know): Let's watch a scene break. Two improvisers are on stage. The first one points a finger at the second and shouts: "Freeze, dirtbag.
+- [The Game Beneath the Game: Advanced Pattern Mechanics](https://www.physicsofconnection.com/threads/the-game-beneath-the-game): You know how to find the game. You can heighten it. You know when to rest. That's Level 3 work. Here's Level 5.
+- [The Hardest Thing You'll Never Plan](https://www.physicsofconnection.com/threads/hardest-thing-youll-never-plan): Accepting what your partner gives you is the first principle. But it assumes you actually heard what they gave you.
+- [The Inner Game Expanded: Depth, Vulnerability, and What Transfers](https://www.physicsofconnection.com/threads/the-inner-game-expanded): The outer game of improv is technique — yes-and, game, heightening, editing. The inner game is everything underneath: the emotional honesty, the willingness to...
+- [The Performer's Edge: Artistry Beyond Technique](https://www.physicsofconnection.com/threads/the-performers-edge): At a certain point, you know the techniques. You can find the game, heighten it, edit well, support your teammates.
+- [The Physics of Every Room You'll Ever Walk Into](https://www.physicsofconnection.com/threads/physics-of-every-room): Let's name what we've been building toward.
+- [The Plateau Is a Map: Breaking Through the Intermediate Wall](https://www.physicsofconnection.com/threads/the-plateau-is-a-map): Around the two-year mark — roughly Level 3 or 4 — every improviser tells themselves the same thing: I am terrible at improv.
+- [The Practice Lab: Exercises for Every Level](https://www.physicsofconnection.com/threads/the-practice-lab): Every improv skill is trainable through exercises that make the right behavior structurally unavoidable.
+- [The System Underneath: Why Improv Works](https://www.physicsofconnection.com/threads/the-system-underneath): Before you learn the moves, learn the physics. Improv isn't a collection of arbitrary rules.
+- [The Teacher's Toolkit: From Performer to Pedagogue](https://www.physicsofconnection.com/threads/the-teachers-toolkit): You can do improv. Now someone's asked you to teach it. And you've discovered that knowing how to ride a bicycle and knowing how to teach someone to ride a...
+- [Traditions in Tension: Where the Schools Disagree](https://www.physicsofconnection.com/threads/traditions-in-tension): There is no single "improv." There are at least five major traditions, each with distinct philosophies, and they disagree on fundamental questions.
+
+## Learning paths (11)
+
+- [Advanced Game and Character](https://www.physicsofconnection.com/paths/advanced-game-and-character): Beyond 'find the game' and 'make a character choice.' Advanced game mechanics — how games evolve, invert, and break. Advanced character — built from body, status, and game rather than biography and accent.
+- [Foundations: Your First Steps in Improv](https://www.physicsofconnection.com/paths/beginner-foundations): A 7-day beginner program for learning the essential principles and first habits of improv.
+- [Improv for Everyday Life](https://www.physicsofconnection.com/paths/improv-for-life): The principles improvisers use on stage work everywhere — conversations, relationships, work, and the moments that matter. No stage required.
+- [Improv for Teams and Leaders](https://www.physicsofconnection.com/paths/improv-for-teams): What improv ensembles know about trust, collaboration, and group dynamics — applied to teams that need to work together without a script.
+- [Mastering the Form](https://www.physicsofconnection.com/paths/mastering-the-form): You know Harold. You can do montage. Now what? A guide to every major longform format — what each demands, what each teaches — and how show-level craft turns a collection of scenes into a shaped experience.
+- [Systems of Improv: A Thinking Person's Guide](https://www.physicsofconnection.com/paths/systems-of-improv): Why improv works, explained as a system. For analytical minds who need the WHY before they can commit to the HOW. Start with the physics, end with the practice.
+- [Teaching Improv: From Performer to Pedagogue](https://www.physicsofconnection.com/paths/teaching-improv): For good improvisers who've been asked to teach. You can DO it — now learn to explain WHY it works, structure a class, give feedback that changes behavior, and create safety in the room.
+- [The Art of Ensemble](https://www.physicsofconnection.com/paths/the-art-of-ensemble): The craft of performing at the highest level — backline mastery, ensemble coherence, managing performance state, developing an artistic voice, and the practices that make group mind more than a metaphor.
+- [The Improv Reference Guide](https://www.physicsofconnection.com/paths/reference-guide): A cross-referenced, multi-tradition analysis of improvisation. Sourced claims, counter-positions, and the first knowledge graph that holds Johnstone, Spolin, Close, UCB, and Annoyance in one linked structure.
+- [The Physics of Connection](https://www.physicsofconnection.com/paths/physics-of-connection): What improv reveals about every conversation you'll ever have. A guide to the invisible forces that make human connection work — and what breaks it.
+- [The Self-Coaching Toolkit](https://www.physicsofconnection.com/paths/self-coaching-toolkit): A diagnostic vocabulary for intermediate improvisers who can feel what's wrong but can't name it. Stop saying 'I don't know, it just died' and start saying exactly what happened.
 
 ## Author
 
-Jay Christopher — improv practitioner, teacher, and researcher.
-
-## Contact
-
-https://www.physicsofconnection.com
+Jay Christopher — improv practitioner, teacher, and researcher. https://www.physicsofconnection.com/about

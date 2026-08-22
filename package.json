@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-search-index.mjs",
+    "prebuild": "node scripts/build-search-index.mjs && node scripts/build-llms-txt.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/",
