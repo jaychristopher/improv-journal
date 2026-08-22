@@ -42,15 +42,15 @@ Improv performers discovered this through direct experience. The nights when the
 
 The problem isn't that you care about people's opinions. The problem is that you're responding to an *imagined* opinion instead of the *actual* one. The imagined opinion is always worse, because your threat system is designed to overestimate danger.
 
-Improv performers train to redirect attention from "what might they be thinking?" to "what are they actually giving me?" In a scene, this means tracking your partner's real offers — their words, their emotion, their body language. In life, it means listening to what someone is actually saying instead of monitoring how they might be judging you.
+Improv performers train to redirect attention from "what might they be thinking?" to "what are they actually giving me?" In a scene, this means tracking your partner's real `offers` — their words, their emotion, their body language. In life, it means listening to what someone is actually saying instead of monitoring how they might be judging you.
 
 The shift is from self-focused attention ("how am I being perceived?") to other-focused attention ("what does this person need from me right now?"). Both are forms of caring. Only one produces useful information.
 
 ### 2. Commit before you evaluate
 
-The fear of judgment lives in the gap between impulse and expression. You have a thought, then you evaluate it ("will they think this is stupid?"), then you either express a diluted version or suppress it entirely.
+The fear of judgment lives in the gap between impulse and expression — the site calls that gap `internal-computation`. You have a thought, then you evaluate it ("will they think this is stupid?"), then you either express a diluted version or suppress it entirely.
 
-Improv performers shrink this gap to zero. The technique: **commit to the choice before your evaluator has time to intervene.** Say the thing. Do the thing. Then deal with what happens. Not recklessly — but with the understanding that a committed choice, even an imperfect one, is always more connecting than a hedged one.
+Improv performers shrink this gap to zero. The technique is `commitment`: choose before your evaluator has time to intervene. Say the thing. Do the thing. Then deal with what happens. Not recklessly — but with the understanding that a committed choice, even an imperfect one, is always more connecting than a hedged one.
 
 This isn't "don't think before you speak." It's "stop thinking about what they'll think, and start thinking about what's true." There's a difference between evaluating whether something is honest and evaluating whether something is safe. The first is wisdom. The second is fear.
 
@@ -60,7 +60,35 @@ The fear of judgment is ultimately a catastrophe prediction: "if they see the re
 
 Improv provides this evidence in concentrated doses. Every class, every rehearsal, every show is an opportunity to be seen — unscripted, unedited, and vulnerable. And every time the performer survives it (which is every time), the catastrophe prediction loses a little power.
 
-You don't need a stage. You need **graduated exposure** — progressively bigger moments of authentic self-expression in contexts where the stakes are manageable. Share an honest opinion in a meeting. Tell a story without rehearsing it first. Disagree with someone openly instead of keeping it internal. Each time you do this and survive, the fear recalibrates.
+This is `be-brave` in its practical form. You don't need a stage — you need **graduated exposure** — progressively bigger moments of authentic self-expression in contexts where the stakes are manageable. Share an honest opinion in a meeting. Tell a story without rehearsing it first. Disagree with someone openly instead of keeping it internal. Each time you do this and survive, the fear recalibrates.
+
+## When the Caring Is Right
+
+The obvious objection to all of this is that some opinions genuinely matter, and a person who has stopped caring about any of them is not free — they are just difficult to work with. So it is worth being precise about which caring to keep.
+
+Improv draws the line in a useful place. On this site the `audience` is defined not as a judge but as a co-creator — the third player in the scene, whose response is information about what is actually landing. `audience-relationship` describes the exchange as bidirectional. A performer who ignored the audience entirely would not be brave; they would be failing at the job.
+
+What performers learn to ignore is not the room. It is the *imagined* room — the internal committee assembled from every past humiliation, which is not present, has no information, and never updates.
+
+The practical test is three questions:
+
+- **Is this person actually in the conversation?** Real feedback comes from someone who saw the thing. The internal audience never has.
+- **Is it about the work or about my standing?** "That explanation lost me" is `signal`. "They must think I'm an idiot" is a prediction with no source.
+- **Would I act differently if it were true?** If yes, it is information. If no, it is threat-response wearing the costume of feedback.
+
+Keep the first kind. The second kind is the thing to disarm, and the distinction is what stops this from becoming an argument for not listening to anyone.
+
+## How to Practise the Exposure
+
+Graduated exposure works, but "share an honest opinion in a meeting" is a lot to ask as a first rep. Improv has smaller ones, and the point of each is to be seen slightly more than is comfortable and find out that nothing happened.
+
+**Say something before you have vetted it.** `first-line-drill` — begin before you know where you are going. Two seconds of exposure, repeated, is worth more than one large act of courage.
+
+**Remove the option to walk it back.** `no-backspace-scene` allows no retraction or qualification. Most of what reads as caring what people think is not silence, it is the hedge afterwards, and this makes hedging impossible rather than merely discouraged.
+
+**Send the real signal.** `emotional-honesty-scene` requires authentic emotional signal rather than a performed version. This is the most exposing of the three and belongs last.
+
+**Then do one real rep a day, deliberately small.** One unhedged sentence. One opinion offered without the disclaimer. The size does not matter; the frequency does, because what you are updating is a prediction built from repetition.
 
 ## The Paradox That Resolves Everything
 
