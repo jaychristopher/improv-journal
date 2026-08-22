@@ -10,6 +10,16 @@
  *
  * It now ranks on reach — traffic potential where measured, volume where not —
  * and excludes anything above the difficulty at which depth stops converting.
+ *
+ * Difficulty is not sufficient on its own. It is computed from the backlinks of
+ * the pages ranking, so it says nothing about a result page held by Slack,
+ * Indeed or Harvard. Three of the eight slots were going to guides that clear
+ * the difficulty bar and cannot rank anyway: team building activities at
+ * difficulty 5 against Asana and BambooHR, networking tips at 11, how to read
+ * body language at 3 against Verywell and Psychology Today. Where the results
+ * have actually been looked at and found closed, that reading excludes the
+ * page. Guides not yet checked stay eligible, because no evidence is not
+ * evidence of being shut out.
  */
 
 import { loadBridges } from "./content";
@@ -57,11 +67,13 @@ export async function getTopGuides(limit = 8): Promise<TopGuide[]> {
           label: head ? titleCase(head.keyword) : bridge.frontmatter.title,
           reach: reachOf(keywords),
           difficulty: primary?.difficulty,
+          verdict: bridge.frontmatter.serp_verdict,
         };
       })
       .filter((guide) => guide.reach > 0)
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.difficulty === undefined || guide.difficulty <= STRANDED_DIFFICULTY)
+      .filter((guide) => guide.verdict !== "authority")
       .sort((a, b) => b.reach - a.reach || a.slug.localeCompare(b.slug))
       .slice(0, limit)
   );

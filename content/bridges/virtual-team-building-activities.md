@@ -13,6 +13,9 @@ target_keywords:
   - { keyword: "remote team building activities", volume: 900, parent: "remote team building activities" }
   - { keyword: "online team building activities", volume: 700, parent: "virtual team building activities" }
   - { keyword: "virtual team building games", volume: 600, parent: "virtual team building games" }
+serp_checked: "2026-08-23"
+serp_min_dr: 31
+serp_verdict: winnable
 entry_atoms: [signal, trust, safety-in-the-room, internal-computation, cognitive-bandwidth]
 entry_path: improv-for-teams
 primary_problem: "you run the activity that worked in the office and on video it dies"

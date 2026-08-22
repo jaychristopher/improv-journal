@@ -7,6 +7,9 @@ target_keywords:
   - { keyword: "how to be more likeable", volume: 400, parent: "how to be more likeable" }
   - { keyword: "how to be more outgoing", volume: 400, parent: "how to be more outgoing" }
   - { keyword: "how to be more approachable", volume: 400, parent: "how to be more approachable" }
+serp_checked: "2026-08-23"
+serp_min_dr: 51
+serp_verdict: authority
 entry_atoms: [trust, ensemble, vulnerability, safety-in-the-room, be-present]
 entry_path: improv-for-life
 primary_problem: "you get on with people fine and none of it turns into friendship"
