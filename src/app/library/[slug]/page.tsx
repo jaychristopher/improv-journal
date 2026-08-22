@@ -6,7 +6,14 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
 import type { ExternalLink } from "@/lib/schema";
-import { atomDescription, extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import {
+  atomDescription,
+  extractDescription,
+  leadParagraph,
+  ogImages,
+  pageTitle,
+  stripLeadLabel,
+} from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -54,10 +61,26 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
   const url = getAtomUrl({ id: fm.id, type: fm.type });
   const description = atomDescription(fm.title, fm.type, extractDescription(atom.content));
 
-  // Find all atoms that cite this reference
   const allAtoms = await loadAtoms();
+  const atomById = new Map(allAtoms.map((a) => [a.frontmatter.id, a]));
+
+  // Concepts this work informs, as the reference itself declares them. These
+  // were named in prose at the foot of each entry and left to the auto-linker,
+  // which matches on title text and so caught almost none of them.
+  const informs = (fm.links ?? [])
+    .map((link) => atomById.get(link.id))
+    .filter(
+      (a): a is NonNullable<typeof a> => a !== undefined && a.frontmatter.type !== "reference",
+    );
+  const informsIds = new Set(informs.map((a) => a.frontmatter.id));
+
+  // Atoms that cite this reference. Anything already listed above is dropped
+  // so a concept never appears twice on the page.
   const citingAtoms = allAtoms.filter(
-    (a) => a.frontmatter.type !== "reference" && a.frontmatter.links?.some((l) => l.id === fm.id),
+    (a) =>
+      a.frontmatter.type !== "reference" &&
+      !informsIds.has(a.frontmatter.id) &&
+      a.frontmatter.links?.some((l) => l.id === fm.id),
   );
 
   // Group by type
@@ -109,6 +132,29 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
         className="prose prose-neutral dark:prose-invert max-w-none"
         dangerouslySetInnerHTML={{ __html: atom.html }}
       />
+
+      {informs.length > 0 && (
+        <nav className="border-foreground/10 mt-12 border-t pt-8">
+          <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
+            Concepts this work informs
+          </h2>
+          <ul className="space-y-2">
+            {informs.map((a) => (
+              <li key={a.frontmatter.id}>
+                <Link
+                  href={getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })}
+                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-3 transition-colors"
+                >
+                  <span className="block text-sm font-medium">{a.frontmatter.title}</span>
+                  <span className="text-foreground/60 mt-1 block text-xs">
+                    {leadParagraph(stripLeadLabel(a.content), 150)}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       {citingAtoms.length > 0 && (
         <nav className="border-foreground/10 mt-12 border-t pt-8">

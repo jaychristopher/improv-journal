@@ -37,5 +37,3 @@ A practitioner's guide organizing improv around behavioral mantras: Be Present, 
 - The cult of the obvious (extending Johnstone)
 
 **Also referenced:** Will Hines' Substack articles at willhines.substack.com, including "Accepting Offers," "Three Ingredients," "Rewrite History," and "Second Line: Big Choice or Gentle Yes?"
-
-**Referenced by atoms:** be-present, be-changeable, be-brave, obvious-choice, accepting-the-offer, initiation

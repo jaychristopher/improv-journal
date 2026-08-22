@@ -34,5 +34,3 @@ A practitioner's guide that deliberately challenges conventional improv rules. N
 - "Enter with a deal" — arrive on stage already in motion, not neutral
 - Critique of traditional improv rules as bandwidth-consuming overhead
 - The distinction between supporting your partner through *clear choices* vs. through *deference*: "If you want to support your partner in an improv scene, give them the gift of your choice"
-
-**Referenced by atoms:** be-brave, initiation, commitment, hesitation, internal-computation

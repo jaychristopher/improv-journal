@@ -37,5 +37,3 @@ The foundational text of modern improv pedagogy. Introduces the offer/accept/blo
 - Overaccepting — a distinct move beyond simple acceptance
 - The cult of the obvious — "The more obvious an improviser is, the more original he appears"
 - Spontaneity as a skill to be recovered, not learned
-
-**Referenced by atoms:** accepting-the-offer, offers, status, blocking, be-changeable, obvious-choice, yes-and

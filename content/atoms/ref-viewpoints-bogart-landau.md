@@ -46,5 +46,3 @@ A systematic articulation of Viewpoints as both training technique and rehearsal
 *Vocal Viewpoints:* Pitch, Dynamic (volume), Acceleration/Deceleration, Silence, Timbre.
 
 **Lineage:** Overlie's Six Viewpoints (SSTEMS) originated in postmodern dance, influenced by Merce Cunningham and the Judson Dance Theater. Bogart encountered Overlie at NYU in the 1970s and began applying the framework to actor training. Bogart and Landau's expansion from six to nine reflects the shift from dance to theater: actors needed finer-grained spatial vocabulary. Overlie published her own account in *Standing in Space: The Six Viewpoints Theory & Practice* (2016).
-
-**Referenced by atoms:** physicality, presence, be-present, space-work, ensemble

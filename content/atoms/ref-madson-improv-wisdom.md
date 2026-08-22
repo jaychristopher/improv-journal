@@ -37,6 +37,4 @@ The most explicit treatment of improv principles as life philosophy. Madson taug
 - "Be Average" — the paradox that aiming for the obvious, the ordinary, the simple produces more interesting results than striving for brilliance (maps directly to Be Simple)
 - "Start Anywhere" — the bravery principle applied to life inertia; any action is better than waiting for the right one
 
-**Referenced by atoms:** beyond-the-stage, be-positive, be-present, be-supportive, be-brave, be-changeable
-
 **Context:** Madson's work is the primary bridge text between improv pedagogy and applied life practice. Where Johnstone's *Impro* uses theater to illuminate life implicitly, Madson addresses life directly. Her Stanford context gives the applied-improv claim institutional and academic grounding.

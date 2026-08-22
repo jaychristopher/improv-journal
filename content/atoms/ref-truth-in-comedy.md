@@ -38,5 +38,3 @@ The manual of the Harold form and the philosophical backbone of Chicago-school l
 - "Treat others as if they are poets, geniuses and artists, and they will be" — the support ethic
 - Support and trust as inseparable — Ch. 3 establishes this as foundational
 - Agreement "to the Nth degree" — yes-and as the mechanism of trust
-
-**Referenced by atoms:** be-positive, be-thankful, be-supportive, be-honest, justification, ensemble, group-mind, blocking, negation

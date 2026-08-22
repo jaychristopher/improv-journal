@@ -37,5 +37,3 @@ The primary published account of Meisner's technique, structured as a narrative 
 - The distinction from Stanislavski's emotion memory: Meisner generates emotion through present interaction and imaginative preparation, not by excavating personal trauma
 
 **Connection to improv:** Meisner's repetition exercise is the closest acting-tradition analog to improv's listening work. Both train the same muscle: responding to what is actually happening rather than executing a plan. The emotional preparation technique bridges to improv's challenge of accessing emotions beyond comfortable defaults — you can prepare an emotional state without pre-planning behavior.
-
-**Referenced by atoms:** emotional-truth, emotional-range, active-listening, character, let-yourself-be-changed, be-honest

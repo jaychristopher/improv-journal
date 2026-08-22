@@ -38,6 +38,4 @@ The philosophy and practice of the most celebrated two-person improv partnership
 - The partnership as the irreducible unit — interdependence demonstrated at the highest level
 - Moving "the weight from the words to the emotions" — bandwidth reallocation from verbal to felt
 
-**Referenced by atoms:** be-changeable, be-present, active-listening, commitment, interdependence, relationship, be-supportive
-
 **Also relevant:** Stephen Colbert on TJ & Dave: *"One of these guys is the best improviser in the world. And the other one is better."*

@@ -38,5 +38,3 @@ The foundational text of improvisational theater pedagogy. Introduces theater ga
 - Space work and environment as grounding mechanisms — physical engagement forces presence
 - Side-coaching — real-time guidance that keeps performers connected to partner and environment
 - Evaluation as structurally retrospective — assessment happens after the game, by the group, about the problem
-
-**Referenced by atoms:** be-present, space-work, environment, presence, active-listening, meaning-is-relational, last-word-response, physicality, emotional-range
