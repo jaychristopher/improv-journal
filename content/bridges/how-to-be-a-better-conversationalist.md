@@ -1,6 +1,6 @@
 ---
 title: "How to Be a Better Conversationalist: The Improv Approach"
-description: "Great conversationalists aren't charismatic — they're responsive. Improv reveals the three skills that make every conversation better: receiving, building, and committing."
+description: "Great conversationalists aren't charismatic — they're responsive. Improv reveals the three skills behind it: receiving, building, committing."
 target_keywords:
   - { keyword: "how to be a better conversationalist", volume: 450 }
   - { keyword: "conversation skills", volume: 300 }

@@ -1,5 +1,5 @@
 ---
-title: "Collaboration Skills: What Improv Ensembles Know About Working Together"
+title: "Collaboration Skills: What Improv Ensembles Know"
 description: "Real collaboration isn't brainstorming or consensus — it's building on each other's ideas in real time. Improv ensembles train this skill every night."
 target_keywords:
   - { keyword: "collaboration skills", volume: 1200 }

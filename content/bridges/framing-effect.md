@@ -1,6 +1,6 @@
 ---
-title: "The Framing Effect: How to Use the Skill That Looks Like a Bias"
-description: "The framing effect is usually taught as a cognitive bias to defend against. It's also a skill — one improv performers have been training for sixty years. Here's how to actually use it without sliding into manipulation."
+title: "The Framing Effect: The Skill That Looks Like a Bias"
+description: "The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years."
 target_keywords:
   - { keyword: "framing effect", volume: 3400 }
   - { keyword: "framing psychology", volume: 3100 }

@@ -1,5 +1,5 @@
 ---
-title: "How to Read the Room: The Skill Improv Performers Train Every Night"
+title: "How to Read the Room: The Skill Performers Train"
 description: "Reading the room isn't intuition — it's a specific set of attention skills. Improv performers train them systematically. Here's how they work."
 target_keywords:
   - { keyword: "how to read the room", volume: 200 }

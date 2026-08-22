@@ -1,6 +1,6 @@
 ---
-title: "Improv Theory: The Five Traditions That Shaped Modern Improvisation"
-description: "Johnstone, Spolin, Close, UCB, and Annoyance built improv on different foundations. Here's where they agree, where they clash, and what their disagreements reveal about how human connection actually works."
+title: "Improv Theory: The Five Traditions That Shaped It"
+description: "Johnstone, Spolin, Close, UCB, and Annoyance built improv on different foundations. Here's where they agree, where they clash, and why it matters."
 target_keywords:
   - { keyword: "improv theory", volume: 390 }
   - { keyword: "history of improv", volume: 480 }

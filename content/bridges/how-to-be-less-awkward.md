@@ -1,5 +1,5 @@
 ---
-title: "How to Be Less Awkward: Lessons from People Who Make Things Up for a Living"
+title: "How to Be Less Awkward: Lessons from Improvisers"
 description: "Awkwardness isn't a personality trait — it's a specific attention problem. Improv performers fix it by redirecting focus from self-monitoring to connection."
 target_keywords:
   - { keyword: "how to be less awkward", volume: 700 }

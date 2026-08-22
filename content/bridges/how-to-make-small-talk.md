@@ -1,6 +1,6 @@
 ---
-title: "How to Make Small Talk: The Improv Method That Turns Any Conversation Into Connection"
-description: "Small talk fails when you treat it as performance. Improv reveals that small talk is actually a collaboration — and the skills that make it work are learnable."
+title: "How to Make Small Talk: The Improv Method"
+description: "Small talk fails when you treat it as performance. Improv reveals it's actually a collaboration — and the skills that make it work are learnable."
 target_keywords:
   - { keyword: "how to make small talk", volume: 2200 }
   - { keyword: "small talk tips", volume: 200 }

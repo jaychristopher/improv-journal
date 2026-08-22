@@ -1,6 +1,6 @@
 ---
-title: "Team Bonding Activities That Actually Work (According to Improv Science)"
-description: "Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles have solved this problem. Here are the activities — and the science behind why they work."
+title: "Team Bonding Activities That Actually Build Trust"
+description: "Most team bonding falls flat because it ignores how trust actually forms. Improv ensembles solved this — here are the activities and the science."
 target_keywords:
   - { keyword: "team bonding activities", volume: 5400 }
   - { keyword: "trust building activities", volume: 200 }

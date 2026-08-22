@@ -1,6 +1,6 @@
 ---
 title: "The Rules of Improv (And Why Half of Them Are Wrong)"
-description: "Every improv class teaches the same rules. But the five major traditions disagree on what the rules actually are. Here's what matters, what's myth, and what works."
+description: "Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works."
 target_keywords:
   - { keyword: "rules of improv", volume: 450 }
   - { keyword: "yes and improv", volume: 600 }

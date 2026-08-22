@@ -88,7 +88,11 @@ function scoreBridge(file) {
     score += 15;
     // Check if primary keyword appears in title
     const primaryKw = data.target_keywords[0].keyword.toLowerCase();
-    if (data.title && data.title.toLowerCase().includes(primaryKw)) {
+    // Match on words, not raw characters: search engines treat hyphens and
+    // punctuation as separators, so "5-Minute" does target "5 minute".
+    const words = (text) =>
+      ` ${text.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `.replace(/\s+/g, " ");
+    if (data.title && words(data.title).includes(words(primaryKw).trim())) {
       score += 10;
     } else {
       issues.push({ severity: "warning", msg: `Primary keyword "${primaryKw}" not in title` });

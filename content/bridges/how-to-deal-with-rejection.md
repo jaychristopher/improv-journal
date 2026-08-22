@@ -1,6 +1,6 @@
 ---
-title: "How to Deal with Rejection: The Improv Philosophy of Failing Forward"
-description: "Rejection hurts because your brain treats social exclusion like physical pain. Improv performers face rejection nightly and have built a system for metabolizing it."
+title: "How to Deal with Rejection: Failing Forward"
+description: "Rejection hurts because your brain treats social exclusion like physical pain. Improv performers face it nightly and have a system for metabolizing it."
 target_keywords:
   - { keyword: "how to deal with rejection", volume: 1700 }
   - { keyword: "dealing with rejection", volume: 400 }
@@ -12,7 +12,7 @@ created: "2026-04-22"
 
 # How to Deal with Rejection: The Improv Philosophy of Failing Forward
 
-Rejection activates the same neural circuits as physical pain. This isn't metaphor — fMRI studies show that social exclusion lights up the anterior cingulate cortex, the same region that processes bodily injury. Your brain literally cannot tell the difference between a broken arm and a broken heart.
+Rejection activates the same neural circuits as physical pain. This isn't metaphor — fMRI studies (Eisenberger, Lieberman & Williams, "Does Rejection Hurt? An fMRI Study of Social Exclusion," *Science*, 2003) show that social exclusion lights up the anterior cingulate cortex, the same region that processes bodily injury. Your brain literally cannot tell the difference between a broken arm and a broken heart.
 
 Which means "just get over it" is as useful as telling someone with a broken arm to "just stop hurting." The pain is real. The question is what you do with it.
 
@@ -22,7 +22,7 @@ Improv performers deal with rejection in concentrated doses. Every scene is a pu
 
 In improv, everything that happens is an **offer** — raw material you can use. Your partner says something unexpected? Offer. The audience doesn't laugh? Offer. You blank on stage? Offer. The scene falls apart? Offer.
 
-Del Close, the godfather of long-form improv, made this principle explicit: "Fall, then figure out what to do on the way down." The falling isn't the problem. The freezing — the moment where rejection stops you from moving forward — is.
+Del Close, the godfather of long-form improv, made this principle explicit (codified in *Truth in Comedy: The Manual of Improvisation*, Halpern, Close & Johnson, 1994): "Fall, then figure out what to do on the way down." The falling isn't the problem. The freezing — the moment where rejection stops you from moving forward — is.
 
 This reframe doesn't make rejection feel good. It makes rejection feel *useful.* The job interview you didn't get tells you something about what you need to develop. The person who didn't want to date you tells you something about compatibility. The pitch that got rejected tells you something about your audience. Each rejection is information that success can't provide.
 

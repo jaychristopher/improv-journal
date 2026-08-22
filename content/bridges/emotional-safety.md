@@ -1,5 +1,5 @@
 ---
-title: "Emotional Safety: How Improv Ensembles Build the Trust That Teams Need"
+title: "Emotional Safety: How Ensembles Build Real Trust"
 description: "Emotional safety isn't a policy — it's a practice. Improv ensembles have spent 60 years developing specific techniques to create it. Here's what works."
 target_keywords:
   - { keyword: "emotional safety", volume: 2300 }

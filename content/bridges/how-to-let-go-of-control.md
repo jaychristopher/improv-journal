@@ -1,6 +1,6 @@
 ---
-title: "How to Let Go of Control: What Improv Teaches About Surrender"
-description: "Control feels safe but kills connection. Improv performers learn to surrender control every night — and the results are better than anything they could have planned."
+title: "How to Let Go of Control: What Improv Teaches"
+description: "Control feels safe but kills connection. Improv performers surrender it every night — and the results beat anything they could have planned."
 target_keywords:
   - { keyword: "how to let go of control", volume: 350 }
   - { keyword: "letting go of control", volume: 200 }

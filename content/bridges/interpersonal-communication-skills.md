@@ -1,5 +1,5 @@
 ---
-title: "Interpersonal Communication Skills: What 60 Years of Improv Reveals"
+title: "Interpersonal Communication Skills: What Improv Reveals"
 description: "Communication isn't a list of tips — it's a real-time system with specific mechanics. Improv performers practice those mechanics every night."
 target_keywords:
   - { keyword: "interpersonal communication skills", volume: 2900 }

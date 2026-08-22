@@ -1,5 +1,5 @@
 ---
-title: "How to Get Better at Improv: A Practitioner's Guide to Deliberate Growth"
+title: "How to Get Better at Improv: A Practitioner's Guide"
 description: "Getting better at improv isn't about doing more shows. It's about diagnosing what's actually breaking and practicing the specific skill that fixes it."
 target_keywords:
   - { keyword: "how to get better at improv", volume: 150 }

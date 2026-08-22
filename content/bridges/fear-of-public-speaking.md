@@ -1,5 +1,5 @@
 ---
-title: "Fear of Public Speaking: What Improv Performers Know That You Don't"
+title: "Fear of Public Speaking: What Performers Know"
 description: "The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how."
 target_keywords:
   - { keyword: "fear of public speaking", volume: 3300 }

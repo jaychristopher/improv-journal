@@ -1,5 +1,5 @@
 ---
-title: "Types of Listening: The Improv Framework for Understanding How We Hear"
+title: "Types of Listening: The Three Modes That Matter"
 description: "There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation."
 target_keywords:
   - { keyword: "types of listening", volume: 800 }
