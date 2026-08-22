@@ -4,6 +4,7 @@ description: "Most public speaking tips cover the prepared talk. What actually g
 target_keywords:
   - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000, parent: "public speaking tips" }
   - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11, parent: "public speaking tips" }
+  - { keyword: "how to improve public speaking skills", volume: 1500, difficulty: 21, traffic_potential: 168000, parent: "public speaking tips" }
   - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips" }
   - { keyword: "public speaking skills", volume: 900, difficulty: 38, parent: "public speaking tips" }
   - { keyword: "tips for public speaking", volume: 700, difficulty: 15, parent: "public speaking tips" }
@@ -97,6 +98,24 @@ Being asked to say a few words is a different skill again, and there is a struct
 Specific beats impressive. "Priya rebuilt the intake process in six weeks" carries more than "Priya has been a tremendous asset", because the concrete version gives the room something to picture and the abstract version gives it nothing to hold.
 
 And stop at the end of the third move. The most common failure in unprepared speaking is not starting badly — it is not stopping, because ending feels abrupt from the inside and never does from the outside.
+
+## The Standard Advice That Makes It Worse
+
+Most public speaking tips are handed down rather than tested, and several of the most repeated ones actively cause the problem they promise to solve.
+
+**"Practise in front of a mirror."** The worst of them. A mirror trains you to watch yourself while speaking, which is precisely the split attention that ruins delivery in a real room — you spend the talk monitoring your own face instead of the argument or the audience. It also rehearses eye contact with a person who is always looking back, which nobody in the room will be. Practise out loud to a wall, a phone on a shelf, or one tolerant friend.
+
+**"Picture the audience naked."** Whatever this was meant to do, its actual effect is to occupy attention with an invented image while a real room is in front of you. Anything that makes the audience less real makes the talk worse, because the whole job is responding to them.
+
+**"Open with a joke."** The highest-risk move available, spent at the moment your credit with the room is lowest, in pursuit of the least important goal. A joke that does not land at second fifteen costs you the next three minutes, which you now spend recovering rather than talking. Open with the reason they should care.
+
+**"Never let them see you're nervous."** Concealment is a second job running alongside the talk, and it consumes the attention the talk needed. It is also unnecessary: the [physiology is far less visible than it feels](/fear-of-public-speaking), and audiences forgive visible nerves easily while forgiving inaudible arguments not at all.
+
+**"Use gestures for emphasis."** Deliberate gestures look deliberate. Hands that are doing something on purpose read as staged to everyone watching, which costs more credibility than flat hands ever would. Gesture happens by itself when you are genuinely engaged with what you are saying; the fix for stiff hands is caring more about the content, not choreography.
+
+**"Just be yourself."** True and useless, in the way that "relax" is useless. Nobody has ever become more themselves by being told to. It arrives as a by-product of being genuinely occupied with something real — the argument, the room, the question in front of you — and never as a result of aiming at it directly.
+
+The tips that survive testing are dull: know your material, look at individual people, slow the first thirty seconds, stop when you have finished. The exciting advice is mostly what gets repeated because it sounds like a technique.
 
 ## What to Practise
 
