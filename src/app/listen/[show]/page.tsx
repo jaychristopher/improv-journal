@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { PodcastSeriesJsonLd } from "@/components/PodcastSeriesJsonLd";
 import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
 import { ogImages, pageTitle } from "@/lib/seo";
 
@@ -22,7 +23,16 @@ export async function generateMetadata({
   return {
     title: pageTitle(`${show.frontmatter.title} Podcast`),
     description: show.frontmatter.description,
-    alternates: { canonical: `/listen/${showSlug}` },
+    alternates: {
+      canonical: `/listen/${showSlug}`,
+      // Autodiscovery: podcast clients and feed readers look for this link to
+      // find the RSS feed from the page.
+      types: {
+        "application/rss+xml": [
+          { url: `/listen/${showSlug}/feed.xml`, title: `${show.frontmatter.title} Podcast` },
+        ],
+      },
+    },
     openGraph: {
       title: `${show.frontmatter.title} Podcast`,
       description: show.frontmatter.description,
@@ -47,6 +57,12 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <PodcastSeriesJsonLd
+        id={fm.id}
+        title={fm.title}
+        description={fm.description}
+        episodeCount={totalEpisodes}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

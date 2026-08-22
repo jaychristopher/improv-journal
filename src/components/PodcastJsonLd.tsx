@@ -37,8 +37,11 @@ export function PodcastJsonLd({
     ...(isoDuration && { duration: isoDuration }),
     partOfSeries: {
       "@type": "PodcastSeries",
+      // Reference the series defined on its own page rather than restating a
+      // hardcoded name, so an episode and its series resolve to one entity.
+      "@id": `${SITE_URL}/listen/physics-of-connection#series`,
       name: "The Physics of Connection",
-      url: toAbsoluteSiteUrl("/listen", SITE_URL),
+      url: toAbsoluteSiteUrl("/listen/physics-of-connection", SITE_URL),
     },
   };
 

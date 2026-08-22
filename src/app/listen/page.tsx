@@ -5,12 +5,25 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { getEpisodesForShow, loadShows } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: pageTitle("Listen"),
-  description:
-    "Podcast conversations exploring the physics of human connection through the lens of improvisation.",
-  alternates: { canonical: "/listen" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const shows = await loadShows();
+
+  return {
+    title: pageTitle("Listen"),
+    description:
+      "Podcast conversations exploring the physics of human connection through the lens of improvisation.",
+    // Every show's feed, so a reader landing on the hub can find them all.
+    alternates: {
+      canonical: "/listen",
+      types: {
+        "application/rss+xml": shows.map((s) => ({
+          url: `/listen/${s.frontmatter.id}/feed.xml`,
+          title: `${s.frontmatter.title} Podcast`,
+        })),
+      },
+    },
+  };
+}
 
 export default async function ListenPage() {
   const shows = await loadShows();
