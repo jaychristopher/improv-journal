@@ -28,6 +28,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     slugs: [
       "how-to-stop-overthinking",
       "how-to-be-more-confident",
+      "confidence-building-exercises",
       "how-to-be-more-creative",
       "how-to-be-witty",
       "how-to-be-less-awkward",
