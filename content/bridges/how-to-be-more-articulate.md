@@ -14,6 +14,7 @@ primary_cta_target: one-word-scene
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
+updated: "2026-08-22"
 ---
 
 # How to Be More Articulate: It Is Not About Vocabulary

@@ -74,6 +74,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "how-to-deal-with-conflict",
       "how-to-read-body-language",
       "how-to-make-small-talk",
+      "networking-tips",
       "how-to-have-difficult-conversations",
       "types-of-listening",
     ],
