@@ -1,6 +1,6 @@
 ---
-title: "Conversation Starters: 100 That Survive the Second Exchange"
-description: "A starter only buys you one exchange. What you do with the second decides the rest. 100 sorted by the room you are in, and why the clever ones die fastest."
+title: "Conversation Starters: 140 That Survive the Second Exchange"
+description: "A starter only buys you one exchange. What you do with the second decides the rest. 140 sorted by the room you are in, and why the clever ones die fastest."
 target_keywords:
   - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation topics", volume: 7200, difficulty: 25, traffic_potential: 143000, parent: "conversation starters" }
@@ -22,7 +22,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Conversation Starters: 100 That Survive the Second Exchange
+# Conversation Starters: 140 That Survive the Second Exchange
 
 Most people looking for conversation starters have diagnosed the wrong problem. A conversation died, the opening was the last thing they remember choosing, so the opening gets the blame.
 
@@ -62,6 +62,14 @@ Three things, and none of them is being interesting.
 - Who should I be talking to here?
 - What do you do when you get home from something like this?
 - What is the plan after?
+- How did you get roped into this?
+- Have you done one of these before?
+- What were you doing an hour ago?
+- Is this a normal Tuesday for you?
+- What is the queue situation like out there?
+- Have you found the good snacks yet?
+- Are you local, or did you travel for this?
+- What made you say yes to this one?
 
 ## Funny Conversation Starters
 
@@ -89,6 +97,14 @@ The funny ones that actually run are specific and mundane. Comedy comes from the
 - What would you be famous for if you had to be famous for something stupid?
 - What is the last thing you argued about that did not matter?
 - What is something you own that you would be embarrassed to explain?
+- What is the most unhinged thing in your fridge right now?
+- What did you get in trouble for most as a child?
+- What is a hill you would die on that nobody else would defend?
+- What is the most ridiculous thing you have ever queued for?
+- What household object do you have irrational feelings about?
+- What is the pettiest reason you have stopped liking something?
+- What is the least useful skill you are genuinely good at?
+- What would your autobiography be called if it were honest?
 
 ## Starters That Work at Work
 
@@ -108,6 +124,12 @@ The funny ones that actually run are specific and mundane. Comedy comes from the
 - Where are you working from at the moment?
 - What is your first hour of the day like?
 - What is something you have learned here that you did not expect to?
+- What is on your plate this week that you did not expect?
+- What is the last thing you finished that you were pleased with?
+- Who here should I know that I do not?
+- What part of this place would surprise someone joining?
+- What did you do before this?
+- What is something the rest of us do not see about your job?
 
 ## Starters for a Group or a Table
 
@@ -129,6 +151,12 @@ Everyone can answer these in a sentence, which is what stops one person taking t
 - What is something you have all changed your mind about?
 - What is the best thing about where everyone lives?
 - What is one thing you would each bring back from ten years ago?
+- What is everyone's most irrational fear?
+- What does everyone have far too many of at home?
+- What is the best thing anyone here has bought for under a tenner?
+- What did everyone believe as a child and defend far too long?
+- What is everyone's least popular opinion about food?
+- Who here has the strangest thing in their bag?
 
 ## Starters for People You Already Know
 
@@ -150,6 +178,12 @@ The problem with old friends is not awkwardness, it is that the conversation def
 - What do you want more of at the moment?
 - What is a thing you keep meaning to start?
 - What should I ask you about that I never do?
+- What have you been thinking about that has not come up?
+- What has been better than you expected lately?
+- What are you spending time on that you did not used to?
+- What have you gone off recently?
+- Who have you seen lately that I would remember?
+- What is different about you since we last properly talked?
 
 ## Starters for Kids and Family
 
@@ -167,6 +201,12 @@ Shorter, concrete, and with an obvious way in. The dinner-table versions work be
 - What made someone laugh today?
 - If you could swap jobs with anyone here, who?
 - What was the best thing you ate today?
+- What was the best bit of today?
+- What was the hardest bit of today?
+- What is something you found out this week?
+- If you ran the house for a day, what rule would go first?
+- What is the strangest thing you saw today?
+- What are you looking forward to tomorrow?
 
 ## Conversation Topics: Which Ones Behave Differently
 
