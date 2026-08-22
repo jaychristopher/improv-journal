@@ -29,6 +29,7 @@ export const RELATED_GUIDE_LIMIT = 4;
 
 /** Editorial pairings that take precedence over computed matches. */
 export const CURATED_RELATED: Record<string, string[]> = {
+  "improv-prompts": ["theatre-games", "rules-of-improv", "how-to-get-better-at-improv"],
   "how-to-be-a-good-friend": [
     "how-to-make-friends-as-an-adult",
     "how-to-be-a-good-listener",
