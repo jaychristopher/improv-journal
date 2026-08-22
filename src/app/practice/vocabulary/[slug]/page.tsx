@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { AtomDetail } from "@/components/AtomDetail";
 import { DefinedTermJsonLd } from "@/components/DefinedTermJsonLd";
 import { getAtomBySlug, getAtomUrl, loadAtoms } from "@/lib/content";
-import { GLOSSARY_URL, leadParagraph } from "@/lib/glossary";
-import { atomDescription, extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { GLOSSARY_URL } from "@/lib/glossary";
+import { atomDescription, extractDescription, leadParagraph, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();

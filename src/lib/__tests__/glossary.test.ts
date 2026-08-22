@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms } from "../content";
-import { leadParagraph, loadGlossaryTerms } from "../glossary";
+import { loadGlossaryTerms } from "../glossary";
+import { leadParagraph } from "../seo";
 
 describe("leadParagraph", () => {
   it("returns the first prose paragraph, not the whole document", () => {

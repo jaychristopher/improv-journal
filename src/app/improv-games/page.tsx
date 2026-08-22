@@ -3,8 +3,8 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
-import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { ogImages, pageTitle } from "@/lib/seo";
+import { loadImprovGames } from "@/lib/games";
+import { ogImages, pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Games: The Complete Collection"),
@@ -44,24 +44,45 @@ const FILTER_GROUPS = [
 ];
 
 export default async function ImprovGamesPage() {
-  const atoms = await loadAtoms();
-  const exercises = atoms.filter((a) => a.frontmatter.type === "exercise");
+  const games = await loadImprovGames();
 
-  const items = exercises.map((a) => ({
-    id: a.frontmatter.id,
-    title: a.frontmatter.title,
-    href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
-    tags: a.frontmatter.tags ?? [],
-    preview: a.content
-      .replace(/^---[\s\S]*?---\n*/m, "")
-      .replace(/^#{1,6}\s+.*$/gm, "")
-      .replace(/\*\*[^*]+\*\*/g, "")
-      .trim()
-      .substring(0, 150),
+  const items = games.map((game) => ({
+    id: game.id,
+    title: game.title,
+    href: game.href,
+    tags: game.tags,
+    preview: game.description,
   }));
+
+  // ItemList makes the collection readable as a list of named games, rather
+  // than a page that happens to link to some.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${SITE_URL}/improv-games`,
+    name: "Improv Games: The Complete Collection",
+    url: `${SITE_URL}/improv-games`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: games.length,
+      itemListElement: games.map((game, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: game.title,
+        description: game.description,
+        url: `${SITE_URL}${game.href}`,
+      })),
+    },
+  };
+
+  const shortForm = games.filter((game) => game.kind === "format");
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Improv Games" }]} />
 
       <header className="mb-8">
@@ -138,6 +159,27 @@ export default async function ImprovGamesPage() {
             ))}
         </div>
       </section>
+
+      {shortForm.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-lg font-semibold">Short-Form Improv Games</h2>
+          <p className="text-foreground/60 mb-4 text-sm">
+            Games with rules, a structure, and usually an audience — the short-form formats played
+            at shows and jams, as opposed to the drills used in rehearsal.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {shortForm.map((game) => (
+              <Link
+                key={game.id}
+                href={game.href}
+                className="border-foreground/10 hover:border-foreground/30 rounded-full border px-3 py-1 text-sm transition-colors"
+              >
+                {game.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-10">
         <h2 className="mb-4 text-lg font-semibold">Want to understand why these games work?</h2>
