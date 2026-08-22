@@ -15,6 +15,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0977309347" }
 sources: []
+work:
+  type: Book
+  authors: ["TJ Jagodowski", "Dave Pasquesi"]
+  name: "Improvisation at the Speed of Life"
+  publisher: "Solo Roma"
+  published: "2015"
+  isbn: "0977309347"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

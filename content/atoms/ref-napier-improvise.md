@@ -13,6 +13,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/032500630X" }
 sources: []
+work:
+  type: Book
+  authors: ["Mick Napier"]
+  name: "Improvise: Scene from the Inside Out"
+  publisher: "Heinemann"
+  published: "2004"
+  isbn: "032500630X"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

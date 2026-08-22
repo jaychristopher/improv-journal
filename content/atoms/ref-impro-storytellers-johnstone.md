@@ -15,6 +15,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0571190995" }
 sources: []
+work:
+  type: Book
+  authors: ["Keith Johnstone"]
+  name: "Impro for Storytellers"
+  publisher: "Faber & Faber"
+  published: "1999"
+  isbn: "0571190995"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

@@ -3,13 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
 import { getAtomBySlug, getAtomUrl, loadAtoms } from "@/lib/content";
+import type { ExternalLink } from "@/lib/schema";
 import { atomDescription, extractDescription } from "@/lib/seo";
-
-interface ExternalLink {
-  label: string;
-  url: string;
-}
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -46,8 +43,9 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
   if (!atom || atom.frontmatter.type !== "reference") notFound();
 
   const fm = atom.frontmatter;
-  const extLinks: ExternalLink[] =
-    (fm as unknown as { external_links?: ExternalLink[] }).external_links ?? [];
+  const extLinks: ExternalLink[] = fm.external_links ?? [];
+  const url = getAtomUrl({ id: fm.id, type: fm.type });
+  const description = atomDescription(fm.title, fm.type, extractDescription(atom.content));
 
   // Find all atoms that cite this reference
   const allAtoms = await loadAtoms();
@@ -65,6 +63,14 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
+      {fm.work && (
+        <CitedWorkJsonLd
+          work={fm.work}
+          url={url}
+          description={description}
+          externalLinks={extLinks}
+        />
+      )}
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

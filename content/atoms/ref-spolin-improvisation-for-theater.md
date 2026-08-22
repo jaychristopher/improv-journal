@@ -16,6 +16,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/081014008X" }
 sources: []
+work:
+  type: Book
+  authors: ["Viola Spolin"]
+  name: "Improvisation for the Theater"
+  publisher: "Northwestern University Press"
+  published: "1963"
+  isbn: "081014008X"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

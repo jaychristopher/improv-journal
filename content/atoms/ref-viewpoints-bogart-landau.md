@@ -13,6 +13,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/1559362413" }
 sources: []
+work:
+  type: Book
+  authors: ["Anne Bogart", "Tina Landau"]
+  name: "The Viewpoints Book: A Practical Guide to Viewpoints and Composition"
+  publisher: "Theatre Communications Group"
+  published: "2005"
+  isbn: "1559362413"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

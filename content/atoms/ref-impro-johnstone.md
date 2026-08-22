@@ -14,6 +14,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0878301178" }
 sources: []
+work:
+  type: Book
+  authors: ["Keith Johnstone"]
+  name: "Impro: Improvisation and the Theatre"
+  publisher: "Faber & Faber"
+  published: "1979"
+  isbn: "0878301178"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

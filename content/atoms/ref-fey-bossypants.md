@@ -13,6 +13,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0316056898" }
 sources: []
+work:
+  type: Book
+  authors: ["Tina Fey"]
+  name: "Bossypants"
+  publisher: "Reagan Arthur Books / Little, Brown and Company"
+  published: "2011"
+  isbn: "0316056898"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

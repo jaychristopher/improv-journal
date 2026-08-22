@@ -69,6 +69,30 @@ export interface SourceFrontmatter {
   updated: string;
 }
 
+export interface ExternalLink {
+  label: string;
+  url: string;
+}
+
+/** schema.org type emitted for a reference atom's cited work. */
+export type WorkType = "Book" | "Blog" | "PodcastSeries";
+
+/**
+ * Bibliographic detail for a `reference` atom, used to emit schema.org
+ * entity markup so search engines can resolve the page to the real work.
+ */
+export interface CitedWork {
+  type: WorkType;
+  authors: string[];
+  /** Full published title, which may be longer than the atom's display title. */
+  name: string;
+  publisher?: string;
+  /** Publication year, or omitted for continuously updated works. */
+  published?: string;
+  /** ISBN-10 as printed; omitted where the work has no ISBN. */
+  isbn?: string;
+}
+
 export interface AtomFrontmatter {
   id: string;
   title: string;
@@ -77,6 +101,8 @@ export interface AtomFrontmatter {
   tags: string[];
   links: Link[];
   sources: string[]; // IDs of sources this atom was extracted from
+  external_links?: ExternalLink[];
+  work?: CitedWork; // only on `reference` atoms
   created: string; // ISO date
   updated: string; // ISO date
 }

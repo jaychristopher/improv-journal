@@ -15,6 +15,10 @@ external_links:
   - { label: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/improv-nerd-with-jimmy-carrane/id587855360" }
   - { label: "Spotify", url: "https://open.spotify.com/show/0sSFAmOyOBBOqJCVlJBFlH" }
 sources: []
+work:
+  type: PodcastSeries
+  authors: ["Jimmy Carrane"]
+  name: "Improv Nerd"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

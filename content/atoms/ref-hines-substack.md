@@ -16,6 +16,10 @@ links:
 external_links:
   - { label: "Substack", url: "https://willhines.substack.com" }
 sources: []
+work:
+  type: Blog
+  authors: ["Will Hines"]
+  name: "Improv Nonsense"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

@@ -11,6 +11,12 @@ links:
   - { id: be-present, relation: illustrates }
 external_links: []
 sources: []
+work:
+  type: Book
+  authors: ["Daniel Kahneman"]
+  name: "Attention and Effort"
+  publisher: "Prentice-Hall"
+  published: "1973"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

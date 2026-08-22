@@ -14,6 +14,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0394750594" }
 sources: []
+work:
+  type: Book
+  authors: ["Sanford Meisner", "Dennis Longwell"]
+  name: "Sanford Meisner on Acting"
+  publisher: "Vintage Books"
+  published: "1987"
+  isbn: "0394750594"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

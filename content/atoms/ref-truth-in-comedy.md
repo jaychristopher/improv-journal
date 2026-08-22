@@ -15,6 +15,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/1566080037" }
 sources: []
+work:
+  type: Book
+  authors: ["Charna Halpern", "Del Close", "Kim \"Howard\" Johnson"]
+  name: "Truth in Comedy: The Manual of Improvisation"
+  publisher: "Meriwether Publishing"
+  published: "1994"
+  isbn: "1566080037"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

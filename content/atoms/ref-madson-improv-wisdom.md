@@ -14,6 +14,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0307341550" }
 sources: []
+work:
+  type: Book
+  authors: ["Patricia Ryan Madson"]
+  name: "Improv Wisdom: Don't Prepare, Just Show Up"
+  publisher: "Bell Tower"
+  published: "2005"
+  isbn: "0307341550"
 created: "2026-04-04"
 updated: "2026-04-04"
 ---

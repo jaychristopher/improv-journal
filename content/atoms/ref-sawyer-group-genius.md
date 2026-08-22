@@ -13,6 +13,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0465071937" }
 sources: []
+work:
+  type: Book
+  authors: ["Keith Sawyer"]
+  name: "Group Genius: The Creative Power of Collaboration"
+  publisher: "Basic Books"
+  published: "2007"
+  isbn: "0465071937"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---

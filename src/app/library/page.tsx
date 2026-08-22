@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadAtoms } from "@/lib/content";
+import type { ExternalLink } from "@/lib/schema";
+import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Reading List",
@@ -10,11 +12,6 @@ export const metadata: Metadata = {
     "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
   alternates: { canonical: "/library" },
 };
-
-interface ExternalLink {
-  label: string;
-  url: string;
-}
 
 const TIERS: { label: string; description: string; ids: string[] }[] = [
   {
@@ -75,8 +72,36 @@ export default async function LibraryPage() {
     }
   }
 
+  // CollectionPage/ItemList markup ties the individual work entities together
+  // so the bibliography is readable as one curated list.
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${SITE_URL}/library`,
+    name: "The Reading List",
+    description:
+      "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
+    url: `${SITE_URL}/library`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: TIERS.flatMap((tier) => tier.ids)
+        .map((id) => refMap.get(id))
+        .filter((atom) => atom !== undefined)
+        .map((atom, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${SITE_URL}/library/${atom.frontmatter.id}`,
+          name: atom.frontmatter.work?.name ?? atom.frontmatter.title,
+        })),
+    },
+  };
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Library" }]} />
 
       <header className="mb-12">
@@ -97,8 +122,7 @@ export default async function LibraryPage() {
                 const atom = refMap.get(id);
                 if (!atom) return null;
                 const fm = atom.frontmatter;
-                const extLinks: ExternalLink[] =
-                  (fm as unknown as { external_links?: ExternalLink[] }).external_links ?? [];
+                const extLinks: ExternalLink[] = fm.external_links ?? [];
                 const cites = citeCounts.get(id) ?? 0;
 
                 // Extract first sentence for preview

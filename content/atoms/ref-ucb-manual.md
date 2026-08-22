@@ -19,6 +19,13 @@ links:
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0989387801" }
 sources: []
+work:
+  type: Book
+  authors: ["Matt Besser", "Ian Roberts", "Matt Walsh"]
+  name: "Upright Citizens Brigade Comedy Improvisation Manual"
+  publisher: "Comedy Council of Nicea"
+  published: "2013"
+  isbn: "0989387801"
 created: "2026-04-05"
 updated: "2026-04-05"
 ---
