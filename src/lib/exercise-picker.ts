@@ -67,6 +67,17 @@ export async function getPickerExercises(
 }
 
 /** Every level/focus pair that actually has exercises behind it. */
+/**
+ * The point at which a facet is a real answer rather than a promise.
+ *
+ * The gate used to be "at least one". That published four pages whose title
+ * offered a category of exercises and whose body listed a single one — and two
+ * of those, advanced/courage and advanced/physicality, resolved to the same
+ * lone exercise, so they were byte-identical pages competing under different
+ * titles. Three is the smallest number that gives a reader a choice.
+ */
+export const MIN_INDEXABLE_EXERCISES = 3;
+
 export async function getPopulatedCombinations(): Promise<{ level: string; focus: string }[]> {
   const combos: { level: string; focus: string }[] = [];
 
@@ -78,6 +89,31 @@ export async function getPopulatedCombinations(): Promise<{ level: string; focus
   }
 
   return combos;
+}
+
+/**
+ * Whether a facet earns a place in the index.
+ *
+ * Under-populated facets stay reachable — the picker links to them and they
+ * answer the question honestly, just briefly — but they are marked noindex and
+ * kept out of the sitemap, which is the standard treatment for thin faceted
+ * pages and stops them competing with the level page above them.
+ */
+export async function isIndexableCombination(level: string, focus: string): Promise<boolean> {
+  const focusConfig = FOCUSES.find((f) => f.slug === focus);
+  if (!focusConfig) return false;
+  const exercises = await getPickerExercises(level, focusConfig.tag, focusConfig.extraTags);
+  return exercises.length >= MIN_INDEXABLE_EXERCISES;
+}
+
+/** The facets worth listing in a sitemap. */
+export async function getIndexableCombinations(): Promise<{ level: string; focus: string }[]> {
+  const combos = await getPopulatedCombinations();
+  const kept: { level: string; focus: string }[] = [];
+  for (const combo of combos) {
+    if (await isIndexableCombination(combo.level, combo.focus)) kept.push(combo);
+  }
+  return kept;
 }
 
 /** Whether a given level/focus pair is published. */

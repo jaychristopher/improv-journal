@@ -8,7 +8,7 @@ import {
   loadShows,
   loadThreads,
 } from "@/lib/content";
-import { getPopulatedCombinations } from "@/lib/exercise-picker";
+import { getIndexableCombinations } from "@/lib/exercise-picker";
 import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { SITE_URL } from "@/lib/seo";
 
@@ -113,7 +113,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
   // Only combinations that actually have exercises are published, so only
   // those belong in the sitemap.
-  for (const combo of await getPopulatedCombinations()) {
+  for (const combo of await getIndexableCombinations()) {
     entries.push({
       url: `${SITE_URL}/tools/exercise-picker/${combo.level}/${combo.focus}`,
       lastModified: newest(atomsOfType("exercise")),

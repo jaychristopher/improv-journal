@@ -188,7 +188,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice)
 - [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the...
 
-## Exercises and games (22)
+## Exercises and games (24)
 
 - [Big Booty](https://www.physicsofconnection.com/practice/exercises/big-booty): working under enough load that deliberation becomes impossible. A rhythm game whose real function is to flood attention until players stop planning and start...
 - [Blind Offer](https://www.physicsofconnection.com/practice/exercises/blind-offer): The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them.
@@ -210,6 +210,8 @@ This file is generated from the site's content, so it lists everything rather th
 - [Questions Only](https://www.physicsofconnection.com/practice/exercises/questions-only): noticing how much of a conversation is deferral. Two players hold a scene in which every line must be a question — and the exercise is most useful for what it...
 - [Silent Space Work Scene](https://www.physicsofconnection.com/practice/exercises/space-work-scene): Space work — building and maintaining a shared physical environment with no dialogue.
 - [Status Transfer](https://www.physicsofconnection.com/practice/exercises/status-transfer): Status awareness and the ability to shift status dynamically within a scene.
+- [The Machine](https://www.physicsofconnection.com/practice/exercises/the-machine): building something collectively out of parts nobody negotiated. One player starts a repeating movement and sound; everyone else joins on, one at a time, until...
+- [What Are You Doing?](https://www.physicsofconnection.com/practice/exercises/what-are-you-doing): committing to a physical action while your mouth is doing something else. The standard first exposure to space work, and the reason most improvisers can mime...
 - [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
 - [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 

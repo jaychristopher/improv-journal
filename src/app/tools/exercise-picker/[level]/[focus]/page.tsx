@@ -3,7 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { getPickerExercises, getPopulatedCombinations } from "@/lib/exercise-picker";
+import {
+  getPickerExercises,
+  getPopulatedCombinations,
+  isIndexableCombination,
+} from "@/lib/exercise-picker";
 import { metaDescription, pageTitle } from "@/lib/seo";
 
 import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
@@ -29,10 +33,16 @@ export async function generateMetadata({
     `${levelConfig.label}-level improv exercises focused on ${focusConfig.label.toLowerCase()}. ${focusConfig.description}`,
   );
 
+  // A facet with fewer than three exercises is still worth serving and not
+  // worth indexing. `follow` stays on so the exercises it links to still
+  // collect the signal.
+  const indexable = await isIndexableCombination(level, focus);
+
   return {
     title: pageTitle(title),
     description,
     alternates: { canonical: `/tools/exercise-picker/${level}/${focus}` },
+    ...(indexable ? {} : { robots: { index: false, follow: true } }),
   };
 }
 
