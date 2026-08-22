@@ -25,6 +25,7 @@ const NAV_SECTIONS: NavSection[] = [
     href: "/practice",
     label: "Practice",
     children: [
+      { href: "/practice", label: "Overview" },
       { href: "/improv-games", label: "Improv Games" },
       { href: "/practice/exercises", label: "Exercises" },
       { href: "/practice/techniques", label: "Techniques" },
@@ -36,6 +37,7 @@ const NAV_SECTIONS: NavSection[] = [
     href: "/resources",
     label: "Resources",
     children: [
+      { href: "/resources", label: "Overview" },
       { href: "/paths", label: "Learning Paths" },
       { href: "/guides", label: "Guides" },
       { href: "/listen", label: "Listen" },
@@ -76,20 +78,25 @@ function NavDropdown({ section }: { section: NavSection }) {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      {open && (
-        <div className="bg-surface border-foreground/10 absolute top-full left-0 z-20 mt-2 min-w-[160px] rounded-lg border py-2 shadow-lg">
-          {section.children.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="text-foreground/50 hover:text-foreground/80 hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      )}
+      {/* Rendered unconditionally and hidden with CSS: mounting this only when
+          `open` kept every destination out of the server-rendered HTML, leaving
+          the site's main navigation invisible to crawlers. */}
+      <div
+        className={`bg-surface border-foreground/10 absolute top-full left-0 z-20 mt-2 min-w-[160px] rounded-lg border py-2 shadow-lg ${
+          open ? "block" : "hidden"
+        }`}
+      >
+        {section.children.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            onClick={() => setOpen(false)}
+            className="text-foreground/50 hover:text-foreground/80 hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
+          >
+            {item.label}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
@@ -156,33 +163,35 @@ export function Nav() {
       </div>
 
       {/* Mobile menu — full viewport overlay */}
-      {mobileOpen && (
-        <div className="bg-background fixed inset-0 top-[49px] z-40 overflow-y-auto px-6 pt-8 pb-12 sm:hidden">
-          {NAV_SECTIONS.map((section) => (
-            <div key={section.href} className="mb-8">
-              <Link
-                href={section.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-foreground/80 block text-2xl font-semibold"
-              >
-                {section.label}
-              </Link>
-              <div className="mt-2 space-y-2 pl-4">
-                {section.children.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-foreground/50 hover:text-foreground/70 block text-lg"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
+      <div
+        className={`bg-background fixed inset-0 top-[49px] z-40 overflow-y-auto px-6 pt-8 pb-12 sm:hidden ${
+          mobileOpen ? "block" : "hidden"
+        }`}
+      >
+        {NAV_SECTIONS.map((section) => (
+          <div key={section.href} className="mb-8">
+            <Link
+              href={section.href}
+              onClick={() => setMobileOpen(false)}
+              className="text-foreground/80 block text-2xl font-semibold"
+            >
+              {section.label}
+            </Link>
+            <div className="mt-2 space-y-2 pl-4">
+              {section.children.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-foreground/50 hover:text-foreground/70 block text-lg"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
-          ))}
-        </div>
-      )}
+          </div>
+        ))}
+      </div>
     </nav>
   );
 }
