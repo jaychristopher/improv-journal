@@ -613,6 +613,43 @@ export async function getSourceBySlug(slug: string) {
   return sources.find((s) => s.frontmatter.id === slug);
 }
 
+/**
+ * Display title for an atom, qualified by type when another atom shares it.
+ *
+ * Two atoms were both titled "Organic Opening" — one a technique, one an
+ * exercise — so their pages carried identical titles and competed with each
+ * other for the same query. Qualifying only on collision leaves every
+ * unambiguous title alone.
+ */
+const ATOM_TYPE_QUALIFIER: Record<string, string> = {
+  exercise: "Exercise",
+  technique: "Technique",
+  pedagogy: "Teaching Method",
+  format: "Format",
+  definition: "Definition",
+  principle: "Principle",
+  law: "Law",
+  antipattern: "Failure Mode",
+  pattern: "Pattern",
+  framework: "Framework",
+  insight: "Insight",
+  reference: "Reference",
+};
+
+export async function getAtomDisplayTitle(atom: {
+  frontmatter: { id: string; title: string; type: string };
+}): Promise<string> {
+  const atoms = await loadAtoms();
+  const shared = atoms.filter(
+    (a) =>
+      a.frontmatter.title === atom.frontmatter.title && a.frontmatter.id !== atom.frontmatter.id,
+  );
+  if (shared.length === 0) return atom.frontmatter.title;
+
+  const qualifier = ATOM_TYPE_QUALIFIER[atom.frontmatter.type];
+  return qualifier ? `${atom.frontmatter.title} (${qualifier})` : atom.frontmatter.title;
+}
+
 // ─── Bridges ────────────────────────────────────────────────────────────────
 
 export function loadBridges() {

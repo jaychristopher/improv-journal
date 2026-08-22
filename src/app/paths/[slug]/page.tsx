@@ -16,7 +16,7 @@ import {
   loadPaths,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle, qualifyIfSiteName } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const paths = await loadPaths();
@@ -33,15 +33,18 @@ export async function generateMetadata({
   if (!pathData) return {};
 
   return {
-    title: pageTitle(pathData.frontmatter.title),
+    title: pageTitle(qualifyIfSiteName(pathData.frontmatter.title, "Learning Path")),
     description: pathData.frontmatter.description,
     alternates: { canonical: `/paths/${slug}` },
     openGraph: {
-      title: pathData.frontmatter.title,
+      title: qualifyIfSiteName(pathData.frontmatter.title, "Learning Path"),
       description: pathData.frontmatter.description,
       url: `/paths/${slug}`,
       type: "article",
-      images: ogImages(pathData.frontmatter.title, "Learning Path"),
+      images: ogImages(
+        qualifyIfSiteName(pathData.frontmatter.title, "Learning Path"),
+        "Learning Path",
+      ),
     },
   };
 }

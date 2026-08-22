@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
-import { getAtomBySlug, getAtomUrl, loadAtoms } from "@/lib/content";
+import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
 import { atomDescription, extractDescription, ogImages, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -20,6 +20,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const atom = await getAtomBySlug(slug);
   if (!atom) return {};
+  const displayTitle = await getAtomDisplayTitle(atom);
   const desc = atomDescription(
     atom.frontmatter.title,
     atom.frontmatter.type,
@@ -27,15 +28,15 @@ export async function generateMetadata({
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
-    title: pageTitle(atom.frontmatter.title),
+    title: pageTitle(displayTitle),
     description: desc,
     alternates: { canonical: url },
     openGraph: {
-      title: atom.frontmatter.title,
+      title: displayTitle,
       description: desc,
       url,
       type: "article",
-      images: ogImages(atom.frontmatter.title, "Format"),
+      images: ogImages(displayTitle, "Format"),
     },
   };
 }

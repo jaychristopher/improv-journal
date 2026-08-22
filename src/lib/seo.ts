@@ -107,6 +107,17 @@ export const DESCRIPTION_MAX = 158;
 const BRAND_SUFFIX_LENGTH = " | ".length + SITE_NAME.length;
 
 /**
+ * Qualify a title that would otherwise be indistinguishable from the homepage.
+ *
+ * A learning path and a podcast both share the site's name. Left alone they
+ * render the same <title> as the homepage and as each other, so the three
+ * compete for the same query.
+ */
+export function qualifyIfSiteName(title: string, qualifier: string): string {
+  return title.trim().toLowerCase() === SITE_NAME.toLowerCase() ? `${title} (${qualifier})` : title;
+}
+
+/**
  * Title for a page's `metadata.title`.
  *
  * The root layout appends " | The Physics of Connection" to every title. On a
@@ -116,6 +127,9 @@ const BRAND_SUFFIX_LENGTH = " | ".length + SITE_NAME.length;
  * only where it genuinely fits.
  */
 export function pageTitle(title: string): string | { absolute: string } {
+  // A page named after the site would otherwise render the brand twice —
+  // "The Physics of Connection | The Physics of Connection".
+  if (title.toLowerCase().includes(SITE_NAME.toLowerCase())) return { absolute: title };
   if (title.length + BRAND_SUFFIX_LENGTH <= TITLE_MAX) return title;
   return { absolute: title };
 }

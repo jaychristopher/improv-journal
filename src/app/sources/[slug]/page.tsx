@@ -25,6 +25,9 @@ export async function generateMetadata({
     title: pageTitle(source.frontmatter.title),
     description: desc,
     alternates: { canonical: `/sources/${slug}` },
+    // Raw transcript, cited by no atom and linked from nowhere: keep it
+    // reachable for provenance without letting it compete in search.
+    robots: { index: false, follow: true },
     openGraph: {
       title: source.frontmatter.title,
       description: desc,

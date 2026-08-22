@@ -20,15 +20,15 @@ export async function generateMetadata({
   const show = await getShowBySlug(showSlug);
   if (!show) return {};
   return {
-    title: pageTitle(show.frontmatter.title),
+    title: pageTitle(`${show.frontmatter.title} Podcast`),
     description: show.frontmatter.description,
     alternates: { canonical: `/listen/${showSlug}` },
     openGraph: {
-      title: show.frontmatter.title,
+      title: `${show.frontmatter.title} Podcast`,
       description: show.frontmatter.description,
       url: `/listen/${showSlug}`,
       type: "article",
-      images: ogImages(show.frontmatter.title, "Listen"),
+      images: ogImages(`${show.frontmatter.title} Podcast`, "Listen"),
     },
   };
 }
