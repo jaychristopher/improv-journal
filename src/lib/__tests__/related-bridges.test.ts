@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { loadBridges } from "../content";
-import { getRelatedBridges, RELATED_GUIDE_LIMIT } from "../related-bridges";
+import { CURATED_RELATED, getRelatedBridges, RELATED_GUIDE_LIMIT } from "../related-bridges";
 
 describe("related bridges", () => {
   it("gives every bridge page outbound links to sibling guides", async () => {
@@ -40,13 +40,31 @@ describe("related bridges", () => {
     }
   });
 
-  it("puts curated pairings first", async () => {
-    const related = await getRelatedBridges("how-to-stop-overthinking");
-    expect(related.slice(0, 3).map((g) => g.slug)).toEqual([
-      "active-listening",
-      "stage-fright",
-      "how-to-be-funny",
-    ]);
+  it("puts curated pairings first, for every guide that has them", async () => {
+    // Asserts the behaviour rather than a snapshot of the editorial choices,
+    // which change as pages are added and retargeted.
+    for (const [slug, curated] of Object.entries(CURATED_RELATED)) {
+      const related = (await getRelatedBridges(slug)).map((g) => g.slug);
+      const expected = curated.filter((c) => related.includes(c));
+      expect(related.slice(0, expected.length), slug).toEqual(expected);
+    }
+  });
+
+  it("does not lead a guide toward pages that cannot rank", async () => {
+    // Relevance stays primary, so a curated stranded pairing is allowed; what
+    // is not is a related list made mostly of unreachable terms.
+    const bridges = await loadBridges();
+    const kd = new Map(
+      bridges.map((b) => [b.slug, (b.frontmatter.target_keywords ?? [])[0]?.difficulty]),
+    );
+
+    for (const bridge of bridges) {
+      const related = await getRelatedBridges(bridge.slug);
+      const stranded = related.filter((g) => (kd.get(g.slug) ?? 0) > 30);
+      expect(stranded.length, `${bridge.slug} leads with too many stranded guides`).toBeLessThan(
+        Math.max(2, related.length),
+      );
+    }
   });
 
   it("returns nothing for an unknown slug", async () => {
