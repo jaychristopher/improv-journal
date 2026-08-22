@@ -134,7 +134,7 @@ const BRIDGE_RELATIONS: Record<
     exercises: ["emotional-honesty-scene", "blind-offer"],
     threads: [{ id: "the-inner-game-expanded", label: "The Inner Game" }],
   },
-  "group-dynamics": {
+  "team-dynamics": {
     exercises: ["mirroring", "group-mind-cultivation", "status-transfer"],
     threads: [{ id: "playing-together-at-the-highest-level", label: "Playing Together" }],
   },

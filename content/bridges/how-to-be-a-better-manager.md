@@ -84,4 +84,4 @@ Three adjustments, all drawn from the sections above:
 
 **Playing both ends of status.** `status-transfer` runs the same scene high, then low, then shifts. If your default is permanently raised — which it now is, structurally — this is where you find out.
 
-For the group-level version of the same problem, see [group dynamics](/group-dynamics) and [collaboration skills](/collaboration-skills).
+For the group-level version of the same problem, see [team dynamics](/team-dynamics) and [collaboration skills](/collaboration-skills).

@@ -85,6 +85,9 @@ export function generateHubRedirects(): {
   return [
     // Retargeted: the page always described people skills, and the term it
     // used to carry has a traffic potential of 30 against 1,100 for this one.
+    // Same retarget: "group dynamics" is the academic phrasing at a traffic
+    // potential of 250; "team dynamics" is what the audience types, at 3,500.
+    { source: "/group-dynamics", destination: "/team-dynamics", permanent: true },
     {
       source: "/interpersonal-communication-skills",
       destination: "/people-skills",

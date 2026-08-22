@@ -97,7 +97,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "psychological-safety",
       "trust-building-exercises",
       "collaboration-skills",
-      "group-dynamics",
+      "team-dynamics",
       "how-to-read-the-room",
       "how-to-give-feedback",
       "emotional-safety",
