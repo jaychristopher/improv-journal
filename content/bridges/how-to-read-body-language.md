@@ -54,6 +54,32 @@ The person with higher status tends to: take up more space, move less, hold eye 
 
 **Practice:** In a group setting, watch the status dynamics instead of individual body language. Who speaks first? Who defers? When someone makes a joke, who do people look at for the reaction? The body language of the *group* tells a story that no individual body tells alone.
 
+## Status: The Most Readable Thing There Is
+
+The third principle above — read the relationship between bodies rather than individual bodies — has a mechanism behind it, and improv named it. Keith Johnstone formalised `status` as relative social position expressed through behaviour rather than title, and it is by some distance the most legible thing a body communicates.
+
+Two clusters of signal, which this site records as observations consistent with Johnstone's framework rather than as a published list of his:
+
+**Reads as high status:** sustained eye contact, stillness, economy of movement, slow speech, taking up space, comfortable silence, not reacting to provocation.
+
+**Reads as low status:** breaking eye contact, fidgeting, fast speech, qualifying statements, taking up less space, filling silence, over-reacting.
+
+Note what is not on either list: no gesture has a fixed meaning. These are patterns of *behaviour under social pressure*, which is why they survive the contextual objection that sinks the crossed-arms school of body-language reading.
+
+**The part that makes it a relationship.** Johnstone's actual insight is not that people signal status — it is that status is complementary. When one person raises, the other feels pressure to lower, and the reverse. Status lives between two people, not inside either one.
+
+This is why reading a single body tells you so little. A person is not fidgeting because they are a fidgety person; they are fidgeting *at* someone. Watch the pair and you can see the seesaw: who yields the eye contact, who fills the silence, who adjusts when the other moves. Two people both playing high produces visible competition. Both playing low produces a conversation where nothing gets decided.
+
+**Your own default is part of what you are reading.** Most people have a habitual status they return to, and it shapes every interaction they are in. If you default low, people will read as higher-status to you than they are to others — not because they changed, but because the seesaw tilts around you. Knowing your own default is the correction factor on all your readings.
+
+## Reading Is Only Half of It
+
+Everything so far is perception, and perception alone is where most body-language advice stops. Improvisers cannot stop there, because a read is worthless until it is acted on — and acting on it is also how you find out whether it was right.
+
+The relevant discipline is that a read is a hypothesis, not a conclusion. `blind-offer` trains exactly this: respond to what someone actually did rather than to what you assumed it meant, then watch what comes back. Most misreadings are not failures of perception. They are reasonable assumptions made early and never checked.
+
+Practically, the check is cheap. Adjust and observe: soften your own status and see whether they expand into the space. Name the observation lightly — "you look like you have thoughts about this" — and let them confirm or correct it. Both give you better information than continuing to watch silently while your first interpretation hardens into certainty.
+
 ## What Body Language Books Get Wrong
 
 ### The myth of universal signals
@@ -77,5 +103,11 @@ Mirroring forces you to track someone's body with your full attention. You can't
 After ten minutes of mirroring, your sensitivity to physical communication is measurably heightened. Not because you learned new signals — because you turned on a capacity that was always there but was being drowned out by your analytical mind.
 
 The irony is beautiful: the way to read body language better is to stop trying to read it and start trying to *feel* it. Your body already knows how. Your mind just needs to get out of the way.
+
+Three more, once mirroring stops feeling difficult:
+
+- **`status-transfer`** — play the same scene high status, then low, then shift mid-scene. Nothing teaches you to see status faster than being made to produce it deliberately.
+- **`space-work-scene`** — a scene with no dialogue at all, built from invisible objects. Removes words as a channel, which forces the physical one open.
+- **`blind-offer`** — respond to an undefined gesture by deciding what it meant. The hypothesis-and-check discipline, isolated.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, status dynamics, and reading physical signals, explore the [Improv for Life](/paths/improv-for-life) path.*
