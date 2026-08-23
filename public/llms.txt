@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (69)
+## Guides (70)
 
 - [21 Questions Game: How to Play, and 181 to Ask](https://www.physicsofconnection.com/21-questions-game): The number is the mechanism. A fixed count removes the polite exit at question six and guarantees an ending, which is the only reason this gets anywhere real.
 - [36 Questions to Fall in Love: The List and the Mechanism](https://www.physicsofconnection.com/36-questions-to-fall-in-love): The full set from Aron's 1997 study, plus what the lists leave out: what the procedure was built to do, and why the escalation does the work.
@@ -92,6 +92,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [This or That Questions: 300 for Warming Up Any Room](https://www.physicsofconnection.com/this-or-that-questions): The cheapest question format there is — one word, nothing to prepare. Which makes it the right tool for a cold room and the wrong one for a warm one.
 - [Trust Building Exercises That Aren't Trust Falls](https://www.physicsofconnection.com/trust-building-exercises): Trust is not built by dramatic gestures but by small repeated exchanges. Seven exercises that rehearse them — for a team, or for two people.
 - [Types of Listening: The Three Modes That Matter](https://www.physicsofconnection.com/types-of-listening): There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation.
+- [Anne Bogart Viewpoints: The Nine Channels](https://www.physicsofconnection.com/viewpoints): Bogart and Landau turned Overlie's six Viewpoints into nine channels of attention. What each one is, how they are trained, and where the method fails.
 - [Virtual Team Building Activities That Work on a Call](https://www.physicsofconnection.com/virtual-team-building-activities): Most virtual team building is an in-person activity ported onto video, where every constraint that made it work has gone. These are built for the call itself.
 - [What Is Improv? (It's Not What You Think)](https://www.physicsofconnection.com/what-is-improv): Improv isn't comedy — it's the art of building shared reality in real time with no script. Here's what actually happens on stage and why it matters.
 - [Would You Rather Questions: 164 That Split the Room](https://www.physicsofconnection.com/would-you-rather-questions): A would you rather only works if the room genuinely divides. The choice is never the point — the defence is, and most lists get that exactly backwards.

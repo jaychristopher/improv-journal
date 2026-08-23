@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { loadBridges } from "../content";
+import { loadAtoms, loadBridges } from "../content";
 
 /**
  * Two guides must not be substantially the same prose.
@@ -67,6 +67,70 @@ describe("guide prose", () => {
             `${a.slug} and ${b.slug} share ${shared} runs (${(share * 100).toFixed(1)}% of the smaller)`,
           );
         }
+      }
+    }
+
+    expect(offenders).toEqual([]);
+  });
+
+  /**
+   * A guide must not restate the atom it is built on.
+   *
+   * The check above only ever compared guides with each other, so a guide that
+   * duplicated an atom passed silently. The viewpoints guide was written the
+   * day after the viewpoints atom and reproduced fifteen of its passages,
+   * including a twenty-three word sentence — caught by hand, not by this file.
+   * Two pages on one site arguing the same thing in the same words is the
+   * cannibalisation these guides are supposed to avoid.
+   *
+   * Same thresholds as the guide-to-guide check. Some overlap is unavoidable:
+   * both pages name the same technique and quote the same terms, which puts
+   * ordinary pairs around 4%. Three pairs predate this check and exceed it —
+   * they are listed rather than tolerated by a raised threshold, so that a new
+   * offender still fails. They are real duplication and still need rewriting.
+   */
+  /**
+   * Below this, a percentage is noise. The shortest reference stubs hold about
+   * fifty runs, so quoting one sentence from a book citation scores 10% — the
+   * denominator is small, not the borrowing large. Real duplication clears this
+   * comfortably: the viewpoints guide shared eighty-eight runs with its atom.
+   */
+  const MIN_RUNS_FOR_SHARE = 12;
+
+  const KNOWN_UNFIXED = new Set([
+    "framing-effect ~ framing-as-angle-of-approach",
+    "how-to-read-body-language ~ status",
+    "stage-fright ~ failing-forward",
+  ]);
+
+  it("does not restate the atoms it is built on", async () => {
+    const bridges = (await loadBridges()).map((b) => ({
+      slug: b.slug,
+      set: shingles(b.content),
+    }));
+    const atoms = (await loadAtoms()).map((a) => ({
+      slug: a.slug,
+      set: shingles(a.content),
+    }));
+
+    // A broken extractor would produce empty sets and pass silently.
+    expect(bridges.filter((b) => b.set.size > 100).length).toBeGreaterThan(40);
+    expect(atoms.filter((a) => a.set.size > 20).length).toBeGreaterThan(40);
+
+    const offenders: string[] = [];
+    for (const bridge of bridges) {
+      for (const atom of atoms) {
+        if (bridge.set.size === 0 || atom.set.size === 0) continue;
+        const [small, large] =
+          bridge.set.size <= atom.set.size ? [bridge.set, atom.set] : [atom.set, bridge.set];
+        let shared = 0;
+        for (const run of small) if (large.has(run)) shared += 1;
+        const share = shared / small.size;
+        const overShare = share > MAX_SHARE && shared >= MIN_RUNS_FOR_SHARE;
+        if (!overShare && shared <= MAX_RUNS) continue;
+        const pair = `${bridge.slug} ~ ${atom.slug}`;
+        if (KNOWN_UNFIXED.has(pair)) continue;
+        offenders.push(`${pair} share ${shared} runs (${(share * 100).toFixed(1)}%)`);
       }
     }
 

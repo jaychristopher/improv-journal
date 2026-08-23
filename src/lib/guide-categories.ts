@@ -127,6 +127,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "framing-effect",
       "theatre-games",
       "improv-prompts",
+      "viewpoints",
     ],
   },
 ];
