@@ -1,6 +1,6 @@
 ---
-title: "Improv Prompts: 110 Scene Starters and How to Use Them"
-description: "A hundred and ten prompts you can use tonight — relationships, first lines, locations, situations — and why the zany ones make worse scenes."
+title: "Improv Prompts: 140 Scene Starters for Class or Stage"
+description: "140 prompts you can use tonight — relationships, first lines, locations, classroom sets — plus how to run a round with a full class."
 target_keywords:
   - { keyword: "improv prompts", volume: 700, difficulty: 0, traffic_potential: 1700, parent: "improv prompts" }
   - { keyword: "improv ideas", volume: 300, parent: "improv prompts", difficulty: 0, traffic_potential: 1700 }
@@ -8,6 +8,9 @@ target_keywords:
   - { keyword: "improv topics", volume: 90, parent: "improv prompts", difficulty: 0, traffic_potential: 1600 }
   - { keyword: "improv scene ideas", volume: 50, parent: "improv prompts", difficulty: 0, traffic_potential: 1700 }
   - { keyword: "improv situations", volume: 20, parent: "improv prompts", difficulty: 0, traffic_potential: 1600 }
+serp_checked: "2026-08-23"
+serp_min_dr: 30
+serp_verdict: winnable
 entry_atoms: [suggestion, base-reality, initiation, obvious-choice, offers]
 entry_path: beginner-foundations
 primary_problem: "you need something to start a scene with and everything you think of is either boring or too clever"
@@ -16,14 +19,14 @@ primary_cta_target: first-line-drill
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
-# Improv Prompts: 110 Scene Starters and How to Use Them
+# Improv Prompts: 140 Scene Starters for Class or Stage
 
 Most lists of improv prompts are lists of premises — a dentist who is afraid of teeth, a wedding where nobody knows the bride. They are fun to read and they make bad scenes, because a premise is a joke that has already happened. The players spend the next three minutes illustrating it.
 
-What follows is a hundred and ten prompts organised by what they actually give you, plus the part the lists leave out: what to do with one once you have it.
+What follows is a hundred and forty prompts organised by what they actually give you, plus the parts the lists leave out: what to do with one once you have it, and how to run a round with a class of thirty.
 
 ## What Makes a Prompt Work
 
@@ -164,7 +167,7 @@ If you are running a show and want better material than "banana," ask for the th
 - What's a smell that takes you somewhere?
 - What was your first job's uniform?
 
-## Prompts for Teachers and Warm-Ups
+## Using Prompts in a Drama Class
 
 For a class or a corporate room, the prompt has a second job: it has to be safe enough that nobody has to be funny to succeed. `safety-in-the-room` is the precondition, and these are chosen to be answerable by anyone.
 
@@ -178,6 +181,86 @@ For a class or a corporate room, the prompt has a second job: it has to be safe 
 - A scene played entirely in one corner of the room
 - Two people who have to whisper
 - Someone showing another person around a place they love
+
+### Choosing prompts that are safe in a school room
+
+Three filters, applied before the lesson rather than during it.
+
+**Nothing that lands on somebody's actual life.** Prompts about parents, money, family arguments or bodies are the ones that produce a scene a student cannot get out of, and you will not know in advance whose life it is. Locations and shared tasks are safe; households are not.
+
+**Nothing requiring adult knowledge.** A prompt like "a tense divorce mediation" gives a fourteen-year-old nothing to play except an impression of a film. Prompts should sit inside experience the group has actually had — queues, shops, rehearsals, being new somewhere.
+
+**Nothing that rewards being the loudest.** Any prompt with a built-in performer role — a game show host, a stand-up, a ringmaster — hands the scene to whoever already dominates the room and casts everyone else as audience.
+
+### Running a round with a full class
+
+The real problem in a classroom is not the prompts. It is that two students are playing and twenty-eight are watching, and a watching student who is not learning anything is a student who is about to become a behaviour problem.
+
+**Split into small groups and run them at the same time.** Groups of three, all playing simultaneously in different corners with the same prompt, gives everyone about ten times the stage time and removes the audience entirely. It is noisier and it is worth it. Bring it back to the front only once the room is warm.
+
+**Give a time limit and hold it.** Sixty to ninety seconds. A scene cut early leaves a group wanting another go; a scene left to die teaches them that this is embarrassing.
+
+**Use the same prompt for every group in a round.** They discover that six groups given one prompt produce six unrelated scenes, which is the entire lesson about prompts and is more convincing demonstrated than asserted.
+
+**Sit the sides down and give them a job.** If you do run scenes at the front, the watchers need a task — spot the moment the scene changed, notice where the two characters are in relation to each other — or they are just an audience, and audiences heckle.
+
+### Which prompts suit which age
+
+Complementary to the game-by-age guidance on [theatre games](/theatre-games), which covers the exercises rather than the starting points.
+
+**Under about eleven**, use prompts that name an activity rather than a relationship — building something, looking for something, arriving somewhere. Children play tasks confidently and relationships self-consciously.
+
+**Eleven to fourteen**, the whole obstacle is being watched, so prompts should give the pair something to do with their hands and eyes other than face the room. Anything with a shared object in it works.
+
+**Fifteen and up**, relationship prompts become the useful ones, because a group that age can sustain a situation. The failure mode inverts: younger groups go silly, older groups go clever, and clever is much harder to undo.
+
+### Twenty more that work in a school room
+
+- Two people trying to move something heavy
+- Two people who have arrived on the wrong day
+- Someone returning something they broke
+- Two people sheltering from rain
+- A first day at a place everyone else already knows
+- Two people who have to be quiet for different reasons
+- Someone explaining a rule they do not understand themselves
+- Two people sharing the last of something
+- A person waiting for someone who is very late
+- Two people assembling a tent
+- Someone giving a tour of a place they dislike
+- Two people who both think they are in charge
+- A person trying to leave politely
+- Two people looking for the same missing thing
+- Someone learning a skill from a person with no patience
+- Two people who are early and have nothing to do
+- A person returning to a place after a long time
+- Two people carrying something fragile
+- Someone practising something in private who is discovered
+- Two people who disagree about which way to go
+
+### Ten for a corporate or team session
+
+Adults arrive more defended than teenagers and the risk is different — nobody will refuse, they will simply stay clever and safe. These give them a task to be honest inside.
+
+- Two colleagues who have to deliver the same news separately
+- Two people handing over a job, one of them leaving
+- Someone showing a new starter where everything actually is
+- Two people who have been in the same meeting and heard different things
+- A person asking for help they do not want to need
+- Two people fixing something neither of them understands
+- Someone thanking a person who does not remember doing it
+- Two people waiting for a decision made elsewhere
+- A person explaining their work to somebody outside it
+- Two people who agree completely and have to decide anyway
+
+### What actually goes wrong
+
+**They go for the joke and the scene ends in fifteen seconds.** Expected, and not a discipline problem. Give the next round a prompt with a physical task in it, because it is difficult to gag while genuinely trying to lift something.
+
+**Somebody freezes.** Almost always the prompt asked them to invent rather than to do. Restart them on a task — hand them an object and a reason to move it. Freezing is a symptom of the starting point, not of the student.
+
+**The room turns into an audience for two confident students.** The fix is structural, not motivational: go back to simultaneous small groups until the ratio of playing to watching is right again.
+
+**It becomes chaos.** Usually the round ran long. Shorten it, and cut scenes while they are still working rather than waiting for a natural ending, which will not arrive.
 
 ## Why the Absurd Ones Backfire
 
