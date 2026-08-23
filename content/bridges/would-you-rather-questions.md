@@ -1,9 +1,16 @@
 ---
-title: "Would You Rather Questions: 100 That Split the Room"
+title: "Would You Rather Questions: 164 That Split the Room"
 description: "A would you rather only works if the room genuinely divides. The choice is never the point — the defence is, and most lists get that exactly backwards."
 target_keywords:
   - { keyword: "would you rather questions", volume: 190000, difficulty: 11, traffic_potential: 122000, parent: "would you rather questions" }
   - { keyword: "would you rather questions for kids", volume: 38000, difficulty: 2, traffic_potential: 32000, parent: "would you rather questions" }
+  - { keyword: "would you rather for kids", volume: 13000, difficulty: 1, traffic_potential: 33000, parent: "would you rather questions" }
+  - { keyword: "would you rather questions for couples", volume: 5600, difficulty: 3, traffic_potential: 9800, parent: "would you rather questions" }
+  - { keyword: "crazy would you rather questions", volume: 5600, difficulty: 2, traffic_potential: 139000, parent: "would you rather questions" }
+  - { keyword: "would you rather questions adults", volume: 4900, difficulty: 12, traffic_potential: 123000, parent: "would you rather questions" }
+  - { keyword: "fun would you rather questions", volume: 2600, difficulty: 0, traffic_potential: 137000, parent: "would you rather questions" }
+  - { keyword: "weird would you rather questions", volume: 2000, difficulty: 6, traffic_potential: 137000, parent: "would you rather questions" }
+  - { keyword: "would you rather questions extreme", volume: 1800, difficulty: 2, traffic_potential: 122000, parent: "would you rather questions" }
   - { keyword: "good would you rather questions", volume: 7900, difficulty: 8, traffic_potential: 139000, parent: "would you rather questions" }
   - { keyword: "would you rather questions for adults", volume: 6000, difficulty: 11, traffic_potential: 123000, parent: "would you rather questions" }
   - { keyword: "hard would you rather questions", volume: 3800, difficulty: 3, traffic_potential: 123000, parent: "would you rather questions" }
@@ -22,7 +29,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Would You Rather Questions: 100 That Split the Room
+# Would You Rather Questions: 164 That Split the Room
 
 Most would you rather questions fail in the first two seconds, and they fail in one of exactly two ways.
 
@@ -155,6 +162,91 @@ Slower, and better late in an evening than early. These are less about the choic
 - Be the reason somebody changed, or never know that you were?
 - Have made peace with your childhood, or with your future?
 - Know what you are for, or be free of the question?
+
+## Fun Would You Rather Questions
+
+Light, quick, and nothing at stake. These are the ones for the first ten minutes, before anybody is willing to defend a position — the point is momentum rather than insight.
+
+- Have a personal chef, or a personal driver?
+- Be able to teleport home, or anywhere but home?
+- Always have perfect weather, or never queue again?
+- Have every song you hear be one you like, or every film be one you have not seen?
+- Have unlimited free books, or unlimited free coffee?
+- Be able to speak to babies, or to plants?
+- Never have to charge anything again, or never have to clean anything again?
+- Have a house with an extra room, or a garden twice the size?
+- Be able to eat anything with no consequences, or sleep any amount and feel great?
+- Always get the window seat, or always get an upgrade to the next class?
+- Have every parcel arrive early, or every meeting end early?
+- Be able to change one thing about your commute, or one thing about your kitchen?
+- Have your favourite meal cooked perfectly by somebody else, or cook it perfectly yourself?
+- Get one extra hour in the morning, or one extra hour at night?
+- Have a shed at the bottom of the garden, or a balcony at the top of the house?
+- Always know the fastest route, or always find a parking space?
+- Be able to skip any queue, or mute any noise?
+- Have a permanent good hair day, or permanently comfortable shoes?
+- Never have a flat battery, or never have a slow connection?
+- Have somebody else do your admin, or your laundry?
+
+## Would You Rather Questions for Couples
+
+Aimed at two people rather than a room, which changes what a good pair does. Between partners the interesting ones are about how you would actually choose — and the split matters more here, because disagreement is information rather than entertainment.
+
+- Have a week apart every month, or never spend a night apart?
+- Know every thought the other has, or be certain they never lie to you?
+- Move somewhere neither of us knows, or stay near family forever?
+- Have more time together and less money, or the reverse?
+- Argue often and resolve it fast, or rarely and take days?
+- Be told the difficult thing immediately, or when the other has worked out how to say it?
+- Have completely separate friends, or entirely shared ones?
+- Take one long holiday a year, or a weekend away every month?
+- Both work from home, or never overlap in the house?
+- Have the same taste in everything, or none of it?
+- Be able to relive one day together, or see one day ten years ahead?
+- Split every task exactly, or each own half of them entirely?
+- Have a partner who is always honest, or always kind?
+- Keep one thing private forever, or have nothing private at all?
+- Have your relationship understood by everyone, or by nobody but you two?
+- Be the one who plans, or the one who is surprised?
+- Have a quiet life together, or an eventful one?
+- Fix a recurring argument permanently, or add one brilliant new shared thing?
+- Know how it ends, or never think about it?
+- Be each other's first call, or each other's last word on everything?
+
+If those land well, the longer version of that conversation is [questions for couples](/questions-for-couples), which is about the same problem at a slower pace.
+
+## Crazy, Weird and Extreme Would You Rather Questions
+
+These are the most requested kind, and the page opened by dismissing them — so it owes a more careful distinction than that.
+
+The absurd pairs that fail are the ones where the premise is impossible **and** the reasoning is impossible. Fighting a hundred duck-sized horses is pure spectacle: there is nothing to weigh, so people say "the big duck, obviously" and the game moves on.
+
+**The absurd pairs that work are impossible in premise but perfectly reasonable inside it.** Hands for feet or feet for hands is ridiculous, and you can genuinely think about it — grip, balance, shoes, doorhandles — and two people will land in different places and be able to say why. That is the whole test, and it is the same test as everywhere else on this page: does it split, and can they defend it?
+
+- Have your shadow move independently, or your reflection lag behind?
+- Be permanently three inches taller, or three years younger?
+- Have everything you say appear as subtitles, or everything you think appear as weather above you?
+- Sweat maple syrup, or sneeze glitter?
+- Have to announce yourself in every room, or have a theme tune play instead?
+- Be unable to whisper, or unable to shout?
+- Have one enormous hand, or two tiny ones?
+- Live your life in fast forward, or with a two-second delay?
+- Have to hop everywhere indoors, or crawl everywhere outdoors?
+- Taste colour, or hear temperature?
+- Have a tail you cannot control, or ears that move when you lie?
+- Be followed everywhere by a small orchestra, or by a documentary crew?
+- Have all your clothes be one size too big, or one size too small?
+- Only walk backwards, or only speak in the past tense?
+- Have your bed always slightly damp, or your house always slightly too bright?
+- Have to eat everything with a teaspoon, or drink everything through a straw?
+- Be able to pause any conversation for ten seconds, or replay any ten seconds of one?
+- Have every mirror show you five minutes ago, or five minutes ahead?
+- Grow a new tooth every year, or lose one every decade?
+- Have to knock before entering any room including your own, or say goodbye to every room you leave?
+- Be permanently mildly itchy, or permanently mildly cold?
+- Have every drink be slightly too hot, or every seat be slightly too low?
+- Only ever travel by boat, or never leave the ground again?
+- Have your memory of yesterday, or your plan for tomorrow, be wrong every time?
 
 ## Would You Rather Questions for Kids
 
