@@ -79,7 +79,7 @@ export const CURATED_RELATED: Record<string, string[]> = {
     "how-to-be-a-good-listener",
     "how-to-make-small-talk",
   ],
-  "improv-prompts": ["theatre-games", "rules-of-improv", "how-to-get-better-at-improv"],
+  "improv-prompts": ["theatre-games", "what-is-improv", "rules-of-improv"],
   "how-to-be-a-good-friend": [
     "how-to-make-friends-as-an-adult",
     "how-to-be-a-good-listener",
@@ -112,7 +112,7 @@ export const CURATED_RELATED: Record<string, string[]> = {
     "types-of-listening",
     "how-to-be-a-good-listener",
   ],
-  "how-to-be-funny": ["how-to-be-a-good-listener", "fear-of-public-speaking"],
+  "how-to-be-funny": ["how-to-be-a-good-listener", "what-is-improv", "fear-of-public-speaking"],
   "stage-fright": ["confidence-building-exercises", "public-speaking-tips", "how-to-be-present"],
   "public-speaking-tips": [
     "fear-of-public-speaking",
@@ -137,7 +137,11 @@ export const CURATED_RELATED: Record<string, string[]> = {
   "what-is-improv": ["how-to-be-funny", "how-to-be-present"],
   "team-building-questions": ["team-building-activities", "emotional-safety"],
   "5-minute-team-building": ["team-building-activities", "team-building-questions"],
-  "collaboration-skills": ["team-building-activities", "how-to-be-a-good-listener"],
+  "collaboration-skills": [
+    "yes-and-improv",
+    "team-building-activities",
+    "how-to-be-a-good-listener",
+  ],
   "how-to-be-present": ["how-to-stop-overthinking", "how-to-be-a-good-listener"],
   "how-to-be-vulnerable": ["emotional-safety", "confidence-building-exercises"],
   "team-dynamics": ["collaboration-skills", "team-building-activities"],
@@ -315,6 +319,22 @@ export async function getRelatedBridges(
   const ordered: typeof bridges = [];
   const seen = new Set<string>([slug]);
 
+  /**
+   * Curated pairings keep their precedence and their declared order.
+   *
+   * Worth recording an attempt that was wrong. 22 of the 100 curated slots
+   * point at authority-gated guides, and curated entries bypass the rankability
+   * tiebreak entirely — they are pushed in before any scoring — so with a limit
+   * of four a curated list can fill every slot and the filter never gets a say.
+   * I reordered them to put reachable ones first, and the test asserting
+   * declared order failed.
+   *
+   * The test was right. This list exists specifically so an editorial pairing
+   * overrides the computed ranking; reordering it by verdict overrides the
+   * editorial judgment with the heuristic it was created to overrule. A link to
+   * a gated guide can still be the correct one for a reader, and where somebody
+   * has decided which pairing is best, that decision is the point.
+   */
   for (const curatedSlug of CURATED_RELATED[slug] ?? []) {
     const bridge = bySlug.get(curatedSlug);
     if (bridge && !seen.has(curatedSlug)) {
