@@ -1,5 +1,5 @@
 ---
-title: "159 Icebreaker Questions to Get to Know Someone"
+title: "189 Icebreaker Questions to Get to Know Someone"
 description: "The icebreaker questions that work are the unglamorous ones: everybody already has the answer, three words is a complete turn, and nobody is being scored."
 target_keywords:
   - {
@@ -12,6 +12,14 @@ target_keywords:
   - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone", traffic_potential: 27000 }
   - { keyword: "ice breaker questions", volume: 51000, difficulty: 19, traffic_potential: 90000, parent: "ice breaker questions" }
   - { keyword: "icebreaker questions", volume: 24000, difficulty: 34, traffic_potential: 92000, parent: "ice breaker questions" }
+  - { keyword: "fun icebreaker questions", volume: 8900, difficulty: 7, traffic_potential: 90000, parent: "ice breaker questions" }
+  - { keyword: "good icebreaker questions", volume: 3400, difficulty: 23, traffic_potential: 90000, parent: "ice breaker questions" }
+  - { keyword: "best icebreaker questions", volume: 2400, difficulty: 18, traffic_potential: 100000, parent: "ice breaker questions" }
+  - { keyword: "icebreaker questions for adults", volume: 1600, difficulty: 22, traffic_potential: 93000, parent: "ice breaker questions" }
+  - { keyword: "icebreaker questions for teens", volume: 800, difficulty: 4, traffic_potential: 94000, parent: "ice breaker questions" }
+  - { keyword: "this or that icebreaker questions", volume: 600, difficulty: 5, traffic_potential: 93000, parent: "ice breaker questions" }
+  - { keyword: "team icebreaker questions", volume: 600, difficulty: 14, traffic_potential: 99000, parent: "ice breaker questions" }
+  - { keyword: "unique icebreaker questions", volume: 400, difficulty: 7, traffic_potential: 93000, parent: "ice breaker questions" }
   - { keyword: "questions to get to know someone better", volume: 1000, parent: "questions to get to know someone", difficulty: 15, traffic_potential: 101000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 11
@@ -27,7 +35,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# 159 Icebreaker Questions to Get to Know Someone
+# 189 Icebreaker Questions to Get to Know Someone
 
 Almost every list of icebreaker questions — or of questions to get to know someone, which is the same list filed under a different name — is a list of *deep* questions, on the theory that a better question produces a closer conversation. With somebody you have just met, that gets it exactly backwards.
 
@@ -240,6 +248,68 @@ What survives contact with a real group:
 - **Let people pass.** A round nobody can opt out of is not a warm-up, and one person visibly trapped costs more than any question gains.
 
 The reliable ones are unglamorous on purpose. Where somebody grew up, what they nearly studied, what they had for breakfast, how they know the host. They work because the answer already exists, it can be one line or five, and nobody is being scored.
+
+## Fun Icebreaker Questions
+
+Fun and funny are different requests, and the gap matters more here than almost anywhere else. Funny asks the room for a laugh. Fun only asks that answering be enjoyable.
+
+There is a wrinkle worth being straight about, because this site argues the opposite elsewhere. Among friends, [the questions that are genuinely fun to answer](/fun-questions-to-ask-friends) are the ones that ask you to invent something — to make up a rule, a plan, a preference that did not exist until you said it. Invention is the pleasure.
+
+**That does not transfer to a room of strangers, and trying it is the single most common icebreaker mistake.** Invention in front of people you have not met is an audition. The quick improvisers look charming, everybody else looks slow, and the third person to answer is now competing with the first two. Exactly the failure this page keeps returning to.
+
+So a fun icebreaker is a narrower thing: **enjoyable to answer out of what you already have.** No invention required, nothing to lose by answering flatly, and enough specificity that the answer is worth hearing.
+
+- What is the most-used app on your phone, and is that embarrassing?
+- What is a job you would be surprised to learn somebody enjoys?
+- What do you own that has lasted far longer than it should have?
+- What is the best thing you have found second-hand?
+- What is the furthest you have travelled for something small?
+- What is the wallpaper on your phone, and how long has it been there?
+- What is on your desk that has no business being there?
+- What is the best thing you have bought for under twenty pounds?
+- What have you queued for?
+- What is the most repeated meal in your house?
+- What skill did you pick up entirely by accident?
+- What is something you have been meaning to replace for years?
+- What have you kept since childhood?
+- What is a small thing that has improved your week?
+
+## This or That Icebreaker Questions
+
+The purest form of the principle this page runs on. A binary choice is the cheapest possible answer — one word, no composition, nothing to prepare — so it is the format that works when a room is coldest, or when somebody plainly does not want the floor.
+
+Two things make them work. **Ask why afterwards, not always.** The choice is the icebreaker; the reason is the conversation, and demanding a reason every time turns a quick round into an interview. **Pick pairs where the split is roughly even.** A this-or-that with an obvious answer is a quiz.
+
+- Early start or late finish?
+- Text or call?
+- Window or aisle?
+- Sweet or savoury?
+- Plan it or improvise it?
+- Mountains or sea?
+- Film at home or film at the cinema?
+- Big party or four people?
+- Cook, or be cooked for?
+- Same holiday every year, or somewhere new?
+- Books or podcasts?
+- Hot weather or cold weather?
+- Front row or back row?
+- Long lunch or early night?
+- Driving or being driven?
+- Say it now or write it later?
+
+Run these as a round with no commentary and a group of eight gets through them in two minutes, at which point the room is warm and you can ask something that costs more.
+
+## Icebreaker Questions for Adults, Teens and Students
+
+The questions change less by audience than people expect. What changes is the cost of answering.
+
+**Adults** are mostly worried about seeming boring, which is why the reliable ones are about circumstance rather than personality — the journey, the week, what they nearly did instead. Nobody feels judged for describing a commute.
+
+**Teenagers** are worried about being seen trying, and about being seen at all. Anything that singles somebody out is expensive. Whole-group formats — this-or-that rounds, hands-up questions, anything answered simultaneously rather than in turn — cost far less than going round a circle, and a circle is the default that causes most of the damage.
+
+**Students in a new cohort** are in the specific position of knowing nobody and expecting to know everybody soon, which makes practical questions land better than personal ones: what they nearly studied instead, how far they have come, what they have not worked out yet about the place. The last of those is genuinely useful and gives the room something to do together.
+
+For a workplace, the constraint is different again — it is a power problem rather than an exposure problem, and it has [its own page](/icebreaker-questions-for-work).
 
 ## Funny Icebreaker Questions
 
