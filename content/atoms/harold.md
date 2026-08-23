@@ -24,7 +24,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the 1980s at iO Chicago, further refined by the Upright Citizens Brigade. Described in *Truth in Comedy* (1994) as "a collage of scenes inspired by a single suggestion which are interwoven and connected."
@@ -57,6 +57,8 @@ Will Hines, a longtime UCB teacher and Harold advocate, has argued: "The main pr
 Del Close on the Harold: *"Follow the fear."* And: *"Work at the top of your intelligence — not making the obvious choice, but making the choice that comes from honesty."*
 
 The Harold is simultaneously a training format (it forces you to practice every core skill — initiation, game, heightening, editing, support, group mind, connections) and a philosophy (the ensemble can create something larger than any individual could plan).
+
+The form is inseparable from the person who built it. [Del Close](/del-close) covers where the Harold came from, what he was actually arguing for when he made it, and which parts of the legend around it are worth resisting.
 
 ## Specific sources
 

@@ -17,7 +17,7 @@ links:
   - { id: ensemble, relation: requires }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.
@@ -53,6 +53,8 @@ This loop can spiral positive (performer energy lifts audience → audience resp
 Reading the room requires splitting attention — fully present in the scene while maintaining awareness of the audience's state. Beginners can barely track their scene; intermediates track scene and ensemble; advanced performers track scene, ensemble, AND audience simultaneously.
 
 Dave Razowsky: "The audience is your scene partner. Read them like you'd read a scene partner — with attention, curiosity, and responsiveness."
+
+Reading a room is the same faculty a performer uses on an audience, applied where the stakes are quieter and the feedback slower. [How to read the room](/how-to-read-the-room) works it through for meetings and conversations, including the part performers get for free and everyone else has to construct: a reliable signal that something has landed.
 
 ## Specific sources
 

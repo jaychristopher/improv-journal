@@ -36,25 +36,59 @@ describe("guide and atom concept pairs", () => {
 
     const pairs: Array<{ guide: string; atom: string; linked: boolean }> = [];
 
+    const record = (guideSlug: string, id: string) => {
+      const atom = atomById.get(id);
+      if (!atom) return;
+      if (ALLOWED.has(`${id}|${guideSlug}`)) return;
+      if (pairs.some((p) => p.guide === guideSlug && p.atom === id)) return;
+      pairs.push({
+        guide: guideSlug,
+        atom: id,
+        linked: atom.content.includes(`](/${guideSlug})`),
+      });
+    };
+
     for (const bridge of bridges) {
       const entry = (bridge.frontmatter.entry_atoms ?? []) as string[];
       for (const id of entry) {
         // Same concept, two pages: the slugs are the same string, or one
         // contains the other ("be-present" inside "how-to-be-present").
         if (!(bridge.slug === id || bridge.slug.includes(id) || id.includes(bridge.slug))) continue;
-        const atom = atomById.get(id);
-        if (!atom) continue;
-        if (ALLOWED.has(`${id}|${bridge.slug}`)) continue;
-        pairs.push({
-          guide: bridge.slug,
-          atom: id,
-          linked: atom.content.includes(`](/${bridge.slug})`),
-        });
+        record(bridge.slug, id);
+      }
+
+      /*
+       * A guide can also claim a concept through a keyword rather than through
+       * its slug, and matching on slugs alone missed those. /del-close targets
+       * "harold improv" while the site's Harold page is an atom, and
+       * /how-to-read-the-room targets "reading the room" against an atom of
+       * that name — neither slug resembles its atom, so both pairs were
+       * invisible here. The read-the-room pair had no link in either direction
+       * at all.
+       *
+       * Stripping the words that turn a concept into a search phrase is what
+       * makes "harold improv" and "viewpoints technique" resolve onto an id.
+       */
+      const asId = (keyword: string) =>
+        keyword
+          .toLowerCase()
+          .replace(
+            /\b(improv|improvisation|technique|exercise|game|format|meaning|definition)\b/g,
+            " ",
+          )
+          .trim()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-|-$/g, "");
+
+      for (const { keyword } of bridge.frontmatter.target_keywords ?? []) {
+        const id = asId(String(keyword));
+        if (id) record(bridge.slug, id);
       }
     }
 
     // The pairing rule finding nothing would make this pass on an empty set.
-    expect(pairs.length).toBeGreaterThanOrEqual(7);
+    // Seven come from slug matching; the keyword rule adds the rest.
+    expect(pairs.length).toBeGreaterThanOrEqual(9);
 
     const unlinked = pairs.filter((p) => !p.linked).map((p) => `${p.atom} -> /${p.guide}`);
     expect(unlinked).toEqual([]);
