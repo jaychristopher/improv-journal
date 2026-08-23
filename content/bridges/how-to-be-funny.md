@@ -147,4 +147,6 @@ One more distinction worth drawing, because people arrive looking for the wrong 
 
 _For the full framework on pattern recognition in scenes: [Game of the Scene](/atoms/game-of-the-scene). For why the obvious choice is the best choice: [The Obvious Choice](/atoms/obvious-choice). For the complete beginner's path: [Systems of Improv](/paths/systems-of-improv)._
 
+None of this requires a stage, and the easiest place to practise it is a room that is already playing. The [party games](/party-games) collection is filtered for the ones that need nothing but people, which is also the filter that removes the games where somebody ends up performing at everyone else.
+
 **Sources cited:** Close, Halpern, Johnson (1994), _Truth in Comedy_. Johnstone (1979), _Impro_. Besser, Roberts, Walsh (2013), _UCB Comedy Improvisation Manual_. Limb & Braun (2008), _PLoS ONE_. Hurley, Dennett, Adams (2011), _Inside Jokes_, MIT Press.

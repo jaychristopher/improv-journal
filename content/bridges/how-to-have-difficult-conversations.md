@@ -12,7 +12,7 @@ entry_atoms: [active-listening, offers, yes-and, be-honest, emotional-truth, sta
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Have Difficult Conversations: The Improv Approach
@@ -104,3 +104,5 @@ Difficult conversations go badly when both people are performing — managing th
 This is exactly what improv teaches: the skill of being real in real time, without a script, with another person who is also being real. It's not comfortable. It's not smooth. But it's the only thing that actually works — because the difficult conversations that matter most are the ones where both people finally stop performing and start being honest.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, emotional truth, and navigating tension, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+Not every conversation worth having is difficult, and the ones that keep a relationship out of that territory are usually ordinary. The [questions for couples](/questions-for-couples) list is built around updating what you think you already know about someone, which is the maintenance version of the repair described here.

@@ -14,7 +14,7 @@ entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-sup
 entry_path: teaching-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Give Feedback That Actually Changes Behavior
@@ -150,5 +150,7 @@ The best feedback is the note you didn't have to give.
 ---
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full model of teaching, feedback, and creating conditions for growth, explore the [Teaching Improv](/paths/teaching-improv) path, or start with [Giving Notes](/atoms/giving-notes) and [Side-Coaching](/atoms/side-coaching).*
+
+Feedback is one instrument among several, and the others mostly belong to whoever is running the room. On the rest of that job — coaching without taking the work over, and what changes when you are responsible for someone's development rather than their output — see [how to be a better leader](/how-to-be-a-better-manager).
 
 **Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Buckingham & Coffman (1999), *First, Break All the Rules*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack. Halpern, Close & Johnson (1994), *Truth in Comedy*.

@@ -13,7 +13,7 @@ entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commit
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be Witty: The Improv Secret to Quick, Sharp Responses
@@ -108,3 +108,5 @@ Witty people don't have better material than you. They have a shorter delay betw
 The improv stage is the purest laboratory for this skill because it makes editing impossible. When you're in a scene with no script, you *have* to say the first thing. And what performers discover, show after show, is that the first thing is almost always better than what they would have planned. Your unconscious mind is funnier than your conscious mind. Wit is what happens when you get out of its way.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind spontaneity, the obvious choice, and why your internal editor kills your best responses, explore the [Systems of Improv](/paths/systems-of-improv) path.*
+
+Speed comes from having somewhere to be quick about. [Would you rather questions](/would-you-rather-questions) are the cheapest available version of that — a forced choice, no correct answer, and an immediate reason to justify yourself, which is the exact shape of the exercise described here.

@@ -117,3 +117,5 @@ The difference between small talk that goes nowhere and small talk that becomes 
 Improv proves this every night: the content of the scene doesn't determine its quality. The listening does.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind offers, building, and the mechanics of human connection, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+The opening line is the part people most want handed to them, and it is the part that matters least — but if you want a stock of them anyway, the [conversation starters](/conversation-starters) collection is sorted by whether they survive the second exchange rather than by how clever they sound.

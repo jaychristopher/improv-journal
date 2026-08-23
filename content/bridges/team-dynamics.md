@@ -118,4 +118,6 @@ Start by watching. Notice who defers to whom, who fills the silences, who gets i
 
 _This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — start with the [Improv for Teams](/paths/improv-for-teams) path._
 
+Changing how a group behaves usually starts with something smaller than an intervention. A round of [this or that questions](/this-or-that-questions) does more to surface how a room actually talks to itself than an away day does, because it is low enough stakes that people answer honestly.
+
 **Sources cited:** Lewin (1947), _Frontiers in Group Dynamics_. Johnstone (1979), _Impro_. Tuckman (1965), _Psychological Bulletin_. Woolley et al. (2010), _Science_. Edmondson (1999), _Administrative Science Quarterly_. Google Project Aristotle (2015).

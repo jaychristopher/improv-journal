@@ -128,3 +128,5 @@ You don't become a better conversationalist by learning what to say. You become 
 The improv stage is proof that this works: two people, no script, no plan, creating genuine connection in real time through nothing but mutual attention and generosity. You don't need a stage to do it. You just need the person in front of you and the willingness to actually be there.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind listening, building, and presence in everyday life, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+If you would rather start from material than from a principle, the [questions to get to know someone](/questions-to-get-to-know-someone) list is built on the same logic: it favours questions that give the other person somewhere to go over questions that merely get answered.

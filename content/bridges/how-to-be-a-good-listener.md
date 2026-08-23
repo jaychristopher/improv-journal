@@ -12,7 +12,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be a Good Listener (Not the Kind You Think)
@@ -116,3 +116,5 @@ The problem with practising listening in real conversations is that the stakes m
 This is what improv performers create on stage every night. Two people, fully tracking each other, responding to the complete signal, building a shared reality from genuine mutual attention. It looks like magic from the outside. From the inside, it's just listening — real listening, without the obstacles.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, offers, and the cognitive mechanics of attention, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+Listening well is easier when the question was worth asking. The [deep questions to ask](/deep-questions-to-ask) collection is chosen on that basis — questions that earn an honest answer rather than a polite one, which is most of what makes the listening worth doing.
