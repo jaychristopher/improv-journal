@@ -9,6 +9,7 @@ import { GuideConcepts } from "@/components/GuideConcepts";
 import { LevelRedirect } from "@/components/LevelRedirect";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { RelatedGuides } from "@/components/RelatedGuides";
+import { UpdatedOn } from "@/components/UpdatedOn";
 import { WhatsNext } from "@/components/WhatsNext";
 import { getAudioDuration } from "@/lib/audio-manifest";
 import {
@@ -331,6 +332,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>
         <p className="text-foreground/60 mt-2 text-sm">{fm.description}</p>
+        <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
       </header>
 
       {audioUrl && (

@@ -6,6 +6,7 @@ import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CourseJsonLd } from "@/components/CourseJsonLd";
 import { SyllabusCheckmark, SyllabusProgress } from "@/components/SyllabusProgress";
+import { UpdatedOn } from "@/components/UpdatedOn";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAudioUrl,
@@ -131,6 +132,7 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
           </span>
           <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
           <p className="text-foreground/60 mt-3">{fm.description}</p>
+          <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
 
           <div className="mt-4 flex flex-wrap items-center gap-3">
             {fm.audience.map((audience) => (

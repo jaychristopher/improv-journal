@@ -9,6 +9,7 @@ import { LessonCheckpoint } from "@/components/LessonCheckpoint";
 import { LessonFrame } from "@/components/LessonFrame";
 import { LessonJsonLd } from "@/components/LessonJsonLd";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
+import { UpdatedOn } from "@/components/UpdatedOn";
 import { WhatsNext } from "@/components/WhatsNext";
 import {
   getAllPathsForThread,
@@ -152,6 +153,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
           )}
         </span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
+        <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
       </header>
 
       <LessonFrame
