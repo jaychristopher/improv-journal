@@ -42,7 +42,7 @@ This is why awkwardness tends to spike in specific situations:
 
 The common thread: every situation where the threat-detection system says "people might be judging you right now." The monitoring is a protection response. It's trying to help. But it makes the thing it's protecting against more likely.
 
-The belief the monitoring is defending against is, on the evidence, wrong. Boothby, Cooney, Sandstrom and Clark ran the comparison directly in 2018: after a conversation, ask both people how much they liked the other and how much they think the other liked them. People consistently underestimated it. The researchers named the difference the liking gap, and found it among strangers paired in a lab, among first-year students getting to know the people on their corridor, and among adults meeting at a workshop.
+The belief the monitoring is defending against is, on the evidence, wrong. Boothby, Cooney, Sandstrom and Clark ran the comparison directly in *Psychological Science* (2018): after a conversation, ask both people how much they liked the other and how much they think the other liked them. People consistently underestimated it. The researchers named the difference the liking gap, and found it among strangers paired in a lab, among first-year students getting to know the people on their corridor, and among adults meeting at a workshop.
 
 The finding that matters here is which people were most wrong. The shyer the participant, the larger their gap. So the self-monitoring is not merely expensive — it is expensive in service of an estimate that is furthest off precisely in the people running the most of it.
 

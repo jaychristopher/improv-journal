@@ -89,6 +89,20 @@ The funniest moments in improv happen when both performers recognize something a
 
 This translates directly: the funniest moments in conversation happen when both people see the same absurdity at the same time. You're not performing a joke for an audience of one. You're co-discovering something with a partner.
 
+## Where the Usual Advice Fits
+
+The techniques every other article leads with are not wrong. They are accurate descriptions of what happens when the four mechanisms above are working, which is why they survive being repeated and why they are useless as instructions. Each one is a downstream effect with a mechanism underneath it.
+
+**The rule of three** is pattern recognition wearing a number. Two of anything establishes a pattern; the third either confirms it hard enough to be absurd or breaks it. That is `heightening`, and the reason three is the conventional count is that two is the minimum to establish and a fourth rarely adds information. Told as a rule it produces people counting beats. Understood as pattern work it produces people noticing what has already been established twice.
+
+**The callback** is shared discovery with a delay. It lands because both of you were there for the original, and it fails with anyone who was not — which is exactly what the mechanism predicts. Improvisers call the underlying move `reincorporation`, and it is doing the same work as a callback with none of the pressure to be clever about it.
+
+**Self-deprecation** is honesty plus a `status` drop, and it works only while both halves hold. A true admission delivered from a lowered position is disarming. The same words offered as a bid for reassurance are a request, and everybody present can hear the difference.
+
+**Timing** is the one people most want to be a skill and it is mostly attention. The pause that reads as timing is a performer still listening; the pause that reads as dead air is one waiting for their turn. Nobody improves it by practising tempo.
+
+**Exaggeration** is the exception, and it is worth being straight about that. It is the one item on the standard list this page argues against rather than reframes — the section above is titled Specificity, not Exaggeration, on the grounds that inflating a detail makes it less recognisable and recognition is what produces the laugh. Exaggeration can work, but it works despite the mechanism rather than through it.
+
 ## The Antipattern: Performing Cleverness
 
 Improv has a name for the thing that kills funny: **performing cleverness.** It's when someone is crafting a joke instead of responding to their partner. The audience gets a punchline but the scene gets nothing — because the "clever" response didn't build on what was happening; it replaced it.
