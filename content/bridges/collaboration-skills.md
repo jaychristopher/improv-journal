@@ -41,7 +41,9 @@ The performers who make ensembles work are the ones who hear the offer underneat
 
 In workplace teams, the failure mode is identical. Someone in a meeting says, "I'm not sure this timeline is realistic." The non-listener hears a complaint about deadlines. The active listener hears a person signaling that they're overloaded, or that they see a risk no one else has flagged, or that they need support. These are different situations requiring different responses, and only the listener catches the difference.
 
-Albert Mehrabian's communication research (1971) put rough numbers on this: words carry about 7% of emotional meaning in face-to-face communication. Tone carries 38%. Body language carries 55%. Active listening means processing all three channels simultaneously. That's not a passive activity. It's one of the most demanding cognitive tasks humans perform.
+Albert Mehrabian's experiments (1971) are where the famous 7/38/55 split comes from, and they do not say what they are usually quoted as saying. Those numbers describe how people judged a speaker's attitude when the words and the delivery *contradicted* each other — tone and expression decided the verdict and the words barely counted. They are not a breakdown of ordinary conversation, and the "93% of communication is nonverbal" version is a misreading; [how to read body language](/how-to-read-body-language) covers why.
+
+What the conflict trials do establish is the part that matters here. The channels are read together, and when they disagree the non-verbal ones win. Active listening means processing all of them at once and catching the moment they stop agreeing. That's not a passive activity. It's one of the most demanding cognitive tasks humans perform.
 
 ## Skill Two: Yes, And
 
