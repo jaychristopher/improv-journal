@@ -98,6 +98,6 @@ The physics are the same. The stage just makes them visible.
 
 ---
 
-*For the full framework: [The Physics of Every Room](/threads/physics-of-every-room). For the honest transfer assessment: [Beyond the Stage](/atoms/beyond-the-stage). For the complete path: [Physics of Connection](/paths/physics-of-connection).*
+*For the full framework: [The Physics of Every Room](/threads/physics-of-every-room). For the honest transfer assessment: [Beyond the Stage](/how-it-works/beyond-the-stage). For the complete path: [Physics of Connection](/paths/physics-of-connection).*
 
 **Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Google Project Aristotle (2012). Clark (2020), *The 4 Stages of Psychological Safety*. Spolin (1963), *Improvisation for the Theater*. Kahneman (1973), *Attention and Effort*. Huffaker & West, *Industrial and Commercial Training*.

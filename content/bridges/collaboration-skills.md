@@ -95,6 +95,6 @@ That's the ensemble effect. It doesn't require everyone in the room to practice 
 
 ---
 
-*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind ensemble dynamics, group mind, and interdependence, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Ensemble](/atoms/ensemble) and [Yes, And](/atoms/yes-and).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind ensemble dynamics, group mind, and interdependence, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Ensemble](/practice/vocabulary/ensemble) and [Yes, And](/practice/techniques/yes-and).*
 
 **Sources cited:** Mehrabian (1971), *Silent Messages*. Duhigg (2016), reporting on Google's Project Aristotle. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

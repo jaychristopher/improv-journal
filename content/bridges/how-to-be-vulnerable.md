@@ -99,7 +99,7 @@ Vulnerability isn't a personality trait you cultivate. It's a rational response 
 
 ---
 
-*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind vulnerability, safety, and trust in performance, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Vulnerability](/atoms/vulnerability) and [Safety in the Room](/atoms/safety-in-the-room).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind vulnerability, safety, and trust in performance, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Vulnerability](/practice/vocabulary/vulnerability) and [Safety in the Room](/practice/techniques/safety-in-the-room).*
 
 The best-known deliberate exercise in this is a set of [36 questions to fall in love](/36-questions-to-fall-in-love), which escalates disclosure on a schedule and works because both people are exposed at the same rate. It is the mechanism described here, run as a procedure.
 

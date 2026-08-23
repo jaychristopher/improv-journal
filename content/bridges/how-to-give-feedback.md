@@ -149,7 +149,7 @@ The best feedback is the note you didn't have to give.
 
 ---
 
-*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full model of teaching, feedback, and creating conditions for growth, explore the [Teaching Improv](/paths/teaching-improv) path, or start with [Giving Notes](/atoms/giving-notes) and [Side-Coaching](/atoms/side-coaching).*
+*This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full model of teaching, feedback, and creating conditions for growth, explore the [Teaching Improv](/paths/teaching-improv) path, or start with [Giving Notes](/practice/techniques/giving-notes) and [Side-Coaching](/practice/techniques/side-coaching).*
 
 Feedback is one instrument among several, and the others mostly belong to whoever is running the room. On the rest of that job — coaching without taking the work over, and what changes when you are responsible for someone's development rather than their output — see [how to be a better leader](/how-to-be-a-better-manager).
 
