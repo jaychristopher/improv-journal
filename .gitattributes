@@ -1,0 +1,23 @@
+# Line endings are LF everywhere, in the repository and in the working tree.
+#
+# There was no policy here, and core.autocrlf is set to true on at least one
+# machine, so whether a file arrived as LF or CRLF depended on who checked it
+# out. That is not cosmetic. The markdown parsers find the first paragraph by
+# splitting on a blank line, and /\n{2,}/ cannot match \r\n\r\n because of the
+# carriage return between the newlines — so a CRLF file parses as one enormous
+# paragraph.
+#
+# It shipped. One reference page served its own citation, publisher included, as
+# its search snippet, and the same fault was latent in the hub previews and in
+# the summary handed to every AI crawler through llms.txt. The parsers now
+# normalise their input, which fixes the symptom; this fixes the cause, so a
+# checkout on any machine produces the bytes the parsers were written against.
+*               text=auto eol=lf
+
+# Binary assets, never touched.
+*.png           binary
+*.ico           binary
+*.mp3           binary
+*.m4a           binary
+*.woff          binary
+*.woff2         binary
