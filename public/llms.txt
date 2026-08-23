@@ -149,7 +149,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Want](https://www.physicsofconnection.com/practice/vocabulary/want): What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters do things rather than merely exist.
 - [Warm-Up](https://www.physicsofconnection.com/practice/vocabulary/warm-up): The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life...
 
-## Techniques (47)
+## Techniques (48)
 
 - [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer)
 - [Active Listening](https://www.physicsofconnection.com/practice/techniques/active-listening): Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language,...
@@ -197,6 +197,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Sweep Edit](https://www.physicsofconnection.com/practice/techniques/sweep-edit): The Harold's signature transition device. One player walks briskly across the front of the stage, perpendicular to the audience's sightline, signaling that the...
 - [Tag Run](https://www.physicsofconnection.com/practice/techniques/tag-run): A rapid sequence of tag-outs exploring one game or pattern across multiple contexts.
 - [The Obvious Choice](https://www.physicsofconnection.com/practice/techniques/obvious-choice)
+- [Viewpoints](https://www.physicsofconnection.com/practice/techniques/viewpoints): A movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture,...
 - [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the...
 
 ## Exercises and games (24)

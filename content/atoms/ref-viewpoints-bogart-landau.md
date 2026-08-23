@@ -5,6 +5,7 @@ type: reference
 status: draft
 tags: [references, books, viewpoints, movement, physicality]
 links:
+  - { id: viewpoints, relation: illustrates }
   - { id: physicality, relation: illustrates }
   - { id: presence, relation: illustrates }
   - { id: be-present, relation: illustrates }
@@ -44,5 +45,7 @@ A systematic articulation of Viewpoints as both training technique and rehearsal
 - **Topography** — the floor pattern, the map of movement through the space
 
 *Vocal Viewpoints:* Pitch, Dynamic (volume), Acceleration/Deceleration, Silence, Timbre.
+
+For the technique itself — how it is trained, what the channels are for, and how it differs from space work — see `viewpoints`.
 
 **Lineage:** Overlie's Six Viewpoints (SSTEMS) originated in postmodern dance, influenced by Merce Cunningham and the Judson Dance Theater. Bogart encountered Overlie at NYU in the 1970s and began applying the framework to actor training. Bogart and Landau's expansion from six to nine reflects the shift from dance to theater: actors needed finer-grained spatial vocabulary. Overlie published her own account in *Standing in Space: The Six Viewpoints Theory & Practice* (2016).
