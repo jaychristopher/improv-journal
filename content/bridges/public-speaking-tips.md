@@ -3,6 +3,11 @@ title: "10 Public Speaking Tips for the Parts You Cannot Rehearse"
 description: "Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains."
 target_keywords:
   - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000, parent: "public speaking tips" }
+  - { keyword: "public speaking", volume: 100000, difficulty: 67, traffic_potential: 168000, parent: "public speaking tips" }
+  - { keyword: "how to speak in public confidently", volume: 5500, difficulty: 0, traffic_potential: 103000, parent: "public speaking tips" }
+  - { keyword: "best public speaking", volume: 1100, difficulty: 29, traffic_potential: 143000, parent: "public speaking tips" }
+  - { keyword: "speaking skills", volume: 700, difficulty: 46, traffic_potential: 219000, parent: "public speaking tips" }
+  - { keyword: "how to improve your public speaking skills", volume: 700, difficulty: 12, traffic_potential: 219000, parent: "public speaking tips" }
   - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11, parent: "public speaking tips", traffic_potential: 102000 }
   - { keyword: "how to improve public speaking skills", volume: 1500, difficulty: 21, traffic_potential: 168000, parent: "public speaking tips" }
   - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips", traffic_potential: 168000 }
@@ -84,6 +89,25 @@ The difference is visible from the back row:
 - **Name what everybody can see.** The fire alarm, the late arrivals, the fact that you are the last thing before lunch. Ignoring the obvious costs the room more attention than acknowledging it ever does.
 
 That last one is `obvious-choice`. Skipping the obvious is almost always a status move — naming the fire alarm feels beneath the occasion, so people speak past it — and the room reads the omission as either oblivious or evasive. Saying the plain thing costs a speaker nothing and buys back the attention the unspoken thing was quietly consuming.
+
+## How to Speak in Public Confidently
+
+This is the most common way of asking the question, and it contains the reason it so rarely gets answered. Confidence is being treated as an input — the thing you acquire first, after which speaking becomes possible. It is an output. Instructions to be confident fail for precisely the reason "relax" fails: they name a destination and no route.
+
+Which would be a bleak thing to say if the news were not quite good. **What a room reads as confidence is a short list of observable behaviours, and not one of them requires feeling confident.** They are all available to somebody whose hands are shaking.
+
+- **Do not rush the first sentence.** Nerves shorten every pause, and a speaker who begins before the room has settled sounds like they are apologising for taking up time. Get to the lectern, look up, wait until it is quiet, then start. The wait feels enormous to you and reads as authority to everyone else.
+- **Stand still.** Not rigid — just not drifting. Unplanned movement is nervous energy leaking, and it is the single most legible tell in the room. Plant, and let movement happen when you have a reason for it.
+- **Finish your sentences.** Anxiety produces trailing clauses and sentences that dissolve into the next one. A speaker who lands full stops sounds certain even when the content is tentative.
+- **Let your voice fall at the end of a statement.** Rising intonation turns a claim into a request for approval. This one is nearly invisible until you hear it, and then you cannot unhear it.
+- **Tolerate one silence.** A pause you chose is the clearest possible signal that you are not frightened of the room. Two or three seconds is plenty, and almost nobody does it.
+- **Look at one person until you finish a thought.** Covered above, and it belongs here too — scanning reads as searching for an exit.
+
+Notice what is missing from that list: feeling calm. None of these require it, and doing them tends to produce it, because the room responds and you notice the room responding. That is the actual mechanism, and it runs in the opposite direction to how this is normally taught.
+
+The one legitimate shortcut is to **reduce the number of things you are monitoring**, which is the whole argument of the section above. Confidence, operationally, is mostly the absence of self-surveillance — and self-surveillance is crowded out by an external task rather than defeated by willpower.
+
+If what you are dealing with is not ordinary nerves but a real fear response — a racing heart, a blank mind, genuine dread in the days before — that is a different mechanism with its own page: [fear of public speaking](/fear-of-public-speaking), and [stage fright](/stage-fright) for the version that arrives on the night.
 
 ## When It Goes Wrong
 
