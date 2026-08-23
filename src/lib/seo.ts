@@ -369,6 +369,37 @@ export function metaDescription(
   // Keeping only a short opening clause says less than a trimmed full snippet
   // would, and the snippet is the only thing a searcher reads before deciding.
   if (kept.length >= maxLen * sentenceFloor) return kept;
+
+  /*
+   * No whole sentence fills the budget, so something has to be cut. Cutting at
+   * a clause boundary reads finished; cutting at whatever word happens to fall
+   * on the limit reads broken, and 50 pages were shipping the second kind \u2014
+   * "...while the scene contin\u2026", "...rather than retreating i\u2026".
+   *
+   * A snippet that stops after "planning, rehearsing, evaluating" has said
+   * something. One that stops after "while the scene" has not, and it spends
+   * the same space doing it. The floor is lower than sentenceFloor because a
+   * clause that reads cleanly is worth more than the characters it gives up.
+   */
+  const window = trimmed.slice(0, maxLen);
+  const boundary = Math.max(
+    window.lastIndexOf(", "),
+    window.lastIndexOf("; "),
+    window.lastIndexOf(" \u2014 "),
+    window.lastIndexOf(": "),
+  );
+  if (boundary > maxLen * 0.5) {
+    // Closed with a stop, because atomDescription may append a type label after
+    // this and an unpunctuated clause runs straight into it: "\u2026and yourself
+    // Presence is an improv concept." The stop costs one character and is what
+    // makes the fragment read as a sentence rather than as a severed one.
+    const clause = window
+      .slice(0, boundary)
+      .replace(/[,;:\u2014\s]+$/, "")
+      .trimEnd();
+    if (clause.length + 1 <= maxLen) return `${clause}.`;
+  }
+
   const cut = trimmed.slice(0, maxLen - 1);
   const space = cut.lastIndexOf(" ");
   return `${space > maxLen * 0.5 ? cut.slice(0, space) : cut}\u2026`;

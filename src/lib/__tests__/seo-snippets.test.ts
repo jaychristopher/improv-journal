@@ -4,6 +4,7 @@ import {
   atomDescription,
   DESCRIPTION_MAX,
   extractDescription,
+  metaDescription,
   pageTitle,
   SITE_NAME,
   TITLE_MAX,
@@ -51,10 +52,46 @@ describe("atomDescription", () => {
     expect(desc.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
   });
 
+  /**
+   * This asserted the right thing against the wrong character.
+   *
+   * metaDescription emits a single U+2026 when it has to trim, and this looked
+   * for three full stops — so the check could never fire however badly a
+   * snippet was cut. It also ran on one hand-written fixture whose sentences
+   * happen to fit the budget, which is the other half of why it stayed green
+   * while 50 real pages shipped descriptions ending "...while the scene
+   * contin…" and "...rather than retreating i…".
+   *
+   * Both halves are fixed: the real character, and the real content, in the
+   * page-level test below.
+   */
   it("ends on a complete sentence rather than a mid-word ellipsis", () => {
     const desc = atomDescription("Belief as Architecture", "law", extracted);
+    expect(desc.endsWith("…")).toBe(false);
     expect(desc.endsWith("...")).toBe(false);
     expect(desc.trimEnd().endsWith(".")).toBe(true);
+  });
+
+  /**
+   * A long opening sentence with no stop inside the budget still has to be cut
+   * somewhere. Cutting at a clause reads finished; cutting at whatever word
+   * lands on the limit does not, and costs the same space to say less.
+   */
+  it("cuts a long lead at a clause rather than mid-phrase", () => {
+    const long =
+      "The capacity to sustain sensory contact with what is happening right now — with your partner, the environment, and yourself — rather than retreating into your own head.";
+
+    // metaDescription, not atomDescription. The clause-cut lives here, and
+    // atomDescription weighs this against its rules-built alternative and can
+    // legitimately prefer the other one — which is what the first version of
+    // this test hit, asserting on a string the clamp never produced.
+    const desc = metaDescription(long, DESCRIPTION_MAX, 0.5);
+
+    expect(desc.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
+    expect(desc.endsWith("…")).toBe(false);
+    // Stops after a whole clause and closes it, so a type label appended after
+    // it does not run straight into the last word.
+    expect(desc.endsWith("and yourself.")).toBe(true);
   });
 
   it("appends the type label only when it fits", () => {
