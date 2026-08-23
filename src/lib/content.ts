@@ -156,6 +156,8 @@ const CITATION_MAP: [RegExp, string][] = [
   [/Edmondson\s*\(1999\)/, "/library/ref-edmondson-psychological-safety"],
   [/Cowan\s*\(2001\)/, "/library/ref-cowan-magical-number-four"],
   [/Sweller\s*\(1988\)/, "/library/ref-sweller-cognitive-load"],
+  [/Cherry\s*\(1953\)/, "/library/ref-cherry-cocktail-party"],
+  [/Wickens\s*\(2002\)/, "/library/ref-wickens-multiple-resources"],
 ];
 
 function linkCitations(htmlStr: string, currentUrl: string | null): string {

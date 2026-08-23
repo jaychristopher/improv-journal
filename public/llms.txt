@@ -278,7 +278,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Systemic Collapse Modes](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-collapse-modes): The warning lights. How shared reality falls apart.
 - [Systemic Health Indicators](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-health-indicators): The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
 
-## Reading list — the works this site cites (30)
+## Reading list — the works this site cites (32)
 
 - [Amy Edmondson — Psychological Safety and Learning Behavior in Work Teams (1999)](https://www.physicsofconnection.com/library/ref-edmondson-psychological-safety): *Amy C. Edmondson. "Psychological Safety and Learning Behavior in Work Teams." Administrative Science Quarterly 44(2), 350–383, 1999.*
 - [An Actor Prepares — Constantin Stanislavski (1936)](https://www.physicsofconnection.com/library/ref-stanislavski-actor-prepares): *Constantin Stanislavski. An Actor Prepares. Theatre Arts Books, 1936.*
@@ -302,8 +302,10 @@ This file is generated from the site's content, so it lists everything rather th
 - [Improvise — Mick Napier (2004)](https://www.physicsofconnection.com/library/ref-napier-improvise): *Mick Napier. Improvise: Scene from the Inside Out. Heinemann, 2004.*
 - [Improvise Freely — Patti Stiles (2021)](https://www.physicsofconnection.com/library/ref-stiles-improvise-freely): *Patti Stiles. Improvise Freely: Throw Away the Rulebook and Unleash Your Creativity. 2021.*
 - [Improvised Dialogues — R. Keith Sawyer (2003)](https://www.physicsofconnection.com/library/ref-sawyer-improvised-dialogues): *R. Keith Sawyer. Improvised Dialogues: Emergence and Creativity in Conversation. Ablex Publishing, 2003.*
+- [Multiple Resources and Performance Prediction — Christopher Wickens (2002)](https://www.physicsofconnection.com/library/ref-wickens-multiple-resources): *Christopher D. Wickens. "Multiple Resources and Performance Prediction." Theoretical Issues in Ergonomics Science 3(2), 159–177, 2002.*
 - [Neural Substrates of Spontaneous Musical Performance — Limb & Braun (2008)](https://www.physicsofconnection.com/library/ref-limb-braun-jazz-improvisation): *Charles J. Limb and Allen R. Braun. "Neural Substrates of Spontaneous Musical Performance: An fMRI Study of Jazz Improvisation." PLoS ONE 3(2), e1679, 2008.*
 - [Sanford Meisner on Acting — Meisner & Longwell (1987)](https://www.physicsofconnection.com/library/ref-meisner-on-acting): *Sanford Meisner & Dennis Longwell. Sanford Meisner on Acting. Vintage Books, 1987.*
+- [Some Experiments on the Recognition of Speech — Colin Cherry (1953)](https://www.physicsofconnection.com/library/ref-cherry-cocktail-party): *E. Colin Cherry. "Some Experiments on the Recognition of Speech, with One and with Two Ears." Journal of the Acoustical Society of America 25(5), 975–979,...
 - [Standing in Space — Mary Overlie (2016)](https://www.physicsofconnection.com/library/ref-overlie-standing-in-space): *Mary Overlie. Standing in Space: The Six Viewpoints Theory & Practice. Movement Publishing, 2016.*
 - [The Improv Handbook — Salinsky & Frances-White (2008)](https://www.physicsofconnection.com/library/ref-salinsky-improv-handbook): *Tom Salinsky & Deborah Frances-White. The Improv Handbook: The Ultimate Guide to Improvising in Comedy, Theatre, and Beyond. Continuum, 2008.*
 - [The Magical Number 4 in Short-Term Memory — Nelson Cowan (2001)](https://www.physicsofconnection.com/library/ref-cowan-magical-number-four): *Nelson Cowan. "The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity." Behavioral and Brain Sciences 24(1), 87–185, 2001.*

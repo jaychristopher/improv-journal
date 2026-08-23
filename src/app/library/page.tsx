@@ -50,6 +50,8 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
       "ref-attention-and-effort-kahneman",
       "ref-limb-braun-jazz-improvisation",
       "ref-cowan-magical-number-four",
+      "ref-cherry-cocktail-party",
+      "ref-wickens-multiple-resources",
       "ref-sweller-cognitive-load",
       "ref-edmondson-psychological-safety",
       "ref-viewpoints-bogart-landau",
