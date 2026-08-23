@@ -42,6 +42,10 @@ This is why awkwardness tends to spike in specific situations:
 
 The common thread: every situation where the threat-detection system says "people might be judging you right now." The monitoring is a protection response. It's trying to help. But it makes the thing it's protecting against more likely.
 
+The belief the monitoring is defending against is, on the evidence, wrong. Boothby, Cooney, Sandstrom and Clark ran the comparison directly in 2018: after a conversation, ask both people how much they liked the other and how much they think the other liked them. People consistently underestimated it. The researchers named the difference the liking gap, and found it among strangers paired in a lab, among first-year students getting to know the people on their corridor, and among adults meeting at a workshop.
+
+The finding that matters here is which people were most wrong. The shyer the participant, the larger their gap. So the self-monitoring is not merely expensive — it is expensive in service of an estimate that is furthest off precisely in the people running the most of it.
+
 ## The Improv Solution
 
 ### 1. Give your attention a job
@@ -93,6 +97,20 @@ The usual instinct is to reach for something clever, on the theory that the paus
 - **Let it run three seconds longer than is comfortable.** Most pauses resolve on their own, and the person who waits is not the one who looked uncomfortable.
 - **If you fill it, fill it with the room.** Something present and specific, not a topic retrieved from storage. Retrieved topics are audibly retrieved.
 - **Do not apologise for it.** Naming a silence as awkward is what makes it so; until someone says it, it was just a pause.
+
+## Recovering From an Awkward Moment
+
+The list above names the moment after a mistake as one of the spikes, and it is the one people most want a procedure for. The instinct is to erase — apologise, explain, or restart the sentence from the top. All three keep the moment alive, because all three are additional evidence that something went wrong.
+
+Improvisers do not have the option, which is why they have an answer. Nothing said on stage can be taken back — the audience heard it, and `irreversibility` is the constraint the whole form is built around. What gets trained instead is incorporation: the stumble is not a fault to be cleared, it is the most recent thing that happened, and the scene continues from there rather than from where it would have been.
+
+In practice that is three things.
+
+- **Acknowledge it once, if at all.** A single light note closes the moment. A second one reopens it and makes the conversation about your composure rather than about whatever you were discussing.
+- **Do not explain the mistake.** An explanation is a request to be forgiven, which asks the other person to reassure you, which hands them the work.
+- **Get your attention back outside.** A stumble spikes self-monitoring, which is the mechanism this whole page is about. The fix is the same one: something specific and external to attend to. It is easier to return to what the other person was saying than to argue yourself out of embarrassment.
+
+The counter-intuitive part is that a recovery is rarely remembered as awkward by anyone but the person who made it. `failing-forward` is the trained version of that — not pretending the stumble did not happen, but treating it as ordinary enough to carry on from.
 
 ## How to Practise This
 
