@@ -24,6 +24,7 @@ import { ContextBanner } from "./ContextBanner";
 import { DefinedTermJsonLd } from "./DefinedTermJsonLd";
 import { PodcastJsonLd } from "./PodcastJsonLd";
 import { TableOfContents } from "./TableOfContents";
+import { UpdatedOn } from "./UpdatedOn";
 import { WhatsNext } from "./WhatsNext";
 
 const TYPE_LABELS: Record<string, string> = {
@@ -178,6 +179,16 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
             <h1 className="text-foreground-strong mt-1 text-3xl font-bold tracking-tight">
               {fm.title}
             </h1>
+            {/*
+              ArticleJsonLd above is unconditional here, so every one of these
+              pages already tells a parser who wrote it and when it changed.
+              155 of them showed a reader neither. I left atoms out when the
+              byline went onto the guides, reasoning that they carry no date
+              line and the design meant to treat them differently — but the
+              design also gives them Article, author and dateModified, so it
+              was not making that distinction and I picked the wrong half of it.
+            */}
+            <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
           </header>
 
           {audioUrl && (
