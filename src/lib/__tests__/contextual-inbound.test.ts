@@ -173,7 +173,25 @@ describe("inbound links on the biggest guides", () => {
  * more than once whatever its potential says.
  */
 const REACHABLE_UNDER = 50;
-const TOP_TIER_REACHABLE = 3;
+
+/**
+ * Two, lowered from three once the tier below it was worked through.
+ *
+ * The bar started at three because that was all the top tier could clear
+ * honestly. The reach-2 pages have since been linked one at a time, each from a
+ * host whose own argument arrives there, and the last two took a second attempt
+ * — how-to-be-witty from the awkward-silence passage, which is exactly where
+ * people reach for wit and where it is exactly the wrong instinct, and
+ * how-to-stop-overthinking-in-a-relationship from the stale-model passage in
+ * questions-for-couples, which describes the same habit run anxiously rather
+ * than complacently.
+ *
+ * Every winnable page with two or more reachable results now clears it. Raising
+ * the bar again would need the same work on the reach-1 tier, and those pages
+ * rest on a single low-DR result, so the case for spending links on them is
+ * much weaker.
+ */
+const TOP_TIER_REACHABLE = 2;
 
 describe("inbound links on the most reachable guides", () => {
   it("refers to a top-tier guide more than once", async () => {

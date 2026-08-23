@@ -40,6 +40,8 @@ Because they kept changing, and you have been answering on their behalf.
 
 This is `blocking` in its quietest form. Blocking on this site is refusing what somebody offers — and the version that damages long relationships is not refusing an offer but **pre-empting one**: deciding what they were going to say, responding to that, and never finding out. Nobody notices it happening. It presents as knowing each other well.
 
+Run anxiously rather than complacently, the same habit is [overthinking in a relationship](/how-to-stop-overthinking-in-a-relationship): still answering on their behalf, but rehearsing the worst available version of the answer instead of the comfortable one. Both are the model talking rather than the person.
+
 `active-listening` is the corrective, and in a long relationship it is much harder than it is with a stranger, because with a stranger you have no model to fall back on. You are forced to actually listen. With a partner you can run the whole conversation on cached data and it sounds completely normal.
 
 ## The Only Test You Need

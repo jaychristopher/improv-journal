@@ -88,6 +88,8 @@ Improvisers spend a lot of time in silence on stage and it does not read as awkw
 
 So the move is not to fill it faster. It is to stay in it without leaving.
 
+The usual instinct is to reach for something clever, on the theory that the pause needs filling well rather than not needing filling. [How to be witty](/how-to-be-witty) is worth reading against that instinct, because the quick response turns out to come from attention rather than from having material ready — which means the reaching is the thing preventing it.
+
 - **Let it run three seconds longer than is comfortable.** Most pauses resolve on their own, and the person who waits is not the one who looked uncomfortable.
 - **If you fill it, fill it with the room.** Something present and specific, not a topic retrieved from storage. Retrieved topics are audibly retrieved.
 - **Do not apologise for it.** Naming a silence as awkward is what makes it so; until someone says it, it was just a pause.
