@@ -12,7 +12,7 @@ entry_atoms: [active-listening, yes-and, offers, commitment, be-present]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Keep a Conversation Going Without More Topics
@@ -78,6 +78,24 @@ Conversations rarely die from a shortage of subjects. They die because each turn
 **Premature resolution.** Someone raises something with substance in it and the other person solves it, sympathises, or sums it up. All three end it. "That sounds hard, you should talk to your manager" closes a subject that had another twenty minutes in it.
 
 Notice that none of these are failures of interest. You can be genuinely interested and do all three, which is why people who like each other still have conversations that die.
+
+## When You Are Doing All the Work
+
+Everything above assumes two people are trying. Often they are not, and that is usually the situation somebody is in when they go looking for advice about this: asking the questions, doing the receiving, doing the building, and getting four words back each time.
+
+No technique fixes that, and pretending otherwise is how people end up concluding they are bad at conversation. What helps is telling the three causes apart, because the right response to each is different and two of them are not about you at all.
+
+**They have nothing left.** End of a long day, bad week, thinking about something else. Nothing personal and nothing to fix. **The move is to lower the cost rather than raise the effort** — shorter questions, accept the short answer as complete, and let silence be comfortable instead of filling it. A quiet exchange that nobody had to perform in is a perfectly good conversation, and it leaves them willing to have another one.
+
+**They do not find this easy.** Some people are not withholding, they are struggling, and every question that asks them to summarise or self-assess makes it worse. **The move is to switch from invention to retrieval.** "What have you been up to?" requires composing a summary. "What did you end up doing on Saturday?" requires only remembering. Ask about the thing physically in front of you, or about their actual week, and answers get longer without anybody trying harder.
+
+**They would rather not be talking.** The rarest of the three and the one people are slowest to accept. **The move is to stop, warmly.** A conversation nobody is choosing cannot be rescued by skill, and continuing costs you both something. Leaving early and pleasantly is a better outcome than a long one that neither of you wanted.
+
+### How to tell which
+
+One test, and it takes about ninety seconds. **Make the next question easier and see what happens.** Drop from summary to specific — from "how's work" to "what did you actually do today". If the answers lengthen, it was cost, and you can keep going. If they stay the same length, it is willingness, and no further adjustment on your side is going to change it.
+
+The reframe that does most of the work here: **a one-word answer is usually information about the question, not about the person.** "How was your weekend?" asks somebody to review two days and produce a verdict, and the honest answer to that genuinely is "good, yeah". The question earned the answer it got.
 
 ## You Do Not Need More Topics
 
