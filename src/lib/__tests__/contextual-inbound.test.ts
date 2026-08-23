@@ -101,3 +101,57 @@ describe("contextual inbound links", () => {
     expect(unlinked).toEqual([]);
   });
 });
+
+/**
+ * The check above asks for one link and stops asking, which turned out to mean
+ * almost nothing where it mattered most.
+ *
+ * Everything passed it while the links were distributed in inverse proportion
+ * to what the pages are worth. most-likely-to-questions carries 45,000 traffic
+ * potential and had one. 21-questions-game has 44,000 and had two.
+ * icebreaker-questions-for-work, at 17,000, had eight. A guide the site is
+ * betting on should be referred to more than once by the pages around it, and
+ * "at least one" cannot express that.
+ *
+ * Two is not a target, it is a floor that makes the inversion visible. The
+ * fifteen guides in scope now sit at two or more, so this holds the repair
+ * rather than demanding new links for their own sake.
+ */
+const NEEDS_MORE_THAN_ONE_ABOVE = 15_000;
+
+describe("inbound links on the biggest guides", () => {
+  it("refers to a high-potential guide more than once", async () => {
+    const [bridges, atoms, threads, paths] = await Promise.all([
+      loadBridges(),
+      loadAtoms(),
+      loadThreads(),
+      loadPaths(),
+    ]);
+
+    const documents = [
+      ...bridges.map((b) => ({ slug: b.slug, body: b.content, isBridge: true })),
+      ...atoms.map((a) => ({ slug: a.slug, body: a.content, isBridge: false })),
+      ...threads.map((t) => ({ slug: t.slug, body: t.content, isBridge: false })),
+      ...paths.map((p) => ({ slug: p.slug, body: p.content, isBridge: false })),
+    ];
+
+    const thin: string[] = [];
+    let inScope = 0;
+
+    for (const bridge of bridges) {
+      if (bridge.frontmatter.serp_verdict !== "winnable") continue;
+      const primary = (bridge.frontmatter.target_keywords ?? [])[0];
+      const reach = primary?.traffic_potential ?? primary?.volume ?? 0;
+      if (reach < NEEDS_MORE_THAN_ONE_ABOVE) continue;
+      inScope++;
+      const count = documents.filter(
+        (d) => !(d.isBridge && d.slug === bridge.slug) && linksTo(d.body, bridge.slug),
+      ).length;
+      if (count < 2) thin.push(`${bridge.slug} (${reach} potential, ${count} link)`);
+    }
+
+    // If reach stops resolving, nothing is in scope and this passes on nothing.
+    expect(inScope).toBeGreaterThan(10);
+    expect(thin).toEqual([]);
+  });
+});
