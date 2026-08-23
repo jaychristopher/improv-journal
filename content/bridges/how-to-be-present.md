@@ -13,7 +13,7 @@ entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, a
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be Present: The Bandwidth Trick That Actually Works
@@ -69,6 +69,18 @@ The result: total presence. Not because you decided to be present. Because the e
 
 This is the insight that most presence advice misses. Presence isn't a state you achieve through willpower. It's a state that emerges automatically when the demand for external processing exceeds the supply available for internal processing. Fill the bandwidth with external tasks and the internal chatter has nowhere to live.
 
+## Is Mindfulness the Same as Being Present?
+
+They overlap far more than the framing above suggests, and it is worth being precise about where they part, because the difference explains a common and demoralising experience: people who meditate regularly and still lose the thread thirty seconds into a conversation.
+
+Kabat-Zinn's operational definition (1994) is awareness that arises through paying attention, on purpose, in the present moment, non-judgementally. Take the first three and you have described a performer mid-scene exactly — attention, deliberately placed, on what is happening now. There is no daylight there at all.
+
+The fourth is where the two diverge, and it is not a small divergence. Non-judgementally, in the meditative sense, means observing without acting on what you observe. A thought arrives, you notice it, you let it pass. That is the whole discipline, and the noticing is trained precisely by not converting it into action.
+
+A performer does not have that option. Whatever they notice has to become a response, immediately, in a way that changes what happens next and cannot be taken back. Same faculty, with an output requirement bolted to it — which makes improv a worse practice than meditation for cultivating equanimity, and a better one for producing presence while somebody is talking to you.
+
+The practical consequence is the useful part. If you have built a meditation habit and it has not transferred to conversations, nothing has gone wrong and you are not bad at it. You have trained the noticing half thoroughly and never trained the responding half under load, because sitting practice deliberately removes the load. The exercises below supply it. `be-present` covers the same distinction from the other direction.
+
 ## The Exercises That Force Presence
 
 These are structured bandwidth consumers. They work not by teaching you to be present but by creating conditions where presence is the only option.
@@ -107,4 +119,4 @@ The practical question isn't "how do I become a more present person." It's "how 
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind presence, bandwidth, and internal computation, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Be Present](/how-it-works/principles/be-present) and [Cognitive Bandwidth](/how-it-works/cognitive-bandwidth).*
 
-**Sources cited:** Miller (1956), *Psychological Review*. Cowan (2001), *Behavioral and Brain Sciences*. Kahneman (2011), *Thinking, Fast and Slow*. Hines, *Improv Nonsense* Substack.
+**Sources cited:** Kabat-Zinn (1994). Miller (1956), *Psychological Review*. Cowan (2001), *Behavioral and Brain Sciences*. Kahneman (2011), *Thinking, Fast and Slow*. Hines, *Improv Nonsense* Substack.
