@@ -105,6 +105,15 @@ export interface AtomFrontmatter {
   tags: string[];
   links: Link[];
   sources: string[]; // IDs of sources this atom was extracted from
+  /**
+   * Other names the same concept is taught under.
+   *
+   * Improv vocabulary is dialectal: what the Spolin lineage calls space work
+   * is object work at UCB. A page that never says the reader's word does not
+   * answer them, so aliases are emitted as schema.org alternateName and must
+   * also be explained in the prose — see the aliases guard.
+   */
+  aliases?: string[];
   external_links?: ExternalLink[];
   work?: CitedWork; // only on `reference` atoms
   /**

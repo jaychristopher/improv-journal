@@ -5,6 +5,7 @@ title: Space Work
 type: technique
 status: draft
 tags: [techniques, beginner, physicality, environment, shared-reality]
+aliases: ["Object work", "Space substance"]
 links:
   - { id: shared-reality-fragility, relation: illustrates }
   - { id: environment, relation: requires }
@@ -25,6 +26,18 @@ updated: "2026-08-23"
 The practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.
 
 Space work is **reality maintenance made visible**. When you open a door, pour a drink, or lean against a wall that isn't there, you are feeding the shared reality data that prevents decay. The audience sees the freezer because you shiver. They see the boat because you rock. The environment exists only through your body's commitment to it.
+
+## Space work, object work, miming
+
+Three names, and the first two are not quite synonyms.
+
+**Object work** is the term most American training uses, and it points at the narrower thing: the mug, the door handle, the rifle you are cleaning. Handling a specific imagined object with consistent size, weight and location.
+
+**Space work** is Spolin's term and the wider one. Objects are part of it, but so is everything with no object in it — the width of the corridor, the ceiling height, the fact that the room is cold. Spolin taught space as a substance you move *through* rather than a void containing props, which is why her students were asked to feel resistance in the air before they were asked to pick anything up.
+
+The distinction matters in practice because the failure modes differ. A scene can have immaculate object work and no space at all: two performers handling invisible cups in a location that has no walls, no distance between them, and no reason to be anywhere. The reverse is rarer and reads better — a strongly established room where nobody picks anything up is still a place.
+
+**Miming** is neither, and it is worth keeping separate. Mime is a performance discipline with its own vocabulary and precision, performed to be watched. Space work is performed to be *believed*, and only needs the detail the scene will actually use. Borrowing the word tends to make beginners perform their object handling to the audience, which is the exact thing that makes it look fake.
 
 ## Basic space work disciplines
 

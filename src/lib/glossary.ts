@@ -59,6 +59,8 @@ export interface GlossaryTerm {
   type: AtomType;
   /** The entry's opening definition, taken verbatim from its own content. */
   definition: string;
+  /** Other names the concept is taught under, for alternateName. */
+  aliases?: string[];
 }
 
 /** Every named concept the site defines, alphabetised by term. */
@@ -75,6 +77,7 @@ export async function loadGlossaryTerms(): Promise<GlossaryTerm[]> {
       // Several types open with a bold label ("Technique for: Be Simple")
       // before the definition sentence. The label is not the definition.
       definition: leadParagraph(stripLeadLabel(a.content)),
+      aliases: a.frontmatter.aliases,
     }))
     .sort((a, b) => a.term.localeCompare(b.term));
 }

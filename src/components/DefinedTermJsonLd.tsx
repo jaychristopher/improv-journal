@@ -16,6 +16,7 @@ export function DefinedTermJsonLd({ term }: { term: GlossaryTerm }) {
     name: term.term,
     description: term.definition,
     termCode: term.id,
+    ...(term.aliases?.length ? { alternateName: term.aliases } : {}),
     url: `${SITE_URL}${term.url}`,
     inDefinedTermSet: {
       "@type": "DefinedTermSet",

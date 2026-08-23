@@ -152,6 +152,7 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
             url: atomUrl,
             type: fm.type,
             definition: definitionFromHtml(atom.html),
+            aliases: fm.aliases,
           }}
         />
       )}
