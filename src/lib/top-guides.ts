@@ -91,7 +91,7 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
  * joins on its own merits and evicts nobody. MAX_PROMOTED is only a backstop
  * against the list growing unreasonably long.
  */
-const PROMOTION_FLOOR = 10_000;
+export const PROMOTION_FLOOR = 10_000;
 const MAX_PROMOTED = 24;
 
 export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
