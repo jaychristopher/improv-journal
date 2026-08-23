@@ -7,7 +7,7 @@ import { SITE_URL } from "@/lib/seo";
  * Library pages compete for exact work-title queries ("improvisation for the
  * theater", "anne bogart viewpoints"), where search engines resolve results
  * against a known entity. Emitting Book/Blog/PodcastSeries with author, ISBN,
- * and publisher lets the page be matched to the real work rather than treated
+ * periodical, DOI, and publisher lets the page be matched to the real work rather than treated
  * as an untyped article that merely mentions it.
  */
 export function CitedWorkJsonLd({
@@ -21,7 +21,12 @@ export function CitedWorkJsonLd({
   description: string;
   externalLinks?: ExternalLink[];
 }) {
-  const sameAs = externalLinks.map((link) => link.url).filter(Boolean);
+  // A DOI is the stable identifier a search engine can resolve the article
+  // against, so it belongs in sameAs alongside any hand-added links.
+  const sameAs = [
+    ...externalLinks.map((link) => link.url).filter(Boolean),
+    ...(work.doi ? [`https://doi.org/${work.doi}`] : []),
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -33,6 +38,10 @@ export function CitedWorkJsonLd({
     ...(work.publisher ? { publisher: { "@type": "Organization", name: work.publisher } } : {}),
     ...(work.published ? { datePublished: work.published } : {}),
     ...(work.isbn ? { isbn: work.isbn } : {}),
+    ...(work.periodical ? { isPartOf: { "@type": "Periodical", name: work.periodical } } : {}),
+    ...(work.doi
+      ? { identifier: { "@type": "PropertyValue", propertyID: "DOI", value: work.doi } }
+      : {}),
     ...(sameAs.length > 0 ? { sameAs } : {}),
     subjectOf: {
       "@type": "WebPage",

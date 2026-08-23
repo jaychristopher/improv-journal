@@ -48,6 +48,8 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
       "Academic sources that ground the laws in cognitive science and performance studies.",
     ids: [
       "ref-attention-and-effort-kahneman",
+      "ref-limb-braun-jazz-improvisation",
+      "ref-edmondson-psychological-safety",
       "ref-viewpoints-bogart-landau",
       "ref-meisner-on-acting",
     ],

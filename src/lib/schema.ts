@@ -75,7 +75,7 @@ export interface ExternalLink {
 }
 
 /** schema.org type emitted for a reference atom's cited work. */
-export type WorkType = "Book" | "Blog" | "PodcastSeries";
+export type WorkType = "Book" | "Blog" | "PodcastSeries" | "ScholarlyArticle";
 
 /**
  * Bibliographic detail for a `reference` atom, used to emit schema.org
@@ -91,6 +91,10 @@ export interface CitedWork {
   published?: string;
   /** ISBN-10 as printed; omitted where the work has no ISBN. */
   isbn?: string;
+  /** Journal the article appeared in. `ScholarlyArticle` only. */
+  periodical?: string;
+  /** Bare DOI, no `https://doi.org/` prefix. `ScholarlyArticle` only. */
+  doi?: string;
 }
 
 export interface AtomFrontmatter {

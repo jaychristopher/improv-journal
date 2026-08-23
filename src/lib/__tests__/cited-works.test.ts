@@ -21,7 +21,7 @@ describe("cited work metadata", () => {
   it("declares a schema.org type, a name, and at least one author", async () => {
     for (const atom of await references()) {
       const work = atom.frontmatter.work!;
-      expect(["Book", "Blog", "PodcastSeries"]).toContain(work.type);
+      expect(["Book", "Blog", "PodcastSeries", "ScholarlyArticle"]).toContain(work.type);
       expect(work.name.length).toBeGreaterThan(0);
       expect(work.authors.length).toBeGreaterThan(0);
       for (const author of work.authors) expect(author.trim()).toBe(author);
@@ -48,6 +48,32 @@ describe("cited work metadata", () => {
     for (const atom of await references()) {
       const work = atom.frontmatter.work!;
       if (work.isbn) expect(work.type, atom.frontmatter.id).toBe("Book");
+    }
+  });
+
+  it("only claims a periodical or DOI for journal articles", async () => {
+    for (const atom of await references()) {
+      const work = atom.frontmatter.work!;
+      if (work.periodical) {
+        expect(work.type, `${atom.frontmatter.id} periodical`).toBe("ScholarlyArticle");
+      }
+      if (work.doi) {
+        expect(work.type, `${atom.frontmatter.id} doi`).toBe("ScholarlyArticle");
+      }
+    }
+  });
+
+  it("gives every journal article a periodical and a bare, well-formed DOI", async () => {
+    for (const atom of await references()) {
+      const work = atom.frontmatter.work!;
+      if (work.type !== "ScholarlyArticle") continue;
+
+      // Without the journal the entry cannot be resolved to the real article,
+      // which is the whole reason these pages rank.
+      expect(work.periodical?.length, `${atom.frontmatter.id} periodical`).toBeGreaterThan(0);
+
+      // Bare, because CitedWorkJsonLd builds the doi.org URL from it.
+      expect(work.doi, `${atom.frontmatter.id} doi`).toMatch(/^10\.[0-9]{4,9}\/\S+$/);
     }
   });
 
