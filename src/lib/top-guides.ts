@@ -75,7 +75,22 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
   return keywords.length > 0 ? Math.max(...keywords.map((k) => k.volume)) : 0;
 }
 
-export async function getTopGuides(limit = 8): Promise<TopGuide[]> {
+/**
+ * The default was 8, and that number was doing real damage.
+ *
+ * Measured across the built output: the eight guides inside the cut receive
+ * 327 inbound internal links each — one from every page on the site — while
+ * the six immediately outside it receive between 10 and 17. Those six hold
+ * about 172,000 of combined traffic potential, all with checked-open results.
+ * questions-to-ask-friends at 41,000 was getting twelve links; party-games at
+ * 30,000 was getting eleven.
+ *
+ * 14 is not arbitrary. Ranked by reach, the winnable guides fall off a cliff
+ * after the fourteenth — 16,000 down to 5,800 — so this promotes everything
+ * above the break and nothing below it. The list still shrinks on its own if
+ * a verdict turns to authority, because the filters below run first.
+ */
+export async function getTopGuides(limit = 14): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
   return (
