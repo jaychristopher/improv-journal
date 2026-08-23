@@ -150,6 +150,7 @@ function scoreBridge(file) {
     keywords: (data.target_keywords || []).map((k) => String(k.keyword).toLowerCase()),
     serpVerdict: data.serp_verdict,
     serpMinDr: data.serp_min_dr,
+    serpChecked: data.serp_checked,
     words: content.trim().split(/\s+/).length,
   };
 }
@@ -357,6 +358,25 @@ console.log(
   `Traffic potential by whether the results are open: open ${fmt(openTp)}, ` +
     `gated ${fmt(gatedTp)}, not yet checked ${fmt(unknownTp)}`,
 );
+
+/**
+ * Every number above rests on a SERP checked on a particular day, and results
+ * move. A verdict of "gated" that has gone stale keeps a page written off; one
+ * of "winnable" keeps effort pointed at a wall. Neither fails anything, so the
+ * age is reported here rather than left to be remembered.
+ */
+const checkedDates = results.map((r) => r.serpChecked).filter(Boolean).sort();
+if (checkedDates.length) {
+  const today = new Date().toISOString().slice(0, 10);
+  const ageDays = (d) => Math.round((Date.parse(today) - Date.parse(d)) / 86_400_000);
+  const oldest = checkedDates[0];
+  const stale = checkedDates.filter((d) => ageDays(d) > 90).length;
+  console.log(
+    `SERP verdicts: ${checkedDates.length} recorded, oldest checked ${oldest} ` +
+      `(${ageDays(oldest)} day${ageDays(oldest) === 1 ? "" : "s"} ago)` +
+      (stale ? ` — ${stale} older than 90 days and worth re-checking` : ""),
+  );
+}
 console.log();
 
 // Write JSON report
