@@ -1,5 +1,5 @@
 ---
-title: "This or That Questions: 200 for Warming Up Any Room"
+title: "This or That Questions: 300 for Warming Up Any Room"
 description: "The cheapest question format there is — one word, nothing to prepare. Which makes it the right tool for a cold room and the wrong one for a warm one."
 target_keywords:
   - { keyword: "this or that questions", volume: 50000, difficulty: 3, traffic_potential: 40000, parent: "this or that questions" }
@@ -18,7 +18,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# This or That Questions: 200 for Warming Up Any Room
+# This or That Questions: 300 for Warming Up Any Room
 
 This or that is the cheapest question format that exists. One word answers it. There is nothing to compose, nothing to prepare, and no way to give a bad answer — which makes it the right tool for exactly one job, and the wrong tool for most others.
 
@@ -184,6 +184,128 @@ Small domestic preferences, which reveal more than people expect once you go bac
 - Big blockbuster or small film?
 - Podcast or radio?
 - Quiz night or karaoke?
+
+## Funny This or That Questions
+
+Silly enough to break a serious mood, and still answerable in one word. The comedy is in how confidently people answer.
+
+- Ghost or goblin?
+- Fight one horse-sized duck or a hundred duck-sized horses?
+- Always speak in rhyme or always sing?
+- Permanent glitter or permanent bells?
+- Live in a lighthouse or a windmill?
+- Be famous for something embarrassing or never be known at all?
+- Have a pet bear or a pet crocodile?
+- Nose that whistles or a knee that clicks?
+- Time travel to the past or the future?
+- Read minds or be invisible?
+- Never sneeze again or never yawn again?
+- Only wear hats or only wear scarves?
+- Have a butler who judges you or a chef who improvises?
+- Toes for fingers or fingers for toes?
+- Always smell faintly of soup or of bonfire?
+- Be chased by a swan or a wasp?
+- Talk to plants or to appliances?
+- Sleep standing up or eat lying down?
+- Have a laugh nobody can hear or one everybody can?
+- Never lose your keys or never lose your temper?
+
+## Sport and Outdoors
+
+- Play or watch?
+- Team sport or solo?
+- Gym or outdoors?
+- Run or swim?
+- Early workout or late?
+- Football or rugby?
+- Hills or flat?
+- Camping or a cabin?
+- Sea swimming or a pool?
+- Skis or a snowboard?
+- Long walk or short run?
+- Competitive or just for the fun?
+- Watch live or watch at home?
+- Cycle on roads or on trails?
+- Climb up or abseil down?
+- Sunrise start or afternoon start?
+
+## Money and Working Life
+
+- Salary or freedom?
+- Spend on things or on experiences?
+- Budget carefully or wing it?
+- Pay more for less hassle, or save and deal with it?
+- Own or rent?
+- Steady income or big swings?
+- Work to live or live to work?
+- Get paid to think or paid to make?
+- Be the expert or the generalist?
+- Fewer hours or fewer responsibilities?
+- Nice office or work from anywhere?
+- Big company or small one?
+- Known for what you do, or well paid for it?
+- Learn on the job or be trained properly?
+- Job you like with people you tolerate, or the reverse?
+- Retire early or never fully stop?
+
+## Animals and the Natural World
+
+- Dogs or horses?
+- Mountains or lakes?
+- Sunrise or a storm?
+- Birdsong or waves?
+- Garden or balcony?
+- Grow food or grow flowers?
+- Woodland or coastline?
+- Rain on a window or snow on a field?
+- Wild swimming or a hot spring?
+- Stars or northern lights?
+- Big open sky or dense forest?
+- Autumn leaves or spring blossom?
+- Keep bees or keep chickens?
+- Desert or tundra?
+- River or canal?
+- Sit by a fire or under a tree?
+
+## Seasons and Holidays
+
+- Christmas or summer holidays?
+- Decorate early or last minute?
+- Give gifts or receive them?
+- Big family gathering or a quiet one?
+- Turkey or something else entirely?
+- Fireworks or bonfire?
+- Halloween costume or no costume?
+- Summer festival or winter break?
+- Beach holiday or city break?
+- New Year out or New Year in?
+- Homemade gifts or bought?
+- Christmas songs from November or never?
+- Long weekend or one big trip?
+- Advent calendar chocolate or the fancy kind?
+- Host it or attend it?
+- Spring or autumn?
+
+## For Teenagers and Students
+
+Same format, lower stakes, and safe in a classroom or a first week where nobody knows anybody.
+
+- Exams or coursework?
+- Group project or work alone?
+- Morning lessons or afternoon?
+- Study in silence or with music?
+- Library or bedroom?
+- Cram or spread it out?
+- Handwrite notes or type them?
+- Present to the class or write it up?
+- School trip or free period?
+- Sports day or school play?
+- Canteen or packed lunch?
+- Sit at the front or the back?
+- Long holidays and long days, or shorter both?
+- Learn a language or an instrument?
+- Know the answer or ask the good question?
+- Uniform or your own clothes?
 
 ## Pairs That Actually Tell You Something
 
