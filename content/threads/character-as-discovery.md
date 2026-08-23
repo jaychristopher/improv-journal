@@ -5,7 +5,7 @@ status: seed
 atoms: [physicality, status-dynamics, character-through-game, playing-against-type, emotional-range, character, status, point-of-view]
 tags: [character, advanced, mastery, technique]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 Most improv characters are built from the neck up — a voice, an attitude, maybe an occupation. Mastery-level character work starts from the body, the game, and the relationship. The character surprises the performer as much as the audience.
@@ -21,3 +21,5 @@ Most improv characters are built from the neck up — a voice, an attitude, mayb
 **Emotional range** is what separates competent performers from artists. Most improvisers default to "wry and sardonic" — a defense mechanism against vulnerability. Training in anger, grief, joy, tenderness, and fear (not performing these emotions but actually accessing them) requires the kind of work Meisner called "living truthfully under imaginary circumstances." It's not about being a dramatic actor. It's about having the full palette available when the scene calls for it.
 
 The common thread: every technique here asks the performer to discover the character rather than decide it. The body discovers through movement. Status discovers through transaction. Game discovers through pattern. Type-subversion discovers through surprise. Emotion discovers through honest response. At the mastery level, you stop building characters and start meeting them.
+
+Discovery through the body is not confined to a stage. The signals an audience reads off a posture are the same ones everyone reads off each other all day, which is the subject of [how to read body language](/how-to-read-body-language).

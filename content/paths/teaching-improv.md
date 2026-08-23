@@ -22,7 +22,7 @@ threads:
   - presence-and-commitment
 status: seed
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 You've been doing improv for years. You're good at it. Someone asked you to teach a class. You said yes. And now you're staring at a blank lesson plan wondering why knowing how to ride a bicycle doesn't make you a cycling instructor.
@@ -36,3 +36,5 @@ Then **the teacher's toolkit** — the actual pedagogy. How to create safety (th
 Then we revisit the fundamentals through a teacher's lens: **building on offers** (the engine of scene work, and the first thing you'll teach) and **presence and commitment** (the inner game your students need from day one, not as an advanced skill).
 
 By the end, you'll have a framework for structuring classes, a vocabulary for giving specific feedback, a systems-level understanding of WHY improv principles work, and — most importantly — permission to develop your own teaching voice instead of copying your best teacher's. Improv teachers should all teach differently. What they share is the ability to explain, to create safety, and to design experiences where students discover the principles themselves.
+
+Safety is listed first here because nothing else in the toolkit works without it. [Psychological safety](/psychological-safety) is the research literature's name for the same precondition.

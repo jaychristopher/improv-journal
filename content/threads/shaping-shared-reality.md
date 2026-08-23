@@ -14,7 +14,7 @@ status: draft
 atoms: [model-of-their-model, belief-as-architecture, rigid-core-malleable-edge, framing-as-angle-of-approach, status, shared-reality-fragility]
 tags: [synthesis, beyond-stage, beliefs, framing, social-reality, status]
 created: "2026-05-14"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 You can't see into someone else's model of the world. You only have your model of their model — and it's almost always wrong. This is the first thing to get honest about.
@@ -34,3 +34,5 @@ Three things govern whether a signal lands:
 The deeper point: social reality is co-constructed. Not invented from nothing, but propped up by the players together. The "hard lines" people defend are usually narrower than they appear, and most apparent blockers yield to a shift in framing rather than a stronger push.
 
 So: model humbly, frame carefully, and play the role you actually want to occupy. The room has more give than it looks.
+
+Framing has the widest reach of the three outside a theatre, and it has a name in the research literature. The [framing effect](/framing-effect) is a skill far more often than it is a bias.

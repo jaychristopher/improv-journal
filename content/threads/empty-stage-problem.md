@@ -10,7 +10,7 @@ status: seed
 atoms: [irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, reality-construction]
 tags: [laws, constraints, systems-thinking]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Imagine you're standing on a stage. Wooden floor, bright lights in your face. No props. No set. No script.
@@ -34,6 +34,8 @@ This is a system that wants to fall apart. The default state is chaos, not order
 And yet people do this every night. Often brilliantly. Which means there must be rules — not artistic guidelines or suggestions for being funnier, but operational principles for keeping the shared world intact under hostile conditions.
 
 There are. And they turn out to apply far beyond the stage.
+
+Irreversibility is the constraint people find hardest to accept, on a stage and off one. [Letting go of control](/how-to-let-go-of-control) is the practice that follows from taking it seriously.
 
 [^1]: This constraint is called *path dependence* — the idea that history is irreversible and every action shapes all future possibilities. It's what makes improv high-stakes: you're always living in the consequences of the last three seconds.
 

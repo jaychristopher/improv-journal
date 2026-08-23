@@ -5,7 +5,7 @@ status: seed
 atoms: [show-dynamic, heat-and-weight, run, sweep-edit, organic-opening, pacing, editing, backline-craft]
 tags: [show-craft, performance, advanced, mastery]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 A great improv show isn't a set of scenes. It's a shaped experience — with a beginning that establishes, a middle that develops, and an end that converges. Making that shape happen without a script is one of the highest skills in the art form.
@@ -21,3 +21,5 @@ Once scenes begin, **heat and weight** governs the dynamics. Heat is high energy
 The show builds toward convergence. **The run** — rapid-fire callbacks and collisions — creates climactic energy. Scenes get shorter and faster. Content becomes secondary to momentum. The strongest endings circle back to the opening, creating the sense that the show was authored when it wasn't.
 
 The whole show is a conversation between performers and audience, mediated by **pacing** — the rhythm of scenes, edits, and silences that creates the audience's experience of time. Too fast and they can't absorb. Too slow and they disengage. The best shows breathe.
+
+For a reader arriving at this from outside the form, the ground floor is [what improv is](/what-is-improv) and how an unscripted show holds together at all.

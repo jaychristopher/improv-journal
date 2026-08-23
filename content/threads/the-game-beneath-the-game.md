@@ -5,7 +5,7 @@ status: seed
 atoms: [game-types, game-evolution, pattern-break, analogous-scene, game-of-the-scene, heightening, rest-beat, if-this-then-what]
 tags: [game, advanced, mastery, UCB]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 You know how to find the game. You can heighten it. You know when to rest. That's Level 3 work. Here's Level 5.
@@ -19,3 +19,5 @@ The third thing: sometimes you need to **break the pattern**. The rule of three 
 The fourth thing: games travel. The **analogous scene** transplants a game into a completely different context — different characters, different world, same underlying logic. This is the Harold's second-beat engine. The key is abstraction level: not "the doctor who lies" but "a trusted professional who betrays trust." Abstract enough to generate fresh scenes; specific enough that the audience feels the connection.
 
 Finally, "if this is true, what else is true?" remains the master question at every level. It's just that at the mastery level, you're asking it across scenes, across beats, across the whole show — not just within a single moment.
+
+That question is the engine of comedy as well as of structure, which is why [how to be funny](/how-to-be-funny) spends most of its length on noticing rather than on jokes.

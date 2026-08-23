@@ -10,7 +10,7 @@ status: seed
 atoms: [be-positive, yes-and, negation, blocking, offers, yes-and-chain]
 tags: [principles, fundamentals, show-dont-tell]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Let's watch a scene break.
@@ -48,5 +48,7 @@ There's a crucial clarification that gets lost in the pop-culture version of "Ye
 Every interaction is a chain of offers given and received. An offer is anything that advances the shared reality — a word, a gesture, a shift in tone, a silence. The skill isn't generating better offers. It's *receiving* the ones already being made and building on them instead of replacing them with your own.
 
 **Try this now.** If there's someone nearby, try a sixty-second "Yes, And" chain. One person starts with a simple statement — *"We're on a boat."* The other responds starting with "Yes, and..." adding a new detail. Go back and forth. No corrections, no "but," no steering. Just accept and extend. Notice how quickly the world builds. Notice how little effort it takes when no one is fighting the current.[^1]
+
+It is the first rule, and also the one most often quoted without its limits. The rest of them get the same scrutiny in [the rules of improv](/rules-of-improv).
 
 [^1]: Keith Johnstone, one of the founders of modern improv, put it simply: "Those who say yes are rewarded by the adventures they have." Scott AdSit adds the collaborative frame: "Your job is to support your partner. Treat their idea as a gift."

@@ -24,7 +24,7 @@ threads:
   - physics-of-every-room
 status: seed
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-08-23"
 ---
 
 This is not a guide to being funnier. It's a guide to the physics of human connection — discovered on the improv stage, applicable everywhere.
@@ -32,3 +32,5 @@ This is not a guide to being funnier. It's a guide to the physics of human conne
 You'll start with something you already know: the felt difference between a conversation that works and one that doesn't. Then you'll see why that difference isn't random — there are forces at play, constraints that make shared reality fragile and hard to maintain. From there, five principles emerge. Not artistic tips, but operational rules for keeping connection alive under real conditions.
 
 Each section includes something you can try immediately. The principles are simple. The practice is a lifetime.
+
+The precondition for all of it is a room where the cost of being wrong is survivable. That is [emotional safety](/emotional-safety), and it is built rather than assumed.

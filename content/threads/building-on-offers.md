@@ -13,7 +13,7 @@ status: validated
 atoms: [active-listening, offers, yes-and, blocking]
 tags: [fundamentals, scene-work]
 created: "2026-03-29"
-updated: "2026-04-22"
+updated: "2026-08-23"
 ---
 
 Every improv scene is a chain of offers given and received. Understanding this chain - and what breaks it - is the first real skill an improviser develops.
@@ -27,3 +27,5 @@ What you're listening for are **offers** - and they're everywhere. Your partner'
 **Blocking** is what happens when the chain breaks. Sometimes it's obvious denial, but more often it's the subtle refusal to let your partner's offer change you. The scene stalls not because someone said "no" but because someone stopped receiving.
 
 The progression: listen -> receive -> build -> offer. Your build becomes your partner's next gift. The chain sustains itself when both players trust the process more than their own plans.
+
+The first link in that chain is the one most people skip: [active listening](/active-listening) is the difference between waiting to speak and actually receiving, and it is trainable rather than innate. The second is argued over more than any other rule in the form — [what yes-and actually means in improv](/yes-and-improv), and the places it stops working.

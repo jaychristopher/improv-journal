@@ -22,7 +22,7 @@ threads:
   - the-plateau-is-a-map
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 You've been doing improv for a year or two. You know yes-and. You've done Harold. You've had great scenes and terrible ones. But here's what keeps you up at night: you can't tell WHY the great ones were great or WHY the terrible ones died. All you have is a feeling — and feelings don't give you a practice plan.
@@ -38,3 +38,5 @@ Then **signal clarity** — the principle that in a bandwidth-limited system, si
 Finally, **the plateau itself** — what it is (the knowledge-ability gap), why it feels like regression (your standards outgrew your execution), and specific recovery strategies for each collapse mode. Plus the insight that nobody talks about: reconnecting with joy is a technical skill, not a platitude. Gratitude isn't self-help. It's a system requirement.
 
 This path won't make you funnier. It'll make you diagnosable — to yourself. And that's how you break through.
+
+Coaching yourself works on the same premise as [confidence building exercises](/confidence-building-exercises): confidence is what accumulates after acting, not a state you generate beforehand.

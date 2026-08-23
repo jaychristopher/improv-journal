@@ -21,7 +21,7 @@ threads:
   - the-performers-edge
 status: seed
 created: "2026-04-05"
-updated: "2026-04-22"
+updated: "2026-08-23"
 ---
 
 At a certain point, you know all the techniques. The question shifts from "how do I do this?" to "who am I when I do this?" and "how do we become more than the sum of our parts?"
@@ -35,3 +35,5 @@ Then, **the performer's edge**. Performance state — the transmutation of nervo
 The paradox at the center: the stronger your individual voice, the more you have to offer the ensemble. And the deeper your ensemble practice, the more distinctive your individual voice becomes. They aren't in tension. They're in conversation.
 
 This is where improv becomes art.
+
+Ensembles are built rather than assembled, and the deliberate version of that work is covered in [trust building exercises](/trust-building-exercises).

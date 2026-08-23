@@ -10,7 +10,7 @@ status: seed
 atoms: [be-honest, performing-cleverness, commitment, be-simple, overcomplication, continuous-signaling, emotional-honesty-scene, one-word-scene]
 tags: [principles, authenticity, bandwidth, clarity]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 So far we've talked about *receiving* — accepting offers, staying present, integrating surprises. Now we need to talk about *sending*. Because you're always transmitting, whether you intend to or not. The question is: what kind of signal are you putting out?
@@ -54,6 +54,8 @@ Simplicity isn't lazy. It's generous. It means your partner can immediately rece
 **Try this.** With a partner, do a scene using only one word per turn, alternating. *"I" / "think" / "we" / "should" / "leave."* Notice: you can't overcomplicate. And stories still emerge.[^5]
 
 **Then try this.** Do a mundane scene — folding laundry, washing dishes — with one rule: no jokes, no irony. Every line is emotionally honest. If it's boring, be bored. If something your partner says makes you feel something, feel it. Notice how compelling sincerity is when nothing is competing with it for bandwidth.[^6]
+
+Off the stage the same economy has a familiar name. [Being articulate](/how-to-be-more-articulate) is not a matter of better words but of sending fewer competing signals at once.
 
 [^1]: Del Close had a golden rule: "The truth is funny." Not clever observations about the truth. The truth itself, played straight.
 

@@ -5,7 +5,7 @@ status: seed
 atoms: [systemic-collapse-modes, systemic-health-indicators, internal-computation, performing-cleverness, hesitation, bulldozing, steering, overcomplication, judgment, fear-of-failure]
 tags: [diagnostics, antipatterns, self-coaching, systems-thinking]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 You know the scene didn't work. You can feel it. But when someone asks "what happened?" all you can say is "I don't know, it just... died." That feeling — knowing something failed without being able to name it — is the vocabulary gap that keeps intermediate improvisers stuck.
@@ -37,3 +37,5 @@ Now zoom in. Within those modes, specific **antipatterns** are usually at work:
 To use this vocabulary: after a scene, ask yourself three questions. (1) Which collapse mode was it — latency, fracture, or decay? (2) Which antipattern was operating — was I computing, performing cleverness, hesitating, bulldozing, steering, overcomplicating, or judging? (3) What would the opposite behavior have looked like?
 
 That third question turns diagnosis into practice. The vocabulary isn't just for naming what went wrong — it's for seeing what to try next.
+
+Most of these collapse modes begin in the same place — a performer who has started computing instead of receiving. That mechanism is general enough to have its own treatment in [how to stop overthinking](/how-to-stop-overthinking).

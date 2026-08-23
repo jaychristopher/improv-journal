@@ -5,7 +5,7 @@ status: seed
 atoms: [backline-craft, group-mind-cultivation, ensemble, group-mind, trust, support-moves, interdependence]
 tags: [ensemble, mastery, group-mind, advanced]
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Every improv student learns "make your partner look good." At the mastery level, you stop thinking about it — your partner's success becomes indistinguishable from your own. The ensemble becomes a single creative intelligence, not through mysticism but through deep mutual attention refined over thousands of hours.
@@ -21,3 +21,5 @@ It is also transient. Group mind arises and dissipates, sometimes within a singl
 **Support moves** at the mastery level aren't about giving your partner easy setups. They're about sensing what the scene needs and providing it — which might mean staying quiet, which might mean making a bold entrance, which might mean editing at the top of a scene that's working beautifully. The support move is whatever the show needs next, and knowing what that is requires having been present for everything that came before.
 
 **Interdependence** at this level isn't a principle you follow — it's the reality you inhabit. Your success is your partner's success. Their failure is your failure. The scene is the unit, not the performer. When an ensemble fully inhabits this reality, the audience perceives something that looks like telepathy but is actually the product of training, trust, and ruthless mutual attention.
+
+Interdependence is also the least sentimental description of what teams are reaching for. [Collaboration skills](/collaboration-skills) are what it looks like when the unit is a working group rather than a cast.

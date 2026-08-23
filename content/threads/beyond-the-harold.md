@@ -5,7 +5,7 @@ status: seed
 atoms: [harold, montage, armando, la-ronde, narrative-longform, organic-longform, two-person-longform, genre-format]
 tags: [formats, longform, advanced, mastery]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 You've learned the Harold. You can run its beats, find its games, make its connections. Now what?
@@ -25,3 +25,5 @@ The **Armando** strips away Harold's structural complexity and replaces it with 
 **Genre formats** use shared cultural literacy as structure. Film noir, horror, musical — the conventions become the scaffold. Baby Wants Candy has performed over 4,000 fully improvised musicals.
 
 Each format demands different skills, rewards different strengths, and reveals different truths about what improvisation can be. The Harold taught you the grammar. These formats teach you the dialects.
+
+Formats are where traditions become visible. Which dialect a room speaks usually tells you which lineage taught it, which is the subject of [improv theory and its five traditions](/improv-theory).

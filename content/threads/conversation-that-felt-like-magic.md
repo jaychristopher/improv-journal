@@ -10,7 +10,7 @@ status: seed
 atoms: [shared-reality-fragility, continuous-signaling, systemic-health-indicators]
 tags: [hook, experience, beyond-stage]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Think about the last conversation where you lost track of time.
@@ -36,5 +36,7 @@ And you're always communicating — whether you mean to or not. Your posture, yo
 There is a place where these forces are laid completely bare — where the physics of connection operates at maximum intensity, with zero safety net. A place that has spent decades learning exactly how shared reality works, how it breaks, and how to keep it alive.
 
 That place is an empty stage.
+
+The experience is not rare because it is magical. It is rare because the conditions are usually absent, and [keeping a conversation alive](/how-to-keep-a-conversation-going) is mostly a matter of restoring them on purpose.
 
 [^1]: In improv terminology, these are called *systemic health indicators*: cumulative state (the world gets richer), coherence (both people agree on what's real), and mutual recognition (signals are being sent and received clearly). But you don't need the terminology to recognize the experience.

@@ -13,7 +13,7 @@ status: validated
 atoms: [active-listening, commitment]
 tags: [fundamentals, mindset]
 created: "2026-03-29"
-updated: "2026-04-22"
+updated: "2026-08-23"
 ---
 
 The two invisible skills that separate okay improv from electric improv are presence and commitment. Neither is a technique you perform - they're states you inhabit.
@@ -25,3 +25,5 @@ The two invisible skills that separate okay improv from electric improv are pres
 The connection between them: presence is the internal state, commitment is the external expression. You can't fake commitment without presence, and presence without commitment stays invisible to the audience.
 
 Both are practices, not talents. You build them through repetition, through noticing when you've drifted out of the scene, and through the courage to come back fully each time.
+
+Presence is the half that transfers most directly, and [being present](/how-to-be-present) sets out the bandwidth mechanism underneath it — which is the reason the instruction works at all.

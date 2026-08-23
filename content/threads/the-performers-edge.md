@@ -5,7 +5,7 @@ status: seed
 atoms: [performance-state, audience-relationship, failing-forward, finding-your-voice, stage-presence, be-brave, commitment]
 tags: [performance, mastery, artistry, voice]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 At a certain point, you know the techniques. You can find the game, heighten it, edit well, support your teammates. The question shifts from "how do I do this?" to "who am I when I do this?"
@@ -21,3 +21,5 @@ At a certain point, you know the techniques. You can find the game, heighten it,
 The tension: improv is collaborative, and "serve the scene" can suppress individual expression. The resolution: strong individual voices contribute distinctive colors to the ensemble palette. The best ensembles are composed of distinctive voices, not interchangeable parts. Your voice doesn't compete with the ensemble — it feeds it.
 
 The distinction that matters: voice adapts to context. Schtick ignores context. Voice is the values and instincts you bring to every scene; schtick is the moves you repeat regardless of what the scene needs. One is artistry. The other is a habit.
+
+Performance state is the same arousal that, named differently, stops people getting up at all. [Stage fright](/stage-fright) turns out to be an ally more often than an enemy.

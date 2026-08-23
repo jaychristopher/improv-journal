@@ -21,7 +21,7 @@ threads:
   - character-as-discovery
 status: seed
 created: "2026-04-05"
-updated: "2026-04-22"
+updated: "2026-08-23"
 ---
 
 At Level 2, you learn to find the game. At Level 3, you learn to heighten it. This path is Level 5: the game beneath the game.
@@ -31,3 +31,5 @@ We start with **advanced pattern mechanics**. Games aren't one thing — they're
 Then we move to **character as discovery**. Most improv characters are built from the neck up — a voice, an attitude. Mastery-level character starts from the body (Spolin's physicality, Bogart's Viewpoints), from status dynamics (Johnstone's seesaw), from game (UCB's insight that the behavioral pattern IS the character), from type-subversion (establishing expectations to reveal depth beneath), and from emotional range (accessing the full spectrum, not just comfortable defaults).
 
 The common thread: stop deciding characters and start discovering them. The body discovers through movement. Status discovers through transaction. Game discovers through pattern. Emotion discovers through honest response. At the mastery level, the character surprises the performer as much as the audience.
+
+Pattern work is also where quick comic response comes from. Off the stage that goes by a shorter name — [being witty](/how-to-be-witty).

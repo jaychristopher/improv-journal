@@ -10,7 +10,7 @@ status: seed
 atoms: [reality-construction, irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, meaning-is-relational, interdependence]
 tags: [systems-thinking, laws, fundamentals, meta]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 Before you learn the moves, learn the physics.
@@ -26,3 +26,5 @@ These aren't improv principles. They're the physics of every real-time human int
 Here's the reframe for analytical minds: your capacity for systems thinking isn't a handicap in improv. It's an asset deployed at the wrong time. The dorsolateral prefrontal cortex — the part of your brain that analyzes, plans, and self-monitors — needs to quiet during performance. But between performances? That analytical engine is exactly what lets you understand the system, diagnose failure, and design better practice. At advanced levels, pattern recognition (the core analytical skill) becomes the engine of UCB's game-of-the-scene.
 
 The system is learnable. The physics are knowable. And knowing them doesn't replace practice — it makes practice intelligent.
+
+The same claim, made about people rather than about scenes, is that [people skills are a system](/people-skills) rather than a personality trait.

@@ -20,7 +20,7 @@ threads:
   - show-as-architecture
 status: seed
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 The Harold is training wheels. Brilliant training wheels — designed to force you to practice every core skill simultaneously. But training wheels.
@@ -30,3 +30,5 @@ This path takes you beyond. First, the **longform landscape** — six formats be
 Then, **show-level craft** — the skill of shaping a full performance, not just individual scenes. How organic openings generate raw material. How heat and weight create dynamic contrast. How editing at the top makes scenes land harder. How backline awareness holds the whole show together. How runs build climactic energy. How the best shows circle back to their beginnings and feel authored when nothing was planned.
 
 This is where improv becomes architecture — you're not just building rooms, you're building a house. The rooms matter, but the house is what the audience lives in.
+
+Mastery is mostly a question of what you practise and how you read a plateau, which is the argument of [getting better at improv](/how-to-get-better-at-improv).

@@ -10,7 +10,7 @@ status: seed
 atoms: [be-present, active-listening, internal-computation, cognitive-bandwidth, be-thankful, judgment, last-word-response, gift-giving]
 tags: [principles, presence, cognition, trust]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Accepting what your partner gives you is the first principle. But it assumes you actually *heard* what they gave you. And that turns out to be the harder problem.
@@ -52,6 +52,8 @@ Some improvisers literally whisper *"thank you"* under their breath when somethi
 **Try this.** Face a partner. One of you mimes handing over an invisible object — anything, no plan. The receiver takes it, decides what it is, and reacts with genuine gratitude: *"A jar of pickles! You remembered I love these since the camping trip."* Then hand something back. Go back and forth. Notice how the constraint of gratitude eliminates judgment entirely — you can't evaluate a gift you've already said thank you for.[^5]
 
 These two principles — be present, be thankful — share a root. They're both fighting the same enemy: the brain's compulsion to leave the moment. Planning pulls you into the future. Judging pulls you into the past. Presence and gratitude are what keep you *here*, in the only place where the shared world actually exists.
+
+Both halves of that are trainable, and the first has a whole method behind it: [how to be present](/how-to-be-present) treats attention as a budget rather than as a virtue.
 
 [^1]: Susan Messing captures the felt experience from the other side: "If you're in your head, then you're not here with me."
 

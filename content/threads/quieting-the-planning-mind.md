@@ -10,7 +10,7 @@ status: seed
 atoms: [be-present, internal-computation, fear-of-failure, obvious-choice, mirroring, one-word-scene, blind-offer]
 tags: [presence, exercises, analytical, inner-game]
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 You know the feeling. Your scene partner says something and instead of responding, your brain launches a search: *What's the funny thing to say? What's the right move? What would a good improviser do here?* By the time you've evaluated your options, the moment is gone. You deliver something competent and dead.
@@ -32,3 +32,5 @@ Three exercises that build the neural pathways:
 **Blind offers** ask you to start a scene with a physical action — no plan, no idea, just movement. Your body makes the offer before your brain can screen it. Then you discover what you're doing after the fact. This reversal — action first, understanding second — is the core improv skill, and it's the one the analytical mind resists most.
 
 The goal isn't to silence the analytical mind permanently. It's to learn when to deploy it. Between shows: analyze everything. During practice: notice what works and what doesn't. In the moment of performance: let it go. The system you've learned will hold you. Trust the physics.
+
+Nothing in this is specific to performance. The same loop runs in meetings and at dinner tables, and [the overthinking loop](/how-to-stop-overthinking) is worth reading as the attention problem it actually is.

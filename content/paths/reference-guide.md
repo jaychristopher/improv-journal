@@ -22,7 +22,7 @@ threads:
   - diagnosing-scene-failure
 status: seed
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 This isn't a path in the usual sense. It's an index — a way into a knowledge graph designed for people who write, teach, research, or think seriously about improvisation.
@@ -47,3 +47,5 @@ Every improv book comes from one tradition. This graph holds five. Every improv 
 - **By disagreement:** Look for `**Counter-position:**` blocks in atom bodies. These are where the real knowledge lives — not in what everyone agrees on, but in what they argue about.
 
 Every claim in this graph cites a specific source. Where the source is oral tradition, it's flagged. Where the synthesis is original, it's labeled. Where a claim is unverifiable, it says so. The methodology is the credibility.
+
+For the historical frame around these entries — who argued what, and against whom — see [improv theory](/improv-theory).

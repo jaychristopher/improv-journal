@@ -5,7 +5,7 @@ status: seed
 atoms: [safety-in-the-room, curriculum-design, warm-up, side-coaching, giving-notes, reading-the-room, fear-of-failure, trust]
 tags: [pedagogy, teaching, structure, safety]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 You can do improv. Now someone's asked you to teach it. And you've discovered that knowing how to ride a bicycle and knowing how to teach someone to ride a bicycle are completely different skills.
@@ -25,3 +25,5 @@ Start with the one thing that matters most: **safety in the room**. Before any i
 **Reading the room** is the meta-skill that governs all the others. Are they tired? Push them physically. Are they stuck in their heads? Switch to exercises that bypass thinking. Are they playing safe? Raise the stakes. Is someone checking out? Find a way to include them that doesn't spotlight them. This is where teaching becomes improv — you're responding to what's in front of you, not executing a plan.
 
 One more thing: **trust your teaching voice**. Billy Merritt warns that insecure teachers teach in "absolutes" — rigid rules delivered with false certainty. Mature teaching means holding multiple truths: yes-and is powerful AND it has limits. Game is useful AND not every scene needs one. Johnstone and UCB disagree AND they're both right about different things. Your job isn't to have all the answers. Your job is to create the conditions where your students discover their own.
+
+Giving notes is the part that travels furthest beyond a classroom. [Feedback that changes behaviour](/how-to-give-feedback) runs on the same principle: less of it, and aimed at something the person can do next.

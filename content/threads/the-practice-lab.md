@@ -5,7 +5,7 @@ status: draft
 atoms: [emotion-switch, first-line-drill, fracture-repair-drill, no-backspace-scene, space-work-scene, status-transfer, directed-scene, genre-scene, organic-opening-exercise]
 tags: [exercises, practice, training, pedagogy]
 created: "2026-04-07"
-updated: "2026-04-07"
+updated: "2026-08-23"
 ---
 
 Every improv skill is trainable through exercises that make the right behavior structurally unavoidable. You don't learn by being told — you learn by being put in a situation where the skill is the only way through.
@@ -29,3 +29,5 @@ Every improv skill is trainable through exercises that make the right behavior s
 **Organic opening exercise** trains group free-association: practice Harold openings as standalones, with the debrief ("what themes emerged?") as the core learning moment.
 
 The practice lab is where technique becomes instinct. The constraint does the teaching.
+
+Every drill here needs material to run on. The [prompts](/improv-prompts) collection exists for that, sorted by what a scene needs rather than by theme.

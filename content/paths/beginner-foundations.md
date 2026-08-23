@@ -26,7 +26,7 @@ audience: [beginner]
 threads: [building-on-offers, presence-and-commitment]
 status: validated
 created: "2026-03-29"
-updated: "2026-04-22"
+updated: "2026-08-23"
 ---
 
 Welcome. If you're new to improv - or if you've been doing it a while and want to re-examine the fundamentals - this is where to start.
@@ -38,3 +38,5 @@ We start with **how scenes actually work** - the cycle of listening, receiving o
 Then we move to **the inner game** - presence and commitment. These aren't advanced skills you earn later. They're foundational states that make everything else possible. The sooner you practice them, the faster everything clicks.
 
 Each section links to deeper explorations of individual concepts. Go as deep as you want, or stay on the path. Either way, you're building real understanding, not just collecting tips.
+
+If any of this is your first contact with the form, start one step back with [what improv actually is](/what-is-improv).

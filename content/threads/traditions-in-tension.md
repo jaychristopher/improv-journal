@@ -5,7 +5,7 @@ status: seed
 atoms: [yes-and, game-of-the-scene, status, presence, editing, offers, heightening, be-present, commitment, discovery]
 tags: [traditions, comparison, counter-positions, research]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 There is no single "improv." There are at least five major traditions, each with distinct philosophies, and they disagree on fundamental questions. Understanding where they diverge — and why — is what separates shallow citation from real knowledge of the art form.
@@ -32,3 +32,5 @@ There is no single "improv." There are at least five major traditions, each with
 **On What Improv Is For:** Close called the Harold "a spiritual endeavor." UCB calls it comedy. Spolin called it "a way of life." Johnstone calls it "a technique for rescuing creativity from education." Applied improvisers call it a toolkit for human interaction. The answer determines everything — what you teach, what you value, what you measure success by.
 
 **Why this matters:** Every improv book, blog post, and workshop comes from a tradition — usually one tradition. When a business writer says "improv teaches us to say yes-and," they're citing the Chicago lineage and probably don't know it. When a therapist uses "status games," they're channeling Johnstone. When someone says "find the game," they're speaking UCB. The traditions aren't interchangeable. Knowing which one you're drawing from — and what the others would say instead — is the difference between understanding improv and citing it.
+
+One of those lineages casts a longer shadow than the others. [Del Close](/del-close) is why so much of the Chicago vocabulary now sounds like common sense rather than like one man's argument.

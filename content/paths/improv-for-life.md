@@ -22,7 +22,7 @@ threads:
   - the-inner-game-expanded
 status: draft
 created: "2026-04-13"
-updated: "2026-04-13"
+updated: "2026-08-23"
 ---
 
 You don't have to do improv to use what improv teaches.
@@ -30,3 +30,5 @@ You don't have to do improv to use what improv teaches.
 For sixty years, performers have been studying — under pressure, in real time, in front of audiences — how human connection actually works. What they've found applies far beyond the stage: to every conversation, every relationship, every moment where two people are trying to build something together without a script.
 
 This path takes the core discoveries from that practice and puts them in your hands. No comedy. No stage. Just the principles that make connection work, explained through the lens of the people who figured them out the hard way.
+
+The most common reason people come looking for this material is not performance. It is [social awkwardness](/how-to-be-less-awkward), which turns out to be an attention problem rather than a trait.

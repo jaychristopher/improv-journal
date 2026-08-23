@@ -5,7 +5,7 @@ status: draft
 atoms: [initiation, relationship, want, base-reality, environment, scene-structure, two-person-scene, group-scene, opening, suggestion, space-work, endowment, do-feel-say]
 tags: [fundamentals, scene-work, definitions, structure]
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Before game, before format, before any of the advanced mechanics — there is the scene. Two people, a space, a relationship, and something at stake. Everything in improv is built from this unit.
@@ -19,3 +19,5 @@ The **environment** matters more than beginners think. A breakup in a kitchen pl
 The **two-person scene** is the fundamental unit. Master it and everything else is variation. **Group scenes** are a different animal — pattern, energy, and ensemble agreement replace the intimacy of a duo. Both require **scene structure**: not a formula, but the felt sense of a scene that's building toward something rather than wandering.
 
 The **opening** and **suggestion** are the show's first breath — how you take the audience's word and transform it into raw material. **Do-feel-say** is the embodied order: your body responds before your emotions name it, and your words come last. Trust that sequence and the scene lives in the body, not just the head.
+
+Scenes are easier to study than to start. If you want something to run this on rather than more theory about it, the [improv prompts](/improv-prompts) are scene starters chosen to give a two-person opening somewhere to go.

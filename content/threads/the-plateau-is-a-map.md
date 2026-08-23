@@ -5,7 +5,7 @@ status: seed
 atoms: [decay-recovery, latency-recovery, fracture-recovery, be-changeable, be-thankful, discovery, let-yourself-be-changed]
 tags: [intermediate, recovery, growth, self-coaching]
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-08-23"
 ---
 
 Around the two-year mark — roughly Level 3 or 4 — every improviser tells themselves the same thing: *I am terrible at improv.*
@@ -31,3 +31,5 @@ Underneath all three recoveries, two principles are doing the work.
 And underneath gratitude: **discovery**. The willingness to find out what the scene is about instead of deciding in advance. The willingness to be surprised by your own work. The willingness to let yourself be changed by what happens between you and your partner.
 
 The plateau isn't a wall. It's a map. It's showing you exactly which recovery you need, if you have the vocabulary to read it.
+
+Reading the plateau is most of what deliberate practice amounts to here. [How to get better at improv](/how-to-get-better-at-improv) is the practical version of the same argument.

@@ -5,7 +5,7 @@ status: draft
 atoms: [callback, reincorporation, connections, mapping, straight-man, tag-run, elevating, justification, beats]
 tags: [techniques, show-craft, structure, advanced]
 created: "2026-04-07"
-updated: "2026-04-07"
+updated: "2026-08-23"
 ---
 
 A great improv show isn't a collection of unrelated scenes. It's a web — and the web is woven from techniques that connect what came before to what comes next.
@@ -19,3 +19,5 @@ A great improv show isn't a collection of unrelated scenes. It's a web — and t
 **Tag-runs** accelerate: one player or game remains constant while partners are swapped in rapid succession. Each new context heightens the pattern. **Elevating** makes your partner's choice the most important thing in the scene. **Justification** takes what's already happened and retroactively makes it make sense — the improviser's superpower of backward coherence.
 
 The connective tissue is what separates a set of scenes from a show, a sequence of events from a story.
+
+Callbacks are also the most reliable source of the largest laughs in a show, which is part of why [being funny](/how-to-be-funny) is better understood as a structural skill than as a personal trait.

@@ -22,7 +22,7 @@ threads:
   - quieting-the-planning-mind
 status: seed
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 You think too much. Everyone's told you. Your improv teacher, your scene partners, maybe even yourself at 2am after a rough show. "Get out of your head." "Just do it." "Stop planning."
@@ -40,3 +40,5 @@ Then **the inner game** — presence and commitment. Not as feelings to conjure 
 Finally, **the practice** — specific exercises designed to build the neural pathways. Mirroring, one-word scenes, blind offers. Each one bypasses the planning mind through structural constraints, not willpower.
 
 By the end, you'll have a model for why improv works, a set of principles you can commit to because you understand them, and exercises that build the skills your analytical mind can't shortcut. The thinking doesn't stop — it moves to where it belongs: between practices, not during them.
+
+Systems thinking is also the fastest way to see [which rules of improv survive scrutiny](/rules-of-improv) and which are inherited habit.

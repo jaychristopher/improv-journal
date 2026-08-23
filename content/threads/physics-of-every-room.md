@@ -10,7 +10,7 @@ status: seed
 atoms: [reality-construction, systemic-health-indicators, systemic-collapse-modes, irreversibility, shared-reality-fragility]
 tags: [synthesis, beyond-stage, meta, systems-thinking]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Let's name what we've been building toward.
@@ -48,3 +48,5 @@ And the next time a conversation comes alive — when you lose track of time, wh
 If that system can build a universe on an empty stage in thirty seconds, it can handle your Monday morning.
 
 Trust the physics.
+
+The room where this physics is most obviously load-bearing is a working one. [Psychological safety](/psychological-safety) is the same construction described from inside a team.
