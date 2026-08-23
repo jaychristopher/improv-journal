@@ -278,10 +278,12 @@ This file is generated from the site's content, so it lists everything rather th
 - [Systemic Collapse Modes](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-collapse-modes): The warning lights. How shared reality falls apart.
 - [Systemic Health Indicators](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-health-indicators): The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
 
-## Reading list — the works this site cites (16)
+## Reading list — the works this site cites (22)
 
 - [Attention and Effort — Daniel Kahneman (1973)](https://www.physicsofconnection.com/library/ref-attention-and-effort-kahneman): *Daniel Kahneman. Attention and Effort. Prentice-Hall, 1973.*
+- [Behind the Scenes — Mick Napier (2015)](https://www.physicsofconnection.com/library/ref-napier-behind-the-scenes): *Mick Napier. Behind the Scenes: Improvising Long Form. Meriwether Publishing, 2015.*
 - [Bossypants — Tina Fey (2011)](https://www.physicsofconnection.com/library/ref-fey-bossypants): *Tina Fey. Bossypants. Reagan Arthur Books / Little, Brown and Company, 2011.*
+- [Daring Greatly — Brené Brown (2012)](https://www.physicsofconnection.com/library/ref-brown-daring-greatly): *Brené Brown. Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. Avery, 2012.*
 - [Group Genius — Keith Sawyer (2007)](https://www.physicsofconnection.com/library/ref-sawyer-group-genius): *Keith Sawyer. Group Genius: The Creative Power of Collaboration. Basic Books, 2007 (revised 2017).*
 - [How to Be the Greatest Improviser on Earth — Hines (2016)](https://www.physicsofconnection.com/library/ref-hines-greatest-improviser): *Will Hines. How to Be the Greatest Improviser on Earth. Self-published, 2016.*
 - [Impro — Keith Johnstone (1979)](https://www.physicsofconnection.com/library/ref-impro-johnstone): *Keith Johnstone. Impro: Improvisation and the Theatre. Faber & Faber, 1979.*
@@ -292,7 +294,11 @@ This file is generated from the site's content, so it lists everything rather th
 - [Improvisation at the Speed of Life — TJ & Dave (2015)](https://www.physicsofconnection.com/library/ref-tj-dave-speed-of-life): *TJ Jagodowski & Dave Pasquesi. Improvisation at the Speed of Life. Solo Roma, 2015.*
 - [Improvisation for the Theater — Viola Spolin (1963)](https://www.physicsofconnection.com/library/ref-spolin-improvisation-for-theater): *Viola Spolin. Improvisation for the Theater. Northwestern University Press, 1963.*
 - [Improvise — Mick Napier (2004)](https://www.physicsofconnection.com/library/ref-napier-improvise): *Mick Napier. Improvise: Scene from the Inside Out. Heinemann, 2004.*
+- [Improvise Freely — Patti Stiles (2021)](https://www.physicsofconnection.com/library/ref-stiles-improvise-freely): *Patti Stiles. Improvise Freely: Throw Away the Rulebook and Unleash Your Creativity. 2021.*
+- [Improvised Dialogues — R. Keith Sawyer (2003)](https://www.physicsofconnection.com/library/ref-sawyer-improvised-dialogues): *R. Keith Sawyer. Improvised Dialogues: Emergence and Creativity in Conversation. Ablex Publishing, 2003.*
 - [Sanford Meisner on Acting — Meisner & Longwell (1987)](https://www.physicsofconnection.com/library/ref-meisner-on-acting): *Sanford Meisner & Dennis Longwell. Sanford Meisner on Acting. Vintage Books, 1987.*
+- [Standing in Space — Mary Overlie (2016)](https://www.physicsofconnection.com/library/ref-overlie-standing-in-space): *Mary Overlie. Standing in Space: The Six Viewpoints Theory & Practice. Movement Publishing, 2016.*
+- [The Improv Handbook — Salinsky & Frances-White (2008)](https://www.physicsofconnection.com/library/ref-salinsky-improv-handbook): *Tom Salinsky & Deborah Frances-White. The Improv Handbook: The Ultimate Guide to Improvising in Comedy, Theatre, and Beyond. Continuum, 2008.*
 - [The Viewpoints Book — Anne Bogart & Tina Landau (2005)](https://www.physicsofconnection.com/library/ref-viewpoints-bogart-landau): *Anne Bogart & Tina Landau. The Viewpoints Book: A Practical Guide to Viewpoints and Composition. Theatre Communications Group, 2005.*
 - [Truth in Comedy — Halpern, Close, Johnson (1994)](https://www.physicsofconnection.com/library/ref-truth-in-comedy): *Charna Halpern, Del Close, Kim "Howard" Johnson. Truth in Comedy: The Manual of Improvisation. Meriwether Publishing, 1994.*
 - [UCB Comedy Improvisation Manual (2013)](https://www.physicsofconnection.com/library/ref-ucb-manual): *Matt Besser, Ian Roberts, Matt Walsh. Upright Citizens Brigade Comedy Improvisation Manual. Comedy Council of Nicea, 2013.*
