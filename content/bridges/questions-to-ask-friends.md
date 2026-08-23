@@ -1,12 +1,15 @@
 ---
-title: "Questions to Ask Friends: 128 That Go Somewhere"
+title: "Questions to Ask Friends: 152 That Go Somewhere"
 description: "Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands."
 target_keywords:
   - { keyword: "questions to ask friends", volume: 13000, difficulty: 1, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "questions to ask your friends", volume: 13000, difficulty: 2, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "juicy questions to ask your friends", volume: 11000, difficulty: 5, traffic_potential: 41000, parent: "questions to ask friends" }
+  - { keyword: "questions for friends", volume: 5400, difficulty: 7, traffic_potential: 52000, parent: "questions to ask friends" }
+  - { keyword: "best friend questions", volume: 1400, difficulty: 2, traffic_potential: 51000, parent: "questions to ask friends" }
+  - { keyword: "friend questions", volume: 450, difficulty: 0, traffic_potential: 55000, parent: "questions to ask friends" }
+  - { keyword: "bff questions", volume: 150, difficulty: 1, traffic_potential: 53000, parent: "questions to ask friends" }
   - { keyword: "random questions to ask your friends", volume: 2800, difficulty: 2, traffic_potential: 40000, parent: "questions to ask friends" }
-  - { keyword: "hard questions to ask friends", volume: 50, parent: "hard questions to ask your friends", difficulty: 6, traffic_potential: 300 }
   - { keyword: "questions to ask your best friend", volume: 3600, parent: "questions to ask friends", difficulty: 1, traffic_potential: 9500 }
 serp_checked: "2026-08-22"
 serp_min_dr: 20
@@ -22,11 +25,11 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Questions to Ask Friends: 128 That Go Somewhere
+# Questions to Ask Friends: 152 That Go Somewhere
 
 Most lists of questions to ask friends are optimised for the answer — questions that produce an interesting sentence. That is the wrong thing to optimise for, because the answer is not the point. What happens in the ninety seconds *after* the answer is the point, and a lot of very interesting questions produce nothing at all afterwards.
 
-Below are 120 questions grouped by what they open rather than by how deep they sound, plus the part the lists leave out: which questions are actively bad, and why.
+Below are 152 questions grouped by what they open rather than by how deep they sound, plus the part the lists leave out: which questions are actively bad, and why.
 
 ## Why Most Question Lists Fail
 
@@ -195,6 +198,43 @@ The problem here is not the question. It is that both people know the gap exists
 - Is there anything you needed from me that you didn't get?
 - What would you want me to know before we pick this up again?
 - What's changed about you that I'd notice?
+
+## Questions to Ask Your Best Friend
+
+There is a paradox in the closest friendship you have, and it is the opposite of what people expect.
+
+The assumption is that a best friend is where everything has already been said. In practice it is often where the most has gone unsaid — **because the friendship is too valuable to risk.** With a colleague you will float an awkward observation, because if it lands badly you have lost very little. With the person who has been there fifteen years, the same observation costs something you are not willing to gamble, so it does not get made. Years accumulate that way.
+
+The other thing is drift. You built a model of them somewhere around year three and it has been running on cached data ever since. They changed. You answered on their behalf, correctly most of the time, which is exactly what makes the occasional miss invisible.
+
+So the good ones here are not the deepest available. They are **the ordinary questions you stopped asking because you were sure of the answer**, plus the small number you have been carrying and not saying.
+
+- What have I got wrong about you recently?
+- What do you think has changed most about me?
+- What is something you have wanted to say and parked?
+- What do you think I am like when you describe me to other people?
+- When did you last need me and not ask?
+- What is something you have never told me for no particular reason?
+- What do you think I am avoiding?
+- What is the thing about our friendship you would not change?
+- When have I let you down without noticing?
+- What do you think I would be like if we had never met?
+- What do you find hardest about being my friend?
+- What is a version of me you preferred?
+- What do you think I underrate about myself?
+- What is something you know about me that I would deny?
+- When did you decide we were properly friends?
+- What do you think we have never talked about properly?
+- What would you want me to do if you stopped being okay?
+- What is a favour you have wanted to ask?
+- What do you think has kept this going when other friendships went?
+- What would you want said about you by somebody who knew you at nineteen?
+- What is something I do that you have quietly stopped expecting to change?
+- What do you think I have got braver about?
+- What have you forgiven me for that I never apologised for?
+- What would we be doing if neither of us had any obligations next weekend?
+
+**One caution, because this is the section most likely to go badly.** Several of these invite an answer you may not enjoy — what you have got wrong, when you let them down, what they find hard about you. Only ask those if you actually want the answer, and if you do, receive it without defending yourself for at least one full minute. A friend who tells you something difficult and watches you argue with it will not do it twice, and you will have converted a rare offer into a lesson about what is safe to say to you.
 
 ## The Juicy Ones — and What Actually Makes a Question Juicy
 
