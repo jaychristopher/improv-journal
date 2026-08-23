@@ -51,6 +51,20 @@ Judgment is the subtlest listening killer. Not just obvious judgment ("that's a 
 
 Spolin's insight: genuine listening requires **suspending your own agenda.** Not permanently — you'll respond, you'll share your perspective, you'll contribute. But during the act of listening, your agenda is noise.
 
+## How to Listen Without Getting Distracted
+
+The three obstacles above are all things you are doing on purpose. Distraction is the one that arrives uninvited, and the page has so far quietly assumed it away.
+
+It is worth separating two things that get called the same word, because they have different fixes.
+
+**A screen is not a small distraction.** The reason a phone is worse than fidgeting, tapping a pen or looking out of a window is not willpower, it is overlap. Wickens (2002) found that two tasks interfere in proportion to the resources they share — the same stage, the same sense, the same code. Doodling is motor and spatial, so it costs a conversation almost nothing and genuinely helps some people. A screen full of text is verbal and comprehension-stage, which is precisely what listening is made of. It is not competing for your attention in general. It is competing for the exact part you were using.
+
+Which is why the compromise people reach for does not exist. Cherry (1953) played different speech into each ear and asked listeners to repeat one of them back; afterwards they could not report what the other message had been about, or even what language it was in. The unattended channel is not running quietly in the background. It is discarded. You were never half-listening to both — you were switching, and losing the seam each time.
+
+**Mind-wandering is the opposite problem.** Here nothing is competing. Speech arrives at around 150 words a minute and you can process a good deal faster, so the spare capacity is the hazard: attention does not idle, and unoccupied it goes looking for something. That is the same principle as the two failures below, and it has the same answer. Give it a job — track what they are giving you, what is underneath it, what changed mid-sentence — and the wandering stops because there is no slack for it to happen in.
+
+So the practical form is not "concentrate harder." Put the screen out of reach rather than face-down, since face-down still costs the glance. Then occupy the capacity deliberately, because the alternative to occupying it is not calm attention. It is drift.
+
 ## How Improv Performers Listen
 
 ### They listen for offers, not information
@@ -114,6 +128,8 @@ The problem with practising listening in real conversations is that the stakes m
 **Then take one rule into a real exchange.** The last-word rule is silent — nobody knows you are doing it, and ten minutes of it tells you honestly how much of your listening was queue management.
 
 This is what improv performers create on stage every night. Two people, fully tracking each other, responding to the complete signal, building a shared reality from genuine mutual attention. It looks like magic from the outside. From the inside, it's just listening — real listening, without the obstacles.
+
+**Sources cited:** Cherry (1953), *Journal of the Acoustical Society of America*. Wickens (2002), *Theoretical Issues in Ergonomics Science*. Spolin (1963), *Improvisation for the Theater*.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, offers, and the cognitive mechanics of attention, explore the [Improv for Life](/paths/improv-for-life) path.*
 
