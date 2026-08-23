@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { loadPaths } from "../content";
-import { DESCRIPTION_MAX, extractDescription, leadParagraph } from "../seo";
+import { DESCRIPTION_MAX, extractDescription, leadParagraph, stripLeadLabel } from "../seo";
 
 /**
  * A Windows line ending must not change what a page says about itself.
@@ -112,5 +112,62 @@ describe("path descriptions", () => {
       .map((p) => `${p.slug} (${p.frontmatter.description.length})`);
 
     expect(over).toEqual([]);
+  });
+});
+
+/**
+ * stripLeadLabel must not rearrange the document.
+ *
+ * It found the frontmatter with a /m-flagged pattern but took the body as
+ * `slice(frontmatter.length)` from index zero — an offset from one place and a
+ * length from another. With a real frontmatter block the two agree, because the
+ * match starts at zero. With two horizontal rules and no frontmatter, which is
+ * what these callers actually get from gray-matter, they do not: the return
+ * duplicated the rules, dropped the label, and ate the first character of the
+ * sentence that follows.
+ *
+ * I had written this one off as harmless in a commit message on the grounds
+ * that it only measured a prefix. That was wrong, and one run of it showed so.
+ * It feeds the preview text under every entry on the games and exercises hubs.
+ */
+describe("stripLeadLabel", () => {
+  it("removes only the label, whatever else the body contains", () => {
+    const body = [
+      "**Trains:** shared timing.",
+      "The opening description that hub previews should show.",
+      "---",
+      "A middle section.",
+      "---",
+      "A closing note.",
+      // Two rules, deliberately. The faulty pattern needs a pair to match, so a
+      // fixture with one rule passes whether the bug is present or not — which
+      // is what the first version of this test did.
+    ].join("\n\n");
+
+    const out = stripLeadLabel(body);
+    // The label marker goes; the clause it introduced stays, which is the
+    // documented behaviour and not what I first asserted.
+    expect(out.startsWith("shared timing.")).toBe(true);
+    expect(out).toContain("The opening description");
+    expect(out).toContain("A middle section.");
+    // One copy of the rule, not two — the duplication was the bug, and the
+    // eaten first character is covered by the toContain above, which needs the
+    // capital T. Asserting `not.toContain("he opening…")` does not work: it is
+    // a substring of the correct output, so it failed on the fixed code.
+    expect(out.match(/^---$/gm)?.length ?? 0).toBe(2);
+  });
+
+  it("still strips a genuine frontmatter block", () => {
+    const doc = [
+      "---",
+      "id: x",
+      "---",
+      "",
+      "**Trains:** attention.",
+      "",
+      "The real sentence.",
+    ].join("\n");
+    expect(stripLeadLabel(doc)).toContain("The real sentence.");
+    expect(stripLeadLabel(doc)).not.toContain("Trains:");
   });
 });

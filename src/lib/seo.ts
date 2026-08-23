@@ -172,7 +172,15 @@ function dropDanglingLabelClause(text: string): string {
  * so the prefix is dropped and the sentence it introduces is kept.
  */
 export function stripLeadLabel(markdownContent: string): string {
-  const match = /^---[\s\S]*?---\n*/m.exec(markdownContent);
+  // Anchored, no /m — and here the flag did more than delete a span. The match
+  // could begin at any line of three dashes, while the body was taken as
+  // `slice(frontmatter.length)` from index zero, so the offset and the length
+  // came from different places. On a document with two horizontal rules that
+  // returned the rules duplicated, the label gone, and the first character of
+  // the real sentence eaten: "he opening description…". I had recorded this
+  // function as harmless on the grounds that it only measured a prefix. It
+  // does not, and checking took one run.
+  const match = /^---[\s\S]*?---\n*/.exec(markdownContent);
   const frontmatter = match ? match[0] : "";
   const body = markdownContent.slice(frontmatter.length);
   return frontmatter + body.replace(/^\s*\*\*[^*]+\*\*:?\s*/, "");
