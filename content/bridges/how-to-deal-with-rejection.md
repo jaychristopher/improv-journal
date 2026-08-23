@@ -4,6 +4,9 @@ description: "Rejection hurts because your brain treats social exclusion like ph
 target_keywords:
   - { keyword: "how to deal with rejection", volume: 2000, difficulty: 1, traffic_potential: 1400, parent: "how to handle rejection" }
   - { keyword: "dealing with rejection", volume: 400, parent: "rejection", difficulty: 1, traffic_potential: 1900 }
+serp_checked: "2026-08-23"
+serp_min_dr: 32
+serp_verdict: winnable
 entry_atoms: [failing-forward, be-brave, commitment, performance-state, accepting-the-offer]
 entry_path: systems-of-improv
 status: draft

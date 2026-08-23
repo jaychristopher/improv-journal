@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "framing psychology", volume: 3300, parent: "framing effect", difficulty: 22, traffic_potential: 450 }
   - { keyword: "framing bias", volume: 2100, parent: "framing effect", difficulty: 5, traffic_potential: 1600 }
   - { keyword: "framing psychology definition", volume: 1000, parent: "framing psychology definition", difficulty: 26, traffic_potential: 350 }
+serp_checked: "2026-08-23"
+serp_min_dr: 82
+serp_verdict: authority
 entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-reframing, be-changeable]
 entry_path: improv-for-life
 status: draft

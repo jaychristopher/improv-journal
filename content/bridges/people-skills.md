@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "people skills", volume: 6900, difficulty: 14, traffic_potential: 1100, parent: "people skills" }
   - { keyword: "interpersonal communication skills", volume: 3300, difficulty: 14, parent: "what is interpersonal communication skills", traffic_potential: 30 }
   - { keyword: "communication skills", volume: 570000, parent: "communication skills", difficulty: 79, traffic_potential: 71000 }
+serp_checked: "2026-08-23"
+serp_min_dr: 87
+serp_verdict: authority
 entry_atoms: [active-listening, offers, continuous-signaling, status, be-present, be-honest]
 entry_path: improv-for-life
 status: draft

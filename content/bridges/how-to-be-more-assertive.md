@@ -4,6 +4,9 @@ description: "Assertiveness isn't aggression — it's a physical and vocal patte
 target_keywords:
   - { keyword: "how to be more assertive", volume: 2100, difficulty: 4, traffic_potential: 1300, parent: "how to be more assertive" }
   - { keyword: "assertiveness", volume: 9600, parent: "assertiveness", difficulty: 59, traffic_potential: 800 }
+serp_checked: "2026-08-23"
+serp_min_dr: 30
+serp_verdict: winnable
 entry_atoms: [status, commitment, initiation, be-brave, signal]
 entry_path: improv-for-life
 status: draft

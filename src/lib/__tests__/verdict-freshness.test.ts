@@ -49,4 +49,45 @@ describe("verdict freshness", () => {
     expect(checked).toBeGreaterThan(40);
     expect(stale).toEqual([]);
   });
+
+  /**
+   * The check above skips a page with no verdict at all — `if (!date) continue`
+   * — so it polices staleness and is blind to absence. Eighteen of seventy-one
+   * guides had never been checked, and the five largest were the site's biggest
+   * terms: people skills at 6,900 a month, framing effect at 3,500, what is
+   * improv at 2,600.
+   *
+   * That is the same fault the freshness check exists to prevent, one step
+   * earlier. A stale verdict misdirects effort; a missing one means the page was
+   * written on a difficulty score alone, and this loop has repeatedly found
+   * those wrong in both directions. Checking those five turned up two walls —
+   * people skills and framing effect have no top-ten result below DR 82 — and
+   * what is improv winnable at DR 12 with its traffic potential recorded as 50
+   * when Ahrefs says 250.
+   *
+   * Volume is the primary keyword's, matching the other guide checks, which
+   * treat the first declared keyword as the one the page targets.
+   */
+  const MUST_CHECK_ABOVE_VOLUME = 2_000;
+
+  it("has checked the SERP for every guide targeting a large term", async () => {
+    const bridges = await loadBridges();
+
+    const unchecked: string[] = [];
+    let inScope = 0;
+
+    for (const bridge of bridges) {
+      const primary = (bridge.frontmatter.target_keywords ?? [])[0];
+      if (!primary || primary.volume < MUST_CHECK_ABOVE_VOLUME) continue;
+      inScope++;
+      if (!bridge.frontmatter.serp_checked) {
+        unchecked.push(`${bridge.slug}: "${primary.keyword}" at ${primary.volume}/mo`);
+      }
+    }
+
+    // If the volume field moved or the loader changed shape, nothing is in
+    // scope and this passes on an empty set.
+    expect(inScope).toBeGreaterThan(8);
+    expect(unchecked).toEqual([]);
+  });
 });
