@@ -243,6 +243,57 @@ export default async function ImprovGamesPage() {
       )}
 
       <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Which Games for Which Group</h2>
+        <p className="text-foreground/70 mb-4">
+          The list above is sorted by what each game trains, which is the right way round once you
+          know what you are fixing. If you are standing in front of a room and do not, the more
+          useful question is who is in it.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>Complete beginners.</strong> Start with something where nobody can be visibly bad
+          at it, which rules out most scene work.{" "}
+          <Link href="/practice/exercises/one-word-story" className="underline">
+            One-word story
+          </Link>{" "}
+          is the usual answer: a single word each, no way to steer it, and the failure mode is a
+          funny story rather than an exposed person.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>Children and school groups.</strong> Physical, loud, and short. Attention is the
+          constraint rather than confidence &mdash; children have plenty of the second and very
+          little of the first &mdash; so games with a clear rule and constant movement work far
+          better than anything requiring a scene to be sustained. Keep rounds under five minutes and
+          expect to run three games in the time an adult group spends on one.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>A workshop or class.</strong> The only setting where you can build across a
+          session: a warm-up that costs nothing, an exercise that isolates one skill, then a
+          performance game that needs it. That progression is what the level and focus filters above
+          are for.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>A work team.</strong> Different problem entirely, and the games are not the hard
+          part &mdash; the power gap is. Anything that risks somebody looking foolish in front of
+          the person who writes their appraisal is a bad idea however good the game is. Whole-group
+          formats where everybody acts at once cost far less than anything with turns, and{" "}
+          <Link href="/5-minute-team-building" className="underline">
+            5-minute team building
+          </Link>{" "}
+          is built for exactly that constraint.
+        </p>
+        <p className="text-foreground/70">
+          <strong>Remote and video calls.</strong> Most improv games assume a shared physical space
+          and quietly break without one &mdash; anything relying on eye contact, simultaneous
+          speech, or knowing whose turn it is will not survive the latency. What works is verbal,
+          strictly sequential, and named-turn:{" "}
+          <Link href="/virtual-team-building-activities" className="underline">
+            virtual team building activities
+          </Link>{" "}
+          covers why the grid changes the rules.
+        </p>
+      </section>
+
+      <section className="mt-12">
         <h2 className="mb-3 text-xl font-semibold">How to Run One</h2>
         <p className="text-foreground/70 mb-4">
           <strong>Coach during, not after.</strong>{" "}
