@@ -12,6 +12,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/how-it-works" },
 };
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose is plain strings
+ * rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "This is the layer underneath the advice, and it splits in two. The laws are constraints — you cannot take a line back, attention is finite, a shared reality decays if nobody maintains it. The principles are what to do about them. The distinction is load-bearing: you can disagree with a principle and work differently, and you cannot disagree with a law, only pay for ignoring it.",
+  "It reads as physics rather than psychology because of where it came from. These were not derived from a theory of people and then tested; they were noticed by performers watching the same failures recur, live, in public, with nothing to fall back on. Improv is unusual in how legible its failures are — a scene dies in front of everyone, immediately, and the cause is usually still visible in the last ten seconds.",
+  "You do not need any of this to use the guides. It is here for the point where a technique stops working and the advice starts sounding like superstition, because that is when knowing which constraint you are up against is the difference between trying harder and trying something else.",
+];
+
 export default async function SystemPage() {
   const atoms = await loadAtoms();
   const laws = atoms.filter((a) => a.frontmatter.type === "law");
@@ -32,6 +43,14 @@ export default async function SystemPage() {
           Here&apos;s what they found.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       <section className="mb-12">
         <h2 className="mb-2 text-lg font-semibold">The six reasons it&apos;s hard</h2>

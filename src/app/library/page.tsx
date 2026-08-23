@@ -54,6 +54,17 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
   },
 ];
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose is plain strings
+ * rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "Every claim on this site is meant to be traceable to something, and this is where the somethings are. Each entry says what the work is actually for rather than summarising it, because the useful question about a book you have not read is which of your problems it addresses.",
+  "Where to start depends on what you came for. Johnstone if you want status and spontaneity and the argument that creativity is recovered rather than acquired. Spolin if you want pedagogy — how to teach this to people who are not performers. Truth in Comedy for the Chicago long-form inheritance. Napier for the counter-argument to most of it, which is worth reading early rather than late.",
+  "The research titles are here because improv keeps arriving at things that had already been measured elsewhere — attention as a budget, coherence as something built turn by turn, courage as accumulated practice. Where a source disagrees with the improv orthodoxy, the entry says so instead of quietly leaving it out.",
+];
+
 export default async function LibraryPage() {
   const atoms = await loadAtoms();
 
@@ -111,6 +122,14 @@ export default async function LibraryPage() {
           texts to cognitive science. Organized by where to start.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       <div className="space-y-12">
         {TIERS.map((tier) => (

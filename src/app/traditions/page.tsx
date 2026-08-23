@@ -35,6 +35,17 @@ const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
   },
 };
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose is plain strings
+ * rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "Five rather than one, because each answers a prior question differently: what is improvisation for. Comedy, story, presence, honest behaviour, a way of living — the answer sits underneath everything downstream of it, which is why two teachers can give opposite notes on the same scene and both be right within their own system.",
+  "The profiles are short on biography on purpose. What matters is where a lineage puts its weight and what it is willing to give up to do that, so each one is a page about commitments rather than a page about a person. The full argument between them, question by question, is a separate read.",
+  "The practical use is knowing which tradition a piece of advice came from, because that tells you where it stops applying. Almost every improv book, class and blog post speaks from one lineage and rarely says which, so a rule that sounds universal is usually a rule that was true somewhere specific.",
+];
+
 export default async function TraditionsPage() {
   const names = getTraditionNames();
 
@@ -57,6 +68,14 @@ export default async function TraditionsPage() {
           — and why — is what separates citation from knowledge.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       <div className="space-y-4">
         {traditionsWithCounts.map((t) => (
