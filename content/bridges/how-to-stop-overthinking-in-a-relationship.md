@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 16
 serp_verdict: winnable
+serp_top10_dr: [95, 16, 92, 41, 99, 92, 51, 92]
 entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vulnerability, active-listening]
 entry_path: improv-for-life
 status: draft

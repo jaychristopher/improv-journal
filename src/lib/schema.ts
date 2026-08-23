@@ -221,6 +221,22 @@ export interface BridgeFrontmatter {
   serp_checked?: string;
   serp_min_dr?: number;
   serp_verdict?: "winnable" | "authority";
+  /**
+   * Every domain rating seen in the top ten, in position order.
+   *
+   * `serp_min_dr` records one number and the verdict is a reading of the whole
+   * page, so the reasoning behind a verdict was never stored — only its
+   * conclusion. That gap has already cost something: the verdicts disagree
+   * between DR 36 and DR 40, and with nothing but the minimum recorded there is
+   * no way to tell whether that is drift or two genuinely different results
+   * pages. Re-deciding it from the minimum alone would have moved 109,000 of
+   * traffic potential on evidence the schema says is not the criterion.
+   *
+   * With the distribution stored, the question is answerable without spending
+   * another API unit: one weak site at position ten is a different page from
+   * three of them in the top five, and the minimum cannot tell those apart.
+   */
+  serp_top10_dr?: number[];
 
   primary_problem?: string;
   primary_cta_type?: "thread" | "path" | "exercise" | "challenge";

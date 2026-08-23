@@ -8,6 +8,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 0
 serp_verdict: winnable
+serp_top10_dr: [95, 55, 36, 94, 99, 0, 92]
 entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment]
 entry_path: systems-of-improv
 status: draft

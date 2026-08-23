@@ -9,6 +9,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 82
 serp_verdict: authority
+serp_top10_dr: [82, 97, 87, 85, 92, 94, 95]
 entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-reframing, be-changeable]
 entry_path: improv-for-life
 status: draft

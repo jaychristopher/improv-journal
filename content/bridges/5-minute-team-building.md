@@ -8,6 +8,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 8
 serp_verdict: winnable
+serp_top10_dr: [73, 72, 8, 99, 85, 81, 45, 75]
 entry_atoms: [mirroring, yes-and-chain, gift-giving, one-word-scene, warm-up]
 entry_path: physics-of-connection
 status: draft

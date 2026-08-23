@@ -8,6 +8,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 23
 serp_verdict: winnable
+serp_top10_dr: [95, 23, 80, 73, 82, 26, 89, 83]
 entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, active-listening]
 entry_path: systems-of-improv
 status: draft

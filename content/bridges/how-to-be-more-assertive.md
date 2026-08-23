@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 30
 serp_verdict: winnable
+serp_top10_dr: [30, 95, 92, 85, 69, 55, 94]
 entry_atoms: [status, commitment, initiation, be-brave, signal]
 entry_path: improv-for-life
 status: draft

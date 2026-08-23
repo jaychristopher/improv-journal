@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 31
 serp_verdict: winnable
+serp_top10_dr: [78, 95, 87, 92, 91, 99, 31]
 entry_atoms: [vulnerability, safety-in-the-room, trust, be-brave, be-honest, commitment]
 entry_path: physics-of-connection
 status: draft

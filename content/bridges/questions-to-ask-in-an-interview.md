@@ -17,6 +17,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 17
 serp_verdict: winnable
+serp_top10_dr: [95, 17, 32, 51, 82, 99, 92, 92]
 entry_atoms: [status, initiation, offers, safety-in-the-room, be-brave]
 entry_path: physics-of-connection
 primary_problem: "you get to the end of the interview and the only question you can think of is about the next steps"

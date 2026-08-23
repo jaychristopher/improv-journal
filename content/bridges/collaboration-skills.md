@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 67
 serp_verdict: authority
+serp_top10_dr: [88, 80, 74, 67, 92, 92, 91]
 entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

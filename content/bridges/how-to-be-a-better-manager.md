@@ -8,6 +8,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 40
 serp_verdict: winnable
+serp_top10_dr: [91, 95, 80, 91, 99, 99, 95, 40]
 entry_atoms: [side-coaching, be-supportive, safety-in-the-room, status, ensemble]
 entry_path: improv-for-teams
 primary_problem: "the team defers to you and you cannot tell whether they agree"

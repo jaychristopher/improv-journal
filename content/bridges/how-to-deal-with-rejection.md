@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 32
 serp_verdict: winnable
+serp_top10_dr: [89, 95, 75, 32, 99, 50, 45]
 entry_atoms: [failing-forward, be-brave, commitment, performance-state, accepting-the-offer]
 entry_path: systems-of-improv
 status: draft

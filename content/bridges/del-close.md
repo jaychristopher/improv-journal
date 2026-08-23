@@ -8,6 +8,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 2
 serp_verdict: winnable
+serp_top10_dr: [97, 75, 94, 66, 9, 99, 2, 95, 81]
 entry_atoms: [harold, group-mind, connections, opening, be-honest]
 entry_path: systems-of-improv
 status: draft

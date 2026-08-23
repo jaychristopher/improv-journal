@@ -7,6 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 1
 serp_verdict: winnable
+serp_top10_dr: [95, 62, 86, 99, 70, 92, 83, 1]
 entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commitment, be-thankful]
 entry_path: systems-of-improv
 status: draft

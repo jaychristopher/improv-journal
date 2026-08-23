@@ -11,6 +11,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 6
 serp_verdict: winnable
+serp_top10_dr: [85, 97, 45, 80, 96, 86, 6, 40]
 entry_atoms: [viewpoints, physicality, space-work, ensemble, be-present, presence]
 entry_path: the-art-of-ensemble
 status: draft

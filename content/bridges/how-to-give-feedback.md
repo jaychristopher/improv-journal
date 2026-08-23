@@ -9,6 +9,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 73
 serp_verdict: authority
+serp_top10_dr: [92, 92, 95, 73, 80, 91, 99]
 entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive]
 entry_path: teaching-improv
 status: draft
