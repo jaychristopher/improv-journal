@@ -76,6 +76,19 @@ function stripEmphasis(text: string): string {
 }
 
 /**
+ * Normalise line endings before any markdown parsing.
+ *
+ * Every paragraph-finding step here splits on a blank line, and a Windows
+ * checkout writes those as CR LF pairs. Rather than make each split tolerate
+ * that — the first attempt, which still left stray carriage returns in the
+ * output so CRLF and LF produced different descriptions — the input is
+ * normalised once, here, and everything downstream sees LF only.
+ */
+function normaliseNewlines(markdown: string): string {
+  return markdown.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+}
+
+/**
  * Drop a leading paragraph that is entirely bold.
  *
  * Reference atoms open with the full citation — author, title, publisher,
@@ -89,7 +102,7 @@ function dropBoldLeadParagraph(body: string): string {
   // its own block, and the page ships its own citation as its search snippet.
   // This repo warns that LF will become CRLF on almost every commit, so any
   // content file edited on Windows can acquire it silently.
-  const blocks = body.split(/(?:\r?\n){2,}/);
+  const blocks = body.split(/\n{2,}/);
   const firstIndex = blocks.findIndex((block) => block.trim().length > 0);
   if (firstIndex === -1) return body;
   if (!/^\*\*[\s\S]+\*\*$/.test(blocks[firstIndex].trim())) return body;
@@ -104,11 +117,14 @@ function dropBoldLeadParagraph(body: string): string {
  * preserved so a definition is never spliced onto the sentence after it.
  */
 export function leadParagraph(markdownContent: string, maxLen = 300): string {
-  const body = markdownContent
+  const body = normaliseNewlines(markdownContent)
     .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
     .replace(/^#{1,6}\s+.*$/gm, ""); // headings
 
   const paragraph = body
+    // CRLF-safe, for the reason given on dropBoldLeadParagraph: a \r between
+    // the newlines defeats /\n{2,}/, and this then returns the whole document
+    // as its "first paragraph" — which is what the hub previews would show.
     .split(/\n{2,}/)
     .map((block) => block.trim())
     .find((block) => block.length > 0 && !block.startsWith(">"));
@@ -248,7 +264,7 @@ export function pageTitle(title: string): string | { absolute: string } {
  */
 export function extractDescription(markdownContent: string, maxLen = 155): string {
   const prose = dropBoldLeadParagraph(
-    markdownContent
+    normaliseNewlines(markdownContent)
       .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
       .replace(/^#{1,6}\s+.*$/gm, "") // headings
       .replace(/^\s*\|.*$/gm, ""), // table rows, which collapse into pipe soup

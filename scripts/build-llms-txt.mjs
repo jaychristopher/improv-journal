@@ -65,7 +65,13 @@ function loadDir(subdir) {
 
 /** First prose paragraph, stripped of formatting and any leading bold label. */
 function summarise(md, maxLen = 160) {
-  const body = md.replace(/^---[\s\S]*?---\n*/m, "").replace(/^#{1,6}\s+.*$/gm, "");
+  // Normalised first: a Windows checkout writes paragraph breaks as CR LF,
+  // and the split below cannot match those, which would hand every AI crawler
+  // the entire document as this page summary.
+  const body = md
+    .replace(/\r\n?/g, "\n")
+    .replace(/^---[\s\S]*?---\n*/m, "")
+    .replace(/^#{1,6}\s+.*$/gm, "");
   const paragraph = body
     .split(/\n{2,}/)
     .map((b) => b.trim())
