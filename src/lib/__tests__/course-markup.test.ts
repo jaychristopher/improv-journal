@@ -4,8 +4,22 @@ import { describe, expect, it } from "vitest";
 
 import { loadPaths } from "../content";
 
-const BUILD = path.join(process.cwd(), ".next", "server", "app", "paths");
-const built = fs.existsSync(BUILD);
+const APP = path.join(process.cwd(), ".next", "server", "app");
+const BUILD = path.join(APP, "paths");
+/**
+ * A build directory is not the same as a finished build.
+ *
+ * This suite reads rendered output, and the check was `existsSync` on the
+ * directory. During a rebuild the directory exists while the files inside it
+ * are still being written, so the guard passed and the read threw ENOENT —
+ * failing on a race rather than on anything true. It presented as a timeout,
+ * which sent me to vitest.config first; it was not.
+ *
+ * Naming a page the build always produces makes the guard mean what it says,
+ * so this skips cleanly instead of erroring. content-feed already checked a
+ * specific file this way, which is why it never broke.
+ */
+const built = fs.existsSync(BUILD) && fs.existsSync(path.join(APP, "index.html"));
 
 function course(slug: string) {
   const html = fs.readFileSync(path.join(BUILD, `${slug}.html`), "utf-8");
