@@ -379,6 +379,20 @@ const fmt = (n) => `${Math.round(n / 1000)}k`;
  * Refresh with the gsc-pages endpoint, and move the date when you do. Left
  * stale it becomes another confident number describing a day that has passed —
  * which is the fault the verdict ages below exist to catch.
+ *
+ * One thing to know before trying to refresh it, because it cost an hour to
+ * work out and looks alarming on the way. The connector only answers reliably
+ * for a wide date range. Ask it for July alone and it returns "No GSC data
+ * available"; ask it for March alone and it returns the same thing, even though
+ * February to April plainly has data in it. Narrow windows erroring is a
+ * property of the connector's bucketing, not a statement that impressions were
+ * zero, and reading it as a statement leads directly to concluding the site has
+ * been deindexed since June. It has not been.
+ *
+ * The practical consequence is that this list cannot be date-scoped. It says
+ * which pages have ever been surfaced across the whole period, and it cannot
+ * say whether any of that happened recently or whether anything published this
+ * month has been seen at all. Do not read recency into it.
  */
 const GSC_SEEN_ON = "2026-08-23";
 const GSC_SEEN = new Set([

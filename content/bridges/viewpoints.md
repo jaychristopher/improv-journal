@@ -112,6 +112,28 @@ Most improvisers meet Viewpoints as a workshop curiosity and never connect it to
 
 For the technique's own place in the wider system, `viewpoints` covers what the channels are for. It is also worth holding `space-work` alongside it, since the two make opposite demands about what to treat as real.
 
+## Questions People Ask About Viewpoints
+
+Three of these sit in the results alongside this page, and they deserve a straight answer in the words they were asked in.
+
+### What Are the 9 Viewpoints in Acting?
+
+**Tempo, duration, kinesthetic response and repetition — the Viewpoints of Time. Shape, gesture, architecture, spatial relationship and topography — the Viewpoints of Space.** Each is defined in full further up.
+
+The number is Bogart and Landau's rather than Overlie's. She named six; the nine come from splitting her single category of Space into five finer ones. Counting the vocal set as well would make fourteen, and nobody does, which is a fair indication that nine is a teaching convenience rather than a discovery about how bodies work.
+
+### Can You Give an Example of a Viewpoint?
+
+Spatial relationship is the easiest to see working. Two performers hold a conversation standing four feet apart. Play the identical conversation at eighteen inches, then across a twenty-foot room. Three different scenes, and not one word has changed — distance was carrying the relationship the whole time, in every version, whether anyone chose it or not.
+
+Working *in* that Viewpoint means attending to the distance on purpose: noticing where it currently is, changing it, letting somebody else's change pull you. The alternative is not neutrality. It is standing wherever your feet happened to stop.
+
+### What Are the 7 Pillars of Acting?
+
+Not a Viewpoints term. It appears near these searches because search engines group loosely, not because the two are related.
+
+The phrase has no settled definition — different programmes and articles fill the seven differently, which is the reliable sign of a number chosen for the title rather than derived from anything. If what you are after is a vocabulary for physical work, the nine above are an actual one, with a book behind them you can check.
+
 ## How to Start
 
 You do not need a studio. Two useful entry points, both of which survive being done badly:
