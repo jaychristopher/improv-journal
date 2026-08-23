@@ -11,7 +11,7 @@ entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Stop Caring What People Think: The Performer's Secret
@@ -45,6 +45,18 @@ That matters for what follows, because the common advice — stop caring, be you
 That is the useful finding, because an estimate can be corrected where an instinct cannot be switched off. You are not the main character in anybody else's evening. The people you are worried about are, almost without exception, running the identical process about themselves — which is also why the room feels so much more attentive than it is.
 
 So the goal is not to care less. It is to hold a more accurate figure for how much is actually at stake, and the rest of this page is about how performers arrive at that figure by experiment rather than by reassurance.
+
+## Is This the Same as People Pleasing?
+
+Close enough to be confused constantly, and separable in a way that decides which of the techniques below will do anything for you.
+
+Caring what people think is an internal state — an audience in your head, running an evaluation you cannot switch off. People pleasing is an output: the moment where you have a real response and suppress it to keep somebody else comfortable. One is what happens in your attention, the other is what happens in your mouth.
+
+They come apart in both directions, which is the test. You can care enormously and never please — the person who says nothing, agrees to nothing, and privately resents everyone in the room is running a full internal audience with no accommodating behaviour attached, and often reads to others as cold rather than eager. And you can please without much caring, out of habit or because the accommodation is simply cheaper than the conversation it would take to avoid it.
+
+The reason the distinction earns its space is that the two want opposite first moves. Caring responds to exposure — the third technique below works by accumulating evidence that the predicted judgement either does not arrive or does not matter, and it needs repetition rather than insight. Pleasing responds at the point of suppression, which means catching the impulse before it gets blocked and saying the small honest thing instead. [How to stop people pleasing](/how-to-stop-people-pleasing) covers that version.
+
+Applying the wrong one is the common failure. Exposure does nothing for somebody whose problem is an automatic yes, because the yes was never a prediction to be tested. And "say the honest thing" does nothing for somebody frozen by an imagined audience, because there is no suppressed response waiting to come out — there is a person who has not got as far as having one.
 
 ## What's Actually Happening in Your Brain
 
