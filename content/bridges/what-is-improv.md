@@ -39,7 +39,7 @@ That sentence is what improvisers call an offer. An offer is any piece of inform
 
 The second performer now has a choice. They can accept the offer and build on it: "She made it for Dad's birthday and you know that." Now there's a father, a birthday, a betrayal. The world just doubled in complexity. Or they can reject it — "No I didn't" or "Actually, we're at a spaceship" — and the reality collapses.
 
-That acceptance-and-building pattern has a name: Yes And. It's the most famous principle in improv, and the most misunderstood. Yes And doesn't mean agreeing with everything. It doesn't mean being positive. It means accepting the reality your partner has established and adding something new to it. The "yes" is acknowledgment. The "and" is contribution. Together, they're how two people with no plan create something neither could have predicted alone.
+That acceptance-and-building pattern has a name: Yes And. It's the most famous principle in improv, and the most misunderstood. Yes And doesn't mean agreeing with everything. It doesn't mean being positive. It means accepting the reality your partner has established and adding something new to it. The "yes" is acknowledgment. The "and" is contribution. Together, they're how two people with no plan create something neither could have predicted alone. [Yes and](/yes-and-improv) takes the phrase apart properly, including the argument that it should not be the first thing a beginner is told.
 
 ## Reality Construction in Real Time
 

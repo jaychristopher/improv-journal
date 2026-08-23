@@ -155,3 +155,58 @@ describe("inbound links on the biggest guides", () => {
     expect(thin).toEqual([]);
   });
 });
+
+/**
+ * Traffic potential is not the only way a guide earns links.
+ *
+ * The check above uses potential, which missed the pages the site is most
+ * likely to actually rank. viewpoints, yes-and-improv and what-is-improv have
+ * three reachable results each — the softest pages measured here — and carry
+ * 1,100, 1,100 and 250 potential, so none of them came near the 15,000 floor.
+ * All three had one editorial link, while how-to-have-difficult-conversations,
+ * which rests on a single reachable result, had five.
+ *
+ * Reachability is the count of top-ten results under DR 50, from the recorded
+ * profile. Across the profiled pages it separates winnable from gated
+ * completely, and within winnable it orders them in a way the verdict cannot.
+ * Three of ten is the top tier here, and a page in it should be referred to
+ * more than once whatever its potential says.
+ */
+const REACHABLE_UNDER = 50;
+const TOP_TIER_REACHABLE = 3;
+
+describe("inbound links on the most reachable guides", () => {
+  it("refers to a top-tier guide more than once", async () => {
+    const [bridges, atoms, threads, paths] = await Promise.all([
+      loadBridges(),
+      loadAtoms(),
+      loadThreads(),
+      loadPaths(),
+    ]);
+    const documents = [
+      ...bridges.map((b) => ({ slug: b.slug, body: b.content, isBridge: true })),
+      ...atoms.map((a) => ({ slug: a.slug, body: a.content, isBridge: false })),
+      ...threads.map((t) => ({ slug: t.slug, body: t.content, isBridge: false })),
+      ...paths.map((p) => ({ slug: p.slug, body: p.content, isBridge: false })),
+    ];
+
+    const thin: string[] = [];
+    let inScope = 0;
+
+    for (const bridge of bridges) {
+      const profile = bridge.frontmatter.serp_top10_dr;
+      if (bridge.frontmatter.serp_verdict !== "winnable" || !profile?.length) continue;
+      const open = profile.filter((dr) => dr < REACHABLE_UNDER).length;
+      if (open < TOP_TIER_REACHABLE) continue;
+      inScope++;
+      const count = documents.filter(
+        (d) => !(d.isBridge && d.slug === bridge.slug) && linksTo(d.body, bridge.slug),
+      ).length;
+      if (count < 2) thin.push(`${bridge.slug} (${open} reachable, ${count} link)`);
+    }
+
+    // If profiles stop resolving, nothing is in scope and this passes on nothing.
+    expect(inScope).toBeGreaterThan(2);
+    expect(thin).toEqual([]);
+  });
+});

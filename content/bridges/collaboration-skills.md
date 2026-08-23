@@ -49,6 +49,8 @@ The most famous principle in improv is also the most misunderstood. Yes, And doe
 
 When your scene partner says "We're lost in this forest," Yes, And doesn't mean you must like the forest. You can hate the forest. You can be terrified. You can blame your partner for getting you there. What you cannot do is deny the forest exists — "We're not in a forest, we're in a mall." That's blocking. It kills the scene because it rejects the shared reality your partner offered.
 
+Blocking is also the rare version. The common one is quieter and harder to name, and it is worth understanding before you try to run a meeting on this — [yes and](/yes-and-improv) covers where the idea holds at work and the two places it does not.
+
 The building part matters as much as the accepting part. "Yes, we're in a forest" is acceptance, but it's not collaboration. "Yes, and I think I hear a river — if we follow it downstream we'll hit a road" is acceptance plus addition. You've validated your partner's reality and extended it. Now there's more for both of you to work with.
 
 In teams, blocking is epidemic and usually invisible. It sounds like: "That's a good idea, but..." "Have we considered the alternative?" "I think what you really mean is..." Each of these phrases technically acknowledges the other person's idea while functionally replacing it with your own. The original offer gets abandoned, the offeror learns to stop offering, and the team's creative capacity shrinks. That last part is usually diagnosed as a shortage of ideas and treated with brainstorming, which is the wrong intervention for it — [how to be more creative](/how-to-be-more-creative) covers why the ideas were mostly there already.

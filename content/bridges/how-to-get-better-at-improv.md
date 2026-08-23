@@ -56,6 +56,8 @@ The drills below are the common ones. If your breakdown is not on this list, the
 
 **Mirroring:** Stand facing your partner. Mirror their movements exactly. This is impossible to do while thinking about yourself. It trains the kind of outward attention that listening requires.
 
+If the diagnosis keeps coming back physical — inert scenes, everything played standing three feet apart — that is a whole discipline rather than a drill. [Viewpoints](/viewpoints) is the movement training that names nine things you can attend to on purpose, which is what "be more physical" fails to do.
+
 ### For commitment problems:
 
 **First Line Drill:** Step on stage, say the first thing that comes to your mind — literally the first thing — and build a character from it. The goal is to shrink the gap between impulse and expression to zero. Your first impulse is almost always better than your edited version.

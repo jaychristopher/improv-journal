@@ -32,7 +32,7 @@ Understanding what the rules actually mean — and where they break — is the d
 
 ## Whose Rules These Actually Are
 
-Worth settling first, because "the rules of improv" is not one list and the version you have met depends entirely on where you met it.
+Worth settling first, because "the rules of improv" is not one list and the version you have met depends entirely on where you met it. If you have arrived without much background, [what is improv](/what-is-improv) covers the form itself and where these lists came from.
 
 **If you have read a business book, you have Tina Fey's four.** *Bossypants* (2011) gives them as agree; say yes *and*; make statements rather than asking questions; and there are no mistakes, only opportunities. That passage is the single most quoted account of improv rules anywhere, and it is where most people outside the form get them from. It is also a memoir's summary of her Second City training rather than a curriculum — which is why it is tidier than anything actually taught in a class.
 
