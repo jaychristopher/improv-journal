@@ -63,6 +63,20 @@ These questions ask people to share something real but low-risk — an observabl
 - What did you learn from the last thing that went wrong?
 - What is a small change to how we work that you made and never mentioned?
 - What is a skill you picked up from someone on this team?
+- What is on your desk that has no work purpose at all?
+- What is the last thing you automated or scripted away?
+- What is the oldest file you still open regularly?
+- What is a shortcut you use that you assume everybody already knows?
+- What did you rewrite three times before sending?
+- What is a document you wrote that people still use?
+- Which part of the process do you always double-check?
+- What is the last thing a colleague taught you by accident?
+- What did you say no to this month?
+- What is a task you would happily do all day?
+- What is the smallest thing that reliably ruins your focus?
+- What do you keep meaning to tidy up and never get to?
+- Which meeting in your week could honestly be an email?
+- What is the longest you have gone this month without opening your inbox?
 
 **Why these work:** They ask for specifics, not generalities. "What are you good at?" invites a performance. "What skill have you gotten better at?" invites a story. The specificity lowers the cost of honesty — you're not asking anyone to characterize themselves.
 
@@ -86,6 +100,20 @@ These reveal how someone thinks, not just what they do. Slightly higher stakes b
 - What is something you think we over-invest in?
 - What would you protect if we had to cut something?
 - What does a genuinely good week look like for you here?
+- What would you keep if we rebuilt this team from scratch?
+- What do we measure that you think tells us nothing?
+- Which of our habits would you defend to an outsider?
+- What is a decision here you have never understood?
+- Where do you think we are being too careful?
+- What is the most useful disagreement you have had here?
+- How do you know when a project is actually finished?
+- What would you rather we stopped apologising for?
+- What is a trade-off you think we keep making without saying so?
+- Which part of our work would you show a candidate first?
+- What do you think we hire for that turns out not to matter?
+- Where would you spend money we are not spending?
+- What is the last thing you changed your approach on?
+- What do you think we are pretending to be certain about?
 
 **Why these work:** Question 10 is the hinge. It asks for mild dissent — an opinion that contradicts the group's default. If someone shares honestly and the group responds with curiosity instead of defensiveness, you've completed a trust transaction. The room got safer.
 
@@ -108,6 +136,20 @@ These require acknowledging a gap, a mistake, or a limitation. This is where vul
 - What is the feedback you expect to get and would rather not?
 - What did you get wrong here that we never went back to?
 - What are you slower at than people think?
+- What are you still doing manually out of habit?
+- Where have you been guessing and hoping it holds?
+- What did you agree to without fully understanding it?
+- What is a question you have been afraid to ask here?
+- What did you take credit for that was not really yours?
+- Where do you rely on one person more than you should?
+- What have you been avoiding since before the last reorg?
+- What is a skill everybody assumes you have?
+- What did you learn the hard way and never write down?
+- Where are you out of your depth right now?
+- What did you sign off on without reading properly?
+- What have you stopped raising because nothing changed?
+- What is the mistake you are most likely to repeat?
+- Where have you been coasting?
 
 **Why these work:** Admitting "I procrastinate on this" or "I used to be sure about this and now I'm not" requires a degree of honesty most professional environments never reach. The willingness to say "I don't know" or "I was wrong" is what trust is actually made of.
 
@@ -129,6 +171,19 @@ These should only come after the group has moved through the earlier tiers — e
 - What is the thing you would fix first if it were entirely yours?
 - What would you want said about your work when you are not in the room?
 - What do you think this team is for?
+- What would make this the best year of work you have had?
+- What are you protecting your time for?
+- What do you want to have learned by this time next year?
+- What is the work you would keep doing if money were solved?
+- Who here do you want to work more closely with?
+- What would have to be true for you to feel safe disagreeing here?
+- What is the part of this you would defend if it were cut?
+- What are you proud of that nobody here knows about?
+- What would you regret not having tried?
+- What kind of colleague do you want to become?
+- What would have to be true for you to recommend this place?
+- What is the hardest part of your work that you never mention?
+- What is the version of this job you would design for yourself?
 
 **Why these work:** Question 18 is the critical one. Asking for what you need combines vulnerability, honesty, and trust in a single offer. If a team can answer it honestly, they have real safety in the room. Not the kind from trust falls. The kind that changes how people work.
 
