@@ -4,6 +4,7 @@ title: Base Reality
 type: definition
 status: draft
 tags: [definitions, scene-work, UCB, grounding]
+aliases: ["Who/What/Where", "Platform"]
 links:
   - { id: game-of-the-scene, relation: requires }
   - { id: relationship, relation: requires }
@@ -20,7 +21,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.
@@ -30,6 +31,18 @@ Base reality is established through the **CROW** framework:
 - **R**elationship — who are they to each other? (The connection, the history)
 - **O**bjective — why are they here? What are they doing? (The current activity + deeper motivation)
 - **W**here — the location in space and time (often the most overlooked element)
+
+## Base reality, who/what/where, platform
+
+The same territory, named by three traditions that each want something different from it.
+
+**Who/what/where** is the oldest and most widely taught, and it is a checklist rather than a theory: establish who these people are to each other, what they are doing, and where they are. CROW above is the refinement of it, with objective split out from activity — because what someone is doing and what they want turn out to be different questions, and scenes stall when only the first is answered.
+
+**Base reality** is the UCB name and it carries an argument. The reason to ground the scene is so the first unusual thing has something to be unusual *against*. Establish nothing and the audience cannot tell which detail is the game, because every detail is equally arbitrary.
+
+**Platform** is Johnstone's term and it points the other way. He is interested in the routine being broken — the platform exists so that a tilt can knock it over, and the story is whatever happens next.
+
+Same groundwork, opposite payoffs, and it explains a common misfire in a mixed room. A performer trained on platforms establishes normality and then waits for someone to disturb it. A performer trained on base reality establishes normality and starts hunting for the unusual thing already inside it. Both are doing the groundwork correctly. They are waiting for different events, and the scene sits still while each waits for the other.
 
 ## Base reality should not be funny, weird, or absurd
 

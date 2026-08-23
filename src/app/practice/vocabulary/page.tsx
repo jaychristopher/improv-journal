@@ -32,6 +32,7 @@ export default async function VocabularyPage() {
       description: term.definition,
       termCode: term.id,
       url: `${SITE_URL}${term.url}`,
+      ...(term.aliases?.length ? { alternateName: term.aliases } : {}),
     })),
   };
 
@@ -78,7 +79,14 @@ export default async function VocabularyPage() {
                     {term.term}
                   </Link>
                 </dt>
-                <dd className="text-foreground/60 mt-1 text-sm">{term.definition}</dd>
+                <dd className="text-foreground/60 mt-1 text-sm">
+                  {term.definition}
+                  {term.aliases?.length ? (
+                    <span className="text-foreground/45 block pt-1 text-xs">
+                      Also called {term.aliases.join(", ")}.
+                    </span>
+                  ) : null}
+                </dd>
               </div>
             ))}
           </dl>
