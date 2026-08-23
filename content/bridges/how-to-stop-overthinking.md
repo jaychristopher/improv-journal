@@ -48,6 +48,27 @@ That single mechanism is what the rest of this page explains. If you want it in 
 
 None of these are distraction, which is the usual objection to them. Distraction is running a second internal process alongside the first — scrolling while ruminating is famously compatible with ruminating. These work because the demand is **external and continuous**, so there is nothing left over to run the loop with.
 
+## What Is the Root Cause of Overthinking?
+
+The usual answers — anxiety, perfectionism, a need for control, low self-esteem — describe *who* overthinks rather than *what overthinking is*. They are risk factors. They explain why some people do more of it than others, and they do not explain why the loop, once started, will not stop.
+
+**The mechanism is that analysis is being applied to a problem analysis cannot close.** "Did that come across badly?" has no retrievable answer. Neither does "what will they think" or "should I have said it differently". You are running a process against a question that has no terminating condition, so the process does not terminate.
+
+Two things keep it going, and neither is a character flaw:
+
+1. **It feels like work.** Rumination is indistinguishable from problem-solving while you are inside it. The felt sense of effort is identical, which is why "just stop" fails — you are not choosing to be unproductive, you are being productive at something with no output.
+2. **There is no completion signal.** Real problems end: you decide, you act, the thought closes. Unanswerable ones have no such moment, so the loop keeps requesting one and never gets it.
+
+Everything on this page follows from that. If the loop cannot be closed from inside, it has to be ended from outside — by giving your attention a task that keeps demanding a response — which is the whole of the section above and the reason the exercises further down work by constraint rather than by willpower.
+
+### What is the 3-3-3 rule?
+
+Name three things you can see, three sounds you can hear, and move three parts of your body. It comes up constantly in answers to this question, it is genuinely useful, and almost nobody explains why it works — which makes it easy to dismiss as a gimmick.
+
+It works for the same reason everything else here works: **it is an external task with a continuous demand.** Naming requires looking, which requires attention pointed outward, and while that is running there is not enough capacity left to also run the loop. The three-part structure matters more than the specific senses — it is long enough to occupy you and short enough to finish.
+
+Its limit is worth knowing too. It interrupts a loop; it does not resolve what started one. If the same thought returns the moment you finish, that is the technique working exactly as designed and telling you the underlying question still needs a decision rather than a grounding exercise.
+
 ## Your Brain Has a Bandwidth Problem
 
 Your working memory - the mental workspace where you process information in real time - holds roughly 4 items simultaneously (Sweller, Cognitive Load Theory, 1988). That's it. Four slots. Every cognitive task you add (evaluating, planning, self-monitoring, rehearsing) directly subtracts from your capacity to process what's actually happening in front of you.
