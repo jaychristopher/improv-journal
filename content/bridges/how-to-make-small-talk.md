@@ -11,7 +11,7 @@ entry_atoms: [offers, yes-and, active-listening, be-present, commitment]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Make Small Talk: The Improv Method That Turns Any Conversation Into Connection
@@ -85,6 +85,10 @@ Three moves, in order of effort:
 - **Change the channel.** If words are not producing anything, move to the situation, the room, the thing in front of you. Shared attention on an object is easier than shared attention on each other.
 
 If all three produce nothing, that is information rather than failure. Some people do not want to talk right now, which is allowed.
+
+## Small Talk at an Event Where You Want Something
+
+One setting deserves separating out, because the advice above quietly assumes you have no agenda. At a conference, an industry evening or anything with a purpose, you do — and pretending otherwise is what makes networking conversations feel false to everybody in them. [Networking tips](/networking-tips) covers that version, where the difficulty is not starting a conversation but being straightforward about why you are in the room.
 
 ## Getting Out
 

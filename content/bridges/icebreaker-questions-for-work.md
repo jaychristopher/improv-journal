@@ -243,7 +243,7 @@ Every list includes some of these. Each one fails in a way worth understanding.
 - **"If you were an animal, what would you be?"** Produces an answer and then nothing. There is no follow-up question, so the round ends flat every time.
 - **"Where are you going on holiday?"** Assumes everyone can afford one, which turns a light question into a disclosure about money.
 - **"Tell us about your family."** Not optional to answer, and not everyone's family is a comfortable subject.
-- **"What is your biggest weakness?"** An interview question. People answer it with the strategic version and nobody believes any of it.
+- **"What is your biggest weakness?"** An interview question. People answer it with the strategic version and nobody believes any of it. If you are actually in an interview, [questions to ask in an interview](/questions-to-ask-in-an-interview) is a different job with a different list.
 - **"Describe yourself in three words."** Asks for self-classification. Categories close a conversation; specifics open one.
 - **Anything with a winner.** The moment an icebreaker becomes a competition, `safety-in-the-room` goes with it — people play not to lose rather than to be known.
 - **"Everybody stand up if..."** Forced physical participation removes the ability to decline quietly, which is the one thing that made the question safe.

@@ -11,7 +11,7 @@ entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, 
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Collaboration Skills: What Improv Ensembles Know About Working Together
@@ -27,6 +27,8 @@ An improv ensemble walks on stage with nothing. No outline, no assigned roles, n
 This isn't magic and it isn't talent. It's a set of specific, trainable skills applied under extreme conditions. The conditions are what make it instructive: when you have zero time to plan and zero ability to control the outcome, the collaboration skills you actually need become visible. The ones that don't matter fall away.
 
 What remains — what every working improv ensemble trains relentlessly — comes down to four capabilities.
+
+These four skills sit inside a wider set — [people skills](/people-skills) makes the case that the whole category is a system rather than a personality trait, which is the same argument one level up.
 
 ## Skill One: Active Listening
 
@@ -48,7 +50,7 @@ When your scene partner says "We're lost in this forest," Yes, And doesn't mean 
 
 The building part matters as much as the accepting part. "Yes, we're in a forest" is acceptance, but it's not collaboration. "Yes, and I think I hear a river — if we follow it downstream we'll hit a road" is acceptance plus addition. You've validated your partner's reality and extended it. Now there's more for both of you to work with.
 
-In teams, blocking is epidemic and usually invisible. It sounds like: "That's a good idea, but..." "Have we considered the alternative?" "I think what you really mean is..." Each of these phrases technically acknowledges the other person's idea while functionally replacing it with your own. The original offer gets abandoned, the offeror learns to stop offering, and the team's creative capacity shrinks.
+In teams, blocking is epidemic and usually invisible. It sounds like: "That's a good idea, but..." "Have we considered the alternative?" "I think what you really mean is..." Each of these phrases technically acknowledges the other person's idea while functionally replacing it with your own. The original offer gets abandoned, the offeror learns to stop offering, and the team's creative capacity shrinks. That last part is usually diagnosed as a shortage of ideas and treated with brainstorming, which is the wrong intervention for it — [how to be more creative](/how-to-be-more-creative) covers why the ideas were mostly there already.
 
 Google's Project Aristotle (2015), a large-scale study of team effectiveness, found that the single strongest predictor of high-performing teams was psychological safety — the shared belief that the team is safe for interpersonal risk-taking. Yes, And is the behavioral mechanism that creates psychological safety. When people experience their ideas being accepted and built upon rather than evaluated and replaced, they offer more ideas. The team's collective intelligence increases not because the individuals got smarter, but because more of each individual's intelligence became available to the group.
 

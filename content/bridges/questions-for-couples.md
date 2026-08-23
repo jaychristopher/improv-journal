@@ -112,6 +112,8 @@ The general set. Ordinary on purpose — each one is something you probably thin
 - What is a plan you have half-made and not mentioned?
 - What do you need from me this week that you have not asked for?
 
+For the stage before this one — somebody you are getting to know rather than somebody you are with — [questions to ask a girl](/questions-to-ask-a-girl) covers early conversations, and makes the case that the gendered framing was the mistake to begin with.
+
 ## Deep Questions for Couples
 
 Slower, and best when there is time afterwards. Each of these asks for something specific rather than a summary — a summary is where the honest answer goes to hide.

@@ -11,7 +11,7 @@ entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commi
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Overcome Fear of Failure: The Improv Reframe
@@ -78,7 +78,7 @@ Martin Seligman's research on post-traumatic growth (Tedeschi & Calhoun, 2004) d
 
 ## The Reframe in Practice
 
-The fear of failure isn't going to disappear. Your brain evolved to avoid threats, and social failure — rejection, shame, loss of status — registers as a genuine threat. You can't turn off the alarm system.
+The fear of failure isn't going to disappear. Your brain evolved to avoid threats, and social failure — rejection, shame, loss of status — registers as a genuine threat. You can't turn off the alarm system. Rejection is the sharpest version of this and behaves slightly differently, because it arrives from a person rather than from an outcome — [how to deal with rejection](/how-to-deal-with-rejection) covers that case.
 
 But you can change the model you're running. Instead of *"If I fail, it's permanent,"* try: *"If I fail, it's an offer."*
 

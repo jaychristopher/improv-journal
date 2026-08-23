@@ -18,7 +18,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: draft
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be Funny (It's Not What You Think)
@@ -132,6 +132,8 @@ The mechanism does not change with context, but the stakes do — and stakes are
 At work the risk is real rather than imagined, so the useful adjustment is not "be braver" but "be specific about safe things." Precise observation about a shared, neutral situation — the meeting, the process, the coffee machine — carries almost no risk and produces most of the effect. The honesty that gets people in trouble is honesty aimed at people. Aim it at situations.
 
 With strangers, the constraint is that you have no shared history to be specific about. So build one fast: the only material you both have is what is happening right now, in this room. That is why observational humour works with people you have just met, and why a rehearsed anecdote usually does not.
+
+If you would rather start from a prompt than from the room, [funny questions to ask](/funny-questions-to-ask) collects the ones that reliably produce something worth building on.
 
 ## The Honest Caveat
 

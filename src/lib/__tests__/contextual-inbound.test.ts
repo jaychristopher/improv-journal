@@ -30,16 +30,27 @@ import { loadAtoms, loadBridges, loadPaths, loadThreads } from "../content";
  * That is the same blind spot that hid the page's value for months.
  */
 
-/** Slugs that had no editorial inbound link when this check was written. */
-const KNOWN_UNLINKED = new Set([
-  "networking-tips",
-  "questions-to-ask-a-girl",
-  "questions-to-ask-in-an-interview",
-  "funny-questions-to-ask",
-  "how-to-be-more-creative",
-  "how-to-deal-with-rejection",
-  "people-skills",
-]);
+/**
+ * Empty, and meant to stay that way.
+ *
+ * Seven guides were listed here when the check was written. All seven now have
+ * an editorial link from a page whose subject genuinely leads there — rejection
+ * from fear of failure, interview questions from the workplace icebreakers,
+ * networking from small talk. Nothing was linked from a "related guides" block,
+ * because that is the boilerplate this check exists to see past.
+ *
+ * Worth recording that the list was doing less than it looked. Five of the
+ * seven are gated rather than winnable, so this check never examined them and
+ * naming them here changed nothing. Only how-to-deal-with-rejection and
+ * questions-to-ask-a-girl were ever in scope. Linking the other five is still
+ * worth doing for readers and for crawl paths, but it was not this test being
+ * satisfied.
+ *
+ * Adding a slug here is a way of saying a guide is worth ranking but not worth
+ * mentioning. If that is ever true, the honest fix is to stop calling it
+ * winnable.
+ */
+const KNOWN_UNLINKED = new Set<string>([]);
 
 /** Markdown link to /slug, not /slug-something-else. */
 function linksTo(body: string, slug: string): boolean {
