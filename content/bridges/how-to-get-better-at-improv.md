@@ -12,7 +12,7 @@ entry_atoms: [diagnosing-scene-failure, active-listening, commitment, be-present
 entry_path: self-coaching-toolkit
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Get Better at Improv: A Practitioner's Guide to Deliberate Growth
@@ -67,6 +67,34 @@ Once you've identified the breakdown, practice the component skill in isolation.
 ### For connection problems:
 
 **Emotional Honesty Scene:** Before each scene, commit to one rule: say how you feel about everything that happens. Not how your character thinks about it — how your character *feels*. This forces emotional responses, which are inherently connecting, instead of intellectual responses, which are inherently distancing.
+
+## What You Can Practise Alone
+
+Every drill above needs somebody else. That is a real problem, because the arithmetic of improv training is three hours of class a week, a show if you are lucky, and a hundred and sixty-five hours of the rest of your life. Advice that only works inside those three hours is advice for a small fraction of the time available.
+
+Two things are worth separating: the handful of skills genuinely trainable on your own, and the much larger set where **ordinary conversation is the rehearsal room**.
+
+### Genuinely solo
+
+**Space work, with the object removed.** Make a cup of tea without the kettle. The value is not mime — it is that `space-work` is impossible to do while thinking about yourself, because the object requires continuous attention or it stops existing. Two minutes of this is a concentration drill with a visible pass or fail.
+
+**First thought, out loud.** Walking anywhere, name the first thing you notice, aloud, and keep going. No editing, no upgrading it to something more interesting. The gap between impulse and expression is the thing being trained, and `obvious-choice` is the reason it works: the second thought is about how you will be perceived, and it is almost always worse.
+
+**Narrate without stopping.** Describe your day aloud for two minutes with no pauses and no corrections. You will hear yourself want to go back and improve a sentence. That impulse is the same one that makes you talk over the end of a scene partner's line.
+
+### Where the real reps are
+
+The skills that matter most — listening, accepting offers, not planning ahead — do not require a stage. They require another person talking, and you are in conversations all day.
+
+**Catch yourself planning.** In any conversation, notice the moment you stop listening and start composing. That is `internal-computation`, and it is the identical failure on stage and off. Noticing it is most of the fix; you cannot stop it by deciding to.
+
+**Take the last word.** Begin your next sentence with the last word they said. Do it a few times in a real conversation and you will discover how much of your listening had been drafting — the same discovery `last-word-response` produces in a class, without needing one.
+
+**Say yes to something you would have declined.** Not everything, and nothing costly. The point is to notice how often the reflex is refusal and how rarely the refusal was necessary.
+
+**Watch improv and pause it.** Before the next line lands, say what you would do. Then watch what they did. This is the cheapest feedback available and the only kind you can get at eleven at night with nobody around.
+
+None of this replaces stage time. It changes what you bring to it, which is the part the three hours cannot give you.
 
 ## Step 3: Get Specific Feedback
 
