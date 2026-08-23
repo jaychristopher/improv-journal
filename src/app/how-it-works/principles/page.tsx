@@ -10,7 +10,14 @@ import { getSystemCounts } from "@/lib/system-counts";
 export async function generateMetadata(): Promise<Metadata> {
   const { principles } = await getSystemCounts();
   return {
-    title: pageTitle(`Rules of Improv: ${principles} Principles That Make Connection Work`),
+    /**
+     * Deliberately not "rules of improv". /rules-of-improv is a 1,100-word
+     * guide targeting that exact term, and this index carried it at the front
+     * of its own title on 207 words of listing. Two pages competing for one
+     * phrase splits the signal and the thin one can win, which is the worse
+     * outcome. This describes what the page is instead.
+     */
+    title: pageTitle(`The ${principles} Principles of Connection`),
     description:
       "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
     alternates: { canonical: "/how-it-works/principles" },
@@ -51,6 +58,15 @@ export default async function PrinciplesPage() {
         <p className="text-foreground/60 mt-2">
           Behavioral guidelines derived from the physics. Not moral rules — structural commands that
           prevent shared reality from collapsing.
+        </p>
+        <p className="text-foreground/50 mt-3 text-sm">
+          If you arrived looking for the familiar list — yes and, don&apos;t block, make your
+          partner look good — that is{" "}
+          <Link href="/rules-of-improv" className="underline">
+            the rules of improv
+          </Link>
+          , which covers where each one came from and which half of them are wrong. This page is the
+          underlying set they are shorthand for.
         </p>
       </header>
 
