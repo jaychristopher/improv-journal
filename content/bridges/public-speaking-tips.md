@@ -116,6 +116,38 @@ Specific beats impressive. "Priya rebuilt the intake process in six weeks" carri
 
 And stop at the end of the third move. The most common failure in unprepared speaking is not starting badly — it is not stopping, because ending feels abrupt from the inside and never does from the outside.
 
+## The Numbered Rules People Ask About
+
+Four of these come up more than anything else, and they deserve a straight answer rather than a repetition. All four are mnemonics, not findings. Some of what they contain is real; the numbers are decoration.
+
+### What Are the 5 C's of Public Speaking?
+
+Most often given as **clarity, confidence, conciseness, connection and conviction** — though the list is not fixed. Content, credibility, and conclusion all turn up in other versions, which tells you roughly how settled it is.
+
+Two of the five are usable and three are not. Clarity and conciseness describe things you can actually do on a Tuesday: cut the sentence, define the term, stop sooner. Confidence and conviction are outcomes rather than actions — nobody has ever become more confident by learning that confidence is one of the five C's. Connection is the real one, and it is the only member of this list that also appears in the ten above, because it is the only one that arrives with a method attached: talk to one person at a time.
+
+### What Are the 5 Tips for Public Speaking?
+
+If you want five rather than ten, take the five that hold up when everything else has gone wrong:
+
+1. **Prepare beats, not sentences** — a script has exactly one path through it, and losing a word loses the path.
+2. **Memorise the first line and the last, and nothing in between** — nerves are loudest at the open, and trailing off is how good talks end badly.
+3. **Give your attention a job outside your own head** — self-monitoring and delivering compete for one budget, and monitoring wins by default.
+4. **Talk to one person at a time** — finish a thought with one face before moving on. Sweeping the room reaches nobody in it.
+5. **Stop when you have finished** — the most common failure in speaking is not starting badly, it is continuing.
+
+### What Are the 7 Powerful Speaking Tips?
+
+There is no canonical seven. The phrase exists because articles are titled that way, and the number moves — nine, eleven, sixteen — according to how many the writer had.
+
+That is worth saying plainly rather than supplying a seventh item to be helpful. A numbered list is a packaging decision. The useful question is not how many tips there are but which of them survive contact with a real room, which is what the section below is about.
+
+### What Is the 3/2/1 Rule in Speaking?
+
+Usually given as **three main points, two supporting details for each, and one clear ask at the end**. It is also cited in flatly incompatible forms elsewhere, which is the reliable sign of a rule invented to be memorable rather than derived from anything.
+
+The arithmetic is arbitrary. The constraint underneath it is not. A talk built on three points gets remembered as three points; a talk built on nine gets remembered as none, because the audience is doing the filtering you declined to do. If the rule is useful to you, it is useful for that reason alone — it forces a decision about what to cut, made at your desk rather than by a room that has stopped listening.
+
 ## The Standard Advice That Makes It Worse
 
 Most public speaking tips are handed down rather than tested, and several of the most repeated ones actively cause the problem they promise to solve.
