@@ -7,6 +7,10 @@ target_keywords:
   - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters", traffic_potential: 146000 }
   - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters", traffic_potential: 143000 }
   - { keyword: "good conversation starters", volume: 12000, difficulty: 26, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "questions to ask", volume: 43000, difficulty: 38, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "good questions to ask", volume: 16000, difficulty: 26, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "questions to ask people", volume: 12000, difficulty: 33, traffic_potential: 150000, parent: "conversation starters" }
+  - { keyword: "conversation questions", volume: 2500, difficulty: 31, traffic_potential: 147000, parent: "conversation starters" }
   - { keyword: "small talk questions", volume: 3100, difficulty: 39, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "interesting conversation starters", volume: 1500, difficulty: 37, traffic_potential: 168000, parent: "conversation starters" }
   - { keyword: "interesting questions to ask", volume: 8400, difficulty: 15, traffic_potential: 150000, parent: "conversation starters" }
@@ -61,6 +65,24 @@ What they have in common is the whole argument of this page: each one can be ans
 10. **What have I not asked you that I should have?** Best kept for late in a conversation, where it is close to unfailing.
 
 If you take one thing rather than ten: **ask about now, not about them.** Questions about the present have an answer sitting ready. Questions about the person require a self-assessment first, which is why "tell me about yourself" is the worst opener in common use.
+
+## Which Questions to Ask, and When
+
+Most people arriving at a page like this want questions to ask *somebody specific*, and the honest answer is that the right list depends almost entirely on how much trust is already in the room. That single variable decides more than any property of the question itself.
+
+Here is the whole map, so you can leave for the right one rather than making this page work for a job it is not built for.
+
+- **Somebody you have just met.** The estimate is at zero and every question has to be cheap. [Icebreaker questions to get to know someone](/questions-to-get-to-know-someone) — and if it is a group rather than one person, the same page covers that.
+- **A room at work.** A different problem entirely, because it is a power problem rather than an exposure one. [Icebreaker questions for work](/icebreaker-questions-for-work).
+- **Friends you already know well.** Trust is not the constraint, so the questions can be blunter and go somewhere faster. [Questions to ask friends](/questions-to-ask-friends).
+- **You want the evening to be enjoyable rather than revealing.** [Fun questions to ask friends](/fun-questions-to-ask-friends), and [would you rather questions](/would-you-rather-questions) when you want a room to argue rather than take turns.
+- **You want to go properly deep.** Only works when the conditions are already there, which that page is mostly about. [Deep questions to ask](/deep-questions-to-ask).
+- **Your partner.** The opposite problem to all of the above — plenty of trust, and a model of them that quietly went out of date. [Questions for couples](/questions-for-couples).
+- **You are the one who has to speak.** Not a question problem at all. [Public speaking tips](/public-speaking-tips).
+
+**If you are not sure, start below rather than above.** Asking too small costs you nothing and takes ten seconds to correct. Asking too large in a room that has not warmed up produces a polite answer and closes the door for the rest of the evening, and there is no way to walk that back in the moment.
+
+The other thing worth saying: none of these lists fixes the problem people actually have, which is [keeping a conversation going](/how-to-keep-a-conversation-going) once it has started. Running out is almost never a shortage of questions.
 
 ## Starters for a Room Where You Know Nobody
 

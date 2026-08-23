@@ -4,6 +4,8 @@ description: "Most deep questions ask for a conclusion, so they get a performanc
 target_keywords:
   - { keyword: "deep questions to ask", volume: 24000, difficulty: 8, traffic_potential: 67000, parent: "deep questions to ask" }
   - { keyword: "deep questions", volume: 16000, difficulty: 10, traffic_potential: 70000, parent: "deep questions to ask" }
+  - { keyword: "best questions to ask", volume: 1400, difficulty: 33, traffic_potential: 82000, parent: "deep questions to ask" }
+  - { keyword: "list of questions to ask", volume: 200, difficulty: 0, traffic_potential: 88000, parent: "deep questions to ask" }
   - { keyword: "deep questions to get to know someone", volume: 3200, difficulty: 4, traffic_potential: 67000, parent: "deep questions to ask" }
   - { keyword: "deep questions to ask someone", volume: 2300, difficulty: 8, traffic_potential: 74000, parent: "deep questions to ask" }
   - { keyword: "deep conversation questions", volume: 1900, difficulty: 3, traffic_potential: 84000, parent: "deep questions to ask" }
