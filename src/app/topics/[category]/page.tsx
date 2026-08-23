@@ -91,6 +91,15 @@ export default async function GuideCategoryPage({
         </p>
       </header>
 
+      <section className="mb-12">
+        <h2 className="mb-3 text-xl font-semibold">What These Have in Common</h2>
+        {category.orientation.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
+
       <ul className="space-y-4">
         {guides.map((guide) => (
           <li key={guide.slug}>

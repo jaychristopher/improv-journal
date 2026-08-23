@@ -20,6 +20,17 @@ export interface GuideCategory {
   description: string;
   /** The search snippet. Separate because the visible blurb is far too short for one. */
   metaDescription: string;
+  /**
+   * What the guides in this category have in common, and how to pick one.
+   *
+   * The hubs were a heading, a one-line blurb and a list, which is a directory
+   * rather than a page — their only headings were the navigation blocks. A
+   * reader arriving at a category does not yet know which of eighteen guides is
+   * theirs, and the site's own answer everywhere else is to sort by what is
+   * going wrong rather than by what sounds relevant. These say that per
+   * category, in the terms that category actually uses.
+   */
+  orientation: string[];
   slugs: string[];
 }
 
@@ -30,6 +41,11 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     description: "Overthinking, confidence, creativity, fear, and presence.",
     metaDescription:
       "Overthinking, confidence, creativity, fear, and presence — improv practices for the parts of life that go wrong inside your own head.",
+    orientation: [
+      `Almost everything in this category is an attention problem wearing the costume of a character problem. Overthinking, awkwardness, the fear before speaking, the sense of not being present — each is usually described as a fixed trait ("I'm an anxious person") and each turns out to be a question of where a finite amount of attention is currently pointed.`,
+      `That matters for choosing, because the two framings lead to different pages. If you are looking for the guide that will tell you to be different, none of these do it. They tell you where to put your attention instead, which is a smaller instruction and the only one that works under pressure.`,
+      `Pick by the moment it goes wrong rather than by the label. Loops that run after the event are overthinking. Discomfort during a conversation is awkwardness. Dread arriving days beforehand is a different thing again, and the guides say so where it applies rather than selling you a technique for it.`,
+    ],
     slugs: [
       "how-to-stop-overthinking",
       "how-to-be-more-confident",
@@ -57,6 +73,11 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     description: "Listening, conversation, conflict, and connection.",
     metaDescription:
       "Listening, conversation, conflict, and connection — what improv knows about the mechanics of being understood and understanding someone else.",
+    orientation: [
+      `Nearly all conversation advice is about output — what to say, which question to ask, how to phrase the difficult thing. The guides here are mostly about input, because that is where improv locates the problem: a conversation fails when somebody stops receiving, and everything downstream of that is a symptom.`,
+      `So the ones about listening and reading a room underpin the rest. The question lists are useful and they are the surface layer; a good question asked by somebody not attending to the answer produces a worse conversation than a dull question asked by somebody who is.`,
+      `Choose by which half is failing. If you run out of things to say, the starters and question lists help. If conversations feel flat despite having plenty to say, the problem is on the receiving side and the listening guides are the ones to read.`,
+    ],
     slugs: [
       "active-listening",
       "active-listening-exercises",
@@ -95,6 +116,11 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     description: "Team building, trust, collaboration, feedback, and group dynamics.",
     metaDescription:
       "Team building, trust, collaboration, feedback, and group dynamics — improv methods for groups that have to think together under pressure.",
+    orientation: [
+      `The recurring finding across these is that most team problems are structural rather than interpersonal, and that exercises cannot fix conditions. A team that is under-resourced, or whose disagreement has been punished once, does not have a skills gap — and running an activity at it is visible enough as management theatre to make the next attempt harder.`,
+      `Which is why several of these guides spend as much space on when not to run something as on how to run it. That is not hedging. It is the most useful thing improv has to say about groups: the ensemble is a set of conditions, and the conditions are set by whoever holds the most status in the room.`,
+      `Choose by whether you are trying to change a behaviour or a condition. Activities and questions work on behaviour. Safety, feedback and how decisions get made are conditions, and they change more slowly and from the top.`,
+    ],
     slugs: [
       "team-building-activities",
       "virtual-team-building-activities",
@@ -118,6 +144,11 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     description: "For improvisers — fundamentals, practice, and getting unstuck.",
     metaDescription:
       "For improvisers: fundamentals, practice, and getting unstuck — the craft itself, from first principles to diagnosing a scene that died.",
+    orientation: [
+      `This is the craft itself rather than its applications, and it is the part of the site with the most first-hand material behind it — sixty years of practice, five traditions that disagree with each other in useful ways, and a vocabulary precise enough to diagnose why a specific scene died.`,
+      `The guides split three ways. Some define the form and its parts, for readers who want to know what improv actually is before deciding anything. Some are collections you can run tonight — games, prompts, exercises — with the rules included rather than linked. And some are about the people and ideas the whole thing rests on, which is the layer most improv writing skips and the reason the rest is more than a list of tips.`,
+      `If you are new, start with what improv is and the rules that get quoted at you, in that order — the second is considerably more useful once you know what it is describing.`,
+    ],
     slugs: [
       "what-is-improv",
       "rules-of-improv",

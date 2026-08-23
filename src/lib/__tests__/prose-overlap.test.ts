@@ -189,15 +189,39 @@ describe("guide prose", () => {
  */
 const MAX_SHARED_WITH_ROUTE = 14;
 
-function tsxProse(source: string): string {
-  return source
-    .replace(/^import[\s\S]*?;$/gm, " ")
+/**
+ * Two extractors, because the two file kinds hide prose differently, and both
+ * ways of getting it wrong produce an empty string rather than an error.
+ *
+ * Backticks come out first in both cases: shingles() deletes whatever sits
+ * inside them, since in markdown a backtick marks an atom reference. Leave them
+ * and every template literal in the file vanishes before comparison.
+ *
+ * The JSX strips then apply only to .tsx. In a plain .ts data file every object
+ * in the exported array is itself a brace block, so removing `{...}` deletes the
+ * whole dataset and leaves the doc comments — which is exactly what the first
+ * two attempts at this did, each passing a mutation that pasted an entire guide
+ * into the category prose.
+ */
+function fileProse(source: string, isJsx: boolean): string {
+  const text = source.replace(/`/g, " ").replace(/^import[\s\S]*?;$/gm, " ");
+  if (!isJsx) return text.replace(/\s+/g, " ");
+  return text
     .replace(/className="[^"]*"/g, " ")
     .replace(/href="[^"]*"/g, " ")
     .replace(/\{[^{}]*\}/g, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ");
 }
+
+/**
+ * Prose is not only in page.tsx. The topic hubs render their orienting
+ * paragraphs from `guide-categories.ts`, so writing them there would have put
+ * them outside this check on the day it was extended to cover TSX — the same
+ * blind spot as app routes, one directory over. Any file that holds sentences
+ * belongs here, wherever it happens to live.
+ */
+const PROSE_OUTSIDE_ROUTES = [path.join("src", "lib", "guide-categories.ts")];
 
 function appRouteFiles(dir: string, found: string[] = []): string[] {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -215,10 +239,13 @@ describe("hand-built page prose", () => {
       set: shingles(b.content),
     }));
 
-    const routes = appRouteFiles(path.join(process.cwd(), "src", "app"))
+    const routes = [
+      ...appRouteFiles(path.join(process.cwd(), "src", "app")),
+      ...PROSE_OUTSIDE_ROUTES.map((f) => path.join(process.cwd(), f)),
+    ]
       .map((file) => ({
         route: path.relative(path.join(process.cwd(), "src", "app"), path.dirname(file)),
-        set: shingles(tsxProse(fs.readFileSync(file, "utf8"))),
+        set: shingles(fileProse(fs.readFileSync(file, "utf8"), file.endsWith(".tsx"))),
       }))
       .filter((r) => r.set.size > 0);
 
