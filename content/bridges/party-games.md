@@ -59,11 +59,11 @@ The two you will actually reach for most are numbers 1 and 4, for opposite reaso
 
 These are the ones to reach for first. Each is a rule, not an activity — you can start any of them mid-conversation.
 
-**1. Would You Rather.** Two options, both costing something, everyone picks. The pleasure is not the choice, it is being made to defend it. Works from four people to thirty. There are [164 pairs here](/would-you-rather-questions), sorted by how hard they are.
+**1. Would You Rather.** Two options, both costing something, everyone picks. The pleasure is not the choice, it is being made to defend it. Works from four people to thirty. There are [164 would you rather questions](/would-you-rather-questions) here, sorted by how hard they are.
 
-**2. This or That.** The same shape with the stakes removed — one word, no defending. Faster, and the right one for a room that has not warmed up yet. [300 pairs](/this-or-that-questions).
+**2. This or That.** The same shape with the stakes removed — one word, no defending. Faster, and the right one for a room that has not warmed up yet. [300 this or that questions](/this-or-that-questions).
 
-**3. Most Likely To.** Everyone points at once on a count of three. The only game here where the answer is about somebody else, which makes it the warmest when it works and the sharpest when it does not. [182 of them](/most-likely-to-questions), plus the rules that keep it kind.
+**3. Most Likely To.** Everyone points at once on a count of three. The only game here where the answer is about somebody else, which makes it the warmest when it works and the sharpest when it does not. [182 most likely to questions](/most-likely-to-questions), plus the rules that keep it kind.
 
 **4. 21 Questions.** Two people, twenty-one questions, taken in turns. The number is doing the work — it removes the polite exit that ends most conversations at the fourth exchange. [The full game](/21-questions-game).
 
@@ -151,7 +151,7 @@ The commonest mistake is not picking a bad game. It is picking a good one at the
 
 **There are children present.** Sleeping Lions, Keep It Up, the Story Ball. Also worth knowing that children play every game on this page better than adults, because they have not yet learned to work out how an answer will look.
 
-**It is a work event.** Careful — the power dynamics change everything and a game that flattens status in a friendship group can expose people at work. That has [its own page](/icebreaker-questions-for-work).
+**It is a work event.** Careful — the power dynamics change everything and a game that flattens status in a friendship group can expose people at work. [Icebreaker questions for work](/icebreaker-questions-for-work) covers that setting.
 
 ## More Games Worth Knowing
 

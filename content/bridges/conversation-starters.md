@@ -290,7 +290,7 @@ So these are deliberately ordinary. Their quality is in how little they cost.
 
 Each one is answerable in three words without rudeness, and each has an obvious second question sitting behind it. That is the whole specification.
 
-If small talk itself is the part you find difficult — the mechanics of it, rather than what to ask — that has [its own page](/how-to-make-small-talk), and it is mostly about receiving rather than supplying.
+If small talk itself is the part you find difficult — the mechanics of it, rather than what to ask — [how to make small talk](/how-to-make-small-talk) covers that, and it is mostly about receiving rather than supplying.
 
 ## Interesting Questions to Ask
 

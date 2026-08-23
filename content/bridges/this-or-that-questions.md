@@ -422,7 +422,7 @@ Keep them well away from anything a person could be assessed on. The point is wa
 - Plan the week Monday or Friday?
 - Read the agenda in advance or wing it?
 
-For rooms where the power dynamics matter more than the questions do, that has [its own page](/icebreaker-questions-for-work).
+For rooms where the power dynamics matter more than the questions do, see [icebreaker questions for work](/icebreaker-questions-for-work).
 
 ## Where It Falls Flat
 

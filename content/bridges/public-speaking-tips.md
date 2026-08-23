@@ -182,7 +182,7 @@ Most public speaking tips are handed down rather than tested, and several of the
 
 **"Open with a joke."** The highest-risk move available, spent at the moment your credit with the room is lowest, in pursuit of the least important goal. A joke that does not land at second fifteen costs you the next three minutes, which you now spend recovering rather than talking. Open with the reason they should care.
 
-**"Never let them see you're nervous."** Concealment is a second job running alongside the talk, and it consumes the attention the talk needed. It is also unnecessary: the [physiology is far less visible than it feels](/fear-of-public-speaking), and audiences forgive visible nerves easily while forgiving inaudible arguments not at all.
+**"Never let them see you're nervous."** Concealment is a second job running alongside the talk, and it consumes the attention the talk needed. It is also unnecessary: the physiology of [fear of public speaking](/fear-of-public-speaking) is far less visible than it feels, and audiences forgive visible nerves easily while forgiving inaudible arguments not at all.
 
 **"Use gestures for emphasis."** Deliberate gestures look deliberate. Hands that are doing something on purpose read as staged to everyone watching, which costs more credibility than flat hands ever would. Gesture happens by itself when you are genuinely engaged with what you are saying; the fix for stiff hands is caring more about the content, not choreography.
 

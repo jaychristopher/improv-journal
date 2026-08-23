@@ -35,7 +35,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # 189 Icebreaker Questions to Get to Know Someone
@@ -239,7 +239,7 @@ Different constraint: several people, short attention, nobody wants to be interv
 
 Put any of these to a group rather than to one person and they become icebreaker questions, which is the word most people use for this and also a word that makes a lot of rooms flinch. The flinch is earned. It is worth being exact about what goes wrong, because it is not the questions.
 
-An icebreaker in a social setting fails differently from one at work — the workplace version is a power problem and has its [own page](/icebreaker-questions-for-work). Among strangers the failure is simpler: **a bad icebreaker asks people to be interesting in front of an audience of people they have not met.** It is an audition with a queue, and everybody spends their turn drafting instead of listening. Anything phrased as "tell us something surprising about yourself" is this.
+An icebreaker in a social setting fails differently from one at work — the workplace version is a power problem, covered in [icebreaker questions for work](/icebreaker-questions-for-work). Among strangers the failure is simpler: **a bad icebreaker asks people to be interesting in front of an audience of people they have not met.** It is an audition with a queue, and everybody spends their turn drafting instead of listening. Anything phrased as "tell us something surprising about yourself" is this.
 
 What survives contact with a real group:
 
@@ -312,7 +312,7 @@ The questions change less by audience than people expect. What changes is the co
 
 **Students in a new cohort** are in the specific position of knowing nobody and expecting to know everybody soon, which makes practical questions land better than personal ones: what they nearly studied instead, how far they have come, what they have not worked out yet about the place. The last of those is genuinely useful and gives the room something to do together.
 
-For a workplace, the constraint is different again — it is a power problem rather than an exposure problem, and it has [its own page](/icebreaker-questions-for-work).
+For a workplace, the constraint is different again — it is a power problem rather than an exposure problem, and it is covered in [icebreaker questions for work](/icebreaker-questions-for-work).
 
 ## Funny Icebreaker Questions
 
