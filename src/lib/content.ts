@@ -119,6 +119,17 @@ const SOURCE_TITLE_MAP: [RegExp, string][] = [
   [/The Viewpoints Book/g, "/library/ref-viewpoints-bogart-landau"],
   [/Sanford Meisner on Acting/g, "/library/ref-meisner-on-acting"],
   [/Improvise/g, "/library/ref-napier-improvise"],
+  [/Daring Greatly/g, "/library/ref-brown-daring-greatly"],
+  [/Improv Nerd/g, "/library/ref-carrane-improv-nerd"],
+  [/Frame Analysis/g, "/library/ref-goffman-frame-analysis"],
+  [/Art by Committee/g, "/library/ref-halpern-art-by-committee"],
+  [/Behind the Scenes/g, "/library/ref-napier-behind-the-scenes"],
+  [/Standing in Space/g, "/library/ref-overlie-standing-in-space"],
+  [/The Improv Handbook/g, "/library/ref-salinsky-improv-handbook"],
+  [/Improvised Dialogues/g, "/library/ref-sawyer-improvised-dialogues"],
+  [/An Actor Prepares/g, "/library/ref-stanislavski-actor-prepares"],
+  [/Improvise Freely/g, "/library/ref-stiles-improvise-freely"],
+  [/Flow/g, "/library/ref-csikszentmihalyi-flow"],
   [/Impro(?!v)/g, "/library/ref-impro-johnstone"],
 ];
 
@@ -132,6 +143,40 @@ const SOURCE_TITLE_MAP: [RegExp, string][] = [
  */
 function stripHeadingIdPrefix(htmlStr: string): string {
   return htmlStr.replace(/(<h[2-6][^>]*\sid=")user-content-/g, "$1");
+}
+
+// ─── Citation auto-linking ──────────────────────────────────────────────────
+// Research citations name a journal rather than a work, so the title map above
+// cannot reach them: "Cowan (2001), <em>Behavioral and Brain Sciences</em>"
+// would wrongly link the journal. These match the author-year form instead, and
+// fire once per page so a bibliography does not become a wall of links.
+
+const CITATION_MAP: [RegExp, string][] = [
+  [/Limb\s*(?:&(?:amp|#x26);|&)\s*Braun\s*\(2008\)/, "/library/ref-limb-braun-jazz-improvisation"],
+  [/Edmondson\s*\(1999\)/, "/library/ref-edmondson-psychological-safety"],
+  [/Cowan\s*\(2001\)/, "/library/ref-cowan-magical-number-four"],
+  [/Sweller\s*\(1988\)/, "/library/ref-sweller-cognitive-load"],
+];
+
+function linkCitations(htmlStr: string, currentUrl: string | null): string {
+  let result = htmlStr;
+  for (const [pattern, url] of CITATION_MAP) {
+    if (url === currentUrl) continue;
+
+    let linked = false;
+    result = result.replace(new RegExp(pattern.source, "g"), (match, ...args) => {
+      if (linked) return match;
+      const offset = args[args.length - 2] as number;
+      const before = result.slice(Math.max(0, offset - 100), offset);
+      if (before.includes("<a ") && !before.includes("</a>")) return match;
+
+      linked = true;
+      const ref = getAtomUrlMap().get(url.replace("/library/", ""));
+      const tip = ref ? ref.tip.replace(/"/g, "&quot;") : match;
+      return `<a href="${url}" title="${tip}">${match}</a>`;
+    });
+  }
+  return result;
 }
 
 function linkSources(htmlStr: string): string {
@@ -587,7 +632,9 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
       frontmatter: data as T,
       content,
       html: stripHeadingIdPrefix(
-        rewriteLegacyInternalLinks(linkAtomRefs(linkSources(rendered.toString()))),
+        rewriteLegacyInternalLinks(
+          linkAtomRefs(linkCitations(linkSources(rendered.toString()), currentUrl)),
+        ),
       ),
       slug,
     });
@@ -630,13 +677,16 @@ function getAtomUrlMap(): Map<string, { title: string; url: string; tip: string 
       // Extract first sentence for tooltip (strip markdown formatting)
       const firstSentence =
         content
-          .replace(/^\s*\*\*[^*]+\*\*:?\s*/m, "") // strip leading bold label
+          .replace(/^\s*\*\*(?:[^*]|\*(?!\*))+\*\*:?\s*/m, "") // strip leading bold label
           .replace(/\*\*([^*]+)\*\*/g, "$1") // strip bold
           .replace(/\*([^*]+)\*/g, "$1") // strip italic
           .replace(/`([^`]+)`/g, "$1") // strip code
           .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // strip links
           .trim()
-          .split(/(?<=[.!?])\s/)[0] // first sentence
+          // The lookbehind keeps initials ("Charles J. Limb") from ending the
+          // sentence. A real terminator like "USA." still splits, because the
+          // capital there is not at a word boundary.
+          .split(/(?<!\b[A-Z]\.)(?<=[.!?])\s/)[0] // first sentence
           ?.substring(0, 120) || fm.title;
       _atomUrlMap.set(fm.id, {
         title: fm.title,
