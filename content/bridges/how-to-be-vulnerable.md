@@ -87,6 +87,38 @@ You can build this structure anywhere — in a relationship, a team, a friendshi
 
 **Respond to bravery with engagement, not praise.** When someone takes a risk, the worst response is silence. The second worst is performative enthusiasm ("That was so brave!"). The best response is engagement — taking their offer seriously and building on it. Engagement signals that the vulnerability mattered. Praise signals that you noticed them being vulnerable, which subtly positions it as performance rather than communication.
 
+## What a Vulnerable Offer Actually Sounds Like
+
+Everything above is mechanism, and mechanism is not much use at the moment you are deciding whether to open your mouth. The instruction "something small and true that you have been editing out" leaves the hard part unspecified: how small.
+
+The container logic answers it. The size of the offer should match the evidence the container has already produced, which makes this a graded list rather than a menu.
+
+**In a container that has not been tested yet**, the offer is an admission of not-knowing rather than of feeling. It costs little, it is genuinely true, and it produces the first data point.
+
+- "I don't actually know how this works — can you walk me through it."
+- "I got that wrong."
+- "I'm not sure I agree, though I might be missing something."
+
+**Once a few of those have landed well**, the offer can carry some state without asking anybody to manage it.
+
+- "That landed badly and I have been thinking about it since."
+- "I found that meeting harder than I let on."
+- "I want to be better at this and I am not yet."
+
+**In a container that has held real weight**, the offer can name the thing directly.
+
+- "I have been avoiding this conversation."
+- "I think I let you down, and I would like to fix it."
+- "That mattered more to me than I said at the time."
+
+Read down the list and the pattern is not increasing emotion. It is increasing exposure to a specific person's response — which is the variable the container is built to make survivable, and the reason the same sentence is wise in one room and unwise in another.
+
+### Is vulnerability a strength or a weakness?
+
+The question assumes it is a fixed property of the person, and it is a property of the situation. It is a bet on whether the other party will engage or use it. Where the container has held weight, the bet is the highest-return move available, because it is the only one that produces the kind of connection nothing else does. Where it has not, the same act is exposure with no return — which is exactly the case the opening of this page describes, and why "just be more vulnerable" so reliably backfires.
+
+Neither courage nor weakness, then. Calibration.
+
 ## The Offer You Can Make Today
 
 Pick one relationship — a friend, a colleague, a partner — where you've been holding back an honest thought. Not a devastating confession. Something small and true that you've been editing out.
