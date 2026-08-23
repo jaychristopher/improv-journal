@@ -11,7 +11,7 @@ entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontanei
 entry_path: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # The Rules of Improv (And Why Half of Them Are Wrong)
@@ -29,6 +29,18 @@ Neat. Clean. Easy to remember. And about half of it is either misleading or flat
 Here's the problem: these "rules" come from specific schools with specific philosophies, taught as universal truths. They're not. The five major improv traditions — Johnstone, Spolin, Close/Halpern, UCB, and Annoyance/TJ & Dave — agree on some of them, sharply disagree on others, and define the terms differently even when they seem to agree.
 
 Understanding what the rules actually mean — and where they break — is the difference between a beginner who follows instructions and an improviser who understands principles.
+
+## Whose Rules These Actually Are
+
+Worth settling first, because "the rules of improv" is not one list and the version you have met depends entirely on where you met it.
+
+**If you have read a business book, you have Tina Fey's four.** *Bossypants* (2011) gives them as agree; say yes *and*; make statements rather than asking questions; and there are no mistakes, only opportunities. That passage is the single most quoted account of improv rules anywhere, and it is where most people outside the form get them from. It is also a memoir's summary of her Second City training rather than a curriculum — which is why it is tidier than anything actually taught in a class.
+
+**If you have taken a class in Chicago or anywhere downstream of it, you have Del Close's.** Codified by Halpern, Close and Johnson in `ref-truth-in-comedy` (1994), and considerably less rule-shaped: agreement is treated as a starting condition rather than a commandment, and most of the book is about finding the game rather than obeying anything.
+
+**If you trained with Keith Johnstone, you have almost no rules at all.** `ref-impro-johnstone` frames the same territory as status, spontaneity and the things schooling trains out of people. Johnstone's interest was in removing obstacles rather than issuing instructions, and he is openly suspicious of the impulse to make lists.
+
+So the five below are the popular composite — the version that circulates, mostly descended from Fey's summary of Close. That is not a criticism of any of them. It is the reason they contradict each other in places: they are answers to different questions, compressed into one list by people who were not in the room for either.
 
 ## Rule 1: "Say Yes, And"
 
