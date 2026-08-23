@@ -71,6 +71,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "this-or-that-questions",
       "most-likely-to-questions",
       "21-questions-game",
+      "party-games",
       "questions-to-get-to-know-someone",
       "conversation-starters",
       "funny-questions-to-ask",
