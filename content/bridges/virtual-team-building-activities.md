@@ -45,6 +45,22 @@ Four things go with it, and knowing which four is most of the job.
 
 And one thing video *adds*: everybody is watching themselves. That is `internal-computation` — attention spent on monitoring your own output rather than on the other person — and it is precisely the thing that kills presence in a scene.
 
+## Why It Always Feels Cheesy
+
+Look at what everyone selling these promises: not lame, non-cheesy, doesn't suck, actually fun. Nobody advertises a list of in-person activities that way. The promise tells you what people brace for, and the bracing is earned.
+
+It is worth being precise about the cause, because it has nothing to do with taste and everything to do with the shape of a video call. The same activity that lands in a room curdles on a call for three reasons, none of which is the activity.
+
+**There is no periphery.** A room has edges. You can be present at the back, half-listening, laughing at the right moments and contributing nothing, and that is a legitimate and comfortable way to attend something. A grid of faces has no back. Everyone is front row and on stage at once, permanently, for the whole thing.
+
+**Declining is visible.** In a room, opting out looks like standing near the drinks. On a call it looks like a black square, or a face that is not doing the thing everyone else is doing, in a window with your name under it. What in person is a shrug becomes, on video, a statement.
+
+**Attention has nowhere to go except faces.** Most in-person activities work by putting a shared object in the middle of the room — a whiteboard, a prop, a problem — so people look at the thing rather than at each other. Video removes the middle. Everybody watches everybody, everybody knows it, and the self-consciousness that produces is precisely what stops anyone playing.
+
+Put together, that is a description of being watched while asked to be spontaneous, with no way to step back. It is not surprising that it feels awful, and no amount of choosing a better game fixes any of it.
+
+**What does fix it:** pick things where attention lands on a task rather than on the grid, where a short answer is a complete answer, and where somebody who does not want to join can decline without it being an event. Every activity below is chosen against those three tests, which is also why none of them requires a hat.
+
 ## The Five Rules That Follow
 
 1. **Short.** Five to ten minutes. A twenty-minute activity on video costs more attention than the same twenty minutes in a room, because `cognitive-bandwidth` is already going on the interface.
