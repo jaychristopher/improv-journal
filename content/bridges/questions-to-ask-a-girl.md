@@ -165,6 +165,28 @@ If a thread is going well, the aim is not to keep it going indefinitely. It is t
 
 **Anything about exes, body, or money, early.** These are not mysterious. They cost something to answer and nothing has been built yet that would make paying it reasonable.
 
+## When She Asks You Something
+
+Every list under this heading covers the asking and stops. That is the wrong half. Anybody can ask a good question off a page — **how you answer is the only part that cannot be borrowed**, and it is what is actually being assessed.
+
+The rule above says answer everything you ask, at the same depth. Here is what that means when it is your turn.
+
+**Answer the question she asked, not the adjacent one you would rather discuss.** The commonest failure is hearing a question as a prompt to perform. She asked where you grew up; the answer is where you grew up, not a thesis about how it shaped you.
+
+**Match her length.** Answering at three times the length of her question is its own kind of pressure and reads as having been waiting for the chance. If she gave you a sentence, give her two, not nine.
+
+**Be specific rather than summary.** The same rule that governs good questions governs good answers. "I like travelling" is a category and there is nothing to do with it. "I went for four days and got stuck for eleven" is a thing she can pick up. An answer is an offer too — judge it by what she can build on.
+
+**Include one thing you did not have to include.** This is the whole mechanism in a single move. The small unrequested detail — the reason, the embarrassing part, what you actually thought — is what makes an answer sound like a person rather than a form. It is also the escalation: you have gone slightly further than required, and she can match it or not, at no cost either way.
+
+**Do not bounce it straight back.** "Ha, what about you?" before answering is declining the offer, however friendly it sounds. Answer first. Then ask.
+
+**Skip the modesty and the opposite.** Undercutting an answer and inflating one are the same move — both are about how you will be read rather than what is true, and both are legible.
+
+**If you have no answer, say that, and say why.** "I have genuinely never thought about it" is a real answer. Manufacturing something to fill the gap is the moment an exchange turns into an audition, and it is usually obvious.
+
+The test for all of it is the one that runs through this page: could she build on what you just said? If the answer stops dead, it does not matter how good your next question is.
+
 ## How to Ask Them
 
 **Answer first sometimes.** Not always — that becomes a monologue — but often enough that it is visibly an exchange.
