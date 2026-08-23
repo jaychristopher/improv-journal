@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
+import { UpdatedOn } from "@/components/UpdatedOn";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
 import type { ExternalLink } from "@/lib/schema";
 import {
@@ -114,6 +115,7 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
 
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>
+        <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
         {extLinks.length > 0 && (
           <div className="mt-4 flex gap-3">
             {extLinks.map((el) => (

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { UpdatedOn } from "@/components/UpdatedOn";
 import { getAtomBySlug, getAtomUrl, getSourceBySlug, loadSources } from "@/lib/content";
 import type { AtomType } from "@/lib/schema";
 import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
@@ -69,6 +70,7 @@ export default async function SourcePage({ params }: { params: Promise<{ slug: s
           source · {fm.type}
         </span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
+        <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
         <div className="mt-3 flex flex-wrap gap-2">
           {fm.tags?.map((tag) => (
             <span
