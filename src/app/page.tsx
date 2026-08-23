@@ -43,7 +43,11 @@ export default async function Home() {
     loadPaths(),
     loadThreads(),
     loadBridges(),
-    getTopGuides(8),
+    // Was hardcoded to 8, which predated raising the shared default to 14 and
+    // left seven open guides — about 172,000 of traffic potential between them
+    // — with no body link from the strongest page on the site. Takes the
+    // default now, so the two stay in step.
+    getTopGuides(),
   ]);
   const beginnerRecommendation = getRecommendedPath("beginner");
   const pathById = new Map(paths.map((path) => [path.frontmatter.id, path]));

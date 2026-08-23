@@ -76,21 +76,25 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
 }
 
 /**
- * The default was 8, and that number was doing real damage.
+ * Promoted guides are chosen by reach, not by a count.
  *
- * Measured across the built output: the eight guides inside the cut receive
- * 327 inbound internal links each — one from every page on the site — while
- * the six immediately outside it receive between 10 and 17. Those six hold
- * about 172,000 of combined traffic potential, all with checked-open results.
- * questions-to-ask-friends at 41,000 was getting twelve links; party-games at
- * 30,000 was getting eleven.
+ * This was 8, and the eight inside the cut were getting 327 inbound internal
+ * links each — one from every page — while the six immediately outside got
+ * between 10 and 17, holding about 172,000 of traffic potential between them.
+ * Raising it to 14 fixed that, and then broke again the moment another guide
+ * was published: a fixed count silently evicts whichever page now ranks last,
+ * which is exactly the fault it was meant to cure.
  *
- * 14 is not arbitrary. Ranked by reach, the winnable guides fall off a cliff
- * after the fourteenth — 16,000 down to 5,800 — so this promotes everything
- * above the break and nothing below it. The list still shrinks on its own if
- * a verdict turns to authority, because the filters below run first.
+ * So the cut is a floor instead. Ranked by reach the winnable guides drop off
+ * sharply — 16,000 to 5,800 — and 10,000 sits inside that gap, so everything
+ * above the break is promoted and nothing below it. A guide published tomorrow
+ * joins on its own merits and evicts nobody. MAX_PROMOTED is only a backstop
+ * against the list growing unreasonably long.
  */
-export async function getTopGuides(limit = 14): Promise<TopGuide[]> {
+const PROMOTION_FLOOR = 10_000;
+const MAX_PROMOTED = 24;
+
+export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
   return (
@@ -107,7 +111,7 @@ export async function getTopGuides(limit = 14): Promise<TopGuide[]> {
           verdict: bridge.frontmatter.serp_verdict,
         };
       })
-      .filter((guide) => guide.reach > 0)
+      .filter((guide) => guide.reach >= PROMOTION_FLOOR)
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.verdict !== "authority")
       // A checked-open guide beats the difficulty proxy. "How to stop
