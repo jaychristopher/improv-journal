@@ -11,7 +11,7 @@ entry_atoms: [blocking, commitment, be-honest, status, performing-cleverness, ye
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Stop People Pleasing: What Improv Teaches About Authentic Response
@@ -37,6 +37,25 @@ People pleasing isn't a personality flaw. It's a **status strategy** — a highl
 Low-status behavior — agreeing, deferring, accommodating, making yourself smaller — reduces social threat. When you please, the other person feels good, which means they're less likely to reject you, criticize you, or create conflict. Your threat system logs this as a win. *See? Being agreeable kept you safe.*
 
 The problem: safety and connection are not the same thing. People pleasing keeps you safe by making you invisible. Relationships built on accommodation are stable but hollow — the other person is relating to your performance, not to you. And the accumulated cost of suppressing your real responses is resentment, exhaustion, and the feeling of being unknown even by the people closest to you.
+
+## How to Tell You Are Doing It
+
+The first step below is to notice the suppression, and the difficulty is that a blocked impulse leaves no memory of itself. You do not recall the "no" you did not say. What you get instead are downstream symptoms, and those are noticeable if you know their shape.
+
+- **The yes arrives before the thought.** You have agreed before you have checked whether you can, and the checking happens afterwards, usually at night.
+- **You rehearse the decline and deliver the acceptance.** The honest version was fully drafted. It just never made it out.
+- **Resentment with no particular target.** Not anger at a person, which would be information — a low background irritation that attaches to whoever is nearest.
+- **You can name what everyone in the room wants except yourself.** Ask what you would choose and the honest answer is that you have not run the query.
+- **Disagreement seems to require an apology attached to it.** The position and the softening arrive as one unit, and the softening usually gets there first.
+- **Small decisions cost more than they should.** Choosing a restaurant is expensive because you are not solving for what you want, you are solving for four other people's preferences with incomplete data.
+
+The one that is hardest to see from inside is the last. Bandwidth spent modelling other people is bandwidth, and people who do it constantly report the tiredness without connecting it to the cause.
+
+### Is this the same as being kind?
+
+It is the question most people arrive with, and the answer is that they run in opposite directions. Kindness gives somebody something. Accommodation takes something away — your actual position — and leaves them navigating a version of you that is not there.
+
+That matters practically rather than morally. A colleague who thinks you are fine with a deadline plans around a fact that is not true. A friend who believes you wanted the same restaurant learns nothing about you and cannot reciprocate. The accommodation feels generous from the inside and functions as withheld information from the outside, which is why it so often produces the outcome it was trying to avoid: people are more careful around somebody whose real reaction they cannot locate, not less.
 
 ## The Improv Antidote: Honest Response
 
