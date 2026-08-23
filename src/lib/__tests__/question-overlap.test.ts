@@ -44,7 +44,12 @@ const STOP = new Set(
     "a an the is are was were be been do does did you your yours my me i we our of to in on for " +
     "that this it its as at by with about from something someone some any what which who whom " +
     "whose how why when where would could should will can have has had if then than so and or " +
-    "but not no more most one thing things ever never"
+    // everyone/everybody and their kin belong here for the same reason "you"
+    // does: swapping one for another leaves the question unchanged. Without
+    // them, "What is everyone's most irrational fear?" against "What is your
+    // most irrational fear?" scored 0.67 and cleared a 0.70 threshold on a
+    // pronoun.
+    "but not no more most one thing things ever never everyone everybody anyone anybody nobody"
   ).split(" "),
 );
 
@@ -66,6 +71,26 @@ function overlap(a: Set<string>, b: Set<string>): number {
 }
 
 /**
+ * The whole question, contractions expanded and punctuation dropped.
+ *
+ * The word-overlap measure below only runs on questions with two or more
+ * content words, which quietly excused the shortest ones from being checked at
+ * all. "What would surprise me about you?" reduces to a single content word —
+ * surprise — so two byte-identical copies of it, on 21-questions-game and on
+ * questions-to-ask-a-girl, were never compared with each other. Short questions
+ * are common in these lists and identical ones are the worst case, so they get
+ * a comparison that does not care how many content words survive.
+ */
+function wholeQuestion(question: string): string {
+  let text = question.toLowerCase();
+  for (const [pattern, expansion] of CONTRACTIONS) text = text.replace(pattern, expansion);
+  return text
+    .replace(/[^a-z ]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
  * Pairs the measure cannot tell apart but a reader can. Each is a genuinely
  * different question that happens to survive stopword removal looking similar.
  */
@@ -76,6 +101,9 @@ const ALLOWED = [
   ["changed your mind about in this industry", "changed your mind about"],
   // Being undecided about something, against returning to it.
   ["keep going back and forth on", "keep going back to"],
+  // How you are connected to the room, against who you have not been
+  // introduced to. Both reduce to "know" plus "here" once stopwords go.
+  ["how do you know everyone here", "who here should i know"],
 ];
 
 function isAllowed(a: string, b: string): boolean {
@@ -103,8 +131,7 @@ describe("question lists", () => {
           /^\s*(?:[-*]|\d+\.)\s+(.*\?)\s*$/.exec(trimmed);
         if (!match) continue;
         const question = match[1].replace(/\*\*(.+?)\*\*/g, "$1").trim();
-        const words = contentWords(question);
-        if (words.size >= 2) questions.push({ slug: bridge.slug, question, words });
+        questions.push({ slug: bridge.slug, question, words: contentWords(question) });
       }
     }
 
@@ -117,7 +144,12 @@ describe("question lists", () => {
       for (let j = i + 1; j < questions.length; j += 1) {
         const a = questions[i];
         const b = questions[j];
-        if (overlap(a.words, b.words) < THRESHOLD) continue;
+        // Identical wording always counts. The word-overlap measure is only
+        // meaningful once there are two content words to compare, and skipping
+        // the rest is what let a byte-identical pair through.
+        const identical = wholeQuestion(a.question) === wholeQuestion(b.question);
+        const comparable = a.words.size >= 2 && b.words.size >= 2;
+        if (!identical && (!comparable || overlap(a.words, b.words) < THRESHOLD)) continue;
         if (isAllowed(a.question, b.question)) continue;
         collisions.push(
           a.slug === b.slug

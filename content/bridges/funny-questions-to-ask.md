@@ -17,7 +17,7 @@ primary_cta_target: yes-and-chain
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Funny Questions to Ask: 100 That Make the Answer Funny
@@ -144,8 +144,8 @@ These open a pattern rather than closing with a punchline. `game-of-the-scene` i
 - What is the worst thing anyone here has eaten on purpose?
 - What is everyone's most embarrassing musical phase?
 - What is a small thing that would ruin anyone's day?
-- What is the worst present anyone here has received?
-- What is everyone's least defensible opinion?
+- What is the strangest thing you have ever been given?
+- What is a hill you would die on that nobody else has noticed?
 - Who here has the strangest family tradition?
 - What is the worst haircut in this room, historically?
 - What is a thing everyone here pretends to understand?

@@ -187,7 +187,7 @@ By this point the estimate has moved. These probe values without asking for a su
 - What is something you keep going back to?
 - What is the best thing you have been part of?
 - What do you hope is still true about you in twenty years?
-- What do you think you are for?
+- What do you think you are unusually well suited to?
 - What is a piece of advice you would give that you have not taken?
 - What do you notice that other people do not?
 - What would you fix first if you could fix one thing?
@@ -232,7 +232,7 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What is everyone's position on the food at these things?
 - What has somebody here done that nobody would expect?
 - Who here has moved house the most times?
-- What did everyone nearly wear instead?
+- What is the oldest thing you are wearing?
 - Who here is the most and least organised, and how do you know?
 
 ## What Makes an Icebreaker Question Work

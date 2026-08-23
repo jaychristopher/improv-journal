@@ -22,7 +22,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Questions to Ask Friends: 152 That Go Somewhere
@@ -133,7 +133,7 @@ Do not open with these. They work once the room is warm and you have already ans
 - What do people assume about you that is nearly right?
 - What do people thank you for that costs you nothing?
 - What have you stopped being hard on yourself about?
-- What's something you haven't?
+- What is a half-finished thing you would rather nobody asked about?
 - Whose opinion of your work do you actually want?
 - What question have you been putting off asking someone?
 - What would you want me to say if someone asked what you're like?
@@ -146,7 +146,7 @@ Do not open with these. They work once the room is warm and you have already ans
 - What's something you've never told anyone because it's too small to mention?
 - What is something you would put right if it cost you nothing?
 - What have you stopped mentioning because people stopped asking?
-- What's the loneliest you've been?
+- When did you last feel genuinely out of place?
 - What would you need in order to feel less like that?
 
 ## Questions for a Long Drive or a Late Night
@@ -185,7 +185,7 @@ The problem here is not the question. It is that both people know the gap exists
 - Do you still see the people we used to see?
 - What made you think of me?
 - Has anything happened that I'd be sad to have missed?
-- Are we okay?
+- Is there anything between us that has gone unsaid?
 - What would make this easier to keep up?
 - Is there a version of this where we talk more?
 - What did you think when I got in touch?

@@ -130,7 +130,7 @@ Slower, and best when there is time afterwards. Each of these asks for something
 - What is a version of your life you sometimes think about?
 - What do you think I do not understand about your family?
 - What would you want me to do if you were struggling and hiding it?
-- What is the kindest thing anybody has ever done for you?
+- What is the kindest thing you have done that nobody found out about?
 - What do you think we avoid talking about?
 - When did you last change your mind because of something I said?
 - What do you think worries me that I have never named?

@@ -157,7 +157,7 @@ If you are running a show and want better material than "banana," ask for the th
 
 - What did you do on your last day off?
 - What's something you've kept that you should have thrown away?
-- What's the worst job you've had?
+- What is a job you would be spectacularly bad at?
 - Where did you go on holiday as a child?
 - What's a rule your family had?
 - What's something you're avoiding this week?

@@ -143,7 +143,7 @@ Nothing here asks anybody to perform, which is the mistake most funny lists make
 - What is a strong opinion you hold about something trivial?
 - What is the worst haircut you have lived through?
 - What is something everyone likes that you find baffling?
-- What is your most irrational fear?
+- What is a fear you know is ridiculous and have anyway?
 - What is the worst film you have watched to the end?
 - What is a word you cannot say properly?
 - What is the least cool thing you genuinely enjoy?
@@ -169,8 +169,8 @@ Not for a first hour. These work when several exchanges have already gone unpuni
 Warmer, and none of them force a declaration before either person is ready.
 
 - What is the nicest thing anybody has done for you?
-- What are you hopeless at?
-- What would surprise me about you?
+- What is something you gave up on and do not regret?
+- What is a compliment you have never quite believed?
 - What is the best conversation you have had recently?
 - What are you looking for, if you know?
 - What would a good version of the next few months look like?

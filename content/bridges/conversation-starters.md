@@ -175,7 +175,7 @@ The funny ones that actually run are specific and mundane. Comedy comes from the
 - What is the last thing you finished that you were pleased with?
 - Who here should I know that I do not?
 - What part of this place would surprise someone joining?
-- What did you do before this?
+- What was the last thing you did before you walked out the door?
 - What is something the rest of us do not see about your job?
 
 ## Starters for a Group or a Table
@@ -193,7 +193,7 @@ Everyone can answer these in a sentence, which is what stops one person taking t
 - What is a hill somebody would die on?
 - What is everyone's most-used app that is not messaging?
 - What is the best advice anyone here has been given?
-- What is a thing everyone nearly did instead of coming out?
+- What is the last thing everyone cancelled on?
 - What is the strangest place anyone here has lived?
 - What is something you have all changed your mind about?
 - What is the best thing about where everyone lives?

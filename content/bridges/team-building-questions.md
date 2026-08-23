@@ -62,7 +62,7 @@ These questions ask people to share something real but low-risk — an observabl
 - What is something about your role that would surprise a new starter?
 - What did you learn from the last thing that went wrong?
 - What is a small change to how we work that you made and never mentioned?
-- What is the most useful thing anybody here has taught you?
+- What is a skill you picked up from someone on this team?
 
 **Why these work:** They ask for specifics, not generalities. "What are you good at?" invites a performance. "What skill have you gotten better at?" invites a story. The specificity lowers the cost of honesty — you're not asking anyone to characterize themselves.
 

@@ -72,7 +72,7 @@ The problem here is not awkwardness, it is boredom. These assume familiarity and
 - What is a project you are still proud of?
 - What was the hardest week of the last year, and what got you through it?
 - What is something we could do more of?
-- What is a small win from this week?
+- What went better this week than you expected?
 - What is the thing you are most looking forward to finishing?
 - What part of your job would surprise the rest of us?
 - What is something you have got noticeably faster at?
