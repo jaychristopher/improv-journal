@@ -60,9 +60,15 @@ interface AtomDetailProps {
     slug: string;
   };
   breadcrumbs: Crumb[];
+  /**
+   * The label this atom's route puts on its og:image. Held here rather than
+   * derived from TYPE_LABELS, which is a different vocabulary — that renders
+   * "why it's hard" where the route writes "How It Works".
+   */
+  eyebrow?: string;
 }
 
-export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
+export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps) {
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", atom.slug);
   const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
@@ -155,6 +161,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
         url={atomUrl}
         datePublished={fm.created}
         dateModified={fm.updated}
+        eyebrow={eyebrow}
       />
       {/* Context banner for Google-landing users */}
       {primaryThread && primaryPath && (

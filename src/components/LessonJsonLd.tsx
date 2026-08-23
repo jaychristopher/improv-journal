@@ -1,4 +1,4 @@
-import { authorRef, publisherRef, SITE_URL } from "@/lib/seo";
+import { authorRef, ogImages, publisherRef, SITE_URL } from "@/lib/seo";
 
 export interface LessonConcept {
   name: string;
@@ -48,6 +48,9 @@ export function LessonJsonLd({
     "@id": `${SITE_URL}${url}#lesson`,
     headline: title,
     name: title,
+    // Same reasoning as ArticleJsonLd: these 25 are typed Article as well,
+    // and were the other half of the site's Article markup with no image.
+    image: `${SITE_URL}${ogImages(title, "Lesson")[0].url}`,
     description,
     url: `${SITE_URL}${url}`,
     learningResourceType: "Lesson",

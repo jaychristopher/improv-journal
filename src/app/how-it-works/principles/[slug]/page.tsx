@@ -83,6 +83,7 @@ export default async function PrincipleDetailPage({
     <>
       <AtomDetail
         atom={atom}
+        eyebrow="Principle"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "How It Works", href: "/how-it-works" },

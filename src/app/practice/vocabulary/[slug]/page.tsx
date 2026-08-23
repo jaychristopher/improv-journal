@@ -64,6 +64,7 @@ export default async function VocabularyDetailPage({
     <>
       <AtomDetail
         atom={atom}
+        eyebrow="Glossary"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Practice", href: "/practice" },

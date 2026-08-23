@@ -64,6 +64,7 @@ export default async function DiagnosisDetailPage({
   return (
     <AtomDetail
       atom={atom}
+      eyebrow="Diagnosis"
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "How It Works", href: "/how-it-works" },

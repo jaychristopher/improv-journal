@@ -60,6 +60,7 @@ export default async function FormatDetailPage({ params }: { params: Promise<{ s
   return (
     <AtomDetail
       atom={atom}
+      eyebrow="Format"
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "Practice", href: "/practice" },

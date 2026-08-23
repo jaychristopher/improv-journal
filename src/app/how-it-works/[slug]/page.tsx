@@ -64,6 +64,7 @@ export default async function SystemAtomPage({ params }: { params: Promise<{ slu
   return (
     <AtomDetail
       atom={atom}
+      eyebrow="How It Works"
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "How It Works", href: "/how-it-works" },
