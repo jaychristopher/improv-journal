@@ -4,6 +4,7 @@ description: "The only question game where the answer is about somebody else in 
 target_keywords:
   - { keyword: "most likely to questions", volume: 16000, difficulty: 3, traffic_potential: 45000, parent: "most likely to questions" }
   - { keyword: "who is most likely to questions", volume: 5900, difficulty: 2, traffic_potential: 43000, parent: "most likely to questions" }
+  - { keyword: "whos most likely to", volume: 2900, difficulty: 2, traffic_potential: 43000, parent: "most likely to questions" }
 serp_checked: "2026-08-22"
 serp_min_dr: 15
 serp_verdict: winnable

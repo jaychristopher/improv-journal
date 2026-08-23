@@ -4,6 +4,8 @@ description: "The number is the mechanism. A fixed count removes the polite exit
 target_keywords:
   - { keyword: "21 questions game", volume: 10000, difficulty: 8, traffic_potential: 44000, parent: "21 questions" }
   - { keyword: "20 questions game", volume: 12000, difficulty: 14, traffic_potential: 44000, parent: "21 questions" }
+  - { keyword: "good 21 questions", volume: 150, difficulty: 6, traffic_potential: 43000, parent: "21 questions" }
+  - { keyword: "21 questions list", volume: 100, difficulty: 6, traffic_potential: 43000, parent: "21 questions" }
 serp_checked: "2026-08-22"
 serp_min_dr: 2
 serp_verdict: winnable

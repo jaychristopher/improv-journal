@@ -5,6 +5,7 @@ target_keywords:
   - { keyword: "36 questions to fall in love", volume: 16000, difficulty: 51, traffic_potential: 28000, parent: "36 questions to fall in love" }
   - { keyword: "questions to fall in love", volume: 4700, difficulty: 19, traffic_potential: 28000, parent: "36 questions to fall in love" }
   - { keyword: "the 36 questions", volume: 200, difficulty: 44, traffic_potential: 29000, parent: "36 questions to fall in love" }
+  - { keyword: "questions that make you fall in love", volume: 150, difficulty: 13, traffic_potential: 26000, parent: "36 questions to fall in love" }
 serp_checked: "2026-08-22"
 serp_min_dr: 18
 serp_verdict: winnable
@@ -16,7 +17,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # 36 Questions to Fall in Love: The List and the Mechanism

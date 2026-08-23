@@ -4,6 +4,8 @@ description: "Most party game lists are shopping lists. These need no equipment,
 target_keywords:
   - { keyword: "party games", volume: 20000, difficulty: 1, traffic_potential: 30000, parent: "party games" }
   - { keyword: "games to play at a party", volume: 700, difficulty: 9, traffic_potential: 30000, parent: "party games" }
+  - { keyword: "fun party games", volume: 4900, difficulty: 39, traffic_potential: 29000, parent: "party games" }
+  - { keyword: "party game ideas", volume: 600, difficulty: 11, traffic_potential: 32000, parent: "party games" }
 serp_checked: "2026-08-22"
 serp_min_dr: 15
 serp_verdict: winnable
@@ -15,7 +17,7 @@ primary_cta_target: one-word-story
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Party Games: 40 That Need Nothing but People
@@ -35,6 +37,23 @@ Four tests, and almost every failure is a failure of one of them.
 **It survives being joined late.** Parties are not synchronised. People arrive, drift to the kitchen, come back. A game that requires everyone to have heard the setup is a game that dies the first time somebody gets a drink.
 
 **It can be stopped without ceremony.** If ending it requires a winner or a conclusion, it will overstay. The good ones just stop, and nobody notices they have.
+
+## The Ten That Always Work
+
+If you want ten and nothing else, take these. Each is described properly below; this is the shortlist for somebody standing in a kitchen with fifteen minutes to fill and no plan.
+
+1. **Would You Rather** — two options, both costing something. The defending is the game.
+2. **This or That** — the same shape with the stakes removed. The one to use when the room is still cold.
+3. **Most Likely To** — everybody points on three. Warmest of the lot when the labels are kind.
+4. **Stand Up If** — no turns at all, so a group of thirty can play it. Fastest way to change a room.
+5. **Two Truths and a Lie** — everybody reveals two true things while apparently just guessing.
+6. **Categories** — name a category, go round, no repeats. The category is where the fun is.
+7. **The Phone Game** — everybody reveals the same thing at once. High risk, high reward.
+8. **Group Rock Paper Scissors** — losers become supporters. Ends in forty people shouting. Four minutes.
+9. **Wink Murder** — needs nothing, runs itself, and works while people are still arriving.
+10. **Best and Worst** — for the last six people at midnight, when the loud games are over.
+
+The two you will actually reach for most are numbers 1 and 4, for opposite reasons: one gets a warm room arguing, the other gets a cold room speaking without anybody having to take a turn.
 
 ## Games That Need Nothing at All
 
