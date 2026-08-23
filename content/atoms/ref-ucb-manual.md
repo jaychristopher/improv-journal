@@ -27,7 +27,7 @@ work:
   published: "2013"
   isbn: "0989387801"
 created: "2026-04-05"
-updated: "2026-08-21"
+updated: "2026-08-23"
 ---
 
 **Matt Besser, Ian Roberts, Matt Walsh. *Upright Citizens Brigade Comedy Improvisation Manual.* Comedy Council of Nicea, 2013.**
@@ -46,3 +46,5 @@ The codification of UCB's game-based approach to improv. Formalizes concepts tha
 - **Editing** — sweep edits, tag-outs, structural scene transitions
 
 **The UCB debate:** Will Hines (longtime UCB teacher) has evolved past some of the Manual's rigidity, arguing that "game" should be felt organically rather than analytically identified. The Manual represents the formalized teaching version; the best UCB performers often transcend its framework while retaining its vocabulary.
+
+The school itself, and what it decided not to inherit from the traditions before it, is profiled under [UCB](/traditions/ucb).

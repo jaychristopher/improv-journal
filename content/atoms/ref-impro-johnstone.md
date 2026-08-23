@@ -22,7 +22,7 @@ work:
   published: "1979"
   isbn: "0878301178"
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Keith Johnstone. *Impro: Improvisation and the Theatre.* Faber & Faber, 1979.**
@@ -37,3 +37,5 @@ The foundational text of modern improv pedagogy. Introduces the offer/accept/blo
 - Overaccepting — a distinct move beyond simple acceptance
 - The cult of the obvious — "The more obvious an improviser is, the more original he appears"
 - Spontaneity as a skill to be recovered, not learned
+
+The school this book founded — Theatresports, Loose Moose, and the status work running underneath all of it — is profiled under [Johnstone](/traditions/johnstone).

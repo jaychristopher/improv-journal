@@ -23,7 +23,7 @@ work:
   published: "2015"
   isbn: "0977309347"
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **TJ Jagodowski & Dave Pasquesi. *Improvisation at the Speed of Life.* Solo Roma, 2015.**
@@ -39,3 +39,5 @@ The philosophy and practice of the most celebrated two-person improv partnership
 - Moving "the weight from the words to the emotions" — bandwidth reallocation from verbal to felt
 
 **Also relevant:** Stephen Colbert on TJ & Dave: *"One of these guys is the best improviser in the world. And the other one is better."*
+
+Where a two-person practice this uncompromising fits among the five schools is set out in the [Annoyance](/traditions/annoyance) profile.

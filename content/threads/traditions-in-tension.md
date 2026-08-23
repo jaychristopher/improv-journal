@@ -11,11 +11,11 @@ updated: "2026-08-23"
 There is no single "improv." There are at least five major traditions, each with distinct philosophies, and they disagree on fundamental questions. Understanding where they diverge — and why — is what separates shallow citation from real knowledge of the art form.
 
 **The five traditions:**
-- **Johnstone** (Theatresports, Loose Moose) — Story-first. Status as the engine. Spontaneity through surrender.
-- **Spolin** (Theater Games, Second City lineage) — Present-moment awareness. The body as primary instrument. Point of Concentration.
-- **Close/Halpern** (iO, the Harold) — Group mind. Connections across scenes. Improv as spiritual practice.
-- **UCB** (Upright Citizens Brigade) — Game-first. Pattern recognition and heightening. Comedy as the goal.
-- **Annoyance/TJ & Dave** — Commitment-first. Honest behavior. Trust the relationship; game emerges or it doesn't.
+- **[Johnstone](/traditions/johnstone)** (Theatresports, Loose Moose) — Story-first. Status as the engine. Spontaneity through surrender.
+- **[Spolin](/traditions/spolin)** (Theater Games, Second City lineage) — Present-moment awareness. The body as primary instrument. Point of Concentration.
+- **[Close/Halpern](/traditions/close)** (iO, the Harold) — Group mind. Connections across scenes. Improv as spiritual practice.
+- **[UCB](/traditions/ucb)** (Upright Citizens Brigade) — Game-first. Pattern recognition and heightening. Comedy as the goal.
+- **[Annoyance/TJ & Dave](/traditions/annoyance)** — Commitment-first. Honest behavior. Trust the relationship; game emerges or it doesn't.
 
 **Where they disagree:**
 

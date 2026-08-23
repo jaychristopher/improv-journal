@@ -21,7 +21,7 @@ work:
   published: "2004"
   isbn: "032500630X"
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Mick Napier. *Improvise: Scene from the Inside Out.* Heinemann, 2004.**
@@ -34,3 +34,5 @@ A practitioner's guide that deliberately challenges conventional improv rules. N
 - "Enter with a deal" — arrive on stage already in motion, not neutral
 - Critique of traditional improv rules as bandwidth-consuming overhead
 - The distinction between supporting your partner through *clear choices* vs. through *deference*: "If you want to support your partner in an improv scene, give them the gift of your choice"
+
+The lineage this argument belongs to is profiled under the [Annoyance](/traditions/annoyance), which is where commitment-first thinking is treated as a school rather than a preference.

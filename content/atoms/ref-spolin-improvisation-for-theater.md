@@ -24,7 +24,7 @@ work:
   published: "1963"
   isbn: "081014008X"
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Viola Spolin. *Improvisation for the Theater.* Northwestern University Press, 1963.**
@@ -38,3 +38,5 @@ The foundational text of improvisational theater pedagogy. Introduces theater ga
 - Space work and environment as grounding mechanisms — physical engagement forces presence
 - Side-coaching — real-time guidance that keeps performers connected to partner and environment
 - Evaluation as structurally retrospective — assessment happens after the game, by the group, about the problem
+
+The tradition that grew out of this book, and the point at which it parts company with the Chicago schools that inherited it, is profiled under [Spolin](/traditions/spolin).

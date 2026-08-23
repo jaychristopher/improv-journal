@@ -23,7 +23,7 @@ work:
   published: "1999"
   isbn: "0571190995"
 created: "2026-04-05"
-updated: "2026-08-21"
+updated: "2026-08-23"
 ---
 
 **Keith Johnstone. *Impro for Storytellers.* Faber & Faber, 1999.**
@@ -36,3 +36,5 @@ The sequel/companion to *Impro* (1979), focused on practical application and The
 - **Narrative structure** — "reincorporate like mad"; the improviser as someone "walking backwards" who shapes story by remembering what's been shelved
 - **Theatresports** — the format where audience scoring shapes the show, making the feedback loop explicit
 - **"Fast-Food Stanislavsky Lists"** (appendix) — Johnstone's acknowledgment that Stanislavski is useful shorthand while fundamentally disagreeing with objective-driven character work
+
+Where the later book sits in the wider [Johnstone](/traditions/johnstone) lineage, and what separates that lineage from the four others, is set out in the tradition profiles.

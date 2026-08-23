@@ -11,7 +11,7 @@ entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction
 entry_path: reference-guide
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Improv Theory: The Five Traditions That Shaped Modern Improvisation
@@ -19,6 +19,8 @@ updated: "2026-08-22"
 Most improv classes teach you a handful of rules — say "yes, and," don't ask questions, make your partner look good — and present them as universal truth. They're not. They're one tradition's principles, taught as though they're the only game in town.
 
 In reality, modern improvisation was built by at least five distinct lineages, each with different assumptions about what improv is, what it's for, and how to teach it. They agree on more than they'd admit. They disagree on things that matter. And their disagreements are where the most interesting ideas live.
+
+Each lineage also has a short profile of its own, if you want one school rather than the argument between them: [Johnstone](/traditions/johnstone), [Spolin](/traditions/spolin), [Close and Halpern](/traditions/close), [UCB](/traditions/ucb), and the [Annoyance](/traditions/annoyance).
 
 ## The Five Lineages
 

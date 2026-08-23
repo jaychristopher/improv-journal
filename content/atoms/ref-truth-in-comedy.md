@@ -23,7 +23,7 @@ work:
   published: "1994"
   isbn: "1566080037"
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Charna Halpern, Del Close, Kim "Howard" Johnson. *Truth in Comedy: The Manual of Improvisation.* Meriwether Publishing, 1994.**
@@ -38,3 +38,5 @@ The manual of the Harold form and the philosophical backbone of Chicago-school l
 - "Treat others as if they are poets, geniuses and artists, and they will be" — the support ethic
 - Support and trust as inseparable — Ch. 3 establishes this as foundational
 - Agreement "to the Nth degree" — yes-and as the mechanism of trust
+
+The lineage this book speaks for is profiled under [Close and Halpern](/traditions/close), alongside the four schools it disagrees with.
