@@ -39,7 +39,7 @@ The terms get used interchangeably, and the overlap is real, but the emphasis di
 
 **Theatre games are training instruments.** The goal is a skill — attention, physical awareness, ensemble responsiveness. Whether anyone laughs is beside the point, and chasing laughs usually breaks the exercise. Spolin's lineage treats performance as what happens after the skill exists.
 
-**Improv games are performance structures.** Freeze Tag, Scenes from a Hat and Theatresports have rules designed to generate entertainment in front of an audience. They descend more from the Close and Johnstone lines than from Spolin.
+**Improv games are performance structures.** Freeze Tag, Scenes from a Hat and Theatresports have rules designed to generate entertainment in front of an audience. They descend more from the Close and Johnstone lines than from Spolin. The [improv games](/improv-games) collection has those and the rest, each with its rules and what it trains.
 
 The practical consequence: if you run a theatre game and the room starts performing for each other, the exercise has stopped working. That is not a discipline problem. It is a sign the point of concentration has been lost.
 
@@ -128,6 +128,8 @@ Usually later in a group's development, and worth not rushing.
 **Side-coach; don't stop the game.** Spolin's signature technique is `side-coaching` — calling short instructions from outside while play continues. "Follow the follower." "Slow it down." "Use the whole space." Stopping to explain breaks the state the game exists to create. See `side-coaching` for how to do it without taking over.
 
 **Give one instruction, not three.** If a game needs a paragraph of setup, the point of concentration is not clear enough yet.
+
+**Have the starting points ready before the session.** Choosing a suggestion in front of a waiting group is where sessions stall, and it is the moment a teacher reaches for something zany. [Improv prompts](/improv-prompts) has sets chosen for classrooms, including which ones are unsafe in a school room and why.
 
 **Let it be boring sometimes.** A mirroring exercise that produces nothing entertaining but genuine attention has succeeded. Judge the game by whether people were actually present, not by whether the room laughed.
 

@@ -91,6 +91,8 @@ It is a fitting coda for a teacher whose subject was the difference between an a
 
 For the form itself, start with `harold`. For the two ideas that outlived the form, `group-mind` and `connections`.
 
+If you arrived here without much improv background, [what is improv](/what-is-improv) covers the form and where Close sits in its history. [The rules of improv](/rules-of-improv) sets out the principles most commonly attributed to this lineage and which of them survive examination — including [yes and](/yes-and-improv), the phrase *Truth in Comedy* put into general circulation and which has been mangled ever since. The games and drills that came out of the lineage are collected in [improv games](/improv-games).
+
 ---
 
 *This guide draws on the improv knowledge graph at [The Physics of Connection](/). For how the Chicago lineage fits together, see the [Traditions](/traditions) overview.*

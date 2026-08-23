@@ -48,6 +48,8 @@ Each has a different fix. Attention problems are solved with listening exercises
 
 Once you've identified the breakdown, practice the component skill in isolation. This is how athletes train — a basketball player who misses free throws doesn't play more games; they shoot free throws.
 
+The drills below are the common ones. If your breakdown is not on this list, the [improv games](/improv-games) collection is filterable by what each one trains, which is the useful way to pick rather than by what sounds fun.
+
 ### For listening problems:
 
 **Last Word Response:** In every scene for a week, make the first word of your line the last word of your partner's line. This is a focusing device that forces you to hear the end of their sentence. Most improvisers are composing their response by the second word of their partner's line.

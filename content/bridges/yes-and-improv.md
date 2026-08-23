@@ -97,7 +97,7 @@ None of these argue against the idea. They mark where the analogy runs out, whic
 
 Two things worth doing outside a class. **Run one meeting where your first response to any proposal has to name something usable in it** before you say anything else; you will find out quickly how much of your normal contribution was redirection. And **watch one conversation you are not in**, tracking only whether offers come back. It is the fastest way to stop mistaking politeness for building.
 
-For the skill under the phrase, `accepting-the-offer` is what is actually being trained, and `yes-and` covers the term's own history and cultural life. For the four other principles this one usually arrives bundled with, [the rules of improv](/rules-of-improv) covers which survive examination.
+For the skill under the phrase, `accepting-the-offer` is what is actually being trained, and `yes-and` covers the term's own history and cultural life. For the four other principles this one usually arrives bundled with, [the rules of improv](/rules-of-improv) covers which survive examination. The drill above and the rest of the standard set are in [improv games](/improv-games), listed by what each one trains.
 
 ---
 

@@ -118,7 +118,7 @@ A first class is less exposing than people expect, because the format is built t
 
 **You do not need to be funny or extroverted.** This is the most common reason people give for not trying it and the least accurate. The trained skills are listening, accepting what you are given and committing to it — quiet people are frequently better at all three. Comic timing is downstream of those, not a prerequisite for them.
 
-**If you would rather not start with a class.** [Theatre games](/theatre-games) and the [improv games](/improv-games) collection can be run with friends in a living room, and most of the foundational exercises need nothing but people and floor space. [How to get better at improv](/how-to-get-better-at-improv) covers practice once you have started, and [the rules of improv](/rules-of-improv) covers the principles you will hear quoted in every class — including which of them are worth ignoring.
+**If you would rather not start with a class.** [Theatre games](/theatre-games) and the [improv games](/improv-games) collection can be run with friends in a living room, and most of the foundational exercises need nothing but people and floor space. [Improv prompts](/improv-prompts) supplies the starting points, which is the part a living-room group runs out of first. [How to get better at improv](/how-to-get-better-at-improv) covers practice once you have started, and [the rules of improv](/rules-of-improv) covers the principles you will hear quoted in every class — including which of them are worth ignoring.
 
 ## The Thing Worth Knowing
 
