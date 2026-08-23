@@ -67,6 +67,46 @@ Low cost, specific, and answerable without effort. Nobody has to be interesting.
 - What is something small that has made your week better?
 - What are you like in the mornings?
 
+## Questions About How She Actually Spends Her Time
+
+The highest-yield category and the one most lists skip, because it sounds mundane. It is not: how somebody spends an ordinary Tuesday tells you more than any question about their dreams, and it costs them nothing to answer.
+
+- What takes up more of your week than you would like?
+- What is the last thing you spent a whole weekend on?
+- What do you do that you would still do if nobody ever knew about it?
+- What have you got half-finished at the moment?
+- What is on in the background when you are working?
+- Where do you go when you want to not be at home?
+- What is the bit of your day you actually look forward to?
+- What did you do last Sunday?
+- What do you spend money on that you would defend to anybody?
+- What is the last thing you taught yourself how to do?
+- What do you do on the days you cannot be bothered?
+- What is the most used thing you own?
+- What is the last thing you got properly absorbed in?
+- What is the latest you have been awake this month?
+- What is your journey to work like?
+
+## On a First Date, When Neither of You Has Anything to Go On
+
+The specific problem here is that you have no shared history to draw on, so every question has to carry its own context. These do.
+
+- How did you end up in this city?
+- What did you think this was going to be like?
+- Who makes you laugh that nobody else finds funny?
+- What do people get wrong about you at first?
+- What was the rest of your day before you got here?
+- Who did you tell you were coming out tonight?
+- What do you do when you arrive somewhere early?
+- What would you be doing this evening otherwise?
+- What did you used to be certain about?
+- What is the last photo on your phone?
+- How long did it take you to get out of the house?
+- Where have you been exactly once?
+- What do your friends tease you for?
+- What is the strangest job you have had?
+- What do you always order when you cannot decide?
+
 ## Questions That Get Past Small Talk
 
 The move here is not a bigger question. It is picking up something she mentioned in passing and asking about that instead of the topic she offered.
@@ -134,6 +174,40 @@ Warmer, and none of them force a declaration before either person is ready.
 - What is the best conversation you have had recently?
 - What are you looking for, if you know?
 - What would a good version of the next few months look like?
+
+## Questions About Work Without It Being an Interview
+
+"What do you do?" is the worst question in common use, because it asks for a job title and gets one. These ask about the same territory and get an answer.
+
+- What is the part of it nobody outside would guess?
+- What would you do if everything paid the same?
+- What does everybody assume about it that is wrong?
+- Who taught you the most, and were they nice about it?
+- What do you say when somebody asks what you do?
+- What is the bit you are genuinely good at?
+- How close is it to what you told people you would do?
+- What would make you leave?
+- What is the smallest thing that would make it better?
+- What do you do there that is not in the job description?
+- When did you last enjoy a Monday?
+- What is something you got wrong and never mentioned to anybody there?
+
+## Once You Have Known Each Other a While
+
+Different problem entirely. The risk stops being awkwardness and becomes the assumption that you already know the answers, which is how people end up living alongside somebody they stopped being curious about.
+
+- What do you think I have wrong about you?
+- What did you decide about me early on?
+- What have you never got round to telling me?
+- What do you need when you are like this?
+- What would you want me to notice sooner?
+- What is a thing you would like to be asked more often?
+- What have you stopped mentioning because I did not react the first time?
+- What have you stopped doing since we met?
+- What do you wait to be offered rather than ask for?
+- What are you proud of that never comes up?
+- When have you nearly said something to me and not?
+- What do you do when you are annoyed with me and not saying so?
 
 ## Over Text, Almost None of This Applies
 
