@@ -298,6 +298,22 @@ The mechanism is identical — the split has to be real — but the stakes get s
 - Be able to understand any animal, or be understood by all of them?
 - Have a house made of sweets you cannot eat, or vegetables you can?
 
+## Where It Goes Wrong
+
+The format is unusually safe — nothing is true, nobody is being asked about themselves, and both options are hypothetical. That safety is doing all the work, and there are four reliable ways to remove it without noticing.
+
+**The pair that is secretly a values test.** Save one person you love or five strangers. Anything from the trolley-problem family stops being a game the moment somebody answers, because now a person in the room has said out loud that they would let five people die, or that they would not save their mother. It follows them out of the evening. There are hard pairs on this page and they are hard about trade-offs, not about whether you are a good person.
+
+**The pair with somebody's actual life inside it.** Sight or hearing. More time or more money. Know the day you die. All perfectly good in the abstract and completely different if somebody present is losing their hearing, is out of work, or buried a parent last month. You will often not know, which is the argument for reading the room rather than the list.
+
+**Pressing somebody who picked lightly.** The defence is the game, and it only works volunteered. "Why?" is an invitation. "No, but *why*?" is an interrogation, and somebody who chose in half a second and has no reason ready is now being asked to justify themselves in front of everyone. If the reason does not come, move on — the split was the interesting part anyway.
+
+**The pair aimed at one person.** Constructed so that somebody's known situation is the answer. Everybody can tell, including them, and the game becomes the delivery mechanism for a point somebody wanted to make.
+
+There is also a slower failure worth watching for. **When one person's answers keep revealing the same thing** — always the money, always the safe option, always the one that avoids being seen — the game has quietly started profiling them, and they will notice before anybody else does. Change category before somebody says it out loud.
+
+The rule underneath all of it: **this works because nothing is at stake.** Anything that puts something at stake turns it into a different game, and nobody in the room agreed to play that one.
+
 ## How to Actually Run It
 
 Six things, and the first two do most of the work.
