@@ -1,5 +1,5 @@
 ---
-title: "Questions for Couples: 104 That Update What You Know"
+title: "Questions for Couples: 124 That Update What You Know"
 description: "With a partner the problem is never trust. It is that you stopped updating — you answer on their behalf without checking, and you have been wrong for a while."
 target_keywords:
   - { keyword: "questions for couples", volume: 14000, difficulty: 15, traffic_potential: 59000, parent: "questions for couples" }
@@ -7,6 +7,7 @@ target_keywords:
   - { keyword: "questions to ask your partner", volume: 13000, difficulty: 12, traffic_potential: 62000, parent: "questions for couples" }
   - { keyword: "deep questions to ask your partner", volume: 11000, difficulty: 21, traffic_potential: 60000, parent: "questions for couples" }
   - { keyword: "couples questions", volume: 6600, difficulty: 13, traffic_potential: 59000, parent: "questions for couples" }
+  - { keyword: "couple questions", volume: 8600, difficulty: 22, traffic_potential: 62000, parent: "questions for couples" }
   - { keyword: "deep relationship questions", volume: 3600, difficulty: 13, traffic_potential: 59000, parent: "questions for couples" }
   - { keyword: "deep questions for couples", volume: 2600, difficulty: 7, traffic_potential: 59000, parent: "questions for couples" }
   - { keyword: "questions to ask your spouse", volume: 800, difficulty: 7, traffic_potential: 59000, parent: "questions for couples" }
@@ -25,7 +26,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Questions for Couples: 104 That Update What You Know
+# Questions for Couples: 124 That Update What You Know
 
 Every other list of questions on this site is about building trust with somebody who has none of it yet. This one is the opposite problem, and it needs a different tool.
 
@@ -50,6 +51,37 @@ Before asking anything on this page, run one check.
 If the answer is no, it is a fine question and ask it. If the answer is **yes, that is the question worth asking** — and you should ask it precisely because you think you already know, and then find out whether the answer you were carrying is still the right one.
 
 That is the whole method. The interesting questions in a long relationship are not the exotic ones. They are the ordinary ones you stopped asking around the time you became certain of the answer.
+
+## How Well Do You Know Each Other?
+
+The test above is a thought experiment. This is the version you can actually run, and it is the only game on this page.
+
+**Both of you write down what you think the other will say. Then you both answer. Then compare.** That is it. The scoring is irrelevant and the disagreements are the entire point — every mismatch is a place where your model of them is out of date, which is exactly what this page claims is the problem.
+
+It is worth saying what usually happens, because couples are often braced for the wrong outcome. The mismatches are rarely dramatic. They are almost always small and recent: a preference that shifted, an opinion that softened, something they have started minding that they did not use to. Which is the point — the model does not fail all at once, it drifts.
+
+- What would they say is their favourite meal at the moment?
+- What are they most looking forward to in the next month?
+- What would they say is the most stressful part of their week?
+- What would they choose to do with an entirely free day?
+- What is their honest opinion of my closest friend?
+- What would they say we argue about most?
+- What do they think is my most annoying habit?
+- What would they say they need more of?
+- What is the last thing that made them properly laugh?
+- What would they say is the best decision we have made together?
+- What are they secretly hoping I have arranged for their birthday?
+- What would they say they are worried about at the moment?
+- What is their least favourite thing about our home?
+- What would they say has changed most about them in five years?
+- What would they save first from a fire, after people?
+- What do they think I do not appreciate enough?
+- What would they say is their proudest achievement?
+- What would they change about their job tomorrow if they could?
+- What is the compliment they most want to hear?
+- What would they say is the thing I do that makes them feel closest to me?
+
+**The rule that makes it useful rather than a quiz:** when you get one wrong, ask when it changed. That question turns a mismatch into the actual conversation, and it is the reason to do this at all. Getting it wrong is not a failure of attention — it is information arriving late, and late is much better than never.
 
 ## Questions for Couples
 

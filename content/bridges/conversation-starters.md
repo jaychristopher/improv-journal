@@ -10,6 +10,7 @@ target_keywords:
   - { keyword: "questions to ask", volume: 43000, difficulty: 38, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "good questions to ask", volume: 16000, difficulty: 26, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "questions to ask people", volume: 12000, difficulty: 33, traffic_potential: 150000, parent: "conversation starters" }
+  - { keyword: "questions to ask someone", volume: 9900, difficulty: 35, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation questions", volume: 2500, difficulty: 31, traffic_potential: 147000, parent: "conversation starters" }
   - { keyword: "small talk questions", volume: 3100, difficulty: 39, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "interesting conversation starters", volume: 1500, difficulty: 37, traffic_potential: 168000, parent: "conversation starters" }

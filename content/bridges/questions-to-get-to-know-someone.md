@@ -13,6 +13,9 @@ target_keywords:
   - { keyword: "ice breaker questions", volume: 51000, difficulty: 19, traffic_potential: 90000, parent: "ice breaker questions" }
   - { keyword: "icebreaker questions", volume: 24000, difficulty: 34, traffic_potential: 92000, parent: "ice breaker questions" }
   - { keyword: "fun icebreaker questions", volume: 8900, difficulty: 7, traffic_potential: 90000, parent: "ice breaker questions" }
+  - { keyword: "get to know you questions", volume: 28000, difficulty: 42, traffic_potential: 69000, parent: "ice breaker questions" }
+  - { keyword: "getting to know you questions", volume: 9700, difficulty: 35, traffic_potential: 100000, parent: "questions to get to know someone" }
+  - { keyword: "questions to ask a new friend", volume: 600, difficulty: 2, traffic_potential: 83000, parent: "ice breaker questions" }
   - { keyword: "good icebreaker questions", volume: 3400, difficulty: 23, traffic_potential: 90000, parent: "ice breaker questions" }
   - { keyword: "best icebreaker questions", volume: 2400, difficulty: 18, traffic_potential: 100000, parent: "ice breaker questions" }
   - { keyword: "icebreaker questions for adults", volume: 1600, difficulty: 22, traffic_potential: 93000, parent: "ice breaker questions" }
