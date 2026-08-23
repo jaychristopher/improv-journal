@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { UpdatedOn } from "@/components/UpdatedOn";
 import { getAtomBySlug, getAtomUrl, getSourceBySlug, loadSources } from "@/lib/content";
 import type { AtomType } from "@/lib/schema";
-import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const sources = await loadSources();
@@ -30,6 +30,8 @@ export async function generateMetadata({
     // reachable for provenance without letting it compete in search.
     robots: { index: false, follow: true },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: source.frontmatter.title,
       description: desc,
       url: `/sources/${slug}`,

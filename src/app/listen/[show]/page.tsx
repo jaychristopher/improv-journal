@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PodcastSeriesJsonLd } from "@/components/PodcastSeriesJsonLd";
 import { getEpisodesForShow, getShowBySlug, loadShows } from "@/lib/content";
-import { ogImages, pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const shows = await loadShows();
@@ -34,6 +34,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: `${show.frontmatter.title} Podcast`,
       description: show.frontmatter.description,
       url: `/listen/${showSlug}`,

@@ -4,7 +4,14 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
-import { atomDescription, conceptTitle, extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import {
+  atomDescription,
+  conceptTitle,
+  extractDescription,
+  ogImages,
+  pageTitle,
+  SITE_NAME,
+} from "@/lib/seo";
 
 /** Canonical order of the 8 principles — loops back to the start */
 const PRINCIPLE_ORDER = [
@@ -45,6 +52,8 @@ export async function generateMetadata({
     description: desc,
     alternates: { canonical: url },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: displayTitle,
       description: desc,
       url,

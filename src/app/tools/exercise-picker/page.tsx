@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 import { ExercisePickerClient } from "./ExercisePickerClient";
 
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "team warm up exercises",
   ],
   openGraph: {
+    siteName: SITE_NAME,
+    locale: "en_US",
     title: "Improv Exercise Picker: Find the Right Warm-Up Game",
     description:
       "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",

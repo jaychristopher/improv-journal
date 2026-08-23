@@ -13,6 +13,7 @@ import {
   leadParagraph,
   ogImages,
   pageTitle,
+  SITE_NAME,
   stripLeadLabel,
 } from "@/lib/seo";
 
@@ -46,6 +47,8 @@ export async function generateMetadata({
     description: desc,
     alternates: { canonical: url },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: displayTitle,
       description: desc,
       url,

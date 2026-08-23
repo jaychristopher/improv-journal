@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getCategoryBySlug, getGuidesInCategory, GUIDE_CATEGORIES } from "@/lib/guide-categories";
-import { ogImages, pageTitle, SITE_URL } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return GUIDE_CATEGORIES.map((category) => ({ category: category.slug }));
@@ -26,6 +26,8 @@ export async function generateMetadata({
     description: category.metaDescription,
     alternates: { canonical: url },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title,
       description: category.metaDescription,
       url,

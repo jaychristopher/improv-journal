@@ -22,7 +22,7 @@ import {
   loadThreads,
 } from "@/lib/content";
 import { getNextPath } from "@/lib/path-progression";
-import { extractDescription, ogImages, pageTitle } from "@/lib/seo";
+import { extractDescription, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 import { getSeriesForPage } from "@/lib/shows-for-content";
 
 export async function generateStaticParams() {
@@ -45,6 +45,8 @@ export async function generateMetadata({
     description: desc,
     alternates: { canonical: `/threads/${slug}` },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: thread.frontmatter.title,
       description: desc,
       url: `/threads/${slug}`,

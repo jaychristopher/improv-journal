@@ -23,6 +23,7 @@ import {
   ogImages,
   pageTitle,
   qualifyIfSiteName,
+  SITE_NAME,
 } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -44,6 +45,8 @@ export async function generateMetadata({
     description: metaDescription(pathData.frontmatter.description),
     alternates: { canonical: `/paths/${slug}` },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: qualifyIfSiteName(pathData.frontmatter.title, "Learning Path"),
       description: metaDescription(pathData.frontmatter.description),
       url: `/paths/${slug}`,

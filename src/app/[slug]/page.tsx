@@ -25,7 +25,7 @@ import { getCategoryForGuide } from "@/lib/guide-categories";
 import { getGuideConcepts } from "@/lib/guide-concepts";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
-import { ogImages, pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 import { getSeriesForPage } from "@/lib/shows-for-content";
 
 export async function generateMetadata({
@@ -44,6 +44,8 @@ export async function generateMetadata({
     keywords: fm.target_keywords?.map((keyword: { keyword: string }) => keyword.keyword),
     alternates: { canonical: `/${slug}` },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: fm.title,
       description: fm.description,
       url: `/${slug}`,

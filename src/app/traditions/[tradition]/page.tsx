@@ -9,7 +9,7 @@ import {
   getAtomUrl,
   getTraditionNames,
 } from "@/lib/content";
-import { ogImages, pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 // `desc` is the visible tagline and is deliberately terse. `meta` is the search
 // snippet, which has 158 characters to spend and was spending fifty.
@@ -79,6 +79,8 @@ export async function generateMetadata({
     description: info.meta,
     alternates: { canonical: `/traditions/${tradition}` },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: info.label,
       description: info.meta,
       url: `/traditions/${tradition}`,

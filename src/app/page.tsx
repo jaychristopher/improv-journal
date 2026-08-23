@@ -29,6 +29,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description: `What makes some conversations magic and others fall flat? ${tagline} — discovered on the improv stage, applicable everywhere.`,
     alternates: { canonical: "/" },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title,
       description: `${tagline} — discovered on the improv stage, applicable everywhere.`,
       url: "/",

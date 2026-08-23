@@ -10,6 +10,7 @@ import {
   ogImages,
   ORGANIZATION_ID,
   pageTitle,
+  SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
 
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: AUTHOR_PATH },
   openGraph: {
+    siteName: SITE_NAME,
+    locale: "en_US",
+    // The only page on the site that declared an openGraph block without a
+    // type. Next does not fill one in, and a card with no og:type is the one
+    // shape some scrapers treat as not-an-article and render bare.
+    type: "profile",
     title: "About This Site",
     description: DESCRIPTION,
     url: AUTHOR_PATH,

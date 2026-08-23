@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { loadPaths } from "@/lib/content";
 import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendations";
 import type { Audience } from "@/lib/schema";
-import { ogImages, pageTitle } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 /**
  * Each audience hub gets orientation prose, the way the topic hubs already do.
@@ -91,6 +91,8 @@ export async function generateMetadata({
     description: meta.description,
     alternates: { canonical: `/learn/${audience}` },
     openGraph: {
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: meta.title,
       description: meta.description,
       url: `/learn/${audience}`,

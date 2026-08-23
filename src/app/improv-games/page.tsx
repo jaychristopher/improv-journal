@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { TagFilter } from "@/components/TagFilter";
 import { loadImprovGames } from "@/lib/games";
-import { ogImages, pageTitle, SITE_URL } from "@/lib/seo";
+import { ogImages, pageTitle, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageTitle("Improv Games: Warm-Ups, Exercises and Scene Games"),
@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     "Every game on the site, with what each one trains and when to reach for it — plus how to pick one by what is going wrong rather than by what sounds fun.",
   alternates: { canonical: "/improv-games" },
   openGraph: {
+    siteName: SITE_NAME,
+    locale: "en_US",
     title: "Improv Games: Warm-Ups, Exercises and Scene Games",
     description:
       "Every game on the site, with what each one trains and when to reach for it — plus how to pick one by what is going wrong rather than by what sounds fun.",
