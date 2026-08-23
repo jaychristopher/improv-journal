@@ -12,6 +12,8 @@ target_keywords:
   - { keyword: "questions to ask people", volume: 12000, difficulty: 33, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "questions to ask someone", volume: 9900, difficulty: 35, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation questions", volume: 2500, difficulty: 31, traffic_potential: 147000, parent: "conversation starters" }
+  - { keyword: "things to talk about", volume: 11000, difficulty: 35, traffic_potential: 157000, parent: "conversation starters" }
+  - { keyword: "what to talk about", volume: 4900, difficulty: 28, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "small talk questions", volume: 3100, difficulty: 39, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "interesting conversation starters", volume: 1500, difficulty: 37, traffic_potential: 168000, parent: "conversation starters" }
   - { keyword: "interesting questions to ask", volume: 8400, difficulty: 15, traffic_potential: 150000, parent: "conversation starters" }
@@ -27,7 +29,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Conversation Starters: 192 That Survive the Second Exchange
@@ -322,6 +324,47 @@ So the test for one of these is not "does this sound interesting" but **"has any
 - What is the most specific compliment you have ever received?
 
 Notice that none of them asks anybody to be impressive. They are pointed at corners of an ordinary life that simply do not come up, which is the only kind of interesting a question can actually supply.
+
+## What to Talk About When You Have Nothing
+
+Everything above is a question. This is the other thing people want, and it is a different request: not an opener but a **subject** — something to be talking about for the next ten minutes.
+
+The fear behind it is running out. What actually causes running out is picking subjects with no branches, so these are sorted by how much they generate rather than by how interesting they sound.
+
+**Almost anywhere, with almost anyone:**
+
+- **Whatever they are in the middle of.** A course, a renovation, a move, a difficult decision. Unfinished things have more to say than finished ones.
+- **How they spend a Saturday.** Reliably specific, and it tells you what somebody actually values rather than what they would claim to.
+- **The last thing that changed for them.** Change generates detail automatically — a new job has a hundred small consequences and all of them are sayable.
+- **Where they grew up, versus where they are now.** Two places and the distance between them is three topics, not one.
+- **What they were doing five years ago.** Far enough back to be a story, recent enough to remember properly.
+- **Food, but specifically.** Not "do you like cooking" — the thing they make when nobody is watching, the meal they have eaten a hundred times.
+- **Anything they are unreasonably good at.** Being asked about a small expertise is rare and almost universally welcome.
+- **What they nearly did instead.** The road not taken is more interesting than the one taken, and people rarely get to talk about it.
+
+**With somebody you already know:**
+
+- **Something they mentioned last time.** Remembering is the whole move. It also guarantees the subject is live.
+- **A thing you have changed your mind about.** Offering one invites one back, and mutual reversal is much better company than mutual certainty.
+- **Their family, if the ground is safe.** Enormous branching, and the one subject where nobody has run out of material.
+- **What they are worried about that is not serious.** The low-stakes worry — a leak, a car, a neighbour — is often funnier and more revealing than the real one.
+- **Old plans neither of you carried out.** Reliably becomes a plan.
+
+**In a group:**
+
+- **A genuine disagreement with no stakes.** Best food, worst film, whether a hot dog qualifies. Everyone can join and nobody can lose.
+- **Something happening in the room.** The venue, the queue, the music — shared, immediate, and everyone has equal access to it.
+- **A question put to the whole group rather than one person.** Removes the spotlight and lets the confident answer first without cost to anyone else.
+
+**At work, where the ground is narrower:**
+
+- **What they are working on that they chose.** People have far more to say about the voluntary part of their job.
+- **How they got into this line of work.** Origin stories, and safe from every angle.
+- **Anything outside work that they mention first.** Let them open that door rather than opening it for them.
+
+**Subjects to leave alone until you know somebody well:** money, health, relationships, politics, and anybody's plans for children. Not because they are taboo but because they cost something to answer, and nothing has been built yet that makes paying it reasonable.
+
+The section below is the general rule underneath all of that — why some subjects keep producing and others are spent in one exchange.
 
 ## Conversation Topics: Which Ones Behave Differently
 
