@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (62)
+## Guides (63)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -74,6 +74,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [People Skills Are a System, Not a Personality Trait](https://www.physicsofconnection.com/people-skills): Most people-skills advice is a parts catalogue — eye contact, I-statements, paraphrasing. It is a real-time system, and the mechanics are learnable.
 - [Psychological Safety: The Physics of Trust](https://www.physicsofconnection.com/psychological-safety): Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust.
 - [10 Public Speaking Tips for the Parts You Cannot Rehearse](https://www.physicsofconnection.com/public-speaking-tips): Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains.
+- [Questions for Couples: 104 That Update What You Know](https://www.physicsofconnection.com/questions-for-couples): With a partner the problem is never trust. It is that you stopped updating — you answer on their behalf without checking, and you have been wrong for a while.
 - [Questions to Ask Friends: 128 That Go Somewhere](https://www.physicsofconnection.com/questions-to-ask-friends): Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands.
 - [Questions to Ask in an Interview: 90 That Change the Room](https://www.physicsofconnection.com/questions-to-ask-in-an-interview): In an interview your questions are the one move that levels the status gap. Sorted by what each one gets you, plus the ones that quietly cost you the offer.
 - [189 Icebreaker Questions to Get to Know Someone](https://www.physicsofconnection.com/questions-to-get-to-know-someone): The icebreaker questions that work are the unglamorous ones: everybody already has the answer, three words is a complete turn, and nobody is being scored.
