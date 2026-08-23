@@ -55,11 +55,34 @@ describe("content dates", () => {
     expect(offenders).toEqual([]);
   });
 
-  it("never record an update before creation", async () => {
-    const backwards = (await loadBridges())
-      .filter((b) => b.frontmatter.updated && b.frontmatter.updated < b.frontmatter.created)
-      .map((b) => `${b.slug}: created ${b.frontmatter.created}, updated ${b.frontmatter.updated}`);
+  /**
+   * This covered bridges only, while the future-date check above covers all
+   * four types — 61 files guarded against a rule that applies to 276. An
+   * update recorded before its own creation is emitted as dateModified
+   * preceding datePublished, which is invalid and silently ineligible for
+   * anything that reads them.
+   */
+  it("never record an update before creation, in any content type", async () => {
+    const [bridges, atoms, threads, paths] = await Promise.all([
+      loadBridges(),
+      loadAtoms(),
+      loadThreads(),
+      loadPaths(),
+    ]);
 
+    const backwards: string[] = [];
+    let checked = 0;
+    for (const item of [...bridges, ...atoms, ...threads, ...paths]) {
+      const { created, updated } = item.frontmatter;
+      if (!created || !updated) continue;
+      checked++;
+      if (updated.slice(0, 10) < created.slice(0, 10)) {
+        backwards.push(`${item.slug}: created ${created}, updated ${updated}`);
+      }
+    }
+
+    // Guards against the loaders returning nothing and this passing on no data.
+    expect(checked).toBeGreaterThan(200);
     expect(backwards).toEqual([]);
   });
 });
