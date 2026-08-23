@@ -33,6 +33,16 @@ Working in Chicago in the 1940s and 50s, Spolin developed theatre games as a way
 
 She published the method as *Improvisation for the Theater* in 1963, and it became the foundation of nearly everything that followed. The entire tradition of improv warm-ups descends from Spolin's theatre games. Her son, Paul Sills, took the method to Chicago's Second City, where it grew into modern comedic improv.
 
+## Theatre Games, Theater Games, or Drama Games?
+
+Three names for one form, and the differences between them are regional rather than real.
+
+**Theater games** is Spolin's own spelling. She was American, working in Chicago, and the book is *Improvisation for the Theater* — anyone following that lineage directly tends to keep it. **Theatre games** is the British and Commonwealth spelling, and also the one much of the American theatre profession uses for itself, which is why the -re form turns up on both sides of the Atlantic and settles nothing about where a source comes from. **Drama games** is the education term: in British, Irish and Australian schools drama is a timetabled subject, and this is simply what the games are called inside it.
+
+Where the names do carry a difference, it is in what has been attached to them rather than in the games themselves. Material filed under drama games is usually the school version — sorted by age group, tied to curriculum objectives, and frequently stripped of the improv lineage altogether. Material filed under theater games is more often Spolin's tradition and the American training studios that grew out of it, which keep the lineage and assume an adult room.
+
+The overlap in the actual games is nearly total. The framing is not, and it is worth knowing which one you have picked up, because the school version is the one most likely to have quietly dropped the point of concentration — and that, as the section of that name below sets out, is the part doing the work.
+
 ## Theatre Games vs. Improv Games
 
 The terms get used interchangeably, and the overlap is real, but the emphasis differs and it changes how you run them.
