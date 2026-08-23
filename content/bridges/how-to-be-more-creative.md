@@ -10,7 +10,7 @@ entry_atoms: [obvious-choice, discovery, be-simple, internal-computation, cognit
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be More Creative: Stop Trying to Be Original
@@ -58,7 +58,7 @@ But internal computation isn't just a stage problem. It's the universal creativi
 - The musician who won't record until the melody is perfect
 - The team member in a brainstorm who stays quiet because their idea "isn't ready"
 
-In every case, the evaluative process is consuming the bandwidth the creative process needs. Sweller's Cognitive Load Theory (1988) puts a number on it: working memory holds about 4 items simultaneously. Every slot consumed by evaluation ("Is this good enough? Is this original enough? What will people think?") is a slot unavailable for generation.
+In every case, the evaluative process is consuming the bandwidth the creative process needs. Cowan's reconsideration of working-memory capacity (2001) puts a number on it: about four chunks at once. Sweller's cognitive load theory (1988) supplies the consequence — capacity spent carrying one process is capacity the next one does not get. Every slot consumed by evaluation ("Is this good enough? Is this original enough? What will people think?") is a slot unavailable for generation.
 
 Creativity isn't a bandwidth *addition*. It's a bandwidth *allocation*. The creative capacity is already there. The question is whether you're spending it on generating or on judging.
 
@@ -118,4 +118,4 @@ Stop trying to be original. Follow the obvious. The original stuff is hiding beh
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind the obvious choice, discovery, and the cognitive mechanics of creative performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [The Obvious Choice](/practice/techniques/obvious-choice) and [Discovery](/how-it-works/diagnosis/discovery).*
 
-**Sources cited:** Limb & Braun (2008), *PLoS ONE*. Csikszentmihalyi (1990), *Flow*. Sweller (1988), *Cognitive Science*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.
+**Sources cited:** Limb & Braun (2008), *PLoS ONE*. Csikszentmihalyi (1990), *Flow*. Cowan (2001), *Behavioral and Brain Sciences*. Sweller (1988), *Cognitive Science*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

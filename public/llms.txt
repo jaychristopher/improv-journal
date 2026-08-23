@@ -278,7 +278,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Systemic Collapse Modes](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-collapse-modes): The warning lights. How shared reality falls apart.
 - [Systemic Health Indicators](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-health-indicators): The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
 
-## Reading list — the works this site cites (28)
+## Reading list — the works this site cites (30)
 
 - [Amy Edmondson — Psychological Safety and Learning Behavior in Work Teams (1999)](https://www.physicsofconnection.com/library/ref-edmondson-psychological-safety): *Amy C. Edmondson. "Psychological Safety and Learning Behavior in Work Teams." Administrative Science Quarterly 44(2), 350–383, 1999.*
 - [An Actor Prepares — Constantin Stanislavski (1936)](https://www.physicsofconnection.com/library/ref-stanislavski-actor-prepares): *Constantin Stanislavski. An Actor Prepares. Theatre Arts Books, 1936.*
@@ -286,6 +286,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Attention and Effort — Daniel Kahneman (1973)](https://www.physicsofconnection.com/library/ref-attention-and-effort-kahneman): *Daniel Kahneman. Attention and Effort. Prentice-Hall, 1973.*
 - [Behind the Scenes — Mick Napier (2015)](https://www.physicsofconnection.com/library/ref-napier-behind-the-scenes): *Mick Napier. Behind the Scenes: Improvising Long Form. Meriwether Publishing, 2015.*
 - [Bossypants — Tina Fey (2011)](https://www.physicsofconnection.com/library/ref-fey-bossypants): *Tina Fey. Bossypants. Reagan Arthur Books / Little, Brown and Company, 2011.*
+- [Cognitive Load During Problem Solving — John Sweller (1988)](https://www.physicsofconnection.com/library/ref-sweller-cognitive-load): *John Sweller. "Cognitive Load During Problem Solving: Effects on Learning." Cognitive Science 12(2), 257–285, 1988.*
 - [Daring Greatly — Brené Brown (2012)](https://www.physicsofconnection.com/library/ref-brown-daring-greatly): *Brené Brown. Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. Avery, 2012.*
 - [Flow — Mihaly Csikszentmihalyi (1990)](https://www.physicsofconnection.com/library/ref-csikszentmihalyi-flow): *Mihaly Csikszentmihalyi. Flow: The Psychology of Optimal Experience. Harper & Row, 1990.*
 - [Frame Analysis — Erving Goffman (1974)](https://www.physicsofconnection.com/library/ref-goffman-frame-analysis): *Erving Goffman. Frame Analysis: An Essay on the Organization of Experience. Harper & Row, 1974.*
@@ -305,6 +306,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Sanford Meisner on Acting — Meisner & Longwell (1987)](https://www.physicsofconnection.com/library/ref-meisner-on-acting): *Sanford Meisner & Dennis Longwell. Sanford Meisner on Acting. Vintage Books, 1987.*
 - [Standing in Space — Mary Overlie (2016)](https://www.physicsofconnection.com/library/ref-overlie-standing-in-space): *Mary Overlie. Standing in Space: The Six Viewpoints Theory & Practice. Movement Publishing, 2016.*
 - [The Improv Handbook — Salinsky & Frances-White (2008)](https://www.physicsofconnection.com/library/ref-salinsky-improv-handbook): *Tom Salinsky & Deborah Frances-White. The Improv Handbook: The Ultimate Guide to Improvising in Comedy, Theatre, and Beyond. Continuum, 2008.*
+- [The Magical Number 4 in Short-Term Memory — Nelson Cowan (2001)](https://www.physicsofconnection.com/library/ref-cowan-magical-number-four): *Nelson Cowan. "The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity." Behavioral and Brain Sciences 24(1), 87–185, 2001.*
 - [The Viewpoints Book — Anne Bogart & Tina Landau (2005)](https://www.physicsofconnection.com/library/ref-viewpoints-bogart-landau): *Anne Bogart & Tina Landau. The Viewpoints Book: A Practical Guide to Viewpoints and Composition. Theatre Communications Group, 2005.*
 - [Truth in Comedy — Halpern, Close, Johnson (1994)](https://www.physicsofconnection.com/library/ref-truth-in-comedy): *Charna Halpern, Del Close, Kim "Howard" Johnson. Truth in Comedy: The Manual of Improvisation. Meriwether Publishing, 1994.*
 - [UCB Comedy Improvisation Manual (2013)](https://www.physicsofconnection.com/library/ref-ucb-manual): *Matt Besser, Ian Roberts, Matt Walsh. Upright Citizens Brigade Comedy Improvisation Manual. Comedy Council of Nicea, 2013.*

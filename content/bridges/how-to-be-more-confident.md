@@ -10,7 +10,7 @@ entry_atoms: [commitment, obvious-choice, fear-of-failure, be-brave, be-honest]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be More Confident (Without Faking It)
@@ -37,7 +37,7 @@ Will Hines, one of the most experienced improv teachers working today, describes
 
 Here's the cognitive science underneath.
 
-When you're deciding between options — weighing which response is best, calculating social risk, optimizing for the "right" answer — your working memory is consumed by the decision process itself. You're using your limited cognitive bandwidth (about 4 items in working memory, per Sweller's Cognitive Load Theory) to run an internal evaluation loop. That loop is visible to others. It shows up as hesitation, hedging language, broken eye contact, and the subtle tension of someone who's monitoring their own performance while trying to perform.
+When you're deciding between options — weighing which response is best, calculating social risk, optimizing for the "right" answer — your working memory is consumed by the decision process itself. You're using your limited cognitive bandwidth (about four items in working memory, per Cowan's reassessment of the figure) to run an internal evaluation loop. That loop is visible to others. It shows up as hesitation, hedging language, broken eye contact, and the subtle tension of someone who's monitoring their own performance while trying to perform.
 
 When you commit fully to a choice — any choice — the evaluation loop stops. Your cognitive bandwidth is no longer spent on "was that right?" and becomes available for "what's next?" The freed bandwidth goes directly into engagement with the present moment: listening, responding, adapting. That engagement is what confidence looks like from the outside.
 
@@ -117,6 +117,6 @@ The chain doesn't start with confidence. It starts with the willingness to commi
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind commitment, the obvious choice, and the cognitive mechanics of performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Commitment](/practice/techniques/commitment) and [The Obvious Choice](/practice/techniques/obvious-choice).*
 
-**Sources cited:** Bandura (1977), *Psychological Review*. Sweller (1988), *Cognitive Science*. Dweck (2006), *Mindset*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.
+**Sources cited:** Bandura (1977), *Psychological Review*. Cowan (2001), *Behavioral and Brain Sciences*. Sweller (1988), *Cognitive Science*. Dweck (2006), *Mindset*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.
 
 _To practise it rather than read about it: [confidence building exercises](/confidence-building-exercises) — seven drills that train acting before you feel ready._

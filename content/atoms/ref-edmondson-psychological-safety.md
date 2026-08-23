@@ -25,7 +25,7 @@ updated: "2026-08-23"
 
 **Amy C. Edmondson. "Psychological Safety and Learning Behavior in Work Teams." *Administrative Science Quarterly* 44(2), 350–383, 1999.**
 
-The paper that gave psychological safety its definition and its measure, and the academic anchor underneath most of what this site says about what a group has to be before it can play.
+The paper that gave psychological safety both its definition and its measure, and the anchor beneath what this site claims about groups.
 
 Edmondson studied 51 work teams in a manufacturing company and defined team psychological safety as a shared belief that the team is safe for interpersonal risk taking. The risk she means is specific and unglamorous: asking the obvious question, admitting the mistake, disagreeing with the senior person. Teams higher in it showed more learning behaviour, and learning behaviour mediated the relationship between safety and team performance.
 

@@ -32,7 +32,7 @@ Here's what's actually going on.
 
 ## Listening Is a Bandwidth Problem
 
-Your working memory holds roughly 4 items at once (Sweller, 1988). Every cognitive process you run — evaluating what was said, planning your response, judging whether you agree, monitoring how you're coming across — draws from that same limited pool.
+Your working memory holds roughly four items at once (Cowan, 2001). Every cognitive process you run — evaluating what was said, planning your response, judging whether you agree, monitoring how you're coming across — draws from that same limited pool.
 
 When you're "actively listening" while planning your reply, you're running two high-bandwidth processes on a 4-slot system. Something has to give. What gives is reception fidelity. You get the words. You miss the tone. You catch the argument. You miss the emotion underneath.
 
@@ -98,6 +98,6 @@ _For the full framework: [Building on Offers](/threads/building-on-offers). For 
 
 The term flattens something that is not one thing. [Types of listening](/types-of-listening) separates the three modes it runs together, which matters because the mode that repairs a conflict is not the mode that helps somebody think out loud.
 
-**Sources cited:** Kahneman (1973), _Attention and Effort_. Sweller (1988), _Cognitive Science_. Cherry (1953), _Journal of the Acoustical Society of America_. Wickens (2002), _Theoretical Issues in Ergonomic Science_. Spolin (1963), _Improvisation for the Theater_.
+**Sources cited:** Kahneman (1973), _Attention and Effort_. Cowan (2001), _Behavioral and Brain Sciences_. Sweller (1988), _Cognitive Science_. Cherry (1953), _Journal of the Acoustical Society of America_. Wickens (2002), _Theoretical Issues in Ergonomic Science_. Spolin (1963), _Improvisation for the Theater_.
 
 _On presence as its own subject: [how to be present](/how-to-be-present)._

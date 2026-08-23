@@ -49,6 +49,8 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
     ids: [
       "ref-attention-and-effort-kahneman",
       "ref-limb-braun-jazz-improvisation",
+      "ref-cowan-magical-number-four",
+      "ref-sweller-cognitive-load",
       "ref-edmondson-psychological-safety",
       "ref-viewpoints-bogart-landau",
       "ref-meisner-on-acting",

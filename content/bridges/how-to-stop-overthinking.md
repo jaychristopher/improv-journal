@@ -71,7 +71,7 @@ Its limit is worth knowing too. It interrupts a loop; it does not resolve what s
 
 ## Your Brain Has a Bandwidth Problem
 
-Your working memory - the mental workspace where you process information in real time - holds roughly 4 items simultaneously (Sweller, Cognitive Load Theory, 1988). That's it. Four slots. Every cognitive task you add (evaluating, planning, self-monitoring, rehearsing) directly subtracts from your capacity to process what's actually happening in front of you. That subtraction is also what people are describing when they call themselves awkward — [social awkwardness](/how-to-be-less-awkward) is the same budget problem showing up in a conversation rather than in your own head.
+Your working memory - the mental workspace where you process information in real time - holds roughly four items simultaneously (Cowan, 2001). That's it. Four slots. Every cognitive task you add (evaluating, planning, self-monitoring, rehearsing) directly subtracts from your capacity to process what's actually happening in front of you. That subtraction is also what people are describing when they call themselves awkward — [social awkwardness](/how-to-be-less-awkward) is the same budget problem showing up in a conversation rather than in your own head.
 
 Daniel Kahneman's dual-process theory maps this precisely. **System 1** is fast, automatic, intuitive - it handles about 96% of your cognition at almost no cost. **System 2** is slow, deliberate, conscious - and it's limited by that 4-slot working memory. Overthinking is System 2 running in a recursive loop on problems that don't benefit from deliberate analysis. The loop consumes the bandwidth System 1 needs to process real-time external input.
 
@@ -165,4 +165,4 @@ The goal isn't to think less. It's to **spend your thinking on the right things.
 
 _This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas - the physics of real-time human interaction, discovered on the improv stage - start with [The System Underneath](/threads/the-system-underneath) or explore the [Systems of Improv](/paths/systems-of-improv) path._
 
-**Sources cited:** Limb & Braun (2008), _PLoS ONE_. Kahneman (1973), _Attention and Effort_. Sweller (1988), _Cognitive Science_. Nolen-Hoeksema et al. (2008), _Perspectives on Psychological Science_. Johnstone (1979), _Impro_. Hines, _Improv Nonsense_ Substack.
+**Sources cited:** Limb & Braun (2008), _PLoS ONE_. Kahneman (1973), _Attention and Effort_. Cowan (2001), _Behavioral and Brain Sciences_. Sweller (1988), _Cognitive Science_. Nolen-Hoeksema et al. (2008), _Perspectives on Psychological Science_. Johnstone (1979), _Impro_. Hines, _Improv Nonsense_ Substack.

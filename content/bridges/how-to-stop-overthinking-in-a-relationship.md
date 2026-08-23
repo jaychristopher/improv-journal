@@ -12,7 +12,7 @@ entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vuln
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Stop Overthinking in a Relationship
@@ -25,7 +25,7 @@ This isn't garden-variety overthinking. Relationship overthinking has a specific
 
 ## The Bandwidth Hijack
 
-All overthinking is a bandwidth problem. Your working memory — the mental workspace where you process information in real time — has limited capacity. Roughly four slots (Sweller, 1988). When internal processing (analyzing, rehearsing, predicting) fills those slots, you lose the capacity to process external input — what's actually happening in front of you.
+All overthinking is a bandwidth problem. Your working memory — the mental workspace where you process information in real time — has limited capacity. Roughly four slots (Cowan, 2001). When internal processing (analyzing, rehearsing, predicting) fills those slots, you lose the capacity to process external input — what's actually happening in front of you.
 
 But relationship overthinking adds a multiplier: **social threat.**
 
@@ -109,4 +109,4 @@ The overthinking is your brain trying to script the scene in advance. But the sc
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind these ideas — the physics of real-time human interaction, discovered on the improv stage — explore the [Improv for Life](/paths/improv-for-life) path.*
 
-**Sources cited:** Sweller (1988), *Cognitive Science*. Eisenberger et al. (2003), *Science*. Gottman (1994), *What Predicts Divorce?*. Bowlby (1969), *Attachment and Loss*. Johnstone (1979), *Impro*.
+**Sources cited:** Cowan (2001), *Behavioral and Brain Sciences*. Eisenberger et al. (2003), *Science*. Gottman (1994), *What Predicts Divorce?*. Bowlby (1969), *Attachment and Loss*. Johnstone (1979), *Impro*.
