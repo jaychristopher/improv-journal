@@ -94,6 +94,17 @@ const STEPS = [
 
 const DOT_SIZE = ["h-2 w-2", "h-2.5 w-2.5", "h-3 w-3", "h-3.5 w-3.5"];
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose stays plain
+ * strings rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "A path and a guide answer different questions. A guide takes one difficulty and deals with it, and you can read it cold, in any order, without having read another. A path is a sequence where the order carries some of the meaning — each part assumes the one before it, and reading the third without the first mostly produces the feeling of having missed something.",
+  "Pick by where you actually are rather than by which title sounds furthest along. The commonest way to waste one of these is to start at the advanced end because the beginner material looks obvious, and the beginner material looks obvious because it is stated simply, not because it is already known. If you can name what went wrong in your last scene or your last difficult conversation, start in the middle. If you cannot, that naming is what the early parts are for.",
+  "Nothing here is gated and there is no enrolment. Every part of every path is a page you could reach on its own, and the sequence is the only thing a path adds — which is worth something precisely because ordering this material is the hard part, and it has already been done for you.",
+];
+
 export default function PathsIndexPage() {
   const beginnerRecommendation = getRecommendedPath("beginner");
 
@@ -106,6 +117,14 @@ export default function PathsIndexPage() {
           Structured guides for wherever you are in your journey.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       <section className="border-foreground/10 bg-foreground/[0.03] mb-12 rounded-xl border p-6">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">

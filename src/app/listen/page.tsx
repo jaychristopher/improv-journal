@@ -25,6 +25,17 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose stays plain
+ * strings rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "The three shows are not three seasons of the same thing. One takes an ordinary problem and works it through in conversation, one gives a single idea about three minutes and a way to try it that night, and one goes long on the ideas underneath the practice. Which you want depends on whether you are looking for company, a drill, or an argument.",
+  "Every episode has a written page behind it, and the audio is an alternative to reading rather than an extra on top. If you would rather have the text — to skim it, to search it, or because listening is slower — the episode links through to the page it was made from, and nothing is audio-only.",
+  "Each show publishes a feed, so any podcast app that accepts a URL will take it. The site is not a substitute for a player, and the archive here exists so the episodes stay findable and readable rather than living only in an app that decides what you see.",
+];
+
 export default async function ListenPage() {
   const shows = await loadShows();
 
@@ -62,6 +73,14 @@ export default async function ListenPage() {
           of improvisation.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       {/* Featured episode */}
       {featured && (

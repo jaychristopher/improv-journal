@@ -44,6 +44,17 @@ const SECTIONS = [
   },
 ];
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose stays plain
+ * strings rather than escaped markup, and so prose-overlap reads it as text.
+ */
+const HUB_ORIENTATION = [
+  "Everything under here sits outside the two main bodies of the site — the system that explains why interaction behaves as it does, and the practice material you use on it. What is left is the supporting apparatus, and it divides by what it does rather than by subject.",
+  "Paths sequence material for a particular kind of reader. Guides take one difficulty at a time and can be read in any order. The reading list says where the claims came from and what each source is for. Traditions compares the five schools and their disagreements. The exercise picker filters by level and focus when you know what a session needs and not which exercise gives it.",
+  "If you are not sure which of those you want, the useful question is whether you are trying to solve something, understand something, or check something. Guides for the first, paths and traditions for the second, the reading list for the third.",
+];
+
 export default function ResourcesPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -56,6 +67,14 @@ export default function ResourcesPage() {
           lists, and the traditions that shaped improv.
         </p>
       </header>
+
+      <section className="mb-12">
+        {HUB_ORIENTATION.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       <div className="space-y-4">
         {SECTIONS.map((s) => (
