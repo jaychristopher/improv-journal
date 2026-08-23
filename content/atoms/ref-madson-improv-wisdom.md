@@ -1,5 +1,6 @@
 ---
 id: ref-madson-improv-wisdom
+description: "Patricia Ryan Madson's treatment of improv principles as a way to live. Taught at Stanford for decades and read well beyond the theatre."
 title: "Improv Wisdom — Patricia Ryan Madson (2005)"
 type: reference
 status: draft

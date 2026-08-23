@@ -1,5 +1,6 @@
 ---
 id: performance-state
+description: "The state a performer works from: nervous arousal and relaxed openness at the same time. Why the sensation of dread and of readiness are identical."
 title: Performance State
 type: insight
 status: draft

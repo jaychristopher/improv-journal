@@ -88,10 +88,21 @@ describe("reference entries", () => {
     expect(refs.length).toBeGreaterThan(0);
 
     for (const atom of refs) {
+      // Built the way the page builds it, including an authored snippet where
+      // one exists. Without that argument this checked a description no page
+      // ships, which is how ref-madson passed for a while: its lead paragraph
+      // is a bold citation with the title in nested italics, dropBoldLead-
+      // Paragraph does not strip that shape, and the derived snippet therefore
+      // repeated the citation down to the publisher. The written one replaced
+      // it; the derived path is still wrong for that shape and this now says so
+      // if anyone removes the authored description.
       const desc = atomDescription(
         atom.frontmatter.title,
         atom.frontmatter.type,
         extractDescription(atom.content),
+        undefined,
+        undefined,
+        atom.frontmatter.description,
       );
       expect(desc, atom.frontmatter.id).not.toMatch(/^[*_#>-]/);
       expect(desc, atom.frontmatter.id).not.toContain("*");

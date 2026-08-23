@@ -1,5 +1,6 @@
 ---
 id: space-work
+description: "Physically handling an environment that is not there — objects, distances, weight. The detail is what makes an invented room real to an audience."
 title: Space Work
 type: technique
 status: draft

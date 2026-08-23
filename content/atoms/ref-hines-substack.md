@@ -1,5 +1,6 @@
 ---
 id: ref-hines-substack
+description: "Will Hines, longtime UCB teacher, writing the most prolific contemporary blog on improv pedagogy — and arguing with UCB orthodoxy while he does it."
 title: "Improv Nonsense Substack — Will Hines (ongoing)"
 type: reference
 status: draft

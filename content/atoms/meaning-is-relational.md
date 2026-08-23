@@ -1,5 +1,6 @@
 ---
 id: meaning-is-relational
+description: "Meaning is completed in reception, not in intention. What an offer means is settled by what the other person does with it, which is why solo effort fails."
 title: Meaning Is Relational
 type: law
 status: draft

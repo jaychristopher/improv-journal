@@ -104,6 +104,21 @@ export interface AtomFrontmatter {
   external_links?: ExternalLink[];
   work?: CitedWork; // only on `reference` atoms
   /**
+   * An authored search snippet, for the few pages that need one.
+   *
+   * Atom descriptions are derived from the opening prose, and where the first
+   * sentence runs past the 158-character budget the fallback trims at a word
+   * boundary and appends an ellipsis. That is a deliberate trade — a longer
+   * truncated snippet carries more than a short complete one — and it is fine
+   * on the 300-odd pages nobody has been shown yet.
+   *
+   * It is not fine on the ones Google is already displaying. Nine of the 25
+   * non-guide URLs Search Console has ever surfaced end mid-thought, including
+   * the best-ranking page on the site. Those get a written snippet; everything
+   * else keeps the derived one.
+   */
+  description?: string;
+  /**
    * One sentence of actual rules, on games only — setup and the constraint.
    * Separate from the atom's body, which explains what the game trains. The
    * games hub was listing thirty entries by what each develops and never how

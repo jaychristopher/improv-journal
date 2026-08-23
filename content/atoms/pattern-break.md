@@ -1,5 +1,6 @@
 ---
 id: pattern-break
+description: "Breaking an established pattern for effect. The audience has been trained to expect it, which is what makes the break land — and why timing decides it."
 title: Pattern Break
 type: technique
 status: draft

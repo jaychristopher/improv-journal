@@ -83,7 +83,13 @@ function stripEmphasis(text: string): string {
  * the whole SERP snippet restating the headline.
  */
 function dropBoldLeadParagraph(body: string): string {
-  const blocks = body.split(/\n{2,}/);
+  // Paragraph breaks are \r\n\r\n on a Windows checkout, and /\n{2,}/ cannot
+  // match that — there is a \r between the two newlines. A CRLF file therefore
+  // parses as one enormous paragraph, the bold citation is never recognised as
+  // its own block, and the page ships its own citation as its search snippet.
+  // This repo warns that LF will become CRLF on almost every commit, so any
+  // content file edited on Windows can acquire it silently.
+  const blocks = body.split(/(?:\r?\n){2,}/);
   const firstIndex = blocks.findIndex((block) => block.trim().length > 0);
   if (firstIndex === -1) return body;
   if (!/^\*\*[\s\S]+\*\*$/.test(blocks[firstIndex].trim())) return body;
@@ -353,7 +359,11 @@ export function atomDescription(
   extracted: string,
   maxLen = DESCRIPTION_MAX,
   rules?: string,
+  authored?: string,
 ): string {
+  // A written snippet wins outright: it exists precisely because the derived
+  // one was being cut mid-thought on a page Google is already showing.
+  if (authored?.trim()) return authored.trim();
   const label = TYPE_LABELS[type] ?? "an improv concept";
   const fallback = `${title} — ${label}.`;
 

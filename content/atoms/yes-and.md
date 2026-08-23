@@ -1,5 +1,6 @@
 ---
 id: yes-and
+description: "Improv's best-known shorthand: accept what your partner established, then add to it. The yes is acceptance of the reality, not agreement with the character."
 title: "Yes, And: The First Rule of Improv"
 type: technique
 status: validated

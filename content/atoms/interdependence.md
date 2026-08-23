@@ -1,5 +1,6 @@
 ---
 id: interdependence
+description: "You cannot build a shared reality alone. No one performer has the bandwidth or the perspective, and the shortfall is structural rather than a lack of skill."
 title: Interdependence
 type: law
 status: draft
