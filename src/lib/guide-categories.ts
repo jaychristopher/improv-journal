@@ -73,6 +73,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "21-questions-game",
       "party-games",
       "36-questions-to-fall-in-love",
+      "questions-to-ask-a-girl",
       "questions-to-get-to-know-someone",
       "conversation-starters",
       "funny-questions-to-ask",

@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (68)
+## Guides (69)
 
 - [21 Questions Game: How to Play, and 181 to Ask](https://www.physicsofconnection.com/21-questions-game): The number is the mechanism. A fixed count removes the polite exit at question six and guarantees an ending, which is the only reason this gets anywhere real.
 - [36 Questions to Fall in Love: The List and the Mechanism](https://www.physicsofconnection.com/36-questions-to-fall-in-love): The full set from Aron's 1997 study, plus what the lists leave out: what the procedure was built to do, and why the escalation does the work.
@@ -79,6 +79,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Psychological Safety: The Physics of Trust](https://www.physicsofconnection.com/psychological-safety): Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust.
 - [10 Public Speaking Tips for the Parts You Cannot Rehearse](https://www.physicsofconnection.com/public-speaking-tips): Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains.
 - [Questions for Couples: 124 That Update What You Know](https://www.physicsofconnection.com/questions-for-couples): With a partner the problem is never trust. It is that you stopped updating — you answer on their behalf without checking, and you have been wrong for a while.
+- [Questions to Ask a Girl: Why the List Is Not the Problem](https://www.physicsofconnection.com/questions-to-ask-a-girl): The gendering is the mistake. Nothing about getting to know somebody changes by who they are — what changes it is whether you are exchanging or extracting.
 - [Questions to Ask Friends: 152 That Go Somewhere](https://www.physicsofconnection.com/questions-to-ask-friends): Most question lists optimise for an interesting answer. These are sorted by what happens after it, and by the one thing that decides whether a question lands.
 - [Questions to Ask in an Interview: 90 That Change the Room](https://www.physicsofconnection.com/questions-to-ask-in-an-interview): In an interview your questions are the one move that levels the status gap. Sorted by what each one gets you, plus the ones that quietly cost you the offer.
 - [189 Icebreaker Questions to Get to Know Someone](https://www.physicsofconnection.com/questions-to-get-to-know-someone): The icebreaker questions that work are the unglamorous ones: everybody already has the answer, three words is a complete turn, and nobody is being scored.
