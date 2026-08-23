@@ -1,7 +1,8 @@
 ---
-title: "Questions to Ask in an Interview: 90 That Change the Room"
-description: "In an interview your questions are the one move that levels the status gap. Sorted by what each one gets you, plus the ones that quietly cost you the offer."
+title: "Questions to Ask at the End of an Interview, and Before"
+description: "Your questions are the one move that levels the status gap. What to ask when they turn it over to you, and the ones that quietly cost you the offer."
 target_keywords:
+  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, traffic_potential: 15000, parent: "questions to ask at the end of an interview" }
   - {
       keyword: "questions to ask in an interview",
       volume: 32000,
@@ -11,12 +12,11 @@ target_keywords:
     }
   - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4, parent: "questions to ask interviewer", traffic_potential: 22000 }
   - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2, parent: "best questions to ask an interviewer", traffic_potential: 22000 }
-  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, parent: "questions to ask at the end of an interview", traffic_potential: 15000 }
   - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview", traffic_potential: 27000 }
   - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4, parent: "unique interview questions to ask employer", traffic_potential: 9100 }
-serp_checked: "2026-08-22"
-serp_min_dr: 78
-serp_verdict: authority
+serp_checked: "2026-08-23"
+serp_min_dr: 17
+serp_verdict: winnable
 entry_atoms: [status, initiation, offers, safety-in-the-room, be-brave]
 entry_path: physics-of-connection
 primary_problem: "you get to the end of the interview and the only question you can think of is about the next steps"
@@ -25,10 +25,10 @@ primary_cta_target: status-transfer
 secondary_cta_target: physics-of-connection
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
-# Questions to Ask in an Interview: 90 That Change the Room
+# Questions to Ask at the End of an Interview, and Before
 
 Your questions are read more carefully than your answers. Answers are prepared and everybody knows it. Questions are the one part of an interview that reveals how you actually think — what you notice, what you consider important, and whether you have understood the job well enough to ask something specific about it.
 
@@ -136,6 +136,16 @@ Asked plainly and without needling, these mark you as someone who thinks about t
 - Is there anything about the company right now that you would want to know if you were me?
 
 ## Questions to Ask at the End
+
+**"Do you have any questions for us?" is the only part of an interview you can prepare exactly**, and it is the last thing in the room before they start comparing you to somebody else. Recency is doing real work here: whatever you ask is disproportionately what they remember when they talk about you afterwards.
+
+Three things worth knowing before the list.
+
+**Saying "no, I think you've covered everything" is read as a signal, not as efficiency.** It rarely reads as rudeness, but it does read as low investment — and against a candidate who asked something specific, it is the difference in a close decision. Have two prepared regardless of how thorough the conversation was.
+
+**Two is usually right; four is too many.** They are almost always running to time and often have another candidate after you. Asking one signals politeness, two signals interest, and past three you have moved from interested to auditing them, which is a different and worse impression.
+
+**If it genuinely has all been covered, say so and then ask anyway.** "You've answered most of what I had — can I ask the one thing I'd still want to know?" acknowledges the conversation and buys the question. This is far stronger than either inventing something or declining.
 
 When there is time for one or two, these earn their place.
 
