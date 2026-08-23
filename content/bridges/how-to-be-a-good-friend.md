@@ -4,6 +4,9 @@ description: "Most bad friending is well-intentioned blocking — solving, redir
 target_keywords:
   - { keyword: "how to be a good friend", volume: 9200, difficulty: 5, traffic_potential: 2200, parent: "how to be a good friend" }
   - { keyword: "how to be less defensive", volume: 200, parent: "how to stop being defensive", difficulty: 2, traffic_potential: 350 }
+serp_checked: "2026-08-23"
+serp_min_dr: 54
+serp_verdict: authority
 entry_atoms: [be-supportive, be-thankful, offers, blocking, trust]
 entry_path: improv-for-life
 primary_problem: "you care about them and they have stopped telling you things"
