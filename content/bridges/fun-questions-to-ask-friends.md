@@ -267,4 +267,4 @@ All of this is one skill: making something up in front of people without checkin
 
 If these are fun to answer but you freeze on your own turn, that is not a personality trait. It is the planning habit, and it is trainable. `one-word-story` is the shortest way in — you contribute a single word at a time to a story nobody is steering, which makes planning impossible and invention automatic.
 
-For questions that go deeper rather than lighter, the companion list is [questions to ask friends](/questions-to-ask-friends), sorted by what opens up after the answer rather than by how enjoyable the answering is.
+For questions that go deeper rather than lighter, the companion list is [questions to ask friends](/questions-to-ask-friends), sorted by what opens up after the answer rather than by how enjoyable the answering is. If the group would rather answer about each other than about themselves, [most likely to questions](/most-likely-to-questions) is that format, and it carries the rules that keep it affectionate rather than pointed.

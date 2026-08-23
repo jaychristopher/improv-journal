@@ -292,6 +292,8 @@ Each one is answerable in three words without rudeness, and each has an obvious 
 
 If small talk itself is the part you find difficult — the mechanics of it, rather than what to ask — [how to make small talk](/how-to-make-small-talk) covers that, and it is mostly about receiving rather than supplying.
 
+And if the difficulty is not which question to ask but having to keep choosing one, [the 21 questions game](/21-questions-game) removes that job: an agreed count, taken in turn, so nobody has to decide when it is polite to stop.
+
 ## Interesting Questions to Ask
 
 Given everything above, this heading looks like a contradiction. It is not quite one, and the distinction is worth drawing precisely.

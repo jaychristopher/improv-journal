@@ -245,6 +245,7 @@ Every list includes some of these. Each one fails in a way worth understanding.
 - **"Tell us about your family."** Not optional to answer, and not everyone's family is a comfortable subject.
 - **"What is your biggest weakness?"** An interview question. People answer it with the strategic version and nobody believes any of it. If you are actually in an interview, [questions to ask in an interview](/questions-to-ask-in-an-interview) is a different job with a different list.
 - **"Describe yourself in three words."** Asks for self-classification. Categories close a conversation; specifics open one.
+- **"Who is most likely to…?"** A good party game and a poor workplace one. It asks colleagues to characterise each other out loud, and the person being pointed at gets no say in what the room has just decided they are. [Most likely to questions](/most-likely-to-questions) covers the setting where it does work, which is a group that already likes each other.
 - **Anything with a winner.** The moment an icebreaker becomes a competition, `safety-in-the-room` goes with it — people play not to lose rather than to be known.
 - **"Everybody stand up if..."** Forced physical participation removes the ability to decline quietly, which is the one thing that made the question safe.
 

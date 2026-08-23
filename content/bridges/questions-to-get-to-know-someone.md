@@ -312,7 +312,7 @@ The questions change less by audience than people expect. What changes is the co
 
 **Students in a new cohort** are in the specific position of knowing nobody and expecting to know everybody soon, which makes practical questions land better than personal ones: what they nearly studied instead, how far they have come, what they have not worked out yet about the place. The last of those is genuinely useful and gives the room something to do together.
 
-For a workplace, the constraint is different again — it is a power problem rather than an exposure problem, and it is covered in [icebreaker questions for work](/icebreaker-questions-for-work).
+For a workplace, the constraint is different again — it is a power problem rather than an exposure problem, and it is covered in [icebreaker questions for work](/icebreaker-questions-for-work). And where the difficulty is that neither of you wants to decide what comes next, [the 36 questions](/36-questions-to-fall-in-love) removes the choosing entirely by fixing the order in advance.
 
 ## Funny Icebreaker Questions
 
