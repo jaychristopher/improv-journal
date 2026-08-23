@@ -128,6 +128,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "theatre-games",
       "improv-prompts",
       "viewpoints",
+      "del-close",
     ],
   },
 ];

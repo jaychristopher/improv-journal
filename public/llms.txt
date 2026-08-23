@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (70)
+## Guides (71)
 
 - [21 Questions Game: How to Play, and 181 to Ask](https://www.physicsofconnection.com/21-questions-game): The number is the mechanism. A fixed count removes the polite exit at question six and guarantees an ending, which is the only reason this gets anywhere real.
 - [36 Questions to Fall in Love: The List and the Mechanism](https://www.physicsofconnection.com/36-questions-to-fall-in-love): The full set from Aron's 1997 study, plus what the lists leave out: what the procedure was built to do, and why the escalation does the work.
@@ -35,6 +35,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Confidence Building Exercises That Aren't Affirmations](https://www.physicsofconnection.com/confidence-building-exercises): Confidence is not a feeling you generate before acting — it is what accumulates after acting anyway. Seven exercises for pairs, six you can do alone.
 - [Conversation Starters: 192 That Survive the Second Exchange](https://www.physicsofconnection.com/conversation-starters): A starter only buys you one exchange. What you do with the second decides the rest. 192 sorted by the room you are in, and why the clever ones die fastest.
 - [Deep Questions to Ask: 153 That Get an Honest Answer](https://www.physicsofconnection.com/deep-questions-to-ask): Most deep questions ask for a conclusion, so they get a performance. These ask for an experience — plus what has to be true before any of them work at all.
+- [Del Close: The Ideas That Still Run Improv](https://www.physicsofconnection.com/del-close): Del Close invented the Harold and taught two generations of Chicago improvisers. What he actually believed, what holds up, and what the mythology hides.
 - [Emotional Safety: What It Is and How It Gets Built](https://www.physicsofconnection.com/emotional-safety): Emotional safety is the confidence that showing what you feel will not be used against you. It is built by repetition, not by announcement — here is how.
 - [Fear of Public Speaking: What Performers Know](https://www.physicsofconnection.com/fear-of-public-speaking): The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how.
 - [The Framing Effect: The Skill That Looks Like a Bias](https://www.physicsofconnection.com/framing-effect): The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years.

@@ -13,9 +13,21 @@ import { ogImages, pageTitle } from "@/lib/seo";
 
 // `desc` is the visible tagline and is deliberately terse. `meta` is the search
 // snippet, which has 158 characters to spend and was spending fifty.
+//
+// `guide` points at the full guide for a tradition where one exists. These
+// pages are assembled from atom metadata and are thin on their own — Search
+// Console had /traditions/close ranking for "del close improv" on a page that
+// is mostly navigation. The link hands that intent to the page written for it
+// rather than leaving the two to compete.
 const TRADITION_INFO: Record<
   string,
-  { label: string; desc: string; meta: string; keyTexts: string[] }
+  {
+    label: string;
+    desc: string;
+    meta: string;
+    keyTexts: string[];
+    guide?: { href: string; label: string };
+  }
 > = {
   johnstone: {
     label: "Keith Johnstone",
@@ -34,6 +46,7 @@ const TRADITION_INFO: Record<
     desc: "Group mind. Connections across scenes. The Harold as spiritual endeavor.",
     meta: "Del Close and Charna Halpern's improv: group mind, connections carried across scenes, and the Harold as a spiritual endeavor. Truth in Comedy, 1994.",
     keyTexts: ["Truth in Comedy (1994)"],
+    guide: { href: "/del-close", label: "Del Close: the ideas that still run improv" },
   },
   ucb: {
     label: "Upright Citizens Brigade",
@@ -134,6 +147,13 @@ export default async function TraditionPage({
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{info.label}</h1>
         <p className="text-foreground/60 mt-2">{info.desc}</p>
         <p className="text-foreground/40 mt-3 text-xs">Key texts: {info.keyTexts.join(" · ")}</p>
+        {info.guide && (
+          <p className="mt-4 text-sm">
+            <Link href={info.guide.href} className="underline">
+              {info.guide.label}
+            </Link>
+          </p>
+        )}
       </header>
 
       {/* Disagreements — the unique value */}
