@@ -206,12 +206,26 @@ const MAX_SHARED_WITH_ROUTE = 14;
 function fileProse(source: string, isJsx: boolean): string {
   const text = source.replace(/`/g, " ").replace(/^import[\s\S]*?;$/gm, " ");
   if (!isJsx) return text.replace(/\s+/g, " ");
-  return text
-    .replace(/className="[^"]*"/g, " ")
-    .replace(/href="[^"]*"/g, " ")
-    .replace(/\{[^{}]*\}/g, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ");
+
+  const attrs = text.replace(/className="[^"]*"/g, " ").replace(/href="[^"]*"/g, " ");
+
+  /*
+   * Long string literals are lifted out before the brace strip below, because
+   * that strip removes innermost {...} blocks and a data object inside a route
+   * file is exactly one of those. AUDIENCE_META in learn/[audience]/page.tsx
+   * holds five sets of orienting paragraphs in object literals with no nested
+   * braces, so the entire record was deleted and the file was compared as its
+   * own doc comments. Confirmed by pasting 76 words of how-to-stop-overthinking
+   * into it — the check passed.
+   *
+   * The .ts case the comment above describes is the same bug, and was fixed by
+   * routing those files around the strip entirely. This is the .tsx half, which
+   * that fix did not reach: a route file can hold prose in data too.
+   */
+  const literals = (attrs.match(/"(?:[^"\\]|\\.){40,}"/g) ?? []).join(" ");
+
+  const jsx = attrs.replace(/\{[^{}]*\}/g, " ").replace(/<[^>]+>/g, " ");
+  return `${jsx} ${literals}`.replace(/\s+/g, " ");
 }
 
 /**

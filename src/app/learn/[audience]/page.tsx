@@ -8,33 +8,69 @@ import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendation
 import type { Audience } from "@/lib/schema";
 import { ogImages, pageTitle } from "@/lib/seo";
 
-const AUDIENCE_META: Record<string, { title: string; description: string }> = {
-  beginner: {
-    title: "Improv for Beginners: Where to Start",
-    description:
-      "The fundamentals of connection - why conversations work, what makes them break, and how to practice. No stage experience required.",
-  },
-  intermediate: {
-    title: "Breaking Through a Plateau",
-    description:
-      "You know the basics but something isn't clicking. These paths help you name what's stuck and work through it.",
-  },
-  teacher: {
-    title: "Learning to Teach",
-    description:
-      "Teaching improv is its own skill. Curriculum design, feedback, progression - how to help others grow.",
-  },
-  performer: {
-    title: "Pushing Toward Mastery",
-    description:
-      "Advanced game, character, ensemble dynamics, and show architecture for experienced performers.",
-  },
-  advanced: {
-    title: "Research & Reference",
-    description:
-      "The full system map - laws, principles, patterns, and connections. For deep study and reference.",
-  },
-};
+/**
+ * Each audience hub gets orientation prose, the way the topic hubs already do.
+ *
+ * Four of these five rendered under 110 words — a heading, a one-line
+ * description and two or three cards. The topic hubs next door run 611 to 1,228
+ * because guide-categories gives each of them authored paragraphs about what
+ * the category has in common and how to choose inside it. Nothing about that
+ * argument is specific to topics; these pages ask the reader to make a bigger
+ * decision than a topic hub does, on less.
+ */
+const AUDIENCE_META: Record<string, { title: string; description: string; orientation: string[] }> =
+  {
+    beginner: {
+      title: "Improv for Beginners: Where to Start",
+      description:
+        "The fundamentals of connection - why conversations work, what makes them break, and how to practice. No stage experience required.",
+      orientation: [
+        "Nothing here assumes you want to perform. The material is about what happens when two people build something together in real time, and improv is simply where that got worked out in the most detail, by people who had to do it nightly in front of strangers. If you came looking for a way to be less stuck in conversations, you are in the right place and you will never need a stage.",
+        "Take one path rather than browsing several. The fundamentals compound, and they compound in an order — reception before building, building before shaping — so a path read through is worth considerably more than the same pages read out of sequence. Reading three articles about listening is also worth less than running one exercise twice, which is the part most people skip.",
+        "What this is not is a comedy course. Funny is a by-product here rather than a goal, and the guides say so. If your interest genuinely is performance, the improv-first paths are the ones to take; if it is the rest of life, the applied ones will get you there faster without pretending the two are the same thing.",
+      ],
+    },
+    intermediate: {
+      title: "Breaking Through a Plateau",
+      description:
+        "You know the basics but something isn't clicking. These paths help you name what's stuck and work through it.",
+      orientation: [
+        "A plateau at this stage is usually a vocabulary problem rather than a skill problem. You can feel that a scene died and cannot say why, so every note you give yourself is some version of try harder, which is not an instruction anyone can follow. Naming the failure is most of the repair, because each named failure has a different fix and guessing between them wastes the reps.",
+        "The paths here are diagnostic before they are prescriptive. Latency, fracture and decay look similar from the inside and want opposite responses — one wants you to move faster, one wants you to go back, one wants you to add detail to a world that has thinned out. Applying the wrong one is why the same scene keeps dying in the same way.",
+        "The temptation worth resisting is stacking more technique on top of an unnamed problem. Most intermediate plateaus are not solved by learning another form; they are solved by subtraction and by precision about what actually went wrong on Tuesday.",
+      ],
+    },
+    teacher: {
+      title: "Learning to Teach",
+      description:
+        "Teaching improv is its own skill. Curriculum design, feedback, progression - how to help others grow.",
+      orientation: [
+        "Being good at improv does not make you able to teach it. Explaining is a separate skill from doing, and the gap shows up immediately: a student asks why yes-and matters and the honest answer, if all you have is your own practice, turns out to be because it works, which teaches nobody anything.",
+        "Three things do most of the work. Safety comes first because nothing else functions without it — a room where being wrong is expensive produces careful, boring scenes no matter how good the exercises are. Sequencing comes second, because skills have prerequisites and most curricula quietly assume ones they never taught. Feedback comes third, and the test of a note is whether the student can do something different next time, not whether it demonstrated that you saw the problem.",
+        "The trap is teaching your own teacher's class from memory. Improv teachers should teach differently; what they share is the ability to explain, to make a room safe, and to design an exercise where the student discovers the principle instead of being told it.",
+      ],
+    },
+    performer: {
+      title: "Pushing Toward Mastery",
+      description:
+        "Advanced game, character, ensemble dynamics, and show architecture for experienced performers.",
+      orientation: [
+        "Advanced work is mostly about what you stop doing. The moves at this level — letting a pattern invert, building a character out of body and status rather than biography, holding a silence that a less experienced performer would fill — are subtractions, and they only become available once the basics cost you no attention.",
+        "The unit of attention also changes. Up to here the question has been whether a scene works; from here it is whether a show coheres, which is a different problem with different tools: editing, heat and weight, the run, and the connective tissue that turns a set of scenes into something an audience experiences as one thing.",
+        "The caution is that advanced framing can become one more thing to monitor mid-scene. Game-awareness is a lens for looking back at what happened, and it paralyses people the moment it turns into a mandate to be executed live. Everything here is worth knowing and none of it is worth thinking about while a scene is running.",
+      ],
+    },
+    advanced: {
+      title: "Research & Reference",
+      description:
+        "The full system map - laws, principles, patterns, and connections. For deep study and reference.",
+      orientation: [
+        "This is the map rather than a route through it. The laws, principles, patterns and failure modes are set out with what connects to what, for readers who want the system itself rather than a lesson plan built out of it.",
+        "The traditions disagree, and the disagreements are recorded rather than smoothed over. Johnstone and the Chicago lineage do not want the same things from a scene, Napier argues against the rule most schools teach first, and where a claim is contested the counter-position is stated next to it with its source. That is deliberate: a reference that only reports the consensus is hiding the most useful part.",
+        "It is not written to be read front to back. Follow a concept into the atoms it links to, or start from a book in the library and work outward through the ideas that came from it.",
+      ],
+    },
+  };
 
 const VALID_AUDIENCES = new Set(Object.keys(AUDIENCE_META));
 
@@ -98,6 +134,14 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{meta.title}</h1>
         <p className="text-foreground/60 mt-2">{meta.description}</p>
       </header>
+
+      <section className="mb-12">
+        {meta.orientation.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
+            {paragraph}
+          </p>
+        ))}
+      </section>
 
       {isBeginner && recommendedPath ? (
         <>
