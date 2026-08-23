@@ -4,6 +4,9 @@ description: "The fear of judgment isn't weakness — it's a misfire of your soc
 target_keywords:
   - { keyword: "how to stop caring what people think", volume: 2400, difficulty: 2, traffic_potential: 3000, parent: "how to not care what people think" }
   - { keyword: "fear of judgment", volume: 150, parent: "fear of judgment" }
+serp_checked: "2026-08-22"
+serp_min_dr: 4
+serp_verdict: winnable
 entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave, internal-computation]
 entry_path: systems-of-improv
 status: draft

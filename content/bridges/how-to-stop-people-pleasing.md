@@ -4,6 +4,9 @@ description: "People pleasing is blocking in disguise: refusing your own offers 
 target_keywords:
   - { keyword: "how to stop people pleasing", volume: 1200, difficulty: 0, traffic_potential: 1900, parent: "how to stop being a people pleaser" }
   - { keyword: "people pleasing", volume: 3600, parent: "people pleasing" }
+serp_checked: "2026-08-22"
+serp_min_dr: 10
+serp_verdict: winnable
 entry_atoms: [blocking, commitment, be-honest, status, performing-cleverness, yes-and]
 entry_path: improv-for-life
 status: draft

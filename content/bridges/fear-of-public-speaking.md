@@ -4,6 +4,9 @@ description: "The fear of public speaking and stage fright are the same physiolo
 target_keywords:
   - { keyword: "fear of public speaking", volume: 3300, parent: "fear of public speaking" }
   - { keyword: "glossophobia", volume: 1300, parent: "glossophobia" }
+serp_checked: "2026-08-22"
+serp_min_dr: 37
+serp_verdict: authority
 entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience-relationship]
 entry_path: systems-of-improv
 status: draft
