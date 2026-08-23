@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
@@ -44,6 +45,7 @@ export default async function ExercisesPage() {
     title: a.frontmatter.title,
     href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
     tags: a.frontmatter.tags ?? [],
+    rules: a.frontmatter.how_to_play,
     preview: leadParagraph(stripLeadLabel(a.content), 180),
   }));
 
@@ -66,7 +68,13 @@ export default async function ExercisesPage() {
       <header className="mb-8">
         <h1 className="mt-1 text-3xl font-bold tracking-tight">Exercises ({exercises.length})</h1>
         <p className="text-foreground/60 mt-2 mb-2">
-          Structured activities that build specific skills through constraints.
+          Structured activities that build specific skills through constraints. This is the
+          filterable index; for the same material written as a guide — how to choose one, how to run
+          it, and what each is for — see{" "}
+          <Link href="/improv-games" className="underline">
+            improv games
+          </Link>
+          .
         </p>
       </header>
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
