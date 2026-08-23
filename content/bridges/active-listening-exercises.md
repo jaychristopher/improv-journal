@@ -17,7 +17,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Active Listening Exercises That Actually Train It
@@ -179,3 +179,5 @@ See `questions-only` for the full version and the argument about when it stops h
 **Then take one into a real conversation.** The last-word rule works silently in a meeting. Nobody knows you are doing it, and it is the fastest way to find out how much of your listening was queue management.
 
 For the mechanism underneath all of this — why planning consumes the bandwidth reception needs — see `internal-computation` and the guide to [active listening](/active-listening). For the three attention modes these exercises move you between, see [types of listening](/types-of-listening).
+
+Drills are the narrow end of this. For the question they answer rather than the practice — what listening is, and what actually stops people doing it — see [how to be a good listener](/how-to-be-a-good-listener).

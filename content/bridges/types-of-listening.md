@@ -13,7 +13,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Types of Listening: The Improv Framework for Understanding How We Hear
@@ -121,3 +121,5 @@ The next time someone is telling you something that matters to them — not a ca
 You'll notice two things immediately: the conversation deepens, and the other person opens up. Not because you used a technique. Because you gave them something rare — the experience of being fully received by another person.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, cognitive bandwidth, and the mechanics of attention, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+Knowing which mode you are in is the diagnostic half. The practical half is what to do about it: [how to be a good listener](/how-to-be-a-good-listener) covers the obstacles that keep people stuck in the wrong mode, and [active listening exercises](/active-listening-exercises) are the drills that train the shift without a conversation to hide inside.

@@ -118,3 +118,5 @@ This is what improv performers create on stage every night. Two people, fully tr
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, offers, and the cognitive mechanics of attention, explore the [Improv for Life](/paths/improv-for-life) path.*
 
 Listening well is easier when the question was worth asking. The [deep questions to ask](/deep-questions-to-ask) collection is chosen on that basis — questions that earn an honest answer rather than a polite one, which is most of what makes the listening worth doing.
+
+Two things sit either side of this page. [Active listening](/active-listening) is the named version of the skill, and mostly an account of how the name gets taught wrong. [Types of listening](/types-of-listening) is the finer distinction underneath it — three modes rather than one, and the reason advice that works in one situation fails flatly in another.
