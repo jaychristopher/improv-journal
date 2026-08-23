@@ -1,7 +1,7 @@
 ---
 id: systems-of-improv
 title: "Systems of Improv: A Thinking Person's Guide"
-description: "Why improv works, explained as a system. For analytical minds who need the WHY before they can commit to the HOW. Start with the physics, end with the practice."
+description: "Why improv works, explained as a system, for people who need the reasoning before the practice. Starts with the physics and ends with the exercises."
 learning_objectives:
   - "Understand the seven laws that make improv principles coherent instead of arbitrary."
   - "Translate yes-and, presence, and practice into a systems model you can reason about."

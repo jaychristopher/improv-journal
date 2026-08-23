@@ -1,7 +1,7 @@
 ---
 id: self-coaching-toolkit
 title: "The Self-Coaching Toolkit"
-description: "A diagnostic vocabulary for intermediate improvisers who can feel what's wrong but can't name it. Stop saying 'I don't know, it just died' and start saying exactly what happened."
+description: "A diagnostic vocabulary for improvisers who can feel what went wrong but cannot name it. Stop saying the scene just died and say what actually happened."
 learning_objectives:
   - "Diagnose scene failure with a more precise vocabulary than 'it just died.'"
   - "Recognize plateau patterns, collapse modes, and signal clarity problems in your own work."

@@ -1,7 +1,7 @@
 ---
 id: reference-guide
 title: "The Improv Reference Guide"
-description: "A cross-referenced, multi-tradition analysis of improvisation. Sourced claims, counter-positions, and the first knowledge graph that holds Johnstone, Spolin, Close, UCB, and Annoyance in one linked structure."
+description: "A cross-referenced analysis of improvisation across five traditions — Johnstone, Spolin, Close, UCB and Annoyance — with sources and counter-positions."
 learning_objectives:
   - "Navigate the graph by concept, tradition, type, and disagreement."
   - "Understand how the major improv lineages agree, diverge, and source their claims."

@@ -1,7 +1,7 @@
 ---
 id: mastering-the-form
 title: "Mastering the Form"
-description: "You know Harold. You can do montage. Now what? A guide to every major longform format — what each demands, what each teaches — and how show-level craft turns a collection of scenes into a shaped experience."
+description: "You know Harold and you can do montage. Now what? Every major longform format, what each one demands, and how show craft shapes a run of scenes."
 learning_objectives:
   - "Understand what different longform structures teach and demand."
   - "Develop show-level craft instead of treating scenes as isolated successes."

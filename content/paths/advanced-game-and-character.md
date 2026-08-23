@@ -1,7 +1,7 @@
 ---
 id: advanced-game-and-character
 title: "Advanced Game and Character"
-description: "Beyond 'find the game' and 'make a character choice.' Advanced game mechanics — how games evolve, invert, and break. Advanced character — built from body, status, and game rather than biography and accent."
+description: "Beyond finding the game and making a choice. How games evolve, invert and break, and character built from body, status and game rather than accent."
 learning_objectives:
   - "Recognize higher-order game mechanics like inversion, transformation, and earned breakage."
   - "Build character from body, status, and scenic pattern instead of biography alone."

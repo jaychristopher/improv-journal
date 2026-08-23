@@ -327,17 +327,17 @@ This file is generated from the site's content, so it lists everything rather th
 
 ## Learning paths (11)
 
-- [Advanced Game and Character](https://www.physicsofconnection.com/paths/advanced-game-and-character): Beyond 'find the game' and 'make a character choice.' Advanced game mechanics — how games evolve, invert, and break. Advanced character — built from body, status, and game rather than biography and accent.
+- [Advanced Game and Character](https://www.physicsofconnection.com/paths/advanced-game-and-character): Beyond finding the game and making a choice. How games evolve, invert and break, and character built from body, status and game rather than accent.
 - [Foundations: Your First Steps in Improv](https://www.physicsofconnection.com/paths/beginner-foundations): A 7-day beginner program for learning the essential principles and first habits of improv.
 - [Improv for Everyday Life](https://www.physicsofconnection.com/paths/improv-for-life): The principles improvisers use on stage work everywhere — conversations, relationships, work, and the moments that matter. No stage required.
 - [Improv for Teams and Leaders](https://www.physicsofconnection.com/paths/improv-for-teams): What improv ensembles know about trust, collaboration, and group dynamics — applied to teams that need to work together without a script.
-- [Mastering the Form](https://www.physicsofconnection.com/paths/mastering-the-form): You know Harold. You can do montage. Now what? A guide to every major longform format — what each demands, what each teaches — and how show-level craft turns a collection of scenes into a shaped experience.
-- [Systems of Improv: A Thinking Person's Guide](https://www.physicsofconnection.com/paths/systems-of-improv): Why improv works, explained as a system. For analytical minds who need the WHY before they can commit to the HOW. Start with the physics, end with the practice.
-- [Teaching Improv: From Performer to Pedagogue](https://www.physicsofconnection.com/paths/teaching-improv): For good improvisers who've been asked to teach. You can DO it — now learn to explain WHY it works, structure a class, give feedback that changes behavior, and create safety in the room.
-- [The Art of Ensemble](https://www.physicsofconnection.com/paths/the-art-of-ensemble): The craft of performing at the highest level — backline mastery, ensemble coherence, managing performance state, developing an artistic voice, and the practices that make group mind more than a metaphor.
-- [The Improv Reference Guide](https://www.physicsofconnection.com/paths/reference-guide): A cross-referenced, multi-tradition analysis of improvisation. Sourced claims, counter-positions, and the first knowledge graph that holds Johnstone, Spolin, Close, UCB, and Annoyance in one linked structure.
+- [Mastering the Form](https://www.physicsofconnection.com/paths/mastering-the-form): You know Harold and you can do montage. Now what? Every major longform format, what each one demands, and how show craft shapes a run of scenes.
+- [Systems of Improv: A Thinking Person's Guide](https://www.physicsofconnection.com/paths/systems-of-improv): Why improv works, explained as a system, for people who need the reasoning before the practice. Starts with the physics and ends with the exercises.
+- [Teaching Improv: From Performer to Pedagogue](https://www.physicsofconnection.com/paths/teaching-improv): For good improvisers asked to teach. Explaining why it works, structuring a class, giving feedback that changes behaviour, and making the room safe.
+- [The Art of Ensemble](https://www.physicsofconnection.com/paths/the-art-of-ensemble): Performing at the highest level: backline craft, ensemble coherence, managing performance state, and the practices that make group mind more than a metaphor.
+- [The Improv Reference Guide](https://www.physicsofconnection.com/paths/reference-guide): A cross-referenced analysis of improvisation across five traditions — Johnstone, Spolin, Close, UCB and Annoyance — with sources and counter-positions.
 - [The Physics of Connection](https://www.physicsofconnection.com/paths/physics-of-connection): What improv reveals about every conversation you'll ever have. A guide to the invisible forces that make human connection work — and what breaks it.
-- [The Self-Coaching Toolkit](https://www.physicsofconnection.com/paths/self-coaching-toolkit): A diagnostic vocabulary for intermediate improvisers who can feel what's wrong but can't name it. Stop saying 'I don't know, it just died' and start saying exactly what happened.
+- [The Self-Coaching Toolkit](https://www.physicsofconnection.com/paths/self-coaching-toolkit): A diagnostic vocabulary for improvisers who can feel what went wrong but cannot name it. Stop saying the scene just died and say what actually happened.
 
 ## Author
 

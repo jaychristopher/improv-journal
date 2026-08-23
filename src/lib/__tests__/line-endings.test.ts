@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import { extractDescription, leadParagraph } from "../seo";
+import { loadPaths } from "../content";
+import { DESCRIPTION_MAX, extractDescription, leadParagraph } from "../seo";
 
 /**
  * A Windows line ending must not change what a page says about itself.
@@ -53,5 +54,63 @@ describe("line endings", () => {
     ].join("\r\n\r\n");
     expect(extractDescription(citation)).not.toContain("Bell Tower");
     expect(extractDescription(citation)).toContain("life philosophy");
+  });
+});
+
+/**
+ * The frontmatter strip must not fire on a horizontal rule.
+ *
+ * It carried the /m flag, so `^---` matched any line starting with three
+ * dashes, and `[\s\S]*?---` then ran to the next one. gray-matter has already
+ * removed the real frontmatter by the time these callers run, so the only thing
+ * left for that pattern to match is a pair of horizontal rules — and everything
+ * between them is silently deleted from the description.
+ *
+ * No page has two today; 28 have one, and adding a second is an ordinary
+ * editorial act. Anchored to the start of the string, which is where
+ * frontmatter actually is.
+ */
+describe("frontmatter stripping", () => {
+  it("leaves a body containing horizontal rules intact", () => {
+    const body = [
+      "The opening sentence that belongs in the description.",
+      "---",
+      "A middle section that must survive.",
+      "---",
+      "A closing note.",
+    ].join("\n\n");
+    expect(extractDescription(body)).toContain("opening sentence");
+    // The detecting assertion. With the /m flag the strip ran from the first
+    // horizontal rule to the second and deleted the middle section outright,
+    // so a long-budget description skipped straight from the opening to the
+    // closing note. Asserting on leadParagraph instead proves nothing: it
+    // returns the first paragraph either way.
+    expect(extractDescription(body, 400)).toContain("middle section");
+  });
+});
+
+/**
+ * A learning path's description must fit the snippet budget.
+ *
+ * Guides have had this check since they were written; paths never did, and the
+ * audit only logs an info-level note. Seven of the eleven were over — the worst
+ * at 208 characters against a 158 budget — so every one of them was being cut
+ * off with an ellipsis in results, including paths/teaching-improv, which
+ * Search Console shows being surfaced.
+ *
+ * The value of writing a description is deciding what the sentence says. A
+ * description long enough to be truncated hands that decision back to the
+ * truncation.
+ */
+describe("path descriptions", () => {
+  it("fits the snippet budget", async () => {
+    const paths = await loadPaths();
+    expect(paths.length).toBeGreaterThan(5);
+
+    const over = paths
+      .filter((p) => (p.frontmatter.description ?? "").length > DESCRIPTION_MAX)
+      .map((p) => `${p.slug} (${p.frontmatter.description.length})`);
+
+    expect(over).toEqual([]);
   });
 });

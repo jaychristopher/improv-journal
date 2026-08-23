@@ -118,7 +118,10 @@ function dropBoldLeadParagraph(body: string): string {
  */
 export function leadParagraph(markdownContent: string, maxLen = 300): string {
   const body = normaliseNewlines(markdownContent)
-    .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
+    // Anchored, no /m. With the flag, `^---` matched any line of three dashes
+    // and the pattern ran to the next one, so a body with two horizontal rules
+    // lost everything between them. Frontmatter is only ever at the start.
+    .replace(/^---[\s\S]*?---\n*/, "") // frontmatter
     .replace(/^#{1,6}\s+.*$/gm, ""); // headings
 
   const paragraph = body
@@ -265,7 +268,10 @@ export function pageTitle(title: string): string | { absolute: string } {
 export function extractDescription(markdownContent: string, maxLen = 155): string {
   const prose = dropBoldLeadParagraph(
     normaliseNewlines(markdownContent)
-      .replace(/^---[\s\S]*?---\n*/m, "") // frontmatter
+      // Anchored, no /m. With the flag, `^---` matched any line of three dashes
+      // and the pattern ran to the next one, so a body with two horizontal rules
+      // lost everything between them. Frontmatter is only ever at the start.
+      .replace(/^---[\s\S]*?---\n*/, "") // frontmatter
       .replace(/^#{1,6}\s+.*$/gm, "") // headings
       .replace(/^\s*\|.*$/gm, ""), // table rows, which collapse into pipe soup
   );

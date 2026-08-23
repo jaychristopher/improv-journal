@@ -1,7 +1,7 @@
 ---
 id: teaching-improv
 title: "Teaching Improv: From Performer to Pedagogue"
-description: "For good improvisers who've been asked to teach. You can DO it — now learn to explain WHY it works, structure a class, give feedback that changes behavior, and create safety in the room."
+description: "For good improvisers asked to teach. Explaining why it works, structuring a class, giving feedback that changes behaviour, and making the room safe."
 learning_objectives:
   - "Explain core improv principles in a way students can actually use."
   - "Design classes with sequencing, safety, and specific feedback in mind."

@@ -1,7 +1,7 @@
 ---
 id: the-art-of-ensemble
 title: "The Art of Ensemble"
-description: "The craft of performing at the highest level — backline mastery, ensemble coherence, managing performance state, developing an artistic voice, and the practices that make group mind more than a metaphor."
+description: "Performing at the highest level: backline craft, ensemble coherence, managing performance state, and the practices that make group mind more than a metaphor."
 learning_objectives:
   - "Understand the conditions that make group mind practical rather than mystical."
   - "Improve backline awareness, ensemble coherence, and performance-state management."
