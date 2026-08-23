@@ -3,11 +3,11 @@ title: "Deep Questions to Ask: 125 That Get an Honest Answer"
 description: "Most deep questions ask for a conclusion, so they get a performance. These ask for an experience — plus what has to be true before any of them work at all."
 target_keywords:
   - { keyword: "deep questions to ask", volume: 24000, difficulty: 8, traffic_potential: 67000, parent: "deep questions to ask" }
-  - { keyword: "deep conversation starters", volume: 6600, difficulty: 3, parent: "deep conversation starters" }
-  - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2, parent: "deep questions to ask" }
+  - { keyword: "deep conversation starters", volume: 6600, difficulty: 3, parent: "deep conversation starters", traffic_potential: 4600 }
+  - { keyword: "deep questions to ask friends", volume: 5600, difficulty: 2, parent: "deep questions to ask", traffic_potential: 13000 }
   - { keyword: "thought provoking questions", volume: 5900, difficulty: 3, traffic_potential: 74000, parent: "deep questions to ask" }
   - { keyword: "questions that make you think", volume: 3200, difficulty: 0, traffic_potential: 82000, parent: "deep questions to ask" }
-  - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12, parent: "deep questions to ask" }
+  - { keyword: "meaningful questions to ask", volume: 70, difficulty: 12, parent: "deep questions to ask", traffic_potential: 87000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 12
 serp_verdict: winnable

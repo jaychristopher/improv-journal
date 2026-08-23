@@ -3,8 +3,8 @@ title: "How to Be a Better Manager: Coach Without Taking Over"
 description: "Your job is not to have the best ideas — it's to make other people's work land. Improv directing has a precise method for that, and most managers invert it."
 target_keywords:
   - { keyword: "how to be a better manager", volume: 400, difficulty: 1, traffic_potential: 1800, parent: "how to be a good manager" }
-  - { keyword: "how to be a better leader", volume: 700, parent: "leadership" }
-  - { keyword: "one on one meetings", volume: 500, parent: "one on one meeting" }
+  - { keyword: "how to be a better leader", volume: 700, parent: "leadership", difficulty: 22, traffic_potential: 29000 }
+  - { keyword: "one on one meetings", volume: 500, parent: "one on one meeting", difficulty: 10, traffic_potential: 1800 }
 serp_checked: "2026-08-22"
 serp_min_dr: 59
 serp_verdict: authority

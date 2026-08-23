@@ -3,10 +3,10 @@ title: "Trust Building Exercises That Aren't Trust Falls"
 description: "Trust is not built by dramatic gestures but by small repeated exchanges. Seven exercises that rehearse them — for a team, or for two people."
 target_keywords:
   - { keyword: "trust building exercises", volume: 200, difficulty: 6, traffic_potential: 700, parent: "trust exercises" }
-  - { keyword: "trust building activities", volume: 150, parent: "trust exercises" }
-  - { keyword: "team trust exercises", volume: 150, parent: "team trust building activities" }
-  - { keyword: "psychological safety exercises", volume: 100, parent: "team trust exercises" }
-  - { keyword: "group trust exercises", volume: 80, parent: "trust building exercises for leadership teams" }
+  - { keyword: "trust building activities", volume: 150, parent: "trust exercises", difficulty: 5, traffic_potential: 800 }
+  - { keyword: "team trust exercises", volume: 150, parent: "team trust building activities", difficulty: 5, traffic_potential: 500 }
+  - { keyword: "psychological safety exercises", volume: 100, parent: "team trust exercises", difficulty: 3, traffic_potential: 700 }
+  - { keyword: "group trust exercises", volume: 80, parent: "trust building exercises for leadership teams", difficulty: 4, traffic_potential: 200 }
 serp_checked: "2026-08-22"
 serp_min_dr: 13
 serp_verdict: winnable

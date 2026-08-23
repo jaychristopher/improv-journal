@@ -3,8 +3,8 @@ title: "How to Be a Good Listener (Not the Kind You Think)"
 description: "Most listening advice tells you to nod and paraphrase. Real listening — the kind improv performers stake their careers on — works completely differently."
 target_keywords:
   - { keyword: "how to be a good listener", volume: 900, difficulty: 3, traffic_potential: 1500, parent: "how to be a better listener" }
-  - { keyword: "how to be a better listener", volume: 1100, parent: "how to be a better listener" }
-  - { keyword: "listening skills", volume: 800, parent: "how to practice active listening" }
+  - { keyword: "how to be a better listener", volume: 1500, parent: "how to be a better listener", difficulty: 7, traffic_potential: 1500 }
+  - { keyword: "listening skills", volume: 3100, parent: "how to practice active listening", difficulty: 45, traffic_potential: 11000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 24
 serp_verdict: winnable

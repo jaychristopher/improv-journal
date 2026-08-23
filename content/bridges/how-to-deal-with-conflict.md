@@ -2,7 +2,7 @@
 title: "How to Deal with Conflict: The Acceptance Paradox"
 description: "Most conflict advice says 'communicate better' without explaining the mechanism. Conflict escalates when people block each other's reality. Here's the fix."
 target_keywords:
-  - { keyword: "how to deal with conflict", volume: 5000, difficulty: 32, traffic_potential: 800, parent: "how to improve conflict resolution skills" }
+  - { keyword: "how to deal with conflict", volume: 250, difficulty: 32, traffic_potential: 800, parent: "how to improve conflict resolution skills" }
 serp_checked: "2026-08-22"
 serp_min_dr: 60
 serp_verdict: authority

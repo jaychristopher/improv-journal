@@ -2,7 +2,7 @@
 title: "How to Stop Overthinking and Get Out of Your Head"
 description: "Overthinking is not a thinking problem, it is a bandwidth problem — which is why you cannot think your way out of your head. What works instead."
 target_keywords:
-  - { keyword: "how to stop overthinking", volume: 16000, difficulty: 34, parent: "how to stop overthinking" }
+  - { keyword: "how to stop overthinking", volume: 16000, difficulty: 34, parent: "how to stop overthinking", traffic_potential: 4300 }
   - { keyword: "get out of your head", volume: 3300, difficulty: 6, traffic_potential: 1400, parent: "get out of your head" }
   - { keyword: "how to get out of your head", volume: 1800, difficulty: 0, traffic_potential: 1000, parent: "how to get out of your head" }
   - { keyword: "overthinking", volume: 23000, difficulty: 49, traffic_potential: 3400, parent: "overthinking" }

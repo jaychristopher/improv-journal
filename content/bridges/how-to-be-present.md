@@ -3,8 +3,8 @@ title: "How to Be Present: The Bandwidth Trick That Actually Works"
 description: "Presence isn't a spiritual practice — it's a bandwidth allocation problem. Your brain has finite processing capacity, and internal chatter hogs it."
 target_keywords:
   - { keyword: "how to be present", volume: 500, difficulty: 3, traffic_potential: 1000, parent: "how to be more present" }
-  - { keyword: "how to be more present", volume: 500, parent: "how to be more present" }
-  - { keyword: "how to be present in the moment", volume: 300, parent: "how to be more present" }
+  - { keyword: "how to be more present", volume: 500, parent: "how to be more present", difficulty: 14, traffic_potential: 1500 }
+  - { keyword: "how to be present in the moment", volume: 300, parent: "how to be more present", difficulty: 3, traffic_potential: 1000 }
 entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, active-listening]
 entry_path: systems-of-improv
 status: draft

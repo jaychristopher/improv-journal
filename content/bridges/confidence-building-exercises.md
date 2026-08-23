@@ -3,10 +3,10 @@ title: "Confidence Building Exercises That Aren't Affirmations"
 description: "Confidence is not a feeling you generate before acting — it is what accumulates after acting anyway. Seven exercises for pairs, six you can do alone."
 target_keywords:
   - { keyword: "confidence building exercises", volume: 600, difficulty: 8, traffic_potential: 700, parent: "confidence building exercises" }
-  - { keyword: "confidence building activities", volume: 200, parent: "confidence building exercises" }
-  - { keyword: "public speaking exercises", volume: 150, parent: "public speaking activities" }
-  - { keyword: "confidence exercises", volume: 100, parent: "confidence building exercises" }
-  - { keyword: "self confidence exercises", volume: 80, parent: "confidence building exercises" }
+  - { keyword: "confidence building activities", volume: 200, parent: "confidence building exercises", difficulty: 7, traffic_potential: 300 }
+  - { keyword: "public speaking exercises", volume: 150, parent: "public speaking activities", difficulty: 1, traffic_potential: 350 }
+  - { keyword: "confidence exercises", volume: 100, parent: "confidence building exercises", difficulty: 6, traffic_potential: 700 }
+  - { keyword: "self confidence exercises", volume: 80, parent: "confidence building exercises", difficulty: 9, traffic_potential: 700 }
 serp_checked: "2026-08-22"
 serp_min_dr: 1
 serp_verdict: winnable

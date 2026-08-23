@@ -9,9 +9,9 @@ target_keywords:
       traffic_potential: 17000,
       parent: "ice breaker questions for work",
     }
-  - { keyword: "funny icebreaker questions for work", volume: 700, parent: "ice breaker questions for work" }
-  - { keyword: "work icebreakers", volume: 200, parent: "virtual ice breakers" }
-  - { keyword: "virtual icebreaker questions", volume: 100, parent: "icebreaker questions for work" }
+  - { keyword: "funny icebreaker questions for work", volume: 700, parent: "ice breaker questions for work", difficulty: 16, traffic_potential: 12000 }
+  - { keyword: "work icebreakers", volume: 200, parent: "virtual ice breakers", difficulty: 8, traffic_potential: 2800 }
+  - { keyword: "virtual icebreaker questions", volume: 100, parent: "icebreaker questions for work", difficulty: 16, traffic_potential: 700 }
 serp_checked: "2026-08-22"
 serp_min_dr: 31
 serp_verdict: winnable

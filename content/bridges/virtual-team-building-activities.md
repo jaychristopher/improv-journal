@@ -9,10 +9,10 @@ target_keywords:
       traffic_potential: 5800,
       parent: "virtual team building activities",
     }
-  - { keyword: "virtual team building", volume: 1900, parent: "virtual team building activities" }
-  - { keyword: "remote team building activities", volume: 900, parent: "remote team building activities" }
-  - { keyword: "online team building activities", volume: 700, parent: "virtual team building activities" }
-  - { keyword: "virtual team building games", volume: 600, parent: "virtual team building games" }
+  - { keyword: "virtual team building", volume: 900, parent: "virtual team building activities", difficulty: 3, traffic_potential: 600 }
+  - { keyword: "remote team building activities", volume: 900, parent: "remote team building activities", difficulty: 11, traffic_potential: 900 }
+  - { keyword: "online team building activities", volume: 300, parent: "virtual team building activities", difficulty: 10, traffic_potential: 4500 }
+  - { keyword: "virtual team building games", volume: 900, parent: "virtual team building games", difficulty: 20, traffic_potential: 350 }
 serp_checked: "2026-08-22"
 serp_min_dr: 31
 serp_verdict: winnable

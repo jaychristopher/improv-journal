@@ -9,11 +9,11 @@ target_keywords:
       traffic_potential: 27000,
       parent: "questions to ask during an interview",
     }
-  - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4, parent: "questions to ask interviewer" }
-  - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2, parent: "best questions to ask an interviewer" }
-  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, parent: "questions to ask at the end of an interview" }
-  - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview" }
-  - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4, parent: "unique interview questions to ask employer" }
+  - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4, parent: "questions to ask interviewer", traffic_potential: 22000 }
+  - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2, parent: "best questions to ask an interviewer", traffic_potential: 22000 }
+  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, parent: "questions to ask at the end of an interview", traffic_potential: 15000 }
+  - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview", traffic_potential: 27000 }
+  - { keyword: "unique interview questions to ask employer", volume: 10000, difficulty: 4, parent: "unique interview questions to ask employer", traffic_potential: 9100 }
 serp_checked: "2026-08-22"
 serp_min_dr: 78
 serp_verdict: authority

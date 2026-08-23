@@ -2,7 +2,7 @@
 title: "Active Listening Skills: Why You're Doing It Wrong"
 description: "Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible."
 target_keywords:
-  - { keyword: "active listening skills", volume: 7500, difficulty: 68, parent: "active listening" }
+  - { keyword: "active listening skills", volume: 7800, difficulty: 68, parent: "active listening", traffic_potential: 9900 }
 serp_checked: "2026-08-22"
 serp_min_dr: 62
 serp_verdict: authority

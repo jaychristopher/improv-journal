@@ -3,9 +3,9 @@ title: "Active Listening Exercises That Actually Train It"
 description: "Most listening exercises rehearse looking attentive. These eleven make composing your reply structurally impossible — seven for pairs, four for a group."
 target_keywords:
   - { keyword: "active listening exercises", volume: 700, difficulty: 3, traffic_potential: 1200, parent: "active listening activities" }
-  - { keyword: "listening exercises", volume: 400, parent: "active listening exercises" }
-  - { keyword: "communication exercises", volume: 200, parent: "communication games" }
-  - { keyword: "active listening activities", volume: 150, parent: "active listening activities" }
+  - { keyword: "listening exercises", volume: 100, parent: "active listening exercises", difficulty: 10, traffic_potential: 500 }
+  - { keyword: "communication exercises", volume: 200, parent: "communication games", difficulty: 4, traffic_potential: 1200 }
+  - { keyword: "active listening activities", volume: 300, parent: "active listening activities", difficulty: 1, traffic_potential: 1200 }
 serp_checked: "2026-08-22"
 serp_min_dr: 30
 serp_verdict: winnable

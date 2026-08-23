@@ -2,11 +2,11 @@
 title: "How to Be Funny (It's Not What You Think)"
 description: "Funny isn't a skill you add on top. It's what happens when two people are honest and specific together. Here's what 50 years of improv reveals about humor."
 target_keywords:
-  - { keyword: "how to be funny", volume: 6600, difficulty: 2, traffic_potential: 3500, parent: "how to be funny" }
-  - { keyword: "how to be funnier", volume: 500, difficulty: 0, parent: "how to be funny" }
-  - { keyword: "how to be more funny", volume: 350, difficulty: 1, parent: "how to be funny" }
+  - { keyword: "how to be funny", volume: 6100, difficulty: 2, traffic_potential: 3500, parent: "how to be funny" }
+  - { keyword: "how to be funnier", volume: 500, difficulty: 0, parent: "how to be funny", traffic_potential: 3700 }
+  - { keyword: "how to be more funny", volume: 350, difficulty: 1, parent: "how to be funny", traffic_potential: 3500 }
   - { keyword: "how to be a funny person", volume: 70, difficulty: 0, traffic_potential: 3700, parent: "how to be funny" }
-  - { keyword: "how to be naturally funny", volume: 50, difficulty: 2, parent: "how to be funny" }
+  - { keyword: "how to be naturally funny", volume: 50, difficulty: 2, parent: "how to be funny", traffic_potential: 3500 }
 serp_checked: "2026-08-22"
 serp_min_dr: 2
 serp_verdict: winnable

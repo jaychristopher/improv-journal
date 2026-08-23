@@ -2,10 +2,10 @@
 title: "Psychological Safety: The Physics of Trust"
 description: "Psychological safety isn't about being nice. It's about specific behaviors that make risk feel safe. Here's what improv ensembles learned about trust."
 target_keywords:
-  - { keyword: "psychological safety", volume: 11000, difficulty: 64, parent: "psychological safety" }
+  - { keyword: "psychological safety", volume: 16000, difficulty: 64, parent: "psychological safety", traffic_potential: 4100 }
   - { keyword: "psychological safety at work", volume: 2700, difficulty: 24, traffic_potential: 3900, parent: "psychological safety" }
-  - { keyword: "what is psychological safety", volume: 1300, parent: "psychological safety" }
-  - { keyword: "creating psychological safety in the workplace", volume: 200, parent: "psychological safety at work" }
+  - { keyword: "what is psychological safety", volume: 1300, parent: "psychological safety", difficulty: 52, traffic_potential: 5400 }
+  - { keyword: "creating psychological safety in the workplace", volume: 150, parent: "psychological safety at work", difficulty: 39, traffic_potential: 2300 }
 serp_checked: "2026-08-22"
 serp_min_dr: 52
 serp_verdict: authority

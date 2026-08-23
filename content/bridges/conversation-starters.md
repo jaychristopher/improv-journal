@@ -4,10 +4,10 @@ description: "A starter only buys you one exchange. What you do with the second 
 target_keywords:
   - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation topics", volume: 7200, difficulty: 25, traffic_potential: 143000, parent: "conversation starters" }
-  - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters" }
-  - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters" }
-  - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids" }
-  - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5, parent: "conversation starters for kids" }
+  - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters", traffic_potential: 146000 }
+  - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters", traffic_potential: 143000 }
+  - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids", traffic_potential: 1000 }
+  - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5, parent: "conversation starters for kids", traffic_potential: 1800 }
 serp_checked: "2026-08-22"
 serp_min_dr: 28
 serp_verdict: winnable

@@ -3,9 +3,9 @@ title: "How to Be More Articulate: It Is Not About Vocabulary"
 description: "You can be intelligent and inarticulate — they run on different constraints. Articulate people are not thinking faster, they have fewer processes running."
 target_keywords:
   - { keyword: "how to be more articulate", volume: 1000, difficulty: 0, traffic_potential: 1200, parent: "how to be more articulate" }
-  - { keyword: "how to speak more clearly", volume: 300, difficulty: 0, parent: "how to speak more clearly" }
-  - { keyword: "how to think before you speak", volume: 350, difficulty: 0, parent: "how to think before you speak" }
-  - { keyword: "how to stop stumbling over words", volume: 40, difficulty: 0, parent: "how to stop stumbling over words" }
+  - { keyword: "how to speak more clearly", volume: 300, difficulty: 0, parent: "how to speak more clearly", traffic_potential: 400 }
+  - { keyword: "how to think before you speak", volume: 350, difficulty: 0, parent: "how to think before you speak", traffic_potential: 700 }
+  - { keyword: "how to stop stumbling over words", volume: 40, difficulty: 0, parent: "how to stop stumbling over words", traffic_potential: 10 }
 serp_checked: "2026-08-22"
 serp_min_dr: 7
 serp_verdict: winnable

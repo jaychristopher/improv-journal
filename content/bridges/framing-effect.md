@@ -2,10 +2,10 @@
 title: "The Framing Effect: The Skill That Looks Like a Bias"
 description: "The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years."
 target_keywords:
-  - { keyword: "framing effect", volume: 3400, difficulty: 23, traffic_potential: 1700, parent: "framing effect" }
-  - { keyword: "framing psychology", volume: 3100, parent: "framing effect" }
-  - { keyword: "framing bias", volume: 2100, parent: "framing effect" }
-  - { keyword: "framing psychology definition", volume: 1200, parent: "framing psychology definition" }
+  - { keyword: "framing effect", volume: 3500, difficulty: 23, traffic_potential: 1700, parent: "framing effect" }
+  - { keyword: "framing psychology", volume: 3300, parent: "framing effect", difficulty: 22, traffic_potential: 450 }
+  - { keyword: "framing bias", volume: 2100, parent: "framing effect", difficulty: 5, traffic_potential: 1600 }
+  - { keyword: "framing psychology definition", volume: 1000, parent: "framing psychology definition", difficulty: 26, traffic_potential: 350 }
 entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-reframing, be-changeable]
 entry_path: improv-for-life
 status: draft

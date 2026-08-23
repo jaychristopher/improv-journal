@@ -3,10 +3,10 @@ title: "Theatre Games: What They Are and How to Run Them"
 description: "Theatre games were invented to teach non-actors, not to get laughs. Here's where they came from, how they differ from improv games, and how to run them."
 target_keywords:
   - { keyword: "theatre games", volume: 1400, difficulty: 3, traffic_potential: 2500, parent: "theater games" }
-  - { keyword: "theater games", volume: 1900, parent: "theater games" }
-  - { keyword: "drama games", volume: 800, parent: "theater games" }
-  - { keyword: "theatre games for kids", volume: 300, parent: "theater games" }
-  - { keyword: "theater games for adults", volume: 20, parent: "acting games" }
+  - { keyword: "theater games", volume: 1900, parent: "theater games", difficulty: 7, traffic_potential: 2500 }
+  - { keyword: "drama games", volume: 800, parent: "theater games", difficulty: 3, traffic_potential: 1000 }
+  - { keyword: "theatre games for kids", volume: 300, parent: "theater games", difficulty: 4, traffic_potential: 2600 }
+  - { keyword: "theater games for adults", volume: 20, parent: "acting games", difficulty: 1, traffic_potential: 450 }
 serp_checked: "2026-08-22"
 serp_min_dr: 5
 serp_verdict: winnable

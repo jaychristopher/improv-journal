@@ -3,8 +3,8 @@ title: "Team Dynamics: The Invisible Architecture of a Group"
 description: "Team dynamics are not personality clashes. They are status transactions, signalling and coherence — and improv ensembles decoded them decades ago."
 target_keywords:
   - { keyword: "team dynamics", volume: 5300, difficulty: 21, traffic_potential: 3500, parent: "team dynamics" }
-  - { keyword: "group dynamics", volume: 3700, difficulty: 0, parent: "group dynamics" }
-  - { keyword: "group dynamics definition", volume: 500, parent: "definition of group dynamics" }
+  - { keyword: "group dynamics", volume: 3800, difficulty: 0, parent: "group dynamics", traffic_potential: 250 }
+  - { keyword: "group dynamics definition", volume: 450, parent: "definition of group dynamics", difficulty: 3, traffic_potential: 10 }
 serp_checked: "2026-08-22"
 serp_min_dr: 25
 serp_verdict: winnable

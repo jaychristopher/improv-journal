@@ -3,10 +3,10 @@ title: "Networking Tips That Work If You Hate Networking"
 description: "Networking feels bad because it is framed as extraction, and everyone can tell. The fix is not a better opener — it is arriving with something to offer."
 target_keywords:
   - { keyword: "networking tips", volume: 129000, difficulty: 11, traffic_potential: 53000, parent: "networking tips" }
-  - { keyword: "how to network", volume: 2900, difficulty: 7, parent: "networking tips" }
-  - { keyword: "how to network effectively", volume: 150, difficulty: 7, parent: "networking techniques" }
-  - { keyword: "networking advice", volume: 70, difficulty: 8, parent: "how to network" }
-  - { keyword: "how to network as an introvert", volume: 70, difficulty: 6, parent: "networking for introverts" }
+  - { keyword: "how to network", volume: 2900, difficulty: 7, parent: "networking tips", traffic_potential: 16000 }
+  - { keyword: "how to network effectively", volume: 150, difficulty: 7, parent: "networking techniques", traffic_potential: 2400 }
+  - { keyword: "networking advice", volume: 70, difficulty: 8, parent: "how to network", traffic_potential: 1800 }
+  - { keyword: "how to network as an introvert", volume: 70, difficulty: 6, parent: "networking for introverts", traffic_potential: 200 }
 serp_checked: "2026-08-22"
 serp_min_dr: 53
 serp_verdict: authority

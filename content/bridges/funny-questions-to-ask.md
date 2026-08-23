@@ -3,9 +3,9 @@ title: "Funny Questions to Ask: 100 That Make the Answer Funny"
 description: "A funny question is not one with a joke in it — that joke is spent before anyone answers. These make the other person funny, which is the only kind that runs."
 target_keywords:
   - { keyword: "funny questions to ask", volume: 11000, difficulty: 3, traffic_potential: 17000, parent: "funny questions to ask" }
-  - { keyword: "weird questions to ask", volume: 6000, difficulty: 2, parent: "weird questions" }
-  - { keyword: "funny questions to ask friends", volume: 1900, parent: "funny questions to ask" }
-  - { keyword: "random funny questions", volume: 400, parent: "funny questions to ask" }
+  - { keyword: "weird questions to ask", volume: 6000, difficulty: 2, parent: "weird questions", traffic_potential: 12000 }
+  - { keyword: "funny questions to ask friends", volume: 1600, parent: "funny questions to ask", difficulty: 1, traffic_potential: 21000 }
+  - { keyword: "random funny questions", volume: 700, parent: "funny questions to ask", difficulty: 9, traffic_potential: 18000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 71
 serp_verdict: authority

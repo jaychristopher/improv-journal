@@ -2,8 +2,8 @@
 title: "How to Read the Room: The Skill Performers Train"
 description: "Reading a room means working out what a group feels and is ready for, not what it says. It is not intuition but a set of attention skills, and they train."
 target_keywords:
-  - { keyword: "how to read the room", volume: 200, difficulty: 1, traffic_potential: 400, parent: "what is the best way to read the room?" }
-  - { keyword: "reading the room", volume: 150, parent: "what is the best way to read the room?" }
+  - { keyword: "how to read the room", volume: 150, difficulty: 1, traffic_potential: 400, parent: "what is the best way to read the room?" }
+  - { keyword: "reading the room", volume: 350, parent: "what is the best way to read the room?", difficulty: 1, traffic_potential: 350 }
 serp_checked: "2026-08-22"
 serp_min_dr: 27
 serp_verdict: winnable

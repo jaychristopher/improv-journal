@@ -9,10 +9,10 @@ target_keywords:
       traffic_potential: 69000,
       parent: "icebreaker questions",
     }
-  - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone" }
+  - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone", traffic_potential: 27000 }
   - { keyword: "ice breaker questions", volume: 51000, difficulty: 19, traffic_potential: 90000, parent: "ice breaker questions" }
   - { keyword: "icebreaker questions", volume: 24000, difficulty: 34, traffic_potential: 92000, parent: "ice breaker questions" }
-  - { keyword: "questions to get to know someone better", volume: 900, parent: "questions to get to know someone" }
+  - { keyword: "questions to get to know someone better", volume: 1000, parent: "questions to get to know someone", difficulty: 15, traffic_potential: 101000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 17
 serp_verdict: winnable

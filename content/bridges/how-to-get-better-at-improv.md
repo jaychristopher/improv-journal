@@ -4,7 +4,7 @@ description: "Getting better at improv isn't about doing more shows. It's about 
 target_keywords:
   - { keyword: "how to get better at improv", volume: 150, difficulty: 0, traffic_potential: 200, parent: "how to get better at improv" }
   - { keyword: "improve at improv", volume: 50 }
-  - { keyword: "improv practice", volume: 70, parent: "improv exercises" }
+  - { keyword: "improv practice", volume: 40, parent: "improv exercises", difficulty: 0, traffic_potential: 450 }
 serp_checked: "2026-08-22"
 serp_min_dr: 6
 serp_verdict: winnable

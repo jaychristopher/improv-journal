@@ -2,10 +2,10 @@
 title: "How to Give Feedback That Actually Changes Behavior"
 description: "Most feedback describes problems without creating conditions for change. Design experiences where the right behavior emerges naturally, then name it."
 target_keywords:
-  - { keyword: "how to give feedback", volume: 900, difficulty: 21, traffic_potential: 350, parent: "giving feedback to employees" }
-  - { keyword: "how to give constructive feedback", volume: 900, parent: "how to provide constructive feedback" }
-  - { keyword: "constructive feedback", volume: 7000, parent: "constructive feedback meaning" }
-  - { keyword: "constructive criticism", volume: 4400, parent: "constructive criticism" }
+  - { keyword: "how to give feedback", volume: 800, difficulty: 21, traffic_potential: 350, parent: "giving feedback to employees" }
+  - { keyword: "how to give constructive feedback", volume: 500, parent: "how to provide constructive feedback", difficulty: 10, traffic_potential: 100 }
+  - { keyword: "constructive feedback", volume: 7100, parent: "constructive feedback meaning", difficulty: 11, traffic_potential: 350 }
+  - { keyword: "constructive criticism", volume: 20000, parent: "constructive criticism", difficulty: 6, traffic_potential: 1300 }
 entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive]
 entry_path: teaching-improv
 status: draft

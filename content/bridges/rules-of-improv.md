@@ -3,7 +3,7 @@ title: "The Rules of Improv (And Why Half of Them Are Wrong)"
 description: "Every improv class teaches the same rules. But the five major traditions disagree on what they are. Here's what matters, what's myth, and what works."
 target_keywords:
   - { keyword: "rules of improv", volume: 450, difficulty: 3, traffic_potential: 400, parent: "rules of improv" }
-  - { keyword: "improv rules", volume: 150, parent: "rules of improv" }
+  - { keyword: "improv rules", volume: 150, parent: "rules of improv", difficulty: 1, traffic_potential: 400 }
 serp_checked: "2026-08-22"
 serp_min_dr: 23
 serp_verdict: winnable

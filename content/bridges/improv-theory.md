@@ -2,11 +2,11 @@
 title: "Improv Theory: The Five Traditions That Shaped It"
 description: "Johnstone, Spolin, Close, UCB, and Annoyance built improv on different foundations. Here's where they agree, where they clash, and why it matters."
 target_keywords:
-  - { keyword: "improv theory", volume: 390 }
-  - { keyword: "history of improv", volume: 480 }
+  - { keyword: "improv theory", volume: 10 }
+  - { keyword: "history of improv", volume: 50 }
   - { keyword: "improv philosophy", volume: 170 }
-  - { keyword: "keith johnstone improv", volume: 320 }
-  - { keyword: "viola spolin games", volume: 260, parent: "viola spolin theatre games" }
+  - { keyword: "keith johnstone improv", volume: 10 }
+  - { keyword: "viola spolin games", volume: 20, parent: "viola spolin theatre games" }
 entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction, spontaneity]
 entry_path: reference-guide
 status: draft

@@ -3,11 +3,11 @@ title: "10 Public Speaking Tips for the Parts You Cannot Rehearse"
 description: "Most public speaking tips cover the prepared talk. What actually goes wrong is everything you could not rehearse — and that is what improv trains."
 target_keywords:
   - { keyword: "public speaking tips", volume: 687000, difficulty: 25, traffic_potential: 143000, parent: "public speaking tips" }
-  - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11, parent: "public speaking tips" }
+  - { keyword: "how to improve public speaking", volume: 2400, difficulty: 11, parent: "public speaking tips", traffic_potential: 102000 }
   - { keyword: "how to improve public speaking skills", volume: 1500, difficulty: 21, traffic_potential: 168000, parent: "public speaking tips" }
-  - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips" }
-  - { keyword: "public speaking skills", volume: 900, difficulty: 38, parent: "public speaking tips" }
-  - { keyword: "tips for public speaking", volume: 700, difficulty: 15, parent: "public speaking tips" }
+  - { keyword: "how to get better at public speaking", volume: 1400, difficulty: 22, parent: "public speaking tips", traffic_potential: 168000 }
+  - { keyword: "public speaking skills", volume: 900, difficulty: 38, parent: "public speaking tips", traffic_potential: 172000 }
+  - { keyword: "tips for public speaking", volume: 700, difficulty: 15, parent: "public speaking tips", traffic_potential: 143000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 27
 serp_verdict: winnable

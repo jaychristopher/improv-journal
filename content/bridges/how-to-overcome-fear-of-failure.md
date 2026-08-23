@@ -2,8 +2,8 @@
 title: "How to Overcome Fear of Failure: The Improv Reframe"
 description: "Fear of failure is really fear of irreversibility — the belief a wrong move is permanent. Improv's insight: everything is an offer to build on."
 target_keywords:
-  - { keyword: "how to overcome fear of failure", volume: 600, difficulty: 6, traffic_potential: 700, parent: "how to deal with fear of failure" }
-  - { keyword: "fear of failure", volume: 4500, parent: "fear of failure" }
+  - { keyword: "how to overcome fear of failure", volume: 700, difficulty: 6, traffic_potential: 700, parent: "how to deal with fear of failure" }
+  - { keyword: "fear of failure", volume: 7800, parent: "fear of failure", difficulty: 27, traffic_potential: 2400 }
 entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commitment, be-thankful]
 entry_path: systems-of-improv
 status: draft

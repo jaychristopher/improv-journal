@@ -6,8 +6,8 @@ target_keywords:
   - { keyword: "questions to ask your friends", volume: 13000, difficulty: 2, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "juicy questions to ask your friends", volume: 11000, difficulty: 5, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "random questions to ask your friends", volume: 2800, difficulty: 2, traffic_potential: 40000, parent: "questions to ask friends" }
-  - { keyword: "hard questions to ask friends", volume: 450, parent: "hard questions to ask your friends" }
-  - { keyword: "questions to ask your best friend", volume: 400, parent: "questions to ask friends" }
+  - { keyword: "hard questions to ask friends", volume: 50, parent: "hard questions to ask your friends", difficulty: 6, traffic_potential: 300 }
+  - { keyword: "questions to ask your best friend", volume: 3600, parent: "questions to ask friends", difficulty: 1, traffic_potential: 9500 }
 serp_checked: "2026-08-22"
 serp_min_dr: 20
 serp_verdict: winnable

@@ -4,14 +4,14 @@ description: "Most team building is theater — fun in the moment, zero behavior
 target_keywords:
   - {
       keyword: "team building activities",
-      volume: 487000,
+      volume: 220000,
       difficulty: 5,
       traffic_potential: 109000,
       parent: "team building activities",
     }
-  - { keyword: "team building activities for work", volume: 8800, parent: "team building activities" }
-  - { keyword: "team bonding activities", volume: 5500, difficulty: 55, parent: "team building activities" }
-  - { keyword: "team bonding", volume: 2500, difficulty: 0, parent: "team building activities" }
+  - { keyword: "team building activities for work", volume: 8500, parent: "team building activities", difficulty: 25, traffic_potential: 43000 }
+  - { keyword: "team bonding activities", volume: 5500, difficulty: 55, parent: "team building activities", traffic_potential: 104000 }
+  - { keyword: "team bonding", volume: 2500, difficulty: 12, parent: "team building activities", traffic_potential: 12000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 36
 serp_verdict: authority

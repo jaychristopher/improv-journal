@@ -3,8 +3,8 @@ title: "How to Keep a Conversation Going Without More Topics"
 description: "Conversations don't die from a shortage of topics. They die from redirects. Improv shows why, and the three moves that keep an exchange alive."
 target_keywords:
   - { keyword: "how to keep a conversation going", volume: 4500, difficulty: 2, traffic_potential: 2800, parent: "how to keep a conversation going" }
-  - { keyword: "how to be a better conversationalist", volume: 450, parent: "how to be a good conversationalist" }
-  - { keyword: "conversation skills", volume: 300, parent: "conversation skills" }
+  - { keyword: "how to be a better conversationalist", volume: 450, parent: "how to be a good conversationalist", difficulty: 2, traffic_potential: 500 }
+  - { keyword: "conversation skills", volume: 500, parent: "conversation skills", difficulty: 5, traffic_potential: 350 }
 serp_checked: "2026-08-22"
 serp_min_dr: 17
 serp_verdict: winnable

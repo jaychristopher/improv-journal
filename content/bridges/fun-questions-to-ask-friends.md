@@ -3,8 +3,7 @@ title: "Fun Questions to Ask Friends: 116 Worth Actually Answering"
 description: "Fun is not the same as funny, and it is not shallow. It comes down to whether a question asks you to invent something or just to look something up."
 target_keywords:
   - { keyword: "fun questions to ask friends", volume: 8700, difficulty: 3, traffic_potential: 16000, parent: "fun questions to ask friends" }
-  - { keyword: "fun questions to ask your friends", volume: 1000, difficulty: 3, parent: "fun questions to ask friends" }
-  - { keyword: "fun questions to ask people", volume: 500, difficulty: 4, parent: "fun questions to ask friends" }
+  - { keyword: "fun questions to ask your friends", volume: 700, difficulty: 13, parent: "fun questions to ask friends", traffic_potential: 22000 }
 serp_checked: "2026-08-22"
 serp_min_dr: 20
 serp_verdict: winnable
