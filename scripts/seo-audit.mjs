@@ -477,6 +477,57 @@ if (settled.length > 0) {
   console.log();
 }
 
+/**
+ * Which guides get surfaced at all, split by whether the term is ours.
+ *
+ * Of the guides old enough to have been crawled, the ones Search Console has
+ * ever shown are overwhelmingly the ones whose primary keyword sits inside this
+ * site's actual subject — improv, theatre, ensembles, team building. The ones it
+ * has never shown are almost entirely generic self-help head terms.
+ *
+ * What makes it worth printing is that the usual explanations do not hold. The
+ * two groups have the same median keyword difficulty — 5 against 5 — with
+ * similar length and similar volume. serp_min_dr differs, but only from about
+ * 23 to about 32, which is nowhere near enough to carry a gap this size. The
+ * variable that separates them is topical fit, and nothing else in this report
+ * ranks by it.
+ *
+ * Read it as a strong hint and not a proof: the surfaced group is eight pages.
+ * But when a page is being picked for work on traffic potential alone, this is
+ * the number that should temper the choice.
+ */
+const OURS = /improv|theatre|theater|harold|scene|ensemble|team.?build|icebreaker|warm.?up/i;
+/*
+ * Built from every guide old enough to have been crawled, not from `settled`.
+ * `settled` descends from `graded`, which keeps only guides whose primary
+ * keyword carries a numeric difficulty — and improv-theory records volume
+ * alone. Reading this off `settled` therefore dropped the one in-subject guide
+ * that has never been surfaced and reported 6 of 6 instead of 6 of 7. A rate
+ * that rounds to 100% because the exception was filtered out is worse than no
+ * rate at all.
+ */
+const withTerm = results
+  .filter((r) => r.type === "bridge" && r.created && r.created < CRAWLED_BY)
+  .map((r) => ({
+    ours: OURS.test(r.keywords?.[0] ?? ""),
+    seen: GSC_SEEN.has(r.id),
+  }));
+const rate = (list) => {
+  if (list.length === 0) return "n/a";
+  const hit = list.filter((x) => x.seen).length;
+  return `${hit} of ${list.length} (${Math.round((hit / list.length) * 100)}%)`;
+};
+if (withTerm.length > 0) {
+  console.log("Ever surfaced, by whether the primary term is in our subject:");
+  console.log(`  our subject:  ${rate(withTerm.filter((x) => x.ours))}`);
+  console.log(`  generic:      ${rate(withTerm.filter((x) => !x.ours))}`);
+  console.log(
+    "  Median difficulty is the same in both groups, so this is not one set of " +
+      "results being easier.",
+  );
+  console.log();
+}
+
 console.log(
   `Traffic potential by whether the results are open: open ${fmt(openTp)}, ` +
     `gated ${fmt(gatedTp)}, not yet checked ${fmt(unknownTp)}`,
