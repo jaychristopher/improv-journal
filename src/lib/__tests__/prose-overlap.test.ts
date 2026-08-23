@@ -100,8 +100,20 @@ describe("guide prose", () => {
    */
   const MIN_RUNS_FOR_SHARE = 12;
 
+  /**
+   * framing-effect left this list by being rewritten rather than tolerated: 66
+   * shared runs down to 20, 9.4% to 2.9%. It was the largest duplication in the
+   * repo and it survived five deferrals on the grounds that the guide is
+   * authority-gated and cannot rank, which was true and beside the point — the
+   * atom it was restating lives in the how-it-works family, and those pages do
+   * get surfaced. Duplicating an atom that ranks to prop up a guide that cannot
+   * is the wrong way round.
+   *
+   * The two remaining pairs are the same shape and still unfixed. Both guides
+   * are gated, so the case for repairing them is about the atoms they lean on
+   * rather than about the guides themselves.
+   */
   const KNOWN_UNFIXED = new Set([
-    "framing-effect ~ framing-as-angle-of-approach",
     "how-to-read-body-language ~ status",
     "stage-fright ~ failing-forward",
   ]);

@@ -14,7 +14,7 @@ entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-
 entry_path: improv-for-life
 status: draft
 created: "2026-05-14"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # The Framing Effect: How to Use the Skill That Looks Like a Bias
@@ -33,9 +33,9 @@ That discipline is improv.
 
 Most explanations of framing treat it as decoration over content. Same content, different wrapper. The wrapper biases reception; therefore framing is suspect.
 
-This isn't quite right. Frames don't just decorate content — they *activate inferences*. A word, an image, or a metaphor pulls an entire web of associations into play, and the listener reasons from inside that web. George Lakoff put this most clearly in *Don't Think of an Elephant!* (2004): once a frame is invoked, the listener cannot *not* reason from inside it. Try to argue against the frame from within the frame, and you reinforce it. (Hence the title — instruct someone not to think of an elephant and you have already activated the elephant frame.)
+This isn't quite right, and the reason is the whole of the finding: **a frame is not a wrapper around reasoning, it is the thing the reasoning runs inside.** Once one is in play the listener cannot step outside it to evaluate it, which is why arguing against a frame in its own terms reinforces it.
 
-This is why "the same information" delivered through different frames produces different decisions. Tversky and Kahneman didn't discover that humans are irrational. They discovered that **content and reception are not the same thing** — that meaning is constituted in how a message lands, not in how it leaves the speaker. The framing effect is a measurement of a structural property of communication, not a flaw in the audience.
+That mechanism — Lakoff on why the elephant is already in the room, Tversky and Kahneman on identical outcomes producing opposite decisions — is set out with its sources in `framing-as-angle-of-approach`. What matters here is the consequence they share: **content and reception are not the same thing.** Meaning is constituted in how a message lands rather than how it leaves the speaker, which makes the framing effect a measurement of how communication works rather than a flaw in the audience.
 
 Improv discovered the same thing earlier, through a different door.
 
@@ -61,43 +61,37 @@ You can be entirely right and still get rejected on contact. The audience isn't 
 
 A reframe doesn't ask the audience to dismantle structure. It supplies a new frame in which the same content is no longer a threat. The conclusion lands by a different route, often through the audience's own reasoning — and that route avoids the defense system entirely.
 
-## Three practical moves
+## Three Moves Improv Actually Trains
 
-Here are three specific habits the framing-effect literature and the improv tradition agree on. They're useful in any hard conversation — work, relationships, family, negotiation.
+The framing literature has its own list of moves, and `framing-as-angle-of-approach` carries it. These three are different: they come out of rehearsal rooms rather than research, and they are the ones a performer drills until they happen without deciding to.
 
-### 1. Lead with the frame, not the conclusion
+### Endowment: give them the quality before you need it
 
-The most common framing mistake is stating the conclusion first inside the wrong frame. The listener evaluates the conclusion before the frame arrives, the defense system fires on the conclusion, and the framing — when it shows up a sentence later — looks like rationalization.
+`endowment` is the improv move of assigning a partner an attribute they then play. On stage: "You've always been the one who notices these things." The partner now is that person, and behaves accordingly, because it was given rather than requested.
 
-Instead: establish the frame, then let the conclusion land inside it. *"What we're really negotiating is X, not Y"* before the position; *"This is a learning conversation, not a performance review"* before the feedback; *"I'm not asking you to change your mind; I'm asking what I'm missing"* before the disagreement.
+Off stage this is the most powerful and most abusable thing on this page. Told sincerely that somebody is the person who says the difficult thing, they generally become it in the next five minutes. Told it manipulatively, they can feel the hook. The difference is whether the endowment is one you would defend afterwards or one you needed for the next ten minutes.
 
-The frame primes the listener's reasoning. Once a frame is in play, the conclusion that fits the frame feels like discovery rather than imposition.
+### Justification: make the awkward fact make sense
 
-### 2. Use their vocabulary
+`justification` is retroactive sense-making — treating whatever has happened as though it were intended, and building the reason afterwards. It is how improvisers survive mistakes, and it reframes without any of the participants feeling reframed.
 
-Words carry frames. Their words carry their frames. Using your in-group vocabulary signals you're outside the listener's architecture, and the boundary-defense reflex fires before any reasoning happens. You're then arguing against a frame the listener didn't even articulate — but the defense is engaged regardless.
+In a real conversation it looks like taking the thing somebody is embarrassed about and supplying the reading in which it was reasonable. "You didn't reply for three weeks" becomes "you were underwater and answering would have meant doing it badly." Not a lie, and not flattery — a selection among the true accounts of the same event, made out loud.
 
-The practice: catch yourself reaching for the term *you* would use, and substitute the term *they* would use. Same content, recognizable wrapping. The cost is small (an extra word choice); the benefit is that the listener stays inside the conversation instead of leaving to defend a frame.
+### Change the where, not the argument
 
-### 3. Ask, don't assert
+Improvisers spend very little time arguing about a scene and a great deal changing where it is set, because the setting does the work the argument cannot. A disagreement about workload sounds different at a desk, in a car, and on a walk, and the third one produces agreements the first will not.
 
-A question lets the listener do the framing. An assertion forces them to evaluate yours.
+The everyday version is not metaphorical. Move the conversation. Different room, outdoors, side by side rather than across a table. `gratitude-reframing` is the internal version of the same manoeuvre: the frame moves and the facts do not.
 
-This is the oldest technique in the canon — Socrates was working it 2,400 years ago. When you ask a question that points at the conclusion, the listener reasons their way there using premises they already hold. The conclusion arrives as their discovery, not your invasion. The structural defense doesn't fire because the architecture hasn't been threatened — it's been *consulted*.
+## When Not to Reframe
 
-Concretely: *"How would you handle this if it were a customer issue instead of a personnel one?"* opens an analogical reframe without asserting anything. The listener answers the question. Their answer often resolves the original disagreement.
+`framing-as-angle-of-approach` lists the cases where framing fails, and they hold here. Two are worth restating because they are the ones people get wrong while thinking they are being skilful.
 
-## When framing is the wrong tool
+**When the cost of indirection is higher than the cost of the bounce.** Anything involving safety, money somebody is losing, or a deadline that has already passed. A reframe in those conditions reads as evasion, and the reader is not wrong — you did choose the longer route to avoid a reaction.
 
-Framing isn't always right. Three specific cases where it fails or harms:
+**When the disagreement is about which frame applies.** Then working inside either one has already conceded it. The move is to say so out loud rather than to smuggle yours past: "I think we are working from different frames — can we name them?"
 
-**Urgent truth.** When the cost of indirection is greater than the cost of rejection — safety, accountability, time-pressure — framing is overhead and the listener will read it as evasion. Say the hard true thing in plain language and accept the bounce.
-
-**Already-shared frame.** If you and the listener are already inside the same frame, framing is friction. They'll experience your reframe as condescension or manipulation. Recognize the shared frame and just talk.
-
-**The frame is the issue.** Sometimes the disagreement is *which frame* is appropriate. Working inside one of the frames concedes the argument before it begins. The honest move here is to name the frames directly — *"I think we're operating from different frames; can we name them?"* — rather than smuggling one frame past the other. This is Lakoff's "elephant" move turned inside out: when the frame is the subject, naming the frame is more powerful than hiding it.
-
-The line between framing and manipulation lives at these edges. The honest test: would you be comfortable with the listener seeing the framing move you just made? If yes, it's framing. If no, it's spin.
+And the test that separates this from spin, which is the only line that matters and is easy to apply: **would you be comfortable if the other person could see the move you just made?** Endowment offered sincerely survives being noticed. Endowment used to extract something does not, and the person you used it on will notice eventually anyway.
 
 ## The deeper point
 
