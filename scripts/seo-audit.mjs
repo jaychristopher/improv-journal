@@ -151,6 +151,7 @@ function scoreBridge(file) {
     serpVerdict: data.serp_verdict,
     serpMinDr: data.serp_min_dr,
     serpChecked: data.serp_checked,
+    created: data.created ? String(data.created).slice(0, 10) : null,
     words: content.trim().split(/\s+/).length,
   };
 }
@@ -354,6 +355,64 @@ const openTp = bucketTp((r) => r.serpVerdict === "winnable");
 const gatedTp = bucketTp((r) => r.serpVerdict === "authority");
 const unknownTp = bucketTp((r) => !r.serpVerdict);
 const fmt = (n) => `${Math.round(n / 1000)}k`;
+
+/**
+ * What Google has actually done with these pages.
+ *
+ * Every number above this point is an estimate bought from a tool. Search
+ * Console is first-party and disagrees with them, so it is worth more.
+ *
+ * Between 2026-02-01 and 2026-08-23 the site drew 34 URLs with any impression
+ * at all and no clicks. Nine of them were guides, listed below. The rest were
+ * atoms, library references and technique pages — which also hold the best
+ * positions on the site, 6 to 12, on terms with almost no volume.
+ *
+ * The pattern that matters is in the pages old enough to have been crawled
+ * properly. Of the guides created in April, every one on improv or team
+ * building has been surfaced; almost none of the general self-improvement ones
+ * have, and those are longer and target more volume. A first attempt at reading
+ * this went wrong and is worth recording: the site's fourteen largest guides by
+ * traffic potential have no impressions either, but all fourteen were created
+ * after July and simply have no history yet. Their silence means nothing. Only
+ * the matched-age cohort supports the comparison.
+ *
+ * Refresh with the gsc-pages endpoint, and move the date when you do. Left
+ * stale it becomes another confident number describing a day that has passed —
+ * which is the fault the verdict ages below exist to catch.
+ */
+const GSC_SEEN_ON = "2026-08-23";
+const GSC_SEEN = new Set([
+  "what-is-improv",
+  "rules-of-improv",
+  "how-to-get-better-at-improv",
+  "how-to-be-vulnerable",
+  "types-of-listening",
+  "team-building-questions",
+  "team-building-activities",
+  "team-bonding-activities",
+  "5-minute-team-building",
+]);
+/** Created before this, so there has been time to be crawled and ranked. */
+const CRAWLED_BY = "2026-07-01";
+
+const settled = graded.filter((r) => r.created && r.created < CRAWLED_BY);
+const silent = settled
+  .filter((r) => !GSC_SEEN.has(r.id))
+  .sort((a, b) => reach(b) - reach(a));
+
+if (settled.length > 0) {
+  const silentTp = silent.reduce((sum, r) => sum + (reach(r) || 0), 0);
+  console.log(
+    `Never surfaced by Google, of ${settled.length} guides old enough to have been ` +
+      `crawled (${silent.length}, carrying ${fmt(silentTp)} of claimed potential):`,
+  );
+  for (const r of silent.slice(0, 10)) console.log(row(r));
+  console.log(
+    `  Search Console checked ${GSC_SEEN_ON}. Newer guides are excluded — they have no history yet.`,
+  );
+  console.log();
+}
+
 console.log(
   `Traffic potential by whether the results are open: open ${fmt(openTp)}, ` +
     `gated ${fmt(gatedTp)}, not yet checked ${fmt(unknownTp)}`,
