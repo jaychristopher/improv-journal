@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "how to be witty", volume: 600, difficulty: 0, traffic_potential: 600, parent: "how to be witty" }
   - { keyword: "how to be quick witted", volume: 100, parent: "how to be quick witted", difficulty: 0, traffic_potential: 80 }
   - { keyword: "how to be clever", volume: 50, parent: "how to be more clever", difficulty: 1, traffic_potential: 70 }
+serp_checked: "2026-08-23"
+serp_min_dr: 0
+serp_verdict: winnable
 entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment]
 entry_path: systems-of-improv
 status: draft

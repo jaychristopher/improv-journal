@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "5 minute team building activities", volume: 600, difficulty: 0, traffic_potential: 800, parent: "5-minute team building activities" }
   - { keyword: "5 minute team building activities for work", volume: 60, difficulty: 0, parent: "5-minute team building activities", traffic_potential: 900 }
   - { keyword: "5 minute team building games", volume: 20, difficulty: 1, parent: "5-minute team building activities", traffic_potential: 600 }
+serp_checked: "2026-08-23"
+serp_min_dr: 8
+serp_verdict: winnable
 entry_atoms: [mirroring, yes-and-chain, gift-giving, one-word-scene, warm-up]
 entry_path: physics-of-connection
 status: draft

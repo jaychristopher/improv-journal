@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "how to be present", volume: 500, difficulty: 3, traffic_potential: 1000, parent: "how to be more present" }
   - { keyword: "how to be more present", volume: 500, parent: "how to be more present", difficulty: 14, traffic_potential: 1500 }
   - { keyword: "how to be present in the moment", volume: 300, parent: "how to be more present", difficulty: 3, traffic_potential: 1000 }
+serp_checked: "2026-08-23"
+serp_min_dr: 23
+serp_verdict: winnable
 entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, active-listening]
 entry_path: systems-of-improv
 status: draft

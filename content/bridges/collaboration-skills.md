@@ -4,6 +4,9 @@ description: "Real collaboration isn't brainstorming or consensus — it's build
 target_keywords:
   - { keyword: "collaboration skills", volume: 1200, difficulty: 7, traffic_potential: 250, parent: "collaboration skills" }
   - { keyword: "how to collaborate better", volume: 0 }
+serp_checked: "2026-08-23"
+serp_min_dr: 67
+serp_verdict: authority
 entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

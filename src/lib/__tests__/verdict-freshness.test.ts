@@ -65,12 +65,23 @@ describe("verdict freshness", () => {
    * what is improv winnable at DR 12 with its traffic potential recorded as 50
    * when Ahrefs says 250.
    *
-   * Volume is the primary keyword's, matching the other guide checks, which
-   * treat the first declared keyword as the one the page targets.
+   * This started at a volume floor of 2,000, which was all that was
+   * satisfiable when the eighteen were found. The remaining backlog has since
+   * been worked through, so the floor is gone and every guide needs a verdict.
+   *
+   * Clearing it was worth doing for what it found rather than for tidiness.
+   * Difficulty scores had these badly wrong in both directions: how to be
+   * witty and how to overcome fear of failure have results pages with a DR 0
+   * and a DR 1 site on them, while collaboration skills and how to give
+   * feedback have nothing below DR 67 and are walls. Neither group is
+   * distinguishable from the numbers a tool supplies.
    */
-  const MUST_CHECK_ABOVE_VOLUME = 2_000;
+  const NO_VERDICT_NEEDED = new Set([
+    // Ten searches a month. A SERP check costs more than the page can return.
+    "improv-theory",
+  ]);
 
-  it("has checked the SERP for every guide targeting a large term", async () => {
+  it("has checked the SERP for every guide", async () => {
     const bridges = await loadBridges();
 
     const unchecked: string[] = [];
@@ -78,16 +89,17 @@ describe("verdict freshness", () => {
 
     for (const bridge of bridges) {
       const primary = (bridge.frontmatter.target_keywords ?? [])[0];
-      if (!primary || primary.volume < MUST_CHECK_ABOVE_VOLUME) continue;
+      if (!primary) continue;
+      if (NO_VERDICT_NEEDED.has(bridge.slug)) continue;
       inScope++;
       if (!bridge.frontmatter.serp_checked) {
         unchecked.push(`${bridge.slug}: "${primary.keyword}" at ${primary.volume}/mo`);
       }
     }
 
-    // If the volume field moved or the loader changed shape, nothing is in
-    // scope and this passes on an empty set.
-    expect(inScope).toBeGreaterThan(8);
+    // If the loader changed shape nothing is in scope and this passes on an
+    // empty set.
+    expect(inScope).toBeGreaterThan(60);
     expect(unchecked).toEqual([]);
   });
 });

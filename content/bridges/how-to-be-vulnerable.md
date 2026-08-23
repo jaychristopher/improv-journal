@@ -4,6 +4,9 @@ description: "Vulnerability isn't emotional exhibition — it's the willingness 
 target_keywords:
   - { keyword: "how to be vulnerable", volume: 250, difficulty: 11, traffic_potential: 2400, parent: "how to be vulnerable in a relationship?" }
   - { keyword: "how to be more vulnerable", volume: 200, parent: "how to be more vulnerable", difficulty: 12, traffic_potential: 150 }
+serp_checked: "2026-08-23"
+serp_min_dr: 31
+serp_verdict: winnable
 entry_atoms: [vulnerability, safety-in-the-room, trust, be-brave, be-honest, commitment]
 entry_path: physics-of-connection
 status: draft

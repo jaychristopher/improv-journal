@@ -5,6 +5,9 @@ target_keywords:
   - { keyword: "types of listening", volume: 800, difficulty: 0, traffic_potential: 400, parent: "types of listening" }
   - { keyword: "types of listening skills", volume: 100, parent: "types of listening", difficulty: 0, traffic_potential: 400 }
   - { keyword: "listening styles", volume: 500, parent: "listening styles", difficulty: 0, traffic_potential: 250 }
+serp_checked: "2026-08-23"
+serp_min_dr: 21
+serp_verdict: winnable
 entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
 status: draft

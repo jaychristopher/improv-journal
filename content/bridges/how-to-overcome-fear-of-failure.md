@@ -4,6 +4,9 @@ description: "Fear of failure is really fear of irreversibility — the belief a
 target_keywords:
   - { keyword: "how to overcome fear of failure", volume: 700, difficulty: 6, traffic_potential: 700, parent: "how to deal with fear of failure" }
   - { keyword: "fear of failure", volume: 7800, parent: "fear of failure", difficulty: 27, traffic_potential: 2400 }
+serp_checked: "2026-08-23"
+serp_min_dr: 1
+serp_verdict: winnable
 entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commitment, be-thankful]
 entry_path: systems-of-improv
 status: draft

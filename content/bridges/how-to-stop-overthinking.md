@@ -137,6 +137,8 @@ _Try this:_ In your next conversation, catch yourself composing a response while
 
 These exercises help with **everyday overthinking** - the kind that steals your presence in conversations, keeps you awake rehearsing tomorrow's meeting, or makes you second-guess every email. They work by redirecting bandwidth from internal processing to external engagement.
 
+One common case is specific enough to need its own treatment: overthinking that attaches to one relationship rather than to everything. The bandwidth account still applies, but the loop is fed by a person who is present and reacting, which changes what helps — [how to stop overthinking in a relationship](/how-to-stop-overthinking-in-a-relationship) covers that version.
+
 But if overthinking consumes hours of your day, if you can't stop despite wanting to, if it's accompanied by persistent anxiety or depression - that's not a bandwidth problem you can exercise your way out of. Generalized Anxiety Disorder, OCD rumination, and depression-linked rumination involve neurological patterns that require professional support. The bandwidth framework still explains what's happening in your brain. But the intervention needs to be clinical, not theatrical.
 
 ## The Deeper Insight

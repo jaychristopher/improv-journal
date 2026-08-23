@@ -4,6 +4,9 @@ description: "Awkwardness isn't a personality trait — it's a specific attentio
 target_keywords:
   - { keyword: "how to be less awkward", volume: 600, difficulty: 2, traffic_potential: 900, parent: "how to not be socially awkward" }
   - { keyword: "social awkwardness", volume: 1000, parent: "socially awkward", difficulty: 4, traffic_potential: 3500 }
+serp_checked: "2026-08-23"
+serp_min_dr: 53
+serp_verdict: authority
 entry_atoms: [be-present, active-listening, offers, commitment, internal-computation]
 entry_path: improv-for-life
 primary_problem: "self-monitoring is louder than connection"

@@ -139,6 +139,8 @@ With strangers, the constraint is that you have no shared history to be specific
 
 Also: some people are funnier than others, and that's partly temperament. But "naturally funny" people aren't deploying a technique you lack — they're doing the things described above more automatically. They notice patterns. They say the specific thing. They don't censor the first thought. These are practicable, not innate.
 
+One more distinction worth drawing, because people arrive looking for the wrong one. Funny and witty are not the same target: wit is speed and wordplay, and it is a narrower, more performable skill than humour. If that is what you were actually after, [how to be witty](/how-to-be-witty) covers it — including why chasing it is the most reliable way to be neither.
+
 ---
 
 _For the full framework on pattern recognition in scenes: [Game of the Scene](/atoms/game-of-the-scene). For why the obvious choice is the best choice: [The Obvious Choice](/atoms/obvious-choice). For the complete beginner's path: [Systems of Improv](/paths/systems-of-improv)._

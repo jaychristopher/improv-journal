@@ -4,6 +4,9 @@ description: "Relationship overthinking has a specific mechanism — social-thre
 target_keywords:
   - { keyword: "how to stop overthinking in a relationship", volume: 800, difficulty: 2, traffic_potential: 600, parent: "how to stop overthinking in a relationship" }
   - { keyword: "overthinking in relationships", volume: 150, parent: "overthinking in a relationship", difficulty: 0, traffic_potential: 300 }
+serp_checked: "2026-08-23"
+serp_min_dr: 16
+serp_verdict: winnable
 entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vulnerability, active-listening]
 entry_path: improv-for-life
 status: draft

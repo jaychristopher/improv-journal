@@ -6,6 +6,9 @@ target_keywords:
   - { keyword: "how to give constructive feedback", volume: 500, parent: "how to provide constructive feedback", difficulty: 10, traffic_potential: 100 }
   - { keyword: "constructive feedback", volume: 7100, parent: "constructive feedback meaning", difficulty: 11, traffic_potential: 350 }
   - { keyword: "constructive criticism", volume: 20000, parent: "constructive criticism", difficulty: 6, traffic_potential: 1300 }
+serp_checked: "2026-08-23"
+serp_min_dr: 73
+serp_verdict: authority
 entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive]
 entry_path: teaching-improv
 status: draft
