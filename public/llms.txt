@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (60)
+## Guides (61)
 
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work.
 - [Active Listening Skills: Why You're Doing It Wrong](https://www.physicsofconnection.com/active-listening): Most active listening advice teaches you to perform attention while composing a reply. Here's the mechanism that makes fake listening impossible.
@@ -36,6 +36,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Emotional Safety: What It Is and How It Gets Built](https://www.physicsofconnection.com/emotional-safety): Emotional safety is the confidence that showing what you feel will not be used against you. It is built by repetition, not by announcement — here is how.
 - [Fear of Public Speaking: What Performers Know](https://www.physicsofconnection.com/fear-of-public-speaking): The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how.
 - [The Framing Effect: The Skill That Looks Like a Bias](https://www.physicsofconnection.com/framing-effect): The framing effect is usually taught as a bias to defend against. It's also a skill — one improv performers have trained for sixty years.
+- [Fun Questions to Ask Friends: 116 Worth Actually Answering](https://www.physicsofconnection.com/fun-questions-to-ask-friends): Fun is not the same as funny, and it is not shallow. It comes down to whether a question asks you to invent something or just to look something up.
 - [Funny Questions to Ask: 100 That Make the Answer Funny](https://www.physicsofconnection.com/funny-questions-to-ask): A funny question is not one with a joke in it — that joke is spent before anyone answers. These make the other person funny, which is the only kind that runs.
 - [How to Be a Better Manager: Coach Without Taking Over](https://www.physicsofconnection.com/how-to-be-a-better-manager): Your job is not to have the best ideas — it's to make other people's work land. Improv directing has a precise method for that, and most managers invert it.
 - [How to Be a Good Friend: The Support Most People Miss](https://www.physicsofconnection.com/how-to-be-a-good-friend): Most bad friending is well-intentioned blocking — solving, redirecting, reassuring. Improv names each one, and what to do instead of all of them.

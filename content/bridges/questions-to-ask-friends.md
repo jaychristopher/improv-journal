@@ -6,7 +6,6 @@ target_keywords:
   - { keyword: "questions to ask your friends", volume: 13000, difficulty: 2, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "juicy questions to ask your friends", volume: 11000, difficulty: 5, traffic_potential: 41000, parent: "questions to ask friends" }
   - { keyword: "random questions to ask your friends", volume: 2800, difficulty: 2, traffic_potential: 40000, parent: "questions to ask friends" }
-  - { keyword: "fun questions to ask friends", volume: 700, parent: "fun questions to ask friends" }
   - { keyword: "hard questions to ask friends", volume: 450, parent: "hard questions to ask your friends" }
   - { keyword: "questions to ask your best friend", volume: 400, parent: "questions to ask friends" }
 serp_checked: "2026-08-22"
@@ -253,4 +252,4 @@ The questions are the easy part. Almost everything that decides whether you get 
 
 The other half of this — what to do once somebody has actually answered — belongs elsewhere and is most of the work: [how to be a good friend](/how-to-be-a-good-friend) for what support is and why advice so often costs you the next disclosure, and [how to be a good listener](/how-to-be-a-good-listener) for the receiving mechanics in detail. [Team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
 
-_For the deeper end specifically, and what has to be true before any of it works: [deep questions to ask](/deep-questions-to-ask)._
+_For the deeper end specifically, and what has to be true before any of it works: [deep questions to ask](/deep-questions-to-ask). For the lighter end, where the point is that the answering itself is enjoyable: [fun questions to ask friends](/fun-questions-to-ask-friends)._
