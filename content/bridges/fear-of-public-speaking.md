@@ -1,26 +1,44 @@
 ---
-title: "Fear of Public Speaking: What Performers Know"
-description: "The fear of public speaking and stage fright are the same physiological response. Improv performers don't eliminate it — they reframe it. Here's how."
+title: "Glossophobia: The Fear of Public Speaking, Reframed"
+description: "Glossophobia is the fear of public speaking. What it is, when it is ordinary nerves and when it is not, and what performers do instead of removing it."
 target_keywords:
-  - { keyword: "fear of public speaking", volume: 3100, parent: "fear of public speaking", difficulty: 53, traffic_potential: 2300 }
-  - { keyword: "glossophobia", volume: 11000, parent: "glossophobia", difficulty: 42, traffic_potential: 1300 }
-serp_checked: "2026-08-22"
-serp_min_dr: 37
-serp_verdict: authority
+  - { keyword: "glossophobia", volume: 11000, difficulty: 42, traffic_potential: 1300, parent: "glossophobia" }
+  - { keyword: "fear of public speaking", volume: 3100, difficulty: 53, traffic_potential: 2300, parent: "fear of public speaking" }
+serp_checked: "2026-08-23"
+serp_min_dr: 29
+serp_verdict: winnable
 entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience-relationship]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
-# Fear of Public Speaking: What Improv Performers Know That You Don't
+# Glossophobia: The Fear of Public Speaking, Reframed
 
-The fear of public speaking — glossophobia — affects roughly 75% of the population. It's consistently rated as a top fear, sometimes above death. Jerry Seinfeld's joke about this is famous: "At a funeral, most people would rather be in the casket than giving the eulogy."
+The fear of public speaking — glossophobia — is consistently rated among the most common fears there is, sometimes above death. Jerry Seinfeld's joke about it is famous: "At a funeral, most people would rather be in the casket than giving the eulogy."
 
 But here's the thing. Improv performers walk on stage every night with no script, no plan, and no safety net — and they *choose* this. Not because they're fearless. Because they've learned something about fear that most people never discover: **the physical sensation of stage fright and the physical sensation of peak performance are the same thing.**
 
 The racing heart, the shallow breathing, the hyper-alertness — your body produces these whether you're terrified or thrilled. The difference is entirely in how your mind interprets the signal. Improv performers don't eliminate the adrenaline. They reframe it.
+
+## What Glossophobia Actually Is
+
+**Glossophobia is the fear of public speaking** — from the Greek *glossa*, tongue, and *phobos*, fear. It is not a separate condition with its own diagnosis. Where it is severe enough to be clinical, it sits inside social anxiety disorder, which has a performance-only form covering exactly this: people who are otherwise comfortable socially and become afraid when required to speak or perform in front of others.
+
+The physical symptoms are consistent and are the reason it feels like something is wrong with you: racing heart, dry mouth, shaking hands, tightness in the chest, nausea, and the mind going blank. All of them are the same sympathetic nervous system response, and none of them are evidence of unreadiness.
+
+You will see it claimed that three quarters of people have this. That figure gets repeated far more confidently than its sourcing supports, and the honest version is vaguer and still striking: surveys of common fears put public speaking at or near the top consistently, often above heights and sometimes above death — which is the origin of the joke about preferring to be in the casket than giving the eulogy.
+
+### Ordinary nerves or something more
+
+The distinction matters because this page is useful for one of them and not the other.
+
+**Ordinary nerves** arrive shortly before you speak, peak in the first minute, and subside once you are going. You dislike it. You do it anyway. Afterwards it is over.
+
+**The clinical version is defined by avoidance and duration.** The dread arrives days or weeks ahead and does not subside during. It changes decisions — turning down a role, dropping a module, leaving a job that involves presenting. If speaking is something you organise your life around not doing, that is the version with a name, and it responds well to treatment: cognitive behavioural therapy has strong evidence here specifically, and exposure work is the active ingredient.
+
+Everything below is written for the first case. It is a reframe, and a reframe works on an interpretation. It does not work on an alarm that has stopped being about interpretation, and offering it as though it does is how people conclude they have failed at something that was never the right tool.
 
 ## The Reframe That Changes Everything
 
