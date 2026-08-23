@@ -1,3 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
+
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms, loadBridges } from "../content";
@@ -131,6 +134,87 @@ describe("guide prose", () => {
         const pair = `${bridge.slug} ~ ${atom.slug}`;
         if (KNOWN_UNFIXED.has(pair)) continue;
         offenders.push(`${pair} share ${shared} runs (${(share * 100).toFixed(1)}%)`);
+      }
+    }
+
+    expect(offenders).toEqual([]);
+  });
+});
+
+/**
+ * The hand-built pages are prose too, and nothing was reading them.
+ *
+ * Both checks above load markdown. The app routes are TSX, so a hub page can
+ * restate a guide word for word and the suite stays green. That is not
+ * hypothetical: the formats hub was given a "What Is Long Form Improv?" section
+ * that reproduced six passages from what-is-improv, including sixteen
+ * consecutive words, because it was written from memory of a page written days
+ * earlier. Every earlier instance of this was caught by the checks above. This
+ * one was caught by hand, and only because I went looking.
+ *
+ * Three of the largest findings in this project have come from these routes —
+ * the games hub nobody had audited, the exercises index competing with it on
+ * title, and this. They are the blind spot, so they are in scope now.
+ *
+ * Counted as absolute shared runs rather than as a share, which is the one
+ * difference from the checks above and was not a preference. A TSX file's
+ * shingles include its metadata strings and filter labels, so the denominator
+ * is padded with things nobody reads: the duplicated section scored 22 shared
+ * runs and only 6% of the file, which slipped under the 8% used elsewhere. The
+ * first version of this test passed on the very duplication it was written for.
+ *
+ * Calibrated instead against the clean tree, where the worst legitimate pair is
+ * improv-games against team-building-activities at 7 runs. Fourteen sits well
+ * above that and well below the 22 that prompted this.
+ */
+const MAX_SHARED_WITH_ROUTE = 14;
+
+function tsxProse(source: string): string {
+  return source
+    .replace(/^import[\s\S]*?;$/gm, " ")
+    .replace(/className="[^"]*"/g, " ")
+    .replace(/href="[^"]*"/g, " ")
+    .replace(/\{[^{}]*\}/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ");
+}
+
+function appRouteFiles(dir: string, found: string[] = []): string[] {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) appRouteFiles(full, found);
+    else if (entry.name === "page.tsx") found.push(full);
+  }
+  return found;
+}
+
+describe("hand-built page prose", () => {
+  it("does not restate the guides", async () => {
+    const bridges = (await loadBridges()).map((b) => ({
+      slug: b.slug,
+      set: shingles(b.content),
+    }));
+
+    const routes = appRouteFiles(path.join(process.cwd(), "src", "app"))
+      .map((file) => ({
+        route: path.relative(path.join(process.cwd(), "src", "app"), path.dirname(file)),
+        set: shingles(tsxProse(fs.readFileSync(file, "utf8"))),
+      }))
+      .filter((r) => r.set.size > 0);
+
+    // If the extractor breaks, every set is empty and this passes on nothing.
+    expect(routes.filter((r) => r.set.size > 20).length).toBeGreaterThan(3);
+
+    const offenders: string[] = [];
+    for (const route of routes) {
+      for (const bridge of bridges) {
+        let shared = 0;
+        const [small, large] =
+          route.set.size <= bridge.set.size ? [route.set, bridge.set] : [bridge.set, route.set];
+        for (const run of small) if (large.has(run)) shared += 1;
+        if (shared > MAX_SHARED_WITH_ROUTE) {
+          offenders.push(`${route.route} restates ${bridge.slug}: ${shared} runs`);
+        }
       }
     }
 
