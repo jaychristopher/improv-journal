@@ -1,5 +1,9 @@
+import Link from "next/link";
+
+import { AUTHOR_NAME } from "@/lib/seo";
+
 /**
- * A visible last-updated date.
+ * A visible byline and last-updated date.
  *
  * Every guide already carried `dateModified` in its structured data and showed
  * the reader nothing. That is the wrong way round for these results in
@@ -12,6 +16,15 @@
  * "2026-08-22" parses as UTC midnight, so formatting it in local time renders
  * the 21st for every reader west of Greenwich — a silent off-by-one that would
  * also disagree with the dateModified emitted alongside it.
+ *
+ * The byline is here for the same reason the date is. Every one of the 252
+ * Article entities on this site named an author, gave it @id /about#author and
+ * url /about — and not one content page showed a reader who wrote it. Only
+ * /about itself carried the name anywhere a person could see it, and /about
+ * had no inbound link from any page body, only the footer. So the site was
+ * asserting authorship to parsers and hiding it from people, which is the
+ * mismatch structured data is not supposed to have: it is meant to describe
+ * what is on the page.
  */
 
 const MONTHS = [
@@ -41,13 +54,20 @@ export function formatUpdated(date: string): string | null {
 }
 
 export function UpdatedOn({ date, className }: { date?: string; className?: string }) {
-  if (!date) return null;
-  const formatted = formatUpdated(date);
-  if (!formatted) return null;
+  const formatted = date ? formatUpdated(date) : null;
 
   return (
     <p className={className}>
-      Updated <time dateTime={date.slice(0, 10)}>{formatted}</time>
+      By{" "}
+      <Link href="/about" rel="author" className="hover:underline">
+        {AUTHOR_NAME}
+      </Link>
+      {date && formatted ? (
+        <>
+          {" · Updated "}
+          <time dateTime={date.slice(0, 10)}>{formatted}</time>
+        </>
+      ) : null}
     </p>
   );
 }

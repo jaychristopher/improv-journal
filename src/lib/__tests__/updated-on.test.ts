@@ -46,10 +46,15 @@ describe("visible updated date", () => {
         continue;
       }
       // The machine-readable date and the one a reader sees must be the same day.
-      if (time[1] !== bridge.frontmatter.updated.slice(0, 10)) {
-        disagreeing.push(`${bridge.slug}: ${time[1]} vs ${bridge.frontmatter.updated}`);
+      const updated = bridge.frontmatter.updated;
+      if (!updated) {
+        missing.push(`${bridge.slug}: no updated date in frontmatter`);
+        continue;
       }
-      if (time[2].trim() !== formatUpdated(bridge.frontmatter.updated)) {
+      if (time[1] !== updated.slice(0, 10)) {
+        disagreeing.push(`${bridge.slug}: ${time[1]} vs ${updated}`);
+      }
+      if (time[2].trim() !== formatUpdated(updated)) {
         disagreeing.push(`${bridge.slug}: rendered "${time[2].trim()}"`);
       }
     }
