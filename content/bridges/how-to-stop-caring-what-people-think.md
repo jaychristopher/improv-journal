@@ -32,6 +32,20 @@ The result is the same whether you're on stage or in a meeting: everything you s
 
 People can feel when you're performing for them vs. being with them. They can't always name it, but they feel it. The filtered version of you reads as inauthentic, even when the content is perfectly polished. The unfiltered version — even when it stumbles — reads as real.
 
+## Why Do You Care So Much What People Think?
+
+Because for almost all of human history being cast out of the group was fatal, and the machinery that tracks your standing in it runs continuously, cheaply, and without asking. Caring what people think is not a defect in you. It is a working sense, doing the job it was built for.
+
+That matters for what follows, because the common advice — stop caring, be your authentic self, what other people think is none of your business — is asking you to disable a system that is not broken. Nobody has ever managed it, and the attempt mostly adds a second layer of self-criticism about still caring.
+
+**There is a name for the version that gets in the way.** In the research literature it is *fear of negative evaluation* — the anticipation of being judged badly, as distinct from being judged at all. Everyday language has approval-seeking and people-pleasing for the same thing. When it becomes persistent enough to shrink where you go and what you say, it is the central feature of social anxiety, which is common, well understood and treatable, and worth taking to somebody qualified rather than to an article.
+
+**What is actually miscalibrated is not the caring. It is the estimate.** People consistently overrate how much others notice them and how long it stays noticed — the effect Gilovich and colleagues named the spotlight effect in 2000, after experiments in which participants made to wear an embarrassing t-shirt guessed that roughly twice as many observers had clocked it as actually had.
+
+That is the useful finding, because an estimate can be corrected where an instinct cannot be switched off. You are not the main character in anybody else's evening. The people you are worried about are, almost without exception, running the identical process about themselves — which is also why the room feels so much more attentive than it is.
+
+So the goal is not to care less. It is to hold a more accurate figure for how much is actually at stake, and the rest of this page is about how performers arrive at that figure by experiment rather than by reassurance.
+
 ## What's Actually Happening in Your Brain
 
 The fear of judgment is a social-threat response. Your brain treats "this group might evaluate me negatively" with the same neural circuitry it uses for "this predator might attack me." The amygdala doesn't distinguish between physical danger and social danger. Both produce the same response: hypervigilance, self-monitoring, and the urge to protect.
