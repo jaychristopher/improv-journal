@@ -30,7 +30,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.
@@ -64,6 +64,8 @@ In UCB terminology, a premise is the static setup (two people in an elevator). T
 ## The counter-argument
 
 Napier warns that "find the game" can become a performance block — one more thing to search for in your head instead of committing to the moment. His alternative: do something fully, and the pattern reveals itself through commitment. This is a genuine tension: game-awareness can sharpen scenes or paralyze them, depending on whether it's used as a lens or a mandate.
+
+Both sides of that argument land in the same place for an audience of one: [being funny is downstream of noticing](/how-to-be-funny), not a stock of material retrieved on cue.
 
 The game is a primary mechanism for cumulative state — each beat builds on the last, the pattern becomes richer, and the audience leans in because they recognize the pattern and anticipate its next iteration.
 

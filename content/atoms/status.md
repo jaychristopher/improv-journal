@@ -21,7 +21,7 @@ links:
   - { id: playing-against-type, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The relative social position a character occupies in a scene, expressed through behavior rather than title or rank. A concept formalized by Keith Johnstone as a core engine of dramatic interaction.
@@ -55,6 +55,8 @@ produces its own distinct dynamics. Both-high generates competition and comedy (
 Reaching for complexity to appear smart, which actually reads as low status (reaching). **Performing cleverness is a status play** — using irony as a shield, which reads as intellectual superiority but isolates you from the scene. Both sacrifice signal clarity for perceived status.
 
 Johnstone's insight: most people have a habitual status they default to. Becoming aware of your default — and learning to play the opposite — is one of the most transformative improv skills. This is Be Changeable applied to identity: yielding your default power position requires courage.
+
+A permanently low default has a name outside the theatre. [People pleasing is that default hardened into a policy](/how-to-stop-people-pleasing) — lowering on every transaction regardless of what the transaction actually called for.
 
 ## Specific sources
 

@@ -26,7 +26,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
@@ -53,6 +53,8 @@ Presence operates in three registers:
 3. **Presence to yourself** — noticing your own impulses, emotions, and physical state without censoring them
 
 Most training emphasizes #1. But #3 is equally critical — TJ's "heightened sensation" is a form of self-awareness. You can be so focused on your partner that you override your own honest reaction, which is a different failure mode than being in your head.
+
+Off stage the same three registers decide whether an exchange survives. Someone assembling their next remark while you talk has already left, and you can tell — which is most of [why a conversation stalls](/how-to-keep-a-conversation-going), topics having very little to do with it.
 
 Jon Kabat-Zinn defines mindfulness as "awareness that arises through paying attention, on purpose, in the present moment, non-judgmentally." Improv presence shares three of these four qualities but diverges on reactivity. Meditation mindfulness observes without responding. Improv presence observes and responds — it is mindfulness with an output channel. Meditation trains the noticing muscle; improv applies it under load. Neuroscience confirms the overlap: Limb & Braun's fMRI study of jazz improvisation (2008) found that the brain's self-monitoring regions go quiet while self-expressive regions activate — the neurological signature of the censor releasing.
 

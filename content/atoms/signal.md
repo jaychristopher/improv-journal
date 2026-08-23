@@ -17,7 +17,7 @@ links:
   - { id: framing-as-angle-of-approach, relation: enables }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Any information transmitted from one participant to another, whether intentional or not. In improv and in life, signals are always being sent — there is no "off" state.
@@ -36,6 +36,8 @@ Signals are also the mechanism through which **status** is read and assigned. A 
 The quality of a scene depends not on the brilliance of individual signals but on the **signal-to-noise ratio** of the entire interaction. Congruent signals build shared reality. Distorted signals erode it.
 
 Key property: signals are **observer-interpreted**. What you intend to signal and what your partner receives may differ. You cannot control reception, only transmission. This is why clarity (Be Honest) and simplicity (Be Simple) are structural necessities, not aesthetic preferences.
+
+Read from the receiving end, this is also the working definition of the thing: [being articulate](/how-to-be-more-articulate) is a property of how little work the listener has to do, not of the vocabulary available to the speaker.
 
 ## Specific sources
 

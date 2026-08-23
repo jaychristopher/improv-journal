@@ -26,7 +26,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The group of performers operating as a single creative unit. Not a collection of individuals taking turns, but an interdependent system where each player's contribution serves the whole.
@@ -43,6 +43,8 @@ TJ Jagodowski and Dave Pasquesi are the purest proof that ensemble operates at e
 - **Listening** — each player is tracking what the ensemble is building, not just their own thread
 - **Generosity** — each player is working to make the others look good, not competing for attention
 - **Flexibility** — each player can shift roles (leading, supporting, stepping back) as the scene needs
+
+Those four also describe what most people are reaching for when they say [team dynamics](/team-dynamics), with the difference that an ensemble has to demonstrate them in public, without rehearsal, in front of people who paid.
 
 ## Ensemble is the unit where group mind emerges
 

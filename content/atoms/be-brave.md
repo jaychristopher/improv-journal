@@ -25,7 +25,7 @@ links:
   - { id: ref-hines-greatest-improviser, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Act before you're ready. The scene needs offers more than it needs perfect offers.
@@ -53,6 +53,8 @@ The ongoing willingness to deepen, escalate, and let yourself be changed mid-sce
 ## Bravery is a practice, not a trait
 
 Brene Brown's research finds that courage is not a reserve of willpower but a muscle built through repeated vulnerability: *"Vulnerability is the birthplace of innovation, creativity and change."* You do not summon bravery from some internal store. You build it by repeatedly crossing the threshold in a container safe enough to fail in — the class, the ensemble, the warm-up. This is why ensemble trust is a precondition, not a nice-to-have. Without trust, bravery is recklessness. With it, bravery becomes a sustainable practice.
+
+The container is what makes this portable. [Fear of failure loosens](/how-to-overcome-fear-of-failure) when a wrong move stops being permanent — a fact about the room rather than about the person standing in it.
 
 ## The relationship to commitment
 

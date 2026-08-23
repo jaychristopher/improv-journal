@@ -24,7 +24,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Building character from the body first — not from concept, biography, or dialogue. The physical choice precedes (and generates) everything else: point of view, emotional state, status, want. The body leads; the mind follows.
@@ -67,7 +67,7 @@ The most valuable property of body-first character work is that it produces char
 
 - **Tempo shifts.** Scene work where a coach calls tempo changes (1-10 scale). Both players adjust all physical behavior — walking speed, gesture speed, speech rate, eye-contact duration — to the called tempo. Notice: at tempo 2, the same scene becomes weighted, melancholy, deliberate. At tempo 8, it becomes frantic, comic, desperate. The content doesn't change. The body changes everything.
 
-- **Spatial relationship work (Viewpoints).** Two performers move through the space with one rule: maintain constant awareness of the distance between you. Explore what happens at different distances — intimate (6 inches), conversational (3 feet), public (10+ feet). Let the distance dictate the emotional reality. Notice that proximity creates intimacy or threat; distance creates formality or abandonment. Then add a scene on top of the spatial awareness.
+- **Spatial relationship work (Viewpoints).** Two performers move through the space with one rule: maintain constant awareness of the distance between you. Explore what happens at different distances — intimate (6 inches), conversational (3 feet), public (10+ feet). Let the distance dictate the emotional reality. Notice that proximity creates intimacy or threat; distance creates formality or abandonment. Then add a scene on top of the spatial awareness. The nine-channel system this exercise is lifted from is set out in full in [Anne Bogart's Viewpoints](/viewpoints).
 
 - **Laban Effort exploration.** Walk the space in each of the eight Efforts. Spend two minutes in each. Then improvise a scene where each character has a different home Effort (one Presses, one Floats). Notice how the Effort mismatch creates instant dynamic tension — a relationship built entirely from physical contrast.
 

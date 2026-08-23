@@ -25,7 +25,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
@@ -45,6 +45,8 @@ The hidden difficulty: simplicity requires **courage**. Saying "I love you" is s
 This also applies to emotion. One clear feeling is more playable than a complicated emotional cocktail. "I'm angry" gives your partner ground. "I'm angry but also nostalgic and a little amused" gives them nothing to grab.
 
 Note: simplicity governs individual *offers*, not accumulated *structure*. A Harold's third beat can be architecturally complex — because each move within it was simple enough to track.
+
+The same distinction separates [how articulate someone sounds](/how-to-be-more-articulate) from how elaborate they are. Length and clarity are independent variables, and only one of them is a skill.
 
 ## Success condition
 

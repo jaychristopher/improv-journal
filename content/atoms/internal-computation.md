@@ -20,7 +20,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The shadow of **Be Present**. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues without you.
@@ -40,6 +40,8 @@ The result is latency: your response addresses a point made thirty seconds ago, 
 The body announces computation before the mind admits it. Eyes go up or defocus. Breathing shallows. Weight shifts backward. Mouth opens but nothing comes out. Hands freeze or fidget. Your scene partner reads this instantly — they can see you leave before you know you've gone.
 
 Susan Messing nails the felt experience from the other side: *"If you're in your head, you're not here with me."* It's weirdly lonely — being on stage with someone who is physically present but cognitively absent. The audience feels it too. The scene stutters. The energy drops.
+
+Computation is the extreme case of a more ordinary problem, which is that attention has modes and they are not interchangeable. There are [three types of listening](/types-of-listening) worth telling apart, because each one helps in a situation where the others actively hurt.
 
 ## The paradox
 

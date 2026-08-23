@@ -24,7 +24,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The shadow of **Be Brave**. Hesitation is the failure to act at a decision point — not just at the threshold of a scene, but at every moment where the scene needs a choice and you withhold one.
@@ -66,6 +66,8 @@ Hesitation creates latency, which the audience feels as energy loss. It signals 
 1. **Break the freeze physically.** Move your feet. Touch an object. Change your position. A physical action overrides the cognitive stall.
 2. **Return to the last shared reality.** The gap hesitation created isn't a void — the scene was somewhere before you stalled. Go back to the last point of agreement and push forward from there.
 3. **Name it honestly if needed.** "I don't know what to say" — said genuinely, in character — is better than the silence. Honesty converts hesitation into an offer.
+
+None of the three begins with feeling ready. That ordering is the premise behind [exercises that build confidence out of accumulated evidence](/confidence-building-exercises) rather than out of rehearsed affirmations.
 
 ## Specific sources
 

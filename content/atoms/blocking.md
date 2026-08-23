@@ -24,12 +24,14 @@ links:
   - { id: one-word-scene, relation: contrasts }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other principle-shadows are its species.
 
 The most visible form is verbal denial: "No, we're not in a hospital." But blocking operates at every level. You can block **emotionally** — accepting the words, ignoring the feeling ("You seem upset" / "I'm fine, let's move on"). You can block **physically** — turning away, breaking eye contact, retreating from your partner. You can block through **inaction** — refusing to add, forcing your partner to carry the scene alone. And you can block **your own offers** before they leave your mouth — having an impulse, judging it, suppressing it.
+
+That last form generalises furthest. Suppressing your own offer so that someone else stays comfortable is [people pleasing described mechanically](/how-to-stop-people-pleasing), and it costs the exchange exactly what a spoken refusal would.
 
 ## Two roots, not one
 

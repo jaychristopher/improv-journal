@@ -19,7 +19,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.
@@ -37,6 +37,8 @@ For why environment maintenance matters (presence grounding, shared reality feed
 ## Shared space work
 
 The harder and more important skill. Your space work is not solo. When your partner establishes a door, you respect its location. When they place a cup on the table, that cup exists for you too. When they endow the room with heat or cold, you feel it. Shared space work requires active listening applied to physical offers: tracking what your partner has built and inhabiting the same world they did. Walking through the table your partner established is a form of negation — invisible but scene-breaking.
+
+The opposite discipline is worth knowing about, because training the two together reliably confuses people. [Viewpoints](/viewpoints) attends to the real room and the real bodies in it, where space work builds a room that is not there.
 
 Viola Spolin's "Where" games and "Space Walk" exercises are the canonical training for this technique. Her approach: the physical task produces presence as a side effect. You can't mime opening a jar while planning your next clever line — the jar requires your attention. See `ref-spolin-improvisation-for-theater` for the full pedagogical context.
 

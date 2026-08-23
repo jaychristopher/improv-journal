@@ -23,7 +23,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene *this scene* clicks into place. Discovery is not planned. It emerges from the interaction and is recognized, not invented.
@@ -43,6 +43,8 @@ The trigger isn't always novelty. Sometimes the game is the most *ordinary* thin
 ## The search phase is the hardest part
 
 Before the click, both players are in a scene that doesn't know what it's about yet. This is where Be Brave operates — the courage isn't in the discovery, it's in tolerating the *not-yet-discovered*. The willingness to be in a scene where you don't know what's happening, to keep making offers without guarantees, to trust that the game will emerge from honest engagement rather than clever planning. This ambiguity is where beginners panic and reach for complex premises. The experienced improviser stays in the search with patience.
+
+It is also the least mystical account available of where comedy comes from. The distinctive thing was already in the room; [funny is mostly catching it](/how-to-be-funny) rather than supplying it.
 
 ## Discovery requires presence
 

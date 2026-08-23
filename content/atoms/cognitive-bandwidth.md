@@ -16,7 +16,7 @@ links:
   - { id: ref-attention-and-effort-kahneman, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Attention is limited. Action consumes capacity. Simultaneous optimization is impossible.
@@ -28,6 +28,8 @@ When internal computation (planning, evaluating, scripting) and external observa
 Under overload, the system doesn't crash — it **degrades**. Channels start dropping. You catch words but miss tone. You hear the offer but lose the physical context. You default to habit instead of responding to what's actually happening. In extreme cases (task saturation), the freeze response activates — the "deer in headlights" that marks a performer whose internal processing has consumed all available capacity for reception.
 
 The consequence: every cognitive task an improviser adds — planning the next line, monitoring their own performance, evaluating whether the last move was good — directly subtracts from their ability to receive what is happening now. This is why beginners struggle: they are running too many processes on too little hardware. Expertise doesn't add bandwidth. It reduces the processing cost of basic operations, freeing capacity for reception and response.
+
+The same arithmetic explains a frustration that has nothing to do with performing. [Being articulate](/how-to-be-more-articulate) is not a vocabulary problem but a question of how many processes are running while you speak.
 
 For the full treatment of bandwidth as a concept — individual vs. shared, emotional bandwidth, recovery mechanisms, the cognitive science backing — see the `bandwidth` definition atom.
 

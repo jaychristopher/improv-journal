@@ -19,7 +19,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum. Viola Spolin's core exercise — taught at every school, in every first class.
@@ -41,6 +41,8 @@ Two players face each other. Player A moves slowly; Player B mirrors A's movemen
 ## What to notice
 
 The qualitative shift between stages 1-2 (one leads, one follows) and stage 3 (neither leads). In stage 3, a kind of group mind emerges at the dyad level — two people moving as one organism. This is the smallest possible version of ensemble coherence. If you can do it with one person, you can learn to do it with seven.
+
+It is also one of the few exercises that survives leaving the theatre intact. Mirroring needs no premise, no performance and no explaining, which is what qualifies it as [five-minute team building](/5-minute-team-building) rather than as an activity needing a facilitator.
 
 ## Common failures
 

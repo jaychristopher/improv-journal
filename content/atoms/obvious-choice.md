@@ -17,7 +17,7 @@ links:
   - { id: ref-ucb-manual, relation: contrasts }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Technique for: Be Simple**
@@ -45,6 +45,8 @@ Every offer has a processing cost for your partner. Complex offers (new characte
 ## Obvious is not boring
 
 Students hear "be obvious" and think "be dull." The misunderstanding: obvious means *what a human would actually feel in this situation* — not generic, not low-energy, not careful. "My husband left me" — the obvious response is grief, not a pun. Grief played with full commitment is riveting. Grief played carefully is boring. The variable is commitment, not the choice itself. Obvious-as-emotional-truth is interesting. Obvious-as-generic is death.
+
+This is the whole of the counterintuitive claim that [funny is not assembled out of jokes](/how-to-be-funny). The obvious choice, fully committed, is more watchable than the clever one held at arm's length.
 
 The paradox that makes this work: the obvious choice *feels* risky because it feels exposed. Complex choices feel safe because they have layers to hide behind. This is why Be Brave is a prerequisite — the obvious choice strips away armor. But the obvious choice leaves space for the scene to grow, while the complex choice fills the space before the scene has started.
 

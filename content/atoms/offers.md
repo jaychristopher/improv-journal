@@ -22,7 +22,7 @@ links:
   - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 An offer is anything that advances the scene — any word, gesture, expression, movement, or silence that adds to the shared reality. Johnstone's core principle: treat everything your partner does as an offer. The shift from "is an offer" to "treat as an offer" matters — it puts agency on the receiver, not the sender.
@@ -38,6 +38,8 @@ An offer has no fixed meaning until a scene partner receives it. Meaning is comp
 - **Environmental** — the space, the objects, the temperature, the time pressure
 
 Offers are not just the big, obvious moves ("We're on a spaceship!"). The richest offers are often the smallest — a shift in posture, a pause, a tone of voice. These micro-offers carry emotional information that grounds scenes in something real.
+
+Ordinary conversation runs on the same currency, and mostly in the small denominations. That is the whole trick to [keeping a conversation going](/how-to-keep-a-conversation-going): what you do with what you were handed, rather than what you were holding in reserve.
 
 ## Self-offers
 
