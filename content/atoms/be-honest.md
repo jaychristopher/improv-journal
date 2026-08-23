@@ -58,6 +58,8 @@ Mick Napier would caution that "be honest" as an instruction can itself become a
 
 **Be honest isn't a moral instruction. It's a clarity instruction.** It raises the signal-to-noise ratio. Honest signals are clear. Clever signals are muddy. Authenticity maintains shared state coherence — it gives other players something solid to react to. Constant irony or wackiness gives your partner nothing to grab onto.
 
+Signalling the reality as it stands is easy advice and hard practice, and it is hardest where it matters most. [How to have difficult conversations](/how-to-have-difficult-conversations) is this principle applied where both people have a reason to distort — which is the situation the principle was written for.
+
 ## Specific sources
 
 Close, *Truth in Comedy*, Ch. 1: "The truth is funny. Honest discovery, observation, and reaction is better than contrived invention." Hines, ["Can I Be Honest With You?"](https://willhines.substack.com/p/can-i-be-honest-with-you). **Traditions diverge:** Commedia dell'arte, clown, and mask work traditions value heightened performance and craft over raw personal authenticity. In Lecoq's physical theater, honesty means fidelity to the mask/character, not to the performer's inner state. The character IS the mask.

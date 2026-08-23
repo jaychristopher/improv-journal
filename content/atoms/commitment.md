@@ -26,7 +26,7 @@ links:
   - { id: blind-offer, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Commitment is the willingness to fully invest in a choice, even — especially — when you're unsure it's the "right" one. In improv, a fully committed mediocre choice will always outperform a half-hearted brilliant one.
@@ -53,6 +53,8 @@ Commitment to a choice doesn't mean rigidity. You commit fully to this moment's 
 For Del Close, commitment was the engine of heightening — the willingness to hit the unusual thing *again*, harder. Without commitment, pattern never emerges. The game of the scene depends on players who are willing to go further, not players who are hedging their bets.
 
 Committed choices read as high status (Johnstone). They send clear signals (your partner knows what to build on). And they create path dependence (irreversibility) — once you've committed, the scene has a direction that cannot be uncommitted. This is why bravery is the prerequisite: commitment sustains what initiation starts.
+
+The same mechanism is why confidence turns out to be a consequence rather than a prerequisite. [Confidence building exercises](/confidence-building-exercises) are built on it: you commit to something before you feel ready, survive it, and the feeling arrives afterwards as a result rather than beforehand as a permission.
 
 ## Specific sources
 

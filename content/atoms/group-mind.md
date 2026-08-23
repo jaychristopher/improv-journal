@@ -22,7 +22,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody explicitly planned, and responding to the scene's needs before they're verbalized.
@@ -56,6 +56,8 @@ Time distorts — scenes feel shorter than they are. Self-monitoring goes quiet.
 It arises and dissipates, sometimes within a single scene. It cannot be forced, gripped, or held. Trying to maintain it is a form of self-monitoring that destroys it. The ensemble either creates the conditions and lets it arrive, or it doesn't come. Naming this prevents the common misunderstanding that an ensemble either "has it" or doesn't — every ensemble has *moments* of it, and the goal of training is to widen those windows.
 
 Group mind is the ultimate systemic health indicator — when it's happening, every other indicator (cumulative state, coherence, mutual recognition) is at its peak.
+
+A working group produces the same phenomenon and rarely names it. [Team dynamics](/team-dynamics) covers what actually generates it — status, signalling, and the coherence a group maintains without discussing it — instead of treating it as chemistry a team either has or does not.
 
 ## Specific sources
 

@@ -22,7 +22,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.
@@ -67,6 +67,8 @@ The apologizer isn't just apologizing more absurdly — underneath, they're reve
 ## Heightening is the engine of cumulative state
 
 The systemic health indicator "the world gets richer over time" is largely driven by heightening — each beat adds to the total, building a snowball of meaning that makes the scene feel complete when it ends.
+
+This is also the closest thing improv has to an engine for comedy, which is why [how to be funny](/how-to-be-funny) spends its length on noticing a pattern and escalating it rather than on jokes. The laugh is usually the third time, not the first.
 
 ## Specific sources
 

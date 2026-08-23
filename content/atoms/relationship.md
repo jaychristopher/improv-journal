@@ -24,7 +24,7 @@ links:
   - { id: ref-hines-substack, relation: contrasts }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The connection between characters in a scene — who they are to each other, what they feel about each other, and what they want from each other. Relationship is the imported reality the audience recognizes instantly — the one thing on stage that isn't invented. Everything else is fiction; the connection between two people is real enough that audiences project their own experience onto it before anyone speaks.
@@ -52,6 +52,8 @@ The most common beginner mistake is building a *situation* (we're on a spaceship
 ## Relationship vs. game
 
 Game lives in behavioral pattern; relationship lives in emotional connection. They serve different masters but the strongest scenes interweave both — the game heightens while the relationship deepens underneath. When forced to choose, choose relationship. A scene with rich relationship and no game is a drama. A scene with a sharp game and no relationship is a sketch. Both can work; the former has more life in it.
+
+Off stage the same question decides how an exchange goes: who these two people are to each other, and what they want from each other today rather than in general. [Questions for couples](/questions-for-couples) is built to keep that current, on the argument that the answers change and most people stop asking.
 
 ## Specific sources
 

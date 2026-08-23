@@ -28,7 +28,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
@@ -60,6 +60,8 @@ Changeability is the meaning-is-relational law in action. If meaning lives betwe
 Without changeability, scenes become "polite improv" — everyone agrees, nobody is moved. The offers are accepted but they don't land. The shared reality exists but nothing is at stake because nothing is changing anyone.
 
 Listening, at its deepest, is the willingness to be changed. Lisa Rowland names this explicitly: the question of changeability is ultimately a question of faith — whether you trust the unfolding scene enough to let it reshape you.
+
+Being changed by what happens is the part people resist hardest, on stage and off. [How to let go of control](/how-to-let-go-of-control) treats that resistance as the subject rather than as a personality trait — worth reading even though its results page is currently held by sites this one cannot reach.
 
 ## Specific sources
 

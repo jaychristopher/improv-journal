@@ -26,7 +26,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
@@ -56,6 +56,8 @@ Support isn't selflessness for its own sake. It's an emergent property of mutual
 ## The failure mode of support is self-erasure
 
 If you suppress your own voice, point of view, and creative instincts entirely in service of your partner, you remove an agent from the system. The ensemble needs full humans, not doormats. Susan Messing: if you're so busy serving everyone else that you've lost your own engagement, you've abandoned the scene, not supported it. Support means serving the scene with your whole self — not disappearing from it.
+
+Making somebody else's choice work is a skill before it is a virtue, and it transfers directly. [Trust building exercises](/trust-building-exercises) are largely structured practice at it, which is why the ones that work look nothing like the trust fall they are named after.
 
 ## Specific sources
 
