@@ -210,10 +210,35 @@ function isStranded(bridge: { frontmatter: BridgeFrontmatter }): boolean {
  *
  * Stranded guides are not hidden — they are placed after the reachable ones.
  */
+/**
+ * How many top-ten results a low-authority site could plausibly displace.
+ *
+ * Reach is an estimate about a results page nobody has read. Where one has been
+ * read, `serp_top10_dr` holds every domain rating in it, and the count under
+ * DR 50 is the only direct measure available of whether there is anything here
+ * to take. It disagrees with reach: what-is-improv has three reachable results,
+ * the most on the site alongside viewpoints and yes-and-improv, and 250 of
+ * traffic potential — so reach alone buried it near the bottom of the one
+ * cluster this domain demonstrably gets surfaced for.
+ */
+const REACHABLE_UNDER = 50;
+const STRONG_EVIDENCE = 3;
+
+function reachableCount(bridge: { frontmatter: BridgeFrontmatter }): number {
+  return (bridge.frontmatter.serp_top10_dr ?? []).filter((dr) => dr < REACHABLE_UNDER).length;
+}
+
 export function byReach<T extends { frontmatter: BridgeFrontmatter }>(bridges: T[]): T[] {
   return [...bridges].sort((a, b) => {
     const strandedDiff = Number(isStranded(a)) - Number(isStranded(b));
     if (strandedDiff !== 0) return strandedDiff;
+    // Measured evidence goes in front of estimated size, but only where it is
+    // strong. This is not a full reachability sort: 48 verdicts predate the
+    // profile and have no distribution recorded, so ranking every page this way
+    // would mostly be ranking on whether anyone happened to look yet.
+    const evidenceDiff =
+      Number(reachableCount(b) >= STRONG_EVIDENCE) - Number(reachableCount(a) >= STRONG_EVIDENCE);
+    if (evidenceDiff !== 0) return evidenceDiff;
     return reachOf(b) - reachOf(a);
   });
 }
