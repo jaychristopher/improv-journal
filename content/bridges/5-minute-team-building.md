@@ -1,6 +1,6 @@
 ---
 title: "5-Minute Team Building Activities That Actually Work"
-description: "You don't need an escape room. Five minutes of the right improv exercise can shift how a group interacts for the rest of the day. Here are five that work."
+description: "You don't need an escape room. Twenty improv exercises that shift how a group interacts, grouped by what is actually wrong with the room."
 target_keywords:
   - { keyword: "5 minute team building activities", volume: 600, difficulty: 0, traffic_potential: 800, parent: "5-minute team building activities" }
   - { keyword: "5 minute team building activities for work", volume: 60, difficulty: 0, parent: "5-minute team building activities", traffic_potential: 900 }
@@ -12,7 +12,7 @@ entry_atoms: [mirroring, yes-and-chain, gift-giving, one-word-scene, warm-up]
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # 5-Minute Team Building Activities That Actually Work
@@ -97,7 +97,66 @@ This exercise trains a skill improv calls making your partner look good. Person 
 
 **What changes after:** A group that has passed energy around a circle walks into a meeting with a shared attentional field. They've practiced, for two minutes, the act of giving and receiving focused attention. The meeting starts differently because the people in it are oriented toward each other rather than toward their own internal agendas.
 
-## The Principle Underneath All Five
+## Fifteen More, Grouped by What the Room Needs
+
+The five above are worth learning properly. These are the rest of a working rotation, and they are grouped by the problem rather than alphabetically, because the only question that matters at 9.58am is what is actually wrong with this room.
+
+Times assume a group of six to twelve. All of them need no props and no preparation.
+
+### When the energy is flat
+
+- **Pass the clap** — 2 min. Stand in a circle. Pass a single clap round by making eye contact and clapping at the same instant as the person receiving it. Speed up until it fails, then start again. The failures are the point; nobody can be self-conscious while trying to synchronise.
+- **Zip zap zop** — 3 min. Same circle, but pass a word — zip, zap, zop, in that order — with a pointed hand and hard eye contact. Anyone who hesitates or breaks the sequence restarts it. Faster than it sounds and impossible to do while thinking about something else.
+- **Countdown** — 2 min. The group counts to twenty out loud, one number per person, nobody assigned an order. If two people speak at once, start again. It sounds trivial and it is the purest listening exercise on this list.
+- **Shake-out** — 90 sec. Shake the right hand eight times, left hand eight, right foot, left foot, then eight again down to one, counting aloud together. Ridiculous, physical, and the fastest way to change a room's state.
+
+### When people are still in their heads
+
+- **Three things** — 3 min. In pairs, one person names a category and the other must instantly say three things in it. No thinking time, no quality bar. Trains speaking before editing, which is the actual blocker in most quiet meetings.
+- **Last word, first word** — 4 min. In pairs, hold a conversation where each reply must begin with the final word of what the other person just said. Makes planning ahead structurally impossible.
+- **One-word story** — 4 min. The group tells a single story one word per person round the circle. Nobody controls a sentence, so nobody can draft one in advance.
+- **What are you doing?** — 4 min. In a circle, one person mimes an action. The next asks what they are doing, and the answer must name a *different* action, which the asker then performs. The mismatch is what stops people rehearsing.
+
+### When a meeting has stalled
+
+- **Yes, and — but about the actual problem** — 5 min. Take the stuck item and run three rounds where every contribution must start by building on the last one. Ban "yes, but" outright for the duration. Not a warm-up; a way of getting a stalled decision unstuck.
+- **Worst possible idea** — 4 min. Ask explicitly for the worst solution anybody can think of. It removes the quality bar that is causing the silence, and the reversal of a genuinely terrible idea is often usable.
+- **New choice** — 3 min. Somebody states their proposal. Call "new choice" and they must immediately restate it differently. Three times. The third version is usually the honest one.
+- **Silent sort** — 3 min. Arrange yourselves in a line by something nobody has said aloud — years at the company, distance travelled to work — without speaking. Forces cooperation with no verbal channel, which resets a room that has been arguing.
+
+### When the group does not know each other yet
+
+- **Two truths, badly** — 5 min. The usual game, with one rule change: the lie has to be plausible and boring. The interesting version rewards showmanship; this version rewards paying attention.
+- **Gift giving** — 3 min. In pairs, mime handing over an unnamed object. The receiver names it, reacts as though it is exactly what they wanted, and explains why. Teaches accepting what you are given before evaluating it.
+- **Where I was at fourteen** — 4 min. Each person names the town and one true detail. Low-risk, specific, and it produces more actual information about people than any icebreaker question.
+
+For the full set with what each one trains, see [improv games](/improv-games). For longer sessions, [team building activities](/team-building-activities) covers formats that need more than a few minutes.
+
+## Running These Without It Being Awkward
+
+The activities are the easy part. Introducing them is where this goes wrong, and it goes wrong in predictable ways.
+
+**Do not explain the benefit first.** "This will help us collaborate better" invites the room to evaluate whether it worked. Say what to do, do it, and let people notice the difference themselves.
+
+**Give it a hard time limit out loud.** "Two minutes, then we start" removes the main objection, which is not embarrassment but the fear that this will eat the meeting.
+
+**Do it standing if the room allows.** Seated groups stay in meeting posture and half-participate. Standing changes the state on its own, before any activity has begun.
+
+**Go first and be visibly bad at it.** Whoever called the exercise sets the permission level. A manager who does it carefully and correctly teaches everyone else to be careful and correct, which is the opposite of what these are for.
+
+**Let people opt out without negotiation.** One person watching costs nothing. One person being persuaded in front of colleagues costs the whole room, and it is the single fastest way to make the next attempt impossible.
+
+**Remote needs different picks.** Anything relying on physical synchrony — pass the clap, the machine, mirroring — falls apart on a video call because of latency. Verbal round-robins survive: one-word story, countdown, three things, where I was at fourteen. [Virtual team building activities](/virtual-team-building-activities) covers the rest.
+
+## What Goes Wrong
+
+**It becomes a performance for the senior person.** If the manager is watching rather than playing, the activity turns into an appraisal. The fix is participation, not encouragement.
+
+**It gets run when the problem is not attention.** These change how a group is attending to each other. They do not fix a team that is under-resourced, badly led, or in genuine conflict, and running a warm-up at a group with a real grievance reads as exactly what it is.
+
+**It happens once.** A single exercise before one meeting produces a pleasant five minutes. The change people describe comes from it being ordinary — the tenth time, when nobody comments on it any more.
+
+## The Principle Underneath All of Them
 
 Every one of these exercises does the same thing at the cognitive level: it redirects attention from internal to external, from self to other, from individual to collective. That's not a team building trick. It's the mechanism underneath every form of human connection.
 
