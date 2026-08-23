@@ -3,6 +3,8 @@ title: "Would You Rather Questions: 164 That Split the Room"
 description: "A would you rather only works if the room genuinely divides. The choice is never the point — the defence is, and most lists get that exactly backwards."
 target_keywords:
   - { keyword: "would you rather questions", volume: 190000, difficulty: 11, traffic_potential: 122000, parent: "would you rather questions" }
+  - { keyword: "would you rather", volume: 104000, difficulty: 34, traffic_potential: 91000, parent: "would you rather questions" }
+  - { keyword: "would you rather game", volume: 6400, difficulty: 25, traffic_potential: 90000, parent: "would you rather questions" }
   - { keyword: "would you rather questions for kids", volume: 38000, difficulty: 2, traffic_potential: 32000, parent: "would you rather questions" }
   - { keyword: "would you rather for kids", volume: 13000, difficulty: 1, traffic_potential: 33000, parent: "would you rather questions" }
   - { keyword: "would you rather questions for couples", volume: 5600, difficulty: 3, traffic_potential: 9800, parent: "would you rather questions" }
@@ -66,6 +68,25 @@ One rule, and the whole thing depends on it: **you have to pick.**
 "It depends" is the death of this game, and it is worth naming what it is. `blocking` on this site is refusing what you were handed — the move that stops a scene by declining the premise. "It depends" is exactly that. It is a refusal dressed as thoughtfulness, and one person doing it gives everybody else permission, at which point you are not playing anything.
 
 `commitment` is the opposite and is the actual skill: choose without full information and back it. Improvisers train this specifically, because a scene where somebody hedges is a scene that has stopped. Take the constraint seriously, pick the worse option if you must, and defend it. The pleasure of this game lives entirely on that side of the line.
+
+## How to Play Would You Rather
+
+There is barely a game here, which is why it survives — no equipment, no scoring, no setup, and it can start mid-sentence.
+
+**The whole of it:** somebody offers two options. Everybody picks one. You may not pick both, neither, or "it depends". Then whoever wants to argues for their choice, and that argument is the actual game.
+
+Four variants worth knowing, because they suit different rooms.
+
+- **The round.** Go clockwise, one pair each, everybody answers every pair. Best for six to ten people who mostly know each other.
+- **Simultaneous vote.** Call the pair, count to three, everybody points left or right. Much better for a large group, because it removes the drift where later answers follow earlier ones.
+- **Split the room.** Physically move to a side. The same thing with legs, and by far the best version for twenty or more — the room can see the split, which is the bit that starts the argument.
+- **Two-player.** Alternate asking, and both answer every pair. Slower and considerably deeper, because there is nowhere to hide in a group of two.
+
+**How long it lasts.** Ten to fifteen pairs is a session. The format has a short half-life and the second half of a long list is always weaker, so stop while people still want another one.
+
+**One person should be prepared to go second.** The first answer to any pair sets the tone — if it is thoughtful, the round is thoughtful; if it is a joke, the round is jokes. Neither is wrong, but somebody deciding that on purpose beats it happening by accident.
+
+If the room is too cold for anybody to defend a choice out loud, the game you want first is [this or that](/this-or-that-questions), which asks for a preference rather than an argument and costs nothing to answer.
 
 ## Good Would You Rather Questions
 

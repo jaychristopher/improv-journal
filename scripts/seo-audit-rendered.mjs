@@ -255,19 +255,37 @@ for (const [id, n] of claimed) {
   }
 }
 
-// lastmod that has stopped moving is why recrawl stops.
+/**
+ * lastmod that has stopped moving is why recrawl stops — but the old check
+ * here compared every value against the date of the last commit, and warned
+ * when more than 80% were older. That fires the first time you commit on a new
+ * day without editing all 328 pages, which is every day. A warning that is
+ * always on is worse than no warning, because it teaches you to skip the
+ * audit.
+ *
+ * lastmod is supposed to be older than the last commit for anything that did
+ * not change. The faults actually worth catching are a date in the future, and
+ * every page sharing one value — the signature of a build timestamp being
+ * emitted instead of per-page content dates.
+ */
 try {
   const sitemap = fs.readFileSync(path.join(BUILD_DIR, "sitemap.xml.body"), "utf-8");
   const mods = [...sitemap.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map((m) => m[1]);
-  const head = execFileSync("git", ["log", "-1", "--format=%ad", "--date=short"], {
+  const today = execFileSync("git", ["log", "-1", "--format=%ad", "--date=short"], {
     encoding: "utf-8",
   }).trim();
-  const stale = mods.filter((d) => d < head).length;
-  if (mods.length && stale / mods.length > 0.8) {
+
+  const ahead = mods.filter((d) => d.slice(0, 10) > today);
+  if (ahead.length) {
+    add("critical", "/sitemap.xml", `${ahead.length} lastmod values are in the future`);
+  }
+
+  const distinct = new Set(mods.map((d) => d.slice(0, 10)));
+  if (mods.length > 20 && distinct.size === 1) {
     add(
       "warning",
       "/sitemap.xml",
-      `${stale} of ${mods.length} lastmod values predate the last commit`,
+      `every lastmod is ${[...distinct][0]} — looks like a build timestamp, not content dates`,
     );
   }
 } catch {
