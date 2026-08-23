@@ -352,11 +352,30 @@ export function atomDescription(
   type: AtomType,
   extracted: string,
   maxLen = DESCRIPTION_MAX,
+  rules?: string,
 ): string {
   const label = TYPE_LABELS[type] ?? "an improv concept";
   const fallback = `${title} — ${label}.`;
 
-  const body = fitSentences(extracted, maxLen);
+  /**
+   * A game's own rules usually describe it better than its opening paragraph.
+   *
+   * The exercise atoms open with what the game trains — "Deep attention, body
+   * awareness, ensemble connection, yielding/leading as a spectrum" — which is
+   * a list of abstractions, and packing whole sentences from it produced
+   * snippets ending on fragments like "A circle." `how_to_play` is one
+   * purpose-written sentence per game and is what somebody scanning a result
+   * wants instead.
+   *
+   * Usually, not always. Whole-sentence fitting means a two-sentence rule with
+   * a long second half keeps only the first half: Freeze Tag went to "Two
+   * players start a scene", which is worse than what it replaced. So take
+   * whichever survives fitting with more of it intact, and prefer the rules
+   * when they are level.
+   */
+  const fromRules = rules?.trim() ? fitSentences(rules, maxLen) : "";
+  const fromLead = fitSentences(extracted, maxLen);
+  const body = fromRules.length >= fromLead.length ? fromRules || fromLead : fromLead;
   if (!body) return fallback.length <= maxLen ? fallback : extractDescription(extracted, maxLen);
 
   const suffix = ` ${title} is ${label}.`;

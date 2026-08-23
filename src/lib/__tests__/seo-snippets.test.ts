@@ -64,6 +64,24 @@ describe("atomDescription", () => {
     expect(desc.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
   });
 
+  it("prefers a game's rules over its list of what it trains", () => {
+    const trains = "Deep attention, body awareness, ensemble connection.";
+    const rules =
+      "Two players face each other and move in unison with no agreed leader, slowly enough that an observer cannot tell who is initiating.";
+    const desc = atomDescription("Mirroring", "exercise", trains, DESCRIPTION_MAX, rules);
+    expect(desc.startsWith("Two players face each other")).toBe(true);
+  });
+
+  it("keeps the lead when fitting the rules would leave only a stub", () => {
+    // Whole-sentence fitting cannot keep the second sentence here, and the
+    // first alone says less than the lead does. This is the Freeze Tag case.
+    const lead =
+      "The most universal shortform improv game. Two performers begin a scene and play until somebody stops them.";
+    const rules = `Two players start a scene. ${"and then something happens ".repeat(8)}`;
+    const desc = atomDescription("Freeze Tag", "format", lead, DESCRIPTION_MAX, rules);
+    expect(desc.startsWith("The most universal")).toBe(true);
+  });
+
   it("falls back to the title and label when no sentence fits", () => {
     const unbroken = `${"word ".repeat(80)}`;
     const desc = atomDescription("Mirroring", "exercise", unbroken);

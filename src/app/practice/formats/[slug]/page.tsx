@@ -25,6 +25,8 @@ export async function generateMetadata({
     atom.frontmatter.title,
     atom.frontmatter.type,
     extractDescription(atom.content),
+    undefined,
+    atom.frontmatter.how_to_play,
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
