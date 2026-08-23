@@ -94,6 +94,33 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
 export const PROMOTION_FLOOR = 10_000;
 const MAX_PROMOTED = 24;
 
+/**
+ * Measured evidence also earns a slot, not only size.
+ *
+ * Everything above this point ranks on estimates. Reach is a better estimate
+ * than volume and the verdict is better than difficulty, but a page's traffic
+ * potential is still a number a tool supplies about a results page nobody has
+ * looked at. Where a SERP has actually been read, `serp_top10_dr` records every
+ * domain rating in the top ten, and the count sitting under DR 50 is the only
+ * direct measure here of whether a low-authority site could displace anything.
+ *
+ * It disagrees with reach sharply. The three pages with the most reachable
+ * results — viewpoints, yes-and-improv and what-is-improv, three apiece —
+ * carry 1,100, 1,100 and 250 of potential, so the floor excluded all three from
+ * every page on the site. Meanwhile the promoted set is chosen entirely by
+ * potential, and the improv cluster is also the one subject Search Console
+ * shows this domain getting surfaced for at all. Two independent signals agreed
+ * and the promotion block could hear neither.
+ *
+ * So a guide qualifies on either count. This deliberately does not reorder the
+ * large pages against each other: 48 verdicts predate the profile and have no
+ * distribution recorded, so there is no basis yet for ranking them this way.
+ * It only stops a floor built on estimates from excluding the pages with the
+ * best evidence.
+ */
+const REACHABLE_UNDER = 50;
+const PROMOTE_IF_REACHABLE = 3;
+
 export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
@@ -109,9 +136,11 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
           reach: reachOf(keywords),
           difficulty: primary?.difficulty,
           verdict: bridge.frontmatter.serp_verdict,
+          reachable: (bridge.frontmatter.serp_top10_dr ?? []).filter((dr) => dr < REACHABLE_UNDER)
+            .length,
         };
       })
-      .filter((guide) => guide.reach >= PROMOTION_FLOOR)
+      .filter((guide) => guide.reach >= PROMOTION_FLOOR || guide.reachable >= PROMOTE_IF_REACHABLE)
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.verdict !== "authority")
       // A checked-open guide beats the difficulty proxy. "How to stop
