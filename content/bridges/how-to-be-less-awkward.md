@@ -1,12 +1,12 @@
 ---
-title: "How to Be Less Awkward: Lessons from Improvisers"
-description: "Awkwardness isn't a personality trait — it's a specific attention problem. Improv performers fix it by redirecting focus from self-monitoring to connection."
+title: "Social Awkwardness Is an Attention Problem, Not a Trait"
+description: "Social awkwardness is not a personality trait. It is what happens when attention turns inward at the moment it needed to be outward — and that is trainable."
 target_keywords:
+  - { keyword: "social awkwardness", volume: 1000, difficulty: 4, traffic_potential: 3500, parent: "socially awkward" }
   - { keyword: "how to be less awkward", volume: 600, difficulty: 2, traffic_potential: 900, parent: "how to not be socially awkward" }
-  - { keyword: "social awkwardness", volume: 1000, parent: "socially awkward", difficulty: 4, traffic_potential: 3500 }
 serp_checked: "2026-08-23"
-serp_min_dr: 53
-serp_verdict: authority
+serp_min_dr: 11
+serp_verdict: winnable
 entry_atoms: [be-present, active-listening, offers, commitment, internal-computation]
 entry_path: improv-for-life
 primary_problem: "self-monitoring is louder than connection"
@@ -15,10 +15,12 @@ primary_cta_target: presence-and-commitment
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
-# How to Be Less Awkward: Lessons from People Who Make Things Up for a Living
+# Social Awkwardness Is an Attention Problem, Not a Trait
+
+**Social awkwardness is what happens when attention turns inward at the moment it needed to be outward.** It is not a personality type, a deficit of social skill, or something people are born with and stuck with. It is a specific, recurring misallocation of attention — and because attention is trainable, so is this.
 
 Awkwardness feels like a personality trait. Something baked in. "I'm just an awkward person." But if you watch what awkwardness actually is — the specific moments when it strikes, what triggers it, what it feels like from the inside — it's not a trait at all. It's a **attention problem.**
 
@@ -100,6 +102,20 @@ None of this is learnable by intending it harder in the moment. The attention sh
 **Practise committing to something unpolished.** `first-line-drill` is starting before you know where you are going. It trains the specific thing hedging avoids — saying a thing and letting it stand.
 
 **Then use it once a day, on something small.** One exchange where you answer with your first response and do not soften it afterwards. The goal is not a better conversation. It is one repetition of not editing.
+
+## Is It Social Awkwardness or Social Anxiety?
+
+Worth separating, because the page you are reading is about one of them and quietly useless for the other.
+
+**Social awkwardness is situational and after the fact.** It shows up in particular moments — the greeting that lands wrong, the pause you filled badly — and the discomfort is mostly retrospective. You replay it that evening. You are not usually afraid of the next conversation; you are just annoyed about the last one.
+
+**Social anxiety is anticipatory and physical.** The dread arrives before the event, sometimes days before. It comes with symptoms that are not about attention at all — a racing heart, nausea, a mind that goes blank. It leads to avoidance: declining things, leaving early, planning routes around people. Social anxiety disorder is a recognised clinical condition, and roughly one in eight people meet the criteria at some point.
+
+The distinction matters here because the entire method on this page is *redirect your attention outward*, and that instruction is close to useless against a physiological alarm response. Telling somebody mid-panic to focus on their partner is asking them to out-concentrate their own nervous system. Worse, when it fails — and it will — it reads as further evidence that they are uniquely bad at this, which is exactly the belief doing the damage.
+
+If the pattern is anticipatory dread, physical symptoms and avoidance, the useful move is not a better technique. It is talking to a GP or a therapist; cognitive behavioural therapy has a strong evidence base for this specifically. The attention model still describes something true about what happens in the moment. It is just not the intervention.
+
+Two things can also be true at once. Plenty of people have ordinary situational awkwardness and no anxiety disorder whatsoever, and plenty of people have both. The test is not how bad it feels — it is whether the fear arrives before the event or the embarrassment arrives after it.
 
 ## The Uncomfortable Truth
 
