@@ -157,7 +157,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Want](https://www.physicsofconnection.com/practice/vocabulary/want): What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters do things rather than merely exist.
 - [Warm-Up](https://www.physicsofconnection.com/practice/vocabulary/warm-up): The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life...
 
-## Techniques (48)
+## Techniques (49)
 
 - [Accepting the Offer](https://www.physicsofconnection.com/practice/techniques/accepting-the-offer)
 - [Active Listening](https://www.physicsofconnection.com/practice/techniques/active-listening): Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language,...
@@ -183,6 +183,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Initiation](https://www.physicsofconnection.com/practice/techniques/initiation)
 - [Let Yourself Be Changed](https://www.physicsofconnection.com/practice/techniques/let-yourself-be-changed)
 - [Mapping](https://www.physicsofconnection.com/practice/techniques/mapping): A specific game type where one reality is played through the lens of another entirely.
+- [Meisner Technique](https://www.physicsofconnection.com/practice/techniques/meisner-technique): An actor training method built on a single instruction — put your attention on the other person and respond to what they actually do — trained through a...
 - [Opening](https://www.physicsofconnection.com/practice/techniques/opening): The 3-5 minute ensemble ritual that transforms a single audience suggestion into multiple themes, ideas, and premises for a longform show.
 - [Organic Opening](https://www.physicsofconnection.com/practice/techniques/organic-opening): A group free-association exercise that generates raw thematic material for a Harold or other longform show.
 - [Pacing](https://www.physicsofconnection.com/practice/techniques/pacing): Speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.

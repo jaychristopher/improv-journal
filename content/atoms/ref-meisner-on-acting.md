@@ -5,6 +5,7 @@ type: reference
 status: draft
 tags: [references, books, meisner, acting, emotional-truth]
 links:
+  - { id: meisner-technique, relation: illustrates }
   - { id: emotional-truth, relation: illustrates }
   - { id: emotional-range, relation: illustrates }
   - { id: active-listening, relation: illustrates }
@@ -22,7 +23,7 @@ work:
   published: "1987"
   isbn: "0394750594"
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Sanford Meisner & Dennis Longwell. *Sanford Meisner on Acting.* Vintage Books, 1987.**
