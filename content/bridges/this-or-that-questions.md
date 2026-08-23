@@ -424,6 +424,24 @@ Keep them well away from anything a person could be assessed on. The point is wa
 
 For rooms where the power dynamics matter more than the questions do, that has [its own page](/icebreaker-questions-for-work).
 
+## Where It Falls Flat
+
+Everything this format does well rests on one property: **the answers cost nothing.** Coffee or tea reveals nothing, commits you to nothing, and cannot be held against you. Remove that and the round keeps its shape while losing the entire reason it worked.
+
+Four ways it comes off, and the first is much the most common.
+
+**The pair that is not actually trivial.** Rent or own. Private school or state. Big wedding or small. Eat out or eat in. Each is structurally identical to coffee or tea and none of them is trivial — they encode money, class and circumstance, and somebody in the room answers them from a position rather than a preference. You will usually not find out that you did this. The test is not whether the pair sounds light, but whether both answers are equally free to give.
+
+**A pair with an obvious answer.** If the room lands unanimously, that was not a question, it was a quiz, and quizzes produce a beat of silence rather than a conversation. Two or three of these in a row and people stop expecting the round to go anywhere.
+
+**Running it at a room that wanted to talk.** This is the format for a cold start. Used on a group that had arrived ready to say something real, twenty preference pairs read exactly as what they are — a way of filling the time without anybody having to risk anything. Rooms notice being managed.
+
+**Doing the round and never going back.** The section above says to note the pairs that split and return to them, and that is not a refinement. Skipped, the whole thing becomes filler: forty seconds of pleasant noise and nothing anybody remembers by Thursday.
+
+One smaller one worth naming. **Some people genuinely have no preference**, and the rule against "both" is aimed at the person refusing to engage, not the person who honestly does not mind about hats. Insisting on a pick from real indifference slows a format whose only advantage is speed. Let it go and move to the next pair.
+
+The line to hold: **the moment an answer costs something, this has stopped being this or that.** It has become a disclosure with two options, which is a fine thing to ask for and not what anybody in the room agreed to.
+
 ## The Part You Can Practise
 
 The reason this format works is that it removes the gap between being asked and answering, and that gap is where most self-consciousness lives.
