@@ -202,6 +202,14 @@ export interface BridgeFrontmatter {
    * rather than that one number — a single low-rated outlier among nine
    * institutions is not an opening. Absent where the results have not been
    * looked at, and the audit says so rather than guessing.
+   *
+   * Two pages here record min_dr 36 and hold opposite verdicts, which is the
+   * clearest way to see why the number is evidence and not the criterion.
+   * "team building activities" is gated: its 36 sits alone at position seven
+   * behind SessionLab at 72, Gusto at 86 and Asana at 91. "How to make small
+   * talk" is winnable: it has two sub-40 results, and the one at 38 holds
+   * position six on more traffic than the pages either side of Reddit. Same
+   * figure, different shape, and only the shape decides it.
    */
   serp_checked?: string;
   serp_min_dr?: number;
