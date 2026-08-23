@@ -133,6 +133,27 @@ Times assume a group of six to twelve. All of them need no props and no preparat
 
 For the full set with what each one trains, see [improv games](/improv-games). For longer sessions, [team building activities](/team-building-activities) covers formats that need more than a few minutes.
 
+## Which of These Work on Zoom
+
+The virtual version of this list is not the same list, which is the thing most remote team building
+round-ups get wrong: they reprint the in-person set and add a line saying it also works on Zoom.
+
+Latency decides what actually survives. A video call puts a fraction of a second between what you do and what everyone else sees, which is unnoticeable in conversation and fatal to anything requiring two people to act on the same beat. That single fact sorts the list.
+
+**Do not attempt remotely.** The mirror game, pass the clap, countdown, zip zap zop, shake-out, silent sort. All of them depend on simultaneity or on shared physical space, and on video they produce a ragged mess that the group reads as their own failure rather than the network's. Countdown is the clearest case: the whole exercise is a group listening for the gap before somebody speaks, and the gap is exactly what the connection is lying about.
+
+**Work unchanged.** Three things, last word first word, one-word story, worst possible idea, new choice, where I was at fourteen, two truths badly, and yes-and about the actual problem. These are verbal and turn-based, so latency costs nothing — the next person simply starts when the last one stops.
+
+**Work with one adjustment.** Gift giving needs the object mimed to camera rather than handed across, which is a smaller change than it sounds. What are you doing? needs a named order, because the mime has to be visible in speaker view.
+
+**The adjustment that matters more than any of them** is turn order. In a room, people negotiate who goes next with peripheral vision, and on a call that channel is gone — so whoever is running it names the next person out loud, every time. Without it a round-robin stalls every third turn while everyone waits to see whether somebody else will start.
+
+### What if half the team is in a room and half are remote
+
+The hardest case, and the honest answer is that hybrid punishes the co-located half. A group sharing a room falls into physical rhythm the remote people cannot join, and the remote people become an audience within about ninety seconds.
+
+Two options that work. Either everyone joins from their own device, including the people sitting ten feet apart, which levels the channel and feels ridiculous for roughly a minute. Or pick something purely verbal from the list above and have the room use a single microphone with a named turn order. What does not work is running a physical exercise in the room while the remote half watch it happen.
+
 ## Running These Without It Being Awkward
 
 The activities are the easy part. Introducing them is where this goes wrong, and it goes wrong in predictable ways.
