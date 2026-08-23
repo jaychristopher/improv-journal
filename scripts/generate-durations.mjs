@@ -1,6 +1,7 @@
 /**
  * Generate audio duration cache from MP3 files.
  * Uses ffprobe if available, falls back to file-size estimation (128kbps).
+ * Records byte size too, which the podcast <enclosure length> attribute needs.
  * Output: public/audio/durations.json
  */
 
@@ -62,6 +63,11 @@ async function main() {
     durations[key] = {
       seconds: Math.round(seconds),
       formatted: formatDuration(seconds),
+      // Byte size, for the <enclosure length> the podcast feeds emit. Apple
+      // reads it to size the download before fetching, and a feed that says
+      // length="0" for every episode is the shape podcast validators reject.
+      // The bytes here are the bytes on R2 - these are the files uploaded.
+      size: fs.statSync(fullPath).size,
     };
   }
 

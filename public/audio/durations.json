@@ -1,610 +1,762 @@
 {
-  "/audio/youtube/06-framing-effect.original.mp3": {
-    "seconds": 400,
-    "formatted": "6:40"
-  },
-  "/audio/youtube/06-framing-effect.mp3": {
-    "seconds": 369,
-    "formatted": "6:09"
-  },
-  "/audio/youtube/05-how-to-deal-with-rejection.original.mp3": {
-    "seconds": 326,
-    "formatted": "5:26"
-  },
-  "/audio/youtube/05-how-to-deal-with-rejection.mp3": {
-    "seconds": 313,
-    "formatted": "5:13"
-  },
-  "/audio/youtube/04-how-to-be-funny.original.mp3": {
-    "seconds": 362,
-    "formatted": "6:02"
-  },
-  "/audio/youtube/04-how-to-be-funny.mp3": {
-    "seconds": 347,
-    "formatted": "5:47"
-  },
-  "/audio/youtube/03-rules-of-improv.original.mp3": {
-    "seconds": 463,
-    "formatted": "7:43"
-  },
-  "/audio/youtube/03-rules-of-improv.mp3": {
-    "seconds": 439,
-    "formatted": "7:19"
-  },
-  "/audio/youtube/02-team-building-activities.original.mp3": {
-    "seconds": 434,
-    "formatted": "7:14"
-  },
-  "/audio/youtube/02-team-building-activities.mp3": {
-    "seconds": 407,
-    "formatted": "6:47"
-  },
-  "/audio/youtube/01-how-to-stop-overthinking.original.mp3": {
-    "seconds": 283,
-    "formatted": "4:43"
-  },
-  "/audio/youtube/01-how-to-stop-overthinking.mp3": {
-    "seconds": 258,
-    "formatted": "4:18"
-  },
-  "/audio/threads/traditions-in-tension.mp3": {
-    "seconds": 574,
-    "formatted": "9:34"
-  },
-  "/audio/threads/the-teachers-toolkit.mp3": {
-    "seconds": 571,
-    "formatted": "9:31"
-  },
-  "/audio/threads/the-system-underneath.mp3": {
-    "seconds": 576,
-    "formatted": "9:36"
-  },
-  "/audio/threads/the-practice-lab.mp3": {
-    "seconds": 604,
-    "formatted": "10:04"
-  },
-  "/audio/threads/the-plateau-is-a-map.mp3": {
-    "seconds": 582,
-    "formatted": "9:42"
-  },
-  "/audio/threads/the-performers-edge.mp3": {
-    "seconds": 571,
-    "formatted": "9:31"
-  },
-  "/audio/threads/the-inner-game-expanded.mp3": {
-    "seconds": 570,
-    "formatted": "9:30"
-  },
-  "/audio/threads/the-game-beneath-the-game.mp3": {
-    "seconds": 579,
-    "formatted": "9:39"
-  },
-  "/audio/threads/the-connective-tissue.mp3": {
-    "seconds": 636,
-    "formatted": "10:36"
-  },
-  "/audio/threads/show-as-architecture.mp3": {
-    "seconds": 544,
-    "formatted": "9:04"
-  },
-  "/audio/threads/shaping-shared-reality.mp3": {
-    "seconds": 390,
-    "formatted": "6:30"
-  },
-  "/audio/threads/quieting-the-planning-mind.mp3": {
-    "seconds": 564,
-    "formatted": "9:24"
-  },
-  "/audio/threads/presence-and-commitment.mp3": {
-    "seconds": 433,
-    "formatted": "7:13"
-  },
-  "/audio/threads/playing-together-at-the-highest-level.mp3": {
-    "seconds": 564,
-    "formatted": "9:24"
-  },
-  "/audio/threads/physics-of-every-room.mp3": {
-    "seconds": 567,
-    "formatted": "9:27"
-  },
-  "/audio/threads/hardest-thing-youll-never-plan.mp3": {
-    "seconds": 494,
-    "formatted": "8:14"
-  },
-  "/audio/threads/first-rule-you-already-know.mp3": {
-    "seconds": 505,
-    "formatted": "8:25"
-  },
-  "/audio/threads/empty-stage-problem.mp3": {
-    "seconds": 565,
-    "formatted": "9:25"
-  },
-  "/audio/threads/diagnosing-scene-failure.mp3": {
-    "seconds": 396,
-    "formatted": "6:36"
-  },
-  "/audio/threads/conversation-that-felt-like-magic.mp3": {
-    "seconds": 555,
-    "formatted": "9:15"
-  },
-  "/audio/threads/clear-signal-simple-signal.mp3": {
-    "seconds": 546,
-    "formatted": "9:06"
-  },
-  "/audio/threads/character-as-discovery.mp3": {
-    "seconds": 646,
-    "formatted": "10:46"
-  },
-  "/audio/threads/building-on-offers.mp3": {
-    "seconds": 582,
-    "formatted": "9:42"
-  },
-  "/audio/threads/beyond-the-harold.mp3": {
-    "seconds": 512,
-    "formatted": "8:32"
-  },
-  "/audio/threads/anatomy-of-a-scene.mp3": {
-    "seconds": 615,
-    "formatted": "10:15"
-  },
   "/audio/paths/the-art-of-ensemble.mp3": {
     "seconds": 447,
-    "formatted": "7:27"
+    "formatted": "7:27",
+    "size": 7155485
   },
   "/audio/paths/teaching-improv.mp3": {
     "seconds": 359,
-    "formatted": "5:59"
+    "formatted": "5:59",
+    "size": 5736934
   },
   "/audio/paths/systems-of-improv.mp3": {
     "seconds": 366,
-    "formatted": "6:06"
+    "formatted": "6:06",
+    "size": 5860651
   },
   "/audio/paths/self-coaching-toolkit.mp3": {
     "seconds": 452,
-    "formatted": "7:32"
+    "formatted": "7:32",
+    "size": 7234478
   },
   "/audio/paths/reference-guide.mp3": {
     "seconds": 430,
-    "formatted": "7:10"
+    "formatted": "7:10",
+    "size": 6886741
   },
   "/audio/paths/physics-of-connection.mp3": {
     "seconds": 480,
-    "formatted": "8:00"
+    "formatted": "8:00",
+    "size": 7683787
   },
   "/audio/paths/mastering-the-form.mp3": {
     "seconds": 412,
-    "formatted": "6:52"
+    "formatted": "6:52",
+    "size": 6594167
   },
   "/audio/paths/beginner-foundations.mp3": {
     "seconds": 349,
-    "formatted": "5:49"
+    "formatted": "5:49",
+    "size": 5588562
   },
   "/audio/paths/advanced-game-and-character.mp3": {
     "seconds": 372,
-    "formatted": "6:12"
+    "formatted": "6:12",
+    "size": 5959709
+  },
+  "/audio/youtube/06-framing-effect.original.mp3": {
+    "seconds": 400,
+    "formatted": "6:40",
+    "size": 6404476
+  },
+  "/audio/youtube/06-framing-effect.mp3": {
+    "seconds": 369,
+    "formatted": "6:09",
+    "size": 2951435
+  },
+  "/audio/youtube/05-how-to-deal-with-rejection.original.mp3": {
+    "seconds": 326,
+    "formatted": "5:26",
+    "size": 5209487
+  },
+  "/audio/youtube/05-how-to-deal-with-rejection.mp3": {
+    "seconds": 313,
+    "formatted": "5:13",
+    "size": 2501711
+  },
+  "/audio/youtube/04-how-to-be-funny.original.mp3": {
+    "seconds": 362,
+    "formatted": "6:02",
+    "size": 5796763
+  },
+  "/audio/youtube/04-how-to-be-funny.mp3": {
+    "seconds": 347,
+    "formatted": "5:47",
+    "size": 2775474
+  },
+  "/audio/youtube/03-rules-of-improv.original.mp3": {
+    "seconds": 463,
+    "formatted": "7:43",
+    "size": 7411758
+  },
+  "/audio/youtube/03-rules-of-improv.mp3": {
+    "seconds": 439,
+    "formatted": "7:19",
+    "size": 3511501
+  },
+  "/audio/youtube/02-team-building-activities.original.mp3": {
+    "seconds": 434,
+    "formatted": "7:14",
+    "size": 6944897
+  },
+  "/audio/youtube/02-team-building-activities.mp3": {
+    "seconds": 407,
+    "formatted": "6:47",
+    "size": 3254874
+  },
+  "/audio/youtube/01-how-to-stop-overthinking.original.mp3": {
+    "seconds": 283,
+    "formatted": "4:43",
+    "size": 4529885
+  },
+  "/audio/youtube/01-how-to-stop-overthinking.mp3": {
+    "seconds": 258,
+    "formatted": "4:18",
+    "size": 2064526
+  },
+  "/audio/threads/traditions-in-tension.mp3": {
+    "seconds": 574,
+    "formatted": "9:34",
+    "size": 9180908
+  },
+  "/audio/threads/the-teachers-toolkit.mp3": {
+    "seconds": 571,
+    "formatted": "9:31",
+    "size": 9131176
+  },
+  "/audio/threads/the-system-underneath.mp3": {
+    "seconds": 576,
+    "formatted": "9:36",
+    "size": 9211004
+  },
+  "/audio/threads/the-practice-lab.mp3": {
+    "seconds": 604,
+    "formatted": "10:04",
+    "size": 9657387
+  },
+  "/audio/threads/the-plateau-is-a-map.mp3": {
+    "seconds": 582,
+    "formatted": "9:42",
+    "size": 9315067
+  },
+  "/audio/threads/the-performers-edge.mp3": {
+    "seconds": 571,
+    "formatted": "9:31",
+    "size": 9132424
+  },
+  "/audio/threads/the-inner-game-expanded.mp3": {
+    "seconds": 570,
+    "formatted": "9:30",
+    "size": 9121980
+  },
+  "/audio/threads/the-game-beneath-the-game.mp3": {
+    "seconds": 579,
+    "formatted": "9:39",
+    "size": 9259906
+  },
+  "/audio/threads/the-connective-tissue.mp3": {
+    "seconds": 636,
+    "formatted": "10:36",
+    "size": 10173983
+  },
+  "/audio/threads/show-as-architecture.mp3": {
+    "seconds": 544,
+    "formatted": "9:04",
+    "size": 8702344
+  },
+  "/audio/threads/shaping-shared-reality.mp3": {
+    "seconds": 390,
+    "formatted": "6:30",
+    "size": 6248930
+  },
+  "/audio/threads/quieting-the-planning-mind.mp3": {
+    "seconds": 564,
+    "formatted": "9:24",
+    "size": 9020414
+  },
+  "/audio/threads/presence-and-commitment.mp3": {
+    "seconds": 433,
+    "formatted": "7:13",
+    "size": 6927280
+  },
+  "/audio/threads/playing-together-at-the-highest-level.mp3": {
+    "seconds": 564,
+    "formatted": "9:24",
+    "size": 9019996
+  },
+  "/audio/threads/physics-of-every-room.mp3": {
+    "seconds": 567,
+    "formatted": "9:27",
+    "size": 9081020
+  },
+  "/audio/threads/hardest-thing-youll-never-plan.mp3": {
+    "seconds": 494,
+    "formatted": "8:14",
+    "size": 7904883
+  },
+  "/audio/threads/first-rule-you-already-know.mp3": {
+    "seconds": 505,
+    "formatted": "8:25",
+    "size": 8085023
+  },
+  "/audio/threads/empty-stage-problem.mp3": {
+    "seconds": 565,
+    "formatted": "9:25",
+    "size": 9038805
+  },
+  "/audio/threads/diagnosing-scene-failure.mp3": {
+    "seconds": 396,
+    "formatted": "6:36",
+    "size": 6332525
+  },
+  "/audio/threads/conversation-that-felt-like-magic.mp3": {
+    "seconds": 555,
+    "formatted": "9:15",
+    "size": 8883743
+  },
+  "/audio/threads/clear-signal-simple-signal.mp3": {
+    "seconds": 546,
+    "formatted": "9:06",
+    "size": 8729513
+  },
+  "/audio/threads/character-as-discovery.mp3": {
+    "seconds": 646,
+    "formatted": "10:46",
+    "size": 10331546
+  },
+  "/audio/threads/building-on-offers.mp3": {
+    "seconds": 582,
+    "formatted": "9:42",
+    "size": 9312152
+  },
+  "/audio/threads/beyond-the-harold.mp3": {
+    "seconds": 512,
+    "formatted": "8:32",
+    "size": 8200446
+  },
+  "/audio/threads/anatomy-of-a-scene.mp3": {
+    "seconds": 615,
+    "formatted": "10:15",
+    "size": 9847556
   },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 367,
-    "formatted": "6:07"
+    "formatted": "6:07",
+    "size": 5879875
   },
   "/audio/bridges/stage-fright.mp3": {
     "seconds": 383,
-    "formatted": "6:23"
+    "formatted": "6:23",
+    "size": 6132740
   },
   "/audio/bridges/psychological-safety.mp3": {
     "seconds": 421,
-    "formatted": "7:01"
+    "formatted": "7:01",
+    "size": 6742542
   },
   "/audio/bridges/how-to-stop-overthinking.mp3": {
     "seconds": 351,
-    "formatted": "5:51"
+    "formatted": "5:51",
+    "size": 5622833
   },
   "/audio/bridges/how-to-give-feedback.mp3": {
     "seconds": 394,
-    "formatted": "6:34"
+    "formatted": "6:34",
+    "size": 6303686
   },
   "/audio/bridges/how-to-deal-with-conflict.mp3": {
     "seconds": 397,
-    "formatted": "6:37"
+    "formatted": "6:37",
+    "size": 6352589
   },
   "/audio/bridges/how-to-be-more-creative.mp3": {
     "seconds": 378,
-    "formatted": "6:18"
+    "formatted": "6:18",
+    "size": 6041624
   },
   "/audio/bridges/how-to-be-more-confident.mp3": {
     "seconds": 366,
-    "formatted": "6:06"
+    "formatted": "6:06",
+    "size": 5859814
   },
   "/audio/bridges/how-to-be-funny.mp3": {
     "seconds": 369,
-    "formatted": "6:09"
+    "formatted": "6:09",
+    "size": 5897435
   },
   "/audio/bridges/framing-effect.mp3": {
     "seconds": 452,
-    "formatted": "7:32"
+    "formatted": "7:32",
+    "size": 7239909
   },
   "/audio/bridges/active-listening.mp3": {
     "seconds": 361,
-    "formatted": "6:01"
+    "formatted": "6:01",
+    "size": 5774973
   },
   "/audio/atoms/yes-and.mp3": {
     "seconds": 325,
-    "formatted": "5:25"
+    "formatted": "5:25",
+    "size": 5193174
   },
   "/audio/atoms/yes-and-chain.mp3": {
     "seconds": 342,
-    "formatted": "5:42"
+    "formatted": "5:42",
+    "size": 5479476
   },
   "/audio/atoms/tag-run.mp3": {
     "seconds": 386,
-    "formatted": "6:26"
+    "formatted": "6:26",
+    "size": 6177467
   },
   "/audio/atoms/systemic-health-indicators.mp3": {
     "seconds": 409,
-    "formatted": "6:49"
+    "formatted": "6:49",
+    "size": 6552366
   },
   "/audio/atoms/systemic-collapse-modes.mp3": {
     "seconds": 374,
-    "formatted": "6:14"
+    "formatted": "6:14",
+    "size": 5988962
   },
   "/audio/atoms/sweep-edit.mp3": {
     "seconds": 316,
-    "formatted": "5:16"
+    "formatted": "5:16",
+    "size": 5051069
   },
   "/audio/atoms/support-moves.mp3": {
     "seconds": 323,
-    "formatted": "5:23"
+    "formatted": "5:23",
+    "size": 5162244
   },
   "/audio/atoms/suggestion.mp3": {
     "seconds": 383,
-    "formatted": "6:23"
+    "formatted": "6:23",
+    "size": 6126053
   },
   "/audio/atoms/straight-man.mp3": {
     "seconds": 385,
-    "formatted": "6:25"
+    "formatted": "6:25",
+    "size": 6163256
   },
   "/audio/atoms/steering.mp3": {
     "seconds": 404,
-    "formatted": "6:44"
+    "formatted": "6:44",
+    "size": 6460003
   },
   "/audio/atoms/status-transfer.mp3": {
     "seconds": 376,
-    "formatted": "6:16"
+    "formatted": "6:16",
+    "size": 6015715
   },
   "/audio/atoms/status-dynamics.mp3": {
     "seconds": 390,
-    "formatted": "6:30"
+    "formatted": "6:30",
+    "size": 6246848
   },
   "/audio/atoms/stage-presence.mp3": {
     "seconds": 413,
-    "formatted": "6:53"
+    "formatted": "6:53",
+    "size": 6604196
   },
   "/audio/atoms/space-work.mp3": {
     "seconds": 356,
-    "formatted": "5:56"
+    "formatted": "5:56",
+    "size": 5699321
   },
   "/audio/atoms/space-work-scene.mp3": {
     "seconds": 380,
-    "formatted": "6:20"
+    "formatted": "6:20",
+    "size": 6073812
   },
   "/audio/atoms/signal.mp3": {
     "seconds": 361,
-    "formatted": "6:01"
+    "formatted": "6:01",
+    "size": 5779984
   },
   "/audio/atoms/shared-reality-fragility.mp3": {
     "seconds": 375,
-    "formatted": "6:15"
+    "formatted": "6:15",
+    "size": 5998998
   },
   "/audio/atoms/run.mp3": {
     "seconds": 362,
-    "formatted": "6:02"
+    "formatted": "6:02",
+    "size": 5785003
   },
   "/audio/atoms/rigid-core-malleable-edge.mp3": {
     "seconds": 340,
-    "formatted": "5:40"
+    "formatted": "5:40",
+    "size": 5436838
   },
   "/audio/atoms/rest-beat.mp3": {
     "seconds": 362,
-    "formatted": "6:02"
+    "formatted": "6:02",
+    "size": 5787507
   },
   "/audio/atoms/reincorporation.mp3": {
     "seconds": 386,
-    "formatted": "6:26"
+    "formatted": "6:26",
+    "size": 6179972
   },
   "/audio/atoms/reality-construction.mp3": {
     "seconds": 376,
-    "formatted": "6:16"
+    "formatted": "6:16",
+    "size": 6009448
   },
   "/audio/atoms/reading-the-room.mp3": {
     "seconds": 377,
-    "formatted": "6:17"
+    "formatted": "6:17",
+    "size": 6030758
   },
   "/audio/atoms/playing-against-type.mp3": {
     "seconds": 389,
-    "formatted": "6:29"
+    "formatted": "6:29",
+    "size": 6221351
   },
   "/audio/atoms/physicality.mp3": {
     "seconds": 438,
-    "formatted": "7:18"
+    "formatted": "7:18",
+    "size": 7015891
   },
   "/audio/atoms/performing-cleverness.mp3": {
     "seconds": 355,
-    "formatted": "5:55"
+    "formatted": "5:55",
+    "size": 5687615
   },
   "/audio/atoms/performance-state.mp3": {
     "seconds": 371,
-    "formatted": "6:11"
+    "formatted": "6:11",
+    "size": 5944662
   },
   "/audio/atoms/pattern-break.mp3": {
     "seconds": 369,
-    "formatted": "6:09"
+    "formatted": "6:09",
+    "size": 5912478
   },
   "/audio/atoms/pacing.mp3": {
     "seconds": 372,
-    "formatted": "6:12"
+    "formatted": "6:12",
+    "size": 5949679
   },
   "/audio/atoms/overcomplication.mp3": {
     "seconds": 357,
-    "formatted": "5:57"
+    "formatted": "5:57",
+    "size": 5714784
   },
   "/audio/atoms/organic-opening.mp3": {
     "seconds": 388,
-    "formatted": "6:28"
+    "formatted": "6:28",
+    "size": 6209231
   },
   "/audio/atoms/organic-opening-exercise.mp3": {
     "seconds": 400,
-    "formatted": "6:40"
+    "formatted": "6:40",
+    "size": 6403578
   },
   "/audio/atoms/opening.mp3": {
     "seconds": 381,
-    "formatted": "6:21"
+    "formatted": "6:21",
+    "size": 6089692
   },
   "/audio/atoms/one-word-scene.mp3": {
     "seconds": 411,
-    "formatted": "6:51"
+    "formatted": "6:51",
+    "size": 6574108
   },
   "/audio/atoms/obvious-choice.mp3": {
     "seconds": 357,
-    "formatted": "5:57"
+    "formatted": "5:57",
+    "size": 5713533
   },
   "/audio/atoms/no-backspace-scene.mp3": {
     "seconds": 356,
-    "formatted": "5:56"
+    "formatted": "5:56",
+    "size": 5697229
   },
   "/audio/atoms/negation.mp3": {
     "seconds": 369,
-    "formatted": "6:09"
+    "formatted": "6:09",
+    "size": 5911223
   },
   "/audio/atoms/model-of-their-model.mp3": {
     "seconds": 314,
-    "formatted": "5:14"
+    "formatted": "5:14",
+    "size": 5020552
   },
   "/audio/atoms/mirroring.mp3": {
     "seconds": 401,
-    "formatted": "6:41"
+    "formatted": "6:41",
+    "size": 6414449
   },
   "/audio/atoms/meaning-is-relational.mp3": {
     "seconds": 340,
-    "formatted": "5:40"
+    "formatted": "5:40",
+    "size": 5443942
   },
   "/audio/atoms/mapping.mp3": {
     "seconds": 375,
-    "formatted": "6:15"
+    "formatted": "6:15",
+    "size": 6007776
   },
   "/audio/atoms/let-yourself-be-changed.mp3": {
     "seconds": 379,
-    "formatted": "6:19"
+    "formatted": "6:19",
+    "size": 6060020
   },
   "/audio/atoms/last-word-response.mp3": {
     "seconds": 361,
-    "formatted": "6:01"
+    "formatted": "6:01",
+    "size": 5782913
   },
   "/audio/atoms/justification.mp3": {
     "seconds": 338,
-    "formatted": "5:38"
+    "formatted": "5:38",
+    "size": 5402982
   },
   "/audio/atoms/judgment.mp3": {
     "seconds": 327,
-    "formatted": "5:27"
+    "formatted": "5:27",
+    "size": 5230370
   },
   "/audio/atoms/irreversibility.mp3": {
     "seconds": 353,
-    "formatted": "5:53"
+    "formatted": "5:53",
+    "size": 5644987
   },
   "/audio/atoms/internal-computation.mp3": {
     "seconds": 380,
-    "formatted": "6:20"
+    "formatted": "6:20",
+    "size": 6079244
   },
   "/audio/atoms/interdependence.mp3": {
     "seconds": 381,
-    "formatted": "6:21"
+    "formatted": "6:21",
+    "size": 6091365
   },
   "/audio/atoms/initiation.mp3": {
     "seconds": 398,
-    "formatted": "6:38"
+    "formatted": "6:38",
+    "size": 6373068
   },
   "/audio/atoms/if-this-then-what.mp3": {
     "seconds": 376,
-    "formatted": "6:16"
+    "formatted": "6:16",
+    "size": 6014460
   },
   "/audio/atoms/hesitation.mp3": {
     "seconds": 378,
-    "formatted": "6:18"
+    "formatted": "6:18",
+    "size": 6055834
   },
   "/audio/atoms/heat-and-weight.mp3": {
     "seconds": 342,
-    "formatted": "5:42"
+    "formatted": "5:42",
+    "size": 5471116
   },
   "/audio/atoms/group-mind-cultivation.mp3": {
     "seconds": 395,
-    "formatted": "6:35"
+    "formatted": "6:35",
+    "size": 6324580
   },
   "/audio/atoms/gratitude-reframing.mp3": {
     "seconds": 344,
-    "formatted": "5:44"
+    "formatted": "5:44",
+    "size": 5509150
   },
   "/audio/atoms/gift-giving.mp3": {
     "seconds": 316,
-    "formatted": "5:16"
+    "formatted": "5:16",
+    "size": 5059004
   },
   "/audio/atoms/genre-scene.mp3": {
     "seconds": 374,
-    "formatted": "6:14"
+    "formatted": "6:14",
+    "size": 5982697
   },
   "/audio/atoms/game-evolution.mp3": {
     "seconds": 363,
-    "formatted": "6:03"
+    "formatted": "6:03",
+    "size": 5808407
   },
   "/audio/atoms/framing-as-angle-of-approach.mp3": {
     "seconds": 388,
-    "formatted": "6:28"
+    "formatted": "6:28",
+    "size": 6216331
   },
   "/audio/atoms/fracture-repair-drill.mp3": {
     "seconds": 398,
-    "formatted": "6:38"
+    "formatted": "6:38",
+    "size": 6367215
   },
   "/audio/atoms/first-line-drill.mp3": {
     "seconds": 349,
-    "formatted": "5:49"
+    "formatted": "5:49",
+    "size": 5589393
   },
   "/audio/atoms/finding-your-voice.mp3": {
     "seconds": 383,
-    "formatted": "6:23"
+    "formatted": "6:23",
+    "size": 6122295
   },
   "/audio/atoms/failing-forward.mp3": {
     "seconds": 395,
-    "formatted": "6:35"
+    "formatted": "6:35",
+    "size": 6324590
   },
   "/audio/atoms/endowment.mp3": {
     "seconds": 375,
-    "formatted": "6:15"
+    "formatted": "6:15",
+    "size": 6003175
   },
   "/audio/atoms/emotional-truth.mp3": {
     "seconds": 291,
-    "formatted": "4:51"
+    "formatted": "4:51",
+    "size": 4656096
   },
   "/audio/atoms/emotional-range.mp3": {
     "seconds": 420,
-    "formatted": "7:00"
+    "formatted": "7:00",
+    "size": 6722900
   },
   "/audio/atoms/emotional-honesty-scene.mp3": {
     "seconds": 372,
-    "formatted": "6:12"
+    "formatted": "6:12",
+    "size": 5954689
   },
   "/audio/atoms/emotion-switch.mp3": {
     "seconds": 349,
-    "formatted": "5:49"
+    "formatted": "5:49",
+    "size": 5585640
   },
   "/audio/atoms/elevating.mp3": {
     "seconds": 321,
-    "formatted": "5:21"
+    "formatted": "5:21",
+    "size": 5132986
   },
   "/audio/atoms/editing.mp3": {
     "seconds": 368,
-    "formatted": "6:08"
+    "formatted": "6:08",
+    "size": 5889910
   },
   "/audio/atoms/do-feel-say.mp3": {
     "seconds": 383,
-    "formatted": "6:23"
+    "formatted": "6:23",
+    "size": 6133578
   },
   "/audio/atoms/directed-scene.mp3": {
     "seconds": 388,
-    "formatted": "6:28"
+    "formatted": "6:28",
+    "size": 6209229
   },
   "/audio/atoms/continuous-signaling.mp3": {
     "seconds": 370,
-    "formatted": "6:10"
+    "formatted": "6:10",
+    "size": 5925850
   },
   "/audio/atoms/connections.mp3": {
     "seconds": 349,
-    "formatted": "5:49"
+    "formatted": "5:49",
+    "size": 5583129
   },
   "/audio/atoms/commitment.mp3": {
     "seconds": 356,
-    "formatted": "5:56"
+    "formatted": "5:56",
+    "size": 5695560
   },
   "/audio/atoms/coherence.mp3": {
     "seconds": 293,
-    "formatted": "4:53"
+    "formatted": "4:53",
+    "size": 4692456
   },
   "/audio/atoms/cognitive-bandwidth.mp3": {
     "seconds": 369,
-    "formatted": "6:09"
+    "formatted": "6:09",
+    "size": 5900360
   },
   "/audio/atoms/character-through-game.mp3": {
     "seconds": 388,
-    "formatted": "6:28"
+    "formatted": "6:28",
+    "size": 6202962
   },
   "/audio/atoms/bulldozing.mp3": {
     "seconds": 338,
-    "formatted": "5:38"
+    "formatted": "5:38",
+    "size": 5408835
   },
   "/audio/atoms/blocking.mp3": {
     "seconds": 381,
-    "formatted": "6:21"
+    "formatted": "6:21",
+    "size": 6095546
   },
   "/audio/atoms/blind-offer.mp3": {
     "seconds": 419,
-    "formatted": "6:59"
+    "formatted": "6:59",
+    "size": 6705347
   },
   "/audio/atoms/beyond-the-stage.mp3": {
     "seconds": 396,
-    "formatted": "6:36"
+    "formatted": "6:36",
+    "size": 6339630
   },
   "/audio/atoms/belief-as-architecture.mp3": {
     "seconds": 305,
-    "formatted": "5:05"
+    "formatted": "5:05",
+    "size": 4887642
   },
   "/audio/atoms/be-thankful.mp3": {
     "seconds": 366,
-    "formatted": "6:06"
+    "formatted": "6:06",
+    "size": 5851876
   },
   "/audio/atoms/be-supportive.mp3": {
     "seconds": 355,
-    "formatted": "5:55"
+    "formatted": "5:55",
+    "size": 5688454
   },
   "/audio/atoms/be-simple.mp3": {
     "seconds": 352,
-    "formatted": "5:52"
+    "formatted": "5:52",
+    "size": 5636629
   },
   "/audio/atoms/be-present.mp3": {
     "seconds": 348,
-    "formatted": "5:48"
+    "formatted": "5:48",
+    "size": 5561395
   },
   "/audio/atoms/be-positive.mp3": {
     "seconds": 348,
-    "formatted": "5:48"
+    "formatted": "5:48",
+    "size": 5563900
   },
   "/audio/atoms/be-honest.mp3": {
     "seconds": 363,
-    "formatted": "6:03"
+    "formatted": "6:03",
+    "size": 5807155
   },
   "/audio/atoms/be-changeable.mp3": {
     "seconds": 354,
-    "formatted": "5:54"
+    "formatted": "5:54",
+    "size": 5662538
   },
   "/audio/atoms/be-brave.mp3": {
     "seconds": 326,
-    "formatted": "5:26"
+    "formatted": "5:26",
+    "size": 5222846
   },
   "/audio/atoms/backline-craft.mp3": {
     "seconds": 342,
-    "formatted": "5:42"
+    "formatted": "5:42",
+    "size": 5468189
   },
   "/audio/atoms/audience-relationship.mp3": {
     "seconds": 364,
-    "formatted": "6:04"
+    "formatted": "6:04",
+    "size": 5830979
   },
   "/audio/atoms/analogous-scene.mp3": {
     "seconds": 376,
-    "formatted": "6:16"
+    "formatted": "6:16",
+    "size": 6021149
   },
   "/audio/atoms/active-listening.mp3": {
     "seconds": 322,
-    "formatted": "5:22"
+    "formatted": "5:22",
+    "size": 5145529
   },
   "/audio/atoms/accepting-the-offer.mp3": {
     "seconds": 387,
-    "formatted": "6:27"
+    "formatted": "6:27",
+    "size": 6190420
   }
 }
