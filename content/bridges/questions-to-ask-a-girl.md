@@ -4,6 +4,8 @@ description: "The gendering is the mistake. Nothing about getting to know somebo
 target_keywords:
   - { keyword: "questions to ask a girl", volume: 23000, difficulty: 4, traffic_potential: 34000, parent: "questions to ask a girl" }
   - { keyword: "good questions to ask a girl", volume: 8100, difficulty: 19, traffic_potential: 30000, parent: "questions to ask a girl" }
+  - { keyword: "things to ask a girl", volume: 1700, difficulty: 12, traffic_potential: 37000, parent: "questions to ask a girl" }
+  - { keyword: "questions to ask a girl over text", volume: 350, difficulty: 10, traffic_potential: 38000, parent: "questions to ask a girl" }
   - { keyword: "interesting questions to ask a girl", volume: 3600, difficulty: 22, traffic_potential: 35000, parent: "questions to ask a girl" }
   - { keyword: "questions to ask a girl you like", volume: 1700, difficulty: 20, traffic_potential: 34000, parent: "questions to ask a girl" }
   - { keyword: "random questions to ask a girl", volume: 1000, difficulty: 19, traffic_potential: 30000, parent: "questions to ask a girl" }
@@ -132,6 +134,24 @@ Warmer, and none of them force a declaration before either person is ready.
 - What is the best conversation you have had recently?
 - What are you looking for, if you know?
 - What would a good version of the next few months look like?
+
+## Over Text, Almost None of This Applies
+
+The medium changes the mechanics enough that a list built for a conversation actively misfires in a message thread, and this is where most of the damage gets done.
+
+**Tone is gone.** In person, a question that could sound like an interrogation is rescued by how you ask it. Over text there is nothing to rescue it with, so anything that reads as a demand reads as a demand.
+
+**Reciprocity is delayed, which makes it more important rather than less.** Face to face, you answer your own question thirty seconds later and the exchange balances. Over text you can ask three questions across a day and offer nothing, and the pattern is far more visible written down than it ever is out loud. She can scroll up. A thread that is all questions from one side is a documented interview.
+
+**A list becomes obvious.** Questions arriving in sequence, each unrelated to her answer, look exactly like what they are. In conversation the seams are hidden by pace; in writing they are not.
+
+So the adjustment is counterintuitive: **over text, use fewer questions and more statements.**
+
+A statement invites a reply without demanding one. "That road is horrendous at that time" gets an answer as reliably as "how was the drive?" and costs her nothing if she is busy. It also gives her something about you, which a question never does. Three statements and one question is a much better ratio than the reverse, and it is roughly what people do naturally with friends — the interrogation pattern only appears when somebody is trying.
+
+Two other things worth knowing. **Match her length and pace** rather than the length you would like; consistently writing three times as much as somebody is its own kind of pressure. And **the good questions over text are the ones with a short floor** — answerable in four words if she is busy, expandable if she is not. Anything requiring a paragraph will get a paragraph on a good day and silence on an ordinary one.
+
+If a thread is going well, the aim is not to keep it going indefinitely. It is to stop needing it.
 
 ## Questions That Do Not Work
 
