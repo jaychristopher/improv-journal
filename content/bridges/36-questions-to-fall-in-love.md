@@ -107,6 +107,30 @@ Read the three sets next to each other and the design becomes obvious.
 
 That progression — hypothetical, then personal, then relational — is the whole invention. The individual questions are ordinary. Several appear on any list of get-to-know-you questions. The sequence is what does the work.
 
+## Doing It With Somebody You Already Know
+
+The procedure was built for strangers, and that assumption is load-bearing. Most people who actually run it are not strangers, so it is worth saying what changes.
+
+**With a long-term partner.** Set I looks redundant — you already know their perfect day and who they would invite to dinner. Do not skip it. Run it as a check rather than a disclosure, because the answers are the thing most likely to have quietly moved since you last asked, and finding that your answer for them is out of date is more useful than anything in Set II. The real work is at the far end: Set III asks you to say what you like about them without generalities, which is markedly harder after fifteen years than after fifteen minutes, because vague praise is transparent to somebody who knows you.
+
+**With a close friend.** The gap is usually the middle. You have the biography — where they grew up, what they do, the greatest accomplishment — and often not the terrible memory, the last time they cried, or what they would want known if the friendship were starting today. Set II is where a friendship of ten years finds something new, which surprises people.
+
+**With somebody you have just started seeing.** The closest to the original conditions and the most likely to work as advertised. The main risk is treating it as a test of compatibility rather than an exchange — scoring the other person's answers against a list you brought with you is the one way to make forty-five minutes of disclosure produce nothing.
+
+**With a family member.** Underrated, and the hardest to propose. Question 23 and 24 — how close and warm your family is, your relationship with your mother — land completely differently when the person opposite is inside the answer.
+
+## What Usually Happens
+
+Commonly reported, and worth knowing so that the first ten minutes do not put you off.
+
+**Set I feels faintly ridiculous.** Two people reading questions from a page is a self-conscious way to spend a Tuesday, and most pairs report a stretch early on where it feels like homework. That passes, and the usual turning point is question 11 — the four-minute life story — because it is the first time one person holds the floor long enough to stop performing.
+
+**The temperature changes in Set II.** Questions 17 and 18 sit next to each other on purpose: most treasured memory, then most terrible. Answering the first makes the second considerably easier than it would have been cold, which is the escalation working exactly as designed.
+
+**Set III is uncomfortable in a different way.** The discomfort in Sets I and II is disclosure — saying something about yourself. In Set III it is address: speaking directly to the person about them, and about the two of you. People often find this the hardest part despite it being less personal, because there is nowhere to look while doing it.
+
+**It usually overruns.** Forty-five minutes is the lab timing. Pairs doing it voluntarily tend to take considerably longer, and the questions people return to afterwards are rarely the dramatic ones — more often number 12, or 27, or whatever prompted the other person to say something they had not said before.
+
 ## The Four Minutes of Eye Contact
 
 Widely attached to this and **not one of the 36**. The staring step comes from the popular version of the procedure rather than from the numbered list above, and it is worth separating the two, because plenty of people abandon the whole thing at the idea of four minutes of silent eye contact with somebody they have just met.
