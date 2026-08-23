@@ -1,6 +1,6 @@
 ---
-title: "Conversation Starters: 170 That Survive the Second Exchange"
-description: "A starter only buys you one exchange. What you do with the second decides the rest. 170 sorted by the room you are in, and why the clever ones die fastest."
+title: "Conversation Starters: 192 That Survive the Second Exchange"
+description: "A starter only buys you one exchange. What you do with the second decides the rest. 192 sorted by the room you are in, and why the clever ones die fastest."
 target_keywords:
   - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation topics", volume: 7200, difficulty: 25, traffic_potential: 143000, parent: "conversation starters" }
@@ -9,6 +9,8 @@ target_keywords:
   - { keyword: "good conversation starters", volume: 12000, difficulty: 26, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "small talk questions", volume: 3100, difficulty: 39, traffic_potential: 150000, parent: "conversation starters" }
   - { keyword: "interesting conversation starters", volume: 1500, difficulty: 37, traffic_potential: 168000, parent: "conversation starters" }
+  - { keyword: "interesting questions to ask", volume: 8400, difficulty: 15, traffic_potential: 150000, parent: "conversation starters" }
+  - { keyword: "interesting questions", volume: 3000, difficulty: 28, traffic_potential: 150000, parent: "conversation starters" }
 serp_checked: "2026-08-22"
 serp_min_dr: 28
 serp_verdict: winnable
@@ -23,13 +25,13 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Conversation Starters: 170 That Survive the Second Exchange
+# Conversation Starters: 192 That Survive the Second Exchange
 
 Most people looking for conversation starters have diagnosed the wrong problem. A conversation died, the opening was the last thing they remember choosing, so the opening gets the blame.
 
 Openings almost never kill conversations. **A starter buys you exactly one exchange** — they answer, and then you are both standing in the same silence you were in before, except now it is worse because you have used your material. What happens at exchange two is the entire game, and no list of openers will help with it.
 
-So: 170 starters below, sorted by the room you are in, because you did come here for those. And then the part that actually decides whether the conversation goes anywhere.
+So: 192 starters below, sorted by the room you are in, because you did come here for those. And then the part that actually decides whether the conversation goes anywhere.
 
 ## What Makes a Starter Work
 
@@ -264,6 +266,39 @@ So these are deliberately ordinary. Their quality is in how little they cost.
 Each one is answerable in three words without rudeness, and each has an obvious second question sitting behind it. That is the whole specification.
 
 If small talk itself is the part you find difficult — the mechanics of it, rather than what to ask — that has [its own page](/how-to-make-small-talk), and it is mostly about receiving rather than supplying.
+
+## Interesting Questions to Ask
+
+Given everything above, this heading looks like a contradiction. It is not quite one, and the distinction is worth drawing precisely.
+
+A question cannot make somebody interesting. What it can do is **point at territory nobody has asked them about before** — and that is a different property from being clever. The failure mode described above is a question that demands an impressive answer. The alternative is not blandness; it is a question that is easy to answer and happens to be pointed somewhere unusual.
+
+So the test for one of these is not "does this sound interesting" but **"has anybody asked them this before?"** Ordinary questions get well-rehearsed answers because they have been asked a hundred times. The ones below are easy — every one can be answered in a sentence from ordinary experience — and most people will be assembling the answer for the first time, which is where the surprise comes from.
+
+- What do you know how to do that is nearly obsolete?
+- What is a rule you follow that nobody taught you?
+- What can you identify by sound alone?
+- What did you learn late that most people learn early?
+- What do you notice that other people walk straight past?
+- What is a question you wish people asked you?
+- What is the most useful thing you have ever thrown away?
+- What do you understand now that you used to only repeat?
+- What is something you own that will outlive you?
+- What is a word you use that other people around you do not?
+- What has changed about where you live that nobody else seems to have noticed?
+- What is the best decision you made for entirely the wrong reason?
+- What do you do at home that would puzzle an anthropologist?
+- What have you stopped bothering to explain to people?
+- What is a habit of yours that started as a joke?
+- What was the last thing you looked up out of pure curiosity?
+- What do you believe that most people around you do not?
+- What have you got dramatically better at without meaning to?
+- What is something you were taught that turned out to be local rather than true?
+- What do you own that you would replace with exactly the same thing?
+- What is a small injustice that still irritates you years later?
+- What is the most specific compliment you have ever received?
+
+Notice that none of them asks anybody to be impressive. They are pointed at corners of an ordinary life that simply do not come up, which is the only kind of interesting a question can actually supply.
 
 ## Conversation Topics: Which Ones Behave Differently
 
