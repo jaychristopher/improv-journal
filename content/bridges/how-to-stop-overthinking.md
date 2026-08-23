@@ -133,6 +133,18 @@ Improv calls this the **obvious choice** - and it contains a paradox documented 
 
 _Try this:_ In your next conversation, catch yourself composing a response while the other person is still talking. When you notice it, drop the composed response and say whatever comes first. It will feel risky. It will also feel more real.
 
+## Why Overthinking Is Worst at Night
+
+Everything above depends on somewhere else to put your attention. A partner to mirror, a word to answer, a face in front of you reacting. At two in the morning there is none of that, which is not an accident — a bedroom is deliberately engineered to remove external input. Dark, quiet, still, nothing moving. Those are the conditions for sleep, and they are also the conditions under which attention, having nothing outside to track, turns on the only thing left.
+
+That is why the loop feels worse at night rather than merely more inconvenient. The bandwidth account predicts it exactly: you have not become more anxious after midnight, you have run out of things competing for the channel.
+
+It also explains why the standard advice fails. "Clear your mind" and "stop thinking about it" are cognitive tasks, so they spend the resource they are trying to free — the same trap as suppression during the day, with fewer ways out.
+
+What follows from the model, rather than from sleep folklore, is narrow but real. Write the loop down. Not to solve it: an unresolved thought is held open because some part of you is still tasked with remembering it, and moving it onto paper closes that task without answering the question. Give attention something external and boring enough not to wake you — the texture of the sheet, the temperature of the room, your own breathing counted. Not a screen, which supplies input and demands processing at the same time.
+
+This is the version of the problem where an improviser has least to offer, and it is worth saying so. The whole method rests on redirecting attention outward, and night is the one situation that removes the outside on purpose.
+
 ## The Honest Caveat
 
 These exercises help with **everyday overthinking** - the kind that steals your presence in conversations, keeps you awake rehearsing tomorrow's meeting, or makes you second-guess every email. They work by redirecting bandwidth from internal processing to external engagement.
