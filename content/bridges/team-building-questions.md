@@ -10,7 +10,7 @@ entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Team Building Questions That Actually Build Trust
@@ -41,6 +41,8 @@ This is the principle of be supportive in practice. Being supportive doesn't mea
 
 The questions below are organized in four tiers. Start at Tier 1. Don't skip ahead. The progression is the mechanism — each tier works because the previous one established enough safety for the next level of honesty.
 
+There are more than you need on purpose. A team of eight gets through five questions in one sitting, and a framework that runs out at the end of its first session is a framework that never reaches Tier 3 — which is the tier the whole thing exists for. Take one per meeting and stay in a tier until it stops producing anything new.
+
 ### Tier 1: Observable and Specific
 
 These questions ask people to share something real but low-risk — an observable fact about their experience, not an opinion or emotion.
@@ -50,6 +52,17 @@ These questions ask people to share something real but low-risk — an observabl
 3. What's a tool or system you've set up for yourself that makes your work easier?
 4. What's a meeting or ritual at a previous job that you actually miss?
 5. What did you spend your last really focused two hours on?
+
+**More at this tier:**
+
+- What part of your week takes longer than anybody realises?
+- What did you have to look up recently that you felt you should have known?
+- What is a piece of work you did here that nobody saw?
+- What is the first thing you check when you sit down?
+- What is something about your role that would surprise a new starter?
+- What did you learn from the last thing that went wrong?
+- What is a small change to how we work that you made and never mentioned?
+- What is the most useful thing anybody here has taught you?
 
 **Why these work:** They ask for specifics, not generalities. "What are you good at?" invites a performance. "What skill have you gotten better at?" invites a story. The specificity lowers the cost of honesty — you're not asking anyone to characterize themselves.
 
@@ -63,6 +76,17 @@ These reveal how someone thinks, not just what they do. Slightly higher stakes b
 9. What's a piece of feedback you received early in your career that actually changed how you work?
 10. What's a professional norm everyone follows that you secretly think is pointless?
 
+**More at this tier:**
+
+- What do you think we are better at than we give ourselves credit for?
+- What call did we make last quarter that you would argue against today?
+- What kind of problem do you actually enjoy being handed?
+- What do you think slows us down that nobody talks about?
+- How do you prefer to be disagreed with?
+- What is something you think we over-invest in?
+- What would you protect if we had to cut something?
+- What does a genuinely good week look like for you here?
+
 **Why these work:** Question 10 is the hinge. It asks for mild dissent — an opinion that contradicts the group's default. If someone shares honestly and the group responds with curiosity instead of defensiveness, you've completed a trust transaction. The room got safer.
 
 ### Tier 3: Honest Admission
@@ -75,6 +99,16 @@ These require acknowledging a gap, a mistake, or a limitation. This is where vul
 14. When's the last time you changed your mind about something at work because of what a colleague said?
 15. What's something you wish you'd spoken up about sooner?
 
+**More at this tier:**
+
+- What is something everyone assumes you understand that you do not?
+- Where do you think you are the bottleneck?
+- What is a strength of yours that gets you into trouble?
+- What have you been carrying that you should have handed over?
+- What is the feedback you expect to get and would rather not?
+- What did you get wrong here that we never went back to?
+- What are you slower at than people think?
+
 **Why these work:** Admitting "I procrastinate on this" or "I used to be sure about this and now I'm not" requires a degree of honesty most professional environments never reach. The willingness to say "I don't know" or "I was wrong" is what trust is actually made of.
 
 ### Tier 4: What Matters
@@ -86,6 +120,15 @@ These should only come after the group has moved through the earlier tiers — e
 18. What's something you need from this team that you haven't asked for?
 19. What's a risk you'd take with this project if you knew the team had your back?
 20. What's the most honest thing you could say about how you're doing right now?
+
+**More at this tier:**
+
+- What would have to change for you to still be here in three years?
+- What are you hoping to be better at by the end of this?
+- What do you want to be trusted with that you are not yet?
+- What is the thing you would fix first if it were entirely yours?
+- What would you want said about your work when you are not in the room?
+- What do you think this team is for?
 
 **Why these work:** Question 18 is the critical one. Asking for what you need combines vulnerability, honesty, and trust in a single offer. If a team can answer it honestly, they have real safety in the room. Not the kind from trust falls. The kind that changes how people work.
 
