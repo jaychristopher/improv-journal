@@ -4,6 +4,7 @@ title: Two-Person Longform
 type: format
 status: draft
 tags: [formats, longform, structure, duo, mastery]
+how_to_play: "Two performers hold a full show of 25 to 60 minutes with no ensemble to edit for them, either as one continuous reality or as a story told with time jumps."
 links:
   - { id: two-person-scene, relation: extends }
   - { id: active-listening, relation: requires }
@@ -22,7 +23,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support. The purest test of improv partnership: nowhere to hide, no one to rescue you, every choice carries full weight.

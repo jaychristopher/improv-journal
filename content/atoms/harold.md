@@ -4,6 +4,7 @@ title: "The Harold: Improv's Most Important Long-Form Format"
 type: format
 status: draft
 tags: [formats, longform, structure, close]
+how_to_play: "One suggestion becomes an opening, then three unrelated two-person scenes, a group game, and second and third beats that revisit and heighten the worlds the first beat found."
 links:
   - { id: beats, relation: extends }
   - { id: opening, relation: extends }

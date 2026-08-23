@@ -4,6 +4,7 @@ title: Armando
 type: format
 status: draft
 tags: [formats, longform, structure, monologue]
+how_to_play: "A monologist takes one word from the audience and tells a true personal story, and the ensemble improvises scenes inspired by it, returning to the monologist for a fresh story between rounds."
 links:
   - { id: montage, relation: extends }
   - { id: harold, relation: contrasts }
@@ -20,7 +21,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 A monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes. The most widely performed longform structure after the Harold.

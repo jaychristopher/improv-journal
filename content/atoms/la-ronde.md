@@ -4,6 +4,7 @@ title: La Ronde
 type: format
 status: draft
 tags: [formats, longform, structure, character, relationship]
+how_to_play: "Two-person scenes chained so one character carries into the next — A and B, then B and C, then C and D — until the chain closes by returning to the first character."
 links:
   - { id: relationship, relation: requires }
   - { id: character, relation: requires }
@@ -17,7 +18,7 @@ links:
   - { id: reincorporation, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 A character-chain longform format where each two-person scene shares one character with the next, forming a circle that returns to the first character. Named after Arthur Schnitzler's 1897 play *Reigen* (La Ronde).

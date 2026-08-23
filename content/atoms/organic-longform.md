@@ -4,6 +4,7 @@ title: Organic Longform
 type: format
 status: draft
 tags: [formats, longform, structure, organic, advanced]
+how_to_play: "No opening, no beat count and no set scene order — the ensemble starts a scene and lets the shape of the show come from what the material turns out to need."
 links:
   - { id: harold, relation: extends }
   - { id: montage, relation: extends }
@@ -21,7 +22,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined scene order. The form emerges from the content itself — what the scenes need dictates when to edit, when to return to a thread, when to do a group scene.

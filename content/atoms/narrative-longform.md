@@ -4,6 +4,7 @@ title: Narrative Longform
 type: format
 status: draft
 tags: [formats, longform, structure, narrative, johnstone]
+how_to_play: "One story told end to end: establish a platform, tilt it with the event that breaks the normality, and resolve by reincorporating what has already happened rather than introducing something new."
 links:
   - { id: harold, relation: contrasts }
   - { id: reincorporation, relation: requires }
@@ -20,7 +21,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Longform improv that creates a coherent story with beginning, middle, and end — an improvised play or film. Distinguished from collage-based forms (Harold) by commitment to a single through-line narrative.

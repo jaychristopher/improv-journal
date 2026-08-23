@@ -4,6 +4,7 @@ title: Montage
 type: format
 status: draft
 tags: [formats, longform, structure, accessible]
+how_to_play: "A run of scenes with no required opening, no group games and no obligation to revisit anything, ordered only by what the last scene makes the ensemble want to play next."
 links:
   - { id: harold, relation: contrasts }
   - { id: editing, relation: requires }
@@ -20,7 +21,7 @@ links:
   - { id: ref-carrane-improv-nerd, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters. Will Hines: "suggestion and go."
