@@ -18,7 +18,7 @@ primary_cta_target: mirroring
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Theatre Games: What They Are and How to Run Them
@@ -39,7 +39,7 @@ The terms get used interchangeably, and the overlap is real, but the emphasis di
 
 **Theatre games are training instruments.** The goal is a skill — attention, physical awareness, ensemble responsiveness. Whether anyone laughs is beside the point, and chasing laughs usually breaks the exercise. Spolin's lineage treats performance as what happens after the skill exists.
 
-**Improv games are performance structures.** Freeze Tag, Scenes from a Hat and Theatresports have rules designed to generate entertainment in front of an audience. They descend more from the Close and Johnstone lines than from Spolin. The [improv games](/improv-games) collection has those and the rest, each with its rules and what it trains.
+**Improv games are performance structures.** Freeze Tag, Scenes from a Hat and Theatresports have rules designed to generate entertainment in front of an audience. They descend more from the Close and Johnstone lines than from Spolin — [Del Close](/del-close) for where that half of the lineage went. The [improv games](/improv-games) collection has those and the rest, each with its rules and what it trains.
 
 The practical consequence: if you run a theatre game and the room starts performing for each other, the exercise has stopped working. That is not a discipline problem. It is a sign the point of concentration has been lost.
 

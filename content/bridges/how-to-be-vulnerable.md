@@ -12,7 +12,7 @@ entry_atoms: [vulnerability, safety-in-the-room, trust, be-brave, be-honest, com
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Be Vulnerable (Without Getting Destroyed)
@@ -29,7 +29,7 @@ The standard understanding of vulnerability is emotional: it means revealing you
 
 That definition is accurate but incomplete. It describes the experience of vulnerability without addressing its mechanics. And the mechanics are what determine whether vulnerability connects you to someone or leaves you exposed and alone.
 
-Improv offers a more structural definition: vulnerability is making an offer that could be rejected.
+Improv offers a more structural definition: vulnerability is making an offer that could be rejected. Which makes the other half of it worth having ready — [how to deal with rejection](/how-to-deal-with-rejection) covers what to do when the offer is actually refused, since a definition built on that risk is thin without it.
 
 That's it. Every act of vulnerability, stripped to its core, is an offer. "I love you" is an offer. A new idea in a meeting is an offer. An honest opinion is an offer. A creative risk is an offer. What makes each of these vulnerable isn't the emotional content — it's the structural exposure. You've put something forward and someone else gets to decide what happens to it.
 

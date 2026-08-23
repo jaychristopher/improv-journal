@@ -19,7 +19,7 @@ entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportiv
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Team Building Activities That Actually Change How Your Team Works
@@ -164,6 +164,8 @@ The constraint is different: no side conversations, silences carry, and everybod
 Safety first, always, and for longer than feels necessary. A group that has done two low-stakes rounds will do the third properly; a group thrown straight into the third will do a performance of it and you will not be able to tell the difference from the front of the room.
 
 Twenty minutes of the first group, twenty of the second, and one activity from the third is a better hour than five activities chosen because they sounded fun. And stop each one while it is still working.
+
+If you have five minutes rather than an afternoon, that is a different job and a genuinely useful one — [5 minute team building activities](/5-minute-team-building) covers the short-format version, which is what most teams can actually run regularly.
 
 ## Bonding Is Not the Same as Building
 

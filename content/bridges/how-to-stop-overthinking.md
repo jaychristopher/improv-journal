@@ -18,7 +18,7 @@ primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Stop Overthinking and Get Out of Your Head
@@ -71,7 +71,7 @@ Its limit is worth knowing too. It interrupts a loop; it does not resolve what s
 
 ## Your Brain Has a Bandwidth Problem
 
-Your working memory - the mental workspace where you process information in real time - holds roughly 4 items simultaneously (Sweller, Cognitive Load Theory, 1988). That's it. Four slots. Every cognitive task you add (evaluating, planning, self-monitoring, rehearsing) directly subtracts from your capacity to process what's actually happening in front of you.
+Your working memory - the mental workspace where you process information in real time - holds roughly 4 items simultaneously (Sweller, Cognitive Load Theory, 1988). That's it. Four slots. Every cognitive task you add (evaluating, planning, self-monitoring, rehearsing) directly subtracts from your capacity to process what's actually happening in front of you. That subtraction is also what people are describing when they call themselves awkward — [social awkwardness](/how-to-be-less-awkward) is the same budget problem showing up in a conversation rather than in your own head.
 
 Daniel Kahneman's dual-process theory maps this precisely. **System 1** is fast, automatic, intuitive - it handles about 96% of your cognition at almost no cost. **System 2** is slow, deliberate, conscious - and it's limited by that 4-slot working memory. Overthinking is System 2 running in a recursive loop on problems that don't benefit from deliberate analysis. The loop consumes the bandwidth System 1 needs to process real-time external input.
 

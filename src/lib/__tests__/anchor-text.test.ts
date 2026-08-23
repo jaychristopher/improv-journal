@@ -29,6 +29,13 @@ const ALLOWED = new Set([
   // "yes and" is the name of the thing; "improv" in the slug disambiguates
   // the URL rather than the phrase.
   "yes and|/yes-and-improv",
+  // Retargeting leaves a slug describing the target a page no longer has. This
+  // page was moved from "how to be less awkward" to "social awkwardness", which
+  // is its title, its opening sentence and the term it is trying to rank for —
+  // so the anchor is right and the URL is the stale half. Renaming the slug
+  // would be the tidier fix and costs a redirect, which is not worth spending
+  // on a page with no accumulated equity yet. Revisit if it starts ranking.
+  "social awkwardness|/how-to-be-less-awkward",
 ]);
 
 function significantWords(slug: string): string[] {

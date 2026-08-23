@@ -13,7 +13,7 @@ entry_atoms: [active-listening, offers, continuous-signaling, status, be-present
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # People Skills Are a System, Not a Personality Trait
@@ -54,7 +54,7 @@ Real listening — the kind that makes scenes come alive and makes people feel m
 
 **Receiving the full offer.** Not just the words, but the emotional tone, the status level, the physical energy. When your partner enters a scene slouching and sighing, the offer isn't in what they say. It's in the slouch and the sigh. Responding to the words while ignoring the body is like reading a transcript of a song — you get the lyrics but miss the music.
 
-**Suspending internal computation.** While someone is talking, your brain wants to plan your response. Constructing a response consumes the same cognitive resources you need to process what's being said. The result is two people taking turns delivering prepared statements instead of actually responding to each other. Improv calls this being in your head. The antidote is being present — directing full attention to external input instead of internal processing.
+**Suspending internal computation.** While someone is talking, your brain wants to plan your response. Constructing a response consumes the same cognitive resources you need to process what's being said. The result is two people taking turns delivering prepared statements instead of actually responding to each other. Improv calls this being in your head. The antidote is being present — directing full attention to external input instead of internal processing. [How to be present](/how-to-be-present) covers why that is a bandwidth question rather than a willpower one.
 
 **Responding to what was actually offered.** Not what you expected them to say. Not the version that supports the point you were planning to make. What they actually offered. This sounds simple. It is the hardest part.
 
