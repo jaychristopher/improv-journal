@@ -13,7 +13,7 @@ entry_atoms:
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-13"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Team Dynamics: The Invisible Architecture of a Group
@@ -85,6 +85,26 @@ Every group hits moments of disconnect — a misread, a conflict, an awkward sil
 When a scene goes sideways, the ensemble doesn't stop and assign blame. They adjust. Someone takes a different tack. Someone heightens the unexpected turn. The mistake becomes material. This capacity to metabolize rupture without stopping is what separates groups that perform from groups that process.
 
 _Try this:_ The next time a team conversation goes awkward, name it. "That landed differently than I intended" or "I think we just talked past each other." Naming the rupture doesn't make it bigger — it makes it workable. Ignoring it is what makes it fester.
+
+## What One Person Can Change Without Authority
+
+Almost everything written about team dynamics assumes the reader can restructure the team. Most people reading it cannot. They are a member, not the manager, and the advice — set norms, model vulnerability, redesign the meeting — is addressed to somebody else.
+
+Two things are genuinely unilateral, and both are structural rather than attitudinal.
+
+**Who gets heard.** Woolley's finding above is that equality of conversational turn-taking predicts collective intelligence better than the ability of the members. That is a distribution, and one person can shift a distribution. "What do you think?" directed at whoever has not spoken costs nothing, requires no standing, and is the single highest-leverage sentence available to somebody with no authority. Do it twice in a meeting and the shape of the discussion changes.
+
+**What happens to a contribution after it is made.** An idea that is built on becomes the group's idea; an idea that is met with silence teaches everybody watching what offering costs. `yes-and` at the group level is simply being the person who says what is good about a suggestion before saying what is wrong with it. One consistent builder in a room of six is enough to change what people are willing to put forward, because the risk of speaking is calculated from what happened to the last person who did.
+
+Two smaller ones. **Naming a pattern once, neutrally** — "we moved past that quite fast" — is available to anyone and costs almost nothing the first time. And **lowering your own status deliberately**, in Johnstone's sense, raises whoever you are speaking to: asking somebody to explain something you half-understand is a status transfer disguised as a question.
+
+### What you cannot fix from below
+
+Worth being straight about, because the effort is otherwise spent badly.
+
+`safety-in-the-room` is set largely by the highest-status person present. If disagreement is punished at the top — even mildly, even by a face — no amount of member behaviour compensates, because everybody is reading that person for the rules and is right to. Edmondson's work is about conditions, and conditions are mostly owned by whoever sets them.
+
+If that is the situation, the honest options are to protect the people below you from it, to raise it with somebody who can change it, or to leave. Practising better turn-taking underneath a manager who punishes dissent is not a fix. It is a way of being tired.
 
 ## The Team You're Already In
 
