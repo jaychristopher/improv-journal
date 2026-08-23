@@ -24,7 +24,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
   - { id: ref-tj-dave-speed-of-life, relation: extends }
   - { id: ref-hines-substack, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
 updated: "2026-08-23"
 ---

@@ -14,9 +14,9 @@ links:
   - { id: cognitive-bandwidth, relation: requires }
   - { id: offers, relation: extends }
   - { id: signal, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Be Present — forcing attention onto the immediate moment, breaking the planning habit.

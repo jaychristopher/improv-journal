@@ -18,9 +18,9 @@ links:
   - { id: gratitude-reframing, relation: requires }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
   - { id: fear-of-failure, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.

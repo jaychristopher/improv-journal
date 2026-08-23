@@ -13,9 +13,9 @@ links:
   - { id: shared-reality-fragility, relation: extends }
   - { id: cognitive-bandwidth, relation: extends }
   - { id: active-listening, relation: requires }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The warning lights. How shared reality falls apart.

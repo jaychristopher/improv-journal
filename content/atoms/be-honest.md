@@ -23,9 +23,9 @@ links:
   - { id: do-feel-say, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Alias:** Signal the shared reality as it currently exists, clearly and without distortion.

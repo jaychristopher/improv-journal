@@ -17,9 +17,9 @@ links:
   - { id: be-simple, relation: enables }
   - { id: be-changeable, relation: enables }
   - { id: ref-impro-johnstone, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 You signal continuously. You are always communicating, whether you intend to or not.

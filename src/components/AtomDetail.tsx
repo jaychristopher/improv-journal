@@ -9,6 +9,7 @@ import {
   getNextAtomInThread,
   getParentPath,
   getThreadsForAtom,
+  loadSources,
 } from "@/lib/content";
 import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
@@ -66,6 +67,13 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
   const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
   const series = audioUrl ? await getSeriesForPage(atomUrl) : null;
   const audioDuration = audioUrl ? getAudioDuration(audioUrl) : undefined;
+  // Titles for the Source block. The ids render as anchor text otherwise, and
+  // "improv is high stakes reality construction" is a slug with the hyphens
+  // taken out, not a title — it reads as machine output and says less about
+  // the destination than the real one does.
+  const sourceTitles = fm.sources?.length
+    ? new Map((await loadSources()).map((s) => [s.frontmatter.id, s.frontmatter.title]))
+    : null;
 
   // Reverse lookups
   const [appearsInThreads, appearsInBridges] = await Promise.all([
@@ -364,7 +372,7 @@ export async function AtomDetail({ atom, breadcrumbs }: AtomDetailProps) {
                         href={`/sources/${sourceId}`}
                         className="text-foreground/70 hover:underline"
                       >
-                        {sourceId.replace(/-/g, " ")}
+                        {sourceTitles?.get(sourceId) ?? sourceId.replace(/-/g, " ")}
                       </Link>
                     </li>
                   ))}

@@ -16,9 +16,9 @@ links:
   - { id: signal, relation: illustrates }
   - { id: be-brave, relation: requires }
   - { id: relationship, relation: enables }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Be Honest — sending clear, authentic signals without distortion. This is the scene-length application of Do-Feel-Say.

@@ -18,7 +18,7 @@ links:
   - { id: latency-recovery, relation: extends }
   - { id: ref-attention-and-effort-kahneman, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
 updated: "2026-08-23"
 ---

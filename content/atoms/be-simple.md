@@ -23,7 +23,7 @@ links:
   - { id: offers, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
 updated: "2026-08-23"
 ---

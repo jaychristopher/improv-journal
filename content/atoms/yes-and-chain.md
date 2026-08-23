@@ -18,9 +18,9 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-napier-improvise, relation: contrasts }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school. This atom covers the drill itself; for the underlying skill see `accepting-the-offer`.

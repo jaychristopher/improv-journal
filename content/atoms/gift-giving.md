@@ -17,9 +17,9 @@ links:
   - { id: commitment, relation: extends }
   - { id: active-listening, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
-sources: []
+sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Be Thankful — receiving unexpected input as a gift rather than a problem.

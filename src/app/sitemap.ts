@@ -6,6 +6,7 @@ import {
   loadBridges,
   loadPaths,
   loadShows,
+  loadSources,
   loadThreads,
 } from "@/lib/content";
 import { getIndexableCombinations } from "@/lib/exercise-picker";
@@ -13,12 +14,13 @@ import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [atoms, bridges, threads, paths, shows] = await Promise.all([
+  const [atoms, bridges, threads, paths, shows, sources] = await Promise.all([
     loadAtoms(),
     loadBridges(),
     loadThreads(),
     loadPaths(),
     loadShows(),
+    loadSources(),
   ]);
 
   const entries: MetadataRoute.Sitemap = [];
@@ -186,6 +188,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: a.frontmatter.updated ?? a.frontmatter.created,
       priority: 0.5,
       changeFrequency: "monthly",
+    });
+  }
+
+  /**
+   * Source pages — the transcripts and dialogues atoms were extracted from.
+   *
+   * This whole content type was missing here. loadSources drives a live,
+   * canonical, indexable route, and nothing on the site linked to it and
+   * nothing listed it, so the one page under it was undiscoverable: 4,900
+   * words that share 5% of their 8-word runs with the atoms drawn from them,
+   * which is to say almost all of it exists nowhere else.
+   */
+  for (const src of sources) {
+    entries.push({
+      url: `${SITE_URL}/sources/${src.frontmatter.id}`,
+      lastModified: src.frontmatter.updated ?? src.frontmatter.created,
+      priority: 0.4,
+      changeFrequency: "yearly",
     });
   }
 
