@@ -11,7 +11,7 @@ entry_atoms: [audience-relationship, active-listening, ensemble, signal, bandwid
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Read the Room: The Skill Improv Performers Train Every Night
@@ -73,6 +73,26 @@ The most advanced room-reading skill is tracking the emotional undercurrent — 
 In improv, performers track this gap in their scene partners constantly. "Your words say you're happy, but your body just collapsed." The gap is where the real information lives — and where the real connection happens, because acknowledging what's actually felt (rather than what's officially stated) is an act of honesty.
 
 **The practice:** In your next meeting, listen for the moment when the official conversation doesn't match the room's energy. Someone proposes something and the response is polite but flat. Someone asks "any concerns?" and the silence is too long. These gaps are the room telling you something. The skill is noticing them — and having the courage to name them.
+
+## What to Do Once You Have Read It
+
+Detection is half of it, and the half that gets written about. The definition at the top of this page says reading a room means working out what it feels *and changing what you do accordingly*, so here is the second half.
+
+Rooms are mostly in one of four states, and each has a move that works and an instinct that makes it worse.
+
+**Flat.** Not hostile, just depleted — late in the day, third meeting running, nobody has eaten. **The instinct is to bring more energy, and it is wrong.** Enthusiasm aimed at a tired room reads as pressure, and widens the gap it was meant to close. The move is to go smaller: shorten what you planned, drop your volume rather than raise it, and ask something answerable in three words so somebody speaks without having to summon anything.
+
+**Tense.** Something is unsaid and everybody knows it. **The instinct is to carry on as though it is not there**, which costs more than naming it — the room is already spending its attention on the thing, and your material is competing with it and losing. The move is to say the obvious thing out loud. Not to resolve it, just to acknowledge it exists. A room that has heard the elephant named can put it down for twenty minutes.
+
+**Restless.** They have finished before you have. Bodies angled out, phones surfacing, the shuffle. **The instinct is to speed up and compress everything in**, which turns a slow ending into a fast one and changes nothing. The move is to stop. Go to your last point and land it. Nobody has ever resented a meeting ending early, and the goodwill is worth more than the material you cut.
+
+**With you.** Warm, attentive, laughing in the right places. This is the state people misread most often, because it feels like permission to continue. **It is not — it is the window.** If there is a difficult thing to raise, a decision to ask for, a request that needed goodwill, this is the moment, and it closes.
+
+### The failure is rarely the reading
+
+Most people who "cannot read a room" are reading it correctly and doing nothing about it. They notice the shuffle, the flatness, the thing unsaid — and carry on with the plan, because adjusting feels like abandoning it, and because the plan is the thing they prepared and the room is not.
+
+That is the whole skill in one sentence: **the room is more important than your plan, and it is the only one of the two that is actually in the building.**
 
 ## Why This Matters Beyond Improv
 
