@@ -15,7 +15,7 @@ primary_cta_target: one-word-story
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Fun Questions to Ask Friends: 116 Worth Actually Answering
@@ -218,6 +218,26 @@ The ones where a wrong answer beats a right one. This is where the least confide
 - Why is the sky that particular blue, in your own words?
 - What is electricity, one sentence, no cheating?
 - How do bees decide anything?
+
+## When Somebody Cannot Think of Anything
+
+The argument on this page cuts both ways, and it is worth saying so rather than leaving it for somebody to discover at their own expense.
+
+If the pleasure of a good question is invention, then **invention is also the cost**. Ask a table of five to make something up and one of them will be visibly slower — not less imaginative, just slower, because invention speed varies enormously and the quick ones set the pace without meaning to. That person now has a choice between saying something they are not happy with and holding everybody up, and neither is fun, which is the only thing this page claims to be delivering.
+
+It is fixable, and none of the fixes is a different question.
+
+**Pass first, yourself.** Somewhere early, say you have not got one and move on. A pass that nobody has modelled reads as a confession; a pass the asker took two minutes ago reads as a rule.
+
+**Answer your own first when you can see somebody stuck.** It buys them the ten seconds they need and shows the level, which is usually the actual problem — people freeze less often on the question than on not knowing how big an answer is wanted.
+
+**Take the flat answer without rescuing it.** "Oh come on, you can do better than that" is meant warmly and lands as a mark. Accept the short version, respond to it as though it were the full one, and the next round costs them less.
+
+**Change the format rather than the question.** If somebody is struggling, stop asking for invention. [This or that](/this-or-that-questions) needs a one-word preference and no composition at all, and it will get the same person talking within about thirty seconds. [Would you rather](/would-you-rather-questions) is a middle setting — a choice to defend rather than a thing to conceive.
+
+**Ask the quiet one something they already know the answer to.** Not to put them on the spot — the opposite. A question about their actual life is retrieval, and retrieval is free.
+
+The principle underneath all of it: **a fun question is only fun while answering it is optional.** The moment invention becomes compulsory, you are running a performance review with snacks.
 
 ## The Ones That Kill It
 
