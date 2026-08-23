@@ -1,5 +1,30 @@
 import { ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
 
+/**
+ * courseWorkload is a schema.org Duration, which means ISO 8601 and nothing
+ * else. Every path was emitting the string it shows a reader — "30 min" —
+ * which Google cannot parse, so the field was present and useless and the
+ * pages could not qualify for course results on it.
+ *
+ * The tell was two lines below: repeatFrequency already used P1D and P1W
+ * correctly. The format was known for the schedule and missed for the
+ * workload.
+ *
+ * Anything unrecognised returns null so the field is dropped rather than
+ * emitted wrong — an absent property is a gap, an unparseable one is a claim
+ * that fails validation.
+ */
+export function isoDuration(text: string | null | undefined): string | null {
+  if (!text) return null;
+  const hours = /(\d+)\s*(?:h|hr|hrs|hour|hours)\b/i.exec(text);
+  const minutes = /(\d+)\s*(?:m|min|mins|minute|minutes)\b/i.exec(text);
+  if (!hours && !minutes) return null;
+  const h = hours ? Number(hours[1]) : 0;
+  const m = minutes ? Number(minutes[1]) : 0;
+  if (h === 0 && m === 0) return null;
+  return `PT${h ? `${h}H` : ""}${m ? `${m}M` : ""}`;
+}
+
 interface CourseJsonLdProps {
   title: string;
   description: string;
@@ -73,7 +98,7 @@ export function CourseJsonLd({
     hasCourseInstance: {
       "@type": "CourseInstance",
       courseMode: "Online",
-      ...(duration && { courseWorkload: duration }),
+      ...(isoDuration(duration) && { courseWorkload: isoDuration(duration) }),
       ...(lengthInDays && {
         courseSchedule: {
           "@type": "Schedule",
