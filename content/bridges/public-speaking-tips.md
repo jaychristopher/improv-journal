@@ -24,7 +24,7 @@ primary_cta_target: no-backspace-scene
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # 10 Public Speaking Tips for the Parts You Cannot Rehearse
@@ -196,4 +196,4 @@ The tips that survive testing are dull: know your material, look at individual p
 
 **The threshold moment.** `first-line-drill` has you deliver a single committed opening line and sit down, over and over. It isolates the exact instant most people dread, and repetition is what defuses it.
 
-Neighbouring guides: [how to be more articulate](/how-to-be-more-articulate) for the sentence-level mechanics, [how to read the room](/how-to-read-the-room) for the audience half, and [how to stop overthinking](/how-to-stop-overthinking) if the monitoring loop above is the whole problem.
+Neighbouring guides: [how to be more articulate](/how-to-be-more-articulate) for the sentence-level mechanics, [how to read the room](/how-to-read-the-room) for the audience half, and [how to stop overthinking](/how-to-stop-overthinking) if the monitoring loop above is the whole problem. For the part nobody prepares — the twenty minutes of talking to strangers before you go on, and the queue of people afterwards — that is [conversation starters](/conversation-starters).

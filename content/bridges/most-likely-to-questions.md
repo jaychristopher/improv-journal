@@ -15,7 +15,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Most Likely To Questions: 182 That Land as a Compliment
@@ -299,4 +299,4 @@ The whole skill here is making somebody else look good in public, quickly, witho
 
 `gift-giving` is the improv exercise built precisely for that: you hand your scene partner something that makes them more interesting than you. It is the reflex this game rewards and the one that makes people want you at the next thing — `ensemble` awareness is mostly this, done repeatedly and without announcement.
 
-For the version where the answers are about the person answering rather than about the room, [would you rather questions](/would-you-rather-questions) and [this or that questions](/this-or-that-questions) are lower risk and warm a group faster.
+For the version where the answers are about the person answering rather than about the room, [would you rather questions](/would-you-rather-questions) and [this or that questions](/this-or-that-questions) are lower risk and warm a group faster — and [party games](/party-games) has the whole set, sorted by group size.

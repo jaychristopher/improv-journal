@@ -26,7 +26,7 @@ primary_cta_target: no-backspace-scene
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Would You Rather Questions: 164 That Split the Room
@@ -299,4 +299,4 @@ The whole game rests on one capacity: choosing under a constraint and standing b
 
 That is trainable, and it is what `no-backspace-scene` exists for — nothing you say can be taken back, so the only available direction is forward. It builds the reflex that makes this game work, and more usefully the one that makes you easy to talk to in general: `obvious-choice` says your first answer is connected to the situation and your second is connected to how you want to appear. The first is nearly always the better one.
 
-If you want the lighter version of this for an evening with friends, the [fun questions to ask friends](/fun-questions-to-ask-friends) list has a shorter set built on the same rule, and [conversation starters](/conversation-starters) covers what to do once a pair has done its job and the actual conversation has started.
+If you want the lighter version of this for an evening with friends, the [fun questions to ask friends](/fun-questions-to-ask-friends) list has a shorter set built on the same rule, and [conversation starters](/conversation-starters) covers what to do once a pair has done its job and the actual conversation has started. If you need a whole evening rather than one game, [party games](/party-games) collects the ones that need no equipment at all.

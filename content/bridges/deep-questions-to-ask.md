@@ -27,7 +27,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Deep Questions to Ask: 153 That Get an Honest Answer
@@ -320,4 +320,4 @@ The questions are the easy half. A deep answer is a small risk somebody has just
 
 **Building from their last words.** `last-word-response` leaves you no opening except their final word, which removes changing the subject as an available move rather than merely discouraging it. Two minutes, and it is the whole skill above.
 
-For the neighbouring versions of this: [questions to ask friends](/questions-to-ask-friends) for 120 sorted by what they open, [how to be a good listener](/how-to-be-a-good-listener) for the receiving half, and [how to be vulnerable](/how-to-be-vulnerable) for going first.
+For the neighbouring versions of this: [questions to ask friends](/questions-to-ask-friends) for 120 sorted by what they open, [how to be a good listener](/how-to-be-a-good-listener) for the receiving half, and [how to be vulnerable](/how-to-be-vulnerable) for going first. The escalation this page describes has been formalised and tested once, in a 1997 study — [the 36 questions](/36-questions-to-fall-in-love) is that protocol, and why the sequence rather than the questions is doing the work.

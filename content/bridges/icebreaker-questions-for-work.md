@@ -23,7 +23,7 @@ primary_cta_target: one-word-story
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Icebreaker Questions for Work: 124 People Will Answer
@@ -230,4 +230,4 @@ Every list includes some of these. Each one fails in a way worth understanding.
 
 **Low-stakes group attention.** `one-word-story` has a circle build a single story one word each. Nobody can steer it, nobody has to be funny, and it is the cheapest way to get a room paying attention to each other rather than to the agenda.
 
-For the rest: [team building questions](/team-building-questions) if you want fewer questions and more depth, [psychological safety](/psychological-safety) for why the trust has to come first, and [how to be a better manager](/how-to-be-a-better-manager) for what your raised status is doing to every question you ask.
+For the rest: [team building questions](/team-building-questions) if you want fewer questions and more depth, [psychological safety](/psychological-safety) for why the trust has to come first, and [how to be a better manager](/how-to-be-a-better-manager) for what your raised status is doing to every question you ask. Outside work, where the constraint is exposure rather than power, the same job is done by [icebreaker questions to get to know someone](/questions-to-get-to-know-someone) — and [this or that questions](/this-or-that-questions) run as a fast round are the cheapest way to start a meeting that has gone quiet.

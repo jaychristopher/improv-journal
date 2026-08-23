@@ -23,7 +23,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Questions for Couples: 124 That Update What You Know
@@ -245,4 +245,4 @@ The skill underneath all of this is unglamorous: taking in what was actually sai
 
 `last-word-response` trains it directly — each reply has to be built from the last thing your partner said, which makes it impossible to run the conversation on the model you already had. It is an improv exercise and it feels artificial for about two minutes, at which point people generally notice how much of their listening had been prediction.
 
-For the version of this with somebody you do not know yet, where trust rather than staleness is the constraint, that is [deep questions to ask](/deep-questions-to-ask), and [questions to get to know someone](/questions-to-get-to-know-someone) for the earliest stage of all.
+For the version of this with somebody you do not know yet, where trust rather than staleness is the constraint, that is [deep questions to ask](/deep-questions-to-ask), and [questions to get to know someone](/questions-to-get-to-know-someone) for the earliest stage of all. If you would rather follow a structure than choose as you go, [the 36 questions](/36-questions-to-fall-in-love) is the researched version, built to escalate in a fixed order.

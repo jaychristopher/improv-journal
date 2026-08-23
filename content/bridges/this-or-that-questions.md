@@ -15,7 +15,7 @@ primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # This or That Questions: 300 for Warming Up Any Room
@@ -431,3 +431,5 @@ The reason this format works is that it removes the gap between being asked and 
 `obvious-choice` says your first answer is connected to the question and your second is connected to how you want to appear. This or that is the only format that reliably gets the first one, because there is no time to produce a better-sounding alternative.
 
 If you notice yourself hesitating even on coffee or tea — deciding what your answer says about you — that is the planning habit, and it is trainable. `quieting-the-planning-mind` is built for exactly that gap.
+
+This is one of several games that need nothing but the people already in the room. The rest are on [party games](/party-games), along with the four tests that decide whether any of them works.
