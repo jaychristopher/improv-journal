@@ -16,7 +16,7 @@ primary_cta_target: presence-and-commitment
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # Stage Fright Is Not Your Enemy
@@ -55,9 +55,11 @@ Brooks's finding maps to what Yuri Hanin's research on athletic performance (the
 
 Improv performers face this exact problem every night — walking on stage with no script, no plan, no safety net. And they've been studying the relationship between fear and performance since Del Close painted "FOLLOW THE FEAR" on the back wall of The Committee theatre in San Francisco in the 1960s.
 
-Close's insight: **the moments performers want to avoid — the uncomfortable, the strange, the failing — are exactly where the interesting material lives.** Fear is not a warning to retreat. It's directional information pointing toward the creative edge. The scary choice is usually the right choice — because it's the honest one.
+Close taught that fear points at the material rather than away from it — `failing-forward` sets out that principle and where it comes from. The part that transfers to being frightened before you speak is narrower and more usable: **the feeling you are reading as a warning is a location.** It marks the thing you have not said, and the thing you have not said is almost always the thing worth saying. Not because bravery is a virtue, but because the sentence you are avoiding is the one that is actually about something.
 
-Susan Messing, one of Chicago's most respected improv performers and teachers, puts the principle in starker terms: _"If you're not having fun, you're the asshole."_ This sounds flip. It isn't. Her point: if a scene is dying and you check out or get paralyzed, you've abandoned your partner. The instruction is to find genuine engagement _even in the wreckage_ — because your visible enjoyment of the difficulty gives the audience permission to enjoy it too.
+Susan Messing, one of Chicago's most respected improv teachers, puts it more bluntly: _"If you're not having fun, you're the asshole."_
+
+Read as advice for nerves this sounds impossible, and it is not the instruction. What she is describing is a choice you still have while frightened, which is whether to stay in contact with the room or withdraw from it. **Withdrawal is what an audience actually registers as failure** — not the shaking hands, not the lost place, but the moment somebody stops being present and starts getting through it. They forgive the first two easily and cannot help noticing the third.
 
 Viola Spolin, who invented modern improv training, addressed stage fright structurally rather than psychologically. Her concept of **Point of Concentration** — a specific, shared focus for each exercise — works as an attention anchor. You cannot simultaneously monitor yourself _and_ be genuinely absorbed in a task. The absorption displaces the self-monitoring. The exercises don't fight the fear. They redirect the bandwidth.
 

@@ -101,22 +101,30 @@ describe("guide prose", () => {
   const MIN_RUNS_FOR_SHARE = 12;
 
   /**
-   * framing-effect left this list by being rewritten rather than tolerated: 66
-   * shared runs down to 20, 9.4% to 2.9%. It was the largest duplication in the
-   * repo and it survived five deferrals on the grounds that the guide is
-   * authority-gated and cannot rank, which was true and beside the point — the
-   * atom it was restating lives in the how-it-works family, and those pages do
-   * get surfaced. Duplicating an atom that ranks to prop up a guide that cannot
-   * is the wrong way round.
+   * Empty, and it took admitting the reasoning was wrong to get here.
    *
-   * The two remaining pairs are the same shape and still unfixed. Both guides
-   * are gated, so the case for repairing them is about the atoms they lean on
-   * rather than about the guides themselves.
+   * Three pairs sat in this list for most of a week, each deferred on the
+   * grounds that the guide involved is authority-gated and cannot rank, so
+   * rewriting it buys no position. True, and the wrong unit of account: every
+   * one of them was restating an atom, and the atoms live in the vocabulary and
+   * how-it-works families, which are among the few parts of this site Search
+   * Console shows getting surfaced at all. The cost was landing on the pages
+   * that can win, not the ones that cannot.
+   *
+   *   framing-effect ~ framing-as-angle-of-approach   66 runs -> 20   (9.4% -> 2.9%)
+   *   how-to-read-body-language ~ status              27 runs ->  0  (10.3% -> 0%)
+   *   stage-fright ~ failing-forward                  24 runs ->  4   (8.8% -> 1.5%)
+   *
+   * None was fixed by paraphrase. In each case the atom kept the reference
+   * material — the canonical status markers, Close and Messing on failure, the
+   * Lakoff and Kahneman mechanism — and the guide was rewritten to do the job
+   * only it can: reading a pair rather than defining status, being frightened
+   * before speaking rather than the general principle of failing forward.
+   *
+   * A slug added here is a claim that two pages should argue the same thing in
+   * the same words. That has not been true yet.
    */
-  const KNOWN_UNFIXED = new Set([
-    "how-to-read-body-language ~ status",
-    "stage-fright ~ failing-forward",
-  ]);
+  const KNOWN_UNFIXED = new Set<string>([]);
 
   it("does not restate the atoms it is built on", async () => {
     const bridges = (await loadBridges()).map((b) => ({

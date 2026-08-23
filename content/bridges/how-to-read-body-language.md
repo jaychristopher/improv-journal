@@ -11,7 +11,7 @@ entry_atoms: [active-listening, signal, audience-relationship, status, offers]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 # How to Read Body Language: What 60 Years of Improv Performance Reveals
@@ -62,19 +62,20 @@ The person with higher status tends to: take up more space, move less, hold eye 
 
 The third principle above — read the relationship between bodies rather than individual bodies — has a mechanism behind it, and improv named it. Keith Johnstone formalised `status` as relative social position expressed through behaviour rather than title, and it is by some distance the most legible thing a body communicates.
 
-Two clusters of signal, which this site records as observations consistent with Johnstone's framework rather than as a published list of his:
+**Four channels carry most of it**, and each one is read as a comparison between two people rather than as a fact about either.
 
-**Reads as high status:** sustained eye contact, stillness, economy of movement, slow speech, taking up space, comfortable silence, not reacting to provocation.
+- **Eye contact, and who breaks it first.** Not the quantity. The yield.
+- **Stillness against adjustment.** Economy of movement on one side, resettling and fidgeting on the other — and what you are reading is which of the two is doing more of it.
+- **Who fills the silence.** The most reliable single tell in ordinary conversation, and the one people are least aware of producing.
+- **Share of the available space.** Not posture in isolation. How much of the room, the table or the sofa each person has taken without negotiating it.
 
-**Reads as low status:** breaking eye contact, fidgeting, fast speech, qualifying statements, taking up less space, filling silence, over-reacting.
+`status` holds the full enumeration and where it comes from. For reading purposes the important thing is what is *not* on it: no gesture carries a fixed meaning. These are patterns of behaviour under social pressure, which is precisely why they survive the contextual objection that sinks the crossed-arms school.
 
-Note what is not on either list: no gesture has a fixed meaning. These are patterns of *behaviour under social pressure*, which is why they survive the contextual objection that sinks the crossed-arms school of body-language reading.
+**Why this is a relationship and not a trait.** Johnstone's actual finding is that status is complementary — a raise on one side produces pressure to lower on the other. The consequence for a reader is the useful part: you are never reading a person, you are reading a transaction, and the same body produces different signals depending who is opposite it.
 
-**The part that makes it a relationship.** Johnstone's actual insight is not that people signal status — it is that status is complementary. When one person raises, the other feels pressure to lower, and the reverse. Status lives between two people, not inside either one.
+Which is why a single body tells you so little. Somebody is not fidgeting because they are a fidgety person; they are fidgeting *at* someone. Watch the pair and the seesaw is visible — who yields the eye contact, who fills the gap, who adjusts when the other moves. Two people both playing high looks like competition. Both playing low produces a conversation in which nothing gets decided and everyone leaves vaguely dissatisfied.
 
-This is why reading a single body tells you so little. A person is not fidgeting because they are a fidgety person; they are fidgeting *at* someone. Watch the pair and you can see the seesaw: who yields the eye contact, who fills the silence, who adjusts when the other moves. Two people both playing high produces visible competition. Both playing low produces a conversation where nothing gets decided.
-
-**Your own default is part of what you are reading.** Most people have a habitual status they return to, and it shapes every interaction they are in. If you default low, people will read as higher-status to you than they are to others — not because they changed, but because the seesaw tilts around you. Knowing your own default is the correction factor on all your readings.
+**Your own default is part of the instrument.** Most people return to a habitual position, and it tilts every reading they take. Default low and others will read higher to you than they do to anyone else — not because they changed, but because the seesaw pivots around you. Knowing which way you lean is the correction factor on everything above.
 
 ## What to Actually Watch
 
