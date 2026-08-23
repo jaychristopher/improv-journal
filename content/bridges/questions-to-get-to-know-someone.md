@@ -1,20 +1,20 @@
 ---
-title: "Questions to Get to Know Someone: 140 That Start Small"
-description: "A stranger has no trust bank to draw on, so depth is not the goal — increments that go unpunished are. 140 questions, and why the boring ones work best."
+title: "159 Icebreaker Questions to Get to Know Someone"
+description: "The icebreaker questions that work are the unglamorous ones: everybody already has the answer, three words is a complete turn, and nobody is being scored."
 target_keywords:
   - {
       keyword: "questions to get to know someone",
       volume: 60000,
       difficulty: 13,
       traffic_potential: 69000,
-      parent: "icebreaker questions",
+      parent: "ice breaker questions",
     }
   - { keyword: "questions to ask to get to know someone", volume: 21000, difficulty: 9, parent: "questions to get to know someone", traffic_potential: 27000 }
   - { keyword: "ice breaker questions", volume: 51000, difficulty: 19, traffic_potential: 90000, parent: "ice breaker questions" }
   - { keyword: "icebreaker questions", volume: 24000, difficulty: 34, traffic_potential: 92000, parent: "ice breaker questions" }
   - { keyword: "questions to get to know someone better", volume: 1000, parent: "questions to get to know someone", difficulty: 15, traffic_potential: 101000 }
 serp_checked: "2026-08-22"
-serp_min_dr: 17
+serp_min_dr: 11
 serp_verdict: winnable
 entry_atoms: [trust, offers, obvious-choice, be-thankful, safety-in-the-room]
 entry_path: improv-for-life
@@ -27,13 +27,25 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Questions to Get to Know Someone: 140 That Start Small
+# 159 Icebreaker Questions to Get to Know Someone
 
-Almost every list of questions to get to know someone is a list of *deep* questions, on the theory that a better question produces a closer conversation. With somebody you have just met, that gets it exactly backwards.
+Almost every list of icebreaker questions — or of questions to get to know someone, which is the same list filed under a different name — is a list of *deep* questions, on the theory that a better question produces a closer conversation. With somebody you have just met, that gets it exactly backwards.
 
 `trust` on this site is an accumulated estimate — built from many small exchanges — of whether it is safe to be exposed around a particular person. With a stranger the estimate is at zero. You cannot draw on it, because there is nothing there. All you can do is make deposits, and a deposit is small by definition.
 
 So the goal in a first conversation is not depth. It is **a series of increments that go unpunished** — each one slightly more revealing than the last, each one met without judgement, each one nudging the estimate up. Do that six times and you are somewhere real. Open with "what is your greatest fear" and you are somewhere polite for the rest of the evening.
+
+## What Are Five Good Icebreaker Questions?
+
+If you want five and nothing else, these are the ones to take. None of them is clever, and that is the qualification rather than an apology — each can be answered in three words by somebody who does not want the floor, and at length by somebody who does.
+
+1. **Whereabouts did you grow up?** Everybody has the answer already, it costs nothing to give, and it almost always contains a second question.
+2. **What kept you busy today?** Present tense and low stakes. "Not much" is a complete and acceptable answer, which is exactly why people tend to say more than that.
+3. **What did you nearly do instead of this?** The only slightly unusual one. It works because the answer is a small decision rather than a fact about their identity.
+4. **How are you finding it so far?** Hands them the room to talk about instead of themselves, which is a much easier first thing to be asked.
+5. **What is the first thing you will do when you get home?** Ordinary, specific, and oddly revealing — people describe their actual life rather than a summary of it.
+
+The pattern is worth naming because it generalises: **the answer already exists, a short answer is allowed, and nothing is being scored.** Everything below is chosen on those three tests, and the section on what makes them fail is further down.
 
 ## Ask for a Story, Not a Fact
 
@@ -212,7 +224,7 @@ Different constraint: several people, short attention, nobody wants to be interv
 - What did everyone nearly wear instead?
 - Who here is the most and least organised, and how do you know?
 
-## Using These as Ice Breaker Questions
+## What Makes an Icebreaker Question Work
 
 Put any of these to a group rather than to one person and they become icebreaker questions, which is the word most people use for this and also a word that makes a lot of rooms flinch. The flinch is earned. It is worth being exact about what goes wrong, because it is not the questions.
 
@@ -228,6 +240,29 @@ What survives contact with a real group:
 - **Let people pass.** A round nobody can opt out of is not a warm-up, and one person visibly trapped costs more than any question gains.
 
 The reliable ones are unglamorous on purpose. Where somebody grew up, what they nearly studied, what they had for breakfast, how they know the host. They work because the answer already exists, it can be one line or five, and nobody is being scored.
+
+## Funny Icebreaker Questions
+
+This is the most requested kind and the most likely to go wrong, for a reason worth stating: **a funny icebreaker asks the room to be funny, and most people cannot do that on demand in front of strangers.** The ones that work are not the ones that demand a joke. They are the ones where ordinary life is already slightly ridiculous and all anybody has to do is report it accurately.
+
+So none of these asks anyone to invent a punchline. The comedy is in the answer they already have.
+
+- What item of clothing did you keep for far too long?
+- What food did you refuse to eat as a child?
+- What is the most useless object in your kitchen?
+- What did you want to be when you were six?
+- What is the worst film you have paid actual money for?
+- What song do you know every word of and wish you did not?
+- What is your most irrational fear about something completely harmless?
+- What were you banned from doing as a child?
+- What is a word you have been pronouncing wrong for years?
+- What is the least fashionable hobby you have?
+- What is the longest you have ever kept a plant alive?
+- What is the most boring fact you know?
+- What is the worst present you have had to look pleased about?
+- What is something you are weirdly territorial about?
+
+One caution. Save these for a group that has already spoken once. Opening cold with a funny question puts the first person on the spot with no example to follow, and whatever they do sets the bar for everybody after them — which is the audition problem described below, in its most avoidable form.
 
 ## Questions That Do Not Work on a Stranger
 
