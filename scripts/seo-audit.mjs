@@ -151,6 +151,7 @@ function scoreBridge(file) {
     serpVerdict: data.serp_verdict,
     serpMinDr: data.serp_min_dr,
     serpChecked: data.serp_checked,
+    serpTop10: Array.isArray(data.serp_top10_dr) ? data.serp_top10_dr : null,
     created: data.created ? String(data.created).slice(0, 10) : null,
     words: content.trim().split(/\s+/).length,
   };
@@ -316,6 +317,55 @@ if (bigAndOpen.length > 0) {
       `  ${r.id.padEnd(40)} TP ${String(r.trafficPotential ?? "—").padStart(6)}  KD ${String(r.difficulty).padStart(2)}  lowest DR in top 10: ${r.serpMinDr}  ${String(r.words).padStart(5)}w`,
     );
   }
+  console.log();
+}
+
+/**
+ * How much of a results page is actually reachable.
+ *
+ * The lowest DR in a top ten is one observation and it hides the shape. Both
+ * of these are recorded as winnable and they are not remotely the same bet:
+ *
+ *   how-to-overcome-fear-of-failure  min DR  1   [95 62 86 99 70 92 83 1]
+ *   viewpoints                       min DR  6   [85 97 45 80 96 86  6 40]
+ *
+ * The first has one reachable result, a lone outlier at position ten, with
+ * everything above it sixty-plus. The second has three. Ranked by minimum they
+ * look equivalent; ranked by how many results a low-authority site could
+ * plausibly displace, they are a page apart.
+ *
+ * Across the twenty-three pages with a profile the split is total: every
+ * authority page has zero results under DR 50, every winnable page has at
+ * least one. So this is not a second opinion on the verdict — it is the
+ * ordering *within* winnable, which the verdict alone cannot give.
+ */
+const REACHABLE_UNDER = 50;
+const reachableCount = (r) =>
+  r.serpTop10 ? r.serpTop10.filter((dr) => dr < REACHABLE_UNDER).length : null;
+
+const profiled = graded
+  .filter((r) => r.serpVerdict === "winnable" && r.serpTop10)
+  .map((r) => ({ ...r, open: reachableCount(r) }))
+  .sort((a, b) => b.open - a.open || reach(b) - reach(a));
+
+if (profiled.length > 0) {
+  console.log(`Winnable, ranked by how much of the page is reachable (${profiled.length}):`);
+  for (const r of profiled) {
+    console.log(
+      `  ${r.id.padEnd(42)} ${r.open} of ${String(r.serpTop10.length).padStart(2)} under DR ${REACHABLE_UNDER}` +
+        `   TP ${String(reach(r)).padStart(6)}   min DR ${String(r.serpMinDr).padStart(2)}`,
+    );
+  }
+  const thin = profiled.filter((r) => r.open <= 1);
+  if (thin.length > 0) {
+    console.log(
+      `  ${thin.length} of these rest on a single reachable result — treat the minimum with care: ` +
+        thin.map((r) => r.id).join(", "),
+    );
+  }
+  console.log(
+    `  ${graded.filter((r) => r.serpVerdict && !r.serpTop10).length} verdicts predate the profile and cannot be ranked this way.`,
+  );
   console.log();
 }
 
