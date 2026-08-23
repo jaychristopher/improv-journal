@@ -58,6 +58,8 @@ Off stage the same three registers decide whether an exchange survives. Someone 
 
 Jon Kabat-Zinn defines mindfulness as "awareness that arises through paying attention, on purpose, in the present moment, non-judgmentally." Improv presence shares three of these four qualities but diverges on reactivity. Meditation mindfulness observes without responding. Improv presence observes and responds — it is mindfulness with an output channel. Meditation trains the noticing muscle; improv applies it under load. Neuroscience confirms the overlap: Limb & Braun's fMRI study of jazz improvisation (2008) found that the brain's self-monitoring regions go quiet while self-expressive regions activate — the neurological signature of the censor releasing.
 
+The transfer runs in both directions. [Being present](/how-to-be-present) away from a stage is the same bandwidth problem, and it answers to the same somatic shortcuts rather than to instructions about mindset.
+
 ## Success condition
 
 the inner censor is quiet. Responses — whether immediate or deliberately held — emerge from contact with the moment rather than from rehearsal. The observable sign: the performer's attention is visibly on their partner, not behind their own eyes. When there is a gap, it is a listening gap, not a planning gap.

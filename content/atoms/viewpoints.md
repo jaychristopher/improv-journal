@@ -14,7 +14,7 @@ links:
   - { id: spontaneity, relation: enables }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 A movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture, architecture, spatial relationship and topography — so that staging arrives by noticing rather than by deciding.
@@ -66,3 +66,5 @@ The expansion from six to nine is the useful thing to understand about the diffe
 Improv training is overwhelmingly verbal. Scenes are taught as exchanges of ideas, and the body is treated as the thing that carries the head around. That produces performers who are quick and articulate and physically inert, and it is why so many improvised scenes take place with two people standing three feet apart facing front.
 
 Viewpoints attacks that directly, and it does so without asking anyone to be more expressive — an instruction that reliably produces the opposite. It asks where you are standing and how fast you crossed. `ensemble` awareness is usually taught as a disposition, something generous performers have. Viewpoints treats it as a trainable perceptual skill, which is a far more useful assumption.
+
+Each channel defined on its own, the vocal set alongside the nine physical ones, and the way a session is actually called are laid out in [the Viewpoints guide](/viewpoints).

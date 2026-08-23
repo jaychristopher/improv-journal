@@ -21,7 +21,7 @@ links:
   - { id: last-word-response, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-04-21"
+updated: "2026-08-23"
 ---
 
 Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language, emotional state, the implications of their choices, and crucially, what is left unsaid. Del Close and Charna Halpern: *"An improviser must consider what is said, and what is left unsaid, as well."* At its deepest, listening is not cognitive processing but felt contact — letting your partner's state land in your body, not just your brain.
@@ -33,3 +33,5 @@ The practice: let the reality your partner has built — not just their last lin
 Active listening is the prerequisite for genuine "Yes, And" — you cannot build on what you haven't truly received. But note: Johnstone frames this as *accepting offers* rather than "listening." You can hear every word and still block the offer. Listening without acceptance is not yet enough.
 
 In ensemble work, listening scales further — tracking not just your scene partner but the group pattern, the thematic echoes across scenes, who has been silent, where energy is collecting. This is the listening that makes longform work. Viola Spolin's term for this was "point of concentration" — not listening harder, but being in full-body relation with the space, the other players, and the moment.
+
+All of that describes the faculty; training it is a separate question. [Active listening exercises](/active-listening-exercises) are the drills that isolate reception, run without a scene to hide the work inside. The same skill under its ordinary name, and the ways it is usually taught wrong, is [active listening](/active-listening).

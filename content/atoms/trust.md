@@ -28,7 +28,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The foundation that makes every other principle safe to practice. Without trust, bravery is recklessness, honesty is exposure, changeability is surrender, and support is naivety.
@@ -50,6 +50,8 @@ Del Close and Charna Halpern in *Truth in Comedy*: *"They must trust that their 
 ## The connection to vulnerability
 
 Trust and vulnerability are a feedback loop. Trust enables vulnerability (you risk because you believe you'll be caught). Vulnerability deepens trust (your partner sees you take the risk and supports it). The loop stalls when either side stops investing.
+
+Building it on purpose is its own practice, and mostly not the one people expect. [Trust building exercises](/trust-building-exercises) that survive contact with a real group look nothing like a trust fall.
 
 ## Specific sources
 

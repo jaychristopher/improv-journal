@@ -21,7 +21,7 @@ links:
   - { id: ref-fey-bossypants, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the "and"). For the deeper principle underneath this phrase, see `be-positive`. For the embodied skill of receiving and extending offers, see `accepting-the-offer`. This atom owns the phrase itself — its meaning, its lineage, its limits, and its cultural life.
@@ -55,6 +55,8 @@ Mick Napier warns that "yes, and" as a *first instruction* can paralyze beginner
 ## Beyond improv
 
 The phrase has a life outside theater — in design thinking, conflict resolution, brainstorming, couples therapy. In each context, the core insight translates: build on what exists rather than replacing it. But the popular version often strips out the hardest parts: the vulnerability required to truly accept, the courage to build rather than redirect, and the trust that makes surrender possible.
+
+For the whole argument — where the phrase actually came from, what it has never meant, and the point at which it stops working in a meeting — see [the yes-and rule as improv actually uses it](/yes-and-improv).
 
 ## Historical note
 

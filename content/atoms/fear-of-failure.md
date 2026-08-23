@@ -21,7 +21,7 @@ links:
   - { id: ensemble, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The primary obstacle for every improv student — and the root cause of nearly every antipattern in the graph. Not lack of talent, creativity, or wit. Fear.
@@ -57,6 +57,8 @@ Spolin's foundational position: "I don't believe in success and failure." Her st
 ## Why improv works against fear specifically
 
 "It comes with teammates built in — you're never alone, and if your anxiety takes over, your scene partners will rescue you." The ensemble is the antidote. Safety in the room is the precondition. Trust is the mechanism. And each exercise, each scene, each show that goes okay despite the fear — that's the evidence that builds the muscle. You don't conquer fear. You build a relationship with it where you can act anyway.
+
+That reframe is most of [overcoming the fear of failure](/how-to-overcome-fear-of-failure): not the removal of the fear, but the removal of the belief that a wrong move is permanent.
 
 ## Specific sources
 
