@@ -69,6 +69,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "would-you-rather-questions",
       "questions-for-couples",
       "this-or-that-questions",
+      "most-likely-to-questions",
       "questions-to-get-to-know-someone",
       "conversation-starters",
       "funny-questions-to-ask",
