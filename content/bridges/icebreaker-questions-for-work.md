@@ -1,5 +1,5 @@
 ---
-title: "Icebreaker Questions for Work: 90 People Will Answer"
+title: "Icebreaker Questions for Work: 124 People Will Answer"
 description: "Work icebreakers fail for a structural reason, not a creative one — you are asking for disclosure in a room with a power gap. These are built for that."
 target_keywords:
   - {
@@ -26,7 +26,7 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Icebreaker Questions for Work: 90 People Will Answer
+# Icebreaker Questions for Work: 124 People Will Answer
 
 Work icebreakers fail more often than they land, and the usual explanation — that they were not fun enough — is wrong. They fail for a structural reason. You are asking a group of people to disclose something personal, in front of colleagues they will see again tomorrow, at least one of whom decides their pay.
 
@@ -74,6 +74,14 @@ The problem here is not awkwardness, it is boredom. These assume familiarity and
 - What is something we could do more of?
 - What is a small win from this week?
 - What is the thing you are most looking forward to finishing?
+- What part of your job would surprise the rest of us?
+- What is something you have got noticeably faster at?
+- What do you always end up being the one to do?
+- What is a tool or trick you would recommend to everyone here?
+- What was the last thing that made you shut your laptop and walk off?
+- What do you wish someone had told you in your first month here?
+- What is a small win from this week nobody heard about?
+- What is the most useful thing you have learned from somebody in this room?
 
 ## For a New Team or a First Meeting
 
@@ -99,6 +107,14 @@ Nobody knows anybody. Keep the answers short, concrete, and impossible to get wr
 - What is a question you would like to be asked?
 - What is one thing you would like this team to know about how you work?
 - What time of day are you actually at your best?
+- What conditions do you need to do your best work?
+- What time of day do you do your best thinking?
+- How do you prefer to be given bad news?
+- What is the quickest way to lose your attention in a meeting?
+- What did you do immediately before this job?
+- What is something you are hoping to learn here?
+- How do you like to be asked for help?
+- What would make this a good first month for you?
 
 ## For Remote and Video Calls
 
@@ -120,6 +136,12 @@ The constraint is different: no side conversations, awkward silences carry, and 
 - How many tabs, honestly?
 - What is the weather doing where you are?
 - Camera on or camera off, and why?
+- What is the best thing about where you are working from today?
+- What is within arm's reach that you use every day?
+- What is the noise situation like on your end?
+- What time is it for you, and is that good or bad?
+- What is your first move after this call ends?
+- What has working remotely made easier that nobody warned you about?
 
 ## For a Big Group or an All-Hands
 
@@ -139,6 +161,12 @@ Twenty people cannot each answer a question. These work as a show of hands, a po
 - Vote: mornings or evenings.
 - Hands up if you learned something new this week.
 - Type one thing you would like covered in this meeting.
+- Who here has been somewhere the rest of us have not?
+- What is one thing your part of the business does that others might not realise?
+- Who joined most recently, and what has surprised them so far?
+- What is a question somebody wants answered today?
+- Who here has done a job completely unrelated to this one?
+- What is one thing that has got easier around here this year?
 
 ## Quick Ones for the Top of a Meeting
 
@@ -164,6 +192,12 @@ Ninety seconds, going round in a fixed order so nobody is singled out, answers o
 - What are you deliberately not doing?
 - What is a decision you need from this group?
 - What is one thing you learned since the last one of these?
+- What is one word for your week so far?
+- What is the main thing on your list today?
+- What are you hoping to get out of the next half hour?
+- What has already gone right today?
+- What is one thing you want to hand off before Friday?
+- How much of your day is meetings, honestly?
 
 ## Icebreakers That Backfire
 
