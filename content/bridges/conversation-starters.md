@@ -1,13 +1,14 @@
 ---
-title: "Conversation Starters: 140 That Survive the Second Exchange"
-description: "A starter only buys you one exchange. What you do with the second decides the rest. 140 sorted by the room you are in, and why the clever ones die fastest."
+title: "Conversation Starters: 170 That Survive the Second Exchange"
+description: "A starter only buys you one exchange. What you do with the second decides the rest. 170 sorted by the room you are in, and why the clever ones die fastest."
 target_keywords:
   - { keyword: "conversation starters", volume: 51000, difficulty: 30, traffic_potential: 146000, parent: "conversation starters" }
   - { keyword: "conversation topics", volume: 7200, difficulty: 25, traffic_potential: 143000, parent: "conversation starters" }
   - { keyword: "funny conversation starters", volume: 2200, difficulty: 4, parent: "conversation starters", traffic_potential: 146000 }
   - { keyword: "what are good conversation starters", volume: 600, difficulty: 9, parent: "conversation starters", traffic_potential: 143000 }
-  - { keyword: "family conversation starters", volume: 600, difficulty: 1, parent: "conversation starters for kids", traffic_potential: 1000 }
-  - { keyword: "conversation starters for kids", volume: 1900, difficulty: 5, parent: "conversation starters for kids", traffic_potential: 1800 }
+  - { keyword: "good conversation starters", volume: 12000, difficulty: 26, traffic_potential: 146000, parent: "conversation starters" }
+  - { keyword: "small talk questions", volume: 3100, difficulty: 39, traffic_potential: 150000, parent: "conversation starters" }
+  - { keyword: "interesting conversation starters", volume: 1500, difficulty: 37, traffic_potential: 168000, parent: "conversation starters" }
 serp_checked: "2026-08-22"
 serp_min_dr: 28
 serp_verdict: winnable
@@ -22,13 +23,13 @@ created: "2026-08-22"
 updated: "2026-08-22"
 ---
 
-# Conversation Starters: 140 That Survive the Second Exchange
+# Conversation Starters: 170 That Survive the Second Exchange
 
 Most people looking for conversation starters have diagnosed the wrong problem. A conversation died, the opening was the last thing they remember choosing, so the opening gets the blame.
 
 Openings almost never kill conversations. **A starter buys you exactly one exchange** — they answer, and then you are both standing in the same silence you were in before, except now it is worse because you have used your material. What happens at exchange two is the entire game, and no list of openers will help with it.
 
-So: 100 starters below, sorted by the room you are in, because you did come here for those. And then the part that actually decides whether the conversation goes anywhere.
+So: 170 starters below, sorted by the room you are in, because you did come here for those. And then the part that actually decides whether the conversation goes anywhere.
 
 ## What Makes a Starter Work
 
@@ -40,7 +41,7 @@ Three things, and none of them is being interesting.
 
 **The obvious one is the good one.** `obvious-choice` says your first thought is connected to the situation and your second is connected to your ego. The opener you reach for when you stop trying to be memorable is almost always better, because the other person can tell the difference between a question and an audition.
 
-## The Ten That Work in Any Room
+## What Are the Top 10 Conversation Starters?
 
 Everything below this is sorted by the room you are in, which is the right way to use a list this long and no help at all if you are about to walk into one. So here are ten that do not care where you are — they work at a party, in a meeting, at a family table, or standing next to a stranger at a bus stop.
 
@@ -226,6 +227,43 @@ Shorter, concrete, and with an obvious way in. The dinner-table versions work be
 - If you ran the house for a day, what rule would go first?
 - What is the strangest thing you saw today?
 - What are you looking forward to tomorrow?
+
+## Small Talk Questions, and Why Trying to Skip Them Backfires
+
+Small talk has a bad name, and most advice about it is about how to get past it quickly. That misreads what it is for.
+
+Small talk is a handshake protocol. Its job is not to be interesting — it is to establish, cheaply and at no risk to either party, that an exchange is safe and that both people are willing. Nobody decides whether they like you based on the weather question. They decide based on whether the weather question was answered warmly, and that is the entire function.
+
+Which is why skipping it fails. Open with something substantial and you have asked for a level of exposure the other person has no basis to give yet, and the polite version of that is a short answer.
+
+**This is also the difference between a good starter and an interesting one.** People search for interesting conversation starters because they assume a duller question produces a duller conversation. It is the reverse: an interesting question is a performance request, and the other person can hear it. A good one is easy to answer, easy to answer briefly, and has somewhere to go — and it is the *going somewhere* that produces the interesting part, thirty seconds later, once nobody is auditioning.
+
+So these are deliberately ordinary. Their quality is in how little they cost.
+
+- How did you hear about this?
+- What were you expecting from today?
+- Have you come far today?
+- What is the parking like round here?
+- How long have you got?
+- Are you here for the whole thing?
+- What persuaded you to come along?
+- Is this near you, or is it a trek?
+- What have you got on after this?
+- How is the week treating you so far?
+- What is the coffee like here?
+- Is it always this busy?
+- What did you make of the last one?
+- Are you presenting, or just watching?
+- Have you eaten here before?
+- Did you find the place alright?
+- Are you local, or visiting?
+- What is the wifi like?
+- Have you got a plan for the weekend yet?
+- Is it still doing that outside?
+
+Each one is answerable in three words without rudeness, and each has an obvious second question sitting behind it. That is the whole specification.
+
+If small talk itself is the part you find difficult — the mechanics of it, rather than what to ask — that has [its own page](/how-to-make-small-talk), and it is mostly about receiving rather than supplying.
 
 ## Conversation Topics: Which Ones Behave Differently
 
