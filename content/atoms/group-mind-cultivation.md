@@ -1,6 +1,7 @@
 ---
 id: group-mind-cultivation
 title: "Group Mind Cultivation"
+how_to_play: "The group moves, counts or makes sound together with no leader and no discussion, restarting every time two people collide or hesitate."
 type: exercise
 status: draft
 tags: [exercises, ensemble, advanced, group-mind, presence]

@@ -1,6 +1,7 @@
 ---
 id: emotion-switch
 title: "Emotion Switch"
+how_to_play: "Play an ordinary scene. A caller names a new emotion at intervals, and both players shift to it completely and immediately while the story keeps going."
 type: exercise
 status: draft
 tags: [exercises, intermediate, adaptability, emotion, principles]

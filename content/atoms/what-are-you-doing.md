@@ -1,6 +1,7 @@
 ---
 id: what-are-you-doing
 title: "What Are You Doing?"
+how_to_play: "In a circle, one player mimes an action. The next asks \"What are you doing?\", and the answer must name a different action, which the asker then has to perform."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, physicality, presence, warm-up]

@@ -1,6 +1,7 @@
 ---
 id: directed-scene
 title: "Directed Scene"
+how_to_play: "Two players run a scene while a side-coach calls adjustments from offstage. The players fold each note in without stopping or acknowledging it."
 type: exercise
 status: draft
 tags: [exercises, advanced, adaptability, side-coaching, pedagogy]

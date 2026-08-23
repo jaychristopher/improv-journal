@@ -1,6 +1,7 @@
 ---
 id: zip-zap-zop
 title: "Zip Zap Zop"
+how_to_play: "Stand in a circle and pass a clap with the words zip, zap and zop in strict order, with sharp eye contact and no hesitation."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, presence, ensemble, warm-up]

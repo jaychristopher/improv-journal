@@ -1,6 +1,7 @@
 ---
 id: fracture-repair-drill
 title: "Fracture Repair Drill"
+how_to_play: "Play a scene, then have one player deliberately contradict something already established. The pair must rebuild a shared reality without stopping or discussing it."
 type: exercise
 status: draft
 tags: [exercises, intermediate, recovery, collapse-modes, coherence]

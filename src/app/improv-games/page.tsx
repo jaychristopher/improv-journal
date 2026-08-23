@@ -51,6 +51,7 @@ export default async function ImprovGamesPage() {
     title: game.title,
     href: game.href,
     tags: game.tags,
+    rules: game.howToPlay,
     preview: game.description,
   }));
 

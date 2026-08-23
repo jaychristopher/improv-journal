@@ -52,6 +52,36 @@ describe("improv games collection", () => {
     }
   });
 
+  /**
+   * A game listed without its rules is a link, not a game.
+   *
+   * "improv games" is the site's most winnable term — 3,100 a month at
+   * difficulty 1, with a DR 8 page holding position six on no backlinks — and
+   * the hub was answering a different question than the one being asked. Every
+   * entry described what the game *trains*, because that is how the atoms open,
+   * and none of them said how to play. The pages that win the term all put the
+   * rules in the list.
+   *
+   * So rules are required, and required to be usable: long enough to contain a
+   * setup and a constraint, short enough to stay a summary rather than a second
+   * copy of the atom's own mechanics section.
+   */
+  it("tells the reader how to play every game", async () => {
+    const games = await loadImprovGames();
+    expect(games.length).toBeGreaterThan(25);
+
+    const missing = games.filter((g) => !g.howToPlay?.trim()).map((g) => g.id);
+    expect(missing).toEqual([]);
+
+    const wrongLength = games
+      .filter((g) => {
+        const n = g.howToPlay!.trim().length;
+        return n < 60 || n > 320;
+      })
+      .map((g) => `${g.id} (${g.howToPlay!.trim().length})`);
+    expect(wrongLength).toEqual([]);
+  });
+
   it("resolves every game to its canonical url", async () => {
     for (const game of await loadImprovGames()) {
       const prefix = game.kind === "exercise" ? "/practice/exercises/" : "/practice/formats/";

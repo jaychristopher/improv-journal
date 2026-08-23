@@ -1,6 +1,7 @@
 ---
 id: questions-only
 title: "Questions Only"
+how_to_play: "Two players hold a scene in which every line must be a question. Anyone who makes a statement is out and is replaced."
 type: exercise
 status: draft
 tags: [exercises, beginner, courage, presence, warm-up]

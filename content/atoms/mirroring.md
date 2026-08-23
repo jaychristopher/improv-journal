@@ -1,6 +1,7 @@
 ---
 id: mirroring
 title: "Mirroring"
+how_to_play: "Two players face each other and move in unison with no agreed leader, slowly enough that an observer cannot tell who is initiating."
 type: exercise
 status: draft
 tags: [exercises, fundamentals, presence, ensemble, spolin]

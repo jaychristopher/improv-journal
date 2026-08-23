@@ -9,6 +9,12 @@ interface FilterableItem {
   href: string;
   tags: string[];
   preview?: string;
+  /**
+   * Rendered above the preview, unclamped. The games hub needs the rules
+   * readable in the list itself — a searcher looking for improv games wants
+   * something they can run, not thirty links to click through.
+   */
+  rules?: string;
 }
 
 interface FilterGroup {
@@ -95,8 +101,9 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
                 {item.title}
               </Link>
             </h3>
+            {item.rules && <p className="text-foreground/70 mt-2 text-sm">{item.rules}</p>}
             {showPreview && item.preview && (
-              <p className="text-foreground/40 mt-1 line-clamp-2 text-xs">{item.preview}</p>
+              <p className="text-foreground/40 mt-2 line-clamp-2 text-xs">{item.preview}</p>
             )}
           </div>
         ))}

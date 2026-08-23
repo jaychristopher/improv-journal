@@ -1,6 +1,7 @@
 ---
 id: scenes-from-a-hat
 title: "Scenes from a Hat"
+how_to_play: "Audience suggestions are written on slips, drawn at random, and played as rapid scenes of ten to thirty seconds, cut the moment they land."
 type: format
 status: draft
 tags: [formats, shortform, audience-interaction, speed]

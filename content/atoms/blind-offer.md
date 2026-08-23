@@ -1,6 +1,7 @@
 ---
 id: blind-offer
 title: "Blind Offer"
+how_to_play: "One player walks on making a physical gesture that means nothing in particular. Their partner must instantly name what it is and start a scene that justifies it."
 type: exercise
 status: draft
 tags: [exercises, beginner, support, justification, principles]

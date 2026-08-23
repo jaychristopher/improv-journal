@@ -1,6 +1,7 @@
 ---
 id: one-word-scene
 title: "One-Word Scene"
+how_to_play: "Two players perform a scene speaking one word each, strictly alternating, so that neither of them controls a sentence."
 type: exercise
 status: draft
 tags: [exercises, beginner, simplicity, bandwidth, principles]

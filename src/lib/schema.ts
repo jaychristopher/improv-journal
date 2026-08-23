@@ -103,6 +103,13 @@ export interface AtomFrontmatter {
   sources: string[]; // IDs of sources this atom was extracted from
   external_links?: ExternalLink[];
   work?: CitedWork; // only on `reference` atoms
+  /**
+   * One sentence of actual rules, on games only — setup and the constraint.
+   * Separate from the atom's body, which explains what the game trains. The
+   * games hub was listing thirty entries by what each develops and never how
+   * any of them is played.
+   */
+  how_to_play?: string;
   created: string; // ISO date
   updated: string; // ISO date
 }

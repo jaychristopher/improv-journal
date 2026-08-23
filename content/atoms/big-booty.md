@@ -1,6 +1,7 @@
 ---
 id: big-booty
 title: "Big Booty"
+how_to_play: "Stand in a circle and number off, with one player as Big Booty. Keep a clap-and-slap rhythm going; on your beat call your own number then someone else's. Fumble or miss the beat and you go to the end of the line, and everyone renumbers."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, presence, ensemble, warm-up]

@@ -1,6 +1,7 @@
 ---
 id: status-transfer
 title: "Status Transfer"
+how_to_play: "Play a scene in which the two characters have to swap high and low status by the end, without ever naming that it is happening."
 type: exercise
 status: draft
 tags: [exercises, intermediate, status, dynamics, johnstone]

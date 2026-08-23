@@ -1,6 +1,7 @@
 ---
 id: no-backspace-scene
 title: "No Backspace Scene"
+how_to_play: "Play a scene in which nothing can be taken back, softened or corrected. Every line stands exactly as it was said."
 type: exercise
 status: draft
 tags: [exercises, intermediate, laws, irreversibility, path-dependence]

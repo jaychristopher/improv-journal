@@ -1,6 +1,7 @@
 ---
 id: yes-and-chain
 title: "Yes, And Chain"
+how_to_play: "Players build a plan or a story in turn, each reply starting literally with \"Yes, and\" and adding exactly one new thing."
 type: exercise
 status: draft
 tags: [exercises, fundamentals, principles]

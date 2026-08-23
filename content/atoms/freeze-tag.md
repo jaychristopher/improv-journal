@@ -1,6 +1,7 @@
 ---
 id: freeze-tag
 title: "Freeze Tag"
+how_to_play: "Two players start a scene. Anyone on the side can call \"Freeze\", tap one player out, take over their exact physical position, and begin a completely new scene justified by that shape."
 type: format
 status: draft
 tags: [formats, shortform, warm-up, physicality]

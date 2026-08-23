@@ -1,6 +1,7 @@
 ---
 id: gift-giving
 title: "Gift Giving"
+how_to_play: "One player mimes handing over an unnamed object. The receiver names it, reacts as though it is exactly what they wanted, and the pair builds the scene from whatever that turns out to be."
 type: exercise
 status: draft
 tags: [exercises, beginner, gratitude, reframing, principles]

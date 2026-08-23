@@ -1,6 +1,7 @@
 ---
 id: emotional-honesty-scene
 title: "Emotional Honesty Scene"
+how_to_play: "Two players hold a scene in which every line has to say what the character actually feels. No deflecting, no joking it away."
 type: exercise
 status: draft
 tags: [exercises, intermediate, authenticity, vulnerability, principles]

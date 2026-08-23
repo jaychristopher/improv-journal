@@ -1,6 +1,7 @@
 ---
 id: the-machine
 title: "The Machine"
+how_to_play: "One player begins a repeating movement and sound. The others join one at a time, each connecting to something already running, until the group is a single machine."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, physicality, ensemble, warm-up]

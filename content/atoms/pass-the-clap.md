@@ -1,6 +1,7 @@
 ---
 id: pass-the-clap
 title: "Pass the Clap"
+how_to_play: "Stand in a circle and pass a clap round by making eye contact and clapping at exactly the same instant as the person receiving it."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, presence, ensemble, warm-up]

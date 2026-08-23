@@ -1,6 +1,7 @@
 ---
 id: micetro
 title: "Micetro"
+how_to_play: "A host assigns short scenes to a large cast in changing combinations. The audience scores each round and the lowest-scoring players are eliminated until one is left."
 type: format
 status: draft
 tags: [formats, shortform, competition, elimination]

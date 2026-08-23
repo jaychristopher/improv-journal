@@ -1,6 +1,7 @@
 ---
 id: space-work-scene
 title: "Silent Space Work Scene"
+how_to_play: "Two players build and use a detailed shared physical environment in a scene with no dialogue at all."
 type: exercise
 status: draft
 tags: [exercises, beginner, space-work, environment, physicality]

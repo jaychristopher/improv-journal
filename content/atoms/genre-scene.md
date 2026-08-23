@@ -1,6 +1,7 @@
 ---
 id: genre-scene
 title: "Genre Scene"
+how_to_play: "Play a scene in an assigned genre — noir, horror, nature documentary — committing to its conventions sincerely rather than sending them up."
 type: exercise
 status: draft
 tags: [exercises, advanced, genre, commitment, specificity]

@@ -1,6 +1,7 @@
 ---
 id: one-word-story
 title: "One-Word Story"
+how_to_play: "A circle tells a single story one word per person, going round without pausing to plan or steer it."
 type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, ensemble, presence, warm-up]

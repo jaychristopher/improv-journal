@@ -1,6 +1,7 @@
 ---
 id: gorilla-theatre
 title: "Gorilla Theatre"
+how_to_play: "Each performer takes a turn pitching a scene to the audience and then directing the others in it. The audience rewards the directors whose scenes work."
 type: format
 status: draft
 tags: [formats, shortform, competition, directing]

@@ -1,6 +1,7 @@
 ---
 id: theatresports
 title: "Theatresports"
+how_to_play: "Two teams play short improvised challenges head to head, scored by judges or by the audience."
 type: format
 status: draft
 tags: [formats, shortform, competition, audience-interaction]

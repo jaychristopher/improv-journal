@@ -1,6 +1,7 @@
 ---
 id: organic-opening-exercise
 title: "Organic Opening"
+how_to_play: "Take one suggestion and let the group free-associate aloud and physically for several minutes without starting any scene, pulling out themes rather than plots."
 type: exercise
 status: draft
 tags: [exercises, advanced, ensemble, harold, free-association]

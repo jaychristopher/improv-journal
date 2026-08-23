@@ -1,6 +1,7 @@
 ---
 id: musical-improv
 title: "Musical Improv"
+how_to_play: "Scenes played with live accompaniment, in which players invent lyrics and melody on the spot and the musician follows rather than leads."
 type: format
 status: draft
 tags: [formats, shortform, longform, music, high-skill]

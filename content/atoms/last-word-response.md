@@ -1,6 +1,7 @@
 ---
 id: last-word-response
 title: "Last Word Response"
+how_to_play: "Two players hold a conversation in which every reply has to begin with the final word of what the other person just said."
 type: exercise
 status: draft
 tags: [exercises, beginner, presence, listening, principles]
