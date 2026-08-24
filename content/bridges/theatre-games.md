@@ -145,6 +145,8 @@ Usually later in a group's development, and worth not rushing.
 
 ## Drama Games for Kids and Classrooms
 
+The age-by-age version of this, including what changes when the room is thirty children who did not volunteer, is set out in [improv games for kids](/improv-games-for-kids).
+
 Theatre games work with children for the same reason they worked for Spolin's original students: they ask for participation rather than performance, and they do not require anyone to be clever or verbally fluent. That origin is not incidental — she developed the method in Chicago partly for children and for immigrants learning English.
 
 **Start with the non-verbal ones.** `mirroring`, `space-work-scene` and `group-mind-cultivation` need no dialogue at all, which removes the two things that make children self-conscious: being heard and being judged on what they said.

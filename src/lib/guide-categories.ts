@@ -157,6 +157,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "improv-theory",
       "framing-effect",
       "theatre-games",
+      "improv-games-for-kids",
       "improv-prompts",
       "viewpoints",
       "del-close",
