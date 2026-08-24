@@ -18,9 +18,10 @@ links:
   - { id: support-moves, relation: requires }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-tj-dave-speed-of-life, relation: contrasts }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 How a full improv show builds — not a set of scenes but a shaped experience with a beginning, middle, and end. Napier: "A great improv show isn't one where every scene is great. It's one where every scene serves the whole."

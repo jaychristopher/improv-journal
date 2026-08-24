@@ -22,6 +22,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-napier-behind-the-scenes, relation: illustrates }
   - { id: ref-overlie-standing-in-space, relation: illustrates }
+  - { id: ref-viewpoints-bogart-landau, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-24"

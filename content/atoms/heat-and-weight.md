@@ -15,9 +15,10 @@ links:
   - { id: rest-beat, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Managing the two poles of energy in an improv show. **Heat** is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity. **Weight** is low energy — stillness, quiet, emotional honesty, vulnerability, gravity. The art is in the alternation.

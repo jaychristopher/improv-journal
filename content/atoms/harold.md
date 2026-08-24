@@ -32,9 +32,10 @@ links:
   - { id: ref-hines-substack, relation: extends }
   - { id: monoscene, relation: contrasts }
   - { id: ref-halpern-art-by-committee, relation: illustrates }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the 1980s at iO Chicago, further refined by the Upright Citizens Brigade. Described in *Truth in Comedy* (1994) as "a collage of scenes inspired by a single suggestion which are interwoven and connected."

@@ -16,9 +16,10 @@ links:
   - { id: ref-attention-and-effort-kahneman, relation: extends }
   - { id: ref-cowan-magical-number-four, relation: illustrates }
   - { id: ref-sweller-cognitive-load, relation: illustrates }
+  - { id: ref-wickens-multiple-resources, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Attention is limited. Action consumes capacity. Simultaneous optimization is impossible.

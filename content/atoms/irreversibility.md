@@ -15,9 +15,10 @@ links:
   - { id: callback, relation: extends }
   - { id: blocking, relation: contrasts }
   - { id: no-backspace-scene, relation: illustrates }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Time advances irreversibly. Once a signal is sent, it becomes part of the shared history. You cannot edit, undo, or retract.

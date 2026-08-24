@@ -14,9 +14,10 @@ links:
   - { id: heightening, relation: illustrates }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Trains:** Specificity, commitment, shared vocabulary, narrative heightening through convention. Not parody — authentic engagement with genre as a vehicle for developing advanced performance skills.

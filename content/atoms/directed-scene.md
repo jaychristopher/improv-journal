@@ -15,9 +15,11 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Trains:** Adaptability under constraint, external awareness, ego dissolution, rapid integration of abstract direction into specific behavior. Performers do a scene while receiving real-time direction from a side-coach.

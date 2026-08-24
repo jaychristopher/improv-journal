@@ -13,9 +13,10 @@ links:
   - { id: trust, relation: illustrates }
   - { id: coherence, relation: illustrates }
   - { id: fracture-recovery, relation: extends }
+  - { id: ref-truth-in-comedy, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The shadow of **Be Positive**. Negation is specifically the **contradiction of established reality** — denying what your partner has written to the shared state. It is one species of blocking (the umbrella genus), distinguished from other species (steering, bulldozing, hesitation) by its mechanism: direct reality-reversal.

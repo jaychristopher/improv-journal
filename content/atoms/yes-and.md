@@ -19,9 +19,10 @@ links:
   - { id: irreversibility, relation: requires }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-fey-bossypants, relation: extends }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The most widely known shorthand in improvisation. "Yes, And" means accepting what your scene partner has established (the "yes") and building upon it (the "and"). For the deeper principle underneath this phrase, see `be-positive`. For the embodied skill of receiving and extending offers, see `accepting-the-offer`. This atom owns the phrase itself — its meaning, its lineage, its limits, and its cultural life.

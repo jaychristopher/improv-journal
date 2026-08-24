@@ -22,9 +22,10 @@ links:
   - { id: character, relation: extends }
   - { id: ref-tj-dave-speed-of-life, relation: extends }
   - { id: ref-hines-substack, relation: contrasts }
+  - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The connection between characters in a scene — who they are to each other, what they feel about each other, and what they want from each other. Relationship is the imported reality the audience recognizes instantly — the one thing on stage that isn't invented. Everything else is fiction; the connection between two people is real enough that audiences project their own experience onto it before anyone speaks.

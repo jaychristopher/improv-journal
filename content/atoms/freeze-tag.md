@@ -18,9 +18,11 @@ links:
   - { id: theatresports, relation: extends }
   - { id: harold, relation: contrasts }
   - { id: scenes-from-a-hat, relation: extends }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-09"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 The most universal shortform improv game. Two performers begin a scene. At any point, someone on the sideline calls "Freeze!" Both performers stop in their exact physical positions. The caller taps one out, assumes their physical position, and initiates a completely new scene justified by that position. The new scene has nothing to do with the previous one — the only bridge is the body.

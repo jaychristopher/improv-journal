@@ -13,9 +13,10 @@ links:
   - { id: pattern-break, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-hines-substack, relation: extends }
+  - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 How a game transforms within a scene — not just repeating at higher intensity, but changing in kind. Four modes of evolution.

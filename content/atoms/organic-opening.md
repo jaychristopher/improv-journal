@@ -16,9 +16,10 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 A group free-association exercise that generates raw thematic material for a Harold or other longform show. Takes a single audience suggestion and expands it into a web of associations, images, themes, and ideas the ensemble mines throughout the show.

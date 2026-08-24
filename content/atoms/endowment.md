@@ -17,9 +17,10 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-impro-storytellers-johnstone, relation: extends }
   - { id: party-quirks, relation: illustrates }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Giving your scene partner qualities, attributes, or history through your behavior toward them — rather than through direct statement about yourself. A concept formalized by Keith Johnstone in *Impro*. Endowment is one of the purest expressions of "make your partner look good."

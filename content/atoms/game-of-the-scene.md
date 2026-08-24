@@ -29,9 +29,10 @@ links:
   - { id: mapping, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: tilt, relation: contrasts }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.

@@ -17,6 +17,7 @@ links:
   - { id: signal, relation: extends }
   - { id: coherence, relation: illustrates }
   - { id: ref-goffman-frame-analysis, relation: illustrates }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-05-14"
 updated: "2026-08-24"

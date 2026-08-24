@@ -14,9 +14,10 @@ links:
   - { id: harold, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Trains:** Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence. The Harold opening practiced as a standalone exercise, removed from performance context.

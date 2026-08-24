@@ -19,6 +19,7 @@ links:
   - { id: callback, relation: extends }
   - { id: harold, relation: contrasts }
   - { id: ref-ucb-manual, relation: extends }
+  - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-24"

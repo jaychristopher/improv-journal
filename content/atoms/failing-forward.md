@@ -16,9 +16,10 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-tj-dave-speed-of-life, relation: extends }
+  - { id: ref-carrane-improv-nerd, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 The skill of metabolizing on-stage failure — a dropped scene, a missed connection, a joke that dies — and converting it into material, energy, or deeper truth in real time. Not avoiding failure but mastering its aftermath.

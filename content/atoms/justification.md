@@ -18,9 +18,10 @@ links:
   - { id: callback, relation: extends }
   - { id: framing-as-angle-of-approach, relation: extends }
   - { id: ref-truth-in-comedy, relation: illustrates }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.

@@ -15,6 +15,8 @@ links:
   - { id: be-changeable, relation: extends }
   - { id: discovery, relation: enables }
   - { id: ref-stanislavski-actor-prepares, relation: illustrates }
+  - { id: ref-impro-storytellers-johnstone, relation: illustrates }
+  - { id: ref-meisner-on-acting, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-24"

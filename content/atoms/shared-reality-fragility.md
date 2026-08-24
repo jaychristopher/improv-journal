@@ -18,6 +18,8 @@ links:
   - { id: audience, relation: extends }
   - { id: belief-as-architecture, relation: enables }
   - { id: ref-sawyer-improvised-dialogues, relation: illustrates }
+  - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
+  - { id: ref-truth-in-comedy, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
 updated: "2026-08-24"
