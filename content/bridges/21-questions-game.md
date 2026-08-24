@@ -17,7 +17,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # 21 Questions Game: How to Play, and 181 to Ask
@@ -282,6 +282,48 @@ Less about biography, more about the machinery. Good for the middle of a round, 
 **Digging into every answer.** Following up on all twenty-one turns an hour into four and exhausts everybody. Note them, come back after.
 
 **Using it to ask one thing.** If you have arranged this to slip in a single question you actually wanted to ask, that is visible, and everything before it reads as a run-up.
+
+## Questions People Ask About 21 Questions
+
+### What is the 21 questions game?
+
+Two people agree to ask each other twenty-one questions, taking turns, and to answer all of them. That is the whole game — no scoring, no winning, no props.
+
+What makes it a game rather than just a conversation is the count. Agreeing to twenty-one in advance is a commitment made before anybody knows what will be asked, and it is that commitment, not the questions, that gets the exchange somewhere an ordinary conversation would not have reached. The section above sets out why.
+
+### What is the difference between 21 Questions and 20 Questions?
+
+They are unrelated games that got adjacent names, and people arrive here having conflated them constantly.
+
+**20 Questions is a guessing game.** One person thinks of an object, person or place; the other gets twenty yes-or-no questions to identify it. The skill is narrowing a search space efficiently — "is it man-made?" before "is it a kettle?" — and it reveals nothing about either player. It works with children, in a car, with strangers.
+
+**21 Questions is a disclosure game.** The questions are open, both people answer, and nothing is being guessed. The skill is answering honestly under a count you already agreed to.
+
+So the only thing they share is a number in the title. If you came here wanting the guessing game, this page is not it. If you were not sure which you meant, the test is whether you want to find out something about a *thing* or about a *person*.
+
+### Do you have to answer every question?
+
+Yes, and the rule is the reason it works — but agree on a single pass before you start.
+
+Both halves of that matter. A game where any question can be waved away collapses to a normal conversation with numbering, because the moment one gets uncomfortable it gets skipped, and the uncomfortable ones are the whole point. But a game with no exit at all is coercive, and somebody who feels trapped will give technically-true answers that disclose nothing, which is worse than a pass.
+
+One pass each, used or not, solves it. It makes declining cheap and visible, which means nobody has to weigh whether they are allowed to — and in practice most people finish the game without using theirs. `safety-in-the-room` is built by making the exit easy, not by removing it.
+
+### Can you play 21 questions over text?
+
+It works, and it becomes a different and slower game.
+
+The advantages are real: people are more forthcoming in writing, there is time to answer properly rather than reaching for the first available thing, and the awkwardness of a pause disappears. The count also survives the medium perfectly, which most conversation games do not.
+
+What is lost is everything the count was protecting. Spread over two days, twenty-one questions is just messaging with a rule attached — the commitment stops binding, because the polite exit the number was designed to remove is available again every time somebody puts their phone down. If you play it by text, play it in one sitting.
+
+### How long does the game take?
+
+Forty minutes to an hour and a half, and the variance is not about how fast people talk.
+
+Twenty-one questions answered briskly is about twenty-five minutes. What extends it is the follow-ups, and the follow-ups are where the game does its work — the first answer is usually the version somebody has told before, and the one behind it needs a "what was the worst part of that?" to reach. A game that finished in twenty minutes was played as a survey.
+
+Budget an hour, and count the questions rather than the time. Stopping at question fourteen because the hour is up undoes the commitment that made the whole thing work.
 
 ## The Part You Can Practise
 
