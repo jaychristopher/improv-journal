@@ -13,7 +13,7 @@ entry_atoms: [safety-in-the-room, trust, ensemble, be-supportive, vulnerability]
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # Emotional Safety: What It Is and How It Gets Built
@@ -44,7 +44,7 @@ Anyone reading about this at work runs into both terms, usually without being to
 
 Google's Project Aristotle is usually what put the phrase in front of people at work: hundreds of teams studied, and the strongest predictor of performance was not talent or experience but psychological safety. That finding is real, and it is about the narrower of the two ideas.
 
-**Psychological safety** is the narrower and more precisely defined of the two. Amy Edmondson's formulation is a shared belief held by members of a team that the team is safe for interpersonal risk taking — and the risk she means is largely the risk of *speaking up*. Asking the obvious question, admitting the mistake, disagreeing with the senior person. It is a team-level construct, it is measurable, and it is about voice.
+**Psychological safety** is the narrower and more precisely defined of the two. Amy Edmondson (1999) formulated it as a shared belief held by members of a team that the team is safe for interpersonal risk taking — and the risk she means is largely the risk of *speaking up*. Asking the obvious question, admitting the mistake, disagreeing with the senior person. It is a team-level construct, it is measurable, and it is about voice.
 
 **Emotional safety** is wider. It covers whether feeling itself can be present in the room — whether you can be visibly frustrated, uncertain or affected without it being filed away and used later. A team can have reasonable psychological safety and poor emotional safety: people say the difficult thing, but they say it in a flattened register, and anything that reads as feeling gets treated as unprofessional.
 

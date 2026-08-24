@@ -20,14 +20,14 @@ links:
   - { id: mirroring, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life mode to performance mode.
 
 ## Neurological purpose: lowering the self-monitor
 
-Limb & Braun's fMRI research (2008) showed that during improvisation, the dorsolateral prefrontal cortex (self-monitoring, planning, evaluation) shows *reduced* activity while the medial prefrontal cortex (self-expression, internally motivated behavior) shows *increased* activity. Warm-ups accelerate this shift. Without them, performers spend the first 10-15 minutes of a show still in their "daily life brain" — monitoring, judging, planning.
+Limb & Braun (2008) showed, in fMRI research, that during improvisation, the dorsolateral prefrontal cortex (self-monitoring, planning, evaluation) shows *reduced* activity while the medial prefrontal cortex (self-expression, internally motivated behavior) shows *increased* activity. Warm-ups accelerate this shift. Without them, performers spend the first 10-15 minutes of a show still in their "daily life brain" — monitoring, judging, planning.
 
 ## Ensemble purpose: building shared energy
 

@@ -19,7 +19,7 @@ links:
   - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Creating the conditions under which vulnerability, risk, and honest play become possible. Without safety, bravery is recklessness, honesty is exposure, and changeability is surrender. Safety is the container that makes every principle safe to practice.
@@ -55,4 +55,4 @@ Safety is not a one-time conversation. It's a continuous practice — maintained
 
 ## Specific sources
 
-Edmondson, "Psychological Safety and Learning Behavior in Work Teams" (*Administrative Science Quarterly*, 1999) and *The Fearless Organization* (2018) — the academic gold standard. Stiles, *Improvise Freely* (2021) — the strongest published improv-specific source on consent and safety. Arao & Clemens, "From Safe Spaces to Brave Spaces" (2013) — the theoretical framework for the safe/brave distinction. **Counter-position:** The "brave spaces" argument: genuine growth requires discomfort, and promising safety is dishonest. Some Chicago-scene teachers push back on "safety culture" as infantilizing adult performers. The tension is unresolved: too safe = no risk = no growth; too brave = no container = harm. **Attribution note:** Terje Brevik's "3 safety rules" circulate in European improv pedagogy but lack a definitive published source.
+Edmondson (1999), "Psychological Safety and Learning Behavior in Work Teams," *Administrative Science Quarterly* and *The Fearless Organization* (2018) — the academic gold standard. Stiles, *Improvise Freely* (2021) — the strongest published improv-specific source on consent and safety. Arao & Clemens, "From Safe Spaces to Brave Spaces" (2013) — the theoretical framework for the safe/brave distinction. **Counter-position:** The "brave spaces" argument: genuine growth requires discomfort, and promising safety is dishonest. Some Chicago-scene teachers push back on "safety culture" as infantilizing adult performers. The tension is unresolved: too safe = no risk = no growth; too brave = no container = harm. **Attribution note:** Terje Brevik's "3 safety rules" circulate in European improv pedagogy but lack a definitive published source.

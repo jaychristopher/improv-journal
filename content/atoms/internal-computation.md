@@ -21,7 +21,7 @@ links:
   - { id: ref-limb-braun-jazz-improvisation, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The shadow of **Be Present**. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues without you.
@@ -58,4 +58,4 @@ The fix is physical, not cognitive. You can't think your way out of thinking.
 
 ## Specific sources
 
-Limb & Braun, "Neural Substrates of Spontaneous Musical Performance," *PLoS ONE* 3(2), e1679 (2008) — improvisation shows "extensive deactivation of dorsolateral prefrontal and lateral orbital regions with focal activation of the medial prefrontal cortex." The neural signature of getting out of your head. Spolin, *Improvisation for the Theater*, Ch. 1 — the Approval/Disapproval Syndrome as "the basic obstacle to a true relation with ourselves, our environment, and each other." **Counter-position:** Some internal processing IS necessary. UCB's game recognition requires real-time pattern analysis. Experienced improvisers have internalized patterns so deeply that recognition feels intuitive rather than computational. The pathology is recursive self-monitoring — thinking about thinking — not cognition itself. Csikszentmihalyi's flow research: flow eliminates self-consciousness, not consciousness.
+Limb & Braun (2008), "Neural Substrates of Spontaneous Musical Performance," *PLoS ONE* 3(2), e1679 — improvisation shows "extensive deactivation of dorsolateral prefrontal and lateral orbital regions with focal activation of the medial prefrontal cortex." The neural signature of getting out of your head. Spolin, *Improvisation for the Theater*, Ch. 1 — the Approval/Disapproval Syndrome as "the basic obstacle to a true relation with ourselves, our environment, and each other." **Counter-position:** Some internal processing IS necessary. UCB's game recognition requires real-time pattern analysis. Experienced improvisers have internalized patterns so deeply that recognition feels intuitive rather than computational. The pathology is recursive self-monitoring — thinking about thinking — not cognition itself. Csikszentmihalyi's flow research: flow eliminates self-consciousness, not consciousness.
