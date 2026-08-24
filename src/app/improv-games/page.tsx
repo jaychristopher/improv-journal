@@ -348,6 +348,107 @@ export default async function ImprovGamesPage() {
         </p>
       </section>
 
+      {/*
+        The hub carries the site's largest improv-specific term and had no
+        question-shaped heading on it. Three of these also answer intents the
+        content plan had down as separate pages — warm-up games, two-person
+        games, and the age question — which are better served from the page
+        that already ranks than by three thin pages competing with it.
+      */}
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Questions People Ask About Improv Games</h2>
+
+        <h3 className="mt-6 mb-2 font-semibold">What are improv games?</h3>
+        <p className="text-foreground/70 mb-4">
+          Structured activities with an explicit rule, played without a script, where the rule is
+          chosen to make a particular skill unavoidable. That last part is what separates a game
+          from a party activity: passing a clap round a circle is not fun because clapping is fun,
+          it is there because you cannot do it without watching one specific person.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          They divide three ways &mdash; warm-ups that prepare a group, exercises that isolate a
+          skill, and short-form games built to be watched. Most lists mix all three together, which
+          is why so many sessions run a performance game on a cold room and conclude the room is no
+          good.
+        </p>
+
+        <h3 className="mt-6 mb-2 font-semibold">What are the best improv warm-up games?</h3>
+        <p className="text-foreground/70 mb-4">
+          The ones with no ideas in them.{" "}
+          <Link href="/practice/exercises/pass-the-clap" className="underline">
+            Pass the Clap
+          </Link>
+          ,{" "}
+          <Link href="/practice/exercises/zip-zap-zop" className="underline">
+            Zip Zap Zop
+          </Link>{" "}
+          and{" "}
+          <Link href="/practice/exercises/sound-ball" className="underline">
+            Sound Ball
+          </Link>{" "}
+          all work because nobody has to invent anything to take part, so the nervous half of the
+          room is in before it has had time to decide it cannot do this.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          A warm-up that requires a good idea is not a warm-up. It is the first exercise, and
+          running it first is the most common way to lose a group in the opening ten minutes.
+        </p>
+
+        <h3 className="mt-6 mb-2 font-semibold">Can you play improv games with only two people?</h3>
+        <p className="text-foreground/70 mb-4">
+          Plenty of them, and the two-person versions are often the better practice, because there
+          is nowhere to hide and you get several times the repetitions.{" "}
+          <Link href="/practice/exercises/mirroring" className="underline">
+            Mirroring
+          </Link>
+          ,{" "}
+          <Link href="/practice/exercises/last-word-response" className="underline">
+            Last Word Response
+          </Link>
+          ,{" "}
+          <Link href="/practice/exercises/one-word-story" className="underline">
+            One-Word Story
+          </Link>{" "}
+          and{" "}
+          <Link href="/practice/exercises/gift-giving" className="underline">
+            Gift Giving
+          </Link>{" "}
+          all run with a pair.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          What a pair cannot do is anything requiring a back line &mdash; tag-outs, group games,
+          most short-form formats. Those need five or more, and attempting them with two produces a
+          worse version of a scene you could have simply played.
+        </p>
+
+        <h3 className="mt-6 mb-2 font-semibold">Which improv games work on a video call?</h3>
+        <p className="text-foreground/70 mb-4">
+          Anything that does not depend on simultaneous speech or on knowing whose turn it is from
+          the room. Video kills both: overlapping audio is unintelligible and there is no shared
+          spatial sense to read a turn from.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          So circle games that pass by name survive, and{" "}
+          <Link href="/practice/exercises/one-word-story" className="underline">
+            One-Word Story
+          </Link>{" "}
+          works better on video than in person because the order is fixed and the gaps stop
+          mattering. Anything physical, anything requiring a group to move as one, and anything
+          where players jump in unprompted will not survive the lag.
+        </p>
+
+        <h3 className="mt-6 mb-2 font-semibold">What age can children start improv games?</h3>
+        <p className="text-foreground/70 mb-4">
+          Around five for circle games with one rule, and roughly nine before scenes are worth
+          attempting &mdash; not because younger children cannot act, but because a scene has no
+          rule to fall back on, so a child who does not know what to do has nowhere to stand.{" "}
+          <Link href="/improv-games-for-kids" className="underline">
+            Improv games for kids
+          </Link>{" "}
+          sets out which games suit which age and what changes with teenagers.
+        </p>
+      </section>
+
       <section className="mt-12">
         <h2 className="mb-3 text-xl font-semibold">Related</h2>
         <p className="text-foreground/70">
