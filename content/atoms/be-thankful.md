@@ -47,7 +47,7 @@ When a whole ensemble practices this, risk becomes cheap. The team that treats e
 
 ## Success condition
 
-unexpected inputs are integrated rather than rejected. A mistake is just an offer you didn't expect. Evaluation isn't abolished — it's relocated to after the scene, where it can be objective and shared rather than reactive and private.
+Unexpected inputs are integrated rather than rejected. A mistake is just an offer you didn't expect. Evaluation isn't abolished — it's relocated to after the scene, where it can be objective and shared rather than reactive and private.
 
 ## Specific sources
 

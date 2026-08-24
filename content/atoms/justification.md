@@ -19,7 +19,7 @@ links:
   - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.
@@ -28,11 +28,11 @@ The principle from *Truth in Comedy*: "There are no mistakes — everything is j
 
 ## Retroactive justification
 
-is the canonical form. When something unexpected occurs — a physical accident, a non-sequitur, a forgotten detail — justification works backward from the event to construct a narrative reason for it. The spy trips and falls → "My god, the poison is kicking in." The fall is now not an error but a plot point.
+Retroactive justification is the canonical form. When something unexpected occurs — a physical accident, a non-sequitur, a forgotten detail — justification works backward from the event to construct a narrative reason for it. The spy trips and falls → "My god, the poison is kicking in." The fall is now not an error but a plot point.
 
 ## Prospective justification
 
-is how masters actually use it. TJ Jagodowski and Dave Pasquesi build atmospheric context — relationship weight, environmental detail, emotional grounding — so that when the "weird" offer arrives, it already has a home. This is justification as scaffolding rather than rescue. You're not saving a mistake; you're building a world rich enough that anything that happens in it makes sense.
+Prospective justification is how masters actually use it. TJ Jagodowski and Dave Pasquesi build atmospheric context — relationship weight, environmental detail, emotional grounding — so that when the "weird" offer arrives, it already has a home. This is justification as scaffolding rather than rescue. You're not saving a mistake; you're building a world rich enough that anything that happens in it makes sense.
 
 The technique works because of irreversibility: the event already happened. It cannot be undone. The only choices are to ignore it (breaking shared reality), to acknowledge it as a mistake (breaking the fourth wall), or to justify it (integrating it into the shared reality). Justification is the only option that preserves the scene.
 

@@ -17,7 +17,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Managing the two poles of energy in an improv show. **Heat** is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity. **Weight** is low energy — stillness, quiet, emotional honesty, vulnerability, gravity. The art is in the alternation.
@@ -28,7 +28,7 @@ A show that stays at one energy level becomes monotonous regardless of how skill
 
 ## Heat without weight
 
-is sketch comedy — entertaining but forgettable. **Weight without heat** is therapy — meaningful but not theatrical. The Harold and other longform formats are designed to hold both.
+Heat without weight is sketch comedy — entertaining but forgettable. **Weight without heat** is therapy — meaningful but not theatrical. The Harold and other longform formats are designed to hold both.
 
 ## Practically
 

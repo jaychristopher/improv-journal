@@ -32,11 +32,11 @@ Observable patterns consistent with Johnstone's framework (synthesized from his 
 
 ## High-status signals
 
-sustained eye contact, stillness, economy of movement, slow speech, taking up space, comfortable silence, not reacting to provocations.
+High status shows as sustained eye contact, stillness, economy of movement, slow speech, taking up space, comfortable silence, and not reacting to provocations.
 
 ## Low-status signals
 
-breaking eye contact, fidgeting, fast speech, qualifying statements, taking up less space, filling silence, over-reacting.
+Low status shows as breaking eye contact, fidgeting, fast speech, qualifying statements, taking up less space, filling silence, and over-reacting.
 
 ## The status seesaw
 
@@ -44,11 +44,11 @@ Johnstone's key insight is not just that people signal status — any sociologis
 
 ## Status transactions
 
-drive scenes. Every interaction involves a negotiation of relative status — sometimes explicit, usually implicit. Scenes become dynamic when status shifts: the confident one becomes vulnerable, the nervous one finds their ground. Refusing to accept a status shift is a form of blocking.
+Status transactions drive scenes. Every interaction involves a negotiation of relative status — sometimes explicit, usually implicit. Scenes become dynamic when status shifts: the confident one becomes vulnerable, the nervous one finds their ground. Refusing to accept a status shift is a form of blocking.
 
 ## Matched status
 
-produces its own distinct dynamics. Both-high generates competition and comedy (two people vying for control). Both-low generates indecision and pathos (two people unable to take charge). These aren't edge cases — they're some of the most recognizable scene dynamics.
+Matched status produces its own distinct dynamics. Both-high generates competition and comedy (two people vying for control). Both-low generates indecision and pathos (two people unable to take charge). These aren't edge cases — they're some of the most recognizable scene dynamics.
 
 ## Overcomplication is a status play
 

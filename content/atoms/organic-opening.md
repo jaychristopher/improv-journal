@@ -18,7 +18,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 A group free-association exercise that generates raw thematic material for a Harold or other longform show. Takes a single audience suggestion and expands it into a web of associations, images, themes, and ideas the ensemble mines throughout the show.
@@ -47,7 +47,7 @@ One or more performers share real personal stories inspired by the suggestion. O
 
 ## Extracting themes
 
-is the critical skill. The ensemble must listen for recurring images, emotional undercurrents, and unexpected connections. The opening is a palette, not a plan. Scenes should be inspired by themes, not literal recreations.
+Extracting themes is the critical skill. The ensemble must listen for recurring images, emotional undercurrents, and unexpected connections. The opening is a palette, not a plan. Scenes should be inspired by themes, not literal recreations.
 
 ## Specific sources
 

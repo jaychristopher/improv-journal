@@ -71,7 +71,7 @@ Before anyone speaks, the space has a reality. Status is established the moment 
 
 ## The first-thought rule from Be Simple applies
 
-your first instinct is usually the right initiation. Your second thought is the one trying to be clever. Go with the first.
+Your first instinct is usually the right initiation. Your second thought is the one trying to be clever. Go with the first.
 
 ## The initiation isn't finished until the partner responds
 

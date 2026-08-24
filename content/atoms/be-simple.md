@@ -50,7 +50,7 @@ The same distinction separates [how articulate someone sounds](/how-to-be-more-a
 
 ## Success condition
 
-your partner can immediately receive and build on your offer. The audience can follow without explanation. The relationship has room to develop.
+Your partner can immediately receive and build on your offer. The audience can follow without explanation. The relationship has room to develop.
 
 ## Specific sources
 

@@ -26,7 +26,7 @@ The shadow of **Be Positive**. Negation is specifically the **contradiction of e
 
 ## Subtle negation
 
-is harder to spot and does more damage because players don't recognize it:
+Subtle negation is harder to spot and does more damage, because players don't recognize it:
 - **Emotional negation:** "You seem upset." / "I'm fine, let's move on." The words continue the scene, but the underlying offer — *I see that you're in pain* — is denied.
 - **Premise negation:** "That would never happen." The partner's reality is ruled out as implausible rather than contradicted directly.
 - **Retroactive negation:** "I was kidding earlier." Something previously established is un-established, breaking the path dependence that gives the scene its foundation.

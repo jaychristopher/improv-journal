@@ -48,7 +48,7 @@ It is also the least mystical account available of where comedy comes from. The 
 
 ## Discovery requires presence
 
-because the distinctive thing is usually small — a tone shift, a word choice, a physical gesture. If you're in your head planning, you'll miss it. It requires **active listening** because you cannot notice what you haven't received. It requires **support** — caring enough about your partner's offers to track them and respond. And when two players notice different things (competing discoveries), it resolves through listening and yielding, not through both pushing harder.
+The distinctive thing is usually small — a tone shift, a word choice, a physical gesture. If you're in your head planning, you'll miss it. It requires **active listening** because you cannot notice what you haven't received. It requires **support** — caring enough about your partner's offers to track them and respond. And when two players notice different things (competing discoveries), it resolves through listening and yielding, not through both pushing harder.
 
 ## The felt experience shifts with skill
 

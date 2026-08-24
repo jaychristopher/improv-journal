@@ -65,7 +65,7 @@ The transfer runs in both directions. [Being present](/how-to-be-present) away f
 
 ## Success condition
 
-the inner censor is quiet. Responses — whether immediate or deliberately held — emerge from contact with the moment rather than from rehearsal. The observable sign: the performer's attention is visibly on their partner, not behind their own eyes. When there is a gap, it is a listening gap, not a planning gap.
+The inner censor is quiet. Responses — whether immediate or deliberately held — emerge from contact with the moment rather than from rehearsal. The observable sign: the performer's attention is visibly on their partner, not behind their own eyes. When there is a gap, it is a listening gap, not a planning gap.
 
 ## Specific sources
 

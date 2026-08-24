@@ -21,7 +21,7 @@ links:
   - { id: blocking, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 A procedure for turning "that scene didn't work" into something you can practise. Most improvisers plateau because they answer a bad scene with volume — more classes, more reps — when the useful question is which part broke.
@@ -67,4 +67,4 @@ Volume improves whatever you already do. If the failure is latency, more reps me
 
 ## Attribution note
 
-the three-step procedure — mode, then shadow, then principle — is this site's synthesis rather than a published method. Its parts are not: the collapse modes come from `systemic-collapse-modes`, and the shadow relation between each antipattern and its principle is how the atoms here are already organised. Napier's *Improvise* is the nearest published relative, in treating scene failure as analysable rather than a matter of talent. **Counter-position (Napier, and Johnstone by implication):** naming failure modes can feed the self-monitoring that causes latency in the first place. This is a tool for after the scene — for coaching, notes and practice planning — and using it while performing is likely to cause the problem it diagnoses.
+The three-step procedure — mode, then shadow, then principle — is this site's synthesis rather than a published method. Its parts are not: the collapse modes come from `systemic-collapse-modes`, and the shadow relation between each antipattern and its principle is how the atoms here are already organised. Napier's *Improvise* is the nearest published relative, in treating scene failure as analysable rather than a matter of talent. **Counter-position (Napier, and Johnstone by implication):** naming failure modes can feed the self-monitoring that causes latency in the first place. This is a tool for after the scene — for coaching, notes and practice planning — and using it while performing is likely to cause the problem it diagnoses.
