@@ -56,15 +56,23 @@ The voice of "The Physics of Connection" — extracted from L1, L2, L23, L31 scr
 
 ## [Emote] tag patterns
 
-For TTS scripts (SOPs 04, 07), [emote] tags shape audio cadence. Tested patterns:
+For TTS scripts (SOPs 04, 07), [emote] tags shape audio cadence. The canonical tag set used in production (L1, L2, L23, L31) — these are what ElevenLabs `eleven_v3` interprets reliably:
 
-- `[thoughtful pause]` before a reframe — gives the listener a beat to lean in
-- `[direct]` for the payoff sentence — flat, confident, no music underneath
-- `[soft]` for confessional moments — drops the volume slightly, reads as intimate
-- `[short pause]` between sections — peak boundaries; ElevenLabs interprets as ~0.4-0.6s gap (post-compression)
-- `[curious]` before questions to the viewer — lifts the inflection
+| Tag | Use for |
+|-----|---------|
+| `[curious]` | Setup, asking a question, intriguing |
+| `[contemplative]` | Reframes, "here's the thing" moments, isolated quotes |
+| `[emphatic]` | Punch lines, claims, definitive statements |
+| `[teaching]` | Exercise / step / how-to |
+| `[warm]` | CTA, closing, reassurance |
+| `[short pause]` | Section breaks (~0.4-0.6s of silence post-compression) |
+
+Do NOT invent new tags (e.g. `[direct]`, `[soft]`, `[thoughtful pause]`) — ElevenLabs falls back to neutral on unknowns, defeating the purpose. Stick to the table above.
 
 Don't stack `[emote]` tags. One per ~2-3 sentences max — too many makes the TTS overact.
+
+Production frequencies (L2 v2 reference, n=1 well-tuned script):
+- `[emphatic]` 13× · `[short pause]` 12× · `[teaching]` 10× · `[contemplative]` 7× · `[curious]` 4× · `[warm]` 3×
 
 ## Length and density
 

@@ -56,8 +56,8 @@ const TRADITION_INFO: Record<
     keyTexts: ["Improvisation for the Theater (1963)"],
     orientation: [
       "Spolin's route in is attention, and the mechanism is the Point of Concentration — a single thing to attend to that is narrow enough to occupy the part of you that would otherwise be watching yourself perform. Solve the problem and the behaviour she wanted arrives as a side effect.",
-      "It came from social work rather than theatre. She learned the method from Neva Boyd at Hull House in the 1920s, where games were used to get immigrant children participating, which is why the exercises still work on people with no intention of performing and why the writing addresses teachers rather than actors.",
-      "The dependency is the side-coach. These games assume somebody outside the exercise calling adjustments while it runs, and without that they flatten into recreation — a room having a nice time and transferring nothing to their scenes.",
+      "The school is unusual in treating the teacher as part of the mechanism rather than as somebody who explains and then withdraws. A game is set, a problem is named, and the adjustments happen live while it runs — which is why so much of the material reads as instructions to a person standing at the side of the room.",
+      "Its blind spot is performance. Spolin was solving for participation and transfer, not for an audience, so the school has almost nothing to say about how a show is shaped or why one scene is funnier than another — which is precisely the gap the Chicago schools grew into.",
     ],
   },
   close: {

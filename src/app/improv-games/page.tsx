@@ -447,6 +447,19 @@ export default async function ImprovGamesPage() {
           </Link>{" "}
           sets out which games suit which age and what changes with teenagers.
         </p>
+
+        <h3 className="mt-6 mb-2 font-semibold">
+          Which improv game should you start a session with?
+        </h3>
+        <p className="text-foreground/70 mb-4">
+          One that is impossible to be bad at and needs no words &mdash; a clap passed round a
+          circle rather than anything requiring an idea. The opening game is about state, not
+          content, and only the last game before the work should point at what you are teaching.{" "}
+          <Link href="/improv-warm-up-games" className="underline">
+            Improv warm-up games
+          </Link>{" "}
+          sets out the three-stage order and how long to spend in each.
+        </p>
       </section>
 
       <section className="mt-12">

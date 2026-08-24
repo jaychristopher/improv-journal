@@ -11,7 +11,11 @@ describe("keyword difficulty", () => {
    * from here. Volumes on both came from the recorded research in
    * content/outlines/all-paths.md, so the numbers they do carry are sourced.
    */
-  const PROVIDER_UNAVAILABLE = new Set(["improv-games-for-kids", "viola-spolin"]);
+  const PROVIDER_UNAVAILABLE = new Set([
+    "improv-games-for-kids",
+    "improv-warm-up-games",
+    "viola-spolin",
+  ]);
 
   it("records difficulty on nearly every guide's primary keyword", async () => {
     const bridges = await loadBridges();

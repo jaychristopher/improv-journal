@@ -79,7 +79,7 @@ Nothing about the games solves that. What solves it is removing the audience.
 
 ## Running It With a Class You Do Not Know
 
-Four things matter more than the game list.
+Four things matter more than the game list, and one thing matters before them: what you open with. The ordering principle holds at every age, and [improv warm-up games](/improv-warm-up-games) sets out the three-stage sequence in full.
 
 - **Side-coach, do not stop.** `side-coaching` — calling adjustments while the game runs — is how Spolin taught, and it is the difference between a class that improves and one that plays. "Louder." "Look at them." "Next one faster." Stopping to explain kills the energy you spent ten minutes building.
 - **Never make one child perform alone in front of the rest.** The single most reliable way to lose a room. Everything on this page can be run so that nobody is the only person moving.

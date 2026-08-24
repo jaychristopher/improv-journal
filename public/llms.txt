@@ -24,7 +24,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (74)
+## Guides (75)
 
 - [21 Questions Game: How to Play, and 181 to Ask](https://www.physicsofconnection.com/21-questions-game): The number is the mechanism. A fixed count removes the polite exit at question six and guarantees an ending, which is the only reason this gets anywhere real.
 - [36 Questions to Fall in Love: The List and the Mechanism](https://www.physicsofconnection.com/36-questions-to-fall-in-love): The full set from Aron's 1997 study, plus what the lists leave out: what the procedure was built to do, and why the escalation does the work.
@@ -74,6 +74,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Improv Games for Kids: What Works at Each Age](https://www.physicsofconnection.com/improv-games-for-kids): Most improv games fail with children because they were built for people who volunteered. Which games work at which age, and how to run them with thirty.
 - [Improv Prompts: 140 Scene Starters for Class or Stage](https://www.physicsofconnection.com/improv-prompts): 140 prompts you can use tonight — relationships, first lines, locations, classroom sets — plus how to run a round with a full class.
 - [Improv Theory: The Five Traditions That Shaped It](https://www.physicsofconnection.com/improv-theory): Johnstone, Spolin, Close, UCB, and Annoyance built improv on different foundations. Here's where they agree, where they clash, and why it matters.
+- [Improv Warm-Up Games: The Order Matters More Than the Game](https://www.physicsofconnection.com/improv-warm-up-games): A warm-up is a sequence, not a game you pick at random. Three stages that move a room from arrival to playing, with the games that do each job.
 - [Most Likely To Questions: 182 That Land as a Compliment](https://www.physicsofconnection.com/most-likely-to-questions): The only question game where the answer is about somebody else in the room — which makes it recognition when it works and a roast when it does not.
 - [Networking Tips That Work If You Hate Networking](https://www.physicsofconnection.com/networking-tips): Networking feels bad because it is framed as extraction, and everyone can tell. The fix is not a better opener — it is arriving with something to offer.
 - [Party Games: 40 That Need Nothing but People](https://www.physicsofconnection.com/party-games): Most party game lists are shopping lists. These need no equipment, no setup and no explaining — and they survive somebody joining halfway through.

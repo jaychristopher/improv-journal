@@ -31,7 +31,7 @@ That origin matters, because it explains the thing most people get wrong about t
 
 Working in Chicago in the 1940s and 50s, Spolin developed theatre games as a way to teach improvisation to non-actors — including children, and immigrants learning English. She needed a method that did not depend on talent, training, or even fluency. Games were the answer: give people a clear objective and a constraint, and the skill arrives as a by-product of playing.
 
-She published the method as *Improvisation for the Theater* in 1963, and it became the foundation of nearly everything that followed. The entire tradition of improv warm-ups descends from Spolin's theatre games. Her son, Paul Sills, took the method to Chicago's Second City, where it grew into modern comedic improv.
+She published the method as *Improvisation for the Theater* in 1963, and it became the foundation of nearly everything that followed. The entire tradition of [improv warm-up games](/improv-warm-up-games) descends from Spolin's theatre games. Her son, Paul Sills, took the method to Chicago's Second City, where it grew into modern comedic improv.
 
 ## Theatre Games, Theater Games, or Drama Games?
 

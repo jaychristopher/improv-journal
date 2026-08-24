@@ -96,7 +96,11 @@ describe("verdict freshness", () => {
    * verdict and top-ten profile. If an entry is still here after that, the
    * check was skipped rather than blocked.
    */
-  const AWAITING_SERP_CHECK = new Set(["improv-games-for-kids", "viola-spolin"]);
+  const AWAITING_SERP_CHECK = new Set([
+    "improv-games-for-kids",
+    "improv-warm-up-games",
+    "viola-spolin",
+  ]);
 
   it("has checked the SERP for every guide", async () => {
     const bridges = await loadBridges();

@@ -43,6 +43,8 @@ Many warm-ups involve low-stakes risk-taking — making silly sounds, physical c
 
 ## Categories of warm-ups
 
+Which category to open with is not a free choice — the ordering is covered in full in [improv warm-up games](/improv-warm-up-games), which sequences focus, ensemble and skill-rehearsal by what each one costs the player.
+
 - **Focus games** (Zip Zap Zop, Count to 20, Mind Meld) — train group attention
 - **Energy games** (Bunny Bunny, Sound Ball, Whoosh) — build intensity, lower self-consciousness
 - **Trust exercises** (Mirror Work, Blind Lead, Yes Let's) — build ensemble safety
