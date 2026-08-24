@@ -1,3 +1,4 @@
+import { authorSameAs } from "@/lib/author-entities";
 import type { CitedWork, ExternalLink } from "@/lib/schema";
 import { SITE_URL } from "@/lib/seo";
 
@@ -32,7 +33,13 @@ export function CitedWorkJsonLd({
     "@context": "https://schema.org",
     "@type": work.type,
     name: work.name,
-    author: work.authors.map((name) => ({ "@type": "Person", name })),
+    // A named author with no authority record is a string a crawler has to
+    // guess at. Every query that reaches these pages is [author] plus [work],
+    // so this is the half of the query that most needs resolving.
+    author: work.authors.map((name) => {
+      const sameAsUrl = authorSameAs(name);
+      return { "@type": "Person", name, ...(sameAsUrl ? { sameAs: [sameAsUrl] } : {}) };
+    }),
     description,
     url: `${SITE_URL}${url}`,
     ...(work.publisher ? { publisher: { "@type": "Organization", name: work.publisher } } : {}),
