@@ -17,7 +17,7 @@ links:
   - { id: ensemble, relation: requires }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Reading the Room is the real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.
@@ -55,6 +55,18 @@ Reading the room requires splitting attention — fully present in the scene whi
 Dave Razowsky: "The audience is your scene partner. Read them like you'd read a scene partner — with attention, curiosity, and responsiveness."
 
 Reading a room is the same faculty a performer uses on an audience, applied where the stakes are quieter and the feedback slower. [How to read the room](/how-to-read-the-room) works it through for meetings and conversations, including the part performers get for free and everyone else has to construct: a reliable signal that something has landed.
+
+## The case that you should not be reading it
+
+Two of the five traditions think this whole skill is a trap, and the objection is more serious than it first sounds.
+
+The Close and iO position is to play at the top of your intelligence and decline to pander: make the truthful choice, and an audience that is not being flattered will come to you. Napier and the Annoyance arrive at the same place from commitment — attend to your own choice fully rather than calibrating to a room, because calibration is another process running while you should be playing.
+
+Both are really making one argument: the fix is always better improv, never better audience management. A performer adjusting to a quiet room usually adjusts *downward*, towards the safe and the broad, and the room gets quieter.
+
+The distinction that keeps this useful is between reading and obeying. Noticing that a room has gone still is free information and it costs no attention worth protecting. Changing what you were going to do in order to retrieve them is the failure both traditions name, and it is the reason a cast that starts chasing laughs rarely recovers within a show.
+
+So read the room and do not take instructions from it.
 
 ## Specific sources
 

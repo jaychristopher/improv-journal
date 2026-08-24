@@ -20,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Group Scene is a scene with three or more performers. Fundamentally different from two-person scenes — the challenge shifts from building a relationship between two people to **managing focus, agreement, and pattern across multiple bodies and voices**.
@@ -57,6 +57,16 @@ One person makes a choice. The rest recognize the pattern and join it. This is i
 - No escalation — the group establishes a pattern but doesn't heighten it (flat, repetitive)
 - Loss of focus — the audience doesn't know where to look
 - Fear of commitment — performers hedge instead of fully joining the group's shared reality
+
+## Group scenes are a format requirement, not an artistic necessity
+
+Worth stating plainly, because the Harold's structure makes them feel obligatory.
+
+TJ and Dave work exclusively as a duo and are widely held to be the strongest longform act working. Their hour contains no group scenes because there is no group — and nobody watching concludes something is missing. The duo tradition more broadly demonstrates that extraordinary improv needs two people and a great deal of attention, not a cast.
+
+So a group scene is something a particular form asks for rather than something the art form requires. The Harold demands them; a two-person show cannot have them and loses nothing it needed.
+
+What that clarifies is when to use one. A group scene earns its place when the thing being explored is genuinely collective — a shared belief, an institution, a crowd behaving as one organism — because that cannot be shown by two people talking about it. Run as a structural obligation, with seven performers each finding a line to contribute, it produces exactly the diffuse, unfocused stretch that audiences remember as the part where a Harold sagged.
 
 ## Specific sources
 

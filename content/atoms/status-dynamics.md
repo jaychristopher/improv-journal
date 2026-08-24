@@ -79,6 +79,16 @@ Johnstone's key pedagogical insight: most people have a habitual status they def
 
 - **Mismatch scenes.** Two players are each assigned a station (doctor/patient, teacher/student, boss/intern) and the OPPOSITE status (the doctor plays low, the patient plays high). Play the scene honestly within those constraints. The comedy and humanity emerge from the gap.
 
+## The tradition that dropped status entirely
+
+The most striking fact about status is how much of modern improv teaching does without it.
+
+The Upright Citizens Brigade manual contains no chapter on it. The structural work status does for Johnstone — explaining what a scene is about, why a moment lands, where the pressure sits — is done in the UCB frame by game mechanics instead: point of view, pattern, heightening. Napier's *Improvise* does not centre it either. A performer trained entirely in the American longform tradition of the last thirty years can be excellent and have no working vocabulary for it at all.
+
+That is a real disagreement rather than an oversight. Johnstone treats status as the engine of behaviour — everything two people do to each other is a transaction in it — while the game-first schools treat it as one available pattern among many, interesting when a scene happens to be about it and irrelevant when it is not.
+
+The practical test is which explanation makes a dead scene legible. Some scenes fail because the pattern was never found, and game language diagnoses those. Others fail because two people held identical status for four minutes and nothing could develop, and no amount of game analysis will name that. Having only one of the two vocabularies means the failures it cannot describe look like bad luck.
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 2 ("Status") — the seesaw principle, master-servant exercises, number-status calibration, the insight that status is played not possessed. "Status is something you do, not what you are." Johnstone, *Impro for Storytellers*, Ch. 3 — extends the status work with more exercises and the concept of status specialists (performers who default to one end). Patti Stiles, ["Thoughts on Master Servant Work"](https://www.pattistiles.com/blogenglish/thoughts-on-master-servant-work) — master-servant dynamics and spatial ownership. **Counter-position:** The UCB Manual contains no chapter on status. Its structural replacement is game mechanics — POV, pattern, heightening. The American longform tradition largely set status aside in favor of game. Napier's *Improvise* does not center status either. The tension is real: Johnstone sees status as the engine of ALL human interaction ("Every inflection and every movement implies a status"); UCB sees game as the engine of comedy. Both produce dynamic scenes through incompatible lenses. The risk of status-only work: performers become so attuned to power dynamics that they read everything as domination/submission, missing other engines (absurdity, whimsy, tenderness). The risk of game-only work: performers miss the power dynamics that make relationships feel real.
