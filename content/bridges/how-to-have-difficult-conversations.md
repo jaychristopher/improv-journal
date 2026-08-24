@@ -97,6 +97,54 @@ You cannot rehearse a difficult conversation with the person you need to have it
 
 For conflict as a broader subject — blocking, status, and the acceptance paradox — see [how to deal with conflict](/how-to-deal-with-conflict).
 
+## Questions People Ask About Difficult Conversations
+
+### What are the three conversations inside every difficult one?
+
+Stone, Patton and Heen, working out of the Harvard Negotiation Project, set this out in *Difficult Conversations* (1999), and it is the most useful map of the territory anybody has produced:
+
+1. **The What Happened conversation** — the factual dispute, which is where almost everybody spends the whole time and which is usually the least important of the three.
+2. **The Feelings conversation** — present whether or not it is acknowledged. Unexpressed feelings do not stay out of it; they leak in as tone, as the argument getting oddly heated about a detail, or as agreement that does not hold.
+3. **The Identity conversation** — the internal one about what this says about who you are. Competent or not, fair or not, a good person or not.
+
+The identity layer explains the reactions that otherwise look disproportionate. Somebody defending a small mistake with unreasonable force is usually not defending the mistake; they are defending a story about themselves that the mistake threatens. Recognising that mid-conversation is what makes it possible to lower the stakes rather than escalate — and `blocking` is very often the identity conversation surfacing as a refusal.
+
+### Should you ever have one over message?
+
+Almost never, and the temptation is strongest exactly when it is worst.
+
+Writing lets you compose, and composing is why it appeals — you can get the wording right and avoid the moment. It also removes tone, timing, and every signal that tells you the other person has stopped following, which means the first evidence you get about how it landed arrives hours later, fully formed, from somebody who has had those hours to interpret you uncharitably.
+
+There is one legitimate use: a short message to make the conversation happen. "There's something I'd like to talk through — are you free tomorrow?" That is scheduling, and it is genuinely kind, because it removes the ambush.
+
+The other exception is a record. If something needs documenting, write it *after* the conversation, summarising what was said, rather than instead of having it.
+
+### When is the right time to have it?
+
+Sooner than feels comfortable, earlier in the day, and never at the end of something.
+
+Delay is the main problem. Waiting adds accumulated evidence on both sides, raises the stakes of the eventual conversation, and means you arrive with a case rather than a question — a version of the identity conversation you have been rehearsing alone for weeks.
+
+Late in the day is worse than early, because nobody has anywhere to go afterwards with what they have just heard. And immediately after a meeting, a presentation, or anything the other person has just performed is the worst timing available: they are still in the state of having been judged.
+
+### What if the other person is more senior than you?
+
+Ask permission, describe your own experience, and do not offer an assessment of them.
+
+Permission changes the frame — "can I raise something about how the project's running?" makes it a conversation rather than a challenge, and it gives them a moment to switch out of whatever they were doing. `status` is doing real work here: a request to speak briefly lowers yours on purpose, and the content afterwards lands more easily for it.
+
+Then keep it to what you observed and what it cost. "When the deadline moved without notice, I'd already committed the team to the old one" is checkable and difficult to argue with. "You don't communicate changes well" is a verdict on a person with more power than you, and it will be received as one.
+
+### What if you have already avoided it for months?
+
+Say that first, plainly, and skip the explanation.
+
+The avoidance has become part of the subject — the other person has usually noticed something was off, and they have been constructing their own account of it. Opening with "I should have raised this a while ago and didn't" pre-empts the worst version of that account and costs one sentence.
+
+What does not work is the accumulated case. Months of avoidance produce a list, and delivering the list is the single most reliable way to make somebody defensive, because it tells them you have been keeping score. Pick the most recent instance, use that one, and leave the rest — if the pattern is real it will come up on its own.
+
+**Sources cited:** Stone, Patton and Heen (1999), *Difficult Conversations: How to Discuss What Matters Most*, Harvard Negotiation Project.
+
 ## Why This Works
 
 Difficult conversations go badly when both people are performing — managing their words, controlling their tone, hiding their real reactions. They go well when both people are present — listening, responding honestly, staying in the room despite the discomfort.
