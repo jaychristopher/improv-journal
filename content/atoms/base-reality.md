@@ -22,7 +22,7 @@ links:
   - { id: tilt, relation: enables }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Base Reality is the normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.
@@ -64,6 +64,18 @@ During heightening, the return to base reality between escalations is what gives
 ### Base reality IS Be Simple and Be Honest in action
 
 Grounded behavior is simple behavior — real people in a real situation responding at the top of their intelligence. No wackiness, no irony, no performing cleverness. Just two people and whatever is true between them.
+
+## The Annoyance objection: establishing is stalling
+
+Napier's position, from *Improvise*, is close to the opposite of this page, and it is not a fringe view.
+
+Do not spend the first thirty seconds establishing logistics. Start with action and emotion and let context arrive on its own — because a performer carefully laying in who, what and where is very often filling time rather than committing to anything, and the audience can tell the difference between somebody building a world and somebody delaying.
+
+He is describing a real failure. Scenes that open with two people confirming their relationship, their location and their activity before anything happens are stalling, and the establishment is functioning as an alternative to a choice.
+
+The disagreement narrows once *how* it gets established is separated from *whether*. Base reality announced is what Napier is attacking. Base reality **demonstrated** — the same information arriving through behaviour, in the way somebody handles an object or addresses another person — costs nothing and stalls nothing, because the behaviour is itself the bold choice.
+
+So the usable rule is not to skip the platform but to stop narrating it. If your first thirty seconds could be replaced by a caption, the objection applies to you.
 
 ## Specific sources
 

@@ -20,7 +20,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Reincorporation is bringing back an element from earlier in the scene or show so that it returns with added significance, changed meaning, or narrative resolution. Keith Johnstone's narrative engine — the technique that makes improvised stories feel authored.
@@ -48,6 +48,16 @@ When an improvised story reincorporates well, the audience perceives intentional
 ## The practice
 
 Don't try to remember everything. Trust that if you were truly present when a detail was established, your brain will surface it when the context calls for it. Forced reincorporation ("I should mention the gun again") feels mechanical. Organic reincorporation ("wait — the gun!") feels like destiny.
+
+## The game-first alternative
+
+The Chicago game-based schools largely do without this, and it is worth understanding what they use instead rather than treating it as an oversight.
+
+In a game-first frame you do not need to bring back the gun. You need to find the pattern the scene has produced and escalate it — the satisfaction comes from a behaviour recurring at higher intensity rather than from an object or a fact returning with new meaning. Heightening is doing the work that reincorporation does elsewhere.
+
+Both are the same underlying pleasure, which is recognition. The difference is what recurs and what the recurrence means. Story-through-return, the Johnstone emphasis, makes the returning element carry narrative consequence: the gun matters more the second time because of what has happened since. Pattern heightening makes the returning element carry comic consequence: the behaviour matters more because it is now worse.
+
+They are compatible and they compete for attention, which is the practical point. A performer tracking a narrative thread and a performer tracking a game are attending to different features of the same scene, and a cast split between the two will feel out of step without being able to say why.
 
 ## Specific sources
 

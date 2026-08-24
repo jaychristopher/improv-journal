@@ -67,6 +67,18 @@ Frame Do-Feel-Say as a **default for performers stuck in their heads**, not a un
 - Let the silence exist between the action and the speech
 - Trust that the words will be better for having waited
 
+## The verbal-first traditions, including Napier's own
+
+Plenty of good improv inverts this sequence, and the most interesting objection comes from inside the school that produced it.
+
+Sketch comedy initiates from a premise. Game-based improv frequently opens with a funny statement and works outward from it. Stand-up-influenced performers lead with the line, because the line is the thing they have trained. None of that is a mistake, and scenes built that way regularly work.
+
+The sharper point is that Napier's own Annoyance practice often prioritises bold verbal choices — "do something" does not specify that the something must be physical — which is a genuine tension inside a single pedagogy rather than a difference between rival ones.
+
+What the sequence is actually good for is narrower than a law. It is a corrective, aimed at a specific and very common failure: the performer who leads with the line because the line is where they are safe, and who is therefore composing rather than reacting. Putting the body first removes the option of scripting, and that is the whole mechanism.
+
+For somebody who does not have that problem, the order matters much less. For somebody who does, no amount of good verbal instinct fixes it, because the instinct is what is producing the problem.
+
 ## Specific sources
 
 Napier, *Improvise*, Ch. 3 — "Do something. Check out what you did. Hold onto it" (closest published formulation, framed as do/notice/commit). Meisner & Longwell, *Sanford Meisner on Acting* (1987) — "through the doing comes the emotion" (same principle, different frame). Spolin, Ch. IV-V — physicalization produces presence/emotion as side effect. **Attribution note:** The three-step "Do, Feel, Say" sequence as named is oral tradition in the improv teaching community — not traceable to a single published text. This atom is correctly labeled as synthesis. **Counter-position:** Verbal-first traditions: sketch comedy initiates from premise, UCB game improv often starts from a funny statement, standup-influenced improvisers lead with the line. Napier's own Annoyance Theater often prioritizes bold verbal choices — a tension within his own pedagogy.

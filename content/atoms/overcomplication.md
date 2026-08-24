@@ -18,7 +18,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Overcomplication is the shadow of **Be Simple**. Overcomplication is flooding the shared channel with more data than it can carry — until the scene collapses under its own weight. For the principle and its rationale (bandwidth, generosity, the courage paradox), see `be-simple`. This atom is the diagnostic field guide: what overcomplication looks like in practice, so you can catch yourself or your students doing it.
@@ -45,6 +45,16 @@ Overcomplication is the shadow of **Be Simple**. Overcomplication is flooding th
 Am I explaining or interacting? If I'm explaining, I've overcomplicated. The scene's job is relationship, not exposition.
 
 Overcomplication is often hesitation wearing a busy costume — the performer couldn't find the simple move, so they generated complexity to fill the gap. It's also a form of blocking: the actual offer (the one the scene needs) is buried under layers of premise that nobody can dig through.
+
+## Advanced work is complex, and that is not this
+
+The obvious objection: a Harold tracks three worlds, two group games and a convergence, and narrative longform runs multiple timelines. That is complexity, and it is what advanced improv looks like.
+
+The distinction that resolves it is who is holding the complexity. **Structural** complexity is held by the performers across a piece — threads, callbacks, worlds that will meet later — and it is legitimate, accumulated, and largely invisible to the audience until it pays off. **Momentary** complexity is what a single offer asks the other person to process right now, and that is what this page is about.
+
+The two are frequently inversely related. The scenes that let a Harold hold three worlds are individually simple, because a performer tracking a complicated structure cannot also be decoding a complicated line. Elaborate offers early are what make the later architecture impossible.
+
+So the failure is not complexity but **premature** complexity — an offer flooding the channel before anything has been established for it to build on. Sophistication is earned by a foundation that is boring on purpose.
 
 ## Specific sources
 
