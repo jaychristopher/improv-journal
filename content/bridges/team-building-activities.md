@@ -198,7 +198,7 @@ These exercises work when the soil is ready. They don't work — and can activel
 
 **When attendance is compulsory and resentment is present.** Mandatory fun isn't fun. If people are in the room because they have to be and they resent it, every exercise becomes a performance of compliance rather than a genuine practice of trust. The improv principle applies: you can't force discovery. You can only create conditions where it's safe to discover.
 
-Google's Project Aristotle (2016) found that psychological safety was the single strongest predictor of team effectiveness — stronger than dependability, structure, meaning, or impact. But psychological safety can't be installed in an afternoon. It's built through repeated micro-moments where vulnerability is met with support rather than exploitation. These exercises create those micro-moments. But they need to happen repeatedly, not as a one-off event.
+Google's Project Aristotle (2015) found that psychological safety was the single strongest predictor of team effectiveness — stronger than dependability, structure, meaning, or impact. But psychological safety can't be installed in an afternoon. It's built through repeated micro-moments where vulnerability is met with support rather than exploitation. These exercises create those micro-moments. But they need to happen repeatedly, not as a one-off event.
 
 ## What Monday Should Look Like
 

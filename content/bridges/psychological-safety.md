@@ -18,7 +18,7 @@ updated: "2026-08-22"
 
 # Psychological Safety: The Physics of Trust
 
-Amy Edmondson defined psychological safety as "a shared belief held by members of a team that the team is safe for interpersonal risk taking." Google's Project Aristotle found it was the single most important factor in team success — more important than who was on the team, how senior they were, or where they went to school.
+Amy Edmondson defined psychological safety as "a shared belief held by members of a team that the team is safe for interpersonal risk taking." Google's Project Aristotle — begun in 2012, published by Julia Rozovsky on re:Work in 2015, and put in front of a general audience by Charles Duhigg in the New York Times in 2016 — found it was the single most important factor in team success — more important than who was on the team, how senior they were, or where they went to school.
 
 Everyone agrees it matters. Nobody can tell you how to build it.
 
@@ -100,4 +100,4 @@ The physics are the same. The stage just makes them visible.
 
 *For the full framework: [The Physics of Every Room](/threads/physics-of-every-room). For the honest transfer assessment: [Beyond the Stage](/how-it-works/beyond-the-stage). For the complete path: [Physics of Connection](/paths/physics-of-connection).*
 
-**Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Google Project Aristotle (2012). Clark (2020), *The 4 Stages of Psychological Safety*. Spolin (1963), *Improvisation for the Theater*. Kahneman (1973), *Attention and Effort*. Huffaker & West, *Industrial and Commercial Training*.
+**Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Google Project Aristotle (2015). Clark (2020), *The 4 Stages of Psychological Safety*. Spolin (1963), *Improvisation for the Theater*. Kahneman (1973), *Attention and Effort*. Huffaker & West, *Industrial and Commercial Training*.
