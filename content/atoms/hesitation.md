@@ -69,6 +69,8 @@ Hesitation creates latency, which the audience feels as energy loss. It signals 
 
 None of the three begins with feeling ready. That ordering is the premise behind [exercises that build confidence out of accumulated evidence](/confidence-building-exercises) rather than out of rehearsed affirmations.
 
+It is easiest to see in a circle. In [Sound Ball](/practice/exercises/sound-ball) the pause while somebody auditions options is far more conspicuous than any sound they could have made, which is why the game works on people who do not believe they hesitate.
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 3 ("Spontaneity"): "the student hesitates not because he doesn't have an idea, but to conceal the inappropriate ones that arrive uninvited." Napier, *Improvise*: "1) Do something, 2) Check out what you did, 3) Hold onto what you did." **Counter-position (TJ & Dave):** *Speed of Life* — patience and silence can be the most powerful choices. "A captivating silence is as good as, if not better than, a laugh." The critical distinction: hesitation-from-fear (the censor blocking action) versus patience-as-choice (deliberate spaciousness). This atom targets the former.

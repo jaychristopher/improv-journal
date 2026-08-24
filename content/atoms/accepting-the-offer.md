@@ -58,6 +58,8 @@ When acceptance fails, it's usually because the receiver's ego intervened: they 
 
 This applies to your own offers too. The word that escaped your mouth, the physical position you stumbled into, the emotion that arrived uninvited — these are offers from yourself to yourself, and they deserve the same acceptance.
 
+The smallest visible version of this is [Sound Ball](/practice/exercises/sound-ball). Somebody is thrown a flat noise and returns a richer, funnier one, which feels generous from the inside and is a substitution — the original was two seconds old and everybody heard it, so the refusal has nowhere to hide.
+
 ## Specific sources
 
 Hines, ["Accepting Offers"](https://willhines.substack.com/p/accepting-offers) — the fact/opinion distinction: facts must always be accepted; opinions can be adjusted. Johnstone, *Impro*, Ch. 3: offers and blocks as the binary of scene work. **Counter-position:** Johnstone would resist the three-step decomposition (receive, acknowledge, extend). For him, acceptance is a state of being unblocked, not a mechanical process. The granularity of receive/acknowledge/extend is a UCB-lineage pedagogical addition — useful for teaching but not how masters experience it.

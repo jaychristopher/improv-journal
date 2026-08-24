@@ -50,6 +50,8 @@ This is the whole of the counterintuitive claim that [funny is not assembled out
 
 The paradox that makes this work: the obvious choice *feels* risky because it feels exposed. Complex choices feel safe because they have layers to hide behind. This is why Be Brave is a prerequisite — the obvious choice strips away armor. But the obvious choice leaves space for the scene to grow, while the complex choice fills the space before the scene has started.
 
+The cheapest place to practise this is [World's Worst](/practice/formats/worlds-worst), where the offer lasts three seconds and then the slate is wiped. A player holding out for something clever while three others step forward and back has misread what the game trains, and the pause costs more than a plain answer would have.
+
 ## Specific source
 
 Johnstone, *Impro*, Ch. 3 ("Narrative Skills"): "No two people are exactly alike, and the more obvious an improviser is, the more himself he appears. If he wants to impress us with his originality, then he'll search out ideas that are actually commoner and less interesting." **Counter-position:** UCB's game framework asks improvisers to analytically identify the "first unusual thing" and frame it — a more deliberate process than "just be obvious." The tension is real: Johnstone's obviousness is felt; UCB's game is recognized. Both produce good improv through different cognitive pathways.

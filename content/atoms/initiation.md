@@ -78,6 +78,8 @@ Your first instinct is usually the right initiation. Your second thought is the 
 
 The initiator proposes; the receiver completes. The receiver's interpretation IS the scene — not the initiator's intent. If you say "You're my brother" and your partner's body language says "I'm terrified of you," the scene is about a terrifying brother, regardless of what you planned. This is why initiation requires listening and support, not just bravery: you offer something, then you yield to what your partner makes of it.
 
+The cleanest test of all this is [Bus Stop](/practice/formats/bus-stop), where there is no scene to join and no offer to build on. The arriving player has to be somebody the instant they step on, and a vague entrance produces nothing to react to.
+
 ## Specific sources
 
 Napier, *Improvise*, Ch. 3 — "Do something" as the core initiation advice. Hines, ["Harold Audition Advice: Initiation Etiquette"](https://willhines.substack.com/p/harold-audition-advice-initiation) (URL confirmed): the initiator "tells the other person who they are"; the responder gives a "gentle yes." Hines: "the single biggest thing improvisers can do to improve their premise improv." **Counter-position (Johnstone):** *Impro*, Ch. 3 ("Spontaneity") — Johnstone tells actors "never to think up an offer, but instead to assume that one has already been made." Initiation means accepting what the stage already contains, not importing something from outside. This directly counters the Napier/Hines "enter with a plan" approach.

@@ -62,6 +62,8 @@ Wickens (2002) is the correction that stops this being too crude to use. Interfe
 
 Cherry (1953) showed that attending to one voice discards the others rather than backgrounding them: listeners shadowing one message could not report what the other had been about, or what language it was in. Attention is a gate, not a dimmer, which is why there is no half-listening to two things.
 
+Watching it run out is more instructive than reading about it. [The Alphabet Game](/practice/formats/alphabet-game) occupies a fixed slice of capacity continuously, and what a performer drops when the rest runs short — listening, character, or the letters themselves — is a fair description of what their improv is actually built on.
+
 ## Specific sources
 
 Kahneman, *Attention and Effort* (1973) — the foundational capacity model. Cowan (2001), *Behavioral and Brain Sciences* — the four-chunk figure. Sweller (1988), *Cognitive Science* — load as subtraction. Cherry (1953), *Journal of the Acoustical Society of America* — selective attention. Wickens (2002), Multiple Resource Theory — the refinement: not a single pool but overlapping resource pools. **Attribution note:** The 56K modem analogy is original to this knowledge graph — no published source uses it. The Shannon-Weaver model (1948) that inspired it has known limits: linear, one-way, focused on fidelity rather than meaning construction, no feedback loop. Clark & Brennan's grounding theory (1991) may be a stronger metaphor: communication as collaborative and iterative rather than transmissive. The atom already acknowledges these limits parenthetically.
