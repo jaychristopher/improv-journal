@@ -35,6 +35,20 @@ Your questions are read more carefully than your answers. Answers are prepared a
 
 They also do something structural, which is what most lists of interview questions miss entirely.
 
+## The Short Answer
+
+If you want three questions to ask in an interview and nothing else, ask these.
+
+**"What is the problem you are hoping this hire solves?"** Job descriptions describe a role; this asks for the brief. The answer is usually more specific than anything written down, and it tells you what you would actually be judged on.
+
+**"Was this role created, or is it a replacement — and what happened to the person before?"** The highest information per word available to a candidate. A new role means undefined expectations. A replacement means a story, and how readily the interviewer tells it is itself the answer.
+
+**"What would make you say, a year from now, that this hire went unusually well?"** Success criteria, stated aloud, by the person who will apply them. If they cannot answer it, nobody has decided, and you would be walking into a job whose definition is still open.
+
+Ask any of them of more than one interviewer. Asking the same question of the recruiter, the hiring manager and a future peer is the single most informative move available during an interview, and almost nobody does it — the differences between the three answers are worth more than any individual answer.
+
+Everything below is the fuller set, grouped by what you are trying to find out rather than by when in the process you ask it. Most of these work at any point: the questions people save for the end are usually just the ones they were nervous about asking earlier.
+
 ## The Status Mechanic
 
 `status` is complementary: when one person's position rises, the other's falls. An interview starts with that gap wide open. You want something, they decide, and everything you say is being assessed. That is not a mood — it is the structure of the room, and it does not go away because everyone is being friendly.
