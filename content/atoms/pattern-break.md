@@ -17,7 +17,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Intentionally breaking an established pattern for dramatic or comic effect. The audience has been trained to expect the pattern; the break exploits that expectation. The "rule of three" is the most common structure: two iterations establish, the third subverts.
@@ -25,6 +25,21 @@ Intentionally breaking an established pattern for dramatic or comic effect. The 
 ## The rule of three mechanics
 
 First occurrence introduces a behavior or idea. Second confirms it as a deliberate pattern. Third provides the payoff — either by completing the pattern with a final escalation or by breaking it. Comedy lives in the audience's anticipation being either fulfilled in an extreme way or subverted. "Three is the smallest number required to create and then diverge from a pattern."
+
+## The four ways to break it
+
+"Subvert the pattern" is not a single move, and the four available differ in how much of the pattern they keep.
+
+- **Escalate past it.** The pattern fires, and goes further than its own logic allows. The safest break, because nothing is denied — the audience gets what they predicted and then some. Most buttons are this.
+- **Invert it.** The opposite happens. Strongest when the inversion is the pattern's logic taken seriously rather than abandoned: the character who has corrected everybody all scene is finally, quietly, wrong.
+- **Withhold it.** The pattern simply does not fire at the moment everyone is braced for it. The absence is the joke, and this is the hardest to hold your nerve through, because a second of silence feels like a mistake from inside the scene.
+- **Move it.** Somebody else does it, or it arrives in a context that has nothing to do with where it started. This is where pattern break meets `callback`, and it is the one that most reliably ends a show rather than a scene.
+
+## Timing is the whole of it
+
+The break has to arrive after the audience is ahead of you, and there is a specific tell for when that is: they laugh on the second occurrence in anticipation, before the thing itself has happened. That laugh means the pattern has been bought and is now theirs.
+
+Break before it and nothing has been subverted, because nothing was yet expected. Break long after it and the pattern has stopped being a prediction and become the scene — at which point the audience is not braced any more, they are waiting, and a break reads as the performers running out of material rather than as a payoff.
 
 ## When pattern break SERVES the scene
 
