@@ -19,7 +19,7 @@ links:
   - { id: ref-csikszentmihalyi-flow, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 The psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables spontaneous creative work. Not the absence of anxiety, but its transmutation into presence.
@@ -27,6 +27,18 @@ The psychophysiological condition a performer enters before and during a show �
 ## The core mechanism: arousal regulation
 
 Too little activation produces flat, disengaged work. Too much produces tension, rushing, and self-monitoring. Sports psychologists call the target the Individual Zone of Optimal Functioning (IZOF) — a band of arousal unique to each performer where they do their best work (Hanin, *Emotions in Sport*, 2000).
+
+## The inverted U, and why the optimum is lower than performers think
+
+The arousal-performance relationship is Yerkes and Dodson's (1908): performance rises with stimulation up to a point and falls after it. The curve is why "calm down" and "get hyped" are both bad notes in isolation — either can be correct, depending entirely on which side of the peak the room is currently on.
+
+The half of their finding that gets dropped is the half that matters here. The optimum moves with the difficulty of the task. Yerkes and Dodson found that hard discriminations were learned fastest under weak stimulation and easy ones under strong, which inverts the intuition: the more demanding the work, the lower the arousal it wants.
+
+Improvisation is demanding in precisely the relevant sense. It asks a performer to hold attention outward, track a partner, and generate unrehearsed material at the same time. Its optimum therefore sits low — considerably lower than the pre-show culture of most theatres assumes. A cast that arrives at a shout is past the peak rather than approaching it, and the first thing lost on the way down is reception, which `cognitive-bandwidth` describes and which is the one faculty the form cannot proceed without.
+
+This is also where the Individual Zone of Optimal Functioning fits. Yerkes-Dodson gives the shape of the curve; Hanin's work says the peak sits in a different place for each performer. One is the law, the other is the calibration, and a director who knows only the first will over-correct half the cast.
+
+**The caveat is worth stating.** The 1908 experiments used mice learning a black-and-white discrimination under electric shock, and the inverted U as a general law of human performance is later inference rather than their result. The shape has held up broadly. The precise curve for one person doing one difficult thing has not been measured and probably cannot be.
 
 ## The adrenaline reframe
 
@@ -52,4 +64,4 @@ Csikszentmihalyi's conditions for flow — clear goals, immediate feedback, chal
 
 ## Specific sources
 
-Spolin, *Improvisation for the Theater* (3rd ed., 1999), Ch. 1-3. Csikszentmihalyi, *Flow* (1990). Brooks, "Get Excited" (2014). TJ & Dave, *Speed of Life* — trust and "the moment before." Johnstone, *Impro*, Ch. 1 and 4 — spontaneity as natural state that education suppresses. **Counter-position:** "Just do it" school argues pre-show rituals are overthought — the best preparation is constant performing until the state becomes automatic. Anti-flow critique: real performance involves constant micro-decisions and active listening, which feels more like heightened effort than dissolution of self. Johnstone locates the problem in social conditioning; Spolin locates it in misdirected attention — compatible but different intervention points.
+Yerkes & Dodson (1908), *Journal of Comparative Neurology and Psychology* 18, 459-482 — the original stimulus-strength experiments. Spolin, *Improvisation for the Theater* (3rd ed., 1999), Ch. 1-3. Csikszentmihalyi, *Flow* (1990). Brooks, "Get Excited" (2014). TJ & Dave, *Speed of Life* — trust and "the moment before." Johnstone, *Impro*, Ch. 1 and 4 — spontaneity as natural state that education suppresses. **Counter-position:** "Just do it" school argues pre-show rituals are overthought — the best preparation is constant performing until the state becomes automatic. Anti-flow critique: real performance involves constant micro-decisions and active listening, which feels more like heightened effort than dissolution of self. Johnstone locates the problem in social conditioning; Spolin locates it in misdirected attention — compatible but different intervention points.
