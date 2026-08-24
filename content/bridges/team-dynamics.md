@@ -106,6 +106,51 @@ Worth being straight about, because the effort is otherwise spent badly.
 
 If that is the situation, the honest options are to protect the people below you from it, to raise it with somebody who can change it, or to leave. Practising better turn-taking underneath a manager who punishes dissent is not a fix. It is a way of being tired.
 
+## Questions People Ask About Team Dynamics
+
+### What are the four stages of team development?
+
+Tuckman's model, from 1965, and it is worth having in full rather than as a phrase:
+
+1. **Forming.** Polite, tentative, and mostly directed at whoever is nominally in charge. Nobody disagrees yet because nobody knows what disagreement costs here.
+2. **Storming.** Positions surface and conflict with each other. Uncomfortable, frequently mistaken for the team going wrong, and usually the first evidence that people believe it is safe to say what they think.
+3. **Norming.** The group settles how it actually operates — who defers to whom, what gets raised in the room and what gets raised afterwards.
+4. **Performing.** The structure runs without being managed, so attention goes to the work rather than to the group.
+
+Two things the phrase obscures. The stages are not one-way: a new member, a reorganisation or a departure sends an established team back several steps, which is why a high-performing group can become unrecognisable in a month. And plenty of teams never leave norming — they arrive at a stable arrangement that avoids the storm, and stability gets mistaken for the final stage.
+
+### What is the difference between team dynamics and group dynamics?
+
+Group dynamics is the general field — Lewin's term, covering how any set of people behaves collectively, including crowds, families and committees. Team dynamics is the subset where the group has a shared task and interdependent roles.
+
+The distinction matters because interdependence changes the mechanics. In a group, one person disengaging costs the group their contribution. In a team, it costs everybody whose work depends on theirs, which is why the same behaviour that is mildly antisocial in a committee is corrosive on a team.
+
+Most advice written about group dynamics transfers; most advice written about team dynamics does not go the other way, because it assumes a shared output that a group may not have.
+
+### What does a team with bad dynamics actually look like?
+
+Rarely like conflict, which is the reason it goes unaddressed for so long.
+
+The recognisable version is quiet. Decisions get made and then relitigated privately afterwards. The same two or three people speak in every meeting and nobody remarks on it. Problems reach the manager individually rather than the team collectively. Work gets redone without anybody saying whose was replaced. Meetings finish early and the real conversation happens in the corridor.
+
+None of that shows up on an engagement survey as a problem, and all of it is `safety-in-the-room` being absent rather than personalities clashing.
+
+### What causes bad team dynamics?
+
+Structure, far more often than character, which is the argument the whole page rests on.
+
+Three causes account for most of it. Unclear ownership, so effort goes into working out who decides rather than into deciding. Status that does not match contribution, where the person whose work everything depends on is not the person the room defers to. And an unpunished first offence — one occasion where somebody raised a problem and it cost them, watched by everybody else.
+
+Personality genuinely explains some of it, but far less than teams assume, and the reason the structural causes get overlooked is that they have no obvious villain.
+
+### Does team size change the dynamics?
+
+Yes, and less in the way people expect. The usual assumption is that bigger teams are less effective because of coordination cost, and that is real — but Woolley et al. (2010) found something more useful, which is that collective intelligence tracked equality of conversational turn-taking rather than the size or the ability of the members.
+
+Size matters mainly because it makes unequal turn-taking easier to hide. In a group of four, somebody who has not spoken is conspicuous. In twelve, they are invisible, and the meeting can feel productive while two thirds of the room contributes nothing.
+
+So the practical lever is not shrinking the team. It is noticing the distribution, which is the one thing a person with no authority can change from inside it.
+
 ## The Team You're Already In
 
 You don't need to join an improv troupe to apply this. You're already in groups — families, friend circles, work teams, committees. Each one has status dynamics you've never named, interdependence patterns you've never examined, and safety levels you've never measured.
