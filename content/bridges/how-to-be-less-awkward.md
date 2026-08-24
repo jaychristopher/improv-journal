@@ -124,6 +124,20 @@ None of this is learnable by intending it harder in the moment. The attention sh
 
 **Then use it once a day, on something small.** One exchange where you answer with your first response and do not soften it afterwards. The goal is not a better conversation. It is one repetition of not editing.
 
+## Can Awkwardness Be Unlearned?
+
+Yes, and the useful answer is more specific than that. Different parts of it move at very different speeds, and one part does not move at all — which is fine, because it is not the part causing the problem.
+
+**Recovery changes almost immediately.** This is the first thing to shift and the most disproportionate, because it is not a skill so much as a reinterpretation: a stalled moment stops being evidence about you and becomes a thing that happened in a conversation. People often report this within a few weeks, and it changes the experience of the same events without the events changing at all.
+
+**The pull inward changes slowly.** Attention going to yourself under pressure is a reflex, and reflexes weaken with repetition rather than disappearing. The difference between somebody starting out and somebody five years in is not that the loop stopped starting — it is that it starts, gets noticed, and gets redirected before it has finished a lap. That takes months of ordinary practice, not an insight.
+
+**Baseline sensitivity does not change, and should not.** How much you register about a room, how strongly other people's states land on you — none of that goes away, and removing it would cost you the thing that makes you worth talking to. The argument this whole page rests on is that awkwardness is that sensitivity aimed at yourself. Aimed outward, the same faculty is attentiveness, which is why people who describe themselves as awkward so often turn out to be unusually good listeners once the direction is fixed.
+
+So the measure worth tracking is not whether you felt awkward. It is how long it took to come back, which is the thing that actually moves, and which the section above on recovering from a moment is training directly.
+
+One boundary. If the loop does not respond to redirection at all, or the dread arrives well before the situation does, that is the distinction the next section draws, and it is not what this page is claiming to fix.
+
 ## Is It Social Awkwardness or Social Anxiety?
 
 Worth separating, because the page you are reading is about one of them and quietly useless for the other.
