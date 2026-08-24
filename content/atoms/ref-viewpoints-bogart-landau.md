@@ -22,15 +22,31 @@ work:
   published: "2005"
   isbn: "1559362413"
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
-**Anne Bogart & Tina Landau. *The Viewpoints Book: A Practical Guide to Viewpoints and Composition.* Theatre Communications Group, 2005.**
+**Anne Bogart & Tina Landau. *The Viewpoints Book: A Practical Guide to Viewpoints and Composition.* Theatre Communications Group, 2005. ISBN 1559362413.**
 
-A systematic articulation of Viewpoints as both training technique and rehearsal method. Adapts and expands Mary Overlie's original Six Viewpoints (Space, Shape, Time, Emotion, Movement, Story — developed in the 1970s at the Experimental Theater Wing, NYU) into nine physical Viewpoints organized into two categories, plus Vocal Viewpoints.
+The standard written source for Viewpoints, and the reason the method spread beyond the handful of companies practising it. Bogart and Landau adapt Mary Overlie's Six Viewpoints — built in the 1970s out of postmodern dance at NYU's Experimental Theater Wing — into nine physical Viewpoints in two categories, plus a vocal set.
 
-The book's two halves are Viewpoints and Composition. The first supplies the vocabulary and the training format; the second is the practice of assembling short made pieces from assignments, where the material generated in training gets selected and shaped. Editions after 2005 are unchanged in substance.
+For what the nine channels are and how a session runs, see [Anne Bogart Viewpoints: The Nine Channels](/viewpoints). This page is about the book.
 
-For the nine channels defined individually, the vocal set, and how sessions are actually run, see [Anne Bogart Viewpoints: The Nine Channels](/viewpoints). For the technique's place in the wider system, see `viewpoints`.
+## What is actually in it
 
-**Lineage:** Overlie's Six Viewpoints (SSTEMS) originated in postmodern dance, influenced by Merce Cunningham and the Judson Dance Theater. Bogart encountered Overlie at NYU in the 1970s and began applying the framework to actor training. Bogart and Landau's expansion from six to nine reflects the shift from dance to theater: actors needed finer-grained spatial vocabulary. Overlie published her own account in *Standing in Space: The Six Viewpoints Theory & Practice* (2016).
+The title promises a practical guide and delivers one, which is unusual for a theatre methodology text. Roughly the first third defines the vocabulary; the rest is instructions you can run.
+
+- **The Viewpoints half** gives each channel a definition and then an exercise sequence — how to open a session, how to introduce channels one at a time, what to say to a group that has stalled. The material is written to be taught from, not read about.
+- **The Composition half** is the part most readers do not expect and the part that makes the book worth owning. It supplies assignment structures for building short made pieces, which is what the training in the first half is generating raw material *for*.
+- **Source Work and viewpoints on text** get a shorter treatment near the end, covering how a company researches a play before rehearsing it.
+
+## Who it rewards, and who it does not
+
+It is a director's and teacher's book. Somebody running a group will find sessions they can lead by the end of the week. Somebody looking to improve their own performing will find the training described but not much account of what it feels like from inside it, because the book's addressee is the person in the room facilitating.
+
+It is also assertive rather than argued. Bogart and Landau state what Viewpoints does and how to do it; they do not defend the claims against alternatives or report what happens when it fails. Readers who want the critical case have to supply it themselves — the [ways Viewpoints falls flat in practice](/viewpoints) are one attempt.
+
+**Key contributions to the knowledge graph:** the vocabulary that makes `physicality` teachable rather than a note to give; the case that `presence` is trainable by narrowing attention rather than by trying harder; the exercise structures behind `space-work`; and the account of `ensemble` as something built by shared physical attention instead of by talking about trust.
+
+**On editions and what to buy.** The 2005 TCG paperback is the only substantive edition; later printings are unchanged, so a used copy is the same book. Overlie's own account, *Standing in Space: The Six Viewpoints Theory & Practice* (2016), came out eleven years later and reads very differently — more philosophical, less instructional, and pointedly not a systematisation. Anybody using Viewpoints seriously should read both, in that order, because Bogart and Landau's nine are a translation and the original is worth meeting on its own terms.
+
+**The attribution problem.** The book credits Overlie clearly, but its success meant the method travelled under Bogart's name, and "Bogart Viewpoints" is now what most people mean by the word. That is worth stating plainly whenever the technique is taught: the nine channels are an adaptation, made for actors, of a framework that was made for dancers by somebody else.
