@@ -100,6 +100,56 @@ The test that resolves it: stop initiating for a while and observe rather than s
 
 The dramatic version of friendship, where you appear at the crisis and are magnificent, is the part people plan for and the part that matters least. By the time the crisis arrives, whether you are someone they call has already been decided by two years of small exchanges.
 
+## Questions People Ask About Being a Good Friend
+
+### What are the qualities of a good friend?
+
+The lists usually given — loyal, honest, supportive, trustworthy — are outcomes rather than qualities, which is why reading them changes nothing. Nobody has ever become loyal by deciding to be.
+
+The behaviours underneath them are much more specific and can be practised:
+
+- **They ask a second question.** The first is politeness; the second is interest, and almost nobody gets to it.
+- **They remember the small thing.** Not the birthday — the interview on Tuesday, the difficult conversation you were dreading.
+- **They can receive as well as give.** A friend who only ever helps is holding a position, and it quietly makes the friendship one-directional.
+- **They say the unwelcome thing once**, and then respect your decision rather than repeating it.
+- **They do not make your difficulty about their reaction to it.**
+
+Each is a thing you can do on Thursday, which is the test a quality list fails.
+
+### How do you know if you are being a good friend?
+
+Look at what they tell you rather than at what you do for them.
+
+Effort is a bad indicator because it is the part you can see. The useful signal is whether they bring you things while they are still unresolved — a problem in progress rather than a story with the ending attached. People route unfinished things to whoever handles them well, and stop routing them to whoever solves, minimises or redirects, which is the `blocking` this page is mostly about.
+
+If a friend now tells you about difficulties only after they are over, that is information, and it usually arrived long before anybody noticed.
+
+### How do you tell a difficult friendship from a genuinely bad one?
+
+Difficulty is normal and asymmetry over a long period is not.
+
+Most good friendships go through stretches of being effortful — someone is unwell, overloaded, or hard work for a year. That is what the thing is for. The distinction worth drawing is not about a bad patch but about a pattern: whether your account of yourself is safe with them, whether disagreement is survivable, and whether you feel worse about yourself specifically after contact rather than merely tired.
+
+`trust` is an accumulated estimate, and it can accumulate downward. If the honest answer is that you manage how you come across in order to keep the peace, that is not a friendship being difficult, it is one that has stopped being safe — and the fix is not more effort from you.
+
+Where there is anything coercive or frightening in it, that is beyond what a page about improv should be advising on, and worth taking to somebody qualified.
+
+### How do you reconnect with a friend you have drifted from?
+
+Send the message without the apology.
+
+Almost everybody drafts an explanation for the gap, and the explanation is what stops it being sent, because no version of it sounds good. The gap needs no accounting for. "I was thinking about you — how did the thing with your mum turn out?" works precisely because it skips the meta-conversation and resumes rather than restarts.
+
+Two things make it land. Reference something specific from before, which proves the friendship is still loaded rather than being reopened from scratch. And propose something concrete rather than "we should catch up", which is the phrase that ends more reconnections than silence does. [Questions to ask friends](/questions-to-ask-friends) has a set written for exactly this conversation.
+
+### How many close friends should you have?
+
+Fewer than the anxiety suggests. Dunbar's layered model puts the innermost circle — the people you would turn to in a crisis — at around **five**, with roughly fifteen in the next layer out, about fifty beyond that, and around 150 in the active network you contact at least yearly. Each layer is about three times the one inside it.
+
+Three or four genuinely close friends is not a shortfall. It is the normal size of that layer, and the sense that everybody else has more is mostly a comparison against the wrong number — you are seeing other people's fifty and comparing it with your five.
+
+The constraint is time rather than character, which is the same finding as the hours research: those layers are capped by what can be maintained, not by how likeable anybody is.
+
 ## How to Practise It
 
 **Receiving without evaluating.** `gift-giving` hands over an undefined object that the receiver names and values specifically. It is the whole of `be-thankful` in two minutes.
