@@ -12,7 +12,7 @@ entry_atoms: [status, commitment, initiation, be-brave, signal]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # How to Be More Assertive: The Status Secret from Improv
@@ -119,6 +119,53 @@ Sometimes you need to raise your status: negotiations, presentations, standing y
 Sometimes you need to lower your status: building trust, making someone comfortable, showing vulnerability. The tools are the opposite: more movement, quicker responses, more reactive eye contact.
 
 The point isn't to always be assertive. It's to **choose** your level of assertiveness rather than having it chosen for you by your default patterns. That's what Johnstone meant when he said status is a behavior, not an identity. You're not stuck with your defaults. You just haven't practiced the alternatives.
+
+## Questions People Ask About Assertiveness
+
+### What are the four communication styles?
+
+Passive, aggressive, passive-aggressive and assertive — the standard model, and it is more useful than it looks once you notice what actually separates them.
+
+- **Passive.** Your position is not stated. The cost lands on you and nobody else knows there was a cost.
+- **Aggressive.** Your position is stated and somebody else's is overridden. The cost lands on them.
+- **Passive-aggressive.** Your position is expressed indirectly — through delay, tone, compliance-with-visible-reluctance — so it cannot be argued with, because it was never openly made.
+- **Assertive.** Your position is stated and theirs is left standing. Both are now on the table.
+
+The distinction people usually miss is that assertive and aggressive are not points on a volume dial. A quiet, controlled sentence can be aggressive and a loud one can be assertive. What separates them is whether the other person's position survives, which is the same test the section above gives: did they get smaller.
+
+### Is assertiveness received the same way regardless of who you are?
+
+No, and pretending otherwise makes the advice less useful.
+
+The penalty is documented. Rudman (1998) found that self-promoting women were evaluated more negatively than self-effacing women even in contexts explicitly calling for competitiveness, while self-promoting men paid no such cost. Rudman and Glick (2001), in the *Journal of Social Issues*, showed the mechanism: the same agentic behaviour was read as insufficiently *nice*, and the penalty appeared specifically where a role had been described in feminine terms.
+
+Amanatullah and Morris (2010) add the part that is actually actionable. Women anticipated backlash and asked for less — **but only when negotiating for themselves.** Advocating on behalf of somebody else, the gap disappeared.
+
+Two practical readings follow. First, if assertiveness has cost you before, that may be accurate observation rather than a confidence problem, and treating it as the latter is why generic advice bounces off. Second, framing a request as being on behalf of the team, the project or the client is not a rhetorical trick — it is the condition under which the research found the penalty went away.
+
+### How do you be assertive in writing?
+
+Take out the hedges and leave the warmth. Most people do the opposite under pressure.
+
+The hedges are the words doing the damage: *just*, *sorry to bother*, *I was wondering if maybe*, *does that make sense?*. Each one invites the reader to treat the request as optional, and stacked together they turn a reasonable ask into an apology for existing. "I need this by Thursday" is not rude; "Just wondering if you might possibly have a chance to look at this?" is not polite, it is unclear.
+
+What should stay is anything that acknowledges the other person's situation — a reason, a deadline you can flex, an offer to help. Warmth is not hedging. `signal` is the useful frame: strip the noise and keep the content, including the human content.
+
+### What do you do when being assertive makes things worse?
+
+Check which of two things happened, because they need opposite responses.
+
+If the delivery was aggressive — your position landed and theirs did not survive — the fix is technique, and the section above covers it. That is the more common case and it is genuinely correctable.
+
+If the delivery was fine and the reaction was still bad, you are getting information about the environment rather than about your skill. Some rooms punish clarity from particular people, and no amount of `status` work fixes a room that has decided in advance. Recognising that early is worth more than another attempt, because the usual response — becoming more careful — is the one that guarantees it continues.
+
+### How do you hold the line when somebody pushes back?
+
+Repeat the same sentence rather than producing a new one.
+
+The instinct under pushback is to justify, and each new justification is a fresh surface to argue with — you have handed them three more things to disagree with and the original point is now buried. Saying the same thing again, calmly and in the same words, is much harder to attack and reads as settled rather than stubborn.
+
+`commitment` is what this costs: tolerating a few seconds where nothing new is being offered and the other person has to respond to what is already there. Most pushback is not an argument. It is a test of whether the position was real.
 
 ## The Deeper Insight
 
