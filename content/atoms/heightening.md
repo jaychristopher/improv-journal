@@ -4,6 +4,7 @@ title: Heightening
 type: pattern
 status: draft
 tags: [patterns, scene-work, game, momentum]
+aliases: ["Escalation", "Raising the stakes"]
 links:
   - { id: game-of-the-scene, relation: extends }
   - { id: systemic-health-indicators, relation: illustrates }
@@ -22,7 +23,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Heightening is the pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.

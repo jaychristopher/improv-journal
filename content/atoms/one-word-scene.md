@@ -5,6 +5,7 @@ how_to_play: "Two players perform a scene speaking one word each, strictly alter
 type: exercise
 status: draft
 tags: [exercises, beginner, simplicity, bandwidth, principles]
+aliases: ["One Word At A Time", "One Word Story"]
 links:
   - { id: be-simple, relation: enables }
   - { id: overcomplication, relation: contrasts }
@@ -19,7 +20,7 @@ links:
   - { id: one-word-story, relation: contrasts }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Trains:** Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across UCB, iO, Annoyance, and Spolin traditions.

@@ -4,6 +4,7 @@ title: "The Blocking Taxonomy"
 type: framework
 status: draft
 tags: [frameworks, antipatterns, johnstone, diagnosis]
+aliases: ["Denial", "Blocking"]
 links:
   - { id: blocking, relation: extends }
   - { id: wimping, relation: extends }

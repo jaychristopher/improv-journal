@@ -4,6 +4,7 @@ title: Coherence
 type: definition
 status: draft
 tags: [definitions, systems-thinking, shared-reality, diagnostics]
+aliases: ["Internal logic"]
 links:
   - { id: systemic-health-indicators, relation: illustrates }
   - { id: shared-reality-fragility, relation: extends }

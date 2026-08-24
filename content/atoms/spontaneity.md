@@ -4,6 +4,7 @@ title: Spontaneity
 type: definition
 status: draft
 tags: [fundamentals, johnstone, building-blocks]
+aliases: ["Impulse"]
 links:
   - { id: internal-computation, relation: contrasts }
   - { id: obvious-choice, relation: enables }
@@ -20,7 +21,7 @@ links:
   - { id: ref-limb-braun-jazz-improvisation, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Spontaneity is the capacity to act on a first impulse before evaluating it. Johnstone's central claim is that this is not a talent some people have and others lack — it is the default state, and most adults have been trained out of it. The work is therefore subtractive. You are not acquiring a skill; you are removing an interference.

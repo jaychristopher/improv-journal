@@ -4,6 +4,7 @@ title: Physicality
 type: technique
 status: draft
 tags: [techniques, character, body, movement, advanced]
+aliases: ["Physicalization"]
 links:
   - { id: character, relation: extends }
   - { id: do-feel-say, relation: extends }

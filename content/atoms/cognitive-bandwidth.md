@@ -4,6 +4,7 @@ title: Cognitive Bandwidth
 type: law
 status: draft
 tags: [laws, systems-thinking, constraints, cognition]
+aliases: ["Task saturation"]
 links:
   - { id: bandwidth, relation: extends }
   - { id: irreversibility, relation: extends }

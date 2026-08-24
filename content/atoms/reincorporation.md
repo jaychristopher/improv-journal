@@ -4,6 +4,7 @@ title: Reincorporation
 type: technique
 status: draft
 tags: [techniques, intermediate, narrative, johnstone, structure]
+aliases: ["Callback"]
 links:
   - { id: callback, relation: contrasts }
   - { id: irreversibility, relation: requires }

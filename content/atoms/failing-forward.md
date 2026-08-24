@@ -4,6 +4,7 @@ title: Failing Forward
 type: technique
 status: draft
 tags: [techniques, performance, mastery, recovery, advanced]
+aliases: ["Follow the fear"]
 links:
   - { id: fear-of-failure, relation: contrasts }
   - { id: commitment, relation: requires }

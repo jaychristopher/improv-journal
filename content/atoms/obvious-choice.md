@@ -4,6 +4,7 @@ title: The Obvious Choice
 type: technique
 status: draft
 tags: [techniques, beginner, principles, simplicity, bandwidth]
+aliases: ["First thought"]
 links:
   - { id: be-simple, relation: illustrates }
   - { id: overcomplication, relation: contrasts }
@@ -17,7 +18,7 @@ links:
   - { id: ref-ucb-manual, relation: contrasts }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Simple**

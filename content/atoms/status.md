@@ -4,6 +4,7 @@ title: Status
 type: definition
 status: draft
 tags: [definitions, dynamics, johnstone, relationships]
+aliases: ["Status transaction"]
 links:
   - { id: be-honest, relation: extends }
   - { id: be-simple, relation: extends }
@@ -21,7 +22,7 @@ links:
   - { id: playing-against-type, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Status is the relative social position a character occupies in a scene, expressed through behavior rather than title or rank. A concept formalized by Keith Johnstone as a core engine of dramatic interaction.

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AlsoCalled } from "@/components/AlsoCalled";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
@@ -74,6 +75,7 @@ export default async function SystemPage() {
                   &rarr;
                 </span>
               </div>
+              <AlsoCalled aliases={a.frontmatter.aliases} />
             </Link>
           ))}
         </div>
@@ -105,6 +107,7 @@ export default async function SystemPage() {
                   &rarr;
                 </span>
               </div>
+              <AlsoCalled aliases={a.frontmatter.aliases} />
             </Link>
           ))}
         </div>
@@ -146,6 +149,7 @@ export default async function SystemPage() {
                     &rarr;
                   </span>
                 </div>
+                <AlsoCalled aliases={a.frontmatter.aliases} />
               </Link>
             ))}
           </div>

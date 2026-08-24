@@ -4,6 +4,7 @@ title: Continuous Signaling
 type: law
 status: draft
 tags: [laws, systems-thinking, constraints, communication]
+aliases: ["You cannot not communicate"]
 links:
   - { id: shared-reality-fragility, relation: extends }
   - { id: irreversibility, relation: requires }

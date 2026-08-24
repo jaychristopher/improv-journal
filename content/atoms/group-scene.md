@@ -4,6 +4,7 @@ title: Group Scene
 type: definition
 status: draft
 tags: [definitions, scene-work, ensemble, structure]
+aliases: ["Group game", "Group games"]
 links:
   - { id: ensemble, relation: requires }
   - { id: group-mind, relation: requires }
