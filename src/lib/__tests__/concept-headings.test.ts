@@ -30,8 +30,15 @@ describe("concept page structure", () => {
     // Every heading below the H1 used to be navigation the template added.
     // The sections existed only as bold labels, which contribute nothing to
     // the outline Google reads.
+    //
+    // This tolerated one exception for a long time: active-listening, which
+    // was 419 words of unbroken prose carrying 120 inbound links — the second
+    // worst ratio of internal equity to depth in the atom layer. It has an
+    // outline now, so the allowance is gone. Every concept atom has headings,
+    // and a new one arriving without them should fail rather than quietly
+    // inherit somebody else's exception.
     const withoutHeadings = atoms.filter((a) => !/^## /m.test(a.content));
-    expect(withoutHeadings.map((a) => a.frontmatter.id)).toHaveLength(1);
+    expect(withoutHeadings.map((a) => a.frontmatter.id)).toHaveLength(0);
   });
 
   it("does not leave a bold label sitting where a heading belongs", async () => {
