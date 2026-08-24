@@ -18,7 +18,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The shadow of **Be Changeable**. Steering is the subtle act of accepting your partner's offers on the surface while redirecting the scene toward your predetermined destination.
@@ -53,4 +53,4 @@ Do the thing you're routing around. Name the obvious thing you've been avoiding.
 
 ## Attribution note
 
-"Steering" is NOT in Johnstone's canonical blocking taxonomy. *Impro for Storytellers*, Ch. 6 ("Making Things Happen") catalogs wimping, pimping, bridging, hedging, cancelling, looping, and joining — but not steering. The term appears to be informal community jargon synthesized for this knowledge graph. The concept draws on Johnstone's broader discussion of how improvisers try to control narrative outcomes. **Counter-position:** Some degree of shaping is inherent in all scene work — someone has to give the scene direction. Johnstone himself notes that many defensive behaviors "can be used for positive impact if we are aware of what we are doing." The pathology is unilateral, pre-planned control; the craft is responsive shaping.
+"Steering" is NOT in Johnstone's canonical blocking taxonomy — see `blocking-taxonomy` for the five that are. *Impro for Storytellers*, Ch. 6 ("Making Things Happen") catalogs wimping, pimping, bridging, hedging, cancelling, looping, and joining — but not steering. The term appears to be informal community jargon synthesized for this knowledge graph. The concept draws on Johnstone's broader discussion of how improvisers try to control narrative outcomes. **Counter-position:** Some degree of shaping is inherent in all scene work — someone has to give the scene direction. Johnstone himself notes that many defensive behaviors "can be used for positive impact if we are aware of what we are doing." The pathology is unilateral, pre-planned control; the craft is responsive shaping.

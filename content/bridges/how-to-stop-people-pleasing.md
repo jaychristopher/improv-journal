@@ -28,7 +28,7 @@ In improv, blocking means refusing an offer. The classic version is obvious: you
 
 This is exactly what people pleasing is. You have a reaction — disagreement, discomfort, a boundary, a need — and you block your own offer to keep the interaction comfortable. Your partner says something you disagree with, and instead of your real response, you produce a pleasant noise. Your boss asks you to take on more work, and instead of your honest "I can't," you produce an automatic "Sure, happy to."
 
-Johnstone catalogued a behavior he called **wimping**: accepting without adding. The person who says yes to everything without contributing their own reality. In improv, wimping kills scenes because it removes one player's voice from the collaboration. In life, people pleasing does the same thing — it removes *your* voice from every relationship you're in.
+Johnstone catalogued a behavior he called [wimping](/how-it-works/diagnosis/wimping): accepting without adding. The person who says yes to everything without contributing their own reality. In improv, wimping kills scenes because it removes one player's voice from the collaboration. In life, people pleasing does the same thing — it removes *your* voice from every relationship you're in.
 
 ## Why You Do It
 

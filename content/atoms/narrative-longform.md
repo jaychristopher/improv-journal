@@ -34,7 +34,7 @@ The Harold is a collage — multiple unrelated scene threads connected by theme,
 
 The core metaphor from *Impro*, Ch. 4: *"The improviser has to be like a man walking backwards. He sees where he has been, but he pays no attention to the future."* Three key concepts:
 - **Platform** — establishing where/who/what before anything happens. Johnstone emphasizes establishing shots before character introduction, following film convention.
-- **Tilt** — the event that pushes the platform into action, "the balance of normality has been tilted." *Impro for Storytellers* provides pre-set tilt lists to help force the action.
+- **`tilt`** — the event that pushes the platform into action, "the balance of normality has been tilted." *Impro for Storytellers* provides pre-set tilt lists to help force the action.
 - **Reincorporation** — the essential narrative skill. "His story can take him anywhere, but he must still balance it, and give it shape, by remembering incidents that have been shelved and reincorporating them." Toward the end, reincorporation accelerates — when all reincorporations have been made, the story is usually finished.
 
 ## Narrative longform structures

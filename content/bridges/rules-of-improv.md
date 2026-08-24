@@ -82,7 +82,7 @@ Making your partner look good doesn't mean avoiding conflict, being agreeable, o
 
 **Why it's oversimplified:** Negation in improv is a specific term with a specific meaning: destroying the established reality. "We're not in a hospital" when your partner established a hospital — that's negation. "I refuse to go to the hospital" — that's drama.
 
-Johnstone identified an entire taxonomy of blocking behaviors that go far beyond saying "no": wimping (accepting without adding), cancelling (making an offer and immediately retracting it), hedging (making vague, uncommitted choices), pimping (forcing your partner to do the work). All of these are forms of negation that don't involve the word "no."
+Johnstone identified an entire taxonomy of blocking behaviors that go far beyond saying "no", set out in full at [the blocking taxonomy](/how-it-works/diagnosis/blocking-taxonomy): wimping (accepting without adding), cancelling (making an offer and immediately retracting it), hedging (making vague, uncommitted choices), pimping (forcing your partner to do the work). All of these are forms of negation that don't involve the word "no."
 
 Meanwhile, Napier argues that the *fear* of negation can be worse than negation itself. Performers so terrified of saying no that they agree with everything produce scenes with no tension, no stakes, and no point of view.
 

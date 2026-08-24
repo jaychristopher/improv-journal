@@ -31,7 +31,7 @@ updated: "2026-08-23"
 The sequel/companion to *Impro* (1979), focused on practical application and Theatresports. Expands the offer/block framework into a detailed taxonomy of scene-killing behaviors and introduces narrative structure techniques.
 
 **Key contributions:**
-- **Chapter 6: "Making Things Happen" (p. 101+)** — the full blocking taxonomy: wimping, cancelling, bridging, hedging, pimping, looping, joining. Each is a distinct way the ego defends against spontaneity. This is the most detailed diagnostic framework for why scenes fail.
+- **Chapter 6: "Making Things Happen" (p. 101+)** — the full `blocking-taxonomy`: wimping, cancelling, bridging, hedging, pimping, looping, joining. Each is a distinct way the ego defends against spontaneity. This is the most detailed diagnostic framework for why scenes fail.
 - **Overaccepting** — a concept not in *Impro*: responding to a small offer with enormous emotional weight
 - **Narrative structure** — "reincorporate like mad"; the improviser as someone "walking backwards" who shapes story by remembering what's been shelved
 - **Theatresports** — the format where audience scoring shapes the show, making the feedback loop explicit

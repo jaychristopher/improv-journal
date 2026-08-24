@@ -34,7 +34,7 @@ TJ Jagodowski and David Pasquesi (TJ & Dave) performed together for over 15 year
 
 ## Two approaches within the form
 
-- **Monoscene-ish (TJ & Dave style):** A single continuous reality that may shift locations but maintains a grounded, real-time feel. Characters may multiply (both performers play multiple roles) but the world stays coherent. Pacing moves at "the speed of life."
+- **`monoscene`-ish (TJ & Dave style):** A single continuous reality that may shift locations but maintains a grounded, real-time feel. Characters may multiply (both performers play multiple roles) but the world stays coherent. Pacing moves at "the speed of life."
 - **Narrative (Middleditch & Schwartz style):** More plot-driven, building a story with an arc, playing numerous characters, with theatrical editing and time jumps. Higher energy, more cinematic.
 
 ## What it demands beyond standard scene work
