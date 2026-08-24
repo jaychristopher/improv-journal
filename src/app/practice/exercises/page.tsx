@@ -47,6 +47,7 @@ export default async function ExercisesPage() {
     tags: a.frontmatter.tags ?? [],
     rules: a.frontmatter.how_to_play,
     preview: leadParagraph(stripLeadLabel(a.content), 180),
+    aliases: a.frontmatter.aliases,
   }));
 
   return (

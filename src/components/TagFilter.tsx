@@ -15,6 +15,12 @@ interface FilterableItem {
    * something they can run, not thirty links to click through.
    */
   rules?: string;
+  /**
+   * Other names the concept is taught under. Shown because an alias that lives
+   * only in the page's JSON-LD does not help somebody scanning this list for a
+   * word the list never prints.
+   */
+  aliases?: string[];
 }
 
 interface FilterGroup {
@@ -104,6 +110,11 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
             {item.rules && <p className="text-foreground/70 mt-2 text-sm">{item.rules}</p>}
             {showPreview && item.preview && (
               <p className="text-foreground/40 mt-2 line-clamp-2 text-xs">{item.preview}</p>
+            )}
+            {item.aliases && item.aliases.length > 0 && (
+              <p className="text-foreground/35 mt-1 text-xs">
+                Also called {item.aliases.join(", ")}.
+              </p>
             )}
           </div>
         ))}

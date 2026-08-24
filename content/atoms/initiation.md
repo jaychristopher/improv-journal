@@ -4,6 +4,7 @@ title: Initiation
 type: technique
 status: draft
 tags: [techniques, beginner, principles, courage, starting]
+aliases: ["Opening line", "First line"]
 links:
   - { id: be-brave, relation: illustrates }
   - { id: hesitation, relation: contrasts }
@@ -26,12 +27,22 @@ links:
   - { id: scene-structure, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Technique for: Be Brave**
 
 Initiation is the craft of starting a scene — making one specific choice that implies the world, the relationship, and the stakes without trying to establish all three explicitly. Walk in holding a baby and say "She has your eyes" — you didn't check three boxes, you made one move. The rest emerges.
+
+## Initiation, opening line, first line
+
+Three names for the same moment, and the two everyday ones quietly mislead.
+
+**Opening line** and **first line** are what this gets called outside a training room, and both put a sentence at the centre of it. That is the wrong emphasis, and it is the most common reason a beginner freezes at the top of a scene: they are waiting to think of something good enough to say, which turns the moment into a writing problem performed in front of an audience.
+
+An initiation is the first `offers`, and an offer does not have to be verbal. Walking on already doing something is an initiation. So is where you stand, how you carry yourself, and who you look at. Several of the strongest openings contain no dialogue at all — the sections below on entering already doing and leading with the body are describing initiations that happen before anybody speaks.
+
+The practical consequence is worth stating plainly. If you are stuck for an opening line, you have handed yourself the harder version of the problem. Do something rather than say something, and the line arrives on its own once there is a situation to speak into. `first-line-drill` trains the moment directly, and it works by making the line disposable rather than good.
 
 ## Enter already doing
 

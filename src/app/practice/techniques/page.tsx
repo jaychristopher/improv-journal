@@ -48,6 +48,7 @@ export default async function TechniquesPage() {
     href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
     tags: a.frontmatter.tags ?? [],
     preview: leadParagraph(stripLeadLabel(a.content), 180),
+    aliases: a.frontmatter.aliases,
   }));
 
   return (
