@@ -26,7 +26,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Ensemble is the group of performers operating as a single creative unit. Not a collection of individuals taking turns, but an interdependent system where each player's contribution serves the whole.
@@ -53,6 +53,33 @@ When an ensemble is functioning well — trust is high, everyone is present, eve
 ## The ensemble constraint
 
 This is why interdependence is a law, not just a preference. No individual has enough bandwidth, perspective, or creative capacity to sustain a scene alone. The ensemble is the minimum viable unit for reality construction.
+
+## What breaks an ensemble
+
+Rarely a row. Four quieter things account for most of it.
+
+- **A star forms.** One player becomes the reason the show is good, everybody else adjusts to feed them, and the interdependence quietly inverts into a support structure. It usually happens to the group's strongest performer without anybody deciding it, `bulldozing` being only the crude version.
+- **A passenger settles.** Somebody stops initiating and only ever responds. It is easy to tolerate because their scenes are fine, and the cost lands on whoever is now carrying the openings.
+- **Status hardens.** `status` in a healthy ensemble moves constantly. When the same person is high in every conversation about the work, notes stop travelling upward and the group loses its ability to correct itself.
+- **Turnover.** One departure or arrival resets a great deal, because what was lost is not a skill set but accumulated knowledge of specific people.
+
+None of these look like a problem while they are happening, which is why ensembles usually degrade rather than break.
+
+## How long it takes to become one
+
+Longer than a course and shorter than people fear — and the variable is occasions rather than hours.
+
+What accumulates is evidence about specific individuals: that this person will catch what you throw, that that one goes quiet under pressure, that a third will always take the harder side of a scene. None of it generalises, which is why an ensemble of individually excellent improvisers who have not played together is reliably worse than a mediocre group who have.
+
+The practical consequence is that a cast rehearsing weekly for three months has something a cast rehearsing intensively for one week does not, even if the hours match. `commitment` builds faster than trust does, and trust is what the form runs on.
+
+## Does an ensemble have to like each other?
+
+No — and assuming otherwise causes real damage, because groups conclude that their problem is social when it is professional.
+
+What is required is confidence in each other's work: that offers will be received, that nobody is competing for the scene, that a mistake will be covered rather than watched. Plenty of long-running casts contain people who would not choose each other's company and who are entirely reliable on stage.
+
+The reverse is more common and more dangerous. A group of close friends often has an unusually hard time giving each other notes, because the friendship raises the cost of saying the difficult thing — which is the exact failure that stops the work improving. Liking each other is pleasant and it is not the mechanism.
 
 ## Specific sources
 
