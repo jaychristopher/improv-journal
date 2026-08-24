@@ -81,6 +81,16 @@ What is required is confidence in each other's work: that offers will be receive
 
 The reverse is more common and more dangerous. A group of close friends often has an unusually hard time giving each other notes, because the friendship raises the cost of saying the difficult thing — which is the exact failure that stops the work improving. Liking each other is pleasant and it is not the mechanism.
 
+## The solo counter-argument
+
+Ensemble is treated here as the minimum viable unit, and there is a tradition that says otherwise.
+
+Solo improv is an established form — Jill Bernard's *Drum Machine*, Andy Eninger's solo Harold — and it is not a novelty act or a compromise. One performer builds a world, plays every character, and sustains a full-length piece with nobody to catch them.
+
+The argument underneath it is historical as much as practical. Improvisation's core is spontaneous creation, and collective creation is a particular tradition rather than the definition: ensemble ideology emerged from Second City and iO in the 1970s and 80s, and the art form is considerably older than that. Treating the ensemble as a law rather than a lineage overstates the case.
+
+What survives the objection is the narrower claim. A solo performer still receives, accepts and builds — they have simply internalised both sides of the exchange, which is harder rather than exempt. And the specific things this page describes as ensemble properties, group mind chief among them, genuinely require more than one nervous system. Solo improv is evidence that the form does not require an ensemble, not that ensemble is doing nothing.
+
 ## Specific sources
 
 Truth in Comedy, Ch. 5 ("Group Mind") — the group mind emerges when players surrender individual agendas. Sawyer, *Group Genius* (2007), Ch. 1-3 — improv ensemble as the model for group creativity; "collaborative emergence." TJ & Dave, *Speed of Life*, Ch. 1 and 3 — partnership as a microcosm of ensemble. **Counter-position:** Solo improv has a long tradition (Jill Bernard's "Drum Machine," Andy Eninger's solo Harold). The counter: improv's core is spontaneous creation, not necessarily collective creation. Ensemble ideology emerged specifically from Second City/iO in the 1970s-80s; the art form predates it.

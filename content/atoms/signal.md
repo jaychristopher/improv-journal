@@ -17,7 +17,7 @@ links:
   - { id: framing-as-angle-of-approach, relation: enables }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 A signal is any information transmitted from one participant to another, whether intentional or not. In improv and in life, signals are always being sent — there is no "off" state.
@@ -38,6 +38,16 @@ The quality of a scene depends not on the brilliance of individual signals but o
 Key property: signals are **observer-interpreted**. What you intend to signal and what your partner receives may differ. You cannot control reception, only transmission. This is why clarity (Be Honest) and simplicity (Be Simple) are structural necessities, not aesthetic preferences.
 
 Read from the receiving end, this is also the working definition of the thing: [being articulate](/how-to-be-more-articulate) is a property of how little work the listener has to do, not of the vocabulary available to the speaker.
+
+## The limits of the transmission metaphor
+
+Treating communication as signals sent and received is useful and it is a model rather than a description, which is worth saying on the page that leans on it hardest.
+
+Stuart Hall's *Encoding/Decoding* (1973) makes the case against: meaning is not packed into a message and unpacked intact at the other end. It is constructed in reception, from the receiver's own frame, which is why the same sentence lands as reassurance or as condescension depending entirely on who hears it. Semiotics broadly agrees.
+
+That aligns with this site's own position that meaning is relational and completed by uptake, and it cuts against the tidier reading of signal quality — the idea that a clear enough transmission determines what arrives.
+
+Both survive together if the metaphor is held loosely. Signal quality governs what is *available* to be interpreted: mumbling, hedging and mixed channels reduce what the other person has to work with, and that much is real. What it does not govern is the interpretation itself, which belongs to them. The practical consequence is that clarity is worth pursuing and is never sufficient, and checking what actually landed is not a courtesy but the only way to know.
 
 ## Specific sources
 

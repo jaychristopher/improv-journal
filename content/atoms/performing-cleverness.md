@@ -17,7 +17,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Performing Cleverness is the shadow of **Be Honest**. Performing cleverness is the substitution of authentic signal with a display of wit — playing to the audience instead of inhabiting the scene. For the principle and its full rationale, see `be-honest`. This atom owns the diagnostic: what cleverness looks like, what it costs your partner, and how to catch yourself doing it.
@@ -43,6 +43,16 @@ You can't build on a joke that's aware it's a joke. Irony is a dead-end road —
 
 1. **Play it straight for one line.** Drop the wink. Respond to your partner's actual offer instead of topping it. One sincere line can re-anchor the entire scene.
 2. **Drop one layer of irony.** If you're at three layers of meta-commentary, come down to two. Then one. Then zero. You don't have to become humorless — you have to become honest. The humor follows.
+
+## When cleverness is the craft
+
+The obvious objection to this whole page is that comedy is largely made of wit, and it is a fair one.
+
+Oscar Wilde, Monty Python, Key & Peele, and essentially all of sketch are built on constructed cleverness, and nobody watching thinks the work is hollow. Within improv, the game-based schools explicitly reward comedic intelligence — spotting a pattern and building the sharpest possible version of it is the skill being taught, not a deviation from it.
+
+So the failure named here is not wit. It is **wit substituting for the thing it should be serving**. In scene-based longform, a clever line offered instead of an honest reaction hollows out the work, because the audience came to watch two people affect each other and got a demonstration of one person's quickness. In a game-based or sketch-adjacent form, wit deployed on a truthful pattern is the craft itself.
+
+The distinguishing question is what the cleverness is doing. Sharpening something already true is authorship. Reaching for something clever because the true thing felt exposing is the move this page is about, and the performer usually knows which one they just did.
 
 ## Specific sources
 

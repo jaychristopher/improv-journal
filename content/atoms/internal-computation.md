@@ -67,6 +67,18 @@ The fix is physical, not cognitive. You can't think your way out of thinking.
 - **Say the first word in your mouth** — even if it's wrong. A bad line delivered now is better than a good line delivered after the moment has passed.
 - For the full recovery protocol, see `latency-recovery`.
 
+## Where thinking is not the problem
+
+The principle is easy to overstate into something false, and the overstatement is common enough to be worth correcting on the page.
+
+Improv does not ask you to stop thinking. Plenty of cognition is load-bearing: recognising that a pattern has repeated, noticing which of two threads the scene is actually about, deciding to edit. The game-first schools depend on real-time analysis and produce work that is anything but thoughtless.
+
+What is pathological is narrower and more specific — **recursive self-monitoring**. Not thinking, but thinking about how the thinking is going: assessing your last line while producing your next, checking whether you are doing well, running a commentary on your own performance. That loop consumes capacity and returns nothing, because its output is a verdict rather than a move.
+
+Csikszentmihalyi's flow research draws the same line. Flow eliminates self-consciousness, not consciousness. The absorbed performer is processing a great deal; what has gone quiet is the observer watching them do it.
+
+The practical version: if the thinking is about the scene, it is probably work. If it is about you, it is probably the failure this page describes.
+
 ## Specific sources
 
 Limb & Braun (2008), "Neural Substrates of Spontaneous Musical Performance," *PLoS ONE* 3(2), e1679 — improvisation shows "extensive deactivation of dorsolateral prefrontal and lateral orbital regions with focal activation of the medial prefrontal cortex." The neural signature of getting out of your head. Spolin, *Improvisation for the Theater*, Ch. 1 — the Approval/Disapproval Syndrome as "the basic obstacle to a true relation with ourselves, our environment, and each other." **Counter-position:** Some internal processing IS necessary. UCB's game recognition requires real-time pattern analysis. Experienced improvisers have internalized patterns so deeply that recognition feels intuitive rather than computational. The pathology is recursive self-monitoring — thinking about thinking — not cognition itself. Csikszentmihalyi's flow research: flow eliminates self-consciousness, not consciousness.
