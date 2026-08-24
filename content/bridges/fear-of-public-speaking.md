@@ -12,7 +12,7 @@ entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Glossophobia: The Fear of Public Speaking, Reframed
@@ -98,6 +98,50 @@ You don't need to take an improv class to use these techniques (though it's the 
 **Outward attention (2 minutes):** Before speaking, pick three specific people in the room. During your talk, have brief micro-conversations with each of them — a moment of eye contact, a response to their expression, a question directed their way. This forces your attention out of your head and into the room.
 
 **Micro-failure practice (ongoing):** Create small opportunities to speak publicly with progressively higher stakes. Start with asking a question in a meeting. Then offering an opinion. Then leading a discussion. Then presenting. Each instance is a controlled failure opportunity that builds the resilience muscle.
+
+## Questions People Ask About Fear of Public Speaking
+
+### What percentage of people are afraid of public speaking?
+
+The honest answer is that the famous number does not say what it is used to say.
+
+It comes from a 1973 survey by R. H. Bruskin Associates of 2,543 American adults, published in *The Book of Lists* in 1977. Respondents were shown a list and asked which things they feared **to some degree** — 40.6% ticked speaking before a group and 18.7% ticked death. That is where "more afraid of public speaking than of dying" comes from, and it is not what was measured: nobody was asked to rank them.
+
+Later work makes the distinction cleanly. Dwyer and Davidson (2012), in *Communication Research Reports*, found that public speaking is indeed selected more often than anything else as a **common** fear — but when people are asked for their single greatest fear, death wins comfortably.
+
+So the useful version is that roughly two in five people report some fear of speaking to a group, which is a lot and is true. The casket line is a joke built on a misread table, and Seinfeld should not be blamed for the statistics.
+
+### How do you calm your nerves in the last five minutes?
+
+You do not, and trying is what makes the last five minutes unbearable.
+
+`performance-state` is arousal, and arousal has a job — it is what the body does before something that matters. Attempting to shut it down in the corridor gives you a second task to fail at, on top of the talk, at the exact moment your attention is most expensive.
+
+What actually helps in that window is physical and outward. Breathe out longer than you breathe in, which is the half of breathing advice that does anything. Speak to one real person before you start, so your voice has already been used in the room. And get the first thirty seconds so thoroughly known that you cannot lose them — the nerves have almost always subsided by then, so what you are buying is a bridge to the point where the arousal is working for you.
+
+### Should you tell the audience you are nervous?
+
+Once, briefly, and only if it is already visible.
+
+An audience that can see somebody shaking is doing arithmetic about whether to worry. Naming it — "bear with me, I'm a bit nervous" — closes that question in four words and buys real goodwill, because it reads as trusting them. What it does not do is fix anything, and the version that goes wrong is the running commentary, where every stumble gets annotated. That transfers your discomfort to the room and makes the audience responsible for managing you.
+
+If it is not visible, say nothing. Announcing an invisible problem creates it.
+
+### What do you do if you go blank?
+
+Stop, look at your notes, and let the silence happen. It is between two and four seconds, it feels like a minute to you, and it is very close to invisible from the seats.
+
+The failure is not the gap; it is the panic response to it — filling with "sorry, I've lost my thread, where was I", which is far longer and considerably more conspicuous than the pause would have been. `failing-forward` applies exactly here: the recovery is what the audience remembers, and a calm five-second look at a page reads as somebody in control of their material.
+
+The structural insurance is a page of headings rather than a script. A script has one thread and losing it is total; headings mean losing the thread costs you a glance.
+
+### Does picturing the audience in their underwear work?
+
+No, and it is worth saying why, because the reason is the whole lesson.
+
+It fails for two reasons. It gives you an additional imaginative task to run while already overloaded, which is the opposite of what a nervous speaker needs. And its premise — that the fear will pass if you lower the audience's status — misidentifies the problem: what frightens people is being evaluated, and an imagined room in its underwear is still evaluating.
+
+What works is the opposite move. Stop constructing the audience at all and attend to the actual people, who are mostly neutral, occasionally nodding, and entirely uninterested in your destruction. `audience-relationship` is the technique the advice is a folk version of, and doing it properly requires no imagination at all.
 
 ## The Paradox
 
