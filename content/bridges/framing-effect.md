@@ -14,7 +14,7 @@ entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-
 entry_path: improv-for-life
 status: draft
 created: "2026-05-14"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # The Framing Effect: How to Use the Skill That Looks Like a Bias
@@ -92,6 +92,54 @@ The everyday version is not metaphorical. Move the conversation. Different room,
 **When the disagreement is about which frame applies.** Then working inside either one has already conceded it. The move is to say so out loud rather than to smuggle yours past: "I think we are working from different frames — can we name them?"
 
 And the test that separates this from spin, which is the only line that matters and is easy to apply: **would you be comfortable if the other person could see the move you just made?** Endowment offered sincerely survives being noticed. Endowment used to extract something does not, and the person you used it on will notice eventually anyway.
+
+## Questions People Ask About the Framing Effect
+
+### What is an example of the framing effect?
+
+The canonical one is the experiment this page opens with, and it is worth seeing in full.
+
+Tversky and Kahneman gave people an outbreak expected to kill 600, and two programmes to choose between. Framed as gains — Programme A saves 200 for certain, Programme B has a one-in-three chance of saving all 600 and a two-in-three chance of saving nobody — **72% chose the certain option.** Framed as losses, with the identical arithmetic restated as 400 people dying versus a one-in-three chance nobody dies, the majority switched to the gamble.
+
+Nothing about the outcomes changed. Only the description did, and it reversed people's appetite for risk.
+
+The everyday version is the same shape: 90% fat-free reads better than 10% fat, a 5% surcharge for paying by card is resented while an equivalent discount for cash is welcomed, and a survival rate persuades where a mortality rate refuses.
+
+### What is the difference between framing and anchoring?
+
+Framing changes the **description**; anchoring changes the **reference point**.
+
+An anchor is a number that arrives first and drags subsequent judgement towards it — see a jacket at £400 and £250 feels like a bargain. The information is genuinely new, it is simply given disproportionate weight because it got there first.
+
+A frame supplies no new information at all. Both descriptions of the outbreak are complete and true, and the effect comes entirely from which aspect is made salient.
+
+The practical difference is where the defence goes. Against an anchor, you generate your own number before hearing theirs. Against a frame, you restate the same facts the other way round and see whether your preference survives.
+
+### How do you avoid being manipulated by framing?
+
+Restate the proposition in the opposite frame and check whether you still want the same thing. That is nearly the whole defence and it takes about ten seconds.
+
+If a decision looks obvious as a gain, write it as a loss. If a policy sounds unacceptable as a cost, restate it as a benefit forgone. Any preference that flips is being produced by the wording rather than by your judgement about the outcome, which is exactly what you wanted to know.
+
+Two supporting habits help. Ask for the base rate — the absolute numbers behind any percentage, because "doubles your risk" and "rises from one in ten thousand to two" are the same sentence. And notice who chose the frame, since somebody did, and the choice was rarely accidental.
+
+### Is framing the same as lying?
+
+No, and the distinction is precise: a frame selects which true thing to put first, while a lie asserts something untrue.
+
+That does not make every frame honest. The line worth holding is whether the framing would survive the other person seeing the alternative description. "This is a survival rate of 90%" is fine, because a patient shown the mortality figure learns nothing new. A frame that only works while the reader is unaware of the other half is functioning as concealment, whatever it is technically doing.
+
+`justification` and `endowment` on this site are framing moves and both fail the same test: they work when they make something already true easier to receive, and they curdle when they are used to make something false easier to accept.
+
+### Why does framing still work when you know about it?
+
+Because it operates on what gets attended to rather than on what you believe, and knowing about a spotlight does not move it.
+
+People who can define the framing effect still show it under time pressure, and often on their own areas of expertise. The knowledge tells you the phenomenon exists; it does not tell you which of the two descriptions you happen to be looking at right now, because a frame arrives as the ordinary way of putting things rather than announcing itself.
+
+Which is why the defence above is procedural rather than intellectual. You cannot spot a frame by being alert to frames. You can restate one and see what happens, and that works whether or not you noticed anything at the time.
+
+**Sources cited:** Tversky and Kahneman (1981), *Science* 211(4481), 453–458.
 
 ## The deeper point
 
