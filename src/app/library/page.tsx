@@ -32,6 +32,10 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
     ids: [
       "ref-impro-storytellers-johnstone",
       "ref-tj-dave-speed-of-life",
+      "ref-salinsky-improv-handbook",
+      "ref-napier-behind-the-scenes",
+      "ref-halpern-art-by-committee",
+      "ref-stiles-improvise-freely",
       "ref-madson-improv-wisdom",
       "ref-sawyer-group-genius",
       "ref-fey-bossypants",
@@ -45,7 +49,7 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
   {
     label: "The science",
     description:
-      "Academic sources that ground the laws in cognitive science and performance studies.",
+      "Where the laws are grounded — attention, memory, safety, flow, and the sociology of how a situation gets framed.",
     ids: [
       "ref-attention-and-effort-kahneman",
       "ref-limb-braun-jazz-improvisation",
@@ -54,8 +58,21 @@ const TIERS: { label: string; description: string; ids: string[] }[] = [
       "ref-wickens-multiple-resources",
       "ref-sweller-cognitive-load",
       "ref-edmondson-psychological-safety",
-      "ref-viewpoints-bogart-landau",
+      "ref-csikszentmihalyi-flow",
+      "ref-sawyer-improvised-dialogues",
+      "ref-goffman-frame-analysis",
+      "ref-brown-daring-greatly",
+    ],
+  },
+  {
+    label: "The acting traditions",
+    description:
+      "What improv inherited from actor training, and the movement vocabulary running alongside it.",
+    ids: [
+      "ref-stanislavski-actor-prepares",
       "ref-meisner-on-acting",
+      "ref-overlie-standing-in-space",
+      "ref-viewpoints-bogart-landau",
     ],
   },
 ];
