@@ -29,7 +29,7 @@ created: "2026-04-04"
 updated: "2026-08-23"
 ---
 
-The group of performers operating as a single creative unit. Not a collection of individuals taking turns, but an interdependent system where each player's contribution serves the whole.
+Ensemble is the group of performers operating as a single creative unit. Not a collection of individuals taking turns, but an interdependent system where each player's contribution serves the whole.
 
 ## Ensemble vs. group
 

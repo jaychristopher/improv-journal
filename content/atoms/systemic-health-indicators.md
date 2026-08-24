@@ -20,7 +20,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
+Systemic Health Indicators are the gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
 
 Three signs of systemic health:
 

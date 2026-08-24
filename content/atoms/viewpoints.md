@@ -18,7 +18,7 @@ created: "2026-08-22"
 updated: "2026-08-23"
 ---
 
-A movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture, architecture, spatial relationship and topography — so that staging arrives by noticing rather than by deciding.
+Viewpoints is a movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture, architecture, spatial relationship and topography — so that staging arrives by noticing rather than by deciding.
 
 Viewpoints is usually described as an actor training technique, which is true and slightly misleading. It is better understood as **a vocabulary for attention**. Performers are constantly told to be present, to listen with the whole body, to fill the space. None of that is actionable, because none of it names anything you could attend to on purpose. Viewpoints names nine things, and an instruction you can follow beats an aspiration you cannot.
 

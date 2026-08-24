@@ -24,7 +24,7 @@ created: "2026-04-03"
 updated: "2026-08-24"
 ---
 
-The act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.
+Justification is the act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.
 
 The principle from *Truth in Comedy*: "There are no mistakes — everything is justified."
 
@@ -48,13 +48,21 @@ Advanced justification extends to choices you disagree with. If your partner mak
 
 The definition makes it sound like a reasoning task. In practice the good version is almost never an explanation, and the difference between the two is most of the skill.
 
-**Behave, do not explain.** If you drop something, you are a person who drops things and the scene continues. Saying "ah, I dropped that because the handle is wet" is where tortured logic starts — you have drawn the audience's attention to the accident in order to repair it, which is a worse outcome than the accident.
+### Behave, do not explain
 
-**Justify with who, not why.** "Why did that happen" invites plot, and plot arriving from nowhere is the reason justified scenes so often go strange. "Who is somebody that happens to" invites character instead, and the answer is usually more interesting and always more playable.
+If you drop something, you are a person who drops things and the scene continues. Saying "ah, I dropped that because the handle is wet" is where tortured logic starts — you have drawn the audience's attention to the accident in order to repair it, which is a worse outcome than the accident.
 
-**Late is fine, and often better.** Nothing requires you to justify immediately. An unexplained oddity can sit for two minutes and be picked up afterwards, at which point it reads as intentional rather than as a save. This is the point where justification starts to resemble `callback`.
+### Justify with who, not why
 
-**Smallest sufficient reason.** One clause, not a paragraph. The test in the section below is whether the audience thinks "of course" rather than "I see" — and length is the most reliable predictor of which one you will get.
+"Why did that happen" invites plot, and plot arriving from nowhere is the reason justified scenes so often go strange. "Who is somebody that happens to" invites character instead, and the answer is usually more interesting and always more playable.
+
+### Late is fine, and often better
+
+Nothing requires you to justify immediately. An unexplained oddity can sit for two minutes and be picked up afterwards, at which point it reads as intentional rather than as a save. This is the point where justification starts to resemble `callback`.
+
+### Smallest sufficient reason
+
+One clause, not a paragraph. The test in the section below is whether the audience thinks "of course" rather than "I see" — and length is the most reliable predictor of which one you will get.
 
 ## A related but distinct concept
 

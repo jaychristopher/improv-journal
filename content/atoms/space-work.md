@@ -24,7 +24,7 @@ created: "2026-04-03"
 updated: "2026-08-23"
 ---
 
-The practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.
+Space Work is the practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.
 
 Space work is **reality maintenance made visible**. When you open a door, pour a drink, or lean against a wall that isn't there, you are feeding the shared reality data that prevents decay. The audience sees the freezer because you shiver. They see the boat because you rock. The environment exists only through your body's commitment to it.
 

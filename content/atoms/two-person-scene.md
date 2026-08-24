@@ -27,7 +27,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-The fundamental unit of all improv. Virtually every longform structure — Harold, Armando, La Ronde, Deconstruction — is built from two-person scenes as its base unit. Master the two-person scene and everything else is variation.
+Two-Person Scene is the fundamental unit of all improv. Virtually every longform structure — Harold, Armando, La Ronde, Deconstruction — is built from two-person scenes as its base unit. Master the two-person scene and everything else is variation.
 
 ## What a two-person scene needs (in priority order)
 

@@ -36,7 +36,7 @@ created: "2026-04-03"
 updated: "2026-08-24"
 ---
 
-The repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.
+Game of the Scene is the repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.
 
 This concept is most precisely articulated in the **UCB tradition** (Besser, Roberts, Walsh), but every school has a version of it. Johnstone calls it routine-and-interruption or reincorporation. Close and Halpern describe it as the Harold's connective tissue. TJ Jagodowski finds it through relationship dynamics. Napier would resist the term entirely — his frame is commitment-first, and the pattern is a retrospective description, not a prescription. The atom presents the UCB framework as the primary lens while acknowledging that other traditions achieve similar structural coherence through different doors.
 

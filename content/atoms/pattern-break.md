@@ -20,7 +20,7 @@ created: "2026-04-05"
 updated: "2026-08-23"
 ---
 
-Intentionally breaking an established pattern for dramatic or comic effect. The audience has been trained to expect the pattern; the break exploits that expectation. The "rule of three" is the most common structure: two iterations establish, the third subverts.
+A pattern break is intentionally breaking an established pattern for dramatic or comic effect. The audience has been trained to expect the pattern; the break exploits that expectation. The "rule of three" is the most common structure: two iterations establish, the third subverts.
 
 ## The rule of three mechanics
 

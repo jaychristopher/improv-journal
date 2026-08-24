@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-A scene with three or more performers. Fundamentally different from two-person scenes — the challenge shifts from building a relationship between two people to **managing focus, agreement, and pattern across multiple bodies and voices**.
+Group Scene is a scene with three or more performers. Fundamentally different from two-person scenes — the challenge shifts from building a relationship between two people to **managing focus, agreement, and pattern across multiple bodies and voices**.
 
 In the Harold structure, group scenes (often called "group games") serve as ensemble moments between two-person scene beats — opportunities for the full team to demonstrate group mind. Del Close emphasized these as where the ensemble proves it can think as a single organism.
 

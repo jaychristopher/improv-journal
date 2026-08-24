@@ -28,7 +28,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined scene order. The form emerges from the content itself — what the scenes need dictates when to edit, when to return to a thread, when to do a group scene.
+Organic longform is longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined scene order. The form emerges from the content itself — what the scenes need dictates when to edit, when to return to a thread, when to do a group scene.
 
 ## What "organic" means
 

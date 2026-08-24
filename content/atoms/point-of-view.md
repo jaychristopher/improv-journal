@@ -21,7 +21,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-The filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.
+Point of View is the filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.
 
 A strong POV turns every element of the scene into an automatic offer. If your character believes everything is a competition, then the shared meal, the walk in the park, the bedtime conversation all become contests. You don't have to *invent* material — the POV generates it. If your character sees danger everywhere, every creak and shadow is loaded. The world is full of offers; the POV determines which ones you see.
 

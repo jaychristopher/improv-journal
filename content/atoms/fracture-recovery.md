@@ -23,7 +23,7 @@ created: "2026-04-03"
 updated: "2026-08-24"
 ---
 
-How to recover when two players are in different scenes — when the shared state has split and neither person can figure out why it feels off.
+Recovery: Fracture is how to recover when two players are in different scenes — the shared state has split and neither can tell why it feels off.
 
 ## Recognize it
 

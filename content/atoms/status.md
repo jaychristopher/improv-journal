@@ -24,7 +24,7 @@ created: "2026-04-03"
 updated: "2026-08-23"
 ---
 
-The relative social position a character occupies in a scene, expressed through behavior rather than title or rank. A concept formalized by Keith Johnstone as a core engine of dramatic interaction.
+Status is the relative social position a character occupies in a scene, expressed through behavior rather than title or rank. A concept formalized by Keith Johnstone as a core engine of dramatic interaction.
 
 Status is not who you *are* — it's what you *do*. A king can play low status (nervous, deferential, small). A servant can play high status (confident, expansive, still). Status is read through signals: eye contact, posture, spatial positioning, speech patterns, and response timing.
 

@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.
+Pacing is speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.
 
 ## Micro-pacing (within a scene)
 

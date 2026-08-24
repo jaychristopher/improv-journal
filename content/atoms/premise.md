@@ -21,7 +21,7 @@ created: "2026-08-24"
 updated: "2026-08-24"
 ---
 
-The situation a scene is in before anything unusual has happened to it. Two people in an elevator. A daughter visiting her father. Someone returning a toaster. A premise is static — it describes an arrangement rather than a behaviour, and on its own it is not yet a scene.
+Premise is the situation a scene is in before anything unusual has happened to it. Two people in an elevator. A daughter visiting her father. Someone returning a toaster. A premise is static — it describes an arrangement rather than a behaviour, and on its own it is not yet a scene.
 
 ## Premise is not where the comedy is
 

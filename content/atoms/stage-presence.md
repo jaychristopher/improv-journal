@@ -20,7 +20,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-The ability to project your internal state outward so the audience can receive it. Distinct from `presence` (internal attention) — a performer can be deeply present internally but invisible to the back row. Stage presence is the bridge between inner truth and audience experience.
+Stage Presence is the ability to project your internal state outward so the audience can receive it. Distinct from `presence` (internal attention) — a performer can be deeply present internally but invisible to the back row. Stage presence is the bridge between inner truth and audience experience.
 
 Johnstone in *Impro*: "Good actors project their inner state without comment. The audience reads them because they are readable, not because they are performing readability."
 

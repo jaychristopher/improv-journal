@@ -24,7 +24,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-The player who sees the world the way the audience does — the grounding force that makes the game player's unusual behavior legible. UCB calls this the "voice of reason" or playing at the "top of your intelligence."
+Straight Man is the player who sees the world the way the audience does — the grounding force that makes the game player's unusual behavior legible. UCB calls this the "voice of reason" or playing at the "top of your intelligence."
 
 Without the straight man, the unusual thing has no context. If everyone in the scene is crazy, nothing is crazy.
 

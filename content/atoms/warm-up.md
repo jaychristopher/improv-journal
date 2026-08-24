@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-The ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life mode to performance mode.
+Warm-Up is the ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life mode to performance mode.
 
 ## Neurological purpose: lowering the self-monitor
 

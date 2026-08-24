@@ -23,7 +23,7 @@ created: "2026-08-24"
 updated: "2026-08-24"
 ---
 
-A category is announced — world's worst doctor, world's worst person to sit next to on a plane — and the cast take turns stepping forward to deliver one image of it before stepping back. Nothing carries over. The next person starts clean.
+World's Worst is a shortform game in which a category is announced — world's worst doctor, world's worst person to sit next to on a plane — and the cast take turns stepping forward to deliver one image of it before stepping back. Nothing carries over. The next person starts clean.
 
 ## What it trains that nothing else does
 

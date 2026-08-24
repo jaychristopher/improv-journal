@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-Bringing back an element from earlier in the scene or show so that it returns with added significance, changed meaning, or narrative resolution. Keith Johnstone's narrative engine — the technique that makes improvised stories feel authored.
+Reincorporation is bringing back an element from earlier in the scene or show so that it returns with added significance, changed meaning, or narrative resolution. Keith Johnstone's narrative engine — the technique that makes improvised stories feel authored.
 
 Johnstone, *Impro*, Ch. 4 ("Narrative Skills"): *"The improviser has to be like a man walking backwards. He sees where he has been, but he pays no attention to the future."* The improviser's job is not to invent new things but to reuse what's already there. Every detail established is a promise to the audience. Reincorporation fulfills those promises.
 

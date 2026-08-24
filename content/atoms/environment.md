@@ -21,7 +21,7 @@ created: "2026-04-04"
 updated: "2026-08-22"
 ---
 
-The imagined physical and temporal conditions of the scene — the room, the weather, the objects, the spatial relationships between characters, and the pressures of time (a ticking clock, a closing restaurant, a train about to depart). The environment doesn't physically exist, but when it's well-maintained, the audience and the performers *feel* it.
+Environment is the imagined physical and temporal conditions of the scene — the room, the weather, the objects, the spatial relationships between characters, and the pressures of time (a ticking clock, a closing restaurant, a train about to depart). The environment doesn't physically exist, but when it's well-maintained, the audience and the performers *feel* it.
 
 Environment is the substrate of shared reality — the most easily shared layer because it's external, spatial, and sensory. It is not backdrop. It is an **active pressure on the players** and an **offer generator**: every object, wall, temperature, and time constraint is a latent offer waiting to shape the scene. The person behind the desk outranks the person standing. Whoever knows where the knives are has power. Environment assigns status, creates urgency, and generates material.
 

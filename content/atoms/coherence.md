@@ -27,7 +27,7 @@ created: "2026-04-04"
 updated: "2026-08-24"
 ---
 
-The state in which all participants are tracking the same shared reality without having to explicitly negotiate it. When coherence is high, both players are in the same scene — operating within the same facts, the same emotional register, the same relationship dynamics — without needing to stop and confirm. Coherence is not agreement. Two characters can disagree violently and be perfectly coherent — they just occupy different positions within the same world.
+Coherence is the state in which all participants are tracking the same shared reality without having to explicitly negotiate it. When coherence is high, both players are in the same scene — operating within the same facts, the same emotional register, the same relationship dynamics — without needing to stop and confirm. Coherence is not agreement. Two characters can disagree violently and be perfectly coherent — they just occupy different positions within the same world.
 
 Coherence is not planned. It emerges from the accumulation of clearly sent and accurately received signals. Every accepted offer, every honest signal, every simple choice that downloads without friction — each one adds to the coherence of the shared state.
 

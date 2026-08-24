@@ -21,7 +21,7 @@ created: "2026-04-04"
 updated: "2026-08-22"
 ---
 
-The shadow of **Be Supportive**. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the center at the expense of the ensemble.
+Bulldozing is the shadow of **Be Supportive**. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the center at the expense of the ensemble.
 
 Where blocking denies offers and steering redirects them, bulldozing **pre-empts** them — dominating the channel so thoroughly that your partner's offers never get made. The scene doesn't fracture because there is no competing reality; there is only yours. Your partner becomes a prop rather than a co-creator.
 

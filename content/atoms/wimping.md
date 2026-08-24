@@ -20,7 +20,7 @@ created: "2026-08-23"
 updated: "2026-08-23"
 ---
 
-Accepting an offer and adding nothing to it. Johnstone's term for the politest way to stop a scene, and the hardest failure to see from inside it, because nothing was refused and everybody was agreeable throughout.
+Wimping is accepting an offer and adding nothing to it. Johnstone's term for the politest way to stop a scene, and the hardest failure to see from inside it, because nothing was refused and everybody was agreeable throughout.
 
 ## Why it is harder to spot than blocking
 

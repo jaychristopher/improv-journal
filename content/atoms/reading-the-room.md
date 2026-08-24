@@ -20,7 +20,7 @@ created: "2026-04-05"
 updated: "2026-08-23"
 ---
 
-The real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.
+Reading the Room is the real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.
 
 ## What you're reading — multiple channels simultaneously
 

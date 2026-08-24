@@ -23,7 +23,7 @@ created: "2026-08-23"
 updated: "2026-08-23"
 ---
 
-One of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing. Three guests each receive an identity from the audience — a profession, an animal, a famous person, a condition — and arrive one at a time playing it. The host works out who each guest is and guesses them out.
+Party Quirks is one of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing. Three guests each receive an identity from the audience — a profession, an animal, a famous person, a condition — and arrive one at a time playing it. The host works out who each guest is and guesses them out.
 
 ## What it actually trains
 

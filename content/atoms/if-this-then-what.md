@@ -22,7 +22,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-The UCB engine for exploring game. Once the first unusual thing is identified, you don't simply repeat it — you ask: **"If this person is really the kind of person who would do X, what else follows logically?"**
+If This, Then What? is the UCB engine for exploring game. Once the first unusual thing is identified, you don't simply repeat it — you ask: **"If this person is really the kind of person who would do X, what else follows logically?"**
 
 This is the move that turns a single funny moment into a playable scene. The first unusual thing establishes a *rule about the character or the world*. If-this-then-what tests that rule across new contexts — each beat revealing a new facet of the same core pattern.
 

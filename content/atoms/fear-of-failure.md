@@ -25,7 +25,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-The primary obstacle for every improv student — and the root cause of nearly every antipattern in the graph. Not lack of talent, creativity, or wit. Fear.
+Fear of Failure is the primary obstacle for every improv student — and the root cause of nearly every antipattern in the graph. Not lack of talent, creativity, or wit. Fear.
 
 ## How fear manifests — a taxonomy of defensive behaviors
 

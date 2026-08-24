@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-How to sequence improv concepts for progressive skill-building — the meta-skill of designing a learning path from beginner to mastery.
+Curriculum Design is how to sequence improv concepts for progressive skill-building — the meta-skill of designing a learning path from beginner to mastery.
 
 **The universal pattern across schools (UCB, iO, Second City, Annoyance):**
 

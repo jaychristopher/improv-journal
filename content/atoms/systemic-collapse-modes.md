@@ -18,7 +18,7 @@ created: "2026-03-29"
 updated: "2026-08-23"
 ---
 
-The warning lights. How shared reality falls apart.
+Systemic Collapse Modes are the warning lights. How shared reality falls apart.
 
 Three modes of collapse:
 

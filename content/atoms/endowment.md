@@ -23,7 +23,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Giving your scene partner qualities, attributes, or history through your behavior toward them — rather than through direct statement about yourself. A concept formalized by Keith Johnstone in *Impro*. Endowment is one of the purest expressions of "make your partner look good."
+Endowment is giving your scene partner qualities, attributes, or history through your behavior toward them — rather than through direct statement about yourself. A concept formalized by Keith Johnstone in *Impro*. Endowment is one of the purest expressions of "make your partner look good."
 
 ## Types of endowment
 

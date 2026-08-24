@@ -22,7 +22,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-A group free-association exercise that generates raw thematic material for a Harold or other longform show. Takes a single audience suggestion and expands it into a web of associations, images, themes, and ideas the ensemble mines throughout the show.
+Organic Opening is a group free-association exercise that generates raw thematic material for a Harold or other longform show. Takes a single audience suggestion and expands it into a web of associations, images, themes, and ideas the ensemble mines throughout the show.
 
 ## Two functions
 

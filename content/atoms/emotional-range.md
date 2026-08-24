@@ -29,7 +29,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Accessing the full spectrum of emotion in scenes — not just the comfortable defaults. Most improvisers develop a narrow emotional band they can reach reliably (typically the "wry and sardonic" register) and unconsciously avoid everything outside it. Emotional range is the ability to access anger, grief, joy, tenderness, fear, disgust, awe, and shame authentically on stage, on demand, without pre-planning.
+Emotional Range is accessing the full spectrum of emotion in scenes — not just the comfortable defaults. Most improvisers develop a narrow emotional band they can reach reliably (typically the "wry and sardonic" register) and unconsciously avoid everything outside it. Emotional range is the ability to access anger, grief, joy, tenderness, fear, disgust, awe, and shame authentically on stage, on demand, without pre-planning.
 
 ## Why improvisers default to "wry."
 

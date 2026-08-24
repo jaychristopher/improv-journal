@@ -20,7 +20,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-A second or third beat scene that transplants the game from an earlier scene into a completely different context — different characters, different setting, different world — while preserving the underlying game logic. The thematic echo without literal repetition.
+Analogous Scene is a second or third beat scene that transplants the game from an earlier scene into a completely different context — different characters, different setting, different world — while preserving the underlying game logic. The thematic echo without literal repetition.
 
 ## The mechanic (three steps)
 

@@ -20,7 +20,7 @@ created: "2026-04-03"
 updated: "2026-08-23"
 ---
 
-Any information transmitted from one participant to another, whether intentional or not. In improv and in life, signals are always being sent — there is no "off" state.
+A signal is any information transmitted from one participant to another, whether intentional or not. In improv and in life, signals are always being sent — there is no "off" state.
 
 Signals travel through multiple channels simultaneously:
 - **Verbal** — the words spoken

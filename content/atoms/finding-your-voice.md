@@ -22,7 +22,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-The emergence over years of practice of a recognizable artistic identity — a characteristic set of choices, instincts, interests, and energies that makes one improviser's work distinguishable from another's. Not a brand or persona but a pattern that arises from accumulated decisions.
+Finding Your Voice is the emergence over years of practice of a recognizable artistic identity — a characteristic set of choices, instincts, interests, and energies that makes one improviser's work distinguishable from another's. Not a brand or persona but a pattern that arises from accumulated decisions.
 
 ## Voice is emergent, not designed
 

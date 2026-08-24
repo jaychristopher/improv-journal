@@ -24,7 +24,7 @@ created: "2026-04-05"
 updated: "2026-08-23"
 ---
 
-The most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters. Will Hines: "suggestion and go."
+Montage is the most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters. Will Hines: "suggestion and go."
 
 ## How montage differs from Harold
 

@@ -23,7 +23,7 @@ created: "2026-03-29"
 updated: "2026-08-23"
 ---
 
-The shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.
+Judgment (Mid-Scene Evaluation) is the shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.
 
 Judgment mid-scene is not just unwise — it's structurally premature. Because meaning is relational (it exists between minds, not within them), the value of any move is *indeterminate* until the response arrives. A trip on stage has no meaning yet — it becomes a disaster if you try to hide it, or a gift if your partner says "my god, the poison is kicking in." The move's value was never yours to assess. It belonged to the interaction.
 

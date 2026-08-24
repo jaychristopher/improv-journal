@@ -20,7 +20,7 @@ created: "2026-08-23"
 updated: "2026-08-23"
 ---
 
-The moment the established normality breaks. Johnstone's term for the event that turns a situation into a story — the balance of ordinary life is tilted, and everything after it is consequence.
+Tilt is the moment the established normality breaks. Johnstone's term for the event that turns a situation into a story — the balance of ordinary life is tilted, and everything after it is consequence.
 
 ## Why a scene needs one
 

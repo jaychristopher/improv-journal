@@ -21,7 +21,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Managing the two poles of energy in an improv show. **Heat** is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity. **Weight** is low energy — stillness, quiet, emotional honesty, vulnerability, gravity. The art is in the alternation.
+Heat and Weight is managing the two poles of energy in an improv show. **Heat** is high energy — fast pace, loud voices, big physicality, comic escalation, absurdity. **Weight** is low energy — stillness, quiet, emotional honesty, vulnerability, gravity. The art is in the alternation.
 
 ## The core principle: contrast
 

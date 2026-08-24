@@ -21,7 +21,7 @@ created: "2026-08-24"
 updated: "2026-08-24"
 ---
 
-Naming the particular rather than the category. Not a dog but a whippet with a limp. Not your job but the Tuesday shift at the garden centre. Specificity is the cheapest move available in a scene and the one most consistently skipped.
+Specificity is naming the particular rather than the category. Not a dog but a whippet with a limp. Not your job but the Tuesday shift at the garden centre. Specificity is the cheapest move available in a scene and the one most consistently skipped.
 
 ## What a specific detail actually does
 

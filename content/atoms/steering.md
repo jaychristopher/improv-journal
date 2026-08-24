@@ -22,7 +22,7 @@ created: "2026-04-04"
 updated: "2026-08-24"
 ---
 
-The shadow of **Be Changeable**. Steering is the subtle act of accepting your partner's offers on the surface while redirecting the scene toward your predetermined destination.
+Steering is the shadow of **Be Changeable** — accepting your partner's offers on the surface while redirecting the scene where you had already decided to go.
 
 Steering is harder to spot than blocking. A blocker says "no." A steerer says "yes, and..." while quietly pulling the scene back to their plan. They agree with the words and ignore the spirit. They receive the offer but refuse to let it change their trajectory.
 

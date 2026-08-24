@@ -24,7 +24,7 @@ created: "2026-04-03"
 updated: "2026-08-24"
 ---
 
-How to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless.
+Recovery: Decay is how to recover when the scene has gone thin — when established facts have faded, nothing accumulates, and the shared reality feels weightless.
 
 ## Recognize it
 

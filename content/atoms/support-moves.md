@@ -21,7 +21,7 @@ created: "2026-04-05"
 updated: "2026-08-22"
 ---
 
-What you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're off stage.
+Support Moves are what you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're off stage.
 
 ## Active watching — the backline's primary job
 

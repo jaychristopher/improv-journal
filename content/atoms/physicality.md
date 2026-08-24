@@ -29,7 +29,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-Building character from the body first — not from concept, biography, or dialogue. The physical choice precedes (and generates) everything else: point of view, emotional state, status, want. The body leads; the mind follows.
+Physicality is building character from the body first — not from concept, biography, or dialogue. The physical choice precedes (and generates) everything else: point of view, emotional state, status, want. The body leads; the mind follows.
 
 This is the principle that unifies Spolin, Viewpoints, Laban, Napier, and Johnstone's mask work despite their otherwise divergent philosophies. All agree on one thing: when the body commits to a specific physical life, character arrives faster and more surprisingly than when the mind plans one.
 

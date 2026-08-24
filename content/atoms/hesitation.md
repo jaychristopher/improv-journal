@@ -27,7 +27,7 @@ created: "2026-04-04"
 updated: "2026-08-23"
 ---
 
-The shadow of **Be Brave**. Hesitation is the failure to act at a decision point — not just at the threshold of a scene, but at every moment where the scene needs a choice and you withhold one.
+Hesitation is the shadow of **Be Brave**. Hesitation is the failure to act at a decision point — not just at the threshold of a scene, but at every moment where the scene needs a choice and you withhold one.
 
 Hesitation looks like safety. It feels like prudence — *I'll wait until I have something good.* But in a system where time advances irreversibly and shared reality requires continuous feeding, hesitation is not neutral. It's active decay. Every moment without an offer is a moment where the shared world starves.
 

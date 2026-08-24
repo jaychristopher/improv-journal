@@ -17,7 +17,7 @@ created: "2026-08-23"
 updated: "2026-08-24"
 ---
 
-An actor training method built on a single instruction — put your attention on the other person and respond to what they actually do — trained through a repetition exercise that makes self-monitoring mechanically impossible.
+Meisner Technique is an actor training method built on a single instruction: put your attention on the other person and respond to what they actually do. It is trained through a repetition exercise that makes self-monitoring mechanically impossible.
 
 Sanford Meisner taught at the Neighborhood Playhouse in New York for close to five decades, and summarised the aim as **living truthfully under imaginary circumstances**. The phrase is quoted constantly and explains nothing on its own. What makes it a technique rather than an aspiration is the exercise underneath it.
 

@@ -25,7 +25,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-The shadow of **Be Present**. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues without you.
+Internal Computation is the shadow of **Be Present**. Internal computation is the act of retreating into your own head — planning, rehearsing, evaluating — while the scene continues without you.
 
 The classic tell: your partner says something and your eyes glaze over. You aren't looking at them — you're looking at the script in your head. You're scrolling through your mental Rolodex of responses, trying to find the clever one, the right one, the funny one. Meanwhile, time advances irreversibly. Your partner has already moved on. When you finally deliver the line you rehearsed, it lands on a scene that no longer exists.
 

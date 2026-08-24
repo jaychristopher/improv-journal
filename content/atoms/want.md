@@ -22,7 +22,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters *do things* rather than merely exist.
+Want is what the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters *do things* rather than merely exist.
 
 Meisner's foundational question: *"What do you want from the other person?"* Not what you want in general — what you want from *them*, right now. The specificity matters: "I want you to admit you were wrong" drives a scene. "I want to be happy" drives nothing.
 

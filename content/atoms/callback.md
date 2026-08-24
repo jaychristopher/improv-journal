@@ -26,7 +26,7 @@ created: "2026-04-04"
 updated: "2026-08-22"
 ---
 
-The pattern of referencing an earlier established detail — a name, an object, a line, a gesture — later in the scene or show, reactivating meaning that has receded from active attention.
+Callback is the pattern of referencing an earlier established detail — a name, an object, a line, a gesture — later in the scene or show, reactivating meaning that has receded from active attention.
 
 Callbacks are the primary mechanism for **reactivating lapsed details** — pulling dormant information back into the shared reality. They are one defense against decay alongside sustained emotional commitment, physical environment continuity, and game reinforcement. But callbacks have a unique power: they demonstrate that the world has *memory*, that the past hasn't evaporated.
 

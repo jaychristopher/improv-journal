@@ -25,7 +25,7 @@ created: "2026-04-04"
 updated: "2026-08-23"
 ---
 
-The emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody explicitly planned, and responding to the scene's needs before they're verbalized.
+Group Mind is the emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody explicitly planned, and responding to the scene's needs before they're verbalized.
 
 The concept originates in the Del Close tradition — he described the Harold as a "spiritual endeavor" and spoke of the interconnectedness of all things as a foundational belief, not a metaphor. Contemporary teachers tend to demystify it: group mind is an emergent phenomenon, observable and learnable. Both framings are honest. Close saw something real and named it in spiritual terms; the contemporary lens describes the same phenomenon as the result of multiple agents following the same principles simultaneously. When everyone is present (not in their heads), supportive (serving each other), changeable (responding to what's happening), and honest (sending clear signals) — the collective output exceeds what any individual could produce. Patterns that nobody planned emerge because everyone is building on the same shared state.
 

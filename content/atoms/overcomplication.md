@@ -21,7 +21,7 @@ created: "2026-03-29"
 updated: "2026-08-23"
 ---
 
-The shadow of **Be Simple**. Overcomplication is flooding the shared channel with more data than it can carry — until the scene collapses under its own weight. For the principle and its rationale (bandwidth, generosity, the courage paradox), see `be-simple`. This atom is the diagnostic field guide: what overcomplication looks like in practice, so you can catch yourself or your students doing it.
+Overcomplication is the shadow of **Be Simple**. Overcomplication is flooding the shared channel with more data than it can carry — until the scene collapses under its own weight. For the principle and its rationale (bandwidth, generosity, the courage paradox), see `be-simple`. This atom is the diagnostic field guide: what overcomplication looks like in practice, so you can catch yourself or your students doing it.
 
 ## Behavioral forms — the field guide
 

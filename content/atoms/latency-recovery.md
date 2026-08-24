@@ -19,7 +19,7 @@ created: "2026-04-03"
 updated: "2026-08-22"
 ---
 
-How to recover when the scene has developed response lag — when one or both players are behind the moment, responding to things that happened thirty seconds ago.
+Recovery: Latency is how to recover when the scene has developed response lag — when one or both players are behind the moment, responding to things that happened thirty seconds ago.
 
 ## Recognize it
 

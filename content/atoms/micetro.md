@@ -25,7 +25,7 @@ created: "2026-04-09"
 updated: "2026-08-22"
 ---
 
-Keith Johnstone's elimination format (also spelled "Maestro"). Individual performers compete; the audience votes to eliminate one player each round until a single winner remains. Creates individual stakes and accountability within what is otherwise an ensemble art form.
+Micetro is Keith Johnstone's elimination format (also spelled "Maestro"). Individual performers compete; the audience votes to eliminate one player each round until a single winner remains. Creates individual stakes and accountability within what is otherwise an ensemble art form.
 
 ## How it works
 

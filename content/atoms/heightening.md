@@ -25,7 +25,7 @@ created: "2026-04-04"
 updated: "2026-08-23"
 ---
 
-The pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.
+Heightening is the pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.
 
 Heightening is what gives a scene its arc. Without it, the game stays flat — the same beat repeated at the same level. With it, the game builds momentum. Each iteration feels inevitable and surprising at the same time.
 

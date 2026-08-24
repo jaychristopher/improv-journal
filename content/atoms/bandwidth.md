@@ -22,7 +22,7 @@ created: "2026-04-03"
 updated: "2026-08-24"
 ---
 
-The total processing capacity available to participants in a shared interaction at any given moment. Bandwidth is finite, shared, and consumed by every signal sent and received.
+Bandwidth is the total processing capacity available to participants in a shared interaction at any given moment. Bandwidth is finite, shared, and consumed by every signal sent and received.
 
 In improv, bandwidth exists at two levels:
 
@@ -46,13 +46,21 @@ Bandwidth is the resource that connects the cognitive-bandwidth law (why it's sc
 
 Four findings, and they answer different questions that get run together.
 
-**How much there is.** Cowan (2001) put the working-memory limit at about four chunks, revising Miller's seven-plus-or-minus-two downward — Miller's figure was offered as a rough estimate and hardened into a measurement it was never meant to be. Four is the number this site's claims rest on. It is a limit on *chunks* rather than items, which is why expertise appears to raise it: a practised performer holds one chunk where a beginner holds four.
+### How much there is
 
-**What spending it costs.** Sweller (1988) supplies the consequence rather than the number, and the two are constantly confused. Cognitive load theory says capacity spent carrying one process is capacity the next one does not get — in his experiments, learners solved problems and learned little from solving them, because the solving consumed what the learning needed.
+Cowan (2001) put the working-memory limit at about four chunks, revising Miller's seven-plus-or-minus-two downward — Miller's figure was offered as a rough estimate and hardened into a measurement it was never meant to be. Four is the number this site's claims rest on. It is a limit on *chunks* rather than items, which is why expertise appears to raise it: a practised performer holds one chunk where a beginner holds four.
 
-**Why some things collide and others do not.** Wickens (2002) is the correction that stops this being too crude to use. Interference scales with what two tasks *share* — the same stage, the same sense, the same code — not with total effort. Moving while listening is nearly free. Planning a sentence while listening is ruinous, because those share both a stage and a verbal code.
+### What spending it costs
 
-**What selection actually does.** Cherry (1953) showed that attending to one voice discards the others rather than backgrounding them: listeners shadowing one message could not report what the other had been about, or what language it was in. Attention is a gate, not a dimmer, which is why there is no half-listening to two things.
+Sweller (1988) supplies the consequence rather than the number, and the two are constantly confused. Cognitive load theory says capacity spent carrying one process is capacity the next one does not get — in his experiments, learners solved problems and learned little from solving them, because the solving consumed what the learning needed.
+
+### Why some things collide and others do not
+
+Wickens (2002) is the correction that stops this being too crude to use. Interference scales with what two tasks *share* — the same stage, the same sense, the same code — not with total effort. Moving while listening is nearly free. Planning a sentence while listening is ruinous, because those share both a stage and a verbal code.
+
+### What selection actually does
+
+Cherry (1953) showed that attending to one voice discards the others rather than backgrounding them: listeners shadowing one message could not report what the other had been about, or what language it was in. Attention is a gate, not a dimmer, which is why there is no half-listening to two things.
 
 ## Specific sources
 

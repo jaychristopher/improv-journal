@@ -25,7 +25,7 @@ created: "2026-04-05"
 updated: "2026-08-23"
 ---
 
-The normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.
+Base Reality is the normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.
 
 Base reality is established through the **CROW** framework:
 - **C**haracter — who are these people? (Names, types, specifics)
@@ -37,11 +37,11 @@ Base reality is established through the **CROW** framework:
 
 The same territory, named by three traditions that each want something different from it.
 
-**Who/what/where** is the oldest and most widely taught, and it is a checklist rather than a theory: establish who these people are to each other, what they are doing, and where they are. CROW above is the refinement of it, with objective split out from activity — because what someone is doing and what they want turn out to be different questions, and scenes stall when only the first is answered.
+*Who/what/where* is the oldest and most widely taught, and it is a checklist rather than a theory: establish who these people are to each other, what they are doing, and where they are. CROW above is the refinement of it, with objective split out from activity — because what someone is doing and what they want turn out to be different questions, and scenes stall when only the first is answered.
 
-**Base reality** is the UCB name and it carries an argument. The reason to ground the scene is so the first unusual thing has something to be unusual *against*. Establish nothing and the audience cannot tell which detail is the game, because every detail is equally arbitrary.
+*Base reality* is the UCB name and it carries an argument. The reason to ground the scene is so the first unusual thing has something to be unusual *against*. Establish nothing and the audience cannot tell which detail is the game, because every detail is equally arbitrary.
 
-**Platform** is Johnstone's term and it points the other way. He is interested in the routine being broken — the platform exists so that a tilt can knock it over, and the story is whatever happens next.
+*Platform* is Johnstone's term and it points the other way. He is interested in the routine being broken — the platform exists so that a tilt can knock it over, and the story is whatever happens next.
 
 Same groundwork, opposite payoffs, and it explains a common misfire in a mixed room. A performer trained on platforms establishes normality and then waits for someone to disturb it. A performer trained on base reality establishes normality and starts hunting for the unusual thing already inside it. Both are doing the groundwork correctly. They are waiting for different events, and the scene sits still while each waits for the other.
 
@@ -61,7 +61,9 @@ One or two lines of dialogue, plus a physical activity. The initiator takes the 
 
 During heightening, the return to base reality between escalations is what gives each heighten its impact. Without the grounded contrast, heightening is just noise. Base reality is both the launchpad and the landing pad.
 
-**Base reality IS Be Simple and Be Honest in action.** Grounded behavior is simple behavior — real people in a real situation responding at the top of their intelligence. No wackiness, no irony, no performing cleverness. Just two people and whatever is true between them.
+### Base reality IS Be Simple and Be Honest in action
+
+Grounded behavior is simple behavior — real people in a real situation responding at the top of their intelligence. No wackiness, no irony, no performing cleverness. Just two people and whatever is true between them.
 
 ## Specific sources
 

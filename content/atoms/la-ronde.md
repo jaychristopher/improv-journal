@@ -21,7 +21,7 @@ created: "2026-04-05"
 updated: "2026-08-23"
 ---
 
-A character-chain longform format where each two-person scene shares one character with the next, forming a circle that returns to the first character. Named after Arthur Schnitzler's 1897 play *Reigen* (La Ronde).
+La Ronde is a character-chain longform format where each two-person scene shares one character with the next, forming a circle that returns to the first character. Named after Arthur Schnitzler's 1897 play *Reigen* (La Ronde).
 
 ## Origin
 
