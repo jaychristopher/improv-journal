@@ -113,6 +113,10 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
       label: parentPath.frontmatter.title,
       href: `/paths/${parentPath.frontmatter.id}`,
     });
+  } else {
+    // 23 of 25 threads sit in no path, and used to render a two-level trail
+    // straight from Home. The essays hub is their parent.
+    crumbs.push({ label: "Essays", href: "/threads" });
   }
   crumbs.push({ label: fm.title });
 

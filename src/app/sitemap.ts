@@ -100,6 +100,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Tools — exercise picker with level/focus hierarchy
   const levels = ["beginner", "intermediate", "advanced"];
   entries.push({
+    url: `${SITE_URL}/threads`,
+    lastModified: newest(threads),
+    priority: 0.7,
+    changeFrequency: "monthly",
+  });
+
+  entries.push({
     url: `${SITE_URL}/tools/exercise-picker`,
     lastModified: newest(atomsOfType("exercise")),
     priority: 0.7,

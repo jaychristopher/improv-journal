@@ -40,6 +40,7 @@ const FOOTER_SECTIONS: { heading: string; links: { href: string; label: string }
       { href: "/resources", label: "Overview" },
       { href: "/paths", label: "Learning Paths" },
       { href: "/guides", label: "Guides" },
+      { href: "/threads", label: "Essays" },
       { href: "/library", label: "Reading List" },
       { href: "/listen", label: "Listen" },
       { href: "/about", label: "About" },
