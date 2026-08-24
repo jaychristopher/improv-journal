@@ -6,7 +6,7 @@ import { getRecommendedPath } from "@/lib/path-recommendations";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Learning Paths"),
+  title: pageTitle("Improv Learning Paths: Beginner to Performer"),
   description:
     "Structured guides for wherever you are in your journey - beginner through performer.",
   alternates: { canonical: "/paths" },

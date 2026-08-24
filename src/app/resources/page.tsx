@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Resources"),
+  title: pageTitle("Improv Resources: Paths, Podcasts and Reading Lists"),
   description:
     "Learning paths, guides, podcasts, reading lists, and the traditions that shaped improv.",
   alternates: { canonical: "/resources" },

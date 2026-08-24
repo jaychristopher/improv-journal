@@ -7,7 +7,7 @@ import { byReach, GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Practical Guides"),
+  title: pageTitle("Improv Guides: Confidence, Conversation and Teams"),
   description:
     "Guides for overthinking, stage fright, team dynamics, feedback, and more — connecting improv principles to everyday challenges.",
   alternates: { canonical: "/guides" },
