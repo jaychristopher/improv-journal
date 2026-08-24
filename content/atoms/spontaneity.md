@@ -33,7 +33,7 @@ Asked to be original, people reach for what they imagine originality looks like,
 
 ## Spontaneity is a function of safety, not courage
 
-The censor activates in proportion to perceived risk. Telling someone to be braver rarely restores spontaneity; lowering the stakes usually does. This is why so much of Johnstone's teaching is about making failure cheap and public — if being wrong costs nothing, there is nothing for the editor to protect you from. It is also why spontaneity returns easily among close friends and vanishes in interviews.
+The censor activates in proportion to perceived risk. Telling someone to be braver rarely restores spontaneity; lowering the stakes usually does. This is why so much of Johnstone's teaching is about making failure cheap and public — if being wrong costs nothing, there is nothing for the editor to protect you from. It is also why spontaneity returns easily among close friends and vanishes in interviews. Preparing [questions to ask in an interview](/questions-to-ask-in-an-interview) is one way round that, since the editor has much less to protect when the next move already exists.
 
 ## What it is not
 

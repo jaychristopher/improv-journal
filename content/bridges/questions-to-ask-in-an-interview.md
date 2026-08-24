@@ -1,8 +1,7 @@
 ---
-title: "Questions to Ask at the End of an Interview, and Before"
-description: "Your questions are the one move that levels the status gap. What to ask when they turn it over to you, and the ones that quietly cost you the offer."
+title: "Questions to Ask in an Interview, and at the End of One"
+description: "Your questions are the one move that levels the status gap. What to ask an interviewer when they turn it over to you, and the ones that cost you the offer."
 target_keywords:
-  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, traffic_potential: 15000, parent: "questions to ask at the end of an interview" }
   - {
       keyword: "questions to ask in an interview",
       volume: 32000,
@@ -10,6 +9,7 @@ target_keywords:
       traffic_potential: 27000,
       parent: "questions to ask during an interview",
     }
+  - { keyword: "questions to ask at the end of an interview", volume: 12000, difficulty: 3, traffic_potential: 15000, parent: "questions to ask at the end of an interview" }
   - { keyword: "questions to ask interviewer", volume: 14000, difficulty: 4, parent: "questions to ask interviewer", traffic_potential: 22000 }
   - { keyword: "questions to ask during an interview", volume: 12000, difficulty: 2, parent: "best questions to ask an interviewer", traffic_potential: 22000 }
   - { keyword: "good questions to ask in an interview", volume: 10000, difficulty: 3, parent: "questions to ask during an interview", traffic_potential: 27000 }
@@ -29,7 +29,7 @@ created: "2026-08-22"
 updated: "2026-08-24"
 ---
 
-# Questions to Ask at the End of an Interview, and Before
+# Questions to Ask in an Interview, and at the End of One
 
 Your questions are read more carefully than your answers. Answers are prepared and everybody knows it. Questions are the one part of an interview that reveals how you actually think — what you notice, what you consider important, and whether you have understood the job well enough to ask something specific about it.
 

@@ -40,7 +40,7 @@ The body generates the pattern. Example: a character whose gestures are wildly o
 
 ## Status games
 
-The power dynamic IS the game. Who has authority, how it shifts, the transaction of status between characters. Example: a job interview where the candidate gradually assumes authority over the interviewer. Johnstone's entire status framework (*Impro*, Ch. 2) feeds this category.
+The power dynamic IS the game. Who has authority, how it shifts, the transaction of status between characters. Example: a job interview where the candidate gradually assumes authority over the interviewer. The same transaction runs in a real one, which is why [questions to ask in an interview](/questions-to-ask-in-an-interview) treats what you ask as a status move rather than as information gathering. Johnstone's entire status framework (*Impro*, Ch. 2) feeds this category.
 
 ## Mapping games
 
