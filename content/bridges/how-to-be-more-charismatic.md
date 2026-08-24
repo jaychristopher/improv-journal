@@ -86,6 +86,48 @@ It's not confidence. Many charismatic people are privately anxious. What they ar
 
 It's not performing. In fact, performing kills charisma. The moment you try to seem charismatic, you activate self-monitoring, which destroys presence, which is the foundation of the whole thing. Charisma is what happens when you stop trying to be impressive and start being genuinely engaged.
 
+## Questions People Ask About Charisma
+
+### Can charisma actually be learned?
+
+Partly, and this has been tested rather than merely asserted.
+
+Antonakis, Fenley and Liechti (2011), in the *Academy of Management Learning & Education*, ran two experiments on it. In the first, 34 middle managers were randomly assigned to training in a set of charismatic leadership tactics or to a control group, and were rated by their coworkers three months later — over 300 raters at each point. In the second, 41 MBA students were filmed giving a speech, taught the tactics, and filmed again six weeks on. Both showed measurable increases in how charismatic observers judged them.
+
+The limitation is worth stating with the finding. The twelve tactics they taught are largely rhetorical — metaphor, story, three-part lists, rhetorical questions, expressing conviction and collective sentiment — which is a set of tools for one person addressing a group. That is a genuinely useful thing and it is a narrower thing than being good company one to one, which is most of what people mean when they use the word.
+
+### Is charisma manipulative?
+
+The tactics are content-neutral, which is uncomfortable and true. Every technique on this page works exactly as well in the service of something dishonest, and the most charismatic figures in history include several you would not want to meet.
+
+What separates them is not the skill but what it is pointed at. `be-supportive` and `be-thankful` describe using attention to make the other person's contribution better; the same fluency used to make somebody feel understood in order to extract something from them is the identical mechanism with the sign reversed.
+
+The practical test is direction. Charisma that leaves people feeling more capable is doing one thing; charisma that leaves them feeling they have been managed is doing another, and the person on the receiving end can usually tell afterwards even when they could not at the time.
+
+### How would you know whether you have it?
+
+You cannot feel it, which is the awkward part. Charisma is a report from other people about their experience of you, and there is no internal sensation that corresponds to it — plenty of people described as magnetic report feeling entirely ordinary and slightly anxious.
+
+So the available evidence is behavioural and indirect. Do people continue talking to you after the reason for the conversation has ended. Do they bring things back to you later. Does the quiet person in a group say more when you are there than when you are not — which is the most reliable signal there is, and the one nobody thinks to look for.
+
+Asking directly does not work. Nobody answers that question honestly, and the answer would be about the last conversation rather than about you.
+
+### Does charisma survive a video call?
+
+Most of it does not, and the losses are specific rather than general.
+
+What goes is everything spatial: how you occupy a room, how you orient towards somebody, the physical `signal` that tells a person you have turned towards them. Also gone is real-time interruption — the small overlapping noises of agreement that make somebody feel heard become unusable over lag.
+
+What survives is `active-listening` and it becomes disproportionately powerful, because so little else is available. Referring accurately to something somebody said eight minutes ago lands far harder on a call than in a room. The other transferable move is deliberate: name who you are handing to, because the natural turn-taking cues that do this in person are simply absent.
+
+### Why do charismatic people seem to remember everything about you?
+
+Because they were listening the first time, and that is nearly the whole trick.
+
+Most people who describe themselves as bad with names and details are not experiencing a memory failure — the information never got encoded, because they were composing their own next contribution while it went past. Nothing was forgotten because nothing was stored.
+
+The people who appear to have exceptional recall are usually just spending their attention outward during the conversation, which is `be-present` doing the work. What looks like a gift afterwards is a decision made at the time, and it is the single most reliably charismatic thing anybody does.
+
 ## The One Exercise
 
 The fastest path to charisma is the simplest: in your next conversation, make the other person the most important thing in your world for five minutes. Not as a technique — as an actual commitment. Let go of your phone, your agenda, your self-consciousness. Just be there.
