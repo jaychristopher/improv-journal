@@ -12,6 +12,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 6
 serp_verdict: winnable
 serp_top10_dr: [85, 97, 45, 80, 96, 86, 6, 40]
+subject:
+  type: CreativeWork
+  name: "Viewpoints"
+  description: "Movement and composition training originated by Mary Overlie as the Six Viewpoints and expanded by Anne Bogart and Tina Landau into nine physical channels."
+  sameAs: ["https://en.wikipedia.org/wiki/Viewpoints"]
 entry_atoms: [viewpoints, physicality, space-work, ensemble, be-present, presence]
 entry_path: the-art-of-ensemble
 status: draft

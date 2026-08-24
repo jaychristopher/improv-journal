@@ -8,6 +8,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 12
 serp_verdict: winnable
 serp_top10_dr: [95, 97, 91, 33, 100, 47, 12, 85]
+subject:
+  type: CreativeWork
+  name: "Improv"
+  description: "Improvisational theatre — performance created in the moment, without a script, from an audience suggestion or an initiating offer."
+  sameAs: ["https://en.wikipedia.org/wiki/Improvisational_theatre"]
 entry_atoms: [yes-and, offers, discovery, be-present, ensemble, reality-construction]
 entry_path: beginner-foundations
 primary_problem: "you need a clear model of what improv actually is and how scenes stay alive"
