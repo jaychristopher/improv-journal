@@ -25,9 +25,10 @@ links:
   - { id: one-word-scene, relation: illustrates }
   - { id: blind-offer, relation: illustrates }
   - { id: musical-improv, relation: enables }
+  - { id: bulldozing, relation: contrasts }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Commitment is the willingness to fully invest in a choice, even — especially — when you're unsure it's the "right" one. In improv, a fully committed mediocre choice will always outperform a half-hearted brilliant one.
@@ -56,6 +57,32 @@ For Del Close, commitment was the engine of heightening — the willingness to h
 Committed choices read as high status (Johnstone). They send clear signals (your partner knows what to build on). And they create path dependence (irreversibility) — once you've committed, the scene has a direction that cannot be uncommitted. This is why bravery is the prerequisite: commitment sustains what initiation starts.
 
 The same mechanism is why confidence turns out to be a consequence rather than a prerequisite. [Confidence building exercises](/confidence-building-exercises) are built on it: you commit to something before you feel ready, survive it, and the feeling arrives afterwards as a result rather than beforehand as a permission.
+
+## Commitment is not enthusiasm
+
+The most common misreading, and it produces the opposite of the thing.
+
+Volume, speed and energy are not commitment — they are frequently a hedge. A choice played big enough to read as a joke has an exit built into it: if it fails, it was never meant seriously. That is half-commitment wearing the costume of the full version, and audiences detect it reliably even when they cannot name what they detected.
+
+A quiet choice can be entirely committed. Somebody sitting still, saying one thing plainly, and meaning it, is doing the harder version — there is nothing to hide behind and no way to retreat into "I was playing".
+
+The test is not how much is being expended. It is whether there is an escape route.
+
+## Commitment and stubbornness
+
+They look identical from outside for about ten seconds, and then they diverge completely.
+
+The difference is what is being committed *to*. Commitment attaches to what is true now — the choice you made, the reality currently established. Stubbornness attaches to an outcome decided earlier, usually before the scene started.
+
+The test is diagnostic and quick: **if your partner changed something significant, would your next move change?** If yes, you are committed to the scene. If no, you are committed to a plan, and `bulldozing` is what that looks like from the other side. `be-changeable` is not a counterweight to commitment but its companion — the paradox above is the whole point, and the failure is not too much commitment but commitment pointed at the wrong object.
+
+## The same move outside a scene
+
+A half-made decision costs more than either version of the decision, which is the mechanism transferred intact.
+
+A proposal put forward tentatively invites argument, because the hedging signals that the proposer is not sure and the question is therefore still open. The same proposal stated plainly gets engaged with on its merits. That is not about confidence and it is not manipulation — it is `signal` quality: an unhedged statement tells people what is actually being suggested, so they can respond to the thing rather than to the uncertainty around it.
+
+The everyday failure mirrors the stage one exactly. Saying something and then immediately softening it — "but I don't know, whatever you think" — is bailing, and it leaves the other person holding a proposal nobody has committed to, including its author.
 
 ## Specific sources
 
