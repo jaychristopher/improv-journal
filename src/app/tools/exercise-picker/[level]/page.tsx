@@ -73,6 +73,11 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{config.title}</h1>
         <p className="text-foreground/60 mt-2">{config.description}</p>
+        {config.orientation.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mt-3">
+            {paragraph}
+          </p>
+        ))}
       </header>
 
       {/* Level tabs */}
