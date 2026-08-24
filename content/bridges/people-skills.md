@@ -13,7 +13,7 @@ entry_atoms: [active-listening, offers, continuous-signaling, status, be-present
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # People Skills Are a System, Not a Personality Trait
@@ -83,6 +83,48 @@ The audience (or your conversation partner) processes all of these channels simu
 Albert Mehrabian's research (1971) is often misquoted as "93% of communication is nonverbal." The actual finding: when verbal and nonverbal signals conflict, people trust the nonverbal. Honesty isn't about radical transparency. It's about signal coherence — making sure your channels aren't contradicting each other.
 
 _Try this:_ The next time someone asks how you are and the true answer isn't "fine," try a one-degree-more-honest response. Not a full emotional download — just one step closer to the truth. "I'm a little tired" instead of "I'm fine." "This week has been a lot" instead of "all good." Notice how the conversation shifts when you give the other person a real offer to respond to instead of a closed one.
+
+## Questions People Ask About People Skills
+
+### Can people skills be learned, or are some people just naturals?
+
+Learned, and the people who look like naturals are the strongest evidence for it rather than against it.
+
+Somebody who has been socially confident since childhood has had twenty years of daily repetitions with immediate feedback, which is a training regime rather than a gift. What they cannot do is explain any of it, because they never had to make it explicit — which is why asking a natural for advice produces "just be yourself" and other things that are true and unusable.
+
+The mechanics on this page are the explicit version of what they do implicitly. Learning it deliberately is slower at the start and produces something they do not have: the ability to tell what went wrong when a conversation fails.
+
+### What are the 7 C's of communication?
+
+Clear, concise, concrete, correct, coherent, complete and courteous — a checklist from Cutlip and Center's *Effective Public Relations* (1952), with minor variations between sources.
+
+It is a good framework being applied to the wrong thing. Those criteria are for messages you **compose and review before sending**: a press release, a report, an email. Every one of them assumes a draft exists and can be checked against a list.
+
+Live conversation has no draft. You cannot run a seven-point review on a sentence you are already halfway through saying, and attempting it produces the stilted, careful speech people arrive at after communication training. The 7 Cs are genuinely useful for writing and close to useless in the middle of a conversation, which is where most people who look them up are actually struggling.
+
+### What is the difference between people skills and communication skills?
+
+Communication skills are about transmission — getting a message across accurately. People skills include that and add the part transmission does not cover: reading what is happening, adjusting while it happens, and managing what the exchange costs the other person.
+
+The distinction shows up in a specific failure. Somebody can be an outstanding communicator — articulate, well-organised, precise — and still be difficult to be around, because clarity says nothing about whether you noticed the other person had stopped agreeing four minutes ago. `active-listening` and `status` are people-skills variables that a transmission model has no slot for.
+
+Most training sold as communication skills is really presentation skills, which is why it so often fails to change how somebody is in a meeting.
+
+### Why does this feel harder for me than it seems to be for other people?
+
+Usually because you are running more processes than they are, not because you have less aptitude.
+
+`be-present` is expensive, and the cost is invisible from outside. If you are simultaneously tracking what you said, how it landed, what to say next and how you are coming across, you are doing four jobs while the person opposite is doing one. They are not better at conversation; they are spending less on it, which leaves capacity for the thing that actually matters — noticing what the other person just offered.
+
+That is also the good news. Capacity is reclaimable by dropping processes, and the process worth dropping first is the one below.
+
+### If you only change one thing, what should it be?
+
+Stop preparing your reply while the other person is still talking.
+
+It is the single most expensive habit in this whole domain and almost everybody does it. It guarantees you are working from what they said thirty seconds ago rather than what they are saying now, it makes your responses land slightly wrong in a way people feel without naming, and it consumes the capacity every other technique on this page needs.
+
+Nothing else moves the needle as much, and it costs nothing but tolerating two seconds of not knowing what you are going to say. `offers` is the reason it works: whatever they are saying right now is the material, and you cannot use material you were not listening to.
 
 ## The System in Practice
 
