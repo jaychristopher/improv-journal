@@ -95,6 +95,18 @@ But nothing in the mechanics requires it. Improvised drama exists, notably in Jo
 
 Two related distinctions worth having. Improv is not **stand-up** — stand-up is written, rehearsed and solo, and the resemblance is only that both look like a person talking without a script. And improv is not **sketch**, though the two are constantly confused because Second City generates sketch by improvising: the sketch you eventually watch has been written down and repeated.
 
+## What Is Improv For?
+
+Three different answers, and most arguments about improv are really disagreements about which one is meant.
+
+**As a performance form**, the purpose is a show. An audience pays, watches something built in front of them that will never exist again, and the value is partly the thing made and partly the visible fact that nobody knew what it would be. This is the version most people have seen and the smallest of the three by participation.
+
+**As training**, the purpose is a skill, and this is what improvisation was originally for. Viola Spolin was not developing entertainment when she wrote the games in the 1940s — she was teaching immigrant children and non-actors in Chicago, and the games existed because instruction did not work and play did. The performance tradition grew out of the teaching method rather than the other way round, which is the reverse of what most people assume.
+
+**As applied practice**, the purpose is transfer: people take it up to become quicker in meetings, less frightened of speaking, better at listening, more able to work with what they are given rather than what they planned. This is now the largest group by numbers and the least visible, because nobody watches it happen.
+
+The confusion matters because it sets expectations wrongly at the door. Somebody joining a class to get funnier is in the performance frame and will be frustrated by six weeks of exercises that are not about jokes. Somebody sent by an employer is in the applied frame and will resent being asked to perform. And a teacher running a class without saying which of the three it serves will lose half the room in the first hour — not to difficulty, but to a mismatch nobody named out loud.
+
 ## Why This Matters If You Never Set Foot on a Stage
 
 You might be thinking: this is interesting, but I'm not a performer. I don't do improv. Except you do. You do it every day.
