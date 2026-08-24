@@ -10,7 +10,7 @@ entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Team Building Questions That Actually Build Trust
@@ -198,6 +198,48 @@ Don't hand this list out and go around the circle. The format matters as much as
 **Respond, don't move on.** When someone shares, the worst thing you can do is say "Great, next!" A follow-up question, a moment of acknowledgment — these micro-responses signal safety. They're the "And" in Yes And applied to real conversation.
 
 **Don't do all four tiers in one sitting.** Use Tier 1 for a few weeks. Move to Tier 2 when the group is ready. Trust is built across time, not in a single session.
+
+## Questions People Ask About Team Building Questions
+
+### How do you get people to actually answer?
+
+Answer first yourself, at the depth you are hoping for, and then stop talking.
+
+The silence after a question in a work meeting is almost never disinterest. It is people calculating what an honest answer costs here, and the only thing that resolves that calculation is watching somebody find out. If the most senior person in the room gives a real answer and nothing happens to them, the estimate updates for everybody at once.
+
+Two mechanics help. Ask for a specific instance rather than a general view, because "what is something you got wrong this month" has an answer sitting there and "how do you feel about our process" requires composing a position. And accept the first answer without improving on it — a facilitator who responds to a short answer by asking three follow-up questions has taught the room that answering is expensive.
+
+### Should the manager answer first?
+
+Yes, and it is the single highest-leverage decision in the whole exercise.
+
+`vulnerability` costs differently depending on where you sit. A junior person answering honestly is exposed to somebody who writes their review; a manager answering honestly is exposed to almost nothing by comparison. Asking the person with least protection to go first is the standard mistake, and it usually produces a round of safe answers that everybody correctly reads as the norm.
+
+What matters is that the manager's answer is real. A senior person going first with something polished and flattering is worse than not going first, because it demonstrates precisely the register everybody was afraid of. The useful version admits something mildly unflattering and unremarkable — not a confession, just evidence that a plain answer is survivable.
+
+### How long should this take in a meeting?
+
+Five to eight minutes, once, at the start.
+
+The failure is treating it as an event. Half an hour of team questions once a quarter produces a pleasant session and no change, because `trust` accumulates from repetition rather than duration — the number of occasions on which something honest went unpunished is the variable, and a long session is still one occasion.
+
+One question at the start of a weekly meeting, answered briefly by everybody, does considerably more than a quarterly workshop. It also degrades gracefully: if a week is busy, a fifteen-second answer each still counts.
+
+### What do you do about somebody who deflects every time?
+
+Nothing, visibly, for several weeks — and check whether the questions are the problem before deciding the person is.
+
+Deflection with a joke is usually a reasonable read of the room rather than obstruction. Somebody who has been in an organisation where a candid answer was later used against them is behaving sensibly, and pressing them singles out the one person most alert to exposure, in front of everybody.
+
+What changes it is accumulated evidence, which is the whole mechanism of this page. Two exceptions are worth naming: if the deflection is a joke at somebody else's expense, that is a different problem and needs addressing directly, because it raises the cost for the entire room. And if it persists for months while everybody else has relaxed, a private conversation is better than any question you could ask in the meeting.
+
+### What makes a question feel intrusive at work?
+
+Not depth. Whether declining it is cheap, and whether the answer could be used later.
+
+That is why the tiers above are ordered the way they are. "What is something you have changed your mind about" is quite personal and entirely safe, because any honest answer is professionally neutral. "What is your biggest weakness" is a standard team-building question and is genuinely unsafe, because the answer goes into somebody's model of your competence and stays there.
+
+The test before asking anything: could a truthful answer disadvantage this person in a review, a promotion decision, or a disagreement six months from now. If it could, the question is an assessment wearing a friendly costume, and people will answer it as such — which is why so many sessions produce a room of careful, useless replies and a conclusion that the team is closed off.
 
 ## The Principle Underneath
 
