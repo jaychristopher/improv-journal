@@ -215,7 +215,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Viewpoints](https://www.physicsofconnection.com/practice/techniques/viewpoints): Viewpoints is a movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition,...
 - [Yes, And: The First Rule of Improv](https://www.physicsofconnection.com/practice/techniques/yes-and): Yes, And: The First Rule of Improv is the most widely known shorthand in improvisation.
 
-## Exercises and games (24)
+## Exercises and games (25)
 
 - [Big Booty](https://www.physicsofconnection.com/practice/exercises/big-booty): working under enough load that deliberation becomes impossible. A rhythm game whose real function is to flood attention until players stop planning and start...
 - [Blind Offer](https://www.physicsofconnection.com/practice/exercises/blind-offer): The perceptual foundation of Be Supportive — reading your partner's physical offers and building a reality that serves them.
@@ -236,15 +236,17 @@ This file is generated from the site's content, so it lists everything rather th
 - [Pass the Clap](https://www.physicsofconnection.com/practice/exercises/pass-the-clap): shared timing. Two people clap at the same instant, round a circle, until the group stops passing a clap and starts keeping one.
 - [Questions Only](https://www.physicsofconnection.com/practice/exercises/questions-only): noticing how much of a conversation is deferral. Two players hold a scene in which every line must be a question — and the exercise is most useful for what it...
 - [Silent Space Work Scene](https://www.physicsofconnection.com/practice/exercises/space-work-scene): Space work — building and maintaining a shared physical environment with no dialogue.
+- [Sound Ball](https://www.physicsofconnection.com/practice/exercises/sound-ball): A circle. You throw an imaginary ball to somebody and make a sound as it leaves your hands.
 - [Status Transfer](https://www.physicsofconnection.com/practice/exercises/status-transfer): Status awareness and the ability to shift status dynamically within a scene.
 - [The Machine](https://www.physicsofconnection.com/practice/exercises/the-machine): building something collectively out of parts nobody negotiated. One player starts a repeating movement and sound; everyone else joins on, one at a time, until...
 - [What Are You Doing?](https://www.physicsofconnection.com/practice/exercises/what-are-you-doing): committing to a physical action while your mouth is doing something else. The standard first exposure to space work, and the reason most improvisers can mime...
 - [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
 - [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 
-## Formats (18)
+## Formats (20)
 
 - [Armando](https://www.physicsofconnection.com/practice/formats/armando): Armando is a monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes.
+- [Bus Stop](https://www.physicsofconnection.com/practice/formats/bus-stop): One player is waiting at a bus stop and has a reason to stay there. Another arrives playing somebody specific.
 - [Freeze Tag](https://www.physicsofconnection.com/practice/formats/freeze-tag): Freeze Tag is the most universal shortform improv game. Two performers begin a scene.
 - [Genre Format](https://www.physicsofconnection.com/practice/formats/genre-format): Longform improv performed within the conventions of a specific genre — film noir, horror, Western, rom-com, musical.
 - [Gorilla Theatre](https://www.physicsofconnection.com/practice/formats/gorilla-theatre): Gorilla Theatre is Keith Johnstone's format where performers take turns directing each other's scenes.
@@ -256,6 +258,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Organic Longform](https://www.physicsofconnection.com/practice/formats/organic-longform): Organic longform is longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined...
 - [Party Quirks](https://www.physicsofconnection.com/practice/formats/party-quirks): Party Quirks is one of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing.
 - [Scenes from a Hat](https://www.physicsofconnection.com/practice/formats/scenes-from-a-hat): Audience suggestions written on slips of paper before the show, placed in a hat (or bowl, or bucket), pulled randomly, and performed as rapid-fire scenes...
+- [The Alphabet Game](https://www.physicsofconnection.com/practice/formats/alphabet-game): Two players run a scene in which every line starts with the next letter of the alphabet.
 - [The Deconstruction](https://www.physicsofconnection.com/practice/formats/deconstruction): A long form built by Del Close with The Family at ImprovOlympic, in which one unresolved scene becomes the material for everything that follows.
 - [The Harold: Improv's Most Important Long-Form Format](https://www.physicsofconnection.com/practice/formats/harold): The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the...
 - [The Monoscene: One Scene, No Edits](https://www.physicsofconnection.com/practice/formats/monoscene): One scene, held for the whole set. Same location, same people, time moving roughly as it moves in life.

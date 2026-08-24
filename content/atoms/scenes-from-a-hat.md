@@ -6,6 +6,7 @@ type: format
 status: draft
 tags: [formats, shortform, audience-interaction, speed]
 links:
+  - { id: alphabet-game, relation: extends }
   - { id: suggestion, relation: requires }
   - { id: audience-relationship, relation: requires }
   - { id: audience, relation: requires }
