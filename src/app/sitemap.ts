@@ -6,7 +6,6 @@ import {
   loadBridges,
   loadPaths,
   loadShows,
-  loadSources,
   loadThreads,
 } from "@/lib/content";
 import { getIndexableCombinations } from "@/lib/exercise-picker";
@@ -14,13 +13,12 @@ import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [atoms, bridges, threads, paths, shows, sources] = await Promise.all([
+  const [atoms, bridges, threads, paths, shows] = await Promise.all([
     loadAtoms(),
     loadBridges(),
     loadThreads(),
     loadPaths(),
     loadShows(),
-    loadSources(),
   ]);
 
   const entries: MetadataRoute.Sitemap = [];
@@ -198,23 +196,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  /**
-   * Source pages — the transcripts and dialogues atoms were extracted from.
+  /*
+   * Source pages are deliberately absent.
    *
-   * This whole content type was missing here. loadSources drives a live,
-   * canonical, indexable route, and nothing on the site linked to it and
-   * nothing listed it, so the one page under it was undiscoverable: 4,900
-   * words that share 5% of their 8-word runs with the atoms drawn from them,
-   * which is to say almost all of it exists nowhere else.
+   * They were added here on the reasoning that the route was "canonical,
+   * indexable" and that nothing linked to the one page under it. Both were
+   * wrong. /sources/[slug] sets robots index:false — the route says why, that
+   * a raw transcript should stay reachable for provenance without competing in
+   * search — and 22 atom pages link to it, since every atom extracted from a
+   * transcript cites it.
+   *
+   * A noindex URL in a sitemap asks a crawler to index a page that then tells
+   * it not to, and Search Console reports it as an error. no-noindex-in-sitemap
+   * holds the rule.
    */
-  for (const src of sources) {
-    entries.push({
-      url: `${SITE_URL}/sources/${src.frontmatter.id}`,
-      lastModified: src.frontmatter.updated ?? src.frontmatter.created,
-      priority: 0.4,
-      changeFrequency: "yearly",
-    });
-  }
 
   // Show pages
   for (const s of shows) {

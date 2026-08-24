@@ -4,15 +4,45 @@ import { describe, expect, it } from "vitest";
 
 import sitemap from "../../app/sitemap";
 
+const APP = path.join(process.cwd(), ".next", "server", "app");
+
+/** Whether every built page for a content type refuses indexing. */
+function typeIsNoindex(ids: string[]): boolean {
+  const pages: string[] = [];
+  const walk = (dir: string) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name.endsWith(".html")) pages.push(full);
+    }
+  };
+  if (!fs.existsSync(APP)) return false;
+  walk(APP);
+
+  const found = ids
+    .map((id) => pages.find((p) => path.basename(p, ".html") === id))
+    .filter((p): p is string => Boolean(p));
+
+  if (found.length === 0) return false;
+  return found.every((p) =>
+    /<meta name="robots" content="[^"]*noindex/.test(fs.readFileSync(p, "utf-8")),
+  );
+}
+
 /**
  * Every content type that renders a page must appear in the sitemap.
  *
- * content/sources drives a live route. It has generateStaticParams, a self
- * canonical, no noindex, and an entry in the build output — and the sitemap
- * generator had never heard of it. Nothing on the site linked to it either, so
- * the one page under it was reachable only by typing the URL: 4,900 words that
- * share 5% of their eight-word runs with the atoms extracted from them, so
- * almost all of it existed nowhere else on the site.
+ * content/sources drives a live route with generateStaticParams, a self
+ * canonical and an entry in the build output — and the sitemap generator had
+ * never heard of it, so a whole content type could be added and simply never
+ * listed.
+ *
+ * The original version of this comment also claimed that route had no noindex.
+ * It does: /sources/[slug] sets robots index:false so a raw transcript stays
+ * reachable for provenance without competing in search. Acting on the wrong
+ * belief put a noindex URL into the sitemap, which asks a crawler to index a
+ * page that then refuses. Deliberately unindexed types are exempt below, and
+ * no-noindex-in-sitemap holds the other half of the rule.
  *
  * The sitemap is assembled by hand, one loop per content type, which is why a
  * type could be added and simply never listed. Nothing failed. The page was
@@ -57,11 +87,18 @@ describe("sitemap coverage", () => {
 
     const missing: string[] = [];
     let checkedTypes = 0;
+    let exemptTypes = 0;
 
     for (const dir of dirs) {
       if (NOT_RENDERED.has(dir)) continue;
       const ids = documentIds(dir);
       if (ids.length === 0) continue;
+      // A type whose every page sets noindex is deliberately out of the index,
+      // and belongs out of the sitemap too.
+      if (typeIsNoindex(ids)) {
+        exemptTypes++;
+        continue;
+      }
       checkedTypes++;
       for (const id of ids) {
         if (!segments.has(id)) missing.push(`${dir}/${id}`);
@@ -69,8 +106,11 @@ describe("sitemap coverage", () => {
     }
 
     // A renamed content dir, or every type landing in NOT_RENDERED, would make
-    // this pass on nothing.
-    expect(checkedTypes).toBeGreaterThanOrEqual(6);
+    // this pass on nothing. Counting the exempt types too means a type going
+    // noindex cannot quietly lower the bar either — the total has to hold even
+    // as the split between the two moves.
+    expect(checkedTypes + exemptTypes).toBeGreaterThanOrEqual(6);
+    expect(checkedTypes).toBeGreaterThanOrEqual(5);
     expect(missing).toEqual([]);
   });
 });
