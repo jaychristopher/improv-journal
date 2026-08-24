@@ -131,6 +131,52 @@ The standard advice is to push through, which misreads the problem. The cost is 
 - **"Let me know if I can ever help."** Generous-sounding and it transfers the work. Offer something specific or nothing.
 - **Only talking to people who are useful to you.** Everyone can tell, including the people you skip, and industries are much smaller than they look.
 
+## Questions People Ask About Networking
+
+### What if you have nothing to offer?
+
+This is the obvious objection to everything above and it is almost always wrong about itself.
+
+"Something to offer" is being read as a job, a budget or an introduction to somebody important. In practice the currency at these events is much smaller: an answer to a question somebody asked, a name of a tool that solved the thing they just described, an introduction between two people standing four feet apart who would like each other, or simply attention paid properly to somebody who has been talked over all evening.
+
+Junior people usually have more of this than they think, and one thing in particular that senior people cannot get: an accurate account of what it is currently like to do the job they hire for. That is genuinely valuable and nobody junior believes it.
+
+If you truly have nothing on a given night, the honest move is to ask well and take an interest, which is not nothing — `be-supportive` at an event mostly means making the other person's conversation go better than it would have.
+
+### Does networking actually work?
+
+Yes, and the evidence is more specific than the advice usually is.
+
+Granovetter (1973), in the *American Journal of Sociology*, found that people got jobs through weak ties — acquaintances rather than close friends — far more often than through their strong ones, because close contacts mostly know what you already know. That result stood for fifty years on correlational data.
+
+Rajkumar and colleagues (2022), in *Science*, tested it causally, using randomised experiments on LinkedIn's recommendation algorithm across more than 20 million people over five years. Weak ties do cause job mobility — and the relationship is an inverted U. Very weak ties are not the best; the most useful contacts are the moderately weak ones, roughly the people you share about ten connections with and rarely speak to.
+
+The practical reading is unflattering to how most people network. Collecting strangers is the far end of the curve where returns fall off. Reconnecting with people you already half-know is the productive end, and it is the thing almost nobody does at an event because it feels less like work.
+
+### How do you network on LinkedIn or online?
+
+The same reframe, with one adjustment: online the offer has to arrive before the ask, in the same message, and it has to be specific.
+
+A connection request with no context is a stranger's business card. A message that names the actual thing — a post of theirs you disagreed with usefully, a question their work answers, a person they should meet — is a conversation. The rule of thumb that works is that the first message should be answerable in one line and should not require them to do anything.
+
+The volume difference is what people get wrong. In a room you might have four conversations; online the temptation is forty messages, and forty generic messages performs worse than four researched ones by a wide margin.
+
+### How do you remember people's names?
+
+Say it back within the first ten seconds, and then use it once more before the conversation ends.
+
+Almost all name-forgetting is not a memory failure but an attention one — the name arrived while you were composing your own introduction, so it was never encoded. Repeating it out loud forces the encoding and costs nothing socially, because people like hearing their name.
+
+Beyond that, write it down as soon as you leave the conversation, with one detail about them. `reading-the-room` matters here too: if you have genuinely lost it, asking again in minute two is a minor embarrassment and asking in minute twenty is a larger one.
+
+### How many people should you talk to at an event?
+
+Two or three properly, rather than ten briefly.
+
+The arithmetic is straightforward once you accept the weak-ties finding above. A contact only becomes useful when they can accurately describe what you do to somebody else, and a four-minute exchange does not get anybody there. Twenty cards produce twenty people who will not recognise your name in six weeks.
+
+The counter-instinct is strong because ten conversations feels like more work and looks like more progress. It is the same mistake as forty LinkedIn messages, in a room.
+
 ## Practise the Giving Part
 
 **Handing something over without controlling it.** `gift-giving` has one person offer an undefined object and the other name it and find its value. It trains both halves of what makes someone good in a room: offering without steering, and treating what arrives as worth having.
