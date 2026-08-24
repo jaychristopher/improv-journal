@@ -19,6 +19,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
   - { id: mirroring, relation: illustrates }
   - { id: last-word-response, relation: illustrates }
+  - { id: ref-cherry-cocktail-party, relation: illustrates }
 sources: []
 created: "2026-03-29"
 updated: "2026-08-23"

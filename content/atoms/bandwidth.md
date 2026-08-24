@@ -14,9 +14,11 @@ links:
   - { id: internal-computation, relation: contrasts }
   - { id: hesitation, relation: illustrates }
   - { id: obvious-choice, relation: illustrates }
+  - { id: ref-wickens-multiple-resources, relation: extends }
+  - { id: ref-cowan-magical-number-four, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The total processing capacity available to participants in a shared interaction at any given moment. Bandwidth is finite, shared, and consumed by every signal sent and received.

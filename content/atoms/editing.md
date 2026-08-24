@@ -17,9 +17,10 @@ links:
   - { id: ref-carrane-improv-nerd, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: tag-run, relation: extends }
+  - { id: monoscene, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 How to end scenes. One of the hardest ensemble skills — it requires reading the scene from outside while respecting what's happening inside. Jimmy Carrane: "The best edits are gifts to your teammates. You're saving them from having to figure out how to end the scene."

@@ -28,6 +28,7 @@ links:
   - { id: straight-man, relation: extends }
   - { id: mapping, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
+  - { id: tilt, relation: contrasts }
 sources: []
 created: "2026-04-03"
 updated: "2026-08-23"

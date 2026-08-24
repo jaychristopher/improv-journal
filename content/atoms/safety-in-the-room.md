@@ -15,9 +15,10 @@ links:
   - { id: warm-up, relation: extends }
   - { id: giving-notes, relation: enables }
   - { id: side-coaching, relation: enables }
+  - { id: ref-edmondson-psychological-safety, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Creating the conditions under which vulnerability, risk, and honest play become possible. Without safety, bravery is recklessness, honesty is exposure, and changeability is surrender. Safety is the container that makes every principle safe to practice.

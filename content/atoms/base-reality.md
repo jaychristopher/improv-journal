@@ -19,6 +19,7 @@ links:
   - { id: coherence, relation: requires }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-napier-improvise, relation: contrasts }
+  - { id: tilt, relation: enables }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-23"

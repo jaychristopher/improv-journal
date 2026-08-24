@@ -22,6 +22,7 @@ links:
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-impro-storytellers-johnstone, relation: extends }
   - { id: one-word-scene, relation: contrasts }
+  - { id: blocking-taxonomy, relation: extends }
 sources: []
 created: "2026-03-29"
 updated: "2026-08-23"
