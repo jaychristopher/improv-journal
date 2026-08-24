@@ -240,7 +240,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
 - [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 
-## Formats (16)
+## Formats (17)
 
 - [Armando](https://www.physicsofconnection.com/practice/formats/armando): A monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes.
 - [Freeze Tag](https://www.physicsofconnection.com/practice/formats/freeze-tag): The most universal shortform improv game. Two performers begin a scene. At any point, someone on the sideline calls "Freeze!" Both performers stop in their...
@@ -254,6 +254,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Organic Longform](https://www.physicsofconnection.com/practice/formats/organic-longform): Longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined scene order.
 - [Party Quirks](https://www.physicsofconnection.com/practice/formats/party-quirks): One of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing.
 - [Scenes from a Hat](https://www.physicsofconnection.com/practice/formats/scenes-from-a-hat): Audience suggestions written on slips of paper before the show, placed in a hat (or bowl, or bucket), pulled randomly, and performed as rapid-fire scenes...
+- [The Deconstruction](https://www.physicsofconnection.com/practice/formats/deconstruction): A long form built by Del Close with The Family at ImprovOlympic, in which one unresolved scene becomes the material for everything that follows.
 - [The Harold: Improv's Most Important Long-Form Format](https://www.physicsofconnection.com/practice/formats/harold): The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the...
 - [The Monoscene: One Scene, No Edits](https://www.physicsofconnection.com/practice/formats/monoscene): One scene, held for the whole set. Same location, same people, time moving roughly as it moves in life.
 - [Theatresports](https://www.physicsofconnection.com/practice/formats/theatresports): Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience.

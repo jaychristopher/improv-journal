@@ -7,6 +7,7 @@ tags: [formats, longform, structure, genre, performance]
 how_to_play: "A longform played inside the conventions of one genre — noir, horror, Western — using what the audience already knows as the structure, played straight before it is subverted or heightened."
 links:
   - { id: narrative-longform, relation: extends }
+  - { id: deconstruction, relation: extends }
   - { id: commitment, relation: requires }
   - { id: ensemble, relation: requires }
   - { id: editing, relation: requires }
@@ -20,7 +21,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Longform improv performed within the conventions of a specific genre — film noir, horror, Western, rom-com, musical. Genre knowledge becomes the structural framework: the audience's familiarity with the genre creates a shared vocabulary that performers can fulfill, subvert, or heighten.
