@@ -270,6 +270,40 @@ Every list includes some of these. They are worth knowing about because each one
 - **"Why are you single?"** — asks someone to account for their life to you.
 - **"Don't you think you should..."** — advice with a question mark on it. See below.
 
+## Questions People Ask About Asking Friends Questions
+
+### What do you ask a friend you already know everything about?
+
+You do not know everything about them. You know the version of them that existed when the friendship set, plus whatever has been reported since in the form of updates.
+
+The productive move with a long friendship is not a more exotic question, it is asking about change rather than about facts. "What is something you have changed your mind about in the last few years?" works on somebody you have known for twenty years precisely because it is unanswerable from the stored version. So does asking what they were wrong about, what they have stopped worrying about, or what they would not do again. Every one of them requires them to compare two selves, and nobody has that comparison prepared.
+
+### Why do conversations with close friends stay on the surface?
+
+Because the friendship has an established groove and both of you are following it. Long friendships develop a house style — the topics, the running jokes, the shape of a normal evening — and the style is comfortable, self-sustaining and almost impossible to leave by accident.
+
+Nothing is wrong, and neither of you needs to raise it. The groove only changes when one person deliberately puts something slightly outside it into the conversation and the other person picks it up. That is an `offers` problem rather than a friendship problem, and the fix is the same: go first, make it small, and give them room to take it or leave it.
+
+### How do you ask a friend something personal without making it weird?
+
+Ask for permission to change register, then answer it yourself first.
+
+"Can I ask you something a bit more personal?" costs one sentence and does two useful things: it warns them a shift is coming, and it makes declining cheap, which is what stops a question feeling like an ambush. Then answer your own question before they do, at the depth you are hoping for. `vulnerability` offered is very different from `vulnerability` requested — the first is a gift and the second is an interview, and the words in between can be identical.
+
+The weirdness people fear almost always comes from asymmetry rather than from the subject.
+
+### What questions test how well your best friend knows you?
+
+The ones people reach for — favourite film, order at the coffee place, middle name — test recall, and recall is not the same as knowing somebody. A friend can get all of those right while having no idea what you are currently worried about.
+
+Better tests ask what only close attention would supply: what they think you are avoiding, what they would guess makes you defensive, which compliment you would not believe, what they think you would do with a free year. Getting one of those right is a genuine result. Getting all of them right is unlikely and is not the point — the interesting part is what they say when they are wrong, because a wrong answer about you is usually a description of who they think you are, which is worth more than the correct trivia.
+
+### Do questions actually make a friendship closer?
+
+There is evidence that they do, under specific conditions. Aron et al. (1997) put pairs of strangers through thirty-six questions of escalating personal disclosure and found substantially greater reported closeness than in a matched small-talk condition — [the 36 questions protocol](/36-questions-to-fall-in-love) sets out the full sequence and the part the popular write-ups leave out.
+
+The condition that matters is escalation. It was not the questions that produced the effect but the ordering, with each answer making the next question askable, and both people answering everything. A list read out in a random order with one person asking and the other supplying is a different activity and should not be expected to do the same thing.
+
 ## How to Ask
 
 The questions are the easy part. Almost everything that decides whether you get a real answer happens in how you put it and what you do in the ten seconds afterwards.
