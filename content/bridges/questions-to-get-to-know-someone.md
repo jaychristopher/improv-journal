@@ -352,6 +352,22 @@ Each of these fails specifically because there is no trust yet.
 - **"Can I ask you something personal?"** — announces the withdrawal before making it, and the announcement is what makes people tense.
 - **Rapid-fire anything.** Three questions with no reaction in between is an interrogation, however friendly the tone.
 
+## When an Ice Breaker Question Gets Nothing Back
+
+Every list of ice breaker questions assumes the other person plays along. Often they do not. You ask, and back comes a polite three words with nothing to hold on to, and the honest experience is that the question has made things worse rather than better.
+
+This is the gap in most collections of questions to ask to get to know someone. They tell you what to say and stop at the point where it actually gets difficult.
+
+A flat answer is rarely disinterest. It is usually one of three things, and they need different responses.
+
+**The question was too wide.** "Tell me about yourself" has no edges, so answering it means first deciding what kind of answer is wanted. Narrow questions are easier to answer than broad ones, which is the reverse of what most people assume when they are trying to be open and welcoming.
+
+**They think they are being assessed.** In a group, at work, or opposite somebody who seems relaxed and fluent, an ice breaker question can feel like a test with an audience. The fix is to answer your own question first, and to answer it unimpressively. Whoever goes first sets the standard, and a mildly boring answer is a gift because it makes the next one safe.
+
+**They do not want to talk yet.** Tired, preoccupied, at the end of a long day. There is no technique for this and the right move is to let it go — pressing converts mild reluctance into active avoidance, and you can ask again later on a better day.
+
+Underneath all three is one habit worth changing. When an answer comes back short, most people ask a different question, which turns the conversation into an interview and confirms that the other person is being processed. Do the opposite: take the three words and add something of your own. "Manchester." — "Oh — I have been once, and it rained for the entire weekend." Now there is something to react to and no obligation to perform. You have made an `offers` rather than a request, which is the whole of what a good ice breaker is doing anyway.
+
 ## How to Ask Them
 
 **Answer your own question, briefly, before or after.** A question asked without any reciprocity is an interview. `safety-in-the-room` is the condition under which people risk being seen without armour, and with a stranger you are the only one who can create it, because you are the only variable they can read.
