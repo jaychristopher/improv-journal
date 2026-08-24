@@ -14,9 +14,10 @@ links:
   - { id: commitment, relation: requires }
   - { id: environment, relation: extends }
   - { id: warm-up, relation: extends }
+  - { id: cognitive-bandwidth, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Trains:** committing to a physical action while your mouth is doing something else. The standard first exposure to space work, and the reason most improvisers can mime at all.

@@ -26,9 +26,10 @@ links:
   - { id: character, relation: extends }
   - { id: scene-structure, relation: extends }
   - { id: questions-only, relation: contrasts }
+  - { id: first-line-drill, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Brave**

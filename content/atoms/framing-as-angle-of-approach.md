@@ -17,6 +17,8 @@ links:
   - { id: be-honest, relation: contrasts }
   - { id: ref-goffman-frame-analysis, relation: illustrates }
   - { id: ref-truth-in-comedy, relation: illustrates }
+  - { id: endowment, relation: illustrates }
+  - { id: status, relation: illustrates }
 sources: []
 created: "2026-05-14"
 updated: "2026-08-24"

@@ -19,9 +19,10 @@ links:
   - { id: genre-format, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-impro-storytellers-johnstone, relation: extends }
+  - { id: tilt, relation: requires }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Longform improv that creates a coherent story with beginning, middle, and end — an improvised play or film. Distinguished from collage-based forms (Harold) by commitment to a single through-line narrative.

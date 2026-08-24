@@ -15,9 +15,10 @@ links:
   - { id: hesitation, relation: contrasts }
   - { id: warm-up, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: initiation, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Trains:** shared timing. Two people clap at the same instant, round a circle, until the group stops passing a clap and starts keeping one.

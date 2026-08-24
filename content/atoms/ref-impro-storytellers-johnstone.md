@@ -12,6 +12,7 @@ links:
   - { id: heightening, relation: illustrates }
   - { id: game-of-the-scene, relation: illustrates }
   - { id: callback, relation: illustrates }
+  - { id: blocking-taxonomy, relation: illustrates }
 external_links:
   - { label: "Amazon", url: "https://amazon.com/dp/0571190995" }
 sources: []
@@ -23,7 +24,7 @@ work:
   published: "1999"
   isbn: "0571190995"
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Keith Johnstone. *Impro for Storytellers.* Faber & Faber, 1999.**

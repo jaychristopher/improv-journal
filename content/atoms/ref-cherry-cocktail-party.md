@@ -9,6 +9,7 @@ links:
   - { id: cognitive-bandwidth, relation: illustrates }
   - { id: bandwidth, relation: illustrates }
   - { id: signal, relation: illustrates }
+  - { id: pattern-break, relation: illustrates }
 external_links:
   - { label: "The paper (Journal of the Acoustical Society of America)", url: "https://pubs.aip.org/asa/jasa/article/25/5/975/690150/Some-Experiments-on-the-Recognition-of-Speech-with" }
 sources: []
@@ -20,7 +21,7 @@ work:
   published: "1953"
   doi: "10.1121/1.1907229"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **E. Colin Cherry. "Some Experiments on the Recognition of Speech, with One and with Two Ears." *Journal of the Acoustical Society of America* 25(5), 975–979, 1953.**

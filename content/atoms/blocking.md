@@ -23,9 +23,10 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
   - { id: one-word-scene, relation: contrasts }
   - { id: blocking-taxonomy, relation: extends }
+  - { id: wimping, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other principle-shadows are its species.
