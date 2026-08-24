@@ -38,7 +38,7 @@ created: "2026-04-05"
 updated: "2026-08-24"
 ---
 
-The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the 1980s at iO Chicago, further refined by the Upright Citizens Brigade. Described in *Truth in Comedy* (1994) as "a collage of scenes inspired by a single suggestion which are interwoven and connected."
+The foundational longform improv structure. First performed by The Committee in California in 1967 and named, as a joke, on the drive home; developed by Del Close over the following two decades and codified with Charna Halpern at iO Chicago in the 1980s, then further refined by the Upright Citizens Brigade. Described in *Truth in Comedy* (1994) as "a collage of scenes inspired by a single suggestion which are interwoven and connected."
 
 ## The 3x3 structure (the "training wheels Harold")
 
@@ -56,6 +56,30 @@ Typically performed by 6-9 improvisers, running 25-40 minutes.
 - **Discovery** — first beats find the games
 - **Heightening** — second beats escalate them
 - **Connection** — third beats reveal that it was all one thing
+
+## What a beat actually is
+
+The most common point of confusion, and the reason many second beats fail.
+
+A beat is not the next episode of a story. Returning to a first-beat world does not mean continuing its plot — it means returning to its **game**, with the same pattern taken further. If the first scene found a man who apologises to inanimate objects, the second beat is not what happened to him afterwards; it is that behaviour under more pressure, possibly with different characters in a different place.
+
+`heightening` is therefore the connective tissue between beats rather than narrative. Teams that treat beats as chapters produce a serial, which is a perfectly good form and is not this one.
+
+## How to tell it worked
+
+The third beat is the test, and the standard is specific: connections should feel **discovered rather than arranged**.
+
+A Harold has worked when material from minute four returns in minute twenty-eight and means something it could not have meant the first time — and when nobody in the cast decided that would happen. The audience experience is recognition, which is a different pleasure from surprise and is the one this form exists to produce.
+
+The counterfeit is a cast noticing at minute twenty that they ought to tie things together, and doing so deliberately. It reads as tidy rather than inevitable, and `connections` forced this way are usually the weakest moments in the piece.
+
+## Common failures
+
+- **The opening runs long.** Three to five minutes of `opening` generates plenty. Ten minutes produces a cast who have already said their best ideas before any scene has started.
+- **First beats ignore the opening.** Three scenes that could have come from any suggestion mean the opening was decoration, and the third beat then has nothing thematic to reach back to.
+- **Second beats repeat rather than heighten.** The same game at the same intensity is a reprise. If the audience is not more uncomfortable or more delighted than they were the first time, the beat has not moved.
+- **Forcing connections.** Deciding in advance that two worlds will merge, then steering towards it. This is the failure the form is least able to hide.
+- **Nobody edits.** Scenes that outlive their game make everything after them shorter and more rushed. `editing` is the invisible skill that decides whether a Harold has room to land.
 
 ## Why the Harold matters
 
