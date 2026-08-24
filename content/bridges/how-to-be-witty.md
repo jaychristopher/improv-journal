@@ -68,6 +68,22 @@ Perfectionism is wit's assassin. The perfect response doesn't exist. There is on
 
 Every witty person you admire has said things that didn't land. Hundreds of times. The difference is they didn't stop. They said the next thing. And the next. Most people try once, it doesn't get a laugh, and they retreat into silence for the rest of the conversation. Witty people understand that misses are part of the process, not evidence of failure.
 
+## Can Introverts Be Witty?
+
+The question assumes wit and extraversion are the same faculty, and they are not related at all. Extraversion describes where somebody gets their energy and how readily they speak into a room. Wit is retrieval plus permission — noticing the connection, and letting it out before the moment has gone.
+
+Introverts are usually not short of the first half. The noticing tends to be *better*, because attention that is not being spent on holding the floor is available for watching what is actually happening. What is missing is the second half, and it is missing for a specific reason rather than a temperamental one: the gap between having the thought and saying it is exactly where the evaluator described above gets its opportunity.
+
+That produces the familiar experience of thinking of the line in the car. The line was there at the time. It was held for inspection, the inspection took four seconds, and four seconds is roughly three too many.
+
+So the constraint is timing, not content, which is good news because timing is the trainable half. Two things help more than any amount of preparation. Say the thing at seven out of ten rather than waiting to reach nine, since the section above is right that a 7 delivered on the beat beats a 9 delivered after it. And aim smaller: one well-placed line in a conversation does more than a stream of them, and the stereotype of the witty person as somebody producing constant output is describing volume rather than wit.
+
+### What about witty comebacks?
+
+The comeback frame is narrower than it looks and mostly adversarial — it imagines wit as defence against someone attacking you, which is a small fraction of the times wit is useful and not the fraction that makes anybody better company.
+
+Where a comeback is genuinely called for, the strongest move is rarely a counterattack. It is agreement taken further than the other person intended. Accepting the premise and extending it past its own logic leaves nothing to push against, costs no aggression, and is the same move improvisers use to make a scene out of a challenge rather than a fight.
+
 ## When Nothing Comes
 
 The advice above is about removing a filter. But there is a specific moment it does not cover: the two seconds when a response is expected, everyone is looking at you, and nothing has arrived.
