@@ -24,9 +24,10 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
+  - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.

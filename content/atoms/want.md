@@ -14,9 +14,10 @@ links:
   - { id: commitment, relation: requires }
   - { id: be-changeable, relation: extends }
   - { id: discovery, relation: enables }
+  - { id: ref-stanislavski-actor-prepares, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 What the character desires from the other person in this scene. Want is the dramatic engine — it's what makes characters *do things* rather than merely exist.

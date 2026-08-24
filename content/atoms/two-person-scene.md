@@ -21,9 +21,10 @@ links:
   - { id: commitment, relation: requires }
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
+  - { id: ref-salinsky-improv-handbook, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 The fundamental unit of all improv. Virtually every longform structure — Harold, Armando, La Ronde, Deconstruction — is built from two-person scenes as its base unit. Master the two-person scene and everything else is variation.

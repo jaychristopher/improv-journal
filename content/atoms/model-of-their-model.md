@@ -16,9 +16,10 @@ links:
   - { id: internal-computation, relation: contrasts }
   - { id: signal, relation: extends }
   - { id: coherence, relation: illustrates }
+  - { id: ref-goffman-frame-analysis, relation: illustrates }
 sources: []
 created: "2026-05-14"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 You cannot see into another person's mind. You only ever have *your model of their model* — a second-order representation, assembled from signals you happened to observe and inferences you happened to draw. It is almost always wrong in some specific, consequential way. Treating it as if it were the territory is how most communication quietly fails.

@@ -17,9 +17,10 @@ links:
   - { id: do-feel-say, relation: extends }
   - { id: status, relation: illustrates }
   - { id: belief-as-architecture, relation: contrasts }
+  - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Changeable**

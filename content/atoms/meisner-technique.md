@@ -11,9 +11,10 @@ links:
   - { id: internal-computation, relation: contrasts }
   - { id: spontaneity, relation: enables }
   - { id: viewpoints, relation: contrasts }
+  - { id: ref-stanislavski-actor-prepares, relation: illustrates }
 sources: []
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 An actor training method built on a single instruction — put your attention on the other person and respond to what they actually do — trained through a repetition exercise that makes self-monitoring mechanically impossible.

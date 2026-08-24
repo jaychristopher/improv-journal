@@ -16,9 +16,10 @@ links:
   - { id: game-of-the-scene, relation: extends }
   - { id: status, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
+  - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Supportive**

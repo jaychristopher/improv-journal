@@ -23,9 +23,10 @@ links:
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
   - { id: the-machine, relation: illustrates }
+  - { id: ref-overlie-standing-in-space, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Building character from the body first — not from concept, biography, or dialogue. The physical choice precedes (and generates) everything else: point of view, emotional state, status, want. The body leads; the mind follows.
