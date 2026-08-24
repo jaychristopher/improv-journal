@@ -72,6 +72,8 @@ Johnstone's **reincorporation** also creates retrospective meaning, but across l
 
 Over-justification produces tortured logic that the audience can smell. The test: does the justification create a *discovery* (the audience thinks "of course!") or a *rationalization* (the audience thinks "they're explaining")? If the scene stops to explain, you've over-justified. Half-hearted justification is equally deadly — it reads as apologizing for your partner's offer instead of celebrating it. Commitment is non-negotiable.
 
+The purest test of this is [Blind Line](/practice/formats/blind-line), where the line arrives from a stranger on a slip of paper and has nothing to do with the scene. The move that works is almost never explaining it — it is treating it as evidence about the character and letting the consequence do the work.
+
 ## Specific sources
 
 Truth in Comedy — the principle "if everyone justifies everyone else's actions, there are no mistakes" is a recurring theme, most directly treated in Ch. 7 ("Building a Scene") and the general principles chapters (Ch. 2-5). Johnstone, *Impro for Storytellers*, Ch. 6 — reincorporation as narrative justification. The Radical Agreement blog, ["Improv Justifications"](https://www.radicalagreement.com/post/improv-justifications) — justification as "the central compass of game."

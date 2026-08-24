@@ -6,6 +6,7 @@ type: exercise
 status: draft
 tags: [exercises, beginner, support, justification, principles]
 links:
+  - { id: blind-line, relation: extends }
   - { id: be-supportive, relation: illustrates }
   - { id: bulldozing, relation: contrasts }
   - { id: negation, relation: contrasts }

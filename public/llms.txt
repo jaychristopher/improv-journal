@@ -247,9 +247,10 @@ This file is generated from the site's content, so it lists everything rather th
 - [Yes, Let's](https://www.physicsofconnection.com/practice/exercises/yes-lets): Somebody says "let's paint the fence." Everybody answers "Yes, let's!" and starts painting the fence.
 - [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 
-## Formats (21)
+## Formats (24)
 
 - [Armando](https://www.physicsofconnection.com/practice/formats/armando): Armando is a monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes.
+- [Blind Line](https://www.physicsofconnection.com/practice/formats/blind-line): The audience writes lines on slips before the show and they are scattered face-down across the stage.
 - [Bus Stop](https://www.physicsofconnection.com/practice/formats/bus-stop): One player is waiting at a bus stop and has a reason to stay there. Another arrives playing somebody specific.
 - [Freeze Tag](https://www.physicsofconnection.com/practice/formats/freeze-tag): Freeze Tag is the most universal shortform improv game. Two performers begin a scene.
 - [Genre Format](https://www.physicsofconnection.com/practice/formats/genre-format): Longform improv performed within the conventions of a specific genre — film noir, horror, Western, rom-com, musical.
@@ -263,11 +264,13 @@ This file is generated from the site's content, so it lists everything rather th
 - [Party Quirks](https://www.physicsofconnection.com/practice/formats/party-quirks): Party Quirks is one of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing.
 - [Scenes from a Hat](https://www.physicsofconnection.com/practice/formats/scenes-from-a-hat): Audience suggestions written on slips of paper before the show, placed in a hat (or bowl, or bucket), pulled randomly, and performed as rapid-fire scenes...
 - [Story Story Die](https://www.physicsofconnection.com/practice/formats/story-story-die): A line of players tells a single story, and a conductor decides who is telling it.
+- [Superheroes](https://www.physicsofconnection.com/practice/formats/superheroes): A hero is facing a crisis and calls for help. The player who enters is named by the one already there — Captain Mild Disappointment, The Human Tuesday — and...
 - [The Alphabet Game](https://www.physicsofconnection.com/practice/formats/alphabet-game): Two players run a scene in which every line starts with the next letter of the alphabet.
 - [The Deconstruction](https://www.physicsofconnection.com/practice/formats/deconstruction): A long form built by Del Close with The Family at ImprovOlympic, in which one unresolved scene becomes the material for everything that follows.
 - [The Harold: Improv's Most Important Long-Form Format](https://www.physicsofconnection.com/practice/formats/harold): The foundational longform improv structure. Invented by Del Close in 1967 with The Committee in San Francisco, codified by Close and Charna Halpern through the...
 - [The Monoscene: One Scene, No Edits](https://www.physicsofconnection.com/practice/formats/monoscene): One scene, held for the whole set. Same location, same people, time moving roughly as it moves in life.
 - [Theatresports](https://www.physicsofconnection.com/practice/formats/theatresports): Theatresports is Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience.
+- [Two-Headed Expert](https://www.physicsofconnection.com/practice/formats/two-headed-expert): Two players stand together as one person — the world's leading authority on whatever the audience named — and answer questions one word at a time, alternating.
 - [Two-Person Longform](https://www.physicsofconnection.com/practice/formats/two-person-longform): Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support.
 - [World's Worst](https://www.physicsofconnection.com/practice/formats/worlds-worst): World's Worst is a shortform game in which a category is announced — world's worst doctor, world's worst person to sit next to on a plane — and the cast take...
 

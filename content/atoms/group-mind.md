@@ -59,6 +59,8 @@ Group mind is the ultimate systemic health indicator — when it's happening, ev
 
 A working group produces the same phenomenon and rarely names it. [Team dynamics](/team-dynamics) covers what actually generates it — status, signalling, and the coherence a group maintains without discussing it — instead of treating it as chemistry a team either has or does not.
 
+The clearest shortform demonstration is [Two-Headed Expert](/practice/formats/two-headed-expert), where two players answer as one person a word at a time. The expert ends up with opinions neither player holds, arrived at by nobody, which is the phenomenon this describes reduced to its smallest possible form.
+
 ## Specific sources
 
 Truth in Comedy, Ch. 5 ("Group Mind") — the definitive chapter. Sawyer, *Group Genius*, Ch. 3 ("Group Flow") — academic framing as "collaborative emergence," not literal shared consciousness. Sawyer trained under Del Close at iO before becoming a creativity researcher — his work bridges practitioner experience and empirical study. **Attribution note:** "One mind, many bodies" does not appear verbatim in Truth in Comedy. The book describes the phenomenon; the phrasing is oral tradition from Del's teaching. **Counter-position:** Cognitive scientist Robert Weisberg (*Creativity: Understanding Innovation*, 2006) argues group mind is metaphor, not phenomenon — individuals reading cues well, not shared consciousness. The romantic mythology critique: Close needed ensemble ideology to differentiate longform from star-driven shortform. Sawyer himself uses "collaborative emergence" rather than "group mind" precisely to avoid mystification.

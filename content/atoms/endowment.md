@@ -57,6 +57,8 @@ When you endow your partner with interesting qualities, you are choosing to see 
 
 Run backwards, this becomes a game. In [Party Quirks](/practice/formats/party-quirks) the host is the only person who does not know what they have been given, and the whole scene is them assembling an identity out of how three other people are behaving towards them.
 
+Its most exposed version is [Superheroes](/practice/formats/superheroes), where you do not choose who you are at all — somebody names you in the second before you arrive, and the only available move is to accept it completely and find out what it implies.
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 3 ("Narrative Skills," approx. pp. 116-140) — endowment exercises where Player A treats Player B as if they have a specific trait; Player B discovers the endowment through how they're treated. *Impro for Storytellers*, "Making Things Happen" and "Spontaneity" chapters — expanded exercises, endowment as generosity. Spolin, *Improvisation for the Theater* — "Who" games are endowment by another name. **Counter-position (Napier):** *Improvise*, Ch. 1-2 — "take care of yourself first." Self-endowment (deciding who YOU are) produces stronger scenes than mutual other-endowment (each player tentatively defining the other). This is a fundamental philosophical split: Johnstone/iO prioritizes giving to your partner; Napier/Annoyance prioritizes taking responsibility for yourself.

@@ -6,6 +6,7 @@ type: format
 status: draft
 tags: [formats, shortform, warm-up, physicality]
 links:
+  - { id: superheroes, relation: extends }
   - { id: bus-stop, relation: extends }
   - { id: initiation, relation: requires }
   - { id: physicality, relation: requires }
