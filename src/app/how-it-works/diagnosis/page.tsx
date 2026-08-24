@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { AlsoCalled } from "@/components/AlsoCalled";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
@@ -70,6 +71,7 @@ export default async function DiagnosisPage() {
                 <p className="text-foreground/60 mt-1 text-sm">
                   {leadParagraph(stripLeadLabel(a.content), 180)}
                 </p>
+                <AlsoCalled aliases={a.frontmatter.aliases} />
               </div>
             ))}
           </div>
@@ -96,6 +98,7 @@ export default async function DiagnosisPage() {
               <span className="text-foreground/60 mt-1 block text-xs">
                 {leadParagraph(stripLeadLabel(a.content), 180)}
               </span>
+              <AlsoCalled aliases={a.frontmatter.aliases} />
             </div>
           ))}
         </div>
@@ -121,6 +124,7 @@ export default async function DiagnosisPage() {
               <span className="text-foreground/60 mt-1 block text-xs">
                 {leadParagraph(stripLeadLabel(a.content), 180)}
               </span>
+              <AlsoCalled aliases={a.frontmatter.aliases} />
             </div>
           ))}
         </div>

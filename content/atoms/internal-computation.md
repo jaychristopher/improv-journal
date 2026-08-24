@@ -4,6 +4,7 @@ title: Internal Computation
 type: antipattern
 status: draft
 tags: [antipatterns, principles, cognition, presence]
+aliases: ["Self-monitoring"]
 links:
   - { id: be-present, relation: contrasts }
   - { id: active-listening, relation: contrasts }
@@ -29,6 +30,16 @@ The shadow of **Be Present**. Internal computation is the act of retreating into
 The classic tell: your partner says something and your eyes glaze over. You aren't looking at them — you're looking at the script in your head. You're scrolling through your mental Rolodex of responses, trying to find the clever one, the right one, the funny one. Meanwhile, time advances irreversibly. Your partner has already moved on. When you finally deliver the line you rehearsed, it lands on a scene that no longer exists.
 
 This is the **deer in headlights** failure mode. The brain is maxed out trying to simultaneously listen, remember, plan, and perform. Something has to give, and what gives is reception — you stop observing external reality because all your bandwidth is consumed by internal processing.
+
+## Self-monitoring is the common case, not the whole of it
+
+Most people meet this under its ordinary name. Self-monitoring is watching your own performance while giving it — how am I doing, was that any good, do I sound like an idiot — and it is far and away the most frequent form internal computation takes, which is why the two words get used interchangeably.
+
+They are not the same size. Internal computation is the whole category of processing that happens inside your head while something is happening outside it, and self-monitoring is one member. Planning your next line is internal computation and is not self-directed at all. Tracking whether the scene is working, mentally checking a fact somebody established four minutes ago, deciding whether to enter — all of it runs on the same capacity and none of it is about you.
+
+The distinction is worth keeping because the two have different fixes. Self-monitoring responds to moving attention onto the other person, since the loop needs you as its subject and cannot run without one. Planning does not respond to that at all — you can be looking directly at your partner, fully attentive to them, and still be assembling a sentence. What planning responds to is `commitment` to the obvious thing, because the planning exists to find something better than obvious.
+
+Self-monitoring also has a property the others lack: it compounds. Evaluating your performance produces a judgement, the judgement produces anxiety, and anxiety is itself something to monitor. Planning does not feed itself that way, which is why self-monitoring is the version that turns a bad moment into a bad scene.
 
 ## Why it happens
 
