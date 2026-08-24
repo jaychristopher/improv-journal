@@ -100,6 +100,22 @@ But this doesn't mean quality doesn't matter. It means the standard of quality s
 
 **The real principle:** Mistakes are unintentional offers. Treat them as gifts.
 
+## Do These Apply at Work?
+
+Some of them, and the ones that travel badly do real damage, so it is worth being specific rather than importing the list wholesale the way most corporate improv training does.
+
+**"Yes, And" transfers, and is the most abused.** Taken into a meeting it becomes *never disagree*, which is the opposite of what it means on stage. Accepting an offer is accepting that a thing has been said and is now real in the room — not agreeing to it. "Yes, we are behind, and I think the deadline is the problem" is a Yes And. So is disagreeing with the plan while accepting that the person raising it has a genuine concern. A room where nobody can say "that will not work" has not achieved [psychological safety](/psychological-safety); it has achieved silence, and the two look identical from the front of the room.
+
+**"Don't ask questions" should be dropped entirely.** It is shaky on stage, as above, and at work it is actively harmful. The rule exists to stop beginners using questions to dodge decisions. In a workplace, questions are how you discover the thing nobody told you, and the most common failure in a meeting is not excessive curiosity — it is people acting on an assumption they never checked.
+
+**"Make your partner look good" transfers best and is the least discussed.** It is the whole mechanism behind why some teams surface problems early: if raising something makes you look worse and the person who caused it look worse, nobody raises anything. Teams that credit the person who flagged the issue get told about the next one sooner.
+
+**"Don't negate" transfers with a hard edge.** Do not erase somebody's stated reality — "that is not a problem", "you are not blocked" — because that is denial and it teaches people to stop reporting. Saying no to a proposal is a different act entirely, and conflating the two is how "no blocking" becomes a rule against dissent.
+
+**"There are no mistakes" is the one to be careful with.** At work it gets heard as quality not mattering. What it means is that an error already made is information, and the useful question is what it tells you rather than whose it was. [How to give feedback](/how-to-give-feedback) covers the version of this that survives contact with an actual performance review.
+
+The pattern is that a rule transfers when it was solving a human problem — evaluating instead of participating, competing instead of building — and fails when it was solving a stage problem specific to beginners. That is also the test for any of the others you get handed in a workshop.
+
 ## What the Rules Are Actually About
 
 Strip away the specific instructions and every rule is trying to solve the same problem: **get out of your head and into the scene.**
