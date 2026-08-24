@@ -13,7 +13,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Types of Listening: The Improv Framework for Understanding How We Hear
@@ -128,6 +128,44 @@ In improv, this is called tracking `offers` — not just the verbal content, but
 Your body receives communication that your conscious mind misses. Notice what you feel in your body when the other person is talking. Tension, warmth, restlessness, openness — these are your body's interpretation of their signal, and they're often more accurate than your mind's analysis.
 
 Spolin's training centered on this: the body knows before the mind does. By attending to your physical response, you bypass the analytical layer and access a deeper kind of listening. `mirroring` is the exercise built for it — matching a partner's movement demands the whole of your attention and leaves none spare for evaluation.
+
+## Questions People Ask About Types of Listening
+
+### What is the difference between hearing and listening?
+
+Hearing is involuntary and listening is an allocation. Sound arrives whether or not you agree to it; listening is the decision to spend attention on it, and attention is finite in a way that hearing is not.
+
+That is why "I heard you" and "I was listening" are not the same claim, and why somebody can repeat your last sentence back accurately while having listened to none of it. Repetition only proves the audio was received. `cognitive-bandwidth` on this site is the account of why the two come apart: the words can be captured by a very cheap process while the expensive one — working out what this person means and what it is costing them to say it — never runs at all.
+
+### What are the 4 types of listening?
+
+Usually appreciative, empathetic, comprehensive and critical. It is the same taxonomy as the seven above with the pre-verbal and pathological entries removed, which is why the number changes between sources and why searching for the definitive count is unproductive — you will find three, four, five, six and seven, and they are subsets of one another rather than rival theories.
+
+What the four-type version keeps is the useful half: two purposes that take in content and judge it, and two that take in a person. That distinction survives every version of the list, and it is the one worth carrying. The rest of the variation is bookkeeping.
+
+### Which type of listening is hardest to do?
+
+Empathetic, by a considerable margin, and not for the reason usually given.
+
+The difficulty is not that it requires more compassion. It is that it requires you to suspend the evaluative mode while somebody says things you disagree with or would have handled differently, and evaluation is the default for most educated adults — it is what school, work and argument all reward. `internal-computation` is what that suspension is competing with, and the effort is real: you are holding a response you have already composed and choosing not to deploy it.
+
+Which is why people are reliably worse at it with those closest to them. The stakes are higher, the disagreements are older, and the composed response is already loaded.
+
+### How do you know which listening style you have?
+
+Ask what irritates you rather than what you value.
+
+Self-report on this is close to useless, because everybody rates themselves people-oriented. What is diagnostic is the thing that makes you impatient. If preamble annoys you, you are action-oriented. If a story with no verifiable detail annoys you, content-oriented. If length itself annoys you regardless of content, time-oriented. If somebody being upset annoys you far less than being cut off does, people-oriented.
+
+The reason this matters is in the section above: a style predicts which mode you habitually skip, and the mode you skip is the one you will need in the conversation that matters most.
+
+### Does active listening training actually work?
+
+The techniques work. Teaching them alone frequently does not, and the failure is specific.
+
+Active listening is a set of behaviours — paraphrasing, reflecting, eye contact — and those behaviours can be produced from any attention mode, including one where you are entirely absorbed in composing your reply. That is the most convincing bad listening there is, and it is what a great deal of training produces: people who have learned the signals and are still doing the same thing underneath.
+
+`active-listening` works when the mode has changed and the behaviours follow it. Trained the other way round, it hands somebody a more accurate performance of attending, which is worse than no training at all, because it removes the visible clues that would otherwise have told the other person to try again later.
 
 ## The Practical Version
 
