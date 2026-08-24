@@ -101,6 +101,48 @@ What breaks the loop is not confidence. It is having somewhere else to put your 
 
 Two things that help immediately: **answer the question that was asked** rather than the one you prepared for, and **say the first true sentence** rather than the best one. `obvious-choice` holds here as everywhere — the first thought is connected to the question, the second is connected to how you want to appear.
 
+## Questions People Ask About Being Articulate
+
+### Why am I articulate in writing but not when I speak?
+
+Because you have never seen anybody's first draft, including your own.
+
+Writing is revision performed in private. You produce a bad sentence, fix it, reorder the paragraph, and the reader receives only the result. Speech is the first draft delivered live, to somebody watching your face while you make it. The gap you are noticing is not a gap in ability; it is the difference between an edited artefact and an unedited process.
+
+Which is why the common conclusion — that you think clearly and simply cannot express it — is usually backwards. The writing is where the thinking got finished. `internal-computation` in a conversation is you trying to run the editing pass and the delivery at the same time, on a machine that cannot do both.
+
+The transferable move is to prepare shape rather than wording. Knowing you are going to say three things, and roughly in what order, survives contact with a live conversation. A rehearsed sentence does not.
+
+### How do you stop saying "um" and "like"?
+
+Not by monitoring for them, which reliably makes it worse. Watching your own speech for fillers adds a second process to the one already struggling, and the usual result is more fillers delivered more self-consciously.
+
+Fillers are load-bearing. They exist to hold the floor while the sentence finishes assembling, and the reason they feel unavoidable is that they are doing a job. Remove the job and they go on their own — which means finishing the shape of the sentence before starting it, and being willing to hold the floor with silence instead.
+
+That second part is the whole difficulty. A pause feels like surrendering the turn and is actually the most confident thing available: a speaker who can stop for two seconds without filling them is signalling that they expect to still have the room afterwards.
+
+### Does reading more make you more articulate?
+
+Barely, and it is the most common piece of advice on this subject.
+
+Reading builds vocabulary and comprehension. Neither is the constraint. The constraint is production under time in front of somebody, and reading trains none of it — it is the difference between studying maps and finding your way through an unfamiliar city at speed.
+
+What does transfer is anything that makes you produce out loud with a clock running: reading aloud rather than silently, explaining something to somebody who does not know it, or any exercise where hesitating costs you the turn. `obvious-choice` is the underlying reason improv exercises work here — they remove the option of searching for a better word, and the plainer word turns out to have been fine.
+
+### Does speaking more slowly help?
+
+Not uniformly, and the uniform version makes some people worse — a slow speaker with the same load problem simply has more time to monitor themselves, and the result is measured, careful and still not saying anything.
+
+What helps is the specific version already in this page: slow the opening. Almost all stumbling happens in the first few words, before the shape exists, and getting through those deliberately lets the rest arrive at normal speed. Beyond the opening, pace is not the variable — `overcomplication` is. Two clear sentences delivered quickly are far easier to follow than one careful sentence with three clauses in it.
+
+### Is being articulate the same as being intelligent?
+
+No, and the two get conflated in both directions, which does real damage.
+
+Intelligence is about the model you have of something. Articulacy is about transmission — how much work the listener has to do to receive it. They are different constraints, and it is entirely ordinary to have a precise understanding of something and no practised route out of your own head for it.
+
+The reverse error is more consequential and less discussed. Fluency reads as competence, so people who assemble sentences easily are routinely credited with understanding they do not have, and the careful person who paused before answering is marked down for it. If you are inarticulate and being underestimated, that judgement is a measurement error rather than information about you.
+
 ## Practise It
 
 **Compression under constraint.** `one-word-scene` gives each player a single word per turn. It sounds like a party game and it is the most direct training available in saying only the load-bearing thing, because there is room for nothing else.
