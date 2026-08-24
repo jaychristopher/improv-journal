@@ -25,24 +25,32 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
 
 The most counterintuitive principle. It goes against everything our egos tell us — we want to be the cleverest person in the room. But Keith Johnstone: *"The improviser has to realise that the more obvious he is, the more original he appears."*
 
+## Simplicity is the condition for depth, not its opposite
+
 Simplicity is not the absence of depth. It is the *condition* for depth. When you say "happy birthday" instead of "I'm a cyborg from the future here to steal your toaster," the relationship has room to breathe. The audience doesn't need five minutes of exposition. They immediately project the history, the emotion, the stakes — and the scene can live in the space between two people rather than inside one person's elaborate premise.
+
+## The bandwidth mechanism
 
 The bandwidth mechanism makes this concrete: the audience has limited processing capacity. A complex plot with three layers of irony is a massive download — the connection chokes and the audience disengages. But "I'm sad because you ate my cake" downloads instantly. More importantly, it *activates* the audience's imagination — they co-create the relationship, the history, the stakes. Simplicity doesn't just avoid overload. It invites participation.
 
 A principle from *Truth in Comedy*: *"Honest discovery, observation, and reaction is better than contrived invention."* The pattern is visible in every class: beginners invent and spend five minutes on exposition. The master walks in and says two words. The difference is not talent — it's the willingness to trust that a simple offer is enough.
+
+## Simplicity is generosity, and it takes nerve
 
 Being simple is an act of **generosity**. A simple offer is a gift to your partner because it is immediately usable — they can receive and build on it without cognitive overhead. Overcomplication often reads as low status — reaching for approval. Economy reads as grounded. More fundamentally, you choose to be legible because you value your partner's ability to play.
 
 The hidden difficulty: simplicity requires **courage**. Saying "I love you" is simpler than a monologue about quantum physics, but harder to say on stage. Simple offers strip away armor — there is nothing to hide behind. This is why Be Brave is a prerequisite. Mick Napier adds that simplicity is not itself the goal but the natural consequence of commitment: fully commit to your first impulse and the result is naturally simple. The directive "be simple" risks becoming one more rule to self-monitor. The antidote: treat it as a compass heading, not a checklist item.
 
 This also applies to emotion. One clear feeling is more playable than a complicated emotional cocktail. "I'm angry" gives your partner ground. "I'm angry but also nostalgic and a little amused" gives them nothing to grab.
+
+## Where the principle stops applying
 
 Note: simplicity governs individual *offers*, not accumulated *structure*. A Harold's third beat can be architecturally complex — because each move within it was simple enough to track.
 

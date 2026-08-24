@@ -28,14 +28,18 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
 
+## Accepting is not the same as being changed
+
 You can accept an offer without being changed by it. You can value a surprise without letting it touch you. You can follow every other principle and still remain fundamentally rigid — absorbing inputs politely while your internal state stays fixed. Be Changeable closes that loophole.
 
 The principle: when your partner makes an offer, it doesn't just enter your awareness. It **rewrites you**. Your posture shifts. Your emotional state moves. Your character's history retroactively adjusts. The audience can see that the offer *landed* — that performer A's words actually changed performer B.
+
+## Where the traditions converge on it
 
 Keith Johnstone's entire pedagogy rests on the observation that improvisers instinctively resist alteration. The survival instinct is to protect the self from change — to absorb offers without being moved by them. His narrative exercises and status work both aim to override that defensive reflex. In workshop teaching, he frames this as the fundamental engine of drama: one person being changed by another. Without that change, there is no story.
 
@@ -44,6 +48,8 @@ Viola Spolin arrives at the same destination from a different direction. Where J
 Will Hines takes it further into the narrative dimension: you "Yes, And" the present by giving it a history. A changeable improviser who discovers their character is afraid of heights doesn't fight it — they retroactively rewrite: "I've always been afraid of heights. That's why I took this desk job at the agency." The best response to a marriage proposal is not "yes" but "finally."
 
 TJ Jagodowski and Dave Pasquesi embody this in practice. Their philosophy — "Look to your partner. Listen to your partner. Respond to your partner" — suggests that changeability is not a separate skill but the inevitable result of deep listening. If you are genuinely hearing your partner, you cannot remain unchanged. Resistance is a symptom of not-listening, not a separate problem to solve.
+
+## How it differs from the principles before it
 
 The distinction from the earlier principles:
 

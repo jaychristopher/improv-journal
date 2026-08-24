@@ -41,6 +41,39 @@ describe("concept page structure", () => {
     expect(withoutHeadings.map((a) => a.frontmatter.id)).toHaveLength(0);
   });
 
+  /**
+   * Having a heading is not the same as having an outline.
+   *
+   * The check above only asks whether a page contains one, and every concept
+   * atom passed it while be-changeable ran 680 unbroken words under a single
+   * heading near the end. Measuring the longest stretch *between* headings
+   * found what counting them could not: the nine principle atoms ranged from
+   * 183 words to 680, and the worst of them are among the most linked pages on
+   * the site.
+   *
+   * 400 is chosen because it is true with margin rather than aspirational —
+   * the worst run is now 367. A section longer than that is a page where a
+   * reader scanning the outline learns almost nothing about the middle.
+   */
+  const MAX_RUN_WITHOUT_A_HEADING = 400;
+
+  it("breaks long stretches with headings, not just one at the top", async () => {
+    const atoms = await conceptAtoms();
+    const offenders: string[] = [];
+
+    for (const atom of atoms) {
+      const stretches = atom.content
+        .split(/^#{2,3} .*$/m)
+        .map((part) => part.split(/\s+/).filter(Boolean).length);
+      const longest = Math.max(...stretches, 0);
+      if (longest > MAX_RUN_WITHOUT_A_HEADING) {
+        offenders.push(`${atom.frontmatter.id}: ${longest} words`);
+      }
+    }
+
+    expect(offenders).toEqual([]);
+  });
+
   it("does not leave a bold label sitting where a heading belongs", async () => {
     const atoms = await conceptAtoms();
     for (const atom of atoms) {

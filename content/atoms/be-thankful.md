@@ -24,12 +24,16 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Alias:** Treat every outcome as usable information and postpone evaluation.
 
+## Deferring evaluation is the actual instruction
+
 This sounds nice but it's a tactical maneuver. The underlying architecture: **defer evaluation** and **integrate unexpected input**.
+
+## Why a verdict mid-scene is premature
 
 Judgment mid-scene is not just costly — it's premature. You can't know if the trip was a disaster or a gift until your partner responds. You're judging an equation with a missing variable. Because meaning is relational — completed by the response, not contained in the offer — the value of any move is indeterminate until the interaction resolves it. If you judge, you halt the flow, and you're judging something that doesn't have a value yet.
 
@@ -39,9 +43,13 @@ Tina Fey in *Bossypants*: *"There are no mistakes, only opportunities"* — and,
 
 The spy example: you trip on stage while trying to be cool. Choice A — get up, look embarrassed, try to resume being a spy. The reality breaks; the audience sees a clumsy actor. Choice B — stay on the ground; your partner says "My god, the poison is kicking in already." The fall becomes the story. The bug becomes a feature.
 
+## The harder case is your own accident
+
 That example is about a partner saving your accident. The harder case: being thankful for your *own* errors when no one saves you. You forget a character name. You repeat a pattern you already used. You go blank. The principle still applies — the error is now a constraint, and constraints generate material. But the psychological move is different: it requires self-compassion under performance pressure, not just collaborative generosity.
 
 Some improvisers literally whisper "thank you" under their breath when a surprise happens. This is cognitive reappraisal in action — reframing the event's meaning before the emotional response consolidates. Research shows that reframing threat as challenge measurably improves performance under pressure (Brooks, 2014). The whisper works because it intercepts the brain's default threat-coding and replaces it with gift-coding: instead of "oh no, a disruption" it becomes "thank you for this new information."
+
+## What it does to a whole ensemble
 
 When a whole ensemble practices this, risk becomes cheap. The team that treats every accident as a gift will take bigger swings than the team that punishes error. Thankfulness scales from individual technique to ensemble culture.
 

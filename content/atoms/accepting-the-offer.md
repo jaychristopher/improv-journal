@@ -21,7 +21,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Positive**
@@ -42,7 +42,11 @@ Signal that the offer is now part of the shared reality. This can be verbal ("Th
 
 Add your layer on top. This is the "and" — your contribution that moves the reality forward. The extension should build from what was given, not redirect to something unrelated. The extension doesn't have to be verbal. A visible emotional shift, a change in posture, or even silence that lets the weight of the offer land — these are all valid extensions. The audience needs to see that the offer changed you; they don't need to hear a sentence about it.
 
+## The three moves in practice
+
 In practice, these three steps collapse into a near-simultaneous flow. Beginners should practice them as distinct beats to build the muscle. Experienced improvisers move through them so quickly they feel like a single act of reception-and-response.
+
+## What kinds of offer this applies to
 
 The technique applies to all types of offers:
 - **Factual offers:** "We're in a hospital." Accept the hospital.
@@ -52,7 +56,11 @@ The technique applies to all types of offers:
 
 An important distinction within offers: **factual offers** (the world is this way) should always be accepted. **Opinion offers** (you should feel this way about it) can be adjusted while still accepting the underlying reality. "This house is haunted" is a fact — accept the haunting. "Isn't it exciting?" is an opinion — you can be terrified instead. Accepting the offer means accepting the world your partner built, not necessarily the emotional instruction attached to it.
 
+## Accepting is not obeying
+
 The critical distinction: accepting the offer is not the same as obeying a command. If your partner says "jump off the cliff," you accept the cliff (it's real, it's high) but respond authentically to it. You keep your agency within the reality they established.
+
+## When acceptance fails
 
 When acceptance fails, it's usually because the receiver's ego intervened: they had a different idea, they judged the offer as "bad," or they were too deep in internal computation to notice it arrived.
 
