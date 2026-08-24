@@ -21,7 +21,7 @@ links:
   - { id: what-are-you-doing, relation: enables }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Space Work is the practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.
@@ -55,6 +55,16 @@ The harder and more important skill. Your space work is not solo. When your part
 The opposite discipline is worth knowing about, because training the two together reliably confuses people. [Viewpoints](/viewpoints) attends to the real room and the real bodies in it, where space work builds a room that is not there.
 
 Viola Spolin's "Where" games and "Space Walk" exercises are the canonical training for this technique. Her approach: the physical task produces presence as a side effect. You can't mime opening a jar while planning your next clever line — the jar requires your attention. See `ref-spolin-improvisation-for-theater` for the full pedagogical context.
+
+## The traditions that skip it
+
+Space work is not universally treated as fundamental, and the pages that assume it is are overstating a genuine disagreement.
+
+The game-based and verbal traditions frequently minimise physicality. A UCB-influenced scene whose comedic engine is a verbal pattern often has almost no environment in it, and loses nothing by that — the audience is tracking an escalating idea rather than a room. Sketch-adjacent training, the Groundlings among them, prioritises character voice over surroundings for the same reason: the interest is in who is speaking rather than where.
+
+So the honest position is that space work is load-bearing when the place is doing work, and decorative when it is not. A scene about two people trapped somewhere needs the somewhere; a scene about two people escalating a disagreement mostly does not, and immaculate object handling in it is craft performed for its own sake.
+
+What survives across all traditions is the narrower claim in the freezer test above. If an environment has been established, it has to keep behaving consistently — a room that is freezing in minute one and unremarked in minute three has broken something, whatever school you trained in.
 
 ## Specific sources
 

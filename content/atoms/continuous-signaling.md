@@ -19,7 +19,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 You signal continuously. You are always communicating, whether you intend to or not.
@@ -35,6 +35,18 @@ Since you can't stop the scene to clarify (because time advances irreversibly), 
 But continuous signaling is not only a minefield — it is the entire engine of play. Skilled improvisers read and send signals with such fluency that the gap between intention and reception narrows toward zero. The craft is not to stop signaling accidentally (you can't) but to make your signals so clear and committed that they require no decoding. This is what Be Honest and Be Simple serve at the behavioral level.
 
 This law means you cannot opt out of participation. You can only choose between conscious signaling and unconscious signaling. The principles are a framework for making your signals intentional.
+
+## The academic objection, and why it does not rescue you
+
+"You cannot not communicate" comes from Watzlawick, Beavin and Jackson (1967), and it has been formally disputed — worth knowing, because the dispute clarifies what the claim is actually good for.
+
+Motley (1990), in the *Western Journal of Speech Communication*, argued that communication is by definition intentional, encoded and symbolic, and that behaviour carrying no communicative intent therefore is not communication at all. On that account a person staring blankly into the middle distance is not sending a message; somebody else is simply drawing conclusions.
+
+Bavelas, one of the original authors, answered the same year with the distinction that resolves it: "all behaviour is communication" and "one cannot not communicate" are not the same proposition, and conceding the first does not require abandoning the second.
+
+For a performer the argument is beside the point, and it is worth being precise about why. Nothing on a stage depends on whether your stillness qualifies as communication under a sender-side definition. It depends on the fact that your partner and the audience **will interpret it anyway** — as boredom, as caution, as a choice — and will act on that reading. Intent does not enter into it.
+
+Which is the sharper version of the principle: not that everything you do is a message, but that nothing you do is exempt from being read.
 
 ## Specific sources
 

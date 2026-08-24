@@ -60,6 +60,16 @@ The same distinction separates [how articulate someone sounds](/how-to-be-more-a
 
 Your partner can immediately receive and build on your offer. The audience can follow without explanation. The relationship has room to develop.
 
+## Simple execution, sophisticated recognition
+
+The obvious objection comes from the game-based schools, and it looks like a direct contradiction.
+
+UCB's framework asks a performer to identify a pattern, frame it explicitly, and heighten it deliberately. That is an analytical operation, and critics of it — usually from the Chicago and Annoyance directions — argue it makes improv cerebral, producing performers who are solving rather than playing.
+
+The tension mostly dissolves once the two layers are separated. **What you notice can be sophisticated. What you do should be simple.** Recognising that a scene has produced a repeatable pattern is complex perceptual work; the move it licenses is usually to do the obvious thing again, harder. Nothing in this principle argues against seeing clearly — it argues against *acting* elaborately.
+
+Where the objection lands is in the timing. Analysis performed mid-scene, while the other person is talking, spends exactly the capacity the reception needs, which is the failure the bandwidth mechanism above describes. The schools that make improv cerebral are not wrong to analyse; they are wrong to ask for it simultaneously.
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 3 ("Narrative Skills"): "The improviser has to realise that the more obvious he is, the more original he appears... An artist who is inspired is being obvious. He's not making any decisions, he's not weighing one idea against another. He's accepting his first thoughts." Close/Halpern, *Truth in Comedy*, Ch. 6: "Keep it simple — less is more." **Counter-position:** UCB's analytical game framework asks improvisers to identify, frame, and heighten patterns — a more deliberate, structured process. Critics argue this makes improv cerebral. The tension: simplicity in execution vs. sophistication in pattern recognition.
