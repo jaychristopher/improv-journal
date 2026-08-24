@@ -21,7 +21,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Questions to Ask a Girl: Why the List Is Not the Problem
@@ -270,6 +270,48 @@ The test for all of it is the one that runs through this page: could she build o
 **Let a silence sit.** Filling every pause reads as nerves and stops her adding the second half of an answer, which is usually the good half. `be-present` is mostly this: staying in the moment that exists rather than fetching the next one.
 
 **Notice when to stop.** Short answers, no questions back, no elaboration — that is information, and it is not a cue to try a better question.
+
+## Questions People Ask About This
+
+### Does it matter that she is a girl?
+
+Not to the questions, no. Everything on this page works unchanged on anybody, and the search term is doing something unhelpful before you have asked anything: it frames the other person as a category with a correct approach, which is precisely the posture that produces the stilted conversation you are trying to avoid.
+
+What does change by person is the container — how well you know each other, whether the setting makes declining a question cheap, and how much you have offered. Those vary enormously between two people of the same gender and barely at all across it. Solve for the container and the category stops being a variable.
+
+The one honest exception is that a woman being asked personal questions by a man she does not know well is more likely to be assessing safety while she answers. That does not change which questions are good. It changes how much it matters that declining one is easy, and how badly a question that presses after a short answer lands.
+
+### What do you do when she gives one-word answers?
+
+Stop asking and start answering. A run of short replies almost always means the exchange has become an interview, and the fix is never a better next question — another question is more interview.
+
+Say something about yourself, unprompted, at slightly more depth than she has given. That does two things: it changes the shape of the exchange from extraction to trade, and it hands her something to respond to that is not a demand. `offers` is the idea that everything you say should be something the other person can build with, and a question is one of the weakest offers available, because the only thing it can be built into is an answer.
+
+The other cause is a question with nothing to grip. "How's work" has no foothold. "What's the most annoying part of your week" has one. If two consecutive short answers follow two abstract questions, the abstraction is the problem.
+
+### What do you ask on a dating app, before you have met?
+
+Almost nothing, and much less than the medium invites.
+
+App conversation has a specific failure: it is comfortable, low-stakes and infinitely extendable, so it substitutes for meeting rather than leading to it. Two people can exchange forty messages, feel they know each other, and then discover on meeting that they have been talking to a text-shaped version of somebody. The questions are not wasted so much as spent in the wrong place.
+
+Ask two or three things specific to something she actually wrote — not to her photos, and not from a list — answer the same things about yourself, and then suggest meeting. The purpose of the exchange is to establish that a conversation is possible, which takes far fewer messages than people spend on it.
+
+### Can questions actually make somebody like you?
+
+There is real evidence that a structured exchange increases reported closeness. Aron et al. (1997) escalated pairs of strangers through thirty-six increasingly personal questions and measured substantially more closeness than a matched small-talk condition — [the 36 questions that build closeness](/36-questions-to-fall-in-love) covers the procedure.
+
+Two things about that result are usually dropped. Both people answered everything, so it was mutual disclosure rather than one person interviewing another. And the escalation did the work, not the questions — each answer made the next question askable. A list used one-directionally has neither property and should not be expected to produce the effect.
+
+So questions can build closeness. Questions asked *at* somebody cannot, and the study is often cited as though it showed the opposite.
+
+### What do you do when you run out of things to say?
+
+You have not run out. You have run out of *new topics*, which is a different and much less serious problem, and the reflex to find another one is what creates the silence.
+
+Almost everything already said has more in it. She mentioned a job, a sister, a place she lived, a thing she nearly did instead — any of those can be gone back into, and going back into something signals that you were listening, which a new topic never does. `active-listening` is largely the skill of noticing what was already offered rather than preparing the next thing.
+
+If the well is genuinely dry, that is usually a sign the conversation has been running on questions alone. [Keeping a conversation going](/how-to-keep-a-conversation-going) covers the mechanics in more depth.
 
 ## The Part You Can Practise
 
