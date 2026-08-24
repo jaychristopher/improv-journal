@@ -19,7 +19,7 @@ entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportiv
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-07"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Team Building Activities That Actually Change How Your Team Works
@@ -187,6 +187,48 @@ Which is why bonding activities specifically tend to fall flat, in three ways:
 - **They ask for no vulnerability.** Bowling together is fun and requires nobody to take a social risk. Trust forms when people watch each other handle uncertainty, not when everyone is comfortable.
 - **They do not build shared attention.** Cohesion is the ability to track each other in real time — to notice when somebody needs support, has an idea, or has gone quiet. Almost nothing on the standard list trains that.
 - **The stakes are not felt.** In an escape room the failure is abstract. In an improv exercise it is social and immediate: you said something odd, it did not land, and everyone saw. That is the low-stakes failure that actually builds resilience.
+
+## Questions People Ask About Team Building
+
+### Why do people hate team building?
+
+Because most of it asks them to perform enthusiasm in front of colleagues who control their pay, and the exposure is not distributed evenly.
+
+The senior and confident members enjoy it, which is why it keeps getting scheduled — the people commissioning it had a good time last year. The cost lands on everybody else: the quiet ones, the newest person, anybody who is currently struggling at the actual job and now has to be visibly playful about it. A session that is fun for a third of the room and mildly humiliating for another third has not built anything, whatever the feedback form says.
+
+The second reason is that it is usually detached from the work. An afternoon of activities that never mentions how this team actually operates reads as a substitute for addressing something, and people are good at spotting that.
+
+### Do team building activities actually work?
+
+Some do, and the evidence for which ones is set out at the top of this page. The more useful question is what separates the two, because that is decidable in advance.
+
+The variable is transfer. An activity reliably produces a behaviour inside the room for an hour; whether anything is different on Monday depends on three things almost nothing sold as team building does — the behaviour is **named** while it is happening, it is **connected** to a situation the team actually faces, and it is **repeated** rather than performed once.
+
+A useful test before booking anything: can you say, in a sentence, what people should do differently in a specific recurring meeting afterwards? If not, the session may still be enjoyable and it is not an intervention.
+
+### What works for a team that already knows each other well?
+
+Not more familiarity exercises. A team that has worked together for three years does not need to learn names or discover shared interests, and running that material on them is where the eye-rolling comes from.
+
+What they usually lack is `safety-in-the-room` for the specific things that have gone unsaid — the disagreement everybody has privately, the process nobody defends, the person whose work is quietly being redone. Established teams are frequently very comfortable and not at all candid, and those look identical from outside.
+
+The useful exercises there are the ones that require disagreement or a real admission rather than co-operation, because co-operation is the thing they can already do.
+
+### How often should you run it?
+
+Short and regular beats long and occasional, by a wide margin.
+
+The annual away-day is the standard format and the worst one. It produces a spike of goodwill that decays within a fortnight, because a single day cannot accumulate the repeated evidence that trust is made of. Fifteen minutes at the start of a weekly meeting, run consistently, does more than eight hours once a year — and it is far cheaper.
+
+The reason is in the mechanism rather than in enthusiasm. `trust` is an estimate built from many small exchanges that went well, so the variable that matters is the number of occasions, not the number of hours.
+
+### Can you do this with a team that is in conflict?
+
+No, and attempting it makes things worse rather than merely wasting an afternoon.
+
+Team building assumes a baseline where people are willing to be seen trying. An unresolved conflict removes that: the activity becomes another arena for it, the participants read every exercise as taking a side, and the enforced good humour is experienced as being asked to pretend. Anybody who has watched a trust exercise run on a team with a live grievance has seen it curdle.
+
+Deal with the conflict first, directly and usually not in a group setting. Once that is genuinely addressed, the exercises here will work — and until it is, they are a way of looking like something is being done.
 
 ## The Honest Caveat
 
