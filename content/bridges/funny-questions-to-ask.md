@@ -17,7 +17,7 @@ primary_cta_target: yes-and-chain
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Funny Questions to Ask: 100 That Make the Answer Funny
@@ -187,6 +187,48 @@ The question is a third of it. The rest is what happens after.
 **Do not explain why it was funny.** The most common way a group kills its own laugh.
 
 **Be prepared to be the answer.** A question you would not answer yourself is not a funny question, it is a trap, and everybody can tell.
+
+## Questions People Ask About Funny Questions
+
+### What actually makes a question funny?
+
+That it hands the other person something specific to be funny about. The joke is in the answer, not the question, and questions that carry their own joke have already spent it before anybody speaks.
+
+The reliable generator is asking for a **specific instance of an ordinary indignity** — the last time you were wrong in public, the worst thing you have said to a doctor, what you have pretended to understand. Everybody has one, it is already true so no invention is required, and the comedy comes from the detail rather than from the premise.
+
+That is also why the answers land as funnier than anything the asker could have written. `obvious-choice` applies here as much as on stage: the first true thing somebody remembers is funnier than the clever thing they would construct if given a minute.
+
+### What is the difference between a funny question and a weird one?
+
+A weird question is strange to *hear*. A funny question is easy to *answer* interestingly. They frequently point in opposite directions.
+
+"Would you rather have fingers for toes or toes for fingers" is weird, and the answer set is tiny — two options, no detail, and everybody's response is the same shape. It gets a reaction to the question and nothing after. Weird is a property of the premise; funny is a property of what the premise makes available.
+
+That said, weird questions have one genuine use: they are a signal that the register has changed and silliness is now permitted, which is worth something in a stiff room. Use one to open, then switch to questions with answers in them.
+
+### Which funny questions work at work?
+
+The ones about universal small failures, and none about anything a colleague could be embarrassed to have on record.
+
+The filter is simple: would this be fine if a manager overheard it, and does answering it require disclosing something about your private life. Questions about tech support, bad haircuts, food you have ruined, things you have said in meetings and regretted, or the worst piece of advice you have followed all pass. Questions about dating, family, money, or anything that invites somebody to be the butt of it do not.
+
+The failure mode at work is not offensiveness so much as unequal exposure — a game that is fun for the confident half of a team and quietly costly for the rest is not working, whatever the room sounds like.
+
+### How do you answer a funny question well?
+
+Say the true thing quickly and add one specific detail. That is nearly all of it.
+
+The instinct is to search for the funniest available answer, which takes four seconds and produces something worse than the first thing you thought of, because the first thing was real and the constructed one is a performance. `performing-cleverness` is the failure, and in a room of friends it is obvious to everybody.
+
+The detail is what does the work. "I got lost" is nothing; "I got lost in the building I had worked in for two years" is the whole joke, and it cost no invention at all.
+
+### What do you do when nobody laughs?
+
+Answer it yourself and move on within about four seconds.
+
+A question that lands flat is not a failure of the question, it is usually a room that has not yet worked out whether this is permitted. Answering your own — properly, with a real and slightly unflattering story — does two things: it demonstrates the register you were asking for, and it removes the sense that somebody has been put on the spot and failed.
+
+What does not work is explaining the question, defending it, or asking a second one immediately in the hope of better luck. `heightening` is for things that are already working; a flat moment needs the pressure taken off rather than doubled.
 
 ## Practise the Building Part
 
