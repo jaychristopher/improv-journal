@@ -130,6 +130,48 @@ The asymmetry worth knowing: **safety accumulates slowly and can be spent quickl
 
 For the half of this that is about going first, see [how to be vulnerable](/how-to-be-vulnerable). For what happens when someone is so busy being agreeable that nobody learns anything real about them, see [how to stop people pleasing](/how-to-stop-people-pleasing).
 
+## Questions People Ask About Emotional Safety
+
+### How do you know if you are emotionally safe with someone?
+
+The reliable test is not how you feel while talking to them. It is what happens in the hours afterwards.
+
+With somebody safe, you say a thing and then stop thinking about it. With somebody unsafe, the replay starts on the way home — reconsidering the phrasing, wondering how it landed, drafting the clarification you will send if it comes up. That rehearsal is the cost, and it is the most honest signal available because it happens when you are no longer performing.
+
+Two more that hold up. You can be wrong in front of them without it becoming an event. And you find out things about their own difficulties occasionally, unprompted, because `vulnerability` that only ever runs one way is not safety, it is a confessional.
+
+### What are the signs an environment is not emotionally safe?
+
+Not conflict. Rooms with real disagreement in them are frequently the safest ones, and rooms with none are often the most managed.
+
+The signs are quieter than that. Agreement arrives fast and unanimously. Nobody says they do not understand something. Bad news travels privately and late, and the first time a problem is mentioned in the room it is already solved or already a crisis. People check with each other before raising something, which means the risk is being distributed rather than taken.
+
+The single clearest one: the same two or three people speak in every meeting, and everybody has stopped noticing.
+
+### How long does it take to build?
+
+Weeks for the ordinary version, and it is asymmetric in a way worth planning around.
+
+The accumulation is slow because each deposit is small — somebody said a mildly exposing thing and nothing bad happened, once. Ten or fifteen of those and the estimate shifts. That can happen inside a month in a group that meets regularly, which is faster than most people expect.
+
+Withdrawal is not slow. One instance of something private resurfacing in front of other people, or of a mistake being remembered aloud months later, can undo the lot — because `trust` is an estimate of what this person does with exposure, and a single counter-example is far more informative than fifteen confirmations.
+
+### Can it be repaired once it has broken?
+
+Yes, and only by the mechanism that built it, run again. What does not work is the conversation about it.
+
+An apology is a claim about the future, and the person weighing it has just acquired evidence about the past. Saying it will not happen again asks them to discount that evidence on your word, which is precisely what they no longer have a reason to do. So the repair is slower than the injury and it is not verbal: it is a run of occasions where exposure is met well, starting smaller than before.
+
+The one verbal thing that does help is naming the specific act rather than the feeling. "I repeated something you told me in confidence" is checkable. "I'm sorry you felt unsafe" relocates the problem into their reaction and reliably makes it worse.
+
+### What does emotional safety look like in a relationship?
+
+The same mechanism with two differences that matter.
+
+There is no exit. At work an unsafe relationship can be routed around; at home the person who is the source of the risk is also the person you take everything else to, which is why the absence is so much more expensive and why people stay in the managing state for years without naming it.
+
+And the exposure is repeated. A colleague sees a narrow slice of you; a partner sees the version that is tired, wrong and unreasonable, regularly. So the test is not whether they are kind when you are at your best. It is what happens to the thing you said at eleven at night when you were not being fair — whether it is dropped, or whether it is available later.
+
 ## The Compound Effect
 
 Emotional safety compounds. Each successful risk-taking experience raises the ceiling for the next one. An ensemble that's been supporting each other for months can do things on stage that would be impossible for a group of strangers — not because they're more talented, but because the trust infrastructure allows for bigger creative risks.
