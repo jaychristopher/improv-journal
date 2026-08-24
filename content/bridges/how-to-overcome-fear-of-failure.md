@@ -12,7 +12,7 @@ entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commi
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Overcome Fear of Failure: The Improv Reframe
@@ -91,6 +91,48 @@ Pick one thing this week that you've been hedging on. An email you've been revis
 
 ### The Rewrite
 After something goes wrong — a presentation lands flat, a conversation gets awkward, an idea gets rejected — don't ask "What should I have done differently?" Ask: "What does this failure make possible that success wouldn't have?" This isn't optimism. It's looking for the offer in the accident.
+
+## Questions People Ask About Fear of Failure
+
+### What is the difference between fear of failure and perfectionism?
+
+They produce the same paralysis from opposite directions, and the fix for one does not work on the other.
+
+Fear of failure is about the outcome being final. You do not start because a bad result would settle something about you permanently. Perfectionism is about the outcome being *judged* — you do start, repeatedly, and cannot stop, because the thing is never yet good enough to be seen.
+
+The tell is what happens to a half-finished piece of work. Somebody afraid of failure has not begun it. A perfectionist has fourteen versions and has shown nobody. `irreversibility` is the lever for the first: demonstrate that the move can be taken back and the block dissolves. That does nothing for the second, where the useful move is shortening the gap between making something and showing it, so the judgement arrives before the work has time to accumulate significance.
+
+### Does the fear ever go away?
+
+No, and the people who look like it has are not experiencing something different from you.
+
+What changes is the cost. The first time you make an offer that fails in front of a room it is an event you will think about for a week. After two hundred of them it is Tuesday. The physical response is still there — improvisers with decades of stage time describe the same tightening — but it has stopped predicting anything, so it stops being consulted.
+
+That is the actual mechanism behind everything on this page. Nobody argues themselves out of the feeling. They accumulate enough evidence that the feeling is a bad guide, and the evidence only comes from doing the thing while afraid.
+
+### What do you do when the failure really would be permanent?
+
+Take it seriously, because the argument above does not apply and pretending it does is how people talk themselves into genuinely bad decisions.
+
+Some things do not recover: money you cannot afford to lose, a reputation in a small professional world, a relationship that has already been strained past its tolerance. The improv reframe works because a scene has no consequences outside the hour, and the more a real situation resembles that, the better it transfers.
+
+The useful question is not whether it is reversible but which part is. Almost every large irreversible decision contains a small reversible version — a conversation before a resignation, one client before a career change, a draft shown to one person before a launch. Fear that is doing its job points at the irreversible part specifically. Fear that is not doing its job objects to the whole thing without being able to say which part.
+
+### How do you recover after you have actually failed?
+
+Separate what happened from what it means, and do it quickly, because the meaning hardens fast.
+
+The event is a set of facts: this was attempted, this went wrong, these were the causes. The meaning is a claim about you, and it is written in the first day or two mostly out of embarrassment. `failing-forward` is the practice of getting the facts down before the story sets — what specifically failed, what you would do differently, and what you now know that you could not have known without trying.
+
+The part people skip is the third one. A failure that taught you something is materially different from one that did not, and the difference is usually whether anybody wrote the lesson down while it was still available.
+
+### Why is it worse for the things I care about most?
+
+Because the fear scales with how much of you the attempt reveals, not with the size of the consequence.
+
+Applying for a job you are indifferent about risks a rejection. Applying for the one you actually want risks finding out that your best effort was not enough — which is information about your ceiling rather than about a single application, and that is the thing being avoided. It is why people are more nervous about work they chose than about work assigned to them, and why the project somebody has wanted to make for years is the one that never starts.
+
+There is no reframe that removes this, and the honest version is that it is evidence you picked the right thing. The alternative is a life of attempts that could not have hurt.
 
 ## The Honest Caveat
 
