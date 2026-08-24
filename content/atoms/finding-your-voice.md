@@ -33,7 +33,7 @@ Every major improviser's self-reflection confirms: you don't construct a voice d
 - **TJ Jagodowski:** Extraordinary patience and emotional depth. His signature is staying in a moment far longer than most performers would — letting silence work, finding the real feeling underneath comedy. Defined by what he doesn't do (rush, go for easy laughs) as much as what he does.
 - **Matt Besser:** Sharp, aggressive game play. Relentless commitment to finding and heightening the comic pattern. Where TJ lingers in emotion, Besser accelerates through logic. His voice is partially encoded in UCB's entire pedagogy.
 - **Susan Messing:** Radical commitment and unfiltered emotional expression. Willingness to go further than anyone expects — emotionally, physically, energetically. Defined by an absence of self-censorship.
-- **David Razowsky:** Deep present-moment awareness. "Being changed" — allowing each moment to transform the performer. Characterized by surprising emotional shifts and meditative attention. His Viewpoints-influenced methodology is itself a distinctive voice.
+- **David Razowsky:** Deep present-moment awareness. "Being changed" — allowing each moment to transform the performer. Characterized by surprising emotional shifts and meditative attention. His [Viewpoints](/viewpoints)-influenced methodology is itself a distinctive voice.
 
 ## The ensemble tension
 

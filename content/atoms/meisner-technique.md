@@ -57,7 +57,7 @@ People arrive expecting emotional work and find themselves saying *you are weari
 
 ### It Is Not `viewpoints`
 
-Both are ensemble training and they attend to different channels. Viewpoints works on the physical and spatial — tempo, shape, architecture, the real room. Meisner works almost entirely on the other person's behaviour, and the body looks after itself.
+Both are ensemble training and they attend to different channels. [Viewpoints](/viewpoints) works on the physical and spatial — tempo, shape, architecture, the real room. Meisner works almost entirely on the other person's behaviour, and the body looks after itself.
 
 ## Trying the Repetition Exercise
 

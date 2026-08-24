@@ -38,7 +38,7 @@ The ensemble creates a collective sound — a hum, a tone, a rhythm — and modu
 
 ## Exercise 4: Viewpoints Work
 
-Adapted from Bogart and Landau's Viewpoints technique. Improvisers move through space responding to specific viewpoints: Tempo, Duration, Kinesthetic Response, Repetition, Shape, Gesture, Architecture, Spatial Relationship, Topography. Develops acute physical awareness of ensemble dynamics. Increasingly common in advanced improv programs. Razowsky brought this into improv from the dance/theater tradition.
+Adapted from [Anne Bogart's Viewpoints](/viewpoints) technique. Improvisers move through space responding to specific viewpoints: Tempo, Duration, Kinesthetic Response, Repetition, Shape, Gesture, Architecture, Spatial Relationship, Topography. Develops acute physical awareness of ensemble dynamics. Increasingly common in advanced improv programs. Razowsky brought this into improv from the dance/theater tradition.
 
 ## Exercise 5: Conducted Story
 

@@ -45,7 +45,7 @@ Environment degrades faster than character because it has no advocate. A charact
 
 Not everybody thinks the imagined room should be built at all, and the objection comes from serious places.
 
-Grotowski's poor theatre strips away scenery, props and effects deliberately, on the argument that everything removed forces more onto the performer, which is where the interest actually is. Bogart and Landau's Viewpoints works with the **architectural** space that genuinely exists — this stage, these distances, this floor — rather than with an imagined one laid over it. And some Johnstone-influenced practice treats the stage as authentically empty until an offer fills it, on the grounds that pre-loading a location is a way of avoiding your partner.
+Grotowski's poor theatre strips away scenery, props and effects deliberately, on the argument that everything removed forces more onto the performer, which is where the interest actually is. Bogart and Landau's [Viewpoints](/viewpoints) works with the **architectural** space that genuinely exists — this stage, these distances, this floor — rather than with an imagined one laid over it. And some Johnstone-influenced practice treats the stage as authentically empty until an offer fills it, on the grounds that pre-loading a location is a way of avoiding your partner.
 
 There is a real disagreement underneath, and it is about what the detail is *for*. If environment work is a performance of craft — immaculate object handling in a place with no reason to exist — the sceptics are right and it is a distraction from the scene. If it is a way of making a shared thing more specific so both performers can act on it, it is doing the same job as any other offer.
 

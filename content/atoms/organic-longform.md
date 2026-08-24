@@ -40,7 +40,7 @@ The structure should feel like it grew naturally from the content rather than be
 2. In the 1980s at iO, Harold became codified into the 3x3 "training wheels" structure
 3. Close himself insisted: "the first rule is: there are no rules" and "content and the need to develop an organic commentary on the suggestion trump predetermined structures" (*Truth in Comedy*)
 4. Post-Close teachers — David Razowsky, Susan Messing, Joe Bill, Mark Sutton — championed organic, be-in-the-moment approaches
-5. Razowsky brought **Viewpoints** (Mary Overlie's dance technique, adapted by Anne Bogart and Tina Landau) into improv — nine tenets of time and space used as scene-building tools
+5. Razowsky brought **[Viewpoints](/viewpoints)** (Mary Overlie's dance technique, adapted by Anne Bogart and Tina Landau) into improv — nine tenets of time and space used as scene-building tools
 6. By the early 2010s, traditional Harold nights had largely disappeared from many venues, replaced by organic and custom formats
 
 ## How performers navigate without structure

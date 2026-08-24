@@ -14,7 +14,7 @@ Every improv student learns "make your partner look good." At the mastery level,
 
 It is also transient. Group mind arises and dissipates, sometimes within a single scene. It cannot be forced or gripped. Trying to maintain it is a form of self-monitoring that destroys it. The ensemble creates the conditions and lets it arrive — or it doesn't.
 
-**The conditions:** High trust (everyone knows they'll be supported). Full presence (everyone processes the same live data). Quiet ego (nobody steers toward their personal agenda). Shared vocabulary (everyone responds to the same principles). These conditions are trainable through specific exercises — counting to 20, simultaneous movement, Viewpoints work, conducted stories. Each exercise builds the neural pathways for collective attention.
+**The conditions:** High trust (everyone knows they'll be supported). Full presence (everyone processes the same live data). Quiet ego (nobody steers toward their personal agenda). Shared vocabulary (everyone responds to the same principles). These conditions are trainable through specific exercises — counting to 20, simultaneous movement, [Viewpoints](/viewpoints) work, conducted stories. Each exercise builds the neural pathways for collective attention.
 
 **Backline craft** is ensemble mastery in action. When you're not in the scene, you're watching with full attention — tracking offers, themes, emotional shifts, game moves. You're maintaining macro-awareness of the show's structure. And you're preparing to enter only when your addition genuinely serves. The performer who stays out of a scene they could have entered is often making the most generous choice.
 

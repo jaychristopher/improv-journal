@@ -10,7 +10,7 @@ updated: "2026-08-23"
 
 Most improv characters are built from the neck up — a voice, an attitude, maybe an occupation. Mastery-level character work starts from the body, the game, and the relationship. The character surprises the performer as much as the audience.
 
-**Physicality** means body first. Spolin's approach: let the body lead and the mind follows. Bogart and Landau's Viewpoints give you nine dimensions of physical choice (tempo, duration, shape, gesture, spatial relationship, and more). Laban gives you eight effort qualities. Napier says: make one strong physical choice and let it inform everything else. A character who leads with their chin lives in a different world than one who leads with their chest. The performer discovers who they're playing by how they move.
+**Physicality** means body first. Spolin's approach: let the body lead and the mind follows. Bogart and Landau's [nine Viewpoints](/viewpoints) give you nine dimensions of physical choice (tempo, duration, shape, gesture, spatial relationship, and more). Laban gives you eight effort qualities. Napier says: make one strong physical choice and let it inform everything else. A character who leads with their chin lives in a different world than one who leads with their chest. The performer discovers who they're playing by how they move.
 
 **Status dynamics** are Johnstone's mastery-level contribution. Not the static "high status vs. low status" of Level 1, but the movement of status — the seesaw that tips and recovers in every human interaction. Gradual transfers, sudden reversals, status battles, mutual drops, the gap between station (social position) and status (behavioral dominance). A janitor can play high status; a CEO can play low. The transaction is the scene's engine.
 
