@@ -91,6 +91,56 @@ The three practices are dispositions, and dispositions are hard to adopt by inte
 
 **Be seen and survive it.** `emotional-honesty-scene` asks for real signal rather than a performed version. Run last, and only once the others are comfortable.
 
+## Questions People Ask About Rejection
+
+### How long does it take to get over a rejection?
+
+Much less time than the anticipation suggested, and the gap between the two is the useful thing to know.
+
+People are consistently poor at predicting how long a bad outcome will affect them — the dread beforehand is calibrated for something permanent, and the actual recovery is usually days rather than the weeks that were braced for. That is why "what if they say no" is so much heavier than the no itself turns out to be.
+
+What extends it is not the event. It is being unable to close the file: rejections that come with no information, or ones you keep re-examining for a hidden meaning, stay open indefinitely. `failing-forward` is a mechanism for closing the file deliberately — write down what happened, what you would do differently, and what it told you — because a rejection that has been processed once stops requiring processing.
+
+### Should you ask why you were rejected?
+
+Usually yes, once, briefly, and with low expectations about the answer.
+
+Most of what comes back is polite and uninformative, because the person answering has little incentive to be candid and some risk in being so. That is worth knowing in advance so a bland reply does not read as a second rejection.
+
+Ask anyway, for two reasons. Occasionally the answer is specific and changes what you do next, which is worth several vague ones. And asking well — brief, unarguing, genuinely curious — leaves a better impression than the rejection itself did, which matters more often than people expect in small fields.
+
+What does not work is asking in a way that reopens the decision. "Can I ask what tipped it?" gets an answer. "I think there may have been a misunderstanding" gets a defensive non-reply and closes the door properly.
+
+### How do you handle repeated rejection?
+
+Change what you count, because the tally you are keeping is the problem.
+
+Anybody in a numbers-heavy situation — job hunting, auditions, pitching, dating apps — is running an activity where the base rate of no is high and largely impersonal, and counting outcomes in that environment produces a demoralising and uninformative number. Counting *attempts* instead gives you something you actually control and that reliably goes up.
+
+The second adjustment is to look for the pattern rather than the verdict. Fifty rejections with no feedback tell you nothing. Fifty where you never got past the first stage tell you something specific about the opening, and that is a fixable problem rather than a judgement.
+
+The thing to watch for is quiet narrowing — applying only where you are confident, auditioning only for what you have done before. That reduces rejections and it is also the mechanism by which people stop getting anywhere.
+
+### Is being ghosted worse than being told no?
+
+Frequently, and it is not weakness to find it so — the ambiguity is doing something a refusal does not.
+
+A clear no is information. It is unwelcome, it is complete, and it lets you close the file. Silence supplies nothing, so the mind keeps the question open and generates candidate explanations, most of them uncharitable and all of them unfalsifiable. What hurts is not the outcome, which is identical, but the impossibility of finishing with it.
+
+The practical move is to set an arbitrary deadline and treat silence past it as a no. That is not pretending to know; it is choosing a date on which the file closes, which is the thing the other person declined to give you.
+
+And it is worth being honest about the other side of this: the reason ghosting is common is that delivering a clear no is uncomfortable, which makes it a small kindness worth extending to other people even when nobody extends it to you.
+
+### What do you say to somebody who has just been rejected?
+
+Not "their loss", and not an explanation of why it happened.
+
+Both are attempts to fix the feeling, and fixing is what people do when somebody else's disappointment is uncomfortable to sit with. The effect is that the person now has to manage your reassurance on top of the original thing, and most people respond by saying they are fine and stopping there.
+
+What works is naming it accurately and staying: "that is genuinely disappointing — you wanted it." Then let the silence be. `accepting-the-offer` applies exactly as it does on stage: they have put something real in front of you, and the move is to receive it rather than to replace it with something more comfortable.
+
+Advice, if any, comes later and only if asked for.
+
 ## The Long Game
 
 The relationship with rejection that improv develops isn't toughness — it's **resilience with honesty.** You don't pretend the rejection didn't hurt. You don't minimize it. You feel it, you note what it tells you, and you move. The feeling passes. The information stays. And the next time, the feeling is a little quieter — not because you care less, but because you've accumulated evidence that you survive.
