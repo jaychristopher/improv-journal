@@ -18,7 +18,7 @@ entry_atoms: [harold, group-mind, connections, opening, be-honest]
 entry_path: systems-of-improv
 status: draft
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Del Close: The Ideas That Still Run Improv
@@ -102,6 +102,46 @@ The story usually told last: that Close willed his skull to the Goodman Theatre 
 It is a good story and it appears to be, at least in the particulars, untrue. Halpern later acknowledged that she had been unable to obtain his skull after his death and had supplied one from another source. The Goodman received a skull; it was probably not his.
 
 It is a fitting coda for a teacher whose subject was the difference between an appealing invention and an honest observation, and improv has mostly gone on telling the better version anyway.
+
+## Questions People Ask About Del Close
+
+### Who was Del Close?
+
+An American improv teacher and director (1934–1999) who spent forty years arguing that improvisation is a theatrical form in its own right rather than a way of generating sketch material — and who trained enough of American comedy to win the argument by attrition.
+
+He performed with the Compass Players and The Second City, directed at Second City through the 1970s, and from 1984 built the teaching programme at ImprovOlympic with Charna Halpern that turned the `harold` from an experiment into a curriculum. Most of what a modern improv class teaches about longform descends from that programme.
+
+### Did Del Close invent the Harold?
+
+He developed it. He did not invent it alone and he did not name it, and the flat version of the claim obscures a better story.
+
+The first Harold was performed by The Committee in Concord, California in 1967 — an improvised piece about the Vietnam war, played for a high school. The name came afterwards, in the van home, when Allaudin (Bill) Mathieu called out "Harold" as a joke about *A Hard Day's Night*, where a reporter asks George Harrison what he calls his haircut and is told "Arthur". It meant nothing. It stuck anyway.
+
+What Close did over the following two decades, and decisively with Halpern at ImprovOlympic in the 1980s, was turn a loose experiment into something teachable — the three-beat structure, the opening, the group games, the expectation that material returns. Inventing a form and making it transmissible are different achievements, and the second one is why anybody outside that van has heard of it.
+
+### What is the difference between Del Close and Viola Spolin?
+
+They were solving different problems, and almost every disagreement in modern improv teaching traces back to which of the two a school inherited from.
+
+[Viola Spolin](/viola-spolin) built a method for getting non-performers to participate — the games came out of social work, and the goal was transfer to people who had no intention of ever being on a stage. Close built a method for making improvisation a performance art: he assumed a cast, an audience and a show, and he was interested in what makes a piece worth watching.
+
+So Spolin gives you attention and Close gives you form. A group trained only on Spolin often plays beautifully and has no idea how to shape an evening; a group trained only on Close can build an elaborate structure out of material nobody was really listening to.
+
+### Was Del Close actually a good teacher?
+
+Depends entirely on who you were, and the honest answer is unflattering in a way the mythology tends to smooth over.
+
+For performers who were already good and already committed, he was transformative — the accounts of that are consistent and come from people with no reason to flatter him. For everybody else he could be cruel, and "follow the fear" delivered to somebody with no technique to fall back on is not instruction, it is exposure. The survivors wrote the histories, which is the usual reason a difficult teacher's record looks better than it was.
+
+The useful separation is between the ideas and the pedagogy. The ideas hold up. The method of delivering them was of a period, and most of what he taught can now be taught without it.
+
+### How much of modern improv actually comes from him?
+
+The longform half of it, more or less, and almost none of the beginner half.
+
+Anything a class teaches about structure, callbacks, group scenes, and treating a show as one piece rather than a run of bits is downstream of Close. The exercises used in a first lesson — circles, mirrors, one-word games — are almost entirely Spolin's, and the vocabulary for what a scene is doing moment to moment owes at least as much to Johnstone.
+
+His specific contribution is the argument the rest of the page describes, which was contested when he made it and is now assumed by nearly everybody who has never heard his name.
 
 ## Where to Go Next
 
