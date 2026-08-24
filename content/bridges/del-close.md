@@ -61,6 +61,18 @@ What it meant in the room was narrow and technical. At any moment a scene offers
 
 That is a claim about *choice-making inside a scene*. It is not a claim that discomfort is good for people, and the distance between those two readings is where a great deal of harm has been done by people quoting him.
 
+## Who He Actually Taught
+
+The reason his name survives outside improv is the list, and the list is usually presented as one undifferentiated roll of famous people. It was two distinct cohorts with two different relationships to him.
+
+**Second City, 1973 to 1982.** As resident director he was directing revues rather than running a school, and the performers in those companies included John Belushi, Bill Murray, Gilda Radner and John Candy. What they got from him was direction on material headed for an audience that week — closer to an editor than a teacher, and mostly not the long-form theory he is now known for, which he had not finished building.
+
+**ImprovOlympic, from the mid-1980s.** This is where the teaching happened, because this is where he had a training programme rather than a production schedule. Tina Fey and Amy Poehler came through it, and the founders of the [Upright Citizens Brigade](/traditions/ucb) met and formed their ensemble in his classes — which is the transmission that matters most, since UCB then wrote the method down in the [UCB Comedy Improvisation Manual](/library/ref-ucb-manual) and exported it to New York and Los Angeles.
+
+That second group is the one that carried the ideas rather than the reputation. The Second City cohort became famous; the iO cohort became teachers, and the difference is why his influence is far larger than his own credits suggest.
+
+**A caution about the word.** "Taught by Del Close" covers everything from four years of weekly classes to one workshop in 1994, and the phrase is applied to both. He also taught for roughly forty years, so the population of people who can honestly claim it is large. When a lineage claim is doing real work in an argument, it is worth asking which cohort, which decade, and how long — questions the next section suggests asking about most of what is said about him.
+
 ## The Mythology Problem
 
 Close is the closest thing improv has to a saint, and the hagiography has costs that are worth naming plainly.
