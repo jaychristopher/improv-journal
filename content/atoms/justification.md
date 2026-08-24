@@ -4,6 +4,7 @@ title: Justification
 type: definition
 status: draft
 tags: [definitions, technique, resilience, close]
+aliases: ["Retrospective justification"]
 links:
   - { id: be-thankful, relation: illustrates }
   - { id: gratitude-reframing, relation: extends }
@@ -26,6 +27,8 @@ The act of finding or creating a reason why something that happened *should* hav
 
 The principle from *Truth in Comedy*: "There are no mistakes — everything is justified."
 
+Outside improv the same move is usually called retrospective justification. Improv teaching says retroactive, and means the same thing by it.
+
 ## Retroactive justification
 
 Retroactive justification is the canonical form. When something unexpected occurs — a physical accident, a non-sequitur, a forgotten detail — justification works backward from the event to construct a narrative reason for it. The spy trips and falls → "My god, the poison is kicking in." The fall is now not an error but a plot point.
@@ -39,6 +42,18 @@ The technique works because of irreversibility: the event already happened. It c
 Justification is the *mechanism* underlying Be Thankful. Gratitude is the mindset; justification is the move. When you whisper "thank you" at an unexpected event, justification is what you do *with* that gratitude — you find the reason this gift was exactly what the scene needed.
 
 Advanced justification extends to choices you disagree with. If your partner makes an offer you don't like, your job isn't to like it — it's to justify it. Find the reality in which that offer makes perfect sense, and build from there. This is acceptance elevated from tolerance to creative act. Justifying your partner's accident is the primary mechanism of `elevating` — it makes them look like they planned it.
+
+## How it is actually done
+
+The definition makes it sound like a reasoning task. In practice the good version is almost never an explanation, and the difference between the two is most of the skill.
+
+**Behave, do not explain.** If you drop something, you are a person who drops things and the scene continues. Saying "ah, I dropped that because the handle is wet" is where tortured logic starts — you have drawn the audience's attention to the accident in order to repair it, which is a worse outcome than the accident.
+
+**Justify with who, not why.** "Why did that happen" invites plot, and plot arriving from nowhere is the reason justified scenes so often go strange. "Who is somebody that happens to" invites character instead, and the answer is usually more interesting and always more playable.
+
+**Late is fine, and often better.** Nothing requires you to justify immediately. An unexplained oddity can sit for two minutes and be picked up afterwards, at which point it reads as intentional rather than as a save. This is the point where justification starts to resemble `callback`.
+
+**Smallest sufficient reason.** One clause, not a paragraph. The test in the section below is whether the audience thinks "of course" rather than "I see" — and length is the most reliable predictor of which one you will get.
 
 ## A related but distinct concept
 
