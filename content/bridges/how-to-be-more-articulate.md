@@ -9,7 +9,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 7
 serp_verdict: winnable
-entry_atoms: [be-simple, signal, overcomplication, performing-cleverness, cognitive-bandwidth]
+entry_atoms: [be-simple, signal, overcomplication, performing-cleverness, cognitive-bandwidth, internal-computation, obvious-choice]
 entry_path: improv-for-life
 primary_problem: "you know what you mean and it comes out as three false starts and a shrug"
 primary_cta_type: exercise
@@ -17,7 +17,7 @@ primary_cta_target: one-word-scene
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # How to Be More Articulate: It Is Not About Vocabulary

@@ -8,7 +8,7 @@ serp_checked: "2026-08-23"
 serp_min_dr: 11
 serp_verdict: winnable
 serp_top10_dr: [95, 50, 99, 83, 37, 61, 11]
-entry_atoms: [be-present, active-listening, offers, commitment, internal-computation]
+entry_atoms: [be-present, active-listening, offers, commitment, internal-computation, irreversibility, failing-forward]
 entry_path: improv-for-life
 primary_problem: "self-monitoring is louder than connection"
 primary_cta_type: thread
@@ -16,7 +16,7 @@ primary_cta_target: presence-and-commitment
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Social Awkwardness Is an Attention Problem, Not a Trait

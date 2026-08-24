@@ -9,11 +9,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 0
 serp_verdict: winnable
 serp_top10_dr: [95, 55, 36, 94, 99, 0, 92]
-entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment]
+entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment, latency-recovery]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Be Witty: The Improv Secret to Quick, Sharp Responses

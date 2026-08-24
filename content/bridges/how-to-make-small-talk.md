@@ -7,11 +7,11 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 36
 serp_verdict: winnable
-entry_atoms: [offers, yes-and, active-listening, be-present, commitment]
+entry_atoms: [offers, yes-and, active-listening, be-present, commitment, sweep-edit]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Make Small Talk: The Improv Method That Turns Any Conversation Into Connection

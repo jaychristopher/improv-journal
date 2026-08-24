@@ -9,7 +9,7 @@ serp_checked: "2026-08-23"
 serp_min_dr: 40
 serp_verdict: winnable
 serp_top10_dr: [91, 95, 80, 91, 99, 99, 95, 40]
-entry_atoms: [side-coaching, be-supportive, safety-in-the-room, status, ensemble]
+entry_atoms: [side-coaching, be-supportive, safety-in-the-room, status, ensemble, status-dynamics]
 entry_path: improv-for-teams
 primary_problem: "the team defers to you and you cannot tell whether they agree"
 primary_cta_type: exercise
@@ -17,7 +17,7 @@ primary_cta_target: directed-scene
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Be a Better Leader: Coach Without Taking Over

@@ -9,11 +9,11 @@ serp_checked: "2026-08-22"
 serp_min_dr: 25
 serp_verdict: winnable
 entry_atoms:
-  [group-mind, ensemble, status-dynamics, interdependence, safety-in-the-room, be-supportive]
+  [group-mind, ensemble, status-dynamics, interdependence, safety-in-the-room, be-supportive, yes-and]
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Team Dynamics: The Invisible Architecture of a Group

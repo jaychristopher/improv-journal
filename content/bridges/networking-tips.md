@@ -10,7 +10,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 53
 serp_verdict: authority
-entry_atoms: [offers, be-supportive, status, trust, safety-in-the-room]
+entry_atoms: [offers, be-supportive, status, trust, safety-in-the-room, reading-the-room]
 entry_path: improv-for-life
 primary_problem: "you go to the event, collect three business cards, and feel slightly grubby afterwards"
 primary_cta_type: exercise
@@ -18,7 +18,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # Networking Tips That Work If You Hate Networking

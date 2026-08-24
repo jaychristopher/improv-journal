@@ -12,7 +12,7 @@ serp_checked: "2026-08-23"
 serp_min_dr: 30
 serp_verdict: winnable
 serp_top10_dr: [36, 85, 95, 30, 56, 75, 94]
-entry_atoms: [suggestion, base-reality, initiation, obvious-choice, offers]
+entry_atoms: [suggestion, base-reality, initiation, obvious-choice, offers, space-work]
 entry_path: beginner-foundations
 primary_problem: "you need something to start a scene with and everything you think of is either boring or too clever"
 primary_cta_type: exercise
@@ -20,7 +20,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Improv Prompts: 140 Scene Starters for Class or Stage

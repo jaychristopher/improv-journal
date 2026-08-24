@@ -7,7 +7,7 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 54
 serp_verdict: authority
-entry_atoms: [be-supportive, be-thankful, offers, blocking, trust]
+entry_atoms: [be-supportive, be-thankful, offers, blocking, trust, steering, bulldozing, status, fracture-recovery, ensemble]
 entry_path: improv-for-life
 primary_problem: "you care about them and they have stopped telling you things"
 primary_cta_type: exercise
@@ -15,7 +15,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # How to Be a Good Friend: The Support Most People Miss

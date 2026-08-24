@@ -10,7 +10,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 13
 serp_verdict: winnable
-entry_atoms: [trust, be-thankful, be-supportive, be-honest, offers]
+entry_atoms: [trust, be-thankful, be-supportive, be-honest, offers, be-positive]
 entry_path: improv-for-teams
 primary_problem: "the team is polite but nobody says the real thing"
 primary_cta_type: exercise
@@ -18,7 +18,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # Trust Building Exercises That Aren't Trust Falls

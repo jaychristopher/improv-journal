@@ -10,7 +10,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 5
 serp_verdict: winnable
-entry_atoms: [be-present, space-work, physicality, warm-up, side-coaching]
+entry_atoms: [be-present, space-work, physicality, warm-up, side-coaching, heat-and-weight]
 entry_path: beginner-foundations
 primary_problem: "you need structured drama exercises that build skills rather than just fill time"
 primary_cta_type: exercise
@@ -18,7 +18,7 @@ primary_cta_target: mirroring
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Theatre Games: What They Are and How to Run Them

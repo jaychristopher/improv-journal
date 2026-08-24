@@ -14,7 +14,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 20
 serp_verdict: winnable
-entry_atoms: [offers, vulnerability, trust, be-thankful, active-listening]
+entry_atoms: [offers, vulnerability, trust, be-thankful, active-listening, blocking]
 entry_path: improv-for-life
 primary_problem: "you want to talk about something other than work and neither of you knows how to start"
 primary_cta_type: exercise
@@ -22,7 +22,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Questions to Ask Friends: 152 That Go Somewhere

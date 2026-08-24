@@ -7,11 +7,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 4
 serp_verdict: winnable
-entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave, internal-computation]
+entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave, internal-computation, offers, audience, signal]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Stop Caring What People Think: The Performer's Secret

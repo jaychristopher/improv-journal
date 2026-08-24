@@ -9,11 +9,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 26
 serp_verdict: winnable
 serp_top10_dr: [97, 85, 95, 48, 36, 94, 26]
-entry_atoms: [yes-and, accepting-the-offer, be-positive, offers, blocking]
+entry_atoms: [yes-and, accepting-the-offer, be-positive, offers, blocking, negation]
 entry_path: improv-for-life
 status: draft
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Yes And Improv: The Rule Everyone Gets Wrong

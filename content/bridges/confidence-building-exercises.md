@@ -10,7 +10,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 1
 serp_verdict: winnable
-entry_atoms: [be-brave, fear-of-failure, hesitation, status, performance-state]
+entry_atoms: [be-brave, fear-of-failure, hesitation, status, performance-state, obvious-choice]
 entry_path: improv-for-life
 primary_problem: "you keep waiting to feel ready and the moment keeps passing"
 primary_cta_type: exercise
@@ -18,7 +18,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # Confidence Building Exercises That Aren't Affirmations

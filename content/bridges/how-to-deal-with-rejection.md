@@ -8,11 +8,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 32
 serp_verdict: winnable
 serp_top10_dr: [89, 95, 75, 32, 99, 50, 45]
-entry_atoms: [failing-forward, be-brave, commitment, performance-state, accepting-the-offer]
+entry_atoms: [failing-forward, be-brave, commitment, performance-state, accepting-the-offer, signal, blocking]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # How to Deal with Rejection: The Improv Philosophy of Failing Forward

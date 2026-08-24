@@ -9,7 +9,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 30
 serp_verdict: winnable
-entry_atoms: [active-listening, be-present, offers, internal-computation, signal]
+entry_atoms: [active-listening, be-present, offers, internal-computation, signal, be-thankful]
 entry_path: improv-for-life
 primary_problem: "you know you should listen better and practising it never seems to change anything"
 primary_cta_type: exercise
@@ -17,7 +17,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Active Listening Exercises That Actually Train It

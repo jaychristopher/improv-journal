@@ -7,11 +7,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 64
 serp_verdict: authority
-entry_atoms: [commitment, status, be-present, active-listening, signal]
+entry_atoms: [commitment, status, be-present, active-listening, signal, be-supportive, be-thankful, group-mind]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # How to Be More Charismatic: The Improv Framework for Magnetic Presence

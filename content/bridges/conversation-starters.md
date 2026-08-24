@@ -21,7 +21,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 28
 serp_verdict: winnable
-entry_atoms: [offers, obvious-choice, blocking, initiation, be-thankful]
+entry_atoms: [offers, obvious-choice, blocking, initiation, be-thankful, steering]
 entry_path: improv-for-life
 primary_problem: "you open with something fine and the conversation is dead within thirty seconds"
 primary_cta_type: exercise
@@ -29,7 +29,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Conversation Starters: 192 That Survive the Second Exchange

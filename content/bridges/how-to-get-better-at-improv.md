@@ -8,11 +8,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 6
 serp_verdict: winnable
-entry_atoms: [diagnosing-scene-failure, active-listening, commitment, be-present, game-of-the-scene]
+entry_atoms: [diagnosing-scene-failure, active-listening, commitment, be-present, game-of-the-scene, space-work, obvious-choice, internal-computation]
 entry_path: self-coaching-toolkit
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Get Better at Improv: A Practitioner's Guide to Deliberate Growth

@@ -8,11 +8,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 40
 serp_verdict: winnable
 serp_top10_dr: [40, 92, 95, 89, 56, 99, 55, 96]
-entry_atoms: [active-listening, offers, yes-and, be-honest, emotional-truth, status]
+entry_atoms: [active-listening, offers, yes-and, be-honest, emotional-truth, status, commitment, blocking, fracture-recovery]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Have Difficult Conversations: The Improv Approach

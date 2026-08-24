@@ -10,7 +10,7 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 2
 serp_verdict: winnable
-entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness]
+entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness, heightening, reincorporation, status, internal-computation, judgment, overcomplication]
 entry_path: systems-of-improv
 primary_problem: "trying to be clever is making the moment feel forced"
 primary_cta_type: path
@@ -18,7 +18,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: draft
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Be Funny (It's Not What You Think)
