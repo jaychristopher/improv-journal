@@ -46,6 +46,29 @@ Accepting without contributing produces a scene of pleasant nothing — two peop
 
 The "and" is where you are actually required to bring something: a reason, a feeling about it, a piece of information nobody asked for. `be-positive` is the underlying disposition; the phrase is the name for what it produces.
 
+## What It Sounds Like
+
+Both halves fail quietly, and they are easier to recognise in dialogue than in description. One offer, four replies.
+
+**"I have been standing out here for twenty minutes."**
+
+- **"No you haven't, you just got here."** — a block. The reality is denied, and the scene becomes an argument about whose account is true. `blocking` is the whole failure in one line.
+- **"Have you? Why were you waiting?"** — accepts the fact and hands the work straight back. Nothing has been denied and nothing has been supplied.
+- **"Twenty minutes. Wow."** — yes with no and. Agreeable, warm, and the scene is exactly where it was before anybody spoke.
+- **"I know. I watched you park, walk past the door twice, and come back."** — accepts the twenty minutes and adds who these two are to each other. It is now a scene about somebody avoiding going in.
+
+Only the last reply leaves the other person more to work with than they started with, and notice how little it cost: one fact accepted, one fact added.
+
+### The version people find harder
+
+If the principle were about agreement, this would not be a yes-and:
+
+**"We should ship it Friday."** — **"Friday is not going to work, and I think the reason is the migration nobody has scoped."**
+
+What is accepted is that a date has been proposed and a decision is now live. What follows is a flat refusal of the date and a genuine addition: a reason, and a piece of information the other person did not have. Set it beside "Friday doesn't work", which accepts and adds nothing and leaves the group where it was — and beside "Sure, Friday", which is agreement, and is the thing this principle is constantly mistaken for.
+
+The test is not whether you said yes. It is whether the person who spoke before you now has more to work with.
+
 ## The Quieter Opposite
 
 Most people answer `blocking` — flat contradiction. That is the textbook answer and the least useful one, since anybody doing it plainly gets told within a fortnight of starting.
