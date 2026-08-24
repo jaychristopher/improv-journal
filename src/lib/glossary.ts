@@ -103,7 +103,21 @@ export function groupGlossaryTerms(terms: GlossaryTerm[]) {
  */
 export function definitionFromHtml(html: string, maxLen = 300): string {
   for (const match of html.matchAll(/<p(?![a-z])[^>]*>([\s\S]*?)<\/p>/g)) {
+    // A leading bold label is dropped, exactly as stripLeadLabel does on the
+    // markdown side. Without this the JSON-LD disagreed with both the meta
+    // description and the glossary hub, and the eight principle pages told a
+    // crawler their definition was "Alias: Act before you're ready" — the
+    // label leaked because only "<label> for:" was filtered. Matched on the
+    // <strong> tag rather than on the text so an ordinary sentence that
+    // happens to contain an early colon is left alone.
+    const label = /^\s*<strong>([^<]*?):?<\/strong>:?\s*/.exec(match[1]);
+    // "Trains: Be Changeable" and "Technique for: Be Simple" name a *different*
+    // concept than the page, so keeping the sentence would define the wrong
+    // thing — Emotion Switch would be described as Be Changeable. Those
+    // paragraphs are skipped so the real description below them is used.
+    if (label && /^(trains|[A-Za-z ]+ for)$/i.test(label[1].trim())) continue;
     const text = match[1]
+      .replace(/^\s*<strong>([^<]*?):?<\/strong>:?\s*/, "")
       .replace(/<[^>]+>/g, "")
       .replace(/&amp;/g, "&")
       .replace(/&lt;/g, "<")
@@ -118,4 +132,25 @@ export function definitionFromHtml(html: string, maxLen = 300): string {
     return text.length <= maxLen ? text : `${text.slice(0, text.lastIndexOf(" ", maxLen - 1))}…`;
   }
   return "";
+}
+
+/**
+ * Drop a leading bold label from rendered HTML so it does not reach a
+ * description. The markdown side has done this since stripLeadLabel; the HTML
+ * side had not, so Article JSON-LD carried "Alias: Act before you're ready"
+ * on all eight principle pages while the meta tag on the same page was clean.
+ */
+export function stripLeadLabelHtml(html: string): string {
+  // "**Technique for: Be Positive**" renders as a paragraph containing nothing
+  // but the label, and the label links the principle — so the <strong> holds a
+  // nested <a> and a [^<] scan cannot cross it. Drop the whole paragraph: it
+  // names a different concept, so keeping any of it would describe the wrong
+  // thing.
+  const withoutLabelPara = html.replace(
+    /^\s*<p(?![a-z])[^>]*>\s*<strong>[\s\S]*?<\/strong>\s*<\/p>\s*/,
+    "",
+  );
+  // "**Alias:** Act before you're ready" keeps its sentence — that glosses this
+  // same concept — and loses only the label.
+  return withoutLabelPara.replace(/(<p(?![a-z])[^>]*>)\s*<strong>[\s\S]*?<\/strong>:?\s*/, "$1");
 }

@@ -11,7 +11,7 @@ import {
   getThreadsForAtom,
   loadSources,
 } from "@/lib/content";
-import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
+import { definitionFromHtml, isGlossaryType, stripLeadLabelHtml } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
 import { extractDescription } from "@/lib/seo";
@@ -158,7 +158,7 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
       )}
       <ArticleJsonLd
         title={fm.title}
-        description={extractDescription(atom.html.replace(/<[^>]+>/g, " "))}
+        description={extractDescription(stripLeadLabelHtml(atom.html).replace(/<[^>]+>/g, " "))}
         url={atomUrl}
         datePublished={fm.created}
         dateModified={fm.updated}
