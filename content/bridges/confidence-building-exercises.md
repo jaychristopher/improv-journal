@@ -143,6 +143,48 @@ None of these require courage in any large sense. They require doing something a
 
 The seven above assume adult social stakes and a willingness to be briefly ridiculous in front of somebody, which is what makes them work and also what makes them unsuitable as written for children — the mechanism transfers, the format does not. For a team or a class, run the partnered ones as a warm-up rather than as a workshop — a short recurring slot does far more than one long session, for the same reason frequency beats intensity everywhere else here.
 
+## Questions People Ask About Building Confidence
+
+### What is the difference between confidence and self-esteem?
+
+Confidence is domain-specific and self-esteem is not, which is why working on the wrong one produces no result.
+
+Confidence is a prediction about a particular task: can I do this. It is built by evidence and it does not transfer far — somebody entirely assured in a meeting can be lost at a party, and neither state says anything about the other. Self-esteem is a global judgement about your worth, it moves slowly, and it responds to different things entirely.
+
+Almost everything on this page addresses the first. If waiting to feel ready is the problem, exercises fix it. If the underlying belief is that you are not worth much regardless of what you achieve, more evidence does not touch it, because evidence is not what is generating the belief.
+
+### Do power poses actually work?
+
+The famous version does not, and it is a useful cautionary tale rather than a technique.
+
+Carney, Cuddy and Yap (2010) reported that expansive postures raised testosterone, lowered cortisol and increased risk-taking. Ranehill et al. (2015) ran it again with a much larger sample and found no hormonal or behavioural effect. In 2016 Dana Carney, the lead author, publicly disavowed her own finding — she wrote that she does not believe the effect is real and discourages others from studying it. Cuddy maintains that a subjective feeling of power survives, which is a considerably smaller claim than the one that reached the popular audience.
+
+What does hold up is unglamorous and is the argument of this whole page: `performance-state` responds to what you do, not to what you arrange to feel beforehand. Standing differently for two minutes in a lift changes very little. Speaking first in the meeting changes the next meeting.
+
+### Is confidence the same as not feeling nervous?
+
+No, and believing it is keeps people waiting indefinitely for a signal that is not coming.
+
+Performers with decades of stage time describe the same physical response before a show — the tightening, the heart rate, the shortened breath. What changed is that the response stopped being treated as information about whether to proceed. `performance-state` is arousal, and arousal is what a body does before something that matters; the version with none of it is not confidence but indifference.
+
+The practical form is that you are looking for the nerves to become uninformative rather than absent. That is a much lower bar and it is actually reachable.
+
+### Does "fake it till you make it" work?
+
+The instruction is close to right and the wording gets it backwards, which matters because people try to fake the wrong thing.
+
+You cannot fake the feeling — attempting to feel confident while not feeling confident is just monitoring yourself, which is the opposite of what any of this needs. What you can do is act without the feeling, which is not faking anything. Speaking first while nervous is not a performance of confidence; it is the actual behaviour, done in the wrong internal weather.
+
+`hesitation` is the thing being removed, and it responds to being overridden rather than to being reframed. The feeling catches up afterwards, in the form of evidence, which is the only route there is.
+
+### How long before it feels different?
+
+Sooner than people expect for the specific task, and never in general.
+
+A few dozen repetitions of one thing — speaking first, making the offer, going before you are ready — is usually enough to change the prediction about that thing, which can happen inside a month of weekly practice. What does not happen is a general transformation: the person who has become comfortable initiating scenes is often still avoiding the phone call, because the evidence is task-shaped and does not travel.
+
+That is worth knowing in advance, because the usual conclusion after the first transfer failure is that the confidence was fake. It was not. It was specific, which is what confidence is.
+
 ## How to Actually Use These
 
 **Frequency beats intensity.** These update an estimate built from repetition. Ten minutes twice a week does more than an intensive day, which is also why confidence workshops fade.

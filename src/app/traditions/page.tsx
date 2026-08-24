@@ -75,6 +75,14 @@ export default async function TraditionsPage() {
             {paragraph}
           </p>
         ))}
+        <p className="text-foreground/70">
+          That separate read is{" "}
+          <Link href="/improv-theory" className="underline">
+            improv theory
+          </Link>
+          , which takes the five lineages question by question and sets out where they agree and
+          where they cannot both be right.
+        </p>
       </section>
 
       <div className="space-y-4">
