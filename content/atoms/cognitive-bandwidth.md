@@ -36,6 +36,33 @@ The same arithmetic explains a frustration that has nothing to do with performin
 
 For the full treatment of bandwidth as a concept — individual vs. shared, emotional bandwidth, recovery mechanisms, the cognitive science backing — see the `bandwidth` definition atom.
 
+## It is not one pool
+
+The simplest version of this law — one tank, everything drains it — is useful and slightly wrong, and the correction has practical consequences.
+
+Wickens (2002) argues attention is better modelled as several partly separate resources rather than a single supply. Tasks that draw on the same kind of resource interfere heavily; tasks that draw on different kinds interfere much less. That is why you can walk while holding a conversation and cannot hold two conversations.
+
+For a performer the relevant collision is verbal against verbal. Listening to a partner and composing your own line are both language work, so they compete directly and one of them loses — which is `internal-computation` explained mechanically rather than moralised. Physical activity collides far less, which is the underlying reason space work, walking a stage, or handling an object can coexist with attention while silent scripting cannot.
+
+The practical rule that falls out: if you must do something with the spare capacity, make it physical. Doing something with your hands genuinely costs less than deciding what to say next.
+
+## What the law predicts
+
+A law is worth having if it forecasts something specific. This one predicts four things you can watch for.
+
+- **Degradation is ordered, not random.** Under load the same channels go first — tone before words, physical context before dialogue — so a performer who is missing tone but catching content is at a describable point on the curve rather than simply doing badly.
+- **Difficulty concentrates at the start.** Openings cost the most because nothing is established and everything must be generated, which is why `be-simple` earns its place there specifically.
+- **Adding instructions makes performance worse before it makes it better.** Any new note is another process, so a class given five things to remember will produce worse scenes that evening. Teaching one note at a time is a consequence of the law rather than a matter of style.
+- **Rest changes output more than effort does.** Capacity is state-dependent, so a tired cast improves more from a break than from being asked to concentrate.
+
+## Where it is contested
+
+The claim that expertise frees capacity is directionally right and too simple.
+
+Christensen and colleagues, in work on skilled performance, argue that experts do not merely automate — they run sophisticated monitoring that itself consumes resources. On that account expertise **reallocates** capacity rather than releasing it: the expert is not doing less, they are spending on different things, and some of what looks like effortlessness is a different allocation rather than a smaller bill.
+
+That matters here because it predicts something the simple version does not — that experts should also be able to be overloaded, just by harder problems. Which is what anybody who has watched a strong improviser attempt an unfamiliar form has seen.
+
 ## Specific sources
 
 Kahneman, *Attention and Effort* (1973), Ch. 2-3 ("Toward a Theory of Mental Effort") — the capacity model: attention is limited, concurrent tasks interfere. Ch. 9 on divided attention between simultaneous speeded responses. Wickens (2002), "Multiple Resources and Performance Prediction," and the earlier "Processing Resources in Attention" (1984) (2002) — attention is NOT a single pool; some task combinations interfere more than others. **Counter-position:** Expert performers don't simply automate — they engage in sophisticated monitoring that itself costs bandwidth (Christensen et al., "Beyond Automaticity"). Experts may *reallocate* bandwidth rather than free it. The atom's claim "expertise reduces processing cost" is directionally correct but oversimplified.
