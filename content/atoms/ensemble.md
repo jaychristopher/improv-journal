@@ -60,7 +60,7 @@ Rarely a row. Four quieter things account for most of it.
 
 - **A star forms.** One player becomes the reason the show is good, everybody else adjusts to feed them, and the interdependence quietly inverts into a support structure. It usually happens to the group's strongest performer without anybody deciding it, `bulldozing` being only the crude version.
 - **A passenger settles.** Somebody stops initiating and only ever responds. It is easy to tolerate because their scenes are fine, and the cost lands on whoever is now carrying the openings.
-- **Status hardens.** `status` in a healthy ensemble moves constantly. When the same person is high in every conversation about the work, notes stop travelling upward and the group loses its ability to correct itself.
+- **Status hardens.** `status` in a healthy ensemble moves constantly. When the same person is high in every conversation about the work, notes stop travelling upward and the group loses its ability to correct itself. Groups read each other continuously and almost entirely without saying so, which is the thing [most likely to questions](/most-likely-to-questions) makes explicit — and the reason it turns into a roast when the reading is unkind.
 - **Turnover.** One departure or arrival resets a great deal, because what was lost is not a skill set but accumulated knowledge of specific people.
 
 None of these look like a problem while they are happening, which is why ensembles usually degrade rather than break.

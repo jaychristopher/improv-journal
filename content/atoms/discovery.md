@@ -26,7 +26,7 @@ created: "2026-04-04"
 updated: "2026-08-23"
 ---
 
-Discovery is the moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene *this scene* clicks into place. Discovery is not planned. It emerges from the interaction and is recognized, not invented.
+Discovery is the moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene *this scene* clicks into place. Discovery is not planned. It emerges from the interaction and is recognized, not invented. Forced-choice games run on a version of the same thing. [Would you rather questions](/would-you-rather-questions) are not interesting for the choice but for the defence of it — the test is whether a pair splits a room and whether the people who picked can say why.
 
 ## One simplified pathway
 

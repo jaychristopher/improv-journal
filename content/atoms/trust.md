@@ -33,7 +33,7 @@ updated: "2026-08-24"
 
 Trust is the foundation that makes every other principle safe to practice. Without trust, bravery is recklessness, honesty is exposure, changeability is surrender, and support is naivety.
 
-Trust in improv is not blind faith. It is **earned through repeated demonstrations of mutual support** — each time your partner accepts your offer, each time they justify your accident, each time they yield to your reality, the trust deepens. The most durable pattern: cooperate first, reciprocate consistently, forgive defections quickly. Ensembles that build lasting trust follow exactly this rhythm.
+Trust in improv is not blind faith. It is **earned through repeated demonstrations of mutual support** — each time your partner accepts your offer, each time they justify your accident, each time they yield to your reality, the trust deepens. The most durable pattern: cooperate first, reciprocate consistently, forgive defections quickly. The best-known laboratory version of that rhythm is the escalating, strictly reciprocal disclosure in [the 36 questions](/36-questions-to-fall-in-love), where the structure does considerably more of the work than the questions do. Ensembles that build lasting trust follow exactly this rhythm.
 
 ## Trust operates at three levels
 

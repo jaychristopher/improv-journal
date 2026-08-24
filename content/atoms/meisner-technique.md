@@ -69,7 +69,7 @@ It needs one other person and no equipment.
 - **Do not be interesting.** The exercise is spoiled instantly by somebody trying to make it entertaining, which is the same instinct that spoils scenes.
 - **Three minutes is plenty.** Most pairs find the first minute excruciating and the third one absorbing.
 
-The thing to notice afterwards is not whether it was any good. It is how much of your usual conversation is spent preparing rather than watching.
+The thing to notice afterwards is not whether it was any good. It is how much of your usual conversation is spent preparing rather than watching. That gap is also the difference between working down a list and actually hearing the answer, which is what [questions to get to know someone](/questions-to-get-to-know-someone) is built around — asking for a story rather than a fact.
 
 ## Where It Came From
 

@@ -35,7 +35,7 @@ Hesitation looks like safety. It feels like prudence — *I'll wait until I have
 
 ## Waiting for permission
 
-Starting a scene with a question instead of a statement. "Do you want to...?" or "Should we...?" Questions defer the creative burden to your partner. They disguise inaction as collaboration. Compare: "Do you want to go somewhere?" vs. "I'm taking you to the place where we first met." The first is hesitation. The second is an offer.
+Starting a scene with a question instead of a statement. "Do you want to...?" or "Should we...?" Questions defer the creative burden to your partner. They disguise inaction as collaboration. Compare: "Do you want to go somewhere?" vs. "I'm taking you to the place where we first met." The first is hesitation. The second is an offer. Games built entirely out of questions avoid the problem by making the asking mutual: [21 questions](/21-questions-game) works only while both people answer, and collapses into an interview the moment one person asks everything.
 
 ## Vagueness as safety
 

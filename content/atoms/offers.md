@@ -65,7 +65,7 @@ The most contested case, and the honest answer is that it depends what the quest
 
 A question that transfers the work is a weak offer and often a disguised refusal: "what are we doing here?" hands the other person the entire scene while appearing to participate. Beginners produce these constantly, which is why many teachers ban questions outright — a blunt rule that fixes the common case.
 
-But a question can carry an enormous amount. "Why are you wearing my coat?" establishes a relationship, a history, a grievance and a location in six words. It is a strong offer that happens to end in a question mark.
+But a question can carry an enormous amount. "Why are you wearing my coat?" establishes a relationship, a history, a grievance and a location in six words. It is a strong offer that happens to end in a question mark. The same distinction sorts openers in ordinary conversation, which is why [conversation starters](/conversation-starters) rates them by whether they survive the second exchange rather than by how interesting they sound on their own.
 
 The rule worth keeping is not "no questions" but that a question must add before it asks. If removing the question mark would leave nothing behind, it was extraction rather than an offer — which is the same distinction `blocking` turns on.
 
