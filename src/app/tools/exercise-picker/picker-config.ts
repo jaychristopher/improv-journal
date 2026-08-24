@@ -3,7 +3,6 @@ export interface LevelConfig {
   label: string;
   title: string;
   description: string;
-  keywords: string[];
 }
 
 export interface FocusConfig {
@@ -21,12 +20,6 @@ export const LEVELS: LevelConfig[] = [
     title: "Beginner Improv Exercises",
     description:
       "Easy improv exercises for groups with no experience. Each one builds listening, presence, or collaboration — no performance skills required.",
-    keywords: [
-      "improv exercises for beginners",
-      "easy improv games",
-      "beginner improv warm ups",
-      "improv games no experience",
-    ],
   },
   {
     slug: "intermediate",
@@ -34,11 +27,6 @@ export const LEVELS: LevelConfig[] = [
     title: "Intermediate Improv Exercises",
     description:
       "Exercises for improvisers who know the basics and want to push past the plateau. Focus on emotional range, status, recovery, and scene-level skills.",
-    keywords: [
-      "intermediate improv exercises",
-      "improv exercises for experienced",
-      "advanced improv warm ups",
-    ],
   },
   {
     slug: "advanced",
@@ -46,11 +34,6 @@ export const LEVELS: LevelConfig[] = [
     title: "Advanced Improv Exercises",
     description:
       "Exercises for experienced performers working on ensemble depth, show craft, and artistic voice. Assumes comfort with game, character, and longform.",
-    keywords: [
-      "advanced improv exercises",
-      "improv exercises for performers",
-      "ensemble improv exercises",
-    ],
   },
 ];
 

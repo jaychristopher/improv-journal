@@ -41,7 +41,6 @@ export async function generateMetadata({
   return {
     title: pageTitle(fm.title),
     description: fm.description,
-    keywords: fm.target_keywords?.map((keyword: { keyword: string }) => keyword.keyword),
     alternates: { canonical: `/${slug}` },
     openGraph: {
       siteName: SITE_NAME,

@@ -12,13 +12,6 @@ export const metadata: Metadata = {
   description:
     "Free tool: pick improv warm-up games by experience level and skill focus — for classes, team meetings, workshops, and classroom warm-ups.",
   alternates: { canonical: "/tools/exercise-picker" },
-  keywords: [
-    "improv warm up games",
-    "improv exercises",
-    "communication exercises for teams",
-    "improv game ideas",
-    "team warm up exercises",
-  ],
   openGraph: {
     siteName: SITE_NAME,
     locale: "en_US",

@@ -25,7 +25,6 @@ export async function generateMetadata({
     title: pageTitle(`${config.title}: Warm-Up Games and Drills`),
     description: metaDescription(config.description),
     alternates: { canonical: `/tools/exercise-picker/${level}` },
-    keywords: config.keywords,
   };
 }
 
