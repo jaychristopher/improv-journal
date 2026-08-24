@@ -15,7 +15,7 @@ primary_cta_target: building-on-offers
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Active Listening: Why You're Doing It Wrong
@@ -79,6 +79,52 @@ _Try this:_ With a partner, do 2 minutes of slow hand mirroring in silence. Noti
 After someone finishes speaking, wait one full second before responding. Not to be polite — to notice what arises in the gap. If your response was pre-composed, it'll feel like a relief to deliver it. If your response forms from what you just heard, it'll feel slightly surprising — you didn't know you were going to say that.
 
 The surprise is the signal that you actually listened.
+
+## Questions People Ask About Active Listening
+
+### What are the five active listening skills?
+
+The standard list is: pay attention, show that you are listening, provide feedback, defer judgment, and respond appropriately.
+
+It is worth looking at what is actually in it, because the problem this page describes is sitting in the list itself. **Step two is performance.** Nod, make eye contact, use small encouraging noises — that is instruction in how to look like a listener, and it can be executed perfectly by somebody who is composing their reply throughout. It is the most convincing bad listening there is, and it is being taught as step two of five.
+
+Step one is the one that matters — "do not mentally prepare a rebuttal" — and it is given as an instruction with no mechanism attached. Telling somebody to stop composing works about as well as telling them to stop being nervous. `internal-computation` does not respond to being asked; it responds to having the capacity it runs on taken away, which is what the exercises on this page do.
+
+So the list is not wrong. It is ordered by visibility, and the invisible item is the one doing all the work.
+
+### What are the three A's of active listening?
+
+Attitude, attention and adjustment — a teaching framework common in public speaking courses. Attitude is approaching with an open mind, attention is the deliberate effort that separates listening from hearing, and adjustment is adapting to the speaker's style as you go.
+
+Of the three, adjustment is the one worth keeping and the one usually skipped. It names something real: the listening that works for a person delivering bad news quickly is not the listening that works for somebody circling a subject they have not decided to raise yet. Reading which of those you are in, and changing what you do, is a genuine skill.
+
+Attitude is the weakest of the three, for the same reason as before. Nobody has ever improved their listening by resolving to have a better attitude about it.
+
+### What are the barriers to active listening?
+
+The usual answers are noise, distraction and interruption, and all three are real and none of them is the main one. The main barrier is that you are already occupied.
+
+`cognitive-bandwidth` is finite, and the standard load includes composing your response, monitoring how you are coming across, deciding whether you agree, and rehearsing the objection you intend to make. All four run on the same capacity that would otherwise be receiving, which is why listening fails hardest in exactly the conversations you most want to get right — high stakes means more processes, and more processes means less reception.
+
+The practical implication is unusual: to listen better, do less rather than try harder. Every technique on this page removes a process rather than adding one.
+
+### How do you listen properly when you disagree?
+
+Separate understanding from agreeing, and do the first completely before starting the second.
+
+The reason disagreement wrecks listening is that evaluation is fast and starts automatically — by sentence three you have a verdict, and everything after it is being processed as evidence for or against a conclusion you have already reached. What you retain afterwards is your own argument rather than their position.
+
+The move that works is committing to be able to state their case back well enough that they would accept it. That is a concrete task, it occupies the capacity that would otherwise be building a rebuttal, and it has a useful side effect: people who feel accurately understood argue less, so the disagreement gets shorter rather than longer.
+
+You still get to disagree. You are just doing it second, and about what they actually said.
+
+### Why is listening properly so tiring?
+
+Because it is expensive, and the tiredness is evidence you were doing it rather than a sign something is wrong.
+
+Reception costs attention continuously — there is no coasting position, and the effort is entirely invisible to everybody including you. That is why an hour of genuinely attending to somebody difficult can leave you more depleted than three hours of ordinary talking, and why people who are good at this ration it rather than spending it evenly.
+
+The practical version is to plan for the cost. Nobody listens well in the fourth back-to-back conversation of the afternoon, and treating that as a scheduling problem rather than a character one is the fix.
 
 ## The Uncomfortable Truth
 
