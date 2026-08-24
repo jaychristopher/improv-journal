@@ -190,6 +190,22 @@ Most public speaking tips are handed down rather than tested, and several of the
 
 The tips that survive testing are dull: know your material, look at individual people, slow the first thirty seconds, stop when you have finished. The exciting advice is mostly what gets repeated because it sounds like a technique.
 
+## How to Improve Public Speaking, Rather Than One Talk
+
+Everything above the last two sections is about preparing a particular talk. Getting better at public speaking is a different problem, and confusing the two is why people can give the same competent, slightly stiff presentation for fifteen years.
+
+**The reps problem is the whole thing.** Most people speak to a group a handful of times a year. That is perhaps thirty attempts a decade, months apart, with no feedback beyond a vague sense of how it went. No skill improves on that schedule — not because the attempts are wasted, but because you have forgotten the state you were in by the time the next one arrives. The largest available lever is not a technique. It is manufacturing more attempts.
+
+**What counts as an attempt** is looser than people assume. It is any moment where you have to produce speech in front of others without a script and cannot take it back. Asking the question in the workshop rather than afterwards. Giving the update unprepared. Reading aloud to a child. An improv class is unusual mainly in density: an hour of it contains more of these moments than a year of quarterly presentations, which is the entire reason this site keeps pointing at it.
+
+**Order of operations.** Public speaking skills do not improve evenly, and working on them in the wrong order wastes most of the effort.
+
+1. **Attention outward.** Until looking at the room is automatic, nothing else holds under pressure — every other skill gets spent maintaining it.
+2. **Recovery.** The ability to continue after losing your place, being interrupted, or saying something wrong. This is what converts a bad moment into a non-event.
+3. **Structure and phrasing.** Genuinely useful, and only once the first two have freed up the bandwidth to think about them.
+
+**The plateau nearly everyone hits.** Fluency arrives long before presence. You stop stumbling, you sound competent, and you are still not landing — because fluency is close to a motor skill and presence is an attention skill, and the second does not arrive free with the first. If you have been fine for years and not better, this is almost certainly where you are, and more rehearsal will not move it.
+
 ## What to Practise
 
 **Forward motion under pressure.** `no-backspace-scene` enforces the rule that nothing can be retracted: whatever you said is now true, and the only direction is onward. It builds the reflex that separates a speaker who recovers from one who spirals, and it builds it in the only place that helps — before you need it.
