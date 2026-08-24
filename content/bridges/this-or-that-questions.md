@@ -15,7 +15,7 @@ primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # This or That Questions: 300 for Warming Up Any Room
@@ -441,6 +441,44 @@ Four ways it comes off, and the first is much the most common.
 One smaller one worth naming. **Some people genuinely have no preference**, and the rule against "both" is aimed at the person refusing to engage, not the person who honestly does not mind about hats. Insisting on a pick from real indifference slows a format whose only advantage is speed. Let it go and move to the next pair.
 
 The line to hold: **the moment an answer costs something, this has stopped being this or that.** It has become a disclosure with two options, which is a fine thing to ask for and not what anybody in the room agreed to.
+
+## Questions People Ask About This or That
+
+### What is a this or that question?
+
+A this or that question offers two options and asks which one you prefer, with no explanation required — coffee or tea, beach or mountains, call or text. That is the whole form.
+
+What makes it a distinct thing rather than just a short question is the cost. Almost every other question asks you to compose something: a sentence, a story, a position you could be held to. This one asks for a word that already exists in your head, and both options are socially safe, so there is no answer that reveals more than you meant to reveal. That is why it works on a room that has gone quiet, and why it stops being useful once the room has warmed up.
+
+### How do you play this or that with a group?
+
+Ask the pair aloud, have everybody answer at once, and move immediately to the next one.
+
+The three things that break it are all pacing failures. Going round the circle one at a time turns a thirty-second warm-up into a five-minute queue and reintroduces exactly the being-watched problem the format exists to remove. Asking why somebody chose their answer converts it back into a normal question and the room re-tightens. And stopping to enjoy a good disagreement — which is tempting, because the disagreements are the fun part — kills the rhythm that is doing the actual work.
+
+Fast, overlapping, slightly chaotic is correct. `commitment` matters more than accuracy here: an instant wrong answer is worth more to the room than a considered right one.
+
+### How many this or that questions should you ask?
+
+Eight to twelve, then stop.
+
+The format has a short useful life. It lowers the cost of speaking, the room speaks, and after that it has nothing further to offer — keep going and you get a group who have now answered forty trivial questions and are waiting to find out what the point was. The signal to stop is the first time somebody expands an answer without being asked. That is the room volunteering something, which is what you were warming them up to do, and the correct response is to follow that rather than read out number thirteen.
+
+### Does this or that work on a video call?
+
+Better than most icebreakers, because it survives the two things that ruin the others.
+
+Video kills overlapping speech and makes silence expensive, so any format needing people to jump in unprompted fails badly. This one does not need speech at all — reactions, chat, thumbs, or everybody unmuting for one word all work, and nobody has to judge when to start talking. It is also immune to lag, since a one-word answer arriving half a second late is still a one-word answer.
+
+The adjustment worth making is to ask for the answer in the chat on the first two or three, then switch to voice. The chat round gets everybody participating with no turn-taking risk at all, which is the same trick the format uses in a room, applied to the medium.
+
+### What age does this or that work for?
+
+Roughly six upwards, which is a wider range than almost anything else here.
+
+Children need concrete pairs — objects, animals, food — because abstractions have no foothold. Teenagers do better with pairs that carry mild social stakes, since the neutral ones read as babyish. Adults will take almost anything, and the mixed-age case is the one where it genuinely excels: it is one of the very few group activities where a nine-year-old and their grandparent are answering the same question with equal authority and neither is being accommodated.
+
+For the version with genuine dilemmas rather than preferences, [would you rather questions](/would-you-rather-questions) is the neighbouring format and works on an older room.
 
 ## The Part You Can Practise
 
