@@ -6,6 +6,7 @@ type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, presence, ensemble, warm-up]
 links:
+  - { id: bippity-bippity-bop, relation: extends }
   - { id: sound-ball, relation: extends }
   - { id: be-present, relation: illustrates }
   - { id: presence, relation: requires }

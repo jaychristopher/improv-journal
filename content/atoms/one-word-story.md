@@ -6,6 +6,7 @@ type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, ensemble, presence, warm-up]
 links:
+  - { id: story-story-die, relation: extends }
   - { id: one-word-scene, relation: contrasts }
   - { id: be-supportive, relation: illustrates }
   - { id: accepting-the-offer, relation: illustrates }

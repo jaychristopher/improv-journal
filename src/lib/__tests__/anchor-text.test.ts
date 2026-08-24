@@ -36,6 +36,11 @@ const ALLOWED = new Set([
   // would be the tidier fix and costs a redirect, which is not worth spending
   // on a page with no accumulated equity yet. Revisit if it starts ranking.
   "social awkwardness|/how-to-be-less-awkward",
+  // The game is called Yes, Let's. The apostrophe splits on the tokeniser into
+  // "let" and "s", so the anchor can never contain the slug's only significant
+  // word, "lets" — and no correct spelling of the title would. The anchor is
+  // the game's actual name, which is as descriptive as an anchor gets.
+  "yes, let's|/practice/exercises/yes-lets",
 ]);
 
 function significantWords(slug: string): string[] {

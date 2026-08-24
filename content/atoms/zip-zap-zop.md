@@ -6,6 +6,7 @@ type: exercise
 status: draft
 tags: [exercises, beginner, fundamentals, presence, ensemble, warm-up]
 links:
+  - { id: yes-lets, relation: extends }
   - { id: be-present, relation: illustrates }
   - { id: presence, relation: requires }
   - { id: internal-computation, relation: contrasts }

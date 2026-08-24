@@ -36,3 +36,5 @@ Active listening is the prerequisite for genuine "Yes, And" — you cannot build
 In ensemble work, listening scales further — tracking not just your scene partner but the group pattern, the thematic echoes across scenes, who has been silent, where energy is collecting. This is the listening that makes longform work. Viola Spolin's term for this was "point of concentration" — not listening harder, but being in full-body relation with the space, the other players, and the moment.
 
 All of that describes the faculty; training it is a separate question. [Active listening exercises](/active-listening-exercises) are the drills that isolate reception, run without a scene to hide the work inside. The same skill under its ordinary name, and the ways it is usually taught wrong, is [active listening](/active-listening).
+
+The most demanding version of this in the shortform repertoire is [Story Story Die](/practice/formats/story-story-die), where the narration can be handed to you mid-word. There is no turn to see coming, so the only way to survive is to have been composing the sentence continuously whether or not you were speaking.

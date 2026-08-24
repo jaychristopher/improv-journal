@@ -40,6 +40,8 @@ Wimping sits inside a taxonomy of avoidance in *Impro for Storytellers* alongsid
 
 That is why it is treated as a member of the `blocking` family rather than as a separate problem. The effect on the scene is the same as a denial. Only the manners differ.
 
+The most-taught first exercise in improv drills this by accident. [Yes, Let's](/practice/exercises/yes-lets) asks a room to accept every proposal instantly and requires nobody to add anything, so a group that runs it a great deal produces students who are enthusiastic, agreeable and contributing nothing.
+
 ## The same move offstage
 
 This is the one avoidance behaviour that transfers exactly. A meeting where every contribution is met with "good point" and no addition is a wimping scene with a budget, and the person doing it is usually being deliberately agreeable rather than lazy. [How to stop people pleasing](/how-to-stop-people-pleasing) covers the version that has become a habit, where the accepting is real and the adding has been trained out.

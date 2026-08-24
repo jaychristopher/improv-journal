@@ -43,6 +43,8 @@ The censor activates in proportion to perceived risk. Telling someone to be brav
 
 Spontaneity is upstream of most other improv skills. `yes-and` requires having something to build with; `discovery` requires arriving somewhere you did not plan; `commitment` requires an impulse worth committing to. Remove the interference and the rest becomes available.
 
+The cleanest isolation of this is [Bippity Bippity Bop](/practice/exercises/bippity-bippity-bop), which has no content to invent at all. The only variable is how long it takes to react to something you did not choose, which is why a delay there cannot be explained away as thinking about the scene.
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 2 ("Spontaneity") — the argument that education suppresses imagination, and the first-idea/second-idea distinction. *Impro for Storytellers* — reframed as making failure safe rather than urging bravery. **Note:** the traditions diverge on emphasis. Johnstone treats spontaneity as the foundational problem and much of his method as removing what blocks it. UCB is comparatively analytical, treating the game of the scene as something identified and heightened deliberately, where Johnstone would trust the impulse. Annoyance and TJ & Dave land nearer Johnstone but arrive by way of commitment and honest behaviour rather than by dismantling the censor directly.
