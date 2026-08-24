@@ -17,7 +17,7 @@ primary_cta_target: one-word-story
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Party Games: 40 That Need Nothing but People
@@ -188,6 +188,48 @@ The word *game* is the problem. Announcing one puts everybody on notice that par
 So do not announce it. Ask two people a would-you-rather in an ordinary voice and let the circle grow. `offers` on this site is the idea that everything you say is something the other person can build on — a question asked casually is an offer, and if it is a good one somebody will pick it up without anybody having to declare that a game has begun.
 
 If it takes, it takes. If it does not, nothing has failed, because nothing was ever formally started.
+
+## Questions People Ask About Party Games
+
+### What are the best party games for adults?
+
+The ones that do not require anybody to stand up, be watched alone, or put their drink down.
+
+That sounds like a trivial filter and it removes about eighty per cent of published party games. Adults at a party are holding something, standing in a formation they chose, and mid-conversation with somebody. A game that asks them to abandon all three and perform in front of the room will be politely declined by exactly the people you most wanted to include.
+
+The games that work on adults are the ones that run *inside* the existing arrangement — everybody stays where they are, answers are short, and no single person is on display for more than a few seconds. Every game in the first two sections above was chosen on that basis. `safety-in-the-room` is the same principle a cast needs before anybody risks anything, and a party is a room full of people deciding, quietly, whether it is safe to be silly.
+
+### How many people do you need for a party game?
+
+Four is the practical floor and about twelve is where the shape has to change.
+
+Below four there is no group dynamic to play with — anything you start is a conversation with a rule attached, and conversations are usually better. Between four and roughly eight, everything in this page works as written. Past twelve, any game where people take turns becomes a queue: the wait between your turns grows longer than your attention lasts, and the people at the far end quietly start a separate conversation, which is the correct decision on their part.
+
+The fix for a big room is not a bigger game. It is a game where everybody answers simultaneously, or splitting into two groups and letting them run independently.
+
+### How long should a party game last?
+
+Less time than people want it to.
+
+The instinct is to keep a working game going, and it is the reliable way to kill an evening. A party game is doing its job when it converts a room of separate conversations into one room; once that has happened, the game has spent its usefulness and everything after is diminishing. Stop while people are still enjoying it and the energy stays in the room as conversation. Run it until it fades and the room has to be restarted from lower than where you began.
+
+Ten minutes is a long party game. The good ones are often ninety seconds.
+
+### What do you do about the person who does not want to play?
+
+Leave them alone, genuinely, and make sure that is visible.
+
+Pressure applied to one reluctant person is the single fastest way to make a whole room self-conscious, because everybody else is now watching to see what happens to somebody who declines. If declining is cheap and public, the room relaxes. If it costs something, the next three people who were undecided will also say no.
+
+In practice, most people who refuse a game are refusing the *performance*, not the game. They will often join something that needs no announcement, no turn-taking and no audience — which is the argument for starting games the way the section above describes, rather than by calling for attention first.
+
+### What party games work when the ages are mixed?
+
+The ones where being older confers no advantage.
+
+Anything built on general knowledge, cultural reference or vocabulary splits a mixed-age room immediately, and the children lose every round. Anything built on observation, speed, silliness or physical reaction levels it completely — a nine-year-old is often better at those than the adults, which is the part that makes a mixed group work rather than merely tolerate each other.
+
+The test is simple: if you can imagine an adult winning by knowing more things, it is the wrong game for a mixed room.
 
 ## The Part You Can Practise
 
