@@ -58,6 +58,46 @@ Held up less well: the writing. *Improvisation for the Theater* is organised for
 
 The genuine dependency is the side-coach. Her games assume somebody outside the exercise calling adjustments while it runs, and without that they flatten into recreation — a room having a pleasant time and transferring nothing to their scenes. A great deal of bad corporate improv is Spolin games run with the coach removed.
 
+## Questions People Ask About Viola Spolin
+
+### Who was Viola Spolin?
+
+An American theatre educator (1906–1994) who invented Theater Games and wrote *Improvisation for the Theater* (1963), the book that put a teaching method behind improvisation.
+
+She trained under Neva Boyd at Hull House in Chicago in the 1920s, worked as drama supervisor for the WPA Recreation Project inventing games for immigrant and inner-city children, founded the Young Actors Company in Los Angeles in 1948, and from the mid-1950s ran workshops for the Compass Players and then The Second City — both co-founded by her son, Paul Sills. Nearly every improv class in the world still runs on apparatus she built.
+
+### Did Viola Spolin invent improv?
+
+She invented how it is taught, which is a different and arguably larger claim.
+
+Improvisation as an activity is old — commedia dell'arte, parlour games, any child's play. What did not exist before her was a **transmissible method**: a set of structured problems that reliably produce spontaneity in people who do not have it, in an order a teacher can follow, with a way of adjusting mid-exercise and a way of assessing afterwards.
+
+What she did not invent is improvisation as a *performance form*. That came later and from other people — Sills and the Compass Players turning her training into a show, and the Chicago schools after them. She built the classroom; somebody else built the stage.
+
+### What is a theater game?
+
+A game with a single problem in it, chosen so that solving the problem requires the behaviour the teacher wanted.
+
+That is the whole design. You are not told to be present, be specific or listen — you are given a task narrow enough to occupy the part of you that would otherwise be watching yourself, and the behaviour arrives as a side effect. `space-work` is a clear example: handling an object that is not there requires deciding its weight and location, and that decision cannot be made from inside your own head.
+
+The other half is what happens around the game — `side-coaching` while it runs, and a group evaluation afterwards that asks whether the problem was solved rather than whether anybody was good. [Theatre games](/theatre-games) sets out the exercises themselves.
+
+### Are her games still used today?
+
+Constantly, and mostly without attribution.
+
+Mirroring, space work, one-word-at-a-time exercises, the whole idea of a warm-up with a specific focus rather than general silliness — these run in improv classes, drama schools, corporate workshops and primary schools daily, and a large share of the people leading them could not name her. Side-coaching in particular is near-universal and almost never credited.
+
+Her material also travelled outside theatre entirely, into education, social work and therapy, which is unsurprising given where it came from. The irony is intact: a method built for non-performers is now taught mainly to performers, by people who learned it third-hand.
+
+### Where should you start with her work?
+
+Not at the front of the book, which is the usual mistake.
+
+*Improvisation for the Theater* is organised for a teacher to work from rather than for a reader to read through, so opening it at page one and proceeding produces the impression of something dense and dated. Start instead by picking a single Point of Concentration and running the game attached to it, then read the surrounding material once you have seen what it does in a room.
+
+If you want the argument before the exercises, [the Spolin tradition](/traditions/spolin) is the shorter route, and [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater) covers which half of the book is worth your time and which edition to buy.
+
 ## Where to Go Next
 
 - [The Spolin tradition](/traditions/spolin) — what her school argues, and where it disagrees with the four that followed.
