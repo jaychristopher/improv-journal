@@ -20,9 +20,11 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
   - { id: gift-giving, relation: illustrates }
   - { id: blind-offer, relation: illustrates }
+  - { id: blocking, relation: contrasts }
+  - { id: specificity, relation: requires }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 An offer is anything that advances the scene — any word, gesture, expression, movement, or silence that adds to the shared reality. Johnstone's core principle: treat everything your partner does as an offer. The shift from "is an offer" to "treat as an offer" matters — it puts agency on the receiver, not the sender.
@@ -46,6 +48,34 @@ Ordinary conversation runs on the same currency, and mostly in the small denomin
 You are also making offers to yourself. The position you took, the word that escaped your mouth, the object you mimed — these are offers you now owe it to the scene to honor. Recognizing your own accidental offers is the bridge between offers and `commitment`: you commit to what you already did rather than wishing you'd done something else.
 
 Beginners often miss offers because they're looking for the "right" one. There is no right offer. There is only the offer that was made, and what you do with it. For the skill of receiving and building on offers, see `accepting-the-offer`.
+
+## What makes an offer usable
+
+Not all offers are equally easy to build on, and the difference is worth naming because "make more offers" is unhelpful advice to somebody whose offers keep dying.
+
+A usable offer does two things at once: it commits to something specific, and it leaves the other person somewhere to go. "I'm your brother" gives a relationship and a hundred possible next moves. "I'm your brother and I've come to tell you our mother died and the will is contested and I've been drinking" commits to so much that the only available response is to receive information.
+
+`specificity` is what separates a strong offer from a vague one, and volume is what separates a generous one from a closed one. The vague offer — "so... here we are" — cannot be built on because there is nothing in it. The overloaded offer cannot be built on because there is nothing left.
+
+The practical test is what your partner's next line has to be. If you can only imagine one, you have written their part for them.
+
+## Are questions offers?
+
+The most contested case, and the honest answer is that it depends what the question is doing.
+
+A question that transfers the work is a weak offer and often a disguised refusal: "what are we doing here?" hands the other person the entire scene while appearing to participate. Beginners produce these constantly, which is why many teachers ban questions outright — a blunt rule that fixes the common case.
+
+But a question can carry an enormous amount. "Why are you wearing my coat?" establishes a relationship, a history, a grievance and a location in six words. It is a strong offer that happens to end in a question mark.
+
+The rule worth keeping is not "no questions" but that a question must add before it asks. If removing the question mark would leave nothing behind, it was extraction rather than an offer — which is the same distinction `blocking` turns on.
+
+## Where "everything is an offer" strains
+
+The frame is Johnstone's and it is enormously productive, but it is worth knowing that it does not sit comfortably with everything downstream of it.
+
+Treating everything as an offer makes the receiver responsible for meaning, which is generous and liberating in a class. It is less obviously right in a performance built around a deliberately identified pattern, where the game-first schools ask a performer to select the one thing worth heightening and set the rest aside. Under that account, treating every twitch as significant is not attentiveness but a failure to prioritise.
+
+Both are usable and they pull in different directions: one says nothing is wasted, the other says most of it should be. Knowing which room you are in resolves most of the apparent contradiction.
 
 ## Specific sources
 
