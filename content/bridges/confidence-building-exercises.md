@@ -115,7 +115,7 @@ See `gift-giving`.
 
 Public speaking deserves its own note, because the standard advice is to calm down and the standard advice is wrong.
 
-`performance-state` describes the calibration performers actually aim for: nervous arousal *and* relaxed openness, together. Not the absence of activation. The physiological signature of fear and of excitement is largely the same — raised heart rate, shallow breath, heightened attention — and the difference is substantially in what you call it. Performers do not eliminate the arousal, because the arousal is the fuel. They stop labelling it as a problem.
+`performance-state` describes the calibration performers actually aim for: nervous arousal *and* relaxed openness, together. Not the absence of activation. The physiological signature of fear and of excitement is largely the same — raised heart rate, shallow breath, heightened attention — and the difference is substantially in what you call it. Performers do not eliminate the arousal, because the arousal is the fuel. They stop labelling it as a problem. The wider version of that argument — including why over-rehearsing a talk makes it more fragile rather than safer — is in [public speaking tips](/public-speaking-tips).
 
 Practically, before speaking: `first-line-drill` for the opening, so the first sentence exists before you need it. `no-backspace-scene` for the hedging habit, which is far more visible to an audience than nerves are. And rehearse the recovery rather than the perfect run — an audience forgives a stumble and remembers what you did next.
 

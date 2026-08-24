@@ -38,6 +38,8 @@ Improvisation is demanding in precisely the relevant sense. It asks a performer 
 
 This is also where the Individual Zone of Optimal Functioning fits. Yerkes-Dodson gives the shape of the curve; Hanin's work says the peak sits in a different place for each performer. One is the law, the other is the calibration, and a director who knows only the first will over-correct half the cast.
 
+The same correction applies off stage. The standard instruction before a talk is to calm down, which for a genuinely demanding task is advice aimed at the wrong side of the curve — [public speaking tips](/public-speaking-tips) works through what to do with the arousal rather than how to remove it.
+
 **The caveat is worth stating.** The 1908 experiments used mice learning a black-and-white discrimination under electric shock, and the inverted U as a general law of human performance is later inference rather than their result. The shape has held up broadly. The precise curve for one person doing one difficult thing has not been measured and probably cannot be.
 
 ## The adrenaline reframe

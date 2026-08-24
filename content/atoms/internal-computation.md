@@ -33,7 +33,7 @@ This is the **deer in headlights** failure mode. The brain is maxed out trying t
 
 ## Self-monitoring is the common case, not the whole of it
 
-Most people meet this under its ordinary name. Self-monitoring is watching your own performance while giving it — how am I doing, was that any good, do I sound like an idiot — and it is far and away the most frequent form internal computation takes, which is why the two words get used interchangeably.
+Most people meet this under its ordinary name. Self-monitoring is watching your own performance while giving it — how am I doing, was that any good, do I sound like an idiot — and it is far and away the most frequent form internal computation takes, which is why the two words get used interchangeably. It is also why speaking to a room feels harder than speaking to a person: a hundred faces supply the monitor with a continuous stream of material to work on, and the capacity it spends is subtracted from the talk. [Public speaking tips](/public-speaking-tips) is largely about starving that process rather than reassuring it.
 
 They are not the same size. Internal computation is the whole category of processing that happens inside your head while something is happening outside it, and self-monitoring is one member. Planning your next line is internal computation and is not self-directed at all. Tracking whether the scene is working, mentally checking a fact somebody established four minutes ago, deciding whether to enter — all of it runs on the same capacity and none of it is about you.
 

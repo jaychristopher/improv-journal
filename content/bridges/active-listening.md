@@ -94,7 +94,7 @@ So the list is not wrong. It is ordered by visibility, and the invisible item is
 
 ### What are the three A's of active listening?
 
-Attitude, attention and adjustment — a teaching framework common in public speaking courses. Attitude is approaching with an open mind, attention is the deliberate effort that separates listening from hearing, and adjustment is adapting to the speaker's style as you go.
+Attitude, attention and adjustment — a teaching framework common in public speaking courses. Attitude is approaching with an open mind, attention is the deliberate effort that separates listening from hearing, and adjustment is adapting to the speaker's style as you go. It runs in the other direction too. A speaker who cannot read what a room is doing is failing at adjustment rather than at delivery, which is where [public speaking tips](/public-speaking-tips) begins.
 
 Of the three, adjustment is the one worth keeping and the one usually skipped. It names something real: the listening that works for a person delivering bad news quickly is not the listening that works for somebody circling a subject they have not decided to raise yet. Reading which of those you are in, and changing what you do, is a genuine skill.
 

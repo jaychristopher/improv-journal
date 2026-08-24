@@ -32,6 +32,8 @@ Improvisers make an offer → audience responds (laughter, silence, lean-in, res
 
 Playing "at" treats the audience as targets for jokes — the performer pushes energy outward and waits for validation. Playing "with" treats them as scene partners — the performer includes them in the discovery. The practical difference is in attention direction: performers playing "with" monitor audience energy and adjust; performers playing "at" execute regardless of response.
 
+A speaker addressing a room is inside the same loop and usually does not know it. Delivering a prepared deck regardless of what the room is doing is playing at them, and the adjustment is the one [public speaking tips](/public-speaking-tips) sets out as speaking to people rather than at a room.
+
 ## The suggestion as social contract
 
 Asking for a suggestion establishes: (1) this is being made up now, (2) you have agency in what happens, (3) we are in this together. The suggestion creates investment — the audience has skin in the game. Violating the suggestion breaks the contract and the audience feels it.

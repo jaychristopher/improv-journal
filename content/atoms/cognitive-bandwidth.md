@@ -32,7 +32,7 @@ Under overload, the system doesn't crash — it **degrades**. Channels start dro
 
 The consequence: every cognitive task an improviser adds — planning the next line, monitoring their own performance, evaluating whether the last move was good — directly subtracts from their ability to receive what is happening now. This is why beginners struggle: they are running too many processes on too little hardware. Expertise doesn't add bandwidth. It reduces the processing cost of basic operations, freeing capacity for reception and response.
 
-The same arithmetic explains a frustration that has nothing to do with performing. [Being articulate](/how-to-be-more-articulate) is not a vocabulary problem but a question of how many processes are running while you speak.
+The same arithmetic explains a frustration that has nothing to do with performing. [Being articulate](/how-to-be-more-articulate) is not a vocabulary problem but a question of how many processes are running while you speak. Standing in front of a room is the same arithmetic under a louder name: most of what gets called stage nerves is capacity spent monitoring yourself rather than delivering the thing, which is the constraint running underneath [public speaking tips](/public-speaking-tips).
 
 For the full treatment of bandwidth as a concept — individual vs. shared, emotional bandwidth, recovery mechanisms, the cognitive science backing — see the `bandwidth` definition atom.
 
