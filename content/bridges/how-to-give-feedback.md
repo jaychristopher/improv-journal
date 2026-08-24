@@ -10,11 +10,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 73
 serp_verdict: authority
 serp_top10_dr: [92, 92, 95, 73, 80, 91, 99]
-entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive]
+entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-supportive, be-thankful]
 entry_path: teaching-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Give Feedback That Actually Changes Behavior
@@ -128,6 +128,48 @@ When you must give post-hoc feedback, resist the temptation to be comprehensive.
 "The main thing I'd change: when you present data, lead with the conclusion, then show the evidence. Your current structure builds to the conclusion, which means people are uncertain about your point for the first three minutes. Want to try restructuring the first slide right now and see how it feels?"
 
 One note. Specific. Actionable. Followed by immediate practice.
+
+## Questions People Ask About Giving Feedback
+
+### Does the feedback sandwich work?
+
+Badly, and its popularity is not evidence that it does.
+
+The mechanism fails on both sides. The praise is discounted, because anybody who has been sandwiched twice learns that the opening compliment is a delivery vehicle and stops hearing it as praise. And the criticism is softened past the point of clarity — the recipient leaves genuinely unsure whether they were told to change something, which is the single most common outcome of a well-intentioned feedback conversation.
+
+It is worth knowing how weak the ground under all feedback advice is. Kluger and DeNisi (1996), reviewing 607 effect sizes across more than 23,000 observations in *Psychological Bulletin*, found that feedback improved performance on average — and that **over a third of feedback interventions made performance worse**. Not neutral. Worse. That result is the strongest argument for the approach on this page: the default assumption that telling somebody about a problem helps is, about a third of the time, wrong.
+
+### What is the difference between criticism and constructive criticism?
+
+In practice, whether it names something the person can act on before the next attempt.
+
+"That presentation was too long" is a verdict. "You spent four minutes on the methodology before anybody knew what the project was — put the conclusion first" is the same observation with a next action attached. The first invites agreement or defensiveness; the second can be done on Thursday.
+
+The word "constructive" gets used to mean "delivered kindly", and tone is not what makes the difference. A blunt note that specifies a behaviour is more constructive than a gentle one that specifies a feeling, and the gentle version is far more likely to leave somebody anxious without leaving them able.
+
+### What is the SBI framework, and is it better?
+
+Situation, Behavior, Impact — from the Center for Creative Leadership. You name when and where it happened, what the person actually did, and what followed. "In yesterday's client call, you answered the pricing question before Sam had finished; he didn't raise the discount he'd prepared."
+
+It is a real improvement on the sandwich because it forces specificity and removes character judgement — the observation attaches to an action rather than to a person. It is the best of the common frameworks and the one to use if you use one.
+
+Its limit is the one this page is built around. SBI is still a way of *describing* a gap, and describing a gap only helps when the gap was caused by not knowing. Where the cause is habit or load, `side-coaching` during the work beats any structured account of it afterwards.
+
+### How do you give feedback to somebody more senior than you?
+
+Ask before you deliver, and frame it as data rather than as assessment.
+
+"Can I tell you something I noticed in that meeting?" costs one sentence and changes the transaction entirely — it makes receiving optional, which is what makes it safe to accept. Then describe what you observed and its effect on you specifically, because your own experience is the one thing you have unambiguous standing to report.
+
+What does not work upward is evaluation. A junior person telling a senior one that their approach is wrong is making a claim about competence; a junior person saying that half the room stopped contributing after a particular remark is reporting something the senior person could not see. The second is almost always both more useful and more welcome.
+
+### How do you receive feedback well?
+
+Say thank you and ask one clarifying question. Everything else can wait.
+
+The urge to explain is nearly irresistible and almost always misread. Context that is genuinely relevant still arrives as defence, and the person who offered the note quietly concludes it is not worth doing again — which costs you far more than the individual note was worth.
+
+The one question worth asking is for a specific instance: "when did you notice that?" It converts a general impression into something you can actually examine, and it signals that you intend to use the note rather than survive it. `be-thankful` is the underlying move, and it is genuinely strategic as well as gracious: what you are protecting is the supply of future feedback, which is worth more than winning any particular exchange.
 
 ## The Honest Caveat
 
