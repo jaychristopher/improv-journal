@@ -153,3 +153,5 @@ It is far more common than the people experiencing it believe, which is itself p
 The mechanics above explain most of it without anything being wrong with the person. Friendship requires accumulated hours with repeated contact, and an adult life can easily be organised so that those conditions never occur — a demanding job, a move, small children, or simply a few years in which the weekly things fell away one at a time.
 
 What matters practically is that this is a conditions problem rather than a likeability problem, and conditions can be rebuilt at any age. If the absence is accompanied by persistent low mood or by finding contact itself exhausting rather than merely unarranged, that is a different question and worth taking to somebody qualified rather than to a page about improv.
+
+**Sources cited:** Hall (2019), *Journal of Social and Personal Relationships*.

@@ -195,4 +195,4 @@ The best feedback is the note you didn't have to give.
 
 Feedback is one instrument among several, and the others mostly belong to whoever is running the room. On the rest of that job — coaching without taking the work over, and what changes when you are responsible for someone's development rather than their output — see [how to be a better leader](/how-to-be-a-better-manager).
 
-**Sources cited:** Edmondson (1999), *Administrative Science Quarterly*. Buckingham & Coffman (1999), *First, Break All the Rules*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack. Halpern, Close & Johnson (1994), *Truth in Comedy*.
+**Sources cited:** Kluger and DeNisi (1996), *Psychological Bulletin*. Edmondson (1999), *Administrative Science Quarterly*. Buckingham & Coffman (1999), *First, Break All the Rules*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack. Halpern, Close & Johnson (1994), *Truth in Comedy*.

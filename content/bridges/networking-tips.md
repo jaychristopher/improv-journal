@@ -182,3 +182,5 @@ The counter-instinct is strong because ten conversations feels like more work an
 **Handing something over without controlling it.** `gift-giving` has one person offer an undefined object and the other name it and find its value. It trains both halves of what makes someone good in a room: offering without steering, and treating what arrives as worth having.
 
 Neighbouring guides: [how to make small talk](/how-to-make-small-talk) for the opening itself, [how to be more charismatic](/how-to-be-more-charismatic) for the presence side, and [icebreaker questions for work](/icebreaker-questions-for-work) if you are the one running the event.
+
+**Sources cited:** Granovetter (1973), *American Journal of Sociology*. Rajkumar et al. (2022), *Science*.

@@ -159,3 +159,5 @@ The constraint is time rather than character, which is the same finding as the h
 **Supporting rather than performing.** `yes-and-chain` requires accepting the previous statement and adding to it, with no reframes and no "yes, but".
 
 For the related problems: [how to be a good listener](/how-to-be-a-good-listener) for the receiving half in detail, and [how to make friends as an adult](/how-to-make-friends-as-an-adult) if the problem is having fewer friends rather than being a worse one.
+
+**Sources cited:** Dunbar's layered model of social network size.

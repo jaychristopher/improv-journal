@@ -137,3 +137,5 @@ The person you're talking to will feel it immediately. They won't call it charis
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind presence, commitment, and status dynamics, explore the [Improv for Life](/paths/improv-for-life) path.*
 
 _The two halves of this in practice: [how to make small talk](/how-to-make-small-talk) for the opening, and [how to read the room](/how-to-read-the-room) for knowing what the room needs before you give it._
+
+**Sources cited:** Antonakis, Fenley and Liechti (2011), *Academy of Management Learning & Education*.

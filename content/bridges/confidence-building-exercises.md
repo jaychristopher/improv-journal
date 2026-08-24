@@ -196,3 +196,5 @@ That is worth knowing in advance, because the usual conclusion after the first t
 **Expect the feeling to lag.** You will act more readily for some time before you feel any different. That order is not a sign it is failing; it is the mechanism.
 
 For the wider argument, see [how to be more confident](/how-to-be-more-confident) and [how to overcome fear of failure](/how-to-overcome-fear-of-failure). For the stage-specific version, see [fear of public speaking](/fear-of-public-speaking).
+
+**Sources cited:** Carney, Cuddy and Yap (2010), *Psychological Science*. Ranehill et al. (2015), *Psychological Science*. Carney (2016), public statement disavowing the finding.

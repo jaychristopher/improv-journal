@@ -156,3 +156,5 @@ _For the drills: [public speaking and confidence exercises](/confidence-building
 _For the fear of judgment underneath it, rather than the speaking situation: [how to stop caring what people think](/how-to-stop-caring-what-people-think)._
 
 _Once the fear is handled, the craft is a separate problem: [public speaking tips for the parts you cannot rehearse](/public-speaking-tips)._
+
+**Sources cited:** R. H. Bruskin Associates (1973), reported in *The Book of Lists* (1977). Dwyer and Davidson (2012), *Communication Research Reports*.

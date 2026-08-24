@@ -221,4 +221,4 @@ If those things aren't changing, the activity was entertainment. Entertainment i
 
 _This article draws on the improv knowledge graph at [The Physics of Connection](/). For the structural model of trust and connection that underpins these exercises, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Safety in the Room](/practice/techniques/safety-in-the-room) and [Yes, And](/practice/techniques/yes-and)._
 
-**Sources cited:** Edmondson (1999), _Administrative Science Quarterly_. Klein et al. (2009), _Small Group Research_. Duhigg (2016), "What Google Learned From Its Quest to Build the Perfect Team," _New York Times_. Johnstone (1979), _Impro_. Halpern, Close & Johnson (1994), _Truth in Comedy_.
+**Sources cited:** Edmondson (1999), _Administrative Science Quarterly_. Klein et al. (2009), _Small Group Research_. Google Project Aristotle (2015). Duhigg (2016), "What Google Learned From Its Quest to Build the Perfect Team," _New York Times_. Johnstone (1979), _Impro_. Halpern, Close & Johnson (1994), _Truth in Comedy_.

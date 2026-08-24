@@ -327,3 +327,5 @@ The questions are the easy part. Almost everything that decides whether you get 
 The other half of this — what to do once somebody has actually answered — belongs elsewhere and is most of the work: [how to be a good friend](/how-to-be-a-good-friend) for what support is and why advice so often costs you the next disclosure, and [how to be a good listener](/how-to-be-a-good-listener) for the receiving mechanics in detail. [Team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
 
 _For the deeper end specifically, and what has to be true before any of it works: [deep questions to ask](/deep-questions-to-ask). For the lighter end, where the point is that the answering itself is enjoyable: [fun questions to ask friends](/fun-questions-to-ask-friends)._
+
+**Sources cited:** Aron et al. (1997), *Personality and Social Psychology Bulletin*.

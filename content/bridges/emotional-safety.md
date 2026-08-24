@@ -179,3 +179,5 @@ Emotional safety compounds. Each successful risk-taking experience raises the ce
 The same is true of a team, and of a marriage. A group with deep emotional safety can navigate conflicts, absorb failures, challenge each other honestly, and adapt to change — because the foundation is strong enough to hold all of it. A team without it looks functional but operates at a fraction of its potential, with everyone performing a careful version of themselves instead of bringing the real one.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind trust, ensemble dynamics, and creating conditions for group excellence, explore the [Improv for Teams](/paths/improv-for-teams) path.*
+
+**Sources cited:** Edmondson (1999), *Administrative Science Quarterly*.

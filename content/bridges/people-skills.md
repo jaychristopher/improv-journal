@@ -140,4 +140,4 @@ _This article draws on the improv knowledge graph at [The Physics of Connection]
 
 Most of this is practised rather than learned, and the practice needs material. The [questions to ask friends](/questions-to-ask-friends) collection is selected for questions that go somewhere, which is the difference between an exchange and an interrogation.
 
-**Sources cited:** Spolin (1963), _Improvisation for the Theater_. Johnstone (1979), _Impro_. Watzlawick et al. (1967), _Pragmatics of Human Communication_. Mehrabian (1971), _Silent Messages_. Kahneman (1973), _Attention and Effort_.
+**Sources cited:** Cutlip and Center (1952), *Effective Public Relations*. Spolin (1963), _Improvisation for the Theater_. Johnstone (1979), _Impro_. Watzlawick et al. (1967), _Pragmatics of Human Communication_. Mehrabian (1971), _Silent Messages_. Kahneman (1973), _Attention and Effort_.

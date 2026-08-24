@@ -174,3 +174,5 @@ Assertiveness isn't about dominating a room or winning a negotiation. It is abou
 Improv performers train this because scenes require constant status adjustment. A scene where both players are high-status is a power struggle. A scene where both are low-status is a puddle. The art is in the movement — raising, lowering, matching, complementing. The same art applies to every conversation you'll ever have.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind status dynamics, commitment, and physical presence, explore the [Improv for Life](/paths/improv-for-life) path.*
+
+**Sources cited:** Rudman (1998), *Journal of Personality and Social Psychology*. Rudman and Glick (2001), *Journal of Social Issues*. Amanatullah and Morris (2010), *Journal of Personality and Social Psychology*.
