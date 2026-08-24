@@ -12,7 +12,7 @@ entry_atoms: [active-listening, yes-and, offers, commitment, be-present]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Keep a Conversation Going Without More Topics
@@ -110,6 +110,48 @@ The practical version is that your next line should come from their last one. No
 - **Ask about the specific, not the general.** "How was the move?" is general and gets "fine". "What made it *finally*?" is specific and gets a story.
 - **Return an offer with your own.** If you answer, add something. A reply that ends cleanly is a dead end however friendly it was.
 - **Sit with something before resolving it.** If they raise something real, stay in it one beat longer than is comfortable. Most people solve too early because the discomfort is theirs, not the speaker's.
+
+## Questions People Ask About Keeping a Conversation Going
+
+### What do you do when the conversation goes silent?
+
+Wait about three seconds longer than is comfortable, then go backwards rather than forwards.
+
+Most people treat a pause as a failure and reach for a new topic, which is the move that guarantees the next pause — a fresh subject has no shared history in it, so it has to be built from nothing all over again. The pause is usually not empty. It is the other person deciding whether to say the larger version of what they just said, and filling it takes that option away from them.
+
+If it genuinely needs rescuing, go back into something already said rather than introducing something new. "You mentioned earlier that you nearly didn't come — what was that about?" works because the material is already there and returning to it signals that you were listening, which a new topic never does.
+
+### How do you keep a text conversation going?
+
+By reducing how often you reply, not by replying better.
+
+Text removes almost everything the three skills above operate on — tone, timing, the face that tells you a subject landed — and it adds a trap the spoken version does not have: both people can see how long the other took. That turns an exchange into a performance with a scoreboard, which is why text conversations so often feel like work when the same two people talk easily in a room.
+
+What still transfers is building rather than redirecting. Answer the thing they actually asked, add one specific detail they could pick up, and stop. What does not transfer is volume: the single most common text failure is sending three messages to somebody's one, which reads as pressure regardless of how interesting they are.
+
+If it matters, move it. Text is a poor medium for the thing you are trying to do and an excellent one for arranging to do it properly.
+
+### How do you keep a conversation going with someone you have just met?
+
+Ask about the situation you are both in rather than about them.
+
+A stranger has no reason to hand you personal material and every reason to give you the polished version, so questions aimed at them — what do you do, where are you from — produce the answers they have given four hundred times. Questions aimed at the shared present produce something unrehearsed, because nobody has a prepared line about this queue, this venue, or how they came to be at this specific thing.
+
+`offers` is the useful frame: the room is full of material both of you can see, and using it costs neither of you any exposure. Once two or three exchanges have gone well, the personal questions land completely differently — the same question that was an interview at minute one is interest at minute six.
+
+### How do you end a conversation without it being awkward?
+
+Say the true reason and give it a shape. "I'm going to get another drink — this was good, I want to hear how that turns out." The awkwardness comes from pretending, not from leaving.
+
+It is worth saying plainly that not every conversation should be kept going. A great deal of advice on this topic reads as though duration were the goal, and it is not — a good exchange that ends while both people still have energy is a better outcome than a long one that decayed. The person who leaves first while it is still working is usually the one the other person is pleased to see next time.
+
+### Does this work if you are shy or introverted?
+
+Better, in fact, and the reason is structural rather than encouraging.
+
+Every technique on this page moves the work away from having interesting things to say and towards noticing what the other person offered. That is a redistribution from a skill extroverts tend to have towards one introverts frequently already have and do not count — most people who describe themselves as bad at conversation are describing a shortage of *output*, not of attention.
+
+What genuinely differs is capacity. `be-present` is expensive, group settings cost more than one-to-one, and running out after ninety minutes is a real limit rather than a failure of technique. The practical version is to pick the conversation rather than the room: one person, sideways rather than face to face, and a reason to leave that you arranged in advance.
 
 ## How to Practise It
 
