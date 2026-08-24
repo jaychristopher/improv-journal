@@ -114,6 +114,8 @@ export interface AtomFrontmatter {
    * also be explained in the prose — see the aliases guard.
    */
   aliases?: string[];
+  /** The named entity this atom is about — see BridgeFrontmatter.subject. */
+  subject?: PageSubject;
   external_links?: ExternalLink[];
   work?: CitedWork; // only on `reference` atoms
   /**

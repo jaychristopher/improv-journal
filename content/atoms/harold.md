@@ -5,6 +5,13 @@ type: format
 status: draft
 tags: [formats, longform, structure, close]
 how_to_play: "One suggestion becomes an opening, then three unrelated two-person scenes, a group game, and second and third beats that revisit and heighten the worlds the first beat found."
+subject:
+  type: CreativeWork
+  name: "The Harold"
+  description: "Long-form improv format developed at ImprovOlympic in the 1960s-80s, structured as an opening, three scene beats and group games."
+  sameAs:
+    - "https://en.wikipedia.org/wiki/Harold_(improvisation)"
+    - "https://www.wikidata.org/wiki/Q5659853"
 links:
   - { id: beats, relation: extends }
   - { id: opening, relation: extends }

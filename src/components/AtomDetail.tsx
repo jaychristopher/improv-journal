@@ -163,6 +163,7 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
         datePublished={fm.created}
         dateModified={fm.updated}
         eyebrow={eyebrow}
+        subject={fm.subject}
       />
       {/* Context banner for Google-landing users */}
       {primaryThread && primaryPath && (

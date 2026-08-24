@@ -5,6 +5,12 @@ how_to_play: "Two teams play short improvised challenges head to head, scored by
 type: format
 status: draft
 tags: [formats, shortform, competition, audience-interaction]
+subject:
+  type: CreativeWork
+  name: "Theatresports"
+  description: "Competitive improv format created by Keith Johnstone in Calgary in 1977, performed under licence in more than thirty countries."
+  sameAs:
+    - "https://en.wikipedia.org/wiki/Theatresports"
 links:
   - { id: harold, relation: contrasts }
   - { id: audience-relationship, relation: requires }
@@ -23,7 +29,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-04-09"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience. The format that turned improvisation into a spectator sport. Originated at Loose Moose Theatre, Calgary, 1977.
