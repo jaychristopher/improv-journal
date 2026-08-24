@@ -10,7 +10,7 @@ status: seed
 atoms: [reality-construction, systemic-health-indicators, systemic-collapse-modes, irreversibility, shared-reality-fragility]
 tags: [synthesis, beyond-stage, meta, systems-thinking]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Let's name what we've been building toward.
@@ -19,11 +19,17 @@ Five principles. Accept what's offered. Stay in the present moment. Treat surpri
 
 Improv is not, at its core, about comedy. Comedy is a byproduct — what happens when shared reality is humming and two people are building freely. The actual discipline is something more fundamental: **reality construction**. Two independent minds, with no shared blueprint, building a coherent world in real time under the irreversible flow of time. That's an engineering problem. And the five principles are the engineering specs.
 
+## You already do this every day
+
 Here's why this matters beyond the stage: you already do this. Every day. Every conversation is an improv scene. There's no script for a first date, a job interview, a fight with your best friend, a bedtime conversation with your kid. You're building shared reality in real time, under the same constraints — irreversible time, limited attention, fragile shared state, continuous signaling. The physics are identical. The stakes are just different.
 
 Now that you have the vocabulary, you can diagnose what's happening when connection works — and when it fails.
 
+## How to tell it is working
+
 **When it's working,** you'll notice three things. The world accumulates: details from ten minutes ago still matter, you're building on what came before, the conversation gets richer over time instead of resetting. The shared state is coherent: both people are in the same scene, tracking the same emotional reality, without having to negotiate it explicitly. And there's mutual recognition: the felt sense that the other person is actually with you, actually receiving your signal, actually building alongside you.
+
+## The three collapse modes
 
 **When it's failing,** you'll see one of three collapse modes.
 

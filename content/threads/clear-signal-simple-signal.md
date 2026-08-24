@@ -10,10 +10,12 @@ status: seed
 atoms: [be-honest, performing-cleverness, commitment, be-simple, overcomplication, continuous-signaling, emotional-honesty-scene, one-word-scene]
 tags: [principles, authenticity, bandwidth, clarity]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 So far we've talked about *receiving* — accepting offers, staying present, integrating surprises. Now we need to talk about *sending*. Because you're always transmitting, whether you intend to or not. The question is: what kind of signal are you putting out?
+
+## Two scenes: one honest, one clever
 
 Watch two scenes.
 
@@ -29,13 +31,15 @@ The first scene is two people doing their taxes. The second scene has time trave
 
 The principle: **say what is true in the scene, clearly, without distortion.**
 
+## Clarity is a transmission problem, not a virtue
+
 This isn't a moral instruction. It's a transmission quality issue. When you're genuinely scared, your partner receives a clear signal — *he's scared* — and can build on it. When you're *performing* scared while winking at the audience to show you know it's silly, the signal fractures. Your partner doesn't know if you're scared or joking. The audience can smell the fake. Shared state coherence drops.[^1]
 
 Think about how often this happens in real life. Someone asks how you're doing and you say "fine" in a tone that clearly means not fine. You've sent a contradictory signal — the word says one thing, the body says another. Your partner now has to decode which channel to trust. That decoding costs bandwidth and creates ambiguity. Compare it to: "Honestly? I'm having a rough day." Clear signal. Your partner knows exactly where they are and what to do with it.
 
 Honesty gives your partner something solid to grab. Cleverness gives them nothing. You can't build on a joke that's aware it's a joke. Irony is a dead end — it acknowledges the scene without advancing it. But a genuine emotion, fully committed to, is infinitely buildable because it's grounded in something real.[^2]
 
----
+## The signal also has to be simple
 
 Now: even if the signal is clear, it also needs to be *simple*.
 

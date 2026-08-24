@@ -5,10 +5,12 @@ status: seed
 atoms: [yes-and, game-of-the-scene, status, presence, editing, offers, heightening, be-present, commitment, discovery]
 tags: [traditions, comparison, counter-positions, research]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 There is no single "improv." There are at least five major traditions, each with distinct philosophies, and they disagree on fundamental questions. Understanding where they diverge — and why — is what separates shallow citation from real knowledge of the art form.
+
+## The five traditions
 
 **The five traditions:**
 - **[Johnstone](/traditions/johnstone)** (Theatresports, Loose Moose) — Story-first. Status as the engine. Spontaneity through surrender.
@@ -16,6 +18,8 @@ There is no single "improv." There are at least five major traditions, each with
 - **[Close/Halpern](/traditions/close)** (iO, the Harold) — Group mind. Connections across scenes. Improv as spiritual practice.
 - **[UCB](/traditions/ucb)** (Upright Citizens Brigade) — Game-first. Pattern recognition and heightening. Comedy as the goal.
 - **[Annoyance/TJ & Dave](/traditions/annoyance)** — Commitment-first. Honest behavior. Trust the relationship; game emerges or it doesn't.
+
+## Where they disagree
 
 **Where they disagree:**
 

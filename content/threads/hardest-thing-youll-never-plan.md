@@ -10,10 +10,12 @@ status: seed
 atoms: [be-present, active-listening, internal-computation, cognitive-bandwidth, be-thankful, judgment, last-word-response, gift-giving]
 tags: [principles, presence, cognition, trust]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Accepting what your partner gives you is the first principle. But it assumes you actually *heard* what they gave you. And that turns out to be the harder problem.
+
+## Trading the live feed for a recording
 
 Picture this. You're in a scene. Your partner says they love pizza. Your brain immediately starts scrolling: *pizza, okay — Italy? Chicago? A joke about pineapple?* You're scanning your mental files for the clever response. And while you're doing that, your partner has kept talking. They've said the pizza tastes like poison. They've shifted from casual to frightened. But you missed all of it, because you were busy planning.
 
@@ -25,11 +27,13 @@ This is the bandwidth problem in action. Your brain can listen, or it can plan. 
 
 The principle: **what is happening right now takes priority over what you think should happen next.**
 
+## Why trust is the hard part
+
 This requires something that sounds simple and is actually terrifying: trust. You have to trust that if you arrive at your turn with no prepared response — just having fully listened — something will come. That the act of truly receiving what your partner said will generate a response more alive than anything you could have pre-loaded. This is the leap of faith at the center of all improv, and honestly, at the center of all real conversation.[^2]
 
 **Try this.** With a partner, have a conversation where your first word must be the last word they said. You literally cannot pre-plan because you don't know the constraint until their final syllable. Notice what happens to your attention. Notice how impossible it is to drift.[^3]
 
----
+## When something happens you did not plan
 
 Now: what happens when you *are* present, fully listening, not planning — and your partner does something you didn't expect? Something that feels like a mistake?
 

@@ -10,10 +10,12 @@ status: seed
 atoms: [be-positive, yes-and, negation, blocking, offers, yes-and-chain]
 tags: [principles, fundamentals, show-dont-tell]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Let's watch a scene break.
+
+## Watching a scene break
 
 Two improvisers are on stage. The first one points a finger at the second and shouts: *"Freeze, dirtbag. I have a gun."*
 
@@ -23,6 +25,8 @@ Feel that? The air just left the room. The scene is dead. And it's worth underst
 
 Here's what happened at the systems level. One person established a reality: *there is a gun*. The other person rejected it: *no there isn't*. Now the shared world is corrupted. Is there a gun or not? The audience doesn't know. One player is in a cop drama; the other is in a documentary about fingers. The interaction has nowhere to go because the two people are no longer in the same universe.
 
+## The same opening, received
+
 Now let's watch it work.
 
 Same opening. *"Freeze, dirtbag. I have a gun."*
@@ -30,6 +34,8 @@ Same opening. *"Freeze, dirtbag. I have a gun."*
 The second player's eyes widen. *"The gun I gave you for Christmas — you kept it."*
 
 Instantly alive. The gun is real. And now it has a history. There's a relationship — these people know each other. There's emotion — surprise, maybe betrayal, maybe dark humor. There's a scene. All from a single choice: accept what your partner created and add to it.
+
+## What "Yes, And" actually means
 
 This is the principle improvisers call "Yes, And." You've probably heard the phrase. It's become a corporate buzzword, a therapy concept, a LinkedIn post. But stripped of the cliché, it's an engineering rule: **accept incoming data as valid and extend it forward.**
 
