@@ -9,7 +9,7 @@ links:
   - { id: physicality, relation: illustrates }
   - { id: space-work, relation: contrasts }
 external_links:
-  - { label: "Amazon", url: "https://amazon.com/dp/1513615858" }
+  - { label: "Open Library", url: "https://openlibrary.org/isbn/1513615858" }
 description: "Overlie's own account of the Six Viewpoints, published four decades after she began teaching them and eleven years after the adaptation most people read."
 sources: []
 work:

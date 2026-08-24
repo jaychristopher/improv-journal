@@ -12,7 +12,7 @@ links:
   - { id: montage, relation: illustrates }
 external_links:
   - { label: "Website", url: "https://jimmycarrane.com" }
-  - { label: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/improv-nerd-with-jimmy-carrane/id587855360" }
+  - { label: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/improv-nerd-with-jimmy-carrane/id547986680" }
   - { label: "Spotify", url: "https://open.spotify.com/show/0sSFAmOyOBBOqJCVlJBFlH" }
 sources: []
 work:
@@ -20,7 +20,7 @@ work:
   authors: ["Jimmy Carrane"]
   name: "Improv Nerd"
 created: "2026-04-05"
-updated: "2026-08-21"
+updated: "2026-08-24"
 ---
 
 **Jimmy Carrane. *Improv Nerd* podcast & jimmycarrane.com blog. Ongoing (~290+ episodes).**

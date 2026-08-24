@@ -12,14 +12,15 @@ links:
   - { id: accepting-the-offer, relation: illustrates }
   - { id: initiation, relation: illustrates }
 external_links:
-  - { label: "Amazon (Kindle)", url: "https://amazon.com/dp/B01F2IS2XY" }
+  - { label: "Amazon", url: "https://amazon.com/dp/0982625723" }
 sources: []
 work:
   type: Book
   authors: ["Will Hines"]
   name: "How to Be the Greatest Improviser on Earth"
-  publisher: "Self-published"
+  publisher: "Pretty Great Publishing"
   published: "2016"
+  isbn: "0982625723"
 created: "2026-04-04"
 updated: "2026-08-22"
 ---
