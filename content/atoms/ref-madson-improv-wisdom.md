@@ -13,7 +13,7 @@ links:
   - { id: be-brave, relation: illustrates }
   - { id: be-changeable, relation: illustrates }
 external_links:
-  - { label: "Amazon", url: "https://amazon.com/dp/0307341550" }
+  - { label: "Amazon", url: "https://amazon.com/dp/1400081882" }
 sources: []
 work:
   type: Book
@@ -21,7 +21,7 @@ work:
   name: "Improv Wisdom: Don't Prepare, Just Show Up"
   publisher: "Bell Tower"
   published: "2005"
-  isbn: "0307341550"
+  isbn: "1400081882"
 created: "2026-04-04"
 updated: "2026-08-22"
 ---
