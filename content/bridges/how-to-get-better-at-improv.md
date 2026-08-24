@@ -120,4 +120,18 @@ The improvisers who push through the plateau are the ones who:
 
 Del Close told his students: "You're not good enough yet. Keep going." That's not cruelty. It's respect — treating the art form as something worth the patience it demands.
 
+## How Often to Practise, and How Long It Takes
+
+Two questions everybody asks and most improv advice answers with encouragement rather than anything usable.
+
+**Frequency beats duration, and it is not close.** Weekly is the floor, because the state you are training decays between sessions faster than the knowledge does. Somebody doing one class a week improves faster than somebody doing an intensive weekend every three months, even though the second person has spent more hours — because half of each intensive goes on recovering ground lost since the last one. If you can only do one thing, make it regular rather than long.
+
+**Count scenes, not hours.** The unit of improvement is the rep, and classes differ enormously in how many they give you. A three-hour class where you are in four scenes is weaker practice than ninety minutes where you are in twelve, and the longer one usually feels more serious. Before paying for a course it is worth asking how much stage time a student actually gets, which is a question good teachers are happy to answer and evasive ones are not.
+
+**Watching and reading are not reps.** Both are genuinely useful — watching good improvisers is how you learn what is possible, and this site exists on the premise that reading about it helps. Neither one trains the thing that fails under pressure, which is producing a response before you have time to evaluate it.
+
+**How long it takes has no honest answer in months**, because it depends entirely on reps and almost not at all on time elapsed. What can be offered is a set of markers, roughly in the order they arrive. You stop composing your next line while somebody else is speaking. You can start a scene without having an idea first. You stop tracking the audience mid-scene. You can say, afterwards, what a scene actually needed — which is the one that matters most, because from there you can practise deliberately instead of hoping.
+
+Anyone quoting you a number of months is describing their own experience, and their reps per week were not yours.
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For a structured diagnostic toolkit — specific failure patterns, their root causes, and targeted exercises — explore the [Self-Coaching Toolkit](/paths/self-coaching-toolkit) path.*
