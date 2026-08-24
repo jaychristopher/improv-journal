@@ -116,6 +116,40 @@ Two limits, and they are the reason most leadership advice fails quietly.
 
 For the mechanics of the conversations this implies, [how to have difficult conversations](/how-to-have-difficult-conversations) covers the harder end and [how to give feedback](/how-to-give-feedback) the routine one.
 
+## Questions Managers Actually Ask
+
+### What makes a good manager?
+
+Whether the team's output is better than the manager's own would have been — not equal to it, better, because several people made the choices rather than one. Almost everything else people list as a management virtue is downstream of that test or is a proxy for it. A manager who is organised, warm and available but whose team produces a slightly worse version of their own ideas is failing at the part that matters, and usually does not know it, because the work is fine and nobody complains.
+
+### How do you manage people who used to be your peers?
+
+The mistake is trying to keep the old relationship, which reads as a promise you will not be able to honour. Your `status` moved whether you wanted it to or not — the same joke now lands differently, and mild disapproval that used to be nothing now costs somebody their afternoon. The workable move is to be explicit about what changed, unglamorously, once, and then behave consistently. What people are actually watching for is not whether you have stayed the same person but whether you are predictable in the new role.
+
+### How do you know if you are micromanaging?
+
+Ask whether you would accept a different answer than your own. If the honest answer is no, you are not delegating and then supervising, you are running an audition for a conclusion you already reached — and the difference is legible from outside even when the words are identical. The other reliable signal is what you correct. Adjusting how something is done, when the outcome was fine, is the tell.
+
+### What do you do when nobody on the team disagrees with you?
+
+Treat it as information about the room rather than agreement about the idea. Unanimous rooms are usually reading the highest-status person present, which structurally is you, and `safety-in-the-room` is set by that person rather than declared by them. Inviting challenge does not fix it, because everybody is watching what happened the last time somebody took the invitation. Change what happens the next three times you are disagreed with, and let people update on their own schedule.
+
+### How do you manage someone more experienced than you?
+
+Stop supplying the answers, which you cannot do credibly anyway, and supply the thing they actually lack — context, air cover, a decision made on time. The improv version of this is `be-supportive`: your function is to make their work land, and that function does not require you to be better at the work than they are. The failure mode is compensating, where a manager who feels outmatched starts contributing technical opinions to prove they belong, and everybody privately marks the meeting down.
+
+### Can you be a good manager if you are introverted?
+
+Yes, and the trait people actually respond to is not extroversion but consistency. The parts of the job that matter here — noticing what somebody is doing well and saying so specifically, ending a discussion that has stopped improving, absorbing a disagreement without visible cost — do not require a large personality. What introverted managers tend to underestimate is how much interpretation people put on silence, since a manager who says nothing is not read as neutral but as unimpressed.
+
+### What should a new manager do in the first month?
+
+Less than they want to. The instinct is to demonstrate value by changing something, and the cost is that you spend your one period of genuine informational advantage — the weeks when people will explain things to you honestly, because you are new — on being seen to act. Ask what is broken and write the answers down. The one thing worth doing immediately is establishing that disagreement is survivable, because that is much easier to set up front than to repair later.
+
+### How do you give feedback that actually changes anything?
+
+By adjusting during the work rather than reviewing it afterwards. `side-coaching` — Spolin's method of calling the note while the exercise is still running — works because the person can act on it immediately, in the situation it applies to, rather than filing it as a judgment about themselves. Most workplace feedback fails not because it is unkind but because it arrives when the only available response is to feel something about it. The mechanics of the harder conversations are in [how to give feedback](/how-to-give-feedback).
+
 ## How to Practise It
 
 **Directing without taking over.** `directed-scene` puts you outside a scene, calling adjustments while it runs. It is side-coaching with the stakes removed, and it exposes very quickly whether your instinct is to redirect attention or to specify the outcome.
