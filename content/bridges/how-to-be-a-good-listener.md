@@ -12,7 +12,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Be a Good Listener (Not the Kind You Think)
@@ -30,6 +30,22 @@ Improv performers define listening as **tracking the full signal** — not just 
 This is what Viola Spolin, the mother of American improv, meant by "receiving": taking in the complete communication, not just the verbal content. The words are maybe 20% of the signal. The rest is emotional tone, physical behavior, pacing, silence, and context.
 
 You already do this naturally — with people you love, in conversations that matter, when you're not distracted. The skill isn't learning something new. It's removing the obstacles that prevent you from doing what you already know how to do.
+
+## The Qualities of a Good Listener, and Why That Is the Wrong Question
+
+Search for the qualities of a good listener and you get a personality: patient, empathetic, open-minded, non-judgemental. The list is not wrong so much as backwards. People are not good listeners because they are patient. They look patient because they are listening — the patience is a symptom, and trying to acquire it directly is like trying to acquire a temperature.
+
+It also leaves you nothing to do on Tuesday. A trait is not actionable. What is actionable is behaviour, and the signs of a good listener are observable from the other side of the conversation.
+
+- **Their next sentence contains yours.** The single most reliable sign, and the hardest to fake. Not agreement, not "mm" — a reply that could only have been made by somebody who heard the specific thing you said rather than the topic you said it about.
+- **They ask about the part you spent longest on.** Poor listeners ask about the part that is easiest to ask about, which is usually the last thing you mentioned. Good ones return to where you slowed down.
+- **They let a pause sit.** Without filling it, and without the visible waiting that is worse than filling it.
+- **They can be changed by what you said.** The conversation ends somewhere neither of you would have predicted. If someone leaves every exchange holding exactly the view they arrived with, they were not listening, whatever their face was doing.
+- **They do not tell you the equivalent story about themselves.** Not never — reciprocity is real — but not as the first move, and not as the main one.
+
+Nothing on that list is a personality trait, and none of it is what the standard advice trains. The behaviours most associated with listening in the popular account — sustained eye contact, nodding, reflecting back — are the ones covered further down under the two failures, because they are producible while composing your reply and therefore prove nothing.
+
+And the third question, how to improve listening skills, has a shorter answer than the plural suggests. There is one skill, which is where attention is placed. Everything else on any list is downstream of it.
 
 ## The Three Obstacles to Real Listening
 
