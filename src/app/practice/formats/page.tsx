@@ -8,7 +8,12 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Formats"),
+  // Search Console has this page surfacing only for long-form queries —
+  // "long form improv", "what is long form improv", "long form improv
+  // formats" — while the title said neither "long" nor "short". The page
+  // carries a section on exactly that question; the strongest signal on it
+  // just did not mention the subject.
+  title: pageTitle("Improv Formats: Long Form, Short Form and How to Choose"),
   description:
     "Long form and short form explained, every format from Harold to Armando, and how to choose one for the cast and the running time you actually have.",
   alternates: { canonical: "/practice/formats" },
@@ -72,7 +77,9 @@ export default async function FormatsPage() {
         ]}
       />
       <header className="mb-8">
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">Formats ({formats.length})</h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">
+          Improv Formats ({formats.length})
+        </h1>
         <p className="text-foreground/60 mt-2 mb-2">
           Performance structures — from 2-minute games to 60-minute shows.
         </p>
