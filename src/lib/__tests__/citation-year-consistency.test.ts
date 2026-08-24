@@ -74,4 +74,63 @@ describe("citation years", () => {
 
     expect(conflicts).toEqual([]);
   });
+
+  /**
+   * The check above only sees the `Name (Year)` form, and that is not the only
+   * way a year gets written down.
+   *
+   * team-building-activities said "A 2017 meta-analysis by Klein et al." in the
+   * body and "Klein et al. (2009)" in its sources line — one work, two years,
+   * on the site's largest team page. The first check could not see it because
+   * the year came before the name, which is exactly the shape the regex was
+   * built to skip. 2009 is correct; Crossref resolves it to "Does Team Building
+   * Work?" in Small Group Research.
+   *
+   * So this looks for a bare year standing near a name the site cites
+   * elsewhere. Years touching a parenthesis are ignored, because those are the
+   * tail of a `Name (Year)` construct and belong to the check above — without
+   * that exclusion a sources line reading "Atkinson (1957); Elliot & Church
+   * (1997)" reports itself as a conflict.
+   */
+  it("agree when the year is written before the name", () => {
+    const canonical = new Map<string, Set<string>>();
+    const files = markdownFiles(CONTENT);
+
+    for (const file of files) {
+      const body = fs.readFileSync(file, "utf-8").split("\n---\n").slice(1).join("\n---\n");
+      for (const match of body.matchAll(CITATION)) {
+        const name = match[1].replace(/^(Google's|Project)\s+/, "").trim();
+        if (!canonical.has(name)) canonical.set(name, new Set());
+        canonical.get(name)!.add(match[2]);
+      }
+    }
+
+    // A bare year, then up to 60 characters, then a capitalised surname.
+    const YEAR_FIRST =
+      /(?<![(\d])\b(1[89]\d\d|20\d\d)\b(?![)\d])([^.\n]{0,60}?)\b([A-Z][A-Za-z'-]+)/g;
+    const conflicts: string[] = [];
+
+    for (const file of files) {
+      const slug = path.basename(file, ".md");
+      const body = fs.readFileSync(file, "utf-8").split("\n---\n").slice(1).join("\n---\n");
+      for (const match of body.matchAll(YEAR_FIRST)) {
+        const [, year, , surname] = match;
+        // "(Atkinson, 1957; Elliot & Church, 1997)" is Author-Year style, where
+        // the year belongs to the name before it rather than the one after.
+        // Without this the second citation in any such list reports itself.
+        if (/,\s$/.test(body.slice(Math.max(0, match.index - 2), match.index))) continue;
+        for (const [name, years] of canonical) {
+          if (name.split(/\s+/)[0] !== surname) continue;
+          if (MULTI_WORK.has(name)) break;
+          if (!years.has(year)) {
+            conflicts.push(`${slug}: "${match[0].trim()}" vs ${name} (${[...years].join(", ")})`);
+          }
+          break;
+        }
+      }
+    }
+
+    expect(canonical.size).toBeGreaterThan(15);
+    expect(conflicts).toEqual([]);
+  });
 });

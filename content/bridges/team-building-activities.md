@@ -26,7 +26,7 @@ updated: "2026-08-23"
 
 Your company spent $4,000 on an escape room. Everyone had fun. People laughed, high-fived, maybe even hugged. On Monday, the same two people dominated every meeting, the quiet engineer still didn't push back on bad requirements, and the manager still cc'd everyone on passive-aggressive emails.
 
-This is the dirty secret of the team building industry: the activities work perfectly as entertainment and almost never as behavioral interventions. A 2017 meta-analysis by Klein et al. (_Small Group Research_) found that team building interventions had small-to-moderate effects on teamwork processes — and that most of those effects came from goal-setting and role-clarification exercises, not the fun stuff. The ropes courses and scavenger hunts? Negligible impact on how teams actually function.
+This is the dirty secret of the team building industry: the activities work perfectly as entertainment and almost never as behavioral interventions. A 2009 meta-analysis by Klein et al. (_Small Group Research_) found that team building interventions had small-to-moderate effects on teamwork processes — and that most of those effects came from goal-setting and role-clarification exercises, not the fun stuff. The ropes courses and scavenger hunts? Negligible impact on how teams actually function.
 
 The question isn't whether team building _feels_ good. It's whether Monday is different from Friday.
 
