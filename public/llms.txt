@@ -259,7 +259,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Theatresports](https://www.physicsofconnection.com/practice/formats/theatresports): Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience.
 - [Two-Person Longform](https://www.physicsofconnection.com/practice/formats/two-person-longform): Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support.
 
-## Failure modes and patterns (19)
+## Failure modes and patterns (20)
 
 - [Blocking](https://www.physicsofconnection.com/how-it-works/diagnosis/blocking): Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene.
 - [Bulldozing](https://www.physicsofconnection.com/how-it-works/diagnosis/bulldozing): The shadow of Be Supportive. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the...
@@ -280,6 +280,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Steering](https://www.physicsofconnection.com/how-it-works/diagnosis/steering): The shadow of Be Changeable. Steering is the subtle act of accepting your partner's offers on the surface while redirecting the scene toward your predetermined...
 - [Systemic Collapse Modes](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-collapse-modes): The warning lights. How shared reality falls apart.
 - [Systemic Health Indicators](https://www.physicsofconnection.com/how-it-works/diagnosis/systemic-health-indicators): The gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
+- [Wimping](https://www.physicsofconnection.com/how-it-works/diagnosis/wimping): Accepting an offer and adding nothing to it. Johnstone's term for the politest way to stop a scene, and the hardest failure to see from inside it, because...
 
 ## Reading list — the works this site cites (32)
 
