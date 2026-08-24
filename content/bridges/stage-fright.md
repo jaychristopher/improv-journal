@@ -89,6 +89,50 @@ Don't wait until you feel ready. You won't. Go.
 
 Del Close: _"Follow the fear."_ Keith Johnstone: the student hesitates not because they lack an idea, but to conceal the "inappropriate" ones that arrive uninvited. The hesitation IS the stage fright. The first move — any move — breaks it.
 
+## Questions People Ask About Stage Fright
+
+### What is the difference between stage fright and performance anxiety?
+
+Mostly which room you are in. Stage fright is the everyday name, performance anxiety is the term used clinically and in research, and they describe the same physiology — the difference is one of register rather than of kind.
+
+Where the terms do part is scope. Stage fright names the acute episode: the twenty minutes before, the first ninety seconds, the specific occasion. Performance anxiety is used for the broader pattern, including the weeks of dread beforehand and the avoidance that builds up around it.
+
+That distinction is worth keeping because the two respond to different things. An acute spike is what the protocol above is for. A pattern of anticipatory dread that shapes what you agree to do is a larger problem, and the section below on when this stops being ordinary applies to it.
+
+### Why does it peak just before you start and drop once you begin?
+
+Because the arousal is preparing you for something that has not arrived, and the moment it arrives your attention has somewhere to go.
+
+Waiting is the worst part of any performance and this is why: `performance-state` is fully engaged, the body is ready, and there is no task to spend it on. So it gets spent internally — on rehearsing, on scanning the audience, on monitoring your own hands. The instant you begin, the same capacity has an external job, and the sensations that were unbearable thirty seconds ago become almost unnoticeable.
+
+The practical consequence is that the goal is not to feel calm before starting. It is to shorten the gap. Performers who suffer least are usually the ones who arranged to have something to do in the final minute — a line to check, a person to speak to, a physical task — rather than standing still with it.
+
+### Do professional performers still get stage fright?
+
+Yes, including people who have done it for forty years, and the ones who say otherwise are mostly describing a changed relationship rather than an absent response.
+
+What changes with experience is not the physiology but its predictive value. Early on, the racing heart is read as a warning that something is about to go wrong. After enough performances where it arrived and nothing went wrong, it stops being consulted — it is still there and it no longer means anything.
+
+That is why "does it go away" is the wrong question to organise practice around. The reachable target is that the sensation becomes uninformative, and that only comes from performing while it is present.
+
+### Do beta blockers or a drink beforehand help?
+
+They do different things and only one of them is a serious question.
+
+Alcohol is the straightforwardly bad option. It reduces the feeling and degrades timing, judgement and recall — the three things a performance most depends on — and using it as a routine solution builds a dependence on being slightly impaired in order to be able to work.
+
+Beta blockers are a genuine medical question rather than a trick, and they are widely used: surveys of orchestral musicians have repeatedly put occasional use somewhere between a fifth and a third. They block the peripheral effects of adrenaline — tremor, racing heart, sweating — without sedating, which is why they appeal to players whose hands must be steady. The reported costs are real too: some performers describe feeling flat or less expressive, and singers and wind players in particular report interference.
+
+They are prescription medicines with contraindications, including asthma, and this is a conversation for a doctor rather than for a website about improv. What is worth saying here is that they remove a symptom and do nothing to the underlying appraisal, which is what the rest of this page is about.
+
+### Does more rehearsal reduce it?
+
+Up to a point, and past that point it can make things worse.
+
+Rehearsal removes uncertainty about the material, which is genuinely a component of the fear. What it cannot touch is uncertainty about being evaluated, and that is usually the larger share — which is why somebody who knows a piece perfectly can still be terrified, and why the tenth run-through delivers far less than the second.
+
+The failure mode is over-rehearsal producing brittleness. A performance drilled into one exact shape has one way of being right and many of being wrong, so any deviation reads as an error and the recovery is harder. `failing-forward` is the counterweight: rehearse until you know it, then rehearse recovering from something going wrong, which is the part almost nobody practises and the thing actually feared.
+
 ## The Honest Caveat
 
 This protocol addresses **performance anxiety** — the situational fear that arises before a specific high-stakes event. It works because the underlying physiology is activation, not dysfunction.
