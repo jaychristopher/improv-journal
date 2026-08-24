@@ -10,7 +10,7 @@ entry_atoms: [commitment, obvious-choice, fear-of-failure, be-brave, be-honest]
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Be More Confident (Without Faking It)
@@ -96,6 +96,52 @@ Pick any small daily decision — what to order at a restaurant, which route to 
 **Why it works:** Confidence is a practice, not a state. Each fast, committed decision trains your brain that the cost of a suboptimal choice is lower than the cost of extended deliberation. Over time, the decision-closing speed increases, and the bandwidth freed by not deliberating becomes available for engagement.
 
 *Try this:* For one week, set a 3-second rule on any decision that isn't consequential (and most decisions aren't). Order the first menu item that appeals to you. Reply to the casual email immediately. Take the first route that comes to mind. At the end of the week, notice: did any of those fast decisions produce worse outcomes than your usual deliberated ones?
+
+## Questions People Ask About Confidence
+
+### How do you appear confident?
+
+By finishing things, not by adopting a posture.
+
+What reads as confidence in another person is almost entirely completion: a sentence that arrives at its end rather than trailing off, a gesture that resolves instead of being abandoned halfway, a decision stated once rather than circled. `commitment` is visible from outside, and half-commitment is visible too — an audience cannot see your internal state but can see the difference between a movement that finished and one that stopped.
+
+That is why posture advice underperforms. Standing in a particular way is a held position, and a held position is exactly the thing that looks effortful. The improviser who reads as assured is not maintaining anything; they are completing each action before starting the next.
+
+The practical version is small. Stop apologising for taking a turn, let sentences end, and pick one of the two doors rather than hovering between them.
+
+### How do you sound confident?
+
+Finish your sentences at a lower pitch than you started, and let pauses be silent.
+
+Two habits account for most of what registers as uncertainty in a voice. Rising intonation at the end of a statement turns it into a question, so the listener hears a request for approval rather than a claim. And filling every gap — *um*, *sort of*, *kind of* — signals that you are still deciding whether you are allowed to be talking.
+
+Volume matters less than people think and pace matters more. Speaking slightly slower than feels natural gives the impression of somebody who expects to be listened to, because rushing is what you do when you assume you are about to be interrupted.
+
+None of it works as performance. Somebody producing these deliberately while feeling uncertain sounds odd rather than assured, which is why the mechanism on this page runs the other way round: commit to the choice, and the delivery follows on its own.
+
+### Why is my confidence inconsistent?
+
+Because it is not one thing you have, it is an estimate that gets recalculated per situation, and the inputs change constantly.
+
+You are confident where you have evidence — a task you have done a hundred times, a room where nothing bad has ever happened. Move one variable and the estimate resets. That is why the person who is fluent in a meeting can be lost at a party, and it is not hypocrisy or fragility, it is the estimate doing exactly what it should.
+
+What actually varies day to day is capacity rather than confidence. Tired, hungry, or already carrying a difficult conversation, you have less available for the outward attention that `commitment` requires, so more of it goes to self-monitoring. Treating a bad day as evidence about yourself, rather than as evidence about your week, is the error.
+
+### How do you get it back after a knock?
+
+Reduce the size of the next attempt until it is almost certainly survivable, and do it soon.
+
+Two things go wrong after a public failure. People either avoid the situation entirely, which preserves the interpretation intact, or they return to something equally exposed and risk confirming it. Neither generates new information.
+
+What works is a smaller version, quickly. Spoke badly in a large meeting: say one thing in a small one this week. `fear-of-failure` is a prediction, and predictions only update against outcomes — which means the useful move is arranging an outcome you can afford, rather than waiting to feel ready for the original one. The [confidence building exercises](/confidence-building-exercises) are graded for exactly this.
+
+### Can you be confident and humble at the same time?
+
+They are not on the same axis, so yes — and the pairing is more common than the loud version people picture.
+
+Confidence is about your relationship to *action*: will you commit to a choice. Humility is about your relationship to *being right*: will you update when the evidence says you were wrong. Somebody can commit fully and still change their mind, and that combination is what most people are describing when they say somebody has presence without arrogance.
+
+The version that gets confused with confidence is certainty, which is a claim about the world rather than about your willingness to act. `be-honest` is the distinction that matters: "I think this is the right call and I could be wrong" is fully committed and fully humble, and it is a considerably stronger position than pretending to be sure.
 
 ## The Honest Caveat
 
