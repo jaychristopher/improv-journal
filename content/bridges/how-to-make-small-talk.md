@@ -108,6 +108,54 @@ Ending well is a skill, and it is the one that makes starting easier — because
 
 **Commit to something unpolished.** `first-line-drill` is starting before you know where it goes — the opener problem, isolated.
 
+## Questions People Ask About Small Talk
+
+### What are good small talk topics?
+
+The situation you are both in, before anything about the person.
+
+Topics aimed at somebody — what they do, where they are from, whether they have had a good week — produce the answer they have given four hundred times, because those are the questions everybody asks. Topics aimed at the shared present produce something unrehearsed, because nobody has a prepared line about this venue, this queue, this weather, or how they came to be at this particular thing.
+
+The reliable openers are therefore local and slightly specific: how they know the host, what they made of the session that just finished, whether they have been here before. Each of them is answerable with no effort and each hands back something to build on, which is all an opener has to do.
+
+What to avoid is not "boring" subjects. Weather is fine — it is a shared observation, which is exactly the right shape. What fails is anything that requires the other person to be interesting on demand.
+
+### What do you say after "how are you?"
+
+Answer with one specific detail rather than "fine", and the exchange stops being a formality.
+
+"Fine, you?" returns nothing to work with, so the next move has to start from scratch. "Good — slightly frazzled, I came straight from a school run" gives the other person three possible threads and costs you nothing. `offers` is the whole mechanism: the reply is not the end of a ritual, it is material.
+
+If they answer you with "fine", that is not rejection. It is the default script, and the way out is to give a real answer to your own question or to ask a smaller, more specific second one — "how has the week actually been?" gets a different response almost every time.
+
+### How do you get from small talk to a real conversation?
+
+Follow the detail they did not have to include.
+
+Every answer contains optional material — the school run, the fact that they nearly did not come, the mention of a job they described oddly. Those are the places somebody has left a door open, and asking about one is how a conversation changes register without anybody announcing it.
+
+The move that does not work is escalating the *topic*. Jumping from the weather to what somebody wants from their life reads as an interview, because the container has not earned it yet. The register shifts through accumulated small exchanges, not through a bigger question.
+
+`active-listening` here is narrow and practical: you are listening for the one clause that was not required.
+
+### Is small talk a waste of time?
+
+Not on the evidence, and the study everybody quotes for the opposite view is worth looking at properly.
+
+Mehl et al. (2010), in *Psychological Science*, recorded people's conversations across several days and found higher well-being associated with less small talk and more substantive conversation. That finding became "small talk makes you unhappy", which is not quite what it said and, more importantly, is not what survived: a pooled multi-sample replication published in the same journal in 2018 reproduced the link with substantive conversation and found **no reliable association with small talk at all.**
+
+So the defensible version is that substantive conversation is worth having, and small talk is not the thing standing in its way. It is the mechanism by which strangers establish that a longer conversation is safe — and the people who report hating it are usually not objecting to the weather, they are objecting to being stuck in it.
+
+### What if you have nothing in common?
+
+Then stop looking for common ground and get curious about the difference, which is more interesting anyway.
+
+Searching for overlap is what produces the dead exchange — two people auditing each other for shared television programmes and concluding there is nothing here. The alternative is to treat the gap as the subject: somebody who does a job you know nothing about, or lives somewhere you have never been, is a much better conversational partner than somebody who agrees with you, provided you ask about the parts you cannot guess.
+
+The useful question shape is what it is actually like rather than what it is. "What is the bit of that job nobody realises?" works on anybody, requires no shared reference, and it is the same move as asking for the specific instance rather than the summary.
+
+**Sources cited:** Mehl et al. (2010), *Psychological Science* 21(4), 539–541. "Eavesdropping on Happiness" Revisited (2018), *Psychological Science*, pooled multi-sample replication.
+
 ## The Deeper Truth
 
 Small talk is not a separate category of conversation. It's the first layer of every connection. Every close friendship started with small talk. Every great relationship had a mundane first exchange. Every meaningful professional connection began with "So what do you do?"
