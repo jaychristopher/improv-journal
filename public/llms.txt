@@ -129,7 +129,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Performance State](https://www.physicsofconnection.com/how-it-works/performance-state): The psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables...
 - [Reality Construction](https://www.physicsofconnection.com/how-it-works/reality-construction): The central reframe: improv isn't about comedy. Comedy is a byproduct. Improv is a high-stakes game of reality construction — two interdependent agents...
 
-## Vocabulary — improv terms defined (29)
+## Vocabulary — improv terms defined (30)
 
 - [Audience](https://www.physicsofconnection.com/practice/vocabulary/audience): The audience is not a passive recipient of the show. They are a co-creator of the shared reality — the third player in every scene.
 - [Bandwidth](https://www.physicsofconnection.com/practice/vocabulary/bandwidth): The total processing capacity available to participants in a shared interaction at any given moment.
@@ -147,6 +147,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Justification](https://www.physicsofconnection.com/practice/vocabulary/justification): The act of finding or creating a reason why something that happened should have happened, within the reality of the scene.
 - [Offers](https://www.physicsofconnection.com/practice/vocabulary/offers): An offer is anything that advances the scene — any word, gesture, expression, movement, or silence that adds to the shared reality.
 - [Point of View](https://www.physicsofconnection.com/practice/vocabulary/point-of-view): The filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.
+- [Premise](https://www.physicsofconnection.com/practice/vocabulary/premise): The situation a scene is in before anything unusual has happened to it. Two people in an elevator. A daughter visiting her father. Someone returning a toaster.
 - [Presence](https://www.physicsofconnection.com/practice/vocabulary/presence): The capacity to sustain sensory contact with what is happening right now — with your partner, the environment, and yourself — rather than retreating into...
 - [Relationship](https://www.physicsofconnection.com/practice/vocabulary/relationship): The connection between characters in a scene — who they are to each other, what they feel about each other, and what they want from each other.
 - [Scene Structure](https://www.physicsofconnection.com/practice/vocabulary/scene-structure): The arc of an improv scene — not a rigid template but a recognizable shape that emerges when the principles are working.

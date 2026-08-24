@@ -6,6 +6,7 @@ status: draft
 tags: [definitions, scene-work, pattern, UCB]
 links:
   - { id: offers, relation: requires }
+  - { id: premise, relation: contrasts }
   - { id: be-positive, relation: requires }
   - { id: be-present, relation: requires }
   - { id: commitment, relation: requires }
