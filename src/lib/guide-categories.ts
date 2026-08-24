@@ -161,6 +161,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "improv-prompts",
       "viewpoints",
       "del-close",
+      "viola-spolin",
       "yes-and-improv",
     ],
   },

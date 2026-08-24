@@ -23,7 +23,7 @@ updated: "2026-08-24"
 
 # Theatre Games: What They Are and How to Run Them
 
-Theatre games are structured exercises with explicit rules and a single point of concentration, used to teach performance skills through play rather than instruction. The term is Viola Spolin's, and so is the form.
+Theatre games are structured exercises with explicit rules and a single point of concentration, used to teach performance skills through play rather than instruction. The term is [Viola Spolin](/viola-spolin)'s, and so is the form.
 
 That origin matters, because it explains the thing most people get wrong about them. Theatre games were not designed to be funny.
 
