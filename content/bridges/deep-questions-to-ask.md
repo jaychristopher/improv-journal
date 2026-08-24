@@ -27,7 +27,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Deep Questions to Ask: 153 That Get an Honest Answer
@@ -299,6 +299,42 @@ These are only for a relationship with history. Asked too early they are intrusi
 - **"What are you most passionate about?"** — a networking question wearing a sincere costume.
 - **"Do you believe in God?"** — a position, not an experience. "What do you do when you are frightened?" gets closer to the same place.
 - **"What is the worst thing you have ever done?"** — asks for a confession without offering one, which is `blocking` in the costume of intimacy.
+
+## Questions People Ask About Deep Questions
+
+### What makes a question deep?
+
+Charles Duhigg's *Supercommunicators* (2024) gives the cleanest working definition: a deep question asks about somebody's values, beliefs, judgements or experiences rather than about facts. "Where do you work" is a fact. "What is the best part of your job" is an experience, and it is the same conversation one layer down.
+
+The refinement this page would add is that the experiences half is doing nearly all of the work. Values and beliefs invite a position, and a position is a rehearsed thing. An experience has to be recalled before it can be described, and the recalling is what produces the unguarded version.
+
+Duhigg adds one more test that is worth keeping: asking a deep question should feel like sharing. If it costs you nothing to ask, it is probably an interview question.
+
+### What is the deepest question you can ask someone?
+
+There isn't one, and the search for it is the mistake. Depth is not stored in the question — the same sentence lands as intimacy with one person and as an intrusion with another, and nothing about the wording changed. What changed was the accumulated `trust` between the two of you and whether you had gone first.
+
+If you want the closest thing to an answer: "what were you like at fifteen, and what happened to that person?" It is unusually good because it asks for a specific and an account of change at once, and almost nobody has a prepared version of it. It will still fail flat with somebody who has no reason to tell you.
+
+### How do you start a deep conversation without it being weird?
+
+You do not start one. You start an ordinary one and let it descend, which is what the ladder above is for — each rung is a slightly larger risk offered after the previous one was met well.
+
+The weirdness people are worried about is real and it has a specific cause: a question that asks for more exposure than the conversation has earned. The fix is not softer questions, it is going first. Answer the thing you are about to ask, at the depth you are hoping for, and the question stops reading as an interview because you have already paid for it.
+
+### Is it rude to ask deep questions?
+
+It is rude to ask for something you are not offering, and that is what makes a deep question land badly rather than the depth itself. The failure is asymmetry.
+
+There is a second case worth naming, which is asking about something the other person has to manage afterwards — grief, a diagnosis, a marriage — in a setting where they cannot decline without it becoming an event. A question is only optional if declining it is cheap. In a car, on a walk, one to one, declining is easy. At a table of six it is not, which is why the same question is fine in one and a small ambush in the other.
+
+### How many deep questions should you ask?
+
+Fewer than you think, and the number is not really the variable. One good question with four follow-ups goes considerably further than five good questions asked in sequence, because the follow-ups are where the rehearsed answer gets used up and the real one arrives.
+
+Running down a list is the most common way people waste a genuinely open conversation. If you find yourself reaching for the next question, the previous answer almost certainly had more in it.
+
+**Sources cited:** Duhigg (2024), *Supercommunicators*.
 
 ## What to Do With the Answer
 
