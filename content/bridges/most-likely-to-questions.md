@@ -16,7 +16,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # Most Likely To Questions: 182 That Land as a Compliment
@@ -293,6 +293,46 @@ Worth naming, because each is common and each costs more than it returns.
 **Rotate who asks.** Whoever holds the list steers the game, and a list read by one person all evening reflects one person's sense of humour.
 
 **Stop before the good ones run out.** Fifteen strong pairs beats forty where the last twenty were reaching.
+
+## Questions People Ask About Most Likely To
+
+### What is the Most Likely To game?
+
+One person reads out a prompt — "most likely to miss their own flight" — and everybody points at, names, or votes for whoever in the group fits it best. Whoever gets the most votes is the answer. Then the next prompt.
+
+There is no winning and no scoring in any version worth playing. What the game produces is a running portrait of how the group sees each of its members, assembled out loud, which is why it feels so different from every other question game despite being mechanically simpler than most of them.
+
+### How many people do you need to play?
+
+Five is the realistic floor, and the reason is arithmetic rather than atmosphere.
+
+With three or four, the votes concentrate — there are so few candidates that the same one or two people get named for nearly everything, and being named four times in a row stops reading as recognition and starts reading as a verdict. Somewhere around six the votes spread far enough that everybody is the answer to something, which is the condition the game needs.
+
+There is no real upper limit, but past about twelve the quiet members stop being named at all, which is its own problem. `ensemble` on this site is a group where everybody's contribution is load-bearing, and a game that names the same four extroverts for an hour is describing a smaller group than the one in the room.
+
+### What is the difference between Most Likely To and Never Have I Ever?
+
+The direction of the disclosure, and it changes everything about the risk.
+
+Never Have I Ever is self-disclosure: you reveal something about yourself, and you choose how much. Most Likely To is other-disclosure: the group reveals what it thinks about somebody, and that person has no say in it and cannot decline the round. The first can be played safely with strangers because everyone controls their own exposure. The second cannot, because your exposure is controlled by everybody else.
+
+That is why the two want opposite settings. Never Have I Ever works in a new group and gets riskier as the night goes on. Most Likely To wants a group that already likes each other, and it is the wrong game for a room where anybody is still working out where they stand. [Party games](/party-games) covers both alongside the ones that need no setup at all.
+
+### Is Most Likely To a drinking game?
+
+It is commonly played as one, and the drinking version is a materially different game.
+
+Attaching a drink to being named converts a vote into a penalty. That flips the whole mechanism: instead of "we all agree this is very you," which is recognition, it becomes "we have collectively decided you lose," which is a mild pile-on with a rule attached. The prompts drift accordingly, because the group starts choosing ones that will get somebody drunk rather than ones that are true.
+
+The version on this page is the sober one, and the whole page argues that the game is worth playing for what it says about people. If you are playing the drinking version, the section on prompts that damage a group matters more rather than less, because alcohol removes the judgement that would normally stop somebody reading out the bad one.
+
+### What do you do when somebody takes it badly?
+
+Move on immediately and do not repair it in public.
+
+The instinct is to explain — that it was a joke, that nobody meant it, that they are being oversensitive. Every one of those extends the moment and keeps the person at the centre of the room's attention, which is the actual injury. The prompt was ten seconds; the discussion of whether they should mind is five minutes, and it is the five minutes they will remember.
+
+Read the next prompt. Later, privately, say the true version of what you think about them — not an apology for the game, which invites them to insist they are fine, but the specific thing the vote got wrong. `safety-in-the-room` is built out of small exchanges that go unpunished, and the recovery matters more than the incident, because the group is watching what happens to somebody who was uncomfortable and learning from it.
 
 ## The Part You Can Practise
 
