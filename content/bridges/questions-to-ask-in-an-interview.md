@@ -221,6 +221,48 @@ Each of these fails in a way worth understanding, and most of them fail on statu
 
 **Do not perform interest you do not have.** Every interviewer has sat opposite someone asking a question from a list. The questions above only work if you want the answer.
 
+## Questions People Ask About Interview Questions
+
+### How many questions should you ask?
+
+Two or three, asked well, with follow-ups. Not a list.
+
+The number matters less than what happens after the first answer. An interviewer can tell immediately whether you are working through a prepared sequence or actually listening, and the tell is whether your second question has anything to do with the answer to your first. Three questions with genuine follow-ups reads as a conversation between colleagues. Seven asked in order reads as a checklist, and it inverts the `status` move the whole page is built on — you are back to being processed.
+
+Prepare six so you have range, expect to ask three, and let the answers choose which.
+
+### What if they have already answered everything?
+
+They have not, and saying they have is the weakest available close.
+
+"That's all been covered, thanks" ends the interview on you having nothing to contribute at the exact moment you were handed the floor. It is read as low interest far more often than as efficiency, which is rarely what the candidate intended.
+
+Two moves always remain. You can go back into something they already said and ask for the layer beneath it — "you mentioned the team restructured last year; what changed about how work gets assigned?" — which demonstrates you were listening rather than waiting. Or you can ask something that could not have come up, because it is about them: what they find difficult about the role, what made them stay, what they would change. Neither requires new information and both are better than a graceful exit.
+
+### Should you ask about salary?
+
+Not in a first interview unless they raise it, and not because it is impolite — because the person in front of you usually cannot answer it.
+
+First-round interviewers are frequently the hiring manager or a peer, and compensation sits with a recruiter or with HR. Asking puts them in the position of not knowing, which is a bad use of the only moment in the interview you control. The recruiter screen, if there is one, is the right place, and asking early there is entirely normal and saves both sides time.
+
+By a final round the calculation reverses. Once an offer is plainly being considered, not raising it starts to look like you have not thought about it, and you are negotiating from further back. Ask directly and without apology: the range for the level, and how it is reviewed.
+
+### Is it safe to ask about work-life balance?
+
+The question is safe. The phrasing is where people lose ground, and the good version gets you far better information anyway.
+
+Asked flatly — "what's the work-life balance like?" — it invites the answer everybody gives, which is that it is great and they really respect boundaries here. It is unfalsifiable, so it tells you nothing, and in a minority of places it does register as a flag about commitment. You have spent a question and bought nothing.
+
+Ask for specifics instead, because specifics cannot be answered with reassurance. What does a normal week look like for this role. When was the last time the team worked a weekend, and what caused it. How often do things come up outside hours, and who decides that they have to. Those get answered with facts or with a visible hesitation, and both are useful. `blocking` on this site is a refusal dressed as agreement — a pause before a reassuring answer is the same shape, and it is worth more than the answer.
+
+### Should you write your questions down?
+
+Yes, and take the notes out where they can be seen.
+
+Candidates worry it looks unprepared. It reads as the opposite: somebody who thought about this beforehand and cared enough to write it down. Interviewers take notes without anybody finding it odd, and the asymmetry is worth ending.
+
+It also removes the failure this page exists to prevent. The reason people ask about next steps is not that they had no better question — it is that the good one evaporated forty minutes ago under pressure. A page of paper solves that completely, and glancing at it costs you nothing.
+
 ## Practise the Status Part
 
 **Playing both ends.** `status-transfer` runs the same scene high, then low, then shifts mid-scene. It is the fastest way to feel the difference between asking a question from a lowered position and asking the same question from a level one — which, in an interview, is most of what separates a good question from an identical one that lands badly.
