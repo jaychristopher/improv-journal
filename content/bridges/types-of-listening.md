@@ -86,6 +86,23 @@ Two things fall out of the mapping.
 
 Which is the practical case for thinking in modes instead of types. The taxonomy tells you what to aim at. It does not tell you what your attention is doing, and that is the part you can actually change.
 
+## Listening Styles Are a Third Thing Again
+
+The seven types describe *purpose* — why you are listening. The three modes above describe *attention* — what you are doing with it right now. Listening styles describe neither. They describe a habit: what a particular person tends to attend to whatever the purpose and whatever the mode.
+
+The standard framework is the Listening Styles Profile, which sorts the preference four ways.
+
+- **People-oriented.** Attends first to the speaker's state — how they seem, what this is costing them. Notices mood before content.
+- **Action-oriented.** Attends to what is to be done. Wants the point, gets impatient with preamble, and is often the person who says "so what do you need from me?"
+- **Content-oriented.** Attends to the substance and wants to test it. Comfortable with complexity, inclined to probe a claim before accepting it.
+- **Time-oriented.** Attends to duration. Signals the clock, prefers things brief, and treats length itself as information about importance.
+
+The practical value is that a mismatch between two people's styles is almost always experienced as rudeness rather than as difference. An action-oriented listener cutting to "what do you need?" reads as dismissive to a people-oriented speaker who was still arriving at it. A people-oriented listener asking how somebody feels about the deadline reads as evasive to a time-oriented one. Neither has done anything wrong and both leave the conversation with a worse opinion of the other.
+
+The distinction that matters here is that a style is a default rather than a capacity. The three modes are choices available in any conversation. A style is what happens when you are not choosing — which makes knowing your own the useful part, because it predicts which mode you habitually skip.
+
+**Sources cited:** Watson, Barker & Weaver (1995), *International Journal of Listening*.
+
 ## How to Shift Between Modes
 
 The shift from broadcast/evaluative to receptive isn't intellectual — it's attentional. You can't think your way into it. But you can use these specific practices:
