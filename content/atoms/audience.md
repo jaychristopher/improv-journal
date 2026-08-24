@@ -58,6 +58,18 @@ More sophisticated than they get credit for:
 
 Spolin, Johnstone, and Close all championed "with" — though they named it differently. Spolin: "playing." Johnstone: "letting the story happen." Close: "truth creates genuine connection."
 
+## The case for ignoring the audience
+
+There is a serious tradition that says everything above is a distraction, and it is worth stating properly rather than leaving in a footnote.
+
+Stanislavski's position is the fourth wall taken literally: the actor achieves *public solitude*, behaving exactly as they would if unobserved, and any calibration to the room is a corruption of that. Within improv, a strand of iO and Annoyance practice arrives somewhere similar by a different route — play entirely for your scene partner, trust that honest behaviour is what an audience came for, and treat reading the room as one more thing taking attention away from the person in front of you.
+
+Brecht sits at the opposite extreme and disagrees with both. He broke the fourth wall deliberately, to prevent absorption, because he wanted an audience thinking rather than immersed.
+
+The disagreement is really about where attention goes, and it dissolves somewhat once *reading* the audience and *playing to* them are separated. Noticing that a room has gone quiet costs almost nothing and changes what you do next. Adjusting your choices to chase a laugh is a different act, and it is the one both traditions are actually warning about.
+
+The honest position is that the sceptics are right about the failure mode and wrong to conclude the audience should be ignored. A performer genuinely unaware of the room misses information that is freely available; a performer managing the room has stopped being in the scene.
+
 ## Specific sources
 
 Spolin, *Improvisation for the Theater*, Part One, Ch. I ("Creative Experience"): "The audience is the most revered member of the theater." Johnstone, *Impro for Storytellers*, Ch. 1: "Theatresports" (audience dynamics) and Ch. 2: "Audience Suggestions." **Counter-position:** The Stanislavski tradition explicitly argues for the fourth wall — actors achieve "public solitude" and behave as if unobserved. Within improv, the "just play for each other" philosophy (some iO/Annoyance practitioners) argues: focus entirely on the scene and trust the audience to be drawn in by authenticity, rather than actively reading or calibrating to them. Brecht broke the fourth wall for the opposite reason — emotional distance (Verfremdungseffekt), not co-creation.

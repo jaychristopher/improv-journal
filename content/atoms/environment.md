@@ -18,7 +18,7 @@ links:
   - { id: stage-presence, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Environment is the imagined physical and temporal conditions of the scene — the room, the weather, the objects, the spatial relationships between characters, and the pressures of time (a ticking clock, a closing restaurant, a train about to depart). The environment doesn't physically exist, but when it's well-maintained, the audience and the performers *feel* it.
@@ -40,6 +40,16 @@ Every physical interaction with the environment is a signal that reinforces what
 If you established that you're in a freezer, the environment is maintained by hunching against the cold, blowing on your hands, seeing your breath. The moment you stop doing that, the freezer disappears — for you, your partner, and the audience. The environment exists only through continuous physical commitment to it.
 
 Environment degrades faster than character because it has no advocate. A character defends itself through the performer's commitment; a room does not. This is why environment is the first casualty of decay, and restoring it (through space work) is often the fastest repair.
+
+## The empty-stage counter-argument
+
+Not everybody thinks the imagined room should be built at all, and the objection comes from serious places.
+
+Grotowski's poor theatre strips away scenery, props and effects deliberately, on the argument that everything removed forces more onto the performer, which is where the interest actually is. Bogart and Landau's Viewpoints works with the **architectural** space that genuinely exists — this stage, these distances, this floor — rather than with an imagined one laid over it. And some Johnstone-influenced practice treats the stage as authentically empty until an offer fills it, on the grounds that pre-loading a location is a way of avoiding your partner.
+
+There is a real disagreement underneath, and it is about what the detail is *for*. If environment work is a performance of craft — immaculate object handling in a place with no reason to exist — the sceptics are right and it is a distraction from the scene. If it is a way of making a shared thing more specific so both performers can act on it, it is doing the same job as any other offer.
+
+The test is whether the environment ever costs anybody anything. A kitchen that nobody has to reach across, walk around or be too hot in was decoration. A freezer that makes both people hurry is a scene partner.
 
 ## Specific sources
 

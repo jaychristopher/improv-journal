@@ -49,6 +49,16 @@ Because meaning lives between minds, coherence is a property of the *connection*
 
 (alongside cumulative state and mutual recognition). It is the indicator that most directly measures whether the principles are working — because every principle, in its own way, serves the maintenance of coherent shared reality.
 
+## Does absurdism break this?
+
+The obvious objection: plenty of excellent improv is deliberately nonsensical, and coherence sounds like an argument against it.
+
+It is not, and the reason is a distinction worth holding on to. Absurdism changes the **content** of what is agreed — we accept that the world contains talking furniture — while leaving the **process** untouched. Once the premise lands, the talking furniture has consistent properties, remembers what it said, and cannot suddenly stop being furniture without that being an event.
+
+Surreal comedy that works is rigorously internally logical. What makes a scene incoherent is not strangeness but untracked strangeness: a world whose rules change whenever a performer wants something, so nothing established stays established and the audience stops investing in any of it.
+
+Which gives a usable test. Ask whether a new element in an absurd scene *follows* from what was already true, or merely arrives. Both are odd; only one of them is a scene.
+
 ## Specific sources
 
 Clark & Brennan, "Grounding in Communication" (1991, in *Perspectives on Socially Shared Cognition*, APA; [PDF](https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf)) — grounding as the interactive process of establishing mutual understanding through presentation, acceptance, and repair. Their "least collaborative effort" principle explains why simple, clear signals build coherence faster. *Truth in Comedy*: "Agreement is the one rule that can never be broken." Sawyer, *Improvised Dialogues* (2003) — coherent structure emerges from cleared signals without pre-planning. **Counter-position:** Absurdist improv deliberately fractures coherence — but even surreal comedy maintains "rigorous internal logic" once an absurd premise is established. Absurdism shifts the *content* of coherence (we agree the world is nonsensical) while maintaining the *process* (we're tracking the same nonsense).
