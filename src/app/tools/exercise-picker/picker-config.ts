@@ -21,6 +21,17 @@ export interface FocusConfig {
   tag: string;
   extraTags: string[];
   description: string;
+  /**
+   * Orienting prose for the level+focus pages.
+   *
+   * Same problem the level pages had, one level down. These shipped a heading,
+   * one line of description and three exercise cards — 130 to 179 words, which
+   * clears the "three exercises" indexing bar and still says nothing a filtered
+   * list does not. The exercises are already documented on their own pages; what
+   * is missing here is why this focus is a thing you would train separately, and
+   * what goes wrong when people do.
+   */
+  orientation: string[];
 }
 
 export const LEVELS: LevelConfig[] = [
@@ -70,6 +81,11 @@ export const FOCUSES: FocusConfig[] = [
     extraTags: ["listening"],
     description:
       "Exercises that train sustained attention, active listening, and being fully in the moment.",
+    orientation: [
+      "This is the only focus on the list that trains an input rather than an output. Everything else here makes you better at doing something; these make you better at receiving, which is why they feel like doing nothing and why people quietly rate them as warm-ups rather than work.",
+      "The measure of progress is latency, not quality. Somebody genuinely listening answers slightly faster and slightly worse — the pause before a response is almost always composition, not consideration. If the answers are getting more polished, the exercise has stopped working.",
+      "Run these before anything demanding rather than after. Attention is the resource the rest of a session spends, and a group that has not been brought into the room will spend the first twenty minutes of any other exercise arriving.",
+    ],
   },
   {
     slug: "ensemble",
@@ -78,6 +94,11 @@ export const FOCUSES: FocusConfig[] = [
     extraTags: [],
     description:
       "Exercises that build shared awareness, group coordination, and the ability to create as one.",
+    orientation: [
+      "Ensemble is the one focus that cannot be practised alone, and it is not a personality trait the group either has or lacks. It is a set of specific habits — matching what somebody else started, giving up your idea when a better one appears, noticing who has not spoken.",
+      "Watch the distribution rather than the output. A group scene that goes brilliantly while two people carry it is a worse result than a mediocre one everybody built, because the first teaches the quiet members that their contribution is optional.",
+      "These need the same people repeatedly. Ensemble is accumulated evidence that the others will catch what you throw, and evidence does not transfer between casts — which is why a group of individually strong improvisers is often worse than a weaker group who have played together for a year.",
+    ],
   },
   {
     slug: "emotion",
@@ -85,6 +106,11 @@ export const FOCUSES: FocusConfig[] = [
     tag: "emotion",
     extraTags: [],
     description: "Exercises that develop emotional range, vulnerability, and authentic response.",
+    orientation: [
+      "The obstacle is almost never a missing feeling. It is that reacting visibly in front of people is a risk, and the reflex is to convert the reaction into a comment about the reaction — which is safe, gets a laugh, and ends the scene's emotional life.",
+      "Aim for a smaller feeling held longer rather than a larger one performed. Big emotion arrives on demand and reads as false; mild irritation that persists for ninety seconds is much harder and considerably more affecting.",
+      "These want a group that already trusts each other, so they belong later in a session than their difficulty suggests. Asking somebody to be genuinely affected in a room where they are still working out where they stand produces performance, which is the exact thing being trained out.",
+    ],
   },
   {
     slug: "courage",
@@ -93,6 +119,11 @@ export const FOCUSES: FocusConfig[] = [
     extraTags: [],
     description:
       "Exercises that practice bold choices, full commitment, and acting before overthinking.",
+    orientation: [
+      "What these train is the interval between having a thought and acting on it, which is a different skill from confidence and improves much faster. Nobody in an improv exercise is short of ideas; they are short of the willingness to use the first one.",
+      "The point is to make being wrong cheap and frequent. An exercise that can be done well is not doing the job — the useful version produces obvious failures at a rate high enough that failing stops registering as an event.",
+      "Do not let the group discuss what happened. Analysis after a bold choice teaches that bold choices are followed by evaluation, which reintroduces exactly the hesitation the exercise removed. Run the next round instead.",
+    ],
   },
   {
     slug: "physicality",
@@ -100,6 +131,11 @@ export const FOCUSES: FocusConfig[] = [
     tag: "physicality",
     extraTags: [],
     description: "Exercises that develop body awareness, spatial work, and physical communication.",
+    orientation: [
+      "Physical work is trained separately because it is the first thing to disappear under pressure. A nervous improviser goes still and talks more, and telling them to move does nothing, because stillness is a symptom rather than a habit.",
+      "Start from the body and let the character follow, not the reverse. Deciding who somebody is and then adding a walk produces an illustration of a decision; changing how you move and finding out who that turns out to be produces somebody you have not played before.",
+      "These are the exercises most often skipped by groups who consider themselves verbal, and they are usually the ones with the most left to gain. A cast whose scenes all happen standing two feet apart in a neutral room has a physicality problem it has learned to call a style.",
+    ],
   },
   {
     slug: "recovery",
@@ -108,6 +144,11 @@ export const FOCUSES: FocusConfig[] = [
     extraTags: [],
     description:
       "Exercises that train handling mistakes, staying flexible, and building from the unexpected.",
+    orientation: [
+      "Every other focus trains what to do when things go as intended. This one trains the far more common case, and it is the difference between a group that can perform and a group that can only rehearse.",
+      "The skill is not avoiding the mistake, it is removing the apology. Most damage from an error comes from the visible second in which somebody signals that an error occurred — the audience did not know until they were told, and a scene absorbs almost anything that is treated as intentional.",
+      "Practise these having deliberately broken something. An exercise where the failure is manufactured lets you rehearse the response without waiting for a real disaster, and the response is a physical habit rather than a decision you get to make calmly.",
+    ],
   },
 ];
 

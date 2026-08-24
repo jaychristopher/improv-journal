@@ -78,6 +78,11 @@ export default async function LevelFocusPage({
           {levelConfig.label} {focusConfig.label} Improv Exercises
         </h1>
         <p className="text-foreground/60 mt-2">{focusConfig.description}</p>
+        {focusConfig.orientation.map((paragraph) => (
+          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mt-3">
+            {paragraph}
+          </p>
+        ))}
       </header>
 
       {/* Level tabs */}
