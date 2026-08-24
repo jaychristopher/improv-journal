@@ -13,7 +13,7 @@ entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, 
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 # Psychological Safety: The Physics of Trust
@@ -87,6 +87,53 @@ Build the structural conditions first. Then, if you want, use exercises to deepe
 ## The Exercises
 
 The protocols above are practised rather than adopted. For the drills themselves — what each one isolates, the order to run them in, and why the trust fall is not among them — see [trust building exercises](/trust-building-exercises).
+
+## Questions People Ask About Psychological Safety
+
+### What are the four stages of psychological safety?
+
+Timothy Clark's framework, from *The 4 Stages of Psychological Safety* (2020), sets them out as a progression rather than a checklist:
+
+1. **Inclusion safety** — you are accepted as present. Nobody is deciding whether you belong in the room.
+2. **Learner safety** — you can ask, experiment and be wrong without it costing you.
+3. **Contributor safety** — you can do the actual work and be judged on it rather than on whether you fit.
+4. **Challenger safety** — you can say the thing that contradicts the person running the meeting.
+
+The order matters more than the list. Each stage rests on the one below it, which explains a failure that looks mysterious from the top: a team asked to "challenge more" that has not established learner safety will not do it, because being wrong in front of the group is still expensive there. Instructing people to challenge is asking for stage four from a room that is still at stage two.
+
+Almost every intervention that fails is aimed at the wrong stage.
+
+### How do you measure psychological safety?
+
+The standard instrument is Edmondson's seven-item team scale from her 1999 paper, and it is still the most-used measure in the literature. It asks people to rate statements about their own team — whether mistakes get held against you, whether people can raise problems and tough issues, whether it is difficult to ask others for help, whether it is safe to take a risk, whether members sometimes reject others for being different.
+
+Two things about it are worth knowing before you send it round. Several items are deliberately reverse-scored, so a team agreeing with everything is not a good result. And it measures the team, not the organisation — psychological safety varies enormously between teams inside the same company, which was one of Edmondson's original findings and is the reason company-wide engagement surveys tend to miss it entirely.
+
+The cheaper informal version: count how often somebody says "I don't understand" in a meeting. In a safe team it happens. In an unsafe one, nobody has been confused all quarter.
+
+### Is psychological safety the same as being nice?
+
+No, and conflating them produces the opposite of what is wanted.
+
+A team that is uniformly pleasant, agrees quickly and never raises anything difficult scores badly on Edmondson's scale, because the agreement is what people do when raising something is expensive. Niceness suppresses the signal that safety exists to produce.
+
+The distinction is between comfort and candour. Safety means the *cost* of saying the difficult thing is low — not that difficult things are absent. `trust` on this site is an accumulated estimate of what happens when you expose something, and a room where nothing is ever exposed has generated no evidence in either direction.
+
+### Whose job is it, the manager's or the team's?
+
+Structurally the manager's, because the asymmetry is real: what a leader does after the first piece of bad news sets the price for everybody watching, and no amount of peer goodwill overrides that.
+
+But the useful reframe is that it is built by behaviours rather than announced by authority. A manager who declares an open-door policy and then reacts badly once has communicated the second thing. A manager who says nothing and visibly thanks the person who brought a problem has communicated the opposite.
+
+Team members are not powerless either. `vulnerability` offered by a peer — admitting confusion, naming a mistake first — measurably lowers the cost for the next person, which is why the second-most-senior person in a room often has more influence over this than the most senior one.
+
+### What destroys it fastest?
+
+Punishing the first person who tells you something you did not want to hear, in front of everybody else.
+
+Nothing else comes close for speed. It is a single event, it is witnessed, and it updates every observer's estimate simultaneously — which is why safety is slow to build and quick to lose. The punishment does not have to be dramatic; visible irritation, a dismissive reply, or bringing it up later in another context all do the job.
+
+The close second is soliciting input and then doing nothing with it, repeatedly. That teaches a subtler and more durable lesson: speaking is not dangerous here, it is simply pointless, and the resulting silence looks identical from the outside.
 
 ## The Honest Assessment
 
