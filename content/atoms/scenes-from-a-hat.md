@@ -19,6 +19,7 @@ links:
   - { id: harold, relation: contrasts }
   - { id: ref-salinsky-improv-handbook, relation: illustrates }
   - { id: ref-stiles-improvise-freely, relation: illustrates }
+  - { id: worlds-worst, relation: extends }
 sources: []
 created: "2026-04-09"
 updated: "2026-08-24"

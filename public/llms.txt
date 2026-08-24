@@ -242,7 +242,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [Yes, And Chain](https://www.physicsofconnection.com/practice/exercises/yes-and-chain): Be Positive — the literal-words version of accepting and extending offers. A universal beginner drill taught at every school.
 - [Zip Zap Zop](https://www.physicsofconnection.com/practice/exercises/zip-zap-zop): Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head.
 
-## Formats (17)
+## Formats (18)
 
 - [Armando](https://www.physicsofconnection.com/practice/formats/armando): A monologue-driven longform format where a monologist tells true personal stories that inspire improvised scenes.
 - [Freeze Tag](https://www.physicsofconnection.com/practice/formats/freeze-tag): The most universal shortform improv game. Two performers begin a scene. At any point, someone on the sideline calls "Freeze!" Both performers stop in their...
@@ -261,6 +261,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [The Monoscene: One Scene, No Edits](https://www.physicsofconnection.com/practice/formats/monoscene): One scene, held for the whole set. Same location, same people, time moving roughly as it moves in life.
 - [Theatresports](https://www.physicsofconnection.com/practice/formats/theatresports): Keith Johnstone's competitive improv format. Two teams perform improvised scenes head-to-head, judged by the audience.
 - [Two-Person Longform](https://www.physicsofconnection.com/practice/formats/two-person-longform): Two performers sustaining a complete longform show — typically 25-60 minutes — without ensemble support.
+- [World's Worst](https://www.physicsofconnection.com/practice/formats/worlds-worst): A category is announced — world's worst doctor, world's worst person to sit next to on a plane — and the cast take turns stepping forward to deliver one image...
 
 ## Failure modes and patterns (21)
 
