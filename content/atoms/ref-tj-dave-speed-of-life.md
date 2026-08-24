@@ -13,31 +13,37 @@ links:
   - { id: relationship, relation: illustrates }
   - { id: be-supportive, relation: illustrates }
 external_links:
-  - { label: "Amazon", url: "https://amazon.com/dp/0977309347" }
+  - { label: "Amazon", url: "https://amazon.com/dp/0977309339" }
 sources: []
 work:
   type: Book
-  authors: ["TJ Jagodowski", "Dave Pasquesi"]
-  name: "Improvisation at the Speed of Life"
+  authors: ["TJ Jagodowski", "Dave Pasquesi", "Pam Victor"]
+  name: "Improvisation at the Speed of Life: The TJ and Dave Book"
   publisher: "Solo Roma"
   published: "2015"
-  isbn: "0977309347"
+  isbn: "0977309339"
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
-**TJ Jagodowski & Dave Pasquesi. *Improvisation at the Speed of Life.* Solo Roma, 2015.**
+**T. J. Jagodowski, David Pasquesi & Pam Victor. *Improvisation at the Speed of Life: The TJ and Dave Book.* Solo Roma, 2015.**
 
-The philosophy and practice of the most celebrated two-person improv partnership in modern history. Based on unrehearsed, unplanned hour-long shows performed weekly for over a decade at iO Chicago.
+The method of the most celebrated two-person partnership in modern improv, set down in detail. It is the closest thing that exists to a written account of how their show works, and it is unusually specific for a book about something its authors describe as mostly listening.
 
-**Key concepts drawn from here:**
-- "Look to your partner. Listen to your partner. Respond to your partner." — the entire method in three steps
-- Being "affected" and "impressionable" — changeability as the natural consequence of deep listening, not an override of resistance
-- Presence as heightened sensation — "you can see better and hear everything more"
-- Trust as the structural foundation — "the only way it can get really good is if you do it with the same people a lot"
-- The partnership as the irreducible unit — interdependence demonstrated at the highest level
-- Moving "the weight from the words to the emotions" — bandwidth reallocation from verbal to felt
+## What is actually in it
 
-**Also relevant:** Stephen Colbert on TJ & Dave: *"One of these guys is the best improviser in the world. And the other one is better."*
+Less instruction than most improv books and considerably more description. Pam Victor is credited as co-author, and the material is shaped as an extended conversation rather than a curriculum — the two of them talking through what they are doing and why, with the questions left in.
 
-Where a two-person practice this uncompromising fits among the five schools is set out in the [Annoyance](/traditions/annoyance) profile.
+That format suits the subject and frustrates some readers. There is no numbered exercise sequence and no progression to work through. What there is instead is a long, patient account of attention: what they are looking for at the top of a show, what they do with what they notice, and how little of it is decided.
+
+## The show it is describing
+
+Worth knowing before reading it, because the book assumes you know. TJ and Dave take **no suggestion**. The show opens with the line that has become their slogan — *"Trust us, this is all made up"* — the lights go down, and they begin from nothing at all.
+
+It then runs about an hour with no conventional edits. Scenes do not get swept or tagged; one simply gives way to another, sometimes abruptly, and each performer plays several characters across the piece. Everything the book says about listening follows from that structure. With no suggestion and no edit, the only available source of material is the other person, which is why "look to your partner, listen to your partner, respond to your partner" is a complete method here rather than a slogan.
+
+**Key contributions to the knowledge graph:** `be-changeable` as the natural result of listening closely rather than an override of your own resistance; `be-present` framed as heightened sensation instead of effort, which is a much more usable instruction; `interdependence` demonstrated at the top of the craft rather than argued for; and the claim that the `relationship` between the two people on stage, not the situation, is what a scene is made of.
+
+**The honest objection.** This is a description of mastery, and descriptions of mastery are famously poor teaching tools. "Respond to your partner" is what they do; it is not a route to being able to do it, and a beginner who reads this book first will often come away with permission to do nothing and call it listening. It rewards people who already have the mechanics and are looking for what to stop doing.
+
+**Also worth knowing.** The pair have been performing together since the early 2000s, and there is a 2009 documentary of the same name as their opening line if you want to see the show before reading the book. Stephen Colbert's line about them is the one everybody quotes: *"One of these guys is the best improviser in the world. And the other one is better."*
