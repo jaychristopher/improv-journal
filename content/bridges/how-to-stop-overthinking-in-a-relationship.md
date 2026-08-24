@@ -12,7 +12,7 @@ entry_atoms: [cognitive-bandwidth, internal-computation, be-present, trust, vuln
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Stop Overthinking in a Relationship
@@ -98,6 +98,48 @@ Not all relationship overthinking is a bandwidth error. Sometimes the computatio
 If you're overthinking because your partner's behavior is genuinely inconsistent — they say one thing and do another, they dismiss your concerns, they respond to vulnerability with withdrawal — your brain isn't malfunctioning. It's processing contradictory data and correctly identifying that the system isn't safe. The fix isn't bandwidth management. It's addressing the actual trust problem, possibly with professional support.
 
 The distinction matters. Overthinking in a fundamentally safe relationship is a bandwidth problem with a bandwidth solution. Overthinking in a fundamentally unsafe relationship is a signal. The mechanism is the same — threat-detection computation consuming processing resources — but the appropriate response is completely different.
+
+## Questions People Ask About Overthinking a Relationship
+
+### How do you stop overanalysing texts and messages?
+
+Stop treating the text as the data, because it is not. A message is the smallest possible sample of somebody: no tone, no face, no timing that means anything, and a reply length that is mostly a function of what they were doing when it arrived.
+
+What makes it addictive is that it looks analysable. There is a fixed artefact sitting there, re-readable, and re-reading feels like gathering evidence when it is producing none — the fifteenth pass over "ok sounds good" contains exactly what the first did. `internal-computation` has found a surface it can run on indefinitely.
+
+The practical rule that works is to answer the message rather than interpret it, and to move anything that actually matters off text entirely. If you are constructing a theory about somebody's punctuation, the theory needs a conversation, not more punctuation.
+
+### Should you tell your partner that you overthink?
+
+Yes, once, as information rather than as a request.
+
+There is a version that helps: "I get in my head about this stuff — if I go quiet, it is usually that and not you." It gives them a way to read your behaviour correctly and asks nothing of them. There is a version that does damage: telling them repeatedly, in the middle of the loop, which converts your partner into the manager of your reassurance and quietly makes them responsible for a state they cannot fix.
+
+The difference matters because reassurance is the mechanism by which this gets worse. Each round works for an hour and raises the dose needed next time, and after enough rounds the person supplying it starts to dread the question — which produces exactly the withdrawal the overthinking was predicting.
+
+### Does overthinking actually push people away?
+
+Not the thinking. The behaviours that come out of it, sometimes, and they are specific enough to be worth naming.
+
+Nobody has ever been left because their partner detected internal deliberation. What is visible is the output: repeated checking, testing, going quiet and waiting to see whether it is noticed, or asking a question you have already asked in a slightly different form. Those are legible and they are tiring, and none of them is the thinking itself.
+
+Which is why "just stop overthinking" is unhelpful advice and also aims at the wrong target. The reachable goal is not a quiet mind. It is not converting the loop into an action — and that is a much smaller ask, achievable on any given evening.
+
+### How do you stop replaying an argument afterwards?
+
+Write down the two or three things you actually want to say, and then stop rehearsing.
+
+Replay is almost always rehearsal in disguise: you are drafting the argument you wish you had made, and the loop continues because a draft has no completion condition — there is always a better phrasing. Committing it to paper ends the drafting, because the thing being sought now exists.
+
+The other half is timing. A conversation reopened at midnight, by the person who has been rehearsing for four hours, against somebody who has not thought about it since, is not the same conversation. `be-present` is genuinely difficult here and worth the wait; the following day the same three points land completely differently.
+
+### Why is it worse at the start of a relationship?
+
+Because you have almost no data and the stakes are already high, which is the exact condition that produces the most computation.
+
+`trust` on this site is an accumulated estimate, and early on there is nothing to accumulate from — every silence is unprecedented, so every silence gets modelled from scratch. Two years in, the same silence is one of hundreds you have seen resolve into nothing, and it costs you nothing to ignore.
+
+That is worth knowing because it makes the early intensity a phase rather than a verdict on you or on them. It also means the useful move is the one that generates data fastest: ask the small direct question now rather than running a simulation, because a real answer ends the loop and a simulated one never does.
 
 ## The Relationship as Improv Scene
 
