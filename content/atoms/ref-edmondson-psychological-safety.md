@@ -1,6 +1,6 @@
 ---
 id: ref-edmondson-psychological-safety
-title: "Amy Edmondson — Psychological Safety and Learning Behavior in Work Teams (1999)"
+title: "Amy Edmondson — Psychological Safety in Work Teams (1999)"
 type: reference
 status: draft
 tags: [references, research, teams, safety, ensemble]
@@ -20,7 +20,7 @@ work:
   published: "1999"
   doi: "10.2307/2666999"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Amy C. Edmondson. "Psychological Safety and Learning Behavior in Work Teams." *Administrative Science Quarterly* 44(2), 350–383, 1999.**

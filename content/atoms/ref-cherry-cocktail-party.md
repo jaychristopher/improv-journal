@@ -1,6 +1,6 @@
 ---
 id: ref-cherry-cocktail-party
-title: "Some Experiments on the Recognition of Speech — Colin Cherry (1953)"
+title: "Colin Cherry — The Cocktail Party Problem (1953)"
 type: reference
 status: draft
 tags: [references, research, cognitive-science, attention, listening]

@@ -1,6 +1,6 @@
 ---
 id: ref-limb-braun-jazz-improvisation
-title: "Neural Substrates of Spontaneous Musical Performance — Limb & Braun (2008)"
+title: "Limb & Braun — Spontaneous Musical Performance (2008)"
 type: reference
 status: draft
 tags: [references, research, neuroscience, spontaneity, attention]
@@ -21,7 +21,7 @@ work:
   published: "2008"
   doi: "10.1371/journal.pone.0001679"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Charles J. Limb and Allen R. Braun. "Neural Substrates of Spontaneous Musical Performance: An fMRI Study of Jazz Improvisation." *PLoS ONE* 3(2), e1679, 2008.**

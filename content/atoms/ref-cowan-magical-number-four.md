@@ -1,6 +1,6 @@
 ---
 id: ref-cowan-magical-number-four
-title: "The Magical Number 4 in Short-Term Memory — Nelson Cowan (2001)"
+title: "Nelson Cowan — The Magical Number 4 (2001)"
 type: reference
 status: draft
 tags: [references, research, cognitive-science, attention, bandwidth]
@@ -20,7 +20,7 @@ work:
   published: "2001"
   doi: "10.1017/S0140525X01003922"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Nelson Cowan. "The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity." *Behavioral and Brain Sciences* 24(1), 87–185, 2001.**

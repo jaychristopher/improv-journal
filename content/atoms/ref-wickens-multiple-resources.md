@@ -1,6 +1,6 @@
 ---
 id: ref-wickens-multiple-resources
-title: "Multiple Resources and Performance Prediction — Christopher Wickens (2002)"
+title: "Christopher Wickens — Multiple Resources (2002)"
 type: reference
 status: draft
 tags: [references, research, cognitive-science, attention, bandwidth]
@@ -20,7 +20,7 @@ work:
   published: "2002"
   doi: "10.1080/14639220210123806"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 **Christopher D. Wickens. "Multiple Resources and Performance Prediction." *Theoretical Issues in Ergonomics Science* 3(2), 159–177, 2002.**
