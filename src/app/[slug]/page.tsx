@@ -317,6 +317,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
     <main className="mx-auto max-w-2xl px-6 py-16">
       <ArticleJsonLd
         eyebrow="Guide"
+        subject={fm.subject}
         title={fm.title}
         description={fm.description}
         url={`/${slug}`}

@@ -1,3 +1,4 @@
+import type { PageSubject } from "@/lib/schema";
 import { authorRef, ogImages, publisherRef, SITE_URL } from "@/lib/seo";
 
 interface ArticleJsonLdProps {
@@ -11,6 +12,7 @@ interface ArticleJsonLdProps {
    * one already declared as og:image rather than a second, different card.
    */
   eyebrow?: string;
+  subject?: PageSubject;
 }
 
 export function ArticleJsonLd({
@@ -20,6 +22,7 @@ export function ArticleJsonLd({
   datePublished,
   dateModified,
   eyebrow,
+  subject,
 }: ArticleJsonLdProps) {
   const data = {
     "@context": "https://schema.org",
@@ -38,6 +41,18 @@ export function ArticleJsonLd({
      * whole time. It was just valid markup with the picture left out.
      */
     image: `${SITE_URL}${ogImages(title, eyebrow)[0].url}`,
+    // Naming the subject is what lets a result be matched to the entity rather
+    // than to a page that mentions its name.
+    ...(subject
+      ? {
+          about: {
+            "@type": subject.type,
+            name: subject.name,
+            ...(subject.description ? { description: subject.description } : {}),
+            ...(subject.sameAs?.length ? { sameAs: subject.sameAs } : {}),
+          },
+        }
+      : {}),
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),
     author: authorRef(),

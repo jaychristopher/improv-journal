@@ -215,12 +215,35 @@ export interface BridgeTargetKeyword {
   parent?: string;
 }
 
+/** A named entity a page is about, for schema.org `about`. */
+export interface PageSubject {
+  type: "Person" | "Organization" | "CreativeWork";
+  name: string;
+  /** One-line disambiguator, e.g. "Improv teacher, 1934-1999". */
+  description?: string;
+  /** Authority records for the same entity. Absolute URLs only. */
+  sameAs?: string[];
+}
+
 export interface BridgeFrontmatter {
   title: string;
   description: string;
   target_keywords: BridgeTargetKeyword[];
   entry_atoms: string[]; // atom IDs this bridge links into
   entry_path: string; // primary path ID
+
+  /**
+   * The named entity this page is about, emitted as schema.org `about`.
+   *
+   * Library pages rank because they say which work they describe, so a crawler
+   * can resolve them against a known entity rather than treating them as an
+   * article that happens to mention it. A page about a person had no way to say
+   * the same thing: /del-close emitted an Article with no subject at all.
+   *
+   * `sameAs` should point at an authority record — Wikipedia, Wikidata — and is
+   * the part doing the disambiguating. Omit it rather than guess one.
+   */
+  subject?: PageSubject;
   /**
    * What the search results for the primary keyword actually look like.
    *

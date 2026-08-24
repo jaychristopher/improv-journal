@@ -9,6 +9,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 2
 serp_verdict: winnable
 serp_top10_dr: [97, 75, 94, 66, 9, 99, 2, 95, 81]
+subject:
+  type: Person
+  name: "Del Close"
+  description: "American improv teacher and director, 1934-1999. Co-founded ImprovOlympic and developed the Harold."
+  sameAs: ["https://en.wikipedia.org/wiki/Del_Close"]
 entry_atoms: [harold, group-mind, connections, opening, be-honest]
 entry_path: systems-of-improv
 status: draft
