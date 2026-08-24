@@ -12,6 +12,7 @@ links:
   - { id: be-present, relation: enables }
   - { id: active-listening, relation: requires }
   - { id: spontaneity, relation: enables }
+  - { id: ref-overlie-standing-in-space, relation: illustrates }
 sources: []
 created: "2026-08-22"
 updated: "2026-08-23"

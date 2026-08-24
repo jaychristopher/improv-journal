@@ -20,9 +20,10 @@ links:
   - { id: fracture-repair-drill, relation: illustrates }
   - { id: group-scene, relation: extends }
   - { id: belief-as-architecture, relation: enables }
+  - { id: ref-sawyer-improvised-dialogues, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 The state in which all participants are tracking the same shared reality without having to explicitly negotiate it. When coherence is high, both players are in the same scene — operating within the same facts, the same emotional register, the same relationship dynamics — without needing to stop and confirm. Coherence is not agreement. Two characters can disagree violently and be perfectly coherent — they just occupy different positions within the same world.

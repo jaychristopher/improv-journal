@@ -25,6 +25,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
   - { id: character, relation: extends }
   - { id: scene-structure, relation: extends }
+  - { id: questions-only, relation: contrasts }
 sources: []
 created: "2026-04-04"
 updated: "2026-08-23"

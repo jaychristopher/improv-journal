@@ -16,6 +16,7 @@ links:
   - { id: giving-notes, relation: enables }
   - { id: side-coaching, relation: enables }
   - { id: ref-edmondson-psychological-safety, relation: illustrates }
+  - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-23"

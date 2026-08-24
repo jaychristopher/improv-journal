@@ -22,6 +22,7 @@ links:
   - { id: ref-viewpoints-bogart-landau, relation: extends }
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
+  - { id: the-machine, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-23"

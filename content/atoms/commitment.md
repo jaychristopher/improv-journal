@@ -24,6 +24,7 @@ links:
   - { id: ref-impro-johnstone, relation: illustrates }
   - { id: one-word-scene, relation: illustrates }
   - { id: blind-offer, relation: illustrates }
+  - { id: musical-improv, relation: enables }
 sources: []
 created: "2026-03-29"
 updated: "2026-08-23"

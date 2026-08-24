@@ -31,6 +31,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-hines-substack, relation: extends }
   - { id: monoscene, relation: contrasts }
+  - { id: ref-halpern-art-by-committee, relation: illustrates }
 sources: []
 created: "2026-04-05"
 updated: "2026-08-23"

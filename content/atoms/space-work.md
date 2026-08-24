@@ -18,6 +18,7 @@ links:
   - { id: offers, relation: extends }
   - { id: space-work-scene, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
+  - { id: what-are-you-doing, relation: enables }
 sources: []
 created: "2026-04-03"
 updated: "2026-08-23"
