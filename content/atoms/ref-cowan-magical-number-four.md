@@ -29,6 +29,12 @@ Where the number comes from. Everywhere this site says your working memory holds
 
 Miller's "seven, plus or minus two" (1956) was offered as a rough estimate and something of a rhetorical device, and it stuck as though it were a measurement. Cowan gathered the studies that isolate storage capacity from the strategies people use to stretch it — rehearsal, chunking, long-term support — and found a smaller and more consistent limit underneath: three to five chunks, averaging about four.
 
+## Should you read the paper
+
+Only if you need the argument rather than the number. It runs to nearly a hundred pages in *Behavioral and Brain Sciences* and most of that is the peer commentary and Cowan's replies, which is the format that journal uses.
+
+The target article is worth it for anybody who has been quoting seven plus or minus two, because watching a careful estimate get assembled is a useful corrective to how confidently the older number is still repeated.
+
 ## Key contributions to the knowledge graph
 
 - The capacity figure the `cognitive-bandwidth` law is stated in — four, not seven

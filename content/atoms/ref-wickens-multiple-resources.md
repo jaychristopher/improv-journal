@@ -29,6 +29,12 @@ Why some things combine effortlessly and others cannot be done at once at all. T
 
 Kahneman modelled attention as a single pool, which predicts that any two tasks interfere in proportion to how demanding they are. Wickens' account is that the pool has structure: tasks conflict to the degree they share a *stage* (perceiving versus responding), a *modality* (hearing versus seeing), a *code* (verbal versus spatial), and a channel of visual attention. Two tasks drawing on different dimensions barely collide. Two drawing on the same one collide badly.
 
+## Should you read the paper
+
+For most readers the correction is the whole value and it is stated above. The paper itself is an ergonomics review aimed at people predicting operator performance in cockpits and control rooms, and it reads that way.
+
+It rewards anybody designing an exercise, though. The dimensions it separates — visual against auditory, spatial against verbal — are exactly what decides whether a constraint you add to a drill will interfere with the thing you are training or run alongside it.
+
 ## Key contributions to the knowledge graph
 
 - Explains the asymmetry the single-pool model cannot — moving while listening is nearly free, planning a sentence while listening is ruinous, because the second pair shares both a stage and a verbal code

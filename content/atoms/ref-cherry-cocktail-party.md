@@ -30,6 +30,12 @@ The origin of the cocktail party problem, and the first evidence that attending 
 
 Cherry played different messages into each ear and asked listeners to shadow one of them — repeat it aloud as it arrived. They managed it. Then he asked what had been in the other ear, and they could report almost nothing: not the words, not the meaning, not whether the language had changed partway through. What did survive was crude physical detail, whether the voice was male or female, whether it had stopped.
 
+## Should you read the paper
+
+It is five pages and unusually readable for 1953, which makes it one of the few primary sources here worth going to directly.
+
+What you get from it is the texture the summaries drop: the specific things listeners failed to notice in the unattended ear, reported plainly, which is more persuasive than any restatement of the finding. Anybody who doubts how much gets discarded while attending to one voice should read the experiments rather than the conclusion.
+
 ## Key contributions to the knowledge graph
 
 - Selecting one stream discards the others rather than backgrounding them, which is why `active-listening` cannot be split across two conversations

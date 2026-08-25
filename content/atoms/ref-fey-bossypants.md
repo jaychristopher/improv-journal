@@ -37,6 +37,18 @@ The single most influential popularization of improv principles outside the impr
 
 **The gun example** originates here: "But if I say 'Freeze, I have a gun,' and you say, 'The gun I gave you for Christmas! You bastard!' then we have started a scene because we have AGREED that my finger is in fact a Christmas gun."
 
+## What is actually in it
+
+Five pages of a memoir, not a manual. The improv material is one chapter inside a book about writing, television and being funny for a living, written for readers who have never been in a class and never intend to be.
+
+That is the achievement rather than the limitation. It is the most-read account of these principles by a very wide margin, and most people who arrive at improv through work, a book club or a corporate away-day arrive through this chapter.
+
+## Who it rewards
+
+Somebody who wants to know why anybody cares, in the time it takes to read five pages. It is also the best short answer to what a non-performer is meant to do with any of this, since Fey is explicitly writing about rooms rather than stages.
+
+An improviser will find nothing operational. The four rules are a summary of a summary, and the section below is the reason that matters.
+
 ## Significance
 
 Brought improv vocabulary into mainstream culture — corporate training, therapy, self-help, LinkedIn posts all trace their "yes, and" usage to this chapter. The popular version is a simplification of what iO and UCB teach, but its cultural impact is enormous. Every improv teacher has students who arrived because of this book.
