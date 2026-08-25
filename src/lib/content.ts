@@ -193,15 +193,43 @@ function linkCitations(htmlStr: string, currentUrl: string | null): string {
   return result;
 }
 
-function linkSources(htmlStr: string): string {
+/**
+ * Link an italicised work title to the library entry that holds it.
+ *
+ * The match used to require the <em> to contain the mapped title and nothing
+ * else, which quietly excluded the form citations are most often written in:
+ * the full bibliographic one. "Behind the Scenes: Improvising Long Form" and
+ * "Attention and Effort." are the same works as the mapped titles and linked to
+ * nothing, on the site's best-performing page type. There was no symptom —
+ * the sentence reads correctly either way — which is the same failure the
+ * citation-linkable guard exists for.
+ *
+ * A subtitle is admitted only after a literal colon, and that restriction is
+ * load-bearing rather than cosmetic. Three mapped titles are prefixes of other
+ * held works: Improvise, of both Improvised Dialogues and Improvise Freely.
+ * Allowing any continuation would file all three under Napier. Requiring the
+ * colon means "Improvise: Scene from the Inside Out" matches and "Improvised
+ * Dialogues: …" cannot, because what follows "Improvise" there is a letter.
+ *
+ * Patterns are tried longest-first so a shorter title can never claim a longer
+ * one's citation. Nothing in the current map depends on that, but the map is
+ * appended to by hand and the failure would be silent.
+ */
+function linkSources(htmlStr: string, currentUrl: string | null): string {
   let result = htmlStr;
-  for (const [pattern, url] of SOURCE_TITLE_MAP) {
-    // Replace <em>Title</em> with linked version, but skip if already inside an <a> tag.
-    // We use a two-pass approach: first find all <em>Title</em>, then check context.
-    const emPattern = new RegExp(`<em>(${pattern.source})</em>`, "g");
+  const byLength = [...SOURCE_TITLE_MAP].sort((a, b) => b[0].source.length - a[0].source.length);
+
+  for (const [pattern, url] of byLength) {
+    // A reference page cites its own work in full; without this it links to itself.
+    if (url === currentUrl) continue;
+
+    const emPattern = new RegExp(`<em>(${pattern.source}(?::[^<]*)?\\.?)</em>`, "g");
     result = result.replace(emPattern, (match, title, offset) => {
-      const before = result.slice(Math.max(0, offset - 100), offset);
-      if (before.includes("<a ") && !before.includes("</a>")) return match;
+      const before = result.slice(Math.max(0, offset - 200), offset);
+      // Already the text of an author-written link, either directly or further back.
+      if (/<a [^>]*>$/.test(before)) return match;
+      if (before.lastIndexOf("<a ") > before.lastIndexOf("</a>")) return match;
+
       const ref = getAtomUrlMap().get(url.replace("/library/", ""));
       const tip = ref ? ref.tip.replace(/"/g, "&quot;") : title;
       return `<a href="${url}" title="${tip}"><em>${title}</em></a>`;
@@ -647,7 +675,7 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
       content,
       html: normaliseGeneratedIds(
         rewriteLegacyInternalLinks(
-          linkAtomRefs(linkCitations(linkSources(rendered.toString()), currentUrl)),
+          linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
         ),
       ),
       slug,
