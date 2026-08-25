@@ -18,7 +18,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: draft
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # How to Be Funny (It's Not What You Think)
@@ -148,6 +148,32 @@ At work the risk is real rather than imagined, so the useful adjustment is not "
 With strangers, the constraint is that you have no shared history to be specific about. So build one fast: the only material you both have is what is happening right now, in this room. That is why observational humour works with people you have just met, and why a rehearsed anecdote usually does not.
 
 If you would rather start from a prompt than from the room, [funny questions to ask](/funny-questions-to-ask) collects the ones that reliably produce something worth building on.
+
+## Questions People Ask About Being Funny
+
+### What do you do when a joke does not land?
+
+Nothing, visibly. The silence after a line that missed is two seconds long and feels like twenty, and almost all the damage comes from what people do in those two seconds rather than from the line itself — the explaining, the repeat with more emphasis, the little apology.
+
+Carry on as though it landed. A group takes its reading of what just happened from you, and a person who moves on without flinching has usually converted a dud into something nobody remembers. The one thing that guarantees a bad moment gets worse is treating it as one out loud.
+
+### Do you have to be quick-witted to be funny?
+
+No, and the belief that you do is a good way to stay quiet. Speed is what funny looks like from outside, because the pause before a remark is invisible and the remark is not.
+
+What is actually doing the work is timing, which is mostly about *when you stop* rather than how fast you start. A specific observation delivered a beat late still works. A fast one that is vague does not, and most people who describe themselves as too slow are reaching for something clever instead of saying the obvious thing, which takes longer and lands less.
+
+### Can you be funny if you are shy?
+
+Yes, and shy people are often better placed than confident ones. The mechanism this page describes is noticing — specificity, honesty, spotting the pattern in what somebody just said — and a person who spends more time watching a room than performing in it has more of that raw material, not less.
+
+What shyness genuinely costs is the willingness to say the thing at all, which is a smaller problem than it feels and a separate one from being funny. It is also the problem improv training is built to work on, which is why so many quiet people end up in it.
+
+### Does watching a lot of comedy make you funnier?
+
+It makes you a better judge of comedy, which is not the same thing and can get in the way. Heavy watching sharpens the part of you that evaluates and leaves the part that produces untouched — so the usual result is a more accurate critic who is now harder on their own attempts.
+
+Producing is a separate skill and it only improves by producing, in front of people, badly at first. What watching genuinely gives you is range: seeing enough different comedians makes it obvious that there is no single correct way to be funny, which is worth knowing before you start copying the nearest one.
 
 ## The Honest Caveat
 
