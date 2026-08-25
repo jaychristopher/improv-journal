@@ -18,7 +18,7 @@ primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # How to Stop Overthinking and Get Out of Your Head
@@ -152,6 +152,32 @@ These exercises help with **everyday overthinking** - the kind that steals your 
 One common case is specific enough to need its own treatment: overthinking that attaches to one relationship rather than to everything. The bandwidth account still applies, but the loop is fed by a person who is present and reacting, which changes what helps — [how to stop overthinking in a relationship](/how-to-stop-overthinking-in-a-relationship) covers that version.
 
 But if overthinking consumes hours of your day, if you can't stop despite wanting to, if it's accompanied by persistent anxiety or depression - that's not a bandwidth problem you can exercise your way out of. Generalized Anxiety Disorder, OCD rumination, and depression-linked rumination involve neurological patterns that require professional support. The bandwidth framework still explains what's happening in your brain. But the intervention needs to be clinical, not theatrical.
+
+## Questions People Ask About Overthinking
+
+### What is the difference between overthinking and thinking something through properly?
+
+Whether it is going anywhere. Deliberation has a stopping condition — you are weighing options, and when one of them wins you stop and act. Overthinking runs the same loop past the point where new information is arriving, which is why the tenth pass over a decision feels like work and produces nothing the third pass did not.
+
+The practical test is whether you could say what would settle it. If there is an answer — a fact you are waiting on, a person you have not asked — you are thinking. If there is not, and you are still going, the loop has detached from the decision and is now just consuming `cognitive-bandwidth`.
+
+### Is overthinking a sign of intelligence?
+
+The idea is popular and the evidence behind it is thinner than the headlines suggest. Some studies have found a correlation between worry and verbal ability, and they are small, contested, and easy to over-read.
+
+The framing is also unhelpful in a specific way: it reclassifies the problem as a credential, which is a very comfortable reason not to do anything about it. Whatever the correlation turns out to be, the loop still costs you the conversation you are having while it runs.
+
+### Does overthinking ever stop completely?
+
+Not really, and aiming for that is part of what keeps it going. The goal in the bandwidth account is not an empty head but a busy one — attention occupied by something outside you, so there is less capacity left over to run the loop with.
+
+That is why the exercises above are all about engagement rather than suppression. Telling yourself to stop thinking is itself a thought, and it takes the same bandwidth as the thing it is trying to interrupt.
+
+### Why is it easier not to overthink when you are with other people?
+
+Because another person supplies a stream of information you cannot predict, and attending to it is not optional. `internal-computation` and listening compete for the same capacity, and a live conversation keeps winning the competition on its own — no willpower involved.
+
+This is the whole reason improvisers stumbled onto the mechanism first. Two people on a stage with nothing prepared have no spare capacity for self-monitoring, and the state that produces is the one everybody else is trying to reach by sitting still and trying harder.
 
 ## The Deeper Insight
 
