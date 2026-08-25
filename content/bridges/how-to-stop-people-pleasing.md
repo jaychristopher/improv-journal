@@ -112,6 +112,26 @@ The instruction to express the first honest thing is right and hard to start on.
 
 For the specific case of refusing a request, see the section on saying no in [how to be more assertive](/how-to-be-more-assertive). For the fear of judgment underneath the pattern, see [how to stop caring what people think](/how-to-stop-caring-what-people-think).
 
+## Questions People Ask About This
+
+### Can you stop at work, where saying no actually has consequences?
+
+Partly, and the honest answer is that the calculation is different rather than the same one with more courage attached. `status` is not symmetrical at work — the person who writes your review holds a raised position whatever either of you intends, so a flat refusal genuinely costs more than it does with a friend.
+
+What transfers intact is the suppression, not the refusal. Most workplace accommodation is not agreeing to things you should have declined; it is agreeing *silently* — not saying the timeline is unrealistic, not naming the risk you can see, not asking the question everybody has. None of that requires a no, and all of it is the same reflex.
+
+### Why does it come back the moment you are tired?
+
+Because it was never a decision, and decisions are what fatigue takes first. Accommodation is the cheaper option in the moment — it needs no drafting, no estimate of how the other person will react, and no tolerance of the pause while they adjust. Everything you were doing instead costs something, and under load the system reverts to the version that costs least.
+
+Which means relapse is not evidence that nothing changed. The useful measure is not whether it happens but how fast you notice, and noticing at all is new.
+
+### What if you genuinely do not know what you want?
+
+Extremely common, and it is a consequence rather than a separate problem. Somebody who has spent years solving for other people's preferences has been running that query and not their own, and the answer is missing because it has not been asked recently enough to be available.
+
+The route back is smaller than deciding what you want in general. Answer it about something trivial and immediate — this coffee, this evening, this seat — where being wrong costs nothing. The faculty is not gone. It is out of practice, and it returns on ordinary questions long before it returns on important ones.
+
 ## The Status Shift
 
 The deeper work is recognizing that people pleasing is a **low-status default** — not a permanent condition. You've spent years practicing accommodation. The neural pathways are deep. But they're still pathways, not personality.
