@@ -41,6 +41,26 @@ export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
   ],
 };
 
+/**
+ * Hubs that Search Console shows drawing impressions and that are not listed
+ * above, because no volume for their terms is recorded anywhere in the repo.
+ *
+ * /practice/formats is the live one. It surfaces for "improv formats",
+ * "improv forms", "long form improv" and "what is long form improv", which is
+ * more distinct terms than any page here except the library, and
+ * content/outlines/all-paths.md marks "improv formats" as inferred rather than
+ * measured. The rule this file follows is that an unsourced number does not go
+ * in, so it stays out and stays invisible to keyword-collisions until then.
+ *
+ * /tools/exercise-picker/beginner is the one to look at carefully when the
+ * numbers arrive. It surfaces for "beginner improv games" while /improv-games
+ * above claims "improv games for beginners" — the same intent, two pages, and
+ * neither aware of the other. Decide which holds it rather than registering
+ * both.
+ *
+ * Ahrefs resets 2026-09-22. Retrieve volumes then and move these in.
+ */
+
 /** Every keyword claimed by a hub, lowercased, mapped to the route holding it. */
 export function routeKeywordOwners(): Map<string, string> {
   const owners = new Map<string, string>();

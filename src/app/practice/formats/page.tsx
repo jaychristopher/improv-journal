@@ -124,6 +124,86 @@ export default async function FormatsPage() {
           </Link>{" "}
           guide covers where both came from.
         </p>
+        <p className="text-foreground/70 mb-4">
+          It is a Chicago invention and a fairly recent one. Short form had been running for decades
+          before{" "}
+          <Link href="/del-close" className="underline">
+            Del Close
+          </Link>{" "}
+          built the first named long form out of the conviction that an improvised piece could hold
+          together the way a written one does. The result was the{" "}
+          <Link href="/practice/formats/harold" className="underline">
+            Harold
+          </Link>
+          , and almost every form below is either a descendant of it or an argument with it.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          Most long form sets are built the same way underneath, whatever they are called. Something
+          at the top generates raw material &mdash; a monologue, a group game, a few minutes of
+          movement &mdash; and the scenes that follow mine it. Later scenes return to what earlier
+          ones established, which is the move{" "}
+          <Link href="/practice/techniques/reincorporation" className="underline">
+            reincorporation
+          </Link>{" "}
+          names and the reason a long form set feels like it was about something. Nobody decided
+          what it was about in advance; the piece accumulated a subject and then paid it off.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          The families worth knowing, all of which have a page here:
+        </p>
+        <ul className="text-foreground/70 mb-4 space-y-2">
+          <li>
+            <strong>
+              <Link href="/practice/formats/montage" className="underline">
+                Montage
+              </Link>
+            </strong>{" "}
+            &mdash; scenes connected by theme rather than by structure. The honest first long form,
+            and the one most groups are actually doing when they say they are doing a Harold.
+          </li>
+          <li>
+            <strong>
+              <Link href="/practice/formats/harold" className="underline">
+                Harold
+              </Link>
+            </strong>{" "}
+            &mdash; an opening, three sets of scenes, and the returns between them. Taught early
+            almost everywhere and considerably harder than what it is taught alongside.
+          </li>
+          <li>
+            <strong>
+              <Link href="/practice/formats/narrative-longform" className="underline">
+                Narrative long form
+              </Link>
+            </strong>{" "}
+            &mdash; one story, told forward, with characters who persist. Rarer in Chicago-descended
+            training and the default in much of Europe.
+          </li>
+          <li>
+            <strong>
+              <Link href="/practice/formats/monoscene" className="underline">
+                Monoscene
+              </Link>
+            </strong>{" "}
+            &mdash; a single scene, one location, for the whole set. Removes every escape route,
+            which is why it is a diagnostic as much as a form.
+          </li>
+          <li>
+            <strong>
+              <Link href="/practice/formats/two-person-longform" className="underline">
+                Two-person long form
+              </Link>
+            </strong>{" "}
+            &mdash; no backline, no edits to hide behind. The small cast makes it look like a
+            beginner form and it is the opposite.
+          </li>
+        </ul>
+        <p className="text-foreground/70 mb-4">
+          A group starting out should run montages for longer than feels impressive. The structure
+          in a Harold is not what makes a Harold good, and a cast that cannot yet sustain a
+          two-handed scene for four minutes will not be rescued by having somewhere to be at minute
+          twelve.
+        </p>
       </section>
 
       <section className="mt-12">
