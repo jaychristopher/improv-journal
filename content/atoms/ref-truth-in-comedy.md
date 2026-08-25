@@ -25,7 +25,7 @@ work:
   published: "1994"
   isbn: "1566080037"
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Charna Halpern, Del Close, Kim "Howard" Johnson. *Truth in Comedy: The Manual of Improvisation.* Meriwether Publishing, 1994.**
@@ -42,16 +42,42 @@ The through-line is a single claim — that comedy comes out of honest behaviour
 
 It is also, in an unusual way, a transcription. Del Close was famously not a writer; Halpern and Johnson assembled the book around his teaching, which is why the strongest passages read like someone talking and the weaker ones read like someone remembering what he said.
 
+## How to read it
+
+In one sitting, and as a position paper rather than a handbook. The argument is cumulative and the anecdotes are carrying it rather than decorating it, so a reader who skims between the stories for the technique will find very little and conclude the book is thin.
+
+Taken the other way round it does its job in an afternoon. The question it answers is what improvisation is for, and it is unusually direct about that at a length no modern manual would risk.
+
+## What it does not contain
+
+The mechanics, mostly. There is no game-of-the-scene vocabulary, which arrived later and from a different school. There is no account of teaching — the book describes what a good ensemble does and not how a class gets a group there. And there is nothing on two-person work, now a substantial part of the form and not a settled shape in 1994.
+
+That silence is why the books after it exist. Napier's *Improvise* and the *UCB Comedy Improvisation Manual* are both, in part, replies to it: same tradition, opposite complaint, each supplying the procedure this one declines to give.
+
 ## Who it rewards, and who it does not
 
 It converts people. That is genuinely its function, and it explains the reverence it attracts — read at the right moment it reframes improv from a comedy discipline into something closer to an ethic, and a great many performers date their commitment from it.
 
-Somebody who needs to actually build a Harold will need something else alongside it. Napier's *Improvise* and the UCB manual both exist partly because this book left the mechanics underspecified, and the honest recommendation is to read this one for why and one of those for how.
+Somebody who needs to actually build a Harold will need something else alongside it. Napier and the UCB manual both exist partly because this book left the mechanics underspecified, and the honest recommendation is to read this one for why and one of those for how.
 
 Its weakest inheritance is the phrase "there are no mistakes". As stated in the book it has a precise meaning — that anything can be justified after the fact, so nothing has to be treated as a failure in the moment — and detached from that context it has become permission for a great deal of unexamined work.
 
-**Key contributions to the knowledge graph:** the ensemble as the unit of value, against the star system it was reacting to; `justification` as the mechanism that makes "no mistakes" a technique rather than a comfort; `yes-and` pushed past politeness into agreement as an active obligation; and the support ethic in its most quoted form — *"Treat others as if they are poets, geniuses and artists, and they will be."*
+## Why it still gets handed to beginners
 
-**On editions and authorship.** Meriwether published it in April 1994 and it has not been substantially revised. All three names on the cover matter: Halpern co-founded iO with Close and ran it for decades after his death in 1999, and Kim Howard Johnson was a performer and journalist who later wrote the Close biography. Close is the source, not the author.
+Thirty years on it is often still the first book a new improviser is given, and the reason is not that it is the best manual available. It plainly is not, and the people handing it over usually know that.
 
-**What it was arguing against.** The book reads oddly now because its opponent is invisible: Second City's revue tradition, where improvisation was a writing tool that produced sketches rather than a performance form in its own right. Nearly every insistence in it — the ensemble over the star, the form over the bit, truth over the joke — is a position taken against that, and the vehemence makes more sense once you know what it was for.
+It is that nothing else makes the case for why any of this is worth doing. A person three weeks into a beginner course is not short of exercises; they are trying to work out whether to keep going, and this is the only book in the canon that argues the point directly.
+
+## Key contributions to the knowledge graph
+
+The ensemble as the unit of value, against the star system it was reacting to; `justification` as the mechanism that makes "no mistakes" a technique rather than a comfort; `yes-and` pushed past politeness into agreement as an active obligation; and the support ethic in its most quoted form — *"Treat others as if they are poets, geniuses and artists, and they will be."*
+
+## Editions and authorship
+
+Meriwether published it in April 1994 and it has not been substantially revised, so edition is not a decision anybody needs to make.
+
+All three names on the cover matter. Halpern co-founded iO with Close and ran it for decades after his death in 1999. Kim Howard Johnson was a performer and journalist who later wrote the Close biography, and much of the assembly is his. Close is the source rather than the author, which accounts for both the book's voice and its unevenness.
+
+## What it was arguing against
+
+The book reads oddly now because its opponent is invisible: Second City's revue tradition, where improvisation was a writing tool that produced sketches rather than a performance form in its own right. Nearly every insistence in it — the ensemble over the star, the form over the bit, truth over the joke — is a position taken against that, and the vehemence makes more sense once you know what it was for.
