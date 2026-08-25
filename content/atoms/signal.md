@@ -39,6 +39,24 @@ Key property: signals are **observer-interpreted**. What you intend to signal an
 
 Read from the receiving end, this is also the working definition of the thing: [being articulate](/how-to-be-more-articulate) is a property of how little work the listener has to do, not of the vocabulary available to the speaker.
 
+## What noise actually is
+
+The page above leans on signal-to-noise without saying what the noise is made of, and it is not silence or stillness. Noise is signal you did not mean to send, competing for the same channels as the one you did.
+
+Most of it comes from self-monitoring leaking outward. A performer checking how the line landed produces a glance at the audience; one who is unsure produces a rising inflection that turns a statement into a question; one who is embarrassed laughs a fraction after their own line. None of those is neutral. Each arrives as information, and because it is unintended it is usually more believed than the deliberate part.
+
+Hedging is the commonest form and the least noticed. "Maybe we should, I don't know, go in?" transmits a proposal and a disclaimer at once, and the receiver has to decide which to act on. The disclaimer usually wins, because it is the more specific of the two.
+
+Over-explanation is noise as well, which is counterintuitive. Adding words to make something clearer lowers the ratio when the additional words carry no new information — the receiver now has more to sort through to find the same content, which is exactly what `be-simple` exists to prevent.
+
+## When incongruence is the point
+
+The distinction the page draws between performer and character is worth taking further, because it is the thing that separates a lie played well from a scene that has simply gone muddy.
+
+A character lying sends contradictory signals on purpose: the words say one thing and the body says another, and an audience reads both layers at once and enjoys the gap. For that to work, the performer has to be entirely congruent *about* the incongruence — committed to the lie, clear about the tell, deliberate about which channel carries which.
+
+Where it fails is when the contradiction is unintended. Then the audience still reads both layers, cannot tell which is the scene, and settles on the least generous interpretation available — usually that the performer is uncomfortable rather than that the character is. `emotional-truth` is the difference: the feeling being transmitted has to be real at the level of the performer even when the character is faking one.
+
 ## The limits of the transmission metaphor
 
 Treating communication as signals sent and received is useful and it is a model rather than a description, which is worth saying on the page that leans on it hardest.
