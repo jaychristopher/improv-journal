@@ -115,8 +115,30 @@ const ATOM_SECTIONS = [
   { heading: "Reading list — the works this site cites", types: ["reference"] },
 ];
 
+/**
+ * The hubs, and what each is for.
+ *
+ * Titles are held here rather than derived, because this script runs as
+ * `prebuild` — .next holds the previous build when it runs, so reading titles
+ * from the output would publish whatever was true last time.
+ *
+ * That makes the list drift, and it had: eight of thirteen entries named a
+ * page something the page no longer called itself. "Listen" had become
+ * "Improv Podcasts", "Reading List" had become "Improv Reading List", and so
+ * on down the list — this is the file AI crawlers read to find out what the
+ * site contains, describing the site as it was.
+ *
+ * A shorter label is still allowed. "Improv Glossary" for a page titled
+ * "Improv Glossary: Vocabulary and Terms Explained" is a good entry, not
+ * drift. The guard in llms-hubs.test.ts enforces the weaker rule that keeps
+ * that legal: the label here must be how the page's own title starts.
+ */
 const HUBS = [
-  ["/guides", "Guides", "Problem-first entry points connecting a difficulty to improv practice."],
+  [
+    "/guides",
+    "Improv Guides",
+    "Problem-first entry points connecting a difficulty to improv practice.",
+  ],
   [
     "/topics/personal-growth",
     "Personal Growth guides",
@@ -129,15 +151,44 @@ const HUBS = [
   ],
   ["/topics/teams", "Teams & Leadership guides", "Team building, trust, collaboration, feedback."],
   ["/topics/improv-skills", "Improv Skills guides", "Fundamentals, practice, and getting unstuck."],
-  ["/how-it-works", "How It Works", "The laws and principles the whole system rests on."],
-  ["/practice", "Practice", "Exercises, techniques, formats and vocabulary."],
+  ["/how-it-works", "How Improv Works", "The laws and principles the whole system rests on."],
+  [
+    "/how-it-works/principles",
+    "The 9 Improv Principles",
+    "The behavioural set, what each is for, and which to work on first.",
+  ],
+  [
+    "/how-it-works/diagnosis",
+    "When It Breaks",
+    "Failure modes, what causes each, and how a scene recovers.",
+  ],
+  ["/practice", "Improv Practice", "Exercises, techniques, formats and vocabulary."],
+  [
+    "/practice/exercises",
+    "Improv Exercises",
+    "Drills that each train one skill, filterable by level and focus.",
+  ],
+  [
+    "/practice/techniques",
+    "Improv Techniques",
+    "The specific moves, and which one a scene needs when it stalls.",
+  ],
+  [
+    "/practice/formats",
+    "Improv Formats",
+    "Long form and short form, every format, and how to choose one.",
+  ],
   ["/improv-games", "Improv Games", "Every improv game and exercise, by level and skill focus."],
   ["/practice/vocabulary", "Improv Glossary", "Improv terms, each defined in one line."],
-  ["/library", "Reading List", "The books and sources behind the material."],
-  ["/paths", "Learning Paths", "Structured journeys for a particular kind of reader."],
-  ["/traditions", "Traditions", "Johnstone, Spolin, Close, UCB and Annoyance compared."],
-  ["/listen", "Listen", "The material as podcast audio."],
-  ["/tools/exercise-picker", "Exercise Picker", "Find an exercise by level and skill focus."],
+  ["/library", "Improv Reading List", "The books and sources behind the material."],
+  ["/paths", "Improv Learning Paths", "Structured journeys for a particular kind of reader."],
+  ["/traditions", "Improv Traditions", "Johnstone, Spolin, Close, UCB and Annoyance compared."],
+  ["/listen", "Improv Podcasts", "The material as podcast audio, across three shows."],
+  [
+    "/tools/exercise-picker",
+    "Improv Exercise Picker",
+    "Find an exercise by level and skill focus.",
+  ],
   ["/about", "About", "Who writes this, the sources used, and how the site is built."],
 ];
 

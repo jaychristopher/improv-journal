@@ -8,20 +8,25 @@ This file is generated from the site's content, so it lists everything rather th
 
 ## Start here
 
-- [Guides](https://www.physicsofconnection.com/guides): Problem-first entry points connecting a difficulty to improv practice.
+- [Improv Guides](https://www.physicsofconnection.com/guides): Problem-first entry points connecting a difficulty to improv practice.
 - [Personal Growth guides](https://www.physicsofconnection.com/topics/personal-growth): Overthinking, confidence, creativity, fear, presence.
 - [Relationships & Communication guides](https://www.physicsofconnection.com/topics/communication): Listening, conversation, conflict, connection.
 - [Teams & Leadership guides](https://www.physicsofconnection.com/topics/teams): Team building, trust, collaboration, feedback.
 - [Improv Skills guides](https://www.physicsofconnection.com/topics/improv-skills): Fundamentals, practice, and getting unstuck.
-- [How It Works](https://www.physicsofconnection.com/how-it-works): The laws and principles the whole system rests on.
-- [Practice](https://www.physicsofconnection.com/practice): Exercises, techniques, formats and vocabulary.
+- [How Improv Works](https://www.physicsofconnection.com/how-it-works): The laws and principles the whole system rests on.
+- [The 9 Improv Principles](https://www.physicsofconnection.com/how-it-works/principles): The behavioural set, what each is for, and which to work on first.
+- [When It Breaks](https://www.physicsofconnection.com/how-it-works/diagnosis): Failure modes, what causes each, and how a scene recovers.
+- [Improv Practice](https://www.physicsofconnection.com/practice): Exercises, techniques, formats and vocabulary.
+- [Improv Exercises](https://www.physicsofconnection.com/practice/exercises): Drills that each train one skill, filterable by level and focus.
+- [Improv Techniques](https://www.physicsofconnection.com/practice/techniques): The specific moves, and which one a scene needs when it stalls.
+- [Improv Formats](https://www.physicsofconnection.com/practice/formats): Long form and short form, every format, and how to choose one.
 - [Improv Games](https://www.physicsofconnection.com/improv-games): Every improv game and exercise, by level and skill focus.
 - [Improv Glossary](https://www.physicsofconnection.com/practice/vocabulary): Improv terms, each defined in one line.
-- [Reading List](https://www.physicsofconnection.com/library): The books and sources behind the material.
-- [Learning Paths](https://www.physicsofconnection.com/paths): Structured journeys for a particular kind of reader.
-- [Traditions](https://www.physicsofconnection.com/traditions): Johnstone, Spolin, Close, UCB and Annoyance compared.
-- [Listen](https://www.physicsofconnection.com/listen): The material as podcast audio.
-- [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
+- [Improv Reading List](https://www.physicsofconnection.com/library): The books and sources behind the material.
+- [Improv Learning Paths](https://www.physicsofconnection.com/paths): Structured journeys for a particular kind of reader.
+- [Improv Traditions](https://www.physicsofconnection.com/traditions): Johnstone, Spolin, Close, UCB and Annoyance compared.
+- [Improv Podcasts](https://www.physicsofconnection.com/listen): The material as podcast audio, across three shows.
+- [Improv Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
 ## Guides (78)
@@ -262,7 +267,7 @@ This file is generated from the site's content, so it lists everything rather th
 - [La Ronde](https://www.physicsofconnection.com/practice/formats/la-ronde): La Ronde is a character-chain longform format where each two-person scene shares one character with the next, forming a circle that returns to the first...
 - [Micetro](https://www.physicsofconnection.com/practice/formats/micetro): Micetro is Keith Johnstone's elimination format (also spelled "Maestro"). Individual performers compete; the audience votes to eliminate one player each round...
 - [Montage](https://www.physicsofconnection.com/practice/formats/montage): Montage is the most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters.
-- [Musical Improv](https://www.physicsofconnection.com/practice/formats/musical-improv): Improvised scenes performed with live musical accompaniment, where performers spontaneously create songs — lyrics, melody, and sometimes choreography — in real...
+- [Musical Improv: How Improvised Songs Get Made](https://www.physicsofconnection.com/practice/formats/musical-improv): Improvised scenes performed with live musical accompaniment, where performers spontaneously create songs — lyrics, melody, and sometimes choreography — in real...
 - [Narrative Longform](https://www.physicsofconnection.com/practice/formats/narrative-longform): Narrative longform is longform improv that creates a coherent story with beginning, middle, and end — an improvised play or film.
 - [Organic Longform](https://www.physicsofconnection.com/practice/formats/organic-longform): Organic longform is longform improvisation with no predetermined structure. No preset opening, no mandated beats, no required group games, no predetermined...
 - [Party Quirks](https://www.physicsofconnection.com/practice/formats/party-quirks): Party Quirks is one of the most recognisable shortform games, and the one most often played badly. A host throws a party knowing nothing.
