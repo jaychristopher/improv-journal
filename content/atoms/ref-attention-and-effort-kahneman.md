@@ -18,12 +18,26 @@ work:
   publisher: "Prentice-Hall"
   published: "1973"
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Daniel Kahneman. *Attention and Effort.* Prentice-Hall, 1973.**
 
 The foundational capacity model of attention. Establishes that attention is a limited, general-purpose resource pool with flexible allocation. When total demand exceeds available capacity, lower-priority channels degrade — directly supporting the claim that reception fails under cognitive load.
+
+## What it is, and what it is not
+
+A technical monograph, not a trade book. It arrived nearly four decades before *Thinking, Fast and Slow*, it is written for researchers, and anybody coming to it expecting the later book's manner will find something much drier and considerably more precise.
+
+What it establishes is a model rather than a set of findings: attention treated as a single pool of capacity that can be allocated flexibly, with effort as the variable governing how much is drawn. That framing is why it still gets cited — the specific experiments have been overtaken, and the model has not.
+
+## Who it rewards
+
+Somebody who wants the original statement of an idea they have already met second-hand. If you have read that attention is finite and wondered what that claim actually rests on, this is where it was made carefully.
+
+It is a poor first book on attention and an unnecessary one for most practitioners. The parts that matter to improv — that capacity is limited, that allocation is competitive, that overload degrades secondary tasks first — are fully stated in three sentences and do not require the monograph to be believed.
+
+**The honest caveat.** Its single-pool model is the part most revised since. Wickens' multiple-resource account, already noted above, is a better description of why some task pairs interfere and others barely do, and a reader who takes the 1973 model as current will over-predict interference between tasks that use different channels.
 
 **Key contributions to the knowledge graph:**
 - Attention as finite resource — the scientific basis for the cognitive-bandwidth law
