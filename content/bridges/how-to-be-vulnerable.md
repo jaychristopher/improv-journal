@@ -91,7 +91,7 @@ The sequence matters absolutely: safety first, then bravery. Container first, th
 
 ## Building the Container in Real Life
 
-You can build this structure anywhere — in a relationship, a team, a friendship — using the same principles the ensemble uses.
+You can build this structure anywhere — in a relationship, a team, a friendship — using the same principles the ensemble uses. The relationship version has its own mechanics, and [questions for couples](/questions-for-couples) is built around the one that matters most here: reciprocity, where whoever asks answers at the same depth.
 
 **Start by receiving well.** When someone makes an offer — shares an idea, expresses a feeling, takes a small risk — respond to it before evaluating it. Acknowledge what they said. Build on it. Receiving means sitting with the offer long enough for the person to know it landed.
 

@@ -76,7 +76,7 @@ Most lists of deep questions are really lists of thought-provoking ones — hypo
 
 **A question that makes you think produces a considered answer, and considered is the problem.** Thinking is the step in which the answer gets shaped for its audience. The hypothetical also asks about a person who does not exist — the you that would face that situation — which is a safe distance to speak from and reveals about as much as any other piece of fiction.
 
-The questions that build a relationship do the opposite. They ask for something that has already happened, so there is nothing to construct and no position to defend. You are not being asked what you believe about regret; you are being asked what you still think about at four in the morning, and one of those has a specific answer.
+The questions that build a relationship do the opposite. They ask for something that has already happened, so there is nothing to construct and no position to defend. You are not being asked what you believe about regret; you are being asked what you still think about at four in the morning, and one of those has a specific answer. That distinction does most of the work in a long relationship too, where the risk is not depth but assuming you already know the answer — [questions for couples](/questions-for-couples) is organised around updating what you think you know.
 
 Both belong in a conversation. Hypotheticals are excellent openers and poor closers: they warm a room up and let people be entertaining at no risk. Use them early, then stop using them, because a conversation that stays hypothetical all evening is one where two people were interesting at each other for three hours and learned nothing.
 

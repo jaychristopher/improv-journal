@@ -165,7 +165,7 @@ What it is genuinely good for: two people who want to skip the eighteen months t
 
 ## When Not to Use It
 
-On a first date where either person is unsure — the format is intense and consent to intensity has to be genuine. With a colleague, where the power dynamics make declining expensive. And with anybody who has not been told what it is, which turns a structure into a manoeuvre.
+On a first date where either person is unsure — the format is intense and consent to intensity has to be genuine. For a first date that is not the place for a structured procedure, [questions to ask a girl](/questions-to-ask-a-girl) makes the case that the list was never the difficult part. With a colleague, where the power dynamics make declining expensive. And with anybody who has not been told what it is, which turns a structure into a manoeuvre.
 
 For gentler versions of the same mechanism: [questions to get to know someone](/questions-to-get-to-know-someone) for the early increments, [deep questions to ask](/deep-questions-to-ask) for the escalation without the protocol, and [questions for couples](/questions-for-couples) for people who are long past the stranger problem and have a different one.
 
