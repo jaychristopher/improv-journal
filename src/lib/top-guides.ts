@@ -127,6 +127,27 @@ const PROMOTE_IF_REACHABLE = 3;
  */
 const PROMOTE_IF_FLOOR_UNDER = 6;
 
+/**
+ * A floor that rests on one result is not corroborated.
+ *
+ * `npm run seo:audit` says it plainly — "6 of these rest on a single reachable
+ * result — treat the minimum with care" — and one of the six was a page this
+ * rule had promoted to all 376 pages. how-to-overcome-fear-of-failure has a
+ * top ten of [95, 62, 86, 99, 70, 92, 83, 1]: a lone DR 1 against seven
+ * domains between 62 and 99. That single page proves less than it looks. It
+ * may be ranking on something no amount of authority transfers.
+ *
+ * So where the distribution has been recorded, the floor has to be backed by a
+ * second reachable result. Where it has not — 48 verdicts predate the profile
+ * and carry only a minimum — the floor is the only evidence there is and it
+ * still counts, on the rule this file already follows elsewhere: absent data
+ * is not evidence of being shut out.
+ *
+ * That asymmetry is deliberate rather than untidy. The stronger test applies
+ * to the pages we know more about, not less.
+ */
+const CORROBORATING_REACHABLE = 2;
+
 export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
@@ -144,13 +165,16 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
           reachable: (bridge.frontmatter.serp_top10_dr ?? []).filter((dr) => dr < REACHABLE_UNDER)
             .length,
           floor: bridge.frontmatter.serp_min_dr,
+          hasDistribution: (bridge.frontmatter.serp_top10_dr ?? []).length > 0,
         };
       })
       .filter(
         (guide) =>
           guide.reach >= PROMOTION_FLOOR ||
           guide.reachable >= PROMOTE_IF_REACHABLE ||
-          (guide.floor !== undefined && guide.floor < PROMOTE_IF_FLOOR_UNDER),
+          (guide.floor !== undefined &&
+            guide.floor < PROMOTE_IF_FLOOR_UNDER &&
+            (!guide.hasDistribution || guide.reachable >= CORROBORATING_REACHABLE)),
       )
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.verdict !== "authority")
