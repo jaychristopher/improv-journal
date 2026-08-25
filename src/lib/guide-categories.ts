@@ -161,6 +161,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "theatre-games",
       "improv-games-for-kids",
       "improv-warm-up-games",
+      "2-person-improv-games",
       "improv-prompts",
       "viewpoints",
       "del-close",

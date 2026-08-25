@@ -99,6 +99,7 @@ describe("verdict freshness", () => {
   const AWAITING_SERP_CHECK = new Set([
     "how-to-think-on-your-feet",
     "improv-team-building",
+    "2-person-improv-games",
     "improv-games-for-kids",
     "improv-warm-up-games",
     "viola-spolin",

@@ -24,8 +24,9 @@ This file is generated from the site's content, so it lists everything rather th
 - [Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 
-## Guides (77)
+## Guides (78)
 
+- [2 Person Improv Games: What Two People Can Actually Do](https://www.physicsofconnection.com/2-person-improv-games): Most improv games quietly assume a circle of eight. These do not. What a pair can train alone, what they cannot, and how to run a session.
 - [21 Questions Game: How to Play, and 181 to Ask](https://www.physicsofconnection.com/21-questions-game): The number is the mechanism. A fixed count removes the polite exit at question six and guarantees an ending, which is the only reason this gets anywhere real.
 - [36 Questions to Fall in Love: The List and the Mechanism](https://www.physicsofconnection.com/36-questions-to-fall-in-love): The full set from Aron's 1997 study, plus what the lists leave out: what the procedure was built to do, and why the escalation does the work.
 - [5-Minute Team Building Activities That Actually Work](https://www.physicsofconnection.com/5-minute-team-building): You don't need an escape room. Twenty improv exercises that shift how a group interacts, grouped by what is actually wrong with the room.

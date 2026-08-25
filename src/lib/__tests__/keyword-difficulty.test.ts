@@ -14,6 +14,7 @@ describe("keyword difficulty", () => {
   const PROVIDER_UNAVAILABLE = new Set([
     "how-to-think-on-your-feet",
     "improv-team-building",
+    "2-person-improv-games",
     "improv-games-for-kids",
     "improv-warm-up-games",
     "viola-spolin",

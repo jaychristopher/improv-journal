@@ -111,7 +111,7 @@ This is the one most trust exercises omit, and it is the one that matters most. 
 
 ## Using These With One Other Person
 
-Six of the seven are two-person exercises. Only group mind cultivation needs a room. So most of this works between a couple, two friends, a manager and a report, or any pair whose trust has gone thin — and the pair version is in some ways the harder one, because there is nowhere to hide in a group of two and no one else to carry a round.
+Six of the seven are two-person exercises. Only group mind cultivation needs a room. The performance-oriented version of the same constraint is in [2 person improv games](/2-person-improv-games). So most of this works between a couple, two friends, a manager and a report, or any pair whose trust has gone thin — and the pair version is in some ways the harder one, because there is nowhere to hide in a group of two and no one else to carry a round.
 
 What changes is not the exercise but the ordering and the stakes.
 

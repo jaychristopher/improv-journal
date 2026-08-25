@@ -488,6 +488,18 @@ export default async function ImprovGamesPage() {
           sets out which games suit which age and what changes with teenagers.
         </p>
 
+        <h3 className="mt-6 mb-2 font-semibold">What if there are only two of you?</h3>
+        <p className="text-foreground/70 mb-4">
+          Most of the list above needs a circle, and the rules usually do not say so until you are
+          halfway through them. Rotation, tagging out and hiding briefly in a round all require
+          bodies.{" "}
+          <Link href="/2-person-improv-games" className="underline">
+            2 person improv games
+          </Link>{" "}
+          covers what survives the shrink, and why a pair gets more repetitions in an hour than a
+          class of twelve does in a term.
+        </p>
+
         <h3 className="mt-6 mb-2 font-semibold">
           Which improv game should you start a session with?
         </h3>
