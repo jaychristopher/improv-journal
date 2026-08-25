@@ -8,6 +8,7 @@ links:
   - { id: yes-and, relation: extends }
   - { id: accepting-the-offer, relation: extends }
   - { id: let-yourself-be-changed, relation: enables }
+  - { id: be-supportive, relation: enables }
   - { id: negation, relation: contrasts }
   - { id: blocking, relation: contrasts }
   - { id: bulldozing, relation: contrasts }
@@ -42,6 +43,24 @@ The underlying architecture: **build on what exists** and **preserve shared stat
 The gun example from Tina Fey (*Bossypants*): "Freeze, I have a gun." / "That's not a gun, that's your finger." — fracture. Versus: "The gun I gave you for Christmas! You bastard!" — state preserved, state extended, relationship and emotion established in a single line.
 
 Acceptance also has **amplitude**. You can accept reluctantly (the offer is real but you resist its implications), fully (you receive and extend with energy), or in Johnstone's term, **overaccept** — take a small offer and treat it as enormous. Someone says "it's Tuesday" and you panic because that's when your surgery is scheduled. All three are positive. What matters is that the shared state is preserved.
+
+## Which amplitude, and when
+
+The three amplitudes above are not interchangeable, and choosing wrongly is a commoner fault than blocking.
+
+Overaccepting belongs on small offers. "It's Tuesday" is inert until somebody treats it as enormous, and the whole point of the move is that it manufactures stakes from material that had none. Used on an offer that already carries weight it does the opposite — two performers both escalating a large thing produces noise rather than a scene, which is the same arithmetic as taking the smaller job in `be-supportive`.
+
+Reluctant acceptance is right precisely where the offer is already big. Accepting "I've left your father" with matching energy flattens it; accepting it while visibly not wanting it is what makes it land. Reluctance here is not resistance to the offer, which would be `blocking`. It is resistance to the *implications*, which is what a person actually does when something large arrives.
+
+Full acceptance is the default and the least interesting of the three, which is why it is the right starting point. It is also the one to return to whenever a scene has become confusing: receive the thing plainly, extend it plainly, and let the amplitude come back once everybody knows where they are.
+
+## Accepting an offer that is weak
+
+The hard case is not the offer you dislike. It is the offer that arrives vague, mumbled, or apparently pointless, and the two instincts it produces are both forms of rejection.
+
+Fixing it is rejection. Quietly restating your partner's woolly contribution as the sharper thing they presumably meant tells the room their version did not survive, and they will hear it even if nobody could name what happened. Ignoring it is the same move performed more politely.
+
+The move that works is to treat it as deliberate and supply the significance yourself. A vague offer is an invitation to specify rather than a failure to be corrected — the person who says "there's something in the box" has handed you the box and the choice of what is in it, which is more generous than it looked. Deciding, out loud, makes their offer retroactively strong, and it is very hard to tell afterwards which of you did the work. That is the point.
 
 ## Critical clarification
 
