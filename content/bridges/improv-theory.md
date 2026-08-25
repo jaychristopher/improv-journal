@@ -34,7 +34,7 @@ His key books — *Impro* and *Impro for Storytellers* — remain the most psych
 
 ### Viola Spolin: Games, Side-Coaching, and the Body First
 
-Spolin is the mother of American improv. Working in Chicago in the 1940s and 50s, she developed theater games — structured exercises with specific rules and objectives — as a way to teach improvisation to non-actors, including children and immigrants learning English.
+Spolin is the mother of American improv. Working in Chicago in the 1940s and 50s, she developed [theater games](/theatre-games) — structured exercises with specific rules and objectives — as a way to teach improvisation to non-actors, including children and immigrants learning English.
 
 Her core insight: **the body knows before the mind does.** Her games bypass intellectual planning by giving players a physical focus — a point of concentration — that occupies the conscious mind while the creative unconscious does the real work. Where Johnstone attacks planning through psychological insight, Spolin attacks it through game structure.
 
