@@ -15,7 +15,7 @@ primary_cta_target: sound-ball
 secondary_cta_target: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # Improv Games for Kids: What Works at Each Age
@@ -85,6 +85,32 @@ Four things matter more than the game list, and one thing matters before them: w
 - **Never make one child perform alone in front of the rest.** The single most reliable way to lose a room. Everything on this page can be run so that nobody is the only person moving.
 - **Reward the obvious.** Children reaching for something clever is the same instinct as adults doing it and produces the same thin work. `obvious-choice` is worth praising out loud — the plain answer given quickly is the correct answer.
 - **Stop early.** Every session should end while the class still wants another go. This matters more with children than any other group, because the memory they carry to next week is the last ninety seconds.
+
+## Questions People Ask About Running These With Children
+
+### What do you do when it turns into chaos?
+
+Narrow the game rather than raise your voice. Chaos in a room of children is almost never defiance; it is what happens when a game has more freedom in it than the group can currently hold, and the group fills the gap with volume.
+
+So take freedom away. Fewer players at once, a smaller physical area, one instruction instead of two, a round that lasts thirty seconds. A game that felt too easy for them and stayed under control is a better session than an ambitious one that came apart, because the version that came apart taught the room that these games end in shouting.
+
+### How do you stop the same three children dominating?
+
+Change the structure, not the children. Asking the loud ones to hold back and the quiet ones to speak up puts the problem back on the people least able to solve it, and it makes both groups self-conscious.
+
+Use formats where turn-taking is built in and nobody chooses when they go: circle games that pass in one direction, games with a fixed order, pairs rather than a whole-group free-for-all. Pairs are the most useful and the most underused — in a room of thirty working in fifteen pairs, everybody is talking and nobody is performing for an audience of twenty-nine.
+
+### Do you need drama training to run them?
+
+No, and it may help not to have any. These games were built for community workers and classroom teachers, not for directors, and the instructions are the whole method — a person who follows them plainly usually gets better results than somebody adding performance notes.
+
+What you do need is a willingness to play rather than supervise. An adult standing at the edge of the circle with a clipboard produces performance-for-approval, which is precisely the reflex the games are meant to dissolve. Join in badly and visibly; it is the single most useful thing you can do.
+
+### Do you need a big space, or does a classroom work?
+
+A classroom works, and the constraint is chairs rather than square metres. Most of these need the group to see each other and to be able to move a little, which means pushing the furniture to the walls rather than booking a hall.
+
+If the furniture cannot move, use the seated games. Sound and word games, story-building round the room, anything where the work is verbal rather than physical — the seated versions lose the physical training and keep the attention training, which is the half that transfers to everything else anyway.
 
 ## What It Is Actually Teaching
 
