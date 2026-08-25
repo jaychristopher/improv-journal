@@ -43,7 +43,7 @@ Heightening is what gives a scene its arc. Without it, the game stays flat — t
 
 ## The principle
 
-Same pattern, new context or raised stakes. You don't change the game — you deepen it. The audience leans in because they recognize the pattern and anticipate where it's going, and the specifics of each new iteration still surprise them.
+Same pattern, new context or raised stakes. You don't change the game — you deepen it. The audience leans in because they recognize the pattern and anticipate where it's going, and the specifics of each new iteration still surprise them. That anticipation is also the thing a [pattern break](/practice/techniques/pattern-break) spends: the audience has been trained to expect the next iteration, so withholding it is worth exactly as much as the expectation heightening built.
 
 ## Rest beats are non-negotiable
 

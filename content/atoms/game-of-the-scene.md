@@ -55,7 +55,7 @@ The UCB model starts with **the first unusual thing** — a character reacts une
 
 Discovery is only the beginning. Playing the game means:
 - **Heightening** — same pattern, escalated stakes or new contexts. The apologies get more absurd.
-- **Rest beats** — returning to base reality between heightens so the pattern has contrast. Without rest, heightening becomes noise.
+- **Rest beats** — returning to base reality between heightens so the pattern has contrast. Without rest, heightening becomes noise. Contrast is what a [pattern break](/practice/techniques/pattern-break) trades on as well: with nothing established, there is nothing available to violate.
 - **Lateral exploration** — new contexts for the same pattern (the apologizer at work, at a wedding, at their own trial).
 - **The straight-man function** — one player grounds the reality while the other explores the pattern. Both roles are essential.
 - **The button** — the moment the game has been fully explored. The pattern breaks, transcends, or reaches a final escalation that resolves the tension.

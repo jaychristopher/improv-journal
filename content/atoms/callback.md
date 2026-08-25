@@ -49,7 +49,7 @@ The reframing callback is the most powerful because it demonstrates that meaning
 - **Within-scene callbacks** are usually *game* — the pattern reasserting itself. They are repetition with escalation.
 - **Across-scene callbacks** in longform are *connective tissue* — the universe proving it was one thing all along. They are what make a Harold feel like a unified piece rather than a collection of sketches.
 
-Within-scene, the detail returns because the pattern demands it. Across-scene, the detail returns because the *world* demands it.
+Within-scene, the detail returns because the pattern demands it. Across-scene, the detail returns because the *world* demands it. Both work by recognition, which is why the opposite move works too — a [pattern break](/practice/techniques/pattern-break) draws on the same deposit and withdraws it instead.
 
 ## Organic vs. forced
 
