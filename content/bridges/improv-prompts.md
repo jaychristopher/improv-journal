@@ -285,6 +285,24 @@ A prompt is a launching point, not a subject. Will Hines puts the show-craft ver
 
 **Do not check back.** Scenes die when a player returns to the prompt to make sure they are still obeying it. Nobody in the audience is auditing you.
 
+## Questions People Ask About Improv Prompts
+
+### What makes a good improv prompt?
+
+Something ordinary enough to build on and specific enough to suggest a feeling. "Laundromat" is a better prompt than "vampire dentist" because it has a texture and no premise attached — it leaves the scene free while still giving both players the same starting image. The test is whether two people could take it in completely different directions and still be in the same scene. A prompt that already contains the joke has done the scene's work badly and taken the discovery with it.
+
+### How do you get a suggestion out of an audience that gives you nothing?
+
+Ask for something smaller. "Give us a suggestion" invites people to be clever in public, which is the same trap performers fall into, and a room will freeze rather than risk it. "A place you went this week" or "something in your bag" gets answers immediately because they require memory rather than invention. If the room is still silent, take the first thing anybody says, including the unhelpful one — the suggestion is there to prove the show is improvised, and a bad one costs nothing once the scene starts.
+
+### Do you need a prompt at all?
+
+No, and plenty of experienced groups open cold. A prompt is a solution to a specific problem — two people needing the same starting point at the same instant — and a pair who already share a vocabulary can begin from a look. Where prompts genuinely earn their place is in classes and in shows with an audience who need proof that nothing was written. Treating one as compulsory is how a group ends up obeying a suggestion instead of playing a scene.
+
+### How many prompts should a class get through?
+
+Fewer than most classes use. Running a new prompt every ninety seconds trains starting and nothing else, and starting is the part students are usually least bad at. The harder skills — staying, noticing what the scene has produced, letting it change — only appear after the first minute, so a class that never gets past a minute never reaches them. Two or three prompts explored properly beat a dozen abandoned.
+
 ## Practise the Starting Part
 
 The hardest part of any prompt is the first three seconds. `first-line-drill` isolates exactly that: players line up, each steps out and delivers a single opening line, and nothing else happens. No scene, no rescue, no chance to fix it — just the threshold, over and over, until starting stops being the difficult bit.

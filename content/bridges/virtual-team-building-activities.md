@@ -128,6 +128,24 @@ The gap is not knowledge of each other, it is `trust` — an accumulated estimat
 - **Icebreakers that need a personal disclosure.** In a room with a power gap, on a recording, in writing. See [icebreaker questions for work](/icebreaker-questions-for-work).
 - **Anything over thirty minutes.** Whatever it built, the last ten minutes took back.
 
+## Questions People Ask About Virtual Team Building
+
+### What do you do when nobody turns their camera on?
+
+Design for it rather than fight it. Cameras-off is usually a reasonable response to being watched while working, and mandating them removes the ability to decline quietly, which is the thing that made the activity safe. Everything worth running on video can be run in text, in a shared document, or in reactions — and the formats that survive cameras-off are the ones that were not depending on performance in the first place. If an activity only works when everybody is visible, the activity was the problem.
+
+### How do you include people who never speak on calls?
+
+Stop using the format that produces the silence. Spoken rounds reward whoever is quickest to unmute, and after two of those the quiet people have correctly learned that staying muted costs nothing. Written-first formats invert it: everybody answers in the chat at the same time, then a few get read out. The people who say nothing on calls are frequently the ones with the most considered answer, and simultaneous writing is the only reliable way to find out.
+
+### What works for a team spread across time zones?
+
+Anything that does not need everybody present at once, which rules out most of what gets recommended. A question posted for the day and answered whenever people arrive collects more than a scheduled call does, because nobody is answering at eleven at night. The real cost of a synchronous activity across time zones is not the awkwardness — it is that the same two regions always get the convenient slot, and everybody notices who is being accommodated.
+
+### Do virtual team building activities actually work?
+
+Sometimes, and the failures are predictable enough to name. They work when they are short, optional in practice as well as in principle, and tied to the work rather than to enforced fun. They fail when they are long, when declining is visible, and when they import a physical game that needed shared space to make sense. A team that already talks easily gains very little from any of this; a team that has never met in person gains the most, which is the opposite of who usually gets scheduled for it.
+
 ## Practise the Low-Stakes Group Part
 
 **A group task nobody can steer.** `one-word-story` has a circle build a single story one word at a time. Nobody can impose a direction, nobody has to be funny, and it works over video as long as the order is fixed in advance.
