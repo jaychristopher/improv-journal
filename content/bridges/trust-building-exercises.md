@@ -129,6 +129,20 @@ These exercises train the ordinary accumulation of trust and the recovery from o
 
 For the case where the problem is that being honest does not feel survivable in the first place, see [emotional safety](/emotional-safety). For the friendship version, see [how to be a good friend](/how-to-be-a-good-friend).
 
+## Questions People Ask About Trust Exercises
+
+### Do trust falls actually work?
+
+Not for what people run them for. A trust fall demonstrates that a group will physically catch somebody, which almost nobody doubted, and it does nothing about the thing teams actually lack — confidence that disagreeing will not be held against you. The exercises above are slower and less dramatic because they rehearse that instead: making an offer that could be ignored, and finding out it was not.
+
+### Can exercises build trust when there is a real conflict in the room?
+
+No, and running them anyway makes it worse. These build trust that has nowhere to go but up; they cannot repair trust that was broken by something specific, because the group knows the exercise is standing in for a conversation nobody is having. The order has to be the other way round — deal with the actual thing, then use the exercises to rebuild the ordinary working habits underneath it.
+
+### How long does it take before a group feels different?
+
+One session produces a noticeable change in the room and very little that survives to the next week. What accumulates is the repetition: a group that does something like this regularly builds an expectation that risks get met well, and expectation is what trust actually is. A single away-day generates goodwill that decays within days, which is why the annual version reliably disappoints.
+
 ## Running These With a Team
 
 **Do not open with the exposing ones.** Order matters more than selection. Gift giving and mirroring first, honesty scenes much later. A group asked to be vulnerable before it has evidence that vulnerability is safe will comply on the surface and conclude the opposite underneath.

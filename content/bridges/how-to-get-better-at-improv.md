@@ -120,6 +120,20 @@ The improvisers who push through the plateau are the ones who:
 
 Del Close told his students: "You're not good enough yet. Keep going." That's not cruelty. It's respect — treating the art form as something worth the patience it demands.
 
+## Questions People Ask About Improving
+
+### Do you need to take classes, or can you learn from books and shows?
+
+Classes are hard to replace, and the reason is specific rather than institutional. Everything on this page is about what you do in response to another person, and reading cannot supply the other person. Books are excellent for vocabulary — they give you names for what went wrong, which is most of diagnosis — and watching is excellent for taste. Neither generates the reps, and reps are the part that changes behaviour.
+
+### Does watching a lot of improv make you better at it?
+
+It makes you better at recognising, which is worth having and is not the same thing. Watching builds the ability to see a game arriving, notice an edit landing late, and tell a strong scene from a busy one. It does none of the work of making your own responses faster, and a performer who watches far more than they play often develops taste well ahead of ability — which is uncomfortable and not a sign of failure.
+
+### Why does it feel like you are getting worse?
+
+Because recognition improves faster than execution, so the gap between what you can see and what you can do widens before it closes. The scenes are not worse; the person watching them is better. This is the single most common reason people quit at the six-month mark, and knowing the shape of it in advance is most of the defence.
+
 ## How Often to Practise, and How Long It Takes
 
 Two questions everybody asks and most improv advice answers with encouragement rather than anything usable.

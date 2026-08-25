@@ -96,6 +96,20 @@ Most people who "cannot read a room" are reading it correctly and doing nothing 
 
 That is the whole skill in one sentence: **the room is more important than your plan, and it is the only one of the two that is actually in the building.**
 
+## Questions People Ask About Reading a Room
+
+### Is this the same as people-pleasing?
+
+No, and the difference is what you do with what you read. Reading is collecting information — the room has gone quiet, that landed badly, they are waiting for somebody to say the obvious thing. People-pleasing is letting that information decide your behaviour, every time, in the direction of approval. Somebody who reads a room accurately and then says the difficult thing anyway is doing the opposite of pleasing it, and could not do it without the reading.
+
+### What if you read it wrong?
+
+You will, and the cost is much lower than the cost of not reading at all. A misread is a hypothesis that gets corrected by the next thing that happens, provided you are still watching. The expensive version is not misreading but committing to a reading and then stopping checking — deciding in minute two that the room is hostile, and spending minute five confirming it.
+
+### Can you learn this if you are not naturally observant?
+
+Yes, and the people who learn it deliberately often end up more reliable at it than naturals. What is being trained is where attention is pointed, not sensitivity, and a deliberate reader has the advantage of knowing which channels they are checking. Naturals frequently cannot say what they noticed, which makes them excellent in familiar rooms and inconsistent in unfamiliar ones.
+
 ## Why This Matters Beyond Improv
 
 Reading the room is the meta-skill underneath every social competency. Leadership, teaching, parenting, therapy, sales, friendship — every context where humans interact benefits from the ability to sense what a group or person actually needs, not what they're saying they need.

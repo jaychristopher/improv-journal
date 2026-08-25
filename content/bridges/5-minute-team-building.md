@@ -170,6 +170,20 @@ The activities are the easy part. Introducing them is where this goes wrong, and
 
 **Remote needs different picks.** Anything relying on physical synchrony — pass the clap, the machine, mirroring — falls apart on a video call because of latency. Verbal round-robins survive: one-word story, countdown, three things, where I was at fourteen. [Virtual team building activities](/virtual-team-building-activities) covers the rest.
 
+## Questions People Ask About Five-Minute Activities
+
+### What do you do about the people who refuse to join in?
+
+Let them, visibly and without comment. A round where opting out is genuinely available is a round the participants trust, and the person who sat out the first one usually joins the third. Pressing produces compliance, which looks like participation and is worth nothing — and it teaches everybody watching that declining costs something, which is the more expensive lesson.
+
+### Do these work with a team that already knows each other well?
+
+Less than with strangers, and for a reason worth knowing. Familiar teams already have the shared baseline these are designed to create, so the activity is doing something narrower: interrupting the meeting's default pattern, where the same three people speak. If that is not the problem, an established team gains very little and will correctly experience it as filler.
+
+### How often can you run these before they wear out?
+
+Weekly is sustainable if the activity changes; the same one twice in a month is the point at which people begin to endure it rather than play. The failure is not repetition itself but predictability — an activity everybody can see coming is one they have already prepared a response to, and a prepared response is not the spontaneous thing you wanted.
+
 ## What Goes Wrong
 
 **It becomes a performance for the senior person.** If the manager is watching rather than playing, the activity turns into an appraisal. The fix is participation, not encouragement.

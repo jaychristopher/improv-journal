@@ -115,6 +115,20 @@ Four places, and the first is the one nobody writing about this in a business co
 
 None of these argue against the idea. They mark where the analogy runs out, which is a thing worth knowing about any principle borrowed from a stage.
 
+## Questions People Ask About Yes And
+
+### Do you actually say the words out loud?
+
+Almost never on stage, and saying them is usually a sign the principle has not landed. "Yes, and" describes what a response does — accepts what was established, then adds — not what it sounds like. A performer announcing the formula is narrating their own compliance rather than building anything. The words belong in a rehearsal room, where naming the move is how it gets taught, and in the exercise where the phrase is the constraint.
+
+### Why do experienced improvisers get irritated by it?
+
+Because it is the one thing about improv that escaped into the wider world, and it escaped in a flattened form. Reduced to relentless agreement, it produces exactly the scenes it was meant to prevent — two people affirming each other with nothing at stake. The irritation is rarely with the principle and almost always with the version that arrives via a corporate away-day, which has kept the phrase and dropped the part where you have to add something.
+
+### Is it useful outside improv or just a slogan?
+
+Useful, but not as a rule about what to say. What transfers is the noticing: how often a reply accepts the words and quietly discards the content, and how much of an ordinary meeting is spent relocating a proposal rather than building on it. As an instruction to agree more it is bad advice in most rooms. As a description of what happens when people stop building, it is unusually precise.
+
 ## How to Practise It
 
 `yes-and-chain` is the standard drill, and its value is that it is boring. With every other option removed, a group hears the failure the instant it happens — the chain simply stops accumulating, and everyone in the circle knows who and when. You cannot get that feedback from a discussion about whether people are being collaborative.

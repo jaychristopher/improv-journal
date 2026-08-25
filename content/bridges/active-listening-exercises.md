@@ -168,6 +168,20 @@ See `questions-only` for the full version and the argument about when it stops h
 
 **For two people who actually want to change how they listen**, ignore all of this and use the seven above. Group games build the attention; pairs are where the habit gets rebuilt.
 
+## Questions People Ask About Listening Exercises
+
+### Can you practise listening on your own?
+
+Partly, and it is worth knowing which part. The reception half needs another person — there is nothing to receive alone. What you can train solo is the thing that blocks it, which is the habit of composing while somebody else is still talking. Listening to a podcast and stopping it mid-sentence to say the speaker's last five words out loud trains exactly that, badly but genuinely. The rest needs a second person, which is the honest limitation of borrowing from a group art form.
+
+### How long before any of this shows up in real conversations?
+
+Sooner than people expect for the mechanical part and much later for the hard part. Most people notice within a week that they have stopped preparing replies, because it is a single habit and dropping it is one decision repeated. Doing it while tired, while disagreeing, or while wanting badly to say your own thing takes considerably longer, and that is not a second skill — it is the same one under load.
+
+### What if the other person will not do exercises with you?
+
+Run the ones that survive being one-sided. Nothing stops you from making your next sentence start from their last word, or from asking about the part they slowed down on, and neither requires their consent or their awareness. The formal versions above are faster because the constraint is explicit, but the underlying move works unannounced in an ordinary conversation, which is where you needed it anyway.
+
 ## How to Get Anything Out of These
 
 **Run the same one repeatedly rather than sampling all seven.** These train attention, and attention responds to repetition. Ten minutes of `last-word-response` twice a week will do more than an hour of variety.
