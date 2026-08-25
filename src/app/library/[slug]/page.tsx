@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
 import { TableOfContents } from "@/components/TableOfContents";
@@ -66,9 +67,21 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
   if (!atom || atom.frontmatter.type !== "reference") notFound();
 
   const fm = atom.frontmatter;
+  // The same title and eyebrow generateMetadata builds the card from, so the
+  // Article names the image the page actually declares as og:image.
+  const displayTitle = await getAtomDisplayTitle(atom);
   const extLinks: ExternalLink[] = fm.external_links ?? [];
   const url = getAtomUrl({ id: fm.id, type: fm.type });
-  const description = atomDescription(fm.title, fm.type, extractDescription(atom.content));
+  // Same six arguments generateMetadata uses. Without the last one the Book
+  // entity described the work differently from the meta tag on the same page.
+  const description = atomDescription(
+    fm.title,
+    fm.type,
+    extractDescription(atom.content),
+    undefined,
+    undefined,
+    fm.description,
+  );
 
   const allAtoms = await loadAtoms();
   const atomById = new Map(allAtoms.map((a) => [a.frontmatter.id, a]));
@@ -102,6 +115,17 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
 
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
+      {/* CitedWorkJsonLd describes the book. This describes the page about it —
+          who wrote it and when it last changed, which the library entries were
+          the only content pages on the site not to say. */}
+      <ArticleJsonLd
+        title={displayTitle}
+        description={description}
+        url={url}
+        datePublished={fm.created}
+        dateModified={fm.updated}
+        eyebrow="Reading List"
+      />
       {fm.work && (
         <CitedWorkJsonLd
           work={fm.work}
