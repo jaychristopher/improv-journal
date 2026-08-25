@@ -11,7 +11,7 @@ entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction
 entry_path: reference-guide
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # Improv Theory: The Five Traditions That Shaped Modern Improvisation
@@ -89,6 +89,32 @@ The real knowledge lives in the disagreements:
 - **Should improv be taught through structure or through liberation from structure?** UCB and Spolin favor structured pedagogy. Napier and Johnstone favor stripping rules away. Close did both, depending on the student.
 - **Is improv comedy?** Close said no — it's theater. UCB's curriculum is explicitly designed to produce comedy. Johnstone is agnostic. Spolin's games work in any genre.
 - **What does "yes, and" actually mean?** For UCB, it means accept and build. For Johnstone, it means be changed. [Yes and improv](/yes-and-improv) works through the disagreement in full. For Napier, it means "stop worrying about whether you're yes-anding and just do something." These are meaningfully different instructions.
+
+## Who Was Arguing With Whom
+
+The disagreements above look like abstract differences of opinion. They are not. Each one is a generation reacting against the excess of the one before it, and the sequence is short enough to hold in your head.
+
+Spolin built the method first, for community groups and children who had no intention of performing. Her son Paul Sills carried it into Second City, where it became a tool for generating revue material — improvisation as a way of writing sketches that would then be scripted and performed.
+
+Del Close's entire position formed against that. His claim was that the improvisation *was* the performance rather than the rehearsal for one, and nearly every insistence attributed to him — ensemble over star, form over bit, truth over joke — is a position taken against a theatre that treated improvising as drafting.
+
+UCB then did to Close what Close had done to Second City: took the thing that worked and made it explicit. The founders trained in his programme and turned a sensibility into a curriculum, which is why their material is so teachable and why it is so much drier than his.
+
+And the Annoyance formed against the curriculum. Napier's argument is not with Close but with what happens when a set of observations becomes a checklist a beginner runs while trying to have a conversation.
+
+Johnstone sits outside the sequence, which is worth knowing because it explains the vocabulary. He developed his material in Britain at roughly the same time, arguing with drama-school orthodoxy rather than with Chicago, and the two bodies of work did not meet properly for decades. That is why his terms — status, blocking, the seesaw — sit slightly apart from everybody else's, and why so many rooms use both sets without noticing they came from different arguments.
+
+## How to Tell Which Tradition a Note Came From
+
+The practical payoff of all this is diagnostic. Almost every piece of improv advice speaks from one lineage and almost none of them say which, so a note that sounds universal is usually a note that was true somewhere specific. The tell is what the note is *about*.
+
+- **"What is this scene about? What is the unusual thing?"** — game, and therefore UCB. The note assumes a scene has an organising pattern that can be identified and heightened.
+- **"Who has the higher status here? What are you doing with your hands?"** — Johnstone. Physical, observable, and about the transaction between two people rather than the shape of the piece.
+- **"What are you actually doing? Where are you?"** — Spolin. A point of concentration, a physical problem to solve, attention pushed outward into the environment.
+- **"What has this group established? What came back?"** — Close. The unit being judged is the whole piece, not the scene you are in.
+- **"Stop worrying about it and do something."** — Napier and the Annoyance. Aimed at a performer who has acquired enough technique to be paralysed by it.
+
+Knowing the source tells you where the note stops applying, which is the thing a list of rules can never tell you. A game note given to somebody who cannot yet sustain a two-handed scene is premature. A "just commit" note given to a beginner with no discipline to loosen makes them worse. Both notes are correct inside the tradition that produced them and neither is correct everywhere.
 
 ## Why This Matters Beyond Improv History
 
