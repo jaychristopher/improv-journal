@@ -5,6 +5,7 @@ type: principle
 status: draft
 tags: [principles, fundamentals, adaptability, mutability]
 links:
+  - { id: internal-computation, relation: contrasts }
   - { id: let-yourself-be-changed, relation: extends }
   - { id: steering, relation: contrasts }
   - { id: commitment, relation: contrasts }
@@ -28,7 +29,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
@@ -68,6 +69,30 @@ Without changeability, scenes become "polite improv" — everyone agrees, nobody
 Listening, at its deepest, is the willingness to be changed. Lisa Rowland names this explicitly: the question of changeability is ultimately a question of faith — whether you trust the unfolding scene enough to let it reshape you.
 
 Being changed by what happens is the part people resist hardest, on stage and off. [How to let go of control](/how-to-let-go-of-control) treats that resistance as the subject rather than as a personality trait — worth reading even though its results page is currently held by sites this one cannot reach.
+
+## Announcing a change is not undergoing one
+
+The commonest failure here is not rigidity. It is narration.
+
+A performer who has been told to be changeable will frequently report the change instead of having it: "Wow, that really surprises me." "I never expected you to say that." The line describes an internal event that did not occur, and the scene now contains a claim about a state rather than the state.
+
+### The tell is that nothing else moved
+
+Real change is expensive and shows up in the parts you were not managing. The pace alters. The posture resettles. Whatever you were about to do with your hands stops happening. None of that is available to somebody producing the change deliberately, because deliberate production requires the very control that being changed suspends.
+
+So the diagnostic is not whether a reaction occurred. It is whether anything **other than the words** is different afterwards.
+
+## The test worth running
+
+Not "did I react to that", which everybody answers yes to. Ask instead: **would my next line have been different if the offer had never been made?**
+
+If the same next line would have worked before your partner spoke, you were not changed by it. You absorbed the offer, acknowledged it, and continued from where you already were — which is the polite improv described above, and it passes every other principle on this site while producing nothing.
+
+### Run it afterwards, not during
+
+This is a retrospective check on purpose. Watching yourself for evidence of change mid-scene is `internal-computation`, and it guarantees the outcome it is checking for: a performer monitoring their own responsiveness is managing, and managing is the state in which nothing lands.
+
+The version that works is to run it once, after, on a scene you remember well. Most people find the answer uncomfortable on the first attempt and considerably better on the fifth, which is what improvement looks like here — not more reacting, but fewer lines that would have survived the offer never happening.
 
 ## Specific sources
 
