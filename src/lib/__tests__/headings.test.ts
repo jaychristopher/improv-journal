@@ -55,7 +55,11 @@ describe("sub-points", () => {
 describe("the concept corpus", () => {
   it("offers contents on most pages, and every anchor lands on a heading", async () => {
     const atoms = await loadAtoms();
-    const concepts = atoms.filter((a) => a.frontmatter.type !== "reference");
+    // References were excluded while they had almost no anchored headings and
+    // no contents list. They have both now — 84 headings across 32 entries,
+    // thirteen of which render an outline — so the invariant applies to them
+    // too: an anchor a page offers has to land on a heading that page has.
+    const concepts = atoms;
     const withContents = concepts.filter((a) => contentsFor(a.html).length > 0);
     expect(withContents.length).toBeGreaterThan(100);
 

@@ -449,8 +449,23 @@ export function atomDescription(
   const body = fromRules.length >= fromLead.length ? fromRules || fromLead : fromLead;
   if (!body) return fallback.length <= maxLen ? fallback : extractDescription(extracted, maxLen);
 
+  /**
+   * The suffix restates the title, which is the thing this function's own
+   * opening comment says not to do — it had just moved the repetition to the
+   * end. On 42 pages the result was a title reading "Be Honest — Improv
+   * Principle" sitting directly above a description ending "Be Honest is an
+   * improv principle", spending 30-odd characters of a 158-character snippet
+   * saying the same words twice.
+   *
+   * So it is appended only where the type would otherwise go unsaid:
+   * conceptTitle has usually put it in the title already, a title containing
+   * "improv" carries it on its own, and a reference is qualified by the
+   * citation the entry opens with.
+   */
+  const titleShowsType =
+    type === "reference" || /improv/i.test(title) || conceptTitle(title, type) !== title;
   const suffix = ` ${title} is ${label}.`;
-  if (body.length + suffix.length <= maxLen) return `${body}${suffix}`;
+  if (!titleShowsType && body.length + suffix.length <= maxLen) return `${body}${suffix}`;
   return body;
 }
 

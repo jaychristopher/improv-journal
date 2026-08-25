@@ -94,11 +94,26 @@ describe("atomDescription", () => {
     expect(desc.endsWith("and yourself.")).toBe(true);
   });
 
-  it("appends the type label only when it fits", () => {
-    const short = "A short definition.";
-    const desc = atomDescription("Yes And", "technique", short);
-    expect(desc).toBe("A short definition. Yes And is an improv technique.");
+  it("leaves the type out when the title already carries it", () => {
+    // conceptTitle renders this as "Yes And — Improv Technique", which sits
+    // directly above the description in a result. Saying it twice spent a
+    // fifth of the snippet on words the reader can already see.
+    const desc = atomDescription("Yes And", "technique", "A short definition.");
+    expect(desc).toBe("A short definition.");
+  });
+
+  it("still names the type where nothing else would", () => {
+    // Long enough that conceptTitle declines to qualify it, so the description
+    // is the only place the reader learns what kind of thing this is.
+    const long = "Framing as an Angle of Approach to a Difficult Conversation";
+    const desc = atomDescription(long, "technique", "A short definition.");
+    expect(desc).toBe(`A short definition. ${long} is an improv technique.`);
     expect(desc.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
+  });
+
+  it("does not restate a reference, which its citation already qualifies", () => {
+    const desc = atomDescription("Bossypants — Tina Fey (2011)", "reference", "A short note.");
+    expect(desc).toBe("A short note.");
   });
 
   it("prefers a game's rules over its list of what it trains", () => {
