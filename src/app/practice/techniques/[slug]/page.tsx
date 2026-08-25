@@ -3,14 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
-import {
-  atomDescription,
-  conceptTitle,
-  extractDescription,
-  ogImages,
-  pageTitle,
-  SITE_NAME,
-} from "@/lib/seo";
+import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 const VALID_TYPES = ["technique", "pedagogy"];
 
@@ -30,14 +23,7 @@ export async function generateMetadata({
   const atom = await getAtomBySlug(slug);
   if (!atom) return {};
   const displayTitle = await getAtomDisplayTitle(atom);
-  const desc = atomDescription(
-    atom.frontmatter.title,
-    atom.frontmatter.type,
-    extractDescription(atom.content),
-    undefined,
-    undefined,
-    atom.frontmatter.description,
-  );
+  const desc = atomPageDescription(atom);
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
     title: pageTitle(conceptTitle(displayTitle, atom.frontmatter.type)),
@@ -67,6 +53,7 @@ export default async function TechniqueDetailPage({
   return (
     <AtomDetail
       atom={atom}
+      description={atomPageDescription(atom)}
       eyebrow="Technique"
       breadcrumbs={[
         { label: "Home", href: "/" },

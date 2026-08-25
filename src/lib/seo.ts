@@ -470,6 +470,39 @@ export function atomDescription(
 }
 
 /**
+ * The one description an atom page ships.
+ *
+ * Every concept route was building this twice — once in generateMetadata for
+ * the meta tag, and once inside AtomDetail for the Article entity — from
+ * different inputs. 38 pages ended up describing themselves two ways, most
+ * cosmetically (tag-stripping left "Be Supportive ." with a space before the
+ * stop) and be-changeable substantively, where the entity quoted a section
+ * from halfway down the page.
+ *
+ * Both callers now go through here, so the value is defined once and the two
+ * cannot drift again.
+ */
+export function atomPageDescription(atom: {
+  frontmatter: {
+    title: string;
+    type: AtomType;
+    how_to_play?: string;
+    description?: string;
+  };
+  content: string;
+}): string {
+  const fm = atom.frontmatter;
+  return atomDescription(
+    fm.title,
+    fm.type,
+    extractDescription(atom.content),
+    undefined,
+    fm.how_to_play,
+    fm.description,
+  );
+}
+
+/**
  * Build full canonical URL from a path.
  */
 export function buildCanonicalUrl(path: string): string {

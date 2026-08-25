@@ -3,14 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
-import {
-  atomDescription,
-  conceptTitle,
-  extractDescription,
-  ogImages,
-  pageTitle,
-  SITE_NAME,
-} from "@/lib/seo";
+import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -28,14 +21,7 @@ export async function generateMetadata({
   const atom = await getAtomBySlug(slug);
   if (!atom) return {};
   const displayTitle = await getAtomDisplayTitle(atom);
-  const desc = atomDescription(
-    atom.frontmatter.title,
-    atom.frontmatter.type,
-    extractDescription(atom.content),
-    undefined,
-    atom.frontmatter.how_to_play,
-    atom.frontmatter.description,
-  );
+  const desc = atomPageDescription(atom);
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
     title: pageTitle(conceptTitle(displayTitle, atom.frontmatter.type)),
@@ -61,6 +47,7 @@ export default async function FormatDetailPage({ params }: { params: Promise<{ s
   return (
     <AtomDetail
       atom={atom}
+      description={atomPageDescription(atom)}
       eyebrow="Format"
       breadcrumbs={[
         { label: "Home", href: "/" },

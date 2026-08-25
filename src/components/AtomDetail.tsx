@@ -12,10 +12,9 @@ import {
   loadSources,
 } from "@/lib/content";
 import { loadImprovGames } from "@/lib/games";
-import { definitionFromHtml, isGlossaryType, stripLeadLabelHtml } from "@/lib/glossary";
+import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
-import { extractDescription } from "@/lib/seo";
 import { getSeriesForPage } from "@/lib/shows-for-content";
 
 import { ArticleJsonLd } from "./ArticleJsonLd";
@@ -62,6 +61,12 @@ interface AtomDetailProps {
   };
   breadcrumbs: Crumb[];
   /**
+   * The description the route ships in its meta tag, passed in rather than
+   * derived a second time here. Deriving it separately had 38 pages saying two
+   * different things about themselves.
+   */
+  description: string;
+  /**
    * The label this atom's route puts on its og:image. Held here rather than
    * derived from TYPE_LABELS, which is a different vocabulary — that renders
    * "why it's hard" where the route writes "How It Works".
@@ -69,7 +74,7 @@ interface AtomDetailProps {
   eyebrow?: string;
 }
 
-export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps) {
+export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: AtomDetailProps) {
   const fm = atom.frontmatter;
   const audioUrl = getAudioUrl("atoms", atom.slug);
   const atomUrl = getAtomUrl({ id: fm.id, type: fm.type });
@@ -171,13 +176,7 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
       )}
       <ArticleJsonLd
         title={fm.title}
-        description={
-          // The routes hand atomDescription the written snippet when a page has
-          // one, so deriving a second description here made the Article and the
-          // meta tag disagree on the same page.
-          fm.description?.trim() ||
-          extractDescription(stripLeadLabelHtml(atom.html).replace(/<[^>]+>/g, " "))
-        }
+        description={description}
         url={atomUrl}
         datePublished={fm.created}
         dateModified={fm.updated}
