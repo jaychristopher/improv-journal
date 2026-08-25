@@ -16,7 +16,7 @@ work:
   name: "Improvise Freely: Throw Away the Rulebook and Unleash Your Creativity"
   published: "2021"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Patti Stiles. *Improvise Freely: Throw Away the Rulebook and Unleash Your Creativity.* 2021.**
@@ -26,6 +26,16 @@ The strongest published improv-specific treatment of consent and safety, from a 
 Its argument is that safety is a precondition rather than a virtue, and that treating it as a nicety gets the causation backwards. A room where being wrong is survivable produces bolder work than a room where it is not, so safety is not what you trade against risk — it is what makes risk affordable. That reframing is the reason this is cited here at all: the site's claim that psychological safety is load-bearing for improvisation needs a source from inside the practice, not only from organisational research.
 
 The material on notes is unusually concrete. Stiles is specific about what a note is for, who it is really addressed to, and the failure mode where feedback exists to demonstrate the teacher's perception rather than to change what a student does next. She is equally direct about the instruction to "throw away the rulebook" — not an argument that rules are wrong, but that a rule held as an identity stops being a tool.
+
+## Who it rewards
+
+Teachers, and anybody running a room where somebody could get hurt — which, given what improv asks people to do, is most rooms. It is written from decades of classroom practice and it shows in the specificity: the failure modes it names are ones you can recognise from having been in them.
+
+Performers looking to improve their own scene work will find less. This is a book about the conditions under which people can do good work, not about the work itself.
+
+**The honest objection.** A safety-first framing is easy to read as permission to avoid discomfort, and that is the opposite of the argument. Stiles' claim is that safety exists so that risk becomes possible — a room where being wrong is survivable produces bolder work, not gentler work. A reader who takes it as an instruction to keep everybody comfortable has arrived at the failure the book is written against.
+
+It is also firmly Johnstone-lineage, so a reader trained in the game-based schools will find little on comedic structure and may mistake the omission for a claim that structure does not matter.
 
 **Key concepts drawn from here:**
 - Safety as the precondition for risk rather than its opposite
