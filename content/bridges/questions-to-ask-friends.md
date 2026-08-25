@@ -316,7 +316,7 @@ The questions are the easy part. Almost everything that decides whether you get 
 
 **Take a deflection as the answer it is.** A joke where a reply should be is information — usually "not yet", occasionally "not ever". Asking again converts a conversation into an interrogation, and the second refusal is much more expensive than the first.
 
-**Do not stack the heavy ones.** After a real answer, go lighter for a while. Sustained depth stops registering as interest and starts feeling like being processed, which is the failure mode of every list like this one.
+**Do not stack the heavy ones.** After a real answer, go lighter for a while. Sustained depth stops registering as interest and starts feeling like being processed, which is the failure mode of every list like this one. [Would you rather questions](/would-you-rather-questions) and [most likely to questions](/most-likely-to-questions) are both useful for that stretch, because they are answerable without disclosing anything and still tell you something about whoever answered.
 
 **Finish with something still unsaid.** A conversation that ends while there is more to say is the one that picks up again next time.
 

@@ -68,7 +68,7 @@ The list below is long because it is sorted by what each question opens. If you 
 4. **What do you suspect you have got worse at?** Self-assessment, and much easier to answer than its opposite, because admitting a decline is less exposing than claiming an improvement.
 5. **What have you not finished thinking about?** The unresolved, without requiring anybody to name a grief or a regret directly. People often go there anyway, which is the point of asking it this way round.
 
-Answer each one yourself before moving to the next. Five questions asked in a row, unanswered by the asker, is an interview.
+Answer each one yourself before moving to the next. Five questions asked in a row, unanswered by the asker, is an interview. Games built on questions solve this structurally rather than by discipline — [21 questions](/21-questions-game) only works while both people answer, and collapses the moment one person asks everything.
 
 ## Thought-Provoking Is Not the Same as Deep
 
