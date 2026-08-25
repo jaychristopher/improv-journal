@@ -20,12 +20,24 @@ work:
   authors: ["Jimmy Carrane"]
   name: "Improv Nerd"
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Jimmy Carrane. *Improv Nerd* podcast & jimmycarrane.com blog. Ongoing (~290+ episodes).**
 
 Chicago-based improviser, teacher, and host of one of the longest-running improv interview podcasts. Carrane's work bridges the iO, Second City, and Annoyance traditions through practitioner interviews and practical teaching posts.
+
+## What kind of source this is
+
+Worth stating, since everything else in this library is a book. This is an interview podcast with a long-running blog attached, which makes it a different sort of evidence: not a codified method but a record of how working improvisers talk when they are not writing.
+
+The format is consistent — a conversation, then Carrane puts the guest into a scene, which is unusual and produces the most useful moments in the archive. People describe their process and then demonstrate it badly under pressure, on tape, which no book does.
+
+## Who it rewards
+
+Somebody who has read the books and wants to know what practitioners actually believe. It is the best available correction to the impression, easy to form from published material, that any of this is settled.
+
+**The honest caveat.** It is unedited opinion, and opinion from a guest is not method. Quality varies by episode in the way interviews always do, there is no curriculum or index, and a listener looking for instruction will find anecdote instead. Use it to calibrate what you already know rather than to learn something first.
 
 **Key blog posts referenced in this knowledge graph:**
 - ["3 Ways to Get Better at Editing Improv Scenes"](https://jimmycarrane.com/3-ways-to-get-better-at-editing-improv-scenes/) — editing as ensemble skill

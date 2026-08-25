@@ -23,12 +23,24 @@ work:
   published: "1987"
   isbn: "0394750594"
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Sanford Meisner & Dennis Longwell. *Sanford Meisner on Acting.* Vintage Books, 1987.**
 
 The primary published account of Meisner's technique, structured as a narrative of one class over fifteen months at the Neighborhood Playhouse School of the Theatre. Documents the progression from repetition exercises through emotional preparation to independent activities and scene work.
+
+## What is actually in it
+
+Not a manual. The book is built as a narrative of one class across fifteen months, largely transcribed, with Meisner teaching and Longwell recording — so what you read is a teacher correcting particular students on particular days rather than a method set out in order.
+
+That format is the reason it has lasted and the reason it frustrates people. You watch the technique being applied dozens of times before anybody states it, which is how it was learned in the room and is a slow way to read.
+
+## Who it rewards
+
+Improvisers who suspect their problem is listening rather than invention. The repetition exercise is the closest thing in the acting literature to what improv means by receiving, and seeing it taught over months makes clear that it is a discipline rather than a warm-up.
+
+**The honest caveat.** Almost nothing here is self-administrable. Repetition without a teacher reliably collapses into two people saying words at each other, because the correction — that you are performing the observation instead of making it — has to come from outside. Emotional preparation is more contested still, and the book presents it with the confidence of a classroom rather than the caution of an argument.
 
 **Key concepts originating here:**
 - "Acting is living truthfully under imaginary circumstances" (p. 63) — the foundational definition
