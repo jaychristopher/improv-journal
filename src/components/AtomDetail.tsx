@@ -171,7 +171,13 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
       )}
       <ArticleJsonLd
         title={fm.title}
-        description={extractDescription(stripLeadLabelHtml(atom.html).replace(/<[^>]+>/g, " "))}
+        description={
+          // The routes hand atomDescription the written snippet when a page has
+          // one, so deriving a second description here made the Article and the
+          // meta tag disagree on the same page.
+          fm.description?.trim() ||
+          extractDescription(stripLeadLabelHtml(atom.html).replace(/<[^>]+>/g, " "))
+        }
         url={atomUrl}
         datePublished={fm.created}
         dateModified={fm.updated}

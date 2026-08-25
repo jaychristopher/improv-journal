@@ -127,7 +127,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
     <main className="mx-auto max-w-3xl px-6 py-16">
       <LessonJsonLd
         title={fm.title}
-        description={extractDescription(thread.content)}
+        description={fm.description?.trim() || extractDescription(thread.content)}
         url={`/threads/${slug}`}
         datePublished={fm.created}
         dateModified={fm.updated}
