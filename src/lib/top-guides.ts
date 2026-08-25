@@ -23,7 +23,7 @@
  */
 
 import { loadBridges } from "./content";
-import type { BridgeTargetKeyword } from "./schema";
+import type { BridgeTargetKeyword, PageSubject } from "./schema";
 
 /** Above this, the term is not winnable from the site's current authority. */
 const STRANDED_DIFFICULTY = 30;
@@ -64,6 +64,27 @@ function titleCase(keyword: string): string {
 }
 
 /**
+ * A keyword that is somebody's name is capitalised as a name.
+ *
+ * titleCase raises the first letter, which is right for the phrases almost
+ * every guide targets — "How to be funny" is correct — and wrong for the few
+ * that target a proper noun. "del close" came out as "Del close" on every page
+ * of the site the moment the SERP-floor rule promoted it.
+ *
+ * The page already knows the answer: a guide about a named entity declares it
+ * as its subject, spelled properly, for the structured data. Using that spelling
+ * is only allowed when it is the same string as the keyword, so this corrects
+ * capitalisation and can never quietly retarget an anchor at something the page
+ * is not aiming for — theatre-games keeps the deliberate "Theater games", which
+ * is the higher-volume variant and not what its subject is called.
+ */
+function properName(keyword: string, subject?: PageSubject): string | undefined {
+  if (!subject) return undefined;
+  if (subject.type !== "Person" && subject.type !== "Organization") return undefined;
+  return subject.name.toLowerCase() === keyword.toLowerCase() ? subject.name : undefined;
+}
+
+/**
  * What a page could actually bring in. Traffic potential is the traffic the
  * top-ranking page receives across every term it ranks for, so it is a far
  * better estimate than the volume of one keyword — "what is improv" is 1,600 a
@@ -92,7 +113,13 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
  * against the list growing unreasonably long.
  */
 export const PROMOTION_FLOOR = 10_000;
-const MAX_PROMOTED = 24;
+/**
+ * Raised from 24 when the SERP-floor rule was added. Eight guides qualify on
+ * it and the list sorts by reach, so at 24 every one of them would have landed
+ * below the cut and been sliced off — the rule would have been written and
+ * changed nothing. Still a backstop rather than a target.
+ */
+const MAX_PROMOTED = 32;
 
 /**
  * Measured evidence also earns a slot, not only size.
@@ -121,6 +148,31 @@ const MAX_PROMOTED = 24;
 const REACHABLE_UNDER = 50;
 const PROMOTE_IF_REACHABLE = 3;
 
+/**
+ * How low the floor goes, not only how many are near it.
+ *
+ * The rule above counts top-ten results under DR 50, which measures the width
+ * of the opening. It cannot see its depth, and depth is the stronger evidence:
+ * one DR 2 page holding a top-ten position is a demonstration that Google will
+ * rank a site with no authority for that term, which is the exact question
+ * being asked here.
+ *
+ * del-close is the case that exposed it. Its top ten is
+ * [97, 75, 94, 66, 9, 99, 2, 95, 81] — two under 50, so it missed the count by
+ * one and its 1,000 of potential is far under the floor, so it was promoted on
+ * nothing. It is "del close", 2,000 searches a month, with a DR 2 page sitting
+ * in the results, and it was the only improv term this site has where a page
+ * that small has already proved the SERP is open. theatre-games at DR 5 and
+ * how-to-be-witty at DR 0 were excluded the same way.
+ *
+ * Set at 6 rather than 10 deliberately. Between 6 and 10 the floor is low but
+ * unremarkable and twelve guides qualify, which would have been most of the
+ * promotion block chosen on one number. Under 6 the claim is narrow and hard
+ * to argue with: a site with essentially no domain authority is already
+ * ranking there.
+ */
+const PROMOTE_IF_FLOOR_UNDER = 6;
+
 export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
@@ -132,15 +184,23 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
         const head = anchorKeyword(keywords);
         return {
           slug: bridge.slug,
-          label: head ? titleCase(head.keyword) : bridge.frontmatter.title,
+          label: head
+            ? (properName(head.keyword, bridge.frontmatter.subject) ?? titleCase(head.keyword))
+            : bridge.frontmatter.title,
           reach: reachOf(keywords),
           difficulty: primary?.difficulty,
           verdict: bridge.frontmatter.serp_verdict,
           reachable: (bridge.frontmatter.serp_top10_dr ?? []).filter((dr) => dr < REACHABLE_UNDER)
             .length,
+          floor: bridge.frontmatter.serp_min_dr,
         };
       })
-      .filter((guide) => guide.reach >= PROMOTION_FLOOR || guide.reachable >= PROMOTE_IF_REACHABLE)
+      .filter(
+        (guide) =>
+          guide.reach >= PROMOTION_FLOOR ||
+          guide.reachable >= PROMOTE_IF_REACHABLE ||
+          (guide.floor !== undefined && guide.floor < PROMOTE_IF_FLOOR_UNDER),
+      )
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.verdict !== "authority")
       // A checked-open guide beats the difficulty proxy. "How to stop
