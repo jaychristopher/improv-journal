@@ -9,9 +9,17 @@ export async function generateMetadata(): Promise<Metadata> {
   const shows = await loadShows();
 
   return {
-    title: pageTitle("Listen"),
+    /**
+     * "Listen" was the whole title — six characters, no subject in it — on a
+     * page linked from the nav and the footer of all 376 pages. Nothing on
+     * this site targets "improv podcast" and this hub holds three of them, so
+     * the term was uncontested and simply unclaimed. The description had the
+     * same problem: it said "through the lens of improvisation" and never the
+     * word somebody searching would type.
+     */
+    title: pageTitle("Improv Podcasts: Three Shows and What Each Is For"),
     description:
-      "Podcast conversations exploring the physics of human connection through the lens of improvisation.",
+      "Three improv podcasts built from one set of ideas — a problem worked through in conversation, three-minute concept drills, and long-form arguments.",
     // Every show's feed, so a reader landing on the hub can find them all.
     alternates: {
       canonical: "/listen",

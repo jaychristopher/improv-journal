@@ -58,6 +58,10 @@ export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
  * neither aware of the other. Decide which holds it rather than registering
  * both.
  *
+ * /listen is the third. It holds three improv podcasts and nothing on this
+ * site targets "improv podcast", so the term is uncontested — its title now
+ * claims it, which needs no volume data, but registering the keyword does.
+ *
  * Ahrefs resets 2026-09-22. Retrieve volumes then and move these in.
  */
 
