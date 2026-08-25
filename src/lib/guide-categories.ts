@@ -124,6 +124,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
     ],
     slugs: [
       "team-building-activities",
+      "improv-team-building",
       "virtual-team-building-activities",
       "team-building-questions",
       "icebreaker-questions-for-work",

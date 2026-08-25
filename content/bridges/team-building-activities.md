@@ -237,7 +237,7 @@ Deal with the conflict first, directly and usually not in a group setting. Once 
 
 ## The Honest Caveat
 
-These exercises work when the soil is ready. They don't work — and can actively backfire — in three specific conditions:
+These exercises work when the soil is ready. They don't work — and can actively backfire — in three specific conditions: The evidence base for the improv-derived ones is also thinner than the industry implies, which [improv team building](/improv-team-building) sets out.
 
 **When leadership doesn't participate.** If the VP sits out the mirroring exercise or treats it as beneath them, the activity communicates the opposite of what it's designed to: that vulnerability is for subordinates. Leadership must go first and be visibly imperfect.
 

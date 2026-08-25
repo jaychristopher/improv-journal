@@ -22,7 +22,7 @@ You have five minutes before a meeting starts. People are trickling in, checking
 
 Most managers know this matters. The first few minutes of any group interaction set the tone for everything that follows. A team that starts scattered stays scattered. A team that starts connected — actually attending to each other — produces different work. But what do you do with five minutes that isn't embarrassing, doesn't require props, and actually shifts something?
 
-Improv has been solving this problem for sixty years. Every improv rehearsal and show begins with a warm-up — a short exercise designed to transition a group of individuals into an ensemble. Not through motivation or speeches, but through structured activities that force a specific cognitive shift: from internal processing to external attention. From "what's in my head" to "what's happening between us."
+Improv has been solving this problem for sixty years. What that does and does not buy a team is set out in [improv team building](/improv-team-building). Every improv rehearsal and show begins with a warm-up — a short exercise designed to transition a group of individuals into an ensemble. Not through motivation or speeches, but through structured activities that force a specific cognitive shift: from internal processing to external attention. From "what's in my head" to "what's happening between us."
 
 The exercises below aren't party games. Each one targets a specific interaction pattern that improv pedagogy has identified as foundational. They work because they change what people are paying attention to, and attention is the raw material of connection.
 
