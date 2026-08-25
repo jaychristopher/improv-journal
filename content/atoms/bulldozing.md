@@ -18,7 +18,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 Bulldozing is the shadow of **Be Supportive**. Bulldozing is moving through a scene with no attention to your partner's offers, pushing only your own ideas, making yourself the center at the expense of the ensemble.
@@ -56,6 +56,16 @@ A team of bulldozers can be good but never great. Each player locally maximizes 
 ## The correction
 
 Active listening — shifting attention from "what do I want to do" to "what is my partner doing that I can serve." The bulldozer's recovery path is learning to contain: hold space, play grounded, ask the simple question that lets your partner's offer develop. The energy doesn't have to disappear. It has to be aimed outward.
+
+## Napier's strong choice is not this
+
+The Annoyance instruction sounds, read quickly, like a licence for everything on this page: get over your pastry self and selfishly make a strong choice.
+
+It is not, and the distinction is precise. A strong choice **adds** something to what exists. Bulldozing **proceeds as though what exists did not happen**. Volume is not the variable, and neither is confidence — a performer can bulldoze quietly, by ignoring an offer politely and continuing with their own, and can make an enormous choice that accepts everything already established.
+
+The test is what is still true after you have spoken. If your partner's last offer survives your line, you made a choice. If it has quietly stopped being the case, you bulldozed, however good the line was.
+
+There is also a failure produced by fear of this page, and Napier is aiming at it. A performer so worried about dominating that they offer nothing has not become supportive — they have removed the material their partner needed and left them carrying the scene alone. That is the pastry self, and it is a more common problem in careful groups than bulldozing is.
 
 ## Specific sources
 

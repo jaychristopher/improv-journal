@@ -25,7 +25,7 @@ links:
   - { id: ref-hines-greatest-improviser, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Alias:** Act before you're ready. The scene needs offers more than it needs perfect offers.
@@ -63,6 +63,16 @@ Bravery is the *precondition* for commitment. You cannot commit to a choice you 
 ## The bandwidth paradox
 
 Hesitating and planning burns more cognitive bandwidth than acting. Internal computation consumes the resource you need for reception. Acting immediately — Napier's "do something" — actually *frees* bandwidth because you shift from simulation to response. The brave move is the cheaper move.
+
+## Johnstone would not call it bravery
+
+The name of this principle is one Johnstone spent a career arguing against, and the objection is more than semantic.
+
+His account in *Impro* is that the improviser does not lack courage. They have been **trained out of** a spontaneity they had at seven, by an education that rewarded the correct answer and punished the strange one. On that reading there is no shortage of will to be made up. There is a censor that was installed, and the work is releasing it.
+
+The practical difference is large. Bravery framed as will asks a performer to summon something under pressure, and pressure is precisely when summoning fails — telling somebody to be braver in the moment they are frozen adds a demand to a system that is already overloaded. Johnstone's framing asks instead for the stakes to be lowered until the censor has nothing to protect against, which is why so much of his teaching is about making failure cheap and public rather than about encouragement.
+
+What survives of the word is narrower than the page implies. Brave is an accurate **description** of the threshold as it feels from inside, and a poor **instruction** for crossing it. The instructions that work are all indirect: reduce what a wrong choice costs, give the body something to do, remove the audience's expectation of quality. Nobody has ever become spontaneous by deciding to be.
 
 ## Specific sources
 

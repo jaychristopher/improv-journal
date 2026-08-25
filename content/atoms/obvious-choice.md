@@ -18,7 +18,7 @@ links:
   - { id: ref-ucb-manual, relation: contrasts }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Technique for: Be Simple**
@@ -52,6 +52,20 @@ This is the whole of the counterintuitive claim that [funny is not assembled out
 The paradox that makes this work: the obvious choice *feels* risky because it feels exposed. Complex choices feel safe because they have layers to hide behind. This is why Be Brave is a prerequisite — the obvious choice strips away armor. But the obvious choice leaves space for the scene to grow, while the complex choice fills the space before the scene has started.
 
 The cheapest place to practise this is [World's Worst](/practice/formats/worlds-worst), where the offer lasts three seconds and then the slate is wiped. A player holding out for something clever while three others step forward and back has misread what the game trains, and the pause costs more than a plain answer would have.
+
+## The analytical version of the same move
+
+UCB asks for something that sounds like the opposite of this: identify the first unusual thing, frame it explicitly, and build the pattern deliberately. That is an analytical operation, and this page is a refusal to analyse.
+
+The tension is real rather than a misunderstanding, but it dissolves once you notice the two are describing different moments.
+
+**Being obvious governs what you produce.** In the instant a response is required, the first thing is the one connected to what just happened, and searching for a better one costs the connection.
+
+**Identifying the unusual thing governs what you notice afterwards.** Once a scene has produced something distinctive, recognising it and building on it is perception rather than invention, and there is nothing in this page that argues against seeing clearly.
+
+The performer doing both is obvious in the moment and analytical about the pattern. The performer in trouble is the one running the analysis *while* their partner is speaking, which converts a perceptual skill into exactly the bandwidth cost described above.
+
+Which suggests the honest summary: the schools disagree about how much deliberate thought improv requires, and much less about when it should happen.
 
 ## Specific source
 

@@ -22,7 +22,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 You cannot build shared reality alone. The system requires multiple agents. No individual performer has enough bandwidth, perspective, or creative capacity to sustain a scene by themselves.
@@ -58,6 +58,16 @@ Fragility says the shared world degrades without maintenance. Interdependence sa
 Interdependence fails when performers operate as independent agents sharing a stage rather than co-dependent agents sharing a reality. Signs: monologuing (one person sustains the scene while the other watches), transactional scene work (players take turns but never merge — two solos alternating), and the "helpful bystander" (one supports without ever risking their own contribution).
 
 TJ Jagodowski and Dave Pasquesi demonstrate interdependence nightly — unrehearsed hour-long two-person shows built entirely on the premise that neither of them can do it without the other. The documentary is called "Trust Us, This Is All Made Up." The "us" is load-bearing.
+
+## What solo improv does and does not disprove
+
+The obvious refutation is that solo improv exists and works. If nothing can be built alone, a one-person show should be impossible, and it is not.
+
+The refutation lands on a claim this page is not making. Interdependence here is not about how many performers are on stage — it is that **meaning requires a receiver**, and a solo performer has one. Suggestions come from the room, laughter and silence arrive continuously, the timing of the next line is shaped by what the audience just did. The exchange is asymmetric and it is still an exchange.
+
+If anything the solo form sharpens the case. Remove the scene partner and the audience becomes the *only* receiver, so the performer's dependence on being received is more exposed rather than less. A solo show played to a silent room does not become a private rehearsal; it fails, publicly, in a way that demonstrates the constraint.
+
+What solo work genuinely removes is a **co-author** — somebody who can contradict you, hand you something you would not have chosen, and hold half the shared reality. That is a real loss and the page above describes it accurately. It is a different claim from the one the objection defeats.
 
 ## Specific sources
 
