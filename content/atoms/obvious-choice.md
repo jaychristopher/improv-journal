@@ -27,7 +27,7 @@ The obvious choice is the practice of acting on your first impulse without censo
 
 ## The first-impulse principle
 
-Your first instinct is usually the obvious one. Your second thought is the one trying to be clever. The first thought is connected to the scene. The second thought is connected to your ego. The point is not that the first thought is *correct* — it's that acting on it without filtering produces more alive scene work than deliberating. An obvious idea played with total commitment is more interesting than a brilliant idea played at arm's length.
+Your first instinct is usually the obvious one. Your second thought is the one trying to be clever. Forced-choice games are built on that gap and do nothing else: [this or that questions](/this-or-that-questions) works by lowering the cost of the first answer, so the fast one arrives before the presentable one can replace it. The first thought is connected to the scene. The second thought is connected to your ego. The point is not that the first thought is *correct* — it's that acting on it without filtering produces more alive scene work than deliberating. An obvious idea played with total commitment is more interesting than a brilliant idea played at arm's length.
 
 ## The "happy birthday" test
 

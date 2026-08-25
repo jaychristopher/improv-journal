@@ -79,7 +79,7 @@ No — and assuming otherwise causes real damage, because groups conclude that t
 
 What is required is confidence in each other's work: that offers will be received, that nobody is competing for the scene, that a mistake will be covered rather than watched. Plenty of long-running casts contain people who would not choose each other's company and who are entirely reliable on stage.
 
-The reverse is more common and more dangerous. A group of close friends often has an unusually hard time giving each other notes, because the friendship raises the cost of saying the difficult thing — which is the exact failure that stops the work improving. Liking each other is pleasant and it is not the mechanism.
+The reverse is more common and more dangerous. A group of close friends often has an unusually hard time giving each other notes, because the friendship raises the cost of saying the difficult thing — which is the exact failure that stops the work improving. Ordinary friendship carries the same cost, and the questions that would actually move something on are the ones nobody asks, which is what [questions to ask friends](/questions-to-ask-friends) exists for. Liking each other is pleasant and it is not the mechanism.
 
 ## The solo counter-argument
 

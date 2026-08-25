@@ -30,7 +30,7 @@ That interference is `internal-computation` — the gap between impulse and expr
 
 ## Why the first idea wins
 
-Asked to be original, people reach for what they imagine originality looks like, and arrive at cliché. Told to be obvious, they produce something no one else would have said — because the obvious response is assembled from their own particular history, and no two people find the same thing obvious. This is the reasoning behind `obvious-choice`: originality is a by-product of honesty, not a target you can aim at.
+Asked to be original, people reach for what they imagine originality looks like, and arrive at cliché. Told to be obvious, they produce something no one else would have said — which is also why the questions worth asking people you already know are not the clever ones. [Fun questions to ask friends](/fun-questions-to-ask-friends) works on answers assembled from a particular life rather than from a stock of good replies — because the obvious response is assembled from their own particular history, and no two people find the same thing obvious. This is the reasoning behind `obvious-choice`: originality is a by-product of honesty, not a target you can aim at.
 
 ## Spontaneity is a function of safety, not courage
 

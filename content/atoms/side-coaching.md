@@ -38,7 +38,7 @@ All side-coaching is given during playing. Players do not stop to consider what 
 
 ## Side-coaching vs. directing
 
-Directing tells players what to do ("Do it this way"). Side-coaching prompts action ("Use your where!"). The distinction matters: directing creates dependency on the teacher; side-coaching develops the player's own capacity. The side-coach avoids "showing how," instead allowing players to grapple with the problem. The role requires staying a detached observer while simultaneously remaining engaged as a participant.
+Directing tells players what to do ("Do it this way"). Side-coaching prompts action ("Use your where!"). The distinction matters: directing creates dependency on the teacher; side-coaching develops the player's own capacity. The same split decides whether a team improves or waits to be told, which is why [how to be a better manager](/how-to-be-a-better-manager) treats the note given while the work is still running as the only kind that changes anything. The side-coach avoids "showing how," instead allowing players to grapple with the problem. The role requires staying a detached observer while simultaneously remaining engaged as a participant.
 
 ## Connection to Point of Concentration
 
