@@ -18,7 +18,8 @@ const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
     desc: "Story-first. Status as the engine. Spontaneity through surrender. Theatresports, Loose Moose.",
   },
   spolin: {
-    label: "Viola Spolin",
+    // Kept in step with TRADITION_INFO, where the reason for the name is recorded.
+    label: "Spolin and the Point of Concentration",
     desc: "Present-moment awareness. The body as primary instrument. Point of Concentration. Theater Games.",
   },
   close: {

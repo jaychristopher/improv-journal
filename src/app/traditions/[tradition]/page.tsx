@@ -51,11 +51,27 @@ const TRADITION_INFO: Record<
       "Where it strains is comedy structure. Johnstone is superb on why a scene is alive and comparatively uninterested in why it is funny, and groups raised purely on this material tend to produce work that is truthful, well-observed and slightly shapeless.",
     ],
   },
+  /**
+   * The same handoff as `close`, and the more clear-cut of the two: title and
+   * h1 were both exactly "Viola Spolin", which is the primary keyword
+   * /viola-spolin targets at 800 a month. An exact duplicate of another page's
+   * head term is the strongest possible signal that the two are the same
+   * page, and the thin one wins those often enough to matter.
+   *
+   * Named after the mechanism rather than an institution, because unlike iO
+   * there is not one — Spolin's method reached people through Second City and
+   * through her own books rather than through a theatre she ran. Point of
+   * Concentration is hers, is what the school actually turns on, and is
+   * targeted by no page here. "Theater games" was the other candidate and is
+   * ruled out: /theatre-games targets it at 1,900, so that rename would have
+   * moved the collision rather than ended it.
+   */
   spolin: {
-    label: "Viola Spolin",
+    label: "Spolin and the Point of Concentration",
     desc: "Present-moment awareness. The body as primary instrument. Point of Concentration.",
-    meta: "Viola Spolin's improv: present-moment awareness, the body as the primary instrument, and Point of Concentration. Improvisation for the Theater, 1963.",
+    meta: "Spolin's improv: present-moment awareness, the body as the primary instrument, and the Point of Concentration. Improvisation for the Theater, 1963.",
     keyTexts: ["Improvisation for the Theater (1963)"],
+    guide: { href: "/viola-spolin", label: "Viola Spolin: the woman who invented theater games" },
     orientation: [
       "Spolin's route in is attention, and the mechanism is the Point of Concentration — a single thing to attend to that is narrow enough to occupy the part of you that would otherwise be watching yourself perform. Solve the problem and the behaviour she wanted arrives as a side effect.",
       "The school is unusual in treating the teacher as part of the mechanism rather than as somebody who explains and then withdraws. A game is set, a problem is named, and the adjustments happen live while it runs — which is why so much of the material reads as instructions to a person standing at the side of the room.",
