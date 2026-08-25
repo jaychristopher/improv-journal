@@ -216,6 +216,53 @@ export default async function LibraryPage() {
           </section>
         ))}
       </div>
+
+      <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Which One to Read First</h2>
+        <p className="text-foreground/70 mb-4">
+          The first tier is five books and almost nobody reads five. Which one is right depends less
+          on where you are in general and more on what is currently going wrong.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you have never done improv and want to know why anybody bothers.</strong>{" "}
+          <Link href="/library/ref-impro-johnstone" className="underline">
+            Impro
+          </Link>
+          . It is the most interesting book on the list and the least practical &mdash; a book about
+          imagination, spontaneity and status that happens to be set in a theatre. Do not expect a
+          route into doing it.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you are taking classes and your scenes keep dying.</strong>{" "}
+          <Link href="/library/ref-ucb-manual" className="underline">
+            The UCB Manual
+          </Link>
+          . Its distinguishing quality is that it commits: where the others gesture at what good
+          scenes have in common, this one gives a procedure and accepts being wrong sometimes. That
+          is exactly what a stuck student needs and exactly what an experienced one argues with.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you freeze at the top of a scene.</strong>{" "}
+          <Link href="/library/ref-napier-improvise" className="underline">
+            Improvise
+          </Link>
+          , which is about the first three seconds and very little else. Shorter than the others and
+          aimed at one problem.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you teach, or are about to.</strong>{" "}
+          <Link href="/library/ref-spolin-improvisation-for-theater" className="underline">
+            Improvisation for the Theater
+          </Link>
+          . Everything downstream of it is a variation, and it is written to be taught from rather
+          than read.
+        </p>
+        <p className="text-foreground/70">
+          What no book on this list will do is make you better at listening, which is the thing that
+          most limits most improvisers. That improves with repetitions and with somebody watching
+          who can tell you what you did. Reading is for knowing what to call it afterwards.
+        </p>
+      </section>
     </main>
   );
 }
