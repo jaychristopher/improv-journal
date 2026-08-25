@@ -7,9 +7,27 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Why Conversations Work (or Don't)"),
+  /**
+   * The last major hub whose title claimed no subject.
+   *
+   * "Why Conversations Work (or Don't)" is a good headline and names nothing
+   * anybody searches for, on a page carrying a link from the nav and the
+   * footer of all 376 pages. Its siblings all lead with the subject — Improv
+   * Formats, Improv Glossary, Improv Reading List — and this one did not.
+   *
+   * Search Console shows the shape of the cost: performance-state,
+   * meaning-is-relational, interdependence, cognitive-bandwidth and
+   * diagnosis/blocking all draw impressions, and the hub they sit under draws
+   * none.
+   *
+   * "How improv works" is targeted by nothing here and collides with nothing.
+   * /improv-theory holds the neighbouring cluster — improv philosophy, history
+   * of improv — and /what-is-improv holds the definitional query, which is a
+   * different question from how the thing operates.
+   */
+  title: pageTitle("How Improv Works: The Laws Underneath a Scene"),
   description:
-    "Six reasons every conversation is hard — and eight things you can do about it. Discovered by improv performers doing it live, every night, with no script.",
+    "How improv works underneath the games: six reasons every conversation is hard, and eight things that help. Worked out live, on stage, without a script.",
   alternates: { canonical: "/how-it-works" },
 };
 
@@ -35,8 +53,9 @@ export default async function SystemPage() {
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "How It Works" }]} />
 
       <header className="mb-12">
+        {/* Kept in step with the metadata title; see the note on it. */}
         <h1 className="text-3xl font-bold tracking-tight">
-          Why Conversations Work (or Don&apos;t)
+          How Improv Works: The Laws Underneath a Scene
         </h1>
         <p className="text-foreground/60 mt-2">
           There are six reasons every conversation is hard — and eight things you can do about it.
