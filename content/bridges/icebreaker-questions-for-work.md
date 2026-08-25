@@ -254,6 +254,28 @@ Every list includes some of these. Each one fails in a way worth understanding.
 - **Anything with a winner.** The moment an icebreaker becomes a competition, `safety-in-the-room` goes with it — people play not to lose rather than to be known.
 - **"Everybody stand up if..."** Forced physical participation removes the ability to decline quietly, which is the one thing that made the question safe.
 
+## Questions People Ask About Work Icebreakers
+
+### What makes an icebreaker question work at work?
+
+Three properties, and none of them is being clever. It has to be answerable in one sentence, because anything needing a paragraph turns a warm-up into a presentation. It has to be genuinely declinable, since a question nobody can pass on is a request disguised as an invitation. And it has to leave somewhere to go afterwards — the test is whether a normal follow-up exists. "What are you looking forward to this week?" has one. "If you were an animal, what would you be?" has none, which is why those rounds die on contact.
+
+### What do you do with a team that hates icebreakers?
+
+Believe them, and change what you are doing rather than your framing. Most icebreaker hatred is accurate memory: people have sat through fifteen-minute rounds that produced nothing, in rooms where declining was not really available. The fix is to make it short enough that objecting costs more than participating, tie it to the meeting rather than to fun, and never call it an icebreaker out loud. A single question at the top of the agenda, answered in one sentence each, is not the thing they hate.
+
+### Are icebreakers worth the time at all?
+
+Often not, and it is worth being honest about when. A team that talks easily, disagrees comfortably and already knows what each other are working on gets very little from a round of questions, and adding one is ritual rather than function. The case for running one is specific: a group that has not met, a group where somebody new has joined, a meeting where the first ten minutes are usually silent, or a group where the same three people speak every time. Outside those, the meeting is the better use of ninety seconds.
+
+### What if somebody gives a one-word answer?
+
+Take it and move on, which is harder than it sounds when the answer was flat. A short answer is a legitimate use of the choice you gave people, and treating it as a failure — pressing for more, or visibly waiting — converts the round from an invitation into an assessment, which is the thing the format was supposed to avoid. If most of the room is answering in one word, that is information about the question or the trust in the room rather than about the people.
+
+### How often should a recurring meeting run one?
+
+Weekly works if the question changes and stays short; anything more frequent becomes furniture and stops being heard. The usual failure is not frequency but repetition — the same check-in question every week trains everybody to have an answer ready, and a prepared answer is not a real one. Rotating who chooses the question solves it more reliably than rotating the question, because it also moves who is setting the depth.
+
 ## How to Run One
 
 **Ninety seconds, not fifteen minutes.** The point is a warm room, not an activity. Long icebreakers are resented in proportion to how much work people have.
