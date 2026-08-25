@@ -8,6 +8,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 67
 serp_verdict: authority
 serp_top10_dr: [88, 80, 74, 67, 92, 92, 91]
+subject:
+  type: Thing
+  name: "Collaboration"
+  description: "The act of working together toward a shared outcome."
+  sameAs: ["https://en.wikipedia.org/wiki/Collaboration"]
 entry_atoms: [ensemble, group-mind, interdependence, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

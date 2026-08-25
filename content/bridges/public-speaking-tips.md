@@ -16,6 +16,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 27
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Public speaking"
+  description: "Delivering a speech or presentation to a live audience."
+  sameAs: ["https://en.wikipedia.org/wiki/Public_speaking"]
 entry_atoms: [performance-state, obvious-choice, internal-computation, cognitive-bandwidth, audience-relationship]
 entry_path: improv-for-life
 primary_problem: "you are fine until somebody asks a question you did not prepare for"

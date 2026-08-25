@@ -21,6 +21,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 28
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Conversation"
+  description: "Interactive spoken communication between two or more people."
+  sameAs: ["https://en.wikipedia.org/wiki/Conversation"]
 entry_atoms: [offers, obvious-choice, blocking, initiation, be-thankful, steering]
 entry_path: improv-for-life
 primary_problem: "you open with something fine and the conversation is dead within thirty seconds"

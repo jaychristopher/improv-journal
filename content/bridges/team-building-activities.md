@@ -15,6 +15,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 36
 serp_verdict: authority
+subject:
+  type: Thing
+  name: "Team building"
+  description: "Activities used to improve how a group works together."
+  sameAs: ["https://en.wikipedia.org/wiki/Team_building"]
 entry_atoms: [safety-in-the-room, trust, yes-and, active-listening, be-supportive]
 entry_path: physics-of-connection
 status: draft

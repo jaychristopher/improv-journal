@@ -15,6 +15,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 31
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Icebreaker"
+  description: "Brief facilitating exercise used to open a group session."
+  sameAs: ["https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"]
 entry_atoms: [safety-in-the-room, status, trust, vulnerability, be-thankful]
 entry_path: improv-for-teams
 primary_problem: "you have to open a meeting and every icebreaker you can think of makes people wince"

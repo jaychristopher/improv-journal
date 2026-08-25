@@ -10,6 +10,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 13
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Trust"
+  description: "Assumption of, and reliance on, the honesty of another."
+  sameAs: ["https://en.wikipedia.org/wiki/Trust_(social_science)"]
 entry_atoms: [trust, be-thankful, be-supportive, be-honest, offers, be-positive]
 entry_path: improv-for-teams
 primary_problem: "the team is polite but nobody says the real thing"

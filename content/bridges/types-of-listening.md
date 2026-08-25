@@ -9,6 +9,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 21
 serp_verdict: winnable
 serp_top10_dr: [83, 99, 81, 91, 91, 81, 21, 99]
+subject:
+  type: Thing
+  name: "Listening"
+  description: "Attending to what is said and working out what it means."
+  sameAs: ["https://en.wikipedia.org/wiki/Listening"]
 entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
 status: draft

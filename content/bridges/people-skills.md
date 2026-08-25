@@ -9,6 +9,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 87
 serp_verdict: authority
 serp_top10_dr: [96, 94, 97, 91, 99, 87]
+subject:
+  type: Thing
+  name: "People skills"
+  description: "Interpersonal skills used to communicate and work with others."
+  sameAs: ["https://en.wikipedia.org/wiki/People_skills"]
 entry_atoms: [active-listening, offers, continuous-signaling, status, be-present, be-honest]
 entry_path: improv-for-life
 status: draft
