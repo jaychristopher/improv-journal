@@ -127,6 +127,46 @@ export default async function SystemPage() {
         </Link>
       </section>
 
+      <section className="mb-12">
+        <h2 className="mb-3 text-lg font-semibold">Which Layer You Need</h2>
+        <p className="text-foreground/70 mb-4">
+          The difference between a law and a principle is not how important it is. A law is
+          something you cannot violate, only pay for &mdash; you will not make time reversible or
+          attention infinite by being disciplined about it. A principle is something you can ignore
+          whenever you like, and people do, which is why they need stating at all.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          That decides where to start when something has gone wrong.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you can already name what happened</strong> &mdash; somebody blocked, nobody
+          listened, the scene never settled anywhere &mdash; go straight to{" "}
+          <Link href="/how-it-works/diagnosis" className="underline">
+            the failure patterns
+          </Link>
+          . Naming it is most of the work and the fix is usually specific.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If it just felt dead and you cannot say why</strong>, start with the laws. There
+          are six of them, they are the constraints every exchange runs under, and a scene that felt
+          flat for no visible reason has almost always hit one of them rather than something exotic.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          <strong>If you know exactly what you did and keep doing it anyway</strong>, the problem is
+          not knowledge, and{" "}
+          <Link href="/how-it-works/principles" className="underline">
+            the principles
+          </Link>{" "}
+          are where the habit-level answer lives. Knowing you should have listened has never once
+          made anybody listen.
+        </p>
+        <p className="text-foreground/70">
+          The order is not a curriculum. Most people arrive at one of these pages from a search,
+          read the thing that describes their own week, and never touch the rest &mdash; which is a
+          reasonable way to use it.
+        </p>
+      </section>
+
       {insights.length > 0 && (
         <section>
           <h2 className="mb-2 text-lg font-semibold">Bigger picture</h2>
