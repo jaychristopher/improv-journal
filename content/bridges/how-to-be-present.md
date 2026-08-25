@@ -13,7 +13,7 @@ entry_atoms: [be-present, presence, cognitive-bandwidth, internal-computation, a
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # How to Be Present: The Bandwidth Trick That Actually Works
@@ -106,6 +106,32 @@ You don't need to join an improv class to use this model, though it helps. The p
 **In work:** Before starting a task, remove the inputs that feed internal computation. Close the tabs. Silence the phone. Each open input is a bandwidth claim that pushes your processing toward internal management and away from the task in front of you.
 
 **In daily life:** When you catch yourself not-present, don't try to force presence through willpower. Instead, increase the external demand. Engage a sense you weren't using. Touch something and notice its texture. Listen to the ambient sound and identify three distinct sources. Give your bandwidth something external to process, and the internal chatter loses its foothold.
+
+## Questions People Ask About Being Present
+
+### Why do I zone out even when I care about the conversation?
+
+Because caring is not the input. Attention is not allocated by how much something matters to you — if it were, nobody would drift during a conversation with somebody they love, and everybody does.
+
+What allocates attention is demand: whether something is asking you for a response you cannot produce automatically. A conversation you care about but can predict makes almost no demand, and the spare capacity goes where spare capacity always goes, which is inward. That is why the fix in this material is never to care harder. It is to give the attention something it has to actually do.
+
+### Why is it harder with people I know well?
+
+For the same reason, sharpened. With somebody new, every sentence carries information you cannot anticipate, so attending is not optional — the demand is doing the work for you.
+
+With somebody you have known for years, you can predict the shape of most of what is coming, and prediction is exactly what lets attention leave. The unwelcome implication is that drifting with the people closest to you is not a sign you care less. It is a sign you know them well, and it means the demand has to be supplied deliberately where it used to arrive for free.
+
+### Isn't paying that much attention exhausting?
+
+Less tiring than the alternative, which is the part people do not expect. Running a conversation while also monitoring how you are doing in it is two jobs, and the monitoring is the expensive one — `internal-computation` is what leaves you flattened after an hour of small talk.
+
+Attention pointed outward is a single task. People come out of genuinely absorbing conversations energised rather than depleted, and the difference is not that they tried harder; it is that they were only doing one thing.
+
+### How long before it stops taking effort?
+
+The first change comes quickly and is not the one people expect. Within a few weeks of practising something that forces attention outward, most people notice they have caught themselves drifting — which feels like failure and is the opposite: you cannot notice from inside the drift, so noticing means you were present enough to see it.
+
+The state arriving without being summoned takes considerably longer and never becomes total. What changes is the recovery time. Early on a drift lasts minutes; later it lasts a sentence, and you are back before the other person has registered anything.
 
 ## The Reframe That Changes Everything
 
