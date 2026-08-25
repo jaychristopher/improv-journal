@@ -21,7 +21,7 @@ links:
   - { id: two-person-scene, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 The arc of an improv scene — not a rigid template but a recognizable shape that emerges when the principles are working.
@@ -58,6 +58,16 @@ Both produce scenes with the same shape (establish → explore → resolve). The
 ## Scenes need change
 
 A scene where nothing shifts is a premise, not a scene. The relationship should be different at the end than at the beginning — emotionally, in terms of status, in terms of what the characters know about each other. Without movement, scenes decay.
+
+## The shows that have no phases at all
+
+An hour of TJ and Dave does not do this, and it would be dishonest to present three phases as what a scene must contain.
+
+Their shows run unedited, scenes blend into one another, threads loop back, and resolution arrives — when it arrives — across the totality of the evening rather than at the end of any particular scene. Napier's instruction to just do something at the top points the same way: the structure is not a plan to execute.
+
+What survives is a change in what the phases are claiming. They describe **what has to become true** for a scene to be legible to an audience — that people know where they are and who they are to each other, that something distinctive has surfaced, that it has gone somewhere. They do not prescribe an order, a duration, or a moment where each is complete.
+
+The difference matters most for what it licenses. A performer holding the phases as a sequence will start resolving because the scene feels like it has been going a while, which is the commonest way a good scene gets closed early. A performer holding them as conditions asks a different question — has the audience got what they need to follow this — and that question has a real answer at any point in the scene.
 
 ## Specific sources
 

@@ -22,7 +22,7 @@ links:
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 Group Mind is the emergent phenomenon where an ensemble operates as if it shares a single creative intelligence — making complementary choices, building patterns nobody explicitly planned, and responding to the scene's needs before they're verbalized.
@@ -60,6 +60,18 @@ Group mind is the ultimate systemic health indicator — when it's happening, ev
 A working group produces the same phenomenon and rarely names it. [Team dynamics](/team-dynamics) covers what actually generates it — status, signalling, and the coherence a group maintains without discussing it — instead of treating it as chemistry a team either has or does not.
 
 The clearest shortform demonstration is [Two-Headed Expert](/practice/formats/two-headed-expert), where two players answer as one person a word at a time. The expert ends up with opinions neither player holds, arrived at by nobody, which is the phenomenon this describes reduced to its smallest possible form.
+
+## Is group mind actually a thing?
+
+The deflationary account deserves stating, partly because the researcher this page leans on hardest declines the term.
+
+Robert Weisberg's position in *Creativity: Understanding Innovation* is that group mind is a metaphor rather than a phenomenon — what is happening is individuals reading each other's cues extremely well, not consciousness of any shared kind. Keith Sawyer, whose work on improvised dialogue underpins much of what this site says about ensembles, deliberately writes *collaborative emergence* instead, and the choice is made precisely to avoid the mystification.
+
+There is a historical motive worth naming too. Close needed ensemble ideology to distinguish longform from the star-driven short-form comedy it was competing with, and a doctrine that makes the group the unit of value does useful institutional work quite apart from whether it is true.
+
+The deflationary reading does not cost this page much, though, and arguably improves it. If group mind is exceptionally good mutual cue-reading, then it is a **trainable perceptual skill** rather than a state that visits some casts and not others — and everything on this page about the conditions that produce it becomes a method rather than a description of weather. A shared consciousness could only be waited for. Cue-reading can be practised on Tuesday.
+
+What the mystical framing costs is more specific: performers who have not felt it conclude they are missing something constitutional, and performers who have felt it stop asking what produced it.
 
 ## Specific sources
 

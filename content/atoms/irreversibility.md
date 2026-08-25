@@ -18,7 +18,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Time advances irreversibly. Once a signal is sent, it becomes part of the shared history. You cannot edit, undo, or retract.
@@ -32,6 +32,16 @@ But irreversibility is not only constraint — it is the source of **dramatic gr
 The pressure this creates is real. In a script, you can look ahead. In improv, you are always living in the consequences of the last three seconds. Irreversibility also creates the permanent archive that callbacks exploit — everything established remains available for reuse because it cannot be erased, only neglected.
 
 This constraint is not a bug — it's the fundamental physics that makes improv what it is. It gives choices weight, makes commitment consequential, and creates the path-dependent structure that allows scenes to accumulate meaning over time.
+
+## Training is the exception, and only partly
+
+In class, teachers stop scenes and say let us try that again. Spolin's entire method is built on repetition — run the game, examine it, run it once more. If time were genuinely irreversible in the way this page describes, none of that would be possible.
+
+The resolution is that irreversibility is a **performance constraint**, and training exists precisely because it is one. A rehearsal room suspends the rule so that performers can build the reflexes needed for the room where it applies. That is not a contradiction; it is what practice is for, in improv and everywhere else.
+
+But the suspension is narrower than it looks. The scene can be retaken. The **impression cannot** — the group watched you make that choice, and running it again does not unwatch it. This is why students who are told a class is a safe space still hedge: they are correctly reading that the social record is single-take even when the scene is not.
+
+Which means the constraint never fully lifts, it only changes what it applies to. On stage, irreversibility governs the fiction. In a classroom it governs the room, and the room is the thing most beginners are actually managing.
 
 ## Attribution note
 

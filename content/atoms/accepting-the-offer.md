@@ -22,7 +22,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Technique for: Be Positive**
@@ -68,6 +68,18 @@ When acceptance fails, it's usually because the receiver's ego intervened: they 
 This applies to your own offers too. The word that escaped your mouth, the physical position you stumbled into, the emotion that arrived uninvited — these are offers from yourself to yourself, and they deserve the same acceptance.
 
 The smallest visible version of this is [Sound Ball](/practice/exercises/sound-ball). Somebody is thrown a flat noise and returns a richer, funnier one, which feels generous from the inside and is a substitution — the original was two seconds old and everybody heard it, so the refusal has nowhere to hide.
+
+## Johnstone's objection to breaking it into steps
+
+Receive, acknowledge, extend is a teaching device, and the tradition that produced most of improv's foundations would not recognise it as a description of anything.
+
+For Johnstone, acceptance is not a procedure executed in three parts. It is a **state of being unblocked** — the natural condition of somebody who has stopped protecting themselves, which is why so much of his work is about removing an obstacle rather than installing a technique. The decomposition here is a UCB-lineage addition, and he would say it converts a way of being into a checklist.
+
+He is right about how it feels from the inside. Nobody good is running three steps. The moves are simultaneous and invisible, and describing them separately is like describing walking as a sequence of balance corrections — accurate, useless as instruction to somebody already walking.
+
+The decomposition earns its place in exactly one situation, which is a performer who is failing and cannot tell where. "You are not accepting" is unactionable. "You heard it, you signalled that you heard it, and then you changed the subject" is a note somebody can use on the next scene, because it locates the failure at a specific move.
+
+The risk is real, though, and worth stating plainly: a performer consciously running three steps mid-scene is spending capacity on the procedure that the scene needed for reception. The scaffold is meant to be removed.
 
 ## Specific sources
 
