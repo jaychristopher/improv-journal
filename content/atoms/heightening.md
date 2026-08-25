@@ -23,7 +23,7 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Heightening is the pattern of escalating the game of the scene — repeating the core behavioral pattern while raising the stakes, expanding the context, or intensifying the emotion. Same game, bigger consequences.
@@ -70,6 +70,16 @@ The apologizer isn't just apologizing more absurdly — underneath, they're reve
 The systemic health indicator "the world gets richer over time" is largely driven by heightening — each beat adds to the total, building a snowball of meaning that makes the scene feel complete when it ends.
 
 This is also the closest thing improv has to an engine for comedy, which is why [how to be funny](/how-to-be-funny) spends its length on noticing a pattern and escalating it rather than on jokes. The laugh is usually the third time, not the first.
+
+## Heightening by getting quieter
+
+The word points in one direction and the best practitioners of it frequently go the other way.
+
+TJ and Dave heighten by narrowing. A scene intensifies because a character gets stiller, or answers more carefully, or stops answering — and the pressure rises because what is at stake has grown rather than because the behaviour has got bigger. Their method also declines the premise underneath most heightening instruction, which is that a scene needs an identifiable game at all.
+
+The confusion is between two different things sharing a word. **Amplitude** is how loud the behaviour is. **Stakes** are how much the thing matters to the people in it. Pattern heightening raises amplitude and usually raises stakes with it, which is why the two get taught as one move. But a scene where the volume climbs and nothing has come to matter more is not heightening; it is repetition performed with increasing effort, and audiences read it accurately as running out of material.
+
+The usable test is what would happen if the next beat were played smaller. If the scene would lose nothing, the escalation was decorative. If it would become unbearable, the stakes were doing the work all along and the volume was optional.
 
 ## Specific sources
 

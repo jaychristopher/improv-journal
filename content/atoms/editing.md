@@ -22,7 +22,7 @@ links:
   - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Editing is how to end scenes. One of the hardest ensemble skills — it requires reading the scene from outside while respecting what's happening inside. Jimmy Carrane: "The best edits are gifts to your teammates. You're saving them from having to figure out how to end the scene."
@@ -57,6 +57,16 @@ Performers simply walk on and start something new; current performers read the e
 Primarily the backline. Performers inside the scene are focused on playing and may not have the structural perspective. The backline functions like film editors: watching from outside, making structural decisions. But self-editing happens too — experienced performers sense when a scene has peaked and walk off.
 
 Editing is an act of generosity and ensemble awareness, not authority. You're not judging the scene — you're serving it.
+
+## The traditions that do not name their edits
+
+A codified vocabulary of edits is a school's choice rather than a property of the form.
+
+The Annoyance works without a formal sweep or wipe. Transitions happen because the ensemble feels that a scene is finished, and somebody moves — no named mechanism, no taught signal. Napier's *Behind the Scenes* sets out the alternatives to structured editing in detail, and the work produced this way is not less clean than the work produced by groups who drill the vocabulary.
+
+What a vocabulary actually buys is coordination under pressure, and that is worth being precise about. Named edits make the decision teachable, let a large cast agree on what is about to happen without discussing it, and give a beginner something to do with the impulse that a scene should end. A duo who have played together for a decade need none of that, because the coordination problem the vocabulary solves does not arise between two people who can read each other.
+
+The cost is that a named edit can be performed rather than felt. A sweep executed because a scene has run the expected length is a piece of choreography, and the ensemble that trained the mechanism hardest is the one most likely to reach for it on schedule instead of on instinct.
 
 ## Specific sources
 

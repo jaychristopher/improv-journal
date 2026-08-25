@@ -25,7 +25,7 @@ links:
   - { id: ref-truth-in-comedy, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Relationship is the connection between characters in a scene — who they are to each other, what they feel about each other, and what they want from each other. Relationship is the imported reality the audience recognizes instantly — the one thing on stage that isn't invented. Everything else is fiction; the connection between two people is real enough that audiences project their own experience onto it before anyone speaks.
@@ -55,6 +55,16 @@ The most common beginner mistake is building a *situation* (we're on a spaceship
 Game lives in behavioral pattern; relationship lives in emotional connection. They serve different masters but the strongest scenes interweave both — the game heightens while the relationship deepens underneath. When forced to choose, choose relationship. A scene with rich relationship and no game is a drama. A scene with a sharp game and no relationship is a sketch. Both can work; the former has more life in it.
 
 Off stage the same question decides how an exchange goes: who these two people are to each other, and what they want from each other today rather than in general. [Questions for couples](/questions-for-couples) is built to keep that current, on the argument that the answers change and most people stop asking.
+
+## Naming a relationship is not establishing one
+
+The sharpest objection to this page comes from Will Hines, and it is aimed at exactly the move most beginners make.
+
+Saying "I am the parent and you are my son" gives you nothing in a scene. It is information the audience will accept and neither performer can act on, because it specifies a category rather than a history. Hines proposes dropping the word and asking for committed scenework instead; the UCB position runs parallel, holding that game generates more material than a relationship label does.
+
+What survives the objection is the part of this page that was never about labels. A relationship is legible from behaviour — who apologises, who interrupts, who is allowed to be annoyed — and none of that requires anybody to announce a category. The performers who name the relationship in the first line are usually doing it *instead of* demonstrating one, which is the failure Hines is naming, and it is worth conceding plainly rather than defending.
+
+The difference shows up in what the next line can be. "You are my son" leaves the scene where it started. Sighing and putting the plate down in front of somebody has already established the relationship and given both people something to play.
 
 ## Specific sources
 

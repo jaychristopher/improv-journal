@@ -23,7 +23,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 Discovery is the moment when both players recognize what the scene is about — when the game, the pattern, the thing that makes this scene *this scene* clicks into place. Discovery is not planned. It emerges from the interaction and is recognized, not invented. Forced-choice games run on a version of the same thing. [Would you rather questions](/would-you-rather-questions) are not interesting for the choice but for the defence of it — the test is whether a pair splits a room and whether the people who picked can say why.
@@ -61,6 +61,16 @@ When it happens simultaneously — when both players click at the same moment wi
 ## After discovery
 
 Heightening begins. The pattern that was discovered becomes the material to explore, escalate, and deepen for the rest of the scene.
+
+## The objection that discovery is passive
+
+Napier's position is that this page describes a way of waiting, and he is not wrong about what it produces in a classroom.
+
+His formulation in *Improvise* is that the game is not hiding in the scene waiting to be found — you build it with your choices. A performer told that discovery is the goal will frequently interpret that as permission to stay neutral until something interesting arrives, and neutral openings do not generate anything to discover. Two people being reasonable at each other for ninety seconds is the most common scene in any beginner class, and it is usually being justified as patience.
+
+The disagreement narrows once you separate what a performer *does* from what they *attend to*. Nothing here argues for withholding a choice. Make the bold specific choice on line one, exactly as Napier says — discovery describes what happens next, when you notice what your own choice has produced and treat it as more interesting than the thing you had planned.
+
+So it is a claim about recognition rather than about tempo. The performer who commits hard and then ignores what came back is not discovering anything either, and that failure is invisible to the advice to make strong choices.
 
 ## Specific sources
 
