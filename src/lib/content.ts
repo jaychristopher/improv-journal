@@ -215,6 +215,73 @@ function linkCitations(htmlStr: string, currentUrl: string | null): string {
  * one's citation. Nothing in the current map depends on that, but the map is
  * appended to by hand and the failure would be silent.
  */
+// ─── Person auto-linking ────────────────────────────────────────────────────
+// Book titles reach their library entry through SOURCE_TITLE_MAP and concepts
+// reach their atom through backticks. A person's name had no such route, and
+// the people this site is largely about are named constantly: measured on the
+// build, Keith Johnstone appeared on 80 pages and was linked from 5, Viola
+// Spolin on 74 and linked from 36, Del Close on 56 and linked from 52.
+//
+// Only people with a page of their own are listed. Mick Napier is named on 41
+// pages and Charna Halpern on 20, and both are deliberately absent: what this
+// site holds is the school each of them founded, not a page about them, and
+// pointing a person's name at an institution asserts something slightly false.
+
+const PERSON_MAP: [RegExp, string][] = [
+  [/Keith Johnstone/, "/traditions/johnstone"],
+  [/Viola Spolin/, "/viola-spolin"],
+  [/Del Close/, "/del-close"],
+];
+
+/**
+ * Link the first mention of a person, once per page.
+ *
+ * Once, not every occurrence, which is where this differs from linkSources. A
+ * book title appears two or three times in a page; these names appear in
+ * fifteen paragraphs of an atom that is entirely about their idea, and linking
+ * each one produces a page of identical anchors that reads as keyword
+ * stuffing rather than as navigation.
+ *
+ * Two positional guards matter. The name must not already be inside a link,
+ * and it must not be inside a tag at all — linkCitations and linkSources have
+ * already run by this point and both write a title attribute containing the
+ * target's tip, so a name occurring in one of those would otherwise be
+ * rewritten in the middle of an attribute and break the markup. Headings are
+ * skipped too: an anchor in an h2 is legitimate but it is not what any of
+ * these pages want.
+ */
+function linkPeople(htmlStr: string, currentUrl: string | null): string {
+  let result = htmlStr;
+  for (const [pattern, url] of PERSON_MAP) {
+    if (url === currentUrl) continue;
+    // The page already sends the reader there in its own words. Seven pages
+    // open with a hand-written line like "For the school it founded, see the
+    // Johnstone tradition", and a markdown link renders as the same bare
+    // anchor this writes — so without this check the page gained a second
+    // link to a page it was already linking, which is the opposite of the
+    // point.
+    if (result.includes(`href="${url}"`)) continue;
+
+    let linked = false;
+    result = result.replace(new RegExp(`\\b${pattern.source}\\b`, "g"), (match, ...args) => {
+      if (linked) return match;
+      const offset = args[args.length - 2] as number;
+      const before = result.slice(Math.max(0, offset - 300), offset);
+
+      // Inside a tag, so this is an attribute value rather than page text.
+      if (before.lastIndexOf("<") > before.lastIndexOf(">")) return match;
+      // Already the text of a link.
+      if (before.lastIndexOf("<a ") > before.lastIndexOf("</a>")) return match;
+      // Inside a heading.
+      if (/<h[1-6][^>]*>[^<]*$/.test(before)) return match;
+
+      linked = true;
+      return `<a href="${url}">${match}</a>`;
+    });
+  }
+  return result;
+}
+
 function linkSources(htmlStr: string, currentUrl: string | null): string {
   let result = htmlStr;
   const byLength = [...SOURCE_TITLE_MAP].sort((a, b) => b[0].source.length - a[0].source.length);
@@ -675,7 +742,10 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
       content,
       html: normaliseGeneratedIds(
         rewriteLegacyInternalLinks(
-          linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
+          linkPeople(
+            linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
+            currentUrl,
+          ),
         ),
       ),
       slug,
