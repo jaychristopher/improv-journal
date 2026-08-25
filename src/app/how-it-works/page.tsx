@@ -54,7 +54,9 @@ export default async function SystemPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="mb-2 text-lg font-semibold">The six reasons it&apos;s hard</h2>
+        <h2 id="the-six-reasons-it-s-hard" className="mb-2 text-lg font-semibold">
+          The six reasons it&apos;s hard
+        </h2>
         <p className="text-foreground/40 mb-4 text-sm">
           Every conversation you&apos;ve ever had operates under these constraints — you just
           don&apos;t notice them until something goes wrong.
@@ -128,7 +130,9 @@ export default async function SystemPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="mb-3 text-lg font-semibold">Which Layer You Need</h2>
+        <h2 id="which-layer-you-need" className="mb-3 text-lg font-semibold">
+          Which Layer You Need
+        </h2>
         <p className="text-foreground/70 mb-4">
           The difference between a law and a principle is not how important it is. A law is
           something you cannot violate, only pay for &mdash; you will not make time reversible or
@@ -169,7 +173,9 @@ export default async function SystemPage() {
 
       {insights.length > 0 && (
         <section>
-          <h2 className="mb-2 text-lg font-semibold">Bigger picture</h2>
+          <h2 id="bigger-picture" className="mb-2 text-lg font-semibold">
+            Bigger picture
+          </h2>
           <p className="text-foreground/40 mb-4 text-sm">
             Where these ideas lead beyond the stage.
           </p>

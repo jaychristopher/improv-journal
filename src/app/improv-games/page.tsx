@@ -118,7 +118,9 @@ export default async function ImprovGamesPage() {
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
       <section className="border-foreground/10 mt-16 border-t pt-12">
-        <h2 className="mb-3 text-xl font-semibold">How to Choose One</h2>
+        <h2 id="how-to-choose-one" className="mb-3 text-xl font-semibold">
+          How to Choose One
+        </h2>
         <p className="text-foreground/70 mb-4">
           The usual way to pick a game is to find one that sounds fun. The better way is to name
           what is going wrong and pick the game that isolates it. Almost every game here exists
@@ -197,7 +199,9 @@ export default async function ImprovGamesPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Warm-Up, Exercise, or Performance Game</h2>
+        <h2 id="warm-up-exercise-or-performance-game" className="mb-3 text-xl font-semibold">
+          Warm-Up, Exercise, or Performance Game
+        </h2>
         <p className="text-foreground/70 mb-4">
           These get lumped together as &ldquo;improv games&rdquo; and they do three different jobs.
           Reaching for the wrong kind is the most common way a session goes flat.
@@ -226,7 +230,9 @@ export default async function ImprovGamesPage() {
 
       {shortForm.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-3 text-xl font-semibold">Short-Form Games</h2>
+          <h2 id="short-form-games" className="mb-3 text-xl font-semibold">
+            Short-Form Games
+          </h2>
           <p className="text-foreground/70 mb-4">
             The performance kind: rules, a structure, and usually an audience &mdash; as opposed to
             the drills used in rehearsal.
@@ -246,7 +252,9 @@ export default async function ImprovGamesPage() {
       )}
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Which Games for Which Group</h2>
+        <h2 id="which-games-for-which-group" className="mb-3 text-xl font-semibold">
+          Which Games for Which Group
+        </h2>
         <p className="text-foreground/70 mb-4">
           The list above is sorted by what each game trains, which is the right way round once you
           know what you are fixing. If you are standing in front of a room and do not, the more
@@ -297,7 +305,9 @@ export default async function ImprovGamesPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Easy Improv Games for Beginners</h2>
+        <h2 id="easy-improv-games-for-beginners" className="mb-3 text-xl font-semibold">
+          Easy Improv Games for Beginners
+        </h2>
         <p className="text-foreground/70 mb-4">
           What makes a game easy is not that the rule is short. It is that the game removes the two
           things beginners actually find hard, which are inventing something and being looked at on
@@ -337,7 +347,9 @@ export default async function ImprovGamesPage() {
           remember enjoying are usually the ones where they were never at risk of being the problem.
         </p>
 
-        <h2 className="mb-3 text-xl font-semibold">How to Run One</h2>
+        <h2 id="how-to-run-one" className="mb-3 text-xl font-semibold">
+          How to Run One
+        </h2>
         <p className="text-foreground/70 mb-4">
           <strong>Coach during, not after.</strong>{" "}
           <Link href="/practice/techniques/side-coaching" className="underline">
@@ -367,7 +379,10 @@ export default async function ImprovGamesPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">
+        <h2
+          id="why-a-game-teaches-faster-than-an-instruction"
+          className="mb-3 text-xl font-semibold"
+        >
           Why a Game Teaches Faster Than an Instruction
         </h2>
         <p className="text-foreground/70 mb-4">
@@ -396,9 +411,13 @@ export default async function ImprovGamesPage() {
         that already ranks than by three thin pages competing with it.
       */}
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Questions People Ask About Improv Games</h2>
+        <h2 id="questions-people-ask-about-improv-games" className="mb-3 text-xl font-semibold">
+          Questions People Ask About Improv Games
+        </h2>
 
-        <h3 className="mt-6 mb-2 font-semibold">What are improv games?</h3>
+        <h3 id="what-are-improv-games" className="mt-6 mb-2 font-semibold">
+          What are improv games?
+        </h3>
         <p className="text-foreground/70 mb-4">
           Structured activities with an explicit rule, played without a script, where the rule is
           chosen to make a particular skill unavoidable. That last part is what separates a game
@@ -412,7 +431,9 @@ export default async function ImprovGamesPage() {
           good.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">What are the best improv warm-up games?</h3>
+        <h3 id="what-are-the-best-improv-warm-up-games" className="mt-6 mb-2 font-semibold">
+          What are the best improv warm-up games?
+        </h3>
         <p className="text-foreground/70 mb-4">
           The ones with no ideas in them.{" "}
           <Link href="/practice/exercises/pass-the-clap" className="underline">
@@ -434,7 +455,9 @@ export default async function ImprovGamesPage() {
           running it first is the most common way to lose a group in the opening ten minutes.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">Can you play improv games with only two people?</h3>
+        <h3 id="can-you-play-improv-games-with-only-two-people" className="mt-6 mb-2 font-semibold">
+          Can you play improv games with only two people?
+        </h3>
         <p className="text-foreground/70 mb-4">
           Plenty of them, and the two-person versions are often the better practice, because there
           is nowhere to hide and you get several times the repetitions.{" "}
@@ -461,7 +484,9 @@ export default async function ImprovGamesPage() {
           worse version of a scene you could have simply played.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">Which improv games work on a video call?</h3>
+        <h3 id="which-improv-games-work-on-a-video-call" className="mt-6 mb-2 font-semibold">
+          Which improv games work on a video call?
+        </h3>
         <p className="text-foreground/70 mb-4">
           Anything that does not depend on simultaneous speech or on knowing whose turn it is from
           the room. Video kills both: overlapping audio is unintelligible and there is no shared
@@ -477,7 +502,9 @@ export default async function ImprovGamesPage() {
           where players jump in unprompted will not survive the lag.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">What age can children start improv games?</h3>
+        <h3 id="what-age-can-children-start-improv-games" className="mt-6 mb-2 font-semibold">
+          What age can children start improv games?
+        </h3>
         <p className="text-foreground/70 mb-4">
           Around five for circle games with one rule, and roughly nine before scenes are worth
           attempting &mdash; not because younger children cannot act, but because a scene has no
@@ -488,7 +515,9 @@ export default async function ImprovGamesPage() {
           sets out which games suit which age and what changes with teenagers.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">What if there are only two of you?</h3>
+        <h3 id="what-if-there-are-only-two-of-you" className="mt-6 mb-2 font-semibold">
+          What if there are only two of you?
+        </h3>
         <p className="text-foreground/70 mb-4">
           Most of the list above needs a circle, and the rules usually do not say so until you are
           halfway through them. Rotation, tagging out and hiding briefly in a round all require
@@ -500,7 +529,10 @@ export default async function ImprovGamesPage() {
           class of twelve does in a term.
         </p>
 
-        <h3 className="mt-6 mb-2 font-semibold">
+        <h3
+          id="which-improv-game-should-you-start-a-session-with"
+          className="mt-6 mb-2 font-semibold"
+        >
           Which improv game should you start a session with?
         </h3>
         <p className="text-foreground/70 mb-4">
@@ -515,7 +547,9 @@ export default async function ImprovGamesPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Related</h2>
+        <h2 id="related" className="mb-3 text-xl font-semibold">
+          Related
+        </h2>
         <p className="text-foreground/70">
           Many of these descend from Viola Spolin&apos;s{" "}
           <Link href="/theatre-games" className="underline">

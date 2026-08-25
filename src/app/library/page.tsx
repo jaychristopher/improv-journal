@@ -218,7 +218,9 @@ export default async function LibraryPage() {
       </div>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Which One to Read First</h2>
+        <h2 id="which-one-to-read-first" className="mb-3 text-xl font-semibold">
+          Which One to Read First
+        </h2>
         <p className="text-foreground/70 mb-4">
           The first tier is five books and almost nobody reads five. Which one is right depends less
           on where you are in general and more on what is currently going wrong.

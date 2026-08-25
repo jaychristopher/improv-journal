@@ -68,7 +68,9 @@ export default async function GuidesPage() {
 
       {uncategorized.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-foreground/80 text-lg font-semibold">More Guides</h2>
+          <h2 id="more-guides" className="text-foreground/80 text-lg font-semibold">
+            More Guides
+          </h2>
           <div className="mt-4 space-y-3">
             {uncategorized.map((b) => (
               <div

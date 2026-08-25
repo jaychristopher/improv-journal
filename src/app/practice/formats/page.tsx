@@ -87,7 +87,9 @@ export default async function FormatsPage() {
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
       <section className="border-foreground/10 mt-16 border-t pt-12">
-        <h2 className="mb-3 text-xl font-semibold">What Is Long Form Improv?</h2>
+        <h2 id="what-is-long-form-improv" className="mb-3 text-xl font-semibold">
+          What Is Long Form Improv?
+        </h2>
         <p className="text-foreground/70 mb-4">
           One continuous piece rather than a sequence of separate bits. A long form show takes a
           suggestion and treats everything that follows as belonging to the same work, so something
@@ -110,7 +112,9 @@ export default async function FormatsPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">What Is Short Form Improv?</h2>
+        <h2 id="what-is-short-form-improv" className="mb-3 text-xl font-semibold">
+          What Is Short Form Improv?
+        </h2>
         <p className="text-foreground/70 mb-4">
           A sequence of separate games, each with a rule announced before it starts and each
           finished before the next begins. Nothing carries over: the scene about the locksmith does
@@ -141,7 +145,9 @@ export default async function FormatsPage() {
           offer &mdash; which is a fair trade and worth making deliberately rather than by default.
         </p>
 
-        <h2 className="mb-3 text-xl font-semibold">Choosing One for a Group</h2>
+        <h2 id="choosing-one-for-a-group" className="mb-3 text-xl font-semibold">
+          Choosing One for a Group
+        </h2>
         <p className="text-foreground/70 mb-4">
           Four constraints decide this, and none of them is taste.
         </p>
@@ -169,7 +175,9 @@ export default async function FormatsPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="mb-3 text-xl font-semibold">Format Choice Matters Less Than It Looks</h2>
+        <h2 id="format-choice-matters-less-than-it-looks" className="mb-3 text-xl font-semibold">
+          Format Choice Matters Less Than It Looks
+        </h2>
         <p className="text-foreground/70 mb-4">
           Groups spend a great deal of time choosing between these and comparatively little on the
           thing that decides whether any of them works. A cast that listens will produce a good show
