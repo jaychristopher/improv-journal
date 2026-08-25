@@ -11,7 +11,7 @@ entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontanei
 entry_path: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # The Rules of Improv (And Why Half of Them Are Wrong)
@@ -115,6 +115,32 @@ Some of them, and the ones that travel badly do real damage, so it is worth bein
 **"There are no mistakes" is the one to be careful with.** At work it gets heard as quality not mattering. What it means is that an error already made is information, and the useful question is what it tells you rather than whose it was. [How to give feedback](/how-to-give-feedback) covers the version of this that survives contact with an actual performance review.
 
 The pattern is that a rule transfers when it was solving a human problem — evaluating instead of participating, competing instead of building — and fails when it was solving a stage problem specific to beginners. That is also the test for any of the others you get handed in a workshop.
+
+## Questions People Ask About the Rules of Improv
+
+### How many rules of improv are there?
+
+There is no agreed number, which is the first thing worth knowing about them. Five is the most common list and it is the one this page takes apart. Tina Fey gives four. Some schools teach nine. The Annoyance teaches approximately none and treats the whole apparatus as the problem.
+
+The variation is not sloppiness. Each list is a compression of one tradition's answer to what improvisation is for, and the lists differ because the answers do. Anybody presenting a fixed number is quoting a school without saying which.
+
+### What are Tina Fey's rules of improv?
+
+Four, from *Bossypants*: agree, say "yes and", make statements, and there are no mistakes, only opportunities. It is the version most people outside improv have encountered, because the book sold to an audience that had never taken a class.
+
+They are a fair summary of the Chicago position and they carry the same fault as every short list — "make statements" is her phrasing of the question rule taken apart above, and read literally it stops people asking anything, which is not what any teacher means. The rules survive as slogans precisely because slogans travel, and the travelling is what strips the context that made them true.
+
+### What is the difference between a rule and a principle?
+
+A rule tells you what to do and carries a faint moral charge — breaking it makes you a bad scene partner. A principle is a claim about what happens: do this and the shared reality holds, do the other thing and it comes apart, whatever anybody intended.
+
+That distinction is not pedantry, because the two fail differently. A rule you have broken produces guilt, which is useless mid-scene. A principle you have ignored produces a visible consequence you can act on. [The improv principles](/how-it-works/principles) are the same material stated the second way.
+
+### Do experienced improvisers still follow the rules?
+
+They stop consulting them, which is not the same as stopping. What happens is that the behaviour the rule was pointing at becomes automatic, and at that point the rule is a description of what you already do rather than an instruction you are executing.
+
+The tell is what happens under pressure. A performer running a checklist gets slower as the stakes rise, because checking costs the attention the scene needs. Somebody who has absorbed the same material gets quieter and more present. Both would tell you they believe in `yes-and`; only one of them is thinking about it.
 
 ## What the Rules Are Actually About
 
