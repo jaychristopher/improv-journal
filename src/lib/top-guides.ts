@@ -22,8 +22,9 @@
  * evidence of being shut out.
  */
 
+import { anchorLabel } from "./anchor-text";
 import { loadBridges } from "./content";
-import type { BridgeTargetKeyword, PageSubject } from "./schema";
+import type { BridgeTargetKeyword } from "./schema";
 
 /** Above this, the term is not winnable from the site's current authority. */
 const STRANDED_DIFFICULTY = 30;
@@ -35,53 +36,6 @@ export interface TopGuide {
   /** Traffic potential where known, otherwise peak declared volume. */
   reach: number;
   difficulty?: number;
-}
-
-/**
- * Anchor text for a guide, chosen from its declared keywords.
- *
- * The highest-volume keyword is not always the right label. Twelve guides
- * declare one whose parent topic differs from their primary's, and on those the
- * anchor was describing a topic the page is not aiming at: "overthinking" for
- * a guide targeting "how to stop overthinking", "communication skills" for
- * people-skills, "constructive feedback" for how-to-give-feedback. Sitewide
- * anchor text is a strong signal about what a page is for, and it was pointing
- * at the wrong subject on 330 pages at a time.
- *
- * So: the highest-volume keyword that shares the primary's parent topic, which
- * keeps the better-phrased variants ("theater games" over "theatre games") and
- * rejects the ones that belong to another topic. Falls back to the primary.
- */
-function anchorKeyword(keywords: BridgeTargetKeyword[]): BridgeTargetKeyword | undefined {
-  const primary = keywords[0];
-  if (!primary) return undefined;
-  const sameTopic = keywords.filter((k) => !primary.parent || k.parent === primary.parent);
-  return [...(sameTopic.length > 0 ? sameTopic : [primary])].sort((a, b) => b.volume - a.volume)[0];
-}
-
-function titleCase(keyword: string): string {
-  return keyword.charAt(0).toUpperCase() + keyword.slice(1);
-}
-
-/**
- * A keyword that is somebody's name is capitalised as a name.
- *
- * titleCase raises the first letter, which is right for the phrases almost
- * every guide targets — "How to be funny" is correct — and wrong for the few
- * that target a proper noun. "del close" came out as "Del close" on every page
- * of the site the moment the SERP-floor rule promoted it.
- *
- * The page already knows the answer: a guide about a named entity declares it
- * as its subject, spelled properly, for the structured data. Using that spelling
- * is only allowed when it is the same string as the keyword, so this corrects
- * capitalisation and can never quietly retarget an anchor at something the page
- * is not aiming for — theatre-games keeps the deliberate "Theater games", which
- * is the higher-volume variant and not what its subject is called.
- */
-function properName(keyword: string, subject?: PageSubject): string | undefined {
-  if (!subject) return undefined;
-  if (subject.type !== "Person" && subject.type !== "Organization") return undefined;
-  return subject.name.toLowerCase() === keyword.toLowerCase() ? subject.name : undefined;
 }
 
 /**
@@ -181,12 +135,9 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
       .map((bridge) => {
         const keywords = bridge.frontmatter.target_keywords ?? [];
         const primary = keywords[0];
-        const head = anchorKeyword(keywords);
         return {
           slug: bridge.slug,
-          label: head
-            ? (properName(head.keyword, bridge.frontmatter.subject) ?? titleCase(head.keyword))
-            : bridge.frontmatter.title,
+          label: anchorLabel(keywords, bridge.frontmatter.subject) ?? bridge.frontmatter.title,
           reach: reachOf(keywords),
           difficulty: primary?.difficulty,
           verdict: bridge.frontmatter.serp_verdict,

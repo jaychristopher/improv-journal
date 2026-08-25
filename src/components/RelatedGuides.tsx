@@ -6,6 +6,14 @@ import type { RelatedGuide } from "@/lib/related-bridges";
  * Sibling-guide links rendered at the foot of every bridge page.
  * Keeps the guide cluster interlinked so crawlers reach every guide
  * from any other guide in one hop.
+ *
+ * The link text is the guide's head keyword rather than its title. This block
+ * is the largest source of internal anchor text on the site and it was
+ * spending it on full headlines — /rules-of-improv's most common inbound
+ * anchor was "the rules of improv (and why half of them are wrong)", sixteen
+ * times over. related-bridges had computed the right keyword all along and the
+ * interface said it was the label; nothing rendered it. The description
+ * underneath still carries the enticement the headline was doing.
  */
 export function RelatedGuides({ guides }: { guides: RelatedGuide[] }) {
   if (guides.length === 0) return null;
@@ -26,7 +34,7 @@ export function RelatedGuides({ guides }: { guides: RelatedGuide[] }) {
                 href={`/${guide.slug}`}
                 className="block text-sm font-medium after:absolute after:inset-0"
               >
-                {guide.title}
+                {guide.label ?? guide.title}
               </Link>
               <span className="text-foreground/60 mt-1 block text-xs">{guide.description}</span>
             </div>

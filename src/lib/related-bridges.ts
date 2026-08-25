@@ -15,6 +15,7 @@
  * better than the computed one.
  */
 
+import { anchorLabel } from "./anchor-text";
 import { loadBridges } from "./content";
 import type { BridgeFrontmatter, BridgeTargetKeyword } from "./schema";
 
@@ -259,14 +260,6 @@ function rankability(
   return primary.traffic_potential ?? primary.volume ?? 0;
 }
 
-/** Highest-volume keyword sharing the primary's parent topic; see top-guides. */
-function anchorKeyword(keywords: BridgeTargetKeyword[]): BridgeTargetKeyword | undefined {
-  const primary = keywords[0];
-  if (!primary) return undefined;
-  const sameTopic = keywords.filter((k) => !primary.parent || k.parent === primary.parent);
-  return [...(sameTopic.length > 0 ? sameTopic : [primary])].sort((a, b) => b.volume - a.volume)[0];
-}
-
 function overlap<T>(a: Iterable<T>, b: Set<T>): number {
   let count = 0;
   for (const item of a) if (b.has(item)) count += 1;
@@ -277,8 +270,12 @@ export interface RelatedGuide {
   slug: string;
   title: string;
   description: string;
-  /** Highest-volume target keyword, used as the human-readable topic label. */
-  keyword?: string;
+  /**
+   * What another page calls this one when it links to it: the head keyword,
+   * not the title. Undefined only when the guide declares no keywords, in
+   * which case the caller falls back to the title.
+   */
+  label?: string;
 }
 
 /**
@@ -353,8 +350,9 @@ export async function getRelatedBridges(
     slug: b.slug,
     title: b.frontmatter.title,
     description: b.frontmatter.description,
-    // Same rule as the footer: the highest-volume keyword that shares the
-    // primary's parent topic, so the label never names a different subject.
-    keyword: anchorKeyword(b.frontmatter.target_keywords ?? [])?.keyword,
+    // Same rule as the footer, from the same function: the highest-volume
+    // keyword sharing the primary's parent topic, capitalised as a name where
+    // the page's subject says it is one.
+    label: anchorLabel(b.frontmatter.target_keywords ?? [], b.frontmatter.subject),
   }));
 }
