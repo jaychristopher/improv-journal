@@ -20,7 +20,7 @@ work:
   published: "1990"
   isbn: "0060920432"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Mihaly Csikszentmihalyi. *Flow: The Psychology of Optimal Experience.* Harper & Row, 1990.**
@@ -31,7 +31,8 @@ That last one is the reason this is cited here, and it is more precise than the 
 
 The conditions Csikszentmihalyi identifies are also a fair description of a well-run scene: clear goals, immediate feedback, and a challenge matched to skill. That last condition is why the state is unreliable for beginners and why it arrives more often as competence grows, and it is a better explanation than talent for why experienced improvisers look calmer.
 
-**Key concepts drawn from here:**
+## Key concepts drawn from here
+
 - The loss of self-consciousness as the disappearance of self-monitoring, not of awareness
 - Challenge matched to skill as a precondition, which makes the state trainable rather than lucky
 - Immediate feedback as structural — improvisation supplies it whether or not anyone wants it

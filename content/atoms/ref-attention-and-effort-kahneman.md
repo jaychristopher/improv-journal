@@ -37,13 +37,20 @@ Somebody who wants the original statement of an idea they have already met secon
 
 It is a poor first book on attention and an unnecessary one for most practitioners. The parts that matter to improv — that capacity is limited, that allocation is competitive, that overload degrades secondary tasks first — are fully stated in three sentences and do not require the monograph to be believed.
 
-**The honest caveat.** Its single-pool model is the part most revised since. Wickens' multiple-resource account, already noted above, is a better description of why some task pairs interfere and others barely do, and a reader who takes the 1973 model as current will over-predict interference between tasks that use different channels.
+## The honest caveat
 
-**Key contributions to the knowledge graph:**
+Its single-pool model is the part most revised since. Wickens' multiple-resource account, already noted above, is a better description of why some task pairs interfere and others barely do, and a reader who takes the 1973 model as current will over-predict interference between tasks that use different channels.
+
+## Key contributions to the knowledge graph
+
 - Attention as finite resource — the scientific basis for the cognitive-bandwidth law
 - Capacity allocation is flexible but competitive — doing more of one thing means less capacity for another
 - Under overload, secondary tasks degrade before primary tasks — supports "reception degrades first" when planning consumes bandwidth
 
-**Extended by:** Wickens (2002) refines Kahneman's single-pool model into multiple partially-separate resource pools (visual, auditory, spatial, verbal). This explains why some task combinations (planning + listening) interfere more than others (moving + listening). The bandwidth atom hedges accordingly.
+## Extended by
 
-**Also relevant:** Clark & Brennan's grounding theory (1991) extends the capacity framework to dyadic interaction — communication requires ongoing mutual coordination, and the cost of grounding increases with message complexity. This is the theoretical basis for the "shared bandwidth" concept.
+Wickens (2002) refines Kahneman's single-pool model into multiple partially-separate resource pools (visual, auditory, spatial, verbal). This explains why some task combinations (planning + listening) interfere more than others (moving + listening). The bandwidth atom hedges accordingly.
+
+## Also relevant
+
+Clark & Brennan's grounding theory (1991) extends the capacity framework to dyadic interaction — communication requires ongoing mutual coordination, and the cost of grounding increases with message complexity. This is the theoretical basis for the "shared bandwidth" concept.

@@ -4,6 +4,12 @@ import { loadAtoms } from "../content";
 
 /** Types that render on a concept route. */
 const CONCEPT_TYPES = new Set([
+  // Library references were outside this for a long time, and it showed: 84
+  // bold labels against 40 headings across 32 pages, eleven of which offered
+  // no outline at all. Search Console has those pages drawing more impressions
+  // than anything else on the site, so they are the last place a structure a
+  // crawler cannot read should have been tolerated.
+  "reference",
   "technique",
   "definition",
   "exercise",

@@ -37,15 +37,22 @@ The format is consistent — a conversation, then Carrane puts the guest into a 
 
 Somebody who has read the books and wants to know what practitioners actually believe. It is the best available correction to the impression, easy to form from published material, that any of this is settled.
 
-**The honest caveat.** It is unedited opinion, and opinion from a guest is not method. Quality varies by episode in the way interviews always do, there is no curriculum or index, and a listener looking for instruction will find anecdote instead. Use it to calibrate what you already know rather than to learn something first.
+## The honest caveat
 
-**Key blog posts referenced in this knowledge graph:**
+It is unedited opinion, and opinion from a guest is not method. Quality varies by episode in the way interviews always do, there is no curriculum or index, and a listener looking for instruction will find anecdote instead. Use it to calibrate what you already know rather than to learn something first.
+
+## Key blog posts referenced in this knowledge graph
+
 - ["3 Ways to Get Better at Editing Improv Scenes"](https://jimmycarrane.com/3-ways-to-get-better-at-editing-improv-scenes/) — editing as ensemble skill
 - ["Three Simple Long Forms You Can Do Right Now"](https://jimmycarrane.com/three-simple-long-forms-can-right-now/) — accessible longform formats
 - ["7 Secrets to Giving Great Improv Notes"](https://jimmycarrane.com/five-secrets-to-giving-great-improv-notes/) — feedback philosophy
 - ["3 Tips for Creating Instant Improv Characters"](https://jimmycarrane.com/3-tips-creating-instant-improv-characters/) — character work
 - ["3 Exercises to Help You Start Your Scenes in the Middle"](https://jimmycarrane.com/3-exercises-to-help-you-start-your-scenes-in-the-middle/) — initiation
 
-**Key podcast episodes:** Episode 163 (TJ & Dave), Episode 200 ("15 Pieces of Advice" compilation featuring Adam McKay, Bob Odenkirk, Jon Favreau, Lauren Lapkus), Billy Merritt on game. Specific episode numbers for editing and pacing topics need manual verification across the ~290-episode archive.
+## Key podcast episodes
 
-**Value:** Practitioner-centered perspective. Where books codify principles, Carrane's interviews capture how working improvisers actually think about their craft — often messier and more honest than textbook formulations.
+Episode 163 (TJ & Dave), Episode 200 ("15 Pieces of Advice" compilation featuring Adam McKay, Bob Odenkirk, Jon Favreau, Lauren Lapkus), Billy Merritt on game. Specific episode numbers for editing and pacing topics need manual verification across the ~290-episode archive.
+
+## Value
+
+Practitioner-centered perspective. Where books codify principles, Carrane's interviews capture how working improvisers actually think about their craft — often messier and more honest than textbook formulations.

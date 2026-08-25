@@ -20,7 +20,7 @@ work:
   published: "2012"
   isbn: "1592408419"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Brené Brown. *Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead.* Avery, 2012.**
@@ -31,7 +31,8 @@ That maps directly onto what a class is for. An improv exercise is a small, surv
 
 The caution worth keeping is about register. Brown is writing about disclosure between people who know each other, and improv vulnerability is performed in front of strangers with an existential buffer that ordinary life does not provide. The mechanism transfers; the stakes do not, and pretending otherwise oversells what an exercise can do.
 
-**Key concepts drawn from here:**
+## Key concepts drawn from here
+
 - Courage as accumulated practice rather than a fixed trait
 - Shame as the suppressor of creative risk — "the secret killer of innovation"
 - The container as the precondition: vulnerability without safety is exposure, not practice

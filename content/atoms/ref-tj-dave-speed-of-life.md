@@ -46,13 +46,21 @@ It then runs about an hour with no conventional edits. Scenes do not get swept o
 
 Four claims do most of the work, and they are more specific than the summaries suggest.
 
-**The scene is already happening.** They walk out believing two people exist and are already in the middle of something, and the job is to find out what rather than to decide it. That is why no suggestion is needed: a suggestion supplies a premise, and they are not looking for one.
+## The scene is already happening
 
-**Trust is the chapter, not the sentiment.** The book gives trust its own extended treatment rather than listing it as a virtue, and what it means by the word is narrow — a working assumption that whatever your partner just did was correct, held for long enough to act on it.
+They walk out believing two people exist and are already in the middle of something, and the job is to find out what rather than to decide it. That is why no suggestion is needed: a suggestion supplies a premise, and they are not looking for one.
 
-**Silence is material.** Their position, from the chapter on silence and patience, is that a captivating silence is as good as a laugh and frequently better. This is where the book departs most sharply from comedy-first training, which treats a quiet stretch as something to be fixed.
+## Trust is the chapter, not the sentiment
 
-**Nothing is a mistake if it is committed to.** Not a consolation. A structural claim: with no edit and no suggestion, there is no outside standard for a scene to have deviated from, so an error only becomes one if somebody treats it as an error.
+The book gives trust its own extended treatment rather than listing it as a virtue, and what it means by the word is narrow — a working assumption that whatever your partner just did was correct, held for long enough to act on it.
+
+## Silence is material
+
+Their position, from the chapter on silence and patience, is that a captivating silence is as good as a laugh and frequently better. This is where the book departs most sharply from comedy-first training, which treats a quiet stretch as something to be fixed.
+
+## Nothing is a mistake if it is committed to
+
+Not a consolation. A structural claim: with no edit and no suggestion, there is no outside standard for a scene to have deviated from, so an error only becomes one if somebody treats it as an error.
 
 ## Where it sits against game-based improv
 
@@ -64,8 +72,14 @@ None of that makes the game-based schools wrong, and the book does not claim it.
 
 Which is the reason to read it even if your own work is nothing like theirs. It is the clearest available account of what remains when the apparatus is removed.
 
-**Key contributions to the knowledge graph:** `be-changeable` as the natural result of listening closely rather than an override of your own resistance; `be-present` framed as heightened sensation instead of effort, which is a much more usable instruction; `interdependence` demonstrated at the top of the craft rather than argued for; and the claim that the `relationship` between the two people on stage, not the situation, is what a scene is made of.
+## Key contributions to the knowledge graph
 
-**The honest objection.** This is a description of mastery, and descriptions of mastery are famously poor teaching tools. "Respond to your partner" is what they do; it is not a route to being able to do it, and a beginner who reads this book first will often come away with permission to do nothing and call it listening. It rewards people who already have the mechanics and are looking for what to stop doing.
+`be-changeable` as the natural result of listening closely rather than an override of your own resistance; `be-present` framed as heightened sensation instead of effort, which is a much more usable instruction; `interdependence` demonstrated at the top of the craft rather than argued for; and the claim that the `relationship` between the two people on stage, not the situation, is what a scene is made of.
 
-**Also worth knowing.** The pair have been performing together since the early 2000s, and there is a 2009 documentary of the same name as their opening line if you want to see the show before reading the book. Stephen Colbert's line about them is the one everybody quotes: *"One of these guys is the best improviser in the world. And the other one is better."*
+## The honest objection
+
+This is a description of mastery, and descriptions of mastery are famously poor teaching tools. "Respond to your partner" is what they do; it is not a route to being able to do it, and a beginner who reads this book first will often come away with permission to do nothing and call it listening. It rewards people who already have the mechanics and are looking for what to stop doing.
+
+## Also worth knowing
+
+The pair have been performing together since the early 2000s, and there is a 2009 documentary of the same name as their opening line if you want to see the show before reading the book. Stephen Colbert's line about them is the one everybody quotes: *"One of these guys is the best improviser in the world. And the other one is better."*

@@ -17,7 +17,7 @@ work:
   publisher: "Harper & Row"
   published: "1974"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Erving Goffman. *Frame Analysis: An Essay on the Organization of Experience.* Harper & Row, 1974.**
@@ -28,7 +28,8 @@ The relevance to improvisation is close to exact, which is unusual for a sociolo
 
 He is writing about ordinary life rather than performance, and the transfer runs both ways. His examples are drawn heavily from theatre, cons and games precisely because those are the cases where the framing is deliberate and therefore visible. What improvisers do on purpose in a scene, everyone else is doing accidentally at dinner.
 
-**Key concepts drawn from here:**
+## Key concepts drawn from here
+
 - The primary framework — the schema that decides what an event even is
 - Keying: the same activity re-framed as rehearsal, joke, or threat, and the signals that do the re-framing
 - Breaking frame, and why it is so much more disruptive than being wrong inside one

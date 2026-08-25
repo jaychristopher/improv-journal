@@ -20,7 +20,7 @@ work:
   published: "2002"
   doi: "10.1080/14639220210123806"
 created: "2026-08-23"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Christopher D. Wickens. "Multiple Resources and Performance Prediction." *Theoretical Issues in Ergonomics Science* 3(2), 159–177, 2002.**
@@ -29,11 +29,16 @@ Why some things combine effortlessly and others cannot be done at once at all. T
 
 Kahneman modelled attention as a single pool, which predicts that any two tasks interfere in proportion to how demanding they are. Wickens' account is that the pool has structure: tasks conflict to the degree they share a *stage* (perceiving versus responding), a *modality* (hearing versus seeing), a *code* (verbal versus spatial), and a channel of visual attention. Two tasks drawing on different dimensions barely collide. Two drawing on the same one collide badly.
 
-**Key contributions to the knowledge graph:**
+## Key contributions to the knowledge graph
+
 - Explains the asymmetry the single-pool model cannot — moving while listening is nearly free, planning a sentence while listening is ruinous, because the second pair shares both a stage and a verbal code
 - Makes `internal-computation` a specific rather than general claim: rehearsing what to say competes with hearing in the exact resource hearing needs
 - Predicts that `space-work` is cheap to run alongside dialogue, being spatial and motor rather than verbal — which matches what performers report
 
-**What it does not license.** Multiple resources is a theory of interference between concurrent tasks, not a licence for multitasking. Every dimension is still finite, and the model's own strength is describing how badly things fail when they overlap. The improv reading — that you can listen and plan at the same time if you are clever about it — is the opposite of what the paper predicts.
+## What it does not license
 
-**Also relevant:** the 4-D model is a refinement of Wickens' earlier 1984 formulation and has been revised since, most substantially in his 2008 review. The `bandwidth` atom hedges accordingly rather than treating any single version as settled.
+Multiple resources is a theory of interference between concurrent tasks, not a licence for multitasking. Every dimension is still finite, and the model's own strength is describing how badly things fail when they overlap. The improv reading — that you can listen and plan at the same time if you are clever about it — is the opposite of what the paper predicts.
+
+## Also relevant
+
+The 4-D model is a refinement of Wickens' earlier 1984 formulation and has been revised since, most substantially in his 2008 review. The `bandwidth` atom hedges accordingly rather than treating any single version as settled.

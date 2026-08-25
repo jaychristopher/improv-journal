@@ -21,7 +21,7 @@ work:
   published: "2008"
   doi: "10.1371/journal.pone.0001679"
 created: "2026-08-23"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Charles J. Limb and Allen R. Braun. "Neural Substrates of Spontaneous Musical Performance: An fMRI Study of Jazz Improvisation." *PLoS ONE* 3(2), e1679, 2008.**
@@ -32,11 +32,16 @@ Professional jazz pianists played inside an fMRI scanner on a specially built no
 
 Improvisation produced a dissociated pattern in the prefrontal cortex: extensive **deactivation** of dorsolateral prefrontal and lateral orbital regions, with focal **activation** of the medial prefrontal cortex. The deactivated regions handle self-monitoring, planning and evaluation against an external standard. The activated region is associated with self-generated, internally motivated behaviour.
 
-**Key contributions to the knowledge graph:**
+## Key contributions to the knowledge graph
+
 - The censor is a measurable state, not a figure of speech — self-monitoring circuitry demonstrably quietens during spontaneous generation
 - Self-monitoring and self-expression trade off against each other rather than coexisting, which is why `internal-computation` degrades performance instead of refining it
 - The shift is a *state change*, which is the mechanism `warm-up` is trying to produce before a show rather than fifteen minutes into one
 
-**The caveat that matters.** Limb and Braun studied jazz pianists, not improvising actors. Every application of this finding to theatrical improv — including the ones on this site — is an inference from an adjacent domain, not a demonstrated result. The two activities share spontaneous real-time generation under an audience; they differ in language, in scene partners, and in the fact that a musician's mistake is absorbed by harmony while a performer's becomes plot. The inference is reasonable and it is still an inference.
+## The caveat that matters
 
-**Also relevant:** the finding is often reported as "the brain switches off its inner critic," which overstates it. Deactivation is relative to a demanding control condition, not an off switch, and the study says nothing about whether the state can be trained. What it establishes is that the state exists and is distinguishable — which is enough to make `spontaneity` a physiological claim rather than only a pedagogical one.
+Limb and Braun studied jazz pianists, not improvising actors. Every application of this finding to theatrical improv — including the ones on this site — is an inference from an adjacent domain, not a demonstrated result. The two activities share spontaneous real-time generation under an audience; they differ in language, in scene partners, and in the fact that a musician's mistake is absorbed by harmony while a performer's becomes plot. The inference is reasonable and it is still an inference.
+
+## Also relevant
+
+The finding is often reported as "the brain switches off its inner critic," which overstates it. Deactivation is relative to a demanding control condition, not an off switch, and the study says nothing about whether the state can be trained. What it establishes is that the state exists and is distinguishable — which is enough to make `spontaneity` a physiological claim rather than only a pedagogical one.
