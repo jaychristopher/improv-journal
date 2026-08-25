@@ -9,6 +9,7 @@ import { GuideConcepts } from "@/components/GuideConcepts";
 import { LevelRedirect } from "@/components/LevelRedirect";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { RelatedGuides } from "@/components/RelatedGuides";
+import { TableOfContents } from "@/components/TableOfContents";
 import { UpdatedOn } from "@/components/UpdatedOn";
 import { WhatsNext } from "@/components/WhatsNext";
 import { getAudioDuration } from "@/lib/audio-manifest";
@@ -23,6 +24,7 @@ import {
 } from "@/lib/content";
 import { getCategoryForGuide } from "@/lib/guide-categories";
 import { getGuideConcepts } from "@/lib/guide-concepts";
+import { contentsFor } from "@/lib/headings";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
@@ -362,6 +364,11 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           )}
         </>
       )}
+
+      {/* The guides carry 14 to 24 anchored headings each and offered none of
+          them as navigation, which is the same gap the concept pages had. These
+          are the longer pages of the two, so the outline matters more here. */}
+      <TableOfContents headings={contentsFor(bridge.html)} />
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"
