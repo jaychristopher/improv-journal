@@ -33,6 +33,22 @@ The pressure this creates is real. In a script, you can look ahead. In improv, y
 
 This constraint is not a bug — it's the fundamental physics that makes improv what it is. It gives choices weight, makes commitment consequential, and creates the path-dependent structure that allows scenes to accumulate meaning over time.
 
+## The archive it creates
+
+The constraint has a second face that is easy to miss, because it reads as a cost and behaves like an asset: nothing established can be removed, so everything established stays permanently available.
+
+A scene twenty minutes old is not twenty minutes of accumulated restriction. It is twenty minutes of material that can be reached for at any moment, and the reaching is free — a `callback` works because the audience already holds the thing being called back, at no cost to the present moment. That is why a long form gets easier to play as it goes rather than harder, which surprises people who have only heard the constraint half of this law.
+
+The corollary is that neglect is the only way anything leaves. A fact cannot be deleted but it can be left alone until nobody is holding it any more, which is `shared-reality-fragility` operating on the same material from the other direction. One law says it cannot be removed; the other says it will fade if unattended. Both are true, and together they describe why the useful move is almost always to reach backward rather than to invent forward.
+
+## Why blocking is incoherent rather than rude
+
+Blocking is usually taught as a discourtesy — you have let your partner down. The physics gives a harder and more useful account.
+
+An offer, once made, is already in the shared history. Refusing it does not remove it; refusal is a second event appended after the first, so the room now holds both the offer and the refusal of it. The freezer does not stop existing because somebody says "no, we're in a car" — what exists is a freezer, and a person denying it, which is a stranger and less workable situation than either fact alone.
+
+That is why `blocking` fails on its own terms rather than on manners. It is an attempt to reverse something the medium does not allow to be reversed, and the attempt is itself irreversible. `justification` is the only move that engages the physics honestly: it takes what is already permanent and gives it a reason to have been there.
+
 ## Training is the exception, and only partly
 
 In class, teachers stop scenes and say let us try that again. Spolin's entire method is built on repetition — run the game, examine it, run it once more. If time were genuinely irreversible in the way this page describes, none of that would be possible.
