@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
+import { TableOfContents } from "@/components/TableOfContents";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
@@ -43,6 +44,18 @@ const FILTER_GROUPS = [
       { label: "Duo", tag: "duo" },
       { label: "Music", tag: "music" },
     ],
+  },
+];
+
+/** Written out because hub headings are JSX; anchor-targets checks them. */
+const SECTIONS = [
+  { id: "what-is-long-form-improv", text: "What Is Long Form Improv?", level: 2 as const },
+  { id: "what-is-short-form-improv", text: "What Is Short Form Improv?", level: 2 as const },
+  { id: "choosing-one-for-a-group", text: "Choosing One for a Group", level: 2 as const },
+  {
+    id: "format-choice-matters-less-than-it-looks",
+    text: "Format Choice Matters Less Than It Looks",
+    level: 2 as const,
   },
 ];
 
@@ -87,6 +100,8 @@ export default async function FormatsPage() {
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
       <section className="border-foreground/10 mt-16 border-t pt-12">
+        <TableOfContents headings={SECTIONS} />
+
         <h2 id="what-is-long-form-improv" className="mb-3 text-xl font-semibold">
           What Is Long Form Improv?
         </h2>

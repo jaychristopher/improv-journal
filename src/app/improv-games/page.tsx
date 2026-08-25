@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { TableOfContents } from "@/components/TableOfContents";
 import { TagFilter } from "@/components/TagFilter";
 import { loadImprovGames } from "@/lib/games";
 import { ogImages, pageTitle, SITE_NAME, SITE_URL } from "@/lib/seo";
@@ -42,6 +43,72 @@ const FILTER_GROUPS = [
       { label: "Courage", tag: "courage" },
       { label: "Recovery", tag: "recovery" },
     ],
+  },
+];
+
+/**
+ * The page's own sections, offered as navigation.
+ *
+ * Hubs build their headings in JSX rather than from markdown, so contentsFor
+ * has no html to read and the list is written out. anchor-targets checks every
+ * same-page href against the ids the page actually has, so a heading renamed
+ * without updating this fails the build rather than shipping a dead link.
+ */
+const SECTIONS = [
+  { id: "how-to-choose-one", text: "How to Choose One", level: 2 as const },
+  {
+    id: "warm-up-exercise-or-performance-game",
+    text: "Warm-Up, Exercise, or Performance Game",
+    level: 2 as const,
+  },
+  { id: "short-form-games", text: "Short-Form Games", level: 2 as const },
+  { id: "which-games-for-which-group", text: "Which Games for Which Group", level: 2 as const },
+  {
+    id: "easy-improv-games-for-beginners",
+    text: "Easy Improv Games for Beginners",
+    level: 2 as const,
+  },
+  { id: "how-to-run-one", text: "How to Run One", level: 2 as const },
+  {
+    id: "why-a-game-teaches-faster-than-an-instruction",
+    text: "Why a Game Teaches Faster Than an Instruction",
+    level: 2 as const,
+  },
+  {
+    id: "questions-people-ask-about-improv-games",
+    text: "Questions People Ask About Improv Games",
+    level: 2 as const,
+  },
+  { id: "what-are-improv-games", text: "What are improv games?", level: 3 as const },
+  {
+    id: "what-are-the-best-improv-warm-up-games",
+    text: "What are the best improv warm-up games?",
+    level: 3 as const,
+  },
+  {
+    id: "can-you-play-improv-games-with-only-two-people",
+    text: "Can you play improv games with only two people?",
+    level: 3 as const,
+  },
+  {
+    id: "which-improv-games-work-on-a-video-call",
+    text: "Which improv games work on a video call?",
+    level: 3 as const,
+  },
+  {
+    id: "what-age-can-children-start-improv-games",
+    text: "What age can children start improv games?",
+    level: 3 as const,
+  },
+  {
+    id: "what-if-there-are-only-two-of-you",
+    text: "What if there are only two of you?",
+    level: 3 as const,
+  },
+  {
+    id: "which-improv-game-should-you-start-a-session-with",
+    text: "Which improv game should you start a session with?",
+    level: 3 as const,
   },
 ];
 
@@ -114,6 +181,8 @@ export default async function ImprovGamesPage() {
 
       {/* The list carries an h2 of its own so the game entries below it do not
           jump the outline straight from h1 to h3. */}
+      <TableOfContents headings={SECTIONS} />
+
       <h2 className="mb-4 text-xl font-semibold">Every Game ({games.length})</h2>
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
