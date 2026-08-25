@@ -92,18 +92,56 @@ export async function getPopulatedCombinations(): Promise<{ level: string; focus
 }
 
 /**
+ * How much a facet has to offer that its siblings do not.
+ *
+ * MIN_INDEXABLE_EXERCISES counts what a page lists. It cannot see what the
+ * page next door lists, and three facets of the same focus mostly list the
+ * same exercises: measured on the build, beginner/ensemble and
+ * intermediate/ensemble each held eleven and each had exactly one their
+ * siblings did not, and intermediate/presence held seven and had none at all —
+ * a strict subset of two pages that were also indexed. Eight-word shingles put
+ * beginner/ensemble and intermediate/ensemble at 74% identical.
+ *
+ * That is the same fault the count gate was written for, one level up. Its
+ * comment says three is "the smallest number that gives a reader a choice",
+ * and a facet whose distinct contribution is a single exercise gives no choice
+ * the sibling did not already give. So the same reasoning, measured against
+ * what is actually distinct.
+ *
+ * A sibling only absorbs the intent if it is itself indexed on the count gate.
+ * Otherwise the sole surviving facet of a sparse focus — beginner/courage,
+ * whose two siblings hold one and two exercises — would be suppressed by pages
+ * that are not in the index to answer for it.
+ */
+export const MIN_DISTINCT_EXERCISES = 2;
+
+/**
  * Whether a facet earns a place in the index.
  *
  * Under-populated facets stay reachable — the picker links to them and they
  * answer the question honestly, just briefly — but they are marked noindex and
  * kept out of the sitemap, which is the standard treatment for thin faceted
  * pages and stops them competing with the level page above them.
+ *
+ * Near-duplicate facets get the same treatment for the same reason.
  */
 export async function isIndexableCombination(level: string, focus: string): Promise<boolean> {
   const focusConfig = FOCUSES.find((f) => f.slug === focus);
   if (!focusConfig) return false;
+
   const exercises = await getPickerExercises(level, focusConfig.tag, focusConfig.extraTags);
-  return exercises.length >= MIN_INDEXABLE_EXERCISES;
+  if (exercises.length < MIN_INDEXABLE_EXERCISES) return false;
+
+  const siblingIds = new Set<string>();
+  for (const other of LEVELS) {
+    if (other.slug === level) continue;
+    const sibling = await getPickerExercises(other.slug, focusConfig.tag, focusConfig.extraTags);
+    if (sibling.length < MIN_INDEXABLE_EXERCISES) continue;
+    for (const exercise of sibling) siblingIds.add(exercise.id);
+  }
+
+  const distinct = exercises.filter((exercise) => !siblingIds.has(exercise.id)).length;
+  return distinct >= MIN_DISTINCT_EXERCISES;
 }
 
 /** The facets worth listing in a sitemap. */
