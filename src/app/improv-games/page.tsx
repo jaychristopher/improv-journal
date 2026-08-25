@@ -297,6 +297,46 @@ export default async function ImprovGamesPage() {
       </section>
 
       <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">Easy Improv Games for Beginners</h2>
+        <p className="text-foreground/70 mb-4">
+          What makes a game easy is not that the rule is short. It is that the game removes the two
+          things beginners actually find hard, which are inventing something and being looked at on
+          their own. A game that does both is easy no matter how fast it moves, and a game that does
+          neither is difficult no matter how simple it sounds.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          Four properties do it. There is a rule to obey, so nobody has to decide what to do.
+          Everybody plays at once, so no one person is on display. Nothing depends on being funny.
+          And it is over in a few minutes, before anybody has time to start dreading their turn.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          The reliable starting set:{" "}
+          <Link href="/practice/exercises/pass-the-clap" className="underline">
+            Pass the Clap
+          </Link>
+          ,{" "}
+          <Link href="/practice/exercises/zip-zap-zop" className="underline">
+            Zip Zap Zop
+          </Link>
+          ,{" "}
+          <Link href="/practice/exercises/sound-ball" className="underline">
+            Sound Ball
+          </Link>{" "}
+          and{" "}
+          <Link href="/practice/exercises/yes-lets" className="underline">
+            Yes, Let&rsquo;s
+          </Link>
+          . None asks for an idea, all four fail cheerfully, and a room that has played them is
+          considerably easier to teach a scene to than a room that has not.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          What to keep away from on a first session: two-person scenes, anything with a winner, and
+          anything requiring a character. Each one asks somebody to be interesting while people
+          watch, which is the exact thing the games above are designed to postpone. Fun and easy
+          tend to coincide here for that reason rather than by accident &mdash; the games people
+          remember enjoying are usually the ones where they were never at risk of being the problem.
+        </p>
+
         <h2 className="mb-3 text-xl font-semibold">How to Run One</h2>
         <p className="text-foreground/70 mb-4">
           <strong>Coach during, not after.</strong>{" "}
