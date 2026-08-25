@@ -12,6 +12,7 @@ describe("keyword difficulty", () => {
    * content/outlines/all-paths.md, so the numbers they do carry are sourced.
    */
   const PROVIDER_UNAVAILABLE = new Set([
+    "how-to-think-on-your-feet",
     "improv-games-for-kids",
     "improv-warm-up-games",
     "viola-spolin",

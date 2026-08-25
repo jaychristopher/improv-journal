@@ -52,6 +52,7 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
       "confidence-building-exercises",
       "how-to-be-more-creative",
       "how-to-be-witty",
+      "how-to-think-on-your-feet",
       "how-to-be-less-awkward",
       "how-to-let-go-of-control",
       "how-to-be-vulnerable",

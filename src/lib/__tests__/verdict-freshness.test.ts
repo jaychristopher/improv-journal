@@ -97,6 +97,7 @@ describe("verdict freshness", () => {
    * check was skipped rather than blocked.
    */
   const AWAITING_SERP_CHECK = new Set([
+    "how-to-think-on-your-feet",
     "improv-games-for-kids",
     "improv-warm-up-games",
     "viola-spolin",

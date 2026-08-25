@@ -88,7 +88,7 @@ Where a comeback is genuinely called for, the strongest move is rarely a counter
 
 The advice above is about removing a filter. But there is a specific moment it does not cover: the two seconds when a response is expected, everyone is looking at you, and nothing has arrived.
 
-Quick-witted people are not generating material faster in that window. They are reaching for something already in the room, and there are only ever four things there.
+Quick-witted people are not generating material faster in that window. They are reaching for something already in the room, and there are only ever four things there. The same is true when the thing required is an answer rather than a joke, which is a separate skill worth not confusing with this one — [how to think on your feet](/how-to-think-on-your-feet) covers being put on the spot without the obligation to be funny.
 
 - **The last thing said.** Take their final few words and extend them. This is the improv drill `last-word-response` applied to real life, and it works because it needs no invention — the material is two seconds old and everyone just heard it.
 - **The obvious thing.** Say what everyone in the room is already half-thinking. `obvious-choice` is the whole technique: the response that feels too plain to be worth saying is usually the one that lands, because it is the one everybody recognises.
