@@ -115,13 +115,28 @@ const SECTIONS = [
 export default async function ImprovGamesPage() {
   const games = await loadImprovGames();
 
+  /**
+   * The preview is how the game is played, not what it trains.
+   *
+   * Both were available and this page was showing the wrong one. An exercise
+   * atom opens with the skills it develops — "Deep attention, body awareness,
+   * ensemble connection" — which is the right summary for /practice/exercises,
+   * whose title promises what each one trains. Somebody on a page called
+   * Improv Games wants to know what happens in the room.
+   *
+   * It was also the same string. /practice/exercises renders that identical
+   * opening for every exercise the two pages share, and on eight-word shingles
+   * 84% of that page sat inside this one — two hubs the site aims at different
+   * terms, describing the same items in the same words. All 41 games carry
+   * how_to_play, so nothing falls back in practice.
+   */
   const items = games.map((game) => ({
     id: game.id,
     title: game.title,
     href: game.href,
     tags: game.tags,
     rules: game.howToPlay,
-    preview: game.description,
+    preview: game.howToPlay ?? game.description,
   }));
 
   // ItemList makes the collection readable as a list of named games, rather
@@ -139,7 +154,9 @@ export default async function ImprovGamesPage() {
         "@type": "ListItem",
         position: i + 1,
         name: game.title,
-        description: game.description,
+        // Matches the visible card, and keeps this ItemList from repeating the
+        // one /practice/exercises emits for the same exercises.
+        description: game.howToPlay ?? game.description,
         url: `${SITE_URL}${game.href}`,
       })),
     },
