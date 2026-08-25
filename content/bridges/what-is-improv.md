@@ -23,7 +23,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: validated
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # What Is Improv? How Unscripted Theatre Works
@@ -151,6 +151,36 @@ A first class is less exposing than people expect, because the format is built t
 **You do not need to be funny or extroverted.** This is the most common reason people give for not trying it and the least accurate. The trained skills are listening, accepting what you are given and committing to it — quiet people are frequently better at all three. Comic timing is downstream of those, not a prerequisite for them.
 
 **If you would rather not start with a class.** [Theatre games](/theatre-games) and the [improv games](/improv-games) collection can be run with friends in a living room, and most of the foundational exercises need nothing but people and floor space. [Improv prompts](/improv-prompts) supplies the starting points, which is the part a living-room group runs out of first. [How to get better at improv](/how-to-get-better-at-improv) covers practice once you have started, and [the rules of improv](/rules-of-improv) covers the principles you will hear quoted in every class — including which of them are worth ignoring.
+
+## Questions People Ask About Improv
+
+### Is improv really unscripted?
+
+Yes, and the suspicion is reasonable enough that it is worth answering plainly. Nothing is written beforehand, nothing is rehearsed, and the performers do not know what the scene is about when they walk out.
+
+What is prepared is the vocabulary rather than the material. A group that has trained together shares a set of habits — how a scene gets started, how one ends, what to do when two people talk at once — and those habits are invisible from the audience, which is what makes a good set look suspiciously well-written. The reliable tell is that a scene which is going badly stays bad. Nobody can cut to the next page, because there is no next page.
+
+### What is the difference between improv and stand-up?
+
+Almost everything except the room they happen in. Stand-up is written, solo, delivered to the audience, and refined over months of performance until the wording is exact. Improv is unwritten, collaborative, played between people on stage rather than out toward the crowd, and gone the moment it finishes.
+
+The mistake matters because it sends people to the wrong training. A person who wants to be funny alone on a microphone will find an improv class oddly indirect about jokes, and a person who wants to play with other people will find open-mic culture solitary.
+
+### Why does the audience get asked for a suggestion?
+
+To prove the thing is not prepared, mostly. A word taken from the room at the top of a show is the only evidence available that what follows was not written last week, and audiences need it more than performers do.
+
+It has a second use. A suggestion removes the burden of choosing a starting point, which is the hardest moment in any improvised piece — not because ideas are scarce, but because with unlimited choice a group will hesitate, and hesitation is what an audience actually reads as failure. Some formats have dropped it entirely and open cold instead.
+
+### What happens when somebody makes a mistake?
+
+It gets absorbed rather than corrected. If one player says the pair are brothers and the other has already called them colleagues, nobody stops — the scene proceeds as though both were true, and finding out how they can both be true is frequently more interesting than the version where nobody slipped.
+
+That is a working method rather than a comforting saying. The habit is to treat whatever just happened as a fact about the world and build forward from it, which is the same move whether the thing was intended or not.
+
+### How long does it take to get good at improv?
+
+Most people can play a functional scene after a beginner course of six to eight weeks. Being reliably good — able to do it when the show is going badly, with people you have not played with — takes years, and the curve is unusually flat in the middle. The [rules of improv](/rules-of-improv) are learnable in an afternoon and the thing they describe is not, which is most of why the middle feels so long. [How to get better at improv](/how-to-get-better-at-improv) is the honest account of what actually moves somebody forward.
 
 ## The Thing Worth Knowing
 
