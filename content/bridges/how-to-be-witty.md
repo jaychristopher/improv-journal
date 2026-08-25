@@ -13,7 +13,7 @@ entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commit
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # How to Be Witty: The Improv Secret to Quick, Sharp Responses
@@ -116,6 +116,32 @@ You don't need to take an improv class (though it's the fastest path). Here are 
 **Notice what you censor.** For one day, pay attention to the thoughts you suppress. The ones you almost say but don't. Those suppressed thoughts are your wit. They're already there. Your editor is just deleting them before they reach your mouth. `one-word-scene` makes the editing impossible rather than merely discouraged — with one word at a time there is no sentence to improve.
 
 **React to what's actually happening.** Wit isn't about having material. It's about seeing what's in front of you and responding honestly to it. The weather, the situation, the absurdity of whatever just happened. If you can describe reality with specificity and timing, you're witty. That's the whole thing. `blind-offer` trains the reading half of it: responding to what your partner actually did rather than to what you assumed.
+
+## Questions People Ask About Wit
+
+### Why do I think of the perfect reply hours later?
+
+Because the reply was never the hard part. In the moment your attention was split between the conversation and a running assessment of how you were doing in it, and the assessment was winning. Hours later the assessment has stopped, the channel is free, and the line arrives — not because you got cleverer but because you finally had the capacity you needed at the time.
+
+This is the most reliable evidence anybody has that wit is an attention problem rather than a talent problem. The line was available. `internal-computation` was using the room it needed.
+
+### Is being witty the same as being funny?
+
+Related and not the same, and the difference is worth knowing because it changes what you practise. Funny is about the material — a thing is observed, shaped, and it lands. Wit is about the speed of fit: a remark that belongs to this exact moment and would mean nothing thirty seconds later or in a different room.
+
+That is why wit cannot be prepared and comedy partly can. It is also why a witty person often is not especially funny in the abstract — take the line out of the conversation and there is frequently nothing there. [How to be funny](/how-to-be-funny) covers the other half.
+
+### Why am I witty with close friends but not at work?
+
+Because the cost of a line that misses is completely different in the two rooms, and you are correctly reading that. With old friends there is enough accumulated evidence that a bad joke changes nothing. At work there is a plausible story in which it does.
+
+So the caution is not a personality failure, it is arithmetic — which means the fix is not confidence but exposure. Say the small, safe, obvious thing in the meeting rather than the good line you are holding, watch nothing happen, and repeat. What you are building is not nerve, it is the evidence the friendship already had.
+
+### What if being witty makes me unkind?
+
+It is a real risk and the sharpest people are the ones most exposed to it, because the fastest available line is very often at somebody's expense. Wit and cruelty use the same equipment: noticing quickly what is true about a person and saying it before they can arrange their face.
+
+The test that works is not whether the room laughed. It is whether the person being talked about is still in the conversation afterwards, or has gone quiet and stayed quiet. A remark that costs somebody their footing has taken more from the room than it gave, however good it was.
 
 ## The Real Secret
 
