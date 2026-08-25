@@ -66,7 +66,7 @@ Not a consolation. A structural claim: with no edit and no suggestion, there is 
 
 The book is a standing objection to most of what is taught in Chicago and New York, which is worth reading it for even if you never intend to perform this way.
 
-It declines the premise that a scene needs an identifiable game to work. Its [heightening](/practice/techniques/heightening) works by narrowing rather than escalating — a character gets quieter and the pressure rises — where pattern-based training raises the volume of the behaviour. It has no [editing](/practice/techniques/editing) vocabulary at all, because with a single continuous piece there is nothing to coordinate. And it produces no [group scenes](/practice/formats/group-scene), which two people obviously cannot, and loses nothing anybody can name.
+It declines the premise that a scene needs an identifiable game to work. Its [heightening](/how-it-works/diagnosis/heightening) works by narrowing rather than escalating — a character gets quieter and the pressure rises — where pattern-based training raises the volume of the behaviour. It has no [editing](/practice/techniques/editing) vocabulary at all, because with a single continuous piece there is nothing to coordinate. And it produces no [group scenes](/practice/vocabulary/group-scene), which two people obviously cannot, and loses nothing anybody can name.
 
 None of that makes the game-based schools wrong, and the book does not claim it. What it demonstrates is that a large part of what gets taught as the mechanics of improv is the mechanics of *ensemble longform specifically* — coordination technology for casts, mistaken for the physics of the form. Two people who can read each other need very little of it.
 
