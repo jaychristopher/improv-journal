@@ -134,15 +134,27 @@ const SOURCE_TITLE_MAP: [RegExp, string][] = [
 ];
 
 /**
- * Drop the `user-content-` prefix remark-html's sanitiser puts on ids.
+ * Reconcile the ids remark-html's sanitiser rewrites with the links that point
+ * at them.
  *
- * The prefix guards against DOM clobbering by untrusted markup. Every heading
- * here comes from markdown in this repository, and a citable anchor is worth
- * more than the guard: `#the-discipline` is something a person can share and a
- * passage result can point at, `#user-content-the-discipline` is not.
+ * The `user-content-` prefix guards against DOM clobbering by untrusted markup.
+ * Every heading here comes from markdown in this repository, and a citable
+ * anchor is worth more than the guard: `#the-discipline` is something a person
+ * can share and a passage result can point at, `#user-content-the-discipline`
+ * is not.
+ *
+ * Footnotes need the opposite correction. remark-gfm already prefixes their
+ * ids, and the sanitiser prefixes them again — so the id became
+ * `user-content-user-content-fn-1` while the href stayed
+ * `#user-content-fn-1`, and every footnote marker on every thread led
+ * nowhere. 34 anchors across seven pages. Collapsing the doubled prefix makes
+ * the two agree without giving up the guard, since a single prefix is what
+ * remark-gfm intended and what it links to.
  */
-function stripHeadingIdPrefix(htmlStr: string): string {
-  return htmlStr.replace(/(<h[2-6][^>]*\sid=")user-content-/g, "$1");
+function normaliseGeneratedIds(htmlStr: string): string {
+  return htmlStr
+    .replace(/(<h[2-6][^>]*\sid=")user-content-/g, "$1")
+    .replace(/\sid="user-content-user-content-/g, ' id="user-content-');
 }
 
 // ─── Citation auto-linking ──────────────────────────────────────────────────
@@ -633,7 +645,7 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
     results.push({
       frontmatter: data as T,
       content,
-      html: stripHeadingIdPrefix(
+      html: normaliseGeneratedIds(
         rewriteLegacyInternalLinks(
           linkAtomRefs(linkCitations(linkSources(rendered.toString()), currentUrl)),
         ),
