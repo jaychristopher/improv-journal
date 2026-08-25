@@ -11,7 +11,7 @@ entry_atoms: [performing-cleverness, audience-relationship, commitment, be-brave
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-22"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # How to Stop Caring What People Think: The Performer's Secret
@@ -119,6 +119,32 @@ Graduated exposure works, but "share an honest opinion in a meeting" is a lot to
 **Send the real signal.** `emotional-honesty-scene` requires authentic emotional signal rather than a performed version. This is the most exposing of the three and belongs last.
 
 **Then do one real rep a day, deliberately small.** One unhedged sentence. One opinion offered without the disclaimer. The size does not matter; the frequency does, because what you are updating is a prediction built from repetition.
+
+## Questions People Ask About This
+
+### Why do I care what strangers think when I will never see them again?
+
+Because the part of you doing the caring cannot tell the difference. It is running on an old assumption that the people around you are the people you depend on, and a stranger in a queue registers as one of them.
+
+Knowing that does not switch it off, but it changes what you do about it. The instruction is not to reason yourself out of it — you have tried, and reasoning is more internal processing, which is the thing that was already crowding out the room. It is to give your attention something outside you to hold, which is what the exposure work above is for.
+
+### Does caring less make you selfish?
+
+It tends to do the opposite, and the reason is mechanical rather than moral. Somebody monitoring how they are coming across is not attending to the person in front of them — the monitoring uses the same capacity the listening would need.
+
+The people who are hardest to talk to are rarely the ones who care too little what you think. They are the ones running a continuous check on their own performance, which reads from the outside as distraction, because that is exactly what it is.
+
+### Will getting more confident fix it?
+
+Not directly, and waiting for it is how people stay stuck for years. Confidence is a description of how it feels once the caring has loosened, not the lever that loosens it.
+
+The lever is evidence. You do the exposing thing, nothing bad follows, and the part of you that was predicting disaster gets a data point it cannot argue with. Repeat that enough times and what arrives afterwards is the feeling people call confidence — in that order, and not the other one.
+
+### How long does it take?
+
+Longer than a decision and shorter than you fear. The first change most people notice is not that they stop caring but that they notice themselves caring and carry on anyway, which usually turns up within a few weeks of doing something regularly that exposes them a little.
+
+The deeper shift is measured in months and it is uneven — it goes backwards under tiredness, in unfamiliar rooms, and around people whose opinion genuinely matters to you. That last one is not a relapse. It is the part that was never meant to go.
 
 ## The Paradox That Resolves Everything
 

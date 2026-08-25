@@ -62,6 +62,14 @@ export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
  * site targets "improv podcast", so the term is uncontested — its title now
  * claims it, which needs no volume data, but registering the keyword does.
  *
+ * /paths/teaching-improv is a fourth and a different shape. Search Console
+ * has it at position 46 for "teaching improv", no bridge targets any teaching
+ * keyword, and the term is uncontested — but the page holding it is a 327-word
+ * curated path, and paths are a templated layer whose eleven members run 251
+ * to 511 words with no headings of their own. Deepening one into a guide would
+ * break that layer's shape; the right home is a bridge that does not exist
+ * yet. That is a content decision needing volume data, not a fix.
+ *
  * Ahrefs resets 2026-09-22. Retrieve volumes then and move these in.
  */
 
