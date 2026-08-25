@@ -1,6 +1,7 @@
 ---
 id: the-teachers-toolkit
 title: "The Teacher's Toolkit: From Performer to Pedagogue"
+description: "Performing well and teaching well are different skills. What the transition actually requires: safety first, then structure, then notes."
 status: seed
 atoms: [safety-in-the-room, curriculum-design, warm-up, side-coaching, giving-notes, reading-the-room, fear-of-failure, trust]
 tags: [pedagogy, teaching, structure, safety]

@@ -1,6 +1,7 @@
 ---
 id: first-line-drill
 title: "First Line Drill"
+description: "Each player steps out, commits to one declarative opening line, and stops. Trains starting a scene before you know where it goes."
 how_to_play: "Players take turns stepping out and opening a scene with a single line, cold, with no thinking time. Nothing is played past that line before the next player goes."
 type: exercise
 status: draft

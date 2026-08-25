@@ -39,7 +39,7 @@ export async function generateMetadata({
   const thread = await getThreadBySlug(slug);
   if (!thread) return {};
 
-  const desc = extractDescription(thread.content);
+  const desc = thread.frontmatter.description?.trim() || extractDescription(thread.content);
   return {
     title: pageTitle(thread.frontmatter.title),
     description: desc,

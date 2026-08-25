@@ -149,6 +149,13 @@ export interface AtomFrontmatter {
 export interface ThreadFrontmatter {
   id: string;
   title: string;
+  /**
+   * A written snippet, for the same reason atoms have one: the derived
+   * description is packed from whole sentences and falls back to a hard
+   * truncation when the opening sentence will not fit, which ships an
+   * ellipsis mid-word into a search result.
+   */
+  description?: string;
   lesson_goal?: string;
   key_takeaway?: string;
   common_mistake?: string;

@@ -1,6 +1,7 @@
 ---
 id: the-connective-tissue
 title: "The Connective Tissue: How Scenes Become Shows"
+description: "Callbacks, reincorporation and the other moves that link scenes to each other, and turn a run of unrelated pieces into one show."
 status: draft
 atoms: [callback, reincorporation, connections, mapping, straight-man, tag-run, elevating, justification, beats]
 tags: [techniques, show-craft, structure, advanced]

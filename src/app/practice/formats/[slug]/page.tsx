@@ -34,6 +34,7 @@ export async function generateMetadata({
     extractDescription(atom.content),
     undefined,
     atom.frontmatter.how_to_play,
+    atom.frontmatter.description,
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {

@@ -1,6 +1,7 @@
 ---
 id: ref-meisner-on-acting
 title: "Sanford Meisner on Acting — Meisner & Longwell (1987)"
+description: "A transcribed narrative of one acting class across fifteen months, in which the repetition exercise is taught rather than explained."
 type: reference
 status: draft
 tags: [references, books, meisner, acting, emotional-truth]

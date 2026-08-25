@@ -1,6 +1,7 @@
 ---
 id: spontaneity
 title: Spontaneity
+description: "Acting on a first impulse before evaluating it. Johnstone's claim is that this is the default state, and that most adults were trained out of it."
 type: definition
 status: draft
 tags: [fundamentals, johnstone, building-blocks]

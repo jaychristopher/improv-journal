@@ -33,6 +33,9 @@ export async function generateMetadata({
     atom.frontmatter.title,
     atom.frontmatter.type,
     extractDescription(atom.content),
+    undefined,
+    undefined,
+    atom.frontmatter.description,
   );
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
