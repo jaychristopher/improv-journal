@@ -14,6 +14,7 @@ links:
   - { id: space-work, relation: extends }
   - { id: environment, relation: extends }
   - { id: decay-recovery, relation: enables }
+  - { id: be-simple, relation: enables }
   - { id: callback, relation: extends }
   - { id: audience, relation: extends }
   - { id: belief-as-architecture, relation: enables }
@@ -36,6 +37,26 @@ The audience participates in this maintenance. When they laugh at the boat refer
 Improv scenes are **low-entropy structures in a high-entropy environment**. They require continuous energy input to maintain coherence — stop feeding them and they dissolve toward equilibrium. The default state is chaos, not order. Every moment of coherent shared reality is an active achievement, maintained against entropy.
 
 **But this fragility is also the source of improv's power.** The audience perceives the maintenance effort. They watch a thing that could collapse at any moment and *doesn't* — and that's the thrill. A scripted play is a building. An improv scene is a flame. The flame is more beautiful precisely because it's fragile. This liveness — the visible, real-time construction of shared reality — is what makes improv electric in a way recorded performance cannot be.
+
+## What the law predicts
+
+A law is only worth stating if it tells you what will happen, and this one makes three predictions that are checkable in any scene.
+
+Decay is proportional to time since last reference. A fact established and then left alone does not hold at constant strength; it fades, and the rate is roughly how long it has been since anybody touched it. This is why a scene can lose its location in ninety seconds without anybody contradicting it.
+
+Physical facts decay slower than spoken ones. A wall you keep opening and a door you keep walking through survive far longer than a relationship announced once in dialogue, because `space-work` re-signals continuously while a line of dialogue signals once. That is the reason experienced performers keep touching the `environment` even when the scene has moved on to something else.
+
+And the more that has been established, the faster the whole thing degrades. Every added fact is another thing requiring maintenance, which is why elaborate premises collapse more readily than plain ones and why `be-simple` is a structural instruction rather than an aesthetic preference.
+
+## The signs a reality is decaying
+
+It announces itself before it goes, and the signals are specific enough to act on.
+
+The first is that references stop being physical and become verbal — people start saying "here in the kitchen" instead of using the kitchen. Naming a thing is what performers do when they have stopped believing in it, and an audience reads the shift immediately even if they could not tell you what changed.
+
+The second is that contributions stop depending on each other. Lines that would have worked in any scene are a sign the shared reality has already gone; what is left is two people talking. `decay-recovery` covers what to do at that point, and the answer is almost always to touch something physical rather than to explain the situation to each other.
+
+The third is the audience going quiet in the wrong way. Silence during a held moment is attention; silence during ordinary dialogue is usually the sound of a room that no longer knows where it is.
 
 ## Why the good ones make it look effortless
 
