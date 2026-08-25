@@ -62,10 +62,24 @@ const TRADITION_INFO: Record<
       "Its blind spot is performance. Spolin was solving for participation and transfer, not for an audience, so the school has almost nothing to say about how a show is shaped or why one scene is funnier than another — which is precisely the gap the Chicago schools grew into.",
     ],
   },
+  /**
+   * Named for the school rather than the man, and that is the whole point of
+   * the rename. The note above records that Search Console had this page
+   * ranking for "del close improv"; the guide link was added then, and it was
+   * not enough. The title, the h1 and the meta description all still opened
+   * with his name, so the page went on claiming the term it was supposed to be
+   * handing over — and /del-close targets "del close" at 2,000 a month with a
+   * SERP whose weakest top-ten page is DR 2, which makes it the most winnable
+   * volume on this site and much too valuable to split.
+   *
+   * iO is the theatre Halpern founded and Close joined, so the school has an
+   * institution to be named after in a way the Johnstone and Spolin pages do
+   * not. Both names stay in the body, where they belong.
+   */
   close: {
-    label: "Del Close & Charna Halpern",
+    label: "iO and the Harold",
     desc: "Group mind. Connections across scenes. The Harold as spiritual endeavor.",
-    meta: "Del Close and Charna Halpern's improv: group mind, connections carried across scenes, and the Harold as a spiritual endeavor. Truth in Comedy, 1994.",
+    meta: "The iO school of improv: group mind, connections carried across scenes, and the Harold as a spiritual endeavor. Built by Charna Halpern and Del Close.",
     keyTexts: ["Truth in Comedy (1994)"],
     guide: { href: "/del-close", label: "Del Close: the ideas that still run improv" },
     orientation: [

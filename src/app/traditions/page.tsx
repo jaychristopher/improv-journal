@@ -22,8 +22,9 @@ const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
     desc: "Present-moment awareness. The body as primary instrument. Point of Concentration. Theater Games.",
   },
   close: {
-    label: "Del Close & Charna Halpern",
-    desc: "Group mind. Connections across scenes. The Harold as spiritual endeavor. iO Chicago.",
+    // Kept in step with TRADITION_INFO, where the reason for the name is recorded.
+    label: "iO and the Harold",
+    desc: "Group mind. Connections across scenes. The Harold as spiritual endeavor. Close and Halpern, iO Chicago.",
   },
   ucb: {
     label: "Upright Citizens Brigade",

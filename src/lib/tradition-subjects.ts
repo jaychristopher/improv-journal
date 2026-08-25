@@ -15,9 +15,15 @@ import type { PageSubject } from "@/lib/schema";
  * rather than "The Annoyance", and iO is at "IO Theater" rather than "iO
  * Theater" or "ImprovOlympic", both of which redirect there.
  *
- * Where a page covers a pair — Close with Halpern, the Annoyance with TJ and
- * Dave — the subject names the entity the page is primarily about and that its
- * own title leads with. TJ and Dave have no article as a duo.
+ * Where a page covers a pair — the Annoyance with TJ and Dave — the subject
+ * names the entity the page is primarily about and that its own title leads
+ * with. TJ and Dave have no article as a duo.
+ *
+ * `close` follows that rule and is the reason it is worth stating. It was
+ * Del Close the person while the page was titled after him; the title now
+ * names the school, so the subject is the theatre. Del Close is asserted by
+ * /del-close, which is the page that should own that identity — one entity
+ * claimed by one page.
  */
 export const TRADITION_SUBJECTS: Record<string, PageSubject> = {
   johnstone: {
@@ -34,11 +40,11 @@ export const TRADITION_SUBJECTS: Record<string, PageSubject> = {
     sameAs: ["https://en.wikipedia.org/wiki/Viola_Spolin"],
   },
   close: {
-    type: "Person",
-    name: "Del Close",
+    type: "Organization",
+    name: "iO Theater",
     description:
-      "American improv teacher and director, 1934-1999. Developed the Harold and co-founded iO with Charna Halpern.",
-    sameAs: ["https://en.wikipedia.org/wiki/Del_Close", "https://en.wikipedia.org/wiki/IO_Theater"],
+      "Chicago improv theatre and training centre founded by Charna Halpern, where Del Close developed the Harold.",
+    sameAs: ["https://en.wikipedia.org/wiki/IO_Theater"],
   },
   ucb: {
     type: "Organization",
