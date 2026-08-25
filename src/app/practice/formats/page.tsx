@@ -97,6 +97,9 @@ export default async function FormatsPage() {
           Performance structures — from 2-minute games to 60-minute shows.
         </p>
       </header>
+      {/* The list carries an h2 of its own so the entries below it do not jump
+          the outline straight from h1 to h3 — the same fix /improv-games has. */}
+      <h2 className="mb-4 text-xl font-semibold">Every Format</h2>
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
 
       <section className="border-foreground/10 mt-16 border-t pt-12">

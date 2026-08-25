@@ -85,6 +85,9 @@ export default async function ExercisesPage() {
           .
         </p>
       </header>
+      {/* The list carries an h2 of its own so the entries below it do not jump
+          the outline straight from h1 to h3 — the same fix /improv-games has. */}
+      <h2 className="mb-4 text-xl font-semibold">Every Exercise</h2>
       <TagFilter items={items} filterGroups={FILTER_GROUPS} />
     </main>
   );

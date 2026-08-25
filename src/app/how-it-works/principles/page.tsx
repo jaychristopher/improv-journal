@@ -98,6 +98,9 @@ export default async function PrinciplesPage() {
         </p>
       </header>
 
+      {/* The list carries an h2 of its own so the entries below it do not jump
+          the outline straight from h1 to h3 — the same fix /improv-games has. */}
+      <h2 className="mb-4 text-xl font-semibold">Every Principle</h2>
       <div className="space-y-4">
         {principles.map((a) => (
           <div
