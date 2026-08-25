@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms, loadBridges } from "../content";
+import { TRADITION_SUBJECTS } from "../tradition-subjects";
 
 /**
  * A declared subject is a claim about identity, so it has to be well formed.
@@ -19,11 +20,20 @@ const AUTHORITY = /^https:\/\/(en\.wikipedia\.org\/wiki\/|www\.wikidata\.org\/wi
 /** Every page type that can declare a subject, flattened to one shape. */
 async function subjectPages() {
   const [bridges, atoms] = await Promise.all([loadBridges(), loadAtoms()]);
-  return [...bridges, ...atoms].map((doc) => ({
-    slug: doc.slug,
-    title: doc.frontmatter.title,
-    subject: doc.frontmatter.subject,
-  }));
+  return [
+    ...[...bridges, ...atoms].map((doc) => ({
+      slug: doc.slug,
+      title: doc.frontmatter.title,
+      subject: doc.frontmatter.subject,
+    })),
+    // The five school pages declare their subject in code rather than in
+    // frontmatter, and were outside these checks entirely until they had one.
+    ...Object.entries(TRADITION_SUBJECTS).map(([slug, subject]) => ({
+      slug: `traditions/${slug}`,
+      title: subject.name,
+      subject,
+    })),
+  ];
 }
 
 describe("declared page subjects", () => {

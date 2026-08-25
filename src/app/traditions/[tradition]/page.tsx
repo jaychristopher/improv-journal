@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import {
   extractCounterPositions,
@@ -10,6 +11,7 @@ import {
   getTraditionNames,
 } from "@/lib/content";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
+import { TRADITION_SUBJECTS } from "@/lib/tradition-subjects";
 
 // `desc` is the visible tagline and is deliberately terse. `meta` is the search
 // snippet, which has 158 characters to spend and was spending fifty.
@@ -170,6 +172,15 @@ export default async function TraditionPage({
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
+      {/* These pages carried no structured data at all, while being the
+          ones a query like "del close improv" actually lands on. */}
+      <ArticleJsonLd
+        title={info.label}
+        description={info.meta}
+        url={`/traditions/${tradition}`}
+        eyebrow="Tradition"
+        subject={TRADITION_SUBJECTS[tradition]}
+      />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
