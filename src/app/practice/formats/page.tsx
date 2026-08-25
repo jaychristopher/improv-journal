@@ -110,6 +110,37 @@ export default async function FormatsPage() {
       </section>
 
       <section className="mt-12">
+        <h2 className="mb-3 text-xl font-semibold">What Is Short Form Improv?</h2>
+        <p className="text-foreground/70 mb-4">
+          A sequence of separate games, each with a rule announced before it starts and each
+          finished before the next begins. Nothing carries over: the scene about the locksmith does
+          not come back, and is not meant to.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          The announced rule is the part people underrate. Telling an audience the constraint before
+          the game starts makes them a party to it &mdash; they know what is difficult, so they are
+          watching for whether it gets done, and a good deal of what reads as comedy is really the
+          visible cost of the constraint. Long form asks an audience to work out what a piece is
+          about; short form tells them what the problem is and lets them keep score.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          It also has a role long form mostly does not: a host. Somebody frames each game, collects
+          the suggestion and decides when a game has finished, which is a real skill and the reason
+          a short form set can survive an uneven cast. The lineage runs through Johnstone&rsquo;s{" "}
+          <Link href="/practice/formats/theatresports" className="underline">
+            Theatresports
+          </Link>
+          , which made it competitive on purpose, and reached most people through the television
+          version of the same idea.
+        </p>
+        <p className="text-foreground/70 mb-4">
+          What it is good at: rooms new to improv, short slots, and casts of mixed experience, since
+          a weaker player can be carried inside a game in a way a thirty-minute piece does not
+          allow. What it cannot do is accumulate. Nothing established in game three is available in
+          game seven, so the depth an audience feels at the end of a good long form set is not on
+          offer &mdash; which is a fair trade and worth making deliberately rather than by default.
+        </p>
+
         <h2 className="mb-3 text-xl font-semibold">Choosing One for a Group</h2>
         <p className="text-foreground/70 mb-4">
           Four constraints decide this, and none of them is taste.
