@@ -16,7 +16,7 @@ primary_cta_target: presence-and-commitment
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # Social Awkwardness Is an Attention Problem, Not a Trait
@@ -151,6 +151,32 @@ The distinction matters here because the entire method on this page is *redirect
 If the pattern is anticipatory dread, physical symptoms and avoidance, the useful move is not a better technique. It is talking to a GP or a therapist; cognitive behavioural therapy has a strong evidence base for this specifically. The attention model still describes something true about what happens in the moment. It is just not the intervention.
 
 Two things can also be true at once. Plenty of people have ordinary situational awkwardness and no anxiety disorder whatsoever, and plenty of people have both. The test is not how bad it feels — it is whether the fear arrives before the event or the embarrassment arrives after it.
+
+## Questions People Ask About Awkwardness
+
+### Do other people actually notice as much as I think?
+
+No, and this is one of the better-established findings in social psychology. People consistently overestimate how much their appearance, their mistakes and their internal states register with everybody else — the sensation of being conspicuous is generated internally and does not correspond well to what the room saw.
+
+The useful part is not the reassurance, which nobody has ever been talked out of anything by. It is that the overestimate is itself a product of `internal-computation`: you are running a detailed model of how you are being perceived, that model is vivid, and vividness is what your brain uses to judge how likely something is. Give the attention a job outside you and the model gets less detailed, which makes it less convincing.
+
+### Why do I still cringe about something from years ago?
+
+Because it was never resolved, only survived. A moment that ended without anything bad happening still ends without evidence that nothing bad happened — nobody tells you afterwards that they did not notice, so the file stays open and gets reopened whenever your attention is idle.
+
+That is why the replay arrives at night and in the shower rather than in meetings. It is not a sign the memory is important; it is a sign there is nothing else competing for the channel. The people who report it fading are almost never the ones who resolved the old moment. They are the ones who accumulated enough newer ones that survived.
+
+### Why is it worse with people I half-know than with strangers?
+
+Because the stakes and the uncertainty peak together. A stranger costs nothing — you will not see them again, and there is no relationship to damage. A close friend costs nothing either, for the opposite reason: the relationship has already survived enough that one clumsy sentence does not threaten it.
+
+The acquaintance is the worst case. There is a relationship worth something, no accumulated evidence that it is durable, and no settled sense of what you are to each other — so the monitoring runs hardest exactly where you have least information. Recognising that the difficulty is structural rather than personal is worth more than it sounds, because most people read it as proof they are bad at this.
+
+### Is it worse on a video call?
+
+Usually, and for a reason that has nothing to do with you. A video call puts your own face on the screen for the entire conversation, which is a self-monitoring machine — the exact thing this page is about, supplied continuously and for free.
+
+Hide your own tile. Most platforms allow it, almost nobody does it, and it removes the most reliable prompt to watch yourself that any conversational setting has ever had. The other differences — lag, no peripheral vision, no shared room — are real, but they make a call harder to read rather than making you worse at it.
 
 ## The Uncomfortable Truth
 
