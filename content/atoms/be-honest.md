@@ -25,7 +25,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Alias:** Signal the shared reality as it currently exists, clearly and without distortion.
@@ -59,6 +59,28 @@ Mick Napier would caution that "be honest" as an instruction can itself become a
 **Be honest isn't a moral instruction. It's a clarity instruction.** It raises the signal-to-noise ratio. Honest signals are clear. Clever signals are muddy. Authenticity maintains shared state coherence — it gives other players something solid to react to. Constant irony or wackiness gives your partner nothing to grab onto.
 
 Signalling the reality as it stands is easy advice and hard practice, and it is hardest where it matters most. [How to have difficult conversations](/how-to-have-difficult-conversations) is this principle applied where both people have a reason to distort — which is the situation the principle was written for.
+
+## You cannot check your own signal
+
+The instruction asks you to make what you transmit match what is happening, and you have no direct access to what you transmit. You cannot hear your own tone, see your own face, or feel the length of your own pause from outside. The one part of this you can inspect — the words — is the part least likely to be lying.
+
+Which makes this a relational instruction rather than an introspective one. Trying harder to be honest inside your own head produces no observable change, and it is a reliable way to spend attention on nothing.
+
+### The readout is what your partner does next
+
+[Meaning is relational](/how-it-works/meaning-is-relational) applies here more directly than anywhere else on the site. If your partner responds to something you did not intend, that is not a misunderstanding to be corrected — it is the most accurate available report of the signal that actually went out.
+
+The useful habit is therefore to treat their reaction as data rather than as an error. A performer who keeps having to clarify is not being misread. They are transmitting something other than what they believe they are transmitting, and the clarification never fixes the source.
+
+## Where it fails first, and what that looks like
+
+Honesty is easy when nothing is at stake, which is why the principle is usually taught in conditions that cannot test it. It breaks under load — when the scene matters, when you want it to go well, when somebody is watching whose opinion you care about.
+
+### The tell is fluency, not awkwardness
+
+This is the part people get backwards. The expectation is that a performer who has stopped being honest will look uncomfortable. What actually happens is the opposite: the words get smoother, the timing gets cleaner, and the whole thing becomes easier to watch and harder to be affected by.
+
+Managed signal is more polished than honest signal, because managing is what polish is. So a stretch that suddenly feels like it is going well, in a scene where something real was about to be admitted, is worth suspecting rather than trusting.
 
 ## Specific sources
 
