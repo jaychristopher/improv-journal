@@ -28,7 +28,7 @@ links:
   - { id: ref-viewpoints-bogart-landau, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 Character is a distinct identity inhabited by the performer — with its own way of seeing the world, its own desires, its own physical life. Character is what separates the performer from the role: the performer observes and responds; the character *lives*.
@@ -54,6 +54,38 @@ Will Hines frames this as the "actor vs. comedian" duality: the *actor* inhabits
 - **Napier** builds character from one strong initial choice: give yourself one thing (an emotion, a physicality, an attitude) and commit fully; the rest fills in
 
 Meisner's formulation is the bridge to improv: in both traditions, character is discovered through interaction, not designed in advance.
+
+## The component that gets skipped
+
+Of the four, three are visible and one is not, and that decides which one goes missing.
+
+Point of view, physicality and status default all show. A performer who has chosen them can feel themselves doing it, and an audience can see it happening. **Want** produces nothing visible on its own, so it is the component performers most often believe they have and most often do not.
+
+The symptom is a scene that looks fully populated and does not move. Two vivid people with strong physicalities and clear attitudes, talking, for two minutes, going nowhere — because neither of them needs anything from the other and there is therefore nothing that can change.
+
+The check is not to decide a want in advance, which contradicts everything above about character emerging through action. It is to notice, mid-scene, whether there is anything you would be disappointed not to get from the person opposite. If the honest answer is no, that is the missing piece, and it can be supplied immediately without stopping.
+
+## How character actually fails
+
+Four failures, all recognisable, and none of them looks like bad acting from the inside.
+
+### The voice with nobody behind it
+
+An accent, a pitch, a speech rhythm — adopted and then not connected to anything. It reads as a character for about fifteen seconds, which is roughly how long it takes an audience to notice that the person is not being affected by anything.
+
+### The job played as an identity
+
+"I am a dentist" supplies a circumstance and no character. Occupations are where the scene happens, not who is in it, and a performer who has chosen one often stops choosing anything else.
+
+### The quirk that never costs anything
+
+A trait that produces behaviour and no consequence — the character who is terribly anxious and to whom nothing anxious-making occurs. If the trait would survive being deleted from the scene, it was decoration.
+
+### The alibi taken too far
+
+The character permits risks the performer would not take, which is the mechanism described above and is genuinely useful. Past a point it inverts: the character becomes somewhere to hide, and the performer is now protected from the exposure the scene was supposed to involve. The tell is a character who is enormous and reveals nothing about anybody.
+
+What unites all four is that the character has been **specified rather than inhabited**. The fix in each case is the same and is not more detail — it is letting the other person's behaviour land on whoever you have already become.
 
 ## Specific sources
 
