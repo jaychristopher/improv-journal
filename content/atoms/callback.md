@@ -23,7 +23,7 @@ links:
   - { id: reincorporation, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 Callback is the pattern of referencing an earlier established detail — a name, an object, a line, a gesture — later in the scene or show, reactivating meaning that has receded from active attention.
@@ -58,6 +58,18 @@ What makes a callback land is that the current scene creates a genuine need for 
 ## The audience's role
 
 Callbacks are one of the strongest sources of audience delight because they reward shared attention. The audience who remembers the detail gets to experience the pleasure of connection — meaning completed across time, between performers and audience. This is meaning-is-relational in action.
+
+## The case against tracking callbacks at all
+
+The strongest objection is not that callbacks are bad. It is that looking for them costs more than they return.
+
+Susan Messing's version is direct: tracking what to call back puts you in your head. TJ and Dave's practice says much the same by omission — things do return in their scenes, and they return because they were genuinely still alive rather than because somebody was keeping a list.
+
+The cost is real and it is the same arithmetic as everywhere else on this site. A performer maintaining a mental inventory of callable items is running a process that consumes exactly the capacity reception needs, and the inventory grows as the show goes on. A callback retrieved from a list is usually detectable too — it arrives slightly early, aimed at the audience rather than at the other person, and the scene it interrupted was the one actually happening.
+
+The distinction that keeps the technique honest is between remembering and monitoring. **Remembering costs nothing**: the thing surfaces on its own because it mattered, and using it is free. **Monitoring is a job you gave yourself**, and it is being done instead of listening.
+
+The practical rule that falls out of it is that if you have to search for the callback, you have already lost more than it can pay back. The ones worth having tend to arrive uninvited, which is also why they land.
 
 ## Specific sources
 

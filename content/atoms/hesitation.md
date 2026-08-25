@@ -24,7 +24,7 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 Hesitation is the shadow of **Be Brave**. Hesitation is the failure to act at a decision point — not just at the threshold of a scene, but at every moment where the scene needs a choice and you withhold one.
@@ -70,6 +70,18 @@ Hesitation creates latency, which the audience feels as energy loss. It signals 
 None of the three begins with feeling ready. That ordering is the premise behind [exercises that build confidence out of accumulated evidence](/confidence-building-exercises) rather than out of rehearsed affirmations.
 
 It is easiest to see in a circle. In [Sound Ball](/practice/exercises/sound-ball) the pause while somebody auditions options is far more conspicuous than any sound they could have made, which is why the game works on people who do not believe they hesitate.
+
+## Patience is not hesitation
+
+Everything above describes a failure, and there is a version of the same behaviour that is the best move available.
+
+TJ and Dave build entire hours out of it: long looks, unhurried answers, silences held past the point most performers would fill. Their position in *Speed of Life* is that a captivating silence is as good as a laugh, and frequently better, because the audience leans in rather than being handed something.
+
+So the gap itself is not the problem. What differs is what is happening inside it. **Hesitation is a censor blocking an action that was ready.** **Patience is attention being paid to something that has not finished arriving.** From outside they can look identical for two or three seconds, which is why the note "stop hesitating" lands so badly on a performer who was doing the second one.
+
+The test that separates them is whether you could say what you are waiting for. A patient performer can — they are watching the other person's face change, or letting a line land, or declining to rescue a moment that is working. A hesitating one cannot, because nothing is being tracked; the pause is a search for something acceptable to say.
+
+Which means the fix is never simply to speak sooner. It is to move the attention outward, at which point the pauses that remain are the useful kind.
 
 ## Specific sources
 

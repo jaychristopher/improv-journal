@@ -21,7 +21,7 @@ links:
   - { id: ref-meisner-on-acting, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Quality of: Be Honest**
@@ -51,6 +51,18 @@ Emotional truth requires exposure. When you play an emotion straight — no wink
 Truth from the inside feels like mild risk and physical activation — the sensation of being seen without armor. Truth from the outside reads as behavioral congruence: voice, body, and words all saying the same thing. The audience doesn't detect your *feelings* — they detect whether your channels are aligned. This is why specificity matters: it's not detail for detail's sake. It's congruence made legible. "My hands are shaking because you promised you'd be here and you weren't" aligns every channel around a single truth. "I'm angry" leaves them guessing.
 
 Emotional truth also means letting feelings *shift*. Locking into one emotion and defending it against change is rigidity, not truth. If your partner's offer genuinely changes how you feel, the truthful move is to follow the feeling, not to protect the one you started with. This is where Be Changeable and emotional truth converge.
+
+## Diderot's objection: the actor who feels nothing
+
+This page sits on one side of the oldest argument in Western acting theory, and it is worth saying which side.
+
+Diderot's *Paradoxe sur le comédien* holds the opposite position outright: the great actor feels nothing at all, and portrays emotion through craft, observation and intelligence. His complaint about actors who depend on feeling is that they give uneven performances — some nights the feeling arrives and some nights it does not, and the audience pays either way. Improv's emotional-truth tradition descends from Stanislavski and Meisner, which is to say it is on the losing side of Diderot's argument by choice.
+
+The disagreement is smaller than it looks once you notice what Diderot was solving for, which is **repeatability**. A production runs for months. An actor who requires genuine grief to arrive on cue has a reliability problem that a technical actor does not, and Diderot is right about that.
+
+Improvisation has no run. The scene happens once, is never repeated, and nobody is trying to reproduce Tuesday's performance on Wednesday. The reliability problem Diderot identified does not arise, and the thing his method protects against — an uneven night — costs an improviser almost nothing, because there was no fixed version to fall short of.
+
+What does survive from him is the warning underneath. A performer waiting to feel something before acting is stuck, and *that* failure is common in improv classes. The body-first method above is the practical answer to it, and it is closer to Diderot than the tradition usually admits: act, and let the feeling follow the action rather than the other way round.
 
 ## Specific sources
 
