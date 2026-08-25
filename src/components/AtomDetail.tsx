@@ -11,6 +11,7 @@ import {
   getThreadsForAtom,
   loadSources,
 } from "@/lib/content";
+import { loadImprovGames } from "@/lib/games";
 import { definitionFromHtml, isGlossaryType, stripLeadLabelHtml } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
 import type { AtomFrontmatter } from "@/lib/schema";
@@ -83,10 +84,21 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
     : null;
 
   // Reverse lookups
-  const [appearsInThreads, appearsInBridges] = await Promise.all([
+  const [appearsInThreads, appearsInBridges, improvGames] = await Promise.all([
     getThreadsForAtom(atom.slug),
     getBridgesForAtom(atom.slug),
+    loadImprovGames(),
   ]);
+
+  /**
+   * getBridgesForAtom returns bridges, so a hub that lives on a route rather
+   * than in content could never appear in this sidebar. /improv-games is the
+   * biggest improv term the site targets at 3,100 a month, and every one of
+   * the game pages that make up its content linked to everything except it.
+   * Membership is read from the hub's own loader rather than inferred from
+   * type, so a page never claims to be in a collection that does not list it.
+   */
+  const inImprovGames = improvGames.some((game) => game.id === fm.id);
 
   const threadWithPaths = await Promise.all(
     appearsInThreads.map(async (t) => {
@@ -127,7 +139,8 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
     resolvedLinks.length > 0 ||
     appearsInThreads.length > 0 ||
     appearsInPaths.length > 0 ||
-    appearsInBridges.length > 0;
+    appearsInBridges.length > 0 ||
+    inImprovGames;
 
   // Context banner: find the primary thread/path this atom belongs to
   const primaryThread = appearsInThreads[0] ?? null;
@@ -321,7 +334,8 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
             {/* Part of — grouped by content type */}
             {(appearsInPaths.length > 0 ||
               appearsInThreads.length > 0 ||
-              appearsInBridges.length > 0) && (
+              appearsInBridges.length > 0 ||
+              inImprovGames) && (
               <div>
                 <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
                   Part of
@@ -356,6 +370,19 @@ export async function AtomDetail({ atom, breadcrumbs, eyebrow }: AtomDetailProps
                             {t.frontmatter.title}
                           </Link>
                         ))}
+                      </dd>
+                    </div>
+                  )}
+                  {inImprovGames && (
+                    <div>
+                      <dt className="text-foreground/40 mb-1 text-xs font-medium">Collections</dt>
+                      <dd className="space-y-1">
+                        <Link
+                          href="/improv-games"
+                          className="text-foreground/70 block hover:underline"
+                        >
+                          Improv Games
+                        </Link>
                       </dd>
                     </div>
                   )}
