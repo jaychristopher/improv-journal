@@ -4,6 +4,8 @@ description: "Improv is unscripted theatre built in real time from offers. What 
 target_keywords:
   - { keyword: "what is improv", volume: 2600, difficulty: 13, traffic_potential: 250, parent: "what is improv" }
   - { keyword: "what is improvisation", volume: 450, parent: "improvisation", difficulty: 5, traffic_potential: 250 }
+  - { keyword: "what is improv comedy", volume: 200 }
+  - { keyword: "what is improv acting", volume: 50 }
 serp_checked: "2026-08-23"
 serp_min_dr: 12
 serp_verdict: winnable
@@ -99,6 +101,18 @@ The overwhelming majority of improv performed and taught is comic, and the insti
 But nothing in the mechanics requires it. Improvised drama exists, notably in Johnstone's narrative work and in duo forms like TJ and Dave's, where the piece is played straight and the laughs arrive because the behaviour is recognisable rather than because anyone reached for a joke. The strongest teachers in the comic tradition tend to say the same thing from the other direction: aiming at funny produces worse comedy than aiming at true.
 
 Two related distinctions worth having. Improv is not **stand-up** — stand-up is written, rehearsed and solo, and the resemblance is only that both look like a person talking without a script. And improv is not **sketch**, though the two are constantly confused because Second City generates sketch by improvising: the sketch you eventually watch has been written down and repeated.
+
+## Improv Comedy and Improv Acting Are Not the Same Thing
+
+The word does two jobs, and which one somebody means is usually invisible until it causes a problem.
+
+**Improv comedy** is the thing most people have seen. It descends from the Chicago institutions, it is sold as comedy, its vocabulary is built around finding what is funny in a scene and doing more of it, and its training is largely about pattern, heightening and the mechanics of a laugh. If you are looking for a class because you want to be funnier or to perform, this is the one.
+
+**Improv acting** — improvisational theatre, in the older sense — is actor training. It descends from Spolin's theatre games and Johnstone's work, and its purpose is to make a performer responsive: present, unblocked, able to react truthfully to something they did not expect. Drama schools use it on people who will spend their careers doing scripted work, and no laugh is required for the exercise to have succeeded.
+
+The mechanics underneath are the same. Both build a shared reality out of offers, both fail when somebody stops listening, and a good performer from either tradition can usually hold their own in the other. What differs is what the work is *for*, and therefore what gets corrected. A comedy teacher watching a truthful, unfunny scene will note that nothing was heightened. An acting teacher watching a funny, unconnected one will note that neither performer was actually looking at the other.
+
+This matters when choosing where to train, because the two are frequently advertised in the same words. A syllabus organised around game, premise and the second beat is teaching comedy. One organised around attention, impulse and being changed by your partner is teaching acting. Neither is more serious than the other — they are answering different questions, and the mismatch only becomes obvious once you are in the room.
 
 ## What Is Improv For?
 
