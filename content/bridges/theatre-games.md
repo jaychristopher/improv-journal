@@ -10,6 +10,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 5
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Theatre games"
+  description: "Actor-training exercises developed by Spolin, Johnstone, Boal and others in the twentieth century."
+  sameAs: ["https://en.wikipedia.org/wiki/Theatre_games"]
 entry_atoms: [be-present, space-work, physicality, warm-up, side-coaching, heat-and-weight]
 entry_path: beginner-foundations
 primary_problem: "you need structured drama exercises that build skills rather than just fill time"

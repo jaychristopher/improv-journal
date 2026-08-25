@@ -9,6 +9,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 15
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Party game"
+  description: "Game played for entertainment at a social gathering."
+  sameAs: ["https://en.wikipedia.org/wiki/Party_game"]
 entry_atoms: [safety-in-the-room, offers, spontaneity, ensemble, commitment]
 entry_path: improv-for-life
 primary_problem: "the party has gone quiet and everything you can think of requires props nobody has"

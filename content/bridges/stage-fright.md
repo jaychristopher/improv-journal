@@ -8,6 +8,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 45
 serp_verdict: authority
+subject:
+  type: Thing
+  name: "Stage fright"
+  description: "Anxiety provoked by performing or speaking in front of an audience."
+  sameAs: ["https://en.wikipedia.org/wiki/Stage_fright"]
 entry_atoms: [performance-state, fear-of-failure, be-brave, presence, warm-up, failing-forward]
 entry_path: the-art-of-ensemble
 primary_problem: "fear is making you hesitate instead of making the first move"

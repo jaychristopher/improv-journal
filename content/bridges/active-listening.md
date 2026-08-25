@@ -6,6 +6,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 62
 serp_verdict: authority
+subject:
+  type: Thing
+  name: "Active listening"
+  description: "Listening technique in which the listener demonstrates understanding rather than only receiving."
+  sameAs: ["https://en.wikipedia.org/wiki/Active_listening"]
 entry_atoms:
   [active-listening, offers, continuous-signaling, cognitive-bandwidth, internal-computation]
 entry_path: physics-of-connection

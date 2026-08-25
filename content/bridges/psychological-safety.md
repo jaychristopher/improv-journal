@@ -9,6 +9,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 52
 serp_verdict: authority
+subject:
+  type: Thing
+  name: "Psychological safety"
+  description: "Group condition in which members feel secure enough to speak up, disagree and admit mistakes."
+  sameAs: ["https://en.wikipedia.org/wiki/Psychological_safety"]
 entry_atoms: [safety-in-the-room, shared-reality-fragility, trust, be-positive, vulnerability]
 entry_path: physics-of-connection
 status: draft

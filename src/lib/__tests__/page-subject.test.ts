@@ -11,7 +11,7 @@ import { loadAtoms, loadBridges } from "../content";
  * fields are checked rather than trusted, and a subject may be declared with
  * no sameAs at all, which is the right move when no authority record is known.
  */
-const ALLOWED_TYPES = ["Person", "Organization", "CreativeWork"];
+const ALLOWED_TYPES = ["Person", "Organization", "CreativeWork", "Thing"];
 
 /** Records that actually disambiguate an entity. */
 const AUTHORITY = /^https:\/\/(en\.wikipedia\.org\/wiki\/|www\.wikidata\.org\/wiki\/Q\d+)/;

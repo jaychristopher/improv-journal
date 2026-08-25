@@ -10,6 +10,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 82
 serp_verdict: authority
 serp_top10_dr: [82, 97, 87, 85, 92, 94, 95]
+subject:
+  type: Thing
+  name: "Framing effect"
+  description: "Cognitive bias in which the same choice is judged differently depending on how it is presented."
+  sameAs: ["https://en.wikipedia.org/wiki/Framing_effect_(psychology)"]
 entry_atoms: [framing-as-angle-of-approach, justification, endowment, gratitude-reframing, be-changeable]
 entry_path: improv-for-life
 status: draft

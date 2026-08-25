@@ -4,6 +4,11 @@ title: Meisner Technique
 type: technique
 status: draft
 tags: [techniques, listening, presence, training, acting, repetition]
+subject:
+  type: CreativeWork
+  name: "Meisner technique"
+  description: "System of actor training developed by Sanford Meisner, built on repetition and response to the other person."
+  sameAs: ["https://en.wikipedia.org/wiki/Meisner_technique"]
 links:
   - { id: ref-meisner-on-acting, relation: illustrates }
   - { id: active-listening, relation: enables }

@@ -8,6 +8,11 @@ serp_checked: "2026-08-23"
 serp_min_dr: 29
 serp_verdict: winnable
 serp_top10_dr: [97, 75, 79, 90, 36, 70, 99, 29]
+subject:
+  type: Thing
+  name: "Glossophobia"
+  description: "Fear of public speaking."
+  sameAs: ["https://en.wikipedia.org/wiki/Glossophobia"]
 entry_atoms: [performance-state, be-brave, commitment, failing-forward, audience-relationship]
 entry_path: systems-of-improv
 status: draft

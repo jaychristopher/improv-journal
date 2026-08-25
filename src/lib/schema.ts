@@ -217,9 +217,18 @@ export interface BridgeTargetKeyword {
   parent?: string;
 }
 
-/** A named entity a page is about, for schema.org `about`. */
+/**
+ * A named entity a page is about, for schema.org `about`.
+ *
+ * `Thing` is here because the other three could not express most of what this
+ * site writes about. Psychological safety, the framing effect and small talk
+ * are concepts rather than people, organisations or works, so pages covering
+ * them had no way to name their entity at all and were left declaring nothing.
+ * `Thing` is schema.org's general type and always valid for `about`; the
+ * disambiguation is done by sameAs either way.
+ */
 export interface PageSubject {
-  type: "Person" | "Organization" | "CreativeWork";
+  type: "Person" | "Organization" | "CreativeWork" | "Thing";
   name: string;
   /** One-line disambiguator, e.g. "Improv teacher, 1934-1999". */
   description?: string;

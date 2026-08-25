@@ -7,6 +7,11 @@ target_keywords:
 serp_checked: "2026-08-23"
 serp_min_dr: 36
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Small talk"
+  description: "Light conversation on uncontroversial subjects, used to establish contact rather than exchange information."
+  sameAs: ["https://en.wikipedia.org/wiki/Small_talk"]
 entry_atoms: [offers, yes-and, active-listening, be-present, commitment, sweep-edit]
 entry_path: improv-for-life
 status: draft

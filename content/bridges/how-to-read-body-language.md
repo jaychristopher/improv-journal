@@ -7,6 +7,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 67
 serp_verdict: authority
+subject:
+  type: Thing
+  name: "Body language"
+  description: "Nonverbal communication through posture, gesture, expression and use of space."
+  sameAs: ["https://en.wikipedia.org/wiki/Body_language"]
 entry_atoms: [active-listening, signal, audience-relationship, status, offers]
 entry_path: improv-for-life
 status: draft

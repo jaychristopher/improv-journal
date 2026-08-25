@@ -20,6 +20,11 @@ target_keywords:
 serp_checked: "2026-08-22"
 serp_min_dr: 24
 serp_verdict: winnable
+subject:
+  type: Thing
+  name: "Would you rather"
+  description: "Conversation and party game posing a dilemma between two options."
+  sameAs: ["https://en.wikipedia.org/wiki/Would_you_rather"]
 entry_atoms: [commitment, offers, blocking, obvious-choice, be-honest]
 entry_path: improv-for-life
 primary_problem: "you ask a would you rather and everybody says it depends and the game dies"
