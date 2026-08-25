@@ -27,7 +27,7 @@ links:
   - { id: wimping, relation: extends }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other principle-shadows are its species.
@@ -47,6 +47,34 @@ Johnstone catalogued an entire family of avoidance behaviors beyond simple denia
 Napier offers an important counter-frame: the fear of blocking can itself become a trap. Improvisers so terrified of saying no that they robotically "yes, and" everything produce tepid, compliant, lifeless scenes. Mechanical agreement without personal investment is its own form of scene-death. The principle is not "never deny" — it is "serve the scene with your full creative self."
 
 Understanding blocking matters not to create shame but to build recognition speed. Every improviser blocks. The goal is not to eliminate the impulse but to notice it faster and choose the scene over the self.
+
+## Catching it in yourself
+
+Recognition speed is the stated goal above, and it is worth saying what there is to recognise, because a block rarely announces itself as one.
+
+### It is usually physical before it is verbal
+
+The reliable tell arrives before the line does — a small pull backwards, a breath held rather than taken, a fractional stillness while the rest of the scene keeps moving. Performers who get good at this describe noticing the flinch and speaking anyway, which is a different skill from deciding to be more accepting.
+
+### It is faster than accepting
+
+Blocking is cheap. Refusing an offer requires no processing at all, where accepting one means taking in what was established and finding what follows from it. So an unusually quick reply is worth suspecting, particularly one that arrived while your partner was still talking.
+
+### The words are boringly consistent
+
+"Well, actually." "But." A correction of a detail. A question that resets what was just settled. None of these is always a block, and all of them are worth noticing when they are the first thing out of your mouth.
+
+### The retrospective version
+
+After a scene, ask what your partner established that never came back. Not what you refused — what quietly failed to exist afterwards. That catches the emotional and implicit forms, which are invisible in the moment and are most of the problem.
+
+## What to do in the half-second after
+
+Not apologise, and not rewind. A block that has been spoken is now part of the scene, and treating it as a mistake to be undone costs more than the block did.
+
+The move is to make the refusal itself the offer. "No, we are not in a hospital" is a denial and it is also information: this person is insisting on something, at speed, about a place. [Retrospective justification](/practice/vocabulary/justification) is the mechanism — the line does not get taken back, it gets a reason, and the reason is usually more interesting than whatever was originally proposed.
+
+Which is the practical reason not to build a habit of policing yourself mid-scene. Watching for your own blocks in real time is `internal-computation` wearing a useful-sounding name, and it costs the reception that would have prevented the next one.
 
 ## Specific sources
 
