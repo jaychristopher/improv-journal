@@ -4,6 +4,7 @@ title: Editing
 type: technique
 status: draft
 tags: [techniques, intermediate, structure, show-craft, ensemble]
+aliases: ["Sweep edit", "Wipe"]
 links:
   - { id: scene-structure, relation: extends }
   - { id: game-of-the-scene, relation: extends }

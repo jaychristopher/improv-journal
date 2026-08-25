@@ -4,6 +4,7 @@ title: Playing Against Type
 type: technique
 status: draft
 tags: [techniques, character, subversion, advanced, pattern]
+aliases: ["Against type"]
 links:
   - { id: character, relation: extends }
   - { id: status, relation: extends }
@@ -23,7 +24,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Playing Against Type is subverting the audience's expectations at the character level. The tough guy who is tender. The librarian who is dangerous. The child who is wise. The drill sergeant who is afraid. Playing against type creates character depth through the gap between what the audience expects and what the performer delivers.

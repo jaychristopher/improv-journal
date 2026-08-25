@@ -4,6 +4,7 @@ title: Wimping
 type: antipattern
 status: draft
 tags: [antipatterns, johnstone, offers, avoidance]
+aliases: ["Hedging"]
 links:
   - { id: blocking, relation: extends }
   - { id: yes-and, relation: contrasts }
@@ -17,7 +18,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Wimping is accepting an offer and adding nothing to it. Johnstone's term for the politest way to stop a scene, and the hardest failure to see from inside it, because nothing was refused and everybody was agreeable throughout.

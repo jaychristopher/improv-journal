@@ -4,6 +4,7 @@ title: Model of Their Model
 type: insight
 status: draft
 tags: [insights, epistemology, beyond-stage, perception, listening, theory-of-mind]
+aliases: ["Theory of mind"]
 links:
   - { id: meaning-is-relational, relation: requires }
   - { id: active-listening, relation: extends }

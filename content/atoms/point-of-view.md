@@ -4,6 +4,7 @@ title: Point of View
 type: definition
 status: draft
 tags: [definitions, character, scene-work, UCB]
+aliases: ["POV"]
 links:
   - { id: character, relation: requires }
   - { id: game-of-the-scene, relation: extends }
@@ -18,7 +19,7 @@ links:
   - { id: ref-hines-substack, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Point of View is the filter through which a character sees everything — their specific, emotionally loaded lens on reality. UCB's core character concept.

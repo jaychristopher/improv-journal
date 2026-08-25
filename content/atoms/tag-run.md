@@ -4,6 +4,7 @@ title: Tag Run
 type: technique
 status: draft
 tags: [techniques, editing, harold, game, advanced]
+aliases: ["Tag-out"]
 links:
   - { id: editing, relation: extends }
   - { id: game-of-the-scene, relation: extends }
@@ -19,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 A rapid sequence of tag-outs exploring one game or pattern across multiple contexts. One player (or the game itself) remains constant while scene partners are tagged out and replaced in quick succession. Each new scene transplants the same pattern into a new scenario, heightening with each iteration.

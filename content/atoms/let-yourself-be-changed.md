@@ -4,6 +4,7 @@ title: Let Yourself Be Changed
 type: technique
 status: draft
 tags: [techniques, beginner, principles, adaptability, vulnerability]
+aliases: ["Being changed"]
 links:
   - { id: be-changeable, relation: illustrates }
   - { id: steering, relation: contrasts }

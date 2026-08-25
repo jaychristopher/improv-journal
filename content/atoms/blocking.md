@@ -4,6 +4,7 @@ title: Blocking
 type: antipattern
 status: validated
 tags: [fundamentals, antipatterns, umbrella-concept]
+aliases: ["Denial"]
 links:
   - { id: yes-and, relation: contrasts }
   - { id: accepting-the-offer, relation: contrasts }

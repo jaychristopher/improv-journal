@@ -4,6 +4,7 @@ title: Elevating
 type: technique
 status: draft
 tags: [techniques, intermediate, principles, ensemble, generosity]
+aliases: ["Gifting"]
 links:
   - { id: be-supportive, relation: illustrates }
   - { id: bulldozing, relation: contrasts }

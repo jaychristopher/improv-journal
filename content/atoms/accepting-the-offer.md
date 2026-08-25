@@ -4,6 +4,7 @@ title: Accepting the Offer
 type: technique
 status: draft
 tags: [techniques, principles, data-acceptance, fundamentals]
+aliases: ["Acceptance"]
 links:
   - { id: be-positive, relation: illustrates }
   - { id: yes-and, relation: extends }

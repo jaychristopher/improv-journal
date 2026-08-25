@@ -4,6 +4,7 @@ title: Backline Craft
 type: technique
 status: draft
 tags: [techniques, ensemble, show-craft, harold, advanced]
+aliases: ["Backline", "Back line"]
 links:
   - { id: active-listening, relation: requires }
   - { id: ensemble, relation: requires }
@@ -18,7 +19,7 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-24"
 ---
 
 Backline Craft is what you do when you're NOT in the scene — standing at the back or sides of the stage, watching, tracking patterns, and preparing to support. The backline is not a rest area. It is an active station of observation and readiness.
