@@ -52,7 +52,7 @@ The Do-Feel-Say sequence is the body-first mechanism that *produces* commitment.
 
 Commitment to a choice doesn't mean rigidity. You commit fully to this moment's truth, and when the scene shifts, you commit fully to the new truth. Commitment and adaptability are not opposites — they're the same muscle. The failure on one side is hedging (under-commitment). The failure on the other is bulldozing (over-commitment that refuses to yield). TJ Jagodowski: "I'm completely committed to what's true right now, and if what's true changes, I'm completely committed to that."
 
-For Del Close, commitment was the engine of heightening — the willingness to hit the unusual thing *again*, harder. Without commitment, pattern never emerges. The game of the scene depends on players who are willing to go further, not players who are hedging their bets.
+For [Del Close](/del-close), commitment was the engine of heightening — the willingness to hit the unusual thing *again*, harder. Without commitment, pattern never emerges. The game of the scene depends on players who are willing to go further, not players who are hedging their bets.
 
 Committed choices read as high status (Johnstone). They send clear signals (your partner knows what to build on). And they create path dependence (irreversibility) — once you've committed, the scene has a direction that cannot be uncommitted. This is why bravery is the prerequisite: commitment sustains what initiation starts.
 

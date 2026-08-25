@@ -36,7 +36,7 @@ The first seven principles are all individual commands — how should *I* proces
 
 You can follow every other principle and still play selfishly. You can accept offers (Be Positive), stay present (Be Present), value surprises (Be Thankful), send clear signals (Be Honest), keep it simple (Be Simple), act boldly (Be Brave), and let yourself be changed (Be Changeable) — all while making yourself the center of every scene. Be Supportive is the principle that orients all of that energy outward.
 
-Del Close and Charna Halpern in *Truth in Comedy*: *"The only star in improv is the ensemble itself; if everyone is doing his job well, then no one should stand out. The best way for an improviser to look good is by making his fellow players look good."*
+[Del Close](/del-close) and Charna Halpern in *Truth in Comedy*: *"The only star in improv is the ensemble itself; if everyone is doing his job well, then no one should stand out. The best way for an improviser to look good is by making his fellow players look good."*
 
 Del Close: *"If we treat each other as if we are geniuses, poets and artists, we have a better chance of becoming that on stage."*
 

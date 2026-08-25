@@ -31,7 +31,7 @@ When something fails, a gap opens between expectation and reality. Unskilled per
 
 ## Del Close's "follow the fear"
 
-The moments performers want to avoid — the uncomfortable, the strange, the failing — are exactly where the interesting material lives. When a scene is dying, the impulse is to add more (more jokes, more plot, more energy). Close's counter-intuitive instruction: slow down, commit harder to what's already there, or follow the most dangerous thread. Documented in *Truth in Comedy* and in oral histories of Close's teaching at iO.
+The moments performers want to avoid — the uncomfortable, the strange, the failing — are exactly where the interesting material lives. The instruction is [Del Close](/del-close)'s, and it is the most quoted thing he said. When a scene is dying, the impulse is to add more (more jokes, more plot, more energy). Close's counter-intuitive instruction: slow down, commit harder to what's already there, or follow the most dangerous thread. Documented in *Truth in Comedy* and in oral histories of Close's teaching at iO.
 
 ## Susan Messing's approach
 
