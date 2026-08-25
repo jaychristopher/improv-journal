@@ -20,7 +20,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 The concept of first, second, and third beats in a Harold — how scenes recur and transform across the show. Each beat has a distinct function, and the progression from first to third is the arc that gives a Harold its shape.
@@ -49,6 +49,24 @@ Group games punctuate and divide the piece. After first beat and after second be
 ## The progression
 
 Beat one plants seeds. Beat two grows them. Beat three reveals they were all in the same garden.
+
+## Beats are a Harold convention, not a law of longform
+
+Worth stating early rather than in a footnote, because the vocabulary above is often taught as though it described improv itself.
+
+Montage, La Ronde, Deconstruction, Armando and organic freeform all work without beat structure, and several were built specifically to avoid it. European and Australian longform traditions have developed at length without adopting it. None of that is a fringe position — it is most of the form's territory outside one lineage.
+
+### What the structure is actually solving
+
+Beats answer a coordination problem rather than an artistic one. A cast of eight, improvising for half an hour, needs some shared expectation of when a world will return and roughly what should happen when it does. Without that, either everybody protects their own scene or nobody brings anything back.
+
+First, second and third supply exactly that: a common assumption about recurrence, agreed in advance so it does not have to be negotiated live. Which is why a duo needs none of it, and why forms with a single continuous through-line need none of it either.
+
+### The cost of taking it as universal
+
+Held as a description of how improv works, the structure produces the most recognisable failure in student Harolds — a second beat that happens because it is time for a second beat rather than because the world had anything left. The scene is dutiful, everybody knows it, and nobody can object without appearing to have missed the form.
+
+The useful version is narrower. Beats describe what an audience can follow when several worlds are running at once, and they are worth knowing precisely so you can tell when you are not in that situation.
 
 ## Specific sources
 

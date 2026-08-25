@@ -18,7 +18,7 @@ links:
   - { id: ref-ucb-manual, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-22"
+updated: "2026-08-25"
 ---
 
 Support Moves are what you do when you're NOT in the scene. Backline behavior is where ensemble is built or broken — your most important work in a show may happen when you're off stage.
@@ -48,6 +48,24 @@ The hardest support move is making no move at all. Napier: "If you walk on stage
 ## How backline listening feeds the show
 
 The backline is where group mind is tangibly built. When every performer actively tracks every scene, the ensemble develops a shared vocabulary — details, themes, patterns — that enables callbacks across scenes, thematic connections between unrelated beats, and group games that feel coherent rather than random. Del Close called this "finding the connections" — the Harold isn't three separate storylines but one interconnected web. The backline's attention is the mechanism that weaves it.
+
+## Support without a backline
+
+Everything above assumes somebody is standing at the side of the stage. In a duo there is nobody there, and duos are not doing less supporting.
+
+What happens instead is that support stops being a set of named moves and becomes something folded into ordinary scene work. Yielding focus, playing the straight one, handing your partner the move that makes the pattern theirs — all of it happens inside the scene, performed by the person you are also in the scene with. *Speed of Life* describes this at length without ever using the term, because in a two-person form there is nothing to distinguish support from playing.
+
+### Which is the more accurate way round
+
+The backline framing makes support look like a role. It is better understood as a **disposition** that a large cast happens to make visible: with seven people on stage somebody must be watching rather than playing, so the behaviour acquires a name and a position to be performed from.
+
+Shrink the cast to two and the behaviour does not disappear — it stops being separable. That suggests the UCB and Harold treatment is one structural expression of a general principle rather than the principle itself, which matters for anybody trying to apply this off stage, where there is no backline and never was.
+
+### What the ensemble version still adds
+
+The named moves are not merely a large-cast artefact, though. Having a vocabulary for them is what lets a group of eight coordinate without discussing it, and lets a teacher give a note more useful than "support each other more".
+
+A pair does not need that and pays nothing for its absence. A cast that lacks it tends to produce scenes where two people play and five wait, which is the failure the vocabulary exists to name.
 
 ## Specific sources
 
