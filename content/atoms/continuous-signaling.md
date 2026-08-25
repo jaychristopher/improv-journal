@@ -37,6 +37,26 @@ But continuous signaling is not only a minefield — it is the entire engine of 
 
 This law means you cannot opt out of participation. You can only choose between conscious signaling and unconscious signaling. The principles are a framework for making your signals intentional.
 
+## The four channels, and which one is believed
+
+The channels are listed above as though they carry equal weight. They do not, and the order is most of what makes this law usable.
+
+When they disagree, the physical wins. Somebody saying "no, that's a great idea" with a flat face and folded arms has communicated refusal, and everybody in the room knows it, including them. The verbal channel is the only one under reliable deliberate control, which is precisely why it is trusted least — a receiver discounts it in favour of the channels they assume you are not managing.
+
+Temporal is second and the most underrated of the four. The length of a pause before an answer routinely says more than the answer, and it is very hard to fake in real time: a considered delay and a reluctant one look different, and the difference is legible to people who could not begin to explain how they read it.
+
+Spatial is third. Where you stand relative to somebody, whether your body is turned toward them, how much room you take — this is the channel `status` runs on, and it operates continuously whether or not anybody is speaking.
+
+Vocal is fourth and still beats the words themselves. Tone survives conditions that destroy content: you can be too far away to hear a conversation and still know exactly how it is going.
+
+## What you can and cannot control
+
+You cannot stop signalling, so "signal less" is not an available instruction. Standing very still and saying nothing is a strong, specific signal, and usually a worse one than whatever you were trying to avoid.
+
+What is controllable is the gap between what you mean and what arrives — and that is a craft problem rather than a willpower one. It narrows by making signals unambiguous, which is what `be-simple` and `be-honest` amount to at the level of behaviour.
+
+The practical consequence is that an unclear signal is never neutral. It gets read as something, and under uncertainty a room tends to select the least generous available reading — a blank face becomes disapproval, a delay becomes reluctance, stillness becomes judgement. `commitment` is not enthusiasm, in this account. It is the removal of the ambiguity that would otherwise be resolved against you.
+
 ## The academic objection, and why it does not rescue you
 
 "You cannot not communicate" comes from Watzlawick, Beavin and Jackson (1967), and it has been formally disputed — worth knowing, because the dispute clarifies what the claim is actually good for.
