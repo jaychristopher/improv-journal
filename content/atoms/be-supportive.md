@@ -6,6 +6,7 @@ status: draft
 tags: [principles, fundamentals, ensemble, generosity]
 links:
   - { id: elevating, relation: extends }
+  - { id: endowment, relation: extends }
   - { id: bulldozing, relation: contrasts }
   - { id: blind-offer, relation: illustrates }
   - { id: gift-giving, relation: illustrates }
@@ -45,6 +46,26 @@ Scott AdSit: *"Your job is to support your partner."*
 The mechanism is a virtuous cycle: if everyone is working to make everyone else look good, nobody needs to protect themselves. Trust grows because it's earned continuously — each demonstration of support is a deposit in the trust bank. Risk increases because the safety net is real. Discovery accelerates because fear decreases.
 
 Mick Napier challenges this framing: in *Improvise*, he argues that a strong, committed individual choice *is* support — it gives your partner something real to respond to. Waiting passively for your partner's needs is not generosity; it's a burden. The supportive move is sometimes to lead decisively, not to defer. This is an important corrective: support does not mean deference.
+
+## What it looks like in a scene
+
+The categories above are useful and abstract. The moves are small and specific, and there are only a few of them.
+
+Endow them with something. `endowment` is the fastest supportive act available — telling your partner who they are, what they are good at, what they just did — because it hands them material they did not have to invent under pressure.
+
+Take the smaller job. If your partner has committed to something large, the useful contribution is usually the ordinary person reacting to it, not a second large thing. Two people both being remarkable is not a scene.
+
+Make their choice retroactively correct. When somebody has done something that does not obviously fit, the supportive move is to supply the reason it fits rather than to work around it. This is the whole of `elevating`: treating what happened as deliberate and building on the assumption.
+
+Ask the question only they can answer. Not any question — a question about the thing they established, which puts them back in charge of their own idea rather than redirecting to yours.
+
+## Supporting somebody who is struggling
+
+This is the case the principle is really for, and the one most accounts skip. A partner who is flailing does not need encouragement, which reads as pity from the inside, and does not need rescuing, which confirms the diagnosis.
+
+They need the difficulty removed rather than the spotlight. Take over the part of the work that requires invention — supply the location, name the relationship, state what is happening — and leave them something concrete to do inside it. Reacting to a specific thing is far easier than generating one, and the difference between a performer who is drowning and the same performer two lines later is very often nothing more than having been handed something solid.
+
+What does not help is going quiet to give them room. Space is the thing they already have too much of, and `active-listening` here means noticing they are out of material rather than waiting politely for it to arrive.
 
 ## The critical distinction from Be Positive
 
