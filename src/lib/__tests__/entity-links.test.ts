@@ -7,11 +7,11 @@ const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
 
-/** The targets PERSON_MAP points at, read from the source so the two stay in step. */
+/** The targets ENTITY_MAP points at, read from the source so the two stay in step. */
 function personTargets(): string[] {
   const src = fs.readFileSync(path.join(process.cwd(), "src", "lib", "content.ts"), "utf-8");
-  const block = /const PERSON_MAP[\s\S]*?\n\];/.exec(src);
-  if (!block) throw new Error("PERSON_MAP not found in content.ts");
+  const block = /const ENTITY_MAP[\s\S]*?\n\];/.exec(src);
+  if (!block) throw new Error("ENTITY_MAP not found in content.ts");
   return [...block[0].matchAll(/"(\/[^"]+)"/g)].map((m) => m[1]);
 }
 
@@ -29,7 +29,7 @@ function personTargets(): string[] {
  * page must be linked from a substantial number of others. Before the linker,
  * Keith Johnstone was named on 80 pages and linked from 5.
  *
- * The second assertion is the runaway check. linkPeople stops after the first
+ * The second assertion is the runaway check. linkEntities stops after the first
  * match on a page and skips pages that already link the target, so it can
  * contribute at most one. A page can still reach two honestly — ref-spolin
  * links Viola Spolin from its opening pointer and again from the paragraph on

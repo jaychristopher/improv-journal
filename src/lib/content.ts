@@ -215,26 +215,41 @@ function linkCitations(htmlStr: string, currentUrl: string | null): string {
  * one's citation. Nothing in the current map depends on that, but the map is
  * appended to by hand and the failure would be silent.
  */
-// ─── Person auto-linking ────────────────────────────────────────────────────
+// ─── Named-entity auto-linking ──────────────────────────────────────────────
 // Book titles reach their library entry through SOURCE_TITLE_MAP and concepts
-// reach their atom through backticks. A person's name had no such route, and
-// the people this site is largely about are named constantly: measured on the
-// build, Keith Johnstone appeared on 80 pages and was linked from 5, Viola
-// Spolin on 74 and linked from 36, Del Close on 56 and linked from 52.
+// reach their atom through backticks. Names had no such route, and the people
+// and places this site is largely about are named constantly. Measured on the
+// build: Keith Johnstone appeared on 80 pages and was linked from 5, UCB on
+// 102 and linked from 5, iO on 42 and linked from 4, the Annoyance on 35 and
+// linked from 5.
 //
-// Only people with a page of their own are listed. Mick Napier is named on 41
-// pages and Charna Halpern on 20, and both are deliberately absent: what this
-// site holds is the school each of them founded, not a page about them, and
-// pointing a person's name at an institution asserts something slightly false.
+// Only entities with a page of their own are listed, and the entry has to be
+// about the thing the name denotes. Mick Napier is named on 41 pages and
+// Charna Halpern on 20, and both are deliberately absent: what this site holds
+// is the school each of them founded, not a page about them, and pointing a
+// person's name at an institution asserts something slightly false. The
+// institutions themselves have no such problem — /traditions/ucb is a page
+// about UCB.
+//
+// Second City is named on 24 pages and has no page here, so it is not listed
+// rather than being pointed somewhere approximate.
+//
+// Matching is case-sensitive, which is load-bearing for two of these. "iO" is
+// a proper noun and "io" inside another word is not, and "Annoyance" is the
+// theatre while "annoyance" is an ordinary English noun. Every capitalised
+// occurrence of both in this corpus was checked before they were added.
 
-const PERSON_MAP: [RegExp, string][] = [
+const ENTITY_MAP: [RegExp, string][] = [
   [/Keith Johnstone/, "/traditions/johnstone"],
   [/Viola Spolin/, "/viola-spolin"],
   [/Del Close/, "/del-close"],
+  [/UCB/, "/traditions/ucb"],
+  [/Annoyance/, "/traditions/annoyance"],
+  [/iO/, "/traditions/close"],
 ];
 
 /**
- * Link the first mention of a person, once per page.
+ * Link the first mention of a named entity, once per page.
  *
  * Once, not every occurrence, which is where this differs from linkSources. A
  * book title appears two or three times in a page; these names appear in
@@ -250,9 +265,9 @@ const PERSON_MAP: [RegExp, string][] = [
  * skipped too: an anchor in an h2 is legitimate but it is not what any of
  * these pages want.
  */
-function linkPeople(htmlStr: string, currentUrl: string | null): string {
+function linkEntities(htmlStr: string, currentUrl: string | null): string {
   let result = htmlStr;
-  for (const [pattern, url] of PERSON_MAP) {
+  for (const [pattern, url] of ENTITY_MAP) {
     if (url === currentUrl) continue;
     // The page already sends the reader there in its own words. Seven pages
     // open with a hand-written line like "For the school it founded, see the
@@ -742,7 +757,7 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
       content,
       html: normaliseGeneratedIds(
         rewriteLegacyInternalLinks(
-          linkPeople(
+          linkEntities(
             linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
             currentUrl,
           ),
