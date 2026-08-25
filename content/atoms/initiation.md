@@ -44,7 +44,7 @@ Three names for the same moment, and the two everyday ones quietly mislead.
 
 An initiation is the first `offers`, and an offer does not have to be verbal. Walking on already doing something is an initiation. So is where you stand, how you carry yourself, and who you look at. Several of the strongest openings contain no dialogue at all — the sections below on entering already doing and leading with the body are describing initiations that happen before anybody speaks.
 
-The practical consequence is worth stating plainly. If you are stuck for an opening line, you have handed yourself the harder version of the problem. Do something rather than say something, and the line arrives on its own once there is a situation to speak into. `first-line-drill` trains the moment directly, and it works by making the line disposable rather than good.
+The practical consequence is worth stating plainly. If you are stuck for an opening line, you have handed yourself the harder version of the problem. The same trap is waiting off stage, where the search for a good enough first question is what makes starting a conversation feel impossible — [conversation starters](/conversation-starters) sorts openers by how easy they are to answer rather than by how interesting they sound. Do something rather than say something, and the line arrives on its own once there is a situation to speak into. `first-line-drill` trains the moment directly, and it works by making the line disposable rather than good.
 
 ## Enter already doing
 

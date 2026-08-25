@@ -99,7 +99,7 @@ New city, remote job, life stage that scattered everyone — the conditions have
 
 Conditions do most of the work, but some of it is skill, and this site treats those as practisable rather than innate.
 
-- **Opening** — starting a conversation with someone you do not know: [how to make small talk](/how-to-make-small-talk).
+- **Opening** — starting a conversation with someone you do not know: [how to make small talk](/how-to-make-small-talk). For the openers themselves rather than the mode, [conversation starters](/conversation-starters).
 - **Receiving** — what makes people want to keep talking to you: [how to be a good listener](/how-to-be-a-good-listener).
 - **Being seen** — moving past the pleasant surface: [how to be vulnerable](/how-to-be-vulnerable).
 - **Self-consciousness** — if the barrier is what you assume people are thinking: [how to be less awkward](/how-to-be-less-awkward).

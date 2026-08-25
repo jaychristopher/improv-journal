@@ -161,7 +161,7 @@ What genuinely differs is capacity. `be-present` is expensive, group settings co
 
 **Stay in it.** `no-backspace-scene` permits no retraction or qualification, which trains the habit of letting something stand instead of tidying it away.
 
-For starting a conversation and ending one well, both of which are separate problems, see [how to make small talk](/how-to-make-small-talk).
+For starting a conversation and ending one well, both of which are separate problems, see [how to make small talk](/how-to-make-small-talk). If the specific difficulty is the first question, [conversation starters](/conversation-starters) is the list of openers and the test for judging one.
 
 ## The One Thing to Remember
 
