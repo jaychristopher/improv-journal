@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
+import { TableOfContents } from "@/components/TableOfContents";
 import { UpdatedOn } from "@/components/UpdatedOn";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import { contentsFor } from "@/lib/headings";
 import type { ExternalLink } from "@/lib/schema";
 import {
   atomDescription,
@@ -135,6 +137,11 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
           </div>
         )}
       </header>
+
+      {/* Thirteen of the 32 entries clear the three-heading floor now that
+          their sections are headings rather than bold labels. contentsFor
+          returns nothing below it, so the shorter entries render no list. */}
+      <TableOfContents headings={contentsFor(atom.html)} />
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"
