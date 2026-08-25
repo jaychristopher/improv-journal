@@ -202,6 +202,24 @@ By this point the estimate has moved. These probe values without asking for a su
 - What would you do more of if the day had more hours?
 - What is something you protect time for?
 
+## Get to Know You Questions Are a Different Job
+
+Worth separating, because the two get used interchangeably and they are solving different problems.
+
+An icebreaker lowers the temperature of a room right now. It has done its job the moment people are talking, and nobody needs to remember any of it afterwards. A **get to know you round** — the first day of a class, a new cohort, somebody joining a team — is doing something more durable. Everyone answers the same question, in order, and the output is a roster of facts the group will actually use over the following weeks.
+
+That difference decides which questions are worth asking. Getting to know you questions should produce something **reusable**: a hook somebody can pick up in a corridor three days later. "What would you do with a completely free Saturday" gives every person in the room a way to start a conversation with anybody else in it. "Would you rather fight one horse-sized duck or a hundred duck-sized horses" is a fine icebreaker and leaves nothing behind, because the answer attaches to nobody.
+
+Three things follow from that.
+
+**Same question, everybody, in a known order.** Variety is an icebreaker virtue. Here it is a fault — if people answer different questions you cannot compare anything, and comparison is what makes the answers stick.
+
+**Circumstance beats personality.** "What did you nearly do instead of this" tells the room more, and costs the answerer less, than "describe yourself in three words". Self-classification is the format that most reliably produces nothing.
+
+**One round, not a series.** The temptation on a first day is to keep going because it is working. What it is doing is spending the goodwill you will want for the actual work, and the group remembers a round that ended early far more fondly than one that ran twice as long.
+
+The opening questions and the ones about how somebody got here are the strongest source for this — both produce answers that carry, which is the whole requirement.
+
 ## Questions for a Group or a Party
 
 Different constraint: several people, short attention, nobody wants to be interviewed. These are answerable in a sentence and everybody can join in.
