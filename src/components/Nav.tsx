@@ -33,13 +33,28 @@ const NAV_SECTIONS: NavSection[] = [
       { href: "/practice/vocabulary", label: "Vocabulary" },
     ],
   },
+  /**
+   * Points at /guides rather than /resources.
+   *
+   * /resources is 233 words whose entire content is links to the hubs already
+   * listed below it, and it was taking two of the nav's slots — the section
+   * href, which the mobile menu renders as a link, and an "Overview" child.
+   * Both are in the server HTML on all 376 pages, so a directory of
+   * directories was sitting between the navigation and the real hubs on every
+   * one of them.
+   *
+   * The section keeps its label and loses the intermediary. /guides is the
+   * largest hub in the group at 2,765 words and was already a child, so this
+   * matches how the other two sections work: the section href is the hub, and
+   * a child repeats it by name. The page itself is untouched and still linked
+   * from the footer, so nothing is orphaned or dropped from the sitemap.
+   */
   {
-    href: "/resources",
+    href: "/guides",
     label: "Resources",
     children: [
-      { href: "/resources", label: "Overview" },
-      { href: "/paths", label: "Learning Paths" },
       { href: "/guides", label: "Guides" },
+      { href: "/paths", label: "Learning Paths" },
       { href: "/listen", label: "Listen" },
       { href: "/traditions", label: "Traditions" },
       { href: "/library", label: "Reading List" },
