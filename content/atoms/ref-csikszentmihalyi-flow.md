@@ -31,6 +31,18 @@ That last one is the reason this is cited here, and it is more precise than the 
 
 The conditions Csikszentmihalyi identifies are also a fair description of a well-run scene: clear goals, immediate feedback, and a challenge matched to skill. That last condition is why the state is unreliable for beginners and why it arrives more often as competence grows, and it is a better explanation than talent for why experienced improvisers look calmer.
 
+## Who it rewards
+
+Teachers and anybody designing difficulty. The useful half of this book is not the description of the state — which most people recognise before reading it — but the claim that it has preconditions you can arrange: clear goals, immediate feedback, and a challenge sitting just above current skill.
+
+A performer reading it for the experience will find it familiar and not very actionable. Somebody deciding what to put in front of a class on Tuesday will find the criteria for pitching an exercise.
+
+### The honest caveat
+
+Two things are worth holding lightly. The evidence is experience sampling — people reporting on their own states when a pager goes off — which is a real method and is not a measurement of the state itself, only of what somebody says about it afterwards.
+
+And the concept has been stretched much further than the book. Flow here is a description of a condition and its preconditions, not a technique for producing one on demand, and the popular usage treats it as something you can decide to enter. The matching of challenge to skill is also far easier to state than to arrange for twelve people at different levels in the same room, which is the actual problem a teacher has.
+
 ## Key concepts drawn from here
 
 - The loss of self-consciousness as the disappearance of self-monitoring, not of awareness

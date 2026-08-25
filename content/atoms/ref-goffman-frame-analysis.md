@@ -28,6 +28,18 @@ The relevance to improvisation is close to exact, which is unusual for a sociolo
 
 He is writing about ordinary life rather than performance, and the transfer runs both ways. His examples are drawn heavily from theatre, cons and games precisely because those are the cases where the framing is deliberate and therefore visible. What improvisers do on purpose in a scene, everyone else is doing accidentally at dinner.
 
+## Who it rewards
+
+Anybody who wants a vocabulary for what two people are doing in the seconds before a scene is about anything. Improv has words for offers and for the game and almost none for the prior question of what kind of event this is, which is what frames name.
+
+It also rewards a reader interested in why breaking a frame is so much worse than being wrong inside one — the thing that makes a scene collapse rather than wobble.
+
+### The honest caveat
+
+It is long, dense, and organised as an accumulation rather than an argument. Goffman keeps subdividing — frames within frames, keyings of keyings — and a reader looking for a method will find a taxonomy that does not resolve into instructions. Nothing here converts into a note you could give somebody after a scene.
+
+The prose is 1974 sociology and reads like it. Most improvisers who benefit from this book do so through the first two chapters and the theatrical examples, and abandoning it after those is a defensible way to read it rather than a failure to finish.
+
 ## Key concepts drawn from here
 
 - The primary framework — the schema that decides what an event even is

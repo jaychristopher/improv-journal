@@ -31,6 +31,18 @@ That maps directly onto what a class is for. An improv exercise is a small, surv
 
 The caution worth keeping is about register. Brown is writing about disclosure between people who know each other, and improv vulnerability is performed in front of strangers with an existential buffer that ordinary life does not provide. The mechanism transfers; the stakes do not, and pretending otherwise oversells what an exercise can do.
 
+## Who it rewards
+
+Anybody responsible for a room rather than for their own performance. The mechanism it describes — courage accumulated through survivable exposure inside a container — is what a class is, and the book states it more clearly than the improv literature does.
+
+Readers looking for craft will find none. This is not a book about doing anything on a stage.
+
+### The honest caveat
+
+It is qualitative research and is frequently cited as though it were experimental. The findings come from coding interviews, which is a legitimate method for generating an account of how people describe shame and a different thing from establishing what shame does. Where this site leans on it, it is leaning on a well-made description, not on a measured effect.
+
+The register caution above is the other half, and it cuts both ways. Brown writes about disclosure between people with an ongoing relationship, where the cost of being mishandled is real and lasting. Improv vulnerability is performed in front of strangers inside a fiction, which makes it far cheaper — useful as practice for the real thing and not the same act.
+
 ## Key concepts drawn from here
 
 - Courage as accumulated practice rather than a fixed trait
