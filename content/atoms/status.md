@@ -22,7 +22,7 @@ links:
   - { id: playing-against-type, relation: extends }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Status is the relative social position a character occupies in a scene, expressed through behavior rather than title or rank. A concept formalized by Keith Johnstone as a core engine of dramatic interaction.
@@ -58,6 +58,12 @@ Reaching for complexity to appear smart, which actually reads as low status (rea
 Johnstone's insight: most people have a habitual status they default to. Becoming aware of your default — and learning to play the opposite — is one of the most transformative improv skills. This is Be Changeable applied to identity: yielding your default power position requires courage.
 
 A permanently low default has a name outside the theatre. [People pleasing is that default hardened into a policy](/how-to-stop-people-pleasing) — lowering on every transaction regardless of what the transaction actually called for.
+
+## The schools that set status aside
+
+Worth knowing that this vocabulary is not universal, because a performer can be excellent without it and never notice the gap.
+
+The UCB manual has no chapter on status, and Napier's *Improvise* does not centre it either. The American longform tradition largely replaced Johnstone's status lens with game mechanics, so a performer trained entirely in that lineage has a full diagnostic vocabulary that simply does not include this one. `status-dynamics` sets out the disagreement in full and what each vocabulary can and cannot see.
 
 ## Specific sources
 

@@ -20,7 +20,7 @@ links:
   - { id: fear-of-failure, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 Judgment (Mid-Scene Evaluation) is the shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.
@@ -45,6 +45,18 @@ Judgment lives in the face first — a micro-squint, a lip press, a chin tuck, s
 ## The reframe
 
 A mistake is just an offer you didn't expect. The only bad move is the one you refuse to build on. The practiced recovery for judgment is `gratitude-reframing` — the cognitive interrupt that converts evaluation into reception before the judgment loop completes.
+
+## Evaluation is not the problem
+
+Read carelessly, this page argues against ever assessing anything, and that is not the claim.
+
+Spolin built evaluation directly into her method — the game runs, then the group examines what happened. Johnstone's Theatresports has literal judges holding up scores. Neither tradition is confused about this, and neither treats assessment as a contaminant.
+
+The distinction is **when**. Judgment during action competes for the capacity the action needs, and its output arrives too late to be useful anyway: a verdict on the line you just said cannot improve the line you are about to say, and forming it costs you the reception that could have. Judgment after action has no such competition. Nothing is running, the whole scene is available to look at, and the assessment can be as harsh as it is accurate.
+
+So the faculty is not the pathology. Discernment is what lets a performer notice a pattern, know when a scene is finished, and tell a good note from a flattering one, and a performer without it does not improve.
+
+What this page describes is the same faculty running at the wrong moment — a real-time commentary that produces verdicts nobody can act on, in the seconds when acting was the only thing required.
 
 ## Specific sources
 

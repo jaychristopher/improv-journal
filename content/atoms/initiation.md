@@ -29,7 +29,7 @@ links:
   - { id: first-line-drill, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 **Technique for: Be Brave**
@@ -79,6 +79,18 @@ Your first instinct is usually the right initiation. Your second thought is the 
 The initiator proposes; the receiver completes. The receiver's interpretation IS the scene — not the initiator's intent. If you say "You're my brother" and your partner's body language says "I'm terrified of you," the scene is about a terrifying brother, regardless of what you planned. This is why initiation requires listening and support, not just bravery: you offer something, then you yield to what your partner makes of it.
 
 The cleanest test of all this is [Bus Stop](/practice/formats/bus-stop), where there is no scene to join and no offer to build on. The arriving player has to be somebody the instant they step on, and a vague entrance produces nothing to react to.
+
+## Johnstone's objection: do not think up an offer
+
+Everything above assumes you are bringing something in. Johnstone's instruction in *Impro* is close to the reverse.
+
+His advice is never to think up an offer, but to assume that one has already been made. On that account initiation is not importing a choice from outside the scene — it is noticing what the stage already contains and treating it as given. The lights, the other person's posture, whatever they did while walking on: something has already happened, and the job is to accept it rather than to supply an alternative.
+
+This lands directly against the Napier and Hines lineage that produced most of this page, where entering with something is the point and the failure being solved is the performer who arrives empty and waits.
+
+The two schools are answering different failures, which is why both instructions are correct in the room each was written for. Told to bring something, a hesitant performer stops waiting. Told to assume an offer exists, a performer who arrives with a fully-formed idea stops steamrolling the scene that was already starting.
+
+The synthesis most working improvisers land on is that the first offer should be *specific* but not *imported*. Enter already doing something, and let what it is be determined by what is in front of you rather than by what you thought of in the wings.
 
 ## Specific sources
 

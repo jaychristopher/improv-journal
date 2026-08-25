@@ -20,7 +20,7 @@ links:
   - { id: mirroring, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 Warm-Up is the ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life mode to performance mode.
@@ -53,6 +53,28 @@ Which category to open with is not a free choice — the ordering is covered in 
 ## Spolin's foundational insight
 
 Warm-up games aren't preliminary to the real work — they ARE the methodology. Each game creates a "point of concentration" that occupies the analytical mind while the spontaneous mind is freed to play. The games are democratic (everyone plays, no one directs), and the purpose is not to "win" but to solve the shared problem the game poses. The entire tradition of improv warm-ups descends from Spolin's theater games.
+
+## What familiarity substitutes for, and what it does not
+
+Some experienced performers skip structured warm-ups and talk to each other instead. The argument is that familiarity and trust already supply what the games are for, and it is worth testing that against the four purposes above rather than answering it in general.
+
+### Ensemble baseline — largely yes
+
+A group that has played together for years arrives closer to a shared state than any twenty-minute game could produce, and casual conversation genuinely does some of this work.
+
+### Rehearsing vulnerability — yes, for that group
+
+People who have already looked foolish in front of each other for a decade do not need a game to establish that it is survivable.
+
+### Lowering the self-monitor — not reliably
+
+This is a state shift rather than a relationship, and it does not travel with familiarity — the performer who came straight from a difficult day at work arrives in daily-life mode regardless of who else is in the room.
+
+### Physical release — no
+
+Shoulders, breath and jaw do not care how long you have known the cast, and nothing about being comfortable with your ensemble unlocks a tight jaw.
+
+Which suggests the honest version. The skippers are right that two of the four are covered by familiarity, and the two that are not are the two that show up in the first ten minutes of a show — thin voices, rushed pacing, and performers still watching themselves.
 
 ## Specific sources
 
