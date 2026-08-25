@@ -23,7 +23,7 @@ primary_cta_target: mirroring
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 # Theatre Games: What They Are and How to Run Them
@@ -165,3 +165,35 @@ Theatre games work with children for the same reason they worked for Spolin's or
 **Avoid the exposing ones early.** `emotional-honesty-scene` and `status-transfer` are for groups with established trust. Run them too soon and you get compliance on the surface and withdrawal underneath.
 
 For adults new to this, the same games are the standard entry point — and the same warning applies. The instinct to entertain is stronger in adults, and it is the main thing that gets in the way.
+
+## Questions People Ask About Theatre Games
+
+### Do you need to be an actor to play theatre games?
+
+No, and the method was built for people who were not. Spolin developed it for community groups and for children at Hull House, years before it reached a theatre, and every game is constructed so that solving the problem is the whole task — there is no character to invent and nobody is being watched for whether they are interesting.
+
+The people who find it hardest are often the ones with some stage training, because they arrive wanting to give a performance and the games have no slot for one.
+
+### How many people do you need?
+
+Six is the practical floor for the circle games and they hold up to about fifteen. Below six the circle stops being a circle: everyone is visible all the time, which removes the cover that makes a beginner willing to try something.
+
+Two or three people can still work. The paired material — `mirroring`, space work, anything built on watching one other person — needs a partner rather than an ensemble, and it is the better half of the method to start with anyway.
+
+### How long should a session run?
+
+Forty-five minutes to an hour with a group new to it, and less with children. Attention is the thing being trained, so a session that runs past the point where attention goes is teaching the opposite of what it intended.
+
+Stopping while people still want one more round is not a compromise. It is the reason they come back.
+
+### Can theatre games be played online?
+
+Some of them, and the rest badly. The paired non-verbal games survive a video call more or less intact, because two faces at close range is roughly the arrangement they already want.
+
+Everything built on a shared physical space does not. The circle games depend on peripheral vision, on being able to move toward somebody, and on the group registering as one object — a grid of rectangles removes all three. If a session has to be remote, run fewer games for longer rather than rotating through the usual set.
+
+### What do you do about somebody who will not join in?
+
+Carry on without them and leave the door open. Refusal in a room like this is rarely obstinacy; it is a reasonable estimate that they are about to be embarrassed in front of people they know, and the estimate is often correct.
+
+Somebody who watches two or three rounds will usually take the fourth, because by then they have seen everybody else be visibly bad at it and survive. Insisting converts the game into a test of compliance, which is precisely the thing it cannot be and still work.
