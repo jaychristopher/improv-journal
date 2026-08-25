@@ -133,6 +133,28 @@ Advice to listen more comes with an implicit claim that more is always better, a
 
 The improv version of this distinction is that listening and contributing are not opposites — the whole point of receiving an offer is to build on it. A scene where one player only receives is as dead as one where nobody does.
 
+## Questions People Ask About Listening
+
+### How do you listen properly to someone you disagree with?
+
+By separating the two jobs, because most people try to do them at once and fail at both. While they are talking, the task is to build an accurate account of what they think — accurate enough that you could state it back and have them accept it. Evaluating it is a second task, and it can wait ninety seconds. What makes disagreement so destructive to listening is that the rebuttal is being drafted live, and drafting consumes the exact capacity reception needs. You are not being open-minded by delaying judgement; you are being efficient, because a rebuttal aimed at what somebody actually said is far better than one aimed at what you assumed by the third sentence.
+
+### What do you say when you have no idea what to say?
+
+Say the thing you noticed. Not a summary and not advice — the specific detail you registered, which is almost always the part they slowed down on. "You said it had been going on since March" is a complete reply and it does more work than anything you could have constructed, because it demonstrates the one thing they wanted to know, which is that the specifics landed. The instinct to have something worthy prepared is what produces the generic response, and a generic response is the clearest possible evidence that you were assembling rather than listening.
+
+### Is it always wrong to interrupt?
+
+No, and treating it as forbidden creates its own failure. An interruption that carries the speaker's own thread forward — finishing an implication, asking about the thing they just glanced past — is often experienced as being heard rather than being cut off. What lands as rudeness is a change of subject, and the reliable test is whether your interruption contains their last sentence or replaces it. The person who never interrupts and never refers back to anything is not the better listener in the room.
+
+### How do you listen to somebody who talks for a very long time?
+
+Stop trying to retain it, which is what makes long talkers exhausting. Attempting to hold twenty minutes of detail in working memory guarantees you lose the whole thing, and the effort is visible as glazing. Track the shape instead — what they keep returning to, where the energy rises, which part they have now said three times. The repeated thing is nearly always the point, and it is usually not the thing they announced at the start. It also gives you the only question worth asking at the end.
+
+### How long does it take to get better at listening?
+
+Faster than most skills, because you are removing something rather than building it. The change people notice in themselves usually arrives within a few conversations of dropping one habit — most often the habit of preparing a response while the other person is still talking. What takes considerably longer is doing it when you are tired, when you disagree, or when you badly want to say your thing. That is not a different skill; it is the same one under load, and load is what makes it feel like it has not improved.
+
 ## Practising It Outside a Conversation
 
 The problem with practising listening in real conversations is that the stakes make it worse: you notice you drifted, feel bad, and the noticing takes more attention than the drifting did.
