@@ -40,6 +40,34 @@ The strongest academic bridge between improv practice and creativity research. S
 
 A trade book built on academic work, which is the reason it reads easily and the reason specialists find it thin. The argument runs the same way throughout: take a phenomenon usually credited to an individual, show the collaborative web underneath it, and generalise. Improv is the opening case rather than an illustration added later, which is unusual and is why the book is worth more to improvisers than its title suggests.
 
+## How to read it
+
+Chapters one and three, and then stop unless the wider argument interests you. The improv material is front-loaded — it is the opening case study rather than a late illustration — and the chapters after it generalise the same claim across other domains, which is where a reader who came for the ensemble question stops getting new information.
+
+It is a trade book built on academic work, so it reads quickly and specialists find it thin. For the use most improvisers have, which is citing something that survives being said to a sceptic, that is the right trade.
+
+## What the group flow conditions actually ask of a room
+
+The conditions listed in chapter three read as unobjectionable until you try to arrange them, at which point each turns out to be a real constraint rather than a nice-to-have.
+
+### Equal participation
+
+The one groups fail most often and least want to hear about. A cast with one player who is markedly stronger is not a candidate for this state, however good that player is — the condition is not fairness, it is that the outcome has to be genuinely uncertain to everybody in it.
+
+### Close listening
+
+Here this means something narrower than attention. It is that each person's next contribution is determined by what just happened rather than by what they arrived intending, which is testable: if a performer's line would have worked equally well thirty seconds earlier, they were not listening in this sense.
+
+### Mutual dependence
+
+The group's product has to be something no member could have made alone. A show where four people take turns doing their own good work is not producing collaborative emergence; it is producing four things in sequence.
+
+### Shared goals, held loosely
+
+The group needs a direction and must not have decided the destination — a set with an agreed ending cannot be surprised by its own material, and the surprise is the phenomenon being described.
+
+Read that way the list stops being a description of a good rehearsal and becomes a fairly demanding specification, which is the honest reading of it.
+
 ## Who it rewards
 
 Anybody who needs the ensemble claim to be defensible in a room that does not care about theatre. Sawyer supplies vocabulary — collaborative emergence, group flow — that survives being said to a sceptical manager, where "group mind" does not.
