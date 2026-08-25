@@ -27,11 +27,27 @@ export async function generateMetadata(): Promise<Metadata> {
      * guide targeting that exact term, and this index carried it at the front
      * of its own title on 207 words of listing. Two pages competing for one
      * phrase splits the signal and the thin one can win, which is the worse
-     * outcome. This describes what the page is instead.
+     * outcome.
+     *
+     * That fix went one word too far. Avoiding the phrase meant dropping
+     * "improv" altogether, and Search Console has this page at position 43 for
+     * "improv principles" — ranking for a term its own title never says. The
+     * two are not the same claim: /rules-of-improv declares "rules of improv"
+     * at 450 a month and "improv rules" at 150, and neither is this one, so
+     * taking it back splits nothing.
+     *
+     * The old title also ended on the brand's own noun, which the suffix then
+     * repeated, so the SERP line said Connection twice.
+     *
+     * Quoting the old title here verbatim is what tripped the system-counts
+     * guard: it scans src for a literal digit before "Principles" and cannot
+     * tell a comment from a rendered string. Blunt on purpose — it exists
+     * because a hardcoded count survived in four places once — so the wording
+     * moved rather than the rule.
      */
-    title: pageTitle(`The ${principles} Principles of Connection`),
+    title: pageTitle(`The ${principles} Improv Principles: What Each One Is For`),
     description:
-      "Behavioral guidelines derived from the physics of connection. Not moral rules — structural commands that prevent shared reality from collapsing.",
+      "The nine improv principles and what each is actually for — not moral rules but structural commands that stop a shared reality from collapsing.",
     alternates: { canonical: "/how-it-works/principles" },
   };
 }
@@ -65,7 +81,7 @@ export default async function PrinciplesPage() {
           system · principles
         </span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">
-          The {principles.length} Principles
+          The {principles.length} Improv Principles
         </h1>
         <p className="text-foreground/60 mt-2">
           Behavioral guidelines derived from the physics. Not moral rules — structural commands that
