@@ -20,7 +20,7 @@ work:
   published: "2003"
   isbn: "1567506771"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **R. Keith Sawyer. *Improvised Dialogues: Emergence and Creativity in Conversation.* Ablex Publishing, 2003.**
@@ -30,6 +30,16 @@ Sawyer recorded improvised performances and analysed the transcripts as conversa
 The central finding is that coherent structure appears in dialogue that nobody planned, and that it appears through mechanisms you can point at in a transcript. Meaning is not deposited in a line by the speaker; it is fixed by what the next person does with it, sometimes several turns later. Sawyer's term for the resulting object is the collaboratively emergent — a thing that exists in the interaction and in neither performer's intention, which is a claim improvisers make constantly and rarely support.
 
 For this site it is the load-bearing citation under two claims that would otherwise be assertions: that meaning is completed by uptake rather than by intent, and that shared reality is maintained turn by turn rather than established once. Both are ordinary observations on stage. This is where they stop being folklore.
+
+## Who it rewards
+
+Somebody who needs a claim on this site to be answerable to something other than a teacher's authority. Two of the load-bearing arguments here — that meaning is completed by uptake, and that coherence is maintained turn by turn — rest on this book, and it is the only place they are demonstrated in transcripts rather than asserted.
+
+It is not written for practitioners. This is an academic monograph addressed to researchers in creativity and discourse analysis, and it reads like one.
+
+**The honest caveat.** Transcript analysis tells you what happened, not how to do it. Nothing here converts into a note you could give somebody after a scene, and a performer reading it for technique will find the mechanisms described with great precision and no instruction attached.
+
+There is also a scope question worth noticing. The data is improvised *performance*, and extending the findings to ordinary conversation is an inference — a reasonable one, and the one this site makes throughout, but an inference rather than something the book establishes.
 
 **Key concepts drawn from here:**
 - Collaborative emergence — structure arising in interaction rather than in any participant's plan

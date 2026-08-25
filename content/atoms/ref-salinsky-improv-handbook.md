@@ -17,7 +17,7 @@ work:
   publisher: "Continuum"
   published: "2008"
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 **Tom Salinsky & Deborah Frances-White. *The Improv Handbook: The Ultimate Guide to Improvising in Comedy, Theatre, and Beyond.* Continuum, 2008.**
@@ -27,6 +27,16 @@ The most complete single-volume survey in the improv literature, and the one tha
 It is organised as a reference rather than as an argument, which is unusual for the form and makes it the practical place to look up mechanics. Short-form games are documented properly — how a game is set up, hosted, and called, which is craft that the long-form literature tends to skip on the grounds that it does not need it. The section on running a show treats hosting as a discipline with its own failure modes rather than as an afterthought before the real work.
 
 It is also the most explicit published source for the CROW framework — Character, Relationship, Objective, Where — which circulates widely in Johnstone-lineage teaching and is rarely written down anywhere citable.
+
+## Who it rewards
+
+Teachers, show-runners and anybody who needs a mechanic written down rather than argued about. If you have to host a short-form show next month and want to know how a game is actually called, this is the book that answers.
+
+It also rewards anybody outside the Chicago inheritance, or suspicious of it. The British and Australian lineages get treated as traditions in their own right rather than as regional variants, which is rarer in this literature than it should be.
+
+**The honest caveat.** Breadth is bought with depth, and the reference organisation means it does not argue a position. A reader wanting a coherent method — a claim about what improv is for and what follows from that — will find a well-documented survey instead, and surveys are unsatisfying to read straight through.
+
+Its own CROW material illustrates the limit. The book is the most citable published source for the framework, and it documents the vocabulary without settling where it came from, because that is what a handbook does.
 
 **Key concepts drawn from here:**
 - Short-form game mechanics documented as craft: setup, hosting, and the calling of a game
