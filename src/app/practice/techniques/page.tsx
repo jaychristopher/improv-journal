@@ -7,9 +7,10 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Techniques"),
+  // Same correction as the exercises hub: the term alone was the entire title.
+  title: pageTitle("Improv Techniques: The Moves and When to Use Them"),
   description:
-    "The specific moves — how to listen, initiate, edit, support, heighten, and recover in improv scenes.",
+    "The specific moves — how to listen, initiate, edit, support, heighten and recover — and which one a scene actually needs when it stalls.",
   alternates: { canonical: "/practice/techniques" },
 };
 

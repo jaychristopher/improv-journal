@@ -1,6 +1,6 @@
 ---
 id: musical-improv
-title: "Musical Improv"
+title: "Musical Improv: How Improvised Songs Get Made"
 how_to_play: "Scenes played with live accompaniment, in which players invent lyrics and melody on the spot and the musician follows rather than leads."
 type: format
 status: draft

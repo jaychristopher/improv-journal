@@ -8,9 +8,16 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Exercises"),
+  /**
+   * The bare term was the whole title, which is the weakest thing a page can
+   * do with the one line it gets in a result. This hub is the declared owner
+   * of "improv exercises" in route-keywords.ts, and Search Console has been
+   * giving the query to /tools/exercise-picker/beginner instead — a page that
+   * says what it is for where this one only said what it was.
+   */
+  title: pageTitle("Improv Exercises: What Each One Actually Trains"),
   description:
-    "Structured activities that build specific improv skills through constraints. Filter by level and focus area.",
+    "Structured drills that each build one improv skill. What the constraint is for, what it trains, and when to run it — filtered by level and focus area.",
   alternates: { canonical: "/practice/exercises" },
 };
 
