@@ -59,7 +59,7 @@ Accepting the offer sounds like: "You're feeling like I haven't been hearing you
 
 The "And" is where you add your own reality: "...and from my side, I've been trying to listen but I get overwhelmed when we talk about this topic." Now both realities are on the table. Neither has been negated. The conversation can proceed from a shared foundation instead of mutual defense.
 
-This is what "Yes, And" actually means in conflict: **I accept that your experience is real, AND I have my own experience that's also real.** Two realities coexisting, not competing.
+This is what "Yes, And" actually means in conflict: **I accept that your experience is real, AND I have my own experience that's also real.** [Yes and](/yes-and-improv) is the improv version of the same move, where accepting a fact and agreeing with an opinion are kept separate. Two realities coexisting, not competing.
 
 Gottman's research on couples (1994, *What Predicts Divorce?*) found precisely this pattern: the strongest predictor of relationship failure was not the presence of conflict but the presence of what he called the "Four Horsemen" — criticism, contempt, defensiveness, and stonewalling. All four are forms of blocking. And his strongest predictor of relationship success was "repair attempts" — bids to de-escalate that were *accepted by the other person.* The mechanism isn't avoiding conflict. It's accepting offers within conflict.
 

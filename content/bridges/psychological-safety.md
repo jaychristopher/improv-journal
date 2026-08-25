@@ -59,7 +59,7 @@ This is the same constraint improv operates under. Two performers building a sce
 
 You've heard "yes, and" in a corporate workshop. You probably rolled your eyes. Fair.
 
-The corporate version strips out everything that makes the principle work. Here's what it actually means:
+The corporate version strips out everything that makes the principle work. Here's what it actually means: The improv version, and why the corporate one fails, is in [yes and improv](/yes-and-improv).
 
 **"Yes"** = I acknowledge that what you just introduced is now part of our shared reality. Not "I agree with you." Not "That's a great idea." Just: I received your signal, and I'm incorporating it into our shared model.
 

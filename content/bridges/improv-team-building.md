@@ -47,7 +47,7 @@ Four things, and they are all structural rather than performative.
 
 **Being funny on demand.** Nothing in an improv workshop makes a team funnier at work, and the ones that promise a "more playful culture" are selling a mood rather than a skill.
 
-**"Yes, and" as a decision rule.** This is the most damaging import, because it is the one that escaped into business language. In a scene, accepting an offer is the discipline that makes the form possible. In a meeting, an organisation that cannot say no to a proposal is not collaborative, it is ungoverned. What transfers is the *noticing* — how often a reply accepts the words and discards the content — not an instruction to agree.
+**"Yes, and" as a decision rule.** This is the most damaging import, because it is the one that escaped into business language. What it means before the escape is set out in [yes and improv](/yes-and-improv). In a scene, accepting an offer is the discipline that makes the form possible. In a meeting, an organisation that cannot say no to a proposal is not collaborative, it is ungoverned. What transfers is the *noticing* — how often a reply accepts the words and discards the content — not an instruction to agree.
 
 **Confidence.** Workshops frequently market themselves on it and it is the least reliable outcome. What improves is a person's willingness to start speaking before they have the whole sentence, which is narrower and considerably more useful than confidence.
 

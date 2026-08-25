@@ -88,7 +88,7 @@ The real knowledge lives in the disagreements:
 - **Is game the organizing principle of scenes, or a constraint that limits them?** UCB says yes. Annoyance says game-hunting kills authenticity. TJ & Dave prove you don't need it. Johnstone never mentions it.
 - **Should improv be taught through structure or through liberation from structure?** UCB and Spolin favor structured pedagogy. Napier and Johnstone favor stripping rules away. Close did both, depending on the student.
 - **Is improv comedy?** Close said no — it's theater. UCB's curriculum is explicitly designed to produce comedy. Johnstone is agnostic. Spolin's games work in any genre.
-- **What does "yes, and" actually mean?** For UCB, it means accept and build. For Johnstone, it means be changed. For Napier, it means "stop worrying about whether you're yes-anding and just do something." These are meaningfully different instructions.
+- **What does "yes, and" actually mean?** For UCB, it means accept and build. For Johnstone, it means be changed. [Yes and improv](/yes-and-improv) works through the disagreement in full. For Napier, it means "stop worrying about whether you're yes-anding and just do something." These are meaningfully different instructions.
 
 ## Why This Matters Beyond Improv History
 
