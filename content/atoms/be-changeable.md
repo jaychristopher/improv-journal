@@ -82,11 +82,17 @@ Real change is expensive and shows up in the parts you were not managing. The pa
 
 So the diagnostic is not whether a reaction occurred. It is whether anything **other than the words** is different afterwards.
 
-## The test worth running
+## The test worth running, which is not new
 
 Not "did I react to that", which everybody answers yes to. Ask instead: **would my next line have been different if the offer had never been made?**
 
 If the same next line would have worked before your partner spoke, you were not changed by it. You absorbed the offer, acknowledged it, and continued from where you already were — which is the polite improv described above, and it passes every other principle on this site while producing nothing.
+
+### It is the same question three pages ask
+
+Worth saying plainly rather than presenting it as a discovery. [Active listening](/practice/techniques/active-listening) uses it from outside, as the tell that somebody genuinely received: a response that would still have worked after almost anything was not built from what was actually said. [Commitment](/practice/techniques/commitment) uses it to separate commitment from stubbornness — if your partner changed something significant and your next move would not change, you are attached to a plan rather than to the scene.
+
+One diagnostic, three uses. The reason it keeps appearing is that receiving, being changed and staying committed to what is actually happening are not three skills that happen to correlate. They are three views of a single question about whether the other person is affecting you, and a performer failing one is almost always failing all three.
 
 ### Run it afterwards, not during
 
