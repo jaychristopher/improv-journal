@@ -240,6 +240,48 @@ export default async function Home() {
         </p>
       </section>
 
+      <section className="mt-14">
+        <h2 className="text-foreground/80 text-lg font-semibold">Where the craft comes from</h2>
+        <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+          Almost every rule in circulation was written down by somebody, mostly in the twentieth
+          century and mostly in Chicago, London or a room in Calgary, and knowing whose it is tells
+          you where it stops applying.{" "}
+          <Link href="/del-close" className="underline">
+            Del Close
+          </Link>{" "}
+          built the long form the American scene still runs on.{" "}
+          <Link href="/viola-spolin" className="underline">
+            Viola Spolin
+          </Link>{" "}
+          built the teaching method underneath it, and did it out of social work rather than
+          theatre. The{" "}
+          <Link href="/theatre-games" className="underline">
+            theatre games
+          </Link>{" "}
+          they both drew on are still the fastest way to get a room playing, and{" "}
+          <Link href="/rules-of-improv" className="underline">
+            the rules of improv
+          </Link>{" "}
+          takes the familiar list one line at a time and says which half of it is wrong.
+        </p>
+        <p className="text-foreground/60 mt-3 text-sm leading-relaxed">
+          To practise rather than read:{" "}
+          <Link href="/improv-prompts" className="underline">
+            improv prompts
+          </Link>{" "}
+          has starting points chosen to be playable rather than zany, and{" "}
+          <Link href="/how-to-get-better-at-improv" className="underline">
+            how to get better at improv
+          </Link>{" "}
+          is the unglamorous account of what actually moves someone forward. The{" "}
+          <Link href="/traditions" className="underline">
+            five traditions
+          </Link>{" "}
+          disagree with each other on nearly all of it, which is worth knowing before you take any
+          one of them as the rule.
+        </p>
+      </section>
+
       <div className="text-foreground/30 mt-10 flex flex-wrap gap-x-4 gap-y-1 text-sm">
         <span>Already know what you want?</span>
         <Link href="/how-it-works" className="hover:text-foreground/50">
