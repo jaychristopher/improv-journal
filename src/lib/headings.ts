@@ -5,15 +5,23 @@
  * Google builds "jump to" sitelinks from, and those only appear when the page
  * actually offers the anchors as navigation — an id nobody links to is an id
  * nobody can be sent to.
+ *
+ * H3s are included for that exact reason. The renderer anchors them too, and
+ * 53 of them across 17 concept pages were sitting there addressable and
+ * unreachable — the precise case the sentence above describes. They are
+ * reported with their level so the contents list can nest them rather than
+ * flattening a sub-point into a section.
  */
 
 /** A section a reader — or a search result — can be sent directly to. */
 export interface ContentHeading {
   id: string;
   text: string;
+  /** 2 for a section, 3 for a sub-point nested under one. */
+  level: 2 | 3;
 }
 
-const HEADING = /<h2\b[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g;
+const HEADING = /<h([23])\b[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g;
 
 function toPlainText(markup: string): string {
   return markup
@@ -33,11 +41,12 @@ export function extractHeadings(html: string): ContentHeading[] {
   const seen = new Set<string>();
 
   for (const match of html.matchAll(HEADING)) {
-    const id = match[1];
-    const text = toPlainText(match[2]);
+    const level = Number(match[1]) as 2 | 3;
+    const id = match[2];
+    const text = toPlainText(match[3]);
     if (!text || seen.has(id)) continue;
     seen.add(id);
-    headings.push({ id, text });
+    headings.push({ id, text, level });
   }
 
   return headings;

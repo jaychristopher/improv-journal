@@ -6,12 +6,14 @@ import { contentsFor, extractHeadings, MIN_HEADINGS_FOR_CONTENTS } from "../head
 describe("extractHeadings", () => {
   it("reads the id and the visible text", () => {
     const html = '<h2 id="the-discipline">The discipline</h2><p>Body.</p>';
-    expect(extractHeadings(html)).toEqual([{ id: "the-discipline", text: "The discipline" }]);
+    expect(extractHeadings(html)).toEqual([
+      { id: "the-discipline", text: "The discipline", level: 2 },
+    ]);
   });
 
   it("strips inline markup and decodes entities", () => {
     const html = '<h2 id="a"><em>Heat</em> &amp; weight</h2>';
-    expect(extractHeadings(html)).toEqual([{ id: "a", text: "Heat & weight" }]);
+    expect(extractHeadings(html)).toEqual([{ id: "a", text: "Heat & weight", level: 2 }]);
   });
 
   it("ignores a heading with no id, since it cannot be linked to", () => {
@@ -36,6 +38,20 @@ describe("contentsFor", () => {
   });
 });
 
+describe("sub-points", () => {
+  it("are listed, with the level that lets them be nested", () => {
+    const html = '<h2 id="a">A</h2><h3 id="b">B</h3>';
+    expect(extractHeadings(html)).toEqual([
+      { id: "a", text: "A", level: 2 },
+      { id: "b", text: "B", level: 3 },
+    ]);
+  });
+
+  it("ignores levels the contents list cannot place", () => {
+    expect(extractHeadings('<h4 id="d">D</h4>')).toEqual([]);
+  });
+});
+
 describe("the concept corpus", () => {
   it("offers contents on most pages, and every anchor lands on a heading", async () => {
     const atoms = await loadAtoms();
@@ -44,7 +60,9 @@ describe("the concept corpus", () => {
     expect(withContents.length).toBeGreaterThan(100);
 
     for (const atom of withContents) {
-      const ids = new Set([...atom.html.matchAll(/<h2[^>]*\sid="([^"]+)"/g)].map((m) => m[1]));
+      // h3 as well as h2 since sub-points joined the outline — the invariant is
+      // that an anchor lands on a heading, not that the heading is a section.
+      const ids = new Set([...atom.html.matchAll(/<h[23][^>]*\sid="([^"]+)"/g)].map((m) => m[1]));
       for (const heading of contentsFor(atom.html)) {
         expect(ids.has(heading.id), `${atom.frontmatter.id} -> #${heading.id}`).toBe(true);
         expect(heading.text.length, atom.frontmatter.id).toBeGreaterThan(0);

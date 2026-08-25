@@ -23,10 +23,14 @@ export function TableOfContents({ headings }: { headings: ContentHeading[] }) {
       </p>
       <ol className="space-y-1.5">
         {headings.map((heading) => (
-          <li key={heading.id}>
+          <li key={heading.id} className={heading.level === 3 ? "ml-4" : undefined}>
             <a
               href={`#${heading.id}`}
-              className="text-foreground/70 hover:text-foreground text-sm hover:underline"
+              className={
+                heading.level === 3
+                  ? "text-foreground/50 hover:text-foreground text-sm hover:underline"
+                  : "text-foreground/70 hover:text-foreground text-sm hover:underline"
+              }
             >
               {heading.text}
             </a>
