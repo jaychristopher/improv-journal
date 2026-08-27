@@ -80,7 +80,7 @@ The form has a traceable history, and it is shorter than most people assume.
 
 **Del Close and Charna Halpern** made the decisive turn toward long form at ImprovOlympic in Chicago through the 1980s, arguing that improvisation was a theatrical form in its own right rather than a way of writing sketches. See [Del Close](/del-close) for what that meant in practice.
 
-The **Upright Citizens Brigade**, taught largely by Close's students, carried the Chicago approach to New York in the 1990s and built the curriculum most contemporary American improvisers learn. The [traditions](/traditions) overview sets out where these schools still disagree.
+The **Upright Citizens Brigade**, taught largely by Close's students, carried the Chicago approach to New York in the 1990s and built the curriculum most contemporary American improvisers learn. The [traditions](/traditions) overview introduces the five schools, and [improv theory](/improv-theory) takes them question by question where they disagree.
 
 ## The Ensemble Problem
 
