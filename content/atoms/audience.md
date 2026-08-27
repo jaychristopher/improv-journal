@@ -26,6 +26,8 @@ updated: "2026-08-24"
 
 The audience is not a passive recipient of the show. They are a **co-creator** of the shared reality — the third player in every scene.
 
+This is the performer's version of a general skill: reading a collective state in real time and adjusting to it. The everyday case is [how to read the room](/how-to-read-the-room), and it runs on the same signals — attention, energy, what the group is currently willing to do.
+
 Viola Spolin: *"The audience is the most revered member of the theater. Without an audience, there is no theater."* For Spolin, the performer's job is not to perform AT the audience but to share a creative experience WITH them. The audience is included in the creative circle, not separated by a fourth wall.
 
 ## How the audience co-maintains shared reality

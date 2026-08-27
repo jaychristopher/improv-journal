@@ -39,6 +39,8 @@ Let the reality your partner has built — not just their last line, but their c
 
 Active listening is the prerequisite for genuine "Yes, And" — you cannot build on what you haven't truly received. But note: Johnstone frames this as *accepting offers* rather than "listening." You can hear every word and still block the offer. Listening without acceptance is not yet enough.
 
+The distinction has a wider version worth knowing, because "listen better" is not one instruction. What separates receiving from merely hearing is which mode the attention is in, and the [types of listening](/types-of-listening) that people are taught as a list are mostly three attention states wearing seven names.
+
 ## How it changes in a group
 
 In ensemble work, listening scales further — tracking not just your scene partner but the group pattern, the thematic echoes across scenes, who has been silent, where energy is collecting. This is the listening that makes longform work. Viola Spolin's term for this was "point of concentration" — not listening harder, but being in full-body relation with the space, the other players, and the moment.

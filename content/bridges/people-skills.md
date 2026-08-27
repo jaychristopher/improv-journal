@@ -23,7 +23,7 @@ updated: "2026-08-24"
 
 # People Skills Are a System, Not a Personality Trait
 
-Most advice about people skills reads like a checklist. Make eye contact. Use "I" statements. Practice active listening. Paraphrase what you heard. These aren't wrong. But they describe communication the way a parts catalog describes an engine — you can name every component and still not understand how the thing runs.
+Most advice about people skills reads like a checklist. Make eye contact. Use "I" statements. Practice active listening. Paraphrase what you heard. Even the [types of listening](/types-of-listening) get handed over as a taxonomy to memorise rather than as states you can actually be in. These aren't wrong. But they describe communication the way a parts catalog describes an engine — you can name every component and still not understand how the thing runs.
 
 People skills are not a collection of techniques, and they are not a personality you either have or lack. It's a real-time system with specific mechanics, and those mechanics operate whether you understand them or not. Getting better means understanding the system — not memorizing more tips.
 

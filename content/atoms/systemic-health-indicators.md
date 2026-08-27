@@ -22,6 +22,8 @@ updated: "2026-08-24"
 
 Systemic Health Indicators are the gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.
 
+The same gauges are what people are reaching for off stage when they talk about [how to read the room](/how-to-read-the-room) — a reading of the group's current state taken from behaviour rather than from what anybody says about it.
+
 Three signs of systemic health:
 
 ## 1. Cumulative State

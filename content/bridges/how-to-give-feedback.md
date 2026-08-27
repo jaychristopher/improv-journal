@@ -33,7 +33,7 @@ In improv, post-performance feedback is called "notes." A director or teacher wa
 
 Will Hines, one of the most experienced improv teachers in the country, puts it bluntly: **"An exercise is better than a note."**
 
-Here's why. When you tell a performer, "You're not listening to your scene partner," you've accurately described the symptom. But the performer already knows they should be listening. They aren't not-listening because they lack the information that listening is important. They're not-listening because their cognitive bandwidth is consumed by something else — fear of failure, internal planning, status anxiety. The note adds a new item to their monitoring list ("remember to listen") which, perversely, consumes more of the bandwidth that listening requires.
+Here's why. When you tell a performer, "You're not listening to your scene partner," you've accurately described the symptom. But the performer already knows they should be listening. They aren't not-listening because they lack the information that listening is important. They're not-listening because their cognitive bandwidth is consumed by something else — fear of failure, internal planning, status anxiety. The note adds a new item to their monitoring list ("remember to listen") which, perversely, consumes more of the bandwidth that listening requires. It is also the wrong unit: the useful note names which of the [types of listening](/types-of-listening) they dropped into, because "listen more" and "stop composing your reply" ask for different things.
 
 The note describes the output failure without addressing the input problem.
 

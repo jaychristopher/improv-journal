@@ -31,7 +31,7 @@ Most people in conversation are running two processes simultaneously: comprehens
 
 The result: you respond to what you *think* they said rather than what they *actually* said. Close enough, usually. But "close enough" is exactly why most conversations feel like two monologues taking turns instead of a genuine exchange.
 
-Improv performers call real listening "receiving" — taking in the complete `offers`, not just the words. The tone, the body language, the emotion, what was emphasized, what was skipped. When you receive fully, your response is always better — because it's actually responding to what happened, not to your summary of what happened.
+Improv performers call real listening "receiving" — taking in the complete `offers`, not just the words. The tone, the body language, the emotion, what was emphasized, what was skipped. When you receive fully, your response is always better — because it's actually responding to what happened, not to your summary of what happened. Receiving is one of three [types of listening](/types-of-listening), and it is the only one that leaves the other person feeling met.
 
 **Practice:** In your next conversation, wait a full beat after the other person finishes before responding. One second of silence. That pause forces your brain to finish processing their words before switching to response mode. The quality difference is immediate and obvious.
 

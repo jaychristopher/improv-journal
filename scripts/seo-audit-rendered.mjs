@@ -292,6 +292,67 @@ try {
   /* no git, or no sitemap: skip rather than fail */
 }
 
+// ─── Internal links spent on guides that cannot rank ────────────────────────
+//
+// Every guide records a serp_verdict. `authority` means the results for its
+// term are gated behind domains this site will not outrank, so the page is
+// worth keeping for readers and is not a ranking candidate. `winnable` means it
+// is.
+//
+// Internal links are the one ranking input entirely within the site's control,
+// and it is possible to spend most of them on the pages that cannot use them
+// without anything ever saying so. This surfaced the hard way: the single
+// best-performing page in Search Console was also among the least-linked
+// winnable guides, sitting below gated pages carrying twice its links.
+//
+// The threshold is the median gated guide rather than a fixed number, so it
+// re-calibrates as the site grows and only ever reports a genuine inversion —
+// a page that can rank receiving less than the typical page that cannot.
+try {
+  const verdicts = new Map();
+  const bridgeDir = path.join(process.cwd(), "content", "bridges");
+  for (const file of fs.readdirSync(bridgeDir).filter((f) => f.endsWith(".md"))) {
+    const fm = fs.readFileSync(path.join(bridgeDir, file), "utf-8").split(/^---$/m)[1] ?? "";
+    const verdict = /^serp_verdict:\s*(\w+)/m.exec(fm)?.[1];
+    if (verdict) verdicts.set("/" + file.replace(/\.md$/, ""), verdict);
+  }
+
+  const inbound = new Map();
+  for (const [url, html] of pages) {
+    const body = html.split("</header>").pop().split("<footer")[0] ?? "";
+    const seen = new Set();
+    for (const m of body.matchAll(/href="(\/[^"?#]*)"/g)) {
+      let target = m[1];
+      if (target.length > 1 && target.endsWith("/")) target = target.slice(0, -1);
+      if (target === url || seen.has(target)) continue;
+      seen.add(target);
+      inbound.set(target, (inbound.get(target) ?? 0) + 1);
+    }
+  }
+
+  const gated = [...verdicts]
+    .filter(([, v]) => v === "authority")
+    .map(([u]) => inbound.get(u) ?? 0)
+    .sort((a, b) => a - b);
+
+  if (gated.length >= 5) {
+    const median = gated[Math.floor(gated.length / 2)];
+    for (const [url, verdict] of verdicts) {
+      if (verdict !== "winnable") continue;
+      const links = inbound.get(url) ?? 0;
+      if (links < median) {
+        add(
+          "warning",
+          url,
+          `winnable guide has ${links} inbound internal links, below the median gated guide (${median}) — link equity is going to pages that cannot rank`,
+        );
+      }
+    }
+  }
+} catch {
+  /* no content dir: skip rather than fail */
+}
+
 const bySeverity = { critical: [], warning: [] };
 for (const i of issues) bySeverity[i.severity]?.push(i);
 

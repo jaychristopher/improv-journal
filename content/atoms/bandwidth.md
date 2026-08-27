@@ -28,7 +28,7 @@ In improv, bandwidth exists at two levels:
 
 ## Individual bandwidth
 
-How much one performer can process simultaneously. Listening, decoding body language, remembering established facts, planning, and moving the body all compete for limited capacity. (Not literally a single pool — some combinations interfere more than others — but the functional effect is the same: try to do too many and something drops.) When overloaded, reception degrades first — you start missing what's actually happening, catching words but losing tone, or catching the gist but losing the specifics.
+How much one performer can process simultaneously. Listening, decoding body language, remembering established facts, planning, and moving the body all compete for limited capacity. The competition is why the [types of listening](/types-of-listening) are not equally affordable: evaluating what you just heard runs on the same capacity as composing what you say next, which is why the two crowd each other out. (Not literally a single pool — some combinations interfere more than others — but the functional effect is the same: try to do too many and something drops.) When overloaded, reception degrades first — you start missing what's actually happening, catching words but losing tone, or catching the gist but losing the specifics.
 
 ## Shared bandwidth
 
