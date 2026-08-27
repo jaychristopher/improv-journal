@@ -66,7 +66,14 @@ describe("internal anchor text", () => {
     let checked = 0;
 
     for (const doc of docs) {
-      for (const match of doc.content.matchAll(/\[([^\]]+)\]\((\/[^)]*)\)/g)) {
+      // The lookbehind excludes markdown images. `![alt](/images/x.svg)` is
+      // not a link and its alt text is not anchor text — the two want opposite
+      // things. Good anchor text shares a word with the slug it points at;
+      // good alt text describes what is in the picture, and a filename it
+      // happens to share a word with is a coincidence rather than a signal.
+      // Without this the image programme fails here on every asset whose alt
+      // does not accidentally echo its filename.
+      for (const match of doc.content.matchAll(/(?<!!)\[([^\]]+)\]\((\/[^)]*)\)/g)) {
         const text = match[1].trim();
         const href = match[2];
         const slugWords = significantWords(href);

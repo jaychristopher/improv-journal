@@ -1,6 +1,6 @@
 ---
 title: "Types of Listening: The Three Modes That Matter"
-description: "There aren't just 'good' and 'bad' listening. Improv identifies specific listening modes — and teaches when each one helps and when it kills the conversation."
+description: "Three attention modes — broadcast, evaluative, receptive — the seven conventional types mapped onto them, and when each one helps or kills a conversation."
 target_keywords:
   - { keyword: "types of listening", volume: 800, difficulty: 0, traffic_potential: 400, parent: "types of listening" }
   - { keyword: "types of listening skills", volume: 100, parent: "types of listening", difficulty: 0, traffic_potential: 400 }
@@ -18,7 +18,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 # Types of Listening: The Improv Framework for Understanding How We Hear
@@ -32,6 +32,9 @@ Improv offers a more useful framework — not a taxonomy of types, but a way of 
 ## The Three Attention Modes
 
 Every moment you're "listening," your attention is doing one of three things. These aren't types you choose — they're modes your brain defaults to based on habit, context, and cognitive load.
+
+
+*Only the third leaves the path clear — what Spolin meant by receiving, and what improv trains as active listening.*
 
 ### Mode 1: Broadcast Listening (the default)
 
@@ -90,6 +93,18 @@ Two things fall out of the mapping.
 **Active listening is not a type at all.** It is a set of behaviours — eye contact, paraphrasing, "what I'm hearing is" — and those behaviours can be produced from any mode. Performed from broadcast mode, they are the most convincing bad listening there is: the paraphrase is accurate, the eye contact is steady, and the person is still composing. Most people who have been trained in active listening and still get told they do not listen are doing exactly this. The technique is real; it was layered onto the wrong attention mode.
 
 Which is the practical case for thinking in modes instead of types. The taxonomy tells you what to aim at. It does not tell you what your attention is doing, and that is the part you can actually change.
+
+## Agreeing, Disagreeing, and Being With
+
+A different three-way split circulates in listening and facilitation writing: that you are either agreeing, disagreeing, or *being with* the person. It is worth mapping, partly because it is a good framing and partly because it is not quite three things.
+
+Agreeing and disagreeing are the same mode wearing different clothes. Both are evaluative — attention on the content, running it against what you already hold, arriving at a verdict. That the verdict comes out positive in one case and negative in the other changes nothing about where the attention was, and it is why nodding along can leave a speaker feeling as unheard as being argued with. The listener was busy either way.
+
+Being with is receptive listening under another name. Attention on the person rather than on the proposition, no verdict being assembled, the question "what is this like for them" rather than "is this right".
+
+So the trio is really a binary with the evaluative half split by outcome, and noticing that is the useful part. It explains the experience most people have had of being agreed with and still not feeling met, which the three-part version cannot account for and the mode account can.
+
+The framing has no single identifiable origin — it turns up in coaching, facilitation and therapeutic writing as common knowledge, in the way improv's own [base reality](/practice/vocabulary/base-reality) checklist did before anybody wrote it down. Treat it as a useful piece of folk taxonomy rather than as a sourced model, and take the underlying distinction, which is real.
 
 ## Listening Styles Are a Third Thing Again
 
