@@ -20,7 +20,8 @@
     "prepare": "husky",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "content:dates": "node scripts/sync-content-dates.mjs",
-    "seo:rendered": "node scripts/seo-audit-rendered.mjs"
+    "seo:rendered": "node scripts/seo-audit-rendered.mjs",
+    "seo:crawlers": "node scripts/check-crawler-access.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
