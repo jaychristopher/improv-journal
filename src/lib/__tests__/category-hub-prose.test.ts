@@ -19,6 +19,11 @@ const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
 const HUBS: { url: string; sections: number; words: number }[] = [
   { url: "/practice/techniques", sections: 3, words: 1500 },
   { url: "/practice/formats", sections: 3, words: 2000 },
+  // Three grouping labels — Frameworks, Antipatterns, Patterns — meant the
+  // section count alone said this page was fine while it carried one sentence
+  // of its own. Its floor is the word count, and the section floor is set above
+  // the labels so the argument has to survive too.
+  { url: "/how-it-works/diagnosis", sections: 5, words: 900 },
 ];
 
 function visibleWords(html: string): number {
