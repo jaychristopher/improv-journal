@@ -51,6 +51,26 @@ In improv, failure costs a laugh. In life, failure costs relationships, trust, i
 
 The stage is a crucible — not a place where you learn techniques, but a place where the physics of connection become impossible to ignore. What you see there is already operating in every room you walk into.
 
+## You cannot practise where it counts
+
+The buffer asymmetry above creates a training problem that most writing about improv-for-life skips entirely.
+
+On stage you can rehearse because nothing is permanently at stake — the existential buffer is what makes repetition possible. In life the moments that most need the capacity are exactly the ones you cannot run twice: the conversation about the diagnosis, the disagreement that has been building for a year, the thing you have to say to your child once and correctly. You do not get to practise those, and treating them as practice is itself a failure of `be-present`.
+
+What resolves it is that the capacity is not situation-specific. Attention that has been trained to stay outward stays outward regardless of stakes; what changes with stakes is how hard it is to hold. So the training happens on the instances that do not matter — the queue, the colleague you find dull, the phone call you were dreading for no reason — and what transfers upward is not a technique but a raised floor.
+
+This is the honest version of "improv makes you better at life", and it is slower and less impressive than the version usually sold. Nothing you do in a class will make the hard conversation easy. It can make you somebody who is already listening when the hard conversation starts, which is a smaller claim and the one that survives contact with evidence.
+
+## What the frame does not license
+
+"Every conversation is an improv scene" is a lens, and lenses stop being useful when they are treated as identity claims.
+
+It does not make improv training a substitute for anything clinical. The principles describe how shared reality is built and maintained; they do not treat anxiety, they are not conflict resolution methodology, and a person whose difficulty is not a construction problem will not be helped by a better account of construction.
+
+It does not license running the frame on people who did not ask. Noticing status transactions in a meeting is useful. Announcing them is a party trick, and the vocabulary is unusually well suited to being used as a way of being right about other people rather than a way of paying attention to them.
+
+And it does not make improvisers better at relationships than anybody else, which is worth saying plainly because the literature drifts toward implying it. The skills are real and they are narrow: attention, acceptance, recovery. Plenty of people with all three are difficult to live with, and the frame explains conversations rather than character.
+
 ## Specific sources
 
 Madson, *Improv Wisdom* (2005) — 13 chapters each framing an improv maxim as a life principle. Ch. 1 (Say Yes), Ch. 6 (Pay Attention), Ch. 12 (Take Care of Each Other) map most directly. Sawyer, *Group Genius* (2007) — academic bridge between improv ensemble and organizational creativity. **Counter-position:** The transfer claim is theoretically compelling but empirically undersupported. Huffaker & West found "only limited empirical research on workplace application of improvisation training." The Frontiers in Psychology mini-review (2025) notes ambiguous definitions and difficulty comparing results. Honest position: the physics metaphor is productive, the empirical base is thin.
