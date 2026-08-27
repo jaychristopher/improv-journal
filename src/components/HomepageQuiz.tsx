@@ -1,7 +1,7 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 import { setCurrentPath } from "@/lib/journey";
@@ -33,12 +33,7 @@ interface HomepageQuizProps {
 }
 
 export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
-  const router = useRouter();
   const [selectedSymptomId, setSelectedSymptomId] = useState<string | null>(null);
-  const selectedSymptom = useMemo(
-    () => symptoms.find((symptom) => symptom.id === selectedSymptomId) ?? null,
-    [selectedSymptomId, symptoms],
-  );
 
   useEffect(() => {
     trackEvent("symptom_quiz_viewed", { symptom_count: symptoms.length });
@@ -49,10 +44,14 @@ export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
     setSelectedSymptomId(symptomId);
   }
 
-  function openRecommendation(
+  /**
+   * Records the click. Navigation belongs to the anchor now — it used to be a
+   * router.push out of a button, which meant the destination existed only in a
+   * handler and never in the markup.
+   */
+  function trackRecommendation(
     symptomId: string,
     targetType: "program" | "guide" | "thread",
-    href: string,
     targetId: string,
     pathId?: string,
   ) {
@@ -65,8 +64,6 @@ export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
     if (pathId) {
       setCurrentPath(pathId);
     }
-
-    router.push(href);
   }
 
   return (
@@ -108,61 +105,68 @@ export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
           ))}
         </div>
 
-        {selectedSymptom && (
-          <div className="border-foreground/10 bg-foreground/[0.03] mt-6 rounded-xl border p-6">
+        {/*
+          Every recommendation renders, and the ones not chosen are hidden
+          rather than left out. Previously only the selected panel existed, and
+          nothing is selected until somebody clicks, so the server html carried
+          no route out of this section at all — five guides, five programs and
+          five lessons reachable only by running the page. This is the primary
+          entry point on the highest-authority page on the site.
+        */}
+        {symptoms.map((symptom) => (
+          <div
+            key={symptom.id}
+            // The attribute carries the meaning for assistive tech; the class
+            // does the hiding, rather than relying on the UA stylesheet.
+            hidden={selectedSymptomId !== symptom.id}
+            className={[
+              "border-foreground/10 bg-foreground/[0.03] mt-6 rounded-xl border p-6",
+              selectedSymptomId === symptom.id ? "" : "hidden",
+            ].join(" ")}
+          >
             <span className="text-foreground/40 text-xs tracking-wider uppercase">
               Recommended route
             </span>
-            <h3 className="mt-1 text-xl font-semibold">{selectedSymptom.label}</h3>
-            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-              {selectedSymptom.diagnosis}
-            </p>
+            <h3 className="mt-1 text-xl font-semibold">{symptom.label}</h3>
+            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">{symptom.diagnosis}</p>
 
             <div className="mt-5 flex flex-col gap-3">
-              <button
+              <Link
+                href={symptom.program.href}
                 onClick={() =>
-                  openRecommendation(
-                    selectedSymptom.id,
+                  trackRecommendation(
+                    symptom.id,
                     "program",
-                    selectedSymptom.program.href,
-                    selectedSymptom.program.pathId,
-                    selectedSymptom.program.pathId,
+                    symptom.program.pathId,
+                    symptom.program.pathId,
                   )
                 }
-                className="bg-foreground text-background hover:bg-foreground/90 inline-flex cursor-pointer items-center justify-between rounded-lg px-4 py-3 text-left text-sm font-semibold transition-colors"
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex items-center justify-between rounded-lg px-4 py-3 text-left text-sm font-semibold transition-colors"
               >
-                <span>Start the beginner program: {selectedSymptom.program.title}</span>
+                <span>Start the beginner program: {symptom.program.title}</span>
                 <span>&rarr;</span>
-              </button>
+              </Link>
 
               <div className="grid gap-3 sm:grid-cols-2">
-                <button
-                  onClick={() =>
-                    openRecommendation(
-                      selectedSymptom.id,
-                      "guide",
-                      selectedSymptom.guide.href,
-                      selectedSymptom.guide.slug,
-                    )
-                  }
+                <Link
+                  href={symptom.guide.href}
+                  onClick={() => trackRecommendation(symptom.id, "guide", symptom.guide.slug)}
                   className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 text-left transition-colors"
                 >
                   <span className="text-foreground/40 text-xs tracking-wider uppercase">
                     Read this guide
                   </span>
-                  <span className="mt-1 block text-sm font-semibold">
-                    {selectedSymptom.guide.title}
-                  </span>
-                </button>
+                  <span className="mt-1 block text-sm font-semibold">{symptom.guide.title}</span>
+                </Link>
 
-                <button
+                <Link
+                  href={symptom.thread.href}
                   onClick={() =>
-                    openRecommendation(
-                      selectedSymptom.id,
+                    trackRecommendation(
+                      symptom.id,
                       "thread",
-                      selectedSymptom.thread.href,
-                      selectedSymptom.thread.id,
-                      selectedSymptom.program.pathId,
+                      symptom.thread.id,
+                      symptom.program.pathId,
                     )
                   }
                   className="border-foreground/10 bg-surface hover:border-foreground/30 rounded-lg border p-4 text-left transition-colors"
@@ -170,10 +174,8 @@ export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
                   <span className="text-foreground/40 text-xs tracking-wider uppercase">
                     Jump to the lesson
                   </span>
-                  <span className="mt-1 block text-sm font-semibold">
-                    {selectedSymptom.thread.title}
-                  </span>
-                </button>
+                  <span className="mt-1 block text-sm font-semibold">{symptom.thread.title}</span>
+                </Link>
               </div>
             </div>
 
@@ -184,7 +186,7 @@ export function HomepageQuiz({ symptoms }: HomepageQuizProps) {
               Choose a different problem
             </button>
           </div>
-        )}
+        ))}
       </div>
     </section>
   );
