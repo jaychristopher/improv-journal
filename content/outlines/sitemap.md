@@ -251,7 +251,7 @@ Grid of the ~20 atoms most relevant to beginners:
 
 [SECTION 4: "Essential reading"]
   → What Is Improv? (atom: reality-construction or future guide)
-  → The Rules of Improv (atoms: the 8 principles)
+  → The Rules of Improv (atoms: the principles)
 ```
 
 ---

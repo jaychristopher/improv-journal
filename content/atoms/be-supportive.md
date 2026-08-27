@@ -33,7 +33,7 @@ updated: "2026-08-24"
 
 **Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
 
-The first seven principles are all individual commands — how should *I* process data, allocate attention, send signals, act, adapt. Be Supportive is the first that is explicitly **other-directed**. It answers: am I working for myself or for the ensemble?
+Every other principle is an individual command — how should *I* process data, allocate attention, send signals, act, adapt. Be Supportive is the one that is explicitly **other-directed**. It answers: am I working for myself or for the ensemble?
 
 You can follow every other principle and still play selfishly. You can accept offers (Be Positive), stay present (Be Present), value surprises (Be Thankful), send clear signals (Be Honest), keep it simple (Be Simple), act boldly (Be Brave), and let yourself be changed (Be Changeable) — all while making yourself the center of every scene. Be Supportive is the principle that orients all of that energy outward.
 
