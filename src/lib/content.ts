@@ -1215,16 +1215,83 @@ export async function getPracticeRecommendationsForThread(
  * them, reach — traffic potential where measured, volume otherwise — so the
  * pages that can convert a reader appear first.
  */
+let _bridgeAtomIndex: Map<string, Set<string>> | null = null;
+
+/**
+ * Atom id → slugs of the guides that link it.
+ *
+ * `entry_atoms` is the declared version of this and it undercounts badly:
+ * bridges declare 455 atoms between them and link 703, because most of those
+ * links are written by the prose autolinker at render time rather than by hand
+ * in the markdown. Only 37 of the 374 undeclared ones are visible in the source
+ * at all, so reading frontmatter — or even raw markdown — misses the majority.
+ *
+ * The rendered html is already in memory by the time anything asks, so the
+ * honest reverse index is the union of what a guide declares and what it
+ * actually links.
+ *
+ * Deliberately not fixed by widening `entry_atoms` itself. That field also
+ * feeds getRelatedBridges, where it is weighted overlap between two guides —
+ * expanding theatre-games from 6 entries to 32 would make it score against
+ * nearly every other guide and quietly wreck the recommendations. The
+ * declaration means "the atoms this guide is built to enter from"; this index
+ * means "the guides that mention this atom". Two different questions.
+ */
+async function getBridgeAtomIndex(): Promise<Map<string, Set<string>>> {
+  if (_bridgeAtomIndex) return _bridgeAtomIndex;
+  const bridges = await loadBridges();
+  const urlToId = new Map<string, string>();
+  for (const [id, atom] of getAtomUrlMap()) urlToId.set(atom.url, id);
+
+  const index = new Map<string, string[]>();
+  const add = (atomId: string, slug: string) => {
+    const seen = index.get(atomId);
+    if (seen) seen.push(slug);
+    else index.set(atomId, [slug]);
+  };
+
+  for (const bridge of bridges) {
+    const found = new Set<string>(bridge.frontmatter.entry_atoms ?? []);
+    for (const match of bridge.html.matchAll(/href="(\/[^"?#]*)"/g)) {
+      const url = match[1].length > 1 ? match[1].replace(/\/$/, "") : match[1];
+      const id = urlToId.get(url);
+      if (id) found.add(id);
+    }
+    for (const id of found) add(id, bridge.slug);
+  }
+
+  _bridgeAtomIndex = new Map([...index].map(([id, slugs]) => [id, new Set(slugs)]));
+  return _bridgeAtomIndex;
+}
+
+/**
+ * Deriving the index from rendered links rather than declarations found real
+ * relationships, and also found that `offers` and `yes-and` are mentioned by 32
+ * guides each. A 32-item sidebar list is not a reading aid.
+ *
+ * The limit was chosen by measuring rather than by taste, because the first
+ * guess was wrong. Total inbound links to the guide layer: 1333 before this
+ * change, 1613 uncapped, 1534 at 16, and 1372 at 8 — a limit of 8 gives back
+ * almost the entire gain, because it also trims the atoms that already carried
+ * a long declared list. 16 keeps 201 of the 280 new links and still cuts the
+ * outliers. The reach sort above decides which ones survive.
+ */
+export const ATOM_GUIDE_LIMIT = 16;
+
 export async function getBridgesForAtom(atomId: string) {
   const bridges = await loadBridges();
+  const index = await getBridgeAtomIndex();
+  const linking = index.get(atomId);
+  if (!linking) return [];
   const promotion = (b: (typeof bridges)[number]) => {
     if (b.frontmatter.serp_verdict === "authority") return -1;
     const primary = (b.frontmatter.target_keywords ?? [])[0];
     return primary?.traffic_potential ?? primary?.volume ?? 0;
   };
   return bridges
-    .filter((b) => b.frontmatter.entry_atoms?.includes(atomId))
-    .sort((a, b) => promotion(b) - promotion(a) || a.slug.localeCompare(b.slug));
+    .filter((b) => linking.has(b.slug))
+    .sort((a, b) => promotion(b) - promotion(a) || a.slug.localeCompare(b.slug))
+    .slice(0, ATOM_GUIDE_LIMIT);
 }
 
 /** Find ALL paths that sequence a given thread (not just the first) */
