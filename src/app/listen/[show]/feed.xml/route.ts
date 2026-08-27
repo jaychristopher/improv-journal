@@ -14,6 +14,15 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
+/**
+ * Wrap html show notes so a podcast client gets markup rather than escaped
+ * angle brackets. The only sequence CDATA cannot carry is its own terminator,
+ * which is split across two sections rather than dropped.
+ */
+function cdata(html: string): string {
+  return `<![CDATA[${html.replace(/]]>/g, "]]]]><![CDATA[>")}]]>`;
+}
+
 export async function generateStaticParams() {
   const { loadShows } = await import("@/lib/content");
   const shows = await loadShows();
@@ -30,6 +39,33 @@ const PODCAST_AUTHOR = "The Physics of Connection";
  * submitted to Apple until the variable is set.
  */
 const OWNER_EMAIL = process.env.PODCAST_OWNER_EMAIL;
+
+/**
+ * Episode show notes, as html.
+ *
+ * Every episode is the spoken version of a page that already exists, and the
+ * feed knew the url all along — it was in `<link>`, which most clients do not
+ * render. `<description>` is what apps actually show, and it carried no way
+ * back to the site at all.
+ *
+ * This is also the one distribution channel here that produces links rather
+ * than consuming them. Aggregators — Podcast Index, Listen Notes, Podchaser,
+ * player.fm — republish show notes as html pages, so what goes in this field
+ * is what gets syndicated. The `content` namespace was already declared on the
+ * channel and never used.
+ *
+ * Two links, both to the thing the episode is actually about. Show notes are a
+ * legitimate place for them and a bad place to push it.
+ */
+function showNotes(ep: { title: string; description?: string; href: string }): string {
+  const url = toAbsoluteSiteUrl(ep.href, SITE_URL);
+  const summary = ep.description ?? ep.title;
+  return [
+    `<p>${escapeXml(summary)}</p>`,
+    `<p>Read the written version: <a href="${url}">${escapeXml(ep.title)}</a></p>`,
+    `<p>From <a href="${SITE_URL}">The Physics of Connection</a>, a knowledge graph of what improv has worked out about how people build a shared reality.</p>`,
+  ].join("");
+}
 
 export async function GET(_request: Request, { params }: { params: Promise<{ show: string }> }) {
   const { show: showSlug } = await params;
@@ -80,6 +116,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
       <link>${toAbsoluteSiteUrl(ep.href, SITE_URL)}</link>
       <guid isPermaLink="false">${showSlug}-${i}</guid>
       <description>${escapeXml(ep.description ?? ep.title)}</description>
+      <itunes:summary>${escapeXml(ep.description ?? ep.title)}</itunes:summary>
+      <content:encoded>${cdata(showNotes(ep))}</content:encoded>
       <enclosure url="${toAbsoluteSiteUrl(ep.audioUrl, SITE_URL)}" length="${getAudioFileSize(ep.audioUrl)}" type="audio/mpeg" />
       <itunes:duration>${itunesDuration}</itunes:duration>
       <itunes:episode>${i + 1}</itunes:episode>
