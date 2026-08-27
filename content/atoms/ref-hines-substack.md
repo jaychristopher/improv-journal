@@ -14,6 +14,7 @@ links:
   - { id: harold, relation: illustrates }
   - { id: editing, relation: illustrates }
   - { id: opening, relation: illustrates }
+  - { id: heightening, relation: illustrates }
 external_links:
   - { label: "Substack", url: "https://willhines.substack.com" }
 sources: []
@@ -40,6 +41,26 @@ That format is both the appeal and the difficulty. There is no route through it,
 Hines has taught at the Upright Citizens Brigade since February 2005 and performed there throughout, which makes him a practitioner rather than a theorist and an unusually good observer of what actually happens to students. He is also, informally, the UCB community's historian — a fair amount of the Substack is the only written record of how that institution taught, changed its mind, and came apart.
 
 He is the author of [How to Be the Greatest Improviser on Earth](/library/ref-hines-greatest-improviser), which is the tidied version of the same thinking.
+
+## Where to start
+
+The archive has no route through it, which this page says above and then leaves as a problem. Here is one, assembled from the posts this site leans on most heavily — twenty of them are cited across these pages, which is more than any other single source.
+
+### If you want the arguments
+
+The posts where he takes a position against the tradition he teaches in, and they are the reason to read him rather than a manual.
+
+["The Harold Has Too Many Scenes"](https://willhines.substack.com/p/the-harold-has-too-many-scenes) compares the form to a restaurant serving only nine-course meals every night. ["Do Openings Ruin Improv?"](https://willhines.substack.com/p/do-openings-ruin-improv) argues that openings and premise improv have gone too far and that an opening manufactures false certainty about where a scene is going. ["Let's Get Rid of the Pattern Game"](https://willhines.substack.com/p/lets-get-rid-of-the-pattern-game) is exactly as blunt as the title.
+
+### If you want the craft
+
+["Accepting Offers"](https://willhines.substack.com/p/accepting-offers) draws the distinction most classes skip — facts have to be accepted, opinions can be argued with — which is a far more usable rule than "yes, and". ["Heightening: Do Both Vertical and Horizontal"](https://willhines.substack.com/p/heightening-do-both-vertical-and) supplies the four-quadrant model this site uses for `heightening`. ["Relationship vs Game"](https://willhines.substack.com/p/relationship-vs-game) refuses the usual either/or and says you need both. ["Rewrite History"](https://willhines.substack.com/p/rewrite-history) is the sharpest thing anywhere on changeability as rewriting what already happened rather than merely accepting what is arriving.
+
+### If you want the map
+
+["What Forms Are There?"](https://willhines.substack.com/p/what-forms-are-there) is the survey, and the most-cited single post on this site. It is the fastest way to find out what exists beyond the Harold.
+
+Read in that order the disagreements make sense, because you have the craft posts to disagree from. Read the arguments first and it reads as a man complaining about improv.
 
 ## Why it matters to this site
 
