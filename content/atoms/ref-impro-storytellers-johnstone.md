@@ -68,7 +68,7 @@ A general reader is better served by *Impro*, and it is fair to say so plainly. 
 
 ## Key contributions to the knowledge graph
 
-The full `blocking-taxonomy` — wimping, cancelling, bridging, hedging, pimping, looping, joining — which is the most detailed diagnostic of scene failure in the literature and does not appear in *Impro* at all; `wimping` named as its own move rather than as weak blocking; overaccepting, which is answering a small offer with enormous weight; and `reincorporation` pushed to the front of narrative craft, with the improviser described as somebody walking backwards, shaping a story by remembering what has been left lying about.
+The full `blocking-taxonomy` — wimping, cancelling, bridging, hedging and pimping — which is the most detailed diagnostic of scene failure in the literature and does not appear in *Impro* at all; `wimping` named as its own move rather than as weak blocking; overaccepting, which is answering a small offer with enormous weight; and `reincorporation` pushed to the front of narrative craft, with the improviser described as somebody walking backwards, shaping a story by remembering what has been left lying about.
 
 ## The two books together
 
