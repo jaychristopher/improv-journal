@@ -39,6 +39,26 @@ But the architecture serves something beyond itself. Del Close called the Harold
 
 These principles are derived from recurring patterns of human interaction. They apply far beyond the stage — to every conversation, every meeting, every relationship where shared reality is being built in real time. The transfer, and why it's harder than it looks, is explored in depth in the `beyond-the-stage` atom.
 
+## Construction, not pretending
+
+The word doing the work is *construction*, and the distinction it draws is what stops the claim being a truism. Children pretend. Actors pretend. Neither is what happens here.
+
+Pretending is private and revocable. You hold an image, you can adjust it silently, and nobody else is affected when you do. Construction is public and binding: the moment your partner accepts the freezer, its existence stops being yours to revise. You cannot privately decide it is a beach, because the fact is now jointly held and `irreversibility` will not let you withdraw it.
+
+That is where the stakes in "high-stakes" come from, and they are not emotional stakes. You are continuously accountable to a thing you do not control and cannot unilaterally change, built out of contributions you did not choose, in front of people who will notice the moment it stops cohering. Very little ordinary life puts a person in that position on purpose.
+
+It also explains why solo improvisation is a different art rather than a smaller version of this one. A single performer inventing a world is doing something impressive and it is not construction — there is no second agent whose acceptance makes the thing binding, so nothing can be owed to it.
+
+## What follows if this is true
+
+Three things, and they are the reason the frame earns its place rather than merely sounding good.
+
+The audience becomes a participant rather than a spectator. If reality is held by whoever is attending to it, the room is part of the system — which is why a scene can die from an audience losing the thread and why playing to an empty rehearsal room feels categorically different, not just less fun.
+
+The principles become falsifiable. A moral rule cannot be wrong, only disobeyed. A structural claim predicts damage: reject an offer and the reality forks, distort a signal and coherence drops, and both are observable from the back of the room by somebody who cannot hear the dialogue. That the predictions hold is the argument for `be-positive` and `be-honest` being more than etiquette.
+
+And it sets the limit on transfer, which is the part usually got wrong. This applies wherever a shared reality is being built in real time between people with no external substrate to hold it — a difficult conversation, a negotiation, a first meeting. Where a substrate exists, the pressure largely disappears: a contract, a shared document and a recording all hold the state for you, which is exactly why they were invented. `beyond-the-stage` covers the transfer in full, and this is the test for when it applies at all.
+
 ## Attribution note
 
 "Reality construction" is not a term of art in improv pedagogy. Standard improv terms: "base reality" (UCB Manual), "shared fiction" (Johnstone), "group mind" (Close/Halpern). The framing comes from sociology: Berger & Luckmann, *The Social Construction of Reality* (1966) — the foundational text arguing reality is socially constructed through ongoing interaction. This atom applies their thesis to improv's specific constraints. **Counter-position:** The engineering frame risks reducing an artistic practice to a solved problem. Close's "spiritual endeavor" language pushes back. Berger & Luckmann actually help here — they argue construction is continuous, fragile, and intersubjective, not mechanical. The atom balances this: "the engineering enables the transcendence."
