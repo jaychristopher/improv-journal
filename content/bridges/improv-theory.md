@@ -124,6 +124,32 @@ Johnstone's answer centers on power and vulnerability. Spolin's centers on the b
 
 Each tradition has discovered something real about how connection works. None of them has the complete picture. The improvisers who reach the highest level almost always draw from multiple traditions, even if they trained in only one.
 
+## Questions People Ask About Improv Theory
+
+### Which tradition should a beginner actually start with?
+
+Whichever one is being taught near you, and this is less of a dodge than it sounds. The differences between these lineages are real but they are differences in emphasis and sequencing, not in whether the fundamentals get taught. A beginner in any of them will spend the first months on the same things: listening, accepting, committing to a choice.
+
+The traditions start to matter later, when a note stops making sense. That is usually the point at which someone is receiving coaching from one lineage while holding assumptions from another — being told to find the game by a teacher whose framework has one, while privately working from a model where the scene is supposed to emerge.
+
+### Is "yes, and" something all of them agree on?
+
+Broadly yes as a description, and much less than you would expect as a rule. Every lineage accepts the underlying point — that refusing your partner's contribution stops the scene — but they disagree about whether it should be taught as an instruction, and some of them think teaching it that way actively produces worse improvisers.
+
+The objection is that a beginner told to say yes will agree verbally while conceding nothing, which looks like compliance and functions like a block. Traditions that emphasise honesty and patience tend to treat agreeable-sounding scenes as a characteristic failure rather than a success, which is a real disagreement rather than a vocabulary difference.
+
+### What is the actual difference between Chicago and UCB improv?
+
+Mostly how explicit the comedy engine is. The Chicago inheritance treats the interesting thing as something the scene discovers, with the ensemble following it; the UCB approach names it, defines it, and makes finding it a teachable procedure with vocabulary attached.
+
+The trade is legibility against range. A defined framework can be taught quickly, assessed, and applied under pressure, which is why it spread. Its critics argue the same explicitness makes scenes converge on a recognisable shape and rewards identifying the pattern over staying in the moment — which is precisely the argument this page maps.
+
+### Do these traditions genuinely disagree, or is it just different vocabulary?
+
+Both, and separating the two is most of the value of studying them. A large amount of apparent conflict dissolves on inspection: several lineages describe the same behaviour with different words and then argue about the words.
+
+Underneath that there are real incompatibilities, and they mostly concern where comedy is supposed to come from and how much structure a performer should hold. Those are not terminological. Two teachers can watch the same scene, agree entirely on what happened, and give opposite notes about whether it was working.
+
 If you want the full map — every tradition's principles, where they agree, where they clash, and the source citations behind every claim — that's what the reference guide was built for.
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the cross-referenced, multi-tradition analysis of improvisation — sourced claims, counter-positions, and the full knowledge graph — explore the [Improv Reference Guide](/paths/reference-guide) path.*

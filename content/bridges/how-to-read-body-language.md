@@ -194,6 +194,38 @@ Three more, once mirroring stops feeling difficult:
 - **`space-work-scene`** — a scene with no dialogue at all, built from invisible objects. Removes words as a channel, which forces the physical one open.
 - **`blind-offer`** — respond to an undefined gesture by deciding what it meant. The hypothesis-and-check discipline, isolated.
 
+## Questions People Ask About Reading Body Language
+
+### Is 93 percent of communication really nonverbal?
+
+No, and the number is the most confidently repeated mistake in the field. It comes from two small Mehrabian studies in the 1960s where subjects heard a single word delivered with a tone that contradicted it, and were asked which reading they believed. The 7, 38 and 55 describe how much each channel contributed to resolving *that specific mismatch*. They were never a claim about communication in general, and Mehrabian spent years saying so.
+
+The reason it matters is not pedantry. If you believe words carry seven percent of the message, you will discount what someone actually said in favour of a hunch about their posture — which is exactly the failure mode this page is about. The words are usually the most reliable channel you have. The body is where you look when the words and the delivery disagree.
+
+### Can you tell if someone is lying from their body language?
+
+Essentially no, and this is one of the better-replicated findings in psychology. Pooled across hundreds of studies, people detect deception at around 54 percent — close enough to a coin toss that the difference is not much use over one conversation. Trained professionals score about the same as everyone else, while being considerably more confident.
+
+The tells that circulate — touching the nose, breaking eye contact, fidgeting — mostly index discomfort, and being suspected of lying is uncomfortable whether or not you are. What you are actually reading is stress, which has many causes and points at none of them. Someone nervous about being disbelieved produces the same display as someone with something to hide.
+
+### What does it mean when someone crosses their arms?
+
+On its own, almost always nothing. It is comfortable, it is warm, and chairs without armrests produce it reliably in people who are perfectly happy. Treated as a fixed symbol of defensiveness, it generates more false readings than any other item on the standard list.
+
+It becomes informative only in the timing. If the arms cross *at the moment* a particular subject comes up, the change is the signal — not the position. That distinction is the whole method: you are reading what shifted against how someone was a minute ago, not matching their current shape to a chart.
+
+### Does any of this work over video calls?
+
+Less well, and it is worth being honest about which parts break. The channel that survives is timing — hesitations, the beat before an answer, when someone stops. The channels that degrade are the ones people trust most: microexpressions are close to useless at that resolution, the space between bodies does not exist, and a smile that does not reach the eyes is genuinely hard to judge through a webcam.
+
+What partly compensates is that video makes the face unusually large and unusually continuous, which is not how you would ever see someone in a room. Watch for changes in rate — of speech, of blinking, of movement — rather than for individual expressions, and ask more questions than you would in person, because the cheapest channel is still the one where you simply find out.
+
+### Can you learn this, or is it something you either have or you don't?
+
+It is trainable, and the people who assume otherwise are usually trying to learn the wrong thing. Memorising signal-to-meaning pairs does not transfer, which is why so many people read a book on this and end up no better while feeling more certain.
+
+What does improve with practice is the underlying capacity — sustained attention on another person while something else is happening. That is a skill with a training method, and it is the same one behind [active listening](/active-listening): the constraint is attention, not knowledge. The group-level version, reading a whole room rather than one person, is [how to read the room](/how-to-read-the-room).
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind active listening, status dynamics, and reading physical signals, explore the [Improv for Life](/paths/improv-for-life) path.*
 
 _Reading one person is the narrow case. For the group version — energy, attention and what a room is ready for — see [how to read the room](/how-to-read-the-room)._

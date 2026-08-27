@@ -76,6 +76,32 @@ Letting go of control doesn't mean being passive. Improv performers are intensel
 
 The paradox resolves when you realize that control was never giving you what you wanted anyway. What you wanted was safety, connection, and good outcomes. Control promises all three and delivers none of them. Surrender — real surrender, with full participation and zero attachment to outcome — delivers all three. Not every time. But far more reliably than the alternative.
 
+## Questions People Ask About Letting Go of Control
+
+### Isn't planning sometimes necessary?
+
+Obviously, and any version of this idea that says otherwise is not worth taking seriously. Surgery, buildings and flights are planned for good reasons. The claim on this page is narrower: planning is the wrong tool for situations whose inputs arrive from another person in real time, and most of the situations people over-plan are that kind.
+
+The distinction that survives contact with reality is whether you control the variables. Where you do, planning compounds. Where the next input comes from somebody else — a conversation, a negotiation, a room you have not entered yet — a plan is a prediction, and holding one costs you the attention you need to notice it was wrong.
+
+### How do you let go of control without becoming passive?
+
+By noticing that the opposite of controlling is responding, not drifting. The passive version has no offers in it at all; the improviser who has stopped planning is making choices constantly, just choices selected from what is actually present rather than from what was decided in advance.
+
+In practice the difference is visible in commitment. Someone who has let go still makes a definite move and means it. Someone who has gone passive is waiting for the other person to determine the direction, which in a two-person situation produces the specific deadlock where nobody is driving and both feel the other should be.
+
+### Why does letting go feel so unsafe?
+
+Because control is doing a real job — it is the thing keeping the imagined bad outcome at a distance, and dropping it means the bad outcome becomes possible again. The feeling is not irrational, and treating it as a simple failure of courage tends not to help anyone.
+
+What changes it is evidence rather than argument. The reason improv training shifts this faster than insight does is that it produces dozens of small repetitions where the plan was abandoned and the result was survivable, which is the only thing that reliably updates a threat estimate.
+
+### What is the difference between letting go and giving up?
+
+Direction of attention. Giving up withdraws it — the situation stops being tracked, and the outcome is accepted in advance. Letting go moves attention outward, onto what is actually happening, which is more demanding than holding a plan rather than less.
+
+That is the part that surprises people who try it. Surrendering the plan is not restful. It replaces one effortful activity with another, and the reason it produces better results is that the second one is pointed at the situation in front of you.
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind spontaneity, discovery, and why planning undermines your best work, explore the [Systems of Improv](/paths/systems-of-improv) path.*
 
 _The same mechanism, from the inside: [how to stop overthinking](/how-to-stop-overthinking) covers why planning consumes the attention the moment needs._

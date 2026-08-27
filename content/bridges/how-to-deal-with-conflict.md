@@ -149,6 +149,32 @@ Accept the offer. Add your own. Build from both. That's not compromise — it's 
 
 **Sources cited:** Johnstone (1979), *Impro*. Gottman (1994), *What Predicts Divorce?* Halpern, Close & Johnson (1994), *Truth in Comedy*. Fisher & Ury (1981), *Getting to Yes*. Hines, *Improv Nonsense* Substack.
 
+## Questions People Ask About Dealing with Conflict
+
+### Does accepting someone's reality mean agreeing with them?
+
+No, and the whole method falls apart if you read it that way. Accepting an offer means acknowledging that the other person's account of events is real to them and letting it exist in the conversation. Agreeing means endorsing it. You can do the first with something you think is completely wrong, and in most disputes that is exactly when it matters.
+
+The reason it works is mechanical rather than moral. A person whose account has not been acknowledged will keep restating it, louder, because from the inside an unacknowledged point looks like an unheard one. Acknowledging it is the only move that lets the conversation advance to whether it is correct.
+
+### What if the other person is genuinely wrong?
+
+Then you still have to receive it first, for the same reason. The order is what does the work: receive, then add. Reversing it — leading with the correction — reliably produces a defence of the original position rather than a reconsideration of it, which is the outcome nobody wanted.
+
+This is also where the improv analogy has a real limit worth naming. On stage the goal is to build a shared reality; in a dispute about facts the goal may be to establish which account is accurate, and pretending otherwise is its own kind of dishonesty. Acceptance is a route to being heard, not a substitute for being right.
+
+### How do you handle conflict with someone more senior than you?
+
+Assume the status gap is doing more of the work than the disagreement is. What reads as stubbornness from above is often a person who cannot concede in front of an audience without cost, and the practical consequence is that a correction delivered publicly will be resisted for reasons that have nothing to do with its merits.
+
+The adjustments that help are unglamorous: make the concession cheap, offer it privately, and frame the change as building on their position rather than replacing it. None of that is manipulation — it is recognising that the same sentence lands differently depending on who else is in the room.
+
+### When is it better to avoid a conflict than to address it?
+
+More often than the advice literature admits. If the relationship is short-term, the stake is small, or the other person has no interest in a resolution, the cost of raising it can genuinely exceed the benefit, and choosing not to is a decision rather than a failure of nerve.
+
+The case where avoidance reliably backfires is the recurring one — the same friction arriving weekly under different pretexts. That pattern does not decay on its own, and each round of not-mentioning-it raises the cost of eventually doing so.
+
 _For the specific case of a conversation you have been putting off: [how to have difficult conversations](/how-to-have-difficult-conversations)._
 
 _And for the condition that decides whether disagreement is survivable in the first place: [emotional safety](/emotional-safety)._

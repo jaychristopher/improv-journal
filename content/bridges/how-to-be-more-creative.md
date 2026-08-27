@@ -116,6 +116,32 @@ Stop trying to be original. Follow the obvious. The original stuff is hiding beh
 
 ---
 
+## Questions People Ask About Being More Creative
+
+### Can creativity actually be taught, or are some people just born with it?
+
+It is trainable, but not in the way most courses assume. What varies between people is far less the ability to generate ideas than the willingness to say one out loud before it has been vetted — and that gap is a habit, not a trait. The person who seems endlessly inventive is usually running the same machinery as everyone else with a much shorter delay between having a thought and offering it.
+
+That is why improv training produces visible gains in weeks. It is not installing an idea generator. It is removing the filter that was rejecting perfectly good material for not being clever enough, which is the whole subject of this page.
+
+### Does brainstorming actually work?
+
+Badly, in its standard form, and this has been known since the 1950s. Groups told to generate ideas together reliably produce fewer and less varied ideas than the same people working separately and pooling afterwards — partly because only one person can talk at a time, mostly because everyone is quietly editing for how their contribution will land.
+
+What does work is the structure improv uses: build on what was just said rather than competing to introduce something new. The value is not in the simultaneous generating, which is where groups underperform. It is in the developing, which is the one thing a group can do that individuals cannot.
+
+### Why do ideas arrive in the shower?
+
+Because you have stopped occupying the attention the idea needed. The shower is the reliable example, but walking, driving a familiar route and falling asleep all produce it, and they share a shape: the task is automatic, nothing is being evaluated, and there is no audience.
+
+The practical version is not to take more showers. It is to notice that the condition doing the work — undirected attention with the evaluator switched off — is the same one this page describes producing on purpose, and that a deadline and a blank document is close to its exact opposite.
+
+### Is it cheating to build on someone else's idea?
+
+No, and the instinct that it might be is the originality trap wearing a different costume. Almost nothing is generated from nothing; the interesting work is nearly always a recombination, and treating that as second-rate mostly guarantees you sit on your hands waiting for something that does not arrive.
+
+Improv makes this explicit because it has to. Two people cannot build a scene where each contribution has to be independently original — the form collapses immediately. What it demonstrates is that the derivative-looking move, made specifically and committed to, produces work that surprises everybody involved including the people making it.
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind the obvious choice, discovery, and the cognitive mechanics of creative performance, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [The Obvious Choice](/practice/techniques/obvious-choice) and [Discovery](/how-it-works/diagnosis/discovery).*
 
 **Sources cited:** Limb & Braun (2008), *PLoS ONE*. Csikszentmihalyi (1990), *Flow*. Cowan (2001), *Behavioral and Brain Sciences*. Sweller (1988), *Cognitive Science*. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.

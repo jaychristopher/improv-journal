@@ -102,6 +102,32 @@ That's the ensemble effect. It doesn't require everyone in the room to practice 
 
 ---
 
+## Questions People Ask About Collaboration
+
+### What is the difference between collaboration and teamwork?
+
+Teamwork divides a job and runs the parts in parallel; collaboration builds something none of the participants arrived with. Both are useful and they need different conditions, which is why so many teams are described as bad at collaborating when they are actually well-organised and simply never doing it.
+
+The tell is what happens to an idea. If a suggestion gets assigned, that is teamwork. If it gets changed by the next person and the version that ships belongs to nobody in particular, that is collaboration — and it requires people to be willing to have their contribution altered, which is the part that is genuinely hard.
+
+### How do you collaborate with someone who dominates every meeting?
+
+Treat it as a status problem rather than a personality one, because it usually is. High-status behaviour in a room is largely about who can take up time without permission, and the person doing it is often not aware of the asymmetry at all. Complaints about their character tend to change nothing; changing what the room rewards sometimes does.
+
+The move that works is structural: make the first response to any proposal a build rather than an evaluation. It costs the dominant person nothing they will notice, and it removes the specific dynamic — first opinion sets the frame, everyone else reacts — that lets one voice determine the outcome.
+
+### Can collaboration skills actually be trained, or do you just hire for them?
+
+They train, and the evidence that they are trainable is that improv ensembles do it routinely with people who arrive bad at it. What makes them look like fixed traits is that the components are unglamorous and mostly invisible: receiving before responding, making the other person's idea work, noticing who has not spoken.
+
+Hiring for it is not wrong, but it has a ceiling, because the behaviour is highly sensitive to conditions. The same person collaborates well on a team where being wrong is survivable and badly on one where it is not, which means a hiring answer to a psychological-safety problem tends to disappoint.
+
+### Why do groups often produce worse ideas than individuals?
+
+Because most group formats accidentally optimise for the least objectionable option. Ideas are evaluated as they appear, the evaluation is public, and the version everyone can live with survives — which is a good procedure for avoiding disasters and a poor one for producing anything distinctive.
+
+The improv correction is to separate the two phases completely: build first, judge later. It sounds like a facilitation trick and it is really a bandwidth argument, since the attention spent anticipating how a contribution will be received is attention not spent on the contribution.
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full framework behind ensemble dynamics, group mind, and interdependence, explore the [Physics of Connection](/paths/physics-of-connection) path, or start with [Ensemble](/practice/vocabulary/ensemble) and [Yes, And](/practice/techniques/yes-and).*
 
 **Sources cited:** Mehrabian (1971), *Silent Messages*. Duhigg (2016), reporting on Google's Project Aristotle. Johnstone (1979), *Impro*. Hines, *Improv Nonsense* Substack.
