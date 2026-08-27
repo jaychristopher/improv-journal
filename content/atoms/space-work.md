@@ -66,6 +66,26 @@ So the honest position is that space work is load-bearing when the place is doin
 
 What survives across all traditions is the narrower claim in the freezer test above. If an environment has been established, it has to keep behaving consistently — a room that is freezing in minute one and unremarked in minute three has broken something, whatever school you trained in.
 
+## Common questions
+
+### What is the difference between space work and object work?
+
+Mostly which tradition trained you. Object work names the narrower thing — the imagined cup, the door, the weight of a bag — and is the usual phrasing in the Chicago lineage. Space work covers that and adds the room around it: where the walls are, how far apart the players stand, what has to be walked around.
+
+The broader term is the more useful one, because most of what makes an imagined environment believable is not any individual object. It is that the geography stays put between the people in it.
+
+### Is space work the same as mime?
+
+They share a technique and want different things. Mime is a performance form in its own right, where the precision of the illusion is the thing being watched, and the audience is meant to admire it.
+
+Space work is in service of a scene that is about something else. It only has to be consistent enough that nobody has to think about it, and a performer who makes it beautiful enough to notice has usually pulled attention away from what the scene was doing. Good space work is not remarked on.
+
+### How do you stop objects drifting?
+
+By treating position as a fact rather than a feeling. The door stays where it was established, the table keeps its height, and the mug that was set down is still there four minutes later — which mostly means paying attention when a partner puts something somewhere.
+
+Drift is rarely a failure of hand technique. It is a failure of memory under load, which is why it worsens exactly when the scene gets busy and why the fix is attention rather than practice at miming.
+
 ## Specific sources
 
 Spolin, *Improvisation for the Theater*, Ch. IV ("Where") — the canonical chapter. Specific exercises: "Space Walk" (players walk the stage while side-coach guides, adding "space substance"), "Space Objects" (imaginary props made real through physical specificity). Spolin's full term is "space objects" — "space work" is the improv community's shorthand. **Counter-position:** Game-based/verbal traditions frequently minimize physicality. UCB's approach often produces scenes with minimal space work when the comedic engine is verbal pattern. Sketch-influenced improv (Groundlings) prioritizes character voice over environment. Not a principled rejection — a practical de-emphasis.

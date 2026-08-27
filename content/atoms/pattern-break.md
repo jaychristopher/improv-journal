@@ -59,6 +59,26 @@ Break before it and nothing has been subverted, because nothing was yet expected
 
 "Sometimes it's hard to do the 'boring' thing that's been established... But by following the first beat rigidly, she sacrifices a small immediate laugh for a bigger payoff down the line." — Boiling Point Improv. Restraint first. Break earned.
 
+## Common questions
+
+### Is a pattern break the same as a pattern interrupt?
+
+No, though the phrase gets borrowed both ways. A pattern interrupt, as the term is used in hypnosis and sales training, is a move against a person — you break their expected sequence to knock them out of an automatic response and open a gap you then fill.
+
+A pattern break here is a move inside a fiction, and both players are on the same side of it. The audience has been taught to expect something, and the break pays off attention they already invested. The mechanism is a cousin — a violated expectation — but the target is the audience's model of the scene, not a person's guard.
+
+### How many repetitions do you need before breaking?
+
+Three is the working answer, and it is a floor rather than a rule. Two instances establish that something might be a pattern; the third confirms it, which is the point at which an audience is holding a prediction firmly enough for a break to register as a break rather than as a mistake.
+
+Breaking on the second is the common beginner error and it reads as the pattern never having existed. Going past four usually costs more than it earns — the audience has moved from anticipating to waiting.
+
+### Does breaking the pattern end the game?
+
+Usually not, and treating it as an ending is what wastes it. The break is a beat inside the game, and the strongest version re-establishes afterwards, so the pattern has been bent rather than abandoned.
+
+The version that does end things is the break with nowhere to go — a reversal so complete that the scene has to start again from nothing. That is the difference between the break that serves the scene and the one that kills it.
+
 ## Specific sources
 
 UCB Manual, Ch. 2 — the "button" or "top of the game" as the game's resolution through final escalation or reversal. Hines, ["Let's Get Rid of the Pattern Game"](https://willhines.substack.com/p/lets-get-rid-of-the-pattern-game) — critiques the exercise but praises the principle. *Truth in Comedy* — "subversion of the audience's expectations" as a fundamental comedic principle. **Counter-position:** UCB orthodoxy warns "you left the game" — pattern breaks can read as abandonment rather than completion. The safer move is always one more heighten. Some comedy traditions (Monty Python school) cycle through annoyance back to funny by repeating far beyond three — the sheer persistence becomes the joke. Johnstone would call pattern break a "tilt" — a narrative event, not a comedic mechanic.

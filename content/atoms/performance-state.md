@@ -65,6 +65,26 @@ Her concept of "focus" (the shared Point of Concentration) is an externalized at
 
 Csikszentmihalyi's conditions for flow — clear goals, immediate feedback, challenge-skill balance — map closely to what improvisers describe as "being in the zone." Improv provides all three: agreement gives clear goals, scene partner reactions give immediate feedback, and the difficulty of real-time creation matches the skill of trained performers.
 
+## Common questions
+
+### What is the Yerkes-Dodson law?
+
+The finding, from 1908, that performance improves with arousal up to a point and then falls away — an inverted U rather than a straight line. Too little and nothing is sharp; too much and attention narrows onto the wrong things.
+
+The part usually left out is that the peak moves with the task. Simple or physical work tolerates high arousal well; anything requiring flexible attention peaks much lower. Improvising is firmly in the second category, which is why performers who chase a hyped-up state before a show are often optimising for the wrong curve.
+
+### Is stage fright just being nervous?
+
+The sensations are close to identical, and that is the practical finding rather than a consolation. Racing heart, shallow breath, heightened alertness — the body produces the same preparation whether the mind has labelled the situation as danger or as readiness.
+
+What differs is where attention points. Readiness points outward, at the room and the other people in it. Fright points inward, at the self being evaluated, and the inward version consumes the capacity the scene needs. The label is not cosmetic — it changes what the arousal is spent on.
+
+### Can you be too relaxed to perform well?
+
+Yes, and it is the less discussed half of the curve. Under-arousal produces the flat run-through: technically correct, nothing at stake, and an audience that never quite engages because nobody on stage seems to think anything is happening.
+
+This is what warm-ups are actually calibrating. The aim is not to eliminate nerves but to arrive somewhere in the middle of the curve, which for most people means raising arousal from a standing start rather than talking themselves down from a peak.
+
 ## Specific sources
 
 Yerkes & Dodson (1908), *Journal of Comparative Neurology and Psychology* 18, 459-482 — the original stimulus-strength experiments. Spolin, *Improvisation for the Theater* (3rd ed., 1999), Ch. 1-3. Csikszentmihalyi, *Flow* (1990). Brooks, "Get Excited" (2014). TJ & Dave, *Speed of Life* — trust and "the moment before." Johnstone, *Impro*, Ch. 1 and 4 — spontaneity as natural state that education suppresses. **Counter-position:** "Just do it" school argues pre-show rituals are overthought — the best preparation is constant performing until the state becomes automatic. Anti-flow critique: real performance involves constant micro-decisions and active listening, which feels more like heightened effort than dissolution of self. Johnstone locates the problem in social conditioning; Spolin locates it in misdirected attention — compatible but different intervention points.

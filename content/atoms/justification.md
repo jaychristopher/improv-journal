@@ -74,6 +74,26 @@ Over-justification produces tortured logic that the audience can smell. The test
 
 The purest test of this is [Blind Line](/practice/formats/blind-line), where the line arrives from a stranger on a slip of paper and has nothing to do with the scene. The move that works is almost never explaining it — it is treating it as evidence about the character and letting the consequence do the work.
 
+## Common questions
+
+### What does retroactive justification mean?
+
+It means supplying the reason after the fact. Something has already happened on stage — a slip, an odd word, a prop used wrongly, two players contradicting each other — and rather than treating it as an error, somebody gives it a cause that makes it belong in the world of the scene.
+
+The order is what the term is naming. Ordinary storytelling sets up a reason and then shows the consequence; here the consequence arrives first and the reason is built backwards to meet it. Nothing is retracted, which is the whole point.
+
+### Is justifying the same as making excuses?
+
+They look alike and they run in opposite directions. An excuse is an attempt to reduce what happened — to make it matter less, or to place it somewhere else. Justification accepts what happened completely and then argues it forward, making it matter more.
+
+That is why the move reads as confidence rather than as covering. Nobody watching a well-justified mistake thinks the performer got away with something; they think the performer meant it, and the scene now contains a fact it did not have a minute ago.
+
+### Can anything be justified?
+
+Almost, and the interesting part is why that is not the same as saying it should be. A skilled improviser can find a reason for nearly any event, so the constraint is not really possibility.
+
+What limits it is cost. Every justification spends attention — the audience has to hold the new reason alongside everything already established — and a scene that keeps justifying stops advancing, because all its energy goes into keeping the existing material coherent.
+
 ## Specific sources
 
 Truth in Comedy — the principle "if everyone justifies everyone else's actions, there are no mistakes" is a recurring theme, most directly treated in Ch. 7 ("Building a Scene") and the general principles chapters (Ch. 2-5). Johnstone, *Impro for Storytellers*, Ch. 6 — reincorporation as narrative justification. The Radical Agreement blog, ["Improv Justifications"](https://www.radicalagreement.com/post/improv-justifications) — justification as "the central compass of game."

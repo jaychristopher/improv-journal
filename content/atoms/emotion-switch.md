@@ -55,6 +55,26 @@ Johnstone's "It's Tuesday" exercise (overaccepting — responding to mundane inp
 
 When your partner says something that should change you — and you feel the instinct to stay the same — that's the muscle this exercise trains. The goal is to make the shift feel like relief rather than loss.
 
+## Common questions
+
+### How many emotions should one round use?
+
+Three or four is the working range for a first pass. Fewer and the exercise does not build the thing it is for, which is the speed of the change rather than the emotions themselves; more and players start ranking their options mid-scene, which reintroduces exactly the deliberation the drill exists to remove.
+
+The emotions should also be far apart. Switching between irritated and annoyed teaches nothing, because the body barely has to move.
+
+### What if the emotion feels fake?
+
+It will, at first, and playing it anyway is the instruction. The drill deliberately reverses the order most people assume — you commit physically to the state before you feel it, and the feeling arrives afterwards or does not arrive at all.
+
+Waiting to feel it before playing it is the common way to stall the exercise. It also makes the switch late, which is the one thing the drill is timing.
+
+### Does this transfer to real scenes?
+
+Not as a move, and that is worth being clear about. Nobody wants a scene where a performer changes emotional state on a whistle every ninety seconds.
+
+What transfers is the range and the willingness. Most improvisers have two or three emotional settings they reach for under pressure, and the exercise widens that set so more of it is available when a scene genuinely calls for a change.
+
 ## Lineage
 
 Standard exercise, widespread across traditions. Coach-calls-emotions format has roots in Spolin's attitude-shifting exercises (*Improvisation for the Theater*). "It's Tuesday": attributed to Johnstone, Loose Moose Theatre, 1970s (oral tradition — not confirmed in either published book).

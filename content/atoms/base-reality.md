@@ -77,6 +77,26 @@ The disagreement narrows once *how* it gets established is separated from *wheth
 
 So the usable rule is not to skip the platform but to stop narrating it. If your first thirty seconds could be replaced by a caption, the objection applies to you.
 
+## Common questions
+
+### What does base reality mean in improv?
+
+It is the ordinary world the scene starts in, before anything strange happens — who these two people are to each other, what they are doing, and what counts as normal here. It is the baseline against which the first unusual thing becomes recognisably unusual.
+
+The term matters because the unusual thing is what the scene is going to be about, and an audience cannot identify it without a background to see it against. A scene with no base reality has nothing odd in it, because everything is equally odd.
+
+### How long should establishing take?
+
+Less time than people expect, and it is mostly not a separate phase. A relationship and a location can be established in one line if the line does real work, and the strongest openings do it while already being about something rather than announcing the facts first.
+
+The failure that gives establishing a bad name is treating it as a checklist to complete before the scene may begin. That produces the two minutes of pleasant nothing that trained improvisers learn to dread.
+
+### Does base reality have to be realistic?
+
+It has to be internally consistent, which is a different requirement. A scene set among talking wolves or on a generation ship has a base reality — the rules of that world, held steady — and the unusual thing will be whatever violates those rules rather than ours.
+
+What it cannot be is already heightened. If the opening is absurd, there is no room left above it, and the scene has spent the contrast it needed before it found anything to do with it.
+
 ## Specific sources
 
 UCB Manual, Ch. 1-2 — base reality as grounded, believable world before game begins. CROW framework (Character, Relationship, Objective, Where) originates from the Theatresports/Johnstone tradition, likely codified at Calgary's Loose Moose Theatre; widely adopted but the exact originating document is unclear. **Counter-position (Napier):** *Improvise*, Ch. 1 ("Just Do Something") — don't spend the first 30 seconds establishing logistics. Start with action and emotion; let context emerge. The Annoyance philosophy treats base-reality establishment as stalling — filling time instead of making bold choices.
