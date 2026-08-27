@@ -1,6 +1,7 @@
 ---
 id: organic-longform
 title: Organic Longform
+aliases: ["Organic improv"]
 type: format
 status: draft
 tags: [formats, longform, structure, organic, advanced]
@@ -49,6 +50,10 @@ The structure should feel like it grew naturally from the content rather than be
 - **Viewpoints awareness**: Use spatial relationship, tempo, and kinesthetic response as navigation tools rather than narrative logic
 - **Internalized structure**: Harold training provides unconscious scaffolding — performers trained in 3x3 naturally recognize when threads need revisiting, even without explicit form. Like a jazz pianist who learns scales before improvising
 - **Group mind**: Shared aesthetic sensibility allows the ensemble to collectively sense when to edit, callback, or shift
+
+![Harold's evenly spaced scaffold above, organic longform's irregular one below, with the structure internalised rather than discarded — untrained performers get meandering instead.](/images/organic-longform-structure.svg)
+
+*Like a jazz pianist who learns scales before improvising. Without that training the result is structureless meandering rather than freedom.*
 
 ## Who does this well
 

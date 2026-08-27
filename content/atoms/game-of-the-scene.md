@@ -1,6 +1,7 @@
 ---
 id: game-of-the-scene
 title: Game of the Scene
+aliases: ["The game", "Game"]
 type: definition
 status: draft
 tags: [definitions, scene-work, pattern, UCB]

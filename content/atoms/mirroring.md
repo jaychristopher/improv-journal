@@ -5,7 +5,7 @@ how_to_play: "Two players face each other and move in unison with no agreed lead
 type: exercise
 status: draft
 tags: [exercises, fundamentals, presence, ensemble, spolin]
-aliases: ["Mirror exercise"]
+aliases: ["Mirror exercise", "Chameleon effect"]
 links:
   - { id: be-present, relation: illustrates }
   - { id: active-listening, relation: illustrates }

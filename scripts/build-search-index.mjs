@@ -89,6 +89,11 @@ function main() {
       layer: "atom",
       type: fm.type,
       tags: (fm.tags ?? []).join(" "),
+      // The names the concept is also taught under. Declared for
+      // schema.org alternateName, and until now visible only to crawlers:
+      // searching this site for "Who/What/Where" or "Tag-out" — both
+      // declared — returned nothing.
+      aliases: (fm.aliases ?? []).join(" "),
       body,
       links: JSON.stringify(links),
     });
@@ -146,10 +151,10 @@ function main() {
 
   // Build index
   const miniSearch = new MiniSearch({
-    fields: ["title", "body", "tags"],
+    fields: ["title", "aliases", "body", "tags"],
     storeFields: ["title", "url", "layer", "type", "docId", "links"],
     searchOptions: {
-      boost: { title: 3 },
+      boost: { title: 3, aliases: 2 },
       fuzzy: 0.2,
       prefix: true,
     },

@@ -4,7 +4,7 @@ title: Base Reality
 type: definition
 status: draft
 tags: [definitions, scene-work, UCB, grounding]
-aliases: ["Who/What/Where", "Platform"]
+aliases: ["Who/What/Where", "Platform", "CROW"]
 links:
   - { id: game-of-the-scene, relation: requires }
   - { id: relationship, relation: requires }
