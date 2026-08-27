@@ -70,7 +70,7 @@ It is that nothing else makes the case for why any of this is worth doing. A per
 
 ## Key contributions to the knowledge graph
 
-The ensemble as the unit of value, against the star system it was reacting to; `justification` as the mechanism that makes "no mistakes" a technique rather than a comfort; `yes-and` pushed past politeness into agreement as an active obligation; and the support ethic in its most quoted form — *"Treat others as if they are poets, geniuses and artists, and they will be."*
+The ensemble as the unit of value, against the star system it was reacting to; `justification` as the mechanism that makes "no mistakes" a technique rather than a comfort; `yes-and` pushed past politeness into agreement as an active obligation; and the support ethic in its most quoted form — *"If we treat each other as if we are geniuses, poets and artists, we have a better chance of becoming that on stage."* That is the wording used everywhere else on this site, including in the recorded audio, and it is the one to match: a shorter paraphrase circulates widely and is not the book's sentence.
 
 ## Editions and authorship
 
