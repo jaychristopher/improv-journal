@@ -86,3 +86,23 @@ Spolin later broke the material out into more usable formats, and for most peopl
 Spolin did not come from the theatre. She learned this method in the 1920s from Neva Boyd at Hull House in Chicago, where games were being used as social work — and the full account of that, and of what it means for who the method was built for, is on [Viola Spolin](/viola-spolin).
 
 The relevant point for the book is narrower. The techniques were designed to draw out people who were not performers and had no intention of becoming any, which is why the book reads as though it were written for teachers. It was.
+
+## Common questions
+
+### Is it still worth reading, sixty years on?
+
+As a workshop resource, yes, and it remains the source most exercises in circulation were copied from. As a book to read through, less so — it was written as a handbook for teachers and directors, and it reads like one, with the exercises laid out as instructions rather than as an argument you follow.
+
+The honest recommendation is to use it rather than read it. Somebody running sessions will return to it for years; somebody looking for a theory of why improvisation works will find that theory largely implied and mostly located elsewhere.
+
+### What is the point of concentration?
+
+Spolin's device for getting a player out of their own head by giving the attention somewhere specific to go — a physical object, a task, a sensory quality — so that self-consciousness has nothing to work on. The exercise supplies a focus, and behaviour follows from attending to it rather than from deciding how to behave.
+
+It is the mechanism underneath most of what the book contains, and the reason her games produce spontaneity without ever instructing anybody to be spontaneous. Telling somebody to relax rarely works; giving them something to concentrate on does.
+
+### Which edition should you buy?
+
+The third, from 1999, which is the one still in print and the one with the improved organisation and index. The earlier printings are historically interesting and harder to teach from.
+
+The companion volumes are separate purchases and serve different jobs — the theater games files reformat the exercises as cards for session use, which is more practical for a teacher actually running a room than the handbook itself.

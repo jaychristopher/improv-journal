@@ -85,3 +85,23 @@ Sawyer's earlier academic works — *"Group Creativity: Music, Theater, and Coll
 ## Value
 
 Gives the ensemble and group-mind atoms empirical grounding beyond the Close/Halpern tradition's more spiritual framing. When the atom says "group mind is not mystical — it's the observable result of multiple agents following the same principles," Sawyer's research is the evidence.
+
+## Common questions
+
+### What does Sawyer mean by group genius?
+
+That the creative output usually credited to an individual is more often produced by a group over time, and that the moment of insight people remember is the visible end of a distributed process rather than its cause.
+
+His evidence base is improvisation, which is why the book turns up here at all — he studied improv ensembles as a case where the collaborative production of something nobody planned is directly observable, then argued the same mechanics run under laboratories and design teams.
+
+### Is it a business book or an improv book?
+
+Written as a business book, argued from improv. The framing and examples aim at organisations, and readers coming from improv will recognise their own practice being explained to a different audience.
+
+That is worth knowing before buying it. Anybody hoping for new insight into improvisation itself will find the improv content familiar; the value is in the research linking it to group creativity elsewhere.
+
+### What are the conditions for group flow?
+
+A set of requirements a room has to meet rather than a technique anybody performs — close listening, full concentration, autonomy for the participants, blending egos, equal participation, familiarity, and the shared understanding that keeps communication cheap.
+
+The demanding part is that they are conjunctive. A group can satisfy most of them and get nothing, because the one that is missing — usually equal participation, occasionally autonomy — is enough on its own to stop the state occurring.

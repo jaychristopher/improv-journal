@@ -80,3 +80,23 @@ That is a person with standing inside a tradition saying which parts of it he no
 - ["Are Notes After Improv Shows Worth It?"](https://willhines.substack.com/p/are-notes-after-improv-shows-worth) — feedback philosophy.
 
 **How to read it.** Pick a problem you currently have and search for it rather than starting at the beginning. Chronological order gives you a teacher's development, which is interesting once you already care; topic order gives you an answer tonight.
+
+## Common questions
+
+### Who is Will Hines?
+
+A UCB teacher and performer who spent years training improvisers in New York, and one of the few people writing about the craft from inside the teaching of it rather than from a finished theory of it.
+
+That is what gives the writing its character. The posts frequently work through a problem rather than presenting a conclusion, including the problems that do not resolve, which is rarer in improv writing than it should be.
+
+### Is it worth reading if you do not train at UCB?
+
+Yes, with the caveat that the vocabulary assumes a game-based frame. Terms like the game of the scene and heightening are used as settled, and somebody trained in a patient or organic tradition will occasionally be reading an argument whose premises they do not share.
+
+The value survives that. The recurring subject is what actually happens to people learning this — plateaus, the fear of being bad, why notes fail to land — and none of it is house-specific.
+
+### Where should you start?
+
+With whichever post names a problem you currently have, rather than at the beginning. It is a working archive rather than a course, and there is no sequence being built toward.
+
+The pieces on plateaus and on why improvisers stall are the ones this site draws on most, and they are a reasonable entry point if nothing is currently on fire.

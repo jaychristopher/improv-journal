@@ -55,3 +55,23 @@ The subtitle invites it. Taken literally, "don't prepare" is bad advice for most
 The defensible version is narrower: preparation has a point past which it becomes a way of postponing arrival, and most people are on the wrong side of it far more often than they think. That is a real claim and a much smaller one than the cover makes, and the book is stronger when read as an argument about *over*-preparation rather than against preparing at all.
 
 **Context:** Madson's work is the primary bridge text between improv pedagogy and applied life practice. Where Johnstone's *Impro* uses theater to illuminate life implicitly, Madson addresses life directly. Her Stanford context gives the applied-improv claim institutional and academic grounding.
+
+## Common questions
+
+### Is this an improv book?
+
+Only in its source material. There are no exercises for performers, no scene work and nothing about playing to an audience — it takes thirteen maxims out of improv training and applies them to ordinary life, which is closer to a practical philosophy book that happens to have come from a theatre.
+
+That makes it the wrong purchase for somebody wanting to improve at improv, and a reasonable one for somebody who wants what improv teaches without any intention of performing.
+
+### What does "don't prepare, just show up" actually mean?
+
+Not that preparation is worthless, which is the reading the subtitle invites and the book does not defend. The argument is against a specific failure — rehearsing a moment so thoroughly that you arrive unable to notice how it is actually going.
+
+Madson is consistently talking about attention rather than laziness. The instruction is to arrive able to respond, and the thing being given up is the script, not the competence.
+
+### Is it too slight to be useful?
+
+It is short, and the maxims are simple enough to sound like things you already knew. That is the honest objection and the book largely earns it back through specificity — each maxim comes with what to do, not merely what to believe.
+
+Whether that lands depends on what you want. As a reference it is thin; as something to run one instruction from for a week, it holds up better than its length suggests.

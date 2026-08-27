@@ -82,3 +82,23 @@ Bogart's *A Director Prepares* (2001) is the companion most often recommended al
 ## Key contributions to the knowledge graph
 
 The vocabulary that makes `physicality` teachable rather than a note to give; the case that `presence` is trainable by narrowing attention rather than by trying harder; the exercise structures behind `space-work`; and the account of `ensemble` as something built by shared physical attention instead of by talking about trust.
+
+## Common questions
+
+### Did Anne Bogart invent Viewpoints?
+
+No, and the book is clearer about this than its reputation is. The framework originates with Mary Overlie, whose Six Viewpoints came out of postmodern dance, and Bogart and Landau adapted and expanded it for theatre — reorganising the categories and adding the Composition work that occupies the second half.
+
+The credit drifted anyway, largely because this is the volume that reached theatre training at scale. It is worth knowing whose idea it was, and worth reading the two accounts as different things rather than as competing versions of one.
+
+### What are the Viewpoints, in practice?
+
+A vocabulary for the physical and temporal dimensions a performer is already working in — tempo, duration, spatial relationship, gesture, architecture and the rest — pulled apart so each can be attended to and rehearsed on its own.
+
+The value is less the list than the separation. Directing somebody to be more interesting gives them nothing to do; asking them to change only their spatial relationship to the other person is an instruction that can be carried out, and the interesting thing tends to follow.
+
+### Is it useful if you do not work in theatre?
+
+Partly. The Composition half — building short pieces to constraints — transfers to anyone who has to make something with other people under time pressure, and it is the half the page above argues is the reason to own the book.
+
+The Source Work and the ensemble training assume a rehearsal room, a company and weeks. An improviser can borrow the vocabulary usefully; an improviser expecting a set of exercises to drop into a two-hour workshop will find the fit awkward.

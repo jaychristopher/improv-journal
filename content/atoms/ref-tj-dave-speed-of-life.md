@@ -83,3 +83,23 @@ This is a description of mastery, and descriptions of mastery are famously poor 
 ## Also worth knowing
 
 The pair have been performing together since the early 2000s, and there is a 2009 documentary of the same name as their opening line if you want to see the show before reading the book. Stephen Colbert's line about them is the one everybody quotes: *"One of these guys is the best improviser in the world. And the other one is better."*
+
+## Common questions
+
+### Do they really plan nothing before a show?
+
+Nothing about content, and the book is unusually specific about what that does and does not mean. There is no premise, no discussed structure and no agreed opening — the often-quoted line before they begin is that trust is all they have.
+
+What is not absent is preparation. Two performers with decades of shared stage time have an enormous amount already established between them, and the book is honest that this is what makes the approach survivable. Not planning is a skill resting on a foundation, not the absence of one.
+
+### Can you actually learn the method from the book?
+
+You can learn what they are attending to, which is the useful part, and you cannot learn to do it by reading. The instructions are mostly negative — stop deciding, stop steering, stop treating the first quiet minute as a problem — and negative instructions are hard to follow without a room to fail in.
+
+The most transferable chapters are the ones on silence and on treating nothing as a mistake, because both describe things a performer can stop doing tonight rather than a technique to acquire.
+
+### How does it differ from game-based improv?
+
+On where the interesting thing comes from. Game-based work identifies an unusual pattern and heightens it deliberately, with vocabulary for finding and playing it. This book treats the scene as already underway and the performers' job as noticing what is true in it, with no separate step where a game gets located.
+
+The two are less opposed in practice than in argument — patient scenes find games and game scenes need grounding — but the emphasis genuinely differs, and a note from one tradition can be actively unhelpful inside the other.

@@ -54,3 +54,23 @@ Wickens (2002) refines Kahneman's single-pool model into multiple partially-sepa
 ## Also relevant
 
 Clark & Brennan's grounding theory (1991) extends the capacity framework to dyadic interaction — communication requires ongoing mutual coordination, and the cost of grounding increases with message complexity. This is the theoretical basis for the "shared bandwidth" concept.
+
+## Common questions
+
+### What is the central claim?
+
+That attention is a limited resource which has to be allocated, rather than a spotlight that can simply be pointed. Mental effort draws on a shared capacity, tasks compete for it, and performance degrades when the total demanded exceeds what is available.
+
+The 1973 formulation matters because it made the limit measurable. Kahneman tied effort to physiological markers — pupil dilation most famously — which turned a plausible description into something with evidence under it.
+
+### Is this the same as the book everybody has read?
+
+No, and they are often confused. This is Kahneman's early academic monograph, not *Thinking, Fast and Slow*, which came almost forty years later and is written for a general reader.
+
+The later book is the accessible one. This is the one that establishes the capacity model, and it is the one worth citing when the claim being made is specifically about limited attention rather than about the two-system framing.
+
+### Why does an improv site cite a 1973 psychology monograph?
+
+Because the constraint it describes is the one under most improv failure. A performer planning a clever line is spending the capacity that receiving their partner requires, and the reason they cannot do both is not attitude or effort but arithmetic.
+
+The model has been refined since — later work argues interference depends on what two tasks share rather than on total load — and the refinement matters. The basic finding of a hard ceiling has held.
