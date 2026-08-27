@@ -28,7 +28,7 @@ Underneath all three recoveries, two principles are doing the work.
 
 **Be thankful** is the plateau-breaker nobody talks about. When practice becomes a grind, when every show feels like an audition, when you're measuring yourself against your peers — you've lost the gift. Gratitude reframes practice as play. "I get to do this" instead of "I have to get better at this." Carrane's insight: "If you don't care if you are getting better, you get better faster."
 
-And underneath gratitude: **discovery**. The willingness to find out what the scene is about instead of deciding in advance. The willingness to be surprised by your own work. The willingness to let yourself be changed by what happens between you and your partner.
+And underneath gratitude: **[discovery](/how-it-works/diagnosis/discovery)**. The willingness to find out what the scene is about instead of deciding in advance. The willingness to be surprised by your own work. The willingness to let yourself be changed by what happens between you and your partner.
 
 The plateau isn't a wall. It's a map. It's showing you exactly which recovery you need, if you have the vocabulary to read it.
 

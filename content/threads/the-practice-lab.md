@@ -10,17 +10,17 @@ updated: "2026-08-23"
 
 Every improv skill is trainable through exercises that make the right behavior structurally unavoidable. You don't learn by being told — you learn by being put in a situation where the skill is the only way through.
 
-**Emotion-switch** trains emotional range: a side-coach calls out emotions mid-scene and players shift instantly. No time to plan the transition — the body has to find it. The skill it builds: accessing the full spectrum without retreating to comfortable defaults.
+**[Emotion-switch](/practice/exercises/emotion-switch)** trains emotional range: a side-coach calls out emotions mid-scene and players shift instantly. No time to plan the transition — the body has to find it. The skill it builds: accessing the full spectrum without retreating to comfortable defaults.
 
-**First-line drill** trains initiation courage: rapid-fire single lines, one after another, no time to workshop the perfect opening. Proves that any committed first line is better than a hesitated clever one. The threshold between impulse and action gets shorter with every rep.
+**[First-line drill](/practice/exercises/first-line-drill)** trains initiation courage: rapid-fire single lines, one after another, no time to workshop the perfect opening. Proves that any committed first line is better than a hesitated clever one. The threshold between impulse and action gets shorter with every rep.
 
-**Fracture-repair drill** trains recovery: players are whispered divergent realities, and the scene splits. Then they have to find their way back to coherence — yield, bridge, or explicitly name the divergence. The skill: recognizing and repairing broken shared reality in real time.
+**[Fracture-repair drill](/practice/exercises/fracture-repair-drill)** trains recovery: players are whispered divergent realities, and the scene splits. Then they have to find their way back to coherence — yield, bridge, or explicitly name the divergence. The skill: recognizing and repairing broken shared reality in real time.
 
-**No-backspace scene** trains commitment: a side-coach calls "keep it" whenever a player tries to retract or soften a choice. Everything you say is permanent. Forces forward justification instead of backward revision.
+**[No-backspace scene](/practice/exercises/no-backspace-scene)** trains commitment: a side-coach calls "keep it" whenever a player tries to retract or soften a choice. Everything you say is permanent. Forces forward justification instead of backward revision.
 
 **Space-work scene** trains environment: an entirely silent scene where all communication happens through physical interaction with the space. Proves that words are optional and that bodies in space tell stories.
 
-**Status-transfer** trains dynamic status: the seesaw must tip at least once during the scene. Players practice the specific body mechanics of rising and falling status — spine, eye contact, spatial claim, vocal register.
+**[Status-transfer](/practice/exercises/status-transfer)** trains dynamic status: the seesaw must tip at least once during the scene. Players practice the specific body mechanics of rising and falling status — spine, eye contact, spatial claim, vocal register.
 
 **Directed scene** trains adaptability: a side-coach calls real-time directions ("slower," "make it about the relationship," "switch characters") and players integrate instantly without breaking the scene's reality.
 

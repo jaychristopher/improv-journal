@@ -12,7 +12,7 @@ You've learned the Harold. You can run its beats, find its games, make its conne
 
 The Harold is a training format — brilliantly designed to force you to practice every core skill simultaneously. But it's one structure among many, and most experienced performers graduate to other forms. The longform landscape is wider than any single school teaches.
 
-The **Armando** strips away Harold's structural complexity and replaces it with a monologist's authentic stories. Scenes are inspired by personal truth rather than an opening exercise. It's the format behind UCB's legendary ASSSSCAT, and it's one of the most performed longform structures in the world.
+The **[Armando](/practice/formats/armando)** strips away Harold's structural complexity and replaces it with a monologist's authentic stories. Scenes are inspired by personal truth rather than an opening exercise. It's the format behind UCB's legendary ASSSSCAT, and it's one of the most performed longform structures in the world.
 
 **La Ronde** is a character study disguised as a format. Each scene shares one character with the next, forming a chain that circles back to the beginning. It reveals something the Harold rarely does: how the same person changes depending on who they're with.
 
@@ -22,7 +22,7 @@ The **Armando** strips away Harold's structural complexity and replaces it with 
 
 **Two-person longform** is the purest test of improv partnership. No ensemble to hide behind, no backline to rescue you. TJ & Dave sustained full-hour shows with nothing but mutual attention and a single suggestion. Middleditch & Schwartz brought the form to Netflix.
 
-**Genre formats** use shared cultural literacy as structure. Film noir, horror, musical — the conventions become the scaffold. Baby Wants Candy has performed over 4,000 fully improvised musicals.
+**[Genre formats](/practice/formats/genre-format)** use shared cultural literacy as structure. Film noir, horror, musical — the conventions become the scaffold. Baby Wants Candy has performed over 4,000 fully improvised musicals.
 
 Each format demands different skills, rewards different strengths, and reveals different truths about what improvisation can be. The Harold taught you the grammar. These formats teach you the dialects.
 

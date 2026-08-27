@@ -28,11 +28,11 @@ Now zoom in. Within those modes, specific **antipatterns** are usually at work:
 
 **Bulldozing** — you're driving your agenda regardless of what your partner offers. You're in the scene but not in the same scene. You're generating but not receiving.
 
-**Steering** — subtler than bulldozing. You're accepting your partner's offers on the surface but redirecting everything toward where you want the scene to go. You look collaborative but you're not.
+**[Steering](/how-it-works/diagnosis/steering)** — subtler than bulldozing. You're accepting your partner's offers on the surface but redirecting everything toward where you want the scene to go. You look collaborative but you're not.
 
 **Overcomplication** — you added a fourth element when two would have served. You introduced a new character when the relationship needed deepening. You invented plot when the game needed heightening. The scene got heavy and stopped moving.
 
-**Judgment** — you're evaluating the scene while you're in it. "This isn't working." "My partner's choices are weird." "I should have said something different." The evaluation circuit fires and the creation circuit shuts down. You can't build and audit simultaneously.
+**[Judgment](/how-it-works/diagnosis/judgment)** — you're evaluating the scene while you're in it. "This isn't working." "My partner's choices are weird." "I should have said something different." The evaluation circuit fires and the creation circuit shuts down. You can't build and audit simultaneously.
 
 To use this vocabulary: after a scene, ask yourself three questions. (1) Which collapse mode was it — latency, fracture, or decay? (2) Which antipattern was operating — was I computing, performing cleverness, hesitating, bulldozing, steering, overcomplicating, or judging? (3) What would the opposite behavior have looked like?
 
