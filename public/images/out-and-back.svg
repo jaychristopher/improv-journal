@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-secondary" x="40" y="54" text-anchor="middle">pencil</text>
+  <text class="dg-secondary" x="160" y="54" text-anchor="middle">student loans</text>
+  <text class="dg-secondary" x="280" y="54" text-anchor="middle">protests</text>
+
+  <line class="dg-ink" x1="40" y1="70" x2="340" y2="70" />
+  <rect class="dg-accent-fill" x="39" y="64" width="2" height="12" />
+  <line class="dg-ink" x1="100" y1="64" x2="100" y2="76" />
+  <line class="dg-ink" x1="160" y1="64" x2="160" y2="76" />
+  <line class="dg-ink" x1="220" y1="64" x2="220" y2="76" />
+  <line class="dg-ink" x1="280" y1="64" x2="280" y2="76" />
+  <line class="dg-ink" x1="340" y1="64" x2="340" y2="76" />
+
+  <text class="dg-secondary" x="100" y="94" text-anchor="middle">school</text>
+  <text class="dg-secondary" x="220" y="94" text-anchor="middle">capitalism</text>
+  <text class="dg-secondary" x="340" y="94" text-anchor="middle">forms</text>
+
+  <path class="dg-accent" d="M340 106 Q190 170 40 90" />
+  <path class="dg-accent-fill" d="M40 78 L34 90 L46 90 Z" />
+
+  <text class="dg-note" x="16" y="180">the return is what makes it a leaf rather than a list</text>
+</svg>

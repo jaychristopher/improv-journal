@@ -27,6 +27,10 @@ Opening is the 3-5 minute ensemble ritual that transforms a single audience sugg
 
 The ensemble stands in a semicircle. One person says the suggestion, then the group free-associates outward through related words, eventually looping back to the original. This arc out and back is one "leaf." Three loops create a cloverleaf. Generates a wide field of associative territory. Example with "pencil": pencil → school → student loans → capitalism → protests → forms → pencil.
 
+![An association chain leaving the suggestion and returning to it: pencil, school, student loans, capitalism, protests, forms, and back to pencil.](/images/out-and-back.svg)
+
+*Nothing here is a scene yet; the whole opening exists to leave this much territory lying around.*
+
 ## Invocation
 
 (Del Close): The ensemble invokes the suggestion through four escalating phases:
