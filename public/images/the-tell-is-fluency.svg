@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 184" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">MANAGED SIGNAL</text>
+
+  <text class="dg-note" x="100" y="76" text-anchor="middle">where the tell is expected</text>
+  <text class="dg-note-accent" x="316" y="76" text-anchor="middle">where it actually shows up</text>
+
+  <line class="dg-rule" x1="60" y1="100" x2="356" y2="100" />
+  <line class="dg-muted" x1="100" y1="92" x2="100" y2="108" />
+  <rect class="dg-accent-fill" x="315" y="90" width="2" height="20" />
+
+  <text class="dg-eyebrow" x="60" y="126">ROUGHER</text>
+  <text class="dg-eyebrow" x="356" y="126" text-anchor="end">SMOOTHER</text>
+
+  <text class="dg-note" x="16" y="170">the search is at the wrong end of the scale</text>
+</svg>

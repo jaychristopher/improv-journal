@@ -80,6 +80,10 @@ Honesty is easy when nothing is at stake, which is why the principle is usually 
 
 This is the part people get backwards. The expectation is that a performer who has stopped being honest will look uncomfortable. What actually happens is the opposite: the words get smoother, the timing gets cleaner, and the whole thing becomes easier to watch and harder to be affected by.
 
+![A scale running from rougher to smoother, with the tell for managed signal expected at the rough end and actually appearing at the smooth end.](/images/the-tell-is-fluency.svg)
+
+*Nothing here says polish is bad; it says polish is uninformative in the direction people read it.*
+
 Managed signal is more polished than honest signal, because managing is what polish is. So a stretch that suddenly feels like it is going well, in a scene where something real was about to be admitted, is worth suspecting rather than trusting.
 
 ## Specific sources
