@@ -46,6 +46,10 @@ Are both players receiving each other's signals clearly? This is the felt sense 
 
 These indicators are interrelated: cumulative state requires coherence, and coherence requires mutual recognition. They form a health stack.
 
+![The three indicators form a stack: cumulative state requires coherence, which requires mutual recognition, so the only one worth acting on directly is the one at the bottom.](/images/health-stack.svg)
+
+*"Judge the process, not the product" is this stack read from the bottom up.*
+
 ## Triage priority
 
 When the scene is struggling, rescue **mutual recognition first** — re-connect with your partner through eye contact, a genuine response, a simple offer aimed directly at them. Coherence recovers once both players are receiving each other again. Cumulative state recovers on its own once the other two are restored. The mistake is trying to fix cumulative state directly (forcing callbacks, restating facts) when the real problem is that nobody is listening.

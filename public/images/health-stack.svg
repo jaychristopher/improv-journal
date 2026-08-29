@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 248" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="32" y="40">CUMULATIVE STATE</text>
+  <text class="dg-note" x="216" y="40">recovers on its own</text>
+  <text class="dg-secondary" x="32" y="60">the world gets richer</text>
+
+  <text class="dg-note" x="32" y="94">requires</text>
+
+  <text class="dg-eyebrow" x="32" y="128">COHERENCE</text>
+  <text class="dg-note" x="216" y="128">recovers once the base is back</text>
+  <text class="dg-secondary" x="32" y="148">we are in the same movie</text>
+
+  <text class="dg-note" x="32" y="182">requires</text>
+
+  <rect class="dg-accent-fill" x="16" y="206" width="2" height="34" />
+  <text class="dg-eyebrow" x="32" y="216">MUTUAL RECOGNITION</text>
+  <text class="dg-note-accent" x="216" y="216">rescue this one first</text>
+  <text class="dg-secondary" x="32" y="236">I see you seeing me</text>
+</svg>
