@@ -38,6 +38,10 @@ Retroactive justification is the canonical form. When something unexpected occur
 
 Prospective justification is how masters actually use it. TJ Jagodowski and Dave Pasquesi build atmospheric context — relationship weight, environmental detail, emotional grounding — so that when the "weird" offer arrives, it already has a home. This is justification as scaffolding rather than rescue. You're not saving a mistake; you're building a world rich enough that anything that happens in it makes sense.
 
+![The same odd event in both rows, with the work on opposite sides of it: one builds the reason afterwards, the other builds the world it lands in beforehand.](/images/which-side-the-work-sits.svg)
+
+*Which is why prospective justification looks, from the seats, like nothing is being justified at all.*
+
 The technique works because of irreversibility: the event already happened. It cannot be undone. The only choices are to ignore it (breaking shared reality), to acknowledge it as a mistake (breaking the fourth wall), or to justify it (integrating it into the shared reality). Justification is the only option that preserves the scene.
 
 Justification is the *mechanism* underlying Be Thankful. Gratitude is the mindset; justification is the move. When you whisper "thank you" at an unexpected event, justification is what you do *with* that gratitude — you find the reason this gift was exactly what the scene needed.
