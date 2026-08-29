@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="28">FIVE EXITS FROM THE SAME ROOM</text>
+
+  <text class="dg-note" x="16" y="134">commitment due</text>
+  <rect class="dg-accent-fill" x="119" y="118" width="2" height="24" />
+
+  <line class="dg-ink" x1="122" y1="130" x2="240" y2="56" />
+  <line class="dg-ink" x1="122" y1="130" x2="240" y2="96" />
+  <line class="dg-ink" x1="122" y1="130" x2="240" y2="136" />
+  <line class="dg-ink" x1="122" y1="130" x2="240" y2="176" />
+  <line class="dg-ink" x1="122" y1="130" x2="240" y2="216" />
+
+  <text class="dg-secondary" x="250" y="60">an opinion</text>
+  <text class="dg-secondary" x="250" y="100">a consequence</text>
+  <text class="dg-secondary" x="250" y="140">an event</text>
+  <text class="dg-secondary" x="250" y="180">being wrong</text>
+  <text class="dg-secondary" x="250" y="220">your own exposure</text>
+</svg>

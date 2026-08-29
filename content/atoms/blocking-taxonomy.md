@@ -58,6 +58,10 @@ Forcing your partner to do the creative work. "Why don't you show everyone your 
 
 Every one is a bandwidth-preserving move. Each buys the performer a moment in which they are not yet committed to anything, which is exactly the state `internal-computation` describes and exactly the state a scene cannot be built from. That is why they cluster: they are not five unrelated errors but five exits from the same room.
 
+![A single moment where something is owed, with five ways out of it, each avoiding a different obligation: an opinion, a consequence, an event, being wrong, or exposure.](/images/five-exits.svg)
+
+*The five names matter less than the five answers; a note aimed at the wrong one corrects something nobody did.*
+
 It also explains why the standard note — "stop blocking" — so rarely works. A performer who is hedging is not refusing offers; they are making offers that cannot be caught. Telling them to accept more is answering a question they did not ask.
 
 ## Using it as a diagnostic
