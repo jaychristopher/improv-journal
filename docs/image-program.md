@@ -279,10 +279,14 @@ its seven to be declined.
 
 ## After the assets land
 
-- **A guard — DONE.** `src/lib/__tests__/diagrams.test.ts`, 12 assertions: viewBox present
+- **A guard — DONE.** `src/lib/__tests__/diagrams.test.ts`, 13 assertions: viewBox present
   and no fixed dimensions, no `<style>` and no ids, size budget, every asset referenced,
-  every reference resolves, alt is 12–40 words and does not name the artefact, and the
-  inliner emits `role="img"` plus a `<title>`. Note the original "every content `<img>`
+  every reference resolves, alt is 12–40 words and does not name the artefact, the
+  inliner emits `role="img"` plus a `<title>`, and every label fits inside its canvas.
+  That last one arrived with the scope change: overflow is invisible in the source and
+  survivable at 28 assets, not at 300+. It measures against `src/lib/text-metrics.ts`,
+  which carries Helvetica advance widths — exact for Arial across our glyphs — so no
+  browser and no `document.fonts.ready` race is involved. Note the original "every content `<img>`
   has non-empty alt" candidate no longer applies — after inlining there are no content
   `<img>` elements.
 - **Image sitemap.** `src/app/sitemap.ts` emits URLs only. Google supports image
@@ -291,10 +295,66 @@ its seven to be declined.
 - **Update `docs/page-ledger.json`** if it is being maintained — it is currently
   untracked and stale (generated 2026-05-09).
 
+---
+
+## Scope change (2026-08-29): every page, one to three images
+
+The program above was written for a 29-asset backlog aimed at the pages with the most
+traffic. The standing instruction now is that **every page on the site carries one to
+three images, as useful** — and "as useful" is the operative half. It raises the
+per-page ceiling and lowers the decline bar. It does not switch the doctrine off.
+
+- **A ceiling, not a quota.** Three is the most a page may carry, not the number it
+  owes. `diagnosing-scene-failure` could support three and takes one: of the other two
+  candidates, one misstated the page and one belonged to a different atom.
+- **The decline bar moved.** It was "this is the only diagram this page could have",
+  which is the bar that turned down `belief-as-architecture`. It is now "carries
+  something the prose states weakly or slowly" — still rejecting decoration, but
+  accepting a great deal that was previously passed over.
+- **Drawability belongs to the page, not the claim.** The same claim can be worth
+  drawing on one page and redundant on the next. That `blocking` is the family name for
+  negation, steering and bulldozing is worth drawing where a table cannot express
+  containment, and is redundant on the `blocking` atom itself, whose first sentence
+  says it outright.
+
+### Scale
+
+371 pages: 205 atoms, 78 bridges, 25 threads, 11 paths, 5 personas, 9 other content
+files, and 38 JSX routes. At one to three each, the ceiling is 371–1,113 assets against
+the 29 the original program planned for.
+
+`node tools/coverage.mjs` in `improv-journal-image-gen` prints the live count by group.
+It derives everything from the repo on each run rather than reading a ledger, because a
+hand-maintained list of 371 pages drifts the moment a page is added and the drift is
+invisible. Declines are the one thing it cannot infer — "no diagram yet" and "no
+diagram, deliberately" look identical from outside — so it reads them back from the
+list below.
+
+### Two groups to handle last
+
+- **25 thread pages** have no tables and no prose sections; they are curated reading
+  lists. Drawing one means drawing a table of contents.
+- **5 persona pages** are 20–31-row tables of routing data.
+
+Both are navigational rather than argumentative, so they sit last in the order. If they
+hold nothing drawable, the honest outcome is 30 recorded declines rather than 30
+decorative shapes.
+
+---
+
+## Declined
+
+Pages examined and found to hold nothing a diagram carries better than the prose does.
+Recorded so that "no diagram yet" stays distinguishable from "no diagram, deliberately";
+`tools/coverage.mjs` reads this list.
+
+- `atoms/belief-as-architecture` — its organising device is a metaphor, so drawing it would be illustration; its structural claims are each complete in a single sentence; and its one genuinely spatial idea belongs to a different atom.
+
 ## Out of scope
 
 - The `/og` card system. It works and is guarded.
 - Photographs of real people, venues, or performances the site does not own rights to.
-- Any image on the 81 generic self-help guides. The site's own audit found subject-term
-  pages surface 86% of the time against 6% for generic ones; the generic cluster is not
-  where effort belongs.
+- ~~Any image on the 81 generic self-help guides.~~ **Superseded** by the site-wide
+  instruction above. The audit finding still holds — subject-term pages surface 86% of
+  the time against 6% for generic ones — so it sets the order of work rather than the
+  boundary of it: the generic cluster comes last, and still has to earn each diagram.

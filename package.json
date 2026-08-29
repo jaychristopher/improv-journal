@@ -21,7 +21,9 @@
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
     "content:dates": "node scripts/sync-content-dates.mjs",
     "seo:rendered": "node scripts/seo-audit-rendered.mjs",
-    "seo:crawlers": "node scripts/check-crawler-access.mjs"
+    "seo:crawlers": "node scripts/check-crawler-access.mjs",
+    "diagrams:coverage": "node scripts/diagram-coverage.mjs",
+    "diagrams:measure": "node --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/diagram-measure.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
