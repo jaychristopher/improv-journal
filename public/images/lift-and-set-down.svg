@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="250" y="52" text-anchor="middle">an authority overstepping</text>
+
+  <text class="dg-eyebrow" x="16" y="74">ABSTRACT</text>
+  <line class="dg-rule" x1="110" y1="70" x2="376" y2="70" />
+
+  <line class="dg-ink" x1="150" y1="170" x2="200" y2="70" />
+  <line class="dg-accent" x1="200" y1="70" x2="300" y2="70" />
+  <line class="dg-ink" x1="300" y1="70" x2="350" y2="170" />
+
+  <text class="dg-eyebrow" x="16" y="174">CONCRETE</text>
+  <line class="dg-rule" x1="110" y1="170" x2="376" y2="170" />
+
+  <text class="dg-secondary" x="150" y="192" text-anchor="middle">a bank teller</text>
+  <text class="dg-secondary" x="350" y="192" text-anchor="middle">a Fed Chairman</text>
+
+  <text class="dg-note" x="16" y="216">the middle step is the only one the audience never sees</text>
+</svg>

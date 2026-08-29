@@ -39,7 +39,11 @@ A bank teller gives unsolicited personal advice to customers. Analogous second b
 - **Time Dash + Vertical:** Same characters, later in time, game escalated
 - **Time Dash + Horizontal:** Same characters, later in time, game explored in new dimensions
 
-The key is **abstraction level.** "A doctor who lies" is too specific. "A trusted professional who betrays trust" is abstract enough to generate fresh scenes while maintaining coherence. The audience feels the connection without seeing a photocopy.
+The key is **abstraction level.** "A doctor who lies" is too specific. "A trusted professional who betrays trust" is abstract enough to generate fresh scenes while maintaining coherence.
+
+![The game is lifted from one concrete scene to an abstract statement and set down in a different concrete scene, which keeps the echo from being a repeat.](/images/lift-and-set-down.svg)
+
+*The height of the middle step is the whole craft — too low and the second scene is a repeat.* The audience feels the connection without seeing a photocopy.
 
 ## Specific sources
 
