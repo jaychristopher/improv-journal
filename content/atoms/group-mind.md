@@ -40,6 +40,10 @@ The concept originates in the Del Close tradition — he described the Harold as
 
 Groupthink is conformity under social pressure. Group mind is creative coherence under mutual trust. In groupthink, individuals suppress their instincts to match the group. In group mind, individuals follow their instincts freely, and those instincts converge because everyone is processing the same reality with the same principles.
 
+![Both sets of lines end at the same point: in one the paths are bent partway to get there, in the other they run straight and meet anyway.](/images/two-ways-to-converge.svg)
+
+*Same convergence, and only one of them cost anybody their first instinct.*
+
 ## The conditions for group mind
 
 1. High trust (everyone knows they'll be supported)

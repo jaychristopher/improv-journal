@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 264" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="84">GROUPTHINK</text>
+  <path class="dg-muted" d="M170 48 L250 36 L360 80" />
+  <path class="dg-muted" d="M170 80 L250 80 L360 80" />
+  <path class="dg-muted" d="M170 112 L250 124 L360 80" />
+  <line class="dg-ink" x1="360" y1="72" x2="360" y2="88" />
+  <text class="dg-note" x="16" y="148">each instinct is corrected toward the group</text>
+
+  <text class="dg-eyebrow" x="16" y="204">GROUP MIND</text>
+  <path class="dg-ink" d="M170 168 L360 200" />
+  <path class="dg-ink" d="M170 200 L360 200" />
+  <path class="dg-ink" d="M170 232 L360 200" />
+  <rect class="dg-accent-fill" x="359" y="190" width="2" height="20" />
+  <text class="dg-note-accent" x="16" y="252">nothing is corrected; they land together anyway</text>
+</svg>
