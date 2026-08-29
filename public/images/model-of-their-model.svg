@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 248" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="48">THEIR MODEL</text>
+  <text class="dg-note" x="16" y="68">words, pauses, what they skipped</text>
+  <text class="dg-note" x="16" y="86">sparse, and only via signals</text>
+
+  <text class="dg-eyebrow" x="16" y="166">YOUR PRIORS</text>
+  <text class="dg-note" x="16" y="186">role, history, stereotype</text>
+  <text class="dg-note" x="16" y="204">always available, never theirs</text>
+
+  <line class="dg-ink" x1="210" y1="72" x2="218" y2="84" />
+  <line class="dg-ink" x1="225" y1="95" x2="233" y2="107" />
+  <line class="dg-ink" x1="240" y1="118" x2="246" y2="127" />
+
+  <line class="dg-ink" x1="210" y1="182" x2="246" y2="131" />
+
+  <text class="dg-eyebrow" x="256" y="122">YOUR MODEL</text>
+  <text class="dg-note" x="256" y="142">of their model</text>
+
+  <text class="dg-note-accent" x="16" y="236">you never reason about them, only about this</text>
+</svg>

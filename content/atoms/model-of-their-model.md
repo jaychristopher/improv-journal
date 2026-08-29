@@ -32,6 +32,10 @@ This is not a poetic claim; it is a structural one. The thing you are reasoning 
 
 Your model is built from signals: their words, posture, eye contact, what they emphasized, what they skipped, how long they paused, what they laughed at. Plus your priors about people like them — their role, their history with you, the stereotype-shaped scaffolding you brought into the room. Every signal is sparse and every prior is a shortcut. The model is therefore (a) under-determined by the data and (b) over-determined by your defaults. Both failure modes pull it away from accuracy.
 
+![Only sparse signals cross from their model to yours, while your own priors feed in heavily, so the thing you reason about is a reconstruction rather than the thing itself.](/images/model-of-their-model.svg)
+
+*Which is why the discipline is holding the model loosely rather than building it better.*
+
 ## Why the model is wrong in predictable ways
 
 Three common distortions: *projection* (you fill the gaps with what *you* would think); *role-stereotyping* (you fill them with what someone in that role typically thinks); and *recency* (you fill them with whatever signal arrived last, weighted disproportionately to its informational value). Each of these is a labor-saving move, and each one trades accuracy for speed. You can't turn them off, but you can notice when you've used one.
