@@ -32,6 +32,10 @@ It also trains the half people neglect, which is the leaving. The exit has to be
 ## Where it goes wrong
 
 - **Escalating weirdness instead of committing.** The temptation is to be stranger rather than more specific, and strangeness has nowhere to go: once you are a shouting clown there is no second move. A precisely observed dull person clears the bench faster and can keep going.
+
+![Two opening choices against the same ceiling: the shouting clown starts just under it with almost nothing left, and the precisely dull person starts low with room above.](/images/how-much-room-is-left.svg)
+
+*Strangeness is not the opposite of specific; it is specific with the headroom already spent.*
 - **Leaving too early.** The waiting player often bails on the first oddity, which throws the round away and teaches the arriver nothing about whether their choice was working.
 - **Refusing to leave at all.** The opposite failure and the more annoying one, usually driven by not wanting to lose. There is nothing to win.
 

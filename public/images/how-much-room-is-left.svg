@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="52">nowhere further to go</text>
+  <line class="dg-rule" x1="140" y1="48" x2="376" y2="48" />
+
+  <line class="dg-accent" x1="180" y1="50" x2="180" y2="62" />
+  <line class="dg-ink" x1="140" y1="64" x2="220" y2="64" />
+
+  <line class="dg-accent" x1="320" y1="50" x2="320" y2="178" />
+  <line class="dg-ink" x1="280" y1="180" x2="360" y2="180" />
+
+  <text class="dg-secondary" x="180" y="212" text-anchor="middle">the shouting clown</text>
+  <text class="dg-secondary" x="320" y="212" text-anchor="middle">a precisely dull person</text>
+
+  <text class="dg-note" x="16" y="230">the first move decides how many more there are</text>
+</svg>
