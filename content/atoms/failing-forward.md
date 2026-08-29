@@ -29,6 +29,10 @@ Failing Forward is the skill of metabolizing on-stage failure — a dropped scen
 
 When something fails, a gap opens between expectation and reality. Unskilled performers freeze (deer in headlights) or pretend it didn't happen (denial). Skilled performers name the gap — explicitly or implicitly — and mine it. The failure becomes content. The audience, who witnessed the failure, now witnesses the recovery, and the recovery is often more compelling than the original plan would have been.
 
+![One gap opens when something fails, and three responses lead from it: freezing and denial both leave it open, while naming it turns the gap into the scene.](/images/three-ways-out-of-a-gap.svg)
+
+*Denial is the odd one out — it asks the room to un-see what it already saw.*
+
 ## Del Close's "follow the fear"
 
 The moments performers want to avoid — the uncomfortable, the strange, the failing — are exactly where the interesting material lives. The instruction is [Del Close](/del-close)'s, and it is the most quoted thing he said. When a scene is dying, the impulse is to add more (more jokes, more plot, more energy). Close's counter-intuitive instruction: slow down, commit harder to what's already there, or follow the most dangerous thread. Documented in *Truth in Comedy* and in oral histories of Close's teaching at iO.
