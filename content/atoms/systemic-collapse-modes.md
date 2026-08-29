@@ -60,6 +60,10 @@ No mistake has been made. The established facts have simply stopped being referr
 
 The repairs are not interchangeable, and applying the wrong one is what turns a recoverable scene into a lost one.
 
+![For latency, fracture and decay alike, what the scene feels like it needs runs opposite to what actually repairs it: speed against outward attention, smoothing against naming, novelty against reinforcement.](/images/collapse-repairs.svg)
+
+*Which is why "this scene is not working" points at no repair at all — only the mode does.*
+
 ### Latency wants attention moved outward, not speed
 
 Told to be faster, a lagging performer computes faster and stays inside their own head, which is the cause rather than the symptom — [latency recovery](/how-it-works/diagnosis/latency-recovery) covers the move.

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 188" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="104" y="28">THE INSTINCT</text>
+  <text class="dg-eyebrow" x="216" y="28">THE REPAIR</text>
+  <line class="dg-rule" x1="16" y1="40" x2="336" y2="40" />
+
+  <rect class="dg-accent-fill" x="208" y="52" width="2" height="88" />
+
+  <text class="dg-eyebrow" x="16" y="72">LATENCY</text>
+  <text class="dg-note" x="104" y="72">more speed</text>
+  <text class="dg-secondary" x="216" y="72">attention outward</text>
+
+  <text class="dg-eyebrow" x="16" y="104">FRACTURE</text>
+  <text class="dg-note" x="104" y="104">smoothing it over</text>
+  <text class="dg-secondary" x="216" y="104">naming it out loud</text>
+
+  <text class="dg-eyebrow" x="16" y="136">DECAY</text>
+  <text class="dg-note" x="104" y="136">something new</text>
+  <text class="dg-secondary" x="216" y="136">what is already there</text>
+
+  <text class="dg-note-accent" x="16" y="174">in all three, the repair runs opposite to the instinct</text>
+</svg>
