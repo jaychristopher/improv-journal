@@ -31,6 +31,10 @@ A show that stays at one energy level becomes monotonous regardless of how skill
 
 Heat without weight is sketch comedy — entertaining but forgettable. **Weight without heat** is therapy — meaningful but not theatrical. The Harold and other longform formats are designed to hold both.
 
+![Heat and weight plotted as independent axes: therapy sits high on weight and low on heat, sketch comedy the reverse, and longform holds both at once.](/images/heat-against-weight.svg)
+
+*Besser's roller coaster is a path across this space, not a position in it.*
+
 ## Practically
 
 After a high-energy scene, the next should probably start slow and grounded. After a quiet emotional scene, the show might be ready for a big group game. The person who initiates the next scene is making an energy choice for the whole show — another reason backline awareness matters.
