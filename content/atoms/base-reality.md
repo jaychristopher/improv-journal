@@ -53,6 +53,10 @@ If it is, you've skipped the grounding and jumped to game. The mundane normalcy 
 
 The first unusual thing — the moment that breaks from base reality — is only legible against a grounded backdrop. Two people calmly doing taxes (base reality) → one of them flinches at a receipt (first unusual thing) → the game begins. If the scene started with both people already acting strangely, there's no "normal" to depart from and no game to discover.
 
+![The same departure twice: against a level baseline it is the only mark out of line, and against a baseline where everything is displaced it disappears.](/images/what-it-departs-from.svg)
+
+*Grounding is not the dull part before the scene; it is what makes the scene visible.*
+
 ## How long to establish
 
 One or two lines of dialogue, plus a physical activity. The initiator takes the lead — establish who, where, and what quickly, then let the scene breathe. The sooner base reality is clear, the sooner the unusual thing can emerge.
