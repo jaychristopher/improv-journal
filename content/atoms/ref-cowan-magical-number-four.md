@@ -29,6 +29,10 @@ Where the number comes from. Everywhere this site says your working memory holds
 
 Miller's "seven, plus or minus two" (1956) was offered as a rough estimate and something of a rhetorical device, and it stuck as though it were a measurement. Cowan gathered the studies that isolate storage capacity from the strategies people use to stretch it — rehearsal, chunking, long-term support — and found a smaller and more consistent limit underneath: three to five chunks, averaging about four.
 
+![Seven slots with the four that are actually stored marked off from the three that come from rehearsal, chunking and long-term support.](/images/four-inside-seven.svg)
+
+*Miller was not wrong about what he measured; he was measuring capacity plus the tricks that extend it.*
+
 ## Should you read the paper
 
 Only if you need the argument rather than the number. It runs to nearly a hundred pages in *Behavioral and Brain Sciences* and most of that is the peer commentary and Cowan's replies, which is the format that journal uses.
