@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="72">ROUND 1</text>
+  <line class="dg-ink" x1="170" y1="62" x2="170" y2="74" />
+  <line class="dg-ink" x1="200" y1="62" x2="200" y2="74" />
+  <line class="dg-ink" x1="230" y1="62" x2="230" y2="74" />
+  <line class="dg-ink" x1="260" y1="62" x2="260" y2="74" />
+  <rect class="dg-accent-fill" x="289" y="62" width="2" height="12" />
+  <line class="dg-ink" x1="320" y1="62" x2="320" y2="74" />
+
+  <line class="dg-rule" x1="288" y1="80" x2="262" y2="106" />
+
+  <text class="dg-eyebrow" x="16" y="122">ROUND 2</text>
+  <line class="dg-ink" x1="170" y1="112" x2="170" y2="124" />
+  <line class="dg-ink" x1="200" y1="112" x2="200" y2="124" />
+  <line class="dg-ink" x1="230" y1="112" x2="230" y2="124" />
+  <rect class="dg-accent-fill" x="259" y="112" width="2" height="12" />
+  <line class="dg-ink" x1="290" y1="112" x2="290" y2="124" />
+  <line class="dg-ink" x1="320" y1="112" x2="320" y2="124" />
+
+  <line class="dg-rule" x1="258" y1="130" x2="232" y2="156" />
+
+  <text class="dg-eyebrow" x="16" y="172">ROUND 3</text>
+  <line class="dg-ink" x1="170" y1="162" x2="170" y2="174" />
+  <line class="dg-ink" x1="200" y1="162" x2="200" y2="174" />
+  <rect class="dg-accent-fill" x="229" y="162" width="2" height="12" />
+  <line class="dg-ink" x1="260" y1="162" x2="260" y2="174" />
+  <line class="dg-ink" x1="290" y1="162" x2="290" y2="174" />
+  <line class="dg-ink" x1="320" y1="162" x2="320" y2="174" />
+
+  <text class="dg-note" x="16" y="204">the number you rehearsed belonged to somebody else by your turn</text>
+</svg>

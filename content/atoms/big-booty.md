@@ -33,6 +33,10 @@ A player who fumbles the beat, says a wrong number, or answers when they were no
 
 The rules are trivial. What makes it hard is that your own number keeps changing, so the answer you rehearsed is wrong by the time your turn arrives.
 
+![One player's position across three rounds: as the line shifts, the slot they occupy moves left, so an answer prepared for the old slot is already wrong.](/images/your-number-keeps-moving.svg)
+
+*The rhythm is what makes this a moving target rather than a puzzle.*
+
 That is deliberate. `cognitive-bandwidth` says attention is a limited pool and that internal computation and external response compete for it. Most warm-ups ask players to stop planning. This one makes planning useless, which works considerably better than being told. Within a few rounds the only players still in are the ones who have given up tracking and are simply listening.
 
 ## Side-coaching
