@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">THE LONG CALL</text>
+  <line class="dg-ink" x1="170" y1="60" x2="340" y2="60" />
+  <line class="dg-ink" x1="170" y1="52" x2="170" y2="68" />
+  <line class="dg-ink" x1="340" y1="52" x2="340" y2="68" />
+  <rect class="dg-accent-fill" x="299" y="54" width="2" height="12" />
+  <text class="dg-note" x="170" y="88">say bop before it ends</text>
+
+  <text class="dg-eyebrow" x="16" y="140">THE SHORT CALL</text>
+  <line class="dg-ink" x1="170" y1="136" x2="212" y2="136" />
+  <line class="dg-ink" x1="170" y1="128" x2="170" y2="144" />
+  <line class="dg-ink" x1="212" y1="128" x2="212" y2="144" />
+  <text class="dg-note" x="222" y="140">say nothing at all</text>
+
+  <text class="dg-note-accent" x="16" y="184">the same reflex, right above and wrong below</text>
+</svg>

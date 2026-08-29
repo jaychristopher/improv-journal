@@ -32,6 +32,10 @@ That makes it one of the few exercises where `hesitation` is isolated completely
 
 The silent version is the better half. Not saying "bop" is harder than saying it, because the reflex to answer is what has just been trained, and holding it requires listening to the whole instruction rather than to the first syllable.
 
+![Two calls of different length starting at the same point: the long one must be answered before it ends, and the short one must not be answered at all.](/images/two-calls-one-sound.svg)
+
+*Both rows begin with the same sound, which is the entire difficulty.*
+
 ## Running it well
 
 - **Speed over accuracy of the shapes.** If the room is discussing whether that was a correct elephant, it has become a rules argument and stopped being a warm-up.
