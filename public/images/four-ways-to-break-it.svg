@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">ESCALATE</text>
+  <line class="dg-rule" x1="160" y1="60" x2="340" y2="60" />
+  <line class="dg-ink" x1="170" y1="48" x2="170" y2="60" />
+  <line class="dg-ink" x1="210" y1="48" x2="210" y2="60" />
+  <rect class="dg-accent-fill" x="249" y="36" width="2" height="24" />
+
+  <text class="dg-eyebrow" x="16" y="112">INVERT</text>
+  <line class="dg-rule" x1="160" y1="108" x2="340" y2="108" />
+  <line class="dg-ink" x1="170" y1="96" x2="170" y2="108" />
+  <line class="dg-ink" x1="210" y1="96" x2="210" y2="108" />
+  <rect class="dg-accent-fill" x="249" y="108" width="2" height="12" />
+
+  <text class="dg-eyebrow" x="16" y="160">WITHHOLD</text>
+  <line class="dg-rule" x1="160" y1="156" x2="340" y2="156" />
+  <line class="dg-ink" x1="170" y1="144" x2="170" y2="156" />
+  <line class="dg-ink" x1="210" y1="144" x2="210" y2="156" />
+
+  <text class="dg-eyebrow" x="16" y="208">MOVE</text>
+  <line class="dg-rule" x1="160" y1="204" x2="340" y2="204" />
+  <line class="dg-ink" x1="170" y1="192" x2="170" y2="204" />
+  <line class="dg-ink" x1="210" y1="192" x2="210" y2="204" />
+  <rect class="dg-accent-fill" x="319" y="192" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="236">the same expectation, spent four ways</text>
+</svg>

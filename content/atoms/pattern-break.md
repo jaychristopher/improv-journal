@@ -35,6 +35,10 @@ First occurrence introduces a behavior or idea. Second confirms it as a delibera
 - **Withhold it.** The pattern simply does not fire at the moment everyone is braced for it. The absence is the joke, and this is the hardest to hold your nerve through, because a second of silence feels like a mistake from inside the scene.
 - **Move it.** Somebody else does it, or it arrives in a context that has nothing to do with where it started. This is where pattern break meets `callback`, and it is the one that most reliably ends a show rather than a scene.
 
+![Two beats establish a pattern and the third is treated four ways: pushed further, reversed below the line, withheld entirely, or moved somewhere else.](/images/four-ways-to-break-it.svg)
+
+*Only one of the four denies the audience anything, which is why it is the one that takes nerve.*
+
 ## Timing is the whole of it
 
 The break has to arrive after the audience is ahead of you, and there is a specific tell for when that is: they laugh on the second occurrence in anticipation, before the thing itself has happened. That laugh means the pattern has been bought and is now theirs.
