@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 194" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">MOST BEGINNERS</text>
+  <text class="dg-secondary" x="200" y="64" text-anchor="middle">say</text>
+  <line class="dg-muted" x1="214" y1="60" x2="236" y2="60" />
+  <text class="dg-secondary" x="250" y="64" text-anchor="middle">feel</text>
+  <line class="dg-muted" x1="264" y1="60" x2="289" y2="60" />
+  <text class="dg-secondary" x="300" y="64" text-anchor="middle">do</text>
+  <text class="dg-note" x="16" y="88">the words were decided first</text>
+
+  <text class="dg-eyebrow" x="16" y="154">THE TECHNIQUE</text>
+  <text class="dg-secondary" x="180" y="154" text-anchor="middle">do</text>
+  <line class="dg-accent" x1="192" y1="150" x2="256" y2="150" />
+  <text class="dg-secondary" x="270" y="154" text-anchor="middle">feel</text>
+  <line class="dg-accent" x1="284" y1="150" x2="346" y2="150" />
+  <text class="dg-secondary" x="360" y="154" text-anchor="middle">say</text>
+  <text class="dg-note-accent" x="16" y="178">the waiting is where the emotion arrives</text>
+</svg>

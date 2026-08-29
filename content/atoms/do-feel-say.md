@@ -44,6 +44,10 @@ Speak only after the physical action has generated an honest emotional response.
 
 Most beginners invert the sequence. They **say** first (scripting dialogue in their head), then try to **feel** the emotion the words describe, then maybe **do** a gesture to illustrate. This produces "talking heads" — performers narrating emotions rather than experiencing them.
 
+![The same three steps in two orders: beginners run say, feel, do with the words chosen first, while the technique runs do, feel, say with a wait between each.](/images/the-order-and-the-waits.svg)
+
+*Feel-Do-Say is equally valid; it is only saying first that leaves nothing to discover.*
+
 The Do-Feel-Say sequence forces presence by putting the body first. You can't pre-plan a physical action's emotional consequence — you have to be present to discover it. This is why the technique is a direct counter to internal computation and performing cleverness: there's no room for planning when the body is leading.
 
 The Meisner repetition exercise trains the same muscle from the acting side: respond from impulse, not intellection. The body knows before the mind. Do-Feel-Say is the improv application of this principle — the body leads because it cannot pre-plan.
