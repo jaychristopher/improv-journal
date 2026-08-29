@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="48">TENOR</text>
+  <text class="dg-eyebrow" x="240" y="48">VEHICLE</text>
+  <line class="dg-rule" x1="16" y1="62" x2="376" y2="62" />
+
+  <text class="dg-secondary" x="16" y="96">two roommates</text>
+  <line class="dg-ink" x1="150" y1="92" x2="232" y2="92" />
+  <text class="dg-secondary" x="240" y="96">rival nations</text>
+
+  <text class="dg-secondary" x="16" y="136">your mother</text>
+  <line class="dg-ink" x1="150" y1="132" x2="232" y2="132" />
+  <text class="dg-secondary" x="240" y="136">an ambassador</text>
+
+  <text class="dg-secondary" x="16" y="176">the dishes</text>
+  <line class="dg-ink" x1="150" y1="172" x2="232" y2="172" />
+  <text class="dg-secondary" x="240" y="176">disarmament</text>
+
+  <text class="dg-note-accent" x="16" y="204">nobody in the scene notices the right-hand column</text>
+</svg>

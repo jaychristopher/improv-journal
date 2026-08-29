@@ -36,6 +36,10 @@ The scene plays the tenor using the language, logic, and escalation patterns of 
 3. The scene commits to the mapping — using the vocabulary, power dynamics, and escalation patterns of the vehicle
 4. Each beat deepens the parallel — finding more specific correspondences between the two realities ("Your ambassador — your mother — called to broker a ceasefire. I rejected her terms.")
 
+![Two columns linked pair by pair: the actual situation on the left and the framework imposed on it on the right, with each element matched to its counterpart.](/images/tenor-and-vehicle.svg)
+
+*The comedy is the distance each line crosses, and it only works while both ends stay literal.*
+
 ## Why mapping is funny
 
 The humor lives in the gap between the two realities. Mundane stakes (who does the dishes) given enormous weight (nuclear disarmament). The mapping often *reveals a truth* about the real situation — maybe this roommate conflict really IS a power struggle, and the mapping makes that visible. This is comedy as truth: the absurd frame illuminates the genuine dynamic.
