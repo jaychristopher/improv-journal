@@ -40,6 +40,10 @@ Diagnosing Scene Failure is a procedure for turning "that scene didn't work" int
 
 Modes cascade, so name the *first* one. A scene that ends in decay often began with latency, and drilling decay will not fix it.
 
+![Latency leads to fracture, which leads to decay; the mode you noticed at the end is rarely the one that has to be drilled.](/images/collapse-cascade.svg)
+
+*Which is why the diagnosis has to run backwards from what you noticed.*
+
 ## Step 2 — Find the shadow
 
 Each collapse mode is produced by a behaviour, and each of those behaviours is a principle inverted. This is the step that converts a mode into a practice:
