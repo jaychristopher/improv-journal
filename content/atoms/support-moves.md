@@ -45,6 +45,10 @@ End the scene entirely. Use when the scene has peaked — the game has been foun
 
 The hardest support move is making no move at all. Napier: "If you walk on stage and don't have a reason that serves the scene, you've just made it harder for everyone." The scene doesn't need you unless you can clearly articulate what game you're serving. Watching IS contributing. The anxiety of standing on the backline is not a reason to enter.
 
+![Four options ranked by how much they change the scene: staying out changes nothing, a walk-on adds a voice, a tag-out swaps one, and an edit ends it.](/images/how-much-it-changes.svg)
+
+*Every move to the right is easier to make and harder to justify.*
+
 ## How backline listening feeds the show
 
 The backline is where group mind is tangibly built. When every performer actively tracks every scene, the ensemble develops a shared vocabulary — details, themes, patterns — that enables callbacks across scenes, thematic connections between unrelated beats, and group games that feel coherent rather than random. Del Close called this "finding the connections" — the Harold isn't three separate storylines but one interconnected web. The backline's attention is the mechanism that weaves it.

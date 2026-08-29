@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 208" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="376" y="40" text-anchor="end">MORE INTERVENTION</text>
+
+  <text class="dg-secondary" x="80" y="70" text-anchor="middle">stay out</text>
+  <text class="dg-secondary" x="175" y="70" text-anchor="middle">walk-on</text>
+  <text class="dg-secondary" x="270" y="70" text-anchor="middle">tag-out</text>
+  <text class="dg-secondary" x="360" y="70" text-anchor="middle">edit</text>
+
+  <line class="dg-rule" x1="60" y1="90" x2="376" y2="90" />
+  <path class="dg-rule" d="M370 85 L376 90 L370 95" />
+  <rect class="dg-accent-fill" x="79" y="84" width="2" height="12" />
+  <line class="dg-ink" x1="175" y1="84" x2="175" y2="96" />
+  <line class="dg-ink" x1="270" y1="84" x2="270" y2="96" />
+  <line class="dg-ink" x1="360" y1="84" x2="360" y2="96" />
+
+  <text class="dg-note" x="80" y="116" text-anchor="middle">nothing</text>
+  <text class="dg-note" x="175" y="116" text-anchor="middle">one more</text>
+  <text class="dg-note" x="270" y="116" text-anchor="middle">one swapped</text>
+  <text class="dg-note" x="360" y="116" text-anchor="middle">it ends</text>
+
+  <text class="dg-note-accent" x="80" y="146" text-anchor="middle">the hardest one</text>
+
+  <text class="dg-note" x="16" y="192">watching is a move, and it is the one nobody feels safe making</text>
+</svg>
