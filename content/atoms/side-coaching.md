@@ -25,6 +25,10 @@ Side-coaching is Viola Spolin's core teaching method: coaching players **during*
 
 All side-coaching is given during playing. Players do not stop to consider what is being coached — they **act on it at the moment it is needed**. This keeps players in the game rather than pulling them out to intellectualize. The moment a player steps outside the exercise to think about the note, the exercise has stopped working.
 
+![The same note landing on a running exercise twice: once acted on with the line unbroken, and once considered, which opens a gap in the activity.](/images/through-without-stopping.svg)
+
+*Which is why the coaching phrases are all imperatives — an instruction you can obey without parsing is the only kind that fits through.*
+
 **What side-coaching sounds like — words of empowerment, not authority:**
 - "Use your where!" — redirects attention to the environment
 - "Heighten what's going on!" — intensifies the core dynamic

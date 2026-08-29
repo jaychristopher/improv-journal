@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="68">ACTED ON</text>
+  <line class="dg-ink" x1="150" y1="64" x2="376" y2="64" />
+  <rect class="dg-accent-fill" x="249" y="58" width="2" height="12" />
+  <text class="dg-note" x="16" y="92">the note arrives and nothing stops</text>
+
+  <text class="dg-eyebrow" x="16" y="148">CONSIDERED</text>
+  <line class="dg-ink" x1="150" y1="144" x2="240" y2="144" />
+  <rect class="dg-accent-fill" x="249" y="138" width="2" height="12" />
+  <line class="dg-ink" x1="290" y1="144" x2="376" y2="144" />
+  <text class="dg-note" x="16" y="172">the player leaves to think about it</text>
+</svg>
