@@ -37,6 +37,10 @@ Before delivering your offer, ask: could I say something simpler that would serv
 
 Every offer has a processing cost for your partner. Complex offers (new characters, unusual premises, layered irony) are expensive. Simple offers (clear emotions, obvious relationships, grounded reactions) are cheap. Your job is to spend the shared bandwidth on connection, not on comprehension.
 
+![The same fixed bandwidth split two ways: a simple offer leaves nearly all of it for connection, and an elaborate one spends most of it on being understood.](/images/bandwidth-split.svg)
+
+*The cyborg is not a worse idea; it is a more expensive one.*
+
 ## How to practice
 
 - In warm-ups, respond to every prompt with the *first* thing that comes to mind, even if it feels boring.

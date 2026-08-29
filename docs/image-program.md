@@ -142,6 +142,24 @@ artefact.**
 
 ---
 
+### `dg-rule` is structure, never content
+
+Caught three times and worth stating as a rule. `dg-rule` is
+`color-mix(in srgb, currentColor 24%, transparent)` at stroke-width 1 — enough for a
+header underline or a stratum divider, and not enough for any line a reader has to
+see in order to read the diagram.
+
+The three: `model-of-their-model` drew the signal channel with it and the channel
+looked disconnected from the block it left; `the-model-fills-up` drew a gauge track
+with it and the scale vanished; `bandwidth-split` drew the comprehension share of a
+two-part bar with it and the smaller share became invisible, which destroyed the one
+thing the diagram existed to show.
+
+The tell is grammatical: if the line is a **noun** in the sentence the diagram is
+making — a channel, a track, a share — it is content and wants `dg-muted` or
+`dg-ink`. If it is punctuation between other things, `dg-rule` is right. None of
+this is visible in the source and all of it passes the guards.
+
 ## Inventory
 
 Ordered by value, which here means: pages that Search Console already shows surfacing,
