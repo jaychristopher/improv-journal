@@ -35,6 +35,10 @@ Two players face each other. Player A moves slowly; Player B mirrors A's movemen
 2. **Switch.** B leads, A follows. Same discipline.
 3. **Neither leads.** This is the exercise's peak — "Who is the mirror?" becomes unanswerable. Both players follow. Movement emerges from the space between them rather than from either individual. Spolin called this the exercise reaching its ideal state. Contemporary teachers call it **"Follow the Follower."**
 
+![Three stages of the same exercise: one leads, then the other leads, then neither does and the movement appears in the space between them.](/images/who-is-the-mirror.svg)
+
+*"Follow the follower" stops being a paradox once you can see that the third row has no arrow in it.*
+
 ## Side-coaching
 
 "Slower." "Stay with your partner's eyes." "Don't anticipate — respond." "Who is the mirror? Can you tell?" "Let the movement come from neither of you."
