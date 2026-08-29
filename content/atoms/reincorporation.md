@@ -38,6 +38,10 @@ Something is established early — a name, an object, a detail, an emotional bea
 - **Callback** is a **comedy** technique. The element returns for a laugh — recognition and surprise. A callback doesn't need to advance the narrative.
 - **The overlap:** All callbacks are technically reincorporations (bringing something back). Not all reincorporations are callbacks. In improv comedy, the two often coincide — but the intention differs: reincorporation serves the story, callback serves the laugh.
 
+![The callback span sits entirely inside the reincorporation span: every callback is a reincorporation, and the parts outside it work without being funny.](/images/callback-inside-reincorporation.svg)
+
+*Chekhov's gun is the outer band, not the inner one.*
+
 ## Chekhov's gun as the theater equivalent
 
 "If there is a gun on the wall in Act 1, it must go off by Act 3." The principle is about narrative economy and audience trust — every element introduced creates an expectation. Reincorporation is Chekhov's gun applied to improvisation, with the added challenge that the improviser must *retrospectively* recognize what they've "hung on the wall."
