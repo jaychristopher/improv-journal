@@ -37,6 +37,10 @@ Guests stop being people and become a sequence of clues. Given "postman", the pl
 
 The fix is `obvious-choice` applied to behaviour rather than to premise. Pick the most obvious thing a postman would want at a party and then simply want it. The clue arrives as a by-product of playing the person, which is both funnier and easier than engineering it.
 
+![Two routes to the same clue: one aims straight at it and delivers a puzzle, the other plays the person and the clue comes off the side of it.](/images/the-clue-comes-off-the-side.svg)
+
+*Both rows deliver the clue; only one of them also delivers a party.*
+
 ## Running it well
 
 - **Three guests is the ceiling.** Four produces a queue, and the fourth waits eight minutes to do ninety seconds of work.

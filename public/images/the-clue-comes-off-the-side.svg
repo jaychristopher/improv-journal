@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">AIM AT THE CLUE</text>
+  <line class="dg-muted" x1="170" y1="60" x2="254" y2="60" />
+  <path class="dg-muted" d="M248 55 L254 60 L248 65" />
+  <text class="dg-secondary" x="264" y="64">the clue</text>
+  <text class="dg-note" x="16" y="92">a puzzle assembled at the host</text>
+
+  <text class="dg-eyebrow" x="16" y="150">PLAY THE PERSON</text>
+  <line class="dg-ink" x1="170" y1="146" x2="254" y2="146" />
+  <path class="dg-ink" d="M248 141 L254 146 L248 151" />
+  <text class="dg-secondary" x="264" y="150">the person</text>
+
+  <line class="dg-accent" x1="210" y1="152" x2="248" y2="182" />
+  <text class="dg-note-accent" x="258" y="186">the clue</text>
+
+  <text class="dg-note" x="16" y="210">a party, with the clue inside it</text>
+</svg>
