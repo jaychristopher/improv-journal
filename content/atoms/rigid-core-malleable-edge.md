@@ -24,6 +24,10 @@ Beliefs are not defended uniformly. Every belief system has a *core* — the ide
 
 This is the corollary that makes `belief-as-architecture` actionable. If beliefs were uniformly load-bearing, every difficult conversation would be a wall. They're not. The architecture has rigidity gradients, and most of the surface area is at the edge.
 
+![A rigidity profile across a belief system: a narrow tall core in the middle that rejects contact, with wide low edges either side that negotiate.](/images/the-rigidity-profile.svg)
+
+*The same sentence lands differently depending only on where along this profile it points.*
+
 ## Where the core lives
 
 The core is anything load-bearing for identity: *what kind of person I am, what I believe in, what side I am on, what my work means*. Touch it directly and the defense reflex fires before the content is processed. The signature of a core hit is disproportionate response — speed, heat, frame-shift — which is exactly the signal you'd expect from a structural threat.
