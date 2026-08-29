@@ -76,6 +76,10 @@ The difference is what is being committed *to*. Commitment attaches to what is t
 
 The test is diagnostic and quick: **if your partner changed something significant, would your next move change?** If yes, you are committed to the scene. If no, you are committed to a plan, and `bulldozing` is what that looks like from the other side. `be-changeable` is not a counterweight to commitment but its companion — the paradox above is the whole point, and the failure is not too much commitment but commitment pointed at the wrong object.
 
+![The same move anchored two ways: commitment reaches back to something inside the scene, stubbornness to something chosen before the scene began.](/images/what-the-move-is-anchored-to.svg)
+
+*Which is why ten seconds is roughly how long it takes to tell them apart.*
+
 ## The same move outside a scene
 
 A half-made decision costs more than either version of the decision, which is the mechanism transferred intact.
