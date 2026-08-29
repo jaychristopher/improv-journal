@@ -55,6 +55,10 @@ The graph's own structure mirrors curriculum progression:
 - **Techniques** (yes-and, initiation, editing, etc.) are the *specific skills* taught level by level
 - **Exercises** are the *vehicles* at every level — and the progression through exercises IS the curriculum
 
+![Three layers against four levels: principles run continuously, techniques arrive one level at a time, and exercises do both — present throughout and progressing.](/images/three-layers-four-levels.svg)
+
+*"A progression, not a schedule" is the difference between the second row and the third.*
+
 ## The teacher's judgment call
 
 Every class is different. The curriculum provides a map; the teacher reads the room and adjusts. Some groups need more time on listening before moving to scene work. Some groups are ready for game earlier than expected. The curriculum is a progression, not a schedule.
