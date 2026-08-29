@@ -41,6 +41,10 @@ The distinction is worth keeping because the two have different fixes. Self-moni
 
 Self-monitoring also has a property the others lack: it compounds. Evaluating your performance produces a judgement, the judgement produces anxiety, and anxiety is itself something to monitor. Planning does not feed itself that way, which is why self-monitoring is the version that turns a bad moment into a bad scene.
 
+![Planning runs once and ends, while evaluating leads to a judgement, the judgement to anxiety, and the anxiety back round to something else worth evaluating.](/images/the-loop-that-compounds.svg)
+
+*Only one of these two shapes can turn a bad moment into a bad scene.*
+
 ## Why it happens
 
 Multiple roots. **Distrust** — you don't trust you'll have something to say if you don't prepare it. **Perfectionism** — you need the line to be good before you'll release it. **Self-judgment** — you're auditioning your ideas before an internal critic, and the critic keeps rejecting. (Internal computation often IS judgment running in real-time — the voice in your head is a terrible scene partner.) **Trained habit** — school and work reward planning; the computation reflex is deeply grooved. Spolin named this the "approval/disapproval syndrome." And underneath all of these: **ego** — "I need to be good" triggers the retreat into the head.

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="48">PLANNING</text>
+  <text class="dg-note" x="170" y="48">consumes capacity, then it is over</text>
+  <line class="dg-muted" x1="60" y1="80" x2="320" y2="80" />
+  <path class="dg-muted" d="M314 75 L320 80 L314 85" />
+
+  <text class="dg-eyebrow" x="16" y="140">SELF-MONITORING</text>
+  <text class="dg-note-accent" x="170" y="140">the verdict becomes the next input</text>
+
+  <text class="dg-secondary" x="60" y="180" text-anchor="middle">evaluate</text>
+  <line class="dg-ink" x1="94" y1="176" x2="140" y2="176" />
+  <path class="dg-ink" d="M134 171 L140 176 L134 181" />
+  <text class="dg-secondary" x="190" y="180" text-anchor="middle">judgement</text>
+  <line class="dg-ink" x1="230" y1="176" x2="300" y2="176" />
+  <path class="dg-ink" d="M294 171 L300 176 L294 181" />
+  <text class="dg-secondary" x="330" y="180" text-anchor="middle">anxiety</text>
+
+  <path class="dg-accent" d="M330 192 Q195 240 60 192" />
+  <path class="dg-accent-fill" d="M60 184 L54 196 L66 196 Z" />
+</svg>
