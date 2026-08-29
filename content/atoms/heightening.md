@@ -79,6 +79,10 @@ TJ and Dave heighten by narrowing. A scene intensifies because a character gets 
 
 The confusion is between two different things sharing a word. **Amplitude** is how loud the behaviour is. **Stakes** are how much the thing matters to the people in it. Pattern heightening raises amplitude and usually raises stakes with it, which is why the two get taught as one move. But a scene where the volume climbs and nothing has come to matter more is not heightening; it is repetition performed with increasing effort, and audiences read it accurately as running out of material.
 
+![Amplitude and stakes move independently: pattern heightening raises both, TJ and Dave lower amplitude while raising stakes, and mere repetition raises amplitude while the stakes stay flat.](/images/amplitude-and-stakes.svg)
+
+*The two get taught as one move because the top row is the common case, not because it is the definition.*
+
 The usable test is what would happen if the next beat were played smaller. If the scene would lose nothing, the escalation was decorative. If it would become unbearable, the stakes were doing the work all along and the volume was optional.
 
 ## Specific sources
