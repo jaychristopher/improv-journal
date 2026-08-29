@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 188" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="60">WHAT YOU NOTICE</text>
+  <line class="dg-ink" x1="200" y1="52" x2="200" y2="68" />
+  <line class="dg-ink" x1="224" y1="52" x2="224" y2="68" />
+  <line class="dg-ink" x1="248" y1="52" x2="248" y2="68" />
+  <line class="dg-ink" x1="272" y1="52" x2="272" y2="68" />
+  <line class="dg-ink" x1="296" y1="52" x2="296" y2="68" />
+  <line class="dg-ink" x1="320" y1="52" x2="320" y2="68" />
+  <text class="dg-note" x="16" y="84">a pattern, its shape, where it could go</text>
+
+  <text class="dg-eyebrow" x="16" y="144">WHAT YOU DO</text>
+  <rect class="dg-accent-fill" x="199" y="136" width="2" height="16" />
+  <text class="dg-note-accent" x="16" y="168">the obvious thing, again</text>
+</svg>
