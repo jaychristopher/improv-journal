@@ -34,6 +34,10 @@ Steering is harder to spot than blocking. A blocker says "no." A steerer says "y
 ## How it manifests (the two hardest to spot)
 
 - **Emotional armor:** You accept factual offers but refuse emotional ones. The words enter; the feelings don't. Your character remains unmoved regardless of what happens. This is the most insidious form because it looks like good improv from the outside.
+
+![Two incoming lines meet the same barrier: the words pass straight through and carry on, while the feelings stop at it and go no further.](/images/what-gets-through.svg)
+
+*The barrier is invisible from the front, because the line that crosses it is the one an audience can hear.*
 - **Topic redirecting:** Your partner establishes an emotional reality. You acknowledge it, then immediately steer toward your preferred topic. "Yes, I know you're scared, but let's talk about the mission."
 
 ## What it feels like to be steered

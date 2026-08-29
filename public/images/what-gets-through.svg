@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="36">EMOTIONAL ARMOR</text>
+
+  <line class="dg-ink" x1="230" y1="64" x2="230" y2="156" />
+
+  <text class="dg-secondary" x="16" y="104">the words</text>
+  <line class="dg-ink" x1="110" y1="100" x2="344" y2="100" />
+  <path class="dg-ink" d="M338 95 L344 100 L338 105" />
+
+  <text class="dg-secondary" x="16" y="140">the feelings</text>
+  <line class="dg-muted" x1="110" y1="136" x2="218" y2="136" />
+  <rect class="dg-accent-fill" x="217" y="128" width="2" height="16" />
+
+  <text class="dg-note" x="16" y="186">from the other side, offers land and disappear</text>
+</svg>
