@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">PERFORMANCE</text>
+
+  <line class="dg-rule" x1="60" y1="44" x2="60" y2="190" />
+  <line class="dg-rule" x1="60" y1="190" x2="376" y2="190" />
+
+  <path class="dg-ink" d="M70 180 C110 60, 190 60, 370 172" />
+
+  <line class="dg-accent" x1="167" y1="92" x2="167" y2="190" />
+  <line class="dg-muted" x1="295" y1="132" x2="295" y2="190" />
+
+  <text class="dg-eyebrow" x="16" y="212">AROUSAL</text>
+  <text class="dg-secondary" x="167" y="212" text-anchor="middle">where it actually sits</text>
+  <text class="dg-note" x="295" y="212" text-anchor="middle">where the room aims</text>
+
+  <text class="dg-note-accent" x="16" y="236">the more demanding the work, the lower the arousal it wants</text>
+</svg>
