@@ -90,6 +90,10 @@ Counter-intuitively, presence is more difficult with a long-standing partner tha
 
 Prediction is the enemy of reception, and prediction gets *better* with familiarity. With somebody you have played with for years, or lived with for a decade, your model of them is accurate enough that you can generate their likely next move and respond to that instead — and be right often enough that the shortcut never gets punished. The exchange proceeds smoothly and neither person is quite there.
 
+![A gauge of how well you can predict a partner: nearly empty with a stranger, nearly full after years together, and the fuller it is the less reception is needed.](/images/the-model-fills-up.svg)
+
+*Strangers are not better partners; they just make the shortcut unavailable.*
+
 That is the failure `discovery` exists against: two people running accurate models of each other produce competent, familiar work and nothing either of them did not already know. The tell is that nothing surprises you, which is easy to mistake for being in sync.
 
 Strangers force presence because the model is empty. The skill is keeping it with the people whose model is full.

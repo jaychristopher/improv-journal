@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="150" y="28">YOUR MODEL OF THEM</text>
+
+  <text class="dg-eyebrow" x="32" y="60">A STRANGER</text>
+  <line class="dg-rule" x1="150" y1="56" x2="330" y2="56" />
+  <rect class="dg-accent-fill" x="150" y="54" width="18" height="4" />
+  <text class="dg-note" x="32" y="84">nothing to predict from, so you receive</text>
+
+  <rect class="dg-accent-fill" x="16" y="124" width="2" height="44" />
+  <text class="dg-eyebrow" x="32" y="136">TEN YEARS IN</text>
+  <line class="dg-rule" x1="150" y1="132" x2="330" y2="132" />
+  <rect class="dg-accent-fill" x="150" y="130" width="168" height="4" />
+  <text class="dg-note" x="32" y="160">prediction is usually right, so reception becomes optional</text>
+
+  <text class="dg-note-accent" x="32" y="200">accuracy is what makes the shortcut safe to take</text>
+</svg>
