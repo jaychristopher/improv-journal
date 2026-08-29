@@ -27,6 +27,10 @@ Rest Beat is the return to base reality between heightened beats of the game. Re
 
 A scene is like a piece of music. Tension requires resolution. If a song is all climax, it's just screaming. The game beats are crescendos; the rest beats are decrescendos back to a baseline. The overall shape of a good scene is a series of waves, each cresting higher than the last — with valleys between.
 
+![A scene drawn as rising crests with valleys between them, against a flat line held at the top where nothing rises because nothing has dropped.](/images/crests-need-valleys.svg)
+
+*The valleys are not the scene resting; they are what the next crest gets measured from.*
+
 ## What a rest beat looks like
 
 - **Return to the mundane activity:** The characters were doing dishes before the game kicked in. Between beats, they go back to doing dishes.

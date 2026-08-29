@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="60" y="32">all climax, no valleys</text>
+  <line class="dg-muted" x1="60" y1="40" x2="360" y2="40" />
+
+  <path class="dg-ink" d="M60 170 C80 140 90 130 110 130 C130 130 140 145 160 155 C180 105 190 95 210 95 C230 95 240 110 260 125 C280 70 290 55 310 55 C330 55 340 72 360 90" />
+
+  <rect class="dg-accent-fill" x="159" y="149" width="2" height="12" />
+  <rect class="dg-accent-fill" x="259" y="119" width="2" height="12" />
+
+  <text class="dg-note-accent" x="16" y="200">without the valleys, the crests stop registering</text>
+</svg>
