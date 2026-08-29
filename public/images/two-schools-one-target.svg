@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="40" y="36">Napier · Hines</text>
+  <text class="dg-note" x="360" y="36" text-anchor="end">Johnstone</text>
+
+  <text class="dg-secondary" x="40" y="58">bring something in</text>
+  <text class="dg-secondary" x="360" y="58" text-anchor="end">assume an offer exists</text>
+
+  <line class="dg-ink" x1="48" y1="78" x2="140" y2="78" />
+  <path class="dg-ink" d="M134 73 L140 78 L134 83" />
+  <line class="dg-ink" x1="352" y1="78" x2="260" y2="78" />
+  <path class="dg-ink" d="M266 73 L260 78 L266 83" />
+
+  <line class="dg-rule" x1="40" y1="110" x2="376" y2="110" />
+  <line class="dg-accent" x1="150" y1="110" x2="250" y2="110" />
+
+  <text class="dg-eyebrow" x="40" y="134">ARRIVES EMPTY</text>
+  <text class="dg-eyebrow" x="376" y="134" text-anchor="end">ARRIVES WITH A PLAN</text>
+
+  <text class="dg-note-accent" x="200" y="158" text-anchor="middle">specific but not imported</text>
+
+  <text class="dg-note" x="16" y="188">opposite instructions, one target</text>
+</svg>

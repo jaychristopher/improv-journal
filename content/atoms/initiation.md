@@ -90,6 +90,10 @@ This lands directly against the Napier and Hines lineage that produced most of t
 
 The two schools are answering different failures, which is why both instructions are correct in the room each was written for. Told to bring something, a hesitant performer stops waiting. Told to assume an offer exists, a performer who arrives with a fully-formed idea stops steamrolling the scene that was already starting.
 
+![Two opposite instructions aimed at opposite failures: one pushes the performer who arrives empty, the other pushes the one who arrives with a plan, and both point at the same middle.](/images/two-schools-one-target.svg)
+
+*The synthesis below is the middle of this line, given a name.*
+
 The synthesis most working improvisers land on is that the first offer should be *specific* but not *imported*. Enter already doing something, and let what it is be determined by what is in front of you rather than by what you thought of in the wings.
 
 ## Specific sources
