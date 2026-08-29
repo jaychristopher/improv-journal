@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 234" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="215" y="72" text-anchor="middle">enables</text>
+  <line class="dg-muted" x1="160" y1="84" x2="264" y2="84" />
+  <path class="dg-muted" d="M258 79 L264 84 L258 89" />
+
+  <text class="dg-eyebrow" x="130" y="104" text-anchor="middle">TRUST</text>
+  <text class="dg-eyebrow" x="300" y="104" text-anchor="middle">VULNERABILITY</text>
+
+  <line class="dg-muted" x1="245" y1="120" x2="165" y2="120" />
+  <path class="dg-muted" d="M171 115 L165 120 L171 125" />
+  <text class="dg-note" x="205" y="140" text-anchor="middle">produces</text>
+
+  <line class="dg-accent" x1="300" y1="184" x2="300" y2="130" />
+  <path class="dg-accent-fill" d="M300 122 L294 134 L306 134 Z" />
+  <text class="dg-note-accent" x="300" y="204" text-anchor="middle">somebody goes first</text>
+
+  <text class="dg-note" x="16" y="226">small enough that being mishandled is cheap</text>
+</svg>
