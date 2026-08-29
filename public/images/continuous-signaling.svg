@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 276" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="200" y="28" text-anchor="middle">when the channels disagree, which one is believed</text>
+
+  <text class="dg-note" x="120" y="52" text-anchor="middle">believed</text>
+  <line class="dg-ink" x1="120" y1="212" x2="120" y2="76" />
+  <path class="dg-ink" d="M114 75 L120 68 L126 75" />
+
+  <text class="dg-secondary" x="210" y="80" text-anchor="middle">physical</text>
+  <text class="dg-secondary" x="210" y="112" text-anchor="middle">temporal</text>
+  <text class="dg-secondary" x="210" y="144" text-anchor="middle">spatial</text>
+  <text class="dg-secondary" x="210" y="176" text-anchor="middle">vocal</text>
+  <text class="dg-secondary" x="210" y="208" text-anchor="middle">words</text>
+
+  <rect class="dg-accent-fill" x="299" y="76" width="2" height="134" />
+  <path class="dg-accent-fill" d="M300 220 L294 210 L306 210 Z" />
+  <text class="dg-note-accent" x="300" y="238" text-anchor="middle">controlled</text>
+
+  <text class="dg-note" x="200" y="264" text-anchor="middle">the only channel you fully control is the one nobody believes</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 264" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="28">the same channels go first, in the same order</text>
+  <line class="dg-rule" x1="200" y1="44" x2="200" y2="232" />
+
+  <text class="dg-secondary" x="16" y="60">everything is coming in</text>
+  <line class="dg-ink" x1="212" y1="56" x2="376" y2="56" />
+
+  <text class="dg-secondary" x="16" y="100">tone goes first</text>
+  <line class="dg-ink" x1="212" y1="96" x2="344" y2="96" />
+
+  <text class="dg-secondary" x="16" y="140">then physical context</text>
+  <line class="dg-ink" x1="212" y1="136" x2="312" y2="136" />
+
+  <text class="dg-secondary" x="16" y="180">then habit takes over</text>
+  <line class="dg-ink" x1="212" y1="176" x2="280" y2="176" />
+
+  <text class="dg-note-accent" x="16" y="220">freeze</text>
+  <rect class="dg-accent-fill" x="212" y="215" width="24" height="2" />
+
+  <text class="dg-note" x="212" y="244">you can locate someone on it</text>
+</svg>

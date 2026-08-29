@@ -43,6 +43,10 @@ A single agent must simultaneously generate offers, maintain the environment, tr
 
 Each agent sees the scene from one vantage point. The scene's full reality exists only in the overlap of all perspectives. This is why the audience often understands something the performers don't — they hold the meta-view that no individual performer can access.
 
+![Each performer sees part of the scene; the scene's reality is the overlap between them; the audience holds the whole span, a view neither performer has.](/images/interdependence.svg)
+
+*No single body can hold the full mind, which is the Close tradition's "one mind, many bodies" stated as geometry.*
+
 The Close tradition's concept of "one mind, many bodies" describes the emergent capacity that arises when multiple agents operate interdependently. No single body can hold the full mind. This emergence requires trust — without it, interdependence degrades into polite cooperation, which is a different system entirely (see `trust`).
 
 ## The distinction from Be Supportive

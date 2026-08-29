@@ -46,6 +46,10 @@ Decay is proportional to time since last reference. A fact established and then 
 
 Physical facts decay slower than spoken ones. A wall you keep opening and a door you keep walking through survive far longer than a relationship announced once in dialogue, because `space-work` re-signals continuously while a line of dialogue signals once. That is the reason experienced performers keep touching the `environment` even when the scene has moved on to something else.
 
+![Two facts over the same scene: a physical one touched repeatedly survives the whole span, a spoken one stated once fades early.](/images/shared-reality-fragility.svg)
+
+*Each mark is a re-signal. Space work supplies them continuously; a line of dialogue supplies one and then stops.*
+
 And the more that has been established, the faster the whole thing degrades. Every added fact is another thing requiring maintenance, which is why elaborate premises collapse more readily than plain ones and why `be-simple` is a structural instruction rather than an aesthetic preference.
 
 ## The signs a reality is decaying

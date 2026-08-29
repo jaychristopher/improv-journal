@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="48">THE OFFER</text>
+  <text class="dg-secondary" x="140" y="48">“I have a gun”</text>
+
+  <line class="dg-ink" x1="40" y1="64" x2="40" y2="176" />
+
+  <line class="dg-ink" x1="40" y1="104" x2="128" y2="104" />
+  <text class="dg-secondary" x="140" y="108">“that’s your finger”</text>
+  <text class="dg-note" x="140" y="126">it meant nothing</text>
+
+  <rect class="dg-accent-fill" x="40" y="175" width="88" height="2" />
+  <text class="dg-secondary" x="140" y="180">“the gun I gave you”</text>
+  <text class="dg-note-accent" x="140" y="198">it meant everything</text>
+
+  <text class="dg-note" x="16" y="222">the meaning is settled by the response, not by the offer</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 208" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="28">a refusal does not delete an offer</text>
+  <line class="dg-rule" x1="176" y1="44" x2="176" y2="190" />
+
+  <text class="dg-eyebrow" x="16" y="84">INTENDED</text>
+  <text class="dg-note" x="16" y="100">the offer removed</text>
+  <line class="dg-ink" x1="188" y1="80" x2="268" y2="80" />
+  <line class="dg-ink" x1="218" y1="72" x2="238" y2="88" />
+  <line class="dg-ink" x1="238" y1="72" x2="218" y2="88" />
+
+  <text class="dg-eyebrow" x="16" y="156">ACTUAL</text>
+  <text class="dg-note" x="16" y="176">the room holds both</text>
+  <line class="dg-ink" x1="188" y1="152" x2="268" y2="152" />
+  <text class="dg-note" x="228" y="176" text-anchor="middle">the offer</text>
+  <rect class="dg-accent-fill" x="280" y="151" width="80" height="2" />
+  <text class="dg-note-accent" x="320" y="176" text-anchor="middle">the refusal</text>
+</svg>

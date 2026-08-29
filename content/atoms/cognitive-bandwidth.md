@@ -31,6 +31,10 @@ When internal computation (planning, evaluating, scripting) and external observa
 
 Under overload, the system doesn't crash — it **degrades**. Channels start dropping. You catch words but miss tone. You hear the offer but lose the physical context. You default to habit instead of responding to what's actually happening. In extreme cases (task saturation), the freeze response activates — the "deer in headlights" that marks a performer whose internal processing has consumed all available capacity for reception.
 
+![Reception narrowing as cognitive load rises: everything comes in at first, then tone goes, then physical context, then habit takes over, and at saturation the performer freezes.](/images/cognitive-bandwidth.svg)
+
+*The order is fixed, which is what makes it diagnostic — a performer catching words but missing tone is at a describable point on the curve rather than simply doing badly.*
+
 The consequence: every cognitive task an improviser adds — planning the next line, monitoring their own performance, evaluating whether the last move was good — directly subtracts from their ability to receive what is happening now. This is why beginners struggle: they are running too many processes on too little hardware. Expertise doesn't add bandwidth. It reduces the processing cost of basic operations, freeing capacity for reception and response.
 
 The same arithmetic explains a frustration that has nothing to do with performing. [Being articulate](/how-to-be-more-articulate) is not a vocabulary problem but a question of how many processes are running while you speak. Standing in front of a room is the same arithmetic under a louder name: most of what gets called stage nerves is capacity spent monitoring yourself rather than delivering the thing, which is the constraint running underneath [public speaking tips](/public-speaking-tips).

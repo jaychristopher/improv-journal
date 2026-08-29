@@ -49,6 +49,10 @@ Spatial is third. Where you stand relative to somebody, whether your body is tur
 
 Vocal is fourth and still beats the words themselves. Tone survives conditions that destroy content: you can be too far away to hear a conversation and still know exactly how it is going.
 
+![The five signal channels ranked by how much they are believed — physical, temporal, spatial, vocal, words — against how much you can control them, which runs the opposite way.](/images/continuous-signaling.svg)
+
+*A receiver discounts the verbal channel in favour of the ones they assume you are not managing.*
+
 ## What you can and cannot control
 
 You cannot stop signalling, so "signal less" is not an available instruction. Standing very still and saying nothing is a strong, specific signal, and usually a worse one than whatever you were trying to avoid.

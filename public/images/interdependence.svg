@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="28">each one sees part of it</text>
+  <line class="dg-rule" x1="152" y1="44" x2="152" y2="212" />
+
+  <text class="dg-secondary" x="16" y="80">performer A</text>
+  <line class="dg-ink" x1="164" y1="76" x2="296" y2="76" />
+
+  <text class="dg-secondary" x="16" y="120">performer B</text>
+  <line class="dg-ink" x1="244" y1="116" x2="376" y2="116" />
+
+  <text class="dg-note-accent" x="16" y="160">the scene</text>
+  <rect class="dg-accent-fill" x="244" y="155" width="52" height="2" />
+
+  <text class="dg-secondary" x="16" y="200">the audience</text>
+  <text class="dg-note" x="16" y="216">sees what neither does</text>
+  <line class="dg-ink" x1="164" y1="196" x2="376" y2="196" />
+</svg>

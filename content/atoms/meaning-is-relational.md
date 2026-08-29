@@ -29,6 +29,10 @@ Meaning is completed in reception. A single mind can intend things, but the mean
 
 This is not a poetic claim — it's a structural one. When you point your finger and shout "I have a gun," the meaning of that offer is indeterminate until your partner responds. If they say "that's your finger," the offer meant nothing. If they say "the gun I gave you for Christmas — you kept it," the offer meant everything. The meaning was never in the offer itself. It was in the space between the offer and the response. This reframes what an offer *is*: not something given, but something constituted by uptake.
 
+![The same offer, two responses: "I have a gun" met with "that's your finger" meant nothing, met with "the gun I gave you" meant everything.](/images/meaning-is-relational.svg)
+
+*Which is why judgment mid-scene is structurally premature — the meaning of any move is incomplete until the response arrives.*
+
 Keith Johnstone built his entire framework on this: offers and status transactions are inherently relational. You cannot have high status alone. You cannot make an offer alone. The fundamental unit of improv is not the performer — it's the interaction.
 
 Paul Merton: *"It's not about what you say. It's about what you hear."* The meaning lives in the reception, not the transmission.
