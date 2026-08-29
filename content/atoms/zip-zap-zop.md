@@ -44,7 +44,11 @@ What it actually trains is where attention lives. A player who is watching the w
 
 ## What to notice
 
-The pace at which the circle stops being three separate signals and becomes one continuous one. Early on you can see each transaction: a send, a receive, a small delay, another send. When it is working the delay disappears and the group sounds like a single rhythm instrument. That is the smallest observable version of `group-mind` — and it arrives within about ninety seconds, which is why the game earns its place at the top of a session.
+The pace at which the circle stops being three separate signals and becomes one continuous one. Early on you can see each transaction: a send, a receive, a small delay, another send. When it is working the delay disappears and the group sounds like a single rhythm instrument.
+
+![The same eight signals twice: early they arrive in pairs with delays between them, and when it is working they are evenly spaced and the delay has gone.](/images/when-the-delay-goes.svg)
+
+*Which is why the useful instruction is about eye contact rather than about speed.* That is the smallest observable version of `group-mind` — and it arrives within about ninety seconds, which is why the game earns its place at the top of a session.
 
 ## Common failures
 

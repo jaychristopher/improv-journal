@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="76">EARLY</text>
+  <line class="dg-ink" x1="150" y1="64" x2="150" y2="76" />
+  <line class="dg-ink" x1="164" y1="64" x2="164" y2="76" />
+  <line class="dg-ink" x1="202" y1="64" x2="202" y2="76" />
+  <line class="dg-ink" x1="216" y1="64" x2="216" y2="76" />
+  <line class="dg-ink" x1="254" y1="64" x2="254" y2="76" />
+  <line class="dg-ink" x1="268" y1="64" x2="268" y2="76" />
+  <line class="dg-ink" x1="306" y1="64" x2="306" y2="76" />
+  <line class="dg-ink" x1="320" y1="64" x2="320" y2="76" />
+  <text class="dg-note" x="16" y="104">send, receive, a delay, send</text>
+
+  <text class="dg-eyebrow" x="16" y="156">WORKING</text>
+  <line class="dg-ink" x1="150" y1="144" x2="150" y2="156" />
+  <line class="dg-ink" x1="174" y1="144" x2="174" y2="156" />
+  <line class="dg-ink" x1="199" y1="144" x2="199" y2="156" />
+  <line class="dg-ink" x1="223" y1="144" x2="223" y2="156" />
+  <line class="dg-ink" x1="247" y1="144" x2="247" y2="156" />
+  <line class="dg-ink" x1="271" y1="144" x2="271" y2="156" />
+  <line class="dg-ink" x1="296" y1="144" x2="296" y2="156" />
+  <line class="dg-ink" x1="320" y1="144" x2="320" y2="156" />
+  <text class="dg-note-accent" x="16" y="184">eight signals, one rhythm</text>
+</svg>
