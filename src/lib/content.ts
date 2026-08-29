@@ -13,6 +13,7 @@ import html from "remark-html";
 
 import { type AudioContentType, getAudioAssetUrl, getRelativeAudioPath } from "./audio";
 import { getAudioDuration, loadAudioManifest } from "./audio-manifest";
+import { inlineDiagrams } from "./diagrams";
 import type {
   AtomFrontmatter,
   AtomType,
@@ -755,11 +756,15 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
     results.push({
       frontmatter: data as T,
       content,
-      html: normaliseGeneratedIds(
-        rewriteLegacyInternalLinks(
-          linkEntities(
-            linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
-            currentUrl,
+      // inlineDiagrams runs outermost: the autolinkers rewrite bare text, and
+      // would otherwise reach inside a diagram's <text> elements.
+      html: inlineDiagrams(
+        normaliseGeneratedIds(
+          rewriteLegacyInternalLinks(
+            linkEntities(
+              linkAtomRefs(linkCitations(linkSources(rendered.toString(), currentUrl), currentUrl)),
+              currentUrl,
+            ),
           ),
         ),
       ),

@@ -64,6 +64,98 @@ body {
   opacity: 0.8;
 }
 
+/* Content diagrams.
+   Inlined into the prose at build time by inlineDiagrams(), so a diagram file
+   carries geometry and class names only — never a colour, a font, or a <style>
+   block, which would leak into the page. Authored at 624px because that is the
+   true content width of a guide (max-w-2xl minus px-6); at that size one SVG
+   user unit is one CSS pixel and an 11px label renders at 11px. */
+.dg {
+  --dg-ink: currentColor;
+  --dg-ink-strong: var(--foreground-strong);
+  --dg-ink-muted: #5f5f5f;
+  --dg-rule: color-mix(in srgb, currentColor 24%, transparent);
+  --dg-accent: var(--link);
+  --dg-paper: var(--surface);
+
+  /* No `width`: the inliner emits width/height from the viewBox, so a diagram
+     renders at its authored size and never scales up. max-width lets it shrink
+     on narrow screens, which is the only case where type falls below its
+     authored px size. */
+  /* Left-aligned, not centred: a diagram narrower than the column should share
+     the prose's left edge, so its label column lines up with the body text. */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+:root.dark .dg {
+  --dg-ink-muted: #8f8f8f;
+}
+
+.dg-ink,
+.dg-muted,
+.dg-rule,
+.dg-accent {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dg-ink {
+  stroke: var(--dg-ink);
+  stroke-width: 1.5;
+}
+.dg-muted {
+  stroke: var(--dg-ink-muted);
+  stroke-width: 1.5;
+}
+.dg-rule {
+  stroke: var(--dg-rule);
+  stroke-width: 1;
+}
+
+/* Emphasis is accent plus weight, never colour alone. Dashed because the one
+   relation we accent — a connection the ensemble discovers rather than plans —
+   would be misdrawn as a solid line. */
+.dg-accent {
+  stroke: var(--dg-accent);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+
+.dg-eyebrow {
+  fill: var(--dg-ink-strong);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.dg-label {
+  fill: var(--dg-ink);
+  font-size: 14px;
+  font-weight: 500;
+}
+.dg-secondary {
+  fill: var(--dg-ink);
+  font-size: 12px;
+}
+.dg-note {
+  fill: var(--dg-ink-muted);
+  font-size: 12px;
+}
+.dg-note-accent {
+  fill: var(--dg-accent);
+  font-size: 12px;
+}
+
+/* Solid counterpart to .dg-accent, for the terminals of an accented path —
+   a dasharray on a 5px arrowhead just renders as debris. */
+.dg-accent-fill {
+  fill: var(--dg-accent);
+  stroke: none;
+}
+
 /* Quiz fade animation */
 @keyframes fade-in {
   from {
