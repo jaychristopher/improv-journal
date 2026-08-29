@@ -42,6 +42,10 @@ Fear produces blocking — fear of the unknown, fear of vulnerability, fear of n
 
 A critical distinction: the word "blocking" operates at **two levels** that must not be confused. A *character* can refuse another character's request — that is drama, not blocking. Blocking in the improv sense is when the *performer* refuses the other *performer's* creative offer. TJ and Dave's characters say no to each other constantly; TJ and Dave the improvisers never block. Character-level denial can be the game of the scene. Performer-level denial kills it.
 
+![Two nested levels: the characters the performers are playing can refuse each other all night, but a refusal between the performers themselves stops the scene.](/images/blocking-two-levels.svg)
+
+*Which is why a scene built almost entirely on agreement can still be full of characters saying no.*
+
 Johnstone catalogued an entire family of avoidance behaviors beyond simple denial — `blocking-taxonomy` sets each one out with the fix it needs. In brief: `wimping` (accepting without adding), cancelling (making an offer and immediately retracting it), bridging (delaying action with preparation), hedging (making offers so vague they can't fail), pimping (forcing your partner to do the creative work). These are blocking's cousins. The taxonomy matters because each requires a different correction.
 
 Napier offers an important counter-frame: the fear of blocking can itself become a trap. Improvisers so terrified of saying no that they robotically "yes, and" everything produce tepid, compliant, lifeless scenes. Mechanical agreement without personal investment is its own form of scene-death. The principle is not "never deny" — it is "serve the scene with your full creative self."
@@ -59,6 +63,10 @@ The reliable tell arrives before the line does — a small pull backwards, a bre
 ### It is faster than accepting
 
 Blocking is cheap. Refusing an offer requires no processing at all, where accepting one means taking in what was established and finding what follows from it. So an unusually quick reply is worth suspecting, particularly one that arrived while your partner was still talking.
+
+![Refusing takes no processing and finishes almost at once; accepting has to take in what was established and find what follows, so it runs much longer.](/images/refusing-is-cheaper.svg)
+
+*Which is why speed is a tell rather than a skill.*
 
 ### The words are boringly consistent
 

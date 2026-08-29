@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-ink" x1="24" y1="24" x2="24" y2="192" />
+
+  <line class="dg-ink" x1="24" y1="32" x2="36" y2="32" />
+  <text class="dg-eyebrow" x="44" y="36">PERFORMERS</text>
+  <text class="dg-secondary" x="44" y="58">the improvisers making the offers</text>
+
+  <line class="dg-rule" x1="76" y1="76" x2="76" y2="152" />
+  <line class="dg-rule" x1="76" y1="84" x2="88" y2="84" />
+  <text class="dg-eyebrow" x="96" y="88">CHARACTERS</text>
+  <text class="dg-secondary" x="96" y="112">the people they are playing</text>
+  <text class="dg-note" x="96" y="136">refusing here is the drama</text>
+
+  <rect class="dg-accent-fill" x="44" y="175" width="24" height="2" />
+  <text class="dg-note-accent" x="76" y="180">refusing here stops the scene</text>
+</svg>
