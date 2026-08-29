@@ -265,10 +265,16 @@ correcting in detail. Four were accurate as written (rows 5, 6, 7, 9). The patte
 derived from titles and keyword data describe the page's *subject*; what a diagram needs is
 the page's *argument*, and those diverge about half the time. Read the source first.
 
-**Neither width-dependent pattern was ever needed.** Both candidate matrices and the one
+**Neither width-dependent pattern was needed in Tier 1.** Both candidate matrices and the one
 decision path dissolved on inspection — the pages turned out to hold partitions, lineages and
-comparisons instead. The styleguide's `overflow-x` exception went unused across all ten. If
-Tiers 2–3 also avoid it, delete it rather than leave an untested escape hatch standing.
+comparisons instead.
+
+**Updated 2026-08-29: the Matrix pattern is now in use.** `matched-status` on the `status`
+atom is a genuine two-by-two, and it took 38 assets to find the first one. The `overflow-x`
+exception is still unused and should still be deleted — but the reasoning recorded for it
+was wrong. A matrix is width-*dependent* in that horizontal position carries meaning; it
+does not follow that a narrow screen breaks it, because `max-width: 100%` scales the whole
+canvas uniformly rather than compressing one axis. A matrix on a phone is a smaller matrix.
 
 Expect the total to fall. Two Tier 1 rows already turned out to be the wrong diagram, and
 the doctrine in the styleguide says a row whose information the prose already carries

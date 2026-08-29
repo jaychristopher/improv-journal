@@ -51,6 +51,10 @@ Status transactions drive scenes. Every interaction involves a negotiation of re
 
 Matched status produces its own distinct dynamics. Both-high generates competition and comedy (two people vying for control). Both-low generates indecision and pathos (two people unable to take charge). These aren't edge cases — they're some of the most recognizable scene dynamics.
 
+![Two players' status makes a two-by-two: the complementary high-low pairings are the taught case, while both-high produces competition and both-low produces indecision.](/images/matched-status.svg)
+
+*Refusing a status shift is refusing to move on this grid at all.*
+
 ## Overcomplication is a status play
 
 Reaching for complexity to appear smart, which actually reads as low status (reaching). **Performing cleverness is a status play** — using irony as a shield, which reads as intellectual superiority but isolates you from the scene. Both sacrifice signal clarity for perceived status.

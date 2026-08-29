@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="130" y="32">THEM HIGH</text>
+  <text class="dg-eyebrow" x="270" y="32">THEM LOW</text>
+  <line class="dg-rule" x1="16" y1="46" x2="384" y2="46" />
+
+  <text class="dg-eyebrow" x="16" y="84">YOU HIGH</text>
+  <rect class="dg-accent-fill" x="120" y="70" width="2" height="42" />
+  <text class="dg-secondary" x="130" y="84">competition</text>
+  <text class="dg-note" x="130" y="104">two vying for control</text>
+  <text class="dg-note" x="270" y="84">complementary</text>
+
+  <text class="dg-eyebrow" x="16" y="160">YOU LOW</text>
+  <text class="dg-note" x="130" y="160">complementary</text>
+  <rect class="dg-accent-fill" x="260" y="146" width="2" height="42" />
+  <text class="dg-secondary" x="270" y="160">indecision</text>
+  <text class="dg-note" x="270" y="180">nobody takes charge</text>
+
+  <text class="dg-note-accent" x="16" y="216">status is the cell, not either coordinate</text>
+</svg>
