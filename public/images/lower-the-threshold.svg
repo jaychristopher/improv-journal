@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="52">SUMMON MORE WILL</text>
+  <line class="dg-rule" x1="200" y1="88" x2="376" y2="88" />
+  <line class="dg-ink" x1="312" y1="88" x2="312" y2="44" />
+  <line class="dg-muted" x1="214" y1="76" x2="296" y2="76" />
+  <path class="dg-muted" d="M290 71 L296 76 L290 81" />
+  <text class="dg-note" x="16" y="112">adds a demand to a system already overloaded</text>
+
+  <text class="dg-eyebrow" x="16" y="160">LOWER THE THRESHOLD</text>
+  <line class="dg-rule" x1="200" y1="196" x2="376" y2="196" />
+  <rect class="dg-accent-fill" x="311" y="180" width="2" height="16" />
+  <line class="dg-muted" x1="214" y1="184" x2="296" y2="184" />
+  <path class="dg-muted" d="M290 179 L296 184 L290 189" />
+  <text class="dg-note-accent" x="16" y="220">cheaper mistakes · a task for the body · no expectation of quality</text>
+</svg>

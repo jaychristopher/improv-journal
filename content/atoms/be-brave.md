@@ -72,6 +72,10 @@ His account in *Impro* is that the improviser does not lack courage. They have b
 
 The practical difference is large. Bravery framed as will asks a performer to summon something under pressure, and pressure is precisely when summoning fails — telling somebody to be braver in the moment they are frozen adds a demand to a system that is already overloaded. Johnstone's framing asks instead for the stakes to be lowered until the censor has nothing to protect against, which is why so much of his teaching is about making failure cheap and public rather than about encouragement.
 
+![The same push meets two different thresholds: one left high, so more will is demanded of an already loaded system, and one lowered until crossing costs almost nothing.](/images/lower-the-threshold.svg)
+
+*The push is identical in both rows; only the height changes.*
+
 What survives of the word is narrower than the page implies. Brave is an accurate **description** of the threshold as it feels from inside, and a poor **instruction** for crossing it. The instructions that work are all indirect: reduce what a wrong choice costs, give the body something to do, remove the audience's expectation of quality. Nobody has ever become spontaneous by deciding to be.
 
 ## Specific sources
