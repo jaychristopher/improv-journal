@@ -44,6 +44,10 @@ The trigger isn't always novelty. Sometimes the game is the most *ordinary* thin
 
 Before the click, both players are in a scene that doesn't know what it's about yet. This is where Be Brave operates — the courage isn't in the discovery, it's in tolerating the *not-yet-discovered*. The willingness to be in a scene where you don't know what's happening, to keep making offers without guarantees, to trust that the game will emerge from honest engagement rather than clever planning. This ambiguity is where beginners panic and reach for complex premises. The experienced improviser stays in the search with patience.
 
+![The distinctive thing is present in the room from early on, but the players only have it later, and the interval between the two is the search.](/images/the-search-gap.svg)
+
+*Patience is a technique here rather than a temperament — the gap is a real interval and it has to be spent.*
+
 It is also the least mystical account available of where comedy comes from. The distinctive thing was already in the room; [funny is mostly catching it](/how-to-be-funny) rather than supplying it.
 
 ## Discovery requires presence

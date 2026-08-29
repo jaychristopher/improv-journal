@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 184" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="68">IN THE ROOM</text>
+  <line class="dg-ink" x1="140" y1="56" x2="140" y2="72" />
+  <line class="dg-ink" x1="140" y1="64" x2="376" y2="64" />
+
+  <line class="dg-accent" x1="140" y1="98" x2="272" y2="98" />
+  <text class="dg-note-accent" x="282" y="102">the search</text>
+
+  <text class="dg-eyebrow" x="16" y="136">NOTICED</text>
+  <line class="dg-ink" x1="272" y1="124" x2="272" y2="140" />
+  <line class="dg-ink" x1="272" y1="132" x2="376" y2="132" />
+
+  <line class="dg-rule" x1="16" y1="166" x2="376" y2="166" />
+  <path class="dg-rule" d="M370 161 L376 166 L370 171" />
+</svg>
