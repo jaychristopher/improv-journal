@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">HEIGHTENING</text>
+  <line class="dg-ink" x1="170" y1="60" x2="320" y2="60" />
+  <line class="dg-ink" x1="190" y1="54" x2="190" y2="66" />
+  <line class="dg-ink" x1="245" y1="54" x2="245" y2="66" />
+  <line class="dg-ink" x1="300" y1="54" x2="300" y2="66" />
+  <text class="dg-secondary" x="190" y="86" text-anchor="middle">rude</text>
+  <text class="dg-secondary" x="245" y="86" text-anchor="middle">ruder</text>
+  <text class="dg-secondary" x="300" y="86" text-anchor="middle">outrageous</text>
+
+  <text class="dg-eyebrow" x="16" y="172">EXPLORATION</text>
+  <rect class="dg-accent-fill" x="199" y="160" width="2" height="12" />
+  <line class="dg-ink" x1="204" y1="166" x2="300" y2="128" />
+  <line class="dg-ink" x1="204" y1="166" x2="300" y2="152" />
+  <line class="dg-ink" x1="204" y1="166" x2="300" y2="180" />
+  <line class="dg-ink" x1="204" y1="166" x2="300" y2="204" />
+  <text class="dg-secondary" x="310" y="132">a waiter</text>
+  <text class="dg-secondary" x="310" y="156">a funeral</text>
+  <text class="dg-secondary" x="310" y="184">their mother</text>
+  <text class="dg-secondary" x="310" y="208">an award</text>
+</svg>

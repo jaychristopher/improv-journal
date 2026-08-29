@@ -33,6 +33,10 @@ This is the move that turns a single funny moment into a playable scene. The fir
 
 If-this-then-what generates exploration. It asks not "how can we make this bigger?" but "where else does this show up?"
 
+![The same trait treated two ways: pushed further along a single axis, or carried unchanged into four different situations that each reveal something new.](/images/further-or-elsewhere.svg)
+
+*Both rows keep the trait fixed; only the second one keeps finding new ground for it.*
+
 ## Example
 
 A job candidate answers "What's your greatest weakness?" with brutal, inappropriate honesty: "I steal office supplies compulsively."
