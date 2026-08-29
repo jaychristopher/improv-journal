@@ -51,6 +51,10 @@ Notice too which players join early and which wait. The late joiners are usually
 
 **Joining without connecting.** A player stands somewhere free and does an unrelated movement. The group becomes several machines, and the fix is physical: coach them to touch, or nearly touch, an existing part.
 
+![The same five parts twice: linked into a single connected shape, and then left with two gaps so the group reads as three separate machines instead of one.](/images/one-machine-or-three.svg)
+
+*The fix is physical because the failure is: nothing is wrong with any single part.*
+
 **Movements that cannot be sustained.** Anything requiring a full-body throw or a deep squat dies inside thirty seconds and takes the rhythm with it.
 
 **Sound without commitment.** Half-voiced noises, because making a machine noise in front of people is mildly embarrassing. The whole machine reads as tentative until somebody goes fully in — which is why the first player matters more than they realise.
