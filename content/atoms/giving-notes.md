@@ -54,6 +54,10 @@ People can only absorb one or two things to work on. If you're spending more tha
 
 Will Hines recommends keeping post-show notes to praise and celebration only. Save comprehensive feedback for rehearsal, where performers can immediately apply it. Post-show notes that are critical can poison the performer's relationship with performing.
 
+![A note given in rehearsal is followed almost at once by another attempt; the same note given after a show sits unused until the next one.](/images/the-gap-after-a-note.svg)
+
+*The same sentence is a skill in rehearsal and a verdict after a show.*
+
 ## Receiving notes connects to Be Thankful
 
 Treat feedback as data, not personal attack. The same cognitive reappraisal that lets you receive a surprising offer on stage — "thank you for this information" — lets you receive a note without ego activation.

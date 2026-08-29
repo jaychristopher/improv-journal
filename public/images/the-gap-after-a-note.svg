@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="150" y="44" text-anchor="middle">the note</text>
+  <text class="dg-note" x="230" y="44" text-anchor="middle">next attempt</text>
+
+  <text class="dg-eyebrow" x="16" y="72">IN REHEARSAL</text>
+  <line class="dg-ink" x1="150" y1="56" x2="150" y2="72" />
+  <line class="dg-ink" x1="230" y1="56" x2="230" y2="72" />
+  <line class="dg-accent" x1="150" y1="64" x2="230" y2="64" />
+  <text class="dg-note" x="150" y="92">it can be tried again at once</text>
+
+  <text class="dg-note" x="356" y="124" text-anchor="middle">the next show</text>
+
+  <text class="dg-eyebrow" x="16" y="152">AFTER A SHOW</text>
+  <line class="dg-ink" x1="150" y1="136" x2="150" y2="152" />
+  <line class="dg-ink" x1="356" y1="136" x2="356" y2="152" />
+  <line class="dg-muted" x1="150" y1="144" x2="356" y2="144" />
+  <text class="dg-note" x="150" y="176">it sits for a week</text>
+
+  <text class="dg-note-accent" x="16" y="206">the value of a note is set by the gap after it</text>
+</svg>
