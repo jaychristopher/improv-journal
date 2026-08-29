@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 208" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="200" y="32" text-anchor="middle">YOUR PARTNER ACCEPTS</text>
+  <line class="dg-accent" x1="200" y1="44" x2="200" y2="156" />
+
+  <text class="dg-secondary" x="184" y="72" text-anchor="end">the offer</text>
+  <text class="dg-note" x="184" y="98" text-anchor="end">yours to revise</text>
+  <text class="dg-note" x="184" y="118" text-anchor="end">revocable</text>
+  <text class="dg-note" x="184" y="138" text-anchor="end">private</text>
+
+  <text class="dg-secondary" x="216" y="72">the fact</text>
+  <text class="dg-note" x="216" y="98">jointly held</text>
+  <text class="dg-note" x="216" y="118">binding</text>
+  <text class="dg-note" x="216" y="138">public</text>
+
+  <line class="dg-rule" x1="16" y1="166" x2="376" y2="166" />
+  <path class="dg-rule" d="M370 161 L376 166 L370 171" />
+
+  <text class="dg-note-accent" x="16" y="192">solo improvisation never crosses this line</text>
+</svg>

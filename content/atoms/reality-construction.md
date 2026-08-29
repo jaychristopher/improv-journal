@@ -45,6 +45,10 @@ The word doing the work is *construction*, and the distinction it draws is what 
 
 Pretending is private and revocable. You hold an image, you can adjust it silently, and nobody else is affected when you do. Construction is public and binding: the moment your partner accepts the freezer, its existence stops being yours to revise. You cannot privately decide it is a beach, because the fact is now jointly held and `irreversibility` will not let you withdraw it.
 
+![Before a partner accepts, an offer is private and revocable; after, the same thing is jointly held and binding, and solo work never reaches that crossing.](/images/the-acceptance-line.svg)
+
+*Pretending has no such line, which is the whole of the difference.*
+
 That is where the stakes in "high-stakes" come from, and they are not emotional stakes. You are continuously accountable to a thing you do not control and cannot unilaterally change, built out of contributions you did not choose, in front of people who will notice the moment it stops cohering. Very little ordinary life puts a person in that position on purpose.
 
 It also explains why solo improvisation is a different art rather than a smaller version of this one. A single performer inventing a world is doing something impressive and it is not construction — there is no second agent whose acceptance makes the thing binding, so nothing can be owed to it.
