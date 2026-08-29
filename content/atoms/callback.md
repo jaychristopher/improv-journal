@@ -51,6 +51,10 @@ The reframing callback is the most powerful because it demonstrates that meaning
 
 Within-scene, the detail returns because the pattern demands it. Across-scene, the detail returns because the *world* demands it. Both work by recognition, which is why the opposite move works too — a [pattern break](/practice/techniques/pattern-break) draws on the same deposit and withdraws it instead.
 
+![Two callback spans over the same run of scenes: a short return inside a single scene, and a wide return reaching from an early scene to a late one.](/images/callback-reach.svg)
+
+*Nothing about the move changes with distance except how much has happened in between.*
+
 ## Organic vs. forced
 
 What makes a callback land is that the current scene creates a genuine need for the detail. The scene *calls for* something, and the earlier detail is the honest answer. A forced callback is a performer serving their memory ("I should mention the gun again"). An organic callback is a performer serving the scene, and the scene happens to need what was already established. The test: did the callback arise from listening to *this moment* or from remembering *that moment*?

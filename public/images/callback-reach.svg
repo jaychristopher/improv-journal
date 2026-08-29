@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="255" y="68" text-anchor="middle">WITHIN A SCENE</text>
+  <path class="dg-ink" d="M238 116 Q255 76 272 116" />
+
+  <text class="dg-eyebrow" x="16" y="128">SCENES</text>
+  <line class="dg-ink" x1="80" y1="124" x2="134" y2="124" />
+  <line class="dg-ink" x1="154" y1="124" x2="208" y2="124" />
+  <line class="dg-ink" x1="228" y1="124" x2="282" y2="124" />
+  <line class="dg-ink" x1="302" y1="124" x2="356" y2="124" />
+
+  <path class="dg-accent" d="M107 132 Q218 186 329 132" />
+  <text class="dg-eyebrow" x="218" y="186" text-anchor="middle">ACROSS SCENES</text>
+
+  <text class="dg-note-accent" x="16" y="214">the same move at two scales — only the reach differs</text>
+</svg>
