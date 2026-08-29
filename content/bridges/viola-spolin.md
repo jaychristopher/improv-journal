@@ -36,6 +36,10 @@ Four things, and they are still the whole method.
 
 **The Point of Concentration.** Every game gives the player one thing to attend to — the ball, the space object, the partner's exact words. It is narrow enough to occupy the part of you that would otherwise be monitoring your own performance, and the behaviour the teacher wanted arrives as a side effect of solving it. `be-present` on this site is a description of what a well-chosen Point of Concentration produces.
 
+![How a Point of Concentration works: one narrow thing to attend to occupies the part of you that monitors your own performance, so the behaviour the teacher wanted arrives as a side effect.](/images/point-of-concentration.svg)
+
+*The skill is never the instruction. It is what solving a narrow problem leaves behind.*
+
 **Side-coaching.** `side-coaching` is calling adjustments while the game is running rather than stopping to explain. It keeps the player inside the experience, and it is the single largest practical difference between a class that improves and one that merely plays. Almost every improv teacher does this. Most do not know whose idea it was.
 
 **Space work.** `space-work` and `environment` as the route into attention — handling an object that is not there requires you to decide where it is, how heavy it is and what it does, and that decision cannot be made from inside your own head. `physicality` before psychology is a Spolin position long before it was anybody else's.

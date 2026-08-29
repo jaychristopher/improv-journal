@@ -56,6 +56,10 @@ Bogart and Landau sort the nine into two families. The division is not decorativ
 
 **Topography.** The pattern traced on the floor. The landscape of movement through space: where the paths run, how wide they are, what shape they leave behind.
 
+![The nine physical Viewpoints in two families: time — tempo, duration, kinesthetic response, repetition — and space — shape, gesture, architecture, spatial relationship, topography — split by whether they notice when or where.](/images/nine-viewpoints.svg)
+
+*The vocal Viewpoints below extend the same logic to sound, and are taught far less often.*
+
 ## The Vocal Viewpoints
 
 Bogart and Landau extend the same logic to sound: **pitch, dynamic, acceleration and deceleration, silence, and timbre.** The claim is that a voice can be worked on with the same externality as a body — that you can adjust the duration of a silence without first deciding what the silence means.

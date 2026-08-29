@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
+import { Diagram } from "@/components/Diagram";
 import { TableOfContents } from "@/components/TableOfContents";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
@@ -127,6 +128,11 @@ export default async function FormatsPage() {
           </Link>{" "}
           guide covers where both came from.
         </p>
+        <Diagram
+          src="/images/longform-vs-shortform.svg"
+          alt="Short form and long form as two timelines: short form four discrete games with the difficulty at each start, long form one continuous piece with the difficulty in the middle."
+          caption="Most groups find one of the two markedly harder, and which one is a better guide to what they should be rehearsing than any ranking of the forms."
+        />
         <p className="text-foreground/70 mb-4">
           It is a Chicago invention and a fairly recent one. Short form had been running for decades
           before{" "}

@@ -33,6 +33,7 @@ Improv offers a more useful framework — not a taxonomy of types, but a way of 
 
 Every moment you're "listening," your attention is doing one of three things. These aren't types you choose — they're modes your brain defaults to based on habit, context, and cognitive load.
 
+![Three listening modes as a channel between the other person and you: broadcast mostly occupied by composing a reply, evaluative passing through a judgment filter, receptive left clear.](/images/three-listening-modes.svg)
 
 *Only the third leaves the path clear — what Spolin meant by receiving, and what improv trains as active listening.*
 

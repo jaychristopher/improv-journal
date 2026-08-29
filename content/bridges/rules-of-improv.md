@@ -42,6 +42,10 @@ Worth settling first, because "the rules of improv" is not one list and the vers
 
 So the five below are the popular composite — the version that circulates, mostly descended from Fey's summary of Close. That is not a criticism of any of them. It is the reason they contradict each other in places: they are answers to different questions, compressed into one list by people who were not in the room for either.
 
+![Where the popular five rules of improv come from: Close to Fey's memoir summary to the list that circulates, with Johnstone standing outside the line of descent entirely.](/images/where-the-rules-came-from.svg)
+
+*That the five contradict each other is the natural result of compressing answers to different questions into a single list.*
+
 ## Rule 1: "Say Yes, And"
 
 **What people think it means:** Agree with everything and add something.

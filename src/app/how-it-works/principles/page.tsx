@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
+import { Diagram } from "@/components/Diagram";
 import { TableOfContents } from "@/components/TableOfContents";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
@@ -159,6 +160,11 @@ export default async function PrinciplesPage() {
           They are not a checklist, and working through them in the order they happen to be listed
           is the least useful way to use them. They stand in a rough dependency.
         </p>
+        <Diagram
+          src="/images/principles-dependency.svg"
+          alt="The nine principles in rough dependency: be present as the precondition, six that build on it, be simple as the corrective they all need, and framing sitting apart from the eight."
+          caption="The page's own ordering rather than the order they are listed in — which is the least useful way to use them."
+        />
         <p className="text-foreground/70 mb-4">
           <Link href="/how-it-works/principles/be-present" className="underline">
             Be Present

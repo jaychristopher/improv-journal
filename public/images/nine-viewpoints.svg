@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="24">one about when things happen, one about where</text>
+
+  <rect class="dg-accent-fill" x="195" y="44" width="2" height="148" />
+
+  <text class="dg-eyebrow" x="16" y="60">VIEWPOINTS OF TIME</text>
+  <line class="dg-rule" x1="16" y1="70" x2="180" y2="70" />
+  <text class="dg-secondary" x="16" y="94">tempo</text>
+  <text class="dg-secondary" x="16" y="118">duration</text>
+  <text class="dg-secondary" x="16" y="142">kinesthetic response</text>
+  <text class="dg-secondary" x="16" y="166">repetition</text>
+
+  <text class="dg-eyebrow" x="208" y="60">VIEWPOINTS OF SPACE</text>
+  <line class="dg-rule" x1="208" y1="70" x2="384" y2="70" />
+  <text class="dg-secondary" x="208" y="94">shape</text>
+  <text class="dg-secondary" x="208" y="118">gesture</text>
+  <text class="dg-secondary" x="208" y="142">architecture</text>
+  <text class="dg-secondary" x="208" y="166">spatial relationship</text>
+  <text class="dg-secondary" x="208" y="190">topography</text>
+</svg>

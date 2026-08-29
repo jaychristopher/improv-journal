@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Diagram } from "@/components/Diagram";
 import { TableOfContents } from "@/components/TableOfContents";
 import { TagFilter } from "@/components/TagFilter";
 import { loadImprovGames } from "@/lib/games";
@@ -292,6 +293,11 @@ export default async function ImprovGamesPage() {
           These get lumped together as &ldquo;improv games&rdquo; and they do three different jobs.
           Reaching for the wrong kind is the most common way a session goes flat.
         </p>
+        <Diagram
+          src="/images/choosing-a-game.svg"
+          alt="Three kinds of improv game: a warm-up runs two minutes with no notes, an exercise is run while nobody is watching, a performance game is built to be watched — and confusing the last two is the classic mistake."
+          caption="The moment players sense an audience they start playing for the laugh, and whatever the exercise was isolating is gone."
+        />
         <ul className="text-foreground/70 mb-4 space-y-2">
           <li>
             <strong>A warm-up</strong> is cheap, fast, and has no wrong answers. Its only job is to

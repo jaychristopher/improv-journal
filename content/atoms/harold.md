@@ -57,6 +57,10 @@ Typically performed by 6-9 improvisers, running 25-40 minutes.
 - **Heightening** — second beats escalate them
 - **Connection** — third beats reveal that it was all one thing
 
+![Six stages of the training-wheels Harold running top to bottom — an opening, three beats of three scenes each, two group games — with each beat labelled discovery, heightening, connection, and material from the first beat returning in the third.](/images/harold-structure.svg)
+
+*The 3×3 is the training version. Experienced teams often graduate to montage or organic longform, keeping the lessons without the structural overhead.*
+
 ## What a beat actually is
 
 The most common point of confusion, and the reason many second beats fail.

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 292" xmlns="http://www.w3.org/2000/svg">
+  <rect class="dg-accent-fill" x="16" y="18" width="2" height="26" />
+  <text class="dg-eyebrow" x="32" y="32">BE PRESENT</text>
+  <text class="dg-note" x="384" y="32" text-anchor="end">the precondition</text>
+
+  <line class="dg-rule" x1="32" y1="52" x2="384" y2="52" />
+
+  <text class="dg-secondary" x="32" y="80">be changeable — what presence is for</text>
+  <text class="dg-secondary" x="32" y="104">be honest · be brave</text>
+  <text class="dg-secondary" x="32" y="128">be supportive · be thankful</text>
+  <text class="dg-secondary" x="32" y="152">be positive — about what you do with an offer</text>
+
+  <line class="dg-rule" x1="32" y1="176" x2="384" y2="176" />
+
+  <text class="dg-eyebrow" x="32" y="204">BE SIMPLE</text>
+  <text class="dg-note" x="384" y="204" text-anchor="end">the corrective they all need</text>
+
+  <line class="dg-rule" x1="32" y1="228" x2="384" y2="228" />
+
+  <text class="dg-eyebrow" x="32" y="256">FRAMING AS ANGLE OF APPROACH</text>
+  <text class="dg-note" x="32" y="274">sits apart — how you enter, not how you behave</text>
+</svg>

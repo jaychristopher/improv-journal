@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="28">WARM-UP</text>
+  <text class="dg-note" x="384" y="28" text-anchor="end">two minutes, no notes</text>
+  <text class="dg-secondary" x="16" y="50">moves attention out of heads and into the room</text>
+
+  <text class="dg-eyebrow" x="16" y="96">EXERCISE</text>
+  <text class="dg-note" x="384" y="96" text-anchor="end">nobody is watching</text>
+  <text class="dg-secondary" x="16" y="118">isolates one skill, with a failure mode you can coach</text>
+
+  <text class="dg-eyebrow" x="16" y="164">PERFORMANCE GAME</text>
+  <text class="dg-note" x="384" y="164" text-anchor="end">built to be watched</text>
+  <text class="dg-secondary" x="16" y="186">rules an audience can follow, a comic engine of its own</text>
+
+  <line class="dg-rule" x1="16" y1="212" x2="384" y2="212" />
+
+  <rect class="dg-accent-fill" x="16" y="228" width="2" height="38" />
+  <text class="dg-note-accent" x="32" y="242">the classic mistake — running an exercise</text>
+  <text class="dg-note-accent" x="32" y="260">as though it were a performance game</text>
+</svg>

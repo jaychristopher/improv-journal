@@ -90,6 +90,10 @@ The circle games above work from about seven upward, because none of them requir
 
 A list of thirty games sorted alphabetically is not much use, because the only question that matters when planning a session is what the group needs. These are grouped by that instead. Each links to the full write-up with setup, progressions and what to watch for.
 
+![Six theatre-game skill areas in three tiers: attention and listening as the foundation, then ensemble, physicality, spontaneity and structure in any order, with emotional range left until later.](/images/what-to-train-first.svg)
+
+*Only the first and last tiers are fixed. The four in the middle are worth reaching for in whatever order the group in front of you needs.*
+
 ### Attention and listening
 
 The starting point, and where most groups need the most time.

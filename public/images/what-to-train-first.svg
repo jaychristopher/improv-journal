@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 284" xmlns="http://www.w3.org/2000/svg">
+  <rect class="dg-accent-fill" x="16" y="16" width="2" height="36" />
+
+  <text class="dg-eyebrow" x="32" y="28">ATTENTION AND LISTENING</text>
+  <text class="dg-note" x="32" y="46">start here — most groups need the most time</text>
+
+  <line class="dg-rule" x1="32" y1="64" x2="384" y2="64" />
+
+  <text class="dg-secondary" x="32" y="96">ensemble and group awareness</text>
+  <text class="dg-secondary" x="32" y="120">physicality and space</text>
+  <text class="dg-secondary" x="32" y="144">spontaneity and committing</text>
+  <text class="dg-secondary" x="32" y="168">structure and recovery</text>
+  <text class="dg-note" x="32" y="196">in any order</text>
+
+  <line class="dg-rule" x1="32" y1="216" x2="384" y2="216" />
+
+  <text class="dg-eyebrow" x="32" y="244">EMOTIONAL RANGE</text>
+  <text class="dg-note" x="32" y="262">usually later — worth not rushing</text>
+</svg>
