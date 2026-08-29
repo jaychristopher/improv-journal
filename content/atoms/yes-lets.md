@@ -53,6 +53,10 @@ It teaches agreement and calls it `accepting-the-offer`, and those are not the s
 
 Nothing in this exercise requires anybody to add. You say yes, you copy, you wait for the next proposal — which is structurally `wimping`, the politest way there is to stop a scene, being drilled in as a positive habit. Groups that run it a great deal produce students who are enthusiastic and contribute nothing, and are puzzled about why their scenes go nowhere when they did everything they were told.
 
+![Set against yes-and, the exercise covers only the first half: acceptance is trained, and the addition that has to follow it is left out entirely.](/images/half-of-yes-and.svg)
+
+*The variant below closes the gap, and costs the thing the plain version exists to protect.*
+
 It is a warm-up for the acceptance half only. The addition half has to be trained by something else, and it is worth saying so in the room rather than letting a group assume they have just practised "yes, and".
 
 ## The variant that answers the objection
