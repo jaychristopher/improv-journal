@@ -44,6 +44,10 @@ Anything another format would deliver with a new scene has to arrive physically 
 - **News comes in.** A phone call, a knock, a thing seen through the window. This is the cheapest device and the easiest to overuse.
 - **Time passes in the room.** The dinner arrives, the drink is finished, the wait ends. Real time is not literal time, and a monoscene can let twenty minutes pass in a sentence if both performers agree it has.
 
+![A monoscene as one unbroken line with the only four ways new material can enter: somebody arrives, somebody leaves, news comes in, or time passes in the room.](/images/monoscene-structure.svg)
+
+*Somebody leaving is often stronger than somebody arriving — the two people left alone are different people than they were with a witness present.*
+
 ## What it trains that nothing else does
 
 Patience, and a specific kind of attention. In a montage a performer can survive on strong initiations, because a fresh scene arrives every three minutes to reward them. In a monoscene the initiations are gone after the first minute, and everything afterwards is made from what is already in the room — the `relationship`, the `base-reality`, the objects handled through `space-work`, and whatever the other person did thirty seconds ago and does not know they did.

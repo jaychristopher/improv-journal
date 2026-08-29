@@ -38,6 +38,10 @@ Micetro is Keith Johnstone's elimination format (also spelled "Maestro"). Indivi
 
 A full Micetro runs 90-120 minutes.
 
+![Micetro as a narrowing field: eight to twelve performers at the start, one voted out by the audience each round, down to a final two or three and a single winner.](/images/micetro-structure.svg)
+
+*The narrowing is the narrative — rising tension and a climactic final that pure scene-based shows lack.*
+
 ## What makes it distinct
 
 Micetro is the only widely performed improv format that creates *individual* accountability. In Harold, montage, or Theatresports, responsibility is distributed across the team. In Micetro, the audience is judging *you*. This changes everything — the fear is real, the stakes are personal, and performers cannot hide.

@@ -39,6 +39,10 @@ The thematic scenes take something a character in that opening wanted, feared or
 
 The run closes the piece: a series of ever-shorter beats, returning to images and lines from everything before. Pace matters at least as much as content here, and a run that slows down to be clever stops being a run.
 
+![A deconstruction: one long unresolved opening scene, then thematic scenes about what that scene was made of rather than what happened next, then a run of ever-shorter beats.](/images/deconstruction-structure.svg)
+
+*The middle scenes may contain none of the opening's characters, which is the whole difference between examining a scene and continuing it.*
+
 ## What makes it different
 
 The Harold asks what else is like this. The Deconstruction asks what that was about. One is associative and the other is analytical, and the difference shows up immediately in how a cast listens — Harold performers listen for patterns they can repeat, and this form needs them listening for what the scene is unable to say.

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 288" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-rule" x1="120" y1="34" x2="120" y2="254" />
+
+  <text class="dg-eyebrow" x="16" y="44">MONOLOGUE</text>
+  <text class="dg-note" x="16" y="60">one word</text>
+  <line class="dg-ink" x1="132" y1="40" x2="344" y2="40" />
+
+  <text class="dg-eyebrow" x="16" y="108">SCENES</text>
+  <text class="dg-note" x="16" y="124">inspired by it</text>
+  <line class="dg-ink" x1="132" y1="104" x2="176" y2="104" />
+  <line class="dg-ink" x1="188" y1="104" x2="232" y2="104" />
+  <line class="dg-ink" x1="244" y1="104" x2="288" y2="104" />
+  <line class="dg-ink" x1="300" y1="104" x2="344" y2="104" />
+
+  <line class="dg-accent" x1="132" y1="128" x2="336" y2="128" />
+  <path class="dg-accent-fill" d="M344 128 L334 123 L334 133 Z" />
+  <text class="dg-note-accent" x="132" y="148">close to the story</text>
+  <text class="dg-note-accent" x="344" y="148" text-anchor="end">further away</text>
+
+  <text class="dg-eyebrow" x="16" y="200">MONOLOGUE</text>
+  <text class="dg-note" x="16" y="216">a new story</text>
+  <line class="dg-ink" x1="132" y1="196" x2="344" y2="196" />
+
+  <text class="dg-eyebrow" x="16" y="252">SCENES</text>
+  <line class="dg-ink" x1="132" y1="248" x2="176" y2="248" />
+  <line class="dg-ink" x1="188" y1="248" x2="232" y2="248" />
+  <line class="dg-ink" x1="244" y1="248" x2="288" y2="248" />
+  <line class="dg-ink" x1="300" y1="248" x2="344" y2="248" />
+
+  <text class="dg-note" x="132" y="278">and so on, for the length of the show</text>
+</svg>

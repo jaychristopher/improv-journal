@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="16" y="28">five two-person scenes, each keeping one character</text>
+  <line class="dg-rule" x1="128" y1="52" x2="128" y2="224" />
+
+  <line class="dg-ink" x1="140" y1="68" x2="240" y2="68" />
+  <text class="dg-secondary" x="252" y="72">A · B</text>
+
+  <line class="dg-ink" x1="140" y1="104" x2="240" y2="104" />
+  <text class="dg-secondary" x="252" y="108">B · C</text>
+
+  <line class="dg-ink" x1="140" y1="140" x2="240" y2="140" />
+  <text class="dg-secondary" x="252" y="144">C · D</text>
+
+  <line class="dg-ink" x1="140" y1="176" x2="240" y2="176" />
+  <text class="dg-secondary" x="252" y="180">D · E</text>
+
+  <line class="dg-ink" x1="140" y1="212" x2="240" y2="212" />
+  <text class="dg-secondary" x="252" y="216">E · A</text>
+
+  <circle class="dg-accent-fill" cx="308" cy="212" r="2.5" />
+  <path class="dg-accent" d="M308 212 H332 V68 H310" />
+  <path class="dg-accent-fill" d="M300 68 L310 63 L310 73 Z" />
+  <text class="dg-note-accent" x="352" y="140" text-anchor="middle" transform="rotate(-90 352 140)">closes the circle</text>
+</svg>

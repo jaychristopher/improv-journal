@@ -35,6 +35,10 @@ Developed by Craig Cackowski in Chicago in the mid-1990s after watching the Schn
 - Scene 4: Character D stays, joined by E
 - Scene 5: Character E stays, joined by A — completing the circle
 
+![La Ronde as five two-person scenes: A and B, then B and C, C and D, D and E, and finally E and A, closing the circle back to the first character.](/images/la-ronde-structure.svg)
+
+*More than seven or eight performers makes the circle too long for an audience to track.*
+
 ## The two-wave variant
 
 Four players perform a first wave of scenes, then a significant off-stage event occurs (a death, an affair, a job loss). The second wave revisits the same pairs, revealing how the event transformed each relationship. This variant makes the format's central revelation explicit: the same person behaves differently depending on who they're with.

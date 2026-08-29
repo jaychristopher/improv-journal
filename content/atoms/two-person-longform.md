@@ -38,6 +38,10 @@ TJ Jagodowski and David Pasquesi (TJ & Dave) performed together for over 15 year
 - **`monoscene`-ish (TJ & Dave style):** A single continuous reality that may shift locations but maintains a grounded, real-time feel. Characters may multiply (both performers play multiple roles) but the world stays coherent. Pacing moves at "the speed of life."
 - **Narrative (Middleditch & Schwartz style):** More plot-driven, building a story with an arc, playing numerous characters, with theatrical editing and time jumps. Higher energy, more cinematic.
 
+![Two ways a duo builds a show: TJ and Dave's single uncut reality above, Middleditch and Schwartz's plot with time jumps below, where every cut is the performers' own.](/images/two-person-longform-structure.svg)
+
+*With no backline to sweep a scene, the decision to end one is always made by one of the two people in it.*
+
 ## What it demands beyond standard scene work
 
 - **Relentless listening** — You cannot tune out for a second. You are "receptacle and generator, speaker and listener, air traffic controller and pilot."

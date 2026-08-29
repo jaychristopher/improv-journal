@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-rule" x1="152" y1="44" x2="152" y2="200" />
+
+  <text class="dg-eyebrow" x="16" y="60">OPENING</text>
+  <text class="dg-note" x="16" y="76">one pair, unresolved</text>
+  <line class="dg-ink" x1="164" y1="56" x2="376" y2="56" />
+
+  <line class="dg-accent" x1="270" y1="66" x2="270" y2="106" />
+  <path class="dg-accent-fill" d="M270 114 L264 104 L276 104 Z" />
+  <text class="dg-note-accent" x="282" y="94">what was it about</text>
+
+  <text class="dg-eyebrow" x="16" y="124">THEMATIC SCENES</text>
+  <text class="dg-note" x="16" y="140">about it, not after it</text>
+  <line class="dg-ink" x1="164" y1="120" x2="230" y2="120" />
+  <line class="dg-ink" x1="237" y1="120" x2="303" y2="120" />
+  <line class="dg-ink" x1="310" y1="120" x2="376" y2="120" />
+
+  <text class="dg-eyebrow" x="16" y="192">THE RUN</text>
+  <text class="dg-note" x="16" y="208">ever shorter</text>
+  <line class="dg-ink" x1="164" y1="188" x2="212" y2="188" />
+  <line class="dg-ink" x1="225" y1="188" x2="265" y2="188" />
+  <line class="dg-ink" x1="278" y1="188" x2="310" y2="188" />
+  <line class="dg-ink" x1="323" y1="188" x2="347" y2="188" />
+  <line class="dg-ink" x1="360" y1="188" x2="376" y2="188" />
+</svg>

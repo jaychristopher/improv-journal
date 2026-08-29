@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 256" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-rule" x1="200" y1="44" x2="200" y2="220" />
+
+  <text class="dg-eyebrow" x="16" y="60">PLATFORM</text>
+  <text class="dg-note" x="16" y="76">where · who · what</text>
+  <line class="dg-ink" x1="212" y1="56" x2="376" y2="56" />
+
+  <text class="dg-eyebrow" x="16" y="116">TILT</text>
+  <text class="dg-note" x="16" y="132">normality is tilted</text>
+  <path class="dg-ink" d="M212 112 H300 L328 128 H376" />
+
+  <text class="dg-eyebrow" x="16" y="196">REINCORPORATION</text>
+  <text class="dg-note" x="16" y="212">returns come faster</text>
+  <line class="dg-ink" x1="212" y1="192" x2="232" y2="192" />
+  <line class="dg-ink" x1="252" y1="192" x2="272" y2="192" />
+  <line class="dg-ink" x1="288" y1="192" x2="308" y2="192" />
+  <line class="dg-ink" x1="320" y1="192" x2="340" y2="192" />
+  <rect class="dg-accent-fill" x="348" y="191" width="20" height="2" />
+
+  <text class="dg-note-accent" x="368" y="216" text-anchor="end">and the story ends</text>
+</svg>

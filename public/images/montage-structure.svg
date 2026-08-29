@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 252" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-note" x="140" y="24">by how much the scenes connect</text>
+  <line class="dg-rule" x1="128" y1="36" x2="128" y2="228" />
+
+  <text class="dg-eyebrow" x="16" y="56">UNCONNECTED</text>
+  <text class="dg-note" x="16" y="72">stands alone</text>
+  <line class="dg-ink" x1="140" y1="52" x2="184" y2="52" />
+  <line class="dg-ink" x1="196" y1="52" x2="240" y2="52" />
+  <line class="dg-ink" x1="252" y1="52" x2="296" y2="52" />
+  <line class="dg-ink" x1="308" y1="52" x2="352" y2="52" />
+
+  <text class="dg-eyebrow" x="16" y="128">CONNECTED</text>
+  <text class="dg-note" x="16" y="144">scenes echo</text>
+  <line class="dg-ink" x1="140" y1="124" x2="184" y2="124" />
+  <line class="dg-ink" x1="196" y1="124" x2="240" y2="124" />
+  <line class="dg-ink" x1="252" y1="124" x2="296" y2="124" />
+  <line class="dg-ink" x1="308" y1="124" x2="352" y2="124" />
+  <path class="dg-accent" d="M162 124 Q246 162 330 124" />
+  <path class="dg-accent" d="M218 124 Q246 144 274 124" />
+
+  <text class="dg-eyebrow" x="16" y="200">THEMATIC</text>
+  <text class="dg-note" x="16" y="216">one theme</text>
+  <line class="dg-ink" x1="140" y1="196" x2="184" y2="196" />
+  <line class="dg-ink" x1="196" y1="196" x2="240" y2="196" />
+  <line class="dg-ink" x1="252" y1="196" x2="296" y2="196" />
+  <line class="dg-ink" x1="308" y1="196" x2="352" y2="196" />
+  <path class="dg-ink" d="M140 208 V216 H352 V208" />
+</svg>

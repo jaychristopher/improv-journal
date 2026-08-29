@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 268" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-rule" x1="152" y1="44" x2="152" y2="228" />
+
+  <text class="dg-eyebrow" x="16" y="60">THE FIELD</text>
+  <text class="dg-note" x="16" y="76">8–12 performers</text>
+  <line class="dg-ink" x1="164" y1="56" x2="376" y2="56" />
+
+  <line class="dg-ink" x1="185" y1="96" x2="355" y2="96" />
+
+  <text class="dg-note" x="16" y="140">one goes each round</text>
+  <line class="dg-ink" x1="206" y1="136" x2="334" y2="136" />
+
+  <line class="dg-ink" x1="227" y1="176" x2="313" y2="176" />
+
+  <text class="dg-eyebrow" x="16" y="220">THE FINAL</text>
+  <text class="dg-note" x="16" y="236">two or three left</text>
+  <rect class="dg-accent-fill" x="248" y="215" width="44" height="2" />
+
+  <text class="dg-note-accent" x="270" y="248" text-anchor="middle">the audience crowns a winner</text>
+</svg>

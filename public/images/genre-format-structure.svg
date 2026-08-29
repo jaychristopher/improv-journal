@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 264" xmlns="http://www.w3.org/2000/svg">
+  <rect class="dg-accent-fill" x="16" y="18" width="2" height="30" />
+  <text class="dg-note-accent" x="32" y="30">the frame arrives with the audience</text>
+  <text class="dg-note" x="32" y="46">faint line = what it leads you to expect</text>
+
+  <line class="dg-rule" x1="152" y1="64" x2="152" y2="248" />
+
+  <text class="dg-eyebrow" x="16" y="92">STRAIGHT</text>
+  <text class="dg-note" x="16" y="108">played straight</text>
+  <line class="dg-rule" x1="164" y1="88" x2="376" y2="88" />
+  <line class="dg-ink" x1="164" y1="94" x2="376" y2="94" />
+
+  <text class="dg-eyebrow" x="16" y="160">SUBVERT</text>
+  <text class="dg-note" x="16" y="176">turned once set up</text>
+  <line class="dg-rule" x1="164" y1="156" x2="376" y2="156" />
+  <path class="dg-ink" d="M164 162 H280 L316 178 H376" />
+
+  <text class="dg-eyebrow" x="16" y="228">HEIGHTEN</text>
+  <text class="dg-note" x="16" y="244">taken to absurdity</text>
+  <line class="dg-rule" x1="164" y1="224" x2="376" y2="224" />
+  <path class="dg-ink" d="M164 230 H280 L316 210 H376" />
+</svg>

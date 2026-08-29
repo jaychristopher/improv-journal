@@ -39,6 +39,10 @@ Theatresports is Keith Johnstone's competitive improv format. Two teams perform 
 
 Two teams (typically 4-5 players each) compete in a series of improvised challenges over roughly 90 minutes. A referee (the "Theatresports judge") runs the match, calling challenges, managing time, and enforcing rules. The audience scores each scene, usually on a 1-5 scale via cards, applause, or other voting mechanisms.
 
+![Theatresports as a loop: the referee calls a challenge, two teams perform it head to head, the audience scores each scene, and that response feeds back as the energy the performers run on.](/images/theatresports-structure.svg)
+
+*The scoring exists to give the audience permission to react, and the reaction is what the performers play on.*
+
 ## The challenge structure
 
 Each round, the referee selects a challenge — a specific game, constraint, or scene type (e.g., "scene in verse," "genre replay," "expert scene"). Teams either compete directly on the same challenge or alternate. Some challenges are head-to-head (same prompt, different teams); others are solo showcases with the opponent team watching.

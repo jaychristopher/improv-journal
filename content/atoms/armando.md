@@ -39,6 +39,10 @@ Created in 1995 at iO Chicago by Adam McKay and Dave Koechner, directed by Del C
 5. The monologist returns every few scenes with a new story, sometimes inspired by the scenes themselves
 6. The cycle repeats for the duration of the show
 
+![An Armando set: a monologue from one audience word, then scenes inspired by it that start close to the story and drift further, then a new monologue, repeating for the show.](/images/armando-structure.svg)
+
+*The second monologue is sometimes inspired by the scenes rather than the other way round, which is what makes it a cycle rather than a repeat.*
+
 ## What makes a good monologist
 
 Authenticity over comedy. Dan Grimm: "You're not here to be a comedian. Just be yourself and tell your story." Specific, vivid details fuel scenes better than generic narratives. Keep it to 3-5 minutes — give performers space.

@@ -51,6 +51,10 @@ Scenes begin to reference, echo, or build on each other. May revisit scenes for 
 
 All scenes explore one theme from different angles. The theme is the game of the show. Different characters and worlds, united by a shared exploration. Example: suggestion "keys" → a scene about a locksmith, a scene about a teenager getting car keys, a scene about someone locked out of their own house — all exploring access, permission, and trust.
 
+![Three kinds of montage over the same run of scenes: unconnected where each stands alone, connected where scenes echo each other, and thematic where all four explore one theme.](/images/montage-structure.svg)
+
+*The links in the middle row are dashed because they are not forced — they emerge because performers are listening across scenes.*
+
 ## The Armando variant
 
 A specific montage form. A monologist tells a true story inspired by the suggestion. The ensemble performs scenes inspired by the monologue. After several scenes, the monologist returns with a new story (sometimes inspired by the scenes). The cycle repeats. This is the format of UCB's legendary ASSSSCAT show.

@@ -34,6 +34,10 @@ Longform improv performed within the conventions of a specific genre — film no
 3. **Heightening conventions to absurdity** — taking genre tropes to their logical extreme
 4. **Genre-specific scene painting** — using cinematic vocabulary (camera angles, lighting, soundtrack) to evoke the world
 
+![Three things genre improv does with a convention the audience already expects: play it straight along the expected line, turn away from it once established, or push past it into absurdity.](/images/genre-format-structure.svg)
+
+*Every other format builds its structure during the show. Genre borrows one the audience walked in with, which is why an ensemble that does not share the references produces pastiche rather than play.*
+
 ## The Movie format
 
 Developed by The Family under Del Close; one of the "Three Mad Rituals" alongside Harold and Deconstruction. Cast scene-paints three locations using screenplay terminology, announces a title, then performs scenes rotating through locations. Backline calls camera directions: close-up, pan, split screen, slow motion, soundtrack cues. Genre conventions drive the scene work. Matt Besser later taught this at UCB as "Feature Feature."

@@ -37,6 +37,10 @@ Gorilla Theatre is Keith Johnstone's format where performers take turns directin
 
 A full Gorilla Theatre runs 60-90 minutes.
 
+![A Gorilla Theatre round: the director pitches, the audience approves it, other performers play it, the audience votes, and the banana or the forfeit lands on the director either way.](/images/gorilla-theatre-structure.svg)
+
+*The performers who actually played the scene are blameless whichever way the vote goes. Only the person who pitched it pays.*
+
 ## What makes it unique
 
 Gorilla Theatre combines three distinct skill sets — *pitching* (selling an idea to an audience), *directing* (shaping other performers' work in real time), and *performing* (executing someone else's vision when you're cast). No other standard improv format demands all three. The banana/forfeit mechanic creates asymmetric stakes: the director bears all the risk. If the scene is bad, the performers are blameless — the director pays.

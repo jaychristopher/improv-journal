@@ -38,6 +38,10 @@ The core metaphor from *Impro*, Ch. 4: *"The improviser has to be like a man wal
 - **`tilt`** — the event that pushes the platform into action, "the balance of normality has been tilted." *Impro for Storytellers* provides pre-set tilt lists to help force the action.
 - **Reincorporation** — the essential narrative skill. "His story can take him anywhere, but he must still balance it, and give it shape, by remembering incidents that have been shelved and reincorporating them." Toward the end, reincorporation accelerates — when all reincorporations have been made, the story is usually finished.
 
+![Johnstone's narrative shape: a platform establishing where and who, a tilt that disturbs it, then reincorporations returning faster and faster until they run out and the story is over.](/images/narrative-longform-structure.svg)
+
+*The ending is not planned. It arrives when the shelved material has all been brought back.*
+
 ## Narrative longform structures
 
 - **The Movie** — Developed by The Family under Del Close; one of the "Three Mad Rituals." Cast scene-paints three locations, announces a title, performs scenes rotating through locations. Backline calls camera directions (close-up, pan, split screen, slow motion). Genre conventions drive the scene work.

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-ink" x1="140" y1="44" x2="140" y2="196" />
+  <path class="dg-ink" d="M134 85 L140 92 L146 85" />
+  <path class="dg-ink" d="M134 157 L140 164 L146 157" />
+
+  <text class="dg-eyebrow" x="16" y="56">DIRECTOR</text>
+  <text class="dg-secondary" x="160" y="56">pitches a scene</text>
+
+  <text class="dg-note" x="160" y="96">the audience approves</text>
+
+  <text class="dg-eyebrow" x="16" y="128">PERFORMERS</text>
+  <text class="dg-secondary" x="160" y="128">play it, blameless</text>
+
+  <text class="dg-note" x="160" y="168">the audience votes</text>
+
+  <text class="dg-eyebrow" x="16" y="200">OUTCOME</text>
+  <text class="dg-secondary" x="160" y="200">a banana or a forfeit</text>
+
+  <circle class="dg-accent-fill" cx="300" cy="200" r="2.5" />
+  <path class="dg-accent" d="M300 200 H340 V56 H310" />
+  <path class="dg-accent-fill" d="M300 56 L310 51 L310 61 Z" />
+  <text class="dg-note-accent" x="360" y="128" text-anchor="middle" transform="rotate(-90 360 128)">both land on the director</text>
+</svg>

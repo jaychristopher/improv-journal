@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 264" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">ONE SCENE, HELD</text>
+  <text class="dg-note" x="16" y="50">no edit to escape through</text>
+
+  <line class="dg-ink" x1="340" y1="68" x2="340" y2="244" />
+
+  <text class="dg-secondary" x="292" y="96" text-anchor="end">somebody arrives</text>
+  <line class="dg-ink" x1="300" y1="92" x2="330" y2="92" />
+  <path class="dg-ink" d="M330 87 L338 92 L330 97" />
+
+  <text class="dg-note-accent" x="292" y="136" text-anchor="end">somebody leaves</text>
+  <rect class="dg-accent-fill" x="300" y="131" width="30" height="2" />
+  <path class="dg-accent-fill" d="M330 126 L340 132 L330 138 Z" />
+
+  <text class="dg-secondary" x="292" y="176" text-anchor="end">news comes in</text>
+  <line class="dg-ink" x1="300" y1="172" x2="330" y2="172" />
+  <path class="dg-ink" d="M330 167 L338 172 L330 177" />
+
+  <text class="dg-secondary" x="292" y="216" text-anchor="end">time passes in the room</text>
+  <line class="dg-ink" x1="300" y1="212" x2="330" y2="212" />
+  <path class="dg-ink" d="M330 207 L338 212 L330 217" />
+</svg>

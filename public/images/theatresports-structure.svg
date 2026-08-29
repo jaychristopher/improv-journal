@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-ink" x1="112" y1="48" x2="112" y2="184" />
+  <path class="dg-ink" d="M106 93 L112 100 L118 93" />
+  <path class="dg-ink" d="M106 153 L112 160 L118 153" />
+
+  <text class="dg-eyebrow" x="16" y="56">REFEREE</text>
+  <text class="dg-secondary" x="132" y="56">calls the challenge</text>
+
+  <text class="dg-eyebrow" x="16" y="116">TWO TEAMS</text>
+  <text class="dg-secondary" x="132" y="116">perform it head to head</text>
+
+  <text class="dg-eyebrow" x="16" y="176">AUDIENCE</text>
+  <text class="dg-secondary" x="132" y="176">scores each scene</text>
+
+  <circle class="dg-accent-fill" cx="300" cy="176" r="2.5" />
+  <path class="dg-accent" d="M300 176 H332 V116 H310" />
+  <path class="dg-accent-fill" d="M300 116 L310 111 L310 121 Z" />
+  <text class="dg-note-accent" x="352" y="146" text-anchor="middle" transform="rotate(-90 352 146)">the engine of effort</text>
+</svg>
