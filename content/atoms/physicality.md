@@ -60,6 +60,10 @@ Napier's approach is less systematic and more intuitive: give yourself one physi
 
 In *Impro*, Ch. 5, Johnstone describes how performers wearing masks experience the character arriving from outside — fully formed, with its own physicality, voice, and desires. The mask forces body-first work because the face is hidden; all expression must come through posture, gesture, and movement. Johnstone's frame is almost spiritual: "the mask starts to work when the performer 'gives in' to it." The character is not built but yielded to. The body is the medium through which the mask's character manifests.
 
+![The five body-first methods fall into three groups by where the character comes from: a byproduct of attention, composed from a formal vocabulary, or arriving whole from a single commitment.](/images/three-traditions.svg)
+
+*Napier belongs with Johnstone rather than with Laban, because one committed choice and a mask both hand you the character entire.*
+
 ## How physical choices surprise the performer
 
 The most valuable property of body-first character work is that it produces characters the performer didn't plan. A physical choice made without intellectual premeditation — leading with your pelvis instead of your head, adopting an asymmetric posture, changing your breathing pattern — generates unexpected emotional states, unexpected status positions, unexpected points of view. This surprise is the mark of discovery over invention. When the body leads, the performer is genuinely discovering the character alongside the audience.
