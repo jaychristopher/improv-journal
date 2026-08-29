@@ -40,6 +40,10 @@ Freeze Tag is the most universal shortform improv game. Two performers begin a s
 
 Scenes typically last 15-60 seconds. A good Freeze Tag round moves fast, with quick initiations and clear physical choices.
 
+![Two consecutive scenes with nothing carried between them except one element: the body position links across while who, where and what all reset.](/images/the-only-bridge.svg)
+
+*Which is why a vague position is the one real failure — there is nothing else being handed over.*
+
 ## Origin
 
 The exact origin is murky — Freeze Tag appears to have emerged independently in multiple improv communities in the 1970s-80s as a natural warm-up game. It appears in Viola Spolin's game collections and was a staple of Theatresports from its early days. Its ubiquity suggests it solves a fundamental training problem: how to practice initiations at high volume.
