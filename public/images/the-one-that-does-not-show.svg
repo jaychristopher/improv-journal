@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="270" y="40" text-anchor="middle">VISIBLE</text>
+  <line class="dg-rule" x1="32" y1="52" x2="330" y2="52" />
+
+  <text class="dg-secondary" x="32" y="80">point of view</text>
+  <line class="dg-ink" x1="270" y1="72" x2="270" y2="84" />
+
+  <text class="dg-secondary" x="32" y="112">physicality</text>
+  <line class="dg-ink" x1="270" y1="104" x2="270" y2="116" />
+
+  <text class="dg-secondary" x="32" y="144">status default</text>
+  <line class="dg-ink" x1="270" y1="136" x2="270" y2="148" />
+
+  <rect class="dg-accent-fill" x="16" y="164" width="2" height="24" />
+  <text class="dg-secondary" x="32" y="180">want</text>
+  <text class="dg-note-accent" x="250" y="180">nothing to see</text>
+
+  <text class="dg-note" x="16" y="212">three can be checked by looking; the fourth cannot</text>
+</svg>

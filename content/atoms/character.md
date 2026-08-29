@@ -63,6 +63,10 @@ Point of view, physicality and status default all show. A performer who has chos
 
 The symptom is a scene that looks fully populated and does not move. Two vivid people with strong physicalities and clear attitudes, talking, for two minutes, going nowhere — because neither of them needs anything from the other and there is therefore nothing that can change.
 
+![Four character components against a visibility column: three of them show from outside and one leaves no visible trace, which is the one that goes missing.](/images/the-one-that-does-not-show.svg)
+
+*Which is why the check has to be a question you ask yourself rather than something you can watch for.*
+
 The check is not to decide a want in advance, which contradicts everything above about character emerging through action. It is to notice, mid-scene, whether there is anything you would be disappointed not to get from the person opposite. If the honest answer is no, that is the missing piece, and it can be supplied immediately without stopping.
 
 ## How character actually fails
