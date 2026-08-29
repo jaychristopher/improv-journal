@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="68">WHAT HAPPENED</text>
+  <line class="dg-ink" x1="170" y1="64" x2="296" y2="64" />
+  <line class="dg-ink" x1="210" y1="56" x2="210" y2="72" />
+  <text class="dg-note" x="210" y="88" text-anchor="middle">the offer</text>
+  <text class="dg-secondary" x="314" y="68">your next line</text>
+
+  <text class="dg-eyebrow" x="16" y="136">IF IT NEVER CAME</text>
+  <line class="dg-muted" x1="170" y1="132" x2="296" y2="132" />
+  <text class="dg-secondary" x="314" y="136">your next line</text>
+
+  <path class="dg-accent" d="M310 52 H304 V144 H310" />
+</svg>
