@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">AS A SEQUENCE</text>
+  <line class="dg-rule" x1="150" y1="60" x2="376" y2="60" />
+  <line class="dg-ink" x1="180" y1="52" x2="180" y2="68" />
+  <line class="dg-ink" x1="260" y1="52" x2="260" y2="68" />
+  <line class="dg-ink" x1="340" y1="52" x2="340" y2="68" />
+  <text class="dg-secondary" x="180" y="88" text-anchor="middle">establish</text>
+  <text class="dg-secondary" x="260" y="88" text-anchor="middle">discover</text>
+  <text class="dg-secondary" x="340" y="88" text-anchor="middle">resolve</text>
+  <text class="dg-note" x="16" y="112">one finishes, then the next</text>
+
+  <text class="dg-eyebrow" x="16" y="156">AS CONDITIONS</text>
+  <rect class="dg-accent-fill" x="179" y="146" width="2" height="68" />
+  <text class="dg-secondary" x="192" y="156">establish</text>
+  <text class="dg-secondary" x="192" y="182">discover</text>
+  <text class="dg-secondary" x="192" y="208">resolve</text>
+  <text class="dg-note-accent" x="16" y="232">all three, at any moment</text>
+</svg>

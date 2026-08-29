@@ -69,6 +69,10 @@ What survives is a change in what the phases are claiming. They describe **what 
 
 The difference matters most for what it licenses. A performer holding the phases as a sequence will start resolving because the scene feels like it has been going a while, which is the commonest way a good scene gets closed early. A performer holding them as conditions asks a different question — has the audience got what they need to follow this — and that question has a real answer at any point in the scene.
 
+![The same three phases twice: spread along a time axis as stages that finish in turn, and stacked on a single moment as conditions all asked at once.](/images/stages-or-conditions.svg)
+
+*Read as stages, the third one arrives on a clock; read as conditions, it arrives when it is true.*
+
 ## Specific sources
 
 UCB Manual — base reality -> first unusual thing -> if-this-then-what -> heighten -> button/edit (game-first tradition). Johnstone, *Impro for Storytellers* — platform -> tilt -> reincorporation (narrative-first tradition). Carrane, ["5 Mistakes to Avoid at the Top of an Improv Scene"](https://jimmycarrane.com/5-mistakes-avoid-top-improv-scene/) — "start in the middle" advice. **Counter-position:** TJ & Dave's hour-long unedited shows don't follow three-act structure. Scenes blend, loop, and resolve through the evening's totality. Napier: "just do something at the top" and let structure emerge. The atom hedges correctly: "not a rigid template but a recognizable shape that emerges when the principles are working."
