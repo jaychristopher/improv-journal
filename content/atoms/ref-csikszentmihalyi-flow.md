@@ -37,6 +37,10 @@ Teachers and anybody designing difficulty. The useful half of this book is not t
 
 A performer reading it for the experience will find it familiar and not very actionable. Somebody deciding what to put in front of a class on Tuesday will find the criteria for pitching an exercise.
 
+![Two quantities plotted against each other: the line where challenge equals skill, and just above it the band where the state actually occurs.](/images/just-above-the-line.svg)
+
+*Which is why "make it harder" and "make it easier" are both notes about the same line.*
+
 ### The honest caveat
 
 Two things are worth holding lightly. The evidence is experience sampling — people reporting on their own states when a pager goes off — which is a real method and is not a measurement of the state itself, only of what somebody says about it afterwards.

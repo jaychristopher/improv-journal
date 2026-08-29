@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">CHALLENGE</text>
+  <line class="dg-rule" x1="70" y1="40" x2="70" y2="200" />
+  <line class="dg-rule" x1="70" y1="200" x2="376" y2="200" />
+  <text class="dg-eyebrow" x="376" y="220" text-anchor="end">SKILL</text>
+
+  <line class="dg-muted" x1="80" y1="190" x2="300" y2="80" />
+  <text class="dg-note" x="310" y="84">matched</text>
+
+  <line class="dg-accent" x1="80" y1="166" x2="300" y2="56" />
+  <text class="dg-note-accent" x="310" y="60">just above</text>
+
+  <text class="dg-note" x="16" y="236">the band is a design target, not a mood</text>
+</svg>
