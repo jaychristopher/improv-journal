@@ -56,6 +56,10 @@ The opposite discipline is worth knowing about, because training the two togethe
 
 Viola Spolin's "Where" games and "Space Walk" exercises are the canonical training for this technique. Her approach: the physical task produces presence as a side effect. You can't mime opening a jar while planning your next clever line — the jar requires your attention. See `ref-spolin-improvisation-for-theater` for the full pedagogical context.
 
+![Both disciplines direct the same attention at opposite ends of one axis: Viewpoints toward what is actually in the room, space work toward what nobody can see.](/images/opposite-ends-of-attention.svg)
+
+*The confusion is structural rather than careless — the two are trained in the same room and point opposite ways.*
+
 ## The traditions that skip it
 
 Space work is not universally treated as fundamental, and the pages that assume it is are overstating a genuine disagreement.
