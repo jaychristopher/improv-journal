@@ -40,3 +40,7 @@ Play it to find something out, then go and work on whatever it found.
 - **Announcing the letter.** "Q... quite a nice day, isn't it" tells the audience you are solving a puzzle. The letter should arrive inside a sentence somebody would actually say.
 - **Stopping when somebody slips.** Missing a letter is not a failure condition. Carrying on as though nothing happened is closer to the point of the whole form than getting it right.
 - **Starting on X.** An audience will suggest it and it makes a worse game, because three of the hardest letters land in the opening thirty seconds, before anybody has a scene to hold on to.
+
+![The same four hard letters in two orders: starting on X puts three of them in the first three lines, while starting on D pushes all four past halfway.](/images/where-the-hard-letters-fall.svg)
+
+*A suggestion the audience enjoys making is the one that decides the game before it starts.*
