@@ -29,6 +29,10 @@ Why some things combine effortlessly and others cannot be done at once at all. T
 
 Kahneman modelled attention as a single pool, which predicts that any two tasks interfere in proportion to how demanding they are. Wickens' account is that the pool has structure: tasks conflict to the degree they share a *stage* (perceiving versus responding), a *modality* (hearing versus seeing), a *code* (verbal versus spatial), and a channel of visual attention. Two tasks drawing on different dimensions barely collide. Two drawing on the same one collide badly.
 
+![The same capacity twice: one undivided pool where any two tasks compete, and the same pool partitioned so that only tasks in the same compartment do.](/images/one-pool-or-four.svg)
+
+*Which is why the theory is not a licence to multitask — it says where the collisions are, not that there are none.*
+
 ## Should you read the paper
 
 For most readers the correction is the whole value and it is stated above. The paper itself is an ergonomics review aimed at people predicting operator performance in cockpits and control rooms, and it reads that way.

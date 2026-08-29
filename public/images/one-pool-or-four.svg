@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="64">ONE POOL</text>
+  <line class="dg-ink" x1="160" y1="60" x2="360" y2="60" />
+  <line class="dg-ink" x1="160" y1="52" x2="160" y2="68" />
+  <line class="dg-ink" x1="360" y1="52" x2="360" y2="68" />
+  <text class="dg-note" x="16" y="88">every pair of tasks competes</text>
+
+  <text class="dg-eyebrow" x="16" y="152">FOUR RESOURCES</text>
+  <line class="dg-ink" x1="160" y1="148" x2="360" y2="148" />
+  <line class="dg-ink" x1="160" y1="140" x2="160" y2="156" />
+  <line class="dg-ink" x1="360" y1="140" x2="360" y2="156" />
+  <rect class="dg-accent-fill" x="209" y="140" width="2" height="16" />
+  <rect class="dg-accent-fill" x="259" y="140" width="2" height="16" />
+  <rect class="dg-accent-fill" x="309" y="140" width="2" height="16" />
+  <text class="dg-note" x="16" y="176">only pairs sharing a compartment do</text>
+
+  <text class="dg-note-accent" x="16" y="206">moving and listening barely collide; planning and listening share two</text>
+</svg>
