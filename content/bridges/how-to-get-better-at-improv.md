@@ -134,6 +134,10 @@ It makes you better at recognising, which is worth having and is not the same th
 
 Because recognition improves faster than execution, so the gap between what you can see and what you can do widens before it closes. The scenes are not worse; the person watching them is better. This is the single most common reason people quit at the six-month mark, and knowing the shape of it in advance is most of the defence.
 
+![Recognition rises faster than execution, which climbs in jumps separated by plateaus, so the gap between what you can see and what you can do widens before it closes.](/images/recognition-outruns-execution.svg)
+
+*Nothing in the picture is going down, which is the part that is hard to believe from inside it.*
+
 ## How Often to Practise, and How Long It Takes
 
 Two questions everybody asks and most improv advice answers with encouragement rather than anything usable.

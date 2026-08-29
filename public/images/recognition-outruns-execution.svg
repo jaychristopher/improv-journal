@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <line class="dg-rule" x1="52" y1="40" x2="52" y2="190" />
+  <line class="dg-rule" x1="52" y1="190" x2="376" y2="190" />
+
+  <path class="dg-muted" d="M60 176 C110 100, 170 66, 370 54" />
+  <path class="dg-ink" d="M60 180 H110 V158 H170 V128 H240 V96 H330 V70 H370" />
+
+  <line class="dg-accent" x1="159" y1="93" x2="159" y2="156" />
+
+  <text class="dg-eyebrow" x="230" y="48">RECOGNITION</text>
+  <text class="dg-eyebrow" x="250" y="152">EXECUTION</text>
+
+  <text class="dg-eyebrow" x="16" y="208">TIME</text>
+  <text class="dg-note" x="159" y="208" text-anchor="middle">where most people quit</text>
+
+  <text class="dg-note-accent" x="16" y="230">the gap is widest on a plateau, not on the way down</text>
+</svg>
