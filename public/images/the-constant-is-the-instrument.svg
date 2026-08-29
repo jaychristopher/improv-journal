@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="60">THE WORDS</text>
+  <line class="dg-muted" x1="150" y1="56" x2="370" y2="56" />
+  <text class="dg-note" x="150" y="80">fixed by the exercise</text>
+
+  <text class="dg-eyebrow" x="16" y="144">EVERYTHING ELSE</text>
+  <path class="dg-ink" d="M150 140 Q172 104 194 140 T238 140 T282 140 T326 140 T370 140" />
+  <text class="dg-note-accent" x="150" y="178">carries the whole report</text>
+
+  <text class="dg-note" x="16" y="204">the constant is the instrument</text>
+</svg>

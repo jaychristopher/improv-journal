@@ -34,6 +34,10 @@ Described on paper it sounds like the least promising exercise in the performing
 
 That is the whole design. **The words are fixed so that everything else has to do the work.** You cannot plan an interesting line, because the line is already decided. You cannot prepare a delivery, because the delivery has to answer whatever they just did. The only remaining option is to watch them.
 
+![The words run flat because the exercise fixes them, so every change between the two people has to appear in the delivery instead.](/images/the-constant-is-the-instrument.svg)
+
+*Every listening exercise on this site is a variant of the same trick, run on a different fixed channel.*
+
 Later stages add independent activity — a difficult physical task to complete while the repetition runs — and then imaginary circumstances, before arriving at scene work. But the repetition is the foundation and most of the value.
 
 ## Why It Belongs on a Site About Improv
