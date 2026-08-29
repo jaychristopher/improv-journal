@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="145" y="40" text-anchor="end">YOU</text>
+  <text class="dg-eyebrow" x="255" y="40">THEM</text>
+
+  <text class="dg-eyebrow" x="16" y="76">ENDOWMENT</text>
+  <line class="dg-ink" x1="150" y1="72" x2="244" y2="72" />
+  <path class="dg-ink" d="M238 67 L244 72 L238 77" />
+  <text class="dg-note-accent" x="256" y="76">a trait, a history, a state</text>
+
+  <text class="dg-eyebrow" x="16" y="136">LABELLING</text>
+  <line class="dg-muted" x1="150" y1="132" x2="206" y2="132" />
+  <path class="dg-muted" d="M200 127 L206 132 L200 137" />
+  <text class="dg-note" x="256" y="136">a verdict, nothing to do</text>
+
+  <text class="dg-eyebrow" x="16" y="196">PIMPING</text>
+  <line class="dg-muted" x1="250" y1="192" x2="156" y2="192" />
+  <path class="dg-muted" d="M162 187 L156 192 L162 197" />
+  <text class="dg-note" x="256" y="196">an obligation to perform</text>
+</svg>

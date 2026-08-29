@@ -51,6 +51,10 @@ All endowments are initiations, but not all initiations are endowments. Initiati
 
 Johnstone distinguishes these sharply. Endowment *gives*: it hands your partner a playable character trait, a history, an emotional state. Pimping *takes*: it forces your partner into a difficult position for your own benefit ("You should sing us a song!"). Good endowment gives something *playable*. Bad endowment is just labeling ("You're boring") — what does the partner do with that?
 
+![Three moves that all say something about your partner: one arrives carrying something playable, one falls short of reaching them, and one runs the other way and takes.](/images/which-way-it-travels.svg)
+
+*The word for all three is saying something about your partner; only what arrives differs.*
+
 ## The connection to support
 
 When you endow your partner with interesting qualities, you are choosing to see them as interesting — which makes the scene interesting. You're gifting them a character instead of making them build one from scratch. This is `elevating` applied at the moment of initiation.
