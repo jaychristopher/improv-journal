@@ -4,6 +4,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { buildDiagram, inlineDiagrams } from "../diagrams";
+import { CLASSES, measure } from "../text-metrics";
 
 /**
  * Conventions for content diagrams.
@@ -106,6 +107,56 @@ describe("diagram files", () => {
     for (const file of svgs) {
       const src = "/images/" + path.relative(IMAGES, file).split(path.sep).join("/");
       expect(used.has(src), `${src} is not referenced by any content file`).toBe(true);
+    }
+  });
+
+  /**
+   * Overflow is the one defect the other guards cannot see.
+   *
+   * An SVG whose label runs past the viewBox is still well-formed, still
+   * referenced, still under budget — it just loses its last word when drawn,
+   * and nothing in the file says so. Measuring in the browser needs an awaited
+   * document.fonts.ready and is easy to get subtly wrong; the tables in
+   * text-metrics.ts are exact for Arial and need no browser.
+   *
+   * Rotated text is skipped: its coordinates are pre-transform, so a width
+   * measured here says nothing about where the glyphs land.
+   */
+  it.runIf(svgs.length > 0)("keep every label inside the canvas", () => {
+    for (const file of svgs) {
+      const svg = fs.readFileSync(file, "utf8");
+      const viewBox = /viewBox="([^"]*)"/.exec(svg)?.[1] ?? "";
+      const [, , boxWidth, boxHeight] = viewBox.split(/\s+/).map(Number);
+
+      for (const [, tag, raw] of svg.matchAll(/<text\b([^>]*)>([\s\S]*?)<\/text>/g)) {
+        const attrs = Object.fromEntries(
+          [...tag.matchAll(/([a-zA-Z-]+)="([^"]*)"/g)].map(([, k, v]) => [k, v]),
+        );
+        if (attrs.transform || raw.includes("<tspan")) continue;
+
+        const text = raw
+          .trim()
+          .replace(/&amp;/g, "&")
+          .replace(/&lt;/g, "<")
+          .replace(/&gt;/g, ">")
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'");
+        const where = `${path.basename(file)}: ${JSON.stringify(text)}`;
+
+        const className = (attrs.class ?? "").split(/\s+/).find((c) => c in CLASSES);
+        expect(className, `${where} uses no known .dg-* text class`).toBeDefined();
+
+        const width = measure(text, className!);
+        const x = Number(attrs.x ?? 0);
+        const anchor = attrs["text-anchor"] ?? "start";
+        const left = anchor === "middle" ? x - width / 2 : anchor === "end" ? x - width : x;
+
+        expect(left, `${where} starts left of the canvas`).toBeGreaterThanOrEqual(0);
+        expect(left + width, `${where} runs past the canvas`).toBeLessThanOrEqual(boxWidth);
+        expect(Number(attrs.y ?? 0), `${where} sits below the canvas`).toBeLessThanOrEqual(
+          boxHeight,
+        );
+      }
     }
   });
 });
