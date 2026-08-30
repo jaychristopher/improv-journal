@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ASKING BUYS</text>
+
+  <rect class="dg-accent-fill" x="16" y="112" width="2" height="14" />
+  <text class="dg-note-accent" x="30" y="124">the suggestion</text>
+
+  <line class="dg-muted" x1="120" y1="120" x2="200" y2="72" />
+  <line class="dg-muted" x1="120" y1="120" x2="200" y2="120" />
+  <line class="dg-muted" x1="120" y1="120" x2="200" y2="168" />
+
+  <text class="dg-note" x="210" y="76">this is being made up now</text>
+  <text class="dg-note" x="210" y="124">you have a stake in it</text>
+  <text class="dg-note" x="210" y="172">we are in this together</text>
+
+  <text class="dg-note" x="16" y="200">none of the three is about the word itself</text>
+</svg>

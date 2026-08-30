@@ -38,6 +38,11 @@ A speaker addressing a room is inside the same loop and usually does not know it
 
 Asking for a suggestion establishes: (1) this is being made up now, (2) you have agency in what happens, (3) we are in this together. The suggestion creates investment — the audience has skin in the game. Violating the suggestion breaks the contract and the audience feels it.
 
+![One act of asking with three things established by it, none of which is the content of the answer.](/images/what-asking-buys.svg)
+
+*This is why a suggestion can be ignored creatively and still cannot be ignored contractually.*
+
+
 ## Venue effects
 
 - **Small rooms (under 50):** Intimacy is the asset. Eye contact, subtlety, silence. Danger: small audiences feel self-conscious.
