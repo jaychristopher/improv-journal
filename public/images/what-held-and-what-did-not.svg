@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT HELD AND WHAT DID NOT</text>
+
+  <text class="dg-note" x="16" y="76">observations</text>
+  <rect class="dg-accent-fill" x="150" y="71" width="210" height="2" />
+  <text class="dg-note" x="150" y="96">status, blocking</text>
+
+  <text class="dg-note" x="16" y="146">explanations</text>
+  <rect class="dg-accent-fill" x="150" y="141" width="70" height="2" />
+  <text class="dg-note" x="150" y="166">trance, mask</text>
+
+  <text class="dg-note" x="16" y="208">the book does not mark which is which</text>
+</svg>

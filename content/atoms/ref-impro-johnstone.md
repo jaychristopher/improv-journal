@@ -60,6 +60,11 @@ The status material is the strongest case for the first. It is descriptive — h
 
 The trance and mask material is the strongest case for the second. Johnstone asserts a good deal about what is happening psychologically when a performer wears a mask, and the assertions are offered with more confidence than evidence. They can be read as a practitioner's description of an effect he had reliably produced rather than as a theory of it, and read that way they are still valuable — but the book does not invite that qualification, and a reader should supply it.
 
+![Two kinds of material in the book measured by how well they held: a long bar for the observations, a short one for the explanations.](/images/what-held-and-what-did-not.svg)
+
+*Both bars are the same book, written in the same voice, at the same confidence.*
+
+
 Two other things date it. The examples come from British drama schools of the 1960s and 70s, and the tone about students is occasionally severe in a way a contemporary teacher would not adopt. Neither undermines the content, but both are audible.
 
 ## What it does not contain
