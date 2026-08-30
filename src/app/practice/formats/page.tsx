@@ -276,6 +276,11 @@ export default async function FormatsPage() {
             narrative formats force consequence.
           </li>
         </ul>
+        <Diagram
+          src="/images/picking-a-format-for-nine.svg"
+          alt="A cast of nine marked against two formats: Harold's span reaches it, while a duo form's bar stops at two and leaves a seven-player gap."
+          caption="Only the first constraint can be checked before anybody plays; the other three need a rehearsal to answer."
+        />
       </section>
 
       <section className="mt-12">
