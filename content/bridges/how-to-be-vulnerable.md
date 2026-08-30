@@ -41,6 +41,11 @@ Watch how an improv ensemble rehearses. They don't walk in and immediately start
 
 The first thing an ensemble builds is what practitioners call Safety in the Room. Not emotional safety in the therapeutic sense — structural safety. A set of shared agreements about how offers will be treated.
 
+![The same offer with no agreements in place, where the outcomes spread across the whole width, and inside a set of agreements, where they fall inside a narrow bracket.](/images/the-same-offer-two-risks.svg)
+
+*What the container changes is not how exposed you are. It is how far the outcome can travel.*
+
+
 The agreements are simple and explicit:
 
 **Offers will be accepted.** Not agreed with — accepted. If you make a bold choice on stage, your scene partners will treat it as real and build on it. They won't deny it, undermine it, or pretend it didn't happen. This is the behavioral core of Yes, And applied to emotional risk.

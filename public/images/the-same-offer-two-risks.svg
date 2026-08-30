@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE SAME OFFER, TWO RISKS</text>
+
+  <text class="dg-secondary" x="16" y="78">no agreements</text>
+  <line class="dg-ink" x1="150" y1="66" x2="150" y2="82" />
+  <line class="dg-muted" x1="170" y1="68" x2="170" y2="80" />
+  <line class="dg-muted" x1="214" y1="68" x2="214" y2="80" />
+  <line class="dg-muted" x1="258" y1="68" x2="258" y2="80" />
+  <line class="dg-muted" x1="300" y1="68" x2="300" y2="80" />
+  <line class="dg-muted" x1="344" y1="68" x2="344" y2="80" />
+  <line class="dg-muted" x1="374" y1="68" x2="374" y2="80" />
+  <line class="dg-muted" x1="170" y1="91" x2="374" y2="91" />
+  <line class="dg-muted" x1="170" y1="87" x2="170" y2="95" />
+  <line class="dg-muted" x1="374" y1="87" x2="374" y2="95" />
+  <text class="dg-note" x="170" y="114">anything can happen to it</text>
+
+  <text class="dg-secondary" x="16" y="166">with agreements</text>
+  <line class="dg-ink" x1="150" y1="154" x2="150" y2="170" />
+  <line class="dg-muted" x1="182" y1="156" x2="182" y2="168" />
+  <line class="dg-muted" x1="200" y1="156" x2="200" y2="168" />
+  <line class="dg-muted" x1="218" y1="156" x2="218" y2="168" />
+  <line class="dg-muted" x1="236" y1="156" x2="236" y2="168" />
+  <rect class="dg-accent-fill" x="170" y="179" width="80" height="2" />
+  <rect class="dg-accent-fill" x="170" y="173" width="2" height="14" />
+  <rect class="dg-accent-fill" x="248" y="173" width="2" height="14" />
+  <text class="dg-note-accent" x="170" y="202">the range is bounded in advance</text>
+
+  <text class="dg-note" x="16" y="230">the offer did not change; the container did</text>
+</svg>
