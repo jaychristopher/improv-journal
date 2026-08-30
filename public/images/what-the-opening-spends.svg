@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">AS THE OPENING GETS CLEARER</text>
+
+  <text class="dg-note" x="366" y="56" text-anchor="end">easier to converge</text>
+  <line class="dg-muted" x1="120" y1="154" x2="366" y2="64" />
+
+  <line class="dg-accent" x1="120" y1="64" x2="366" y2="154" />
+  <text class="dg-note-accent" x="366" y="170" text-anchor="end">less of a surprise</text>
+
+  <line class="dg-rule" x1="110" y1="186" x2="376" y2="186" />
+  <text class="dg-note" x="110" y="204">vague</text>
+  <text class="dg-note" x="376" y="204" text-anchor="end">explicit</text>
+
+  <text class="dg-note" x="16" y="236">the opening buys the convergence and spends the surprise</text>
+</svg>

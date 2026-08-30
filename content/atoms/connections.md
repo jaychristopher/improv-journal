@@ -45,6 +45,11 @@ The audience experiences something coherent emerging from chaos. Unplanned patte
 
 The clearer the ensemble connects on themes in the opening, the easier it is for scenes to naturally converge. But the strongest connections are the ones nobody saw coming — not the ones the opening telegraphed.
 
+![Two opposing trends against how explicit the opening is: convergence gets easier as it becomes clearer, while the surprise when scenes connect gets smaller.](/images/what-the-opening-spends.svg)
+
+*The cast pays the first line and the audience receives the second, which is why the trade is easy to make by accident.*
+
+
 ## Specific sources
 
 Truth in Comedy, Ch. 8-9 — connections as the Harold's signature move: "If you do your job, the connections are already there." Halpern's teaching emphasizes unconscious convergence through group mind. **Traditions diverge on method:** UCB leans toward deliberate game-identification and conscious pattern-building — connections are constructed by smart players. iO/Close tradition leans toward organic emergence — connections arise when players surrender to group mind. Napier/Annoyance rejects the anxiety entirely: "Just do good scenes and the audience will find the connections." The tension: forced connections feel clever but mechanical; organic ones feel magical but unreliable.
