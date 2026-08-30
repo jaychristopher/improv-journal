@@ -143,6 +143,11 @@ Rehearsal removes uncertainty about the material, which is genuinely a component
 
 The failure mode is over-rehearsal producing brittleness. A performance drilled into one exact shape has one way of being right and many of being wrong, so any deviation reads as an error and the recovery is harder. `failing-forward` is the counterweight: rehearse until you know it, then rehearse recovering from something going wrong, which is the part almost nobody practises and the thing actually feared.
 
+![Drilled to one shape, the band of what still counts as going right is a sliver; rehearsing recovery widens it so most deviations fall inside.](/images/what-counts-as-going-right.svg)
+
+*Over-rehearsal does not make the performance safer. It makes the definition of going wrong wider.*
+
+
 ## The Honest Caveat
 
 This protocol addresses **performance anxiety** — the situational fear that arises before a specific high-stakes event. It works because the underlying physiology is activation, not dysfunction.

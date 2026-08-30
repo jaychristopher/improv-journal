@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT COUNTS AS GOING RIGHT</text>
+
+  <text class="dg-secondary" x="16" y="80">drilled to one shape</text>
+  <line class="dg-rule" x1="190" y1="76" x2="376" y2="76" />
+  <rect class="dg-accent-fill" x="278" y="75" width="10" height="2" />
+  <rect class="dg-accent-fill" x="278" y="69" width="2" height="14" />
+  <rect class="dg-accent-fill" x="286" y="69" width="2" height="14" />
+  <text class="dg-note" x="190" y="102">anything else reads as an error</text>
+
+  <text class="dg-secondary" x="16" y="170">rehearsed recovery</text>
+  <line class="dg-rule" x1="190" y1="166" x2="376" y2="166" />
+  <rect class="dg-accent-fill" x="232" y="165" width="102" height="2" />
+  <rect class="dg-accent-fill" x="232" y="159" width="2" height="14" />
+  <rect class="dg-accent-fill" x="332" y="159" width="2" height="14" />
+  <text class="dg-note" x="190" y="192">most deviations stay inside it</text>
+
+  <text class="dg-note-accent" x="16" y="216">more run-throughs narrow it; practising recovery widens it</text>
+</svg>
