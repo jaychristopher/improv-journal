@@ -41,6 +41,11 @@ Somebody who has read the books and wants to know what practitioners actually be
 
 It is unedited opinion, and opinion from a guest is not method. Quality varies by episode in the way interviews always do, there is no curriculum or index, and a listener looking for instruction will find anecdote instead. Use it to calibrate what you already know rather than to learn something first.
 
+![One source plotted against how much the listener already knows: anecdote on the left of the axis, calibration on the right.](/images/when-this-one-is-useful.svg)
+
+*Nothing about the source changes across the axis; only who is listening does.*
+
+
 ## Key blog posts referenced in this knowledge graph
 
 - ["3 Ways to Get Better at Editing Improv Scenes"](https://jimmycarrane.com/3-ways-to-get-better-at-editing-improv-scenes/) — editing as ensemble skill

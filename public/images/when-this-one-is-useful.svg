@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHEN THIS ONE IS USEFUL</text>
+
+  <text class="dg-note" x="120" y="70">anecdote</text>
+  <line class="dg-muted" x1="120" y1="84" x2="240" y2="84" />
+
+  <text class="dg-note-accent" x="250" y="70">calibration</text>
+  <rect class="dg-accent-fill" x="250" y="83" width="120" height="2" />
+
+  <line class="dg-rule" x1="110" y1="112" x2="376" y2="112" />
+  <text class="dg-note" x="110" y="132">no background</text>
+  <text class="dg-note" x="376" y="132" text-anchor="end">some practice</text>
+
+  <text class="dg-note" x="16" y="180">the same episodes, heard at two times</text>
+</svg>
