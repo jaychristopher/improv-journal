@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="130" y="32">COMMITTED</text>
+  <text class="dg-eyebrow" x="270" y="32">HEDGING</text>
+  <line class="dg-rule" x1="16" y1="46" x2="384" y2="46" />
+
+  <text class="dg-eyebrow" x="16" y="84">STRONG IDEA</text>
+  <text class="dg-secondary" x="130" y="84">confident</text>
+  <rect class="dg-accent-fill" x="260" y="70" width="2" height="42" />
+  <text class="dg-secondary" x="270" y="84">uncertain</text>
+  <text class="dg-note" x="270" y="104">still reads as doubt</text>
+
+  <text class="dg-eyebrow" x="16" y="160">WEAK IDEA</text>
+  <rect class="dg-accent-fill" x="120" y="146" width="2" height="42" />
+  <text class="dg-secondary" x="130" y="160">confident</text>
+  <text class="dg-note" x="130" y="180">the weak idea does not sink it</text>
+  <text class="dg-secondary" x="270" y="160">uncertain</text>
+
+  <text class="dg-note-accent" x="16" y="216">the reading follows the column, not the row</text>
+</svg>

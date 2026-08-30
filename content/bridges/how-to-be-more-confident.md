@@ -33,6 +33,11 @@ This isn't a stage trick. It's a fundamental insight about how confidence actual
 
 Will Hines, one of the most experienced improv teachers working today, describes it this way: when a performer hesitates, what the audience sees isn't thoughtfulness — it's doubt. When a performer commits, what the audience sees isn't recklessness — it's confidence. The quality of the initial choice matters far less than the quality of the commitment to it.
 
+![A grid of idea quality against commitment: both committed cells read as confident and both hedging cells read as uncertain, whatever the idea was.](/images/what-the-room-reads.svg)
+
+*Nobody in the audience can see the idea you rejected. They can see whether you meant the one you kept.*
+
+
 ## The Mechanism: Why Commitment Creates Confidence
 
 Here's the cognitive science underneath.
