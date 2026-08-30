@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="44">OVERLIE, SIX</text>
+  <text class="dg-note" x="16" y="66">made for dancers, a way of seeing</text>
+
+  <line class="dg-muted" x1="210" y1="78" x2="210" y2="124" />
+  <text class="dg-note" x="220" y="105">adapted</text>
+
+  <text class="dg-eyebrow" x="16" y="150">BOGART &amp; LANDAU, NINE</text>
+  <text class="dg-note" x="16" y="172">made for actors, a syllabus</text>
+
+  <rect class="dg-accent-fill" x="290" y="132" width="2" height="48" />
+  <text class="dg-note-accent" x="302" y="150">what the word</text>
+  <text class="dg-note-accent" x="302" y="168">now means</text>
+
+  <text class="dg-note" x="16" y="204">the name attached to the adaptation, not to the source</text>
+</svg>

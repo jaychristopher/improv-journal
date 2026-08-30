@@ -73,6 +73,10 @@ The book credits Overlie clearly, but its success meant the method travelled und
 
 The adaptation is not neutral, either. Overlie's six are presented as a way of seeing, deliberately resistant to being turned into a syllabus; Bogart and Landau's nine are a syllabus. Something is gained — the method became teachable at scale — and something is lost, and readers who only ever meet the nine will not know what the something was.
 
+![Overlie's six Viewpoints, made for dancers as a way of seeing, adapted into Bogart and Landau's nine, made for actors as a syllabus; the word now covers only the second.](/images/the-attribution-problem.svg)
+
+*Meeting the nine first makes the six look like a reduction of them, which reverses the actual order.*
+
 ## Editions and what to buy
 
 The 2005 TCG paperback is the only substantive edition; later printings are unchanged, so a used copy is the same book. Overlie's own account, [*Standing in Space: The Six Viewpoints Theory & Practice*](/library/ref-overlie-standing-in-space) (2016), came out eleven years later and reads very differently — more philosophical, less instructional, and pointedly not a systematisation. Anybody using Viewpoints seriously should read both, in that order, because Bogart and Landau's nine are a translation and the original is worth meeting on its own terms.
