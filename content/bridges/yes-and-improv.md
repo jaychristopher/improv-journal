@@ -44,6 +44,11 @@ The "and" is the half that gets dropped, and dropping it is the more common fail
 
 Accepting without contributing produces a scene of pleasant nothing — two people confirming each other's statements. "We're in a hospital." "We certainly are." "It's very clean." "It is." Nothing has been refused and nothing is happening.
 
+![Four confirming lines leave the level exactly where it started; four lines that each add step it upward.](/images/what-four-lines-built.svg)
+
+*Nothing was refused in either exchange. Only one of them went anywhere.*
+
+
 The "and" is where you are actually required to bring something: a reason, a feeling about it, a piece of information nobody asked for. `be-positive` is the underlying disposition; the phrase is the name for what it produces.
 
 ## What It Sounds Like

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 246" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT FOUR LINES BUILT</text>
+
+  <text class="dg-secondary" x="16" y="84">yes with no and</text>
+  <line class="dg-muted" x1="190" y1="80" x2="376" y2="80" />
+  <line class="dg-rule" x1="236" y1="74" x2="236" y2="86" />
+  <line class="dg-rule" x1="282" y1="74" x2="282" y2="86" />
+  <line class="dg-rule" x1="328" y1="74" x2="328" y2="86" />
+  <text class="dg-note" x="190" y="106">four lines, nothing added</text>
+
+  <text class="dg-secondary" x="16" y="192">yes and</text>
+  <rect class="dg-accent-fill" x="190" y="209" width="46" height="2" />
+  <rect class="dg-accent-fill" x="236" y="194" width="2" height="17" />
+  <rect class="dg-accent-fill" x="236" y="194" width="46" height="2" />
+  <rect class="dg-accent-fill" x="282" y="179" width="2" height="17" />
+  <rect class="dg-accent-fill" x="282" y="179" width="46" height="2" />
+  <rect class="dg-accent-fill" x="328" y="164" width="2" height="17" />
+  <rect class="dg-accent-fill" x="328" y="164" width="48" height="2" />
+  <text class="dg-note-accent" x="190" y="238">each line adds to the last</text>
+</svg>
