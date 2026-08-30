@@ -45,12 +45,18 @@ This concept is most precisely articulated in the **UCB tradition** (Besser, Rob
 
 The UCB model starts with **the first unusual thing** — a character reacts unexpectedly, then "if this, then what?" explores the implications. But this is only one doorway:
 
+
 - **Behavioral games:** A character who apologizes for everything. The pattern is the behavioral tic.
 - **Relationship games:** The dynamic IS the game — one always defers, one always leads. TJ's entire practice is built on this.
 - **Emotional games:** A character's emotional state is the engine — someone inappropriately calm, someone devastated by minor things.
 - **Status games:** The game is the status transaction itself — who has power and how it shifts.
 - **Scenic/environmental games:** The space generates the pattern — every room they enter is smaller, everything in the house is broken.
 - **Mapping games:** Treating one thing as another — a breakup played as a hostage negotiation.
+
+![Six labelled entry points on the left with lines converging on a single accent mark for the game.](/images/six-ways-in.svg)
+
+*The route a school teaches first is one of these lines, not the door itself.*
+
 
 ## Playing the game (not just finding it)
 
