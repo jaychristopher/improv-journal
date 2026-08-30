@@ -37,6 +37,11 @@ Not a manual. The book is built as a narrative of one class across fifteen month
 
 That format is the reason it has lasted and the reason it frustrates people. You watch the technique being applied dozens of times before anybody states it, which is how it was learned in the room and is a slow way to read.
 
+![Two reading orders: a manual states the rule first and applies it after, this book applies it repeatedly and states it at the end.](/images/when-the-rule-arrives.svg)
+
+*Both rows contain the same rule and the same number of applications.*
+
+
 ## Who it rewards
 
 Improvisers who suspect their problem is listening rather than invention. The repetition exercise is the closest thing in the acting literature to what improv means by receiving, and seeing it taught over months makes clear that it is a discipline rather than a warm-up.
