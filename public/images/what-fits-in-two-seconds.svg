@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 212" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT FITS IN TWO SECONDS</text>
+
+  <text class="dg-note" x="265" y="56" text-anchor="middle">about two seconds</text>
+  <line class="dg-ink" x1="190" y1="64" x2="190" y2="176" />
+  <line class="dg-ink" x1="340" y1="64" x2="340" y2="176" />
+
+  <text class="dg-note" x="16" y="92">listen precisely</text>
+  <line class="dg-muted" x1="190" y1="88" x2="340" y2="88" />
+
+  <text class="dg-note" x="16" y="114">integrate what is there</text>
+  <line class="dg-muted" x1="190" y1="110" x2="340" y2="110" />
+
+  <text class="dg-note" x="16" y="136">generate a reply</text>
+  <line class="dg-muted" x1="190" y1="132" x2="340" y2="132" />
+
+  <text class="dg-note" x="16" y="158">deliver it with commitment</text>
+  <line class="dg-muted" x1="190" y1="154" x2="340" y2="154" />
+
+  <text class="dg-note-accent" x="16" y="200">not in sequence; all of it, before you answer</text>
+</svg>

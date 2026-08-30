@@ -56,6 +56,11 @@ Think about what's involved. Each performer must simultaneously: listen precisel
 
 All of this happens in about two seconds. There is no time to retreat into your head and strategize. The moment you start planning your next clever line, you stop listening — and the reality your partner is building keeps moving without you. Being present isn't a nice philosophical idea in improv. It's a structural requirement. You cannot build a shared reality with someone while your attention is somewhere else.
 
+![Listening, integrating, generating and delivering are drawn as four bars inside the same two-second window rather than one after another.](/images/what-fits-in-two-seconds.svg)
+
+*The window is not short because improv is fast. It is short because all four have to fit inside it.*
+
+
 This is why improv looks so different when it's done well versus when it's done badly. Bad improv looks like people trying to be funny — reaching for jokes, steamrolling each other's ideas, performing for the audience instead of connecting with their partner. Good improv looks like two people genuinely discovering something together. The humor, when it arrives, is a byproduct of honest human interaction — not the goal.
 
 ## Short Form and Long Form
