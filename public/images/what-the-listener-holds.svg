@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE LISTENER HOLDS</text>
+
+  <text class="dg-secondary" x="16" y="76">as discovered</text>
+  <text class="dg-note" x="336" y="56" text-anchor="middle">the point</text>
+  <line class="dg-muted" x1="124" y1="72" x2="328" y2="72" />
+  <line class="dg-ink" x1="336" y1="64" x2="336" y2="80" />
+  <rect class="dg-accent-fill" x="124" y="91" width="204" height="2" />
+  <rect class="dg-accent-fill" x="124" y="85" width="2" height="14" />
+  <rect class="dg-accent-fill" x="326" y="85" width="2" height="14" />
+  <text class="dg-note-accent" x="124" y="116">the listener holds all of this</text>
+
+  <text class="dg-secondary" x="16" y="170">point first</text>
+  <text class="dg-note" x="132" y="150">the point</text>
+  <line class="dg-ink" x1="132" y1="158" x2="132" y2="174" />
+  <line class="dg-muted" x1="142" y1="166" x2="376" y2="166" />
+  <text class="dg-note" x="142" y="190">nothing to hold</text>
+
+  <text class="dg-note" x="16" y="228">the cost is how long it stays unresolved</text>
+</svg>

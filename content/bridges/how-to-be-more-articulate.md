@@ -61,6 +61,11 @@ Three things, and none is about words.
 
 **Say the point first.** Most unclear speech is a story told in the order it was discovered rather than the order it needs to be received. "So we looked at the numbers, and there was this thing in Q3, and it turned out..." — the listener is holding all of it open, waiting to learn what it is for. "We are going to miss the target. Here is why" costs nothing to hold.
 
+![Told in the order it was discovered, the point arrives last and the listener holds everything before it; point first, there is nothing left open.](/images/what-the-listener-holds.svg)
+
+*The listener is not weighing your words. They are carrying whatever you have not resolved yet.*
+
+
 **Stop when you have said it.** The most common articulacy failure is not stumbling, it is continuing. A finished point followed by three more sentences of hedging reads as uncertainty about the point.
 
 ## The Pause Is the Skill
