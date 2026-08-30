@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO QUESTIONS, TWO ANSWER SETS</text>
+
+  <text class="dg-note" x="16" y="76">what is my best move</text>
+  <line class="dg-rule" x1="150" y1="86" x2="370" y2="86" />
+  <line class="dg-ink" x1="170" y1="80" x2="170" y2="92" />
+  <line class="dg-ink" x1="200" y1="80" x2="200" y2="92" />
+  <line class="dg-ink" x1="230" y1="80" x2="230" y2="92" />
+
+  <text class="dg-note" x="16" y="146">what do they need</text>
+  <line class="dg-rule" x1="150" y1="156" x2="370" y2="156" />
+  <line class="dg-ink" x1="170" y1="150" x2="170" y2="162" />
+  <line class="dg-ink" x1="200" y1="150" x2="200" y2="162" />
+  <line class="dg-ink" x1="230" y1="150" x2="230" y2="162" />
+  <rect class="dg-accent-fill" x="269" y="150" width="2" height="12" />
+  <rect class="dg-accent-fill" x="319" y="150" width="2" height="12" />
+  <text class="dg-note-accent" x="256" y="180">space</text>
+  <text class="dg-note-accent" x="300" y="180">stillness</text>
+
+  <text class="dg-note" x="16" y="208">only the second set contains doing nothing</text>
+</svg>

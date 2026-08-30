@@ -51,6 +51,11 @@ Reflect your partner's emotional state back to them with slightly more intensity
 
 Before each offer, ask not "what's my best move?" but "what does my partner need right now?" Sometimes they need space. Sometimes they need a straight line. Sometimes they need someone to raise the stakes. Elevating is reading what they need and providing it.
 
+![Two questions with their answer sets on the same track: the second set contains the first three answers plus two more.](/images/two-questions-two-answer-sets.svg)
+
+*The three shared answers are identical, so the swap costs nothing and only adds.*
+
+
 The failure mode of elevating is removing all friction from the scene. Not every offer needs to be treated as genius; sometimes the supportive move is to ground, challenge, or simply be still. Relentless amplification destroys contrast and flattens scenes. Napier's insight applies: a strong individual choice that creates productive tension IS support.
 
 Del Close, in *Truth in Comedy*: *"If we treat each other as if we are geniuses, poets and artists, we have a better chance of becoming that on stage."*
