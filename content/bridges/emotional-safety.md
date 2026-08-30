@@ -114,6 +114,11 @@ It's not:
 - **Niceness.** Safe teams give honest feedback because they know the person receiving it won't be destroyed by it.
 - **A policy.** You can't memo emotional safety into existence. It's built through repeated micro-interactions, not through declarations.
 
+![Three quantities with a short assumed bar above and a longer actual bar below in each case.](/images/what-safe-teams-do-more-of.svg)
+
+*Every one of these is a thing safety is supposed to reduce.*
+
+
 ## The Same Mechanism Outside Work
 
 Most people meet this phrase in a personal context rather than a professional one, and the temptation is to treat the two as different subjects. They are not. The mechanism is identical: an estimate, built from repeated small exchanges, about whether exposure is survivable here.

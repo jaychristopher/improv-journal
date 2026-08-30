@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT SAFE TEAMS DO MORE OF</text>
+
+  <text class="dg-note" x="16" y="72">disagreement</text>
+  <line class="dg-muted" x1="180" y1="68" x2="230" y2="68" />
+  <rect class="dg-accent-fill" x="180" y="83" width="170" height="2" />
+
+  <text class="dg-note" x="16" y="132">difficulty attempted</text>
+  <line class="dg-muted" x1="180" y1="128" x2="222" y2="128" />
+  <rect class="dg-accent-fill" x="180" y="143" width="150" height="2" />
+
+  <text class="dg-note" x="16" y="192">honest feedback</text>
+  <line class="dg-muted" x1="180" y1="188" x2="234" y2="188" />
+  <rect class="dg-accent-fill" x="180" y="203" width="160" height="2" />
+
+  <text class="dg-note" x="370" y="58" text-anchor="end">assumed above, actual below</text>
+</svg>
