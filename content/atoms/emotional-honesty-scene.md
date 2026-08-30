@@ -29,6 +29,11 @@ Two players given a specific shared physical activity — folding laundry, assem
 
 The key addition to the constraint: **respond to what you actually see in your partner, not to the topic.** Read their body, their breathing, their eye contact. Let what you notice in them determine what you say — not your plan for the scene.
 
+![The same next line reached from two different sources: the topic in the usual case, what you see in your partner under the constraint.](/images/what-determines-your-next-line.svg)
+
+*Both rows produce a line about the laundry; only one of them is about the person folding it.*
+
+
 The goal is not drama. The goal is truth. If the truth is awkward silence while you both stare at a receipt, that's the scene. If the truth is quiet fear about money, that's the scene.
 
 ## Side-coaching

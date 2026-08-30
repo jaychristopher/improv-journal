@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT DETERMINES YOUR NEXT LINE</text>
+
+  <text class="dg-note" x="16" y="80">usual</text>
+  <text class="dg-note" x="90" y="80">the topic</text>
+  <line class="dg-ink" x1="150" y1="70" x2="150" y2="82" />
+  <line class="dg-muted" x1="150" y1="76" x2="250" y2="76" />
+  <text class="dg-note" x="260" y="80">your next line</text>
+
+  <text class="dg-note" x="16" y="146">the constraint</text>
+  <text class="dg-note" x="16" y="164">what you see in them</text>
+  <rect class="dg-accent-fill" x="149" y="136" width="2" height="12" />
+  <line class="dg-muted" x1="150" y1="142" x2="250" y2="142" />
+  <text class="dg-note" x="260" y="146">your next line</text>
+
+  <text class="dg-note" x="16" y="198">the topic is still there; it stops being the source</text>
+</svg>
