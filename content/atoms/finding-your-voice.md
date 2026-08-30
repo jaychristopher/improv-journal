@@ -43,6 +43,10 @@ Improv is collaborative; "serve the scene, not yourself" can suppress individual
 
 Voice is a consistent set of values and instincts that adapts to context. Schtick is a repeated set of moves that ignores context. Voice serves the scene through a distinctive lens; schtick serves the performer regardless of the scene.
 
+![Two panels over the same three scenes: voice puts a different response under each, while schtick sends all three to the same one.](/images/voice-or-schtick.svg)
+
+*In any single scene the two are indistinguishable; the difference only appears across the third one.*
+
 ## Specific sources
 
 TJ & Dave, *Speed of Life* — both voices demonstrated through discussion of process. Carrane, Improv Nerd Podcast — the single best archive for studying how improvisers think about artistic evolution. Razowsky, *A.D.D. Comedy* podcast and workshops. Johnstone, *Impro* — voice as what remains when you stop trying to be someone else. Hines Substack — artistic development and the relationship between technique and personal expression. **Counter-position:** "Voice is a luxury" — years of foundational work must precede concern with self-expression. Aspiring improvisers who try to "find their voice" too early end up performing a character of themselves rather than being present. Ensemble purist critique: individual voice borders on ego. The system problem: UCB, iO, and Annoyance each tend to produce performers whose "voice" partially reflects which system trained them — voice is both individual and institutional.

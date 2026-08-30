@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="36">VOICE</text>
+  <text class="dg-eyebrow" x="216" y="36">SCHTICK</text>
+  <text class="dg-note" x="16" y="58">three scenes</text>
+
+  <line class="dg-rule" x1="16" y1="76" x2="180" y2="76" />
+  <line class="dg-ink" x1="40" y1="70" x2="40" y2="82" />
+  <line class="dg-ink" x1="98" y1="70" x2="98" y2="82" />
+  <line class="dg-ink" x1="156" y1="70" x2="156" y2="82" />
+  <line class="dg-muted" x1="40" y1="84" x2="46" y2="144" />
+  <line class="dg-muted" x1="98" y1="84" x2="92" y2="144" />
+  <line class="dg-muted" x1="156" y1="84" x2="162" y2="144" />
+  <line class="dg-rule" x1="16" y1="152" x2="180" y2="152" />
+  <rect class="dg-accent-fill" x="45" y="146" width="2" height="12" />
+  <rect class="dg-accent-fill" x="91" y="146" width="2" height="12" />
+  <rect class="dg-accent-fill" x="161" y="146" width="2" height="12" />
+
+  <line class="dg-rule" x1="216" y1="76" x2="380" y2="76" />
+  <line class="dg-ink" x1="240" y1="70" x2="240" y2="82" />
+  <line class="dg-ink" x1="298" y1="70" x2="298" y2="82" />
+  <line class="dg-ink" x1="356" y1="70" x2="356" y2="82" />
+  <line class="dg-muted" x1="240" y1="84" x2="298" y2="144" />
+  <line class="dg-muted" x1="298" y1="84" x2="298" y2="144" />
+  <line class="dg-muted" x1="356" y1="84" x2="298" y2="144" />
+  <line class="dg-rule" x1="216" y1="152" x2="380" y2="152" />
+  <rect class="dg-accent-fill" x="297" y="146" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="178">a response to each</text>
+  <text class="dg-note" x="216" y="178">the same response</text>
+
+  <text class="dg-note" x="16" y="210">voice tracks the scene, schtick does not have to look</text>
+</svg>
