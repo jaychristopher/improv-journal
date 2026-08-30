@@ -36,6 +36,10 @@ It also rewards anybody outside the Chicago inheritance, or suspicious of it. Th
 
 **The honest caveat.** Breadth is bought with depth, and the reference organisation means it does not argue a position. A reader wanting a coherent method — a claim about what improv is for and what follows from that — will find a well-documented survey instead, and surveys are unsatisfying to read straight through.
 
+![Two shapes of book: a survey spread wide and kept shallow, and an argument covering less ground and going further into it.](/images/breadth-against-depth.svg)
+
+*Neither shape is better; this one answers "how is this done" rather than "why".*
+
 Its own CROW material illustrates the limit. The book is the most citable published source for the framework, and it documents the vocabulary without settling where it came from, because that is what a handbook does.
 
 **Key concepts drawn from here:**
