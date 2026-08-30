@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE FEAR PREDICTS</text>
+
+  <text class="dg-note" x="16" y="76">before you step out</text>
+  <rect class="dg-accent-fill" x="170" y="71" width="200" height="2" />
+
+  <text class="dg-note" x="16" y="126">the moment itself</text>
+  <rect class="dg-accent-fill" x="170" y="121" width="46" height="2" />
+
+  <text class="dg-note" x="16" y="170">the gap is what the repetition is for</text>
+</svg>

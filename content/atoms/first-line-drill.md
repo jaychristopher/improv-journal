@@ -36,6 +36,11 @@ Players line up. One at a time, each steps out and delivers a single declarative
 
 The fear before stepping out is almost always worse than the moment itself. The line doesn't have to be brilliant — it has to exist. Notice how every line, no matter how simple, instantly creates a world. Notice which lines make you lean in (usually the specific, emotionally grounded ones) versus which feel generic (usually the vague, hedged ones).
 
+![Two bars for the same moment: what the fear predicts, and what the moment turns out to cost.](/images/what-the-fear-predicts.svg)
+
+*Both bars are measurements of the same step, taken a few seconds apart.*
+
+
 ## The core rule
 
 Commit fully, don't hedge. No vague openers ("So, uh, what do you want to do?"). The line must land with specificity and conviction.
