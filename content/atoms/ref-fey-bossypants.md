@@ -56,3 +56,8 @@ Brought improv vocabulary into mainstream culture — corporate training, therap
 ## The limitation acknowledged by practitioners
 
 Fey's framing is accessible but strips out the hardest parts — vulnerability, commitment, the courage to be obvious, the discipline of support. The popular "yes, and" is agreement; the practiced "yes, and" is transformation.
+
+![The same phrase on two tracks: one mark for the popular reading, and four more for what the practiced one carries.](/images/the-same-three-words.svg)
+
+*Somebody using the popular version is not saying it wrongly; they are saying a shorter thing that sounds identical.*
+

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 234" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE SAME THREE WORDS</text>
+
+  <text class="dg-note" x="16" y="76">popular</text>
+  <line class="dg-rule" x1="150" y1="78" x2="370" y2="78" />
+  <line class="dg-ink" x1="170" y1="70" x2="170" y2="82" />
+  <text class="dg-note" x="186" y="100">agreement</text>
+
+  <text class="dg-note" x="16" y="146">practiced</text>
+  <line class="dg-rule" x1="150" y1="148" x2="370" y2="148" />
+  <line class="dg-ink" x1="170" y1="140" x2="170" y2="152" />
+  <rect class="dg-accent-fill" x="219" y="140" width="2" height="12" />
+  <rect class="dg-accent-fill" x="259" y="140" width="2" height="12" />
+  <rect class="dg-accent-fill" x="299" y="140" width="2" height="12" />
+  <rect class="dg-accent-fill" x="339" y="140" width="2" height="12" />
+  <text class="dg-note-accent" x="186" y="170">vulnerability, commitment,</text>
+  <text class="dg-note-accent" x="186" y="188">being obvious, support</text>
+
+  <text class="dg-note" x="16" y="226">the phrase does not carry the difference</text>
+</svg>
