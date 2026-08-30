@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE FRAMEWORK APPLIES</text>
+
+  <rect class="dg-accent-fill" x="60" y="79" width="160" height="2" />
+  <text class="dg-note-accent" x="60" y="70">it helps you</text>
+
+  <line class="dg-muted" x1="230" y1="80" x2="370" y2="80" />
+  <text class="dg-note" x="230" y="70">it helps them</text>
+
+  <line class="dg-rule" x1="60" y1="112" x2="370" y2="112" />
+  <line class="dg-ink" x1="225" y1="104" x2="225" y2="120" />
+  <text class="dg-note" x="60" y="134">equal power, good faith</text>
+  <text class="dg-note" x="370" y="134" text-anchor="end">asymmetric power</text>
+
+  <text class="dg-note" x="16" y="188">it does not stop working; it changes sides</text>
+</svg>

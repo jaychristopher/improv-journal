@@ -131,6 +131,11 @@ It does not apply to:
 
 **Abuse.** When one person systematically negates the other's reality — gaslighting, manipulation, coercive control — "accepting the offer" becomes a tool of the abuser. If accepting someone's reality means denying your own, you're not in a conflict. You're in a power dynamic that requires boundaries, not acceptance.
 
+![One axis of power asymmetry with the framework helping you on the left of the boundary and helping the other person on the right.](/images/where-the-framework-applies.svg)
+
+*Past the mark the same move is still effective, which is what makes it dangerous rather than useless.*
+
+
 **Structural power imbalances.** When your boss says "You're not a team player" because you raised a legitimate concern, the status dynamics aren't negotiable in the moment. Accepting the offer doesn't mean accepting the framing. Sometimes the right move is not de-escalation but documentation and escalation to someone with authority.
 
 **Bad faith.** If the other person is not trying to resolve the conflict but to win it — to establish dominance, extract concessions, or punish — the acceptance framework rewards bad faith behavior. De-escalation with a bad-faith actor teaches them that escalation works.
