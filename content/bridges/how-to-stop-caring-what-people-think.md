@@ -30,6 +30,11 @@ Improv has a name for this: **performing cleverness.** It's when the performer i
 
 The result is the same whether you're on stage or in a meeting: everything you say is pre-filtered, sanitized, and delayed. The authentic response gets replaced by the calculated one. And here's the cruel irony — the calculated response is almost always less interesting, less connecting, and less likeable than the authentic one would have been.
 
+![Filtering with two outgoing lines: the intended effect on likeability above, and the actual one below.](/images/what-the-filter-delivers.svg)
+
+*Both lines start from the same move, which is why the failure is invisible from inside it.*
+
+
 People can feel when you're performing for them vs. being with them. They can't always name it, but they feel it. The filtered version of you reads as inauthentic, even when the content is perfectly polished. The unfiltered version — even when it stumbles — reads as real.
 
 ## Why Do You Care So Much What People Think?

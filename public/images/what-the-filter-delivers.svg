@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE FILTER DELIVERS</text>
+
+  <rect class="dg-accent-fill" x="16" y="98" width="2" height="14" />
+  <text class="dg-note-accent" x="30" y="110">filtering</text>
+
+  <line class="dg-muted" x1="100" y1="106" x2="200" y2="74" />
+  <line class="dg-muted" x1="100" y1="106" x2="200" y2="138" />
+
+  <text class="dg-note" x="210" y="78">intended: more likeable</text>
+  <text class="dg-note-accent" x="210" y="142">actual: less likeable</text>
+
+  <text class="dg-note" x="16" y="180">one move, aimed at the thing it reduces</text>
+</svg>
