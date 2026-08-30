@@ -30,6 +30,11 @@ This is exactly what people pleasing is. You have a reaction — disagreement, d
 
 Johnstone catalogued a behavior he called [wimping](/how-it-works/diagnosis/wimping): accepting without adding. The person who says yes to everything without contributing their own reality. In improv, wimping kills scenes because it removes one player's voice from the collaboration. In life, people pleasing does the same thing — it removes *your* voice from every relationship you're in.
 
+![Two blocks on the same track: one landing after the offer has crossed into shared space, one landing before it gets there.](/images/where-the-block-happens.svg)
+
+*Nobody else was involved in the second row, which is why it does not feel like a refusal.*
+
+
 ## Why You Do It
 
 People pleasing isn't a personality flaw. It's a **status strategy** — a highly effective one that your nervous system learned early and reinforced through years of social reward.
