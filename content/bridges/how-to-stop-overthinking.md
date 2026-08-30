@@ -139,6 +139,10 @@ Everything above depends on somewhere else to put your attention. A partner to m
 
 That is why the loop feels worse at night rather than merely more inconvenient. The bandwidth account predicts it exactly: you have not become more anxious after midnight, you have run out of things competing for the channel.
 
+![Two rows of things competing for attention: at midday six other demands alongside the thought; at two in the morning the same thought and nothing else.](/images/nothing-else-in-the-channel.svg)
+
+*The thought is in the midday row too — it was there all along, just outnumbered.*
+
 It also explains why the standard advice fails. "Clear your mind" and "stop thinking about it" are cognitive tasks, so they spend the resource they are trying to free — the same trap as suppression during the day, with fewer ways out.
 
 What follows from the model, rather than from sleep folklore, is narrow but real. Write the loop down. Not to solve it: an unresolved thought is held open because some part of you is still tasked with remembering it, and moving it onto paper closes that task without answering the question. Give attention something external and boring enough not to wake you — the texture of the sheet, the temperature of the room, your own breathing counted. Not a screen, which supplies input and demands processing at the same time.
