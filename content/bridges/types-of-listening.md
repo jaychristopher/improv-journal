@@ -95,6 +95,11 @@ Two things fall out of the mapping.
 
 Which is the practical case for thinking in modes instead of types. The taxonomy tells you what to aim at. It does not tell you what your attention is doing, and that is the part you can actually change.
 
+![Seven conventional listening types on the left joined to three attention modes on the right; six take a single line each, while active listening takes one to all three.](/images/seven-types-three-modes.svg)
+
+*The lines cross because the list is ordered by purpose; if it were ordered by attention they would run parallel.*
+
+
 ## Agreeing, Disagreeing, and Being With
 
 A different three-way split circulates in listening and facilitation writing: that you are either agreeing, disagreeing, or *being with* the person. It is worth mapping, partly because it is a good framing and partly because it is not quite three things.

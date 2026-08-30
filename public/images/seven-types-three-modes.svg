@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">SEVEN TYPES, THREE MODES</text>
+
+  <text class="dg-note" x="16" y="64">discriminative</text>
+  <text class="dg-note" x="16" y="90">comprehensive</text>
+  <text class="dg-note" x="16" y="116">critical</text>
+  <text class="dg-note" x="16" y="142">appreciative</text>
+  <text class="dg-note" x="16" y="168">empathetic</text>
+  <text class="dg-note" x="16" y="194">selective</text>
+  <text class="dg-note" x="16" y="220">active</text>
+
+  <text class="dg-note" x="290" y="90">broadcast</text>
+  <text class="dg-note" x="290" y="142">evaluative</text>
+  <text class="dg-note" x="290" y="194">receptive</text>
+
+  <line class="dg-muted" x1="124" y1="60" x2="276" y2="190" />
+  <line class="dg-muted" x1="124" y1="86" x2="276" y2="138" />
+  <line class="dg-muted" x1="124" y1="112" x2="276" y2="138" />
+  <line class="dg-muted" x1="124" y1="138" x2="276" y2="190" />
+  <line class="dg-muted" x1="124" y1="164" x2="276" y2="190" />
+  <line class="dg-muted" x1="124" y1="190" x2="276" y2="86" />
+
+  <line class="dg-accent" x1="124" y1="216" x2="276" y2="86" />
+  <line class="dg-accent" x1="124" y1="216" x2="276" y2="138" />
+  <line class="dg-accent" x1="124" y1="216" x2="276" y2="190" />
+
+  <text class="dg-note" x="16" y="252">six types pick a mode; one can be run from any of them</text>
+</svg>
