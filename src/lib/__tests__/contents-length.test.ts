@@ -26,8 +26,8 @@ const DIR: Record<string, string> = {
   reference: "library",
 };
 
-function outlines(): { slug: string; dom: number; visible: number }[] {
-  const out: { slug: string; dom: number; visible: number }[] = [];
+function outlines(): { slug: string; dom: number; visible: number; misleading: boolean }[] {
+  const out: { slug: string; dom: number; visible: number; misleading: boolean }[] = [];
   const dir = path.join(ROOT, "content", "atoms");
 
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".md"))) {
@@ -48,7 +48,17 @@ function outlines(): { slug: string; dom: number; visible: number }[] {
       (sum, m) => sum + (m[0].match(/<a /g) ?? []).length,
       0,
     );
-    out.push({ slug, dom, visible: dom - folded });
+    // Does the visible part show a subsection while a top-level one is folded?
+    // `ml-4` is how the component marks a level-3 entry.
+    const cut = nav.indexOf("<details");
+    const head = cut < 0 ? nav : nav.slice(0, cut);
+    const shownSub = [...head.matchAll(/<li([^>]*)>/g)].filter((m) => /ml-4/.test(m[1])).length;
+    const hiddenTop =
+      cut < 0
+        ? 0
+        : [...nav.slice(cut).matchAll(/<li([^>]*)>/g)].filter((m) => !/ml-4/.test(m[1])).length;
+
+    out.push({ slug, dom, visible: dom - folded, misleading: shownSub > 0 && hiddenTop > 0 });
   }
   return out;
 }
@@ -83,5 +93,12 @@ describe("page outline", () => {
       .filter((p) => p.visible > TOC_VISIBLE)
       .map((p) => `${p.slug}: ${p.visible} visible`);
     expect(overlong).toEqual([]);
+
+    // And the outline is not merely short but accurate. Folding by raw count
+    // spent the budget on whichever section happened to have subsections, so
+    // 121 of 127 folded outlines hid a top-level section while showing a
+    // subsection of another — an outline that cannot say what the page covers.
+    const misleading = pages.filter((p) => p.misleading).map((p) => p.slug);
+    expect(misleading).toEqual([]);
   });
 });

@@ -126,6 +126,20 @@ never existed. Writing the sympathetic version would have sent people hunting fo
 a page that was never there. Reassuring copy that is false is worse context than
 none.
 
+**An outline that could not say what the page covers** — organic search → any
+long page — *my own fix, wrong*. Folding the table of contents by raw entry
+count spent the visible budget on whichever section happened to have
+subsections: 121 of 127 folded outlines were showing a subsection of one section
+while hiding whole top-level sections of the page, fourteen of them on
+this-or-that-questions. Shorter, and inaccurate — which is worse than the wall
+it replaced, because a reader trusts an outline to be the page's shape. Folds by
+level now: top-level sections visible, subsections behind the disclosure. 121 to
+0, and the visible worst case is 10 against 27 if everything were listed.
+
+The pattern worth keeping: the first fix was measured only by the thing it set
+out to reduce. Counting visible links proved the wall was gone and said nothing
+about whether what remained was true.
+
 ---
 
 ## Entry points examined, no defect found
