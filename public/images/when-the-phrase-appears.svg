@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHEN THE PHRASE APPEARS</text>
+
+  <text class="dg-note" x="163" y="52" text-anchor="middle">Johnstone</text>
+  <text class="dg-note" x="370" y="52" text-anchor="end">Bossypants</text>
+  <text class="dg-note" x="60" y="72" text-anchor="middle">Spolin</text>
+  <text class="dg-note" x="260" y="72" text-anchor="middle">Truth in Comedy</text>
+
+  <line class="dg-rule" x1="50" y1="90" x2="376" y2="90" />
+  <line class="dg-ink" x1="60" y1="84" x2="60" y2="96" />
+  <line class="dg-ink" x1="163" y1="84" x2="163" y2="96" />
+  <line class="dg-ink" x1="260" y1="84" x2="260" y2="96" />
+  <line class="dg-ink" x1="370" y1="84" x2="370" y2="96" />
+
+  <text class="dg-note" x="60" y="112" text-anchor="middle">1963</text>
+  <text class="dg-note" x="163" y="112" text-anchor="middle">1979</text>
+  <text class="dg-note" x="260" y="112" text-anchor="middle">1994</text>
+  <text class="dg-note" x="376" y="112" text-anchor="end">2011</text>
+
+  <line class="dg-muted" x1="50" y1="140" x2="258" y2="140" />
+  <text class="dg-note" x="50" y="160">not in either book</text>
+  <rect class="dg-accent-fill" x="260" y="139" width="116" height="2" />
+  <text class="dg-note-accent" x="376" y="160" text-anchor="end">the phrase, in print</text>
+
+  <text class="dg-note" x="16" y="192">thirty-one years after the first of them</text>
+</svg>
