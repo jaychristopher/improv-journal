@@ -41,6 +41,11 @@ Three things, and adult life removes two of them.
 
 Adults usually still have the first thing at work and almost never have the second and third together.
 
+![Three requirements against school and adult life: the first survives in weakened form, the other two have no adult mark at all.](/images/what-adult-life-removes.svg)
+
+*You did not get worse at this. Two of the three conditions stopped being supplied.*
+
+
 ## Why Improv Classes Produce Friends
 
 The format accidentally solves all three. The same twelve people, weekly, for eight weeks — repeated contact you did not have to negotiate. A shared task that is not each other. And a room in which everyone is visibly bad at something, which does more for `vulnerability` than any amount of deliberate opening up.

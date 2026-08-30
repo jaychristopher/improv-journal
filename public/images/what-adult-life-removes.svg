@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ADULT LIFE REMOVES</text>
+
+  <text class="dg-eyebrow" x="230" y="58" text-anchor="middle">SCHOOL</text>
+  <text class="dg-eyebrow" x="330" y="58" text-anchor="middle">ADULT LIFE</text>
+  <line class="dg-rule" x1="16" y1="68" x2="384" y2="68" />
+
+  <text class="dg-note" x="16" y="100">repeated unplanned contact</text>
+  <line class="dg-rule" x1="200" y1="96" x2="376" y2="96" />
+  <line class="dg-ink" x1="230" y1="88" x2="230" y2="104" />
+  <line class="dg-muted" x1="330" y1="90" x2="330" y2="102" />
+
+  <text class="dg-note-accent" x="16" y="136">a shared activity</text>
+  <line class="dg-rule" x1="200" y1="132" x2="376" y2="132" />
+  <line class="dg-ink" x1="230" y1="124" x2="230" y2="140" />
+
+  <text class="dg-note-accent" x="16" y="172">room to be unimpressive</text>
+  <line class="dg-rule" x1="200" y1="168" x2="376" y2="168" />
+  <line class="dg-ink" x1="230" y1="160" x2="230" y2="176" />
+
+  <text class="dg-note" x="16" y="206">adult life keeps the first and drops the other two</text>
+</svg>
