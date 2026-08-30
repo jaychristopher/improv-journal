@@ -77,6 +77,11 @@ The best improv teachers give fewer notes, not more. This is counterintuitive â€
 
 A performer who receives eight notes after a scene can't work on all eight simultaneously. They'll either try to (and become so self-monitoring that they're worse than before) or pick one or two and forget the rest (in which case the other six notes were noise). Either way, the volume of feedback degraded rather than enhanced the performer's ability to improve.
 
+![Eight notes with two of them accented and six faint, above a single note that is accented on its own.](/images/what-eight-notes-deliver.svg)
+
+*The six faint marks are not wasted effort by the giver; they are load carried by the receiver.*
+
+
 The improv principle: **one note. The most important one. And then an exercise that trains it.**
 
 This maps directly to effective feedback in any domain:
