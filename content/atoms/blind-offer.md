@@ -54,6 +54,11 @@ Player B's entire job is to make Player A look good. The exercise strips away se
 
 Every scene contains moments where your partner does something you didn't expect. The question is always: do you treat it as a problem (your thing to redirect) or a gift (their thing to elevate)? This exercise builds the "gift" reflex. Note: it primarily trains the *perceptual* dimension of support — reading your partner and building from what you see. The harder dimension — choosing to serve your partner when you have your own competing impulse — is trained by the Supporting Player variation below.
 
+![Two halves of support with only the first filled: reading your partner is covered, choosing them over your own impulse is an empty slot.](/images/which-half-it-trains.svg)
+
+*The empty half is the one that hurts, and no exercise reaches it by accident.*
+
+
 ## Variation — Double Blind (advanced)
 
 Both players start with physical movements simultaneously, without speaking. After ten seconds, the teacher points to one player, who speaks first and justifies BOTH movements into a single coherent scene. This is significantly harder — it requires pattern-matching two unrelated physical streams into one reality. Save it for students comfortable with the base version.

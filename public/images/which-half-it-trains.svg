@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH HALF IT TRAINS</text>
+
+  <text class="dg-note" x="16" y="80">reading your partner</text>
+  <rect class="dg-accent-fill" x="240" y="75" width="120" height="2" />
+
+  <text class="dg-note" x="16" y="130">choosing them over your own impulse</text>
+  <line class="dg-rule" x1="240" y1="126" x2="360" y2="126" />
+
+  <text class="dg-note" x="16" y="176">the second needs the supporting-player variation</text>
+</svg>
