@@ -65,6 +65,11 @@ It is not, and the distinction is precise. A strong choice **adds** something to
 
 The test is what is still true after you have spoken. If your partner's last offer survives your line, you made a choice. If it has quietly stopped being the case, you bulldozed, however good the line was.
 
+![Two slots after a line is spoken: a strong choice leaves both filled, bulldozing leaves only the speaker's own.](/images/after-you-have-spoken.svg)
+
+*Both rows added something. Only one of them still has what it was added to.*
+
+
 There is also a failure produced by fear of this page, and Napier is aiming at it. A performer so worried about dominating that they offer nothing has not become supportive — they have removed the material their partner needed and left them carrying the scene alone. That is the pastry self, and it is a more common problem in careful groups than bulldozing is.
 
 ## Specific sources

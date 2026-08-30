@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">AFTER YOU HAVE SPOKEN</text>
+
+  <text class="dg-note" x="200" y="66">their offer</text>
+  <text class="dg-note" x="300" y="66">your addition</text>
+
+  <text class="dg-note" x="16" y="110">a strong choice</text>
+  <line class="dg-rule" x1="196" y1="112" x2="256" y2="112" />
+  <rect class="dg-accent-fill" x="224" y="100" width="2" height="12" />
+  <line class="dg-rule" x1="300" y1="112" x2="360" y2="112" />
+  <rect class="dg-accent-fill" x="329" y="100" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="164">bulldozing</text>
+  <line class="dg-rule" x1="196" y1="166" x2="256" y2="166" />
+  <line class="dg-rule" x1="300" y1="166" x2="360" y2="166" />
+  <rect class="dg-accent-fill" x="329" y="154" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="196">volume is not the variable</text>
+</svg>
