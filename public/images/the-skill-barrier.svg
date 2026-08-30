@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE SKILL BARRIER</text>
+
+  <text class="dg-note" x="16" y="72">one song</text>
+  <rect class="dg-accent-fill" x="180" y="67" width="30" height="2" />
+  <text class="dg-note" x="220" y="72">two to four lines</text>
+
+  <text class="dg-note" x="16" y="118">a scene that sings</text>
+  <rect class="dg-accent-fill" x="180" y="113" width="80" height="2" />
+  <text class="dg-note" x="270" y="118">at the peaks</text>
+
+  <text class="dg-note" x="16" y="164">a whole musical</text>
+  <rect class="dg-accent-fill" x="180" y="159" width="180" height="2" />
+
+  <text class="dg-note" x="16" y="204">sixty to ninety minutes of it</text>
+</svg>

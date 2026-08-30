@@ -38,6 +38,11 @@ One improvised song within a larger show. Common in Theatresports and Whose Line
 
 A scene that breaks into song at emotional peaks, like a stage musical. The performer sings when dialogue can no longer contain the feeling. This is the "I Want" song, the "Villain's Lament," the "Eleven O'Clock Number" — but invented in the moment. Requires understanding of musical theatre conventions and when songs function dramatically.
 
+![Three points on the musical spectrum with how much singing each demands, from a few lines to a full evening.](/images/the-skill-barrier.svg)
+
+*The bars measure exposure, not difficulty, which is why the last one is a different job rather than a harder one.*
+
+
 ## Full-length improvised musicals (longform)
 
 An entire 60-90 minute musical — plot, characters, songs, reprises, an act structure — all improvised from a single suggestion. The gold standard. Companies: Baby Wants Candy (Chicago, founded 2001), The Improvised Musical (various companies worldwide), BATS Improv (San Francisco). These shows typically include 8-12 songs, recurring melodic themes, and a narrative arc.
