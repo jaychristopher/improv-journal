@@ -45,6 +45,25 @@ The first thing under the title is "By Jay Christopher · Updated 24 August 2026
 For a returning reader that is provenance. For a cold arrival it is a name they do
 not know, placed above any statement of what the site is.
 
+**Context line above the breadcrumb** — organic search → concept page —
+*overload*, and an ordering error. On all 102 pages that have one, the first
+thing inside `main` was "Part of *thread* in *path* · Also in: *path*, *path*" —
+up to 190 characters of internal titles before anything said where the reader
+was. Fixed: breadcrumb first, and the extra paths dropped.
+
+**The same navigation twice** — organic search → concept page — *overload*. Every
+path that line listed already appears in the sidebar's "Part of" block, which
+carries a superset. On be-present the line named three paths and the sidebar
+named the same three. Kept one relationship rather than none, because the sidebar
+renders below the article on mobile.
+
+**A backlog item whose premise was wrong** — process note. [[EC-1.1 Give every
+concept page a cold-arrival line]] was written to cover the 103 pages showing no
+context line. Comparing them against the 102 that do showed the covered pages
+were the worse ones: the line adds internal names, not orientation. Reframed
+rather than done. The lesson is the one this register exists for — the fix was
+scoped before the entry point was measured.
+
 ---
 
 ## Entry points not yet examined

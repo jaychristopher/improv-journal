@@ -5,14 +5,14 @@ summary: Replace the internal-taxonomy phrasing with something a stranger can us
 parent: "[[EC-2 Context written for the visitor, not the taxonomy]]"
 epic: "[[Entry-point context]]"
 status: To Do
-priority: Medium
+priority: High
 sequence: 1
 executable: agent
 estimate: 60m
 labels: [ux, context, copy]
-blocked_by:
+blocked_by: []
+blocks:
   - "[[EC-1.1 Give every concept page a cold-arrival line]]"
-blocks: []
 files:
   - src/components/ContextBanner.tsx
 ---

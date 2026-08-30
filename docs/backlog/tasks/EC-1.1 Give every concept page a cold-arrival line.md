@@ -4,15 +4,15 @@ type: task
 summary: Render orientation on the 103 concept pages that currently show none
 parent: "[[EC-1 Cold-arrival orientation]]"
 epic: "[[Entry-point context]]"
-status: To Do
+status: Blocked
 priority: High
 sequence: 1
 executable: agent
 estimate: 90m
 labels: [ux, context]
-blocked_by: []
-blocks:
+blocked_by:
   - "[[EC-2.1 Rewrite the context line for someone who just arrived]]"
+blocks: []
 files:
   - src/components/ContextBanner.tsx
   - src/components/AtomDetail.tsx
@@ -53,4 +53,17 @@ The count above reports zero pages without a context line, and
 
 ## Outcome
 
-_Not started._
+**2026-08-30 — premise inverted, task reframed rather than done.**
+
+The comparison this task assumed was never run. Doing it showed the 102 pages
+that *have* a context line are worse off than the 103 without: the line names a
+thread and up to three paths, all of them repeated in the sidebar, none of them
+meaningful to somebody who arrived thirty seconds ago.
+
+So adding it to the other 103 would have spread the problem. What shipped
+instead was the reduction — breadcrumb first, extra paths dropped, 190 characters
+to 114 at worst.
+
+This task now depends on [[EC-2.1 Rewrite the context line for someone who just
+arrived]] rather than blocking it: there is no point rendering the line on 103
+more pages until it says something worth reading. Blocked, deliberately.
