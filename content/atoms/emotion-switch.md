@@ -28,6 +28,11 @@ updated: "2026-08-22"
 
 Two players in a scene. A coach periodically calls out an emotion — "joy," "grief," "anger," "tenderness" — every 10-20 seconds (faster as skill grows). Both players must transition to that emotion immediately, **justified within the context of the scene**. The scene continues; the facts don't change. Only the emotional reality shifts. The key constraint: don't just switch faces — let the new emotion change what you *want* from your scene partner.
 
+![The same sentence written three times unchanged above three different emotions called by the coach.](/images/the-facts-do-not-move.svg)
+
+*The row this leaves out is what you want from them, and leaving that flat is how the exercise gets failed.*
+
+
 ## What to notice
 
 How the same conversation transforms completely when the emotional lens changes. The words "pass the salt" mean something entirely different in grief than in joy. Notice how quickly your body adapts compared to your mind — the body can switch emotions faster if you let it lead.

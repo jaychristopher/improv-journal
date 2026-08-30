@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE FACTS DO NOT MOVE</text>
+
+  <text class="dg-note" x="16" y="80">said</text>
+  <text class="dg-secondary" x="145" y="80" text-anchor="middle">pass the salt</text>
+  <text class="dg-secondary" x="235" y="80" text-anchor="middle">pass the salt</text>
+  <text class="dg-secondary" x="325" y="80" text-anchor="middle">pass the salt</text>
+
+  <line class="dg-rule" x1="100" y1="100" x2="370" y2="100" />
+
+  <text class="dg-note" x="16" y="126">called</text>
+  <text class="dg-note-accent" x="145" y="126" text-anchor="middle">joy</text>
+  <text class="dg-note-accent" x="235" y="126" text-anchor="middle">grief</text>
+  <text class="dg-note-accent" x="325" y="126" text-anchor="middle">anger</text>
+
+  <text class="dg-note" x="16" y="172">the same sentence, three times, unchanged</text>
+</svg>
