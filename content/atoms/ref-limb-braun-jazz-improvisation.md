@@ -44,4 +44,8 @@ Limb and Braun studied jazz pianists, not improvising actors. Every application 
 
 ## Also relevant
 
-The finding is often reported as "the brain switches off its inner critic," which overstates it. Deactivation is relative to a demanding control condition, not an off switch, and the study says nothing about whether the state can be trained. What it establishes is that the state exists and is distinguishable — which is enough to make `spontaneity` a physiological claim rather than only a pedagogical one.
+The finding is often reported as "the brain switches off its inner critic," which overstates it. Deactivation is relative to a demanding control condition, not an off switch, and the study says nothing about whether the state can be trained.
+
+![Self-monitoring measured in two conditions: high while reproducing a learned sequence, lower while improvising, and a long way above zero in both.](/images/not-to-nothing.svg)
+
+*"The brain switches off its inner critic" is a claim about the bottom of this axis, which the study never measured.* What it establishes is that the state exists and is distinguishable — which is enough to make `spontaneity` a physiological claim rather than only a pedagogical one.

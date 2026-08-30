@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">SELF-MONITORING</text>
+
+  <line class="dg-rule" x1="120" y1="48" x2="120" y2="180" />
+  <line class="dg-rule" x1="120" y1="180" x2="360" y2="180" />
+  <text class="dg-note" x="16" y="184">zero</text>
+
+  <line class="dg-ink" x1="130" y1="70" x2="250" y2="70" />
+  <text class="dg-secondary" x="260" y="74">learned sequence</text>
+
+  <line class="dg-muted" x1="190" y1="72" x2="190" y2="117" />
+  <text class="dg-note" x="200" y="98">the deactivation</text>
+
+  <rect class="dg-accent-fill" x="130" y="119" width="120" height="2" />
+  <text class="dg-secondary" x="260" y="124">improvising</text>
+
+  <text class="dg-note" x="16" y="210">the drop is from a demanding baseline, not to nothing</text>
+</svg>
