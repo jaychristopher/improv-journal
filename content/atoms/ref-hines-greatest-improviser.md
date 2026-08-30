@@ -35,6 +35,11 @@ Short chapters, one behavioural instruction each, written in the voice of somebo
 
 Its distinguishing move is refusing to describe scenes. Almost every improv book explains what a good scene contains. Hines writes about what a performer is doing internally in the seconds before they speak, which is the part that actually goes wrong and the part nobody can see from the audience.
 
+![A line being spoken with two spans of attention: a long one covering the scene after it, and a short accent one covering the seconds before.](/images/where-this-book-looks.svg)
+
+*The short span is where the failure happens and the long one is where the audience is looking.*
+
+
 ## Who it rewards
 
 Somebody who already takes classes and keeps hitting the same wall. It assumes the mechanics and addresses the habits, so a complete beginner will nod along without changing anything, and an experienced performer will recognise themselves uncomfortably often.

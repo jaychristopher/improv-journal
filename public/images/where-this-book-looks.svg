@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THIS BOOK LOOKS</text>
+
+  <line class="dg-rule" x1="60" y1="118" x2="370" y2="118" />
+  <line class="dg-ink" x1="210" y1="112" x2="210" y2="124" />
+  <text class="dg-note" x="210" y="142" text-anchor="middle">the line is said</text>
+
+  <line class="dg-muted" x1="212" y1="96" x2="360" y2="96" />
+  <text class="dg-note" x="212" y="88">most improv books</text>
+
+  <rect class="dg-accent-fill" x="140" y="95" width="68" height="2" />
+  <text class="dg-note-accent" x="16" y="88">this one</text>
+
+  <text class="dg-note" x="174" y="176" text-anchor="middle">the seconds before you speak</text>
+
+  <text class="dg-note" x="16" y="198">the shorter span is the one nobody can see</text>
+</svg>
