@@ -71,6 +71,11 @@ Anything about improvisation as a performance form. There is no long form in it,
 
 The games are training for theatre. The thing they trained people to do — go out and improvise in front of a paying room, as the show rather than the rehearsal — is what her son and his colleagues did with them afterwards. Readers who come to this book expecting the origin of modern improv performance will find the origin of its exercises and none of its forms, and that gap is the reason the Chicago traditions had to build the rest themselves.
 
+![Two marks on a dated line: the exercises at 1963 and the forms arriving later, built by other people.](/images/what-did-not-exist-yet.svg)
+
+*A book cannot omit something that had not been invented when it was written.*
+
+
 ## Key contributions to the knowledge graph
 
 The whole idea that constraint produces `presence` rather than instruction doing it; `side-coaching` as real-time direction that keeps a player connected instead of stopping the work to correct it; `space-work` and `environment` as the physical route into attention; and evaluation as something structurally retrospective, done by the group about the problem rather than about the person.

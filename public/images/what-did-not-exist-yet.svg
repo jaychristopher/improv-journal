@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT DID NOT EXIST YET</text>
+
+  <text class="dg-note-accent" x="90" y="66">the exercises</text>
+  <rect class="dg-accent-fill" x="119" y="76" width="2" height="14" />
+
+  <text class="dg-note" x="250" y="66">the forms</text>
+  <line class="dg-ink" x1="280" y1="76" x2="280" y2="90" />
+
+  <line class="dg-rule" x1="60" y1="112" x2="370" y2="112" />
+  <line class="dg-ink" x1="120" y1="106" x2="120" y2="118" />
+  <line class="dg-ink" x1="280" y1="106" x2="280" y2="118" />
+  <text class="dg-note" x="120" y="136" text-anchor="middle">1963</text>
+  <text class="dg-note" x="280" y="136" text-anchor="middle">later, by others</text>
+
+  <text class="dg-note" x="16" y="180">the book is not missing them; it precedes them</text>
+</svg>
