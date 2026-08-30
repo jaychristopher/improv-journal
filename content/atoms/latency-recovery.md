@@ -39,6 +39,11 @@ Latency reads as rejection. They made an offer; you went away. Now they have to 
 
 **The core insight: the urge to plan your way back in makes you fall further behind.** This is the latency trap. Once you fall behind, the computation required to "catch up" consumes even more bandwidth, which deepens the disconnect. The only exit is surrender: give up the thread you were holding and join the one that's live. Latency compounds unless you break it physically.
 
+![Two ways back in: catching up lands you short of where the scene now is; taking the last thing puts you on it.](/images/two-ways-back-in.svg)
+
+*The stretch you give up is not owed to anybody; your partner is standing at the right-hand end of it.*
+
+
 ## Attribution note
 
 "Latency recovery" is original terminology for this knowledge graph — no published source uses this term. The concept synthesizes Napier's "do something" principle (*Improvise*) as the actionable recovery technique and TJ & Dave's work on silence and patience as the counter-frame. **Counter-position (critical):** TJ & Dave demonstrate that sometimes silence IS the scene. A pause where both players are fully present is not latency — it's loaded silence. The distinction this atom draws (latency = disconnection vs. pregnant pause = both players present) must be maintained carefully. Pathologizing all silence would contradict the deepest traditions of organic longform.
