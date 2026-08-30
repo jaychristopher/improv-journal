@@ -41,6 +41,11 @@ If you established that you're in a freezer, the environment is maintained by hu
 
 Environment degrades faster than character because it has no advocate. A character defends itself through the performer's commitment; a room does not. This is why environment is the first casualty of decay, and restoring it (through space work) is often the fastest repair.
 
+![Beat by beat, the character is renewed at every one while the room is renewed twice and then left, with the remaining stretch belonging to nobody.](/images/the-room-has-no-advocate.svg)
+
+*Each of those renewals is cheap; what the room lacks is not effort but an owner.*
+
+
 ## The empty-stage counter-argument
 
 Not everybody thinks the imagined room should be built at all, and the objection comes from serious places.
