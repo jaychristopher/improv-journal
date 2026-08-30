@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT MAKES IT A MISTAKE</text>
+
+  <text class="dg-note" x="16" y="78">with an outside standard</text>
+  <line class="dg-rule" x1="170" y1="64" x2="370" y2="64" />
+  <line class="dg-ink" x1="170" y1="64" x2="370" y2="92" />
+  <rect class="dg-accent-fill" x="368" y="64" width="2" height="28" />
+  <text class="dg-note-accent" x="376" y="112" text-anchor="end">a deviation</text>
+
+  <text class="dg-note" x="16" y="174">with none</text>
+  <line class="dg-ink" x1="170" y1="160" x2="370" y2="188" />
+
+  <text class="dg-note" x="16" y="208">the same path, and nothing to measure it against</text>
+</svg>

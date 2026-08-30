@@ -62,6 +62,11 @@ Their position, from the chapter on silence and patience, is that a captivating 
 
 Not a consolation. A structural claim: with no edit and no suggestion, there is no outside standard for a scene to have deviated from, so an error only becomes one if somebody treats it as an error.
 
+![The same scene path drawn twice: once against a reference line where the divergence is measurable, and once alone with no line to diverge from.](/images/what-makes-it-a-mistake.svg)
+
+*The lower row is not more forgiving than the upper one; forgiveness would still need a standard to waive.*
+
+
 ## Where it sits against game-based improv
 
 The book is a standing objection to most of what is taught in Chicago and New York, which is worth reading it for even if you never intend to perform this way.
