@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT A CHOICE DOES</text>
+
+  <text class="dg-note" x="16" y="80">before</text>
+  <line class="dg-rule" x1="150" y1="82" x2="370" y2="82" />
+  <line class="dg-ink" x1="170" y1="74" x2="170" y2="86" />
+  <line class="dg-ink" x1="205" y1="74" x2="205" y2="86" />
+  <line class="dg-ink" x1="240" y1="74" x2="240" y2="86" />
+  <line class="dg-ink" x1="275" y1="74" x2="275" y2="86" />
+
+  <text class="dg-note" x="16" y="146">after</text>
+  <line class="dg-rule" x1="150" y1="148" x2="370" y2="148" />
+  <line class="dg-ink" x1="205" y1="140" x2="205" y2="152" />
+  <line class="dg-ink" x1="275" y1="140" x2="275" y2="152" />
+  <rect class="dg-accent-fill" x="309" y="140" width="2" height="12" />
+  <rect class="dg-accent-fill" x="344" y="140" width="2" height="12" />
+
+  <text class="dg-note" x="150" y="176">two closed</text>
+  <text class="dg-note-accent" x="300" y="176">two opened</text>
+
+  <text class="dg-note" x="16" y="218">not fewer afterwards, different</text>
+</svg>
