@@ -32,7 +32,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-**Alias:** Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
+Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
 
 Presence is the precondition for every other principle. You cannot accept an offer you did not hear, simplify what you did not understand, or be honest about a moment you were not in. This is the foundation — the principle that makes all the others possible.
 
@@ -89,6 +89,10 @@ Off stage the equivalent is arriving at a pause and realising you have no idea w
 Counter-intuitively, presence is more difficult with a long-standing partner than with a stranger, and the reason is structural rather than about effort.
 
 Prediction is the enemy of reception, and prediction gets *better* with familiarity. With somebody you have played with for years, or lived with for a decade, your model of them is accurate enough that you can generate their likely next move and respond to that instead — and be right often enough that the shortcut never gets punished. The exchange proceeds smoothly and neither person is quite there.
+
+![A gauge of how well you can predict a partner: nearly empty with a stranger, nearly full after years together, and the fuller it is the less reception is needed.](/images/the-model-fills-up.svg)
+
+*Strangers are not better partners; they just make the shortcut unavailable.*
 
 That is the failure `discovery` exists against: two people running accurate models of each other produce competent, familiar work and nothing either of them did not already know. The tell is that nothing surprises you, which is easy to mistake for being in sync.
 

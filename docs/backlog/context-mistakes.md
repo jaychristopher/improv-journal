@@ -155,6 +155,22 @@ was replacing one overload with a page where everything is collapsed. Counted:
 sit in different regions. Recorded because a check that finds nothing is worth
 the same as one that does — the alternative is assuming.
 
+**A page opening with leaked-looking metadata** — organic search → principle —
+*underload*. All eight "Be X" pages began "**Alias:** Act before you're ready".
+The sentence after that label is the principle in plain words, the most useful
+line on the page; "Alias" is internal vocabulary and reads as machinery attached
+to the thing somebody came for. /how-it-works/principles surfaces in Search
+Console for "improv principles", so these are landed on directly.
+
+The instructive part: the repo had already caught this label and fixed it in the
+wrong direction. `definitionFromHtml` and `stripLeadLabelHtml` both strip it, so
+the meta description and the JSON-LD were clean while the rendered page still
+showed it — parsers served, reader not. Removing it from the source left both
+derived values byte-identical, which proves the label was doing nothing except
+being read by people. Worth watching for elsewhere: a cleanup applied to the
+metadata path and not to the page is invisible to every check that reads
+metadata.
+
 ---
 
 ## Entry points examined, no defect found

@@ -28,7 +28,7 @@ created: "2026-03-29"
 updated: "2026-08-25"
 ---
 
-**Alias:** Signal the shared reality as it currently exists, clearly and without distortion.
+Signal the shared reality as it currently exists, clearly and without distortion.
 
 This principle operates on two levels that converge in practice:
 
@@ -79,6 +79,10 @@ Honesty is easy when nothing is at stake, which is why the principle is usually 
 ### The tell is fluency, not awkwardness
 
 This is the part people get backwards. The expectation is that a performer who has stopped being honest will look uncomfortable. What actually happens is the opposite: the words get smoother, the timing gets cleaner, and the whole thing becomes easier to watch and harder to be affected by.
+
+![A scale running from rougher to smoother, with the tell for managed signal expected at the rough end and actually appearing at the smooth end.](/images/the-tell-is-fluency.svg)
+
+*Nothing here says polish is bad; it says polish is uninformative in the direction people read it.*
 
 Managed signal is more polished than honest signal, because managing is what polish is. So a stretch that suddenly feels like it is going well, in a scene where something real was about to be admitted, is worth suspecting rather than trusting.
 

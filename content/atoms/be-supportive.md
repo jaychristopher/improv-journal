@@ -31,7 +31,7 @@ created: "2026-04-04"
 updated: "2026-08-24"
 ---
 
-**Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
+Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
 
 Every other principle is an individual command — how should *I* process data, allocate attention, send signals, act, adapt. Be Supportive is the one that is explicitly **other-directed**. It answers: am I working for myself or for the ensemble?
 
@@ -78,6 +78,11 @@ Support isn't selflessness for its own sake. It's an emergent property of mutual
 ## The failure mode of support is self-erasure
 
 If you suppress your own voice, point of view, and creative instincts entirely in service of your partner, you remove an agent from the system. The ensemble needs full humans, not doormats. Susan Messing: if you're so busy serving everyone else that you've lost your own engagement, you've abandoned the scene, not supported it. Support means serving the scene with your whole self — not disappearing from it.
+
+![Three equal segments of ensemble capacity, and the same row below with the third drawn as an empty slot.](/images/what-self-erasure-removes.svg)
+
+*The empty slot is somebody who is still on stage and still trying to help.*
+
 
 Making somebody else's choice work is a skill before it is a virtue, and it transfers directly. [Trust building exercises](/trust-building-exercises) are largely structured practice at it, which is why the ones that work look nothing like the trust fall they are named after.
 

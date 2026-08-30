@@ -32,7 +32,7 @@ created: "2026-04-04"
 updated: "2026-08-25"
 ---
 
-**Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
+Let your partner's offers transform your state — your plans, your emotions, your character, your history.
 
 ## Accepting is not the same as being changed
 
@@ -87,6 +87,10 @@ So the diagnostic is not whether a reaction occurred. It is whether anything **o
 Not "did I react to that", which everybody answers yes to. Ask instead: **would my next line have been different if the offer had never been made?**
 
 If the same next line would have worked before your partner spoke, you were not changed by it. You absorbed the offer, acknowledged it, and continued from where you already were — which is the polite improv described above, and it passes every other principle on this site while producing nothing.
+
+![Two versions of the same moment, one containing the offer and one without it; if the next line is identical in both, the offer changed nothing.](/images/the-counterfactual-test.svg)
+
+*Which is why it has to be run afterwards — a performer watching for the answer live is already managing.*
 
 ### It is the same question three pages ask
 

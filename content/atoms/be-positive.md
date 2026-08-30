@@ -32,7 +32,7 @@ created: "2026-03-29"
 updated: "2026-08-23"
 ---
 
-**Alias:** Accept the current state and extend it forward, rather than resisting or undoing it.
+Accept the current state and extend it forward, rather than resisting or undoing it.
 
 "Positive" doesn't mean happy. A scene about a divorce can be great improv. This is **mathematical positivity** — addition, not subtraction. It's the famous "Yes, And" understood as a systems command rather than a social nicety.
 
@@ -53,6 +53,10 @@ Overaccepting belongs on small offers. "It's Tuesday" is inert until somebody tr
 Reluctant acceptance is right precisely where the offer is already big. Accepting "I've left your father" with matching energy flattens it; accepting it while visibly not wanting it is what makes it land. Reluctance here is not resistance to the offer, which would be `blocking`. It is resistance to the *implications*, which is what a person actually does when something large arrives.
 
 Full acceptance is the default and the least interesting of the three, which is why it is the right starting point. It is also the one to return to whenever a scene has become confusing: receive the thing plainly, extend it plainly, and let the amplitude come back once everybody knows where they are.
+
+![Two scales crossed: the small offer wants the large response and the large offer wants the restrained one, so the right amplitude runs opposite to the offer.](/images/amplitude-runs-opposite.svg)
+
+*Full acceptance sits in the middle of both scales, which is why it is the one to come back to.*
 
 ## Accepting an offer that is weak
 

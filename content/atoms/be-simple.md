@@ -28,7 +28,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-**Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
+Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
 
 The most counterintuitive principle. It goes against everything our egos tell us — we want to be the cleverest person in the room. But Keith Johnstone: *"The improviser has to realise that the more obvious he is, the more original he appears."*
 
@@ -67,6 +67,10 @@ The obvious objection comes from the game-based schools, and it looks like a dir
 UCB's framework asks a performer to identify a pattern, frame it explicitly, and heighten it deliberately. That is an analytical operation, and critics of it — usually from the Chicago and Annoyance directions — argue it makes improv cerebral, producing performers who are solving rather than playing.
 
 The tension mostly dissolves once the two layers are separated. **What you notice can be sophisticated. What you do should be simple.** Recognising that a scene has produced a repeatable pattern is complex perceptual work; the move it licenses is usually to do the obvious thing again, harder. Nothing in this principle argues against seeing clearly — it argues against *acting* elaborately.
+
+![Six things noticed against one thing done: the perceiving layer can be as complex as it needs to be, and the acting layer stays a single plain move.](/images/notice-many-do-one.svg)
+
+*Nothing here caps what you may see; it caps what you may do about it in the same breath.*
 
 Where the objection lands is in the timing. Analysis performed mid-scene, while the other person is talking, spends exactly the capacity the reception needs, which is the failure the bandwidth mechanism above describes. The schools that make improv cerebral are not wrong to analyse; they are wrong to ask for it simultaneously.
 
