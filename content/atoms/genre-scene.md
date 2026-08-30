@@ -30,6 +30,11 @@ The ensemble identifies a genre (film noir, romantic comedy, horror, Western, sc
 
 Commit to the genre rather than commenting on it or winking at the audience. Half-hearted noir is just a funny voice; committed noir is a world the audience enters.
 
+![A commitment axis with two outputs: a short muted bar for a funny voice at half, and a long accent bar for a world at full.](/images/what-half-commitment-produces.svg)
+
+*Nothing in between is drawn because the page does not describe a partly-entered world.*
+
+
 ## What it develops
 
 - **Specificity** — Genre demands specific choices. Noir requires vocabulary ("the rain came down like God was trying to drown his regrets"), character types (femme fatale, world-weary detective), tonal commitment. Forces improvisers out of vague, generic scene work.

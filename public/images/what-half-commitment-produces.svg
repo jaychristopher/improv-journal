@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT HALF-COMMITMENT PRODUCES</text>
+
+  <text class="dg-note" x="120" y="72">a funny voice</text>
+  <line class="dg-muted" x1="120" y1="86" x2="230" y2="86" />
+
+  <text class="dg-note-accent" x="250" y="106">a world</text>
+  <rect class="dg-accent-fill" x="250" y="119" width="110" height="2" />
+
+  <line class="dg-rule" x1="110" y1="146" x2="370" y2="146" />
+  <line class="dg-ink" x1="160" y1="140" x2="160" y2="152" />
+  <line class="dg-ink" x1="300" y1="140" x2="300" y2="152" />
+  <text class="dg-note" x="160" y="168" text-anchor="middle">half</text>
+  <text class="dg-note" x="300" y="168" text-anchor="middle">full</text>
+
+  <text class="dg-note" x="16" y="192">the output changes kind, not degree</text>
+</svg>
