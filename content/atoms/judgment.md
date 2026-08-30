@@ -58,6 +58,11 @@ So the faculty is not the pathology. Discernment is what lets a performer notice
 
 What this page describes is the same faculty running at the wrong moment — a real-time commentary that produces verdicts nobody can act on, in the seconds when acting was the only thing required.
 
+![The same verdict bar placed twice: inside the scene, where it overlaps the running line, and after it, where nothing else is happening.](/images/the-same-faculty-two-placements.svg)
+
+*The verdict formed inside the scene is about a line already said, so even its output has nowhere to land.*
+
+
 ## Specific sources
 
 Spolin, *Improvisation for the Theater*, Ch. 1: "trying to be 'good' and avoiding 'bad' develops into a way of life for those needing approval/disapproval from authority." Csikszentmihalyi, *Flow* (1990), Ch. 2 (dimensions of flow): "loss of self-consciousness" — "in a flow state we are too involved in the activity to care about protecting our ego." **Counter-position:** Post-scene evaluation is essential pedagogy. Spolin herself built evaluation into her method. Johnstone's Theatresports uses judges. The pathology is real-time judgment during action, not discernment as a faculty. Judgment-during-action disrupts flow; judgment-after-action enables learning. The atom targets the former.

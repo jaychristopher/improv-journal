@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 228" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE SAME FACULTY, TWO PLACEMENTS</text>
+
+  <text class="dg-note" x="16" y="80">during</text>
+  <line class="dg-ink" x1="150" y1="76" x2="370" y2="76" />
+  <line class="dg-rule" x1="240" y1="76" x2="240" y2="92" />
+  <line class="dg-rule" x1="300" y1="76" x2="300" y2="92" />
+  <rect class="dg-accent-fill" x="240" y="90" width="60" height="2" />
+  <text class="dg-note" x="150" y="112">two things at once</text>
+
+  <text class="dg-note" x="16" y="164">after</text>
+  <line class="dg-ink" x1="150" y1="160" x2="300" y2="160" />
+  <rect class="dg-accent-fill" x="312" y="174" width="60" height="2" />
+  <text class="dg-note" x="150" y="196">nothing else is running</text>
+
+  <text class="dg-note" x="16" y="220">the accent bar is the same width in both rows</text>
+</svg>
