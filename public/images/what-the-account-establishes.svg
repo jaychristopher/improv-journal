@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE ACCOUNT ESTABLISHES</text>
+
+  <text class="dg-note" x="16" y="84">established</text>
+  <text class="dg-note" x="110" y="84">the conditions</text>
+  <line class="dg-muted" x1="210" y1="80" x2="290" y2="80" />
+  <text class="dg-note" x="300" y="84">the state</text>
+  <text class="dg-note" x="210" y="104">observed together</text>
+
+  <text class="dg-note" x="16" y="150">taken away</text>
+  <text class="dg-note" x="110" y="150">the conditions</text>
+  <rect class="dg-accent-fill" x="209" y="140" width="2" height="12" />
+  <line class="dg-muted" x1="210" y1="146" x2="290" y2="146" />
+  <text class="dg-note" x="300" y="150">the state</text>
+  <text class="dg-note-accent" x="210" y="170">and this is the added step</text>
+
+  <text class="dg-note" x="16" y="200">the only difference is the mark on the left of the link</text>
+</svg>

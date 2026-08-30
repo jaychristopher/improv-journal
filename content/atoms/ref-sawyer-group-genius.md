@@ -78,6 +78,11 @@ It rewards a researcher less. The empirical treatment is in his academic volumes
 
 Group flow is largely a descriptive account. It names conditions under which collaborative work goes well and does not establish that arranging those conditions produces the state, which is the claim most readers take away. Sawyer is more careful than his popularisers — his choice of *collaborative emergence* over *group mind* is a deliberate refusal of the mystical reading, and it is worth adopting for the same reason.
 
+![The same two nodes and the same link drawn twice: once with no origin mark, once with an accent mark on the conditions turning association into production.](/images/what-the-account-establishes.svg)
+
+*The added mark is what would make the book actionable, which is exactly why readers supply it.*
+
+
 ## Also relevant
 
 Sawyer's earlier academic works — *"Group Creativity: Music, Theater, and Collaboration"* (2003) and *"Explaining Creativity"* (2012, Ch. 16) — provide deeper empirical treatment. His PhD at University of Chicago studied improv groups at iO and Second City.
