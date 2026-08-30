@@ -77,6 +77,11 @@ Three questions separate them:
 - **Is it about fit or about quality?** Most rejections are about fit, and fit is largely not a property of you. A job, a pitch and a person all have requirements you were never told.
 - **Does it name something specific?** "Not what we're looking for" contains no information. "The middle section lost us" does. `signal` is the useful part; the rest is noise that feels like signal because it arrived attached to a loss.
 
+![A single rejection is one mark on the axis and carries no shape; several marks are what make a pattern readable.](/images/what-one-rejection-tells-you.svg)
+
+*Volume is not toughening up. It is the only way to get a sample big enough to read.*
+
+
 The improv framing underneath all of this: being rejected is having your offer blocked. `blocking` is a thing that happened in the scene, not a statement about the person who made the offer — and the trained response is to keep offering rather than to retaliate or withdraw.
 
 ## How to Practise It

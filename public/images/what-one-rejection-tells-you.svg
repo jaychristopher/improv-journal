@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ONE REJECTION TELLS YOU</text>
+
+  <text class="dg-secondary" x="16" y="80">one</text>
+  <line class="dg-rule" x1="160" y1="76" x2="376" y2="76" />
+  <line class="dg-ink" x1="200" y1="68" x2="200" y2="84" />
+  <text class="dg-note" x="160" y="102">one person, one decision</text>
+
+  <text class="dg-secondary" x="16" y="164">several</text>
+  <line class="dg-rule" x1="160" y1="160" x2="376" y2="160" />
+  <rect class="dg-accent-fill" x="189" y="152" width="2" height="16" />
+  <rect class="dg-accent-fill" x="231" y="152" width="2" height="16" />
+  <rect class="dg-accent-fill" x="285" y="152" width="2" height="16" />
+  <rect class="dg-accent-fill" x="317" y="152" width="2" height="16" />
+  <rect class="dg-accent-fill" x="349" y="152" width="2" height="16" />
+  <text class="dg-note-accent" x="160" y="186">the third one is informative</text>
+
+  <text class="dg-note" x="16" y="212">treating the first as a verdict is a sampling error</text>
+</svg>
