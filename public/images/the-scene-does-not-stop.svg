@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE SCENE DOES NOT STOP</text>
+
+  <text class="dg-note-accent" x="16" y="72">directions</text>
+  <rect class="dg-accent-fill" x="109" y="62" width="2" height="46" />
+  <rect class="dg-accent-fill" x="189" y="62" width="2" height="46" />
+  <rect class="dg-accent-fill" x="259" y="62" width="2" height="46" />
+  <rect class="dg-accent-fill" x="329" y="62" width="2" height="46" />
+
+  <line class="dg-ink" x1="16" y1="120" x2="376" y2="120" />
+  <text class="dg-note" x="16" y="146">the scene</text>
+
+  <text class="dg-note" x="16" y="180">the line under them is one line</text>
+</svg>

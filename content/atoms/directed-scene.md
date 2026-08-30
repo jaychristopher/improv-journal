@@ -28,6 +28,11 @@ updated: "2026-08-24"
 
 Two or more performers begin an improvised scene. A director watches and calls out directions as the scene progresses. Performers integrate directions instantly, without discussion, while maintaining the scene's emotional and narrative continuity.
 
+![Four directions landing as accent marks on an unbroken scene line running the full width beneath them.](/images/the-scene-does-not-stop.svg)
+
+*The drill is only difficult because the lower line is not allowed to have gaps in it.*
+
+
 ## Common director calls
 
 - **Pacing:** "Slower." "Faster." "Pause." "Take your time."
