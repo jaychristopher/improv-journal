@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="44">WORKING CAPACITY</text>
+
+  <text class="dg-note" x="155" y="80" text-anchor="middle">the goal</text>
+  <text class="dg-note" x="298" y="80" text-anchor="middle">the gap</text>
+
+  <line class="dg-ink" x1="120" y1="100" x2="376" y2="100" />
+  <line class="dg-ink" x1="120" y1="92" x2="120" y2="108" />
+  <line class="dg-ink" x1="190" y1="92" x2="190" y2="108" />
+  <line class="dg-ink" x1="262" y1="92" x2="262" y2="108" />
+  <line class="dg-ink" x1="334" y1="92" x2="334" y2="108" />
+  <line class="dg-ink" x1="376" y1="92" x2="376" y2="108" />
+  <rect class="dg-accent-fill" x="334" y="99" width="42" height="2" />
+
+  <text class="dg-note" x="226" y="128" text-anchor="middle">where you are</text>
+  <text class="dg-note-accent" x="355" y="128" text-anchor="middle">what is left</text>
+
+  <text class="dg-note" x="16" y="176">means-ends analysis holds three things at once</text>
+</svg>

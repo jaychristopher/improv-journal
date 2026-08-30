@@ -29,6 +29,10 @@ The founding paper of cognitive load theory, and the reason this site says effor
 
 Sweller's finding is counter-intuitive and it is the useful part: conventional problem solving can *impede* learning. Working through a problem by means-ends analysis — holding the goal, the current state, and the gap between them — consumes most of the available processing capacity, leaving little for the thing that actually produces competence, which is acquiring the schema. Learners solved the problems and did not learn much from solving them.
 
+![Working capacity holding the three parts of means-ends analysis — the goal, the current state, the gap — with what remains marked off as the space learning would need.](/images/what-is-left-for-learning.svg)
+
+*Which is why a learner can succeed at every problem and arrive at the end with nothing transferable.*
+
 ## Should you read the paper
 
 Probably not, and that is not a criticism of it. It is a 1988 experimental report in *Cognitive Science*, written for researchers, and the finding that matters here is fully stated in two sentences above.
