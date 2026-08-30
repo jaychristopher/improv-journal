@@ -29,6 +29,10 @@ Gratitude reframing is the practice of converting your internal response to unex
 
 By the time you've evaluated an offer — decided it was "bad," "weird," or "wrong" — you've exited the scene. Your mind stepped out to become a critic while time advanced irreversibly. The technique works only if reception arrives *before* evaluation. This is why it must be trained as a reflex, not a choice.
 
+![Two orderings on the same clock: gratitude after judgment leaves a long span outside the scene between the offer and the thank-you; gratitude before it leaves almost none.](/images/gratitude-arrives-late.svg)
+
+*You cannot fix this by evaluating faster; the gap closes only by moving the thank-you in front of it.*
+
 ## The whisper technique
 
 When something unexpected happens — a trip, a forgotten line, a partner's bizarre offer — whisper "thank you" under your breath. Commonly taught in Chicago longform. This isn't positive thinking. It's a cognitive interrupt that intercepts the brain's default threat-coding and replaces it with gift-coding, keeping you in the scene instead of pulling you out to evaluate. The vocalization is the training wheel; the real skill is the receiving.

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 266" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="36">GRATITUDE AFTER JUDGMENT</text>
+  <text class="dg-note-accent" x="16" y="62">outside the scene for this long</text>
+  <line class="dg-accent" x1="16" y1="72" x2="240" y2="72" />
+  <line class="dg-rule" x1="16" y1="88" x2="376" y2="88" />
+  <line class="dg-ink" x1="16" y1="80" x2="16" y2="96" />
+  <line class="dg-ink" x1="240" y1="80" x2="240" y2="96" />
+  <text class="dg-note" x="16" y="110">offer</text>
+  <text class="dg-note" x="240" y="110">&#8220;thank you&#8221;</text>
+
+  <text class="dg-eyebrow" x="16" y="150">GRATITUDE BEFORE IT</text>
+  <line class="dg-rule" x1="16" y1="202" x2="376" y2="202" />
+  <line class="dg-ink" x1="16" y1="194" x2="16" y2="210" />
+  <line class="dg-ink" x1="56" y1="194" x2="56" y2="210" />
+  <text class="dg-note" x="16" y="224">offer</text>
+  <text class="dg-note" x="56" y="224">&#8220;thank you&#8221;</text>
+
+  <text class="dg-note" x="16" y="252">the scene kept running while you decided</text>
+</svg>
