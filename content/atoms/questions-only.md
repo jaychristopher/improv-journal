@@ -42,6 +42,11 @@ Not all questions defer. Some of them assert.
 
 Played well, Questions Only becomes a competition to see who can load the most reality into an interrogative. Played badly it is two people saying "what?" at each other. The gap between those two versions is the entire lesson, and it transfers directly to scenes where questions are allowed.
 
+![Two questions marked by where their weight lands: the first puts three things into the world and one on the partner, the second puts nothing into the world.](/images/where-the-line-puts-its-weight.svg)
+
+*The question mark is the same in both rows, which is why a blanket ban on questions removes the first line along with the second.*
+
+
 ## Side-coaching
 
 "Put a fact in the question." "You already know who they are — ask like it." "Don't ask what, ask why." "That was a statement with a question mark."

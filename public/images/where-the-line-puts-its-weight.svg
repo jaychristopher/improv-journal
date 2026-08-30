@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 242" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE LINE PUTS ITS WEIGHT</text>
+
+  <text class="dg-secondary" x="16" y="62">&#8220;why did you come back after all these years?&#8221;</text>
+  <text class="dg-note" x="16" y="94">into the world</text>
+  <line class="dg-rule" x1="164" y1="94" x2="248" y2="94" />
+  <rect class="dg-accent-fill" x="170" y="82" width="2" height="12" />
+  <rect class="dg-accent-fill" x="188" y="82" width="2" height="12" />
+  <rect class="dg-accent-fill" x="206" y="82" width="2" height="12" />
+  <text class="dg-note" x="16" y="116">onto your partner</text>
+  <line class="dg-rule" x1="294" y1="116" x2="378" y2="116" />
+  <rect class="dg-accent-fill" x="300" y="104" width="2" height="12" />
+
+  <text class="dg-secondary" x="16" y="158">&#8220;do you want to, like, do something?&#8221;</text>
+  <text class="dg-note" x="16" y="190">into the world</text>
+  <line class="dg-rule" x1="164" y1="190" x2="248" y2="190" />
+  <text class="dg-note" x="16" y="212">onto your partner</text>
+  <line class="dg-rule" x1="294" y1="212" x2="378" y2="212" />
+  <rect class="dg-accent-fill" x="300" y="200" width="2" height="12" />
+  <rect class="dg-accent-fill" x="318" y="200" width="2" height="12" />
+  <rect class="dg-accent-fill" x="336" y="200" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="236">the same grammar, opposite destinations</text>
+</svg>
