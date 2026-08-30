@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 264" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="180" y="40">WHAT BLOCKS IT</text>
+  <line class="dg-rule" x1="32" y1="54" x2="330" y2="54" />
+
+  <text class="dg-secondary" x="32" y="84">anger</text>
+  <text class="dg-note" x="180" y="84">that it is inappropriate</text>
+
+  <text class="dg-secondary" x="32" y="114">grief</text>
+  <text class="dg-note" x="180" y="114">it might kill the comedy</text>
+
+  <text class="dg-secondary" x="32" y="144">joy</text>
+  <text class="dg-note" x="180" y="144">cynicism</text>
+
+  <text class="dg-secondary" x="32" y="174">tenderness</text>
+  <text class="dg-note" x="180" y="174">the intimacy it implies</text>
+
+  <text class="dg-secondary" x="32" y="204">fear</text>
+  <text class="dg-note" x="180" y="204">it reads as low status</text>
+
+  <rect class="dg-accent-fill" x="16" y="234" width="2" height="20" />
+  <text class="dg-secondary" x="32" y="248">wry</text>
+  <text class="dg-note-accent" x="180" y="248">nothing to get past</text>
+</svg>

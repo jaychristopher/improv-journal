@@ -63,6 +63,10 @@ Before entering a scene, the actor uses a fully imagined daydream — not a reca
 
 - **Fear** — blocked by the status implications (fear reads as low status) and the physical discomfort of activating the fight-or-flight response. Training: let the fear live in the body first — shallow breathing, widened eyes, frozen posture — and let the verbal expression follow. Fear played from the body is visceral. Fear performed from the mind is a sketch character.
 
+![Five emotions each held back by something different, and the wry default held back by nothing, which is why every character comes out the same.](/images/five-locks-one-open-door.svg)
+
+*Five different locks means five different keys; there is no general instruction for emotional range.*
+
 ## Exercises that train emotional range
 
 - **Emotion Switch (see atom).** Coach calls emotions; players shift immediately, justified within the scene. Trains the ability to access any emotion on demand and the transitions between them.
