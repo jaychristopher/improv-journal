@@ -56,6 +56,10 @@ The right moment is recognisable from inside. It is when your scenes have stoppe
 
 Group forms, long-form architecture, or a curriculum. There is nothing on how a show is shaped, how beats connect, or how to teach any of it. The book is almost entirely about the first ten seconds of a scene and about the person having them.
 
+![A scale running from ten seconds to a whole curriculum, with the book's coverage marked at the small end and everything larger left to other sources.](/images/where-the-book-stops.svg)
+
+*A book can be right about its subject and useless about everything next to it, which is a property of scope rather than of quality.*
+
 That narrowness is deliberate and it is why the book still works. Napier is not offering a system to replace the one he is dismantling — doing that would have reproduced the problem exactly — so the missing architecture is meant to come from somewhere else.
 
 ## The Paradigm Lost journal
