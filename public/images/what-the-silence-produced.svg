@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE SILENCE PRODUCED</text>
+
+  <text class="dg-note" x="16" y="72">the mechanics</text>
+  <line class="dg-rule" x1="160" y1="74" x2="250" y2="74" />
+  <text class="dg-note" x="16" y="106">how a class gets there</text>
+  <line class="dg-rule" x1="160" y1="108" x2="250" y2="108" />
+  <text class="dg-note" x="16" y="140">two-person work</text>
+  <line class="dg-rule" x1="160" y1="142" x2="250" y2="142" />
+
+  <line class="dg-muted" x1="260" y1="74" x2="300" y2="104" />
+  <line class="dg-muted" x1="260" y1="108" x2="300" y2="108" />
+  <line class="dg-muted" x1="260" y1="142" x2="300" y2="112" />
+
+  <rect class="dg-accent-fill" x="302" y="101" width="2" height="14" />
+  <text class="dg-note-accent" x="316" y="112">the books after</text>
+
+  <text class="dg-note" x="16" y="200">three empty slots, and a shelf that exists to fill them</text>
+</svg>

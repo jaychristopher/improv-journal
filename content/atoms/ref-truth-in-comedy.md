@@ -54,6 +54,11 @@ The mechanics, mostly. There is no game-of-the-scene vocabulary, which arrived l
 
 That silence is why the books after it exist. Napier's *Improvise* and the *UCB Comedy Improvisation Manual* are both, in part, replies to it: same tradition, opposite complaint, each supplying the procedure this one declines to give.
 
+![Three empty slots in the book with lines running out to the later books that supply them.](/images/what-the-silence-produced.svg)
+
+*The slots are not faults; a book that had filled them would have been a different book.*
+
+
 ## Who it rewards, and who it does not
 
 It converts people. That is genuinely its function, and it explains the reverence it attracts — read at the right moment it reframes improv from a comedy discipline into something closer to an ethic, and a great many performers date their commitment from it.
