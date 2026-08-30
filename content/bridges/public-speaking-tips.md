@@ -65,6 +65,11 @@ A memorised talk has exactly one path through it. Every word is load-bearing, so
 
 A talk you *know* rather than one you have memorised has many paths. You are holding five or six things you want to land and a rough order for them, and if the room needs them in a different order, that is fine, because nothing depends on the sentence before.
 
+![A memorised talk drawn as one chain with a break in it and everything after the break cut adrift; five beats drawn as fixed points with the route between them left open.](/images/what-a-gap-costs.svg)
+
+*The card is not a smaller script. It is a structure that survives losing a sentence.*
+
+
 The practical version:
 
 - **Prepare beats, not sentences.** Five phrases on an index card beats a script every time. The card holds the structure; the words arrive when you need them.

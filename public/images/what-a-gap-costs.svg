@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT A LOST WORD COSTS</text>
+
+  <text class="dg-secondary" x="16" y="84">memorised</text>
+  <line class="dg-ink" x1="150" y1="80" x2="246" y2="80" />
+  <line class="dg-ink" x1="150" y1="75" x2="150" y2="85" />
+  <line class="dg-ink" x1="174" y1="75" x2="174" y2="85" />
+  <line class="dg-ink" x1="198" y1="75" x2="198" y2="85" />
+  <line class="dg-ink" x1="222" y1="75" x2="222" y2="85" />
+  <line class="dg-ink" x1="246" y1="75" x2="246" y2="85" />
+  <rect class="dg-accent-fill" x="252" y="74" width="2" height="12" />
+  <rect class="dg-accent-fill" x="262" y="74" width="2" height="12" />
+  <line class="dg-muted" x1="268" y1="80" x2="376" y2="80" />
+  <line class="dg-muted" x1="292" y1="76" x2="292" y2="84" />
+  <line class="dg-muted" x1="316" y1="76" x2="316" y2="84" />
+  <line class="dg-muted" x1="340" y1="76" x2="340" y2="84" />
+  <line class="dg-muted" x1="364" y1="76" x2="364" y2="84" />
+  <text class="dg-note" x="150" y="106">the path stops where the word went</text>
+
+  <text class="dg-secondary" x="16" y="172">five beats</text>
+  <line class="dg-accent" x1="150" y1="168" x2="374" y2="168" />
+  <line class="dg-ink" x1="150" y1="160" x2="150" y2="176" />
+  <line class="dg-ink" x1="206" y1="160" x2="206" y2="176" />
+  <line class="dg-ink" x1="262" y1="160" x2="262" y2="176" />
+  <line class="dg-ink" x1="318" y1="160" x2="318" y2="176" />
+  <line class="dg-ink" x1="374" y1="160" x2="374" y2="176" />
+  <text class="dg-note-accent" x="150" y="198">any words get you to the next one</text>
+</svg>
