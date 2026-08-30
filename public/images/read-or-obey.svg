@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">AFTER THE ROOM GOES QUIET</text>
+
+  <text class="dg-note" x="16" y="80">reading</text>
+  <rect class="dg-accent-fill" x="229" y="62" width="2" height="10" />
+  <line class="dg-ink" x1="150" y1="76" x2="372" y2="76" />
+  <text class="dg-note" x="150" y="98">the plan does not move</text>
+
+  <text class="dg-note" x="16" y="154">obeying</text>
+  <rect class="dg-accent-fill" x="229" y="136" width="2" height="10" />
+  <line class="dg-ink" x1="150" y1="150" x2="230" y2="150" />
+  <line class="dg-ink" x1="230" y1="150" x2="230" y2="166" />
+  <line class="dg-ink" x1="230" y1="166" x2="300" y2="166" />
+  <line class="dg-ink" x1="300" y1="166" x2="300" y2="180" />
+  <line class="dg-ink" x1="300" y1="180" x2="372" y2="180" />
+  <text class="dg-note" x="150" y="200">safer, then safer again</text>
+
+  <text class="dg-note" x="16" y="228">the signal is free; acting on it is not</text>
+</svg>

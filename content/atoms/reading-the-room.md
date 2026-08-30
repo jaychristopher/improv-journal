@@ -68,6 +68,11 @@ The distinction that keeps this useful is between reading and obeying. Noticing 
 
 So read the room and do not take instructions from it.
 
+![Two responses to the same signal: reading leaves the plan flat across the whole line, while obeying steps it down at the signal and down again afterwards.](/images/read-or-obey.svg)
+
+*There is no second signal above the second step; the first adjustment supplied it.*
+
+
 ## Specific sources
 
 Razowsky, *A Subversive's Guide to Improvisation: Moving Beyond "Yes, And"* (2022) — likely published source for "the audience is your scene partner" philosophy. [Boiling Point blog on the Razowsky Method](https://boilingpointimprov.wordpress.com/2014/04/10/the-david-razowsky-method-video/). **Counter-position:** The Close/iO tradition emphasizes "playing at the top of your intelligence" without pandering — if you play truthfully, the audience comes to you. Napier/Annoyance: focus on internal commitment rather than external calibration. The counter: the fix is always better improv, not audience-reading.
