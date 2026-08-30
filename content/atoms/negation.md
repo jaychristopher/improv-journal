@@ -44,6 +44,11 @@ The gun example from Tina Fey (*Bossypants*) makes the scene-level damage visibl
 
 Negation feels powerful in the moment — you're asserting control. But you've just destroyed the only thing the scene has: shared agreement about what's real. You haven't gained control; you've eliminated the thing there was to control.
 
+![Before negation, a shared reality with your share marked across part of it; after, the reality is gone and your share spans the whole empty width.](/images/a-bigger-share-of-nothing.svg)
+
+*The gain is real and immediate; the loss is to a different quantity, which is why the move feels like winning.*
+
+
 ## Recovery
 
 The negator must re-accept the negated offer explicitly — not just "move on" but actively restore what was denied. "Wait — you DO have a gun. I just didn't want to believe it." This is fracture-recovery applied to the moment of breakage.

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT YOU CONTROL</text>
+
+  <text class="dg-note" x="16" y="80">before</text>
+  <text class="dg-note" x="150" y="60">what everyone agrees is real</text>
+  <line class="dg-ink" x1="150" y1="76" x2="370" y2="76" />
+  <rect class="dg-accent-fill" x="150" y="88" width="110" height="2" />
+  <text class="dg-note" x="150" y="106">your share</text>
+
+  <text class="dg-note" x="16" y="170">after</text>
+  <text class="dg-note" x="150" y="150">nothing is agreed</text>
+  <line class="dg-rule" x1="150" y1="166" x2="370" y2="166" />
+  <rect class="dg-accent-fill" x="150" y="178" width="220" height="2" />
+  <text class="dg-note" x="150" y="196">all of it</text>
+
+  <text class="dg-note" x="16" y="226">a bigger share of nothing</text>
+</svg>
