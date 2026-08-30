@@ -45,6 +45,11 @@ The common opposite is quieter and has no single name in ordinary speech. `negat
 
 Worth separating out, because it is the most common misunderstanding of the whole idea: **the opposite of "yes, and" is not disagreement.** Characters can argue, refuse each other, lie and fight, and the scene is still being built. What cannot happen is one *performer* declining the other *performer's* contribution. The distinction is between the fiction and the people making it.
 
+![Two layers of the same scene: the fiction, where the characters may argue with nothing drawn between them, and the performers below, joined by a single accent line.](/images/two-layers-one-rule.svg)
+
+*A scene with no argument in it is not more yes-and than one full of argument; the rule does not live on that layer.*
+
+
 ## Practising it
 
 `yes-and-chain` leaves exactly one legal move — treat what was just said as true, then extend it — with both refusal and the reframe ruled out. It is deliberately monotonous, and the monotony is what makes it diagnostic: the instant somebody relocates the idea instead of building on it, the chain stops going anywhere and the whole group hears it.
