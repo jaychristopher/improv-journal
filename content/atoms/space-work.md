@@ -70,6 +70,11 @@ So the honest position is that space work is load-bearing when the place is doin
 
 What survives across all traditions is the narrower claim in the freezer test above. If an environment has been established, it has to keep behaving consistently — a room that is freezing in minute one and unremarked in minute three has broken something, whatever school you trained in.
 
+![Two claims about space work as spans: being fundamental holds across some traditions, while an established room behaving consistently holds across all of them.](/images/what-survives-across-traditions.svg)
+
+*The weaker claim has the wider reach, which is what lets the disagreement be conceded without losing anything.*
+
+
 ## Common questions
 
 ### What is the difference between space work and object work?
