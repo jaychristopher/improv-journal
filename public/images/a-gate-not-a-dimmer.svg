@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="34">THE UNATTENDED EAR</text>
+  <text class="dg-note" x="280" y="58" text-anchor="middle">the gate</text>
+  <line class="dg-ink" x1="280" y1="68" x2="280" y2="202" />
+
+  <text class="dg-note" x="16" y="84">the words</text>
+  <line class="dg-muted" x1="160" y1="80" x2="280" y2="80" />
+
+  <text class="dg-note" x="16" y="112">the meaning</text>
+  <line class="dg-muted" x1="160" y1="108" x2="280" y2="108" />
+
+  <text class="dg-note" x="16" y="140">the language changing</text>
+  <line class="dg-muted" x1="160" y1="136" x2="280" y2="136" />
+
+  <text class="dg-note" x="16" y="168">male or female</text>
+  <line class="dg-muted" x1="160" y1="164" x2="280" y2="164" />
+  <rect class="dg-accent-fill" x="280" y="163" width="96" height="2" />
+
+  <text class="dg-note" x="16" y="196">whether it stopped</text>
+  <line class="dg-muted" x1="160" y1="192" x2="280" y2="192" />
+  <rect class="dg-accent-fill" x="280" y="191" width="96" height="2" />
+
+  <text class="dg-note" x="16" y="224">nothing arrived faint; it either crossed or it did not</text>
+</svg>

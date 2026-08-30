@@ -30,6 +30,10 @@ The origin of the cocktail party problem, and the first evidence that attending 
 
 Cherry played different messages into each ear and asked listeners to shadow one of them — repeat it aloud as it arrived. They managed it. Then he asked what had been in the other ear, and they could report almost nothing: not the words, not the meaning, not whether the language had changed partway through. What did survive was crude physical detail, whether the voice was male or female, whether it had stopped.
 
+![The unattended ear: the words, the meaning and a change of language all stop at the gate, while whether the voice was male or female and whether it stopped cross it.](/images/a-gate-not-a-dimmer.svg)
+
+*What survived is enough to know a voice was there and nothing about what it said.*
+
 ## Should you read the paper
 
 It is five pages and unusually readable for 1953, which makes it one of the few primary sources here worth going to directly.
