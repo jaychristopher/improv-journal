@@ -110,6 +110,22 @@ now replaces something rather than being inserted above it — which is worth
 noting as a pattern. The shift and the contradiction looked like two findings
 and had one cause: content that belongs in one slot was occupying two.
 
+**A status code and no way back** — broken link, stale result or typo → 404 —
+*underload*, and the only entry point nobody had written. The site shipped the
+Next.js default, "404: This page could not be found." Of its 71 visible words
+about 65 were the nav menu. Somebody who wanted something specific got a number.
+Replaced with five routes chosen for coverage rather than completeness — look a
+term up, read a guide, run something with a group, follow the theory, find the
+source — because the nav already lists everything and repeating it here would be
+the overload version of the same mistake.
+
+**Nearly told them something untrue** — process note, same page. The first draft
+said the page "may have moved". It cannot have: the urls that changed in the
+restructure all redirect, verified against production, so a 404 means the address
+never existed. Writing the sympathetic version would have sent people hunting for
+a page that was never there. Reassuring copy that is false is worse context than
+none.
+
 ---
 
 ## Entry points examined, no defect found
