@@ -64,6 +64,24 @@ were the worse ones: the line adds internal names, not orientation. Reframed
 rather than done. The lesson is the one this register exists for — the fix was
 scoped before the entry point was measured.
 
+**Sixteen links between the title and the first sentence** — organic search →
+concept page, on a phone — *overload*. The table of contents renders above the
+body deliberately, so it survives on mobile and so a crawler meets the outline
+before the prose. Both reasons are good, and both are what make a long outline
+expensive: on the device the placement was chosen for, a sixteen-section
+reference page put sixteen links in front of the reader before anything they
+came for. Median is seven, so folding above eight leaves most pages untouched
+and moves 117 links off the top of 48 of them.
+
+**Two ideas that did not survive measurement** — process note. A generic
+"what this site is" line looked like the obvious answer to the cold-arrival
+problem, until the tagline turned out to be "Seven laws, nine principles" — true,
+and meaningless to somebody who searched for a Substack. The nav looked
+duplicated in the DOM until the second copy turned out to be the mobile menu,
+correctly hidden with `display:none` and so absent from the accessibility tree.
+Neither shipped. Recorded because the register is more useful with the misses in
+it: both were plausible, and both would have added something irrelevant.
+
 ---
 
 ## Entry points not yet examined
