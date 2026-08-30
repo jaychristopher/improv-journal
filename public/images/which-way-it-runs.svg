@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH WAY IT RUNS</text>
+
+  <text class="dg-note" x="16" y="84">assumed</text>
+  <text class="dg-note" x="120" y="84">trust</text>
+  <line class="dg-ink" x1="160" y1="74" x2="160" y2="86" />
+  <line class="dg-muted" x1="160" y1="80" x2="234" y2="80" />
+  <text class="dg-note" x="244" y="84">honest interaction</text>
+
+  <text class="dg-note" x="16" y="150">actually</text>
+  <text class="dg-note" x="120" y="150">trust</text>
+  <line class="dg-muted" x1="160" y1="146" x2="234" y2="146" />
+  <rect class="dg-accent-fill" x="233" y="140" width="2" height="12" />
+  <text class="dg-note" x="244" y="150">honest interaction</text>
+
+  <text class="dg-note" x="16" y="190">you do not wait for the first one; you produce it</text>
+</svg>

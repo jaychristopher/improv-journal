@@ -250,6 +250,11 @@ The test before asking anything: could a truthful answer disadvantage this perso
 
 Improv teaches that trust is not a precondition for honest interaction — it's the *result* of honest interaction that's been received well. You don't build trust and then start being real. You start being real in small ways, the group receives it, and trust accumulates.
 
+![Trust and honest interaction drawn twice in the same positions, with the origin mark on trust in the assumed version and on honest interaction in the actual one.](/images/which-way-it-runs.svg)
+
+*Read the top row as an instruction and there is nothing to do first; read the bottom one and there is.*
+
+
 The questions aren't magic. The progression is. Each tier asks for a slightly higher-stakes offer, and each completed cycle raises the group's capacity for the next one. Skip the progression and you get performance. Follow it and you get something most teams never reach: a room where people say what they actually think.
 
 ---
