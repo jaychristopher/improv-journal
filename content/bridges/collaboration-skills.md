@@ -30,6 +30,11 @@ It isn't. That's negotiation. Collaboration — the real thing — looks complet
 
 An improv ensemble walks on stage with nothing. No outline, no assigned roles, no topic decided in advance. One person starts a scene. Their partner responds. Within seconds, they're building something together — a relationship, a conflict, a world — that neither person planned and neither person controls.
 
+![Negotiation picks one of the marks already on the line; collaboration produces a mark that is not on it.](/images/where-the-outcome-comes-from.svg)
+
+*The test is whether the result was available before anybody spoke.*
+
+
 This isn't magic and it isn't talent. It's a set of specific, trainable skills applied under extreme conditions. The conditions are what make it instructive: when you have zero time to plan and zero ability to control the outcome, the collaboration skills you actually need become visible. The ones that don't matter fall away.
 
 What remains — what every working improv ensemble trains relentlessly — comes down to four capabilities.

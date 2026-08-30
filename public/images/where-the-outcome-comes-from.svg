@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE OUTCOME COMES FROM</text>
+
+  <text class="dg-secondary" x="16" y="84">negotiation</text>
+  <line class="dg-rule" x1="170" y1="80" x2="376" y2="80" />
+  <line class="dg-ink" x1="190" y1="72" x2="190" y2="88" />
+  <rect class="dg-accent-fill" x="259" y="72" width="2" height="16" />
+  <line class="dg-ink" x1="330" y1="72" x2="330" y2="88" />
+  <text class="dg-note" x="170" y="106">the outcome was one of them</text>
+
+  <text class="dg-secondary" x="16" y="170">collaboration</text>
+  <line class="dg-rule" x1="170" y1="166" x2="376" y2="166" />
+  <line class="dg-ink" x1="190" y1="158" x2="190" y2="174" />
+  <line class="dg-ink" x1="260" y1="158" x2="260" y2="174" />
+  <line class="dg-muted" x1="190" y1="158" x2="336" y2="132" />
+  <line class="dg-muted" x1="260" y1="158" x2="336" y2="132" />
+  <rect class="dg-accent-fill" x="337" y="124" width="2" height="16" />
+  <text class="dg-note-accent" x="170" y="196">the outcome was neither</text>
+
+  <text class="dg-note" x="16" y="222">one picks from what arrived; the other makes something new</text>
+</svg>
