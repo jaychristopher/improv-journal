@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="36">THE SCENE</text>
+
+  <text class="dg-note-accent" x="130" y="62">the window</text>
+  <text class="dg-note" x="290" y="62" text-anchor="middle">when it feels like time</text>
+  <line class="dg-accent" x1="130" y1="72" x2="210" y2="72" />
+
+  <line class="dg-rule" x1="16" y1="92" x2="376" y2="92" />
+  <line class="dg-ink" x1="130" y1="86" x2="130" y2="98" />
+  <line class="dg-ink" x1="210" y1="86" x2="210" y2="98" />
+  <line class="dg-ink" x1="290" y1="86" x2="290" y2="98" />
+
+  <line class="dg-muted" x1="210" y1="116" x2="290" y2="116" />
+  <text class="dg-note" x="16" y="136">game found and explored</text>
+  <text class="dg-note" x="210" y="136">too late by this much</text>
+
+  <text class="dg-note" x="16" y="176">the best moment is always earlier than the impulse to take it</text>
+</svg>

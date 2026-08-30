@@ -52,6 +52,10 @@ Performers simply walk on and start something new; current performers read the e
 - **Edit on the laugh.** A big laugh signals a peak — carry that energy into the next scene rather than letting it deflate. But this isn't absolute: sometimes the biggest laugh is a stepping stone to something better. Develop judgment about whether the laugh is a peak or a platform.
 - **Replace "someone should edit this" with "I should edit this."** The best time to edit is almost always before you think it's time.
 
+![A scene running left to right: the edit window opens once the game is explored and closes well before the impulse to edit arrives.](/images/the-edit-window.svg)
+
+*Everything in the gap is scene the audience has already finished watching.*
+
 ## Who edits
 
 Primarily the backline. Performers inside the scene are focused on playing and may not have the structural perspective. The backline functions like film editors: watching from outside, making structural decisions. But self-editing happens too — experienced performers sense when a scene has peaked and walk off.
