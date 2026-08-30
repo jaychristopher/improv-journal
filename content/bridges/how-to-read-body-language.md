@@ -178,6 +178,10 @@ The most popular reason people want to read body language is to detect lies. Thi
 
 What body language *does* reveal is **emotional state** — not the content of someone's thoughts, but how they feel about what's happening. That's far more useful than lie detection, and it's what improv performers are actually reading. Not "are they telling the truth?" but "what's happening inside them right now?"
 
+![Two questions measured against chance: whether someone is lying rises barely above the line, while what they are feeling rises far above it.](/images/better-than-chance.svg)
+
+*Nothing here sits below the line; the risk is not being wrong but being confident at chance.*
+
 ## The Improv Shortcut
 
 The fastest way to improve your body language reading is not to study signals. It's to practice **mirroring** — the improv exercise where you match another person's movements in real time.

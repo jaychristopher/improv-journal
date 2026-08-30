@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">HOW MUCH BETTER THAN CHANCE</text>
+
+  <rect class="dg-accent-fill" x="270" y="60" width="40" height="100" />
+  <rect class="dg-accent-fill" x="150" y="152" width="40" height="8" />
+
+  <line class="dg-muted" x1="70" y1="160" x2="376" y2="160" />
+  <text class="dg-note" x="16" y="164">chance</text>
+
+  <text class="dg-note" x="170" y="182" text-anchor="middle">are they lying</text>
+  <text class="dg-note" x="290" y="182" text-anchor="middle">what are they feeling</text>
+
+  <text class="dg-note" x="16" y="206">the body answers the second question, not the first</text>
+</svg>
