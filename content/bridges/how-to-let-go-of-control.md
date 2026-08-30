@@ -74,6 +74,11 @@ In improv, this is the core discipline: you don't know what happens next in the 
 
 Letting go of control doesn't mean being passive. Improv performers are intensely active — listening, responding, building, committing. What they're not doing is *directing.* There's a difference between participating fully and managing the outcome. The first is surrender. The second is control.
 
+![Three states across two columns: control holds both, surrender holds only participation, passivity holds neither.](/images/what-surrender-keeps.svg)
+
+*The middle row and the bottom row differ in the column nobody watching from outside can see.*
+
+
 The paradox resolves when you realize that control was never giving you what you wanted anyway. What you wanted was safety, connection, and good outcomes. Control promises all three and delivers none of them. Surrender — real surrender, with full participation and zero attachment to outcome — delivers all three. Not every time. But far more reliably than the alternative.
 
 ## Questions People Ask About Letting Go of Control
