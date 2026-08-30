@@ -28,6 +28,11 @@ updated: "2026-08-22"
 
 The group stands in a circle with eyes closed. Goal: count from 1 to 20, one number at a time, with only one person speaking at a time. If two people speak simultaneously, restart at 1. No system, no pattern, no turn-taking — only listening and impulse. Trains the group to feel collective readiness and hesitation. Teaches the ensemble to share space in time.
 
+![Three runs at counting to twenty: each climbs and two of them drop back to one, with only the third reaching the top.](/images/what-a-collision-costs.svg)
+
+*The drops are vertical because the rule has no notion of getting close.*
+
+
 ## Exercise 2: Simultaneous Movement
 
 The group moves through space without a designated leader. Someone begins to walk; others follow. The group turns, stops, speeds up, slows down as a unit. Goal: make it impossible for an observer to identify who is leading. Variations: simultaneous gesture (same physical choice at the same time), simultaneous sound.

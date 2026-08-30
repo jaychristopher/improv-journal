@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT A COLLISION COSTS</text>
+
+  <text class="dg-note" x="16" y="70">twenty</text>
+  <line class="dg-rule" x1="90" y1="66" x2="370" y2="66" />
+
+  <line class="dg-ink" x1="90" y1="180" x2="140" y2="138" />
+  <rect class="dg-accent-fill" x="139" y="138" width="2" height="42" />
+
+  <line class="dg-ink" x1="140" y1="180" x2="230" y2="102" />
+  <rect class="dg-accent-fill" x="229" y="102" width="2" height="78" />
+
+  <line class="dg-ink" x1="230" y1="180" x2="360" y2="66" />
+
+  <line class="dg-rule" x1="90" y1="180" x2="370" y2="180" />
+  <text class="dg-note" x="16" y="184">back to one</text>
+
+  <text class="dg-note" x="16" y="208">no partial credit</text>
+</svg>
