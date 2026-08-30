@@ -119,6 +119,11 @@ Most people trying to listen better adopt behaviours rather than changing where 
 
 **Waiting in silence.** The correction to the first is often just not talking — no interruption, no redirect, full pause after they finish. It looks better and it is not listening either, because attention that is merely withheld from speaking has not gone anywhere in particular. It usually goes to self-monitoring.
 
+![Two listening failures with very different visible behaviour and the attention mark in the same place in both.](/images/two-failures-one-location.svg)
+
+*The correction to the first failure changes the left column and leaves the right one exactly where it was.*
+
+
 What separates both from the real thing is that reception is active. You are tracking something specific: what they are giving you, what is underneath it, what changed mid-sentence. `offers` names the material. Attention has to be *on* something, and if you do not give it a job it takes one.
 
 ## When You Should Not Just Listen
