@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE ENSEMBLE RUNS ON</text>
+
+  <text class="dg-note" x="16" y="80">assumed</text>
+  <text class="dg-note" x="100" y="80">liking</text>
+  <line class="dg-accent" x1="180" y1="76" x2="260" y2="76" />
+  <text class="dg-note" x="270" y="80">it works</text>
+
+  <text class="dg-note" x="16" y="140">actually</text>
+  <text class="dg-note" x="100" y="140">confidence</text>
+  <line class="dg-ink" x1="180" y1="136" x2="260" y2="136" />
+  <text class="dg-note" x="270" y="140">it works</text>
+
+  <text class="dg-note" x="100" y="184">liking</text>
+  <line class="dg-ink" x1="180" y1="180" x2="260" y2="180" />
+  <text class="dg-note" x="270" y="184">the cost of a note</text>
+  <text class="dg-note-accent" x="270" y="204">and raises it</text>
+
+  <text class="dg-note" x="16" y="228">liking has an effect, and it is on the other line</text>
+</svg>

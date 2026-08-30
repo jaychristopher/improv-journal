@@ -81,6 +81,11 @@ What is required is confidence in each other's work: that offers will be receive
 
 The reverse is more common and more dangerous. A group of close friends often has an unusually hard time giving each other notes, because the friendship raises the cost of saying the difficult thing — which is the exact failure that stops the work improving. Ordinary friendship carries the same cost, and the questions that would actually move something on are the ones nobody asks, which is what [questions to ask friends](/questions-to-ask-friends) exists for. Liking each other is pleasant and it is not the mechanism.
 
+![Three links: a dashed one from liking to the ensemble working, and solid ones from confidence to it working and from liking to the cost of a note.](/images/what-the-ensemble-runs-on.svg)
+
+*Groups that diagnose a social problem are working on the dashed link, which is the one with nothing on the other end.*
+
+
 ## The solo counter-argument
 
 Ensemble is treated here as the minimum viable unit, and there is a tradition that says otherwise.
