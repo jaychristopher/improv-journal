@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE OFFER OBLIGES</text>
+
+  <text class="dg-secondary" x="16" y="62">&#8220;jump off the cliff&#8221;</text>
+
+  <text class="dg-note-accent" x="16" y="104">binding</text>
+  <rect class="dg-accent-fill" x="150" y="94" width="2" height="14" />
+  <text class="dg-note" x="166" y="104">there is a cliff, and it is high</text>
+
+  <text class="dg-note" x="16" y="140">yours</text>
+  <line class="dg-ink" x1="150" y1="130" x2="150" y2="144" />
+  <text class="dg-note" x="166" y="140">and you jump</text>
+
+  <text class="dg-note" x="16" y="180">the reality is not negotiable; the response is</text>
+</svg>

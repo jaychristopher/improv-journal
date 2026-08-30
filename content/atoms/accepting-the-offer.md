@@ -61,6 +61,11 @@ An important distinction within offers: **factual offers** (the world is this wa
 
 The critical distinction: accepting the offer is not the same as obeying a command. If your partner says "jump off the cliff," you accept the cliff (it's real, it's high) but respond authentically to it. You keep your agency within the reality they established.
 
+![One offer split into two parts: the reality it establishes, marked binding, and the action it requests, marked as yours.](/images/what-the-offer-obliges.svg)
+
+*A blocker rejects both parts and an obeyer takes both; the same mistake, made in opposite directions.*
+
+
 ## When acceptance fails
 
 When acceptance fails, it's usually because the receiver's ego intervened: they had a different idea, they judged the offer as "bad," or they were too deep in internal computation to notice it arrived.
