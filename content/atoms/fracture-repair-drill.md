@@ -29,6 +29,11 @@ Two players begin a scene. A coach secretly whispers a different context to each
 
 The natural instinct when you sense a fracture is to push harder on YOUR version. This always makes it worse. The repair only happens when someone **yields** — simply drops their version and joins their partner's — or when someone **bridges** by finding the justification that makes both realities true. Yielding is the faster repair and players need permission to do it. You can just drop your thing. That's not failure; that's support.
 
+![The same two diverged positions treated three ways: pushed further apart, one yielding onto the other, or both meeting in the middle.](/images/three-things-you-can-do-with-a-gap.svg)
+
+*The two repairs land in different places, and the drill does not care which one you pick.*
+
+
 ## Side-coaching
 
 "Notice the gap." (Early, until players self-detect.) "You don't have to be clever — you can just go with theirs." "What does your partner think is true?"

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THREE THINGS YOU CAN DO WITH A GAP</text>
+
+  <text class="dg-note" x="16" y="76">push harder</text>
+  <line class="dg-rule" x1="140" y1="72" x2="370" y2="72" />
+  <line class="dg-rule" x1="200" y1="66" x2="200" y2="78" />
+  <line class="dg-rule" x1="270" y1="66" x2="270" y2="78" />
+  <line class="dg-muted" x1="200" y1="72" x2="165" y2="72" />
+  <line class="dg-muted" x1="270" y1="72" x2="320" y2="72" />
+  <rect class="dg-accent-fill" x="164" y="66" width="2" height="12" />
+  <rect class="dg-accent-fill" x="319" y="66" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="146">yield</text>
+  <line class="dg-rule" x1="140" y1="142" x2="370" y2="142" />
+  <line class="dg-rule" x1="200" y1="136" x2="200" y2="148" />
+  <line class="dg-rule" x1="270" y1="136" x2="270" y2="148" />
+  <line class="dg-muted" x1="200" y1="142" x2="270" y2="142" />
+  <rect class="dg-accent-fill" x="269" y="136" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="206">bridge</text>
+  <line class="dg-rule" x1="140" y1="202" x2="370" y2="202" />
+  <line class="dg-rule" x1="200" y1="196" x2="200" y2="208" />
+  <line class="dg-rule" x1="270" y1="196" x2="270" y2="208" />
+  <line class="dg-muted" x1="200" y1="202" x2="235" y2="202" />
+  <line class="dg-muted" x1="270" y1="202" x2="235" y2="202" />
+  <rect class="dg-accent-fill" x="234" y="196" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="240">only the first one is instinctive</text>
+</svg>
