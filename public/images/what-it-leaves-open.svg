@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="74">VAGUE</text>
+  <line class="dg-ink" x1="170" y1="62" x2="170" y2="78" />
+  <text class="dg-note" x="270" y="74">nothing to build on</text>
+
+  <text class="dg-eyebrow" x="16" y="144">USABLE</text>
+  <rect class="dg-accent-fill" x="169" y="132" width="2" height="16" />
+  <line class="dg-ink" x1="174" y1="140" x2="250" y2="110" />
+  <line class="dg-ink" x1="174" y1="140" x2="250" y2="125" />
+  <line class="dg-ink" x1="174" y1="140" x2="250" y2="140" />
+  <line class="dg-ink" x1="174" y1="140" x2="250" y2="155" />
+  <line class="dg-ink" x1="174" y1="140" x2="250" y2="170" />
+  <text class="dg-note" x="270" y="144">a hundred moves</text>
+
+  <text class="dg-eyebrow" x="16" y="214">OVERLOADED</text>
+  <line class="dg-ink" x1="170" y1="202" x2="170" y2="218" />
+  <line class="dg-ink" x1="174" y1="210" x2="250" y2="210" />
+  <text class="dg-note" x="270" y="214">one move</text>
+</svg>

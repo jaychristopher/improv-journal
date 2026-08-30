@@ -59,6 +59,10 @@ A usable offer does two things at once: it commits to something specific, and it
 
 The practical test is what your partner's next line has to be. If you can only imagine one, you have written their part for them.
 
+![Three offers and the moves each leaves open: the vague one leaves nothing, the usable one leaves many, and the overloaded one leaves exactly one.](/images/what-it-leaves-open.svg)
+
+*Both failures are the same test read from opposite ends, which is why "make more offers" fixes neither.*
+
 ## Are questions offers?
 
 The most contested case, and the honest answer is that it depends what the question is doing.
