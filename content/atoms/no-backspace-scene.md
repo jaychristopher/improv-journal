@@ -27,6 +27,10 @@ updated: "2026-08-22"
 
 Two players do a scene, 3-5 minutes. A coach watches for any attempt to retcon, undo, or contradict previously established facts. When a retcon happens — "Actually, I meant..." or "Wait, no, we're not in a hospital" or even subtly ignoring an established detail — the coach calls **"Keep it!"** The scene does NOT rewind. The player must justify and continue from the unwanted thing, making it true. This teaches irreversibility by enforcing it: the retcon attempt itself becomes an established fact that must be honored.
 
+![Three established facts stacked in order; the third is an attempt to undo the first, and it lands as a new entry with the first still in place.](/images/the-undo-is-an-append.svg)
+
+*To the audience the third line is not an erasure but a character denying something they can still see.*
+
 ## Side-coaching
 
 "Keep it — that's real now." "Don't drop that." "Where did the hospital go? It's still here." When players freeze after being called: "You don't have to fix it. Just build forward from where you are."

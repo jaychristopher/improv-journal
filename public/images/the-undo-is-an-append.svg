@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="34">THE FACTS SO FAR</text>
+
+  <rect class="dg-accent-fill" x="16" y="54" width="2" height="14" />
+  <text class="dg-note" x="32" y="66">we are in a hospital</text>
+  <text class="dg-note-accent" x="250" y="66">still true</text>
+
+  <rect class="dg-accent-fill" x="16" y="86" width="2" height="14" />
+  <text class="dg-note" x="32" y="98">your brother works here</text>
+
+  <rect class="dg-accent-fill" x="16" y="118" width="2" height="14" />
+  <text class="dg-note" x="32" y="130">actually, we are not in a hospital</text>
+  <text class="dg-note" x="32" y="148">the attempt to remove it, now permanent</text>
+
+  <text class="dg-note" x="16" y="176">nothing left the list; it is one longer</text>
+</svg>
