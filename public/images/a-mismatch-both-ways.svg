@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">A MISMATCH, BOTH WAYS</text>
+
+  <text class="dg-note" x="200" y="88" text-anchor="middle">gets to the point</text>
+  <text class="dg-note" x="124" y="104" text-anchor="end">action-oriented</text>
+  <line class="dg-ink" x1="130" y1="94" x2="130" y2="106" />
+  <line class="dg-muted" x1="130" y1="100" x2="270" y2="100" />
+  <text class="dg-note" x="276" y="104">people-oriented</text>
+  <text class="dg-note-accent" x="200" y="122" text-anchor="middle">heard as dismissive</text>
+
+  <text class="dg-note" x="200" y="178" text-anchor="middle">asks how it feels</text>
+  <text class="dg-note" x="124" y="194" text-anchor="end">people-oriented</text>
+  <line class="dg-ink" x1="130" y1="184" x2="130" y2="196" />
+  <line class="dg-muted" x1="130" y1="190" x2="270" y2="190" />
+  <text class="dg-note" x="276" y="194">time-oriented</text>
+  <text class="dg-note-accent" x="200" y="212" text-anchor="middle">heard as evasive</text>
+
+  <text class="dg-note" x="16" y="236">each was doing their own good listening</text>
+</svg>

@@ -130,6 +130,11 @@ The standard framework is the Listening Styles Profile, which sorts the preferen
 
 The practical value is that a mismatch between two people's styles is almost always experienced as rudeness rather than as difference. An action-oriented listener cutting to "what do you need?" reads as dismissive to a people-oriented speaker who was still arriving at it. A people-oriented listener asking how somebody feels about the deadline reads as evasive to a time-oriented one. Neither has done anything wrong and both leave the conversation with a worse opinion of the other.
 
+![Two mismatched pairs: an action-oriented listener gets to the point and a people-oriented one hears dismissiveness; a people-oriented listener asks how it feels and a time-oriented one hears evasion.](/images/a-mismatch-both-ways.svg)
+
+*Each verdict is about the other person's character; neither is about the move that was actually made.*
+
+
 The distinction that matters here is that a style is a default rather than a capacity. The three modes are choices available in any conversation. A style is what happens when you are not choosing — which makes knowing your own the useful part, because it predicts which mode you habitually skip.
 
 **Sources cited:** Watson, Barker & Weaver (1995), *International Journal of Listening*.
