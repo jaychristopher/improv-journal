@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 212" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">NAMING THE OUTCOME IS NOT A METHOD</text>
+
+  <text class="dg-note" x="150" y="60">where you are</text>
+  <text class="dg-note" x="376" y="60" text-anchor="end">reads the room</text>
+
+  <text class="dg-secondary" x="16" y="96">be more aware</text>
+  <line class="dg-ink" x1="150" y1="84" x2="150" y2="100" />
+  <line class="dg-ink" x1="376" y1="84" x2="376" y2="100" />
+  <text class="dg-note" x="150" y="120">no steps between them</text>
+
+  <text class="dg-secondary" x="16" y="176">one at a time</text>
+  <text class="dg-note" x="206" y="158" text-anchor="middle">bodies</text>
+  <text class="dg-note" x="262" y="158" text-anchor="middle">energy</text>
+  <text class="dg-note" x="318" y="158" text-anchor="middle">the gap</text>
+  <line class="dg-rule" x1="150" y1="172" x2="376" y2="172" />
+  <line class="dg-ink" x1="150" y1="164" x2="150" y2="180" />
+  <line class="dg-ink" x1="376" y1="164" x2="376" y2="180" />
+  <rect class="dg-accent-fill" x="206" y="164" width="2" height="16" />
+  <rect class="dg-accent-fill" x="262" y="164" width="2" height="16" />
+  <rect class="dg-accent-fill" x="318" y="164" width="2" height="16" />
+  <text class="dg-note-accent" x="150" y="200">three passes, deliberately</text>
+</svg>

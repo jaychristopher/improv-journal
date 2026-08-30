@@ -48,6 +48,11 @@ The interview case has one reliable way out, which is to have your own questions
 
 The practical upshot is the same in both cases, which is the useful part. **The standard advice fails because it names the outcome and calls it a method** — "be more aware", "pay attention to the room", "just notice". None of that is a procedure. An explicit, sequential one works far better, and it is what the three channels above are: look at where bodies are pointed, then at the energy level, then at the gap between what is being said and what is being felt. One at a time, deliberately, until some of it runs without supervision.
 
+![Two ends with nothing between them, against the same two ends with three marked passes on the way.](/images/naming-the-outcome.svg)
+
+*"Be more aware" names where you are meant to arrive. It does not say how to get there.*
+
+
 For people in the second group that explicit method is not a temporary scaffold to be discarded once intuition arrives. It is the method, permanently, and it works.
 
 ## The Three Channels
