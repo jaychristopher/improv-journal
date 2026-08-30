@@ -25,6 +25,11 @@ updated: "2026-08-24"
 
 **Trains:** Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across UCB, iO, Annoyance, and Spolin traditions.
 
+![Two outcomes marked by whether they were aimed at: surrender in accent as the target, simplicity below it as the thing that shows up regardless.](/images/what-you-aim-at.svg)
+
+*The lower row is the reason the exercise is not described as a simplicity drill.*
+
+
 ## Setup
 
 Two players (or a whole circle — the group version is more common) build a scene or story one word at a time, alternating. Each player says exactly one word per turn. Together, you construct sentences and a narrative word by word. 2-5 minutes per round, rotate pairs or cycle the circle.

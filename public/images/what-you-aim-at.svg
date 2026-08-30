@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT YOU AIM AT</text>
+
+  <text class="dg-note" x="16" y="80">aimed at</text>
+  <rect class="dg-accent-fill" x="150" y="69" width="2" height="14" />
+  <text class="dg-note-accent" x="166" y="80">surrender</text>
+
+  <text class="dg-note" x="16" y="130">arrives anyway</text>
+  <line class="dg-rule" x1="150" y1="119" x2="150" y2="133" />
+  <text class="dg-note" x="166" y="130">simplicity</text>
+
+  <text class="dg-note" x="16" y="176">aiming at the second one produces a performance of it</text>
+</svg>
