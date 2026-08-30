@@ -51,7 +51,12 @@ More sophisticated than they get credit for:
 - **Pattern tracking:** Audiences unconsciously track repetition. When something happens twice, they expect a third time. The third either confirms (satisfying) or breaks (surprising). Both are powerful.
 - **Anticipation:** Constantly predicting what's next. Comedy lives in confirming predictions in unexpected ways or violating them entirely.
 - **Projection:** Audiences project meaning, motivation, and narrative. Two performers standing far apart "obviously" have tension. This projection is creative contribution — the audience co-authors the story.
+
 - **Status reading:** Instinctive status readers (Johnstone's insight). They immediately perceive power dynamics and track shifts with great sensitivity.
+
+![The same two performers drawn twice: on stage as two separated marks, and as seen with an accent span joining them.](/images/what-the-audience-adds.svg)
+
+*Nobody put the span there, and the audience would tell you it was in the scene.*
 
 ## Performing FOR vs. WITH the audience
 

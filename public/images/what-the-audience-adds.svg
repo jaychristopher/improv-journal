@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE AUDIENCE ADDS</text>
+
+  <text class="dg-note" x="16" y="78">on stage</text>
+  <line class="dg-ink" x1="190" y1="68" x2="190" y2="82" />
+  <line class="dg-ink" x1="340" y1="68" x2="340" y2="82" />
+  <text class="dg-note" x="190" y="102">two people, standing apart</text>
+
+  <text class="dg-note" x="16" y="152">what is seen</text>
+  <line class="dg-ink" x1="190" y1="142" x2="190" y2="156" />
+  <line class="dg-ink" x1="340" y1="142" x2="340" y2="156" />
+  <rect class="dg-accent-fill" x="190" y="148" width="150" height="2" />
+  <text class="dg-note-accent" x="246" y="176">tension</text>
+
+  <text class="dg-note" x="16" y="196">the lower row has a thing the upper row does not</text>
+</svg>
