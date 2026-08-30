@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO ACCIDENTS</text>
+
+  <text class="dg-note" x="16" y="76">your partner slips</text>
+  <line class="dg-muted" x1="180" y1="72" x2="250" y2="72" />
+  <text class="dg-note" x="260" y="76">collaborative generosity</text>
+
+  <text class="dg-note" x="16" y="132">you slip</text>
+  <rect class="dg-accent-fill" x="180" y="127" width="70" height="2" />
+  <text class="dg-note-accent" x="260" y="132">self-compassion</text>
+
+  <text class="dg-note" x="16" y="176">the same principle, and not the same move</text>
+</svg>
