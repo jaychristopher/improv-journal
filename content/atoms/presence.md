@@ -29,6 +29,11 @@ Presence is the capacity to sustain sensory contact with what is happening right
 
 It lives in the body before the mind: breath, weight on the floor, the senses engaged. You *see* your partner. You *hear* the space. You feel your own physical state. The cognitive framing — "allocate bandwidth outward" — is one useful lens, but the actual experience is more like dropping the inner noise and finding that contact with reality was already there underneath. Spolin's entire pedagogy is built on this: physical engagement (space work, point of concentration) produces presence. You don't *think* yourself present. You *sense* yourself there.
 
+![Two rows with an identical lower bar: in the first it sits under a band of inner noise, in the second the noise is gone and the bar is unchanged.](/images/presence-is-not-added.svg)
+
+*Nothing was acquired between the rows, which is why presence cannot be worked at directly.*
+
+
 ## Presence is not passivity — it's active receptivity
 
 A present improviser isn't blank or waiting. They're intensely alert — hungry for what's happening. Johnstone's image: the cat watching the mouse hole. Responses emerge from contact with the moment rather than from a script prepared in advance. Present performers react to what was *said*; absent performers react to what they *expected*.

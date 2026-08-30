@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">PRESENCE IS NOT ADDED</text>
+
+  <text class="dg-note" x="16" y="80">with the noise</text>
+  <line class="dg-muted" x1="170" y1="70" x2="370" y2="70" />
+  <text class="dg-note" x="170" y="64">inner noise</text>
+  <rect class="dg-accent-fill" x="170" y="89" width="200" height="2" />
+  <text class="dg-note" x="170" y="106">contact</text>
+
+  <text class="dg-note" x="16" y="156">without it</text>
+  <rect class="dg-accent-fill" x="170" y="155" width="200" height="2" />
+  <text class="dg-note" x="170" y="172">contact</text>
+
+  <text class="dg-note" x="16" y="198">the bar underneath is the same length in both</text>
+</svg>
