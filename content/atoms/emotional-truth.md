@@ -62,6 +62,11 @@ The disagreement is smaller than it looks once you notice what Diderot was solvi
 
 Improvisation has no run. The scene happens once, is never repeated, and nobody is trying to reproduce Tuesday's performance on Wednesday. The reliability problem Diderot identified does not arise, and the thing his method protects against — an uneven night — costs an improviser almost nothing, because there was no fixed version to fall short of.
 
+![A run of nights drawn as twelve marks of differing height with their range bracketed, and a single scene drawn as one mark with no range to bracket.](/images/what-diderot-was-solving-for.svg)
+
+*The single mark still has a height; what it lacks is anything to be compared with.*
+
+
 What does survive from him is the warning underneath. A performer waiting to feel something before acting is stuck, and *that* failure is common in improv classes. The body-first method above is the practical answer to it, and it is closer to Diderot than the tradition usually admits: act, and let the feeling follow the action rather than the other way round.
 
 ## Specific sources
