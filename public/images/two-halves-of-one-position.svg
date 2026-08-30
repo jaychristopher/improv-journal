@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO HALVES OF ONE POSITION</text>
+
+  <text class="dg-note" x="16" y="78">Improvise</text>
+  <rect class="dg-accent-fill" x="150" y="73" width="80" height="2" />
+
+  <text class="dg-note" x="16" y="118">this book</text>
+  <rect class="dg-accent-fill" x="232" y="113" width="138" height="2" />
+
+  <line class="dg-rule" x1="150" y1="144" x2="370" y2="144" />
+  <text class="dg-note" x="150" y="164">the first three seconds</text>
+  <text class="dg-note" x="370" y="182" text-anchor="end">the whole architecture</text>
+
+  <text class="dg-note" x="16" y="200">neither half stands alone</text>
+</svg>

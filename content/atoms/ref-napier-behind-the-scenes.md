@@ -48,6 +48,11 @@ It also does not teach a form. The book will not make you competent at the Harol
 
 That gap is deliberate and it is the mirror of the one in *Improvise*. The first book is about the first three seconds and declines to supply any architecture; this one supplies the architecture and declines to teach the seconds. Read together they cover Napier's whole position, and neither half stands well on its own.
 
+![Two books drawn as adjoining spans on one axis, one covering the opening seconds and the other the architecture after them.](/images/two-halves-of-one-position.svg)
+
+*The join between the two bars is the part neither book spends much time on.*
+
+
 ## Who it rewards
 
 Directors, coaches and performers with a few years behind them. The book assumes you have already played a lot and are now responsible for something larger — a set, a cast, a form that keeps producing flat shows for reasons nobody can name.
