@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">IT IS A THRESHOLD, NOT A SUPPLY</text>
+
+  <text class="dg-secondary" x="16" y="110">edits it out</text>
+  <line class="dg-rule" x1="190" y1="110" x2="340" y2="110" />
+  <line class="dg-ink" x1="200" y1="80" x2="200" y2="110" />
+  <line class="dg-ink" x1="230" y1="96" x2="230" y2="110" />
+  <line class="dg-ink" x1="260" y1="70" x2="260" y2="110" />
+  <line class="dg-ink" x1="290" y1="88" x2="290" y2="110" />
+  <line class="dg-ink" x1="320" y1="76" x2="320" y2="110" />
+  <line class="dg-accent" x1="190" y1="74" x2="340" y2="74" />
+  <text class="dg-note" x="190" y="132">one gets said</text>
+
+  <text class="dg-secondary" x="16" y="200">says it</text>
+  <line class="dg-rule" x1="190" y1="200" x2="340" y2="200" />
+  <line class="dg-ink" x1="200" y1="170" x2="200" y2="200" />
+  <line class="dg-ink" x1="230" y1="186" x2="230" y2="200" />
+  <line class="dg-ink" x1="260" y1="160" x2="260" y2="200" />
+  <line class="dg-ink" x1="290" y1="178" x2="290" y2="200" />
+  <line class="dg-ink" x1="320" y1="166" x2="320" y2="200" />
+  <line class="dg-accent" x1="190" y1="182" x2="340" y2="182" />
+  <text class="dg-note-accent" x="190" y="222">four get said</text>
+
+  <text class="dg-note" x="16" y="244">the same five thoughts in both rows</text>
+</svg>

@@ -37,6 +37,11 @@ What does vary is arrival speed. Some people have quicker timing, or a taste for
 
 **The mechanism is that most people who call themselves not funny are not short of funny thoughts. They are editing them out.** Watch anyone in a group who is reliably funny and the difference is rarely wit. It is threshold. They have the observation and say it; the person beside them has the same observation two seconds earlier, decides it is not good enough, and keeps it. Both had the material. One shipped.
 
+![The same five observations in both rows; the only difference is where the threshold sits, and how many clear it.](/images/it-is-a-threshold.svg)
+
+*Nothing in the second row is wittier. The bar is just lower.*
+
+
 That reframes the whole problem, because a threshold is much easier to move than a capacity. Everything below is about lowering it safely — and about the fact that the edited-out version is usually the funnier one, since the thing you *almost* said was honest and the thing you said instead was constructed.
 
 One distinction worth making, because the two get conflated and only one of them is hard. **Being fun and being funny are different, and being fun is the more valuable of the two.** Being funny means producing the laugh. Being fun means being easy to play with — you take what people offer, you commit to something silly without needing it to succeed, you make it safe for other people to be ridiculous. Fun people generate far more laughter than funny people do, because they cause it in everybody else rather than supplying it themselves. If you only get one, take fun.
