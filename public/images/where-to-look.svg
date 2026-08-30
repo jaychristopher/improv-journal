@@ -1,0 +1,37 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">WHERE TO LOOK, AT ONE MOMENT</text>
+
+  <text class="dg-note" x="16" y="74">shared</text>
+  <rect class="dg-accent-fill" x="180" y="64" width="2" height="14" />
+  <rect class="dg-accent-fill" x="210" y="64" width="2" height="14" />
+  <rect class="dg-accent-fill" x="240" y="64" width="2" height="14" />
+  <rect class="dg-accent-fill" x="270" y="64" width="2" height="14" />
+  <rect class="dg-accent-fill" x="300" y="64" width="2" height="14" />
+  <text class="dg-note" x="316" y="74">one place</text>
+
+  <text class="dg-note" x="16" y="112">single</text>
+  <line class="dg-ink" x1="180" y1="102" x2="180" y2="116" />
+  <line class="dg-ink" x1="210" y1="102" x2="210" y2="116" />
+  <rect class="dg-accent-fill" x="240" y="102" width="2" height="14" />
+  <line class="dg-ink" x1="270" y1="102" x2="270" y2="116" />
+  <line class="dg-ink" x1="300" y1="102" x2="300" y2="116" />
+  <text class="dg-note" x="316" y="112">one place</text>
+
+  <text class="dg-note" x="16" y="150">shifting</text>
+  <line class="dg-ink" x1="180" y1="140" x2="180" y2="154" />
+  <line class="dg-ink" x1="210" y1="140" x2="210" y2="154" />
+  <line class="dg-ink" x1="240" y1="140" x2="240" y2="154" />
+  <line class="dg-ink" x1="270" y1="140" x2="270" y2="154" />
+  <rect class="dg-accent-fill" x="300" y="140" width="2" height="14" />
+  <text class="dg-note" x="316" y="150">one place</text>
+
+  <text class="dg-note" x="16" y="188">split</text>
+  <line class="dg-ink" x1="180" y1="178" x2="180" y2="192" />
+  <rect class="dg-accent-fill" x="210" y="178" width="2" height="14" />
+  <line class="dg-ink" x1="240" y1="178" x2="240" y2="192" />
+  <line class="dg-ink" x1="270" y1="178" x2="270" y2="192" />
+  <rect class="dg-accent-fill" x="300" y="178" width="2" height="14" />
+  <text class="dg-note" x="316" y="188">two places</text>
+
+  <text class="dg-note" x="16" y="220">three of these are the same rule; the fourth breaks it</text>
+</svg>

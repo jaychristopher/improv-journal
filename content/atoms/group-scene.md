@@ -36,6 +36,11 @@ In the Harold structure, group scenes (often called "group games") serve as ense
 
 At any moment, the audience should know where to look. If focus splits, the scene fractures. The constant assessment: *am I the focus right now, or am I the frame?*
 
+![Four snapshots of five performers with the focus marked: shared, single and shifting each put attention in one place, while split puts it in two.](/images/where-to-look.svg)
+
+*The top row has everybody active and still passes; the failure is two places, not many people.*
+
+
 ## The "one voice" principle
 
 The group functions as a single entity with a shared perspective. Not everyone literally saying the same words (though that can happen) but the group sharing:
