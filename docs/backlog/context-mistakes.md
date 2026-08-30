@@ -1,0 +1,58 @@
+---
+key: EC-REG
+type: register
+summary: Running log of context-shaping mistakes, by entry point
+epic: "[[Entry-point context]]"
+status: Open
+updated: 2026-08-30
+---
+
+# Context mistakes — running register
+
+Append, do not rewrite. A dated entry that was later fixed is more useful than a
+tidy list, because the pattern repeats and the entry is how it gets recognised
+the second time.
+
+Columns: what the visitor met, which entry point, and whether it is
+**underload** (assumed context they lack) or **overload** (context they did not
+need).
+
+---
+
+## 2026-08-30
+
+**Sixteen guide links in a 260px sidebar** — organic search → concept page —
+*overload*. Every other sidebar group held 2–9 links; one held 16, because
+`ATOM_GUIDE_LIMIT` is 16. The worst page showed 45 links across 8 groups. Fixed
+by collapsing overflow into `details`, which keeps the links crawlable. The
+lesson worth keeping: the change that caused it was measured only by its SEO
+effect, and nobody looked at the column it rendered into.
+
+**No orientation on half the concept pages** — organic search → concept page —
+*underload*. `ContextBanner` renders only when an atom belongs to both a thread
+and a path, so 103 of 205 pages show none. All 32 library pages are in that group,
+and they are the pages ranking best in Search Console. Open: [[EC-1.1 Give every
+concept page a cold-arrival line]].
+
+**Context written as internal taxonomy** — organic search → concept page —
+*underload*. Where the banner does render it says "Part of *thread* in *path*".
+Those names mean nothing to somebody who arrived thirty seconds ago from a Google
+result; it locates the page in a structure they have never seen. Open:
+[[EC-2.1 Rewrite the context line for someone who just arrived]].
+
+**Byline before orientation** — organic search → any content page — *underload*.
+The first thing under the title is "By Jay Christopher · Updated 24 August 2026".
+For a returning reader that is provenance. For a cold arrival it is a name they do
+not know, placed above any statement of what the site is.
+
+---
+
+## Entry points not yet examined
+
+Recorded so a later pass knows what has and has not been looked at.
+
+- Podcast listener following a show-note link — 62 episodes now link back
+- AI answer engine — currently moot, Cloudflare 403s those crawlers
+- Social / newsletter arrival
+- Mid-course arrival: a thread that is day 4 of a 7-day program, reached directly
+- Returning reader with journey state — `ContinueJourney` renders nothing server-side
