@@ -43,6 +43,11 @@ Improv calls these `offers`: anything your partner gives you that you can build 
 
 Every piece is an offer. Every offer is a doorway to connection. The problem isn't that small talk is shallow — it's that most people only hear the surface and respond to the surface.
 
+![One four-word answer with the surface reading on the line and four unheard offers branching off beneath it.](/images/what-is-in-one-answer.svg)
+
+*The exchange was never shallow. Only the reading of it was.*
+
+
 **Practice:** In your next small talk exchange, listen for one detail beneath the surface and respond to *that.* "Went to the park" → "Which park? I've been trying to find a good one near here." You just turned a dead-end exchange into an actual conversation.
 
 ### 2. Build on what they gave you before adding yours

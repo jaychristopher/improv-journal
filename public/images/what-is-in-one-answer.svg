@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT IS IN ONE ANSWER</text>
+
+  <text class="dg-secondary" x="16" y="64">the answer</text>
+  <text class="dg-note" x="120" y="64">went to the park</text>
+  <text class="dg-note" x="376" y="64" text-anchor="end">the part everyone hears</text>
+  <line class="dg-ink" x1="120" y1="76" x2="376" y2="76" />
+
+  <line class="dg-ink" x1="132" y1="76" x2="132" y2="172" />
+
+  <line class="dg-ink" x1="132" y1="100" x2="148" y2="100" />
+  <text class="dg-note" x="156" y="104">how "good" was said</text>
+
+  <line class="dg-ink" x1="132" y1="124" x2="148" y2="124" />
+  <text class="dg-note" x="156" y="128">which park</text>
+
+  <line class="dg-ink" x1="132" y1="148" x2="148" y2="148" />
+  <text class="dg-note" x="156" y="152">who they were with</text>
+
+  <line class="dg-ink" x1="132" y1="172" x2="148" y2="172" />
+  <text class="dg-note" x="156" y="176">whether they wanted to say it</text>
+
+  <text class="dg-note-accent" x="16" y="214">each one is a question you could ask</text>
+</svg>
