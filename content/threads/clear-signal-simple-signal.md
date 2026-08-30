@@ -15,6 +15,11 @@ updated: "2026-08-24"
 
 So far we've talked about *receiving* — accepting offers, staying present, integrating surprises. Now we need to talk about *sending*. Because you're always transmitting, whether you intend to or not. The question is: what kind of signal are you putting out?
 
+![Two rows with an identical outgoing signal, one sent on purpose and one not.](/images/you-are-always-transmitting.svg)
+
+*The choice is never whether to send, which is why silence is also an offer.*
+
+
 ## Two scenes: one honest, one clever
 
 Watch two scenes.

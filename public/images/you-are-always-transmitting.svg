@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">YOU ARE ALWAYS TRANSMITTING</text>
+
+  <text class="dg-note" x="16" y="80">intending to</text>
+  <rect class="dg-accent-fill" x="180" y="75" width="2" height="12" />
+  <line class="dg-muted" x1="182" y1="81" x2="340" y2="81" />
+
+  <text class="dg-note" x="16" y="132">not intending to</text>
+  <rect class="dg-accent-fill" x="180" y="127" width="2" height="12" />
+  <line class="dg-muted" x1="182" y1="133" x2="340" y2="133" />
+
+  <text class="dg-note" x="16" y="180">the signal goes either way</text>
+</svg>
