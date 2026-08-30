@@ -62,6 +62,11 @@ From outside, the tell is not attentiveness. It is **being changed**.
 
 Somebody genuinely receiving will produce a response that could not have been prepared: their next line depends on the specific thing that was just said, and if you removed their partner's line it would no longer make sense. That is the whole test, and it is why `offers` and listening are the same subject from two directions.
 
+![A two-by-two test: both responses stand as played, but with the partner's line removed only the prepared one survives.](/images/remove-the-line-before-it.svg)
+
+*The surviving response is the failing one, which is why this can only be checked after the scene rather than during it.*
+
+
 The counterfeit is fluent and slightly generic — a response that would have worked after almost anything. It usually arrives faster than a real one, because nothing had to be taken in first.
 
 All of that describes the faculty; training it is a separate question. [Active listening exercises](/active-listening-exercises) are the drills that isolate reception, run without a scene to hide the work inside. The same skill under its ordinary name, and the ways it is usually taught wrong, is [active listening](/active-listening).

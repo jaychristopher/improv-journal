@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">REMOVE THE LINE BEFORE IT</text>
+
+  <text class="dg-note" x="200" y="66" text-anchor="middle">as played</text>
+  <text class="dg-note" x="320" y="66" text-anchor="middle">line removed</text>
+
+  <text class="dg-note" x="16" y="110">received</text>
+  <line class="dg-rule" x1="170" y1="106" x2="230" y2="106" />
+  <rect class="dg-accent-fill" x="170" y="105" width="60" height="2" />
+  <line class="dg-rule" x1="290" y1="106" x2="350" y2="106" />
+
+  <text class="dg-note" x="16" y="160">prepared</text>
+  <line class="dg-rule" x1="170" y1="156" x2="230" y2="156" />
+  <rect class="dg-accent-fill" x="170" y="155" width="60" height="2" />
+  <line class="dg-rule" x1="290" y1="156" x2="350" y2="156" />
+  <rect class="dg-accent-fill" x="290" y="155" width="60" height="2" />
+
+  <text class="dg-note" x="16" y="200">only one of them needed the line</text>
+</svg>
