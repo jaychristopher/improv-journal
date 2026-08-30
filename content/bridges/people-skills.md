@@ -41,6 +41,11 @@ This shift changes everything. Consider telling a friend about a problem at work
 
 Most communication breakdowns aren't failures of clarity. They're failures of offer recognition. The signal was sent. It wasn't received — not because it was unclear, but because the other person was listening for content and missed the offer.
 
+![The same channel graded at opposite ends: the messaging frame marks the sender, the offers frame marks the receiver.](/images/where-the-question-sits.svg)
+
+*Clarity is a property of what you sent. Connection is a property of what you caught.*
+
+
 ## You're Always Signaling
 
 Here's what improv makes unavoidable: you cannot stop communicating. Even silence is a signal. Even stillness is a choice. This is the principle of continuous signaling — the recognition that in any interaction, you are broadcasting information about your internal state through your body, your voice, your timing, and your attention, whether you intend to or not.

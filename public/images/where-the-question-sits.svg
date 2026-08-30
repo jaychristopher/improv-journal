@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE QUESTION SITS</text>
+
+  <text class="dg-note" x="150" y="56">you</text>
+  <text class="dg-note" x="376" y="56" text-anchor="end">them</text>
+
+  <text class="dg-secondary" x="16" y="88">messaging</text>
+  <line class="dg-rule" x1="150" y1="84" x2="376" y2="84" />
+  <rect class="dg-accent-fill" x="149" y="76" width="2" height="16" />
+  <line class="dg-ink" x1="376" y1="76" x2="376" y2="92" />
+  <text class="dg-note" x="150" y="110">was that clear enough?</text>
+
+  <text class="dg-secondary" x="16" y="160">offers</text>
+  <line class="dg-rule" x1="150" y1="156" x2="376" y2="156" />
+  <line class="dg-ink" x1="150" y1="148" x2="150" y2="164" />
+  <rect class="dg-accent-fill" x="375" y="148" width="2" height="16" />
+  <text class="dg-note-accent" x="150" y="182">did I notice what arrived?</text>
+
+  <text class="dg-note" x="16" y="206">the same exchange, graded at the other end</text>
+</svg>
