@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE FEELING COMES FROM</text>
+
+  <text class="dg-note" x="16" y="76">your own remembered one</text>
+  <line class="dg-muted" x1="180" y1="86" x2="300" y2="86" />
+  <line class="dg-ink" x1="180" y1="80" x2="180" y2="92" />
+
+  <text class="dg-note" x="16" y="146">the person opposite</text>
+  <rect class="dg-accent-fill" x="299" y="140" width="2" height="12" />
+  <line class="dg-muted" x1="300" y1="146" x2="330" y2="146" />
+
+  <line class="dg-rule" x1="330" y1="80" x2="330" y2="152" />
+  <text class="dg-note" x="340" y="118">now</text>
+
+  <text class="dg-note" x="16" y="200">one route runs backwards</text>
+</svg>

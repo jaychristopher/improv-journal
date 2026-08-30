@@ -26,6 +26,11 @@ Cited here for what came after it rather than for itself. Stanislavski's system 
 
 The specific point of contact is emotion memory, sometimes called affective memory: reaching for a remembered feeling of your own to supply the one the scene requires. Meisner's objection, and the reason his repetition work exists, is that this sends an actor inward at the precise moment the job requires attending to the person opposite. Improv sides firmly with Meisner and rarely says why, which leaves the position looking like a preference rather than the end of a long argument.
 
+![Two routes to the feeling a scene needs: one reaching back from the present moment, one arriving from the person opposite.](/images/where-the-feeling-comes-from.svg)
+
+*Both routes end at the same place, which is why the disagreement lasted a century.*
+
+
 What does transfer is the insistence that a character wants something and that the wanting has to be specific. The improv vocabulary for it is thinner than the theatrical one, and the objective is worth borrowing whole.
 
 A note on the text: the English An Actor Prepares is Elizabeth Reynolds Hapgood's 1936 translation of the first part of a work Stanislavski intended as one book, and both the division and the translation have been argued about since. Jean Benedetti's later An Actor's Work restores the whole. Where this site cites the 1936 text it means the Hapgood translation, because that is the one the acting tradition actually read.
