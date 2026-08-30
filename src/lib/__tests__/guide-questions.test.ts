@@ -37,8 +37,13 @@ describe("guides answer questions", () => {
     for (const file of fs.readdirSync(BRIDGES).filter((f) => f.endsWith(".md"))) {
       guides += 1;
       const raw = fs.readFileSync(path.join(BRIDGES, file), "utf-8");
+      // CRLF-tolerant on purpose. `\n---\n` cannot match `\r\n---\r\n`, so on a
+      // Windows-saved file the body came back empty and this reported zero
+      // questions on a guide that has five. Same shape as the silent false
+      // passes line-endings.test.ts exists to document; this repo turns LF into
+      // CRLF often enough that anything reading content has to expect it.
       const body = raw
-        .split(/\n---\n/)
+        .split(/\r?\n---\r?\n/)
         .slice(1)
         .join("\n---\n");
       if (!QUESTION_HEADING.test(body)) missing.push(file.replace(/\.md$/, ""));

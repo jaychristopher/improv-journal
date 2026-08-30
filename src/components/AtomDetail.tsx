@@ -23,6 +23,7 @@ import { Breadcrumb, type Crumb } from "./Breadcrumb";
 import { ContextBanner } from "./ContextBanner";
 import { DefinedTermJsonLd } from "./DefinedTermJsonLd";
 import { PodcastJsonLd } from "./PodcastJsonLd";
+import { SidebarLinkGroup } from "./SidebarLinkGroup";
 import { TableOfContents } from "./TableOfContents";
 import { UpdatedOn } from "./UpdatedOn";
 import { WhatsNext } from "./WhatsNext";
@@ -318,17 +319,11 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
                         {RELATION_LABELS[rel] ?? rel}
                       </dt>
                       <dd className="space-y-1 pl-0">
-                        {resolvedLinks
-                          .filter((l) => l.relation === rel)
-                          .map((link) => (
-                            <Link
-                              key={link.id}
-                              href={link.url}
-                              className="text-foreground/70 block hover:underline"
-                            >
-                              {link.title}
-                            </Link>
-                          ))}
+                        <SidebarLinkGroup
+                          links={resolvedLinks
+                            .filter((l) => l.relation === rel)
+                            .map((link) => ({ key: link.id, href: link.url, label: link.title }))}
+                        />
                       </dd>
                     </div>
                   ))}
@@ -350,15 +345,13 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
                     <div>
                       <dt className="text-foreground/40 mb-1 text-xs font-medium">Paths</dt>
                       <dd className="space-y-1">
-                        {appearsInPaths.map((p) => (
-                          <Link
-                            key={p.id}
-                            href={`/paths/${p.id}`}
-                            className="text-foreground/70 block hover:underline"
-                          >
-                            {p.title}
-                          </Link>
-                        ))}
+                        <SidebarLinkGroup
+                          links={appearsInPaths.map((p) => ({
+                            key: p.id,
+                            href: `/paths/${p.id}`,
+                            label: p.title,
+                          }))}
+                        />
                       </dd>
                     </div>
                   )}
@@ -366,15 +359,13 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
                     <div>
                       <dt className="text-foreground/40 mb-1 text-xs font-medium">Threads</dt>
                       <dd className="space-y-1">
-                        {appearsInThreads.map((t) => (
-                          <Link
-                            key={t.frontmatter.id}
-                            href={`/threads/${t.frontmatter.id}`}
-                            className="text-foreground/70 block hover:underline"
-                          >
-                            {t.frontmatter.title}
-                          </Link>
-                        ))}
+                        <SidebarLinkGroup
+                          links={appearsInThreads.map((t) => ({
+                            key: t.frontmatter.id,
+                            href: `/threads/${t.frontmatter.id}`,
+                            label: t.frontmatter.title,
+                          }))}
+                        />
                       </dd>
                     </div>
                   )}
@@ -395,15 +386,15 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
                     <div>
                       <dt className="text-foreground/40 mb-1 text-xs font-medium">Guides</dt>
                       <dd className="space-y-1">
-                        {appearsInBridges.map((b) => (
-                          <Link
-                            key={b.slug}
-                            href={`/${b.slug}`}
-                            className="text-foreground/70 block hover:underline"
-                          >
-                            {b.frontmatter.title}
-                          </Link>
-                        ))}
+                        {/* The group this was built for: sixteen entries, against two
+                            to nine everywhere else. See SIDEBAR_VISIBLE. */}
+                        <SidebarLinkGroup
+                          links={appearsInBridges.map((b) => ({
+                            key: b.slug,
+                            href: `/${b.slug}`,
+                            label: b.frontmatter.title,
+                          }))}
+                        />
                       </dd>
                     </div>
                   )}
