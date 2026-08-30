@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT GRIPPING DOES</text>
+
+  <text class="dg-note" x="16" y="80">left alone</text>
+  <line class="dg-rule" x1="170" y1="82" x2="370" y2="82" />
+  <rect class="dg-accent-fill" x="170" y="81" width="130" height="2" />
+  <line class="dg-ink" x1="170" y1="74" x2="170" y2="90" />
+
+  <text class="dg-note" x="16" y="140">gripped</text>
+  <line class="dg-rule" x1="170" y1="142" x2="370" y2="142" />
+  <rect class="dg-accent-fill" x="170" y="141" width="22" height="2" />
+  <line class="dg-ink" x1="170" y1="134" x2="170" y2="150" />
+
+  <text class="dg-note" x="170" y="170">it arrives at the same moment in both</text>
+
+  <text class="dg-note" x="16" y="196">the second row ends because somebody checked on it</text>
+</svg>
