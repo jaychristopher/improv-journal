@@ -53,7 +53,20 @@ export function formatUpdated(date: string): string | null {
   return `${dayNumber} ${MONTHS[monthIndex]} ${year}`;
 }
 
-export function UpdatedOn({ date, className }: { date?: string; className?: string }) {
+/**
+ * `minutes` joins the same line for the same reason as the other two. A reader
+ * decides whether to start before they decide whether to finish, and the guides
+ * span 1,095 to 4,790 words with nothing on the page distinguishing them.
+ */
+export function UpdatedOn({
+  date,
+  minutes,
+  className,
+}: {
+  date?: string;
+  minutes?: number;
+  className?: string;
+}) {
   const formatted = date ? formatUpdated(date) : null;
 
   return (
@@ -68,6 +81,7 @@ export function UpdatedOn({ date, className }: { date?: string; className?: stri
           <time dateTime={date.slice(0, 10)}>{formatted}</time>
         </>
       ) : null}
+      {minutes ? ` · ${minutes} min read` : null}
     </p>
   );
 }

@@ -140,6 +140,21 @@ The pattern worth keeping: the first fix was measured only by the thing it set
 out to reduce. Counting visible links proved the wall was gone and said nothing
 about whether what remained was true.
 
+**No way to tell a four-minute read from an eighteen-minute one** — any entry
+point → guide — *underload*. Guides run 1,095 to 4,790 words around a median of
+2,489, and the page said nothing about which one you had landed on. That blocks
+the first decision a reader makes, before whether to finish: now, later, or not
+at all. Added to the line that already carries the byline and date, since it
+answers the same class of question and costs no new element. Only paths had
+carried a duration.
+
+**A disclosure audit that came back clean** — process note. Two passes added
+`details` folds, to the concept sidebar and the outline, and the obvious risk
+was replacing one overload with a page where everything is collapsed. Counted:
+195 pages have one expander, 41 have two, 9 have three, one has four, and they
+sit in different regions. Recorded because a check that finds nothing is worth
+the same as one that does — the alternative is assuming.
+
 ---
 
 ## Entry points examined, no defect found

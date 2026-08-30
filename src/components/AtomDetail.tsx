@@ -14,6 +14,7 @@ import {
 import { loadImprovGames } from "@/lib/games";
 import { definitionFromHtml, isGlossaryType } from "@/lib/glossary";
 import { contentsFor } from "@/lib/headings";
+import { readingMinutes } from "@/lib/reading-time";
 import type { AtomFrontmatter } from "@/lib/schema";
 import { getSeriesForPage } from "@/lib/shows-for-content";
 
@@ -224,7 +225,11 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
               design also gives them Article, author and dateModified, so it
               was not making that distinction and I picked the wrong half of it.
             */}
-            <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
+            <UpdatedOn
+              date={fm.updated}
+              minutes={readingMinutes(atom.html)}
+              className="text-foreground/50 mt-3 text-xs"
+            />
           </header>
 
           {audioUrl && (
