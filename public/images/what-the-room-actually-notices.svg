@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 224" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE ROOM ACTUALLY NOTICES</text>
+
+  <text class="dg-note" x="16" y="76">shaking hands</text>
+  <line class="dg-muted" x1="200" y1="72" x2="250" y2="72" />
+  <text class="dg-note" x="262" y="76">forgiven</text>
+
+  <text class="dg-note" x="16" y="112">losing your place</text>
+  <line class="dg-muted" x1="200" y1="108" x2="250" y2="108" />
+  <text class="dg-note" x="262" y="112">forgiven</text>
+
+  <text class="dg-note-accent" x="16" y="148">withdrawing</text>
+  <rect class="dg-accent-fill" x="200" y="143" width="120" height="2" />
+  <text class="dg-note-accent" x="332" y="148">noticed</text>
+
+  <text class="dg-note" x="16" y="188">the two you are afraid of are the two they forgive</text>
+  <text class="dg-note-accent" x="16" y="210">the third is a choice you still have while frightened</text>
+</svg>

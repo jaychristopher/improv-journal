@@ -66,6 +66,11 @@ Susan Messing, one of Chicago's most respected improv teachers, puts it more blu
 
 Read as advice for nerves this sounds impossible, and it is not the instruction. What she is describing is a choice you still have while frightened, which is whether to stay in contact with the room or withdraw from it. **Withdrawal is what an audience actually registers as failure** — not the shaking hands, not the lost place, but the moment somebody stops being present and starts getting through it. They forgive the first two easily and cannot help noticing the third.
 
+![Shaking hands and losing your place are short, forgiven marks; withdrawing is the long one the room registers as failure.](/images/what-the-room-actually-notices.svg)
+
+*Nobody is grading the symptoms; they are noticing whether you are still there.*
+
+
 Viola Spolin, who invented modern improv training, addressed stage fright structurally rather than psychologically. Her concept of **Point of Concentration** — a specific, shared focus for each exercise — works as an attention anchor. You cannot simultaneously monitor yourself _and_ be genuinely absorbed in a task. The absorption displaces the self-monitoring. The exercises don't fight the fear. They redirect the bandwidth.
 
 ## A Five-Minute Protocol
