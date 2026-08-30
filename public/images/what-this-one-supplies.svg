@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THIS ONE SUPPLIES</text>
+
+  <text class="dg-note" x="16" y="76">how to do it</text>
+  <line class="dg-rule" x1="200" y1="78" x2="290" y2="78" />
+  <rect class="dg-accent-fill" x="244" y="66" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="116">why bother</text>
+  <line class="dg-rule" x1="200" y1="118" x2="290" y2="118" />
+
+  <text class="dg-note" x="16" y="156">where it came from</text>
+  <line class="dg-rule" x1="200" y1="158" x2="290" y2="158" />
+
+  <text class="dg-note" x="16" y="196">how to teach it</text>
+  <line class="dg-rule" x1="200" y1="198" x2="290" y2="198" />
+
+  <text class="dg-note" x="16" y="220">three of the four are somewhere else</text>
+</svg>

@@ -61,6 +61,11 @@ Almost no history, either. The lineage the method came out of and the older scho
 
 And nothing on teaching. It describes what a performer should do; a person standing in front of a room of beginners needs sequencing, pacing and diagnosis, and will have to find them elsewhere.
 
+![Four things a reader needs with only the first filled, the other three left as empty slots.](/images/what-this-one-supplies.svg)
+
+*The one it fills is the one it fills better than anything else, which is the trade the book made on purpose.*
+
+
 ## Why it reads flat
 
 The prose is deliberately unexciting, and that is the commonest complaint about the book rather than a flaw in it.
