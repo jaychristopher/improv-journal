@@ -16,6 +16,11 @@ Most improv characters are built from the neck up — a voice, an attitude, mayb
 
 **Character through game** is the UCB insight: the behavioral pattern IS the character. A character who apologizes for everything doesn't need a backstory — the game defines them. This produces more playable characters than biography-based work because the game gives you infinite material (any new context generates new game moves) while a backstory gives you finite information to reference.
 
+![Six contexts along a track with backstory producing material at the first two and the game producing it at all six.](/images/six-new-contexts.svg)
+
+*Backstory does not fail at the third context; it simply has nothing more to say about it.*
+
+
 **Playing against type** — the tough guy who's tender, the librarian who's dangerous — works because it operates as a pattern break at the character level. The audience reads the type instantly (that's the pattern), then the subversion reveals depth. The establish-and-subvert structure is the same principle that governs game, applied to identity.
 
 **Emotional range** is what separates competent performers from artists. Most improvisers default to "wry and sardonic" — a defense mechanism against vulnerability. Training in anger, grief, joy, tenderness, and fear (not performing these emotions but actually accessing them) requires the kind of work Meisner called "living truthfully under imaginary circumstances." It's not about being a dramatic actor. It's about having the full palette available when the scene calls for it.
