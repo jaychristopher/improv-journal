@@ -31,6 +31,11 @@ Fracture feels like confusion — not the productive confusion of discovery, but
 
 Fracture operates at two levels. **Factual fracture:** you're in a boat, they're in a car. One of you missed a detail. This is the easy case — the diagnosis is visible. **Tonal fracture:** you're in a tragedy, they're in a sketch. Neither player sees a "fact" to concede because the disagreement is about genre, emotional register, or the level of play. Tonal fracture is more common in experienced players and harder to diagnose because both players think they're in the right scene.
 
+![A factual fracture with the two players apart on the fact line, and a tonal one where they sit together on that line and apart on the register line below.](/images/two-kinds-of-fracture.svg)
+
+*The lower pair are exactly as far apart as the upper pair; the distance is just measured on a line nobody is watching.*
+
+
 ## The diagnostic questions
 
 What does my partner think is *true* right now? And: what does my partner think the *tone* is? Not what *I* think is true — what are *they* building? Often the fracture comes from a missed or rejected offer early in the scene that set the two realities diverging.
