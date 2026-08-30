@@ -27,6 +27,11 @@ updated: "2026-08-25"
 
 Brown's account of vulnerability as a practice rather than a temperament, built from qualitative research on shame. It is cited here for one specific claim: that courage is built by repetition inside a container safe enough to fail in, and not drawn from a reserve of willpower that some people have more of.
 
+![The same five exposures under two models: a reserve draining down to nothing, and an accumulation building up from it.](/images/two-models-of-courage.svg)
+
+*Under the upper model a class would get harder as it went on.*
+
+
 That maps directly onto what a class is for. An improv exercise is a small, survivable failure repeated until failing stops registering as an emergency, which is the same mechanism Brown describes and a better description of what improv training does than "building confidence" is. Her distinction between guilt and shame does similar work on the note-giving side — a note about a choice is usable, and a note that lands on the person is not.
 
 The caution worth keeping is about register. Brown is writing about disclosure between people who know each other, and improv vulnerability is performed in front of strangers with an existential buffer that ordinary life does not provide. The mechanism transfers; the stakes do not, and pretending otherwise oversells what an exercise can do.
