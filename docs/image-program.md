@@ -366,6 +366,33 @@ decorative shapes.
 
 ---
 
+## Priority order (2026-08-30)
+
+Superseded the previous selection rule, which was "read for a page's own claim
+and draw whichever page yields the best one". That produced good individual
+diagrams in effectively random order, so a page nobody reads could be drawn
+before a page thousands do.
+
+The order is now **descending pageviews from Vercel Web Analytics**, and the
+stopping rule per page changed with it: a page is finished when everything on
+it that benefits from a graphic has one, not when it has its first. Move to the
+next page only then.
+
+Two consequences worth stating, because they cut against the earlier habits:
+
+- **Repeat visits to one page are now normal.** A 3,000-word bridge with four
+  distinct claims should end with four diagrams. Previously one asset per page
+  was treated as done.
+- **Form collision is no longer a veto on its own.** Under random order a
+  collision meant "draw a different page instead". Under traffic order there is
+  no different page to move to — the page in front is the page that matters, so
+  a collision means find another reading of *this* page, and only record a
+  decline when the section genuinely has no visual content.
+
+`npm run diagrams:priority -- <analytics-export>` produces the queue. It joins
+analytics URLs to content files on the final path segment and prints anything
+it could not match, so an unmatched top page is visible rather than skipped.
+
 ## Declined
 
 Pages examined and found to hold nothing a diagram carries better than the prose does.
