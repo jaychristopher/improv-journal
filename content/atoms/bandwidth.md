@@ -34,6 +34,11 @@ How much one performer can process simultaneously. Listening, decoding body lang
 
 The collective processing capacity of the scene, including the audience — who are almost always the bottleneck, since they lack the performers' context, training, and ability to ask clarifying questions. A complex offer (cyborg from the future) consumes more shared bandwidth than a simple one (happy birthday). When shared bandwidth is clogged with exposition or complexity, no capacity remains for the relationship, emotion, or play that makes scenes alive.
 
+![Three capacities with the audience's the shortest, and a guide dropped from its end showing the limit that applies to the whole scene.](/images/who-sets-the-limit.svg)
+
+*The performers' surplus is not spare capacity; there is nothing on the other side of the line to receive it.*
+
+
 Bandwidth is not only cognitive. **Emotional processing** — absorbing your partner's vulnerability, managing your own fear, staying open rather than defensive — draws from the same finite supply. A performer flooded with stage fright has reduced bandwidth before the first line is spoken.
 
 The 56K modem analogy: your partner and your audience are connecting via limited bandwidth. Large files (complex premises, layered irony) choke the connection. Small files (clear emotions, obvious choices) download instantly. The goal is to keep the channel clear enough for connection to flow. (The analogy is imperfect — improv bandwidth is bidirectional and multi-channel, not a single pipe. But the throttling effect is real.)

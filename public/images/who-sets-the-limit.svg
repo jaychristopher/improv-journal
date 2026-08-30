@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHO SETS THE LIMIT</text>
+
+  <text class="dg-note" x="16" y="78">you</text>
+  <line class="dg-muted" x1="170" y1="74" x2="350" y2="74" />
+
+  <text class="dg-note" x="16" y="118">your partner</text>
+  <line class="dg-muted" x1="170" y1="114" x2="350" y2="114" />
+
+  <text class="dg-note" x="16" y="158">the audience</text>
+  <rect class="dg-accent-fill" x="170" y="153" width="90" height="2" />
+
+  <line class="dg-rule" x1="260" y1="64" x2="260" y2="164" />
+  <text class="dg-note-accent" x="170" y="182">the scene has this much</text>
+
+  <text class="dg-note" x="16" y="208">no context, no training, no way to ask</text>
+</svg>
