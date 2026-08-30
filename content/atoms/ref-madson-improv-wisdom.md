@@ -54,6 +54,11 @@ The subtitle invites it. Taken literally, "don't prepare" is bad advice for most
 
 The defensible version is narrower: preparation has a point past which it becomes a way of postponing arrival, and most people are on the wrong side of it far more often than they think. That is a real claim and a much smaller one than the cover makes, and the book is stronger when read as an argument about *over*-preparation rather than against preparing at all.
 
+![A preparation axis with the literal reading covering all of it and the defensible claim covering only the stretch past enough.](/images/two-sizes-of-one-claim.svg)
+
+*The smaller claim is the one that survives, and it is the one the subtitle does not make.*
+
+
 **Context:** Madson's work is the primary bridge text between improv pedagogy and applied life practice. Where Johnstone's *Impro* uses theater to illuminate life implicitly, Madson addresses life directly. Her Stanford context gives the applied-improv claim institutional and academic grounding.
 
 ## Common questions

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO SIZES OF ONE CLAIM</text>
+
+  <text class="dg-note" x="16" y="70">taken literally</text>
+  <line class="dg-muted" x1="150" y1="72" x2="370" y2="72" />
+
+  <text class="dg-note" x="16" y="112">the defensible version</text>
+  <rect class="dg-accent-fill" x="280" y="113" width="90" height="2" />
+
+  <line class="dg-rule" x1="150" y1="146" x2="370" y2="146" />
+  <line class="dg-ink" x1="280" y1="140" x2="280" y2="152" />
+  <text class="dg-note" x="150" y="166">none</text>
+  <text class="dg-note" x="280" y="166" text-anchor="middle">enough</text>
+  <text class="dg-note" x="370" y="166" text-anchor="end">too much</text>
+
+  <text class="dg-note" x="16" y="198">the cover claims the whole axis</text>
+</svg>
