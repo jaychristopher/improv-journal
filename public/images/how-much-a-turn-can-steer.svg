@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">HOW MUCH A TURN CAN STEER</text>
+
+  <text class="dg-note-accent" x="200" y="70">can steer</text>
+  <line class="dg-accent" x1="200" y1="82" x2="360" y2="82" />
+
+  <text class="dg-note" x="60" y="130">cannot steer</text>
+  <line class="dg-muted" x1="60" y1="142" x2="190" y2="142" />
+
+  <line class="dg-rule" x1="60" y1="170" x2="370" y2="170" />
+  <line class="dg-ink" x1="120" y1="164" x2="120" y2="176" />
+  <line class="dg-ink" x1="200" y1="164" x2="200" y2="176" />
+  <line class="dg-ink" x1="300" y1="164" x2="300" y2="176" />
+  <text class="dg-note" x="120" y="192" text-anchor="middle">one word</text>
+  <text class="dg-note" x="200" y="192" text-anchor="middle">two words</text>
+  <text class="dg-note" x="300" y="192" text-anchor="middle">a sentence</text>
+
+  <text class="dg-note" x="16" y="212">the increment is one word</text>
+</svg>

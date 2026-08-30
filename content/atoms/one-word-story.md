@@ -60,4 +60,9 @@ The stories that work are almost always the ones where nobody tried. `obvious-ch
 
 - **One sentence each** instead of one word — easier, and closer to how a `story-spine` round runs.
 - **Two words each.** Sounds trivial and changes the game completely: two words is just enough to steer with, and watching the group start steering is instructive.
+
 - **With a stem.** Begin from "Once upon a time" and see whether the circle finds the shape on its own.
+
+![Turn size along an axis with a steering line that is absent at one word and present from two words on.](/images/how-much-a-turn-can-steer.svg)
+
+*Nothing about the circle changes between the first mark and the second except the size of a turn.*
