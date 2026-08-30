@@ -47,11 +47,6 @@ The spy example: you trip on stage while trying to be cool. Choice A — get up,
 
 That example is about a partner saving your accident. The harder case: being thankful for your *own* errors when no one saves you. You forget a character name. You repeat a pattern you already used. You go blank. The principle still applies — the error is now a constraint, and constraints generate material. But the psychological move is different: it requires self-compassion under performance pressure, not just collaborative generosity.
 
-![Two accidents with what each one asks for: a partner's slip calls for generosity, your own calls for self-compassion.](/images/two-accidents.svg)
-
-*Only the second one has to be done while the thing you are forgiving is still happening.*
-
-
 Some improvisers literally whisper "thank you" under their breath when a surprise happens. This is cognitive reappraisal in action — reframing the event's meaning before the emotional response consolidates. Research shows that reframing threat as challenge measurably improves performance under pressure (Brooks, 2014). The whisper works because it intercepts the brain's default threat-coding and replaces it with gift-coding: instead of "oh no, a disruption" it becomes "thank you for this new information."
 
 ## What it does to a whole ensemble

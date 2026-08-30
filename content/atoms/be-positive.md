@@ -54,10 +54,6 @@ Reluctant acceptance is right precisely where the offer is already big. Acceptin
 
 Full acceptance is the default and the least interesting of the three, which is why it is the right starting point. It is also the one to return to whenever a scene has become confusing: receive the thing plainly, extend it plainly, and let the amplitude come back once everybody knows where they are.
 
-![Two scales crossed: the small offer wants the large response and the large offer wants the restrained one, so the right amplitude runs opposite to the offer.](/images/amplitude-runs-opposite.svg)
-
-*Full acceptance sits in the middle of both scales, which is why it is the one to come back to.*
-
 ## Accepting an offer that is weak
 
 The hard case is not the offer you dislike. It is the offer that arrives vague, mumbled, or apparently pointless, and the two instincts it produces are both forms of rejection.

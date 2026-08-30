@@ -88,10 +88,6 @@ Not "did I react to that", which everybody answers yes to. Ask instead: **would 
 
 If the same next line would have worked before your partner spoke, you were not changed by it. You absorbed the offer, acknowledged it, and continued from where you already were — which is the polite improv described above, and it passes every other principle on this site while producing nothing.
 
-![Two versions of the same moment, one containing the offer and one without it; if the next line is identical in both, the offer changed nothing.](/images/the-counterfactual-test.svg)
-
-*Which is why it has to be run afterwards — a performer watching for the answer live is already managing.*
-
 ### It is the same question three pages ask
 
 Worth saying plainly rather than presenting it as a discovery. [Active listening](/practice/techniques/active-listening) uses it from outside, as the tell that somebody genuinely received: a response that would still have worked after almost anything was not built from what was actually said. [Commitment](/practice/techniques/commitment) uses it to separate commitment from stubbornness — if your partner changed something significant and your next move would not change, you are attached to a plan rather than to the scene.
