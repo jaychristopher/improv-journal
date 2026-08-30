@@ -90,6 +90,11 @@ A silence is not awkward because it is empty. It is awkward because both people 
 
 Improvisers spend a lot of time in silence on stage and it does not read as awkward to an audience, because the performers are visibly still engaged. That is the entire difference. A silence with attention in it looks like thought. A silence with self-monitoring in it looks like panic, and self-monitoring is legible from across a room — the eye contact breaks, the posture changes, someone reaches for their phone.
 
+![Two silences with the same duration, one showing three signs of held attention and one showing three signs of self-monitoring.](/images/what-a-silence-shows.svg)
+
+*The tells are the difference, and they are all visible from the other side of a table.*
+
+
 So the move is not to fill it faster. It is to stay in it without leaving.
 
 The usual instinct is to reach for something clever, on the theory that the pause needs filling well rather than not needing filling. [How to be witty](/how-to-be-witty) is worth reading against that instinct, because the quick response turns out to come from attention rather than from having material ready — which means the reaching is the thing preventing it.

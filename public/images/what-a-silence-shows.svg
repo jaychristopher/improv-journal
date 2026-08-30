@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 232" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT A SILENCE SHOWS</text>
+
+  <text class="dg-note" x="16" y="92">attention in it</text>
+  <line class="dg-ink" x1="180" y1="62" x2="180" y2="120" />
+  <text class="dg-note" x="194" y="70">eye contact holds</text>
+  <text class="dg-note" x="194" y="92">posture holds</text>
+  <text class="dg-note" x="194" y="114">no phone</text>
+
+  <text class="dg-note" x="16" y="180">self-monitoring in it</text>
+  <rect class="dg-accent-fill" x="179" y="150" width="2" height="58" />
+  <text class="dg-note-accent" x="194" y="158">eye contact breaks</text>
+  <text class="dg-note-accent" x="194" y="180">posture changes</text>
+  <text class="dg-note-accent" x="194" y="202">reaching for a phone</text>
+
+  <text class="dg-note" x="16" y="228">the pause is the same length in both</text>
+</svg>
