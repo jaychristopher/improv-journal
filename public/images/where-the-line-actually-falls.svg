@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 234" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE LINE ACTUALLY FALLS</text>
+
+  <text class="dg-note" x="16" y="58">as usually split</text>
+  <line class="dg-rule" x1="16" y1="76" x2="376" y2="76" />
+  <line class="dg-ink" x1="136" y1="66" x2="136" y2="86" />
+  <line class="dg-ink" x1="256" y1="66" x2="256" y2="86" />
+  <text class="dg-note" x="76" y="104" text-anchor="middle">agreeing</text>
+  <text class="dg-note" x="196" y="104" text-anchor="middle">disagreeing</text>
+  <text class="dg-note" x="316" y="104" text-anchor="middle">being with</text>
+
+  <line class="dg-rule" x1="136" y1="114" x2="136" y2="136" />
+
+  <text class="dg-note" x="16" y="152">what the attention is doing</text>
+  <line class="dg-rule" x1="16" y1="172" x2="376" y2="172" />
+  <rect class="dg-accent-fill" x="255" y="162" width="2" height="20" />
+  <text class="dg-note" x="136" y="200" text-anchor="middle">evaluative</text>
+  <text class="dg-note" x="316" y="200" text-anchor="middle">receptive</text>
+
+  <text class="dg-note" x="16" y="228">one divider survives; the other was never there</text>
+</svg>

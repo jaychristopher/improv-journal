@@ -39,7 +39,9 @@ function readRankings(source) {
     const rows = Array.isArray(parsed) ? parsed : (parsed.data ?? parsed.rows ?? []);
     return rows.map((row) => ({
       path: row.path ?? row.page ?? row.url ?? row.key,
-      views: Number(row.views ?? row.pageviews ?? row.count ?? row.total ?? row.visitors ?? 0),
+      views: Number(
+        row.views ?? row.pageviews ?? row.count ?? row.total ?? row.visitors ?? row.impressions ?? row.clicks ?? 0,
+      ),
     }));
   }
 
@@ -48,7 +50,9 @@ function readRankings(source) {
   const cells = (line) => line.split(delimiter).map((cell) => cell.trim().replace(/^"|"$/g, ""));
   const header = cells(lines[0]).map((cell) => cell.toLowerCase());
   const pathCol = header.findIndex((cell) => /path|page|url|route/.test(cell));
-  const viewCol = header.findIndex((cell) => /view|visit|count|total|hits/.test(cell));
+  const viewCol = header.findIndex((cell) =>
+    /view|visit|count|total|hits|impression|click|session/.test(cell),
+  );
   if (pathCol === -1 || viewCol === -1) {
     console.error(`could not find a path column and a count column in: ${header.join(", ")}`);
     process.exit(1);

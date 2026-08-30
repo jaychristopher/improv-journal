@@ -105,6 +105,11 @@ Being with is receptive listening under another name. Attention on the person ra
 
 So the trio is really a binary with the evaluative half split by outcome, and noticing that is the useful part. It explains the experience most people have had of being agreed with and still not feeling met, which the three-part version cannot account for and the mode account can.
 
+![The three-way split drawn above a two-way one: agreeing and disagreeing merge into a single evaluative region, and only the boundary before being with survives.](/images/where-the-line-actually-falls.svg)
+
+*The distance between the first two boxes is entirely on the listener's side; from the speaker's chair there is no line there at all.*
+
+
 The framing has no single identifiable origin — it turns up in coaching, facilitation and therapeutic writing as common knowledge, in the way improv's own [base reality](/practice/vocabulary/base-reality) checklist did before anybody wrote it down. Treat it as a useful piece of folk taxonomy rather than as a sourced model, and take the underlying distinction, which is real.
 
 ## Listening Styles Are a Third Thing Again
