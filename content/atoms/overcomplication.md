@@ -56,6 +56,10 @@ The two are frequently inversely related. The scenes that let a Harold hold thre
 
 So the failure is not complexity but **premature** complexity — an offer flooding the channel before anything has been established for it to build on. Sophistication is earned by a foundation that is boring on purpose.
 
+![Two runs of the same piece: an elaborate early offer spikes and everything after it stays flat, while a plain start lets each later offer carry more than the last.](/images/premature-complexity.svg)
+
+*The tallest block in each row is the same height; only one of them had anything underneath it.*
+
 ## Specific sources
 
 Truth in Comedy, Ch. 6 ("Moment to Moment to Moment"): "Keep it simple — less is more." "Avoid exposition." "Start scenes in the middle." Johnstone, *Impro*, Ch. 3 ("Spontaneity"): encouraging improvisers "to strive to be more obvious rather than more clever" — "what is deeply obvious to oneself can be highly original to others." **Counter-position:** Advanced longform IS genuinely complex. The Harold's multi-threaded structure, narrative longform's multiple timelines, and third-beat convergences all require tracking complexity. The issue is not complexity per se but *premature* complexity — flooding a scene before the foundation is set. Simplicity at the scene level enables complexity at the structural level.

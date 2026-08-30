@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 268" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="34">ELABORATE EARLY</text>
+  <line class="dg-rule" x1="16" y1="92" x2="376" y2="92" />
+  <rect class="dg-accent-fill" x="24" y="52" width="20" height="40" />
+  <rect class="dg-accent-fill" x="68" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="112" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="156" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="200" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="244" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="288" y="86" width="20" height="6" />
+  <rect class="dg-accent-fill" x="332" y="86" width="20" height="6" />
+  <text class="dg-note" x="16" y="112">the channel floods, and nothing accumulates</text>
+
+  <text class="dg-eyebrow" x="16" y="150">BORING ON PURPOSE</text>
+  <line class="dg-rule" x1="16" y1="208" x2="376" y2="208" />
+  <rect class="dg-accent-fill" x="24" y="203" width="20" height="5" />
+  <rect class="dg-accent-fill" x="68" y="201" width="20" height="7" />
+  <rect class="dg-accent-fill" x="112" y="199" width="20" height="9" />
+  <rect class="dg-accent-fill" x="156" y="196" width="20" height="12" />
+  <rect class="dg-accent-fill" x="200" y="192" width="20" height="16" />
+  <rect class="dg-accent-fill" x="244" y="187" width="20" height="21" />
+  <rect class="dg-accent-fill" x="288" y="179" width="20" height="29" />
+  <rect class="dg-accent-fill" x="332" y="168" width="20" height="40" />
+  <text class="dg-note" x="16" y="228">sophistication arrives later, and it is earned</text>
+
+  <text class="dg-note" x="16" y="256">the failure is not complexity but where it sits</text>
+</svg>
