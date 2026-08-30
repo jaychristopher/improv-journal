@@ -34,7 +34,11 @@ The UCB principle that character emerges from the game pattern, not from biograp
 
 In most acting traditions, character is built first: you determine who the person is (their history, their desires, their psychology), and then their behavior flows from that identity. Meisner builds character from truthful response. Johnstone builds character from status and mask work. Stanislavski builds character from given circumstances and emotional memory. In all three, the character is a precondition of the behavior.
 
-UCB reverses this. The behavior comes first. Something unusual happens in the scene — a character apologizes when they shouldn't, or remains weirdly calm during a crisis, or turns everything into a competition. That behavioral anomaly IS the character. The improviser's job is not to explain why the character does this (that's biography, which is dead weight in improv) but to heighten it — do it again, in a new context, escalated. The pattern of behavior, explored and heightened, produces a character more specific and more playable than any pre-planned biography could.
+UCB reverses this. The behavior comes first. Something unusual happens in the scene — a character apologizes when they shouldn't, or remains weirdly calm during a crisis, or turns everything into a competition. That behavioral anomaly IS the character.
+
+![Two accounts of where a character comes from: one has it preceding the behaviour, and the other has it being the behaviour, with nothing in between.](/images/two-nodes-or-one.svg)
+
+*Which is why "who am I?" is the wrong question in the second account — there is no separate thing to answer it with.* The improviser's job is not to explain why the character does this (that's biography, which is dead weight in improv) but to heighten it — do it again, in a new context, escalated. The pattern of behavior, explored and heightened, produces a character more specific and more playable than any pre-planned biography could.
 
 ## How it works in practice
 

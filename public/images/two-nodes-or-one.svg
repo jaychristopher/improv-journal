@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="68">MOST TRADITIONS</text>
+  <text class="dg-secondary" x="180" y="68">character</text>
+  <line class="dg-ink" x1="240" y1="64" x2="292" y2="64" />
+  <path class="dg-ink" d="M286 59 L292 64 L286 69" />
+  <text class="dg-secondary" x="300" y="68">behaviour</text>
+
+  <text class="dg-eyebrow" x="16" y="144">UCB</text>
+  <text class="dg-secondary" x="240" y="126" text-anchor="middle">behaviour</text>
+  <rect class="dg-accent-fill" x="239" y="136" width="2" height="16" />
+  <text class="dg-secondary" x="240" y="168" text-anchor="middle">character</text>
+
+  <text class="dg-note" x="16" y="192">not a sequence but an identity</text>
+</svg>
