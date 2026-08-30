@@ -36,6 +36,11 @@ Not a course, and worth knowing that before you open it. *Improv Nonsense* began
 
 That format is both the appeal and the difficulty. There is no route through it, the posts assume you already speak UCB, and a decade of thinking means it disagrees with itself in places. Those disagreements are frequently the most interesting thing on the page.
 
+![Posts across the run of the newsletter as evenly spaced marks, with two accent staples linking pairs that argue against each other.](/images/where-it-argues-with-itself.svg)
+
+*Nothing marks which end of a link is his current view, and the page is more useful for that.*
+
+
 ## Who is writing it
 
 Hines has taught at the Upright Citizens Brigade since February 2005 and performed there throughout, which makes him a practitioner rather than a theorist and an unusually good observer of what actually happens to students. He is also, informally, the UCB community's historian — a fair amount of the Substack is the only written record of how that institution taught, changed its mind, and came apart.
