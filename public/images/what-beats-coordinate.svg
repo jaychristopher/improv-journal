@@ -1,0 +1,31 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">WHAT BEATS COORDINATE</text>
+
+  <text class="dg-note" x="16" y="80">one world</text>
+  <line class="dg-ink" x1="150" y1="76" x2="372" y2="76" />
+  <text class="dg-note" x="150" y="100">nothing has to come back</text>
+
+  <text class="dg-note" x="150" y="142">first</text>
+  <text class="dg-note" x="225" y="142">second</text>
+  <text class="dg-note" x="300" y="142">third</text>
+
+  <text class="dg-note" x="16" y="168">three worlds</text>
+  <line class="dg-rule" x1="222" y1="154" x2="222" y2="174" />
+  <line class="dg-rule" x1="297" y1="154" x2="297" y2="174" />
+
+  <line class="dg-ink" x1="150" y1="164" x2="172" y2="164" />
+  <line class="dg-muted" x1="175" y1="164" x2="197" y2="164" />
+  <rect class="dg-accent-fill" x="200" y="163" width="22" height="2" />
+
+  <line class="dg-ink" x1="225" y1="164" x2="247" y2="164" />
+  <line class="dg-muted" x1="250" y1="164" x2="272" y2="164" />
+  <rect class="dg-accent-fill" x="275" y="163" width="22" height="2" />
+
+  <line class="dg-ink" x1="300" y1="164" x2="322" y2="164" />
+  <line class="dg-muted" x1="325" y1="164" x2="347" y2="164" />
+  <rect class="dg-accent-fill" x="350" y="163" width="22" height="2" />
+
+  <text class="dg-note" x="150" y="192">each must come back, on a shared schedule</text>
+
+  <text class="dg-note" x="16" y="224">a duo has one world, so there is nothing to coordinate</text>
+</svg>

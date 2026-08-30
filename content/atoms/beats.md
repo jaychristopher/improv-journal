@@ -62,6 +62,11 @@ Beats answer a coordination problem rather than an artistic one. A cast of eight
 
 First, second and third supply exactly that: a common assumption about recurrence, agreed in advance so it does not have to be negotiated live. Which is why a duo needs none of it, and why forms with a single continuous through-line need none of it either.
 
+![Two tracks of the same length: one continuous world needs no schedule, while three interleaved worlds recur in a fixed order across first, second and third beats.](/images/what-beats-coordinate.svg)
+
+*The top row does not have one beat; it has none, which is a different thing from a short Harold.*
+
+
 ### The cost of taking it as universal
 
 Held as a description of how improv works, the structure produces the most recognisable failure in student Harolds — a second beat that happens because it is time for a second beat rather than because the world had anything left. The scene is dutiful, everybody knows it, and nobody can object without appearing to have missed the form.
