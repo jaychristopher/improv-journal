@@ -23,6 +23,11 @@ Improv is not, at its core, about comedy. Comedy is a byproduct — what happens
 
 Here's why this matters beyond the stage: you already do this. Every day. Every conversation is an improv scene. There's no script for a first date, a job interview, a fight with your best friend, a bedtime conversation with your kid. You're building shared reality in real time, under the same constraints — irreversible time, limited attention, fragile shared state, continuous signaling. The physics are identical. The stakes are just different.
 
+![The same four constraints in both rows with the stakes bar short on stage and long everyday.](/images/same-constraints-different-stakes.svg)
+
+*The four marks are at identical positions, which is the whole of the transfer claim.*
+
+
 Now that you have the vocabulary, you can diagnose what's happening when connection works — and when it fails.
 
 ## How to tell it is working

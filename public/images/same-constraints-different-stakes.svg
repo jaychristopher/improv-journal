@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">SAME CONSTRAINTS, DIFFERENT STAKES</text>
+
+  <text class="dg-note" x="16" y="80">on stage</text>
+  <line class="dg-ink" x1="150" y1="70" x2="150" y2="82" />
+  <line class="dg-ink" x1="182" y1="70" x2="182" y2="82" />
+  <line class="dg-ink" x1="214" y1="70" x2="214" y2="82" />
+  <line class="dg-ink" x1="246" y1="70" x2="246" y2="82" />
+  <rect class="dg-accent-fill" x="290" y="75" width="26" height="2" />
+
+  <text class="dg-note" x="16" y="140">everyday</text>
+  <line class="dg-ink" x1="150" y1="130" x2="150" y2="142" />
+  <line class="dg-ink" x1="182" y1="130" x2="182" y2="142" />
+  <line class="dg-ink" x1="214" y1="130" x2="214" y2="142" />
+  <line class="dg-ink" x1="246" y1="130" x2="246" y2="142" />
+  <rect class="dg-accent-fill" x="290" y="135" width="84" height="2" />
+  <text class="dg-note-accent" x="290" y="162">stakes</text>
+
+  <text class="dg-note" x="16" y="200">irreversible time, attention, fragile state, signal</text>
+</svg>
