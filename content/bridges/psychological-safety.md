@@ -144,6 +144,11 @@ The close second is soliciting input and then doing nothing with it, repeatedly.
 
 The improv-to-workplace transfer is **theoretically compelling but empirically undersupported.** A literature review by Huffaker & West found "only limited empirical research on the workplace application of improvisation training." Google's Project Aristotle validated the *concept* of psychological safety; it did not validate improv as the *method* for building it.
 
+![A two-link chain: improv training to psychological safety, marked as having limited empirical support, then psychological safety to team performance, supported by Edmondson and Project Aristotle.](/images/what-the-evidence-covers.svg)
+
+*A chain does not average; the second link's evidence cannot stand in for the first's.*
+
+
 What improv provides is not a proven intervention. It provides a **structural framework** — a set of principles about signal quality, offer acceptance, and shared reality maintenance — discovered under the most demanding conditions (real-time creation in front of an audience) and applicable wherever humans build shared understanding in real time.
 
 The physics are the same. The stage just makes them visible.

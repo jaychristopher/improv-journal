@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 254" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">WHAT THE EVIDENCE COVERS</text>
+
+  <text class="dg-label" x="40" y="72">improv training</text>
+  <line class="dg-accent" x1="24" y1="84" x2="24" y2="116" />
+  <text class="dg-note-accent" x="40" y="104">limited empirical research</text>
+
+  <text class="dg-label" x="40" y="140">psychological safety</text>
+  <line class="dg-ink" x1="24" y1="152" x2="24" y2="184" />
+  <text class="dg-note" x="40" y="172">Edmondson; Project Aristotle</text>
+
+  <text class="dg-label" x="40" y="208">team performance</text>
+
+  <text class="dg-note" x="16" y="240">the concept is evidenced; the method is not</text>
+</svg>
