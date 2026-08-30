@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 208" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT WAS LEFT IN IT</text>
+
+  <text class="dg-note-accent" x="232" y="80">another twenty minutes</text>
+  <text class="dg-secondary" x="16" y="100">the subject</text>
+  <line class="dg-ink" x1="150" y1="96" x2="224" y2="96" />
+  <line class="dg-ink" x1="224" y1="86" x2="224" y2="106" />
+  <line class="dg-accent" x1="224" y1="96" x2="376" y2="96" />
+
+  <text class="dg-note" x="150" y="140">solved it · sympathised · summed it up</text>
+  <text class="dg-note" x="150" y="162">all three land in the same place</text>
+
+  <text class="dg-note" x="16" y="196">none of them is a refusal, and all of them end it</text>
+</svg>

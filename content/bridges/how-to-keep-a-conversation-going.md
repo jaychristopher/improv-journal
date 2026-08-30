@@ -82,6 +82,11 @@ Conversations rarely die from a shortage of subjects. They die because each turn
 
 **Premature resolution.** Someone raises something with substance in it and the other person solves it, sympathises, or sums it up. All three end it. "That sounds hard, you should talk to your manager" closes a subject that had another twenty minutes in it.
 
+![The subject is cut off by a cap, with the rest of it drawn as a dashed line running on past the point where the conversation stopped.](/images/what-was-left-in-it.svg)
+
+*Solving it, sympathising and summing it up look like three different replies and land in the same place.*
+
+
 Notice that none of these are failures of interest. You can be genuinely interested and do all three, which is why people who like each other still have conversations that die.
 
 ## When You Are Doing All the Work
