@@ -43,6 +43,11 @@ Not every form treats it as thin. Short-form games announce a premise and make t
 
 The distinction is whether the audience has been told the premise. When they have, it is a frame and it should be strong. When they have not, it is scaffolding and it should be light enough to forget.
 
+![The same premise drawn twice around the same scene: a strong frame when the audience has been told it, and a faint outline when they have not.](/images/frame-or-scaffolding.svg)
+
+*The scene inside is identical in both; the choice is about the audience, not about the material.*
+
+
 ## The counter-position
 
 Sketch comedy is premise-driven, and writers moving into improv tend to over-value it for that reason — a sketch has to arrive already knowing what it is about, because there is no time to discover anything. Napier's warning about searching for the game applies here in reverse: a performer who has learned that premises are unimportant can end up refusing to establish anything at all, which produces scenes so unspecified that no game can form in them either.

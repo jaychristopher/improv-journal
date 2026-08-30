@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="32">HOW HEAVY THE PREMISE SHOULD BE</text>
+
+  <text class="dg-note" x="16" y="87">told</text>
+  <line class="dg-ink" x1="150" y1="60" x2="372" y2="60" />
+  <line class="dg-ink" x1="150" y1="106" x2="372" y2="106" />
+  <line class="dg-ink" x1="150" y1="60" x2="150" y2="106" />
+  <line class="dg-ink" x1="372" y1="60" x2="372" y2="106" />
+  <rect class="dg-accent-fill" x="189" y="77" width="2" height="12" />
+  <rect class="dg-accent-fill" x="249" y="77" width="2" height="12" />
+  <rect class="dg-accent-fill" x="309" y="77" width="2" height="12" />
+  <text class="dg-note" x="150" y="128">a frame, and it should be strong</text>
+
+  <text class="dg-note" x="16" y="179">not told</text>
+  <line class="dg-rule" x1="150" y1="152" x2="372" y2="152" />
+  <line class="dg-rule" x1="150" y1="198" x2="372" y2="198" />
+  <line class="dg-rule" x1="150" y1="152" x2="150" y2="198" />
+  <line class="dg-rule" x1="372" y1="152" x2="372" y2="198" />
+  <rect class="dg-accent-fill" x="189" y="169" width="2" height="12" />
+  <rect class="dg-accent-fill" x="249" y="169" width="2" height="12" />
+  <rect class="dg-accent-fill" x="309" y="169" width="2" height="12" />
+  <text class="dg-note" x="150" y="220">scaffolding, light enough to forget</text>
+
+  <text class="dg-note" x="16" y="244">the premise does not change; how much of it shows does</text>
+</svg>
