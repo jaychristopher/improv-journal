@@ -45,6 +45,11 @@ The break has to arrive after the audience is ahead of you, and there is a speci
 
 Break before it and nothing has been subverted, because nothing was yet expected. Break long after it and the pattern has stopped being a prediction and become the scene — at which point the audience is not braced any more, they are waiting, and a break reads as the performers running out of material rather than as a payoff.
 
+![Six occurrences on a line: an anticipatory laugh at the second cues a window over the third and fourth, with nothing expected before it and the pattern become the scene after.](/images/when-the-break-lands.svg)
+
+*The signal is in the room rather than in the performer, which is why it can only be waited for and not decided.*
+
+
 ## When pattern break SERVES the scene
 
 - When the audience's expectation is so strong that fulfilling it would be boring
