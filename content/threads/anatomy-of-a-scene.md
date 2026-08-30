@@ -14,6 +14,11 @@ A scene starts with **initiation** — someone steps out and makes the first off
 
 From initiation, three elements need to emerge: **[relationship](/practice/vocabulary/relationship)** (who are we to each other?), **[want](/practice/vocabulary/want)** (what does each person need from the other?), and **base reality** (where are we, what's normal here?). These aren't checkboxes to fill — they emerge through behavior. The teacher established through correction. The marriage established through the weight of a silence.
 
+![The same three elements reached two ways: declared as a list, or arriving out of behaviour that converges on them.](/images/two-routes-to-the-same-three.svg)
+
+*An audience cannot tell which route was taken from the list; it can tell instantly from the scene.*
+
+
 The **[environment](/practice/vocabulary/environment)** matters more than beginners think. A breakup in a kitchen plays differently than a breakup in a car. **Space work** — the physical interaction with invisible objects and spaces — makes the world real. **Endowment** gives your partner gifts they didn't ask for: "You look exhausted" tells them something about their character without them having to decide it.
 
 The **two-person scene** is the fundamental unit. Master it and everything else is variation. **Group scenes** are a different animal — pattern, energy, and ensemble agreement replace the intimacy of a duo. Both require **scene structure**: not a formula, but the felt sense of a scene that's building toward something rather than wandering.

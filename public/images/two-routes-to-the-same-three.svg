@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO ROUTES TO THE SAME THREE</text>
+
+  <text class="dg-note" x="16" y="76">declared</text>
+  <line class="dg-muted" x1="150" y1="72" x2="200" y2="72" />
+  <text class="dg-note" x="210" y="62">relationship</text>
+  <text class="dg-note" x="210" y="80">want</text>
+  <text class="dg-note" x="210" y="98">base reality</text>
+
+  <text class="dg-note" x="16" y="156">emerged</text>
+  <line class="dg-ink" x1="150" y1="140" x2="200" y2="152" />
+  <line class="dg-ink" x1="150" y1="152" x2="200" y2="152" />
+  <line class="dg-ink" x1="150" y1="164" x2="200" y2="152" />
+  <rect class="dg-accent-fill" x="200" y="151" width="2" height="2" />
+  <text class="dg-note" x="210" y="142">relationship</text>
+  <text class="dg-note" x="210" y="160">want</text>
+  <text class="dg-note" x="210" y="178">base reality</text>
+
+  <text class="dg-note" x="16" y="208">the elements are identical</text>
+</svg>
