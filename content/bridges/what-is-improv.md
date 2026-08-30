@@ -124,6 +124,11 @@ The mechanics underneath are the same. Both build a shared reality out of offers
 
 This matters when choosing where to train, because the two are frequently advertised in the same words. A syllabus organised around game, premise and the second beat is teaching comedy. One organised around attention, impulse and being changed by your partner is teaching acting. Neither is more serious than the other — they are answering different questions, and the mismatch only becomes obvious once you are in the room.
 
+![Two different vocabularies bracketed separately, sitting on one wider span of shared mechanics.](/images/which-one-is-being-taught.svg)
+
+*The two traditions do not disagree about the mechanics. They disagree about what to correct.*
+
+
 ## What Is Improv For?
 
 Three different answers, and most arguments about improv are really disagreements about which one is meant.

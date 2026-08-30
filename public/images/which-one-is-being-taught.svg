@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH ONE IS BEING TAUGHT</text>
+
+  <text class="dg-secondary" x="16" y="88">comedy</text>
+  <text class="dg-note" x="128" y="76">game · premise · second beat</text>
+  <line class="dg-muted" x1="124" y1="84" x2="316" y2="84" />
+  <line class="dg-muted" x1="124" y1="80" x2="124" y2="88" />
+  <line class="dg-muted" x1="316" y1="80" x2="316" y2="88" />
+
+  <text class="dg-secondary" x="16" y="128">acting</text>
+  <text class="dg-note" x="128" y="116">attention · impulse · being changed</text>
+  <line class="dg-muted" x1="124" y1="124" x2="334" y2="124" />
+  <line class="dg-muted" x1="124" y1="120" x2="124" y2="128" />
+  <line class="dg-muted" x1="334" y1="120" x2="334" y2="128" />
+
+  <text class="dg-note-accent" x="104" y="162">offers · listening · shared reality</text>
+  <rect class="dg-accent-fill" x="100" y="171" width="276" height="2" />
+  <rect class="dg-accent-fill" x="100" y="166" width="2" height="12" />
+  <rect class="dg-accent-fill" x="374" y="166" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="206">the syllabus words are the only reliable tell</text>
+</svg>
