@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE PAUSE COMES FROM</text>
+
+  <text class="dg-note" x="16" y="86">wait for the whole answer</text>
+  <rect class="dg-accent-fill" x="180" y="79" width="90" height="2" />
+  <text class="dg-note-accent" x="180" y="72">silence</text>
+  <line class="dg-ink" x1="272" y1="80" x2="370" y2="80" />
+  <text class="dg-note" x="272" y="100">speaking</text>
+
+  <text class="dg-note" x="16" y="156">start on a partial one</text>
+  <line class="dg-ink" x1="180" y1="150" x2="370" y2="150" />
+  <text class="dg-note" x="180" y="142">speaking</text>
+  <line class="dg-muted" x1="180" y1="166" x2="270" y2="166" />
+  <text class="dg-note" x="180" y="184">answer still forming</text>
+
+  <text class="dg-note" x="16" y="210">the answer finishes at the same moment in both</text>
+</svg>

@@ -29,6 +29,11 @@ Nobody who appears quick is running a faster search and arriving at a better ans
 
 That is why the advice to think before you speak, which is good advice in most of life, is precisely wrong here. Waiting until the answer is complete guarantees the pause that everybody is now watching, and the pause is what makes the next sentence harder to start.
 
+![Two ways of answering: one preceded by an accented silence, one that starts speaking immediately with the answer still forming underneath.](/images/where-the-pause-comes-from.svg)
+
+*The silence is not thinking time you saved; it is thinking time everybody watched.*
+
+
 ## Why You Freeze
 
 Two things happen at once and they compound.
