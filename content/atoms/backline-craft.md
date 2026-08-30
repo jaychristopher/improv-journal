@@ -38,6 +38,11 @@ Active watching means tracking specifics — you could name three offers from th
 
 If you don't have a strong reason to enter, don't. A scene with two committed players rarely needs a third. Entrances should add a new dimension — new information, a new relationship, a shift in context — not just another voice. The backline performer who stays out of a scene they could have entered is often making the most generous choice.
 
+![Two entrances counted twice over: both add a person, but only one adds anything to the scene.](/images/what-an-entrance-adds.svg)
+
+*The row that adds nothing still costs a body, which is what makes staying out a contribution rather than an absence.*
+
+
 ## Why it matters for third beats
 
 Harold connections — callbacks, combinations of previously separate threads — are only possible if the ensemble was genuinely watching during first and second beats. The run only works if everyone was tracking the whole show's material.

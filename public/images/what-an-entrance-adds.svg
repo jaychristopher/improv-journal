@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT AN ENTRANCE ADDS</text>
+
+  <text class="dg-note" x="200" y="66" text-anchor="middle">people</text>
+  <text class="dg-note" x="320" y="66" text-anchor="middle">things in the scene</text>
+
+  <text class="dg-note" x="16" y="112">with a reason</text>
+  <line class="dg-ink" x1="186" y1="100" x2="186" y2="112" />
+  <line class="dg-ink" x1="198" y1="100" x2="198" y2="112" />
+  <rect class="dg-accent-fill" x="209" y="100" width="2" height="12" />
+  <line class="dg-ink" x1="290" y1="100" x2="290" y2="112" />
+  <line class="dg-ink" x1="302" y1="100" x2="302" y2="112" />
+  <line class="dg-ink" x1="314" y1="100" x2="314" y2="112" />
+  <rect class="dg-accent-fill" x="325" y="100" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="164">without one</text>
+  <line class="dg-ink" x1="186" y1="152" x2="186" y2="164" />
+  <line class="dg-ink" x1="198" y1="152" x2="198" y2="164" />
+  <rect class="dg-accent-fill" x="209" y="152" width="2" height="12" />
+  <line class="dg-ink" x1="290" y1="152" x2="290" y2="164" />
+  <line class="dg-ink" x1="302" y1="152" x2="302" y2="164" />
+  <line class="dg-ink" x1="314" y1="152" x2="314" y2="164" />
+
+  <text class="dg-note" x="16" y="204">staying out changes neither</text>
+</svg>
