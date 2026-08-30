@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH ARRIVES FIRST</text>
+
+  <text class="dg-note" x="16" y="80">head-on</text>
+  <line class="dg-rule" x1="150" y1="82" x2="370" y2="82" />
+  <rect class="dg-accent-fill" x="179" y="74" width="2" height="12" />
+  <text class="dg-note-accent" x="150" y="102">the defence</text>
+  <line class="dg-ink" x1="300" y1="76" x2="300" y2="86" />
+  <text class="dg-note" x="300" y="102" text-anchor="middle">the content</text>
+
+  <text class="dg-note" x="16" y="150">framed</text>
+  <line class="dg-rule" x1="150" y1="152" x2="370" y2="152" />
+  <line class="dg-ink" x1="180" y1="146" x2="180" y2="156" />
+  <text class="dg-note" x="150" y="172">the content</text>
+  <rect class="dg-accent-fill" x="299" y="144" width="2" height="12" />
+  <text class="dg-note-accent" x="300" y="172" text-anchor="middle">the defence</text>
+
+  <text class="dg-note" x="16" y="198">the same two events, in the other order</text>
+</svg>

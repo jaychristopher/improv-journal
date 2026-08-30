@@ -64,6 +64,11 @@ Here's why. Beliefs — especially the load-bearing ones tied to identity — ar
 
 You can be entirely right and still get rejected on contact. The audience isn't being stubborn; they're protecting structural integrity.
 
+![The same two events in two orders: the defence firing before the content in a head-on approach, and after it in a framed one.](/images/which-arrives-first.svg)
+
+*Nothing about the argument changes between the rows. Only which of the two got there first.*
+
+
 A reframe doesn't ask the audience to dismantle structure. It supplies a new frame in which the same content is no longer a threat. The conclusion lands by a different route, often through the audience's own reasoning — and that route avoids the defense system entirely.
 
 ## Three Moves Improv Actually Trains
