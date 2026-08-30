@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH COST IS BIGGER</text>
+
+  <text class="dg-note" x="16" y="70">cost of indirection</text>
+  <line class="dg-muted" x1="180" y1="66" x2="240" y2="66" />
+  <text class="dg-note" x="16" y="96">cost of rejection</text>
+  <line class="dg-muted" x1="180" y1="92" x2="330" y2="92" />
+  <text class="dg-note-accent" x="180" y="120">frame it</text>
+
+  <text class="dg-note" x="16" y="166">cost of indirection</text>
+  <line class="dg-muted" x1="180" y1="162" x2="330" y2="162" />
+  <text class="dg-note" x="16" y="192">cost of rejection</text>
+  <line class="dg-muted" x1="180" y1="188" x2="240" y2="188" />
+  <text class="dg-note-accent" x="180" y="212">say it straight</text>
+</svg>

@@ -55,6 +55,11 @@ Improv has multiple names for the same practice. `justification` is after-the-fa
 
 Three cases. *Urgent truth*: when the cost of indirection is greater than the cost of rejection — safety, accountability, time-pressure. *Shared-frame already exists*: if you and the other person are already inside the same frame, framing is overhead and they will read it as evasion. *The frame itself is the issue*: when the disagreement is precisely about which frame is appropriate, working inside one of the frames concedes the argument before it begins. Name it instead.
 
+![The same two costs compared twice, with the recommendation flipping when indirection becomes the larger of them.](/images/which-cost-is-bigger.svg)
+
+*Nothing about the situation decides this except which bar is longer.*
+
+
 ## Why this matters
 
 Most persuasive failure is angle-of-approach failure, not content failure. People know what is true and still cannot get others to hear it because they are arriving from an angle that triggers the defense before the content lands. The skill is small, learnable, and almost invisible when it works — which is why it rarely gets credit and almost never gets named.
