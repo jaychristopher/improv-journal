@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ARRIVES INSTEAD</text>
+
+  <text class="dg-note" x="16" y="72">idle speculation</text>
+  <line class="dg-muted" x1="120" y1="68" x2="230" y2="68" />
+  <text class="dg-note-accent" x="240" y="72">a decision</text>
+
+  <text class="dg-note" x="16" y="106">a question</text>
+  <line class="dg-muted" x1="120" y1="102" x2="230" y2="102" />
+  <text class="dg-note-accent" x="240" y="106">a criticism</text>
+
+  <text class="dg-note" x="16" y="140">silence</text>
+  <line class="dg-muted" x1="120" y1="136" x2="230" y2="136" />
+  <text class="dg-note-accent" x="240" y="140">disapproval</text>
+
+  <text class="dg-note" x="16" y="184">the raised position does the translating</text>
+</svg>

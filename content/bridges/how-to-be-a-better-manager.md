@@ -54,6 +54,11 @@ The transferable version:
 
 Your idle speculation is heard as a decision. Your question is heard as a criticism. Your silence in a meeting is read as disapproval by at least one person in it. None of this is paranoia on their part; it is the structure working normally.
 
+![Three things a manager sends on the left and the heavier thing each becomes on arrival.](/images/what-arrives-instead.svg)
+
+*The right column is not a misunderstanding; it is what the structure delivers when it is working normally.*
+
+
 The practical consequences:
 
 **Speak last on anything you want honest input about.** Once you have stated a view, you are no longer receiving opinions — you are receiving positions relative to yours.
