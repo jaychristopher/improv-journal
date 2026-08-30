@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">AN OFFER THAT RUNS BACKWARDS</text>
+
+  <text class="dg-note-accent" x="40" y="72">always been afraid of heights</text>
+  <rect class="dg-accent-fill" x="40" y="84" width="260" height="2" />
+  <rect class="dg-accent-fill" x="40" y="84" width="2" height="10" />
+
+  <line class="dg-rule" x1="16" y1="120" x2="376" y2="120" />
+  <line class="dg-ink" x1="300" y1="112" x2="300" y2="128" />
+  <text class="dg-note" x="16" y="146">the scene so far</text>
+  <text class="dg-note" x="376" y="146" text-anchor="end">the offer lands here</text>
+
+  <text class="dg-note" x="16" y="188">the past did not change; what it means did</text>
+</svg>

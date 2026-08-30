@@ -41,6 +41,11 @@ After your partner delivers an offer, check: did your body change? Did posture s
 
 When your partner establishes something about you that you didn't plan ("You've always been afraid of heights"), don't fight it. Retroactively adjust: *Yes, I've always been afraid. That's why I never take the window seat.* This is Meisner's "being affected" applied to narrative — the offer rewrites your history because you let it.
 
+![A scene line with the offer landing near its end and an accent span reaching back across everything before it.](/images/an-offer-that-runs-backwards.svg)
+
+*Your partner did not add a fact to the scene; they added one to the part of it nobody watched.*
+
+
 ## The plan-dissolution practice
 
 Enter scenes willing to abandon any idea you brought in. The test: if your partner's first offer takes the scene somewhere completely different, can you follow without resistance? Not just accepting — *wanting* to go there, because their offer is now more interesting than your plan.
