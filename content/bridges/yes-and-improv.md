@@ -59,6 +59,11 @@ Both halves fail quietly, and they are easier to recognise in dialogue than in d
 
 Only the last reply leaves the other person more to work with than they started with, and notice how little it cost: one fact accepted, one fact added.
 
+![Four replies measured against what the other person started with: the block takes material away, two replies return it unchanged, only the last adds to it.](/images/what-they-have-to-work-with.svg)
+
+*The test is not the tone of the reply. It is whether the other person is left with more than they had.*
+
+
 ### The version people find harder
 
 If the principle were about agreement, this would not be a yes-and:
