@@ -135,6 +135,11 @@ Commonly reported, and worth knowing so that the first ten minutes do not put yo
 
 Widely attached to this and **not one of the 36**. The staring step comes from the popular version of the procedure rather than from the numbered list above, and it is worth separating the two, because plenty of people abandon the whole thing at the idea of four minutes of silent eye contact with somebody they have just met.
 
+![The thirty-six questions bounded as a set, with the four minutes of eye contact outside it and joined by a faint line.](/images/not-one-of-the-thirty-six.svg)
+
+*People abandon the whole procedure over a step that was never in it.*
+
+
 What does it do? Sustained mutual gaze is uncomfortable for a reason — in ordinary interaction, eye contact is rationed, and holding it past a couple of seconds is normally reserved for intimacy, confrontation or performance. Four minutes puts two people well outside the ration with no task to hide behind, and the usual reported experience is a first minute of acute self-consciousness followed by it subsiding into something calmer. That arc is most of the effect: you are not learning anything about the other person, you are discovering that being looked at did not turn out to cost anything.
 
 Which is the same mechanism as the questions, in a different medium — exposure that goes unpunished, so the estimate updates. It is optional. Doing it badly, self-consciously, while both of you laugh, works about as well as doing it solemnly.
