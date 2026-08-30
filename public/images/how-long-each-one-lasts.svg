@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">HOW LONG EACH ONE LASTS</text>
+
+  <text class="dg-secondary" x="16" y="80">the event</text>
+  <line class="dg-ink" x1="160" y1="72" x2="160" y2="88" />
+  <text class="dg-note" x="176" y="80">they said no</text>
+
+  <text class="dg-secondary" x="16" y="144">the story</text>
+  <rect class="dg-accent-fill" x="160" y="133" width="2" height="16" />
+  <rect class="dg-accent-fill" x="160" y="140" width="216" height="2" />
+  <text class="dg-note-accent" x="160" y="166">what it says about you</text>
+
+  <text class="dg-note" x="16" y="196">the event is over; the story is the part still running</text>
+</svg>

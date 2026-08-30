@@ -65,6 +65,11 @@ Your boss didn't like the proposal. That's the event. "I'm not valued here" — 
 
 Improv performers practice this separation constantly. "That scene died" is very different from "I'm a bad improviser." They can hold both truths simultaneously: the scene was terrible AND I'm developing as a performer. The failure is real. The identity conclusion is optional.
 
+![The event is a single mark and it is over; the story about what it says about you runs on past the edge of the picture.](/images/how-long-each-one-lasts.svg)
+
+*The failure is real. The identity conclusion is the part you can decline.*
+
+
 ## What a Rejection Actually Tells You
 
 The third practice says to note what the rejection tells you and move. That is the right instruction and it is incomplete, because most people cannot tell the difference between the information and the verdict — and the verdict is what they end up carrying.
