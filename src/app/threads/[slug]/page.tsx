@@ -149,15 +149,14 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
       )}
 
       <header className="mb-8">
-        <span className="text-foreground/40 text-xs tracking-wider uppercase">
-          thread
-          {positionInPath && (
-            <>
-              {" "}
-              &middot; {positionInPath.current} of {positionInPath.total}
-            </>
-          )}
-        </span>
+        {/* Type only. This carried "· 2 of 2" as well, directly beneath a
+            progress bar already reading "Foundations: Your First Steps in Improv
+            · 2 of 2" — the same position twice, a hundred pixels apart, in the
+            first thing on the page. `positionInPath` is only ever set inside
+            `if (parentPath)`, which is also the progress bar's condition, so the
+            eyebrow could never be the sole signal and was duplicating by
+            construction rather than as a fallback. */}
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">thread</span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
         <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
       </header>

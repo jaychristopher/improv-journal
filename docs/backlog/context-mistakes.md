@@ -82,14 +82,38 @@ correctly hidden with `display:none` and so absent from the accessibility tree.
 Neither shipped. Recorded because the register is more useful with the misses in
 it: both were plausible, and both would have added something irrelevant.
 
+**The same position twice in the first thing on the page** — organic search →
+course lesson — *overload*. Landing directly on a lesson, the header showed a
+progress bar reading "Foundations: Your First Steps in Improv · 2 of 2" and,
+immediately beneath it, an eyebrow reading "thread · 2 of 2". Duplication by
+construction rather than a fallback: `positionInPath` is only assigned inside
+`if (parentPath)`, which is the progress bar's own render condition, so the
+eyebrow could never have been the only place it appeared. Fixed — eyebrow is the
+type label now, as it is on concept pages.
+
+**Progress appears after hydration and pushes the page down** — returning reader
+→ homepage — *layout shift*. `ContinueJourney` returns null on the server and
+renders above the symptom picker once localStorage is read, so for a reader with
+saved state everything below moves. Not fixed; logged. The state is genuinely
+client-only, so the fix is reserving the space rather than rendering it earlier.
+
+---
+
+## Entry points examined, no defect found
+
+- **Podcast listener** following a show-note link — lands on the guide the
+  episode was made from (team-building-activities, stage-fright,
+  psychological-safety). The page serves them as-is; nothing assumes they read
+  rather than listened.
+- **Nav duplication** — the second copy is the mobile menu, hidden with
+  `display:none` and so already absent from the accessibility tree.
+
 ---
 
 ## Entry points not yet examined
 
 Recorded so a later pass knows what has and has not been looked at.
 
-- Podcast listener following a show-note link — 62 episodes now link back
 - AI answer engine — currently moot, Cloudflare 403s those crawlers
 - Social / newsletter arrival
 - Mid-course arrival: a thread that is day 4 of a 7-day program, reached directly
-- Returning reader with journey state — `ContinueJourney` renders nothing server-side
