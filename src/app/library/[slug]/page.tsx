@@ -197,10 +197,25 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
         </nav>
       )}
 
+      {/*
+        "Pages that cite it", not "Ideas shaped by this work".
+        
+        The two sections hold disjoint sets and their headings were English
+        synonyms — "X informs Y" and "Y shaped by X" are the same sentence in
+        opposite voice — so on the 19 entries that render both, a reader met two
+        identical-sounding headings over different lists and no way to tell what
+        separated them.
+        
+        What separates them is which side declared the link: the section above is
+        what this entry names in its own frontmatter, this one is every concept
+        that names the entry. That is an authoring detail and no reader can infer
+        it, but "cites" is a relation people already understand, and it is what
+        this list actually is.
+      */}
       {citingAtoms.length > 0 && (
         <nav className="border-foreground/10 mt-12 border-t pt-8">
           <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
-            Ideas shaped by this work
+            Pages that cite it
           </h2>
           {Array.from(byType.entries())
             .sort((a, b) => b[1].length - a[1].length)

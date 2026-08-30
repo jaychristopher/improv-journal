@@ -194,6 +194,25 @@ passing test look like a failure. Recorded so the next attempt does not repeat
 it. Reviewing the staged diff line by line is the cheap substitute, and is what
 would have caught last pass's mistake.
 
+**Two headings that were the same sentence in opposite voice** — organic search
+→ library entry — *overload*. Entries ended with "Concepts this work informs"
+and "Ideas shaped by this work" over disjoint lists. "X informs Y" and "Y shaped
+by X" say the same thing, so on the 19 of 32 entries that render both, a reader
+met two identical-sounding headings and nothing to tell them apart. What
+separates them is which side declared the link — the entry's own frontmatter
+versus every concept naming the entry — which is an authoring detail no reader
+can infer. The second says "Pages that cite it" now, because citation is a
+relation people already have.
+
+**Two assumptions killed on the way** — process note. The measurement that
+started this was "83 of 205 concept pages have no next-step block, including all
+32 library pages". Both halves were misleading: library entries have a
+purpose-built onward affordance instead of the generic one, and it is better
+suited to what they are. That is the third time this loop that "pages missing X"
+turned out to mean "pages that do X differently", after the context banner and
+the cold-arrival line. Worth treating the phrasing itself as a warning sign:
+absence of a component is not absence of the thing it provides.
+
 ---
 
 ## Entry points examined, no defect found
