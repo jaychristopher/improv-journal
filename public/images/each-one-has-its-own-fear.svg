@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">EACH ONE HAS ITS OWN FEAR</text>
+
+  <text class="dg-note" x="16" y="66">blocking</text>
+  <line class="dg-muted" x1="120" y1="62" x2="220" y2="62" />
+  <text class="dg-note" x="230" y="66">losing control</text>
+
+  <text class="dg-note" x="16" y="94">cleverness</text>
+  <line class="dg-muted" x1="120" y1="90" x2="220" y2="90" />
+  <text class="dg-note" x="230" y="94">sincerity</text>
+
+  <text class="dg-note" x="16" y="122">hesitation</text>
+  <line class="dg-muted" x1="120" y1="118" x2="220" y2="118" />
+  <text class="dg-note" x="230" y="122">the unknown</text>
+
+  <text class="dg-note" x="16" y="150">judgment</text>
+  <line class="dg-muted" x1="120" y1="146" x2="220" y2="146" />
+  <text class="dg-note" x="230" y="150">imperfection</text>
+
+  <text class="dg-note" x="16" y="178">overcomplication</text>
+  <line class="dg-muted" x1="120" y1="174" x2="220" y2="174" />
+  <text class="dg-note" x="230" y="178">not being enough</text>
+
+  <text class="dg-note" x="16" y="206">steering</text>
+  <line class="dg-muted" x1="120" y1="202" x2="220" y2="202" />
+  <text class="dg-note" x="230" y="206">the direction</text>
+
+  <text class="dg-note" x="16" y="232">no line crosses another</text>
+</svg>

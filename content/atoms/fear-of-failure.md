@@ -40,6 +40,11 @@ Fear of Failure is the primary obstacle for every improv student — and the roo
 
 Each antipattern in this knowledge graph is a specific fear response: blocking is fear of losing control, performing cleverness is fear of sincerity, hesitation is fear of the unknown, judgment is fear of imperfection, overcomplication is fear that simplicity "isn't enough," steering is fear of the scene's direction.
 
+![Six antipatterns paired one to one with the fear underneath each, drawn as parallel lines that do not cross.](/images/each-one-has-its-own-fear.svg)
+
+*A shared cause would have produced a fan; this is six separate cables running the same way.*
+
+
 ## Brene Brown's vulnerability research applied to performance
 
 "Vulnerability is the birthplace of innovation, creativity and change." There is no creativity without vulnerability — you cannot make bold offers, commit to characters, or be emotionally honest without being exposed. Perfectionism is fear's most insidious disguise: "I am what I accomplish and how well I accomplish it" produces performers who monitor every move instead of playing.
