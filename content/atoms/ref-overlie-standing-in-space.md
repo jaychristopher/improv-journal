@@ -29,6 +29,11 @@ Overlie's own account of the framework she built, published four decades after s
 
 Her six are Space, Shape, Time, Emotion, Movement and Story, and the arrangement is the argument. Overlie's insistence is that the six are materials of equal standing, and that this is a refusal rather than an oversight: conventional theatre subordinates everything to story, and the Six Viewpoints deliberately demote story to one material among six. She came to that from postmodern dance and the Judson Dance Theater rather than from actor training, which is why the framework reads as a way of looking rather than as a set of exercises.
 
+![The same six materials arranged twice: story raised above the other five, then story sitting among them on one line.](/images/where-story-sits.svg)
+
+*The lower arrangement is a decision, not a simplification of the upper one.*
+
+
 Read alongside [The Viewpoints Book](/library/ref-viewpoints-bogart-landau), the two make a genuine disagreement visible. Bogart and Landau expanded the physical elements into nine and organised them for rehearsal; Overlie regarded the expansion as a different project rather than an improvement on hers, and this book is where she says so in her own voice. Anyone using the nine-channel version is using an adaptation, and it is worth knowing what it was adapted from.
 
 ## Who it rewards
