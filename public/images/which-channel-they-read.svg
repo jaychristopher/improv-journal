@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHICH CHANNEL THEY READ</text>
+
+  <text class="dg-secondary" x="16" y="64">the words</text>
+  <text class="dg-note" x="16" y="84">I deserve this raise</text>
+  <line class="dg-muted" x1="180" y1="76" x2="296" y2="104" />
+
+  <text class="dg-secondary" x="16" y="140">the body</text>
+  <text class="dg-note" x="16" y="160">eyes away, weight shifting</text>
+  <line class="dg-ink" x1="180" y1="152" x2="296" y2="116" />
+
+  <line class="dg-ink" x1="300" y1="98" x2="300" y2="122" />
+  <text class="dg-note-accent" x="316" y="114">what lands</text>
+
+  <text class="dg-note-accent" x="16" y="196">they hear: I'm not sure I deserve it</text>
+  <text class="dg-note" x="16" y="218">the words are twenty per cent of the signal</text>
+</svg>

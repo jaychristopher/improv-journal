@@ -41,6 +41,11 @@ Most assertiveness training targets the words: "Use 'I' statements. Don't say so
 
 You can say "I deserve this raise" while breaking eye contact, shifting your weight, and touching your face — and your boss will hear "I'm not sure I deserve this raise." The words don't override the body. The body is the primary channel.
 
+![The words and the body arrive on separate lines at the same point, and what lands carries the body's version rather than the words'.](/images/which-channel-they-read.svg)
+
+*You do not get to choose which channel they read. They read the louder one.*
+
+
 Improv performers learn this immediately because their art form is physical before it's verbal. A character's status is established in the first three seconds — through posture, gaze, and spatial claiming — before any dialogue. The audience reads the body first and the words second. Always.
 
 ## The Three Status Adjustments
