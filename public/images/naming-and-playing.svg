@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">NAMING AND PLAYING</text>
+
+  <text class="dg-note" x="230" y="72" text-anchor="middle">played</text>
+  <text class="dg-note" x="330" y="72" text-anchor="middle">not played</text>
+
+  <text class="dg-note" x="16" y="116">named</text>
+  <rect class="dg-accent-fill" x="229" y="104" width="2" height="14" />
+  <line class="dg-rule" x1="300" y1="117" x2="360" y2="117" />
+
+  <text class="dg-note" x="16" y="164">not named</text>
+  <rect class="dg-accent-fill" x="229" y="152" width="2" height="14" />
+  <line class="dg-rule" x1="300" y1="165" x2="360" y2="165" />
+
+  <line class="dg-rule" x1="200" y1="117" x2="260" y2="117" />
+  <line class="dg-rule" x1="200" y1="165" x2="260" y2="165" />
+
+  <text class="dg-note" x="16" y="204">the column decides, not the row</text>
+</svg>

@@ -54,6 +54,11 @@ The space itself generates the pattern. Example: every room they enter is smalle
 
 Not as a checklist ("I need to play a status game today") but as a diagnostic lens. After a scene: what kind of game was that? Did we play it? Did we heighten within the category or drift? Hines: "Playing game is not the same as naming the game."
 
+![A two-by-two of naming and playing, with both played cells filled and both not-played cells left as empty slots.](/images/naming-and-playing.svg)
+
+*Naming it is neither necessary nor sufficient, which is what makes it a lens rather than a step.*
+
+
 ## Specific sources
 
 UCB Manual, Ch. 2 ("Game") — defines game through examples across these categories. Hines, ["Teaching Game of the Scene"](https://willhines.substack.com/p/teaching-game-of-the-scene). Hines, ["Name the Game: Seven Ways"](https://willhines.substack.com/p/name-the-game-seven-ways) — meta-taxonomy of how to describe games. Hines, ["Relationship vs Game"](https://willhines.substack.com/p/relationship-vs-game) — "you need relationship and you need game." **Counter-position:** Napier (*Improvise*) rejects categorizing games entirely — do something fully, commit, and the pattern reveals itself. Johnstone doesn't use "game" in the UCB sense; his structural engines are narrative and status. TJ & Dave produce what a UCB teacher might call "relationship games" or "status games" but would never name them as such during performance.
