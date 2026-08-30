@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHEN THE MEANING IS FIXED</text>
+
+  <line class="dg-rule" x1="60" y1="96" x2="370" y2="96" />
+  <line class="dg-ink" x1="100" y1="90" x2="100" y2="102" />
+  <line class="dg-ink" x1="160" y1="90" x2="160" y2="102" />
+  <line class="dg-ink" x1="220" y1="90" x2="220" y2="102" />
+  <rect class="dg-accent-fill" x="279" y="90" width="2" height="12" />
+
+  <rect class="dg-accent-fill" x="100" y="119" width="180" height="2" />
+  <text class="dg-note" x="100" y="140">the line is said</text>
+  <text class="dg-note-accent" x="280" y="140" text-anchor="end">its meaning settles</text>
+
+  <text class="dg-note" x="16" y="178">four turns later, and not by the speaker</text>
+</svg>

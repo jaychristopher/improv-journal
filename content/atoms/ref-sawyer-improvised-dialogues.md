@@ -29,6 +29,11 @@ Sawyer recorded improvised performances and analysed the transcripts as conversa
 
 The central finding is that coherent structure appears in dialogue that nobody planned, and that it appears through mechanisms you can point at in a transcript. Meaning is not deposited in a line by the speaker; it is fixed by what the next person does with it, sometimes several turns later. Sawyer's term for the resulting object is the collaboratively emergent — a thing that exists in the interaction and in neither performer's intention, which is a claim improvisers make constantly and rarely support.
 
+![Four turns on a line with an accent span running from the first to the fourth, where the meaning of the first is settled.](/images/when-the-meaning-is-fixed.svg)
+
+*Everything inside the span was said without anybody knowing what the first line had meant.*
+
+
 For this site it is the load-bearing citation under two claims that would otherwise be assertions: that meaning is completed by uptake rather than by intent, and that shared reality is maintained turn by turn rather than established once. Both are ordinary observations on stage. This is where they stop being folklore.
 
 ## Who it rewards
