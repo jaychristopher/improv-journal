@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE NEXT TURN LANDS</text>
+
+  <text class="dg-eyebrow" x="200" y="60" text-anchor="middle">THEIR SUBJECT</text>
+  <text class="dg-eyebrow" x="330" y="60" text-anchor="middle">YOURS</text>
+
+  <line class="dg-ink" x1="200" y1="72" x2="200" y2="180" />
+  <line class="dg-ink" x1="330" y1="72" x2="330" y2="180" />
+
+  <text class="dg-note" x="16" y="96">they say something</text>
+  <line class="dg-ink" x1="192" y1="92" x2="208" y2="92" />
+
+  <text class="dg-note-accent" x="16" y="140">what was the worst part?</text>
+  <rect class="dg-accent-fill" x="192" y="135" width="16" height="2" />
+
+  <text class="dg-note" x="16" y="176">that happened to me too</text>
+  <line class="dg-ink" x1="322" y1="172" x2="338" y2="172" />
+
+  <text class="dg-note" x="16" y="206">one goes further in; the other starts a different one</text>
+</svg>

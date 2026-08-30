@@ -45,6 +45,11 @@ In conversation, this means: when someone tells you about their weekend, respond
 
 The specific technique: after you receive, your first response should go *deeper* into what they said, not sideways into your own experience. "That sounds frustrating — what was the worst part?" builds. "Oh yeah, I had the same thing happen to me" redirects.
 
+![Two vertical tracks, their subject and yours: the deepening question lands further down their track, the redirect lands on yours.](/images/where-the-next-turn-lands.svg)
+
+*Both replies are friendly. Only one of them is still in the same conversation.*
+
+
 **Practice:** For one conversation, make your first three responses all deepening questions about what the other person said. No personal anecdotes, no advice, no pivots to yourself. Just genuine exploration of their experience. Notice how different the conversation feels.
 
 ### 3. Committing: be fully present
