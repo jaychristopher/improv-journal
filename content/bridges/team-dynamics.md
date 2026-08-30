@@ -34,6 +34,11 @@ In improv, status dynamics are trained deliberately. Performers learn to read wh
 
 Think about the last meeting you attended. Who spoke first? Who waited? When someone made a suggestion, did the group evaluate the idea — or evaluate who said it? That's status dynamics operating invisibly. Improv just makes it visible.
 
+![One suggestion measured two ways: a short mark for the idea, a long one for who said it.](/images/what-actually-got-weighed.svg)
+
+*Every group weighs both. The question is only which one is longer.*
+
+
 ## Why Teams Get Stuck
 
 Bruce Tuckman's "forming, storming, norming, performing" model (1965) is the standard framework for how groups develop. It's useful as a map. But it doesn't explain why some groups never get past storming, or why a group that was performing beautifully can collapse overnight when one person leaves.

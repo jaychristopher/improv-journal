@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ACTUALLY GOT WEIGHED</text>
+
+  <text class="dg-note" x="16" y="62">one suggestion, two things the room can weigh</text>
+
+  <text class="dg-secondary" x="16" y="104">the idea</text>
+  <line class="dg-muted" x1="190" y1="100" x2="250" y2="100" />
+
+  <text class="dg-secondary" x="16" y="150">who said it</text>
+  <rect class="dg-accent-fill" x="190" y="145" width="170" height="2" />
+
+  <text class="dg-note" x="16" y="192">nobody in the room chose this, and everybody felt it</text>
+</svg>
