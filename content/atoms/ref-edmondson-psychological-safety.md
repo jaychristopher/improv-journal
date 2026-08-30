@@ -29,6 +29,10 @@ The paper that gave psychological safety both its definition and its measure, an
 
 Edmondson studied 51 work teams in a manufacturing company and defined team psychological safety as a shared belief that the team is safe for interpersonal risk taking. The risk she means is specific and unglamorous: asking the obvious question, admitting the mistake, disagreeing with the senior person. Teams higher in it showed more learning behaviour, and learning behaviour mediated the relationship between safety and team performance.
 
+![Safety leads to learning behaviour and learning behaviour leads to performance; the direct path underneath does not carry the effect on its own.](/images/the-middle-node.svg)
+
+*Which is why "safe teams perform better" is true and useless — it names the two ends and drops the mechanism.*
+
 ## Key contributions to the knowledge graph
 
 - Safety is a property of the group, not of the brave individual inside it — which is why `safety-in-the-room` is built rather than summoned

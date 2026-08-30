@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-secondary" x="100" y="74" text-anchor="middle">safety</text>
+  <line class="dg-ink" x1="121" y1="70" x2="194" y2="70" />
+  <path class="dg-ink" d="M188 65 L194 70 L188 75" />
+  <text class="dg-note-accent" x="220" y="74" text-anchor="middle">learning</text>
+  <line class="dg-ink" x1="246" y1="70" x2="292" y2="70" />
+  <path class="dg-ink" d="M286 65 L292 70 L286 75" />
+  <text class="dg-secondary" x="330" y="74" text-anchor="middle">performance</text>
+
+  <path class="dg-muted" d="M100 84 Q215 140 330 84" />
+  <text class="dg-note" x="215" y="160" text-anchor="middle">not on its own</text>
+
+  <text class="dg-note" x="16" y="192">the middle node is the finding, not a detail</text>
+</svg>
