@@ -50,6 +50,10 @@ Del Close: "The pause is the most powerful tool in the improviser's toolkit." Si
 
 A show where every scene is the same length becomes monotonous regardless of content. Vary deliberately: long scenes (5-8 min) for deep relationship work, medium (2-4 min) for game heightening, short (30 sec - 1 min) for callbacks and punctuation.
 
+![Three scene lengths drawn to scale against what each is for: long for relationship work, medium for heightening, and short for callbacks.](/images/length-is-a-choice.svg)
+
+*Which makes the running order a design problem rather than a matter of what happens next.*
+
 ## Alternating energy levels
 
 The "peaks and valleys" principle. The ensemble senses: "We've been high-energy for three scenes — time for something grounded." This is often the editor's job, but in self-edited forms the whole ensemble shares it.
