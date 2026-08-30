@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 270" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="34">WHAT IS VISIBLE</text>
+  <line class="dg-rule" x1="16" y1="62" x2="376" y2="62" />
+  <line class="dg-ink" x1="150" y1="56" x2="150" y2="68" />
+  <line class="dg-ink" x1="250" y1="56" x2="250" y2="68" />
+  <text class="dg-note" x="16" y="84">identical for two or three seconds</text>
+
+  <text class="dg-eyebrow" x="16" y="118">INSIDE HESITATION</text>
+  <line class="dg-rule" x1="16" y1="146" x2="376" y2="146" />
+  <line class="dg-ink" x1="150" y1="140" x2="150" y2="152" />
+  <line class="dg-ink" x1="166" y1="140" x2="166" y2="152" />
+  <line class="dg-ink" x1="182" y1="140" x2="182" y2="152" />
+  <line class="dg-ink" x1="198" y1="140" x2="198" y2="152" />
+  <line class="dg-ink" x1="214" y1="140" x2="214" y2="152" />
+  <text class="dg-note" x="16" y="170">candidates, generated and discarded</text>
+
+  <text class="dg-eyebrow" x="16" y="204">INSIDE PATIENCE</text>
+  <line class="dg-rule" x1="16" y1="232" x2="376" y2="232" />
+  <rect class="dg-accent-fill" x="181" y="226" width="2" height="12" />
+  <text class="dg-note" x="16" y="256">one thing, still arriving</text>
+</svg>

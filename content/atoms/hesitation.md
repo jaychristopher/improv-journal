@@ -83,6 +83,10 @@ The test that separates them is whether you could say what you are waiting for. 
 
 Which means the fix is never simply to speak sooner. It is to move the attention outward, at which point the pauses that remain are the useful kind.
 
+![The same pause seen three ways: from outside it is one span; inside hesitation it is many discarded candidates; inside patience it is a single thing still arriving.](/images/inside-the-pause.svg)
+
+*You do not get from the second picture to the third by choosing faster among the candidates.*
+
 ## Specific sources
 
 Johnstone, *Impro*, Ch. 3 ("Spontaneity"): "the student hesitates not because he doesn't have an idea, but to conceal the inappropriate ones that arrive uninvited." Napier, *Improvise*: "1) Do something, 2) Check out what you did, 3) Hold onto what you did." **Counter-position (TJ & Dave):** *Speed of Life* — patience and silence can be the most powerful choices. "A captivating silence is as good as, if not better than, a laugh." The critical distinction: hesitation-from-fear (the censor blocking action) versus patience-as-choice (deliberate spaciousness). This atom targets the former.
