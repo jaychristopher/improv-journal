@@ -393,6 +393,26 @@ Two consequences worth stating, because they cut against the earlier habits:
 analytics URLs to content files on the final path segment and prints anything
 it could not match, so an unmatched top page is visible rather than skipped.
 
+## Not published, so out of scope (2026-08-30)
+
+`content/personas/` (5) and `content/outlines/` (3) are working notes with no
+route. There is no `/personas` segment in `src/app`, they produce no sitemap
+entries, and the repo says so itself in two places: `sitemap-coverage.test.ts`
+excludes personas as "voice definitions used to generate audio", and
+`stated-counts.test.ts` comments that "Outlines and personas are working
+notes."
+
+Found by inserting a diagram into `personas/analytical-beginner` and getting a
+404 when trying to verify it. The page is 2,000 words and reads like a
+publishable essay, which is why it looked like a candidate. Reverted.
+
+These 8 pages inflate the coverage denominator. Treat 363 as the real total —
+the number of URLs in the sitemap.
+
+Threads and paths are *not* in this category and were wrongly grouped with
+them earlier. Threads are prose essays carrying their own claims, paths are
+curriculum framing with real arguments in them, and both are published.
+
 ## Declined
 
 Pages examined and found to hold nothing a diagram carries better than the prose does.
