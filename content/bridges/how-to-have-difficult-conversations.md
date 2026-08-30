@@ -29,6 +29,11 @@ The problem: the other person didn't get your script. They say something unexpec
 
 Improv's insight: **you cannot prepare your way through a conversation you don't control.** You can only prepare your *state* — present, listening, honest — and then respond to what's actually happening.
 
+![One line runs straight on as the dashed plan while the solid line, the actual conversation, diverges at the first unscripted turn.](/images/where-the-plan-comes-off.svg)
+
+*The plan stays where you left it. Everything said after the first surprise is off it.*
+
+
 ## The Three Improv Principles for Difficult Conversations
 
 ### 1. Receive before you respond

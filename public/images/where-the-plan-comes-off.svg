@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 212" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE PLAN COMES OFF</text>
+
+  <text class="dg-note" x="200" y="84" text-anchor="middle">they say something else</text>
+
+  <line class="dg-ink" x1="140" y1="96" x2="140" y2="112" />
+  <line class="dg-ink" x1="140" y1="104" x2="200" y2="104" />
+  <line class="dg-ink" x1="200" y1="96" x2="200" y2="112" />
+
+  <line class="dg-accent" x1="200" y1="104" x2="376" y2="104" />
+  <text class="dg-note-accent" x="376" y="96" text-anchor="end">the plan</text>
+
+  <line class="dg-ink" x1="200" y1="104" x2="376" y2="168" />
+  <text class="dg-note" x="376" y="186" text-anchor="end">the conversation</text>
+
+  <text class="dg-note" x="16" y="200">the plan does not bend; the conversation does</text>
+</svg>
