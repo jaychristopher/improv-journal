@@ -44,6 +44,11 @@ How impossible it is to pre-plan a response when you literally don't know the co
 
 This exercise is more **diagnostic** than **training**. The mechanical constraint (grab the last word) can be gamed — players learn to snatch the word while mentally composing their sentence, which is *worse* listening than before. The real teaching happens in the side-coaching and the debrief, not in the constraint itself. Without facilitation, the exercise teaches a trick. With facilitation, it reveals a habit.
 
+![One drill branching to two outcomes from a shared starting line: one rises to revealing a habit, the other falls below the line to teaching a trick.](/images/one-drill-two-outcomes.svg)
+
+*A drill with a losing branch is still worth running; it is not worth running unattended.*
+
+
 ## Common failures
 
 - **Speed ramp** — players accelerate, which rewards planning over listening. Coach: "Slow down."

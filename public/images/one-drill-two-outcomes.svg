@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">ONE DRILL, TWO OUTCOMES</text>
+
+  <line class="dg-rule" x1="16" y1="118" x2="376" y2="118" />
+  <text class="dg-note" x="16" y="112">where you started</text>
+
+  <line class="dg-ink" x1="150" y1="118" x2="150" y2="118" />
+  <rect class="dg-accent-fill" x="149" y="72" width="2" height="46" />
+  <line class="dg-muted" x1="150" y1="76" x2="290" y2="76" />
+  <text class="dg-note-accent" x="300" y="80">reveals a habit</text>
+  <text class="dg-note" x="150" y="66">facilitated</text>
+
+  <line class="dg-muted" x1="150" y1="118" x2="150" y2="164" />
+  <line class="dg-muted" x1="150" y1="164" x2="290" y2="164" />
+  <text class="dg-note" x="300" y="168">teaches a trick</text>
+  <text class="dg-note" x="150" y="184">not facilitated</text>
+
+  <text class="dg-note" x="16" y="204">one branch ends below the line it started on</text>
+</svg>
