@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT STAYS INSIDE THE GAME</text>
+
+  <line class="dg-ink" x1="16" y1="52" x2="230" y2="52" />
+  <line class="dg-ink" x1="16" y1="162" x2="230" y2="162" />
+  <line class="dg-ink" x1="16" y1="52" x2="16" y2="162" />
+  <line class="dg-ink" x1="230" y1="52" x2="230" y2="162" />
+
+  <line class="dg-muted" x1="56" y1="142" x2="56" y2="72" />
+  <text class="dg-note" x="66" y="78">heighten</text>
+  <line class="dg-muted" x1="56" y1="142" x2="210" y2="142" />
+  <text class="dg-note" x="120" y="136">explore</text>
+
+  <rect class="dg-accent-fill" x="249" y="66" width="2" height="12" />
+  <text class="dg-note" x="264" y="76">pivot</text>
+  <rect class="dg-accent-fill" x="249" y="94" width="2" height="12" />
+  <text class="dg-note" x="264" y="104">inversion</text>
+  <rect class="dg-accent-fill" x="249" y="122" width="2" height="12" />
+  <text class="dg-note" x="264" y="132">combination</text>
+  <rect class="dg-accent-fill" x="249" y="150" width="2" height="12" />
+  <text class="dg-note" x="264" y="160">transcendence</text>
+
+  <text class="dg-note" x="16" y="182">the same game</text>
+  <text class="dg-note-accent" x="249" y="182">a different game</text>
+
+  <text class="dg-note" x="16" y="216">two of these keep the game; four replace it</text>
+</svg>

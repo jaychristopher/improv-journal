@@ -41,6 +41,11 @@ The game becomes something larger than its mechanical pattern. The heightening a
 
 Hines describes vertical heightening (same game, bigger) vs. horizontal exploration (same game, new context). Game evolution adds a third dimension: the game itself changes. Vertical and horizontal moves keep the game stable; pivot, inversion, combination, and transcendence transform it.
 
+![A box containing the two moves that keep the game — heightening and exploring — with pivot, inversion, combination and transcendence marked outside it.](/images/inside-the-game.svg)
+
+*No amount of the two inside moves reaches the four outside ones; that is what the boundary means.*
+
+
 ## Specific sources
 
 UCB Manual, Ch. 2 — heightening and exploring as primary game development. Hines, ["Teaching Game 2: Heighten and Explore"](https://willhines.substack.com/p/teaching-game-2-heighten-and-explore). Hines, ["Teaching Game 3: Open Scenes"](https://willhines.substack.com/p/teaching-game-open-scenes) — documents game pivot. Hines, ["Heightening: Do Both Vertical and Horizontal"](https://willhines.substack.com/p/heightening-do-both-vertical-and). *Truth in Comedy* — "relationships are always in the process of changing and mutating." **Counter-position:** Napier's commitment-first approach — game evolution happens naturally when performers commit fully. You don't plan a pivot; you follow the scene honestly and the game transforms because the characters demand it. TJ & Dave scenes "heighten" by getting quieter, not louder — game evolution as a concept implies structural awareness their tradition explicitly avoids.
