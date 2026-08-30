@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">AFTER THE SLIP IS READ</text>
+
+  <text class="dg-note" x="16" y="76">explaining</text>
+  <line class="dg-muted" x1="150" y1="72" x2="350" y2="72" />
+  <text class="dg-note" x="150" y="94">three sentences of rescue</text>
+
+  <text class="dg-note" x="16" y="136">reacting</text>
+  <rect class="dg-accent-fill" x="150" y="131" width="34" height="2" />
+  <text class="dg-note-accent" x="150" y="154">one reaction</text>
+
+  <text class="dg-note" x="16" y="188">the longer one says the line was a problem</text>
+</svg>

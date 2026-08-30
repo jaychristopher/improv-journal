@@ -27,6 +27,11 @@ The audience writes lines on slips before the show and they are scattered face-d
 
 The move that works is almost never explaining the line. It is treating it as evidence about the character or the situation and letting the consequence do the work: somebody who says *"the badgers know what I did"* is not somebody who needs to clarify, it is somebody with a history the audience now wants.
 
+![Two responses to the same slip drawn to length: a long explaining bar and a short reacting one.](/images/after-the-slip-is-read.svg)
+
+*Length is the tell, and the audience reads it before they read the content.*
+
+
 ## Where it goes wrong
 
 - **Reading it as a joke.** A slip delivered with a knowing look tells the audience the scene has paused. Delivered flatly, as something this person would say, it is far stranger and much funnier.
