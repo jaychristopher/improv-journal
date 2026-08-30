@@ -28,6 +28,11 @@ Organic Opening is a group free-association exercise that generates raw thematic
 
 (1) A warm-up that gets the ensemble into group mind — breathing, moving, thinking together. (2) A source-material generator that produces more thematic raw material than any single performer could generate alone.
 
+![A single opening node with two lines out, one to a group in group mind and one to material to draw on.](/images/one-opening-two-products.svg)
+
+*Neither product is a by-product, which is why an opening run only for the warm-up still has to be finished.*
+
+
 ## Common types
 
 ## Pattern game

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 196" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">ONE OPENING, TWO PRODUCTS</text>
+
+  <rect class="dg-accent-fill" x="16" y="98" width="2" height="14" />
+  <text class="dg-note-accent" x="30" y="110">the opening</text>
+
+  <line class="dg-muted" x1="110" y1="106" x2="210" y2="74" />
+  <line class="dg-muted" x1="110" y1="106" x2="210" y2="138" />
+
+  <text class="dg-note" x="220" y="78">a group in group mind</text>
+  <text class="dg-note" x="220" y="142">material to draw on</text>
+
+  <text class="dg-note" x="16" y="180">cutting it short costs both</text>
+</svg>
