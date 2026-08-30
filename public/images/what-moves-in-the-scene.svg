@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 244" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT MOVES IN THE SCENE</text>
+
+  <text class="dg-secondary" x="16" y="92">you add</text>
+  <rect class="dg-accent-fill" x="196" y="87" width="14" height="2" />
+  <rect class="dg-accent-fill" x="250" y="87" width="14" height="2" />
+  <rect class="dg-accent-fill" x="304" y="87" width="14" height="2" />
+  <rect class="dg-accent-fill" x="356" y="87" width="14" height="2" />
+  <text class="dg-note" x="180" y="118">your position is unchanged</text>
+
+  <text class="dg-secondary" x="16" y="188">you are changed</text>
+  <line class="dg-muted" x1="210" y1="204" x2="250" y2="187" />
+  <line class="dg-muted" x1="264" y1="187" x2="304" y2="197" />
+  <line class="dg-muted" x1="318" y1="197" x2="356" y2="165" />
+  <rect class="dg-accent-fill" x="196" y="203" width="14" height="2" />
+  <rect class="dg-accent-fill" x="250" y="185" width="14" height="2" />
+  <rect class="dg-accent-fill" x="304" y="195" width="14" height="2" />
+  <rect class="dg-accent-fill" x="356" y="163" width="14" height="2" />
+  <text class="dg-note-accent" x="180" y="232">your position moves each time</text>
+</svg>

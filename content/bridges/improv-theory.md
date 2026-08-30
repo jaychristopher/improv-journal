@@ -30,6 +30,11 @@ Johnstone developed his approach in London and Calgary, working from a fundament
 
 Where American traditions say "yes, and," Johnstone says "be changed by what happens." The distinction matters. "Yes, and" can become mechanical — a rule followed without understanding. Being changed requires actual vulnerability. Johnstone's improvisers don't build scenes by adding; they build scenes by being affected.
 
+![Four turns with the performer's own position level throughout, against four turns where it moves each time.](/images/what-moves-in-the-scene.svg)
+
+*Both build a scene. Only one of them requires you to end up somewhere you did not start.*
+
+
 His key books — *Impro* and *Impro for Storytellers* — remain the most psychologically sophisticated writing on improvisation. His status work alone has influenced fields from negotiation to organizational behavior.
 
 ### Viola Spolin: Games, Side-Coaching, and the Body First
