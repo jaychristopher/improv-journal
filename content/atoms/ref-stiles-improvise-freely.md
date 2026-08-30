@@ -25,6 +25,11 @@ The strongest published improv-specific treatment of consent and safety, from a 
 
 Its argument is that safety is a precondition rather than a virtue, and that treating it as a nicety gets the causation backwards. A room where being wrong is survivable produces bolder work than a room where it is not, so safety is not what you trade against risk — it is what makes risk affordable. That reframing is the reason this is cited here at all: the site's claim that psychological safety is load-bearing for improvisation needs a source from inside the practice, not only from organisational research.
 
+![The same two quantities related twice: sloping apart in the assumed version, rising together in the actual one.](/images/safety-and-risk.svg)
+
+*If the upper line were right, a safer room would be a duller one.*
+
+
 The material on notes is unusually concrete. Stiles is specific about what a note is for, who it is really addressed to, and the failure mode where feedback exists to demonstrate the teacher's perception rather than to change what a student does next. She is equally direct about the instruction to "throw away the rulebook" — not an argument that rules are wrong, but that a rule held as an identity stops being a tool.
 
 ## Who it rewards

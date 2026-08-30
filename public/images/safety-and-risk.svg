@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">SAFETY AND RISK</text>
+
+  <text class="dg-note" x="16" y="70">assumed</text>
+  <line class="dg-muted" x1="150" y1="60" x2="330" y2="104" />
+  <text class="dg-note" x="150" y="54">risk</text>
+  <text class="dg-note" x="340" y="108">safety</text>
+
+  <text class="dg-note" x="16" y="160">actually</text>
+  <line class="dg-accent" x1="150" y1="200" x2="330" y2="156" />
+  <text class="dg-note" x="340" y="160">safety</text>
+  <text class="dg-note" x="118" y="204">risk</text>
+
+  <text class="dg-note" x="16" y="222">the lines run opposite ways</text>
+</svg>
