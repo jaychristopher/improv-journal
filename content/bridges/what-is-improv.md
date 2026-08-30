@@ -87,6 +87,11 @@ The form has a traceable history, and it is shorter than most people assume.
 
 The **Upright Citizens Brigade**, taught largely by Close's students, carried the Chicago approach to New York in the 1990s and built the curriculum most contemporary American improvisers learn. The [traditions](/traditions) overview introduces the five schools, and [improv theory](/improv-theory) takes them question by question where they disagree.
 
+![Spolin's games in the 1930s, Second City in 1959, Impro in 1979 and UCB in the 1990s, marked on a single sixty-year span.](/images/how-short-the-history-is.svg)
+
+*The whole vocabulary was invented inside sixty years, which is a shorter run than most people assume.*
+
+
 ## The Ensemble Problem
 
 Improv reveals something uncomfortable about how most of us interact: we are terrible at building things together in real time. We interrupt. We wait for our turn to talk instead of listening. We push our own agenda instead of building on what's already been offered. We treat conversations as competitions rather than collaborations.
@@ -128,6 +133,11 @@ Three different answers, and most arguments about improv are really disagreement
 **As training**, the purpose is a skill, and this is what improvisation was originally for. Viola Spolin was not developing entertainment when she wrote the games in the 1940s — she was teaching immigrant children and non-actors in Chicago, and the games existed because instruction did not work and play did. The performance tradition grew out of the teaching method rather than the other way round, which is the reverse of what most people assume.
 
 **As applied practice**, the purpose is transfer: people take it up to become quicker in meetings, less frightened of speaking, better at listening, more able to work with what they are given rather than what they planned. This is now the largest group by numbers and the least visible, because nobody watches it happen.
+
+![Ranked by how many people take part, applied practice is first and performance last; ranked by visibility the order is exactly reversed.](/images/the-order-reverses.svg)
+
+*Almost everyone arguing about what improv is has only ever seen the smallest of the three.*
+
 
 The confusion matters because it sets expectations wrongly at the door. Somebody joining a class to get funnier is in the performance frame and will be frustrated by six weeks of exercises that are not about jokes. Somebody sent by an employer is in the applied frame and will resent being asked to perform. And a teacher running a class without saying which of the three it serves will lose half the room in the first hour — not to difficulty, but to a mismatch nobody named out loud.
 

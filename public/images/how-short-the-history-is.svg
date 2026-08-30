@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">HOW SHORT THE HISTORY IS</text>
+
+  <text class="dg-note" x="40" y="104">Spolin's games</text>
+  <text class="dg-note" x="179" y="104" text-anchor="middle">Second City</text>
+  <text class="dg-note" x="275" y="104" text-anchor="middle">Impro</text>
+  <text class="dg-note" x="352" y="104" text-anchor="middle">UCB</text>
+
+  <line class="dg-rule" x1="40" y1="120" x2="376" y2="120" />
+  <rect class="dg-accent-fill" x="40" y="119" width="312" height="2" />
+  <line class="dg-ink" x1="40" y1="112" x2="40" y2="128" />
+  <line class="dg-ink" x1="179" y1="112" x2="179" y2="128" />
+  <line class="dg-ink" x1="275" y1="112" x2="275" y2="128" />
+  <line class="dg-ink" x1="352" y1="112" x2="352" y2="128" />
+
+  <text class="dg-note" x="40" y="144">1930s</text>
+  <text class="dg-note" x="179" y="144" text-anchor="middle">1959</text>
+  <text class="dg-note" x="275" y="144" text-anchor="middle">1979</text>
+  <text class="dg-note" x="352" y="144" text-anchor="middle">1990s</text>
+
+  <text class="dg-note" x="16" y="180">sixty years from the first games to the modern curriculum</text>
+</svg>
