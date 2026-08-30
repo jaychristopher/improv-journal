@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 226" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE 1973 MODEL OVER-PREDICTS</text>
+
+  <text class="dg-note" x="16" y="58">two tasks, same channel</text>
+  <text class="dg-note" x="16" y="80">predicted</text>
+  <rect class="dg-accent-fill" x="190" y="74" width="180" height="2" />
+  <text class="dg-note" x="16" y="102">actual</text>
+  <rect class="dg-accent-fill" x="190" y="96" width="180" height="2" />
+
+  <text class="dg-note" x="16" y="146">two tasks, different channels</text>
+  <text class="dg-note" x="16" y="168">predicted</text>
+  <rect class="dg-accent-fill" x="190" y="162" width="180" height="2" />
+  <text class="dg-note" x="16" y="190">actual</text>
+  <rect class="dg-accent-fill" x="190" y="184" width="45" height="2" />
+  <line class="dg-muted" x1="235" y1="185" x2="370" y2="185" />
+  <line class="dg-rule" x1="370" y1="164" x2="370" y2="186" />
+
+  <text class="dg-note" x="16" y="214">only the lower pair disagree</text>
+</svg>

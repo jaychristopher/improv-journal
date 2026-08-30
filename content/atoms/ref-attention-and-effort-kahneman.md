@@ -41,6 +41,11 @@ It is a poor first book on attention and an unnecessary one for most practitione
 
 Its single-pool model is the part most revised since. Wickens' multiple-resource account, already noted above, is a better description of why some task pairs interfere and others barely do, and a reader who takes the 1973 model as current will over-predict interference between tasks that use different channels.
 
+![Interference for two task pairs, predicted and actual: same-channel tasks match the prediction, while different-channel tasks come in far shorter than predicted.](/images/where-the-1973-model-over-predicts.svg)
+
+*The model has no way to tell the two cases apart, which is why its error runs in one direction only.*
+
+
 ## Key contributions to the knowledge graph
 
 - Attention as finite resource — the scientific basis for the cognitive-bandwidth law
