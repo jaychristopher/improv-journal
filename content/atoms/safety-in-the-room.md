@@ -43,6 +43,11 @@ Contemporary programs address content explicitly — race, gender, sexuality, tr
 
 "Self-disclosure within the structure of an improv exercise makes vulnerability less a risk of attack and more an opportunity for attunement." Improv demands real-time vulnerability in front of others. Without trust that the room will support these risks, performers default to safe, closed, defensive choices — the exact behaviors every antipattern describes.
 
+![A single unsafe-room node with lines running out to blocking, hesitation, negation, performing cleverness and overcomplication.](/images/what-an-unsafe-room-produces.svg)
+
+*Each of these has its own page and its own fix, and all of them arrive together when the room is wrong.*
+
+
 ## How to create safety without making the room precious
 
 - Establish norms early (day one, not after a problem occurs)

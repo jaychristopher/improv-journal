@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT AN UNSAFE ROOM PRODUCES</text>
+
+  <rect class="dg-accent-fill" x="16" y="128" width="2" height="14" />
+  <text class="dg-note-accent" x="30" y="140">no safety</text>
+
+  <line class="dg-muted" x1="100" y1="138" x2="200" y2="70" />
+  <line class="dg-muted" x1="100" y1="138" x2="200" y2="104" />
+  <line class="dg-muted" x1="100" y1="138" x2="200" y2="138" />
+  <line class="dg-muted" x1="100" y1="138" x2="200" y2="172" />
+  <line class="dg-muted" x1="100" y1="138" x2="200" y2="206" />
+
+  <text class="dg-note" x="210" y="74">blocking</text>
+  <text class="dg-note" x="210" y="108">hesitation</text>
+  <text class="dg-note" x="210" y="142">negation</text>
+  <text class="dg-note" x="210" y="176">performing cleverness</text>
+  <text class="dg-note" x="210" y="210">overcomplication</text>
+
+  <text class="dg-note" x="16" y="230">one cause, and it is not on the list</text>
+</svg>
