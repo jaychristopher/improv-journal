@@ -31,6 +31,11 @@ A strong POV turns every element of the scene into an automatic offer. If your c
 - **Strong:** Specific, emotionally loaded, filters the entire world. "Everything is a threat." "Everyone is more talented than me." "Rules exist to be broken." The specificity creates a predictable-yet-surprising pattern — the audience learns the filter and delights in watching it applied to new situations.
 - **Weak:** Vague, generic, doesn't filter. A character who is "nice" or "normal" has no POV generating material. The performer has to work harder because there's no lens doing the work.
 
+![The same material twice: a strong point of view supplies most of it, a weak one leaves all of it to the performer.](/images/who-generates-the-material.svg)
+
+*The lens is not extra work; it is the same work, done by something other than you.*
+
+
 ## POV and game
 
 These are complementary tools, not synonyms. Game is the pattern of unusual behavior. POV is often *how* the character creates and executes that game. Will Hines: "Philosophy becomes a point of view, which becomes a comedic game. It becomes something you can find ways to do over and over." Once the game presents itself, the character deepens *because* of the POV — the viewpoint separates the character from the performer.

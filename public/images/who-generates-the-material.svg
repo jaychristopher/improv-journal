@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHO GENERATES THE MATERIAL</text>
+
+  <text class="dg-note" x="16" y="72">a strong point of view</text>
+  <rect class="dg-accent-fill" x="130" y="87" width="170" height="2" />
+  <line class="dg-muted" x1="300" y1="88" x2="370" y2="88" />
+  <text class="dg-note" x="130" y="108">the lens</text>
+  <text class="dg-note" x="300" y="108">you</text>
+
+  <text class="dg-note" x="16" y="152">a weak one</text>
+  <line class="dg-muted" x1="130" y1="168" x2="370" y2="168" />
+  <text class="dg-note" x="130" y="188">you</text>
+
+  <text class="dg-note" x="16" y="208">the same scene either way</text>
+</svg>
