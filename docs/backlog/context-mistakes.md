@@ -171,6 +171,29 @@ being read by people. Worth watching for elsewhere: a cleanup applied to the
 metadata path and not to the page is invisible to every check that reads
 metadata.
 
+**A filter that widened when you narrowed it** — hub browsing → exercises and
+techniques — *wrong, not merely noisy*. The tag filter ran one `some` over every
+active tag, so it was OR everywhere including across groups: Beginner on
+/practice/techniques gave 12 results, and adding Game gave 21. The counts beside
+each chip were global too, so "Game 9" sat next to an active Beginner that would
+have yielded none. Now OR inside a group, AND across groups, with counts that
+answer "how many if I click this".
+
+The part that made it worth doing properly rather than quickly: correct AND
+semantics alone would have made the tool feel broken, because 56% of
+level-and-area pairs on the exercises hub have no members at all. Honest counts
+and disabled zero-options are what carry the correction — the empty state
+becomes unreachable by clicking rather than something you discover after.
+
+**Attempted verification that did not work** — process note. main has never been
+built or tested directly: worktrees have no node_modules, so every check this
+loop has run happened in a tree checked out on another branch. Junctioning
+node_modules into a worktree fails — Turbopack rejects it as "a symlink that
+points out of the filesystem root" — and the resulting empty build made a
+passing test look like a failure. Recorded so the next attempt does not repeat
+it. Reviewing the staged diff line by line is the cheap substitute, and is what
+would have caught last pass's mistake.
+
 ---
 
 ## Entry points examined, no defect found
