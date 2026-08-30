@@ -1,0 +1,16 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHEN THE OBJECT GETS DEFINED</text>
+
+  <text class="dg-note" x="16" y="72">handed over</text>
+  <text class="dg-note" x="16" y="118">received</text>
+
+  <line class="dg-ink" x1="150" y1="62" x2="150" y2="76" />
+  <line class="dg-muted" x1="150" y1="69" x2="290" y2="69" />
+  <text class="dg-note" x="150" y="94">an undefined shape</text>
+
+  <rect class="dg-accent-fill" x="289" y="108" width="2" height="14" />
+  <text class="dg-note-accent" x="150" y="140">a jar of pickles, and why it matters</text>
+  <line class="dg-rule" x1="290" y1="76" x2="290" y2="106" />
+
+  <text class="dg-note" x="16" y="182">the giver supplies the gesture and nothing else</text>
+</svg>

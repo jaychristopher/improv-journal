@@ -39,6 +39,11 @@ Two players face each other. Player A mimes handing over an invisible object —
 
 The exercise trains you to receive *anything* and immediately justify its personal significance. There is no wrong gift because the receiver decides what it is and why it matters. The gratitude is not performed — it emerges naturally from the justification. When you discover *why* this matters to you, the thankfulness is real.
 
+![A handover with the object undefined as it leaves the giver and named and justified only once it has been received.](/images/when-the-object-gets-defined.svg)
+
+*Nothing can be a wrong gift because nothing has been claimed yet at the point it changes hands.*
+
+
 ## Common failures
 
 The giver pre-shapes a recognizable object (defeats the blind offer). The receiver names something "clever" for a laugh instead of something personally meaningful. The receiver goes generic ("Oh wow, thanks!") without specific justification. Players rush past the moment of discovery — slow down and let the object arrive before naming it.
