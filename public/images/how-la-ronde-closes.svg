@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">HOW LA RONDE CLOSES</text>
+
+  <line class="dg-ink" x1="40" y1="80" x2="110" y2="80" />
+  <line class="dg-ink" x1="110" y1="96" x2="180" y2="96" />
+  <line class="dg-ink" x1="180" y1="80" x2="250" y2="80" />
+  <line class="dg-ink" x1="250" y1="96" x2="320" y2="96" />
+  <line class="dg-ink" x1="320" y1="80" x2="376" y2="80" />
+
+  <line class="dg-muted" x1="110" y1="80" x2="110" y2="96" />
+  <line class="dg-muted" x1="180" y1="80" x2="180" y2="96" />
+  <line class="dg-muted" x1="250" y1="80" x2="250" y2="96" />
+  <line class="dg-muted" x1="320" y1="80" x2="320" y2="96" />
+
+  <rect class="dg-accent-fill" x="39" y="60" width="337" height="2" />
+  <rect class="dg-accent-fill" x="39" y="60" width="2" height="20" />
+  <rect class="dg-accent-fill" x="374" y="60" width="2" height="20" />
+
+  <text class="dg-note" x="40" y="124">each scene shares one</text>
+  <text class="dg-note-accent" x="376" y="50" text-anchor="end">and the last shares with the first</text>
+
+  <text class="dg-note" x="16" y="180">the chain has no loose end</text>
+</svg>

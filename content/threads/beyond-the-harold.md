@@ -16,6 +16,11 @@ The **[Armando](/practice/formats/armando)** strips away Harold's structural com
 
 **La Ronde** is a character study disguised as a format. Each scene shares one character with the next, forming a chain that circles back to the beginning. It reveals something the Harold rarely does: how the same person changes depending on who they're with.
 
+![Five scenes as spans, each joined to the next at a shared character, with an accent bracket carrying the last back to the first.](/images/how-la-ronde-closes.svg)
+
+*Remove the accent bracket and this is a sequence; with it, the last scene is answerable to the first.*
+
+
 **Narrative longform** is story-driven — beginning, middle, end. Where Harold uses game as its engine, narrative uses consequence. What happens in scene 3 is caused by scene 2. This is Johnstone's territory: the improviser walking backwards, reincorporating what they've already established.
 
 **Organic longform** abandons predetermined structure entirely. No mandated beats, no required group games, no preset scene order. The form emerges from the content. This is the post-Harold evolution — what Del Close was actually aiming for when he said "the first rule is: there are no rules."
