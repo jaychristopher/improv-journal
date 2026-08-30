@@ -37,6 +37,11 @@ Nothing in the game can be done alone. A clap that arrives early or late is two 
 
 That makes it the cheapest available lesson in what `signal` means — you are not producing a clap, you are matching one, and matching requires reading the tiny preparatory movement that comes before your partner's hands meet. Players who watch hands are late. Players who watch the whole person are on time.
 
+![Two claps on a shared timeline: offset by a measurable gap when watching hands, and coincident when watching the whole person.](/images/one-sound-or-two.svg)
+
+*The gap is small enough to be invisible and loud enough that the whole circle hears it.*
+
+
 It is `mirroring` compressed into a single instant and shared by twelve people instead of two.
 
 ## Side-coaching
