@@ -60,6 +60,10 @@ Surreal comedy that works is rigorously internally logical. What makes a scene i
 
 Which gives a usable test. Ask whether a new element in an absurd scene *follows* from what was already true, or merely arrives. Both are odd; only one of them is a scene.
 
+![Two axes — how strange the content is, and whether a new element follows from what was true. The two furniture scenes are equally strange and differ only vertically.](/images/strange-is-not-the-axis.svg)
+
+*The bottom-left corner is empty here only because nobody defends it; a naturalistic scene whose rules keep changing sits there too.*
+
 ## Specific sources
 
 Clark & Brennan, "Grounding in Communication" (1991, in *Perspectives on Socially Shared Cognition*, APA; [PDF](https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf)) — grounding as the interactive process of establishing mutual understanding through presentation, acceptance, and repair. Their "least collaborative effort" principle explains why simple, clear signals build coherence faster. *Truth in Comedy*: "Agreement is the one rule that can never be broken." Sawyer, *Improvised Dialogues* (2003) — coherent structure emerges from cleared signals without pre-planning. **Counter-position:** Absurdist improv deliberately fractures coherence — but even surreal comedy maintains "rigorous internal logic" once an absurd premise is established. Absurdism shifts the *content* of coherence (we agree the world is nonsensical) while maintaining the *process* (we're tracking the same nonsense).

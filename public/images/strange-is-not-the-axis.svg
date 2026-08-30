@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 252" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">TWO DIFFERENT QUESTIONS</text>
+
+  <line class="dg-rule" x1="110" y1="56" x2="110" y2="200" />
+  <line class="dg-rule" x1="110" y1="200" x2="376" y2="200" />
+
+  <text class="dg-note" x="16" y="62">it follows</text>
+  <text class="dg-note" x="16" y="200">it just arrives</text>
+  <text class="dg-note" x="110" y="222">ordinary</text>
+  <text class="dg-note" x="376" y="222" text-anchor="end">strange</text>
+
+  <line class="dg-ink" x1="150" y1="82" x2="150" y2="90" />
+  <text class="dg-note" x="124" y="106">a kitchen argument</text>
+
+  <text class="dg-note-accent" x="300" y="70" text-anchor="middle">furniture that stays furniture</text>
+  <rect class="dg-accent-fill" x="299" y="82" width="2" height="8" />
+
+  <line class="dg-rule" x1="300" y1="94" x2="300" y2="158" />
+
+  <line class="dg-ink" x1="300" y1="162" x2="300" y2="170" />
+  <text class="dg-note" x="300" y="188" text-anchor="middle">furniture that stops being it</text>
+
+  <text class="dg-note" x="16" y="244">strangeness is the horizontal axis, and not the one that decides</text>
+</svg>
