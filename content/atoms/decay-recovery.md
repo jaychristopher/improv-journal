@@ -34,6 +34,11 @@ The scene might have started strong — rich details, clear relationship, specif
 
 Recovery follows a hierarchy: **reconnect to what was already working before generating anything new.** Escalation is a last resort, not a first instinct — escalation without foundation is absurdity-as-panic.
 
+![Five repair moves in their recommended order with escalation last, and an accent span running the length of the list to where panic reaches first.](/images/the-order-of-repair.svg)
+
+*The last item is the only one that generates rather than reconnects, which is why it feels like doing something.*
+
+
 ## The relationship re-engagement
 
 Most scene decay is relationship decay. The characters have stopped affecting each other. The recovery: re-engage with your scene partner's emotional state *right now*. Not the fact they established or the object they mimed — their feeling. "Are you okay?" or a look that says *I see you* can re-anchor an entire scene. This is emotional truth applied as a repair tool.

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">THE ORDER OF REPAIR</text>
+
+  <line class="dg-ink" x1="150" y1="58" x2="150" y2="70" />
+  <text class="dg-note" x="166" y="68">relationship</text>
+  <line class="dg-ink" x1="150" y1="88" x2="150" y2="100" />
+  <text class="dg-note" x="166" y="98">callback</text>
+  <line class="dg-ink" x1="150" y1="118" x2="150" y2="130" />
+  <text class="dg-note" x="166" y="128">specificity</text>
+  <line class="dg-ink" x1="150" y1="148" x2="150" y2="160" />
+  <text class="dg-note" x="166" y="158">physical</text>
+  <rect class="dg-accent-fill" x="149" y="178" width="2" height="12" />
+  <text class="dg-note" x="166" y="188">escalation</text>
+
+  <rect class="dg-accent-fill" x="130" y="178" width="2" height="12" />
+  <rect class="dg-accent-fill" x="130" y="178" width="8" height="2" />
+  <rect class="dg-accent-fill" x="130" y="188" width="8" height="2" />
+  <text class="dg-note-accent" x="122" y="182" text-anchor="end">where panic</text>
+  <text class="dg-note-accent" x="122" y="198" text-anchor="end">reaches first</text>
+
+  <text class="dg-note" x="16" y="222">reconnect before generating</text>
+</svg>
