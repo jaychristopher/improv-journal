@@ -288,6 +288,11 @@ export default async function FormatsPage() {
           in a format that suits them badly. A cast that does not will produce the same show in
           every format, and switching is how a team avoids noticing that for a year.
         </p>
+        <Diagram
+          src="/images/what-decides-the-show.svg"
+          alt="Two casts across the same five formats: each row varies only slightly, while the bracketed gap between the rows is much larger."
+          caption="Switching format moves a cast along its own row. Nothing on this axis moves it to the other one."
+        />
         <p className="text-foreground/70">
           The structures are here because they are genuinely different instruments, not because the
           choice is the important part. For the games inside them, see{" "}
