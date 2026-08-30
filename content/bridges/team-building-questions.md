@@ -33,6 +33,11 @@ The parallel to teams is exact. A team without safety in the room will hit its d
 
 Standard icebreaker questions fail because they skip the progression. They either stay so safe that no trust-building transaction occurs (What's your favorite movie?), or they leap to a level of exposure that hasn't been earned (What's your deepest regret?).
 
+![A rising ceiling of earned exposure across four tiers above a fixed floor, with a too-safe question below the floor and a too-personal one above the tier-one ceiling.](/images/what-a-question-can-ask-for.svg)
+
+*The lower failure is available at every tier, including the last one.*
+
+
 Improv teaches that trust is built through offers — pieces of genuine information that a person puts into the shared space. An offer has to cost something to count. Not a lot. Not a confession. Just enough that the person offering it has taken a small, real risk. And the response matters as much as the offer: when someone makes an offer and the group receives it with genuine interest rather than judgment, the entire room's threshold for honesty shifts upward.
 
 This is the principle of be supportive in practice. Being supportive doesn't mean being nice. It means treating what someone offers as worthy of engagement. It means not rushing past their answer to get to your own. It means the micro-responses — the nod, the follow-up question, the moment of eye contact — that signal "what you just said landed."

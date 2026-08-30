@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT A QUESTION CAN ASK FOR</text>
+
+  <text class="dg-note" x="132" y="58">deepest regret</text>
+  <line class="dg-ink" x1="120" y1="66" x2="120" y2="78" />
+  <line class="dg-rule" x1="126" y1="72" x2="300" y2="72" />
+  <text class="dg-note-accent" x="370" y="62" text-anchor="end">what has been earned</text>
+
+  <rect class="dg-accent-fill" x="302" y="71" width="56" height="2" />
+  <rect class="dg-accent-fill" x="232" y="99" width="56" height="2" />
+  <rect class="dg-accent-fill" x="162" y="125" width="56" height="2" />
+  <rect class="dg-accent-fill" x="92" y="149" width="56" height="2" />
+
+  <line class="dg-muted" x1="90" y1="170" x2="370" y2="170" />
+  <text class="dg-note" x="370" y="166" text-anchor="end">too safe to count</text>
+
+  <line class="dg-ink" x1="120" y1="178" x2="120" y2="190" />
+  <text class="dg-note" x="132" y="190">favourite movie</text>
+
+  <line class="dg-rule" x1="90" y1="200" x2="370" y2="200" />
+  <text class="dg-note" x="120" y="218" text-anchor="middle">tier 1</text>
+  <text class="dg-note" x="330" y="218" text-anchor="middle">tier 4</text>
+
+  <text class="dg-note" x="16" y="242">only the ceiling moves</text>
+</svg>
