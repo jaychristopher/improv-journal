@@ -16,6 +16,7 @@
     "seo:monitor": "node scripts/seo-monitor.mjs",
     "knip": "knip",
     "test": "vitest run",
+    "backlog": "node scripts/backlog.mjs",
     "test:watch": "vitest",
     "prepare": "husky",
     "seo:indexnow": "node scripts/indexnow-submit.mjs",
