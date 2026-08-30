@@ -36,6 +36,11 @@ The rest is advanced material in the ordinary sense: how to build an opening tha
 
 Performers already running long form, and especially anybody performing the Harold who suspects the version they were taught is not the version anybody plays. That gap is the book's most useful contribution and it is not documented anywhere else with this authority.
 
+![Two marks for the same form at different positions, with the distance between them bracketed in accent.](/images/two-versions-of-one-form.svg)
+
+*Nothing here says which version is better; the book's contribution is that the distance exists at all.*
+
+
 Beginners will find almost nothing. It is advanced material by design, with little scaffolding and no route in, and the vocabulary assumes the earlier book.
 
 **The honest caveat.** It carries the authority of the iO lineage while being one half of the partnership that produced it. Close was dead seven years by publication, and where *Truth in Comedy* reads as two people arguing a form into existence, this reads as the surviving founder describing what the form became. That is valuable and it is a settlement rather than a debate — the disagreements that made the earlier book alive have been resolved offstage, and the reader is told the outcome without seeing the argument.
