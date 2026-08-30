@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 206" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT REPETITION CHANGES</text>
+
+  <text class="dg-note" x="16" y="82">the fear</text>
+  <line class="dg-rule" x1="180" y1="90" x2="370" y2="90" />
+  <line class="dg-ink" x1="190" y1="62" x2="190" y2="90" />
+  <line class="dg-ink" x1="235" y1="62" x2="235" y2="90" />
+  <line class="dg-ink" x1="280" y1="62" x2="280" y2="90" />
+  <line class="dg-ink" x1="325" y1="62" x2="325" y2="90" />
+
+  <text class="dg-note" x="16" y="156">its grip on the performance</text>
+  <line class="dg-rule" x1="180" y1="164" x2="370" y2="164" />
+  <rect class="dg-accent-fill" x="189" y="136" width="2" height="28" />
+  <rect class="dg-accent-fill" x="234" y="146" width="2" height="18" />
+  <rect class="dg-accent-fill" x="279" y="154" width="2" height="10" />
+  <rect class="dg-accent-fill" x="324" y="159" width="2" height="5" />
+
+  <text class="dg-note" x="16" y="198">only one of the two rows moves</text>
+</svg>

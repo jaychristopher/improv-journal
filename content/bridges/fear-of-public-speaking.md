@@ -154,6 +154,11 @@ Here's what improv performers know that self-help advice usually misses: **you d
 
 The performers who look fearless on stage aren't. They're afraid and performing anyway — and they've done it enough times that the fear no longer controls the performance. That's not fearlessness. It's something better: **courage that's been practiced until it's a habit.**
 
+![Four repetitions with the fear at constant height and its grip on the performance shrinking each time.](/images/what-repetition-changes.svg)
+
+*Nothing in the upper row is smaller at the fourth repetition than at the first.*
+
+
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). For the full system behind performance state, audience relationship, and the cognitive mechanics of fear, explore the [Systems of Improv](/paths/systems-of-improv) path, or start with [Performance State](/how-it-works/performance-state) and [Commitment](/practice/techniques/commitment).*
 
 _For the drills: [public speaking and confidence exercises](/confidence-building-exercises), including why calming down is the wrong target._
