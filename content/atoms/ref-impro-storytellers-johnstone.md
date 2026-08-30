@@ -73,3 +73,8 @@ The full `blocking-taxonomy` — wimping, cancelling, bridging, hedging and pimp
 ## The two books together
 
 Read *Impro* for why and this for how, and expect the second to be less quotable and more useful once you are actually teaching. The twenty-year gap also shows: this is Johnstone after two decades of watching his own ideas taught badly, and a good deal of it is him correcting the misreadings — which is the most interesting thing in it and the reason it is worth reading even if you never run a Theatresports match.
+
+![Two books on a dated line with an accent span covering the twenty years between them rather than the earlier book itself.](/images/what-the-second-book-answers.svg)
+
+*A reply to a book and a reply to how the book was taught are different documents.*
+

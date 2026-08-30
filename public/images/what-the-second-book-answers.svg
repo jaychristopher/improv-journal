@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT THE SECOND BOOK ANSWERS</text>
+
+  <line class="dg-rule" x1="60" y1="100" x2="370" y2="100" />
+  <line class="dg-ink" x1="90" y1="94" x2="90" y2="106" />
+  <line class="dg-ink" x1="330" y1="94" x2="330" y2="106" />
+  <text class="dg-note" x="90" y="88" text-anchor="middle">Impro</text>
+  <text class="dg-note" x="330" y="88" text-anchor="middle">Storytellers</text>
+
+  <text class="dg-note" x="100" y="128">twenty years of it being taught</text>
+  <rect class="dg-accent-fill" x="98" y="139" width="224" height="2" />
+  <rect class="dg-accent-fill" x="320" y="139" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="184">the second book answers the span, not the mark before it</text>
+</svg>
