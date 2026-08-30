@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE THE CHAIN BREAKS</text>
+
+  <line class="dg-ink" x1="60" y1="100" x2="60" y2="112" />
+  <text class="dg-note" x="60" y="132" text-anchor="middle">offer</text>
+  <line class="dg-muted" x1="62" y1="106" x2="178" y2="106" />
+
+  <line class="dg-ink" x1="180" y1="100" x2="180" y2="112" />
+  <text class="dg-note" x="180" y="132" text-anchor="middle">receive</text>
+  <line class="dg-muted" x1="182" y1="106" x2="298" y2="106" />
+
+  <line class="dg-ink" x1="300" y1="100" x2="300" y2="112" />
+  <text class="dg-note" x="300" y="132" text-anchor="middle">respond</text>
+
+  <rect class="dg-accent-fill" x="179" y="72" width="2" height="22" />
+  <text class="dg-note-accent" x="180" y="64" text-anchor="middle">the break is here</text>
+
+  <text class="dg-note" x="16" y="180">the visible failure is one step downstream</text>
+</svg>

@@ -26,6 +26,11 @@ What you're listening for are **[offers](/practice/vocabulary/offers)** - and th
 
 **[Blocking](/how-it-works/diagnosis/blocking)** is what happens when the chain breaks. Sometimes it's obvious denial, but more often it's the subtle refusal to let your partner's offer change you. The scene stalls not because someone said "no" but because someone stopped receiving.
 
+![Three steps from offer to response with the break marked at reception rather than at the reply.](/images/where-the-chain-breaks.svg)
+
+*The reply is where it is noticed, which is why the note usually lands on the wrong step.*
+
+
 The progression: listen -> receive -> build -> offer. Your build becomes your partner's next gift. The chain sustains itself when both players trust the process more than their own plans.
 
 The first link in that chain is the one most people skip: [active listening](/active-listening) is the difference between waiting to speak and actually receiving, and it is trainable rather than innate. The second is argued over more than any other rule in the form — [what yes-and actually means in improv](/yes-and-improv), and the places it stops working.
