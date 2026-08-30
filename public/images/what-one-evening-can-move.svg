@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 204" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHAT ONE EVENING CAN MOVE</text>
+
+  <text class="dg-note-accent" x="40" y="94">one evening</text>
+  <text class="dg-note" x="352" y="94" text-anchor="middle">would refer you</text>
+
+  <line class="dg-muted" x1="40" y1="110" x2="56" y2="110" />
+  <line class="dg-muted" x1="64" y1="110" x2="80" y2="110" />
+  <line class="dg-muted" x1="88" y1="110" x2="104" y2="110" />
+  <line class="dg-muted" x1="112" y1="110" x2="128" y2="110" />
+  <line class="dg-muted" x1="136" y1="110" x2="152" y2="110" />
+  <line class="dg-muted" x1="160" y1="110" x2="176" y2="110" />
+  <line class="dg-muted" x1="184" y1="110" x2="200" y2="110" />
+  <line class="dg-muted" x1="208" y1="110" x2="224" y2="110" />
+  <line class="dg-muted" x1="232" y1="110" x2="248" y2="110" />
+  <line class="dg-muted" x1="256" y1="110" x2="272" y2="110" />
+  <line class="dg-muted" x1="280" y1="110" x2="296" y2="110" />
+  <line class="dg-muted" x1="304" y1="110" x2="320" y2="110" />
+  <line class="dg-muted" x1="328" y1="110" x2="344" y2="110" />
+  <rect class="dg-accent-fill" x="40" y="109" width="16" height="2" />
+  <rect class="dg-accent-fill" x="40" y="103" width="2" height="14" />
+  <rect class="dg-accent-fill" x="54" y="103" width="2" height="14" />
+  <line class="dg-ink" x1="352" y1="102" x2="352" y2="118" />
+
+  <text class="dg-note" x="40" y="136">strangers</text>
+
+  <text class="dg-note" x="16" y="172">trust is an accumulated estimate; this is one term in it</text>
+  <text class="dg-note" x="16" y="194">it was never going to arrive that night</text>
+</svg>

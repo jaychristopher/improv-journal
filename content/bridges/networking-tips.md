@@ -39,6 +39,11 @@ So the reframe is not "be more confident" or "have a better pitch". It is: **arr
 
 This is also the only version that works long term, because `trust` is an accumulated estimate built from many small exchanges. One event is one exchange. Whatever you were hoping to extract from it was never going to arrive that night anyway.
 
+![Twelve small exchanges laid end to end along the distance from strangers to would-refer-you, with tonight's marked as the first of them.](/images/what-one-evening-can-move.svg)
+
+*You are not failing to close the distance in one evening. Nobody closes it in one evening.*
+
+
 ## Before You Go
 
 - **Decide what you are useful for.** One sentence. Not your job title — what you can actually help someone with. Everything else follows from having an answer.
