@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 236" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHERE EVERYONE ENDS UP</text>
+
+  <text class="dg-eyebrow" x="150" y="50" text-anchor="middle">FIRST THOUGHT</text>
+  <text class="dg-eyebrow" x="330" y="50" text-anchor="middle">THIRD THOUGHT</text>
+
+  <line class="dg-rule" x1="150" y1="60" x2="150" y2="182" />
+  <line class="dg-rule" x1="330" y1="60" x2="330" y2="182" />
+
+  <line class="dg-muted" x1="156" y1="72" x2="324" y2="118" />
+  <line class="dg-muted" x1="156" y1="104" x2="324" y2="122" />
+  <line class="dg-muted" x1="156" y1="140" x2="324" y2="126" />
+  <line class="dg-muted" x1="156" y1="172" x2="324" y2="130" />
+
+  <line class="dg-ink" x1="144" y1="72" x2="156" y2="72" />
+  <line class="dg-ink" x1="144" y1="104" x2="156" y2="104" />
+  <line class="dg-ink" x1="144" y1="140" x2="156" y2="140" />
+  <line class="dg-ink" x1="144" y1="172" x2="156" y2="172" />
+
+  <rect class="dg-accent-fill" x="324" y="117" width="12" height="2" />
+  <rect class="dg-accent-fill" x="324" y="121" width="12" height="2" />
+  <rect class="dg-accent-fill" x="324" y="125" width="12" height="2" />
+  <rect class="dg-accent-fill" x="324" y="129" width="12" height="2" />
+
+  <text class="dg-note" x="150" y="200" text-anchor="middle">all different</text>
+  <text class="dg-note-accent" x="330" y="200" text-anchor="middle">all the same</text>
+
+  <text class="dg-note" x="16" y="228">your first thought is the one nobody else has</text>
+</svg>

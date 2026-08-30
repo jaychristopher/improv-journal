@@ -33,6 +33,11 @@ The performer who follows the obvious says, "I was hungry and I didn't think you
 
 Why? Because originality isn't the same as unusualness. Originality means: *from the origin.* Your origin. Your genuine, unfiltered response to what's actually happening. That response is unique to you — because no two people have the same history, perspective, and associations. Your first thought is creative by definition. It's the product of your entire life's pattern-matching applied to this specific moment. Your third thought — the one you edited for cleverness — is the generic one. Everyone's clever ideas sound the same.
 
+![Four first thoughts spread apart on one axis, their third thoughts converging on nearly the same point on the other.](/images/where-everyone-ends-up.svg)
+
+*Editing for cleverness is a funnel. It moves everybody toward the same answer.*
+
+
 ## The Neuroscience of Not Trying
 
 In 2008, neuroscientist Charles Limb put jazz musicians in an fMRI machine and asked them to improvise. The results, published in *PLoS ONE*, were striking:
