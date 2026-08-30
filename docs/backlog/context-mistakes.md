@@ -94,8 +94,21 @@ type label now, as it is on concept pages.
 **Progress appears after hydration and pushes the page down** — returning reader
 → homepage — *layout shift*. `ContinueJourney` returns null on the server and
 renders above the symptom picker once localStorage is read, so for a reader with
-saved state everything below moves. Not fixed; logged. The state is genuinely
-client-only, so the fix is reserving the space rather than rendering it earlier.
+saved state everything below moves. Fixed later the same day by sharing a slot with
+"Start here" rather than reserving space — see the entry below.
+
+**Told to start what you are already doing** — returning reader → homepage —
+*overload, and contradictory*. The "Start here" card and the journey card were
+stacked, so a reader mid-course met a card saying "Start the 7-day program"
+directly above one saying "continue, thread 2 of 2". Two answers to the same
+question in the two most prominent slots on the site. They are alternatives, so
+they now share a slot: the card is passed into ContinueJourney and shown until
+localStorage says otherwise.
+
+That also closes the layout shift logged earlier the same day — the journey card
+now replaces something rather than being inserted above it — which is worth
+noting as a pattern. The shift and the contradiction looked like two findings
+and had one cause: content that belongs in one slot was occupying two.
 
 ---
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 
 import {
   trackLearningRecommendationClicked,
@@ -23,6 +23,17 @@ interface PathInfo {
 
 interface ContinueJourneyProps {
   paths: Record<string, PathInfo>;
+  /**
+   * What to show when there is no journey yet — in practice the "Start here"
+   * card, passed down from the server component so it is in the initial html.
+   *
+   * The two used to be stacked, and a returning reader mid-course met both: a
+   * card telling them to start the seven-day program directly above a card
+   * telling them to continue it. Occupying one slot makes them alternatives,
+   * which is what they always were, and means the journey card replaces
+   * something rather than pushing the page down when localStorage is read.
+   */
+  children?: ReactNode;
 }
 
 interface ContinueJourneyState {
@@ -39,7 +50,7 @@ interface ContinueJourneyState {
   reviewCount?: number;
 }
 
-export function ContinueJourney({ paths }: ContinueJourneyProps) {
+export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
   const [state, setState] = useState<ContinueJourneyState | null>(null);
 
   useEffect(() => {
@@ -82,7 +93,8 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
     );
   }, [paths]);
 
-  if (!state) return null;
+  // No journey, or none readable yet on first paint: the server-rendered card.
+  if (!state) return <>{children}</>;
 
   const label =
     state.kind === "continue"
@@ -104,8 +116,11 @@ export function ContinueJourney({ paths }: ContinueJourneyProps) {
     .filter(Boolean)
     .join(" ");
 
+  // mt-8 rather than mb-8: this now occupies the slot the "Start here" card
+  // sits in, inside the header, and the card it replaces carries mt-8. Matching
+  // it keeps the swap from moving the block it sits under.
   return (
-    <section className="mb-8">
+    <section className="mt-8">
       <Link
         href={`/threads/${state.threadId}`}
         onClick={() =>
