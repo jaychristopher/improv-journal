@@ -55,6 +55,11 @@ Research shows that reappraising anxiety as excitement — rather than trying to
 
 The distinction isn't in the physiology (elevated heart rate, heightened alertness) but in the cognitive frame. Stage fright: self-focused attention ("they're watching me, I might fail"). Stage readiness: task-focused attention ("something is about to happen, and I get to discover it"). The physical sensations are nearly identical.
 
+![The same two body signals bracketed as identical, above stage fright with attention on yourself and stage readiness with attention on the task.](/images/one-state-two-names.svg)
+
+*Calming down works on the bracketed half, which is the half that is the same either way.*
+
+
 ## Pre-show rituals as calibration
 
 - Physical warm-ups discharge excess adrenaline while raising baseline energy
