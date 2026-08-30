@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">HOW FAR YOU CAN BUILD</text>
+
+  <text class="dg-note" x="16" y="80">irony</text>
+  <line class="dg-rule" x1="150" y1="76" x2="376" y2="76" />
+  <rect class="dg-accent-fill" x="169" y="70" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="136">authenticity</text>
+  <line class="dg-rule" x1="150" y1="132" x2="376" y2="132" />
+  <rect class="dg-accent-fill" x="169" y="126" width="2" height="12" />
+  <rect class="dg-accent-fill" x="209" y="126" width="2" height="12" />
+  <rect class="dg-accent-fill" x="249" y="126" width="2" height="12" />
+  <rect class="dg-accent-fill" x="289" y="126" width="2" height="12" />
+  <rect class="dg-accent-fill" x="329" y="126" width="2" height="12" />
+  <rect class="dg-accent-fill" x="369" y="126" width="2" height="12" />
+
+  <text class="dg-note" x="16" y="184">the dead end is one move long</text>
+</svg>

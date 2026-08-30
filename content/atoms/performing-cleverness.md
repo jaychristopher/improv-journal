@@ -39,6 +39,11 @@ Winking at the audience. Breaking character to show you know it's absurd. Using 
 
 You can't build on a joke that's aware it's a joke. Irony is a dead-end road — it acknowledges the scene without advancing it. Authenticity is infinitely buildable because it's grounded in something real. Del Close: *"The truth is funny. Honest discovery, observation, and reaction is better than contrived invention."*
 
+![Two tracks of the same length: irony carries one mark and stops, authenticity carries marks all the way to the edge.](/images/how-far-you-can-build.svg)
+
+*Both tracks are the same length, so the empty stretch in the first one is available and unusable.*
+
+
 ## Recovery — two moves
 
 1. **Play it straight for one line.** Drop the wink. Respond to your partner's actual offer instead of topping it. One sincere line can re-anchor the entire scene.
