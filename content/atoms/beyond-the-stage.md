@@ -59,6 +59,10 @@ On stage you can rehearse because nothing is permanently at stake — the existe
 
 What resolves it is that the capacity is not situation-specific. Attention that has been trained to stay outward stays outward regardless of stakes; what changes with stakes is how hard it is to hold. So the training happens on the instances that do not matter — the queue, the colleague you find dull, the phone call you were dreading for no reason — and what transfers upward is not a technique but a raised floor.
 
+![A stakes axis with practice at the low end and the moments that matter at the high end, and a floor that rises across the whole range.](/images/a-raised-floor.svg)
+
+*Nothing in the picture makes the right-hand end easier; it changes where you are standing when you get there.*
+
 This is the honest version of "improv makes you better at life", and it is slower and less impressive than the version usually sold. Nothing you do in a class will make the hard conversation easy. It can make you somebody who is already listening when the hard conversation starts, which is a smaller claim and the one that survives contact with evidence.
 
 ## What the frame does not license
