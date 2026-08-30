@@ -46,3 +46,8 @@ The prose is 1974 sociology and reads like it. Most improvisers who benefit from
 - Keying: the same activity re-framed as rehearsal, joke, or threat, and the signals that do the re-framing
 - Breaking frame, and why it is so much more disruptive than being wrong inside one
 - Frames as maintained jointly, which makes them fragile in exactly the way a scene is
+
+![A frame drawn as a box with a misplaced mark inside it, and the same marks below with no box around them.](/images/what-an-error-breaks.svg)
+
+*Being wrong inside a frame is a move the frame can absorb. Removing the frame leaves nothing to be wrong against.*
+
