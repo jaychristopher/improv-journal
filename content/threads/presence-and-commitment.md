@@ -24,6 +24,11 @@ The two invisible skills that separate okay improv from electric improv are pres
 
 The connection between them: presence is the internal state, commitment is the external expression. You can't fake commitment without presence, and presence without commitment stays invisible to the audience.
 
+![A two-by-two of presence and commitment with one working cell, one marked invisible, and one marked as unavailable.](/images/both-are-needed.svg)
+
+*The empty cell is not a failure mode; it is a combination nobody can produce.*
+
+
 Both are practices, not talents. You build them through repetition, through noticing when you've drifted out of the scene, and through the courage to come back fully each time.
 
 Presence is the half that transfers most directly, and [being present](/how-to-be-present) sets out the bandwidth mechanism underneath it — which is the reason the instruction works at all.

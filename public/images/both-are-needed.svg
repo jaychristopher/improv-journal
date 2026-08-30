@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">BOTH ARE NEEDED</text>
+
+  <text class="dg-note" x="230" y="72" text-anchor="middle">commitment</text>
+  <text class="dg-note" x="330" y="72" text-anchor="middle">no commitment</text>
+
+  <text class="dg-note" x="16" y="116">presence</text>
+  <line class="dg-rule" x1="196" y1="118" x2="264" y2="118" />
+  <rect class="dg-accent-fill" x="229" y="104" width="2" height="14" />
+  <line class="dg-rule" x1="296" y1="118" x2="364" y2="118" />
+  <text class="dg-note" x="330" y="114" text-anchor="middle">invisible</text>
+
+  <text class="dg-note" x="16" y="170">no presence</text>
+  <line class="dg-rule" x1="196" y1="172" x2="264" y2="172" />
+  <text class="dg-note" x="230" y="168" text-anchor="middle">cannot be done</text>
+  <line class="dg-rule" x1="296" y1="172" x2="364" y2="172" />
+
+  <text class="dg-note" x="16" y="206">one cell works and one is not available</text>
+</svg>
