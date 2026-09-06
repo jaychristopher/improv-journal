@@ -34,11 +34,6 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 /**
- * Orienting paragraphs for this hub, held in a const the way guide-categories
- * holds them for the topic hubs. Kept out of JSX so the prose stays plain
- * strings rather than escaped markup, and so prose-overlap reads it as text.
- */
-/**
  * What separates the three shows, in the terms someone choosing between them
  * would use. Held as data rather than prose because the cards below already
  * carry each show's own description, and this is the comparison the cards
@@ -100,8 +95,20 @@ const QUESTIONS: { q: string; a: string[] }[] = [
   },
 ];
 
+/**
+ * Orienting paragraphs for this hub, held in a const the way guide-categories
+ * holds them for the topic hubs. Kept out of JSX so the prose stays plain
+ * strings rather than escaped markup, and so prose-overlap reads it as text.
+ *
+ * These used to open by enumerating the three shows in a sentence each. That is
+ * now the section below, at length and with the reason you would pick one, so
+ * the enumeration was saying the same thing twice a screen apart — the shape
+ * the register logs as overload. What is left is the two things the comparison
+ * does not cover: that the audio is an alternative to the page rather than an
+ * extra, and that the feeds are real feeds.
+ */
 const HUB_ORIENTATION = [
-  "The three shows are not three seasons of the same thing. One takes an ordinary problem and works it through in conversation, one gives a single idea about three minutes and a way to try it that night, and one goes long on the ideas underneath the practice. Which you want depends on whether you are looking for company, a drill, or an argument.",
+  "The three shows are not three seasons of the same thing, and which you want depends on whether you are after company, a drill, or an argument — the section below says which is which.",
   "Every episode has a written page behind it, and the audio is an alternative to reading rather than an extra on top. If you would rather have the text — to skim it, to search it, or because listening is slower — the episode links through to the page it was made from, and nothing is audio-only.",
   "Each show publishes a feed, so any podcast app that accepts a URL will take it. The site is not a substitute for a player, and the archive here exists so the episodes stay findable and readable rather than living only in an app that decides what you see.",
 ];
