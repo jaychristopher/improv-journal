@@ -16,6 +16,7 @@ Systems-thinkers, engineers, programmers, scientists, and other analytical profe
 
 They are not broken. Their analytical mind is an asset deployed at the wrong time. The narrative arc is not "stop thinking" — it's "learn WHEN to think and when to let go." At advanced levels, analytical pattern recognition becomes a genuine superpower (UCB's game-of-the-scene is fundamentally pattern recognition).
 
+
 ## Jobs to Be Done
 
 **Functional:**
