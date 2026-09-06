@@ -162,7 +162,11 @@ export default async function PrinciplesPage() {
         </p>
         <Diagram
           src="/images/principles-dependency.svg"
-          alt="The nine principles in rough dependency: be present as the precondition, six that build on it, be simple as the corrective they all need, and framing sitting apart from the eight."
+          // Counts belong to the content, not to a string in a component. This
+          // said "nine … six … the eight" and would have gone quietly wrong the
+          // next time a principle was written, which is the drift
+          // system-counts.ts exists to stop.
+          alt="The principles in rough dependency: be present as the precondition, the ones that build on it, be simple as the corrective they all need, and framing sitting apart from the rest."
           caption="The page's own ordering rather than the order they are listed in — which is the least useful way to use them."
         />
         <p className="text-foreground/70 mb-4">
