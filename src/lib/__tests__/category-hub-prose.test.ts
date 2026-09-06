@@ -24,6 +24,13 @@ const HUBS: { url: string; sections: number; words: number }[] = [
   // of its own. Its floor is the word count, and the section floor is set above
   // the labels so the argument has to survive too.
   { url: "/how-it-works/diagnosis", sections: 5, words: 900 },
+  // 278 words under two headings, for three shows and 139 episodes — the
+  // thinnest hub here and the primary page for its term. Floors sit under the
+  // 876 words and 4 h2 it carries now. The section floor matters more than the
+  // word one: two of those headings are "Featured" and "Three Shows", which
+  // label lists rather than saying anything, so a page that lost the argument
+  // and kept the lists would still clear a word count.
+  { url: "/listen", sections: 4, words: 800 },
 ];
 
 function visibleWords(html: string): number {

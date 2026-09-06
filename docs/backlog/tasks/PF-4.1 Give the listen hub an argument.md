@@ -4,7 +4,7 @@ type: task
 summary: Rewrite /listen so it argues rather than only listing
 parent: "[[PF-4 Listen hub depth]]"
 epic: "[[Podcast finalization]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 1
 executable: agent
@@ -74,4 +74,27 @@ achieved, matching the convention used for the other two entries.
 
 ## Outcome
 
-_Not started._
+Done 2026-09-06. 278 words under two headings became 876 under four, with nine
+h3. Added to the `HUBS` array at sections 4 / words 800.
+
+Two sections rather than padding the existing ones. **Which of the three you
+want** makes the comparison the show cards structurally cannot: a card says what
+a show is, and only a list says why you would pick it over the other two — so
+each entry leads with the mood it answers ("you have a problem and want it
+worked through") rather than with a subject, because all three draw on the same
+ideas.
+
+**Questions People Ask About These Shows** takes the three a reader of this site
+would actually have, and answers two of them against interest. The episodes are
+not readings of the pages, so they are shorter and lose the sources and
+diagrams; and if you have already read the page, the honest answer is that the
+episode is mostly not worth your time — the case for it is that it is portable,
+not that it is fuller. Stating that on a page trying to get people to listen is
+the site's voice, and the alternative was three generic podcast questions.
+
+The task said 62 episodes; it is 139 now, after every content page gained audio
+earlier today. Counts on the page are derived, so they were already right.
+
+One question was drafted and left out: whether the voices are synthesised. It is
+true, it is asked, and it is a disclosure decision belonging to the owner rather
+than a copy decision — raised in the walkthrough tracker instead.
