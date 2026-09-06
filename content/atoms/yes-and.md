@@ -68,6 +68,6 @@ For the whole argument — where the phrase actually came from, what it has neve
 
 "Yes, And" does NOT appear in Spolin's *Improvisation for the Theater* (1963) or Johnstone's *Impro* (1979). The phrase was first published in *Truth in Comedy* (1994) by Halpern, Close, and Johnson, Ch. 3: "YES, AND — accept and build." Del Close and Charna Halpern had named their production company "Yes And Productions" in the 1980s. Fey's *Bossypants* (2011), pp. 83-84, chapter "Rules of Improvisation That Will Change Your Life and Reduce Belly Fat," is the primary vector for mainstream popularization.
 
-![A dated line from 1963 to 2011 with four events marked: the phrase is absent through Spolin and Johnstone and in print only from Truth in Comedy onward.](/images/when-the-phrase-appears.svg)
+![A dated line from 1963 to 2011 with four events marked: the phrase is absent from the two founding books and appears in print only from Truth in Comedy onward.](/images/when-the-phrase-appears.svg)
 
 *Both books remain foundational; neither contains the sentence they are most often cited for.*
