@@ -123,48 +123,54 @@ export default async function Home() {
           not just interesting.
         </p>
 
-        <div className="border-foreground/10 bg-foreground/[0.03] mt-8 rounded-2xl border p-6">
-          <span className="text-foreground/40 text-xs tracking-wider uppercase">Start here</span>
-          <h2 className="mt-1 text-2xl font-semibold">{beginnerProgram.frontmatter.title}</h2>
-          <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-            {beginnerRecommendation.rationale}
-          </p>
+        {/* One slot, two states. A returning reader used to get this card and the
+            journey card both, so the page told somebody on day four to start the
+            programme they were already doing. ContinueJourney renders this until
+            localStorage says otherwise, which also means the journey card
+            replaces something instead of pushing the page down on hydration. */}
+        <ContinueJourney paths={continueConfig}>
+          <div className="border-foreground/10 bg-foreground/[0.03] mt-8 rounded-2xl border p-6">
+            <span className="text-foreground/40 text-xs tracking-wider uppercase">Start here</span>
+            <h2 className="mt-1 text-2xl font-semibold">{beginnerProgram.frontmatter.title}</h2>
+            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+              {beginnerRecommendation.rationale}
+            </p>
 
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href={`/paths/${beginnerProgram.frontmatter.id}`}
-              className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
-            >
-              {beginnerProgram.frontmatter.program_length_days
-                ? `Start the ${beginnerProgram.frontmatter.program_length_days}-day program`
-                : "Start the beginner program"}
-            </Link>
-            {firstThread && (
+            <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href={`/threads/${firstThread.frontmatter.id}`}
-                className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+                href={`/paths/${beginnerProgram.frontmatter.id}`}
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
               >
-                Preview day 1: {firstThread.frontmatter.title}
+                {beginnerProgram.frontmatter.program_length_days
+                  ? `Start the ${beginnerProgram.frontmatter.program_length_days}-day program`
+                  : "Start the beginner program"}
               </Link>
-            )}
-          </div>
+              {firstThread && (
+                <Link
+                  href={`/threads/${firstThread.frontmatter.id}`}
+                  className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+                >
+                  Preview day 1: {firstThread.frontmatter.title}
+                </Link>
+              )}
+            </div>
 
-          <div className="text-foreground/50 mt-4 flex flex-wrap gap-3 text-xs">
-            {beginnerProgram.frontmatter.program_length_days && (
-              <span>{beginnerProgram.frontmatter.program_length_days} days</span>
-            )}
-            {beginnerProgram.frontmatter.default_cadence && (
-              <span>{beginnerProgram.frontmatter.default_cadence}</span>
-            )}
-            <span>{beginnerProgram.frontmatter.threads.length} core lessons</span>
-            {beginnerProgram.frontmatter.core_habits?.[0] && (
-              <span>First habit: {beginnerProgram.frontmatter.core_habits[0]}</span>
-            )}
+            <div className="text-foreground/50 mt-4 flex flex-wrap gap-3 text-xs">
+              {beginnerProgram.frontmatter.program_length_days && (
+                <span>{beginnerProgram.frontmatter.program_length_days} days</span>
+              )}
+              {beginnerProgram.frontmatter.default_cadence && (
+                <span>{beginnerProgram.frontmatter.default_cadence}</span>
+              )}
+              <span>{beginnerProgram.frontmatter.threads.length} core lessons</span>
+              {beginnerProgram.frontmatter.core_habits?.[0] && (
+                <span>First habit: {beginnerProgram.frontmatter.core_habits[0]}</span>
+              )}
+            </div>
           </div>
-        </div>
+        </ContinueJourney>
       </header>
 
-      <ContinueJourney paths={continueConfig} />
       <HomepageQuiz symptoms={symptomRecommendations} />
 
       <section className="border-foreground/10 mt-16 border-t pt-10">
