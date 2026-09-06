@@ -1,0 +1,106 @@
+filters:
+  and:
+    - file.inFolder("docs/backlog")
+    - 'note.type != null'
+properties:
+  note.key:
+    displayName: Key
+  note.type:
+    displayName: Type
+  note.status:
+    displayName: Status
+  note.priority:
+    displayName: Priority
+  note.executable:
+    displayName: Run by
+  note.sequence:
+    displayName: Seq
+  note.estimate:
+    displayName: Estimate
+views:
+  - type: table
+    name: Everything
+    order:
+      - note.key
+      - note.type
+      - note.status
+      - note.priority
+      - note.executable
+    sort:
+      - property: note.key
+        direction: ASC
+
+  - type: table
+    name: Epics
+    filters:
+      and:
+        - 'note.type == "epic"'
+    order:
+      - note.key
+      - file.name
+      - note.status
+      - note.priority
+
+  - type: table
+    name: Stories by sequence
+    filters:
+      and:
+        - 'note.type == "story"'
+    order:
+      - note.sequence
+      - note.key
+      - file.name
+      - note.status
+      - note.story_points
+      - note.executable
+    sort:
+      - property: note.sequence
+        direction: ASC
+
+  - type: table
+    name: Tasks
+    filters:
+      and:
+        - 'note.type == "task"'
+    order:
+      - note.key
+      - file.name
+      - note.status
+      - note.executable
+      - note.estimate
+      - note.parent
+    sort:
+      - property: note.key
+        direction: ASC
+
+  - type: table
+    name: Agent queue
+    filters:
+      and:
+        - 'note.type == "task"'
+        - 'note.status != "Done"'
+        - 'note.executable != "human"'
+    order:
+      - note.key
+      - file.name
+      - note.executable
+      - note.blocked_by
+    sort:
+      - property: note.key
+        direction: ASC
+
+  - type: table
+    name: Waiting on a human
+    filters:
+      and:
+        - 'note.type == "task"'
+        - 'note.status != "Done"'
+        - 'note.executable != "agent"'
+    order:
+      - note.key
+      - file.name
+      - note.executable
+      - note.priority
+    sort:
+      - property: note.key
+        direction: ASC
