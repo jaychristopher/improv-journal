@@ -1,0 +1,75 @@
+[curious] I want to talk about the paper everyone cites and nobody reads. Psychological safety. Edmondson, 1999.
+
+[teaching] And it's worth reading, which is not a thing I say about most papers that get quoted this much. Because the thing that made it matter isn't the idea — people had gestured at the idea before. It's that she defined it tightly enough to measure, and then measured it, and the measurement said something she wasn't expecting.
+
+[curious] Start with the definition. What did she actually pin down?
+
+[teaching] A shared belief that the team is safe for interpersonal risk taking. And the word doing the work there is *interpersonal*. Not physical safety. Not job security. The risk of looking bad in front of the people you work with.
+
+[matter-of-fact] And she's very specific about what that risk looks like in practice, which I love, because it's completely unglamorous. Asking the obvious question. Admitting you made a mistake. Disagreeing with the senior person in the room. That's it. That's the whole category.
+
+[curious] Those are small.
+
+[teaching] They're small the way a dropped offer is small. Nobody's career ends because they didn't ask what the acronym meant. But run that across a hundred moments and you get a group that's operating on less information than it has.
+
+[curious] So she studies fifty-one teams in a manufacturing company. What's the finding?
+
+[teaching] Safety predicts learning behaviour — seeking feedback, discussing errors, asking for help. And then learning behaviour predicts performance. That middle step is the part that gets dropped when people summarize it.
+
+[emphatic] Which is why "safe teams perform better" is true and useless. It names the two ends and throws away the mechanism. If you don't know that learning behaviour is the bridge, you have no idea what to actually do on Monday.
+
+[curious] Say more about why that matters practically.
+
+[teaching] Because safety on its own doesn't do anything. A group that feels comfortable and never surfaces a single hard thing is not getting the benefit. The comfort has to convert into *voice*. That's the conversion step. Safety makes the error sayable, and a sayable error is one the group can work with.
+
+[contemplative] [short pause] Notice she isn't claiming safety prevents mistakes. Nothing in the paper says that.
+
+[curious] Okay, but that's what I've heard people claim.
+
+[matter-of-fact] Here's the part that should stop you. In her original data, the higher-safety teams reported *more* errors. Not fewer.
+
+[curious] More.
+
+[teaching] More. The error rate probably didn't move much. What moved was concealment. In the safe teams, people said the thing. In the unsafe teams, the errors were still happening — they just went into the drawer.
+
+[emphatic] So anyone using this paper to argue that safe teams make fewer mistakes has the arrow pointed backwards. She measured a group's willingness to talk about failure, and willingness to talk about failure looks, on a spreadsheet, exactly like more failure.
+
+[curious] And the improv version of that error is —
+
+[teaching] Reading a quiet room as a comfortable one. [pause] You've been in that room. The scene work is tidy. Nobody's flailing. Nobody's making the weird ugly swing that doesn't land. And a coach walks in and says the room feels good, and what's actually happening is that everybody has privately decided which of their impulses are safe to play.
+
+[contemplative] The tidy room and the safe room are indistinguishable from the outside. You can only tell them apart by what the group does with something unpolished. That's the diagnostic. Not the mood — the response.
+
+[curious] So why does a paper about manufacturing teams belong in an improv library?
+
+[teaching] Because it arrived independently at something ensemble practice had been asserting without any evidence at all. We say: the willingness to make an unpolished offer is a function of what the room does with unpolished offers. She measured that in a factory and got the same shape.
+
+[warm] And there's something clarifying about a construct you didn't invent for yourself confirming the thing you believed. It means it's not improv folklore. It's a property of groups.
+
+[curious] Where does she not apply?
+
+[matter-of-fact] Scope. She's describing conditions for candour in organisations that mostly *execute known work*. The task is defined; the question is whether people will speak up about how it's going.
+
+[emphatic] Improv asks a group to generate unknown work continuously. Every three seconds, somebody has to produce something that didn't exist, in front of everyone, with no draft. That's the same variable under a much heavier load.
+
+[teaching] So I'd take her mechanism and expect the threshold to be higher. A team that's safe enough for a good retrospective is not automatically safe enough for a bad first offer.
+
+[curious] What about the other half — that it's a *shared* belief?
+
+[teaching] That's the quiet structural claim, and I think it's the most useful one. Because it means safety is a property of the group, not of the brave individual inside it.
+
+[emphatic] Which kills the most common intervention. You cannot fix this by telling people to be more courageous. The nervous player in the corner isn't the problem — the room is producing that nervousness, and it would produce it in almost anyone you put there.
+
+[matter-of-fact] And because it's shared, it's local. She found it can be strong in one team and absent in the team right next door, same building, same management, same policies. It's built in the room, by the room. Which is bad news if you wanted a company-wide fix, and very good news if you run a rehearsal.
+
+[curious] So who should actually read this?
+
+[teaching] If you coach, direct, or run a rehearsal room — read it. It's an empirical paper, so there's a chunk of scale construction and regression you can move through quickly. The definition and the mechanism are what you're there for.
+
+[matter-of-fact] If you only perform, you can probably take the mechanism secondhand. What's aged is the setting — 1999, one manufacturing company, self-report measures alongside observation. What hasn't aged at all is the construct. Twenty-five years of work has piled on top of it and the definition has held.
+
+[contemplative] [pause] The thing I keep coming back to is the inverted finding. She went looking for safety and performance, and what she found in the numbers first looked like the safe teams were failing more.
+
+[warm] If she'd trusted the surface reading, the whole idea dies right there in the data. Instead she asked what would make a group report more of something without doing more of it. [short pause] And the answer was that they'd stopped hiding.
+
+[rewritten]

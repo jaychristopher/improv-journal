@@ -3,11 +3,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
+import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
 import { TableOfContents } from "@/components/TableOfContents";
 import { UpdatedOn } from "@/components/UpdatedOn";
-import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import {
+  getAtomBySlug,
+  getAtomDisplayTitle,
+  getAtomUrl,
+  getAudioUrl,
+  loadAtoms,
+} from "@/lib/content";
 import { contentsFor } from "@/lib/headings";
 import type { ExternalLink } from "@/lib/schema";
 import {
@@ -82,6 +89,13 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
     undefined,
     fm.description,
   );
+
+  // Library entries were the one content route with no player. The audio
+  // exists for every other atom type, and a reading-list entry — what is in
+  // the book, what has aged, who it rewards — is as listenable as any of them.
+  // References belong to no show, so this is a page with audio rather than an
+  // episode of anything, and it carries no PodcastEpisode markup.
+  const audioUrl = getAudioUrl("atoms", fm.id);
 
   const allAtoms = await loadAtoms();
   const atomById = new Map(allAtoms.map((a) => [a.frontmatter.id, a]));
@@ -162,6 +176,8 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
         )}
       </header>
 
+      {audioUrl && <AudioPlayer src={audioUrl} />}
+
       {/* Thirteen of the 32 entries clear the three-heading floor now that
           their sections are headings rather than bold labels. contentsFor
           returns nothing below it, so the shorter entries render no list. */}
@@ -197,10 +213,25 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
         </nav>
       )}
 
+      {/*
+        "Pages that cite it", not "Ideas shaped by this work".
+        
+        The two sections hold disjoint sets and their headings were English
+        synonyms — "X informs Y" and "Y shaped by X" are the same sentence in
+        opposite voice — so on the 19 entries that render both, a reader met two
+        identical-sounding headings over different lists and no way to tell what
+        separated them.
+        
+        What separates them is which side declared the link: the section above is
+        what this entry names in its own frontmatter, this one is every concept
+        that names the entry. That is an authoring detail and no reader can infer
+        it, but "cites" is a relation people already understand, and it is what
+        this list actually is.
+      */}
       {citingAtoms.length > 0 && (
         <nav className="border-foreground/10 mt-12 border-t pt-8">
           <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
-            Ideas shaped by this work
+            Pages that cite it
           </h2>
           {Array.from(byType.entries())
             .sort((a, b) => b[1].length - a[1].length)

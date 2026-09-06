@@ -1,0 +1,69 @@
+[curious] There's a study people quote constantly in improv circles. Jazz pianists in a brain scanner. And the takeaway everyone repeats is "science proves you should get out of your head."
+
+[teaching] Right. And the paper is real, the finding is real, and the phrase people built on top of it is doing more work than the data supports. Which makes it worth actually knowing what's in it.
+
+[curious] So what did they actually do?
+
+[matter-of-fact] They built a keyboard that could go inside an fMRI machine. No metal. Professional jazz pianists lie in the scanner and play two things. First, a sequence they've drilled to the point of automation. Then they improvise freely over the same harmonic material.
+
+[curious] Same notes-per-minute, same fingers, same instrument.
+
+[teaching] That's the whole design. If the motor demands are nearly identical, then whatever's different in the scan isn't about playing. It's about improvising. That's a genuinely elegant piece of experiment-building.
+
+[curious] And the difference was?
+
+[emphatic] A split. Not one thing going up or down — two things moving in opposite directions inside the prefrontal cortex. Big deactivation in the dorsolateral and lateral orbital regions. Focal activation in the medial prefrontal.
+
+[curious] Translate.
+
+[teaching] The regions that went quiet are the self-monitoring ones. Planning. Evaluating what you're doing against some external standard. Watching yourself. The region that lit up is associated with self-generated, internally motivated behaviour. [short pause] So the machinery of "is this good?" turns down while the machinery of "here's what's mine" turns up.
+
+[contemplative] That's the censor. As a measurable state.
+
+[teaching] That's the part that matters for us. We've all been handed the censor as a metaphor — this imagined little judge in the back of your head. This paper suggests it isn't only a metaphor. There's circuitry that does that job, and it demonstrably quietens during spontaneous generation.
+
+[curious] And it's a trade-off? Not just two independent dials?
+
+[emphatic] That's the second thing worth taking. They don't coexist comfortably. The monitoring goes down as the generating goes up. Which reframes what happens when you're computing in your head mid-scene — you're not refining your offer, you're competing with the thing that makes offers. Internal computation doesn't polish the work. It occupies the machinery.
+
+[contemplative] Everyone's felt that. The scene where you're a beat behind because you were building the clever line instead of listening.
+
+[teaching] And now you have a physiological story for why it felt that way instead of just a coach telling you to stop it.
+
+[curious] Third thing?
+
+[matter-of-fact] It's a state change. Not a skill you deploy, not a decision you make. A different configuration the brain moves into. [pause] Which is exactly what a warm-up is trying to produce. You're not stretching. You're trying to be in that state at minute one of the show rather than arriving there fifteen minutes in, after the first three scenes have already been sacrificed to getting there.
+
+[curious] Okay. Now the part where you tell me why I shouldn't oversell this at my next jam.
+
+[serious] Two things. First — jazz pianists. Not improvising actors. Every application of this to theatrical improv, including everything on this site, is an inference from an adjacent field. Not a demonstrated result.
+
+[curious] How adjacent?
+
+[teaching] Close enough to be reasonable. Both are spontaneous real-time generation in front of an audience, under time pressure, with no undo. But they differ in ways that might matter. We work in language. We have scene partners, which means half of what happens isn't ours. And when a musician plays a wrong note, harmony absorbs it — it becomes a passing tone, a colour. When we make a mistake, it becomes plot. It's now permanently in the world of the scene.
+
+[contemplative] So the error-handling is structurally different.
+
+[teaching] Which is exactly the domain the monitoring circuitry cares about. It's a reasonable inference. It is still an inference. Say it that way and you'll be the most credible person in the conversation.
+
+[curious] And the second caveat?
+
+[emphatic] The headline. "The brain switches off its inner critic." That's not what the study shows. The deactivation is relative — improvising versus a demanding control task. Self-monitoring was lower while improvising. It was nowhere near zero. There is no off switch in the data.
+
+[matter-of-fact] Picture the axis. Monitoring is high while reproducing the learned sequence, lower while improvising, and a long way above the floor in both conditions. The famous phrase is a claim about the bottom of that axis. The study never measured the bottom of that axis.
+
+[curious] And it doesn't say whether you can train the state.
+
+[serious] Nothing about trainability. That's the question every teacher wants answered, and it's simply not in this paper. Anyone who tells you the study proves warm-ups work is quoting a paper they haven't read.
+
+[curious] So who should actually read it?
+
+[teaching] If you teach, or if you write about improv, or if you're the person in your ensemble who ends up explaining why a note works — read it. It's short, it's open access, and it gives you a real mechanism to point at instead of vibes. And reading the actual thing means you'll stop repeating the overstated version.
+
+[matter-of-fact] If you just want to be better in scenes on Thursday, you don't need it. Knowing the mechanism doesn't change the move. Listen, respond, stop building lines in your head.
+
+[contemplative] Though there's something worth sitting with. Before this, spontaneity was a pedagogical claim. A thing teachers asserted, students took on faith, and nobody could point to. This makes it a physiological one. Not proven for us, not fully understood — but the state exists, and it's distinguishable from its opposite.
+
+[warm] Which means when a teacher says you're in your head, they're not describing your attitude. They're describing your configuration. And configurations change.
+
+[rewritten]

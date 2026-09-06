@@ -1,0 +1,79 @@
+[curious] I keep hearing bandwidth used as a vibe word. Someone says the scene got clogged and everyone nods. What is it actually?
+
+[teaching] Processing capacity. Yours, your partner's, and the audience's. It's finite, it's shared, and every single thing you send or receive spends some of it.
+
+[curious] Finite how? Like a number?
+
+[teaching] Roughly four things. That's Cowan's figure — working memory holds about four chunks. The seven-plus-or-minus-two number you learned in school was Miller's rough estimate that hardened into a fact it was never meant to be. Four is closer.
+
+[matter-of-fact] But chunks, not items. That distinction is the whole game. A beginner holds four separate things: my character's name, the location, what she just said, what I'm going to say. An experienced player holds all of that as one chunk called "this scene," and has three slots left over.
+
+[curious] So training doesn't give you more bandwidth.
+
+[teaching] Training makes you waste less of it. That's the reframe. Expert improvisers aren't running bigger machines. They've stopped spending capacity on internal computation — the deliberation becomes automatic, and the space that frees up is where the play happens.
+
+[curious] What does it look like when you run out?
+
+[warm] Reception degrades first. That's the cruel part. You don't feel yourself stop listening — you feel yourself keep listening. But you catch the words and lose the tone. Or you catch the gist and lose the specifics, so thirty seconds later you call her his sister and she was his boss.
+
+[curious] Why reception? Why not the talking?
+
+[teaching] Because you're prioritizing the thing you can see yourself failing at. Silence is visible. Missing a detail isn't — until it is.
+
+[short pause]
+
+[curious] I want to push on something. People say don't plan your next line, listen. But I'm doing both constantly. Why is that so expensive when I can, say, listen while walking across the stage?
+
+[emphatic] That's exactly the right question, and it has a real answer. Wickens — Multiple Resource Theory. Interference isn't about total effort. It's about overlap. Two tasks collide when they share the same stage, the same sense, the same code.
+
+[teaching] Moving while listening is nearly free. Different systems. But planning a sentence while listening to a sentence? Same stage, same verbal code. Ruinous. They're not competing for attention in the abstract — they're fighting over the identical machinery.
+
+[contemplative] So the note isn't a discipline note. It's a hardware note.
+
+[curious] And attention just... splits? Half here, half there?
+
+[matter-of-fact] It doesn't split. Cherry, 1953 — headphones, different message in each ear, subjects shadowing one of them. Afterward they couldn't say what the other message was about. Not the topic. Not even what language it was in.
+
+[curious] They didn't hear it at all?
+
+[teaching] It went in. It just wasn't attended to, and unattended is functionally gone. Attention is a gate, not a dimmer. There's no half-listening to two things — there's listening to one and believing you're doing both.
+
+[short pause]
+
+[curious] Okay, that's inside my head. What about the room?
+
+[teaching] Shared bandwidth. The scene has a collective capacity, and the audience is almost always the bottleneck. They don't have your context, your training, or any way to ask a clarifying question. They get one pass.
+
+[matter-of-fact] So "happy birthday" downloads instantly. "Cyborg from the future" is a large file on a slow connection. Not worse — more expensive. And whatever you spend on the premise is not available for the relationship, which is the thing they actually came for.
+
+[emphatic] This is the part that stings: your surplus capacity isn't spare. If the audience is at their limit and you're not, there's nobody on the other side to receive what you're sending. You're transmitting into a closed channel and calling it depth.
+
+[curious] So the clever premise isn't just risky. It's mathematically wasted.
+
+[warm] Often, yes. And Sweller gives you the mechanism — cognitive load theory. Capacity spent on one process is capacity the next one doesn't get. His learners solved problems fine and learned almost nothing from solving them, because the solving consumed exactly what the learning needed.
+
+[contemplative] Which is the note every teacher gives without knowing they're citing it. You can execute a complicated game and absorb nothing about your partner, because the executing ate the absorbing.
+
+[short pause]
+
+[curious] Is any of this recoverable? Or do you just have the day you have?
+
+[teaching] It recovers. Warm-ups clear the channel — that's literally what they're for, not just physical looseness. And flow reduces consumption rather than adding capacity.
+
+[matter-of-fact] Also: it's not only cognitive. Absorbing your partner's vulnerability draws from the same supply. Managing your own fear draws from it. A performer flooded with stage fright has less bandwidth before the first line — they walk out already spent.
+
+[curious] Is there a way to actually see it run out? Not read about it — see it.
+
+[emphatic] The Alphabet Game. Every line starts with the next letter, so a fixed slice of your capacity is occupied continuously, no relief. And then you watch what gets dropped when the rest runs short.
+
+[teaching] Because something will. Some people drop listening — they're composing an F line while their partner talks. Some drop character and become a person saying letters. Some hold the scene and lose the alphabet entirely.
+
+[contemplative] Whatever survives is what your improv is actually built on. Everything else was affordable, not fundamental.
+
+[curious] That's a rough mirror.
+
+[warm] It's the most honest one in the form. And it's the same mirror as your Tuesday — the meeting where you were rehearsing your point while someone was still making theirs, and you'd swear you were listening.
+
+[matter-of-fact] You weren't. There was no capacity for it. There never is.
+
+[rewritten]

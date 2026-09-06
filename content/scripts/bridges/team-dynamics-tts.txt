@@ -1,0 +1,111 @@
+[curious] Put five people in a room and something starts happening before anyone says a word. Someone takes the head of the table. Someone waits to see where everyone else sits. What is that?
+
+[teaching] That's the group organizing itself. And when we say a team has good or bad dynamics, that's what we're actually describing. Not personalities. Structure. Who speaks, who defers, who gets built on, who gets talked over.
+
+[curious] Organizational psychology has been studying this since the forties, right? Lewin, group dynamics, all that.
+
+[matter-of-fact] It has. And it's very good at describing what happens and very bad at telling you what to do on Tuesday. Because it studies groups from the outside. Meanwhile there's a practice that's been running live experiments on this every night for sixty years, in front of paying audiences, with no script.
+
+[curious] Us.
+
+[teaching] Us. Improv ensembles don't just experience these dynamics — we have to manage them in real time or the show dies. We have working vocabulary for things most teams only feel.
+
+[curious] So start with the thing nobody sees.
+
+[teaching] Status. Johnstone's observation from the seventies: every human interaction involves a status transaction. One person raises, the other lowers, or they match. And it has nothing to do with formal authority. A CEO can play low in a meeting while an intern plays high. Status is behavioral. It's in the posture, the eye contact, whether you hold a pause or rush to fill it.
+
+[conversational] Which we train deliberately. Read who's high, read who's low, adjust to serve the moment.
+
+[emphatic] And that's the whole difference. Most groups suffer because nobody sees the transactions happening. Everyone's reacting to a pattern they can't name.
+
+[contemplative] Think about your last meeting. Who spoke first. Who waited. And when someone made a suggestion — did the group evaluate the idea, or evaluate who said it?
+
+[short pause]
+
+[matter-of-fact] Every group weighs both. The only question is which one is longer.
+
+[curious] Okay, so why do teams get stuck? There's the forming-storming-norming thing everybody quotes.
+
+[teaching] Tuckman, 1965. Useful as a map. But it doesn't explain why some groups never get past storming, or why a group that was performing beautifully collapses overnight when one person leaves.
+
+[curious] And improv has a better answer?
+
+[teaching] A more precise one. Groups get stuck when interdependence breaks down. In a scene, your line is meaningless without your partner's line before it — and it only means something because of what comes after. There's no solo performance in ensemble work. Every choice is a response, and every choice creates the conditions for the next one.
+
+[warm] When that's working, you get group mind. The thing where the ensemble moves as one organism.
+
+[teaching] And here's the research that should be on a poster in every office. Woolley, 2010. Collective intelligence isn't predicted by the average IQ of the members. It's predicted by social sensitivity and equality of conversational turn-taking.
+
+[curious] Not how smart anyone is. How well they read each other.
+
+[matter-of-fact] Which ensembles have known for decades.
+
+[curious] Let's talk about safety, because that word has been beaten to death in corporate contexts.
+
+[serious] It has, and that's exactly the problem. Google's Project Aristotle studied a hundred and eighty teams and found psychological safety was the single strongest predictor of effectiveness. But it gets treated as a feeling. A vibe. Something you achieve with a trust fall.
+
+[emphatic] It's infrastructure. And you can see the mechanics on stage.
+
+[teaching] Right — a performer who doesn't feel safe hedges. They plan ahead instead of responding. They go for the safe choice instead of the honest one. They protect themselves instead of supporting their partner. And every one of those moves makes the scene worse and makes the group less safe, because now nobody can trust the responses they're getting.
+
+[contemplative] Same loop that kills teams anywhere. People withhold, avoid conflict, get predictable. Meetings become performances of agreement.
+
+[curious] So what's the actual fix?
+
+[matter-of-fact] Be supportive. Which sounds like a personality trait and is actually a practiced discipline. Treat your partner's contribution as valuable and build on it — especially when you don't yet see where it's going. Make your partner look good. Not because it's nice. Because it's the only way the system works.
+
+[teaching] And Edmondson's finding is the one that surprises people. Teams with high safety don't make fewer mistakes. They report more of them, and learn faster.
+
+[curious] Safety doesn't prevent failure.
+
+[warm] It makes failure useful.
+
+[curious] Here's my real question. Almost everything written about team dynamics assumes you can restructure the team. Most people can't. They're a member, not the manager.
+
+[emphatic] That's the honest gap, and there are exactly two things that are genuinely unilateral.
+
+[teaching] First: who gets heard. Woolley's finding is about a distribution, and one person can shift a distribution. "What do you think?" aimed at whoever hasn't spoken costs nothing and requires no standing. Do it twice in a meeting and the shape of the discussion changes.
+
+[curious] And the second?
+
+[teaching] What happens to a contribution after it's made. An idea that gets built on becomes the group's idea. An idea met with silence teaches everyone watching what offering costs. Yes-and at the group level is just being the person who says what's good about a suggestion before saying what's wrong with it. One consistent builder in a room of six changes what people are willing to put forward — because everyone calculates the risk of speaking from what happened to the last person who did.
+
+[curious] Anything smaller?
+
+[conversational] Two. Name a pattern once, neutrally — "we moved past that quite fast." Costs almost nothing the first time. And lower your own status on purpose, which raises whoever you're talking to. Asking someone to explain something you half-understand is a status transfer disguised as a question.
+
+[curious] And what can't you fix from below?
+
+[serious] Safety itself. It's set largely by the highest-status person in the room. If disagreement gets punished at the top — even mildly, even by a face — no amount of member behavior compensates. Everyone's reading that person for the rules, and they're right to.
+
+[matter-of-fact] So if that's your situation, the honest options are: protect the people below you from it, raise it with someone who can change it, or leave.
+
+[contemplative] Practicing better turn-taking underneath a manager who punishes dissent isn't a fix. It's a way of being tired.
+
+[short pause]
+
+[curious] One thing I want to name, because bad dynamics don't look like what people expect.
+
+[teaching] No. They're quiet. Decisions get made and relitigated privately afterward. The same three people speak every meeting and nobody remarks on it. Problems reach the manager individually instead of the team collectively. Work gets redone without anyone saying whose was replaced. The meeting ends early and the real conversation happens in the corridor.
+
+[matter-of-fact] None of that shows up on an engagement survey.
+
+[curious] And when a scene goes sideways?
+
+[teaching] The ensemble doesn't stop and assign blame. Someone adjusts. Someone heightens the unexpected turn. The mistake becomes material. That capacity to metabolize a rupture without stopping is what separates groups that perform from groups that process.
+
+[conversational] Off stage that's just naming it. "That landed differently than I intended." "I think we talked past each other." Naming the rupture doesn't make it bigger.
+
+[warm] Ignoring it is what makes it fester.
+
+[contemplative] You're already in groups. Families, friend circles, committees. Each one has status dynamics you've never named and safety levels you've never measured.
+
+[emphatic] The insight isn't that groups are complicated. It's that they're systematic. The dynamics aren't random — they're patterns, and patterns can be read and adjusted.
+
+[matter-of-fact] The ensemble doesn't hope for good chemistry. It practices the mechanics that produce it.
+
+[teaching] So start by watching. Who defers to whom, who fills the silences, who gets interrupted, who does the emotional labor.
+
+[serious] You can't change dynamics you can't see.
+
+[rewritten]

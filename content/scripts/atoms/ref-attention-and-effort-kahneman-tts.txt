@@ -1,0 +1,73 @@
+[curious] So there's a book everybody's read, and then there's this one. Which is not that one.
+
+[teaching] Right. And people mix them up constantly. This is Kahneman's academic monograph from 1973 — forty years before Thinking, Fast and Slow. It's not the airport bookstore Kahneman. It's a technical document written for researchers, and it reads like one.
+
+[curious] So dry.
+
+[matter-of-fact] Dry. Precise. If you go in expecting the storytelling of the later book, you're going to bounce hard. There are no anecdotes about Israeli flight instructors here. There are graphs.
+
+[curious] Then why does it keep showing up in the citations on this site?
+
+[teaching] Because it's where somebody first made the argument carefully. You've probably heard a hundred times that attention is limited. It's practically a bumper sticker at this point. This is the book that took that claim and said, okay, but what does that actually mean, and can we measure it.
+
+[short pause]
+
+[teaching] What Kahneman does is propose a model. Attention isn't a spotlight you aim. It's a pool of capacity you spend. Mental effort draws from that pool. Tasks compete for it. And when the total demanded exceeds what you've got, performance breaks down — not everywhere at once, but in a specific order.
+
+[curious] The order matters?
+
+[emphatic] The order is the whole thing for us. Under overload, secondary tasks degrade first. The thing you've flagged as primary keeps running. Everything else gets starved.
+
+[curious] Oh. That's the scene.
+
+[teaching] That's the scene. You're on stage, you decide the important job is coming up with something good to say — that's now your primary task. Listening to your partner has just been demoted to secondary. And secondary is what gets starved. You will genuinely not hear what they said. Not because you're rude, not because you don't care about them. Because of arithmetic.
+
+[curious] I want to push on the arithmetic thing, because it sounds like a metaphor.
+
+[matter-of-fact] It's not, and that's the second reason this book matters. Kahneman tied effort to physical measurement. Pupil dilation, most famously — your pupils widen as a task gets harder, and they widen proportionally. Which turns "attention feels limited" from a plausible description into something with an instrument pointed at it.
+
+[contemplative] There's something almost unsettling about that. The effort is visible on you. Somebody could have watched your eyes and known you'd stopped listening.
+
+[teaching] Your scene partner already knows. They can't name the mechanism, but they can feel it. That flat, slightly-off quality when someone's answering the line they prepared instead of the line you gave them.
+
+[curious] Okay. So who should actually read this?
+
+[matter-of-fact] Honestly? Almost nobody, if you're asking as a practitioner.
+
+[curious] That's blunt.
+
+[warm] It's blunt but it's fair. The parts that matter to improv fit in three sentences. Capacity is limited. Allocation is competitive. Overload eats the secondary task first. You've now got the whole payload. You don't need two hundred pages of tracking studies to act on it.
+
+[teaching] Where it earns its place is if you're the kind of person who's met an idea secondhand enough times that you start wondering what it's actually resting on. If you've read "attention is finite" in a dozen places and never seen anybody show their work — this is where the work got shown. That's a real itch, and this scratches it.
+
+[curious] And if I'm not that person?
+
+[matter-of-fact] Read the three sentences. Go to rehearsal.
+
+[short pause]
+
+[curious] You said the model has been revised. How badly?
+
+[teaching] Not badly, but meaningfully, and in a direction that matters for us. Kahneman's version is a single pool — one tank of attention, everything drinks from it. Wickens came along later and argued it's more like several partially separate pools. Visual, auditory, spatial, verbal.
+
+[curious] Why does that change anything?
+
+[teaching] Because the single-pool model predicts that any two demanding tasks interfere with each other. And that's just not what happens. Planning your next line while listening — those fight viciously. They're both verbal, both language-y, both drawing from the same well. But moving while listening? Barely interferes. You can cross the stage, handle an object, shift your posture, and still receive your partner fine.
+
+[emphatic] The 1973 model has no way to tell those two cases apart. It looks at both and says: high load, expect interference. It's right about the first one and wrong about the second.
+
+[curious] So it over-predicts.
+
+[matter-of-fact] It over-predicts, and always in the same direction. It never says two tasks will coexist fine when they actually collide. It says they'll collide when they'd have been fine. Which is a useful kind of wrong to know about — if you take the old model as current, you'll think you have to strip everything out of a scene to stay present. You don't. You have to stop doing the specific thing that's competing.
+
+[contemplative] That reframes a lot of notes I've been given. "Get out of your head" isn't about doing less. It's about not running language while you need language.
+
+[teaching] And it survives leaving the theatre. The reason you can drive and hold a conversation but can't compose an email and hold a conversation isn't willpower. Two different channels versus one channel twice.
+
+[curious] So what's held up?
+
+[confident] The ceiling. That there is a hard limit, that it's real, that you cannot will your way past it — that's stood for fifty years and it isn't going anywhere. The refinements are about the shape of the tank, not whether there's a tank.
+
+[contemplative] Which is the part that actually matters when you're standing on stage with nothing. The reason you didn't hear your partner isn't a character flaw you can work on. It's a budget you overspent.
+
+[rewritten]

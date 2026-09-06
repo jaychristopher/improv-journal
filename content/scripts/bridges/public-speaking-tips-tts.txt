@@ -1,0 +1,73 @@
+[curious] Okay, so nearly every piece of public speaking advice out there is about the talk you prepared. Structure it in three parts, open with a story, cut your slides, rehearse it out loud. And that's fine. But that's maybe half of what actually happens when you stand up.
+
+[teaching] Right. The other half is the question from the back. The point you lose in the middle. The projector dying. Somebody glancing at their phone and your concentration goes with it. Being asked to say a few words with ninety seconds of notice. Nobody rehearses the parts you can't rehearse. And you and I have been training exactly that for years without calling it public speaking.
+
+[curious] So where does the standard advice actively go wrong?
+
+[teaching] The preparation paradox. Past a certain point, more rehearsal makes people worse, and it's worth being precise about why. A memorised talk has exactly one path through it. Every word is load-bearing. Lose one word, you lose the path, and there's no second route to where you were going — so the panic is visible. Fluency, bought with brittleness.
+
+[emphatic] A talk you know rather than one you've memorised has many paths. Five or six things you want to land, a rough order. If the room needs them in a different order, fine, because nothing depends on the sentence before it.
+
+[curious] That's a scene structure, though. That's just holding a game and letting the details arrive.
+
+[teaching] It's the same object. So prepare beats, not sentences. Five phrases on a card. Memorise two things only — your first line and your last, because nerves are loudest at the open and trailing off is how a good talk ends badly. Rehearse the joins, not the paragraphs. Getting from point two to point three is where people actually stall.
+
+[matter-of-fact] And here's the test. If it comes out identically twice when you practise, you've memorised it. You built the brittle version without noticing.
+
+[curious] Say more about why going blank happens, because "nerves" never explained it to me.
+
+[teaching] Cognitive bandwidth. Attention is limited, action consumes capacity, and you cannot optimise everything at once. Stand up and try to do all of this simultaneously — deliver the content, monitor your delivery, watch the room, remember what's next, judge how it's going, and manage being judged. Six processes, one pool. Something gets dropped.
+
+[contemplative] And what gets dropped is the content. Which is why people go blank while remaining acutely aware of exactly how they sounded.
+
+[curious] That's internal computation. That's the scene partner who's stopped listening because they're writing their next line.
+
+[teaching] Identical. On stage it looks like someone who's stopped listening. At a podium it looks like someone reciting. And the fix isn't trying harder at composure, because composure is itself one of the six processes competing for the pool. You give your attention a job outside your own head. The argument. The faces in row three. The exact question you were asked. Monitoring doesn't get suppressed — it gets crowded out. Only a real external task will do it.
+
+[curious] Which is why "picture the audience naked" is such catastrophic advice.
+
+[emphatic] The worst, along with the mirror. Practising in a mirror trains you to watch yourself while speaking — that's the exact split attention that ruins delivery. You spend the talk monitoring your own face. And the naked thing occupies your attention with an invented image while a real room sits in front of you. Anything that makes the audience less real makes the talk worse, because responding to them is the whole job.
+
+[curious] So what does audience relationship actually mean here?
+
+[teaching] The room is a participant, not a recipient. Their attention, their laughter, their stillness — that's continuous feedback, and you steer by it. Most speakers treat the audience as a camera. That's why a talk can be technically fine and feel like it was delivered to nobody.
+
+[matter-of-fact] Practically: talk to one person at a time. Finish a whole thought with one face before you move. Sweeping the room lands on nobody — three or four real anchors reads as connection to everyone in it. If a point lands, give it room. If it doesn't, move on instead of re-explaining, because re-explaining is what kills the next three minutes.
+
+[curious] And the fire alarm.
+
+[warm] Name what everyone can see. The late arrivals. The fact that you're the last item before lunch. That's the obvious choice, and skipping it is nearly always a status move — naming the fire alarm feels beneath the occasion, so people speak past it. The room reads that omission as oblivious or evasive. Saying the plain thing costs you nothing and buys back all the attention the unspoken thing was quietly eating.
+
+[curious] Okay. Confidence. Everybody wants to know how to speak confidently.
+
+[teaching] And the phrasing contains the error. Confidence is treated as an input — the thing you acquire first, after which speaking becomes possible. It's an output. "Be confident" fails for the same reason "relax" fails: it names a destination and no route.
+
+[emphatic] But the good news is that what a room reads as confidence is a short list of observable behaviours, and not one of them requires feeling confident. They're all available to someone whose hands are shaking.
+
+[matter-of-fact] Don't rush the first sentence. Get there, look up, wait until it's quiet, then start — the wait feels enormous to you and reads as authority to everyone else. Stand still; unplanned movement is nervous energy leaking and it's the most legible tell in the room. Finish your sentences. Let your voice fall at the end of a statement, because rising intonation turns a claim into a request for approval. And tolerate one silence — two or three seconds, chosen by you, is the clearest possible signal you're not frightened of the room.
+
+[contemplative] Notice what's absent from that list. Feeling calm. None of them require it, and doing them tends to produce it, because the room responds and you notice the room responding. That runs in the opposite direction to how it's normally taught.
+
+[curious] What about when it actually goes wrong? Because that's the part I actually want.
+
+[teaching] That's the part worth practising, and nobody does. If you lose your place, say so and stand still. "Where was I — right, the second thing." Two seconds and the room stays with you. Filling the gap with noise while you search takes fifteen seconds and reads as unravelling.
+
+[serious] Don't narrate your own failure. "Sorry, this is going badly" turns a private wobble into a public one and hands the room a job it didn't want.
+
+[emphatic] And recover forwards, never backwards. Rescuing a mangled sentence costs more than starting a fresh one. That's the no-backspace scene — whatever just happened is now true, so you build from it instead of undoing it. Repair costs more than replacement, on stage and at the lectern.
+
+[curious] And Q and A, which is genuinely the only part I've ever seen decide what people remember.
+
+[teaching] Let the question finish, then take a beat — answering into the last third means you answered the one you assumed was coming. Answer the question that was actually asked; pivoting to your prepared answer reads as evasion even when it isn't, and everyone can see it. "I don't know" is a complete answer, and "here's how I'd find out" makes it a strong one. Bluffing is the only genuinely unrecoverable move.
+
+[warm] And treat a hostile question as an offer. That person is engaged, which is more than the silent ones are. Take the legitimate part seriously and answer that part.
+
+[curious] Last one — the reps problem.
+
+[matter-of-fact] Most people speak to a group a handful of times a year. Thirty attempts a decade, months apart, no feedback beyond a vague sense of how it went. No skill improves on that schedule, because you've forgotten the state you were in by the time the next one arrives. The largest available lever isn't a technique — it's manufacturing more attempts. An improv class is unusual mainly in density. One hour contains more unscripted, unretractable speech than a year of quarterly presentations.
+
+[contemplative] And there's a plateau almost everyone hits. Fluency arrives long before presence. You stop stumbling, you sound competent, and you're still not landing — because fluency is close to a motor skill and presence is an attention skill, and the second doesn't arrive free with the first.
+
+[emphatic] Which brings you back to the two that do most of the work. Give your attention a job outside your own head. And stop when you've finished. Neither one requires you to become a better speaker. They only require you to stop doing something. The most common failure in speaking was never starting badly — it's continuing.
+
+[rewritten]

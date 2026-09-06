@@ -1,0 +1,87 @@
+[curious] Okay, so five minutes before a meeting starts. Everyone's in the room but nobody's actually in the room. What do you do with that?
+
+[teaching] The same thing you do before a show. Nobody walks onto a stage cold. You warm up — not because your body needs stretching, but because your attention needs relocating. Everybody arrives inside their own head. The warm-up is the thing that moves them out of it.
+
+[curious] Relocating attention. Not building trust, not bonding.
+
+[matter-of-fact] Trust is downstream. Attention is the actual mechanism. You can't build trust with someone you're not looking at.
+
+[conversational] And this is the part that translates almost perfectly. You already know what it feels like to warm up badly — you go through the motions of Zip Zap Zop while mentally reviewing whether you're going to be funny tonight. The exercise happened. The shift didn't.
+
+[curious] So what makes the shift actually happen?
+
+[teaching] The exercise has to make internal processing impossible. Not discouraged — impossible. That's the design criterion. Mirroring works because your visual system gets completely saturated tracking someone's hands. There is no bandwidth left over for the monologue. One-word story works because you cannot pre-write your word; you get one, and it depends entirely on the one before it.
+
+[emphatic] Any exercise where you can still plan is not a warm-up. It's a pastime.
+
+[short pause]
+
+[curious] Give me the ones that actually earn their five minutes.
+
+[teaching] Mirroring, and specifically the third phase of it. Ninety seconds of A leads, ninety seconds of B leads, and then you drop the designation entirely. Nobody leads.
+
+[curious] That's the one that feels impossible.
+
+[warm] It feels impossible right up until it isn't. And what happens in that moment is that both people are simultaneously initiating and responding — asserting and yielding in the same gesture. Which is the whole job description of an improviser, compressed into a hand movement.
+
+[contemplative] Rooms go quiet when it clicks. People start smiling and can't say why.
+
+[conversational] Then gift giving, which I think is the most underrated exercise on any list. You mime handing your partner a wrapped box. Here's the rule: you don't know what's in it. They open it, and they name it. "Oh — a tiny golden trumpet." And then you say: I spent months finding exactly that one.
+
+[curious] So the giver commits retroactively.
+
+[emphatic] The giver commits retroactively. That's the entire teaching. You made an offer with no content, your partner filled it, and then you claimed authorship of their idea with total delight. That's making your partner look good, stripped down to its skeleton.
+
+[teaching] And notice what it inoculates against. The normal reflex when someone hands you something unexpected is evaluation — is this good, does this fit, where were we going. Gift giving trains the opposite reflex. Receive, name the value, commit. The evaluating can happen later or never.
+
+[curious] Energy pass I always thought of as filler.
+
+[matter-of-fact] It's filler if you run it sloppy. Every pass needs eye contact before the clap, and every receive has to match the energy of the send. The moment somebody sends a half-hearted clap the chain visibly breaks, and everyone can see exactly where it broke and who broke it.
+
+[teaching] That's why it works. It's the only exercise on the list that makes inattention publicly legible. You can fake listening in a conversation. You cannot fake it in a circle where the clap is coming to you.
+
+[short pause]
+
+[curious] What about the Yes And chain — is that still worth doing, or has it been ruined by corporate workshops?
+
+[conversational] It's been ruined by a specific misunderstanding, which is people thinking "yes, and" means agreeing. It doesn't. It means building on the specific thing that was just said. And the failure mode has a signature you can hear: "Yes, and also—" followed by the idea they came in with.
+
+[emphatic] "Yes, and also" is a redirect wearing a costume.
+
+[teaching] Real yes-and extends the particular detail. Beach. Yes, and the sand is bright purple. Yes, and it's purple because an octopus painted it last night. Each one is unusable without the one before. That's the test — could your contribution survive if you deleted the previous line? If yes, you weren't building.
+
+[curious] And you can't plan it.
+
+[matter-of-fact] You structurally can't. Which is the whole point of every exercise here.
+
+[short pause]
+
+[curious] Say I want to actually run one of these — before a rehearsal, or at work. What goes wrong?
+
+[teaching] Four things, and they're all in the framing, not the exercise.
+
+[matter-of-fact] Don't explain the benefit first. The second you say "this will help us collaborate better," you've invited the room to sit back and evaluate whether it worked. Say what to do. Do it. Let them notice.
+
+[conversational] Give a hard time limit out loud. "Two minutes, then we start." The objection you're defusing isn't embarrassment — it's the fear that this eats the meeting.
+
+[emphatic] Go first, and be visibly bad at it. Whoever calls the exercise sets the permission level. If you do it carefully and correctly, you've just taught everybody to be careful and correct, which is precisely what you were trying to dissolve.
+
+[serious] And let people opt out without negotiation. One person watching costs nothing. One person being talked into it in front of colleagues costs the whole room — and it teaches everybody that declining has a price, which guarantees you never get an honest round again.
+
+[curious] What if the team already knows each other well?
+
+[matter-of-fact] Then you get less, and you should know why. Familiar groups already have the shared baseline this creates. What you're doing instead is narrower — interrupting the default pattern where the same three people talk. If that's not your problem, an established team gains very little and will correctly clock it as filler.
+
+[curious] Last thing. Does this survive on video?
+
+[serious] Half of it doesn't, and the reason is latency. A video call puts a fraction of a second between what you do and what everyone else sees. Unnoticeable in conversation, fatal to anything needing two people on the same beat. Mirroring, energy pass, group countdown — they turn into a ragged mess, and the group reads that mess as their own failure rather than the network's.
+
+[teaching] What survives is anything verbal and turn-based. One-word story. Worst possible idea. Three things. The next person just starts when the last one stops, and latency costs nothing.
+
+[matter-of-fact] And name the next person out loud, every single time. In a room you negotiate turn order with peripheral vision. On a call that channel is gone, so a round-robin stalls every third turn while everyone waits to see who'll go.
+
+[contemplative] But strip all of it back and every one of these is doing the identical thing. Moving attention from inside to outside. From what's in my head to what's happening between us.
+
+[warm] That's not a team-building trick. That's the only mechanism connection has ever had. The exercises are just the fastest way we've found to force it.
+
+[rewritten]

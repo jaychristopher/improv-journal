@@ -1,0 +1,91 @@
+[curious] There's a phrase people use — "I can be myself around them." What are they actually describing?
+
+[teaching] An estimate. Not a feeling, an estimate. They've run a bunch of small experiments — mentioned something slightly embarrassing, admitted they didn't understand, got visibly frustrated — and nothing bad happened. Emotional safety is the running total of those experiments.
+
+[curious] So it's not something you can just declare.
+
+[teaching] Nobody has ever become safe to talk to by announcing they're safe to talk to. It's evidence, not policy. And the flip side of that phrase is just as useful — when someone says they have to manage how they come across, that's the same estimate coming back negative.
+
+[conversational] Which is why improv has something specific to offer here, and it's not inspirational. It's mechanical. An ensemble literally cannot function without this. You can't make a bold choice while you're worried about being judged for it. You can't fall backwards if you don't trust the catch. Sixty years of needing that nightly has produced actual drills.
+
+[curious] Before we get to those — there's a related term floating around. Psychological safety. Same thing?
+
+[matter-of-fact] Narrower. Edmondson's version is about interpersonal risk-taking on a team, and mostly the risk of speaking up. Asking the obvious question. Admitting the mistake. Disagreeing with the senior person.
+
+[teaching] Emotional safety is wider. It's whether feeling can be in the room at all. And you can absolutely have one without the other — a team where people say the difficult thing, but they say it in a completely flattened register, and anything with heat in it reads as unprofessional.
+
+[curious] Does it run both ways?
+
+[matter-of-fact] No. One direction. A group that can absorb feeling can obviously absorb a dissenting question. The reverse doesn't hold.
+
+[curious] Okay. The drills.
+
+[teaching] Five behaviours. First — support the offer even when it's strange. In improv the rule is treat what your partner gives you as a gift regardless of what it is. Your job is to build on it, not evaluate it.
+
+[conversational] Do that a few hundred times and something specific happens. The barrier to contributing goes to zero. People stop self-censoring because they've experienced it, not been told it.
+
+[emphatic] In a meeting that's "tell me more about that" before "here's why that won't work." Not being uncritical. Just establishing that the act of contributing is always safe, separately from whether the idea survives.
+
+[curious] Second?
+
+[teaching] Make failure survivable. Bad scenes happen constantly — that's the medium. What builds or destroys safety is the ensemble's response. Visible disappointment, an eye roll, the note in the bar afterwards — safety dies. Support, humour, and "that happens, next" — safety grows.
+
+[emphatic] The move is forward motion, not analysis. The debrief can come later. In the moment the only correct response to failure is next.
+
+[curious] Third.
+
+[teaching] Feedback about the work, never the person. "That scene lost energy in the second beat," not "you were bad." "The game was strong, the edit came early," not "you don't understand editing."
+
+[conversational] Sounds obvious. Gets violated constantly. "You need to be more proactive" is about a person. "The report would be stronger with your read on the Q2 numbers" is about a thing on a page. First one creates defence. Second one creates a draft.
+
+[curious] Fourth.
+
+[warm] Someone has to go first. The performer who makes the weird initiation, the emotional move, the risky choice — they're issuing permission. And if that person gets met with support, the next person risks more. Safety escalates through demonstrated vulnerability, and it escalates from the top.
+
+[teaching] Fifth — protect the quiet voices. Every ensemble has people who are naturally louder. Experienced players set up the newer ones. They create openings, slow the pace, pass focus instead of holding it. Not equal airtime. Equal access to it.
+
+[matter-of-fact] And don't cold-call the anxious person. That's the opposite move. Build low-pressure channels instead — written input first, small groups, async.
+
+[curious] You said these are rehearsable.
+
+[teaching] In order, yes. Gift-giving first — you hand someone an undefined object, they name it and value it. That's practice one with nothing riding on it. Then mirroring, which puts precise attention on one person and is uncomfortable for about ninety seconds and then isn't. Then the fracture-repair drill, where you break something deliberately and repair it without stopping — that's practice two, and a group that's done it has evidence instead of reassurance.
+
+[emphatic] Emotional honesty last. Run that first and you get polite compliance. Run it once the rest is in place and it does the actual thing.
+
+[curious] What about outside the room? Because most people meet this phrase in their personal life, not at work.
+
+[contemplative] Identical mechanism. Only the currency changes. And the test is usually tiny — it's rarely decided by the big conversation. It's decided the first time someone mentions a thing they're slightly embarrassed about, and whether that gets met or handled.
+
+[serious] Two failure modes worth naming. Moving straight to solutions is the most common way well-meaning people make a relationship less safe — you're answering a problem that wasn't the one being raised. And anything that resurfaces later as ammunition teaches, permanently, that disclosure is expensive.
+
+[curious] How do you actually tell if you're safe with someone?
+
+[teaching] Not by how you feel while you're talking. By what happens in the hours after. With someone safe, you say the thing and then stop thinking about it. With someone unsafe, the replay starts on the way home — reconsidering the phrasing, wondering how it landed, drafting the clarification you'll send if it comes up.
+
+[matter-of-fact] That rehearsal is the cost. And it's the most honest signal available, because it happens when you're not performing anymore.
+
+[curious] And a room? What are the signs there?
+
+[teaching] Not conflict. Rooms with real disagreement in them are frequently the safest ones. The signs are quieter — agreement arrives fast and unanimous, nobody says they don't understand something, bad news travels privately and late. People check with each other before raising something, which means the risk is being distributed instead of taken.
+
+[emphatic] Clearest one: the same two or three people speak in every meeting, and everybody has stopped noticing.
+
+[curious] How long to build it?
+
+[matter-of-fact] Weeks, for the ordinary version. Ten or fifteen small deposits and the estimate shifts. In a group that meets regularly that's inside a month — faster than most people expect.
+
+[serious] Withdrawal is not slow. One instance of something private resurfacing in front of other people can undo the lot.
+
+[curious] That's brutal.
+
+[contemplative] It's arithmetic. Trust is an estimate of what someone does with your exposure. A single counter-example is far more informative than fifteen confirmations. Safety accumulates slowly and gets spent fast, and that's not unfairness — that's just how evidence works.
+
+[curious] So can it be repaired?
+
+[teaching] Only by running the mechanism again. What doesn't work is the conversation about it. An apology is a claim about the future, and the person weighing it has just acquired evidence about the past. You're asking them to discount that on your word, which is precisely what they no longer have reason to do.
+
+[matter-of-fact] The one verbal thing that helps is naming the act, not the feeling. "I repeated something you told me in confidence" is checkable. "I'm sorry you felt unsafe" relocates the problem into their reaction, and reliably makes it worse.
+
+[contemplative] What all of this buys you is range. An ensemble that's been catching each other for months can do things on stage that a group of strangers physically cannot — not more talent, more infrastructure. Same for a team, same for a marriage. Without it everything still looks functional. It just means everyone is running a careful version of themselves, all the time, instead of the real one.
+
+[rewritten]

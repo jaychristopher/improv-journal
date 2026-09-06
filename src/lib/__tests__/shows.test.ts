@@ -21,9 +21,12 @@ describe("shows", () => {
     const seasons = await getEpisodesForShow("physics-of-connection");
     expect(seasons.length).toBe(1);
     expect(seasons[0].episodes.length).toBeGreaterThan(0);
-    // All episodes should link to root-level bridge URLs
+    // All episodes should link to root-level bridge URLs. Digits belong in the
+    // pattern: a fair number of bridges lead with a number the search query
+    // does — 5-minute-team-building, 21-questions-game — and they only started
+    // failing this when they gained audio and so became episodes.
     for (const ep of seasons[0].episodes) {
-      expect(ep.href).toMatch(/^\/[a-z-]+$/);
+      expect(ep.href).toMatch(/^\/[a-z0-9-]+$/);
       expect(ep.audioUrl).toContain("/audio/bridges/");
     }
   });

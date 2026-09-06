@@ -1,0 +1,79 @@
+[curious] Every list of virtual team building activities is the same list of in-person activities with "over Zoom" stapled onto the end. And they all die. Why?
+
+[teaching] Because the activity was never the thing doing the work. The room was. And video takes the room away.
+
+[curious] Okay, but what does that actually mean? What's gone?
+
+[teaching] Four things, and if you know the four you basically know the job. First: ambient signal. In a room you're reading dozens of small things continuously without ever deciding to. Who shifted. Who was about to speak. Who looked at whom. That's peripheral, it's constant, and you don't experience it as work. A grid of faces gives you almost none of it. So everyone's operating on a fraction of the information — and nobody notices they are.
+
+[curious] That's the part that gets me. You don't feel the loss.
+
+[matter-of-fact] You feel the result. You just misattribute it. [short pause] Second thing: the before and after. All the relationship-building in an office happens in the ninety seconds either side of the meeting. A call has no either side. It starts at the top of the hour with eleven people already watching you.
+
+[curious] And the overlap.
+
+[teaching] Right — third. Two people can't speak at once on a call without both of them stopping. So the natural turn-taking that lets a quiet person slip in? Gone. The confident get more confident, the quiet vanish entirely, and it happens faster than it would in a room.
+
+[curious] What's four?
+
+[emphatic] Silence stops being neutral. Three seconds of pause in a room is thinking. The same three seconds on a call reads as a technical fault, or a social failure, or someone frozen — and everybody rushes to fill it.
+
+[contemplative] And there's a fifth thing, except it's not a removal. It's an addition. Everybody is watching themselves.
+
+[curious] Oh, that's the whole problem, isn't it.
+
+[teaching] That's internal computation. Attention spent monitoring your own output instead of on the other person. It's the exact thing that kills presence in a scene. You know the player who's checking whether they're being funny while their scene partner is talking? Video puts everybody in that state by default, for the entire meeting, with a live mirror.
+
+[curious] So why does it always feel cheesy specifically? Not just bad — cheesy.
+
+[matter-of-fact] Look at how these things get sold. Not lame. Non-cheesy. Doesn't suck. Actually fun. Nobody advertises a list of in-person activities that way. The promise tells you exactly what people are bracing for.
+
+[curious] And the bracing is earned.
+
+[teaching] Completely. And it's got nothing to do with taste — it's the shape of a video call. Three reasons, none of them the activity. [pause] One: there is no periphery. A room has edges. You can stand at the back, half-listening, laughing in the right places, contributing nothing — and that is a legitimate, comfortable way to attend a thing. A grid has no back. Everyone is front row and on stage simultaneously, permanently.
+
+[curious] Which is a nightmare if you've ever done a show.
+
+[teaching] It's every performer's worst version of a warm-up. [short pause] Two: declining is visible. In a room, opting out looks like standing near the drinks. On a call it's a black square, or a face conspicuously not doing what everyone else is doing, with your name printed underneath. A shrug becomes a statement.
+
+[curious] And three?
+
+[teaching] Attention has nowhere to go but faces. Almost every in-person activity works by putting a shared object in the middle — a whiteboard, a prop, a problem. People look at the thing, not each other. Video removes the middle. Everybody's watching everybody, everybody knows it, and that self-consciousness is precisely what stops anyone playing.
+
+[contemplative] Put those together and you've described being watched while asked to be spontaneous, with no way to step back.
+
+[emphatic] Which is the single most reliable way to kill spontaneity that has ever been devised. And no amount of picking a better game touches any of it.
+
+[curious] So what actually fixes it?
+
+[teaching] Three tests. Attention lands on a task, not on the grid. A short answer is a complete answer. And somebody who doesn't want to join can decline without it becoming an event. [short pause] Everything that survives those tests works. Nothing that fails them does, no matter how good it is in a room.
+
+[curious] Give me the rules that fall out of that.
+
+[matter-of-fact] Short — five to ten minutes, because bandwidth is already going to the interface. Simultaneous rather than sequential — if eleven people answer in turn, you've wasted ten people's attention, so have everyone type at once. Visible beats spoken — give them something to look at that isn't a face. Pairs above eight people; breakouts of two, not three, because three has a spare person. And say what will happen — "three minutes, everyone types, no wrong answers." Uncertainty on video reads as threat much faster than it does in a room.
+
+[curious] What's the single best adaptation?
+
+[confident] Chat storm. Ask a question, everyone types the answer, nobody presses enter until a count of three. No first mover, so no anchoring. It's the closest thing to a free lunch on this whole subject.
+
+[teaching] Same principle in the silent document — five minutes of everyone writing before a word gets spoken. And the quietest people are consistently the ones with the most in there. Every time.
+
+[curious] Which tells you the silence was never about having nothing to say.
+
+[emphatic] It was about the format. Spoken rounds reward whoever unmutes fastest. After two of those, the quiet people have correctly learned that staying muted costs them nothing. That's not a personality trait you're observing. That's a structure you built.
+
+[curious] And the stuff that never works?
+
+[matter-of-fact] Rounds of eleven spoken answers. Ported physical games — charades, scavenger hunts — they produce compliance, not play. Competitive quizzes, because the same three people win and everyone else learns to stay muted. Mandatory cameras, because removing the ability to decline quietly is what turns an activity into an inspection. Anything requiring a hat.
+
+[curious] Anything requiring a hat.
+
+[teaching] Self-monitoring problem, made worse. You've handed someone a costume and a mirror.
+
+[contemplative] And here's the part that should bother you. A team that already talks easily gains almost nothing from any of this. A team that's never been in the same room gains the most — because what they're missing isn't knowledge of each other, it's trust, and trust is an accumulated estimate built out of many small exchanges. Remote teams get far fewer of those, so they have to be manufactured on purpose instead of waited for.
+
+[curious] And who gets scheduled for the mandatory fun?
+
+[matter-of-fact] The team that already talks easily. Every time.
+
+[rewritten]

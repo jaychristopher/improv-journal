@@ -1,49 +1,4 @@
 {
-  "/audio/paths/the-art-of-ensemble.mp3": {
-    "seconds": 447,
-    "formatted": "7:27",
-    "size": 7155485
-  },
-  "/audio/paths/teaching-improv.mp3": {
-    "seconds": 359,
-    "formatted": "5:59",
-    "size": 5736934
-  },
-  "/audio/paths/systems-of-improv.mp3": {
-    "seconds": 366,
-    "formatted": "6:06",
-    "size": 5860651
-  },
-  "/audio/paths/self-coaching-toolkit.mp3": {
-    "seconds": 452,
-    "formatted": "7:32",
-    "size": 7234478
-  },
-  "/audio/paths/reference-guide.mp3": {
-    "seconds": 430,
-    "formatted": "7:10",
-    "size": 6886741
-  },
-  "/audio/paths/physics-of-connection.mp3": {
-    "seconds": 480,
-    "formatted": "8:00",
-    "size": 7683787
-  },
-  "/audio/paths/mastering-the-form.mp3": {
-    "seconds": 412,
-    "formatted": "6:52",
-    "size": 6594167
-  },
-  "/audio/paths/beginner-foundations.mp3": {
-    "seconds": 349,
-    "formatted": "5:49",
-    "size": 5588562
-  },
-  "/audio/paths/advanced-game-and-character.mp3": {
-    "seconds": 372,
-    "formatted": "6:12",
-    "size": 5959709
-  },
   "/audio/youtube/06-framing-effect.original.mp3": {
     "seconds": 400,
     "formatted": "6:40",
@@ -229,6 +184,121 @@
     "formatted": "10:15",
     "size": 9847556
   },
+  "/audio/paths/the-art-of-ensemble.mp3": {
+    "seconds": 447,
+    "formatted": "7:27",
+    "size": 7155485
+  },
+  "/audio/paths/teaching-improv.mp3": {
+    "seconds": 359,
+    "formatted": "5:59",
+    "size": 5736934
+  },
+  "/audio/paths/systems-of-improv.mp3": {
+    "seconds": 366,
+    "formatted": "6:06",
+    "size": 5860651
+  },
+  "/audio/paths/self-coaching-toolkit.mp3": {
+    "seconds": 452,
+    "formatted": "7:32",
+    "size": 7234478
+  },
+  "/audio/paths/reference-guide.mp3": {
+    "seconds": 430,
+    "formatted": "7:10",
+    "size": 6886741
+  },
+  "/audio/paths/physics-of-connection.mp3": {
+    "seconds": 480,
+    "formatted": "8:00",
+    "size": 7683787
+  },
+  "/audio/paths/mastering-the-form.mp3": {
+    "seconds": 412,
+    "formatted": "6:52",
+    "size": 6594167
+  },
+  "/audio/paths/improv-for-teams.mp3": {
+    "seconds": 459,
+    "formatted": "7:39",
+    "size": 7344823
+  },
+  "/audio/paths/improv-for-life.mp3": {
+    "seconds": 348,
+    "formatted": "5:48",
+    "size": 5564738
+  },
+  "/audio/paths/beginner-foundations.mp3": {
+    "seconds": 349,
+    "formatted": "5:49",
+    "size": 5588562
+  },
+  "/audio/paths/advanced-game-and-character.mp3": {
+    "seconds": 372,
+    "formatted": "6:12",
+    "size": 5959709
+  },
+  "/audio/bridges/yes-and-improv.mp3": {
+    "seconds": 451,
+    "formatted": "7:31",
+    "size": 7209820
+  },
+  "/audio/bridges/would-you-rather-questions.mp3": {
+    "seconds": 368,
+    "formatted": "6:08",
+    "size": 5892831
+  },
+  "/audio/bridges/what-is-improv.mp3": {
+    "seconds": 415,
+    "formatted": "6:55",
+    "size": 6633876
+  },
+  "/audio/bridges/virtual-team-building-activities.mp3": {
+    "seconds": 441,
+    "formatted": "7:21",
+    "size": 7053086
+  },
+  "/audio/bridges/viola-spolin.mp3": {
+    "seconds": 392,
+    "formatted": "6:32",
+    "size": 6279440
+  },
+  "/audio/bridges/viewpoints.mp3": {
+    "seconds": 499,
+    "formatted": "8:19",
+    "size": 7986379
+  },
+  "/audio/bridges/types-of-listening.mp3": {
+    "seconds": 417,
+    "formatted": "6:57",
+    "size": 6667304
+  },
+  "/audio/bridges/trust-building-exercises.mp3": {
+    "seconds": 438,
+    "formatted": "7:18",
+    "size": 7008784
+  },
+  "/audio/bridges/this-or-that-questions.mp3": {
+    "seconds": 378,
+    "formatted": "6:18",
+    "size": 6052492
+  },
+  "/audio/bridges/theatre-games.mp3": {
+    "seconds": 392,
+    "formatted": "6:32",
+    "size": 6270664
+  },
+  "/audio/bridges/team-dynamics.mp3": {
+    "seconds": 507,
+    "formatted": "8:27",
+    "size": 8113441
+  },
+  "/audio/bridges/team-building-questions.mp3": {
+    "seconds": 468,
+    "formatted": "7:48",
+    "size": 7489018
+  },
   "/audio/bridges/team-building-activities.mp3": {
     "seconds": 367,
     "formatted": "6:07",
@@ -239,25 +309,195 @@
     "formatted": "6:23",
     "size": 6132740
   },
+  "/audio/bridges/rules-of-improv.mp3": {
+    "seconds": 476,
+    "formatted": "7:56",
+    "size": 7609386
+  },
+  "/audio/bridges/questions-to-get-to-know-someone.mp3": {
+    "seconds": 389,
+    "formatted": "6:29",
+    "size": 6219670
+  },
+  "/audio/bridges/questions-to-ask-in-an-interview.mp3": {
+    "seconds": 392,
+    "formatted": "6:32",
+    "size": 6275680
+  },
+  "/audio/bridges/questions-to-ask-friends.mp3": {
+    "seconds": 399,
+    "formatted": "6:39",
+    "size": 6380590
+  },
+  "/audio/bridges/questions-to-ask-a-girl.mp3": {
+    "seconds": 391,
+    "formatted": "6:31",
+    "size": 6257705
+  },
+  "/audio/bridges/questions-for-couples.mp3": {
+    "seconds": 386,
+    "formatted": "6:26",
+    "size": 6176208
+  },
+  "/audio/bridges/public-speaking-tips.mp3": {
+    "seconds": 552,
+    "formatted": "9:12",
+    "size": 8840280
+  },
   "/audio/bridges/psychological-safety.mp3": {
     "seconds": 421,
     "formatted": "7:01",
     "size": 6742542
+  },
+  "/audio/bridges/people-skills.mp3": {
+    "seconds": 478,
+    "formatted": "7:58",
+    "size": 7654110
+  },
+  "/audio/bridges/party-games.mp3": {
+    "seconds": 388,
+    "formatted": "6:28",
+    "size": 6205886
+  },
+  "/audio/bridges/networking-tips.mp3": {
+    "seconds": 514,
+    "formatted": "8:34",
+    "size": 8218348
+  },
+  "/audio/bridges/most-likely-to-questions.mp3": {
+    "seconds": 418,
+    "formatted": "6:58",
+    "size": 6683603
+  },
+  "/audio/bridges/improv-warm-up-games.mp3": {
+    "seconds": 379,
+    "formatted": "6:19",
+    "size": 6072546
+  },
+  "/audio/bridges/improv-theory.mp3": {
+    "seconds": 445,
+    "formatted": "7:25",
+    "size": 7116611
+  },
+  "/audio/bridges/improv-team-building.mp3": {
+    "seconds": 413,
+    "formatted": "6:53",
+    "size": 6614646
+  },
+  "/audio/bridges/improv-prompts.mp3": {
+    "seconds": 356,
+    "formatted": "5:56",
+    "size": 5700569
+  },
+  "/audio/bridges/improv-games-for-kids.mp3": {
+    "seconds": 378,
+    "formatted": "6:18",
+    "size": 6046216
+  },
+  "/audio/bridges/icebreaker-questions-for-work.mp3": {
+    "seconds": 462,
+    "formatted": "7:42",
+    "size": 7391626
+  },
+  "/audio/bridges/how-to-think-on-your-feet.mp3": {
+    "seconds": 484,
+    "formatted": "8:04",
+    "size": 7739790
+  },
+  "/audio/bridges/how-to-stop-people-pleasing.mp3": {
+    "seconds": 436,
+    "formatted": "7:16",
+    "size": 6982450
   },
   "/audio/bridges/how-to-stop-overthinking.mp3": {
     "seconds": 351,
     "formatted": "5:51",
     "size": 5622833
   },
+  "/audio/bridges/how-to-stop-overthinking-in-a-relationship.mp3": {
+    "seconds": 399,
+    "formatted": "6:39",
+    "size": 6384766
+  },
+  "/audio/bridges/how-to-stop-caring-what-people-think.mp3": {
+    "seconds": 491,
+    "formatted": "8:11",
+    "size": 7861417
+  },
+  "/audio/bridges/how-to-read-the-room.mp3": {
+    "seconds": 433,
+    "formatted": "7:13",
+    "size": 6926027
+  },
+  "/audio/bridges/how-to-read-body-language.mp3": {
+    "seconds": 447,
+    "formatted": "7:27",
+    "size": 7160081
+  },
+  "/audio/bridges/how-to-overcome-fear-of-failure.mp3": {
+    "seconds": 449,
+    "formatted": "7:29",
+    "size": 7188079
+  },
+  "/audio/bridges/how-to-make-small-talk.mp3": {
+    "seconds": 496,
+    "formatted": "8:16",
+    "size": 7942915
+  },
+  "/audio/bridges/how-to-make-friends-as-an-adult.mp3": {
+    "seconds": 453,
+    "formatted": "7:33",
+    "size": 7249105
+  },
+  "/audio/bridges/how-to-let-go-of-control.mp3": {
+    "seconds": 435,
+    "formatted": "7:15",
+    "size": 6958212
+  },
+  "/audio/bridges/how-to-keep-a-conversation-going.mp3": {
+    "seconds": 425,
+    "formatted": "7:05",
+    "size": 6794785
+  },
+  "/audio/bridges/how-to-have-difficult-conversations.mp3": {
+    "seconds": 458,
+    "formatted": "7:38",
+    "size": 7335620
+  },
   "/audio/bridges/how-to-give-feedback.mp3": {
     "seconds": 394,
     "formatted": "6:34",
     "size": 6303686
   },
+  "/audio/bridges/how-to-get-better-at-improv.mp3": {
+    "seconds": 386,
+    "formatted": "6:26",
+    "size": 6182475
+  },
+  "/audio/bridges/how-to-deal-with-rejection.mp3": {
+    "seconds": 413,
+    "formatted": "6:53",
+    "size": 6612138
+  },
   "/audio/bridges/how-to-deal-with-conflict.mp3": {
     "seconds": 397,
     "formatted": "6:37",
     "size": 6352589
+  },
+  "/audio/bridges/how-to-be-witty.mp3": {
+    "seconds": 434,
+    "formatted": "7:14",
+    "size": 6952355
+  },
+  "/audio/bridges/how-to-be-vulnerable.mp3": {
+    "seconds": 394,
+    "formatted": "6:34",
+    "size": 6299085
+  },
+  "/audio/bridges/how-to-be-present.mp3": {
+    "seconds": 498,
+    "formatted": "8:18",
+    "size": 7975939
   },
   "/audio/bridges/how-to-be-more-creative.mp3": {
     "seconds": 378,
@@ -269,20 +509,135 @@
     "formatted": "6:06",
     "size": 5859814
   },
+  "/audio/bridges/how-to-be-more-charismatic.mp3": {
+    "seconds": 485,
+    "formatted": "8:05",
+    "size": 7768217
+  },
+  "/audio/bridges/how-to-be-more-assertive.mp3": {
+    "seconds": 435,
+    "formatted": "7:15",
+    "size": 6964058
+  },
+  "/audio/bridges/how-to-be-more-articulate.mp3": {
+    "seconds": 406,
+    "formatted": "6:46",
+    "size": 6489674
+  },
+  "/audio/bridges/how-to-be-less-awkward.mp3": {
+    "seconds": 487,
+    "formatted": "8:07",
+    "size": 7800398
+  },
   "/audio/bridges/how-to-be-funny.mp3": {
     "seconds": 369,
     "formatted": "6:09",
     "size": 5897435
+  },
+  "/audio/bridges/how-to-be-a-good-listener.mp3": {
+    "seconds": 358,
+    "formatted": "5:58",
+    "size": 5727319
+  },
+  "/audio/bridges/how-to-be-a-good-friend.mp3": {
+    "seconds": 426,
+    "formatted": "7:06",
+    "size": 6812754
+  },
+  "/audio/bridges/how-to-be-a-better-manager.mp3": {
+    "seconds": 387,
+    "formatted": "6:27",
+    "size": 6200865
+  },
+  "/audio/bridges/funny-questions-to-ask.mp3": {
+    "seconds": 418,
+    "formatted": "6:58",
+    "size": 6685279
+  },
+  "/audio/bridges/fun-questions-to-ask-friends.mp3": {
+    "seconds": 430,
+    "formatted": "7:10",
+    "size": 6886316
   },
   "/audio/bridges/framing-effect.mp3": {
     "seconds": 452,
     "formatted": "7:32",
     "size": 7239909
   },
+  "/audio/bridges/fear-of-public-speaking.mp3": {
+    "seconds": 487,
+    "formatted": "8:07",
+    "size": 7789947
+  },
+  "/audio/bridges/emotional-safety.mp3": {
+    "seconds": 535,
+    "formatted": "8:55",
+    "size": 8557737
+  },
+  "/audio/bridges/del-close.mp3": {
+    "seconds": 402,
+    "formatted": "6:42",
+    "size": 6431581
+  },
+  "/audio/bridges/deep-questions-to-ask.mp3": {
+    "seconds": 393,
+    "formatted": "6:33",
+    "size": 6285721
+  },
+  "/audio/bridges/conversation-starters.mp3": {
+    "seconds": 375,
+    "formatted": "6:15",
+    "size": 6004846
+  },
+  "/audio/bridges/confidence-building-exercises.mp3": {
+    "seconds": 451,
+    "formatted": "7:31",
+    "size": 7213996
+  },
+  "/audio/bridges/collaboration-skills.mp3": {
+    "seconds": 422,
+    "formatted": "7:02",
+    "size": 6754243
+  },
   "/audio/bridges/active-listening.mp3": {
     "seconds": 361,
     "formatted": "6:01",
     "size": 5774973
+  },
+  "/audio/bridges/active-listening-exercises.mp3": {
+    "seconds": 392,
+    "formatted": "6:32",
+    "size": 6279859
+  },
+  "/audio/bridges/5-minute-team-building.mp3": {
+    "seconds": 434,
+    "formatted": "7:14",
+    "size": 6944414
+  },
+  "/audio/bridges/36-questions-to-fall-in-love.mp3": {
+    "seconds": 410,
+    "formatted": "6:50",
+    "size": 6564074
+  },
+  "/audio/bridges/21-questions-game.mp3": {
+    "seconds": 373,
+    "formatted": "6:13",
+    "size": 5973077
+  },
+  "/audio/bridges/2-person-improv-games.mp3": {
+    "seconds": 429,
+    "formatted": "7:09",
+    "size": 6872105
+  },
+  "/audio/atoms/zip-zap-zop.mp3": {
+    "seconds": 392,
+    "formatted": "6:32",
+    "size": 6276101
+  },
+  "/audio/atoms/yes-lets.mp3": {
+    "seconds": 387,
+    "formatted": "6:27",
+    "size": 6192512
   },
   "/audio/atoms/yes-and.mp3": {
     "seconds": 325,
@@ -293,6 +648,76 @@
     "seconds": 342,
     "formatted": "5:42",
     "size": 5479476
+  },
+  "/audio/atoms/worlds-worst.mp3": {
+    "seconds": 309,
+    "formatted": "5:09",
+    "size": 4939467
+  },
+  "/audio/atoms/wimping.mp3": {
+    "seconds": 355,
+    "formatted": "5:55",
+    "size": 5675486
+  },
+  "/audio/atoms/what-are-you-doing.mp3": {
+    "seconds": 337,
+    "formatted": "5:37",
+    "size": 5393371
+  },
+  "/audio/atoms/warm-up.mp3": {
+    "seconds": 347,
+    "formatted": "5:47",
+    "size": 5547178
+  },
+  "/audio/atoms/want.mp3": {
+    "seconds": 315,
+    "formatted": "5:15",
+    "size": 5045215
+  },
+  "/audio/atoms/vulnerability.mp3": {
+    "seconds": 362,
+    "formatted": "6:02",
+    "size": 5794617
+  },
+  "/audio/atoms/viewpoints.mp3": {
+    "seconds": 422,
+    "formatted": "7:02",
+    "size": 6758008
+  },
+  "/audio/atoms/two-person-scene.mp3": {
+    "seconds": 328,
+    "formatted": "5:28",
+    "size": 5246249
+  },
+  "/audio/atoms/two-person-longform.mp3": {
+    "seconds": 369,
+    "formatted": "6:09",
+    "size": 5907879
+  },
+  "/audio/atoms/two-headed-expert.mp3": {
+    "seconds": 309,
+    "formatted": "5:09",
+    "size": 4942390
+  },
+  "/audio/atoms/trust.mp3": {
+    "seconds": 381,
+    "formatted": "6:21",
+    "size": 6098046
+  },
+  "/audio/atoms/tilt.mp3": {
+    "seconds": 300,
+    "formatted": "5:00",
+    "size": 4802379
+  },
+  "/audio/atoms/theatresports.mp3": {
+    "seconds": 388,
+    "formatted": "6:28",
+    "size": 6210902
+  },
+  "/audio/atoms/the-machine.mp3": {
+    "seconds": 405,
+    "formatted": "6:45",
+    "size": 6478393
   },
   "/audio/atoms/tag-run.mp3": {
     "seconds": 386,
@@ -319,6 +744,11 @@
     "formatted": "5:23",
     "size": 5162244
   },
+  "/audio/atoms/superheroes.mp3": {
+    "seconds": 383,
+    "formatted": "6:23",
+    "size": 6133992
+  },
   "/audio/atoms/suggestion.mp3": {
     "seconds": 383,
     "formatted": "6:23",
@@ -329,10 +759,25 @@
     "formatted": "6:25",
     "size": 6163256
   },
+  "/audio/atoms/story-story-die.mp3": {
+    "seconds": 343,
+    "formatted": "5:43",
+    "size": 5487413
+  },
+  "/audio/atoms/story-spine.mp3": {
+    "seconds": 357,
+    "formatted": "5:57",
+    "size": 5719377
+  },
   "/audio/atoms/steering.mp3": {
     "seconds": 404,
     "formatted": "6:44",
     "size": 6460003
+  },
+  "/audio/atoms/status.mp3": {
+    "seconds": 334,
+    "formatted": "5:34",
+    "size": 5343637
   },
   "/audio/atoms/status-transfer.mp3": {
     "seconds": 376,
@@ -349,6 +794,16 @@
     "formatted": "6:53",
     "size": 6604196
   },
+  "/audio/atoms/spontaneity.mp3": {
+    "seconds": 321,
+    "formatted": "5:21",
+    "size": 5132152
+  },
+  "/audio/atoms/specificity.mp3": {
+    "seconds": 334,
+    "formatted": "5:34",
+    "size": 5336946
+  },
   "/audio/atoms/space-work.mp3": {
     "seconds": 356,
     "formatted": "5:56",
@@ -359,15 +814,45 @@
     "formatted": "6:20",
     "size": 6073812
   },
+  "/audio/atoms/sound-ball.mp3": {
+    "seconds": 344,
+    "formatted": "5:44",
+    "size": 5509139
+  },
   "/audio/atoms/signal.mp3": {
     "seconds": 361,
     "formatted": "6:01",
     "size": 5779984
   },
+  "/audio/atoms/side-coaching.mp3": {
+    "seconds": 401,
+    "formatted": "6:41",
+    "size": 6416951
+  },
+  "/audio/atoms/show-dynamic.mp3": {
+    "seconds": 303,
+    "formatted": "5:03",
+    "size": 4855880
+  },
   "/audio/atoms/shared-reality-fragility.mp3": {
     "seconds": 375,
     "formatted": "6:15",
     "size": 5998998
+  },
+  "/audio/atoms/scenes-from-a-hat.mp3": {
+    "seconds": 383,
+    "formatted": "6:23",
+    "size": 6134828
+  },
+  "/audio/atoms/scene-structure.mp3": {
+    "seconds": 284,
+    "formatted": "4:44",
+    "size": 4546590
+  },
+  "/audio/atoms/safety-in-the-room.mp3": {
+    "seconds": 420,
+    "formatted": "7:00",
+    "size": 6724572
   },
   "/audio/atoms/run.mp3": {
     "seconds": 362,
@@ -384,10 +869,175 @@
     "formatted": "6:02",
     "size": 5787507
   },
+  "/audio/atoms/relationship.mp3": {
+    "seconds": 328,
+    "formatted": "5:28",
+    "size": 5255027
+  },
   "/audio/atoms/reincorporation.mp3": {
     "seconds": 386,
     "formatted": "6:26",
     "size": 6179972
+  },
+  "/audio/atoms/ref-wickens-multiple-resources.mp3": {
+    "seconds": 395,
+    "formatted": "6:35",
+    "size": 6313716
+  },
+  "/audio/atoms/ref-viewpoints-bogart-landau.mp3": {
+    "seconds": 405,
+    "formatted": "6:45",
+    "size": 6487589
+  },
+  "/audio/atoms/ref-ucb-manual.mp3": {
+    "seconds": 367,
+    "formatted": "6:07",
+    "size": 5874440
+  },
+  "/audio/atoms/ref-truth-in-comedy.mp3": {
+    "seconds": 377,
+    "formatted": "6:17",
+    "size": 6034934
+  },
+  "/audio/atoms/ref-tj-dave-speed-of-life.mp3": {
+    "seconds": 373,
+    "formatted": "6:13",
+    "size": 5974335
+  },
+  "/audio/atoms/ref-sweller-cognitive-load.mp3": {
+    "seconds": 366,
+    "formatted": "6:06",
+    "size": 5863573
+  },
+  "/audio/atoms/ref-stiles-improvise-freely.mp3": {
+    "seconds": 336,
+    "formatted": "5:36",
+    "size": 5375400
+  },
+  "/audio/atoms/ref-stanislavski-actor-prepares.mp3": {
+    "seconds": 340,
+    "formatted": "5:40",
+    "size": 5436422
+  },
+  "/audio/atoms/ref-spolin-improvisation-for-theater.mp3": {
+    "seconds": 429,
+    "formatted": "7:09",
+    "size": 6867090
+  },
+  "/audio/atoms/ref-sawyer-improvised-dialogues.mp3": {
+    "seconds": 354,
+    "formatted": "5:54",
+    "size": 5670057
+  },
+  "/audio/atoms/ref-sawyer-group-genius.mp3": {
+    "seconds": 447,
+    "formatted": "7:27",
+    "size": 7152138
+  },
+  "/audio/atoms/ref-salinsky-improv-handbook.mp3": {
+    "seconds": 370,
+    "formatted": "6:10",
+    "size": 5924176
+  },
+  "/audio/atoms/ref-overlie-standing-in-space.mp3": {
+    "seconds": 366,
+    "formatted": "6:06",
+    "size": 5864833
+  },
+  "/audio/atoms/ref-napier-improvise.mp3": {
+    "seconds": 322,
+    "formatted": "5:22",
+    "size": 5157640
+  },
+  "/audio/atoms/ref-napier-behind-the-scenes.mp3": {
+    "seconds": 355,
+    "formatted": "5:55",
+    "size": 5674236
+  },
+  "/audio/atoms/ref-meisner-on-acting.mp3": {
+    "seconds": 401,
+    "formatted": "6:41",
+    "size": 6414445
+  },
+  "/audio/atoms/ref-madson-improv-wisdom.mp3": {
+    "seconds": 351,
+    "formatted": "5:51",
+    "size": 5610711
+  },
+  "/audio/atoms/ref-limb-braun-jazz-improvisation.mp3": {
+    "seconds": 361,
+    "formatted": "6:01",
+    "size": 5770370
+  },
+  "/audio/atoms/ref-impro-storytellers-johnstone.mp3": {
+    "seconds": 359,
+    "formatted": "5:59",
+    "size": 5742784
+  },
+  "/audio/atoms/ref-impro-johnstone.mp3": {
+    "seconds": 380,
+    "formatted": "6:20",
+    "size": 6083003
+  },
+  "/audio/atoms/ref-hines-substack.mp3": {
+    "seconds": 391,
+    "formatted": "6:31",
+    "size": 6260219
+  },
+  "/audio/atoms/ref-hines-greatest-improviser.mp3": {
+    "seconds": 423,
+    "formatted": "7:03",
+    "size": 6761355
+  },
+  "/audio/atoms/ref-halpern-art-by-committee.mp3": {
+    "seconds": 294,
+    "formatted": "4:54",
+    "size": 4697471
+  },
+  "/audio/atoms/ref-goffman-frame-analysis.mp3": {
+    "seconds": 393,
+    "formatted": "6:33",
+    "size": 6284882
+  },
+  "/audio/atoms/ref-fey-bossypants.mp3": {
+    "seconds": 361,
+    "formatted": "6:01",
+    "size": 5782484
+  },
+  "/audio/atoms/ref-edmondson-psychological-safety.mp3": {
+    "seconds": 398,
+    "formatted": "6:38",
+    "size": 6363037
+  },
+  "/audio/atoms/ref-csikszentmihalyi-flow.mp3": {
+    "seconds": 381,
+    "formatted": "6:21",
+    "size": 6095542
+  },
+  "/audio/atoms/ref-cowan-magical-number-four.mp3": {
+    "seconds": 376,
+    "formatted": "6:16",
+    "size": 6024077
+  },
+  "/audio/atoms/ref-cherry-cocktail-party.mp3": {
+    "seconds": 275,
+    "formatted": "4:35",
+    "size": 4406156
+  },
+  "/audio/atoms/ref-carrane-improv-nerd.mp3": {
+    "seconds": 361,
+    "formatted": "6:01",
+    "size": 5770783
+  },
+  "/audio/atoms/ref-brown-daring-greatly.mp3": {
+    "seconds": 359,
+    "formatted": "5:59",
+    "size": 5748638
+  },
+  "/audio/atoms/ref-attention-and-effort-kahneman.mp3": {
+    "seconds": 352,
+    "formatted": "5:52",
+    "size": 5633282
   },
   "/audio/atoms/reality-construction.mp3": {
     "seconds": 376,
@@ -398,6 +1048,26 @@
     "seconds": 377,
     "formatted": "6:17",
     "size": 6030758
+  },
+  "/audio/atoms/questions-only.mp3": {
+    "seconds": 359,
+    "formatted": "5:59",
+    "size": 5744452
+  },
+  "/audio/atoms/presence.mp3": {
+    "seconds": 321,
+    "formatted": "5:21",
+    "size": 5134240
+  },
+  "/audio/atoms/premise.mp3": {
+    "seconds": 328,
+    "formatted": "5:28",
+    "size": 5256698
+  },
+  "/audio/atoms/point-of-view.mp3": {
+    "seconds": 284,
+    "formatted": "4:44",
+    "size": 4543663
   },
   "/audio/atoms/playing-against-type.mp3": {
     "seconds": 389,
@@ -424,6 +1094,16 @@
     "formatted": "6:09",
     "size": 5912478
   },
+  "/audio/atoms/pass-the-clap.mp3": {
+    "seconds": 348,
+    "formatted": "5:48",
+    "size": 5565569
+  },
+  "/audio/atoms/party-quirks.mp3": {
+    "seconds": 391,
+    "formatted": "6:31",
+    "size": 6249350
+  },
   "/audio/atoms/pacing.mp3": {
     "seconds": 372,
     "formatted": "6:12",
@@ -444,15 +1124,30 @@
     "formatted": "6:40",
     "size": 6403578
   },
+  "/audio/atoms/organic-longform.mp3": {
+    "seconds": 388,
+    "formatted": "6:28",
+    "size": 6212572
+  },
   "/audio/atoms/opening.mp3": {
     "seconds": 381,
     "formatted": "6:21",
     "size": 6089692
   },
+  "/audio/atoms/one-word-story.mp3": {
+    "seconds": 341,
+    "formatted": "5:41",
+    "size": 5460664
+  },
   "/audio/atoms/one-word-scene.mp3": {
     "seconds": 411,
     "formatted": "6:51",
     "size": 6574108
+  },
+  "/audio/atoms/offers.mp3": {
+    "seconds": 333,
+    "formatted": "5:33",
+    "size": 5330676
   },
   "/audio/atoms/obvious-choice.mp3": {
     "seconds": 357,
@@ -469,6 +1164,26 @@
     "formatted": "6:09",
     "size": 5911223
   },
+  "/audio/atoms/narrative-longform.mp3": {
+    "seconds": 344,
+    "formatted": "5:44",
+    "size": 5497446
+  },
+  "/audio/atoms/musical-improv.mp3": {
+    "seconds": 379,
+    "formatted": "6:19",
+    "size": 6062941
+  },
+  "/audio/atoms/montage.mp3": {
+    "seconds": 365,
+    "formatted": "6:05",
+    "size": 5846856
+  },
+  "/audio/atoms/monoscene.mp3": {
+    "seconds": 362,
+    "formatted": "6:02",
+    "size": 5786674
+  },
   "/audio/atoms/model-of-their-model.mp3": {
     "seconds": 314,
     "formatted": "5:14",
@@ -478,6 +1193,16 @@
     "seconds": 401,
     "formatted": "6:41",
     "size": 6414449
+  },
+  "/audio/atoms/micetro.mp3": {
+    "seconds": 368,
+    "formatted": "6:08",
+    "size": 5893667
+  },
+  "/audio/atoms/meisner-technique.mp3": {
+    "seconds": 373,
+    "formatted": "6:13",
+    "size": 5972658
   },
   "/audio/atoms/meaning-is-relational.mp3": {
     "seconds": 340,
@@ -494,10 +1219,20 @@
     "formatted": "6:19",
     "size": 6060020
   },
+  "/audio/atoms/latency-recovery.mp3": {
+    "seconds": 366,
+    "formatted": "6:06",
+    "size": 5850198
+  },
   "/audio/atoms/last-word-response.mp3": {
     "seconds": 361,
     "formatted": "6:01",
     "size": 5782913
+  },
+  "/audio/atoms/la-ronde.mp3": {
+    "seconds": 315,
+    "formatted": "5:15",
+    "size": 5035601
   },
   "/audio/atoms/justification.mp3": {
     "seconds": 338,
@@ -539,10 +1274,30 @@
     "formatted": "6:18",
     "size": 6055834
   },
+  "/audio/atoms/heightening.mp3": {
+    "seconds": 382,
+    "formatted": "6:22",
+    "size": 6107240
+  },
   "/audio/atoms/heat-and-weight.mp3": {
     "seconds": 342,
     "formatted": "5:42",
     "size": 5471116
+  },
+  "/audio/atoms/harold.mp3": {
+    "seconds": 373,
+    "formatted": "6:13",
+    "size": 5976425
+  },
+  "/audio/atoms/group-scene.mp3": {
+    "seconds": 321,
+    "formatted": "5:21",
+    "size": 5131312
+  },
+  "/audio/atoms/group-mind.mp3": {
+    "seconds": 318,
+    "formatted": "5:18",
+    "size": 5094117
   },
   "/audio/atoms/group-mind-cultivation.mp3": {
     "seconds": 395,
@@ -554,6 +1309,16 @@
     "formatted": "5:44",
     "size": 5509150
   },
+  "/audio/atoms/gorilla-theatre.mp3": {
+    "seconds": 393,
+    "formatted": "6:33",
+    "size": 6286544
+  },
+  "/audio/atoms/giving-notes.mp3": {
+    "seconds": 380,
+    "formatted": "6:20",
+    "size": 6086345
+  },
   "/audio/atoms/gift-giving.mp3": {
     "seconds": 316,
     "formatted": "5:16",
@@ -564,10 +1329,30 @@
     "formatted": "6:14",
     "size": 5982697
   },
+  "/audio/atoms/genre-format.mp3": {
+    "seconds": 422,
+    "formatted": "7:02",
+    "size": 6749228
+  },
+  "/audio/atoms/game-types.mp3": {
+    "seconds": 299,
+    "formatted": "4:59",
+    "size": 4783569
+  },
+  "/audio/atoms/game-of-the-scene.mp3": {
+    "seconds": 394,
+    "formatted": "6:34",
+    "size": 6308291
+  },
   "/audio/atoms/game-evolution.mp3": {
     "seconds": 363,
     "formatted": "6:03",
     "size": 5808407
+  },
+  "/audio/atoms/freeze-tag.mp3": {
+    "seconds": 303,
+    "formatted": "5:03",
+    "size": 4844173
   },
   "/audio/atoms/framing-as-angle-of-approach.mp3": {
     "seconds": 388,
@@ -579,6 +1364,11 @@
     "formatted": "6:38",
     "size": 6367215
   },
+  "/audio/atoms/fracture-recovery.mp3": {
+    "seconds": 366,
+    "formatted": "6:06",
+    "size": 5853125
+  },
   "/audio/atoms/first-line-drill.mp3": {
     "seconds": 349,
     "formatted": "5:49",
@@ -589,10 +1379,25 @@
     "formatted": "6:23",
     "size": 6122295
   },
+  "/audio/atoms/fear-of-failure.mp3": {
+    "seconds": 304,
+    "formatted": "5:04",
+    "size": 4862568
+  },
   "/audio/atoms/failing-forward.mp3": {
     "seconds": 395,
     "formatted": "6:35",
     "size": 6324590
+  },
+  "/audio/atoms/environment.mp3": {
+    "seconds": 285,
+    "formatted": "4:45",
+    "size": 4565396
+  },
+  "/audio/atoms/ensemble.mp3": {
+    "seconds": 375,
+    "formatted": "6:15",
+    "size": 5994817
   },
   "/audio/atoms/endowment.mp3": {
     "seconds": 375,
@@ -634,10 +1439,35 @@
     "formatted": "6:23",
     "size": 6133578
   },
+  "/audio/atoms/discovery.mp3": {
+    "seconds": 379,
+    "formatted": "6:19",
+    "size": 6060013
+  },
   "/audio/atoms/directed-scene.mp3": {
     "seconds": 388,
     "formatted": "6:28",
     "size": 6209229
+  },
+  "/audio/atoms/diagnosing-scene-failure.mp3": {
+    "seconds": 383,
+    "formatted": "6:23",
+    "size": 6126049
+  },
+  "/audio/atoms/deconstruction.mp3": {
+    "seconds": 370,
+    "formatted": "6:10",
+    "size": 5922923
+  },
+  "/audio/atoms/decay-recovery.mp3": {
+    "seconds": 419,
+    "formatted": "6:59",
+    "size": 6705339
+  },
+  "/audio/atoms/curriculum-design.mp3": {
+    "seconds": 385,
+    "formatted": "6:25",
+    "size": 6162416
   },
   "/audio/atoms/continuous-signaling.mp3": {
     "seconds": 370,
@@ -664,10 +1494,25 @@
     "formatted": "6:09",
     "size": 5900360
   },
+  "/audio/atoms/character.mp3": {
+    "seconds": 367,
+    "formatted": "6:07",
+    "size": 5865249
+  },
   "/audio/atoms/character-through-game.mp3": {
     "seconds": 388,
     "formatted": "6:28",
     "size": 6202962
+  },
+  "/audio/atoms/callback.mp3": {
+    "seconds": 385,
+    "formatted": "6:25",
+    "size": 6167850
+  },
+  "/audio/atoms/bus-stop.mp3": {
+    "seconds": 355,
+    "formatted": "5:55",
+    "size": 5686779
   },
   "/audio/atoms/bulldozing.mp3": {
     "seconds": 338,
@@ -679,10 +1524,30 @@
     "formatted": "6:21",
     "size": 6095546
   },
+  "/audio/atoms/blocking-taxonomy.mp3": {
+    "seconds": 352,
+    "formatted": "5:52",
+    "size": 5632441
+  },
   "/audio/atoms/blind-offer.mp3": {
     "seconds": 419,
     "formatted": "6:59",
     "size": 6705347
+  },
+  "/audio/atoms/blind-line.mp3": {
+    "seconds": 344,
+    "formatted": "5:44",
+    "size": 5509562
+  },
+  "/audio/atoms/bippity-bippity-bop.mp3": {
+    "seconds": 339,
+    "formatted": "5:39",
+    "size": 5428479
+  },
+  "/audio/atoms/big-booty.mp3": {
+    "seconds": 359,
+    "formatted": "5:59",
+    "size": 5750725
   },
   "/audio/atoms/beyond-the-stage.mp3": {
     "seconds": 396,
@@ -693,6 +1558,11 @@
     "seconds": 305,
     "formatted": "5:05",
     "size": 4887642
+  },
+  "/audio/atoms/beats.mp3": {
+    "seconds": 305,
+    "formatted": "5:05",
+    "size": 4885135
   },
   "/audio/atoms/be-thankful.mp3": {
     "seconds": 366,
@@ -734,20 +1604,45 @@
     "formatted": "5:26",
     "size": 5222846
   },
+  "/audio/atoms/base-reality.mp3": {
+    "seconds": 295,
+    "formatted": "4:55",
+    "size": 4720879
+  },
+  "/audio/atoms/bandwidth.mp3": {
+    "seconds": 370,
+    "formatted": "6:10",
+    "size": 5920836
+  },
   "/audio/atoms/backline-craft.mp3": {
     "seconds": 342,
     "formatted": "5:42",
     "size": 5468189
+  },
+  "/audio/atoms/audience.mp3": {
+    "seconds": 310,
+    "formatted": "5:10",
+    "size": 4957023
   },
   "/audio/atoms/audience-relationship.mp3": {
     "seconds": 364,
     "formatted": "6:04",
     "size": 5830979
   },
+  "/audio/atoms/armando.mp3": {
+    "seconds": 374,
+    "formatted": "6:14",
+    "size": 5991889
+  },
   "/audio/atoms/analogous-scene.mp3": {
     "seconds": 376,
     "formatted": "6:16",
     "size": 6021149
+  },
+  "/audio/atoms/alphabet-game.mp3": {
+    "seconds": 382,
+    "formatted": "6:22",
+    "size": 6109335
   },
   "/audio/atoms/active-listening.mp3": {
     "seconds": 322,

@@ -1,0 +1,67 @@
+[curious] So there's this claim that keeps coming up — that a team is basically an improv ensemble that doesn't know it. Is that just a nice metaphor, or is there something structural there?
+
+[teaching] It's structural. Look at what a team actually is. Multiple people. No complete script. Decisions happening in real time. Consequences you can't take back. And a shared reality that only exists as long as everyone keeps agreeing to it. That's not like improv. That is improv. The only difference is nobody sold tickets.
+
+[curious] Okay, but every workplace on earth has that shape. What makes improv the useful lens instead of, I don't know, jazz or sports?
+
+[teaching] Because improv spent seventy years naming the failure modes. Sports has plays. Jazz has changes. Improv has nothing — which meant it had to build a vocabulary for what goes wrong when a group of people is making something out of thin air. Blocking. Steamrolling. Waffling. Denial. Those aren't vibes, they're diagnoses. Your team has all four and no names for any of them.
+
+[conversational] Say more about that. Why does naming it matter so much?
+
+[teaching] Because unnamed failure gets attributed to people. When someone kills every idea in the meeting, the story becomes "Dana's difficult." When you have the word blocking, the story becomes "there's a lot of blocking in this room, including from me." One of those is a personality problem. The other is a fixable pattern.
+
+[matter-of-fact] And you've probably felt the flip side on stage. The scene where your partner said something weird and instead of going with it you went "no, we're at a bank." Nobody thinks you're a bad person. Everyone knows you blocked. That's it, that's the whole conversation, next scene.
+
+[curious] So the value isn't the exercises. It's the language.
+
+[teaching] The language first. But the exercises do something the language can't, and this is where most workplace improv goes wrong. People run a team building session, everybody plays Zip Zap Zop, there's laughing, and Monday nothing is different. Because the game was theater about collaboration instead of a structural change to how people listen.
+
+[curious] What's the difference in practice?
+
+[teaching] A real exercise changes what you're allowed to do. Take one that's almost too simple — the rule is you can't say anything until you've restated what the last person said, to their satisfaction. Not paraphrase-and-pivot. Restate until they nod. Run a real agenda item that way.
+
+[conversational] That sounds excruciating.
+
+[emphatic] It is. For about eight minutes. And then something breaks, because the thing that dies first is the move everyone does constantly — half-listening while loading your rebuttal. You physically cannot do it anymore. The exercise removed the option. That's structural. Zip Zap Zop just makes people warm.
+
+[curious] Okay. So if I strip the theater vocabulary off all of this, what's actually underneath?
+
+[teaching] Status. That's the honest answer. Underneath the ensemble language and the shared-reality language, what actually decides how a group behaves is the status transactions running the whole time. Who can interrupt whom. Whose idea needs a sponsor before it's takeable. Who apologizes reflexively before speaking. Nobody votes on any of that and everybody knows it within ten minutes of joining.
+
+[contemplative] And that's the part improv sees that most management thinking doesn't. Not because managers are dim, but because the vocabulary they've got — roles, org charts, RACI — describes the formal structure. Status describes the actual one.
+
+[curious] So is the goal to flatten it? Everyone equal status, no hierarchy in the room?
+
+[matter-of-fact] No. That's the beginner's read and it makes worse scenes and worse meetings. A room where everyone's playing the same status is a room where nothing moves. What you want is status that's flexible — people who can go high when they've got the expertise and low when they don't, and can feel the difference.
+
+[teaching] Watch a good ensemble. The person who initiated the scene will hand the driver's seat over three moves in without a word about it. Not because they're being generous. Because they can feel that their partner's got the stronger thing. That's a trainable skill and almost nobody at work has trained it.
+
+[curious] So what does an untrained version look like? What's the meeting-room tell?
+
+[matter-of-fact] The senior person floats an idea as a question. "I wonder if we should just kill the whole feature?" Everyone hears the words as an invitation and the status as a decision. Twenty minutes of discussion that was over before it started. On stage that's a scene where one player is offering and the other is only ever accepting — it's dead, and it's dead because it's the same transaction on repeat.
+
+[conversational] I want to ask about the manager thing. If you're the one with the most status in the room, what's the actual move?
+
+[teaching] Go low, deliberately and early. Be wrong out loud about something small. Say "I don't understand that, walk me through it" and mean it. On stage we'd call it giving your partner the gift — you lower yourself so there's room above you for someone to stand.
+
+[emphatic] And it has to be real. Performed humility from a high-status person reads as a trap, and everyone in the room clocks it instantly. Same as on stage. Fake low status is the most transparent thing a player can do.
+
+[curious] What about the person who isn't the manager? Who's got no formal status to spend?
+
+[teaching] Support moves. Which are enormously underrated because they don't look like contribution. Naming what someone else said and building on it out loud. Finishing a thought that got stepped on. Saying "hang on, we lost Priya's point" — that costs you nothing and it changes the status economy of the room in one sentence.
+
+[matter-of-fact] In improv this is the difference between a player people want to be onstage with and a player who's just funny. The second kind gets laughs. The first kind gets cast.
+
+[curious] Is there a version of all this that's just... too fragile for a real workplace? High stakes, real money, actual conflict?
+
+[contemplative] The opposite, I think. The shared-reality thing gets more important as stakes go up, not less. A team under pressure is a team whose agreed-upon reality is being stress-tested constantly — what the deadline actually is, what the priority actually is, who owns what. Ensembles fall apart under pressure for the exact same reason. Somebody stops maintaining the reality and starts protecting themselves.
+
+[teaching] And that's the failure mode worth watching for, because it's so easy to sympathize with. Nobody's a villain. They're scared. On stage a scared player hedges, comments on the scene instead of being in it, gets safe. At work a scared person hedges, comments on the process instead of doing the work, gets safe. Identical shape.
+
+[curious] So what's the intervention?
+
+[emphatic] You make it safe to be wrong faster than you make it safe to be right. Those are different, and most teams only do the second one. A team where good ideas get praised is a normal team. A team where a bad idea gets taken seriously for thirty seconds before someone says "okay, what's the version of this that works" — that team can actually make something nobody planned.
+
+[contemplative] Which is the only real reason to care about any of this. Not that the meetings get pleasant. That the group becomes capable of arriving somewhere no individual in it could have written down beforehand.
+
+[rewritten]

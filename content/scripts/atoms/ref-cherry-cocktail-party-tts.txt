@@ -1,0 +1,57 @@
+[curious] There's a paper from 1953 that improv people should probably know about, and almost nobody's read it.
+
+[teaching] Cherry. Five pages. He put headphones on people, played a different message into each ear, and asked them to shadow one of them — repeat it out loud, in real time, as it came in. Which is hard, but doable. Then afterward he asked what was in the other ear.
+
+[curious] And?
+
+[matter-of-fact] Nothing. Not the words. Not the meaning. Not even — and this is the part that stops you — whether the language had changed partway through. Somebody could switch from English to German in that ear and the listener wouldn't clock it.
+
+[curious] So what did get through?
+
+[teaching] Whether it was a man or a woman. Whether it had stopped. That's about it. Enough to know a voice was there. Nothing at all about what it said.
+
+[contemplative] Which reframes the whole thing. We talk about attention like it's a dimmer switch — you turn up the thing you care about, and everything else gets quieter but stays in the room. Cherry's saying no. It's a gate. The other channel isn't dim. It's discarded.
+
+[curious] And it gets processed just enough to be thrown away.
+
+[emphatic] Just enough to be rejected and no further. That's the whole mechanism.
+
+[short pause]
+
+[curious] Okay, so — improv. What does this actually change?
+
+[teaching] It settles an argument you've probably had in a notes session. Somebody's not listening to their scene partner, and the note is "listen harder." Cherry says that's not a real instruction. You can't split attention across two voices and get both. If you're tracking your own next line while your partner talks, you are not half-listening to them. You're gating them out and keeping physical detail — they made a sound, they stopped making it, now it's my turn.
+
+[contemplative] Which explains a specific kind of scene death. Two people alternating monologues. Both technically present, both talking. And it's dead because nobody crossed the gate.
+
+[warm] And it means the fix isn't effort. It's abandonment. You have to drop the other channel — the plan, the line you were saving, the worry about whether this is working — because attention doesn't get louder, it just gets exclusive.
+
+[curious] Alright, so should someone actually read the paper?
+
+[matter-of-fact] Yes, and I don't say that often about primary sources. It's five pages and it's readable in a way 1953 usually isn't.
+
+[teaching] What you get from the paper that you don't get from any summary is the texture — the specific things people failed to notice, written down plainly. The summaries give you the conclusion. The paper gives you a person who genuinely did not register a language change six inches from their skull. That lands differently. If you're skeptical about how much gets thrown away while you attend to one voice, read the experiments, not the abstract.
+
+[curious] And there's a part everybody skips?
+
+[emphatic] There is, and it might be the more useful half for us. The paper gets cited forever for the cocktail party framing — crowded room, one conversation, how do you do it. But Cherry's actual experiments were less about acoustics and more about the structure of speech. How much a listener runs on redundancy. On expectation. On already knowing, statistically, roughly what's coming.
+
+[curious] Meaning listening isn't reception.
+
+[teaching] Listening is prediction. You're not receiving your scene partner, you're running a model of them and checking it against what arrives. Which is exactly why a broken expectation hits so hard. Why a pattern break registers as an event and not just as more words. The system was leaning forward, and something didn't match.
+
+[contemplative] It also explains why the second half of a scene is easier than the first. By then you've built the model. You know the rhythm, the character, the shape of what they do. Early on you're catching everything cold.
+
+[short pause]
+
+[curious] Has any of it aged badly?
+
+[matter-of-fact] Some. Later work made the clean result messier. Your own name in the unattended ear does get through, for a decent chunk of people. So the gate leaks.
+
+[teaching] But nothing here depends on it being perfect. It only depends on it being a gate rather than a dimmer. And that survives fine.
+
+[warm] There's something almost consoling in it, honestly. Off stage too. The reason you can't half-attend to a conversation while your phone's out isn't weak will. It's architecture. You were never going to get both. Attention isn't a resource you spend more of — it's a choice about what to throw away.
+
+[contemplative] Cherry proved that thirty years before anyone put a proper model around it. Five pages, two headphones, and one question afterward that nobody could answer.
+
+[rewritten]

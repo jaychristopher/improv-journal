@@ -1,0 +1,79 @@
+[curious] Okay, I want to talk about a paper. 1988, John Sweller, Cognitive Science. And I know that sounds like the least improv thing possible.
+
+[teaching] It's the founding paper of cognitive load theory. And it's the reason we keep saying that the effort you spend watching yourself is subtracted from the scene, not added on top of it.
+
+[curious] Subtracted. That's the word that keeps coming up.
+
+[teaching] Because that's the actual finding. Sweller was studying people solving problems — math problems, puzzles — and he found something that nobody expected. Conventional problem solving can get in the way of learning.
+
+[curious] Wait. Solving problems makes you worse at learning to solve problems?
+
+[matter-of-fact] It makes you not learn much from having solved them. The specific mechanism is this thing called means-ends analysis, which is what you do naturally when you're handed a problem. You hold the goal in your head. You hold where you currently are. And you hold the gap between them, and you keep chipping at the gap.
+
+[curious] That sounds like exactly what you're supposed to do.
+
+[teaching] It works. That's the thing. People solved the problems. But holding those three things — goal, current state, gap — eats basically all your available capacity. And the thing that actually makes you competent is building the schema, the pattern, the thing you'll recognize next time. That needs room. And there's no room left.
+
+[short pause]
+
+[contemplative] So they got the right answers and walked away with nothing transferable.
+
+[curious] Okay, I feel that in my body. That's a scene where I hit every mark and learned nothing.
+
+[teaching] That's the whole translation, really. You're on stage. Your goal is "be funny," or "don't screw this up," or "justify the weird thing I just said." Your current state is whatever's happening. And you're running the gap in real time — how do I get from here to there. You're doing means-ends analysis on a scene.
+
+[curious] And that's why the notes never stick.
+
+[emphatic] That's why the notes never stick. You solved the scene. You didn't learn the scene. Two different processes competing for the same pool of attention, and performing always wins because it's louder and more urgent.
+
+[curious] So should I read the paper?
+
+[matter-of-fact] Probably not. And I don't mean that as a knock.
+
+[teaching] It's a 1988 experimental report in a research journal. It's written for other cognitive scientists. It's tables and experimental conditions and careful hedging. And the finding that matters to you — the two sentences we just said — is the whole payload. You've got it. There's no secret third thing.
+
+[curious] Then when would you go get it?
+
+[confident] When you need to argue about it. Because the claim is counterintuitive enough that people push back hard. If you're a teacher and you tell a room full of experienced coaches that making students solve more problems can slow their learning down, someone is going to want receipts. The paper is where the actual experiments live, and — more importantly — where the limits live. What the conditions were. What it does and doesn't cover.
+
+[warm] That's the real value of a primary source. Not the finding. The edges of the finding.
+
+[curious] What are the edges? What does it not say?
+
+[serious] Here's one that matters, and it's a mistake this site made for a long time. Sweller gives you no number. He doesn't tell you how much working memory you have. He says short-term memory is severely limited and then reasons from that limit — that's the whole move.
+
+[curious] But everyone quotes a number.
+
+[matter-of-fact] The "about four things" number is Cowan, 2001. Different paper, different researcher. This site attributed it to Sweller on five separate pages until August of last year. Which is a pretty good illustration of how citations drift — two ideas that sit next to each other get fused, and then the fused version gets repeated.
+
+[teaching] Cognitive load theory is a theory of what a limited capacity *does* to you. It is not a measurement of how much capacity there is. Those are different claims and only one of them is Sweller's.
+
+[curious] What's happened since 1988? Because that's a long time.
+
+[teaching] Quite a lot, and two pieces of it land directly on how you teach improv. First, the theory got split. Load isn't one thing — there's intrinsic load, which is just how hard the material inherently is, and extraneous load, which is load created by how it was presented. That distinction came later, and it changes who's responsible.
+
+[curious] Meaning what, in a class?
+
+[emphatic] Meaning extraneous load is the teacher's fault, not the student's. If a student is drowning, one real possibility is that the exercise was badly built. Too many instructions at once. A rule that has to be actively remembered while also being spontaneous. That's not the student lacking capacity, that's you spending their capacity on your setup.
+
+[warm] Which is the whole argument for a tight warm-up and a constrained exercise. A constraint isn't a limitation, it's you removing decisions from their plate so there's room left for the one thing you actually want them to learn.
+
+[curious] And the second piece?
+
+[teaching] The expertise reversal effect. Support that genuinely helps a beginner will actively hurt an expert.
+
+[curious] Hurt them? Not just — not help?
+
+[matter-of-fact] Hurt them. Because now they have to reconcile your scaffolding against the schema they already have, and that reconciliation costs something. The structure becomes the extraneous load.
+
+[contemplative] Which explains something every improv teacher has watched happen. The same exercise — the same one — lands beautifully for the first-timer and puts the fourth-year player to sleep. It's not that they're bored because they're above it. The support that was carrying the beginner is now something the experienced player has to carry.
+
+[short pause]
+
+[curious] So the mixed-level class is genuinely hard.
+
+[confident] It's genuinely hard, and now you know why, and it isn't attitude. It's that you're delivering two different loads with one instruction.
+
+[warm] And the fix isn't the paper. The fix is knowing that the room's capacity is finite, and that everything you say before "go" is spending it.
+
+[rewritten]

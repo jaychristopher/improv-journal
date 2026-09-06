@@ -24,7 +24,10 @@
     "seo:crawlers": "node scripts/check-crawler-access.mjs",
     "diagrams:coverage": "node scripts/diagram-coverage.mjs",
     "diagrams:measure": "node --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/diagram-measure.mjs",
-    "diagrams:priority": "node --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/diagram-priority.mjs"
+    "diagrams:priority": "node --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/diagram-priority.mjs",
+    "audio:coverage": "node scripts/audio-coverage.mjs",
+    "audio:backfill": "node scripts/generate-all-audio.mjs",
+    "audio:durations": "node scripts/generate-durations.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

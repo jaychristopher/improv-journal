@@ -1,0 +1,85 @@
+[curious] Okay, so we've got a paper here that most people have never heard of, and I want to know why it's in the graph at all. Wickens, multiple resources, ergonomics journal, 2002. That does not sound like it belongs anywhere near an improv stage.
+
+[teaching] It's a correction. And the thing it corrects is something you've probably absorbed without knowing where it came from. The idea that attention is a pool. That you've got a fixed amount of it, and everything you're doing on stage draws from the same bucket — listening, planning, moving, remembering your character's name. Run out, you crash.
+
+[curious] Which sounds right. That's exactly what a bad scene feels like.
+
+[teaching] It is right, roughly. That's Kahneman's model, and it's a good first approximation. But it makes one prediction that's just wrong. It says any two tasks interfere with each other in proportion to how hard they are. Two demanding things, big collision. Every time.
+
+[short pause]
+
+[teaching] And that's not what happens. You know it's not what happens.
+
+[curious] Give me the case where it breaks.
+
+[teaching] You're doing space work. Building a kitchen — opening a drawer, running water, wiping a counter. And your scene partner is talking to you the whole time. Long speech, real information in it. How much does that cost you?
+
+[curious] Almost nothing. You can do that all day.
+
+[teaching] Right. Now instead, you're standing perfectly still, doing nothing with your body, and while they talk you're planning the line you want to say next.
+
+[curious] [contemplative] And I hear none of it.
+
+[teaching] None of it. Two tasks, same total load, wildly different outcomes. The single-pool model can't explain that. It just says "both demanding, both interfere." Wickens' answer is that the pool has compartments.
+
+[curious] Compartments how?
+
+[teaching] Four dimensions along which tasks can be same or different. Stage — are you perceiving, or are you responding? Modality — is it coming through your ears or your eyes? Code — is the material verbal, or is it spatial? And then a fourth about how visual attention itself splits. Two tasks that sit on different sides of these lines barely touch each other. Two tasks on the same side collide hard.
+
+[matter-of-fact] Space work is spatial and motor. Listening is verbal and perceptual. Different everything. They run in parallel almost for free.
+
+[curious] And planning a line?
+
+[teaching] Verbal. And it's a response you're constructing while you're supposed to be perceiving — but the material is the same material. You are using the exact machinery that hearing needs. It's not that you're busy. It's that you're busy in precisely the wrong place.
+
+[emphatic] That's the whole insight. Not how much you're doing. Where.
+
+[short pause]
+
+[curious] Okay, so should I read the paper?
+
+[matter-of-fact] Probably not. And I'd rather say that plainly than pretend otherwise.
+
+[curious] [amused] That's a bold pitch for a reference entry.
+
+[matter-of-fact] The correction I just gave you is the value, and you now have it. The paper itself is a review article for ergonomics researchers — people predicting whether a pilot can monitor an altimeter while taking a radio call, whether a control room operator will miss an alarm. It's written for them. It reads like it. There's no improv in it, there's no performance in it, there's a lot of predicting operator error in cockpits.
+
+[curious] So who does it actually reward?
+
+[teaching] Anybody who designs exercises. Teachers, coaches, workshop leaders. Because those four dimensions are exactly the thing that decides whether a constraint you add to a drill sharpens the skill or destroys it.
+
+[curious] Say more — that's the practical part.
+
+[teaching] You want to train listening. So you add a constraint to make it harder, make them work for it. If the constraint you pick is verbal — count backwards, hold a word you have to use, remember a phrase — you've just built the collision. They're not learning to listen under pressure, they're learning to fail at listening. You've made the drill impossible in a way that teaches nothing.
+
+[emphatic] But if the constraint is spatial or physical — keep moving, maintain the object, stay in contact with a wall — it runs alongside. The listening stays intact and the difficulty is real. Same amount of added load. Completely different training outcome.
+
+[curious] So the paper's a design tool, not a theory of performance.
+
+[teaching] For us, yes. It tells you where the walls are inside the room. You still can't do everything — but you can stop building drills that collide with themselves.
+
+[short pause]
+
+[curious] I want to push on something, because I can feel where a listener goes with this. This sounds like permission to multitask. Different compartments, run them both, no cost.
+
+[serious] It's the opposite, and this is the part I'd underline. Multiple resources is a theory of *interference*. Its entire content is a description of how badly things fail when they overlap. Every dimension is still finite — the compartments have walls, they also have ceilings.
+
+[serious] The improv version people want — that you can listen and plan simultaneously if you're just clever about how you allocate — is exactly what the model predicts you cannot do. Those two share a stage and share a code. That's the worst case in the whole framework. It's the collision the theory was built to describe.
+
+[curious] So it doesn't rescue the thing everyone wants rescued.
+
+[matter-of-fact] It names why that thing is unrescuable. Which is more useful, honestly.
+
+[short pause]
+
+[curious] And has it held up? 2002 is a while ago now.
+
+[matter-of-fact] It's a refinement of his own earlier formulation from the eighties, and he revised it again a few years later. It's a live model that's been moving. Which is why the bandwidth atom hedges rather than treating any one version as the final word.
+
+[teaching] But the core asymmetry — that conflict depends on structure and not just on total demand — that's the part that has survived every revision. That's the part you keep.
+
+[contemplative] And here's what it gives you offstage. You already know you can't listen and plan at once. What you probably don't know is which of your other habits are actually free. Walking while thinking. Driving while talking. Those aren't discipline. Those are different compartments.
+
+[emphatic] The question was never how much you can carry. It's what you're carrying it with.
+
+[rewritten]

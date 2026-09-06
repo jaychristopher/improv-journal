@@ -1,0 +1,63 @@
+[curious] There's a number all over this site — your working memory holds about four things. Where does that actually come from?
+
+[teaching] A paper from 2001. Nelson Cowan, "The Magical Number 4 in Short-Term Memory." And the reason it exists is that everybody had been quoting a different number for forty-five years.
+
+[curious] Seven, plus or minus two.
+
+[teaching] Right. Miller, 1956. And here's the thing about that paper that almost nobody who quotes it knows — Miller offered seven plus or minus two as a rough estimate. He was being a little playful about it. The title is half a joke about how the number seven kept haunting him. It was never presented as a hard measurement.
+
+[matter-of-fact] And it stuck as though it were one. For decades.
+
+[curious] So what did Cowan do differently?
+
+[teaching] He asked a cleaner question. When you test somebody's memory span, you're not just measuring storage. You're measuring storage plus every trick they're using to stretch it. Rehearsal — saying the list to yourself. Chunking — grouping items so three become one. Long-term support — leaning on things you already know.
+
+[teaching] So Cowan went and gathered the studies that block those tricks. Studies where you can't rehearse because you're counting backwards, or where the material won't chunk, or where the timing doesn't allow it. And underneath all of it there's a smaller, much more consistent limit. Three to five chunks. Call it four.
+
+[contemplative] [pause] Which means Miller wasn't wrong about what he measured. He was measuring capacity plus the workarounds.
+
+[curious] Okay, but should I actually read this thing?
+
+[matter-of-fact] Probably not, unless you want the argument rather than the number. It runs close to a hundred pages, and most of that isn't Cowan — that journal publishes a target article, then dozens of other researchers writing in to argue with it, then the author's replies. It's a food fight in print. Fascinating if you're into the field, exhausting if you just wanted the finding.
+
+[teaching] The target article itself, though — the first chunk — that's worth it for one specific person. Anybody who's been confidently repeating seven plus or minus two. Watching a careful estimate get assembled out of dozens of studies is a good corrective. You come away holding numbers more loosely.
+
+[curious] So why does this matter for improv? Four versus seven, who cares.
+
+[emphatic] It changes everything about what you think you can carry into a scene. Seven feels like room. Seven feels like you could hold your character's name, their job, their relationship to the other person, the location, the emotional state, the game you think you spotted, and still have a slot free. Four does not feel like room. Four is your scene partner's last line, one thing about where you are, and — that's basically it.
+
+[contemplative] [short pause] That's brutal.
+
+[teaching] It's brutal but it's honest. And it explains a thing everybody's felt. You're in a scene, you're trying to remember that you established you're her brother, and you're trying to track the game, and you're trying to think of something funny — and your partner says a beautiful line and you just don't hear it. Not metaphorically. You did not process it. The slots were full.
+
+[curious] But experienced players seem to hold way more than that.
+
+[teaching] This is the part of Cowan's paper that's actually the most useful, and it gets skipped. The limit is on chunks, not items. Not things — units of meaning.
+
+[teaching] So a beginner watching a scene holds four separate things: he said he's tired, she looked away, they're in a kitchen, something about a bill. Four chunks, full up. An experienced player watches the same thirty seconds and holds one chunk: this is a scene about someone avoiding a conversation. All four details collapsed into a single unit. Which leaves three slots free.
+
+[emphatic] The capacity never changed. What changed is how much meaning fits in one slot.
+
+[contemplative] [pause] So the whole apprenticeship — all those hours of classes and shows — that's not expanding the container.
+
+[teaching] It's building better chunks. Everything you drill until it's automatic stops taking up space. That's what practice buys you. Not more room. Cheaper contents.
+
+[curious] And this shows up off stage the same way?
+
+[warm] Constantly. It's why a new job is exhausting in a way that has nothing to do with hours. Nothing has chunked yet. Every name, every acronym, every process is its own separate item and there's no room left for the actual work. Six months in it's the same job and you're not tired, because most of it has collapsed into units you handle without spending anything.
+
+[teaching] It's also why the person who seems calm in a crisis usually isn't calmer. They've just seen that shape before and it costs them one slot instead of four.
+
+[curious] There's one more thing this page is here to fix.
+
+[matter-of-fact] Yeah, and it's an attribution problem. The four-chunk figure gets credited to Sweller and cognitive load theory all the time — including in a few places on this site before this entry existed. Sweller does say short-term memory is severely limited, and he builds a whole theory of instruction on what happens when you exceed it. But he never supplies a capacity number. His contribution is the consequence of overload, not the size of the store.
+
+[teaching] They fit together beautifully. Cowan tells you how big the room is. Sweller tells you what happens when you cram past it. Two findings, not one, and worth keeping straight if you're going to cite either.
+
+[curious] How settled is four, really?
+
+[matter-of-fact] Contested at the edges. Whether it's a fixed number of slots or a flexible resource that gets divided up — that's still argued. Cowan's own later work treats "about four" as a central tendency, not a hard cap.
+
+[emphatic] But nothing here rests on the integer. Nothing rests on it being four instead of three or five. It rests on the number being small. Small enough that when you're running commentary in your head about whether the scene is working, you are not doing that alongside listening. You're doing it instead of listening.
+
+[rewritten]

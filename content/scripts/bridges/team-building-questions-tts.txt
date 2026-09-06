@@ -1,0 +1,69 @@
+[curious] I want to start with the thing everyone's been in. Someone opens a meeting with a list of icebreaker questions. If you were an animal, what would you be. And the whole room goes through it, and at the end you know nothing about anyone.
+
+[teaching] Right, and here's the thing — those questions worked. They did exactly what they were designed to do. They were built to be safe, and they were completely safe. Nothing happened. That's not a failure of execution. That's the design.
+
+[curious] So the fix is to go deeper? Because I've seen that version too. Someone pulls out "what's your biggest fear," and it's somehow worse.
+
+[teaching] Much worse. Because now you've got mandatory vulnerability, which is just vulnerability theater. People perform openness while actually retreating further behind the wall. You can watch it happen. Everyone gives an answer that sounds revealing and reveals nothing.
+
+[curious] Both failures, same root?
+
+[teaching] Same root. They both skip the progression. And improv figured out what the progression is about sixty years ago, because we had to — you can't do a scene with someone you don't trust, and you don't get a warm-up period. So we got very precise about what trust actually is.
+
+[curious] What is it?
+
+[matter-of-fact] It's a pattern, not a state. I offer something real. You don't punish me for it. Then you offer something real, and I don't punish you. Each cycle raises the stakes slightly. Each cycle that completes without betrayal makes the next one possible. That's the whole mechanism.
+
+[emphatic] And notice the direction it runs. Everybody thinks you build trust and then you can be honest. It's backwards. You're honest in small ways, the group receives it, and trust is what accumulates. Trust is the residue of honest interaction that went well. Not the precondition for it.
+
+[contemplative] Which changes what you do on a Monday, actually. If trust comes first, there's nothing to do — you wait. If it comes second, there's something to do this week.
+
+[curious] So what makes an offer count? Because in a scene, I know — you say something and it costs you a little.
+
+[teaching] Exactly that. It has to cost something. Not a lot. Not a confession. Just enough that you've taken a small, real risk. "What's your favorite movie" costs nothing, so nothing gets built. "What's your deepest regret" costs everything, and hasn't been earned, so people fake it.
+
+[warm] And the response matters as much as the offer. This is "be supportive" in practice, and being supportive doesn't mean being nice. It means treating what someone said as worthy of engagement. The nod. The follow-up. The two seconds where you don't rush past their answer to get to yours. That's the "And" in Yes And, applied to a conference room.
+
+[curious] Okay, so if you were building the ladder, what does rung one look like?
+
+[matter-of-fact] Observable and specific. What's a skill you've gotten noticeably better at this year. What's something you do in your job that nobody on this team has ever seen. What did your last really focused two hours go to.
+
+[teaching] And the specificity is doing the work. "What are you good at" invites a performance — you have to characterize yourself, take a position on your own worth. "What have you gotten better at" invites a story. You just describe a thing that happened. Way cheaper to be honest.
+
+[curious] Rung two?
+
+[matter-of-fact] Preference and perspective. How you think, not just what you do. And the hinge question at that tier is: what's a professional norm everybody follows that you secretly think is pointless.
+
+[emphatic] That's the one. Because it asks for mild dissent. A real opinion that cuts against the group's default. And if somebody says it and the room gets curious instead of defensive — that's a completed transaction. The room is measurably safer than it was ninety seconds ago.
+
+[curious] Then it gets harder.
+
+[teaching] Tier three is honest admission. What's a work habit you know isn't great and haven't changed. What's something you used to be certain about and now aren't. What do you consistently procrastinate on. That's where vulnerability actually starts — earned, not demanded.
+
+[contemplative] And tier four is what matters. What do you need from this team that you haven't asked for. That one's the whole point of the structure. Asking for what you need is vulnerability and honesty and trust in a single move. If a team can answer that one straight, they have the real thing.
+
+[curious] The thing I want to push on — how do you get anyone to answer at all? Because the silence after these questions is brutal.
+
+[matter-of-fact] The silence is almost never disinterest. It's people calculating what an honest answer costs here. And the only thing that resolves the calculation is watching somebody find out.
+
+[emphatic] So the manager goes first. Always. This is the highest-leverage decision in the entire exercise, and it's the one people get backwards constantly. Vulnerability costs differently depending on where you sit. A junior person answering honestly is exposed to the person who writes their review. A manager answering honestly is exposed to essentially nothing. Asking the least protected person to go first is the standard mistake.
+
+[serious] And the answer has to be real. A senior person going first with something polished and flattering is worse than not going first — you've just demonstrated the exact register everyone was afraid of. You want something mildly unflattering and completely unremarkable. Not a confession. Just proof that a plain answer is survivable.
+
+[curious] What about the person who deflects every time? Jokes their way out of it.
+
+[warm] Do nothing, visibly, for weeks. And check whether your questions are the problem before you decide the person is. Somebody who's worked somewhere a candid answer got used against them is behaving sensibly. Pressing them singles out the one person most alert to exposure, in front of everybody.
+
+[matter-of-fact] Two exceptions. If the joke is at somebody else's expense, that's different — that raises the cost for the whole room and needs addressing. And if it's still happening months later when everyone else has relaxed, have a private conversation. Not a better question.
+
+[curious] Last one. What actually makes a question feel intrusive at work?
+
+[teaching] Not depth. That's the surprise. It's whether declining is cheap, and whether the answer can be used against you later. "What have you changed your mind about" is quite personal and completely safe — any honest answer is professionally neutral. "What's your biggest weakness" is a standard team-building question and it's genuinely dangerous, because that answer goes into somebody's model of your competence and stays there.
+
+[emphatic] So the test before you ask anything: could a truthful answer disadvantage this person in a review, a promotion, a disagreement six months from now. If yes, you've built an assessment wearing a friendly costume. And people will answer it as one — carefully, uselessly — and you'll conclude the team is closed off.
+
+[contemplative] Five to eight minutes, once, at the start of a meeting. Not a half-day workshop once a quarter. Trust accumulates from the number of occasions where something honest went unpunished — and a long session is still one occasion.
+
+[warm] The questions aren't magic. The progression is. Skip it and you get performance. Follow it and you get the thing most teams never reach — a room where people say what they actually think.
+
+[rewritten]
