@@ -149,10 +149,10 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
     appearsInBridges.length > 0 ||
     inImprovGames;
 
-  // Context banner: find the primary thread/path this atom belongs to
+  // Context banner: the primary thread and path only. The remaining paths used
+  // to be listed alongside them and are still reachable from the sidebar.
   const primaryThread = appearsInThreads[0] ?? null;
   const primaryPath = appearsInPaths[0] ?? null;
-  const otherPaths = appearsInPaths.slice(1);
 
   // What's next: find next atom in the primary thread
   const nextAtomInThread = primaryThread
@@ -185,17 +185,25 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
         eyebrow={eyebrow}
         subject={fm.subject}
       />
-      {/* Context banner for Google-landing users */}
+      {/* Breadcrumb first. The context line used to render above it on all 102
+          pages that have one, so the first thing in <main> was up to 190
+          characters of internal titles — a thread and as many as three paths —
+          before anything said where the reader was. */}
+      <Breadcrumb crumbs={breadcrumbs} />
+      {/* One relationship, not four. Every path this banner listed is repeated
+          in the sidebar's "Part of" block, which carries a superset; on
+          be-present the banner named three paths and the sidebar named the same
+          three. Kept at all because the sidebar renders below the article on
+          mobile, so a reader on a phone would otherwise reach it only after the
+          whole page. */}
       {primaryThread && primaryPath && (
         <ContextBanner
           threadTitle={primaryThread.frontmatter.title}
           threadHref={`/threads/${primaryThread.frontmatter.id}`}
           pathTitle={primaryPath.title}
           pathHref={`/paths/${primaryPath.id}`}
-          alsoIn={otherPaths.map((p) => ({ title: p.title, href: `/paths/${p.id}` }))}
         />
       )}
-      <Breadcrumb crumbs={breadcrumbs} />
 
       {/* Two-column layout: card left, sidebar right on desktop */}
       <div className={hasSidebar ? "lg:grid lg:grid-cols-[1fr_260px] lg:gap-12" : ""}>
