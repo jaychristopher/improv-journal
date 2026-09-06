@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 216" xmlns="http://www.w3.org/2000/svg">
+  <text class="dg-eyebrow" x="16" y="30">WHY IT NEVER FINISHES</text>
+
+  <text class="dg-note" x="260" y="70" text-anchor="middle">run the assessment</text>
+  <line class="dg-ink" x1="170" y1="80" x2="350" y2="80" />
+  <line class="dg-ink" x1="350" y1="80" x2="350" y2="150" />
+  <line class="dg-ink" x1="350" y1="150" x2="170" y2="150" />
+  <line class="dg-ink" x1="170" y1="150" x2="170" y2="80" />
+  <text class="dg-note" x="260" y="170" text-anchor="middle">the data stays ambiguous</text>
+
+  <line class="dg-accent" x1="170" y1="115" x2="120" y2="115" />
+  <text class="dg-note-accent" x="114" y="119" text-anchor="end">no exit condition</text>
+
+  <text class="dg-note" x="16" y="206">it is not a bad habit; it is a loop with no stop</text>
+</svg>

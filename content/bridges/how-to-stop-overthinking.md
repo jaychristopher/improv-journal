@@ -54,6 +54,10 @@ The usual answers — anxiety, perfectionism, a need for control, low self-estee
 
 **The mechanism is that analysis is being applied to a problem analysis cannot close.** "Did that come across badly?" has no retrievable answer. Neither does "what will they think" or "should I have said it differently". You are running a process against a question that has no terminating condition, so the process does not terminate.
 
+![A closed circuit labelled run the assessment and the data stays ambiguous, with a line leading out of it to no exit condition.](/images/why-it-never-finishes.svg)
+
+*The loop is not malfunctioning. It is doing what it was asked to do, against a question that cannot answer it.*
+
 Two things keep it going, and neither is a character flaw:
 
 1. **It feels like work.** Rumination is indistinguishable from problem-solving while you are inside it. The felt sense of effort is identical, which is why "just stop" fails — you are not choosing to be unproductive, you are being productive at something with no output.
