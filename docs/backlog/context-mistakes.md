@@ -4,7 +4,7 @@ type: register
 summary: Running log of context-shaping mistakes, by entry point
 epic: "[[Entry-point context]]"
 status: Open
-updated: 2026-08-30
+updated: 2026-09-06
 ---
 
 # Context mistakes — running register
@@ -215,6 +215,83 @@ absence of a component is not absence of the thing it provides.
 
 ---
 
+## 2026-09-06
+
+**A seven-day programme with two days in it** — homepage or search → course
+lesson — *wrong, not merely noisy*. This was meant to be the "mid-course
+arrival" measurement: land on day 4 of a 7-day programme directly and see
+whether anything says it is day 4. There is no day 4. `beginner-foundations`
+declares `program_length_days: 7` and `default_cadence: daily`, and lists two
+threads.
+
+Production renders both numbers side by side in the most prominent card on the
+site: "Start the 7-day program", then "7 days · daily · 2 core lessons". A
+reader who accepts that invitation reaches lesson two and meets a progress bar
+reading "2 of 2" — the programme ends on day two of seven.
+
+The entry point could not be measured because the thing it describes does not
+exist, which is itself the finding. Open: [[EC-3.2 Reconcile the beginner
+programme's length with its lessons]].
+
+**Reading time landed on two page types out of six** — any entry point → course
+lesson or library entry — *underload*. The duration line added earlier today
+answers the first question a reader asks, and it reaches guides and concept
+pages only. `UpdatedOn` is called without `minutes` on threads, library entries,
+paths and sources.
+
+The omissions are the wrong ones. Threads are the longest prose on the site and
+the only pages sold as a time commitment — the homepage invites people into a
+daily programme made of them. Library entries are, per Search Console, the
+best-ranking pages here. Paths already carry a course workload figure, so they
+are covered by something else; threads and library entries are not covered by
+anything. Open: [[EC-3.3 Extend reading time to lessons and library entries]].
+
+**Answer engines still refused, and so are the humans asking about a page** —
+AI answer engine → anything — *blocked, not examined*. Recorded rather than
+measured, as the task asks. `npm run seo:crawlers` against production: OAI-
+SearchBot, PerplexityBot, ClaudeBot and GPTBot all 403. Google-Extended is 200.
+
+The part worth separating out is that ChatGPT-User, Claude-User and
+Perplexity-User are also 403. Those are not crawlers building an index; they
+fire when a person pastes a link or asks about a page, so the block fails a
+request somebody deliberately made. `llms.txt` is rebuilt on every deploy for
+precisely this audience and is served to none of them.
+
+What would need to change: Cloudflare's AI crawler block is a dashboard setting,
+not anything in this repo. Nothing here can examine this entry point until it is
+changed, and no code change will route around it.
+
+**Social or newsletter arrival on a guide** — examined, no defect found. Above
+the fold: breadcrumb, title, the guide's own description sentence, byline with
+date and reading time, then the audio player. The description does the
+orientation work — "Reading a room means working out what a group feels and is
+ready for" states what the page is without naming anything internal. This is the
+entry point the earlier taxonomy complaint was about, and on guides it does not
+apply.
+
+**Returning reader, re-examined after the same-day fix** — returning reader →
+homepage — no defect found, one residue. The register logged this twice on
+2026-08-30, as a layout shift and as a contradiction, and the slot-sharing fix
+closed both. Re-measured: `ContinueJourney` now renders the "Start here" card as
+its server-side children, so first paint carries a card rather than a hole and
+the journey card replaces it in place.
+
+The residue is that a returning reader's first paint is still the wrong card for
+them, for as long as it takes localStorage to be read. That is a swap rather
+than a shift now, and fixing it properly means moving the state somewhere the
+server can see it. Not worth a task at this size; recorded so a later pass does
+not rediscover it as new.
+
+**Podcast listener, re-examined after the catalogue grew** — podcast listener →
+guide — no defect found. The earlier entry examined this when the feeds carried
+37 episodes between them; they now carry 139, and every content page has audio.
+Re-checked because the earlier finding was about show notes linking back, and
+that link now lands on a page which itself offers the same episode. That reads
+as continuity rather than duplication: the page says "Listen to this
+conversation" above the same audio the listener already chose.
+
+---
+
 ## Entry points examined, no defect found
 
 - **Podcast listener** following a show-note link — lands on the guide the
@@ -230,6 +307,10 @@ absence of a component is not absence of the thing it provides.
 
 Recorded so a later pass knows what has and has not been looked at.
 
-- AI answer engine — currently moot, Cloudflare 403s those crawlers
-- Social / newsletter arrival
-- Mid-course arrival: a thread that is day 4 of a 7-day program, reached directly
+_All three below were taken up on 2026-09-06; see that section._
+
+- ~~AI answer engine~~ — recorded as blocked. Cloudflare 403s answer engines
+  *and* user-initiated agents. Nothing in this repo can change it.
+- ~~Social / newsletter arrival~~ — examined, no defect found.
+- ~~Mid-course arrival~~ — could not be measured as written: the 7-day programme
+  contains two lessons, so there is no day 4.

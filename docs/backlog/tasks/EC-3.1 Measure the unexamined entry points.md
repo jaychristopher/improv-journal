@@ -4,7 +4,7 @@ type: task
 summary: Look at the five entry points nobody has measured, and log what they meet
 parent: "[[EC-3 Audit the untested entry points]]"
 epic: "[[Entry-point context]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 1
 executable: agent
@@ -50,4 +50,27 @@ could not be examined and why.
 
 ## Outcome
 
-_Not started._
+Done 2026-09-06. Six entries appended to [[context-mistakes]] — the five listed
+here plus one found while looking.
+
+Two could not be examined as written, and that was the useful part. **Mid-course
+arrival** has no day 4: `beginner-foundations` advertises seven days at a daily
+cadence and contains two lessons, and the homepage renders "7 days · daily · 2
+core lessons" in the same card. **AI answer engine** is recorded as blocked —
+`npm run seo:crawlers` shows four answer engines refused, and also the three
+user-initiated agents, which fire when a person asks about a page rather than
+when a crawler indexes it.
+
+Two examined clean: social/newsletter arrival on a guide, where the guide's own
+description does the orientation, and the returning reader, re-measured after
+the same-day slot-sharing fix closed both earlier entries. The podcast listener
+was re-examined because the catalogue grew from 37 episodes to 139 since the
+original entry; still clean.
+
+The finding that was not on the list: reading time reached two page types out of
+six, missing course lessons and library entries — the longest prose and the
+best-ranking pages respectively.
+
+Opened [[EC-3.2 Reconcile the beginner programme's length with its lessons]] and
+[[EC-3.3 Extend reading time to lessons and library entries]]. Nothing fixed
+here, per the task.
