@@ -25,6 +25,7 @@ import {
 import { getCategoryForGuide } from "@/lib/guide-categories";
 import { getGuideConcepts } from "@/lib/guide-concepts";
 import { contentsFor } from "@/lib/headings";
+import { readingMinutes } from "@/lib/reading-time";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter } from "@/lib/schema";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
@@ -337,7 +338,11 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>
         <p className="text-foreground/60 mt-2 text-sm">{fm.description}</p>
-        <UpdatedOn date={fm.updated} className="text-foreground/50 mt-3 text-xs" />
+        <UpdatedOn
+          date={fm.updated}
+          minutes={readingMinutes(bridge.html)}
+          className="text-foreground/50 mt-3 text-xs"
+        />
       </header>
 
       {audioUrl && (
