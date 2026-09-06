@@ -196,12 +196,12 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
           three. Kept at all because the sidebar renders below the article on
           mobile, so a reader on a phone would otherwise reach it only after the
           whole page. */}
-      {primaryThread && primaryPath && (
+      {(primaryThread || primaryPath) && (
         <ContextBanner
-          threadTitle={primaryThread.frontmatter.title}
-          threadHref={`/threads/${primaryThread.frontmatter.id}`}
-          pathTitle={primaryPath.title}
-          pathHref={`/paths/${primaryPath.id}`}
+          threadTitle={primaryThread?.frontmatter.title}
+          threadHref={primaryThread ? `/threads/${primaryThread.frontmatter.id}` : undefined}
+          pathTitle={primaryPath?.title}
+          pathHref={primaryPath ? `/paths/${primaryPath.id}` : undefined}
         />
       )}
 

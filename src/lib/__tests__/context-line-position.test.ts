@@ -65,12 +65,27 @@ describe("concept context line", () => {
     // The population, so a moved selector fails here rather than passing on nothing.
     expect(pages.length).toBeGreaterThanOrEqual(190);
 
-    const withLine = pages.filter((p) => p.html.includes("Part of "));
-    // 102 of 205 carry one; the rest belong to no thread or path.
-    expect(withLine.length).toBeGreaterThanOrEqual(90);
+    /*
+     * The marker is the copy's own phrasing, and it changed with EC-2.1: the
+     * line stopped saying "Part of <title> in <title>" and started saying what
+     * each name is — a lesson, and a sequence read in order — because two
+     * proper nouns with no type attached were the defect.
+     *
+     * Matching on "a lesson in" and the path-only wording rather than on
+     * "Part of " keeps this pointed at the line itself. It also has to stay a
+     * phrase the component actually emits: this assertion silently found zero
+     * pages the moment the copy moved, which is why the floor below is a floor
+     * and not an exact count.
+     */
+    const MARKERS = ["is a lesson in", "is a lesson that works through", "a sequence meant"];
+    const marker = (html: string) => MARKERS.map((m) => html.indexOf(m)).filter((i) => i !== -1);
+    const withLine = pages.filter((p) => marker(p.html).length > 0);
+    // 137 of 179 built concept pages carry one, up from 102 when the line
+    // required both a thread and a path; the rest belong to neither.
+    expect(withLine.length).toBeGreaterThanOrEqual(120);
 
     const misordered = withLine
-      .filter((p) => p.html.indexOf("Part of ") < p.html.indexOf("Home"))
+      .filter((p) => Math.min(...marker(p.html)) < p.html.indexOf("Home"))
       .map((p) => p.slug);
     expect(misordered).toEqual([]);
 
@@ -80,7 +95,7 @@ describe("concept context line", () => {
     // 114 characters at worst once the extra paths went, against 190 before.
     const longest = Math.max(
       ...withLine.map((p) => {
-        const start = p.html.indexOf("Part of ");
+        const start = Math.min(...marker(p.html));
         return p.html
           .slice(start, p.html.indexOf("</div>", start))
           .replace(/<[^>]+>/g, " ")
