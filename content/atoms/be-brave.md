@@ -28,7 +28,7 @@ created: "2026-04-04"
 updated: "2026-08-25"
 ---
 
-**Alias:** Act before you're ready. The scene needs offers more than it needs perfect offers.
+Act before you're ready. The scene needs offers more than it needs perfect offers.
 
 Every other principle assumes data is already flowing. Someone has to *start* the flow — and someone has to keep pushing it deeper. Bravery is the principle that governs thresholds: the moment before the first offer, but also the moment mid-scene when the truth is visible and nobody has named it yet.
 

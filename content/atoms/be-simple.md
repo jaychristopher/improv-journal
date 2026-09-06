@@ -28,7 +28,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-**Alias:** Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
+Prefer simple, obvious actions — they create space for depth and are gifts your partner can immediately use.
 
 The most counterintuitive principle. It goes against everything our egos tell us — we want to be the cleverest person in the room. But Keith Johnstone: *"The improviser has to realise that the more obvious he is, the more original he appears."*
 

@@ -27,7 +27,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-**Alias:** Treat every outcome as usable information and postpone evaluation.
+Treat every outcome as usable information and postpone evaluation.
 
 ## Deferring evaluation is the actual instruction
 

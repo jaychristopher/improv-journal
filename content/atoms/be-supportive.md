@@ -31,7 +31,7 @@ created: "2026-04-04"
 updated: "2026-08-24"
 ---
 
-**Alias:** Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
+Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.
 
 Every other principle is an individual command — how should *I* process data, allocate attention, send signals, act, adapt. Be Supportive is the one that is explicitly **other-directed**. It answers: am I working for myself or for the ensemble?
 

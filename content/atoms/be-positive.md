@@ -32,7 +32,7 @@ created: "2026-03-29"
 updated: "2026-08-23"
 ---
 
-**Alias:** Accept the current state and extend it forward, rather than resisting or undoing it.
+Accept the current state and extend it forward, rather than resisting or undoing it.
 
 "Positive" doesn't mean happy. A scene about a divorce can be great improv. This is **mathematical positivity** — addition, not subtraction. It's the famous "Yes, And" understood as a systems command rather than a social nicety.
 

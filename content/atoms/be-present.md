@@ -32,7 +32,7 @@ created: "2026-03-29"
 updated: "2026-08-24"
 ---
 
-**Alias:** Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
+Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.
 
 Presence is the precondition for every other principle. You cannot accept an offer you did not hear, simplify what you did not understand, or be honest about a moment you were not in. This is the foundation — the principle that makes all the others possible.
 

@@ -32,7 +32,7 @@ created: "2026-04-04"
 updated: "2026-08-25"
 ---
 
-**Alias:** Let your partner's offers transform your state — your plans, your emotions, your character, your history.
+Let your partner's offers transform your state — your plans, your emotions, your character, your history.
 
 ## Accepting is not the same as being changed
 
