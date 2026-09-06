@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 
+import { countFor, itemMatches, selectionsFor } from "@/lib/facets";
+
 interface FilterableItem {
   id: string;
   title: string;
@@ -49,10 +51,11 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
     });
   };
 
+  // Semantics live in @/lib/facets so they can be tested; see the note there
+  // for why OR-inside / AND-across is not what this used to do.
+  const selections = selectionsFor(filterGroups, activeTags);
   const filtered =
-    activeTags.size === 0
-      ? items
-      : items.filter((item) => Array.from(activeTags).some((tag) => item.tags.includes(tag)));
+    selections.length === 0 ? items : items.filter((item) => itemMatches(item.tags, selections));
 
   return (
     <div>
@@ -66,15 +69,36 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
               <span className="text-foreground/30 w-14 shrink-0 text-xs">{group.label}</span>
               {visibleTags.map((ft) => {
                 const isActive = activeTags.has(ft.tag);
-                const count = items.filter((i) => i.tags.includes(ft.tag)).length;
+                /*
+                 * The count this tag would actually produce, given everything
+                 * else already chosen — its own group ignored, so the numbers
+                 * inside a group stay comparable. It used to be the total
+                 * across all items, which promised results the filter would not
+                 * deliver: "Game 9" next to an active Beginner that yields none.
+                 *
+                 * That matters more here than the arithmetic suggests. Under
+                 * AND, 56% of level-and-area pairs on the exercises hub have no
+                 * members at all, so honest counts are what keep a correct
+                 * filter from feeling broken — a zero is visible before it is
+                 * clicked rather than after.
+                 */
+                const groupIndex = selections.findIndex((chosen) =>
+                  group.tags.some((t) => t.tag === chosen[0]),
+                );
+                const count = countFor(items, ft.tag, selections, groupIndex);
+                const unavailable = count === 0 && !isActive;
                 return (
                   <button
                     key={ft.tag}
                     onClick={() => toggleTag(ft.tag)}
+                    disabled={unavailable}
+                    aria-pressed={isActive}
                     className={`rounded-full border px-3 py-1 text-xs transition-colors ${
                       isActive
                         ? "border-foreground/40 text-foreground/80 bg-foreground/5"
-                        : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
+                        : unavailable
+                          ? "border-foreground/5 text-foreground/20 cursor-not-allowed"
+                          : "border-foreground/10 text-foreground/40 hover:border-foreground/20"
                     }`}
                   >
                     {ft.label}
