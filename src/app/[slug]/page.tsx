@@ -346,6 +346,15 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
 
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{fm.title}</h1>
+        {/* The prompts guide is the fastest-growing page on the site, and a
+            reader who arrives at it wants a prompt, not a preamble. The hero
+            is a generator, placed straight under the h1 so it is above the
+            fold on a phone — measured at 390px, the description and byline
+            above it pushed its buttons past the bottom of the screen. It takes
+            the viewport on first tap. Nothing in it is a route, so the article
+            stays whole underneath for search engines and the reader who
+            scrolls, and the h1 is untouched. */}
+        {HERO_TOOLS[slug]}
         <p className="text-foreground/60 mt-2 text-sm">{fm.description}</p>
         <UpdatedOn
           date={fm.updated}
@@ -353,13 +362,6 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           className="text-foreground/50 mt-3 text-xs"
         />
       </header>
-
-      {/* The prompts guide is the fastest-growing page on the site, and a
-          reader who arrives at it wants a prompt, not a preamble. The hero is
-          a generator: it sits above the fold on a phone and takes the viewport
-          on first tap. Nothing in it is a route, so the article stays whole
-          underneath for search engines and for the reader who scrolls. */}
-      {HERO_TOOLS[slug]}
 
       {audioUrl && (
         <>

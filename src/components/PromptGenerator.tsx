@@ -70,9 +70,6 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
   const close = useCallback(() => {
     trackEvent("prompt_generator_closed", { surface, step, draws });
     setOpen(false);
-    const opener = openerRef.current;
-    openerRef.current = null;
-    if (opener && typeof opener.focus === "function") opener.focus();
   }, [surface, step, draws]);
 
   useEffect(() => {
@@ -82,6 +79,13 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
     first?.focus();
     return () => {
       document.body.style.overflow = "";
+      // Focus goes back to the button that opened the dialog. This has to
+      // happen here, after the re-render, because until then the inline card
+      // is still inert and refuses focus — which is exactly what happened
+      // when the restore ran inside close().
+      const opener = openerRef.current;
+      openerRef.current = null;
+      opener?.focus();
     };
   }, [open]);
 
@@ -176,22 +180,25 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
         aria-labelledby={headingId}
         aria-hidden={open}
         inert={open}
-        className="border-foreground/10 bg-surface mb-10 rounded-xl border p-5 sm:p-6"
+        className="border-foreground/10 bg-surface mt-4 mb-4 rounded-xl border p-4 sm:mt-6 sm:p-6"
       >
         <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
         <h2 id={headingId} className="text-foreground-strong mt-1 text-2xl font-semibold">
           Give me a prompt
         </h2>
         <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-          Say where you are using it and get the strongest prompts first, one at a time, never the
-          same one twice on this device.
+          Say where you are using it. Strongest first, one at a time, never the same one twice on
+          this device.
         </p>
-        <div className="mt-5 grid gap-2 sm:grid-cols-2">
+        {/* Two columns at every width, and the descriptions only from `sm` up:
+            at 390px the one-column version with descriptions ran to 340px of
+            buttons and the last one sat below the fold. */}
+        <div className="mt-4 grid grid-cols-2 gap-2">
           {PROMPT_USE_CASES.map((room) => (
-            <RoomButton key={room.id} room={room} onChoose={chooseRoom} />
+            <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact />
           ))}
         </div>
-        <p className="text-foreground/40 mt-4 text-xs">
+        <p className="text-foreground/40 mt-3 text-xs">
           {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
           {surface === "guide-hero" && (
             <>
@@ -367,9 +374,12 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
 function RoomButton({
   room,
   onChoose,
+  compact = false,
 }: {
   room: PromptUseCaseInfo;
   onChoose: (room: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) => void;
+  /** Hide the description below `sm`, for the inline card on a phone. */
+  compact?: boolean;
 }) {
   const labelId = useId();
   const descId = useId();
@@ -379,17 +389,23 @@ function RoomButton({
       onClick={(event) => onChoose(room, event)}
       aria-labelledby={labelId}
       aria-describedby={descId}
-      className="group border-foreground/10 bg-background hover:border-foreground/40 flex min-h-14 w-full cursor-pointer items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition-colors"
+      className="group border-foreground/10 bg-background hover:border-foreground/40 flex min-h-14 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border px-3 py-3 text-left transition-colors sm:gap-3 sm:px-4"
     >
       <span className="min-w-0">
         <span id={labelId} className="text-foreground-strong block text-sm font-semibold">
           {room.label}
         </span>
-        <span id={descId} className="text-foreground/50 mt-0.5 block text-xs">
+        <span
+          id={descId}
+          className={[
+            "text-foreground/50 mt-0.5 text-xs",
+            compact ? "hidden sm:block" : "block",
+          ].join(" ")}
+        >
           {room.description}
         </span>
       </span>
-      <span className="text-foreground/30 shrink-0 transition-transform group-hover:translate-x-1">
+      <span className="text-foreground/30 hidden shrink-0 transition-transform group-hover:translate-x-1 sm:inline">
         &rarr;
       </span>
     </button>

@@ -110,6 +110,12 @@ describe("PromptGenerator", () => {
     fireEvent.click(screen.getByRole("button", { name: /close/i }));
     expect(screen.queryByRole("dialog")).toBeNull();
     expect(document.body.style.overflow).toBe("");
+    // Focus lands back on the button that opened it, not on the body. On the
+    // live site it landed on the body, because the restore ran while the card
+    // behind the dialog was still inert.
+    expect(document.activeElement).toBe(
+      screen.getByRole("button", { name: PROMPT_USE_CASES[0].label }),
+    );
 
     openWith(PROMPT_USE_CASES[1].label);
     fireEvent.keyDown(document, { key: "Escape" });
