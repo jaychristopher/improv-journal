@@ -8,6 +8,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { GuideConcepts } from "@/components/GuideConcepts";
 import { LevelRedirect } from "@/components/LevelRedirect";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
+import { PromptGenerator } from "@/components/PromptGenerator";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { TableOfContents } from "@/components/TableOfContents";
 import { UpdatedOn } from "@/components/UpdatedOn";
@@ -155,6 +156,14 @@ const BRIDGE_RELATIONS: Record<
     exercises: ["mirroring", "emotional-honesty-scene", "last-word-response"],
     threads: [{ id: "quieting-the-planning-mind", label: "Quieting the Planning Mind" }],
   },
+};
+
+/**
+ * Guides that open with an interactive tool rather than prose. Keyed by slug
+ * so the page and the tool are wired here and nowhere else.
+ */
+const HERO_TOOLS: Record<string, React.ReactNode> = {
+  "improv-prompts": <PromptGenerator surface="guide-hero" />,
 };
 
 interface BridgeActionLink {
@@ -344,6 +353,13 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           className="text-foreground/50 mt-3 text-xs"
         />
       </header>
+
+      {/* The prompts guide is the fastest-growing page on the site, and a
+          reader who arrives at it wants a prompt, not a preamble. The hero is
+          a generator: it sits above the fold on a phone and takes the viewport
+          on first tap. Nothing in it is a route, so the article stays whole
+          underneath for search engines and for the reader who scrolls. */}
+      {HERO_TOOLS[slug]}
 
       {audioUrl && (
         <>

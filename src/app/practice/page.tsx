@@ -93,6 +93,19 @@ export default async function PracticePage() {
         </span>
       </Link>
 
+      <Link
+        href="/tools/improv-prompt-generator"
+        className="border-foreground/10 bg-foreground/[0.03] hover:border-foreground/30 mb-8 block rounded-xl border p-5 transition-colors"
+      >
+        <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
+        <span className="mt-1 block font-semibold">
+          Improv Prompt Generator: a scene starter, ranked, never repeated &rarr;
+        </span>
+        <span className="text-foreground/50 mt-1 block text-sm">
+          Say where you are using it and get the strongest prompts first, one at a time.
+        </span>
+      </Link>
+
       <div className="space-y-4">
         {sections.map((s) => (
           <Link

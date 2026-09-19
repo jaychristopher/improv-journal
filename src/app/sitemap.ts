@@ -110,6 +110,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
     changeFrequency: "monthly",
   });
+  entries.push({
+    url: `${SITE_URL}/tools/improv-prompt-generator`,
+    lastModified: newest(bridges.filter((b) => b.slug === "improv-prompts")),
+    priority: 0.7,
+    changeFrequency: "monthly",
+  });
   for (const level of levels) {
     entries.push({
       url: `${SITE_URL}/tools/exercise-picker/${level}`,

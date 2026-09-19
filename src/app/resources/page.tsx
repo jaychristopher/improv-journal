@@ -28,6 +28,11 @@ const SECTIONS = [
     desc: "Free tool — find the right improv exercise for your group by level and focus.",
   },
   {
+    href: "/tools/improv-prompt-generator",
+    label: "Improv Prompt Generator",
+    desc: "Free tool — a ranked scene starter for your room, never the same one twice.",
+  },
+  {
     href: "/listen",
     label: "Listen",
     desc: "Podcast conversations exploring the physics of human connection through improv.",
