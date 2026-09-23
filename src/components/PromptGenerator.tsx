@@ -226,47 +226,60 @@ export function PromptGenerator({
   return (
     <>
       <HeroTakeover labelledBy={headingId} hidden={open} takeover={surface === "guide-hero"}>
-        <div data-track="prompt-generator">
-          <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
-          <h2
-            id={headingId}
-            className="text-hero-foreground mt-2 text-3xl font-semibold tracking-tight sm:text-4xl"
-          >
-            Give me a prompt
-          </h2>
-          <p className="text-hero-muted mt-3 max-w-lg text-base leading-relaxed">
-            Say where you are using it. Strongest first, one at a time, never the same one twice on
-            this device.
-            {presetInfo && (
-              <span data-prompt-preset={presetInfo.id}>
-                {" "}
-                Set to {presetInfo.label.toLowerCase()}, as the page you came from asked.
-              </span>
-            )}
-          </p>
-          {/* Two columns at every width, and the descriptions only from `sm` up:
+        <div
+          data-track="prompt-generator"
+          // Two columns across the 16:9 panel from `lg`: stacked, this content
+          // is taller than the aspect allows and the ends of it were clipped.
+          className={
+            surface === "guide-hero"
+              ? "lg:grid lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-12"
+              : ""
+          }
+        >
+          <div>
+            <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
+            <h2
+              id={headingId}
+              className="text-hero-foreground mt-2 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
+            >
+              Give me a prompt
+            </h2>
+            <p className="text-hero-muted mt-3 max-w-lg text-base leading-relaxed lg:mt-5">
+              Say where you are using it. Strongest first, one at a time, never the same one twice
+              on this device.
+              {presetInfo && (
+                <span data-prompt-preset={presetInfo.id}>
+                  {" "}
+                  Set to {presetInfo.label.toLowerCase()}, as the page you came from asked.
+                </span>
+              )}
+            </p>
+          </div>
+          <div className="mt-6 lg:mt-0">
+            {/* Two columns at every width, and the descriptions only from `sm` up:
             at 390px the one-column version with descriptions ran to 340px of
             buttons and the last one sat below the fold. */}
-          <div className="mt-6 grid grid-cols-2 gap-2 sm:gap-3">
-            {PROMPT_USE_CASES.map((room) => (
-              <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
-            ))}
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              {PROMPT_USE_CASES.map((room) => (
+                <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
+              ))}
+            </div>
+            <p className="text-hero-muted/70 mt-5 text-xs">
+              {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
+              {surface === "guide-hero" && (
+                <>
+                  {" "}
+                  <Link
+                    href="/tools/improv-prompt-generator"
+                    className="underline underline-offset-2"
+                  >
+                    How the generator ranks them
+                  </Link>
+                  .
+                </>
+              )}
+            </p>
           </div>
-          <p className="text-hero-muted/70 mt-5 text-xs">
-            {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
-            {surface === "guide-hero" && (
-              <>
-                {" "}
-                <Link
-                  href="/tools/improv-prompt-generator"
-                  className="underline underline-offset-2"
-                >
-                  How the generator ranks them
-                </Link>
-                .
-              </>
-            )}
-          </p>
         </div>
       </HeroTakeover>
 

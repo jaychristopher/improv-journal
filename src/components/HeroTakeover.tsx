@@ -71,8 +71,14 @@ export function HeroTakeover({
             top of the document and the nav has no background of its own. */}
         <div
           className={[
+            // `lg:max-w-none` so a takeover hero can lay its content out in
+            // two columns across the 16:9 panel. Stacked, this content is
+            // taller than 16:9 allows and the eyebrow and the footnote were
+            // clipped off the ends of it.
             "mx-auto w-full max-w-2xl",
-            takeover ? "px-6 pt-24 pb-14 sm:px-8 lg:px-12 lg:py-12" : "px-6 py-8 sm:px-8",
+            takeover
+              ? "px-6 pt-24 pb-14 sm:px-8 lg:max-w-none lg:px-12 lg:py-12"
+              : "px-6 py-8 sm:px-8",
           ].join(" ")}
         >
           {children}

@@ -20,6 +20,7 @@ import {
 import { deal, WYR_SEEN_KEY } from "@/lib/would-you-rather-game";
 
 import { HeroTakeover } from "./HeroTakeover";
+import { WouldYouRatherMark } from "./WouldYouRatherMark";
 
 /**
  * The hero on /would-you-rather-questions.
@@ -153,38 +154,41 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
   return (
     <>
       <HeroTakeover labelledBy={headingId} hidden={open}>
-        <div data-track="would-you-rather">
-          <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
-          <h2
-            id={headingId}
-            className="text-hero-foreground mt-2 text-3xl font-semibold tracking-tight sm:text-4xl"
-          >
-            Deal me a pair
-          </h2>
-          <p className="text-hero-muted mt-3 max-w-lg text-base leading-relaxed">
-            Say who is playing. One pair at a time, never the same one twice on this device, and the
-            way to run it for the number of people in the room.
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-2 sm:gap-3">
-            {WOULD_YOU_RATHER_ROOMS.map((r) => (
-              <button
-                key={r.id}
-                type="button"
-                onClick={(event) => chooseRoom(r.id, event)}
-                className="border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10 rounded-xl border p-3 text-left transition-colors sm:p-4"
-              >
-                <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
-                  {r.label}
-                </span>
-                <span className="text-hero-muted mt-1 hidden text-xs leading-snug sm:block">
-                  {r.note}
-                </span>
-              </button>
-            ))}
+        <div
+          data-track="would-you-rather"
+          className="lg:grid lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-12"
+        >
+          <div>
+            <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
+            <WouldYouRatherMark id={headingId} />
+            <p className="text-hero-muted mt-5 max-w-lg text-base leading-relaxed sm:mt-6 lg:mt-7">
+              Deal me a pair. Say who is playing, and it runs the game: one pair at a time, never
+              the same one twice on this device, and the way to play it for the number of people in
+              the room.
+            </p>
           </div>
-          <p className="text-hero-muted/70 mt-5 text-xs">
-            {WOULD_YOU_RATHER_BANK.length} pairs, every one of them on this page.
-          </p>
+          <div className="mt-6 lg:mt-0">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              {WOULD_YOU_RATHER_ROOMS.map((r) => (
+                <button
+                  key={r.id}
+                  type="button"
+                  onClick={(event) => chooseRoom(r.id, event)}
+                  className="border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                >
+                  <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
+                    {r.label}
+                  </span>
+                  <span className="text-hero-muted mt-1 hidden text-xs leading-snug sm:block">
+                    {r.note}
+                  </span>
+                </button>
+              ))}
+            </div>
+            <p className="text-hero-muted/70 mt-5 text-xs">
+              {WOULD_YOU_RATHER_BANK.length} pairs, every one of them on this page.
+            </p>
+          </div>
         </div>
       </HeroTakeover>
 
