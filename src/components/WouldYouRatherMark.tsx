@@ -15,7 +15,7 @@
  */
 export function WouldYouRatherMark({ id }: { id?: string }) {
   return (
-    <h2 id={id} className="mt-3 sm:mt-4">
+    <h2 id={id}>
       <span className="text-hero-foreground block text-[2.75rem] leading-[0.95] font-bold tracking-tight sm:text-6xl lg:text-7xl">
         Would you
         <br />

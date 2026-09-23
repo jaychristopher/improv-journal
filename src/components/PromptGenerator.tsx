@@ -237,10 +237,9 @@ export function PromptGenerator({
           }
         >
           <div>
-            <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
             <h2
               id={headingId}
-              className="text-hero-foreground mt-2 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
+              className="text-hero-foreground text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
             >
               Give me a prompt
             </h2>

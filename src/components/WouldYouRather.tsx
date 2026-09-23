@@ -159,7 +159,6 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
           className="lg:grid lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-12"
         >
           <div>
-            <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
             <WouldYouRatherMark id={headingId} />
             <p className="text-hero-muted mt-5 max-w-lg text-base leading-relaxed sm:mt-6 lg:mt-7">
               Deal me a pair. Say who is playing, and it runs the game: one pair at a time, never
