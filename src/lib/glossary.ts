@@ -19,7 +19,8 @@
 
 import { getAtomUrl, loadAtoms } from "./content";
 import type { AtomType } from "./schema";
-import { leadParagraph, stripLeadLabel } from "./seo";
+import { leadParagraph, PLAIN_LEAD_LABEL, stripLeadLabel } from "./seo";
+import { CORE_DEFINITION, CORE_HREF } from "./the-core";
 
 export const GLOSSARY_URL = "/practice/vocabulary";
 
@@ -42,21 +43,29 @@ const TERM_TYPES: AtomType[] = [
   "exercise",
 ];
 
+/**
+ * What a term can be: an atom's type, or `site` for a term the site coined
+ * for its own structure and defines on a route rather than in an atom. One
+ * such term so far, `CORE_TERM` below.
+ */
+export type GlossaryTermType = AtomType | "site";
+
 /** How the hub groups the list, so 151 entries stay navigable. */
-export const GLOSSARY_GROUPS: { label: string; types: AtomType[] }[] = [
+export const GLOSSARY_GROUPS: { label: string; types: GlossaryTermType[] }[] = [
   { label: "Terms", types: ["definition"] },
   { label: "Techniques", types: ["technique", "pedagogy"] },
   { label: "What Goes Wrong", types: ["antipattern", "pattern"] },
   { label: "Principles and Laws", types: ["principle", "law", "framework", "insight"] },
   { label: "Formats", types: ["format"] },
   { label: "Exercises", types: ["exercise"] },
+  { label: "Structure", types: ["site"] },
 ];
 
 export interface GlossaryTerm {
   id: string;
   term: string;
   url: string;
-  type: AtomType;
+  type: GlossaryTermType;
   /** The entry's opening definition, taken verbatim from its own content. */
   definition: string;
   /** Other names the concept is taught under, for alternateName. */
@@ -81,6 +90,24 @@ export async function loadGlossaryTerms(): Promise<GlossaryTerm[]> {
     }))
     .sort((a, b) => a.term.localeCompare(b.term));
 }
+
+/**
+ * "The core": the one term the site coined rather than authored. Eighty-three
+ * built pages said "and the core" or "through the core" and no page, entry
+ * or tooltip said what it meant (tracker entry 309). It is not an atom — the
+ * members are nineteen atoms, recomputed in the-core.ts — so it cannot come
+ * out of `loadGlossaryTerms`, whose every entry is a page an atom lives on
+ * (glossary.test.ts holds that). The hub appends it to the loaded list, and
+ * its definition is the sentence the page opens on, so the entry and the
+ * page it links say the same thing.
+ */
+export const CORE_TERM: GlossaryTerm = {
+  id: "the-core",
+  term: "The core",
+  url: CORE_HREF,
+  type: "site",
+  definition: CORE_DEFINITION,
+};
 
 /** True when a page should carry DefinedTerm markup. */
 export function isGlossaryType(type: AtomType): boolean {
@@ -126,7 +153,12 @@ export function definitionFromHtml(html: string, maxLen = 300): string {
       .replace(/&#(\d+);/g, (_, code: string) => String.fromCodePoint(Number(code)))
       .replace(/&#x([0-9a-f]+);/gi, (_, code: string) => String.fromCodePoint(parseInt(code, 16)))
       .replace(/\s+/g, " ")
-      .trim();
+      .trim()
+      // The plain form — "Recovery: Decay is how to recover…" — has no
+      // <strong> to match on, so it is dropped by the shape the markdown side
+      // uses (see PLAIN_LEAD_LABEL). Without this the three recovery patterns'
+      // DefinedTerm carried the label after the meta tag had lost it.
+      .replace(PLAIN_LEAD_LABEL, "");
     // "Technique for: Be Simple" is a label, not a definition.
     if (text.length < 25 || /^[A-Za-z ]+ for:/.test(text)) continue;
     return text.length <= maxLen ? text : `${text.slice(0, text.lastIndexOf(" ", maxLen - 1))}…`;

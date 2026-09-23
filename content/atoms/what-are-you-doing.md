@@ -15,6 +15,7 @@ links:
   - { id: environment, relation: extends }
   - { id: warm-up, relation: extends }
   - { id: cognitive-bandwidth, relation: illustrates }
+  - { id: overcomplication, relation: contrasts }
 sources: []
 created: "2026-08-22"
 updated: "2026-08-24"
@@ -50,9 +51,9 @@ Watch also for the point where a player stops naming activities and starts namin
 
 **Answering with a state rather than an activity.** "I'm being sad" gives the next player nothing to do with their hands. The answer has to be a verb somebody can perform.
 
-**Freezing to think.** The activity stops while the player searches. Coach them to keep the current activity going while they speak — that split is the skill.
+**Freezing to think.** The activity stops while the player searches (`internal-computation`). Coach them to keep the current activity going while they speak — that split is the skill.
 
-**Escalating to absurdity.** "I'm wrestling a bear made of soup." It gets a laugh and the next player cannot do it, which is a `cognitive-bandwidth` problem dressed as a joke: complex offers cost your partner more than they give.
+**Escalating to absurdity.** "I'm wrestling a bear made of soup." It gets a laugh and the next player cannot do it, which is a `cognitive-bandwidth` problem dressed as a joke: complex offers cost your partner more than they give (`overcomplication`).
 
 ## Variations
 

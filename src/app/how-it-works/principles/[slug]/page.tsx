@@ -4,19 +4,22 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import { principleSequence } from "@/lib/principle-order";
 import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
-/** Canonical order of the 8 principles — loops back to the start */
-const PRINCIPLE_ORDER = [
-  "be-positive",
-  "be-present",
-  "be-thankful",
-  "be-honest",
-  "be-simple",
-  "be-brave",
-  "be-changeable",
-  "be-supportive",
-];
+/**
+ * The next/previous loop walks the same dependency order the principles hub
+ * lists — be present first, framing apart. This file used to carry its own
+ * hand-written teaching order beginning at be-positive, so a reader who took
+ * the hub's advice and pressed "Next principle" from be-present was sent to
+ * the hub's sixth (tracker entry 207). One module, `principle-order.ts`,
+ * now serves the hub, this pager and the podcast season; a principle it
+ * does not name is still appended before framing, so the loop reaches every
+ * principle and the "N of 9" label counts the corpus rather than the list.
+ */
+async function getPrincipleOrder(): Promise<string[]> {
+  return principleSequence(await loadAtoms());
+}
 
 export async function generateStaticParams() {
   const atoms = await loadAtoms();
@@ -34,16 +37,20 @@ export async function generateMetadata({
   const atom = await getAtomBySlug(slug);
   if (!atom) return {};
   const displayTitle = await getAtomDisplayTitle(atom);
+  // One qualified title for the title tag and the share card alike. The card
+  // used to carry the bare H1 ("Commitment"), so a share dropped the one word
+  // that says what kind of thing it is (tracker entry 235).
+  const title = conceptTitle(displayTitle, atom.frontmatter.type);
   const desc = atomPageDescription(atom);
   const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
   return {
-    title: pageTitle(conceptTitle(displayTitle, atom.frontmatter.type)),
+    title: pageTitle(title),
     description: desc,
     alternates: { canonical: url },
     openGraph: {
       siteName: SITE_NAME,
       locale: "en_US",
-      title: displayTitle,
+      title,
       description: desc,
       url,
       type: "article",
@@ -61,12 +68,13 @@ export default async function PrincipleDetailPage({
   const atom = await getAtomBySlug(slug);
   if (!atom || atom.frontmatter.type !== "principle") notFound();
 
-  const currentIdx = PRINCIPLE_ORDER.indexOf(slug);
-  const nextSlug = PRINCIPLE_ORDER[(currentIdx + 1) % PRINCIPLE_ORDER.length];
+  const order = await getPrincipleOrder();
+  const currentIdx = order.indexOf(slug);
+  const nextSlug = order[(currentIdx + 1) % order.length];
   const nextAtom = await getAtomBySlug(nextSlug);
   const nextTitle = nextAtom?.frontmatter.title ?? nextSlug;
 
-  const isLast = currentIdx === PRINCIPLE_ORDER.length - 1;
+  const isLast = currentIdx === order.length - 1;
 
   return (
     <>
@@ -83,13 +91,15 @@ export default async function PrincipleDetailPage({
       />
 
       {/* Next principle */}
-      <div className="mx-auto max-w-5xl px-6 pb-16">
+      <div className="mx-auto max-w-5xl px-6 pb-16" data-track="next-principle" data-derived="true">
         <Link
           href={`/how-it-works/principles/${nextSlug}`}
           className="group border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border p-6 transition-colors"
         >
           <span className="text-foreground/40 text-xs tracking-wider uppercase">
-            {isLast ? "Back to the beginning" : `Next principle — ${currentIdx + 2} of 8`}
+            {isLast
+              ? "Back to the beginning"
+              : `Next principle — ${currentIdx + 2} of ${order.length}`}
           </span>
           <div className="mt-1 flex items-center justify-between">
             <h2 className="text-lg font-semibold">{nextTitle}</h2>

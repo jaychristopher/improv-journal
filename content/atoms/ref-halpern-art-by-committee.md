@@ -21,7 +21,7 @@ work:
   published: "2006"
   isbn: "1566081122"
 created: "2026-08-23"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 **Charna Halpern. *Art by Committee: A Guide to Advanced Improvisation.* Meriwether Publishing, 2006.**

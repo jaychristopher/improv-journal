@@ -18,7 +18,7 @@ links:
   - { id: performing-cleverness, relation: contrasts }
 sources: []
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 A circle. You throw an imaginary ball to somebody and make a sound as it leaves your hands. They catch it making the same sound, then invent a new one and throw it on. It takes about four minutes, and it is one of the few warm-ups a group can say something specific about afterwards.

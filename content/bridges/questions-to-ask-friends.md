@@ -22,7 +22,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 # Questions to Ask Friends: 152 That Go Somewhere
@@ -323,6 +323,8 @@ The questions are the easy part. Almost everything that decides whether you get 
 ## Practise the Asking Part
 
 **Nothing but questions.** `questions-only` requires every line of a scene to be a genuine question, and puts you out on a statement — or on a question that does not follow from the one before it. That second rule is the one worth having. It tests directly whether you took in the last answer before producing your next question, which is the skill this whole page depends on.
+
+**Receive the answer as a gift.** `gift-giving` hands you an unnamed object and makes you decide, out loud, what it is and why it matters to you. It trains taking whatever you are given — including an answer you did not expect — and finding the reason it is worth having before you reach for your next question.
 
 The other half of this — what to do once somebody has actually answered — belongs elsewhere and is most of the work: [how to be a good friend](/how-to-be-a-good-friend) for what support is and why advice so often costs you the next disclosure, and [how to be a good listener](/how-to-be-a-good-listener) for the receiving mechanics in detail. [Team building questions](/team-building-questions) if the room is a workplace rather than a friendship.
 

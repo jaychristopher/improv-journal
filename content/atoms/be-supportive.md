@@ -28,7 +28,7 @@ links:
   - { id: ref-stiles-improvise-freely, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-09-06"
 ---
 
 Make your partner's choices look brilliant. Optimize for the ensemble, not for yourself.

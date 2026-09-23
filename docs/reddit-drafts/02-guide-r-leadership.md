@@ -3,7 +3,7 @@
 **Subreddit:** r/leadership
 **Post type:** Guide
 **Keyword in title:** "team communication"
-**Link:** physicsofconnection.com/team-bonding-activities (in body, after value)
+**Link:** physicsofconnection.com/team-building-activities (in body, after value)
 
 ---
 
@@ -34,6 +34,6 @@ This sounds weird but it's the single most effective listening exercise I've fou
 
 We've been doing one of these three at the start of every weekly meeting for the past 3 months. The team doesn't call it "improv" — they call it the warm-up. Nobody has complained. Two people have asked to do it in other meetings.
 
-These exercises come from improv training — I've been reading about it at a site called The Physics of Connection (physicsofconnection.com/team-bonding-activities) which has the full instructions and the research behind why they work. Also worth reading: Amy Edmondson's psychological safety research, which is the academic backing for why vulnerability-based exercises beat fun-based ones.
+These exercises come from improv training — I've been reading about it at a site called The Physics of Connection (physicsofconnection.com/team-building-activities) which has the full instructions and the research behind why they work. Also worth reading: Amy Edmondson's psychological safety research, which is the academic backing for why vulnerability-based exercises beat fun-based ones.
 
 What warm-ups or rituals do you use to start meetings? Curious what works for other teams.

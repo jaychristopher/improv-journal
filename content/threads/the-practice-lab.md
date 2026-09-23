@@ -5,7 +5,7 @@ status: draft
 atoms: [emotion-switch, first-line-drill, fracture-repair-drill, no-backspace-scene, space-work-scene, status-transfer, directed-scene, genre-scene, organic-opening-exercise]
 tags: [exercises, practice, training, pedagogy]
 created: "2026-04-07"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 Every improv skill is trainable through exercises that make the right behavior structurally unavoidable. You don't learn by being told — you learn by being put in a situation where the skill is the only way through.

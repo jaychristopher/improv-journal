@@ -29,7 +29,7 @@ atoms_extracted:
   - one-word-scene
 tags: [deep-dive, systems-thinking, principles, laws]
 created: "2026-03-29"
-updated: "2026-03-29"
+updated: "2026-04-11"
 ---
 
 A two-voice deep-dive dialogue analyzing improv as a systemic engineering problem rather than a comedy form. Draws on sources including "Universal Truths of Human Interaction," "Architectural Foundations of Sustained Interaction Momentum," and "Architectures of Systemic Collapse."

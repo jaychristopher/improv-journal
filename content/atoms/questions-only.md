@@ -16,7 +16,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-30"
 ---
 
 **Trains:** noticing how much of a conversation is deferral. Two players hold a scene in which every line must be a question — and the exercise is most useful for what it reveals about the habit, not for the habit itself.
@@ -53,7 +53,7 @@ Played well, Questions Only becomes a competition to see who can load the most r
 
 ## Common failures
 
-**Stalling questions.** "Really?" "Are you sure?" "What do you mean?" Technically legal, entirely empty. Rule them out after the first round.
+**Stalling questions.** "Really?" "Are you sure?" "What do you mean?" Technically legal, entirely empty — `hesitation` that has found a loophole in the rules. Rule them out after the first round.
 
 **Ignoring the scene.** Players get so occupied with the constraint that they stop building a `base-reality`, and the result is a rally rather than a scene. If an observer cannot say who these two people are after thirty seconds, the constraint has eaten the content.
 

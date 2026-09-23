@@ -21,7 +21,7 @@ links:
   - { id: ref-stanislavski-actor-prepares, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 The audience is not a passive recipient of the show. They are a **co-creator** of the shared reality — the third player in every scene.

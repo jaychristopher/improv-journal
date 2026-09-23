@@ -4,7 +4,7 @@ title: "The Blocking Taxonomy"
 type: framework
 status: draft
 tags: [frameworks, antipatterns, johnstone, diagnosis]
-aliases: ["Denial", "Blocking"]
+aliases: ["Denial"]
 links:
   - { id: blocking, relation: extends }
   - { id: wimping, relation: extends }
@@ -22,7 +22,7 @@ links:
   - { id: diagnosing-scene-failure, relation: extends }
 sources: []
 created: "2026-08-23"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 Johnstone's central observation about refusal is that almost nobody does it out loud. Flat denial — "no we're not" — is rare, easy to spot and easy to coach. The refusals that actually kill scenes are polite, cooperative-looking and nearly invisible, and he catalogued them because each one avoids a different obligation and therefore needs a different fix.

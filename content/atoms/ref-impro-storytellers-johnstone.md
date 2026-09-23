@@ -27,7 +27,7 @@ work:
   published: "1999"
   isbn: "0571190995"
 created: "2026-04-05"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 **Keith Johnstone. *Impro for Storytellers: Theatresports and the Art of Making Things Happen.* Faber & Faber, 1999.**

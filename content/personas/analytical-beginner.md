@@ -5,7 +5,7 @@ content_fit: high
 status: draft
 audience: beginner
 created: "2026-04-05"
-updated: "2026-04-05"
+updated: "2026-04-11"
 ---
 
 # The Analytical Beginner

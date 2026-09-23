@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
+import { Prose } from "@/components/Prose";
 import { TagFilter } from "@/components/TagFilter";
-import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { getAtomUrl } from "@/lib/content";
+import { orderedExercises } from "@/lib/hub-order";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -44,8 +45,10 @@ const FILTER_GROUPS = [
 ];
 
 export default async function ExercisesPage() {
-  const atoms = await loadAtoms();
-  const exercises = atoms.filter((a) => a.frontmatter.type === "exercise");
+  // Beginner drills (the picker's level rule) first as the "start here" set,
+  // then the rest, each group by title — not load order, which was the
+  // filesystem's and flipped on production (entry 208).
+  const exercises = await orderedExercises();
 
   const items = exercises.map((a) => ({
     id: a.frontmatter.id,
@@ -74,21 +77,23 @@ export default async function ExercisesPage() {
         ]}
       />
       <header className="mb-8">
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">Exercises ({exercises.length})</h1>
-        <p className="text-foreground/60 mt-2 mb-2">
-          Structured activities that build specific skills through constraints. This is the
-          filterable index; for the same material written as a guide — how to choose one, how to run
-          it, and what each is for — see{" "}
-          <Link href="/improv-games" className="underline">
-            improv games
-          </Link>
-          .
-        </p>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">
+          Improv Exercises{" "}
+          <span className="text-foreground/40 font-normal">({exercises.length})</span>
+        </h1>
+        <Prose
+          text="Structured activities that build specific skills through constraints. This is the filterable index; for the same material written as a guide — how to choose one, how to run it, and what each is for — see [improv games](/improv-games)."
+          currentUrl="/practice/exercises"
+          className="text-foreground/60 mt-2 mb-2"
+          data-track="hub-intro"
+        />
       </header>
       {/* The list carries an h2 of its own so the entries below it do not jump
           the outline straight from h1 to h3 — the same fix /improv-games has. */}
       <h2 className="mb-4 text-xl font-semibold">Every Exercise</h2>
-      <TagFilter items={items} filterGroups={FILTER_GROUPS} />
+      <div data-track="exercise-list">
+        <TagFilter items={items} filterGroups={FILTER_GROUPS} />
+      </div>
     </main>
   );
 }

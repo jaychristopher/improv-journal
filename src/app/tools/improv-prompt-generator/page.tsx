@@ -12,6 +12,7 @@ import {
   RUBRIC_AXES,
   RUBRIC_WEIGHTS,
 } from "@/lib/prompt-bank";
+import { resolvePromptConcepts } from "@/lib/prompt-concepts";
 import { poolFor } from "@/lib/prompt-generator";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
@@ -68,7 +69,10 @@ const SECTIONS = [
   { id: "questions", text: "Questions About Improv Generators", level: 2 as const },
 ];
 
-export default function ImprovPromptGeneratorPage() {
+export default async function ImprovPromptGeneratorPage() {
+  // The categories' concepts, resolved here because the generator is a
+  // client component and cannot read the graph (tracker entry 332).
+  const concepts = await resolvePromptConcepts();
   const counts = PROMPT_CATEGORIES.map((category) => ({
     category,
     count: PROMPT_BANK.filter((p) => p.category === category.id).length,
@@ -96,11 +100,11 @@ export default function ImprovPromptGeneratorPage() {
         <p className="text-foreground/60 mt-2 text-sm">{DESCRIPTION}</p>
       </header>
 
-      <PromptGenerator surface="tool-page" />
+      <PromptGenerator surface="tool-page" concepts={concepts} />
 
       <TableOfContents headings={SECTIONS} />
 
-      <article className="prose prose-neutral dark:prose-invert max-w-none">
+      <article className="prose prose-neutral dark:prose-invert max-w-none" data-track="body">
         <p>
           Most improv generators are a random word. This one is not, because a random word is the
           weakest prompt there is: it arrives with no texture, no relationship and nothing at stake,
@@ -115,7 +119,9 @@ export default function ImprovPromptGeneratorPage() {
         <p>
           {PROMPT_BANK.length} prompts in six kinds. Every one of the 140 the guide lists is in the
           bank, and the rest were written to the same standard. Each kind enters through one section
-          of the guide, which explains what that kind is for:
+          of the guide, and is an idea from{" "}
+          <Link href="/threads/anatomy-of-a-scene">The Anatomy of a Scene</Link>, the lesson these
+          categories come from:
         </p>
         <ul>
           {counts.map(({ category, count }) => (

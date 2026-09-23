@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
 import { getEpisodesForShow, loadShows } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
@@ -19,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
      */
     title: pageTitle("Improv Podcasts: Three Shows and What Each Is For"),
     description:
-      "Three improv podcasts built from one set of ideas — a problem worked through in conversation, three-minute concept drills, and long-form arguments.",
+      "Three improv podcasts built from one set of ideas — a problem worked through in conversation, six-minute concept drills, and long-form arguments.",
     // Every show's feed, so a reader landing on the hub can find them all.
     alternates: {
       canonical: "/listen",
@@ -39,25 +40,30 @@ export async function generateMetadata(): Promise<Metadata> {
  * carry each show's own description, and this is the comparison the cards
  * cannot make — a card can say what a show is, only a list can say why you
  * would pick it over the other two.
+ *
+ * Each body ends by saying whether the show is one to play in order or one
+ * whose episodes stand alone. That clause is the show's `show_type` in
+ * `content/shows` said in prose — serial says "play in order", episodic
+ * "any episode stands alone" — and podcast-dates.test.ts checks they agree.
  */
 const WHICH_SHOW: { id: string; title: string; when: string; body: string }[] = [
   {
     id: "physics-of-connection",
     title: "The Physics of Connection",
     when: "You have a problem and want it worked through",
-    body: "Each episode starts from something that goes wrong away from a stage — overthinking a conversation, freezing when it matters, a team that will not say the real thing — and works out what improv found out about it. It is the longest show and the one that assumes least: no stage, no class, no vocabulary. If you found this site by searching for something that was bothering you, the episode about it is here.",
+    body: "Each episode starts from something that goes wrong away from a stage — overthinking a conversation, freezing when it matters, a team that will not say the real thing — and works out what improv found out about it. It is the longest show and the one that assumes least: no stage, no class, no vocabulary. If you found this site by searching for something that was bothering you, the episode about it is here, and any episode stands alone.",
   },
   {
     id: "improv-lab",
     title: "The Improv Lab",
     when: "You want one idea and something to do with it tonight",
-    body: "One concept or one exercise per episode, in about three minutes, ending with a way to try it. These are drills rather than discussions, and they are the ones worth queueing on the walk to a rehearsal. The trade is depth: an episode names a thing precisely and does not argue with itself about it.",
+    body: "One concept or one exercise per episode, in about six minutes, ending with a way to try it. These are drills rather than discussions, and they are the ones worth queueing on the walk to a rehearsal. The trade is depth: an episode names a thing precisely and does not argue with itself about it. The episodes are numbered in the order the ideas depend on each other, so play in order.",
   },
   {
     id: "deep-cuts",
     title: "Deep Cuts",
     when: "You want the argument, not the summary",
-    body: "The longest-form show, built from the lessons rather than the single concepts. These take a question that has more than one defensible answer — what a scene is actually made of, where the schools disagree, what teaching does to the thing being taught — and stay with it. It is the show to start with if you already know the vocabulary and want to be disagreed with.",
+    body: "The longest-form show as audio — its readings run nine minutes against six for a concept — built from the lessons, the library and the paths rather than the single concepts. These take a question that has more than one defensible answer — what a scene is actually made of, where the schools disagree, what teaching does to the thing being taught — and stay with it. It is the show to start with if you already know the vocabulary and want to be disagreed with, and it plays the lessons in the order the paths teach them, so play in order.",
   },
 ];
 
@@ -144,7 +150,7 @@ export default async function ListenPage() {
 
       <header className="mb-12">
         <span className="text-foreground/40 text-xs tracking-wider uppercase">podcast</span>
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">Listen</h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Improv Podcasts</h1>
         <p className="text-foreground/60 mt-2">
           {totalEpisodes} conversations exploring the physics of human connection through the lens
           of improvisation.
@@ -153,19 +159,22 @@ export default async function ListenPage() {
 
       <section className="mb-12">
         {HUB_ORIENTATION.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
-            {paragraph}
-          </p>
+          <Prose
+            text={paragraph}
+            currentUrl="/listen"
+            className="text-foreground/70 mb-4"
+            key={paragraph.slice(0, 40)}
+          />
         ))}
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" data-track="which-show">
         <h2 className="mb-3 text-xl font-semibold">Which of the three you want</h2>
-        <p className="text-foreground/70 mb-4">
-          They divide by what you are in the mood to do, not by subject — all three draw on the same
-          set of ideas, and a concept covered in three minutes on one show is an hour of argument on
-          another.
-        </p>
+        <Prose
+          text="They divide by what you are in the mood to do, not by subject — all three draw on the same set of ideas, and a concept covered in six minutes on one show is a ten-minute argument on another."
+          currentUrl="/listen"
+          className="text-foreground/70 mb-4"
+        />
         <div className="space-y-5">
           {WHICH_SHOW.map((show) => (
             <div key={show.id}>
@@ -175,7 +184,7 @@ export default async function ListenPage() {
                 </Link>
                 <span className="text-foreground/40 font-normal"> — {show.when}</span>
               </h3>
-              <p className="text-foreground/70 mt-1">{show.body}</p>
+              <Prose text={show.body} currentUrl="/listen" className="text-foreground/70 mt-1" />
             </div>
           ))}
         </div>
@@ -183,7 +192,7 @@ export default async function ListenPage() {
 
       {/* Featured episode */}
       {featured && (
-        <section className="mb-12">
+        <section className="mb-12" data-track="featured-episode">
           <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
             Featured
           </h2>
@@ -202,7 +211,7 @@ export default async function ListenPage() {
       )}
 
       {/* Show cards */}
-      <section>
+      <section data-track="show-list">
         <h2 className="mb-4 text-lg font-semibold">Three Shows</h2>
         <div className="space-y-4">
           {showsWithCounts.map((s) => (
@@ -230,9 +239,12 @@ export default async function ListenPage() {
           <div key={item.q} className="mb-6">
             <h3 className="mb-2 font-semibold">{item.q}</h3>
             {item.a.map((paragraph) => (
-              <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-3">
-                {paragraph}
-              </p>
+              <Prose
+                text={paragraph}
+                currentUrl="/listen"
+                className="text-foreground/70 mb-3"
+                key={paragraph.slice(0, 40)}
+              />
             ))}
           </div>
         ))}

@@ -31,8 +31,24 @@ const STRANDED_DIFFICULTY = 30;
 
 export interface TopGuide {
   slug: string;
-  /** Head keyword, used as the anchor text. */
+  /**
+   * Head keyword, used as the anchor text, in the page's own spelling where
+   * the keyword's differs only by dialect: "Theatre games", not the
+   * higher-volume "Theater games", for the guide whose H1 says theatre.
+   */
   label: string;
+  /**
+   * The page's own title, the footer's other label for the same guide.
+   *
+   * Tracker entry 287 (2026-09-22): of 270 hand-written links from one guide
+   * to another, 218 use the target's primary keyword verbatim, and the footer
+   * added 376 more of the same phrase, so the 27 promoted guides received
+   * 0.96 of their inbound anchors (median) as the one string they are trying
+   * to rank for. The footer now alternates by hosting page — the title on the
+   * concept pages, the keyword elsewhere; see `footerLabelsByTitle` — and
+   * needs both forms to hand.
+   */
+  title: string;
   /** Traffic potential where known, otherwise peak declared volume. */
   reach: number;
   difficulty?: number;
@@ -158,7 +174,14 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
         const primary = keywords[0];
         return {
           slug: bridge.slug,
-          label: anchorLabel(keywords, bridge.frontmatter.subject) ?? bridge.frontmatter.title,
+          label:
+            anchorLabel(
+              keywords,
+              bridge.frontmatter.subject,
+              // The label must be a phrase the guide says; see anchor-text.
+              `${bridge.frontmatter.title}\n${bridge.content}`,
+            ) ?? bridge.frontmatter.title,
+          title: bridge.frontmatter.title,
           reach: reachOf(keywords),
           difficulty: primary?.difficulty,
           verdict: bridge.frontmatter.serp_verdict,

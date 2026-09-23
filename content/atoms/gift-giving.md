@@ -17,9 +17,10 @@ links:
   - { id: commitment, relation: extends }
   - { id: active-listening, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
+  - { id: performing-cleverness, relation: contrasts }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-30"
 ---
 
 **Trains:** Be Thankful — receiving unexpected input as a gift rather than a problem.
@@ -46,7 +47,7 @@ The exercise trains you to receive *anything* and immediately justify its person
 
 ## Common failures
 
-The giver pre-shapes a recognizable object (defeats the blind offer). The receiver names something "clever" for a laugh instead of something personally meaningful. The receiver goes generic ("Oh wow, thanks!") without specific justification. Players rush past the moment of discovery — slow down and let the object arrive before naming it.
+The giver pre-shapes a recognizable object (defeats the blind offer). The receiver names something "clever" for a laugh instead of something personally meaningful (`performing-cleverness`). The receiver goes generic ("Oh wow, thanks!") without specific justification. Players rush past the moment of discovery — slow down and let the object arrive before naming it.
 
 ## The transfer to scene work
 

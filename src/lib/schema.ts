@@ -47,11 +47,23 @@ export interface ShowSeason {
   filter: ShowEpisodeFilter;
 }
 
+/**
+ * Apple's two kinds of podcast, and the contract each makes with a client.
+ * `serial`: the episodes are meant to be played in order, presented oldest
+ * first with season and episode numbers. `episodic`: each episode stands
+ * alone, presented newest first. The feed route emits it as `itunes:type` and
+ * orders the items to match, so the one word that tells a directory whether
+ * order matters agrees with the numbering, dates and seasons the feed already
+ * carries (tracker entry 246).
+ */
+export type ShowType = "serial" | "episodic";
+
 export interface ShowFrontmatter {
   id: string;
   title: string;
   description: string;
   seasons: ShowSeason[];
+  show_type: ShowType;
   created: string;
 }
 
@@ -116,6 +128,21 @@ export interface AtomFrontmatter {
   aliases?: string[];
   /** The named entity this atom is about — see BridgeFrontmatter.subject. */
   subject?: PageSubject;
+  /**
+   * Authority records for the concept this atom defines, emitted as `sameAs`
+   * on its DefinedTerm markup. Absolute https URLs only, to Wikipedia or
+   * Wikidata (`https://en.wikipedia.org/wiki/…`,
+   * `https://www.wikidata.org/wiki/Q…`).
+   *
+   * A guide can say its subject is Wikipedia's "Trust (social science)", and
+   * until this field existed the atom `trust` — the site's own definition of
+   * the thing — carried no identity at all, so a crawler was told the guide
+   * is about a known entity and the concept page is about a term it had never
+   * heard of (novel-insights entry 175). Where a guide's `subject.sameAs`
+   * names the same concept, copy the URL here verbatim so the two pages
+   * resolve to one entity. Never invent a record.
+   */
+  sameAs?: string[];
   external_links?: ExternalLink[];
   work?: CitedWork; // only on `reference` atoms
   /**
@@ -343,9 +370,19 @@ export interface PathFrontmatter {
 // ─── Graph types ─────────────────────────────────────────────────────────────
 
 export interface GraphNode {
+  /**
+   * Unique across every layer, which the guide layer cannot manage on its own.
+   *
+   * Sources, atoms, threads and paths carry a declared `id` and none of them
+   * collide. A guide has no `id`, only a slug, and 2 of the 78 slugs are also
+   * atom ids: `active-listening` and `viewpoints` are both a concept page and
+   * a guide about that concept. Keying a guide node on its bare slug would
+   * merge those two pairs into one node and silently re-point their edges, so
+   * a guide's id is `bridge:<slug>` and the slug is the part after the colon.
+   */
   id: string;
   title: string;
-  layer: "source" | "atom" | "thread" | "path";
+  layer: "source" | "atom" | "bridge" | "thread" | "path";
   type?: AtomType;
   status: ContentStatus;
   tags: string[];
@@ -354,7 +391,28 @@ export interface GraphNode {
 export interface GraphEdge {
   source: string;
   target: string;
-  relation: Link["relation"] | "composes" | "sequences" | "extracted_from";
+  relation:
+    | Link["relation"]
+    | "composes"
+    | "sequences"
+    | "extracted_from"
+    // A guide's declared `entry_atoms`: "the atoms this guide is built to
+    // enter from", written by hand in frontmatter.
+    | "declares"
+    // A guide's rendered atom links, the union of what it declares and what
+    // its html actually links. A different claim from `declares` and kept as
+    // a separate edge — see the comment on `getBridgeAtomIndex`.
+    | "mentions"
+    // A guide's `entry_path`: the one path it hands a reader on to.
+    | "enters";
+  /**
+   * True where the edge was read off rendered output rather than declared.
+   *
+   * Only `mentions` carries it today. A consumer that wants the corpus as its
+   * authors stated it filters these out; one that wants the link graph a
+   * crawler sees keeps them. Merging the two would lose that choice.
+   */
+  derived?: true;
 }
 
 export interface KnowledgeGraph {
@@ -363,8 +421,18 @@ export interface KnowledgeGraph {
   meta: {
     sourceCount: number;
     atomCount: number;
+    bridgeCount: number;
     threadCount: number;
     pathCount: number;
     builtAt: string;
+    /**
+     * The commit the payload was built from, where the build knew it.
+     *
+     * `builtAt` changes on every build and says nothing about whether the
+     * content moved, so two payloads cannot be told apart by it. Vercel sets
+     * `VERCEL_GIT_COMMIT_SHA` and GitHub Actions sets `GITHUB_SHA`; a local
+     * build has neither, and the field is absent rather than guessed.
+     */
+    commit?: string;
   };
 }

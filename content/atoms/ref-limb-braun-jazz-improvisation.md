@@ -21,7 +21,7 @@ work:
   published: "2008"
   doi: "10.1371/journal.pone.0001679"
 created: "2026-08-23"
-updated: "2026-08-25"
+updated: "2026-08-29"
 ---
 
 **Charles J. Limb and Allen R. Braun. "Neural Substrates of Spontaneous Musical Performance: An fMRI Study of Jazz Improvisation." *PLoS ONE* 3(2), e1679, 2008.**

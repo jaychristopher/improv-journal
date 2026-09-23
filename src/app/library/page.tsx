@@ -2,15 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
 import { loadAtoms } from "@/lib/content";
+import { HUBS, hubSelfCrumb } from "@/lib/hubs";
 import type { ExternalLink } from "@/lib/schema";
 import { pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  // Written out rather than built from HUBS.library.h1: keyword-collisions
+  // reads this route's `pageTitle("…")` literal from source, and hub-headings
+  // holds the built title to the heading, which does read the table.
   title: pageTitle("Improv Reading List: Books That Shaped the Craft"),
   description:
     "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
-  alternates: { canonical: "/library" },
+  alternates: { canonical: HUBS.library.href },
 };
 
 const TIERS: { label: string; description: string; ids: string[] }[] = [
@@ -112,7 +117,7 @@ export default async function LibraryPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${SITE_URL}/library`,
-    name: "The Reading List",
+    name: HUBS.library.h1,
     description:
       "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
     url: `${SITE_URL}/library`,
@@ -136,29 +141,37 @@ export default async function LibraryPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
       />
-      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Library" }]} />
+      <Breadcrumb crumbs={[{ label: "Home", href: "/" }, hubSelfCrumb(HUBS.library)]} />
 
       <header className="mb-12">
-        <h1 className="text-3xl font-bold tracking-tight">The Reading List</h1>
-        <p className="text-foreground/60 mt-2">
-          The books, podcasts, and research behind these ideas — from improv&apos;s foundational
-          texts to cognitive science. Organized by where to start.
-        </p>
+        <h1 className="text-3xl font-bold tracking-tight">{HUBS.library.h1}</h1>
+        <Prose
+          text="The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science. Organized by where to start."
+          currentUrl="/library"
+          className="text-foreground/60 mt-2"
+        />
       </header>
 
       <section className="mb-12">
         {HUB_ORIENTATION.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
-            {paragraph}
-          </p>
+          <Prose
+            text={paragraph}
+            currentUrl="/library"
+            className="text-foreground/70 mb-4"
+            key={paragraph.slice(0, 40)}
+          />
         ))}
       </section>
 
-      <div className="space-y-12">
+      <div className="space-y-12" data-track="reading-list">
         {TIERS.map((tier) => (
           <section key={tier.label}>
             <h2 className="mb-1 text-lg font-semibold">{tier.label}</h2>
-            <p className="text-foreground/40 mb-4 text-sm">{tier.description}</p>
+            <Prose
+              text={tier.description}
+              currentUrl="/library"
+              className="text-foreground/40 mb-4 text-sm"
+            />
             <div className="space-y-4">
               {tier.ids.map((id) => {
                 const atom = refMap.get(id);
@@ -217,53 +230,40 @@ export default async function LibraryPage() {
         ))}
       </div>
 
-      <section className="mt-12">
+      <section className="mt-12" data-track="read-first">
         <h2 id="which-one-to-read-first" className="mb-3 text-xl font-semibold">
           Which One to Read First
         </h2>
-        <p className="text-foreground/70 mb-4">
-          The first tier is five books and almost nobody reads five. Which one is right depends less
-          on where you are in general and more on what is currently going wrong.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you have never done improv and want to know why anybody bothers.</strong>{" "}
-          <Link href="/library/ref-impro-johnstone" className="underline">
-            Impro
-          </Link>
-          . It is the most interesting book on the list and the least practical &mdash; a book about
-          imagination, spontaneity and status that happens to be set in a theatre. Do not expect a
-          route into doing it.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you are taking classes and your scenes keep dying.</strong>{" "}
-          <Link href="/library/ref-ucb-manual" className="underline">
-            The UCB Manual
-          </Link>
-          . Its distinguishing quality is that it commits: where the others gesture at what good
-          scenes have in common, this one gives a procedure and accepts being wrong sometimes. That
-          is exactly what a stuck student needs and exactly what an experienced one argues with.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you freeze at the top of a scene.</strong>{" "}
-          <Link href="/library/ref-napier-improvise" className="underline">
-            Improvise
-          </Link>
-          , which is about the first three seconds and very little else. Shorter than the others and
-          aimed at one problem.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you teach, or are about to.</strong>{" "}
-          <Link href="/library/ref-spolin-improvisation-for-theater" className="underline">
-            Improvisation for the Theater
-          </Link>
-          . Everything downstream of it is a variation, and it is written to be taught from rather
-          than read.
-        </p>
-        <p className="text-foreground/70">
-          What no book on this list will do is make you better at listening, which is the thing that
-          most limits most improvisers. That improves with repetitions and with somebody watching
-          who can tell you what you did. Reading is for knowing what to call it afterwards.
-        </p>
+        <Prose
+          text="The first tier is five books and almost nobody reads five. Which one is right depends less on where you are in general and more on what is currently going wrong."
+          currentUrl="/library"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If you have never done improv and want to know why anybody bothers.** [Impro](/library/ref-impro-johnstone). It is the most interesting book on the list and the least practical — a book about imagination, spontaneity and status that happens to be set in a theatre. Do not expect a route into doing it."
+          currentUrl="/library"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If you are taking classes and your scenes keep dying.** [The UCB Manual](/library/ref-ucb-manual). Its distinguishing quality is that it commits: where the others gesture at what good scenes have in common, this one gives a procedure and accepts being wrong sometimes. That is exactly what a stuck student needs and exactly what an experienced one argues with."
+          currentUrl="/library"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If you freeze at the top of a scene.** [Improvise](/library/ref-napier-improvise), which is about the first three seconds and very little else. Shorter than the others and aimed at one problem."
+          currentUrl="/library"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If you teach, or are about to.** [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater). Everything downstream of it is a variation, and it is written to be taught from rather than read."
+          currentUrl="/library"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="What no book on this list will do is make you better at listening, which is the thing that most limits most improvisers. That improves with repetitions and with somebody watching who can tell you what you did. Reading is for knowing what to call it afterwards."
+          currentUrl="/library"
+          className="text-foreground/70"
+        />
       </section>
     </main>
   );

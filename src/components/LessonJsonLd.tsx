@@ -1,4 +1,4 @@
-import { authorRef, ogImages, publisherRef, SITE_URL } from "@/lib/seo";
+import { articleImages, authorRef, publisherRef, SITE_URL } from "@/lib/seo";
 
 export interface LessonConcept {
   name: string;
@@ -28,6 +28,7 @@ export function LessonJsonLd({
   difficulty,
   concepts,
   partOfCourses,
+  contentImage,
 }: {
   title: string;
   description: string;
@@ -41,6 +42,8 @@ export function LessonJsonLd({
   concepts?: LessonConcept[];
   /** Paths that sequence this lesson, referenced by their Course @id. */
   partOfCourses?: string[];
+  /** The lesson's first body image, site-relative; listed ahead of the card. */
+  contentImage?: string | null;
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -50,7 +53,8 @@ export function LessonJsonLd({
     name: title,
     // Same reasoning as ArticleJsonLd: these 25 are typed Article as well,
     // and were the other half of the site's Article markup with no image.
-    image: `${SITE_URL}${ogImages(title, "Lesson")[0].url}`,
+    // Nine of them carry a diagram, which goes first for the same reason.
+    image: articleImages(title, "Lesson", contentImage),
     description,
     url: `${SITE_URL}${url}`,
     learningResourceType: "Lesson",

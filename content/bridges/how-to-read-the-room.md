@@ -11,7 +11,7 @@ entry_atoms: [audience-relationship, active-listening, ensemble, signal, bandwid
 entry_path: improv-for-teams
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # How to Read the Room: The Skill Improv Performers Train Every Night

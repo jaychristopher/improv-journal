@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
 import { loadAtoms } from "@/lib/content";
+import { HUBS } from "@/lib/hubs";
 import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -55,7 +57,7 @@ export default async function PracticePage() {
     },
     {
       href: "/practice/vocabulary",
-      label: "Vocabulary",
+      label: HUBS.glossary.label,
       count: counts.vocabulary,
       desc: "The foundational concepts that name what's happening in scenes and conversations.",
     },
@@ -65,24 +67,29 @@ export default async function PracticePage() {
     <main className="mx-auto max-w-3xl px-6 py-16">
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Practice" }]} />
       <header className="mb-12">
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">Practice</h1>
-        <p className="text-foreground/60 mt-2">
-          The tools improvisers use — exercises you can try with a partner, techniques for better
-          conversations and scenes, show formats, and the vocabulary to name what&apos;s happening.
-        </p>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">Improv Practice</h1>
+        <Prose
+          text="The tools improvisers use — exercises you can try with a partner, techniques for better conversations and scenes, show formats, and the vocabulary to name what's happening."
+          currentUrl="/practice"
+          className="text-foreground/60 mt-2"
+        />
       </header>
 
       <section className="mb-12">
         {HUB_ORIENTATION.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
-            {paragraph}
-          </p>
+          <Prose
+            text={paragraph}
+            currentUrl="/practice"
+            className="text-foreground/70 mb-4"
+            key={paragraph.slice(0, 40)}
+          />
         ))}
       </section>
 
       <Link
         href="/tools/exercise-picker"
         className="border-foreground/10 bg-foreground/[0.03] hover:border-foreground/30 mb-8 block rounded-xl border p-5 transition-colors"
+        data-track="exercise-picker-cta"
       >
         <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
         <span className="mt-1 block font-semibold">
@@ -96,6 +103,7 @@ export default async function PracticePage() {
       <Link
         href="/tools/improv-prompt-generator"
         className="border-foreground/10 bg-foreground/[0.03] hover:border-foreground/30 mb-8 block rounded-xl border p-5 transition-colors"
+        data-track="prompt-generator-cta"
       >
         <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
         <span className="mt-1 block font-semibold">
@@ -106,7 +114,7 @@ export default async function PracticePage() {
         </span>
       </Link>
 
-      <div className="space-y-4">
+      <div className="space-y-4" data-track="practice-sections">
         {sections.map((s) => (
           <Link
             key={s.href}

@@ -2,18 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { GLOSSARY_URL, groupGlossaryTerms, loadGlossaryTerms } from "@/lib/glossary";
+import { Prose } from "@/components/Prose";
+import { CORE_TERM, GLOSSARY_URL, groupGlossaryTerms, loadGlossaryTerms } from "@/lib/glossary";
+import { hubCrumb, HUBS, hubSelfCrumb } from "@/lib/hubs";
 import { pageTitle, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: pageTitle("Improv Glossary: Vocabulary and Terms Explained"),
+  title: pageTitle(`${HUBS.glossary.h1}: Vocabulary and Terms Explained`),
   description:
     "A glossary of improv terms — what each one means and what it names in a scene, a show, or a conversation.",
   alternates: { canonical: GLOSSARY_URL },
 };
 
 export default async function VocabularyPage() {
-  const terms = await loadGlossaryTerms();
+  // The atoms' terms, plus the one the site coined for its own structure:
+  // "the core" is said on eighty-odd pages and was defined on none (tracker
+  // entry 309). It is not an atom, so it is appended here rather than loaded.
+  const terms = [...(await loadGlossaryTerms()), CORE_TERM];
+  // The count in the heading is every named concept except the books — all
+  // eleven term types — and the subtitle used to leave a reader assuming it
+  // counted definitions. Say what the number is made of, in the heading too:
+  // the practice hub, the nav and the sitemap treat this route as the
+  // definitions alone, so a bare "(173)" beside them read as a second count
+  // for one page (tracker entry 264).
+  const definitions = terms.filter((term) => term.type === "definition").length;
 
   // DefinedTermSet ties the individual DefinedTerm entries together, so the
   // page reads as a glossary rather than a list of links.
@@ -45,23 +57,30 @@ export default async function VocabularyPage() {
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },
-          { label: "Practice", href: "/practice" },
-          { label: "Vocabulary" },
+          hubCrumb(HUBS.practice),
+          hubSelfCrumb(HUBS.glossary),
         ]}
       />
       <header className="mb-12">
-        <h1 className="mt-1 text-3xl font-bold tracking-tight">Improv Glossary ({terms.length})</h1>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight">
+          {HUBS.glossary.h1}{" "}
+          <span className="text-foreground/40 font-normal">
+            ({terms.length} terms, {definitions} of them definitions)
+          </span>
+        </h1>
         <p className="text-foreground/60 mt-2">
-          Every concept this site defines — the terms, techniques, failure modes, principles and
-          formats that name what&apos;s happening in scenes, shows, and conversations. The shared
-          language that makes diagnosis possible.
+          Every named concept on this site except the books: {definitions} terms proper, and{" "}
+          {terms.length - definitions} more — techniques, exercises, formats, failure modes,
+          principles and laws — that name what&apos;s happening in scenes, shows, and conversations.
+          Grouped by kind below. The shared language that makes diagnosis possible.
         </p>
       </header>
 
-      {/* Grouped rather than one alphabetical run: 151 entries in a single
-          list is a wall, and the grouping is the site's own taxonomy. */}
+      {/* Grouped rather than one alphabetical run: the best part of two
+          hundred entries in a single list is a wall, and the grouping is the
+          site's own taxonomy. */}
       {groupGlossaryTerms(terms).map((group) => (
-        <section key={group.label} className="mb-12 last:mb-0">
+        <section key={group.label} className="mb-12 last:mb-0" data-track="glossary-list">
           <h2
             id={group.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
             className="text-foreground/40 mb-4 text-xs font-semibold tracking-wider uppercase"
@@ -103,116 +122,103 @@ export default async function VocabularyPage() {
       */}
       <section className="border-foreground/10 mt-16 border-t pt-12">
         <h2 className="mb-3 text-xl font-semibold">Why a Glossary Rather Than Advice</h2>
-        <p className="text-foreground/70 mb-4">
-          Most improv teaching arrives as encouragement, and encouragement cannot be applied to a
-          specific scene that died. A vocabulary can. If you can say that the scene failed because
-          nobody established where they were, or because a partner accepted everything and added
-          nothing, you have something to practise tomorrow &mdash; and if all you can say is that it
-          did not feel good, you have not.
-        </p>
-        <p className="text-foreground/70">
-          That is the whole reason this list exists. Every entry names a thing that happens, so it
-          can be pointed at afterwards. The terms are not jargon for its own sake; they are the
-          difference between a note that changes what somebody does and a note that makes them feel
-          worse.
-        </p>
+        <Prose
+          text="Most improv teaching arrives as encouragement, and encouragement cannot be applied to a specific scene that died. A vocabulary can. If you can say that the scene failed because nobody established where they were, or because a partner accepted everything and added nothing, you have something to practise tomorrow — and if all you can say is that it did not feel good, you have not."
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="That is the whole reason this list exists. Every entry names a thing that happens, so it can be pointed at afterwards. The terms are not jargon for its own sake; they are the difference between a note that changes what somebody does and a note that makes them feel worse."
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70"
+        />
       </section>
 
-      <section className="mt-12">
+      <section className="mt-12" data-track="learn-first">
         <h2 className="mb-3 text-xl font-semibold">The Six Worth Learning First</h2>
-        <p className="text-foreground/70 mb-4">
-          The list is long and most of it can wait. These six account for the great majority of what
-          goes wrong in a beginner&apos;s scene, and knowing them makes the rest legible.
-        </p>
+        {/*
+          This used to claim the six "account for the great majority of what
+          goes wrong in a beginner's scene" — copy from before the failure
+          layer existed. The antipatterns disagree: none of them links base
+          reality or game of the scene, and the atoms they point at most are
+          offers, commitment, courage, status and trust. What is true of these
+          six is that the rest of the list is defined in terms of them, which
+          is why they are the ones to learn first; what goes wrong is
+          catalogued where the failure modes live.
+        */}
+        <Prose
+          text="The list is long and most of it can wait. These six are the ones the rest of it is defined in terms of — most entries describe what happened to an offer, what was blocked, or what the base reality or the game turned out to be — so knowing them makes the rest legible. For what actually goes wrong, and how to recover, the [failure modes](/how-it-works/diagnosis) are catalogued separately."
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70 mb-4"
+        />
         <ul className="text-foreground/70 mb-4 space-y-2">
-          <li>
-            <Link href="/practice/vocabulary/offers" className="underline">
-              Offers
-            </Link>{" "}
-            &mdash; everything said or done that a partner can build with. Nearly every other term
-            is a description of what happened to one.
-          </li>
-          <li>
-            <Link href="/how-it-works/diagnosis/blocking" className="underline">
-              Blocking
-            </Link>{" "}
-            &mdash; refusing what was established. The single most common cause of a dead scene, and
-            usually invisible to the person doing it.
-          </li>
-          <li>
-            <Link href="/practice/techniques/yes-and" className="underline">
-              Yes, and
-            </Link>{" "}
-            &mdash; accepting and extending. Widely known, widely misread as a rule about being
-            agreeable.
-          </li>
-          <li>
-            <Link href="/practice/vocabulary/base-reality" className="underline">
-              Base reality
-            </Link>{" "}
-            &mdash; the ordinary world established before anything strange happens. Scenes that feel
-            random are usually missing it.
-          </li>
-          <li>
-            <Link href="/practice/vocabulary/game-of-the-scene" className="underline">
-              Game of the scene
-            </Link>{" "}
-            &mdash; the repeatable pattern a scene turns out to be about.
-          </li>
-          <li>
-            <Link href="/practice/vocabulary/status" className="underline">
-              Status
-            </Link>{" "}
-            &mdash; relative social position, played through behaviour. The fastest way to make a
-            scene about something.
-          </li>
+          <Prose
+            as="li"
+            text="[Offers](/practice/vocabulary/offers) — everything said or done that a partner can build with. Nearly every other term is a description of what happened to one."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="[Blocking](/how-it-works/diagnosis/blocking) — refusing what was established. The single most common cause of a dead scene, and usually invisible to the person doing it."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="[Yes, and](/practice/techniques/yes-and) — accepting and extending. Widely known, widely misread as a rule about being agreeable."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="[Base reality](/practice/vocabulary/base-reality) — the ordinary world established before anything strange happens. Scenes that feel random are usually missing it."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="[Game of the scene](/practice/vocabulary/game-of-the-scene) — the repeatable pattern a scene turns out to be about."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="[Status](/practice/vocabulary/status) — relative social position, played through behaviour. The fastest way to make a scene about something."
+            currentUrl="/practice/vocabulary"
+          />
         </ul>
       </section>
 
-      <section className="mt-12">
+      <section className="mt-12" data-track="synonyms">
         <h2 className="mb-3 text-xl font-semibold">The Same Thing Under Different Names</h2>
-        <p className="text-foreground/70 mb-4">
-          Improv vocabulary is not standardised. Five traditions developed largely in parallel and
-          named things independently, so a term you learned in one class can be absent, or mean
-          something adjacent, in the next. This trips people up constantly and is almost never
-          mentioned by the class doing the teaching.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          Where this site is confident two names describe one thing, the entry above says so. The
-          clearest cases:
-        </p>
+        <Prose
+          text="Improv vocabulary is not standardised. Five traditions developed largely in parallel and named things independently, so a term you learned in one class can be absent, or mean something adjacent, in the next. This trips people up constantly and is almost never mentioned by the class doing the teaching."
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="Where this site is confident two names describe one thing, the entry above says so. The clearest cases:"
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70 mb-4"
+        />
         <ul className="text-foreground/70 mb-4 space-y-2">
-          <li>
-            <strong>Base reality</strong> is also <strong>the platform</strong> (Johnstone) and{" "}
-            <strong>who/what/where</strong> (widely, and the phrase most beginners meet first).
-          </li>
-          <li>
-            <strong>Space work</strong> is also <strong>object work</strong> in most Chicago rooms
-            &mdash; and the two are not quite interchangeable, which the{" "}
-            <Link href="/practice/techniques/space-work" className="underline">
-              space work
-            </Link>{" "}
-            entry sets out.
-          </li>
-          <li>
-            <strong>Initiation</strong> is also the <strong>opening line</strong> or{" "}
-            <strong>first line</strong>, though the site&apos;s{" "}
-            <Link href="/practice/techniques/initiation" className="underline">
-              initiation
-            </Link>{" "}
-            entry argues the wider word is the more useful one, because the strongest openings are
-            frequently not lines at all.
-          </li>
+          <Prose
+            as="li"
+            text="**Base reality** is also **the platform** (Johnstone) and **who/what/where** (widely, and the phrase most beginners meet first)."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="**Space work** is also **object work** in most Chicago rooms — and the two are not quite interchangeable, which the [space work](/practice/techniques/space-work) entry sets out."
+            currentUrl="/practice/vocabulary"
+          />
+          <Prose
+            as="li"
+            text="**Initiation** is also the **opening line** or **first line**, though the site's [initiation](/practice/techniques/initiation) entry argues the wider word is the more useful one, because the strongest openings are frequently not lines at all."
+            currentUrl="/practice/vocabulary"
+          />
         </ul>
-        <p className="text-foreground/70">
-          Where a mapping is contested, this site does not assert one. If a term here disagrees with
-          how you were taught it, the disagreement is usually real and worth knowing about rather
-          than a mistake on either side &mdash; the{" "}
-          <Link href="/traditions" className="underline">
-            five traditions
-          </Link>{" "}
-          set out who believes what.
-        </p>
+        <Prose
+          text="Where a mapping is contested, this site does not assert one. If a term here disagrees with how you were taught it, the disagreement is usually real and worth knowing about rather than a mistake on either side — the [five traditions](/traditions) set out who believes what."
+          currentUrl="/practice/vocabulary"
+          className="text-foreground/70"
+        />
       </section>
     </main>
   );

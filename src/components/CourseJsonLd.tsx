@@ -35,7 +35,15 @@ interface CourseJsonLdProps {
   lessons: { id: string; title: string }[];
   /** What the path says a reader will be able to do afterwards. */
   teaches?: string[];
+  /** The authored prerequisite sentence(s), emitted as Text. */
   prerequisites?: string[];
+  /**
+   * Concepts the path's lessons require and never teach, derived from the
+   * atoms' `requires` edges (see path-prerequisites). Each becomes an
+   * AlignmentObject with a URL, so the markup states a prerequisite a
+   * machine can follow rather than only a sentence a reader can.
+   */
+  prerequisiteConcepts?: { title: string; url: string }[];
   lengthInDays?: number;
   cadence?: string;
 }
@@ -62,9 +70,22 @@ export function CourseJsonLd({
   lessons,
   teaches,
   prerequisites,
+  prerequisiteConcepts,
   lengthInDays,
   cadence,
 }: CourseJsonLdProps) {
+  // schema.org's coursePrerequisites takes AlignmentObject, Course or Text,
+  // so the sentence and the derived concepts sit in one array.
+  const coursePrerequisites = [
+    ...(prerequisites ?? []),
+    ...(prerequisiteConcepts ?? []).map((concept) => ({
+      "@type": "AlignmentObject",
+      alignmentType: "requires",
+      targetName: concept.title,
+      targetUrl: `${SITE_URL}${concept.url}`,
+    })),
+  ];
+
   const data = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -80,7 +101,7 @@ export function CourseJsonLd({
       educationalLevel: audience,
     }),
     ...(teaches && teaches.length > 0 && { teaches }),
-    ...(prerequisites && prerequisites.length > 0 && { coursePrerequisites: prerequisites }),
+    ...(coursePrerequisites.length > 0 && { coursePrerequisites }),
     ...(lessons.length > 0 && {
       hasPart: lessons.map((lesson, i) => ({
         "@type": "LearningResource",

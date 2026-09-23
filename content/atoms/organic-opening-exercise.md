@@ -1,6 +1,6 @@
 ---
 id: organic-opening-exercise
-title: "Organic Opening"
+title: "Organic Opening Drill"
 how_to_play: "Take one suggestion and let the group free-associate aloud and physically for several minutes without starting any scene, pulling out themes rather than plots."
 type: exercise
 status: draft
@@ -17,7 +17,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 **Trains:** Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence. The Harold opening practiced as a standalone exercise, removed from performance context.

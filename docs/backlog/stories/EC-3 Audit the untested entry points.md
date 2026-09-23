@@ -13,6 +13,8 @@ blocked_by: []
 blocks: []
 tasks:
   - "[[EC-3.1 Measure the unexamined entry points]]"
+  - "[[EC-3.2 Reconcile the beginner programme length]]"
+  - "[[EC-3.3 Extend reading time to lessons and library entries]]"
 ---
 
 # EC-3 — Audit the untested entry points

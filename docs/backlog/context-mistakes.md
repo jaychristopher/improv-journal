@@ -4,7 +4,7 @@ type: register
 summary: Running log of context-shaping mistakes, by entry point
 epic: "[[Entry-point context]]"
 status: Open
-updated: 2026-09-06
+updated: 2026-09-21
 ---
 
 # Context mistakes — running register
@@ -292,6 +292,23 @@ conversation" above the same audio the listener already chose.
 
 ---
 
+## 2026-09-21
+
+**Fourteen groups in the same column** — organic search → concept page —
+*overload*. The first entry in this register (2026-08-30) folded each sidebar
+group at five links and noted that "nobody looked at the column it rendered
+into". Today six derived blocks were added to that column — inbound edges,
+related concepts, paths that lean on this, a merged Compare group, citing
+lessons, handing-off guides — each tested for presence and for its own cap, none
+for the sum. `commitment` showed 55 visible links across 14 groups, and the
+sidebar-load ceiling was raised from 36 to 60 to let the build pass, which is the
+move this register's process notes warn against. Fixed the same evening: the
+outbound relation groups fold after the first three and the inbound groups after
+the first, behind one `details` each, so the worst page shows 33 and the ceiling
+is 36 again. The lesson worth keeping is the register's own: a change measured by
+what it adds is not measured by where it lands. (Tracker entries 95, 148, 220,
+229, 243.)
+
 ## Entry points examined, no defect found
 
 - **Podcast listener** following a show-note link — lands on the guide the
@@ -314,3 +331,79 @@ _All three below were taken up on 2026-09-06; see that section._
 - ~~Social / newsletter arrival~~ — examined, no defect found.
 - ~~Mid-course arrival~~ — could not be measured as written: the 7-day programme
   contains two lessons, so there is no day 4.
+
+---
+
+## 2026-09-22
+
+**What a reader now meets on a concept page, counted** — organic search →
+concept page — process note, because the verdict this register wants is a
+person's and what follows is a count. Nine rendered elements landed on the
+concept page in one evening (tracker entries 326–335) and `AtomDetail.tsx`
+went from 454 lines to 1,559, so the obvious entry to write is *overload*.
+The counts do not support writing it, and they do not clear it either.
+
+Where the nine went. One stands above the article — the lineage line — and it
+shares a region with the context banner rather than adding a row of its own.
+One stands after it, the "I ran this" control, on the 27 exercise pages. One
+renders nothing at all (the visit recorder). One is lines inside a card that
+was already there (the per-lesson "Next in…" lines in the router). The
+remaining five are in the column: the "Try it" line, the drills-facet link,
+the counter purpose note, the "Principle it violates" group, and the drills
+lifted out of "Example of" into groups of their own.
+
+Elements above the article, read from the render source today (the standing
+build predates all of this, so it could not be read from the built html):
+concepts 7, guides 9, lessons 8, paths 8. After the article: concepts 5,
+guides 6, lessons 6, paths 7. Those are mount counts — what a layer *can*
+put there. Per page on the concept layer: all 205 carry audio, the context
+banner renders on 137, the lineage line on 133, the outline on 197, so the
+median page shows 7 above the article and the thinnest shows 4. After it,
+most pages show 2 — the transcript fold and the router — because the other
+three are typed or authored.
+
+The column is where the evening's weight went: a median 9 groups a page, a
+maximum of 16 on `offers` (4 open, 7 folded, 5 below the budget), with
+be-brave and be-changeable also at 16, and 53 of the 205 pages at 12 or
+more. A page opens a median 5 of those groups and folds a median 0; the most
+any page opens is 9, on overcomplication.
+
+So: 16 groups is more than the 14 this register called overload on
+2026-09-21 — and that entry's own fix means the worst page shows 33 visible
+links where it showed 55, because the extra groups arrived folded. Groups up,
+visible links down. What the counts support is that the growth went into the
+column and not in front of the prose, that nothing above the article got
+worse, and that a folded group is still a line a reader reads and decides
+about. What they cannot settle is whether nine of those lines in a 260px
+column is a wall, because that is a judgement about a reader and nobody has
+looked at one of these pages since the change. I have not either: I counted
+the source. The judgement is left open deliberately rather than filed as a
+clean *overload* the numbers would not carry.
+
+For the density instruments beside this, from tonight's own tests rather than
+recomputed: `derived-provenance.test.ts` reads the captions per page — the
+concept layer fell from 4.84 to 4.00 when the regions landed — and
+`derived-density.test.ts` reads captions per authored word, where the concept
+layer is 0.0056 and the path layer 0.0308, 15 times the guides' 0.0020. The
+heaviest pages on the site by both readings are the paths, which nobody
+touched tonight.
+
+**The register's last entry predated the largest change it has ever had to
+judge** — process note. This file held 29 entries across three days and none
+dated today, on the day the site added the most context in its history. The
+reason is structural and worth naming: every substantive entry here was
+written by somebody who had just looked at a page, and tonight's work was
+written and checked by tests. `derived-provenance` — the test that would have
+caught the caption repetition — was itself written after the repetition.
+
+Two things follow. The count above is now a test:
+`src/lib/__tests__/page-furniture.test.ts` reads the elements above and after
+the article from the render source, per layer, with today's numbers as
+ceilings and the reason and date beside each; the next block added to a thin
+page fails there rather than being noticed months later by a person reading a
+page. And the habit the tracker's template should carry — one line appended
+here naming the element and the page type whenever a session adds a rendered
+element — is the cheaper half, and is not code. The lesson worth keeping is
+the one this register already knows in another form: a change measured by
+what it adds is not measured by where it lands, and a night measured entirely
+by tests is not measured by a reader at all.

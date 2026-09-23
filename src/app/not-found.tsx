@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { HUBS } from "@/lib/hubs";
+
 /**
  * The 404 is an entry point, and it was the only one nobody had written.
  *
@@ -37,7 +39,7 @@ const ROUTES: { href: string; label: string; hint: string }[] = [
   },
   {
     href: "/library",
-    label: "Reading list",
+    label: HUBS.library.label,
     hint: "The books and research behind all of it.",
   },
 ];

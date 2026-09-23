@@ -1,5 +1,40 @@
 # Complete Sitemap & Page Outlines
 
+> **What shipped, read back on 2026-09-22.** Of the 28 addresses this plan
+> draws below, 12 exist at the address it drew. The rest were mostly replaced
+> rather than dropped, and the replacement is a rule: an atom's `type` decides
+> its route (`getAtomUrl` in `src/lib/content.ts`), so the concept hubs and
+> `/atoms/{slug}` were never needed. **Read this list before implementing
+> anything from the tree below — `/concepts/*` in particular does not need
+> building a second time.** The linking rule further down is the one part of
+> this plan the site can still be measured against, and
+> `src/lib/__tests__/guide-link-budget.test.ts` now parses it and records what
+> the guides meet (tracker entry 343).
+>
+> - `/` — shipped.
+> - `/learn/beginner`, `/learn/intermediate`, `/learn/advanced`,
+>   `/learn/teacher`, `/learn/performer` — all 5 shipped.
+> - `/learn/` — no index page of its own; the 5 hubs are reached from the nav
+>   and the homepage.
+> - `/guides/` — shipped, as the index. It lists 78 guides, not the 5 named
+>   here.
+> - `/guides/{slug}` — replaced. Every guide is at the site root, so the 5
+>   named below are `/how-to-stop-overthinking`, `/psychological-safety`,
+>   `/active-listening`, `/how-to-be-funny` and `/stage-fright`.
+> - `/concepts/` and its 8 type hubs — never shipped. The type routes the
+>   page: principles at `/how-it-works/principles`, laws and insights at
+>   `/how-it-works`, patterns, antipatterns and frameworks at
+>   `/how-it-works/diagnosis`, techniques and pedagogy at
+>   `/practice/techniques`, exercises at `/practice/exercises`, formats at
+>   `/practice/formats`, definitions at `/practice/vocabulary`, and references
+>   at `/library`.
+> - `/atoms/{slug}` — never shipped, for the same reason.
+> - `/paths/{slug}`, `/threads/{slug}`, `/sources/{slug}`, `/library/`,
+>   `/api/graph` — shipped.
+> - "Total pages: ~220" — the content alone is 205 atoms, 78 guides, 25
+>   lessons and 11 paths, before the hubs, the topic clusters, the tools, the
+>   traditions and the shows.
+
 ## Architecture Overview
 
 ```

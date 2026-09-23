@@ -23,7 +23,7 @@ links:
   - { id: reincorporation, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 Callback is the pattern of referencing an earlier established detail — a name, an object, a line, a gesture — later in the scene or show, reactivating meaning that has receded from active attention.

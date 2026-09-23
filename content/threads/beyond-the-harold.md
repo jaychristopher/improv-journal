@@ -5,7 +5,7 @@ status: seed
 atoms: [harold, montage, armando, la-ronde, narrative-longform, organic-longform, two-person-longform, genre-format]
 tags: [formats, longform, advanced, mastery]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 You've learned the Harold. You can run its beats, find its games, make its connections. Now what?

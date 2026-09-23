@@ -11,6 +11,7 @@ import { Nav } from "@/components/Nav";
 import { PostHogPageView } from "@/components/PostHogPageView";
 import { authorRef, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
 import { getSystemCounts } from "@/lib/system-counts";
+import { getTopGuides } from "@/lib/top-guides";
 
 import { PostHogProvider } from "./providers";
 
@@ -53,7 +54,15 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { tagline } = await getSystemCounts();
+  const [{ tagline }, promoted] = await Promise.all([getSystemCounts(), getTopGuides()]);
+  // The footer is a client component so that its 46 links ride in a cached
+  // chunk rather than in every page's flight payload (tracker entry 265); the
+  // promoted guides are the one part it cannot know, so they cross the
+  // boundary here, trimmed to what it renders. A field added to TopGuide is
+  // otherwise serialised 27 times on 376 pages. The title is the one such
+  // field that has earned its place: the footer alternates between it and
+  // the keyword by hosting page (tracker entry 287, footerLabelsByTitle).
+  const topGuides = promoted.map(({ slug, label, title }) => ({ slug, label, title }));
   return (
     <html
       lang="en"
@@ -117,7 +126,7 @@ export default async function RootLayout({
           </Suspense>
           <Nav />
           {children}
-          <Footer />
+          <Footer topGuides={topGuides} />
           <Analytics />
           <SpeedInsights />
         </PostHogProvider>

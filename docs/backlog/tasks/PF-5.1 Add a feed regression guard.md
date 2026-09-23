@@ -4,7 +4,7 @@ type: task
 summary: Fail the suite if required feed elements disappear
 parent: "[[PF-5 Post-listing verification]]"
 epic: "[[Podcast finalization]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 1
 executable: agent
@@ -62,4 +62,27 @@ to confirm that case fails.
 
 ## Outcome
 
-_Not started._
+Done — reconciled 2026-09-21 (tracker entry 204). The guard the Run section asks
+for already exists: `src/lib/__tests__/podcast-feed-required.test.ts`, written in
+August and never marked here. It follows the podcast-show-notes conventions
+(`it.runIf(built)`, reads `.next/server/app/listen/*/feed.xml.body`, asserts
+presence rather than markup) and covers, per show: exactly one `podcast:guid`
+plus the namespace declaration, `itunes:image`, `itunes:category`, `language`,
+at least one `item`, a fetchable sized enclosure on every episode, and unique
+position-independent episode guids.
+
+The environment problem is handled the way this task asked: the `itunes:owner`
+containing `itunes:email` assertion runs only when `PODCAST_OWNER_EMAIL` is set,
+and when it is not a separate spec runs that reports the check as unproven rather
+than passed, with the comment saying CI must set the variable for it to mean
+anything.
+
+One deliberate deviation from the acceptance criteria: `<copyright>` is not
+asserted. The test records why in its closing comment — PF-1.2 was held because
+the narration is synthesised and the scripts model-written, so a blanket claim
+emitted by a build step would be a legal statement nobody has made. When PF-1.2
+is decided, the assertion belongs in this file.
+
+`src/lib/__tests__/content-feed.test.ts` (2026-09-21) adds a route-level guard
+alongside it: it calls the site's `/feed.xml` route directly, so a regression in
+the content feed is caught on the change and not on the next build.

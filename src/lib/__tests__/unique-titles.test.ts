@@ -24,8 +24,12 @@ describe("atom display titles", () => {
       byTitle.set(atom.frontmatter.title, list);
     }
 
+    // The last shared title ("Organic Opening", a technique and an exercise)
+    // was retitled on 2026-09-21 and atom-name-collisions.test.ts now forbids
+    // new ones, so the qualifier is exercised on a synthetic pair below rather
+    // than on content that is not supposed to exist.
     const collisions = [...byTitle.values()].filter((group) => group.length > 1);
-    expect(collisions.length).toBeGreaterThan(0); // the case this guards against exists
+    expect(collisions).toEqual([]);
 
     for (const group of collisions) {
       const resolved = await Promise.all(group.map((a) => getAtomDisplayTitle(a)));
@@ -33,6 +37,17 @@ describe("atom display titles", () => {
         group.length,
       );
     }
+  });
+
+  it("qualifies a synthetic title shared with a real atom", async () => {
+    const atoms = await loadAtoms();
+    const mirroring = atoms.find((a) => a.frontmatter.id === "mirroring")!;
+    // A different id with the same title: the loaded exercise shares it, so
+    // the impostor is qualified by its own type.
+    const impostor = {
+      frontmatter: { id: "mirroring-copy", title: mirroring.frontmatter.title, type: "technique" },
+    };
+    expect(await getAtomDisplayTitle(impostor)).toBe(`${mirroring.frontmatter.title} (Technique)`);
   });
 
   it("leaves an unambiguous title untouched", async () => {

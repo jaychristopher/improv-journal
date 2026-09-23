@@ -12,7 +12,7 @@ entry_atoms: [active-listening, yes-and, offers, commitment, be-present]
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 # How to Keep a Conversation Going Without More Topics

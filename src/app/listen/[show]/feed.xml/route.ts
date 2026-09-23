@@ -3,6 +3,12 @@ import { NextResponse } from "next/server";
 import { toAbsoluteSiteUrl } from "@/lib/audio";
 import { getAudioFileSize, getAudioManifestEntry } from "@/lib/audio-manifest";
 import { getEpisodesForShow, getShowBySlug } from "@/lib/content";
+import {
+  type EpisodeNotes,
+  getEpisodeNotes,
+  renderNotesHtml,
+  renderNotesText,
+} from "@/lib/episode-notes";
 import { SITE_URL } from "@/lib/seo";
 
 function escapeXml(str: string): string {
@@ -77,15 +83,42 @@ const SHOW_GUIDS: Record<string, string> = {
  *
  * Two links, both to the thing the episode is actually about. Show notes are a
  * legitimate place for them and a bad place to push it.
+ *
+ * After those, the page's edges: the sidebar a listener never sees, as one
+ * line per relation group with every name a link (tracker entry 263). A page
+ * with nothing declared adds nothing.
  */
-function showNotes(ep: { title: string; description?: string; href: string }): string {
+function showNotes(
+  ep: { title: string; description?: string; href: string },
+  notes: EpisodeNotes | null,
+): string {
   const url = toAbsoluteSiteUrl(ep.href, SITE_URL);
   const summary = ep.description ?? ep.title;
   return [
     `<p>${escapeXml(summary)}</p>`,
     `<p>Read the written version: <a href="${url}">${escapeXml(ep.title)}</a></p>`,
+    notes ? renderNotesHtml(notes, escapeXml) : "",
     `<p>From <a href="${SITE_URL}">The Physics of Connection</a>, a knowledge graph of what improv has worked out about how people build a shared reality.</p>`,
   ].join("");
+}
+
+/**
+ * Apple caps `description` and `itunes:summary` at 4,000 characters, so the
+ * plain one-line version of the edges is appended only while the field stays
+ * under it; past that the field keeps its summary and the html notes carry
+ * the edges alone.
+ */
+const PLAIN_FIELD_LIMIT = 4000;
+
+function plainSummary(
+  ep: { title: string; description?: string },
+  notes: EpisodeNotes | null,
+): string {
+  const summary = ep.description ?? ep.title;
+  const edges = notes ? renderNotesText(notes) : "";
+  if (!edges) return summary;
+  const joined = `${summary}\n\n${edges}`;
+  return joined.length < PLAIN_FIELD_LIMIT ? joined : summary;
 }
 
 export async function GET(_request: Request, { params }: { params: Promise<{ show: string }> }) {
@@ -98,7 +131,33 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
 
   const fm = show.frontmatter;
   const seasons = await getEpisodesForShow(fm.id);
-  const allEpisodes = seasons.flatMap((s) => s.episodes);
+  // Items keep the season order and are never re-sorted on pubDate here:
+  // `getEpisodesForShow` already plays them in the order the hub teaches
+  // (tracker entry 207) and derives each `published` from that position, so
+  // pubDate, `itunes:episode` and the season page agree on the order. Each
+  // item also carries `itunes:season`, the 1-based index of the season it
+  // came from, so a client that groups by season shows the structure the
+  // show page shows (tracker entry 236).
+  // `number` is `itunes:episode`: the position in teaching order, counted
+  // across the whole show rather than per season, fixed here so it stays with
+  // the episode whichever way the feed lists it. Teaching order is what
+  // `season-order.ts` derives — the Improv Lab's seasons and episodes in the
+  // order the ideas depend on each other, Deep Cuts' lessons in the order the
+  // paths teach them and its paths along the progression (tracker entries
+  // 303, 304) — so the number a client shows is the number a listener who
+  // plays in order reaches, and a "Builds on" note can name it.
+  const inTeachingOrder = seasons
+    .flatMap((s, seasonIndex) => s.episodes.map((ep) => ({ ...ep, season: seasonIndex + 1 })))
+    .map((ep, i) => ({ ...ep, number: i + 1 }));
+
+  // The declared type and the item order have to tell the same story
+  // (tracker entry 246). A serial show is "play in order", presented oldest
+  // first, so its items stay in teaching order. An episodic show is "any
+  // episode stands alone", presented newest first, so its items are the same
+  // list reversed; the numbers and dates still rise with teaching order, only
+  // the reading direction of the feed flips.
+  const allEpisodes =
+    fm.show_type === "episodic" ? [...inTeachingOrder].reverse() : inTeachingOrder;
 
   // Every item previously carried `new Date()`, so all episodes shared one
   // timestamp that changed on each request. Clients order by pubDate and use it
@@ -123,8 +182,16 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
     </itunes:owner>`
     : "";
 
+  const notesByHref = new Map(
+    await Promise.all(
+      allEpisodes.map(async (ep) => [ep.href, await getEpisodeNotes(ep.href)] as const),
+    ),
+  );
+
   const items = allEpisodes
-    .map((ep, i) => {
+    .map((ep) => {
+      const notes = notesByHref.get(ep.href) ?? null;
+      const summary = plainSummary(ep, notes);
       const entry = getAudioManifestEntry(ep.audioUrl);
       const durationSecs = entry?.seconds ?? 0;
       const hours = Math.floor(durationSecs / 3600);
@@ -152,12 +219,13 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
       <title>${escapeXml(ep.title)}</title>
       <link>${toAbsoluteSiteUrl(ep.href, SITE_URL)}</link>
       <guid isPermaLink="false">${toAbsoluteSiteUrl(ep.href, SITE_URL)}</guid>
-      <description>${escapeXml(ep.description ?? ep.title)}</description>
-      <itunes:summary>${escapeXml(ep.description ?? ep.title)}</itunes:summary>
-      <content:encoded>${cdata(showNotes(ep))}</content:encoded>
+      <description>${escapeXml(summary)}</description>
+      <itunes:summary>${escapeXml(summary)}</itunes:summary>
+      <content:encoded>${cdata(showNotes(ep, notes))}</content:encoded>
       <enclosure url="${toAbsoluteSiteUrl(ep.audioUrl, SITE_URL)}" length="${getAudioFileSize(ep.audioUrl)}" type="audio/mpeg" />
       <itunes:duration>${itunesDuration}</itunes:duration>
-      <itunes:episode>${i + 1}</itunes:episode>
+      <itunes:episode>${ep.number}</itunes:episode>
+      <itunes:season>${ep.season}</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
       <itunes:image href="${escapeXml(artworkUrl)}" />
@@ -183,7 +251,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ sho
     <itunes:author>${escapeXml(PODCAST_AUTHOR)}</itunes:author>
     <itunes:summary>${escapeXml(fm.description)}</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:type>episodic</itunes:type>
+    <itunes:type>${fm.show_type}</itunes:type>
     <itunes:image href="${escapeXml(artworkUrl)}" />
     <podcast:guid>${SHOW_GUIDS[showSlug]}</podcast:guid>${ownerBlock}
     <itunes:category text="Education">

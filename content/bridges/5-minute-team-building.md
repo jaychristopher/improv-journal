@@ -13,7 +13,7 @@ entry_atoms: [mirroring, yes-and-chain, gift-giving, one-word-scene, warm-up]
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 # 5-Minute Team Building Activities That Actually Work

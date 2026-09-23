@@ -353,6 +353,40 @@ try {
   /* no content dir: skip rather than fail */
 }
 
+// ─── Guides with no sources block ───────────────────────────────────────────
+//
+// A guide that answers a query without naming a source is the weakest version
+// of the page the About page promises. 48 of 78 guides linked no library work
+// in their body while their declared concepts cited 5 to 12 (tracker entry
+// 334, 2026-09-22), so the block is computed and the number worth watching is
+// how many guides still show none. Counted, not judged: the exit code stays
+// with the critical list above.
+let guidesWithSources = 0;
+let guidesWithoutSources = 0;
+let sourceLinks = 0;
+try {
+  const bridgeDir = path.join(process.cwd(), "content", "bridges");
+  const slugs = new Set(
+    fs
+      .readdirSync(bridgeDir)
+      .filter((f) => f.endsWith(".md"))
+      .map((f) => "/" + f.replace(/\.md$/, "")),
+  );
+  for (const [url, html] of pages) {
+    if (!slugs.has(url)) continue;
+    const start = html.indexOf('data-track="guide-sources"');
+    if (start === -1) {
+      guidesWithoutSources += 1;
+      continue;
+    }
+    guidesWithSources += 1;
+    const end = html.indexOf("</nav>", start);
+    sourceLinks += [...html.slice(start, end).matchAll(/href="\/library\/[^"?#]*"/g)].length;
+  }
+} catch {
+  /* no content dir: skip rather than fail */
+}
+
 const bySeverity = { critical: [], warning: [] };
 for (const i of issues) bySeverity[i.severity]?.push(i);
 
@@ -360,6 +394,9 @@ console.log("\nRendered SEO Audit");
 console.log("=".repeat(50));
 console.log(
   `Pages checked: ${pages.size}   stretched links: ${stretched}   json-ld nodes: ${jsonLdNodes}`,
+);
+console.log(
+  `Guides with a sources block: ${guidesWithSources}   sources shown: ${sourceLinks}   guides with no sources block: ${guidesWithoutSources}`,
 );
 console.log(`Critical: ${bySeverity.critical.length}   Warnings: ${bySeverity.warning.length}\n`);
 

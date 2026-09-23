@@ -10,7 +10,7 @@ status: seed
 atoms: [reality-construction, irreversibility, cognitive-bandwidth, shared-reality-fragility, continuous-signaling, meaning-is-relational, interdependence]
 tags: [systems-thinking, laws, fundamentals, meta]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 Before you learn the moves, learn the physics.

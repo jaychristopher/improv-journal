@@ -18,7 +18,7 @@ links:
   - { id: ref-ucb-manual, relation: contrasts }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Simple**

@@ -9,6 +9,7 @@
  */
 import { useEffect } from "react";
 
+import { trackEvent } from "@/lib/analytics";
 import posthog from "@/lib/posthog";
 
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
@@ -23,6 +24,29 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
       disable_session_recording: true,
       disable_surveys: true,
     });
+
+    // Server-rendered link blocks (the concept sidebar, the guide's concept
+    // block, related guides, lesson sources, the nav) fire no event of their
+    // own and autocapture is off, so a click on "Drills that train this" was
+    // indistinguishable from one in the nav (tracker entry 252, 2026-09-21).
+    // One delegated listener: any internal link inside a `[data-track]`
+    // wrapper reports the wrapper's name and the destination. Through
+    // trackEvent, so Vercel Analytics and PostHog see the same navigation:
+    // it captured to PostHog alone at first while the guide CTA's event
+    // reached both, and the two channels reported to different dashboards
+    // (tracker entry 259).
+    const onClick = (event: MouseEvent) => {
+      const target = event.target as Element | null;
+      const anchor = target?.closest?.("a[href]");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href") ?? "";
+      if (!href.startsWith("/")) return;
+      const block = anchor.closest("[data-track]")?.getAttribute("data-track");
+      if (!block) return;
+      trackEvent("link_clicked", { block, href, page: window.location.pathname });
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
   }, []);
 
   return <>{children}</>;

@@ -23,7 +23,7 @@ work:
   published: "2015"
   isbn: "0977309339"
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 **T. J. Jagodowski, David Pasquesi & Pam Victor. *Improvisation at the Speed of Life: The TJ and Dave Book.* Solo Roma, 2015.**

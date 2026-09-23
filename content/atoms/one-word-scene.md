@@ -18,9 +18,11 @@ links:
   - { id: obvious-choice, relation: enables }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
   - { id: one-word-story, relation: contrasts }
+  - { id: steering, relation: contrasts }
+  - { id: hesitation, relation: contrasts }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-08-30"
 ---
 
 **Trains:** Surrender and letting go of control — which produces simplicity as a byproduct. Also known as "One Word At A Time" or "One Word Story." Standard warm-up across UCB, iO, Annoyance, and Spolin traditions.
@@ -48,8 +50,8 @@ You physically cannot overcomplicate. The bandwidth constraint is absolute — o
 
 ## Common failures
 
-- **Steering toward jokes** — forcing the sentence toward a punchline you planned three words ago
-- **Filler stalling** — adding "the," "a," "um" to buy time instead of committing
+- **Steering toward jokes** — forcing the sentence toward a punchline you planned three words ago (`steering`)
+- **Filler stalling** — adding "the," "a," "um" to buy time instead of committing (`hesitation`)
 - **Punctuation hogging** — always being the one who ends the sentence, which is a subtle form of control
 
 ## The deeper lesson

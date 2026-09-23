@@ -4,7 +4,6 @@ title: Reincorporation
 type: technique
 status: draft
 tags: [techniques, intermediate, narrative, johnstone, structure]
-aliases: ["Callback"]
 links:
   - { id: callback, relation: contrasts }
   - { id: irreversibility, relation: requires }
@@ -21,7 +20,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 Reincorporation is bringing back an element from earlier in the scene or show so that it returns with added significance, changed meaning, or narrative resolution. Keith Johnstone's narrative engine — the technique that makes improvised stories feel authored.

@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import type { ContentStatus } from "@/lib/schema";
 import { AUTHOR_NAME } from "@/lib/seo";
 
 /**
@@ -57,20 +58,39 @@ export function formatUpdated(date: string): string | null {
  * `minutes` joins the same line for the same reason as the other two. A reader
  * decides whether to start before they decide whether to finish, and the guides
  * span 1,095 to 4,790 words with nothing on the page distinguishing them.
+ *
+ * `status` is the frontmatter's own word for how finished the page is — seed,
+ * draft or validated. The About page has promised since the first commit that
+ * "content carries a status of seed, draft, or validated, and those labels are
+ * meant honestly", and on 2026-09-22 the label rendered on the source
+ * transcript page and nowhere else: 284 drafts, 26 seeds and 9 validated pages
+ * said nothing about which they were, and the reader was told the label
+ * existed on the one page that did not show it (tracker entry 318). It rides
+ * the byline because that is the line a reader already reads for "how current
+ * is this", and "how finished is this" is the same question. One muted word,
+ * after the date, so a seed says it is a seed on the page where the reader
+ * decides whether to continue (entry 319).
+ *
+ * The word links the About paragraph that explains the ladder and states the
+ * distribution. It reads "draft" on 284 of 319 pages (entry 323, 2026-09-22),
+ * so a reader meeting it for the first time is meeting the norm, not a
+ * warning, and the page that says so is one click away.
  */
 export function UpdatedOn({
   date,
   minutes,
+  status,
   className,
 }: {
   date?: string;
   minutes?: number;
+  status?: ContentStatus;
   className?: string;
 }) {
   const formatted = date ? formatUpdated(date) : null;
 
   return (
-    <p className={className}>
+    <p className={className} data-track="byline">
       By{" "}
       <Link href="/about" rel="author" className="hover:underline">
         {AUTHOR_NAME}
@@ -82,6 +102,14 @@ export function UpdatedOn({
         </>
       ) : null}
       {minutes ? ` · ${minutes} min read` : null}
+      {status ? (
+        <>
+          {" · "}
+          <Link href="/about#status" className="hover:underline">
+            <span data-status={status}>{status}</span>
+          </Link>
+        </>
+      ) : null}
     </p>
   );
 }

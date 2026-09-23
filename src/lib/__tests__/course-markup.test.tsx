@@ -1,0 +1,164 @@
+import fs from "fs";
+import path from "path";
+import { renderToStaticMarkup } from "react-dom/server";
+import { describe, expect, it } from "vitest";
+
+import { CourseJsonLd } from "../../components/CourseJsonLd";
+import { loadPaths } from "../content";
+import { getPathPrerequisites } from "../path-prerequisites";
+import { SITE_URL } from "../seo";
+
+const APP = path.join(process.cwd(), ".next", "server", "app");
+const BUILD = path.join(APP, "paths");
+/**
+ * A build directory is not the same as a finished build.
+ *
+ * This suite reads rendered output, and the check was `existsSync` on the
+ * directory. During a rebuild the directory exists while the files inside it
+ * are still being written, so the guard passed and the read threw ENOENT —
+ * failing on a race rather than on anything true. It presented as a timeout,
+ * which sent me to vitest.config first; it was not.
+ *
+ * Naming a page the build always produces makes the guard mean what it says,
+ * so this skips cleanly instead of erroring. content-feed already checked a
+ * specific file this way, which is why it never broke.
+ */
+const built = fs.existsSync(BUILD) && fs.existsSync(path.join(APP, "index.html"));
+
+function course(slug: string) {
+  const html = fs.readFileSync(path.join(BUILD, `${slug}.html`), "utf-8");
+  const blobs = [
+    ...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g),
+  ].map((m) => JSON.parse(m[1]));
+  return blobs.find((b) => b["@type"] === "Course");
+}
+
+describe("course markup", () => {
+  it.runIf(built)("every path publishes a Course", async () => {
+    for (const p of await loadPaths()) {
+      expect(course(p.frontmatter.id), p.frontmatter.id).toBeTruthy();
+    }
+  });
+
+  it.runIf(built)("carries what Google reads for a course result", async () => {
+    for (const p of await loadPaths()) {
+      const c = course(p.frontmatter.id)!;
+      expect(c.name).toBe(p.frontmatter.title);
+      expect(c.description.length).toBeGreaterThan(0);
+      expect(c.provider["@type"]).toBe("Organization");
+      // hasCourseInstance with a courseMode is what makes it eligible at all.
+      expect(c.hasCourseInstance["@type"]).toBe("CourseInstance");
+      expect(c.hasCourseInstance.courseMode).toBe("Online");
+    }
+  });
+
+  it.runIf(built)("publishes the objectives the path declares", async () => {
+    for (const p of await loadPaths()) {
+      const declared = p.frontmatter.learning_objectives ?? [];
+      if (declared.length === 0) continue;
+      expect(course(p.frontmatter.id)!.teaches, p.frontmatter.id).toEqual(declared);
+    }
+  });
+
+  it.runIf(built)("publishes the lesson sequence as a syllabus", async () => {
+    for (const p of await loadPaths()) {
+      const c = course(p.frontmatter.id)!;
+      const declared = p.frontmatter.threads ?? [];
+      if (declared.length === 0) continue;
+
+      expect(c.syllabusSections?.length, p.frontmatter.id).toBeGreaterThan(0);
+      expect(c.hasPart?.length).toBe(c.syllabusSections.length);
+      // Ordered, and each position matches its place in the sequence.
+      const positions = c.syllabusSections.map((s: { position: number }) => s.position);
+      expect(positions).toEqual(positions.map((_: number, i: number) => i + 1));
+    }
+  });
+
+  it.runIf(built)("does not report lesson counts as academic credits", async () => {
+    for (const p of await loadPaths()) {
+      expect(course(p.frontmatter.id)!.numberOfCredits, p.frontmatter.id).toBeUndefined();
+    }
+  });
+
+  /**
+   * coursePrerequisites accepts AlignmentObject, Course or Text. The authored
+   * sentence was the whole value; the derived concepts (path-prerequisites)
+   * join it as AlignmentObjects with URLs. Anything else in the array is a
+   * validation failure, so this holds whatever the build contains.
+   */
+  it.runIf(built)("emits prerequisites as text or AlignmentObject with a site URL", async () => {
+    for (const p of await loadPaths()) {
+      const prereqs = course(p.frontmatter.id)!.coursePrerequisites;
+      expect(Array.isArray(prereqs), p.frontmatter.id).toBe(true);
+      expect(prereqs).toContain(p.frontmatter.prerequisites[0]);
+      for (const entry of prereqs) {
+        if (typeof entry === "string") continue;
+        expect(entry["@type"]).toBe("AlignmentObject");
+        expect(entry.alignmentType).toBe("requires");
+        expect(entry.targetName.length).toBeGreaterThan(0);
+        expect(entry.targetUrl.startsWith(`${SITE_URL}/`)).toBe(true);
+      }
+    }
+  });
+});
+
+/**
+ * Rendered directly rather than read from the build, so the shape is checked
+ * on every run and not only after the next `next build`.
+ */
+describe("course markup prerequisites", () => {
+  function render(props: Parameters<typeof CourseJsonLd>[0]) {
+    const html = renderToStaticMarkup(<CourseJsonLd {...props} />);
+    const m = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html);
+    return JSON.parse(m![1]);
+  }
+
+  it("keeps the authored sentence and adds each derived concept as an AlignmentObject", async () => {
+    const paths = await loadPaths();
+    expect(paths.length).toBe(11);
+
+    for (const p of paths) {
+      const concepts = await getPathPrerequisites(p.frontmatter.id);
+      // Since 2026-09-22 the list holds direct prerequisites only (entry 277)
+      // and Beginner Foundations, whose five atoms need next only the two it
+      // teaches, is the one path with none; every other path still has some.
+      if (p.frontmatter.id === "beginner-foundations") {
+        expect(concepts.length).toBe(0);
+      } else {
+        expect(concepts.length, p.frontmatter.id).toBeGreaterThan(0);
+      }
+
+      const data = render({
+        title: p.frontmatter.title,
+        description: p.frontmatter.description,
+        url: `/paths/${p.frontmatter.id}`,
+        lessons: [],
+        prerequisites: p.frontmatter.prerequisites,
+        prerequisiteConcepts: concepts.map((c) => ({ title: c.title, url: c.url })),
+      });
+
+      const prereqs = data.coursePrerequisites as unknown[];
+      expect(prereqs.slice(0, p.frontmatter.prerequisites.length)).toEqual(
+        p.frontmatter.prerequisites,
+      );
+      const objects = prereqs.slice(p.frontmatter.prerequisites.length) as {
+        "@type": string;
+        alignmentType: string;
+        targetName: string;
+        targetUrl: string;
+      }[];
+      expect(objects.length).toBe(concepts.length);
+      objects.forEach((o, i) => {
+        expect(o["@type"]).toBe("AlignmentObject");
+        expect(o.alignmentType).toBe("requires");
+        expect(o.targetName).toBe(concepts[i].title);
+        expect(o.targetUrl).toBe(`${SITE_URL}${concepts[i].url}`);
+      });
+    }
+  });
+
+  it("omits coursePrerequisites entirely when there is nothing to say", () => {
+    const data = render({ title: "t", description: "d", url: "/paths/x", lessons: [] });
+    expect(data.coursePrerequisites).toBeUndefined();
+  });
+});

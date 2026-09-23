@@ -54,6 +54,26 @@ export function ogImages(title: string, eyebrow?: string) {
 }
 
 /**
+ * The `image` value for a page's Article markup: the absolute OG card alone,
+ * or the page's first body image ahead of the card when it has one.
+ *
+ * A diagram is a better picture of a page than a rendered title, and Google
+ * reads an image array and picks. The card stays second so a page that loses
+ * its diagram still names a picture. `contentImage` is site-relative
+ * (`/images/x.svg`) as the markdown writes it; see firstContentImage.
+ */
+export function articleImages(
+  title: string,
+  eyebrow?: string,
+  contentImage?: string | null,
+): string | string[] {
+  const card = `${SITE_URL}${ogImages(title, eyebrow)[0].url}`;
+  if (!contentImage) return card;
+  const absolute = /^https?:\/\//.test(contentImage) ? contentImage : `${SITE_URL}${contentImage}`;
+  return [absolute, card];
+}
+
+/**
  * Remove inline emphasis markers, including nested pairs.
  *
  * The old single-pass `\*\*([^*]+)\*\*` could not cross an asterisk, so a
@@ -167,9 +187,43 @@ function dropDanglingLabelClause(text: string): string {
 }
 
 /**
+ * A lead label written as plain prose rather than bold.
+ *
+ * The bold stripper covers "Trains:" (24 exercises), "Technique for:" (6) and
+ * "Quality of:" (1). The three recovery patterns open with the same shape and
+ * no asterisks — "Recovery: Decay is how to recover when the scene has gone
+ * thin" — and because the label was never bold it was a label only to a
+ * reader. The built snippets on those three pages began "Recovery: Decay is
+ * how to recover…", the only content pages whose description started with a
+ * label, and the leak test could not see them because it looked for the bold
+ * form.
+ *
+ * The rule: one to three capitalised words, a colon, and something after it,
+ * at the very start of the first paragraph. Each word must begin with a
+ * capital and carry no punctuation, so "Yes, And: The First Rule of Improv"
+ * keeps its comma and is left alone, and a colon that arrives later in a
+ * sentence — "Most networking advice is technique: how to open" — is out of
+ * reach of the anchor. Something must follow the colon, so a paragraph that
+ * is only a label is kept as it is: stripping it would leave nothing.
+ */
+export const PLAIN_LEAD_LABEL = /^\s*[A-Z][A-Za-z'’-]*(?: [A-Z][A-Za-z'’-]*){0,2}:\s+(?=\S)/;
+
+/**
+ * Drop a lead label in either form. The bold form is tried first and wins
+ * outright; the plain form is only consulted when there was no bold label, so
+ * a bold label followed by a colon-bearing sentence is not stripped twice.
+ */
+function dropLeadLabel(body: string, bold: RegExp): string {
+  const stripped = body.replace(bold, "");
+  if (stripped !== body) return stripped;
+  return body.replace(PLAIN_LEAD_LABEL, "");
+}
+
+/**
  * Exercise atoms open with a bold "Trains:" label naming the skill built.
  * Useful on the page itself, but as a description it reads as a stray label,
- * so the prefix is dropped and the sentence it introduces is kept.
+ * so the prefix is dropped and the sentence it introduces is kept. The plain
+ * form — see PLAIN_LEAD_LABEL — is dropped on the same grounds.
  */
 export function stripLeadLabel(markdownContent: string): string {
   // Anchored, no /m — and here the flag did more than delete a span. The match
@@ -183,7 +237,7 @@ export function stripLeadLabel(markdownContent: string): string {
   const match = /^---[\s\S]*?---\n*/.exec(markdownContent);
   const frontmatter = match ? match[0] : "";
   const body = markdownContent.slice(frontmatter.length);
-  return frontmatter + body.replace(/^\s*\*\*[^*]+\*\*:?\s*/, "");
+  return frontmatter + dropLeadLabel(body, /^\s*\*\*[^*]+\*\*:?\s*/);
 }
 
 /** Roughly where Google truncates a title in results. */
@@ -286,7 +340,8 @@ export function extractDescription(markdownContent: string, maxLen = 155): strin
   // Anchored to the string start: a bold run mid-document is content, not a
   // label. The old /m flag let it fire on any line. Keep the label when it is
   // the whole entry — stripping it there leaves nothing to describe the page.
-  const labelled = dropDanglingLabelClause(prose.replace(/^\s*\*\*[^*\n]+\*\*:?\s*/, ""));
+  // The plain "Recovery: " form goes the same way; see PLAIN_LEAD_LABEL.
+  const labelled = dropDanglingLabelClause(dropLeadLabel(prose, /^\s*\*\*[^*\n]+\*\*:?\s*/));
   const body = labelled.trim().length > 0 ? labelled : prose;
 
   const text = stripEmphasis(body)

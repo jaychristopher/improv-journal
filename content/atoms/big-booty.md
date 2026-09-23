@@ -16,7 +16,7 @@ links:
   - { id: warm-up, relation: extends }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** working under enough load that deliberation becomes impossible. A rhythm game whose real function is to flood attention until players stop planning and start reacting.

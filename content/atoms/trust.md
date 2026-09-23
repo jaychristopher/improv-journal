@@ -4,6 +4,7 @@ title: Trust
 type: definition
 status: draft
 tags: [definitions, ensemble, fundamentals, safety]
+sameAs: ["https://en.wikipedia.org/wiki/Trust_(social_science)"]
 links:
   - { id: interdependence, relation: illustrates }
   - { id: be-supportive, relation: requires }

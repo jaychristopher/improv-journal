@@ -28,6 +28,7 @@ export function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
       />
       <nav
         aria-label="Breadcrumb"
+        data-track="breadcrumb"
         className="text-foreground/40 mb-8 flex flex-wrap items-center gap-1 text-xs"
       >
         {crumbs.map((crumb, i) => (

@@ -16,9 +16,10 @@ links:
   - { id: signal, relation: illustrates }
   - { id: warm-up, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: hesitation, relation: contrasts }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-29"
 ---
 
 **Trains:** building something collectively out of parts nobody negotiated. It needs no equipment and no preparation, which is the whole category [party games](/party-games) is drawn from — the ones that need nothing at all travel furthest. One player starts a repeating movement and sound; everyone else joins on, one at a time, until the group is a single working machine.
@@ -57,7 +58,7 @@ Notice too which players join early and which wait. The late joiners are usually
 
 **Movements that cannot be sustained.** Anything requiring a full-body throw or a deep squat dies inside thirty seconds and takes the rhythm with it.
 
-**Sound without commitment.** Half-voiced noises, because making a machine noise in front of people is mildly embarrassing. The whole machine reads as tentative until somebody goes fully in — which is why the first player matters more than they realise.
+**Sound without commitment.** Half-voiced noises, because making a machine noise in front of people is mildly embarrassing — `hesitation` at the volume knob. The whole machine reads as tentative until somebody goes fully in — which is why the first player matters more than they realise.
 
 ## Variations
 

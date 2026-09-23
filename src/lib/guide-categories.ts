@@ -10,6 +10,7 @@
  * guides a hierarchy to declare.
  */
 
+import { type AlsoCloseGuide, alsoCloseTo } from "./cluster-cohesion";
 import { loadBridges } from "./content";
 import type { BridgeFrontmatter } from "./schema";
 
@@ -175,13 +176,25 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
 const STRANDED_DIFFICULTY = 30;
 
 /**
- * What a guide could bring in: traffic potential where measured, peak declared
- * volume where not.
+ * What a guide could bring in, as Ahrefs measured it: the primary keyword's
+ * traffic potential, or undefined where nobody has looked it up.
+ *
+ * This used to fall back to the peak declared volume, which is a different
+ * number — volume is one keyword's searches, traffic potential is what the
+ * top-ranking page takes across every keyword it holds — and the seven guides
+ * without a traffic potential were being sorted on it against everyone else's
+ * traffic potential. On /topics/improv-skills that put viola-spolin (volume
+ * 800, unchecked) above rules-of-improv (traffic potential 400, verdict
+ * winnable). One unit per sort key; guides with no measurement rank after
+ * those with one, see `byReach`.
  */
-function reachOf(bridge: { frontmatter: BridgeFrontmatter }): number {
+export function trafficPotentialOf(bridge: { frontmatter: BridgeFrontmatter }): number | undefined {
+  return (bridge.frontmatter.target_keywords ?? [])[0]?.traffic_potential;
+}
+
+/** Peak declared volume: the only size the unmeasured guides carry, used among themselves. */
+function volumeOf(bridge: { frontmatter: BridgeFrontmatter }): number {
   const keywords = bridge.frontmatter.target_keywords ?? [];
-  const primary = keywords[0];
-  if (primary?.traffic_potential) return primary.traffic_potential;
   return keywords.length > 0 ? Math.max(...keywords.map((k) => k.volume)) : 0;
 }
 
@@ -197,7 +210,7 @@ function reachOf(bridge: { frontmatter: BridgeFrontmatter }): number {
  * overthinking is difficulty 34 with a DR 1 site at position five, and was
  * being pushed to the back on the score alone.
  */
-function isStranded(bridge: { frontmatter: BridgeFrontmatter }): boolean {
+export function isStranded(bridge: { frontmatter: BridgeFrontmatter }): boolean {
   const verdict = bridge.frontmatter.serp_verdict;
   if (verdict === "authority") return true;
   if (verdict === "winnable") return false;
@@ -245,8 +258,60 @@ export function byReach<T extends { frontmatter: BridgeFrontmatter }>(bridges: T
     const evidenceDiff =
       Number(reachableCount(b) >= STRONG_EVIDENCE) - Number(reachableCount(a) >= STRONG_EVIDENCE);
     if (evidenceDiff !== 0) return evidenceDiff;
-    return reachOf(b) - reachOf(a);
+    // Measured before unmeasured, then each on its own unit: traffic potential
+    // among the guides that have one, declared volume among those that do not.
+    const tpA = trafficPotentialOf(a);
+    const tpB = trafficPotentialOf(b);
+    if (tpA !== undefined && tpB !== undefined) return tpB - tpA;
+    if (tpA !== undefined) return -1;
+    if (tpB !== undefined) return 1;
+    return volumeOf(b) - volumeOf(a);
   });
+}
+
+/**
+ * The clusters in the order the hubs list them.
+ *
+ * `GUIDE_CATEGORIES` is typed with Personal Growth first, and both `/guides`
+ * and the homepage rendered the array as it was typed: a reader scrolled past
+ * nineteen personal-growth guides before the first communication guide, while
+ * the communication cluster holds several times the demand (tracker entry
+ * 209, 2026-09-21). The rows inside a cluster had a written rule, `byReach`;
+ * the sections had none.
+ *
+ * The rule: clusters sort by the total reach of their winnable guides — the
+ * sum, over guides whose `serp_verdict` is `winnable`, of the primary
+ * keyword's traffic potential, or the peak declared volume where no traffic
+ * potential was measured — descending, ties broken by title. Only checked and
+ * winnable guides count because an `authority` verdict means the page is kept
+ * for readers and is not a ranking candidate, and an unchecked one is a
+ * guess. Membership, verdicts and numbers are untouched; only the order is
+ * derived rather than typed, so a new cluster lands where its numbers put it.
+ */
+export function orderedCategories(
+  bridges: { slug: string; frontmatter: BridgeFrontmatter }[],
+): GuideCategory[] {
+  const bySlug = new Map(bridges.map((b) => [b.slug, b]));
+  const reach = new Map(
+    GUIDE_CATEGORIES.map((category) => [category.slug, winnableReach(category, bySlug)]),
+  );
+  return [...GUIDE_CATEGORIES].sort(
+    (a, b) => (reach.get(b.slug) ?? 0) - (reach.get(a.slug) ?? 0) || a.title.localeCompare(b.title),
+  );
+}
+
+/** The sum of reach across a cluster's winnable guides; see `orderedCategories`. */
+export function winnableReach(
+  category: GuideCategory,
+  bySlug: Map<string, { frontmatter: BridgeFrontmatter }>,
+): number {
+  let total = 0;
+  for (const slug of category.slugs) {
+    const bridge = bySlug.get(slug);
+    if (!bridge || bridge.frontmatter.serp_verdict !== "winnable") continue;
+    total += trafficPotentialOf(bridge) ?? volumeOf(bridge);
+  }
+  return total;
 }
 
 export function getCategoryBySlug(slug: string): GuideCategory | undefined {
@@ -281,4 +346,45 @@ export async function getGuidesInCategory(categorySlug: string): Promise<Categor
     title: bridge.frontmatter.title,
     description: bridge.frontmatter.description,
   }));
+}
+
+/**
+ * Where a cluster's guides send their readers next.
+ *
+ * A guide's topic cluster and its `entry_path` are two groupings: the
+ * communication guides route 27 of 29 to one path, the improv-skills guides
+ * route to seven (tracker entry 255, 2026-09-21). The hub says which path most
+ * of its guides lead into, and how many, so the routing is visible where the
+ * reader chooses a guide.
+ */
+export async function dominantEntryPath(
+  categorySlug: string,
+): Promise<{ pathId: string; count: number; total: number } | null> {
+  const category = getCategoryBySlug(categorySlug);
+  if (!category) return null;
+  const bridges = await loadBridges();
+  const members = bridges.filter((b) => category.slugs.includes(b.slug));
+  const counts = new Map<string, number>();
+  for (const b of members) {
+    const ep = b.frontmatter.entry_path;
+    if (ep) counts.set(ep, (counts.get(ep) ?? 0) + 1);
+  }
+  const top = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
+  return top ? { pathId: top[0], count: top[1], total: members.length } : null;
+}
+
+/**
+ * The guides filed elsewhere that a cluster's guides are closest to.
+ *
+ * 134 of the 277 guide pairs sharing three or more entry atoms cross a
+ * cluster line (tracker entry 290, 2026-09-22): funny-questions-to-ask and
+ * how-to-be-funny share five and sit in Communication and Improv Skills. The
+ * hub listed only its own cluster, so the pairs the map splits were two hubs
+ * apart. This is the "Also close to" rail: the pure ranking is in
+ * cluster-cohesion, this loads the corpus for it.
+ */
+export async function alsoCloseToCluster(categorySlug: string): Promise<AlsoCloseGuide[]> {
+  if (!getCategoryBySlug(categorySlug)) return [];
+  const bridges = await loadBridges();
+  return alsoCloseTo(categorySlug, bridges, GUIDE_CATEGORIES);
 }

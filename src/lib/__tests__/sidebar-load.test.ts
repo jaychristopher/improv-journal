@@ -43,17 +43,21 @@ function sidebars(): { slug: string; dom: number; visible: number; groups: numbe
     if (!aside) continue;
 
     const dom = (aside.match(/<a /g) ?? []).length;
-    const collapsed = [...aside.matchAll(/<details[\s\S]*?<\/details>/g)].reduce(
-      (sum, m) => sum + (m[0].match(/<a /g) ?? []).length,
-      0,
-    );
+    // Folds nest since 2026-09-21 (a group fold inside the column fold, entry
+    // 243), so strip innermost details repeatedly rather than matching once.
+    const stripFolds = (s: string): string => {
+      let prev: string;
+      do {
+        prev = s;
+        s = s.replace(/<details[^>]*>(?:(?!<details)[\s\S])*?<\/details>/g, "");
+      } while (s !== prev);
+      return s;
+    };
+    const collapsed = dom - (stripFolds(aside).match(/<a /g) ?? []).length;
     // Links shown in each collapsed group's open state, for the per-group check.
     const groups = [...aside.matchAll(/<dd[^>]*>([\s\S]*?)<\/dd>/g)].map((m) => {
       const inGroup = (m[1].match(/<a /g) ?? []).length;
-      const hidden = [...m[1].matchAll(/<details[\s\S]*?<\/details>/g)].reduce(
-        (sum, d) => sum + (d[0].match(/<a /g) ?? []).length,
-        0,
-      );
+      const hidden = inGroup - (stripFolds(m[1]).match(/<a /g) ?? []).length;
       return inGroup - hidden;
     });
 
@@ -99,7 +103,16 @@ describe("concept sidebar", () => {
       .map((p) => `${p.slug}: a group shows ${Math.max(...p.groups)}`);
     expect(overflowing).toEqual([]);
 
-    // And the worst page overall: 33 now, against 45 before the collapse landed.
+    // And the worst page overall: 33 in August. The "Referenced by" block
+    // (entry 95) pushed commitment to 55 and this ceiling was raised to 60 for
+    // an afternoon — the register's first entry, made again (entry 243). The
+    // column then folded all but three outbound groups and one inbound, and
+    // the ceiling was back. Since 2026-09-22 the groups that open are chosen
+    // by size inside SIDEBAR_OPEN_BUDGET (entry 272), which is that old
+    // rule's worst case, 20; be-present and commitment now spend all of it
+    // and sit at 36 exactly, against 32 and 33 before, so this ceiling has
+    // no slack on those two pages. A page that fails here by one has most
+    // likely grown a "Part of" or "Source" entry, not a connection.
     const worst = Math.max(...pages.map((p) => p.visible));
     expect(worst).toBeLessThanOrEqual(36);
   });

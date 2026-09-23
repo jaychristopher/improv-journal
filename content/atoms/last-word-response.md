@@ -16,7 +16,7 @@ links:
   - { id: signal, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-30"
 ---
 
 **Trains:** Be Present — forcing attention onto the immediate moment, breaking the planning habit.
@@ -51,7 +51,7 @@ This exercise is more **diagnostic** than **training**. The mechanical constrain
 
 ## Common failures
 
-- **Speed ramp** — players accelerate, which rewards planning over listening. Coach: "Slow down."
+- **Speed ramp** — players accelerate, which rewards planning (`internal-computation`) over listening. Coach: "Slow down."
 - **Semantic emptiness** — players use the word but say nothing meaningful; pure word association, no connection to partner.
 - **Last-word fixation** — listening ONLY to the final word and tuning out everything before it. The exercise was supposed to improve listening, and now it's narrowed it.
 

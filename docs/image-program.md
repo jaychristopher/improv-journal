@@ -87,7 +87,7 @@ including the 205 atoms.
 The original three options all assumed the image stayed an `<img>`. Once it is inlined
 the problem disappears along with the tag.
 
-### 2. Whether `Article.image` should change — STILL OPEN
+### 2. Whether `Article.image` should change — SETTLED 2026-09-21 (was STILL OPEN)
 
 `article-image.test.ts` currently asserts every Article names its `/og` card. If a page
 gains a real content image, that image is a better candidate for `Article.image` —
@@ -97,6 +97,17 @@ This is a real decision with a guard attached. Do not change the markup without
 updating that test and its comment, which documents why the OG card was chosen.
 
 Now that three pages carry real diagrams, this is the one worth resolving next.
+
+**Decision (2026-09-21).** Resolved the way the proposal above suggests. `ArticleJsonLd`
+and `LessonJsonLd` take an optional `contentImage`; when a page's markdown has a body
+image, `image` is emitted as an array with that image first and the `/og` card second,
+and pages without one keep the card as before. Every route that renders those
+components (guides, atoms via `AtomDetail`, lessons, library entries) passes
+`firstContentImage(content)` from `src/lib/content-image.ts`; `articleImages` in
+`src/lib/seo.ts` builds the value. `article-image.test.ts` now asserts every built page
+with a body image lists it first and every page without one is unchanged, and its
+comment records why. At the time of the change 226 of the 308 Article pages gained a
+content image (novel-insights entry 190).
 
 ### 3. Dark mode — SETTLED
 

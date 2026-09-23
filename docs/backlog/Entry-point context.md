@@ -12,6 +12,7 @@ stories:
   - "[[EC-1 Cold-arrival orientation]]"
   - "[[EC-2 Context written for the visitor, not the taxonomy]]"
   - "[[EC-3 Audit the untested entry points]]"
+  - "[[EC-4 Close the April audit's open findings]]"
 ---
 
 # EC — Entry-point context

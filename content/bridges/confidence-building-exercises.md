@@ -18,7 +18,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 # Confidence Building Exercises That Aren't Affirmations
@@ -194,6 +194,8 @@ That is worth knowing in advance, because the usual conclusion after the first t
 **Judge the rep, not the result.** Did you act before you were ready? That is the whole scoring system. Whether the line was any good is a separate question and mostly irrelevant.
 
 **Expect the feeling to lag.** You will act more readily for some time before you feel any different. That order is not a sign it is failing; it is the mechanism.
+
+**Start with the first one.** If you only run a single drill from this page, make it `first-line-drill`: one committed opening line, cold, no scene after it, and the next person goes. It trains the two seconds before you speak — the threshold that every other exercise here assumes you have already crossed.
 
 For the wider argument, see [how to be more confident](/how-to-be-more-confident) and [how to overcome fear of failure](/how-to-overcome-fear-of-failure). For the stage-specific version, see [fear of public speaking](/fear-of-public-speaking).
 

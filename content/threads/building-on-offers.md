@@ -13,7 +13,7 @@ status: validated
 atoms: [active-listening, offers, yes-and, blocking]
 tags: [fundamentals, scene-work]
 created: "2026-03-29"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 Every improv scene is a chain of offers given and received. Understanding this chain - and what breaks it - is the first real skill an improviser develops.

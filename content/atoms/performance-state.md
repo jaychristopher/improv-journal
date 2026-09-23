@@ -20,7 +20,7 @@ links:
   - { id: ref-csikszentmihalyi-flow, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-06"
 ---
 
 Performance State is the psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables spontaneous creative work. Not the absence of anxiety, but its transmutation into presence.

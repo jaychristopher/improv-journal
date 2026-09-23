@@ -25,7 +25,7 @@ work:
   published: "1994"
   isbn: "1566080037"
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 **Charna Halpern, Del Close, Kim "Howard" Johnson. *Truth in Comedy: The Manual of Improvisation.* Meriwether Publishing, 1994.**

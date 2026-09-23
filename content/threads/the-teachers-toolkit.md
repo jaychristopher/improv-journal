@@ -6,7 +6,7 @@ status: seed
 atoms: [safety-in-the-room, curriculum-design, warm-up, side-coaching, giving-notes, reading-the-room, fear-of-failure, trust]
 tags: [pedagogy, teaching, structure, safety]
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 You can do improv. Now someone's asked you to teach it. And you've discovered that knowing how to ride a bicycle and knowing how to teach someone to ride a bicycle are completely different skills.

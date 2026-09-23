@@ -1,10 +1,13 @@
 import MiniSearch from "minisearch";
 
+import { MINISEARCH_OPTIONS } from "./search-index-options.mjs";
+
 export const SEARCH_INDEX_URL = "/search-index.json";
-export const MINISEARCH_OPTIONS = {
-  fields: ["title", "body", "tags"],
-  storeFields: ["title", "url", "layer", "type", "docId", "links"],
-};
+/**
+ * Re-exported from the shared module so the loader, the builder and the test
+ * read one field list. See search-index-options.mjs for why that matters.
+ */
+export { MINISEARCH_OPTIONS };
 
 let cachedIndex: MiniSearch | null = null;
 let pendingIndex: Promise<MiniSearch> | null = null;

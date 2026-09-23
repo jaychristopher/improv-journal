@@ -21,7 +21,7 @@ links:
   - { id: ref-carrane-improv-nerd, relation: extends }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Montage is the most free-flowing longform format — a series of scenes with no required structure, no mandated group games, no obligation to revisit characters. Will Hines: "suggestion and go."

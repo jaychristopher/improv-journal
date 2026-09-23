@@ -29,7 +29,7 @@ links:
   - { id: zip-zap-zop, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-09-06"
 ---
 
 Let external reality take priority over internal computation. Receive what is happening now; respond before it moves on.

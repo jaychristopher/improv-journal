@@ -5,11 +5,14 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 import {
+  CATEGORY_QUERY_PARAM,
+  conceptGloss,
   PROMPT_BANK,
   PROMPT_CATEGORIES,
   PROMPT_USE_CASES,
   type PromptCategory,
   type PromptCategoryInfo,
+  type PromptConceptMap,
   type PromptUseCase,
   type PromptUseCaseInfo,
 } from "@/lib/prompt-bank";
@@ -21,6 +24,8 @@ import {
   poolFor,
   type SeenStore,
 } from "@/lib/prompt-generator";
+
+import { HeroTakeover } from "./HeroTakeover";
 
 /**
  * The hero on /improv-prompts.
@@ -51,11 +56,35 @@ const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1
  */
 type PromptGeneratorSurface = "guide-hero" | "tool-page";
 
-export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }) {
+/** The category named in the page's query, if it names one the bank has. */
+function presetFromQuery(search: string): PromptCategory | null {
+  const wanted = new URLSearchParams(search).get(CATEGORY_QUERY_PARAM);
+  return PROMPT_CATEGORIES.find((c) => c.id === wanted)?.id ?? null;
+}
+
+export function PromptGenerator({
+  surface,
+  concepts,
+}: {
+  surface: PromptGeneratorSurface;
+  /**
+   * Each category's concepts, resolved by the mounting page (prompt-concepts.ts).
+   * Optional so the component still renders where no page resolved them; the
+   * concept line under a prompt then renders nothing rather than a bare id.
+   */
+  concepts?: PromptConceptMap;
+}) {
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<Step>("room");
   const [useCase, setUseCase] = useState<PromptUseCase | null>(null);
   const [category, setCategory] = useState<PromptCategory | null>(null);
+  // A concept page links here pre-set to its category
+  // (`?category=relationship`, PromptTryLine). Read after mount from the
+  // location rather than through useSearchParams: on a prerendered route
+  // that hook client-renders everything up to the nearest Suspense boundary,
+  // and the inline card has to be in the server html — the hero's whole point
+  // (prompt-generator-rendered.test.ts).
+  const [preset, setPreset] = useState<PromptCategory | null>(null);
   const [draw, setDraw] = useState<Draw | null>(null);
   const [draws, setDraws] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -66,6 +95,14 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
 
   const useCaseInfo = PROMPT_USE_CASES.find((u) => u.id === useCase) ?? null;
   const categoryInfo = PROMPT_CATEGORIES.find((c) => c.id === category) ?? null;
+  const presetInfo = PROMPT_CATEGORIES.find((c) => c.id === preset) ?? null;
+  // The first concept is the one the category *is*; the rest are the sidebar's
+  // business. Nothing when the page passed no map or the category has none.
+  const concept = categoryInfo ? (concepts?.[categoryInfo.id]?.[0] ?? null) : null;
+
+  useEffect(() => {
+    setPreset(presetFromQuery(window.location.search));
+  }, []);
 
   const close = useCallback(() => {
     trackEvent("prompt_generator_closed", { surface, step, draws });
@@ -149,12 +186,24 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
 
   function chooseRoom(next: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) {
     setUseCase(next.id);
-    setStep("kind");
     if (!open) {
       openerRef.current = event.currentTarget;
       setOpen(true);
-      trackEvent("prompt_generator_opened", { surface, use_case: next.id });
+      trackEvent("prompt_generator_opened", { surface, use_case: next.id, preset });
+      // Arrived from a concept page asking for one kind: the first tap goes
+      // straight to a prompt of that kind. "A different kind" is still there.
+      if (preset) {
+        setCategory(preset);
+        trackEvent("prompt_generator_category", {
+          use_case: next.id,
+          category: preset,
+          preset: true,
+        });
+        drawFrom(preset, next.id);
+        return;
+      }
     }
+    setStep("kind");
   }
 
   function chooseKind(next: PromptCategoryInfo) {
@@ -176,41 +225,50 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
 
   return (
     <>
-      <section
-        aria-labelledby={headingId}
-        aria-hidden={open}
-        inert={open}
-        className="border-foreground/10 bg-surface mt-4 mb-4 rounded-xl border p-4 sm:mt-6 sm:p-6"
-      >
-        <span className="text-foreground/40 text-xs tracking-wider uppercase">Free tool</span>
-        <h2 id={headingId} className="text-foreground-strong mt-1 text-2xl font-semibold">
-          Give me a prompt
-        </h2>
-        <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-          Say where you are using it. Strongest first, one at a time, never the same one twice on
-          this device.
-        </p>
-        {/* Two columns at every width, and the descriptions only from `sm` up:
+      <HeroTakeover labelledBy={headingId} hidden={open} takeover={surface === "guide-hero"}>
+        <div data-track="prompt-generator">
+          <span className="text-hero-muted text-xs tracking-wider uppercase">Free tool</span>
+          <h2
+            id={headingId}
+            className="text-hero-foreground mt-2 text-3xl font-semibold tracking-tight sm:text-4xl"
+          >
+            Give me a prompt
+          </h2>
+          <p className="text-hero-muted mt-3 max-w-lg text-base leading-relaxed">
+            Say where you are using it. Strongest first, one at a time, never the same one twice on
+            this device.
+            {presetInfo && (
+              <span data-prompt-preset={presetInfo.id}>
+                {" "}
+                Set to {presetInfo.label.toLowerCase()}, as the page you came from asked.
+              </span>
+            )}
+          </p>
+          {/* Two columns at every width, and the descriptions only from `sm` up:
             at 390px the one-column version with descriptions ran to 340px of
             buttons and the last one sat below the fold. */}
-        <div className="mt-4 grid grid-cols-2 gap-2">
-          {PROMPT_USE_CASES.map((room) => (
-            <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact />
-          ))}
+          <div className="mt-6 grid grid-cols-2 gap-2 sm:gap-3">
+            {PROMPT_USE_CASES.map((room) => (
+              <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
+            ))}
+          </div>
+          <p className="text-hero-muted/70 mt-5 text-xs">
+            {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
+            {surface === "guide-hero" && (
+              <>
+                {" "}
+                <Link
+                  href="/tools/improv-prompt-generator"
+                  className="underline underline-offset-2"
+                >
+                  How the generator ranks them
+                </Link>
+                .
+              </>
+            )}
+          </p>
         </div>
-        <p className="text-foreground/40 mt-3 text-xs">
-          {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
-          {surface === "guide-hero" && (
-            <>
-              {" "}
-              <Link href="/tools/improv-prompt-generator" className="underline underline-offset-2">
-                How the generator ranks them
-              </Link>
-              .
-            </>
-          )}
-        </p>
-      </section>
+      </HeroTakeover>
 
       {open && (
         <div
@@ -309,6 +367,28 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
                       <p className="text-foreground/60 mt-6 max-w-md text-sm leading-relaxed">
                         {categoryInfo.howToUse}
                       </p>
+                      {/* The category is a concept under another name, and
+                          howToUse is that concept's page in a sentence, so
+                          the sentence is reused as the gloss and the title
+                          becomes the link: every prompt is one click from
+                          its theory (tracker entry 332). Nothing for a
+                          category without a concept, or a mount without the
+                          resolved map. */}
+                      {concept && (
+                        <p
+                          className="text-foreground/50 mt-3 max-w-md text-sm leading-relaxed"
+                          data-prompt-concept={concept.id}
+                        >
+                          The idea behind it:{" "}
+                          <Link
+                            href={concept.href}
+                            className="text-foreground/70 italic underline underline-offset-2"
+                          >
+                            {concept.title}
+                          </Link>{" "}
+                          &mdash; {conceptGloss(categoryInfo.howToUse)}
+                        </p>
+                      )}
                     </>
                   ) : (
                     <>
@@ -375,11 +455,14 @@ function RoomButton({
   room,
   onChoose,
   compact = false,
+  hero = false,
 }: {
   room: PromptUseCaseInfo;
   onChoose: (room: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) => void;
   /** Hide the description below `sm`, for the inline card on a phone. */
   compact?: boolean;
+  /** On the dark takeover panel rather than on the page's own background. */
+  hero?: boolean;
 }) {
   const labelId = useId();
   const descId = useId();
@@ -389,23 +472,40 @@ function RoomButton({
       onClick={(event) => onChoose(room, event)}
       aria-labelledby={labelId}
       aria-describedby={descId}
-      className="group border-foreground/10 bg-background hover:border-foreground/40 flex min-h-14 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border px-3 py-3 text-left transition-colors sm:gap-3 sm:px-4"
+      className={[
+        "group flex min-h-14 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border px-3 py-3 text-left transition-colors sm:gap-3 sm:px-4",
+        hero
+          ? "border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10"
+          : "border-foreground/10 bg-background hover:border-foreground/40",
+      ].join(" ")}
     >
       <span className="min-w-0">
-        <span id={labelId} className="text-foreground-strong block text-sm font-semibold">
+        <span
+          id={labelId}
+          className={[
+            "block text-sm font-semibold",
+            hero ? "text-hero-foreground" : "text-foreground-strong",
+          ].join(" ")}
+        >
           {room.label}
         </span>
         <span
           id={descId}
           className={[
-            "text-foreground/50 mt-0.5 text-xs",
+            "mt-0.5 text-xs",
+            hero ? "text-hero-muted" : "text-foreground/50",
             compact ? "hidden sm:block" : "block",
           ].join(" ")}
         >
           {room.description}
         </span>
       </span>
-      <span className="text-foreground/30 hidden shrink-0 transition-transform group-hover:translate-x-1 sm:inline">
+      <span
+        className={[
+          "hidden shrink-0 transition-transform group-hover:translate-x-1 sm:inline",
+          hero ? "text-hero-muted/60" : "text-foreground/30",
+        ].join(" ")}
+      >
         &rarr;
       </span>
     </button>

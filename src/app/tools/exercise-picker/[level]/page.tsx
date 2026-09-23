@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
+import { audiencesForPickerLevel } from "@/lib/audience-hub";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { getPopulatedCombinations } from "@/lib/exercise-picker";
+import { getPopulatedCombinations, matchesLevel } from "@/lib/exercise-picker";
 import { extractDescription, metaDescription, pageTitle } from "@/lib/seo";
 
-import { EXERCISE_FOCUS_MAP, FOCUSES, getLevelBySlug, LEVELS } from "../picker-config";
+import { exerciseFocuses, FOCUSES, getLevelBySlug, LEVELS } from "../picker-config";
 
 export function generateStaticParams() {
   return LEVELS.map((l) => ({ level: l.slug }));
@@ -28,17 +30,6 @@ export async function generateMetadata({
   };
 }
 
-function matchesLevel(tags: string[], level: string): boolean {
-  if (tags.includes("fundamentals")) return true;
-  return tags.includes(level);
-}
-
-function getExerciseFocuses(id: string, tags: string[]): string[] {
-  const mapped = EXERCISE_FOCUS_MAP[id] ?? [];
-  const fromTags = FOCUSES.map((f) => f.tag).filter((t) => tags.includes(t));
-  return [...new Set([...mapped, ...fromTags])];
-}
-
 export default async function LevelPage({ params }: { params: Promise<{ level: string }> }) {
   const { level } = await params;
   const populated = await getPopulatedCombinations();
@@ -57,7 +48,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       tags: a.frontmatter.tags ?? [],
       href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
       description: extractDescription(a.content, 200),
-      focuses: getExerciseFocuses(a.frontmatter.id, a.frontmatter.tags ?? []),
+      focuses: exerciseFocuses(a.frontmatter.id, a.frontmatter.tags ?? [], a.frontmatter.links),
     }));
 
   return (
@@ -74,14 +65,30 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
         <h1 className="text-3xl font-bold tracking-tight">{config.title}</h1>
         <p className="text-foreground/60 mt-2">{config.description}</p>
         {config.orientation.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mt-3">
-            {paragraph}
-          </p>
+          <Prose
+            key={paragraph.slice(0, 40)}
+            text={paragraph}
+            currentUrl={`/tools/exercise-picker/${level}`}
+            className="text-foreground/70 mt-3"
+          />
         ))}
+        {/* The audience hub of the same name, so the two vocabularies meet (novel-insights 201). */}
+        <p className="text-foreground/70 mt-3" data-track="audience-hub-link">
+          For the reading behind these drills, start from{" "}
+          {audiencesForPickerLevel(level).map((audience, i, all) => (
+            <span key={audience}>
+              {i > 0 && (i === all.length - 1 ? " or " : ", ")}
+              <Link href={`/learn/${audience}`} className="underline">
+                the {audience} hub
+              </Link>
+            </span>
+          ))}
+          .
+        </p>
       </header>
 
       {/* Level tabs */}
-      <nav className="mb-4 flex gap-2" aria-label="Level">
+      <nav className="mb-4 flex gap-2" aria-label="Level" data-track="level-tabs">
         {LEVELS.map((l) => (
           <Link
             key={l.slug}
@@ -98,7 +105,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       </nav>
 
       {/* Focus tabs */}
-      <nav className="mb-10 flex flex-wrap gap-2" aria-label="Focus">
+      <nav className="mb-10 flex flex-wrap gap-2" aria-label="Focus" data-track="focus-tabs">
         <Link
           href={`/tools/exercise-picker/${level}`}
           className="bg-foreground/10 text-foreground/70 rounded-lg px-3 py-1.5 text-sm font-medium"
@@ -117,7 +124,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       </nav>
 
       {/* Exercise list */}
-      <div className="space-y-4">
+      <div className="space-y-4" data-track="exercise-list">
         {exercises.map((exercise) => (
           <div
             key={exercise.id}
@@ -144,7 +151,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
       </div>
 
       {exercises.length === 0 && (
-        <p className="text-foreground/40 text-sm">
+        <p className="text-foreground/40 text-sm" data-track="picker-empty">
           No exercises match this level yet.{" "}
           <Link href="/tools/exercise-picker" className="underline">
             Try the full picker
@@ -153,7 +160,7 @@ export default async function LevelPage({ params }: { params: Promise<{ level: s
         </p>
       )}
 
-      <div className="text-foreground/30 mt-12 text-xs">
+      <div className="text-foreground/30 mt-12 text-xs" data-track="picker-footer">
         {exercises.length} exercises · {config.label} level ·{" "}
         <Link href="/tools/exercise-picker" className="underline">
           Back to Exercise Picker

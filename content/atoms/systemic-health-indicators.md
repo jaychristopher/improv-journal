@@ -17,7 +17,7 @@ links:
   - { id: ref-truth-in-comedy, relation: illustrates }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 Systemic Health Indicators are the gauges on the dashboard. How you know the scene is working while you're inside it. Judge the process, not the product.

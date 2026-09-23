@@ -24,7 +24,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-24"
+updated: "2026-09-06"
 ---
 
 Treat every outcome as usable information and postpone evaluation.

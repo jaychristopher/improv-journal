@@ -20,7 +20,7 @@ links:
   - { id: fear-of-failure, relation: extends }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 Judgment (Mid-Scene Evaluation) is the shadow of **Be Thankful**. Judgment is the act of evaluating a move — yours or your partner's — while the scene is still in motion.

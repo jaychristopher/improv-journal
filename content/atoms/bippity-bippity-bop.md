@@ -17,7 +17,7 @@ links:
   - { id: side-coaching, relation: requires }
 sources: []
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 Somebody stands in the middle, points at a player and says "bippity bippity bop." The player has to get "bop" out before the caller finishes the phrase. If the caller says only "bop", the player must say nothing at all. Get it wrong either way and you swap places with the caller.

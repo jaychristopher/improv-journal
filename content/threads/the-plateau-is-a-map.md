@@ -5,7 +5,7 @@ status: seed
 atoms: [decay-recovery, latency-recovery, fracture-recovery, be-changeable, be-thankful, discovery, let-yourself-be-changed]
 tags: [intermediate, recovery, growth, self-coaching]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 Around the two-year mark — roughly Level 3 or 4 — every improviser tells themselves the same thing: *I am terrible at improv.*

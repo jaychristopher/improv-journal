@@ -68,11 +68,11 @@ Share helpful learnings. Frame as "here's what I learned" not "here's my site."
 ```
 "3 exercises that changed how my team communicates (none of them are trust falls)"
 → r/leadership — mirroring, yes-and chain, gift giving
-→ Link to: /team-bonding-activities
+→ Link to: /team-building-activities
 
 "I've been studying improv for [X] years. Here are the 3 principles that changed my everyday conversations the most."
 → r/socialskills — active listening, offers, commitment
-→ Link to: /how-to-be-a-better-conversationalist
+→ Link to: /how-to-keep-a-conversation-going
 
 "The 'rules of improv' everyone teaches are half wrong. Here's what actually matters."
 → r/improv — yes-and nuance, blocking taxonomy, tradition differences
@@ -141,7 +141,7 @@ Analyze someone else's insight through an improv lens.
 "The framing that changed everything for me: overthinking isn't a willpower problem — it's a bandwidth problem. Your brain has a limited processing budget, and when you spend it on evaluating, simulating, and rehearsing, there's nothing left for the actual moment. Improv performers call this 'internal computation' and they train specific exercises to quiet it. The simplest one to try: mirroring. Stand facing someone, match their movements exactly. It's impossible to overthink while doing this because your entire attention gets consumed by tracking another person. [I wrote more about the bandwidth model here if you're curious: physicsofconnection.com/how-to-stop-overthinking]"
 
 ### When someone asks about team building:
-"Most team bonding fails because it targets the wrong thing — shared fun instead of shared vulnerability. The exercises that actually build trust require people to take small social risks and support each other through them. Three that work in 5-10 minutes: (1) Mirroring — two people match each other's movements, builds sustained attention. (2) Gift Giving — one person mimes giving an object, the receiver decides what it is, builds acceptance. (3) Yes-And Chain — each person builds on what the last person said, trains building instead of evaluating. All from improv, all require zero experience. [Full instructions + the science behind why they work: physicsofconnection.com/team-bonding-activities]"
+"Most team bonding fails because it targets the wrong thing — shared fun instead of shared vulnerability. The exercises that actually build trust require people to take small social risks and support each other through them. Three that work in 5-10 minutes: (1) Mirroring — two people match each other's movements, builds sustained attention. (2) Gift Giving — one person mimes giving an object, the receiver decides what it is, builds acceptance. (3) Yes-And Chain — each person builds on what the last person said, trains building instead of evaluating. All from improv, all require zero experience. [Full instructions + the science behind why they work: physicsofconnection.com/team-building-activities]"
 
 ### When someone asks about public speaking fear:
 "The reframe that changed my relationship with stage fright: the physical sensation of terror and the physical sensation of peak performance are the same thing. Racing heart, shallow breathing, hyper-alertness — your body produces these whether you're afraid or excited. The difference is entirely interpretation. Improv performers don't eliminate the adrenaline — they reframe it as fuel. Research calls this 'anxiety reappraisal' and it's been replicated across multiple studies. Try this before your next presentation: instead of saying 'I'm nervous,' say 'I'm excited.' Out loud. It sounds dumb but the research shows it measurably improves performance."

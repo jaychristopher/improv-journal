@@ -80,7 +80,7 @@ Capture performance data at 24h / 7d / 30d so the next cycle's SOPs can be calib
 
 ## Lessons from prior production
 
-- L1 24h: 187 impressions, 6.4% CTR, 78 views, 3:12 AVD (74% of 4:18). Strong AVD but low impressions — channel was new (no algorithm priors). Retention had a cliff at 0:18 (peak transition). Updated SOP 12 lesson: Peak 1→2 transition needs an audio-anchored hold.
-- L23 7d: 9 of top 10 search terms were variants of "team building activities" — primary keyword ranked. Bridge URL got 14 GSC impressions in same window. Confirms the SEO loop is working when the video and bridge are well-aligned.
-- L31 30d: ranked #4 in YouTube Search for "rules of improv." Comments (n=23) clustered around "I've never heard the training-wheels framing before" — confirms the unique-angle hypothesis.
+- L1 24h: 187 impressions, 6.4% CTR, 78 views, 3:12 AVD (74% of 4:18). Strong AVD but low impressions — channel was new (no algorithm priors). Retention had a cliff at 0:18 (peak transition). Updated SOP 12 lesson: Peak 1→2 transition needs an audio-anchored hold. Moved to [`docs/youtube-week-1/measurement-L1.md`](../youtube-week-1/measurement-L1.md).
+- L23 7d: 9 of top 10 search terms were variants of "team building activities" — primary keyword ranked. Bridge URL got 14 GSC impressions in same window. Confirms the SEO loop is working when the video and bridge are well-aligned. Moved to [`docs/youtube-week-1/measurement-L23.md`](../youtube-week-1/measurement-L23.md).
+- L31 30d: ranked #4 in YouTube Search for "rules of improv." Comments (n=23) clustered around "I've never heard the training-wheels framing before" — confirms the unique-angle hypothesis. Moved to [`docs/youtube-week-1/measurement-L31.md`](../youtube-week-1/measurement-L31.md).
 - The 24h CTR is more diagnostic than the 7d. Algorithm gives you a small impression boost early and watches CTR; if it's <3% at 24h, expect impressions to flatten.

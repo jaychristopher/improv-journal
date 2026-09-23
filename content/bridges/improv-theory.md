@@ -11,7 +11,7 @@ entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction
 entry_path: reference-guide
 status: draft
 created: "2026-04-22"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 # Improv Theory: The Five Traditions That Shaped Modern Improvisation

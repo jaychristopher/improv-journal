@@ -5,10 +5,18 @@ import { useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
 
+import { matchesLevel as matchesLevelTags } from "./picker-config";
+
 interface Exercise {
   id: string;
   title: string;
   tags: string[];
+  /**
+   * Resolved on the server by `exerciseFocuses` in picker-config. This
+   * component used to hold its own copy of the hand map and read focuses from
+   * that; two identical copies agreed until content was added to neither.
+   */
+  focuses: string[];
   href: string;
   description: string;
 }
@@ -57,42 +65,17 @@ const FOCUS_OPTIONS: { value: NonNullable<Focus>; label: string; desc: string }[
   },
 ];
 
-// Tag mapping for exercises that don't have explicit focus tags
-const EXERCISE_FOCUS_MAP: Record<string, string[]> = {
-  mirroring: ["presence", "ensemble", "listening"],
-  "last-word-response": ["presence", "listening"],
-  "one-word-scene": ["presence", "courage"],
-  "gift-giving": ["ensemble", "courage"],
-  "blind-offer": ["courage", "presence"],
-  "yes-and-chain": ["presence", "ensemble"],
-  "emotional-honesty-scene": ["emotion"],
-  "first-line-drill": ["courage"],
-  "status-transfer": ["physicality", "ensemble"],
-  "space-work-scene": ["physicality"],
-  "group-mind-cultivation": ["ensemble"],
-  "no-backspace-scene": ["courage", "recovery"],
-  "fracture-repair-drill": ["recovery"],
-  "directed-scene": ["ensemble", "listening"],
-  "emotion-switch": ["emotion", "recovery"],
-  "genre-scene": ["courage", "physicality"],
-  "organic-opening-exercise": ["ensemble"],
-};
-
-function getExerciseFocusTags(exercise: Exercise): string[] {
-  return EXERCISE_FOCUS_MAP[exercise.id] ?? [];
-}
-
+// The level rule lives in picker-config with the server surfaces; this copy
+// used to read "fundamentals" as every level while the advanced page's own
+// orientation says the opposite.
 function matchesLevel(exercise: Exercise, level: Level): boolean {
   if (!level) return true;
-  // "fundamentals" exercises match all levels
-  if (exercise.tags.includes("fundamentals")) return true;
-  return exercise.tags.includes(level);
+  return matchesLevelTags(exercise.tags, level);
 }
 
 function matchesFocus(exercise: Exercise, focus: Focus): boolean {
   if (!focus) return true;
-  const focusTags = getExerciseFocusTags(exercise);
-  return exercise.tags.includes(focus) || focusTags.includes(focus);
+  return exercise.focuses.includes(focus);
 }
 
 function scoreExercise(exercise: Exercise, level: Level, focus: Focus): number {
@@ -100,9 +83,11 @@ function scoreExercise(exercise: Exercise, level: Level, focus: Focus): number {
   if (level && exercise.tags.includes(level)) score += 2;
   if (level && exercise.tags.includes("fundamentals")) score += 1;
   if (focus) {
-    const focusTags = getExerciseFocusTags(exercise);
+    // A focus the atom declares in its own tags outranks one derived for it:
+    // focuses always contains the tags, so a declared focus scores 3, a
+    // derived one 1.
     if (exercise.tags.includes(focus)) score += 2;
-    if (focusTags.includes(focus)) score += 1;
+    if (exercise.focuses.includes(focus)) score += 1;
   }
   return score;
 }
@@ -162,7 +147,7 @@ export function ExercisePickerClient({ exercises, defaultLevel }: ExercisePicker
             Try a different combination of level and focus.
           </p>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-4" data-track="picker-results">
             {results.map((exercise, i) => (
               <Link
                 key={exercise.id}

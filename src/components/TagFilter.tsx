@@ -23,6 +23,35 @@ interface FilterableItem {
    * word the list never prints.
    */
   aliases?: string[];
+  /**
+   * One line of links under the card, with a lead-in: "prepare with: Sound
+   * Ball, Mirroring" under a format, "feeds: Harold, Armando" under a drill.
+   * The games hub uses it for the derived join between the two practice
+   * layers (format-drills.ts); the line is a link out of the card, so its
+   * anchors sit above the card's own overlay link.
+   */
+  note?: ItemNote;
+  /** The key of the ItemGroup this card is listed under, when the list is grouped. */
+  group?: string;
+}
+
+export interface ItemNote {
+  label: string;
+  links: { key: string; href: string; label: string }[];
+  /** A `data-track` value for the line. */
+  track?: string;
+}
+
+/**
+ * A heading the results are grouped under. The games hub lists formats and
+ * exercises as one filterable inventory; the graph keeps them as two, so
+ * the cards are grouped "To play" and "To train" while the facets keep
+ * filtering across both.
+ */
+export interface ItemGroup {
+  key: string;
+  heading: string;
+  description?: string;
 }
 
 interface FilterGroup {
@@ -34,9 +63,11 @@ interface TagFilterProps {
   items: FilterableItem[];
   filterGroups: FilterGroup[];
   showPreview?: boolean;
+  /** When given, results render under these headings by each item's `group`. */
+  groups?: ItemGroup[];
 }
 
-export function TagFilter({ items, filterGroups, showPreview = true }: TagFilterProps) {
+export function TagFilter({ items, filterGroups, showPreview = true, groups }: TagFilterProps) {
   const [activeTags, setActiveTags] = useState<Set<string>>(new Set());
 
   const toggleTag = (tag: string) => {
@@ -120,36 +151,89 @@ export function TagFilter({ items, filterGroups, showPreview = true }: TagFilter
       </div>
 
       {/* Results */}
-      <div className="space-y-3">
-        {filtered.map((item) => (
-          <div
-            key={item.id}
-            className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors"
-          >
-            <h3 className="text-sm font-medium">
-              <Link href={item.href} className="after:absolute after:inset-0">
-                {item.title}
-              </Link>
-            </h3>
-            {item.rules && <p className="text-foreground/70 mt-2 text-sm">{item.rules}</p>}
-            {showPreview && item.preview && (
-              <p className="text-foreground/40 mt-2 line-clamp-2 text-xs">{item.preview}</p>
-            )}
-            {item.aliases && item.aliases.length > 0 && (
-              <p className="text-foreground/35 mt-1 text-xs">
-                Also called {item.aliases.join(", ")}.
-              </p>
-            )}
-          </div>
-        ))}
-        {filtered.length === 0 && (
-          <p className="text-foreground/30 py-4 text-sm">No matches. Try different filters.</p>
-        )}
-      </div>
+      {groups ? (
+        <div className="space-y-8">
+          {groups.map((group) => {
+            const members = filtered.filter((item) => item.group === group.key);
+            if (members.length === 0) return null;
+            return (
+              <section key={group.key} data-track={`group-${group.key}`}>
+                <h3 className="mb-1 text-lg font-semibold">{group.heading}</h3>
+                {group.description && (
+                  <p className="text-foreground/50 mb-3 text-sm">{group.description}</p>
+                )}
+                <div className="space-y-3">
+                  {members.map((item) => (
+                    <ItemCard key={item.id} item={item} showPreview={showPreview} grouped />
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+          {filtered.length === 0 && (
+            <p className="text-foreground/30 py-4 text-sm">No matches. Try different filters.</p>
+          )}
+        </div>
+      ) : (
+        <div className="space-y-3">
+          {filtered.map((item) => (
+            <ItemCard key={item.id} item={item} showPreview={showPreview} />
+          ))}
+          {filtered.length === 0 && (
+            <p className="text-foreground/30 py-4 text-sm">No matches. Try different filters.</p>
+          )}
+        </div>
+      )}
 
       {activeTags.size > 0 && (
         <p className="text-foreground/30 mt-4 text-xs">
           Showing {filtered.length} of {items.length}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/**
+ * One card. The title link's overlay makes the whole card clickable, so the
+ * note's links carry `relative z-10` to stay clickable above it. Under a group
+ * heading the title steps down to h4 so the outline stays in order.
+ */
+function ItemCard({
+  item,
+  showPreview,
+  grouped = false,
+}: {
+  item: FilterableItem;
+  showPreview: boolean;
+  grouped?: boolean;
+}) {
+  const Title = grouped ? "h4" : "h3";
+  return (
+    <div className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors">
+      <Title className="text-sm font-medium">
+        <Link href={item.href} className="after:absolute after:inset-0">
+          {item.title}
+        </Link>
+      </Title>
+      {item.rules && <p className="text-foreground/70 mt-2 text-sm">{item.rules}</p>}
+      {showPreview && item.preview && (
+        <p className="text-foreground/40 mt-2 line-clamp-2 text-xs">{item.preview}</p>
+      )}
+      {item.aliases && item.aliases.length > 0 && (
+        <p className="text-foreground/35 mt-1 text-xs">Also called {item.aliases.join(", ")}.</p>
+      )}
+      {item.note && item.note.links.length > 0 && (
+        <p className="text-foreground/40 mt-1 text-xs" data-track={item.note.track}>
+          {item.note.label}:{" "}
+          {item.note.links.map((link, i) => (
+            <span key={link.key}>
+              {i > 0 && ", "}
+              <Link href={link.href} className="text-foreground/60 relative z-10 hover:underline">
+                {link.label}
+              </Link>
+            </span>
+          ))}
         </p>
       )}
     </div>

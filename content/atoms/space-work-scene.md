@@ -17,9 +17,10 @@ links:
   - { id: signal, relation: illustrates }
   - { id: offers, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: performing-cleverness, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-23"
 ---
 
 **Trains:** Space work — building and maintaining a shared physical environment with no dialogue.
@@ -42,7 +43,7 @@ Without words, the environment becomes the primary medium of communication. Ever
 
 ## Common failures
 
-Miming too fast (objects lose weight and specificity). Falling into charades (performing actions AT the audience instead of living in the space). Ignoring partner's physical choices (solo space work in the same room).
+Miming too fast (objects lose weight and specificity). Falling into charades (performing actions AT the audience instead of living in the space — `performing-cleverness` in physical form). Ignoring partner's physical choices (solo space work in the same room).
 
 ## The deeper lesson
 

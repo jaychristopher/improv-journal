@@ -23,7 +23,7 @@ work:
   published: "2005"
   isbn: "1400081882"
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 **Patricia Ryan Madson. *Improv Wisdom: Don't Prepare, Just Show Up.* Bell Tower, 2005.**

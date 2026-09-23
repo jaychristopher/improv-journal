@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
 import {
   getPickerExercises,
   getPopulatedCombinations,
   isIndexableCombination,
 } from "@/lib/exercise-picker";
+import { focusPrinciplesNote } from "@/lib/picker-principles";
 import { metaDescription, pageTitle } from "@/lib/seo";
 
 import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
@@ -59,6 +61,10 @@ export default async function LevelFocusPage({
   const exercises = await getPickerExercises(level, focusConfig.tag, focusConfig.extraTags);
   if (exercises.length === 0) notFound();
 
+  // Which principles these drills say they train, from the index the
+  // principle facets are built from (entry 335). Null where none of them
+  // names one — the physicality facets and the advanced ones.
+  const principlesNote = await focusPrinciplesNote(exercises);
   const populated = await getPopulatedCombinations();
   const hasCombo = (l: string, f: string) => populated.some((c) => c.level === l && c.focus === f);
 
@@ -79,14 +85,26 @@ export default async function LevelFocusPage({
         </h1>
         <p className="text-foreground/60 mt-2">{focusConfig.description}</p>
         {focusConfig.orientation.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mt-3">
-            {paragraph}
-          </p>
+          <Prose
+            key={paragraph.slice(0, 40)}
+            text={paragraph}
+            currentUrl={`/tools/exercise-picker/${level}/${focus}`}
+            className="text-foreground/70 mt-3"
+          />
         ))}
+        {/* The focus tag is the author's grouping and cuts across the
+            principles; this says which ones, in the words the rest of the
+            site uses, so a reader who came for courage leaves with a
+            principle name. */}
+        {principlesNote && (
+          <p className="text-foreground/70 mt-3" data-facet-principles>
+            {principlesNote}
+          </p>
+        )}
       </header>
 
       {/* Level tabs */}
-      <nav className="mb-4 flex gap-2" aria-label="Level">
+      <nav className="mb-4 flex gap-2" aria-label="Level" data-track="level-tabs">
         {LEVELS.filter((l) => hasCombo(l.slug, focus)).map((l) => (
           <Link
             key={l.slug}
@@ -103,7 +121,7 @@ export default async function LevelFocusPage({
       </nav>
 
       {/* Focus tabs */}
-      <nav className="mb-10 flex flex-wrap gap-2" aria-label="Focus">
+      <nav className="mb-10 flex flex-wrap gap-2" aria-label="Focus" data-track="focus-tabs">
         <Link
           href={`/tools/exercise-picker/${level}`}
           className="bg-foreground/5 text-foreground/50 hover:bg-foreground/10 rounded-lg px-3 py-1.5 text-sm transition-colors"
@@ -126,7 +144,7 @@ export default async function LevelFocusPage({
       </nav>
 
       {/* Exercise list */}
-      <div className="space-y-4">
+      <div className="space-y-4" data-track="exercise-list">
         {exercises.map((exercise) => (
           <div
             key={exercise.id}
@@ -155,7 +173,7 @@ export default async function LevelFocusPage({
         ))}
       </div>
 
-      <div className="text-foreground/30 mt-12 text-xs">
+      <div className="text-foreground/30 mt-12 text-xs" data-track="picker-footer">
         {exercises.length} exercises · {levelConfig.label} · {focusConfig.label} ·{" "}
         <Link href="/tools/exercise-picker" className="underline">
           Back to Exercise Picker

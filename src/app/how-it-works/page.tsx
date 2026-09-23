@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { AlsoCalled } from "@/components/AlsoCalled";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Prose } from "@/components/Prose";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { pageTitle } from "@/lib/seo";
 
@@ -57,29 +58,33 @@ export default async function SystemPage() {
         <h1 className="text-3xl font-bold tracking-tight">
           How Improv Works: The Laws Underneath a Scene
         </h1>
-        <p className="text-foreground/60 mt-2">
-          There are six reasons every conversation is hard — and eight things you can do about it.
-          Improv performers figured this out by doing it live, every night, with no script.
-          Here&apos;s what they found.
-        </p>
+        <Prose
+          text="There are six reasons every conversation is hard — and eight things you can do about it. Improv performers figured this out by doing it live, every night, with no script. Here's what they found."
+          currentUrl="/how-it-works"
+          className="text-foreground/60 mt-2"
+        />
       </header>
 
       <section className="mb-12">
         {HUB_ORIENTATION.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
-            {paragraph}
-          </p>
+          <Prose
+            text={paragraph}
+            currentUrl="/how-it-works"
+            className="text-foreground/70 mb-4"
+            key={paragraph.slice(0, 40)}
+          />
         ))}
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" data-track="law-list">
         <h2 id="the-six-reasons-it-s-hard" className="mb-2 text-lg font-semibold">
           The six reasons it&apos;s hard
         </h2>
-        <p className="text-foreground/40 mb-4 text-sm">
-          Every conversation you&apos;ve ever had operates under these constraints — you just
-          don&apos;t notice them until something goes wrong.
-        </p>
+        <Prose
+          text="Every conversation you've ever had operates under these constraints — you just don't notice them until something goes wrong."
+          currentUrl="/how-it-works"
+          className="text-foreground/40 mb-4 text-sm"
+        />
         <div className="space-y-3">
           {laws.map((a) => (
             <Link
@@ -102,16 +107,17 @@ export default async function SystemPage() {
         </div>
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" data-track="principle-list">
         <h2 className="mb-2 text-lg font-semibold">
           <Link href="/how-it-works/principles" className="hover:underline">
             Eight things that help
           </Link>
         </h2>
-        <p className="text-foreground/40 mb-4 text-sm">
-          Behavioral guidelines discovered through decades of improv practice. Not rules — things
-          that consistently make connection work better.
-        </p>
+        <Prose
+          text="Behavioral guidelines discovered through decades of improv practice. Not rules — things that consistently make connection work better."
+          currentUrl="/how-it-works"
+          className="text-foreground/40 mb-4 text-sm"
+        />
         <div className="grid grid-cols-2 gap-3">
           {principles.map((a) => (
             <Link
@@ -134,64 +140,58 @@ export default async function SystemPage() {
         </div>
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" data-track="diagnosis-link">
         <h2 className="mb-2 text-lg font-semibold">
           <Link href="/how-it-works/diagnosis" className="hover:underline">
             When it goes wrong
           </Link>
         </h2>
-        <p className="text-foreground/40 mb-4 text-sm">
-          Conversations fail in predictable ways. Once you can name the pattern, you can fix it.
-        </p>
+        <Prose
+          text="Conversations fail in predictable ways. Once you can name the pattern, you can fix it."
+          currentUrl="/how-it-works"
+          className="text-foreground/40 mb-4 text-sm"
+        />
         <Link href="/how-it-works/diagnosis" className="text-foreground/60 text-sm hover:underline">
           See the failure patterns &rarr;
         </Link>
       </section>
 
-      <section className="mb-12">
+      <section className="mb-12" data-track="which-layer">
         <h2 id="which-layer-you-need" className="mb-3 text-lg font-semibold">
           Which Layer You Need
         </h2>
-        <p className="text-foreground/70 mb-4">
-          The difference between a law and a principle is not how important it is. A law is
-          something you cannot violate, only pay for &mdash; you will not make time reversible or
-          attention infinite by being disciplined about it. A principle is something you can ignore
-          whenever you like, and people do, which is why they need stating at all.
-        </p>
+        <Prose
+          text="The difference between a law and a principle is not how important it is. A law is something you cannot violate, only pay for — you will not make time reversible or attention infinite by being disciplined about it. A principle is something you can ignore whenever you like, and people do, which is why they need stating at all."
+          currentUrl="/how-it-works"
+          className="text-foreground/70 mb-4"
+        />
         <p className="text-foreground/70 mb-4">
           That decides where to start when something has gone wrong.
         </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you can already name what happened</strong> &mdash; somebody blocked, nobody
-          listened, the scene never settled anywhere &mdash; go straight to{" "}
-          <Link href="/how-it-works/diagnosis" className="underline">
-            the failure patterns
-          </Link>
-          . Naming it is most of the work and the fix is usually specific.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If it just felt dead and you cannot say why</strong>, start with the laws. There
-          are six of them, they are the constraints every exchange runs under, and a scene that felt
-          flat for no visible reason has almost always hit one of them rather than something exotic.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <strong>If you know exactly what you did and keep doing it anyway</strong>, the problem is
-          not knowledge, and{" "}
-          <Link href="/how-it-works/principles" className="underline">
-            the principles
-          </Link>{" "}
-          are where the habit-level answer lives. Knowing you should have listened has never once
-          made anybody listen.
-        </p>
-        <p className="text-foreground/70">
-          The order is not a curriculum. Most people arrive at one of these pages from a search,
-          read the thing that describes their own week, and never touch the rest &mdash; which is a
-          reasonable way to use it.
-        </p>
+        <Prose
+          text="**If you can already name what happened** — somebody blocked, nobody listened, the scene never settled anywhere — go straight to [the failure patterns](/how-it-works/diagnosis). Naming it is most of the work and the fix is usually specific."
+          currentUrl="/how-it-works"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If it just felt dead and you cannot say why**, start with the laws. There are six of them, they are the constraints every exchange runs under, and a scene that felt flat for no visible reason has almost always hit one of them rather than something exotic."
+          currentUrl="/how-it-works"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="**If you know exactly what you did and keep doing it anyway**, the problem is not knowledge, and [the principles](/how-it-works/principles) are where the habit-level answer lives. Knowing you should have listened has never once made anybody listen."
+          currentUrl="/how-it-works"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="The order is not a curriculum. Most people arrive at one of these pages from a search, read the thing that describes their own week, and never touch the rest — which is a reasonable way to use it."
+          currentUrl="/how-it-works"
+          className="text-foreground/70"
+        />
       </section>
 
       {insights.length > 0 && (
-        <section>
+        <section data-track="insight-list">
           <h2 id="bigger-picture" className="mb-2 text-lg font-semibold">
             Bigger picture
           </h2>

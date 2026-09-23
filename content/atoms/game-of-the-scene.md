@@ -34,7 +34,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 Game of the Scene is the repeatable, heightenable pattern that gives a scene structure and momentum — the thing the scene is "about" behaviorally.

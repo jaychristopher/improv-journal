@@ -47,7 +47,34 @@ export interface PromptCategoryInfo {
   heading: string;
   /** What to do with one, in a sentence — the article's advice, compressed. */
   howToUse: string;
+  /**
+   * The atoms this category is, under another name. A relationship prompt is
+   * the concept `relationship`; a first line is `initiation`; a location is
+   * `environment` and `space-work`; something already wrong is `want` and
+   * `tilt`; a question for the audience is `suggestion`. The first id is the
+   * one the generator names under a drawn prompt, so `howToUse` should read
+   * as that concept's page in a sentence. Empty where no atom fits: a shared
+   * task is a drill idea, not a concept (tracker entry 332, 2026-09-22).
+   */
+  concepts: string[];
+  /** The exercise that isolates this kind of start, when the graph has one. */
+  drill?: string;
 }
+
+/** A category's concept, resolved on the server for the generator to link. */
+export interface PromptConceptLink {
+  id: string;
+  title: string;
+  href: string;
+}
+
+/**
+ * What the pages that mount the generator pass it: each category's concepts
+ * with a title and a route. The generator is a client component and the
+ * graph lives behind node fs, so the resolution happens in the page
+ * (prompt-concepts.ts) and arrives as a prop.
+ */
+export type PromptConceptMap = Record<PromptCategory, PromptConceptLink[]>;
 
 export interface PromptUseCaseInfo {
   id: PromptUseCase;
@@ -62,6 +89,7 @@ export const PROMPT_CATEGORIES: PromptCategoryInfo[] = [
     heading: "Relationship Prompts",
     howToUse:
       "Two people with something already between them. Play what is between them, not the label.",
+    concepts: ["relationship"],
   },
   {
     id: "first-line",
@@ -69,6 +97,8 @@ export const PROMPT_CATEGORIES: PromptCategoryInfo[] = [
     heading: "First Lines You Can Open With",
     howToUse:
       "Say it. Then find out what it means. The first thing it makes you feel is the scene.",
+    concepts: ["initiation"],
+    drill: "first-line-drill",
   },
   {
     id: "location",
@@ -76,12 +106,14 @@ export const PROMPT_CATEGORIES: PromptCategoryInfo[] = [
     heading: "Locations Worth Playing",
     howToUse:
       "Touch something in it before you speak. The objects will tell you what the scene is.",
+    concepts: ["environment", "space-work"],
   },
   {
     id: "situation",
     label: "Something already wrong",
     heading: "Situations With Something Already Wrong",
     howToUse: "Play it completely straight. The comedy is in how much the people care.",
+    concepts: ["want", "tilt"],
   },
   {
     id: "audience-question",
@@ -89,12 +121,14 @@ export const PROMPT_CATEGORIES: PromptCategoryInfo[] = [
     heading: "Questions to Ask an Audience",
     howToUse:
       "Ask it, take the first honest answer, and build the scene from the feeling under it.",
+    concepts: ["suggestion"],
   },
   {
     id: "task",
     label: "A shared task",
     heading: "Using Prompts in a Drama Class",
     howToUse: "Actually try to do the thing. Nobody has to be funny; the task carries the scene.",
+    concepts: [],
   },
 ];
 
@@ -182,6 +216,35 @@ export function suitsUseCase(prompt: Prompt, useCase: PromptUseCase): boolean {
     case "show":
       return true;
   }
+}
+
+/**
+ * The categories that name a given atom, so a concept page can offer the
+ * material to run its idea on: `want` is named by "something already wrong",
+ * `commitment` by nothing. Client-safe, so either side of the boundary can ask.
+ */
+export function categoriesNaming(atomId: string): PromptCategoryInfo[] {
+  return PROMPT_CATEGORIES.filter((c) => c.concepts.includes(atomId));
+}
+
+/**
+ * The gloss after a concept's title: the last sentence of `howToUse`, since
+ * the sentence before it restates the prompt and the last one is the advice.
+ * "…Play what is between them, not the label." becomes "play what is between
+ * them, not the label." after the dash.
+ */
+export function conceptGloss(howToUse: string): string {
+  const sentences = howToUse.match(/[^.!?]+[.!?]+/g) ?? [howToUse];
+  const last = sentences[sentences.length - 1].trim();
+  return last.charAt(0).toLowerCase() + last.slice(1);
+}
+
+/** The query the tool page reads to open on one kind of prompt: `?category=relationship`. */
+export const CATEGORY_QUERY_PARAM = "category";
+
+/** The tool page pre-set to one category, for the link from that category's concept. */
+export function generatorHrefFor(category: PromptCategory): string {
+  return `/tools/improv-prompt-generator?${CATEGORY_QUERY_PARAM}=${category}`;
 }
 
 /** The fragment the guide gives a category's heading, so a link can land on it. */

@@ -11,7 +11,7 @@ entry_atoms: [blocking, commitment, be-honest, status, performing-cleverness, ye
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-23"
+updated: "2026-08-25"
 ---
 
 # How to Stop People Pleasing: What Improv Teaches About Authentic Response

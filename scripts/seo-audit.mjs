@@ -9,6 +9,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+import { classifyKeywordParents } from "../src/lib/keyword-parents.mjs";
+
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const SRC_DIR = path.join(process.cwd(), "src", "app");
 
@@ -148,6 +150,9 @@ function scoreBridge(file) {
     difficulty: primary.difficulty,
     trafficPotential: primary.traffic_potential,
     keywords: (data.target_keywords || []).map((k) => String(k.keyword).toLowerCase()),
+    // The keywords whole, because the parent section below needs the `parent`
+    // and `traffic_potential` on every one of them, not just the primary.
+    targetKeywords: data.target_keywords || [],
     serpVerdict: data.serp_verdict,
     serpMinDr: data.serp_min_dr,
     serpChecked: data.serp_checked,
@@ -260,6 +265,70 @@ const collisions = [...owners.entries()].filter(([, pages]) => pages.length > 1)
 if (collisions.length > 0) {
   console.log(`Keyword collisions — two guides targeting one term (${collisions.length}):`);
   for (const [kw, pages] of collisions) console.log(`  "${kw}" — ${pages.join(", ")}`);
+  console.log();
+}
+
+/**
+ * Parent topics — the heads above the terms the site has chosen.
+ *
+ * Every other section here reads the keywords the guides target. `parent` is
+ * the only field that names a topic *above* a page, and nothing read it: the
+ * collision test asks whether 2 guides share one and stops there, which on
+ * this data cannot fail (tracker entries 99 and 352).
+ *
+ * The bucket to look at is the last one — a head term no page on the site
+ * claims. Unclaimed is a decision and not a defect: it is usually the term
+ * the page deliberately did not chase, which is why the child was chosen. So
+ * the verdict printed beside each row is what makes the row readable. An
+ * `authority` verdict is somebody having looked at those results and left
+ * them; no verdict at all is nobody having looked, and those are the rows
+ * worth a person's time.
+ *
+ * Nothing here is a new figure. The traffic potential is the child keyword's
+ * own, copied, and everything else is a count of rows.
+ */
+const parents = classifyKeywordParents(
+  results
+    .filter((r) => r.type === "bridge")
+    .map((r) => ({ id: r.id, keywords: r.targetKeywords, verdict: r.serpVerdict ?? null })),
+);
+console.log(
+  `Parent topics — ${parents.withParent} of ${parents.keywords} declared keywords name one, ` +
+    `${parents.distinct} distinct:`,
+);
+console.log(`  the keyword itself:                ${String(parents.self.length).padStart(3)}`);
+console.log(`  another keyword on this guide:     ${String(parents.sameGuide.length).padStart(3)}`);
+console.log(
+  `  a keyword on a different guide:    ${String(parents.otherGuide.length).padStart(3)}`,
+);
+console.log(`  no page on the site claims it:     ${String(parents.unclaimed.length).padStart(3)}`);
+for (const e of parents.crossGuideEdges) {
+  console.log(`    ${e.from} sits under ${e.to} — "${e.via}" has parent "${e.parent}"`);
+}
+console.log();
+
+if (parents.unclaimed.length > 0) {
+  const unjudged = parents.unclaimed.filter((p) => p.unjudged);
+  console.log(
+    `Head terms no page claims (${parents.unclaimed.length}), by the best traffic potential among their children:`,
+  );
+  for (const p of parents.unclaimed) {
+    const verdicts = p.verdicts.map((v) => v ?? "no verdict").join(", ");
+    console.log(
+      `  ${p.parent.padEnd(44)} TP ${String(p.bestTrafficPotential ?? "—").padStart(6)}  ` +
+        `${String(p.children.length).padStart(2)} on ${p.guides.join(", ").padEnd(42)} ${verdicts}`,
+    );
+  }
+  console.log(
+    `  Unclaimed is a decision, not a defect — an "authority" verdict is a page that looked at ` +
+      `the head and left it.`,
+  );
+  console.log(
+    unjudged.length > 0
+      ? `  ${unjudged.length} of these ${parents.unclaimed.length} carry no verdict at all, which is the list worth a person's time: ` +
+          unjudged.map((p) => p.parent).join(", ")
+      : `  Every one of these ${parents.unclaimed.length} carries a verdict on the guide that declares the child, so none is unjudged.`,
+  );
   console.log();
 }
 

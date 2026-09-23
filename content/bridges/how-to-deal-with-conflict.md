@@ -10,7 +10,7 @@ entry_atoms: [yes-and, blocking, offers, accepting-the-offer, status, be-positiv
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-07"
-updated: "2026-08-22"
+updated: "2026-08-27"
 ---
 
 # How to Deal with Conflict: The Acceptance Paradox

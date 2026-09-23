@@ -55,7 +55,11 @@ export function ContextBanner({
   if (!thread && !path) return null;
 
   return (
-    <div className="text-foreground/40 mb-4 text-xs">
+    <div
+      className="text-foreground/40 mb-4 text-xs"
+      data-track="context-banner"
+      data-derived="true"
+    >
       {thread && path ? (
         <>
           {thread} is a lesson in {path} — a sequence meant to be read in order.

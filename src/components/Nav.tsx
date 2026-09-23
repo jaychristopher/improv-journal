@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import { hubLink, HUBS } from "@/lib/hubs";
+
 import { SearchInput } from "./SearchInput";
 
 interface NavSection {
@@ -11,26 +13,43 @@ interface NavSection {
   children: { href: string; label: string }[];
 }
 
+/**
+ * Hub names come from the HUBS table so the menu, the footer, the trail and
+ * the page cannot call one hub two things (tracker entry 264). "Overview" is
+ * the menu's word for a section's own root, repeated as its first child; the
+ * items that are not hubs — the level pages, the tools — keep their own
+ * labels here.
+ *
+ * The whole menu is one client component rather than a server-rendered list
+ * with a toggle island, and that is deliberate (tracker entry 265,
+ * 2026-09-22). The flight payload behind every page is the output of the
+ * server components; this file's markup is in a cached chunk and the flight
+ * holds only a module reference for it, so its 42 links cost the page
+ * nothing beyond the HTML. Rendered on the server they would be serialised
+ * a second time on each of 376 pages, the way the footer's were.
+ * `flight-share.test.ts` checks that the menu's labels stay out of the
+ * flight.
+ */
+const OVERVIEW = "Overview";
+
 const NAV_SECTIONS: NavSection[] = [
   {
-    href: "/how-it-works",
-    label: "How It Works",
+    ...hubLink(HUBS.howItWorks),
     children: [
-      { href: "/how-it-works", label: "Overview" },
-      { href: "/how-it-works/principles", label: "Principles" },
-      { href: "/how-it-works/diagnosis", label: "Diagnosis" },
+      { href: HUBS.howItWorks.href, label: OVERVIEW },
+      hubLink(HUBS.principles),
+      hubLink(HUBS.diagnosis),
     ],
   },
   {
-    href: "/practice",
-    label: "Practice",
+    ...hubLink(HUBS.practice),
     children: [
-      { href: "/practice", label: "Overview" },
+      { href: HUBS.practice.href, label: OVERVIEW },
       { href: "/improv-games", label: "Improv Games" },
-      { href: "/practice/exercises", label: "Exercises" },
-      { href: "/practice/techniques", label: "Techniques" },
-      { href: "/practice/formats", label: "Formats" },
-      { href: "/practice/vocabulary", label: "Vocabulary" },
+      hubLink(HUBS.exercises),
+      hubLink(HUBS.techniques),
+      hubLink(HUBS.formats),
+      hubLink(HUBS.glossary),
     ],
   },
   /**
@@ -49,15 +68,27 @@ const NAV_SECTIONS: NavSection[] = [
    * a child repeats it by name. The page itself is untouched and still linked
    * from the footer, so nothing is orphaned or dropped from the sitemap.
    */
+  /**
+   * The nav had nine concept hubs and one item, Guides, for the layer that
+   * holds 70% of the site's traffic potential; the lessons hub, the level
+   * ladder, the drill picker and the topic hubs were reachable from the
+   * footer or the homepage body only (tracker entry 222, 2026-09-21). They
+   * join this section under the names their pages already use.
+   */
   {
-    href: "/guides",
+    href: HUBS.guides.href,
     label: "Resources",
     children: [
-      { href: "/guides", label: "Guides" },
-      { href: "/paths", label: "Learning Paths" },
-      { href: "/listen", label: "Listen" },
-      { href: "/traditions", label: "Traditions" },
-      { href: "/library", label: "Reading List" },
+      hubLink(HUBS.guides),
+      { href: "/topics/communication", label: "Guides by Topic" },
+      hubLink(HUBS.paths),
+      hubLink(HUBS.threads),
+      hubLink(HUBS.learn),
+      { href: "/tools/exercise-picker/beginner", label: "Find a Drill" },
+      { href: "/tools/improv-prompt-generator", label: "Get a Prompt" },
+      hubLink(HUBS.listen),
+      hubLink(HUBS.traditions),
+      hubLink(HUBS.library),
     ],
   },
 ];
@@ -132,8 +163,8 @@ export function Nav() {
   }, [mobileOpen]);
 
   return (
-    <nav className="border-foreground/10 relative z-50 border-b px-6 py-3">
-      <div className="mx-auto flex max-w-5xl items-center justify-between">
+    <nav className="border-foreground/10 relative z-50 border-b px-6 py-3" data-track="nav">
+      <div data-nav-bar className="mx-auto flex max-w-5xl items-center justify-between">
         <Link href="/" className="text-sm font-semibold tracking-tight">
           Physics of Connection
         </Link>
@@ -177,8 +208,11 @@ export function Nav() {
         </div>
       </div>
 
-      {/* Mobile menu — full viewport overlay */}
+      {/* Mobile menu — full viewport overlay. `data-mobile-menu` is the hook
+          globals.css uses to give this panel the document's palette back on a
+          page whose hero inverts the bar (2026-09-23). */}
       <div
+        data-mobile-menu
         className={`bg-background fixed inset-0 top-[49px] z-40 overflow-y-auto px-6 pt-8 pb-12 sm:hidden ${
           mobileOpen ? "block" : "hidden"
         }`}

@@ -13,6 +13,9 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
+import { tallyStatus } from "@/lib/status-distribution";
+
+import { countAtomTypes } from "./atom-types";
 
 const DESCRIPTION =
   "Who writes The Physics of Connection, where the material comes from, and how the site is put together.";
@@ -51,6 +54,15 @@ export default async function AboutPage() {
     loadPaths(),
   ]);
   const references = atoms.filter((a) => a.frontmatter.type === "reference");
+  // Every kind of atom with its live count, so this list cannot fall behind
+  // the schema the way the hand-written five-kind list did.
+  const kinds = countAtomTypes(atoms);
+  // The maturity split across the four published layers, so the status
+  // sentence below states the norm as numbers rather than promising a label.
+  const statusTally = tallyStatus(
+    [...atoms, ...bridges, ...threads, ...paths].map((p) => p.frontmatter.status),
+  );
+  const statusPages = statusTally.seed + statusTally.draft + statusTally.validated;
 
   // The author entity is defined here, once. Every article on the site points
   // its author at this @id.
@@ -103,7 +115,7 @@ export default async function AboutPage() {
         <p className="text-foreground/60 mt-2">{DESCRIPTION}</p>
       </header>
 
-      <div className="prose prose-neutral dark:prose-invert max-w-none">
+      <div className="prose prose-neutral dark:prose-invert max-w-none" data-track="about-prose">
         <h2>Who writes this</h2>
         <p>
           <strong>{AUTHOR_NAME}</strong> — improv practitioner, teacher, and researcher. The site is
@@ -117,7 +129,7 @@ export default async function AboutPage() {
           major traditions, which disagree with each other often enough to be worth reading
           together:
         </p>
-        <ul>
+        <ul data-track="tradition-list">
           {TRADITIONS.map((t) => (
             <li key={t.slug}>
               <Link href={`/traditions/${t.slug}`}>{t.label}</Link>
@@ -132,15 +144,18 @@ export default async function AboutPage() {
         </p>
 
         <h2>How the site is built</h2>
-        <p>
-          The material is written as a knowledge graph rather than a pile of articles, in four
-          layers:
-        </p>
+        <p>The material is a knowledge graph rather than a pile of articles, in four layers:</p>
         <ul>
           <li>
-            <strong>{atoms.length} atoms</strong> — the smallest self-contained units: principles,
-            techniques, exercises, definitions, and failure patterns. Each links to the others it
-            requires, enables, or contradicts.
+            <strong>{atoms.length} atoms</strong> — the smallest self-contained units, of{" "}
+            {kinds.length} kinds:{" "}
+            {kinds.map((k, i) => (
+              <span key={k.type}>
+                {i > 0 ? (i === kinds.length - 1 ? ", and " : ", ") : ""}
+                {k.count} {k.name}
+              </span>
+            ))}
+            . Each links to what it requires, enables, extends, illustrates, or contradicts.
           </li>
           <li>
             <strong>{threads.length} threads</strong> — atoms composed into a single full argument.
@@ -154,18 +169,31 @@ export default async function AboutPage() {
             specific difficulty to the underlying principles.
           </li>
         </ul>
-        <p>
-          Because the graph is explicit, every page can show you what it depends on and what follows
-          from it. You can start at <Link href="/how-it-works">the underlying system</Link>, at{" "}
-          <Link href="/practice">the practice</Link>, or at whichever{" "}
+        {/* The claims this paragraph and the status sentence below make are
+            held against the build by about-claims.test.ts (tracker entry
+            318): "builds on", "unlocks" and "trains" are the labels the
+            concept page renders, and every page's byline carries its status. */}
+        <p data-about-graph>
+          Because the graph is explicit, every page shows what it builds on, what it unlocks, and
+          what trains it. You can start at <Link href="/how-it-works">the underlying system</Link>,
+          at <Link href="/practice">the practice</Link>, or at whichever{" "}
           <Link href="/guides">guide</Link> matches the problem you actually have.
         </p>
 
         <h2>Corrections</h2>
-        <p>
-          Content carries a status of seed, draft, or validated, and those labels are meant honestly
-          — a draft is a draft. If something here is wrong, or attributes an idea to the wrong
-          person, it should be fixed.
+        {/* The byline's status word links here (#status). It reads "draft"
+            on 9 pages in 10, so the distribution is stated as numbers,
+            computed at render, and the reader who meets the word for the
+            first time learns it is the norm (tracker entry 323). */}
+        <p data-about-status id="status">
+          Every page&apos;s byline shows its status — seed, draft, or validated — and means it: a
+          draft is a draft.{" "}
+          <span data-status-distribution>
+            Today {statusTally.draft} of the {statusPages} pages are drafts, {statusTally.seed}{" "}
+            seeds and {statusTally.validated} validated, so a draft is the norm here rather than a
+            warning.
+          </span>{" "}
+          If something here is wrong, or attributes an idea to the wrong person, it should be fixed.
         </p>
       </div>
     </main>

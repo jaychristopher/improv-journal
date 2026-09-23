@@ -7,6 +7,11 @@
   --foreground-strong: #111111;
   --link: #1a5fa8;
   --surface: #ffffff;
+  /* The takeover hero is an inverted panel in both themes: a tool reads as a
+     tool beside a page of prose, and the nav floats over it in light text. */
+  --hero: #101014;
+  --hero-foreground: #f4f4f5;
+  --hero-muted: #a1a1aa;
 }
 
 :root.dark {
@@ -18,6 +23,9 @@
 }
 
 @theme inline {
+  --color-hero: var(--hero);
+  --color-hero-foreground: var(--hero-foreground);
+  --color-hero-muted: var(--hero-muted);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-foreground-strong: var(--foreground-strong);
@@ -171,3 +179,98 @@ body {
 .animate-fade-in {
   animation: fade-in 0.25s ease-out;
 }
+
+/* Provenance (tracker entry 310).
+   An author-written link is about a quarter of a guide's page-specific links
+   and 2–5% of a concept's, lesson's or path's; the rest is the linker and the
+   derived blocks, and a reader could not tell a chosen link from a computed
+   one. Every derived block — a tracked block outside the article, the
+   breadcrumb, the byline, the nav and the footer — carries `data-derived` on
+   its outermost wrapper and this one caption; hand links inside the prose
+   carry nothing. Generated content, not markup, so the word reaches a reader
+   and not the search index, the JSON-LD or a test that counts a page's
+   words. A block of its own so it reads the same above a list, a card, a
+   fold or a one-line note; full width so a flex row (the path's start
+   buttons, a lesson's prev/next) keeps it on a row of its own. Inner tracked
+   blocks inherit from the wrapper and carry no second caption, which
+   derived-provenance.test.ts asserts.
+
+   Once per region, not per block (tracker entry 317). The marker did its job
+   and became the page's most repeated word: five captions on a guide, five
+   on a concept, seven on a lesson, so a wrapper that holds several derived
+   blocks — the concept page's connections column, its after-article strip,
+   the lesson panel — carries `data-derived-region` and draws the one caption
+   for everything inside it, and the blocks inside keep `data-derived` (the
+   attribute still marks every computed block for the test) without the
+   word. A block outside any region keeps its own caption, so nothing loses
+   its provenance. */
+[data-derived]::before,
+[data-derived-region]::before {
+  content: "computed";
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  color: var(--foreground);
+  opacity: 0.4;
+  font-size: 0.65rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: none;
+}
+
+[data-derived-region] [data-derived]::before {
+  content: none;
+}
+
+/*
+ * Only below `lg`, which is exactly where the hero is full-bleed. From `lg`
+ * the panel is 16:9 inside the article column with the page showing either
+ * side of it, so an inverted bar would put light text on the light page for
+ * most of its width; there the nav keeps its own background and palette and
+ * simply sits above the panel.
+ *
+ * A page whose hero takes the viewport (/improv-prompts,
+ * /would-you-rather-questions). The nav floats over the dark panel with no
+ * background of its own and its own light palette, and the page's top padding
+ * goes, so the hero starts at the top of the document.
+ *
+ * `position: absolute` rather than fixed on purpose: the nav scrolls away with
+ * the hero instead of staying light-on-light over the article below it.
+ *
+ * Redefining --foreground here rather than restyling each link: the nav's own
+ * utilities (text-foreground/50 and the rest) resolve against these, so the
+ * whole bar inverts without a second set of classes to keep in step.
+ */
+@media (width < 64rem) {
+  body:has([data-hero-takeover]) nav[data-track="nav"] {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    border-bottom-color: transparent;
+  }
+}
+
+/*
+ * The palette is redefined on the bar alone, not on the whole nav: the mobile
+ * menu is a solid panel over the page rather than over the hero, and it is a
+ * sibling of the bar inside the same element, so an override on the nav would
+ * reach it too. (Resetting it back there is not an option — `initial` on a
+ * custom property makes it invalid at computed-value time rather than
+ * restoring the document's value.)
+ */
+@media (width < 64rem) {
+  body:has([data-hero-takeover]) nav[data-track="nav"] [data-nav-bar] {
+    --foreground: var(--hero-muted);
+    --foreground-strong: var(--hero-foreground);
+    color: var(--hero-foreground);
+  }
+}
+
+/*
+ * The hero is a sibling above `main`, so the article keeps its own top
+ * padding — that space is now between the panel and the breadcrumb, which is
+ * where it belongs.
+ */

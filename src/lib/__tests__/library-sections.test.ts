@@ -22,9 +22,14 @@ const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
  * can infer that. "Cites" is a relation people already have, so the second says
  * that instead.
  *
- * Asserts the sets stay disjoint as well as the wording, because the wording is
- * only honest while they are: if a concept could appear under both, "cites"
- * would be describing a subset of the section above it.
+ * The sets were disjoint by construction until 2026-09-22, when the cites block
+ * started listing every citing concept (tracker entry 268): 13 works, eleven of
+ * them the August science, had rendered no cites block because each of their
+ * citing concepts was also one the work names, so the two blocks now overlap on
+ * every entry and "cites" is honest about a different thing — who declared the
+ * edge is no longer what separates them; the direction of the sentence is. The
+ * disjointness assertion is therefore gone; the wording guard and the
+ * both-rendered floor remain, and every entry now renders both.
  */
 describe("library relation blocks", () => {
   it.runIf(built)("do not repeat each other, in words or in links", () => {
@@ -32,7 +37,6 @@ describe("library relation blocks", () => {
     expect(files.length).toBeGreaterThanOrEqual(25);
 
     const synonym: string[] = [];
-    const overlapping: string[] = [];
     let withBoth = 0;
 
     for (const file of files) {
@@ -47,21 +51,21 @@ describe("library relation blocks", () => {
       }
       withBoth += 1;
 
+      // Both blocks must still carry links, or a heading would be sitting over
+      // an empty list.
       const links = (marker: string) => {
         const start = html.indexOf(marker);
         const end = html.indexOf("<h2", start + marker.length);
         const block = html.slice(start, end < 0 ? html.length : end);
         return new Set([...block.matchAll(/href="(\/[^"?#]*)"/g)].map((m) => m[1]));
       };
-
-      const informs = links("Concepts this work informs");
-      const cites = links("Pages that cite it");
-      if ([...cites].some((href) => informs.has(href))) overlapping.push(slug);
+      expect(links("Concepts this work informs").size, slug).toBeGreaterThan(0);
+      expect(links("Pages that cite it").size, slug).toBeGreaterThan(0);
     }
 
-    // 19 of 32 entries render both, which is where the confusion lived.
-    expect(withBoth).toBeGreaterThanOrEqual(15);
+    // 19 of 32 entries rendered both when the wording was fixed; 32 of 32 since
+    // the cites block lists every citing concept (2026-09-22).
+    expect(withBoth).toBeGreaterThanOrEqual(30);
     expect(synonym).toEqual([]);
-    expect(overlapping).toEqual([]);
   });
 });

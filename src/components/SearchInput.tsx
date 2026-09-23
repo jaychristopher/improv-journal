@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { trackEvent } from "@/lib/analytics";
-import { getSearchIndex, hasSearchIndex } from "@/lib/search-index";
+import { getSearchIndex, hasSearchIndex, MINISEARCH_OPTIONS } from "@/lib/search-index";
 
 interface QuickResult {
   title: string;
@@ -89,11 +89,7 @@ export function SearchInput() {
       const ms = await getSearchIndex();
       if (requestId !== requestIdRef.current) return;
 
-      const suggestions = ms.autoSuggest(value, {
-        fuzzy: 0.2,
-        prefix: true,
-        boost: { title: 3 },
-      });
+      const suggestions = ms.autoSuggest(value, MINISEARCH_OPTIONS.searchOptions);
 
       setResults(
         suggestions.slice(0, 6).map((suggestion) => ({

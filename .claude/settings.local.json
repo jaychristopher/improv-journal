@@ -259,7 +259,8 @@
       "Bash(npx --prefix videos tsc --noEmit -p videos/tsconfig.json)",
       "Bash(ffmpeg -y -i public/audio/youtube/06-framing-effect.original.mp3 -af \"silenceremove=start_periods=0:stop_periods=-1:stop_duration=0.4:stop_threshold=-38dB:stop_silence=0.25\" public/audio/youtube/06-framing-effect.mp3)",
       "Bash(git check-ignore *)",
-      "Bash(npx wrangler *)"
+      "Bash(npx wrangler *)",
+      "Bash(PYTHONUTF8=1 python *)"
     ]
   }
 }

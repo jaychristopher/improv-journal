@@ -3,10 +3,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { LevelRedirect } from "@/components/LevelRedirect";
+import { Prose } from "@/components/Prose";
+import {
+  getAudienceGuides,
+  getAudienceLessons,
+  getPedagogyAtoms,
+  pickerLevelFor,
+} from "@/lib/audience-hub";
 import { loadPaths } from "@/lib/content";
+import { getPathTitle } from "@/lib/path-progression";
 import { getRecommendedPath, isRecommendedPath } from "@/lib/path-recommendations";
 import type { Audience } from "@/lib/schema";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
+import { getLadderSeedShare } from "@/lib/status-distribution";
 
 /**
  * Each audience hub gets orientation prose, the way the topic hubs already do.
@@ -119,6 +129,23 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
   const alternatePaths = orderedPaths.filter((path) => path.frontmatter.id !== recommendation.id);
   const isBeginner = typedAudience === "beginner";
 
+  // Beyond the paths: the guides that route this reader here, the lessons the
+  // paths sequence, and the picker level that shares the audience's name.
+  // Until 2026-09-21 the hub linked its paths and nothing else (novel-insights
+  // 201), so a beginner met five cards and the homepage.
+  const [audienceGuides, lessons, pedagogyAtoms, ladderSeeds] = await Promise.all([
+    getAudienceGuides(typedAudience),
+    getAudienceLessons(typedAudience),
+    typedAudience === "teacher" ? getPedagogyAtoms() : Promise.resolve([]),
+    getLadderSeedShare(),
+  ]);
+  const pickerLevel = pickerLevelFor(typedAudience);
+  // The ladder's seed share, said once under the lesson list rather than on
+  // every next-path card (tracker entry 323, 2026-09-22); the same sentence
+  // the paths hub carries, with the same computed numbers.
+  const beyond = ladderSeeds.beyondFirstRung;
+  const firstRungTitle = getPathTitle(ladderSeeds.firstRung).split(":")[0];
+
   // Group beginner alternates by focus
   const IMPROV_PATH_IDS = new Set(["physics-of-connection", "systems-of-improv"]);
   const LIFE_PATH_IDS = new Set(["improv-for-life", "improv-for-teams"]);
@@ -134,20 +161,30 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
 
       <header className="mb-12">
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{meta.title}</h1>
-        <p className="text-foreground/60 mt-2">{meta.description}</p>
+        <Prose
+          text={meta.description}
+          currentUrl={`/learn/${audience}`}
+          className="text-foreground/60 mt-2"
+        />
       </header>
 
       <section className="mb-12">
         {meta.orientation.map((paragraph) => (
-          <p key={paragraph.slice(0, 40)} className="text-foreground/70 mb-4">
-            {paragraph}
-          </p>
+          <Prose
+            text={paragraph}
+            currentUrl={`/learn/${audience}`}
+            className="text-foreground/70 mb-4"
+            key={paragraph.slice(0, 40)}
+          />
         ))}
       </section>
 
       {isBeginner && recommendedPath ? (
         <>
-          <section className="border-foreground/10 bg-foreground/[0.03] mb-6 rounded-xl border p-6">
+          <section
+            className="border-foreground/10 bg-foreground/[0.03] mb-6 rounded-xl border p-6"
+            data-track="recommended-path"
+          >
             <span className="text-foreground/40 text-xs tracking-wider uppercase">
               {recommendation.label}
             </span>
@@ -173,9 +210,11 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
 
           <section className="border-foreground/10 bg-surface mb-10 rounded-xl border p-6">
             <h2 className="text-lg font-semibold">Why this path first?</h2>
-            <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-              {recommendation.rationale}
-            </p>
+            <Prose
+              text={recommendation.rationale}
+              currentUrl={`/learn/${audience}`}
+              className="text-foreground/60 mt-2 text-sm leading-relaxed"
+            />
             <ul className="mt-4 list-disc space-y-2 pl-5">
               {recommendedPath.frontmatter.learning_objectives.map((objective) => (
                 <li key={objective} className="text-foreground/70 text-sm">
@@ -186,11 +225,13 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
           </section>
 
           {beginnerLifePaths.length > 0 && (
-            <section className="mb-8">
+            <section className="mb-8" data-track="life-paths">
               <h2 className="mb-1 text-lg font-semibold">Not an improviser?</h2>
-              <p className="text-foreground/40 mb-4 text-sm">
-                These paths apply improv principles to everyday life — no stage required.
-              </p>
+              <Prose
+                text="These paths apply improv principles to everyday life — no stage required."
+                currentUrl={`/learn/${audience}`}
+                className="text-foreground/40 mb-4 text-sm"
+              />
               <div className="space-y-3">
                 {beginnerLifePaths.map((path) => (
                   <div
@@ -215,11 +256,13 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
           )}
 
           {beginnerImprovPaths.length > 0 && (
-            <section className="mb-8">
+            <section className="mb-8" data-track="system-paths">
               <h2 className="mb-1 text-lg font-semibold">Go deeper into the system</h2>
-              <p className="text-foreground/40 mb-4 text-sm">
-                For analytical minds who want to understand why improv works before practicing it.
-              </p>
+              <Prose
+                text="For analytical minds who want to understand why improv works before practicing it."
+                currentUrl={`/learn/${audience}`}
+                className="text-foreground/40 mb-4 text-sm"
+              />
               <div className="space-y-3">
                 {beginnerImprovPaths.map((path) => (
                   <div
@@ -244,7 +287,7 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
           )}
 
           {beginnerOtherPaths.length > 0 && (
-            <section>
+            <section data-track="more-paths">
               <h2 className="mb-4 text-lg font-semibold">More paths</h2>
               <div className="space-y-3">
                 {beginnerOtherPaths.map((path) => (
@@ -268,10 +311,17 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
               </div>
             </section>
           )}
+
+          {/*
+            The ladder's rungs, under the path cards. Derived from the chain and
+            the recommender (tracker entry 247) and, from 2026-08-22 until
+            2026-09-21, mounted on no page at all (entry 250).
+          */}
+          <LevelRedirect level={typedAudience} context="path" />
         </>
       ) : (
         <>
-          <div className="space-y-4">
+          <div className="space-y-4" data-track="path-list">
             {orderedPaths.map((path) => (
               <div
                 key={path.frontmatter.id}
@@ -295,8 +345,10 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
             ))}
           </div>
 
+          <LevelRedirect level={typedAudience} context="path" />
+
           {typedAudience === "teacher" && (
-            <section className="mt-10">
+            <section className="mt-10" data-track="also-explore">
               <h2 className="mb-1 text-lg font-semibold">Also explore</h2>
               <p className="text-foreground/40 mb-4 text-sm">
                 Supplementary resources for improv teachers.
@@ -319,7 +371,7 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
           )}
 
           {typedAudience === "advanced" && (
-            <section className="mt-10">
+            <section className="mt-10" data-track="also-explore">
               <h2 className="mb-1 text-lg font-semibold">Also explore</h2>
               <p className="text-foreground/40 mb-4 text-sm">
                 Deep-dive resources for serious study.
@@ -341,6 +393,86 @@ export default async function AudiencePage({ params }: { params: Promise<{ audie
             </section>
           )}
         </>
+      )}
+
+      {audienceGuides.guides.length > 0 && (
+        <section className="mt-12" data-track="audience-guides">
+          <h2 className="mb-1 text-lg font-semibold">Guides for this reader</h2>
+          <Prose
+            text="Long-form guides whose reading route starts on one of the paths above."
+            currentUrl={`/learn/${audience}`}
+            className="text-foreground/40 mb-4 text-sm"
+          />
+          <ul className="space-y-2">
+            {audienceGuides.guides.map((guide) => (
+              <li key={guide.slug} className="text-sm">
+                <Link href={`/${guide.slug}`} className="font-medium hover:underline">
+                  {guide.title}
+                </Link>
+                <span className="text-foreground/50"> — {guide.description}</span>
+              </li>
+            ))}
+          </ul>
+          {audienceGuides.remainder > 0 && (
+            <p className="text-foreground/50 mt-4 text-sm">
+              <Link href="/guides" className="hover:underline">
+                and {audienceGuides.remainder} more in the guides index
+              </Link>
+            </p>
+          )}
+        </section>
+      )}
+
+      {lessons.length > 0 && (
+        <section className="mt-12" data-track="lesson-list">
+          <h2 className="mb-1 text-lg font-semibold">Lessons on these paths</h2>
+          <p className="text-foreground/40 mb-4 text-sm">
+            In the order the paths above teach them.{" "}
+            <span data-ladder-seeds={`${beyond.seedSlots}/${beyond.slots}`}>
+              Beyond {firstRungTitle}, most lessons on these paths are still seeds &mdash;{" "}
+              {beyond.seedSlots} of the {beyond.slots} lesson slots today &mdash; and each
+              lesson&apos;s byline says so.
+            </span>
+          </p>
+          <ol className="list-decimal space-y-2 pl-5">
+            {lessons.map((lesson) => (
+              <li key={lesson.id} className="text-sm">
+                <Link href={lesson.url} className="font-medium hover:underline">
+                  {lesson.title}
+                </Link>
+                <span className="text-foreground/40"> · {lesson.pathTitle}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      {pickerLevel ? (
+        <p className="text-foreground/60 mt-12 text-sm" data-track="picker-level">
+          Drills at this level:{" "}
+          <Link href={`/tools/exercise-picker/${pickerLevel}`} className="underline">
+            {pickerLevel} exercises in the exercise picker
+          </Link>
+          .
+        </p>
+      ) : (
+        pedagogyAtoms.length > 0 && (
+          <section className="mt-12" data-track="pedagogy-list">
+            <h2 className="mb-1 text-lg font-semibold">The craft of teaching</h2>
+            <p className="text-foreground/40 mb-4 text-sm">
+              The concepts about running a room rather than being in one.
+            </p>
+            <ul className="space-y-2">
+              {pedagogyAtoms.map((atom) => (
+                <li key={atom.id} className="text-sm">
+                  <Link href={atom.url} className="font-medium hover:underline">
+                    {atom.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
       )}
     </main>
   );

@@ -38,6 +38,13 @@ function mappedTitles(): { pattern: RegExp; slug: string }[] {
  * is exactly what linkSources emits. Scanning backwards for "<a " instead
  * reports false misses, because the title attribute carrying the tooltip is
  * long enough to push the opening tag outside any fixed window.
+ *
+ * The transcript fold is the one exception. Since 2026-09-22 it links only
+ * what the page's body did not (tracker entry 267; `autolinkTranscript`'s
+ * ledger), so an italicised title in the fold is left plain when the prose
+ * above already links the entry — the page still cites the work with a
+ * link, once. A plain title in the fold on a page that links the entry
+ * nowhere else is still a miss.
  */
 describe("citations of works the library holds", () => {
   it.runIf(built)("render as links to the library entry", () => {
@@ -57,6 +64,11 @@ describe("citations of works the library holds", () => {
         const url = full.replace(APP, "").split(path.sep).join("/").replace(".html", "");
         const html = fs.readFileSync(full, "utf8");
         const body = html.split("</header>").pop()?.split("<footer").shift() ?? "";
+        const foldMark = body.indexOf("data-transcript");
+        const foldStart = foldMark >= 0 ? body.lastIndexOf("<section", foldMark) : -1;
+        const foldEnd = foldMark >= 0 ? body.indexOf("</section>", foldMark) : -1;
+        const inFold = (at: number) => foldStart >= 0 && at > foldStart && at < foldEnd;
+        const outsideFold = foldStart >= 0 ? body.slice(0, foldStart) + body.slice(foldEnd) : body;
 
         for (const m of body.matchAll(/(<a [^>]*>)?<em>([^<]{3,120})<\/em>/g)) {
           const title = m[2].trim();
@@ -64,6 +76,8 @@ describe("citations of works the library holds", () => {
           if (!hit) continue;
           // A reference page cites its own work; linking there would be a self-link.
           if (`/library/${hit.slug}` === url) continue;
+          // The fold defers to the prose's link (see above).
+          if (inFold(m.index) && outsideFold.includes(`href="/library/${hit.slug}"`)) continue;
           checked += 1;
           if (!m[1]) missing.push(`${url} -> ${hit.slug} ("${title}")`);
         }

@@ -12,7 +12,8 @@
  * it describes.
  */
 
-import { loadAtoms } from "./content";
+import { loadAtoms, loadBridges, loadPaths, loadThreads } from "./content";
+import type { ContentStatus } from "./schema";
 
 const NUMBER_WORDS = [
   "zero",
@@ -53,4 +54,58 @@ export async function getSystemCounts(): Promise<SystemCounts> {
     principles,
     tagline: `${capitalised} laws, ${numberWord(principles)} principles`,
   };
+}
+
+export type StatusLayer = "atoms" | "guides" | "lessons" | "paths";
+
+export type StatusCounts = Record<ContentStatus, number>;
+
+export interface StatusDistribution {
+  /** Across the four published layers. */
+  total: StatusCounts;
+  byLayer: Record<StatusLayer, StatusCounts>;
+}
+
+const emptyCounts = (): StatusCounts => ({ seed: 0, draft: 0, validated: 0 });
+
+/**
+ * How many pages sit at each maturity state, in all and by layer.
+ *
+ * The schema's ladder is seed → draft → validated, and the About page has
+ * promised since the first commit that the labels are "meant honestly". On
+ * 2026-09-22 the corpus was 284 drafts, 26 seeds and 9 validated, and the
+ * split was a layer property: 200 of 205 atoms and 77 of 78 guides were
+ * drafts, while 18 of 25 lessons and 8 of 11 paths were seeds — the
+ * curriculum, the layer with the most furniture, was by the author's own
+ * field the least written (tracker entries 318 and 319). Derived here, beside
+ * the law and principle counts, so the tests that record the distribution as
+ * a dated reading count the same field the byline prints.
+ */
+export async function getStatusDistribution(): Promise<StatusDistribution> {
+  const [atoms, bridges, threads, paths] = await Promise.all([
+    loadAtoms(),
+    loadBridges(),
+    loadThreads(),
+    loadPaths(),
+  ]);
+  const layers: Record<StatusLayer, ContentStatus[]> = {
+    atoms: atoms.map((a) => a.frontmatter.status),
+    guides: bridges.map((b) => b.frontmatter.status),
+    lessons: threads.map((t) => t.frontmatter.status),
+    paths: paths.map((p) => p.frontmatter.status),
+  };
+  const total = emptyCounts();
+  const byLayer = {
+    atoms: emptyCounts(),
+    guides: emptyCounts(),
+    lessons: emptyCounts(),
+    paths: emptyCounts(),
+  };
+  for (const layer of Object.keys(layers) as StatusLayer[]) {
+    for (const status of layers[layer]) {
+      byLayer[layer][status] += 1;
+      total[status] += 1;
+    }
+  }
+  return { total, byLayer };
 }

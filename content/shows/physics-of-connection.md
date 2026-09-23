@@ -5,6 +5,7 @@ description: "Improv's discoveries about human connection, applied to your actua
 seasons:
   - label: "Season 1"
     filter: { content_type: bridge }
+show_type: episodic
 created: "2026-04-07"
 updated: "2026-04-07"
 ---

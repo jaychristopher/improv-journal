@@ -4,7 +4,7 @@ title: Editing
 type: technique
 status: draft
 tags: [techniques, intermediate, structure, show-craft, ensemble]
-aliases: ["Sweep edit", "Wipe"]
+aliases: ["Wipe"]
 links:
   - { id: scene-structure, relation: extends }
   - { id: game-of-the-scene, relation: extends }
@@ -22,7 +22,7 @@ links:
   - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-25"
+updated: "2026-09-21"
 ---
 
 Editing is how to end scenes. One of the hardest ensemble skills — it requires reading the scene from outside while respecting what's happening inside. Jimmy Carrane: "The best edits are gifts to your teammates. You're saving them from having to figure out how to end the scene."

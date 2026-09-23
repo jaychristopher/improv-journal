@@ -18,9 +18,11 @@ links:
   - { id: trust, relation: enables }
   - { id: signal, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
+  - { id: internal-computation, relation: contrasts }
+  - { id: steering, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-29"
 ---
 
 **Trains:** Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum. Viola Spolin's core exercise — taught at every school, in every first class.
@@ -51,7 +53,7 @@ It is also one of the few exercises that survives leaving the theatre intact. Mi
 
 ## Common failures
 
-Moving too fast (ego wants to be interesting). Anticipating instead of responding (planning leaks into the body). Breaking eye contact to check your own body (internal computation). Leading when you're supposed to follow (steering).
+Moving too fast (ego wants to be interesting). Anticipating instead of responding (planning leaks into the body). Breaking eye contact to check your own body (`internal-computation`). Leading when you're supposed to follow (`steering`).
 
 ## The deeper lesson
 

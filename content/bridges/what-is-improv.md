@@ -23,7 +23,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: validated
 created: "2026-04-13"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 # What Is Improv? How Unscripted Theatre Works

@@ -18,6 +18,9 @@ links:
   - { id: ref-truth-in-comedy, relation: extends }
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-napier-improvise, relation: contrasts }
+  - { id: hesitation, relation: contrasts }
+  - { id: steering, relation: contrasts }
+  - { id: wimping, relation: contrasts }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
 updated: "2026-08-23"
@@ -47,9 +50,9 @@ How quickly the scene develops without anyone trying to be clever. How the const
 ## Common failures (most to least common)
 
 1. **Performing agreement rather than receiving.** Saying the words "yes, and" but the body rejects the offer — the player is technically compliant and emotionally absent.
-2. **Questions disguised as agreement.** "Yes, and... are we going to the store?" defers creative burden back to the partner.
-3. **Pivot after yes.** Accepting then immediately changing the subject. "Yes, and speaking of boats, I once flew a plane." The test: does your addition build on THEIR specific offer, or redirect to yours?
-4. **Safe agreement.** Yes-and-ing into nothingness because the player equates agreement with low stakes. Acceptance isn't politeness — it should build pressure.
+2. **Questions disguised as agreement.** "Yes, and... are we going to the store?" defers creative burden back to the partner (`hesitation`).
+3. **Pivot after yes.** Accepting then immediately changing the subject. "Yes, and speaking of boats, I once flew a plane." The test: does your addition build on THEIR specific offer, or redirect to yours? (`steering`)
+4. **Safe agreement.** Yes-and-ing into nothingness because the player equates agreement with low stakes (`wimping`). Acceptance isn't politeness — it should build pressure.
 
 ## Variations (brief, not core to this drill)
 

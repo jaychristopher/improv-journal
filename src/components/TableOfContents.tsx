@@ -1,4 +1,18 @@
+import Link from "next/link";
+
 import type { ContentHeading } from "@/lib/headings";
+
+/**
+ * A section whose heading is a concept's title, and where the concept
+ * lives. Computed by the caller (headedConcepts in lib/headed-concepts.ts)
+ * so the list stays presentational and the pages that pass nothing render
+ * as before.
+ */
+export interface TocConcept {
+  headingId: string;
+  href: string;
+  title: string;
+}
 
 /**
  * How many top-level sections the outline shows before the rest fold away.
@@ -34,8 +48,24 @@ export const TOC_VISIBLE = 10;
  * second idiom for the same job. No JavaScript, keyboard accessible, and the
  * folded entries stay in the server-rendered html, which is what keeps the
  * outline in front of a crawler as the comment above intends.
+ *
+ * `concepts`: on the guides, a section headed with a concept's title —
+ * "2. Mirroring", "Side-Coaching: Adjust Without Stopping" — gets a small
+ * trailing link to the concept, marked `data-toc-concept`, so the reader who
+ * arrives through the contents can reach the graph from the section they
+ * came for. The outline and the concept block were 2 maps of the page that
+ * barely overlapped: 23 of 455 declared concepts head a section and 34
+ * headings name a concept the guide does not declare (tracker entry 324,
+ * 2026-09-22). The entry's own link is untouched; the mark is a second
+ * anchor after it.
  */
-export function TableOfContents({ headings }: { headings: ContentHeading[] }) {
+export function TableOfContents({
+  headings,
+  concepts = [],
+}: {
+  headings: ContentHeading[];
+  concepts?: TocConcept[];
+}) {
   if (headings.length === 0) return null;
 
   // Top-level first: the visible outline is what the page covers, and the
@@ -60,6 +90,20 @@ export function TableOfContents({ headings }: { headings: ContentHeading[] }) {
       >
         {heading.text}
       </a>
+      {concepts
+        .filter((concept) => concept.headingId === heading.id)
+        .map((concept) => (
+          <Link
+            key={concept.href}
+            href={concept.href}
+            data-toc-concept
+            aria-label={`Concept: ${concept.title}`}
+            title={`Concept: ${concept.title}`}
+            className="text-foreground/40 hover:text-foreground ml-1.5 text-xs"
+          >
+            &#8599;
+          </Link>
+        ))}
     </li>
   );
 

@@ -26,8 +26,25 @@ import {
 /** Prerender at build: the feed changes only when content does. */
 export const dynamic = "force-static";
 
-/** Most recent entries to carry. A feed is a window, not an archive. */
-const MAX_ENTRIES = 50;
+/**
+ * Most recent entries of each kind to carry. A feed is a window, not an
+ * archive — but it is a window per layer.
+ *
+ * With one window of fifty over both layers, the feed held fifty guides and
+ * no lessons. The August rewrite stamped 53 files with the same `updated`
+ * day, the sort was by that one field, so the cut fell inside the tie and
+ * which items survived was decided by the order `glob` returned the guide
+ * files — and since guides were pushed before threads, all 25 lessons fell on
+ * the far side of the cut. A batch edit could evict a whole layer without a
+ * word of content changing, and the membership could differ between machines.
+ *
+ * A window per layer means a burst of guide edits cannot push the lessons
+ * out, and the tie-break below means the same content gives the same feed
+ * everywhere. The two windows together are the fifty entries the feed always
+ * carried.
+ */
+const MAX_GUIDES = 35;
+const MAX_LESSONS = 15;
 
 function escapeXml(str: string): string {
   return str
@@ -44,30 +61,61 @@ function toRfc3339(date: string): string {
   return Number.isNaN(parsed.getTime()) ? new Date(0).toISOString() : parsed.toISOString();
 }
 
+interface FeedEntry {
+  title: string;
+  path: string;
+  summary?: string;
+  published: string;
+  updated: string;
+  category: "Guide" | "Lesson";
+}
+
+/**
+ * Newest first, with the tie broken so the order is a property of the content.
+ *
+ * `updated` alone is a tie across most of the corpus (batch stamps), so it
+ * falls back to `created`, then to the title. Nothing here depends on the
+ * order files were read.
+ */
+function compareEntries(a: FeedEntry, b: FeedEntry): number {
+  return (
+    toRfc3339(b.updated).localeCompare(toRfc3339(a.updated)) ||
+    toRfc3339(b.published).localeCompare(toRfc3339(a.published)) ||
+    a.title.localeCompare(b.title)
+  );
+}
+
+/** The most recent `max` entries of one layer, cut only after sorting. */
+function newest(entries: FeedEntry[], max: number): FeedEntry[] {
+  return entries
+    .filter((e) => e.title && e.path)
+    .sort(compareEntries)
+    .slice(0, max);
+}
+
 export async function GET() {
   const [bridges, threads] = await Promise.all([loadBridges(), loadThreads()]);
 
-  const entries = [
-    ...bridges.map((b) => ({
-      title: b.frontmatter.title,
-      path: `/${b.slug}`,
-      summary: b.frontmatter.description,
-      published: b.frontmatter.created,
-      updated: b.frontmatter.updated ?? b.frontmatter.created,
-      category: "Guide",
-    })),
-    ...threads.map((t) => ({
-      title: t.frontmatter.title,
-      path: `/threads/${t.frontmatter.id}`,
-      summary: leadParagraph(stripLeadLabel(t.content), 300),
-      published: t.frontmatter.created,
-      updated: t.frontmatter.updated ?? t.frontmatter.created,
-      category: "Lesson",
-    })),
-  ]
-    .filter((e) => e.title && e.path)
-    .sort((a, b) => toRfc3339(b.updated).localeCompare(toRfc3339(a.updated)))
-    .slice(0, MAX_ENTRIES);
+  const guides: FeedEntry[] = bridges.map((b) => ({
+    title: b.frontmatter.title,
+    path: `/${b.slug}`,
+    summary: b.frontmatter.description,
+    published: b.frontmatter.created,
+    updated: b.frontmatter.updated ?? b.frontmatter.created,
+    category: "Guide",
+  }));
+  const lessons: FeedEntry[] = threads.map((t) => ({
+    title: t.frontmatter.title,
+    path: `/threads/${t.frontmatter.id}`,
+    summary: leadParagraph(stripLeadLabel(t.content), 300),
+    published: t.frontmatter.created,
+    updated: t.frontmatter.updated ?? t.frontmatter.created,
+    category: "Lesson",
+  }));
+
+  const entries = [...newest(guides, MAX_GUIDES), ...newest(lessons, MAX_LESSONS)].sort(
+    compareEntries,
+  );
 
   const feedUpdated = entries[0] ? toRfc3339(entries[0].updated) : new Date(0).toISOString();
 

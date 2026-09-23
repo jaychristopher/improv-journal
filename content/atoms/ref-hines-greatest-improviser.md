@@ -22,7 +22,7 @@ work:
   published: "2016"
   isbn: "0982625723"
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 **Will Hines. *How to Be the Greatest Improviser on Earth.* Self-published, 2016.**

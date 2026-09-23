@@ -20,7 +20,7 @@ links:
   - { id: ref-halpern-art-by-committee, relation: extends }
 sources: []
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-08-25"
 ---
 
 A long form built by [Del Close](/del-close) with The Family at ImprovOlympic, in which one unresolved scene becomes the material for everything that follows. The rest of the piece is an interpretation of that scene rather than a continuation of it.

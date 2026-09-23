@@ -1,3 +1,5 @@
+import type { AtomType, Link } from "@/lib/schema";
+
 export interface LevelConfig {
   slug: string;
   label: string;
@@ -152,6 +154,25 @@ export const FOCUSES: FocusConfig[] = [
   },
 ];
 
+/**
+ * Whether an exercise's tags admit it to a level.
+ *
+ * A level tag admits the exercise to that level. `fundamentals` is the tag the
+ * ten August warm-up games carry (all of them also `beginner`), and until
+ * 2026-09-21 it matched every level, so the advanced pages were majority
+ * circle games — /tools/exercise-picker/advanced listed Zip Zap Zop and Big
+ * Booty under an orientation that says "Do not use these as a warm-up"
+ * (tracker entry 56). A fundamental is foundational, not universal: it reaches
+ * beginner and intermediate, whose orientation allows for warm-ups with
+ * "diminishing returns", and stops at advanced. One function for the level
+ * pages, the level/focus router, the sitemap and the client picker, so the
+ * four cannot disagree on who is offered what.
+ */
+export function matchesLevel(tags: string[], level: string): boolean {
+  if (tags.includes(level)) return true;
+  return tags.includes("fundamentals") && level !== "advanced";
+}
+
 export function getLevelBySlug(slug: string): LevelConfig | undefined {
   return LEVELS.find((l) => l.slug === slug);
 }
@@ -160,7 +181,18 @@ export function getFocusBySlug(slug: string): FocusConfig | undefined {
   return FOCUSES.find((f) => f.slug === slug);
 }
 
-// Focus tag mapping for exercises
+/**
+ * Hand-assigned focuses, for the exercises that predate the derivation below.
+ *
+ * This map is an override, not the source: an exercise listed here gets
+ * exactly these focuses (plus any focus tag in its own frontmatter), and an
+ * exercise not listed here gets its focuses derived from what it links. It
+ * used to be the only source, kept as two identical copies — here and in the
+ * client component — and covered 17 of 27 exercises: the ten games added in
+ * August were never entered, so the picker could reach them only through
+ * whatever focus tags they happened to carry. Content grows; a hand list does
+ * not, so the list is now the exception path.
+ */
 export const EXERCISE_FOCUS_MAP: Record<string, string[]> = {
   mirroring: ["presence", "ensemble", "listening"],
   "last-word-response": ["presence", "listening"],
@@ -180,3 +212,94 @@ export const EXERCISE_FOCUS_MAP: Record<string, string[]> = {
   "genre-scene": ["courage", "physicality"],
   "organic-opening-exercise": ["ensemble"],
 };
+
+/**
+ * Which focus an exercise trains when it illustrates or requires this atom.
+ *
+ * Read off the hand map above: the exercises it marks `courage` illustrate
+ * be-brave, initiation and commitment (the focus is labelled "Courage &
+ * Commitment"); the `presence` ones illustrate be-present and the bandwidth
+ * pair; `physicality` follows space-work and environment; `recovery` follows
+ * the recovery patterns and irreversibility. Atoms the hand map points in
+ * more than one direction — be-supportive, be-changeable, justification — are
+ * left out rather than guessed.
+ *
+ * Checked against the seventeen hand entries: reading `illustrates` alone
+ * reproduces or narrows the hand focus for fourteen of them (six exactly). It
+ * is the relation that says what the exercise trains. `requires` says what a
+ * player brings to it, and reading that too would call mirroring, space work
+ * and last word response "courage" because each requires commitment — so it
+ * is only consulted when an exercise illustrates nothing in this table.
+ *
+ * `listening` is not a focus of its own; the presence focus lists it as an
+ * extra tag, and the games hub folds it into presence the same way.
+ */
+export const ATOM_FOCUS_MAP: Record<string, string> = {
+  "be-present": "presence",
+  presence: "presence",
+  "cognitive-bandwidth": "presence",
+  bandwidth: "presence",
+  "active-listening": "listening",
+  ensemble: "ensemble",
+  "group-mind": "ensemble",
+  interdependence: "ensemble",
+  "emotional-truth": "emotion",
+  "be-honest": "emotion",
+  "do-feel-say": "emotion",
+  "be-brave": "courage",
+  commitment: "courage",
+  initiation: "courage",
+  spontaneity: "courage",
+  physicality: "physicality",
+  "space-work": "physicality",
+  environment: "physicality",
+  "fracture-recovery": "recovery",
+  "latency-recovery": "recovery",
+  "decay-recovery": "recovery",
+  "failing-forward": "recovery",
+  irreversibility: "recovery",
+};
+
+/** Every tag the picker reads as a focus, including the presence extras. */
+export const FOCUS_TAGS: readonly string[] = FOCUSES.flatMap((f) => [f.tag, ...f.extraTags]);
+
+function focusesLinkedBy(links: Link[], relation: Link["relation"]): string[] {
+  return links
+    .filter((link) => link.relation === relation)
+    .map((link) => ATOM_FOCUS_MAP[link.id])
+    .filter((focus): focus is string => focus !== undefined);
+}
+
+/**
+ * The focuses an exercise is offered under.
+ *
+ * One function, used by the picker page, the level pages, the level/focus
+ * router and the games hub, so there is one answer to "what does this train".
+ * Frontmatter focus tags always count. Beyond those, the hand map wins where
+ * it has an entry; otherwise the focuses come from the atoms the exercise
+ * illustrates, or, when it illustrates none in the table, the atoms it
+ * requires.
+ *
+ * The `requires` fallback is for exercises only. A format's prerequisites are
+ * not its purpose: 19 of 24 formats `require` commitment, because every show
+ * needs it, and reading that as a focus filed 13 of the 14 short forms on
+ * /improv-games under "Courage & Commitment" and seven of them — Blind Line,
+ * Bus Stop, Gorilla Theatre, Micetro, Scenes from a Hat, Superheroes, World's
+ * Worst — under courage alone (tracker entry 203, 2026-09-21). A format reads
+ * its tags, the hand map and what it `illustrates`, and a format with none of
+ * those gets no focus here; the games hub files it under its own "Show
+ * formats" facet. The picker never sees formats — every picker surface
+ * filters to `type === "exercise"` — so its results are unchanged.
+ */
+export function exerciseFocuses(
+  id: string,
+  tags: string[],
+  links: Link[] = [],
+  type: AtomType = "exercise",
+): string[] {
+  const fromTags = tags.filter((tag) => FOCUS_TAGS.includes(tag));
+  const trained = focusesLinkedBy(links, "illustrates");
+  const fallback = type === "format" ? [] : focusesLinkedBy(links, "requires");
+  const derived = EXERCISE_FOCUS_MAP[id] ?? (trained.length > 0 ? trained : fallback);
+  return [...new Set([...derived, ...fromTags])];
+}

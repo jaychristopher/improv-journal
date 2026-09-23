@@ -26,7 +26,7 @@ work:
   published: "1963"
   isbn: "081014008X"
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-27"
 ---
 
 **Viola Spolin. *Improvisation for the Theater: A Handbook of Teaching and Directing Techniques.* Northwestern University Press, 1963; third edition 1999.**

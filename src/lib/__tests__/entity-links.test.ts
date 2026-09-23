@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { loadAtoms, loadBridges, loadPaths, loadThreads } from "../content";
+
 const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
@@ -35,6 +37,14 @@ function personTargets(): string[] {
  * links Viola Spolin from its opening pointer and again from the paragraph on
  * Hull House, both written by hand — so two is allowed and three means the
  * per-page flag has stopped working.
+ *
+ * The transcript fold (2026-09-21) was linked by a separate pass that could
+ * not see the body's hrefs, so it could add one more honest link per person,
+ * and the count was taken on the page with the fold removed. Since
+ * 2026-09-22 the fold receives the body's link ledger (tracker entry 267,
+ * `autolinkTranscript`'s `alreadyLinked`) and unwraps any anchor to a target
+ * the body links, so the whole page is counted: a person the fold links is
+ * one the body did not, and the ceiling of two holds across both.
  */
 describe("person auto-linking", () => {
   it.runIf(built)("links each person from many pages, at most once each", () => {
@@ -77,5 +87,116 @@ describe("person auto-linking", () => {
     // linker that has stopped firing without pinning the exact content.
     const best = Math.max(...counts.values());
     expect(best).toBeGreaterThan(20);
+  });
+});
+
+/** Anchors to `url` whose text is exactly `text`, whatever other attributes the anchor carries. */
+function anchorsTo(html: string, url: string, text: string): number {
+  return [...html.matchAll(new RegExp(`<a href="${url}"[^>]*>([^<]*)</a>`, "g"))].filter(
+    (m) => m[1] === text,
+  ).length;
+}
+
+/**
+ * The 5 schools' inbound from the prose, and the hand-off up (tracker entry
+ * 331, 2026-09-22).
+ *
+ * The full name of a founder with a biography guide routes to the guide,
+ * because the guide is the keyword page; measured on the rendered corpus of
+ * 319 pages that left /traditions/spolin with 5 body links against
+ * /traditions/johnstone's 128, since every "Viola Spolin" and "Spolin" went
+ * to the person and the school has no other name in the prose. The school
+ * rule in linkEntities links the first lone surname after the full name to
+ * the school. Measured when it shipped: johnstone 128 → 128, ucb 87 → 87,
+ * annoyance 72 → 72, close 40 → 43, spolin 5 → 25; /viola-spolin 69 and
+ * /del-close 48, unchanged. The floors sit just under those, as dated
+ * readings rather than targets — a school that drops under its floor means
+ * a name has stopped routing, which is the failure this file exists for.
+ *
+ * Read from the loaders rather than the build so it runs on every test run:
+ * the loaders render the same html the build ships.
+ */
+describe("the schools' inbound from the prose", () => {
+  const SCHOOL_FLOORS: [string, number][] = [
+    ["/traditions/johnstone", 120],
+    ["/traditions/ucb", 80],
+    ["/traditions/annoyance", 65],
+    ["/traditions/close", 35],
+    // 25 on 2026-09-22; 5 before the school rule.
+    ["/traditions/spolin", 20],
+  ];
+
+  it("links each school from the corpus, at or above its dated floor", async () => {
+    const [atoms, bridges, threads, paths] = await Promise.all([
+      loadAtoms(),
+      loadBridges(),
+      loadThreads(),
+      loadPaths(),
+    ]);
+    const docs = [...atoms, ...bridges, ...threads, ...paths];
+    // Guard the guard: 319 pages on 2026-09-22.
+    expect(docs.length).toBeGreaterThanOrEqual(300);
+
+    for (const [url, floor] of SCHOOL_FLOORS) {
+      const pages = docs.filter((d) => d.html.includes(`href="${url}"`)).length;
+      expect(pages, `${url} inbound pages`).toBeGreaterThanOrEqual(floor);
+    }
+    // The guides keep their inbound: the school rule adds a link, it does
+    // not move one. 68 and 48 pages on 2026-09-22.
+    expect(
+      docs.filter((d) => d.html.includes('href="/viola-spolin"')).length,
+    ).toBeGreaterThanOrEqual(65);
+    expect(docs.filter((d) => d.html.includes('href="/del-close"')).length).toBeGreaterThanOrEqual(
+      45,
+    );
+  });
+
+  it("links the guide at the full name and the school at the next surname, once each", async () => {
+    const atoms = await loadAtoms();
+    // Mirroring is Spolin's core exercise: its Trains line says "Viola
+    // Spolin" and the peak stage says "Spolin called this…". Before the
+    // rule the second name linked nothing and the page reached the school
+    // only through its sidebar.
+    const mirroring = atoms.find((a) => a.slug === "mirroring");
+    expect(mirroring).toBeDefined();
+    const html = mirroring!.html;
+
+    expect(anchorsTo(html, "/viola-spolin", "Viola Spolin")).toBe(1);
+    expect(anchorsTo(html, "/traditions/spolin", "Spolin")).toBe(1);
+    expect(html.indexOf('href="/viola-spolin"')).toBeLessThan(
+      html.indexOf('href="/traditions/spolin"'),
+    );
+    // Once per target: the school link is the only anchor to the school.
+    expect([...html.matchAll(/href="\/traditions\/spolin"/g)].length).toBe(1);
+
+    // And the shape that must never appear: a surname linked out of the
+    // middle of a later, unlinked full name. The handle's lookbehind is what
+    // prevents it; this is the population it protects.
+    const split = atoms.filter(
+      (a) =>
+        /Viola <a href="\/traditions\/spolin"/.test(a.html) ||
+        /Del <a href="\/traditions\/close"/.test(a.html),
+    );
+    expect(split.map((a) => a.slug)).toEqual([]);
+  });
+
+  it("links Close's school only through the possessive after the full name", async () => {
+    const [atoms, bridges, threads] = await Promise.all([
+      loadAtoms(),
+      loadBridges(),
+      loadThreads(),
+    ]);
+    const docs = [...atoms, ...bridges, ...threads];
+    // "Close" alone is an English word; the only surname anchor the school
+    // rule writes for him is "Close's", and only on a page that says "Del
+    // Close". 2 pages on 2026-09-22 (failing-forward, what-is-improv); the
+    // other 40-odd reach the school through "iO".
+    const possessive = docs.filter((d) => anchorsTo(d.html, "/traditions/close", "Close's") > 0);
+    expect(possessive.length).toBeGreaterThanOrEqual(2);
+    for (const d of possessive) {
+      expect(d.content, `${d.slug} says Del Close`).toMatch(/\bDel Close\b/);
+    }
+    const bare = docs.filter((d) => anchorsTo(d.html, "/traditions/close", "Close") > 0);
+    expect(bare.map((d) => d.slug)).toEqual([]);
   });
 });

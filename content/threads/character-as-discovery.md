@@ -5,7 +5,7 @@ status: seed
 atoms: [physicality, status-dynamics, character-through-game, playing-against-type, emotional-range, character, status, point-of-view]
 tags: [character, advanced, mastery, technique]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Most improv characters are built from the neck up — a voice, an attitude, maybe an occupation. Mastery-level character work starts from the body, the game, and the relationship. The character surprises the performer as much as the audience.

@@ -205,6 +205,17 @@ We've already proven this works for video #1:
 
 **Source:** Ahrefs Keywords Explorer, US, 2026-04-25.
 
+**Read this before acting on the numbers below (noted 2026-09-22).** There is a second,
+later Ahrefs reading of these same terms: the guides' frontmatter, `serp_checked: 2026-08-22`.
+34 of the 35 planned videos target a keyword a guide declares, and on **26 of those 34 the
+two volumes differ** — "how to be more confident" is 4,400 here and 8,000 there, "psychological
+safety" 11,000 here and 16,000 there, "how to deal with rejection" 1,700 here and 2,000 there.
+Both readings came from Ahrefs; the guides' is the more recent one. Every table in this
+document, including the production order in section 8, is scored on the April figures and has
+not been re-scored — re-scoring needs a fresh Ahrefs pull, which is the owner's job, not a
+session's. `youtube-plan.test.ts` holds the comparison as a dated reading, so the next pull
+has the list. Until then, treat a volume here as April's answer, not today's.
+
 **Method:** Pulled SERP features for ~50 target keywords to identify which surface YouTube videos in Google search results. The `video_th` SERP feature signals that video content ranks for that query — confirming YouTube is a viable channel.
 
 ### Headline finding
@@ -401,61 +412,61 @@ Format: 8-12 min talking head + slides/whiteboard. One per bridge with YouTube r
 
 | # | Title | Target keyword | Vol | KD | Bridge | Status |
 |---|-------|---------------|-----|-----|--------|--------|
-| L1 | How to Stop Overthinking — The Bandwidth Problem (What Improv Teaches) | how to stop overthinking | 16,000 | 15 | how-to-stop-overthinking | 🟢 |
-| L2 | How to Be Funny — The Improv Secret to Quick Wit | how to be funny | 6,600 | 0 | how-to-be-funny | 🟡 |
-| L3 | How to Stop Caring What People Think — The Performer's Secret | how to stop caring what people think | 2,400 | 4 | how-to-stop-caring-what-people-think | 🟡 |
-| L4 | How to Deal with Rejection — The Improv Philosophy of Failing Forward | how to deal with rejection | 1,700 | 0 | how-to-deal-with-rejection | 🟡 |
-| L5 | How to Stop People Pleasing — Why It's Self-Blocking | how to stop people pleasing | 1,200 | 1 | how-to-stop-people-pleasing | 🟡 |
-| L6 | How to Be Witty — The Improv Method for Sharp Responses | how to be witty | 700 | 0 | how-to-be-witty | 🟡 |
-| L7 | How to Be Less Awkward — It's an Attention Problem, Not a Trait | how to be less awkward | 700 | 1 | how-to-be-less-awkward | 🟡 |
-| L8 | How to Let Go of Control — What Improv Teaches About Surrender | how to let go of control | 350 | 2 | how-to-let-go-of-control | 🟡 |
-| L9 | How to Be Vulnerable Without Getting Destroyed | how to be vulnerable | 300 | 9 | how-to-be-vulnerable | 🟡 |
-| L10 | Fear of Public Speaking — Why It's the Same as Peak Performance | fear of public speaking | 3,300 | 50 | fear-of-public-speaking | 🟡 |
-| L11 | Stage Fright Is Not Your Enemy — The Reframe That Changes Everything | stage fright | 6,200 | 38 | stage-fright | 🟡 |
-| L12 | How to Be More Confident — The Status Approach | how to be more confident | 4,400 | 16 | how-to-be-more-confident | 🟡 |
+| L1 | How to Stop Overthinking — The Bandwidth Problem (What Improv Teaches) | how to stop overthinking | 16,000 | 15 | [how-to-stop-overthinking](../content/bridges/how-to-stop-overthinking.md) | 🟢 |
+| L2 | How to Be Funny — The Improv Secret to Quick Wit | how to be funny | 6,600 | 0 | [how-to-be-funny](../content/bridges/how-to-be-funny.md) | 🟡 |
+| L3 | How to Stop Caring What People Think — The Performer's Secret | how to stop caring what people think | 2,400 | 4 | [how-to-stop-caring-what-people-think](../content/bridges/how-to-stop-caring-what-people-think.md) | 🟡 |
+| L4 | How to Deal with Rejection — The Improv Philosophy of Failing Forward | how to deal with rejection | 1,700 | 0 | [how-to-deal-with-rejection](../content/bridges/how-to-deal-with-rejection.md) | 🟡 |
+| L5 | How to Stop People Pleasing — Why It's Self-Blocking | how to stop people pleasing | 1,200 | 1 | [how-to-stop-people-pleasing](../content/bridges/how-to-stop-people-pleasing.md) | 🟡 |
+| L6 | How to Be Witty — The Improv Method for Sharp Responses | how to be witty | 700 | 0 | [how-to-be-witty](../content/bridges/how-to-be-witty.md) | 🟡 |
+| L7 | How to Be Less Awkward — It's an Attention Problem, Not a Trait | how to be less awkward | 700 | 1 | [how-to-be-less-awkward](../content/bridges/how-to-be-less-awkward.md) | 🟡 |
+| L8 | How to Let Go of Control — What Improv Teaches About Surrender | how to let go of control | 350 | 2 | [how-to-let-go-of-control](../content/bridges/how-to-let-go-of-control.md) | 🟡 |
+| L9 | How to Be Vulnerable Without Getting Destroyed | how to be vulnerable | 300 | 9 | [how-to-be-vulnerable](../content/bridges/how-to-be-vulnerable.md) | 🟡 |
+| L10 | Fear of Public Speaking — Why It's the Same as Peak Performance | fear of public speaking | 3,300 | 50 | [fear-of-public-speaking](../content/bridges/fear-of-public-speaking.md) | 🟡 |
+| L11 | Stage Fright Is Not Your Enemy — The Reframe That Changes Everything | stage fright | 6,200 | 38 | [stage-fright](../content/bridges/stage-fright.md) | 🟡 |
+| L12 | How to Be More Confident — The Status Approach | how to be more confident | 4,400 | 16 | [how-to-be-more-confident](../content/bridges/how-to-be-more-confident.md) | 🟡 |
 
 #### Pillar P2: Better Conversations (10 videos)
 
 | # | Title | Target keyword | Vol | KD | Bridge | Status |
 |---|-------|---------------|-----|-----|--------|--------|
-| L13 | How to Read Body Language — Why Most Advice Gets It Wrong | how to read body language | 2,100 | 2 | how-to-read-body-language | 🟡 |
-| L14 | How to Be a Better Listener — Three Modes of Attention | how to be a better listener | 1,100 | 2 | how-to-be-a-good-listener | 🟡 |
-| L15 | Types of Listening — The Improv Framework | types of listening | 800 | 7 | types-of-listening | 🟡 |
-| L16 | How to Be a Better Conversationalist — Receive, Build, Commit | how to be a better conversationalist | 450 | 0 | how-to-be-a-better-conversationalist | 🟡 |
-| L17 | How to Have Difficult Conversations — Without Scripts | how to have difficult conversations | 500 | 13 | how-to-have-difficult-conversations | 🟡 |
-| L18 | How to Make Small Talk — The Improv Approach | how to make small talk | 2,200 | 41 | how-to-make-small-talk | 🟡 |
-| L19 | How to Deal with Conflict — The Acceptance Paradox | how to deal with conflict | 350 | 14 | how-to-deal-with-conflict | 🟡 |
+| L13 | How to Read Body Language — Why Most Advice Gets It Wrong | how to read body language | 2,100 | 2 | [how-to-read-body-language](../content/bridges/how-to-read-body-language.md) | 🟡 |
+| L14 | How to Be a Better Listener — Three Modes of Attention | how to be a better listener | 1,100 | 2 | [how-to-be-a-good-listener](../content/bridges/how-to-be-a-good-listener.md) | 🟡 |
+| L15 | Types of Listening — The Improv Framework | types of listening | 800 | 7 | [types-of-listening](../content/bridges/types-of-listening.md) | 🟡 |
+| L16 | How to Be a Better Conversationalist — Receive, Build, Commit | how to be a better conversationalist | 450 | 0 | [how-to-keep-a-conversation-going](../content/bridges/how-to-keep-a-conversation-going.md) | 🟡 |
+| L17 | How to Have Difficult Conversations — Without Scripts | how to have difficult conversations | 500 | 13 | [how-to-have-difficult-conversations](../content/bridges/how-to-have-difficult-conversations.md) | 🟡 |
+| L18 | How to Make Small Talk — The Improv Approach | how to make small talk | 2,200 | 41 | [how-to-make-small-talk](../content/bridges/how-to-make-small-talk.md) | 🟡 |
+| L19 | How to Deal with Conflict — The Acceptance Paradox | how to deal with conflict | 350 | 14 | [how-to-deal-with-conflict](../content/bridges/how-to-deal-with-conflict.md) | 🟡 |
 | L20 | Active Listening — Why You're Doing It Wrong | active listening | 41,000 | 66 | active-listening | 🟡 |
-| L21 | Interpersonal Communication Skills — What 60 Years of Improv Reveals | interpersonal communication skills | 3,400 | 24 | interpersonal-communication-skills | 🟡 |
-| L22 | How to Be More Charismatic — The Improv Framework | how to be more charismatic | 700 | 6 | how-to-be-more-charismatic | 🟡 |
+| L21 | Interpersonal Communication Skills — What 60 Years of Improv Reveals | interpersonal communication skills | 3,400 | 24 | [people-skills](../content/bridges/people-skills.md) | 🟡 |
+| L22 | How to Be More Charismatic — The Improv Framework | how to be more charismatic | 700 | 6 | [how-to-be-more-charismatic](../content/bridges/how-to-be-more-charismatic.md) | 🟡 |
 
 #### Pillar P3: Team Dynamics (8 videos)
 
 | # | Title | Target keyword | Vol | KD | Bridge | Status |
 |---|-------|---------------|-----|-----|--------|--------|
-| L23 | Team Building Activities That Actually Work (None Are Trust Falls) | team bonding activities | 5,400 | 11 | team-bonding-activities | 🟢 |
-| L24 | Group Dynamics — What Improv Ensembles Know About How Groups Work | group dynamics | 3,700 | 6 | group-dynamics | 🟡 |
-| L25 | Emotional Safety — How Improv Ensembles Build Trust | emotional safety | 2,300 | 12 | emotional-safety | 🟡 |
-| L26 | Psychological Safety — The Physics of Trust | psychological safety | 11,000 | 75 | psychological-safety | 🟡 |
-| L27 | Collaboration Skills — Working Together Like Ensembles | collaboration skills | 2,400 | 22 | collaboration-skills | 🟡 |
-| L28 | How to Read the Room — The Skill Improv Performers Train | how to read the room | 200 | 0 | how-to-read-the-room | 🟡 |
-| L29 | How to Give Feedback That Actually Changes Behavior | how to give feedback | 600 | 26 | how-to-give-feedback | 🟡 |
-| L30 | Team Building Questions That Actually Build Trust | team building questions | 2,900 | 40 | team-building-questions | 🟡 |
+| L23 | Team Building Activities That Actually Work (None Are Trust Falls) | team bonding activities | 5,400 | 11 | [team-building-activities](../content/bridges/team-building-activities.md) | 🟢 |
+| L24 | Group Dynamics — What Improv Ensembles Know About How Groups Work | group dynamics | 3,700 | 6 | [team-dynamics](../content/bridges/team-dynamics.md) | 🟡 |
+| L25 | Emotional Safety — How Improv Ensembles Build Trust | emotional safety | 2,300 | 12 | [emotional-safety](../content/bridges/emotional-safety.md) | 🟡 |
+| L26 | Psychological Safety — The Physics of Trust | psychological safety | 11,000 | 75 | [psychological-safety](../content/bridges/psychological-safety.md) | 🟡 |
+| L27 | Collaboration Skills — Working Together Like Ensembles | collaboration skills | 2,400 | 22 | [collaboration-skills](../content/bridges/collaboration-skills.md) | 🟡 |
+| L28 | How to Read the Room — The Skill Improv Performers Train | how to read the room | 200 | 0 | [how-to-read-the-room](../content/bridges/how-to-read-the-room.md) | 🟡 |
+| L29 | How to Give Feedback That Actually Changes Behavior | how to give feedback | 600 | 26 | [how-to-give-feedback](../content/bridges/how-to-give-feedback.md) | 🟡 |
+| L30 | Team Building Questions That Actually Build Trust | team building questions | 2,900 | 40 | [team-building-questions](../content/bridges/team-building-questions.md) | 🟡 |
 
 #### Pillar P4: Improv Practice (4 videos)
 
 | # | Title | Target keyword | Vol | KD | Bridge | Status |
 |---|-------|---------------|-----|-----|--------|--------|
-| L31 | The Rules of Improv (And Why Half of Them Are Wrong) | rules of improv | 450 | 7 | rules-of-improv | 🟢 |
-| L32 | What Is Improv? It's Not What You Think | what is improv | 1,600 | 9 | what-is-improv | 🟡 |
-| L33 | How to Get Better at Improv — A Practitioner's Guide | how to get better at improv | 150 | 0 | how-to-get-better-at-improv | 🟡 |
-| L34 | How to Be More Assertive — The Status Secret from Improv | how to be more assertive | 2,000 | 0 | how-to-be-more-assertive | 🟡 |
+| L31 | The Rules of Improv (And Why Half of Them Are Wrong) | rules of improv | 450 | 7 | [rules-of-improv](../content/bridges/rules-of-improv.md) | 🟢 |
+| L32 | What Is Improv? It's Not What You Think | what is improv | 1,600 | 9 | [what-is-improv](../content/bridges/what-is-improv.md) | 🟡 |
+| L33 | How to Get Better at Improv — A Practitioner's Guide | how to get better at improv | 150 | 0 | [how-to-get-better-at-improv](../content/bridges/how-to-get-better-at-improv.md) | 🟡 |
+| L34 | How to Be More Assertive — The Status Secret from Improv | how to be more assertive | 2,000 | 0 | [how-to-be-more-assertive](../content/bridges/how-to-be-more-assertive.md) | 🟡 |
 
 #### Pillar P5: Improv Theory (1 video)
 
 | # | Title | Target keyword | Vol | KD | Bridge | Status |
 |---|-------|---------------|-----|-----|--------|--------|
-| L35 | Improv Theory — The Five Traditions That Shaped Modern Improvisation | improv theory | 50 | — | improv-theory | 🟡 |
+| L35 | Improv Theory — The Five Traditions That Shaped Modern Improvisation | improv theory | 50 | — | [improv-theory](../content/bridges/improv-theory.md) | 🟡 |
 
 ### 7B. Tutorial / Demo Videos (17 videos)
 
@@ -594,6 +605,18 @@ After 90 days: 67 videos uploaded, channel established as the educational improv
 | 28 | **L29: How to Give Feedback** | 4 | 5 | 3 | 4 | 1 | **17** | Cross-pillar (teams + teacher). |
 | 29 | **L21: Interpersonal Communication Skills** | 6 | 5 | 3 | 4 | 1 | **19** | High volume, partial KD. |
 | 30 | **L19: How to Deal with Conflict** | 3 | 7 | 3 | 4 | 1 | **18** | Cross-pillar (life + teams). |
+
+**Measured, not scored (2026-09-22).** The table above is a forecast; the channel has
+produced exactly one measured link between a video and the site. L23's bridge page
+(`/team-bonding-activities`) took **14 GSC impressions** in the video's 7-day window, in
+which 9 of the top 10 YouTube search terms were variants of its primary keyword. L1's 24h
+reading was 187 impressions, 6.4% CTR, 78 views and 3:12 AVD (74% of 4:18). Those are the
+only reader-side numbers in the repository. They are recorded, per SOP 17, in
+[`docs/youtube-week-1/measurement-L1.md`](./youtube-week-1/measurement-L1.md),
+[`measurement-L23.md`](./youtube-week-1/measurement-L23.md) and
+[`measurement-L31.md`](./youtube-week-1/measurement-L31.md) — which is where the next
+video's figures belong, so the two can be compared. No score below has been revised on
+them: n=1 is not a re-ranking.
 
 ### What "Make Next" Actually Looks Like
 

@@ -21,7 +21,7 @@ links:
   - { id: what-are-you-doing, relation: enables }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 Space Work is the practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.

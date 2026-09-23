@@ -3,7 +3,6 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-// @ts-expect-error - .mjs build script, no types
 import { mergeDurations, preservedKeys } from "../../../scripts/generate-durations.mjs";
 
 /**

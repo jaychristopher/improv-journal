@@ -14,7 +14,7 @@ entry_atoms: [giving-notes, side-coaching, safety-in-the-room, be-honest, be-sup
 entry_path: teaching-improv
 status: draft
 created: "2026-04-07"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 # How to Give Feedback That Actually Changes Behavior

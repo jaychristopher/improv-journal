@@ -1,33 +1,55 @@
 #!/usr/bin/env node
 /**
- * Bring each content file's `updated` date in line with when it actually changed.
+ * Bring each content file's `updated` date in line with when its prose last
+ * changed.
  *
- * The sitemap sets `lastmod` from `updated ?? created`, and Google uses
- * `lastmod` to decide what is worth recrawling. 184 of 276 content files were
- * claiming nothing had changed since March or April — including all 144 atoms
- * that were rewritten with real heading structure, anchor ids, contents lists
- * and DefinedTerm markup. The pages had changed substantially and were telling
- * every crawler they had not, so there was no reason to come back and look.
+ * The sitemap sets `lastmod` from `updated ?? created`, ArticleJsonLd emits it
+ * as dateModified, and every article shows it as "Updated 24 August 2026".
+ * Nothing bumps it by hand, so it drifts: 184 of 276 content files once
+ * claimed nothing had changed since March or April after every atom had been
+ * rewritten (novel-insights 188). The date comes from git rather than from
+ * anyone remembering, which is what drifted in the first place.
  *
- * The date comes from git rather than from anyone remembering to bump it,
- * which is what drifted in the first place.
+ * The rule: `updated` is the date of the newest commit that changed a prose
+ * line of the file. A changed line is prose unless it is the `updated:` line
+ * itself, a markdown image line (`![alt](src)`), a standalone italic line
+ * (`*...*` — a figure caption or an italic footer), or blank. The first
+ * exclusion stops this script's own commit from counting as a change and
+ * re-dating every file to the sync date, forever. The other three stop a
+ * figure from re-dating the words: the diagram programme of 29–30 August added
+ * an image and a caption to 194 atoms whose prose was finished on the 24th,
+ * and under "any body line" 220 of 308 pages dated the illustration rather
+ * than the argument (novel-insights 239). The rule lives in
+ * `src/lib/content-history.mjs`, and `updated-matches-history.test.ts` walks
+ * the same history with it.
  *
- * Safe to re-run. It ignores commits that only touched the `updated:` line —
- * without that, running it after its own commit would mark every file as
- * changed today, forever.
+ * The date moves in both directions. An earlier version refused to move one
+ * backwards, on the theory that an author who set a later date meant it; the
+ * 220 later dates of entry 239 are what that produced, and none of them was
+ * set by an author. The field is derived, and git is what it is derived from.
+ * It is never set before `created`, since content-dates forbids that.
  *
- * Run: npm run content:dates -- [--dry-run]
+ * Files with uncommitted edits are skipped by default: their settled date is
+ * the commit's, which has not happened. `--include-dirty` processes the ones
+ * whose uncommitted edits are not prose under the rule — a working tree full
+ * of re-dated `updated:` lines, say — still touching only the `updated:`
+ * line. A file with uncommitted prose changes is skipped either way and
+ * counted, since the date it will settle on is the commit's; re-run after
+ * committing, and the test will say so if that is forgotten.
+ *
+ * Safe to re-run.
+ *
+ * Run: npm run content:dates -- [--dry-run] [--include-dirty]
  */
-import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
+
+import { lastProseChanges, uncommittedProseChanges } from "../src/lib/content-history.mjs";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const dryRun = process.argv.includes("--dry-run");
-
-function git(args) {
-  return execFileSync("git", args, { encoding: "utf-8", maxBuffer: 32 * 1024 * 1024 });
-}
+const includeDirty = process.argv.includes("--include-dirty");
 
 function walk(dir) {
   const out = [];
@@ -39,71 +61,72 @@ function walk(dir) {
   return out;
 }
 
+const toRel = (file) => path.relative(process.cwd(), file).split(path.sep).join("/");
+
 /** Files with uncommitted edits have no settled date yet. */
 const dirty = new Set(
-  git(["status", "--porcelain", "--", "content"])
+  execFileSync("git", ["status", "--porcelain", "--", "content"], { encoding: "utf-8" })
     .split("\n")
     .map((l) => l.slice(3).trim().replace(/^"|"$/g, ""))
-    .filter(Boolean)
-    .map((p) => path.resolve(p)),
+    .filter(Boolean),
 );
 
-/**
- * The last commit that changed something other than the `updated:` line.
- */
-function lastRealChange(file) {
-  const rel = path.relative(process.cwd(), file).split(path.sep).join("/");
-  const log = git(["log", "--format=%H %ad", "--date=short", "--", rel]).trim();
-  if (!log) return null;
-
-  for (const line of log.split("\n")) {
-    const [sha, date] = line.split(" ");
-    const diff = git(["show", "--unified=0", "--format=", sha, "--", rel]);
-    const changed = diff
-      .split("\n")
-      .filter((l) => /^[+-]/.test(l) && !/^(\+\+\+|---)/.test(l))
-      .map((l) => l.slice(1).trim());
-    if (changed.some((l) => !/^updated:/.test(l))) return date;
-  }
-  return null;
-}
+const history = lastProseChanges({ dirs: ["content"] });
+const pendingProse = includeDirty ? uncommittedProseChanges({ dirs: ["content"] }) : new Set();
 
 const files = walk(CONTENT_DIR).sort();
 let changed = 0;
+let earlier = 0;
+let later = 0;
 let skipped = 0;
+let pending = 0;
 
 for (const file of files) {
-  if (dirty.has(path.resolve(file))) {
-    skipped += 1;
-    continue;
+  const rel = toRel(file);
+  if (dirty.has(rel)) {
+    if (!includeDirty) {
+      skipped += 1;
+      continue;
+    }
+    if (pendingProse.has(rel)) {
+      pending += 1;
+      continue;
+    }
   }
 
-  const date = lastRealChange(file);
-  if (!date) continue;
+  const last = history.get(rel);
+  if (!last) continue;
 
   const raw = fs.readFileSync(file, "utf-8");
   const fm = /^---\n([\s\S]*?)\n---/.exec(raw);
   if (!fm) continue;
 
+  const created = /^created:\s*"?([0-9-]+)"?/m.exec(fm[1])?.[1];
   const current = /^updated:\s*"?([0-9-]+)"?/m.exec(fm[1])?.[1];
-  // Never move a date backwards: an author who set a later one meant it.
-  if (current && current >= date) continue;
+  const date = created && last.date < created ? created : last.date;
+  if (current === date) continue;
 
   let next;
   if (current) {
     next = raw.replace(/^updated:\s*"?[0-9-]+"?/m, `updated: "${date}"`);
-  } else if (/^created:/m.test(fm[1])) {
+  } else if (created) {
     next = raw.replace(/^(created:\s*"?[0-9-]+"?)/m, `$1\nupdated: "${date}"`);
   } else {
     continue;
   }
 
-  console.log(`  ${current ?? "(none)"} -> ${date}  ${path.relative(process.cwd(), file)}`);
+  console.log(`  ${current ?? "(none)"} -> ${date}  ${rel}`);
   if (!dryRun) fs.writeFileSync(file, next, "utf-8");
   changed += 1;
+  if (current && date < current) earlier += 1;
+  else later += 1;
 }
 
 console.log(
   `\n${dryRun ? "would update" : "updated"} ${changed} of ${files.length} files` +
-    (skipped ? `, skipped ${skipped} with uncommitted edits` : ""),
+    ` (${earlier} earlier, ${later} later)` +
+    (skipped ? `, skipped ${skipped} with uncommitted edits` : "") +
+    (pending
+      ? `, skipped ${pending} with uncommitted prose changes (re-run after committing)`
+      : ""),
 );

@@ -5,7 +5,7 @@ status: seed
 atoms: [systemic-collapse-modes, systemic-health-indicators, internal-computation, performing-cleverness, hesitation, bulldozing, steering, overcomplication, judgment, fear-of-failure]
 tags: [diagnostics, antipatterns, self-coaching, systems-thinking]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 You know the scene didn't work. You can feel it. But when someone asks "what happened?" all you can say is "I don't know, it just... died." That feeling — knowing something failed without being able to name it — is the vocabulary gap that keeps intermediate improvisers stuck.

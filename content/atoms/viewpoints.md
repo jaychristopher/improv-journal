@@ -4,6 +4,7 @@ title: Viewpoints
 type: technique
 status: draft
 tags: [techniques, physicality, ensemble, movement, composition, training]
+sameAs: ["https://en.wikipedia.org/wiki/Viewpoints"]
 links:
   - { id: ref-viewpoints-bogart-landau, relation: illustrates }
   - { id: physicality, relation: extends }
@@ -15,7 +16,7 @@ links:
   - { id: ref-overlie-standing-in-space, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Viewpoints is a movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture, architecture, spatial relationship and topography — so that staging arrives by noticing rather than by deciding.

@@ -2,7 +2,10 @@ import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
 
+import { loadAtoms } from "../content";
 import {
+  categoriesNaming,
+  conceptGloss,
   PROMPT_BANK,
   PROMPT_CATEGORIES,
   PROMPT_USE_CASES,
@@ -164,5 +167,67 @@ describe("the prompt bank", () => {
     expect(quoted).toEqual([]);
     const unpunctuated = lines.filter((p) => !/[.!?…]$/.test(p.text)).map((p) => p.text);
     expect(unpunctuated).toEqual([]);
+  });
+});
+
+/**
+ * The categories are concepts under other names — a relationship prompt is
+ * `relationship`, a location is `environment` and `space-work` — and until
+ * the field existed the generator linked its categories to the guide's
+ * section anchors and to no concept, drill or lesson (tracker entry 332,
+ * 2026-09-22). The field is what the generator's concept line and the
+ * concept pages' "Try it" line both read, so a misspelt id here would
+ * silently drop both.
+ */
+describe("the categories' concepts", () => {
+  it("name real atoms, every one", async () => {
+    const atoms = await loadAtoms();
+    expect(atoms.length).toBeGreaterThanOrEqual(200);
+    const ids = new Set(atoms.map((a) => a.frontmatter.id));
+    const missing = PROMPT_CATEGORIES.flatMap((c) =>
+      c.concepts.filter((id) => !ids.has(id)).map((id) => `${c.id}: ${id}`),
+    );
+    expect(missing).toEqual([]);
+  });
+
+  it("cover every category but the shared task, which is a drill idea and not a concept", () => {
+    const without = PROMPT_CATEGORIES.filter((c) => c.concepts.length === 0).map((c) => c.id);
+    expect(without).toEqual(["task"]);
+    // 7 concepts across 5 categories on 2026-09-22: the map in entry 332.
+    const declared = new Set(PROMPT_CATEGORIES.flatMap((c) => c.concepts));
+    expect(declared.size).toBeGreaterThanOrEqual(7);
+  });
+
+  it("give the first line its drill, and the drill is an exercise the graph has", async () => {
+    const firstLine = PROMPT_CATEGORIES.find((c) => c.id === "first-line");
+    expect(firstLine?.drill).toBe("first-line-drill");
+    const atoms = await loadAtoms();
+    const drills = new Set(
+      atoms.filter((a) => a.frontmatter.type === "exercise").map((a) => a.frontmatter.id),
+    );
+    for (const c of PROMPT_CATEGORIES) {
+      if (c.drill) expect(drills.has(c.drill), `${c.id}: ${c.drill}`).toBe(true);
+    }
+  });
+
+  it("are looked up from the concept's side too, so a concept page can find its category", () => {
+    expect(categoriesNaming("want").map((c) => c.id)).toEqual(["situation"]);
+    expect(categoriesNaming("space-work").map((c) => c.id)).toEqual(["location"]);
+    expect(categoriesNaming("commitment")).toEqual([]);
+  });
+
+  it("read the advice as the gloss: the last sentence of howToUse, lower-cased to follow a dash", () => {
+    for (const c of PROMPT_CATEGORIES) {
+      const gloss = conceptGloss(c.howToUse);
+      expect(gloss.length, c.id).toBeGreaterThan(10);
+      expect(c.howToUse.toLowerCase(), c.id).toContain(gloss.toLowerCase());
+      expect(gloss.charAt(0), c.id).toBe(gloss.charAt(0).toLowerCase());
+      expect(gloss, c.id).toMatch(/[.!?]$/);
+    }
+    expect(
+      conceptGloss(
+        "Two people with something already between them. Play what is between them, not the label.",
+      ),
+    ).toBe("play what is between them, not the label.");
   });
 });

@@ -204,7 +204,16 @@ const MAX_SHARED_WITH_ROUTE = 14;
  * into the category prose.
  */
 function fileProse(source: string, isJsx: boolean): string {
-  const text = source.replace(/`/g, " ").replace(/^import[\s\S]*?;$/gm, " ");
+  // A markdown link's target is not prose. The JSX branch below drops
+  // `href="…"` for the same reason; the .ts branch had no equivalent, so a
+  // module holding markdown — games-hub-copy.ts since 2026-09-22 — matched a
+  // guide on the words inside shared urls ("practice exercises one word
+  // story") rather than on anything a reader reads. 26 such runs against
+  // improv-games-for-kids, 0 after.
+  const text = source
+    .replace(/`/g, " ")
+    .replace(/^import[\s\S]*?;$/gm, " ")
+    .replace(/\]\((?:[^)\s]+)\)/g, "] ");
   if (!isJsx) return text.replace(/\s+/g, " ");
 
   const attrs = text.replace(/className="[^"]*"/g, " ").replace(/href="[^"]*"/g, " ");
@@ -235,7 +244,15 @@ function fileProse(source: string, isJsx: boolean): string {
  * blind spot as app routes, one directory over. Any file that holds sentences
  * belongs here, wherever it happens to live.
  */
-const PROSE_OUTSIDE_ROUTES = [path.join("src", "lib", "guide-categories.ts")];
+// Any file that holds sentences belongs here, wherever it happens to live:
+// games-hub-copy.ts joined on 2026-09-22, when the games hub's group notes and
+// its question section moved out of the route file to clear the prose ceiling
+// (tracker entry 337's ceiling work). Outside this list the hub's answers stop
+// being compared against the guides', which is the duplication this guards.
+const PROSE_OUTSIDE_ROUTES = [
+  path.join("src", "lib", "guide-categories.ts"),
+  path.join("src", "lib", "games-hub-copy.ts"),
+];
 
 function appRouteFiles(dir: string, found: string[] = []): string[] {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

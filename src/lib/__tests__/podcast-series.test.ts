@@ -2,8 +2,9 @@ import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
 
-import { getEpisodesForShow, loadShows } from "../content";
+import { getAtomUrl, getAudioUrl, getEpisodesForShow, loadAtoms, loadShows } from "../content";
 import { SITE_URL } from "../seo";
+import { getSeriesForPage } from "../shows-for-content";
 
 const BUILD = path.join(process.cwd(), ".next", "server", "app");
 /**
@@ -81,6 +82,71 @@ describe("podcast series", () => {
       expect(hub, `hub missing ${show.frontmatter.id} feed`).toContain(
         `/listen/${show.frontmatter.id}/feed.xml`,
       );
+    }
+  });
+});
+
+/**
+ * Every atom page with a player is an episode of something, and says so.
+ *
+ * Membership of a show is decided in one place, the show files' season
+ * filters, and read back through getSeriesForPage. When Deep Cuts gained a
+ * Library season (tracker entry 176) the 32 reference readings became
+ * episodes in its feed, and the library route — the one atom route that does
+ * not render through AtomDetail — still called AudioPlayer alone: no "An
+ * episode of" line, no PodcastEpisode markup, no link back to the show
+ * (entry 242, 2026-09-21). The feed pointed at pages that did not point back.
+ *
+ * The first test is build-independent and reads the index: a reference (or
+ * any other atom) with audio that no show claims is the case that fails
+ * here before it reaches a feed. The second reads the library page's source,
+ * because the fault was a route with the lookup missing, not a lookup that
+ * returned the wrong answer.
+ */
+describe("episode provenance", () => {
+  it("resolves a series for every atom with audio, references included", async () => {
+    const atoms = await loadAtoms();
+    const withAudio = atoms.filter((a) => getAudioUrl("atoms", a.frontmatter.id));
+    // Guard the guard: 205 today, 32 of them references.
+    expect(withAudio.length).toBeGreaterThanOrEqual(200);
+    expect(
+      withAudio.filter((a) => a.frontmatter.type === "reference").length,
+    ).toBeGreaterThanOrEqual(30);
+
+    const orphans: string[] = [];
+    for (const atom of withAudio) {
+      const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
+      if (!(await getSeriesForPage(url))) orphans.push(`${atom.frontmatter.type}: ${url}`);
+    }
+    expect(orphans).toEqual([]);
+  });
+
+  it("looks the series up on the library route as well as the atom one", () => {
+    const library = fs.readFileSync(
+      path.join(process.cwd(), "src", "app", "library", "[slug]", "page.tsx"),
+      "utf-8",
+    );
+    expect(library).toContain("getSeriesForPage(");
+    expect(library).toContain("<PodcastJsonLd");
+    expect(library).toContain("An episode of");
+  });
+
+  it.runIf(built)("names the show and emits episode markup on every reference page", async () => {
+    const atoms = await loadAtoms();
+    const references = atoms.filter(
+      (a) => a.frontmatter.type === "reference" && getAudioUrl("atoms", a.frontmatter.id),
+    );
+    expect(references.length).toBeGreaterThanOrEqual(30);
+
+    for (const atom of references) {
+      const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
+      const series = await getSeriesForPage(url);
+      expect(series, url).toBeTruthy();
+      const html = page(`${url.slice(1)}.html`);
+      expect(html, url).toContain(`href="/listen/${series!.id}"`);
+      const episode = jsonLd(html).find((b) => b["@type"] === "PodcastEpisode");
+      expect(episode, url).toBeTruthy();
+      expect(episode.partOfSeries["@id"]).toBe(`${SITE_URL}/listen/${series!.id}#series`);
     }
   });
 });

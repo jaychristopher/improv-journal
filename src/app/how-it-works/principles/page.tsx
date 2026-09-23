@@ -4,8 +4,12 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { Diagram } from "@/components/Diagram";
+import { Prose } from "@/components/Prose";
 import { TableOfContents } from "@/components/TableOfContents";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
+import { principleFailures } from "@/lib/principle-failures";
+import { sortPrinciples } from "@/lib/principle-order";
+import { FAILURES_LABEL } from "@/lib/relation-labels";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 import { getSystemCounts } from "@/lib/system-counts";
 
@@ -55,7 +59,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function PrinciplesPage() {
   const atoms = await loadAtoms();
-  const principles = atoms.filter((a) => a.frontmatter.type === "principle");
+  // In the dependency order the diagram and prose below give, not directory
+  // order — which put be present, the precondition, fifth.
+  const principles = sortPrinciples(atoms.filter((a) => a.frontmatter.type === "principle"));
+  // "Name the failure, take the principle that addresses it" — the closing
+  // advice below — was an instruction with no map. The pairs are the
+  // `contrasts` edges between each principle and the antipatterns, read
+  // from either end (tracker entry 155).
+  const failures = principleFailures(atoms);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -84,19 +95,16 @@ export default async function PrinciplesPage() {
         <h1 className="mt-1 text-3xl font-bold tracking-tight">
           The {principles.length} Improv Principles
         </h1>
-        <p className="text-foreground/60 mt-2">
-          Behavioral guidelines derived from the physics. Not moral rules — structural commands that
-          prevent shared reality from collapsing.
-        </p>
-        <p className="text-foreground/50 mt-3 text-sm">
-          If you arrived looking for the familiar list — yes and, don&apos;t block, make your
-          partner look good — that is{" "}
-          <Link href="/rules-of-improv" className="underline">
-            the rules of improv
-          </Link>
-          , which covers where each one came from and which half of them are wrong. This page is the
-          underlying set they are shorthand for.
-        </p>
+        <Prose
+          text="Behavioral guidelines derived from the physics. Not moral rules — structural commands that prevent shared reality from collapsing."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/60 mt-2"
+        />
+        <Prose
+          text="If you arrived looking for the familiar list — yes and, don't block, make your partner look good — that is [the rules of improv](/rules-of-improv), which covers where each one came from and which half of them are wrong. This page is the underlying set they are shorthand for."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/50 mt-3 text-sm"
+        />
       </header>
 
       {/* The list carries an h2 of its own so the entries below it do not jump
@@ -120,6 +128,24 @@ export default async function PrinciplesPage() {
               {leadParagraph(stripLeadLabel(a.content), 180)}
               ...
             </p>
+            {(failures.get(a.frontmatter.id) ?? []).length > 0 && (
+              // Above the title's stretched link, so the failures are
+              // reachable as links rather than swallowed by the card.
+              <p className="text-foreground/60 relative z-10 mt-2 text-sm">
+                {`${FAILURES_LABEL}: `}
+                {(failures.get(a.frontmatter.id) ?? []).map((f, i, all) => (
+                  <span key={f.id}>
+                    <Link
+                      href={getAtomUrl({ id: f.id, type: "antipattern" })}
+                      className="underline"
+                    >
+                      {f.title}
+                    </Link>
+                    {i < all.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </p>
+            )}
           </div>
         ))}
       </div>
@@ -130,36 +156,30 @@ export default async function PrinciplesPage() {
         <h2 id="principles-rather-than-rules" className="mb-3 text-xl font-semibold">
           What Makes These Principles Rather Than Rules
         </h2>
-        <p className="text-foreground/70 mb-4">
-          The distinction is not pedantry. A rule tells you what you ought to do and carries a mild
-          moral charge &mdash; somebody who blocks has been rude, somebody who steals focus has been
-          selfish. A principle here is a structural claim instead: do this and the shared reality
-          holds, do the other thing and it degrades in a way that is predictable, visible from the
-          audience, and independent of anybody&rsquo;s intentions.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          Take{" "}
-          <Link href="/how-it-works/principles/be-present" className="underline">
-            Be Present
-          </Link>
-          . Read as a rule it is an instruction to care more, which is not actionable. Read as a
-          principle it is an observation about a budget: attention spent composing your next line is
-          attention not spent hearing the line being said, and there is no version of you that has
-          enough of both. Nothing about that depends on being a good person.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          The practical consequence is that you cannot fail one of these by having the wrong
-          attitude, only by producing the wrong behaviour &mdash; which makes each of them something
-          to rehearse rather than something to become.
-        </p>
+        <Prose
+          text="The distinction is not pedantry. A rule tells you what you ought to do and carries a mild moral charge — somebody who blocks has been rude, somebody who steals focus has been selfish. A principle here is a structural claim instead: do this and the shared reality holds, do the other thing and it degrades in a way that is predictable, visible from the audience, and independent of anybody’s intentions."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="Take [Be Present](/how-it-works/principles/be-present). Read as a rule it is an instruction to care more, which is not actionable. Read as a principle it is an observation about a budget: attention spent composing your next line is attention not spent hearing the line being said, and there is no version of you that has enough of both. Nothing about that depends on being a good person."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="The practical consequence is that you cannot fail one of these by having the wrong attitude, only by producing the wrong behaviour — which makes each of them something to rehearse rather than something to become."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
 
         <h2 id="how-the-nine-fit-together" className="mt-10 mb-3 text-xl font-semibold">
           How the Nine Fit Together
         </h2>
-        <p className="text-foreground/70 mb-4">
-          They are not a checklist, and working through them in the order they happen to be listed
-          is the least useful way to use them. They stand in a rough dependency.
-        </p>
+        <Prose
+          text="They are not a checklist, and working through them alphabetically is the least useful way to use them. They stand in a rough dependency, which is the order the list above follows."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
         <Diagram
           src="/images/principles-dependency.svg"
           // Counts belong to the content, not to a string in a component. This
@@ -167,130 +187,78 @@ export default async function PrinciplesPage() {
           // next time a principle was written, which is the drift
           // system-counts.ts exists to stop.
           alt="The principles in rough dependency: be present as the precondition, the ones that build on it, be simple as the corrective they all need, and framing sitting apart from the rest."
-          caption="The page's own ordering rather than the order they are listed in — which is the least useful way to use them."
+          caption="The dependency the list above follows: be present first, framing apart from the rest."
         />
-        <p className="text-foreground/70 mb-4">
-          <Link href="/how-it-works/principles/be-present" className="underline">
-            Be Present
-          </Link>{" "}
-          is the precondition &mdash; nothing else is available to somebody who is not actually
-          hearing what happened.{" "}
-          <Link href="/how-it-works/principles/be-changeable" className="underline">
-            Be Changeable
-          </Link>{" "}
-          is what presence is for: the point of hearing an offer is to be altered by it, and a
-          performer who hears everything and changes at nothing has spent the attention for nothing.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <Link href="/how-it-works/principles/be-honest" className="underline">
-            Be Honest
-          </Link>{" "}
-          and{" "}
-          <Link href="/how-it-works/principles/be-brave" className="underline">
-            Be Brave
-          </Link>{" "}
-          supply the material, and they fail in opposite directions &mdash; one by producing
-          something invented rather than felt, the other by producing nothing at all.{" "}
-          <Link href="/how-it-works/principles/be-supportive" className="underline">
-            Be Supportive
-          </Link>{" "}
-          and{" "}
-          <Link href="/how-it-works/principles/be-thankful" className="underline">
-            Be Thankful
-          </Link>{" "}
-          are the partner-facing pair, and they are the two most often nodded at and least often
-          done.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          <Link href="/how-it-works/principles/be-simple" className="underline">
-            Be Simple
-          </Link>{" "}
-          is the corrective the others need, because every one of them can be over-served;{" "}
-          <Link href="/how-it-works/principles/be-positive" className="underline">
-            Be Positive
-          </Link>{" "}
-          is the most misread of the set, since it is about what you do with an offer rather than
-          about cheerfulness. And{" "}
-          <Link href="/how-it-works/principles/framing-as-angle-of-approach" className="underline">
-            Framing as Angle of Approach
-          </Link>{" "}
-          sits slightly apart from the eight: it governs how you enter a thing rather than how you
-          behave once you are in it.
-        </p>
+        <Prose
+          text="[Be Present](/how-it-works/principles/be-present) is the precondition — nothing else is available to somebody who is not actually hearing what happened. [Be Changeable](/how-it-works/principles/be-changeable) is what presence is for: the point of hearing an offer is to be altered by it, and a performer who hears everything and changes at nothing has spent the attention for nothing."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="[Be Honest](/how-it-works/principles/be-honest) and [Be Brave](/how-it-works/principles/be-brave) supply the material, and they fail in opposite directions — one by producing something invented rather than felt, the other by producing nothing at all. [Be Supportive](/how-it-works/principles/be-supportive) and [Be Thankful](/how-it-works/principles/be-thankful) are the partner-facing pair, and they are the two most often nodded at and least often done."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="[Be Simple](/how-it-works/principles/be-simple) is the corrective the others need, because every one of them can be over-served; [Be Positive](/how-it-works/principles/be-positive) is the most misread of the set, since it is about what you do with an offer rather than about cheerfulness. And [Framing as Angle of Approach](/how-it-works/principles/framing-as-angle-of-approach) sits slightly apart from the eight: it governs how you enter a thing rather than how you behave once you are in it."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
 
         <h2 id="where-they-came-from" className="mt-10 mb-3 text-xl font-semibold">
           Where They Came From
         </h2>
-        <p className="text-foreground/70 mb-4">
-          Not from a school. Most lists of improv rules are inherited &mdash; one teacher&rsquo;s
-          phrasing that stuck and got repeated until it sounded like a law &mdash; which is why no
-          two traditions quite agree on what the list is.
-        </p>
-        <p className="text-foreground/70 mb-4">
-          These are derived rather than inherited.{" "}
-          <Link href="/how-it-works" className="underline">
-            How it works
-          </Link>{" "}
-          sets out what actually makes a shared reality hold or collapse, and each principle here is
-          the behaviour that follows from one of those. That is why there are nine of them rather
-          than the familiar five, and why the set does not match any school&rsquo;s list exactly.
-          Where a familiar rule contradicts one of these,{" "}
-          <Link href="/rules-of-improv" className="underline">
-            the rules of improv
-          </Link>{" "}
-          is the page that takes each one in turn and says which half is wrong.
-        </p>
+        <Prose
+          text="Not from a school. Most lists of improv rules are inherited — one teacher’s phrasing that stuck and got repeated until it sounded like a law — which is why no two traditions quite agree on what the list is."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
+        <Prose
+          text="These are derived rather than inherited. [How it works](/how-it-works) sets out what actually makes a shared reality hold or collapse, and each principle here is the behaviour that follows from one of those. That is why there are nine of them rather than the familiar five, and why the set does not match any school’s list exactly. Where a familiar rule contradicts one of these, [the rules of improv](/rules-of-improv) is the page that takes each one in turn and says which half is wrong."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
 
         <h2 id="which-one-to-work-on" className="mt-10 mb-3 text-xl font-semibold">
           Which One to Work On
         </h2>
-        <p className="text-foreground/70 mb-4">
-          One at a time, chosen by symptom rather than by order. The useful question is not which
-          principle you believe in least but which failure you keep producing.
-        </p>
+        <Prose
+          text="One at a time, chosen by symptom rather than by order. The useful question is not which principle you believe in least but which failure you keep producing."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
         <ul className="text-foreground/70 mb-4 space-y-2">
-          <li>
-            Going blank, or hearing your own head louder than your partner &mdash;{" "}
-            <Link href="/how-it-works/principles/be-present" className="underline">
-              Be Present
-            </Link>
-            .
-          </li>
-          <li>
-            Scenes that stay where they started, however much is said in them &mdash;{" "}
-            <Link href="/how-it-works/principles/be-changeable" className="underline">
-              Be Changeable
-            </Link>
-            .
-          </li>
-          <li>
-            Steering, or quietly relocating whatever your partner just offered &mdash;{" "}
-            <Link href="/how-it-works/principles/be-supportive" className="underline">
-              Be Supportive
-            </Link>
-            .
-          </li>
-          <li>
-            Cleverness &mdash; scenes that are constructed, admired, and inert &mdash;{" "}
-            <Link href="/how-it-works/principles/be-simple" className="underline">
-              Be Simple
-            </Link>
-            .
-          </li>
-          <li>
-            Hedging: playing safely, at half commitment, waiting to see what the scene turns out to
-            be &mdash;{" "}
-            <Link href="/how-it-works/principles/be-brave" className="underline">
-              Be Brave
-            </Link>
-            .
-          </li>
+          <Prose
+            as="li"
+            text="Going blank, or hearing your own head louder than your partner — [Be Present](/how-it-works/principles/be-present)."
+            currentUrl="/how-it-works/principles"
+          />
+          <Prose
+            as="li"
+            text="Scenes that stay where they started, however much is said in them — [Be Changeable](/how-it-works/principles/be-changeable)."
+            currentUrl="/how-it-works/principles"
+          />
+          <Prose
+            as="li"
+            text="Steering, or quietly relocating whatever your partner just offered — [Be Supportive](/how-it-works/principles/be-supportive)."
+            currentUrl="/how-it-works/principles"
+          />
+          <Prose
+            as="li"
+            text="Cleverness — scenes that are constructed, admired, and inert — [Be Simple](/how-it-works/principles/be-simple)."
+            currentUrl="/how-it-works/principles"
+          />
+          <Prose
+            as="li"
+            text="Hedging: playing safely, at half commitment, waiting to see what the scene turns out to be — [Be Brave](/how-it-works/principles/be-brave)."
+            currentUrl="/how-it-works/principles"
+          />
         </ul>
-        <p className="text-foreground/70 mb-4">
-          A group can work this way too, and it is a better use of a rehearsal than running the list
-          in sequence. Name the failure the last show actually had, take the one principle that
-          addresses it, and spend the whole session on that.
-        </p>
+        <Prose
+          text="A group can work this way too, and it is a better use of a rehearsal than running the list in sequence. Name the failure the last show actually had, take the one principle that addresses it, and spend the whole session on that."
+          currentUrl="/how-it-works/principles"
+          className="text-foreground/70 mb-4"
+        />
       </section>
     </main>
   );

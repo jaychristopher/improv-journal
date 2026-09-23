@@ -10,12 +10,12 @@ serp_verdict: winnable
 entry_atoms: [offers, obvious-choice, commitment, spontaneity, safety-in-the-room]
 entry_path: improv-for-life
 primary_problem: "the room is cold and every question you ask lands with a thud"
-primary_cta_type: exercise
+primary_cta_type: thread
 primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-21"
 ---
 
 # This or That Questions: 300 for Warming Up Any Room

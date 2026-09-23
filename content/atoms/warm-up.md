@@ -20,7 +20,7 @@ links:
   - { id: mirroring, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 Warm-Up is the ritual that prepares performers for improvisation — not just physical warm-up but a neurological, ensemble, and psychological transition from daily-life mode to performance mode.

@@ -18,7 +18,7 @@ links:
   - { id: blocking, relation: contrasts }
 sources: []
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-08-29"
 ---
 
 Somebody says "let's paint the fence." Everybody answers "Yes, let's!" and starts painting the fence. Somebody else says "let's climb the fence," and the room climbs it. It takes four minutes and it is the most-taught first exercise in improv.
@@ -31,9 +31,9 @@ It also removes the cost of proposing. In a scene, an offer that nobody takes is
 
 ## Where it goes wrong
 
-- **Waiting for a good suggestion.** The room goes quiet because everybody is auditioning proposals in their head. The correct proposal is the first one, and "let's stand up" is a perfectly good offer.
+- **Waiting for a good suggestion.** The room goes quiet because everybody is auditioning proposals in their head (`hesitation`). The correct proposal is the first one, and "let's stand up" is a perfectly good offer.
 - **The same three people proposing.** Ask for suggestions from somebody who has not made one yet. This is more useful than it sounds — the quiet members are the ones the exercise exists for.
-- **Miming nothing.** "Yes, let's!" followed by vague hand-waving is the whole failure in miniature. Whatever was proposed, do it specifically enough that a stranger could name it.
+- **Miming nothing.** "Yes, let's!" followed by vague hand-waving is `wimping` in miniature. Whatever was proposed, do it specifically enough that a stranger could name it.
 
 ## Side-coaching it
 

@@ -6,7 +6,7 @@ status: draft
 atoms: [callback, reincorporation, connections, mapping, straight-man, tag-run, elevating, justification, beats]
 tags: [techniques, show-craft, structure, advanced]
 created: "2026-04-07"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 A great improv show isn't a collection of unrelated scenes. It's a web — and the web is woven from techniques that connect what came before to what comes next.

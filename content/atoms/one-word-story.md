@@ -17,9 +17,10 @@ links:
   - { id: story-spine, relation: extends }
   - { id: active-listening, relation: requires }
   - { id: warm-up, relation: extends }
+  - { id: performing-cleverness, relation: contrasts }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-08-30"
 ---
 
 **Trains:** giving up authorship. A circle tells one story, one word per person, and nobody is allowed to know where it is going.
@@ -52,7 +53,7 @@ The stories that work are almost always the ones where nobody tried. `obvious-ch
 
 **Every player ending the sentence.** A circle where each person adds a full stop produces eleven short declarative sentences and no story. Coach players to leave the sentence open.
 
-**Comedy tax.** Someone inserts a word chosen purely to get a laugh — "banana", "suddenly", a name from the room. It gets the laugh and costs the story its thread, and the next four players spend their turns cleaning up.
+**Comedy tax.** Someone inserts a word chosen purely to get a laugh — "banana", "suddenly", a name from the room. It gets the laugh and costs the story its thread, and the next four players spend their turns cleaning up — `performing-cleverness` at the scale of a single word.
 
 **Refusing to say small words.** Players feel they have wasted their turn on "of" or "and". Those turns are the ones holding the sentence together, and a group that understands this is halfway to understanding support.
 

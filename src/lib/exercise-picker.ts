@@ -13,34 +13,52 @@
  * actually exist.
  */
 
-import { EXERCISE_FOCUS_MAP, FOCUSES, LEVELS } from "@/app/tools/exercise-picker/picker-config";
+import {
+  exerciseFocuses,
+  FOCUSES,
+  LEVELS,
+  matchesLevel,
+} from "@/app/tools/exercise-picker/picker-config";
 
 import { getAtomUrl, loadAtoms } from "./content";
 import { leadParagraph, stripLeadLabel } from "./seo";
 
-export function matchesLevel(tags: string[], level: string): boolean {
-  if (tags.includes("fundamentals")) return true;
-  return tags.includes(level);
-}
+export { matchesLevel };
 
-export function matchesFocus(
-  id: string,
-  tags: string[],
-  focusTag: string,
-  extraTags: string[],
-): boolean {
-  if (tags.includes(focusTag)) return true;
-  const mapped = EXERCISE_FOCUS_MAP[id] ?? [];
-  if (mapped.includes(focusTag)) return true;
-  return extraTags.some((extra) => tags.includes(extra) || mapped.includes(extra));
+/** Whether an exercise's focuses (see `exerciseFocuses`) satisfy a focus filter. */
+export function matchesFocus(focuses: string[], focusTag: string, extraTags: string[]): boolean {
+  return focuses.includes(focusTag) || extraTags.some((extra) => focuses.includes(extra));
 }
 
 export interface PickerExercise {
   id: string;
   title: string;
   tags: string[];
+  /** Everything the exercise is offered under — see `exerciseFocuses`. */
+  focuses: string[];
   href: string;
   description: string;
+}
+
+/**
+ * Every exercise atom, shaped for the picker, with its focuses resolved.
+ *
+ * The focuses come from `exerciseFocuses`, which every picker surface now
+ * reads; the client component used to carry its own copy of the hand map.
+ */
+export async function loadPickerExercises(): Promise<PickerExercise[]> {
+  const atoms = await loadAtoms();
+
+  return atoms
+    .filter((a) => a.frontmatter.type === "exercise")
+    .map((a) => ({
+      id: a.frontmatter.id,
+      title: a.frontmatter.title,
+      tags: a.frontmatter.tags ?? [],
+      focuses: exerciseFocuses(a.frontmatter.id, a.frontmatter.tags ?? [], a.frontmatter.links),
+      href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+      description: leadParagraph(stripLeadLabel(a.content), 200),
+    }));
 }
 
 export async function getPickerExercises(
@@ -48,22 +66,11 @@ export async function getPickerExercises(
   focusTag: string,
   extraTags: string[],
 ): Promise<PickerExercise[]> {
-  const atoms = await loadAtoms();
+  const exercises = await loadPickerExercises();
 
-  return atoms
-    .filter(
-      (a) =>
-        a.frontmatter.type === "exercise" &&
-        matchesLevel(a.frontmatter.tags ?? [], level) &&
-        matchesFocus(a.frontmatter.id, a.frontmatter.tags ?? [], focusTag, extraTags),
-    )
-    .map((a) => ({
-      id: a.frontmatter.id,
-      title: a.frontmatter.title,
-      tags: a.frontmatter.tags ?? [],
-      href: getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
-      description: leadParagraph(stripLeadLabel(a.content), 200),
-    }));
+  return exercises.filter(
+    (e) => matchesLevel(e.tags, level) && matchesFocus(e.focuses, focusTag, extraTags),
+  );
 }
 
 /** Every level/focus pair that actually has exercises behind it. */
@@ -92,7 +99,7 @@ export async function getPopulatedCombinations(): Promise<{ level: string; focus
 }
 
 /**
- * How much a facet has to offer that its siblings do not.
+ * How much a facet has to offer that the facets beneath it do not.
  *
  * MIN_INDEXABLE_EXERCISES counts what a page lists. It cannot see what the
  * page next door lists, and three facets of the same focus mostly list the
@@ -108,10 +115,20 @@ export async function getPopulatedCombinations(): Promise<{ level: string; focus
  * the sibling did not already give. So the same reasoning, measured against
  * what is actually distinct.
  *
- * A sibling only absorbs the intent if it is itself indexed on the count gate.
- * Otherwise the sole surviving facet of a sparse focus — beginner/courage,
- * whose two siblings hold one and two exercises — would be suppressed by pages
- * that are not in the index to answer for it.
+ * The comparison runs one way, from the lowest level up. The first version
+ * compared a facet with every populated sibling, and two identical facets
+ * each hid the other: beginner/ensemble and intermediate/ensemble were the
+ * two fullest pages on the site and neither was indexed, so a search for
+ * ensemble exercises could land on no picker page at all (tracker entry 241,
+ * 2026-09-21). A facet now has to be distinct only from the indexable facets
+ * at the levels below it, so of two near-duplicates the lower one is kept —
+ * beginners are the audience the site routes — and the upper one is the
+ * noindex copy. A well-populated focus is indexed at exactly one level unless
+ * a higher level genuinely adds to it, as intermediate/courage does.
+ *
+ * A lower sibling only absorbs the intent if it is itself indexed. Otherwise
+ * intermediate/recovery, whose beginner sibling holds one exercise, would be
+ * suppressed by a page that is not in the index to answer for it.
  */
 export const MIN_DISTINCT_EXERCISES = 2;
 
@@ -123,24 +140,27 @@ export const MIN_DISTINCT_EXERCISES = 2;
  * kept out of the sitemap, which is the standard treatment for thin faceted
  * pages and stops them competing with the level page above them.
  *
- * Near-duplicate facets get the same treatment for the same reason.
+ * Near-duplicate facets get the same treatment for the same reason, and the
+ * level order decides which copy survives: see MIN_DISTINCT_EXERCISES.
  */
 export async function isIndexableCombination(level: string, focus: string): Promise<boolean> {
   const focusConfig = FOCUSES.find((f) => f.slug === focus);
   if (!focusConfig) return false;
 
+  const levelIndex = LEVELS.findIndex((l) => l.slug === level);
+  if (levelIndex === -1) return false;
+
   const exercises = await getPickerExercises(level, focusConfig.tag, focusConfig.extraTags);
   if (exercises.length < MIN_INDEXABLE_EXERCISES) return false;
 
-  const siblingIds = new Set<string>();
-  for (const other of LEVELS) {
-    if (other.slug === level) continue;
-    const sibling = await getPickerExercises(other.slug, focusConfig.tag, focusConfig.extraTags);
-    if (sibling.length < MIN_INDEXABLE_EXERCISES) continue;
-    for (const exercise of sibling) siblingIds.add(exercise.id);
+  const lowerIds = new Set<string>();
+  for (const lower of LEVELS.slice(0, levelIndex)) {
+    if (!(await isIndexableCombination(lower.slug, focus))) continue;
+    const sibling = await getPickerExercises(lower.slug, focusConfig.tag, focusConfig.extraTags);
+    for (const exercise of sibling) lowerIds.add(exercise.id);
   }
 
-  const distinct = exercises.filter((exercise) => !siblingIds.has(exercise.id)).length;
+  const distinct = exercises.filter((exercise) => !lowerIds.has(exercise.id)).length;
   return distinct >= MIN_DISTINCT_EXERCISES;
 }
 

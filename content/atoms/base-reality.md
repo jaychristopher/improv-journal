@@ -22,7 +22,7 @@ links:
   - { id: tilt, relation: enables }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 Base Reality is the normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.

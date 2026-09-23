@@ -93,8 +93,16 @@ export interface SeenStore {
  * that throws on access, or a server render — and the store then lives only
  * as long as the component does, which is the right fallback: the tool still
  * works, it just forgets on reload.
+ *
+ * `key` defaults to the prompt generator's, which was the only caller until
+ * the would-you-rather hero wanted the same never-repeat behaviour over a
+ * different bank on 2026-09-23. Two tools sharing one key would have made
+ * each hide the other's rows.
  */
-export function createSeenStore(storage: Storage | null): SeenStore {
+export function createSeenStore(
+  storage: Storage | null,
+  key: string = SEEN_STORAGE_KEY,
+): SeenStore {
   let cache: Set<string> | null = null;
 
   function load(): Set<string> {
@@ -102,7 +110,7 @@ export function createSeenStore(storage: Storage | null): SeenStore {
     cache = new Set<string>();
     if (!storage) return cache;
     try {
-      const raw = storage.getItem(SEEN_STORAGE_KEY);
+      const raw = storage.getItem(key);
       const parsed: unknown = raw ? JSON.parse(raw) : [];
       if (Array.isArray(parsed)) {
         for (const id of parsed) if (typeof id === "string") cache.add(id);
@@ -116,7 +124,7 @@ export function createSeenStore(storage: Storage | null): SeenStore {
   function save(ids: Set<string>) {
     if (!storage) return;
     try {
-      storage.setItem(SEEN_STORAGE_KEY, JSON.stringify([...ids]));
+      storage.setItem(key, JSON.stringify([...ids]));
     } catch {
       // Quota or a locked-down browser. The in-memory copy still works.
     }

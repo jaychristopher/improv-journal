@@ -16,9 +16,10 @@ links:
   - { id: callback, relation: extends }
   - { id: coherence, relation: extends }
   - { id: ref-impro-johnstone, relation: extends }
+  - { id: hesitation, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-30"
 ---
 
 **Trains:** Irreversibility — the felt experience of path dependence. Borrows from Johnstone's New Choice mechanic but enforces forward rather than replacing.
@@ -41,8 +42,8 @@ How often you instinctively try to edit history. How the impulse to retcon is al
 
 ## Common failures
 
-- **Freeze after being called** — players stop dead, afraid to move. Coach: "The scene didn't stop. Keep going."
-- **Subtle retcons** — not saying "no" but simply ignoring a detail until it decays. Harder to catch, more damaging.
+- **Freeze after being called** — players stop dead, afraid to move; `hesitation` in its plainest form. Coach: "The scene didn't stop. Keep going."
+- **Subtle retcons** — not saying "no" but simply ignoring a detail until it decays. Harder to catch, more damaging; this is `negation` done retroactively.
 - **Over-monitoring** — players become so afraid of retconning that they stop making offers. Coach: "Being bold is more important than being careful."
 
 ## The deeper lesson

@@ -15,6 +15,7 @@ import {
   formatJourneyDueDate,
   formatJourneyRecency,
   getJourneyState,
+  getReviewIntervalDays,
   getThreadJourneyState,
   isThreadQueuedForReview,
   markThreadPracticed,
@@ -91,6 +92,12 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
 
   if (!state) return null;
 
+  // The next rung of the review ladder (1, 3, 7, 21 days), so the button and
+  // the analytics say what will actually be scheduled.
+  const nextReviewDays = getReviewIntervalDays(state.reviewedCount);
+  const nextReviewLabel =
+    nextReviewDays === 1 ? "Review tomorrow" : `Review in ${nextReviewDays} days`;
+
   const statusNotes = [
     state.practicedCount > 0
       ? `Practiced ${state.practicedCount} time${state.practicedCount === 1 ? "" : "s"}${state.lastPracticedAt ? `, last rep ${formatJourneyRecency(state.lastPracticedAt)}` : ""}.`
@@ -109,8 +116,7 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
         <div>
           <h2 className="text-lg font-semibold">Lock this in</h2>
           <p className="text-foreground/50 mt-1 text-sm">
-            Log a practice rep, queue tomorrow&apos;s review, and keep the lesson moving toward
-            automatic.
+            Log a practice rep, queue the next review, and keep the lesson moving toward automatic.
           </p>
         </div>
         {state.lastVisitedAt && (
@@ -171,14 +177,14 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
               trackLearningReviewScheduled({
                 ...getTrackingContext(threadId),
                 reviewCount: nextState.reviewedCount,
-                reviewDueDays: 1,
+                reviewDueDays: nextReviewDays,
                 trigger: "manual",
               });
               setState(nextState);
             }}
             className={getButtonClasses(false)}
           >
-            Review tomorrow
+            {nextReviewLabel}
           </button>
         )}
         <button
@@ -195,7 +201,7 @@ export function LessonCheckpoint({ threadId }: LessonCheckpointProps) {
               trackLearningReviewScheduled({
                 ...getTrackingContext(threadId),
                 reviewCount: nextState.reviewedCount,
-                reviewDueDays: 1,
+                reviewDueDays: nextReviewDays,
                 trigger: "completion",
               });
             }

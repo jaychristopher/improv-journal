@@ -295,3 +295,4 @@ These show up in multiple SOPs. Stating once here:
 - **Beat-driven over hold-static** — for any peak >30s, internal animations must be anchored to actual word timings, not estimated frame offsets.
 - **One question per video** — title states it, video resolves it. No multi-thesis bundles.
 - **No filler in the script** — every line earns the next. Cut throat-clearing.
+- **A rule this set adopts about its own future needs a guard written the same day** (2026-09-22) — of the 15 fixes in `IMPROVEMENT-CYCLE.md`, the 11 that were documents all exist and the 3 that were rules about future behaviour had all been broken before anyone looked: the 5-lesson cap, the 8-section contract, and SOP 17's output file. A document can be checked by opening it; a rule cannot. `src/lib/__tests__/sop-schema.test.ts` now holds all 3.

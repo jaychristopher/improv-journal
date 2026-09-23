@@ -21,7 +21,7 @@ links:
   - { id: blocking, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Diagnosing Scene Failure is a procedure for turning "that scene didn't work" into something you can practise. Most improvisers plateau because they answer a bad scene with volume — more classes, more reps — when the useful question is which part broke.

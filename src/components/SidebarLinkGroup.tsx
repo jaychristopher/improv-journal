@@ -4,6 +4,35 @@ export interface SidebarLink {
   key: string;
   href: string;
   label: string;
+  /**
+   * A second link on the same line, after `join`: "Commitment and the core",
+   * with the title linking the member and the phrase linking the page that
+   * defines the core (the-core.ts, entry 315). Without it the line is one
+   * link, as every other group's is.
+   */
+  suffix?: { join: string; href: string; label: string };
+}
+
+/** One line of a group: a link, or a link, a joining word and a second link. */
+function SidebarLine({ link }: { link: SidebarLink }) {
+  if (!link.suffix) {
+    return (
+      <Link href={link.href} className="text-foreground/70 block hover:underline">
+        {link.label}
+      </Link>
+    );
+  }
+  return (
+    <span className="text-foreground/70 block">
+      <Link href={link.href} className="hover:underline">
+        {link.label}
+      </Link>
+      {link.suffix.join}
+      <Link href={link.suffix.href} className="hover:underline">
+        {link.suffix.label}
+      </Link>
+    </span>
+  );
 }
 
 /**
@@ -46,9 +75,7 @@ export function SidebarLinkGroup({
   return (
     <>
       {shown.map((link) => (
-        <Link key={link.key} href={link.href} className="text-foreground/70 block hover:underline">
-          {link.label}
-        </Link>
+        <SidebarLine key={link.key} link={link} />
       ))}
 
       {rest.length > 0 && (
@@ -59,13 +86,7 @@ export function SidebarLinkGroup({
           </summary>
           <div className="mt-1 space-y-1">
             {rest.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className="text-foreground/70 block hover:underline"
-              >
-                {link.label}
-              </Link>
+              <SidebarLine key={link.key} link={link} />
             ))}
           </div>
         </details>

@@ -1,10 +1,10 @@
 ---
 key: EC-1.1
 type: task
-summary: Render orientation on the 103 concept pages that currently show none
+summary: Render the top-of-page context line on the 68 concept pages that still show none
 parent: "[[EC-1 Cold-arrival orientation]]"
 epic: "[[Entry-point context]]"
-status: Blocked
+status: To Do
 priority: High
 sequence: 1
 executable: agent
@@ -67,3 +67,26 @@ to 114 at worst.
 This task now depends on [[EC-2.1 Rewrite the context line for someone who just
 arrived]] rather than blocking it: there is no point rendering the line on 103
 more pages until it says something worth reading. Blocked, deliberately.
+
+**2026-09-21 — unblocked; scope narrowed to the banner.**
+
+[[EC-2.1 Rewrite the context line for someone who just arrived]] is Done, so
+nothing blocks this any more. Since it was written, two other blocks have given
+every concept page a foot-of-page orientation: the related-concepts card
+(`src/lib/whats-next.ts`) and the "Referenced by" block that lists inbound pages,
+both in `AtomDetail`; library entries, which do not render through it, carry
+"Concepts this work informs" and "Pages that cite it" in the same position. A
+stranger who scrolls to the end of any concept page now finds where it sits and
+where to go next. That is the purpose this task named, served from the other end
+of the page.
+
+What remains is the part it literally describes: `ContextBanner` at the top
+still renders only when the atom has a lesson or a path. Recounted with the Run
+command above against today's build: the literal check for `Part of ` reports
+**205 pages, 205 with no context line**, because EC-2.1 changed the copy and
+that string no longer marks the line. Matching the phrasing the component now
+emits ("is a lesson in", "is a lesson that works through", "a sequence meant" —
+the markers `context-line-position.test.ts` uses) gives **205 pages, 68 with no
+context line** — 32 of them the library pages, none of which has one, and 36
+other atoms in no lesson or path. The original 103 is now 68,
+and the Run command needs its marker updated before it is trusted again.

@@ -29,7 +29,7 @@ links:
   - { id: first-line-drill, relation: illustrates }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-25"
+updated: "2026-08-24"
 ---
 
 **Technique for: Be Brave**

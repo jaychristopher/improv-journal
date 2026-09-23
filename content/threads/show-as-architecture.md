@@ -5,7 +5,7 @@ status: seed
 atoms: [show-dynamic, heat-and-weight, run, sweep-edit, organic-opening, pacing, editing, backline-craft]
 tags: [show-craft, performance, advanced, mastery]
 created: "2026-04-05"
-updated: "2026-08-23"
+updated: "2026-08-27"
 ---
 
 A great improv show isn't a set of scenes. It's a shaped experience — with a beginning that establishes, a middle that develops, and an end that converges. Making that shape happen without a script is one of the highest skills in the art form.

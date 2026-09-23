@@ -93,3 +93,62 @@ describe("open graph", () => {
     expect(wrong).toEqual([]);
   });
 });
+
+/** The first <title> only: a page with an inline SVG carries the diagram's accessible title too. */
+function titleTag(html: string): string | undefined {
+  return /<title>([^<]*)<\/title>/.exec(html)?.[1];
+}
+
+function ogTitle(html: string): string | undefined {
+  return /<meta property="og:title" content="([^"]*)"/.exec(html)?.[1];
+}
+
+/** Entity-decoded, with the layout's " | The Physics of Connection" removed. */
+function unbranded(value: string): string {
+  const decoded = value
+    .replace(/&amp;/g, "&")
+    .replace(/&#x27;|&apos;/g, "'")
+    .replace(/&quot;/g, '"')
+    .trim();
+  const suffix = ` | ${SITE_NAME}`;
+  return decoded.endsWith(suffix) ? decoded.slice(0, -suffix.length).trim() : decoded;
+}
+
+/**
+ * The share card says what kind of thing an atom is, the way the search
+ * result does.
+ *
+ * An atom's title tag is qualified by type — "Commitment — Improv Technique" —
+ * because the bare word is indistinguishable from every other Commitment on
+ * the web. The seven atom routes then wrote the bare H1 into `openGraph.title`,
+ * so 170 of 205 atom pages sent search the qualified title and sent Facebook,
+ * LinkedIn, Slack and Discord "Commitment" (tracker entry 235, 2026-09-21): the
+ * one context where a reader has no URL bar to tell them it is improv, and the
+ * qualifier was dropped there. The routes now feed one string to both.
+ */
+describe("atom share titles", () => {
+  it.runIf(built)("match the title tag, brand suffix aside", async () => {
+    const { loadAtoms, getAtomUrl } = await import("../content");
+    const atoms = await loadAtoms();
+    expect(atoms.length).toBeGreaterThanOrEqual(200);
+
+    const differ: string[] = [];
+    let checked = 0;
+    for (const atom of atoms) {
+      const url = getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type });
+      const file = path.join(APP, ...url.split("/").filter(Boolean)) + ".html";
+      if (!fs.existsSync(file)) continue;
+      const html = fs.readFileSync(file, "utf-8");
+      const title = titleTag(html);
+      const og = ogTitle(html);
+      if (!title || !og) continue;
+      checked++;
+      if (unbranded(title) !== unbranded(og)) {
+        differ.push(`${url}: title "${unbranded(title)}" vs og:title "${unbranded(og)}"`);
+      }
+    }
+
+    expect(checked).toBeGreaterThanOrEqual(200);
+    expect(differ).toEqual([]);
+  });
+});

@@ -88,11 +88,12 @@ export default async function SourcePage({ params }: { params: Promise<{ slug: s
 
       <article
         className="prose prose-neutral dark:prose-invert max-w-none"
+        data-track="body"
         dangerouslySetInnerHTML={{ __html: source.html }}
       />
 
       {atoms.length > 0 && (
-        <nav className="border-foreground/10 mt-12 border-t pt-8">
+        <nav className="border-foreground/10 mt-12 border-t pt-8" data-track="source-atoms">
           <h2 className="text-foreground/40 mb-4 text-sm font-semibold tracking-wider uppercase">
             Atoms extracted ({atoms.length})
           </h2>

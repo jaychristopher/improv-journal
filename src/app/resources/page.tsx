@@ -66,7 +66,7 @@ export default function ResourcesPage() {
       <Breadcrumb crumbs={[{ label: "Home", href: "/" }, { label: "Resources" }]} />
 
       <header className="mb-12">
-        <h1 className="text-3xl font-bold tracking-tight">Resources</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Improv Resources</h1>
         <p className="text-foreground/60 mt-2">
           Everything beyond the core system and practice — learning paths, guides, podcasts, reading
           lists, and the traditions that shaped improv.
@@ -81,7 +81,7 @@ export default function ResourcesPage() {
         ))}
       </section>
 
-      <div className="space-y-4">
+      <div className="space-y-4" data-track="resource-list">
         {SECTIONS.map((s) => (
           <div
             key={s.href}

@@ -21,7 +21,7 @@ links:
   - { id: initiation, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-08-29"
 ---
 
 **Trains:** Be Present — attention that can be redirected instantly, and a group focus that lives outside anyone's head. The most widely played warm-up in improv, and the one most often played badly.

@@ -19,7 +19,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-22"
+updated: "2026-08-27"
 ---
 
 **Trains:** Be Changeable — the ability to fully shift emotional state in response to input.

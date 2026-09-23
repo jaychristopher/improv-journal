@@ -4,12 +4,15 @@ import Link from "next/link";
 import { ContinueJourney } from "@/components/ContinueJourney";
 import { HomepageQuiz } from "@/components/HomepageQuiz";
 import { loadBridges, loadPaths, loadThreads } from "@/lib/content";
-import { GUIDE_CATEGORIES } from "@/lib/guide-categories";
+import { drillsByLesson } from "@/lib/drill-lessons";
+import { orderedCategories } from "@/lib/guide-categories";
+import { getHomepagePicks } from "@/lib/homepage-picks";
 import { HOMEPAGE_SYMPTOMS } from "@/lib/homepage-symptoms";
+import { HUBS } from "@/lib/hubs";
+import { getLessonPrerequisites } from "@/lib/journey-prerequisites";
 import { getRecommendedPath } from "@/lib/path-recommendations";
 import { ogImages, SITE_NAME } from "@/lib/seo";
 import { getSystemCounts } from "@/lib/system-counts";
-import { getTopGuides } from "@/lib/top-guides";
 
 /**
  * The homepage previously inherited the bare site name as its title, which
@@ -41,15 +44,16 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Home() {
-  const [paths, threads, bridges, topGuides] = await Promise.all([
+  const [paths, threads, bridges, picks] = await Promise.all([
     loadPaths(),
     loadThreads(),
     loadBridges(),
-    // Was hardcoded to 8, which predated raising the shared default to 14 and
-    // left seven open guides — about 172,000 of traffic potential between them
-    // — with no body link from the strongest page on the site. Takes the
-    // default now, so the two stay in step.
-    getTopGuides(),
+    // Was `getTopGuides()`: the footer's promoted set, rendered a second time
+    // on the one page where the footer already appears, so the homepage added
+    // no entrance the chrome lacked (tracker entry 117). The picks are the
+    // same sort with the footer's set removed, so the two surfaces together
+    // cover more guides than either alone.
+    getHomepagePicks(),
   ]);
   const beginnerRecommendation = getRecommendedPath("beginner");
   const pathById = new Map(paths.map((path) => [path.frontmatter.id, path]));
@@ -63,6 +67,9 @@ export default async function Home() {
 
   const firstThreadId = beginnerProgram.frontmatter.threads?.[0];
   const firstThread = firstThreadId ? threadById.get(firstThreadId) : null;
+  // The journey router needs the prerequisite map so a shaky lesson sends the
+  // reader back to the lesson that teaches what it builds on (entry 119).
+  const lessonPrerequisites = await getLessonPrerequisites();
   const continueConfig = Object.fromEntries(
     paths.map((path) => [
       path.frontmatter.id,
@@ -104,7 +111,8 @@ export default async function Home() {
     ];
   });
 
-  const guideClusters = GUIDE_CATEGORIES.map((cluster) => ({
+  // Same order as /guides: by the reach of each cluster's winnable guides.
+  const guideClusters = orderedCategories(bridges).map((cluster) => ({
     slug: cluster.slug,
     title: cluster.title,
     description: cluster.description,
@@ -127,8 +135,14 @@ export default async function Home() {
             journey card both, so the page told somebody on day four to start the
             programme they were already doing. ContinueJourney renders this until
             localStorage says otherwise, which also means the journey card
-            replaces something instead of pushing the page down on hydration. */}
-        <ContinueJourney paths={continueConfig}>
+            replaces something instead of pushing the page down on hydration.
+            The drill map lets the practice card name and link the drill it
+            means rather than the lesson (entry 333). */}
+        <ContinueJourney
+          paths={continueConfig}
+          prerequisites={lessonPrerequisites}
+          drillsByLesson={await drillsByLesson()}
+        >
           <div className="border-foreground/10 bg-foreground/[0.03] mt-8 rounded-2xl border p-6">
             <span className="text-foreground/40 text-xs tracking-wider uppercase">Start here</span>
             <h2 className="mt-1 text-2xl font-semibold">{beginnerProgram.frontmatter.title}</h2>
@@ -173,6 +187,25 @@ export default async function Home() {
 
       <HomepageQuiz symptoms={symptomRecommendations} />
 
+      {/* The April audit's one homepage finding: team leaders had no signal
+          before entering the quiz (docs/ux-audit-matrix.md, row 1C). The quiz
+          gained "I lead a team" that morning and lost it six hours later when
+          the symptom quiz replaced it, and the five symptoms it asks about are
+          all first-person, so from then until 2026-09-22 nothing above the
+          guide clusters said "teams" (tracker entry 293; backlog EC-4.1). One
+          line, after the quiz rather than in it, so the quiz stays personal. */}
+      <p className="text-foreground/50 -mt-10 mb-16 text-sm" data-track="home-teams">
+        Here for a team rather than for yourself?{" "}
+        <Link href="/topics/teams" className="underline">
+          The guides for teams and leaders
+        </Link>{" "}
+        start from the meeting, and{" "}
+        <Link href="/paths/improv-for-teams" className="underline">
+          Improv for Teams and Leaders
+        </Link>{" "}
+        is the path that runs them in order.
+      </p>
+
       <section className="border-foreground/10 mt-16 border-t pt-10">
         <h2 className="text-foreground/80 text-lg font-semibold">Where this applies</h2>
         <p className="text-foreground/50 mt-1 mb-5 text-sm">
@@ -197,15 +230,21 @@ export default async function Home() {
 
       {/* The homepage linked only to hubs, so the strongest pages on the site
           got nothing from the page that has the most to give. A body link from
-          here is worth more than the same link in site-wide footer chrome. */}
-      <section className="mt-14">
-        <h2 className="text-foreground/80 text-lg font-semibold">Where most people start</h2>
+          here is worth more than the same link in site-wide footer chrome —
+          which is also why this list is not the footer's: those 27 already
+          have it, and the winnable guides just under the promotion floor had
+          no sitewide entrance at all. The heading said "Where most people
+          start" while it was the footer's set; it is the band behind that now,
+          and the copy says so. */}
+      <section className="mt-14" data-track="home-start">
+        <h2 className="text-foreground/80 text-lg font-semibold">Where to start next</h2>
         <p className="text-foreground/50 mt-1 mb-5 text-sm">
-          These go furthest into a single situation — what is actually going wrong, why it happens,
-          and what to do differently on Thursday.
+          The most-searched guides are in the footer of every page. These are the ones just behind
+          them, and each goes furthest into a single situation — what is actually going wrong, why
+          it happens, and what to do differently on Thursday.
         </p>
         <ul className="grid gap-2 sm:grid-cols-2">
-          {topGuides.map((guide) => (
+          {picks.map((guide) => (
             <li key={guide.slug}>
               <Link
                 href={`/${guide.slug}`}
@@ -246,7 +285,7 @@ export default async function Home() {
         </p>
       </section>
 
-      <section className="mt-14">
+      <section className="mt-14" data-track="home-craft">
         <h2 className="text-foreground/80 text-lg font-semibold">Where the craft comes from</h2>
         <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
           Almost every rule in circulation was written down by somebody, mostly in the twentieth
@@ -299,17 +338,28 @@ export default async function Home() {
         <Link href="/practice" className="hover:text-foreground/50">
           Practice
         </Link>
-        <Link href="/practice/vocabulary" className="hover:text-foreground/50">
-          Improv Glossary
+        <Link href={HUBS.glossary.href} className="hover:text-foreground/50">
+          {HUBS.glossary.h1}
         </Link>
         <Link href="/guides" className="hover:text-foreground/50">
           Guides
         </Link>
-        <Link href="/library" className="hover:text-foreground/50">
-          Reading List
+        <Link href={HUBS.library.href} className="hover:text-foreground/50">
+          {HUBS.library.label}
         </Link>
-        <Link href="/paths" className="hover:text-foreground/50">
-          All Paths
+        <Link href={HUBS.paths.href} className="hover:text-foreground/50">
+          {HUBS.paths.label}
+        </Link>
+        {/* The lessons hub and the picker were three and four body clicks from
+            here, reachable only through the nav (tracker entry 218). */}
+        <Link href={HUBS.threads.href} className="hover:text-foreground/50">
+          {HUBS.threads.label}
+        </Link>
+        <Link href="/tools/exercise-picker/beginner" className="hover:text-foreground/50">
+          Find a Drill
+        </Link>
+        <Link href="/learn/beginner" className="hover:text-foreground/50">
+          Start by Level
         </Link>
         <Link href="/listen" className="hover:text-foreground/50">
           Listen

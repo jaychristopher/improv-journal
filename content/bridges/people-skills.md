@@ -18,7 +18,7 @@ entry_atoms: [active-listening, offers, continuous-signaling, status, be-present
 entry_path: improv-for-life
 status: draft
 created: "2026-04-13"
-updated: "2026-08-24"
+updated: "2026-08-27"
 ---
 
 # People Skills Are a System, Not a Personality Trait

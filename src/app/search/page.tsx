@@ -5,13 +5,18 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useMemo, useState } from "react";
 
 import { MiniGraph } from "@/components/MiniGraph";
-import { getSearchIndex } from "@/lib/search-index";
+import { getSearchIndex, MINISEARCH_OPTIONS } from "@/lib/search-index";
+import { normaliseDialect } from "@/lib/search-index-options.mjs";
 
 const LAYER_LABELS: Record<string, string> = {
   guide: "Guides",
   atom: "How It Works & Practice",
   thread: "Threads",
   path: "Learning Paths",
+  // The route pages — type hubs, topic and audience hubs, traditions, shows,
+  // tools. Indexed since 2026-09-21; before that "improv games" could not
+  // reach /improv-games.
+  hub: "Hubs",
 };
 
 const TYPE_LABELS: Record<string, string> = {
@@ -30,11 +35,18 @@ const TYPE_LABELS: Record<string, string> = {
   guide: "guide",
   thread: "thread",
   path: "path",
+  hub: "hub",
 };
 
 interface GraphLink {
   id: string;
   relation: string;
+}
+
+/** A heading on the page, and the id it is anchored under. */
+interface SectionAnchor {
+  id: string;
+  heading: string;
 }
 
 interface SearchResult {
@@ -45,6 +57,58 @@ interface SearchResult {
   type: string;
   score: number;
   links?: GraphLink[];
+  /** The section this result matched on, when it matched on one. */
+  section?: SectionAnchor;
+}
+
+/**
+ * The section a result matched, if the match was in a section at all.
+ *
+ * Until 2026-09-22 the index held the first 500 characters of each page, so
+ * every result was the page and the only place to send a reader was the top
+ * of it. The `sections` field indexes every h2 and h3 with the sentence under
+ * it, which is where the guides' 342 questions and their 42,497 words of
+ * answer live, and the stored anchors say where each one is on the page. A
+ * result that matched there can be sent to the answer instead (novel-insights
+ * 337, which counted 0 internal links into any question anchor).
+ *
+ * MiniSearch's `match` metadata names the fields each matched term was found
+ * in, but not which section inside the field, so the section is recovered by
+ * asking which stored heading holds the most of those terms. Terms go through
+ * `normaliseDialect` on the way in, as the index's own `processTerm` does, so
+ * a heading spelt "theatre" is still reachable from a term folded to
+ * "theater". A result whose section terms are all in the sentence and none in
+ * a heading stays a whole-page result: there is no honest anchor to pick.
+ */
+function matchedSection(
+  sections: SectionAnchor[],
+  match: Record<string, string[]> | undefined,
+): SectionAnchor | undefined {
+  if (!sections.length || !match) return undefined;
+
+  const terms = Object.entries(match)
+    .filter(([, fields]) => fields.includes("sections"))
+    .map(([term]) => term);
+  if (!terms.length) return undefined;
+
+  let best: SectionAnchor | undefined;
+  let bestScore = 0;
+  for (const section of sections) {
+    const words = new Set(
+      section.heading
+        .toLowerCase()
+        .split(/[^\p{L}\p{N}]+/u)
+        .filter(Boolean)
+        .map(normaliseDialect),
+    );
+    const score = terms.filter((term) => words.has(term)).length;
+    if (score > bestScore) {
+      best = section;
+      bestScore = score;
+    }
+  }
+
+  return best;
 }
 
 function SearchResults() {
@@ -71,11 +135,7 @@ function SearchResults() {
 
       try {
         const ms = await getSearchIndex();
-        const hits = ms.search(q, {
-          fuzzy: 0.2,
-          prefix: true,
-          boost: { title: 3 },
-        });
+        const hits = ms.search(q, MINISEARCH_OPTIONS.searchOptions);
 
         if (cancelled) return;
 
@@ -99,6 +159,10 @@ function SearchResults() {
               type: hit.type as string,
               score: hit.score,
               links,
+              section: matchedSection(
+                (hit.sections as SectionAnchor[] | undefined) ?? [],
+                hit.match as Record<string, string[]> | undefined,
+              ),
             };
           }),
         );
@@ -192,28 +256,39 @@ function SearchResults() {
       </div>
 
       {showGraph && topResult.links && (
-        <MiniGraph
-          centerTitle={topResult.title}
-          centerUrl={topResult.url}
-          links={topResult.links}
-          resolvedLinks={resultLookup}
-        />
+        <div data-track="search-graph">
+          <MiniGraph
+            centerTitle={topResult.title}
+            centerUrl={topResult.url}
+            links={topResult.links}
+            resolvedLinks={resultLookup}
+          />
+        </div>
       )}
 
-      <div className="space-y-3">
+      <div className="space-y-3" data-track="search-results">
         {filtered.map((result) => (
           <div
             key={result.id}
+            data-section-hit={result.section ? result.section.id : undefined}
             className="border-foreground/10 bg-surface hover:border-foreground/30 relative rounded-lg border p-4 transition-colors"
           >
             <h3 className="text-sm font-medium">
-              <Link href={result.url} className="after:absolute after:inset-0">
+              <Link
+                href={result.section ? `${result.url}#${result.section.id}` : result.url}
+                className="after:absolute after:inset-0"
+              >
                 {result.title}
               </Link>
             </h3>
             <span className="text-foreground/30 mt-0.5 block text-xs">
               {TYPE_LABELS[result.type] ?? result.type}
             </span>
+            {result.section && (
+              <span className="text-foreground/60 mt-1 block text-xs">
+                {result.section.heading}
+              </span>
+            )}
           </div>
         ))}
       </div>

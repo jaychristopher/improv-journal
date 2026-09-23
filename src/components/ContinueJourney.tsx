@@ -11,14 +11,24 @@ import {
   clearJourney,
   formatJourneyDueDate,
   formatJourneyRecency,
+  getDrillJourneyState,
   getJourneyRecommendation,
   getJourneyState,
   getThreadJourneyState,
+  type LessonPrerequisiteMap,
 } from "@/lib/journey";
 
 interface PathInfo {
   title: string;
   threads: string[];
+}
+
+/** The drill a lesson's row leads with, and the lesson's title to say what it is for. */
+interface LessonDrillInfo {
+  id: string;
+  title: string;
+  href: string;
+  lessonTitle: string;
 }
 
 interface ContinueJourneyProps {
@@ -34,6 +44,23 @@ interface ContinueJourneyProps {
    * something rather than pushing the page down when localStorage is read.
    */
   children?: ReactNode;
+  /**
+   * Path → lesson → the lessons on that path that teach what it requires,
+   * from `getLessonPrerequisites()` in `@/lib/journey-prerequisites`. With it
+   * a lesson marked "still shaky" routes to the lesson it builds on; without
+   * it the shaky lesson is recommended again.
+   */
+  prerequisites?: LessonPrerequisiteMap;
+  /**
+   * Lesson → the first drill on its row, from `drillsByLesson()` in
+   * `@/lib/drill-lessons`. The "practice" card used to link the lesson it
+   * named, though the practice it meant is a drill and the site routes to
+   * drills everywhere else (tracker entry 333, 2026-09-22); with the map it
+   * says "Practise Zip Zap Zop for Presence and Commitment" and links the
+   * drill, the lesson kept as a second link. A lesson with no drill on its
+   * row, or no map, keeps the lesson card.
+   */
+  drillsByLesson?: Record<string, LessonDrillInfo>;
 }
 
 interface ContinueJourneyState {
@@ -48,9 +75,16 @@ interface ContinueJourneyState {
   reviewDueAt?: string;
   practiceCount?: number;
   reviewCount?: number;
+  /** Set on a practice card whose lesson has a drill: the card links this. */
+  drill?: LessonDrillInfo & { runs: number };
 }
 
-export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
+export function ContinueJourney({
+  paths,
+  children,
+  prerequisites,
+  drillsByLesson,
+}: ContinueJourneyProps) {
   const [state, setState] = useState<ContinueJourneyState | null>(null);
 
   useEffect(() => {
@@ -60,10 +94,15 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
     const pathInfo = paths[journey.pathId];
     if (!pathInfo) return;
 
-    const recommendation = getJourneyRecommendation(pathInfo.threads);
+    const recommendation = getJourneyRecommendation(
+      pathInfo.threads,
+      prerequisites?.[journey.pathId],
+    );
     if (!recommendation) return;
 
     const threadState = getThreadJourneyState(recommendation.threadId);
+    const drill =
+      recommendation.kind === "practice" ? drillsByLesson?.[recommendation.threadId] : undefined;
 
     trackLearningRecommendationShown({
       pathId: journey.pathId,
@@ -89,9 +128,12 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
         reviewDueAt: threadState?.reviewDueAt,
         practiceCount: threadState?.timesPracticed,
         reviewCount: threadState?.timesReviewed,
+        drill: drill
+          ? { ...drill, runs: getDrillJourneyState(drill.id)?.timesPracticed ?? 0 }
+          : undefined,
       }),
     );
-  }, [paths]);
+  }, [paths, prerequisites, drillsByLesson]);
 
   // No journey, or none readable yet on first paint: the server-rendered card.
   if (!state) return <>{children}</>;
@@ -109,6 +151,9 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
     state.kind === "practice" && state.practiceCount
       ? `Practiced ${state.practiceCount} time${state.practiceCount === 1 ? "" : "s"} so far.`
       : null,
+    state.kind === "practice" && state.drill && state.drill.runs > 0
+      ? `Ran ${state.drill.title} ${state.drill.runs} time${state.drill.runs === 1 ? "" : "s"}.`
+      : null,
     state.kind === "review" && state.reviewCount
       ? `Reviewed ${state.reviewCount} time${state.reviewCount === 1 ? "" : "s"} already.`
       : null,
@@ -116,13 +161,19 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
     .filter(Boolean)
     .join(" ");
 
+  // The lesson's own page, and — for a practice card whose lesson has a
+  // drill on its row — the drill's, which is what "practise" means.
+  const lessonHref = `/threads/${state.threadId}`;
+  const cardHref = state.drill ? state.drill.href : lessonHref;
+
   // mt-8 rather than mb-8: this now occupies the slot the "Start here" card
   // sits in, inside the header, and the card it replaces carries mt-8. Matching
   // it keeps the swap from moving the block it sits under.
   return (
-    <section className="mt-8">
+    <section className="mt-8" data-journey-card={state.kind}>
       <Link
-        href={`/threads/${state.threadId}`}
+        href={cardHref}
+        data-drill-id={state.drill?.id}
         onClick={() =>
           trackLearningRecommendationClicked({
             pathId: state.pathId,
@@ -144,6 +195,11 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
                 Thread {state.current} of {state.total}
               </span>
             </div>
+            {state.drill && (
+              <p className="mt-1 text-sm">
+                Practise <em>{state.drill.title}</em> for <em>{state.drill.lessonTitle}</em>
+              </p>
+            )}
             <p className="text-foreground/50 mt-2 text-sm">
               {state.reason}
               {state.recency ? ` Last touched ${state.recency}.` : ""}
@@ -155,15 +211,26 @@ export function ContinueJourney({ paths, children }: ContinueJourneyProps) {
           </span>
         </div>
       </Link>
-      <button
-        onClick={() => {
-          clearJourney();
-          setState(null);
-        }}
-        className="text-foreground/30 hover:text-foreground/50 mt-2 cursor-pointer text-xs"
-      >
-        Start over
-      </button>
+      <div className="mt-2 flex flex-wrap gap-4">
+        {state.drill && (
+          <Link
+            href={lessonHref}
+            data-journey-lesson-link={state.threadId}
+            className="text-foreground/40 hover:text-foreground/60 text-xs hover:underline"
+          >
+            Or reread {state.drill.lessonTitle} &rarr;
+          </Link>
+        )}
+        <button
+          onClick={() => {
+            clearJourney();
+            setState(null);
+          }}
+          className="text-foreground/30 hover:text-foreground/50 cursor-pointer text-xs"
+        >
+          Start over
+        </button>
+      </div>
     </section>
   );
 }

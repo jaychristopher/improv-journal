@@ -7,6 +7,16 @@ export interface PathRecommendation {
   rationale: string;
 }
 
+/**
+ * The path each audience is sent to first, from /learn/*, the homepage and
+ * /paths. Each is the entry of its audience's chain in path-progression:
+ * any path that points at it there has a lower audience, so a reader who
+ * starts here is not being dropped into the middle of a sequence written for
+ * their own level. The audience hubs' up/down arrows (LevelRedirect) read
+ * this table and the chain rather than a third one, and
+ * path-recommendations.test.ts asserts the entry property (tracker entry
+ * 247, 2026-09-21).
+ */
 const RECOMMENDED_PATHS: Record<Audience, PathRecommendation> = {
   beginner: {
     id: "beginner-foundations",

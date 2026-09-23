@@ -17,7 +17,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-08-24"
 ---
 
 Tilt is the moment the established normality breaks. Johnstone's term for the event that turns a situation into a story — the balance of ordinary life is tilted, and everything after it is consequence.

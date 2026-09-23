@@ -77,7 +77,7 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
         <span className="text-foreground/40 text-xs tracking-wider uppercase">podcast</span>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{fm.title}</h1>
         <p className="text-foreground/60 mt-2">{fm.description}</p>
-        <p className="text-foreground/40 mt-2 text-sm">
+        <p className="text-foreground/40 mt-2 text-sm" data-track="feed-link">
           {totalEpisodes} episodes &middot;{" "}
           <Link href={`/listen/${fm.id}/feed.xml`} className="hover:text-foreground/60">
             RSS Feed
@@ -87,7 +87,7 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
 
       {/* Start Here */}
       {startHere && (
-        <section className="mb-12">
+        <section className="mb-12" data-track="start-here">
           <h2 className="text-foreground/40 mb-3 text-sm font-semibold tracking-wider uppercase">
             Start here
           </h2>
@@ -109,13 +109,14 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
       {show.html && (
         <article
           className="prose prose-neutral dark:prose-invert prose-sm mb-12 max-w-none"
+          data-track="show-intro"
           dangerouslySetInnerHTML={{ __html: show.html }}
         />
       )}
 
       {/* Seasons */}
       {seasons.map((season) => (
-        <section key={season.label} className="mb-12">
+        <section key={season.label} className="mb-12" data-track="episode-list">
           <h2 className="mb-4 text-lg font-semibold">
             {season.label}
             <span className="text-foreground/40 ml-2 font-normal">({season.episodes.length})</span>
@@ -135,8 +136,10 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
                       <span className="text-foreground/30 ml-2 text-xs">{ep.duration}</span>
                     )}
                   </div>
+                  {/* Straight to the transcript section: the episode page carries
+                      id="transcript", and this link used to land at the top. */}
                   <Link
-                    href={ep.href}
+                    href={`${ep.href}#transcript`}
                     className="text-foreground/40 hover:text-foreground/60 ml-3 shrink-0 text-xs"
                   >
                     Transcript &rarr;
