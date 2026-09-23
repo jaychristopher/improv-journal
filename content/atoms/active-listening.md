@@ -23,7 +23,7 @@ links:
   - { id: ref-cherry-cocktail-party, relation: illustrates }
 sources: []
 created: "2026-03-29"
-updated: "2026-08-30"
+updated: "2026-09-23"
 ---
 
 Active listening in improv goes beyond hearing words. It means receiving everything your scene partner is communicating — their words, tone, body language, emotional state, the implications of their choices, and crucially, what is left unsaid. Del Close and Charna Halpern: *"An improviser must consider what is said, and what is left unsaid, as well."* At its deepest, listening is not cognitive processing but felt contact — letting your partner's state land in your body, not just your brain.

@@ -20,7 +20,7 @@ links:
   - { id: performing-cleverness, relation: contrasts }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-09-23"
 ---
 
 **Trains:** Space work — building and maintaining a shared physical environment with no dialogue.

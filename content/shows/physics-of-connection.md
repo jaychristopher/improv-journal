@@ -7,7 +7,7 @@ seasons:
     filter: { content_type: bridge }
 show_type: episodic
 created: "2026-04-07"
-updated: "2026-04-07"
+updated: "2026-09-23"
 ---
 
 Every conversation runs on the same physics. These episodes take real problems — overthinking, stage fright, team dysfunction, creative blocks — and explain them through a framework discovered on the improv stage.

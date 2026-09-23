@@ -19,7 +19,7 @@ seasons:
     filter: { content_type: atom, atom_types: [format] }
 show_type: serial
 created: "2026-04-07"
-updated: "2026-09-21"
+updated: "2026-09-23"
 ---
 
 Before class, during warm-up, on the walk home after a show. Each episode explains one concept — what it is, why it matters, how to practice it — in about six minutes.

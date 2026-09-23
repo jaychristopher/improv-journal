@@ -16,7 +16,7 @@ links:
   - { id: ref-overlie-standing-in-space, relation: illustrates }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-23"
 ---
 
 Viewpoints is a movement-based training system that splits physical awareness into nine named channels — tempo, duration, kinesthetic response, repetition, shape, gesture, architecture, spatial relationship and topography — so that staging arrives by noticing rather than by deciding.

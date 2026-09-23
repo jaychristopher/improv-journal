@@ -20,7 +20,7 @@ links:
   - { id: performing-cleverness, relation: contrasts }
 sources: [improv-is-high-stakes-reality-construction]
 created: "2026-03-29"
-updated: "2026-08-30"
+updated: "2026-09-23"
 ---
 
 **Trains:** Be Thankful — receiving unexpected input as a gift rather than a problem.

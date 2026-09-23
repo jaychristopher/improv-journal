@@ -29,7 +29,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-09-23"
 ---
 
 Trust is the foundation that makes every other principle safe to practice. Without trust, bravery is recklessness, honesty is exposure, changeability is surrender, and support is naivety.

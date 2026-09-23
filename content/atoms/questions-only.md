@@ -16,7 +16,7 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-30"
+updated: "2026-09-23"
 ---
 
 **Trains:** noticing how much of a conversation is deferral. Two players hold a scene in which every line must be a question — and the exercise is most useful for what it reveals about the habit, not for the habit itself.

@@ -22,7 +22,7 @@ links:
   - { id: steering, relation: contrasts }
 sources: []
 created: "2026-04-05"
-updated: "2026-08-29"
+updated: "2026-09-23"
 ---
 
 **Trains:** Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum. Viola Spolin's core exercise — taught at every school, in every first class.

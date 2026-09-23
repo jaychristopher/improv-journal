@@ -17,7 +17,7 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
 created: "2026-04-05"
-updated: "2026-09-21"
+updated: "2026-09-23"
 ---
 
 **Trains:** Group free-association, thematic extraction, comfort with ambiguity, ensemble coherence. The Harold opening practiced as a standalone exercise, removed from performance context.

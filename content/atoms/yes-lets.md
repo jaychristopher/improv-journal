@@ -18,7 +18,7 @@ links:
   - { id: blocking, relation: contrasts }
 sources: []
 created: "2026-08-24"
-updated: "2026-08-29"
+updated: "2026-09-23"
 ---
 
 Somebody says "let's paint the fence." Everybody answers "Yes, let's!" and starts painting the fence. Somebody else says "let's climb the fence," and the room climbs it. It takes four minutes and it is the most-taught first exercise in improv.

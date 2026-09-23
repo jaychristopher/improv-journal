@@ -18,7 +18,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-09-21"
+updated: "2026-09-23"
 ---
 
 # Confidence Building Exercises That Aren't Affirmations

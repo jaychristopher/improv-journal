@@ -19,7 +19,7 @@ links:
   - { id: hesitation, relation: contrasts }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-29"
+updated: "2026-09-23"
 ---
 
 **Trains:** building something collectively out of parts nobody negotiated. It needs no equipment and no preparation, which is the whole category [party games](/party-games) is drawn from — the ones that need nothing at all travel furthest. One player starts a repeating movement and sound; everyone else joins on, one at a time, until the group is a single working machine.

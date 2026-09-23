@@ -20,7 +20,7 @@ links:
   - { id: performing-cleverness, relation: contrasts }
 sources: []
 created: "2026-08-22"
-updated: "2026-08-30"
+updated: "2026-09-23"
 ---
 
 **Trains:** giving up authorship. A circle tells one story, one word per person, and nobody is allowed to know where it is going.

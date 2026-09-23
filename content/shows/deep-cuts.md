@@ -11,7 +11,7 @@ seasons:
     filter: { content_type: path }
 show_type: serial
 created: "2026-04-07"
-updated: "2026-09-21"
+updated: "2026-09-23"
 ---
 
 These episodes go deep. Each one takes a theme — the anatomy of a scene, the game beneath the game, what happens when connection breaks — and explores it in a sustained conversation.
