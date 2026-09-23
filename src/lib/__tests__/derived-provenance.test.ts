@@ -99,6 +99,11 @@ const EXEMPT: { name: string; file: string; why: string }[] = [
     why: "an interactive tool, not a link block — the same case as the generator above",
   },
   {
+    name: "game-picker",
+    file: "src/components/GamePicker.tsx",
+    why: "an interactive tool, not a link block — the same case as the two above",
+  },
+  {
     name: "collapse-modes",
     file: "src/app/how-it-works/diagnosis/page.tsx",
     why: "argued by hand in the page, links chosen",
