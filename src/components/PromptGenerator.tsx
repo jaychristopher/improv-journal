@@ -263,7 +263,7 @@ export function PromptGenerator({
                 <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
               ))}
             </div>
-            <p className="text-hero-muted/70 mt-5 text-xs">
+            <p className="text-hero-subtle mt-5 text-xs">
               {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
               {surface === "guide-hero" && (
                 <>
@@ -291,7 +291,7 @@ export function PromptGenerator({
           className="bg-background text-foreground animate-fade-in fixed inset-0 z-[60] flex h-dvh flex-col"
         >
           <div className="flex items-center justify-between px-5 pt-[max(1rem,env(safe-area-inset-top))] pb-3 sm:px-8">
-            <div className="text-foreground/50 min-w-0 text-xs tracking-wider uppercase">
+            <div className="text-foreground-dim min-w-0 text-xs tracking-wider uppercase">
               {step === "room" && "Where are you using it?"}
               {step === "kind" && useCaseInfo && (
                 <button
@@ -312,7 +312,7 @@ export function PromptGenerator({
               type="button"
               onClick={close}
               aria-label="Close"
-              className="text-foreground/60 hover:text-foreground hover:bg-foreground/5 -mr-2 flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full transition-colors"
+              className="text-foreground/80 hover:text-foreground hover:bg-foreground/5 -mr-2 flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full transition-colors"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -344,7 +344,7 @@ export function PromptGenerator({
                 <h2 className="text-foreground-strong text-3xl font-semibold tracking-tight">
                   What kind of start?
                 </h2>
-                <p className="text-foreground/60 mt-2 text-sm">{useCaseInfo.description}</p>
+                <p className="text-foreground/80 mt-2 text-sm">{useCaseInfo.description}</p>
                 <div className="mt-6 grid gap-2">
                   {PROMPT_CATEGORIES.map((kind) => {
                     const poolSize = poolFor(PROMPT_BANK, kind.id, useCaseInfo.id).length;
@@ -366,7 +366,7 @@ export function PromptGenerator({
                 <div className="flex flex-1 flex-col justify-center">
                   {draw.pick ? (
                     <>
-                      <p className="text-foreground/40 text-xs tracking-wider uppercase">
+                      <p className="text-foreground-dim text-xs tracking-wider uppercase">
                         {draw.pick.remaining} of {draw.poolSize} left
                       </p>
                       <p
@@ -376,7 +376,7 @@ export function PromptGenerator({
                       >
                         {draw.pick.prompt.text}
                       </p>
-                      <p className="text-foreground/60 mt-6 max-w-md text-sm leading-relaxed">
+                      <p className="text-foreground/80 mt-6 max-w-md text-sm leading-relaxed">
                         {categoryInfo.howToUse}
                       </p>
                       {/* The category is a concept under another name, and
@@ -388,7 +388,7 @@ export function PromptGenerator({
                           resolved map. */}
                       {concept && (
                         <p
-                          className="text-foreground/50 mt-3 max-w-md text-sm leading-relaxed"
+                          className="text-foreground-dim mt-3 max-w-md text-sm leading-relaxed"
                           data-prompt-concept={concept.id}
                         >
                           The idea behind it:{" "}
@@ -404,14 +404,14 @@ export function PromptGenerator({
                     </>
                   ) : (
                     <>
-                      <p className="text-foreground/40 text-xs tracking-wider uppercase">
+                      <p className="text-foreground-dim text-xs tracking-wider uppercase">
                         That is all of them
                       </p>
                       <h2 className="text-foreground-strong mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
                         You have seen every {categoryInfo.label.toLowerCase()} prompt for{" "}
                         {useCaseInfo.label.toLowerCase()}.
                       </h2>
-                      <p className="text-foreground/60 mt-4 max-w-md text-sm leading-relaxed">
+                      <p className="text-foreground/80 mt-4 max-w-md text-sm leading-relaxed">
                         {draw.poolSize} in total. Start again to draw from the same pool, or pick a
                         different kind.
                       </p>
@@ -432,7 +432,7 @@ export function PromptGenerator({
                       <button
                         type="button"
                         onClick={() => copyPrompt(draw.pick?.prompt.text ?? "")}
-                        className="border-foreground/15 hover:border-foreground/40 min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
+                        className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
                       >
                         {copied ? "Copied" : "Copy"}
                       </button>
@@ -449,7 +449,7 @@ export function PromptGenerator({
                   <button
                     type="button"
                     onClick={() => setStep("kind")}
-                    className="border-foreground/15 hover:border-foreground/40 min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
+                    className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
                   >
                     A different kind
                   </button>
@@ -487,8 +487,8 @@ function RoomButton({
       className={[
         "group flex min-h-14 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border px-3 py-3 text-left transition-colors sm:gap-3 sm:px-4",
         hero
-          ? "border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10"
-          : "border-foreground/10 bg-background hover:border-foreground/40",
+          ? "border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15"
+          : "border-border-ui bg-background hover:border-foreground-strong",
       ].join(" ")}
     >
       <span className="min-w-0">
@@ -505,7 +505,7 @@ function RoomButton({
           id={descId}
           className={[
             "mt-0.5 text-xs",
-            hero ? "text-hero-muted" : "text-foreground/50",
+            hero ? "text-hero-muted" : "text-foreground-dim",
             compact ? "hidden sm:block" : "block",
           ].join(" ")}
         >
@@ -515,7 +515,7 @@ function RoomButton({
       <span
         className={[
           "hidden shrink-0 transition-transform group-hover:translate-x-1 sm:inline",
-          hero ? "text-hero-muted/60" : "text-foreground/30",
+          hero ? "text-hero-muted/60" : "text-foreground-dim",
         ].join(" ")}
       >
         &rarr;
@@ -541,17 +541,17 @@ function KindButton({
       onClick={() => onChoose(kind)}
       aria-labelledby={labelId}
       aria-describedby={descId}
-      className="group border-foreground/10 bg-surface hover:border-foreground/40 flex min-h-14 w-full cursor-pointer items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition-colors"
+      className="group border-border-ui bg-surface hover:border-foreground-strong flex min-h-14 w-full cursor-pointer items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition-colors"
     >
       <span className="min-w-0">
         <span id={labelId} className="text-foreground-strong block text-base font-semibold">
           {kind.label}
         </span>
-        <span id={descId} className="text-foreground/50 mt-0.5 block text-xs">
+        <span id={descId} className="text-foreground-dim mt-0.5 block text-xs">
           {poolSize} to draw from
         </span>
       </span>
-      <span className="text-foreground/30 shrink-0 transition-transform group-hover:translate-x-1">
+      <span className="text-foreground-dim shrink-0 transition-transform group-hover:translate-x-1">
         &rarr;
       </span>
     </button>

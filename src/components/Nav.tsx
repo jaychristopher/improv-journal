@@ -112,7 +112,7 @@ function NavDropdown({ section }: { section: NavSection }) {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="text-foreground/50 hover:text-foreground/80 flex cursor-pointer items-center gap-1 text-sm transition-colors"
+        className="text-foreground-dim hover:text-foreground-strong flex cursor-pointer items-center gap-1 text-sm transition-colors"
       >
         {section.label}
         <svg
@@ -137,7 +137,7 @@ function NavDropdown({ section }: { section: NavSection }) {
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
-            className="text-foreground/50 hover:text-foreground/80 hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
+            className="text-foreground-dim hover:text-foreground-strong hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
           >
             {item.label}
           </Link>
@@ -181,7 +181,7 @@ export function Nav() {
         <div className="flex items-center gap-2 sm:hidden">
           <SearchInput />
           <button
-            className="text-foreground/50 hover:text-foreground/80 cursor-pointer"
+            className="text-foreground-dim hover:text-foreground-strong cursor-pointer"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
@@ -232,7 +232,7 @@ export function Nav() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-foreground/50 hover:text-foreground/70 block text-lg"
+                  className="text-foreground-dim hover:text-foreground-strong block text-lg"
                 >
                   {item.label}
                 </Link>

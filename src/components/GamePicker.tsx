@@ -188,7 +188,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                   key={info.id}
                   type="button"
                   onClick={(event) => chooseJob(info, event)}
-                  className="border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-3 text-left transition-colors sm:p-4"
                 >
                   <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
                     {info.label}
@@ -201,7 +201,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
             </div>
             {/* The hub used to open with a card for this; a footnote keeps the
                 edge without putting a second tool in front of the first. */}
-            <p className="text-hero-muted/70 mt-5 text-xs">
+            <p className="text-hero-subtle mt-5 text-xs">
               {total} games, every one of them on this page — or{" "}
               <Link href="/tools/exercise-picker" className="underline underline-offset-2">
                 filter them by level and focus
@@ -222,14 +222,14 @@ export function GamePicker({ pools }: { pools: GamePools }) {
         >
           <div className="mx-auto flex min-h-full max-w-3xl flex-col px-4 py-6 sm:px-6">
             <div className="flex items-start justify-between gap-4">
-              <p className="text-foreground/50 text-xs">
+              <p className="text-foreground-dim text-xs">
                 {jobInfo?.label}
                 {symptom ? ` · ${symptom.label.toLowerCase()}` : ""}
               </p>
               <button
                 type="button"
                 onClick={close}
-                className="text-foreground/50 hover:text-foreground shrink-0 text-sm underline underline-offset-4"
+                className="text-foreground-dim hover:text-foreground shrink-0 text-sm underline underline-offset-4"
               >
                 Close
               </button>
@@ -238,7 +238,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
             {step === "job" && (
               <div className="mt-8">
                 <h3 className="text-foreground-strong text-xl font-semibold">What is it for?</h3>
-                <p className="text-foreground/60 mt-2 text-sm">
+                <p className="text-foreground/80 mt-2 text-sm">
                   These get lumped together as improv games and they do three different jobs.
                   Reaching for the wrong kind is the most common way a session goes flat.
                 </p>
@@ -248,12 +248,12 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                       key={info.id}
                       type="button"
                       onClick={(event) => chooseJob(info, event)}
-                      className="border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 rounded-lg border p-4 text-left transition-colors"
+                      className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border p-4 text-left transition-colors"
                     >
                       <span className="text-foreground-strong block font-semibold">
                         {info.label}
                       </span>
-                      <span className="text-foreground/50 mt-1 block text-xs leading-snug">
+                      <span className="text-foreground-dim mt-1 block text-xs leading-snug">
                         {info.note}
                       </span>
                     </button>
@@ -267,7 +267,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                 <h3 className="text-foreground-strong text-xl font-semibold">
                   What is going wrong?
                 </h3>
-                <p className="text-foreground/60 mt-2 text-sm">
+                <p className="text-foreground/80 mt-2 text-sm">
                   Almost every game here exists because some specific thing was failing and somebody
                   built a constraint that made it impossible.
                 </p>
@@ -277,13 +277,13 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                       key={entry.id}
                       type="button"
                       onClick={() => chooseSymptom(entry)}
-                      className="border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 text-foreground-strong rounded-lg border p-4 text-left font-semibold transition-colors"
+                      className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] text-foreground-strong rounded-lg border p-4 text-left font-semibold transition-colors"
                     >
                       {entry.label}
                     </button>
                   ))}
                 </div>
-                <p className="text-foreground/50 mt-5 text-xs leading-relaxed">
+                <p className="text-foreground-dim mt-5 text-xs leading-relaxed">
                   Cannot name it yet? That is its own problem and worth solving first —{" "}
                   <Link href="/how-it-works/diagnosis" className="underline underline-offset-2">
                     what it looks like when a scene breaks
@@ -295,7 +295,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
 
             {step === "game" && game && (
               <div className="mt-6">
-                <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                <span className="text-foreground-dim text-xs tracking-wider uppercase">
                   {game.kind === "format" ? "To play" : "To run"}
                 </span>
                 <h3 className="text-foreground-strong mt-1 text-2xl font-semibold sm:text-3xl">
@@ -324,7 +324,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                   <button
                     type="button"
                     onClick={() => setStep(job === "fix" ? "symptom" : "job")}
-                    className="text-foreground/50 hover:text-foreground text-sm underline underline-offset-4"
+                    className="text-foreground-dim hover:text-foreground text-sm underline underline-offset-4"
                   >
                     {job === "fix" ? "Something else is wrong" : "Change what it is for"}
                   </button>
@@ -336,7 +336,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                     exercise too, and telling somebody to run one slowly and
                     interrupt often contradicts the job they just chose. */}
                 {job === "fix" && (
-                  <p className="text-foreground/40 mt-8 text-xs leading-relaxed">
+                  <p className="text-foreground-dim mt-8 text-xs leading-relaxed">
                     Run it slowly and interrupt often. It is not built to be watched — the moment
                     players sense an audience they start playing for the laugh, and whatever it was
                     isolating is gone.

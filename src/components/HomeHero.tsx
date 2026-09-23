@@ -136,7 +136,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
             </p>
           </div>
           <div className="mt-8 lg:mt-0">
-            <p className="text-hero-muted/70 mb-3 text-xs tracking-wider uppercase">
+            <p className="text-hero-subtle mb-3 text-xs tracking-wider uppercase">
               What are you here for?
             </p>
             <div className="grid gap-2 sm:gap-3">
@@ -145,7 +145,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
                   key={info.id}
                   type="button"
                   onClick={(event) => openDoor(info, event)}
-                  className="border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10 rounded-xl border p-4 text-left transition-colors"
+                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-4 text-left transition-colors"
                 >
                   <span className="text-hero-foreground block text-base font-semibold sm:text-lg">
                     {info.label}
@@ -158,7 +158,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
             </div>
             {/* The two doors share everything underneath; the page says so
                 rather than letting the fork read as two sites. */}
-            <p className="text-hero-muted/70 mt-5 text-xs leading-relaxed">
+            <p className="text-hero-subtle mt-5 text-xs leading-relaxed">
               Same material either way. Scroll for what keeps breaking, the guides, and the system
               underneath them.
             </p>
@@ -176,11 +176,11 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
         >
           <div className="mx-auto flex min-h-full max-w-3xl flex-col px-4 py-6 sm:px-6">
             <div className="flex items-start justify-between gap-4">
-              <p className="text-foreground/50 text-xs">{door.label}</p>
+              <p className="text-foreground-dim text-xs">{door.label}</p>
               <button
                 type="button"
                 onClick={close}
-                className="text-foreground/50 hover:text-foreground shrink-0 text-sm underline underline-offset-4"
+                className="text-foreground-dim hover:text-foreground shrink-0 text-sm underline underline-offset-4"
               >
                 Close
               </button>
@@ -189,26 +189,26 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
             {!chosen && (
               <div className="mt-8">
                 <h2 className="text-foreground-strong text-xl font-semibold">{door.question}</h2>
-                <p className="text-foreground/60 mt-2 text-sm leading-relaxed">{door.preamble}</p>
+                <p className="text-foreground/80 mt-2 text-sm leading-relaxed">{door.preamble}</p>
                 <div className="mt-5 grid gap-2">
                   {answers.map((option) => (
                     <button
                       key={option.id}
                       type="button"
                       onClick={() => choose(option)}
-                      className="border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 rounded-lg border p-4 text-left transition-colors"
+                      className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border p-4 text-left transition-colors"
                     >
                       <span className="text-foreground-strong block font-semibold">
                         {option.label}
                       </span>
-                      <span className="text-foreground/50 mt-1 block text-xs leading-snug">
+                      <span className="text-foreground-dim mt-1 block text-xs leading-snug">
                         {option.note}
                       </span>
                     </button>
                   ))}
                 </div>
                 {door.id === "improv" && (
-                  <p className="text-foreground/50 mt-5 text-xs leading-relaxed">
+                  <p className="text-foreground-dim mt-5 text-xs leading-relaxed">
                     Something to run tonight instead?{" "}
                     <Link href="/improv-games" className="underline underline-offset-2">
                       Improv games
@@ -221,7 +221,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
                   </p>
                 )}
                 {door.id === "communication" && (
-                  <p className="text-foreground/50 mt-5 text-xs leading-relaxed">
+                  <p className="text-foreground-dim mt-5 text-xs leading-relaxed">
                     None of it assumes you want to perform. Improv is only where this got worked out
                     in the most detail, by people who had to do it nightly in front of strangers.
                   </p>
@@ -231,7 +231,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
 
             {chosen && (
               <div className="mt-8">
-                <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                <span className="text-foreground-dim text-xs tracking-wider uppercase">
                   Where to start
                 </span>
                 <h2 className="text-foreground-strong mt-1 text-2xl font-semibold sm:text-3xl">
@@ -250,11 +250,11 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
                       className={[
                         "block rounded-lg border p-4 transition-colors",
                         i === 0
-                          ? "border-foreground/30 bg-foreground/[0.04] hover:border-foreground/50"
-                          : "border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5",
+                          ? "border-foreground-strong bg-foreground/[0.06] hover:border-foreground-strong"
+                          : "border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07]",
                       ].join(" ")}
                     >
-                      <span className="text-foreground/40 text-xs tracking-wider uppercase">
+                      <span className="text-foreground-dim text-xs tracking-wider uppercase">
                         {link.kicker}
                       </span>
                       <span className="text-foreground-strong mt-1 block font-semibold">
@@ -270,7 +270,7 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
                 <button
                   type="button"
                   onClick={() => setChosen(null)}
-                  className="text-foreground/50 hover:text-foreground mt-6 text-sm underline underline-offset-4"
+                  className="text-foreground-dim hover:text-foreground mt-6 text-sm underline underline-offset-4"
                 >
                   {door.back}
                 </button>

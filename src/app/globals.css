@@ -12,6 +12,26 @@
   --hero: #101014;
   --hero-foreground: #f4f4f5;
   --hero-muted: #a1a1aa;
+  --hero-subtle: #8b8b94;
+  /*
+   * The dim text colour, as a colour rather than as an opacity.
+   *
+   * `text-foreground/50` was the nav's dim state and it composites to #919191
+   * on this background: 2.73:1, where AA wants 4.5 for text and 3 for an icon
+   * (measured 2026-09-23). The whole ramp below /70 fails in both themes, so
+   * the dim state cannot be a fraction of the body colour — these are the
+   * dimmest greys that still pass on each background, #6d6d6d light and
+   * #797979 dark, with a little margin.
+   */
+  --foreground-dim: #5f5f5f;
+  /*
+   * The boundary of a control that has no fill of its own.
+   *
+   * `border-foreground/10` composites to #ddd here — 1.20:1, where 1.4.11
+   * wants 3 for the visual boundary that identifies a control. A hairline at
+   * 10% is a divider, which is a different job.
+   */
+  --border-ui: #7d7d7d;
 }
 
 :root.dark {
@@ -20,14 +40,19 @@
   --foreground-strong: #ededed;
   --link: #6baaed;
   --surface: #141414;
+  --foreground-dim: #8a8a8a;
+  --border-ui: #6e6e6e;
 }
 
 @theme inline {
   --color-hero: var(--hero);
   --color-hero-foreground: var(--hero-foreground);
   --color-hero-muted: var(--hero-muted);
+  --color-hero-subtle: var(--hero-subtle);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-foreground-dim: var(--foreground-dim);
+  --color-border-ui: var(--border-ui);
   --color-foreground-strong: var(--foreground-strong);
   --color-surface: var(--surface);
   --font-sans: var(--font-geist-sans);
@@ -241,7 +266,7 @@ body {
  * the hero instead of staying light-on-light over the article below it.
  *
  * Redefining --foreground here rather than restyling each link: the nav's own
- * utilities (text-foreground/50 and the rest) resolve against these, so the
+ * utilities (text-foreground-dim and the rest) resolve against these, so the
  * whole bar inverts without a second set of classes to keep in step.
  */
 @media (width < 64rem) {
@@ -265,6 +290,7 @@ body {
   body:has([data-hero-takeover]) nav[data-track="nav"] [data-nav-bar] {
     --foreground: var(--hero-muted);
     --foreground-strong: var(--hero-foreground);
+    --foreground-dim: var(--hero-muted);
     color: var(--hero-foreground);
   }
 }

@@ -173,7 +173,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                   key={r.id}
                   type="button"
                   onClick={(event) => chooseRoom(r.id, event)}
-                  className="border-hero-foreground/15 hover:border-hero-foreground/40 hover:bg-hero-foreground/10 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-3 text-left transition-colors sm:p-4"
                 >
                   <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
                     {r.label}
@@ -184,7 +184,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                 </button>
               ))}
             </div>
-            <p className="text-hero-muted/70 mt-5 text-xs">
+            <p className="text-hero-subtle mt-5 text-xs">
               {WOULD_YOU_RATHER_BANK.length} pairs, every one of them on this page.
             </p>
           </div>
@@ -201,7 +201,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
         >
           <div className="mx-auto flex min-h-full max-w-3xl flex-col px-4 py-6 sm:px-6">
             <div className="flex items-start justify-between gap-4">
-              <p className="text-foreground/50 text-xs">
+              <p className="text-foreground-dim text-xs">
                 {info?.label}
                 {variant ? ` · ${variant.label}` : ""}
                 {dealt > 0 ? ` · pair ${dealt}` : ""}
@@ -209,7 +209,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
               <button
                 type="button"
                 onClick={close}
-                className="text-foreground/50 hover:text-foreground shrink-0 text-sm underline underline-offset-4"
+                className="text-foreground-dim hover:text-foreground shrink-0 text-sm underline underline-offset-4"
               >
                 Close
               </button>
@@ -218,7 +218,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
             {step === "size" && (
               <div className="mt-8">
                 <h3 className="text-foreground-strong text-xl font-semibold">How many of you?</h3>
-                <p className="text-foreground/60 mt-2 text-sm">
+                <p className="text-foreground/80 mt-2 text-sm">
                   This page prescribes a different way to run it at each size. The pairs are the
                   same; the way the room answers is not.
                 </p>
@@ -230,12 +230,12 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                         key={size.people}
                         type="button"
                         onClick={() => chooseSize(size.people)}
-                        className="border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 rounded-lg border p-4 text-left transition-colors"
+                        className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border p-4 text-left transition-colors"
                       >
                         <span className="text-foreground-strong block font-semibold">
                           {size.label}
                         </span>
-                        <span className="text-foreground/50 mt-1 block text-xs leading-snug">
+                        <span className="text-foreground-dim mt-1 block text-xs leading-snug">
                           {v.label}: {v.how}
                         </span>
                       </button>
@@ -250,7 +250,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                 {/* The rule, before the pair and on every card. The page calls
                     "it depends" a refusal dressed as thoughtfulness, and one
                     person doing it gives everybody else permission. */}
-                <p className="text-foreground/50 text-xs">
+                <p className="text-foreground-dim text-xs">
                   You have to pick. Not both, not neither, not &ldquo;it depends&rdquo; — that is{" "}
                   <Link href="/how-it-works/diagnosis/blocking" className="underline">
                     blocking
@@ -275,10 +275,10 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                       data-side={side}
                       className={`flex min-h-[7rem] items-center justify-center rounded-xl border p-5 text-center text-lg leading-snug transition-colors sm:text-xl ${
                         picked === side
-                          ? "border-foreground/40 bg-foreground/10 text-foreground-strong font-semibold"
+                          ? "border-foreground-strong bg-foreground/10 text-foreground-strong font-semibold"
                           : picked
-                            ? "border-foreground/10 text-foreground/40"
-                            : "border-foreground/15 hover:border-foreground/40 hover:bg-foreground/5 text-foreground-strong"
+                            ? "border-border-ui text-foreground-dim"
+                            : "border-border-ui hover:border-foreground-strong hover:bg-foreground/[0.07] text-foreground-strong"
                       }`}
                     >
                       {capitalise(side === "left" ? pair.left : pair.right)}
@@ -294,7 +294,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                   </p>
                 ) : (
                   dealt === 1 && (
-                    <p className="text-foreground/50 mt-4 text-sm">
+                    <p className="text-foreground-dim mt-4 text-sm">
                       Whoever answers first sets the tone for the whole round, thoughtful or jokes.
                       Worth deciding on purpose.
                     </p>
@@ -312,14 +312,14 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                   <button
                     type="button"
                     onClick={() => setStep("size")}
-                    className="text-foreground/50 hover:text-foreground text-sm underline underline-offset-4"
+                    className="text-foreground-dim hover:text-foreground text-sm underline underline-offset-4"
                   >
                     Change the room
                   </button>
                 </div>
 
                 {dealt >= SESSION_NUDGE_AT && (
-                  <p className="text-foreground/50 mt-4 text-xs">
+                  <p className="text-foreground-dim mt-4 text-xs">
                     {dealt >= SESSION_LONG_AT
                       ? "Past a long session now. The second half of a long list is always weaker."
                       : "A session is ten to fifteen pairs. Stop while people still want another one."}
@@ -327,8 +327,8 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                 )}
 
                 {variant && (
-                  <p className="text-foreground/40 mt-6 text-xs leading-relaxed">
-                    <span className="text-foreground/60">{variant.label}.</span> {variant.how}{" "}
+                  <p className="text-foreground-dim mt-6 text-xs leading-relaxed">
+                    <span className="text-foreground/80">{variant.label}.</span> {variant.how}{" "}
                     {variant.why}
                   </p>
                 )}
