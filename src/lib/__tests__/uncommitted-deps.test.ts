@@ -59,11 +59,14 @@ const RESOLUTION_CANDIDATES = [
 ];
 
 /**
- * Import sites in committed files reaching an untracked module, as measured
- * on 2026-09-22 (155, across 65 distinct modules). Debt, not budget: see the
- * header. A commit shrinks it; nothing else should.
+ * Import sites in committed files reaching an untracked module. 155 across 65
+ * modules when this was written on 2026-09-22; 0 since 2026-09-23, when the
+ * night's work was committed and the debt this guard existed to name went
+ * away. Debt, not budget: see the header. A commit shrinks it; nothing else
+ * should, and at 0 any new module a committed file imports fails here until
+ * it is committed too.
  */
-const ALLOWANCE = 155;
+const ALLOWANCE = 0;
 
 /**
  * Guard the guard. A resolver that silently stops resolving, or a walk that
