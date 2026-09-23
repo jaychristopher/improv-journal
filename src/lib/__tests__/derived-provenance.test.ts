@@ -104,6 +104,11 @@ const EXEMPT: { name: string; file: string; why: string }[] = [
     why: "an interactive tool, not a link block — the same case as the two above",
   },
   {
+    name: "home-hero",
+    file: "src/components/HomeHero.tsx",
+    why: "an interactive tool, not a link block — the same case as the three above",
+  },
+  {
     name: "collapse-modes",
     file: "src/app/how-it-works/diagnosis/page.tsx",
     why: "argued by hand in the page, links chosen",

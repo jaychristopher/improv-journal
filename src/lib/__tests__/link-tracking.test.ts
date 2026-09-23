@@ -21,6 +21,7 @@ const TRACKED: Record<string, string[]> = {
   "src/components/GuideConcepts.tsx": ["guide-concepts"],
   "src/components/WouldYouRather.tsx": ["would-you-rather"],
   "src/components/GamePicker.tsx": ["game-picker"],
+  "src/components/HomeHero.tsx": ["home-hero"],
   "src/components/LessonCrosslink.tsx": ["lesson-crosslink"],
   "src/components/SyllabusProgress.tsx": ["syllabus-concepts-read"],
   "src/components/LineageLine.tsx": ["atom-lineage"],
