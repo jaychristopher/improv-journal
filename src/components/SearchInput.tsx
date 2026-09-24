@@ -12,6 +12,8 @@ interface QuickResult {
   url: string;
 }
 
+const FOCUSABLE = 'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])';
+
 const POPULAR_QUERIES = [
   "yes and",
   "active listening",
@@ -56,6 +58,9 @@ export function SearchInput() {
   const [selectedIdx, setSelectedIdx] = useState(-1);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  /** What had focus when the overlay opened, so it can be given back. */
+  const openerRef = useRef<HTMLElement | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const requestIdRef = useRef(0);
 
@@ -223,6 +228,62 @@ export function SearchInput() {
     return () => document.removeEventListener("keydown", handler);
   }, [close, isOpen, open]);
 
+  /**
+   * Make `aria-modal` true.
+   *
+   * The overlay declared `role="dialog" aria-modal="true"` on 2026-09-24
+   * with none of the behaviour behind it: Escape was bound to the input's
+   * own onKeyDown, so it died the moment focus moved to a suggestion or the
+   * close button, and Tab walked straight out of the dialog into the page
+   * after about ten stops. A dialog that claims the rest of the document is
+   * inert while the keyboard can still reach it is worse than one that
+   * claims nothing — assistive technology hides what the keyboard then
+   * lands on.
+   *
+   * So: Escape at the document level, Tab cycled inside, the page behind
+   * made inert, and focus returned to whatever opened it.
+   */
+  useEffect(() => {
+    if (!isOpen) return;
+    openerRef.current = document.activeElement as HTMLElement | null;
+
+    const siblings = [...document.body.children].filter(
+      (el) => el !== dialogRef.current?.parentElement && !el.contains(dialogRef.current),
+    ) as HTMLElement[];
+    for (const el of siblings) el.setAttribute("inert", "");
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+        return;
+      }
+      if (event.key !== "Tab" || !dialogRef.current) return;
+      const focusable = [...dialogRef.current.querySelectorAll<HTMLElement>(FOCUSABLE)].filter(
+        (el) => el.offsetParent !== null,
+      );
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      for (const el of siblings) el.removeAttribute("inert");
+      const opener = openerRef.current;
+      openerRef.current = null;
+      opener?.focus();
+    };
+  }, [isOpen, close]);
+
   return (
     <>
       <button
@@ -253,6 +314,7 @@ export function SearchInput() {
       {isOpen &&
         createPortal(
           <div
+            ref={dialogRef}
             className="bg-background/95 fixed inset-0 z-50 overflow-y-auto backdrop-blur-md"
             role="dialog"
             aria-modal="true"

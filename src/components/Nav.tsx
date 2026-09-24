@@ -129,6 +129,7 @@ function NavDropdown({ section }: { section: NavSection }) {
           `open` kept every destination out of the server-rendered HTML, leaving
           the site's main navigation invisible to crawlers. */}
       <div
+        data-nav-panel
         className={`bg-surface border-foreground/10 absolute top-full left-0 z-20 mt-2 min-w-[160px] rounded-lg border py-2 shadow-lg ${
           open ? "block" : "hidden"
         }`}
@@ -170,25 +171,38 @@ export function Nav() {
           Physics of Connection
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden items-center gap-4 sm:flex">
-          {NAV_SECTIONS.map((section) => (
-            <NavDropdown key={section.href} section={section} />
-          ))}
+        {/*
+          One control group, not two.
+
+          Search and the theme toggle used to be rendered twice — once in a
+          `hidden sm:flex` block and once in a `sm:hidden` one — which was
+          harmless only while the search overlay rendered inside its hidden
+          parent. Portalling that overlay to the body on 2026-09-24 took it
+          out of the hidden subtree, and both copies started painting: Ctrl+K
+          opened two full-screen `aria-modal` dialogs at once, each claiming
+          the rest of the document was inert, each with its own Escape
+          handler and its own body-scroll lock.
+
+          So the controls render once and the breakpoint decides only what
+          sits beside them: the section list on a wide screen, the hamburger
+          on a narrow one.
+        */}
+        <div className="flex items-center gap-2 sm:gap-4">
+          <div className="hidden items-center gap-4 sm:flex">
+            {NAV_SECTIONS.map((section) => (
+              <NavDropdown key={section.href} section={section} />
+            ))}
+          </div>
+
           <SearchInput />
           {/* Moved up from the footer on 2026-09-24. Measured there at 99.3%
               of the scroll depth of a concept page — the only global
               preference control on the site, twelve swipes from where a
               reader notices the page is the wrong brightness. */}
           <ThemeToggle />
-        </div>
 
-        {/* Mobile: theme + search + hamburger */}
-        <div className="flex items-center gap-2 sm:hidden">
-          <ThemeToggle />
-          <SearchInput />
           <button
-            className="text-foreground-strong cursor-pointer transition-opacity hover:opacity-70"
+            className="text-foreground-strong cursor-pointer transition-opacity hover:opacity-70 sm:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
