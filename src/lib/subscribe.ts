@@ -87,9 +87,13 @@ export const DEFAULT_OFFER: OfferId = "tonights-material";
  * Server-side only, and deliberately not `NEXT_PUBLIC_`: an API key in the
  * browser bundle is a key anybody can read. The form asks the endpoint
  * rather than checking this itself.
+ *
+ * Both must be set. A key with no list id would post nowhere; a list id with
+ * no key would 401 on every submission and read to the reader as "that did
+ * not go through" rather than as "sign-up is not open".
  */
 export function providerConfigured(): boolean {
-  return Boolean(process.env.EMAIL_PROVIDER_API_KEY && process.env.EMAIL_PROVIDER_LIST_ID);
+  return Boolean(process.env.EMAILOCTOPUS_API_KEY && process.env.EMAILOCTOPUS_LIST_ID);
 }
 
 /**
@@ -121,23 +125,28 @@ export async function subscribe(email: string, offer: OfferId): Promise<Subscrib
   if (!looksLikeEmail(email)) return { ok: false, reason: "invalid" };
   if (!providerConfigured()) return { ok: false, reason: "unconfigured" };
 
-  const endpoint = process.env.EMAIL_PROVIDER_ENDPOINT;
-  if (!endpoint) return { ok: false, reason: "unconfigured" };
+  // EmailOctopus API v2. v1.6 is legacy, and it put the key in the request
+  // body; v2 is Bearer-authenticated on api.emailoctopus.com.
+  const url = `https://api.emailoctopus.com/lists/${process.env.EMAILOCTOPUS_LIST_ID}/contacts`;
 
   try {
-    const response = await fetch(endpoint, {
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        authorization: `Bearer ${process.env.EMAIL_PROVIDER_API_KEY}`,
+        authorization: `Bearer ${process.env.EMAILOCTOPUS_API_KEY}`,
       },
       body: JSON.stringify({
-        email: email.trim().toLowerCase(),
-        list_id: process.env.EMAIL_PROVIDER_LIST_ID,
-        // The bucket travels as a tag so one list can carry every sequence
-        // and the drip is selected by tag rather than by list sprawl.
+        email_address: email.trim().toLowerCase(),
+        // The bucket travels as a tag, so one list carries every sequence
+        // and each automation is triggered by its own tag rather than by a
+        // list per offer.
         tags: [offer],
-        double_optin: true,
+        // `status` is deliberately absent. A list configured for double
+        // opt-in defaults a new contact to pending and sends the
+        // confirmation itself, which keeps that policy in the one place it
+        // is visible — the list's own settings — rather than in a string
+        // here that could be changed without anyone noticing.
       }),
     });
     return response.ok ? { ok: true, pending: true } : { ok: false, reason: "failed" };
