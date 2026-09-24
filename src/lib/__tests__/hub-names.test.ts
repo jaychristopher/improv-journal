@@ -69,7 +69,11 @@ function linksInBlock(html: string, block: string): { href: string; label: strin
  * "Resources" is the nav group headed by its category and rooted at /guides
  * (the comment in Nav.tsx has the account).
  */
-const MENU_WORDS = new Set(["Overview", "Resources"]);
+// Was `["Overview", "Resources"]`. Both are gone from the nav as of
+// 2026-09-24: "Overview" described none of its destinations and was the
+// site's most-repeated internal anchor, and "Resources" was a section label
+// whose href pointed at /guides. Nothing is exempt from the table now.
+const MENU_WORDS = new Set<string>([]);
 
 function labelsFor(links: { href: string; label: string }[], href: string): string[] {
   return [
@@ -142,8 +146,11 @@ describe("hub names", () => {
       named++;
       expect(labels, `nav ${hub.href}`).toEqual([hub.label]);
     }
-    // The nav reaches every hub but the picker, which it links by level.
-    expect(present).toBe(ALL_HUBS.length - 1);
+    // Every hub, including the picker. The nav used to link the picker's
+    // beginner facet instead of its hub — 11 inbound body links against the
+    // hub's 56, and the only nav destination search had ever surfaced, at
+    // position 56 (2026-09-24).
+    expect(present).toBe(ALL_HUBS.length);
     expect(named).toBeGreaterThanOrEqual(14);
   });
 

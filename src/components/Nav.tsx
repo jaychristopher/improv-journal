@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import { hubLink, HUBS } from "@/lib/hubs";
@@ -46,7 +47,15 @@ interface NavSection {
 const NAV_SECTIONS: NavSection[] = [
   {
     ...hubLink(HUBS.howItWorks),
-    children: [hubLink(HUBS.howItWorks), hubLink(HUBS.principles), hubLink(HUBS.diagnosis)],
+    children: [
+      hubLink(HUBS.howItWorks),
+      hubLink(HUBS.principles),
+      hubLink(HUBS.diagnosis),
+      // Where the ideas came from belongs with what they are, not in a
+      // drawer called Resources.
+      hubLink(HUBS.traditions),
+      hubLink(HUBS.library),
+    ],
   },
   {
     ...hubLink(HUBS.practice),
@@ -60,47 +69,48 @@ const NAV_SECTIONS: NavSection[] = [
     ],
   },
   /**
-   * Points at /guides rather than /resources.
+   * The guide layer, by the clusters /guides already sorts it into.
    *
-   * /resources is 233 words whose entire content is links to the hubs already
-   * listed below it, and it was taking two of the nav's slots — the section
-   * href, which the mobile menu renders as a link, and an "Overview" child.
-   * Both are in the server HTML on all 376 pages, so a directory of
-   * directories was sitting between the navigation and the real hubs on every
-   * one of them.
-   *
-   * The section keeps its label and loses the intermediary. /guides is the
-   * largest hub in the group at 2,765 words and was already a child, so this
-   * matches how the other two sections work: the section href is the hub, and
-   * a child repeats it by name.
-   *
-   * This comment used to end "the page itself is untouched and still linked
-   * from the footer, so nothing is orphaned". That stopped being true when
-   * the footer was rebuilt on 2026-09-24 and dropped its last link: the page
-   * went to zero inbound links across 387 built pages while still sitting in
-   * the sitemap. It is deleted now and 301s to /guides.
-   */
-  /**
-   * The nav had nine concept hubs and one item, Guides, for the layer that
-   * holds 70% of the site's traffic potential; the lessons hub, the level
-   * ladder, the drill picker and the topic hubs were reachable from the
-   * footer or the homepage body only (tracker entry 222, 2026-09-21). They
-   * join this section under the names their pages already use.
+   * One item used to stand for all of this — "Guides by Topic", pointing at
+   * /topics/communication alone. The other three clusters were reachable
+   * from about 20 pages against 386, and between them they hold most of the
+   * corpus the nav was not linking: teams and personal growth are the two
+   * largest after communication. The labels are the ones guide-categories.ts
+   * gives each cluster, so this menu cannot call a cluster something its own
+   * hub does not.
    */
   {
-    href: HUBS.guides.href,
-    label: "Resources",
+    ...hubLink(HUBS.guides),
     children: [
       hubLink(HUBS.guides),
-      { href: "/topics/communication", label: "Guides by Topic" },
+      { href: "/topics/communication", label: "Relationships & Communication" },
+      { href: "/topics/teams", label: "Teams & Leadership" },
+      { href: "/topics/personal-growth", label: "Personal Growth" },
+      { href: "/topics/improv-skills", label: "Improv Skills" },
+    ],
+  },
+  /**
+   * The curriculum and the tools that drive it.
+   *
+   * This and the section above were one item called "Resources" with ten
+   * children of four unrelated kinds — collections, curriculum, tools and
+   * media — under a label whose href pointed at /guides, so the word named
+   * nothing and the section root and its own first child were the same URL.
+   *
+   * The picker is linked at its hub rather than at `/beginner`: the facet
+   * had 11 inbound body links against the hub's 56, and it was the only nav
+   * destination search has ever surfaced — at position 56.
+   */
+  {
+    ...hubLink(HUBS.paths),
+    label: "Learn",
+    children: [
       hubLink(HUBS.paths),
       hubLink(HUBS.threads),
       hubLink(HUBS.learn),
-      { href: "/tools/exercise-picker/beginner", label: "Find a Drill" },
+      hubLink(HUBS.tools),
       { href: "/tools/improv-prompt-generator", label: "Get a Prompt" },
       hubLink(HUBS.listen),
-      hubLink(HUBS.traditions),
-      hubLink(HUBS.library),
     ],
   },
 ];
@@ -119,15 +129,38 @@ const NAV_SECTIONS: NavSection[] = [
  * produce: a panel opened with the keyboard stayed open for the rest of the
  * session, and all three could be stacked at once.
  */
+/**
+ * Whether the reader is somewhere inside this section.
+ *
+ * Nothing in the header said where you were — measured 0 `aria-current` and
+ * 0 active states across the site. On a graph of 367 pages whose whole
+ * proposition is that it is structured, the one element on every page never
+ * showed which of four branches the reader was in.
+ *
+ * Matched against the children's hrefs rather than the section's own, which
+ * is what made this impossible before: the old third section was labelled
+ * "Resources" and pointed at /guides, so a path test against the section
+ * href was wrong for a third of the nav.
+ */
+function isInside(section: NavSection, pathname: string): boolean {
+  if (pathname === "/") return false;
+  return section.children.some(
+    (child) => pathname === child.href || pathname.startsWith(`${child.href}/`),
+  );
+}
+
 function NavDropdown({
   section,
   open,
   setOpen,
+  pathname,
 }: {
   section: NavSection;
   open: boolean;
   setOpen: (open: boolean) => void;
+  pathname: string;
 }) {
+  const inside = isInside(section, pathname);
   const panelId = `nav-panel-${section.href.replace(/\W+/g, "-")}`;
   const ref = useRef<HTMLDivElement>(null);
 
@@ -165,7 +198,11 @@ function NavDropdown({
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls={panelId}
-        className="text-foreground-dim hover:text-foreground-strong flex cursor-pointer items-center gap-1 text-sm transition-colors"
+        className={`hover:text-foreground-strong flex cursor-pointer items-center gap-1 text-sm transition-colors ${
+          inside
+            ? "text-foreground-strong decoration-foreground-strong/40 font-semibold underline underline-offset-8"
+            : "text-foreground-dim"
+        }`}
       >
         {section.label}
         <svg
@@ -193,6 +230,7 @@ function NavDropdown({
           <Link
             key={item.href}
             href={item.href}
+            aria-current={item.href === pathname ? "page" : undefined}
             onClick={() => setOpen(false)}
             className="text-foreground-dim hover:text-foreground-strong hover:bg-foreground/5 block cursor-pointer px-4 py-2 text-sm transition-colors"
           >
@@ -205,6 +243,7 @@ function NavDropdown({
 }
 
 export function Nav() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   /** One at a time: all three panels could be stacked open before. */
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -264,7 +303,13 @@ export function Nav() {
   return (
     <nav
       aria-label="Main"
-      className="border-foreground/10 relative z-50 border-b px-6 py-3"
+      /* Sticky since 2026-09-24. /how-to-read-the-room is 13,110px tall at
+         390px — 15.5 screens — and the navigation existed for one of them,
+         so for a reader mid-guide there was no way anywhere without
+         scrolling back to the top. `bg-background` because a transparent
+         bar over scrolling prose is unreadable; the takeover pages override
+         both in globals.css, where the bar is absolute and has no fill. */
+      className="border-foreground/10 bg-background sticky top-0 z-50 border-b px-6 py-3"
       data-track="nav"
     >
       <div data-nav-bar className="mx-auto flex max-w-5xl items-center justify-between">
@@ -273,7 +318,7 @@ export function Nav() {
             the controls have taken their share, and nothing wrapped or gave
             way — the whole document scrolled sideways (1.4.10 Reflow). The
             controls keep their size; the name yields. */}
-        <Link href="/" className="min-w-0 truncate text-sm font-semibold tracking-tight">
+        <Link href="/" className="min-w-0 truncate text-base font-semibold tracking-tight">
           Physics of Connection
         </Link>
 
@@ -299,6 +344,7 @@ export function Nav() {
               <NavDropdown
                 key={section.href}
                 section={section}
+                pathname={pathname}
                 open={openSection === section.href}
                 setOpen={(next) => setOpenSection(next ? section.href : null)}
               />
@@ -404,8 +450,13 @@ export function Nav() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    aria-current={item.href === pathname ? "page" : undefined}
                     onClick={() => setMobileOpen(false)}
-                    className="text-foreground-dim hover:text-foreground-strong block text-lg"
+                    className={`hover:text-foreground-strong block text-lg ${
+                      item.href === pathname
+                        ? "text-foreground-strong font-semibold"
+                        : "text-foreground-dim"
+                    }`}
                   >
                     {item.label}
                   </Link>

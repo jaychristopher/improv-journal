@@ -128,7 +128,14 @@ const POPULATION: Record<Layer, number> = {
  * Words that only the chrome says. In the flight they mean the chrome has
  * been serialised again; in the HTML they should appear once, not twice.
  */
-const NAV_ONLY = ["Guides by Topic", "Get a Prompt"];
+// "Guides by Topic" was a sentinel until 2026-09-24, when it was replaced
+// by the four cluster names it used to stand in for — it linked
+// /topics/communication alone while the other three clusters were reachable
+// from about 20 pages against 386. The cluster labels cannot replace it
+// here: a guide inside a cluster names it in its breadcrumb too, so they
+// appear 3 times on those pages rather than 2. `>Learn<` is the section
+// label, which nothing else on the site says.
+const NAV_ONLY = [">Learn<", "Get a Prompt"];
 // "Popular Guides" was the footer's marker until the 2026-09-24 rebuild
 // removed the heading — the site took 31 organic clicks in the 90 days to
 // 2026-09-23, so nothing here is popular and the word was a claim the data
