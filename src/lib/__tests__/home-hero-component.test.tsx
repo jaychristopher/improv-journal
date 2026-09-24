@@ -52,7 +52,7 @@ describe("HomeHero", () => {
     // The h1 is the hero's; the page's opening argument is an h2 below it.
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading.textContent).toMatch(/Physics of\s*Connection/);
-    expect(screen.getByText(/Learn conversational magic through the practice of improv/));
+    expect(screen.getByText(/Learn the underlying mechanics of effective communication/));
     expect(screen.getByRole("button", { name: /Communication skills/ })).toBeTruthy();
     expect(screen.getByRole("button", { name: /Practice improv/ })).toBeTruthy();
   });

@@ -132,7 +132,8 @@ export function HomeHero({ options }: { options: HomeDoorOptions }) {
               Connection
             </h1>
             <p className="text-hero-muted mt-5 max-w-md text-base leading-relaxed sm:mt-6 sm:text-lg lg:mt-7">
-              Learn conversational magic through the practice of improv.
+              Learn the underlying mechanics of effective communication, discovered through the art
+              of improv.
             </p>
           </div>
           <div className="mt-8 lg:mt-0">
