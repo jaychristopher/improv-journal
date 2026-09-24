@@ -114,6 +114,14 @@ export function generateHubRedirects(): {
   permanent: boolean;
 }[] {
   return [
+    // /resources was 233 words whose entire content was links to the hubs
+    // listed below it. The nav routed around it on 2026-09-22 and the footer
+    // rebuild on 2026-09-24 removed the last link, leaving it with zero
+    // inbound links across 387 built pages and a sitemap entry still asking
+    // to be indexed. Deleted rather than relinked: a directory of
+    // directories between the navigation and the real hubs is exactly what
+    // the nav change removed.
+    { source: "/resources", destination: "/guides", permanent: true },
     // Retargeted: the page always described people skills, and the term it
     // used to carry has a traffic potential of 30 against 1,100 for this one.
     // Same retarget: "group dynamics" is the academic phrasing at a traffic

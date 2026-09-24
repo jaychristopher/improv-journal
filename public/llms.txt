@@ -29,7 +29,6 @@ This file is generated from the site's content and its sitemap, so it lists ever
 - [Improv Learning Paths](https://www.physicsofconnection.com/paths): Structured journeys for a particular kind of reader.
 - [Improv Traditions](https://www.physicsofconnection.com/traditions): Johnstone, Spolin, Close, UCB and Annoyance compared.
 - [Improv Podcasts](https://www.physicsofconnection.com/listen): The material as podcast audio, across three shows.
-- [Improv Resources](https://www.physicsofconnection.com/resources): Paths, podcasts and reading lists, gathered in one place.
 - [About](https://www.physicsofconnection.com/about): Who writes this, the sources used, and how the site is built.
 - The whole graph as JSON — every source, concept, guide, lesson and path, with the relations between them: https://www.physicsofconnection.com/api/graph
 

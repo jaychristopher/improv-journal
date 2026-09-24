@@ -148,10 +148,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   hub("/improv-games", newest(atomsOfType("exercise", "format")), 0.7);
   hub("/practice", newest(atomsOfType("exercise", "technique", "format")), 0.7);
   hub("/guides", newest(bridges), 0.7);
-  // A 281-word list of links the chrome already carries, with no main-column
-  // inbound link; it stays for the footer and the one tool link it held before
-  // the nav did (tracker entry 248, 2026-09-21), not as a hub.
-  hub("/resources", siteModified, 0.3);
   hub("/paths", newest(paths), 0.7);
   hub("/traditions", newest(atoms), 0.7);
   hub("/library", newest(atomsOfType("reference")), 0.7);

@@ -153,7 +153,6 @@ const HUB_DEBT = [
   "/practice/formats",
   "/practice/techniques",
   "/practice/vocabulary",
-  "/resources",
   "/sources/[slug]",
   "/threads",
   "/tools/exercise-picker",

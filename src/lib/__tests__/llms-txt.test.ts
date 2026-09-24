@@ -36,7 +36,6 @@ describe("llms.txt", () => {
     for (const url of [
       "/",
       "/threads",
-      "/resources",
       "/learn/beginner",
       "/learn/teacher",
       "/traditions/johnstone",

@@ -36,8 +36,16 @@ describe("the prompt generator on the built page", () => {
   it.runIf(built)("does not ship the dialog markup in the server html", () => {
     // The dialog is client-only. If it ever server-renders open, the page
     // arrives as a full-screen modal for every crawler and every reader.
+    //
+    // Scoped to the page below the chrome since 2026-09-24. The nav's mobile
+    // menu is a dialog too and is deliberately server-rendered — hidden with
+    // CSS so its 20 destinations are in the HTML for a crawler — so a check
+    // against the whole document was catching the navigation rather than the
+    // generator it was written for.
     const html = fs.readFileSync(path.join(APP, "improv-prompts.html"), "utf8");
-    expect(html).not.toContain('aria-modal="true"');
+    const body = html.slice(html.indexOf("</nav>"));
+    expect(body.length, "the page has content below the nav").toBeGreaterThan(1_000);
+    expect(body).not.toContain('aria-modal="true"');
   });
 
   /**

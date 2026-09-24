@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { trackEvent } from "@/lib/analytics";
+import { lockScroll } from "@/lib/scroll-lock";
 import { getSearchIndex, hasSearchIndex, MINISEARCH_OPTIONS } from "@/lib/search-index";
 
 interface QuickResult {
@@ -192,16 +193,12 @@ export function SearchInput() {
     [close, navigate, query, results, selectedIdx],
   );
 
+  // The shared, reference-counted lock. Written independently here and in
+  // Nav, closing this overlay used to release the page while the mobile
+  // menu was still covering it.
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
+    if (!isOpen) return;
+    return lockScroll();
   }, [isOpen]);
 
   useEffect(() => {
