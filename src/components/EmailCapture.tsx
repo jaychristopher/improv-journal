@@ -125,17 +125,39 @@ export function EmailCapture({
         </form>
       )}
 
-      {/* In the DOM from the first render, empty, so the announcement lands. */}
+      {/*
+        In the DOM from the first render, empty, so the announcement lands —
+        a live region created in the same commit as its content is not
+        reliably announced.
+
+        Styled as a panel once it has something to say. It used to render at
+        the same size and colour as the footnote below it, so the one line
+        telling a reader whether their address was taken looked like small
+        print and was missed.
+
+        The state is carried by the words, not by the treatment: there is no
+        green or red here, both because the palette has none and because
+        colour alone cannot be the signal (1.4.1). The error panel is only
+        distinguished by a heavier edge, which is reinforcement rather than
+        the message.
+      */}
       <p
         id={statusId}
         role="status"
         aria-live="polite"
-        className="text-foreground-dim mt-2 text-xs leading-relaxed"
+        className={[
+          "leading-relaxed",
+          message
+            ? "bg-surface text-foreground-strong mt-3 rounded-lg border px-3 py-2 text-sm"
+            : "",
+          message && state === "error" ? "border-foreground-strong border-l-4" : "",
+          message && state !== "error" ? "border-border-ui" : "",
+        ].join(" ")}
       >
         {message}
       </p>
 
-      <p className="text-foreground-dim mt-2 text-xs">
+      <p className="text-foreground-dim mt-3 text-xs">
         {info.emails} emails, then it stops. Not a newsletter.{" "}
         <Link href="/privacy" className="underline underline-offset-2">
           Privacy
