@@ -53,7 +53,7 @@ export function EmailCapture({
       });
       const body = (await response.json()) as {
         ok: boolean;
-        state?: "pending" | "already";
+        state?: "pending" | "already" | "subscribed";
         reason?: string;
       };
 
@@ -65,7 +65,9 @@ export function EmailCapture({
         setMessage(
           body.state === "already"
             ? "You are already on this list, so nothing new has been sent."
-            : "Check your inbox — there is a confirmation link waiting.",
+            : body.state === "subscribed"
+              ? "You are on the list."
+              : "Check your inbox — there is a confirmation link waiting.",
         );
         trackEvent("email_capture_accepted", { surface, offer, state: body.state ?? "pending" });
         return;

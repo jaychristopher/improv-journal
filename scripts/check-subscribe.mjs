@@ -31,11 +31,15 @@ const cases = [
 
 let failed = 0;
 let live = null;
+let liveState = null;
 for (const [name, body, expected] of cases) {
   const result = await post(body);
   const ok =
     expected === null ? [200, 202, 503].includes(result.status) : result.status === expected;
-  if (expected === null) live = result.status;
+  if (expected === null) {
+    live = result.status;
+    liveState = result.body?.state ?? null;
+  }
   if (!ok) failed += 1;
   console.log(
     `${ok ? "ok  " : "FAIL"} ${String(result.status).padEnd(4)} ${name}` +
@@ -55,6 +59,12 @@ if (failed > 0) {
   console.log("built after they are set, so redeploy.");
 } else if (live === 200) {
   console.log("Already on the list (200). Nothing was created and nothing was sent.");
+} else if (liveState === "subscribed") {
+  console.log("MISCONFIGURED. The contact was created, but EmailOctopus subscribed");
+  console.log("it outright rather than marking it pending — so no confirmation was");
+  console.log("sent, and none is coming. Turn on double opt-in in the list settings.");
+  console.log("Existing contacts keep the status they were created with, so delete");
+  console.log("this one and run again to test the confirmation properly.");
 } else {
   console.log("Accepted (202). EmailOctopus took the contact — which alone does");
   console.log("not prove the rest. In the dashboard, check that:");

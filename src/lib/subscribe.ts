@@ -114,6 +114,16 @@ export type SubscribeOutcome =
   | { ok: true; state: "pending" }
   /** Already on the list. Nothing was sent and nothing was changed. */
   | { ok: true; state: "already" }
+  /**
+   * Taken, but subscribed outright — so no confirmation was sent.
+   *
+   * This is not a reader-facing error; they are on the list. It is a
+   * misconfiguration: the list does not have double opt-in on. It gets its
+   * own state because the first live test produced exactly this and looked
+   * indistinguishable from success — a 202, a contact, and no email, with
+   * nothing anywhere saying why.
+   */
+  | { ok: true; state: "subscribed" }
   | { ok: false; reason: "invalid" | "unconfigured" | "failed" };
 
 /**
@@ -152,7 +162,19 @@ export async function subscribe(email: string, offer: OfferId): Promise<Subscrib
         // here that could be changed without anyone noticing.
       }),
     });
-    if (response.ok) return { ok: true, state: "pending" };
+    if (response.ok) {
+      // The provider echoes the contact back, including the status it
+      // actually assigned. PENDING means a confirmation is on its way;
+      // SUBSCRIBED means the list is not set to double opt-in and none was
+      // sent. Reading it is the difference between finding that out now and
+      // finding it out when nobody confirms.
+      const created = (await response.json().catch(() => null)) as {
+        status?: string;
+        data?: { status?: string };
+      } | null;
+      const status = (created?.status ?? created?.data?.status ?? "").toUpperCase();
+      return { ok: true, state: status === "SUBSCRIBED" ? "subscribed" : "pending" };
+    }
     // 409 MEMBER_EXISTS_WITH_EMAIL_ADDRESS: the address is already on the
     // list. From the reader's side that is success — they are subscribed —
     // and the first version of this returned 502, so anybody who submitted
