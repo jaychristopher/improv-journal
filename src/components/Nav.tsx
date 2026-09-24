@@ -181,7 +181,7 @@ export function Nav() {
         <div className="flex items-center gap-2 sm:hidden">
           <SearchInput />
           <button
-            className="text-foreground-dim hover:text-foreground-strong cursor-pointer"
+            className="text-foreground-strong cursor-pointer transition-opacity hover:opacity-70"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >

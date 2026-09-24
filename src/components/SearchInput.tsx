@@ -226,7 +226,7 @@ export function SearchInput() {
     <>
       <button
         onClick={() => void open("button")}
-        className="text-foreground-dim hover:text-foreground-strong hover:bg-foreground/5 flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg transition-colors"
+        className="text-foreground-strong hover:bg-foreground/10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg transition-colors hover:opacity-70"
         aria-label="Search (Ctrl+K)"
         title="Search (Ctrl+K)"
       >
@@ -246,7 +246,7 @@ export function SearchInput() {
             <div className="mb-3 flex justify-end">
               <button
                 onClick={close}
-                className="text-foreground-dim hover:text-foreground-strong flex h-8 w-8 items-center justify-center rounded-lg"
+                className="text-foreground-strong flex h-8 w-8 items-center justify-center rounded-lg transition-opacity hover:opacity-70"
                 aria-label="Close search"
               >
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
