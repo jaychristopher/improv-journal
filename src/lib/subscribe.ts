@@ -110,7 +110,10 @@ export function looksLikeEmail(value: string): boolean {
 }
 
 export type SubscribeOutcome =
-  | { ok: true; pending: true }
+  /** Taken, and the provider is sending its confirmation. */
+  | { ok: true; state: "pending" }
+  /** Already on the list. Nothing was sent and nothing was changed. */
+  | { ok: true; state: "already" }
   | { ok: false; reason: "invalid" | "unconfigured" | "failed" };
 
 /**
@@ -149,7 +152,17 @@ export async function subscribe(email: string, offer: OfferId): Promise<Subscrib
         // here that could be changed without anyone noticing.
       }),
     });
-    return response.ok ? { ok: true, pending: true } : { ok: false, reason: "failed" };
+    if (response.ok) return { ok: true, state: "pending" };
+    // 409 MEMBER_EXISTS_WITH_EMAIL_ADDRESS: the address is already on the
+    // list. From the reader's side that is success — they are subscribed —
+    // and the first version of this returned 502, so anybody who submitted
+    // twice was told it had failed.
+    //
+    // Deliberately not a PUT to upsert. `create-or-update` would also
+    // resurrect a contact who had unsubscribed, which is the one mistake in
+    // this file that could not be undone.
+    if (response.status === 409) return { ok: true, state: "already" };
+    return { ok: false, reason: "failed" };
   } catch {
     return { ok: false, reason: "failed" };
   }

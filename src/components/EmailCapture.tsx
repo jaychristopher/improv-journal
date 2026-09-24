@@ -51,12 +51,23 @@ export function EmailCapture({
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ email, offer }),
       });
-      const body = (await response.json()) as { ok: boolean; reason?: string };
+      const body = (await response.json()) as {
+        ok: boolean;
+        state?: "pending" | "already";
+        reason?: string;
+      };
 
       if (body.ok) {
         setState("done");
-        setMessage("Check your inbox — there is a confirmation link waiting. It expires in a day.");
-        trackEvent("email_capture_confirmed_pending", { surface, offer });
+        // Two different true things. Telling somebody already on the list to
+        // check their inbox sends them looking for a mail that is not
+        // coming.
+        setMessage(
+          body.state === "already"
+            ? "You are already on this list, so nothing new has been sent."
+            : "Check your inbox — there is a confirmation link waiting.",
+        );
+        trackEvent("email_capture_accepted", { surface, offer, state: body.state ?? "pending" });
         return;
       }
 

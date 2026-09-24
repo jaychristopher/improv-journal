@@ -41,7 +41,11 @@ export async function POST(request: Request) {
   }
 
   const result = await subscribe(email, offer as OfferId);
-  if (result.ok) return NextResponse.json(result, { status: 202 });
+  // 202 for a new contact the provider is confirming; 200 for one already
+  // on the list, where nothing was created and nothing was sent.
+  if (result.ok) {
+    return NextResponse.json(result, { status: result.state === "pending" ? 202 : 200 });
+  }
 
   const status = result.reason === "invalid" ? 400 : result.reason === "unconfigured" ? 503 : 502;
   return NextResponse.json(result, { status });
