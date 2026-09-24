@@ -112,8 +112,15 @@ export function looksLikeEmail(value: string): boolean {
 export type SubscribeOutcome =
   /** Taken, and the provider is sending its confirmation. */
   | { ok: true; state: "pending" }
-  /** Already on the list. Nothing was sent and nothing was changed. */
-  | { ok: true; state: "already" }
+  /**
+   * Already on the list. Nothing was sent and nothing was changed.
+   *
+   * `code` is the provider's own reason, carried through rather than
+   * flattened. A 409 was assumed to mean MEMBER_EXISTS_WITH_EMAIL_ADDRESS
+   * and nothing checked — so any other conflict was being reported to the
+   * reader as "you are already subscribed", which might be untrue.
+   */
+  | { ok: true; state: "already"; code?: string }
   /**
    * Taken, but subscribed outright — so no confirmation was sent.
    *
@@ -183,7 +190,13 @@ export async function subscribe(email: string, offer: OfferId): Promise<Subscrib
     // Deliberately not a PUT to upsert. `create-or-update` would also
     // resurrect a contact who had unsubscribed, which is the one mistake in
     // this file that could not be undone.
-    if (response.status === 409) return { ok: true, state: "already" };
+    if (response.status === 409) {
+      const conflict = (await response.json().catch(() => null)) as {
+        error?: { code?: string };
+        code?: string;
+      } | null;
+      return { ok: true, state: "already", code: conflict?.error?.code ?? conflict?.code };
+    }
     return { ok: false, reason: "failed" };
   } catch {
     return { ok: false, reason: "failed" };

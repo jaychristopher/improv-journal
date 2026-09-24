@@ -32,6 +32,7 @@ const cases = [
 let failed = 0;
 let live = null;
 let liveState = null;
+let liveCode = null;
 for (const [name, body, expected] of cases) {
   const result = await post(body);
   const ok =
@@ -39,6 +40,7 @@ for (const [name, body, expected] of cases) {
   if (expected === null) {
     live = result.status;
     liveState = result.body?.state ?? null;
+    liveCode = result.body?.code ?? null;
   }
   if (!ok) failed += 1;
   console.log(
@@ -59,6 +61,12 @@ if (failed > 0) {
   console.log("built after they are set, so redeploy.");
 } else if (live === 200) {
   console.log("Already on the list (200). Nothing was created and nothing was sent.");
+  console.log(`Provider's reason: ${liveCode ?? "(none reported)"}`);
+  if (liveCode && liveCode !== "MEMBER_EXISTS_WITH_EMAIL_ADDRESS") {
+    console.log("");
+    console.log("That is not the duplicate-contact code, so 'already on the list' is");
+    console.log("the wrong reading — EmailOctopus is refusing for another reason.");
+  }
 } else if (liveState === "subscribed") {
   console.log("MISCONFIGURED. The contact was created, but EmailOctopus subscribed");
   console.log("it outright rather than marking it pending — so no confirmation was");
