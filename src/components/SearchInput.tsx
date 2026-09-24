@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 import { trackEvent } from "@/lib/analytics";
 import { getSearchIndex, hasSearchIndex, MINISEARCH_OPTIONS } from "@/lib/search-index";
@@ -240,127 +241,145 @@ export function SearchInput() {
         </svg>
       </button>
 
-      {isOpen && (
-        <div className="bg-background/80 fixed inset-0 z-50 backdrop-blur-sm">
-          <div className="mx-auto max-w-2xl px-6 pt-20">
-            <div className="mb-3 flex justify-end">
-              <button
-                onClick={close}
-                className="text-foreground-strong flex h-8 w-8 items-center justify-center rounded-lg transition-opacity hover:opacity-70"
-                aria-label="Close search"
-              >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
+      {/*
+        Portalled to the body rather than rendered where it is declared.
+        This component lives inside `[data-nav-bar]`, and on a page with a
+        takeover hero that element redefines the palette to the hero's —
+        light text for a dark panel. The overlay is a near-white sheet, so it
+        was painting its input at #a1a1aa and its close icon at #f4f4f5 on
+        its own background, which is how a search box ends up invisible while
+        every token in it is correct (measured 2026-09-24).
+      */}
+      {isOpen &&
+        createPortal(
+          <div
+            className="bg-background/95 fixed inset-0 z-50 overflow-y-auto backdrop-blur-md"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Search"
+          >
+            <div className="mx-auto max-w-2xl px-6 pt-20">
+              <div className="mb-3 flex justify-end">
+                <button
+                  onClick={close}
+                  className="text-foreground-strong flex h-8 w-8 items-center justify-center rounded-lg transition-opacity hover:opacity-70"
+                  aria-label="Close search"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
 
-            <input
-              ref={inputRef}
-              type="text"
-              value={query}
-              onChange={(e) => handleChange(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder="Search concepts, exercises, guides..."
-              className="bg-surface border-foreground/10 text-foreground/80 placeholder:text-foreground/30 focus:border-foreground/30 w-full rounded-xl border px-5 py-4 text-xl transition-colors focus:outline-none"
-              role="combobox"
-              aria-expanded={results.length > 0}
-              aria-controls="search-suggestions"
-              aria-autocomplete="list"
-            />
+              <input
+                ref={inputRef}
+                type="text"
+                value={query}
+                onChange={(e) => handleChange(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Search concepts, exercises, guides..."
+                className="bg-surface border-border-ui text-foreground placeholder:text-foreground-dim focus:border-foreground-strong w-full rounded-xl border px-5 py-4 text-xl transition-colors focus:outline-none"
+                role="combobox"
+                aria-expanded={results.length > 0}
+                aria-controls="search-suggestions"
+                aria-autocomplete="list"
+              />
 
-            {query.length === 0 && !loading && (
-              <div className="mt-6 space-y-6">
-                {recentSearches.length > 0 && (
+              {query.length === 0 && !loading && (
+                <div className="mt-6 space-y-6">
+                  {recentSearches.length > 0 && (
+                    <div>
+                      <p className="text-foreground-dim px-1 text-xs font-semibold tracking-wider uppercase">
+                        Recent
+                      </p>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {recentSearches.map((q) => (
+                          <button
+                            key={q}
+                            onClick={() => {
+                              setQuery(q);
+                              navigate(`/search?q=${encodeURIComponent(q)}`, "recent");
+                            }}
+                            className="text-foreground border-border-ui bg-surface hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border px-3 py-1.5 text-sm transition-colors"
+                          >
+                            {q}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <div>
-                    <p className="text-foreground/30 px-1 text-xs font-semibold tracking-wider uppercase">
-                      Recent
+                    <p className="text-foreground-dim px-1 text-xs font-semibold tracking-wider uppercase">
+                      Popular
                     </p>
                     <div className="mt-2 flex flex-wrap gap-2">
-                      {recentSearches.map((q) => (
+                      {POPULAR_QUERIES.map((q) => (
                         <button
                           key={q}
                           onClick={() => {
                             setQuery(q);
-                            navigate(`/search?q=${encodeURIComponent(q)}`, "recent");
+                            navigate(`/search?q=${encodeURIComponent(q)}`, "popular");
                           }}
-                          className="text-foreground/50 bg-foreground/5 hover:bg-foreground/10 rounded-lg px-3 py-1.5 text-sm transition-colors"
+                          className="text-foreground border-border-ui bg-surface hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border px-3 py-1.5 text-sm transition-colors"
                         >
                           {q}
                         </button>
                       ))}
                     </div>
                   </div>
-                )}
-                <div>
-                  <p className="text-foreground/30 px-1 text-xs font-semibold tracking-wider uppercase">
-                    Popular
-                  </p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {POPULAR_QUERIES.map((q) => (
-                      <button
-                        key={q}
-                        onClick={() => {
-                          setQuery(q);
-                          navigate(`/search?q=${encodeURIComponent(q)}`, "popular");
-                        }}
-                        className="text-foreground/40 bg-foreground/[0.03] hover:bg-foreground/10 hover:text-foreground/60 rounded-lg px-3 py-1.5 text-sm transition-colors"
-                      >
-                        {q}
-                      </button>
-                    ))}
-                  </div>
+                  <p className="text-foreground-dim px-1 text-xs">Press Esc to close.</p>
                 </div>
-                <p className="text-foreground/20 px-1 text-xs">Press Esc to close.</p>
-              </div>
-            )}
+              )}
 
-            {loading && <p className="text-foreground/30 mt-4 px-1 text-sm">Loading search...</p>}
+              {loading && (
+                <p className="text-foreground-dim mt-4 px-1 text-sm">Loading search...</p>
+              )}
 
-            {results.length > 0 && (
-              <div id="search-suggestions" role="listbox" className="mt-4 space-y-1">
-                {results.map((result, i) => (
-                  <button
-                    key={result.title}
-                    onClick={() => navigate(result.url, "suggestion")}
-                    className={`flex w-full items-center gap-3 rounded-lg px-5 py-3 text-left transition-colors ${
-                      i === selectedIdx
-                        ? "bg-surface text-foreground/90"
-                        : "text-foreground/60 hover:bg-surface hover:text-foreground/80"
-                    }`}
-                  >
-                    <svg
-                      className="text-foreground/20 h-4 w-4 shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+              {results.length > 0 && (
+                <div id="search-suggestions" role="listbox" className="mt-4 space-y-1">
+                  {results.map((result, i) => (
+                    <button
+                      key={result.title}
+                      onClick={() => navigate(result.url, "suggestion")}
+                      className={`flex w-full items-center gap-3 rounded-lg px-5 py-3 text-left transition-colors ${
+                        i === selectedIdx
+                          ? "bg-surface text-foreground-strong"
+                          : "text-foreground hover:bg-surface hover:text-foreground-strong"
+                      }`}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                    <span className="text-lg">{result.title}</span>
-                  </button>
-                ))}
-              </div>
-            )}
+                      <svg
+                        className="text-foreground-dim h-4 w-4 shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
+                      <span className="text-lg">{result.title}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
 
-            {query.length >= 2 && !loading && results.length === 0 && (
-              <p className="text-foreground/30 mt-4 px-1 text-sm">
-                No results for &ldquo;{query}&rdquo;
-              </p>
-            )}
-          </div>
-        </div>
-      )}
+              {query.length >= 2 && !loading && results.length === 0 && (
+                <p className="text-foreground-dim mt-4 px-1 text-sm">
+                  No results for &ldquo;{query}&rdquo;
+                </p>
+              )}
+            </div>
+          </div>,
+          document.body,
+        )}
     </>
   );
 }
