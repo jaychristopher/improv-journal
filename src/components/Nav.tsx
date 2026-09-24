@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { hubLink, HUBS } from "@/lib/hubs";
 
 import { SearchInput } from "./SearchInput";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface NavSection {
   href: string;
@@ -175,10 +176,16 @@ export function Nav() {
             <NavDropdown key={section.href} section={section} />
           ))}
           <SearchInput />
+          {/* Moved up from the footer on 2026-09-24. Measured there at 99.3%
+              of the scroll depth of a concept page — the only global
+              preference control on the site, twelve swipes from where a
+              reader notices the page is the wrong brightness. */}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile: search + hamburger */}
+        {/* Mobile: theme + search + hamburger */}
         <div className="flex items-center gap-2 sm:hidden">
+          <ThemeToggle />
           <SearchInput />
           <button
             className="text-foreground-strong cursor-pointer transition-opacity hover:opacity-70"

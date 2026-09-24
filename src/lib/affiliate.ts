@@ -32,6 +32,16 @@ export const AFFILIATE_DISCLOSURE =
   "We earn a commission if you buy through these links, at no extra cost to you. It does not affect what goes on this page — several entries here recommend against buying the book.";
 
 /**
+ * The Associates Operating Agreement's participation statement.
+ *
+ * Distinct from AFFILIATE_DISCLOSURE above, which is the FTC's proximity
+ * requirement and belongs beside the links it describes. This one is a
+ * site-wide statement of membership, and the footer is where it goes: only
+ * 32 of 387 pages carry a buy card, and the obligation is not per-page.
+ */
+export const AFFILIATE_PARTICIPATION = "As an Amazon Associate I earn from qualifying purchases.";
+
+/**
  * `rel` for a paid link.
  *
  * `sponsored` is what Google asks for on an affiliate link specifically;

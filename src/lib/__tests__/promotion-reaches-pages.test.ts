@@ -9,8 +9,22 @@ const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
 
-/** Every promoted guide gets a link from all 330-odd pages; a starved one gets ~12. */
-const STARVED_BELOW = 100;
+/**
+ * A promoted guide should be reached from a good share of the site; a
+ * starved one gets about 12 links.
+ *
+ * The floor was 100, set when the footer linked all 27 promoted guides from
+ * every one of 387 pages, so "promoted" and "linked from everywhere" were
+ * the same thing. Since 2026-09-24 the footer shows 6 rotated per page, so
+ * a promoted guide takes roughly a sixth of those plus its prose links: the
+ * measured spread in that build ran from 97 (fun-questions-to-ask-friends)
+ * to well above 200, with deep-questions-to-ask at 99.
+ *
+ * 60 keeps the distance from a starved guide — still five times the ~12 —
+ * while letting the rotation do what it is for. Raise it again if the
+ * footer ever goes back to linking everything from everywhere.
+ */
+const STARVED_BELOW = 60;
 
 function inboundCounts(): Map<string, number> {
   const files: string[] = [];

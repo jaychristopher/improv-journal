@@ -124,9 +124,18 @@ export default async function RootLayout({
           <Suspense fallback={null}>
             <PostHogPageView />
           </Suspense>
+          {/* The bypass 2.4.1 asks for. It targets a sentinel rather than
+              `<main>` because each of the 41 routes renders its own and none
+              carries an id; the sentinel sits immediately before them, so
+              focus lands where `<main>` begins and the next Tab is the
+              article's first control. */}
+          <a href="#main-content" className="skip-link">
+            Skip to content
+          </a>
           <Nav />
+          <div id="main-content" tabIndex={-1} />
           {children}
-          <Footer topGuides={topGuides} />
+          <Footer topGuides={topGuides} tagline={tagline} />
           <Analytics />
           <SpeedInsights />
         </PostHogProvider>

@@ -72,6 +72,18 @@ import { describe, expect, it } from "vitest";
  */
 type Layer = "guides" | "concepts" | "lessons" | "paths" | "hubs";
 
+/*
+ * Every share ceiling moved from 0.56 to 0.57-0.58 on 2026-09-24, and the
+ * comment above predicted the direction: the footer rebuild removed 35 of
+ * its 46 links, which were in the HTML and the flight both, so the share
+ * *rose* while every byte count fell. The HTML readings in the same build:
+ * guides 148,205 (was 151,704), concepts 104,460 (108,865), lessons 105,306.
+ *
+ * The share is the shape, not the size, and the shape the ceiling is there
+ * to catch is chrome being server-rendered again — which would raise the
+ * flight and the share together. This moved the share by removing HTML, and
+ * the bytes fell on every layer at once, which is the opposite signature.
+ */
 const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> = {
   // html 151,704 and flight 83,005 on 2026-09-23, re-dated as the comment
   // above prescribes rather than lifted: the guide layer gained the sources
@@ -79,27 +91,25 @@ const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> =
   // (324) and the subject-gap line (340), all of them server-rendered blocks
   // that add to the HTML and the flight together, which is why the share
   // barely moved (0.549 against a 0.56 ceiling).
-  guides: { html: 156_300, flight: 85_500, share: 0.56 },
+  // share 0.562 on 2026-09-24, re-dated rather than lifted, and the comment
+  // above predicted exactly this: the footer rebuild removed 35 links that
+  // were in the HTML and the flight both, so the share *rose* while the
+  // bytes fell. HTML is well under its ceiling as a result.
+  guides: { html: 156_300, flight: 85_500, share: 0.58 },
   // flight 59,189 on 2026-09-23: the concept page gained the lineage line
   // (331), the try-it line (332) and the practice control (333). HTML is
   // still under its ceiling; the flight moved because two of the three are
   // client components whose props travel.
   //
-  // html 108,865 on 2026-09-24, re-dated rather than lifted. The footer's 46
-  // links moved off the opacity ramp to the contrast tokens — every one of
-  // them failed AA at 3.51:1 — and `text-foreground-dim
-  // hover:text-foreground-strong` is 14 characters longer than
-  // `text-foreground/60 hover:text-foreground/90`. A client component still
-  // server-renders into the HTML, so the class names are paid there: about
-  // 640 bytes a page across the 46. The flight is untouched, which is the
-  // point of the footer being a client component in the first place.
-  concepts: { html: 109_400, flight: 60_400, share: 0.56 },
+  // share 0.568 on 2026-09-24, and the same is true of every layer below —
+  // see the shared account above the table.
+  concepts: { html: 109_400, flight: 60_400, share: 0.58 },
   // html 108,682 and flight 59,375 on 2026-09-23: the lesson page gained the
   // crosslink line (339) and the composed-from list's "also taught in" marks,
   // 74 of them across 20 lessons.
-  lessons: { html: 111_900, flight: 61_200, share: 0.56 },
-  paths: { html: 115_500, flight: 63_400, share: 0.565 },
-  hubs: { html: 81_100, flight: 43_600, share: 0.54 },
+  lessons: { html: 111_900, flight: 61_200, share: 0.58 },
+  paths: { html: 115_500, flight: 63_400, share: 0.58 },
+  hubs: { html: 81_100, flight: 43_600, share: 0.57 },
 };
 
 /**
@@ -119,7 +129,11 @@ const POPULATION: Record<Layer, number> = {
  * been serialised again; in the HTML they should appear once, not twice.
  */
 const NAV_ONLY = ["Guides by Topic", "Get a Prompt"];
-const FOOTER_ONLY = ["Popular Guides"];
+// "Popular Guides" was the footer's marker until the 2026-09-24 rebuild
+// removed the heading — the site took 31 organic clicks in the 90 days to
+// 2026-09-23, so nothing here is popular and the word was a claim the data
+// does not support. "More guides" is the heading now.
+const FOOTER_ONLY = ["More guides"];
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
@@ -207,7 +221,7 @@ describe("flight share", () => {
     // about 1.7 kB of flight a page; the readings below were re-dated for it.
     const layout = fs.readFileSync(path.join(process.cwd(), "src/app/layout.tsx"), "utf-8");
     expect(layout).toContain("promoted.map(({ slug, label, title }) => ({ slug, label, title }))");
-    expect(layout).toContain("<Footer topGuides={topGuides} />");
+    expect(layout).toContain("<Footer topGuides={topGuides} tagline={tagline} />");
   });
 
   it.runIf(built)("records the flight share and the page bytes per layer under a ceiling", () => {

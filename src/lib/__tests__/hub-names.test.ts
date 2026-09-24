@@ -117,35 +117,34 @@ describe("hub names", () => {
     }
   });
 
-  it.runIf(built)("names each hub in the nav and the footer as the table does", () => {
+  // The footer stopped naming hubs on 2026-09-24. It carried 19 of them and
+  // 15 were exact duplicates of a nav link higher in the same document; the
+  // justification in its own header — that it was the only navigation in the
+  // server-rendered HTML — had stopped being true when the nav began
+  // rendering its dropdowns unconditionally for that same crawler reason.
+  // So the hub vocabulary is the nav's alone now, and this checks the nav.
+  it.runIf(built)("names each hub in the nav as the table does", () => {
     const home = pageHtml("/");
     const nav = linksInBlock(home, "nav");
     const footer = linksInBlock(home, "footer");
     expect(nav.length).toBeGreaterThanOrEqual(15);
-    expect(footer.length).toBeGreaterThanOrEqual(15);
+    // Guard the guard: the footer still renders links, it just no longer
+    // renders hub links, so a footer that vanished would not pass here.
+    expect(footer.length).toBeGreaterThanOrEqual(6);
 
-    const present = { nav: 0, footer: 0 };
-    const named = { nav: 0, footer: 0 };
+    let present = 0;
+    let named = 0;
     for (const hub of ALL_HUBS) {
-      for (const [block, links] of [
-        ["nav", nav],
-        ["footer", footer],
-      ] as const) {
-        if (!links.some((l) => l.href === hub.href)) continue;
-        present[block]++;
-        const labels = labelsFor(links, hub.href);
-        if (!labels.length) continue;
-        named[block]++;
-        expect(labels, `${block} ${hub.href}`).toEqual([hub.label]);
-      }
+      if (!nav.some((l) => l.href === hub.href)) continue;
+      present++;
+      const labels = labelsFor(nav, hub.href);
+      if (!labels.length) continue;
+      named++;
+      expect(labels, `nav ${hub.href}`).toEqual([hub.label]);
     }
-    // The nav reaches every hub but the picker, which it links by level; the
-    // footer every hub but the level ladder. A section root the footer lists
-    // as "Overview" only is present and unnamed.
-    expect(present.nav).toBe(ALL_HUBS.length - 1);
-    expect(present.footer).toBe(ALL_HUBS.length - 1);
-    expect(named.nav).toBeGreaterThanOrEqual(14);
-    expect(named.footer).toBeGreaterThanOrEqual(12);
+    // The nav reaches every hub but the picker, which it links by level.
+    expect(present).toBe(ALL_HUBS.length - 1);
+    expect(named).toBeGreaterThanOrEqual(14);
   });
 
   it.runIf(built)("heads each hub page as the table does", () => {
@@ -226,8 +225,10 @@ describe("hub names", () => {
     }
   });
 
-  it("writes no hub label into the nav or the footer that the table does not hold", () => {
-    for (const file of ["src/components/Nav.tsx", "src/components/Footer.tsx"]) {
+  it("writes no hub label into the nav that the table does not hold", () => {
+    // Nav only, for the reason above: Footer.tsx no longer imports the hub
+    // table at all, and footer-and-capture.test.ts asserts that it does not.
+    for (const file of ["src/components/Nav.tsx"]) {
       const src = fs.readFileSync(path.join(process.cwd(), file), "utf-8");
       // The items still written out by hand are the ones that are not hubs.
       const literal = [...src.matchAll(/href:\s*"([^"]+)",\s*label:\s*"([^"]+)"/g)];

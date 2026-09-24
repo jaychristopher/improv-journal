@@ -275,9 +275,19 @@ describe("link tracking", () => {
       // these blocks must be the large ones (2026-09-21: nav 15,792, footer
       // 17,296, breadcrumb 985, body 2,846); a wrapper that stopped rendering
       // shows up here before it shows in a share.
+      //
+      // The footer floor came down on 2026-09-24 and the reason is the point
+      // of the change, not a regression: it carried 46 links a page, 15 of
+      // its 19 hub links duplicating a nav link higher in the same document,
+      // and 27 promoted guides whose heading claimed a popularity the site's
+      // 31 clicks in 90 days do not support. It carries 6 rotated guides now,
+      // so the sitewide count is about 2,300 rather than 17,296. The floor
+      // still catches the thing it is for — a wrapper that stopped
+      // rendering — because 6 links on 387 pages cannot fall to 1,500 by
+      // accident.
       for (const [name, floor] of [
         ["nav", 10_000],
-        ["footer", 10_000],
+        ["footer", 1_500],
         ["breadcrumb", 800],
         ["body", 2_000],
       ] as const) {

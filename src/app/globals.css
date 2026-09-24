@@ -234,6 +234,37 @@ body {
   }
 }
 
+/*
+ * Skip to content.
+ *
+ * The site had no bypass mechanism at all (audited 2026-09-24). Landmarks
+ * are an accepted technique for 2.4.1 and give a screen-reader user a way
+ * past the chrome — but they do nothing for a sighted keyboard user, a
+ * switch user or a voice-control user, and those people met the full nav
+ * before the article on all 387 pages.
+ *
+ * Off-screen rather than `display: none`, so it is in the tab order; it
+ * comes back on focus. Positioned rather than sized to nothing, because a
+ * 0x0 focusable element is not reliably scrolled into view.
+ */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  color: var(--foreground-strong);
+  border: 1px solid var(--border-ui);
+  border-radius: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
   outline: 2px solid var(--foreground-strong);
   outline-offset: 2px;
