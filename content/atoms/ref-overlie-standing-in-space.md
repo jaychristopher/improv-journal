@@ -20,7 +20,7 @@ work:
   published: "2016"
   isbn: "1513615858"
 created: "2026-08-23"
-updated: "2026-08-25"
+updated: "2026-09-24"
 ---
 
 **Mary Overlie. *Standing in Space: The Six Viewpoints Theory & Practice.* Movement Publishing, 2016.**

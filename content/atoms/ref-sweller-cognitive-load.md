@@ -20,7 +20,7 @@ work:
   published: "1988"
   doi: "10.1207/s15516709cog1202_4"
 created: "2026-08-23"
-updated: "2026-08-25"
+updated: "2026-09-24"
 ---
 
 **John Sweller. "Cognitive Load During Problem Solving: Effects on Learning." *Cognitive Science* 12(2), 257–285, 1988.**

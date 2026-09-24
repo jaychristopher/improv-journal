@@ -13,7 +13,7 @@ entry_atoms: [side-coaching, be-present, space-work, presence, environment, phys
 entry_path: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-09-24"
 ---
 
 # Viola Spolin: The Woman Who Invented Theater Games

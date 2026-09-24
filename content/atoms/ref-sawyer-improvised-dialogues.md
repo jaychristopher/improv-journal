@@ -20,7 +20,7 @@ work:
   published: "2003"
   isbn: "1567506771"
 created: "2026-08-23"
-updated: "2026-08-25"
+updated: "2026-09-24"
 ---
 
 **R. Keith Sawyer. *Improvised Dialogues: Emergence and Creativity in Conversation.* Ablex Publishing, 2003.**

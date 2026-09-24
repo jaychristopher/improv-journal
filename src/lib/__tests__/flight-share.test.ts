@@ -84,7 +84,16 @@ const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> =
   // (331), the try-it line (332) and the practice control (333). HTML is
   // still under its ceiling; the flight moved because two of the three are
   // client components whose props travel.
-  concepts: { html: 108_700, flight: 60_400, share: 0.56 },
+  //
+  // html 108,865 on 2026-09-24, re-dated rather than lifted. The footer's 46
+  // links moved off the opacity ramp to the contrast tokens — every one of
+  // them failed AA at 3.51:1 — and `text-foreground-dim
+  // hover:text-foreground-strong` is 14 characters longer than
+  // `text-foreground/60 hover:text-foreground/90`. A client component still
+  // server-renders into the HTML, so the class names are paid there: about
+  // 640 bytes a page across the 46. The flight is untouched, which is the
+  // point of the footer being a client component in the first place.
+  concepts: { html: 109_400, flight: 60_400, share: 0.56 },
   // html 108,682 and flight 59,375 on 2026-09-23: the lesson page gained the
   // crosslink line (339) and the composed-from list's "also taught in" marks,
   // 74 of them across 20 lessons.

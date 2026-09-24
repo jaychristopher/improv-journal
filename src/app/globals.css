@@ -205,6 +205,41 @@ body {
   animation: fade-in 0.25s ease-out;
 }
 
+/*
+ * Motion and focus, site-wide.
+ *
+ * Both were absent entirely (audited 2026-09-24). `prefers-reduced-motion`
+ * appeared nowhere in the repository while `.animate-fade-in` ran an opacity
+ * and an 8px translate on the homepage quiz and every dialog — a vestibular
+ * trigger with no way to decline it (WCAG 2.3.3).
+ *
+ * Focus was worse: the whole of src/ carried one focus rule and it was
+ * `focus:outline-none`. Everything else leaned on the user agent's own ring,
+ * which is a pass nobody chose and one global reset away from a Level A
+ * failure (2.4.7). This declares the indicator rather than inheriting it:
+ * two solid pixels, offset clear of the text, in a colour that carries
+ * against both themes (--foreground-strong is #111 light, #ededed dark).
+ *
+ * `:focus-visible` rather than `:focus`, so a mouse click on a button does
+ * not leave a ring behind it.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--foreground-strong);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* Provenance (tracker entry 310).
    An author-written link is about a quarter of a guide's page-specific links
    and 2–5% of a concept's, lesson's or path's; the rest is the linker and the

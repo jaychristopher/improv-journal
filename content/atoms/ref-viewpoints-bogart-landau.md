@@ -22,7 +22,7 @@ work:
   published: "2005"
   isbn: "1559362413"
 created: "2026-04-05"
-updated: "2026-08-27"
+updated: "2026-09-24"
 ---
 
 **Anne Bogart & Tina Landau. *The Viewpoints Book: A Practical Guide to Viewpoints and Composition.* Theatre Communications Group, 2005. ISBN 1559362413.**

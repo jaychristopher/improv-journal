@@ -98,6 +98,8 @@ describe("the palette's contrast", () => {
     // both sit at `border-foreground/10` and are correct there.
     const files = [
       "src/components/Nav.tsx",
+      "src/components/Footer.tsx",
+      "src/components/ThemeToggle.tsx",
       "src/components/HomeHero.tsx",
       "src/components/GamePicker.tsx",
       "src/components/WouldYouRather.tsx",
@@ -119,7 +121,8 @@ describe("the palette's contrast", () => {
     // The ramp is used far beyond the files above: `text-foreground/40` and
     // `/50` are the site's ordinary dim states and both fail. This counts
     // what is left rather than asserting zero, so the number has to come down
-    // deliberately. 517 on 2026-09-23, after the chrome and the heroes.
+    // deliberately. 517 on 2026-09-23; 510 after the footer and the theme
+    // toggle joined the guarded set on 2026-09-24.
     const walk = (dir: string): string[] =>
       fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
         const full = path.join(dir, entry.name);
@@ -134,6 +137,6 @@ describe("the palette's contrast", () => {
           .length
       );
     }, 0);
-    expect(remaining).toBeLessThanOrEqual(517);
+    expect(remaining).toBeLessThanOrEqual(510);
   });
 });

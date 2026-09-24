@@ -18,7 +18,7 @@ entry_atoms: [harold, group-mind, connections, opening, be-honest]
 entry_path: systems-of-improv
 status: draft
 created: "2026-08-23"
-updated: "2026-08-24"
+updated: "2026-09-24"
 ---
 
 # Del Close: The Ideas That Still Run Improv

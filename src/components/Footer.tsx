@@ -143,7 +143,7 @@ export function Footer({ topGuides }: { topGuides: FooterGuide[] }) {
         >
           {FOOTER_SECTIONS.map((section) => (
             <div key={section.heading}>
-              <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
+              <h2 className="text-foreground-dim mb-3 text-xs font-semibold tracking-wider uppercase">
                 {section.heading}
               </h2>
               <ul className="space-y-2">
@@ -151,7 +151,7 @@ export function Footer({ topGuides }: { topGuides: FooterGuide[] }) {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-foreground/60 hover:text-foreground/90 text-sm transition-colors"
+                      className="text-foreground-dim hover:text-foreground-strong text-sm transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -162,7 +162,7 @@ export function Footer({ topGuides }: { topGuides: FooterGuide[] }) {
           ))}
 
           <div>
-            <h2 className="text-foreground/40 mb-3 text-xs font-semibold tracking-wider uppercase">
+            <h2 className="text-foreground-dim mb-3 text-xs font-semibold tracking-wider uppercase">
               Popular Guides
             </h2>
             <ul className="space-y-2">
@@ -170,7 +170,7 @@ export function Footer({ topGuides }: { topGuides: FooterGuide[] }) {
                 <li key={guide.slug}>
                   <Link
                     href={`/${guide.slug}`}
-                    className="text-foreground/60 hover:text-foreground/90 text-sm transition-colors"
+                    className="text-foreground-dim hover:text-foreground-strong text-sm transition-colors"
                   >
                     {footerGuideLabel(guide, pathname)}
                   </Link>
@@ -181,7 +181,7 @@ export function Footer({ topGuides }: { topGuides: FooterGuide[] }) {
         </nav>
 
         <div className="border-foreground/10 mt-10 flex items-center justify-between border-t pt-6">
-          <span className="text-foreground/30 text-xs">Physics of Connection</span>
+          <span className="text-foreground-dim text-xs">Physics of Connection</span>
           <ThemeToggle />
         </div>
       </div>
