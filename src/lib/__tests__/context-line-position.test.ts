@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { librarySlug } from "../library-slug";
+
 const ROOT = process.cwd();
 const APP = path.join(ROOT, ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
@@ -31,7 +33,7 @@ function conceptPages(): { slug: string; html: string }[] {
     const slug = file.replace(/\.md$/, "");
     const type = /^type:\s*(\w+)/m.exec(fs.readFileSync(path.join(dir, file), "utf-8"))?.[1];
     if (!type || !DIR[type]) continue;
-    const page = path.join(APP, ...DIR[type].split("/"), `${slug}.html`);
+    const page = path.join(APP, ...DIR[type].split("/"), `${librarySlug(slug)}.html`);
     if (!fs.existsSync(page)) continue;
     out.push({
       slug,

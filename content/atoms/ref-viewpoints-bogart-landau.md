@@ -79,7 +79,7 @@ The adaptation is not neutral, either. Overlie's six are presented as a way of s
 
 ## Editions and what to buy
 
-The 2005 TCG paperback is the only substantive edition; later printings are unchanged, so a used copy is the same book. Overlie's own account, [*Standing in Space: The Six Viewpoints Theory & Practice*](/library/ref-overlie-standing-in-space) (2016), came out eleven years later and reads very differently — more philosophical, less instructional, and pointedly not a systematisation. Anybody using Viewpoints seriously should read both, in that order, because Bogart and Landau's nine are a translation and the original is worth meeting on its own terms.
+The 2005 TCG paperback is the only substantive edition; later printings are unchanged, so a used copy is the same book. Overlie's own account, [*Standing in Space: The Six Viewpoints Theory & Practice*](/library/overlie-standing-in-space) (2016), came out eleven years later and reads very differently — more philosophical, less instructional, and pointedly not a systematisation. Anybody using Viewpoints seriously should read both, in that order, because Bogart and Landau's nine are a translation and the original is worth meeting on its own terms.
 
 Bogart's *A Director Prepares* (2001) is the companion most often recommended alongside it and is a different kind of book entirely — seven essays on the conditions for making work, with no exercises in it at all. It is the better book to read first if you want to know why Bogart works this way, and the worse one to read if you need a session to run on Thursday.
 

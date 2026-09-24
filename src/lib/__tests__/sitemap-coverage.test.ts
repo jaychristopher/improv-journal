@@ -3,6 +3,7 @@ import path from "path";
 import { describe, expect, it } from "vitest";
 
 import sitemap from "../../app/sitemap";
+import { librarySlug } from "../library-slug";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
 
@@ -101,7 +102,10 @@ describe("sitemap coverage", () => {
       }
       checkedTypes++;
       for (const id of ids) {
-        if (!segments.has(id)) missing.push(`${dir}/${id}`);
+        // A reference atom's id and its URL segment differ: `ref-` is a graph
+        // convention that the URL drops (library-slug.ts). Asking for either
+        // keeps this pattern-agnostic rather than teaching it the route.
+        if (!segments.has(id) && !segments.has(librarySlug(id))) missing.push(`${dir}/${id}`);
       }
     }
 

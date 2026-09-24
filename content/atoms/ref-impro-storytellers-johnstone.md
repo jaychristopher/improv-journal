@@ -34,7 +34,7 @@ updated: "2026-08-27"
 
 Johnstone's second book, written twenty years after *Impro*, and the inverse of it in almost every respect. Where the first is an argument that happens to contain exercises, this is a manual that happens to contain an argument.
 
-For the school it belongs to, see [the Johnstone tradition](/traditions/johnstone). For the earlier and more famous book, see [Impro](/library/ref-impro-johnstone). This page is about the sequel.
+For the school it belongs to, see [the Johnstone tradition](/traditions/johnstone). For the earlier and more famous book, see [Impro](/library/impro-johnstone). This page is about the sequel.
 
 ## What is actually in it
 

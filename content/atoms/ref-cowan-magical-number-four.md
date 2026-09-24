@@ -47,7 +47,7 @@ The target article is worth it for anybody who has been quoting seven plus or mi
 
 ## The attribution this page exists to fix
 
-The four-chunk figure is frequently credited to Sweller's cognitive load theory, including in several places on this site before this entry was written. Sweller (1988) does say short-term memory is severely limited and builds a theory of instruction on the consequences, but he supplies no capacity number — his contribution is what happens when load exceeds capacity, not what the capacity is. The two findings fit together and are not the same finding. See [Cognitive Load During Problem Solving](/library/ref-sweller-cognitive-load) for the other half.
+The four-chunk figure is frequently credited to Sweller's cognitive load theory, including in several places on this site before this entry was written. Sweller (1988) does say short-term memory is severely limited and builds a theory of instruction on the consequences, but he supplies no capacity number — his contribution is what happens when load exceeds capacity, not what the capacity is. The two findings fit together and are not the same finding. See [Cognitive Load During Problem Solving](/library/sweller-cognitive-load) for the other half.
 
 ## Also relevant
 

@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { librarySlug } from "../library-slug";
+
 const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
@@ -12,7 +14,7 @@ function mappedTitles(): { pattern: RegExp; slug: string }[] {
   const src = fs.readFileSync(path.join(process.cwd(), "src", "lib", "content.ts"), "utf-8");
   const block = /const SOURCE_TITLE_MAP[\s\S]*?\n\];/.exec(src);
   if (!block) throw new Error("SOURCE_TITLE_MAP not found in content.ts");
-  return [...block[0].matchAll(/\[\/(.+?)\/g,\s*"\/library\/(ref-[a-z0-9-]+)"\]/g)].map((m) => ({
+  return [...block[0].matchAll(/\[\/(.+?)\/g,\s*"\/library\/([a-z0-9-]+)"\]/g)].map((m) => ({
     // The same shape linkSources builds: the title, an optional colon subtitle,
     // an optional full stop.
     pattern: new RegExp(`^(?:${m[1]})(?::[^<]*)?\\.?$`),
@@ -75,9 +77,11 @@ describe("citations of works the library holds", () => {
           const hit = titles.find((t) => t.pattern.test(title));
           if (!hit) continue;
           // A reference page cites its own work; linking there would be a self-link.
-          if (`/library/${hit.slug}` === url) continue;
+          if (`/library/${librarySlug(hit.slug)}` === url) continue;
           // The fold defers to the prose's link (see above).
-          if (inFold(m.index) && outsideFold.includes(`href="/library/${hit.slug}"`)) continue;
+          if (inFold(m.index) && outsideFold.includes(`href="/library/${librarySlug(hit.slug)}"`)) {
+            continue;
+          }
           checked += 1;
           if (!m[1]) missing.push(`${url} -> ${hit.slug} ("${title}")`);
         }
@@ -94,11 +98,11 @@ describe("citations of works the library holds", () => {
     const selfLinks: string[] = [];
     const dir = path.join(APP, "library");
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      if (!entry.name.endsWith(".html") || !entry.name.startsWith("ref-")) continue;
+      if (!entry.name.endsWith(".html")) continue;
       const slug = entry.name.replace(".html", "");
       const html = fs.readFileSync(path.join(dir, entry.name), "utf8");
       const body = html.split("</header>").pop()?.split("<footer").shift() ?? "";
-      if (body.includes(`<a href="/library/${slug}"`)) selfLinks.push(slug);
+      if (body.includes(`<a href="/library/${librarySlug(slug)}"`)) selfLinks.push(slug);
     }
     expect(selfLinks).toEqual([]);
   });

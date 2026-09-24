@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 import { ageNormalisedRank, byRank, newestCohort } from "../atom-rank";
 import { getInboundLinks, loadAtoms } from "../content";
 import { CITED_BY_OPEN, citingConcepts, indexAtoms, workCitedBy } from "../jsonld-edges";
+import { librarySlug } from "../library-slug";
 import { SITE_URL } from "../seo";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
@@ -177,7 +178,7 @@ describe("library cited-by", () => {
     let folded = 0;
     for (const work of works) {
       const id = work.frontmatter.id;
-      const file = path.join(LIBRARY, `${id}.html`);
+      const file = path.join(LIBRARY, `${librarySlug(id)}.html`);
       if (!fs.existsSync(file)) continue;
       const html = pageText(file);
       const start = html.indexOf('data-track="library-cited-by"');
@@ -217,7 +218,7 @@ describe("library cited-by", () => {
   it.runIf(built)("reaches the August science, which had no block before", async () => {
     const { counts } = await citingFromGraph();
     for (const id of AUGUST_SCIENCE) {
-      const file = path.join(LIBRARY, `${id}.html`);
+      const file = path.join(LIBRARY, `${librarySlug(id)}.html`);
       expect(fs.existsSync(file), id).toBe(true);
       const html = pageText(file);
       expect(html, id).toContain('data-track="library-cited-by"');

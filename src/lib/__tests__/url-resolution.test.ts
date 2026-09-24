@@ -84,9 +84,12 @@ describe("getAtomUrl", () => {
 
   // ─── Library URLs ─────────────────────────────────────────────────────────
 
-  it("maps reference atoms to /library/{id}", () => {
+  // The `ref-` prefix is a graph convention and was noise in the most visible
+  // part of the URL, in front of the words that carry the query. The id keeps
+  // it, the URL drops it, and the old paths redirect (library-slug.ts).
+  it("maps reference atoms to /library/{id without ref-}", () => {
     expect(getAtomUrl({ id: "ref-impro-johnstone", type: "reference" })).toBe(
-      "/library/ref-impro-johnstone",
+      "/library/impro-johnstone",
     );
   });
 

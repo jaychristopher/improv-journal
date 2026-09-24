@@ -71,7 +71,7 @@ The reason his name survives outside improv is the list, and the list is usually
 
 **Second City, 1973 to 1982.** As resident director he was directing revues rather than running a school, and the performers in those companies included John Belushi, Bill Murray, Gilda Radner and John Candy. What they got from him was direction on material headed for an audience that week — closer to an editor than a teacher, and mostly not the long-form theory he is now known for, which he had not finished building.
 
-**ImprovOlympic, from the mid-1980s.** This is where the teaching happened, because this is where he had a training programme rather than a production schedule. Tina Fey and Amy Poehler came through it, and the founders of the [Upright Citizens Brigade](/traditions/ucb) met and formed their ensemble in his classes — which is the transmission that matters most, since UCB then wrote the method down in the [UCB Comedy Improvisation Manual](/library/ref-ucb-manual) and exported it to New York and Los Angeles.
+**ImprovOlympic, from the mid-1980s.** This is where the teaching happened, because this is where he had a training programme rather than a production schedule. Tina Fey and Amy Poehler came through it, and the founders of the [Upright Citizens Brigade](/traditions/ucb) met and formed their ensemble in his classes — which is the transmission that matters most, since UCB then wrote the method down in the [UCB Comedy Improvisation Manual](/library/ucb-manual) and exported it to New York and Los Angeles.
 
 That second group is the one that carried the ideas rather than the reputation. The Second City cohort became famous; the iO cohort became teachers, and the difference is why his influence is far larger than his own credits suggest.
 

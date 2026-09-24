@@ -4,6 +4,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { TOC_VISIBLE } from "../../components/TableOfContents";
+import { librarySlug } from "../library-slug";
 
 const ROOT = process.cwd();
 const APP = path.join(ROOT, ".next", "server", "app");
@@ -35,7 +36,7 @@ function outlines(): { slug: string; dom: number; visible: number; misleading: b
     const type = /^type:\s*(\w+)/m.exec(fs.readFileSync(path.join(dir, file), "utf-8"))?.[1];
     if (!type || !DIR[type]) continue;
 
-    const page = path.join(APP, ...DIR[type].split("/"), `${slug}.html`);
+    const page = path.join(APP, ...DIR[type].split("/"), `${librarySlug(slug)}.html`);
     if (!fs.existsSync(page)) continue;
 
     const html = fs.readFileSync(page, "utf-8").replace(/<script[\s\S]*?<\/script>/g, "");

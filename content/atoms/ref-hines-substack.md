@@ -45,7 +45,7 @@ That format is both the appeal and the difficulty. There is no route through it,
 
 Hines has taught at the Upright Citizens Brigade since February 2005 and performed there throughout, which makes him a practitioner rather than a theorist and an unusually good observer of what actually happens to students. He is also, informally, the UCB community's historian — a fair amount of the Substack is the only written record of how that institution taught, changed its mind, and came apart.
 
-He is the author of [How to Be the Greatest Improviser on Earth](/library/ref-hines-greatest-improviser), which is the tidied version of the same thinking.
+He is the author of [How to Be the Greatest Improviser on Earth](/library/hines-greatest-improviser), which is the tidied version of the same thinking.
 
 ## Where to start
 

@@ -21,6 +21,13 @@ import { fileURLToPath, pathToFileURL } from "url";
 
 import { listRoutePages } from "../src/lib/route-pages.mjs";
 
+/**
+ * `ref-` is a graph convention the URL drops; see src/lib/library-slug.ts.
+ * Duplicated rather than imported because this is plain JS run before the
+ * build, the same reason redirects.ts keeps its own copy of the URL map.
+ */
+const librarySlug = (id) => (id.startsWith("ref-") ? id.slice(4) : id);
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, "..", "content");
 const OUTPUT = path.join(__dirname, "..", "public", "search-index.json");
@@ -47,7 +54,7 @@ function atomTypeToUrl(id, type) {
     case "definition":
       return `/practice/vocabulary/${id}`;
     case "reference":
-      return `/library/${id}`;
+      return `/library/${librarySlug(id)}`;
     default:
       return `/how-it-works/${id}`;
   }

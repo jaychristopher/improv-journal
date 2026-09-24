@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 
 import { getAtomsForTradition, getTraditionNames, loadAtoms } from "../content";
 import { citedWorkId } from "../jsonld-edges";
+import { librarySlug } from "../library-slug";
 import { TRADITION_REF_IDS } from "../tradition-disagreements";
 import { textCountsByTradition, traditionTextIds, traditionTexts } from "../tradition-texts";
 
@@ -41,7 +42,7 @@ describe("tradition texts", () => {
       ).toEqual(ids);
       total += texts.length;
       for (const text of texts) {
-        expect(text.url, text.id).toBe(`/library/${text.id}`);
+        expect(text.url, text.id).toBe(`/library/${librarySlug(text.id)}`);
         expect(text.title.length, text.id).toBeGreaterThan(0);
         expect(text.authors.length, text.id).toBeGreaterThanOrEqual(1);
         // The library's own count: a work no concept cites would define a
@@ -109,7 +110,7 @@ describe("tradition texts", () => {
     const citations = (await traditionTexts("johnstone")).map((t) => t.citation!);
     expect(citations).toHaveLength(2);
     for (const c of citations) {
-      expect(c["@id"]).toMatch(/\/library\/ref-[a-z-]+#work$/);
+      expect(c["@id"]).toMatch(/\/library\/[a-z-]+#work$/);
       expect(c["@type"]).toBe("Book");
       expect(c.name.length).toBeGreaterThan(0);
     }
@@ -136,7 +137,8 @@ describe("tradition texts", () => {
       const end = html.indexOf("</section>", start);
       const block = html.slice(start, end);
       const hrefs = [...block.matchAll(/href="\/library\/([a-z0-9-]+)"/g)].map((m) => m[1]);
-      expect(hrefs, tradition).toEqual(traditionTextIds(tradition));
+      // The hrefs are library slugs; the table names atom ids.
+      expect(hrefs, tradition).toEqual(traditionTextIds(tradition).map(librarySlug));
       links += hrefs.length;
       expect(block).toMatch(/cited by \d+ concepts?/);
       expect(block).toContain("The texts");
@@ -164,8 +166,8 @@ describe("tradition texts", () => {
     expect(article).toBeDefined();
     const ids = (article.citation ?? []).map((c: { "@id": string }) => c["@id"]);
     expect(ids).toEqual([
-      citedWorkId("/library/ref-impro-johnstone"),
-      citedWorkId("/library/ref-impro-storytellers-johnstone"),
+      citedWorkId("/library/impro-johnstone"),
+      citedWorkId("/library/impro-storytellers-johnstone"),
     ]);
   });
 });

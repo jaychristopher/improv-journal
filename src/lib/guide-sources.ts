@@ -1,6 +1,8 @@
 import { getAtomUrl, getBridgeBySlug, loadAtoms, loadBridges } from "@/lib/content";
 import type { AtomFrontmatter } from "@/lib/schema";
 
+import { librarySlug } from "./library-slug";
+
 /**
  * The library works a guide stands on, computed from its `entry_atoms`.
  *
@@ -65,7 +67,7 @@ export function sourcesOf(
     .map(([id, citedBy]) => ({
       id,
       title: byId.get(id)!.title,
-      url: `/library/${id}`,
+      url: `/library/${librarySlug(id)}`,
       citedBy,
     }))
     .sort((a, b) => b.citedBy.length - a.citedBy.length || a.title.localeCompare(b.title));

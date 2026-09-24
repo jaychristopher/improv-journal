@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { getEpisodesForShow, loadAtoms, loadShows } from "../content";
+import { libraryIdFromSlug } from "../library-slug";
 import {
   citationCounts,
   dependencyOrder,
@@ -258,7 +259,11 @@ describe("pathPlayOrder and libraryPlayOrder", () => {
     expect(library!.episodes.length).toBeGreaterThanOrEqual(30);
     const atoms = await loadAtoms();
     const counts = citationCounts(atoms);
-    const played = library!.episodes.map((ep) => counts.get(ep.href.split("/").pop()!) ?? 0);
+    // The href ends in the library slug; the citation counts are keyed by
+    // atom id, which still carries the `ref-` prefix.
+    const played = library!.episodes.map(
+      (ep) => counts.get(libraryIdFromSlug(ep.href.split("/").pop()!)) ?? 0,
+    );
     for (let i = 1; i < played.length; i++) expect(played[i]).toBeLessThanOrEqual(played[i - 1]);
     expect(played[0]).toBeGreaterThanOrEqual(40);
   });

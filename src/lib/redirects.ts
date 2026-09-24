@@ -11,6 +11,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
+import { librarySlug } from "./library-slug";
+
 /** Duplicate of getAtomUrl logic — kept in sync manually to avoid ESM import chain */
 function atomTypeToUrl(id: string, type: string): string {
   switch (type) {
@@ -33,7 +35,7 @@ function atomTypeToUrl(id: string, type: string): string {
     case "definition":
       return `/practice/vocabulary/${id}`;
     case "reference":
-      return `/library/${id}`;
+      return `/library/${librarySlug(id)}`;
     default:
       return `/system/${id}`;
   }
@@ -59,6 +61,35 @@ export function generateAtomRedirects(): {
       permanent: true,
     };
   });
+}
+
+/**
+ * The library entries' old `ref-` URLs.
+ *
+ * These are among the best-ranking pages on the site and have been indexed
+ * for months, so the prefix drop is a redirect rather than a rename.
+ */
+export function generateLibraryRedirects(): {
+  source: string;
+  destination: string;
+  permanent: boolean;
+}[] {
+  const dir = path.join(process.cwd(), "content", "atoms");
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((file) => {
+      const { data } = matter(fs.readFileSync(path.join(dir, file), "utf-8"));
+      return data as { id: string; type: string };
+    })
+    .filter((fm) => fm.type === "reference" && fm.id !== librarySlug(fm.id))
+    .map((fm) => ({
+      source: `/library/${fm.id}`,
+      destination: `/library/${librarySlug(fm.id)}`,
+      permanent: true,
+    }));
 }
 
 export function generateBridgeRedirects(): {

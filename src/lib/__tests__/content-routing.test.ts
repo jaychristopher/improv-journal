@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { getAtomUrl, loadAtoms } from "../content";
+import { librarySlug } from "../library-slug";
 
 describe("content routing completeness", () => {
   it("every atom has a URL that starts with /how-it-works/, /practice/, or /library/", async () => {
@@ -59,7 +60,7 @@ describe("content routing completeness", () => {
     expect(refs.length).toBeGreaterThanOrEqual(14);
     for (const a of refs) {
       expect(getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type })).toBe(
-        `/library/${a.frontmatter.id}`,
+        `/library/${librarySlug(a.frontmatter.id)}`,
       );
     }
   });

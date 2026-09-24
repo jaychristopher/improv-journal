@@ -1,6 +1,8 @@
 import { loadAtoms, loadThreads } from "@/lib/content";
 import type { AtomFrontmatter } from "@/lib/schema";
 
+import { librarySlug } from "./library-slug";
+
 export interface LessonSource {
   id: string;
   title: string;
@@ -52,7 +54,7 @@ export function lessonSources(
     .map(([id, citedBy]) => ({
       id,
       title: byId.get(id)!.title,
-      url: `/library/${id}`,
+      url: `/library/${librarySlug(id)}`,
       citedBy,
     }))
     .sort((a, b) => b.citedBy - a.citedBy || a.title.localeCompare(b.title));

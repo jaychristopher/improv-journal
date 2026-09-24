@@ -4,6 +4,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms, loadThreads } from "../content";
+import { librarySlug } from "../library-slug";
 import { readingMinutes } from "../reading-time";
 
 const ROOT = process.cwd();
@@ -82,7 +83,7 @@ describe("reading time on lessons and library entries", () => {
 
     for (const atom of await loadAtoms()) {
       if (atom.frontmatter.type !== "reference") continue;
-      const page = path.join(APP, "library", `${atom.frontmatter.id}.html`);
+      const page = path.join(APP, "library", `${librarySlug(atom.frontmatter.id)}.html`);
       if (!fs.existsSync(page)) continue;
       pages += 1;
       const text = fs.readFileSync(page, "utf-8").replace(/<[^>]+>/g, "");

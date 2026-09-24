@@ -3,6 +3,8 @@ import { describe, expect, it } from "vitest";
 import { loadAtoms, loadThreads } from "@/lib/content";
 import { LESSON_SOURCES_CAP, lessonSources } from "@/lib/lesson-sources";
 
+import { librarySlug } from "../library-slug";
+
 /**
  * Every lesson shows the library works it rests on.
  *
@@ -47,7 +49,7 @@ describe("lesson sources", () => {
       }
       for (const source of sources) {
         expect(referenceIds.has(source.id)).toBe(true);
-        expect(source.url).toBe(`/library/${source.id}`);
+        expect(source.url).toBe(`/library/${librarySlug(source.id)}`);
         expect(source.title.length).toBeGreaterThan(0);
       }
     }

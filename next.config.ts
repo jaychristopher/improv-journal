@@ -4,6 +4,7 @@ import {
   generateAtomRedirects,
   generateBridgeRedirects,
   generateHubRedirects,
+  generateLibraryRedirects,
 } from "./src/lib/redirects";
 
 const nextConfig: NextConfig = {
@@ -12,7 +13,12 @@ const nextConfig: NextConfig = {
     workerThreads: false,
   },
   async redirects() {
-    return [...generateAtomRedirects(), ...generateBridgeRedirects(), ...generateHubRedirects()];
+    return [
+      ...generateAtomRedirects(),
+      ...generateBridgeRedirects(),
+      ...generateHubRedirects(),
+      ...generateLibraryRedirects(),
+    ];
   },
 };
 

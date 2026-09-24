@@ -47,7 +47,7 @@ Where the primary source earns its place is if you intend to argue about it. The
 
 ## What this paper does not say
 
-It supplies no working-memory capacity figure. Sweller says short-term memory is severely limited and reasons from the limit; the "about four" number belongs to [Cowan (2001)](/library/ref-cowan-magical-number-four), and this site misattributed it to Sweller on five pages until August 2026. Cognitive load theory is a theory of what limited capacity *does*, not a measurement of how much there is.
+It supplies no working-memory capacity figure. Sweller says short-term memory is severely limited and reasons from the limit; the "about four" number belongs to [Cowan (2001)](/library/cowan-magical-number-four), and this site misattributed it to Sweller on five pages until August 2026. Cognitive load theory is a theory of what limited capacity *does*, not a measurement of how much there is.
 
 ## Also relevant
 

@@ -34,7 +34,7 @@ Her six are Space, Shape, Time, Emotion, Movement and Story, and the arrangement
 *The lower arrangement is a decision, not a simplification of the upper one.*
 
 
-Read alongside [The Viewpoints Book](/library/ref-viewpoints-bogart-landau), the two make a genuine disagreement visible. Bogart and Landau expanded the physical elements into nine and organised them for rehearsal; Overlie regarded the expansion as a different project rather than an improvement on hers, and this book is where she says so in her own voice. Anyone using the nine-channel version is using an adaptation, and it is worth knowing what it was adapted from.
+Read alongside [The Viewpoints Book](/library/viewpoints-bogart-landau), the two make a genuine disagreement visible. Bogart and Landau expanded the physical elements into nine and organised them for rehearsal; Overlie regarded the expansion as a different project rather than an improvement on hers, and this book is where she says so in her own voice. Anyone using the nine-channel version is using an adaptation, and it is worth knowing what it was adapted from.
 
 ## Who it rewards
 

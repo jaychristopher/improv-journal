@@ -4,6 +4,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms, loadBridges, loadThreads } from "../content";
+import { libraryIdFromSlug } from "../library-slug";
 
 /**
  * A citation of a work the site holds is written so the linker can match it.
@@ -41,7 +42,11 @@ function mappedIds(): string[] {
   const src = fs.readFileSync(path.join(process.cwd(), "src", "lib", "content.ts"), "utf-8");
   const block = /const CITATION_MAP[\s\S]*?\n\];/.exec(src);
   if (!block) throw new Error("CITATION_MAP not found in content.ts");
-  return [...block[0].matchAll(/"\/library\/(ref-[a-z0-9-]+)"/g)].map((m) => m[1]).sort();
+  // The URLs dropped the `ref-` prefix (library-slug.ts); the ids here are
+  // still the atoms' own, so the slug is mapped back to compare.
+  return [...block[0].matchAll(/"\/library\/([a-z0-9-]+)"/g)]
+    .map((m) => libraryIdFromSlug(m[1]))
+    .sort();
 }
 
 describe("citations of works in the library", () => {

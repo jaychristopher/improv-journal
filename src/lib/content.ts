@@ -20,6 +20,7 @@ import { getAudioDuration, loadAudioManifest } from "./audio-manifest";
 import { inlineDiagrams } from "./diagrams";
 import { contentPath, firstPublishedDate } from "./first-published";
 import { lessonAtomOrder } from "./lesson-order";
+import { librarySlug } from "./library-slug";
 import { getNextPath, isOnProgression } from "./path-progression";
 import type {
   AtomFrontmatter,
@@ -116,32 +117,32 @@ let _contentLinkTargets: ContentLinkTarget[] | null = null;
 // Matches <em>Title</em> that is NOT already inside an <a> tag.
 
 const SOURCE_TITLE_MAP: [RegExp, string][] = [
-  [/Truth in Comedy/g, "/library/ref-truth-in-comedy"],
-  [/Bossypants/g, "/library/ref-fey-bossypants"],
-  [/Impro for Storytellers/g, "/library/ref-impro-storytellers-johnstone"],
-  [/Improvisation for the Theater/g, "/library/ref-spolin-improvisation-for-theater"],
-  [/Improv Wisdom/g, "/library/ref-madson-improv-wisdom"],
-  [/Group Genius/g, "/library/ref-sawyer-group-genius"],
-  [/Improvisation at the Speed of Life/g, "/library/ref-tj-dave-speed-of-life"],
-  [/Speed of Life/g, "/library/ref-tj-dave-speed-of-life"],
-  [/Improv Nonsense/g, "/library/ref-hines-substack"],
-  [/UCB Comedy Improvisation Manual/g, "/library/ref-ucb-manual"],
-  [/Attention and Effort/g, "/library/ref-attention-and-effort-kahneman"],
-  [/The Viewpoints Book/g, "/library/ref-viewpoints-bogart-landau"],
-  [/Sanford Meisner on Acting/g, "/library/ref-meisner-on-acting"],
-  [/Improvise/g, "/library/ref-napier-improvise"],
-  [/Daring Greatly/g, "/library/ref-brown-daring-greatly"],
-  [/Improv Nerd/g, "/library/ref-carrane-improv-nerd"],
-  [/Frame Analysis/g, "/library/ref-goffman-frame-analysis"],
-  [/Art by Committee/g, "/library/ref-halpern-art-by-committee"],
-  [/Behind the Scenes/g, "/library/ref-napier-behind-the-scenes"],
-  [/Standing in Space/g, "/library/ref-overlie-standing-in-space"],
-  [/The Improv Handbook/g, "/library/ref-salinsky-improv-handbook"],
-  [/Improvised Dialogues/g, "/library/ref-sawyer-improvised-dialogues"],
-  [/An Actor Prepares/g, "/library/ref-stanislavski-actor-prepares"],
-  [/Improvise Freely/g, "/library/ref-stiles-improvise-freely"],
-  [/Flow/g, "/library/ref-csikszentmihalyi-flow"],
-  [/Impro(?!v)/g, "/library/ref-impro-johnstone"],
+  [/Truth in Comedy/g, "/library/truth-in-comedy"],
+  [/Bossypants/g, "/library/fey-bossypants"],
+  [/Impro for Storytellers/g, "/library/impro-storytellers-johnstone"],
+  [/Improvisation for the Theater/g, "/library/spolin-improvisation-for-theater"],
+  [/Improv Wisdom/g, "/library/madson-improv-wisdom"],
+  [/Group Genius/g, "/library/sawyer-group-genius"],
+  [/Improvisation at the Speed of Life/g, "/library/tj-dave-speed-of-life"],
+  [/Speed of Life/g, "/library/tj-dave-speed-of-life"],
+  [/Improv Nonsense/g, "/library/hines-substack"],
+  [/UCB Comedy Improvisation Manual/g, "/library/ucb-manual"],
+  [/Attention and Effort/g, "/library/attention-and-effort-kahneman"],
+  [/The Viewpoints Book/g, "/library/viewpoints-bogart-landau"],
+  [/Sanford Meisner on Acting/g, "/library/meisner-on-acting"],
+  [/Improvise/g, "/library/napier-improvise"],
+  [/Daring Greatly/g, "/library/brown-daring-greatly"],
+  [/Improv Nerd/g, "/library/carrane-improv-nerd"],
+  [/Frame Analysis/g, "/library/goffman-frame-analysis"],
+  [/Art by Committee/g, "/library/halpern-art-by-committee"],
+  [/Behind the Scenes/g, "/library/napier-behind-the-scenes"],
+  [/Standing in Space/g, "/library/overlie-standing-in-space"],
+  [/The Improv Handbook/g, "/library/salinsky-improv-handbook"],
+  [/Improvised Dialogues/g, "/library/sawyer-improvised-dialogues"],
+  [/An Actor Prepares/g, "/library/stanislavski-actor-prepares"],
+  [/Improvise Freely/g, "/library/stiles-improvise-freely"],
+  [/Flow/g, "/library/csikszentmihalyi-flow"],
+  [/Impro(?!v)/g, "/library/impro-johnstone"],
 ];
 
 /**
@@ -175,12 +176,12 @@ function normaliseGeneratedIds(htmlStr: string): string {
 // fire once per page so a bibliography does not become a wall of links.
 
 const CITATION_MAP: [RegExp, string][] = [
-  [/Limb\s*(?:&(?:amp|#x26);|&)\s*Braun\s*\(2008\)/, "/library/ref-limb-braun-jazz-improvisation"],
-  [/Edmondson\s*\(1999\)/, "/library/ref-edmondson-psychological-safety"],
-  [/Cowan\s*\(2001\)/, "/library/ref-cowan-magical-number-four"],
-  [/Sweller\s*\(1988\)/, "/library/ref-sweller-cognitive-load"],
-  [/Cherry\s*\(1953\)/, "/library/ref-cherry-cocktail-party"],
-  [/Wickens\s*\(2002\)/, "/library/ref-wickens-multiple-resources"],
+  [/Limb\s*(?:&(?:amp|#x26);|&)\s*Braun\s*\(2008\)/, "/library/limb-braun-jazz-improvisation"],
+  [/Edmondson\s*\(1999\)/, "/library/edmondson-psychological-safety"],
+  [/Cowan\s*\(2001\)/, "/library/cowan-magical-number-four"],
+  [/Sweller\s*\(1988\)/, "/library/sweller-cognitive-load"],
+  [/Cherry\s*\(1953\)/, "/library/cherry-cocktail-party"],
+  [/Wickens\s*\(2002\)/, "/library/wickens-multiple-resources"],
 ];
 
 function linkCitations(htmlStr: string, currentUrl: string | null): string {
@@ -1664,7 +1665,7 @@ export function getAtomUrl(atom: { id: string; type: AtomType }): string {
     case "definition":
       return `/practice/vocabulary/${atom.id}`;
     case "reference":
-      return `/library/${atom.id}`;
+      return `/library/${librarySlug(atom.id)}`;
     default:
       return `/system/${atom.id}`;
   }

@@ -14,6 +14,13 @@ import { fileURLToPath } from "node:url";
 import { glob } from "glob";
 import matter from "gray-matter";
 
+/**
+ * `ref-` is a graph convention the URL drops; see src/lib/library-slug.ts.
+ * Duplicated rather than imported because this is plain JS run before the
+ * build, the same reason redirects.ts keeps its own copy of the URL map.
+ */
+const librarySlug = (id) => (id.startsWith("ref-") ? id.slice(4) : id);
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
@@ -34,7 +41,7 @@ const ATOM_URL_BY_TYPE = {
   pedagogy: (id) => `/practice/techniques/${id}`,
   format: (id) => `/practice/formats/${id}`,
   definition: (id) => `/practice/vocabulary/${id}`,
-  reference: (id) => `/library/${id}`,
+  reference: (id) => `/library/${librarySlug(id)}`,
 };
 
 const ATOM_CATEGORY_BY_TYPE = {

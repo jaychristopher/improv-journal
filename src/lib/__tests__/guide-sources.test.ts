@@ -10,6 +10,7 @@ import {
   sourcesOf,
   worksCitedByGuides,
 } from "@/lib/guide-sources";
+import { librarySlug } from "@/lib/library-slug";
 
 /**
  * Every guide shows the library works its declared concepts cite.
@@ -104,7 +105,7 @@ describe("guide sources", () => {
         links += 1;
         reached.add(source.id);
         expect(referenceIds.has(source.id), source.id).toBe(true);
-        expect(source.url).toBe(`/library/${source.id}`);
+        expect(source.url).toBe(`/library/${librarySlug(source.id)}`);
         expect(source.title.length).toBeGreaterThan(0);
         // The reason beside the work: at least one of the guide's own
         // declared concepts, never a reference and never an atom the guide
@@ -189,7 +190,7 @@ describe("guide sources", () => {
     const index = await worksCitedByGuides();
     let listed = 0;
     for (const [workId, guides] of index) {
-      const file = path.join(APP, "library", `${workId}.html`);
+      const file = path.join(APP, "library", `${librarySlug(workId)}.html`);
       if (!fs.existsSync(file)) continue;
       // React leaves a text-node separator between the label and the count.
       const html = fs.readFileSync(file, "utf-8").replace(/<!-- -->/g, "");

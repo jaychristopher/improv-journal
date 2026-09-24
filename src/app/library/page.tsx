@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { loadAtoms } from "@/lib/content";
 import { HUBS, hubSelfCrumb } from "@/lib/hubs";
+import { librarySlug } from "@/lib/library-slug";
 import type { ExternalLink } from "@/lib/schema";
 import { pageTitle, SITE_URL } from "@/lib/seo";
 
@@ -129,7 +130,7 @@ export default async function LibraryPage() {
         .map((atom, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          url: `${SITE_URL}/library/${atom.frontmatter.id}`,
+          url: `${SITE_URL}/library/${librarySlug(atom.frontmatter.id)}`,
           name: atom.frontmatter.work?.name ?? atom.frontmatter.title,
         })),
     },
@@ -177,7 +178,13 @@ export default async function LibraryPage() {
                 const atom = refMap.get(id);
                 if (!atom) return null;
                 const fm = atom.frontmatter;
-                const extLinks: ExternalLink[] = fm.external_links ?? [];
+                // Retail links are dropped here on purpose. The hub used to
+                // send a reader straight to Amazon, past the entry that says
+                // whether the book is worth buying and holds the tagged
+                // links — the two things this hub exists to lead to.
+                const extLinks: ExternalLink[] = (fm.external_links ?? []).filter(
+                  (el) => !/amazon|audible|bookshop/i.test(el.url),
+                );
                 const cites = citeCounts.get(id) ?? 0;
 
                 // Extract first sentence for preview
@@ -191,7 +198,10 @@ export default async function LibraryPage() {
                 return (
                   <div key={id} className="border-foreground/10 bg-surface rounded-lg border p-5">
                     <div className="flex items-start justify-between">
-                      <Link href={`/library/${id}`} className="font-semibold hover:underline">
+                      <Link
+                        href={`/library/${librarySlug(id)}`}
+                        className="font-semibold hover:underline"
+                      >
                         {fm.title}
                       </Link>
                       {cites > 0 && (
@@ -201,27 +211,25 @@ export default async function LibraryPage() {
                       )}
                     </div>
                     <p className="text-foreground/50 mt-1 text-sm">{preview}.</p>
-                    {extLinks.length > 0 && (
-                      <div className="mt-3 flex gap-3">
-                        {extLinks.map((el) => (
-                          <a
-                            key={el.url}
-                            href={el.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-foreground/10 hover:border-foreground/30 text-foreground/50 hover:text-foreground/70 rounded-full border px-3 py-1 text-xs transition-colors"
-                          >
-                            {el.label} {"\u2197"}
-                          </a>
-                        ))}
-                        <Link
-                          href={`/library/${id}`}
+                    <div className="mt-3 flex gap-3">
+                      {extLinks.map((el) => (
+                        <a
+                          key={el.url}
+                          href={el.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="border-foreground/10 hover:border-foreground/30 text-foreground/50 hover:text-foreground/70 rounded-full border px-3 py-1 text-xs transition-colors"
                         >
-                          In the graph
-                        </Link>
-                      </div>
-                    )}
+                          {el.label} {"\u2197"}
+                        </a>
+                      ))}
+                      <Link
+                        href={`/library/${librarySlug(id)}`}
+                        className="border-foreground/10 hover:border-foreground/30 text-foreground/50 hover:text-foreground/70 rounded-full border px-3 py-1 text-xs transition-colors"
+                      >
+                        In the graph
+                      </Link>
+                    </div>
                   </div>
                 );
               })}
@@ -240,22 +248,22 @@ export default async function LibraryPage() {
           className="text-foreground/70 mb-4"
         />
         <Prose
-          text="**If you have never done improv and want to know why anybody bothers.** [Impro](/library/ref-impro-johnstone). It is the most interesting book on the list and the least practical — a book about imagination, spontaneity and status that happens to be set in a theatre. Do not expect a route into doing it."
+          text="**If you have never done improv and want to know why anybody bothers.** [Impro](/library/impro-johnstone). It is the most interesting book on the list and the least practical — a book about imagination, spontaneity and status that happens to be set in a theatre. Do not expect a route into doing it."
           currentUrl="/library"
           className="text-foreground/70 mb-4"
         />
         <Prose
-          text="**If you are taking classes and your scenes keep dying.** [The UCB Manual](/library/ref-ucb-manual). Its distinguishing quality is that it commits: where the others gesture at what good scenes have in common, this one gives a procedure and accepts being wrong sometimes. That is exactly what a stuck student needs and exactly what an experienced one argues with."
+          text="**If you are taking classes and your scenes keep dying.** [The UCB Manual](/library/ucb-manual). Its distinguishing quality is that it commits: where the others gesture at what good scenes have in common, this one gives a procedure and accepts being wrong sometimes. That is exactly what a stuck student needs and exactly what an experienced one argues with."
           currentUrl="/library"
           className="text-foreground/70 mb-4"
         />
         <Prose
-          text="**If you freeze at the top of a scene.** [Improvise](/library/ref-napier-improvise), which is about the first three seconds and very little else. Shorter than the others and aimed at one problem."
+          text="**If you freeze at the top of a scene.** [Improvise](/library/napier-improvise), which is about the first three seconds and very little else. Shorter than the others and aimed at one problem."
           currentUrl="/library"
           className="text-foreground/70 mb-4"
         />
         <Prose
-          text="**If you teach, or are about to.** [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater). Everything downstream of it is a variation, and it is written to be taught from rather than read."
+          text="**If you teach, or are about to.** [Improvisation for the Theater](/library/spolin-improvisation-for-theater). Everything downstream of it is a variation, and it is written to be taught from rather than read."
           currentUrl="/library"
           className="text-foreground/70 mb-4"
         />

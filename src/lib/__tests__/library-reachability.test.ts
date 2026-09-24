@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { librarySlug } from "../library-slug";
+
 const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
@@ -45,7 +47,9 @@ describe("library reachability", () => {
     const pages = builtPages().filter((f) => !f.includes(`${path.sep}library${path.sep}`));
     const html = pages.map((f) => fs.readFileSync(f, "utf-8"));
 
-    const orphaned = refs.filter((ref) => !html.some((h) => h.includes(`href="/library/${ref}"`)));
+    const orphaned = refs.filter(
+      (ref) => !html.some((h) => h.includes(`href="/library/${librarySlug(ref)}"`)),
+    );
 
     expect(orphaned).toEqual([]);
   });

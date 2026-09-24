@@ -281,13 +281,13 @@ describe("site search ranks a guide's keyword and a concept's title apart", () =
         "psychological safety",
         "/psychological-safety",
         "Amy Edmondson — Psychological Safety in Work Teams (1999)",
-        "/library/ref-edmondson-psychological-safety",
+        "/library/edmondson-psychological-safety",
       ],
       [
         "viola spolin",
         "/viola-spolin",
         "Improvisation for the Theater — Viola Spolin (1963)",
-        "/library/ref-spolin-improvisation-for-theater",
+        "/library/spolin-improvisation-for-theater",
       ],
     ];
     // The titles above are the twins' as of 2026-09-22; a retitled twin

@@ -25,7 +25,7 @@ updated: "2026-08-25"
 
 **R. Keith Sawyer. *Improvised Dialogues: Emergence and Creativity in Conversation.* Ablex Publishing, 2003.**
 
-Sawyer recorded improvised performances and analysed the transcripts as conversation data, which makes this the rare improv book that is answerable to evidence rather than to a teacher's authority. It is the academic work behind the argument he later wrote for a general readership in [Group Genius](/library/ref-sawyer-group-genius), and it is considerably more careful.
+Sawyer recorded improvised performances and analysed the transcripts as conversation data, which makes this the rare improv book that is answerable to evidence rather than to a teacher's authority. It is the academic work behind the argument he later wrote for a general readership in [Group Genius](/library/sawyer-group-genius), and it is considerably more careful.
 
 The central finding is that coherent structure appears in dialogue that nobody planned, and that it appears through mechanisms you can point at in a transcript. Meaning is not deposited in a line by the speaker; it is fixed by what the next person does with it, sometimes several turns later. Sawyer's term for the resulting object is the collaboratively emergent — a thing that exists in the interaction and in neither performer's intention, which is a claim improvisers make constantly and rarely support.
 

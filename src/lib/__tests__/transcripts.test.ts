@@ -178,7 +178,7 @@ describe("transcripts", () => {
       transcript.paragraphs,
       "/practice/formats/narrative-longform",
     );
-    expect(html.join("\n")).toContain('href="/library/ref-impro-storytellers-johnstone"');
+    expect(html.join("\n")).toContain('href="/library/impro-storytellers-johnstone"');
   });
 
   it.runIf(built)("every built page with a player folds a transcript under it", () => {

@@ -109,6 +109,11 @@ const EXEMPT: { name: string; file: string; why: string }[] = [
     why: "an interactive tool, not a link block — the same case as the three above",
   },
   {
+    name: "buy-the-book",
+    file: "src/components/BuyTheBook.tsx",
+    why: "the entry's own verdict sentence over a hand-kept table of editions; nothing in it is computed from the graph",
+  },
+  {
     name: "collapse-modes",
     file: "src/app/how-it-works/diagnosis/page.tsx",
     why: "argued by hand in the page, links chosen",

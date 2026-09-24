@@ -3,6 +3,8 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
+import { librarySlug } from "../library-slug";
+
 const ROOT = process.cwd();
 const APP = path.join(ROOT, ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
@@ -67,7 +69,7 @@ describe("atom pages link the guides that mention them", () => {
       )?.[1];
       if (!type || !DIR[type]) continue;
 
-      const page = path.join(APP, ...DIR[type].split("/"), `${slug}.html`);
+      const page = path.join(APP, ...DIR[type].split("/"), `${librarySlug(slug)}.html`);
       if (!fs.existsSync(page)) continue;
       const body = fs.readFileSync(page, "utf-8").split("</header>").pop()!.split("<footer")[0];
 

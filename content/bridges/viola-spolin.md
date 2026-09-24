@@ -58,7 +58,7 @@ So the line from her games to the entire American comedy industry is short, dire
 
 Held up: essentially all of the mechanics. The Point of Concentration is a better account of how attention works under pressure than most of what has been written since, and it anticipates the cognitive-load argument this site makes by about twenty-five years.
 
-Held up less well: the writing. *Improvisation for the Theater* is organised for retrieval by a teacher rather than for reading, and its prose is of its period. People who bounce off it are not missing something — they are using a handbook as a narrative, and [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater) sets out which half is worth your time.
+Held up less well: the writing. *Improvisation for the Theater* is organised for retrieval by a teacher rather than for reading, and its prose is of its period. People who bounce off it are not missing something — they are using a handbook as a narrative, and [Improvisation for the Theater](/library/spolin-improvisation-for-theater) sets out which half is worth your time.
 
 The genuine dependency is the side-coach. Her games assume somebody outside the exercise calling adjustments while it runs, and without that they flatten into recreation — a room having a pleasant time and transferring nothing to their scenes. A great deal of bad corporate improv is Spolin games run with the coach removed.
 
@@ -100,10 +100,10 @@ Not at the front of the book, which is the usual mistake.
 
 *Improvisation for the Theater* is organised for a teacher to work from rather than for a reader to read through, so opening it at page one and proceeding produces the impression of something dense and dated. Start instead by picking a single Point of Concentration and running the game attached to it, then read the surrounding material once you have seen what it does in a room.
 
-If you want the argument before the exercises, [the Spolin tradition](/traditions/spolin) is the shorter route, and [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater) covers which half of the book is worth your time and which edition to buy.
+If you want the argument before the exercises, [the Spolin tradition](/traditions/spolin) is the shorter route, and [Improvisation for the Theater](/library/spolin-improvisation-for-theater) covers which half of the book is worth your time and which edition to buy.
 
 ## Where to Go Next
 
 - [The Spolin tradition](/traditions/spolin) — what her school argues, and where it disagrees with the four that followed.
-- [Improvisation for the Theater](/library/ref-spolin-improvisation-for-theater) — the book, what is in it, and which edition.
+- [Improvisation for the Theater](/library/spolin-improvisation-for-theater) — the book, what is in it, and which edition.
 - [Theatre games](/theatre-games) — the exercises themselves, how they differ from improv games, and how to run them.

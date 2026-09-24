@@ -5,12 +5,15 @@ import { notFound } from "next/navigation";
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { BuyTheBook } from "@/components/BuyTheBook";
 import { CitedWorkJsonLd } from "@/components/CitedWorkJsonLd";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
 import { TableOfContents } from "@/components/TableOfContents";
 import { Transcript, transcriptHref } from "@/components/Transcript";
 import { UpdatedOn } from "@/components/UpdatedOn";
 import { getAudioDuration } from "@/lib/audio-manifest";
+import { editionsFor } from "@/lib/book-editions";
+import { bookVerdict } from "@/lib/book-verdict";
 import {
   getAtomBySlug,
   getAtomDisplayTitle,
@@ -31,6 +34,7 @@ import {
   workCitedBy,
 } from "@/lib/jsonld-edges";
 import { CITING_LESSONS_CAP, lessonsCitingWork } from "@/lib/lesson-sources";
+import { libraryIdFromSlug, librarySlug } from "@/lib/library-slug";
 import { readingMinutes } from "@/lib/reading-time";
 import type { ExternalLink } from "@/lib/schema";
 import {
@@ -48,7 +52,7 @@ export async function generateStaticParams() {
   const atoms = await loadAtoms();
   return atoms
     .filter((a) => a.frontmatter.type === "reference")
-    .map((a) => ({ slug: a.frontmatter.id }));
+    .map((a) => ({ slug: librarySlug(a.frontmatter.id) }));
 }
 
 export async function generateMetadata({
@@ -57,7 +61,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const atom = await getAtomBySlug(slug);
+  const atom = await getAtomBySlug(libraryIdFromSlug(slug));
   if (!atom) return {};
   const displayTitle = await getAtomDisplayTitle(atom);
   const desc = atomDescription(
@@ -87,7 +91,7 @@ export async function generateMetadata({
 
 export default async function LibraryDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const atom = await getAtomBySlug(slug);
+  const atom = await getAtomBySlug(libraryIdFromSlug(slug));
   if (!atom || atom.frontmatter.type !== "reference") notFound();
 
   const fm = atom.frontmatter;
@@ -95,6 +99,14 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
   // Article names the image the page actually declares as og:image.
   const displayTitle = await getAtomDisplayTitle(atom);
   const extLinks: ExternalLink[] = fm.external_links ?? [];
+  // The buy card owns the retail link now, so the chip row keeps only the
+  // links that are not a place to buy it — a publisher page, a pdf, a
+  // Substack. Leaving the old bare "Amazon" chip next to a tagged button
+  // would put two links to one listing on the page and let the untagged one
+  // take the click.
+  const shopLinks = extLinks.filter((el) => !/amazon|audible|bookshop/i.test(el.url));
+  const editions = editionsFor(fm.id);
+  const verdict = bookVerdict(atom.content);
   const url = getAtomUrl({ id: fm.id, type: fm.type });
   // Same six arguments generateMetadata uses. Without the last one the Book
   // entity described the work differently from the meta tag on the same page.
@@ -225,9 +237,9 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
           status={fm.status}
           className="text-foreground/50 mt-3 text-xs"
         />
-        {extLinks.length > 0 && (
+        {shopLinks.length > 0 && (
           <div className="mt-4 flex gap-3">
-            {extLinks.map((el) => (
+            {shopLinks.map((el) => (
               <a
                 key={el.url}
                 href={el.url}
@@ -241,6 +253,15 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
           </div>
         )}
       </header>
+
+      {fm.work && (
+        <BuyTheBook
+          title={fm.work.name}
+          author={fm.work.authors[0]}
+          editions={editions}
+          verdict={verdict}
+        />
+      )}
 
       {audioUrl && (
         <div>
