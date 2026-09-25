@@ -9,6 +9,7 @@ labels: [seo, metadata, aliases]
 tasks:
   - "[[SA-1.1 Say the reader's words in the snippet, not only in the body]]"
   - "[[SA-1.2 Decide whether the thread layer competes for search at all]]"
+  - "[[SA-1.3 The atom layer receives one anchor string and nothing measures it]]"
 ---
 
 # SA-1 — One vocabulary, several dialects
@@ -33,3 +34,11 @@ rather than a term, and have never been surfaced once. There the question comes
 before the fix: a layer can legitimately choose not to compete, and saying so is
 a better outcome than retitling 25 lessons toward terms the site has not checked
 for demand or collision.
+
+A third shape, found 2026-09-25 and tracked as SA-1.3, is the sharpest evidence
+the story has. Anchor text is the site's own statement of what a page is about,
+and 212 atom pages take a median 0.938 of their inbound anchors as one string —
+where the promoted guides were deliberately rebuilt down from 0.961 to 0.450.
+The internal link graph asserts exactly one name per concept, so that is the
+only name the site has any signal for. The mechanism to vary it already exists
+and reaches 16% of the layer.
