@@ -167,10 +167,14 @@ Vercel, with Cloudflare in front. Pushing to `main` triggers a production deploy
 - **Environment variables bake in at build time.** Changing one in Vercel does
   nothing until the next build. To apply one to an existing commit without
   deploying a dirty working tree, use `vercel redeploy <deployment-url>`.
-- **Cloudflare rewrites `robots.txt`** and returns 403 to AI crawlers — OAI-SearchBot,
-  PerplexityBot, ClaudeBot and the user-initiated agents — while the build ships a
-  large `llms.txt` for exactly that audience. Googlebot and bingbot are unaffected.
-  This is unresolved; `npm run seo:crawlers` shows the current state.
+- **Cloudflare returns 403 to ClaudeBot and GPTBot**, the training crawlers, and
+  serves everyone else — OAI-SearchBot, PerplexityBot, Google-Extended and the
+  user-initiated agents — while the build ships a large `llms.txt` for exactly
+  that audience. That is the stated edge policy (search=yes, ai-train=no,
+  use=reference), not a fault. It no longer rewrites `robots.txt`: production
+  serves what `robots.ts` emits, checked 2026-09-25 (SA-8.1). What the channel
+  returns is unmeasured until a Brand Radar report exists; `npm run seo:crawlers`
+  shows the current state.
 - Apex → www is a 307 rather than a 308. Every canonical points at www, so Google
   consolidates correctly. It is a Vercel domain setting, not fixable in this repo.
 

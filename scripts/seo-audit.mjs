@@ -874,6 +874,46 @@ console.log(
 );
 console.log();
 
+/**
+ * The answer-engine channel: open, built for, and unmeasured (SA-8.1).
+ *
+ * `npm run seo:crawlers` against production on 2026-09-25: nine of eleven
+ * agents served on `/` and `/llms.txt` — Googlebot, bingbot, Applebot,
+ * OAI-SearchBot, PerplexityBot, Google-Extended, ChatGPT-User, Claude-User,
+ * Perplexity-User — and two refused at the edge, ClaudeBot and GPTBot, the
+ * training crawlers, which is the stated policy (search=yes, ai-train=no,
+ * use=reference). robots.txt is served exactly as robots.ts emits it; the
+ * rewrite CLAUDE.md used to describe is gone. llms.txt is 88,346 bytes and
+ * prebuild regenerates it on every deploy.
+ *
+ * What comes back is not measured. `management-brand-radar-reports` returned
+ * an empty list on the date below; without a report Brand Radar refuses every
+ * citation query, and creating one is dashboard work (SA-8.1 step 1). Until
+ * it exists the only evidence of an AI product reading this site is in the
+ * link profile above: befreed.ai's generated lessons citing four guides.
+ * When the report exists, read it once, put the number here, move the date.
+ */
+const ANSWER_ENGINES = {
+  read: "2026-09-25",
+  served: 9,
+  refused: ["ClaudeBot", "GPTBot"],
+  llmsTxtBytes: 88_346,
+  brandRadarReports: 0,
+};
+console.log(
+  `Answer engines on ${ANSWER_ENGINES.read}: ${ANSWER_ENGINES.served} of ` +
+    `${ANSWER_ENGINES.served + ANSWER_ENGINES.refused.length} agents served, ` +
+    `${ANSWER_ENGINES.refused.join(" and ")} refused at the edge by policy; ` +
+    `llms.txt ${ANSWER_ENGINES.llmsTxtBytes.toLocaleString()} bytes, rebuilt each deploy.`,
+);
+console.log(
+  ANSWER_ENGINES.brandRadarReports === 0
+    ? "  Citations: not measured — no Brand Radar report exists (SA-8.1 step 1, dashboard). " +
+        "The one AI citation known is befreed.ai, from the link profile."
+    : "  Citations: read the Brand Radar report and record the number here.",
+);
+console.log();
+
 // Write JSON report
 const outputDir = path.join(process.cwd(), "output");
 fs.mkdirSync(outputDir, { recursive: true });

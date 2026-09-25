@@ -7,7 +7,7 @@ parent: "[[SA-8 The answer-engine channel is invested in and never measured]]"
 status: To Do
 priority: Medium
 sequence: 1
-executable: mixed
+executable: human
 estimate: 60m
 labels: [seo, ai-search, llms-txt, measurement]
 impact: 2
@@ -127,4 +127,39 @@ Recorded so the next firing does not spend its budget here.
 
 ## Outcome
 
-_Not started._
+**Steps 3 and 4 done 2026-09-25; steps 1 and 2 wait on a report.**
+
+**Step 1 — no report exists.** `management-brand-radar-reports` returned an
+empty list on 2026-09-25, so nothing here can be read yet. Creating one is
+dashboard work: track `physicsofconnection.com` against two or three genuine
+competitors on the prompts the site is for — how to get better at improv,
+what "yes, and" means, exercises for listening — not the party-question
+terms. `executable` is set to `human` for that reason.
+
+**Step 2 — the recorded absence.** `scripts/seo-audit.mjs` now closes with an
+answer-engine reading: nine of eleven agents served, ClaudeBot and GPTBot
+refused by policy, llms.txt 88,346 bytes rebuilt each deploy, Brand Radar
+reports 0, citations not measured. When the report exists, read it once, put
+the number in `ANSWER_ENGINES`, and move the date — that is the rest of this
+step, and an agent can do it.
+
+**Step 3 — no llms.txt line, and why.** Next's robots metadata route is typed
+`rules`, `sitemap`, `host` and nothing else; the line would mean replacing
+`robots.ts` with a route handler for the sake of one comment in robots.txt.
+llms.txt is discovered at its root path by convention, `npm run seo:crawlers`
+checks it is served, and the reasoning is in `robots.ts` so it is not
+re-proposed. (One measurement made on the way: the card's 88,302 bytes is
+88,346 today.)
+
+**Step 4 — CLAUDE.md says what is true today.** Production serves exactly
+what `robots.ts` emits — fetched and compared on 2026-09-25 — and ClaudeBot
+and GPTBot are refused while the other nine agents are served, which is the
+stated policy and not a fault. The bullet says so, dated, and `robots.ts`'s
+own comment no longer describes an injected block that is gone.
+
+**Worth carrying into the report when it exists:** the one AI product known
+to cite this site, befreed.ai (SA-2.1), reached four communication guides
+Google has never surfaced. The channel's first evidence is already in the
+link profile.
+
+`npm run check` green.
