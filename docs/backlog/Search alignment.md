@@ -27,6 +27,7 @@ stories:
   - "[[SA-17 A citation page is outranking the guide written for the topic]]"
   - "[[SA-18 The site has no rank tracking and the one tool that would work is empty]]"
   - "[[SA-19 The library splits in two and only the long half has ever surfaced]]"
+  - "[[SA-20 The verdict records whether we can rank and never whether we should]]"
 ---
 
 # Search alignment
@@ -103,3 +104,5 @@ it costs a redirect and a reindex.
   — nineteen cards promise a verification nothing can currently perform.
 - [[SA-19 The library splits in two and only the long half has ever surfaced]] —
   a real split, an unproven cause, and a three-page test rather than a rewrite.
+- [[SA-20 The verdict records whether we can rank and never whether we should]] —
+  theatre-games is promoted sitewide into a children's drama SERP.
