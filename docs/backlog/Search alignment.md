@@ -16,6 +16,7 @@ stories:
   - "[[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]"
   - "[[SA-7 Thirty-two URLs moved and nothing is watching them land]]"
   - "[[SA-8 The answer-engine channel is invested in and never measured]]"
+  - "[[SA-9 The cluster named for the subject is the one that is not a topic]]"
 ---
 
 # Search alignment
@@ -70,3 +71,5 @@ it costs a redirect and a reindex.
   migration is clean internally and unobserved externally. Time-sensitive.
 - [[SA-8 The answer-engine channel is invested in and never measured]] — 88KB a
   deploy for an audience nobody has counted.
+- [[SA-9 The cluster named for the subject is the one that is not a topic]] —
+  the homepage's improv door opens onto the corpus's least structured cluster.
