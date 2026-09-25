@@ -100,8 +100,11 @@ idea and readers have several, and nothing maps between them.
 - `npm run seo:audit` and `npm run seo:rendered` no worse than before.
 - The three pages' titles and descriptions each contain at least one phrase from
   their own GSC query.
-- Re-read GSC positions for the three pages after 30 days. CTR is the metric;
-  position is the control — if position falls, the retitle overreached.
+- Re-read GSC positions for the three pages after 30 days, from 2026-02-01, and
+  read `gsc-performance-history` for the sitewide aggregate alongside them. CTR
+  is the metric; position is the control — if position falls, the retitle
+  overreached. Do not read _average_ position as a site-level signal: it
+  degrades as breadth grows, which is what success looks like here.
 
 ## Scoring
 

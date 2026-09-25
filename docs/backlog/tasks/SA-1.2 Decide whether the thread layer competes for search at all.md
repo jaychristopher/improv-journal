@@ -49,8 +49,12 @@ layer.
 | The Game Beneath the Game: Advanced Pattern Mechanics        | Space Work — Improv Technique \| The Physics of Connection    |
 
 Every ranking atom leads with the term someone would type. Every thread leads
-with an image. The result, GSC 2026-06-01 → 2026-09-25: **zero of 36 surfaced**,
-while ten of twelve surfaced pages are atoms.
+with an image. The result, GSC 2026-02-01 → 2026-09-25: **zero of 36 surfaced**,
+against 34 pages that have. (An earlier draft read a narrower window and said
+"ten of twelve surfaced pages are atoms"; on the full window atoms are 12 of 34
+and the best-returning layer is the library — see
+[[SA-16.1 Back the layer that returns four times its size]]. The zero for
+threads and paths is unchanged.)
 
 **Two hypotheses were tested and are wrong** — recorded so nobody re-runs them:
 
@@ -118,8 +122,10 @@ What is not acceptable is the current state, where a thousand internal links and
   exercise-picker facets are, and the 36 pages stop appearing in any audit's
   ranking-candidate counts.
 - `npm run seo:rendered` reports 0 critical either way.
-- Re-read `gsc-pages` after 30 days for the three, watching impressions; position
-  is the control, as in SA-1.1.
+- Re-read after 30 days for the three, from 2026-02-01, watching impressions;
+  position is the control, as in SA-1.1. Read the sitewide aggregate from
+  `gsc-performance-history` alongside it — `gsc-pages` alone is about 2% of the
+  impressions.
 
 ## Scoring
 

@@ -55,10 +55,18 @@ Against the promotion block, counted in `.next/server/app` across 386 pages:
 
 Three things fall out of it.
 
-**The two sets are disjoint.** Twenty-seven guides are linked from every page
-on the site. Twelve pages have ever been surfaced. The intersection is empty.
-That is not a near-miss to be tuned; it is an estimate that has never once been
-reconciled against an outcome.
+**The two sets barely intersect, and the one overlap is the tell.** Twenty-seven
+guides are linked from every page on the site. Read over the full window
+(2026-02-01 → 2026-09-25, per [[SA-14.1 Read the total, not the sample]]) nine
+bridges have ever been surfaced, and **exactly one of them is promoted**:
+`what-is-improv`.
+
+An earlier draft of this card said the sets were disjoint. On the narrow window
+first used they were; on the full window the intersection is 1 of 27. The
+correction sharpens the finding rather than softening it — `what-is-improv`
+carries the _smallest_ reach in the promoted set, 250, and it is there via the
+SERP-width route rather than on traffic potential. The one promoted page that
+has ever surfaced is the one promotion did not choose for its size.
 
 **Ten of the twelve cannot be promoted at all.** `getTopGuides` calls
 `loadBridges()`, so only the guide layer is eligible. Atoms, techniques,
@@ -111,27 +119,30 @@ to give it one — not to invert it.
 library URL migration land]] for what is actually at stake there.
 4. **Guard the reconciliation, not the ranking.** A test that froze today's
    promoted set would be the `nav-reach.test.ts` mistake again — asserting the
-   mechanism instead of the outcome. Assert instead that the promoted set and
-   the GSC-surfaced set are not disjoint, with the current count recorded and
-   dated. If that is still 0 after the change, the change did nothing.
+   mechanism instead of the outcome. Assert instead the size of the overlap
+   between the promoted set and the GSC-surfaced set, with the count recorded
+   and dated. It is **1 of 27** today; if it is still 1 after the change, the
+   change did nothing.
 
 ## Verify
 
-- The intersection of promoted guides and GSC-surfaced pages is greater than 0,
+- The intersection of promoted guides and GSC-surfaced pages is greater than 1,
   and the test records the number and the date.
 - `npm run check` green. `flight-share`, `link-tracking`, `anchor-diversity`
   and `promotion-reaches-pages` will all move — re-date each with the account
   of why, do not raise a threshold to clear a failure.
 - `npm run seo:rendered` reports 0 critical, as before.
-- Re-read `gsc-pages` after 30 days. The metric is whether newly promoted pages
-  gain impressions; the control is whether the demoted ones lose them.
+- Re-read `gsc-performance-history` **and** `gsc-pages` after 30 days, from
+  2026-02-01. The metric is clicks and CTR sitewide plus whether newly promoted
+  pages gain impressions; the control is whether the demoted ones lose them.
+  Reading `gsc-pages` alone measures about 2% of the site's impressions.
 
 ## Scoring
 
 - **impact 4** — this reallocates the single largest internal-link lever toward
   pages Google has already chosen to show, which is the cheapest traffic
   available at DR 0.2 and needs no new authority. Not 5: the absolute demand is
-  34 impressions across twelve pages, so the near-term number is small, and
+  159 impressions across 34 pages, so the near-term number is small, and
   internal links raise a page's ceiling rather than guaranteeing a position.
   The case for 4 is that every surfaced page is under-linked relative to every
   promoted one, without exception — the pattern is total, not anecdotal.

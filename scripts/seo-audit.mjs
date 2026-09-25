@@ -482,9 +482,23 @@ const fmt = (n) => `${Math.round(n / 1000)}k`;
  * Console is first-party and disagrees with them, so it is worth more.
  *
  * Between 2026-02-01 and 2026-08-23 the site drew 34 URLs with any impression
- * at all and no clicks. Nine of them were guides, listed below. The rest were
- * atoms, library references and technique pages — which also hold the best
- * positions on the site, 6 to 12, on terms with almost no volume.
+ * at all. Nine of them were guides, listed below. The rest were atoms, library
+ * references and technique pages — which also hold the best positions on the
+ * site, 6 to 12, on terms with almost no volume.
+ *
+ * That list is a sample, not the total, and the difference is two orders of
+ * magnitude. Read 2026-09-25 from `gsc-performance-history`, the site has taken
+ * 7,755 impressions and 36 clicks since April. The per-page and per-query
+ * tables those 34 URLs come from expose 159 impressions — about 2% — because
+ * Search Console withholds queries below a privacy threshold. An earlier draft
+ * of this block said "and no clicks", which was wrong: the site converts, and
+ * August was its best month at 19 clicks and 1.53% CTR.
+ *
+ * Neither instrument can recover the withheld part. `gsc-anonymous-queries`
+ * exists for exactly that and returns empty here, because it resolves queries
+ * against Ahrefs' keyword index and this site's vocabulary sits below that
+ * index's floor — the same reason seven of ten queries it does rank for have no
+ * traffic_potential, difficulty or parent_topic at all.
  *
  * The pattern that matters is in the pages old enough to have been crawled
  * properly. Of the guides created in April, every one on improv or team
@@ -495,9 +509,19 @@ const fmt = (n) => `${Math.round(n / 1000)}k`;
  * after July and simply have no history yet. Their silence means nothing. Only
  * the matched-age cohort supports the comparison.
  *
- * Refresh with the gsc-pages endpoint, and move the date when you do. Left
- * stale it becomes another confident number describing a day that has passed —
- * which is the fault the verdict ages below exist to catch.
+ * Refresh with `gsc-pages` **and** `gsc-performance-history`, and move the date
+ * when you do. Left stale it becomes another confident number describing a day
+ * that has passed — which is the fault the verdict ages below exist to catch.
+ * Refreshing only the page list repeats the mistake above: it re-reads the 2%
+ * and says nothing about whether the site is growing.
+ *
+ * Read the aggregate as clicks and CTR, not as average position. Monthly since
+ * April: clicks 0, 3, 2, 12, 19 and CTR 0.04% to 1.53%, while average position
+ * moved from 5.5 to 21.8. Position degrading while clicks climb is what breadth
+ * looks like — more pages surfacing on more terms, most of them further down —
+ * and it is the expected shape for a long-tail corpus as it indexes. A metric
+ * that moves the wrong way when things go right will eventually be acted on, so
+ * it is not the headline here.
  *
  * One thing to know before trying to refresh it, because it cost an hour to
  * work out and looks alarming on the way. The connector only answers reliably
@@ -514,6 +538,25 @@ const fmt = (n) => `${Math.round(n / 1000)}k`;
  * month has been seen at all. Do not read recency into it.
  */
 const GSC_SEEN_ON = "2026-08-23";
+/**
+ * The aggregate, so the sample below is never mistaken for the whole again.
+ *
+ * `gsc-performance-history`, monthly, read 2026-09-25. These are site totals;
+ * `GSC_SEEN` beneath is the per-page table, which shows only queries above
+ * Search Console's privacy threshold. Printing the two together is the point —
+ * apart, the small one reads as the site's entire search presence, which is how
+ * six backlog cards came to be scored against a number wrong by 200×.
+ */
+const GSC_TOTALS = {
+  read: "2026-09-25",
+  from: "2026-04-01",
+  impressions: 7755,
+  clicks: 36,
+  /** Impressions visible in the per-page table over the same period. */
+  sampleImpressions: 159,
+  /** Best month so far, for the trend line. */
+  best: { month: "2026-08", clicks: 19, ctr: "1.53%" },
+};
 const GSC_SEEN = new Set([
   "what-is-improv",
   "rules-of-improv",
@@ -542,6 +585,16 @@ if (settled.length > 0) {
   for (const r of silent.slice(0, 10)) console.log(row(r));
   console.log(
     `  Search Console checked ${GSC_SEEN_ON}. Newer guides are excluded — they have no history yet.`,
+  );
+  const share = (GSC_TOTALS.sampleImpressions / GSC_TOTALS.impressions) * 100;
+  console.log(
+    `  Site totals since ${GSC_TOTALS.from} (read ${GSC_TOTALS.read}): ` +
+      `${GSC_TOTALS.impressions.toLocaleString()} impressions, ${GSC_TOTALS.clicks} clicks. ` +
+      `Best month ${GSC_TOTALS.best.month}: ${GSC_TOTALS.best.clicks} clicks at ${GSC_TOTALS.best.ctr}.`,
+  );
+  console.log(
+    `  The per-page list above is ${GSC_TOTALS.sampleImpressions} of those impressions — ` +
+      `${share.toFixed(1)}%. It is a sample, not the total; judge progress on clicks and CTR.`,
   );
   console.log();
 }
