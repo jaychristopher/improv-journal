@@ -18,6 +18,7 @@ stories:
   - "[[SA-8 The answer-engine channel is invested in and never measured]]"
   - "[[SA-9 The cluster named for the subject is the one that is not a topic]]"
   - "[[SA-10 The prioritisation fields are null for most of the demand the site captures]]"
+  - "[[SA-11 The five school pages are unmeasured and two of them sit on the softest terms found]]"
 ---
 
 # Search alignment
@@ -76,3 +77,5 @@ it costs a redirect and a reindex.
   the homepage's improv door opens onto the corpus's least structured cluster.
 - [[SA-10 The prioritisation fields are null for most of the demand the site captures]]
   — every threshold here is built on fields Ahrefs leaves blank for this site.
+- [[SA-11 The five school pages are unmeasured and two of them sit on the softest terms found]]
+  — entity queries are the one corner where the apparatus can see, and nobody pointed it there.
