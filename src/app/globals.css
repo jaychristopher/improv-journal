@@ -341,6 +341,15 @@ body {
     inset-inline: 0;
     top: 0;
     border-bottom-color: transparent;
+    /*
+     * And no fill. The bar floats over the dark hero here and takes the
+     * hero's light palette, so a background of its own paints near-white
+     * text on a light strip: measured 1.04:1 on the homepage at 390px —
+     * invisible — the moment `bg-background` was added to the bar for the
+     * sticky change on 2026-09-24. The utility is right everywhere else,
+     * which is exactly why this rule has to say so.
+     */
+    background: transparent;
   }
 }
 

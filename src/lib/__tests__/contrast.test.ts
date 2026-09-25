@@ -117,6 +117,20 @@ describe("the palette's contrast", () => {
     expect(offenders).toEqual([]);
   });
 
+  it("keeps the floating bar unfilled, so its light text has the hero behind it", () => {
+    // Below 64rem on a page with a takeover hero the bar has no background
+    // and takes the hero's palette — near-white text meant for a near-black
+    // panel. Giving the bar a fill of its own paints that text on a light
+    // strip: 1.04:1 on the homepage at 390px, measured 2026-09-24, after
+    // `bg-background` was added for the sticky change. Invisible, and
+    // nothing caught it.
+    const css = fs.readFileSync(CSS, "utf8");
+    const start = css.indexOf('body:has([data-hero-takeover]) nav[data-track="nav"] {');
+    expect(start, "the takeover bar rule").toBeGreaterThan(-1);
+    const rule = css.slice(start, css.indexOf("}", start));
+    expect(rule, "the floating bar must clear its own fill").toMatch(/background:\s*transparent/);
+  });
+
   it("still carries the sitewide debt the audit found, so it is not forgotten", () => {
     // The ramp is used far beyond the files above: `text-foreground/40` and
     // `/50` are the site's ordinary dim states and both fail. This counts
