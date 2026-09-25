@@ -23,6 +23,7 @@ stories:
   - "[[SA-13 The diagram library is finished and connected to nothing]]"
   - "[[SA-14 The query table is a half-percent sample and the backlog read it as the total]]"
   - "[[SA-15 Every number in the corpus describes one market and nothing says which]]"
+  - "[[SA-16 The library returns four times its size and nobody has ever looked at it]]"
 ---
 
 # Search alignment
@@ -91,3 +92,5 @@ it costs a redirect and a reindex.
   — the evidence under six of these cards was 0.5% of the real number. Do it first.
 - [[SA-15 Every number in the corpus describes one market and nothing says which]]
   — all 317 figures are US-only and undeclared; 56% of clicks are not.
+- [[SA-16 The library returns four times its size and nobody has ever looked at it]]
+  — 8% of the site, 33% of its impressions, and 32 finite pages.

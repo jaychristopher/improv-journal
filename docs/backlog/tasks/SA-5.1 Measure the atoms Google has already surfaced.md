@@ -43,8 +43,8 @@ Meanwhile the sitemap carries 366 URLs and 212 of them are atoms: 135 under
 `/practice/`, 45 under `/how-it-works/`, 32 under `/library/`. All indexable.
 That is 58% of the indexable site with no search metadata of any kind.
 
-And GSC (Ahrefs `gsc-pages`, project 9723388, 2026-06-01 → 2026-09-25) says
-that layer is the one working:
+And GSC (Ahrefs `gsc-pages`, project 9723388, 2026-06-01 → 2026-09-25) shows
+atoms across the surfaced set:
 
 | Page                                         | Position | Layer |
 | -------------------------------------------- | -------- | ----- |
@@ -59,6 +59,16 @@ that layer is the one working:
 | `/practice/techniques/pacing`                | 90.0     | atom  |
 
 Ten of twelve surfaced pages, and two of the site's three page-one positions.
+
+> **Correction, 2026-09-25.** That "ten of twelve" is an artefact of the window.
+> Widened to 2026-02-01 → 2026-09-25 the surfaced set is **34 pages, not 12**,
+> and atoms are 12 of them — 20% of impressions from 45% of the site, a lift of
+> **0.4×**. Atoms are the corpus's _under_-performing layer, not its best one;
+> the library returns 3.9×. This card's conclusion is unaffected and arguably
+> strengthened — a layer with no search metadata that under-returns its size is
+> a better reason to measure it, not a worse one — but the sentence claiming it
+> is "the layer that is working" was wrong. See [[SA-16.1 Back the layer that
+returns four times its size]].
 
 **This has been noticed and not acted on.** `scripts/seo-audit.mjs` carries it
 in a comment — the surfaced pages "were atoms, library references and technique
