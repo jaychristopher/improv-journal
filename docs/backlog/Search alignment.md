@@ -9,6 +9,7 @@ created: 2026-09-25
 target: Every entry is findable in the words its reader would actually type, without the corpus drifting from the words it means
 stories:
   - "[[SA-1 The corpus speaks one vocabulary and readers use several]]"
+  - "[[SA-2 The link profile is unreadable, and nobody is watching it]]"
 ---
 
 # Search alignment
@@ -49,3 +50,5 @@ it costs a redirect and a reindex.
 
 - [[SA-1 The corpus speaks one vocabulary and readers use several]] — readers
   search in words the corpus does not put where search can see them.
+- [[SA-2 The link profile is unreadable, and nobody is watching it]] — the
+  number that would say whether outreach works rises on its own.

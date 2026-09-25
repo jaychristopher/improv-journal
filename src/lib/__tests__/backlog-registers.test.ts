@@ -97,10 +97,10 @@ describe("the backlog register", () => {
     // schedule rather than only when someone plans work — which is exactly why
     // it stays exact. A card arriving unexplained should still fail here.
     expect(typed("epic")).toHaveLength(3);
-    expect(typed("story")).toHaveLength(10);
-    expect(tasks).toHaveLength(19);
+    expect(typed("story")).toHaveLength(11);
+    expect(tasks).toHaveLength(20);
     expect(tasks.filter(isDone)).toHaveLength(7);
-    expect(openTasks).toHaveLength(12);
+    expect(openTasks).toHaveLength(13);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
