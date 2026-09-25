@@ -42,6 +42,35 @@ export async function generateStaticParams() {
   return threads.map((thread) => ({ slug: thread.frontmatter.id }));
 }
 
+/**
+ * Lessons are not ranking candidates, and that is a decision (SA-1.2,
+ * 2026-09-25), not an oversight.
+ *
+ * Twenty-five lessons and eleven paths: about 90,000 rendered words, a
+ * thousand internal links, every title leading with an image, and in eight
+ * months of Search Console one page of the 36 surfaced. The obvious fix was a
+ * searchable phrase at the front of each title. Retrieving the demand first
+ * said no, twice over. The vocabulary the lessons teach — offers, ensemble,
+ * listening, scene diagnosis, game of the scene, callbacks — is blank or zero
+ * in the keyword index for 37 of 50 terms. And the five terms near the layer
+ * that do carry volume are already the lead of a page of ours: improv
+ * exercises (/practice/exercises), improv for beginners (/learn/beginner),
+ * improv formats and long form (/practice/formats), the Harold (its own
+ * page), yes and (the guide). A lesson retitled toward any of them competes
+ * with a page of this site that already ranks better.
+ *
+ * So the layer sequences the pages that compete and does not take their
+ * terms. Not noindex, either — the exercise-picker facets show that decision
+ * and this is the other one: a blank in the keyword index is unmeasured, not
+ * zero (SA-10.1); the prose is original; and the one path whose title leads
+ * with an uncontested term, /paths/teaching-improv, is the one page of the 36
+ * Google has shown. That mechanism is tested on one more page rather than
+ * assumed on thirty-six — /paths/improv-for-life leads with "applied improv"
+ * since 2026-09-25 — and lesson-layer-decision.test.ts holds the rule.
+ *
+ * pageTitle() drops the brand suffix on a title this long, by design (see
+ * seo.ts); the missing " | The Physics of Connection" is not a bug.
+ */
 export async function generateMetadata({
   params,
 }: {

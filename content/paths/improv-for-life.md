@@ -1,7 +1,7 @@
 ---
 id: improv-for-life
-title: "Improv for Everyday Life"
-description: "The principles improvisers use on stage work everywhere — conversations, relationships, work, and the moments that matter. No stage required."
+title: "Applied Improv for Everyday Life"
+description: "Applied improv: the principles improvisers use on stage, taken into conversations, relationships, work and the moments that matter. No stage required."
 learning_objectives:
   - "Transfer core improv principles into conversations, relationships, and daily life."
   - "Notice overthinking, presence, and responsiveness outside a stage context."
@@ -22,7 +22,7 @@ threads:
   - the-inner-game-expanded
 status: draft
 created: "2026-04-13"
-updated: "2026-08-23"
+updated: "2026-09-25"
 ---
 
 You don't have to do improv to use what improv teaches.

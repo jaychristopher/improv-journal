@@ -616,6 +616,8 @@ const GSC_LAYERS = [
   { layer: "tools", pages: 12, surfaced: 2, impressions: 5, keywords: 5 },
   { layer: "traditions", pages: 5, surfaced: 1, impressions: 2, keywords: 1 },
   { layer: "paths", pages: 11, surfaced: 1, impressions: 1, keywords: 1 },
+  // Present so the zero is printed rather than omitted (SA-1.2).
+  { layer: "threads", pages: 25, surfaced: 0, impressions: 0, keywords: 0 },
 ];
 const BUILT_PAGES = 386;
 
@@ -686,6 +688,10 @@ if (settled.length > 0) {
   }
   console.log(
     "  The library returns four times its size; atoms return under half of theirs. Back the layer that earns.",
+  );
+  console.log(
+    "  Lessons and paths are not candidates by decision (SA-1.2, 2026-09-25): the hubs lead with the searchable " +
+      "terms and the layer sequences them. One test title, /paths/improv-for-life on applied improv — read it at 30 days.",
   );
   console.log();
 

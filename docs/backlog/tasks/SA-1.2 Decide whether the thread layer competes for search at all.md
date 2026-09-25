@@ -4,7 +4,7 @@ type: task
 summary: 36 threads and paths are indexed and linked as though they should rank and titled as though they should not, and in four months not one has been surfaced
 epic: "[[Search alignment]]"
 parent: "[[SA-1 The corpus speaks one vocabulary and readers use several]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 2
 executable: mixed
@@ -18,10 +18,11 @@ roi: 6.0
 blocked_by: []
 blocks: []
 files:
-  - content/threads/the-practice-lab.md
-  - content/threads/beyond-the-harold.md
-  - content/threads/first-rule-you-already-know.md
-  - src/lib/schema.ts
+  - content/paths/improv-for-life.md
+  - src/app/threads/[slug]/page.tsx
+  - src/app/paths/[slug]/page.tsx
+  - scripts/seo-audit.mjs
+  - src/lib/__tests__/lesson-layer-decision.test.ts
 ---
 
 # SA-1.2 — Decide whether the thread layer competes for search at all
@@ -151,4 +152,136 @@ What is not acceptable is the current state, where a thousand internal links and
 
 ## Outcome
 
-_Not started._
+**Done 2026-09-25. The layer does not compete, and it is not noindexed
+either; the decision is written where the next reader will look, guarded, and
+tested on one page rather than assumed on thirty-six.**
+
+**Step 1 — demand, retrieved before deciding.** `keywords-explorer-overview`,
+US, 2026-09-25, fifty terms for what the lessons teach — offers, scene work,
+character, space and object work, listening, ensemble, group mind, game of
+the scene, callbacks and reincorporation, show structure, exercises, theory,
+teaching, the plateau, beginners, applied improv, schools, commitment,
+principles. Sixteen are not in the index at all, fourteen return volume 0,
+seven return 10–30 with no difficulty, potential or parent — 37 of 50 blank
+or zero. The thirteen with figures:
+
+| Term                           | Vol | KD  | TP  | Parent (vol)                |
+| ------------------------------ | --- | --- | --- | --------------------------- |
+| yes and improv                 | 500 | 5   | 900 | yes and (1,200) — the guide |
+| improv exercises               | 250 | 0   | 450 | improv exercises (300)      |
+| harold improv                  | 100 | 0   | 80  | harold improv (100)         |
+| applied improv                 | 50  | 1   | 40  | applied improv (50)         |
+| improv exercises for beginners | 40  | 0   | 450 | improv exercises (300)      |
+| improv for beginners           | 40  | 0   | 200 | how to improv (150)         |
+| long form improv               | 40  | 0   | 20  | long form improv (50)       |
+| improv basics                  | 20  | 1   | 200 | improv tips (150)           |
+| learn improv                   | 20  | 5   | 30  | improv online (70)          |
+| teaching improv                | 20  | 0   | 10  | teaching improv (20)        |
+| how to teach improv            | 20  | 0   | 10  | how to teach improv (20)    |
+| improv characters              | 20  | 0   | 30  | improv character ideas (30) |
+| improv schools                 | 20  | 42  | 10  | famous improv groups (20)   |
+
+`keywords-explorer-matching-terms` for "improv", top 80 by volume, is comedy
+clubs, a driving school and "classes near me"; the largest non-local terms
+are improv games 3,100 (TP 350), what is improv 2,600 (TP 20), improv comedy
+900, improv prompts 800 (TP 1,600), improv meaning 600, yes and improv 500.
+Nothing pedagogical appears. The searchable improv vocabulary is venues,
+classes, games and definitions — the hubs' and guides' territory, not the
+lessons'.
+
+**Step 2 — the collision, and it is with our own hubs.** The `parent` test
+found no bridge on any of the measurable parents. The rendered titles did:
+every pocket of demand near the layer is already the lead phrase of a route
+hub or concept page —
+
+| Term                      | Already led with by                                                               |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| improv exercises          | `/practice/exercises` "Improv Exercises: What Each One Actually Trains"           |
+| improv for beginners      | `/learn/beginner` "Improv for Beginners: Where to Start"                          |
+| improv formats, long form | `/practice/formats` "Improv Formats: Long Form, Short Form and How to Choose"     |
+| harold                    | `/practice/formats/harold` "The Harold: Improv's Most Important Long-Form Format" |
+| improv games              | `/improv-games` "Improv Games: Warm-Ups, Exercises and Scene Games"               |
+| yes and                   | `/yes-and-improv`, parent "yes and"                                               |
+
+Retitling `the-practice-lab` to "Improv Exercises for Every Level", the
+obvious move and the one this card's file list anticipated, would have put a
+lesson against the site's own exercises hub on a results page whose floor is
+DR 23 (`serp-overview`, 2026-09-25: Hoopla DR 48 at 2 with 396 visits, Reddit
+95, Radical Agreement 36, improwiki 50, Improv Therapy Group 23, OnTheStage
+52, Will Hines 94). The hub is the page for that term. Bridges declare a
+`parent`; hubs declare nothing, so the parent test cannot see this collision
+and the guard below reads the built titles instead.
+
+**The natural experiment had already run.** One page of the 36 has been
+surfaced since 2026-02-01: `/paths/teaching-improv`, on "teaching improv" —
+the one title in the layer that leads with a searchable phrase nobody else on
+the site leads with. Twenty-five image-first lessons, zero. That is the
+mechanism the card hypothesised, observed rather than assumed. (The card's
+"zero of 36" was the narrow window; the 34-page table from February has the
+path.)
+
+**The decision.** The layer sequences the pages that compete and does not
+take their terms: no keyword metadata, no promotion, no title regime. Not
+noindex, for three reasons written in the route file: a blank in the keyword
+index is unmeasured, not zero (SA-10.1 — the site ranks on vocabulary Ahrefs
+cannot see); the prose is original (7% shingle overlap, measured in the card);
+and teaching-improv shows a lesson-layer page can be surfaced when its title
+leads with an uncontested term. The Verify bullet assumed "does not compete"
+meant the facets' `noindex`; this records the opposite and why.
+
+**Step 3 — proved on one, not three.** There are not three uncontested
+terms. There is one: "applied improv", own parent, 50 a month, KD 1, and no
+page on the site leads with it. `/paths/improv-for-life` — the path about
+exactly that — is retitled "Applied Improv for Everyday Life" (30 characters,
+so it keeps the brand suffix), with a description that says the term, dated
+2026-09-25. "improv characters" (TP 30, parent "improv character ideas" — a
+listicle) was the only other candidate and a poor fit. Everything else with
+a figure belongs to a hub or a guide.
+
+**Step 4 — the suffix is a rule, not a slip.** `pageTitle()` in `seo.ts`
+returns an absolute title when title + " | The Physics of Connection" would
+exceed 60 characters, so the brand goes rather than the keyword-bearing end.
+Lesson and path titles are long; concept titles are short. Consistent by
+design; no change.
+
+**Aliases were not added.** `aliases` is an atom field: the linker,
+`alias-candidates.ts` and the alias guard all read atoms. Extending it to a
+layer that is not competing would be a schema, search-index and linker change
+for no ranking input. Recorded here so it is not re-proposed.
+
+**What was written.**
+
+- `src/app/threads/[slug]/page.tsx` carries the decision above
+  `generateMetadata`, the way the exercise-picker facets carry theirs;
+  `paths/[slug]/page.tsx` points at it.
+- `lesson-layer-decision.test.ts`: no thread or path declares keyword
+  metadata; no thread or path title leads with a two-word-or-longer phrase
+  that another page's built title already leads with — which would have
+  caught the practice-lab retitle — with one dated exception,
+  `/threads/diagnosing-scene-failure`, which has shared its lead with
+  `/how-it-works/diagnosis/diagnosing-scene-failure` since before this card
+  and should lose it when that title is next written; and the two titles
+  that lead with an uncontested term stay as they are until the 30-day read.
+- `scripts/seo-audit.mjs`: the layer table now has the threads row it was
+  missing — 25 pages, 0 surfaced, 0.0× — and a line saying the layer is not
+  a candidate by decision. The 36 never appeared in the ranking-candidate
+  counts (`graded` requires a difficulty); now the zero is printed rather
+  than omitted.
+
+**Figures read on the way, for SA-3.1** (same call, 2026-09-25): improv warm
+up games 250 / KD 3 / TP 200, own parent; improv games for kids 400 / 0 /
+150, own parent; 2 person improv games 40 / 0 / 80, parent "improv games for
+two people" (40); improv team building 70 / 0 / 150, parent "team building
+improvisation" (50).
+
+**What moved.** One title, one description, one date. `npm run seo:rendered`:
+nothing from this change; the two criticals it reports — `/how-it-works/the-core`
+defines its own `@id` twice in JSON-LD, and `/listen/deep-cuts` has 57 pages
+against 68 feed items — predate it and belong with the diagrams and the podcast
+feeds. `npm run check` green, 278 files, 1,447 tests. Registers 18 done, 23 open.
+
+**Re-read in 30 days:** `gsc-pages` from 2026-02-01 for `/paths/improv-for-life`
+— impressions, with position as the control, as in SA-1.1 — and
+`gsc-performance-history` alongside it. If it surfaces, the next candidates
+are the terms a hub does not lead with; if it does not, the decision stands
+as written and the test title can go back.

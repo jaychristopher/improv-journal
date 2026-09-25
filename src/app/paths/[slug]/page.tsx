@@ -53,6 +53,13 @@ export async function generateStaticParams() {
   return paths.map((path) => ({ slug: path.frontmatter.id }));
 }
 
+/**
+ * Paths are not ranking candidates, by the same decision as lessons — the
+ * account is above generateMetadata in threads/[slug]/page.tsx (SA-1.2,
+ * 2026-09-25). Two of them lead with a term no other page on the site leads
+ * with, teaching-improv and improv-for-life, and lesson-layer-decision.test.ts
+ * keeps it that way until the 30-day read says otherwise.
+ */
 export async function generateMetadata({
   params,
 }: {
