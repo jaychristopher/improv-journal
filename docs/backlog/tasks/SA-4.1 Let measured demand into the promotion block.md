@@ -4,7 +4,7 @@ type: task
 summary: The best-ranked page on the site gets 26 internal links and a page that has never been surfaced gets 104, because promotion ranks estimates and never reads the outcome
 epic: "[[Search alignment]]"
 parent: "[[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]"
-status: To Do
+status: Done
 priority: High
 sequence: 1
 executable: agent
@@ -162,4 +162,55 @@ library URL migration land]] for what is actually at stake there.
 
 ## Outcome
 
-_Not started._
+**Done 2026-09-25.** The promoted set went from 24 guides to 23, and the
+overlap with what Google has actually shown from 1 to 2 — the block can now
+see an outcome.
+
+**Step 1, measured demand as a route — for guides, with the atom answer
+written down.** `top-guides.ts` gained a fourth route beside size, width and
+depth: a guide Search Console has shown inside the top ten qualifies on that
+alone (`PROMOTE_IF_SURFACED_WITHIN = 10`). That admits exactly
+`types-of-listening`, the best-positioned page on the site at 6.9, which every
+estimate the block ran on had excluded — reach 400, floor 21, one result under
+DR 50. Ten rather than fifty is argued in the file: page one is a
+demonstration, page four is not, and three guides at 37–48 are left to the
+30-day re-read. Atoms stay outside the block for now and the reason is in the
+same comment: the labels come from a guide's keywords and the hrefs from
+`/${slug}`, neither exists for an atom, and where an atom's SEO fields live is
+SA-5.1's unresolved question. When that lands, this route is their door.
+
+The "surfaced" fact lives in one dated place, `src/lib/gsc-surfaced.mjs`, read
+by both the promotion block and the audit — which had kept its own hand-typed
+copy under a different date. Refresh it from `gsc-pages` from 2026-02-01.
+
+**Step 2, the reach route reads the floor it already had.** Across the
+seventeen reach-route guides the recorded floors were
+`[2, 8, 11, 12, 15, 15, 17, 18, 18, 19, 20, 20, 24, 27, 28, 31, 40]`. The cut
+is the site's own line, not a new one: `REACH_ROUTE_MAX_FLOOR = 30`, mirroring
+`STRANDED_DIFFICULTY = 30`, because the floor is the better-measured cousin of
+difficulty — read off the results page rather than estimated from backlinks.
+It removes `icebreaker-questions-for-work` (31) and
+`how-to-be-a-better-manager` (40): neither with a distribution recorded,
+neither ever surfaced, both against a site at DR 0.2. An `authority` verdict
+still removes at any floor; an unrecorded floor still admits on size, because
+absent data is not evidence of being shut out.
+
+**Step 3 was my error, corrected earlier in this card.** No library page has
+zero inbound links; the "zero" was the pre-redirect URL being counted.
+
+**Step 4, the guard.** `promotion-overlap.test.ts` asserts the overlap between
+the promoted set and the GSC-surfaced set — 2 today, named — and that every
+guide Google shows on page one is promoted. `promotion-reaches-pages` was
+re-dated rather than lifted: it encoded "above the floor ⇒ linked", which the
+reach cut breaks on purpose for two guides, so it now skips guides excluded on
+a recorded floor and asserts that set by name, so it cannot grow unseen. No
+constant in it changed.
+
+**What moved.** Promoted 24 → 23. `anchor-diversity` did not need re-dating
+this time; the footer's share shifted within its ceilings. `npm run check`
+green, 276 files, 1443 tests.
+
+**Re-read in 30 days**, per CLAUDE.md's rule: `gsc-performance-history` for
+clicks and CTR, `gsc-pages` from 2026-02-01 for whether `types-of-listening`
+gained impressions and whether the two demoted guides lost any — they had
+none to lose.

@@ -9,6 +9,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+import { GSC_SURFACED_GUIDES, GSC_SURFACED_ON } from "../src/lib/gsc-surfaced.mjs";
 import { classifyKeywordParents } from "../src/lib/keyword-parents.mjs";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
@@ -537,7 +538,9 @@ const fmt = (n) => `${Math.round(n / 1000)}k`;
  * say whether any of that happened recently or whether anything published this
  * month has been seen at all. Do not read recency into it.
  */
-const GSC_SEEN_ON = "2026-08-23";
+// The list and its date come from src/lib/gsc-surfaced.mjs since SA-4.1, so
+// the audit and the promotion block cannot disagree about what Google showed.
+const GSC_SEEN_ON = GSC_SURFACED_ON;
 /**
  * The aggregate, so the sample below is never mistaken for the whole again.
  *
@@ -627,17 +630,7 @@ const BUILT_PAGES = 386;
  */
 const RANK_TRACKER = { read: "2026-09-25", keywords: 0, toLoad: 85 };
 
-const GSC_SEEN = new Set([
-  "what-is-improv",
-  "rules-of-improv",
-  "how-to-get-better-at-improv",
-  "how-to-be-vulnerable",
-  "types-of-listening",
-  "team-building-questions",
-  "team-building-activities",
-  "team-bonding-activities",
-  "5-minute-team-building",
-]);
+const GSC_SEEN = new Set(GSC_SURFACED_GUIDES.map((g) => g.slug));
 /** Created before this, so there has been time to be crawled and ranked. */
 const CRAWLED_BY = "2026-07-01";
 

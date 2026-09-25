@@ -24,6 +24,7 @@
 
 import { anchorLabel } from "./anchor-text";
 import { loadBridges } from "./content";
+import { surfacedPositionOf } from "./gsc-surfaced.mjs";
 import type { BridgeTargetKeyword } from "./schema";
 
 /** Above this, the term is not winnable from the site's current authority. */
@@ -185,6 +186,59 @@ const PROMOTE_IF_FLOOR_UNDER = 6;
  */
 const CORROBORATING_REACHABLE = 2;
 
+/**
+ * Measured demand earns a slot, not only estimated demand (SA-4.1, 2026-09-25).
+ *
+ * Every route above ranks on a number a tool supplied about a results page.
+ * Search Console is first-party and says what actually happened, and read
+ * across the full window it disagreed with all of them: 24 guides were
+ * promoted from every page on the site and exactly one of them had ever been
+ * surfaced. The best-positioned page on the site, types-of-listening at 6.9,
+ * was excluded on all three counts — reach 400, floor 21, one result under
+ * DR 50 — because nothing here could see that Google had already put it on
+ * page one.
+ *
+ * So a guide GSC has shown inside the top ten qualifies on that alone. Ten
+ * rather than fifty deliberately: page one is a demonstration that the page
+ * belongs there, and promoting it converts a ranking already paid for, which
+ * is the cheapest traffic on the site. Positions 37 to 48 — three more guides
+ * would qualify at fifty — are page four and five, where a position is not a
+ * demonstration of anything yet. The 30-day re-read decides whether to widen.
+ *
+ * Atoms stay outside this block for now, and the reason is written down as
+ * the card asked. Ten of the twelve surfaced pages on the narrow window were
+ * atoms; on the full window atoms are the worst-returning layer (0.4× their
+ * share) and the library the best (3.9×). But this function's labels come
+ * from a guide's keywords and its hrefs from `/${slug}`, and neither exists
+ * for an atom — admitting one means a different label and href path through
+ * the footer, and the schema question of where an atom's SEO fields live is
+ * SA-5.1's and unresolved. When that lands, this route is where they enter.
+ */
+const PROMOTE_IF_SURFACED_WITHIN = 10;
+
+/**
+ * And the reach route reads the floor it already has in hand.
+ *
+ * It admitted a guide on traffic potential alone even where `serp_min_dr`
+ * had been recorded and said the page was closed: floors of 28, 27 and 24 on
+ * the three largest, 31 and 40 on two more, against a site at DR 0.2. The
+ * corroboration rule guards the *small* pages against thin evidence; the
+ * large ones bypassed the one number the site had measured.
+ *
+ * Read across the seventeen reach-route guides the floors were
+ * [2, 8, 11, 12, 15, 15, 17, 18, 18, 19, 20, 20, 24, 27, 28, 31, 40]. The cut
+ * is the site's own line, not a new one: STRANDED_DIFFICULTY is 30 because
+ * that is "the difficulty at which depth stops converting", and the floor is
+ * the better-measured cousin of difficulty — read off the actual results page
+ * rather than estimated from backlinks. Above it, size alone does not promote.
+ * That removes icebreaker-questions-for-work (31) and how-to-be-a-better-
+ * manager (40), neither with a distribution recorded and neither ever
+ * surfaced. A recorded `authority` verdict still removes a page at any floor;
+ * an unrecorded floor still admits on size, because absent data is not
+ * evidence of being shut out.
+ */
+export const REACH_ROUTE_MAX_FLOOR = 30;
+
 export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
   const bridges = await loadBridges();
 
@@ -210,15 +264,23 @@ export async function getTopGuides(limit = MAX_PROMOTED): Promise<TopGuide[]> {
             .length,
           floor: bridge.frontmatter.serp_min_dr,
           hasDistribution: (bridge.frontmatter.serp_top10_dr ?? []).length > 0,
+          // First-party: the best position Search Console has shown this page at.
+          surfaced: surfacedPositionOf(bridge.slug),
         };
       })
       .filter(
         (guide) =>
-          guide.reach >= PROMOTION_FLOOR ||
+          // Size, where the recorded floor does not say the page is closed.
+          (guide.reach >= PROMOTION_FLOOR &&
+            (guide.floor === undefined || guide.floor <= REACH_ROUTE_MAX_FLOOR)) ||
+          // Width of the opening.
           guide.reachable >= PROMOTE_IF_REACHABLE ||
+          // Depth of the opening, corroborated where a distribution exists.
           (guide.floor !== undefined &&
             guide.floor < PROMOTE_IF_FLOOR_UNDER &&
-            (!guide.hasDistribution || guide.reachable >= CORROBORATING_REACHABLE)),
+            (!guide.hasDistribution || guide.reachable >= CORROBORATING_REACHABLE)) ||
+          // What actually happened: Google already shows it on page one.
+          (guide.surfaced !== undefined && guide.surfaced <= PROMOTE_IF_SURFACED_WITHIN),
       )
       // Unmeasured difficulty is kept: absent data is not evidence of being stranded.
       .filter((guide) => guide.verdict !== "authority")

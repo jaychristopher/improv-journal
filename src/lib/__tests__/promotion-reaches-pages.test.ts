@@ -3,7 +3,7 @@ import path from "path";
 import { describe, expect, it } from "vitest";
 
 import { loadBridges } from "../content";
-import { PROMOTION_FLOOR } from "../top-guides";
+import { PROMOTION_FLOOR, REACH_ROUTE_MAX_FLOOR } from "../top-guides";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
 /** A build directory is not a finished build — see podcast-series for the account. */
@@ -79,12 +79,24 @@ describe("promotion reaches the pages it names", () => {
     const inbound = inboundCounts();
 
     const starved: string[] = [];
+    const excludedOnFloor: string[] = [];
     let checked = 0;
     for (const bridge of await loadBridges()) {
       if (bridge.frontmatter.serp_verdict !== "winnable") continue;
       const primary = (bridge.frontmatter.target_keywords ?? [])[0];
       const reach = primary?.traffic_potential ?? primary?.volume ?? 0;
       if (reach < PROMOTION_FLOOR) continue;
+
+      // Above the floor but excluded on purpose (SA-4.1, 2026-09-25): the
+      // reach route no longer promotes a guide whose recorded results-page
+      // floor is above REACH_ROUTE_MAX_FLOOR. That is somebody deciding, which
+      // is the one case this guard's own comment says it must not fire on. The
+      // set is asserted by name below so it cannot grow without being seen.
+      const floor = bridge.frontmatter.serp_min_dr;
+      if (floor !== undefined && floor > REACH_ROUTE_MAX_FLOOR) {
+        excludedOnFloor.push(bridge.slug);
+        continue;
+      }
 
       checked++;
       const links = inbound.get(`/${bridge.slug}`) ?? 0;
@@ -94,5 +106,13 @@ describe("promotion reaches the pages it names", () => {
     // Guards against the filters returning nothing and this passing on no data.
     expect(checked).toBeGreaterThan(10);
     expect(starved).toEqual([]);
+    // Floors of 31 and 40 against a site at DR 0.2, neither with a
+    // distribution recorded, neither ever surfaced. A refresh that reads their
+    // results pages and finds them open moves them back by changing the
+    // number in the file, not this list.
+    expect(excludedOnFloor.sort()).toEqual([
+      "how-to-be-a-better-manager",
+      "icebreaker-questions-for-work",
+    ]);
   });
 });
