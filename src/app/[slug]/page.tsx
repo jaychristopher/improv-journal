@@ -12,6 +12,7 @@ import { PromptGenerator } from "@/components/PromptGenerator";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { TableOfContents } from "@/components/TableOfContents";
 import { Transcript, transcriptHref } from "@/components/Transcript";
+import { TwentyOneQuestions } from "@/components/TwentyOneQuestions";
 import { UpdatedOn } from "@/components/UpdatedOn";
 import { WhatsNext } from "@/components/WhatsNext";
 import { WouldYouRather } from "@/components/WouldYouRather";
@@ -105,6 +106,26 @@ const HERO_TOOLS: Record<string, () => Promise<React.ReactNode>> = {
   // depends". The hero is that argument as a tool — two questions, then one
   // pair at a time with no third option.
   "would-you-rather-questions": async () => <WouldYouRather surface="guide-hero" />,
+  // The page argues that the number is the entire mechanism — a fixed count
+  // removes the polite exit and guarantees an ending — and that the two rules
+  // that matter are the two everybody drops. The hero is that argument as a
+  // tool: who is opposite you, then twenty-one dealt light to deep with the
+  // count on every card, one pass each, and a stop at the end. The pass rule
+  // rests on a concept the page names, resolved here because the tool is a
+  // client component and cannot read the graph (tracker entry 332).
+  "21-questions-game": async () => {
+    const safety = await getAtomBySlug("safety-in-the-room");
+    return (
+      <TwentyOneQuestions
+        surface="guide-hero"
+        safetyHref={
+          safety
+            ? getAtomUrl({ id: safety.frontmatter.id, type: safety.frontmatter.type })
+            : "/how-it-works"
+        }
+      />
+    );
+  },
 };
 
 interface BridgeActionLink {

@@ -22,7 +22,7 @@ primary_cta_target: quieting-the-planning-mind
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-04-05"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 # How to Stop Overthinking and Get Out of Your Head

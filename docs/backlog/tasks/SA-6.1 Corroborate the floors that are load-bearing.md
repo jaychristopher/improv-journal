@@ -4,10 +4,10 @@ type: task
 summary: Nine guides are promoted to 386 pages on a SERP floor under DR 6, and for most of them the top-ten distribution behind that number was never recorded
 epic: "[[Search alignment]]"
 parent: "[[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]"
-status: To Do
+status: Done
 priority: High
 sequence: 1
-executable: human
+executable: mixed
 estimate: 90m
 labels: [seo, serp, evidence, promotion]
 impact: 3
@@ -143,7 +143,7 @@ Their silence means nothing and must not be read as failure.
 
 ## Outcome
 
-**Steps 1, 2 and 4 done 2026-09-25. Step 3 needs the owner.**
+**Done 2026-09-25. Steps 1, 2 and 4 in the morning; step 3 decided by the owner the same afternoon, and built.**
 
 All nine floor-promoted guides were read in one pass with SA-20.1 and SA-21.1 —
 see [[SA-21.1 Record what the reachable position is worth]] for the full table.
@@ -163,7 +163,26 @@ a guide is promoted on a floor with no `serp_top10_dr` behind it, and again when
 the floor has no recorded traffic. The audit had been printing that warning for
 weeks and printing it stopped none of the four.
 
-**Step 3 is a decision this card cannot make.** The floor on `21-questions-game`
+**Step 3, decided: pursue it — and not by keeping a list.** The owner's call, on
+the evidence below: build it as a wizard hero in the pattern of /improv-prompts
+and /would-you-rather-questions, so a reader arriving from search lands on the
+game rather than a preamble, with the article whole underneath and wired into
+the corpus the way every other guide is.
+
+Built the same day. `TwentyOneQuestions.tsx` is the hero: who is opposite you
+(six rooms — the article's four audiences, the general pool, and its own
+sequence), then twenty-one dealt light to deep with the count on every card,
+the two rules everybody drops said on every card, one pass each tracked and
+spent visibly, "note this one" for the no-follow-ups rule, and a stop at
+twenty-one that hands back the notes and the drill the page names. The 181
+questions ship as `twenty-one-questions-bank-data.ts`, generated from the
+article and held against it by a guard, so the tool can never ask a question
+the page does not print. Three guards — bank, component, rendered — plus the
+three registries every hero is held in. No second page: "21 questions game"
+and "21 questions" share a parent, so a tool page would be the collision
+CLAUDE.md forbids; the hero lives on the guide, as would-you-rather's does.
+
+For the record, the evidence the decision rested on: The floor on `21-questions-game`
 is real, corroborated and by far the best on the site: a **DR 2** page holds
 position ten and earns **1,938 visits a month**, with 44,000 of traffic
 potential on the term. And the results page is Teen Vogue's "180 Fun & Flirty",

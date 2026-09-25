@@ -15,7 +15,7 @@ entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commi
 entry_path: systems-of-improv
 status: draft
 created: "2026-04-13"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 # How to Overcome Fear of Failure: The Improv Reframe

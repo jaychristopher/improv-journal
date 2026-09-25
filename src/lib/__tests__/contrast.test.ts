@@ -103,6 +103,7 @@ describe("the palette's contrast", () => {
       "src/components/HomeHero.tsx",
       "src/components/GamePicker.tsx",
       "src/components/WouldYouRather.tsx",
+      "src/components/TwentyOneQuestions.tsx",
       "src/components/PromptGenerator.tsx",
     ];
     const offenders: string[] = [];

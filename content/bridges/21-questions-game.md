@@ -21,7 +21,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 # 21 Questions Game: How to Play, and 181 to Ask
