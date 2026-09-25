@@ -258,6 +258,21 @@ export interface BridgeTargetKeyword {
    * have one.
    */
   parent?: string;
+  /**
+   * The market the figures were measured in, as an Ahrefs country code.
+   *
+   * Absent means `us`. Every figure in the corpus — 317 keywords across 78
+   * guides on 2026-09-25 — was retrieved with `country=us`, as were the SERP
+   * readings beside them, and nothing said so. That matters because the
+   * audience is not: 20 of the site's 36 clicks since April came from outside
+   * the United States, and on the two core terms measured US is about three
+   * quarters of global volume — improv games 3,100 of ~4,250, theatre games
+   * 1,400 of ~1,850 (SA-15.1). A number refreshed in a different market is a
+   * different number, not an updated one. Declare it here whenever it is not
+   * `us`, refresh a figure in the market it carries, and never mix markets
+   * inside one guide — keyword-market.test.ts holds both.
+   */
+  market?: string;
 }
 
 /**

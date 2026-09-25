@@ -27,7 +27,14 @@ import { loadBridges } from "./content";
 import { surfacedPositionOf } from "./gsc-surfaced.mjs";
 import type { BridgeTargetKeyword } from "./schema";
 
-/** Above this, the term is not winnable from the site's current authority. */
+/**
+ * Above this, the term is not winnable from the site's current authority.
+ *
+ * A US figure, like every difficulty in the corpus: Ahrefs computes it from
+ * the page of results in the market it was read for, and every one here was
+ * read with country=us (SA-15.1, 2026-09-25). Compare it only with figures
+ * from the same market.
+ */
 const STRANDED_DIFFICULTY = 30;
 
 export interface TopGuide {
@@ -87,6 +94,14 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
  * above the break is promoted and nothing below it. A guide published tomorrow
  * joins on its own merits and evicts nobody. MAX_PROMOTED is only a backstop
  * against the list growing unreasonably long.
+ *
+ * The floor is a US number, because every reach figure is (SA-15.1,
+ * 2026-09-25): all 317 declared keywords were read with country=us, and US
+ * is about three quarters of global volume on the two core terms measured —
+ * improv games 3,100 of ~4,250, theatre games 1,400 of ~1,850. So 10,000
+ * here is roughly 13,000 of global demand. It stays a US threshold on
+ * purpose: the figures it compares against are US too, and a floor in one
+ * market against figures from another would be the error, not the fix.
  */
 export const PROMOTION_FLOOR = 10_000;
 /*

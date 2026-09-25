@@ -58,6 +58,12 @@ and `parent`, plus `serp_checked`, `serp_min_dr` and `serp_verdict`.
 - **Never invent a number.** Every one of these comes from Ahrefs. If Ahrefs is
   unavailable, leave the field out and say so — the schema documents absence as the
   correct state for unchecked results.
+- **Every figure is the United States.** All 317 keyword numbers and every SERP
+  reading were retrieved with `country=us`, and `market` on a keyword is absent
+  when that is so (SA-15.1, 2026-09-25). US is about three quarters of global
+  volume on the site's core terms and 20 of its 36 clicks are from elsewhere, so
+  this is a choice, and a refresh must make the same one: read a figure in the
+  market it carries, and never mix markets inside one guide.
 - **`serp_verdict`** is `winnable` or `authority`. `authority` means the results are
   gated behind domains this site will not outrank; those pages are kept for readers
   and are not ranking candidates. Absent means nobody has looked.

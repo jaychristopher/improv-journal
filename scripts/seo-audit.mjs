@@ -334,6 +334,14 @@ if (parents.unclaimed.length > 0) {
   console.log();
 }
 
+// Every figure these thresholds read is a US figure: all 317 declared keywords
+// and every SERP reading were retrieved with country=us, and `market` on a
+// keyword is absent when that is so (SA-15.1, 2026-09-25). US is about three
+// quarters of global volume on the two core terms measured (improv games 3,100
+// of ~4,250; theatre games 1,400 of ~1,850), so a reach floor of 10,000 is
+// roughly 13,000 of global demand. The thresholds stay US because the figures
+// are; refresh in the same market or the comparison silently breaks.
+//
 // Winnability. Volume alone does not say where effort pays: a thin page on a
 // difficulty-2 term is a missed opportunity, and a deep one on a difficulty-60
 // term is effort that will not convert. Both were happening here.

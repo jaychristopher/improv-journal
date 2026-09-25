@@ -3,7 +3,7 @@ key: SA-15
 type: story
 summary: All 317 declared keyword figures were retrieved for the United States, nothing in the schema or CLAUDE.md records that, and 56% of the site's clicks come from somewhere else
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: Medium
 labels: [seo, market, schema, measurement]
 tasks:
