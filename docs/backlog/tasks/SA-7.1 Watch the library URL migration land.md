@@ -122,4 +122,56 @@ one line and prevents a wrong diagnosis in three other cards.
 
 ## Outcome
 
-_Not started._
+**Steps 1, 2 and 4 done 2026-09-25; step 3 is a re-read due 2026-10-25.**
+
+**Step 1 — verified in production, not in the config.** Both old URLs on
+www return a 308 straight to the new path, one hop, final 200 —
+`/library/ref-attention-and-effort-kahneman` →
+`/library/attention-and-effort-kahneman`,
+`/library/ref-sawyer-group-genius` → `/library/sawyer-group-genius`. Next
+emits 308 for `permanent: true`, which is the permanent code the card wanted
+by another number. No chain: the apex form of an old URL takes the site-wide
+307 to www first and then the 308, which is the known Vercel domain setting
+and applies to every apex URL, not to this migration. The commit is
+`f68e8a4`, 2026-09-24.
+
+**Step 2 — the date is where the evidence lives.** `scripts/seo-audit.mjs`
+carries `LIBRARY_MIGRATION = "2026-09-24"` and prints, under the Search
+Console reading, that rows for `/library/ref-*` before that date describe
+pages that have moved; `gsc-surfaced.mjs`'s refresh instructions say the same
+in one sentence, so the 30-day re-reads SA-1.1, SA-4.1 and SA-6.1 schedule
+cannot read two missing URLs as two lost rankings.
+
+**Step 3 — the baseline, and the re-read.** `gsc-keywords` from 2026-02-01,
+read 2026-09-25, one day after the move: the old paths are still the ones in
+the table — `/library/ref-attention-and-effort-kahneman` at 12 on "kahneman
+1973 attention and effort limited capacity", 24 on "attention and effort", 32
+on "attention and effort daniel kahneman"; `/library/ref-sawyer-group-genius`
+at 42 on "keith sawyer group genius" — and the new paths do not appear. That
+is what a one-day-old redirect looks like, not a fault. Re-read on
+2026-10-25 and compare like for like: does `/library/attention-and-effort-
+kahneman` appear near 12, and does the old path leave. If the new URL has not
+appeared by 2026-11-23 (60 days), the redirect is worth doubting; nothing
+before that is evidence.
+
+**Step 4 — IndexNow, put in front of the owner and not run.**
+`npm run seo:indexnow` submits URLs to `api.indexnow.org`, which is Bing,
+Yandex, Seznam and Naver; the script's own header says Google does not
+participate. So the decision is two decisions:
+
+- For Bing and the others, submitting the 32 new library URLs after a
+  deliberate migration is the textbook use of the tool, costs nothing, and
+  is yours to run — CLAUDE.md forbids an agent running it unasked.
+- For Google, which holds the two positions this card is about, IndexNow
+  does nothing. The lever is Search Console's URL Inspection → Request
+  indexing on the two new URLs, which is a login and a form, or waiting: a
+  clean 308 from a page Google visited recently is usually recrawled within
+  days to a few weeks. Either is reasonable; the re-read on 2026-10-25 says
+  which happened.
+
+**Verify, as of today.** Both redirects checked against production. The date
+is in the audit's block. No file that ships references a `library/ref-` URL
+— the build, sitemap, `llms.txt` and search index are clean; the only
+occurrences are dated entries in `docs/novel-insights.md` and this epic's
+cards, which are a record of what was found and should keep saying it. The
+dated GSC re-read is the open step.

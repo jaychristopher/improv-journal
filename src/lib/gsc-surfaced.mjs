@@ -16,7 +16,9 @@
  * `position` is the average position GSC reported over the window, and
  * `impressions` the count. Refresh with `gsc-pages` from GSC_SURFACED_FROM and
  * move GSC_SURFACED_ON when you do; the overlap guard reads this list, so a
- * refresh that drops a slug must be able to say why.
+ * refresh that drops a slug must be able to say why. Library URLs changed on
+ * 2026-09-24 (/library/ref-<id> → /library/<id>, SA-7.1): rows for the old
+ * paths before that date are pages that moved, not pages that were lost.
  */
 
 export const GSC_SURFACED_FROM = "2026-02-01";

@@ -592,6 +592,17 @@ const GSC_TOTALS = {
  * full window they are the worst-returning layer on the site (SA-16.1).
  */
 const GSC_WINDOW_FROM = "2026-02-01";
+/**
+ * The day every library URL changed (commit f68e8a4): /library/ref-<id>
+ * became /library/<id without ref->, 32 pages, permanent redirects generated
+ * from the atom list. GSC rows for the old paths before this date describe
+ * pages that have moved, not pages that were lost; the two that held
+ * positions (Kahneman at 12, Sawyer at 42) are in flight until Google
+ * recrawls them. Compare the new path against the old one like for like,
+ * and doubt the redirect only if the new path has not appeared 60 days on
+ * (SA-7.1).
+ */
+const LIBRARY_MIGRATION = "2026-09-24";
 
 /*
  * What Ahrefs knows about the queries this site actually ranks for: mostly
@@ -670,6 +681,10 @@ if (settled.length > 0) {
   for (const r of silent.slice(0, 10)) console.log(row(r));
   console.log(
     `  Search Console checked ${GSC_SEEN_ON}. Newer guides are excluded — they have no history yet.`,
+  );
+  console.log(
+    `  Library URLs changed on ${LIBRARY_MIGRATION}: rows for /library/ref-* before that date describe pages ` +
+      "that have moved. Read the new paths beside the old ones; the redirect is in doubt only after 60 days (SA-7.1).",
   );
   const share = (GSC_TOTALS.sampleImpressions / GSC_TOTALS.impressions) * 100;
   console.log(
