@@ -21,8 +21,19 @@ links:
   - { id: internal-computation, relation: contrasts }
   - { id: steering, relation: contrasts }
 sources: []
+serp_query: "mirroring exercise"
+target_keywords:
+  - { keyword: "mirroring exercise", volume: 30, difficulty: 0, traffic_potential: 10, parent: "mirroring exercise" }
+  - { keyword: "mirroring exercises", volume: 10, difficulty: 0, traffic_potential: 0, parent: "mirroring exercises" }
+serp_checked: "2026-09-25"
+serp_min_dr: 1
+serp_verdict: winnable
+serp_top10_dr: [100, 1, 29, 46, 36, 28, 29]
+serp_floor_traffic: 2
+serp_top_share: 0.001
+serp_audience: "Half couples therapy and a twin-flame site with all the traffic, half the drama warm-up - Radical Agreement at 8, a Singapore drama journal, childdrama at 10. A DR 1 counsellor holds 5. Open, and the drama half is the half this page is."
 created: "2026-04-05"
-updated: "2026-09-23"
+updated: "2026-09-25"
 ---
 
 **Trains:** Deep attention, body awareness, ensemble connection, yielding/leading as a spectrum. Viola Spolin's core exercise — taught at every school, in every first class.

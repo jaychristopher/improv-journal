@@ -10,7 +10,11 @@ import path from "path";
 import matter from "gray-matter";
 
 import { CITATIONS, CITATIONS_READ } from "../src/lib/citations.mjs";
-import { GSC_SURFACED_GUIDES, GSC_SURFACED_ON } from "../src/lib/gsc-surfaced.mjs";
+import {
+  GSC_SURFACED_ATOMS,
+  GSC_SURFACED_GUIDES,
+  GSC_SURFACED_ON,
+} from "../src/lib/gsc-surfaced.mjs";
 import { classifyKeywordParents } from "../src/lib/keyword-parents.mjs";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
@@ -70,8 +74,19 @@ function scoreAtom(file) {
     id: data.id || path.basename(file, ".md"),
     title: data.title,
     type: data.type,
+    layer: "atom",
     score,
     issues,
+    // The search fields an atom may carry (SA-5.1), kept apart from the guide
+    // fields so no guide section reads an atom by accident.
+    atomSearch: {
+      query: data.serp_query,
+      checked: data.serp_checked,
+      profile: data.serp_top10_dr,
+      verdict: data.serp_verdict,
+      keywords: data.target_keywords ?? [],
+      owner: data.search_owner,
+    },
   };
 }
 
@@ -468,9 +483,7 @@ if (unchecked.length > 0) {
 }
 
 if (stranded.length > 0) {
-  console.log(
-    `Hard on difficulty, results not yet checked (${stranded.length}):`,
-  );
+  console.log(`Hard on difficulty, results not yet checked (${stranded.length}):`);
   for (const r of stranded.slice(0, 8)) console.log(row(r));
   console.log();
 }
@@ -646,9 +659,7 @@ const GSC_SEEN = new Set(GSC_SURFACED_GUIDES.map((g) => g.slug));
 const CRAWLED_BY = "2026-07-01";
 
 const settled = graded.filter((r) => r.created && r.created < CRAWLED_BY);
-const silent = settled
-  .filter((r) => !GSC_SEEN.has(r.id))
-  .sort((a, b) => reach(b) - reach(a));
+const silent = settled.filter((r) => !GSC_SEEN.has(r.id)).sort((a, b) => reach(b) - reach(a));
 
 if (settled.length > 0) {
   const silentTp = silent.reduce((sum, r) => sum + (reach(r) || 0), 0);
@@ -700,6 +711,35 @@ if (settled.length > 0) {
   console.log(
     "  Lessons and paths are not candidates by decision (SA-1.2, 2026-09-25): the hubs lead with the searchable " +
       "terms and the layer sequences them. One test title, /paths/improv-for-life on applied improv — read it at 30 days.",
+  );
+
+  // The atom layer, measured for the first time (SA-5.1, 2026-09-25). The
+  // sitemap carries 212 URLs under /practice, /how-it-works and /library:
+  // the 205 atoms and the 7 section hubs (/practice/exercises, /techniques,
+  // /formats, /vocabulary, /how-it-works/principles, /diagnosis, /the-core).
+  const ATOM_SECTION_HUBS = 7;
+  const atomResults = results.filter((r) => r.layer === "atom");
+  const atomsRead = atomResults.filter((r) => r.atomSearch.checked);
+  const atomsNoPage = atomsRead.filter(
+    (r) => Array.isArray(r.atomSearch.profile) && r.atomSearch.profile.length === 0,
+  );
+  const atomsOpen = atomsRead.filter((r) => r.atomSearch.verdict === "winnable");
+  const atomsGated = atomsRead.filter((r) => r.atomSearch.verdict === "authority");
+  const atomsOwned = atomResults.filter((r) => r.atomSearch.owner);
+  const atomsKeyed = atomResults.filter((r) => r.atomSearch.keywords.length > 0);
+  const best = [...GSC_SURFACED_ATOMS].sort((a, b) => a.position - b.position).slice(0, 3);
+  console.log(
+    `Atoms: ${atomResults.length} files, ${atomResults.length + ATOM_SECTION_HUBS} sitemap URLs under ` +
+      `/practice, /how-it-works and /library (the ${ATOM_SECTION_HUBS} extra are the section hubs).`,
+  );
+  console.log(
+    `  Search Console has shown ${GSC_SURFACED_ATOMS.length} (read ${GSC_SURFACED_ON}): ${atomsOpen.length} open, ` +
+      `${atomsGated.length} gated, ${atomsNoPage.length} on queries the keyword index holds no results page for, ` +
+      `${atomsOwned.length} owned by a guide. ${atomsKeyed.length} carry a keyword block, every one of them shown.`,
+  );
+  console.log(
+    `  Best positions: ${best.map((a) => `${a.slug} ${a.position} on "${a.query}"`).join("; ")} — ` +
+      "the reader typing those is exactly the reader.",
   );
   console.log();
 
@@ -777,7 +817,10 @@ console.log(
  * of "winnable" keeps effort pointed at a wall. Neither fails anything, so the
  * age is reported here rather than left to be remembered.
  */
-const checkedDates = results.map((r) => r.serpChecked).filter(Boolean).sort();
+const checkedDates = results
+  .map((r) => r.serpChecked)
+  .filter(Boolean)
+  .sort();
 if (checkedDates.length) {
   const today = new Date().toISOString().slice(0, 10);
   const ageDays = (d) => Math.round((Date.parse(today) - Date.parse(d)) / 86_400_000);

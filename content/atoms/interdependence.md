@@ -21,8 +21,13 @@ links:
   - { id: ref-tj-dave-speed-of-life, relation: illustrates }
   - { id: ref-sawyer-group-genius, relation: extends }
 sources: []
+serp_query: "structural interdependence"
+target_keywords:
+  - { keyword: "structural interdependence", volume: 50 }
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-04"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 You cannot build shared reality alone. The system requires multiple agents. No individual performer has enough bandwidth, perspective, or creative capacity to sustain a scene by themselves.

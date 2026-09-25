@@ -26,8 +26,13 @@ links:
   - { id: blocking-taxonomy, relation: extends }
   - { id: wimping, relation: extends }
 sources: []
+serp_query: "resistance blocking"
+target_keywords:
+  - { keyword: "resistance blocking", volume: 30 }
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-03-29"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 Blocking is the general term for any behavior that refuses, deflects, or undermines the offers in a scene. It is the family name — negation, steering, bulldozing, hesitation, and the other principle-shadows are its species.

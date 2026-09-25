@@ -20,8 +20,18 @@ links:
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
   - { id: what-are-you-doing, relation: enables }
 sources: []
+serp_query: "space work"
+target_keywords:
+  - { keyword: "space work", volume: 100, difficulty: 42, traffic_potential: 7500, parent: "spaces" }
+serp_checked: "2026-09-25"
+serp_min_dr: 10
+serp_verdict: authority
+serp_top10_dr: [72, 82, 91, 100, 61, 28, 93, 10]
+serp_floor_traffic: 8
+serp_top_share: 0.12
+serp_audience: "Office space: Spaces and WeWork, coworking listings, Wiktionary, NASA and the BLS in the AI Overview. The 7,500 of potential under the parent spaces is theirs. No improv result on the page, and the site's 38.5 is on the wrong meaning - the trap SA-10.1 named, now read."
 created: "2026-04-03"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 Space Work is the practice of physically interacting with the imagined environment — miming objects, respecting spatial boundaries, and grounding the scene in a tangible physical world that doesn't physically exist.

@@ -18,8 +18,13 @@ links:
   - { id: status, relation: extends }
   - { id: ref-spolin-improvisation-for-theater, relation: extends }
 sources: []
+serp_query: "emotion switch"
+target_keywords:
+  - { keyword: "emotion switch", volume: 10 }
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-04"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 **Trains:** Be Changeable — the ability to fully shift emotional state in response to input.

@@ -72,10 +72,14 @@ and `parent`, plus `serp_checked`, `serp_min_dr` and `serp_verdict`.
   before creating a page that overlaps an existing one.
 - **`traffic_potential` beats `volume`** for prioritising. "what is improv" is 1,600
   a month with a traffic potential of 50.
-- **These fields exist on guides only.** `schema.ts` declares them on
-  `BridgeFrontmatter`; atoms, library entries and route pages carry none of them,
-  so the collision test cannot see a citation or a hub, and a guide can lose its
-  own declared keywords to a book entry without anything failing (SA-17.1).
+- **Guides carry the whole discipline; atoms carry a reading only where Google
+  has already shown them.** `SerpReading` in `schema.ts` is shared. An atom
+  Search Console has surfaced (`GSC_SURFACED_ATOMS` in `gsc-surfaced.mjs`)
+  records `serp_query` and the results page for it; a keyword block only where
+  the index prices that query; and `search_owner` where a guide owns its term.
+  Never in bulk — `layer-collisions.test.ts` fails a block on an atom Google has
+  not shown (SA-5.1). Library entries and route pages still carry none of it,
+  so the collision test cannot see a citation or a hub (SA-17.1).
   Where the fields should live for those layers is SA-5.1's open question — do
   not invent a second location.
 - **A floor is not a value, and reachable is not ours.** `serp_top10_dr` records

@@ -3,7 +3,7 @@ key: SA-5
 type: story
 summary: Every keyword, SERP and collision field lives on BridgeFrontmatter, so 212 indexable atom URLs carry no search metadata at all — and they are where the site's best positions are
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: Medium
 labels: [seo, schema, atoms, measurement]
 tasks:

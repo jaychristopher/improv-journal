@@ -21,8 +21,11 @@ links:
   - { id: ref-napier-improvise, relation: contrasts }
   - { id: tilt, relation: enables }
 sources: []
+serp_query: "base reality meaning"
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-05"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 Base Reality is the normal, grounded, believable world that two characters inhabit at the top of a scene — before anything unusual happens. UCB's foundational scene concept.

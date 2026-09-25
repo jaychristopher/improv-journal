@@ -21,8 +21,9 @@ links:
   - { id: ensemble, relation: contrasts }
   - { id: ref-brown-daring-greatly, relation: illustrates }
 sources: []
+search_owner: how-to-overcome-fear-of-failure
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 Fear of Failure is the primary obstacle for every improv student — and the root cause of nearly every antipattern in the graph. Not lack of talent, creativity, or wit. Fear.

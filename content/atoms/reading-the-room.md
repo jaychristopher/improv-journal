@@ -16,8 +16,9 @@ links:
   - { id: signal, relation: extends }
   - { id: ensemble, relation: requires }
 sources: []
+search_owner: how-to-read-the-room
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 Reading the Room is the real-time perceptual skill of sensing the audience's collective state and adjusting performance choices accordingly. Active listening applied beyond your scene partner to the entire room.

@@ -19,8 +19,11 @@ links:
   - { id: ref-napier-improvise, relation: extends }
   - { id: ref-napier-behind-the-scenes, relation: illustrates }
 sources: []
+serp_query: "what is pacing and leading"
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-05"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 Pacing is speed and rhythm management — within scenes and across shows. One of the skills that most separates experienced performers from intermediates.

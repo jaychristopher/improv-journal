@@ -109,7 +109,7 @@ export interface CitedWork {
   doi?: string;
 }
 
-export interface AtomFrontmatter {
+export interface AtomFrontmatter extends SerpReading {
   id: string;
   title: string;
   type: AtomType;
@@ -167,6 +167,33 @@ export interface AtomFrontmatter {
    * any of them is played.
    */
   how_to_play?: string;
+  /**
+   * Search fields on an atom, and when they are written (SA-5.1, 2026-09-25).
+   *
+   * Guides carry the whole discipline. An atom carries a reading only where
+   * Google has already shown it: `serp_query` is the Search Console query it
+   * was shown for — first-party demand, usually a term the keyword index
+   * cannot price — and the SerpReading fields are the results page for that
+   * query. `target_keywords` is written only where the index prices the query
+   * (a volume or a parent) and the query means this page; a volume-only entry
+   * is allowed because a volume is a measurement. Never in bulk:
+   * layer-collisions.test.ts fails a keyword block on an atom Search Console
+   * has not shown, and gsc-surfaced.mjs is the list of those it has.
+   */
+  serp_query?: string;
+  target_keywords?: BridgeTargetKeyword[];
+  /**
+   * The guide that owns this atom's term for search.
+   *
+   * The collision test needs an answer across layers as well as within one.
+   * "fear of failure" is an atom's title and a guide's keyword, "reading the
+   * room" likewise, and `yes-and` was shown for "yes and rule", a keyword the
+   * guide yes-and-improv declares. Naming the guide says the atom is the
+   * concept page and not a ranking candidate for the term, and an owned atom
+   * declares no keyword of its own. Set by a decision — the three above, in
+   * layer-collisions.test.ts — and read by nothing at render time.
+   */
+  search_owner?: string;
   created: string; // ISO date
   updated: string; // ISO date
 }
@@ -294,27 +321,18 @@ export interface PageSubject {
   sameAs?: string[];
 }
 
-export interface BridgeFrontmatter {
-  title: string;
-  description: string;
-  target_keywords: BridgeTargetKeyword[];
-  entry_atoms: string[]; // atom IDs this bridge links into
-  entry_path: string; // primary path ID
-
+/**
+ * A reading of one results page, shared by the two layers that carry one.
+ *
+ * These lived on BridgeFrontmatter alone until SA-5.1 (2026-09-25), when the
+ * twelve atoms Search Console had already shown were measured for the first
+ * time. A guide reads the page for its primary keyword; an atom reads the
+ * page for `serp_query`. Same fields, same meanings, one place to keep them.
+ */
+export interface SerpReading {
   /**
-   * The named entity this page is about, emitted as schema.org `about`.
-   *
-   * Library pages rank because they say which work they describe, so a crawler
-   * can resolve them against a known entity rather than treating them as an
-   * article that happens to mention it. A page about a person had no way to say
-   * the same thing: /del-close emitted an Article with no subject at all.
-   *
-   * `sameAs` should point at an authority record — Wikipedia, Wikidata — and is
-   * the part doing the disambiguating. Omit it rather than guess one.
-   */
-  subject?: PageSubject;
-  /**
-   * What the search results for the primary keyword actually look like.
+   * What the search results actually look like — for a guide's primary
+   * keyword, or for the `serp_query` an atom was shown for.
    *
    * Keyword difficulty is computed from the backlinks of the pages ranking,
    * and on a commercial or institutional query it is a poor guide to whether
@@ -337,6 +355,12 @@ export interface BridgeFrontmatter {
    * talk" is winnable: it has two sub-40 results, and the one at 38 holds
    * position six on more traffic than the pages either side of Reddit. Same
    * figure, different shape, and only the shape decides it.
+   *
+   * An empty `serp_top10_dr` beside a `serp_checked` date is a fourth state:
+   * the results page was requested and the keyword index holds none for the
+   * query. Seven of the twelve atoms Search Console has shown are on such
+   * terms (SA-5.1, 2026-09-25). Fields that are absent still mean nobody
+   * looked.
    */
   serp_checked?: string;
   serp_min_dr?: number;
@@ -387,6 +411,27 @@ export interface BridgeFrontmatter {
   serp_floor_traffic?: number;
   serp_top_share?: number;
   serp_audience?: string;
+}
+
+export interface BridgeFrontmatter extends SerpReading {
+  title: string;
+  description: string;
+  target_keywords: BridgeTargetKeyword[];
+  entry_atoms: string[]; // atom IDs this bridge links into
+  entry_path: string; // primary path ID
+
+  /**
+   * The named entity this page is about, emitted as schema.org `about`.
+   *
+   * Library pages rank because they say which work they describe, so a crawler
+   * can resolve them against a known entity rather than treating them as an
+   * article that happens to mention it. A page about a person had no way to say
+   * the same thing: /del-close emitted an Article with no subject at all.
+   *
+   * `sameAs` should point at an authority record — Wikipedia, Wikidata — and is
+   * the part doing the disambiguating. Omit it rather than guess one.
+   */
+  subject?: PageSubject;
 
   primary_problem?: string;
   primary_cta_type?: "thread" | "path" | "exercise" | "challenge";

@@ -16,8 +16,16 @@ links:
   - { id: ref-ucb-manual, relation: extends }
   - { id: ref-truth-in-comedy, relation: extends }
 sources: []
+serp_query: "pattern break"
+target_keywords:
+  - { keyword: "pattern break", volume: 60 }
+serp_checked: "2026-09-25"
+serp_min_dr: 2
+serp_verdict: winnable
+serp_top10_dr: [2, 95, 28, 92, 41, 93, 94]
+serp_audience: "Nothing on the page is about improv: a brand homepage at 1 on DR 2, photography and Flickr in the AI Overview, an ECG sign in an NIH paper at 5, Quora on breaking habits, HubSpot on pattern interrupts. Open, ambiguous, and not ours; Google shows this page at 10 on it."
 created: "2026-04-05"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 A pattern break is intentionally breaking an established pattern for dramatic or comic effect. The audience has been trained to expect the pattern; the break exploits that expectation. The "rule of three" is the most common structure: two iterations establish, the third subverts.

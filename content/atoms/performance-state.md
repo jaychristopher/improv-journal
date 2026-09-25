@@ -19,8 +19,13 @@ links:
   - { id: ref-impro-johnstone, relation: extends }
   - { id: ref-csikszentmihalyi-flow, relation: illustrates }
 sources: []
+serp_query: "stimulation performance"
+target_keywords:
+  - { keyword: "stimulation performance", volume: 20 }
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-05"
-updated: "2026-09-06"
+updated: "2026-09-25"
 ---
 
 Performance State is the psychophysiological condition a performer enters before and during a show — the calibration between nervous arousal and relaxed openness that enables spontaneous creative work. Not the absence of anxiety, but its transmutation into presence.

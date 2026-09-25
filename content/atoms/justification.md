@@ -21,6 +21,9 @@ links:
   - { id: ref-truth-in-comedy, relation: illustrates }
   - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: []
+serp_query: "retrospective justification meaning"
+serp_checked: "2026-09-25"
+serp_top10_dr: []
 created: "2026-04-03"
 updated: "2026-09-25"
 ---

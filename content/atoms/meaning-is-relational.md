@@ -21,8 +21,19 @@ links:
   - { id: ref-impro-johnstone, relation: illustrates }
   - { id: ref-spolin-improvisation-for-theater, relation: illustrates }
 sources: []
+serp_query: "relational meaning"
+target_keywords:
+  - { keyword: "relational meaning", volume: 700, difficulty: 0, traffic_potential: 150, parent: "relational" }
+  - { keyword: "relational definition", volume: 300, difficulty: 0, traffic_potential: 100, parent: "relational" }
+serp_checked: "2026-09-25"
+serp_min_dr: 72
+serp_verdict: authority
+serp_top10_dr: [72, 96, 92, 93, 90, 99, 90, 73]
+serp_floor_traffic: 14
+serp_top_share: 0.23
+serp_audience: "A dictionary query: an AI Overview quoting Merriam-Webster, then HiNative, a philosophy blog, Cambridge on relational databases, Psychology Today, Lazarus's paper on relational meaning in emotion. Nothing under DR 72. The page is shown at 61 on a word it uses as a term of art."
 created: "2026-04-04"
-updated: "2026-08-23"
+updated: "2026-09-25"
 ---
 
 Meaning is completed in reception. A single mind can intend things, but the meaning of any offer — its value, its consequence, its place in the scene — is indeterminate until another mind responds. A gesture means nothing definite until someone receives it. An emotion is incomplete until someone witnesses it. An offer has no settled value until someone builds on it.
