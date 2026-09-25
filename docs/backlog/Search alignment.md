@@ -20,6 +20,7 @@ stories:
   - "[[SA-10 The prioritisation fields are null for most of the demand the site captures]]"
   - "[[SA-11 The five school pages are unmeasured and two of them sit on the softest terms found]]"
   - "[[SA-12 Three hundred episodes ship to a feed nothing points at]]"
+  - "[[SA-13 The diagram library is finished and connected to nothing]]"
 ---
 
 # Search alignment
@@ -82,3 +83,5 @@ it costs a redirect and a reindex.
   — entity queries are the one corner where the apparatus can see, and nobody pointed it there.
 - [[SA-12 Three hundred episodes ship to a feed nothing points at]] — three
   directory-ready podcasts with no directory.
+- [[SA-13 The diagram library is finished and connected to nothing]] — 250
+  diagrams, 16 route pages without one, and a text card for every social image.
