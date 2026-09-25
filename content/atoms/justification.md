@@ -1,6 +1,7 @@
 ---
 id: justification
 title: Justification
+description: "Finding a reason why what just happened should have happened — retrospective justification, in Close and Halpern's teaching: there are no mistakes."
 type: definition
 status: draft
 tags: [definitions, technique, resilience, close]
@@ -21,7 +22,7 @@ links:
   - { id: ref-impro-storytellers-johnstone, relation: illustrates }
 sources: []
 created: "2026-04-03"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 Justification is the act of finding or creating a reason why something that happened *should* have happened, within the reality of the scene. A concept central to Del Close and Charna Halpern's teaching.

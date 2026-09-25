@@ -1,6 +1,6 @@
 ---
-title: "Types of Listening: The Three Modes That Matter"
-description: "Three attention modes — broadcast, evaluative, receptive — the seven conventional types mapped onto them, and when each one helps or kills a conversation."
+title: "Types of Listening: Agreeing, Disagreeing or Being With"
+description: "Three listening modes — broadcast, evaluative, receptive. Why agreeing and disagreeing are one mode, being with is the other, and where listening styles fit."
 target_keywords:
   - { keyword: "types of listening", volume: 800, difficulty: 0, traffic_potential: 400, parent: "types of listening" }
   - { keyword: "types of listening skills", volume: 100, parent: "types of listening", difficulty: 0, traffic_potential: 400 }
@@ -18,7 +18,7 @@ entry_atoms: [active-listening, offers, be-present, cognitive-bandwidth, interna
 entry_path: improv-for-life
 status: draft
 created: "2026-04-22"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 # Types of Listening: The Improv Framework for Understanding How We Hear

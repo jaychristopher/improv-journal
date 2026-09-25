@@ -4,7 +4,7 @@ type: task
 summary: The site's three page-one rankings all convert at 0%, because their snippets use different words than the queries
 epic: "[[Search alignment]]"
 parent: "[[SA-1 The corpus speaks one vocabulary and readers use several]]"
-status: To Do
+status: Done
 priority: High
 sequence: 1
 executable: agent
@@ -123,4 +123,49 @@ idea and readers have several, and nothing maps between them.
 
 ## Outcome
 
-_Not started._
+**Done 2026-09-25.**
+
+**Step 1, the instance.** `types-of-listening` now says the reader's words
+where search can see them, and only there — the body is untouched:
+
+- title: `Types of Listening: Agreeing, Disagreeing or Being With` (55 chars)
+- description: `Three listening modes — broadcast, evaluative, receptive. Why
+agreeing and disagreeing are one mode, being with is the other, and where
+listening styles fit.` (157 chars)
+
+Both vocabularies are in the snippet now, in the page's own argument — that
+agreeing and disagreeing are one mode wearing different clothes — and all
+three declared keywords survive: "types of listening" leads the title,
+"listening styles" was absent from the old description and is in the new one.
+
+**Step 2 could not be done as written, and the reason is worth recording.**
+`aliases` is a field on `AtomFrontmatter` only. `BridgeFrontmatter` does not
+carry it, both consumers in `content.ts` iterate `atom.frontmatter.aliases`,
+and `build-search-index.mjs` reads aliases for atoms and route pages and not
+for guides. CLAUDE.md describes the field as general; the schema is the
+authority and says otherwise. Extending it to guides is a schema decision of
+the same shape as SA-5.1's, and it should not be slipped in under a retitle.
+The snippet is where the reader's words needed to be, and that is done.
+
+**Step 3, the other two page-one pages.** `pattern-break` is clean: its query
+is "pattern break" and its title already carries it verbatim — the 0% CTR
+there is not a vocabulary problem, and nothing was changed. `justification`
+had the alias `"Retrospective justification"` and says it in the body, but
+no description at all, so the reader's word never reached the snippet. It now
+carries one, in the page's own voice: `Finding a reason why what just
+happened should have happened — retrospective justification, in Close and
+Halpern's teaching: there are no mistakes.` (147 chars). An authored atom
+description wins outright in `atomDescription`, so it is the snippet.
+
+**Step 4, the survey — and it is the finding.** Of 78 guides, **65 have at
+least one declared keyword whose wording appears in neither the title nor the
+description**; **223 of 317 declared keywords are absent from both.** The
+worst cases are the question-list pages: `conversation-starters` 15 of 16
+absent, `questions-to-get-to-know-someone` 14 of 16,
+`would-you-rather-questions` 13 of 15. That number is the size of the real
+opportunity and the input to the next card, and it is not a licence to
+rewrite 78 titles — it is the reason SA-16.1 and SA-17.1 apply this
+mechanism one page at a time where a query already exists.
+
+`npm run check` green, 275 files, 1441 tests. Re-read positions for the two
+changed pages in 30 days per the verify block; CTR is the metric.
