@@ -8,6 +8,7 @@ priority: High
 labels: [seo, metadata, aliases]
 tasks:
   - "[[SA-1.1 Say the reader's words in the snippet, not only in the body]]"
+  - "[[SA-1.2 Decide whether the thread layer competes for search at all]]"
 ---
 
 # SA-1 — One vocabulary, several dialects
@@ -24,3 +25,11 @@ win, because the ranking is already paid for.
 The line this story does not cross: the fix is to say what the page already
 means in the words a reader used, never to add a meaning the page does not
 have. An alias that is not in the body is a lie the alias guard already catches.
+
+A second shape of the same fault turned up on 2026-09-25 and is tracked as
+SA-1.2. The thread and path layers — 36 pages, ~2,300 rendered words each,
+around a thousand inbound internal links — carry titles that lead with an image
+rather than a term, and have never been surfaced once. There the question comes
+before the fix: a layer can legitimately choose not to compete, and saying so is
+a better outcome than retitling 25 lessons toward terms the site has not checked
+for demand or collision.
