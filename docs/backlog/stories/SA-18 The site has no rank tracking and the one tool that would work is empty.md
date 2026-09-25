@@ -3,7 +3,7 @@ key: SA-18
 type: story
 summary: Ahrefs records zero organic keywords and zero organic traffic for the domain, its rank tracker has zero keywords in it, and nineteen backlog cards schedule a re-read against the one table that shows half a percent
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, measurement, rank-tracking, verification]
 tasks:

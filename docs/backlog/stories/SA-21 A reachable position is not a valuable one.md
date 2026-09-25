@@ -3,7 +3,7 @@ key: SA-21
 type: story
 summary: Two SERPs promoted on the same SERP-floor rule give a low-DR page 194 visits a month and 7 visits a month, and nothing records the difference
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, serp, promotion, traffic-distribution]
 tasks:

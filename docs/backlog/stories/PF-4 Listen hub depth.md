@@ -3,7 +3,7 @@ key: PF-4
 type: story
 summary: Bring the listen hub up to the standard the other category hubs meet
 epic: "[[Podcast finalization]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 4
 story_points: 3

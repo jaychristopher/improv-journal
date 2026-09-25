@@ -3,7 +3,7 @@ key: SA-6
 type: story
 summary: serp_min_dr gates promotion and ranks the audit, but 48 of 71 verdicts carry it with no distribution behind it — including the 44,000 traffic potential page it currently props up
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, serp, evidence, promotion]
 tasks:

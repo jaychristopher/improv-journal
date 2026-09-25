@@ -3,7 +3,7 @@ key: SA-17
 type: story
 summary: Google serves the library's book citation for all fifteen Viewpoints queries, including the four the dedicated guide explicitly targets, and the guide takes none of them
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, cannibalisation, library, collision]
 tasks:

@@ -3,7 +3,7 @@ key: EC-2
 type: story
 summary: Say something the visitor can use, not where the page sits in the graph
 epic: "[[Entry-point context]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 2
 story_points: 3

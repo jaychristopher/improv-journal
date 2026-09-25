@@ -3,7 +3,7 @@ key: SA-16
 type: story
 summary: Across the full window the library is 8% of the site and 33% of its impressions, a 3.9x lift, while atoms are 45% of the site and 20% of impressions at 0.4x
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, library, prioritisation, measurement]
 tasks:

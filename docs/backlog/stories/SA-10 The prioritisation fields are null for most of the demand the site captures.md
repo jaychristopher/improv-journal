@@ -3,7 +3,7 @@ key: SA-10
 type: story
 summary: Seven of the ten queries the site actually ranks for have no traffic_potential, no difficulty and no parent_topic in Ahrefs, and those three fields are what every threshold in the repo is built on
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, measurement, demand-model, long-tail]
 tasks:

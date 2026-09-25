@@ -3,7 +3,7 @@ key: SA-4
 type: story
 summary: Every page Google has surfaced receives fewer internal links than every page the footer promotes, and the promotion block cannot see most of them at all
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, internal-links, promotion, measurement]
 tasks:

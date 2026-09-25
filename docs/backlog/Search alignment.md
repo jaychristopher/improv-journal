@@ -2,7 +2,7 @@
 key: SA
 type: epic
 summary: Make the site's vocabulary match the vocabulary its readers search with
-status: To Do
+status: In Progress
 priority: High
 labels: [seo, metadata, content]
 created: 2026-09-25

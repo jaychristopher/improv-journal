@@ -3,7 +3,7 @@ key: SA-14
 type: story
 summary: Search Console reports 6,602 impressions and 33 clicks over the window this backlog was built on, and the per-query table it was built from shows 35 impressions and none of the clicks
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, measurement, gsc, correction]
 tasks:
