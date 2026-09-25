@@ -101,11 +101,12 @@ describe("the backlog register", () => {
     // 2026-09-25, sixth firing: SA-6 and SA-6.1. 15 stories, 24 tasks.
     // 2026-09-25, seventh firing: SA-7 and SA-7.1. 16 stories, 25 tasks.
     // 2026-09-25, eighth firing: SA-1.2 joins the existing SA-1 story. 26 tasks.
+    // 2026-09-25, ninth firing: SA-8 and SA-8.1. 17 stories, 27 tasks.
     expect(typed("epic")).toHaveLength(3);
-    expect(typed("story")).toHaveLength(16);
-    expect(tasks).toHaveLength(26);
+    expect(typed("story")).toHaveLength(17);
+    expect(tasks).toHaveLength(27);
     expect(tasks.filter(isDone)).toHaveLength(7);
-    expect(openTasks).toHaveLength(19);
+    expect(openTasks).toHaveLength(20);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
