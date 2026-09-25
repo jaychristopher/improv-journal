@@ -568,6 +568,24 @@ const GSC_TOTALS = {
  */
 const GSC_WINDOW_FROM = "2026-02-01";
 
+/*
+ * What Ahrefs knows about the queries this site actually ranks for: mostly
+ * nothing (SA-10.1, 2026-09-25).
+ *
+ * Ten of the 83 queries in the table were put back to keywords-explorer-
+ * overview. Seven returned no traffic_potential, no difficulty and no
+ * parent_topic; three came back at volume 0. The whole vocabulary this site
+ * ranks on sits below the keyword index's floor, so every number in this file
+ * that reads a blank as small is reading it wrong — a blank is unmeasured. The
+ * full table, with the page each query surfaced on, is
+ * docs/seo/rank-tracker-keywords.txt, and gsc-anonymous-queries returns empty
+ * for the same reason, so the withheld part cannot be recovered from Ahrefs.
+ *
+ * One populated figure is a trap and is named so nobody uses it: "space work"
+ * returns 7,500 traffic potential under parent_topic "spaces" — office and
+ * workspace searches. The site ranks 29th on it for improv space work.
+ */
+
 /**
  * Which layer earns, against how much of the site it is.
  *

@@ -62,6 +62,11 @@ export interface TopGuide {
  */
 function reachOf(keywords: BridgeTargetKeyword[]): number {
   const primary = keywords[0];
+  // Truthiness, so a retrieved traffic potential of 0 falls through to volume
+  // exactly as an absent one does. Those are different facts — 0 is a
+  // measurement, absent is the lack of one — and the schema now says so
+  // (SA-10.1, 2026-09-25). Left as it is here because the change belongs with
+  // the rest of the promotion inputs in SA-4.1, not on its own.
   if (primary?.traffic_potential) return primary.traffic_potential;
   return keywords.length > 0 ? Math.max(...keywords.map((k) => k.volume)) : 0;
 }
@@ -83,6 +88,22 @@ function reachOf(keywords: BridgeTargetKeyword[]): number {
  * against the list growing unreasonably long.
  */
 export const PROMOTION_FLOOR = 10_000;
+/*
+ * What this floor cannot see, measured 2026-09-25 (SA-10.1).
+ *
+ * Ten of the queries Search Console shows this site ranking for were put back
+ * to Ahrefs. Seven returned no traffic_potential, no difficulty and no
+ * parent_topic — including "retrospective justification meaning", which the
+ * site holds position 10 for. Those terms sit below the keyword index's floor,
+ * and this constant reads a blank as "below 10,000", which it is not: it is
+ * unmeasured. The floor is defensible for the guide layer, which targets head
+ * terms that do return figures; it was never able to judge the long tail and
+ * does so by silence. Changing that is SA-4.1's, not a comment's.
+ *
+ * And a populated figure can mislead outright: "space work" returns 7,500
+ * under parent_topic "spaces" — office space. The site ranks 29th on it for
+ * improv space work. Never let that 7,500 into a reach calculation.
+ */
 /**
  * Raised from 24 when the SERP-floor rule was added. Eight guides qualify on
  * it and the list sorts by reach, so at 24 every one of them would have landed

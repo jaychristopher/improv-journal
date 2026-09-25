@@ -219,6 +219,15 @@ export interface BridgeTargetKeyword {
    * Ahrefs traffic potential: the traffic the top-ranking page actually
    * receives across every keyword it ranks for.
    *
+   * Absent means Ahrefs returned nothing — the term is below its index's
+   * floor — and that is not the same as zero. On 2026-09-25 seven of the ten
+   * queries this site actually ranks for came back with no traffic_potential,
+   * no difficulty and no parent_topic, including one the site holds position
+   * 10 for (SA-10.1). A retrieved 0 is a measurement; a blank is the absence
+   * of one. Consumers that use `??` keep the difference; `top-guides.ts`
+   * tests truthiness and folds a real 0 into "absent", which is recorded there
+   * and left for SA-4.1. Never write 0 to mean "not looked up".
+   *
    * Recorded because volume misranks badly on its own. "what is improv" is
    * 1,600 a month with a traffic potential of 50 — the query is answered in
    * the result page, so ranking first earns almost nothing. "how to read body
