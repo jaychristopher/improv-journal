@@ -10,6 +10,7 @@ target: Every entry is findable in the words its reader would actually type, wit
 stories:
   - "[[SA-1 The corpus speaks one vocabulary and readers use several]]"
   - "[[SA-2 The link profile is unreadable, and nobody is watching it]]"
+  - "[[SA-3 The pages nobody measured are the ones on the actual subject]]"
 ---
 
 # Search alignment
@@ -52,3 +53,5 @@ it costs a redirect and a reindex.
   search in words the corpus does not put where search can see them.
 - [[SA-2 The link profile is unreadable, and nobody is watching it]] — the
   number that would say whether outreach works rises on its own.
+- [[SA-3 The pages nobody measured are the ones on the actual subject]] — the
+  unchecked guides are the core theme at the site's lowest difficulty.
