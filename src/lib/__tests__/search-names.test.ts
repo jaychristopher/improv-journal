@@ -264,7 +264,13 @@ describe("site search ranks a guide's keyword and a concept's title apart", () =
     const { ms } = loadIndex();
     expect(ms.documentCount).toBeGreaterThanOrEqual(360);
     const twins: [keyword: string, guide: string, title: string, concept: string][] = [
-      ["anne bogart viewpoints", "/viewpoints", "Viewpoints", "/practice/techniques/viewpoints"],
+      // The guide's primary keyword moved from "anne bogart viewpoints" to
+      // "viewpoints acting" under SA-17.1 (2026-09-25): GSC showed all fifteen
+      // Viewpoints queries landing on the book's citation page, and the split
+      // settled there gives the author-named queries to the citation and the
+      // craft queries to the guide. The twin still says what it always said —
+      // the guide wins its keyword, the concept wins its title.
+      ["viewpoints acting", "/viewpoints", "Viewpoints", "/practice/techniques/viewpoints"],
       [
         "how to be present",
         "/how-to-be-present",

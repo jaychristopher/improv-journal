@@ -1,10 +1,10 @@
 ---
-title: "Anne Bogart Viewpoints: The Nine Channels"
-description: "Bogart and Landau turned Overlie's six Viewpoints into nine channels of attention. What each one is, how they are trained, and where the method fails."
+title: "Viewpoints Acting Technique: The Nine Channels"
+description: "Viewpoints splits physical awareness into nine named channels. What each one is, how it is trained, where it fails — and how Bogart and Landau got there."
 target_keywords:
+  - { keyword: "viewpoints acting", volume: 100, difficulty: 4, traffic_potential: 150, parent: "viewpoints acting" }
   - { keyword: "anne bogart viewpoints", volume: 100, difficulty: 6, traffic_potential: 1100, parent: "viewpoints" }
   - { keyword: "viewpoints theatre", volume: 80, difficulty: 7, traffic_potential: 1100, parent: "viewpoints" }
-  - { keyword: "viewpoints acting", volume: 100, difficulty: 4, traffic_potential: 150, parent: "viewpoints acting" }
   - { keyword: "viewpoints technique", volume: 20, difficulty: 5, traffic_potential: 100, parent: "viewpoints acting" }
   - { keyword: "viewpoints acting exercises", volume: 20, difficulty: 2, traffic_potential: 0, parent: "viewpoints acting exercises" }
   - { keyword: "six viewpoints", volume: 10, difficulty: 1, traffic_potential: 0, parent: "six viewpoints" }
@@ -21,7 +21,7 @@ entry_atoms: [viewpoints, physicality, space-work, ensemble, be-present, presenc
 entry_path: the-art-of-ensemble
 status: draft
 created: "2026-08-23"
-updated: "2026-08-23"
+updated: "2026-09-25"
 ---
 
 # Anne Bogart Viewpoints: The Nine Channels

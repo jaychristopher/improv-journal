@@ -1,6 +1,7 @@
 ---
 id: ref-viewpoints-bogart-landau
 title: "The Viewpoints Book — Anne Bogart & Tina Landau (2005)"
+description: "The book. Bogart and Landau's practical guide to Viewpoints and Composition — the standard written source for the method."
 type: reference
 status: draft
 tags: [references, books, viewpoints, movement, physicality]
@@ -22,7 +23,7 @@ work:
   published: "2005"
   isbn: "1559362413"
 created: "2026-04-05"
-updated: "2026-09-24"
+updated: "2026-09-25"
 ---
 
 **Anne Bogart & Tina Landau. *The Viewpoints Book: A Practical Guide to Viewpoints and Composition.* Theatre Communications Group, 2005. ISBN 1559362413.**
