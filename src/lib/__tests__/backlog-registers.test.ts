@@ -97,11 +97,12 @@ describe("the backlog register", () => {
     // schedule rather than only when someone plans work — which is exactly why
     // it stays exact. A card arriving unexplained should still fail here.
     // 2026-09-25, fourth audit firing: SA-4 and SA-4.1. 13 stories, 22 tasks.
+    // 2026-09-25, fifth firing: SA-5 and SA-5.1. 14 stories, 23 tasks.
     expect(typed("epic")).toHaveLength(3);
-    expect(typed("story")).toHaveLength(13);
-    expect(tasks).toHaveLength(22);
+    expect(typed("story")).toHaveLength(14);
+    expect(tasks).toHaveLength(23);
     expect(tasks.filter(isDone)).toHaveLength(7);
-    expect(openTasks).toHaveLength(15);
+    expect(openTasks).toHaveLength(16);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.

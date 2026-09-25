@@ -12,6 +12,7 @@ stories:
   - "[[SA-2 The link profile is unreadable, and nobody is watching it]]"
   - "[[SA-3 The pages nobody measured are the ones on the actual subject]]"
   - "[[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]"
+  - "[[SA-5 The SEO discipline covers the layer that does not rank]]"
 ---
 
 # Search alignment
@@ -58,3 +59,5 @@ it costs a redirect and a reindex.
   unchecked guides are the core theme at the site's lowest difficulty.
 - [[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]
   — the biggest internal-link lever has never read an outcome.
+- [[SA-5 The SEO discipline covers the layer that does not rank]] — the keyword
+  and SERP fields exist only on bridges, and atoms are what Google surfaces.
