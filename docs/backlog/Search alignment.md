@@ -26,6 +26,7 @@ stories:
   - "[[SA-16 The library returns four times its size and nobody has ever looked at it]]"
   - "[[SA-17 A citation page is outranking the guide written for the topic]]"
   - "[[SA-18 The site has no rank tracking and the one tool that would work is empty]]"
+  - "[[SA-19 The library splits in two and only the long half has ever surfaced]]"
 ---
 
 # Search alignment
@@ -100,3 +101,5 @@ it costs a redirect and a reindex.
   fifteen Viewpoints queries go to the book entry. Settle it before SA-16.1.
 - [[SA-18 The site has no rank tracking and the one tool that would work is empty]]
   — nineteen cards promise a verification nothing can currently perform.
+- [[SA-19 The library splits in two and only the long half has ever surfaced]] —
+  a real split, an unproven cause, and a three-page test rather than a rewrite.
