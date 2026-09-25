@@ -41,7 +41,7 @@ pages have been surfaced in four months:
 | `/practice/techniques/space-work`            | atom   | 29.0     | 1    | —                      |
 | `/practice/techniques/pacing`                | atom   | 90.0     | 1    | —                      |
 | `/library/ref-sawyer-group-genius`           | atom   | 43.0     | 1    | —                      |
-| `/library/ref-attention-and-effort-kahneman` | atom   | **12.0** | 1    | **0**                  |
+| `/library/ref-attention-and-effort-kahneman` | atom   | **12.0** | 1    | 38 (at its live URL)   |
 | `/how-it-works/diagnosis/blocking`           | atom   | 63.0     | 1    | —                      |
 
 Against the promotion block, counted in `.next/server/app` across 386 pages:
@@ -65,8 +65,8 @@ reconciled against an outcome.
 vocabulary and library references are structurally invisible to the largest
 internal-link lever on the site — and they are where five of the site's six
 best positions are. `ref-attention-and-effort-kahneman` ranks at position 12
-with **zero** inbound internal links, on the same day it was rebuilt into an
-affiliate gateway.
+at position 12 — though see the correction in step 3 below: its link count was
+my error, not a defect.
 
 **The reach route never reads the SERP floor, even when it is recorded.**
 Fifteen of the 17 reach-route promotions have no `serp_top10_dr`, only a
@@ -101,11 +101,14 @@ to give it one — not to invert it.
    invent a threshold: report the distribution of `serp_min_dr` across the 17
    first, then pick a cut and justify it the way `PROMOTE_IF_FLOOR_UNDER`
    justifies 6.
-3. **Fix the zero.** `/library/ref-attention-and-effort-kahneman` has no inbound
-   internal links and ranks at 12. Whatever else changes, that is a one-line
-   defect. Check whether other `reference` atoms share it — the library "punches
-   above its weight in search" per CLAUDE.md, and this is the first measurement
-   that agrees.
+3. **Do not chase the zero — it was mine.** An earlier draft of this card said
+   `/library/ref-attention-and-effort-kahneman` had no inbound internal links.
+   That was a counting error: the `ref-` prefix was dropped from library URLs on
+   2026-09-24 and I counted the pre-redirect path. The live page,
+   `/library/attention-and-effort-kahneman`, has 38 inbound links — above the
+   library layer's median of 23 and above `/types-of-listening`'s 26. No library
+   page has zero. The library's link position is healthy; see [[SA-7.1 Watch the
+library URL migration land]] for what is actually at stake there.
 4. **Guard the reconciliation, not the ranking.** A test that froze today's
    promoted set would be the `nav-reach.test.ts` mistake again — asserting the
    mechanism instead of the outcome. Assert instead that the promoted set and
@@ -116,8 +119,6 @@ to give it one — not to invert it.
 
 - The intersection of promoted guides and GSC-surfaced pages is greater than 0,
   and the test records the number and the date.
-- `/library/ref-attention-and-effort-kahneman` has at least one inbound
-  internal link.
 - `npm run check` green. `flight-share`, `link-tracking`, `anchor-diversity`
   and `promotion-reaches-pages` will all move — re-date each with the account
   of why, do not raise a threshold to clear a failure.

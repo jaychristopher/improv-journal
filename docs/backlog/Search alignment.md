@@ -14,6 +14,7 @@ stories:
   - "[[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]"
   - "[[SA-5 The SEO discipline covers the layer that does not rank]]"
   - "[[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]"
+  - "[[SA-7 Thirty-two URLs moved and nothing is watching them land]]"
 ---
 
 # Search alignment
@@ -64,3 +65,5 @@ it costs a redirect and a reindex.
   and SERP fields exist only on bridges, and atoms are what Google surfaces.
 - [[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]
   — `serp_min_dr` gates promotion sitewide and two thirds of it is uncorroborated.
+- [[SA-7 Thirty-two URLs moved and nothing is watching them land]] — the library
+  migration is clean internally and unobserved externally. Time-sensitive.
