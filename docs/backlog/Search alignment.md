@@ -17,6 +17,7 @@ stories:
   - "[[SA-7 Thirty-two URLs moved and nothing is watching them land]]"
   - "[[SA-8 The answer-engine channel is invested in and never measured]]"
   - "[[SA-9 The cluster named for the subject is the one that is not a topic]]"
+  - "[[SA-10 The prioritisation fields are null for most of the demand the site captures]]"
 ---
 
 # Search alignment
@@ -73,3 +74,5 @@ it costs a redirect and a reindex.
   deploy for an audience nobody has counted.
 - [[SA-9 The cluster named for the subject is the one that is not a topic]] —
   the homepage's improv door opens onto the corpus's least structured cluster.
+- [[SA-10 The prioritisation fields are null for most of the demand the site captures]]
+  — every threshold here is built on fields Ahrefs leaves blank for this site.
