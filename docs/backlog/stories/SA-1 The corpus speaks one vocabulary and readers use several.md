@@ -3,7 +3,7 @@ key: SA-1
 type: story
 summary: Readers search in words the corpus does not put where search can see them
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, metadata, aliases]
 tasks:

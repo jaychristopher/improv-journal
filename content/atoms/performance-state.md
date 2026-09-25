@@ -5,7 +5,7 @@ title: Performance State
 type: insight
 status: draft
 tags: [insights, performance, mastery, presence, psychology]
-aliases: ["Flow state"]
+aliases: ["Flow state", "Arousal"]
 links:
   - { id: presence, relation: extends }
   - { id: be-present, relation: extends }

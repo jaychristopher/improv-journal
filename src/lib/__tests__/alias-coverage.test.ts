@@ -74,10 +74,12 @@ describe("alias coverage", () => {
       0,
     );
 
-    // 33 of 205 atoms and 43 registrations on 2026-09-22. Floors, not
-    // targets: an alias added moves them up and an alias deleted fails.
-    expect(withAlias.length).toBeGreaterThanOrEqual(33);
-    expect(registrations).toBeGreaterThanOrEqual(43);
+    // 33 of 205 atoms and 43 registrations on 2026-09-22; 34 and 45 on
+    // 2026-09-25, when SA-1.3 declared the names the ranking atoms' own prose
+    // already used. Floors, not targets: an alias added moves them up and an
+    // alias deleted fails.
+    expect(withAlias.length).toBeGreaterThanOrEqual(34);
+    expect(registrations).toBeGreaterThanOrEqual(45);
     // The field is the minority state, which is the whole finding. If this
     // ever fails the corpus has been filled in and the entry is history.
     expect(withAlias.length).toBeLessThan(atoms.length);
@@ -92,8 +94,9 @@ describe("alias coverage", () => {
         claimedBy.set(key, [...(claimedBy.get(key) ?? []), atom.frontmatter.id]);
       }
     }
-    // 42 distinct aliases across 43 registrations on 2026-09-22.
-    expect(claimedBy.size).toBeGreaterThanOrEqual(42);
+    // 42 distinct aliases across 43 registrations on 2026-09-22; 44 across 45
+    // on 2026-09-25.
+    expect(claimedBy.size).toBeGreaterThanOrEqual(44);
 
     const duplicates = [...claimedBy]
       .filter(([, ids]) => ids.length > 1)
@@ -139,7 +142,7 @@ describe("alias coverage", () => {
         url: getAtomUrl({ id: atom.frontmatter.id, type: atom.frontmatter.type }),
       })),
     );
-    expect(aliases.length).toBeGreaterThanOrEqual(43);
+    expect(aliases.length).toBeGreaterThanOrEqual(45);
 
     let occurrences = 0;
     for (const { alias } of aliases) {

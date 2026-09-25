@@ -587,12 +587,25 @@ function getAutolinkPhrases(
  * a five-occurrence sample were wrong, over the one-in-five bar the list is
  * held to. Every other rule still applies — one link per page, never to the
  * page itself, never inside an existing link or code span.
+ *
+ * Two more on 2026-09-25 (SA-1.3), each on a reading of every occurrence.
+ * "Arousal" (`performance-state`): 29 occurrences in 6 documents, 16 of them
+ * away from the atom, every one Yerkes and Dodson's word — nerves before a
+ * show, the inverted U, the IZOF band — and none the ordinary sense. "CROW"
+ * (`base-reality`): 12 occurrences in 6 documents, all the acronym for
+ * Character, Relationship, Objective, Where; the corpus has no birds. Read
+ * and declined the same day: "resistance", the word Google showed `blocking`
+ * for — 17 occurrences in 12 documents and the ordinary word in nearly all
+ * of them ("resistance to the implications", "removes most of the
+ * resistance") — so it is not declared at all.
  */
 export const ALIAS_AUTOLINK_MIN_WORDS = 2;
 export const ALIAS_AUTOLINK_MIN_LENGTH = 8;
 export const ONE_WORD_ALIAS_ALLOWLIST: ReadonlySet<string> = new Set([
   "acceptance",
+  "arousal",
   "backline",
+  "crow",
   "escalation",
   "hedging",
   "self-monitoring",

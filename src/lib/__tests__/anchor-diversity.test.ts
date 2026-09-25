@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 import { FOOTER_GUIDES, footerGuideLabel, footerLabelsByTitle } from "@/components/Footer";
 
 import { normaliseText } from "../anchor-text";
-import { loadBridges } from "../content";
+import { getAtomUrl, loadAtoms, loadBridges } from "../content";
 import { getTopGuides } from "../top-guides";
 
 /**
@@ -187,6 +187,77 @@ function median(values: number[]): number {
   return sorted[Math.floor(sorted.length / 2)];
 }
 
+/*
+ * The atom layer, read the same way (SA-1.3, 2026-09-25).
+ *
+ * 212 atom pages receiving five or more inbound anchors took a median 0.938
+ * of them as one string, 146 of them at or above 0.90 and many at 1.00 —
+ * `relationship` 65 links one string, `the core` 62, `character` 47. The
+ * pages that rank were the most monocultural: pattern-break, at position
+ * 10, took 100% of 20 anchors as "pattern break". Exact internal anchors are
+ * a relevance signal and not a scheme, so this is not a penalty risk; it is
+ * what it costs. One phrasing per concept is the only phrasing the graph
+ * has any signal for, and base-reality surfaced on "base reality meaning"
+ * at 50 with 96% of 77 anchors saying "base reality".
+ *
+ * The fix is aliases the prose already says, one at a time, and the
+ * one-word allowlist on evidence; both are slow by design. So this holds a
+ * ceiling on the median dominant share that may only fall, set from the
+ * reading after the first aliases landed, with the count at or above 0.90
+ * beside it. Not a target: the number records where the habit stands.
+ *
+ * Read off the build the way the guides are above — <main> and the footer,
+ * self-links out — the layer measured 0.917 over 205 atoms with five or more
+ * inbound anchors, 122 of them at or above 0.90, before the card, and 0.915
+ * and 122 after "Pattern interrupt" and "Arousal" landed and CROW was let
+ * through (2026-09-25). The card's 0.938 over 212 counted the whole page;
+ * this counts what the guide reading counts, so the two are comparable.
+ */
+const ATOM_DOMINANT_MEDIAN_CEILING = 0.92;
+const ATOM_ABOVE_90_CEILING = 122;
+const ATOM_MIN_INBOUND = 5;
+/** Anchors into the three atom sections, the shape every concept route has. */
+const ATOM_ANCHOR =
+  /<a\b[^>]*href="(\/(?:practice|how-it-works|library)\/[a-z0-9/-]+)(?:#[^"]*)?"[^>]*>([\s\S]*?)<\/a>/g;
+
+interface AtomProfile {
+  slug: string;
+  total: number;
+  distinct: number;
+  dominant: number;
+}
+
+async function atomProfiles(): Promise<AtomProfile[]> {
+  const atoms = await loadAtoms();
+  const byUrl = new Map(
+    atoms.map((a) => [
+      getAtomUrl({ id: a.frontmatter.id, type: a.frontmatter.type }),
+      a.frontmatter.id,
+    ]),
+  );
+  const anchors = new Map<string, Map<string, number>>();
+  for (const file of walk(APP)) {
+    const url = urlOf(file);
+    if (url.startsWith("/_")) continue;
+    for (const region of linkingRegions(fs.readFileSync(file, "utf-8"))) {
+      for (const match of region.matchAll(ATOM_ANCHOR)) {
+        const [, href, inner] = match;
+        const slug = byUrl.get(href);
+        if (!slug || url === href) continue;
+        const text = anchorText(inner);
+        if (!text) continue;
+        const counts = anchors.get(slug) ?? new Map<string, number>();
+        counts.set(text, (counts.get(text) ?? 0) + 1);
+        anchors.set(slug, counts);
+      }
+    }
+  }
+  return [...anchors.entries()].map(([slug, counts]) => {
+    const total = [...counts.values()].reduce((sum, n) => sum + n, 0);
+    return { slug, total, distinct: counts.size, dominant: Math.max(...counts.values()) / total };
+  });
+}
+
 describe("footer label form by hosting page", () => {
   it("says the title on concept pages and the keyword everywhere else", () => {
     for (const concept of [
@@ -329,4 +400,19 @@ describe("inbound anchor diversity", () => {
     // mean the guides had stopped being linked by their keywords at all.
     expect(outside).toBeGreaterThan(0.1);
   });
+
+  it.runIf(built)(
+    "holds the atom layer's dominant-anchor share under a ceiling that may only fall",
+    async () => {
+      const profiles = (await atomProfiles()).filter((p) => p.total >= ATOM_MIN_INBOUND);
+      // Guard the guard: most of the 205 atoms receive five anchors or more; a
+      // regex that matched nothing would report an empty, passing layer.
+      expect(profiles.length).toBeGreaterThanOrEqual(180);
+      const dominant = median(profiles.map((p) => p.dominant));
+      const above90 = profiles.filter((p) => p.dominant >= 0.9).length;
+      const reading = `median dominant share ${dominant.toFixed(3)} over ${profiles.length} atoms, ${above90} at or above 0.90`;
+      expect(dominant, reading).toBeLessThanOrEqual(ATOM_DOMINANT_MEDIAN_CEILING);
+      expect(above90, reading).toBeLessThanOrEqual(ATOM_ABOVE_90_CEILING);
+    },
+  );
 });

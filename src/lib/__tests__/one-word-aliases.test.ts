@@ -42,10 +42,14 @@ const DECLINED_ONE_WORD_ALIASES = ["Game", "Wipe", "Denial", "POV"];
 // Links measured on 2026-09-22 across atoms, bridges, threads, paths and
 // sources: acceptance 23, hedging 26, self-monitoring 23, backline 15,
 // escalation 15 (102 in all). Floors sit just under those counts so a stopped
-// registration fails and a rewritten paragraph does not.
+// registration fails and a rewritten paragraph does not. Two admitted on
+// 2026-09-25 (SA-1.3), read the same way: arousal 4 links, crow
+// 4 — the accounts are beside the allowlist in content.ts.
 const LINK_FLOORS: Record<string, number> = {
   acceptance: 18,
+  arousal: 3,
   backline: 12,
+  crow: 3,
   escalation: 12,
   hedging: 20,
   "self-monitoring": 18,
