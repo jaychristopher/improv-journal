@@ -1,0 +1,101 @@
+# Keywords to load into the Ahrefs Rank Tracker for physicsofconnection.com.
+#
+# Source: Search Console via Ahrefs `gsc-keywords`, project 9723388,
+# 2026-02-01 → 2026-09-25 — every query the site has ever been surfaced for
+# (83), plus the two declared Viewpoints terms not yet among them (SA-17.1).
+# The tracker is the one instrument that needs no keyword-index volume, so it
+# works on exactly this vocabulary, which Ahrefs' index cannot see (SA-10.1).
+#
+# Format: keyword <TAB> the page GSC served it on. Paste the first column; the
+# second is for the tracker's tags. Country: US. Read the card SA-18.1 first.
+# Do not add the other declared keywords — most have never surfaced and the
+# tracker charges per keyword.
+
+"three listening modes" agreeing disagreeing being with	/types-of-listening
+physical team building activities	/team-building-activities
+stimulation performance	/how-it-works/performance-state
+what is improv	/what-is-improv
+pattern break	/practice/techniques/pattern-break
+anne bogart viewpoints	/library/viewpoints-bogart-landau
+5 minute team building activities	/5-minute-team-building
+viewpoints by anne bogart	/library/viewpoints-bogart-landau
+viewpoints anne bogart	/library/viewpoints-bogart-landau
+team building questions	/team-building-questions
+will hines substack	/library/hines-substack
+viewpoints acting	/viewpoints
+team building physical activities	/team-building-activities
+relational meaning	/how-it-works/meaning-is-relational
+questions for team building	/team-building-questions
+improv meaning	/what-is-improv
+anne bogarts viewpoints	/library/viewpoints-bogart-landau
+what is long form improv	/practice/formats
+viewpoints theatre	/viewpoints
+viewpoints acting technique	/viewpoints
+viewpoints acting exercises	/viewpoints
+viewpoint theatre	/viewpoints
+space work	/practice/techniques/space-work
+keith sawyer group genius	/library/sawyer-group-genius
+del close improv	/traditions/close
+bonding activity	/team-bonding-activities
+anne bogart viewpoints pdf	/library/viewpoints-bogart-landau
+acting viewpoints	/viewpoints
+yes and rule	/practice/techniques/yes-and
+yes and comedy	/practice/techniques/yes-and
+what is the meaning of improv	/what-is-improv
+what is pacing and leading	/practice/techniques/pacing
+what does improv mean	/what-is-improv
+viola spolin improvisation for the theatre	/library/spolin-improvisation-for-theater
+viola spolin improvisation for the theater	/library/spolin-improvisation-for-theater
+viewpoints theater	/viewpoints
+viewpoints drama	/viewpoints
+trust building questions	/team-building-questions
+theatre viewpoints	/viewpoints
+the viewpoints	/library/viewpoints-bogart-landau
+team building activities 5 minutes	/5-minute-team-building
+teaching improv	/paths/teaching-improv
+structural interdependence	/how-it-works/interdependence
+retrospective justification meaning	/practice/vocabulary/justification
+resistance blocking	/how-it-works/diagnosis/blocking
+relational definition	/how-it-works/meaning-is-relational
+relational	/how-it-works/meaning-is-relational
+rejustification	/practice/vocabulary/justification
+principles of improv	/rules-of-improv
+practice improv	/tools/exercise-picker/beginner
+not vulnerable	/how-to-be-vulnerable
+mirroring exercises	/practice/exercises/mirroring
+mirroring exercise	/practice/exercises/mirroring
+long form improv formats	/practice/formats
+long form improv	/practice/formats
+kahneman 1973 attention and effort limited capacity	/library/attention-and-effort-kahneman
+intermediate exercises	/tools/exercise-picker/intermediate
+improvisation for the theatre by viola spolin	/library/spolin-improvisation-for-theater
+improvisation for the theatre	/library/spolin-improvisation-for-theater
+improvisation for the theater viola spolin	/library/spolin-improvisation-for-theater
+improvisation for the theater	/library/spolin-improvisation-for-theater
+improvisation exercises	/tools/exercise-picker/beginner
+improvisation at the speed of life	/library/tj-dave-speed-of-life
+improv wisdom	/library/madson-improv-wisdom
+improv principles	/how-it-works/principles
+improv practice exercises	/tools/exercise-picker/beginner
+improv mean	/what-is-improv
+improv forms	/practice/formats
+improv formats	/practice/formats
+improv at the speed of life	/library/tj-dave-speed-of-life
+how to practice improv	/how-to-get-better-at-improv
+group bonding	/team-bonding-activities
+emotion switch	/practice/exercises/emotion-switch
+bonding exercises for friends	/team-bonding-activities
+bonding activities for friends	/team-bonding-activities
+beginner improv games	/tools/exercise-picker/beginner
+base reality meaning	/practice/vocabulary/base-reality
+attention and effort daniel kahneman	/library/attention-and-effort-kahneman
+attention and effort	/library/attention-and-effort-kahneman
+5-minute team building activities for workplace indoors	/5-minute-team-building
+5-minute team building activities	/5-minute-team-building
+5-minute games for meetings	/5-minute-team-building
+5-minute energisers	/5-minute-team-building
+
+# Declared on /viewpoints and never yet surfaced — tracked so SA-17.1 can be
+# verified: the guide should win these, the citation the author-named ones.
+viewpoints technique	/viewpoints
+six viewpoints	/viewpoints

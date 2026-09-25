@@ -597,6 +597,18 @@ const GSC_LAYERS = [
 ];
 const BUILT_PAGES = 386;
 
+/**
+ * What the Ahrefs Rank Tracker holds for this project.
+ *
+ * `management-project-keywords` returned an empty list on the date below, and
+ * the API is read-only for it — loading keywords is a dashboard job. The list
+ * to load is `docs/seo/rank-tracker-keywords.txt`: every query GSC has ever
+ * surfaced the site for (83) plus the two declared Viewpoints terms not yet
+ * among them, and nothing else, because the tracker charges per keyword and a
+ * term the site has never ranked for measures nothing (SA-18.1).
+ */
+const RANK_TRACKER = { read: "2026-09-25", keywords: 0, toLoad: 85 };
+
 const GSC_SEEN = new Set([
   "what-is-improv",
   "rules-of-improv",
@@ -662,6 +674,17 @@ if (settled.length > 0) {
   }
   console.log(
     "  The library returns four times its size; atoms return under half of theirs. Back the layer that earns.",
+  );
+  console.log();
+
+  // Positions on the site's own vocabulary need the rank tracker: Ahrefs'
+  // keyword index returns nothing for most of it and the GSC tables are a 2%
+  // sample. The tracker is the one instrument neither problem touches, and on
+  // this date it held nothing. Loading it is dashboard work; the list is in
+  // the repo. Move the date and the count when it changes.
+  console.log(
+    `Rank tracker: ${RANK_TRACKER.keywords} keywords on ${RANK_TRACKER.read}. ` +
+      `${RANK_TRACKER.keywords === 0 ? `Load docs/seo/rank-tracker-keywords.txt (${RANK_TRACKER.toLoad} rows, SA-18.1) — until then no card here can verify its own outcome.` : "Read positions from it, not from the GSC tables."}`,
   );
   console.log();
 }

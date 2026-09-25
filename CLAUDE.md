@@ -66,6 +66,31 @@ and `parent`, plus `serp_checked`, `serp_min_dr` and `serp_verdict`.
   before creating a page that overlaps an existing one.
 - **`traffic_potential` beats `volume`** for prioritising. "what is improv" is 1,600
   a month with a traffic potential of 50.
+- **These fields exist on guides only.** `schema.ts` declares them on
+  `BridgeFrontmatter`; atoms, library entries and route pages carry none of them,
+  so the collision test cannot see a citation or a hub, and a guide can lose its
+  own declared keywords to a book entry without anything failing (SA-17.1).
+  Where the fields should live for those layers is SA-5.1's open question — do
+  not invent a second location.
+- **A floor is not a value, and reachable is not ours.** `serp_top10_dr` records
+  the whole top ten, `serp_floor_traffic` what the lowest-DR result actually
+  earns there, `serp_top_share` how much the first result takes, and
+  `serp_audience` who the page serves, in prose. The same DR 9 floor was worth
+  194 visits a month on one term and 7 on another; a `winnable` page can be a
+  results page written for primary-school drama teachers. Read all four in the
+  one `serp-overview` call and record them together.
+
+**Verifying an SEO change** — one rule, so the cards stop restating it:
+
+- Site-level progress is `gsc-performance-history`: clicks and CTR, monthly. Not
+  average position, which degrades as a long-tail corpus succeeds.
+- Page- and query-level readings come from `gsc-pages` and `gsc-keywords` **from
+  2026-02-01**; a later start hid two thirds of the pages. Those tables are a
+  sample — about 2% of impressions — never the total.
+- Positions on the site's own vocabulary come from the Ahrefs Rank Tracker, which
+  needs no keyword-index volume; the list to load is
+  `docs/seo/rank-tracker-keywords.txt` (SA-18.1). Ahrefs' keyword index returns
+  nothing for most of what this site ranks for and is not a verification source.
 
 `npm run seo:audit` reads this metadata; `npm run seo:rendered` checks the built
 HTML and flags winnable guides that receive fewer internal links than the median
