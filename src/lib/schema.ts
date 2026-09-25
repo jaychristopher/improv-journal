@@ -333,6 +333,36 @@ export interface BridgeFrontmatter {
    * three of them in the top five, and the minimum cannot tell those apart.
    */
   serp_top10_dr?: number[];
+  /**
+   * What the reachable position is actually worth, and who the page is for.
+   *
+   * Everything above answers one question — could a site with no authority get
+   * in. Reading all nine SERP-floor guides on 2026-09-25 showed that is half of
+   * it, twice over.
+   *
+   * A DR 2 page at position ten on "21 questions game" earns 1,938 visits a
+   * month. A DR 9 page at position eight on "del close" earns 7. Same evidence,
+   * same promotion route, 277× apart, and `serp_min_dr` cannot tell them apart
+   * because it only records that a weak page is present. `serp_floor_traffic`
+   * is that number; `serp_top_share` is the fraction the first result takes,
+   * which predicts it — 95% on "del close" where Wikipedia answers the query,
+   * 41% on "theatre games" where nobody does.
+   *
+   * `serp_audience` is the other half, and it is prose rather than a taxonomy
+   * on purpose. "theatre games" is winnable at a floor of DR 9 and every result
+   * on it serves K-12 drama teachers; entering it means becoming a children's
+   * drama resource. A verdict that cannot say so is how a corpus drifts while
+   * every number still reads green. Record the format too where it decides the
+   * page — half of "how to be witty" is Reddit, Quora and YouTube, and against
+   * that the constraint is not domain rating at all.
+   *
+   * All three are read from the same `serp-overview` response as
+   * `serp_top10_dr`, so they cost nothing extra to collect. Absent means nobody
+   * has looked, as everywhere else here.
+   */
+  serp_floor_traffic?: number;
+  serp_top_share?: number;
+  serp_audience?: string;
 
   primary_problem?: string;
   primary_cta_type?: "thread" | "path" | "exercise" | "challenge";

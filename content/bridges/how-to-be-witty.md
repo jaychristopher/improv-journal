@@ -5,10 +5,13 @@ target_keywords:
   - { keyword: "how to be witty", volume: 600, difficulty: 0, traffic_potential: 600, parent: "how to be witty" }
   - { keyword: "how to be quick witted", volume: 100, parent: "how to be quick witted", difficulty: 0, traffic_potential: 80 }
   - { keyword: "how to be clever", volume: 50, parent: "how to be more clever", difficulty: 1, traffic_potential: 70 }
-serp_checked: "2026-08-23"
-serp_min_dr: 0
+serp_checked: "2026-09-25"
+serp_min_dr: 34
 serp_verdict: winnable
-serp_top10_dr: [95, 55, 36, 94, 99, 0, 92]
+serp_top10_dr: [95, 55, 34, 94, 99, 99]
+serp_floor_traffic: 68
+serp_top_share: 0.53
+serp_audience: "Social-skills advice, and mostly not articles - Reddit holds four slots plus a site-search block, Quora two, YouTube six. The best article result earns 201 visits. Format is the constraint here, not domain rating."
 entry_atoms: [obvious-choice, spontaneity, internal-computation, yes-and, commitment, latency-recovery]
 entry_path: systems-of-improv
 status: draft

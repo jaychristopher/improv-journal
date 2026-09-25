@@ -6,9 +6,13 @@ target_keywords:
   - { keyword: "get out of your head", volume: 3300, difficulty: 6, traffic_potential: 1400, parent: "get out of your head" }
   - { keyword: "how to get out of your head", volume: 1800, difficulty: 0, traffic_potential: 1000, parent: "how to get out of your head" }
   - { keyword: "overthinking", volume: 23000, difficulty: 49, traffic_potential: 3400, parent: "overthinking" }
-serp_checked: "2026-08-22"
+serp_checked: "2026-09-25"
 serp_min_dr: 1
 serp_verdict: winnable
+serp_top10_dr: [76, 95, 1, 92, 93, 48, 90]
+serp_floor_traffic: 1854
+serp_top_share: 0.61
+serp_audience: "Mental-health and anxiety advice - Healthline, Verywell, Washington Post wellness, therapy practices. Reddit takes four slots across r/selfimprovement and r/Mindfulness."
 entry_atoms:
   [cognitive-bandwidth, internal-computation, obvious-choice, be-present, fear-of-failure]
 entry_path: systems-of-improv

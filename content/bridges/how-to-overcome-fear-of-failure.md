@@ -4,10 +4,13 @@ description: "Fear of failure is really fear of irreversibility — the belief a
 target_keywords:
   - { keyword: "how to overcome fear of failure", volume: 700, difficulty: 6, traffic_potential: 700, parent: "how to deal with fear of failure" }
   - { keyword: "fear of failure", volume: 7800, parent: "fear of failure", difficulty: 27, traffic_potential: 2400 }
-serp_checked: "2026-08-23"
-serp_min_dr: 1
-serp_verdict: winnable
-serp_top10_dr: [95, 62, 86, 99, 70, 92, 83, 1]
+serp_checked: "2026-09-25"
+serp_min_dr: 61
+serp_verdict: authority
+serp_top10_dr: [61, 95, 86, 70, 92, 84, 62, 83]
+serp_floor_traffic: 323
+serp_top_share: 0.65
+serp_audience: "Clinical and career - Cleveland Clinic on atychiphobia takes the traffic, then a university self-care kit, BetterUp, Herzing, Ramsey Solutions. Nothing under DR 61 in the top ten."
 entry_atoms: [fear-of-failure, failing-forward, irreversibility, be-brave, commitment, be-thankful]
 entry_path: systems-of-improv
 status: draft

@@ -59,14 +59,23 @@ describe("guide cohorts", () => {
    * the median over guides that declare a number, which is 27,000 over 31,
    * because an absent Ahrefs figure is an absence and not a zero.
    */
-  it("records the verdicts and demand by cohort (2026-09-22: 13 and 4 authority)", async () => {
+  /*
+   * 2026-09-25: 18 authority guides became 19. SA-6.1/SA-20.1/SA-21.1 sent one
+   * reader to all nine guides promoted on a SERP floor under DR 6, and
+   * how-to-overcome-fear-of-failure came back gated: its top ten is now
+   * [61, 95, 86, 70, 92, 84, 62, 83], Cleveland Clinic on atychiphobia taking
+   * the traffic, and nothing under DR 61 anywhere on the page. The lone DR 1
+   * result its old verdict rested on is gone. The count moved because the
+   * evidence moved, which is the only reason it should.
+   */
+  it("records the verdicts and demand by cohort (2026-09-25: 14 and 4 authority)", async () => {
     const readings = cohortReadings(await loadBridges());
     const april = readings.find((r) => r.cohort === "2026-04")!;
     const august = readings.find((r) => r.cohort === "2026-08")!;
     expect({ guides: april.guides, authority: april.authority, winnable: april.winnable }).toEqual({
       guides: 40,
-      authority: 13,
-      winnable: 26,
+      authority: 14,
+      winnable: 25,
     });
     expect({
       guides: august.guides,
@@ -78,7 +87,7 @@ describe("guide cohorts", () => {
     expect(august.medianTrafficPotential).toBe(27000);
     expect(august.withTrafficPotential).toBe(31);
     // The whole site's 18, however the cohorts move.
-    expect(readings.reduce((n, r) => n + r.authority, 0)).toBe(18);
+    expect(readings.reduce((n, r) => n + r.authority, 0)).toBe(19);
   });
 
   /**
@@ -107,7 +116,7 @@ describe("guide cohorts", () => {
         fs.readFileSync(path.join("content", "bridges", `${b.slug}.md`), "utf-8"),
       ),
     );
-    expect(raw.length).toBe(18);
+    expect(raw.length).toBe(19);
     expect(bridges.filter((b) => isAuthority(b.frontmatter)).map((b) => b.slug)).toEqual(
       raw.map((b) => b.slug),
     );
@@ -203,7 +212,7 @@ describe("the rail on an authority guide leads with winnable siblings", () => {
     const bridges = await loadBridges();
     const verdictOf = new Map(bridges.map((b) => [b.slug, b.frontmatter.serp_verdict]));
     const authorityPages = bridges.filter((b) => isAuthority(b.frontmatter));
-    expect(authorityPages.length).toBe(18);
+    expect(authorityPages.length).toBe(19);
     const gatedFirst: string[] = [];
     let winnableFirst = 0;
     let uncheckedFirst = 0;

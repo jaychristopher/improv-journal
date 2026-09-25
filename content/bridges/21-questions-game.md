@@ -6,9 +6,13 @@ target_keywords:
   - { keyword: "20 questions game", volume: 12000, difficulty: 14, traffic_potential: 44000, parent: "21 questions" }
   - { keyword: "good 21 questions", volume: 150, difficulty: 6, traffic_potential: 43000, parent: "21 questions" }
   - { keyword: "21 questions list", volume: 100, difficulty: 6, traffic_potential: 43000, parent: "21 questions" }
-serp_checked: "2026-08-22"
+serp_checked: "2026-09-25"
 serp_min_dr: 2
 serp_verdict: winnable
+serp_top10_dr: [86, 63, 100, 89, 75, 97, 99, 2]
+serp_floor_traffic: 1938
+serp_top_share: 0.68
+serp_audience: "Flirty and dating question lists for teens and couples - Teen Vogue, Cosmopolitan, eHarmony, a Google Play app. People Also Ask asks how to play 21 questions flirty and what to ask him."
 entry_atoms: [trust, vulnerability, offers, safety-in-the-room, be-present]
 entry_path: improv-for-life
 primary_problem: "the conversation is fine and stops at the first polite opportunity every time"

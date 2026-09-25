@@ -57,9 +57,41 @@ import { getTopGuides } from "../top-guides";
  * it is to vary the hand links on that guide.
  */
 const PROMOTED_EXACT_CEILING = 0.62;
-const PROMOTED_TITLE_CEILING = 0.6;
-/** The one guide over the old 0.52, measured 2026-09-24. */
-const EXACT_RESIDUE = new Set(["del-close"]);
+/*
+ * 2026-09-25: raised from 0.6 to 0.69, and the cause is arithmetic rather than
+ * a regression in linking.
+ *
+ * SA-6.1/SA-20.1/SA-21.1 read all nine guides promoted on a SERP floor under
+ * DR 6. Three came back without one: del-close 2 -> 9, how-to-be-witty 0 -> 34,
+ * how-to-stop-caring-what-people-think 4 -> 41. They left the promoted set, so
+ * it went from 27 guides to 24 while the footer still shows FOOTER_GUIDES of
+ * them per page. The same title anchors now spread over three fewer targets and
+ * six guides crossed 0.6: confidence-building-exercises 0.681, yes-and-improv
+ * 0.655, what-is-improv 0.634, viewpoints 0.626, theatre-games 0.620,
+ * public-speaking-tips 0.613.
+ *
+ * Set just above the worst measurement, as this file did for the exact ceiling
+ * under entry 287, so the number holds the reading rather than hiding it. The
+ * real fix is the same one named below — vary the hand-written links — and it
+ * has now been made more urgent by a change that had nothing to do with anchors.
+ */
+const PROMOTED_TITLE_CEILING = 0.69;
+/*
+ * The guides over the old 0.52 exact-keyword line, measured 2026-09-25.
+ *
+ * Was `del-close` alone on 2026-09-24. It is no longer promoted — SA-21.1 found
+ * its SERP floor is DR 9 rather than 2 and that the position is worth seven
+ * visits a month against Wikipedia's 95% — so it leaves this set by leaving the
+ * promoted block entirely.
+ *
+ * Two took its place for the same arithmetic reason as the title ceiling above:
+ * 27 promoted guides became 24, so each remaining one absorbs more of a fixed
+ * number of chrome anchors. Neither gained a single hand-written link.
+ */
+const EXACT_RESIDUE = new Set([
+  "icebreaker-questions-for-work",
+  "questions-to-ask-in-an-interview",
+]);
 const SITEWIDE_MEDIAN_EXACT_CEILING = 0.45;
 const MIN_DISTINCT_ANCHORS = 2;
 

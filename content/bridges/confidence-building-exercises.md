@@ -7,9 +7,13 @@ target_keywords:
   - { keyword: "public speaking exercises", volume: 150, parent: "public speaking activities", difficulty: 1, traffic_potential: 350 }
   - { keyword: "confidence exercises", volume: 100, parent: "confidence building exercises", difficulty: 6, traffic_potential: 700 }
   - { keyword: "self confidence exercises", volume: 80, parent: "confidence building exercises", difficulty: 9, traffic_potential: 700 }
-serp_checked: "2026-08-22"
+serp_checked: "2026-09-25"
 serp_min_dr: 1
 serp_verdict: winnable
+serp_top10_dr: [86, 48, 95, 30, 1, 75, 71, 72]
+serp_floor_traffic: 53
+serp_top_share: 0.73
+serp_audience: "Therapy and self-esteem worksheets - TherapistAid takes 73% of the page, then Positive Psychology, a children's growth-mindset journal, a UK charity. Clinical self-esteem rather than performance confidence."
 entry_atoms: [be-brave, fear-of-failure, hesitation, status, performance-state, obvious-choice]
 entry_path: improv-for-life
 primary_problem: "you keep waiting to feel ready and the moment keeps passing"

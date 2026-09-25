@@ -7,9 +7,13 @@ target_keywords:
   - { keyword: "drama games", volume: 800, parent: "theater games", difficulty: 3, traffic_potential: 1000 }
   - { keyword: "theatre games for kids", volume: 300, parent: "theater games", difficulty: 4, traffic_potential: 2600 }
   - { keyword: "theater games for adults", volume: 20, parent: "acting games", difficulty: 1, traffic_potential: 450 }
-serp_checked: "2026-08-22"
-serp_min_dr: 5
+serp_checked: "2026-09-25"
+serp_min_dr: 9
 serp_verdict: winnable
+serp_top10_dr: [54, 95, 44, 54, 9, 60, 27, 99]
+serp_floor_traffic: 194
+serp_top_share: 0.41
+serp_audience: "K-12 drama education throughout - Drama Games for Kids, Easy Games for Drama Class, theatre games to play at home. People Also Ask asks about middle schoolers and classrooms. Entering this page means becoming a children's drama resource."
 subject:
   type: Thing
   name: "Theatre games"

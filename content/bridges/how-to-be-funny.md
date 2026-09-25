@@ -7,9 +7,13 @@ target_keywords:
   - { keyword: "how to be more funny", volume: 350, difficulty: 1, parent: "how to be funny", traffic_potential: 3500 }
   - { keyword: "how to be a funny person", volume: 70, difficulty: 0, traffic_potential: 3700, parent: "how to be funny" }
   - { keyword: "how to be naturally funny", volume: 50, difficulty: 2, parent: "how to be funny", traffic_potential: 3500 }
-serp_checked: "2026-08-22"
-serp_min_dr: 2
+serp_checked: "2026-09-25"
+serp_min_dr: 3
 serp_verdict: winnable
+serp_top10_dr: [95, 35, 3, 94, 50, 45, 99]
+serp_floor_traffic: 401
+serp_top_share: 0.58
+serp_audience: "Social-skills self-improvement plus stand-up craft. Reddit holds position 2 with three threads and a site-search block; about half the page is forum and video."
 entry_atoms: [obvious-choice, discovery, game-of-the-scene, be-honest, performing-cleverness, heightening, reincorporation, status, internal-computation, judgment, overcomplication]
 entry_path: systems-of-improv
 primary_problem: "trying to be clever is making the moment feel forced"

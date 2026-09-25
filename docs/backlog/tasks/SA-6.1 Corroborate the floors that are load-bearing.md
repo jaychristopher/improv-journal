@@ -7,7 +7,7 @@ parent: "[[SA-6 The number that decides what gets promoted rests on one unrecord
 status: To Do
 priority: High
 sequence: 1
-executable: mixed
+executable: human
 estimate: 90m
 labels: [seo, serp, evidence, promotion]
 impact: 3
@@ -143,4 +143,33 @@ Their silence means nothing and must not be read as failure.
 
 ## Outcome
 
-_Not started._
+**Steps 1, 2 and 4 done 2026-09-25. Step 3 needs the owner.**
+
+All nine floor-promoted guides were read in one pass with SA-20.1 and SA-21.1 —
+see [[SA-21.1 Record what the reachable position is worth]] for the full table.
+Six had no distribution; all nine have one now.
+
+**Step 2, what moved.** Three guides lost their floor and left the promoted set,
+taking it from 27 to 24: `del-close` (2 → 9), `how-to-be-witty` (0 → 34) and
+`how-to-stop-caring-what-people-think` (4 → 41). Nothing was added. No constant
+was touched — `PROMOTE_IF_FLOOR_UNDER` is still 6 and the set moved because the
+measurements did. `how-to-overcome-fear-of-failure`, whose lone DR 1 this card
+singled out, has no result under DR 61 in its top ten at all; its verdict is now
+`authority`. The corroboration rule this card was written about turns out to
+have been right about every page it doubted.
+
+**Step 4, the guard.** `src/lib/__tests__/serp-floor-evidence.test.ts` fails when
+a guide is promoted on a floor with no `serp_top10_dr` behind it, and again when
+the floor has no recorded traffic. The audit had been printing that warning for
+weeks and printing it stopped none of the four.
+
+**Step 3 is a decision this card cannot make.** The floor on `21-questions-game`
+is real, corroborated and by far the best on the site: a **DR 2** page holds
+position ten and earns **1,938 visits a month**, with 44,000 of traffic
+potential on the term. And the results page is Teen Vogue's "180 Fun & Flirty",
+Cosmopolitan's "140 Fun Things to Ask", eHarmony dating advice, and People Also
+Ask wanting to know how to play 21 questions flirty. The evidence says the site
+could win it. Whether a site about the mechanics of connection should chase a
+teen-dating question list is an editorial call about what this publication is,
+and it belongs to the owner. The reading is recorded in the file; the answer is
+not, and this card stays open until it is.

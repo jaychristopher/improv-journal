@@ -5,10 +5,13 @@ target_keywords:
   - { keyword: "del close", volume: 2000, difficulty: 4, traffic_potential: 1000, parent: "del close" }
   - { keyword: "truth in comedy", volume: 100, difficulty: 4, traffic_potential: 100, parent: "truth in comedy" }
   - { keyword: "harold improv", volume: 100, difficulty: 1, traffic_potential: 80, parent: "harold improv" }
-serp_checked: "2026-08-23"
-serp_min_dr: 2
+serp_checked: "2026-09-25"
+serp_min_dr: 9
 serp_verdict: winnable
-serp_top10_dr: [97, 75, 94, 66, 9, 99, 2, 95, 81]
+serp_top10_dr: [97, 75, 94, 65, 99, 9, 37, 95]
+serp_floor_traffic: 7
+serp_top_share: 0.95
+serp_audience: "Biographical and encyclopedic - Wikipedia takes 95% of the page, then IMDb, Second City's staff page, a museum event, a biopic trailer. The query is who was Del Close, not what he taught."
 subject:
   type: Person
   name: "Del Close"
