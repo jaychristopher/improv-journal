@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import type { ContentStatus } from "@/lib/schema";
-import { AUTHOR_NAME } from "@/lib/seo";
 
 /**
  * A visible byline and last-updated date.
@@ -91,20 +90,22 @@ export function UpdatedOn({
 
   return (
     <p className={className} data-track="byline">
-      By{" "}
-      <Link href="/about" rel="author" className="hover:underline">
-        {AUTHOR_NAME}
-      </Link>
+      {/* The visible "By Jay Christopher" was removed on 2026-09-24. The
+          author is still declared in the Article and Organization markup
+          (seo.ts, ArticleJsonLd) and in the feeds, which is where a machine
+          reads it; the line itself now carries only what a reader came to
+          it for — how current the page is, how long it takes, and how
+          finished it is. */}
       {date && formatted ? (
         <>
-          {" · Updated "}
+          {"Updated "}
           <time dateTime={date.slice(0, 10)}>{formatted}</time>
         </>
       ) : null}
-      {minutes ? ` · ${minutes} min read` : null}
+      {minutes ? `${date && formatted ? " · " : ""}${minutes} min read` : null}
       {status ? (
         <>
-          {" · "}
+          {date || minutes ? " · " : ""}
           <Link href="/about#status" className="hover:underline">
             <span data-status={status}>{status}</span>
           </Link>

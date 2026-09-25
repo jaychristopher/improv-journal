@@ -73,10 +73,24 @@ async function authoredUrls(): Promise<string[]> {
 }
 
 describe("visible byline", () => {
-  it.runIf(built)("appears on every authored page, with a link to /about", async () => {
-    const noAuthor: string[] = [];
+  /**
+   * The author's name was removed from the byline on 2026-09-24, at the
+   * owner's instruction, and this assertion is inverted rather than deleted
+   * so the reversal is recorded where the original reasoning lives.
+   *
+   * What the original found still stands and is now a known trade: the
+   * Article entities still name an author, give it an @id of /about#author
+   * and a url of /about, while no content page shows a reader any of it.
+   * That is the state this file was written to reject. It is deliberate
+   * now, and the schema is the thing to change if it should not be.
+   *
+   * The rest of the line is untouched and still guarded, because it is what
+   * a reader actually came to it for: how current the page is, how long it
+   * takes, and how finished it is.
+   */
+  it.runIf(built)("shows the date, and no longer the author", async () => {
+    const withAuthor: string[] = [];
     const noDate: string[] = [];
-    const noLink: string[] = [];
     let checked = 0;
 
     for (const url of await authoredUrls()) {
@@ -85,17 +99,15 @@ describe("visible byline", () => {
       checked++;
       const main = visibleMain(fs.readFileSync(file, "utf-8"));
 
-      if (!main.includes(AUTHOR_NAME)) noAuthor.push(url);
-      if (!/<time\b/.test(main)) noDate.push(url);
-      if (!main.includes('href="/about"')) noLink.push(url);
+      if (main.includes(AUTHOR_NAME)) withAuthor.push(url);
+      if (!main.includes("<time")) noDate.push(url);
     }
 
     // An unbuilt tree, or loaders returning nothing, would make this pass on
     // nothing. 171 atoms + 72 guides + 25 threads + 11 paths alone clear this.
     expect(checked).toBeGreaterThan(275);
-    expect(noAuthor).toEqual([]);
-    expect(noDate).toEqual([]);
-    expect(noLink).toEqual([]);
+    expect(withAuthor, "pages still printing the author's name").toEqual([]);
+    expect(noDate, "pages with no date in the byline").toEqual([]);
   });
 
   it.runIf(built)("shows the same author every Article entity names", async () => {
