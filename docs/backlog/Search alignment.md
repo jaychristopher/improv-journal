@@ -22,6 +22,7 @@ stories:
   - "[[SA-12 Three hundred episodes ship to a feed nothing points at]]"
   - "[[SA-13 The diagram library is finished and connected to nothing]]"
   - "[[SA-14 The query table is a half-percent sample and the backlog read it as the total]]"
+  - "[[SA-15 Every number in the corpus describes one market and nothing says which]]"
 ---
 
 # Search alignment
@@ -88,3 +89,5 @@ it costs a redirect and a reindex.
   diagrams, 16 route pages without one, and a text card for every social image.
 - [[SA-14 The query table is a half-percent sample and the backlog read it as the total]]
   — the evidence under six of these cards was 0.5% of the real number. Do it first.
+- [[SA-15 Every number in the corpus describes one market and nothing says which]]
+  — all 317 figures are US-only and undeclared; 56% of clicks are not.
