@@ -29,13 +29,20 @@ files:
 GSC, 2026-06-01 → 2026-09-20, project 9723388. Twelve pages have ever been
 surfaced. Three of them rank on page one, and **all three take 0 clicks**:
 
-| Page | Position | Impressions | Clicks |
-|---|---|---|---|
-| `/types-of-listening` | **6.9** | 15 | 0 |
-| `/practice/techniques/pattern-break` | 9.3 | 3 | 0 |
-| `/practice/vocabulary/justification` | 10.0 | 1 | 0 |
+| Page                                 | Position | Impressions | Clicks |
+| ------------------------------------ | -------- | ----------- | ------ |
+| `/types-of-listening`                | **6.9**  | 15          | 0      |
+| `/practice/techniques/pattern-break` | 9.3      | 3           | 0      |
+| `/practice/vocabulary/justification` | 10.0     | 1           | 0      |
 
 The other nine sit between 29 and 90, where zero clicks is expected.
+
+**Read the scope of that correctly.** These are the pages GSC names, and GSC
+names only the queries above its privacy threshold. Site-wide over the same
+window it reports 6,602 impressions and **33 clicks** — so the site does convert;
+these three identified pages are the ones that do not. The finding holds; the
+implication that the site earns nothing does not. See [[SA-14.1 Read the total,
+not the sample]].
 
 The first one is the case worth reading. Its query is:
 
@@ -48,8 +55,8 @@ want. The page's own snippet offers:
 > Three attention modes — broadcast, evaluative, receptive — the seven
 > conventional types mapped onto them…
 
-Different vocabulary. The searcher is looking for *agreeing / disagreeing /
-being with* and is shown *broadcast / evaluative / receptive*, so the result
+Different vocabulary. The searcher is looking for _agreeing / disagreeing /
+being with_ and is shown _broadcast / evaluative / receptive_, so the result
 does not read as their answer.
 
 **And the page does answer it.** `content/bridges/types-of-listening.md` uses
@@ -75,7 +82,7 @@ idea and readers have several, and nothing maps between them.
    `types-of-listening` so the snippet carries the reader's words as well as
    the site's. The body is not to be rewritten to chase the query — it already
    contains the terms, and the mapping between the two vocabularies is the
-   thing the page is *for*.
+   thing the page is _for_.
 2. **Add `aliases`** to `types-of-listening` for the phrasings the body already
    uses. Check the existing alias guard still passes — every alias must appear
    in the body, which is what keeps this honest.

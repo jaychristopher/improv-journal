@@ -21,6 +21,7 @@ stories:
   - "[[SA-11 The five school pages are unmeasured and two of them sit on the softest terms found]]"
   - "[[SA-12 Three hundred episodes ship to a feed nothing points at]]"
   - "[[SA-13 The diagram library is finished and connected to nothing]]"
+  - "[[SA-14 The query table is a half-percent sample and the backlog read it as the total]]"
 ---
 
 # Search alignment
@@ -85,3 +86,5 @@ it costs a redirect and a reindex.
   directory-ready podcasts with no directory.
 - [[SA-13 The diagram library is finished and connected to nothing]] — 250
   diagrams, 16 route pages without one, and a text card for every social image.
+- [[SA-14 The query table is a half-percent sample and the backlog read it as the total]]
+  — the evidence under six of these cards was 0.5% of the real number. Do it first.
