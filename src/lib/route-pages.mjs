@@ -72,7 +72,7 @@ const HUBS = [
     "Listening, conversation, conflict, connection.",
   ],
   ["/topics/teams", "Teams & Leadership guides", "Team building, trust, collaboration, feedback."],
-  ["/topics/improv-skills", "Improv Skills guides", "Fundamentals, practice, and getting unstuck."],
+  ["/topics/improv-skills", "Improv Craft guides", "Fundamentals, practice, and getting unstuck."],
   ["/how-it-works", "How Improv Works", "The laws and principles the whole system rests on."],
   [
     "/how-it-works/principles",

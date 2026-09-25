@@ -13,7 +13,7 @@ This file is generated from the site's content and its sitemap, so it lists ever
 - [Personal Growth guides](https://www.physicsofconnection.com/topics/personal-growth): Overthinking, confidence, creativity, fear, presence.
 - [Relationships & Communication guides](https://www.physicsofconnection.com/topics/communication): Listening, conversation, conflict, connection.
 - [Teams & Leadership guides](https://www.physicsofconnection.com/topics/teams): Team building, trust, collaboration, feedback.
-- [Improv Skills guides](https://www.physicsofconnection.com/topics/improv-skills): Fundamentals, practice, and getting unstuck.
+- [Improv Craft guides](https://www.physicsofconnection.com/topics/improv-skills): Fundamentals, practice, and getting unstuck.
 - [How Improv Works](https://www.physicsofconnection.com/how-it-works): The laws and principles the whole system rests on.
 - [The 9 Improv Principles](https://www.physicsofconnection.com/how-it-works/principles): The behavioural set, what each is for, and which to work on first.
 - [When It Breaks](https://www.physicsofconnection.com/how-it-works/diagnosis): Failure modes, what causes each, and how a scene recovers.

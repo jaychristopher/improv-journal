@@ -3,7 +3,7 @@ key: SA-9
 type: story
 summary: Three of the four topic clusters hold together about four times better than chance and Improv Skills holds together 1.4 times, and it is the one the homepage sends improv-intent readers into
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: Medium
 labels: [seo, structure, clusters, information-architecture]
 tasks:

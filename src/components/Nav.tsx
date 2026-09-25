@@ -86,7 +86,7 @@ const NAV_SECTIONS: NavSection[] = [
       { href: "/topics/communication", label: "Relationships & Communication" },
       { href: "/topics/teams", label: "Teams & Leadership" },
       { href: "/topics/personal-growth", label: "Personal Growth" },
-      { href: "/topics/improv-skills", label: "Improv Skills" },
+      { href: "/topics/improv-skills", label: "Improv Craft" },
     ],
   },
   /**

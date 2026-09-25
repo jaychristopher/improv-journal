@@ -38,6 +38,17 @@ const COHESION_RATIO = 1.5;
  * 290, "if adopted"); until then this records the reading and fails only if
  * the cluster becomes anti-cohesive (ratio under 1.0) or if a second cluster
  * slips under the bar, since one bucket is a known debt and two is a pattern.
+ *
+ * Measured again on 2026-09-25 (SA-9.1) against chance, pool of 80: the
+ * card's three-way split lands at 2.0×, 2.3× and 1.3× where the three
+ * neighbourhoods run 3.2× to 4.1×. An atom-led cut does clear it — a
+ * practice-room five at 5.3× (theatre-games, viola-spolin, viewpoints,
+ * improv-warm-up-games, improv-games-for-kids) and a rules four at 4.8×
+ * (what-is-improv, rules-of-improv, yes-and-improv, improv-theory) — but
+ * leaves six sharing nothing, and the fifteen parents are fifteen distinct
+ * heads, so the demand side cannot corroborate any of it. The hub was
+ * retitled "Improv Craft" and re-oriented along those seams; the cluster and
+ * this reading are unchanged.
  */
 const BUCKET = "improv-skills";
 const BUCKET_RATIO_FLOOR = 1.0;

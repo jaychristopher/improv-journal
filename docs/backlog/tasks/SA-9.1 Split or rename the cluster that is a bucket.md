@@ -4,7 +4,7 @@ type: task
 summary: Improv Skills' 15 guides cohere at 1.4x chance where the other three clusters manage 3.3x to 4.1x, and it is the homepage's door for improv intent and the home of most winnable guides
 epic: "[[Search alignment]]"
 parent: "[[SA-9 The cluster named for the subject is the one that is not a topic]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 1
 executable: mixed
@@ -19,8 +19,9 @@ blocked_by: []
 blocks: []
 files:
   - src/lib/guide-categories.ts
-  - src/lib/home-doors.ts
-  - src/lib/cluster-cohesion.ts
+  - src/components/Nav.tsx
+  - src/lib/route-pages.mjs
+  - src/lib/__tests__/cluster-cohesion.test.ts
 ---
 
 # SA-9.1 — Split or rename the cluster that is a bucket
@@ -130,4 +131,64 @@ groupings, offered as a starting hypothesis and not as the answer:
 
 ## Outcome
 
-_Not started._
+**Done 2026-09-25.** The hypothesis was tested and was the wrong cut; a
+better cut exists in the atoms and the demand side cannot corroborate it;
+so the hub was renamed and re-oriented along the seams the atoms show, and
+not split.
+
+**Step 1 — the hypothesis, recomputed, and the cut the atoms make.** Lift
+against chance, the card's own null — a pair's expected shared atoms is the
+product of their counts over the pool of 80 — on 2026-09-25:
+
+| Grouping                                                                          | n   | Observed | Expected | Lift      |
+| --------------------------------------------------------------------------------- | --- | -------- | -------- | --------- |
+| Improv Skills, whole                                                              | 15  | 0.72     | 0.50     | 1.45×     |
+| card: games and exercises                                                         | 5   | 0.90     | 0.45     | 2.00×     |
+| card: theory, history and vocabulary                                              | 7   | 1.00     | 0.43     | 2.33×     |
+| card: getting better                                                              | 3   | 1.00     | 0.76     | 1.31×     |
+| atoms: the room — theatre-games, viola-spolin, viewpoints, warm-up-games, kids    | 5   | 2.40     | 0.45     | **5.33×** |
+| atoms: the rules — what-is-improv, rules-of-improv, yes-and-improv, improv-theory | 4   | 2.17     | 0.45     | **4.81×** |
+| atoms: getting better — how-to-be-funny, how-to-get-better, improv-prompts        | 3   | 2.00     | 0.84     | 2.38×     |
+| the rest — del-close, 2-person-improv-games, framing-effect                       | 3   | 0.00     | 0.35     | 0.00×     |
+
+The card's grouping does not clear the 3× the other three clusters manage
+(3.2×, 3.9×, 4.1×). The atoms cut the fifteen differently and two of those
+cuts clear it easily: a practice room in the Spolin lineage — the body, the
+space, side-coaching, warm-ups, being present — at 5.3×, stronger than any
+existing cluster, and a rulebook built on yes-and, offers and blocking at
+4.8×. On the module's own inside/outside measure the room reads 1.89, level
+with the three neighbourhoods (1.8–2.0); the card's theory and better
+groups read 1.40 and 1.32. What the atoms also say is that six of the
+fifteen belong to neither seam: getting better and being funny go together
+at 2.4×, and Del Close, games for two and the framing effect share nothing
+with each other at all.
+
+**Step 2 — the demand side cannot help.** The fifteen carry fifteen distinct
+parents — fourteen are their own head term and improv-theory has none — so
+no grouping agrees with the parent topics and none disagrees. That is true
+of every cluster on the site, since a parent is a per-guide head: the parent
+field finds collisions, not neighbourhoods. By the card's own rule a split
+that agrees with the atoms alone is an editorial preference.
+
+**Step 3 — renamed and re-oriented, not split.** "Improv Skills" is now
+"Improv Craft": the H1, the title tag ("Improv Craft Guides"), the nav label
+and the route register. Not "Improv" alone, which would have given the hub
+the `/guides` page's own H1, "Improv Guides". The orientation's middle
+paragraph now sorts the fifteen by what the reader is trying to do, and the
+groups it names are the measured seams: know what it is (the four rules
+guides and the vocabulary they share), run a room tonight (the five and what
+they share), be better in the room (the pair, the prompts, and the three
+that stand alone). Slug, URL, `CRAFT_CLUSTER` and the cluster's membership
+are unchanged, so every guard on the cluster still reads the same numbers;
+`cluster-cohesion.test.ts` carries this reading beside its 2026-09-22 one.
+
+**Step 4 — why not split, with the numbers.** Two real seams cover nine
+guides and leave six that share nothing with each other — a second bucket,
+smaller, with a new URL, redirects, a nav entry and a home-door decision
+attached, for a grouping the demand side calls an editorial preference. The
+day a home exists for the six, the room and the rules are ready-made hubs;
+the reading above is where to start.
+
+**What moved.** One title, one paragraph, two labels. No URLs. Registers 24
+done, 17 open; the SA-9 story closes with its only task. `npm run check` green,
+281 files, 1,456 tests.

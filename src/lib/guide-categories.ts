@@ -143,13 +143,13 @@ export const GUIDE_CATEGORIES: GuideCategory[] = [
   },
   {
     slug: "improv-skills",
-    title: "Improv Skills",
+    title: "Improv Craft",
     description: "For improvisers — fundamentals, practice, and getting unstuck.",
     metaDescription:
       "For improvisers: fundamentals, practice, and getting unstuck — the craft itself, from first principles to diagnosing a scene that died.",
     orientation: [
       `This is the craft itself rather than its applications, and it is the part of the site with the most first-hand material behind it — sixty years of practice, five traditions that disagree with each other in useful ways, and a vocabulary precise enough to diagnose why a specific scene died.`,
-      `The guides split three ways. Some define the form and its parts, for readers who want to know what improv actually is before deciding anything. Some are collections you can run tonight — games, prompts, exercises — with the rules included rather than linked. And some are about the people and ideas the whole thing rests on, which is the layer most improv writing skips and the reason the rest is more than a list of tips.`,
+      `The guides split by what you are trying to do. If you want to know what improv actually is before deciding anything, start with what it is, the rules that get quoted at you, yes-and, and the theory behind them — four guides built on one vocabulary: yes-and, offers, blocking. If you want a room to run tonight, the practice room is five — theatre games, warm-up games, games for children, Spolin and Viewpoints — and they share the body, the space, side-coaching and being present. And if you are already in a room and want to be better in it, how to get better and how to be funny go together, the prompts are for practising on, and three stand on their own: Del Close and the Harold, games for two, and the framing effect.`,
       `If you are new, start with what improv is and the rules that get quoted at you, in that order — the second is considerably more useful once you know what it is describing.`,
     ],
     slugs: [
