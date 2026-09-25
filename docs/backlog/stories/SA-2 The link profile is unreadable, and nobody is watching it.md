@@ -3,7 +3,7 @@ key: SA-2
 type: story
 summary: Real citations and automated spam are accumulating together, and nothing separates them
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, backlinks, measurement]
 tasks:

@@ -9,6 +9,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+import { CITATIONS, CITATIONS_READ } from "../src/lib/citations.mjs";
 import { GSC_SURFACED_GUIDES, GSC_SURFACED_ON } from "../src/lib/gsc-surfaced.mjs";
 import { classifyKeywordParents } from "../src/lib/keyword-parents.mjs";
 
@@ -774,6 +775,89 @@ if (checkedDates.length) {
       (stale ? ` — ${stale} older than 90 days and worth re-checking` : ""),
   );
 }
+console.log();
+
+/**
+ * The link profile, split the one way that makes it readable (SA-2.1).
+ *
+ * `site-explorer-backlinks-stats`, `-referring-domains` and `-all-backlinks`,
+ * subdomains mode, read 2026-09-25, every dofollow anchor read and the two
+ * citing sites fetched. 603 live referring domains; 57 carry a dofollow link;
+ * 63 dofollow links between them. By anchor those 63 are three things: 5
+ * citations from 2 domains (`src/lib/citations.mjs`), 1 automated directory
+ * entry (ev6.net, an IPv6 site list, linking the audio host), and 57 links
+ * from 54 domains of one link-selling trade whose two anchor templates
+ * advertise backlinks *for* physicsofconnection.com — the site's name is
+ * their sample text, not their subject. Every one of the 57 points at the
+ * homepage; every citation points at a page. The 546 nofollow-only domains
+ * are the same trade at higher DR (fiverr-*.site, itxoft-*.site,
+ * seopxl-*.shop, rank*.shop): one anchor sits on 463 of them, and the first
+ * arrived 2026-04-14, two weeks after launch. Read anchors, not names — the
+ * five-letter .shop domains looked like a network of their own and were not.
+ *
+ * Counts come from the backlink table. The referring-domains endpoint's
+ * `dofollow_links` column runs at about twice the live rows (126 across the
+ * same 57 domains), and the anchors endpoint reports 92 links for an anchor
+ * with 44 live rows.
+ *
+ * Disavow: no, decided 2026-09-25. Google's own page says most sites should
+ * not use the tool, sets the bar at a likely manual action, and warns it can
+ * harm; nothing here carries this site's keywords, and the best month on
+ * record arrived with the spam. The SA-2.1 card has the reasoning and the two
+ * observations that reopen it.
+ *
+ * `history` is the whole domain, monthly (`refdomains-history`, subdomains
+ * mode). The www-only series is about a third of it, because the trade points
+ * at the bare apex, and it is the one the SA-2.1 card was written from.
+ * Refresh all of this together and move the date.
+ */
+const REFDOMAINS = {
+  read: "2026-09-25",
+  live: 603,
+  links: 1115,
+  dofollowDomains: 57,
+  dofollowLinks: 63,
+  directory: { domains: 1, links: 1 },
+  history: [
+    ["2026-04", 23],
+    ["2026-05", 46],
+    ["2026-06", 262],
+    ["2026-07", 415],
+    ["2026-08", 399],
+    ["2026-09", 606],
+  ],
+};
+const citationLinks = CITATIONS.reduce((n, c) => n + c.pages.length, 0);
+const trade = {
+  domains: REFDOMAINS.dofollowDomains - CITATIONS.length - REFDOMAINS.directory.domains,
+  links: REFDOMAINS.dofollowLinks - citationLinks - REFDOMAINS.directory.links,
+};
+console.log(
+  `Referring domains on ${REFDOMAINS.read}: ${REFDOMAINS.live} live (${REFDOMAINS.links.toLocaleString()} links), ` +
+    `${REFDOMAINS.dofollowDomains} with a dofollow link, ${CITATIONS.length} of those citations (read ${CITATIONS_READ}):`,
+);
+for (const c of CITATIONS) {
+  const links = `${c.pages.length} link${c.pages.length === 1 ? "" : "s"}`;
+  console.log(
+    `  ${c.domain.padEnd(20)} DR ${String(c.dr).padEnd(3)} ${links.padEnd(8)} ${c.pages.join(", ")}`,
+  );
+  console.log(`  ${"".padEnd(20)} ${c.what}`);
+}
+console.log(
+  `  The other ${trade.domains} dofollow domains (${trade.links} links) and the ` +
+    `${REFDOMAINS.live - REFDOMAINS.dofollowDomains} nofollow-only domains are one trade — pages selling ` +
+    "backlinks, with this site's name as their sample text. All of it points at the homepage.",
+);
+console.log(
+  `  Not disavowed, decided ${REFDOMAINS.read}; SA-2.1 has the reasons and what would reopen it.`,
+);
+console.log(
+  `  By month: ${REFDOMAINS.history.map(([m, n]) => `${m.slice(5)} ${n}`).join(", ")} — the rise is the trade, not outreach.`,
+);
+console.log(
+  "  A real link since? Pull referring domains with dofollow_links > 0 by first_seen desc. An anchor " +
+    "that names a page is one; an anchor that names the site is not. Record it in src/lib/citations.mjs and move the date.",
+);
 console.log();
 
 // Write JSON report

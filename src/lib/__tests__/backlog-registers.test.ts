@@ -119,8 +119,9 @@ describe("the backlog register", () => {
     expect(typed("epic")).toHaveLength(3);
     expect(typed("story")).toHaveLength(30);
     expect(tasks).toHaveLength(41);
-    expect(tasks.filter(isDone)).toHaveLength(16);
-    expect(openTasks).toHaveLength(25);
+    // 2026-09-25, working the queue in ROI order: SA-2.1 closed. 17 done, 24 open.
+    expect(tasks.filter(isDone)).toHaveLength(17);
+    expect(openTasks).toHaveLength(24);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.

@@ -79,6 +79,12 @@ and `parent`, plus `serp_checked`, `serp_min_dr` and `serp_verdict`.
   194 visits a month on one term and 7 on another; a `winnable` page can be a
   results page written for primary-school drama teachers. Read all four in the
   one `serp-overview` call and record them together.
+- **The link profile is two citations and a trade.** 603 referring domains on
+  2026-09-25, two of them chosen by anyone — `src/lib/citations.mjs` names them
+  and the pages they cite. The rest are pages selling backlinks that use this
+  site's name as sample text, dofollow and nofollow alike, and the count rises
+  on its own. Read anchors, not domain names: an advert names the site, a
+  citation names a page. Not disavowed; SA-2.1 has why.
 
 **Verifying an SEO change** — one rule, so the cards stop restating it:
 
