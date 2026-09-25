@@ -8,6 +8,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { createJiti } from "jiti";
 
 import { CITATIONS, CITATIONS_READ } from "../src/lib/citations.mjs";
 import {
@@ -755,6 +756,21 @@ if (settled.length > 0) {
   console.log(
     `  Best positions: ${best.map((a) => `${a.slug} ${a.position} on "${a.query}"`).join("; ")} — ` +
       "the reader typing those is exactly the reader.",
+  );
+
+  // Route pages have no frontmatter; their keywords and readings live in
+  // src/lib/route-keywords.ts, read here the way route-pages.mjs reads it.
+  // The five school pages were read on 2026-09-25 (SA-11.1): every one is a
+  // navigational or biographical results page, so the softest terms this
+  // audit had found were the theatres' own homepages.
+  const jiti = createJiti(import.meta.url, { alias: { "@": path.join(process.cwd(), "src") } });
+  const { ROUTE_SERP, ROUTE_KEYWORDS } = await jiti.import("@/lib/route-keywords");
+  const routeReadings = Object.entries(ROUTE_SERP);
+  const routeGated = routeReadings.filter(([, r]) => r.serp_verdict === "authority").length;
+  const routeOwned = routeReadings.filter(([, r]) => r.search_owner).length;
+  console.log(
+    `Route pages: ${Object.keys(ROUTE_KEYWORDS).length} register a keyword, ${routeReadings.length} have a results page read ` +
+      `(${routeGated} gated, ${routeOwned} owned by a guide) — the five schools, 2026-09-25. The other hubs are unread.`,
   );
   console.log();
 

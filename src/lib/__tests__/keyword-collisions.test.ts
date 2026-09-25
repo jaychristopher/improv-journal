@@ -16,7 +16,9 @@ const HUB_TITLE_SOURCES: Record<string, string> = {
   "/practice": "src/app/practice/page.tsx",
   "/improv-games": "src/app/improv-games/page.tsx",
   "/practice/exercises": "src/app/practice/exercises/page.tsx",
+  "/traditions/johnstone": "src/app/traditions/[tradition]/page.tsx",
   "/traditions/ucb": "src/app/traditions/[tradition]/page.tsx",
+  "/traditions/annoyance": "src/app/traditions/[tradition]/page.tsx",
   "/library": "src/app/library/page.tsx",
 };
 
@@ -24,8 +26,9 @@ const HUB_TITLE_SOURCES: Record<string, string> = {
 function hubTitles(route: string): string[] {
   const src = readFileSync(path.join(process.cwd(), HUB_TITLE_SOURCES[route]), "utf-8");
   const titles: string[] = [];
-  if (route === "/traditions/ucb") {
-    const label = src.match(/\bucb:\s*\{\s*label:\s*"([^"]+)"/)?.[1];
+  if (route.startsWith("/traditions/")) {
+    const key = route.split("/").pop();
+    const label = src.match(new RegExp(`\\b${key}:\\s*\\{\\s*label:\\s*"([^"]+)"`))?.[1];
     if (label) titles.push(label);
   } else {
     for (const m of src.matchAll(/pageTitle\("([^"]+)"\)/g)) titles.push(m[1]);

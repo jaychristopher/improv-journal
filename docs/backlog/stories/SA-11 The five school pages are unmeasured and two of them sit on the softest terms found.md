@@ -3,7 +3,7 @@ key: SA-11
 type: story
 summary: The traditions routes carry 468 inbound internal links and no search metadata, and io theater chicago at difficulty 1 and annoyance theatre at difficulty 0 are the softest terms twelve audit firings have turned up
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: Medium
 labels: [seo, entities, traditions, metadata]
 tasks:

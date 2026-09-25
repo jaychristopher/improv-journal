@@ -38,6 +38,12 @@ const GUIDES_SHOWN = 12;
 // Console had /traditions/close ranking for "del close improv" on a page that
 // is mostly navigation. The link hands that intent to the page written for it
 // rather than leaving the two to compete.
+//
+// Spolin is the same decision, made explicit (SA-11.1, 2026-09-25): the guide
+// owns "viola spolin" and this page is the school's, so it registers no
+// keyword and names the guide as `search_owner` in ROUTE_SERP
+// (route-keywords.ts). All five schools' results pages were read that day and
+// every one is the theatre's own site and Wikipedia; the reading is there.
 const TRADITION_INFO: Record<
   string,
   {

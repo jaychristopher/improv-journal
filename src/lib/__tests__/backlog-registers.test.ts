@@ -125,8 +125,9 @@ describe("the backlog register", () => {
     // SA-3.1 closed. 20 done, 21 open.
     // SA-5.1 closed. 21 done, 20 open.
     // SA-1.3 closed. 22 done, 19 open.
-    expect(tasks.filter(isDone)).toHaveLength(22);
-    expect(openTasks).toHaveLength(19);
+    // SA-11.1 closed. 23 done, 18 open.
+    expect(tasks.filter(isDone)).toHaveLength(23);
+    expect(openTasks).toHaveLength(18);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
