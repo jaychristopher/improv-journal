@@ -2,8 +2,15 @@
 title: "How to Think on Your Feet When You Are Put on the Spot"
 description: "Thinking on your feet is not fast thinking. It is starting to speak before you have the whole answer, and the difference is trainable."
 target_keywords:
-  - { keyword: "think on your feet", volume: 300 }
-  - { keyword: "how to think on your feet", volume: 300 }
+  - { keyword: "how to think on your feet", volume: 60, difficulty: 0, traffic_potential: 90, parent: "how to think on your feet" }
+  - { keyword: "think on your feet", volume: 250, difficulty: 0, traffic_potential: 50, parent: "think on your feet" }
+serp_checked: "2026-09-25"
+serp_min_dr: 3
+serp_verdict: winnable
+serp_top10_dr: [95, 19, 99, 53, 3, 93, 94, 38]
+serp_floor_traffic: 9
+serp_top_share: 0.40
+serp_audience: "Professionals caught off guard in a meeting - LinkedIn, MindTools, a memory-training site, CNN, Reddit at 2; DR 3 holds 7 on 9 visits, DR 38 holds 10 on 29. The bare phrase is a different page: the Think on Your Feet training brand at 1 and the Cambridge dictionary at 3. An AI Overview holds 1."
 entry_atoms: [obvious-choice, discovery, irreversibility, be-brave, cognitive-bandwidth, internal-computation]
 entry_path: improv-for-life
 primary_problem: "somebody asks what you think, everybody turns, and your mind produces nothing"
@@ -12,7 +19,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-25"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 # How to Think on Your Feet When You Are Put on the Spot

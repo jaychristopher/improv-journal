@@ -112,6 +112,12 @@ describe("parent topics", () => {
    * guide owns), 1 on a different guide, 44 claimed by no page at all. These
    * move when a guide is added or its keywords are re-pulled from Ahrefs. Move
    * them with the date, do not delete the reading.
+   *
+   * 2026-09-25: 150 distinct — 94, 10, 0, 46. SA-3.1 read the seven guides
+   * that had no parent recorded: +8 self, +4 on the declaring guide, +2 that
+   * no page claims ("improv games for two people", "team building
+   * improvisation"), and the one cross-guide edge gone, because "viola spolin
+   * games" moved to the guide that owns its parent.
    */
   it("sit in 1 of 4 places, and the corpus knows which", async () => {
     const classified = await parents();
@@ -121,7 +127,7 @@ describe("parent topics", () => {
       sameGuide: classified.sameGuide.length,
       otherGuide: classified.otherGuide.length,
       unclaimed: classified.unclaimed.length,
-    }).toEqual({ self: 86, sameGuide: 6, otherGuide: 1, unclaimed: 44 });
+    }).toEqual({ self: 94, sameGuide: 10, otherGuide: 0, unclaimed: 46 });
 
     // The 4 buckets are the whole population, so a parent the classifier
     // cannot place would show up as a gap here rather than being dropped.
@@ -146,10 +152,11 @@ describe("parent topics", () => {
   it("count the pages that are the head term, and that count may only rise", async () => {
     const classified = await parents();
 
-    expect(classified.self.length).toBeGreaterThanOrEqual(86);
+    // 86 on 2026-09-22, 94 on 2026-09-25 (SA-3.1).
+    expect(classified.self.length).toBeGreaterThanOrEqual(94);
     // Both halves of the owned reading, so a self-parent silently becoming a
     // second keyword on the same guide is visible instead of netting out.
-    expect(classified.self.length + classified.sameGuide.length).toBeGreaterThanOrEqual(92);
+    expect(classified.self.length + classified.sameGuide.length).toBeGreaterThanOrEqual(104);
   });
 
   /**
@@ -163,12 +170,15 @@ describe("parent topics", () => {
    * 1 edge is not a hierarchy, which is why no page carries a "part of" line.
    * This assertion is the signal for when that changes: the day the count
    * rises, a hierarchy has started to exist and is worth rendering.
+   *
+   * 2026-09-25: 0. That edge was the same keyword declared on the wrong
+   * guide, and SA-3.1 moved it to the guide that owns the parent. The
+   * classification above holds the population, so an empty list here is a
+   * reading and not a broken classifier.
    */
-  it("draw 1 edge between guides, and it is improv-theory under viola-spolin", async () => {
+  it("draw no edge between guides, now that the one there was has moved", async () => {
     const classified = await parents();
 
-    expect(classified.crossGuideEdges.map((e) => `${e.from} -> ${e.to}`)).toEqual([
-      "improv-theory -> viola-spolin",
-    ]);
+    expect(classified.crossGuideEdges.map((e) => `${e.from} -> ${e.to}`)).toEqual([]);
   });
 });

@@ -3,7 +3,7 @@ key: SA-3
 type: story
 summary: The unchecked guides are the site's core theme at its lowest difficulty, and the promotion machinery cannot see them
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: High
 labels: [seo, serp, coverage]
 tasks:

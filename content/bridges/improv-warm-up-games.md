@@ -2,8 +2,15 @@
 title: "Improv Warm-Up Games: The Order Matters More Than the Game"
 description: "A warm-up is a sequence, not a game you pick at random. Three stages that move a room from arrival to playing, with the games that do each job."
 target_keywords:
-  - { keyword: "improv warm up games", volume: 200 }
-  - { keyword: "improv warm ups", volume: 90 }
+  - { keyword: "improv warm up games", volume: 250, difficulty: 3, traffic_potential: 200, parent: "improv warm up games" }
+  - { keyword: "improv warm ups", volume: 80, difficulty: 2, traffic_potential: 200, parent: "improv warm up games" }
+serp_checked: "2026-09-25"
+serp_min_dr: 31
+serp_verdict: winnable
+serp_top10_dr: [31, 95, 53, 31, 99, 50, 52, 48]
+serp_floor_traffic: 201
+serp_top_share: 0.22
+serp_audience: "Improv companies' and schools' rehearsal warm-up lists, for someone running a class tonight - Sacramento Comedy Spot holds 1 on DR 31, then Reddit, improv.ca, learnimprov, improwiki, OnTheStage, Hoopla. A video block at 5."
 entry_atoms: [warm-up, presence, ensemble, safety-in-the-room, side-coaching, performance-state]
 entry_path: teaching-improv
 primary_problem: "you have a room of people who have just arrived from their day and twenty minutes to make them playable"
@@ -12,7 +19,7 @@ primary_cta_target: pass-the-clap
 secondary_cta_target: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-08-24"
+updated: "2026-09-25"
 ---
 
 # Improv Warm-Up Games: The Order Matters More Than the Game
@@ -76,6 +83,8 @@ The stages hold, but their weighting should change with who is in front of you.
 
 **A corporate or non-performer group.** Keep everything physical and rule-bound and be careful with anything that looks like being asked to be funny. The moment the task reads as *perform*, half the room decides they cannot win.
 
+**A room of children.** The stages hold, but every rule has to fit in one hand and nothing can single anyone out; what changes at each age is set out in [the games that work with children](/improv-games-for-kids).
+
 **A group about to go on stage.** This is a different job. You are not teaching, you are shifting state, so run games they already know well. A show warm-up is no place to introduce a rule.
 
 ## How Long, and How You Know It Worked
@@ -108,7 +117,7 @@ Stay in stage one longer and pick games that fail people constantly. Self-consci
 
 ### Can you warm up with only two or three people?
 
-Yes, but the circle games do not survive the shrink. Mirroring and Last Word Response work with two and are arguably better in a pair, since neither has anywhere to hide. Sound Ball works with three.
+Yes, but the circle games do not survive the shrink. Mirroring and Last Word Response work with two and are arguably better in a pair, since neither has anywhere to hide. Sound Ball works with three. If it is going to be two all evening, the [games built for a pair](/2-person-improv-games) are a better use of the time than shrinking the circle ones.
 
 ### Should the warm-up relate to what you are teaching?
 

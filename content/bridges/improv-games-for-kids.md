@@ -2,11 +2,18 @@
 title: "Improv Games for Kids: What Works at Each Age"
 description: "Most improv games fail with children because they were built for people who volunteered. Which games work at which age, and how to run them with thirty."
 target_keywords:
-  - { keyword: "improv games for kids", volume: 600 }
-  - { keyword: "improv games for teens", volume: 250 }
-  - { keyword: "improv games for students", volume: 200 }
-  - { keyword: "improv games for middle school", volume: 150 }
-  - { keyword: "improv games for high school", volume: 100 }
+  - { keyword: "improv games for kids", volume: 400, difficulty: 0, traffic_potential: 150, parent: "improv games for kids" }
+  - { keyword: "improv games for teens", volume: 250, difficulty: 0, traffic_potential: 10, parent: "improv games for high school" }
+  - { keyword: "improv games for students", volume: 200, difficulty: 1, traffic_potential: 200, parent: "improv games for students" }
+  - { keyword: "improv games for middle school", volume: 150, difficulty: 1, traffic_potential: 200, parent: "improv games for students" }
+  - { keyword: "improv games for high school", volume: 80, difficulty: 0, traffic_potential: 150, parent: "improv games for teens" }
+serp_checked: "2026-09-25"
+serp_min_dr: 24
+serp_verdict: winnable
+serp_top10_dr: [95, 30, 29, 31, 24, 62, 48, 99]
+serp_floor_traffic: 149
+serp_top_share: 0.14
+serp_audience: "Parents, camp leaders and children's drama teachers - a summer camp at 3, a kids' drama site at 4 and 5, a children's theatre PDF at 8, Reddit at 2 asking what to teach 8-13s. An AI Overview holds 1. Four results under DR 32 hold 3, 4, 5 and 7 on 99-291 visits."
 entry_atoms: [warm-up, side-coaching, obvious-choice, hesitation, ensemble, performing-cleverness]
 entry_path: teaching-improv
 primary_problem: "you have thirty children, forty minutes, and the last game you tried turned into shouting"
@@ -15,7 +22,7 @@ primary_cta_target: sound-ball
 secondary_cta_target: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 # Improv Games for Kids: What Works at Each Age

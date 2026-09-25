@@ -86,25 +86,29 @@ describe("sitemap priority", () => {
     expect(lifted).toEqual([]);
   });
 
-  it("puts a winnable guide with a large measured traffic potential above an unmeasured one", async () => {
+  it("puts a winnable guide with a large measured traffic potential above one the index cannot price", async () => {
     const { byPath, bridges } = await build();
     const measured = bridges.filter(
       (b) =>
         b.frontmatter.serp_verdict === "winnable" &&
         (b.frontmatter.target_keywords?.[0]?.traffic_potential ?? 0) >= 10_000,
     );
-    const unmeasured = bridges.filter(
+    const unpriced = bridges.filter(
       (b) =>
-        b.frontmatter.serp_verdict === undefined &&
+        b.frontmatter.serp_verdict === "winnable" &&
         b.frontmatter.target_keywords?.[0]?.traffic_potential === undefined,
     );
-    // Both populations exist today (entry 240 named public-speaking-tips and
-    // improv-theory); if either empties, the comparison has nothing to say and
-    // this should be rewritten rather than pass on nothing.
+    // Both populations exist today. Entry 240 named public-speaking-tips and
+    // improv-theory when improv-theory had no verdict at all; SA-3.1 read the
+    // last seven results pages on 2026-09-25, so no guide is unjudged now and
+    // the comparison is with a winnable guide whose primary term the keyword
+    // index returns no potential for — improv-theory, at 10 searches a month.
+    // If either empties, this has nothing to say and should be rewritten
+    // rather than pass on nothing.
     expect(measured.length).toBeGreaterThanOrEqual(1);
-    expect(unmeasured.length).toBeGreaterThanOrEqual(1);
+    expect(unpriced.length).toBeGreaterThanOrEqual(1);
     for (const b of measured) expect(priorityOf(byPath, `/${b.slug}`)).toBe(0.9);
-    for (const b of unmeasured) expect(priorityOf(byPath, `/${b.slug}`)).toBeLessThanOrEqual(0.6);
+    for (const b of unpriced) expect(priorityOf(byPath, `/${b.slug}`)).toBeLessThanOrEqual(0.8);
   });
 
   it("gives the 35 most-required atoms 0.7, and no other atom", async () => {

@@ -4,14 +4,19 @@ description: "Johnstone, Spolin, Close, UCB, and Annoyance built improv on diffe
 target_keywords:
   - { keyword: "improv theory", volume: 10 }
   - { keyword: "history of improv", volume: 50 }
-  - { keyword: "improv philosophy", volume: 170 }
   - { keyword: "keith johnstone improv", volume: 10 }
-  - { keyword: "viola spolin games", volume: 20, parent: "viola spolin theatre games" }
+serp_checked: "2026-09-25"
+serp_min_dr: 21
+serp_verdict: winnable
+serp_top10_dr: [97, 97, 85, 87, 21, 21, 82, 70]
+serp_floor_traffic: 508
+serp_top_share: 0.0
+serp_audience: "Wikipedia, Backstage and MasterClass hold 1-5; two DR 21 improv-school pages hold 6 and 7 (Pan Theater's rules page, 508 visits from other terms); jazz theory videos hold 10. Ten searches a month, below the keyword index's floor. Open at 6-7 and worth nothing measurable."
 entry_atoms: [yes-and, status, game-of-the-scene, ensemble, reality-construction, spontaneity]
 entry_path: reference-guide
 status: draft
 created: "2026-04-22"
-updated: "2026-08-27"
+updated: "2026-09-25"
 ---
 
 # Improv Theory: The Five Traditions That Shaped Modern Improvisation

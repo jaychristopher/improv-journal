@@ -2,8 +2,16 @@
 title: "Viola Spolin: The Woman Who Invented Theater Games"
 description: "Spolin built improv's teaching method before improv existed as a form — and she built it in social work, not theatre. What she actually invented, and why."
 target_keywords:
-  - { keyword: "viola spolin", volume: 800 }
-  - { keyword: "viola spolin theatre games", volume: 40 }
+  - { keyword: "viola spolin", volume: 700, difficulty: 42, traffic_potential: 300, parent: "viola spolin" }
+  - { keyword: "viola spolin theatre games", volume: 40, difficulty: 1, traffic_potential: 30, parent: "viola spolin theatre games" }
+  - { keyword: "viola spolin games", volume: 20, difficulty: 2, traffic_potential: 30, parent: "viola spolin theatre games" }
+serp_checked: "2026-09-25"
+serp_min_dr: 23
+serp_verdict: authority
+serp_top10_dr: [97, 35, 32, 75, 96, 85, 41, 23]
+serp_floor_traffic: 29
+serp_top_share: 0.58
+serp_audience: "A biographical query: Wikipedia, then the estate's own three sites (violaspolin.org DR 35 at 2, spolin.com at 5, spolingamesonline.org at 10), Second City, Amazon and Backstage on 1-9 visits. The sub-40 results are the family's, which no outsider outranks on her name. Kept for readers."
 subject:
   type: Person
   name: "Viola Spolin"
@@ -13,7 +21,7 @@ entry_atoms: [side-coaching, be-present, space-work, presence, environment, phys
 entry_path: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-09-24"
+updated: "2026-09-25"
 ---
 
 # Viola Spolin: The Woman Who Invented Theater Games

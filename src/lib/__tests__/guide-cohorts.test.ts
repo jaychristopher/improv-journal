@@ -68,26 +68,35 @@ describe("guide cohorts", () => {
    * result its old verdict rested on is gone. The count moved because the
    * evidence moved, which is the only reason it should.
    */
-  it("records the verdicts and demand by cohort (2026-09-25: 14 and 4 authority)", async () => {
+  /*
+   * 2026-09-25, later: 19 became 20, and every August figure moved at once,
+   * because SA-3.1 read the seven results pages nobody had — six of them
+   * August guides, one (improv-theory) from April. viola-spolin came back
+   * gated behind Wikipedia and the estate's own sites; the other six are
+   * open. The six August guides also gained a traffic potential, which is
+   * why the cohort's count with one rose from 31 to 37 and its median fell:
+   * the newly priced pages are small terms, 80 to 300.
+   */
+  it("records the verdicts and demand by cohort (2026-09-25: 14 and 5 authority)", async () => {
     const readings = cohortReadings(await loadBridges());
     const april = readings.find((r) => r.cohort === "2026-04")!;
     const august = readings.find((r) => r.cohort === "2026-08")!;
     expect({ guides: april.guides, authority: april.authority, winnable: april.winnable }).toEqual({
       guides: 40,
       authority: 14,
-      winnable: 25,
+      winnable: 26,
     });
     expect({
       guides: august.guides,
       authority: august.authority,
       winnable: august.winnable,
-    }).toEqual({ guides: 37, authority: 4, winnable: 27 });
+    }).toEqual({ guides: 37, authority: 5, winnable: 32 });
     expect(april.medianTrafficPotential).toBe(1300);
     expect(april.withTrafficPotential).toBe(39);
-    expect(august.medianTrafficPotential).toBe(27000);
-    expect(august.withTrafficPotential).toBe(31);
-    // The whole site's 18, however the cohorts move.
-    expect(readings.reduce((n, r) => n + r.authority, 0)).toBe(19);
+    expect(august.medianTrafficPotential).toBe(16000);
+    expect(august.withTrafficPotential).toBe(37);
+    // The whole site's 20, however the cohorts move.
+    expect(readings.reduce((n, r) => n + r.authority, 0)).toBe(20);
   });
 
   /**
@@ -116,7 +125,7 @@ describe("guide cohorts", () => {
         fs.readFileSync(path.join("content", "bridges", `${b.slug}.md`), "utf-8"),
       ),
     );
-    expect(raw.length).toBe(19);
+    expect(raw.length).toBe(20);
     expect(bridges.filter((b) => isAuthority(b.frontmatter)).map((b) => b.slug)).toEqual(
       raw.map((b) => b.slug),
     );
@@ -208,11 +217,11 @@ describe("the rail on an authority guide leads with winnable siblings", () => {
    * nobody has looked, so the count splits 17 winnable and 1 unchecked
    * (networking-tips → improv-team-building) on 2026-09-22.
    */
-  it("opens the computed slots on a guide that is not gated, on all 18", async () => {
+  it("opens the computed slots on a guide that is not gated, on all 20", async () => {
     const bridges = await loadBridges();
     const verdictOf = new Map(bridges.map((b) => [b.slug, b.frontmatter.serp_verdict]));
     const authorityPages = bridges.filter((b) => isAuthority(b.frontmatter));
-    expect(authorityPages.length).toBe(19);
+    expect(authorityPages.length).toBe(20);
     const gatedFirst: string[] = [];
     let winnableFirst = 0;
     let uncheckedFirst = 0;

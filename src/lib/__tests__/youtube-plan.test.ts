@@ -158,7 +158,10 @@ describe("youtube channel plan against the guides", () => {
    * explanation: 2 numbers, no way to prefer one, and the plan is scoring
    * production on its own.
    *
-   * 1 such pair exists on 2026-09-22 and is pinned below. `improv-theory` has
+   * 1 such pair existed on 2026-09-22 and was pinned below; on 2026-09-25
+   * SA-3.1 read improv-theory's results page, so the guide is the later read
+   * and the pair is explained. The plan's 50 is still the row above it. As
+   * it was: `improv-theory` had
    * no `serp_checked` at all (it is `status: draft` and has never been through
    * a SERP check), and the plan's L35 row says 50 for "improv theory" while
    * the plan's own Avoid Tier table says 10 for the same term — which is also
@@ -170,7 +173,7 @@ describe("youtube channel plan against the guides", () => {
     const videos = parsePlannedVideos(markdown());
     const owners = await guideKeywordOwners();
 
-    const KNOWN_UNEXPLAINED = ["improv theory"];
+    const KNOWN_UNEXPLAINED: string[] = [];
 
     const unexplained: string[] = [];
     for (const video of videos) {

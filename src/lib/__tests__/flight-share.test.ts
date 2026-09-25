@@ -108,7 +108,11 @@ const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> =
   // crosslink line (339) and the composed-from list's "also taught in" marks,
   // 74 of them across 20 lessons.
   lessons: { html: 111_900, flight: 61_200, share: 0.58 },
-  paths: { html: 115_500, flight: 63_400, share: 0.58 },
+  // flight 63,473 on 2026-09-25: two guides entered the promoted set on the
+  // SERP floors SA-3.1 recorded (2-person-improv-games, how-to-think-on-
+  // your-feet), and the footer's prop carries both on every page of every
+  // layer; paths were the layer nearest its ceiling. Same 3% margin.
+  paths: { html: 115_500, flight: 65_400, share: 0.58 },
   hubs: { html: 81_100, flight: 43_600, share: 0.57 },
 };
 

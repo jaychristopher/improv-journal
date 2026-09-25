@@ -2,8 +2,15 @@
 title: "2 Person Improv Games: What Two People Can Actually Do"
 description: "Most improv games quietly assume a circle of eight. These do not. What a pair can train alone, what they cannot, and how to run a session."
 target_keywords:
-  - { keyword: "2 person improv games", volume: 150 }
-  - { keyword: "two person improv games", volume: 150 }
+  - { keyword: "2 person improv games", volume: 40, difficulty: 0, traffic_potential: 80, parent: "improv games for two people" }
+  - { keyword: "two person improv games", volume: 40, difficulty: 1, traffic_potential: 60, parent: "2 person improv games" }
+serp_checked: "2026-09-25"
+serp_min_dr: 1
+serp_verdict: winnable
+serp_top10_dr: [1, 100, 85, 48, 52, 99, 49, 53]
+serp_floor_traffic: 73
+serp_top_share: 0.004
+serp_audience: "Two people who want a game to play now: a DR 1 personal blog holds 2 on 73 visits, and the rest are the general improv-games listicles that rank for everything - Backstage's 17,320 is that page's whole traffic, not this term's. An AI Overview holds 1."
 entry_atoms: [mirroring, last-word-response, one-word-scene, emotional-honesty-scene, gift-giving, interdependence]
 entry_path: self-coaching-toolkit
 primary_problem: "you have one person to practise with and every game you find needs a room full of people"
@@ -12,7 +19,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: self-coaching-toolkit
 status: draft
 created: "2026-08-25"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 # 2 Person Improv Games: What Two People Can Actually Do

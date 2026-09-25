@@ -2,10 +2,17 @@
 title: "Improv Team Building: What Actually Transfers to Work"
 description: "The claim is oversold and the useful part is real. What improv training genuinely changes about a team, what it does not, and why the away-day fails."
 target_keywords:
-  - { keyword: "improv team building", volume: 200 }
-  - { keyword: "improv for business", volume: 100 }
-  - { keyword: "improv exercises for team building", volume: 60 }
-  - { keyword: "improv training for business", volume: 50 }
+  - { keyword: "improv team building", volume: 70, difficulty: 0, traffic_potential: 150, parent: "team building improvisation" }
+  - { keyword: "improv for business", volume: 70, difficulty: 3, traffic_potential: 150, parent: "improv for business" }
+  - { keyword: "improv exercises for team building", volume: 60, difficulty: 0, traffic_potential: 200, parent: "improv team building" }
+  - { keyword: "improv training for business", volume: 40, difficulty: 2, traffic_potential: 150, parent: "improv for business" }
+serp_checked: "2026-09-25"
+serp_min_dr: 24
+serp_verdict: winnable
+serp_top10_dr: [36, 75, 100, 48, 48, 70, 45, 24]
+serp_floor_traffic: 5
+serp_top_share: 0.51
+serp_audience: "Half the page sells a workshop - DC Improv, improv.org, WIT and 3rd Space are theatres' corporate pages - and the rest are HR listicles (Wellhub, Confetti) for a manager planning an offsite. A DR 36 blog holds 1 on 109 visits. Booking intent; this guide has nothing to book."
 entry_atoms: [beyond-the-stage, safety-in-the-room, offers, status, reality-construction, be-supportive]
 entry_path: improv-for-teams
 primary_problem: "somebody has suggested booking an improv workshop and you cannot tell whether it is worth the afternoon"
@@ -14,7 +21,7 @@ primary_cta_target: yes-and-chain
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-25"
-updated: "2026-08-25"
+updated: "2026-09-25"
 ---
 
 # Improv Team Building: What Actually Transfers to Work
