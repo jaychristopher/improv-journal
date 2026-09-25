@@ -3,6 +3,8 @@ type: readme
 summary: How this backlog is structured and how a future run should execute it
 epics:
   - "[[Podcast finalization]]"
+  - "[[Entry-point context]]"
+  - "[[Search alignment]]"
 ---
 
 # Backlog

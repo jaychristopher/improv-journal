@@ -91,11 +91,16 @@ describe("the backlog register", () => {
     // Reading 2026-09-22: 2 epics, 9 stories, 18 tasks, 7 of them done. Exact on the
     // structure, because a card added or closed should be a deliberate edit and the
     // report's per-epic totals are read at the start of a session and trusted.
-    expect(typed("epic")).toHaveLength(2);
-    expect(typed("story")).toHaveLength(9);
-    expect(tasks).toHaveLength(18);
+    //
+    // 2026-09-25: 3 epics, 10 stories, 19 tasks. The Search alignment epic is a
+    // standing queue for the recurring SEO audit, so this count will move on a
+    // schedule rather than only when someone plans work — which is exactly why
+    // it stays exact. A card arriving unexplained should still fail here.
+    expect(typed("epic")).toHaveLength(3);
+    expect(typed("story")).toHaveLength(10);
+    expect(tasks).toHaveLength(19);
     expect(tasks.filter(isDone)).toHaveLength(7);
-    expect(openTasks).toHaveLength(11);
+    expect(openTasks).toHaveLength(12);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
