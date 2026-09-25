@@ -28,6 +28,7 @@ stories:
   - "[[SA-18 The site has no rank tracking and the one tool that would work is empty]]"
   - "[[SA-19 The library splits in two and only the long half has ever surfaced]]"
   - "[[SA-20 The verdict records whether we can rank and never whether we should]]"
+  - "[[SA-21 A reachable position is not a valuable one]]"
 ---
 
 # Search alignment
@@ -106,3 +107,5 @@ it costs a redirect and a reindex.
   a real split, an unproven cause, and a three-page test rather than a rewrite.
 - [[SA-20 The verdict records whether we can rank and never whether we should]] —
   theatre-games is promoted sitewide into a children's drama SERP.
+- [[SA-21 A reachable position is not a valuable one]] — the same floor evidence
+  is worth 194 visits on one term and 7 on another. Read the nine SERPs once.
