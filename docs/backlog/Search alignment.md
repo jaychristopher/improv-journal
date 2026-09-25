@@ -24,6 +24,7 @@ stories:
   - "[[SA-14 The query table is a half-percent sample and the backlog read it as the total]]"
   - "[[SA-15 Every number in the corpus describes one market and nothing says which]]"
   - "[[SA-16 The library returns four times its size and nobody has ever looked at it]]"
+  - "[[SA-17 A citation page is outranking the guide written for the topic]]"
 ---
 
 # Search alignment
@@ -94,3 +95,5 @@ it costs a redirect and a reindex.
   — all 317 figures are US-only and undeclared; 56% of clicks are not.
 - [[SA-16 The library returns four times its size and nobody has ever looked at it]]
   — 8% of the site, 33% of its impressions, and 32 finite pages.
+- [[SA-17 A citation page is outranking the guide written for the topic]] — all
+  fifteen Viewpoints queries go to the book entry. Settle it before SA-16.1.
