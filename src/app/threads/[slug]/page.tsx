@@ -25,7 +25,7 @@ import {
   loadAtoms,
   loadThreads,
 } from "@/lib/content";
-import { firstContentImage } from "@/lib/content-image";
+import { firstContentDiagram, firstContentImage } from "@/lib/content-image";
 import { guidesHandingOffTo, HANDING_OFF_GUIDES_CAP } from "@/lib/guide-concepts";
 import { hubCrumb, HUBS } from "@/lib/hubs";
 import { crosslinkFor, sharedConceptsFor } from "@/lib/lesson-crosslinks";
@@ -92,7 +92,11 @@ export async function generateMetadata({
       description: desc,
       url: `/threads/${slug}`,
       type: "article",
-      images: ogImages(thread.frontmatter.title, "Lesson"),
+      images: ogImages(
+        thread.frontmatter.title,
+        "Lesson",
+        firstContentDiagram(thread.content)?.alt,
+      ),
     },
   };
 }
@@ -210,6 +214,7 @@ export default async function ThreadPage({ params }: { params: Promise<{ slug: s
         concepts={atoms.map((a) => ({ name: a.title, url: a.url }))}
         partOfCourses={coursePaths.map((p) => `/paths/${p.frontmatter.id}`)}
         contentImage={firstContentImage(thread.content)}
+        cardSub={firstContentDiagram(thread.content)?.alt}
       />
       <Breadcrumb crumbs={crumbs} />
 

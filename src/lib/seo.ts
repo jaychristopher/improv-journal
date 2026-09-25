@@ -46,10 +46,18 @@ export function publisherRef() {
  * root-level opengraph-image, so every page that set one previewed with no
  * image at all. Pointing each block at the /og route restores a card, and
  * makes it specific to the page rather than a generic site banner.
+ *
+ * `sub` is the page's primary diagram described in a sentence — the alt the
+ * diagram already carries — and the card sets it under the title (SA-13.1,
+ * 2026-09-25). The picture itself is not on the card: the diagrams are
+ * text-bearing SVGs styled by the page's CSS classes, and the card renderer
+ * rasterises an SVG image without the page's stylesheet or its fonts, so the
+ * labels would not survive. The description is what the diagram says.
  */
-export function ogImages(title: string, eyebrow?: string) {
+export function ogImages(title: string, eyebrow?: string, sub?: string | null) {
   const params = new URLSearchParams({ title });
   if (eyebrow) params.set("eyebrow", eyebrow);
+  if (sub) params.set("sub", sub.slice(0, 200));
   return [{ url: `/og?${params.toString()}`, width: 1200, height: 630, alt: title }];
 }
 
@@ -66,8 +74,9 @@ export function articleImages(
   title: string,
   eyebrow?: string,
   contentImage?: string | null,
+  sub?: string | null,
 ): string | string[] {
-  const card = `${SITE_URL}${ogImages(title, eyebrow)[0].url}`;
+  const card = `${SITE_URL}${ogImages(title, eyebrow, sub)[0].url}`;
   if (!contentImage) return card;
   const absolute = /^https?:\/\//.test(contentImage) ? contentImage : `${SITE_URL}${contentImage}`;
   return [absolute, card];

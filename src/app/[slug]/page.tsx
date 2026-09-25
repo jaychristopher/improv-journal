@@ -36,7 +36,7 @@ import {
   loadAtoms,
   loadBridges,
 } from "@/lib/content";
-import { firstContentImage } from "@/lib/content-image";
+import { firstContentDiagram, firstContentImage } from "@/lib/content-image";
 import { getCategoryForGuide } from "@/lib/guide-categories";
 import { isAuthority } from "@/lib/guide-cohorts";
 import {
@@ -80,7 +80,7 @@ export async function generateMetadata({
       description: fm.description,
       url: `/${slug}`,
       type: "article",
-      images: ogImages(fm.title, "Guide"),
+      images: ogImages(fm.title, "Guide", firstContentDiagram(bridge.content)?.alt),
     },
   };
 }
@@ -499,6 +499,7 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           datePublished={fm.created}
           dateModified={fm.updated}
           contentImage={firstContentImage(bridge.content)}
+          cardSub={firstContentDiagram(bridge.content)?.alt}
         />
         <Breadcrumb
           crumbs={[

@@ -22,7 +22,7 @@ import {
   getInboundLinks,
   loadAtoms,
 } from "@/lib/content";
-import { firstContentImage } from "@/lib/content-image";
+import { firstContentDiagram, firstContentImage } from "@/lib/content-image";
 import { CITING_GUIDES_CAP, guidesCitingWork } from "@/lib/guide-sources";
 import { contentsFor } from "@/lib/headings";
 import { hubCrumb, HUBS } from "@/lib/hubs";
@@ -84,7 +84,7 @@ export async function generateMetadata({
       description: desc,
       url,
       type: "article",
-      images: ogImages(displayTitle, "Reading List"),
+      images: ogImages(displayTitle, "Reading List", firstContentDiagram(atom.content)?.alt),
     },
   };
 }
@@ -211,6 +211,7 @@ export default async function LibraryDetailPage({ params }: { params: Promise<{ 
         dateModified={fm.updated}
         eyebrow="Reading List"
         contentImage={firstContentImage(atom.content)}
+        cardSub={firstContentDiagram(atom.content)?.alt}
         mentions={atomMentions(fm, atomIndex)}
       />
       {fm.work && (

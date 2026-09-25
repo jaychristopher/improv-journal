@@ -90,6 +90,10 @@ describe("page furniture", () => {
    *   paths     8  Breadcrumb, UpdatedOn, @path-level, PathReadCount,
    *                @path-overlap, @path-start, SyllabusProgress,
    *                @path-leans-on
+   *   paths     9  the same plus RouteDiagram (2026-09-25, SA-13.1): the
+   *                path's own diagram after the header. Content the count
+   *                cannot tell from chrome, so it is named below and the
+   *                ceiling holds the reading rather than hiding it.
    *
    * A mount count: the number of distinct blocks the layer can put between a
    * reader and the first sentence. What one page shows is at or under it —
@@ -114,7 +118,7 @@ describe("page furniture", () => {
       concepts: 7,
       guides: 9,
       lessons: 8,
-      paths: 8,
+      paths: 9,
     };
     // The blocks the count is of must still be there. The breadcrumb and the
     // byline stand above the article on all 4 layers; the rest are named so
@@ -125,7 +129,7 @@ describe("page furniture", () => {
       concepts: ["Breadcrumb", "UpdatedOn", "LineageLine", "ContextBanner", "TableOfContents"],
       guides: ["Breadcrumb", "UpdatedOn", "@guide-lineage", "PromptGenerator"],
       lessons: ["Breadcrumb", "UpdatedOn", "LessonCrosslink", "@lesson-overview"],
-      paths: ["Breadcrumb", "UpdatedOn", "@path-start"],
+      paths: ["Breadcrumb", "UpdatedOn", "@path-start", "RouteDiagram"],
     };
     for (const layer of furniture) {
       for (const name of REQUIRED[layer.layer]) {

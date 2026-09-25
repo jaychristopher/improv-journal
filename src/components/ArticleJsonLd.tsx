@@ -28,6 +28,12 @@ interface ArticleJsonLdProps {
    */
   contentImage?: string | null;
   /**
+   * The description of the page's primary diagram, exactly as the page hands
+   * it to ogImages, so the card named here is the og:image and not a second
+   * one without the second line (SA-13.1).
+   */
+  cardSub?: string | null;
+  /**
    * The works this page cites, as the `@id`s their library pages declare.
    * See `atomCitations` in jsonld-edges.
    */
@@ -49,6 +55,7 @@ export function ArticleJsonLd({
   subject,
   subjectId,
   contentImage,
+  cardSub,
   citation,
   mentions,
 }: ArticleJsonLdProps) {
@@ -81,7 +88,7 @@ export function ArticleJsonLd({
      * body image lists it first and keeps the card second; Google reads the
      * array and picks. Pages without one are unchanged.
      */
-    image: articleImages(title, eyebrow, contentImage),
+    image: articleImages(title, eyebrow, contentImage, cardSub),
     // Naming the subject is what lets a result be matched to the entity rather
     // than to a page that mentions its name.
     ...(subject

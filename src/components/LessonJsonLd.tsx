@@ -29,6 +29,7 @@ export function LessonJsonLd({
   concepts,
   partOfCourses,
   contentImage,
+  cardSub,
 }: {
   title: string;
   description: string;
@@ -44,6 +45,8 @@ export function LessonJsonLd({
   partOfCourses?: string[];
   /** The lesson's first body image, site-relative; listed ahead of the card. */
   contentImage?: string | null;
+  /** See ArticleJsonLd: the same second line the page's og:image carries. */
+  cardSub?: string | null;
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -54,7 +57,7 @@ export function LessonJsonLd({
     // Same reasoning as ArticleJsonLd: these 25 are typed Article as well,
     // and were the other half of the site's Article markup with no image.
     // Nine of them carry a diagram, which goes first for the same reason.
-    image: articleImages(title, "Lesson", contentImage),
+    image: articleImages(title, "Lesson", contentImage, cardSub),
     description,
     url: `${SITE_URL}${url}`,
     learningResourceType: "Lesson",

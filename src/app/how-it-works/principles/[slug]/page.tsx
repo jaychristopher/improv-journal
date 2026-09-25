@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import { firstContentDiagram } from "@/lib/content-image";
 import { principleSequence } from "@/lib/principle-order";
 import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
@@ -54,7 +55,7 @@ export async function generateMetadata({
       description: desc,
       url,
       type: "article",
-      images: ogImages(displayTitle, "Principle"),
+      images: ogImages(displayTitle, "Principle", firstContentDiagram(atom.content)?.alt),
     },
   };
 }

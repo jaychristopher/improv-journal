@@ -112,7 +112,9 @@ const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> =
   // SERP floors SA-3.1 recorded (2-person-improv-games, how-to-think-on-
   // your-feet), and the footer's prop carries both on every page of every
   // layer; paths were the layer nearest its ceiling. Same 3% margin.
-  paths: { html: 115_500, flight: 65_400, share: 0.58 },
+  // html 115,806 and flight 65,682 on 2026-09-25: every path gained its
+  // diagram (SA-13.1), an inlined SVG in <main> that is in both. Same margin.
+  paths: { html: 119_000, flight: 67_700, share: 0.58 },
   hubs: { html: 81_100, flight: 43_600, share: 0.57 },
 };
 

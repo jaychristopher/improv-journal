@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import { firstContentDiagram } from "@/lib/content-image";
 import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 // Law + insight atoms live at /how-it-works/{slug}
@@ -41,7 +42,7 @@ export async function generateMetadata({
       description: desc,
       url,
       type: "article",
-      images: ogImages(displayTitle, "How It Works"),
+      images: ogImages(displayTitle, "How It Works", firstContentDiagram(atom.content)?.alt),
     },
   };
 }

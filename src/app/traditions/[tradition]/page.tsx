@@ -5,8 +5,10 @@ import { notFound } from "next/navigation";
 import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
+import { RouteDiagram } from "@/components/RouteDiagram";
 import { TraditionCurriculum } from "@/components/TraditionCurriculum";
 import { getAtomsForTradition, getAtomUrl, getTraditionNames, loadAtoms } from "@/lib/content";
+import { routeDiagram } from "@/lib/route-diagrams";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 import { curriculumFor } from "@/lib/tradition-curriculum";
 import {
@@ -168,7 +170,7 @@ export async function generateMetadata({
       description: info.meta,
       url: `/traditions/${tradition}`,
       type: "article",
-      images: ogImages(info.label, "Tradition"),
+      images: ogImages(info.label, "Tradition", routeDiagram(`/traditions/${tradition}`)?.alt),
     },
   };
 }
@@ -249,6 +251,7 @@ export default async function TraditionPage({
         description={info.meta}
         url={`/traditions/${tradition}`}
         eyebrow="Tradition"
+        cardSub={routeDiagram(`/traditions/${tradition}`)?.alt}
         subject={TRADITION_SUBJECTS[tradition]}
         // The school as its texts, machine-readably: the works by the `#work`
         // ids their library pages declare, the way a concept's Article cites them.
@@ -278,6 +281,7 @@ export default async function TraditionPage({
             key={paragraph.slice(0, 40)}
           />
         ))}
+        <RouteDiagram route={`/traditions/${tradition}`} />
         {info.guide && (
           <p className="mt-4 text-sm" data-track="tradition-guide" data-derived="true">
             <Link href={info.guide.href} className="underline">

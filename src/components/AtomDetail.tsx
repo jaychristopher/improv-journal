@@ -15,7 +15,7 @@ import {
   loadAtoms,
   loadSources,
 } from "@/lib/content";
-import { firstContentImage } from "@/lib/content-image";
+import { firstContentDiagram, firstContentImage } from "@/lib/content-image";
 import { drillsCountering } from "@/lib/counter-drills";
 import {
   CORE_ITEM_JOIN,
@@ -1016,6 +1016,7 @@ export async function AtomDetail({ atom, breadcrumbs, description, eyebrow }: At
         eyebrow={eyebrow}
         subject={fm.subject}
         contentImage={firstContentImage(atom.content)}
+        cardSub={firstContentDiagram(atom.content)?.alt}
         citation={atomCitations(fm, atomIndex)}
         mentions={atomMentions(fm, atomIndex)}
       />

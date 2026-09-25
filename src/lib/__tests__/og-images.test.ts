@@ -25,6 +25,18 @@ describe("ogImages", () => {
     expect(params.get("eyebrow")).toBe("Glossary");
   });
 
+  it("carries the primary diagram's description as a second line, and nothing when there is none", () => {
+    const alt = "Six stages of the Harold running top to bottom.";
+    const [image] = ogImages("iO and the Harold", "Tradition", alt);
+    const params = new URLSearchParams(image.url.split("?")[1]);
+    expect(params.get("sub")).toBe(alt);
+    const [bare] = ogImages("iO and the Harold", "Tradition", null);
+    expect(new URLSearchParams(bare.url.split("?")[1]).get("sub")).toBeNull();
+    // Long descriptions are cut to what the card can set.
+    const [long] = ogImages("x", undefined, "a".repeat(300));
+    expect(new URLSearchParams(long.url.split("?")[1]).get("sub")).toHaveLength(200);
+  });
+
   it("escapes titles containing url-significant characters", () => {
     const title = "Yes, And? 100% & counting / improv";
     const [image] = ogImages(title);

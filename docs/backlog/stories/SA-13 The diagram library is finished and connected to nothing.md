@@ -3,7 +3,7 @@ key: SA-13
 type: story
 summary: About 250 purpose-built diagrams render inline on the markdown layers and nowhere else — the 16 route pages have none, and every page's social image is a generated text card instead
 epic: "[[Search alignment]]"
-status: To Do
+status: Done
 priority: Low
 labels: [seo, diagrams, images, coverage]
 tasks:

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AtomDetail } from "@/components/AtomDetail";
 import { getAtomBySlug, getAtomDisplayTitle, getAtomUrl, loadAtoms } from "@/lib/content";
+import { firstContentDiagram } from "@/lib/content-image";
 import { atomPageDescription, conceptTitle, ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -38,7 +39,7 @@ export async function generateMetadata({
       description: desc,
       url,
       type: "article",
-      images: ogImages(displayTitle, "Format"),
+      images: ogImages(displayTitle, "Format", firstContentDiagram(atom.content)?.alt),
     },
   };
 }

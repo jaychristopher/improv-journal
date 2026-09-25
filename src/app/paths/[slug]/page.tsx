@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CourseJsonLd } from "@/components/CourseJsonLd";
+import { RouteDiagram } from "@/components/RouteDiagram";
 import {
   NextPathReadNote,
   PathReadCount,
@@ -37,6 +38,7 @@ import { getNextPath } from "@/lib/path-progression";
 import { pathSection } from "@/lib/path-sections";
 import { personaNoteForPath } from "@/lib/persona-journeys";
 import { readingMinutes } from "@/lib/reading-time";
+import { routeDiagram } from "@/lib/route-diagrams";
 import {
   extractDescription,
   metaDescription,
@@ -83,6 +85,7 @@ export async function generateMetadata({
       images: ogImages(
         qualifyIfSiteName(pathData.frontmatter.title, "Learning Path"),
         "Learning Path",
+        routeDiagram(`/paths/${slug}`)?.alt,
       ),
     },
   };
@@ -487,6 +490,8 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
             <p className="text-foreground/70 mt-2 text-sm">{fm.completion_outcome}</p>
           </section>
         </header>
+
+        <RouteDiagram route={`/paths/${slug}`} />
 
         <aside className="border-foreground/10 bg-foreground/[0.03] rounded-xl border p-6">
           {/* The third heading. It reads the same on all 11 paths, where the
