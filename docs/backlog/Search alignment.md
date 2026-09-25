@@ -13,6 +13,7 @@ stories:
   - "[[SA-3 The pages nobody measured are the ones on the actual subject]]"
   - "[[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]"
   - "[[SA-5 The SEO discipline covers the layer that does not rank]]"
+  - "[[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]"
 ---
 
 # Search alignment
@@ -61,3 +62,5 @@ it costs a redirect and a reindex.
   — the biggest internal-link lever has never read an outcome.
 - [[SA-5 The SEO discipline covers the layer that does not rank]] — the keyword
   and SERP fields exist only on bridges, and atoms are what Google surfaces.
+- [[SA-6 The number that decides what gets promoted rests on one unrecorded observation]]
+  — `serp_min_dr` gates promotion sitewide and two thirds of it is uncorroborated.

@@ -63,9 +63,15 @@ Ten of twelve surfaced pages, and two of the site's three page-one positions.
 **This has been noticed and not acted on.** `scripts/seo-audit.mjs` carries it
 in a comment — the surfaced pages "were atoms, library references and technique
 pages — which also hold the best positions on the site, 6 to 12, on terms with
-almost no volume." That comment is a year of evidence sitting next to a script
-that loads `bridges` and grades nothing else. The observation exists; the
-mechanism does not.
+almost no volume." The observation exists; the mechanism does not.
+
+Be precise about what the audit does and does not do, because it is easy to get
+wrong: it scores 319 pages, atoms included, via `scoreAtom`. What that grades is
+hygiene — title present and under 60 characters, body over 200 characters, tags,
+frontmatter links, status, dates, type. Every section that reads demand —
+keywords, traffic potential, difficulty, SERP verdict, parent topics, the
+reachability ranking — is bridges-only, because those fields exist only on
+`BridgeFrontmatter`. So atoms are counted, and atoms are never _measured_.
 
 **The collision test cannot run.** CLAUDE.md is unambiguous that `parent` is how
 overlap is detected — "two pages competing is not detectable from distinct
