@@ -11,6 +11,7 @@ stories:
   - "[[SA-1 The corpus speaks one vocabulary and readers use several]]"
   - "[[SA-2 The link profile is unreadable, and nobody is watching it]]"
   - "[[SA-3 The pages nobody measured are the ones on the actual subject]]"
+  - "[[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]"
 ---
 
 # Search alignment
@@ -29,13 +30,13 @@ was written for.
 Every task in this epic carries five numbers in its frontmatter. They exist so
 the queue can be ordered without an argument, not to be precise.
 
-| Field | Scale | Means |
-|---|---|---|
-| `impact` | 1–5 | How much *qualified* traffic this moves. 5 = converts demand the site already ranks for; 1 = speculative. |
-| `radius` | 1–5 | How much of the corpus it touches. 5 = every content file; 1 = one page. |
-| `opportunity` | 1–25 | `impact × radius`. |
-| `complexity` | 1–5 | Effort plus risk of getting it wrong. 5 = new content at scale or a decision that is hard to reverse; 1 = mechanical. |
-| `roi` | — | `opportunity ÷ complexity`, to one decimal. The queue order. |
+| Field         | Scale | Means                                                                                                                 |
+| ------------- | ----- | --------------------------------------------------------------------------------------------------------------------- |
+| `impact`      | 1–5   | How much _qualified_ traffic this moves. 5 = converts demand the site already ranks for; 1 = speculative.             |
+| `radius`      | 1–5   | How much of the corpus it touches. 5 = every content file; 1 = one page.                                              |
+| `opportunity` | 1–25  | `impact × radius`.                                                                                                    |
+| `complexity`  | 1–5   | Effort plus risk of getting it wrong. 5 = new content at scale or a decision that is hard to reverse; 1 = mechanical. |
+| `roi`         | —     | `opportunity ÷ complexity`, to one decimal. The queue order.                                                          |
 
 Two rules the scores are worthless without:
 
@@ -55,3 +56,5 @@ it costs a redirect and a reindex.
   number that would say whether outreach works rises on its own.
 - [[SA-3 The pages nobody measured are the ones on the actual subject]] — the
   unchecked guides are the core theme at the site's lowest difficulty.
+- [[SA-4 The pages that rank and the pages that get promoted are disjoint sets]]
+  — the biggest internal-link lever has never read an outcome.
