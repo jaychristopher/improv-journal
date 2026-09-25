@@ -557,6 +557,46 @@ const GSC_TOTALS = {
   /** Best month so far, for the trend line. */
   best: { month: "2026-08", clicks: 19, ctr: "1.53%" },
 };
+/**
+ * Read the page and query tables from here, always.
+ *
+ * Seventeen firings of the audit loop read them from 2026-06-01 and saw twelve
+ * pages. From 2026-02-01 the same endpoint returned 34 — nearly three times
+ * the evidence, from the same tool, for the sake of a start date. One reading
+ * built on the narrow window called atoms "the layer that is working"; on the
+ * full window they are the worst-returning layer on the site (SA-16.1).
+ */
+const GSC_WINDOW_FROM = "2026-02-01";
+
+/**
+ * Which layer earns, against how much of the site it is.
+ *
+ * `gsc-pages` from GSC_WINDOW_FROM to 2026-09-25: 34 pages surfaced, 159
+ * impressions, 83 distinct queries. Split by layer and set against the layer's
+ * share of the 386 built pages, the lift is the number this audit had never
+ * printed and most needed to: the library returns 3.9× its size — CLAUDE.md
+ * has said "they punch above their weight in search" since the architecture
+ * section was written, unquantified — and atoms return 0.4× theirs. The best
+ * single page by query diversity, ref-viewpoints-bogart-landau, carried 15
+ * queries and 22% of every impression the site had, and had not been named in
+ * any reading before this one.
+ *
+ * Refresh with the page-level reading above, from GSC_WINDOW_FROM, and move
+ * the date. `pages` is the layer's size in the build; `surfaced` is how many
+ * of them the table named.
+ */
+const GSC_LAYERS_READ = "2026-09-25";
+const GSC_LAYERS = [
+  { layer: "bridges", pages: 78, surfaced: 9, impressions: 60, keywords: 24 },
+  { layer: "library", pages: 32, surfaced: 7, impressions: 52, keywords: 29 },
+  { layer: "atoms", pages: 173, surfaced: 12, impressions: 32, keywords: 17 },
+  { layer: "hubs", pages: 22, surfaced: 2, impressions: 7, keywords: 6 },
+  { layer: "tools", pages: 12, surfaced: 2, impressions: 5, keywords: 5 },
+  { layer: "traditions", pages: 5, surfaced: 1, impressions: 2, keywords: 1 },
+  { layer: "paths", pages: 11, surfaced: 1, impressions: 1, keywords: 1 },
+];
+const BUILT_PAGES = 386;
+
 const GSC_SEEN = new Set([
   "what-is-improv",
   "rules-of-improv",
@@ -595,6 +635,33 @@ if (settled.length > 0) {
   console.log(
     `  The per-page list above is ${GSC_TOTALS.sampleImpressions} of those impressions — ` +
       `${share.toFixed(1)}%. It is a sample, not the total; judge progress on clicks and CTR.`,
+  );
+  console.log();
+
+  // Which layer earns, against its share of the site. Lift is the layer's
+  // share of impressions over its share of built pages: 1.0 means it returns
+  // exactly what its size predicts.
+  const totalImpr = GSC_LAYERS.reduce((n, l) => n + l.impressions, 0);
+  console.log(
+    `Surfaced by layer, ${GSC_WINDOW_FROM} → ${GSC_LAYERS_READ} (read from ${GSC_WINDOW_FROM}; ` +
+      `a narrower start hides two thirds of the pages):`,
+  );
+  console.log(
+    `  ${"layer".padEnd(11)}${"pages".padStart(6)}${"surfaced".padStart(10)}` +
+      `${"impr".padStart(6)}${"queries".padStart(9)}${"impr%".padStart(7)}${"site%".padStart(7)}${"lift".padStart(7)}`,
+  );
+  for (const l of [...GSC_LAYERS].sort((a, b) => b.impressions - a.impressions)) {
+    const imprShare = l.impressions / totalImpr;
+    const siteShare = l.pages / BUILT_PAGES;
+    console.log(
+      `  ${l.layer.padEnd(11)}${String(l.pages).padStart(6)}${String(l.surfaced).padStart(10)}` +
+        `${String(l.impressions).padStart(6)}${String(l.keywords).padStart(9)}` +
+        `${(imprShare * 100).toFixed(0).padStart(6)}%${(siteShare * 100).toFixed(0).padStart(6)}%` +
+        `${(imprShare / siteShare).toFixed(1).padStart(6)}x`,
+    );
+  }
+  console.log(
+    "  The library returns four times its size; atoms return under half of theirs. Back the layer that earns.",
   );
   console.log();
 }
