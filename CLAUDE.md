@@ -191,3 +191,8 @@ Vercel, with Cloudflare in front. Pushing to `main` triggers a production deploy
   means a concurrent `npm run dev` wrote a partial file. Delete that directory and
   rebuild; the source is fine.
 - Use `gh auth switch --user jaychristopher` before any `gh` command.
+- **Gate a commit on the exit code of `npm run check`, never on its output.**
+  The summary line reads `Test Files  1 failed | 283 passed (284)`, so a grep
+  for `passed` matches a red run. Four commits shipped on 2026-09-27 with two
+  guards failing behind exactly that grep. `npm run check && git commit …`
+  is the whole rule.
