@@ -34,7 +34,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Conversation Starters: 192 That Survive the Second Exchange
@@ -424,4 +424,4 @@ This is the part that would have fixed the conversation you are trying to fix.
 
 **Building from what they said.** `last-word-response` forces every reply to start from your partner's final words. Two minutes of it and you will notice how often your instinct is to change the subject.
 
-Where to go from here: [questions to get to know someone](/questions-to-get-to-know-someone) if you have just met, [questions to ask friends](/questions-to-ask-friends) for people you already know, [deep questions to ask](/deep-questions-to-ask) for the far end of it, and [how to make small talk](/how-to-make-small-talk) if the opening genuinely is the hard part.
+Where to go from here: [questions to get to know someone](/questions-to-get-to-know-someone) if you have just met, [questions to ask friends](/questions-to-ask-friends) for people you already know, [deep questions to ask](/deep-questions-to-ask) for the far end of it, and [how to make small talk](/how-to-make-small-talk) if the opening genuinely is the hard part. When a full question is more than the moment will bear, [this or that questions](/this-or-that-questions) ask for one word and still start something.

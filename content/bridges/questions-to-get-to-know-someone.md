@@ -35,7 +35,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # 189 Icebreaker Questions to Get to Know Someone
@@ -299,7 +299,7 @@ So a fun icebreaker is a narrower thing: **enjoyable to answer out of what you a
 
 The purest form of the principle this page runs on. A binary choice is the cheapest possible answer — one word, no composition, nothing to prepare — so it is the format that works when a room is coldest, or when somebody plainly does not want the floor.
 
-Two things make them work. **Ask why afterwards, not always.** The choice is the icebreaker; the reason is the conversation, and demanding a reason every time turns a quick round into an interview. **Pick pairs where the split is roughly even.** A this-or-that with an obvious answer is a quiz.
+Two things make them work. **Ask why afterwards, not always.** The choice is the icebreaker; the reason is the conversation, and demanding a reason every time turns a quick round into an interview. **Pick pairs where the split is roughly even.** A this-or-that with an obvious answer is a quiz. The pairs below are the icebreaker end of it; [300 this or that questions](/this-or-that-questions) is the full list, sorted by how warm the room needs to be.
 
 - Early start or late finish?
 - Text or call?

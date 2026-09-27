@@ -21,7 +21,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-09-25"
+updated: "2026-09-27"
 ---
 
 # 21 Questions Game: How to Play, and 181 to Ask
@@ -335,4 +335,4 @@ The skill this rewards is not asking. It is what you do with the answer while it
 
 `last-word-response` trains exactly that: each turn has to be built from the last thing the other person said, which makes pre-planning your next question impossible. Most people, doing it for the first time, discover how much of their listening had been drafting.
 
-For the questions without the game attached, [deep questions to ask](/deep-questions-to-ask) covers the back half of that sequence properly, and [questions to get to know someone](/questions-to-get-to-know-someone) the front. For versions that work on a whole room rather than two people, [party games](/party-games).
+For the questions without the game attached, [deep questions to ask](/deep-questions-to-ask) covers the back half of that sequence properly, and [questions to get to know someone](/questions-to-get-to-know-someone) the front. For versions that work on a whole room rather than two people, [party games](/party-games); the two that need no preparation at all are [this or that questions](/this-or-that-questions), one word each, and [most likely to questions](/most-likely-to-questions), where everybody points at once.

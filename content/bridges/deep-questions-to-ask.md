@@ -27,7 +27,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Deep Questions to Ask: 153 That Get an Honest Answer
@@ -351,6 +351,8 @@ The questions are the easy half. A deep answer is a small risk somebody has just
 **Never repeat it in company.** A single instance of something private resurfacing in front of other people undoes a great deal of accumulated evidence, and no apology afterwards puts it back.
 
 **Let the silence sit.** The pause after a hard answer is usually doing more work than anything you could put into it.
+
+**Go lighter afterwards.** After a real answer, a stretch of something answerable without disclosing anything keeps depth from turning into processing; [this or that questions](/this-or-that-questions) are the lightest there is.
 
 ## Practise the Following-Up Part
 

@@ -10,7 +10,7 @@ entry_atoms: [safety-in-the-room, trust, vulnerability, be-honest, be-supportive
 entry_path: physics-of-connection
 status: draft
 created: "2026-04-13"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Team Building Questions That Actually Build Trust
@@ -261,4 +261,4 @@ The questions aren't magic. The progression is. Each tier asks for a slightly hi
 
 *This article draws on the improv knowledge graph at [The Physics of Connection](/). To explore how trust, safety, and supportive response connect in a full system, start with the [Physics of Connection](/paths/physics-of-connection) path.*
 
-_For opening a meeting rather than deepening a team, and for the power gap that changes what a question means: [icebreaker questions for work](/icebreaker-questions-for-work)._
+_For opening a meeting rather than deepening a team, and for the power gap that changes what a question means: [icebreaker questions for work](/icebreaker-questions-for-work). For a meeting that has gone quiet, a fast round of [this or that questions](/this-or-that-questions) costs nobody anything._

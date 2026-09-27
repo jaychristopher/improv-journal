@@ -17,7 +17,7 @@ primary_cta_target: yes-and-chain
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Funny Questions to Ask: 100 That Make the Answer Funny
@@ -234,4 +234,4 @@ What does not work is explaining the question, defending it, or asking a second 
 
 **Accepting and adding.** `yes-and-chain` requires each person to accept the previous statement and build on it, with no reframes and no "yes, but". It is the mechanism behind a run of answers getting funnier rather than a sequence of unrelated jokes.
 
-For why any of this works: [how to be funny](/how-to-be-funny) is the theory underneath — funny is what happens when two people are honest and specific together, not something applied on top. For the non-comic versions: [conversation starters](/conversation-starters) and [questions to ask friends](/questions-to-ask-friends).
+For why any of this works: [how to be funny](/how-to-be-funny) is the theory underneath — funny is what happens when two people are honest and specific together, not something applied on top. For the non-comic versions: [conversation starters](/conversation-starters) and [questions to ask friends](/questions-to-ask-friends). For a group that wants a game rather than a list, [most likely to questions](/most-likely-to-questions) get the same laugh out of pointing, and [this or that questions](/this-or-that-questions) out of a one-word choice.

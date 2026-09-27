@@ -33,7 +33,7 @@ primary_cta_target: no-backspace-scene
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Would You Rather Questions: 164 That Split the Room
@@ -92,6 +92,8 @@ Four variants worth knowing, because they suit different rooms.
 **One person should be prepared to go second.** The first answer to any pair sets the tone — if it is thoughtful, the round is thoughtful; if it is a joke, the round is jokes. Neither is wrong, but somebody deciding that on purpose beats it happening by accident.
 
 If the room is too cold for anybody to defend a choice out loud, the game you want first is [this or that](/this-or-that-questions), which asks for a preference rather than an argument and costs nothing to answer.
+
+If it is warm enough that people will point at each other, [most likely to questions](/most-likely-to-questions) turn the same choice outward: the answer is about somebody else in the room, which is why it lands as a compliment or not at all.
 
 ## Good Would You Rather Questions
 
