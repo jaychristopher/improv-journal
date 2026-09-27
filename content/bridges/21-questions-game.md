@@ -168,7 +168,7 @@ Save these for the back half, and answer them yourself before asking the next on
 
 ## 21 Questions for Couples
 
-For two people already in it, where the game works as a check rather than an introduction.
+For two people already in it, where the game works as a check rather than an introduction. For the slower version of the same conversation, [questions for couples](/questions-for-couples) is the list built for two people who already know the answers to the easy ones.
 
 - What was the moment you knew?
 - What do you think I do not realise about you?

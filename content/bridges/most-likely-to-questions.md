@@ -16,7 +16,7 @@ primary_cta_target: gift-giving
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Most Likely To Questions: 182 That Land as a Compliment
@@ -142,7 +142,7 @@ Where the group knows each other well enough that the answers are obvious, which
 
 ## Most Likely To Questions for Couples
 
-Two people, so it becomes prediction rather than a vote — which makes it a decent test of how well you actually know each other.
+Two people, so it becomes prediction rather than a vote — which makes it a decent test of how well you actually know each other. If the predictions miss, [questions for couples](/questions-for-couples) is where the misses become the conversation.
 
 - Most likely to plan the holiday?
 - Most likely to forget an anniversary and recover well?

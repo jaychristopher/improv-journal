@@ -21,7 +21,7 @@ primary_cta_target: last-word-response
 secondary_cta_target: improv-for-life
 status: draft
 created: "2026-08-23"
-updated: "2026-08-24"
+updated: "2026-09-27"
 ---
 
 # Questions to Ask a Girl: Why the List Is Not the Problem
@@ -321,6 +321,6 @@ Everything above rests on one skill, and it is not asking. It is what you do wit
 
 If what you actually want is a longer list, take it from the pages built for it rather than from a gendered version of the same thing: [questions to get to know someone](/questions-to-get-to-know-someone) has 189 for a first meeting, [deep questions to ask](/deep-questions-to-ask) has 153 for later, and [the 21 questions game](/21-questions-game) gives you a structure so nobody has to choose what comes next.
 
-For the same thing without the dating frame: [questions to get to know someone](/questions-to-get-to-know-someone) for a first meeting, [deep questions to ask](/deep-questions-to-ask) for the escalation, and [conversation starters](/conversation-starters) for what to do at exchange two, which is where most conversations actually fail.
+For the same thing without the dating frame: [questions to get to know someone](/questions-to-get-to-know-someone) for a first meeting, [deep questions to ask](/deep-questions-to-ask) for the escalation, and [conversation starters](/conversation-starters) for what to do at exchange two, which is where most conversations actually fail. Once it is a relationship rather than a date, [questions for couples](/questions-for-couples) picks up where these stop.
 
 **Sources cited:** Aron et al. (1997), *Personality and Social Psychology Bulletin*.
