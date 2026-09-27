@@ -53,6 +53,7 @@ export function HomeHero({ children }: { children: ReactNode }) {
   return (
     <div className="mx-auto w-full max-w-5xl px-6 pt-6 lg:pt-10">
       <section
+        data-hero-panel
         aria-labelledby={HEADING_ID}
         data-track="home-hero"
         className="bg-hero text-hero-foreground rounded-2xl px-6 py-8 sm:px-10 sm:py-12"

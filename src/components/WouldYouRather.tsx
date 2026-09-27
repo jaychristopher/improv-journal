@@ -20,6 +20,7 @@ import {
 import { deal, WYR_SEEN_KEY } from "@/lib/would-you-rather-game";
 
 import { HeroTakeover } from "./HeroTakeover";
+import { ToolChoice, ToolQuiet } from "./ToolControls";
 import { WouldYouRatherMark } from "./WouldYouRatherMark";
 
 /**
@@ -34,8 +35,11 @@ import { WouldYouRatherMark } from "./WouldYouRatherMark";
  * So the tool asks two things and then deals: who is playing, which decides
  * the sets in play, and how many, which decides the variant the page
  * prescribes for that size. A pair is a card with two sides and no third
- * option, because the one rule is that you have to pick — and after a pick it
- * asks for the defence, which is the part the page says is the whole point.
+ * option, because the one rule is that you have to pick — and the pick is
+ * the whole tap: the next pair deals itself once the choice has shown for a
+ * moment. A "next" button after a pick was a second tap with no reason in
+ * it (2026-09-27); the defence the page asks for is in the standing rule
+ * above every pair instead, where it was read before, not after.
  *
  * Closed, it is a card with four buttons and it renders on the server, so the
  * html carries the way in. The dialog is client-only; nothing in it is a route.
@@ -44,6 +48,13 @@ import { WouldYouRatherMark } from "./WouldYouRatherMark";
 type Step = "size" | "pair";
 
 const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])';
+
+/**
+ * How long a picked side stays lit before the next pair deals. Long enough
+ * for the press to register as the choice it was, short enough that nobody
+ * reaches for a button that is not there.
+ */
+export const PICK_HOLD_MS = 250;
 
 /** Where it is mounted. Only the guide today; the prop keeps a tool page cheap. */
 type WouldYouRatherSurface = "guide-hero" | "tool-page";
@@ -59,12 +70,22 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
   const [store] = useState<SeenStore>(() => createSeenStore(browserStorage(), WYR_SEEN_KEY));
   const dialogRef = useRef<HTMLDivElement>(null);
   const openerRef = useRef<HTMLElement | null>(null);
+  const holdRef = useRef<number | null>(null);
   const headingId = useId();
 
   const close = useCallback(() => {
+    if (holdRef.current !== null) window.clearTimeout(holdRef.current);
+    holdRef.current = null;
     trackEvent("would_you_rather_closed", { surface, room, dealt });
     setOpen(false);
   }, [surface, room, dealt]);
+
+  useEffect(
+    () => () => {
+      if (holdRef.current !== null) window.clearTimeout(holdRef.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -145,8 +166,22 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
   }
 
   function pick(side: "left" | "right") {
+    // One pick a pair: a second tap during the hold is the first one again.
+    if (picked) return;
     setPicked(side);
     trackEvent("would_you_rather_picked", { room, pair_id: pair?.id ?? null, side });
+    const forRoom = room;
+    const count = dealt;
+    holdRef.current = window.setTimeout(() => {
+      holdRef.current = null;
+      if (forRoom) dealNext(forRoom, count);
+    }, PICK_HOLD_MS);
+  }
+
+  function skip() {
+    if (!room) return;
+    trackEvent("would_you_rather_skipped", { room, pair_id: pair?.id ?? null });
+    dealNext(room, dealt);
   }
 
   const info = room ? roomInfo(room) : undefined;
@@ -169,11 +204,11 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
           <div className="mt-6 lg:mt-0">
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {WOULD_YOU_RATHER_ROOMS.map((r) => (
-                <button
+                <ToolChoice
                   key={r.id}
-                  type="button"
+                  palette="hero"
                   onClick={(event) => chooseRoom(r.id, event)}
-                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                  className="p-3 sm:p-4"
                 >
                   <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
                     {r.label}
@@ -181,7 +216,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                   <span className="text-hero-muted mt-1 hidden text-xs leading-snug sm:block">
                     {r.note}
                   </span>
-                </button>
+                </ToolChoice>
               ))}
             </div>
             <p className="text-hero-subtle mt-5 text-xs">
@@ -206,13 +241,9 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                 {variant ? ` · ${variant.label}` : ""}
                 {dealt > 0 ? ` · pair ${dealt}` : ""}
               </p>
-              <button
-                type="button"
-                onClick={close}
-                className="text-foreground-dim hover:text-foreground shrink-0 text-sm underline underline-offset-4"
-              >
+              <ToolQuiet onClick={close} className="shrink-0 text-sm">
                 Close
-              </button>
+              </ToolQuiet>
             </div>
 
             {step === "size" && (
@@ -226,11 +257,11 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                   {GROUP_SIZES.map((size) => {
                     const v = variantFor(size.people);
                     return (
-                      <button
+                      <ToolChoice
                         key={size.people}
-                        type="button"
+                        palette="page"
                         onClick={() => chooseSize(size.people)}
-                        className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border p-4 text-left transition-colors"
+                        className="p-4"
                       >
                         <span className="text-foreground-strong block font-semibold">
                           {size.label}
@@ -238,7 +269,7 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                         <span className="text-foreground-dim mt-1 block text-xs leading-snug">
                           {v.label}: {v.how}
                         </span>
-                      </button>
+                      </ToolChoice>
                     );
                   })}
                 </div>
@@ -251,12 +282,13 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                     "it depends" a refusal dressed as thoughtfulness, and one
                     person doing it gives everybody else permission. */}
                 <p className="text-foreground-dim text-xs">
-                  You have to pick. Not both, not neither, not &ldquo;it depends&rdquo; — that is{" "}
+                  You have to pick, then say why — the choice is worthless on its own, the argument
+                  is the game. Not both, not neither, not &ldquo;it depends&rdquo; — that is{" "}
                   <Link href="/how-it-works/diagnosis/blocking" className="underline">
                     blocking
                   </Link>
                   , and the opposite is{" "}
-                  <Link href="/practice/vocabulary/commitment" className="underline">
+                  <Link href="/practice/techniques/commitment" className="underline">
                     commitment
                   </Link>
                   .
@@ -267,55 +299,37 @@ export function WouldYouRather({ surface }: { surface: WouldYouRatherSurface }) 
                     second sat a scroll away from the first on a phone. */}
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   {(["left", "right"] as const).map((side) => (
-                    <button
+                    <ToolChoice
                       key={side}
-                      type="button"
+                      palette="page"
                       onClick={() => pick(side)}
-                      aria-pressed={picked === side}
+                      selected={picked === side}
                       data-side={side}
-                      className={`flex min-h-[7rem] items-center justify-center rounded-xl border p-5 text-center text-lg leading-snug transition-colors sm:text-xl ${
-                        picked === side
-                          ? "border-foreground-strong bg-foreground/10 text-foreground-strong font-semibold"
-                          : picked
-                            ? "border-border-ui text-foreground-dim"
-                            : "border-border-ui hover:border-foreground-strong hover:bg-foreground/[0.07] text-foreground-strong"
+                      className={`flex min-h-[7rem] items-center justify-center p-5 text-center text-lg leading-snug sm:text-xl ${
+                        picked === side ? "font-semibold" : ""
                       }`}
                     >
                       {capitalise(side === "left" ? pair.left : pair.right)}
-                    </button>
+                    </ToolChoice>
                   ))}
                 </div>
 
-                {picked ? (
-                  // The defence is the game. The page: make somebody pick and
-                  // argue for it and you get the truth by accident.
-                  <p className="text-foreground/70 mt-4 text-sm">
-                    Now say why. The choice is worthless on its own — the argument is the game.
+                {dealt === 1 && (
+                  <p className="text-foreground-dim mt-4 text-sm">
+                    Whoever answers first sets the tone for the whole round, thoughtful or jokes.
+                    Worth deciding on purpose.
                   </p>
-                ) : (
-                  dealt === 1 && (
-                    <p className="text-foreground-dim mt-4 text-sm">
-                      Whoever answers first sets the tone for the whole round, thoughtful or jokes.
-                      Worth deciding on purpose.
-                    </p>
-                  )
                 )}
 
-                <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={() => room && dealNext(room, dealt)}
-                    className="bg-foreground text-background rounded-lg px-5 py-2.5 text-sm font-semibold"
-                  >
-                    Next pair
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setStep("size")}
-                    className="text-foreground-dim hover:text-foreground text-sm underline underline-offset-4"
-                  >
+                {/* The pick deals the next pair. What is left here is the way
+                    past a pair the room cannot use, and the way back. */}
+                <div className="mt-6 flex flex-wrap items-center gap-4">
+                  <ToolQuiet onClick={skip} className="text-sm">
+                    Skip this pair
+                  </ToolQuiet>
+                  <ToolQuiet onClick={() => setStep("size")} className="text-sm">
                     Change the room
-                  </button>
+                  </ToolQuiet>
                 </div>
 
                 {dealt >= SESSION_NUDGE_AT && (

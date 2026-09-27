@@ -16,6 +16,7 @@ import {
 import { browserStorage, createSeenStore, type SeenStore } from "@/lib/prompt-generator";
 
 import { HeroTakeover } from "./HeroTakeover";
+import { ToolChoice } from "./ToolControls";
 
 /**
  * The hero on /improv-games.
@@ -184,11 +185,11 @@ export function GamePicker({ pools }: { pools: GamePools }) {
           <div className="mt-6 lg:mt-0">
             <div className="grid gap-2 sm:gap-3">
               {GAME_JOBS.map((info) => (
-                <button
+                <ToolChoice
                   key={info.id}
-                  type="button"
+                  palette="hero"
                   onClick={(event) => chooseJob(info, event)}
-                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                  className="p-3 sm:p-4"
                 >
                   <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
                     {info.label}
@@ -196,7 +197,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                   <span className="text-hero-muted mt-1 hidden text-xs leading-snug sm:block">
                     {info.note}
                   </span>
-                </button>
+                </ToolChoice>
               ))}
             </div>
             {/* The hub used to open with a card for this; a footnote keeps the
@@ -244,11 +245,11 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                 </p>
                 <div className="mt-5 grid gap-2">
                   {GAME_JOBS.map((info) => (
-                    <button
+                    <ToolChoice
                       key={info.id}
-                      type="button"
+                      palette="page"
                       onClick={(event) => chooseJob(info, event)}
-                      className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] rounded-lg border p-4 text-left transition-colors"
+                      className="p-4"
                     >
                       <span className="text-foreground-strong block font-semibold">
                         {info.label}
@@ -256,7 +257,7 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                       <span className="text-foreground-dim mt-1 block text-xs leading-snug">
                         {info.note}
                       </span>
-                    </button>
+                    </ToolChoice>
                   ))}
                 </div>
               </div>
@@ -273,14 +274,14 @@ export function GamePicker({ pools }: { pools: GamePools }) {
                 </p>
                 <div className="mt-5 grid gap-2">
                   {SYMPTOMS.map((entry) => (
-                    <button
+                    <ToolChoice
                       key={entry.id}
-                      type="button"
+                      palette="page"
                       onClick={() => chooseSymptom(entry)}
-                      className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] text-foreground-strong rounded-lg border p-4 text-left font-semibold transition-colors"
+                      className="p-4 font-semibold"
                     >
                       {entry.label}
-                    </button>
+                    </ToolChoice>
                   ))}
                 </div>
                 <p className="text-foreground-dim mt-5 text-xs leading-relaxed">

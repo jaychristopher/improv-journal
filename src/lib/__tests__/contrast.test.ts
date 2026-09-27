@@ -105,6 +105,7 @@ describe("the palette's contrast", () => {
       "src/components/WouldYouRather.tsx",
       "src/components/TwentyOneQuestions.tsx",
       "src/components/PromptGenerator.tsx",
+      "src/components/ToolControls.tsx",
     ];
     const offenders: string[] = [];
     for (const file of files) {

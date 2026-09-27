@@ -55,6 +55,7 @@ export function HeroTakeover({
       className={takeover ? "w-full lg:mx-auto lg:max-w-5xl lg:px-6 lg:pt-10" : "my-6 w-full"}
     >
       <section
+        data-hero-panel
         aria-labelledby={labelledBy}
         aria-hidden={hidden}
         inert={hidden}

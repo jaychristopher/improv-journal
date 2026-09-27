@@ -32,6 +32,10 @@
    * 10% is a divider, which is a different job.
    */
   --border-ui: #7d7d7d;
+  /* The focus ring's colour. The strong foreground on a page; a hero panel
+     sets its own, because #111 on the #101014 panel is no ring at all
+     (ToolControls, 2026-09-27). */
+  --focus-ring: var(--foreground-strong);
 }
 
 :root.dark {
@@ -206,6 +210,13 @@ body {
   margin: 0.25rem 1.5rem 0.5rem 0;
 }
 
+/* Every hero panel carries data-hero-panel, so a control inside it — the
+   tools' choices, the homepage's start card and audience links — gets a
+   ring in the panel's own foreground, which is the same in both themes. */
+[data-hero-panel] {
+  --focus-ring: var(--hero-foreground);
+}
+
 /* The homepage's starting point sits inside the dark hero panel
    (2026-09-27, docs/homepage-principles.md). The slot inverts the page's
    tokens the way the floating nav does above, so the start card and the
@@ -372,7 +383,7 @@ body {
 }
 
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--foreground-strong);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
   border-radius: 2px;
 }

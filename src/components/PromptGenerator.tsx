@@ -26,6 +26,7 @@ import {
 } from "@/lib/prompt-generator";
 
 import { HeroTakeover } from "./HeroTakeover";
+import { ToolAction, ToolChoice } from "./ToolControls";
 
 /**
  * The hero on /improv-prompts.
@@ -422,37 +423,35 @@ export function PromptGenerator({
                 <div className="mt-8 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
                   {draw.pick ? (
                     <>
-                      <button
-                        type="button"
+                      <ToolAction
                         onClick={() => drawFrom(categoryInfo.id, useCaseInfo.id)}
-                        className="bg-foreground text-background hover:bg-foreground/90 min-h-14 flex-1 cursor-pointer rounded-xl px-5 text-base font-semibold transition-colors sm:flex-none sm:px-8"
+                        className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
                       >
                         Another one
-                      </button>
-                      <button
-                        type="button"
+                      </ToolAction>
+                      <ToolAction
+                        kind="secondary"
                         onClick={() => copyPrompt(draw.pick?.prompt.text ?? "")}
-                        className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
+                        className="min-h-12 px-5 text-sm font-medium"
                       >
                         {copied ? "Copied" : "Copy"}
-                      </button>
+                      </ToolAction>
                     </>
                   ) : (
-                    <button
-                      type="button"
+                    <ToolAction
                       onClick={() => drawFrom(categoryInfo.id, useCaseInfo.id, true)}
-                      className="bg-foreground text-background hover:bg-foreground/90 min-h-14 flex-1 cursor-pointer rounded-xl px-5 text-base font-semibold transition-colors sm:flex-none sm:px-8"
+                      className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
                     >
                       Start again
-                    </button>
+                    </ToolAction>
                   )}
-                  <button
-                    type="button"
+                  <ToolAction
+                    kind="secondary"
                     onClick={() => setStep("kind")}
-                    className="border-border-ui bg-foreground/[0.03] hover:border-foreground-strong hover:bg-foreground/[0.07] min-h-12 cursor-pointer rounded-xl border px-5 text-sm font-medium transition-colors"
+                    className="min-h-12 px-5 text-sm font-medium"
                   >
                     A different kind
-                  </button>
+                  </ToolAction>
                 </div>
               </div>
             )}
@@ -479,17 +478,12 @@ function RoomButton({
   const labelId = useId();
   const descId = useId();
   return (
-    <button
-      type="button"
+    <ToolChoice
+      palette={hero ? "hero" : "page"}
       onClick={(event) => onChoose(room, event)}
       aria-labelledby={labelId}
       aria-describedby={descId}
-      className={[
-        "group flex min-h-14 w-full cursor-pointer items-center justify-between gap-2 rounded-lg border px-3 py-3 text-left transition-colors sm:gap-3 sm:px-4",
-        hero
-          ? "border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15"
-          : "border-border-ui bg-background hover:border-foreground-strong",
-      ].join(" ")}
+      className="group flex min-h-14 w-full items-center justify-between gap-2 px-3 py-3 sm:gap-3 sm:px-4"
     >
       <span className="min-w-0">
         <span
@@ -520,7 +514,7 @@ function RoomButton({
       >
         &rarr;
       </span>
-    </button>
+    </ToolChoice>
   );
 }
 
@@ -536,12 +530,12 @@ function KindButton({
   const labelId = useId();
   const descId = useId();
   return (
-    <button
-      type="button"
+    <ToolChoice
+      palette="page"
       onClick={() => onChoose(kind)}
       aria-labelledby={labelId}
       aria-describedby={descId}
-      className="group border-border-ui bg-surface hover:border-foreground-strong flex min-h-14 w-full cursor-pointer items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition-colors"
+      className="group flex min-h-14 w-full items-center justify-between gap-3 px-4 py-3"
     >
       <span className="min-w-0">
         <span id={labelId} className="text-foreground-strong block text-base font-semibold">
@@ -554,6 +548,6 @@ function KindButton({
       <span className="text-foreground-dim shrink-0 transition-transform group-hover:translate-x-1">
         &rarr;
       </span>
-    </button>
+    </ToolChoice>
   );
 }

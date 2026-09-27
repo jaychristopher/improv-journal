@@ -18,6 +18,7 @@ import {
 import { deal, TOQ_SEEN_KEY } from "@/lib/twenty-one-questions-game";
 
 import { HeroTakeover } from "./HeroTakeover";
+import { ToolAction, ToolChoice } from "./ToolControls";
 import { TwentyOneQuestionsMark } from "./TwentyOneQuestionsMark";
 
 /**
@@ -215,11 +216,11 @@ export function TwentyOneQuestions({
           <div className="mt-6 lg:mt-0">
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {TWENTY_ONE_ROOMS.map((r) => (
-                <button
+                <ToolChoice
                   key={r.id}
-                  type="button"
+                  palette="hero"
                   onClick={(event) => chooseRoom(r.id, event)}
-                  className="border-hero-foreground/40 bg-hero-foreground/[0.08] hover:border-hero-foreground/70 hover:bg-hero-foreground/15 rounded-xl border p-3 text-left transition-colors sm:p-4"
+                  className="p-3 sm:p-4"
                 >
                   <span className="text-hero-foreground block text-sm font-semibold sm:text-base">
                     {r.label}
@@ -227,7 +228,7 @@ export function TwentyOneQuestions({
                   <span className="text-hero-muted mt-1 hidden text-xs leading-snug sm:block">
                     {r.note}
                   </span>
-                </button>
+                </ToolChoice>
               ))}
             </div>
             <p className="text-hero-subtle mt-5 text-xs">
@@ -317,25 +318,17 @@ export function TwentyOneQuestions({
                 )}
 
                 <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={advance}
-                    className="bg-foreground text-background rounded-lg px-5 py-2.5 text-sm font-semibold"
-                  >
+                  <ToolAction onClick={advance} className="px-5 py-2.5 text-sm">
                     {position >= TOTAL ? "Finish" : "Next question"}
-                  </button>
-                  <button
-                    type="button"
+                  </ToolAction>
+                  <ToolChoice
+                    palette="page"
                     onClick={note}
-                    aria-pressed={isNoted}
-                    className={`rounded-lg border px-4 py-2.5 text-sm transition-colors ${
-                      isNoted
-                        ? "border-foreground-strong bg-foreground/10 text-foreground-strong"
-                        : "border-border-ui text-foreground hover:border-foreground-strong"
-                    }`}
+                    selected={isNoted}
+                    className="px-4 py-2.5 text-sm"
                   >
                     {isNoted ? "Noted — come back to this" : "Note this one"}
-                  </button>
+                  </ToolChoice>
                 </div>
 
                 {/* One pass each, and its use is itself informative. The
