@@ -80,11 +80,23 @@ tail put together; design the page for those and remove the rest.
 
 *The conflict.* Nielsen and Krug treat the homepage as the front door and give
 it jobs; Spool treats it as the least important page and gives it one job, a
-good table of contents. *The resolution here.* The measurement settles it:
-nobody arrives at this homepage from search, so Spool's reader is the only
-reader. But that reader still asks Krug's four questions on arrival, so the
-front-door jobs survive in the smallest form Nielsen allows — a tagline, one
-starting point, the site's structure as links with scent.
+good table of contents. *The resolution here, as first written.* The
+measurement settles it: nobody arrives at this homepage from search, so
+Spool's reader is the only reader. But that reader still asks Krug's four
+questions on arrival, so the front-door jobs survive in the smallest form
+Nielsen allows — a tagline, one starting point, the site's structure as
+links with scent.
+
+*Corrected the same afternoon, from the PostHog record (section 6).* The
+absence of searchers was read as "they come from inside the site", and that
+was wrong: 84% of the homepage's views are the first page of the visit and
+89% arrive with no referrer. They come from a shared link. Nobody searches
+for this homepage and nobody browses to it either; it is the front door for
+a cold arrival, which is Krug's case entirely, and the median arrival never
+scrolls. The ruling stands — tagline, one starting point, structure as
+links — with one addition: the first screen has to answer "why should I be
+here" as well as "what is this", because for most readers the first
+screen is the page.
 
 ### 2.2 Audience-based navigation
 
@@ -295,6 +307,37 @@ Measured after: the phone's opening argument starts at screen 1.12 (was
 0.83. Live on production, the deploy of the morning's change measured
 identically to the local build on every row of the table in 4.1.
 
+## 4.3 Round three, 2026-09-27, afternoon — from the record
+
+Read section 6 first; these are its consequences.
+
+- **The hook is the hero's.** "What makes some conversations magic and
+  others fall flat? There are real reasons, and they are learnable…" opened
+  the column under the hero, where the median visit never reaches. It is
+  the third line of the hero now, and the column opens on the finder.
+- **Day 1 is the card's first link, and a phone gets both links.** Since
+  June the day-1 preview was clicked 13 times to the programme button's 2;
+  round 1 had hidden the preview below 640px. The lesson is the first,
+  filled button ("Start with day 1 — Building on Offers…"); the programme
+  is the outlined second ("See the whole 7-day program").
+- **Nothing else moved.** The doors' removal is confirmed by their record;
+  the finder stays the column's first block; the continue card is watched,
+  not changed.
+
+Measured after:
+
+| | Desktop 1280×800 | Phone 390×780 |
+|---|---|---|
+| Document height | 3,655 px, 4.6 screens | 6,005 px, 7.7 screens |
+| First thing under the hero | the finder, at screen 0.83 | the finder, at screen 1.37 |
+| Topic directory starts | screen 1.51 | screen 2.51 |
+| Level list starts | screen 1.95 | screen 3.19 |
+
+The phone's first screen holds the name, the tagline, the hook, the
+programme's title and rationale, and both links; the two audience lines
+are the first thing under the fold. The desktop's first screen holds all of
+that plus the finder's heading and its first two symptoms.
+
 ## 5. How to verify
 
 - **Shape:** `homepage-principles.test.ts` (source and built), `home-hero-component.test.tsx`, `homepage-journey-slot.test.ts`, `body-click-depth.test.ts`.
@@ -317,27 +360,48 @@ identically to the local build on every row of the table in 4.1.
 - Luke Wroblewski, [Obvious Always Wins](https://www.lukew.com/ff/entry.asp?1945).
 - Baymard Institute, [10 UX Requirements for Homepage Carousels](https://baymard.com/blog/homepage-carousel).
 
-## 6. The PostHog record, pending
+## 6. The PostHog record, read 2026-09-27
 
-The site captures to PostHog through the project's public key, which can
-write events and not read them; no personal key is on this machine, so the
-record could not be read on 2026-09-27. A reader is prepared in the session
-scratchpad (`posthog-read.mjs`): it takes `POSTHOG_PERSONAL_API_KEY` from
-`.env.local` (gitignored; the value never enters a conversation), finds the
-project by its public key, and runs the HogQL below. What each reading
-would change:
+Read through the app's own session in the browser, with HogQL against the
+query API; the site holds only its public capture key, which cannot read.
+The project (335813) is shared with another site, so every query is
+filtered to the physicsofconnection host; `localhost` is excluded by the
+same filter. Numbers are small — tens of people a month — and 20 to 25
+September (515, 305 and 279 events a day from 13 to 20 people, 73 homepage
+views from 14) looks like testing rather than readers; where it matters the
+reading is repeated without that week.
 
-| Reading | Query | If it says | Then |
-|---|---|---|---|
-| Homepage sessions that opened a door, 09-22 to 09-27 | `home_door_opened` sessions ÷ homepage `$pageview` sessions | under one in ten | the doors were passed over; the audience lines are the right weight |
-| | | over one in three | the audience question had pull; give the two lines the card's treatment |
-| Door answers followed | `home_door_followed` by `answer` and `which` | one answer took most of the clicks | put that destination in the hero's own words |
-| Finder use per homepage view | `symptom_selected` ÷ homepage views | under one in twenty | the finder is skipped; move the topic directory above it |
-| Finder routes | `symptom_route_clicked` by `target_type` | the guide beats the programme | lead each panel with the guide and demote the programme link |
-| Scroll depth on `/` | `$prev_pageview_max_scroll_percentage` on leave events | median under a half | the level list and the tail are unseen; shorten or lift |
-| Clicks by block on `/` | `link_clicked` by `block` | the footer out-clicks every body block | the body's directory is not doing its job; revisit the order |
-| Continue card | `learning_recommendation_shown` ÷ `clicked`, surface `continue_journey` | shown often, clicked rarely | the card's copy, not its place |
-| The new blocks | `link_clicked` for `home-hero`, `home-levels`, `home-applies`, `home-hubs` since deploy | | the baseline for the next round |
+### 6.1 Who reaches the homepage
 
-Search Console cannot stand in for any of this: it sees searchers, and the
-homepage has none.
+| Reading | Value |
+|---|---|
+| Homepage views since 2026-06-01 | 226, by 133 people — the most-viewed page on the site; next are /improv-prompts 67, /would-you-rather-questions 35, /viewpoints 35 |
+| By month, views / people / no referrer | Apr 37/12/36 · May 93/56/86 · Jun 81/75/74 · Jul 26/25/26 · Aug 20/14/17 · Sep 99/22/85 |
+| First page of the visit | 189 of 226 (84%) |
+| Referrer | none 202 (89%) · vercel.com 11 (2 people) · duckduckgo 6 (1) · own site 3 · google 2 · bing 2 |
+| Device | desktop 143 · mobile 83 |
+| Web vitals on `/`, p75 | LCP mobile 1,482 ms (10 samples), desktop 305 ms (45); INP mobile 24 ms |
+
+So the homepage is where a shared link lands, not where a search or a
+browse ends. That corrects section 2.1 and set round three.
+
+### 6.2 What they do there
+
+| Reading | Value | What it changed |
+|---|---|---|
+| Scroll depth on `/`, leaves with a reading since June | 131: median max scroll 0, mean 25%; 19 reached 90% (15%), 92 stayed under 25% (70%). Without the testing week and Vercel previews: 74, median 0, mean 28%, 12 reached 90% (16%), 48 under 25% (65%). By month the median is 0 in every month since May; April's was 0.53 on 30 leaves | The hook moved into the hero; nothing that matters is left below the first screen |
+| Clicks the old page recorded (autocapture, since June, 28) | "Preview day 1: Building on Offers" 13 · "Start the 7-day program" 2 · nav items 1–2 each | Day 1 is the card's first link, and both links reach a phone |
+| The doors, 09-22 to 09-27 | opened 10 times by 2 people (7 communication, 3 improv), answered 10, followed 9 by the same 2, closed 1; against about 76 homepage views in the window | The removal is confirmed; two people, several times each, is a test, not a route |
+| The symptom finder since June | 9 symptoms chosen by 4 people (overthinking 3, forcing-funny 3, stage-fright 2, awkward 1); 5 routes taken (programme 4, guide 1). Since April: 39 chosen, 13 routed. `symptom_quiz_viewed` fired 37 times against 226 pageviews and is not a usable denominator | Stays the column's first block — a few in a hundred use it, and it is the only task-based route |
+| Tracked link clicks on `/` since 09-21 | nav 15 (12 of them the site's own name), footer 2, the tail list 1 (its first, an hour after deploy) | Too few to rank the blocks; the baseline for the next reading |
+| The continue card since June | shown 30 times to 5 people, clicked 0 | Watched. Five people is the owner and testers as likely as readers; if it stays at 0 with more people, the card's copy is the suspect |
+| Search on `/` since June | opened 13, submitted 2 | The field stays where it is |
+| Programme starts (path page) since June | beginner-foundations 2, improv-for-life 1 | The funnel is thin end to end; the homepage is not the bottleneck on its own |
+
+### 6.3 The next reading
+
+After a month of the new hero: `link_clicked` by `block` on `/` (`home-hero`,
+`home-levels`, `home-applies`, `home-start`, `home-hubs`), day-1 against
+programme clicks inside `home-hero`, scroll depth without the testing days,
+and the continue card's shown-to-clicked ratio with more than five people
+behind it. Read the record before the design, not after.

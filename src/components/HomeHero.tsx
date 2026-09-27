@@ -30,6 +30,15 @@ import { HOME_DOORS } from "@/lib/home-doors";
  * A server component: nothing here needs the browser, so the hero ships as
  * html and no script. The slot's children carry their own interactivity.
  *
+ * The hook (round 3, 2026-09-27, from the PostHog record): 84% of the
+ * homepage's views since June were the first page of the visit and 89%
+ * arrived with no referrer — a link shared somewhere, not a search — and
+ * the median visit never scrolled. So the line that used to open the
+ * column below ("What makes some conversations magic…", the one the April
+ * audit found lands for the life-seeker) is the hero's own now, under the
+ * tagline, where the two in three who never scroll will read it; the
+ * column starts with the finder.
+ *
  * Order (round 2, 2026-09-27): on a phone the slot follows the tagline and
  * the audience lines come after it, so the one starting point is whole on
  * the first screen and the fold cuts through the lines under it. Before,
@@ -61,6 +70,10 @@ export function HomeHero({ children }: { children: ReactNode }) {
             <p className="text-hero-muted mt-4 max-w-md text-base leading-relaxed sm:text-lg">
               Learn the underlying mechanics of effective communication, discovered through the art
               of improv.
+            </p>
+            <p className="text-hero-foreground mt-4 max-w-md text-sm leading-relaxed sm:text-base">
+              What makes some conversations magic and others fall flat? There are real reasons, and
+              they are learnable: improv performers have been studying them on stage for 60 years.
             </p>
           </div>
           {/* The slot inverts the page's tokens (globals.css, [data-hero-slot])

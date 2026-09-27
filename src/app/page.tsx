@@ -155,23 +155,32 @@ export default async function Home() {
               {beginnerRecommendation.rationale}
             </p>
 
+            {/* Day 1 first. Autocapture on the homepage since June has the
+              day-1 preview clicked 13 times to the programme button's 2
+              (PostHog, read 2026-09-27): the concrete lesson has the scent
+              and the smaller ask. Both on a phone: round 1 hid the preview
+              below 640px, which hid the most-clicked element on the page. */}
             <div className="mt-5 flex flex-wrap gap-3">
-              <Link
-                href={`/paths/${beginnerProgram.frontmatter.id}`}
-                className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
-              >
-                {beginnerProgram.frontmatter.program_length_days
-                  ? `Start the ${beginnerProgram.frontmatter.program_length_days}-day program`
-                  : "Start the beginner program"}
-              </Link>
               {firstThread && (
                 <Link
                   href={`/threads/${firstThread.frontmatter.id}`}
-                  className="border-foreground/10 hover:border-foreground/30 hidden rounded-lg border px-4 py-2 text-sm transition-colors sm:inline-flex"
+                  className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
                 >
-                  Preview day 1: {firstThread.frontmatter.title}
+                  Start with day 1 &mdash; {firstThread.frontmatter.title}
                 </Link>
               )}
+              <Link
+                href={`/paths/${beginnerProgram.frontmatter.id}`}
+                className={
+                  firstThread
+                    ? "border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
+                    : "bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+                }
+              >
+                {beginnerProgram.frontmatter.program_length_days
+                  ? `See the whole ${beginnerProgram.frontmatter.program_length_days}-day program`
+                  : "See the whole program"}
+              </Link>
             </div>
 
             <div className="text-foreground-dim mt-4 hidden flex-wrap gap-3 text-xs sm:flex">
@@ -190,22 +199,12 @@ export default async function Home() {
         </ContinueJourney>
       </HomeHero>
       <main className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
-        <header className="mb-14">
-          {/* The h1 is the hero's. This survives as the page's opening
-            argument: the April audit's life-seeker row records it as the line
-            that lands for that reader (docs/ux-audit-matrix.md, row 1B). The
-            start card it used to introduce is the hero's now, so the paragraph
-            hands straight to the finder under it. */}
-          <h2 className="mb-4 text-3xl font-bold tracking-tight">
-            What makes some conversations magic and others fall flat?
-          </h2>
-          <p className="text-foreground-dim text-lg">
-            There are real reasons - and they&apos;re learnable. Improv performers have been
-            studying them on stage for 60 years. Every guide here starts from what is going wrong
-            rather than from a principle, so the quickest way in is to name the problem.
-          </p>
-        </header>
-
+        {/* The column opens on the finder. The opening argument that stood
+          here — the line the April audit's life-seeker row records as the one
+          that lands (docs/ux-audit-matrix.md, row 1B) — is the hero's own
+          since round 3: the PostHog record has the median homepage visit never
+          scrolling, so a hook below the hero was a hook most never read
+          (docs/homepage-principles.md, section 6). */}
         <HomepageQuiz symptoms={symptomRecommendations} />
 
         {/* The April audit's one homepage finding: team leaders had no signal

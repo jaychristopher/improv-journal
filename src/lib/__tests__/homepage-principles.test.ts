@@ -26,6 +26,11 @@ import { getRecommendedPath } from "../path-recommendations";
  *  - The page runs in the order a reader's attention does — start, problem,
  *    topic, level — before the tail.
  *  - A search field the reader can type into, not only the nav's icon.
+ *  - The hook is in the hero and the column opens on the finder (round 3):
+ *    the PostHog record has 84% of homepage views as the first page of the
+ *    visit and the median visit never scrolling, so what is not on the
+ *    first screen is, for most, not on the page. Day 1 is the card's first
+ *    link: it was clicked 13 times to the programme's 2.
  *
  * Source assertions where the build cannot tell the arrangements apart, as
  * homepage-journey-slot does; built assertions for everything the html shows.
@@ -76,6 +81,14 @@ describe("homepage principles", () => {
     () => {
       const hero = block(page(), "home-hero", "section");
       expect(hero).toContain("Start here");
+      expect(hero).toContain("What makes some conversations magic");
+      // Day 1 before the programme, and both in the html a phone gets.
+      const dayOne = hero.indexOf('href="/threads/');
+      expect(dayOne).toBeGreaterThan(-1);
+      expect(dayOne).toBeLessThan(
+        hero.indexOf(`href="/paths/${getRecommendedPath("beginner").id}"`),
+      );
+      expect(hero.slice(hero.lastIndexOf("<a", dayOne), dayOne)).not.toContain("hidden");
       expect(hero).toContain(`href="/paths/${getRecommendedPath("beginner").id}"`);
       for (const door of HOME_DOORS) expect(hero, door.id).toContain(`href="${door.href}"`);
       // An in-page target lands on a section that exists, below the hero.
@@ -108,6 +121,11 @@ describe("homepage principles", () => {
 
   it.runIf(built)("runs start, problem, topic, level, then the tail", () => {
     const html = page();
+    // The finder is the first block of the column: nothing stands between
+    // the hero and it.
+    const main = html.split("<main")[1];
+    const firstSection = main.slice(main.indexOf("<section"), main.indexOf("</section>"));
+    expect(firstSection).toContain("What keeps breaking right now?");
     const order = [
       "Start here",
       "What keeps breaking right now?",

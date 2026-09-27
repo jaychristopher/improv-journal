@@ -429,3 +429,18 @@ and homepage-principles.test.ts holds the shape. Not measured: how many
 readers ever opened a door — the PostHog events exist and nobody read them
 before the doors went; the next homepage change should read its events
 first.
+
+**The homepage's readers were inferred from Search Console and were not
+there** — any arrival → homepage — process note, then *underload*. Search
+Console had no searchers for the homepage, and the morning's ruling read
+that as "so they come from inside the site". PostHog, read the same
+afternoon: 84% of homepage views are the first page of the visit, 89%
+arrive with no referrer, and the median visit never scrolls. They come from
+a shared link and see one screen. The hook that answered "why should I be
+here" stood below that screen, and the most-clicked element on the page —
+the day-1 preview, 13 clicks to the programme button's 2 — had been hidden
+on phones that morning. Fixed: the hook is the hero's third line, day 1 is
+the card's first link, both links reach a phone, and the column opens on the
+finder. The lesson: the absence of one kind of reader is not the presence of
+another; the readers are in the record, and the record was readable all
+along.

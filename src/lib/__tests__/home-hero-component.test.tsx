@@ -29,6 +29,8 @@ describe("HomeHero", () => {
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading.textContent).toMatch(/Physics of\s*Connection/);
     expect(screen.getByText(/Learn the underlying mechanics of effective communication/));
+    // The hook is the hero's since round 3: the record says most never scroll.
+    expect(screen.getByText(/What makes some conversations magic and others fall flat/));
     // The slot is inside the hero's own region, so what the page passes in is
     // labelled by the hero and tracked with it.
     const region = screen.getByRole("region", { name: /Physics of\s*Connection/ });
