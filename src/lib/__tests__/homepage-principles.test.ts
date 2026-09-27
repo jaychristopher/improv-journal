@@ -64,7 +64,9 @@ describe("homepage principles", () => {
     expect(HOME_DOORS.map((door) => door.id)).toEqual(["communication", "improv"]);
     for (const door of HOME_DOORS) {
       expect(door.label, door.id).toMatch(/^For /);
-      expect(door.href, door.id).toMatch(/^\/[a-z/-]+$/);
+      // A page, or a section of this one: the level list is the whole answer
+      // for the improvisers' line, where any single hub is right for one level.
+      expect(door.href, door.id).toMatch(/^(\/[a-z/-]+|#[a-z-]+)$/);
     }
     expect(new Set(HOME_DOORS.map((door) => door.href)).size).toBe(2);
   });
@@ -76,6 +78,13 @@ describe("homepage principles", () => {
       expect(hero).toContain("Start here");
       expect(hero).toContain(`href="/paths/${getRecommendedPath("beginner").id}"`);
       for (const door of HOME_DOORS) expect(hero, door.id).toContain(`href="${door.href}"`);
+      // An in-page target lands on a section that exists, below the hero.
+      const html = page();
+      for (const door of HOME_DOORS) {
+        if (!door.href.startsWith("#")) continue;
+        const at = html.indexOf(`id="${door.href.slice(1)}"`);
+        expect(at, door.href).toBeGreaterThan(html.indexOf('data-track="home-hero"'));
+      }
       // Links, not controls: nothing in the hero asks a question before it links.
       expect(hero).not.toContain("<button");
       expect(hero).not.toContain('role="dialog"');

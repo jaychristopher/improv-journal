@@ -29,6 +29,14 @@ import { HOME_DOORS } from "@/lib/home-doors";
  *
  * A server component: nothing here needs the browser, so the hero ships as
  * html and no script. The slot's children carry their own interactivity.
+ *
+ * Order (round 2, 2026-09-27): on a phone the slot follows the tagline and
+ * the audience lines come after it, so the one starting point is whole on
+ * the first screen and the fold cuts through the lines under it. Before,
+ * the lines sat between the tagline and the card and pushed the card's
+ * button to the last row of the screen. On a wide screen the grid puts the
+ * name, the tagline and the lines in the first column and the slot beside
+ * them, spanning both rows.
  */
 const HEADING_ID = "home-hero-title";
 
@@ -40,8 +48,8 @@ export function HomeHero({ children }: { children: ReactNode }) {
         data-track="home-hero"
         className="bg-hero text-hero-foreground rounded-2xl px-6 py-8 sm:px-10 sm:py-12"
       >
-        <div className="lg:grid lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
-          <div>
+        <div className="lg:grid lg:grid-cols-[1fr_1fr] lg:grid-rows-[auto_auto] lg:items-center lg:gap-x-12">
+          <div className="lg:col-start-1 lg:row-start-1">
             <h1
               id={HEADING_ID}
               className="text-hero-foreground text-[2.5rem] leading-[0.95] font-bold tracking-tight sm:text-5xl lg:text-6xl"
@@ -54,9 +62,19 @@ export function HomeHero({ children }: { children: ReactNode }) {
               Learn the underlying mechanics of effective communication, discovered through the art
               of improv.
             </p>
-            {/* Who else this is for, as links rather than a question: a reader
-                who is neither, or both, loses nothing by scrolling past. */}
-            <ul className="mt-6 grid max-w-md gap-2 text-sm leading-relaxed">
+          </div>
+          {/* The slot inverts the page's tokens (globals.css, [data-hero-slot])
+              so a card written in the page's own ramp reads on the panel. */}
+          <div data-hero-slot className="mt-8 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0">
+            {children}
+          </div>
+          {/* Who else this is for, as links rather than a question: a reader
+              who is neither, or both, loses nothing by scrolling past. The
+              improvisers' line jumps to the level list on this page, which
+              is the answer for all four levels; a hub would be right for
+              one of them. */}
+          <div className="lg:col-start-1 lg:row-start-2">
+            <ul className="mt-6 grid max-w-md gap-2 text-sm leading-relaxed lg:mt-4">
               {HOME_DOORS.map((door) => (
                 <li key={door.id}>
                   <Link
@@ -69,11 +87,6 @@ export function HomeHero({ children }: { children: ReactNode }) {
                 </li>
               ))}
             </ul>
-          </div>
-          {/* The slot inverts the page's tokens (globals.css, [data-hero-slot])
-              so a card written in the page's own ramp reads on the panel. */}
-          <div data-hero-slot className="mt-8 lg:mt-0">
-            {children}
           </div>
         </div>
       </section>

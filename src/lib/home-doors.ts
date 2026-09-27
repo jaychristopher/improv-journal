@@ -44,7 +44,7 @@ interface DoorInfo {
   label: string;
   /** What this reader wants, in their terms rather than the site's. */
   note: string;
-  /** Where the line sends them: the one page that holds every answer for that reader. */
+  /** Where the line sends them: the one place that holds every answer for that reader. */
   href: string;
 }
 
@@ -58,8 +58,11 @@ export const HOME_DOORS: readonly DoorInfo[] = [
   {
     id: "improv",
     label: "For improvisers",
-    note: "You play, or want to. Start by level, from a first class to teaching it.",
-    href: "/learn/beginner",
+    note: "You play, or want to. Four levels, from a first class to teaching it, each with its own sequence.",
+    // The level list on the page itself: a hub would be right for one of
+    // the four readers this line is for, and the audit's wrong-level rows
+    // were about exactly that landing.
+    href: "#levels",
   },
 ];
 

@@ -269,6 +269,32 @@ directory moved from screen 2.2 to 1.8 on a desktop and from 3.2 to 2.7 on
 a phone; the level list, which did not exist on the page, sits at 2.2 and
 3.4. The returning reader's continue card takes the slot on both.
 
+## 4.2 Round two, 2026-09-27, afternoon
+
+Two changes from a second reading of the built page, before the PostHog
+record could be read (section 6).
+
+- **The phone's first screen holds the whole starting point.** The two
+  audience lines sat between the tagline and the start card and pushed
+  the card's button to the last row of a 390×780 screen. The card now
+  follows the tagline and the lines follow the card, so the first screen
+  holds the name, the tagline, the programme's title, its rationale, its
+  button and both audience links, and the fold falls after the lines. On a
+  wide screen nothing moves: the grid keeps the name, the tagline and the
+  lines in the first column with the slot beside them.
+- **The improvisers' line lands on the level list.** It pointed at the
+  beginner hub, which is the right page for one of the four readers the
+  line is for and the wrong-level landing the April audit's rows D, E and
+  F describe. It is an in-page link to the level list now, which is the
+  answer for all four; the built guard checks the target section exists
+  below the hero. The level rows read "Everything at this level — hub"
+  rather than with a second colon.
+
+Measured after: the phone's opening argument starts at screen 1.12 (was
+1.09, the lines having moved under the card); the desktop is unchanged at
+0.83. Live on production, the deploy of the morning's change measured
+identically to the local build on every row of the table in 4.1.
+
 ## 5. How to verify
 
 - **Shape:** `homepage-principles.test.ts` (source and built), `home-hero-component.test.tsx`, `homepage-journey-slot.test.ts`, `body-click-depth.test.ts`.
@@ -290,3 +316,28 @@ a phone; the level list, which did not exist on the page, sits at 2.2 and
 - Gerry McGovern, [What Really Matters: Focusing on Top Tasks](https://alistapart.com/article/what-really-matters-focusing-on-top-tasks/), A List Apart.
 - Luke Wroblewski, [Obvious Always Wins](https://www.lukew.com/ff/entry.asp?1945).
 - Baymard Institute, [10 UX Requirements for Homepage Carousels](https://baymard.com/blog/homepage-carousel).
+
+## 6. The PostHog record, pending
+
+The site captures to PostHog through the project's public key, which can
+write events and not read them; no personal key is on this machine, so the
+record could not be read on 2026-09-27. A reader is prepared in the session
+scratchpad (`posthog-read.mjs`): it takes `POSTHOG_PERSONAL_API_KEY` from
+`.env.local` (gitignored; the value never enters a conversation), finds the
+project by its public key, and runs the HogQL below. What each reading
+would change:
+
+| Reading | Query | If it says | Then |
+|---|---|---|---|
+| Homepage sessions that opened a door, 09-22 to 09-27 | `home_door_opened` sessions ÷ homepage `$pageview` sessions | under one in ten | the doors were passed over; the audience lines are the right weight |
+| | | over one in three | the audience question had pull; give the two lines the card's treatment |
+| Door answers followed | `home_door_followed` by `answer` and `which` | one answer took most of the clicks | put that destination in the hero's own words |
+| Finder use per homepage view | `symptom_selected` ÷ homepage views | under one in twenty | the finder is skipped; move the topic directory above it |
+| Finder routes | `symptom_route_clicked` by `target_type` | the guide beats the programme | lead each panel with the guide and demote the programme link |
+| Scroll depth on `/` | `$prev_pageview_max_scroll_percentage` on leave events | median under a half | the level list and the tail are unseen; shorten or lift |
+| Clicks by block on `/` | `link_clicked` by `block` | the footer out-clicks every body block | the body's directory is not doing its job; revisit the order |
+| Continue card | `learning_recommendation_shown` ÷ `clicked`, surface `continue_journey` | shown often, clicked rarely | the card's copy, not its place |
+| The new blocks | `link_clicked` for `home-hero`, `home-levels`, `home-applies`, `home-hubs` since deploy | | the baseline for the next round |
+
+Search Console cannot stand in for any of this: it sees searchers, and the
+homepage has none.

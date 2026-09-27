@@ -230,7 +230,11 @@ export default async function Home() {
         {/* The site's structure, by topic — the primary navigation NN/g asks
           for ahead of any audience split. Same order as /guides: by the reach
           of each cluster's winnable guides. */}
-        <section className="border-foreground/10 mt-16 border-t pt-10" data-track="home-applies">
+        <section
+          id="applies"
+          className="border-foreground/10 mt-16 scroll-mt-20 border-t pt-10"
+          data-track="home-applies"
+        >
           <h2 className="text-foreground/80 text-lg font-semibold">Where this applies</h2>
           <p className="text-foreground-dim mt-1 mb-5 text-sm">
             {bridges.length} guides, grouped by the kind of problem they solve.
@@ -258,7 +262,7 @@ export default async function Home() {
           modal (home-doors.ts): each level with the path it is already
           recommended and its own hub. The hub link is what keeps
           /learn/beginner one body click from home (body-click-depth). */}
-        <section className="mt-14" data-track="home-levels">
+        <section id="levels" className="mt-14 scroll-mt-20" data-track="home-levels">
           <h2 className="text-foreground/80 text-lg font-semibold">
             Practising improv? Start by level
           </h2>
@@ -283,7 +287,7 @@ export default async function Home() {
                   href={stage.secondary.href}
                   className="text-foreground-dim mt-2 block text-xs hover:underline"
                 >
-                  {stage.secondary.kicker}: {stage.secondary.label}
+                  {stage.secondary.kicker} &mdash; {stage.secondary.label}
                 </Link>
               </li>
             ))}
