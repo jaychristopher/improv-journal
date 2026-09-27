@@ -444,3 +444,11 @@ the card's first link, both links reach a phone, and the column opens on the
 finder. The lesson: the absence of one kind of reader is not the presence of
 another; the readers are in the record, and the record was readable all
 along.
+
+**A second search box, at the foot of the page** — any arrival → homepage —
+*overload*. Added in the morning on a 2001 guideline, removed in the
+evening on the record: 13 opens and 2 submits since June, in a row that 15%
+of visits reach, duplicating the header's icon on every page. The owner saw
+it as redundant at a glance, which is the test the guideline should have
+passed first. The lesson: a guideline says where a control helps; the
+record says whether anyone is there.

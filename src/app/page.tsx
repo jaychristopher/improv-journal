@@ -394,31 +394,13 @@ export default async function Home() {
           </ul>
         </section>
 
-        {/* Search as a field the reader can type into, not only the nav's
-          icon: Nielsen's guideline 47. It sits with the shortcuts rather than
-          at the top of the page because this site is link-dominant — a small
-          corpus with strong scent — and the reader who wants a box is the one
-          who already knows what they want. */}
+        {/* Search is the header's: a field stood here for a day (2026-09-27),
+          on Nielsen's guideline 47, and came out the same evening. The record
+          had the homepage's search opened 13 times and submitted twice since
+          June, and 15% of visits reaching this row; a second box for the
+          same search, where few arrive, is a duplicate and not a door. */}
         <div className="border-foreground/10 mt-14 border-t pt-8" data-track="home-hubs">
-          <form role="search" action="/search" className="flex max-w-md gap-2">
-            <label htmlFor="home-search" className="sr-only">
-              Search the site
-            </label>
-            <input
-              id="home-search"
-              type="search"
-              name="q"
-              placeholder="Search — yes and, blocking, status"
-              className="border-border-ui bg-surface w-full rounded-lg border px-3 py-2 text-sm"
-            />
-            <button
-              type="submit"
-              className="border-border-ui hover:border-foreground-strong rounded-lg border px-3 py-2 text-sm transition-colors"
-            >
-              Search
-            </button>
-          </form>
-          <div className="text-foreground-dim mt-5 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+          <div className="text-foreground-dim flex flex-wrap gap-x-4 gap-y-1 text-sm">
             <span>Already know what you want?</span>
             <Link href="/how-it-works" className="hover:text-foreground-strong">
               How It Works

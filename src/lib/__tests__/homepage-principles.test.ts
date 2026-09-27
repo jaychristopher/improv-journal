@@ -25,7 +25,8 @@ import { getRecommendedPath } from "../path-recommendations";
  *    was already there; the levels were only behind the modal.
  *  - The page runs in the order a reader's attention does — start, problem,
  *    topic, level — before the tail.
- *  - A search field the reader can type into, not only the nav's icon.
+ *  - Search stays the header's. A field on the page was tried for a day and
+ *    removed: 13 opens and 2 submits since June, in a row 15% reach.
  *  - The hook is in the hero and the column opens on the finder (round 3):
  *    the PostHog record has 84% of homepage views as the first page of the
  *    visit and the median visit never scrolling, so what is not on the
@@ -133,7 +134,7 @@ describe("homepage principles", () => {
       'data-track="home-levels"',
       'data-track="home-craft"',
       'data-track="home-start"',
-      'role="search"',
+      'data-track="home-hubs"',
     ].map((marker) => {
       const at = html.indexOf(marker);
       expect(at, marker).toBeGreaterThan(-1);
@@ -144,12 +145,9 @@ describe("homepage principles", () => {
     }
   });
 
-  it.runIf(built)("carries a search field in the body, not only the nav's icon", () => {
+  it.runIf(built)("offers search once, in the header, not again in the body", () => {
     const main = page().split("<main")[1].split("</main>")[0];
-    const form = main.slice(main.indexOf('role="search"'), main.indexOf("</form>"));
-    expect(form).toContain('action="/search"');
-    expect(form).toMatch(/<input[^>]*name="q"/);
-    expect(form).toMatch(/<button[^>]*type="submit"/);
-    expect(form).toContain("Search the site");
+    expect(main).not.toContain('role="search"');
+    expect(main).not.toContain('action="/search"');
   });
 });

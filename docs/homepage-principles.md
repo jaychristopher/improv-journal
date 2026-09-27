@@ -204,6 +204,14 @@ reader who wants a box is the one who already knows what they want, which is
 what that row is for. Nielsen 47 satisfied; 49 overruled by Spool, with the
 reason written down.
 
+*Reversed the same evening.* The record (section 6) has the homepage's
+search opened 13 times and submitted twice since June, and 15% of visits
+reaching the row the field sat in. A second box for the same search, where
+few arrive, satisfies the letter of guideline 47 and none of its point; the
+point — a field a reader can see — belongs in the header, site-wide, and is
+a separate change with a width cost that 13 opens do not justify. The field
+came out; the header's icon is the site's one search.
+
 ### 2.8 Obvious over clever
 
 **Wroblewski, *Obvious Always Wins*.** Visible navigation beats hidden
@@ -233,12 +241,12 @@ opened a question. They are links now.
 5. Every route the page offers is in the server html, once each as a
    section: the clusters, the levels, the hubs. *(Spool; Sherwin reason 5)*
 6. The page runs in the order attention does: start, problem, topic, level,
-   then the craft, the vocabulary, the tail of guides, the shortcuts and a
-   search field. *(NN/g 2018; McGovern)*
+   then the craft, the vocabulary, the tail of guides and the shortcuts.
+   *(NN/g 2018; McGovern)*
 7. Links lead with the information-carrying word and go to the page they
    name. *(Nielsen 29, 30, 34, 35)*
-8. A search field with a button, on the page, not only an icon. *(Nielsen
-   47; NN/g magnifying-glass)*
+8. Search once, in the header. A field on the page was tried for a day and
+   removed on the record (2.7). *(Nielsen 47, weighed against 13 opens)*
 9. The returning reader's continue card takes the starting point's slot,
    never a second slot. *(unchanged from 2026-09-22; homepage-journey-slot)*
 
@@ -253,7 +261,7 @@ opened a question. They are links now.
 | 5 | The craft door's four levels existed only inside the dialog. | A "Start by level" section: each level with its recommended path and its hub. The clusters grid stays where it was. |
 | 6 | Topic directory at screen 3.2 on a phone; the tallest block was the tail of 28 boxed guides. | Order as in rule 6; the tail is a list of names. |
 | 7 | "Start by Level" in the hub row pointed at one level. | The level list names all four; the row loses the duplicate. |
-| 8 | Icon in the nav only. | A field and a button in the shortcuts row, posting to `/search`. |
+| 8 | Icon in the nav only. | A field and a button in the shortcuts row for a day; removed the same evening on the record (2.7). |
 | 9 | Held. | Held; the slot moved with the card. |
 
 Left as it was, on purpose: the symptom finder (the task-based router the
