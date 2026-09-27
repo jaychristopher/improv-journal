@@ -69,9 +69,11 @@ export function buildDiagram(src: string, alt: string): string | null {
 
   // A modifier the file declares on its root is carried through: `dg-beside`
   // floats the figure beside the paragraph that follows it (globals.css), the
-  // way the fourteen Viewpoints animations sit beside their descriptors. Only
-  // `dg-` tokens pass, so a file cannot carry an unrelated class into the
-  // page; everything else on the root is still replaced.
+  // way the fourteen Viewpoints animations sit beside their descriptors, and
+  // `dg-card` asks cardDiagrams for a container around the heading, the
+  // figure and the paragraph. Only `dg-` tokens pass, so a file cannot carry
+  // an unrelated class into the page; everything else on the root is still
+  // replaced.
   const declared = /\bclass="([^"]*)"/.exec(open[0])?.[1] ?? "";
   const modifiers = declared.split(/\s+/).filter((c) => /^dg-[a-z-]+$/.test(c));
   const className = ["dg", ...modifiers].join(" ");
@@ -98,5 +100,42 @@ export function buildDiagram(src: string, alt: string): string | null {
 export function inlineDiagrams(html: string): string {
   return html.replace(DIAGRAM_IMG, (whole, src: string, alt: string) => {
     return buildDiagram(src, decodeAttribute(alt)) ?? whole;
+  });
+}
+
+/**
+ * A heading, the inlined figure that follows it and the one paragraph after
+ * that, as `remark-html` lays them out: the `<h4>` up to its own close, the
+ * figure inside the `<p>` the markdown image became, and the paragraph.
+ * The heading is the nearest one — its content cannot run past a `</h4>` —
+ * so a heading with no figure under it can never open a card that ends on
+ * the next heading's figure.
+ */
+const CARD =
+  /<h4\b[^>]*>(?:(?!<\/h4>)[\s\S])*<\/h4>\s*<p><svg class="(dg[^"]*)"[\s\S]*?<\/svg><\/p>\s*<p>[\s\S]*?<\/p>/g;
+
+/**
+ * Put a heading, its figure and its descriptor in one container.
+ *
+ * The fourteen Viewpoints on /viewpoints are each a name, a drawing and a
+ * paragraph, and read as fourteen things only when each has its own box
+ * (2026-09-27). A figure asks for the box by carrying `dg-card` on its root,
+ * which buildDiagram passes through; the wrapper is applied here, after
+ * inlining, because only then are the three adjacent siblings in the HTML.
+ * Exactly one paragraph goes in: a second falls outside the card, and the
+ * built-page guard in diagrams.test.ts would show it as a card of the wrong
+ * shape rather than let it pass. No text inside the three is rewritten, so
+ * this is safe to run after the autolinkers as well as after the inliner.
+ *
+ * The marker is consumed: it asked for the card, and the card now exists.
+ * Left on the root it would match the card's own styles, and the first
+ * build showed every figure inside a second frame of its own.
+ */
+export function cardDiagrams(html: string): string {
+  return html.replace(CARD, (whole, classes: string) => {
+    const tokens = classes.split(" ");
+    if (!tokens.includes("dg-card")) return whole;
+    const root = `<svg class="${tokens.filter((c) => c !== "dg-card").join(" ")}"`;
+    return `<div class="dg-card">${whole.replace(/<svg class="[^"]*"/, root)}</div>`;
   });
 }

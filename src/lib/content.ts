@@ -17,7 +17,7 @@ import { matchesLevel } from "@/app/tools/exercise-picker/picker-config";
 
 import { type AudioContentType, getAudioAssetUrl, getRelativeAudioPath } from "./audio";
 import { getAudioDuration, loadAudioManifest } from "./audio-manifest";
-import { inlineDiagrams } from "./diagrams";
+import { cardDiagrams, inlineDiagrams } from "./diagrams";
 import { contentPath, firstPublishedDate } from "./first-published";
 import { lessonAtomOrder } from "./lesson-order";
 import { librarySlug } from "./library-slug";
@@ -1116,22 +1116,26 @@ async function loadFiles<T>(subdir: string): Promise<ContentFile<T>[]> {
       // would otherwise reach inside a diagram's <text> elements.
       // linkHeadingAtoms runs after every body linker and the legacy
       // rewrite, because its "already linked" check reads the final hrefs.
-      html: inlineDiagrams(
-        linkHeadingAtoms(
-          normaliseGeneratedIds(
-            rewriteLegacyInternalLinks(
-              linkEntities(
-                linkAtomRefs(
-                  linkCitations(
-                    linkSources(breakCounterPositions(rendered.toString()), currentUrl),
-                    currentUrl,
+      // cardDiagrams runs last of all: it needs the figures inlined, and it
+      // rewrites no text, only wraps.
+      html: cardDiagrams(
+        inlineDiagrams(
+          linkHeadingAtoms(
+            normaliseGeneratedIds(
+              rewriteLegacyInternalLinks(
+                linkEntities(
+                  linkAtomRefs(
+                    linkCitations(
+                      linkSources(breakCounterPositions(rendered.toString()), currentUrl),
+                      currentUrl,
+                    ),
                   ),
+                  currentUrl,
                 ),
-                currentUrl,
               ),
             ),
+            currentUrl,
           ),
-          currentUrl,
         ),
       ),
       slug,

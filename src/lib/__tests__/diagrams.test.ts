@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { buildDiagram, inlineDiagrams } from "../diagrams";
+import { buildDiagram, cardDiagrams, inlineDiagrams } from "../diagrams";
 import { CLASSES, measure } from "../text-metrics";
 
 /**
@@ -25,6 +25,9 @@ const CONTENT = path.join(process.cwd(), "content");
 const SRC = path.join(process.cwd(), "src");
 
 const MAX_BYTES = 30 * 1024;
+
+const APP = path.join(process.cwd(), ".next", "server", "app");
+const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "viewpoints.html"));
 
 function walk(dir: string, ext: string): string[] {
   if (!fs.existsSync(dir)) return [];
@@ -238,10 +241,66 @@ describe("buildDiagram", () => {
       "/images/viewpoint-tempo.svg",
       "Tempo as four dots making the same crossing.",
     );
-    expect(beside).toContain('<svg class="dg dg-beside" role="img"');
+    expect(beside).toContain('<svg class="dg dg-beside dg-card" role="img"');
     expect(beside).not.toContain("vp-tempo");
     const block = buildDiagram("/images/viewpoint-silence.svg", "Silence as gaps between sounds.");
-    expect(block).toContain('<svg class="dg" role="img"');
+    expect(block).toContain('<svg class="dg dg-card" role="img"');
+    const plain = buildDiagram(
+      "/images/a-raised-floor.svg",
+      "A floor raised above the level it was at.",
+    );
+    expect(plain).toContain('<svg class="dg" role="img"');
+  });
+
+  /**
+   * A Viewpoint is a heading, its figure and its descriptor, and the three sit
+   * in one raised container on /viewpoints (2026-09-27). The figure's root
+   * asks for it with `dg-card`; the wrapper is applied to the rendered HTML
+   * after inlining, where the three are adjacent siblings, and takes exactly
+   * one paragraph. The heading is the nearest one: a heading with nothing
+   * under it must not open a card that closes on the next heading's figure.
+   */
+  it("wraps a heading, a card-marked figure and its paragraph, and nothing else", () => {
+    const figure = (cls: string) =>
+      `<p><svg class="${cls}" role="img"><title>t</title><circle r="1"/></svg></p>`;
+    const card = `<h4 id="tempo">Tempo</h4>\n${figure("dg dg-beside dg-card")}\n<p>The rate.</p>`;
+    // The marker asked for the card and is consumed by it: the root keeps its
+    // other modifiers and nothing else on the three changes.
+    const carded = `<div class="dg-card">${card.replace("dg dg-beside dg-card", "dg dg-beside")}</div>`;
+    const plain = `<h4 id="pitch">Pitch</h4>\n${figure("dg")}\n<p>The note.</p>`;
+    expect(cardDiagrams(`<p>Intro.</p>\n${card}\n${plain}\n<p>After.</p>`)).toBe(
+      `<p>Intro.</p>\n${carded}\n${plain}\n<p>After.</p>`,
+    );
+    // A second paragraph stays outside the card.
+    expect(cardDiagrams(`${card}\n<p>Second.</p>`)).toBe(`${carded}\n<p>Second.</p>`);
+    // No heading, no card; and an empty heading does not reach for the next one's figure.
+    expect(cardDiagrams(`<p>Lead.</p>\n${figure("dg dg-card")}\n<p>Text.</p>`)).not.toContain(
+      "<div",
+    );
+    const skipped = cardDiagrams(`<h4 id="a">A</h4>\n<p>No figure.</p>\n${card}`);
+    expect(skipped).toBe(`<h4 id="a">A</h4>\n<p>No figure.</p>\n${carded}`);
+  });
+
+  it.runIf(built)("puts each of the fourteen Viewpoints in its own card on the built page", () => {
+    const html = fs.readFileSync(path.join(APP, "viewpoints.html"), "utf8");
+    const cards = html.match(/<div class="dg-card">[\s\S]*?<\/div>/g) ?? [];
+    expect(cards).toHaveLength(14);
+    for (const card of cards) {
+      expect(card.match(/<h4\b/g), card.slice(0, 40)).toHaveLength(1);
+      expect(card.match(/<svg class="dg[^"]*"/g), card.slice(0, 40)).toHaveLength(1);
+      // The figure's paragraph and the descriptor: one of each.
+      expect(card.match(/<p>/g), card.slice(0, 40)).toHaveLength(2);
+    }
+    // The marker lives on the fourteen cards and on no figure: a root that
+    // kept it would wear the card's frame as well (2026-09-27). Counted with
+    // its quotes, which the flight copy of the page escapes, so this is the
+    // DOM's count and not twice it.
+    expect(html.match(/<div class="dg-card">/g)).toHaveLength(14);
+    expect(html).not.toMatch(/<svg class="[^"]*dg-card/);
+    // Nine beside their paragraphs, five blocks, and the guide's other
+    // diagram, which is not a Viewpoint and stays a plain block.
+    expect(html.match(/<svg class="dg dg-beside" /g)).toHaveLength(9);
+    expect(html.match(/<svg class="dg" /g)).toHaveLength(6);
   });
 
   it("returns null for a file that does not exist", () => {

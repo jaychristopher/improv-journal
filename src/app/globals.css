@@ -161,6 +161,61 @@ body {
   }
 }
 
+/* A raised card around each Viewpoint: its heading, its figure and its
+   descriptor, so the fourteen read as fourteen containers rather than one
+   run of prose. cardDiagrams() wraps the three where the figure's root
+   declares dg-card. Raised on the surface token in both themes — #fff on
+   the #f0f0f0 page, #141414 on #0a0a0a — with the lift carried by the
+   shadow in light and by the border in dark, where a black shadow on
+   near-black is invisible. flow-root contains the floated figure, so a
+   figure taller than its paragraph ends inside its own card. */
+.dg-card {
+  display: flow-root;
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.06),
+    0 12px 28px -16px rgb(0 0 0 / 0.22);
+}
+
+:root.dark .dg-card {
+  border-color: color-mix(in srgb, var(--foreground) 24%, transparent);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.05),
+    0 12px 28px -16px rgb(0 0 0 / 0.8);
+}
+
+/* The heading sits on the card's top edge and the descriptor on its bottom
+   edge; the figure's own margins are the prose's, not a block diagram's. */
+.dg-card > h4 {
+  margin-top: 0;
+}
+
+.dg-card > p:last-child {
+  margin-bottom: 0;
+}
+
+.dg-card > p > .dg {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.dg-card > p > .dg.dg-beside {
+  margin: 0.25rem 1.5rem 0.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .dg-card {
+    padding: 1rem 1.1rem;
+  }
+
+  .dg-card > p > .dg.dg-beside {
+    margin: 0.5rem 0 0.75rem;
+  }
+}
+
 .dg-ink,
 .dg-muted,
 .dg-rule,

@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 
+import { DiagramPlayback } from "@/components/DiagramPlayback";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { PostHogPageView } from "@/components/PostHogPageView";
@@ -135,6 +136,7 @@ export default async function RootLayout({
           <Nav />
           <div id="main-content" tabIndex={-1} />
           {children}
+          <DiagramPlayback />
           <Footer topGuides={topGuides} tagline={tagline} />
           <Analytics />
           <SpeedInsights />
