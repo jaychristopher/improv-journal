@@ -481,12 +481,21 @@ describe("the rail as a graph", () => {
     "questions-to-ask-a-girl": "framing-effect",
   };
 
-  /** What each host's last slot held before the pass; all still linked elsewhere. */
+  /**
+   * What each host's last slot held before the pass; all still linked elsewhere.
+   *
+   * 2026-09-27: questions-to-ask-a-girl gained a body link to
+   * questions-for-couples, which took that guide out of its rail; the rail
+   * moved up one, active-listening-exercises came back on the score, and
+   * the last computed slot — the one framing-effect takes — holds
+   * types-of-listening now (read at widths 6 and 7). A reading, not a
+   * scoring change.
+   */
   const FAIR_SHARE_DISPLACED: Record<string, string> = {
     "active-listening-exercises": "questions-to-ask-friends",
     "how-to-be-funny": "how-to-stop-people-pleasing",
     "how-to-be-more-articulate": "how-to-stop-caring-what-people-think",
-    "questions-to-ask-a-girl": "active-listening-exercises",
+    "questions-to-ask-a-girl": "types-of-listening",
   };
 
   /** slug → its rail, for the whole layer, with the inverted map beside it. */

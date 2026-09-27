@@ -1,6 +1,7 @@
 import {
   AFFILIATE_DISCLOSURE,
   AFFILIATE_REL,
+  AMAZON_ASSOCIATES_TAG,
   amazonSearchUrl,
   type Edition,
   EDITION_LABELS,
@@ -72,8 +73,12 @@ export function BuyTheBook({
       </div>
 
       {/* Close to the links and in the same card, which is what "clear and
-          conspicuous" means — a disclosure in the footer is not one. */}
-      <p className="text-foreground-dim mt-4 text-xs leading-relaxed">{AFFILIATE_DISCLOSURE}</p>
+          conspicuous" means — a disclosure in the footer is not one. And
+          only when there is a commission to disclose: untagged, these are
+          plain links, and the card said otherwise for months (MZ-1). */}
+      {AMAZON_ASSOCIATES_TAG && (
+        <p className="text-foreground-dim mt-4 text-xs leading-relaxed">{AFFILIATE_DISCLOSURE}</p>
+      )}
     </aside>
   );
 }

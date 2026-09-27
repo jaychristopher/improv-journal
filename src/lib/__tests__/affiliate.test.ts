@@ -3,7 +3,12 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { AFFILIATE_DISCLOSURE, AFFILIATE_REL, editionUrl } from "../affiliate";
+import {
+  AFFILIATE_DISCLOSURE,
+  AFFILIATE_REL,
+  AMAZON_ASSOCIATES_TAG,
+  editionUrl,
+} from "../affiliate";
 import { BOOK_EDITIONS, editionsFor } from "../book-editions";
 import { bookVerdict } from "../book-verdict";
 import { loadAtoms } from "../content";
@@ -118,9 +123,14 @@ describe("the built library pages", () => {
           missing.push(`${atom.frontmatter.id}: unmarked ${anchor[1]}`);
         }
       }
-      // And the disclosure is on the page that carries them.
-      if (html.includes('rel="' + AFFILIATE_REL + '"') && !html.includes(AFFILIATE_DISCLOSURE)) {
-        missing.push(`${atom.frontmatter.id}: links with no disclosure`);
+      // And the disclosure is on the page that carries them — when there is
+      // a commission to disclose. Untagged, the links earn nothing and the
+      // page must not say otherwise (MZ-1.2, 2026-09-27).
+      const discloses = html.includes(AFFILIATE_DISCLOSURE);
+      if (AMAZON_ASSOCIATES_TAG ? !discloses : discloses) {
+        missing.push(
+          `${atom.frontmatter.id}: ${AMAZON_ASSOCIATES_TAG ? "links with no disclosure" : "discloses a commission with no tag set"}`,
+        );
       }
     }
     expect(missing).toEqual([]);

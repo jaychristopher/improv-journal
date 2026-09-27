@@ -10,6 +10,7 @@
 import { useEffect } from "react";
 
 import { trackEvent } from "@/lib/analytics";
+import { outboundEvent } from "@/lib/link-events";
 import posthog from "@/lib/posthog";
 
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
@@ -40,10 +41,18 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
       const anchor = target?.closest?.("a[href]");
       if (!anchor) return;
       const href = anchor.getAttribute("href") ?? "";
-      if (!href.startsWith("/")) return;
       const block = anchor.closest("[data-track]")?.getAttribute("data-track");
       if (!block) return;
-      trackEvent("link_clicked", { block, href, page: window.location.pathname });
+      if (href.startsWith("/")) {
+        trackEvent("link_clicked", { block, href, page: window.location.pathname });
+        return;
+      }
+      // An outbound link inside a tracked block: the buy cards' retail
+      // buttons above all, which fired nothing for six days after this
+      // listener landed (docs/monetization.md, MZ-1.2, 2026-09-27). The
+      // click a month is the number an Associates account is judged by.
+      const outbound = outboundEvent(href, block, window.location.pathname);
+      if (outbound) trackEvent("outbound_clicked", outbound);
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);

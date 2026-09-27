@@ -116,9 +116,11 @@ describe("the backlog register", () => {
     // 2026-09-25, twenty-first firing: SA-19 and SA-19.1. 28 stories, 39 tasks.
     // 2026-09-25, twenty-second firing: SA-20 and SA-20.1. 29 stories, 40 tasks.
     // 2026-09-25, twenty-third firing: SA-21 and SA-21.1. 30 stories, 41 tasks.
-    expect(typed("epic")).toHaveLength(3);
-    expect(typed("story")).toHaveLength(30);
-    expect(tasks).toHaveLength(41);
+    // 2026-09-27: the Monetization epic (MZ), MZ-1 with MZ-1.1 and MZ-1.2, MZ-2
+    // with MZ-2.1. 4 epics, 32 stories, 44 tasks.
+    expect(typed("epic")).toHaveLength(4);
+    expect(typed("story")).toHaveLength(32);
+    expect(tasks).toHaveLength(44);
     // 2026-09-25, working the queue in ROI order: SA-2.1 closed. 17 done, 24 open.
     // SA-1.2 closed. 18 done, 23 open.
     // SA-15.1 closed. 19 done, 22 open.
@@ -128,8 +130,9 @@ describe("the backlog register", () => {
     // SA-11.1 closed. 23 done, 18 open.
     // SA-9.1 closed. 24 done, 17 open.
     // SA-13.1 closed. 25 done, 16 open.
-    expect(tasks.filter(isDone)).toHaveLength(25);
-    expect(openTasks).toHaveLength(16);
+    // 2026-09-27: MZ-1.2 arrives done, MZ-1.1 and MZ-2.1 open. 26 done, 18 open.
+    expect(tasks.filter(isDone)).toHaveLength(26);
+    expect(openTasks).toHaveLength(18);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.

@@ -73,6 +73,9 @@ describe("the footer's shape", () => {
     // card at all.
     expect(AFFILIATE_PARTICIPATION).toMatch(/Amazon Associate/);
     expect(footerSource()).toContain("AFFILIATE_PARTICIPATION");
+    // And only with a tag behind it: the statement stood on every page
+    // with no account for months (MZ-1, 2026-09-27).
+    expect(footerSource()).toContain("AMAZON_ASSOCIATES_TAG && (");
   });
 
   it.runIf(built)("renders few links, no headings, and the form outside the nav", () => {

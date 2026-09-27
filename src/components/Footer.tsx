@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { AFFILIATE_PARTICIPATION } from "@/lib/affiliate";
+import { AFFILIATE_PARTICIPATION, AMAZON_ASSOCIATES_TAG } from "@/lib/affiliate";
 import { HUBS } from "@/lib/hubs";
 
 import { EmailCapture } from "./EmailCapture";
@@ -189,8 +189,13 @@ export function Footer({ topGuides, tagline }: { topGuides: FooterGuide[]; tagli
         </div>
         {/* The Associates participation statement. A different obligation
             from the per-link FTC disclosure on the library entries, which
-            stays where it is, beside the links it describes. */}
-        <p className="text-foreground-dim mt-3 text-xs">{AFFILIATE_PARTICIPATION}</p>
+            stays where it is, beside the links it describes. Only with a
+            tag: it stood on every page for months with no account behind
+            it (MZ-1, 2026-09-27), and a statement of membership is true or
+            it is not there. */}
+        {AMAZON_ASSOCIATES_TAG && (
+          <p className="text-foreground-dim mt-3 text-xs">{AFFILIATE_PARTICIPATION}</p>
+        )}
       </div>
     </footer>
   );

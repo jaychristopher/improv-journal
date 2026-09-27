@@ -59,8 +59,14 @@ import { atomPageDescription } from "../seo";
  *   shared-reality-fragility, show-dynamic, space-work-scene, status-dynamics,
  *   status-transfer, story-spine, story-story-die, superheroes, the-machine,
  *   two-headed-expert, two-person-longform, what-are-you-doing, yes-and-chain
+ *
+ * 2026-09-27: 115 of 181, 63.5%. The pool shrank by three since the reading
+ * above — the Viewpoints and Spolin citations and one more received authored
+ * descriptions (SA-17.1, MZ) — and the Spolin one had named its subject, so
+ * a named description left with it. The share is unchanged; the floor
+ * follows the count down and not up.
  */
-const NAMING_FLOOR = 116;
+const NAMING_FLOOR = 115;
 
 const STOP_WORDS = new Set([
   "the",
