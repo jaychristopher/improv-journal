@@ -1,5 +1,5 @@
 ---
-title: "Viewpoints Acting Technique: The Nine Channels"
+title: "Viewpoints Acting Technique: Bogart and Landau's Nine Channels"
 description: "Viewpoints splits physical awareness into nine named channels. What each one is, how it is trained, where it fails — and how Bogart and Landau got there."
 target_keywords:
   - {
