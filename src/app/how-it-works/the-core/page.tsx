@@ -54,6 +54,9 @@ export default async function TheCorePage() {
         name="The Core"
         description={DESCRIPTION}
         url={CORE_HREF}
+        // The bare URL is the term's `@id` (below); the collection takes a
+        // fragment so the page defines each entity once.
+        id={`${CORE_HREF}#collection`}
         partOf={HUBS.howItWorks.href}
         items={members.map((m) => ({
           name: m.title,

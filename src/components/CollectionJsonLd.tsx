@@ -19,17 +19,28 @@ export function CollectionJsonLd({
   url,
   items,
   partOf,
+  id,
 }: {
   name: string;
   description: string;
   url: string;
   items: CollectionEntry[];
   partOf?: string;
+  /**
+   * The node's `@id`, where the page's bare URL is already another entity's.
+   * On /how-it-works/the-core the bare URL is the DefinedTerm the glossary
+   * set and every `mentions` edge point at (jsonld-edges: the term owns the
+   * page URL, other nodes take a fragment), so the collection takes
+   * `#collection` there. Two definitions on one `@id` are merged by
+   * consumers with the choice of name and description left arbitrary; the
+   * rendered audit reported it as a critical for five days (2026-09-27).
+   */
+  id?: string;
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": `${SITE_URL}${url}`,
+    "@id": `${SITE_URL}${id ?? url}`,
     name,
     description,
     url: `${SITE_URL}${url}`,
