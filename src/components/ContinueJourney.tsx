@@ -170,7 +170,7 @@ export function ContinueJourney({
   // sits in, inside the header, and the card it replaces carries mt-8. Matching
   // it keeps the swap from moving the block it sits under.
   return (
-    <section className="mt-8" data-journey-card={state.kind}>
+    <section data-journey-card={state.kind}>
       <Link
         href={cardHref}
         data-drill-id={state.drill?.id}

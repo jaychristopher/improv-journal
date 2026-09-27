@@ -121,84 +121,89 @@ export default async function Home() {
     orientation: cluster.orientation,
     count: cluster.slugs.filter((slug) => bridgeBySlug.has(slug)).length,
   }));
-  // The hero's applied door deals these minus the one written for
-  // improvisers; its craft door deals the audience hubs (home-doors.ts).
+  // The level list is the craft door's four answers (home-doors.ts); the
+  // applied door's are the clusters grid itself.
   const doorOptions = buildHomeDoors(guideClusters);
 
   return (
-    // The hero is a sibling of `<main>`: it bleeds to the full width of the
-    // viewport, and cancelling a centred padded column to do that lands 7px
-    // wide of it (see HeroTakeover).
+    // The hero is a panel of its own height, not the viewport: the takeover
+    // version ended exactly at the fold on a phone with nothing peeking under
+    // it, the false floor NN/g describes (docs/homepage-principles.md,
+    // 2026-09-27). It stays a sibling of <main> so it can be wider than the
+    // article column.
     <>
-      <HomeHero options={doorOptions} />
-      <main className="mx-auto max-w-3xl px-6 py-16">
-        <header className="mb-12">
-          {/* The h1 is the hero's now. This survives as the page's opening
+      <HomeHero>
+        {/* One slot, two states. A returning reader used to get this card and
+          the journey card both, so the page told somebody on day four to start
+          the programme they were already doing. ContinueJourney renders this
+          until localStorage says otherwise, which also means the journey card
+          replaces something instead of pushing the page down on hydration.
+          The drill map lets the practice card name and link the drill it
+          means rather than the lesson (entry 333). The slot is the hero's
+          second column: the page's one primary action, where the eye lands
+          first, rather than the third of three routers a reader met below a
+          question. */}
+        <ContinueJourney
+          paths={continueConfig}
+          prerequisites={lessonPrerequisites}
+          drillsByLesson={await drillsByLesson()}
+        >
+          <div className="border-foreground/10 bg-foreground/[0.03] rounded-2xl border p-5 sm:p-6">
+            <span className="text-foreground-dim text-xs tracking-wider uppercase">Start here</span>
+            <h2 className="mt-1 text-2xl font-semibold">{beginnerProgram.frontmatter.title}</h2>
+            <p className="text-foreground-dim mt-2 text-sm leading-relaxed">
+              {beginnerRecommendation.rationale}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href={`/paths/${beginnerProgram.frontmatter.id}`}
+                className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
+              >
+                {beginnerProgram.frontmatter.program_length_days
+                  ? `Start the ${beginnerProgram.frontmatter.program_length_days}-day program`
+                  : "Start the beginner program"}
+              </Link>
+              {firstThread && (
+                <Link
+                  href={`/threads/${firstThread.frontmatter.id}`}
+                  className="border-foreground/10 hover:border-foreground/30 hidden rounded-lg border px-4 py-2 text-sm transition-colors sm:inline-flex"
+                >
+                  Preview day 1: {firstThread.frontmatter.title}
+                </Link>
+              )}
+            </div>
+
+            <div className="text-foreground-dim mt-4 hidden flex-wrap gap-3 text-xs sm:flex">
+              {beginnerProgram.frontmatter.program_length_days && (
+                <span>{beginnerProgram.frontmatter.program_length_days} days</span>
+              )}
+              {beginnerProgram.frontmatter.default_cadence && (
+                <span>{beginnerProgram.frontmatter.default_cadence}</span>
+              )}
+              <span>{beginnerProgram.frontmatter.threads.length} core lessons</span>
+              {beginnerProgram.frontmatter.core_habits?.[0] && (
+                <span>First habit: {beginnerProgram.frontmatter.core_habits[0]}</span>
+              )}
+            </div>
+          </div>
+        </ContinueJourney>
+      </HomeHero>
+      <main className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
+        <header className="mb-14">
+          {/* The h1 is the hero's. This survives as the page's opening
             argument: the April audit's life-seeker row records it as the line
-            that lands for that reader (docs/ux-audit-matrix.md, row 1B). */}
+            that lands for that reader (docs/ux-audit-matrix.md, row 1B). The
+            start card it used to introduce is the hero's now, so the paragraph
+            hands straight to the finder under it. */}
           <h2 className="mb-4 text-3xl font-bold tracking-tight">
             What makes some conversations magic and others fall flat?
           </h2>
-          <p className="text-foreground/60 text-lg">
+          <p className="text-foreground-dim text-lg">
             There are real reasons - and they&apos;re learnable. Improv performers have been
-            studying them on stage for 60 years. This is where to start if you want the ideas to
-            become usable, not just interesting.
+            studying them on stage for 60 years. Every guide here starts from what is going wrong
+            rather than from a principle, so the quickest way in is to name the problem.
           </p>
-
-          {/* One slot, two states. A returning reader used to get this card and the
-            journey card both, so the page told somebody on day four to start the
-            programme they were already doing. ContinueJourney renders this until
-            localStorage says otherwise, which also means the journey card
-            replaces something instead of pushing the page down on hydration.
-            The drill map lets the practice card name and link the drill it
-            means rather than the lesson (entry 333). */}
-          <ContinueJourney
-            paths={continueConfig}
-            prerequisites={lessonPrerequisites}
-            drillsByLesson={await drillsByLesson()}
-          >
-            <div className="border-foreground/10 bg-foreground/[0.03] mt-8 rounded-2xl border p-6">
-              <span className="text-foreground/40 text-xs tracking-wider uppercase">
-                Start here
-              </span>
-              <h2 className="mt-1 text-2xl font-semibold">{beginnerProgram.frontmatter.title}</h2>
-              <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-                {beginnerRecommendation.rationale}
-              </p>
-
-              <div className="mt-5 flex flex-wrap gap-3">
-                <Link
-                  href={`/paths/${beginnerProgram.frontmatter.id}`}
-                  className="bg-foreground text-background hover:bg-foreground/90 inline-flex rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
-                >
-                  {beginnerProgram.frontmatter.program_length_days
-                    ? `Start the ${beginnerProgram.frontmatter.program_length_days}-day program`
-                    : "Start the beginner program"}
-                </Link>
-                {firstThread && (
-                  <Link
-                    href={`/threads/${firstThread.frontmatter.id}`}
-                    className="border-foreground/10 hover:border-foreground/30 inline-flex rounded-lg border px-4 py-2 text-sm transition-colors"
-                  >
-                    Preview day 1: {firstThread.frontmatter.title}
-                  </Link>
-                )}
-              </div>
-
-              <div className="text-foreground/50 mt-4 flex flex-wrap gap-3 text-xs">
-                {beginnerProgram.frontmatter.program_length_days && (
-                  <span>{beginnerProgram.frontmatter.program_length_days} days</span>
-                )}
-                {beginnerProgram.frontmatter.default_cadence && (
-                  <span>{beginnerProgram.frontmatter.default_cadence}</span>
-                )}
-                <span>{beginnerProgram.frontmatter.threads.length} core lessons</span>
-                {beginnerProgram.frontmatter.core_habits?.[0] && (
-                  <span>First habit: {beginnerProgram.frontmatter.core_habits[0]}</span>
-                )}
-              </div>
-            </div>
-          </ContinueJourney>
         </header>
 
         <HomepageQuiz symptoms={symptomRecommendations} />
@@ -210,7 +215,7 @@ export default async function Home() {
           all first-person, so from then until 2026-09-22 nothing above the
           guide clusters said "teams" (tracker entry 293; backlog EC-4.1). One
           line, after the quiz rather than in it, so the quiz stays personal. */}
-        <p className="text-foreground/50 -mt-10 mb-16 text-sm" data-track="home-teams">
+        <p className="text-foreground-dim -mt-10 mb-16 text-sm" data-track="home-teams">
           Here for a team rather than for yourself?{" "}
           <Link href="/topics/teams" className="underline">
             The guides for teams and leaders
@@ -222,9 +227,12 @@ export default async function Home() {
           is the path that runs them in order.
         </p>
 
-        <section className="border-foreground/10 mt-16 border-t pt-10">
+        {/* The site's structure, by topic — the primary navigation NN/g asks
+          for ahead of any audience split. Same order as /guides: by the reach
+          of each cluster's winnable guides. */}
+        <section className="border-foreground/10 mt-16 border-t pt-10" data-track="home-applies">
           <h2 className="text-foreground/80 text-lg font-semibold">Where this applies</h2>
-          <p className="text-foreground/50 mt-1 mb-5 text-sm">
+          <p className="text-foreground-dim mt-1 mb-5 text-sm">
             {bridges.length} guides, grouped by the kind of problem they solve.
           </p>
           <ul className="grid gap-3 sm:grid-cols-2">
@@ -246,61 +254,40 @@ export default async function Home() {
           </ul>
         </section>
 
-        {/* The homepage linked only to hubs, so the strongest pages on the site
-          got nothing from the page that has the most to give. A body link from
-          here is worth more than the same link in site-wide footer chrome —
-          which is also why this list is not the footer's: those 27 already
-          have it, and the winnable guides just under the promotion floor had
-          no sitewide entrance at all. The heading said "Where most people
-          start" while it was the footer's set; it is the band behind that now,
-          and the copy says so. */}
-        <section className="mt-14" data-track="home-start">
-          <h2 className="text-foreground/80 text-lg font-semibold">Where to start next</h2>
-          <p className="text-foreground/50 mt-1 mb-5 text-sm">
-            The most-searched guides are in the footer of every page. These are the ones just behind
-            them, and each goes furthest into a single situation — what is actually going wrong, why
-            it happens, and what to do differently on Thursday.
+        {/* The craft door's four answers, on the page instead of behind a
+          modal (home-doors.ts): each level with the path it is already
+          recommended and its own hub. The hub link is what keeps
+          /learn/beginner one body click from home (body-click-depth). */}
+        <section className="mt-14" data-track="home-levels">
+          <h2 className="text-foreground/80 text-lg font-semibold">
+            Practising improv? Start by level
+          </h2>
+          <p className="text-foreground-dim mt-1 mb-5 text-sm">
+            Where you are with it decides what to read first. Each level has a page of its own and
+            one sequence it recommends.
           </p>
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {picks.map((guide) => (
-              <li key={guide.slug}>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {doorOptions.improv.map((stage) => (
+              <li key={stage.id} className="border-foreground/10 bg-surface rounded-lg border p-4">
+                <Link href={stage.primary.href} className="group block">
+                  <span className="block text-sm font-medium">{stage.label}</span>
+                  <span className="text-foreground-dim mt-1 block text-xs">{stage.note}</span>
+                  <span className="mt-2 block text-xs underline underline-offset-2 group-hover:opacity-80">
+                    {stage.primary.label}
+                    <span aria-hidden className="ml-1">
+                      &rarr;
+                    </span>
+                  </span>
+                </Link>
                 <Link
-                  href={`/${guide.slug}`}
-                  className="border-foreground/10 bg-surface hover:border-foreground/30 block rounded-lg border px-4 py-3 text-sm transition-colors"
+                  href={stage.secondary.href}
+                  className="text-foreground-dim mt-2 block text-xs hover:underline"
                 >
-                  {guide.label}
+                  {stage.secondary.kicker}: {stage.secondary.label}
                 </Link>
               </li>
             ))}
           </ul>
-        </section>
-
-        <section className="mt-14">
-          <h2 className="text-foreground/80 text-lg font-semibold">What sits underneath them</h2>
-          <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
-            Every guide is assembled from the same vocabulary rather than written from scratch — a{" "}
-            <Link href="/practice/vocabulary" className="underline">
-              glossary of improv terms
-            </Link>{" "}
-            where each concept is defined once and linked everywhere it applies, alongside the
-            techniques, failure modes,{" "}
-            <Link href="/practice/exercises" className="underline">
-              exercises
-            </Link>{" "}
-            and{" "}
-            <Link href="/practice/formats" className="underline">
-              formats
-            </Link>{" "}
-            they draw on. When a guide says a question blocks, there is a page defining exactly what{" "}
-            <Link href="/how-it-works/diagnosis/blocking" className="underline">
-              blocking
-            </Link>{" "}
-            is and how to recognise it — and a page on{" "}
-            <Link href="/how-it-works/diagnosis" className="underline">
-              everything else that goes wrong
-            </Link>{" "}
-            when a conversation stops working.
-          </p>
         </section>
 
         <section className="mt-14" data-track="home-craft">
@@ -345,43 +332,125 @@ export default async function Home() {
           </p>
         </section>
 
-        <div className="text-foreground/30 mt-10 flex flex-wrap gap-x-4 gap-y-1 text-sm">
-          <span>Already know what you want?</span>
-          <Link href="/how-it-works" className="hover:text-foreground/50">
-            How It Works
-          </Link>
-          <Link href="/improv-games" className="hover:text-foreground/50">
-            Improv Games
-          </Link>
-          <Link href="/practice" className="hover:text-foreground/50">
-            Practice
-          </Link>
-          <Link href={HUBS.glossary.href} className="hover:text-foreground/50">
-            {HUBS.glossary.h1}
-          </Link>
-          <Link href="/guides" className="hover:text-foreground/50">
-            Guides
-          </Link>
-          <Link href={HUBS.library.href} className="hover:text-foreground/50">
-            {HUBS.library.label}
-          </Link>
-          <Link href={HUBS.paths.href} className="hover:text-foreground/50">
-            {HUBS.paths.label}
-          </Link>
-          {/* The lessons hub and the picker were three and four body clicks from
-            here, reachable only through the nav (tracker entry 218). */}
-          <Link href={HUBS.threads.href} className="hover:text-foreground/50">
-            {HUBS.threads.label}
-          </Link>
-          <Link href="/tools/exercise-picker/beginner" className="hover:text-foreground/50">
-            Find a Drill
-          </Link>
-          <Link href="/learn/beginner" className="hover:text-foreground/50">
-            Start by Level
-          </Link>
-          <Link href="/listen" className="hover:text-foreground/50">
-            Listen
-          </Link>
+        <section className="mt-14" data-track="home-underneath">
+          <h2 className="text-foreground/80 text-lg font-semibold">What sits underneath them</h2>
+          <p className="text-foreground/60 mt-2 text-sm leading-relaxed">
+            Every guide is assembled from the same vocabulary rather than written from scratch — a{" "}
+            <Link href="/practice/vocabulary" className="underline">
+              glossary of improv terms
+            </Link>{" "}
+            where each concept is defined once and linked everywhere it applies, alongside the
+            techniques, failure modes,{" "}
+            <Link href="/practice/exercises" className="underline">
+              exercises
+            </Link>{" "}
+            and{" "}
+            <Link href="/practice/formats" className="underline">
+              formats
+            </Link>{" "}
+            they draw on. When a guide says a question blocks, there is a page defining exactly what{" "}
+            <Link href="/how-it-works/diagnosis/blocking" className="underline">
+              blocking
+            </Link>{" "}
+            is and how to recognise it — and a page on{" "}
+            <Link href="/how-it-works/diagnosis" className="underline">
+              everything else that goes wrong
+            </Link>{" "}
+            when a conversation stops working.
+          </p>
+        </section>
+
+        {/* The homepage linked only to hubs, so the strongest pages on the site
+          got nothing from the page that has the most to give. A body link from
+          here is worth more than the same link in site-wide footer chrome —
+          which is also why this list is not the footer's: those 27 already
+          have it, and the winnable guides just under the promotion floor had
+          no sitewide entrance at all (homepage-picks.ts). A list of names, not
+          a grid of boxes: at 28 boxes this was the tallest block on the page,
+          two phone screens for the band behind the most-searched guides. */}
+        <section className="mt-14" data-track="home-start">
+          <h2 className="text-foreground/80 text-lg font-semibold">
+            Beyond the most-searched guides
+          </h2>
+          <p className="text-foreground-dim mt-1 text-sm">
+            The most-searched guides are in the footer of every page. These are the ones just behind
+            them, and each goes furthest into a single situation — what is actually going wrong, why
+            it happens, and what to do differently on Thursday.
+          </p>
+          <ul className="mt-4 grid gap-x-8 gap-y-1.5 text-sm sm:grid-cols-2">
+            {picks.map((guide) => (
+              <li key={guide.slug}>
+                <Link
+                  href={`/${guide.slug}`}
+                  className="underline underline-offset-2 hover:opacity-80"
+                >
+                  {guide.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Search as a field the reader can type into, not only the nav's
+          icon: Nielsen's guideline 47. It sits with the shortcuts rather than
+          at the top of the page because this site is link-dominant — a small
+          corpus with strong scent — and the reader who wants a box is the one
+          who already knows what they want. */}
+        <div className="border-foreground/10 mt-14 border-t pt-8" data-track="home-hubs">
+          <form role="search" action="/search" className="flex max-w-md gap-2">
+            <label htmlFor="home-search" className="sr-only">
+              Search the site
+            </label>
+            <input
+              id="home-search"
+              type="search"
+              name="q"
+              placeholder="Search — yes and, blocking, status"
+              className="border-border-ui bg-surface w-full rounded-lg border px-3 py-2 text-sm"
+            />
+            <button
+              type="submit"
+              className="border-border-ui hover:border-foreground-strong rounded-lg border px-3 py-2 text-sm transition-colors"
+            >
+              Search
+            </button>
+          </form>
+          <div className="text-foreground-dim mt-5 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            <span>Already know what you want?</span>
+            <Link href="/how-it-works" className="hover:text-foreground-strong">
+              How It Works
+            </Link>
+            <Link href="/improv-games" className="hover:text-foreground-strong">
+              Improv Games
+            </Link>
+            <Link href="/practice" className="hover:text-foreground-strong">
+              Practice
+            </Link>
+            <Link href={HUBS.glossary.href} className="hover:text-foreground-strong">
+              {HUBS.glossary.h1}
+            </Link>
+            <Link href="/guides" className="hover:text-foreground-strong">
+              Guides
+            </Link>
+            <Link href={HUBS.library.href} className="hover:text-foreground-strong">
+              {HUBS.library.label}
+            </Link>
+            <Link href={HUBS.paths.href} className="hover:text-foreground-strong">
+              {HUBS.paths.label}
+            </Link>
+            {/* The lessons hub and the picker were three and four body clicks from
+              here, reachable only through the nav (tracker entry 218). The level
+              ladder is the level list's now. */}
+            <Link href={HUBS.threads.href} className="hover:text-foreground-strong">
+              {HUBS.threads.label}
+            </Link>
+            <Link href="/tools/exercise-picker/beginner" className="hover:text-foreground-strong">
+              Find a Drill
+            </Link>
+            <Link href="/listen" className="hover:text-foreground-strong">
+              Listen
+            </Link>
+          </div>
         </div>
       </main>
     </>

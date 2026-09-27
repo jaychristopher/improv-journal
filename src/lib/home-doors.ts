@@ -1,5 +1,5 @@
 /**
- * The two doors on the homepage, and what is behind each.
+ * The two audience routes on the homepage, and what is behind each.
  *
  * The site is written for two readers who want opposite things from the same
  * material, and it says so in its own words. /learn/beginner opens: "Nothing
@@ -10,60 +10,56 @@
  * it is the rest of life, the applied ones will get you there faster without
  * pretending the two are the same thing."
  *
- * That distinction was made three levels in. The homepage asked one question
- * of both readers, and since the symptom quiz replaced the old router the
- * question has been first-person and applied — "I freeze and overthink", "I
- * feel awkward and disconnected" — so an improviser looking for something to
- * run on Tuesday had no door at all. The April audit's persona rows D, E and
- * F still describe the router that used to give them one (docs/ux-audit-
- * matrix.md, rows 1D-1F, written against a quiz whose step 0 offered "I do
- * improv").
+ * From 2026-09-22 to 2026-09-27 the hero made that the first question: two
+ * buttons, "What are you here for?", each opening a modal that asked a
+ * second one before offering a link. That is audience-based navigation as
+ * the primary route, which NN/g's research says to avoid — readers do not
+ * reliably know which group they are, resent choosing before they have seen
+ * anything, and wonder what the other door had — and a modal used for
+ * navigation, which the same body of work rules out. Measured on
+ * 2026-09-27, every answer the modal could give was already on the page:
+ * the applied door's answers are the guide clusters, the craft door's are
+ * the four levels (docs/homepage-principles.md).
  *
- * So the hero asks which reader you are first, and each door asks its own
- * second question. Neither repeats the symptom quiz below it: that asks what
- * is breaking, these ask what you are here for.
+ * So the doors are two lines under the tagline, links, in the secondary
+ * place NN/g allows an audience route, and the page answers the second
+ * question itself: the clusters grid for one reader, the level list for
+ * the other. `buildHomeDoors` still deals both sets from the same sources
+ * as before — the applied set is what the guard checks against the
+ * clusters, the craft set is what the level list renders.
  *
- * Nothing here is a new taxonomy. The applied door deals the guide clusters
- * minus the craft one, in the order /guides already puts them; the craft door
- * deals the audience hubs with the path each one is already recommended.
+ * Nothing here is a new taxonomy. The applied set is the guide clusters
+ * minus the craft one, in the order /guides already puts them; the craft
+ * set is the audience hubs with the path each one is already recommended.
  */
 
 import { getRecommendedPath } from "./path-recommendations";
 import type { Audience } from "./schema";
 
-export type DoorId = "communication" | "improv";
+type DoorId = "communication" | "improv";
 
-export interface DoorInfo {
+interface DoorInfo {
   id: DoorId;
+  /** Who the route is for, with the word "for" doing the work NN/g asks of it. */
   label: string;
   /** What this reader wants, in their terms rather than the site's. */
   note: string;
-  /** The door's own second question. */
-  question: string;
-  /** One line under the question, saying how to answer it. */
-  preamble: string;
-  /** The way back from an answer, in the door's own terms. */
-  back: string;
+  /** Where the line sends them: the one page that holds every answer for that reader. */
+  href: string;
 }
 
 export const HOME_DOORS: readonly DoorInfo[] = [
   {
     id: "communication",
-    label: "Communication skills",
-    note: "You want conversations to go better. No stage, ever.",
-    question: "Where does it matter most?",
-    preamble:
-      "The same material, sorted by the part of your life it is for. Every guide starts from what is going wrong rather than from a principle.",
-    back: "A different part of life",
+    label: "For better conversations",
+    note: "No stage, ever. The guides are grouped by the part of life they are for.",
+    href: "/guides",
   },
   {
     id: "improv",
-    label: "Practice improv",
-    note: "You play, or want to. You want the form itself to get better.",
-    question: "Where are you with it?",
-    preamble:
-      "Take one sequence rather than browsing several — the fundamentals compound, and they compound in an order.",
-    back: "I am somewhere else with it",
+    label: "For improvisers",
+    note: "You play, or want to. Start by level, from a first class to teaching it.",
+    href: "/learn/beginner",
   },
 ];
 
@@ -79,7 +75,7 @@ export const CRAFT_CLUSTER = "improv-skills";
  * stage of practice, and it is offered as a footnote instead of as an answer
  * to "where are you with it?".
  */
-export interface CraftStage {
+interface CraftStage {
   audience: Audience;
   label: string;
   note: string;
@@ -132,10 +128,10 @@ export interface DoorOption {
   secondary: DoorLink;
 }
 
-export type HomeDoorOptions = Record<DoorId, DoorOption[]>;
+type HomeDoorOptions = Record<DoorId, DoorOption[]>;
 
 /** A cluster as the homepage already has it, plus how many guides are in it. */
-export interface ClusterInput {
+interface ClusterInput {
   slug: string;
   title: string;
   description: string;

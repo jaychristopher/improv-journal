@@ -206,6 +206,23 @@ body {
   margin: 0.25rem 1.5rem 0.5rem 0;
 }
 
+/* The homepage's starting point sits inside the dark hero panel
+   (2026-09-27, docs/homepage-principles.md). The slot inverts the page's
+   tokens the way the floating nav does above, so the start card and the
+   journey card — written in the page's own ramp — read on the panel: light
+   ink, a light tint for a card, the hero for a button's text. The hero
+   tokens are the same in both themes, so this needs no dark variant. */
+[data-hero-slot] {
+  --foreground: var(--hero-foreground);
+  --foreground-strong: var(--hero-foreground);
+  --foreground-dim: var(--hero-muted);
+  --background: var(--hero);
+  --surface: color-mix(in srgb, var(--hero-foreground) 8%, var(--hero));
+  --border-ui: var(--hero-muted);
+  --link: var(--hero-foreground);
+  color: var(--hero-foreground);
+}
+
 @media (max-width: 640px) {
   .dg-card {
     padding: 1rem 1.1rem;

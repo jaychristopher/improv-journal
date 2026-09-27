@@ -4,7 +4,7 @@ type: register
 summary: Running log of context-shaping mistakes, by entry point
 epic: "[[Entry-point context]]"
 status: Open
-updated: 2026-09-21
+updated: 2026-09-27
 ---
 
 # Context mistakes — running register
@@ -407,3 +407,25 @@ element — is the cheaper half, and is not code. The lesson worth keeping is
 the one this register already knows in another form: a change measured by
 what it adds is not measured by where it lands, and a night measured entirely
 by tests is not measured by a reader at all.
+
+## 2026-09-27
+
+**A modal between the tagline and everything else** — any arrival → homepage
+— *overload*, and an ordering error. The hero asked "What are you here for?"
+with two buttons that opened a dialog asking a second question before any
+link to content. Measured at 390px, the hero ended exactly at the fold with
+nothing peeking under it (a false floor), the topic directory began 3.2
+screens down, the tallest block on the page was 28 boxes of second-tier
+guides, and every answer the modal could give — the guide clusters, the
+four levels — was already on the page further down. Three published
+findings, each against the route the page led with: audience-based
+navigation as the primary route, a modal used for navigation, a full-screen
+hero. Fixed the same day: the hero is a panel of its own height carrying
+the tagline, the one starting point and the two audiences as plain links;
+the doors' answers are on the page (the clusters grid, a level list); the
+picks are a list of names; a search field joins the shortcuts. The sources,
+the conflicts between them and the ruling are in docs/homepage-principles.md,
+and homepage-principles.test.ts holds the shape. Not measured: how many
+readers ever opened a door — the PostHog events exist and nobody read them
+before the doors went; the next homepage change should read its events
+first.
