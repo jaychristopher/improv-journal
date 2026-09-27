@@ -127,6 +127,40 @@ body {
   --dg-ink-muted: #8f8f8f;
 }
 
+/* A diagram beside its paragraph rather than between paragraphs.
+   The fourteen Viewpoints animations on /viewpoints are one per heading, each
+   followed by the paragraph that describes it. At the column's 624px the
+   figure takes the left 240px and the prose wraps beside it; every heading
+   clears the float, so the next pair starts clean whether the paragraph was
+   longer or shorter than the figure. On a phone it stacks. The file carries
+   the class on its root and buildDiagram carries it through; a landscape
+   drawing stays a plain .dg block. */
+.dg.dg-beside {
+  float: left;
+  /* A fixed box, not the drawing's own height: the tallest drawing is twice
+     the height of the shortest, and a figure much taller than its paragraph
+     leaves the next heading under a gap. The drawing scales to fit and sits
+     centred in the box, so every descriptor starts at the same edge. */
+  width: 240px;
+  height: 280px;
+  margin: 0.4rem 1.75rem 1rem 0;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .dg.dg-beside {
+    float: none;
+    width: 100%;
+    max-width: 260px;
+    margin: 1rem 0;
+  }
+}
+
 .dg-ink,
 .dg-muted,
 .dg-rule,

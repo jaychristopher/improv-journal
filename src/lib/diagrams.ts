@@ -67,8 +67,17 @@ export function buildDiagram(src: string, alt: string): string | null {
   // Everything after the opening tag, which already closes with </svg>.
   const body = svg.slice(open.index + open[0].length);
 
+  // A modifier the file declares on its root is carried through: `dg-beside`
+  // floats the figure beside the paragraph that follows it (globals.css), the
+  // way the fourteen Viewpoints animations sit beside their descriptors. Only
+  // `dg-` tokens pass, so a file cannot carry an unrelated class into the
+  // page; everything else on the root is still replaced.
+  const declared = /\bclass="([^"]*)"/.exec(open[0])?.[1] ?? "";
+  const modifiers = declared.split(/\s+/).filter((c) => /^dg-[a-z-]+$/.test(c));
+  const className = ["dg", ...modifiers].join(" ");
+
   return (
-    `<svg class="dg" role="img" xmlns="http://www.w3.org/2000/svg"` +
+    `<svg class="${className}" role="img" xmlns="http://www.w3.org/2000/svg"` +
     ` viewBox="${viewBox[1]}" width="${width}" height="${height}">` +
     `<title>${escapeText(alt)}</title>${body}`
   );

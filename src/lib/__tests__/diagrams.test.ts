@@ -227,6 +227,23 @@ describe("buildDiagram", () => {
     expect(svg).toContain('<title>Tempo &amp; duration, 4 &lt; 9 areas — "space".</title>');
   });
 
+  /**
+   * The Viewpoints animations sit beside their paragraphs (2026-09-27). The
+   * modifier lives on the file's root so the layout travels with the drawing,
+   * and only `dg-` tokens get through: a file's own classes are otherwise
+   * replaced, which is what keeps a diagram from styling the page.
+   */
+  it("carries a dg- modifier declared on the source root, and nothing else", () => {
+    const beside = buildDiagram(
+      "/images/viewpoint-tempo.svg",
+      "Tempo as four dots making the same crossing.",
+    );
+    expect(beside).toContain('<svg class="dg dg-beside" role="img"');
+    expect(beside).not.toContain("vp-tempo");
+    const block = buildDiagram("/images/viewpoint-silence.svg", "Silence as gaps between sounds.");
+    expect(block).toContain('<svg class="dg" role="img"');
+  });
+
   it("returns null for a file that does not exist", () => {
     expect(buildDiagram("/images/not-a-real-diagram.svg", "Nothing here.")).toBeNull();
   });
