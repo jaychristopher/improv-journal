@@ -1,6 +1,7 @@
 ---
 id: ref-spolin-improvisation-for-theater
 title: "Improvisation for the Theater — Viola Spolin (1963)"
+description: "The book. Spolin's 1963 handbook of theatre games and the side-coaching that runs them — the text nearly every improv class descends from, usually uncited."
 type: reference
 status: draft
 tags: [references, books, spolin, foundational]
@@ -26,7 +27,7 @@ work:
   published: "1963"
   isbn: "081014008X"
 created: "2026-04-04"
-updated: "2026-08-27"
+updated: "2026-09-27"
 ---
 
 **Viola Spolin. *Improvisation for the Theater: A Handbook of Teaching and Directing Techniques.* Northwestern University Press, 1963; third edition 1999.**

@@ -393,7 +393,7 @@ This file is generated from the site's content and its sitemap, so it lists ever
 
 - [Truth in Comedy — Halpern, Close, Johnson (1994)](https://www.physicsofconnection.com/library/truth-in-comedy): The first book to write the Harold down, and the source of most of what Chicago longform believes about itself.
 - [Impro — Keith Johnstone (1979)](https://www.physicsofconnection.com/library/impro-johnstone): The book modern improv is downstream of. More of the vocabulary in use today starts here than in any other single source.
-- [Improvisation for the Theater — Viola Spolin (1963)](https://www.physicsofconnection.com/library/spolin-improvisation-for-theater): The foundational text of improvisational theatre pedagogy, and the origin of the phrase "theatre games".
+- [Improvisation for the Theater — Viola Spolin (1963)](https://www.physicsofconnection.com/library/spolin-improvisation-for-theater): The book. Spolin's 1963 handbook of theatre games and the side-coaching that runs them — the text nearly every improv class descends from, usually uncited.
 - [UCB Comedy Improvisation Manual (2013)](https://www.physicsofconnection.com/library/ucb-manual): The most systematic book ever written about improv. Where Truth in Comedy is a manifesto, this is a curriculum: definitions, worked examples.
 - [Impro for Storytellers — Keith Johnstone (1999)](https://www.physicsofconnection.com/library/impro-storytellers-johnstone): Johnstone's second book, written twenty years after Impro, and the inverse of it in almost every respect.
 - [Improvise — Mick Napier (2004)](https://www.physicsofconnection.com/library/napier-improvise): The book that argues the rules are the problem. Napier founded the Annoyance Theatre in Chicago.
