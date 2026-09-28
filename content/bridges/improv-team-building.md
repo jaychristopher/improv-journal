@@ -3,6 +3,7 @@ title: "Improv Team Building: What Actually Transfers to Work"
 description: "The claim is oversold and the useful part is real. What improv training genuinely changes about a team, what it does not, and why the away-day fails."
 target_keywords:
   - { keyword: "improv team building", volume: 70, difficulty: 0, traffic_potential: 150, parent: "team building improvisation" }
+  - { keyword: "improv games for team building", volume: 100, difficulty: 0, traffic_potential: 100, parent: "improv team building" }
   - { keyword: "improv for business", volume: 70, difficulty: 3, traffic_potential: 150, parent: "improv for business" }
   - { keyword: "improv exercises for team building", volume: 60, difficulty: 0, traffic_potential: 200, parent: "improv team building" }
   - { keyword: "improv training for business", volume: 40, difficulty: 2, traffic_potential: 150, parent: "improv for business" }

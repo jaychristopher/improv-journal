@@ -770,7 +770,8 @@ if (settled.length > 0) {
   const routeOwned = routeReadings.filter(([, r]) => r.search_owner).length;
   console.log(
     `Route pages: ${Object.keys(ROUTE_KEYWORDS).length} register a keyword, ${routeReadings.length} have a results page read ` +
-      `(${routeGated} gated, ${routeOwned} owned by a guide) — the five schools, 2026-09-25. The other hubs are unread.`,
+      `(${routeGated} gated, ${routeOwned} owned by a guide) — the five schools on 2026-09-25, the beginner ` +
+      "picker and the games hub on 2026-09-28. The other hubs are unread.",
   );
   console.log();
 

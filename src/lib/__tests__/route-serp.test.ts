@@ -42,6 +42,23 @@ describe("route pages' results-page readings", () => {
     }
   });
 
+  it("reads the largest hub, and keeps every floor equal to its lowest result", () => {
+    // /improv-games holds the site's biggest term and had no reading until
+    // 2026-09-28, when matching terms for it found "improv games for adults"
+    // (250 a month, difficulty 0, potential 450) registered nowhere, five
+    // months after the April research listed it for this hub. The floor is a
+    // DR 22 blog at 8 on 84 visits; Reddit takes 63% of the page.
+    expect(ROUTE_SERP["/improv-games"]?.serp_query).toBe("improv games");
+    expect(ROUTE_KEYWORDS["/improv-games"].map((k) => k.keyword)).toContain(
+      "improv games for adults",
+    );
+    for (const [route, reading] of Object.entries(ROUTE_SERP)) {
+      if (reading.serp_top10_dr?.length) {
+        expect(reading.serp_min_dr, route).toBe(Math.min(...reading.serp_top10_dr));
+      }
+    }
+  });
+
   it("registers a keyword only where the page's own title says it", () => {
     // The H1 rule keyword-collisions.test.ts applies to hubs: a route that
     // registers a term claims it in its title. iO's page is "iO and the

@@ -18,8 +18,9 @@ import type { BridgeTargetKeyword, SerpReading } from "./schema";
  * number that is not sourced does not go in. Difficulty, potential and parent
  * are recorded where Ahrefs returned them, and a results-page reading lives in
  * ROUTE_SERP below only where somebody read the page (the five tradition
- * routes, 2026-09-25, SA-11.1). Elsewhere absent means nobody has looked,
- * and inventing a verdict would be worse than having none.
+ * routes, 2026-09-25, SA-11.1; the beginner picker and the games hub,
+ * 2026-09-28). Elsewhere absent means nobody has looked, and inventing a
+ * verdict would be worse than having none.
  *
  * Adding a guide that targets anything here is the thing to avoid. If a hub
  * genuinely should hand a term over, move it — do not let both hold it.
@@ -28,15 +29,49 @@ import type { BridgeTargetKeyword, SerpReading } from "./schema";
 export type RouteKeyword = BridgeTargetKeyword;
 
 export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
-  // "improv games for beginners" and "easy improv games" left this list on
-  // 2026-09-28: Ahrefs files both under the parent topic "improv exercises",
-  // not "improv games", and the page that lists the beginner exercises is
-  // the picker's beginner level, which already surfaced for the term at 52
-  // while this hub held it. Parent is the collision test (CLAUDE.md).
+  /**
+   * The hub, and the head term of the site's largest cluster. Parent is the
+   * collision test (CLAUDE.md), and it cuts both ways on this list:
+   *
+   * - "improv games for beginners" and "easy improv games" left on
+   *   2026-09-28. Ahrefs files both under the parent "improv exercises", not
+   *   "improv games", and the picker's beginner level had already surfaced
+   *   for the first at 52 while this hub held it.
+   * - The same reading, matching terms on "improv games" (US), found the
+   *   terms Ahrefs files under the parent "improv games" and three of them
+   *   registered nowhere. "improv games for adults" had been a TODO on this
+   *   hub since the April research (docs/seo-research-2026-04-22.md) and
+   *   was still targeted by nothing on 2026-09-21 (tracker entry 215); the
+   *   two list terms are small on volume and carry the cluster's potential.
+   *   The classroom terms (students, middle school, teens, high school)
+   *   were already on the kids guide, and the team-building one is on its
+   *   guide. The results page is in ROUTE_SERP.
+   */
   "/improv-games": [
     { keyword: "improv games", volume: 3100 },
+    {
+      keyword: "improv games for adults",
+      volume: 250,
+      difficulty: 0,
+      traffic_potential: 450,
+      parent: "improv games",
+    },
     { keyword: "fun improv games", volume: 150 },
-    { keyword: "best improv games", volume: 90 },
+    { keyword: "best improv games", volume: 100 },
+    {
+      keyword: "improv games list",
+      volume: 50,
+      difficulty: 0,
+      traffic_potential: 3100,
+      parent: "improv games",
+    },
+    {
+      keyword: "list of improv games",
+      volume: 50,
+      difficulty: 1,
+      traffic_potential: 2700,
+      parent: "improv games",
+    },
   ],
   /**
    * The beginner level of the exercise picker: the site's list of beginner
@@ -155,6 +190,21 @@ export type RouteSerpReading = SerpReading & {
 };
 
 export const ROUTE_SERP: Record<string, RouteSerpReading> = {
+  "/improv-games": {
+    serp_query: "improv games",
+    serp_checked: "2026-09-28",
+    serp_min_dr: 22,
+    serp_verdict: "winnable",
+    serp_top10_dr: [95, 51, 48, 31, 22, 99, 32],
+    serp_floor_traffic: 84,
+    serp_top_share: 0.63,
+    serp_audience:
+      "Lists, and Reddit first among them: a thread at 2 on 2,735 visits, the Improv Encyclopedia at 3 " +
+      "(DR 51, 764), Hoopla at 6 (DR 48, 362), a children's drama page at 7 (DR 31, 284), a DR 22 improv " +
+      "blog at 8 on 84, YouTube at 9, a teen science cafe's list at 10 (DR 32, 73). Positions 1, 4 and 5 " +
+      "were not organic results, so the top share is Reddit's of the seven returned. The adults term is " +
+      "the same page in a different order, with a DR 8 collective at 4 on 146 visits.",
+  },
   "/tools/exercise-picker/beginner": {
     serp_query: "improv games for beginners",
     serp_checked: "2026-09-28",

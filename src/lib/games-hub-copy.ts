@@ -16,7 +16,7 @@
 export const GAMES_HUB_COPY = {
   // Which Games for Which Group: one paragraph per kind of room.
   whoIsInTheRoom:
-    "The list above is sorted by what each game trains, which is the right way round once you know what you are fixing. If you are standing in front of a room and do not, the more useful question is who is in it.",
+    "The list above is sorted by what each game trains, which is the right way round once you know what you are fixing. If you are standing in front of a room and do not, the more useful question is who is in it. Everything here assumes a room of adults — a class, a team, a night with friends — and children are the one exception, with [a guide of their own](/improv-games-for-kids).",
   beginners:
     "**Complete beginners.** Start with something where nobody can be visibly bad at it, which rules out most scene work. [One-word story](/practice/exercises/one-word-story) is the usual answer: a single word each, no way to steer it, and the failure mode is a funny story rather than an exposed person.",
   children:
