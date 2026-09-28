@@ -5,6 +5,7 @@ import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { Prose } from "@/components/Prose";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl } from "@/lib/content";
+import { EXERCISES_HUB_COPY } from "@/lib/exercises-hub-copy";
 import { orderedExercises } from "@/lib/hub-order";
 import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
@@ -94,6 +95,22 @@ export default async function ExercisesPage() {
       <div data-track="exercise-list">
         <TagFilter items={items} filterGroups={FILTER_GROUPS} />
       </div>
+      {/* The routes out of the index, by who is in the room — the games hub's
+          by-audience section, for this page's readers. The prose lives in
+          exercises-hub-copy.ts; hub-spokes.test.ts holds the links. */}
+      <section className="mt-12" data-track="exercises-by-need">
+        <h2 id="which-exercises-for-which-need" className="mb-3 text-xl font-semibold">
+          Which Exercises for Which Need
+        </h2>
+        {Object.entries(EXERCISES_HUB_COPY).map(([key, text], i, all) => (
+          <Prose
+            key={key}
+            text={text}
+            currentUrl="/practice/exercises"
+            className={i === all.length - 1 ? "text-foreground/70" : "text-foreground/70 mb-4"}
+          />
+        ))}
+      </section>
     </main>
   );
 }

@@ -24,7 +24,7 @@ export const GAMES_HUB_COPY = {
   workshop:
     "**A workshop or class.** The only setting where you can build across a session: a warm-up that costs nothing, an exercise that isolates one skill, then a performance game that needs it. That progression is what the level and focus filters above are for.",
   workTeam:
-    "**A work team.** Different problem entirely, and the games are not the hard part — the power gap is. Anything that risks somebody looking foolish in front of the person who writes their appraisal is a bad idea however good the game is. Whole-group formats where everybody acts at once cost far less than anything with turns, and [5-minute team building](/5-minute-team-building) is built for exactly that constraint.",
+    "**A work team.** Different problem entirely, and the games are not the hard part — the power gap is. Anything that risks somebody looking foolish in front of the person who writes their appraisal is a bad idea however good the game is. Whole-group formats where everybody acts at once cost far less than anything with turns, and [5-minute team building](/5-minute-team-building) is built for exactly that constraint; [improv team building](/improv-team-building) says what a session like that can change and what it cannot.",
   remote:
     "**Remote and video calls.** Most improv games assume a shared physical space and quietly break without one — anything relying on eye contact, simultaneous speech, or knowing whose turn it is will not survive the latency. What works is verbal, strictly sequential, and named-turn: [virtual team building activities](/virtual-team-building-activities) covers why the grid changes the rules.",
 

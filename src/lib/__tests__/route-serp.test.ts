@@ -49,6 +49,8 @@ describe("route pages' results-page readings", () => {
     // months after the April research listed it for this hub. The floor is a
     // DR 22 blog at 8 on 84 visits; Reddit takes 63% of the page.
     expect(ROUTE_SERP["/improv-games"]?.serp_query).toBe("improv games");
+    // And the second hub, read the same day the hub gained its routes out.
+    expect(ROUTE_SERP["/practice/exercises"]?.serp_query).toBe("improv exercises");
     expect(ROUTE_KEYWORDS["/improv-games"].map((k) => k.keyword)).toContain(
       "improv games for adults",
     );

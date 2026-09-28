@@ -18,9 +18,9 @@ import type { BridgeTargetKeyword, SerpReading } from "./schema";
  * number that is not sourced does not go in. Difficulty, potential and parent
  * are recorded where Ahrefs returned them, and a results-page reading lives in
  * ROUTE_SERP below only where somebody read the page (the five tradition
- * routes, 2026-09-25, SA-11.1; the beginner picker and the games hub,
- * 2026-09-28). Elsewhere absent means nobody has looked, and inventing a
- * verdict would be worse than having none.
+ * routes, 2026-09-25, SA-11.1; the beginner picker, the games hub and the
+ * exercises hub, 2026-09-28). Elsewhere absent means nobody has looked, and
+ * inventing a verdict would be worse than having none.
  *
  * Adding a guide that targets anything here is the thing to avoid. If a hub
  * genuinely should hand a term over, move it — do not let both hold it.
@@ -102,7 +102,19 @@ export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
       parent: "improv exercises",
     },
   ],
-  "/practice/exercises": [{ keyword: "improv exercises", volume: 300 }],
+  // Read 2026-09-28, US: 250 a month at difficulty 0, potential 450, and its
+  // own parent — the parent the beginner picker's three terms and the
+  // get-better guide's "improv practice" sit under. An earlier reading said
+  // 300. The results page is in ROUTE_SERP.
+  "/practice/exercises": [
+    {
+      keyword: "improv exercises",
+      volume: 250,
+      difficulty: 0,
+      traffic_potential: 450,
+      parent: "improv exercises",
+    },
+  ],
   "/traditions/johnstone": [
     { keyword: "keith johnstone", volume: 100, difficulty: 30, traffic_potential: 30 },
   ],
@@ -218,6 +230,21 @@ export const ROUTE_SERP: Record<string, RouteSerpReading> = {
       "a Reddit thread, andalsoimprov's list at 4 (DR 25, 51), a Facebook group post, a kids' game page at " +
       "7 (DR 31, 284), a DR 4 blog at 8 on 16 visits, a YouTube demo at 9. Positions 1 and 6 were not " +
       "organic results, so the top share is Hoopla's of the eight returned.",
+  },
+  "/practice/exercises": {
+    serp_query: "improv exercises",
+    serp_checked: "2026-09-28",
+    serp_min_dr: 23,
+    serp_verdict: "winnable",
+    serp_top10_dr: [48, 95, 35, 51, 23, 53, 94],
+    serp_floor_traffic: 6,
+    serp_top_share: 0.75,
+    serp_audience:
+      "Lists for a class or a team: Hoopla's beginner exercises at 2 (DR 48, 360 visits, three quarters of " +
+      "the page), a Reddit thread at 3, the Radical Agreement hub at 5 (DR 35, 19), Improwiki at 6 (DR 51, " +
+      "15), a therapy group's category page at 7 (DR 23, 6), a theatre blog's list at 8 (DR 53, 10), Will " +
+      "Hines on solo practice at 9. Positions 1, 4 and 10 were not organic results — a video carousel, " +
+      "People also ask and a block of nine — so the share is Hoopla's of the seven returned.",
   },
   "/traditions/johnstone": {
     serp_query: "keith johnstone",

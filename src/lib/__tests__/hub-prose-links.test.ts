@@ -56,7 +56,10 @@ function hrefs(inner: string): string[] {
  * the move would have taken it out of the check below, which is the opposite
  * of what moving it was for — see the ceiling at the foot of this file.
  */
-const PROSE_MODULES = [path.join(ROOT, "src", "lib", "games-hub-copy.ts")];
+const PROSE_MODULES = [
+  path.join(ROOT, "src", "lib", "games-hub-copy.ts"),
+  path.join(ROOT, "src", "lib", "exercises-hub-copy.ts"),
+];
 
 /** The route files that hold hub prose and send it through `Prose`. */
 function routedFiles(): string[] {
