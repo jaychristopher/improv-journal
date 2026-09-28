@@ -242,6 +242,18 @@ function NavDropdown({
   );
 }
 
+/**
+ * The id a menu section's heading carries, and its `aria-labelledby` names.
+ *
+ * It was `menu-${label}` — "menu-How It Works" — on every page until
+ * 2026-09-28. An id may not contain whitespace, and aria-labelledby is a
+ * space-separated list of ids, so the attribute named three ids that did
+ * not exist and the section the comment below was written for had no
+ * accessible name at all. aria-references.test.ts holds every reference on
+ * a built page to an id that is there.
+ */
+const menuId = (label: string) => `menu-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
 export function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -441,8 +453,8 @@ export function Nav() {
             two adjacent links to the same URL, the second called
             "Overview". */}
         {NAV_SECTIONS.map((section) => (
-          <section key={section.href} className="mb-8" aria-labelledby={`menu-${section.label}`}>
-            <h2 id={`menu-${section.label}`} className="text-foreground/80 text-2xl font-semibold">
+          <section key={section.href} className="mb-8" aria-labelledby={menuId(section.label)}>
+            <h2 id={menuId(section.label)} className="text-foreground/80 text-2xl font-semibold">
               {section.label}
             </h2>
             <ul className="mt-2 space-y-2 pl-4">
