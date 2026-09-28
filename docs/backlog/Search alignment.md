@@ -29,6 +29,7 @@ stories:
   - "[[SA-19 The library splits in two and only the long half has ever surfaced]]"
   - "[[SA-20 The verdict records whether we can rank and never whether we should]]"
   - "[[SA-21 A reachable position is not a valuable one]]"
+  - "[[SA-22 Nothing has ever read whether the site is indexed]]"
 ---
 
 # Search alignment
@@ -109,3 +110,5 @@ it costs a redirect and a reindex.
   theatre-games is promoted sitewide into a children's drama SERP.
 - [[SA-21 A reachable position is not a valuable one]] — the same floor evidence
   is worth 194 visits on one term and 7 on another. Read the nine SERPs once.
+- [[SA-22 Nothing has ever read whether the site is indexed]] — 32 silent guides, and no reading
+  says whether Google holds them. One signed-in report decides the strategy.

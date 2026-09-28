@@ -684,6 +684,10 @@ if (settled.length > 0) {
     `  Search Console checked ${GSC_SEEN_ON}. Newer guides are excluded — they have no history yet.`,
   );
   console.log(
+    "  Whether these are indexed at all is unread: impressions cannot show a page Google never held. " +
+      "SA-22.1 reads the Page indexing report.",
+  );
+  console.log(
     `  Library URLs changed on ${LIBRARY_MIGRATION}: rows for /library/ref-* before that date describe pages ` +
       "that have moved. Read the new paths beside the old ones; the redirect is in doubt only after 60 days (SA-7.1).",
   );
