@@ -1042,6 +1042,30 @@ console.log(
 );
 console.log();
 
+/**
+ * Three readings from 2026-09-28 the audit cannot take itself.
+ *
+ * - People Also Ask: serp-overview on eight of the site's results pages
+ *   returned thirty questions (docs/seo/people-also-ask.md). Questions about
+ *   the rules of improv, in five countings, sat on five of the eight; the
+ *   rules, what-is-improv and kids guides now ask seven of the thirty in
+ *   Google's words (people-also-ask.test.ts).
+ * - Lab vitals, throttled mobile, eight templates: CLS 0.000 on every one,
+ *   LCP 452–1,120 ms, TTFB 84–347 ms. Speed is not the constraint on
+ *   anything here, and the crawl's slow readings are the crawler's own —
+ *   production answers in 130–480 ms from here with Vercel cache hits.
+ * - Ahrefs' index sees /how-to-be-funny ranking for nothing at all: the
+ *   easiest large term on the site (difficulty 2, a DR 3 page in its top
+ *   ten) and eight months unsurfaced in Search Console. The constraint on
+ *   the generic guides is authority, not the pages.
+ */
+console.log(
+  "Read 2026-09-28: People Also Ask on 8 results pages, 30 questions (docs/seo/people-also-ask.md) — the rules " +
+    "questions sit on 5 of the 8 and the guides now ask 7 of the 30 in Google's words. Lab vitals on 8 templates: " +
+    "CLS 0.000, LCP 452–1,120 ms. Ahrefs' index sees /how-to-be-funny ranking for nothing; authority is the constraint there.",
+);
+console.log();
+
 // Write JSON report
 const outputDir = path.join(process.cwd(), "output");
 fs.mkdirSync(outputDir, { recursive: true });

@@ -23,7 +23,7 @@ primary_cta_target: beginner-foundations
 secondary_cta_target: building-on-offers
 status: validated
 created: "2026-04-13"
-updated: "2026-08-27"
+updated: "2026-09-28"
 ---
 
 # What Is Improv? How Unscripted Theatre Works
@@ -201,6 +201,22 @@ That is a working method rather than a comforting saying. The habit is to treat 
 ### How long does it take to get good at improv?
 
 Most people can play a functional scene after a beginner course of six to eight weeks. Being reliably good — able to do it when the show is going badly, with people you have not played with — takes years, and the curve is unusually flat in the middle. The [rules of improv](/rules-of-improv) are learnable in an afternoon and the thing they describe is not, which is most of why the middle feels so long. [How to get better at improv](/how-to-get-better-at-improv) is the honest account of what actually moves somebody forward.
+
+### What should you not do in improv?
+
+Refuse what your partner just offered, cancel something the scene has already established, or hand the work back with a question. Most lists of [the rules of improv](/rules-of-improv) are those three stated as prohibitions — don't block, don't negate, don't ask questions — and they are rules because each one makes the shared reality come apart instead of build.
+
+The diagnosis pages name the rest by what they do to a scene: [blocking](/how-it-works/diagnosis/blocking) is the general term for any refusal, and [negation](/how-it-works/diagnosis/negation) is the contradiction of what was already true.
+
+### What are improv skills?
+
+Listening, initiating, editing, supporting, heightening and recovering — the moves a scene needs, and knowing which one it needs when it stalls. Each is a specific, trainable habit rather than a talent, which is why the [improv techniques](/practice/techniques) are listed by what they do and the [exercises](/practice/exercises) by what each one trains.
+
+### Is improv good for your brain?
+
+The study people mean is Limb & Braun (2008), the fMRI work on jazz musicians improvising, which found the self-monitoring regions of the prefrontal cortex going quiet while the players improvised. That is evidence that improvising is a distinct state, and it is why "get out of your head" turns out to be closer to literal than metaphorical.
+
+It is not evidence that the state is good for you, which the study did not test, and nothing here claims improv makes anybody smarter. The paper is in the library, with what it does and does not show.
 
 ## The Thing Worth Knowing
 

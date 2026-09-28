@@ -22,7 +22,7 @@ primary_cta_target: sound-ball
 secondary_cta_target: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-09-25"
+updated: "2026-09-28"
 ---
 
 # Improv Games for Kids: What Works at Each Age
@@ -118,6 +118,12 @@ What you do need is a willingness to play rather than supervise. An adult standi
 A classroom works, and the constraint is chairs rather than square metres. Most of these need the group to see each other and to be able to move a little, which means pushing the furniture to the walls rather than booking a hall.
 
 If the furniture cannot move, use the seated games. Sound and word games, story-building round the room, anything where the work is verbal rather than physical — the seated versions lose the physical training and keep the attention training, which is the half that transfers to everything else anyway.
+
+### How do you teach kids improv?
+
+Start with circle games that carry a single rule and keep everybody moving, which works from about five, and hold off on scenes until about nine, because a scene has no rule inside it and a child who runs out of ideas mid-scene is simply stranded. Keep each round short, expect to get through several games in the time adults would spend on one, and play alongside them instead of watching from the edge.
+
+If it tips into chaos, take freedom out of the game rather than adding volume to your voice; if three children are running everything, pick formats with a fixed turn order so nobody decides when they go. The rest of this page is which games do that at which age.
 
 ## What It Is Actually Teaching
 

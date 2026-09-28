@@ -11,7 +11,7 @@ entry_atoms: [yes-and, offers, active-listening, blocking, commitment, spontanei
 entry_path: beginner-foundations
 status: draft
 created: "2026-04-22"
-updated: "2026-08-25"
+updated: "2026-09-28"
 ---
 
 # The Rules of Improv (And Why Half of Them Are Wrong)
@@ -122,13 +122,17 @@ The pattern is that a rule transfers when it was solving a human problem — eva
 
 ## Questions People Ask About the Rules of Improv
 
+### What are the five basic rules of improv?
+
+The five most lists agree on are the five this page takes apart: say "yes, and", don't ask questions, make your partner look good, don't negate, and there are no mistakes. Each is a compression of something one tradition found true, and each, carried around as a slogan, loses the context that made it true. The sections above put the context back.
+
 ### How many rules of improv are there?
 
-There is no agreed number, which is the first thing worth knowing about them. Five is the most common list and it is the one this page takes apart. Tina Fey gives four. Some schools teach nine. The Annoyance teaches approximately none and treats the whole apparatus as the problem.
+There is no agreed number, which is the first thing worth knowing about them. People search for three golden rules, four, five, six and seven, and every one of those numbers is somebody's list. Five is the most common and it is the one this page takes apart. Tina Fey gives four. David Alger's list runs to ten. Some schools teach nine. The Annoyance teaches approximately none and treats the whole apparatus as the problem.
 
 The variation is not sloppiness. Each list is a compression of one tradition's answer to what improvisation is for, and the lists differ because the answers do. Anybody presenting a fixed number is quoting a school without saying which.
 
-### What are Tina Fey's rules of improv?
+### What are Tina Fey's four rules of improv?
 
 Four, from *Bossypants*: agree, say "yes and", make statements, and there are no mistakes, only opportunities. It is the version most people outside improv have encountered, because the book sold to an audience that had never taken a class.
 
