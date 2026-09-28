@@ -57,14 +57,38 @@ describe("podcast series", () => {
     }
   });
 
-  it.runIf(built)("reports the episode count the feed actually carries", async () => {
+  it.runIf(built)("carries only properties schema.org defines for a PodcastSeries", async () => {
+    // Ahrefs' Site Audit crawl of 2026-09-22 failed all three show pages on
+    // schema.org validation, the only structured-data fault on the site.
+    // This test had held `numberOfEpisodes` equal to the feed's count, and
+    // the count was right; the property was not. It is defined on TVSeries,
+    // RadioSeries, VideoGameSeries and CreativeWorkSeason, and PodcastSeries
+    // inherits from CreativeWorkSeries, which has no episode count. Removed
+    // 2026-09-28. The count the feed carries stays in the page's visible
+    // copy, and that is what the last assertion reads.
+    const allowed = new Set([
+      "@context",
+      "@type",
+      "@id",
+      "name",
+      "description",
+      "url",
+      "webFeed",
+      "image",
+      "inLanguage",
+      "publisher",
+    ]);
     for (const show of await loadShows()) {
+      const html = page(`listen/${show.frontmatter.id}.html`);
+      const series = jsonLd(html).find((b) => b["@type"] === "PodcastSeries");
+      const unknown = Object.keys(series).filter((k) => !allowed.has(k));
+      expect(unknown, show.frontmatter.id).toEqual([]);
+      expect(series.numberOfEpisodes).toBeUndefined();
       const seasons = await getEpisodesForShow(show.frontmatter.id);
       const total = seasons.reduce((n, s) => n + s.episodes.length, 0);
-      const series = jsonLd(page(`listen/${show.frontmatter.id}.html`)).find(
-        (b) => b["@type"] === "PodcastSeries",
-      );
-      expect(series.numberOfEpisodes, show.frontmatter.id).toBe(total);
+      expect(total, show.frontmatter.id).toBeGreaterThan(0);
+      // React splits the number and the word with a comment node.
+      expect(html, show.frontmatter.id).toMatch(new RegExp(`${total}(<!-- -->)? episodes`));
     }
   });
 

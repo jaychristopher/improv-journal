@@ -8,17 +8,24 @@ import { SITE_URL } from "@/lib/seo";
  * Organization and BreadcrumbList, the same as any other page. Declaring the
  * series — and pointing webFeed at the RSS — is what lets the page and the feed
  * be understood as the same thing.
+ *
+ * It carried `numberOfEpisodes` until 2026-09-28, and that was the one
+ * structured-data fault on the site: Ahrefs' Site Audit crawl of 2026-09-22
+ * failed all three show pages on schema.org validation and nothing else.
+ * The property belongs to TVSeries, RadioSeries, VideoGameSeries and
+ * CreativeWorkSeason; PodcastSeries inherits from CreativeWorkSeries, which
+ * has no episode count, and the type itself adds only `webFeed` and `actor`.
+ * The count the feed carries stays on the page in the visible copy.
+ * podcast-series.test.ts holds the property set to what the type defines.
  */
 export function PodcastSeriesJsonLd({
   id,
   title,
   description,
-  episodeCount,
 }: {
   id: string;
   title: string;
   description: string;
-  episodeCount: number;
 }) {
   const url = `${SITE_URL}/listen/${id}`;
 
@@ -31,7 +38,6 @@ export function PodcastSeriesJsonLd({
     url,
     webFeed: `${url}/feed.xml`,
     image: `${SITE_URL}/og/podcast?title=${encodeURIComponent(title)}`,
-    numberOfEpisodes: episodeCount,
     inLanguage: "en-US",
     publisher: { "@id": `${SITE_URL}#organization` },
   };

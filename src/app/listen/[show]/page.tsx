@@ -59,12 +59,7 @@ export default async function ShowPage({ params }: { params: Promise<{ show: str
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
-      <PodcastSeriesJsonLd
-        id={fm.id}
-        title={fm.title}
-        description={fm.description}
-        episodeCount={totalEpisodes}
-      />
+      <PodcastSeriesJsonLd id={fm.id} title={fm.title} description={fm.description} />
       <Breadcrumb
         crumbs={[
           { label: "Home", href: "/" },

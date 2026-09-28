@@ -989,6 +989,49 @@ console.log(
 );
 console.log();
 
+/**
+ * Ahrefs' Site Audit has crawled this site under project 9723388 since
+ * launch, and nothing in the repo had read it until 2026-09-28. The crawl of
+ * 2026-09-22 (405 URLs, health 100, no errors) carried 98 URLs with
+ * warnings, read through `site-audit-issues` and `site-audit-page-explorer`:
+ *
+ * - 30 meta descriptions under 110 characters — 17 concept pages, whose
+ *   description deliberately does not restate the title (atomDescription),
+ *   5 library entries, 3 lessons, a path and 4 section hubs. Length is not
+ *   a fault the crawl can judge; nothing changed.
+ * - 10 noindex pages: the exercise picker's level-and-focus combinations,
+ *   noindex by design.
+ * - 9 slow responses to AI crawlers, on static pages (two hubs, three
+ *   guides, three concept pages, one picker combination). The cause is
+ *   unread; the pages are prerendered, so read the edge before the app.
+ * - 3 schema.org validation errors, one per show page: `numberOfEpisodes`
+ *   is not a PodcastSeries property (PodcastSeriesJsonLd). Removed the
+ *   same day — the next crawl should report 0.
+ *
+ * Re-read after each crawl and move the date. The crawl runs on its own; its
+ * counts are the first thing to check when a deploy changes markup sitewide.
+ */
+const SITE_AUDIT = {
+  crawled: "2026-09-22",
+  read: "2026-09-28",
+  urls: 405,
+  health: 100,
+  errors: 0,
+  withWarnings: 98,
+  shortDescriptions: 30,
+  noindex: 10,
+  slowForAiCrawlers: 9,
+  schemaErrors: 3,
+};
+console.log(
+  `Site Audit crawl of ${SITE_AUDIT.crawled}, read ${SITE_AUDIT.read}: ${SITE_AUDIT.urls} URLs, health ` +
+    `${SITE_AUDIT.health}, ${SITE_AUDIT.errors} errors, ${SITE_AUDIT.withWarnings} URLs with warnings — ` +
+    `${SITE_AUDIT.shortDescriptions} short descriptions and ${SITE_AUDIT.noindex} noindex pages are decisions, ` +
+    `${SITE_AUDIT.slowForAiCrawlers} slow responses to AI crawlers are unread, and the ${SITE_AUDIT.schemaErrors} ` +
+    "schema.org errors were the show pages' numberOfEpisodes, removed 2026-09-28. Expect 0 on the next crawl.",
+);
+console.log();
+
 // Write JSON report
 const outputDir = path.join(process.cwd(), "output");
 fs.mkdirSync(outputDir, { recursive: true });

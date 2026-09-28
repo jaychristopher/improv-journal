@@ -22,7 +22,7 @@ primary_cta_target: yes-and-chain
 secondary_cta_target: improv-for-teams
 status: draft
 created: "2026-08-25"
-updated: "2026-09-25"
+updated: "2026-09-28"
 ---
 
 # Improv Team Building: What Actually Transfers to Work
