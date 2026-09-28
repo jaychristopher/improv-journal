@@ -378,7 +378,7 @@ This file is generated from the site's content and its sitemap, so it lists ever
 
 - [Improv Exercise Picker](https://www.physicsofconnection.com/tools/exercise-picker): Find an exercise by level and skill focus.
 - [Improv Prompt Generator](https://www.physicsofconnection.com/tools/improv-prompt-generator): Ranked scene starters for any room, on demand.
-- [Beginner Improv Exercises](https://www.physicsofconnection.com/tools/exercise-picker/beginner): Easy improv exercises for groups with no experience. Each one builds listening, presence, or collaboration — no performance skills required.
+- [Improv Games for Beginners](https://www.physicsofconnection.com/tools/exercise-picker/beginner): Easy improv games and exercises for groups with no experience. Each one builds listening, presence, or collaboration — no performance skills required.
 - [Beginner Presence & Listening Improv Exercises](https://www.physicsofconnection.com/tools/exercise-picker/beginner/presence): Exercises that train sustained attention, active listening, and being fully in the moment.
 - [Beginner Ensemble & Group Mind Improv Exercises](https://www.physicsofconnection.com/tools/exercise-picker/beginner/ensemble): Exercises that build shared awareness, group coordination, and the ability to create as one.
 - [Beginner Courage & Commitment Improv Exercises](https://www.physicsofconnection.com/tools/exercise-picker/beginner/courage): Exercises that practice bold choices, full commitment, and acting before overthinking.

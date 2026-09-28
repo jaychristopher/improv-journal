@@ -40,9 +40,13 @@ export const LEVELS: LevelConfig[] = [
   {
     slug: "beginner",
     label: "Beginner",
-    title: "Beginner Improv Exercises",
+    // The H1 rule: a route holds a term only where its own title says it
+    // (keyword-collisions.test.ts). "Improv games for beginners" is the
+    // term this page surfaces for; it said "Beginner Improv Exercises" until
+    // 2026-09-28, and the games hub held the term instead (route-keywords.ts).
+    title: "Improv Games for Beginners",
     description:
-      "Easy improv exercises for groups with no experience. Each one builds listening, presence, or collaboration — no performance skills required.",
+      "Easy improv games and exercises for groups with no experience. Each one builds listening, presence, or collaboration — no performance skills required.",
     orientation: [
       "Order matters more than selection. Start with the exercises that need no words — mirroring, pass the clap, the machine — because what a beginner is actually afraid of is being judged on what they say. Twenty minutes where nobody has to say anything changes how the verbal exercises land afterwards.",
       "Check the group size before you plan. Big Booty, Pass the Clap and Zip Zap Zop need a circle of five or more. Mirroring, gift giving, last word response and one-word story work with two people, so if you are practising with one friend the usable list is shorter than it looks.",

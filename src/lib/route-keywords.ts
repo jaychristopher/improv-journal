@@ -28,12 +28,44 @@ import type { BridgeTargetKeyword, SerpReading } from "./schema";
 export type RouteKeyword = BridgeTargetKeyword;
 
 export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
+  // "improv games for beginners" and "easy improv games" left this list on
+  // 2026-09-28: Ahrefs files both under the parent topic "improv exercises",
+  // not "improv games", and the page that lists the beginner exercises is
+  // the picker's beginner level, which already surfaced for the term at 52
+  // while this hub held it. Parent is the collision test (CLAUDE.md).
   "/improv-games": [
     { keyword: "improv games", volume: 3100 },
     { keyword: "fun improv games", volume: 150 },
-    { keyword: "improv games for beginners", volume: 150 },
     { keyword: "best improv games", volume: 90 },
-    { keyword: "easy improv games", volume: 80 },
+  ],
+  /**
+   * The beginner level of the exercise picker: the site's list of beginner
+   * games, with the order to run them in. Read 2026-09-28, US: all three
+   * terms sit under the parent "improv exercises" at difficulty 0, and the
+   * results page (ROUTE_SERP) has a DR 4 blog holding position 8.
+   */
+  "/tools/exercise-picker/beginner": [
+    {
+      keyword: "improv games for beginners",
+      volume: 150,
+      difficulty: 0,
+      traffic_potential: 450,
+      parent: "improv exercises",
+    },
+    {
+      keyword: "easy improv games",
+      volume: 50,
+      difficulty: 0,
+      traffic_potential: 400,
+      parent: "improv exercises",
+    },
+    {
+      keyword: "beginner improv games",
+      volume: 40,
+      difficulty: 0,
+      traffic_potential: 450,
+      parent: "improv exercises",
+    },
   ],
   "/practice/exercises": [{ keyword: "improv exercises", volume: 300 }],
   "/traditions/johnstone": [
@@ -123,6 +155,20 @@ export type RouteSerpReading = SerpReading & {
 };
 
 export const ROUTE_SERP: Record<string, RouteSerpReading> = {
+  "/tools/exercise-picker/beginner": {
+    serp_query: "improv games for beginners",
+    serp_checked: "2026-09-28",
+    serp_min_dr: 4,
+    serp_verdict: "winnable",
+    serp_top10_dr: [48, 95, 25, 100, 31, 4, 99, 48],
+    serp_floor_traffic: 16,
+    serp_top_share: 0.34,
+    serp_audience:
+      "Lists of games for a first class: Hoopla's exercise pages at 2 and 10 (DR 48, 360 and 205 visits), " +
+      "a Reddit thread, andalsoimprov's list at 4 (DR 25, 51), a Facebook group post, a kids' game page at " +
+      "7 (DR 31, 284), a DR 4 blog at 8 on 16 visits, a YouTube demo at 9. Positions 1 and 6 were not " +
+      "organic results, so the top share is Hoopla's of the eight returned.",
+  },
   "/traditions/johnstone": {
     serp_query: "keith johnstone",
     serp_checked: "2026-09-25",

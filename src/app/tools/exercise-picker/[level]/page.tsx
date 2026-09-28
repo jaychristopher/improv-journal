@@ -24,7 +24,7 @@ export async function generateMetadata({
   const config = getLevelBySlug(level);
   if (!config) return {};
   return {
-    title: pageTitle(`${config.title}: Warm-Up Games and Drills`),
+    title: pageTitle(`${config.title}: Warm-Ups and Drills`),
     description: metaDescription(config.description),
     alternates: { canonical: `/tools/exercise-picker/${level}` },
   };

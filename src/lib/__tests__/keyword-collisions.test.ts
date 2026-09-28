@@ -20,6 +20,7 @@ const HUB_TITLE_SOURCES: Record<string, string> = {
   "/traditions/ucb": "src/app/traditions/[tradition]/page.tsx",
   "/traditions/annoyance": "src/app/traditions/[tradition]/page.tsx",
   "/library": "src/app/library/page.tsx",
+  "/tools/exercise-picker/beginner": "src/app/tools/exercise-picker/picker-config.ts",
 };
 
 /** The `pageTitle("...")` argument and any literal `<h1>` text in a hub source. */
@@ -30,6 +31,12 @@ function hubTitles(route: string): string[] {
     const key = route.split("/").pop();
     const label = src.match(new RegExp(`\\b${key}:\\s*\\{\\s*label:\\s*"([^"]+)"`))?.[1];
     if (label) titles.push(label);
+  } else if (route.startsWith("/tools/exercise-picker/")) {
+    // A level's title lives in picker-config.ts, on the entry whose slug is
+    // the route's last segment; the page renders it as its H1.
+    const slug = route.split("/").pop();
+    const title = src.match(new RegExp(`slug:\\s*"${slug}",[^}]*?title:\\s*"([^"]+)"`, "s"))?.[1];
+    if (title) titles.push(title);
   } else {
     for (const m of src.matchAll(/pageTitle\("([^"]+)"\)/g)) titles.push(m[1]);
   }
