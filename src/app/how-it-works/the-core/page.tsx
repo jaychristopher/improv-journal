@@ -8,7 +8,7 @@ import { Prose } from "@/components/Prose";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { CORE_TERM } from "@/lib/glossary";
 import { hubCrumb, HUBS } from "@/lib/hubs";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 import {
   CORE_DEFINITION,
   CORE_HREF,
@@ -29,12 +29,12 @@ import {
 const DESCRIPTION =
   "The improv ideas that require each other: read any one and you are reading them all. Who they are, and why the sidebar folds them into one item.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   // The route-pages label is "The Core"; the title must start with it.
   title: pageTitle("The Core: The Improv Ideas That Require Each Other"),
   description: DESCRIPTION,
   alternates: { canonical: CORE_HREF },
-};
+});
 
 export default async function TheCorePage() {
   const atoms = await loadAtoms();

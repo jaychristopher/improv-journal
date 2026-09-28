@@ -4,18 +4,18 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { CollectionJsonLd } from "@/components/CollectionJsonLd";
 import { HUBS, hubSelfCrumb } from "@/lib/hubs";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 
 import { buildLessonsIndex, pathMembershipSentence } from "./lessons-index";
 
 export const THREADS_URL = HUBS.threads.href;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle(`${HUBS.threads.h1}: The Ideas Worked Through in Full`),
   description:
     "Longer pieces that take the atoms and follow one argument all the way — scene anatomy, the plateau, and the physics under an ordinary room.",
   alternates: { canonical: THREADS_URL },
-};
+});
 
 const ORIENTATION_LEAD =
   "Atoms name one thing each. Lessons are where several of them get put together and followed until the argument finishes — longer, and meant to be read rather than referred to.";

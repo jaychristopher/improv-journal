@@ -5,9 +5,9 @@ import { AlsoCalled } from "@/components/AlsoCalled";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   /**
    * The last major hub whose title claimed no subject.
    *
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   description:
     "How improv works underneath the games: six reasons every conversation is hard, and eight things that help. Worked out live, on stage, without a script.",
   alternates: { canonical: "/how-it-works" },
-};
+});
 
 /**
  * Orienting paragraphs for this hub, held in a const the way guide-categories

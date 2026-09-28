@@ -5,14 +5,14 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { loadAtoms } from "@/lib/content";
 import { HUBS } from "@/lib/hubs";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle("Improv Practice: Techniques, Exercises, and Formats"),
   description:
     "Exercises, techniques, show formats, and the vocabulary to name what's happening in scenes and conversations.",
   alternates: { canonical: "/practice" },
-};
+});
 
 /**
  * Orienting paragraphs for this hub, held in a const the way guide-categories

@@ -7,9 +7,9 @@ import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl } from "@/lib/content";
 import { EXERCISES_HUB_COPY } from "@/lib/exercises-hub-copy";
 import { orderedExercises } from "@/lib/hub-order";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   /**
    * The bare term was the whole title, which is the weakest thing a page can
    * do with the one line it gets in a result. This hub is the declared owner
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Structured drills that each build one improv skill. What the constraint is for, what it trains, and when to run it — filtered by level and focus area.",
   alternates: { canonical: "/practice/exercises" },
-};
+});
 
 const FILTER_GROUPS = [
   {

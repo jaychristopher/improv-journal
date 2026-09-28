@@ -4,12 +4,12 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { getEpisodesForShow, loadShows } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const shows = await loadShows();
 
-  return {
+  return hubMetadata({
     /**
      * "Listen" was the whole title — six characters, no subject in it — on a
      * page linked from the nav and the footer of all 376 pages. Nothing on
@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
         })),
       },
     },
-  };
+  });
 }
 
 /**

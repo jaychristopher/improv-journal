@@ -10,7 +10,7 @@ import {
   isIndexableCombination,
 } from "@/lib/exercise-picker";
 import { focusPrinciplesNote } from "@/lib/picker-principles";
-import { metaDescription, pageTitle } from "@/lib/seo";
+import { hubMetadata, metaDescription, pageTitle } from "@/lib/seo";
 
 import { FOCUSES, getFocusBySlug, getLevelBySlug, LEVELS } from "../../picker-config";
 
@@ -40,12 +40,12 @@ export async function generateMetadata({
   // collect the signal.
   const indexable = await isIndexableCombination(level, focus);
 
-  return {
+  return hubMetadata({
     title: pageTitle(title),
     description,
     alternates: { canonical: `/tools/exercise-picker/${level}/${focus}` },
     ...(indexable ? {} : { robots: { index: false, follow: true } }),
-  };
+  });
 }
 
 export default async function LevelFocusPage({

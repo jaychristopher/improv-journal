@@ -6,15 +6,15 @@ import { Prose } from "@/components/Prose";
 import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl } from "@/lib/content";
 import { orderedTechniques } from "@/lib/hub-order";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   // Same correction as the exercises hub: the term alone was the entire title.
   title: pageTitle("Improv Techniques: The Moves and When to Use Them"),
   description:
     "The specific moves — how to listen, initiate, edit, support, heighten and recover — and which one a scene actually needs when it stalls.",
   alternates: { canonical: "/practice/techniques" },
-};
+});
 
 const FILTER_GROUPS = [
   {

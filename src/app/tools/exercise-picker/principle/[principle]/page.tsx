@@ -12,7 +12,7 @@ import {
   principleFacets,
   principleFacetTitle,
 } from "@/lib/picker-principles";
-import { metaDescription, pageTitle } from "@/lib/seo";
+import { hubMetadata, metaDescription, pageTitle } from "@/lib/seo";
 
 export async function generateStaticParams() {
   // A principle no drill's Trains line names gets no page: it would promise
@@ -30,14 +30,14 @@ export async function generateMetadata({
   if (!facet) return {};
 
   const title = principleFacetTitle(facet.title);
-  return {
+  return hubMetadata({
     title: pageTitle(title),
     description: metaDescription(principleFacetDescription(facet.title, facet.drills.length)),
     alternates: { canonical: facet.href },
     // Thin facets stay reachable and stay out of the index, as the
     // level/focus facets do. `follow` keeps the drills' signal flowing.
     ...(isIndexablePrincipleFacet(facet) ? {} : { robots: { index: false, follow: true } }),
-  };
+  });
 }
 
 export default async function PrincipleFacetPage({

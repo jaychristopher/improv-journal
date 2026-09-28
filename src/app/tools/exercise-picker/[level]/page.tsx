@@ -7,7 +7,7 @@ import { Prose } from "@/components/Prose";
 import { audiencesForPickerLevel } from "@/lib/audience-hub";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { getPopulatedCombinations, matchesLevel } from "@/lib/exercise-picker";
-import { extractDescription, metaDescription, pageTitle } from "@/lib/seo";
+import { extractDescription, hubMetadata, metaDescription, pageTitle } from "@/lib/seo";
 
 import { exerciseFocuses, FOCUSES, getLevelBySlug, LEVELS } from "../picker-config";
 
@@ -23,11 +23,11 @@ export async function generateMetadata({
   const { level } = await params;
   const config = getLevelBySlug(level);
   if (!config) return {};
-  return {
+  return hubMetadata({
     title: pageTitle(`${config.title}: Warm-Ups and Drills`),
     description: metaDescription(config.description),
     alternates: { canonical: `/tools/exercise-picker/${level}` },
-  };
+  });
 }
 
 export default async function LevelPage({ params }: { params: Promise<{ level: string }> }) {

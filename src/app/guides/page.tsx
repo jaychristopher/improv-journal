@@ -5,14 +5,14 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { loadBridges } from "@/lib/content";
 import { byReach, GUIDE_CATEGORIES, orderedCategories } from "@/lib/guide-categories";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle("Improv Guides: Confidence, Conversation and Teams"),
   description:
     "Guides for overthinking, stage fright, team dynamics, feedback, and more — connecting improv principles to everyday challenges.",
   alternates: { canonical: "/guides" },
-};
+});
 
 export default async function GuidesPage() {
   const bridges = await loadBridges();

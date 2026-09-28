@@ -10,7 +10,7 @@ import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { principleFailures } from "@/lib/principle-failures";
 import { sortPrinciples } from "@/lib/principle-order";
 import { FAILURES_LABEL } from "@/lib/relation-labels";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 import { getSystemCounts } from "@/lib/system-counts";
 
 const SECTIONS = [
@@ -26,7 +26,7 @@ const SECTIONS = [
 
 export async function generateMetadata(): Promise<Metadata> {
   const { principles } = await getSystemCounts();
-  return {
+  return hubMetadata({
     /**
      * Deliberately not "rules of improv". /rules-of-improv is a 1,100-word
      * guide targeting that exact term, and this index carried it at the front
@@ -54,7 +54,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "The nine improv principles and what each is actually for — not moral rules but structural commands that stop a shared reality from collapsing.",
     alternates: { canonical: "/how-it-works/principles" },
-  };
+  });
 }
 
 export default async function PrinciplesPage() {

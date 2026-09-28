@@ -3,6 +3,8 @@
  * Central module for metadata generation across all pages.
  */
 
+import type { Metadata } from "next";
+
 import type { AtomType } from "./schema";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.physicsofconnection.com";
@@ -59,6 +61,47 @@ export function ogImages(title: string, eyebrow?: string, sub?: string | null) {
   if (eyebrow) params.set("eyebrow", eyebrow);
   if (sub) params.set("sub", sub.slice(0, 200));
   return [{ url: `/og?${params.toString()}`, width: 1200, height: 630, alt: title }];
+}
+
+type HubMetadata = Omit<Metadata, "title" | "description" | "alternates"> & {
+  title: string | { absolute: string };
+  description: string;
+  alternates: { canonical: string } & NonNullable<Metadata["alternates"]>;
+};
+
+/**
+ * A hub's metadata with the complete share card the layout cannot give it.
+ *
+ * Next replaces the layout's openGraph object rather than merging it, so a
+ * route that sets any of the block must set all of it (open-graph.test.ts).
+ * Sixteen hubs and the picker's pages set none and inherited the layout's
+ * card: the framework's default image — the site's name and tagline — with
+ * no page title on it and no og:url, on the most-linked pages of the site,
+ * while every guide, concept and the games hub had a titled card. Ahrefs'
+ * Site Audit of 2026-09-22 flagged that default image URL on all 32 pages
+ * carrying it; the guides' cards on /og passed. Since 2026-09-28 every hub
+ * builds its block here, from the title, description and canonical it
+ * already declares, so the card and the page cannot say different things.
+ *
+ * `title` is what pageTitle returned — the string, or the absolute form of
+ * it when the brand suffix would not fit — and the card carries the words
+ * either way. The `pageTitle("…")` literal stays in the route file, where
+ * keyword-collisions.test.ts reads it.
+ */
+export function hubMetadata(meta: HubMetadata): Metadata {
+  const title = typeof meta.title === "string" ? meta.title : meta.title.absolute;
+  return {
+    ...meta,
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      locale: "en_US",
+      title,
+      description: meta.description,
+      url: meta.alternates.canonical,
+      images: ogImages(title),
+    },
+  };
 }
 
 /**

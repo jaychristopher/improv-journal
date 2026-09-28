@@ -23,11 +23,13 @@ const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "index.html"));
  * anonymous. For a site whose problem is that nobody has heard of it, the name
  * on the card is not a detail.
  *
- * og:url is deliberately not asserted here. Sixteen hub pages inherit their
- * whole openGraph object from the layout, which cannot know a per-page URL, and
- * adding a partial block to reach og:url would wipe the type, siteName and
- * locale they currently inherit correctly — a worse card in exchange for a tag
- * that duplicates a self-referential canonical those pages already have.
+ * og:url is not asserted in the first test. Until 2026-09-28 sixteen hub
+ * pages inherited their whole openGraph object from the layout, which cannot
+ * know a per-page URL, and a partial block to reach og:url would have wiped
+ * the type, siteName and locale they inherited correctly. hubMetadata
+ * (seo.ts) now builds the whole block for them, and the third test below
+ * holds every indexable page to a card of its own; /search and the 404 page
+ * still inherit the layout's, and both are noindex.
  */
 
 function walk(dir: string, acc: string[] = []): string[] {
@@ -73,6 +75,33 @@ describe("open graph", () => {
     // An unbuilt tree would make this pass on nothing.
     expect(checked).toBeGreaterThan(300);
     expect(missing).toEqual([]);
+  });
+
+  it.runIf(built)("gives every indexable page a card of its own, not the site's", () => {
+    // Sixteen hubs and the picker's pages carried the framework's default
+    // image — the site's name and tagline, no page title, no og:url — on
+    // the most-linked pages of the site, while every guide and concept had a
+    // titled card on /og. Ahrefs' Site Audit of 2026-09-22 flagged that
+    // default image URL on all 32 pages carrying it, past the hundred issues
+    // its issues endpoint returns; the page explorer's og_tags_valid found
+    // them. hubMetadata builds the block from what the route already
+    // declares, so this holds the outcome and not the helper.
+    const wrong: string[] = [];
+    let checked = 0;
+
+    for (const file of walk(APP)) {
+      const html = fs.readFileSync(file, "utf-8");
+      if (!/<meta property="og:title"/.test(html)) continue;
+      if (/<meta name="robots" content="[^"]*noindex/.test(html)) continue;
+      checked++;
+      const name = relativeName(file);
+      const image = /<meta property="og:image" content="([^"]*)"/.exec(html)?.[1] ?? "";
+      if (!image.includes("/og?")) wrong.push(`${name}: image ${image}`);
+      if (!/<meta property="og:url"/.test(html)) wrong.push(`${name}: no og:url`);
+    }
+
+    expect(checked).toBeGreaterThan(300);
+    expect(wrong).toEqual([]);
   });
 
   it.runIf(built)("names this site, not a placeholder", () => {

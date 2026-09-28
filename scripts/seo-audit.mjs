@@ -1007,6 +1007,13 @@ console.log();
  * - 3 schema.org validation errors, one per show page: `numberOfEpisodes`
  *   is not a PodcastSeries property (PodcastSeriesJsonLd). Removed the
  *   same day — the next crawl should report 0.
+ * - 32 pages whose og:image URL the crawl marks invalid: every section hub
+ *   and picker page inherited the layout's card — the framework's default
+ *   image with the site's name on it, no page title, no og:url — while the
+ *   guides' titled cards on /og passed. The issues endpoint returns its
+ *   first hundred rows and this class sat past them; the page explorer's
+ *   `og_tags_valid` found it. hubMetadata (seo.ts) gives those pages cards
+ *   of their own from 2026-09-28; /search and the 404 page keep the site's.
  *
  * Re-read after each crawl and move the date. The crawl runs on its own; its
  * counts are the first thing to check when a deploy changes markup sitewide.
@@ -1022,13 +1029,16 @@ const SITE_AUDIT = {
   noindex: 10,
   slowForAiCrawlers: 9,
   schemaErrors: 3,
+  defaultShareCards: 32,
 };
 console.log(
   `Site Audit crawl of ${SITE_AUDIT.crawled}, read ${SITE_AUDIT.read}: ${SITE_AUDIT.urls} URLs, health ` +
     `${SITE_AUDIT.health}, ${SITE_AUDIT.errors} errors, ${SITE_AUDIT.withWarnings} URLs with warnings — ` +
     `${SITE_AUDIT.shortDescriptions} short descriptions and ${SITE_AUDIT.noindex} noindex pages are decisions, ` +
     `${SITE_AUDIT.slowForAiCrawlers} slow responses to AI crawlers are unread, and the ${SITE_AUDIT.schemaErrors} ` +
-    "schema.org errors were the show pages' numberOfEpisodes, removed 2026-09-28. Expect 0 on the next crawl.",
+    "schema.org errors were the show pages' numberOfEpisodes, removed 2026-09-28. Expect 0 on the next crawl. " +
+    `${SITE_AUDIT.defaultShareCards} pages on the framework's default share card, flagged past the hundred issues ` +
+    "the endpoint returns, have cards of their own since 2026-09-28 (hubMetadata).",
 );
 console.log();
 

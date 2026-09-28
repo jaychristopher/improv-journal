@@ -8,14 +8,14 @@ import { Prose } from "@/components/Prose";
 import { getAtomUrl, loadAtoms } from "@/lib/content";
 import { COUNTER_DRILLS_CAP, counterDrills } from "@/lib/counter-drills";
 import { loadDiagnosisAtoms } from "@/lib/diagnosis";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle("When It Breaks: Improv Failure Modes and Recovery"),
   description:
     "Collapse modes, failure patterns, and recovery — the diagnostic vocabulary for naming what went wrong and finding the way back.",
   alternates: { canonical: "/how-it-works/diagnosis" },
-};
+});
 
 export default async function DiagnosisPage() {
   // Every framework, antipattern and pattern atom, by type — see lib/diagnosis

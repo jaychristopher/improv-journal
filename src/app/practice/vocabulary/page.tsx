@@ -5,14 +5,14 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { CORE_TERM, GLOSSARY_URL, groupGlossaryTerms, loadGlossaryTerms } from "@/lib/glossary";
 import { hubCrumb, HUBS, hubSelfCrumb } from "@/lib/hubs";
-import { pageTitle, SITE_URL } from "@/lib/seo";
+import { hubMetadata, pageTitle, SITE_URL } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle(`${HUBS.glossary.h1}: Vocabulary and Terms Explained`),
   description:
     "A glossary of improv terms — what each one means and what it names in a scene, a show, or a conversation.",
   alternates: { canonical: GLOSSARY_URL },
-};
+});
 
 export default async function VocabularyPage() {
   // The atoms' terms, plus the one the site coined for its own structure:

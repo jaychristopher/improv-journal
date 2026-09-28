@@ -9,9 +9,9 @@ import { TagFilter } from "@/components/TagFilter";
 import { getAtomUrl } from "@/lib/content";
 import { PREPARE_WITH_LABEL, prepareWithFor } from "@/lib/format-drills";
 import { orderedFormats } from "@/lib/hub-order";
-import { leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
+import { hubMetadata, leadParagraph, pageTitle, stripLeadLabel } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   // Search Console has this page surfacing only for long-form queries —
   // "long form improv", "what is long form improv", "long form improv
   // formats" — while the title said neither "long" nor "short". The page
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Long form and short form explained, every format from Harold to Armando, and how to choose one for the cast and the running time you actually have.",
   alternates: { canonical: "/practice/formats" },
-};
+});
 
 const FILTER_GROUPS = [
   {

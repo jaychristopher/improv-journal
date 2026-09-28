@@ -7,16 +7,16 @@ import { loadPaths } from "@/lib/content";
 import { HUBS, hubSelfCrumb } from "@/lib/hubs";
 import { audienceRank, getPathAudience, getPathTitle } from "@/lib/path-progression";
 import { getRecommendedPath } from "@/lib/path-recommendations";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 import { getLadderSeedShare } from "@/lib/status-distribution";
 import { ladderTraditionsSentence } from "@/lib/tradition-curriculum";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle(`${HUBS.paths.h1}: Beginner to Performer`),
   description:
     "Structured guides for wherever you are in your journey - beginner through performer.",
   alternates: { canonical: HUBS.paths.href },
-};
+});
 
 const STEPS = [
   {

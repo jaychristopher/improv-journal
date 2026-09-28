@@ -7,9 +7,9 @@ import { loadAtoms } from "@/lib/content";
 import { HUBS, hubSelfCrumb } from "@/lib/hubs";
 import { librarySlug } from "@/lib/library-slug";
 import type { ExternalLink } from "@/lib/schema";
-import { pageTitle, SITE_URL } from "@/lib/seo";
+import { hubMetadata, pageTitle, SITE_URL } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   // Written out rather than built from HUBS.library.h1: keyword-collisions
   // reads this route's `pageTitle("…")` literal from source, and hub-headings
   // holds the built title to the heading, which does read the table.
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "The books, podcasts, and research behind these ideas — from improv's foundational texts to cognitive science.",
   alternates: { canonical: HUBS.library.href },
-};
+});
 
 const TIERS: { label: string; description: string; ids: string[] }[] = [
   {

@@ -4,17 +4,17 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
 import { getAtomsForTradition, getTraditionNames } from "@/lib/content";
-import { pageTitle } from "@/lib/seo";
+import { hubMetadata, pageTitle } from "@/lib/seo";
 import { splitTraditionMembers } from "@/lib/tradition-disagreements";
 import { guideCountsByTradition, type TraditionId } from "@/lib/tradition-guides";
 import { textCountsByTradition } from "@/lib/tradition-texts";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = hubMetadata({
   title: pageTitle("Improv Traditions: Johnstone, Spolin, Close, and UCB"),
   description:
     "Five schools of improv thought — Johnstone, Spolin, Close, UCB, and Annoyance — compared, contrasted, and connected.",
   alternates: { canonical: "/traditions" },
-};
+});
 
 const TRADITION_INFO: Record<string, { label: string; desc: string }> = {
   johnstone: {
