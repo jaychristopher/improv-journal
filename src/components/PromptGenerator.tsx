@@ -410,6 +410,7 @@ export function PromptGenerator({
   });
 
   const elapsed = draw ? Math.max(0, Math.floor((now - draw.drawnAt) / 1000)) : 0;
+  const previous = history.filter((entry) => entry.card !== card);
   const cast = draw?.parts
     ? CLASSIC_PARTS.some((part) => draw.parts?.[part]?.prompt.cast === "group")
       ? "group"
@@ -670,24 +671,25 @@ export function PromptGenerator({
                   </ToolAction>
                 </div>
 
-                {/* What has been dealt this session, newest first, below the
-                    buttons: a teacher who handed eight pairs eight prompts can
-                    read them back, and the whole list selects and copies in
-                    one go. No star, no save — the ones worth keeping are
-                    already on the page. */}
-                {history.length > 0 && (
+                {/* What has been dealt before this card, newest first, below
+                    the buttons: a teacher who handed eight pairs eight prompts
+                    can read them back, and the whole list selects and copies
+                    in one go. No star, no save — the ones worth keeping are
+                    already on the page. The card on screen is not repeated
+                    here (the owner saw it twice, 2026-09-30). */}
+                {previous.length > 0 && (
                   <section
-                    aria-label="Drawn this session"
+                    aria-label="Drawn before this one"
                     className="border-foreground/10 mt-10 border-t pt-4"
                   >
                     <p className="text-foreground-dim text-xs tracking-wider uppercase">
-                      Drawn this session
+                      Drawn before this one
                     </p>
                     <ol
                       className="text-foreground/70 mt-2 space-y-1 text-sm"
                       data-testid="prompt-history"
                     >
-                      {history.map((entry) => (
+                      {previous.map((entry) => (
                         <li key={entry.card}>{entry.text.replace(/\n/g, " · ")}</li>
                       ))}
                     </ol>
