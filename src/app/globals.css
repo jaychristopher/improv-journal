@@ -518,3 +518,48 @@ body {
  * padding — that space is now between the panel and the breadcrumb, which is
  * where it belongs.
  */
+
+/*
+ * Printed, a guide's lists come out as slips: one prompt to a line with a cut
+ * line under each, the site's name at the foot, and nothing that only makes
+ * sense on a screen — the hero tool, the menu, the breadcrumb, the contents,
+ * the rails. Theatrefolk gates fifty opening lines behind an email for
+ * exactly this; here the bag of slips is a pair of scissors away
+ * (docs/improv-prompts-competitors.md, item 13). Scoped to the article the
+ * guides and tool pages mark as their body, so every list page prints this
+ * way and nothing else changes.
+ */
+@media print {
+  body > :not(main) {
+    display: none !important;
+  }
+  main > :not(header):not(article[data-track="body"]) {
+    display: none !important;
+  }
+  article[data-track="body"] ul,
+  article[data-track="body"] ol {
+    list-style: none;
+    padding-left: 0;
+  }
+  article[data-track="body"] li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0;
+    padding: 0.55rem 0;
+    border-bottom: 1px dashed #888;
+  }
+  article[data-track="body"] li::marker {
+    content: "";
+  }
+  article[data-track="body"] a {
+    color: inherit;
+    text-decoration: none;
+  }
+  article[data-track="body"]::after {
+    content: "physicsofconnection.com";
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #666;
+  }
+}

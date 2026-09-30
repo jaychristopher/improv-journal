@@ -11,7 +11,12 @@ import { PromptGenerator } from "@/components/PromptGenerator";
 import { hasPromptTryLine, PromptTryLine } from "@/components/PromptTryLine";
 
 import { loadAtoms } from "../content";
-import { generatorHrefFor, PROMPT_CATEGORIES, PROMPT_USE_CASES } from "../prompt-bank";
+import {
+  generatorHrefFor,
+  PROMPT_CATEGORIES,
+  PROMPT_KINDS,
+  PROMPT_USE_CASES,
+} from "../prompt-bank";
 import { resolveIds, resolvePromptConcepts } from "../prompt-concepts";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
@@ -59,9 +64,10 @@ describe("PromptTryLine", () => {
   afterEach(cleanup);
 
   it("offers the line on every concept a category names, and no other", async () => {
-    const named = new Set(PROMPT_CATEGORIES.flatMap((c) => c.concepts));
+    const named = new Set(PROMPT_KINDS.flatMap((c) => c.concepts));
     // 7 concepts on 2026-09-22: relationship, initiation, environment,
-    // space-work, want, tilt, suggestion.
+    // space-work, want, tilt, suggestion. The classic added base-reality on
+    // 2026-09-30, so the try line now sits on that page too.
     expect(named.size).toBeGreaterThanOrEqual(7);
     for (const id of named) expect(hasPromptTryLine(id), id).toBe(true);
     expect(hasPromptTryLine("want")).toBe(true);

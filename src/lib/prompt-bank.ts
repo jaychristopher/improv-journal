@@ -11,6 +11,14 @@
  *
  * Every prompt the article lists is in here, and a test holds the two in
  * agreement. The rest were written to the same criteria.
+ *
+ * Since 2026-09-30 a row can also say who it needs (`g` a group, `d` a pair
+ * worth naming), whether it reads as one line of a who-where-what draw (`x`
+ * when it does not), and carry one coaching line for the room. Those came out
+ * of reading every other generator in the field (docs/improv-prompts-
+ * competitors.md): the combined draw, the cast and the per-prompt coaching
+ * were the three things the field had that this bank did not, and each is a
+ * field on a row rather than a control on the screen.
  */
 
 import { PROMPT_ROWS } from "./prompt-bank-data";
@@ -23,9 +31,29 @@ export type PromptCategory =
   | "audience-question"
   | "task";
 
+/**
+ * What the reader can ask for: one of the six categories, or the classic —
+ * a relationship, a location and a task drawn together as one start.
+ */
+export type PromptKind = PromptCategory | "classic";
+
+/** The three lines of a classic draw, in the order they are shown. */
+export type ClassicPart = "relationship" | "location" | "task";
+export const CLASSIC_PARTS: ClassicPart[] = ["relationship", "location", "task"];
+
+/** What each line of the classic is called on the card. */
+export const CLASSIC_PART_LABELS: Record<ClassicPart, string> = {
+  relationship: "Who",
+  location: "Where",
+  task: "What",
+};
+
 export type PromptUseCase = "class" | "show" | "school" | "team";
 
 export type RubricAxis = "specific" | "open" | "charge" | "doable" | "grounded";
+
+/** Who a prompt needs, where that is worth saying on the card. */
+export type PromptCast = "pair" | "group";
 
 export interface Prompt {
   id: string;
@@ -38,30 +66,48 @@ export interface Prompt {
   adult: boolean;
   /** Has a built-in performer role, so it hands the scene to the loudest person. */
   loud: boolean;
+  /**
+   * Reads as one line of a who-where-what draw. Off for a relationship that
+   * names its own place or moment, a task that names its own people, and a
+   * constraint rather than a start; always off outside the three classic
+   * categories.
+   */
+  combinable: boolean;
+  /** A pair worth naming, or a group of three or more; unsaid for most. */
+  cast?: PromptCast;
+  /** One coaching line for the room — what to fight about, what to play straight. */
+  coach?: string;
 }
 
-export interface PromptCategoryInfo {
-  id: PromptCategory;
+export interface PromptKindInfo {
+  id: PromptKind;
   label: string;
-  /** The `##` heading in content/bridges/improv-prompts.md this category enters through. */
+  /** The `##` heading in content/bridges/improv-prompts.md this kind enters through. */
   heading: string;
   /** What to do with one, in a sentence — the article's advice, compressed. */
   howToUse: string;
   /**
-   * The atoms this category is, under another name. A relationship prompt is
+   * The atoms this kind is, under another name. A relationship prompt is
    * the concept `relationship`; a first line is `initiation`; a location is
    * `environment` and `space-work`; something already wrong is `want` and
-   * `tilt`; a question for the audience is `suggestion`. The first id is the
-   * one the generator names under a drawn prompt, so `howToUse` should read
-   * as that concept's page in a sentence. Empty where no atom fits: a shared
-   * task is a drill idea, not a concept (tracker entry 332, 2026-09-22).
+   * `tilt`; a question for the audience is `suggestion`; the classic is
+   * `base-reality`. The first id is the one the generator names under a
+   * drawn prompt, so `howToUse` should read as that concept's page in a
+   * sentence. Empty where no atom fits: a shared task is a drill idea, not a
+   * concept (tracker entry 332, 2026-09-22).
    */
   concepts: string[];
   /** The exercise that isolates this kind of start, when the graph has one. */
   drill?: string;
+  /** The categories a combined kind draws one line from each of. */
+  combines?: ClassicPart[];
 }
 
-/** A category's concept, resolved on the server for the generator to link. */
+export interface PromptCategoryInfo extends PromptKindInfo {
+  id: PromptCategory;
+}
+
+/** A kind's concept, resolved on the server for the generator to link. */
 export interface PromptConceptLink {
   id: string;
   title: string;
@@ -69,12 +115,12 @@ export interface PromptConceptLink {
 }
 
 /**
- * What the pages that mount the generator pass it: each category's concepts
+ * What the pages that mount the generator pass it: each kind's concepts
  * with a title and a route. The generator is a client component and the
  * graph lives behind node fs, so the resolution happens in the page
  * (prompt-concepts.ts) and arrives as a prop.
  */
-export type PromptConceptMap = Record<PromptCategory, PromptConceptLink[]>;
+export type PromptConceptMap = Record<PromptKind, PromptConceptLink[]>;
 
 export interface PromptUseCaseInfo {
   id: PromptUseCase;
@@ -131,6 +177,26 @@ export const PROMPT_CATEGORIES: PromptCategoryInfo[] = [
     concepts: [],
   },
 ];
+
+/**
+ * The classic start: who, where, what, drawn together. Every generator with
+ * any depth offers this and it is the one thing a reader arriving from
+ * "improv scene generator" expects; here each line is individually ranked,
+ * and tapping a line redraws that line alone (docs/improv-prompts-
+ * competitors.md, items 1 and 2).
+ */
+export const CLASSIC_KIND: PromptKindInfo = {
+  id: "classic",
+  label: "Who, where, what",
+  heading: "The Classic Start: Who, Where, What",
+  howToUse:
+    "Tap a line to change just that one. Play all three as true, and the first line is yours.",
+  concepts: ["base-reality"],
+  combines: CLASSIC_PARTS,
+};
+
+/** Everything the kind step offers, the classic first. */
+export const PROMPT_KINDS: PromptKindInfo[] = [CLASSIC_KIND, ...PROMPT_CATEGORIES];
 
 export const PROMPT_USE_CASES: PromptUseCaseInfo[] = [
   {
@@ -219,12 +285,13 @@ export function suitsUseCase(prompt: Prompt, useCase: PromptUseCase): boolean {
 }
 
 /**
- * The categories that name a given atom, so a concept page can offer the
- * material to run its idea on: `want` is named by "something already wrong",
- * `commitment` by nothing. Client-safe, so either side of the boundary can ask.
+ * The kinds that name a given atom, so a concept page can offer the material
+ * to run its idea on: `want` is named by "something already wrong",
+ * `base-reality` by the classic, `commitment` by nothing. Client-safe, so
+ * either side of the boundary can ask.
  */
-export function categoriesNaming(atomId: string): PromptCategoryInfo[] {
-  return PROMPT_CATEGORIES.filter((c) => c.concepts.includes(atomId));
+export function categoriesNaming(atomId: string): PromptKindInfo[] {
+  return PROMPT_KINDS.filter((c) => c.concepts.includes(atomId));
 }
 
 /**
@@ -242,13 +309,13 @@ export function conceptGloss(howToUse: string): string {
 /** The query the tool page reads to open on one kind of prompt: `?category=relationship`. */
 export const CATEGORY_QUERY_PARAM = "category";
 
-/** The tool page pre-set to one category, for the link from that category's concept. */
-export function generatorHrefFor(category: PromptCategory): string {
-  return `/tools/improv-prompt-generator?${CATEGORY_QUERY_PARAM}=${category}`;
+/** The tool page pre-set to one kind, for the link from that kind's concept. */
+export function generatorHrefFor(kind: PromptKind): string {
+  return `/tools/improv-prompt-generator?${CATEGORY_QUERY_PARAM}=${kind}`;
 }
 
-/** The fragment the guide gives a category's heading, so a link can land on it. */
-export function categoryAnchor(category: PromptCategoryInfo): string {
+/** The fragment the guide gives a kind's heading, so a link can land on it. */
+export function categoryAnchor(category: PromptKindInfo): string {
   return category.heading
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -264,8 +331,10 @@ function promptId(category: PromptCategory, text: string): string {
   return `${category}:${hash.toString(36)}`;
 }
 
+const CLASSIC_SET = new Set<PromptCategory>(CLASSIC_PARTS);
+
 export const PROMPT_BANK: Prompt[] = PROMPT_ROWS.map(
-  ([category, text, specific, open, charge, doable, grounded, flags = ""]) => ({
+  ([category, text, specific, open, charge, doable, grounded, flags = "", coach]) => ({
     id: promptId(category, text),
     text,
     category,
@@ -273,5 +342,9 @@ export const PROMPT_BANK: Prompt[] = PROMPT_ROWS.map(
     personal: flags.includes("p"),
     adult: flags.includes("a"),
     loud: flags.includes("l"),
+    combinable: CLASSIC_SET.has(category) && !flags.includes("x"),
+    ...(flags.includes("g") ? { cast: "group" as const } : {}),
+    ...(flags.includes("d") ? { cast: "pair" as const } : {}),
+    ...(coach ? { coach } : {}),
   }),
 );

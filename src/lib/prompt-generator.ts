@@ -8,11 +8,19 @@
  * the bank has for their room, two readers do not get the same first prompt,
  * and a reader who keeps going never sees a repeat until the pool is dry.
  *
+ * The classic — who, where, what — is three of these draws at once, one from
+ * each of the relationship, location and task pools with the lines that do
+ * not combine left out, and a single line can be redrawn on its own. Nothing
+ * else about the rule changes: each line is best-band-first, and each line's
+ * seen set is the same one the single draw uses.
+ *
  * Seen ids live in localStorage and nowhere else. Nothing about a reader's
  * draws leaves the browser except the analytics events the component sends.
  */
 
 import {
+  CLASSIC_PARTS,
+  type ClassicPart,
   type Prompt,
   type PromptCategory,
   type PromptUseCase,
@@ -35,8 +43,13 @@ export function poolFor(
   bank: Prompt[],
   category: PromptCategory,
   useCase: PromptUseCase,
+  /** Only the prompts that read as one line of a classic draw. */
+  options: { combinable?: boolean } = {},
 ): Prompt[] {
-  return bank.filter((p) => p.category === category && suitsUseCase(p, useCase));
+  return bank.filter(
+    (p) =>
+      p.category === category && suitsUseCase(p, useCase) && (!options.combinable || p.combinable),
+  );
 }
 
 /**
@@ -80,6 +93,44 @@ export function pickNext(
     return { prompt: unseen[index], band, remaining: unseenTotal - 1 };
   }
   return null;
+}
+
+/** One pick per line of the classic, or null where that line's pool is spent. */
+export type ClassicDraw = Record<ClassicPart, Pick | null>;
+
+/** The three pools a classic draw reads, for a room. */
+export function classicPools(
+  bank: Prompt[],
+  useCase: PromptUseCase,
+): Record<ClassicPart, Prompt[]> {
+  return Object.fromEntries(
+    CLASSIC_PARTS.map((part) => [part, poolFor(bank, part, useCase, { combinable: true })]),
+  ) as Record<ClassicPart, Prompt[]>;
+}
+
+/** How many ways the three lines can fall together, for the kind card. */
+export function classicCombinations(bank: Prompt[], useCase: PromptUseCase): number {
+  const pools = classicPools(bank, useCase);
+  return CLASSIC_PARTS.reduce((n, part) => n * pools[part].length, 1);
+}
+
+export function pickClassic(
+  bank: Prompt[],
+  useCase: PromptUseCase,
+  seen: ReadonlySet<string>,
+  rng: () => number = Math.random,
+): ClassicDraw {
+  const pools = classicPools(bank, useCase);
+  return Object.fromEntries(
+    CLASSIC_PARTS.map((part) => [part, pickNext(pools[part], useCase, seen, rng)]),
+  ) as ClassicDraw;
+}
+
+/** The classic's three lines as one string, for the clipboard and the session list. */
+export function classicText(draw: ClassicDraw): string {
+  return CLASSIC_PARTS.map((part) => draw[part]?.prompt.text)
+    .filter((t): t is string => Boolean(t))
+    .join("\n");
 }
 
 export interface SeenStore {

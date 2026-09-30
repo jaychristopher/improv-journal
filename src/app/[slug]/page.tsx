@@ -73,6 +73,7 @@ export async function generateMetadata({
     title: pageTitle(fm.title),
     description: fm.description,
     alternates: { canonical: `/${slug}` },
+    ...(INSTALLABLE_GUIDES.has(slug) ? { manifest: "/manifest.webmanifest" } : {}),
     openGraph: {
       siteName: SITE_NAME,
       locale: "en_US",
@@ -94,6 +95,15 @@ export async function generateStaticParams() {
  * Guides that open with an interactive tool rather than prose. Keyed by slug
  * so the page and the tool are wired here and nowhere else.
  */
+/**
+ * Guides whose hero tool installs to a phone's home screen: the page links
+ * the web manifest (public/manifest.webmanifest) and its tool registers the
+ * worker (public/sw.js). Only these, so the link rides on no other page's
+ * payload — the concept layer's flight bytes sit under a ceiling that would
+ * have moved for a sitewide manifest route (flight-share.test.ts).
+ */
+const INSTALLABLE_GUIDES = new Set(["improv-prompts"]);
+
 const HERO_TOOLS: Record<string, () => Promise<React.ReactNode>> = {
   // The generator's categories are concepts under other names; the map is
   // resolved here because the generator is a client component and cannot

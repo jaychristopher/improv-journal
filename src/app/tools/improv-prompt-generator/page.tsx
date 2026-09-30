@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PromptGenerator } from "@/components/PromptGenerator";
+import { Prose } from "@/components/Prose";
 import { TableOfContents } from "@/components/TableOfContents";
 import {
   categoryAnchor,
@@ -14,6 +15,7 @@ import {
 } from "@/lib/prompt-bank";
 import { resolvePromptConcepts } from "@/lib/prompt-concepts";
 import { poolFor } from "@/lib/prompt-generator";
+import { PROMPT_GENERATOR_COPY } from "@/lib/prompt-generator-copy";
 import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
 
 /**
@@ -45,6 +47,9 @@ export const metadata: Metadata = {
   title: pageTitle(TITLE),
   description: DESCRIPTION,
   alternates: { canonical: "/tools/improv-prompt-generator" },
+  // The page installs (public/manifest.webmanifest, public/sw.js). The link
+  // is on the two prompt pages only, so no other page's payload carries it.
+  manifest: "/manifest.webmanifest",
   openGraph: {
     siteName: SITE_NAME,
     locale: "en_US",
@@ -225,6 +230,18 @@ export default async function ImprovPromptGeneratorPage() {
           <Link href="/improv-games">improv games</Link> covers the exercises and the{" "}
           <Link href="/tools/exercise-picker">exercise picker</Link> finds one by level and focus.
         </p>
+
+        <h3>What is the who, where, what card?</h3>
+        <Prose text={PROMPT_GENERATOR_COPY.classic} currentUrl="/tools/improv-prompt-generator" />
+
+        <h3>Are there keyboard shortcuts?</h3>
+        <Prose text={PROMPT_GENERATOR_COPY.keys} currentUrl="/tools/improv-prompt-generator" />
+
+        <h3>Does it work offline?</h3>
+        <Prose
+          text={PROMPT_GENERATOR_COPY.installable}
+          currentUrl="/tools/improv-prompt-generator"
+        />
       </article>
     </main>
   );

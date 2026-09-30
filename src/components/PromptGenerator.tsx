@@ -6,20 +6,29 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { trackEvent } from "@/lib/analytics";
 import {
   CATEGORY_QUERY_PARAM,
+  CLASSIC_PART_LABELS,
+  CLASSIC_PARTS,
+  type ClassicPart,
   conceptGloss,
   PROMPT_BANK,
-  PROMPT_CATEGORIES,
+  PROMPT_KINDS,
   PROMPT_USE_CASES,
   type PromptCategory,
-  type PromptCategoryInfo,
   type PromptConceptMap,
+  type PromptKind,
+  type PromptKindInfo,
   type PromptUseCase,
   type PromptUseCaseInfo,
 } from "@/lib/prompt-bank";
 import {
   browserStorage,
+  classicCombinations,
+  type ClassicDraw,
+  classicPools,
+  classicText,
   createSeenStore,
   type Pick,
+  pickClassic,
   pickNext,
   poolFor,
   type SeenStore,
@@ -38,13 +47,36 @@ import { ToolAction, ToolChoice } from "./ToolControls";
  *
  * The inline card renders on the server, so the html carries the way in. The
  * dialog is client-only, which is fine: nothing in it is a route.
+ *
+ * What the field had that this did not, and where each went (2026-09-30,
+ * docs/improv-prompts-competitors.md): the who-where-what draw is a seventh
+ * kind, and tapping one of its lines redraws that line alone; a show gets
+ * display-size type above `lg` with no switch; Space, Enter, C and K do what
+ * the buttons do for a host at a laptop; what has been drawn this session sits
+ * under the buttons; the time on the current prompt ticks beside the count;
+ * who a prompt needs and one coaching line come from the bank when a row has
+ * them. No control was added above the three the prompt step already had.
  */
 
 type Step = "room" | "kind" | "prompt";
 
 interface Draw {
+  kind: PromptKind;
+  /** The single prompt, or null on the classic and when a pool is spent. */
   pick: Pick | null;
+  /** The pool a single kind draws from, or the ways the classic can fall. */
   poolSize: number;
+  /** The three lines of the classic; null on a single kind. */
+  parts: ClassicDraw | null;
+  drawnAt: number;
+  /** The nth card dealt this session; the session list is keyed on it. */
+  card: number;
+}
+
+interface Drawn {
+  card: number;
+  kind: PromptKind;
+  text: string;
 }
 
 const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])';
@@ -57,10 +89,27 @@ const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1
  */
 type PromptGeneratorSurface = "guide-hero" | "tool-page";
 
-/** The category named in the page's query, if it names one the bank has. */
-function presetFromQuery(search: string): PromptCategory | null {
+/** The kind named in the page's query, if it names one the bank has. */
+function presetFromQuery(search: string): PromptKind | null {
   const wanted = new URLSearchParams(search).get(CATEGORY_QUERY_PARAM);
-  return PROMPT_CATEGORIES.find((c) => c.id === wanted)?.id ?? null;
+  return PROMPT_KINDS.find((c) => c.id === wanted)?.id ?? null;
+}
+
+/** Whether a card has anything on it, single or classic. */
+function hasPrompt(draw: Draw): boolean {
+  return draw.parts ? CLASSIC_PARTS.some((part) => draw.parts?.[part]) : draw.pick !== null;
+}
+
+/** The card's words, for the clipboard and the session list. */
+function textOf(draw: Draw): string {
+  return draw.parts ? classicText(draw.parts) : (draw.pick?.prompt.text ?? "");
+}
+
+/** m:ss, for the clock beside the count. */
+function clock(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
 export function PromptGenerator({
@@ -69,7 +118,7 @@ export function PromptGenerator({
 }: {
   surface: PromptGeneratorSurface;
   /**
-   * Each category's concepts, resolved by the mounting page (prompt-concepts.ts).
+   * Each kind's concepts, resolved by the mounting page (prompt-concepts.ts).
    * Optional so the component still renders where no page resolved them; the
    * concept line under a prompt then renders nothing rather than a bare id.
    */
@@ -78,31 +127,48 @@ export function PromptGenerator({
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<Step>("room");
   const [useCase, setUseCase] = useState<PromptUseCase | null>(null);
-  const [category, setCategory] = useState<PromptCategory | null>(null);
-  // A concept page links here pre-set to its category
+  const [kind, setKind] = useState<PromptKind | null>(null);
+  // A concept page links here pre-set to its kind
   // (`?category=relationship`, PromptTryLine). Read after mount from the
   // location rather than through useSearchParams: on a prerendered route
   // that hook client-renders everything up to the nearest Suspense boundary,
   // and the inline card has to be in the server html — the hero's whole point
   // (prompt-generator-rendered.test.ts).
-  const [preset, setPreset] = useState<PromptCategory | null>(null);
+  const [preset, setPreset] = useState<PromptKind | null>(null);
   const [draw, setDraw] = useState<Draw | null>(null);
   const [draws, setDraws] = useState(0);
+  const [history, setHistory] = useState<Drawn[]>([]);
   const [copied, setCopied] = useState(false);
+  const [now, setNow] = useState(0);
   const [store] = useState<SeenStore>(() => createSeenStore(browserStorage()));
   const dialogRef = useRef<HTMLDivElement>(null);
   const openerRef = useRef<HTMLElement | null>(null);
+  const cardRef = useRef(0);
+  const keysRef = useRef<(event: KeyboardEvent) => void>(() => {});
   const headingId = useId();
 
   const useCaseInfo = PROMPT_USE_CASES.find((u) => u.id === useCase) ?? null;
-  const categoryInfo = PROMPT_CATEGORIES.find((c) => c.id === category) ?? null;
-  const presetInfo = PROMPT_CATEGORIES.find((c) => c.id === preset) ?? null;
-  // The first concept is the one the category *is*; the rest are the sidebar's
-  // business. Nothing when the page passed no map or the category has none.
-  const concept = categoryInfo ? (concepts?.[categoryInfo.id]?.[0] ?? null) : null;
+  const kindInfo = PROMPT_KINDS.find((c) => c.id === kind) ?? null;
+  const presetInfo = PROMPT_KINDS.find((c) => c.id === preset) ?? null;
+  // The first concept is the one the kind *is*; the rest are the sidebar's
+  // business. Nothing when the page passed no map or the kind has none.
+  const concept = kindInfo ? (concepts?.[kindInfo.id]?.[0] ?? null) : null;
+  const card = draw?.card ?? 0;
 
   useEffect(() => {
     setPreset(presetFromQuery(window.location.search));
+  }, []);
+
+  // Installable: the tool is the one page on the site that gets used standing
+  // up, in a hall, with no signal. The worker caches the two pages that mount
+  // this and the chunks they need (public/sw.js). Production only, so a dev
+  // server never serves yesterday's page.
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "production") return;
+    if (!("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      // A browser that refuses is a browser that stays online. Nothing to do.
+    });
   }, []);
 
   const close = useCallback(() => {
@@ -149,40 +215,138 @@ export function PromptGenerator({
           event.preventDefault();
           first.focus();
         }
+        return;
       }
+      keysRef.current(event);
     }
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open, close]);
 
-  function drawFrom(nextCategory: PromptCategory, nextUseCase: PromptUseCase, reset = false) {
-    const pool = poolFor(PROMPT_BANK, nextCategory, nextUseCase);
-    if (reset) {
-      store.forget(pool.map((p) => p.id));
-      trackEvent("prompt_generator_reset", { use_case: nextUseCase, category: nextCategory });
-    }
-    const pick = pickNext(pool, nextUseCase, store.seen());
-    if (pick) {
-      store.markSeen(pick.prompt.id);
-      setDraws((n) => n + 1);
-      trackEvent("prompt_generated", {
-        surface,
-        use_case: nextUseCase,
-        category: nextCategory,
-        band: pick.band,
-        prompt_id: pick.prompt.id,
-        remaining: pick.remaining,
-      });
+  // The clock on the current card. A class runs rounds of a minute or two,
+  // and the guide says how long; this gives the teacher the number without
+  // asking them to set anything.
+  useEffect(() => {
+    if (!open || step !== "prompt" || card === 0) return;
+    setNow(Date.now());
+    const timer = window.setInterval(() => setNow(Date.now()), 1000);
+    return () => window.clearInterval(timer);
+  }, [open, step, card]);
+
+  function remember(next: Draw) {
+    const text = textOf(next);
+    if (!text) return;
+    setHistory((entries) => [
+      { card: next.card, kind: next.kind, text },
+      ...entries.filter((e) => e.card !== next.card),
+    ]);
+  }
+
+  function drawFrom(nextKind: PromptKind, nextUseCase: PromptUseCase, reset = false) {
+    const cardNumber = ++cardRef.current;
+    let next: Draw;
+    if (nextKind === "classic") {
+      const pools = classicPools(PROMPT_BANK, nextUseCase);
+      if (reset) {
+        store.forget(CLASSIC_PARTS.flatMap((part) => pools[part].map((p) => p.id)));
+        trackEvent("prompt_generator_reset", { use_case: nextUseCase, category: nextKind });
+      }
+      const parts = pickClassic(PROMPT_BANK, nextUseCase, store.seen());
+      const picks = CLASSIC_PARTS.map((part) => parts[part]).filter((p): p is Pick => p !== null);
+      if (picks.length > 0) {
+        for (const pick of picks) store.markSeen(pick.prompt.id);
+        setDraws((n) => n + 1);
+        trackEvent("prompt_generated", {
+          surface,
+          use_case: nextUseCase,
+          category: nextKind,
+          band: Math.max(...picks.map((p) => p.band)),
+          prompt_id: picks.map((p) => p.prompt.id).join("+"),
+          remaining: Math.min(...picks.map((p) => p.remaining)),
+        });
+      } else {
+        trackEvent("prompt_generator_exhausted", {
+          use_case: nextUseCase,
+          category: nextKind,
+          pool: CLASSIC_PARTS.reduce((n, part) => n + pools[part].length, 0),
+        });
+      }
+      next = {
+        kind: nextKind,
+        pick: null,
+        poolSize: classicCombinations(PROMPT_BANK, nextUseCase),
+        parts,
+        drawnAt: Date.now(),
+        card: cardNumber,
+      };
     } else {
-      trackEvent("prompt_generator_exhausted", {
-        use_case: nextUseCase,
-        category: nextCategory,
-        pool: pool.length,
-      });
+      const category: PromptCategory = nextKind;
+      const pool = poolFor(PROMPT_BANK, category, nextUseCase);
+      if (reset) {
+        store.forget(pool.map((p) => p.id));
+        trackEvent("prompt_generator_reset", { use_case: nextUseCase, category });
+      }
+      const pick = pickNext(pool, nextUseCase, store.seen());
+      if (pick) {
+        store.markSeen(pick.prompt.id);
+        setDraws((n) => n + 1);
+        trackEvent("prompt_generated", {
+          surface,
+          use_case: nextUseCase,
+          category,
+          band: pick.band,
+          prompt_id: pick.prompt.id,
+          remaining: pick.remaining,
+        });
+      } else {
+        trackEvent("prompt_generator_exhausted", {
+          use_case: nextUseCase,
+          category,
+          pool: pool.length,
+        });
+      }
+      next = {
+        kind: nextKind,
+        pick,
+        poolSize: pool.length,
+        parts: null,
+        drawnAt: Date.now(),
+        card: cardNumber,
+      };
     }
     setCopied(false);
-    setDraw({ pick, poolSize: pool.length });
+    setDraw(next);
+    remember(next);
     setStep("prompt");
+  }
+
+  /**
+   * One line of the classic, redrawn on its own: the lock-and-regenerate the
+   * field does with padlocks, done by tapping the line you want to change.
+   * A spent line starts its own pool again rather than going blank.
+   */
+  function redrawPart(part: ClassicPart) {
+    if (!draw?.parts || !useCase) return;
+    const pool = poolFor(PROMPT_BANK, part, useCase, { combinable: true });
+    let pick = pickNext(pool, useCase, store.seen());
+    if (!pick) {
+      store.forget(pool.map((p) => p.id));
+      trackEvent("prompt_generator_reset", { use_case: useCase, category: part });
+      pick = pickNext(pool, useCase, store.seen());
+    }
+    if (!pick) return;
+    store.markSeen(pick.prompt.id);
+    trackEvent("prompt_line_redrawn", {
+      surface,
+      use_case: useCase,
+      part,
+      prompt_id: pick.prompt.id,
+      remaining: pick.remaining,
+    });
+    const next: Draw = { ...draw, parts: { ...draw.parts, [part]: pick } };
+    setCopied(false);
+    setDraw(next);
+    remember(next);
   }
 
   function chooseRoom(next: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) {
@@ -194,7 +358,7 @@ export function PromptGenerator({
       // Arrived from a concept page asking for one kind: the first tap goes
       // straight to a prompt of that kind. "A different kind" is still there.
       if (preset) {
-        setCategory(preset);
+        setKind(preset);
         trackEvent("prompt_generator_category", {
           use_case: next.id,
           category: preset,
@@ -207,9 +371,9 @@ export function PromptGenerator({
     setStep("kind");
   }
 
-  function chooseKind(next: PromptCategoryInfo) {
+  function chooseKind(next: PromptKindInfo) {
     if (!useCase) return;
-    setCategory(next.id);
+    setKind(next.id);
     trackEvent("prompt_generator_category", { use_case: useCase, category: next.id });
     drawFrom(next.id, useCase);
   }
@@ -218,11 +382,39 @@ export function PromptGenerator({
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
-      trackEvent("prompt_copied", { use_case: useCase, category });
+      trackEvent("prompt_copied", { use_case: useCase, category: kind });
     } catch {
       // No clipboard in this context. The text is on screen; nothing to do.
     }
   }
+
+  // The keys, for a host running a show from a laptop: Space or Enter for
+  // another one, C to copy, K for a different kind. Only on the prompt step,
+  // and never while a control has focus, where Space and Enter already mean
+  // "press this". Kept on a ref so the listener above never goes stale and
+  // never has to be re-attached for a state change.
+  useEffect(() => {
+    keysRef.current = (event: KeyboardEvent) => {
+      if (step !== "prompt" || !draw || !kind || !useCase) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest("button, a, input, textarea, select, [contenteditable]")) return;
+      if (event.key === " " || event.key === "Enter") {
+        event.preventDefault();
+        drawFrom(kind, useCase, !hasPrompt(draw));
+      } else if (event.key === "c" || event.key === "C") {
+        void copyPrompt(textOf(draw));
+      } else if (event.key === "k" || event.key === "K") {
+        setStep("kind");
+      }
+    };
+  });
+
+  const elapsed = draw ? Math.max(0, Math.floor((now - draw.drawnAt) / 1000)) : 0;
+  const cast = draw?.parts
+    ? CLASSIC_PARTS.some((part) => draw.parts?.[part]?.prompt.cast === "group")
+      ? "group"
+      : null
+    : (draw?.pick?.prompt.cast ?? null);
 
   return (
     <>
@@ -265,7 +457,7 @@ export function PromptGenerator({
               ))}
             </div>
             <p className="text-hero-subtle mt-5 text-xs">
-              {PROMPT_BANK.length} prompts, ranked by the criteria this page argues for.
+              {PROMPT_BANK.length} ranked prompts. Free, no ads, no account.
               {surface === "guide-hero" && (
                 <>
                   {" "}
@@ -303,9 +495,9 @@ export function PromptGenerator({
                   {useCaseInfo.label} &middot; change
                 </button>
               )}
-              {step === "prompt" && categoryInfo && useCaseInfo && (
+              {step === "prompt" && kindInfo && useCaseInfo && (
                 <span className="block truncate">
-                  {categoryInfo.label} &middot; {useCaseInfo.label}
+                  {kindInfo.label} &middot; {useCaseInfo.label}
                 </span>
               )}
             </div>
@@ -347,49 +539,87 @@ export function PromptGenerator({
                 </h2>
                 <p className="text-foreground/80 mt-2 text-sm">{useCaseInfo.description}</p>
                 <div className="mt-6 grid gap-2">
-                  {PROMPT_CATEGORIES.map((kind) => {
-                    const poolSize = poolFor(PROMPT_BANK, kind.id, useCaseInfo.id).length;
+                  {PROMPT_KINDS.map((each) => {
+                    const detail =
+                      each.id === "classic"
+                        ? `${classicCombinations(PROMPT_BANK, useCaseInfo.id).toLocaleString("en-US")} ways it can fall`
+                        : `${poolFor(PROMPT_BANK, each.id, useCaseInfo.id).length} to draw from`;
                     return (
-                      <KindButton
-                        key={kind.id}
-                        kind={kind}
-                        poolSize={poolSize}
-                        onChoose={chooseKind}
-                      />
+                      <KindButton key={each.id} kind={each} detail={detail} onChoose={chooseKind} />
                     );
                   })}
                 </div>
               </div>
             )}
 
-            {step === "prompt" && draw && categoryInfo && useCaseInfo && (
-              <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col py-4">
+            {step === "prompt" && draw && kindInfo && useCaseInfo && (
+              // Wider from `lg`, and the type steps up with it: a laptop on a
+              // chair or a projector gets a show screen by being one. On a
+              // phone nothing changes.
+              <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col py-4 lg:max-w-4xl">
                 <div className="flex flex-1 flex-col justify-center">
-                  {draw.pick ? (
+                  {hasPrompt(draw) ? (
                     <>
                       <p className="text-foreground-dim text-xs tracking-wider uppercase">
-                        {draw.pick.remaining} of {draw.poolSize} left
+                        {draw.parts
+                          ? `${draw.poolSize.toLocaleString("en-US")} ways it can fall`
+                          : `${draw.pick?.remaining} of ${draw.poolSize} left`}
+                        <span aria-hidden="true"> &middot; </span>
+                        <span data-testid="prompt-clock">{clock(elapsed)} on this one</span>
                       </p>
-                      <p
-                        key={draw.pick.prompt.id}
-                        data-testid="prompt-text"
-                        className="text-foreground-strong animate-fade-in mt-4 text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-5xl"
-                      >
-                        {draw.pick.prompt.text}
+                      {draw.parts ? (
+                        <ClassicCard parts={draw.parts} onRedraw={redrawPart} />
+                      ) : (
+                        <p
+                          key={draw.pick?.prompt.id}
+                          data-testid="prompt-text"
+                          className="text-foreground-strong animate-fade-in mt-4 text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl lg:text-5xl xl:text-6xl"
+                        >
+                          {draw.pick?.prompt.text}
+                        </p>
+                      )}
+                      <p className="text-foreground/80 mt-6 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-lg">
+                        {kindInfo.howToUse}
                       </p>
-                      <p className="text-foreground/80 mt-6 max-w-md text-sm leading-relaxed">
-                        {categoryInfo.howToUse}
-                      </p>
-                      {/* The category is a concept under another name, and
+                      {draw.pick?.prompt.coach && (
+                        <p
+                          className="text-foreground/80 mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-base"
+                          data-testid="prompt-coach"
+                        >
+                          <span className="text-foreground-dim text-xs tracking-wider uppercase">
+                            Coaching
+                          </span>{" "}
+                          {draw.pick.prompt.coach}
+                        </p>
+                      )}
+                      {cast && (
+                        <p className="text-foreground-dim mt-3 text-sm" data-testid="prompt-cast">
+                          {cast === "group" ? (
+                            "Needs three or more."
+                          ) : (
+                            <>
+                              Works for two &mdash;{" "}
+                              <Link
+                                href="/2-person-improv-games"
+                                className="underline underline-offset-2"
+                              >
+                                2 person improv games
+                              </Link>{" "}
+                              has the rest.
+                            </>
+                          )}
+                        </p>
+                      )}
+                      {/* The kind is a concept under another name, and
                           howToUse is that concept's page in a sentence, so
                           the sentence is reused as the gloss and the title
                           becomes the link: every prompt is one click from
                           its theory (tracker entry 332). Nothing for a
-                          category without a concept, or a mount without the
+                          kind without a concept, or a mount without the
                           resolved map. */}
                       {concept && (
                         <p
-                          className="text-foreground-dim mt-3 max-w-md text-sm leading-relaxed"
+                          className="text-foreground-dim mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl"
                           data-prompt-concept={concept.id}
                         >
                           The idea behind it:{" "}
@@ -399,7 +629,7 @@ export function PromptGenerator({
                           >
                             {concept.title}
                           </Link>{" "}
-                          &mdash; {conceptGloss(categoryInfo.howToUse)}
+                          &mdash; {conceptGloss(kindInfo.howToUse)}
                         </p>
                       )}
                     </>
@@ -409,29 +639,30 @@ export function PromptGenerator({
                         That is all of them
                       </p>
                       <h2 className="text-foreground-strong mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-                        You have seen every {categoryInfo.label.toLowerCase()} prompt for{" "}
+                        You have seen every {kindInfo.label.toLowerCase()} prompt for{" "}
                         {useCaseInfo.label.toLowerCase()}.
                       </h2>
                       <p className="text-foreground/80 mt-4 max-w-md text-sm leading-relaxed">
-                        {draw.poolSize} in total. Start again to draw from the same pool, or pick a
-                        different kind.
+                        {draw.parts
+                          ? "Every line has been drawn. Start again to draw from the same pools, or pick a different kind."
+                          : `${draw.poolSize} in total. Start again to draw from the same pool, or pick a different kind.`}
                       </p>
                     </>
                   )}
                 </div>
 
                 <div className="mt-8 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-                  {draw.pick ? (
+                  {hasPrompt(draw) ? (
                     <>
                       <ToolAction
-                        onClick={() => drawFrom(categoryInfo.id, useCaseInfo.id)}
+                        onClick={() => drawFrom(kindInfo.id, useCaseInfo.id)}
                         className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
                       >
                         Another one
                       </ToolAction>
                       <ToolAction
                         kind="secondary"
-                        onClick={() => copyPrompt(draw.pick?.prompt.text ?? "")}
+                        onClick={() => copyPrompt(textOf(draw))}
                         className="min-h-12 px-5 text-sm font-medium"
                       >
                         {copied ? "Copied" : "Copy"}
@@ -439,7 +670,7 @@ export function PromptGenerator({
                     </>
                   ) : (
                     <ToolAction
-                      onClick={() => drawFrom(categoryInfo.id, useCaseInfo.id, true)}
+                      onClick={() => drawFrom(kindInfo.id, useCaseInfo.id, true)}
                       className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
                     >
                       Start again
@@ -453,12 +684,78 @@ export function PromptGenerator({
                     A different kind
                   </ToolAction>
                 </div>
+
+                {/* What has been dealt this session, newest first, below the
+                    buttons: a teacher who handed eight pairs eight prompts can
+                    read them back, and the whole list selects and copies in
+                    one go. No star, no save — the ones worth keeping are
+                    already on the page. */}
+                {history.length > 0 && (
+                  <section
+                    aria-label="Drawn this session"
+                    className="border-foreground/10 mt-10 border-t pt-4"
+                  >
+                    <p className="text-foreground-dim text-xs tracking-wider uppercase">
+                      Drawn this session
+                    </p>
+                    <ol
+                      className="text-foreground/70 mt-2 space-y-1 text-sm"
+                      data-testid="prompt-history"
+                    >
+                      {history.map((entry) => (
+                        <li key={entry.card}>{entry.text.replace(/\n/g, " · ")}</li>
+                      ))}
+                    </ol>
+                  </section>
+                )}
               </div>
             )}
           </div>
         </div>
       )}
     </>
+  );
+}
+
+/**
+ * The three lines of the classic, each a button: tap one and only that line
+ * changes. The label is the line's name and the prompt is its text, so a
+ * screen reader hears "Who: two neighbours who share a fence…, button".
+ */
+function ClassicCard({
+  parts,
+  onRedraw,
+}: {
+  parts: ClassicDraw;
+  onRedraw: (part: ClassicPart) => void;
+}) {
+  return (
+    <div className="mt-4 grid gap-2" data-testid="classic-card">
+      {CLASSIC_PARTS.map((part) => {
+        const pick = parts[part];
+        return (
+          <ToolChoice
+            key={part}
+            palette="page"
+            data-part={part}
+            onClick={() => onRedraw(part)}
+            title="Tap to change just this line"
+            className="flex w-full items-baseline gap-3 px-4 py-3 sm:gap-4"
+          >
+            <span className="text-foreground-dim w-12 shrink-0 text-xs tracking-wider uppercase sm:w-14">
+              {CLASSIC_PART_LABELS[part]}
+            </span>
+            <span
+              key={pick?.prompt.id ?? "spent"}
+              data-testid={`classic-${part}`}
+              className="text-foreground-strong animate-fade-in text-xl leading-snug font-semibold tracking-tight text-balance sm:text-2xl lg:text-3xl xl:text-4xl"
+            >
+              {pick ? pick.prompt.text : "Every one seen. Tap to start this line again."}
+            </span>
+          </ToolChoice>
+        );
+      })}
+    </div>
   );
 }
 
@@ -520,12 +817,13 @@ function RoomButton({
 
 function KindButton({
   kind,
-  poolSize,
+  detail,
   onChoose,
 }: {
-  kind: PromptCategoryInfo;
-  poolSize: number;
-  onChoose: (kind: PromptCategoryInfo) => void;
+  kind: PromptKindInfo;
+  /** The pool's size, or the ways the classic can fall. */
+  detail: string;
+  onChoose: (kind: PromptKindInfo) => void;
 }) {
   const labelId = useId();
   const descId = useId();
@@ -542,7 +840,7 @@ function KindButton({
           {kind.label}
         </span>
         <span id={descId} className="text-foreground-dim mt-0.5 block text-xs">
-          {poolSize} to draw from
+          {detail}
         </span>
       </span>
       <span className="text-foreground-dim shrink-0 transition-transform group-hover:translate-x-1">

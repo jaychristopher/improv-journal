@@ -2,11 +2,47 @@
 title: "Improv Games for Kids: What Works at Each Age"
 description: "Most improv games fail with children because they were built for people who volunteered. Which games work at which age, and how to run them with thirty."
 target_keywords:
-  - { keyword: "improv games for kids", volume: 400, difficulty: 0, traffic_potential: 150, parent: "improv games for kids" }
-  - { keyword: "improv games for teens", volume: 250, difficulty: 0, traffic_potential: 10, parent: "improv games for high school" }
-  - { keyword: "improv games for students", volume: 200, difficulty: 1, traffic_potential: 200, parent: "improv games for students" }
-  - { keyword: "improv games for middle school", volume: 150, difficulty: 1, traffic_potential: 200, parent: "improv games for students" }
-  - { keyword: "improv games for high school", volume: 80, difficulty: 0, traffic_potential: 150, parent: "improv games for teens" }
+  - {
+      keyword: "improv games for kids",
+      volume: 400,
+      difficulty: 0,
+      traffic_potential: 150,
+      parent: "improv games for kids",
+    }
+  - {
+      keyword: "improv games for teens",
+      volume: 250,
+      difficulty: 0,
+      traffic_potential: 10,
+      parent: "improv games for high school",
+    }
+  - {
+      keyword: "improv games for students",
+      volume: 200,
+      difficulty: 1,
+      traffic_potential: 200,
+      parent: "improv games for students",
+    }
+  - {
+      keyword: "improv games for middle school",
+      volume: 150,
+      difficulty: 1,
+      traffic_potential: 200,
+      parent: "improv games for students",
+    }
+  - {
+      keyword: "improv games for high school",
+      volume: 80,
+      difficulty: 0,
+      traffic_potential: 150,
+      parent: "improv games for teens",
+    }
+  - {
+      keyword: "improv prompts for kids",
+      volume: 50,
+      traffic_potential: 300,
+      parent: "improv games for kids",
+    }
 serp_checked: "2026-09-25"
 serp_min_dr: 24
 serp_verdict: winnable
@@ -22,7 +58,7 @@ primary_cta_target: sound-ball
 secondary_cta_target: teaching-improv
 status: draft
 created: "2026-08-24"
-updated: "2026-09-28"
+updated: "2026-09-30"
 ---
 
 # Improv Games for Kids: What Works at Each Age
@@ -35,7 +71,7 @@ An adult improv class is full of volunteers who have already decided they want t
 
 Telling them it is a comedy game.
 
-The moment a child believes the task is *be funny*, the room splits into performers and hiders, and both halves have stopped doing improv. The performers start reaching for the biggest thing they can think of, which is `performing-cleverness` arriving decades early. The hiders correctly conclude that they cannot win and go quiet.
+The moment a child believes the task is _be funny_, the room splits into performers and hiders, and both halves have stopped doing improv. The performers start reaching for the biggest thing they can think of, which is `performing-cleverness` arriving decades early. The hiders correctly conclude that they cannot win and go quiet.
 
 Every game below works when it is framed as a task with a rule rather than an opportunity to be entertaining. Nobody has to be funny to pass a clap around a circle. The laughter arrives anyway, and it arrives at things nobody was aiming for, which is the whole point and is worth not explaining.
 
@@ -124,6 +160,23 @@ If the furniture cannot move, use the seated games. Sound and word games, story-
 Start with circle games that carry a single rule and keep everybody moving, which works from about five, and hold off on scenes until about nine, because a scene has no rule inside it and a child who runs out of ideas mid-scene is simply stranded. Keep each round short, expect to get through several games in the time adults would spend on one, and play alongside them instead of watching from the edge.
 
 If it tips into chaos, take freedom out of the game rather than adding volume to your voice; if three children are running everything, pick formats with a fixed turn order so nobody decides when they go. The rest of this page is which games do that at which age.
+
+## Improv Prompts for Kids
+
+The prompts on this site are ranked for the room they are used in, and the [improv prompt generator](/tools/improv-prompt-generator) has a school room built in. It keeps out anything that lands on a child's actual life, anything that needs adult knowledge and anything with a built-in performer role, and it weights what is left for whether a fourteen-year-old can start inside three seconds. Ten from that pool, the kind that give a pair something to do with their hands:
+
+- Two people trying to move something heavy
+- Two people assembling a tent
+- Two people sharing one umbrella
+- Two people folding a fitted sheet
+- Someone learning to whistle from someone who can
+- Two people trying to get a cat into a basket
+- Two people writing a sign for a lost pet
+- Someone giving directions to a place they have never been
+- Two people building a sandcastle in a hurry
+- Two lifeguards closing the pool while one swimmer keeps going
+
+Run them the way the games above run: short rounds, everybody playing at once, and the task doing the work. The [improv prompts](/improv-prompts) guide has the rest, with which suit which age, and prints as slips for the bag.
 
 ## What It Is Actually Teaching
 

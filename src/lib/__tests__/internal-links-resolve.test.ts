@@ -88,7 +88,9 @@ describe("internal links", () => {
           if (!url || url === "/") continue;
           // Assets and API routes are not pages.
           if (url.startsWith("/_next/") || url.startsWith("/api/")) continue;
-          if (/\.(xml|txt|json|svg|png|jpg|jpeg|webp|ico|mp3|m4a)$/.test(url)) continue;
+          // A web manifest is a file in public/, linked from the two prompt
+          // pages since 2026-09-30, not a page (installable.test.ts).
+          if (/\.(xml|txt|json|webmanifest|svg|png|jpg|jpeg|webp|ico|mp3|m4a)$/.test(url)) continue;
 
           checked += 1;
           if (pages.has(url) || redirects.has(url)) continue;

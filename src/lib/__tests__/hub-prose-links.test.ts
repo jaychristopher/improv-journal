@@ -59,6 +59,7 @@ function hrefs(inner: string): string[] {
 const PROSE_MODULES = [
   path.join(ROOT, "src", "lib", "games-hub-copy.ts"),
   path.join(ROOT, "src", "lib", "exercises-hub-copy.ts"),
+  path.join(ROOT, "src", "lib", "prompt-generator-copy.ts"),
 ];
 
 /** The route files that hold hub prose and send it through `Prose`. */

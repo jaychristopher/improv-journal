@@ -2,12 +2,48 @@
 title: "Improv Prompts: 140 Scene Starters for Class or Stage"
 description: "140 prompts you can use tonight — relationships, first lines, locations, classroom sets — plus how to run a round with a full class."
 target_keywords:
-  - { keyword: "improv prompts", volume: 700, difficulty: 0, traffic_potential: 1700, parent: "improv prompts" }
-  - { keyword: "improv ideas", volume: 300, parent: "improv prompts", difficulty: 0, traffic_potential: 1700 }
-  - { keyword: "improv scenarios", volume: 150, parent: "improv prompts", difficulty: 1, traffic_potential: 1600 }
-  - { keyword: "improv topics", volume: 90, parent: "improv prompts", difficulty: 0, traffic_potential: 1600 }
-  - { keyword: "improv scene ideas", volume: 50, parent: "improv prompts", difficulty: 0, traffic_potential: 1700 }
-  - { keyword: "improv situations", volume: 20, parent: "improv prompts", difficulty: 0, traffic_potential: 1600 }
+  - {
+      keyword: "improv prompts",
+      volume: 700,
+      difficulty: 0,
+      traffic_potential: 1700,
+      parent: "improv prompts",
+    }
+  - {
+      keyword: "improv ideas",
+      volume: 300,
+      parent: "improv prompts",
+      difficulty: 0,
+      traffic_potential: 1700,
+    }
+  - {
+      keyword: "improv scenarios",
+      volume: 150,
+      parent: "improv prompts",
+      difficulty: 1,
+      traffic_potential: 1600,
+    }
+  - {
+      keyword: "improv topics",
+      volume: 90,
+      parent: "improv prompts",
+      difficulty: 0,
+      traffic_potential: 1600,
+    }
+  - {
+      keyword: "improv scene ideas",
+      volume: 50,
+      parent: "improv prompts",
+      difficulty: 0,
+      traffic_potential: 1700,
+    }
+  - {
+      keyword: "improv situations",
+      volume: 20,
+      parent: "improv prompts",
+      difficulty: 0,
+      traffic_potential: 1600,
+    }
 serp_checked: "2026-08-23"
 serp_min_dr: 30
 serp_verdict: winnable
@@ -20,7 +56,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-08-24"
+updated: "2026-09-30"
 ---
 
 # Improv Prompts: 140 Scene Starters for Class or Stage
@@ -40,6 +76,14 @@ What follows is a hundred and forty prompts organised by what they actually give
 **A prompt is not a punchline.** A suggestion that arrives pre-loaded with a joke constrains rather than liberates — the audience already knows what the scene is, so the only remaining job is to deliver it. That is a recital, not an improvisation.
 
 **Evocative, not prescriptive.** "Thanksgiving" opens a hundred doors. "A guy who trips carrying the turkey" opens one and stands in it.
+
+## The Classic Start: Who, Where, What
+
+The oldest way to start a scene is three answers from the room: who these people are to each other, where they are, and what they are doing. Every generator in the field offers it, usually as three random words, and the reason it works when it works is `base-reality` — a scene needs all three before anything can be unusual against them, and a pair who have all three can begin without inventing anything.
+
+The generator above draws it as one card. Each line comes from its own ranked pool, so the relationship is one of the relationship prompts below, the place one of the locations and the task one of the shared tasks, and the three read as one start: two neighbours who share a fence, in a garage with a car up on the ramp, trying to get a cat into a basket. Tap any line to change only that one and keep the other two. The prompts that do not read as a line of the classic — a relationship that names its own place, a task that names its own people — are left out of it and stay where they are.
+
+Play all three as true and say the first line yourself. The task carries the opening, the place gives you something to touch, and the relationship arrives on its own by the third exchange.
 
 ## Relationship Prompts
 
@@ -205,6 +249,8 @@ The real problem in a classroom is not the prompts. It is that two students are 
 
 **Sit the sides down and give them a job.** If you do run scenes at the front, the watchers need a task — spot the moment the scene changed, notice where the two characters are in relation to each other — or they are just an audience, and audiences heckle.
 
+**Print this page for the bag.** Printed, every list on it comes out one prompt to a line with a cut line under each, the site's name at the foot and nothing else, so a bag of slips is a pair of scissors away.
+
 ### Which prompts suit which age
 
 Complementary to the game-by-age guidance on [theatre games](/theatre-games), which covers the exercises rather than the starting points.
@@ -267,7 +313,7 @@ Adults arrive more defended than teenagers and the risk is different — nobody 
 
 The most common request is for funny improv scenarios — a talking fridge, a vampire dentist, aliens at a barbecue. They read well and they play badly, and the reason is structural rather than a matter of taste.
 
-`base-reality` should not be funny, weird, or absurd. When it is, the grounding step has been skipped and there is nothing for the unusual thing to be unusual *against*. A scene where everything is strange has no contrast, so nothing can escalate — every heightening move lands at the same volume as the one before.
+`base-reality` should not be funny, weird, or absurd. When it is, the grounding step has been skipped and there is nothing for the unusual thing to be unusual _against_. A scene where everything is strange has no contrast, so nothing can escalate — every heightening move lands at the same volume as the one before.
 
 There is also a bandwidth cost. Every offer has a processing cost for your partner. "Happy birthday" costs nothing. "I'm a cyborg from the future here to steal your toaster" demands five minutes of exposition before anyone can play. Spend the shared attention on each other, not on comprehension.
 
