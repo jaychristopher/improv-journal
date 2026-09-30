@@ -4,7 +4,7 @@ type: task
 summary: The school room has 47 relationship prompts of 94; write about forty more to the rubric so a hand of eight lasts a term
 epic: "[[Prompt generator]]"
 parent: "[[PG-1 The school pools are thin for a hand of eight]]"
-status: To Do
+status: Done
 priority: High
 sequence: 1
 executable: agent
@@ -82,4 +82,7 @@ Complexity 2: writing to a rubric, no code. ROI 4.0.
 
 ## Outcome
 
-_Not started._
+2026-09-30: forty-four relationship rows appended, none flagged, thirty-six of
+them combinable, eleven with a coaching line. The school room's relationship
+pool went from 47 to 91 of 138; the bank from 487 to 531, and the guide's
+title, description and H1 say 531. Every bank guard passed unchanged.
