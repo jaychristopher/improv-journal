@@ -120,9 +120,12 @@ describe("the backlog register", () => {
     // with MZ-2.1. 4 epics, 32 stories, 44 tasks.
     // 2026-09-28, the SEO loop's last tick: SA-22 and SA-22.1, the index
     // coverage reading nothing has taken. 33 stories, 45 tasks.
-    expect(typed("epic")).toHaveLength(4);
-    expect(typed("story")).toHaveLength(33);
-    expect(tasks).toHaveLength(45);
+    // 2026-09-30: the Prompt generator epic (PG) — PG-1 with three tasks, PG-2
+    // with two, PG-3 and PG-4 with one each, the round the two studies of that
+    // day argue for. 5 epics, 37 stories, 52 tasks.
+    expect(typed("epic")).toHaveLength(5);
+    expect(typed("story")).toHaveLength(37);
+    expect(tasks).toHaveLength(52);
     // 2026-09-25, working the queue in ROI order: SA-2.1 closed. 17 done, 24 open.
     // SA-1.2 closed. 18 done, 23 open.
     // SA-15.1 closed. 19 done, 22 open.
@@ -134,8 +137,9 @@ describe("the backlog register", () => {
     // SA-13.1 closed. 25 done, 16 open.
     // 2026-09-27: MZ-1.2 arrives done, MZ-1.1 and MZ-2.1 open. 26 done, 18 open.
     // 2026-09-28: SA-22.1 arrives open, a human read. 26 done, 19 open.
+    // 2026-09-30: the seven PG tasks arrive open. 26 done, 26 open.
     expect(tasks.filter(isDone)).toHaveLength(26);
-    expect(openTasks).toHaveLength(19);
+    expect(openTasks).toHaveLength(26);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
@@ -179,7 +183,16 @@ describe("the backlog register", () => {
    * rather than tolerated in general: any other missing path is a stale card.
    */
   it("declares files that exist, except the one a task creates", () => {
-    const CREATED_BY_A_TASK = new Set(["docs/backlog/directory-listings.md"]);
+    // 2026-09-30: four more, each the file a PG task exists to create — the
+    // mid-Atlantic guard (PG-1.3), the one-word draft (PG-2.1), the word bank
+    // and its guard (PG-2.2). Remove each here when its task closes.
+    const CREATED_BY_A_TASK = new Set([
+      "docs/backlog/directory-listings.md",
+      "src/lib/__tests__/mid-atlantic.test.ts",
+      "docs/one-word-suggestions.md",
+      "src/lib/prompt-words-data.ts",
+      "src/lib/__tests__/prompt-words.test.ts",
+    ]);
     const declared = openTasks.flatMap((t) => valuesFor(t.fm, "files"));
     // Reading 2026-09-22: 11 open tasks declaring 9 paths, 2 of them the file PF-2.4 creates.
     expect(declared.length).toBeGreaterThanOrEqual(8);
