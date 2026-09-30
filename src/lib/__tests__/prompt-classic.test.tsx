@@ -92,15 +92,6 @@ describe("the classic kind", () => {
       "prompt_line_redrawn",
       expect.objectContaining({ part: "location" }),
     );
-    // One card, not two: the list under the buttons shows previous cards
-    // only, so after a redraw there is nothing to list yet, and after the
-    // next card the previous one carries its redrawn line.
-    expect(dialog.querySelector('[data-testid="prompt-history"]')).toBeNull();
-    const redrawn = lineText(dialog, "location");
-    fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
-    const history = dialog.querySelector('[data-testid="prompt-history"]');
-    expect(history?.querySelectorAll("li")).toHaveLength(1);
-    expect(history?.textContent).toContain(redrawn);
   });
 
   it("copies all three lines, one per line", async () => {
@@ -132,7 +123,7 @@ describe("the classic kind", () => {
   });
 });
 
-describe("the keys, the session list and the clock", () => {
+describe("the keys and the clock", () => {
   beforeEach(() => {
     window.localStorage.clear();
     trackMock.mockClear();
@@ -156,26 +147,6 @@ describe("the keys, the session list and the clock", () => {
     expect(generated()).toBe(3);
     fireEvent.keyDown(document.body, { key: "k" });
     expect(within(dialog).getByRole("button", { name: CLASSIC_KIND.label })).toBeTruthy();
-  });
-
-  it("lists what was drawn before this card, newest first, below the buttons", () => {
-    render(<PromptGenerator surface="tool-page" />);
-    const dialog = openTo(PROMPT_CATEGORIES[0].label);
-    const texts: string[] = [];
-    texts.push(dialog.querySelector('[data-testid="prompt-text"]')?.textContent ?? "");
-    for (let i = 0; i < 2; i++) {
-      fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
-      texts.push(dialog.querySelector('[data-testid="prompt-text"]')?.textContent ?? "");
-    }
-    const items = [...dialog.querySelectorAll('[data-testid="prompt-history"] li')].map(
-      (li) => li.textContent,
-    );
-    // The card on screen is not repeated in its own list.
-    expect(items).toEqual([...texts].reverse().slice(1));
-    // The list sits after the buttons in reading order.
-    const buttons = within(dialog).getByRole("button", { name: /another/i });
-    const list = dialog.querySelector('[data-testid="prompt-history"]') as HTMLElement;
-    expect(buttons.compareDocumentPosition(list) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 
   it("shows how long the current prompt has been up, with no control to set", () => {

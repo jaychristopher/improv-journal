@@ -126,7 +126,7 @@ export function pickClassic(
   ) as ClassicDraw;
 }
 
-/** The classic's three lines as one string, for the clipboard and the session list. */
+/** The classic's three lines as one string, for the clipboard. */
 export function classicText(draw: ClassicDraw): string {
   return CLASSIC_PARTS.map((part) => draw[part]?.prompt.text)
     .filter((t): t is string => Boolean(t))

@@ -44,12 +44,12 @@ _When I have a class in ten minutes, I want ten safe prompts I can hand out
 in pairs, so that everybody is playing at once and nobody is exposed._
 
 Meets: the school room, which is the right idea and the site's real edge. Two
-taps to the first prompt, then "Another one" ten times, then the session list
-under the buttons to read back. To hand them out on paper she prints the
+taps to the first prompt, then "Another one" ten times, and nothing to read
+them back from once each has gone. To hand them out on paper she prints the
 guide and gets thirty pages, most of them prose and 347 appendix slips she did
 not ask for. **Slows.** The unmet job is _print this room's pool_, or _deal
-ten at once_ — the list under the buttons is close, but it is one tap per
-prompt and it cannot be printed on its own.
+ten at once_. The session list that sat under the buttons was close, but one
+tap per prompt and unprintable on its own, and it came out on 2026-09-30.
 
 ### 2. The primary teacher, ages seven to ten
 
@@ -82,8 +82,8 @@ _When I plan a two-hour class, I want a sequence — a warm-up start, then
 relationships, then something already wrong — so that the session builds._
 
 Meets: everything he needs, one kind at a time, with "A different kind" to
-move on. The clock helps him hold rounds. **Fine.** The session list gives
-him the record for his notes.
+move on. The clock helps him hold rounds. **Fine.** He keeps his own record;
+the session list that kept it for him came out on 2026-09-30.
 
 ### 5. The coach of a performing team
 
@@ -223,9 +223,10 @@ where the tool is would turn a hidden feature into a used one.
 _When I record, I want five prompts I can read on air and paste into my
 notes, so that prep takes a minute._
 
-Meets: five taps of "Another one", then the session list, which she can
-select and copy as a block. **Fine.** She would take a copy-all, and the
-rule against controls says no; the block selection is the answer.
+Meets: five taps of "Another one", pressing C after each. **Fine.** She would
+take a copy-all, and the rule against controls says no. The session list she
+could once select as a block came out on 2026-09-30, so it is one copy per
+prompt.
 
 ### 19. The game master using improv for NPC scenes
 
@@ -346,6 +347,12 @@ complexity, the backlog's own shape.
 the Atlantic use — a lift became floors, a lorry a long-haul driver, a caravan a
 rented camper, a fiver the taxi — with every row's scores, flags and coaching
 line kept; nine of the fifty-four flagged were false alarms and stay.
+
+**The session list came out on 2026-09-30**, at the owner's request. It first
+showed the card on screen at the head of its own list, then only the cards
+before it, and a record nobody asked to keep is furniture. Personas 1, 4 and 18
+were read against it: 1's unmet job, H, stands; 4 keeps his own notes; 18
+copies one prompt at a time with C.
 
 **A to F landed on 2026-09-30**, the same day, in one pass and no new control:
 the device remembers the last kind, the card takes focus and speaks, the phone

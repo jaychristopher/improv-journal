@@ -69,14 +69,8 @@ interface Draw {
   /** The three lines of the classic; null on a single kind. */
   parts: ClassicDraw | null;
   drawnAt: number;
-  /** The nth card dealt this session; the session list is keyed on it. */
+  /** The nth card dealt this session; focus and the clock are keyed on it. */
   card: number;
-}
-
-interface Drawn {
-  card: number;
-  kind: PromptKind;
-  text: string;
 }
 
 const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])';
@@ -126,7 +120,7 @@ function hasPrompt(draw: Draw): boolean {
   return draw.parts ? CLASSIC_PARTS.some((part) => draw.parts?.[part]) : draw.pick !== null;
 }
 
-/** The card's words, for the clipboard and the session list. */
+/** The card's words, for the clipboard. */
 function textOf(draw: Draw): string {
   return draw.parts ? classicText(draw.parts) : (draw.pick?.prompt.text ?? "");
 }
@@ -167,7 +161,6 @@ export function PromptGenerator({
   const promptRef = useRef<HTMLElement | null>(null);
   const [draw, setDraw] = useState<Draw | null>(null);
   const [draws, setDraws] = useState(0);
-  const [history, setHistory] = useState<Drawn[]>([]);
   const [copied, setCopied] = useState(false);
   const [now, setNow] = useState(0);
   const [store] = useState<SeenStore>(() => createSeenStore(browserStorage()));
@@ -275,15 +268,6 @@ export function PromptGenerator({
     return () => window.clearInterval(timer);
   }, [open, step, card]);
 
-  function remember(next: Draw) {
-    const text = textOf(next);
-    if (!text) return;
-    setHistory((entries) => [
-      { card: next.card, kind: next.kind, text },
-      ...entries.filter((e) => e.card !== next.card),
-    ]);
-  }
-
   function drawFrom(nextKind: PromptKind, nextUseCase: PromptUseCase, reset = false) {
     const cardNumber = ++cardRef.current;
     let next: Draw;
@@ -359,7 +343,6 @@ export function PromptGenerator({
     storeKind(nextKind);
     setCopied(false);
     setDraw(next);
-    remember(next);
     setAnnounce(
       next.parts
         ? CLASSIC_PARTS.map(
@@ -397,7 +380,6 @@ export function PromptGenerator({
     const next: Draw = { ...draw, parts: { ...draw.parts, [part]: pick } };
     setCopied(false);
     setDraw(next);
-    remember(next);
     setAnnounce(`${CLASSIC_PART_LABELS[part]}: ${pick.prompt.text}`);
   }
 
@@ -467,7 +449,6 @@ export function PromptGenerator({
   });
 
   const elapsed = draw ? Math.max(0, Math.floor((now - draw.drawnAt) / 1000)) : 0;
-  const previous = history.filter((entry) => entry.card !== card);
   const cast = draw?.parts
     ? CLASSIC_PARTS.some((part) => draw.parts?.[part]?.prompt.cast === "group")
       ? "group"
@@ -765,31 +746,6 @@ export function PromptGenerator({
                   </ToolAction>
                 </div>
                 {notesAtFoot && notes}
-
-                {/* What has been dealt before this card, newest first, below
-                    the buttons: a teacher who handed eight pairs eight prompts
-                    can read them back, and the whole list selects and copies
-                    in one go. No star, no save — the ones worth keeping are
-                    already on the page. The card on screen is not repeated
-                    here (the owner saw it twice, 2026-09-30). */}
-                {previous.length > 0 && (
-                  <section
-                    aria-label="Drawn before this one"
-                    className="border-foreground/10 mt-10 border-t pt-4"
-                  >
-                    <p className="text-foreground-dim text-xs tracking-wider uppercase">
-                      Drawn before this one
-                    </p>
-                    <ol
-                      className="text-foreground/70 mt-2 space-y-1 text-sm"
-                      data-testid="prompt-history"
-                    >
-                      {previous.map((entry) => (
-                        <li key={entry.card}>{entry.text.replace(/\n/g, " · ")}</li>
-                      ))}
-                    </ol>
-                  </section>
-                )}
               </div>
             )}
           </div>

@@ -208,6 +208,10 @@ kids section, the print stylesheet, the numbers in the hero, the method
 section, the copy-friendly lists, and the install. Item 16 rode on item 13.
 Item 14 was reversed the same day at the owner's request: the hero's count and
 "free, no ads, no account" line came out, and the numbers stay on the tool page.
+So was item 5, the session list: it showed the card on screen twice, once on
+the card and once at the head of its own list, and trimmed to the cards before
+it, it was a record nobody had asked to keep. The seen store still holds the
+ids; nothing shows them.
 Later the same day the guide gained the rest of the bank at its foot, generated
 from the bank, and its title carries the bank's count, held there by a guard.
 The list stays as the record of why each was chosen.
@@ -246,7 +250,8 @@ ranked within each group; the first in each is the one to do.
    select-all-and-copy friendly. It is Andi Smith's starred list and Impromuse's
    Save without a star: the ones worth keeping are already on the page, and a
    teacher who dealt eight prompts to eight pairs can read them back. The seen
-   store already holds the ids; this shows them.
+   store already holds the ids; this shows them. _Landed and removed the same
+   day; section 6 has why._
 6. **A quiet counter, not a timer.** Time since this prompt was drawn, in small
    type on the card, no control. The Drama Teacher's time limits and Andi
    Smith's reroll timer exist because a class runs rounds; the guide already
