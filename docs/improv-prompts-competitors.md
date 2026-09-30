@@ -206,6 +206,8 @@ the line redraw, the show-size type, the keys, the session list, the clock,
 the cast and coaching lines, 32 bank rows and 61 combinability marks, the
 kids section, the print stylesheet, the numbers in the hero, the method
 section, the copy-friendly lists, and the install. Item 16 rode on item 13.
+Item 14 was reversed the same day at the owner's request: the hero's count and
+"free, no ads, no account" line came out, and the numbers stay on the tool page.
 The list stays as the record of why each was chosen.
 
 Every way ours can carry what the field has and stay simpler than any of it.

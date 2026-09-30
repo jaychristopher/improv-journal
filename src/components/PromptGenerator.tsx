@@ -456,21 +456,6 @@ export function PromptGenerator({
                 <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
               ))}
             </div>
-            <p className="text-hero-subtle mt-5 text-xs">
-              {PROMPT_BANK.length} ranked prompts. Free, no ads, no account.
-              {surface === "guide-hero" && (
-                <>
-                  {" "}
-                  <Link
-                    href="/tools/improv-prompt-generator"
-                    className="underline underline-offset-2"
-                  >
-                    How the generator ranks them
-                  </Link>
-                  .
-                </>
-              )}
-            </p>
           </div>
         </div>
       </HeroTakeover>
