@@ -101,7 +101,7 @@ The most useful kind, and the kind nobody lists. `base-reality` needs four thing
 - A manager and the person they are about to promote
 - Old friends, one of whom has become religious
 - A landlord and a tenant who is three weeks late
-- Two colleagues stuck in a lift
+- Two colleagues stuck between floors
 - A grandparent teaching a grandchild to drive
 - Someone and their ex's new partner
 - Two people who were briefly famous together
@@ -126,7 +126,7 @@ The most useful kind, and the kind nobody lists. `base-reality` needs four thing
 - "You said you'd stopped."
 - "Everyone's outside. They're waiting for you."
 - "I found the receipts."
-- "Don't tell Mum I let you do this."
+- "Don't tell your mother I let you do this."
 - "This is the last time I'm asking."
 - "It doesn't look like the photo."
 - "I've been standing here for an hour."
@@ -154,17 +154,17 @@ The most useful kind, and the kind nobody lists. `base-reality` needs four thing
 A where is the most overlooked element of `base-reality` and the cheapest way to make a scene specific. These reward `space-work` — they have objects in them, and objects give you something to do while you find out what the scene is.
 
 - A laundromat at two in the morning
-- The queue at a passport office
-- A caravan in the rain
+- The waiting area at a passport office
+- A rented camper in the rain
 - Backstage at a school play
-- A car boot sale, packing up
+- A flea market, packing up
 - The waiting room of a fertility clinic
 - A hotel breakfast buffet
 - An empty office on Christmas Eve
 - A cable car that has stopped
-- The bit of the garden centre nobody goes to
+- The corner of the plant nursery nobody goes to
 - A funeral director's showroom
-- A launderette that is also a post office
+- A laundromat that is also a post office
 - The car park after the wedding
 - A campsite where it will not stop raining
 - Someone's childhood bedroom, unchanged
@@ -202,7 +202,7 @@ If you are running a show and want better material than "banana," ask for the th
 - What did you do on your last day off?
 - What's something you've kept that you should have thrown away?
 - What is a job you would be spectacularly bad at?
-- Where did you go on holiday as a child?
+- Where did you go every summer as a child?
 - What's a rule your family had?
 - What's something you're avoiding this week?
 - What job did you think you would end up doing?
@@ -290,7 +290,7 @@ Adults arrive more defended than teenagers and the risk is different — nobody 
 
 - Two colleagues who have to deliver the same news separately
 - Two people handing over a job, one of them leaving
-- Someone showing a new starter where everything actually is
+- Someone showing the new person where everything actually is
 - Two people who have been in the same meeting and heard different things
 - A person asking for help they do not want to need
 - Two people fixing something neither of them understands

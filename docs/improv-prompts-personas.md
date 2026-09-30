@@ -342,6 +342,11 @@ complexity, the backlog's own shape.
 
 ## What to do
 
+**G landed the same day**: forty-five prompts rewritten in words both sides of
+the Atlantic use — a lift became floors, a lorry a long-haul driver, a caravan a
+rented camper, a fiver the taxi — with every row's scores, flags and coaching
+line kept; nine of the fifty-four flagged were false alarms and stay.
+
 **A to F landed on 2026-09-30**, the same day, in one pass and no new control:
 the device remembers the last kind, the card takes focus and speaks, the phone
 hero shows what a room is, the classic card wraps and stacks, the show room
