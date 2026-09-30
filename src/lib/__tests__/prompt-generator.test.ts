@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
-import { PROMPT_BANK, type PromptCategory, type PromptUseCase } from "../prompt-bank";
+import {
+  PROMPT_BANK,
+  type PromptCategory,
+  type PromptUseCase,
+  RUBRIC_AXES,
+  RUBRIC_WEIGHTS,
+} from "../prompt-bank";
 import {
   bandPool,
   createSeenStore,
@@ -51,8 +57,21 @@ describe("scoring and banding", () => {
     expect(scoreFor(charged, "class")).toBeGreaterThan(scoreFor(charged, "school"));
   });
 
+  it("blends the four rooms into the default: each axis at their mean, nothing kept out", () => {
+    const rooms: PromptUseCase[] = ["class", "show", "school", "team"];
+    for (const axis of RUBRIC_AXES) {
+      const mean = rooms.reduce((sum, r) => sum + RUBRIC_WEIGHTS[r][axis.id], 0) / rooms.length;
+      expect(RUBRIC_WEIGHTS.any[axis.id], axis.id).toBeCloseTo(mean, 10);
+    }
+    for (const category of ["relationship", "task"] as PromptCategory[]) {
+      expect(poolFor(PROMPT_BANK, category, "any").length).toBe(
+        PROMPT_BANK.filter((p) => p.category === category).length,
+      );
+    }
+  });
+
   it("splits every pool into three bands, best first", () => {
-    const useCases: PromptUseCase[] = ["class", "show", "school", "team"];
+    const useCases: PromptUseCase[] = ["any", "class", "show", "school", "team"];
     const categories: PromptCategory[] = [
       "relationship",
       "first-line",

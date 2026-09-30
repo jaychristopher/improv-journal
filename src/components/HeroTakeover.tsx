@@ -60,7 +60,8 @@ export function HeroTakeover({
         aria-hidden={hidden}
         inert={hidden}
         className={[
-          "bg-hero text-hero-foreground flex items-center overflow-hidden",
+          // `relative` so a tool can pin a control to the panel's own corner.
+          "bg-hero text-hero-foreground relative flex items-center overflow-hidden",
           takeover
             ? // svh rather than vh: on iOS the address bar would otherwise cut
               // the last row of buttons off the fold.

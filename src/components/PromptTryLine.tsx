@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { categoriesNaming, generatorHrefFor } from "@/lib/prompt-bank";
+import { categoriesNaming, GENERATOR_HREF } from "@/lib/prompt-bank";
 
 /**
  * "Try it" on a concept the prompt generator has material for.
@@ -25,7 +25,7 @@ export function PromptTryLine({ atomId }: { atomId: string }) {
     <p className="text-foreground/50 text-xs" data-prompt-try={category.id} data-derived="true">
       Try it:{" "}
       <Link
-        href={generatorHrefFor(category.id)}
+        href={GENERATOR_HREF}
         className="text-foreground/70 hover:text-foreground underline underline-offset-2"
       >
         prompts for <em>{category.label.toLowerCase()}</em>

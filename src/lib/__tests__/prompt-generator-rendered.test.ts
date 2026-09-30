@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
 
-import { PROMPT_USE_CASES } from "../prompt-bank";
+import { PROMPT_KINDS } from "../prompt-bank";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "improv-prompts.html"));
@@ -12,16 +12,28 @@ const builtTool = fs.existsSync(TOOL);
 /**
  * The generator is the hero of /improv-prompts, and a hero is a position as
  * much as a component. The server html has to carry the inline card, with its
- * four ways in, and carry it before the article starts — otherwise a phone
+ * seven ways in, and carry it before the article starts — otherwise a phone
  * shows a reader the preamble the tool exists to skip.
  */
 describe("the prompt generator on the built page", () => {
   it.runIf(built)("renders its first step in the server html", () => {
     const html = fs.readFileSync(path.join(APP, "improv-prompts.html"), "utf8");
     expect(html).toContain("Give me a prompt");
-    for (const room of PROMPT_USE_CASES) {
-      expect(html, room.id).toContain(room.label);
+    for (const kind of PROMPT_KINDS) {
+      expect(html, kind.id).toContain(kind.label);
     }
+    expect(html).toContain('aria-label="Settings"');
+  });
+
+  it.runIf(built)("puts no heading before the h1: the hero's label is a paragraph", () => {
+    // The hero sits above the article, and until 2026-09-30 its label was an
+    // h2, so the page's outline opened with an h2 and then the h1 (the owner
+    // asked whether the page had two h1s; it had one, out of order).
+    const html = fs.readFileSync(path.join(APP, "improv-prompts.html"), "utf8");
+    const body = html.slice(html.indexOf("</nav>"));
+    const first = body.match(/<h[1-6][\s>]/);
+    expect(first?.[0]).toMatch(/^<h1/);
+    expect(body.match(/<h1[\s>]/g)).toHaveLength(1);
   });
 
   it.runIf(built)("sits above the article, not inside or below it", () => {
@@ -57,9 +69,10 @@ describe("the prompt generator on the built page", () => {
     const html = fs.readFileSync(TOOL, "utf8");
     expect(html).toMatch(/<h1[^>]*>Improv Prompt Generator/);
     expect(html).toContain("Give me a prompt");
-    for (const room of PROMPT_USE_CASES) {
-      expect(html, room.id).toContain(room.label);
+    for (const kind of PROMPT_KINDS) {
+      expect(html, kind.id).toContain(kind.label);
     }
+    expect(html).toContain('aria-label="Settings"');
     expect(html).toContain('href="/improv-prompts"');
   });
 

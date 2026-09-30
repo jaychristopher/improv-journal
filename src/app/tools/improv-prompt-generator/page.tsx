@@ -41,7 +41,7 @@ import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
  */
 
 const TITLE = "Improv Prompt Generator: Ranked Scene Starters for Any Room";
-const DESCRIPTION = `A free improv prompt generator with ${PROMPT_BANK.length} scene starters, ranked for your room — class, show, school or team — and never the same prompt twice.`;
+const DESCRIPTION = `A free improv prompt generator with ${PROMPT_BANK.length} scene starters, ranked best first, never the same prompt twice, with a setting for class, show, school or team.`;
 
 export const metadata: Metadata = {
   title: pageTitle(TITLE),
@@ -116,8 +116,8 @@ export default async function ImprovPromptGeneratorPage() {
           and the players spend the first thirty seconds inventing what the word should have given
           them. The generator above draws instead from a bank written to the criteria in the{" "}
           <Link href="/improv-prompts">improv prompts guide</Link> &mdash; specific beats general,
-          personal beats clever, a prompt is not a punchline &mdash; and ranks the bank for the room
-          you say you are in.
+          personal beats clever, a prompt is not a punchline &mdash; and ranks the bank best first.
+          The cog in its corner sets the room, where the room matters.
         </p>
 
         <h2 id="what-it-draws-from">What It Draws From</h2>
@@ -151,21 +151,21 @@ export default async function ImprovPromptGeneratorPage() {
           ))}
         </ul>
         <p>
-          The scores are weighted for your room, the pool is sorted best first and cut into three
-          bands, and the generator draws at random inside the top band until you have seen all of
-          it. So the first prompts you meet are the strongest the bank has for your situation, two
-          people opening it do not get the same first prompt, and the order still feels chosen
-          rather than shuffled.
+          The scores are weighted for the room you set, or evenly across all four; the pool is
+          sorted best first and cut into three bands, and the generator draws at random inside the
+          top band until you have seen all of it. So the first prompts you meet are the strongest
+          the bank has for your situation, two people opening it do not get the same first prompt,
+          and the order still feels chosen rather than shuffled.
         </p>
 
         <h2 id="what-the-room-changes">What the Room Changes</h2>
         <p>
-          The same prompt is not equally useful everywhere, and the four rooms weight the five
-          questions differently. Playability counts for{" "}
-          {Math.round(RUBRIC_WEIGHTS.school.doable * 100)} per cent of the score in a school room
-          and {Math.round(RUBRIC_WEIGHTS.show.doable * 100)} per cent in a show, because a
-          fourteen-year-old freezes when asked to invent and an audience wants proof the scene came
-          from the word. Specificity is worth the most in a show for the same reason.
+          Until the cog says otherwise, every prompt is in the pool and the five questions are
+          weighted evenly across what the four rooms need. Set a room and the weights shift to it:
+          playability counts for {Math.round(RUBRIC_WEIGHTS.school.doable * 100)} per cent of the
+          score in a school room and {Math.round(RUBRIC_WEIGHTS.show.doable * 100)} per cent in a
+          show, because a fourteen-year-old freezes when asked to invent and an audience wants proof
+          the scene came from the word.
         </p>
         <ul>
           {PROMPT_USE_CASES.map((room) => (
@@ -178,8 +178,7 @@ export default async function ImprovPromptGeneratorPage() {
           A school room also applies the guide&apos;s three filters mechanically: nothing that lands
           on somebody&apos;s actual life, nothing that needs adult knowledge, nothing with a
           built-in performer role. A work session gets adult knowledge back and keeps the other two
-          out. That is why the pools are different sizes &mdash; the number under each kind is what
-          is left after the filters, not a count of the whole bank.
+          out. The setting stays on the device, so a teacher sets it once.
         </p>
 
         <h2 id="why-it-never-repeats">Why It Never Repeats</h2>
@@ -204,8 +203,9 @@ export default async function ImprovPromptGeneratorPage() {
 
         <h3>Can I use it in a show?</h3>
         <p>
-          Yes, and the show setting is built for it. Ask the audience one of the questions it gives
-          you rather than reading a prompt off a screen; the{" "}
+          Yes. Set the room to a show from the cog and the host&apos;s notes move under the buttons.
+          Ask the audience one of the questions it gives you rather than reading a prompt off a
+          screen; the{" "}
           <Link href="/improv-prompts#questions-to-ask-an-audience">audience questions</Link> are
           there so the scene still visibly comes from the room. A prompt read from a phone proves
           nothing to a crowd.
@@ -236,6 +236,9 @@ export default async function ImprovPromptGeneratorPage() {
 
         <h3>Are there keyboard shortcuts?</h3>
         <Prose text={PROMPT_GENERATOR_COPY.keys} currentUrl="/tools/improv-prompt-generator" />
+
+        <h3>What does the cog set?</h3>
+        <Prose text={PROMPT_GENERATOR_COPY.settings} currentUrl="/tools/improv-prompt-generator" />
 
         <h3>Does it work offline?</h3>
         <Prose

@@ -348,6 +348,27 @@ the Atlantic use — a lift became floors, a lorry a long-haul driver, a caravan
 rented camper, a fiver the taxi — with every row's scores, flags and coaching
 line kept; nine of the fifty-four flagged were false alarms and stay.
 
+**Kind first, rooms blended, a cog (2026-09-30, the owner)**: the room stopped
+being the first question. The hero asks what kind of start — seven buttons with
+an icon and a label and nothing under them — and the first tap is a prompt. The
+four rooms blend into one ranking unless the cog in the corner names one; then
+the weights shift to it, a school or a work room filters the pool as before,
+and the choice stays on the device. The cog is the one control the rule
+against controls now allows, and it holds four things: the room; how many a
+card deals at once, one to eight, numbered, which is persona 1's _deal ten at
+once_ (H) in the form Andi Smith's generator gives it — the owner's teacher
+uses that one; whether the card changes on its own, thirty seconds to five
+minutes with the clock counting down, which is the same generator's reroll
+timer and persona 4's rounds with nobody at the laptop; and "forget what
+this device has seen" (M). Considered and left out for now: who is playing —
+solo, pairs, a group — which needs bank work first (I; fifteen rows carry a
+cast); notes on or off (the show room does that); big type (the width does
+that); a star or a saved list (the print slips and the guide are the keeping,
+and the session list showed what a record on the card is worth); languages.
+Each is one line in the cog if the evidence arrives. The hero's heading became a paragraph, so the page's first heading is
+its h1, and its second line lost the offline promise (F), which the tool
+page's questions still make.
+
 **The session list came out on 2026-09-30**, at the owner's request. It first
 showed the card on screen at the head of its own list, then only the cards
 before it, and a record nobody asked to keep is furniture. Personas 1, 4 and 18

@@ -11,12 +11,7 @@ import { PromptGenerator } from "@/components/PromptGenerator";
 import { hasPromptTryLine, PromptTryLine } from "@/components/PromptTryLine";
 
 import { loadAtoms } from "../content";
-import {
-  generatorHrefFor,
-  PROMPT_CATEGORIES,
-  PROMPT_KINDS,
-  PROMPT_USE_CASES,
-} from "../prompt-bank";
+import { GENERATOR_HREF, PROMPT_CATEGORIES, PROMPT_KINDS } from "../prompt-bank";
 import { resolveIds, resolvePromptConcepts } from "../prompt-concepts";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
@@ -80,15 +75,15 @@ describe("PromptTryLine", () => {
     expect(withLine.sort()).toEqual([...named].sort());
   });
 
-  it("links the generator pre-set to the category, and renders nothing elsewhere", () => {
+  it("links the generator, and renders nothing elsewhere", () => {
     const { container } = render(<PromptTryLine atomId="want" />);
     const line = container.querySelector("[data-prompt-try]");
     expect(line).not.toBeNull();
     expect(line?.getAttribute("data-prompt-try")).toBe("situation");
     expect(line?.getAttribute("data-derived")).toBe("true");
     const link = line?.querySelector("a");
-    expect(link?.getAttribute("href")).toBe(generatorHrefFor("situation"));
-    expect(link?.getAttribute("href")).toBe("/tools/improv-prompt-generator?category=situation");
+    expect(link?.getAttribute("href")).toBe(GENERATOR_HREF);
+    expect(link?.getAttribute("href")).toBe("/tools/improv-prompt-generator");
     expect(link?.textContent).toContain("something already wrong");
     cleanup();
 
@@ -99,8 +94,7 @@ describe("PromptTryLine", () => {
 
 describe("the generator's concept line", () => {
   beforeEach(() => {
-    // The generator remembers the last kind on the device (2026-09-30), and
-    // these tests expect the kind step.
+    // A clean device: nothing set in the cog, nothing seen.
     window.localStorage.clear();
   });
   afterEach(() => {
@@ -112,7 +106,6 @@ describe("the generator's concept line", () => {
   it("names the category's concept under a drawn prompt, with the resolved link", async () => {
     const concepts = await resolvePromptConcepts();
     render(<PromptGenerator surface="tool-page" concepts={concepts} />);
-    fireEvent.click(screen.getByRole("button", { name: PROMPT_USE_CASES[0].label }));
     const relationship = PROMPT_CATEGORIES.find((c) => c.id === "relationship");
     expect(relationship).toBeDefined();
     if (!relationship) return;
@@ -130,7 +123,6 @@ describe("the generator's concept line", () => {
   it("renders no concept line for the task category, which has no concept", async () => {
     const concepts = await resolvePromptConcepts();
     render(<PromptGenerator surface="tool-page" concepts={concepts} />);
-    fireEvent.click(screen.getByRole("button", { name: PROMPT_USE_CASES[0].label }));
     const task = PROMPT_CATEGORIES.find((c) => c.id === "task");
     if (!task) return;
     fireEvent.click(screen.getByRole("button", { name: task.label }));
@@ -138,28 +130,16 @@ describe("the generator's concept line", () => {
     expect(document.querySelector("[data-prompt-concept]")).toBeNull();
   });
 
-  it("opens straight onto the category the query names, so a concept's link lands on its prompts", () => {
-    window.history.replaceState(null, "", generatorHrefFor("location"));
+  it("lands a concept's link on a page whose hero offers that kind as one tap", () => {
+    // The link once carried `?category=<kind>` to skip the room step. The
+    // kind is the first tap now, so the page is enough.
+    expect(GENERATOR_HREF).toBe("/tools/improv-prompt-generator");
     render(<PromptGenerator surface="tool-page" />);
-    // The inline card says what it was set to, so the reader is not surprised.
-    expect(document.querySelector("[data-prompt-preset]")?.getAttribute("data-prompt-preset")).toBe(
-      "location",
-    );
-    fireEvent.click(screen.getByRole("button", { name: PROMPT_USE_CASES[0].label }));
-    // No "what kind of start?" step: the first tap draws a location prompt.
+    const location = PROMPT_CATEGORIES.find((c) => c.id === "location");
+    if (!location) return;
+    fireEvent.click(screen.getByRole("button", { name: location.label }));
     expect(screen.getByTestId("prompt-text")).toBeTruthy();
     expect(screen.getByRole("dialog").textContent).toContain("A location");
-    window.history.replaceState(null, "", "/");
-  });
-
-  it("ignores a query naming a category the bank does not have", () => {
-    window.history.replaceState(null, "", "/tools/improv-prompt-generator?category=banana");
-    render(<PromptGenerator surface="tool-page" />);
-    expect(document.querySelector("[data-prompt-preset]")).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: PROMPT_USE_CASES[0].label }));
-    expect(screen.queryByTestId("prompt-text")).toBeNull();
-    expect(screen.getByRole("button", { name: PROMPT_CATEGORIES[0].label })).toBeTruthy();
-    window.history.replaceState(null, "", "/");
   });
 });
 

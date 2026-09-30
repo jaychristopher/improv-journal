@@ -12,6 +12,7 @@ import { PromptGenerator } from "@/components/PromptGenerator";
 import {
   CLASSIC_KIND,
   CLASSIC_PARTS,
+  DEFAULT_USE_CASE,
   PROMPT_BANK,
   PROMPT_CATEGORIES,
   PROMPT_KINDS,
@@ -23,16 +24,14 @@ import { poolFor, SEEN_STORAGE_KEY } from "@/lib/prompt-generator";
 /**
  * What the field had and this generator did not, on 2026-09-30
  * (docs/improv-prompts-competitors.md): a who-where-what draw, a lock on part
- * of it, keys for a host at a laptop, a list of what was dealt, a clock, and
+ * of it, keys for a host at a laptop, a clock, and
  * the cast and a coaching line on a card. Each landed without a control the
  * prompt step did not already have, and this holds each one to the rule it
  * was built under.
  */
-function openTo(kindLabel: string, room = PROMPT_USE_CASES[0].label) {
-  fireEvent.click(screen.getByRole("button", { name: room }));
-  const dialog = screen.getByRole("dialog");
-  fireEvent.click(within(dialog).getByRole("button", { name: kindLabel }));
-  return dialog;
+function openTo(kindLabel: string) {
+  fireEvent.click(screen.getByRole("button", { name: kindLabel }));
+  return screen.getByRole("dialog");
 }
 
 function lineText(dialog: HTMLElement, part: string): string {
@@ -66,7 +65,7 @@ describe("the classic kind", () => {
     render(<PromptGenerator surface="tool-page" />);
     const dialog = openTo(CLASSIC_KIND.label);
     for (const part of CLASSIC_PARTS) {
-      const pool = poolFor(PROMPT_BANK, part, PROMPT_USE_CASES[0].id, { combinable: true });
+      const pool = poolFor(PROMPT_BANK, part, DEFAULT_USE_CASE, { combinable: true });
       expect(
         pool.map((p) => p.text),
         part,

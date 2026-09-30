@@ -211,7 +211,18 @@ Item 14 was reversed the same day at the owner's request: the hero's count and
 So was item 5, the session list: it showed the card on screen twice, once on
 the card and once at the head of its own list, and trimmed to the cards before
 it, it was a record nobody had asked to keep. The seen store still holds the
-ids; nothing shows them.
+ids; nothing shows them. Later that day the owner changed the frame the
+seventeen sat in: the room step went, the kind of start became the first tap,
+the rooms blend by default, and a cog in the corner holds the room, a hand of
+one to eight at a time, a timer that deals the next card on its own, and a
+reset — the one control added, at the owner's request. The hand and the timer
+are Andi Smith's "Suggestions: 1 to 8" and "Reroll every N seconds", read
+again on the owner's word that a teacher loves that page: twelve categories
+as icon tiles, a star, a language menu, a cog that hides categories, 4,360
+one-word suggestions. The tiles came too — an icon above a centred label, no
+count under it. The star, the languages and the one-word categories did not;
+section 3 has why. docs/improv-prompts-personas.md has the reasoning and the
+settings considered and left out.
 Later the same day the guide gained the rest of the bank at its foot, generated
 from the bank, and its title carries the bank's count, held there by a guard.
 The list stays as the record of why each was chosen.

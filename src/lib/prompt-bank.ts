@@ -49,7 +49,11 @@ export const CLASSIC_PART_LABELS: Record<ClassicPart, string> = {
   task: "What",
 };
 
-export type PromptUseCase = "class" | "show" | "school" | "team";
+/**
+ * Where the prompts are used, or `any`: the blend of all four, which is what
+ * the generator uses until the cog names a room (2026-09-30).
+ */
+export type PromptUseCase = "any" | "class" | "show" | "school" | "team";
 
 export type RubricAxis = "specific" | "open" | "charge" | "doable" | "grounded";
 
@@ -201,6 +205,11 @@ export const PROMPT_KINDS: PromptKindInfo[] = [CLASSIC_KIND, ...PROMPT_CATEGORIE
 
 export const PROMPT_USE_CASES: PromptUseCaseInfo[] = [
   {
+    id: "any",
+    label: "Anywhere",
+    description: "Every prompt, weighted for all four rooms at once.",
+  },
+  {
     id: "class",
     label: "A class or rehearsal",
     description: "Adults learning. Anything goes; depth first.",
@@ -221,6 +230,9 @@ export const PROMPT_USE_CASES: PromptUseCaseInfo[] = [
     description: "Adults who arrived defended. Tasks to be honest inside.",
   },
 ];
+
+/** The room the generator uses until the cog says otherwise: the blend. */
+export const DEFAULT_USE_CASE: PromptUseCase = "any";
 
 export const RUBRIC_AXES: { id: RubricAxis; label: string; question: string }[] = [
   {
@@ -260,7 +272,7 @@ export const RUBRIC_AXES: { id: RubricAxis; label: string; question: string }[] 
  * team session sits between: adults, so charge is fine, but they stay clever
  * unless the prompt gives them a task to be honest inside.
  */
-export const RUBRIC_WEIGHTS: Record<PromptUseCase, Record<RubricAxis, number>> = {
+const ROOM_WEIGHTS: Record<Exclude<PromptUseCase, "any">, Record<RubricAxis, number>> = {
   class: { specific: 0.2, open: 0.25, charge: 0.2, doable: 0.2, grounded: 0.15 },
   show: { specific: 0.3, open: 0.25, charge: 0.2, doable: 0.1, grounded: 0.15 },
   school: { specific: 0.15, open: 0.2, charge: 0.05, doable: 0.4, grounded: 0.2 },
@@ -268,10 +280,31 @@ export const RUBRIC_WEIGHTS: Record<PromptUseCase, Record<RubricAxis, number>> =
 };
 
 /**
+ * The blend: each axis at the mean of the four rooms. What a reader gets
+ * until the cog names a room — the owner's call on 2026-09-30, that the room
+ * is nominally useful next to the kind and should not be the first question.
+ */
+function blend(rooms: Record<string, Record<RubricAxis, number>>): Record<RubricAxis, number> {
+  const list = Object.values(rooms);
+  return Object.fromEntries(
+    RUBRIC_AXES.map((axis) => [
+      axis.id,
+      list.reduce((sum, weights) => sum + weights[axis.id], 0) / list.length,
+    ]),
+  ) as Record<RubricAxis, number>;
+}
+
+export const RUBRIC_WEIGHTS: Record<PromptUseCase, Record<RubricAxis, number>> = {
+  any: blend(ROOM_WEIGHTS),
+  ...ROOM_WEIGHTS,
+};
+
+/**
  * Which prompts a use case may draw from. The school filters are the article's
  * three, verbatim: nothing that lands on somebody's actual life, nothing
  * requiring adult knowledge, nothing that rewards being the loudest. A work
- * room gets adult knowledge back but keeps the other two out.
+ * room gets adult knowledge back but keeps the other two out. The blend and
+ * the two adult rooms admit everything.
  */
 export function suitsUseCase(prompt: Prompt, useCase: PromptUseCase): boolean {
   switch (useCase) {
@@ -279,6 +312,7 @@ export function suitsUseCase(prompt: Prompt, useCase: PromptUseCase): boolean {
       return !prompt.personal && !prompt.adult && !prompt.loud;
     case "team":
       return !prompt.personal && !prompt.loud;
+    case "any":
     case "class":
     case "show":
       return true;
@@ -307,13 +341,12 @@ export function conceptGloss(howToUse: string): string {
   return last.charAt(0).toLowerCase() + last.slice(1);
 }
 
-/** The query the tool page reads to open on one kind of prompt: `?category=relationship`. */
-export const CATEGORY_QUERY_PARAM = "category";
-
-/** The tool page pre-set to one kind, for the link from that kind's concept. */
-export function generatorHrefFor(kind: PromptKind): string {
-  return `/tools/improv-prompt-generator?${CATEGORY_QUERY_PARAM}=${kind}`;
-}
+/**
+ * The tool page, for the try line on a concept. It once carried
+ * `?category=<kind>` so the first tap skipped to that kind; since the kind
+ * is the first tap (2026-09-30) the page is enough.
+ */
+export const GENERATOR_HREF = "/tools/improv-prompt-generator";
 
 /** The fragment the guide gives a kind's heading, so a link can land on it. */
 export function categoryAnchor(category: PromptKindInfo): string {
