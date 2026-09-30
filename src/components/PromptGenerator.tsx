@@ -624,15 +624,23 @@ export function PromptGenerator({
           <div className="pr-12">
             {/* Not a heading: the hero sits above the article, and a heading
                 here put an h2 before the page's h1. The region is labelled by
-                it all the same. */}
+                it all the same. It says what the page is in the words a
+                searcher typed — the count and "improv prompts" — because
+                "Give me a prompt" told someone landing from search nothing
+                about what they had found (the owner, 2026-09-30). The count
+                is the bank's, so it cannot drift. Never "generator": the tool
+                page owns that term. */}
             <p
               id={headingId}
               className="text-hero-foreground text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
             >
-              Give me a prompt
+              {/* One string, so the server html carries the phrase whole
+                  rather than the count and the words split by a marker. */}
+              {`${PROMPT_BANK.length} improv prompts`}
             </p>
             <p className="text-hero-muted mt-2 max-w-md text-base leading-relaxed lg:mt-4">
-              Pick a kind of start. Never the same one twice on this device.
+              Scene starters for a class, a show or a school room, best first. Pick the kind of
+              start you need.
             </p>
           </div>
           <div className="mt-6 lg:mt-0">{kindGrid(true)}</div>

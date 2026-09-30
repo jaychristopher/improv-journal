@@ -367,7 +367,10 @@ that); a star or a saved list (the print slips and the guide are the keeping,
 and the session list showed what a record on the card is worth); languages.
 Each is one line in the cog if the evidence arrives. The hero's heading became a paragraph, so the page's first heading is
 its h1, and its second line lost the offline promise (F), which the tool
-page's questions still make.
+page's questions still make. The title went the same evening: "Give me a
+prompt" told a searcher nothing about what they had landed on, so the hero
+now says the bank's count and the words they typed, "improv prompts", and
+the line under it says who it is for and what to do.
 
 **The session list came out on 2026-09-30**, at the owner's request. It first
 showed the card on screen at the head of its own list, then only the cards

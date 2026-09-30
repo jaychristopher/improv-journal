@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { describe, expect, it } from "vitest";
 
-import { PROMPT_KINDS } from "../prompt-bank";
+import { PROMPT_BANK, PROMPT_KINDS } from "../prompt-bank";
 
 const APP = path.join(process.cwd(), ".next", "server", "app");
 const built = fs.existsSync(APP) && fs.existsSync(path.join(APP, "improv-prompts.html"));
@@ -12,13 +12,14 @@ const builtTool = fs.existsSync(TOOL);
 /**
  * The generator is the hero of /improv-prompts, and a hero is a position as
  * much as a component. The server html has to carry the inline card, with its
- * seven ways in, and carry it before the article starts — otherwise a phone
+ * seven ways in and a label that says what the page is in the searcher's
+ * words (the count and "improv prompts"), and carry it before the article starts — otherwise a phone
  * shows a reader the preamble the tool exists to skip.
  */
 describe("the prompt generator on the built page", () => {
   it.runIf(built)("renders its first step in the server html", () => {
     const html = fs.readFileSync(path.join(APP, "improv-prompts.html"), "utf8");
-    expect(html).toContain("Give me a prompt");
+    expect(html).toContain(`${PROMPT_BANK.length} improv prompts`);
     for (const kind of PROMPT_KINDS) {
       expect(html, kind.id).toContain(kind.label);
     }
@@ -38,7 +39,7 @@ describe("the prompt generator on the built page", () => {
 
   it.runIf(built)("sits above the article, not inside or below it", () => {
     const html = fs.readFileSync(path.join(APP, "improv-prompts.html"), "utf8");
-    const hero = html.indexOf("Give me a prompt");
+    const hero = html.indexOf(`${PROMPT_BANK.length} improv prompts`);
     const article = html.indexOf("<article");
     expect(hero).toBeGreaterThan(-1);
     expect(article).toBeGreaterThan(-1);
@@ -68,7 +69,7 @@ describe("the prompt generator on the built page", () => {
   it.runIf(builtTool)("has a page of its own that carries the keyword in its h1", () => {
     const html = fs.readFileSync(TOOL, "utf8");
     expect(html).toMatch(/<h1[^>]*>Improv Prompt Generator/);
-    expect(html).toContain("Give me a prompt");
+    expect(html).toContain(`${PROMPT_BANK.length} improv prompts`);
     for (const kind of PROMPT_KINDS) {
       expect(html, kind.id).toContain(kind.label);
     }
