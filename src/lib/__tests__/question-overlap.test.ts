@@ -114,6 +114,11 @@ function isAllowed(a: string, b: string): boolean {
 const THRESHOLD = 0.7;
 
 describe("question lists", () => {
+  // Loading every guide through the pipeline and comparing four hundred
+  // questions pairwise takes 25.8 s alone (2026-09-30) and 33-35 s inside a
+  // full check with vitest's parallel workers and another project building.
+  // The suite's default is 30 s. The assertion is unchanged; the time is the
+  // work's own.
   it("do not repeat each other's questions", async () => {
     const bridges = await loadBridges();
     const questions: { slug: string; question: string; words: Set<string> }[] = [];
@@ -160,5 +165,5 @@ describe("question lists", () => {
     }
 
     expect(collisions).toEqual([]);
-  });
+  }, 120_000);
 });
