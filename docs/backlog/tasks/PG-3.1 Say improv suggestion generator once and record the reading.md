@@ -4,7 +4,7 @@ type: task
 summary: Register the tool page's keywords and results-page reading in the route registry, and say "improv suggestion generator" once in the page's prose
 epic: "[[Prompt generator]]"
 parent: "[[PG-3 The tool page never says suggestion]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 1
 executable: agent
@@ -80,4 +80,11 @@ ROI 2.0.
 
 ## Outcome
 
-_Not started._
+2026-09-30, commit 942a10ab: the route is in ROUTE_KEYWORDS with its four terms
+and in ROUTE_SERP with the reading of "improv prompt generator" (DRs 95, 92,
+20, 40, 4, 0, 35, 39, 10; min 0; floor traffic 15; top share 0.06; winnable),
+the sibling term's page in the audience prose. The intro's first sentence says
+"An improv suggestion generator is usually a random word", paid for in the
+same paragraph; the built page carries the phrase in the sentence and its RSC
+copy, in no heading. The collision guard learned that this route keeps its
+title in a constant. Not added to the rank tracker.
