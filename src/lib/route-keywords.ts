@@ -74,6 +74,41 @@ export const ROUTE_KEYWORDS: Record<string, RouteKeyword[]> = {
     },
   ],
   /**
+   * The full-page home of the prompt generator, and the one page on the site
+   * that says "generator". "improv prompt generator" is its own search, not a
+   * variant of "improv prompts": Ahrefs (2026-09-19, US) files it under the
+   * parent "improv generator", which is not the guide's parent, so by the
+   * collision rule in CLAUDE.md a second page may own it, and its title does.
+   * The field's own word for the same tool is "suggestion" — Andi Smith's
+   * page, Glasgow Improv's, a Play Store app — and "improv suggestion
+   * generator" is the same size (150, read 2026-09-30, US; difficulty,
+   * potential and parent were not returned, so only the volume is recorded).
+   * "improv suggestions" sits under this page's own term as its parent. The
+   * category terms were checked the same month and have nothing behind them
+   * ("improv first lines", "improv location ideas", "improv relationship
+   * prompts" all 0), so the six kinds of scene starter stay sections of the
+   * guide. The results page is in ROUTE_SERP. Not in the rank tracker: its
+   * list forbids never-surfaced terms, and neither prompt page has surfaced.
+   */
+  "/tools/improv-prompt-generator": [
+    {
+      keyword: "improv prompt generator",
+      volume: 150,
+      difficulty: 2,
+      traffic_potential: 150,
+      parent: "improv generator",
+    },
+    { keyword: "improv suggestion generator", volume: 150 },
+    {
+      keyword: "improv suggestions",
+      volume: 10,
+      difficulty: 0,
+      traffic_potential: 70,
+      parent: "improv prompt generator",
+    },
+    { keyword: "improv scenario generator", volume: 20 },
+  ],
+  /**
    * The beginner level of the exercise picker: the site's list of beginner
    * games, with the order to run them in. Read 2026-09-28, US: all three
    * terms sit under the parent "improv exercises" at difficulty 0, and the
@@ -310,6 +345,26 @@ export const ROUTE_SERP: Record<string, RouteSerpReading> = {
       "The theatre's own site with shows, classes and bar sitelinks, Wikipedia, Instagram, listings and " +
       "Yelp. People Also Ask asks what the Annoyance's style of improv is and who founded it — the two " +
       "questions this page answers, sitting at 3 as questions. Navigational; the 700 is the homepage.",
+  },
+  "/tools/improv-prompt-generator": {
+    serp_query: "improv prompt generator",
+    serp_checked: "2026-09-30",
+    serp_min_dr: 0,
+    serp_verdict: "winnable",
+    serp_top10_dr: [95, 92, 20, 40, 4, 0, 35, 39, 10],
+    serp_floor_traffic: 15,
+    serp_top_share: 0.06,
+    serp_audience:
+      "Generators, and one article that out-earns them all: a Reddit thread asking for one at 1 (DR 95, " +
+      "109 visits), a Webflow one-pager at 2 (DR 92, 92), Glasgow Improv's at 3 (DR 20, 108), Theatre " +
+      "Haus at 4 (DR 40, 43), Impromuse at 5 (DR 4, 56), a company's own at 6 (DR 0, 15), Radical " +
+      "Agreement's prompts article at 7 (DR 35, 1,429 — the term's biggest earner is a list, not a " +
+      "tool), a review of generators at 8, Can I Get A at 9 (DR 10, 18), People Also Ask at 10 (what " +
+      "are some good prompts for improv; the four pillars; prompts in dance). Nine organic results " +
+      "were returned, so the top share is Reddit's of those. The sibling term \"improv suggestion " +
+      'generator" (150 a month), read the same day: DRs 10, 20, 27, 75, 19, 94, 100, 4, 39, 4, the ' +
+      "DR 4 page at 10 on 56 visits and the DR 20 page at 2 on 108 — the same hobbyist generators " +
+      "handing out nouns.",
   },
 };
 

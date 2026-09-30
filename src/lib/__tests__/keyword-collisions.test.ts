@@ -21,6 +21,9 @@ const HUB_TITLE_SOURCES: Record<string, string> = {
   "/traditions/annoyance": "src/app/traditions/[tradition]/page.tsx",
   "/library": "src/app/library/page.tsx",
   "/tools/exercise-picker/beginner": "src/app/tools/exercise-picker/picker-config.ts",
+  // Registered 2026-09-30 (PG-3.1); its title is a `const TITLE` the page
+  // passes to pageTitle() and renders as its H1.
+  "/tools/improv-prompt-generator": "src/app/tools/improv-prompt-generator/page.tsx",
 };
 
 /** The `pageTitle("...")` argument and any literal `<h1>` text in a hub source. */
@@ -39,6 +42,10 @@ function hubTitles(route: string): string[] {
     if (title) titles.push(title);
   } else {
     for (const m of src.matchAll(/pageTitle\("([^"]+)"\)/g)) titles.push(m[1]);
+    // A route that keeps its title in a constant and renders it as {TITLE}
+    // (the prompt generator's page) shows neither a literal pageTitle("…")
+    // nor literal <h1> text, so the constant is read directly.
+    for (const m of src.matchAll(/^const TITLE = "([^"]+)";/gm)) titles.push(m[1]);
   }
   for (const m of src.matchAll(/<h1[^>]*>\s*([^<{]+?)\s*<\/h1>/g)) titles.push(m[1]);
   return titles;

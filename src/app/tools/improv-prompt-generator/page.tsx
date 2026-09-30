@@ -23,21 +23,16 @@ import { ogImages, pageTitle, SITE_NAME } from "@/lib/seo";
  *
  * The same component is the hero of /improv-prompts. It lives here as well
  * because "improv prompt generator" is its own search, not a variant of
- * "improv prompts": Ahrefs (2026-09-19, US) gives it 150 a month at KD 2 with
- * a traffic potential of 150, under the parent topic "improv generator" (150 a
- * month, KD 2). That parent is different from the guide's, so by the collision
- * rule in CLAUDE.md a second page may own it. "improv suggestions" (10) and
- * "improv scenario generator" (20) sit under the same parent and are covered
- * here rather than anywhere else.
+ * "improv prompts", and the collision rule in CLAUDE.md lets a second page own
+ * it. The keywords, the Ahrefs dates and the results-page reading are in
+ * src/lib/route-keywords.ts (ROUTE_KEYWORDS and ROUTE_SERP, 2026-09-30), where
+ * the audit can see them; until then they sat in this comment, because a
+ * hand-built route has no frontmatter.
  *
  * The category-level terms were checked and have nothing behind them —
  * "improv first lines", "improv location ideas", "improv relationship prompts"
- * all report zero — so the six kinds stay as sections of the guide and are not
- * pages of their own.
- *
- * Like /improv-games this is a hand-built route, so the SEO audit scripts
- * cannot see the verdict above; it lives here because there is nowhere
- * structured to put it.
+ * all report zero — so the six kinds of scene starter stay as sections of the
+ * guide and are not pages of their own.
  */
 
 const TITLE = "Improv Prompt Generator: Ranked Scene Starters for Any Room";
@@ -111,10 +106,10 @@ export default async function ImprovPromptGeneratorPage() {
 
       <article className="prose prose-neutral dark:prose-invert max-w-none" data-track="body">
         <p>
-          Most improv generators are a random word. This one is not, because a random word is the
-          weakest prompt there is: it arrives with no texture, no relationship and nothing at stake,
-          and the players spend the first thirty seconds inventing what the word should have given
-          them. The generator above draws instead from a bank written to the criteria in the{" "}
+          An improv suggestion generator is usually a random word. This one is not, because a random
+          word is the weakest prompt: it arrives with no texture, no relationship and nothing at
+          stake, and the players spend thirty seconds inventing what it should have given them. The
+          generator above draws instead from a bank written to the criteria in the{" "}
           <Link href="/improv-prompts">improv prompts guide</Link> &mdash; specific beats general,
           personal beats clever, a prompt is not a punchline &mdash; and ranks the bank best first.
           The cog in its corner sets the room, where the room matters.
