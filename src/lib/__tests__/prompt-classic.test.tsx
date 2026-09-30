@@ -167,8 +167,9 @@ describe("what a row can say", () => {
 
   it("keeps every coaching line short, and there are enough of them to meet", () => {
     const coached = PROMPT_BANK.filter((p) => p.coach);
-    // 19 on 2026-09-30, on the strongest prompts of each kind.
-    expect(coached.length).toBeGreaterThanOrEqual(15);
+    // 19 on 2026-09-30, on the strongest prompts of each kind; 38 after the
+    // school relationships and audience questions landed the same day (PG-1).
+    expect(coached.length).toBeGreaterThanOrEqual(35);
     for (const p of coached) expect(p.coach!.length, p.text).toBeLessThanOrEqual(110);
   });
 

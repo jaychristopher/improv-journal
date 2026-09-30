@@ -151,7 +151,7 @@ describe("page furniture", () => {
    *   guides    6  Transcript, WhatsNext, @guide-next-step, GuideConcepts,
    *                GuideSources, RelatedGuides
    *             7  on 2026-09-30: PromptBankAppendix first, the improv prompts
-   *                guide's own list of the other 347 in the generator's bank,
+   *                guide's own list of the other 347 (433 after PG-1) in the generator's bank,
    *                rendered from the bank after the prose. Content rather than
    *                a hand-off, and it mounts on one page, but it is a thing to
    *                get past on the way out and so it is counted, not exempted.

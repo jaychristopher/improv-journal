@@ -43,8 +43,9 @@ describe("title counts", () => {
       if (numbers.length === 0) continue;
 
       // What the page carries is the markdown's items plus any it renders from
-      // the bank: the improv prompts guide's title claims 487 and its sections
-      // list 140, and the other 347 are on the page (PromptBankAppendix).
+      // the bank: the improv prompts guide's title claimed 487 on 2026-09-30
+      // and its sections list 140, with the other 347 on the page
+      // (PromptBankAppendix); 573 and 433 after PG-1 the same day.
       const items = countItems(bridge.content) + generatedItems(bridge.slug, bridge.content);
       for (const claimed of numbers) {
         checked++;

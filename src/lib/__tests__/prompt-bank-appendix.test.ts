@@ -38,7 +38,7 @@ describe("the rest of the bank on the guide", () => {
   it("is exactly the bank minus what the sections list", () => {
     const listed = listedPrompts(markdown);
     const rest = unlistedPrompts(markdown);
-    // 140 listed and 347 more on 2026-09-30.
+    // 140 listed and 347 more on 2026-09-30; 433 more after PG-1 the same day.
     expect(listed.size).toBeGreaterThanOrEqual(140);
     expect(rest.length + listed.size).toBe(PROMPT_BANK.length);
     for (const p of rest) expect(listed.has(normalizePrompt(p.text)), p.text).toBe(false);

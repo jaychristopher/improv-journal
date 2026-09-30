@@ -4,7 +4,7 @@ type: task
 summary: The school room has 47 audience questions of 56; write about forty more a fourteen-year-old and an adult can both answer
 epic: "[[Prompt generator]]"
 parent: "[[PG-1 The school pools are thin for a hand of eight]]"
-status: To Do
+status: Done
 priority: High
 sequence: 2
 executable: agent
@@ -73,4 +73,9 @@ Impact 4, radius 2, opportunity 8, complexity 2, ROI 4.0 — as PG-1.1.
 
 ## Outcome
 
-_Not started._
+2026-09-30: forty-two audience questions appended, none flagged, eight with a
+coaching line. The school room's question pool went from 47 to 89 of 98; the
+bank from 531 to 573, and the guide's title, description and H1 say 573. The
+thinnest pool in any room is now situation in a school room at 64, and the two
+floors in prompt-bank.test.ts (bank size, pool depth) and the coached floor in
+prompt-classic.test.tsx sit just under the run's numbers with the date.

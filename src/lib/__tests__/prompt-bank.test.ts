@@ -29,7 +29,10 @@ describe("the prompt bank", () => {
   it("is large enough to feel bottomless", () => {
     // 140 is what the article lists. The tool needs to keep going well past
     // the point where a reader has seen every one of those.
-    expect(PROMPT_BANK.length).toBeGreaterThanOrEqual(420);
+    // 487 on 2026-09-30, 573 after forty-four school relationships and
+    // forty-two school audience questions the same day (PG-1); the floor
+    // sits just under.
+    expect(PROMPT_BANK.length).toBeGreaterThanOrEqual(560);
   });
 
   it("gives every category enough depth to run a whole class on", () => {
@@ -107,7 +110,10 @@ describe("the prompt bank", () => {
           (p) => p.category === category.id && suitsUseCase(p, useCase.id),
         );
         // A reader who picks the narrowest combination still gets a session's worth.
-        expect(pool.length, `${useCase.id}/${category.id}`).toBeGreaterThanOrEqual(20);
+        // Relationship and audience-question in a school room were 47 each on
+        // 2026-09-30; deepened to 91 and 89 the same day (PG-1), the thinnest
+        // pool is situation in a school room at 64, and the floor sits under it.
+        expect(pool.length, `${useCase.id}/${category.id}`).toBeGreaterThanOrEqual(60);
       }
     }
   });
