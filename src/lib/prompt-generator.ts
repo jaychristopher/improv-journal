@@ -22,7 +22,6 @@ import {
   CLASSIC_PARTS,
   type ClassicPart,
   type Prompt,
-  type PromptCategory,
   type PromptUseCase,
   RUBRIC_AXES,
   RUBRIC_WEIGHTS,
@@ -41,7 +40,7 @@ export function scoreFor(prompt: Prompt, useCase: PromptUseCase): number {
 
 export function poolFor(
   bank: Prompt[],
-  category: PromptCategory,
+  category: Prompt["category"],
   useCase: PromptUseCase,
   /** Only the prompts that read as one line of a classic draw. */
   options: { combinable?: boolean } = {},

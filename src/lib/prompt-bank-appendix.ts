@@ -61,7 +61,10 @@ export function listedPrompts(markdown: string): Set<string> {
 /** The bank minus the sections, in the sections' order of kinds. */
 export function unlistedPrompts(markdown: string): Prompt[] {
   const listed = listedPrompts(markdown);
-  const order = new Map(PROMPT_CATEGORIES.map((c, i) => [c.id, i]));
+  // Keyed on the wider category type: the bank never holds a word (its rows
+  // are typed on the six), but Prompt.category admits one since the word bank
+  // shares the shape (2026-09-30), so the lookup takes the union.
+  const order = new Map<Prompt["category"], number>(PROMPT_CATEGORIES.map((c, i) => [c.id, i]));
   return PROMPT_BANK.filter((p) => !listed.has(normalizePrompt(p.text))).sort(
     (a, b) => (order.get(a.category) ?? 0) - (order.get(b.category) ?? 0),
   );

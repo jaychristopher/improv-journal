@@ -60,7 +60,10 @@ describe("the prompt bank", () => {
   });
 
   it("only uses declared categories", () => {
-    const known = new Set(PROMPT_CATEGORIES.map((c) => c.id));
+    // A Set<string>, because Prompt.category admits the word bank's category
+    // since 2026-09-30 and this guard is exactly the one that says the bank
+    // itself never carries it.
+    const known = new Set<string>(PROMPT_CATEGORIES.map((c) => c.id));
     const strays = PROMPT_BANK.filter((p) => !known.has(p.category)).map((p) => p.id);
     expect(strays).toEqual([]);
   });

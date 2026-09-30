@@ -23,6 +23,7 @@
  */
 
 import { PROMPT_ROWS } from "./prompt-bank-data";
+import { WORD_ROWS, type WordRow } from "./prompt-words-data";
 
 export type PromptCategory =
   | "relationship"
@@ -31,6 +32,13 @@ export type PromptCategory =
   | "situation"
   | "audience-question"
   | "task";
+
+/**
+ * The one kind that is not a scene starter: a single word for a longform
+ * opening, kept in its own bank (prompt-words-data.ts) so the guide's count
+ * of scene starters stays honest. Its rows are Prompts with this category.
+ */
+export type WordCategory = "word";
 
 /**
  * What the reader can ask for: one of the six categories, or the classic —
@@ -63,7 +71,7 @@ export type PromptCast = "pair" | "group";
 export interface Prompt {
   id: string;
   text: string;
-  category: PromptCategory;
+  category: PromptCategory | WordCategory;
   scores: Record<RubricAxis, number>;
   /** Lands on somebody's actual life: households, money, bodies, a death. */
   personal: boolean;
@@ -357,7 +365,7 @@ export function categoryAnchor(category: PromptKindInfo): string {
 }
 
 /** Stable, short, and derived from the text: the id survives a reorder of the file. */
-function promptId(category: PromptCategory, text: string): string {
+function promptId(category: Prompt["category"], text: string): string {
   let hash = 5381;
   for (let i = 0; i < text.length; i++) {
     hash = ((hash << 5) + hash + text.charCodeAt(i)) >>> 0;
@@ -365,10 +373,19 @@ function promptId(category: PromptCategory, text: string): string {
   return `${category}:${hash.toString(36)}`;
 }
 
-const CLASSIC_SET = new Set<PromptCategory>(CLASSIC_PARTS);
+const CLASSIC_SET = new Set<Prompt["category"]>(CLASSIC_PARTS);
 
-export const PROMPT_BANK: Prompt[] = PROMPT_ROWS.map(
-  ([category, text, specific, open, charge, doable, grounded, flags = "", coach]) => ({
+/**
+ * One row into one prompt, for both banks: the category comes from the row
+ * in the bank and from the caller for the words, and everything else — the
+ * hashed id, the five scores, the flags read into fields — is the same rule,
+ * so the ranking cannot treat the two banks differently by accident.
+ */
+export function rowToPrompt(
+  category: Prompt["category"],
+  [text, specific, open, charge, doable, grounded, flags = "", coach]: WordRow,
+): Prompt {
+  return {
     id: promptId(category, text),
     text,
     category,
@@ -380,5 +397,12 @@ export const PROMPT_BANK: Prompt[] = PROMPT_ROWS.map(
     ...(flags.includes("g") ? { cast: "group" as const } : {}),
     ...(flags.includes("d") ? { cast: "pair" as const } : {}),
     ...(coach ? { coach } : {}),
-  }),
+  };
+}
+
+export const PROMPT_BANK: Prompt[] = PROMPT_ROWS.map(([category, ...fields]) =>
+  rowToPrompt(category, fields),
 );
+
+/** The words, ranked and drawn by the same rule; ids `word:<hash>`, a namespace of their own. */
+export const WORD_BANK: Prompt[] = WORD_ROWS.map((fields) => rowToPrompt("word", fields));
