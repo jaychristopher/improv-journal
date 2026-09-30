@@ -1,6 +1,6 @@
 ---
-title: "Improv Prompts: 140 Scene Starters for Class or Stage"
-description: "140 prompts you can use tonight — relationships, first lines, locations, classroom sets — plus how to run a round with a full class."
+title: "Improv Prompts: 487 Scene Starters for Class or Stage"
+description: "487 prompts you can use tonight — relationships, first lines, locations, classroom sets — plus how to run a round with a full class."
 target_keywords:
   - {
       keyword: "improv prompts",
@@ -59,11 +59,11 @@ created: "2026-08-22"
 updated: "2026-09-30"
 ---
 
-# Improv Prompts: 140 Scene Starters for Class or Stage
+# Improv Prompts: 487 Scene Starters for Class or Stage
 
 Most lists of improv prompts are lists of premises — a dentist who is afraid of teeth, a wedding where nobody knows the bride. They are fun to read and they make bad scenes, because a premise is a joke that has already happened. The players spend the next three minutes illustrating it.
 
-What follows is a hundred and forty prompts organised by what they actually give you, plus the parts the lists leave out: what to do with one once you have it, and how to run a round with a class of thirty.
+What follows is a hundred and forty prompts organised by what they actually give you, with the rest of the generator's bank listed at the foot of the page, plus the parts the lists leave out: what to do with one once you have it, and how to run a round with a class of thirty.
 
 ## What Makes a Prompt Work
 

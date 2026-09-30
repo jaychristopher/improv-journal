@@ -8,6 +8,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { GuideConcepts } from "@/components/GuideConcepts";
 import { GuideSources } from "@/components/GuideSources";
 import { PodcastJsonLd } from "@/components/PodcastJsonLd";
+import { PromptBankAppendix } from "@/components/PromptBankAppendix";
 import { PromptGenerator } from "@/components/PromptGenerator";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { TableOfContents } from "@/components/TableOfContents";
@@ -51,6 +52,7 @@ import { guideSources } from "@/lib/guide-sources";
 import { conceptMarks, getGuideHeadedConcepts, walkedDrills } from "@/lib/headed-concepts";
 import { contentsFor } from "@/lib/headings";
 import { guideSubjectConceptId } from "@/lib/jsonld-edges";
+import { APPENDIX_GUIDES, appendixContents } from "@/lib/prompt-bank-appendix";
 import { resolvePromptConcepts } from "@/lib/prompt-concepts";
 import { readingMinutes } from "@/lib/reading-time";
 import { getRelatedBridges } from "@/lib/related-bridges";
@@ -616,7 +618,13 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
         {/* The guides carry 14 to 24 anchored headings each and offered none of
           them as navigation, which is the same gap the concept pages had. These
           are the longer pages of the two, so the outline matters more here. */}
-        <TableOfContents headings={contentsFor(bridge.html)} concepts={tocConcepts} />
+        <TableOfContents
+          headings={[
+            ...contentsFor(bridge.html),
+            ...(APPENDIX_GUIDES.has(slug) ? appendixContents(bridge.content) : []),
+          ]}
+          concepts={tocConcepts}
+        />
 
         {/* `data-track="body"`: the prose carries a third of a guide's page-specific
           links and was the largest unmeasured block after the footer (tracker
@@ -626,6 +634,11 @@ export default async function BridgePage({ params }: { params: Promise<{ slug: s
           data-track="body"
           dangerouslySetInnerHTML={{ __html: bridge.html.replace(/^<h1[^>]*>.*?<\/h1>\s*/i, "") }}
         />
+        {/* The improv prompts guide lists 140 in its sections and the rest of the
+          generator's bank at its foot, so every prompt is in the HTML and prints
+          as a slip (2026-09-30). APPENDIX_GUIDES is the one registry: the
+          contents list above and title-counts.test.ts read it too. */}
+        {APPENDIX_GUIDES.has(slug) && <PromptBankAppendix markdown={bridge.content} />}
 
         {/* Below the prose, so the page's own words come first in DOM order
           (tracker entry 260); the player above links down to it. */}

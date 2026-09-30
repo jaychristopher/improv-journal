@@ -150,6 +150,11 @@ describe("page furniture", () => {
    *                @exercise-picker-link
    *   guides    6  Transcript, WhatsNext, @guide-next-step, GuideConcepts,
    *                GuideSources, RelatedGuides
+   *             7  on 2026-09-30: PromptBankAppendix first, the improv prompts
+   *                guide's own list of the other 347 in the generator's bank,
+   *                rendered from the bank after the prose. Content rather than
+   *                a hand-off, and it mounts on one page, but it is a thing to
+   *                get past on the way out and so it is counted, not exempted.
    *   lessons   6  @lesson-reps, LessonCheckpoint, Transcript, LessonPanel,
    *                @lesson-prev-next, WhatsNext
    *   paths     7  @path-forward-needs, @path-program-map, AudioPlayer,
@@ -172,7 +177,7 @@ describe("page furniture", () => {
 
     const CEILINGS: Record<string, number> = {
       concepts: 5,
-      guides: 6,
+      guides: 7,
       lessons: 6,
       paths: 7,
     };

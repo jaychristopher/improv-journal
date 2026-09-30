@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { loadBridges } from "../content";
+import { generatedItems } from "../prompt-bank-appendix";
 
 /** Bulleted, numbered, and the bold-numbered form the games pages use. */
 function countItems(content: string): number {
@@ -41,7 +42,10 @@ describe("title counts", () => {
       );
       if (numbers.length === 0) continue;
 
-      const items = countItems(bridge.content);
+      // What the page carries is the markdown's items plus any it renders from
+      // the bank: the improv prompts guide's title claims 487 and its sections
+      // list 140, and the other 347 are on the page (PromptBankAppendix).
+      const items = countItems(bridge.content) + generatedItems(bridge.slug, bridge.content);
       for (const claimed of numbers) {
         checked++;
         if (claimed > items) {

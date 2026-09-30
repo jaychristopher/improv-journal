@@ -1,7 +1,8 @@
 /**
  * The prompt bank behind the generator on /improv-prompts.
  *
- * The page lists 140 prompts and argues, at length, about what makes one work:
+ * The page lists 140 prompts in its sections, the rest of this bank at its
+ * foot (PromptBankAppendix), and argues, at length, about what makes one work:
  * specific beats general, personal beats clever, a prompt is not a punchline,
  * evocative not prescriptive. The generator applies that argument as a rubric,
  * so the order a reader meets prompts in is the order the article would rank
