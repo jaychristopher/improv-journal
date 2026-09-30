@@ -82,6 +82,32 @@ interface Drawn {
 const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])';
 
 /**
+ * The kind this device drew last. A return visit's first tap then gives a
+ * prompt of that kind, with "A different kind" one tap away — two taps became
+ * one for everyone who comes back, and no control was added
+ * (docs/improv-prompts-personas.md, change A). A `?category=` in the URL
+ * still wins, because a concept page asked for that kind on purpose.
+ */
+const LAST_KIND_KEY = "improv-prompts:last-kind:v1";
+
+function storedKind(): PromptKind | null {
+  try {
+    const raw = window.localStorage.getItem(LAST_KIND_KEY);
+    return PROMPT_KINDS.find((k) => k.id === raw)?.id ?? null;
+  } catch {
+    return null;
+  }
+}
+
+function storeKind(kind: PromptKind) {
+  try {
+    window.localStorage.setItem(LAST_KIND_KEY, kind);
+  } catch {
+    // A locked-down browser forgets, and asks again next time. Fine.
+  }
+}
+
+/**
  * Where the generator is mounted. The guide hero is a card under the article's
  * title and links out to the tool page; the tool page is the full version and
  * owns the "improv prompt generator" keyword, so the hero's heading stays
@@ -135,6 +161,10 @@ export function PromptGenerator({
   // and the inline card has to be in the server html — the hero's whole point
   // (prompt-generator-rendered.test.ts).
   const [preset, setPreset] = useState<PromptKind | null>(null);
+  const [presetSource, setPresetSource] = useState<"query" | "memory" | null>(null);
+  // What a screen reader hears when a card changes (change B).
+  const [announce, setAnnounce] = useState("");
+  const promptRef = useRef<HTMLElement | null>(null);
   const [draw, setDraw] = useState<Draw | null>(null);
   const [draws, setDraws] = useState(0);
   const [history, setHistory] = useState<Drawn[]>([]);
@@ -156,8 +186,20 @@ export function PromptGenerator({
   const card = draw?.card ?? 0;
 
   useEffect(() => {
-    setPreset(presetFromQuery(window.location.search));
+    const fromQuery = presetFromQuery(window.location.search);
+    const fromMemory = fromQuery ? null : storedKind();
+    setPreset(fromQuery ?? fromMemory);
+    setPresetSource(fromQuery ? "query" : fromMemory ? "memory" : null);
   }, []);
+
+  // A new card takes focus, so a screen reader reads it and a keyboard's
+  // Space or Enter still draws the next from there (change B). A redrawn
+  // line keeps the card number and so keeps focus on the line that was
+  // tapped; the live region carries that one.
+  useEffect(() => {
+    if (!open || step !== "prompt" || card === 0) return;
+    promptRef.current?.focus();
+  }, [open, step, card]);
 
   // Installable: the tool is the one page on the site that gets used standing
   // up, in a hall, with no signal. The worker caches the two pages that mount
@@ -314,9 +356,18 @@ export function PromptGenerator({
         card: cardNumber,
       };
     }
+    storeKind(nextKind);
     setCopied(false);
     setDraw(next);
     remember(next);
+    setAnnounce(
+      next.parts
+        ? CLASSIC_PARTS.map(
+            (part) =>
+              `${CLASSIC_PART_LABELS[part]}: ${next.parts?.[part]?.prompt.text ?? "every one seen"}`,
+          ).join(". ")
+        : (next.pick?.prompt.text ?? `You have seen every ${nextKind} prompt for this room.`),
+    );
     setStep("prompt");
   }
 
@@ -347,6 +398,7 @@ export function PromptGenerator({
     setCopied(false);
     setDraw(next);
     remember(next);
+    setAnnounce(`${CLASSIC_PART_LABELS[part]}: ${pick.prompt.text}`);
   }
 
   function chooseRoom(next: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) {
@@ -354,7 +406,12 @@ export function PromptGenerator({
     if (!open) {
       openerRef.current = event.currentTarget;
       setOpen(true);
-      trackEvent("prompt_generator_opened", { surface, use_case: next.id, preset });
+      trackEvent("prompt_generator_opened", {
+        surface,
+        use_case: next.id,
+        preset,
+        preset_source: presetSource,
+      });
       // Arrived from a concept page asking for one kind: the first tap goes
       // straight to a prompt of that kind. "A different kind" is still there.
       if (preset) {
@@ -416,6 +473,84 @@ export function PromptGenerator({
       ? "group"
       : null
     : (draw?.pick?.prompt.cast ?? null);
+  // The how-to, coaching, cast and theory lines are written for the person
+  // holding the device. In the show room a laptop is a projector, and the
+  // audience should see the question and not the host's notes, so there
+  // they sit under the buttons in small type (change E).
+  const notesAtFoot = useCase === "show";
+  const notes =
+    kindInfo && draw && hasPrompt(draw) ? (
+      <div
+        data-testid="prompt-notes"
+        data-notes={notesAtFoot ? "foot" : "card"}
+        className={notesAtFoot ? "text-foreground-dim mt-8 max-w-2xl text-xs leading-relaxed" : ""}
+      >
+        <p
+          className={
+            notesAtFoot
+              ? ""
+              : "text-foreground/80 mt-6 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-lg"
+          }
+        >
+          {kindInfo.howToUse}
+        </p>
+        {draw.pick?.prompt.coach && (
+          <p
+            className={
+              notesAtFoot
+                ? "mt-2"
+                : "text-foreground/80 mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-base"
+            }
+            data-testid="prompt-coach"
+          >
+            <span className="text-foreground-dim text-xs tracking-wider uppercase">Coaching</span>{" "}
+            {draw.pick.prompt.coach}
+          </p>
+        )}
+        {cast && (
+          <p
+            className={notesAtFoot ? "mt-2" : "text-foreground-dim mt-3 text-sm"}
+            data-testid="prompt-cast"
+          >
+            {cast === "group" ? (
+              "Needs three or more."
+            ) : (
+              <>
+                Works for two &mdash;{" "}
+                <Link href="/2-person-improv-games" className="underline underline-offset-2">
+                  2 person improv games
+                </Link>{" "}
+                has the rest.
+              </>
+            )}
+          </p>
+        )}
+        {/* The kind is a concept under another name, and howToUse is that
+            concept's page in a sentence, so the sentence is reused as the
+            gloss and the title becomes the link: every prompt is one click
+            from its theory (tracker entry 332). Nothing for a kind without a
+            concept, or a mount without the resolved map. */}
+        {concept && (
+          <p
+            className={
+              notesAtFoot
+                ? "mt-2"
+                : "text-foreground-dim mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl"
+            }
+            data-prompt-concept={concept.id}
+          >
+            The idea behind it:{" "}
+            <Link
+              href={concept.href}
+              className="text-foreground/70 italic underline underline-offset-2"
+            >
+              {concept.title}
+            </Link>{" "}
+            &mdash; {conceptGloss(kindInfo.howToUse)}
+          </p>
+        )}
+      </div>
+    ) : null;
 
   return (
     <>
@@ -439,22 +574,23 @@ export function PromptGenerator({
             </h2>
             <p className="text-hero-muted mt-3 max-w-lg text-base leading-relaxed lg:mt-5">
               Say where you are using it. Strongest first, one at a time, never the same one twice
-              on this device.
+              on this device &mdash; and it opens with no signal once it has loaded here.
               {presetInfo && (
-                <span data-prompt-preset={presetInfo.id}>
+                <span data-prompt-preset={presetInfo.id} data-prompt-preset-source={presetSource}>
                   {" "}
-                  Set to {presetInfo.label.toLowerCase()}, as the page you came from asked.
+                  Set to {presetInfo.label.toLowerCase()},{" "}
+                  {presetSource === "memory" ? "as last time" : "as the page you came from asked"}.
                 </span>
               )}
             </p>
           </div>
           <div className="mt-6 lg:mt-0">
-            {/* Two columns at every width, and the descriptions only from `sm` up:
-            at 390px the one-column version with descriptions ran to 340px of
-            buttons and the last one sat below the fold. */}
+            {/* Two columns at every width, descriptions included. They were hidden
+            below `sm` to keep the card short, and four bare labels left a parent
+            or a director guessing which room was theirs (change C, 2026-09-30). */}
             <div className="grid grid-cols-2 gap-2 sm:gap-3">
               {PROMPT_USE_CASES.map((room) => (
-                <RoomButton key={room.id} room={room} onChoose={chooseRoom} compact hero />
+                <RoomButton key={room.id} room={room} onChoose={chooseRoom} hero />
               ))}
             </div>
           </div>
@@ -469,6 +605,11 @@ export function PromptGenerator({
           aria-label="Improv prompt generator"
           className="bg-background text-foreground animate-fade-in fixed inset-0 z-[60] flex h-dvh flex-col"
         >
+          {/* What changed, for a screen reader: the new card, or the one line
+              that was redrawn (change B). Visually nothing. */}
+          <div role="status" aria-live="polite" className="sr-only" data-testid="prompt-announce">
+            {announce}
+          </div>
           <div className="flex items-center justify-between px-5 pt-[max(1rem,env(safe-area-inset-top))] pb-3 sm:px-8">
             <div className="text-foreground-dim min-w-0 text-xs tracking-wider uppercase">
               {step === "room" && "Where are you using it?"}
@@ -554,70 +695,23 @@ export function PromptGenerator({
                         <span data-testid="prompt-clock">{clock(elapsed)} on this one</span>
                       </p>
                       {draw.parts ? (
-                        <ClassicCard parts={draw.parts} onRedraw={redrawPart} />
+                        <ClassicCard
+                          parts={draw.parts}
+                          onRedraw={redrawPart}
+                          focusRef={promptRef}
+                        />
                       ) : (
                         <p
                           key={draw.pick?.prompt.id}
+                          ref={promptRef as React.RefObject<HTMLParagraphElement | null>}
+                          tabIndex={-1}
                           data-testid="prompt-text"
-                          className="text-foreground-strong animate-fade-in mt-4 text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl lg:text-5xl xl:text-6xl"
+                          className="text-foreground-strong animate-fade-in mt-4 text-3xl leading-tight font-semibold tracking-tight text-balance outline-none sm:text-4xl lg:text-5xl xl:text-6xl"
                         >
                           {draw.pick?.prompt.text}
                         </p>
                       )}
-                      <p className="text-foreground/80 mt-6 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-lg">
-                        {kindInfo.howToUse}
-                      </p>
-                      {draw.pick?.prompt.coach && (
-                        <p
-                          className="text-foreground/80 mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-base"
-                          data-testid="prompt-coach"
-                        >
-                          <span className="text-foreground-dim text-xs tracking-wider uppercase">
-                            Coaching
-                          </span>{" "}
-                          {draw.pick.prompt.coach}
-                        </p>
-                      )}
-                      {cast && (
-                        <p className="text-foreground-dim mt-3 text-sm" data-testid="prompt-cast">
-                          {cast === "group" ? (
-                            "Needs three or more."
-                          ) : (
-                            <>
-                              Works for two &mdash;{" "}
-                              <Link
-                                href="/2-person-improv-games"
-                                className="underline underline-offset-2"
-                              >
-                                2 person improv games
-                              </Link>{" "}
-                              has the rest.
-                            </>
-                          )}
-                        </p>
-                      )}
-                      {/* The kind is a concept under another name, and
-                          howToUse is that concept's page in a sentence, so
-                          the sentence is reused as the gloss and the title
-                          becomes the link: every prompt is one click from
-                          its theory (tracker entry 332). Nothing for a
-                          kind without a concept, or a mount without the
-                          resolved map. */}
-                      {concept && (
-                        <p
-                          className="text-foreground-dim mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl"
-                          data-prompt-concept={concept.id}
-                        >
-                          The idea behind it:{" "}
-                          <Link
-                            href={concept.href}
-                            className="text-foreground/70 italic underline underline-offset-2"
-                          >
-                            {concept.title}
-                          </Link>{" "}
-                          &mdash; {conceptGloss(kindInfo.howToUse)}
-                        </p>
-                      )}
+                      {!notesAtFoot && notes}
                     </>
                   ) : (
                     <>
@@ -670,6 +764,7 @@ export function PromptGenerator({
                     A different kind
                   </ToolAction>
                 </div>
+                {notesAtFoot && notes}
 
                 {/* What has been dealt before this card, newest first, below
                     the buttons: a teacher who handed eight pairs eight prompts
@@ -712,12 +807,20 @@ export function PromptGenerator({
 function ClassicCard({
   parts,
   onRedraw,
+  focusRef,
 }: {
   parts: ClassicDraw;
   onRedraw: (part: ClassicPart) => void;
+  /** Takes focus when a new card is dealt, so a screen reader reads all three lines. */
+  focusRef: React.RefObject<HTMLElement | null>;
 }) {
   return (
-    <div className="mt-4 grid gap-2" data-testid="classic-card">
+    <div
+      ref={focusRef as React.RefObject<HTMLDivElement | null>}
+      tabIndex={-1}
+      className="mt-4 grid gap-2 outline-none"
+      data-testid="classic-card"
+    >
       {CLASSIC_PARTS.map((part) => {
         const pick = parts[part];
         return (
@@ -726,16 +829,22 @@ function ClassicCard({
             palette="page"
             data-part={part}
             onClick={() => onRedraw(part)}
+            aria-label={`Change the ${CLASSIC_PART_LABELS[part].toLowerCase()} line: ${
+              pick ? pick.prompt.text : "every one seen, start this line again"
+            }`}
             title="Tap to change just this line"
-            className="flex w-full items-baseline gap-3 px-4 py-3 sm:gap-4"
+            // The label stacks above the words below 360px and the words wrap
+            // anywhere, so 200% text on a small phone reads instead of clipping
+            // (change D).
+            className="flex w-full flex-col items-start gap-1 px-4 py-3 min-[360px]:flex-row min-[360px]:items-baseline min-[360px]:gap-3 sm:gap-4"
           >
-            <span className="text-foreground-dim w-12 shrink-0 text-xs tracking-wider uppercase sm:w-14">
+            <span className="text-foreground-dim shrink-0 text-xs tracking-wider uppercase min-[360px]:w-12 sm:w-14">
               {CLASSIC_PART_LABELS[part]}
             </span>
             <span
               key={pick?.prompt.id ?? "spent"}
               data-testid={`classic-${part}`}
-              className="text-foreground-strong animate-fade-in text-xl leading-snug font-semibold tracking-tight text-balance sm:text-2xl lg:text-3xl xl:text-4xl"
+              className="text-foreground-strong animate-fade-in text-xl leading-snug font-semibold tracking-tight text-balance [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl xl:text-4xl"
             >
               {pick ? pick.prompt.text : "Every one seen. Tap to start this line again."}
             </span>
@@ -749,13 +858,10 @@ function ClassicCard({
 function RoomButton({
   room,
   onChoose,
-  compact = false,
   hero = false,
 }: {
   room: PromptUseCaseInfo;
   onChoose: (room: PromptUseCaseInfo, event: React.MouseEvent<HTMLButtonElement>) => void;
-  /** Hide the description below `sm`, for the inline card on a phone. */
-  compact?: boolean;
   /** On the dark takeover panel rather than on the page's own background. */
   hero?: boolean;
 }) {
@@ -782,9 +888,8 @@ function RoomButton({
         <span
           id={descId}
           className={[
-            "mt-0.5 text-xs",
+            "mt-0.5 block text-xs",
             hero ? "text-hero-muted" : "text-foreground-dim",
-            compact ? "hidden sm:block" : "block",
           ].join(" ")}
         >
           {room.description}

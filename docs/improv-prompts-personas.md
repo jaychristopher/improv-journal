@@ -342,6 +342,12 @@ complexity, the backlog's own shape.
 
 ## What to do
 
+**A to F landed on 2026-09-30**, the same day, in one pass and no new control:
+the device remembers the last kind, the card takes focus and speaks, the phone
+hero shows what a room is, the classic card wraps and stacks, the show room
+keeps the notes off the projected part of the screen, and the hero says it
+works with no signal. prompt-generator-personas.test.tsx holds all six.
+
 **Now, in one pass and one commit** — A, B, C, D, E, F. Six changes, none
 adds a control, all under a day, and between them they answer the most common
 person on the page, the person the page currently blocks, and the two people

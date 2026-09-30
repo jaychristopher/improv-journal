@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/lib/analytics", () => ({ trackEvent: vi.fn() }));
 
@@ -98,6 +98,11 @@ describe("PromptTryLine", () => {
 });
 
 describe("the generator's concept line", () => {
+  beforeEach(() => {
+    // The generator remembers the last kind on the device (2026-09-30), and
+    // these tests expect the kind step.
+    window.localStorage.clear();
+  });
   afterEach(() => {
     cleanup();
     window.localStorage.clear();
