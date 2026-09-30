@@ -4,7 +4,7 @@ type: task
 summary: Draft about ninety single words chosen for texture, flagged for the school room, and get the owner's teacher to cut it to eighty before anything ships
 epic: "[[Prompt generator]]"
 parent: "[[PG-2 Longform opens on one word and the generator has none]]"
-status: To Do
+status: In Progress
 priority: Medium
 sequence: 1
 executable: mixed
@@ -63,4 +63,8 @@ Impact 3, radius 2, opportunity 6, complexity 1, ROI 6.0.
 
 ## Outcome
 
-_Not started._
+2026-09-30: the agent half is done — `docs/one-word-suggestions.md` carries
+ninety-one words in six groups, one line each on why it has texture, `p` and
+`a` marked, the three questions for the teacher at the foot. The human half is
+open: the owner sends it and records the answers under "What the teacher
+said".

@@ -4,7 +4,7 @@ type: task
 summary: Turn the island-vocabulary scan into a guard, so no new row brings back a lift, a lorry or a fiver
 epic: "[[Prompt generator]]"
 parent: "[[PG-1 The school pools are thin for a hand of eight]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 3
 executable: agent
@@ -68,4 +68,9 @@ Impact 2, radius 3 (every future row), opportunity 6, complexity 1, ROI 6.0.
 
 ## Outcome
 
-_Not started._
+2026-09-30: `src/lib/__tests__/mid-atlantic.test.ts` holds every row's text and
+coaching line against fifty-odd island words as whole words, and guards
+itself by matching three of the texts that were rewritten that morning. The
+nine keepers need no exception: their words (referee, ferry, pier, kettle,
+bookshop, hospice, flat, reference, laundromat) are not island words and are
+not on the list. Green on the 573-row bank.

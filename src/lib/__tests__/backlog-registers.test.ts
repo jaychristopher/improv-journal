@@ -140,8 +140,9 @@ describe("the backlog register", () => {
     // 2026-09-30: the seven PG tasks arrive open. 26 done, 26 open.
     // PG-1.1 closed the same evening: forty-four school relationships. 27 done, 25 open.
     // PG-1.2 closed after it: forty-two school audience questions. 28 done, 24 open.
-    expect(tasks.filter(isDone)).toHaveLength(28);
-    expect(openTasks).toHaveLength(24);
+    // PG-1.3 closed: the mid-Atlantic guard. 29 done, 23 open.
+    expect(tasks.filter(isDone)).toHaveLength(29);
+    expect(openTasks).toHaveLength(23);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
