@@ -201,6 +201,13 @@ key the interface already has.
 
 ## 6. The improvement list
 
+**All seventeen landed on 2026-09-30** (commit 2593d54f): the classic card and
+the line redraw, the show-size type, the keys, the session list, the clock,
+the cast and coaching lines, 32 bank rows and 61 combinability marks, the
+kids section, the print stylesheet, the numbers in the hero, the method
+section, the copy-friendly lists, and the install. Item 16 rode on item 13.
+The list stays as the record of why each was chosen.
+
 Every way ours can carry what the field has and stay simpler than any of it.
 The rule for each item: no new top-level control. A new kind is a card in a
 list that already has six; a passive label is not a control; a key is not a
