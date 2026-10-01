@@ -1,0 +1,60 @@
+{
+  "slug": "colorado-springs",
+  "city": "Colorado Springs",
+  "state": "Colorado",
+  "stateCode": "CO",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:29.087Z",
+    "searches": 0,
+    "notes": "One company covers the city: the Stick Horses in Pants, whose own site has lapsed, now run Peak Improv Theater, and independent teams like Whimsicult play there. Loonees Comedy Corner is stand-up; Millibo Art Theatre, Cottonwood Center for the Arts and the Fine Arts Center list no improv programme, and Colorado School of Acting's Springs site is a kids-and-teens satellite.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "peakimprov.com",
+      "name": "Peak Improv Theater",
+      "url": "https://peakimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Northeast (3440 N Carefree Circle)",
+      "summary": "Colorado Springs' only dedicated improv theater, a 100-plus-seat room with a bar opened in 2024 by the Stick Horses in Pants, the city's longest-running improv team (since 2004), with weekly shows, a Thursday jam and a 101-to-conservatory s",
+      "schedule": "Jam Thursdays 7:30pm ($5 suggested); Stick Horses Fridays, pay what you want; rotating Saturday shows",
+      "signals": [
+        "Opened 2024; founders' troupe Stick Horses in Pants formed 2004",
+        "Improv 101-501 plus conservatory 601-801, eight-week terms",
+        "Fall terms Sep-Oct and Nov-Dec 2026; first 101 drop-in free",
+        "Whimsicult improv show second Saturdays",
+        "100+ seats, bar, stand-up and sketch workshops too",
+        "Events listed Oct 1-16, 2026"
+      ],
+      "score": 78,
+      "reasons": "A new building but a 20-year-old company behind it, the city's only full class ladder with dated terms, weekly shows and a jam; standing is still local.",
+      "sources": [
+        "https://peakimprov.com/",
+        "https://peakimprov.com/classes",
+        "https://peakimprov.com/about-us"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 1,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "slug": "san-francisco",
+  "city": "San Francisco",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:14.672Z",
+    "searches": 0,
+    "notes": "San Francisco's scene is anchored by BATS at Fort Mason and the Mission's Endgames, with Leela and Secret Improv Society downtown. Un-Scripted Theater Company, founded 2002 at 533 Sutter, has not resumed a regular season and now produces the Bay Area Musical Improv Festival in Oakland; Oakland's All Out Comedy Theater and Pan Theater sit just outside this page. Berkeleyside reported a new improv t",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "improv.org",
+      "name": "BATS Improv",
+      "url": "https://www.improv.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Fort Mason (Marina)",
+      "summary": "San Francisco's largest and oldest improv theater, founded 1986 in the Keith Johnstone tradition, with its own Bayfront Theatre at Fort Mason, six Foundation levels and a Saturday season of Theatresports and improvised plays.",
+      "schedule": "Shows Saturdays with extra nights for special runs; Theatresports Saturdays in November; workshops October 3 to 4",
+      "signals": [
+        "Founded 1986, 40th anniversary November 13, 2026",
+        "Own theatre at Fort Mason Center",
+        "Six Foundation levels ending in a performance showcase",
+        "Weekly Saturday shows plus seasonal runs",
+        "Nonprofit with visiting-teacher workshops",
+        "Calendar dated through December 2026"
+      ],
+      "score": 93,
+      "reasons": "Forty years, a theatre of its own, a six-level school and a dated season through December; only the one-night-a-week core schedule keeps it short of a perfect show score.",
+      "sources": [
+        "https://www.improv.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "endgamesimprov.com",
+      "name": "Endgames Improv",
+      "url": "https://endgamesimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Mission District",
+      "summary": "A long-form improv theater and training center with two Mission Street studios, a five-level curriculum from imp101 to imp501 in seven-week terms, Friday house shows running since 2011 and a free Sunday jam open to all levels.",
+      "schedule": "Fridays 9pm and 10:15pm house shows; free ETC Jam Sundays 6pm; seven-week classes start monthly",
+      "signals": [
+        "Two studios, 2965 and 2989 Mission Street",
+        "Five improv levels plus sketch, $399 per seven weeks",
+        "Your Fucked Up Relationship every Friday since 2011",
+        "Free Sunday jam",
+        "Free graduation shows for each level",
+        "Term starts dated through December 2026"
+      ],
+      "score": 87,
+      "reasons": "A complete ladder from first class to house team, weekly shows and a free jam in rooms of its own; smaller and younger than BATS, which is the only gap.",
+      "sources": [
+        "https://endgamesimprov.com/classes/",
+        "https://endgamesimprov.com/shows/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "leela-sf.com",
+      "name": "Leela Improv Theatre",
+      "url": "https://leela-sf.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Union Square (Geary Street)",
+      "summary": "A long-form improv school and theatre on Geary Street founded 2003, with Improv 1 to 5, a four-level musical improv track, weekly drop-ins, an eleven-week performing ensemble program and $10 community jams every other Friday.",
+      "schedule": "Community jams Fridays 7:30 to 9:30pm, every other week; drop-in classes weekly",
+      "signals": [
+        "Founded 2003, 23 years in 2026",
+        "Space of its own at 450 Geary Street",
+        "Improv 1 to 5 plus musical improv 1 to 4",
+        "Performing Improv Ensemble, eleven weeks",
+        "Biweekly $10 community jam",
+        "Jam dates posted through September 2026"
+      ],
+      "score": 80,
+      "reasons": "Two decades, a room of its own, the deepest class catalogue in the city and a standing jam, held back by a show calendar that is mostly student and ensemble nights.",
+      "sources": [
+        "https://leela-sf.com/",
+        "https://leela-sf.com/classes/",
+        "https://leela-sf.com/jams/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "secretimprov.com",
+      "name": "Secret Improv Society",
+      "url": "https://www.secretimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Union Square (Shelton Theater)",
+      "summary": "A weekly improv comedy show at the Shelton Theater on Sutter Street, playing Friday and Saturday nights with showcase and residency shows on select Sundays, backed by a four-tier training programme.",
+      "schedule": "Fridays and Saturdays 7:45pm; select Sundays",
+      "signals": [
+        "Two shows every weekend",
+        "Resident at the Shelton Theater, 533 Sutter Street",
+        "Four-tier training: Foundations, Characters, Narrative, Advanced",
+        "Private and corporate playshops"
+      ],
+      "score": 67,
+      "reasons": "A reliable twice-weekly show in a permanent theatre and a four-step class path, but the site publishes no term dates or history.",
+      "sources": [
+        "https://www.secretimprov.com/",
+        "https://www.secretimprov.com/venue"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "berkeleyrep.org",
+      "name": "Berkeley Rep School of Theatre",
+      "url": "https://www.berkeleyrep.org/school/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Downtown Berkeley",
+      "summary": "The education arm of Berkeley Repertory Theatre runs a three-step adult improv track, Beginning, Intermediate and an Advanced Performance Lab, in evening sessions at its Addison Street school each quarter.",
+      "schedule": "Fall 2026: Beginning Improv Thursdays from September 24, Intermediate Mondays from September 28, Advanced Lab Tuesdays",
+      "signals": [
+        "Three adult improv levels",
+        "Quarterly sessions, fall through summer",
+        "School at 2071 Addison Street",
+        "Part of a Tony-winning regional theatre"
+      ],
+      "score": 57,
+      "reasons": "A permanent institution with a dated, three-level improv track, but no improv shows and a programme that stops at the lab level.",
+      "sources": [
+        "https://www.berkeleyrep.org/classes-df19"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "momentimprov.com",
+      "name": "Moment Improv Theatre",
+      "url": "https://momentimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown San Francisco and online",
+      "summary": "A Black-owned, community-built improv theatre that teaches a nine-level curriculum almost entirely online, with $5 Friday drop-ins, occasional Bay Area intensives, and pop-up shows and community jams in San Francisco.",
+      "schedule": "Online classes year-round; $5 Friday drop-ins; Bay Area intensives occasionally",
+      "signals": [
+        "Nine-level online curriculum in three tiers",
+        "$5 Friday beginner drop-ins",
+        "Occasional in-person intensives",
+        "Pop-up shows and community jams",
+        "Black-owned"
+      ],
+      "score": 38,
+      "reasons": "A structured curriculum and current programming, but almost entirely online, without a venue or a regular in-person show.",
+      "sources": [
+        "https://momentimprov.com/",
+        "https://momentimprov.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 6,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

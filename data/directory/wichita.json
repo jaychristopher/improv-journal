@@ -1,0 +1,119 @@
+{
+  "slug": "wichita",
+  "city": "Wichita",
+  "state": "Kansas",
+  "stateCode": "KS",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:27.459Z",
+    "searches": 0,
+    "notes": "Wichita's improv life centres on Flying Pig on East Douglas, with First Draft playing the melodrama house downtown and United Comedy Academy, a 2025 nonprofit, teaching through WSU. The Loony Bin is stand-up, and the Wichita Improv Meetup has no site of its own.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "flyingpigimprov.com",
+      "name": "Flying Pig Improv",
+      "url": "https://flyingpigimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Douglas Design District, Wichita",
+      "summary": "Wichita's improv learning center and theater on East Douglas, founded by Jessie Gray, with two house troupes playing Friday and Saturday nights, a Thursday jam night, and drop-in classes for beginners, over-55s and long-form players.",
+      "schedule": "Shows Fri and Sat 8pm $15; Intro drop-in Sat 11am $10; long form Thu 7-9:30pm $20; Silver Improv Tue 11am from May 5 202",
+      "signals": [
+        "Own theater at 2320 E Douglas Ave",
+        "Two house troupes",
+        "Weekend shows plus a Thursday jam",
+        "Drop-ins three days a week",
+        "Silver Improv for 55+",
+        "Kids' Saturday drop-ins hosted with United Comedy Academy"
+      ],
+      "score": 62,
+      "reasons": "A theater of its own, weekend house shows and drop-ins most days earn it well, but the show page still carried last season's dates and the class ladder is colour-coded rather than levelled.",
+      "sources": [
+        "https://flyingpigimprov.com/",
+        "https://flyingpigimprov.com/classes",
+        "https://flyingpigimprov.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "firstdraftimprov.com",
+      "name": "First Draft Improv & Sketch Comedy",
+      "url": "https://firstdraftimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Wichita (Mosley Street Melodrama)",
+      "summary": "A short- and long-form improv and sketch troupe based at Mosley Street Melodrama, with a monthly show and a six-week FD 101 class on Thursday nights.",
+      "schedule": "Monthly show (next Oct 29 2026); FD 101 Thursdays 7-9pm, six weeks, $200",
+      "signals": [
+        "Monthly shows at 234 N Mosley",
+        "FD 101 class",
+        "Improv and sketch",
+        "Dated 2026 show"
+      ],
+      "score": 38,
+      "reasons": "A dated monthly show and a real class, but one level, a borrowed stage and no founding history on the site.",
+      "sources": [
+        "https://firstdraftimprov.com/",
+        "https://firstdraftimprov.com/classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "uca-ict.com",
+      "name": "United Comedy Academy",
+      "url": "https://www.uca-ict.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Wichita (WSU Community Education, Flying Pig)",
+      "summary": "A nonprofit improv training organisation teaching long-form classes for adults through Wichita State's Community Education programme and kids' improv on Saturdays, with free workshops funded by a 2026 city arts grant and graduation shows.",
+      "schedule": "Free adult workshops under the 2026 grant; She-Nanigans Jul 11 and 18 2026; kids' drop-ins Sat 1:30pm at Flying Pig",
+      "signals": [
+        "Nonprofit",
+        "Classes through WSU Community Education",
+        "Kids' Bitty Improv and Fun Shticks",
+        "2026 City of Wichita Activation Grant",
+        "Graduation shows"
+      ],
+      "score": 32,
+      "reasons": "A young nonprofit with grant-backed free workshops and classes for all ages, but it borrows every room and its own events page was empty at reading.",
+      "sources": [
+        "https://www.uca-ict.com/",
+        "https://www.uca-ict.com/about-uca"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "indianapolis",
+  "city": "Indianapolis",
+  "state": "Indiana",
+  "stateCode": "IN",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:36.314Z",
+    "searches": 0,
+    "notes": "Indianapolis improv runs through ComedySportz's Wit Theater on the south side. Red Curb is between homes after leaving Avon, and IF Theatre (formerly IndyFringe) on St Clair Street is the downtown stage most troupes use.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "cszindianapolis.com",
+      "name": "ComedySportz Indianapolis (The Wit Theater)",
+      "url": "https://cszindianapolis.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "South side (Shelby Street)",
+      "summary": "Indianapolis's ComedySportz franchise since 1993, moved from Mass Ave to The Wit Theater on Shelby Street in 2023, with matches every Friday and Saturday, stand-up and open-mic nights, and a School of Improv in two tracks.",
+      "schedule": "Matches Fridays 7:30pm and Saturdays; seven-week class sessions start January, March, May, July and September",
+      "signals": [
+        "Founded 1993",
+        "Matches every Friday and Saturday",
+        "Five seven-week class sessions a year",
+        "Short-form and long-form tracks from Improv 101",
+        "Drop-in workshops and a high-school league",
+        "Moved to The Wit Theater in 2023"
+      ],
+      "score": 86,
+      "reasons": "Thirty-three years, a theater of its own, weekly matches and a school with a dated term calendar in two tracks; only the cross-town move and modest scale keep it under ninety.",
+      "sources": [
+        "https://cszindianapolis.com/",
+        "https://cszindianapolis.com/improv-classes/",
+        "https://cszindianapolis.com/directions/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "defiancecomedy.com",
+      "name": "Defiance Comedy",
+      "url": "https://www.defiancecomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown (IF Theatre, St Clair Street)",
+      "summary": "An Indianapolis improv company performing at IF Theatre's Basile stage downtown, with a six-week Intro to Improv course and an advanced character class that ends in a showcase.",
+      "schedule": "Scary-Oke fundraiser October 30, 7pm; six-week intro courses",
+      "signals": [
+        "Performs at IF Theatre",
+        "Six-week Intro to Improv",
+        "Advanced character class with showcase",
+        "IndyFringe participant"
+      ],
+      "score": 41,
+      "reasons": "A working company with classes and a regular downtown stage, but no venue of its own and few dated shows on the site.",
+      "sources": [
+        "https://www.defiancecomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "redcurbcomedy.com",
+      "name": "Red Curb Comedy",
+      "url": "https://www.redcurbcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Avon, and partner stages downtown",
+      "summary": "A comedy company that ran its own theater in Avon and now brings improv to partner venues such as IF Theatre and The Wit while planning a Mass Avenue home, with classes offered jointly with the forthcoming Crossroads Comedy Theater.",
+      "schedule": "Shows announced one at a time; last listed September 19, 2026 at IF Theatre",
+      "signals": [
+        "Former theater in Avon",
+        "Performs at IF Theatre and The Wit",
+        "Announced a move to Mass Ave in December 2024",
+        "Classes with Crossroads Comedy Theater",
+        "September 26 show at The Wit cancelled"
+      ],
+      "score": 31,
+      "reasons": "Between homes, with a one-show calendar, an empty classes page and a future theater whose site is still under construction.",
+      "sources": [
+        "https://www.redcurbcomedy.com/",
+        "https://www.redcurbcomedy.com/tickets1",
+        "https://www.crossroadscomedytheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

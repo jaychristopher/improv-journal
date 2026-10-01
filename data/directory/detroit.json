@@ -1,0 +1,121 @@
+{
+  "slug": "detroit",
+  "city": "Detroit",
+  "state": "Michigan",
+  "stateCode": "MI",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:30.760Z",
+    "searches": 0,
+    "notes": "Detroit's improv lives in the inner suburbs: Go Comedy in Ferndale and Planet Ant in Hamtramck, with Royal Oak's Comedy Castle a stand-up room. The Detroit Creativity Project teaches improv free in schools rather than by public enrolment, so it is not listed. Ann Arbor's Pointless site is gone; hear.say brewing + theater now programmes improv there and hosts the Yes, Ann Improv Fest.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "gocomedy.net",
+      "name": "Go Comedy! Improv Theater",
+      "url": "https://www.gocomedy.net/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Ferndale",
+      "summary": "Ferndale's improv and sketch theatre on East 9 Mile with shows Wednesday to Sunday, resident and house teams, improvised murder mysteries and a Go University class programme whose terms start every two months.",
+      "schedule": "Fri and Sat 7:30pm and 9:30pm; shorter shows Wed, Thu and Sun; next improv term starts Oct 13, 2026",
+      "signals": [
+        "261 E 9 Mile Rd, Ferndale",
+        "Shows five nights a week",
+        "Intro programme of four classes, then an Advanced long-form programme",
+        "New terms about every eight weeks",
+        "Kids and teen improv, stand-up and the FTQEE stand-up programme",
+        "October 2026 shows and class term posted"
+      ],
+      "score": 82,
+      "reasons": "A long-established suburban theatre with shows five nights a week and rolling terms dated to October 2026; the class ladder is two programmes rather than numbered levels.",
+      "sources": [
+        "https://www.gocomedy.net/",
+        "https://www.gocomedy.net/classes",
+        "http://www.gocomedy.net/about-us"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "planetant.com",
+      "name": "Planet Ant Theatre",
+      "url": "https://www.planetant.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Hamtramck",
+      "summary": "Nonprofit theatre at the centre of metro Detroit's comedy community since 1993, running Ant Hall and the Black Box on Caniff Street with Home and Farm improv teams, a 2026 season, Colony Fest and classes in improv, sketch and acting.",
+      "schedule": "2026 season and Colony Fest 2026 listed; classes through the Planet Ant Training Center",
+      "signals": [
+        "Founded 1993, 501(c)(3)",
+        "Ant Hall at 2320 Caniff St plus the Black Box",
+        "Home Team and Farm Team improv ensembles",
+        "Classes in improv, sketch writing and acting",
+        "Colony Fest 2026"
+      ],
+      "score": 78,
+      "reasons": "Thirty-three years and two rooms of its own with a true farm-to-home-team system, docked because class levels and dates were not readable on the site.",
+      "sources": [
+        "https://www.planetant.com/",
+        "https://www.planetant.com/classes",
+        "https://www.planetant.com/news/jurassicpark"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "heardotsay.com",
+      "name": "hear.say brewing + theater",
+      "url": "http://heardotsay.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Ann Arbor (W Liberty St)",
+      "summary": "Ann Arbor microbrewery with an adjacent theater programming improv and stand-up all week, a hear.say academy with improv classes for all levels, team-building workshops and the Yes, Ann Improv Fest.",
+      "schedule": "Comedy most nights (see calendar); academy term starts September 29; Yes, Ann Improv Fest June 23-26, 2027",
+      "signals": [
+        "2350 W Liberty St, Ann Arbor",
+        "Improv and stand-up all week in its own theater",
+        "hear.say academy: 8-week improv classes, beginner to advanced",
+        "Next class term starts September 29",
+        "Hosts the Yes, Ann Improv Fest, June 23-26, 2027"
+      ],
+      "score": 55,
+      "reasons": "A new brewery-theater that already runs comedy nightly, a levelled academy and a festival, but with little history and class details behind a calendar the site did not expose.",
+      "sources": [
+        "http://heardotsay.com/",
+        "https://www.heardotsay.com/classes",
+        "https://annarborobserver.com/?s=improv"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

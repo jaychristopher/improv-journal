@@ -1,0 +1,86 @@
+{
+  "slug": "st-louis",
+  "city": "St. Louis",
+  "state": "Missouri",
+  "stateCode": "MO",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:54.593Z",
+    "searches": 0,
+    "notes": "The Improv Shop is the scene's center of gravity. ComedySportz St. Louis (cszstlouis.com) is live and advertises weekly matches in Webster Groves and Maryland Heights, but its newest dated class is February 2025 and its ticketing page refused the fetch, so it needs a human check before listing. The Improv Trick, once a St. Louis school, now teaches in Los Angeles.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "theimprovshop.com",
+      "name": "The Improv Shop",
+      "url": "https://www.theimprovshop.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "The Grove",
+      "summary": "St. Louis's improv theater and training center in The Grove, with shows four nights a week including House Team Night and Cagematch, and a curriculum from Level 0 through Level 4 plus Teams levels and sketch.",
+      "schedule": "Shows Mon, Thu, Fri and Sat; next class session November 2026 to January 2027",
+      "signals": [
+        "Own venue at 3960 Chouteau Ave",
+        "Shows four nights a week",
+        "Levels 0-4 plus two Teams levels",
+        "House Team Night and Cagematch",
+        "Nov 2026-Jan 2027 session enrolling",
+        "Kitchen and bar on site"
+      ],
+      "score": 85,
+      "reasons": "The full training-theater package of levelled classes, a path onto teams, house-team nights and a dated four-night calendar in a permanent home; only the founding year is missing from the site.",
+      "sources": [
+        "https://www.theimprovshop.com/",
+        "https://www.theimprovshop.com/classes",
+        "https://www.theimprovshop.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "bob-baker.com",
+      "name": "Bob Baker's Improv Comedy Class",
+      "url": "http://bob-baker.com/buzz/improv-comedy-st-louis/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Maryland Heights",
+      "summary": "A monthly drop-in improv class run by performer Bob Baker at the Center for Spiritual Living, open to all for $15 at the door, with occasional improv cabaret shows.",
+      "schedule": "Second Monday of every month, 7-9 pm, $15 at the door",
+      "signals": [
+        "Monthly drop-in class",
+        "$15 at the door",
+        "Center for Spiritual Living, 12875 Fee Fee Rd",
+        "Site dated 2026"
+      ],
+      "score": 22,
+      "reasons": "A single monthly drop-in with no levels, no venue of its own and no show calendar; listed because it is a real, current and cheap way into improv in the county.",
+      "sources": [
+        "http://bob-baker.com/buzz/improv-comedy-st-louis/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

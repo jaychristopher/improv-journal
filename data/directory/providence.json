@@ -1,0 +1,118 @@
+{
+  "slug": "providence",
+  "city": "Providence",
+  "state": "Rhode Island",
+  "stateCode": "RI",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:49.110Z",
+    "searches": 0,
+    "notes": "PIG is the only theater; the rest of Rhode Island improv is weekly or monthly shows in borrowed rooms. The Comedy Connection in East Providence is stand-up, AS220's Empire Revue is sketch, and the Wilbury Theatre Group is a scripted company whose site could not be read.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "improvpig.com",
+      "name": "Providence Improv Guild",
+      "url": "https://www.improvpig.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown Providence",
+      "summary": "Providence's nonprofit improv theater on Empire Street, with shows every Friday and Saturday headlined by a nightly house team, open-jam and new-team slots on the bill, and levelled classes from Intro to Improv upward.",
+      "schedule": "Fridays 7:30 pm, Saturdays 7:30 and 9:30 pm, $10; classes $225, Level 1 and Level 3 sold out",
+      "signals": [
+        "Own theater at 95 Empire St",
+        "501(c)(3) nonprofit",
+        "Shows every Friday and Saturday",
+        "Nightly house team sets",
+        "Open jam and new-team workout slots",
+        "Classes selling out at $225"
+      ],
+      "score": 74,
+      "reasons": "A permanent downtown theater, three weekly shows with house teams and jam slots, and sold-out levelled classes; the founding year and the full class ladder are not stated on the site.",
+      "sources": [
+        "https://www.improvpig.com/",
+        "https://www.improvpig.com/collections/classes",
+        "https://www.improvpig.com/pages/booking-faqs"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "bringyourownimprov.com",
+      "name": "Bring Your Own Improv",
+      "url": "https://www.bringyourownimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Warwick",
+      "summary": "Interactive improv company running two shows every Friday at the Warwick Center for the Arts since 2008, a family-friendly early show and the late Caffeinated Insomniacs, plus teen workshops.",
+      "schedule": "Every Friday 8 pm (family) and 10 pm (late), $15, $10 concessions",
+      "signals": [
+        "Since 2008",
+        "Warwick Center for the Arts, 3259 Post Rd",
+        "Two shows every Friday",
+        "Teen workshops",
+        "Site dated 2008-2026"
+      ],
+      "score": 50,
+      "reasons": "Eighteen years of weekly shows in a fixed venue earn the longevity points; classes are teen workshops only and the site gives no dates for them.",
+      "sources": [
+        "https://www.bringyourownimprov.com/showtimes",
+        "https://www.bringyourownimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "improvjones.com",
+      "name": "Improv Jones",
+      "url": "https://www.improvjones.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Bristol",
+      "summary": "A troupe that began as a workshop at Second Story Theatre in 1992 and now plays a monthly Improv Jones & Friends show at Borealis Coffee Company in Bristol, on the East Bay.",
+      "schedule": "Monthly; next show Oct 3, 2026 at 7:30 pm",
+      "signals": [
+        "Began 1992",
+        "Monthly show at Borealis Coffee, 500 Wood St, Bristol",
+        "Next date Oct 3, 2026",
+        "Classes via Kate Teichman, none scheduled now"
+      ],
+      "score": 30,
+      "reasons": "A three-decade lineage and a dated next show, but one night a month in a coffee shop and no classes running.",
+      "sources": [
+        "https://www.improvjones.com/",
+        "https://www.kateteichmanimprov.com/improv-comedy-classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

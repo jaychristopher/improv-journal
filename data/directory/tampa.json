@@ -1,0 +1,87 @@
+{
+  "slug": "tampa",
+  "city": "Tampa",
+  "state": "Florida",
+  "stateCode": "FL",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:54.946Z",
+    "searches": 0,
+    "notes": "Tampa Bay's training scene has thinned: The Box Theater's domain (boximprov.com) now serves a gambling site, American Stage dropped its improv program, and the Tampa Improv became the Tampa Funny Bone, a stand-up room, in December 2023. Spitfire in St. Pete is the only improv theater with a class series, and its core curriculum is paused until 2027.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "spitfirecomedy.com",
+      "name": "Spitfire Comedy House",
+      "url": "https://spitfirecomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown St. Petersburg",
+      "summary": "St. Pete's comedy theater since 2016, with improv, sketch and stand-up shows Wednesday to Saturday, a weekly $20 drop-in improv class and a core class series that returns in 2027.",
+      "schedule": "Shows Wed-Sat; Whose Line Uncensored Saturdays 7:30 pm; drop-in class Sundays 2-4 pm, $20",
+      "signals": [
+        "Founded 2016",
+        "Own theater at 1920 1st Ave S",
+        "Shows four nights a week",
+        "Whose Line Uncensored in its ninth year",
+        "Weekly Sunday drop-in class",
+        "Core curriculum paused until 2027"
+      ],
+      "score": 66,
+      "reasons": "A real theater with a packed weekly lineup and a decade behind it, marked down because the levelled class series is on hold until 2027 and only drop-ins and short workshops run this season.",
+      "sources": [
+        "https://spitfirecomedy.com/now-playing",
+        "https://spitfirecomedy.com/classes",
+        "https://spitfirecomedy.com/dropin"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "carrollwoodplayers.org",
+      "name": "Nine and Numb Improv Troupe",
+      "url": "https://carrollwoodplayers.org/nine-and-numb-improv-troupe/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Carrollwood, Tampa",
+      "summary": "Community-theater improv troupe resident at Carrollwood Players since 2005, playing short-form Friday shows with a late adults-only set and a Friday-night open mic.",
+      "schedule": "Fridays 9 pm and adults-only 11 pm, $10; Friday open mic 7:30-8:30 pm from January",
+      "signals": [
+        "In Tampa since 2005",
+        "Resident at Carrollwood Players, 4333 Gunn Hwy",
+        "Friday 9 pm and 11 pm shows",
+        "$10 tickets",
+        "2026/2027 season listed"
+      ],
+      "score": 44,
+      "reasons": "Two decades in a permanent community theater and a dated season earn the longevity points, but there are no classes and only one night a week of shows.",
+      "sources": [
+        "https://carrollwoodplayers.org/nine-and-numb-improv-troupe/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

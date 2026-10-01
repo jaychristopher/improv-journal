@@ -1,0 +1,182 @@
+{
+  "slug": "boston",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "stateCode": "MA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:26.556Z",
+    "searches": 0,
+    "notes": "Boston's scene re-centred after ImprovBoston closed: Improv Asylum downtown, Union Comedy in Somerville and the Rozzie Square Theater (home of ComedySportz Boston) in Roslindale now carry the class tracks. Cambridge has no dedicated improv theatre; the Nova collective moves between the Foundry, Arts at the Armory and The Rockwell, and the Cambridge Center for Adult Education's catalog could not be",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "improvasylum.com",
+      "name": "Improv Asylum",
+      "url": "https://improvasylum.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "North End",
+      "summary": "Boston's long-running improv and sketch theatre on Hanover Street since 1997, with a Main Stage revue Wednesday to Saturday, Tuesday house-team nights and a six-level training center.",
+      "schedule": "Main Stage Wed-Sat; Raunch Saturdays; house teams Tuesdays; Level 1 sessions start Oct 3, 6, 13, 15 and 19, 2026",
+      "signals": [
+        "Founded 1997",
+        "216 Hanover Street, North End",
+        "Six improv levels, eight weeks each",
+        "House team auditions open after Level 3",
+        "Main Stage show Wednesday to Saturday",
+        "Fall 2026 class dates posted"
+      ],
+      "score": 93,
+      "reasons": "Nearly thirty years in its own North End theatre, shows five nights a week, a six-level school with dated fall 2026 sessions and a clear path to house teams.",
+      "sources": [
+        "https://improvasylum.com/",
+        "https://improvasylum.com/improv-classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "rozziesquaretheater.com",
+      "name": "The Rozzie Square Theater",
+      "url": "https://www.rozziesquaretheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Roslindale",
+      "summary": "Roslindale Village comedy theatre open since 2018 and home to ComedySportz Boston, with weekly improv, stand-up and storytelling shows, a free drop-in, an improv jam and a class ladder from Level 1A to 3B.",
+      "schedule": "Level 1A fall session Sep 16-Nov 4, 2026, Wednesdays 7-9pm, $310; Riot Improv first Saturdays 8:30pm",
+      "signals": [
+        "Open since 2018",
+        "18 Corinth St, Roslindale Village",
+        "Home of ComedySportz Boston",
+        "Levels 1A to 3B, eight-week sessions ($310)",
+        "Free drop-in and Improv Jam + Hangout",
+        "Fall 2026 session dates posted"
+      ],
+      "score": 77,
+      "reasons": "Eight years in its own room with a full level ladder, a free drop-in and jam, and a dated fall 2026 session; its standing is local rather than regional.",
+      "sources": [
+        "https://www.rozziesquaretheater.com/",
+        "https://www.rozziesquaretheater.com/level-1-intro-to-improv",
+        "https://www.cszboston.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "unioncomedy.com",
+      "name": "Union Comedy",
+      "url": "https://www.unioncomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Somerville (Union Square)",
+      "summary": "Somerville's home for long-form improv: weekend shows by house teams and guest acts, a four-level school with eight-week sessions, indie team submissions and Card to Culture free admission.",
+      "schedule": "Weekend shows; Levels 1-4, eight weeks at 2.5 hours a week; house team auditions Sep 12-13, 2026",
+      "signals": [
+        "593 Somerville Ave, Union Square",
+        "Levels 1-4, eight weeks each",
+        "House teams plus indie team submissions",
+        "Fall 2026 auditions held September 12-13",
+        "Card to Culture free admission for EBT, WIC and ConnectorCare holders"
+      ],
+      "score": 73,
+      "reasons": "A dedicated long-form room with a complete beginner-to-house-team track and current auditions, but a younger institution whose public schedule pages are thin.",
+      "sources": [
+        "https://www.unioncomedy.com/",
+        "https://www.unioncomedy.com/classes",
+        "https://www.unioncomedy.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "thenovacomedy.com",
+      "name": "The Nova Comedy Collective",
+      "url": "https://thenovacomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Cambridge / Somerville",
+      "summary": "Itinerant sketch, improv and stand-up collective producing The Nova Show at The Rockwell, a monthly Nebula Night improv jam at Arts at the Armory and Improv Gym drop-in classes at the Cambridge Foundry.",
+      "schedule": "Nebula Night monthly; Improv Gym on select Saturdays at The Foundry; classes tiered Launch, Orbit and Deep Space",
+      "signals": [
+        "Monthly Nebula Night improv jam",
+        "Improv Gym for all levels at The Cambridge Foundry",
+        "Three class tiers: Launch, Orbit, Deep Space",
+        "The Nova Show at The Rockwell, Somerville",
+        "Family Improv monthly drop-in"
+      ],
+      "score": 40,
+      "reasons": "A lively but venue-less collective whose classes and jam are real and recurring, yet whose site shows tiers rather than dated sessions.",
+      "sources": [
+        "https://thenovacomedy.com/",
+        "https://thenovacomedy.com/classes",
+        "https://www.eventbrite.com/d/ma--boston/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "theriottheater.com",
+      "name": "Riot Theater Company",
+      "url": "https://www.theriottheater.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Roslindale",
+      "summary": "Improv company staging Riot Improv, a themed monthly special, on first Saturdays at The Rozzie Square Theater, with an audition-based 2026 team.",
+      "schedule": "First Saturday of the month, 8:30pm; monthly dates listed through December",
+      "signals": [
+        "Monthly Riot Improv special, first Saturdays 8:30pm",
+        "Performs at The Rozzie Square Theater",
+        "Auditions for a 2026 team",
+        "Themed formats such as gAMepROv, aRTpROv and fILmpROv"
+      ],
+      "score": 29,
+      "reasons": "A surviving company with a monthly slot and current season dates, but no room of its own and no classes.",
+      "sources": [
+        "https://www.theriottheater.com/improv-135916-237473.html",
+        "https://www.theriottheater.com/find-us.html"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

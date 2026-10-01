@@ -1,0 +1,122 @@
+{
+  "slug": "mesa",
+  "city": "Mesa",
+  "state": "Arizona",
+  "stateCode": "AZ",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:42.219Z",
+    "searches": 0,
+    "notes": "The East Valley has three improv theatres within a few miles of each other: NCT on Main Street, JesterZ (Mesa's longest-running troupe, now in downtown Gilbert) and The Bridge on Dobson Road. Mic Drop Comedy in Chandler and Tempe Improv are stand-up clubs.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "nctphoenix.com",
+      "name": "The Neighborhood Comedy Theatre",
+      "url": "https://nctphoenix.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown Mesa (214 W Main St)",
+      "summary": "Downtown Mesa's improv and sketch theatre, staging over 300 shows a year on Main Street, with six class levels from Intro to Musical Improv and pay-what-you-want jams every Friday and Saturday evening.",
+      "schedule": "Shows every weekend; jams Fri & Sat 6pm, pay what you want; new six-week sessions about every nine weeks",
+      "signals": [
+        "Over 300 improv shows a year",
+        "Six levels, $200 per six-week class, through The Harold and Musical Improv",
+        "Process Lab and Indie Night as the path onto the stage",
+        "Jams every Friday and Saturday with a different form each week",
+        "Cast of roughly 30 performers",
+        "Site news dated Sep 29 and Oct 14, 2026"
+      ],
+      "score": 83,
+      "reasons": "A permanent Main Street home, the deepest class ladder in the East Valley, shows every weekend and two jams a week; it does not publish its founding year or seat count.",
+      "sources": [
+        "https://nctphoenix.com/",
+        "https://nctphoenix.com/classes/",
+        "https://nctphoenix.com/improvjams/",
+        "https://nctphoenix.com/about/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "jesterzimprov.com",
+      "name": "JesterZ Improv Comedy",
+      "url": "https://jesterzimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Gilbert (228 N Gilbert Rd)",
+      "summary": "The East Valley's clean, alcohol-free improv theatre since 2001, long based in Mesa and now in downtown Gilbert, with two shows every Friday and Saturday and eight-week adult classes that end on its stage.",
+      "schedule": "Shows Fri & Sat 6:30pm and 8:30pm, $25",
+      "signals": [
+        "Performing since 2001",
+        "Adult (16+) eight-week sessions finish with a live show",
+        "Teen (12-17) and kids (8-11) programmes",
+        "Alcohol-free, family-friendly venue",
+        "Formerly at Mesa Riverview",
+        "Corporate shows and training"
+      ],
+      "score": 82,
+      "reasons": "A quarter century of weekend shows, its own venue and classes for every age that culminate in performing; the site is current but publishes no specific class dates.",
+      "sources": [
+        "https://jesterzimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "bridgeimprovtheater.com",
+      "name": "The Bridge Improv Theater",
+      "url": "https://www.bridgeimprovtheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "West Mesa (1061 N Dobson Rd)",
+      "summary": "A clean-comedy improv theater opened in 2020 on Dobson Road with two shows every Friday and Saturday, a Saturday happy-hour jam and adult and youth classes.",
+      "schedule": "Mainstage Fri & Sat 7pm; Bridge Block Party Fri & Sat 8:30pm; Happy Hour Jam Saturdays 6pm",
+      "signals": [
+        "Founded summer 2020",
+        "Clean, all-ages comedy",
+        "Free introductory class option",
+        "Weekly Saturday jam",
+        "Adult and youth classes",
+        "Also teaches stand-up and sketch"
+      ],
+      "score": 61,
+      "reasons": "Its own room and four shows a weekend plus a weekly jam, but it is six years old and the class pages give no levels, dates or prices.",
+      "sources": [
+        "https://www.bridgeimprovtheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

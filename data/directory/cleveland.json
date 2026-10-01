@@ -1,0 +1,89 @@
+{
+  "slug": "cleveland",
+  "city": "Cleveland",
+  "state": "Ohio",
+  "stateCode": "OH",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:28.949Z",
+    "searches": 0,
+    "notes": "Imposters is effectively the whole training scene; Something Dada, Cleveland's longest-running troupe (since 1994), performs at the Beck Center but has no website of its own, and Cleveland Improv, Hilarities and the Funny Bone are stand-up rooms.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "imposterstheater.com",
+      "name": "Imposters Theater",
+      "url": "https://www.imposterstheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Ohio City",
+      "summary": "Ohio City's home for improv, sketch and alternative comedy: a five-level improv program, sketch, stand-up and storytelling classes, house-team Harold Night, two free weekly jams and shows every Friday and Saturday.",
+      "schedule": "Shows Thu-Sat; Harold Night Thursdays 7 pm; Wednesday Jam 8 pm; Saturday Improv Jam 1-3 pm; six-week classes $199",
+      "signals": [
+        "Founded 2021",
+        "Own theater at 4828 Lorain Ave",
+        "Five improv levels, six weeks each",
+        "House teams on Harold Night",
+        "Two free weekly jams",
+        "October 2026 dates listed"
+      ],
+      "score": 72,
+      "reasons": "The full package of a training theater, with levels, house teams, weekly jams and a dated calendar, scored below the big-city veterans only because it is five years old.",
+      "sources": [
+        "https://www.imposterstheater.com/classes",
+        "https://www.imposterstheater.com/schedule",
+        "https://improvarchive.org/companies/imposters-theater"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "beckcenter.org",
+      "name": "Beck Center for the Arts",
+      "url": "https://beckcenter.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Lakewood",
+      "summary": "Long-established Lakewood arts center that runs a six-week Adult Improv: The Basics class each semester in its theater education program and is the home stage of the Something Dada troupe.",
+      "schedule": "Adult Improv: The Basics, Thursdays 7:15 pm; terms Sept 10-Oct 15 and Nov 5-Dec 17, 2026, $95",
+      "signals": [
+        "Adult improv class each semester, $95",
+        "Thursday 7:15 pm sessions",
+        "Main Building, 17801 Detroit Ave",
+        "Ages 18 and up",
+        "Hosts Something Dada improv"
+      ],
+      "score": 42,
+      "reasons": "A permanent institution with a dated, affordable beginner class, but only one level, no path to performing, and improv is a sideline of a general arts school.",
+      "sources": [
+        "https://beckcenter.org/arts-education/theater-classes",
+        "https://apm.activecommunities.com/beckcenter/Activity_Search"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

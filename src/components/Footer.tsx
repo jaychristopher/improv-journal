@@ -85,6 +85,11 @@ const HUB_HREFS = new Set<string>(Object.values(HUBS).map((hub) => hub.href));
  * Deterministic from the pathname, so the server render and the client agree.
  */
 export function footerLabelsByTitle(pathname: string): boolean {
+  // The improv directory's sixty-one pages name the promoted guides by title
+  // too (2026-10-01): labelled by keyword they tipped seven promoted guides
+  // over the exact-keyword ceiling in anchor-diversity.test.ts, since a
+  // footer on sixty pages is a sixth of the site's inbound anchors.
+  if (pathname.startsWith("/improv-near-you")) return true;
   return (
     CONCEPT_SECTIONS.some((section) => pathname.startsWith(section)) && !HUB_HREFS.has(pathname)
   );

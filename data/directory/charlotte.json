@@ -1,0 +1,133 @@
+{
+  "slug": "charlotte",
+  "city": "Charlotte",
+  "state": "North Carolina",
+  "stateCode": "NC",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:26.811Z",
+    "searches": 0,
+    "notes": "Charlotte has two theaters with rooms of their own, CATCh in South End and Charlotte Comedy Theater uptown, plus smaller companies. Acting Out Studio's improv site was unreachable when checked, and Play Cousinz Improv performs without a site of its own.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "catch.theater",
+      "name": "Comedy Arts Theater of Charlotte (CATCh)",
+      "url": "https://catch.theater/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "South End (South Boulevard)",
+      "summary": "A long-form improv theater founded 2016 with its own room on South Boulevard, a class programme in two streams, Unlocking the Self and a Performance Track, plus stand-up classes, and $10 improv shows most weekends.",
+      "schedule": "Shows Fridays and Saturdays around 7:30pm; class sessions start on Sundays",
+      "signals": [
+        "Founded 2016",
+        "Venue of its own on South Boulevard",
+        "Two class streams plus workshops",
+        "Improv Game Night and guest shows",
+        "$10 tickets",
+        "Reviewed by Queen City Nerve, April 2026"
+      ],
+      "score": 72,
+      "reasons": "A decade in, with a room of its own, a structured class ladder, weekend shows and dated October listings, short of the top tier only on scale.",
+      "sources": [
+        "https://catch.theater/",
+        "https://catch.theater/classes",
+        "https://qcnerve.com/catch-improv-class-darrell/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "charlottecomedytheater.com",
+      "name": "Charlotte Comedy Theater",
+      "url": "https://charlottecomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Uptown (North College Street)",
+      "summary": "Charlotte's original improv theater, run by founder Keli Semelsberger at the VAPA Center on North College Street, with a three-level Chicago-style class track from Foundations to Advanced and audience-suggestion improv shows.",
+      "schedule": "Six-week class levels, $250 to $280; shows ticketed through Tixtree",
+      "signals": [
+        "Charlotte's original improv theater",
+        "Three-level class track, six weeks each",
+        "Advanced class built on Susan Messing exercises",
+        "Payment plans and internships",
+        "Stand-up and content-creation classes announced"
+      ],
+      "score": 57,
+      "reasons": "Long-standing with a clear class ladder and a downtown stage, but the site publishes no show dates and the schedule lives on a ticketing platform.",
+      "sources": [
+        "https://charlottecomedytheater.com/",
+        "https://charlottecomedytheater.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "otcimprov.com",
+      "name": "Over The Counter Improv",
+      "url": "https://www.otcimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "South Charlotte (Providence Forest Lane)",
+      "summary": "A south Charlotte improv company staging audience-suggestion shows, a teen improv show and five-session Level 1 classes from a venue on Providence Forest Lane, with team-building work on the side.",
+      "schedule": "Three's A Crowd show October 10, teen show October 24; Level 1 class on Sundays from October 11, 2026",
+      "signals": [
+        "Dated shows and classes for October 2026",
+        "Five-session Level 1 class",
+        "Teen improv show",
+        "Corporate and team-building programs"
+      ],
+      "score": 41,
+      "reasons": "Current, dated shows and a beginner class, but a small operation with one class level and performances a few times a season.",
+      "sources": [
+        "https://www.otcimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

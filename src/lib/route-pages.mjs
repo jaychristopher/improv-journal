@@ -199,7 +199,7 @@ const TOOLS = [
  * lists come first; the shows and the exercise-picker pages are derived from
  * content and picker-config, the way the sitemap derives them.
  */
-const SECTION_ORDER = ["hub", "audience", "tradition", "tool", "show", "facet"];
+const SECTION_ORDER = ["hub", "audience", "tradition", "tool", "show", "facet", "directory"];
 
 const LISTED = [
   ["hub", HUBS],
@@ -292,6 +292,7 @@ export async function listRoutePages() {
   const { ROUTE_KEYWORDS } = await jiti.import("@/lib/route-keywords");
   const { ALL_HUBS, HUBS: NAMED_HUBS } = await jiti.import("@/lib/hubs");
   const sitemap = (await jiti.import("@/app/sitemap")).default;
+  const directory = await jiti.import("@/lib/directory");
 
   // The names a hub goes by that its title may not say, keyed by route: the
   // nav and footer label and the breadcrumb, which are the names a reader
@@ -374,6 +375,28 @@ export async function listRoutePages() {
     const entry = known.get(`/topics/${category.slug}`);
     if (entry) entry.orientation = category.orientation;
   }
+
+  // The improv directory (2026-10-01): the hub, and every city page. The
+  // sitemap publishes a city once it lists three verified places
+  // (isIndexableDirectoryCity in src/lib/directory.ts), the way the picker's
+  // facets are gated; the rest are served and not indexed, and the resolver
+  // only meets what the sitemap publishes. Labels are how each title starts.
+  known.set(directory.DIRECTORY_PATH, {
+    section: "directory",
+    label: directory.DIRECTORY_HUB_H1,
+    summary: "Improv theaters, classes and regular shows in sixty US cities, verified and ranked.",
+    orientation: [],
+    index: 0,
+  });
+  directory.loadDirectory().forEach((city, index) => {
+    known.set(directory.directoryCityPath(city.slug), {
+      section: "directory",
+      label: directory.directoryCityH1(city),
+      summary: directory.directoryCityDescription(city),
+      orientation: [],
+      index: index + 1,
+    });
+  });
 
   const modules = new Map();
   const pages = [];

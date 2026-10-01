@@ -1,0 +1,123 @@
+{
+  "slug": "baltimore",
+  "city": "Baltimore",
+  "state": "Maryland",
+  "stateCode": "MD",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:25.254Z",
+    "searches": 0,
+    "notes": "Baltimore runs on two institutions: BIG's Station North theatre and Highwire's new Highlandtown center, which between them cover classes, jams and most of the weekly shows; MidAtlantic Improv and Points North's First Fridays fill in at breweries and galleries. The Charm City Comedy Project's domain has lapsed to spam.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "bigimprov.org",
+      "name": "Baltimore Improv Group (BIG)",
+      "url": "https://www.bigimprov.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Station North (N Charles St)",
+      "summary": "Nonprofit improv theatre founded 2004, in its own Station North theatre since 2017, with shows Thursday to Saturday by house teams such as The McGuillacuddies and Snake Oil, a free Grateful Jam and a 101-to-501 class track.",
+      "schedule": "Shows Thu-Sat; seven-week levels 101-501 ($285-$305); free Grateful Jam; October 8-17, 2026 shows listed",
+      "signals": [
+        "Founded 2004, nonprofit",
+        "Own theatre at 1727 N Charles St since 2017",
+        "Over 100 performers",
+        "Levels 101-501, seven weeks each",
+        "Free Grateful Jam open to all",
+        "Shows Thursday, Friday and Saturday"
+      ],
+      "score": 92,
+      "reasons": "Twenty-two years, a theatre of its own, three show nights with house teams, a complete five-level track and a jam, with October 2026 dates on the site.",
+      "sources": [
+        "https://www.bigimprov.org/",
+        "https://www.bigimprov.org/classes",
+        "https://www.bigimprov.org/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "highwireimprov.com",
+      "name": "Highwire Improv",
+      "url": "https://www.highwireimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Highlandtown",
+      "summary": "Improv company founded 2020 that opened The Highwire Center in Highlandtown's former Hoehn's Bakery in October 2025, with weekly shows, a community jam, free grant-funded intro workshops, Foundations classes and visiting-artist workshops.",
+      "schedule": "Weekly shows; Short Form, Huge Fun community jam; free two-hour intro workshops; John Lutz workshops Oct 16-17, 2026",
+      "signals": [
+        "Founded 2020",
+        "The Highwire Center opened October 2025 in Highlandtown",
+        "Free intro workshops backed by a Maryland State Arts Council grant",
+        "Foundations classes plus skill modules, in person and online",
+        "Weekly shows and a community jam",
+        "Classes also offered with Everyman Theatre"
+      ],
+      "score": 64,
+      "reasons": "Six years old but now in a room of its own with a dense October 2026 calendar, free intros and a levelled start; beyond Foundations the ladder is modules rather than numbered levels.",
+      "sources": [
+        "https://www.highwireimprov.com/",
+        "https://www.highwireimprov.com/classes",
+        "https://baltimorefishbowl.com/?s=improv",
+        "https://www.eventbrite.com/d/md--baltimore/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "midatlanticimprov.com",
+      "name": "MidAtlantic Improv",
+      "url": "https://midatlanticimprov.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Baltimore (various venues)",
+      "summary": "Touring improv company performing and teaching across the DMV since 2016, best known for Law & Order SIU: Special Improv Unit, now in a regular 2026 run with Area 405, plus a seasonal improvised Christmas Carol.",
+      "schedule": "Law & Order SIU regular performances in 2026 with Area 405; brunch editions at Guilford Hall Brewery",
+      "signals": [
+        "Since 2016",
+        "Law & Order SIU: Special Improv Unit",
+        "2026 partnership with Area 405 for regular shows",
+        "Corporate and private coaching"
+      ],
+      "score": 32,
+      "reasons": "A decade-old company with a signature show and a 2026 residency, but no venue, no public class track and undated listings on its own site.",
+      "sources": [
+        "https://midatlanticimprov.com/",
+        "https://baltimorefishbowl.com/?s=improv",
+        "https://allevents.in/baltimore/improv"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

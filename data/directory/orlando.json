@@ -1,0 +1,90 @@
+{
+  "slug": "orlando",
+  "city": "Orlando",
+  "state": "Florida",
+  "stateCode": "FL",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:46.876Z",
+    "searches": 0,
+    "notes": "SAK is the scene; the Orlando Improv and the Funny Bone are stand-up clubs despite the name of the first. Nothing improv-specific could be verified in Winter Park.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "sakcomedylab.com",
+      "name": "SAK Comedy Lab",
+      "url": "https://www.sakcomedylab.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Orlando",
+      "summary": "Downtown Orlando's improv institution since 1991, with professional shows every Friday and Saturday at 7 and 9 pm, a four-level SAK University track ending in a graduation show, and alumni including Wayne Brady.",
+      "schedule": "Shows Fri-Sat 7 and 9 pm; student showcases midweek; free trial classes Oct 11 and 12, 2026",
+      "signals": [
+        "Founded 1991",
+        "Own venue at 55 W Church St, Suite 211",
+        "Shows every Friday and Saturday",
+        "SAK U Levels 1-4 plus advanced workshops",
+        "Graduation and level showcases",
+        "Alumni include Wayne Brady"
+      ],
+      "score": 90,
+      "reasons": "Thirty-five years in a permanent downtown home, a levelled school with graduation shows, a weekly professional calendar and national alumni; only the midweek calendar is thinner than the biggest city theaters.",
+      "sources": [
+        "https://www.sakcomedylab.com/",
+        "https://www.sakcomedylab.com/classes",
+        "https://www.sakcomedylab.com/calendar/october-2026"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "thecorner.gallery",
+      "name": "The Corner Gallery",
+      "url": "https://thecorner.gallery/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Casselberry",
+      "summary": "Friday-night improv room run with the City of Casselberry at its recreation center, 15 minutes from downtown Orlando, with weekly showcases, visiting teams, musical improv and an eight-week Foundations of Longform class.",
+      "schedule": "Fridays 7:30-9 pm, $10-$12; next class semester to be announced",
+      "signals": [
+        "Live improv every Friday",
+        "200 N Triplet Lake Dr, Casselberry",
+        "October 2026 shows listed",
+        "Foundations of Longform, eight weeks",
+        "Partnership with the City of Casselberry"
+      ],
+      "score": 46,
+      "reasons": "A dated weekly calendar and a long-form class in a borrowed civic room; young, one night a week, and the next class semester has no date yet.",
+      "sources": [
+        "https://thecorner.gallery/events",
+        "https://thecorner.gallery/classes",
+        "https://thecorner.gallery/aboutus"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "salt-lake-city",
+  "city": "Salt Lake City",
+  "state": "Utah",
+  "stateCode": "UT",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:52.281Z",
+    "searches": 0,
+    "notes": "The Wasatch Front splits between Salt Lake and Provo. Wiseguys is stand-up; Off the Cuff is in Cedar City, 250 miles south, and its domain now redirects to an advertising page; the University of Utah's lifelong-learning improv workshop page returned 404.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "comedyboxutah.com",
+      "name": "ComedyBox Utah",
+      "url": "https://www.comedyboxutah.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Provo",
+      "summary": "Provo's competitive short-form club, formerly ComedySportz, with two-team matches every Friday and Saturday at its Center Street venue after more than 25 years, and a five-week beginner improv workshop.",
+      "schedule": "Fridays and Saturdays 7:30 pm; Beginner Improv Workshop, five weeks",
+      "signals": [
+        "Over 25 years, formerly ComedySportz Provo",
+        "Own venue at 36 W Center St, Provo",
+        "Matches every Friday and Saturday",
+        "Five-week beginner workshop",
+        "October 2026 dates listed"
+      ],
+      "score": 60,
+      "reasons": "A quarter century in its own Provo room with weekly matches and a current calendar; the class offer is a single beginner workshop rather than a ladder.",
+      "sources": [
+        "https://www.comedyboxutah.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "qwcomedy.com",
+      "name": "Quick Wits Comedy",
+      "url": "https://www.qwcomedy.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "South Salt Lake",
+      "summary": "Utah's first improv troupe, thirty years in, playing short-form Quick Wits Classic and the Side Quest campaign show every Friday and Saturday at its own Comedy Lab on Preston Street.",
+      "schedule": "Fridays 7:30 and 9:30 pm, Saturdays 7:30 pm",
+      "signals": [
+        "Thirty years running",
+        "Own venue, Quick Wits Comedy Lab, 2685 Preston St",
+        "Shows every Friday and Saturday",
+        "October 2026 dates listed",
+        "No classes offered"
+      ],
+      "score": 60,
+      "reasons": "Three decades and a home of its own with a dated weekend calendar, but no class program at all and a site whose footer still says 2022.",
+      "sources": [
+        "https://www.qwcomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "improvbroadway.com",
+      "name": "ImprovBroadway",
+      "url": "https://www.improvbroadway.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Provo",
+      "summary": "Provo's clean-comedy house for improvised musicals, with shows every Friday and Saturday and a class ladder from Improv 101 to 401 that starts a new group at the beginning of each month.",
+      "schedule": "Fridays and Saturdays 7:30 pm; new classes start at the beginning of each month, $100 per level",
+      "signals": [
+        "Own venue at 496 N 900 E, Provo",
+        "Shows every Friday and Saturday",
+        "Improv 101 through 401",
+        "Monthly class starts",
+        "October 2026 dates listed"
+      ],
+      "score": 58,
+      "reasons": "A weekly calendar in its own room and a four-level class path with monthly intakes; the founding year and class schedules are not published, which caps the standing and website points.",
+      "sources": [
+        "https://www.improvbroadway.com/",
+        "https://www.improvbroadway.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "crowdsourcedlive.com",
+      "name": "Crowdsourced Comedy",
+      "url": "https://www.crowdsourcedlive.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Salt Lake City (partner venues)",
+      "summary": "Salt Lake improv company since 2015 running weekend shows at the Jade Room at Vertical Diner, monthly themed shows at Why Kiki, and Improv 101 and 201 classes at Sugar Space that each end in a performance.",
+      "schedule": "Weekend shows 7:30 pm, $10-$15; Improv 101 starts monthly, next Oct 6, 2026; 201 every other month",
+      "signals": [
+        "Founded 2015",
+        "Improv 101 and 201 with monthly starts",
+        "Every class ends in a performance",
+        "Graduation shows select Thursdays",
+        "Weekend shows at Vertical Diner",
+        "Improv for Social Anxiety class"
+      ],
+      "score": 56,
+      "reasons": "A real and current class ladder with performances built in and a dated show calendar, held back by having no venue of its own and a short two-level curriculum.",
+      "sources": [
+        "https://www.crowdsourcedlive.com/classes",
+        "https://www.crowdsourcedlive.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "theobt.org",
+      "name": "Laughing Stock Improv at The Off Broadway Theatre",
+      "url": "https://www.theobt.org/laughing-stock",
+      "kind": [
+        "shows"
+      ],
+      "area": "South Salt Lake",
+      "summary": "A sixteen-member improv company with over 26 years of Saturday-night shows, resident at The Off Broadway Theatre's studio on State Street, a parody-and-improv house open since 1994.",
+      "schedule": "Saturdays 9:30 pm at 3601 S State St",
+      "signals": [
+        "Over 26 years of shows",
+        "Theatre open since 1994",
+        "Saturdays 9:30 pm",
+        "Sixteen performers listed",
+        "2026 season on the site"
+      ],
+      "score": 56,
+      "reasons": "Longevity and a permanent stage are its strengths; the theatre's improv class listing still shows 2022 dates, so there is no current path from class to this stage.",
+      "sources": [
+        "https://www.theobt.org/laughing-stock",
+        "https://www.theobt.org/",
+        "https://www.theobt.org/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

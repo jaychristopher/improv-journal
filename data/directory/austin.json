@@ -1,0 +1,193 @@
+{
+  "slug": "austin",
+  "city": "Austin",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:23.645Z",
+    "searches": 0,
+    "notes": "Rent has reshaped Austin's scene: the Hideout left Congress Avenue after 26 years in 2026, ColdTowne moved to East 2nd Street, Merlin Works ended classes and shows in 2025 and the Institution closed in 2020. ColdTowne, the Hideout and Fallout still run multi-level schools and shows most nights, and ComedySportz now plays Saturdays in Round Rock.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "coldtownetheater.com",
+      "name": "ColdTowne Theater",
+      "url": "https://coldtownetheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "East Austin",
+      "summary": "Austin's alternative-comedy theater since 2006, now at 1700 East 2nd Street, with a conservatory for improv, sketch and stand-up and comedy seven nights a week, including UCB's Austin classes and Harold Night.",
+      "schedule": "Shows seven nights a week; UCB Harold Night Thursdays 7pm; free improv jam on Sundays",
+      "signals": [
+        "Founded 2006",
+        "UCB classes and Harold Night in Austin",
+        "Shows seven nights a week",
+        "Free Sunday improv jam open to all levels",
+        "Improv, sketch and stand-up conservatory",
+        "Kids and all-ages improv on weekends"
+      ],
+      "score": 92,
+      "reasons": "Twenty years running with a venue of its own, a full conservatory with UCB affiliation, nightly shows and a jam, and an October calendar already listing more than eighty shows.",
+      "sources": [
+        "https://coldtownetheater.com/",
+        "https://coldtownetheater.com/live-shows/",
+        "https://coldtownetheater.com/classes/",
+        "https://coldtownetheater.com/show/free-improv-jam-17/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "falloutcomedy.com",
+      "name": "Fallout Theater",
+      "url": "https://falloutcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown",
+      "summary": "Underground downtown comedy club opened in January 2018 in the former New Movement space at 616 Lavaca, with long-form improv, sketch and stand-up seven nights a week and Austin's School of Comedy for classes.",
+      "schedule": "Shows seven nights a week; free intro improv class Mondays 6:30pm",
+      "signals": [
+        "Opened January 2018",
+        "Shows seven nights a week",
+        "Improv, sketch, stand-up and clown classes",
+        "Free weekly intro improv class",
+        "Student showcases on the main stage",
+        "Hosts Hacksfest, a local sketch festival"
+      ],
+      "score": 83,
+      "reasons": "Eight years in a venue of its own with nightly shows and a four-track school, docked because class levels and term dates live on a ticketing platform rather than the site.",
+      "sources": [
+        "https://falloutcomedy.com/",
+        "https://falloutcomedy.com/our-classes/",
+        "https://communityimpact.com/local-news/austin/central-austin/impacts/2018/05/08/new-movement-theater-rebranded-as-fallout-theater-with-new-ownership/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "comedysportzaustin.com",
+      "name": "ComedySportz Austin",
+      "url": "https://www.comedysportzaustin.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Round Rock",
+      "summary": "The Austin franchise of the ComedySportz short-form match, performing since 1986 and since May 2026 playing Saturday nights at Premier Music Academy in Round Rock.",
+      "schedule": "Saturdays 7:30 to 9pm at Premier Music Academy, Round Rock",
+      "signals": [
+        "Performing since 1986",
+        "Weekly Saturday show",
+        "Moved to Round Rock in May 2026",
+        "Family-friendly short-form match format",
+        "Corporate training through applied improv"
+      ],
+      "score": 47,
+      "reasons": "Forty years of continuous shows, but no venue of its own after leaving Research Boulevard, no public class ladder, and a schedule that only loads dynamically.",
+      "sources": [
+        "https://www.comedysportzaustin.com/",
+        "https://www.comedysportzaustin.com/upcoming-shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "zachtheater.org",
+      "name": "ZACH Theatre adult classes",
+      "url": "https://www.zachtheater.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "South Lamar",
+      "summary": "Austin's long-established regional theatre added adult classes in 2026, including Improv 1, a games-and-scene-work beginner course at its South Lamar campus and ZACH North.",
+      "schedule": "Adult sessions start a few times a year; fall 2026 classes began September 14",
+      "signals": [
+        "Adult classes launched February 2026",
+        "Improv 1 beginner course",
+        "Two campuses, downtown and north",
+        "Audition-based youth improv troupe"
+      ],
+      "score": 36,
+      "reasons": "A permanent institution and a current schedule, but the improv offering is a single beginner level with no shows or path to performing.",
+      "sources": [
+        "https://www.zachtheater.org/zach-connect/adult-acting-classes/",
+        "https://www.broadwayworld.com/austin/article/Zach-Theater-To-Add-Adult-Acting-Classes-20251208"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "mercuryimprov.com",
+      "name": "Mercury Improv",
+      "url": "https://www.mercuryimprov.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "North Austin and South Austin",
+      "summary": "Small improv school run by teacher John Ratliff, built around Improv for Introverts, a six-week no-pressure beginner course capped at twelve students, taught at two rented rooms north and south.",
+      "schedule": "Six-week courses, maximum twelve students",
+      "signals": [
+        "Six-week beginner courses",
+        "Classes capped at twelve",
+        "Two locations, Justin Lane and Jones Road",
+        "Teacher with two decades of experience"
+      ],
+      "score": 33,
+      "reasons": "A sound beginner course from an experienced teacher, but no venue, no shows, no advanced track and no start dates on the site.",
+      "sources": [
+        "https://www.mercuryimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 5,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 5,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

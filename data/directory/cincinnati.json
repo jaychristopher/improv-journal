@@ -1,0 +1,92 @@
+{
+  "slug": "cincinnati",
+  "city": "Cincinnati",
+  "state": "Ohio",
+  "stateCode": "OH",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:45.363Z",
+    "searches": 0,
+    "notes": "Both organisations sit on the Ohio side; nothing in Covington or Newport could be verified. Go Bananas in Montgomery and the Funny Bone in Liberty Township are stand-up rooms.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "improvcincinnati.com",
+      "name": "Improv Cincinnati at Clifton Comedy Theatre",
+      "url": "https://www.improvcincinnati.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Clifton",
+      "summary": "Award-winning theatre company with its own underground black box on Ludlow Avenue, running 101 Fundamentals through advanced and elective seven-week classes, house teams, open jams, showcases and weekly shows.",
+      "schedule": "Intro workshops Sun Oct 4, 4-6 pm and Wed Oct 14, 7-9 pm, 2026; seven-week classes",
+      "signals": [
+        "Own black box at 404 Ludlow Ave",
+        "101 Fundamentals to advanced and electives",
+        "Seven-week classes",
+        "House teams and student showcases",
+        "Open jams for all levels",
+        "Improv for business and private events"
+      ],
+      "score": 74,
+      "reasons": "A permanent theater with a levelled path to house teams, jams and weekly shows; the founding year is unstated and the show calendar renders only in the browser.",
+      "sources": [
+        "https://www.improvcincinnati.com/classlist",
+        "https://improvcincinnati.com/jams-showcases",
+        "https://www.improvcincinnati.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "otrimprov.com",
+      "name": "OTRimprov",
+      "url": "https://www.otrimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Over-the-Rhine",
+      "summary": "Long-form troupe founded in 2010 that performs a twice-monthly Show and Jam in Know Theatre's Underground, teaches a crash course and Levels 2 through 5, and produces the IF Cincy improv festival.",
+      "schedule": "Show and Jam at Know Theatre, Tuesdays Oct 6 and 20, 2026; classes $80-$150 when running",
+      "signals": [
+        "Founded 2010",
+        "Performs at Know Theatre's Underground",
+        "Show and Jam twice monthly",
+        "Crash course plus Levels 2-5",
+        "Produces the IF Cincy festival"
+      ],
+      "score": 56,
+      "reasons": "Sixteen years and a festival give it standing, but it rents a stage rather than owning one, plays twice a month, and every listed class had ended at the time of reading.",
+      "sources": [
+        "https://www.otrimprov.com/about",
+        "https://www.otrimprov.com/tickets",
+        "https://www.otrimprov.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

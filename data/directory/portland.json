@@ -1,0 +1,185 @@
+{
+  "slug": "portland",
+  "city": "Portland",
+  "state": "Oregon",
+  "stateCode": "OR",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:07.631Z",
+    "searches": 0,
+    "notes": "Portland is unusually rich: two nonprofit theatres (Curious, Kickstand), the oldest continuously running ComedySportz franchise, Deep End's Sound Improv school and Funhouse Lounge. Beaverton has no improv organisation of its own; The Siren Theater on N Mississippi lists only stand-up and parody for late 2025 and no classes since 2023, and Portland Center Stage's beginner improv page still shows 20",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "curiouscomedy.org",
+      "name": "Curious Comedy Theater",
+      "url": "https://www.curiouscomedy.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Northeast Portland (NE MLK Jr Blvd)",
+      "summary": "Nonprofit comedy theatre founded 2008 with the Showdown improv cage match every Friday and Saturday, ensembles like The Gauntlet and Rogue, and improv, musical improv, sketch, stand-up and youth classes with a free intro and a BIPOC track.",
+      "schedule": "Showdown every Friday and Saturday 7:30pm; Level 1, free intro and BIPOC Level 1 classes",
+      "signals": [
+        "Founded 2008, nonprofit",
+        "5225 NE MLK Jr Blvd, two stages",
+        "Showdown improv cage match Fridays and Saturdays",
+        "Free intro class and BIPOC Level 1",
+        "Around 25 instructors and teaching artists",
+        "Ensembles such as The Gauntlet, Rogue and Dropped Notes"
+      ],
+      "score": 82,
+      "reasons": "Eighteen years, a building with two stages and weekly flagship shows; class pages list tracks but the fetchable site did not expose dated sessions.",
+      "sources": [
+        "https://www.curiouscomedy.org/",
+        "https://www.curiouscomedy.org/about",
+        "https://www.curiouscomedy.org/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "portlandcomedy.com",
+      "name": "Portland Comedy Theater (CSz Portland)",
+      "url": "https://portlandcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Northwest Portland",
+      "summary": "Home of ComedySportz Portland, playing every weekend since 1993 at 535 NW 16th Avenue, alongside late-night and themed improv, stand-up and sketch, with Improv 101, youth classes and summer camps.",
+      "schedule": "ComedySportz every weekend; late-night shows such as Naughty Bits and Spill the Tea; Improv 101 and youth classes",
+      "signals": [
+        "ComedySportz here since April 1993, now in its 32nd season",
+        "535 NW 16th Avenue",
+        "Has not missed a weekend since May 1993",
+        "Improv 101, stand-up, youth classes and camps",
+        "Separate adult, teen and family classes"
+      ],
+      "score": 77,
+      "reasons": "Thirty-three unbroken years of weekend shows in its own theatre; the class side is broad but its levels and dates are not visible on the site.",
+      "sources": [
+        "https://portlandcomedy.com/",
+        "http://www.portlandcomedy.com/about-us",
+        "https://www.cszportland.com/",
+        "https://www.eventbrite.com/d/or--portland/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "kickstandcomedy.org",
+      "name": "Kickstand Comedy",
+      "url": "https://www.kickstandcomedy.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Southeast Portland (Hawthorne)",
+      "summary": "Nonprofit long-form improv theatre in the former Brody Theater building on SE Hawthorne, with a five-level curriculum plus Advanced Study, class shows from Level 3, improv jams open to anyone and a BIPOC pay-what-you-will track.",
+      "schedule": "Six-week levels, 2.5 hours a week; next session starts October 20; improv jams on the calendar",
+      "signals": [
+        "Took over the former Brody Theater space after an April 2019 Kickstarter",
+        "1006 SE Hawthorne Blvd",
+        "Five levels plus Advanced Study, six weeks each",
+        "Class shows from Level 3; the Harold taught at Level 5",
+        "BIPOC program free or pay-what-you-will through Level 3",
+        "Named one of eight great improv theaters by Paste"
+      ],
+      "score": 76,
+      "reasons": "The city's most complete long-form curriculum in a room of its own with jams, docked for a 2019 start and show listings the site did not render.",
+      "sources": [
+        "https://www.kickstandcomedy.org/",
+        "https://www.kickstandcomedy.org/classes",
+        "https://www.kickstandcomedy.org/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "deependtheater.com",
+      "name": "Deep End Theater",
+      "url": "https://www.deependtheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Southeast Portland",
+      "summary": "Improv theatre on SE Market St led by Domeka Parker, teaching Sound Improv in three levelled six-week classes, with the Skinny Dip open-stage jam on first and third Mondays and improvised plays running through autumn 2026.",
+      "schedule": "Skinny Dip 1st and 3rd Mondays 7pm ($5, free to play); Thirsty Oct 16-31; classes Nov 3-Dec 19, 2026, $220",
+      "signals": [
+        "1129 SE Market St",
+        "Intro, Foundations and Ensemble six-week classes at $220",
+        "Skinny Dip improv jam and variety show twice monthly",
+        "Free workshop October 25, 2026",
+        "Teen and youth programmes",
+        "Part of the Four Corners Collective with Canadian companies"
+      ],
+      "score": 65,
+      "reasons": "A smaller house with the most legible current calendar in Portland, dated classes and a twice-monthly jam, held back by scale and a short history.",
+      "sources": [
+        "https://www.deependtheater.com/",
+        "https://www.deependtheater.com/shows",
+        "https://www.deependtheater.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "funhouselounge.com",
+      "name": "Funhouse Lounge",
+      "url": "https://www.funhouselounge.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Southeast Portland (SE 11th Ave)",
+      "summary": "Fringe theatre and bar that mixes improv into a packed comedy calendar, with an Improv 101 weekend, Roast Battle Portland, a Friday Midnight Mic and parody musicals.",
+      "schedule": "Improv 101 Oct 17-18, 2026; Midnight Mic every Friday; roast battles most Thursdays",
+      "signals": [
+        "2432 SE 11th Ave",
+        "Improv 101 weekend workshop",
+        "Weekly Midnight Mic",
+        "Calendar dated September to November 2026"
+      ],
+      "score": 43,
+      "reasons": "A long-standing venue with a current calendar, but improv is one strand among many and the teaching is a single weekend course.",
+      "sources": [
+        "https://www.funhouselounge.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

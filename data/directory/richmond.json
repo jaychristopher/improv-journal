@@ -1,0 +1,125 @@
+{
+  "slug": "richmond",
+  "city": "Richmond",
+  "state": "Virginia",
+  "stateCode": "VA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:49.451Z",
+    "searches": 0,
+    "notes": "Coalition is the long-form center, CSz the short-form one. HATTheatre's adult class says in its own words that it is not an improv class; the Funny Bone and Sandman are stand-up rooms.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "rvacomedy.com",
+      "name": "Coalition Theater",
+      "url": "https://www.rvacomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Arts District, downtown",
+      "summary": "Richmond's long-form improv home, founded as the Richmond Comedy Coalition in 2009 and in its own Broad Street theater since 2013, with shows Thursday to Saturday, a community jam night and improv, sketch and stand-up classes.",
+      "schedule": "Shows Thu-Sat, 7:30 and 9 pm, free to $20; Improv 101 six weeks $190, holiday session starts late Oct 2026",
+      "signals": [
+        "Founded 2009",
+        "Own theater at 8 W Broad St since 2013",
+        "501(c)(3) Broad Street Comedy",
+        "Improv 101, 102, Musical 201, sketch, stand-up",
+        "Jambalaya community night and mixer",
+        "2nd Best Comedy Fest Oct 26-28, 2026"
+      ],
+      "score": 85,
+      "reasons": "Seventeen years, a permanent downtown theater, three show nights, an open community night, scholarships and a dated class session make it the complete package; the ladder above 102 is thinner than the big-city schools.",
+      "sources": [
+        "https://rvacomedy.com/about/history/",
+        "https://rvacomedy.com/class-registration-is-open-holiday-bonus-session-2026/",
+        "https://www.rvacomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "cszrichmond.com",
+      "name": "CSz Richmond Theater",
+      "url": "https://www.cszrichmond.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "West End",
+      "summary": "Home of ComedySportz in Richmond since 1996: a West Broad Street theater run by the nonprofit Yes Balloon, with short-form matches, Bardalicious Shakespeare improv, leagues and year-round classes for all ages.",
+      "schedule": "ComedySportz matches and Improv Arena shows; classes year-round, 2026 summer camps",
+      "signals": [
+        "Since 1996",
+        "Own theater at 8906 W Broad St, Ste H",
+        "Nonprofit Yes Balloon",
+        "Classes for all ages, all year",
+        "Improv leagues",
+        "2026 summer camps listed"
+      ],
+      "score": 64,
+      "reasons": "Thirty years and a theater of its own in a national format, but match nights and class levels are not readable on the site, so the show and class points rest on its own general claims.",
+      "sources": [
+        "https://www.cszrichmond.com/",
+        "https://www.cszrichmond.com/classes",
+        "https://www.cszrichmond.com/comedysportz"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "bridge9theater.com",
+      "name": "Bridge 9 Theater",
+      "url": "https://www.bridge9theater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Richmond (no fixed venue)",
+      "summary": "A 501(c)(3) improv company with no stage of its own that plays Crescent Collective and the Firehouse and runs a community jam, a six-week Intro to Improv, pay-what-you-will drop-ins and an Autism Improv Team.",
+      "schedule": "Intro to Improv Sundays 6-7:30 pm from Sept 27; Closing Night Oct 7, 2026 at the Firehouse",
+      "signals": [
+        "501(c)(3)",
+        "Founder performing since 2004",
+        "Community improv jam in Church Hill",
+        "Six-week Intro to Improv",
+        "Autism Improv Team",
+        "Sensory-friendly shows"
+      ],
+      "score": 42,
+      "reasons": "An inclusive program with a jam, a beginner class and dated 2026 shows, scored low for having no venue of its own, a footer still marked 2024 and no levels beyond intro.",
+      "sources": [
+        "https://www.bridge9theater.com/shows",
+        "https://www.bridge9theater.com/classes",
+        "https://www.bridge9theater.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

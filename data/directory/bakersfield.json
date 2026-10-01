@@ -1,0 +1,26 @@
+{
+  "slug": "bakersfield",
+  "city": "Bakersfield",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:23.770Z",
+    "searches": 0,
+    "notes": "Bakersfield has had improv since 1989 (a ComedySportz franchise, the Center for Improv Advancement, The Revengers) but in 2026 the scene is a monthly drop-in and Brian's Beard, a troupe that announces first-Saturday shows on Instagram only. The Well Comedy Club is stand-up and the Gaslight Melodrama stages scripted melodrama, so neither is listed.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

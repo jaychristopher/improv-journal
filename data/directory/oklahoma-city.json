@@ -1,0 +1,78 @@
+{
+  "slug": "oklahoma-city",
+  "city": "Oklahoma City",
+  "state": "Oklahoma",
+  "stateCode": "OK",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:49.830Z",
+    "searches": 0,
+    "notes": "Oklahoma City's improv scene runs through one organisation: OKC Improv owns the theatre, the class track and the house teams, and troupes such as Anomaly and That's What She Said grow out of it. Norman has only youth offerings (Center Stage's summer improv camp, The Studio of the Sooner Theatre's children's classes) and the University of Oklahoma's student troupe, none with an adult programme of i",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "okcimprov.com",
+      "name": "OKC Improv",
+      "url": "https://www.okcimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Plaza District",
+      "summary": "Nonprofit improv theatre and school in the Plaza District, established 2009, with shows every Friday and Saturday, a free Tuesday open mic, and a five-level class track plus kids and teen classes.",
+      "schedule": "Shows Fri & Sat 7:30pm and 9:30pm; Sat 6pm family show 2nd/4th Sat; Tue 8pm free No Mic Open Mic; 8-week classes",
+      "signals": [
+        "Established 2009",
+        "Nonprofit",
+        "Levels 1-5 plus electives, 8-week terms",
+        "Shows every Friday and Saturday",
+        "House teams such as The Swamp and That's What She Said",
+        "October 2026 calendar online"
+      ],
+      "score": 88,
+      "reasons": "Seventeen years in a venue of its own, a full level track that feeds house teams, weekly shows and a jam-style open mic, with a calendar current to October 2026; it loses a little on standing because it is the only game in town.",
+      "sources": [
+        "https://www.okcimprov.com/",
+        "https://www.okcimprov.com/shows",
+        "https://www.okcimprov.com/classes",
+        "https://www.okcimprov.com/about",
+        "https://luxiere.co/editorials/community/okc-improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 1,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 1,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 1,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

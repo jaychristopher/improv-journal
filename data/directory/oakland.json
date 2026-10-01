@@ -1,0 +1,259 @@
+{
+  "slug": "oakland",
+  "city": "Oakland",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:49.725Z",
+    "searches": 0,
+    "notes": "Oakland improv means All Out Comedy in Uptown and Pan Theater downtown, with Berkeley's Provocation Theatre, Berkeley Rep's school and The Marsh a few BART stops away. San Francisco's big schools (BATS, Endgames, Leela) draw East Bay students but are not listed here; Stone Soup Improv's Berkeley site no longer resolves.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "alloutcomedytheater.com",
+      "name": "All Out Comedy Theater",
+      "url": "https://www.alloutcomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Uptown Oakland",
+      "summary": "Oakland's improv theater and training center on Telegraph Avenue, with a five-level improv track up to Chicago long form, four levels of musical improv, teen, sketch, clowning and stand-up classes, weekly shows and two recurring jams.",
+      "schedule": "Jam 2nd and 4th Wed 7pm $5; Musical Jam 1st and 3rd Sun 4:30pm; Knockoff Broadway 2nd and 4th Sat; Level 3 starts Sep 15",
+      "signals": [
+        "Own theater at 2550 Telegraph Ave",
+        "Levels 1-5 plus four musical improv levels",
+        "Two recurring jams",
+        "Improv Sundae student show 2nd Sundays",
+        "Students get into shows free",
+        "Class dates published through 2026"
+      ],
+      "score": 80,
+      "reasons": "A permanent Uptown theater, the deepest class ladder in the East Bay, weekly shows and jams on a dated calendar; a founding year is not stated, which keeps the longevity score modest.",
+      "sources": [
+        "https://www.alloutcomedytheater.com/",
+        "https://www.alloutcomedytheater.com/improvclasses",
+        "https://www.alloutcomedytheater.com/the-open-improv-jam"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "pantheater.com",
+      "name": "Pan Theater",
+      "url": "https://www.pantheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Oakland (Frank Ogawa Plaza)",
+      "summary": "An improv theater and school in Oakland's theater district since 2002, next to 12th Street BART, teaching small-group classes with a free trial and staging shows such as Shaun Landry's September 2026 run.",
+      "schedule": "Shows Sep 18-19 2026 8pm $20; Improv 101 and Improv from the Heart classes with free trial",
+      "signals": [
+        "In downtown Oakland since 2002",
+        "Steps from 12th Street BART",
+        "Small classes with personal feedback",
+        "Free trial class",
+        "Students from their 20s to 60s"
+      ],
+      "score": 62,
+      "reasons": "Twenty-four years in the same downtown space with an adult class programme, but the site publishes neither class dates nor a regular show night.",
+      "sources": [
+        "https://www.pantheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "berkeleyrep.org",
+      "name": "Berkeley Rep School of Theatre (Adult Improv)",
+      "url": "https://www.berkeleyrep.org/classes-df19",
+      "kind": [
+        "classes"
+      ],
+      "area": "Downtown Berkeley (Addison St)",
+      "summary": "Berkeley Repertory Theatre's school runs a three-tier adult improv sequence each term, from Beginning Improv through Intermediate to an Advanced Improv Performance Lab, plus a Dungeons & Dragons improv class.",
+      "schedule": "Beginning Thu from Sep 24 2026; Intermediate Mon from Sep 28 2026 ($380); Advanced Lab Tue from Sep 29 2026",
+      "signals": [
+        "Tony-winning regional theatre",
+        "Three improv levels each term",
+        "Four terms a year",
+        "Studio at 2071 Addison St",
+        "Dates published with the year"
+      ],
+      "score": 59,
+      "reasons": "An institution with dated, levelled improv classes four times a year, but it is a drama school rather than an improv theater, with no shows or jams of its own.",
+      "sources": [
+        "https://www.berkeleyrep.org/classes-df19"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "provocationtheatre.com",
+      "name": "Provocation Theatre",
+      "url": "https://www.provocationtheatre.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Berkeley",
+      "summary": "A boutique improv theatre on Bancroft Way founded in 2023, with core classes, four house teams including BIPOC, queer and 49-plus ensembles, and a full October 2026 calendar of shows.",
+      "schedule": "Ten shows in Oct 2026 (Fridays and Saturdays 8pm, some Sundays); classes enrolling for Oct-Nov",
+      "signals": [
+        "Founded 2023",
+        "Own space at 2177 Bancroft Way",
+        "House teams Mothership, Globalls, All Queer No Fear, The Niners",
+        "Shows most weekends",
+        "Corporate workshops"
+      ],
+      "score": 59,
+      "reasons": "A dedicated room, house teams and a dated show calendar earn it well; it is three years old and its class levels are not spelled out on the site.",
+      "sources": [
+        "https://www.provocationtheatre.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "themarsh.org",
+      "name": "The Marsh Berkeley: Improv On Demand",
+      "url": "https://themarsh.org/cabaret/improv-on-demand/",
+      "kind": [
+        "shows",
+        "jams"
+      ],
+      "area": "Downtown Berkeley (Allston Way)",
+      "summary": "A first-Monday improv night at The Marsh Berkeley cabaret: an hour of unscripted show followed by a guided improv jam open to anyone in the room, on a sliding scale.",
+      "schedule": "First Mondays 7:30pm, show then jam 8:45-9:30pm; sliding scale $10-25; next Oct 5 2026",
+      "signals": [
+        "Monthly show plus open jam",
+        "Permanent page on The Marsh's site",
+        "Sliding-scale admission",
+        "Full bar cabaret venue"
+      ],
+      "score": 36,
+      "reasons": "A reliable monthly fixture with its own page and a jam anyone can join, but it is one night a month with no classes.",
+      "sources": [
+        "https://themarsh.org/cabaret/improv-on-demand/",
+        "https://themarsh.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "joyacory.com",
+      "name": "Joya Cory: Full Spectrum Improvisation",
+      "url": "https://www.joyacory.com/classes-workshops",
+      "kind": [
+        "classes"
+      ],
+      "area": "West Berkeley (Wildcat Studio)",
+      "summary": "Physical-theatre improvisation classes from a long-time Bay Area teacher: a twice-monthly Saturday intermediate and advanced class at Wildcat Studio, a one-day fundamentals workshop and a weekly online class.",
+      "schedule": "Saturdays 1-4:30pm Sep 19-Dec 12 2026 (two a month); Fundamentals day Oct 25 2026 $80; online Wednesdays",
+      "signals": [
+        "Dated 2026 class calendar",
+        "Try-it-out class $20",
+        "Sliding-scale monthly fee",
+        "Berkeley and online"
+      ],
+      "score": 35,
+      "reasons": "A current, dated programme from an established teacher, but a single-teacher studio with no performance side or levelled ladder.",
+      "sources": [
+        "https://www.joyacory.com/classes-workshops"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    },
+    {
+      "id": "oaktownimprov.com",
+      "name": "Oaktown Improv",
+      "url": "https://oaktownimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Montclair, Oakland (and online)",
+      "summary": "A community improv group that runs weekly online jams, a monthly Zoom show and a monthly in-person Sunday jam at Montclair Presbyterian, with sliding-scale drop-in classes for people who have done an intro course.",
+      "schedule": "In-person jam Sun Oct 18 2026 1:30pm; online show 2nd Saturdays 8pm $5 (Oct 10 2026); online games jam Fri Oct 2 2026",
+      "signals": [
+        "Monthly in-person jam",
+        "Weekly online jams",
+        "Monthly online show",
+        "$20 sliding-scale drop-ins"
+      ],
+      "score": 32,
+      "reasons": "Current dates and a welcoming jam, but most of it happens on Zoom and there is no venue, levelled classes or live house show.",
+      "sources": [
+        "https://oaktownimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 7
+    },
+    {
+      "id": "improv-central.com",
+      "name": "Improv Central",
+      "url": "https://www.improv-central.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "West End, Alameda",
+      "summary": "A storefront studio on Central Avenue teaching improv for everyday confidence and connection rather than the stage, through drop-in and multi-week classes sold by the class or by monthly membership.",
+      "schedule": "Drop-in and multi-week classes; $49 two-week unlimited trial, $139 a month unlimited",
+      "signals": [
+        "Own studio at 500 Central Ave",
+        "Non-performance improv",
+        "Membership model",
+        "Team training and coaching"
+      ],
+      "score": 27,
+      "reasons": "A real room and an active site, but no published dates, no levels leading anywhere and no shows.",
+      "sources": [
+        "https://www.improv-central.com/",
+        "https://www.improv-central.com/about-us"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 8,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

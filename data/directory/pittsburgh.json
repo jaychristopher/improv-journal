@@ -1,0 +1,91 @@
+{
+  "slug": "pittsburgh",
+  "city": "Pittsburgh",
+  "state": "Pennsylvania",
+  "stateCode": "PA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:31:47.725Z",
+    "searches": 0,
+    "notes": "Two training theaters carry the city. The Pittsburgh Improv in Homestead is a stand-up franchise despite the name, the Thursday improv jam at Brillobox exists only on Facebook, and unplannedcomedy.com, once Unplanned Comedy Warehouse, now serves a gambling page.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "arcadecomedytheater.com",
+      "name": "Arcade Comedy Theater",
+      "url": "https://www.arcadecomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown, Cultural District",
+      "summary": "Downtown Pittsburgh's nonprofit comedy theater since 2013: improv, stand-up and sketch every Friday and Saturday, Sunday jams, and an academy running Improv 101 through 401 in eight-week sessions that each end in a show.",
+      "schedule": "Shows Fri-Sat, jams Sundays; eight-week classes $225-$300, Session 6 starts Oct 19-29, 2026",
+      "signals": [
+        "Founded 2013",
+        "Own theater at 943 Liberty Ave",
+        "501(c)(3) nonprofit",
+        "Improv 101-401 plus sketch and stand-up",
+        "Every class ends with a show",
+        "House team program"
+      ],
+      "score": 84,
+      "reasons": "Thirteen years in its own downtown theater, a four-level academy with dated sessions and class shows, house teams, weekend shows and Sunday jams, all on a site dated to the week.",
+      "sources": [
+        "https://www.arcadecomedytheater.com/",
+        "https://www.arcadecomedytheater.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "steelcityimprov.com",
+      "name": "Steel City Improv Theater",
+      "url": "https://www.steelcityimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Shadyside",
+      "summary": "Shadyside's improv theater since 2010, with its own stage at 5950 Ellsworth Ave, a levelled adult improv program taught by a faculty of seventeen, try-it-out workshops for newcomers and a shows-and-events calendar.",
+      "schedule": "All classes registering for fall 2026; try-it-out workshops for adults, kids and teens",
+      "signals": [
+        "Founded 2010",
+        "Own theater at 5950 Ellsworth Ave",
+        "Improv Level Program for adults",
+        "Seventeen teachers listed",
+        "Try-it-out workshops",
+        "Kids and teens classes coming soon"
+      ],
+      "score": 70,
+      "reasons": "Sixteen years in its own Shadyside theater and a levelled program with a large faculty earn a strong base, but the class and show pages render only in the browser, so levels, prices and show nights could not be read.",
+      "sources": [
+        "https://www.steelcityimprov.com/",
+        "https://steelcityimprov.com/faq/",
+        "https://steelcityimprov.com/page-sitemap.xml"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

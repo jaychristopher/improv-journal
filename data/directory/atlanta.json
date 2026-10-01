@@ -1,0 +1,274 @@
+{
+  "slug": "atlanta",
+  "city": "Atlanta",
+  "state": "Georgia",
+  "stateCode": "GA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:23.315Z",
+    "searches": 0,
+    "notes": "Dad's Garage and Whole World, both over 30 years old, anchor the city; Onward, Dynamic El Dorado and The Alley Stage are the newer rooms, and the suburbs are served by schools in Roswell and Dunwoody. Decatur has no improv venue of its own (Whole World's first show was at Eddie's Attic in 1994). The jam scene lives on Instagram: The Sandbox ATL studio in East Atlanta Village hosts a Sunday musical",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "dadsgarage.com",
+      "name": "Dad's Garage Theatre",
+      "url": "https://www.dadsgarage.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Old Fourth Ward (569 Ezzard St SE)",
+      "summary": "Atlanta's flagship improv theatre since 1995, a 501(c)(3) with its own Old Fourth Ward theatre and the React black box, producing improvised and scripted comedy for over 30,000 people a year and training all ages through DGU.",
+      "schedule": "Fri & Sat shows at 8pm and 10pm; free community improv jam most Tuesdays, signups 7pm, jam 8pm",
+      "signals": [
+        "Founded June 1995; in its own Ezzard Street theatre since 2015",
+        "Over 30,000 attendees a year",
+        "DGU six-week classes in improv, stand-up and sketch, plus 55+ classes",
+        "Audition-only Conservatory and diversity scholarships",
+        "Free Tuesday community jam open to all",
+        "October 2026 runs: Scandal! The Bare, Felt Street, The Bottle Tree"
+      ],
+      "score": 93,
+      "reasons": "Three decades, its own theatre plus a second black box, hundreds of shows a year, a free weekly jam and a school with a conservatory; class dates and prices sit on an external registration site.",
+      "sources": [
+        "https://www.dadsgarage.com/",
+        "https://www.dadsgarage.com/about",
+        "https://www.dadsgarage.com/education",
+        "https://www.dadsgarage.com/community",
+        "https://improvarchive.org/locales/north-america/united-states/georgia/atlanta"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "wholeworldtheatre.com",
+      "name": "Whole World Improv Theatre",
+      "url": "https://www.wholeworldtheatre.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Midtown (1216 Spring St NW)",
+      "summary": "Atlanta's longest-running improv theatre, a nonprofit founded in 1994 with its own Midtown stage, weekly short-form shows and a ten-week class ladder from Beginner to Advanced plus master classes and youth programmes.",
+      "schedule": "Shows Thu-Sat around 8pm, incl. Thursday Happy Hour and The Classic Improv Show; Saturdays 10pm in October",
+      "signals": [
+        "Founded September 1994; Spring Street theatre since 1995",
+        "Beginner, Intermediate and Advanced programs: ten weeks, $295, each ending in a show",
+        "Fall 2026 Beginner started Sep 14; one-day workshop Oct 17",
+        "Master classes in character work and musical improv",
+        "16-week youth and teen program; voted best theatre for kids by Nickelodeon Parents' Pick",
+        "Neurodiverse X-Group for ages 11-17"
+      ],
+      "score": 92,
+      "reasons": "Thirty-two years in its own Midtown theatre, the most complete dated class ladder in the city and weekly shows; it is a short-form house with less national profile than Dad's.",
+      "sources": [
+        "https://www.wholeworldtheatre.com/",
+        "https://www.wholeworldtheatre.com/classes",
+        "https://improvarchive.org/locales/north-america/united-states/georgia/atlanta"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "onwardtheatre.org",
+      "name": "Onward Theatre",
+      "url": "https://onwardtheatre.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Adair Park (711 Catherine St SW)",
+      "summary": "A 501(c)(3) comedy theatre in Adair Park built around underrepresented voices, with improvised house formats on Friday and Saturday nights and classes from Improv Basics and Comedy 101 to musical improv and stand-up.",
+      "schedule": "Shows Fri & Sat 8pm (The Coven, Eulogy, Monster of the Week, Direct Depozit); Dinner Party Oct 3, 2026",
+      "signals": [
+        "Nonprofit focused on diverse comedy voices",
+        "Improv Basics, Comedy 101, Musical Improv, Stand-Up Masterclass 101 and 201",
+        "House improv formats every Friday and Saturday",
+        "Monthly all-women stand-up showcase, Ladies Night",
+        "Events listed Sep 25 - Oct 3, 2026"
+      ],
+      "score": 58,
+      "reasons": "A real venue with weekend improv formats and a growing class list, but it is new and the class pages carry no dates or prices.",
+      "sources": [
+        "https://onwardtheatre.org/",
+        "https://onwardtheatre.org/eventschedule"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "dynamiceldorado.com",
+      "name": "Dynamic El Dorado",
+      "url": "https://www.dynamiceldorado.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Old Fourth Ward (572 Edgewood Ave NE)",
+      "summary": "Don Miguel Figueroa's comedy incubator in the Old Fourth Ward, running live improv, stand-up and sketch every week with weekly open mics and improv jams, plus classes in improv, clown, stand-up and sketch.",
+      "schedule": "Weekend shows, weekly open mics and improv jams incl. a Late Night Open Improv Jam; show listed Sep 25, 2026",
+      "signals": [
+        "Founded 2020 in the Old Fourth Ward",
+        "Live comedy every week, per the site",
+        "Weekly open mics and improv jams with online signup",
+        "Classes in improv, clown, stand-up and sketch",
+        "Hosted a bilingual improv jam with Teatro Ilegal",
+        "Founder Don Miguel Figueroa"
+      ],
+      "score": 52,
+      "reasons": "A six-year-old venue with shows and jams most nights and a broad class menu, but its Square-built site shows listings only through its store, so dates and levels are hard to read.",
+      "sources": [
+        "https://www.dynamiceldorado.com/",
+        "https://www.dynamiceldorado.com/about",
+        "https://www.dynamiceldorado.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "alleystage.org",
+      "name": "The Alley Stage",
+      "url": "https://www.alleystage.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Marietta Square (11 Anderson St)",
+      "summary": "Cobb County's comedy venue on Marietta Square, with stand-up on weekends, an improv night every Wednesday including the audience-game show Y'all's Line Is It Anyway? and DrunkProv, and six-week Level 1 and 2 improv classes.",
+      "schedule": "Improv @ The Alley Wednesdays 8pm (Y'all's Line 1st Wed, DrunkProv 2nd Wed); stand-up Fri & Sat 8pm; open mic Tue 7pm",
+      "signals": [
+        "Level 1 improv: Tuesdays Oct 27 - Dec 1, 2026 with Andrew Chance",
+        "Level 2 improv: Mondays Oct 26 - Nov 30, 2026 with Rachel LaForce",
+        "Both levels end in a student showcase",
+        "Weekly Wednesday improv night",
+        "Payment plans for classes",
+        "Shows scheduled through Dec 26, 2026"
+      ],
+      "score": 51,
+      "reasons": "A permanent room with weekly improv and dated two-level classes that end in showcases, but it is young, stand-up-first and offers no path beyond Level 2.",
+      "sources": [
+        "https://www.alleystage.org/",
+        "https://www.alleystage.org/pages/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "atlantaworkshopplayers.com",
+      "name": "Atlanta Workshop Players",
+      "url": "https://www.atlantaworkshopplayers.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Roswell (Studio 13, 1580 Holcomb Bridge Rd)",
+      "summary": "A nonprofit performing-arts school founded in 1981, teaching weekly adult classes in improv, acting and on-camera work at its Studio 13 black box in Roswell, where its Improv Maniacs troupe stages ticketed improv shows.",
+      "schedule": "Improv Maniacs shows Sep 26 and Nov 21, 2026 at Studio 13, 7:30pm",
+      "signals": [
+        "Founded 1981, 501(c)(3)",
+        "Adult weekly classes in theatre, improv, on-camera and musical theatre",
+        "Improv Maniacs house troupe",
+        "Own black box, Studio 13, in Roswell",
+        "Classes for kids, teens and adults, 2026-27 season"
+      ],
+      "score": 50,
+      "reasons": "Forty-five years and its own studio, but improv is one strand of an acting school and shows are occasional rather than weekly.",
+      "sources": [
+        "https://www.atlantaworkshopplayers.com/",
+        "https://www.atlantaworkshopplayers.com/training"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    },
+    {
+      "id": "alliancetheatre.org",
+      "name": "Alliance Theatre",
+      "url": "https://www.alliancetheatre.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Midtown (Woodruff Arts Center)",
+      "summary": "Atlanta's major regional theatre offers improv inside its education programme: free two-hour improv workshops, an adult Improv I class, and youth improv camps in Decatur and Marietta.",
+      "schedule": "Free improv workshops Tue Oct 6 (sold out) and Dec 15, 2026, 6:30-8:30pm",
+      "signals": [
+        "Free improv workshops with a 20% class discount",
+        "Adult Improv I single-session class",
+        "Youth improv camps for rising grades 5-6 in Decatur and Marietta",
+        "Based at the Woodruff Arts Center, 1280 Peachtree St NE"
+      ],
+      "score": 44,
+      "reasons": "Unmatched standing and a free entry point, but improv is a sliver of a large acting programme with no ladder and no improv shows.",
+      "sources": [
+        "https://www.alliancetheatre.org/classes/adults/",
+        "https://www.alliancetheatre.org/class/free-improv-workshop/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 7
+    },
+    {
+      "id": "stagedoortheatrega.org",
+      "name": "Stage Door Theatre",
+      "url": "https://stagedoortheatrega.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Dunwoody (Dunwoody Cultural Arts Center)",
+      "summary": "Dunwoody's community theatre runs Sunday adult improv classes at the Dunwoody Cultural Arts Center, taught by Dad's Garage performer Avery Sharpe-Steele, from a beginner Level 1.5 to an advanced Level 4.",
+      "schedule": "Sundays Sep 13 - Nov 8, 2026: Level 1.5 at 4pm, Level 4 at 7pm; $275",
+      "signals": [
+        "Two adult levels, 1.5 and 4",
+        "Eight Sundays, $275",
+        "Instructor performs with Dad's Garage",
+        "Spring term ran Mar 30 - Jun 1",
+        "Held at 5339 Chamblee Dunwoody Rd"
+      ],
+      "score": 42,
+      "reasons": "Dated, affordable adult classes with a credentialed teacher in a stable civic venue, but no improv shows and a two-level programme.",
+      "sources": [
+        "https://stagedoortheatrega.org/adult-improv-classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 8,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

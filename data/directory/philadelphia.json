@@ -1,0 +1,115 @@
+{
+  "slug": "philadelphia",
+  "city": "Philadelphia",
+  "state": "Pennsylvania",
+  "stateCode": "PA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:04.689Z",
+    "searches": 0,
+    "notes": "Philadelphia's scene has consolidated around PHIT for long form and CSz for short form, with The N Crowd as the durable indie troupe; Good Good Comedy Theatre's site refused automated reads, so its status is unconfirmed here.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "phillyimprovtheater.com",
+      "name": "Philly Improv Theater (PHIT)",
+      "url": "https://phillyimprovtheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Old City (Hamilton Family Arts Center)",
+      "summary": "Philadelphia's long-form theater and school since 2005, now at the Hamilton Family Arts Center, 62 N 2nd Street, with Improv 101-401, an Essentials clinic, anxiety-friendly improv, house ensembles, student showcases and a monthly jam night.",
+      "schedule": "Fall 2026 classes from October 5; PHIT Community Night October 17; Fall PHEST November 20-21",
+      "signals": [
+        "Founded 2005",
+        "Improv 101, 301 and 401 plus Essentials",
+        "Ensemble applications October 1-November 6, 2026",
+        "Multiple Best of Philly awards",
+        "Community Night show plus open jam",
+        "Financial assistance program"
+      ],
+      "score": 84,
+      "reasons": "Twenty years, a resident home, a leveled curriculum with October 2026 dates, ensembles and a jam; the venue is shared with an arts center rather than owned.",
+      "sources": [
+        "https://phillyimprovtheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "comedysportzphilly.com",
+      "name": "ComedySportz Philadelphia (CSz Philly)",
+      "url": "https://www.comedysportzphilly.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Rittenhouse, Center City",
+      "summary": "Philadelphia's longest-running comedy show, playing every Friday to Sunday at The Adrienne Theater, 2030 Sansom Street, alongside formats like the Improv Double Feature, with the Philadelphia School of Improv teaching all levels.",
+      "schedule": "Shows every Friday through Sunday; blog current to August 2026",
+      "signals": [
+        "More than 25 years",
+        "Shows three nights every weekend",
+        "Philadelphia School of Improv, all levels",
+        "Resident at The Adrienne Theater",
+        "Part of the CSz Worldwide network"
+      ],
+      "score": 74,
+      "reasons": "A quarter century of weekly shows in a Center City theater and a school, though class levels and dates are not spelled out on the pages read.",
+      "sources": [
+        "https://www.comedysportzphilly.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "phillyncrowd.com",
+      "name": "The N Crowd",
+      "url": "https://www.phillyncrowd.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "East Passyunk, South Philadelphia",
+      "summary": "A short-form troupe founded in 2005 that has played Friday nights for two decades, currently at the Sawubona Creativity Project on East Passyunk Avenue, with monthly shows in Ambler and a move to Allens Lane in November.",
+      "schedule": "Fridays at Sawubona through November 13, then Allens Lane from November 20, 2026; third Saturdays in Ambler",
+      "signals": [
+        "Founded 2005",
+        "Weekly Friday show for 20 years",
+        "Monthly show at The Lab in Ambler",
+        "Team-building workshops",
+        "No public classes"
+      ],
+      "score": 54,
+      "reasons": "Twenty years of weekly shows with a current schedule, but a troupe without a theater or a class program.",
+      "sources": [
+        "https://www.phillyncrowd.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

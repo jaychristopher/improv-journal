@@ -1,0 +1,125 @@
+{
+  "slug": "sacramento",
+  "city": "Sacramento",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:08.510Z",
+    "searches": 0,
+    "notes": "The Comedy Spot has been the city's improv school and stage for years; STAB! on Broadway is the alternative room with a free Sunday jam, and Haus of Comedy is the newest school, performing in Old Sacramento. Punch Line and Laughs Unlimited are stand-up clubs.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "saccomedyspot.com",
+      "name": "Sacramento Comedy Spot",
+      "url": "https://saccomedyspot.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Midtown (20th St theater; T St training center)",
+      "summary": "Sacramento's first comedy theater, a 501(c)(3) with a Midtown stage and a separate training center that calls itself Northern California's largest comedy school; improv, stand-up and sketch shows most nights of the week.",
+      "schedule": "Shows five to six nights a week; Improv Taste Test select Saturdays 6pm ($15); monthly Improv Jam (next Nov 15, 2026)",
+      "signals": [
+        "Improv 101, 201 (Scene Work) and 301 (The Helix) class ladder",
+        "Free Diversity Improv Space first Sundays",
+        "Monthly Improv Jam pairs students with veteran cast",
+        "Guest workshops Oct 19, 2026 and Jan 9-10, 2027",
+        "Runs Femme Fest and the Weird Strange Bizarre festival",
+        "Two locations: 1050 20th St and 915 T St"
+      ],
+      "score": 89,
+      "reasons": "Two dedicated buildings, a three-level ladder with drop-ins and a student jam, shows nearly every night and a calendar dated into 2027; it just does not publish class dates on the page.",
+      "sources": [
+        "https://saccomedyspot.com/",
+        "https://saccomedyspot.com/improv/",
+        "https://saccomedyspot.com/improv-jam/",
+        "https://saccomedyspot.com/about/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "stabcomedytheater.com",
+      "name": "STAB! Comedy Theater",
+      "url": "https://www.stabcomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Broadway (1710 Broadway)",
+      "summary": "Sacramento's alternative comedy room on Broadway: improv fundamentals and short-form classes, stand-up, a free Sunday improv jam and house formats such as Improvivor, PowerPlay and the short-form Sacramento Improv Theater show.",
+      "schedule": "STAB! Jam every Sunday 7pm, free; shows listed on the calendar",
+      "signals": [
+        "Classes in Improv Fundamentals, Improv Short Form and Stand Up",
+        "Free Sunday jam, names drawn from a bucket, at least two turns up",
+        "House improv shows: Improvivor, PowerPlay, The Arena, Whose Shorts Are These Anyway?",
+        "Livestreams shows on Twitch and YouTube"
+      ],
+      "score": 61,
+      "reasons": "Its own venue, a weekly free jam and several house improv formats, but the class pages carry no dates or prices and the calendar text does not surface on the site.",
+      "sources": [
+        "https://www.stabcomedytheater.com/",
+        "https://www.stabcomedytheater.com/classes",
+        "https://www.stabcomedytheater.com/stab-jam"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "hausofcomedy.com",
+      "name": "Haus of Comedy",
+      "url": "https://hausofcomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Shows at the Eagle Theatre, Old Sacramento",
+      "summary": "Jessilee Windhaus's improv company, founded in 2023 and independent since August 2024, teaching Improv 101-401 with drop-ins and master classes and producing short-form shows at the Eagle Theatre in Old Sacramento.",
+      "schedule": "",
+      "signals": [
+        "Founded 2023 under Empire Arts Collective, independent since Aug 2024",
+        "Core series Improv 101-401 in six-week and intensive formats",
+        "Pay-as-you-go drop-in classes",
+        "Diversity scholarships for the core series",
+        "House group Sharks Barksley; Improv Team Jam for local teams",
+        "Shows at the Eagle Theatre, Old Sacramento"
+      ],
+      "score": 50,
+      "reasons": "A proper four-level curriculum with drop-ins and scholarships and regular shows, but it is three years old, rents its stages and lists dates only through its ticketing pages.",
+      "sources": [
+        "https://hausofcomedy.com/about",
+        "https://hausofcomedy.com/classes",
+        "https://hausofcomedy.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

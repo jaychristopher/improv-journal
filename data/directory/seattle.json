@@ -1,0 +1,206 @@
+{
+  "slug": "seattle",
+  "city": "Seattle",
+  "state": "Washington",
+  "stateCode": "WA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:18.424Z",
+    "searches": 0,
+    "notes": "Seattle keeps two forty-year institutions, Unexpected Productions in the Market and Jet City in the U District, with Bandit and the Fremont ComedySportz house behind them. Bellevue has no improv theatre of its own but Jet City teaches there; Tacoma's only improv classes come from Bandit, and the Pocket Theater's site now returns an error.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "unexpectedproductions.org",
+      "name": "Unexpected Productions",
+      "url": "https://www.unexpectedproductions.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Pike Place Market (Post Alley)",
+      "summary": "Seattle's original improv company, founded 1983, performing in its own Market Theater on Post Alley five nights a week, with Theatresports every Friday and Saturday, and improv classes in Seattle and Issaquah plus a teen programme.",
+      "schedule": "Shows Wednesday to Sunday; Theatresports Fridays and Saturdays 9:30pm; classes by quarter",
+      "signals": [
+        "Founded 1983",
+        "Own theatre in Pike Place Market",
+        "Theatresports every Friday and Saturday",
+        "Shows five nights a week",
+        "Classes in Seattle and Issaquah",
+        "Teen improv programme"
+      ],
+      "score": 92,
+      "reasons": "Forty-three years, a theatre of its own in the Market, five show nights and quarterly classes on two sides of the lake; the site publishes schedules by quarter rather than by date.",
+      "sources": [
+        "https://www.unexpectedproductions.org/",
+        "https://www.radicalagreement.com/improv/seattle"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "jetcityimprov.org",
+      "name": "Jet City Improv",
+      "url": "https://www.jetcityimprov.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "University District and Fremont; classes also in Bellevue",
+      "summary": "A Seattle improv institution since 1992, now playing the Drama Room on University Way and West of Lenin in Fremont, with a curriculum from 101 to 302, weekly drop-in jams and more than a dozen recurring shows.",
+      "schedule": "Fall classes start the week of September 20; weekly drop-in jams year-round; shows most weekends",
+      "signals": [
+        "Founded 1992",
+        "Levels 101 to 302 plus specialty programmes",
+        "Weekly drop-in jams with a punchcard",
+        "Classes in Seattle and Bellevue",
+        "More than a dozen recurring show formats",
+        "Fall 2026 term dates posted"
+      ],
+      "score": 87,
+      "reasons": "Three decades, a deep class ladder, weekly jams and a crowded show calendar, docked only for performing in rented rooms since losing its own theatre.",
+      "sources": [
+        "https://www.jetcityimprov.org/",
+        "https://www.jetcityimprov.org/classes.html"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "bandittheater.org",
+      "name": "Bandit Theater",
+      "url": "https://www.bandittheater.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Central District; classes at Seattle Center and in Tacoma",
+      "summary": "Seattle's newest improv theatre, playing Seattle Open Arts Place on 18th Avenue Thursday and Friday nights, with a four-level improv track taught at Theatre Puget Sound, sketch and stand-up programmes, a BIPOC cohort and classes in Tacoma.",
+      "schedule": "Shows Thursdays and Fridays at 7, 8:15 and 9:15pm; fall 2026 classes enrolling; BIPOC cohorts November 8 to December 16",
+      "signals": [
+        "Four improv levels, eight weeks each",
+        "Shows Thursday and Friday nights",
+        "Classes in Seattle and Tacoma",
+        "Sketch and stand-up tracks",
+        "BIPOC cohort by application",
+        "October 2026 shows listed"
+      ],
+      "score": 69,
+      "reasons": "A full class ladder, two show nights and the only improv classes reaching Tacoma, limited by its youth and rented stages.",
+      "sources": [
+        "https://www.bandittheater.org/",
+        "https://www.bandittheater.org/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "seattlecomedytheater.com",
+      "name": "Seattle Comedy Theater (ComedySportz Seattle)",
+      "url": "http://seattlecomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Fremont (Atlas Theater)",
+      "summary": "Fremont's longest-running improv community and home of ComedySportz Seattle for over a decade at the Atlas Theater, with the ComedySportz match, improvised Shakespeare, an all-ages matinee, classes beginner to advanced and a Rec League.",
+      "schedule": "ComedySportz matches on weekends; classes from beginner workshops to advanced training",
+      "signals": [
+        "ComedySportz franchise, over a decade in Fremont",
+        "Theatre of its own at 3509 Fremont Ave N",
+        "Improvised Shakespeare and all-ages matinee",
+        "Classes beginner to advanced",
+        "Rec League for students"
+      ],
+      "score": 65,
+      "reasons": "A permanent theatre and a known format, but the site leaves class dates and show nights to its ticketing calendar.",
+      "sources": [
+        "http://seattlecomedytheater.com/",
+        "http://seattlecomedytheater.com/classes",
+        "http://seattlecomedytheater.com/comedysportz"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "taproottheatre.org",
+      "name": "Taproot Theatre Acting Studio",
+      "url": "https://taproottheatre.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Greenwood",
+      "summary": "The acting studio of Taproot Theatre in Greenwood runs an introduction-to-improv course for adults each session in the theatre's cafe space, and sends a touring improv company to schools and events.",
+      "schedule": "Improv for Adults, fall session September 28 to December 14, 2026",
+      "signals": [
+        "Own theatre in Greenwood since 1976",
+        "Adult intro improv course each session",
+        "Touring improv company",
+        "Fall 2026 dates posted"
+      ],
+      "score": 52,
+      "reasons": "A permanent theatre and a dated adult class, but a single beginner course and no public improv shows at home.",
+      "sources": [
+        "https://taproottheatre.org/acting-studio/adult/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "freeholdtheatre.org",
+      "name": "Freehold Theatre",
+      "url": "https://freeholdtheatre.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Chinatown-International District",
+      "summary": "A long-standing actor-training studio on Maynard Avenue whose quarterly catalogue includes Improv, Intermediate Improv and Improv for Writers alongside acting, voice and movement classes.",
+      "schedule": "Fall quarter classes open; improv offerings vary by quarter",
+      "signals": [
+        "Studio founded 1991",
+        "Improv, Intermediate Improv and Improv for Writers",
+        "Quarterly terms",
+        "Training for professionals and novices"
+      ],
+      "score": 48,
+      "reasons": "A respected studio with two improv levels in its catalogue, but no shows and no guarantee which classes run each quarter.",
+      "sources": [
+        "https://freeholdtheatre.org/studio/catalog/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 6,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

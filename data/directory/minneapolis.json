@@ -1,0 +1,353 @@
+{
+  "slug": "minneapolis",
+  "city": "Minneapolis",
+  "state": "Minnesota",
+  "stateCode": "MN",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:44.036Z",
+    "searches": 0,
+    "notes": "The Twin Cities scene reorganised after HUGE closed in 2024: Strike Theater in Northeast is the working improv house, Stevie Ray's in Chanhassen is the oldest school, Brave New Workshop remains the historic sketch stage, and Very Good Improv, Good Camel and CSz teach in borrowed rooms. Brave New Workshop's own site returned a Cloudflare 525 error on every read, so its entry rests on owner Hennepin",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "stevierays.org",
+      "name": "Stevie Ray's Improv Company",
+      "url": "https://stevierays.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Chanhassen (Chanhassen Dinner Theatres)",
+      "summary": "A nonprofit improv company founded in 1989, performing every Friday and Saturday year-round at Stevie Ray's Comedy Cabaret inside Chanhassen Dinner Theatres and teaching a six-level improv ladder plus sketch, stand-up and musical improv.",
+      "schedule": "Shows Fri and Sat 7:30pm year-round; Intermediate I Sep 1-Oct 6 2026, Advanced I Aug 26-Sep 30 2026; six-week courses $2",
+      "signals": [
+        "Founded 1989",
+        "Nonprofit",
+        "Shows every Friday and Saturday",
+        "Beginning I through Advanced II, then troupe auditions",
+        "Musical improv and sketch tracks",
+        "Scholarships, age 16+"
+      ],
+      "score": 88,
+      "reasons": "Thirty-seven years, a permanent cabaret stage, a weekly two-night run and a six-level ladder with dates printed for every term; only its suburban address keeps it from a higher mark.",
+      "sources": [
+        "https://stevierays.org/",
+        "https://stevierays.org/improv-comedy-shows/",
+        "https://stevierays.org/improv-comedy-classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "strike.theater",
+      "name": "Strike Theater",
+      "url": "https://strike.theater/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Northeast Minneapolis",
+      "summary": "An independent improv, sketch and storytelling venue in Northeast since 2016, with Friday Night Improv Club, Saturday Night Improv Show, BALLS Cabaret and Improv-A-Go-Go, six-week classes up to the Harold, and CSz classes under its roof.",
+      "schedule": "Improv shows Fri and Sat; Level 1 Sat Oct 17-Nov 21 2026, Level 2 Thu Oct 15-Nov 19, Level 4 Harold Mon Oct 12-Nov 16 20",
+      "signals": [
+        "Established 2016",
+        "Own venue at 824 18th Ave NE",
+        "Weekly Friday and Saturday improv nights",
+        "Levels 1-4 ending in the Harold",
+        "Hosts CSz Twin Cities classes",
+        "18+"
+      ],
+      "score": 79,
+      "reasons": "The city's working improv house since HUGE closed, with weekly shows and dated October 2026 terms; a decade old and a mid-sized room.",
+      "sources": [
+        "https://strike.theater/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "hennepinarts.org",
+      "name": "Brave New Workshop",
+      "url": "https://hennepinarts.org/venues/dudley-riggs-theatre/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Downtown Minneapolis (Hennepin Ave)",
+      "summary": "The country's longest-running satirical sketch and improv theater, settled in Minneapolis in 1958 by Dudley Riggs and now owned by Hennepin Arts, staging original comedy revues at the Dudley Riggs Theatre on Hennepin Avenue.",
+      "schedule": "The Algorithm is Gonna Get You through Nov 7 2026; Hold On To Your Butts Oct 31-Nov 1; Six Chick Flicks Nov 6-8 2026",
+      "signals": [
+        "Founded 1958",
+        "Own theater at 824 Hennepin Ave",
+        "400+ original productions",
+        "Owned by Hennepin Arts since 2024",
+        "Sketch revues with improv sets",
+        "2026 season published"
+      ],
+      "score": 69,
+      "reasons": "Sixty-eight years and its own downtown theater with a dated 2026 season, but the shows are chiefly scripted revues and its class programme could not be verified while bravenewworkshop.com was returning server errors.",
+      "sources": [
+        "https://hennepinarts.org/venues/dudley-riggs-theatre/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "csztwincities.com",
+      "name": "CSz Twin Cities (ComedySportz)",
+      "url": "https://www.csztwincities.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Itinerant; classes at Strike Theater, NE Minneapolis",
+      "summary": "The Twin Cities' ComedySportz franchise, now without a venue of its own, playing its clean competitive short-form match at Strike Theater and suburban stages and teaching six-week Levels 101 to 301 at Strike.",
+      "schedule": "Level 101 and 201 Tuesdays Sep 15-Oct 20 2026 ($170); match Sat Oct 3 at Northern Starz Center",
+      "signals": [
+        "ComedySportz format",
+        "Family-friendly",
+        "Levels 101-301",
+        "Classes at Strike Theater",
+        "Lost its own space; shows tour"
+      ],
+      "score": 58,
+      "reasons": "A long-running brand with dated classes, but it has no home stage and shows are occasional bookings rather than a weekly night.",
+      "sources": [
+        "https://www.csztwincities.com/",
+        "https://www.csztwincities.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "camp-bar.net",
+      "name": "Laugh Camp Comedy Club",
+      "url": "https://camp-bar.net/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Lowertown, St. Paul (Camp Bar)",
+      "summary": "St. Paul's comedy club at Camp Bar, which runs a weekly late-night improv show alongside stand-up and hosts Actors Theater of Minnesota's Improv 101 and 201 classes.",
+      "schedule": "Improv show Sundays 10pm (Oct 11, 18, 25 2026); Improv 101 $175 via Actors Theater of Minnesota",
+      "signals": [
+        "Weekly improv show",
+        "Comedy club at 490 N Robert St",
+        "Improv 101 and 201 classes",
+        "Stand-up most nights"
+      ],
+      "score": 50,
+      "reasons": "A weekly improv slot in a real club with classes attached, but improv is a side dish to stand-up and the class dates are not published.",
+      "sources": [
+        "https://camp-bar.net/",
+        "https://camp-bar.net/calendar",
+        "https://www.actorsmn.org/improv-101"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "verygoodimprov.com",
+      "name": "Very Good Improv",
+      "url": "https://www.verygoodimprov.com/",
+      "kind": [
+        "classes",
+        "jams"
+      ],
+      "area": "Uptown (Phoenix Theater, Hennepin Ave)",
+      "summary": "A long-form improv school teaching Improv 101 through 401 and musical improv at the Phoenix Theater, with open jams once or twice a month where anyone is put on a team and plays.",
+      "schedule": "Classes in session, next term Jan 2027; jams 1-2 a month (Oct 7 2026 at The Others Workshop Collective), $5-10 suggested",
+      "signals": [
+        "Improv 101-401",
+        "Music Improv 101",
+        "Open jams twice a month",
+        "Taught by working improvisers",
+        "Free jams for students"
+      ],
+      "score": 49,
+      "reasons": "A proper four-level ladder and regular jams, but no theater of its own, no house shows and terms that open only a few times a year.",
+      "sources": [
+        "https://www.verygoodimprov.com/",
+        "https://www.verygoodimprov.com/jams"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    },
+    {
+      "id": "dangerboat.net",
+      "name": "The Theater of Public Policy (Danger Boat Productions)",
+      "url": "https://www.dangerboat.net/theater-of-public-policy",
+      "kind": [
+        "shows"
+      ],
+      "area": "Minneapolis (Bryant Lake Bowl and other venues)",
+      "summary": "A civic improv show running since 2011, in which an expert or candidate is interviewed on stage and an improv cast turns the conversation into comedy, staged at Bryant Lake Bowl and around the Twin Cities.",
+      "schedule": "Oct 13, Oct 26, Nov 10 and Nov 17 2026",
+      "signals": [
+        "Founded 2011",
+        "Dated autumn 2026 run",
+        "Candidate debates and expert interviews",
+        "Praised by the Star Tribune",
+        "Workshops and keynotes for hire"
+      ],
+      "score": 48,
+      "reasons": "Fifteen years and a distinctive format with a dated season, but it is a show rather than a school and performs in rented rooms a few times a season.",
+      "sources": [
+        "https://www.dangerboat.net/theater-of-public-policy",
+        "https://www.dangerboat.net/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 7
+    },
+    {
+      "id": "mnprov.org",
+      "name": "MNprov",
+      "url": "https://www.mnprov.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Hamline-Midway, St. Paul (The Hive Collaborative)",
+      "summary": "A nonprofit founded in 2019 that teaches improv for confidence and connection with a neurodivergent focus and fields MNprov Live, the state's first all-neurodivergent improv team, in a monthly show.",
+      "schedule": "MNprov Live Oct 1, Nov 4 and Dec 1 2026, 7:30pm at 677 Hamline Ave N",
+      "signals": [
+        "501(c)(3) founded 2019",
+        "Monthly show dated through Dec 2026",
+        "Neurodivergent-led team",
+        "Workshops and corporate training"
+      ],
+      "score": 46,
+      "reasons": "A monthly dated show and a clear mission, but a small operation in a borrowed room with workshops rather than a published class ladder.",
+      "sources": [
+        "https://www.mnprov.org/",
+        "https://www.mnprov.org/mnprov-live-shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
+    },
+    {
+      "id": "goodcamelcomedy.com",
+      "name": "Good Camel Comedy Theater",
+      "url": "https://goodcamelcomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Frogtown, St. Paul (825 Arts)",
+      "summary": "A BIPOC-centred comedy theater founded by John Gebretatose, running Good Camel Live on first Wednesdays, the Oasis Laugh Battle improv competition, monthly BIPOC and disability-led improv jams and eight-week improv classes at 825 Arts.",
+      "schedule": "Good Camel Live first Wednesdays; BIPOC Improv Jam last Sundays at 825 Arts; Oasis Laugh Battle Mar 19 2026",
+      "signals": [
+        "BIPOC-focused",
+        "Monthly show and monthly jam",
+        "Eight-week BIPOC improv class",
+        "Improv Decolonized 101",
+        "Scholarships"
+      ],
+      "score": 42,
+      "reasons": "A distinctive programme of shows, jams and classes, but in a shared arts building and with an academy page whose dates were a year old at reading.",
+      "sources": [
+        "https://goodcamelcomedy.com/",
+        "https://goodcamelcomedy.com/academy"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 9
+    },
+    {
+      "id": "blackoutimprov.com",
+      "name": "Blackout Improv",
+      "url": "https://blackoutimprov.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Minneapolis and St. Paul (Phoenix Theater, Ordway)",
+      "summary": "An all-Black improv troupe founded in 2015 whose Swag Hat format spins audience-suggested topics into improvised theater, playing the Phoenix Theater, the Ordway and festivals including its own Black and Funny Festival.",
+      "schedule": "Shows listed by venue on the site; Ordway concert hall date Sep 30 2026",
+      "signals": [
+        "Founded 2015",
+        "Swag Hat format",
+        "Black and Funny Festival",
+        "Plays major venues such as the Ordway"
+      ],
+      "score": 35,
+      "reasons": "Eleven years and real standing in the city, but a touring troupe with no venue, no classes and a show page that does not print dates.",
+      "sources": [
+        "https://blackoutimprov.com/",
+        "https://blackoutimprov.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 10
+    },
+    {
+      "id": "jesterscomedyimprov.com",
+      "name": "Jesters Comedy Improv",
+      "url": "https://www.jesterscomedyimprov.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "New Hope, Spring Lake Park, Columbia Heights",
+      "summary": "A Whose Line-style short-form troupe playing monthly at New Hope Cinema Grill, Torg Brewery in Spring Lake Park and Rail Werks in Columbia Heights, plus private events.",
+      "schedule": "New Hope Cinema Grill 2nd Thursdays; Torg Brewery 2nd Saturdays and last Fridays; dates posted on Facebook",
+      "signals": [
+        "Monthly shows at three suburban venues",
+        "Short-form games",
+        "Family-friendly",
+        "Dates kept on Facebook"
+      ],
+      "score": 27,
+      "reasons": "Regular suburban shows with their own site, but no classes, no home venue and a site that sends you to Facebook for dates.",
+      "sources": [
+        "https://www.jesterscomedyimprov.com/",
+        "https://www.jesterscomedyimprov.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 11
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 11,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

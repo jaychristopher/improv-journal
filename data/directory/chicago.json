@@ -1,0 +1,445 @@
+{
+  "slug": "chicago",
+  "city": "Chicago",
+  "state": "Illinois",
+  "stateCode": "IL",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:28.791Z",
+    "searches": 0,
+    "notes": "Chicago remains the deepest scene: Second City, iO and the Annoyance each run a full ladder and nightly shows, and a ring of neighborhood theaters (CIC, Logan Square Improv, the Revival, the new Home) adds free or $5 stages. ComedySportz Chicago's site was unreachable at checking time, so it is unlisted; Oak Park and Evanston have classes but no dedicated improv theater.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "secondcity.com",
+      "name": "The Second City",
+      "url": "https://www.secondcity.com/find-a-class/chicago",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Old Town",
+      "summary": "The original sketch-and-improv institution at 230 W North Avenue since 1959, with Mainstage and e.t.c. revues, Judy's Beat Lounge, and a training center teaching Improv 1-5, the Conservatory and musical improv.",
+      "schedule": "Shows nightly; fall 2026 classes run late October to December; free community jams",
+      "signals": [
+        "Founded 1959",
+        "Improv Levels 1-5 then Conservatory",
+        "Musical Improv Conservatory",
+        "Free BIPOC and LGBTQIA+ community jams",
+        "Mainstage, e.t.c. and Judy's Beat Lounge",
+        "Alumni from Belushi to Fey"
+      ],
+      "score": 95,
+      "reasons": "Unmatched history and alumni, a permanent complex, a complete curriculum with fall 2026 terms posted and free jams.",
+      "sources": [
+        "https://www.secondcity.com/find-a-class/chicago",
+        "https://www.secondcity.com/shows/chicago"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "ioimprov.com",
+      "name": "iO Theater",
+      "url": "https://ioimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Lincoln Park / Goose Island",
+      "summary": "The home of the Harold since 1981, at 1501 N Kingsbury Street since 2014, with improv, sketch and stand-up six nights a week, a five-level training center and free weekly jams.",
+      "schedule": "Shows six nights a week; free Early Bird jam Saturdays 3:30pm; Green Room jam Wednesdays",
+      "signals": [
+        "Est. 1981",
+        "Levels 1-5, eight weeks each",
+        "Free Saturday jam open to all students",
+        "Student ID gives free show entry",
+        "Hosts iO Fest (July 2026)",
+        "Alumni include Poehler, Hader and Farley"
+      ],
+      "score": 90,
+      "reasons": "Forty-five years, a large venue of its own, a five-level ladder, nightly shows and free jams; the classes page still showed an April 2026 session when read.",
+      "sources": [
+        "https://ioimprov.com/",
+        "https://ioimprov.com/classes/",
+        "https://en.wikipedia.org/wiki/IO_Theater"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "theannoyance.com",
+      "name": "The Annoyance Theatre & Bar",
+      "url": "https://www.theannoyance.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Lakeview",
+      "summary": "Mick Napier's irreverent theater at 851 W Belmont Avenue, more than 35 years old, with shows seven nights a week and the Annoyance Philosophy classes AP1-AP5 running from beginner to an ensemble show.",
+      "schedule": "Shows seven nights; classes Mon-Thu 6:30pm and weekends 1pm; free Music Jam Tuesdays 6:30pm",
+      "signals": [
+        "Over 35 years",
+        "AP1-AP5 curriculum",
+        "Shows seven nights a week",
+        "Free weekly musical improv jam",
+        "Artistic director Mick Napier",
+        "Site current to September 30, 2026"
+      ],
+      "score": 86,
+      "reasons": "A long history, its own stage and bar, a five-level curriculum and a weekly free jam; term start dates are not listed on the training page.",
+      "sources": [
+        "https://www.theannoyance.com/",
+        "https://www.theannoyance.com/training",
+        "https://do312.com/events/weekly/tue/music-jam-tickets"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "cictheater.com",
+      "name": "CIC Theater",
+      "url": "https://www.cictheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "North Center / Lincoln Square",
+      "summary": "A community improv theater at 4301 N Western Avenue with free shows Tuesday to Friday, an open-stage night where anyone can play, and a five-level program from CIC Fundamentals to Performance.",
+      "schedule": "Free shows Tue-Fri; Open Stage Thursdays 7pm; Levels 1-5 start October 12-18, 2026",
+      "signals": [
+        "Levels 1-5",
+        "Free shows four nights a week",
+        "Thursday Open Stage for all",
+        "Fall 2026 start dates posted",
+        "Diversity scholarship"
+      ],
+      "score": 70,
+      "reasons": "Its own room, free weekly shows, an open stage and a five-level ladder with October 2026 dates; a smaller profile than the big three.",
+      "sources": [
+        "https://www.cictheater.com/",
+        "http://www.cictheater.com/classes-schedule"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "logansquareimprov.com",
+      "name": "Logan Square Improv",
+      "url": "https://logansquareimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Logan Square / Avondale",
+      "summary": "A 501(c)(3) BYOB improv theater at 2825 W Diversey Avenue with $5 shows Wednesday to Sunday and a three-level, eight-week class program whose students perform on the weekly Thursday show.",
+      "schedule": "Shows Wed-Sun, $5; Levels 1-3 start October 18-20, 2026",
+      "signals": [
+        "Non-profit theater",
+        "Shows five nights a week",
+        "Levels 1-3 at $215 each",
+        "Student shows every Thursday",
+        "Fall 2026 dates posted (Level 1 sold out)"
+      ],
+      "score": 68,
+      "reasons": "A venue of its own, shows five nights a week and a ladder with current dates; three levels and a short history keep it below the majors.",
+      "sources": [
+        "https://logansquareimprov.com/",
+        "https://logansquareimprov.com/classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "babywantscandy.com",
+      "name": "Baby Wants Candy",
+      "url": "https://www.babywantscandy.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Old Town (at Judy's Beat Lounge, Second City)",
+      "summary": "The completely improvised full-band musical, playing Saturdays at 8:30pm in Judy's Beat Lounge at The Second City, with tickets listed through October 2026 and workshops offered by the ensemble.",
+      "schedule": "Saturdays 8:30pm; dates listed October 3, 10, 17 and beyond",
+      "signals": [
+        "Weekly Saturday show",
+        "Full live band",
+        "Chicago, New York, LA and touring companies",
+        "October 2026 dates on sale",
+        "Workshops offered"
+      ],
+      "score": 62,
+      "reasons": "A long-running weekly musical-improv show with current dates at a major venue; it is a show rather than a training path.",
+      "sources": [
+        "https://www.babywantscandy.com/",
+        "https://www.secondcity.com/shows/chicago/baby-wants-candy-the-completely-improvised-full-band-musical-chi"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    },
+    {
+      "id": "improvisedshakespeare.com",
+      "name": "Improvised Shakespeare Company",
+      "url": "https://www.improvisedshakespeare.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Lincoln Park (at iO Theater)",
+      "summary": "The company that improvises a full Elizabethan-style play from one title suggestion, resident at iO since 2006 with shows every Friday and Saturday at 7:30pm.",
+      "schedule": "Fridays and Saturdays 7:30pm at 1501 N Kingsbury",
+      "signals": [
+        "Resident at iO since 2006",
+        "Two shows every weekend",
+        "Touring and LA companies",
+        "Box office 312-300-3350"
+      ],
+      "score": 60,
+      "reasons": "A twenty-year weekly residency at a major theater; it is a show, not a school, and the site posts the weekly slot rather than dates.",
+      "sources": [
+        "https://www.improvisedshakespeare.com/chicago",
+        "https://ioimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 7
+    },
+    {
+      "id": "the-revival.com",
+      "name": "The Revival",
+      "url": "https://www.the-revival.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "South Side (Hyde Park)",
+      "summary": "The South Side's improv theater, founded in 2015 in homage to the Compass Players, with an adult program of five eight-week courses from Improv 101 Foundations to a 501 performance on The Revival stage.",
+      "schedule": "Improv 101-501 in eight-week terms; registration via ThunderTix",
+      "signals": [
+        "Founded 2015",
+        "Improv 101-501",
+        "Chicago Sun-Times and Tribune press",
+        "School and corporate programs",
+        "Only improv theater on the South Side"
+      ],
+      "score": 58,
+      "reasons": "Ten years, a clear five-course ladder and press, but the site shows no show calendar, address or term dates.",
+      "sources": [
+        "https://www.the-revival.com/",
+        "https://www.the-revival.com/adult-classes",
+        "https://www.the-revival.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
+    },
+    {
+      "id": "homecomedytheater.com",
+      "name": "The Home Comedy Theater",
+      "url": "https://homecomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "East Lakeview",
+      "summary": "A new 80-seat improv theater with bar and kitchen at 2843 N Halsted Street, founded 2024, already enrolling a five-level improv program with Levels 1 and 3 starting in October 2026 ahead of its official opening.",
+      "schedule": "Level 1 starts October 19 and 25, Level 3 October 24, 2026",
+      "signals": [
+        "Founded 2024",
+        "Levels 1-5",
+        "80-seat theater with restaurant",
+        "October 2026 class dates",
+        "Official opening still pending"
+      ],
+      "score": 54,
+      "reasons": "Current class dates and a purpose-built room, but the theater is still pre-opening, so shows and standing are unproven.",
+      "sources": [
+        "https://homecomedytheater.com/",
+        "https://homecomedytheater.com/classes/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 9
+    },
+    {
+      "id": "piventheatre.org",
+      "name": "Piven Theatre Workshop",
+      "url": "https://www.piventheatre.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Evanston",
+      "summary": "The Evanston theater school founded by Byrne and Joyce Piven more than fifty years ago, built on improvisation and theater games, offering adult classes alongside its youth program at 927 Noyes Street.",
+      "schedule": "Adult fall classes start October 21 and 23, 2026",
+      "signals": [
+        "Over fifty years",
+        "Improv-and-theater-games tradition",
+        "Adult and youth classes",
+        "Not-for-profit",
+        "Alumni include John and Joan Cusack"
+      ],
+      "score": 50,
+      "reasons": "A half-century institution with its own home and current adult dates, though it teaches theater through improvisation rather than running improv comedy shows.",
+      "sources": [
+        "https://www.piventheatre.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 10
+    },
+    {
+      "id": "theplaygroundtheater.com",
+      "name": "The Playground Theater",
+      "url": "https://www.theplaygroundtheater.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Uptown",
+      "summary": "Chicago's ensemble-run improv theater, founded 1997, which left Halsted Street in the pandemic, produced shows around the city and reopened in 2025 at 4416 N Clark Street above MyBuddy's.",
+      "schedule": "Shows upstairs at 4416 N Clark and online; see the site calendar",
+      "signals": [
+        "Founded 1997",
+        "Ensemble-run non-profit",
+        "Reopened at 4416 N Clark in 2025",
+        "Shows in person and online"
+      ],
+      "score": 48,
+      "reasons": "A long history and a new permanent home, but a sparse site with no visible schedule or classes when read.",
+      "sources": [
+        "https://www.theplaygroundtheater.com/",
+        "https://en.wikipedia.org/wiki/The_Playground_Theater"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 11
+    },
+    {
+      "id": "comedyplex.com",
+      "name": "Comedy Plex",
+      "url": "https://www.comedyplex.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Oak Park",
+      "summary": "Oak Park's comedy theater and training center at 1128 Lake Street (lower level), with an eight-week adult improv class on Tuesday nights ending in a graduation show, Thursday Night Out and an open mic.",
+      "schedule": "Adult improv Tuesdays 7-9pm in eight-week terms; last listed term January-February 2026",
+      "signals": [
+        "Eight-week adult improv class",
+        "Graduation show on the Comedy Plex stage",
+        "Thursday Night Out and open mic",
+        "Hosts the Funny Is Female festival",
+        "Free show tickets for students"
+      ],
+      "score": 46,
+      "reasons": "A permanent suburban venue with a real class, but the only term on the site had already closed and the show pages did not render.",
+      "sources": [
+        "https://www.comedyplex.com/",
+        "https://www.comedyplex.com/event/adult-improv-classes-719/register"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 12
+    },
+    {
+      "id": "oakparkimprov.com",
+      "name": "Oak Park Improv",
+      "url": "https://www.oakparkimprov.com/home",
+      "kind": [
+        "classes",
+        "jams"
+      ],
+      "area": "Oak Park",
+      "summary": "A volunteer community group spreading improv in Oak Park: an eight-week adult fundamentals class through the Park District and free Open Stage nights at the main library where teams and walk-ins play long form.",
+      "schedule": "Adult class Wednesdays 7pm, September 23-November 11, 2026; Open Stage at the library",
+      "signals": [
+        "Fall 2026 class dates posted",
+        "Classes via the Park District of Oak Park",
+        "Free Open Stage at Oak Park Library",
+        "Walk-ins placed on mash-up teams"
+      ],
+      "score": 44,
+      "reasons": "Current dates and a free open stage, but a volunteer group with borrowed rooms, one class level and no ticketed shows.",
+      "sources": [
+        "https://www.oakparkimprov.com/home"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 13
+    },
+    {
+      "id": "thecomedyclubhouse.com",
+      "name": "The Comedy Clubhouse",
+      "url": "https://thecomedyclubhouse.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Wicker Park / West Town",
+      "summary": "A comedy venue at 1462 N Ashland Avenue, open since 2015, mixing improv, stand-up and scripted comedy, with improv from its One Group Mind performers and workshops for schools and businesses.",
+      "schedule": "Showtimes via online ticketing",
+      "signals": [
+        "Since 2015",
+        "Improv, stand-up and scripted comedy",
+        "Workshops for schools and businesses",
+        "No public class schedule"
+      ],
+      "score": 40,
+      "reasons": "A real room with ten years behind it, but improv shares the bill and there is no public class program or visible calendar.",
+      "sources": [
+        "https://thecomedyclubhouse.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 14
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 14,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

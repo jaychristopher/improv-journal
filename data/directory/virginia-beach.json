@@ -1,0 +1,163 @@
+{
+  "slug": "virginia-beach",
+  "city": "Virginia Beach",
+  "state": "Virginia",
+  "stateCode": "VA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:19.531Z",
+    "searches": 0,
+    "notes": "The region's improv centre of gravity is Norfolk's Push Comedy Theater; Virginia Beach itself has a resident troupe at The Z and a small rented-room school. The Armed Services Arts Partnership teaches improv to veterans and military families here but enrolment is not open to the public, and the Virginia Beach Funny Bone's comedy school is stand-up only.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "pushcomedytheater.com",
+      "name": "Push Comedy Theater",
+      "url": "https://pushcomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "NEON District, Norfolk",
+      "summary": "Hampton Roads' home for improv, sketch and stand-up: a 90-seat teaching theater on Granby Street founded by sketch troupe The Pushers, with shows Thursday to Sunday and a six-level improv programme.",
+      "schedule": "Shows Thu-Sun; Improv 101-601 in six-week terms, each ending in a graduation show",
+      "signals": [
+        "On Granby Street since 2015",
+        "The Pushers performing 15+ years",
+        "90-seat theater",
+        "Improv 101 to 601",
+        "Musical improv, sketch, stand-up and teen classes",
+        "Monthly Girl-Prov"
+      ],
+      "score": 85,
+      "reasons": "A decade in its own venue, a full class ladder with graduation shows and a four-night week of programming; it loses a little for not publishing term dates on every level.",
+      "sources": [
+        "https://pushcomedytheater.com/",
+        "https://pushcomedytheater.com/improv-comedy-classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "planbcomedy.com",
+      "name": "Plan B Comedy",
+      "url": "https://www.planbcomedy.com/",
+      "kind": [
+        "shows",
+        "jams"
+      ],
+      "area": "Town Center, Virginia Beach (The Z)",
+      "summary": "Virginia Beach's resident improv company at Zeiders American Dream Theater since 2009, with monthly all-ages shows, separate kids' shows and a free monthly jam run as an open rehearsal for improvisers of any level.",
+      "schedule": "Shows roughly monthly (Oct 3, Oct 24, Nov 28, Dec 26 2026); free jams Sep 22 2026, Feb 16 2027",
+      "signals": [
+        "Making it up since 2009",
+        "Resident company of The Z",
+        "Monthly shows into 2027",
+        "Free monthly improv jam",
+        "Kids' comedy shows"
+      ],
+      "score": 54,
+      "reasons": "Seventeen years and a permanent stage with a calendar booked into 2027, but shows are monthly, classes are not currently offered, and the jam is the only training route.",
+      "sources": [
+        "https://www.planbcomedy.com/",
+        "https://www.planbcomedy.com/shows",
+        "https://thez.org/planbcomedy/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "radicalagreement.com",
+      "name": "The Radical Agreement Project (Virginia Beach Improv School)",
+      "url": "https://www.radicalagreement.com/virginia-beach-improv-classes",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Virginia Beach (Collective Yoga)",
+      "summary": "An improv school and production company teaching a four-level long-form track in Virginia Beach, with a free weekly Intro to Improv sampler on Thursdays and a free intermediate session on Tuesdays.",
+      "schedule": "Free intro sampler Thursdays 7-9pm; free intermediate Tuesdays 7-9pm; six-session courses $200 with a class show",
+      "signals": [
+        "Improv 1-4 track",
+        "Free weekly workshops",
+        "Class shows",
+        "Also runs online classes and corporate workshops"
+      ],
+      "score": 37,
+      "reasons": "A real class ladder and two free weekly sessions, but it rents a yoga studio, is young in the city, and its page lists no dated terms or shows.",
+      "sources": [
+        "https://www.radicalagreement.com/virginia-beach-improv-classes",
+        "https://www.radicalagreement.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "ffxshow.org",
+      "name": "Family Fun Xperience Theatre",
+      "url": "https://www.ffxshow.org/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Oceanfront, Virginia Beach",
+      "summary": "A nonprofit family theater at the oceanfront whose interactive shows include improv formats such as Improv Quest, a late-night improv special and an improvised pirate musical, alongside game shows and whodunits.",
+      "schedule": "Shows most weekends; Oct 2026 listings are a game show and a whodunit, improv nights recur through the year",
+      "signals": [
+        "501(c)(3) nonprofit",
+        "Own venue at 206 16th Street",
+        "Improv Quest and Unofficial Late Night Live",
+        "All-ages"
+      ],
+      "score": 31,
+      "reasons": "A permanent venue and a year-round calendar, but improv is one strand of a family variety programme, there are no classes, and the current month lists none.",
+      "sources": [
+        "https://www.ffxshow.org/",
+        "https://tickets.ffxshow.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 4,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 4,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 4,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

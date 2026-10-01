@@ -1,0 +1,148 @@
+{
+  "slug": "albuquerque",
+  "city": "Albuquerque",
+  "state": "New Mexico",
+  "stateCode": "NM",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:18.255Z",
+    "searches": 0,
+    "notes": "The Box downtown is the scene's centre of gravity and the only dedicated improv theatre in New Mexico; Improv New Mexico added pay-what-you-can longform training in 2019, and indie longform teams such as The Faculty Lounge and The Boyz play fourth Mondays at The Shop NM. Blackout Theatre (founded 2007) lists no current improv shows.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "theboxabq.com",
+      "name": "The Box Performance Space & Improv Theatre",
+      "url": "https://www.theboxabq.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown (Gold Avenue)",
+      "summary": "New Mexico's only dedicated improv theatre, with a Mainstage and Annex at 100 Gold Ave SW. Home of The Show, the city's longest-running comedy show, and a five-level training programme.",
+      "schedule": "The Show Fri & Sat 8pm; The Nightcap Fridays 9:15pm; The Jam last Thursdays 7:30pm (free)",
+      "signals": [
+        "The Show has run weekly for over a decade",
+        "Improv 1-4 plus Long-Form, eight-week terms ($250)",
+        "Improv Gym drop-in, $20",
+        "Fall 2026 classes run Sep 13 - Nov 4",
+        "Free jam on the last Thursday of the month",
+        "Partial scholarships on request"
+      ],
+      "score": 89,
+      "reasons": "The state's only purpose-built improv theatre with a decade-old weekly show, a full class ladder with dated terms, a free monthly jam and a current calendar.",
+      "sources": [
+        "https://www.theboxabq.com/",
+        "https://www.theboxabq.com/training",
+        "https://www.theboxabq.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "improvnm.org",
+      "name": "Improv New Mexico",
+      "url": "https://improvnm.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "San Mateo Blvd NE (black box theater)",
+      "summary": "A pay-what-you-can nonprofit founded in 2019 that teaches longform and sketch in eight-week levels from its Albuquerque black box, with student shows, a monthly open mic and the late-night Midnight Mass longform challenge.",
+      "schedule": "Open Mic Night 2nd Fridays 8pm; Midnight Mass 2nd Wednesdays 10pm; DED ASSSS improv show 4th Mondays",
+      "signals": [
+        "Founded 2019, 501(c)(3)",
+        "Pay-what-you-can pricing on select classes",
+        "Five longform levels from Intro to Improv Lab, plus sketch writing and acting",
+        "Fall 2026 terms began Aug 16-22",
+        "Student showcases followed by an all-play jam",
+        "Statewide programme with a Santa Fe base"
+      ],
+      "score": 66,
+      "reasons": "A clear beginner-to-performing longform path and a lively calendar, but it is seven years old and its shows are monthly rather than weekly.",
+      "sources": [
+        "https://improvnm.org/",
+        "https://improvnm.org/classes/",
+        "https://abq.news/2026/06/improv-troupes-invade-abq/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "cardboardplayhouse.org",
+      "name": "Cardboard Playhouse Theatre Company",
+      "url": "https://www.cardboardplayhouse.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Classes held at The Box, downtown",
+      "summary": "A youth theatre company whose Youth Improv (ages 9-13) and Advanced Youth Improv (ages 10-14) classes meet Saturdays at The Box Performance Space.",
+      "schedule": "Saturdays Sep 12 - Nov 21, 2026, 10:30am and 12:15pm",
+      "signals": [
+        "Youth improv for ages 9-14, $225 a term",
+        "Fall 2026 term Sep 12 - Nov 21",
+        "Classes hosted at The Box",
+        "Also runs musical theatre classes and show choirs"
+      ],
+      "score": 33,
+      "reasons": "A current, dated youth improv programme in a real theatre, but nothing for adults and no public improv shows.",
+      "sources": [
+        "https://www.cardboardplayhouse.org/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "improvunderground.net",
+      "name": "Improv Underground",
+      "url": "https://improvunderground.net/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Albuquerque",
+      "summary": "A small independent improv school run by Mary Ashley Bannister, who trained at iO West, Second City Hollywood and UCB; teaching since spring 2025 with student shows since spring 2026.",
+      "schedule": "",
+      "signals": [
+        "Teaching since spring 2025",
+        "Performing since spring 2026",
+        "Student bill of rights adapted from Camp Improv Utopia",
+        "Class and show calendar on the site"
+      ],
+      "score": 23,
+      "reasons": "Real and current but barely a year old, with no venue of its own and a site whose class and show listings load only in the calendar.",
+      "sources": [
+        "https://improvunderground.net/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 4,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

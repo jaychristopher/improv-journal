@@ -300,6 +300,12 @@ async function main() {
   // served and not indexed, and this file agrees with the sitemap on that.
   parts.push(section("Tools", [...routeSection("tool"), ...routeSection("facet")]));
 
+  // The improv directory: the hub and the city pages the sitemap publishes
+  // (a city once it lists three verified places), read daily by the engine.
+  parts.push(
+    section("Improv near you — theaters, classes and shows by city", routeSection("directory")),
+  );
+
   parts.push(atomSection(REFERENCE_SECTION));
 
   parts.push(

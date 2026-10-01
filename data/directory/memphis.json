@@ -1,0 +1,59 @@
+{
+  "slug": "memphis",
+  "city": "Memphis",
+  "state": "Tennessee",
+  "stateCode": "TN",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:41.013Z",
+    "searches": 0,
+    "notes": "Memphis has no dedicated improv theatre. Bluff City Liars carry the scene from the HiTone and TheatreWorks; The Comedy Junt is a stand-up room that occasionally books improv (its site would not render), Indie Acting Studio runs improv only occasionally, and Theatre Memphis and Playhouse on the Square list no improv classes this term.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "bluffcityimprov.com",
+      "name": "Bluff City Liars",
+      "url": "https://bluffcityimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Midtown (Overton Square / HiTone)",
+      "summary": "Memphis's working improv and sketch troupe, formed out of the Memphis Improv & Sketch Collective around 2017, with a first-Thursday show and open jam at the HiTone, the annual two-night Liars Ball, and free YES& workshops at TheatreWorks.",
+      "schedule": "First Thursday of the month at HiTone with an open-to-all jam; free YES& improv workshop at TheatreWorks",
+      "signals": [
+        "Grew out of MISC around 2017",
+        "First-Thursday show with open jam at HiTone",
+        "Annual Liars Ball, four editions",
+        "Free YES& improv workshops at TheatreWorks",
+        "Performs at TheatreWorks Overton Square"
+      ],
+      "score": 33,
+      "reasons": "The one verifiable Memphis improv troupe, with a monthly show, a jam and free workshops, but no venue and a website whose dates stop in 2024.",
+      "sources": [
+        "https://bluffcityimprov.com/",
+        "https://allevents.in/memphis/improv",
+        "https://www.radicalagreement.com/improv/memphis"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 1,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

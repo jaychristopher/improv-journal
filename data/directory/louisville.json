@@ -1,0 +1,26 @@
+{
+  "slug": "louisville",
+  "city": "Louisville",
+  "state": "Kentucky",
+  "stateCode": "KY",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:40.882Z",
+    "searches": 0,
+    "notes": "No Louisville improv organisation could be verified on a live website of its own on 2026-09-30. LEO Weekly's 2024 readers' poll named Extra Crispy Improv Comedy, Improv Anonymous and Kentucky Bill as the city's best troupes, but none has a site; louisvilleimprovisors.com does not resolve, projectimprov.com and planetofthetapes.com are unreachable, The Audition Room's beginner improv class last ran",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

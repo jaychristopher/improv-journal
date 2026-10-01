@@ -1,0 +1,259 @@
+{
+  "slug": "raleigh",
+  "city": "Raleigh",
+  "state": "North Carolina",
+  "stateCode": "NC",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:08.021Z",
+    "searches": 0,
+    "notes": "The Triangle has two anchor theaters, ComedyWorx in Raleigh and Mettlesome in Durham, with Leela and Black Sheep filling in the class side and Actors Improv Theater carrying a 1983 lineage in Carrboro. Chapel Hill lost both DSI and the PIT, so Carrboro's ArtsCenter is now where that town's improv happens. The Flying Machine Theatre Studio's site was unreachable at the time of reading and is not li",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "comedyworx.com",
+      "name": "ComedyWorx",
+      "url": "https://www.comedyworx.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Hillsborough Street, Raleigh",
+      "summary": "Raleigh's improv club since 1989, born as a ComedySportz franchise, with family-friendly and late-night shows Thursday to Saturday, long-form house teams, a public improv jam, an open mic and a beginner-to-advanced class programme.",
+      "schedule": "Shows Thu and Fri evenings, Sat afternoons and evenings; Intro and Shortform 1-2 start Oct 3-5 2026, Longform 2 Oct 14 2",
+      "signals": [
+        "Opened 1989",
+        "Own venue at 3801 Hillsborough St",
+        "Shows three nights a week",
+        "Longform house teams",
+        "Improv Jam and Open Mic nights",
+        "Youth programs"
+      ],
+      "score": 89,
+      "reasons": "Thirty-seven years in its own room with a three-night show week, house teams, a jam and dated October 2026 class starts leaves little to want beyond published prices for every level.",
+      "sources": [
+        "https://www.comedyworx.com/",
+        "https://www.hillsboroughstreet.org/post/arts-spotlight-comedyworx-30th-anniversary"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "thisismettlesome.com",
+      "name": "Mettlesome",
+      "url": "https://thisismettlesome.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Golden Belt, Durham",
+      "summary": "Durham's nonprofit improv and sketch theater, founded in 2016 and in its own Golden Belt space since 2022, with shows every weekend, Harold Night, a free monthly improv jam and an Improv 101 to 401 curriculum through the Mettlesome Lab.",
+      "schedule": "Harold Night Thu; shows Fri and Sat; free jam monthly (Oct 15 2026); Improv 101-401 terms start Oct 26-31 2026",
+      "signals": [
+        "Founded 2016",
+        "501(c)(3) nonprofit",
+        "Own theater at 800 Taylor St since 2022",
+        "Improv 101 to 401 plus sketch",
+        "Free monthly jam",
+        "Best of Durham 2025"
+      ],
+      "score": 84,
+      "reasons": "A full class ladder, weekend shows, Harold Night and a free jam in a theater of its own, with a calendar dated to the month; only its decade of age holds the longevity score down.",
+      "sources": [
+        "https://thisismettlesome.com/",
+        "https://thisismettlesome.com/live",
+        "https://thisismettlesome.com/lab"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "leela-nc.com",
+      "name": "Leela Improv Theatre",
+      "url": "https://leela-nc.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Glenwood South, Raleigh",
+      "summary": "The East Coast home of San Francisco's Leela Improv, in a Boylan Avenue studio, teaching a seven-level improv track and a musical improv track, with a weekly drop-in, a free First Friday jam and open mic, and showcase nights.",
+      "schedule": "Drop-in Thursdays 7-9pm ($20); First Friday jam and open mic 7pm (Oct 2 2026); showcase Sat Oct 10 2026 7:30pm",
+      "signals": [
+        "Founded 2003 in San Francisco",
+        "Own studio at 309 N Boylan Ave",
+        "Improv 1 through 5c plus musical improv",
+        "Students perform from Improv 4",
+        "Weekly drop-in and monthly jam",
+        "Adults 18+"
+      ],
+      "score": 73,
+      "reasons": "A deep curriculum, a weekly drop-in and a monthly jam in a dedicated space earn it most of its points; the Raleigh venue is young and shows are showcases rather than a weekly house night.",
+      "sources": [
+        "https://leela-nc.com/",
+        "https://leela-nc.com/classes/",
+        "https://leela-nc.com/drop-in/",
+        "https://leela-nc.com/jams/",
+        "https://leela-nc.com/shows/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "blacksheepcomedy.com",
+      "name": "Black Sheep Comedy",
+      "url": "https://www.blacksheepcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Carrboro",
+      "summary": "Chapel Hill and Carrboro's improv and sketch community, with five class levels, weekly Friday and Saturday shows at The ArtsCenter and My Muses, and The Forge, an eight-week programme that forms and coaches a new indie team.",
+      "schedule": "Shows Fri and Sat; Level 1 starts Oct 1 2026, Levels 2, 3 and 5 Sep 28-30 2026",
+      "signals": [
+        "Improv Levels 1-5 plus sketch",
+        "No auditions to take the stage",
+        "Weekly shows at two Carrboro venues",
+        "The Forge team-building programme"
+      ],
+      "score": 66,
+      "reasons": "Dated 2026 terms across five levels and weekly shows, but it performs in rented rooms and is still establishing the kind of track record the older Triangle theaters have.",
+      "sources": [
+        "https://www.blacksheepcomedy.com/",
+        "https://www.blacksheepcomedy.com/classes",
+        "https://www.blacksheepcomedy.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "actorsimprov.org",
+      "name": "Actors Improv Theater (formerly Transactors)",
+      "url": "https://actorsimprov.org/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Carrboro (The ArtsCenter)",
+      "summary": "The oldest improvisational theater in the South, founded in 1983 as Transactors, producing full-length improvised comedy and drama a few times a year at The ArtsCenter in Carrboro and teaching workshops for schools and organisations.",
+      "schedule": "Spooky Show Oct 30 2026; Holiday Musical Dec 4 2026",
+      "signals": [
+        "Founded 1983",
+        "Nonprofit since 1991",
+        "Longest-running improv theater in the South",
+        "Full-length improvised plays and musicals",
+        "Workshops for groups rather than open classes"
+      ],
+      "score": 52,
+      "reasons": "Forty-three years of continuous work is rare, but it stages a handful of productions a year, rents its stage and offers no open-enrolment classes.",
+      "sources": [
+        "https://actorsimprov.org/",
+        "https://actorsimprov.org/about-us/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    },
+    {
+      "id": "theunintentionals.com",
+      "name": "The Unintentionals",
+      "url": "https://www.theunintentionals.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "North Raleigh (TR Studio)",
+      "summary": "A nonprofit family-friendly improv comedy group performing free monthly themed shows at TR Studio in north Raleigh since 2005, plus stand-up showcases and dinner-theater mysteries.",
+      "schedule": "Improv All-Stars Oct 9 2026; Improvmaster themed show Oct 10 2026; roughly monthly",
+      "signals": [
+        "Founded 2005",
+        "Nonprofit",
+        "Free monthly shows",
+        "Family-friendly",
+        "Themed improv formats"
+      ],
+      "score": 40,
+      "reasons": "Twenty years of monthly free shows with a dated 2026 calendar, but no classes or jam, a rented studio and a modest footprint.",
+      "sources": [
+        "https://www.theunintentionals.com/",
+        "https://www.theunintentionals.com/events"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 6
+    },
+    {
+      "id": "openmindimprov.com",
+      "name": "Open Mind Improvisation",
+      "url": "https://www.openmindimprov.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Durham and Raleigh",
+      "summary": "Eight-week Improv for Life courses for adults in Durham and Raleigh, taught in rented studio and fellowship rooms with a drop-in option, aimed at confidence and connection rather than performance.",
+      "schedule": "Durham Sundays Sep 13-Nov 8 2026 and Tuesdays from Oct 13 2026; Raleigh Mondays from Oct 12 2026; $240 or $35 drop-in",
+      "signals": [
+        "Eight-week courses",
+        "Two cities",
+        "Drop-in option",
+        "Good Talk conversation course"
+      ],
+      "score": 32,
+      "reasons": "Dated 2026 terms in two cities are real, but there is a single level, no shows, no permanent room and a site that otherwise looks untended.",
+      "sources": [
+        "https://www.openmindimprov.com/",
+        "https://www.openmindimprov.com/improv-for-life.html"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 7
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 7,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 7,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 7,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

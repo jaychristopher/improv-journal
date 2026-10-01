@@ -1,0 +1,89 @@
+{
+  "slug": "phoenix",
+  "city": "Phoenix",
+  "state": "Arizona",
+  "stateCode": "AZ",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:06.562Z",
+    "searches": 0,
+    "notes": "Phoenix's working improv rooms are in the East Valley, in Mesa and Gilbert, rather than in Phoenix, Scottsdale, Tempe or Glendale; The Torch Theatre's site could not be read by the fetcher, so Phoenix's long-form theater is absent from this first pass and should be checked by hand.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "neighborhoodcomedy.com",
+      "name": "Neighborhood Comedy Theatre",
+      "url": "https://neighborhoodcomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown Mesa",
+      "summary": "A downtown Mesa improv theater at 214 W Main Street staging more than 300 all-ages shows a year, with a six-level class program through the Harold and musical improv, a coached Saturday jam and a pay-what-you-can Friday jam.",
+      "schedule": "Shows Thu 7pm, Fri 7:30pm, Sat 7:30 and 9:30pm; six-week sessions start about every nine weeks",
+      "signals": [
+        "300+ shows a year",
+        "Levels One-Six including the Harold and musical improv",
+        "Saturday coached jam and Friday jam",
+        "Process Lab Sundays",
+        "Site current to October 2026",
+        "Scholarship and inclusion program"
+      ],
+      "score": 72,
+      "reasons": "Its own theater, shows three nights a week, a six-level ladder and two weekly jams with a current calendar; founding year and press are not stated.",
+      "sources": [
+        "https://neighborhoodcomedy.com/",
+        "https://nctphoenix.com/shows/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "jesterzimprov.com",
+      "name": "JesterZ Improv Comedy",
+      "url": "https://www.jesterzimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Gilbert",
+      "summary": "The East Valley's clean short-form theater, running since 2001 and now at 228 N Gilbert Road, with two shows every Friday and Saturday night and a four-level adult program from Beginning Improv to Rising Stars performance prep.",
+      "schedule": "Shows Fri and Sat 6:30 and 8:30pm; adult classes started September 22-23, 2026",
+      "signals": [
+        "Since 2001",
+        "Levels 1-4 for adults (16+)",
+        "Teen and kids weekly improv",
+        "Fall 2026 start dates posted",
+        "Two shows nightly on weekends"
+      ],
+      "score": 68,
+      "reasons": "A quarter century of weekend shows in its own venue and a four-level path with current dates; family short form only.",
+      "sources": [
+        "https://www.jesterzimprov.com/",
+        "https://www.jesterzimprov.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

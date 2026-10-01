@@ -1,0 +1,170 @@
+{
+  "slug": "las-vegas",
+  "city": "Las Vegas",
+  "state": "Nevada",
+  "stateCode": "NV",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:38.012Z",
+    "searches": 0,
+    "notes": "Henderson has no improv organisation of its own that could be verified; the scene clusters at Mom's Basement Theatre on West Sahara, where CSz Las Vegas plays and jams run three nights a week. Delirious Comedy Club runs a mixed stand-up and improv night but is a stand-up club, and Las Vegas Improvisation Players and Profoundry Works could not be verified on a site of their own.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "momsbasementtheatre.com",
+      "name": "Mom's Basement Theatre",
+      "url": "https://www.momsbasementtheatre.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "West Sahara",
+      "summary": "Community-powered comedy venue on West Sahara that hosts ComedySportz Las Vegas, three weekly improv jams, Latine and Filipino showcases, and beginner-to-advanced classes run with CSz.",
+      "schedule": "Jams: Mystery Meet Thursdays, Sip Zap Zop Fridays (21+), Third Beat Sundays; shows most weekends",
+      "signals": [
+        "3441 W Sahara Ave, Suite C5",
+        "Three weekly improv jams plus monthly specialty jams",
+        "Home theatre of ComedySportz Las Vegas",
+        "Latine and Filipino improv showcases",
+        "Level 1 Foundations intensives for beginners"
+      ],
+      "score": 53,
+      "reasons": "The city's one true improv room with jams three nights a week and a busy show list, but young, small and with a calendar page that would not load.",
+      "sources": [
+        "https://www.momsbasementtheatre.com/",
+        "https://www.eventbrite.com/d/nv--las-vegas/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "cszlasvegas.com",
+      "name": "CSz Las Vegas (ComedySportz)",
+      "url": "https://www.cszlasvegas.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "West Sahara",
+      "summary": "The ComedySportz franchise for Las Vegas: two-team improvised comedy matches at Mom's Basement Theatre, a Minor League, fall curriculum classes from complete beginner to advanced, and corporate training.",
+      "schedule": "Matches at Mom's Basement Theatre; fall classes open for registration",
+      "signals": [
+        "3441 W Sahara Ave, Suite C4",
+        "Part of the ComedySportz network",
+        "Classes for all ages and levels",
+        "ComedySportz Minor League shows"
+      ],
+      "score": 48,
+      "reasons": "A franchise format with a steady match schedule and a class ladder, but no dates on its site and a shared, recently opened venue.",
+      "sources": [
+        "https://www.cszlasvegas.com/",
+        "https://www.cszlasvegas.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "vegasimprov.com",
+      "name": "Vegas Improv Power",
+      "url": "https://vegasimprov.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Spring Valley (LVLT Studio) / Elton Ave",
+      "summary": "Life-skills improv school founded 2018 that runs six-week 'yes, let's' and 'let's play' courses at the Las Vegas Little Theatre Studio, plus Zoom classes, coaching and corporate work; not performance-focused.",
+      "schedule": "yes, let's Oct 14-Nov 18, 2026; let's play Nov 7-Dec 19, 2026; $299 per six-week course",
+      "signals": [
+        "Founded 2018",
+        "Six-week courses, $299",
+        "Classes at Las Vegas Little Theatre Studio, 3890 Schiff Drive",
+        "Fall 2026 dates posted",
+        "Functional Improv events and coaching"
+      ],
+      "score": 38,
+      "reasons": "A current, dated class calendar from an eight-year-old school, but no shows, no levels beyond continuing classes and a borrowed studio.",
+      "sources": [
+        "https://vegasimprov.com/",
+        "https://vegasimprov.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "vegastheatrehub.com",
+      "name": "Vegas Theatre Hub",
+      "url": "https://www.vegastheatrehub.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Arts District (S 1st St)",
+      "summary": "Downtown Arts District performance hub with an improv program, online improv and writing classes and late-night shows such as Stinky and Bunny.",
+      "schedule": "Online improv classes by registration; late-night shows announced on the site",
+      "signals": [
+        "1025 S 1st St, Suite 110",
+        "Improv program and online classes",
+        "Operating since 2015"
+      ],
+      "score": 33,
+      "reasons": "A decade-old venue with an improv strand, but thin public detail on classes and only occasional shows.",
+      "sources": [
+        "https://www.vegastheatrehub.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "bleachimprov.com",
+      "name": "Bleach Improv",
+      "url": "https://www.bleachimprov.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Las Vegas",
+      "summary": "Long-form improv ensemble of six performers and a pianist who have played together about twelve years, with a monthly show on third Thursdays.",
+      "schedule": "Your Show monthly, third Thursdays",
+      "signals": [
+        "Six-member long-form team with pianist",
+        "About twelve years together",
+        "Monthly third-Thursday show"
+      ],
+      "score": 23,
+      "reasons": "A durable team with a monthly slot but no venue, no classes shown and no dates on its site.",
+      "sources": [
+        "https://www.bleachimprov.com/",
+        "https://www.radicalagreement.com/improv/las-vegas"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

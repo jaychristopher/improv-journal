@@ -1,0 +1,88 @@
+{
+  "slug": "dallas",
+  "city": "Dallas",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:29.578Z",
+    "searches": 0,
+    "notes": "Dallas lost Dallas Comedy House in 2020; Stomping Ground is now the training hub and Dallas Comedy Club in Deep Ellum its show-side successor, but DCC's site timed out on every attempt so it is unlisted here. Plano, Irving and Addison have Improv-branded clubs that are stand-up rooms, not improv theaters.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "stompinggroundcomedy.org",
+      "name": "Stomping Ground Comedy Theater",
+      "url": "https://www.stompinggroundcomedy.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Design District",
+      "summary": "A non-profit improv theater and school, incorporated 2017, at 1350 Manufacturing Street #109, with a six-level core curriculum starting October 2026, monthly shows like Thunderdome and programs for retirees and neurodiverse learners.",
+      "schedule": "Levels One-Six start October 18-22, 2026; Thunderdome first Fridays 9pm; Shenanigans first Saturdays 6pm",
+      "signals": [
+        "Non-profit since May 2017",
+        "Levels One-Six",
+        "Fall 2026 start dates posted",
+        "Improv for Retirees and neurodiverse learners",
+        "Bilingual Comedy Fiesta program",
+        "Monthly signature shows"
+      ],
+      "score": 76,
+      "reasons": "Its own venue, a complete six-level ladder with October 2026 dates and inclusive programs; a younger theater whose shows are monthly rather than nightly.",
+      "sources": [
+        "https://www.stompinggroundcomedy.org/",
+        "https://www.stompinggroundcomedy.org/course-category/improv/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "fourdayweekend.com",
+      "name": "Four Day Weekend",
+      "url": "https://www.fourdayweekend.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Dallas and Fort Worth",
+      "summary": "The DFW audience-suggestion comedy institution with more than 25 years of Friday and Saturday shows, theaters in Fort Worth and Dallas, a bestselling book and the 4U comedy classes.",
+      "schedule": "Shows every Friday and Saturday night, $30",
+      "signals": [
+        "Over 25 years",
+        "Shows every Friday and Saturday",
+        "Theaters in Fort Worth and Dallas",
+        "4U comedy classes",
+        "Bestselling book Happy Accidents",
+        "Voted Best Comedy Club"
+      ],
+      "score": 56,
+      "reasons": "Long-running weekend shows and strong standing, but the site posts no dates, no class levels and no Dallas address on the pages that would load.",
+      "sources": [
+        "https://www.fourdayweekend.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

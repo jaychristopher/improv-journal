@@ -112,6 +112,30 @@ and `parent`, plus `serp_checked`, `serp_min_dr` and `serp_verdict`.
 HTML and flags winnable guides that receive fewer internal links than the median
 gated one.
 
+## The improv directory
+
+`/improv-near-you` and `/improv-near-you/<city>` list the improv theatres,
+schools and recurring shows in sixty US cities, each verified and linked,
+ranked by one rubric. Nothing in it is written by hand.
+
+- **Data**: `data/directory/cities.json` is the city list; `data/directory/<city>.json`
+  is what the engine last read (entries keyed by domain, with `firstSeen`,
+  `lastSeen`, `missingRuns`, `status`, `rank`). `src/lib/directory.ts` reads
+  them at build time; a city with fewer than three verified places is served,
+  noindexed, and absent from the sitemap and llms.txt (`isIndexableDirectoryCity`).
+- **Engine**: `scripts/directory-engine.mjs` asks Claude (web search tool) to
+  read a city, fetches every site it names, merges with the file (unseen three
+  passes running → dropped; reported closed → dropped at once), ranks and
+  writes. The pure half is `scripts/lib/directory.mjs`, held by
+  `directory-engine.test.ts`; the data by `directory.test.ts`. `--dry` runs
+  the fixture, `--seed <dir>` imports replies made in a session.
+- **Schedule**: `.github/workflows/directory-engine.yml`, daily, the next ten
+  cities of the cycle, committing to `main`. It needs `ANTHROPIC_API_KEY` in
+  the repository's Actions secrets (DI-1.2) and fails plainly without it.
+- The prose is in `src/lib/directory-copy.ts` (listed in `hub-prose-links`);
+  route files stay under the prose ceiling. No keywords are registered for
+  these routes until Search Console shows them (DI-2.1).
+
 ## Testing
 
 ~104 test files under `src/lib/__tests__/`, and they are guards rather than unit

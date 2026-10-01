@@ -110,6 +110,10 @@ const NAV_SECTIONS: NavSection[] = [
       hubLink(HUBS.learn),
       hubLink(HUBS.tools),
       { href: "/tools/improv-prompt-generator", label: "Get a Prompt" },
+      // The directory of theatres, classes and shows by city (2026-10-01).
+      // Not a hub in hubs.ts, like the prompt generator above: it keeps its
+      // own title in src/lib/directory.ts and registers no keyword yet.
+      { href: "/improv-near-you", label: "Improv Near You" },
       hubLink(HUBS.listen),
     ],
   },

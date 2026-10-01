@@ -1,0 +1,122 @@
+{
+  "slug": "milwaukee",
+  "city": "Milwaukee",
+  "state": "Wisconsin",
+  "stateCode": "WI",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:42.672Z",
+    "searches": 0,
+    "notes": "ComedySportz started here in 1984 and still anchors the scene from its own arena in Walker's Point. The longform home passed from Ampersand Theater to the community-owned Interchange Theater Co-op in the same Westown church basement. Milwaukee Improv in Brookfield and The Laughing Tap are stand-up rooms.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "cszmke.com",
+      "name": "ComedySportz Milwaukee",
+      "url": "https://cszmke.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Walker's Point",
+      "summary": "The original ComedySportz, founded here in 1984: two teams play clean short-form improv matches in a 420 S 1st Street arena with its own bar and restaurant, plus four levels of adult workshops.",
+      "schedule": "Matches Fri & Sat 7:30pm and 10pm; The Midnite Show Sat 11:59pm (18+)",
+      "signals": [
+        "Founded 1984, birthplace of ComedySportz",
+        "Four class levels 101-104, eight weeks each",
+        "Midnite Show running since 2001",
+        "Student showcases on the main stage",
+        "Full bar and restaurant in the venue",
+        "Events listed through November 2026"
+      ],
+      "score": 91,
+      "reasons": "Four decades in its own venue, a complete beginner-to-showcase class ladder and four weekly matches; only the missing class start dates hold it back.",
+      "sources": [
+        "https://cszmke.com/",
+        "https://cszmke.com/milwaukee-comedysportz-milwaukee-workshops",
+        "https://cszmke.com/milwaukee-comedysportz-milwaukee-events"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "interchangetheater.com",
+      "name": "Interchange Theater Co-op",
+      "url": "https://www.interchangetheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Westown (downtown)",
+      "summary": "Milwaukee's community-owned longform improv theater in the lower level of Calvary Presbyterian Church, with five class levels, weekend shows and a Sunday open jam and open mic.",
+      "schedule": "Shows Thu-Sat 7:30pm; Open Jam / Open Mic Sundays 6pm",
+      "signals": [
+        "Cooperative: one $200 share per owner, board elected by shareholders",
+        "Longform Levels 1-5 plus four-week intensives",
+        "Level 1 sections full, Level 3 sold out (fall 2026)",
+        "Musical improv intensive Sep 20 - Oct 11, 2026",
+        "Took over the former Ampersand Theater space at 628 N 10th St",
+        "Shows listed for Oct 1-3, 2026"
+      ],
+      "score": 65,
+      "reasons": "A young co-op, but it has a permanent home, a full longform curriculum that is selling out and weekly shows plus a jam; standing is still local.",
+      "sources": [
+        "https://www.interchangetheater.com/",
+        "https://www.interchangetheater.com/interchange-theater-coop-classes",
+        "https://www.interchangetheater.com/ownership"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "comedycollegeinfo.com",
+      "name": "Comedy College",
+      "url": "https://www.comedycollegeinfo.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Bluemound Road (Rounding Third)",
+      "summary": "A stand-up school running since 1999 out of Rounding Third sports bar, with a free weekly improv class on Mondays and The Event showcase every Thursday.",
+      "schedule": "Free improv class Mondays; The Event Thursdays 8:15pm; Standup 101 term started Sep 10, 2026",
+      "signals": [
+        "Established 1999",
+        "Free improv class every Monday",
+        "Standup 101 is a 7-week course with a graduation show",
+        "Weekly showcase at Rounding Third",
+        "Alumni credits on Fallon and Conan",
+        "Also runs a Chicago location"
+      ],
+      "score": 53,
+      "reasons": "Long-running and current, but stand-up is the core; improv is a free drop-in rather than a levelled programme and the home is a sports bar.",
+      "sources": [
+        "https://www.comedycollegeinfo.com/home"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

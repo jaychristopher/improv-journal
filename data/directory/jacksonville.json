@@ -1,0 +1,194 @@
+{
+  "slug": "jacksonville",
+  "city": "Jacksonville",
+  "state": "Florida",
+  "stateCode": "FL",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:36.534Z",
+    "searches": 0,
+    "notes": "Jacksonville has one dedicated improv theater, First Coast Comedy in Atlantic Beach, since Mad Cowford's sixteen-year run ended. The nearest multi-level school beyond it is Third Space Improv in St. Augustine; the city's other improv teaching sits inside acting studios. The Laugh Lounge downtown advertises improv classes but has no website of its own.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "firstcoastcomedy.com",
+      "name": "First Coast Comedy",
+      "url": "https://www.firstcoastcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Atlantic Beach (Mayport Road)",
+      "summary": "Jacksonville's only brick-and-mortar improv theater, with a bar, a rotating house cast, The Main Event on Fridays and Saturdays, a 21-plus Blue Show, and a three-course class track from Improv 101 to an advanced ensemble.",
+      "schedule": "Shows Fridays and Saturdays, 7:30pm all ages and 10pm 21+; multi-week classes ending in a showcase",
+      "signals": [
+        "Only dedicated improv venue in Jacksonville",
+        "Shows every Friday and Saturday",
+        "Three-course track from 101 to advanced ensemble",
+        "Student showcase ends each course",
+        "First Coast Comedy Festival, November 12 to 14, 2026",
+        "Owners with 20-plus years of improv experience"
+      ],
+      "score": 68,
+      "reasons": "The city's one improv theater with weekly shows, a venue of its own and a short class ladder, held back by an undated calendar and a programme that stops at three courses.",
+      "sources": [
+        "https://www.firstcoastcomedy.com/",
+        "https://www.firstcoastcomedy.com/classes",
+        "https://www.firstcoastcomedy.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "3rdspaceimprov.com",
+      "name": "Third Space Improv",
+      "url": "https://www.3rdspaceimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "St. Augustine (40 miles south)",
+      "summary": "A 50-seat studio in downtown St. Augustine with a six-level improv school, studio shows most Saturday nights mixing short-form games and long-form sets, and a monthly improv jam.",
+      "schedule": "Shows most Saturday nights; monthly improv jam; registration closes the day before each class starts",
+      "signals": [
+        "Six class levels, Level 1 to design-your-own Level 6",
+        "Shows most Saturdays",
+        "Monthly improv jam",
+        "Two studios, main room seats 40",
+        "Opened 2024",
+        "Blog updated September 2026"
+      ],
+      "score": 57,
+      "reasons": "The deepest class ladder in northeast Florida and a weekly stage, but it is new, forty miles from Jacksonville, and its show calendar had no dates listed when checked.",
+      "sources": [
+        "https://www.3rdspaceimprov.com/classes/",
+        "https://www.3rdspaceimprov.com/shows/",
+        "https://www.news4jax.com/river-city-live/2025/06/30/third-space-improv-connecting-all-communities/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "creativeveins.com",
+      "name": "Creative Veins Performing Arts",
+      "url": "https://creativeveins.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "San Marco",
+      "summary": "A performing-arts studio two blocks from the Florida Theatre district offering acting, filmmaking and screenwriting courses, plus a four-hour Saturday Intro to Improv workshop for absolute beginners.",
+      "schedule": "Intro to Improv workshop on Saturdays 11am to 3pm; next dates November 14, 2026 and January 23, 2027",
+      "signals": [
+        "Studio of its own at 1800 Atlantic Blvd",
+        "One-day Intro to Improv workshop, $69",
+        "Dates posted into 2027",
+        "Ongoing acting and screenwriting classes",
+        "Kids, teens and adults"
+      ],
+      "score": 36,
+      "reasons": "A real studio with dated, bookable improv workshops, but improv is a single beginner day rather than a programme and there are no shows.",
+      "sources": [
+        "https://creativeveins.com/classes-workshops/",
+        "https://creativeveins.com/product/1-jacksonville-improv-level-1-class/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "barbaracolaciello.com",
+      "name": "BABS' LAB",
+      "url": "https://www.barbaracolaciello.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Riverside (King Street)",
+      "summary": "Barbara Colaciello's storefront lab on King Street, where she teaches improvisation and story work through classes, workshops and coaching, and hosts a monthly Story Slam.",
+      "schedule": "Monthly Story Slam; class dates by enquiry",
+      "signals": [
+        "Storefront space at 603 King Street",
+        "Improv classes, workshops and one-to-one coaching",
+        "Monthly Story Slam",
+        "Membership programme",
+        "October 2026 slam announced"
+      ],
+      "score": 33,
+      "reasons": "A long-standing teacher with a room of her own and current events, but no published class schedule, levels or improv shows.",
+      "sources": [
+        "https://www.barbaracolaciello.com/babslabtheatercork",
+        "https://www.barbaracolaciello.com/trainmebabs"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "levelupimprov.com",
+      "name": "Level Up Improv",
+      "url": "https://levelupimprov.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Ponte Vedra",
+      "summary": "Groundlings-trained teacher Christopher Schiavo's school for improv classes, camps and team-building across northeast Florida, with Level 1 and 2 courses aimed mainly at young students and a virtual option.",
+      "schedule": "Fall 2026 virtual Level 1, Tuesdays 4 to 5pm, September 22 to October 27",
+      "signals": [
+        "Level 1 and Level 2 courses",
+        "Six-week terms",
+        "Virtual and in-person",
+        "Summer camps",
+        "Step Up for Students approved provider"
+      ],
+      "score": 27,
+      "reasons": "Dated classes from an experienced teacher, but no venue, no shows, and a programme pitched mostly at children.",
+      "sources": [
+        "https://levelupimprov.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 5,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 5,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

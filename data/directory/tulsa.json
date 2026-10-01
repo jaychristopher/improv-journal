@@ -1,0 +1,150 @@
+{
+  "slug": "tulsa",
+  "city": "Tulsa",
+  "state": "Oklahoma",
+  "stateCode": "OK",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:19.112Z",
+    "searches": 0,
+    "notes": "Tulsa improv runs through Jackalope on South Yale, with Cody Mayo's Pearl District conservatory and the newer Third Space collective around it. Tulsa Comedy Club and the Loony Bin are stand-up rooms, and OK So's jam and open mic lives on Instagram only.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "jackalopetheater.com",
+      "name": "Jackalope Comedy Theater",
+      "url": "https://www.jackalopetheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Midtown Tulsa (SoBA District, S Yale Ave)",
+      "summary": "Tulsa's artist-run comedy theater since 2013, a 55-seat basement room on South Yale with improv, sketch and storytelling shows every Friday and Saturday, an open jam, six class levels, free intro workshops and the Fest of Fools.",
+      "schedule": "Shows Fri and Sat 8pm (open jam Oct 2 2026); Level 1 Mondays from Oct 5 2026 ($193.77); free intro workshops Sep 28 2026",
+      "signals": [
+        "A fixture since 2013",
+        "Own 55-seat theater at 3406 S Yale Ave",
+        "Shows every Friday and Saturday",
+        "Levels 1-6 plus sketch and musical improv",
+        "Open jam",
+        "Fest of Fools festival"
+      ],
+      "score": 78,
+      "reasons": "Thirteen years, a theater of its own, a two-night weekly bill with a jam and a six-level ladder dated to October 2026; the room is small and its standing is local.",
+      "sources": [
+        "https://www.jackalopetheater.com/",
+        "https://www.jackalopetheater.com/classes",
+        "https://www.jackalopetheater.com/shows"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "codymayostudios.com",
+      "name": "Cody Mayo Studios and The Black Cat Theatre Cafe",
+      "url": "https://www.codymayostudios.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Pearl District (E 3rd St)",
+      "summary": "A Pearl District acting and improv conservatory whose company plays The 66 Kicks on second Saturdays downtown and Black Cat improv shows at its own E 3rd Street theater cafe, with an open jam and classes that begin with a Studio Intensive.",
+      "schedule": "The 66 Kicks second Saturdays; Black Cat shows and The Filling Station jam at 1615 E 3rd St; classes after the Studio In",
+      "signals": [
+        "Own venue at 1615 E 3rd St",
+        "The 66 Kicks directed by a Second City veteran",
+        "Conservatory model",
+        "Open jam",
+        "Cafe hours planned for 2027"
+      ],
+      "score": 44,
+      "reasons": "A permanent venue, a monthly professional show and a conservatory path, but the sites print no dates and classes are gated behind an intensive rather than open levels.",
+      "sources": [
+        "https://www.codymayostudios.com/",
+        "https://www.codymayostudios.com/shows",
+        "https://blackcattulsa.com/",
+        "https://the66kicks.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "thirdspacetulsa.org",
+      "name": "Third Space Tulsa",
+      "url": "https://www.thirdspacetulsa.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown and Brookside, Tulsa",
+      "summary": "An improv-centred theater education collective founded in May 2023, running free beginner-friendly Wednesday workshops at All Souls Unitarian, free Thursday open plays at TCC downtown, occasional shows and the Make Em Laugh, OK festival.",
+      "schedule": "Free workshops Wednesdays; open plays select Thursdays 7-8:30pm; shows Apr 10 and Jun 5 2026; new dates to be announced",
+      "signals": [
+        "Founded May 2023",
+        "Free weekly workshops",
+        "Free open plays",
+        "Make Em Laugh, OK festival",
+        "Fundraising for a dedicated space"
+      ],
+      "score": 33,
+      "reasons": "Generous free programming and a festival, but a three-year-old collective in borrowed rooms whose next dates were still to be announced at reading.",
+      "sources": [
+        "https://www.thirdspacetulsa.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "clarkyouththeatre.com",
+      "name": "Clark Youth Theatre",
+      "url": "https://www.clarkyouththeatre.com/education",
+      "kind": [
+        "classes"
+      ],
+      "area": "Tulsa",
+      "summary": "A youth theatre whose semester classes include Laughing Matter Improv for ages 8-12 and 13-18 on Saturday mornings, with at least two public performances a semester for the teen group.",
+      "schedule": "Saturdays Sep 12-Dec 12, 10am (8-12) and 11:30am (13-18), $100",
+      "signals": [
+        "Ages 8-18",
+        "Semester-long Saturday classes",
+        "Public performances",
+        "Established youth theatre"
+      ],
+      "score": 32,
+      "reasons": "A stable youth institution with a dated improv semester, but youth-only, one level per age group and no adult path.",
+      "sources": [
+        "https://www.clarkyouththeatre.com/education"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 4,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "omaha",
+  "city": "Omaha",
+  "state": "Nebraska",
+  "stateCode": "NE",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:04.466Z",
+    "searches": 0,
+    "notes": "The Backline downtown has been the training center and stage since 2011; Big Canvas runs the family-friendly Blackstone Theater, and Ware House in Little Bohemia is the new room with the weekly jam. Omaha Funny Bone is a stand-up club. Big Canvas's older .com domain now redirects to bigcanvascomedy.org.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "backlinecomedy.com",
+      "name": "The Backline Comedy Theatre",
+      "url": "https://backlinecomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Downtown (1618 Harney St)",
+      "summary": "Omaha's multi-genre comedy institution, founded in 2011 by Dylan Oakes Rohde, with improv, stand-up and sketch four nights a week downtown, a training center and free long-form jams.",
+      "schedule": "Shows four nights a week; The ARENA improv competition Fridays; Jam Town free on Thursdays 6:30pm",
+      "signals": [
+        "Founded 2011; began as improv classes in a gallery basement",
+        "The ARENA, Omaha's improv competition, in its 13th year",
+        "Jam Town free long-form jam, no experience required",
+        "Classes in improv and sketch writing with scholarships",
+        "Co-founded Omaha Comedy Fest",
+        "Full bar; 18+ or with a guardian"
+      ],
+      "score": 82,
+      "reasons": "Fifteen years, its own downtown theater, shows four nights a week, a weekly free jam and a training center; class levels and dates live only on its ticketing site.",
+      "sources": [
+        "https://backlinecomedy.com/about-the-backline/",
+        "https://backlinecomedy.com/",
+        "https://backlinecomedy.com/home/shows/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "bigcanvascomedy.org",
+      "name": "Big Canvas Comedy (Blackstone Theater)",
+      "url": "https://www.bigcanvascomedy.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Blackstone District (3624 Farnam St)",
+      "summary": "Omaha's nonprofit family-friendly short-form improv group, which runs the intimate Blackstone Theater on Farnam Street with improv shows on Fridays and comedy classes taught by its faculty.",
+      "schedule": "Fridays: Guardians of the Giggle (1st), The Laugh Crafters (2nd), Making a Scene (3rd)",
+      "signals": [
+        "Non-profit short-form improv group",
+        "Operates the Blackstone Theater, established 2019",
+        "Three Friday improv shows a month plus stand-up and musical improv",
+        "Comedy classes with Big Canvas faculty",
+        "Upcoming shows listed Oct 2-17, 2026"
+      ],
+      "score": 62,
+      "reasons": "A nonprofit with its own small theater, weekly family-friendly shows and classes, but the class details and founding year are not on the site.",
+      "sources": [
+        "https://www.bigcanvascomedy.org/",
+        "https://www.blackstonetheater.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "warehousecomedytheater.com",
+      "name": "Ware House Comedy Theater",
+      "url": "https://www.warehousecomedytheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Little Bohemia (1419 S 13th St)",
+      "summary": "Omaha's newest comedy room in Little Bohemia, with a free long-form improv jam every Wednesday, monthly improv showcases from house and touring teams, and eight-week improv classes capped at 14.",
+      "schedule": "Improv jam Wednesdays 9pm (free); open mic Sundays 7:30pm; shows 7:30pm and 9pm",
+      "signals": [
+        "Free Wednesday improv jam, sign-up 8:30pm",
+        "Level One Improv: eight weeks, Sundays, Nov 15 - Jan 3, $200",
+        "Fast Play and Monoscene five-week classes",
+        "Monthly improv showcases incl. Bully Mullet, The Strangers, Dad Jokes",
+        "Free shows Wednesday, Thursday and Sunday",
+        "Shows dated through Nov 28, 2026"
+      ],
+      "score": 55,
+      "reasons": "Dated classes, a weekly jam and a packed improv calendar in its own room, but it is the newest venue in town with little standing yet.",
+      "sources": [
+        "https://www.warehousecomedytheater.com/",
+        "https://www.warehousecomedytheater.com/shows",
+        "https://www.warehousecomedytheater.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "weisenheimers.com",
+      "name": "The Weisenheimers",
+      "url": "https://www.weisenheimers.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Benson Theatre and Omaha Community Playhouse",
+      "summary": "An award-winning short-form improv group performing around the heartland for nearly three decades, with a few ticketed Omaha shows a year at the Benson Theatre and the Playhouse's Howard Drew Theatre.",
+      "schedule": "Next show Nov 13, 2026 at Benson Theatre; played Howard Drew Theatre Apr 25, 2026",
+      "signals": [
+        "Nearly three decades of performing",
+        "Six Omaha Entertainment and Arts Awards for Best Comedy Ensemble",
+        "Short-form, game-style shows",
+        "Podcast 'It Could Be Worse'",
+        "Shows posted for Nov 13, 2026"
+      ],
+      "score": 44,
+      "reasons": "Long-lived and decorated, but a touring troupe with no venue, no classes and only occasional public dates.",
+      "sources": [
+        "https://www.weisenheimers.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "jccomaha.org",
+      "name": "Jewish Community Center of Omaha",
+      "url": "https://www.jccomaha.org/performing-arts/musical-theater/performing-arts-academy/",
+      "kind": [
+        "classes"
+      ],
+      "area": "West Omaha (333 S 132nd St)",
+      "summary": "The JCC's performing arts academy offers Sketch Comedy & Improv for Adults, an eight-week Wednesday evening class open to members and non-members.",
+      "schedule": "Wednesdays 6-7:30pm, Sep 9 - Oct 28; $132 members, $180 non-members",
+      "signals": [
+        "Adults 18+",
+        "Eight Wednesday sessions",
+        "Open to non-members",
+        "Part of a wider theater academy"
+      ],
+      "score": 29,
+      "reasons": "A real, dated, public-enrolment adult improv class at an established community center, but a single course with no shows.",
+      "sources": [
+        "https://www.jccomaha.org/performing-arts/musical-theater/performing-arts-academy/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

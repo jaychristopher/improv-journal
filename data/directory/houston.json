@@ -1,0 +1,91 @@
+{
+  "slug": "houston",
+  "city": "Houston",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:33.290Z",
+    "searches": 0,
+    "notes": "Houston's improv runs through two rooms: Station Theater for long form and sketch and ComedySportz for short form. The Woodlands and Sugar Land showed no improv organisation with its own site, and the Houston Improv on Richmond is a stand-up club despite the name; with web search unavailable for this pass, smaller independents may be missing.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "stationtheater.com",
+      "name": "Station Theater",
+      "url": "https://stationtheater.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Fifth Ward / Hardy & Nance arts district",
+      "summary": "Houston's home for long-form improv and sketch, grown from early-2010s shows at Avant Garden into a custom-built theater at 2000 Nance Street (opened 2026), with weekend house shows, indie nights, leveled classes and open jams.",
+      "schedule": "Improv Implosion Fridays 7:30pm; Singularity Improv Saturdays 7:30pm; calendar on Crowdwork",
+      "signals": [
+        "Founded early 2010s",
+        "New purpose-built space in 2026",
+        "Level 0 free intro, beginner (9 weeks) and advanced improv",
+        "Jams and meetups open to all levels",
+        "Ran the Houston Improv Festival",
+        "Hosts the College Improv Tournament"
+      ],
+      "score": 76,
+      "reasons": "The city's established long-form theater with a new home, weekly house shows, a beginner-to-advanced path and jams; class dates live on a ticketing calendar rather than the site.",
+      "sources": [
+        "https://stationtheater.com/",
+        "https://stationtheater.com/about",
+        "https://stationtheater.com/improv",
+        "https://stationtheater.com/jams"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "comedysportzhouston.com",
+      "name": "ComedySportz Houston (CSz Houston)",
+      "url": "https://www.comedysportzhouston.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Northwest Houston (Jones Road)",
+      "summary": "The family-friendly short-form match that has played Houston for more than 35 years, every Friday and Saturday at 8301 Jones Road, with the Houston School of Improv's four-level core track plus long-form and musical tracks.",
+      "schedule": "ComedySportz every Friday and Saturday 7:30pm; eight-week classes, dates on the calendar",
+      "signals": [
+        "35+ years in Houston",
+        "Levels One-Four, eight weeks each",
+        "Long Form and Musical Improv tracks",
+        "High School League and kids camps",
+        "Part of the CSz Worldwide network"
+      ],
+      "score": 70,
+      "reasons": "Decades of weekly shows in its own venue and a full four-level school; short-form only, with class dates kept on a separate calendar.",
+      "sources": [
+        "https://www.comedysportzhouston.com/",
+        "https://www.comedysportzhouston.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

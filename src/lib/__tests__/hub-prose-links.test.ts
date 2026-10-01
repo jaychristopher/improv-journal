@@ -60,6 +60,8 @@ const PROSE_MODULES = [
   path.join(ROOT, "src", "lib", "games-hub-copy.ts"),
   path.join(ROOT, "src", "lib", "exercises-hub-copy.ts"),
   path.join(ROOT, "src", "lib", "prompt-generator-copy.ts"),
+  // The improv directory's hub and city pages, 2026-10-01.
+  path.join(ROOT, "src", "lib", "directory-copy.ts"),
 ];
 
 /** The route files that hold hub prose and send it through `Prose`. */

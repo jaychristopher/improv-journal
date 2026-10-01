@@ -1,0 +1,93 @@
+{
+  "slug": "kansas-city",
+  "city": "Kansas City",
+  "state": "Missouri",
+  "stateCode": "MO",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:37.866Z",
+    "searches": 0,
+    "notes": "Two companies carry the scene: The Bird, a purpose-built Crossroads theater with a weekly jam, and the KC Improv Company, 26 years old and back in Westport on Thursdays. Overland Park has no improv venue of its own; Clint's Comedy Club runs a stand-up open mic there, and Improv Springboard (women and nonbinary improvisers) and Act Your Age Improv (adults 50+) announce workshops only on social medi",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "thebirdkc.com",
+      "name": "The Bird Comedy Theater",
+      "url": "https://thebirdkc.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Crossroads Arts District",
+      "summary": "A Crossroads comedy theater opened in 2022 with improv shows every Friday and Saturday, a free-to-play open improv jam on Thursdays and classes from drop-ins to sixteen-week advanced sessions.",
+      "schedule": "Thu Open Jam 7:30pm and Open Mic 9:30pm; Fri & Sat Improv Show 7:30pm and Comedy Show 9:30pm",
+      "signals": [
+        "Opened 2022; voted KC's best comedy club",
+        "Intro to Improv eight weeks, Oct 20 - Dec 8, 2026 ($178 per the KCUR guide)",
+        "Long Form II and III Sundays Oct 18 - Dec 6, 2026",
+        "Free happy-hour drop-in improv classes Saturdays",
+        "Bird House showcase of three in-house groups every third Saturday",
+        "Free shows every First Friday"
+      ],
+      "score": 76,
+      "reasons": "Only four years old, but it has its own Crossroads room, a dated three-level curriculum, weekend improv shows and a weekly open jam.",
+      "sources": [
+        "https://thebirdkc.com/",
+        "https://thebirdkc.com/classes/",
+        "https://thebirdkc.com/Shows/open-jam/",
+        "https://www.kcur.org/arts-life/2026-04-18/kansas-city-comedy-stand-up-improv-classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "kansascitycomedy.com",
+      "name": "The KC Improv Company",
+      "url": "https://www.kansascitycomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Westport (GreenHorn, 4010 Pennsylvania Ave)",
+      "summary": "Kansas City's longest-running improv company, performing since 2000, now playing Thursday nights at GreenHorn in Westport with eight-week Improv 101-301 classes at The Bowery and Thursday drop-ins in Waldo.",
+      "schedule": "Shows Thursdays 7pm at GreenHorn from Oct 1; drop-in classes Thursdays 7pm at KC Bier Co, Waldo",
+      "signals": [
+        "Performing since 2000",
+        "Improv 101, 201 and 301, eight weeks, $210",
+        "Diversity scholarships cover about half of class fees",
+        "Any-level drop-in classes in Waldo",
+        "Student showcases on the company stage",
+        "Also runs five levels at Trinity Lutheran's Mission, KS campus"
+      ],
+      "score": 72,
+      "reasons": "A quarter century of weekly shows and a three-level ladder with scholarships, but it performs one night a week in a bar it does not own and the class page still shows June start dates.",
+      "sources": [
+        "https://www.kansascitycomedy.com/",
+        "https://www.kansascitycomedy.com/classes",
+        "https://tlcms.org/project/improv-classes/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

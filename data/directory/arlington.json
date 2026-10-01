@@ -1,0 +1,56 @@
+{
+  "slug": "arlington",
+  "city": "Arlington",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:18.419Z",
+    "searches": 0,
+    "notes": "Arlington proper has no improv theater: the Arlington Improv at the Highlands is a stand-up chain club with no improv classes, and Theatre Arlington's acting classes use improvisation as a tool rather than teaching it. The metro's improv schools sit outside the brief, in Dallas (Dallas Comedy Club, Stomping Ground), Fort Worth (Four Day Weekend) and Richardson (The Alternative Comedy Theater); Zin",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "onstageinbedford.com",
+      "name": "ZingerZ Comedy Club at ONSTAGE in Bedford",
+      "url": "https://www.onstageinbedford.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Bedford (Old Bedford School)",
+      "summary": "DFW's family-friendly clean improv show, resident at the Old Bedford School theater ten miles north of Arlington, playing select Saturday nights with improv classes and a summer improv camp for ages 11 to 18.",
+      "schedule": "Clean Improv Comedy Show select Saturdays 7:30pm (e.g. Jan 10 2026); summer improv camp ages 11-18, $250",
+      "signals": [
+        "ZingerZ founded c. 2014",
+        "Resident at 2400 School Ln, Bedford",
+        "Family-friendly clean improv",
+        "Improv classes and youth camp",
+        "Audience-suggested scenes"
+      ],
+      "score": 38,
+      "reasons": "A decade-old troupe with a permanent stage and classes, but shows are select Saturdays and the venue page prints no dated calendar of its own.",
+      "sources": [
+        "https://www.onstageinbedford.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 1,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

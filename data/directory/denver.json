@@ -1,0 +1,116 @@
+{
+  "slug": "denver",
+  "city": "Denver",
+  "state": "Colorado",
+  "stateCode": "CO",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:30.578Z",
+    "searches": 0,
+    "notes": "Denver's improv has consolidated into two theatres, RISE in Ballpark and Chaos Bloom in Baker, after Bovine Metropolis and Impulse went dark. Boulder has a teaching collaborative but no improv stage of its own, and no Aurora improv organisation with a working site was found.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "risecomedy.com",
+      "name": "RISE Comedy",
+      "url": "https://www.risecomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Ballpark (22nd Street)",
+      "summary": "Denver's largest improv theatre and training center, founded 2011 as the Voodoo Comedy Playhouse, with shows most nights, classes in improv, stand-up, sketch, musical improv, acting and clown up to a 501 level, an open mic and festivals.",
+      "schedule": "Shows most nights; RISE & Shine open mic weekly; Denver Sketch Festival October 8 to 10, 2026",
+      "signals": [
+        "Founded 2011 as Voodoo Comedy Playhouse",
+        "Theatre of its own at 1260 22nd Street",
+        "Improv classes up to 501 plus five other tracks",
+        "Shows most nights of the week",
+        "RISE Comedy Festival and Denver Sketch Festival",
+        "Inclusion scholarship for classes"
+      ],
+      "score": 91,
+      "reasons": "Fifteen years in one building, a multi-track school, nightly programming and two festivals, with a calendar dated to the day.",
+      "sources": [
+        "https://www.risecomedy.com/",
+        "https://www.radicalagreement.com/improv/denver"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "chaosbloom.com",
+      "name": "Chaos Bloom Theater",
+      "url": "https://www.chaosbloom.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Baker (South Broadway)",
+      "summary": "A bohemian comedy theatre on South Broadway with an annex on Bayaud, teaching five improv levels in six-to-eight-week terms alongside sketch and stand-up, with shows Thursday to Sunday, house team nights and free comedy jams.",
+      "schedule": "Shows Thursday to Sunday; Level 5 improv Tuesdays October 13 to December 1; sketch Level 1 October 28 to December 9",
+      "signals": [
+        "Five improv levels, $175 to $225",
+        "Theatre plus annex in Baker",
+        "Shows Thursday to Sunday",
+        "Free comedy jams",
+        "Improv salons for $20",
+        "October 2026 dates listed"
+      ],
+      "score": 74,
+      "reasons": "A full class ladder, four show nights and free jams in a venue of its own; younger and smaller than RISE, with its founding story in a pandemic alley.",
+      "sources": [
+        "https://www.chaosbloom.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "theimprovcollaborative.com",
+      "name": "The Improv Collaborative",
+      "url": "https://theimprovcollaborative.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Boulder",
+      "summary": "Boulder's longest-running improv community, teaching a nine-week Beginner's Improv Sampler of short-form games and long-form scenes and a ten-week Improvisational Theater course, plus team-building for local companies.",
+      "schedule": "Beginner's Sampler Mondays September 21 to November 8 and Wednesdays September 23 to November 9",
+      "signals": [
+        "Boulder's longest-lasting improv community",
+        "Nine-week beginner course, 10 to 12 students",
+        "Ten-week improvisational theater course",
+        "Team-building clients include Google and CU"
+      ],
+      "score": 39,
+      "reasons": "Dated fall classes from Boulder's established improv teacher, but no venue, no shows and no advanced ladder.",
+      "sources": [
+        "https://theimprovcollaborative.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

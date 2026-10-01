@@ -1,0 +1,110 @@
+{
+  "slug": "fresno",
+  "city": "Fresno",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:33.033Z",
+    "searches": 0,
+    "notes": "Fresno has no improv theatre with a working website. Armpit Theater's site (armpitimprov.com) returns a host 'site not found' page though its Facebook still advertises teen classes, Blimprov's domain is for sale, and Brian's Beard Improv, which calls 1410 N Del Mar 'Fresno's improv home' and runs an improv fest, lives on Instagram and Facebook only. The best-documented classes are term courses at ",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "thecompanystudio.org",
+      "name": "The Company Studio",
+      "url": "https://www.thecompanystudio.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Tower District (GCP's Annex, N Wishon Ave)",
+      "summary": "Good Company Players' nonprofit training program in the Tower District, running term-length improv classes at GCP's Annex alongside dance and theatre skills.",
+      "schedule": "IMPROV: The Thursday Crew, Thursdays 5:15pm, Aug 27 - Nov 5; Advanced Improv Saturdays 5:15pm, Sep 5 - Nov 21",
+      "signals": [
+        "Backed by Good Company Players' production staff",
+        "Fall 2026 improv term Aug 27 - Nov 5",
+        "Advanced improv 'Been There, Wooshed That!' Sep 5 - Nov 21",
+        "Improv Starter Pack intro offer",
+        "501(c)(3) nonprofit",
+        "Based at 1105 N Wishon Ave"
+      ],
+      "score": 41,
+      "reasons": "The only dated, term-based improv classes with an institutional home in Fresno, but only two sections a term and no public improv shows.",
+      "sources": [
+        "https://www.thecompanystudio.org/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "cloviscommunityed.augusoft.net",
+      "name": "Clovis Community Education",
+      "url": "https://cloviscommunityed.augusoft.net/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Clovis (Clovis Adult Education)",
+      "summary": "Clovis Unified's adult-education programme runs Character Improv with Michael Robles, a seven-session evening class ending in a live performance.",
+      "schedule": "Wednesdays 6-8pm, seven sessions, $119",
+      "signals": [
+        "Instructor Michael Robles",
+        "Seven weekly sessions, $119",
+        "Ends with a live performance",
+        "Also an Improv class for ages 10+"
+      ],
+      "score": 25,
+      "reasons": "A real, affordable public-enrolment improv class with a showcase, but a single section inside an adult-ed catalogue with no shows or community.",
+      "sources": [
+        "https://cloviscommunityed.augusoft.net/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "unitedconservatory.org",
+      "name": "United Conservatory of Music & Arts",
+      "url": "https://unitedconservatory.org/acting-class-fresno",
+      "kind": [
+        "classes"
+      ],
+      "area": "North Fresno (6759 N First St) and Clovis",
+      "summary": "A music and arts conservatory whose acting department runs a 10-week improv series for kids, teens and adults focused on storytelling and character.",
+      "schedule": "Adults Sundays 12-1:30pm, teens Mondays 5pm, kids Sundays 1:45pm; page shows a March start",
+      "signals": [
+        "10-week improv series",
+        "Adult, teen and kids sections",
+        "Studios in Fresno and Clovis",
+        "No pricing listed; page dates are stale"
+      ],
+      "score": 22,
+      "reasons": "A genuine adult improv series at a permanent school, but it is a side offering with undated pricing and a page that still shows a March start.",
+      "sources": [
+        "https://unitedconservatory.org/acting-class-fresno"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

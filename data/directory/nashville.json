@@ -1,0 +1,159 @@
+{
+  "slug": "nashville",
+  "city": "Nashville",
+  "state": "Tennessee",
+  "stateCode": "TN",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:44.250Z",
+    "searches": 0,
+    "notes": "Nashville's improv runs through Third Coast Comedy Club, which absorbed LOL Nashville (lolnashville.com redirects there) and is raising money for a new home on Dickerson Pike. Metro Parks' Centennial Blackbox improv jam pages last show April 2024, M-Prov in Murfreesboro has no site of its own, Zanies is a stand-up club that books Oddity, and Nashville Children's Theatre's youth improv class page s",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "thirdcoastcomedy.club",
+      "name": "Third Coast Comedy Club",
+      "url": "https://www.thirdcoastcomedy.club/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Marathon Village (moving to Dickerson Pike)",
+      "summary": "Nashville's only brick-and-mortar club built around improv, grown out of LOL Nashville and opened after a 2016 Kickstarter; weekly improv, stand-up and sketch shows plus a training center with six improv levels.",
+      "schedule": "Seasons Jan-Apr, May-Aug and Sep-Dec with about 150 shows each; Monday open mic",
+      "signals": [
+        "Opened 2016 after an April 2016 Kickstarter",
+        "Grew out of LOL Nashville, founded 2013",
+        "Six improv levels plus electives and a free Improv Zero workshop",
+        "About 150 shows per season",
+        "Hosts Third Coast Improv Fest, 10th edition March 18-21, 2027",
+        "Raising funds for a new permanent home on Dickerson Pike"
+      ],
+      "score": 83,
+      "reasons": "A decade in its own room with the deepest class track in the city and shows most nights, docked a little for a venue move in progress and a site whose schedule pages could not be read.",
+      "sources": [
+        "https://www.thirdcoastcomedy.club/",
+        "https://www.thirdcoastcomedy.club/improv-comedy-class",
+        "https://www.thirdcoastimprovfest.com/",
+        "https://volume.com/thirdcoastcomedyclub/",
+        "https://www.lolnashville.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "unscriptedimprov.org",
+      "name": "Unscripted",
+      "url": "https://www.unscriptedimprov.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Inglewood / The Barbershop Theater",
+      "summary": "Nonprofit founded 2017 that teaches improv for access: six-week public classes, Improv for Anxiety, Third Beat for older adults, a free weekly Zoomprov jam and a residency with shows and Improv Club at The Barbershop Theater.",
+      "schedule": "Six-week Saturday class 9:30-11:30am; free weekly Zoomprov jam; Improv Club alternate Mondays 7-9pm",
+      "signals": [
+        "Founded 2017, nonprofit",
+        "Six-week public improv class on Saturday mornings",
+        "Improv for Anxiety and Third Beat (older adults) programmes",
+        "Free weekly Zoomprov jam",
+        "Residency at The Barbershop Theater with Verge Theater Company",
+        "Ninth-birthday benefit on September 27, 2026"
+      ],
+      "score": 52,
+      "reasons": "Nine years of mission-driven classes and jams with current events, but no venue of its own, few public shows and class pages that do not load a schedule.",
+      "sources": [
+        "https://www.unscriptedimprov.org/",
+        "https://www.unscriptedimprov.org/improv-club",
+        "https://www.unscriptedimprov.org/the-unscripted-improv-class",
+        "https://wnxp.org/what-where-when-sday-unscripted-improv-at-the-barbershop-theater/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "nashvilleimprov.com",
+      "name": "Nashville Improv",
+      "url": "https://www.nashvilleimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "East Nashville / Mt. Juliet",
+      "summary": "Woman-owned improv company founded 2012 that runs six-week Intro and Intermediate classes in East Nashville and short-form-to-musical shows at Playhouse 615 in Mt. Juliet.",
+      "schedule": "Shows Fridays 7:30pm at Playhouse 615 ($15); next six-week Intro course starts Oct 13, 2026 ($185)",
+      "signals": [
+        "Founded 2012",
+        "Woman-owned and operated",
+        "Intro and Intermediate six-week courses, $185",
+        "Shows at Playhouse 615, Mt. Juliet",
+        "Corporate training arm"
+      ],
+      "score": 51,
+      "reasons": "Fourteen years and a current class calendar, but only two levels, no room of its own and roughly monthly shows a half-hour out of town.",
+      "sources": [
+        "https://www.nashvilleimprov.com/classes-1",
+        "https://www.nashvilleimprov.com/shows",
+        "https://improwiki.com/en/improv_group/nashville_improv_company"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "oddityimprov.com",
+      "name": "Oddity Improv",
+      "url": "https://oddityimprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Franklin",
+      "summary": "Nonprofit clean-comedy troupe and training center founded by Groundlings and Second City alumni, opened in Franklin in 2024; monthly shows at The Franklin Theatre and dates at Zanies Nashville, with one-day workshops and youth classes.",
+      "schedule": "Second Tuesdays monthly at The Franklin Theatre; Zanies Nashville Nov 3, 2026; levelled core track on hold",
+      "signals": [
+        "Opened in Franklin in August 2024",
+        "Nonprofit (Oddity, Inc.)",
+        "Founders from The Groundlings and Second City",
+        "Monthly series at The Franklin Theatre",
+        "Improv 101 one-day workshops; core track currently on hold"
+      ],
+      "score": 42,
+      "reasons": "Two years old with real pedigree and a monthly theatre slot, but its levelled class track is on hold and its workshops show no upcoming dates.",
+      "sources": [
+        "https://oddityimprov.com/shows/",
+        "https://oddityimprov.com/workshops/",
+        "https://oddityimprov.com/about/",
+        "https://www.wsmv.com/2024/08/03/oddity-improv-opens-franklin-with-live-shows-free-comedy-workshops/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 4,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

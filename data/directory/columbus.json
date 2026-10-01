@@ -1,0 +1,89 @@
+{
+  "slug": "columbus",
+  "city": "Columbus",
+  "state": "Ohio",
+  "stateCode": "OH",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:29.349Z",
+    "searches": 0,
+    "notes": "Columbus improv runs through two rooms a mile apart on High Street, the Nest in Old North and Hashtag in the Short North, with troupes such as Bluebird Improv and Ohio State's Fishbowl playing their stages. Columbus Funny Bone advertises occasional improv classes but blocked verification, and the Columbus Comedy Festival each late summer is a festival rather than a venue.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "hashtagcomedy.com",
+      "name": "The Hashtag Comedy Club",
+      "url": "https://hashtagcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Short North (North High Street)",
+      "summary": "A comedy club and school at 1253 N High Street, grown from an improv show running more than thirteen years, with five improv levels, sketch and musical-improv workshops, a monthly house improv show, an improvised musical and touring comics.",
+      "schedule": "Hashtag Comedy Improv Show monthly, next October 9, November 13, December 11; Level 1 to 5 classes start late October",
+      "signals": [
+        "Improv show running more than 13 years",
+        "Club of its own in the Short North since 2023",
+        "Five improv levels plus sketch and senior classes",
+        "Monthly house improv show and improvised musical",
+        "Improvised-songs masterclass October 24",
+        "Calendar listed into January 2027"
+      ],
+      "score": 84,
+      "reasons": "A room of its own, a five-level school with October start dates and a calendar into 2027; the house improv show is monthly rather than weekly, which is the main gap.",
+      "sources": [
+        "https://hashtagcomedy.com/",
+        "https://www.radicalagreement.com/improv/columbus"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "nesttheatre.com",
+      "name": "The Nest Theatre",
+      "url": "https://nesttheatre.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Old North Columbus",
+      "summary": "Columbus's dedicated improv theatre since 2016, in Old North, with an improv-first class programme alongside sketch and experimental work and a stage that local press calls the center of the city's improv community.",
+      "schedule": "Classes and shows listed on the site's calendar",
+      "signals": [
+        "Dedicated to improv since 2016",
+        "Expanded its Old North space in 2024",
+        "Improv classes plus sketch and live literature",
+        "Profiled by the Columbus Dispatch, June 2025",
+        "Named in Columbus Monthly's August 2026 scene feature"
+      ],
+      "score": 66,
+      "reasons": "A decade-old improv theatre with a home of its own and consistent press through 2026, scored cautiously because its site renders no schedule to a text crawler.",
+      "sources": [
+        "https://nesttheatre.com/",
+        "https://www.radicalagreement.com/improv/columbus",
+        "https://news.google.com/rss/search?q=%22Nest+Theatre%22+Columbus"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

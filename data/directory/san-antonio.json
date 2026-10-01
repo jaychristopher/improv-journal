@@ -1,0 +1,56 @@
+{
+  "slug": "san-antonio",
+  "city": "San Antonio",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:08.844Z",
+    "searches": 0,
+    "notes": "San Antonio's improv presence online is thin: ComedySportz San Antonio's domains did not resolve or timed out, so its status is unconfirmed, and no improv school with its own site was found in this pass; the city's verifiable improv is a late-night troupe resident at a scripted theater.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "theovertimetheater.org",
+      "name": "The Denials at The Overtime Theater",
+      "url": "https://www.theovertimetheater.org/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Northwest San Antonio (Vance Jackson Road)",
+      "summary": "San Antonio's longest continuously running improv group plays adult-oriented suggestion-based shows every Saturday at 10:30pm in the Gregg Barrios Theatre at The Overtime Theater, 4335 Vance Jackson Road, which also offers improv workshops.",
+      "schedule": "Saturdays 10:30pm, $8 at the box office, most weekends",
+      "signals": [
+        "City's longest-running improv troupe",
+        "Weekly Saturday late show",
+        "Resident at a working theater",
+        "Overtime Theater lists improv workshops",
+        "The Denials' own domain points to Bandcamp"
+      ],
+      "score": 42,
+      "reasons": "A durable weekly show with a permanent host theater, but no school, no jam and a show page whose season listings were a year old when read.",
+      "sources": [
+        "https://www.theovertimetheater.org/shows",
+        "https://www.theovertimetheater.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 1,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

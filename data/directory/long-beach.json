@@ -1,0 +1,137 @@
+{
+  "slug": "long-beach",
+  "city": "Long Beach",
+  "state": "California",
+  "stateCode": "CA",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:38.367Z",
+    "searches": 0,
+    "notes": "Long Beach's improv scene is two schools, Held2gether in Bixby Knolls and The Playful Stage on the east side; the city sits inside the Los Angeles metro, so most performers also train at the big Hollywood theatres. Stand-up dominates downtown (Laugh Factory), and the former Long Beach Improv Collective has closed.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "held2gether.com",
+      "name": "Held2gether: Improv for Life",
+      "url": "https://www.held2gether.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Bixby Knolls, Long Beach",
+      "summary": "Long Beach's longest-running improv school, with a four-level short-form track plus long form, corporate training, a student jam and graduation shows in its own Atlantic Avenue space.",
+      "schedule": "Student Jam Fri Oct 9 2026 8pm; shows Sat Sep 26 and Sat Nov 14 2026 8pm",
+      "signals": [
+        "Founded 2010",
+        "Own space at 4321 Atlantic Ave",
+        "Levels 1-4 plus Long Form",
+        "Student jam and graduation shows",
+        "Corporate training arm"
+      ],
+      "score": 71,
+      "reasons": "Sixteen years and a permanent home with a full class ladder, but shows run roughly monthly rather than weekly and the site shows levels without published term dates.",
+      "sources": [
+        "https://www.held2gether.com/",
+        "https://www.held2gether.com/courses/",
+        "https://www.held2gether.com/about/",
+        "https://www.held2gether.com/performances/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "theplayfulstage.com",
+      "name": "The Playful Stage",
+      "url": "https://theplayfulstage.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "East Long Beach (Anaheim St)",
+      "summary": "A Black- and queer-owned improv, acting and sketch school on East Anaheim Street, running Improv Essentials through Scene Building and an ensemble, a twice-monthly Play & Sip jam at WERK, and seasonal shows.",
+      "schedule": "Play & Sip jam 2nd and 4th Thursdays 8pm at WERK; classes start Nov 2026; shows Oct 3 2026",
+      "signals": [
+        "Own studio at 4651 E Anaheim St",
+        "Improv Essentials to Ensemble track",
+        "Narrative and musical improv courses",
+        "Play & Sip jam twice monthly",
+        "Student Playground jam, 18+"
+      ],
+      "score": 63,
+      "reasons": "A current calendar, a real class progression and two jams earn it most of its points; it is young, and its public shows are occasional rather than a weekly house night.",
+      "sources": [
+        "https://theplayfulstage.com/",
+        "https://theplayfulstage.com/the-playground",
+        "https://theplayfulstage.com/shows",
+        "https://theplayfulstage.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "acting-out.weebly.com",
+      "name": "Acting Out Theater Camp",
+      "url": "https://acting-out.weebly.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Long Beach (Willow St)",
+      "summary": "A youth theatre programme for ages 7 to 17 whose classes, workshops and summer stock include improv, with a recurring Improv in the Park and fall and winter sessions enrolling.",
+      "schedule": "Fall and winter programmes enrolling; early-bird pricing through Oct 25",
+      "signals": [
+        "Ages 7-17",
+        "Improv in the Park",
+        "Summer stock with improv",
+        "Showcases at Bayshore Congregational Church"
+      ],
+      "score": 28,
+      "reasons": "A live, enrolling kids' programme with improv in it, but no adult path, no public shows beyond showcases, and a site that lists seasons more than dates.",
+      "sources": [
+        "https://acting-out.weebly.com/",
+        "https://acting-out.weebly.com/camp-location.html"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 3,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

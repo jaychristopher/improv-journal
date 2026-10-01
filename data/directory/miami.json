@@ -1,0 +1,177 @@
+{
+  "slug": "miami",
+  "city": "Miami",
+  "state": "Florida",
+  "stateCode": "FL",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:42.513Z",
+    "searches": 0,
+    "notes": "Miami improv is two theaters, Just The Funny and Villain, with the Broward side adding New River, This Is Improv and the Broward Center's courses. Spanish-language improv is a real strand here (Just The Funny's Dale Impro and Impro en espanol; La Impro Machine runs workshops but has no site of its own). Laughing Gas, South Florida's 1992 troupe, keeps a site with no current schedule; Short Round I",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "justthefunny.com",
+      "name": "Just The Funny",
+      "url": "https://www.justthefunny.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Coral Way, Miami",
+      "summary": "Miami's longest-running improv theater and training center, since 1999, in a black-box room on Coral Way: improv every Friday and Saturday, a monthly improvised musical, Spanish-language improv and six-week improv, sketch and stand-up class",
+      "schedule": "Friday Night Live Fri 9pm; The Big Show Sat 9pm; Deathmatch first Fridays; Cheap Trills last Saturdays; Improv 1 six wee",
+      "signals": [
+        "Founded 1999",
+        "Own theater at 3119 Coral Way",
+        "Shows every Friday and Saturday",
+        "Impro en espanol classes and Dale Impro show",
+        "Home of the Miami Improv Festival",
+        "Improvised musical monthly"
+      ],
+      "score": 86,
+      "reasons": "Twenty-seven years in its own room with two weekly house shows, a festival and a class ladder; the class page still carried spring dates at the time of reading, which costs it on currency.",
+      "sources": [
+        "https://www.justthefunny.com/",
+        "https://www.justthefunny.com/shows",
+        "https://www.justthefunny.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "villaintheater.com",
+      "name": "Villain Theater",
+      "url": "https://www.villaintheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Little River, Miami",
+      "summary": "A 5,000-square-foot comedy theater and training center on NE 2nd Avenue, teaching since 2015, with improv shows every Tuesday and Saturday, a company of 60-plus improvisers, and a three-level improv track plus sketch and stand-up writing.",
+      "schedule": "Improv Tue 8:30pm and Sat 8:30pm; VT-1 starts Oct 14 and Nov 11 2026, VT-2 Nov 12, VT-3 Nov 18 2026 ($400)",
+      "signals": [
+        "Teaching since June 2015",
+        "5,000 sq ft with stage, classrooms and film studio",
+        "800+ students",
+        "Company of 60+ improvisers",
+        "Three nights of shows weekly",
+        "Calls itself the largest improv training center in Florida"
+      ],
+      "score": 81,
+      "reasons": "A decade in a large space of its own, two weekly improv nights, a dated class calendar and a sizeable company; it trails Just The Funny only on years and on a two-show rather than a deeper weekend bill.",
+      "sources": [
+        "https://www.villaintheater.com/",
+        "https://www.villaintheater.com/shows",
+        "https://www.villaintheater.com/what-we-do"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "thisisimprov.com",
+      "name": "This Is Improv",
+      "url": "https://www.thisisimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Davie (Fort Lauderdale area)",
+      "summary": "A Broward County improv school and performance company, mostly at the Davie Woman's Club, with eight-week adult courses, kids' and teens' programmes, camps, a recurring Comedy Improv Jam and regular shows.",
+      "schedule": "Comedy Improv Jam Oct 2 2026 8pm; shows Sep 24 and Oct 8 2026; kids showcases Oct 6 and Oct 8 2026",
+      "signals": [
+        "Adult eight-week courses",
+        "Kids and teens ages 7-13",
+        "Recurring improv jam",
+        "Corporate arm This Is Biz",
+        "Student-run showcase company"
+      ],
+      "score": 52,
+      "reasons": "A current calendar with classes for every age, a jam and shows, held back by rented halls and a young, modest footprint.",
+      "sources": [
+        "https://www.thisisimprov.com/",
+        "https://www.thisisimprov.com/event-list"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "newrivertheater.com",
+      "name": "New River Theater",
+      "url": "https://www.newrivertheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown Fort Lauderdale",
+      "summary": "Fort Lauderdale's improv theater, founded by improviser and stand-up Josh Malina, running Level 1 and Level 2 intensives, Saturday morning drop-in classes and graduate showcases.",
+      "schedule": "Level 2 Mondays from Oct 26 2026, Level 1 Wednesdays from Oct 28 2026 ($195); drop-in Sat 10:30am $15",
+      "signals": [
+        "Level 1 and 2 intensives",
+        "Weekly drop-in class",
+        "Graduate showcases",
+        "Founder teaches at other South Florida theaters"
+      ],
+      "score": 45,
+      "reasons": "Dated autumn 2026 intensives and a weekly drop-in make it real, but it is new, small and shows are showcases rather than a house night.",
+      "sources": [
+        "https://www.newrivertheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "browardcenter.org",
+      "name": "Broward Center for the Performing Arts (Adult Comedy Improv)",
+      "url": "https://www.browardcenter.org/adults",
+      "kind": [
+        "classes"
+      ],
+      "area": "Downtown Fort Lauderdale",
+      "summary": "The performing-arts center's education department runs levelled adult comedy improv courses each term, from short-form games to a Level 3 class in long form that ends in a performance for friends and family.",
+      "schedule": "Level 2 Wednesdays Sep 9-Nov 18 2026 ($245); Level 3 Mondays Sep 14-Nov 30 2026 ($275)",
+      "signals": [
+        "Three class levels",
+        "Term dates published with the year",
+        "Final performance in Level 3",
+        "Major regional arts institution"
+      ],
+      "score": 42,
+      "reasons": "A stable institution with dated, levelled courses, but improv is one subject in a wide catalogue and there are no public shows or jams.",
+      "sources": [
+        "https://www.browardcenter.org/adults"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

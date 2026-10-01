@@ -1,0 +1,102 @@
+{
+  "slug": "fort-worth",
+  "city": "Fort Worth",
+  "state": "Texas",
+  "stateCode": "TX",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:12:31.152Z",
+    "searches": 0,
+    "notes": "Fort Worth's improv is in flux: Four Day Weekend, the city's anchor since 1997, lost its Sundance Square theater in 2024 and has no permanent Fort Worth stage, so most weekly improv in the metro now happens in Dallas. Panther City Improv's site has not been updated since its August 2024 jam, and Zingerz plays family improv in Bedford.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "fortworth.blcomedy.com",
+      "name": "Big Laugh Comedy Club Fort Worth",
+      "url": "https://fortworth.blcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Downtown (Main Street)",
+      "summary": "A downtown stand-up club at 604 Main Street that runs a six-week Level 1 improv course ending in a student showcase, a free two-hour intro class, and a family improv show, alongside nightly stand-up and a Wednesday open mic.",
+      "schedule": "Free intro improv class and After School Special improv show October 10; Level 1 course on six Saturdays",
+      "signals": [
+        "Level 1 improv course, six Saturdays, $240 to $300",
+        "Student showcase on the club stage",
+        "Free two-hour intro improv class",
+        "After School Special family improv show",
+        "Stand-up most nights, open mic Wednesdays",
+        "Calendar dated to the day"
+      ],
+      "score": 45,
+      "reasons": "A permanent room and a calendar dated to the day, but improv is one course and an occasional family show inside a stand-up club.",
+      "sources": [
+        "https://fortworth.blcomedy.com/",
+        "https://fortworth.blcomedy.com/submissions/level-1-improv-course",
+        "https://fortworth.blcomedy.com/calendar"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "stagewest.org",
+      "name": "Stage West Theatre",
+      "url": "https://stagewest.org/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Near Southside (West Vickery)",
+      "summary": "Fort Worth's professional theatre since 1979 runs adult classes at its Near Southside home, including a four-week Short Form Improv course open to all levels, and housed Four Day Weekend's 2024 residency.",
+      "schedule": "Short Form Improv on Tuesdays 7 to 9pm, October 27 to November 17, 2026, $175",
+      "signals": [
+        "Professional theatre founded 1979",
+        "Four-week Short Form Improv class",
+        "Adult acting classes every season",
+        "Hosted Four Day Weekend in 2024 and 2025"
+      ],
+      "score": 44,
+      "reasons": "A permanent institution with a dated, bookable improv class, but one short course a season and no improv shows of its own.",
+      "sources": [
+        "https://stagewest.org/adult-theatre-classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 2,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 0,
+      "updated": 2,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

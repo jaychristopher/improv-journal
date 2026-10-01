@@ -1,0 +1,95 @@
+{
+  "slug": "tucson",
+  "city": "Tucson",
+  "state": "Arizona",
+  "stateCode": "AZ",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:18.846Z",
+    "searches": 0,
+    "notes": "Two theaters split the city: TIM on 4th Avenue leans longform with a 101-501 comedy school, while Unscrewed on East Speedway is the volunteer-run home of family short-form. Live Theatre Workshop teaches improv only to grades 6-12, and Laffs Comedy Caffe is stand-up.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "tucsonimprov.com",
+      "name": "Tucson Improv Movement",
+      "url": "https://www.tucsonimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "4th Avenue (414 E 9th St)",
+      "summary": "Tucson's longform-leaning comedy theater and school since 2012: an intimate 40-seat room on 4th Avenue with improv, stand-up and sketch shows every Friday and Saturday and a comedy school running Improv 101 to 501.",
+      "schedule": "Shows Fri & Sat from 6:30pm; free Improv Jam Fridays 6:30pm; classes 6-8:30pm, six weeks",
+      "signals": [
+        "Founded October 2012 by Justin Lukasewicz",
+        "Improv 101-501 plus stand-up, sketch, teen and youth classes",
+        "Fall 2026 starts: Improv 101 Oct 13, 301 Oct 21, 501 Oct 27, 201 Nov 2",
+        "The Soap Box, Tucson's longest-running longform team, since 2014",
+        "Runs the Tucson Comedy Arts Festival (since 2015) and Cactus Flower Comedy Festival",
+        "Over 500 students and 100+ company members"
+      ],
+      "score": 89,
+      "reasons": "Thirteen years, its own theater, a five-level school with dated fall starts, shows every weekend, a free weekly jam and two festivals.",
+      "sources": [
+        "https://www.tucsonimprov.com/",
+        "https://www.tucsonimprov.com/classes",
+        "https://www.tucsonimprov.com/about",
+        "https://www.tucsonimprov.com/shows/thejam"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "unscrewedtheater.org",
+      "name": "Unscrewed Theater",
+      "url": "https://unscrewedtheater.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "East Speedway (Midway Business Park)",
+      "summary": "A volunteer-run 501(c)(3) improv theater and the home of Not Burnt Out Just Unscrewed, Tucson's family-friendly short-form troupe founded in 2002, with weekend shows, an eight-week Improv Basics course and a Monday drop-in.",
+      "schedule": "Family-friendly shows every Fri & Sat 7:30pm; uncensored shows 2nd & 4th Saturdays; drop-in Mondays 6:30pm",
+      "signals": [
+        "Troupe founded May 2002; dedicated venue since January 2014, on Speedway since 2018",
+        "Improv Basics: eight weeks, $179, includes a showcase",
+        "Fall 2026 Basics start Oct 10 and Oct 14",
+        "ImprovBlox six-week courses and one-day BloxShops",
+        "Monday drop-in, $10 suggested donation, in person or online",
+        "Scholarships for Basics and ImprovBlox"
+      ],
+      "score": 85,
+      "reasons": "Two decades of performing, its own theater since 2014, dated fall classes with a path into ImprovBlox and shows every weekend; it is smaller and volunteer-run.",
+      "sources": [
+        "https://unscrewedtheater.org/",
+        "https://unscrewedtheater.org/training-center",
+        "https://unscrewedcomedy.com/",
+        "https://improvarchive.org/locales/north-america/united-states/arizona/tucson"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 2,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

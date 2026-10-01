@@ -8,6 +8,12 @@ import {
   loadShows,
   loadThreads,
 } from "@/lib/content";
+import {
+  DIRECTORY_PATH,
+  directoryCityPath,
+  isIndexableDirectoryCity,
+  loadDirectory,
+} from "@/lib/directory";
 import { getIndexableCombinations } from "@/lib/exercise-picker";
 import { GUIDE_CATEGORIES, isStranded, trafficPotentialOf } from "@/lib/guide-categories";
 import { inDegreeIndex } from "@/lib/hub-order";
@@ -192,6 +198,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // the moment a principle gathers three drills that name it.
   for (const facet of await indexablePrincipleFacets()) {
     hub(facet.href, newest(atomsOfType("exercise")), 0.5);
+  }
+  // The improv directory (2026-10-01): the hub, as fresh as the engine's
+  // latest pass, and each city once it lists three verified places — the
+  // same gate the picker's facets use. A thinner city is served and
+  // noindexed, so it is not asked for here either.
+  const directory = loadDirectory();
+  const directoryModified =
+    directory
+      .map((c) => c.updated)
+      .filter((d): d is string => d !== null)
+      .sort()
+      .at(-1) ?? siteModified;
+  hub(DIRECTORY_PATH, directoryModified, 0.7);
+  for (const city of directory) {
+    if (!isIndexableDirectoryCity(city)) continue;
+    hub(directoryCityPath(city.slug), city.updated ?? siteModified, 0.6);
   }
 
   // Sub-hub pages, each as fresh as the atoms it lists

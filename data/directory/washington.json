@@ -1,0 +1,180 @@
+{
+  "slug": "washington",
+  "city": "Washington",
+  "state": "District of Columbia",
+  "stateCode": "DC",
+  "updated": "2026-10-01",
+  "engine": {
+    "model": "seed:claude-code",
+    "run": "2026-10-01T02:13:26.626Z",
+    "searches": 0,
+    "notes": "Washington improv centers on WIT, which leaves its Studio Theatre residency for a permanent NoMa home in January 2027, with the DC Improv's school as the other full ladder in the District. The Unified Scene Theater's and the Highwood Theatre's sites no longer resolve; Round House's Silver Spring education center and Theatre Lab list adult classes but no improv course.",
+    "rejected": [],
+    "unreachable": []
+  },
+  "entries": [
+    {
+      "id": "witdc.org",
+      "name": "Washington Improv Theater",
+      "url": "https://witdc.org/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Logan Circle (Studio Theatre), moving to NoMa in 2027",
+      "summary": "DC's nonprofit long-form improv theater, founded 1998, in residence at Studio Theatre and building a permanent home in NoMa for January 2027, with five core levels to the Harold, free workshops, weekly Harold Night and a show season.",
+      "schedule": "Harold Night free Mondays 7:30 and 8:30pm, jam 9:30; show runs September 25 to October 25; free workshops monthly",
+      "signals": [
+        "Founded 1998",
+        "Five core levels from Foundations to Harold",
+        "Free weekly Harold Night and jam",
+        "Free monthly workshops in every DC ward",
+        "Permanent home opening January 2027 in NoMa",
+        "Show season dated through October 2026"
+      ],
+      "score": 95,
+      "reasons": "Twenty-eight years, the region's deepest class ladder, a free weekly show and jam, and a dated season; the only thing missing is the building, which opens in 2027.",
+      "sources": [
+        "https://witdc.org/",
+        "https://witdc.org/classes/",
+        "https://witdc.org/watch/",
+        "https://witdc.org/wits-big-move/",
+        "https://witdc.org/improv-classes/improv-for-all/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "dcimprov.com",
+      "name": "DC Improv Comedy School",
+      "url": "https://www.dcimprov.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Dupont South (Connecticut Avenue)",
+      "summary": "The comedy school inside the DC Improv club on Connecticut Avenue, with improv courses from Beginning through Level 2, Advanced and Long Form Creation in five-to-six-week terms, graduation shows and a monthly improv jam.",
+      "schedule": "Beginning Improv starts October 5 and 10; advanced courses from November 8; 'Can I Get a Yes And' improv jam October 14",
+      "signals": [
+        "Club of its own since 1992",
+        "Improv levels from Beginning to Long Form Creation",
+        "Five-to-six-week terms with graduation shows",
+        "Monthly improv jam",
+        "Visiting masterclasses, David Razowsky November 3 to 8",
+        "Classes sell out"
+      ],
+      "score": 77,
+      "reasons": "A permanent club, a dated multi-level improv track and a jam, scored below WIT because improv shows are showcases inside a stand-up venue.",
+      "sources": [
+        "https://www.dcimprov.com/",
+        "https://www.dcimprov.com/comedy-school/improv"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 2
+    },
+    {
+      "id": "refleximprov.com",
+      "name": "Reflex Improv",
+      "url": "https://www.refleximprov.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Arlington, with classes across Northern Virginia",
+      "summary": "A Northern Virginia improv school teaching six-week Intro, Level 2 and Level 3 courses plus Harold, Bat and Armando format classes and musical improv in Arlington, Reston, Fairfax, Falls Church, Chantilly and Annapolis.",
+      "schedule": "Six-week courses, $230 in Arlington and $275 elsewhere; fall terms run late October to mid-December",
+      "signals": [
+        "Classes in Arlington and five other towns",
+        "Intro, Level 2, Level 3 and format classes",
+        "Musical improv course",
+        "Fall 2026 dates posted",
+        "Workplace workshops"
+      ],
+      "score": 50,
+      "reasons": "A clear ladder with dated terms close to Arlington, but a school without a theatre, so shows are student performances.",
+      "sources": [
+        "https://www.refleximprov.com/",
+        "https://www.radicalagreement.com/improv/washington-dc"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 3
+    },
+    {
+      "id": "thelittletheatre.com",
+      "name": "Little Theatre of Alexandria",
+      "url": "https://thelittletheatre.com/",
+      "kind": [
+        "classes"
+      ],
+      "area": "Old Town Alexandria",
+      "summary": "A community theatre founded 1934 with its own playhouse on Wolfe Street, whose adult class programme includes improv courses taught by Sarah Holt and Keely Kirk, registered each term through Active.",
+      "schedule": "Fall 2026 adult classes open for registration",
+      "signals": [
+        "Own playhouse in Old Town",
+        "Adult improv classes each term",
+        "Founded 1934",
+        "Registration through Active.com"
+      ],
+      "score": 46,
+      "reasons": "A permanent home and current adult improv classes, but improv is one strand of a drama school with no improv shows.",
+      "sources": [
+        "https://thelittletheatre.com/education"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "dojocomedy.com",
+      "name": "Dojo Comedy",
+      "url": "https://www.dojocomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Columbia Heights",
+      "summary": "A Columbia Heights improv and sketch school with a six-step improv track from a free Level 0 to a Level 5 Harold course, three sketch-writing levels, house teams and shows.",
+      "schedule": "Classes currently registering; dates by enquiry",
+      "signals": [
+        "Improv Levels 0 to 5, ending in the Harold",
+        "Three sketch-writing levels",
+        "Free Level 0 intro",
+        "House teams"
+      ],
+      "score": 42,
+      "reasons": "A complete written curriculum in a Metro-accessible neighborhood, but the site shows no class dates, address or show calendar.",
+      "sources": [
+        "https://www.dojocomedy.com/",
+        "https://www.dojocomedy.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-01",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 5
+    }
+  ],
+  "log": [
+    {
+      "run": "2026-10-01",
+      "added": 5,
+      "updated": 0,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    }
+  ]
+}

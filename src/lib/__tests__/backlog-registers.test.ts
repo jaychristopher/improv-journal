@@ -123,9 +123,12 @@ describe("the backlog register", () => {
     // 2026-09-30: the Prompt generator epic (PG) — PG-1 with three tasks, PG-2
     // with two, PG-3 and PG-4 with one each, the round the two studies of that
     // day argue for. 5 epics, 37 stories, 52 tasks.
-    expect(typed("epic")).toHaveLength(5);
-    expect(typed("story")).toHaveLength(37);
-    expect(tasks).toHaveLength(52);
+    // 2026-10-01: the Improv directory epic (DI) — DI-1 with three tasks and
+    // DI-2 with one, the owner's goal of an archive that reads itself.
+    // 6 epics, 39 stories, 56 tasks.
+    expect(typed("epic")).toHaveLength(6);
+    expect(typed("story")).toHaveLength(39);
+    expect(tasks).toHaveLength(56);
     // 2026-09-25, working the queue in ROI order: SA-2.1 closed. 17 done, 24 open.
     // SA-1.2 closed. 18 done, 23 open.
     // SA-15.1 closed. 19 done, 22 open.
@@ -143,8 +146,12 @@ describe("the backlog register", () => {
     // PG-1.3 closed: the mid-Atlantic guard. 29 done, 23 open.
     // PG-3.1 closed: the suggestion term and its reading. 30 done, 22 open.
     // PG-2.2 closed: the One word kind, merged on the owner's word. 31 done, 21 open.
-    expect(tasks.filter(isDone)).toHaveLength(31);
-    expect(openTasks).toHaveLength(21);
+    // 2026-10-01: DI-1.1 arrives done (the archive, the engine, the pages);
+    // DI-1.2 (the secret, a human), DI-1.3 (the first reading) and DI-2.1
+    // (the terms, after Search Console) arrive open. 32 done, 24 open.
+    // DI-1.3 closed the same day: every city read once. 33 done, 23 open.
+    expect(tasks.filter(isDone)).toHaveLength(33);
+    expect(openTasks).toHaveLength(23);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.
