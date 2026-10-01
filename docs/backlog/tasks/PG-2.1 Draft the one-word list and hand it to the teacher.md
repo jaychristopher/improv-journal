@@ -67,4 +67,6 @@ Impact 3, radius 2, opportunity 6, complexity 1, ROI 6.0.
 a hundred words in six groups, one line each on why it has texture, `p` and
 `a` marked, the three questions for the teacher at the foot. The human half is
 open: the owner sends it and records the answers under "What the teacher
-said".
+said". The kind merged ahead of the read on the owner's word (PG-2.2); the
+teacher's cuts land as an edit to src/lib/prompt-words-data.ts and the guide's
+runs when they arrive.

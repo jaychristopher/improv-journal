@@ -4,7 +4,7 @@ type: task
 summary: Add the One word kind — its own bank outside the scene-starter count, a guide section that lists every word, a tile beside the classic — on a branch, and merge once PG-2.1 has the teacher's cuts
 epic: "[[Prompt generator]]"
 parent: "[[PG-2 Longform opens on one word and the generator has none]]"
-status: To Do
+status: Done
 priority: Medium
 sequence: 2
 executable: agent
@@ -97,4 +97,14 @@ section and eight guards. ROI 3.0.
 
 ## Outcome
 
-_Not started._
+2026-09-30: built on branch `one-word` in two commits (02f135bc the bank,
+00b7cadf the kind) and merged to main on the owner's word ahead of the
+teacher's read, which becomes a bank edit when it arrives. A hundred words in
+their own bank outside the 573; the kind beside the classic on the hero's top
+row; the guide's section with every word in runs; the tool page's paragraph
+and question; eight guards moved or added with dated accounts; the concepts
+layer's flight ceiling re-dated for the six concept pages the section names.
+Verified in Chrome at 1440 and 390 wide against the served build: eight kinds,
+the pair at equal width, no short row, a word draws and never repeats, a
+school-room hand of four with nothing flagged, the section and its contents
+entry, the try line on the opening page.

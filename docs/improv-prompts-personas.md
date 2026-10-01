@@ -377,9 +377,9 @@ deepened — forty-four relationships and forty-two audience questions, the
 bank at 573 — with a guard for the wording rule; the tool page says
 "improv suggestion generator" once and its reading is in the route
 registry; and the one real ask the seven kinds lacked, a single word for a
-longform opening, is built on a branch as an eighth kind with its own bank
-outside the count, waiting on the owner's teacher to cut the list
-(docs/one-word-suggestions.md). The cards are in docs/backlog/Prompt
+longform opening, is an eighth kind with its own bank outside the count,
+merged on the owner's word ahead of the teacher's read; the cuts land as a
+bank edit when they arrive (docs/one-word-suggestions.md). The cards are in docs/backlog/Prompt
 generator.md; a PostHog reading a week after the merge decides between
 print slips from the cog and a cast setting.
 
