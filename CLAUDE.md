@@ -132,6 +132,11 @@ ranked by one rubric. Nothing in it is written by hand.
 - **Schedule**: `.github/workflows/directory-engine.yml`, daily, the next ten
   cities of the cycle, committing to `main`. It needs `ANTHROPIC_API_KEY` in
   the repository's Actions secrets (DI-1.2) and fails plainly without it.
+- **The pages are a listing** (the owner, 2026-10-01): no rank number, no
+  score, no per-entry date, no section on how the list is made, and no mention
+  of Claude or an engine on the hub, a city page, a meta description, the route
+  summary or llms.txt. The order the data holds is kept without comment; the
+  account of the rubric lives here and in the DI cards.
 - The prose is in `src/lib/directory-copy.ts` (listed in `hub-prose-links`);
   route files stay under the prose ceiling. No keywords are registered for
   these routes until Search Console shows them (DI-2.1).
