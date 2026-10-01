@@ -76,10 +76,26 @@ Impact 5, radius 4, opportunity 20, complexity 2, ROI 10.0.
 
 2026-10-01: done. `.github/workflows/directory-engine.yml` is deleted, the
 API path and the `@anthropic-ai/sdk` dependency are gone, and the engine's
-commands are now `--plan`, `--prompt`, `--seed` and `--dry`. `--seed` moves
+commands are now `--plan`, `--prompt`, `--seed`, `--check` and `--dry`. `--seed` moves
 the cursor past the last city it imported, which is what makes a dropped run
 free: planning reads the cursor and never writes it.
 
 The reading itself is the scheduled session's own web search, so there is no
 key, no bill beyond the session, and no secret to rotate. The runbook is
 `docs/directory-engine-run.md`.
+
+The cadence is not daily. The owner's second word on it: "it should be
+monthly or quarterly based on how quickly these things change." It is now two
+jobs, because the two things that go wrong go wrong at different speeds — the
+**reading** on the 1st and the 15th, ten cities a run, so every city is
+re-read quarterly, which is about as often as a theatre opens, closes or
+moves; and a **link check** weekly (`--check`), one fetch an entry and no
+searches, because a website dies the day the venue does.
+
+Ten cities a run is not a round number, it is the measured one: the test run
+exhausted its shared search budget on ten, and the four cities it reached
+last came back thin. The runbook now tells a run to spend the budget evenly
+and to stop discovering before it stops re-verifying.
+
+The test run also found the one thing a run cannot do for itself — see
+DI-1.4.

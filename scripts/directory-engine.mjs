@@ -15,15 +15,23 @@
  *   node scripts/directory-engine.mjs --seed <dir>
  *       import the replies in <dir> (one <slug>.json a city) and advance the
  *       cycle past them
+ *   node scripts/directory-engine.mjs --check
+ *       fetch every listed website and take the dead ones off the pages
  *   node scripts/directory-engine.mjs --dry --cities chicago
  *       no network: the fixture reply through the same checks and merge
  *
  * There is no API key and no API call. The reading is done by whatever Claude
- * session is running the script — in a terminal, or the daily cloud schedule
- * described in docs/directory-engine-run.md, which is the runbook that
- * schedule follows. That is the owner's choice (2026-10-01): the work is a
- * research task Claude already does, and an unattended key is a cost and a
- * secret to look after for no gain.
+ * session is running the script — in a terminal, or the cloud schedules
+ * described in docs/directory-engine-run.md, which is the runbook they
+ * follow. That is the owner's choice (2026-10-01): the work is a research
+ * task Claude already does, and an unattended key is a cost and a secret to
+ * look after for no gain.
+ *
+ * Two schedules, because the two things that go wrong go wrong at different
+ * speeds. Ten cities twice a month re-reads every city quarterly, which is
+ * about as often as a theatre opens, closes or moves. The link check runs
+ * weekly, costs nothing but a fetch an entry, and is what keeps a dead link
+ * off a page between readings.
  *
  * The rules that need no network — reading a reply, checking an entry,
  * merging a reading, ranking — live in scripts/lib/directory.mjs and are
@@ -177,10 +185,10 @@ async function runCity(meta, reply) {
 /**
  * --plan N: the cities due now and what to ask about each.
  *
- * The cycle is a cursor into cities.json, so ten a day re-reads all sixty in
- * about a week. Planning moves nothing: the cursor advances only when a
- * reading is imported, so a run that never finishes leaves the same cities
- * due tomorrow.
+ * The cycle is a cursor into cities.json, so ten cities twice a month
+ * re-reads all sixty quarterly. Planning moves nothing: the cursor advances
+ * only when a reading is imported, so a run that never finishes leaves the
+ * same cities due next time.
  */
 function printPlan() {
   const chosen = pickCities();
@@ -225,9 +233,9 @@ function printPrompt(slug) {
  * --seed <dir>: a folder of `<slug>.json` replies, one a city, imported
  * through the checks, the fetches and the merge. This is how every reading
  * arrives — the first pass over all sixty cities on 2026-10-01, and every
- * daily run since the schedule took over.
+ * scheduled run since.
  *
- * The cycle advances past the last city imported, so tomorrow's plan is the
+ * The cycle advances past the last city imported, so the next plan is the
  * next ten. `--no-advance` leaves it alone, for a one-off re-read of named
  * cities that should not cost the cycle its place.
  */
@@ -279,6 +287,61 @@ async function seedFrom(dir) {
   if (done === 0) process.exit(1);
 }
 
+/**
+ * --check: fetch every listed website and take the dead ones off the pages.
+ *
+ * The reading is quarterly because improv theatres change at about that pace
+ * (the owner, 2026-10-01). A website does not: it goes when the venue goes,
+ * and a link that 404s is the worst thing a directory can show somebody who
+ * is deciding where to turn up. This needs no research and no searches — it
+ * is one fetch an entry — so it runs weekly and the slow reading stays safe.
+ *
+ * Two failed checks, not one: `reachable` already counts any HTTP answer and
+ * retries three times, so one failure is a dead domain rather than a bad
+ * minute, but a fortnight of them is the evidence worth acting on. An entry
+ * that goes quiet is marked `unseen`, which keeps it in the file and takes it
+ * off the page; if its site answers again it comes straight back.
+ */
+async function checkLinks() {
+  let checked = 0;
+  let hidden = 0;
+  let restored = 0;
+  let still = 0;
+  for (const meta of cities) {
+    const file = path.join(DIR, `${meta.slug}.json`);
+    if (!fs.existsSync(file)) continue;
+    const city = readJson(file, null);
+    if (!city?.entries?.length) continue;
+    const queue = [...city.entries];
+    const workers = Array.from({ length: VERIFY_CONCURRENCY }, async () => {
+      while (queue.length) {
+        const entry = queue.shift();
+        const ok = await reachable(entry.url);
+        checked += 1;
+        if (ok) {
+          if (entry.status === "unseen") restored += 1;
+          entry.status = "live";
+          delete entry.deadChecks;
+        } else {
+          entry.deadChecks = (entry.deadChecks ?? 0) + 1;
+          if (entry.deadChecks >= 2) {
+            if (entry.status !== "unseen") hidden += 1;
+            entry.status = "unseen";
+          } else {
+            entry.status = "unverified";
+            still += 1;
+          }
+        }
+      }
+    });
+    await Promise.all(workers);
+    writeJson(file, city);
+  }
+  console.log(
+    `checked ${checked} websites: ${hidden} taken off the pages, ${still} failing once, ${restored} back`,
+  );
+}
+
 /** --dry: the fixture reply through the same checks and merge. No network. */
 async function dryRun() {
   const chosen = pickCities();
@@ -295,10 +358,11 @@ const USAGE = `The directory engine reads the web through the Claude session run
   --plan <n> [--out <dir>]   the cities due now, with a prompt file each
   --prompt <slug>            the prompt for one city
   --seed <dir>               import <slug>.json replies and advance the cycle
+  --check                    fetch every listed website; hide the dead ones
   --dry --cities <slug>      the fixture through the same merge, no network
 
-The daily run is a cloud schedule; docs/directory-engine-run.md is what it
-follows.`;
+The runs are cloud schedules; docs/directory-engine-run.md is what they
+follow.`;
 
 async function main() {
   const seedDir = value("seed");
@@ -306,6 +370,7 @@ async function main() {
   const promptSlug = value("prompt");
   if (promptSlug) return printPrompt(promptSlug);
   if (flag("plan") || flag("next")) return printPlan();
+  if (flag("check")) return checkLinks();
   if (DRY) return dryRun();
   console.error(USAGE);
   process.exit(1);

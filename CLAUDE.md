@@ -131,13 +131,18 @@ ranked by one rubric. Nothing in it is written by hand.
   `--prompt <slug>` prints one city's prompt and `--dry` runs the fixture. The
   pure half is `scripts/lib/directory.mjs`, held by `directory-engine.test.ts`;
   the data by `directory.test.ts`.
-- **Schedule**: a cloud scheduled Claude session, daily, on the next ten cities
-  of the cycle, committing `data/directory` to `main`. It follows
-  `docs/directory-engine-run.md`, which is the runbook to change if the run
-  should do something different. **There is no API key** and nothing in the
-  repository needs one: the reading is the session's own web search (the
-  owner, 2026-10-01). Planning never moves the cursor, so a missed day costs
-  nothing.
+- **Schedules**: two cloud scheduled Claude sessions, both following
+  `docs/directory-engine-run.md` — the runbook to change if a run should do
+  something different. The **reading** goes on the 1st and the 15th, ten
+  cities a run, so every city is re-read quarterly, which is about as often
+  as a theatre opens, closes or moves. The **link check** goes weekly,
+  `--check`, one fetch an entry and no searches, because a website dies the
+  day the venue does and that is what a reader feels. **There is no API key**
+  and nothing in the repository needs one: the reading is the session's own
+  web search (the owner, 2026-10-01). Planning never moves the cursor, so a
+  missed run costs nothing. The runs need the Claude GitHub App to hold push
+  access to the repository (DI-1.4); without it a run does all the work and
+  cannot publish it.
 - **The pages are a listing** (the owner, 2026-10-01): no rank number, no
   score, no per-entry date, no section on how the list is made, and no mention
   of Claude or an engine on the hub, a city page, a meta description, the route

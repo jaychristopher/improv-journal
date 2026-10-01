@@ -10,6 +10,7 @@ tasks:
   - "[[DI-1.1 Build the archive, the engine and the pages]]"
   - "[[DI-1.2 Run the daily read as a cloud schedule]]"
   - "[[DI-1.3 Make the first reading of every city]]"
+  - "[[DI-1.4 Give the scheduled runs push access]]"
 ---
 
 # DI-1 — The archive and the engine
@@ -32,6 +33,8 @@ what changed, which deploys (DI-1.2, following
 `docs/directory-engine-run.md`).
 
 It holds no key. The reading is a research task the session does itself, so
-the script plans the day and imports what comes back rather than calling an
+the script plans the round and imports what comes back rather than calling an
 API — which is also how the first reading of all sixty cities was made
-(DI-1.3), through the same checks.
+(DI-1.3), through the same checks. What it does need is for the Claude GitHub
+App to be allowed to push to this repository: without that a run does the
+whole job and ends on a 403 (DI-1.4).
