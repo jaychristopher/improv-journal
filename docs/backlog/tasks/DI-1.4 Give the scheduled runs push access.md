@@ -75,6 +75,15 @@ means not fixed.
 Then, on the next reading, `git log --oneline -- data/directory` shows a
 commit by the run.
 
+## If the app route cannot be made to work
+
+A fine-grained GitHub personal access token, scoped to this one repository
+with Contents: read and write, set as an environment variable on each
+routine, and the runbook pushing through it. It works, and it is worth being
+clear about what it costs: a credential to mint, store in the routine's
+config and rotate, which is the shape of thing the owner turned down when
+they turned down the API key. Try the app first.
+
 ## Acceptance criteria
 
 - A scheduled run pushes to `main` without a 403.
@@ -86,6 +95,14 @@ Impact 5, radius 4, opportunity 20, complexity 1, ROI 20.0.
 
 ## Outcome
 
-Open. Note what this is not: it is not an API key. Nothing is minted,
+Open. Two readings lost to it (2026-10-01), each a full ten-city research
+run that passed every check and could not publish. Since then the runbook
+opens with a dry-run push: the third attempt stopped in 21 seconds having
+spent nothing, which is the pre-flight working as intended and not the
+problem being fixed.
+
+A local `git push --dry-run` is not the test. It authenticates as the owner,
+which was never in doubt; the refusal is the GitHub App's, from inside the
+cloud sandbox. The test is a run. Note what this is not: it is not an API key. Nothing is minted,
 nothing is stored in the repository and nothing expires — it is the GitHub
 App being allowed to see one repository, once.
