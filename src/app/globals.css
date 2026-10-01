@@ -568,6 +568,30 @@ body {
 }
 
 /*
+ * Forced colours (Windows' high contrast themes) replace every background a
+ * page sets, which would take the map and its dots with them: a tinted mask
+ * and a coloured dot are both backgrounds. These opt out and name system
+ * colours instead, so the map stays a map and a dot stays a link.
+ */
+@media (forced-colors: active) {
+  .us-map-base {
+    forced-color-adjust: none;
+    background-color: CanvasText;
+  }
+
+  .us-map-dot {
+    forced-color-adjust: none;
+    background-color: LinkText;
+  }
+
+  .us-map-dot-empty {
+    forced-color-adjust: none;
+    background-color: Canvas;
+    border-color: GrayText;
+  }
+}
+
+/*
  * Printed, a guide's lists come out as slips: one prompt to a line with a cut
  * line under each, the site's name at the foot, and nothing that only makes
  * sense on a screen — the hero tool, the menu, the breadcrumb, the contents,

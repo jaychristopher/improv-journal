@@ -199,6 +199,14 @@ describe("the map's parts", () => {
     expect(component).toContain('aria-hidden="true"');
     // A way past sixty tab stops.
     expect(component).toContain("sr-only focus-visible:not-sr-only");
+    // Named, so a reader who tabs into the middle of it knows where they are.
+    expect(component).toContain('role="group"');
+    expect(component).toContain("aria-labelledby={labelledBy}");
+    // Forced-colours themes replace every background a page sets, and both the
+    // map and its dots are backgrounds.
+    const css = fs.readFileSync(CSS, "utf8");
+    expect(css).toContain("@media (forced-colors: active)");
+    expect(css).toContain("background-color: LinkText");
   });
 });
 

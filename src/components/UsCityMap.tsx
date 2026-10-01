@@ -79,11 +79,14 @@ export function UsCityMap({
   places,
   skipTo,
   skipLabel,
+  labelledBy,
 }: {
   places: readonly UsCityMapPlace[];
   /** The fragment the skip link jumps to: the same cities, as text. */
   skipTo: string;
   skipLabel: string;
+  /** The id of the heading this map sits under. */
+  labelledBy: string;
 }) {
   const [active, setActive] = useState<string | null>(null);
   const [dismissed, setDismissed] = useState(false);
@@ -123,6 +126,10 @@ export function UsCityMap({
           reader scrolls it. */}
       <div className="-mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
         <div
+          // Named after the heading above it, so a reader who arrives inside
+          // the map by tabbing is told what the sixty links belong to.
+          role="group"
+          aria-labelledby={labelledBy}
           className="relative min-w-[41rem]"
           style={{ aspectRatio: `${W} / ${H}` }}
           data-track="directory-map"

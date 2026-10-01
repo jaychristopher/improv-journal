@@ -124,7 +124,12 @@ export default function ImprovNearYouPage() {
       <h2 id="map" className="mt-12 text-2xl font-semibold">
         On the map
       </h2>
-      <UsCityMap places={places} skipTo="#cities" skipLabel="Skip the map, go to the city list" />
+      <UsCityMap
+        places={places}
+        skipTo="#cities"
+        skipLabel="Skip the map, go to the city list"
+        labelledBy="map"
+      />
 
       <h2 id="cities" className="mt-12 text-2xl font-semibold">
         Cities
