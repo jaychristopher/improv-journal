@@ -153,8 +153,10 @@ describe("the backlog register", () => {
     // (the terms, after Search Console) arrive open. 32 done, 24 open.
     // DI-1.3 closed the same day: every city read once. 33 done, 23 open.
     // DI-3.1 arrives done: the map. 34 done, 23 open.
-    expect(tasks.filter(isDone)).toHaveLength(34);
-    expect(openTasks).toHaveLength(23);
+    // DI-1.2 was the owner setting an API key; the owner asked for a cloud
+    // schedule instead, so it is now that, and done. 35 done, 22 open.
+    expect(tasks.filter(isDone)).toHaveLength(35);
+    expect(openTasks).toHaveLength(22);
 
     // Every task hangs off a story and every story off an epic, or the report's
     // walk from epic to story to task silently drops it and prints a shorter list.

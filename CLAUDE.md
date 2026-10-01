@@ -123,15 +123,21 @@ ranked by one rubric. Nothing in it is written by hand.
   `lastSeen`, `missingRuns`, `status`, `rank`). `src/lib/directory.ts` reads
   them at build time; a city with fewer than three verified places is served,
   noindexed, and absent from the sitemap and llms.txt (`isIndexableDirectoryCity`).
-- **Engine**: `scripts/directory-engine.mjs` asks Claude (web search tool) to
-  read a city, fetches every site it names, merges with the file (unseen three
-  passes running → dropped; reported closed → dropped at once), ranks and
-  writes. The pure half is `scripts/lib/directory.mjs`, held by
-  `directory-engine.test.ts`; the data by `directory.test.ts`. `--dry` runs
-  the fixture, `--seed <dir>` imports replies made in a session.
-- **Schedule**: `.github/workflows/directory-engine.yml`, daily, the next ten
-  cities of the cycle, committing to `main`. It needs `ANTHROPIC_API_KEY` in
-  the repository's Actions secrets (DI-1.2) and fails plainly without it.
+- **Engine**: `scripts/directory-engine.mjs` holds everything around the
+  reading — `--plan N` says which cities are due and writes a prompt each,
+  `--seed <dir>` imports the replies, fetching every site named, merging with
+  the file (unseen three passes running → dropped; reported closed → dropped
+  at once), ranking, writing, and advancing the cycle past what it imported.
+  `--prompt <slug>` prints one city's prompt and `--dry` runs the fixture. The
+  pure half is `scripts/lib/directory.mjs`, held by `directory-engine.test.ts`;
+  the data by `directory.test.ts`.
+- **Schedule**: a cloud scheduled Claude session, daily, on the next ten cities
+  of the cycle, committing `data/directory` to `main`. It follows
+  `docs/directory-engine-run.md`, which is the runbook to change if the run
+  should do something different. **There is no API key** and nothing in the
+  repository needs one: the reading is the session's own web search (the
+  owner, 2026-10-01). Planning never moves the cursor, so a missed day costs
+  nothing.
 - **The pages are a listing** (the owner, 2026-10-01): no rank number, no
   score, no per-entry date, no section on how the list is made, and no mention
   of Claude or an engine on the hub, a city page, a meta description, the route

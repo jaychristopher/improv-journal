@@ -8,7 +8,7 @@ priority: High
 labels: [product, directory, engine]
 tasks:
   - "[[DI-1.1 Build the archive, the engine and the pages]]"
-  - "[[DI-1.2 Set the Actions secret and run the engine once]]"
+  - "[[DI-1.2 Run the daily read as a cloud schedule]]"
   - "[[DI-1.3 Make the first reading of every city]]"
 ---
 
@@ -26,10 +26,12 @@ standing, a current website.
 The engine is a script, not a person: Claude searches the live web for a
 city with the web search tool, the script fetches every site it names, keeps
 what answers, merges with the file (three passes unseen and an entry goes; a
-closed venue goes at once), ranks and writes. A GitHub Actions workflow runs
-it daily on the next ten cities of the cycle and commits what changed, which
-deploys. The one thing it cannot do for itself is hold the key: DI-1.2 is
-the owner setting `ANTHROPIC_API_KEY` in the repository's secrets.
+closed venue goes at once), ranks and writes. A cloud scheduled Claude
+session does that every day on the next ten cities of the cycle and commits
+what changed, which deploys (DI-1.2, following
+`docs/directory-engine-run.md`).
 
-The first reading was made before that secret existed, by Claude in a
-session, and imported through the same checks the API path uses (DI-1.3).
+It holds no key. The reading is a research task the session does itself, so
+the script plans the day and imports what comes back rather than calling an
+API — which is also how the first reading of all sixty cities was made
+(DI-1.3), through the same checks.

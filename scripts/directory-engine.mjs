@@ -2,23 +2,28 @@
 /**
  * The directory engine.
  *
- * Claude reads the live web for a city's improv theatres, schools and
- * recurring shows, the script verifies every website answers, merges the
- * reading with what data/directory/<city>.json already holds, ranks the
- * entries by the archive's rubric, and writes the file. A GitHub Actions
- * workflow (.github/workflows/directory-engine.yml) runs it every day on the
- * next few cities of the cycle and commits whatever changed, so the archive
- * keeps itself without anybody opening it.
+ * The archive at /improv-near-you keeps itself: a scheduled Claude session
+ * reads the live web for a city's improv theatres, schools and recurring
+ * shows, and this script does everything around that — which cities are due,
+ * what to ask about each, then checking every entry, fetching every website,
+ * merging with what the city file already holds, ranking, and writing.
  *
- *   node scripts/directory-engine.mjs --next 10            the daily run: the next ten cities on the cycle
- *   node scripts/directory-engine.mjs --cities chicago,austin
- *   node scripts/directory-engine.mjs --all                 every city (the first seed)
- *   node scripts/directory-engine.mjs --dry --cities chicago   no API, no network: the fixture reply through the same merge
+ *   node scripts/directory-engine.mjs --plan 10 --out <dir>
+ *       the cities due now, with one prompt file each, written to <dir>
+ *   node scripts/directory-engine.mjs --prompt chicago
+ *       the prompt for one city, on stdout
+ *   node scripts/directory-engine.mjs --seed <dir>
+ *       import the replies in <dir> (one <slug>.json a city) and advance the
+ *       cycle past them
+ *   node scripts/directory-engine.mjs --dry --cities chicago
+ *       no network: the fixture reply through the same checks and merge
  *
- * Env: ANTHROPIC_API_KEY (required unless --dry); DIRECTORY_MODEL (default
- * claude-sonnet-5); DIRECTORY_MAX_SEARCHES per city (default 12). The web
- * search tool is billed per search on top of tokens, so --next keeps a run
- * to a few cities and the cycle re-reads every city in about a week.
+ * There is no API key and no API call. The reading is done by whatever Claude
+ * session is running the script — in a terminal, or the daily cloud schedule
+ * described in docs/directory-engine-run.md, which is the runbook that
+ * schedule follows. That is the owner's choice (2026-10-01): the work is a
+ * research task Claude already does, and an unattended key is a cost and a
+ * secret to look after for no gain.
  *
  * The rules that need no network — reading a reply, checking an entry,
  * merging a reading, ranking — live in scripts/lib/directory.mjs and are
@@ -32,7 +37,6 @@ import {
   emptyCity,
   fixtureReply,
   mergeCity,
-  parseEngineReply,
   validateEntry,
 } from "./lib/directory.mjs";
 
@@ -40,8 +44,6 @@ const ROOT = process.cwd();
 const DIR = path.join(ROOT, "data", "directory");
 const CITIES_FILE = path.join(DIR, "cities.json");
 const STATE_FILE = path.join(DIR, "engine-state.json");
-const MODEL = process.env.DIRECTORY_MODEL || "claude-sonnet-5";
-const MAX_SEARCHES = Number(process.env.DIRECTORY_MAX_SEARCHES || 12);
 const VERIFY_TIMEOUT_MS = 12_000;
 const VERIFY_CONCURRENCY = 5;
 
@@ -64,10 +66,11 @@ if (!cities.length) {
   process.exit(1);
 }
 const state = readJson(STATE_FILE, { cursor: 0, runs: [] });
+const indexOfSlug = new Map(cities.map((c, i) => [c.slug, i]));
 
-/** Which cities this run reads, and where the cursor lands afterwards. */
+/** Which cities a run covers: the next few on the cycle, named ones, or all. */
 function pickCities() {
-  if (flag("all")) return { chosen: cities, cursor: 0 };
+  if (flag("all")) return cities;
   const named = value("cities");
   if (named) {
     const want = new Set(
@@ -76,53 +79,16 @@ function pickCities() {
         .map((s) => s.trim())
         .filter(Boolean),
     );
-    const chosen = cities.filter((c) => want.has(c.slug));
-    const missing = [...want].filter((s) => !cities.some((c) => c.slug === s));
+    const missing = [...want].filter((s) => !indexOfSlug.has(s));
     if (missing.length) console.error(`unknown cities: ${missing.join(", ")}`);
-    return { chosen, cursor: state.cursor };
+    return cities.filter((c) => want.has(c.slug));
   }
-  const n = Math.max(1, Number(value("next") || 10));
+  const n = Math.max(1, Number(value("plan") || value("next") || 10));
   const start = state.cursor % cities.length;
   const chosen = [];
   for (let i = 0; i < Math.min(n, cities.length); i++)
     chosen.push(cities[(start + i) % cities.length]);
-  return { chosen, cursor: (start + chosen.length) % cities.length };
-}
-
-/** Ask Claude, continuing through pause_turn, and return the text it wrote. */
-async function askClaude(client, meta, existing) {
-  const tools = [
-    {
-      type: "web_search_20250305",
-      name: "web_search",
-      max_uses: MAX_SEARCHES,
-      user_location: { type: "approximate", city: meta.city, region: meta.state, country: "US" },
-    },
-  ];
-  const system =
-    "You are the research engine for an archive of improv theatres, schools and recurring improv shows in United States cities. You search the live web and return only organisations that exist now, with their own websites. Precision over recall. Output JSON only, in a single ```json fence.";
-  const messages = [{ role: "user", content: buildPrompt(meta, existing) }];
-  let searches = 0;
-  for (let turn = 0; turn < 6; turn++) {
-    const response = await client.messages.create({
-      model: MODEL,
-      max_tokens: 8000,
-      system,
-      tools,
-      messages,
-    });
-    searches += response.usage?.server_tool_use?.web_search_requests ?? 0;
-    if (response.stop_reason === "pause_turn") {
-      messages.push({ role: "assistant", content: response.content });
-      continue;
-    }
-    const text = response.content
-      .filter((block) => block.type === "text")
-      .map((block) => block.text)
-      .join("\n");
-    return { text, searches };
-  }
-  throw new Error("the search turn never finished");
+  return chosen;
 }
 
 /**
@@ -170,26 +136,13 @@ async function verifyAll(entries) {
 }
 
 /**
- * One city through the engine. `seeded` is a reply already in hand — the
- * first reading, made by Claude in a session rather than through the API
- * (--seed) — which skips the search and takes the same road from there:
- * every entry checked, every site fetched, merged and ranked.
+ * One city through the engine: every entry checked, every site fetched,
+ * merged with what the file holds, ranked, written. `reply` is the reading
+ * the session made, or the fixture under --dry.
  */
-async function runCity(client, meta, seeded = null) {
+async function runCity(meta, reply) {
   const file = path.join(DIR, `${meta.slug}.json`);
   const existing = readJson(file, emptyCity(meta));
-  let reply;
-  let searches = 0;
-  if (seeded) {
-    reply = seeded;
-  } else if (DRY) {
-    reply = fixtureReply(meta);
-  } else {
-    const asked = await askClaude(client, meta, existing);
-    searches = asked.searches;
-    reply = parseEngineReply(asked.text);
-    if (!reply) throw new Error("no JSON in the reply");
-  }
   const fresh = [];
   const rejected = [];
   for (const raw of reply.entries) {
@@ -207,25 +160,76 @@ async function runCity(client, meta, seeded = null) {
     closed: Array.isArray(reply.closed) ? reply.closed : [],
   });
   city.engine = {
-    model: seeded ? "seed:claude-code" : DRY ? "fixture" : MODEL,
+    model: DRY ? "fixture" : "seed:claude-code",
     run: new Date().toISOString(),
-    searches,
+    searches: 0,
     notes: typeof reply.notes === "string" ? reply.notes.slice(0, 400) : "",
     rejected: rejected.slice(0, 10),
     unreachable: unreachable.slice(0, 10),
   };
   writeJson(file, city);
   console.log(
-    `${meta.slug}: ${city.entries.length} entries (+${log.added} ~${log.updated} -${log.dropped}, ${log.unverified} unverified, ${unreachable.length} unreachable, ${rejected.length} rejected), ${searches} searches`,
+    `${meta.slug}: ${city.entries.length} entries (+${log.added} ~${log.updated} -${log.dropped}, ${log.unverified} unverified, ${unreachable.length} unreachable, ${rejected.length} rejected)`,
   );
-  return { slug: meta.slug, searches, entries: city.entries.length, ...log };
+  return { slug: meta.slug, entries: city.entries.length, ...log };
 }
 
 /**
- * --seed <dir>: a folder of <slug>.json replies made by Claude in a session,
- * one a city, imported through the same checks, fetches and merge as an API
- * reading. The first pass over all sixty cities was made this way on
- * 2026-10-01, before the Actions secret existed.
+ * --plan N: the cities due now and what to ask about each.
+ *
+ * The cycle is a cursor into cities.json, so ten a day re-reads all sixty in
+ * about a week. Planning moves nothing: the cursor advances only when a
+ * reading is imported, so a run that never finishes leaves the same cities
+ * due tomorrow.
+ */
+function printPlan() {
+  const chosen = pickCities();
+  const outDir = value("out");
+  if (outDir) {
+    fs.mkdirSync(outDir, { recursive: true });
+    for (const meta of chosen) {
+      const existing = readJson(path.join(DIR, `${meta.slug}.json`), emptyCity(meta));
+      fs.writeFileSync(path.join(outDir, `${meta.slug}.prompt.txt`), buildPrompt(meta, existing));
+    }
+  }
+  console.log(
+    JSON.stringify(
+      {
+        cursor: state.cursor,
+        cities: chosen.map((c) => ({
+          slug: c.slug,
+          city: c.city,
+          state: c.state,
+          listed: readJson(path.join(DIR, `${c.slug}.json`), { entries: [] }).entries.length,
+          prompt: outDir ? path.join(outDir, `${c.slug}.prompt.txt`) : undefined,
+        })),
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+/** --prompt <slug>: what to ask about one city, on stdout. */
+function printPrompt(slug) {
+  const meta = cities.find((c) => c.slug === slug);
+  if (!meta) {
+    console.error(`${slug} is not a city in cities.json`);
+    process.exit(1);
+  }
+  const existing = readJson(path.join(DIR, `${meta.slug}.json`), emptyCity(meta));
+  console.log(buildPrompt(meta, existing));
+}
+
+/**
+ * --seed <dir>: a folder of `<slug>.json` replies, one a city, imported
+ * through the checks, the fetches and the merge. This is how every reading
+ * arrives — the first pass over all sixty cities on 2026-10-01, and every
+ * daily run since the schedule took over.
+ *
+ * The cycle advances past the last city imported, so tomorrow's plan is the
+ * next ten. `--no-advance` leaves it alone, for a one-off re-read of named
+ * cities that should not cost the cycle its place.
  */
 async function seedFrom(dir) {
   const files = fs
@@ -238,6 +242,7 @@ async function seedFrom(dir) {
   }
   fs.mkdirSync(DIR, { recursive: true });
   let done = 0;
+  const seeded = [];
   for (const file of files) {
     const slug = file.replace(/\.json$/, "");
     const meta = cities.find((c) => c.slug === slug);
@@ -248,69 +253,62 @@ async function seedFrom(dir) {
     try {
       const reply = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
       if (!Array.isArray(reply.entries)) throw new Error("no entries array");
-      await runCity(null, meta, reply);
+      await runCity(meta, reply);
+      seeded.push(slug);
       done++;
     } catch (err) {
       console.error(`${slug}: failed — ${err instanceof Error ? err.message : String(err)}`);
     }
   }
+  if (seeded.length > 0 && !flag("no-advance")) {
+    const last = Math.max(...seeded.map((slug) => indexOfSlug.get(slug)));
+    state.cursor = (last + 1) % cities.length;
+  }
   state.runs = [
     {
       date: today,
       model: "seed:claude-code",
-      cities: files.map((f) => f.replace(/\.json$/, "")),
+      cities: seeded,
       searches: 0,
       failures: files.length - done,
     },
     ...(state.runs ?? []),
   ].slice(0, 60);
   writeJson(STATE_FILE, state);
-  console.log(`seeded ${done} of ${files.length} cities`);
+  console.log(`seeded ${done} of ${files.length} cities, cursor at ${state.cursor}`);
   if (done === 0) process.exit(1);
 }
 
-async function main() {
-  const seedDir = value("seed");
-  if (seedDir) return seedFrom(seedDir);
-  const { chosen, cursor } = pickCities();
+/** --dry: the fixture reply through the same checks and merge. No network. */
+async function dryRun() {
+  const chosen = pickCities();
   if (!chosen.length) {
     console.error("no cities chosen");
     process.exit(1);
   }
-  let client = null;
-  if (!DRY) {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      console.error("ANTHROPIC_API_KEY is not set (use --dry to run without the API)");
-      process.exit(1);
-    }
-    const { default: Anthropic } = await import("@anthropic-ai/sdk");
-    client = new Anthropic();
-  }
-  fs.mkdirSync(DIR, { recursive: true });
-  const results = [];
-  let failures = 0;
-  for (const meta of chosen) {
-    try {
-      results.push(await runCity(client, meta));
-    } catch (err) {
-      failures++;
-      console.error(`${meta.slug}: failed — ${err instanceof Error ? err.message : String(err)}`);
-    }
-  }
-  if (!flag("cities")) state.cursor = cursor;
-  state.runs = [
-    {
-      date: today,
-      model: DRY ? "fixture" : MODEL,
-      cities: chosen.map((c) => c.slug),
-      searches: results.reduce((n, r) => n + r.searches, 0),
-      failures,
-    },
-    ...(state.runs ?? []),
-  ].slice(0, 60);
-  writeJson(STATE_FILE, state);
-  console.log(`done: ${results.length} of ${chosen.length} cities, cursor at ${state.cursor}`);
-  if (results.length === 0) process.exit(1);
+  for (const meta of chosen) await runCity(meta, fixtureReply(meta));
+  console.log(`dry: ${chosen.length} cities, cursor untouched at ${state.cursor}`);
+}
+
+const USAGE = `The directory engine reads the web through the Claude session running it.
+
+  --plan <n> [--out <dir>]   the cities due now, with a prompt file each
+  --prompt <slug>            the prompt for one city
+  --seed <dir>               import <slug>.json replies and advance the cycle
+  --dry --cities <slug>      the fixture through the same merge, no network
+
+The daily run is a cloud schedule; docs/directory-engine-run.md is what it
+follows.`;
+
+async function main() {
+  const seedDir = value("seed");
+  if (seedDir) return seedFrom(seedDir);
+  const promptSlug = value("prompt");
+  if (promptSlug) return printPrompt(promptSlug);
+  if (flag("plan") || flag("next")) return printPlan();
+  if (DRY) return dryRun();
+  console.error(USAGE);
+  process.exit(1);
 }
 
 main().catch((err) => {
