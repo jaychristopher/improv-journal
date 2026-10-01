@@ -46,20 +46,31 @@ every scheduled run is wasted work.
 
 ## Run
 
-Either:
+Both halves have to be true, and the second was missed on the first attempt
+(2026-10-01, a second run lost the same way):
 
-1. Install or extend the Claude GitHub App for this repository:
-   <https://github.com/apps/claude/installations/select_target> — pick
-   `jaychristopher/improv-journal`.
-2. Or reconnect GitHub from claude.ai settings:
-   <https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1>
+1. **The app can see this repository.** At
+   <https://github.com/settings/installations> open Claude → Configure. The
+   installation must be on the **`jaychristopher`** account, and under
+   Repository access either "All repositories" or a selection that
+   **includes `improv-journal`**. Installing on a different account, or
+   leaving it on a selection that omits this repo, produces exactly the same
+   403.
+2. **claude.ai is linked to that installation.** Reconnect at
+   <https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1>,
+   which re-links an existing installation.
 
 ## Verify
 
-Run either routine by hand from <https://claude.ai/code/routines> and watch
-it finish. The link check is the cheap one to test with — it needs no
-searches, and most weeks it has nothing to commit, so a clean finish with
-"nothing changed" is the proof that access works.
+From any checkout of this repository:
+
+```bash
+git push --dry-run origin main
+```
+
+That is what the runbook now does before a run spends anything, and it is
+the whole test: it authenticates against GitHub and writes nothing. Refused
+means not fixed.
 
 Then, on the next reading, `git log --oneline -- data/directory` shows a
 commit by the run.

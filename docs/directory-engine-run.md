@@ -25,6 +25,25 @@ search, and the script does everything around it.
 
 ---
 
+## Before anything else: can this run publish?
+
+```bash
+git push --dry-run origin main
+```
+
+That contacts GitHub and authenticates without writing anything. If it is
+refused with a 403 — `Claude doesn't have GitHub access to …` — **stop
+there and report it**. Nothing this run could do would reach the archive,
+and the research is the expensive part: two runs on 2026-10-01 read ten
+cities each, passed every check, committed, and lost the lot on this exact
+error. The fix is the owner's and it is tracked as DI-1.4:
+<https://github.com/apps/claude/installations/select_target>.
+
+Nothing is lost by stopping. The cycle only advances on an import that is
+pushed, so the same cities are due next time.
+
+---
+
 ## The reading
 
 Work on `main`, with a clean tree: `git checkout main && git pull --ff-only`
@@ -163,9 +182,13 @@ time.
 
 **If `git push` is refused with a 403**, the Claude GitHub App does not have
 access to this repository. That is not something a run can fix — report it
-and stop. The owner restores it at
-<https://github.com/apps/claude/installations/select_target> or by
-reconnecting GitHub in claude.ai settings.
+and stop. It is why this runbook opens with a dry-run push: finding out
+before the research costs nothing, finding out after costs the whole run.
+The owner restores access at
+<https://github.com/apps/claude/installations/select_target>, checking that
+the installation is on the `jaychristopher` account and that its repository
+access includes this repository, and then re-links it at
+<https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1>.
 
 ## The other commands
 
