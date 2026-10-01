@@ -61,18 +61,33 @@ const { width: W, height: H } = US_MAP_VIEWBOX;
 
 const pct = (value: number, of: number) => `${((value / of) * 100).toFixed(3)}%`;
 
-/** What a city's dot says it holds. Plain counts: the archive does not rank. */
-export function mapSummary(place: UsCityMapPlace): string {
-  if (place.listed === 0) return "Nothing listed yet";
+/** What a city holds, in counts. The archive does not rank, so nor does this. */
+function counts(place: UsCityMapPlace): string[] {
+  if (place.listed === 0) return [];
   const parts = [`${place.listed} listed`];
   if (place.classes > 0) parts.push(`${place.classes} with classes`);
   if (place.shows > 0) parts.push(`${place.shows} with shows or jams`);
-  return parts.join(" · ");
+  return parts;
 }
 
-/** The whole of what a dot means, for a reader who cannot see where it is. */
+/** What the tooltip shows. Middle dots, which read as a list to the eye. */
+export function mapSummary(place: UsCityMapPlace): string {
+  const parts = counts(place);
+  return parts.length === 0 ? "Nothing listed yet" : parts.join(" · ");
+}
+
+/**
+ * The whole of what a dot means, for a reader who cannot see where it is.
+ *
+ * Punctuation rather than middle dots: a screen reader announces "·" as a
+ * word or skips it depending on how its user has punctuation set, and either
+ * way the counts read better as a sentence.
+ */
 export function mapLabel(place: UsCityMapPlace): string {
-  return `Improv in ${place.city}, ${place.state}. ${mapSummary(place)}.`;
+  const parts = counts(place);
+  const what =
+    parts.length === 0 ? "Nothing listed yet" : `${parts[0]}: ${parts.slice(1).join(", ")}`;
+  return `Improv in ${place.city}, ${place.state}. ${what.replace(/: $/, "")}.`;
 }
 
 export function UsCityMap({
