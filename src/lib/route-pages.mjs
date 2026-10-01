@@ -384,7 +384,8 @@ export async function listRoutePages() {
   known.set(directory.DIRECTORY_PATH, {
     section: "directory",
     label: directory.DIRECTORY_HUB_H1,
-    summary: "Improv theaters, classes and regular shows in sixty US cities, verified and ranked.",
+    summary:
+      "Improv theaters, classes and regular shows in sixty US cities, each with a link to its own site.",
     orientation: [],
     index: 0,
   });

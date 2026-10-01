@@ -186,8 +186,8 @@ export function directoryHubTitle(): string {
 export function directoryHubDescription(): string {
   const { cities, entries } = directorySummary();
   return entries > 0
-    ? `${entries} improv theaters, schools and regular shows across ${cities} US cities, each verified and linked, ranked, and re-read by an engine a few cities a day.`
-    : `Improv theaters, schools and regular shows across ${cities} US cities, each verified and linked, ranked, and re-read by an engine a few cities a day.`;
+    ? `${entries} improv theaters, schools and regular shows across ${cities} US cities, each with a link to its own site.`
+    : `Improv theaters, schools and regular shows across ${cities} US cities, each with a link to its own site.`;
 }
 
 export function directoryCityH1(meta: DirectoryCityMeta): string {
@@ -201,8 +201,8 @@ export function directoryCityTitle(meta: DirectoryCityMeta): string {
 export function directoryCityDescription(city: DirectoryCity): string {
   const n = liveEntries(city).length;
   return n > 0
-    ? `${n} places for improv in ${city.city}, ${city.state}: theaters, schools and regular shows, each with its own site, ranked and re-read weekly.`
-    : `Improv theaters, classes and regular shows in ${city.city}, ${city.state}, ranked and re-read weekly as the engine reaches the city.`;
+    ? `${n} places for improv in ${city.city}, ${city.state}: theaters, schools and regular shows, each with a link to its own site.`
+    : `Improv theaters, classes and regular shows in ${city.city}, ${city.state}, each with a link to its own site.`;
 }
 
 /** The other cities of the archive in the same state, for the page's nearby block. */

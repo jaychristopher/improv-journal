@@ -24,13 +24,18 @@ import { DIRECTORY_COPY } from "@/lib/directory-copy";
 import { hubMetadata, metaDescription, pageTitle, SITE_URL } from "@/lib/seo";
 
 /**
- * One city of the improv directory: every theatre, school and recurring show
- * the engine could verify there, in rank order, each linking out to its own
- * site. The data is data/directory/<city>.json (src/lib/directory.ts); the
- * engine rewrites it on its cycle, and a page is served for every city from
- * the first deploy, thin or not, so the archive's shape never depends on how
- * far the engine has got. Thin cities are kept out of the index until they
- * fill (isIndexableDirectoryCity), and out of the sitemap with them.
+ * One city of the improv directory: the theatres, schools and recurring
+ * shows found there, each linking out to its own site. The data is
+ * data/directory/<city>.json (src/lib/directory.ts); the engine rewrites it
+ * on its cycle, and a page is served for every city from the first deploy,
+ * thin or not, so the archive's shape never depends on how far the engine
+ * has got. Thin cities are kept out of the index until they fill
+ * (isIndexableDirectoryCity), and out of the sitemap with them.
+ *
+ * A listing and nothing more (the owner, 2026-10-01): the entries sit in the
+ * order the data holds them, and the page shows no score, no rank and no
+ * account of how the list is made. The engine's account is in CLAUDE.md and
+ * the DI cards.
  */
 
 const KIND_LABELS: Record<DirectoryKind, string> = {
@@ -63,34 +68,37 @@ function EntryCard({ entry }: { entry: DirectoryEntry }) {
   const kinds = entry.kind.map((k) => KIND_LABELS[k]).join(" · ");
   return (
     <li className="border-foreground/10 bg-surface rounded-xl border p-5">
-      <div className="flex items-baseline gap-3">
-        <span className="text-foreground/40 w-6 shrink-0 text-sm tabular-nums">{entry.rank}</span>
-        <h3 className="text-lg font-semibold">
-          <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
-            {entry.name}
-          </a>
-        </h3>
-        <span
-          className="text-foreground/50 ml-auto shrink-0 text-sm tabular-nums"
-          title="Score out of 100"
-        >
-          {entry.score}
-        </span>
-      </div>
-      <p className="text-foreground/50 mt-1 pl-9 text-xs tracking-wider uppercase">
+      <h3 className="text-lg font-semibold">
+        <a href={entry.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+          {entry.name}
+        </a>
+      </h3>
+      <p className="text-foreground/50 mt-1 text-xs tracking-wider uppercase">
         {kinds}
         {entry.area ? ` · ${entry.area}` : ""}
       </p>
-      <p className="text-foreground/80 mt-2 pl-9 text-sm leading-relaxed">{entry.summary}</p>
-      {entry.schedule && <p className="text-foreground/60 mt-1 pl-9 text-sm">{entry.schedule}</p>}
+      <p className="text-foreground/80 mt-2 text-sm leading-relaxed">{entry.summary}</p>
+      {entry.schedule && <p className="text-foreground/60 mt-1 text-sm">{entry.schedule}</p>}
       {entry.signals.length > 0 && (
-        <p className="text-foreground/50 mt-1 pl-9 text-xs">{entry.signals.join(" · ")}</p>
+        <p className="text-foreground/50 mt-1 text-xs">{entry.signals.join(" · ")}</p>
       )}
-      <p className="text-foreground/40 mt-2 pl-9 text-xs">
-        {entry.reasons} {entry.status === "live" ? "Verified" : "Last seen"}{" "}
-        {formatDirectoryDate(entry.lastSeen)}.
-      </p>
     </li>
+  );
+}
+
+function Names({ entries }: { entries: DirectoryEntry[] }) {
+  return (
+    <>
+      {entries.map((e, i) => (
+        <span key={e.id}>
+          {i > 0 ? ", " : ""}
+          <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline">
+            {e.name}
+          </a>
+        </span>
+      ))}
+      .
+    </>
   );
 }
 
@@ -105,10 +113,6 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
   const classes = entries.filter((e) => e.kind.includes("classes"));
   const shows = entries.filter((e) => e.kind.includes("shows") || e.kind.includes("jams"));
   const neighbours = directoryNeighbours(city);
-  const updated =
-    city.updated === null
-      ? "Not read yet."
-      : `Last pass ${formatDirectoryDate(city.updated)}; the engine returns about weekly.`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -121,9 +125,9 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: entries.length,
-      itemListElement: entries.map((e) => ({
+      itemListElement: entries.map((e, i) => ({
         "@type": "ListItem",
-        position: e.rank,
+        position: i + 1,
         name: e.name,
         description: e.summary,
         url: e.url,
@@ -148,21 +152,17 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight">{directoryCityH1(city)}</h1>
         <p className="text-foreground/60 mt-2">{description}</p>
-        <p className="text-foreground/70 mt-3 text-sm" data-directory-updated>
-          {updated}
-        </p>
+        {city.updated !== null && (
+          <p className="text-foreground/70 mt-3 text-sm" data-directory-updated>
+            Updated {formatDirectoryDate(city.updated)}.
+          </p>
+        )}
       </header>
 
-      <Prose
-        text={entries.length > 0 ? DIRECTORY_COPY.cityIntro : DIRECTORY_COPY.cityEmpty}
-        currentUrl={path}
-        className="text-foreground/80 leading-relaxed"
-      />
-
-      {entries.length > 0 && (
+      {entries.length > 0 ? (
         <>
-          <h2 id="ranked" className="mt-10 text-2xl font-semibold">
-            Ranked
+          <h2 id="listed" className="text-2xl font-semibold">
+            Theaters, schools and shows
           </h2>
           <ol
             className="mt-4 space-y-4"
@@ -185,15 +185,7 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
                 data-track="directory-classes"
                 data-derived="true"
               >
-                {classes.map((e, i) => (
-                  <span key={e.id}>
-                    {i > 0 ? ", " : ""}
-                    <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline">
-                      {e.name}
-                    </a>
-                  </span>
-                ))}
-                .
+                <Names entries={classes} />
               </p>
             </>
           )}
@@ -208,19 +200,17 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
                 data-track="directory-shows"
                 data-derived="true"
               >
-                {shows.map((e, i) => (
-                  <span key={e.id}>
-                    {i > 0 ? ", " : ""}
-                    <a href={e.url} target="_blank" rel="noopener noreferrer" className="underline">
-                      {e.name}
-                    </a>
-                  </span>
-                ))}
-                .
+                <Names entries={shows} />
               </p>
             </>
           )}
         </>
+      ) : (
+        <Prose
+          text={DIRECTORY_COPY.cityEmpty}
+          currentUrl={path}
+          className="text-foreground/80 leading-relaxed"
+        />
       )}
 
       <h2 id="nearby" className="mt-10 text-2xl font-semibold">
@@ -243,15 +233,6 @@ export default async function DirectoryCityPage({ params }: { params: Promise<{ 
           Every city
         </Link>
       </p>
-
-      <h2 id="how-this-list-is-made" className="mt-10 text-2xl font-semibold">
-        How this list is made
-      </h2>
-      <Prose
-        text={DIRECTORY_COPY.cityHow}
-        currentUrl={path}
-        className="text-foreground/80 mt-3 leading-relaxed"
-      />
     </main>
   );
 }
