@@ -48,6 +48,12 @@ describe("resolvePromptConcepts", () => {
     expect(withConcept.length).toBe(5);
   });
 
+  it("names opening for the one word, which sits outside the six (2026-09-30)", async () => {
+    const map = await resolvePromptConcepts();
+    expect(map.word.map((l) => l.id)).toEqual(["opening"]);
+    expect(map.word[0].href).toBe("/practice/techniques/opening");
+  });
+
   it("drops an id that is not an atom rather than inventing a route for it", async () => {
     const links = await resolveIds(["relationship", "not-an-atom-anyone-wrote"]);
     expect(links.map((l) => l.id)).toEqual(["relationship"]);

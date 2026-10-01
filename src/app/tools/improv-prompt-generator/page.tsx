@@ -12,6 +12,8 @@ import {
   PROMPT_USE_CASES,
   RUBRIC_AXES,
   RUBRIC_WEIGHTS,
+  WORD_BANK,
+  WORD_KIND,
 } from "@/lib/prompt-bank";
 import { resolvePromptConcepts } from "@/lib/prompt-concepts";
 import { poolFor } from "@/lib/prompt-generator";
@@ -117,9 +119,9 @@ export default async function ImprovPromptGeneratorPage() {
 
         <h2 id="what-it-draws-from">What It Draws From</h2>
         <p>
-          {PROMPT_BANK.length} prompts in six kinds. Every one of the 140 the guide lists is in the
-          bank, and the rest were written to the same standard. Each kind enters through one section
-          of the guide, and is an idea from{" "}
+          {PROMPT_BANK.length} scene starters in six kinds, and one word besides. The 140 the guide
+          lists are all here; the rest were written to the same standard. Each kind enters through
+          one section of the guide, and is an idea from{" "}
           <Link href="/threads/anatomy-of-a-scene">The Anatomy of a Scene</Link>, the lesson these
           categories come from:
         </p>
@@ -132,6 +134,11 @@ export default async function ImprovPromptGeneratorPage() {
             </li>
           ))}
         </ul>
+        <p>
+          Outside that count: <strong>one word</strong> ({WORD_BANK.length}) &mdash;{" "}
+          <Link href={`/improv-prompts#${categoryAnchor(WORD_KIND)}`}>{WORD_KIND.heading}</Link>.{" "}
+          {WORD_KIND.howToUse}
+        </p>
 
         <h2 id="how-it-ranks-them">How It Ranks Them</h2>
         <p>
@@ -228,6 +235,9 @@ export default async function ImprovPromptGeneratorPage() {
 
         <h3>What is the who, where, what card?</h3>
         <Prose text={PROMPT_GENERATOR_COPY.classic} currentUrl="/tools/improv-prompt-generator" />
+
+        <h3>What is the one word for?</h3>
+        <Prose text={PROMPT_GENERATOR_COPY.word} currentUrl="/tools/improv-prompt-generator" />
 
         <h3>Are there keyboard shortcuts?</h3>
         <Prose text={PROMPT_GENERATOR_COPY.keys} currentUrl="/tools/improv-prompt-generator" />

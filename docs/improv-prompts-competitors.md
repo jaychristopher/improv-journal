@@ -285,7 +285,8 @@ ranked within each group; the first in each is the one to do.
    existing kinds rather than as new cards: a location that names the object in
    it ("a hospital waiting room with one working vending machine"), a shared
    task that names the job ("two locksmiths, one lock"). Extend the bank; keep
-   six kinds.
+   six kinds of scene starter. (The one word for a longform opening, added
+   2026-09-30, is outside that count and outside this argument.)
 10. **A complication that arrives, as situations.** Theatre Haus's "twist" and
     The Drama Teacher's conventions are mid-scene changes. Ours has "something
     already wrong" at the top of the scene; a handful of situations written as
@@ -338,6 +339,10 @@ ranked within each group; the first in each is the one to do.
   twenty-three tools (Improv Toolbox), thirty-five controls (AI Free Forever).
   The kinds we have are the ones a scene can be started from; a word, a song
   and a line from Moby Dick are suggestions, not prompts, and the page says why.
+  The one exception, made 2026-09-30: a single word for a longform opening —
+  the Harold's suggestion — curated for texture and kept outside the count of
+  scene starters, because the opening is the one place a bare word is the
+  right ask, and the owner's teacher cuts the list before it ships (PG-2).
 - **Timers with settings, favourites with stars, proposals with forms.** Each
   is a control that has to be understood before it helps. Items 5, 6 and the
   email capture already on the page carry the need.

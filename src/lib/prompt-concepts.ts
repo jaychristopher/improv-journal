@@ -4,12 +4,12 @@ import { PROMPT_KINDS, type PromptConceptLink, type PromptConceptMap } from "./p
 /**
  * The prompt generator's kinds as concept links.
  *
- * The six kinds of prompt are the first five atoms of *The Anatomy of a
+ * The six kinds of scene starter are the first five atoms of *The Anatomy of a
  * Scene* under other names, and the generator — the above-the-fold tool on
  * the site's fastest-growing page — linked its categories to the guide's own
  * section anchors and to no concept, no drill and no lesson (tracker entry
  * 332, 2026-09-22). `PROMPT_KINDS` declares the ids (the classic's is
- * `base-reality`); this resolves them to a title and a route on the server,
+ * `base-reality`, the one word's `opening`); this resolves them to a title and a route on the server,
  * where the graph is readable, so the client component can render "The idea
  * behind it" with a link.
  *

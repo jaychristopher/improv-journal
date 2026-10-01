@@ -103,7 +103,17 @@ const CEILINGS: Record<Layer, { html: number; flight: number; share: number }> =
   //
   // share 0.568 on 2026-09-24, and the same is true of every layer below —
   // see the shared account above the table.
-  concepts: { html: 109_400, flight: 60_400, share: 0.58 },
+  //
+  // flight 60,530 on 2026-09-30, re-dated rather than lifted: the improv
+  // prompts guide gained its one-word section, which names six concepts
+  // (harold, armando, organic-opening, opening, one-word-story,
+  // two-person-scene), so each of those six pages gained the guide's card —
+  // 197 to 649 bytes of server-rendered flight each — and opening the try
+  // line besides. Twelve pages of 206 changed and the median crossed to a
+  // different page as the six moved up the order (a before/after reading of
+  // every concept page on the branch: 60,259 → 60,448 by the median, the
+  // rest within 43 bytes). Same 3% margin.
+  concepts: { html: 109_400, flight: 62_300, share: 0.58 },
   // html 108,682 and flight 59,375 on 2026-09-23: the lesson page gained the
   // crosslink line (339) and the composed-from list's "also taught in" marks,
   // 74 of them across 20 lessons.

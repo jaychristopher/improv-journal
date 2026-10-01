@@ -13,12 +13,12 @@ import {
   PROMPT_BANK,
   PROMPT_KINDS,
   PROMPT_USE_CASES,
-  type PromptCategory,
   type PromptConceptMap,
   type PromptKind,
   type PromptKindInfo,
   type PromptUseCase,
   type PromptUseCaseInfo,
+  WORD_BANK,
 } from "@/lib/prompt-bank";
 import {
   browserStorage,
@@ -40,9 +40,10 @@ import { ToolAction, ToolChoice } from "./ToolControls";
 /**
  * The hero on /improv-prompts, and the tool on /tools/improv-prompt-generator.
  *
- * Closed, it is a card that asks one thing: what kind of start? Seven
- * buttons, an icon and a label each — the classic who-where-what and the six
- * kinds the guide has a section for. The first tap takes over the viewport
+ * Closed, it is a card that asks one thing: what kind of start? Eight
+ * buttons, an icon and a label each — the classic who-where-what, one word
+ * for a longform opening (2026-09-30, PG-2), and the six kinds the guide has
+ * a section for. The first tap takes over the viewport
  * and hands the reader a prompt of that kind, and another, and another —
  * best first, never a repeat on this device — until they close it from the
  * corner.
@@ -129,6 +130,9 @@ function everyLabel(seconds: number): string {
 }
 
 const FOCUSABLE = 'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])';
+
+/** The kinds on the hero's top row, beside each other rather than as tiles. */
+const ROW_KINDS = new Set<PromptKind>(["classic", "word"]);
 
 /**
  * Where the generator is mounted. The guide hero is a card above the article
@@ -338,8 +342,10 @@ export function PromptGenerator({
         card: cardNumber,
       };
     } else {
-      const category: PromptCategory = nextKind;
-      const pool = poolFor(PROMPT_BANK, category, room);
+      // The word kind draws from its own bank; the six from the scene
+      // starters. Everything after the pool is the same rule.
+      const category = nextKind;
+      const pool = poolFor(nextKind === "word" ? WORD_BANK : PROMPT_BANK, category, room);
       if (reset) {
         store.forget(pool.map((p) => p.id));
         trackEvent("prompt_generator_reset", { use_case: room, category });
@@ -463,7 +469,7 @@ export function PromptGenerator({
 
   /** Every pool starts again from its strongest prompts. */
   function forgetAll() {
-    store.forget(PROMPT_BANK.map((p) => p.id));
+    store.forget([...PROMPT_BANK, ...WORD_BANK].map((p) => p.id));
     setForgotten(true);
     trackEvent("prompt_generator_reset", { use_case: room, category: "all" });
   }
@@ -591,19 +597,19 @@ export function PromptGenerator({
       </div>
     ) : null;
 
-  // The classic takes the full row above the six single kinds: it is the one
-  // every generator offers and the one a reader arriving from "scene
-  // generator" expects. The six are tiles, the icon above the label.
+  // The top row holds the two starts that are not one of the guide's six —
+  // the classic every generator offers and the one word a longform opening
+  // takes — side by side, icon beside label; the six are tiles below, the
+  // icon above the label. Two on the row and six in threes leaves no orphan.
   const kindGrid = (hero: boolean) => (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3">
-      {PROMPT_KINDS.map((each) => (
-        <KindButton
-          key={each.id}
-          kind={each}
-          onChoose={chooseKind}
-          hero={hero}
-          row={each.id === "classic"}
-        />
+      <div className="col-span-full grid grid-cols-2 gap-2 sm:gap-3">
+        {PROMPT_KINDS.filter((each) => ROW_KINDS.has(each.id)).map((each) => (
+          <KindButton key={each.id} kind={each} onChoose={chooseKind} hero={hero} row />
+        ))}
+      </div>
+      {PROMPT_KINDS.filter((each) => !ROW_KINDS.has(each.id)).map((each) => (
+        <KindButton key={each.id} kind={each} onChoose={chooseKind} hero={hero} />
       ))}
     </div>
   );
@@ -907,7 +913,9 @@ export function PromptGenerator({
                         That is all of them
                       </p>
                       <h2 className="text-foreground-strong mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-                        You have seen every {kindInfo.label.toLowerCase()} prompt
+                        {kindInfo.id === "word"
+                          ? "You have seen every word"
+                          : `You have seen every ${kindInfo.label.toLowerCase()} prompt`}
                         {roomSet && <> for {roomInfo.label.toLowerCase()}</>}.
                       </h2>
                       <p className="text-foreground/80 mt-4 max-w-md text-sm leading-relaxed">
@@ -1042,7 +1050,7 @@ function KindButton({
       data-kind={kind.id}
       className={
         row
-          ? "col-span-full flex min-h-14 w-full items-center justify-center gap-3 px-4 py-3"
+          ? "flex min-h-14 w-full items-center justify-center gap-3 px-4 py-3"
           : "flex min-h-[4.5rem] w-full flex-col items-center justify-center gap-1.5 px-2 py-3 text-center"
       }
     >
@@ -1100,7 +1108,7 @@ const ICON_PROPS = {
   "aria-hidden": true,
 } as const;
 
-/** One icon a kind, drawn here so nothing is loaded for seven glyphs. */
+/** One icon a kind, drawn here so nothing is loaded for eight glyphs. */
 function KindIcon({ kind, className }: { kind: PromptKind; className: string }) {
   const props = { ...ICON_PROPS, className: `shrink-0 ${className}` };
   switch (kind) {
@@ -1158,6 +1166,14 @@ function KindIcon({ kind, className }: { kind: PromptKind; className: string }) 
           <circle cx="12" cy="12" r="8.5" />
           <path d="M9.5 9.5a2.5 2.5 0 015 0c0 1.75-2.5 2-2.5 3.75" />
           <circle cx="12" cy="16.5" r="0.5" fill="currentColor" />
+        </svg>
+      );
+    case "word":
+      // A card with one line on it.
+      return (
+        <svg {...props}>
+          <rect x="4" y="7" width="16" height="10" rx="2" />
+          <path d="M8 12h8" />
         </svg>
       );
     case "task":

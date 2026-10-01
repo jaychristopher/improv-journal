@@ -372,6 +372,17 @@ prompt" told a searcher nothing about what they had landed on, so the hero
 now says the bank's count and the words they typed, "improv prompts", and
 the line under it says who it is for and what to do.
 
+**The next round, the same evening**: the school room's two thin pools were
+deepened — forty-four relationships and forty-two audience questions, the
+bank at 573 — with a guard for the wording rule; the tool page says
+"improv suggestion generator" once and its reading is in the route
+registry; and the one real ask the seven kinds lacked, a single word for a
+longform opening, is built on a branch as an eighth kind with its own bank
+outside the count, waiting on the owner's teacher to cut the list
+(docs/one-word-suggestions.md). The cards are in docs/backlog/Prompt
+generator.md; a PostHog reading a week after the merge decides between
+print slips from the cog and a cast setting.
+
 **The session list came out on 2026-09-30**, at the owner's request. It first
 showed the card on screen at the head of its own list, then only the cards
 before it, and a record nobody asked to keep is furniture. Personas 1, 4 and 18

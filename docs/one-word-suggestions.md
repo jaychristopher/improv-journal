@@ -1,7 +1,7 @@
 # One word for a longform opening — the draft list
 
-_Drafted 2026-09-30 for PG-2.1. About ninety words for the owner's teacher to
-cut to eighty. Nothing here is in the generator yet; PG-2.2 builds the kind
+_Drafted 2026-09-30 for PG-2.1. A hundred words for the owner's teacher to
+cut to about eighty. Nothing here is in the generator yet; PG-2.2 builds the kind
 from whatever survives._
 
 ## Why a single word, when the guide says a bare noun is the weakest start

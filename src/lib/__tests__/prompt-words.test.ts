@@ -1,7 +1,10 @@
+import fs from "node:fs";
+import path from "node:path";
+
 import { describe, expect, it } from "vitest";
 
 import { loadAtoms } from "../content";
-import { PROMPT_USE_CASES, RUBRIC_AXES, suitsUseCase, WORD_BANK } from "../prompt-bank";
+import { PROMPT_USE_CASES, RUBRIC_AXES, suitsUseCase, WORD_BANK, WORD_KIND } from "../prompt-bank";
 import { bandPool } from "../prompt-generator";
 
 /**
@@ -88,5 +91,27 @@ describe("the word bank", () => {
     }
     const clashes = WORD_BANK.map((w) => w.text).filter((t) => taken.has(t));
     expect(clashes).toEqual([]);
+  });
+  it("is listed in full in the guide's section, as runs rather than list items", () => {
+    // Every word is on the page under the kind's own heading, so nothing about
+    // words is "unlisted"; and as bold-labelled comma runs, never `- ` lines,
+    // because three of the bank's guards read a `- ` line as a scene starter
+    // that must be in PROMPT_BANK.
+    const markdown = fs.readFileSync(
+      path.join(process.cwd(), "content", "bridges", "improv-prompts.md"),
+      "utf8",
+    );
+    const heading = `## ${WORD_KIND.heading}`;
+    const start = markdown.indexOf(heading);
+    expect(start).toBeGreaterThan(-1);
+    const rest = markdown.slice(start + heading.length);
+    const section = rest.slice(0, rest.search(/^## /m));
+    const listed = new Set<string>();
+    for (const m of section.matchAll(/^\*\*[^*]+:\*\* (.+)$/gm)) {
+      for (const w of m[1].replace(/\.$/, "").split(",")) listed.add(w.trim());
+    }
+    expect(listed.size).toBeGreaterThanOrEqual(75);
+    expect([...listed].sort()).toEqual(WORD_BANK.map((w) => w.text).sort());
+    expect(section.match(/^- /m)).toBeNull();
   });
 });

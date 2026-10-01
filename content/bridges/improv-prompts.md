@@ -48,7 +48,8 @@ serp_checked: "2026-08-23"
 serp_min_dr: 30
 serp_verdict: winnable
 serp_top10_dr: [36, 85, 95, 30, 56, 75, 94]
-entry_atoms: [suggestion, base-reality, initiation, obvious-choice, offers, space-work]
+entry_atoms:
+  [suggestion, base-reality, initiation, obvious-choice, offers, space-work, organic-opening]
 entry_path: beginner-foundations
 primary_problem: "you need something to start a scene with and everything you think of is either boring or too clever"
 primary_cta_type: exercise
@@ -211,6 +212,24 @@ If you are running a show and want better material than "banana," ask for the th
 - Name a place you've driven past a hundred times and never stopped.
 - What's a smell that takes you somewhere?
 - What was your first job's uniform?
+
+## One Word for a Longform Opening
+
+This guide has argued that a random word is the weakest start there is, and for a two-person scene it is. There is one place a single word is the right ask: the opening of a `harold` or an `armando`, where the crowd gives one word and the first scenes come from three minutes of association, not from the word at all. The word's whole job is to give a group something to associate from, and it does that job when it is a common noun with a smell, a weight or a history — something everyone in the room has held. An abstraction gives the group nothing to hold. A joke gives them a joke, which is a scene that has already happened. A word with two meanings gives the pattern game a second leaf, which is why "draft" and "settlement" are here and "banana" is not.
+
+This is not `one-word-story`, where a story is built one word at a time; it is one word, once, and then the room. Say it back, so everyone heard the same word. Free-associate out loud as a group, which is what an `organic-opening` does with it. Start the first scene from the third thing the word made you think of, never the first. The generator's "One word" tile deals from the list below, ranked like everything else; the cog's hand deals eight at once for eight groups, and a school room keeps out the ones that land on a life or need a working adult's knowledge. They are not counted among the scene starters above, because a word is not one.
+
+**Things with a smell or a weight:** rust, varnish, vinegar, chalk, sawdust, mildew, diesel, tar, wax, leather, wool, ink, linen, rope, gravel, plaster, cardboard, foil.
+
+**Places:** cellar, attic, garage, basement, porch, hallway, pantry, greenhouse, kennel, chapel, locker, warehouse, lobby, pier, quarry, orchard, reservoir, stairwell.
+
+**Paper and institutions:** inheritance, deposit, invoice, receipt, lease, passport, warranty, permit, ledger, pension, mortgage, custody, verdict, apprenticeship, audition, inventory, refund, souvenir, heirloom.
+
+**Objects with a history:** compass, thermos, harmonica, typewriter, lantern, suitcase, doorbell, thermostat, padlock, ladder, kettle, mattress, radiator, wheelbarrow, toolbox, trophy, splinter, envelope, postcard, hourglass, lampshade, scaffolding.
+
+**Two meanings:** draft, settlement, tender, bolt, dock, jam, stall, toll, vault, wake.
+
+**Weather and food:** frost, thaw, drought, harvest, curfew, marmalade, gravy, leftovers, rhubarb, hiccup, whisper, blister, detour.
 
 ## Using Prompts in a Drama Class
 

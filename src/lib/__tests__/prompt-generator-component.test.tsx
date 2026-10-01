@@ -12,6 +12,8 @@ import {
   PROMPT_CATEGORIES,
   PROMPT_KINDS,
   PROMPT_USE_CASES,
+  WORD_BANK,
+  WORD_KIND,
 } from "@/lib/prompt-bank";
 import { poolFor, SEEN_STORAGE_KEY } from "@/lib/prompt-generator";
 
@@ -55,7 +57,9 @@ describe("PromptGenerator", () => {
   it("renders every kind inline, so the server html already offers a way in", () => {
     render(<PromptGenerator surface="guide-hero" />);
     expect(screen.queryByRole("dialog")).toBeNull();
-    expect(PROMPT_KINDS.length).toBe(7);
+    // 8 on 2026-09-30: the classic, one word for a longform opening, and the
+    // six kinds of scene starter (PG-2).
+    expect(PROMPT_KINDS.length).toBe(8);
     for (const kind of PROMPT_KINDS) {
       expect(screen.getByRole("button", { name: kind.label })).toBeTruthy();
     }
@@ -295,5 +299,42 @@ describe("PromptGenerator", () => {
     } finally {
       vi.useRealTimers();
     }
+  });
+  it("deals a word from its own bank, never twice, in hands, and keeps a school room to the safe ones", () => {
+    const words = new Map(WORD_BANK.map((w) => [w.text, w]));
+    render(<PromptGenerator surface="guide-hero" />);
+    const dialog = openWith(WORD_KIND.label);
+    const seen = new Set<string>();
+    for (let i = 0; i < 20; i++) {
+      const text = within(dialog).getByTestId("prompt-text").textContent ?? "";
+      expect(words.has(text), text).toBe(true);
+      expect(seen.has(text), text).toBe(false);
+      seen.add(text);
+      fireEvent.click(within(dialog).getByRole("button", { name: /another one/i }));
+    }
+    expect(readSeen().filter((id) => id.startsWith("word:"))).toHaveLength(21);
+    expect(trackMock).toHaveBeenCalledWith(
+      "prompt_generated",
+      expect.objectContaining({ category: "word" }),
+    );
+    // A hand of four, in a school room: none that lands on a life or needs a job.
+    fireEvent.click(within(dialog).getByRole("button", { name: "Settings" }));
+    fireEvent.click(within(dialog).getByRole("button", { name: "4" }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /a school drama room/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /^done$/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
+    const hand = within(dialog)
+      .getAllByTestId("prompt-item")
+      .map((li) => li.textContent?.replace(/^\d+/, "") ?? "");
+    expect(hand).toHaveLength(4);
+    for (const text of hand) {
+      const w = words.get(text);
+      expect(w, text).toBeDefined();
+      expect(w?.personal || w?.adult, text).toBeFalsy();
+    }
+    // Forgetting what the device has seen clears the word ids as well.
+    fireEvent.click(within(dialog).getByRole("button", { name: "Settings" }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /forget what this device/i }));
+    expect(readSeen().filter((id) => id.startsWith("word:"))).toEqual([]);
   });
 });

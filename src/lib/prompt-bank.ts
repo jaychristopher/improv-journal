@@ -41,10 +41,10 @@ export type PromptCategory =
 export type WordCategory = "word";
 
 /**
- * What the reader can ask for: one of the six categories, or the classic —
+ * What the reader can ask for: one of the six categories, one word, or the classic —
  * a relationship, a location and a task drawn together as one start.
  */
-export type PromptKind = PromptCategory | "classic";
+export type PromptKind = PromptCategory | WordCategory | "classic";
 
 /** The three lines of a classic draw, in the order they are shown. */
 export type ClassicPart = "relationship" | "location" | "task";
@@ -208,8 +208,29 @@ export const CLASSIC_KIND: PromptKindInfo = {
   combines: CLASSIC_PARTS,
 };
 
-/** Everything the kind step offers, the classic first. */
-export const PROMPT_KINDS: PromptKindInfo[] = [CLASSIC_KIND, ...PROMPT_CATEGORIES];
+/**
+ * The one word a longform opening takes: the Harold's suggestion, the word
+ * an Armando monologist tells a true story from. The guide argues a bare
+ * noun is the weakest start for a two-person scene, and it is; the opening
+ * is the one place the single word is the right ask, because the scenes
+ * come from three minutes of association and not from the word. Its rows
+ * live in their own bank (prompt-words-data.ts) outside the scene-starter
+ * count, and its concept is `opening` rather than the Harold: the line
+ * under a drawn word prints the atom's title, and "Opening" is what the
+ * word is for (2026-09-30, PG-2).
+ */
+export const WORD_KIND: PromptKindInfo = {
+  id: "word",
+  label: "One word",
+  heading: "One Word for a Longform Opening",
+  howToUse:
+    "One word is a seed, not a scene. Say it back, free-associate as a group, and start the first scene from the third thing it made you think of.",
+  concepts: ["opening"],
+  drill: "organic-opening-exercise",
+};
+
+/** Everything the kind step offers: the classic first, then the word, then the six. */
+export const PROMPT_KINDS: PromptKindInfo[] = [CLASSIC_KIND, WORD_KIND, ...PROMPT_CATEGORIES];
 
 export const PROMPT_USE_CASES: PromptUseCaseInfo[] = [
   {
