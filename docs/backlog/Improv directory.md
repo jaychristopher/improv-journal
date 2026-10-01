@@ -10,6 +10,7 @@ target: Every major US city has a page listing the improv theaters, schools and 
 stories:
   - "[[DI-1 The archive and the engine]]"
   - "[[DI-2 Nobody can see whether the city pages are found]]"
+  - "[[DI-3 The archive has no map]]"
 ---
 
 # DI — Improv directory

@@ -126,9 +126,11 @@ describe("the backlog register", () => {
     // 2026-10-01: the Improv directory epic (DI) — DI-1 with three tasks and
     // DI-2 with one, the owner's goal of an archive that reads itself.
     // 6 epics, 39 stories, 56 tasks.
+    // 2026-10-01, the same evening: DI-3 and DI-3.1, the map of the sixty
+    // cities the owner asked for. 40 stories, 57 tasks.
     expect(typed("epic")).toHaveLength(6);
-    expect(typed("story")).toHaveLength(39);
-    expect(tasks).toHaveLength(56);
+    expect(typed("story")).toHaveLength(40);
+    expect(tasks).toHaveLength(57);
     // 2026-09-25, working the queue in ROI order: SA-2.1 closed. 17 done, 24 open.
     // SA-1.2 closed. 18 done, 23 open.
     // SA-15.1 closed. 19 done, 22 open.
@@ -150,7 +152,8 @@ describe("the backlog register", () => {
     // DI-1.2 (the secret, a human), DI-1.3 (the first reading) and DI-2.1
     // (the terms, after Search Console) arrive open. 32 done, 24 open.
     // DI-1.3 closed the same day: every city read once. 33 done, 23 open.
-    expect(tasks.filter(isDone)).toHaveLength(33);
+    // DI-3.1 arrives done: the map. 34 done, 23 open.
+    expect(tasks.filter(isDone)).toHaveLength(34);
     expect(openTasks).toHaveLength(23);
 
     // Every task hangs off a story and every story off an epic, or the report's

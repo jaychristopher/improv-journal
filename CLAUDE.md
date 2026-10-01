@@ -137,6 +137,17 @@ ranked by one rubric. Nothing in it is written by hand.
   of Claude or an engine on the hub, a city page, a meta description, the route
   summary or llms.txt. The order the data holds is kept without comment; the
   account of the rubric lives here and in the DI cards.
+- **The map** (`src/components/UsCityMap.tsx`) is the hub's second way in: a
+  link a city on an Albers USA map, the summary in the link's own name and in
+  a tooltip on hover and on focus. Positions are generated —
+  `node scripts/build-us-map.mjs` reads `data/map/city-points.json` (US Census
+  2023 Gazetteer) and writes `public/us-map.svg` and `src/lib/us-map-data.ts`
+  — and a crowded marker is moved only as far as the 24 px target rule needs,
+  with a hairline back to the city. Run that script after changing the city
+  list. The base map is a CSS mask, never inline SVG: inlining costs its
+  weight twice, in the HTML and in the flight payload. `directory-map.test.ts`
+  holds the geometry, and re-derives the separation from the width in the
+  component, so narrowing the map fails the suite.
 - The prose is in `src/lib/directory-copy.ts` (listed in `hub-prose-links`);
   route files stay under the prose ceiling. No keywords are registered for
   these routes until Search Console shows them (DI-2.1).

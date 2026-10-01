@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Prose } from "@/components/Prose";
+import { UsCityMap, type UsCityMapPlace } from "@/components/UsCityMap";
 import {
   DIRECTORY_HUB_H1,
   DIRECTORY_PATH,
@@ -16,6 +17,7 @@ import {
 } from "@/lib/directory";
 import { DIRECTORY_COPY } from "@/lib/directory-copy";
 import { hubMetadata, metaDescription, pageTitle, SITE_URL } from "@/lib/seo";
+import { US_MAP_PLACE_BY_SLUG } from "@/lib/us-map-data";
 
 /**
  * The improv directory's hub: sixty US cities, each a page listing the
@@ -46,6 +48,31 @@ export default function ImprovNearYouPage() {
   const description = metaDescription(directoryHubDescription());
   const title = directoryHubTitle();
 
+  // The map's sixty markers. Positions come from the generated module
+  // (scripts/build-us-map.mjs); the counts are the same ones the grid below
+  // shows, read from the same entries, so the two views cannot disagree.
+  const places: UsCityMapPlace[] = cities.flatMap((city) => {
+    const point = US_MAP_PLACE_BY_SLUG.get(city.slug);
+    if (!point) return [];
+    const entries = liveEntries(city);
+    return [
+      {
+        slug: city.slug,
+        city: city.city,
+        state: city.state,
+        href: directoryCityPath(city.slug),
+        listed: entries.length,
+        classes: entries.filter((e) => e.kind.includes("classes")).length,
+        shows: entries.filter((e) => e.kind.includes("shows") || e.kind.includes("jams")).length,
+        x: point.x,
+        y: point.y,
+        markerX: point.markerX,
+        markerY: point.markerY,
+        moved: point.moved,
+      },
+    ];
+  });
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -67,7 +94,11 @@ export default function ImprovNearYouPage() {
   };
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    // `w-full`: the body is a flex column that does not stretch its items, so
+    // this element is otherwise sized to fit its contents — and the map is
+    // 41rem wide inside its scroller, which put the whole page on a sideways
+    // scrollbar on a phone. A definite width leaves the scrolling to the map.
+    <main className="mx-auto w-full max-w-3xl px-6 py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -89,6 +120,11 @@ export default function ImprovNearYouPage() {
         currentUrl={DIRECTORY_PATH}
         className="text-foreground/80 leading-relaxed"
       />
+
+      <h2 id="map" className="mt-12 text-2xl font-semibold">
+        On the map
+      </h2>
+      <UsCityMap places={places} skipTo="#cities" skipLabel="Skip the map, go to the city list" />
 
       <h2 id="cities" className="mt-12 text-2xl font-semibold">
         Cities

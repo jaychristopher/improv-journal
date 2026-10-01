@@ -1,0 +1,245 @@
+{
+  "_comment": "Where each city of the archive is, for the map on /improv-near-you. Latitude and longitude from the US Census Bureau's 2023 Gazetteer place file (public domain), matched to the city list by name within its own state, largest land area where a state holds two places of one name. Imported by `node scripts/build-us-map.mjs --gazetteer <2023_Gaz_place_national.txt>`, which refuses any point falling outside the state it claims; `directory-map.test.ts` holds that rule over this file. One point is not the gazetteer's: San Francisco's areal internal point is 37.7272,-123.0322, thirty kilometres out in the Pacific, because the city takes in the Farallon Islands. It carries the coordinates of San Francisco City Hall instead (37.7793,-122.4193, USGS GNIS), which is what a reader looking for the city means. Add a city to cities.json and run the import again.",
+  "points": {
+    "new-york": {
+      "lat": 40.6627,
+      "lng": -73.9387
+    },
+    "los-angeles": {
+      "lat": 34.0194,
+      "lng": -118.4108
+    },
+    "chicago": {
+      "lat": 41.837,
+      "lng": -87.6849
+    },
+    "houston": {
+      "lat": 29.7857,
+      "lng": -95.3888
+    },
+    "phoenix": {
+      "lat": 33.5722,
+      "lng": -112.0901
+    },
+    "philadelphia": {
+      "lat": 40.0094,
+      "lng": -75.1333
+    },
+    "san-antonio": {
+      "lat": 29.4628,
+      "lng": -98.5246
+    },
+    "san-diego": {
+      "lat": 32.815,
+      "lng": -117.1356
+    },
+    "dallas": {
+      "lat": 32.7933,
+      "lng": -96.7665
+    },
+    "san-jose": {
+      "lat": 37.296,
+      "lng": -121.8146
+    },
+    "austin": {
+      "lat": 30.2986,
+      "lng": -97.7541
+    },
+    "jacksonville": {
+      "lat": 30.3369,
+      "lng": -81.6616
+    },
+    "fort-worth": {
+      "lat": 32.782,
+      "lng": -97.3486
+    },
+    "columbus": {
+      "lat": 39.9839,
+      "lng": -82.9849
+    },
+    "charlotte": {
+      "lat": 35.209,
+      "lng": -80.831
+    },
+    "indianapolis": {
+      "lat": 39.7767,
+      "lng": -86.1459
+    },
+    "san-francisco": {
+      "lat": 37.7793,
+      "lng": -122.4193
+    },
+    "seattle": {
+      "lat": 47.6193,
+      "lng": -122.3515
+    },
+    "denver": {
+      "lat": 39.7619,
+      "lng": -104.8811
+    },
+    "washington": {
+      "lat": 38.9042,
+      "lng": -77.0165
+    },
+    "nashville": {
+      "lat": 36.1718,
+      "lng": -86.785
+    },
+    "oklahoma-city": {
+      "lat": 35.4671,
+      "lng": -97.5137
+    },
+    "el-paso": {
+      "lat": 31.8478,
+      "lng": -106.4311
+    },
+    "boston": {
+      "lat": 42.3386,
+      "lng": -71.0183
+    },
+    "portland": {
+      "lat": 45.537,
+      "lng": -122.65
+    },
+    "las-vegas": {
+      "lat": 36.2335,
+      "lng": -115.264
+    },
+    "detroit": {
+      "lat": 42.383,
+      "lng": -83.1022
+    },
+    "memphis": {
+      "lat": 35.109,
+      "lng": -89.9675
+    },
+    "louisville": {
+      "lat": 38.1654,
+      "lng": -85.6474
+    },
+    "baltimore": {
+      "lat": 39.3,
+      "lng": -76.6105
+    },
+    "milwaukee": {
+      "lat": 43.0633,
+      "lng": -87.9667
+    },
+    "albuquerque": {
+      "lat": 35.1048,
+      "lng": -106.6468
+    },
+    "tucson": {
+      "lat": 32.153,
+      "lng": -110.8708
+    },
+    "fresno": {
+      "lat": 36.7827,
+      "lng": -119.7934
+    },
+    "sacramento": {
+      "lat": 38.5677,
+      "lng": -121.4682
+    },
+    "kansas-city": {
+      "lat": 39.1224,
+      "lng": -94.5551
+    },
+    "mesa": {
+      "lat": 33.4006,
+      "lng": -111.7165
+    },
+    "atlanta": {
+      "lat": 33.7629,
+      "lng": -84.4227
+    },
+    "omaha": {
+      "lat": 41.2627,
+      "lng": -96.0535
+    },
+    "colorado-springs": {
+      "lat": 38.8673,
+      "lng": -104.7607
+    },
+    "raleigh": {
+      "lat": 35.8319,
+      "lng": -78.641
+    },
+    "long-beach": {
+      "lat": 33.7808,
+      "lng": -118.1682
+    },
+    "virginia-beach": {
+      "lat": 36.7795,
+      "lng": -76.0291
+    },
+    "miami": {
+      "lat": 25.7752,
+      "lng": -80.2086
+    },
+    "oakland": {
+      "lat": 37.7698,
+      "lng": -122.2257
+    },
+    "minneapolis": {
+      "lat": 44.9633,
+      "lng": -93.2683
+    },
+    "tulsa": {
+      "lat": 36.1279,
+      "lng": -95.9023
+    },
+    "bakersfield": {
+      "lat": 35.3532,
+      "lng": -119.0379
+    },
+    "wichita": {
+      "lat": 37.6906,
+      "lng": -97.3458
+    },
+    "arlington": {
+      "lat": 32.7007,
+      "lng": -97.1247
+    },
+    "new-orleans": {
+      "lat": 30.0534,
+      "lng": -89.9345
+    },
+    "cleveland": {
+      "lat": 41.4785,
+      "lng": -81.6794
+    },
+    "tampa": {
+      "lat": 27.9663,
+      "lng": -82.4776
+    },
+    "pittsburgh": {
+      "lat": 40.4399,
+      "lng": -79.9757
+    },
+    "st-louis": {
+      "lat": 38.6357,
+      "lng": -90.2446
+    },
+    "cincinnati": {
+      "lat": 39.1402,
+      "lng": -84.5058
+    },
+    "orlando": {
+      "lat": 28.4087,
+      "lng": -81.2548
+    },
+    "salt-lake-city": {
+      "lat": 40.7769,
+      "lng": -111.931
+    },
+    "richmond": {
+      "lat": 37.5314,
+      "lng": -77.476
+    },
+    "providence": {
+      "lat": 41.8231,
+      "lng": -71.4188
+    }
+  }
+}

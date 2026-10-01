@@ -520,6 +520,54 @@ body {
  */
 
 /*
+ * The directory's map of the sixty cities (/improv-near-you).
+ *
+ * The base map is a file rather than markup: inlining the state outlines
+ * costs 38 kB in the HTML and the same again in the flight payload that
+ * describes it, on a page that already carries sixty links. As a CSS mask the
+ * file supplies only the shape and the page supplies the colour, so the map
+ * follows the theme the way everything else does — `currentColor` is set by
+ * the element's own Tailwind text class. Borders are opaque in the file and
+ * state bodies are a fifth of that, so one colour gives two tones.
+ *
+ * The fallback draws the file directly. It loses the theme — the greys baked
+ * into it sit on both backgrounds — and keeps the map.
+ */
+.us-map-base {
+  background-color: currentColor;
+  -webkit-mask-image: url("/us-map.svg");
+  mask-image: url("/us-map.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@supports not ((mask-image: url("/us-map.svg")) or (-webkit-mask-image: url("/us-map.svg"))) {
+  .us-map-base {
+    background-color: transparent;
+    background-image: url("/us-map.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+/*
+ * A city's dot. The link colour, which is what the rest of the page uses to
+ * say that a thing can be gone to, and 5.9:1 on the page behind it where
+ * 1.4.11 asks for 3. A city with nothing listed yet is the same dot, hollow:
+ * the ring is `--border-ui`, the colour this site keeps for the boundary of a
+ * control that has no fill of its own.
+ */
+.us-map-dot {
+  background-color: var(--link);
+}
+
+.us-map-dot-empty {
+  border: 2px solid var(--border-ui);
+}
+
+/*
  * Printed, a guide's lists come out as slips: one prompt to a line with a cut
  * line under each, the site's name at the foot, and nothing that only makes
  * sense on a screen — the hero tool, the menu, the breadcrumb, the contents,
