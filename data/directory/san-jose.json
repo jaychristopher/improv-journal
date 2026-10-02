@@ -3,16 +3,46 @@
   "city": "San Jose",
   "state": "California",
   "stateCode": "CA",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:13:14.982Z",
+    "run": "2026-10-02T19:04:23.128Z",
     "searches": 0,
-    "notes": "The South Bay has no long-form theater of its own: CSz San Jose covers short form and Fremont's Made Up Theatre is the nearest full school; Mountain View, Palo Alto, Sunnyvale and Santa Clara surfaced nothing with its own improv site in this pass, and Bay Area long-form students mostly travel to San Francisco.",
+    "notes": "This session's shared WebSearch budget was already exhausted (200/200) before any search could run for San Jose, so discovery relied entirely on WebFetch workarounds (Bing, Google, DuckDuckGo, Yelp, Reddit fetches and direct domain guesses) rather than the intended 10-12 WebSearch calls -- those engines returned mostly generic/irrelevant snippets with no local business pack, so this should be trea",
     "rejected": [],
     "unreachable": []
   },
   "entries": [
+    {
+      "id": "cszsanjose.com",
+      "name": "ComedySportz San Jose (CSz San Jose)",
+      "url": "https://cszsanjose.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "South San Jose (Blossom Hill)",
+      "summary": "Long-running improv comedy theatre with its own venue in San Jose, presenting family-friendly competitive improv shows every Friday and Saturday plus a class program, summer camps, and a high school league.",
+      "schedule": "Shows every Friday and Saturday; ongoing adult classes, Camp ComedySportz summer camps, and a high school league",
+      "signals": [
+        "Own dedicated theatre venue at 5440 Thornwood Dr, San Jose",
+        "Part of the international ComedySportz league/format; site references operating since 1987",
+        "Shows Friday and Saturday year-round",
+        "Education arm covers adult classes, summer camps, and a high school league",
+        "Also offers corporate teambuilding/entertainment bookings"
+      ],
+      "score": 79,
+      "reasons": "Strong permanent-home and show-cadence score from an established, branded venue with weekly shows, with points held back only because the homepage doesn't surface explicit class levels or a dated October calendar.",
+      "sources": [
+        "https://cszsanjose.com/",
+        "https://cszsanjose.com/classes"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
     {
       "id": "madeuptheatre.com",
       "name": "Made Up Theatre",
@@ -22,60 +52,36 @@
         "classes",
         "jams"
       ],
-      "area": "Fremont (East Bay, 15 miles from San Jose)",
-      "summary": "The Bay Area's suburban improv theater at 4000 Bay Street, Fremont, founded 2011, with family-friendly and adult shows every weekend, in-person classes from a $20 sampler through musical and narrative tracks, and the Playground Improv Jam.",
-      "schedule": "Shows every weekend; Intro to Improv Mondays from October 19, 2026; sampler October 3",
+      "area": "Fremont (serves the South Bay, including San Jose, Santa Cla",
+      "summary": "Improv theatre based in Fremont offering live shows every weekend, drop-in improv jams, and classes, explicitly marketing itself to San Jose, Santa Clara, Sunnyvale, Mountain View, and Palo Alto audiences.",
+      "schedule": "Live shows every weekend (family-friendly and adult rotating); improv jams and classes also offered",
       "signals": [
-        "Founded 2011",
-        "Sampler, Intro, Scene Study, Improv Games",
-        "Musical Improv 1A-2 and Narrative 1-2",
-        "Playground Improv Jam",
-        "Fall 2026 dates posted",
-        "Shows every weekend"
-      ],
-      "score": 70,
-      "reasons": "Fifteen years, its own theater, weekend shows, a broad class menu with current dates and a jam; it sits in Fremont rather than Santa Clara County.",
-      "sources": [
-        "https://www.madeuptheatre.com/",
-        "https://madeuptheatre.com/classes/improv-classes/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 1
-    },
-    {
-      "id": "cszsanjose.com",
-      "name": "ComedySportz San Jose (CSz San Jose)",
-      "url": "https://cszsanjose.com/",
-      "kind": [
-        "shows",
-        "classes"
-      ],
-      "area": "South San Jose (Thornwood Drive)",
-      "summary": "Silicon Valley's competitive short-form improv, playing Friday and Saturday nights at 5440 Thornwood Drive since 1987, with classes and a long record of corporate, school and faith-group bookings.",
-      "schedule": "Shows Friday and Saturday nights",
-      "signals": [
-        "Since 1987",
-        "Weekend shows in its own space",
-        "Classes offered",
-        "Part of the CSz Worldwide network",
-        "Site artwork still dated 2023"
+        "Weekly live shows every weekend",
+        "Site explicitly lists San Jose, Santa Clara, Sunnyvale, Mountain View, and Palo Alto as served communities",
+        "Runs both structured classes and drop-in improv jams",
+        "Site copyright current to 2026"
       ],
       "score": 58,
-      "reasons": "Nearly four decades and its own room, but the site gives no class levels or dates and looked little updated.",
+      "reasons": "Credited for a fixed venue, weekly shows, and a class-plus-jam offering reaching the San Jose metro, but scored down because it is based in Fremont rather than in the metro proper and the homepage gives no detail on class levels or a dated ",
       "sources": [
-        "https://cszsanjose.com/"
+        "https://www.madeuptheatre.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 2,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 2,

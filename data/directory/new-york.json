@@ -3,45 +3,41 @@
   "city": "New York",
   "state": "New York",
   "stateCode": "NY",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:12:46.463Z",
+    "run": "2026-10-02T19:04:17.527Z",
     "searches": 0,
-    "notes": "New York's long-form core is UCB, the PIT and Magnet within a few blocks of each other in Manhattan, with Brooklyn's BCC and Second City now matching them for volume; Queens, Staten Island, the Bronx and the New Jersey towns have classes and venues but no dedicated improv theater, and the Squirrel Comedy Theatre's site showed no events.",
+    "notes": "All 15 archive organisations are still live; none confirmed closed. UCB New York reopened a permanent East Village home (242 E. 14th St) in September 2024 after its 2020-2023 closure, confirmed via Wikipedia since ucbcomedy.com itself returns 403 to automated fetches. Asylum NYC and Q.E.D. Astoria are current and active but show no confirmed dedicated improv programming, so they're kept with low s",
     "rejected": [],
     "unreachable": []
   },
   "entries": [
     {
-      "id": "ucbcomedy.com",
-      "name": "Upright Citizens Brigade Theatre (UCB New York)",
-      "url": "https://ucbcomedy.com/",
+      "id": "magnettheater.com",
+      "name": "Magnet Theater",
+      "url": "https://magnettheater.com/",
       "kind": [
         "shows",
         "classes",
         "jams"
       ],
-      "area": "East Village, Manhattan",
-      "summary": "The long-form institution founded by Besser, Poehler, Roberts and Walsh, now at 242 E 14th Street with a nightly show calendar and the Improv 101-to-advanced training center.",
-      "schedule": "Shows most nights; Improv Jam every other Tuesday at 5:30pm, free",
+      "area": "Chelsea, Manhattan",
+      "summary": "Chelsea improv theater and school since 2005, in its own venue with house-team shows most nights and a complete levels-based training curriculum.",
+      "schedule": "Multiple shows nightly; new Megawatt and Livewire team lineups and a Musical Circuit program launching in 2026",
       "signals": [
-        "Troupe founded 1996, first theatre 1999",
-        "Improv 101 through advanced program",
-        "Shows listed into October 2026",
-        "Free jam every other Tuesday",
-        "Alumni across TV comedy",
-        "Now at 242 E 14th Street"
+        "Running since 2005",
+        "Home venue at 254 W 29th St",
+        "Three shows listed for the night of this check",
+        "Internships and show submissions currently open"
       ],
-      "score": 92,
-      "reasons": "Decades of history, a complete beginner-to-performer curriculum, a full show calendar and a free jam; the site blocks automated fetches but its own pages surfaced in search with October 2026 shows.",
+      "score": 90,
+      "reasons": "A two-decade home venue, nightly house-team shows confirmed live on the day checked, and an actively updated class and team pipeline.",
       "sources": [
-        "https://ucbcomedy.com/shows/new-york/",
-        "https://ucbcomedy.com/training-center/improv-program/",
-        "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade"
+        "https://magnettheater.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 1
@@ -55,61 +51,25 @@
         "classes",
         "jams"
       ],
-      "area": "Chelsea / Midtown South, Manhattan",
-      "summary": "Ali Farahnakian's theater and comedy school at 154 W 29th Street: improv, sketch and stand-up shows nightly, leveled improv classes, daily drop-ins and a jam almost every evening.",
-      "schedule": "Shows nightly; drop-in classes daily at 1:30pm; jams and open mics most nights ($5 cash)",
+      "area": "Chelsea, Manhattan",
+      "summary": "Manhattan improv theater and school running since 2002, with nightly sketch, improv and variety shows and a full beginner-to-performance class ladder.",
+      "schedule": "Shows most nights of the week; confirmed live schedule through October 2-4, 2026 at time of check",
       "signals": [
-        "Founded 2002",
-        "Improv Levels 1-4 plus Joy of Improv",
-        "Drop-in classes every day",
-        "Jams almost every evening",
-        "Fall 2026 classes run into January 2027",
-        "Graduation shows for leveled classes"
+        "Running since 2002",
+        "Home venue at 154 W 29th St",
+        "Current class calendar and scholarships advertised",
+        "Jams, open mics and corporate workshops offered"
       ],
-      "score": 88,
-      "reasons": "Over twenty years in Manhattan with the city's most frequent jams, a leveled curriculum with daily drop-ins and a schedule already showing October 2026.",
+      "score": 90,
+      "reasons": "A two-decade permanent home, a complete class ladder, and a confirmed current multi-night show calendar.",
       "sources": [
-        "https://thepit-nyc.com/",
-        "https://thepit-nyc.com/available-classes/",
-        "https://thepit-nyc.com/improv-jams-open-mics/"
+        "https://thepit-nyc.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
-    },
-    {
-      "id": "magnettheater.com",
-      "name": "Magnet Theater",
-      "url": "https://magnettheater.com/",
-      "kind": [
-        "shows",
-        "classes",
-        "jams"
-      ],
-      "area": "Chelsea, Manhattan",
-      "summary": "Long-form improv and sketch theater at 254 W 29th Street since 2005, home of the Megawatt ensemble nights and the Musical Circuit, with a training center running three core levels plus advanced study.",
-      "schedule": "Shows nightly; Musical Circuit most Thursdays 10:30pm; free community mixers",
-      "signals": [
-        "Since 2005",
-        "Improv Levels 1-3 plus Advanced 1-2",
-        "Megawatt house ensembles",
-        "Musical improv track",
-        "Lineups announced through October 22, 2026",
-        "Free mixers for newcomers"
-      ],
-      "score": 87,
-      "reasons": "Two decades at a permanent Chelsea address, a complete improv and musical curriculum, house-team show nights and a schedule current into late October 2026.",
-      "sources": [
-        "https://magnettheater.com/",
-        "https://magnettheater.com/class/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 3
     },
     {
       "id": "brooklyncc.com",
@@ -120,29 +80,25 @@
         "classes",
         "jams"
       ],
-      "area": "East Williamsburg, Brooklyn",
-      "summary": "Brooklyn's performer-paid comedy theater, running about 30 productions a week across Eris, the Pig Pen and the DogHouse, with improv, musical improv, sketch, stand-up and clown classes year-round.",
-      "schedule": "Shows nightly; Jelly improv jam Wednesdays 8pm; fall classes start October 20-26, 2026",
+      "area": "Brooklyn",
+      "summary": "Brooklyn improv and sketch school across two locations, offering a full class ladder in improv, musical improv, sketch, stand-up and clown plus a packed weekly show calendar.",
+      "schedule": "Weekly recurring shows including TGIF improv nights, Home Teams and Faculty Lounge; confirmed schedule through October 1",
       "signals": [
-        "Founded March 2018",
-        "Improv Levels 1-4 and Musical Improv 1-3",
-        "About 30 productions weekly",
-        "Weekly Jelly jam plus queer and Spanish-language jams",
-        "Over 2,000 shows produced",
-        "Hosts the Fun & Dumb Improv Festival"
+        "Two Brooklyn locations",
+        "Classes across six comedy disciplines",
+        "Weekly Home Teams and free community jams",
+        "Praised by Time Out New York"
       ],
-      "score": 86,
-      "reasons": "A busy multi-venue home, a full curriculum with October 2026 cohorts, weekly jams and the most show volume in Brooklyn; younger than the Manhattan theaters.",
+      "score": 88,
+      "reasons": "Two active venues, a comprehensive class ladder, and a current, busy weekly show calendar including free jams.",
       "sources": [
-        "https://www.brooklyncc.com/",
-        "https://www.brooklyncc.com/improv",
-        "https://www.brooklyncc.com/show-schedule/jelly"
+        "https://www.brooklyncc.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
-      "rank": 4
+      "rank": 3
     },
     {
       "id": "secondcity.com",
@@ -154,58 +110,54 @@
         "jams"
       ],
       "area": "Williamsburg, Brooklyn",
-      "summary": "The Second City's Brooklyn outpost at 64 N 9th Street, opened 2024 with a Mainstage, a Black Box for student shows and a training center teaching Improv 1-5, musical improv and conservatory tracks.",
-      "schedule": "Fall 2026 terms run October to December; free community improv jams and open mics",
+      "summary": "The Second City's Williamsburg, Brooklyn campus, offering a full improv, writing and stand-up curriculum from beginner classes through a conservatory track.",
+      "schedule": "Classes scheduled into December 2026 with live enrollment counts; weekly drop-ins and free open mics",
       "signals": [
-        "Opened February 2024",
-        "Improv Levels 1-5 plus Conservatory",
-        "Musical Improv Fundamentals to Conservatory",
-        "Free student, BIPOC and queer improv jams",
-        "Mainstage and Black Box theaters",
-        "Part of The Second City (est. 1959)"
+        "National Second City training pedigree",
+        "Improv levels 1-5 plus a Conservatory track",
+        "$35 drop-in classes",
+        "Live seat counts show active current enrollment"
       ],
-      "score": 82,
-      "reasons": "A brand with 65 years of standing and a complete curriculum already listing fall 2026 terms, in a purpose-built venue that is only two years old.",
+      "score": 85,
+      "reasons": "A nationally known training pedigree with a full conservatory-track curriculum and confirmed open enrollment running through year-end.",
       "sources": [
-        "https://www.secondcity.com/find-a-class/new-york",
-        "https://www.secondcity.com/locations/new-york/",
-        "https://www.secondcity.com/shows/new-york"
+        "https://www.secondcity.com/find-a-class/new-york"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "ucbcomedy.com",
+      "name": "Upright Citizens Brigade Theatre (UCB New York)",
+      "url": "https://ucbcomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "East Village, Manhattan",
+      "summary": "Legendary improv theater and training center founded in 1999; reopened a permanent home at 242 E. 14th Street in September 2024 after closing its prior NYC venues in 2020.",
+      "schedule": "Shows and Training Center classes have run from the East 14th Street venue since the September 2024 reopening",
+      "signals": [
+        "Founded 1999",
+        "Reopened Sept 2024 at 242 E. 14th St after 2020-2023 closure",
+        "Decades of SNL and major comedy alumni",
+        "Training Center historically runs beginner through house-team levels",
+        "Reopening date not readable on the org site (403 to automated fetches); taken from the UCB Wikipedia article"
+      ],
+      "score": 74,
+      "reasons": "Immense longevity and standing with a newly reopened permanent home, marked down because ucbcomedy.com returns 403 to automated checks so its live calendar couldn't be directly confirmed this cycle.",
+      "sources": [
+        "https://ucbcomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 5
-    },
-    {
-      "id": "newyorkimprovtheater.com",
-      "name": "New York Improv Theater (Eight Improv)",
-      "url": "https://newyorkimprovtheater.com/",
-      "kind": [
-        "shows",
-        "classes"
-      ],
-      "area": "Times Square / Midtown West, Manhattan",
-      "summary": "Walt Frasier's short-form company, playing its flagship show EIGHT IMPROV every Saturday afternoon at the Broadway Comedy Club since 2002, with improv classes for kids, teens and adults.",
-      "schedule": "EIGHT IMPROV Saturdays 3pm at 318 W 53rd St; teen fall classes from October 4, 2026",
-      "signals": [
-        "Since 2002",
-        "Weekly Saturday show",
-        "Classes for kids, teens and adults",
-        "Blog updated September 2026",
-        "Touring and K-12 programs"
-      ],
-      "score": 62,
-      "reasons": "A quarter-century of weekly short-form shows and current class dates, in a borrowed comedy-club room rather than a theater of its own.",
-      "sources": [
-        "https://newyorkimprovtheater.com/",
-        "https://newyorkimprovtheater.com/2026/09/14/teen-comedy-class-sundays-12pm-fall-2026-times-square-nyc/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 6
     },
     {
       "id": "improvolution.org",
@@ -216,145 +168,24 @@
         "classes"
       ],
       "area": "Greenwich Village, Manhattan",
-      "summary": "NYC's character-based improv school, female-founded in 2002, teaching from a one-session intro through Levels 1-3 and advanced work at 115 MacDougal Street, with student and company shows.",
-      "schedule": "Class dates announced by email (ClassFlash); intro, 4-session and 10-session courses",
+      "summary": "Greenwich Village improv school running since 2002, offering intro-through-performance classes for actors alongside corporate and personal-growth workshops.",
+      "schedule": "Rolling registration for Intro, Launch Into YES and Level 1 class tracks",
       "signals": [
         "Founded 2002",
-        "First female-founded improv school in NYC",
-        "Intro, Launch Into Yes, Levels 1-3 and advanced",
-        "Character-based method",
-        "Student shows"
+        "Venue at 115 MacDougal St",
+        "Intro, 4-session and 10-session class tracks",
+        "Site copyright reads 2025, a year behind"
       ],
-      "score": 60,
-      "reasons": "Two decades of teaching with a clear ladder of levels, but no theater of its own and no class dates posted on the site at the time of checking.",
+      "score": 68,
+      "reasons": "A long-running Village school with a clear beginner class ladder, marked down slightly for a site that reads a year out of date.",
       "sources": [
-        "https://www.improvolution.org/",
-        "https://www.improvolution.org/level-3"
+        "https://www.improvolution.org/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
-      "rank": 7
-    },
-    {
-      "id": "asylumnyc.com",
-      "name": "Asylum NYC",
-      "url": "https://asylumnyc.com/",
-      "kind": [
-        "shows"
-      ],
-      "area": "Gramercy / Flatiron, Manhattan",
-      "summary": "A 150-seat comedy theater at 123 E 24th Street programming stand-up, improv, sketch and musical comedy, including the improvised musical Shitzprobe; its former class program is no longer on the site.",
-      "schedule": "Shows weekly; Shitzprobe on select Mondays; calendar runs September to November 2026",
-      "signals": [
-        "150-seat theater",
-        "Improvised musical Shitzprobe on select Mondays",
-        "Calendar listed into November 2026",
-        "Sister venue of Boston's Improv Asylum",
-        "No classes currently listed"
-      ],
-      "score": 52,
-      "reasons": "A real theater with a current calendar and improv on it, but no training program now and a mixed bill where improv is one strand among several.",
-      "sources": [
-        "https://asylumnyc.com/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 8
-    },
-    {
-      "id": "qedastoria.com",
-      "name": "Q.E.D. Astoria",
-      "url": "https://qedastoria.com/",
-      "kind": [
-        "shows",
-        "classes"
-      ],
-      "area": "Astoria, Queens",
-      "summary": "Astoria's woman-owned arts space at 27-16 23rd Avenue, founded 2014 and under new ownership since 2025, hosting more than 100 events a month including comedy shows, open mics and an adult improv class.",
-      "schedule": "100+ events a month; adult improv class listed in the fall 2026 catalogue",
-      "signals": [
-        "Founded 2014 by Kambri Crews",
-        "Sold to Hannah Lieberman in March 2025",
-        "Over 100 events a month",
-        "Adult improv class on the fall 2026 listings",
-        "Voted top NYC comedy venue by Time Out readers"
-      ],
-      "score": 50,
-      "reasons": "A durable neighborhood venue with a current catalogue, but improv is a small part of a wide program and class dates were not visible.",
-      "sources": [
-        "https://qedastoria.com/",
-        "https://qedastoria.com/collections/classes-meetups-events",
-        "https://qns.com/2024/12/qed-new-owner-kambri-crews/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 9
-    },
-    {
-      "id": "thearmorycomedy.com",
-      "name": "The Armory Comedy",
-      "url": "https://thearmorycomedy.com/",
-      "kind": [
-        "shows"
-      ],
-      "area": "Garment District, Manhattan (at The Tank)",
-      "summary": "An indie comedy community founded in 2016 by Leah Evans at The Tank, 312 W 36th Street, producing a weekly house-team improv show, a monthly sketch show and formats like Straight to Video.",
-      "schedule": "Weekly house improv teams and monthly sketch teams at The Tank; dates on the schedule page",
-      "signals": [
-        "Founded 2016",
-        "House improv and sketch teams",
-        "Open applications regardless of school",
-        "Based at The Tank, a non-profit arts venue",
-        "Class information by email only"
-      ],
-      "score": 50,
-      "reasons": "A steady indie home with house teams, but no training program of its own, no venue of its own and no dates visible on the schedule page when checked.",
-      "sources": [
-        "https://thearmorycomedy.com/",
-        "https://thearmorycomedy.com/shows",
-        "https://thetanknyc.org/the-armory-comedy"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 10
-    },
-    {
-      "id": "barrowgroup.org",
-      "name": "The Barrow Group Acting School",
-      "url": "https://www.barrowgroup.org/",
-      "kind": [
-        "classes",
-        "jams"
-      ],
-      "area": "Garment District / Midtown West, Manhattan",
-      "summary": "A theater company's acting school at 520 8th Avenue offering a three-level improv track (Fundamentals, Scene Work, Long Form), drop-in improv classes and TBG Improv Saturdays community sessions.",
-      "schedule": "Improv I-III each term; drop-ins; TBG Improv Saturdays (next listed October 3)",
-      "signals": [
-        "Improv I, II and III",
-        "Drop-in improv classes",
-        "TBG Improv Saturdays community sessions",
-        "Fall 2026 adult registration open",
-        "Part of an established Off-Broadway company"
-      ],
-      "score": 48,
-      "reasons": "A credible three-level track inside a respected acting school, but improv is a sideline, there are no shows and the dates sit on an external calendar.",
-      "sources": [
-        "https://www.barrowgroup.org/",
-        "https://www.barrowgroup.org/acting-school/classes/specialty-classes/improv-actor/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 11
+      "rank": 6
     },
     {
       "id": "faceoffunlimited.com",
@@ -364,83 +195,138 @@
         "shows",
         "classes"
       ],
-      "area": "East Village, Manhattan (HQ in Astoria, Queens)",
-      "summary": "The company behind BATSU! runs a six-week Intro to FOU Improv and an ongoing advanced class at Kogame, 67 1st Avenue, with intro graduates performing at the house jam; its offices are in Astoria.",
-      "schedule": "BATSU! NYC runs weekly; class sessions announced by email",
+      "area": "Astoria, Queens",
+      "summary": "Astoria improv company running the BATSU! NYC game show and Friday Night Face Off, with its own FOLD program training new improvisers.",
+      "schedule": "Friday Night Face Off and BATSU! NYC run on a regular cycle; FOLD training on its own schedule",
       "signals": [
-        "Produces BATSU! in NYC and Chicago",
-        "Intro to FOU Improv (6 weeks) and ongoing class",
-        "Graduates perform at the house jam",
-        "Classes at Kogame, 67 1st Ave",
-        "No session dates posted"
+        "Based at 37-02 Astoria Blvd",
+        "FOLD (Face Off Learning & Development) training pipeline",
+        "BATSU! NYC and sister BATSU! Chicago shows",
+        "Extensive current cast and producer roster"
       ],
-      "score": 44,
-      "reasons": "An established producer with a venue and a two-step class path, but no posted session dates and a program that is small beside its game-show business.",
+      "score": 64,
+      "reasons": "An established Queens improv company with its own training pipeline and a recognizable recurring show brand.",
       "sources": [
-        "https://www.faceoffunlimited.com/",
-        "https://www.faceoffunlimited.com/classes"
+        "https://www.faceoffunlimited.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
-      "rank": 12
+      "rank": 7
+    },
+    {
+      "id": "newyorkimprovtheater.com",
+      "name": "New York Improv Theater (Eight Improv)",
+      "url": "https://newyorkimprovtheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Times Square, Manhattan",
+      "summary": "Producer of the long-running EIGHT IMPROV flagship show in Times Square, plus corporate, K-12 and event-based improv programming across New York.",
+      "schedule": "EIGHT IMPROV plays Saturdays at 3pm at the Broadway Comedy Club; school field trips already being booked into January 20",
+      "signals": [
+        "Weekly flagship Times Square show",
+        "K-12 educational outreach programs",
+        "Corporate workshops for large companies",
+        "Blog active through September-October 2026"
+      ],
+      "score": 62,
+      "reasons": "A confirmed weekly flagship show and current programming, scored below the dedicated theaters because its model leans toward corporate and event bookings rather than a public class ladder.",
+      "sources": [
+        "https://newyorkimprovtheater.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
+    },
+    {
+      "id": "barrowgroup.org",
+      "name": "The Barrow Group Acting School",
+      "url": "https://www.barrowgroup.org/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Midtown Manhattan",
+      "summary": "Manhattan acting school since 1986 offering improv as one of its specialty tracks, plus a recurring TBG Improv Saturdays community show.",
+      "schedule": "Fall 2026 class registration open; TBG Improv Saturdays recurring",
+      "signals": [
+        "Founded 1986",
+        "19,000 sq ft facility with eight studios",
+        "Recurring TBG Improv Saturdays show",
+        "Alumni include Anne Hathaway and Tony Hale"
+      ],
+      "score": 58,
+      "reasons": "A long-established, well-resourced acting school with a genuine improv track and recurring show, scored below dedicated improv theaters since acting training is its core focus.",
+      "sources": [
+        "https://www.barrowgroup.org/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 9
+    },
+    {
+      "id": "thearmorycomedy.com",
+      "name": "The Armory Comedy",
+      "url": "https://thearmorycomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Garment District, Manhattan (at The Tank)",
+      "summary": "Resident improv company at The Tank in Manhattan running named house teams (Cereal Mascots, No Shots!, Syndicated, Wildcard) and original formats like The Campaign.",
+      "schedule": "Weekly pay-what-you-can house-team and sketch shows; published calendar last showed dates through June 2026",
+      "signals": [
+        "Resident company at The Tank, 312 W 36th St",
+        "Four named house improv teams",
+        "Pay-what-you-can pricing",
+        "Calendar not updated past June 2026 as of this check"
+      ],
+      "score": 55,
+      "reasons": "A real resident company with named house teams and distinctive formats, marked down because its published calendar has not been updated past June 2026.",
+      "sources": [
+        "https://thearmorycomedy.com/",
+        "https://thearmorycomedy.com/schedule"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 10
     },
     {
       "id": "jerseycreativelab.com",
       "name": "Jersey Creative Lab (JCL)",
       "url": "https://jerseycreativelab.com/",
       "kind": [
-        "classes"
+        "classes",
+        "jams"
       ],
-      "area": "Hoboken and Jersey City, New Jersey",
-      "summary": "Formerly Jersey Improv Lab: four-week Intro to Improv and six-week Level 2 courses (with a graduation show) in downtown Hoboken and Jersey City, plus stand-up writing workshops.",
-      "schedule": "Fall 2026 workshops began September 14-20; Level 2 requires 12 hours of prior training",
+      "area": "Hoboken & Jersey City, NJ",
+      "summary": "New Jersey improv and comedy-writing school running level-based workshop series across Hoboken, Jersey City and North Brunswick.",
+      "schedule": "Fall 2026 sessions include Level 2 Improv (Mondays, Hoboken) and Intro to Improv Comedy (Tuesdays/Sundays, Jersey City a",
       "signals": [
-        "Level 1 Intro (4 weeks) and Level 2 (6 weeks + grad show)",
-        "Sessions in Hoboken, Jersey City and North Brunswick",
-        "Fall 2026 start dates posted",
-        "Capped at 16 participants",
-        "Also teaches stand-up writing"
+        "Level 2 requires 12 prior training hours",
+        "Runs sessions in Hoboken, Jersey City and North Brunswick",
+        "Active Eventbrite-based registration for Fall 2026",
+        "Newsletter signup for future sessions"
       ],
-      "score": 44,
-      "reasons": "The one verifiable improv school on the New Jersey side with current dates and a two-level path, but no theater, no shows and a short history.",
+      "score": 52,
+      "reasons": "A genuine level-based improv curriculum with active current enrollment across the Jersey City/Hoboken area, but no venue of its own and no regular public show calendar.",
       "sources": [
         "https://jerseycreativelab.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
-      "rank": 13
-    },
-    {
-      "id": "lomtheater.org",
-      "name": "Brooklyn Improv Training (Letter of Marque Theater Co.)",
-      "url": "https://www.lomtheater.org/brooklynimprovtraining.html",
-      "kind": [
-        "classes"
-      ],
-      "area": "Gowanus / Park Slope, Brooklyn",
-      "summary": "Letter of Marque Theater Company's improv school teaching Fundamentals 1 and 2, a Level 3 and short focus workshops in Gowanus and Park Slope, with end-of-course showcases and scholarships for BIPoC and LGBTQIA+ students.",
-      "schedule": "Eight-session courses; all current sections listed as TBA",
-      "signals": [
-        "Fundamentals 1-2, Level 3 and workshops",
-        "Beginner and advanced drop-ins",
-        "Showcases close each course",
-        "Free tuition offered to BIPoC and LGBTQIA+ applicants",
-        "Classes at Vangeline Theater and Logan's Run"
-      ],
-      "score": 42,
-      "reasons": "A genuine leveled program with an inclusive tuition policy, but borrowed rooms, no public shows and every section marked TBA when checked.",
-      "sources": [
-        "https://www.lomtheater.org/brooklynimprovtraining.html"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 14
+      "rank": 11
     },
     {
       "id": "chicagocitylimits.com",
@@ -450,31 +336,118 @@
         "shows",
         "classes"
       ],
-      "area": "Manhattan (touring; no fixed theater)",
-      "summary": "New York's longest-running improv company, performing audience-inspired topical improv since the late 1970s and teaching a four-level adult curriculum, teen and kids classes and Improv4Business workshops.",
-      "schedule": "Shows booked at theaters, clubs and corporate venues; class dates by phone or email",
+      "area": "Manhattan",
+      "summary": "One of New York's oldest improv troupes; its current site shows no public show calendar and reads as a private-booking act for venues and corporate clients today.",
+      "schedule": "No public show calendar found; shows are booked to venues and organizations on request",
       "signals": [
-        "Performing in NYC for over 35 years",
-        "Levels I-IV, kids and teens",
-        "One-day drop-in class",
-        "No fixed theater listed",
-        "No 2026 dates on the site"
+        "Praised historically by the New York Times, Washington Post and New Yorker",
+        "Programs for kids, teens, adults and Improv4Business",
+        "Most recent dated video content from June 2020",
+        "No 2026 public show schedule visible on the site"
       ],
-      "score": 36,
-      "reasons": "Historic standing and a real curriculum, but no permanent stage, no posted dates and a site whose newest material is from 2020.",
+      "score": 42,
+      "reasons": "Significant historical standing and name recognition, but the current site shows no public show calendar and reads as largely inactive for walk-in audiences today.",
       "sources": [
         "https://chicagocitylimits.com/",
-        "https://chicagocitylimits.com/classes.html",
         "https://chicagocitylimits.com/shows.html"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 12
+    },
+    {
+      "id": "lomtheater.org",
+      "name": "Brooklyn Improv Training (Letter of Marque Theater Co.)",
+      "url": "https://www.lomtheater.org/brooklynimprovtraining.html",
+      "kind": [
+        "classes"
+      ],
+      "area": "Brooklyn",
+      "summary": "Letter of Marque Theater Co.'s Brooklyn improv arm, teaching Fundamentals through Level 3 plus free drop-ins, though every upcoming session is listed as TBA.",
+      "schedule": "Fundamentals 1 (8 weeks, Mondays, $300), Level 2 and Level 3 courses, plus free drop-ins; all next dates marked TBA at t",
+      "signals": [
+        "Full Fundamentals-to-Level-3 curriculum",
+        "Free drop-in and advanced drop-in classes",
+        "BIPOC and LGBTQIA+ scholarships offered",
+        "All upcoming sections currently marked TBA"
+      ],
+      "score": 40,
+      "reasons": "A real, structured beginner-to-advanced curriculum, marked down heavily because every upcoming section on the site is currently TBA rather than scheduled.",
+      "sources": [
+        "https://www.lomtheater.org/brooklynimprovtraining.html"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 13
+    },
+    {
+      "id": "asylumnyc.com",
+      "name": "Asylum NYC",
+      "url": "https://asylumnyc.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Manhattan",
+      "summary": "150-seat Manhattan comedy venue with a current show calendar including the Neo-Futurists' Infinite Wrench and stand-up/variety nights; no dedicated improv class track found.",
+      "schedule": "Infinite Wrench runs Fridays and Saturdays; calendar of other shows extends into November 2026",
+      "signals": [
+        "2026 site copyright",
+        "150-seat venue",
+        "Hosts the long-running Infinite Wrench",
+        "No improv classes or improv-specific shows found on the site"
+      ],
+      "score": 38,
+      "reasons": "A live, current venue, but its billed programming is mostly scripted and variety rather than dedicated improv, and no improv class program could be confirmed.",
+      "sources": [
+        "https://asylumnyc.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 14
+    },
+    {
+      "id": "qedastoria.com",
+      "name": "Q.E.D. Astoria",
+      "url": "https://qedastoria.com/",
+      "kind": [
+        "shows"
+      ],
+      "area": "Astoria, Queens",
+      "summary": "Astoria community events space hosting comedy, storytelling, workshops and screenings; no improv-specific shows or classes were found on its current site.",
+      "schedule": "Ongoing calendar of comedy and community events; specific improv offerings unconfirmed",
+      "signals": [
+        "2026 site copyright",
+        "Navigation includes shows, classes and open mic sections",
+        "The word improv does not appear on its homepage or shows/classes pages checked",
+        "Primarily general comedy and community programming"
+      ],
+      "score": 35,
+      "reasons": "An active, current Astoria venue, but no improv-specific programming could be confirmed on its site despite checking several pages.",
+      "sources": [
+        "https://qedastoria.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 15
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 15,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 15,

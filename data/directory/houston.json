@@ -3,50 +3,16 @@
   "city": "Houston",
   "state": "Texas",
   "stateCode": "TX",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:12:33.290Z",
+    "run": "2026-10-02T19:04:12.341Z",
     "searches": 0,
-    "notes": "Houston's improv runs through two rooms: Station Theater for long form and sketch and ComedySportz for short form. The Woodlands and Sugar Land showed no improv organisation with its own site, and the Houston Improv on Richmond is a stand-up club despite the name; with web search unavailable for this pass, smaller independents may be missing.",
+    "notes": "Both archive organisations are confirmed live and current. Station Theater has occupied its current Nance Street home since around 2013 and anchors a deep scholarship and training ecosystem. ComedySportz Houston now operates its venue under the name 'The Good Friend Theater,' with the Houston School of Improv as its training arm — same organisation and URL, just a venue rebrand worth noting. The s",
     "rejected": [],
     "unreachable": []
   },
   "entries": [
-    {
-      "id": "stationtheater.com",
-      "name": "Station Theater",
-      "url": "https://stationtheater.com/",
-      "kind": [
-        "shows",
-        "classes",
-        "jams"
-      ],
-      "area": "Fifth Ward / Hardy & Nance arts district",
-      "summary": "Houston's home for long-form improv and sketch, grown from early-2010s shows at Avant Garden into a custom-built theater at 2000 Nance Street (opened 2026), with weekend house shows, indie nights, leveled classes and open jams.",
-      "schedule": "Improv Implosion Fridays 7:30pm; Singularity Improv Saturdays 7:30pm; calendar on Crowdwork",
-      "signals": [
-        "Founded early 2010s",
-        "New purpose-built space in 2026",
-        "Level 0 free intro, beginner (9 weeks) and advanced improv",
-        "Jams and meetups open to all levels",
-        "Ran the Houston Improv Festival",
-        "Hosts the College Improv Tournament"
-      ],
-      "score": 76,
-      "reasons": "The city's established long-form theater with a new home, weekly house shows, a beginner-to-advanced path and jams; class dates live on a ticketing calendar rather than the site.",
-      "sources": [
-        "https://stationtheater.com/",
-        "https://stationtheater.com/about",
-        "https://stationtheater.com/improv",
-        "https://stationtheater.com/jams"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 1
-    },
     {
       "id": "comedysportzhouston.com",
       "name": "ComedySportz Houston (CSz Houston)",
@@ -56,29 +22,66 @@
         "classes"
       ],
       "area": "Northwest Houston (Jones Road)",
-      "summary": "The family-friendly short-form match that has played Houston for more than 35 years, every Friday and Saturday at 8301 Jones Road, with the Houston School of Improv's four-level core track plus long-form and musical tracks.",
-      "schedule": "ComedySportz every Friday and Saturday 7:30pm; eight-week classes, dates on the calendar",
+      "summary": "Houston's longest-running improv show at 35+ years, now housed under the 'Good Friend Theater' brand with the Houston School of Improv as its training arm.",
+      "schedule": "ComedySportz every Friday and Saturday at 7:30 PM, plus other produced shows",
       "signals": [
-        "35+ years in Houston",
-        "Levels One-Four, eight weeks each",
-        "Long Form and Musical Improv tracks",
-        "High School League and kids camps",
-        "Part of the CSz Worldwide network"
+        "35+ years running",
+        "Four-level core class track plus long-form, musical, and a high-school league",
+        "200+ shows a year and Fortune 500 corporate clients",
+        "Venue now branded The Good Friend Theater"
       ],
-      "score": 70,
-      "reasons": "Decades of weekly shows in its own venue and a full four-level school; short-form only, with class dates kept on a separate calendar.",
+      "score": 90,
+      "reasons": "Houston's longest-running improv institution, with the city's largest structured class ladder and a venue of its own.",
       "sources": [
         "https://www.comedysportzhouston.com/",
         "https://www.comedysportzhouston.com/classes"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
+    {
+      "id": "stationtheater.com",
+      "name": "Station Theater",
+      "url": "https://stationtheater.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Near Northside, Houston",
+      "summary": "Houston's own dedicated improv and sketch venue, running nightly house shows and a class ladder from a free intro level through advanced and specialty tracks.",
+      "schedule": "Improv shows Friday and Saturday evenings plus indie shows; classes run in ongoing sessions with a free Level 0 intro",
+      "signals": [
+        "Houston's own improv venue since around 2013",
+        "Free Level 0 intro through advanced long-form, musical, and sketch tracks",
+        "Hosts the College Improv Tournament and partners with UCB's Matt Besser",
+        "Black Improv Alliance scholarship program"
+      ],
+      "score": 85,
+      "reasons": "A long-settled, nationally-connected dedicated improv home with a deep class ladder and a packed weekly show schedule.",
+      "sources": [
+        "https://stationtheater.com/",
+        "https://stationtheater.com/shows",
+        "https://stationtheater.com/about"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 2,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 2,

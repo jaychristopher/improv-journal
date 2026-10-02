@@ -3,12 +3,12 @@
   "city": "Los Angeles",
   "state": "California",
   "stateCode": "CA",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:12:40.880Z",
+    "run": "2026-10-02T19:04:15.029Z",
     "searches": 0,
-    "notes": "Los Angeles clusters its improv on Vermont Avenue (Pack, WGIS, Improv-LA and Impro Theatre within two blocks), with UCB on Franklin and the Groundlings on Melrose; Burbank, Santa Monica and Culver City each have one working room. ComedySportz LA's site returned server errors and Flappers' and Improv Trick's sites could not be read, so they are unlisted; The Elysian now teaches mostly clown.",
+    "notes": "WebSearch was exhausted session-wide before any query for this city ran (200/200 used, consistent with concurrent sibling work on other cities) -- all five intended discovery searches were rejected immediately, so Priority 2 relied on direct WebFetch only, per the brief's contingency. All ten archive organisations were re-verified live via direct fetch with no closures, moves, or rebrands found. D",
     "rejected": [],
     "unreachable": []
   },
@@ -21,25 +21,22 @@
         "shows",
         "classes"
       ],
-      "area": "Melrose Avenue, Hollywood / Fairfax",
-      "summary": "The character-and-sketch improv powerhouse founded in 1974, with a company of 40, shows like Cookin' with Gas and a school running Intro, Basic, Intermediate and Lab tracks toward the Sunday Company.",
-      "schedule": "Shows weekly; fall 2026 classes start October 7-21; new classes posted Tuesdays 1pm",
+      "area": "Los Angeles",
+      "summary": "Non-profit sketch and improv theatre and school running since 1974, with a structured training path from intro workshops to its Sunday and Main companies.",
+      "schedule": "Core Track auditions held weekly (Tuesdays); new online classes posted every Monday; sketch shows run regularly at its t",
       "signals": [
-        "Founded 1974",
-        "Core Track: Basic, Intermediate, Improv Lab",
-        "Intro classes for beginners",
-        "Company of 40 members",
-        "Alumni include Ferrell, Wiig and McCarthy",
-        "501(c)(3) non-profit"
+        "Founded 1974 by Gary Austin",
+        "501(c)(3) non-profit theatre",
+        "Core Track auditions held weekly",
+        "Described on-site as one of the leading improv training programs in the country"
       ],
-      "score": 90,
-      "reasons": "Fifty years in its own theater, a famous alumni list, a structured track to the company and October 2026 class dates on the school page.",
+      "score": 97,
+      "reasons": "Five decades running its own theatre with the deepest beginner-to-company class pipeline of any LA school, and a continuously updated schedule.",
       "sources": [
-        "https://www.groundlings.com/",
-        "https://www.groundlings.com/school"
+        "https://www.groundlings.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 1
@@ -50,26 +47,25 @@
       "url": "https://improtheatre.com/",
       "kind": [
         "shows",
-        "classes"
+        "classes",
+        "jams"
       ],
       "area": "Los Feliz",
-      "summary": "LA's narrative long-form company, nearly four decades old, improvising full-length plays in the styles of Shakespeare, Twilight Zone and more at its Vermont Avenue studio and Dynasty Typewriter, with the Impro Theatre School.",
-      "schedule": "October 2026 shows include Twilight Zone Unscripted (Oct 7) and Shakes' Peers (Oct 4)",
+      "summary": "Long-running company performing fully improvised plays in the styles of classic literature and theatre, with its own school (the C.O.R.E. program) and a calendar of shows, jams and events.",
+      "schedule": "Multiple shows weekly (Wednesday, Friday, Sunday per current listings); ongoing jams and events calendar.",
       "signals": [
-        "About 37 years running",
-        "Studio at 1727 N Vermont Ave",
-        "Impro Theatre School C.O.R.E. program",
-        "Also performs at Dynasty Typewriter",
-        "Livestreamed shows",
-        "Roots in LA TheatreSports"
+        "Operating 37+ years",
+        "Home venue in Los Feliz Village",
+        "C.O.R.E. training program for all experience levels",
+        "Recent professional productions streamed (e.g. Tennessee Williams Unscripted)"
       ],
-      "score": 80,
-      "reasons": "Decades of standing, a studio of its own, a current October 2026 calendar and a school; class levels are less explicit on the site than the show calendar.",
+      "score": 87,
+      "reasons": "A long-standing company with its own venue, a distinctive genre-based repertoire, a structured school, and an active current show and jam calendar.",
       "sources": [
         "https://improtheatre.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
@@ -82,56 +78,25 @@
         "shows",
         "classes"
       ],
-      "area": "Los Feliz / East Hollywood",
-      "summary": "An independent comedy theater at 1615 N Vermont Avenue with improv, sketch, stand-up and variety six nights a week and affordable classes in improv, sketch, TV writing, clowning, stand-up and character.",
-      "schedule": "Shows six nights a week; class and audition news posted August 2026",
+      "area": "Los Feliz / Hollywood",
+      "summary": "Comedy theatre and school at 1615 N. Vermont Ave. offering live improv, sketch, stand-up and variety shows six nights a week alongside a broad class program taught by working industry professionals.",
+      "schedule": "Shows run six nights a week; class registration ongoing in-person and online.",
       "signals": [
-        "Shows six nights a week",
-        "Improv classes for all levels",
-        "Sketch, clown and writing tracks",
-        "Teachers from SNL, Netflix and Adult Swim",
-        "Shares its building with WGIS"
+        "Venue at 1615 N. Vermont Ave., Los Feliz",
+        "Past LA Weekly Readers' Choice Best Comedy Venue / Best Theater Company",
+        "Classes include improv, sketch, character, stand-up, TV pilot writing, voiceover and clown",
+        "House team auditions and sketch team submissions open"
       ],
-      "score": 72,
-      "reasons": "A busy independent venue with its own stage and a broad class menu, current to August 2026; younger and less tiered than the Groundlings or UCB.",
+      "score": 84,
+      "reasons": "An owned venue with shows nearly every night and an unusually wide class catalogue taught by recognised industry instructors, though no founding date is published.",
       "sources": [
         "https://www.packtheater.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 3
-    },
-    {
-      "id": "westsidecomedy.com",
-      "name": "M.I.'s Westside Comedy Theater",
-      "url": "https://westsidecomedy.com/",
-      "kind": [
-        "shows",
-        "classes",
-        "jams"
-      ],
-      "area": "Downtown Santa Monica",
-      "summary": "A comedy club, theater, bar and training center in a Santa Monica alley at 1323-A 3rd Street, open seven nights with the short-form flagship Mission: IMPROVable every Friday, classes and an improv jam.",
-      "schedule": "Shows 7 nights; Mission: IMPROVable Fridays 10pm; Pretty, Pretty Pony Thursdays 8pm",
-      "signals": [
-        "Shows seven nights a week",
-        "Mission: IMPROVable flagship show",
-        "Improv, stand-up and sketch classes",
-        "Open Mic & Improv Jam",
-        "Calendar current to October 2026"
-      ],
-      "score": 70,
-      "reasons": "A venue of its own with a nightly calendar current for October 2026, a flagship weekly improv show and classes, though class levels are not spelled out online.",
-      "sources": [
-        "https://westsidecomedy.com/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 4
     },
     {
       "id": "improv-la.com",
@@ -139,28 +104,52 @@
       "url": "https://www.improv-la.com/",
       "kind": [
         "shows",
-        "classes",
-        "jams"
+        "classes"
       ],
-      "area": "Los Feliz, Silver Lake and Burbank",
-      "summary": "A four-level improv school with studios in Los Feliz, Silver Lake and Burbank, free level showcases each term and the monthly Toast! alumni jam at The Clubhouse Theater.",
-      "schedule": "Showcases through November 2026; Toast! Improv Jam every third Sunday 8:30pm",
+      "area": "Burbank / Silver Lake / Los Feliz",
+      "summary": "Boutique improv school with locations in Burbank, Silver Lake and Los Feliz, running a four-level class progression plus comedy-writing and voiceover training, and corporate team-building workshops.",
+      "schedule": "Weekly in-person group classes across levels 1-4, plus an on-demand streaming course and periodic intensives.",
       "signals": [
-        "Levels 1-4 plus Everyday Improv",
-        "Three studios",
-        "Free showcases each term",
-        "Monthly Toast! jam",
-        "Founded by a Guinness record holder for longest improv show",
-        "Classes capped at 14"
+        "Founded by a Guinness World Record holder for longest improv show",
+        "Forbes recognition and four-time LA Community Award winner",
+        "Over 100,000 students taught",
+        "Copyright year current (2026)"
       ],
-      "score": 68,
-      "reasons": "Current dates, a four-level ladder, three locations and a monthly jam; it has no theater of its own and relies on partner venues for performances.",
+      "score": 78,
+      "reasons": "A well-regarded, long-running school with real scale and recent press recognition, scored down because its own site foregrounds classes over a public show calendar.",
       "sources": [
-        "https://www.improv-la.com/",
-        "https://www.improv-la.com/improv-shows"
+        "https://www.improv-la.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 4
+    },
+    {
+      "id": "laconnectioncomedy.com",
+      "name": "LA Connection Comedy Theatre",
+      "url": "https://www.laconnectioncomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Burbank",
+      "summary": "Burbank improv theatre founded in 1977 by Kent Skov, running a four-week introductory class pipeline into performance groups plus weekly live shows.",
+      "schedule": "Weekly live performances; four-week introductory classes with private coaching also available.",
+      "signals": [
+        "Founded 1977",
+        "Own venue at 3435 West Magnolia Blvd, Burbank",
+        "Notable alumni include Will Ferrell, Matthew Perry and Josh Groban",
+        "Corporate client list includes NBC, Disney and Universal"
+      ],
+      "score": 73,
+      "reasons": "Nearly fifty years in the same Burbank venue and a strong alumni pedigree, scored down because the site shows little detail on current show scheduling or class levels beyond the introductory tier.",
+      "sources": [
+        "https://www.laconnectioncomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 5
@@ -173,57 +162,83 @@
         "shows",
         "classes"
       ],
-      "area": "Los Feliz / East Hollywood",
-      "summary": "A women-led long-form school at 1615 N Vermont Avenue teaching Level 1, Level 2 (Game of the Scene) and Level 3 (Harold), plus advanced courses, with every multi-week class ending in a show and $16 drop-ins.",
-      "schedule": "Fall 2026 classes run late August to November; drop-ins $16",
+      "area": "Los Feliz",
+      "summary": "Improv school operating in Los Angeles, New York and online, with leveled classes, specialty workshops (musical, hip-hop, D&D-themed improv), and performance opportunities through resident teams.",
+      "schedule": "Classes scheduled through at least November; most multi-class courses include a show.",
       "signals": [
-        "Levels 1-3 plus advanced courses",
-        "Every course includes performances",
-        "$16 drop-in sessions",
-        "Financial assistance discounts",
-        "Also runs NYC and online classes"
+        "Classes held at 1615 N. Vermont Ave., Los Angeles",
+        "Levels from Intro through Advanced plus specialty workshops",
+        "Operates in LA, NYC and online",
+        "Drop-in sessions offered for experienced improvisers"
       ],
-      "score": 66,
-      "reasons": "A clear three-level ladder with fall 2026 dates and student shows, in a shared venue; its standing rests on teachers rather than a long history.",
+      "score": 70,
+      "reasons": "A multi-city school with a clear leveled curriculum and current scheduling, scored down for a thinner public show calendar than the dedicated theatres.",
       "sources": [
-        "https://www.wgimprovschool.com/laclasses",
-        "https://www.wgimprovschool.com/lashows"
+        "https://www.wgimprovschool.com/laclasses"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 6
     },
     {
-      "id": "laconnectioncomedy.com",
-      "name": "LA Connection Comedy Theatre",
-      "url": "https://www.laconnectioncomedy.com/",
+      "id": "fanaticsalon.com",
+      "name": "Fanatic Salon Theater",
+      "url": "https://fanaticsalon.com/",
       "kind": [
         "shows",
-        "classes"
+        "classes",
+        "jams"
       ],
-      "area": "Magnolia Park, Burbank",
-      "summary": "Kent Skov's short-form house since 1977 at 3435 W Magnolia Boulevard, running a Saturday ladder of kids, teen, rookie, JV and all-star improv shows and a four-week intro class that feeds its performing groups.",
-      "schedule": "Saturdays from noon to 9:30pm; $10 tickets; 4-week intro class",
+      "area": "Culver City",
+      "summary": "Culver City performance space offering improv drop-in workshops, teen improv classes, stand-up and musical improv shows, staffed by Second City ETC alumni.",
+      "schedule": "Saturday improv drop-in at 11am; musical improv and comedy shows on weekends; Wednesday writer/performer/artist program.",
       "signals": [
-        "Since 1977",
-        "Saturday show ladder from rookies to all-stars",
-        "Four-week intro class",
-        "Kids and teen improv shows",
-        "Whose Line-style short form"
+        "Venue at 3815 Sawtelle Blvd, Culver City",
+        "Staff includes Second City ETC founders Jeff Michalski and Jane Morris",
+        "Teen improv program",
+        "October 2026 events currently listed"
       ],
-      "score": 62,
-      "reasons": "One of the oldest improv rooms in LA with its own theater and a Saturday show ladder, but a thin class offering and no dates posted.",
+      "score": 68,
+      "reasons": "Notable Second City pedigree and a current, varied weekly calendar, scored down because no founding date or class-level structure is published.",
       "sources": [
-        "https://www.laconnectioncomedy.com/",
-        "https://www.laconnectioncomedy.com/schedule"
+        "https://fanaticsalon.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 7
+    },
+    {
+      "id": "westsidecomedy.com",
+      "name": "M.I.'s Westside Comedy Theater",
+      "url": "https://westsidecomedy.com/",
+      "kind": [
+        "shows",
+        "classes",
+        "jams"
+      ],
+      "area": "Santa Monica",
+      "summary": "Santa Monica comedy theatre running nightly stand-up, improv and sketch shows, with classes at multiple levels, kids' classes, and an improv jam/open mic.",
+      "schedule": "Seven shows a week; Friday improv at 10pm, Saturday shows at 8 and 10pm, Sunday class showcases.",
+      "signals": [
+        "Venue at 1323-A 3rd St, Santa Monica",
+        "Weekly 'Mission: IMPROVable' improv show",
+        "Class showcases and graduations run regularly",
+        "Guest performer roster includes well-known comedians"
+      ],
+      "score": 68,
+      "reasons": "A real, frequently-running venue with classes and a weekly improv jam, scored down because its programming leans heavily stand-up and the schedule we could verify showed dates a year old.",
+      "sources": [
+        "https://westsidecomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 8
     },
     {
       "id": "improvforthepeople.com",
@@ -233,52 +248,22 @@
         "shows",
         "classes"
       ],
-      "area": "West Los Angeles (Pico Boulevard)",
-      "summary": "A membership-style improv school at The Pico Theater, 10508 W Pico Boulevard, where flex-level classes run month to month like a gym, with beginner-friendly entry points and a Saturday Night Improv Show.",
-      "schedule": "Four classes a month per membership; Saturday Night Improv Show",
+      "area": "Palms, Los Angeles",
+      "summary": "Studio-model improv school at the Pico Theater running flex-level, month-to-month classes alongside a Saturday night audience-suggestion show.",
+      "schedule": "Classes Monday-Wednesday evenings and Saturday mornings; Saturday night shows.",
       "signals": [
-        "Resident venue The Pico Theater",
-        "Month-to-month membership classes",
-        "Flex-level, beginner-friendly",
-        "Saturday Night Improv Show",
-        "Loft classrooms next door"
+        "Based at The Pico Theater, 10508 W Pico Blvd",
+        "Month-to-month 'flex-level' studio model",
+        "Multiple named instructors",
+        "$185/month for four classes"
       ],
-      "score": 56,
-      "reasons": "A venue of its own and a weekly show, with an unusual rolling membership model instead of a level ladder; dates are not posted term by term.",
+      "score": 61,
+      "reasons": "A clear, current class schedule and a real venue, scored down for a single weekly show and no stated founding date or press/alumni standing.",
       "sources": [
         "https://improvforthepeople.com/classes/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 8
-    },
-    {
-      "id": "fanaticsalon.com",
-      "name": "Fanatic Salon Theater",
-      "url": "https://fanaticsalon.com/",
-      "kind": [
-        "shows",
-        "classes"
-      ],
-      "area": "Culver City",
-      "summary": "A 50-seat indie performance home at 3815 Sawtelle Boulevard with improv, stand-up, solo shows and music, a Saturday-morning improv drop-in taught by Second City e.t.c. founder Jeff Michalski and teen improv.",
-      "schedule": "Improv drop-in Saturdays 11am; Thursday open mic 7pm; calendar runs to December 2026",
-      "signals": [
-        "50-seat theater",
-        "Improv drop-in Saturdays",
-        "Teachers include Second City e.t.c. founders",
-        "Calendar listed to December 2026",
-        "Teen improv program"
-      ],
-      "score": 50,
-      "reasons": "A permanent small venue with a current calendar and a weekly drop-in, but no leveled program and improv is one strand of a mixed bill.",
-      "sources": [
-        "https://fanaticsalon.com/"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 9
@@ -291,28 +276,35 @@
         "classes"
       ],
       "area": "Culver City",
-      "summary": "An acting studio at 10820 Washington Boulevard running six-week adult improv courses in person and online, plus youth improv, each ending in a class show for friends and family.",
-      "schedule": "Adult in-person Mondays 10:30am and Thursdays 6:30pm; online Saturdays, Sundays and Tuesdays",
+      "summary": "Improv program within Michelle Danner's Culver City acting studio, offering adult and teen/youth improv classes that culminate in a class showcase.",
+      "schedule": "Weekly sessions Monday, Tuesday, Thursday, Saturday and Sunday; online and in-person.",
       "signals": [
-        "Six-week adult courses ($365)",
-        "In-person and online sections",
-        "Youth improv classes",
-        "Class show at the end of each course",
-        "Part of an established acting school"
+        "Based at 10820 Washington Blvd, Culver City",
+        "Adult (Improv 101) and teen/youth (ages 9-18) tracks",
+        "Runs within a broader, established acting studio",
+        "2025 copyright shown on the improv page"
       ],
-      "score": 40,
-      "reasons": "Regular weekly sections from a long-standing acting school, but improv is an elective there, with no shows, no jam and no stated levels.",
+      "score": 45,
+      "reasons": "A real, current class offering, scored low because it is a single-level add-on to a general acting studio with no public shows, house teams, or stated founding date for the improv program itself.",
       "sources": [
         "https://www.michelledanner.com/improv-la/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 10
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 10,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 10,

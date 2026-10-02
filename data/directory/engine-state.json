@@ -1,6 +1,24 @@
 {
-  "cursor": 0,
+  "cursor": 10,
   "runs": [
+    {
+      "date": "2026-10-02",
+      "model": "seed:claude-code",
+      "cities": [
+        "chicago",
+        "dallas",
+        "houston",
+        "los-angeles",
+        "new-york",
+        "philadelphia",
+        "phoenix",
+        "san-antonio",
+        "san-diego",
+        "san-jose"
+      ],
+      "searches": 0,
+      "failures": 0
+    },
     {
       "date": "2026-10-01",
       "model": "seed:claude-code",

@@ -3,12 +3,12 @@
   "city": "Dallas",
   "state": "Texas",
   "stateCode": "TX",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:12:29.578Z",
+    "run": "2026-10-02T19:04:12.097Z",
     "searches": 0,
-    "notes": "Dallas lost Dallas Comedy House in 2020; Stomping Ground is now the training hub and Dallas Comedy Club in Deep Ellum its show-side successor, but DCC's site timed out on every attempt so it is unlisted here. Plano, Irving and Addison have Improv-branded clubs that are stand-up rooms, not improv theaters.",
+    "notes": "The shared WebSearch budget was fully depleted (200/200, consumed by concurrent sibling runs) before any discovery search for Dallas could execute, so this pass largely re-verified the two archived organisations via direct WebFetch rather than searching for additional schools, jams or Plano/Irving/Addison venues. Addison's 'Improv' comedy-club franchise and WaterTower Theatre (Addison) were checke",
     "rejected": [],
     "unreachable": []
   },
@@ -19,27 +19,29 @@
       "url": "https://www.stompinggroundcomedy.org/",
       "kind": [
         "shows",
-        "classes"
+        "classes",
+        "jams"
       ],
-      "area": "Design District",
-      "summary": "A non-profit improv theater and school, incorporated 2017, at 1350 Manufacturing Street #109, with a six-level core curriculum starting October 2026, monthly shows like Thunderdome and programs for retirees and neurodiverse learners.",
-      "schedule": "Levels One-Six start October 18-22, 2026; Thunderdome first Fridays 9pm; Shenanigans first Saturdays 6pm",
+      "area": "Design District, Dallas",
+      "summary": "Nonprofit improv theater and training center in Dallas's Design District offering a five-level class pathway plus musical improv and comedy writing, with weekly house-team shows and free community jams.",
+      "schedule": "Big Dang Friday (1st/3rd/4th Fri, 7:30pm); Live. Laugh. MURDER + Improvised! The Musical (Sat, 7:30/9pm); The Jam (2nd/3",
       "signals": [
-        "Non-profit since May 2017",
-        "Levels One-Six",
-        "Fall 2026 start dates posted",
-        "Improv for Retirees and neurodiverse learners",
-        "Bilingual Comedy Fiesta program",
-        "Monthly signature shows"
+        "Nonprofit incorporated May 3, 2017, own venue at 1350 Manufacturing St.",
+        "Levels 1-5 plus Advanced Topics, Musical Improv, and Comedy Writing classes",
+        "House teams include One Shared Brain Cell and Malicious Compliance",
+        "Free public jams: The Jam and The Formula (monthly, for Black performers)",
+        "Also runs youth, retiree, neurodiverse, and corporate programs"
       ],
-      "score": 76,
-      "reasons": "Its own venue, a complete six-level ladder with October 2026 dates and inclusive programs; a younger theater whose shows are monthly rather than nightly.",
+      "score": 83,
+      "reasons": "A nine-year nonprofit with its own venue, a full beginner-to-advanced class pathway, and a packed weekly show-and-jam calendar, though it has little documented outside press or awards.",
       "sources": [
         "https://www.stompinggroundcomedy.org/",
-        "https://www.stompinggroundcomedy.org/course-category/improv/"
+        "https://www.stompinggroundcomedy.org/programs",
+        "https://www.stompinggroundcomedy.org/shows",
+        "https://www.stompinggroundcomedy.org/contact"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 1
@@ -52,30 +54,37 @@
         "shows",
         "classes"
       ],
-      "area": "Dallas and Fort Worth",
-      "summary": "The DFW audience-suggestion comedy institution with more than 25 years of Friday and Saturday shows, theaters in Fort Worth and Dallas, a bestselling book and the 4U comedy classes.",
-      "schedule": "Shows every Friday and Saturday night, $30",
+      "area": "Dallas (also operates a Fort Worth theater)",
+      "summary": "Long-running improv comedy theater with permanent stages in Dallas and Fort Worth, running weekend house shows alongside a corporate improv-training business and beginner public classes.",
+      "schedule": "Shows every Friday and Saturday night at both the Dallas and Fort Worth theaters",
       "signals": [
-        "Over 25 years",
-        "Shows every Friday and Saturday",
-        "Theaters in Fort Worth and Dallas",
-        "4U comedy classes",
-        "Bestselling book Happy Accidents",
-        "Voted Best Comedy Club"
+        "Over 25 years operating, with its own theaters in two cities",
+        "Voted Best Comedy Club and Best Entertainment Experience in Texas",
+        "Authors of national-bestseller book \"Happy Accidents\"",
+        "Level 1 public improv classes plus a corporate training center"
       ],
-      "score": 56,
-      "reasons": "Long-running weekend shows and strong standing, but the site posts no dates, no class levels and no Dallas address on the pages that would load.",
+      "score": 81,
+      "reasons": "Decades of operation, two permanent theaters, and strong press/awards standing, offset by a public class pathway that the live site doesn't detail past \"Level 1.\"",
       "sources": [
-        "https://www.fourdayweekend.com/"
+        "https://www.fourdayweekend.com/",
+        "https://www.fourdayweekend.com/classes"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 2,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 2,

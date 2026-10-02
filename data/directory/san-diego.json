@@ -3,16 +3,44 @@
   "city": "San Diego",
   "state": "California",
   "stateCode": "CA",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "engine": {
     "model": "seed:claude-code",
-    "run": "2026-10-01T02:13:13.294Z",
+    "run": "2026-10-02T19:04:22.801Z",
     "searches": 0,
-    "notes": "San Diego splits cleanly: Finest City for long form in Hillcrest, National Comedy Theatre for short form in Mission Hills and Mockingbird as the non-profit in Liberty Station; La Jolla's Comedy Store is stand-up, and Sidestage Improv's domain no longer resolves.",
+    "notes": "All three archive organisations are confirmed live and current, with no changes of name or address. National Comedy Theatre is the metro's longevity anchor (founded 1999, 7,000+ shows); Finest City Improv runs the largest class ladder; Mockingbird Improv is the newest and smallest, a nonprofit at Liberty Station with open jams. The session's shared web-search budget was exhausted before this city'",
     "rejected": [],
     "unreachable": []
   },
   "entries": [
+    {
+      "id": "nationalcomedy.com",
+      "name": "National Comedy Theatre (NCT San Diego)",
+      "url": "https://www.nationalcomedy.com/",
+      "kind": [
+        "shows",
+        "classes"
+      ],
+      "area": "Middletown, San Diego",
+      "summary": "San Diego's longest-running professional improv venue, founded in 1999 with over 7,000 shows performed and classes for adults, teens, and specialized groups.",
+      "schedule": "Shows Thursday through Sunday at 7:30 PM",
+      "signals": [
+        "Founded 1999",
+        "Over 7,000 shows performed",
+        "Repeatedly voted Best Comedy Show in San Diego",
+        "Specialized classes for autism and seniors"
+      ],
+      "score": 92,
+      "reasons": "A 26-year track record, a venue of its own, a near-nightly schedule, and the broadest class offering make this the metro's strongest entry.",
+      "sources": [
+        "https://www.nationalcomedy.com/"
+      ],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
+      "missingRuns": 0,
+      "status": "live",
+      "rank": 1
+    },
     {
       "id": "finestcityimprov.com",
       "name": "Finest City Improv",
@@ -22,56 +50,22 @@
         "classes",
         "jams"
       ],
-      "area": "Hillcrest",
-      "summary": "San Diego's long-form theater and school at 3746 6th Avenue, with six class levels from The Joy of Improv to Create Your Show, electives, drop-ins, open jams and shows Thursday to Saturday.",
-      "schedule": "Shows Thu, Fri, Sat and some Sundays (21+); students choose start dates when registering",
+      "area": "Hillcrest, San Diego",
+      "summary": "A large Hillcrest improv school and 21+ venue running a six-level class ladder plus drop-in sessions and a near-nightly show calendar.",
+      "schedule": "Shows Thursday through Saturday and some Sundays; classes run in ongoing levels with a free intro class",
       "signals": [
-        "Six class levels",
-        "Mid-term and end-of-term student shows",
-        "Open jams on the show calendar",
-        "Graduate Program for stage time",
-        "Shows three to four nights a week",
-        "Musical improv and clown electives"
+        "Six progressive class levels plus electives and a graduate program",
+        "Free introductory class for new students",
+        "Improv Project SD community initiative",
+        "21+ venue with its own bar"
       ],
-      "score": 80,
-      "reasons": "A venue of its own, shows most nights, the city's deepest curriculum and open jams; founding year and term dates are not on the pages read.",
+      "score": 84,
+      "reasons": "The deepest class programme of the San Diego venues checked, with a near-nightly show calendar, just behind National Comedy Theatre's longer track record.",
       "sources": [
-        "https://www.finestcityimprov.com/",
-        "https://www.finestcityimprov.com/classes"
+        "https://www.finestcityimprov.com/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
-      "missingRuns": 0,
-      "status": "live",
-      "rank": 1
-    },
-    {
-      "id": "nationalcomedy.com",
-      "name": "National Comedy Theatre (NCT San Diego)",
-      "url": "https://www.nationalcomedy.com/",
-      "kind": [
-        "shows",
-        "classes"
-      ],
-      "area": "Mission Hills",
-      "summary": "The competitive short-form theater at 3717 India Street, running since 1999 with more than 7,000 shows, MainStage matches every Friday and Saturday, a Sunday Company, house-team Thursdays and a three-level adult class track.",
-      "schedule": "MainStage Fri and Sat 7:30pm; Sunday Company 7:30pm; Level 1 next starts Tuesday October 20",
-      "signals": [
-        "Since 1999",
-        "Over 7,000 shows",
-        "Levels 1-3 ($245, six weeks)",
-        "Free two-hour intro workshop",
-        "House teams first two Thursdays monthly",
-        "Classes for teens, seniors and autistic adults"
-      ],
-      "score": 78,
-      "reasons": "Twenty-seven years, its own theater, weekly shows with current dates and a three-level ladder; short form only.",
-      "sources": [
-        "https://www.nationalcomedy.com/",
-        "https://www.nationalcomedy.com/classes"
-      ],
-      "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 2
@@ -85,29 +79,36 @@
         "classes",
         "jams"
       ],
-      "area": "Liberty Station, Point Loma",
-      "summary": "A non-profit improv theater and school at 2590 Truxtun Road in Liberty Station's arts district, teaching Improv Essentials core training, electives and youth classes, with a free intro workshop, open jams and shows like SmackDown Sunday.",
-      "schedule": "Shows and open jams listed on the site calendar; free intro workshop",
+      "area": "Liberty Station, San Diego",
+      "summary": "A nonprofit improv theatre at the Liberty Station arts district offering core training, youth classes, open jams, and a free intro workshop.",
+      "schedule": "Regular ticketed shows plus Open Jams and Sketch Night",
       "signals": [
-        "501(c)(3) non-profit",
-        "Improv Essentials core training",
-        "Free intro workshop",
-        "Open jams",
-        "Youth improv classes"
+        "Registered 501(c)(3) nonprofit, operating as OTIC Theater Collective",
+        "Free Intro to Improv Workshop",
+        "Open Jams and youth classes",
+        "Community-donation-supported model"
       ],
-      "score": 54,
-      "reasons": "A permanent home in an arts district with classes, jams and shows, but no dates or founding year visible on the pages read.",
+      "score": 65,
+      "reasons": "A genuine community nonprofit with open jams and youth programming, but smaller and newer than the city's two established anchors.",
       "sources": [
         "http://www.mockingbirdimprov.org/"
       ],
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-01",
+      "lastSeen": "2026-10-02",
       "missingRuns": 0,
       "status": "live",
       "rank": 3
     }
   ],
   "log": [
+    {
+      "run": "2026-10-02",
+      "added": 0,
+      "updated": 3,
+      "dropped": 0,
+      "unverified": 0,
+      "kept": 0
+    },
     {
       "run": "2026-10-01",
       "added": 3,
