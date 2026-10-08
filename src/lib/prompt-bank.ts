@@ -23,6 +23,12 @@
  */
 
 import { PROMPT_ROWS } from "./prompt-bank-data";
+import {
+  ANYWHERE,
+  PROMPT_SETTING_ROWS,
+  PROMPT_SETTINGS,
+  type PromptSetting,
+} from "./prompt-settings-data";
 import { WORD_ROWS, type WordRow } from "./prompt-words-data";
 
 export type PromptCategory =
@@ -86,6 +92,12 @@ export interface Prompt {
    * categories.
    */
   combinable: boolean;
+  /**
+   * The kinds of place this line can sit in. The classic intersects them so
+   * the three lines can share a room — see prompt-settings-data.ts for why
+   * pure axes were not enough. Empty where nothing combines.
+   */
+  settings: readonly PromptSetting[];
   /** A pair worth naming, or a group of three or more; unsaid for most. */
   cast?: PromptCast;
   /** One coaching line for the room — what to fight about, what to play straight. */
@@ -402,6 +414,18 @@ const CLASSIC_SET = new Set<Prompt["category"]>(CLASSIC_PARTS);
  * hashed id, the five scores, the flags read into fields — is the same rule,
  * so the ranking cannot treat the two banks differently by accident.
  */
+/**
+ * A row's settings, with `anywhere` expanded to the whole taxonomy so that
+ * compatibility is a plain intersection everywhere and nothing has to special
+ * case the portable prompts.
+ */
+export function settingsFor(text: string): readonly PromptSetting[] {
+  const raw = PROMPT_SETTING_ROWS[text];
+  if (!raw) return [];
+  if (raw === ANYWHERE) return PROMPT_SETTINGS;
+  return raw.split("|") as PromptSetting[];
+}
+
 export function rowToPrompt(
   category: Prompt["category"],
   [text, specific, open, charge, doable, grounded, flags = "", coach]: WordRow,
@@ -415,6 +439,7 @@ export function rowToPrompt(
     adult: flags.includes("a"),
     loud: flags.includes("l"),
     combinable: CLASSIC_SET.has(category) && !flags.includes("x"),
+    settings: settingsFor(text),
     ...(flags.includes("g") ? { cast: "group" as const } : {}),
     ...(flags.includes("d") ? { cast: "pair" as const } : {}),
     ...(coach ? { coach } : {}),

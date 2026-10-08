@@ -31,6 +31,7 @@ import {
   pickClassic,
   pickNext,
   poolFor,
+  redrawPool,
   type SeenStore,
 } from "@/lib/prompt-generator";
 
@@ -408,7 +409,9 @@ export function PromptGenerator({
    */
   function redrawPart(part: ClassicPart) {
     if (!draw?.parts) return;
-    const pool = poolFor(PROMPT_BANK, part, room, { combinable: true });
+    // Only the lines that still fit the two this one leaves standing, so a
+    // redraw cannot be the thing that breaks the scene (2026-10-08).
+    const pool = redrawPool(PROMPT_BANK, part, room, draw.parts);
     let pick = pickNext(pool, room, store.seen());
     if (!pick) {
       store.forget(pool.map((p) => p.id));

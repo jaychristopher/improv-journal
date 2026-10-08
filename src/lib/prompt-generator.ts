@@ -107,12 +107,46 @@ export function classicPools(
   ) as Record<ClassicPart, Prompt[]>;
 }
 
-/** How many ways the three lines can fall together, for the kind card. */
-export function classicCombinations(bank: Prompt[], useCase: PromptUseCase): number {
-  const pools = classicPools(bank, useCase);
-  return CLASSIC_PARTS.reduce((n, part) => n * pools[part].length, 1);
+/**
+ * Can these two lines share a room? A plain intersection of their settings,
+ * which is why `anywhere` is expanded to the whole taxonomy rather than kept
+ * as a flag — nothing here has to know about portability.
+ */
+export function sharesSetting(a: Prompt, b: Prompt): boolean {
+  return a.settings.some((setting) => b.settings.includes(setting));
 }
 
+/**
+ * How many ways the three lines can fall together *coherently*.
+ *
+ * Not the product of the three pool sizes any more. That number counted
+ * triples the generator will not draw — a dishwasher in a school library was
+ * one of the 433,650 — so it was both wrong and flattering. Counted per
+ * location, since the location is the anchor.
+ */
+export function classicCombinations(bank: Prompt[], useCase: PromptUseCase): number {
+  const pools = classicPools(bank, useCase);
+  return pools.location.reduce((total, place) => {
+    const whos = pools.relationship.filter((p) => sharesSetting(p, place)).length;
+    const whats = pools.task.filter((p) => sharesSetting(p, place)).length;
+    return total + whos * whats;
+  }, 0);
+}
+
+/**
+ * The classic, drawn so the three lines can happen at once.
+ *
+ * The Where goes first and the other two are drawn to fit it. It is the
+ * anchor because it is the only line that is unambiguously a physical place:
+ * a Who and a What can usually be carried into a room, but a room cannot be
+ * carried into them. Each line is still best-band-first inside whatever pool
+ * the constraint leaves, so the ranking survives the cohesion.
+ *
+ * Where a constrained pool is all seen, a seen line is drawn again rather
+ * than reaching outside it. Coherence beats novelty: a repeat reads as a
+ * coincidence, an incoherent triple reads as a bug — which is what it was
+ * (2026-10-08).
+ */
 export function pickClassic(
   bank: Prompt[],
   useCase: PromptUseCase,
@@ -120,9 +154,46 @@ export function pickClassic(
   rng: () => number = Math.random,
 ): ClassicDraw {
   const pools = classicPools(bank, useCase);
-  return Object.fromEntries(
-    CLASSIC_PARTS.map((part) => [part, pickNext(pools[part], useCase, seen, rng)]),
-  ) as ClassicDraw;
+  const NONE: ReadonlySet<string> = new Set();
+  const location =
+    pickNext(pools.location, useCase, seen, rng) ?? pickNext(pools.location, useCase, NONE, rng);
+
+  const fitting = (part: ClassicPart) => {
+    const pool = location
+      ? pools[part].filter((p) => sharesSetting(p, location.prompt))
+      : pools[part];
+    return pickNext(pool, useCase, seen, rng) ?? pickNext(pool, useCase, NONE, rng);
+  };
+
+  return { relationship: fitting("relationship"), location, task: fitting("task") };
+}
+
+/**
+ * The pool one line may be redrawn from without breaking the two it leaves
+ * standing. Tapping the Where asks more of the draw than tapping the other
+ * two, because it has to suit both of them, so the constraint is relaxed in
+ * steps rather than dropped: everything it must fit, then the location alone,
+ * then the whole pool. A line that cannot be redrawn at all would be worse
+ * than one redrawn against less.
+ */
+export function redrawPool(
+  bank: Prompt[],
+  part: ClassicPart,
+  useCase: PromptUseCase,
+  draw: ClassicDraw,
+): Prompt[] {
+  const pool = poolFor(bank, part, useCase, { combinable: true });
+  const others = CLASSIC_PARTS.filter((p) => p !== part)
+    .map((p) => draw[p]?.prompt)
+    .filter((p): p is Prompt => Boolean(p));
+  const all = pool.filter((candidate) => others.every((o) => sharesSetting(candidate, o)));
+  if (all.length > 0) return all;
+  const place = draw.location?.prompt;
+  if (part !== "location" && place) {
+    const anchored = pool.filter((candidate) => sharesSetting(candidate, place));
+    if (anchored.length > 0) return anchored;
+  }
+  return pool;
 }
 
 /** The classic's three lines as one string, for the clipboard. */
