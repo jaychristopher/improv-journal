@@ -207,3 +207,60 @@ describe("what a row can say", () => {
     for (const kind of PROMPT_KINDS) expect(headings, kind.id).toContain(kind.heading);
   });
 });
+
+/**
+ * Each line of the classic may name its own axis and no other.
+ *
+ * Reported on 2026-10-07: "each of the 'who' 'what' and 'where' often has all
+ * three inside each of them". The three pools were correctly categorised by
+ * subject the whole time, so the audit above passed and the bug was real. What
+ * had gone wrong is that `combinable` is opt-out — `CLASSIC_SET.has(category)
+ * && !flags.includes("x")` — so a row joins the classic unless whoever added it
+ * remembered to type `x`. A later batch of task lines written as trades did
+ * not: "Two movers and a piano on a landing" brings its own cast *and* its own
+ * venue, so it was drawn as the What under a Who of "a driving instructor and a
+ * student" and a Where of "a laundromat", contradicting both.
+ *
+ * The test above this one checks the flag is *respected*. It cannot fail on a
+ * flag that is wrong, which is why it passed throughout. These two check the
+ * flag is *correct*, mechanically, so the next unmarked batch fails the suite
+ * instead of reaching a reader.
+ *
+ * The third case — a relationship that states its venue outright, as in "the
+ * passenger who has never been on a boat" — is not caught here. Distinguishing
+ * a stated place from an object or a shared history ("in a band together", "at
+ * the same map") needs judgement rather than a lexicon, and the two in the bank
+ * on 2026-10-07 were flagged by hand. That remainder is why this is two rules
+ * and not three.
+ */
+describe("the classic's lines name one axis each", () => {
+  /** An occupation or a named relationship: these say who the people are. */
+  const ROLE =
+    /\b(mover|locksmith|waiter|groomer|electrician|decorator|learner|examiner|farmer|pharmacist|stagehand|lifeguard|plumber|teacher|instructor|nurse|doctor|barber|chef|cleaner|driver|guard|receptionist|librarian|owner|customer|client|patient|student|pupil|coach|manager|boss|colleague|friend|parent|sibling|roommate|housemate|neighbour|cousin|swimmer|tailor|florist|gardener|priest|referee|apprentice|deckhand|passenger)s?\b/i;
+  /** People placed in the scene. The possessive is excluded: "someone's
+   *  childhood bedroom" says whose the room is, which is a place. */
+  const CAST = /\b(someone|somebody|a person|two people|one person|a man|a woman)\b(?!'s)/i;
+
+  it("gives the What no cast of its own", () => {
+    const pool = PROMPT_BANK.filter((p) => p.category === "task" && p.combinable);
+    // Guard the guard: a changed flag or selector must fail, not pass vacuously.
+    expect(pool.length).toBeGreaterThanOrEqual(55);
+    expect(pool.filter((p) => ROLE.test(p.text)).map((p) => p.text)).toEqual([]);
+  });
+
+  it("puts nobody in the Where", () => {
+    const pool = PROMPT_BANK.filter((p) => p.category === "location" && p.combinable);
+    expect(pool.length).toBeGreaterThanOrEqual(70);
+    expect(pool.filter((p) => CAST.test(p.text)).map((p) => p.text)).toEqual([]);
+  });
+
+  it("keeps the excluded lines in the bank, where they are still good prompts", () => {
+    // `x` removes a line from the classic; it does not delete it. These are
+    // complete scene starters and the single draw still offers every one.
+    const excluded = PROMPT_BANK.filter(
+      (p) => CLASSIC_PARTS.includes(p.category as (typeof CLASSIC_PARTS)[number]) && !p.combinable,
+    );
+    expect(excluded.length).toBeGreaterThanOrEqual(85);
+    expect(excluded.map((p) => p.text)).toContain("Two movers and a piano on a landing");
+  });
+});
