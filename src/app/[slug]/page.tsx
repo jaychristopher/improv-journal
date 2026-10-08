@@ -53,7 +53,6 @@ import { conceptMarks, getGuideHeadedConcepts, walkedDrills } from "@/lib/headed
 import { contentsFor } from "@/lib/headings";
 import { guideSubjectConceptId } from "@/lib/jsonld-edges";
 import { APPENDIX_GUIDES, appendixContents } from "@/lib/prompt-bank-appendix";
-import { resolvePromptConcepts } from "@/lib/prompt-concepts";
 import { readingMinutes } from "@/lib/reading-time";
 import { getRelatedBridges } from "@/lib/related-bridges";
 import type { BridgeFrontmatter, PathFrontmatter } from "@/lib/schema";
@@ -110,9 +109,7 @@ const HERO_TOOLS: Record<string, () => Promise<React.ReactNode>> = {
   // The generator's categories are concepts under other names; the map is
   // resolved here because the generator is a client component and cannot
   // read the graph (tracker entry 332).
-  "improv-prompts": async () => (
-    <PromptGenerator surface="guide-hero" concepts={await resolvePromptConcepts()} />
-  ),
+  "improv-prompts": async () => <PromptGenerator surface="guide-hero" />,
   // The page argues that a list is the wrong product for this game: the
   // answer is worthless, the defence is the game, and it dies on "it
   // depends". The hero is that argument as a tool — two questions, then one

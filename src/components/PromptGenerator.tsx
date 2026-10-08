@@ -8,12 +8,10 @@ import {
   CLASSIC_PART_LABELS,
   CLASSIC_PARTS,
   type ClassicPart,
-  conceptGloss,
   DEFAULT_USE_CASE,
   PROMPT_BANK,
   PROMPT_KINDS,
   PROMPT_USE_CASES,
-  type PromptConceptMap,
   type PromptKind,
   type PromptKindInfo,
   type PromptUseCase,
@@ -160,18 +158,7 @@ function clock(seconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export function PromptGenerator({
-  surface,
-  concepts,
-}: {
-  surface: PromptGeneratorSurface;
-  /**
-   * Each kind's concepts, resolved by the mounting page (prompt-concepts.ts).
-   * Optional so the component still renders where no page resolved them; the
-   * concept line under a prompt then renders nothing rather than a bare id.
-   */
-  concepts?: PromptConceptMap;
-}) {
+export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }) {
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState<Step>("kind");
   // Read from the device on the client's first render and defaulted on the
@@ -207,7 +194,6 @@ export function PromptGenerator({
   const kindInfo = PROMPT_KINDS.find((c) => c.id === kind) ?? null;
   // The first concept is the one the kind *is*; the rest are the sidebar's
   // business. Nothing when the page passed no map or the kind has none.
-  const concept = kindInfo ? (concepts?.[kindInfo.id]?.[0] ?? null) : null;
   const card = draw?.card ?? 0;
 
   // Installable: the tool is the one page on the site that gets used standing
@@ -521,82 +507,50 @@ export function PromptGenerator({
       ? "group"
       : null
     : (single?.prompt.cast ?? null);
-  // The how-to, coaching, cast and theory lines are written for the person
-  // holding the device. With the room set to a show a laptop is a projector,
-  // and the audience should see the question and not the host's notes, so
-  // there they sit under the buttons in small type.
+  /**
+   * All that is left of the notes under a prompt.
+   *
+   * Cut on 2026-10-08: "we have a ton of noise, the user wants a word ... for
+   * each element we need to have a REALLY good reason for it to be on the
+   * screen if its not simply the word or a way to move to the next one."
+   *
+   * What went: the how-to sentence, which is identical on every draw of a
+   * kind and already sits in this page's own prose; the coaching line; and
+   * the theory gloss, which restated the how-to sentence by construction
+   * because it was derived from it, so the slide printed one sentence twice.
+   *
+   * What stayed is this: whether the prompt needs more than two people. That
+   * is not instruction or theory, it decides whether the prompt can be played
+   * at all, and a pair who draw a group prompt find out by failing.
+   *
+   * With the room set to a show a laptop is a projector and the audience
+   * should see the question rather than the host's notes, so there it sits
+   * under the buttons in small type.
+   */
   const notesAtFoot = room === "show";
   const notes =
-    kindInfo && draw && hasPrompt(draw) ? (
+    cast && draw && hasPrompt(draw) ? (
       <div
         data-testid="prompt-notes"
         data-notes={notesAtFoot ? "foot" : "card"}
         className={notesAtFoot ? "text-foreground-dim mt-8 max-w-2xl text-xs leading-relaxed" : ""}
       >
         <p
-          className={
-            notesAtFoot
-              ? ""
-              : "text-foreground/80 mt-6 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-lg"
-          }
+          className={notesAtFoot ? "" : "text-foreground-dim mt-6 text-sm"}
+          data-testid="prompt-cast"
         >
-          {kindInfo.howToUse}
+          {cast === "group" ? (
+            "Needs three or more."
+          ) : (
+            <>
+              Works for two &mdash;{" "}
+              <Link href="/2-person-improv-games" className="underline underline-offset-2">
+                2 person improv games
+              </Link>{" "}
+              has the rest.
+            </>
+          )}
         </p>
-        {single?.prompt.coach && (
-          <p
-            className={
-              notesAtFoot
-                ? "mt-2"
-                : "text-foreground/80 mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl lg:text-base"
-            }
-            data-testid="prompt-coach"
-          >
-            <span className="text-foreground-dim text-xs tracking-wider uppercase">Coaching</span>{" "}
-            {single.prompt.coach}
-          </p>
-        )}
-        {cast && (
-          <p
-            className={notesAtFoot ? "mt-2" : "text-foreground-dim mt-3 text-sm"}
-            data-testid="prompt-cast"
-          >
-            {cast === "group" ? (
-              "Needs three or more."
-            ) : (
-              <>
-                Works for two &mdash;{" "}
-                <Link href="/2-person-improv-games" className="underline underline-offset-2">
-                  2 person improv games
-                </Link>{" "}
-                has the rest.
-              </>
-            )}
-          </p>
-        )}
-        {/* The kind is a concept under another name, and howToUse is that
-            concept's page in a sentence, so the sentence is reused as the
-            gloss and the title becomes the link: every prompt is one click
-            from its theory (tracker entry 332). Nothing for a kind without a
-            concept, or a mount without the resolved map. */}
-        {concept && (
-          <p
-            className={
-              notesAtFoot
-                ? "mt-2"
-                : "text-foreground-dim mt-3 max-w-md text-sm leading-relaxed lg:max-w-2xl"
-            }
-            data-prompt-concept={concept.id}
-          >
-            The idea behind it:{" "}
-            <Link
-              href={concept.href}
-              className="text-foreground/70 italic underline underline-offset-2"
-            >
-              {concept.title}
-            </Link>{" "}
-            &mdash; {conceptGloss(kindInfo.howToUse)}
-          </p>
-        )}
       </div>
     ) : null;
 
@@ -857,17 +811,20 @@ export function PromptGenerator({
                 <div className="flex flex-1 flex-col justify-center">
                   {hasPrompt(draw) ? (
                     <>
-                      <p className="text-foreground-dim text-xs tracking-wider uppercase">
-                        {draw.parts
-                          ? `${draw.poolSize.toLocaleString("en-US")} ways it can fall`
-                          : `${draw.picks[draw.picks.length - 1].remaining} of ${draw.poolSize} left`}
-                        <span aria-hidden="true"> &middot; </span>
-                        <span data-testid="prompt-clock">
-                          {every > 0
-                            ? `${clock(Math.max(0, every - elapsed))} until the next`
-                            : `${clock(elapsed)} on this one`}
-                        </span>
-                      </p>
+                      {/* How many are left and how long this one has been up
+                          were on screen on every draw and neither was asked
+                          for; they were the top line of the noise reported on
+                          2026-10-08. The countdown stays only when the cog has
+                          set an interval, because then the card advances on
+                          its own and the clock is that feature telling you
+                          when — not a statistic about the pool. */}
+                      {every > 0 && (
+                        <p className="text-foreground-dim text-xs tracking-wider uppercase">
+                          <span data-testid="prompt-clock">
+                            {`${clock(Math.max(0, every - elapsed))} until the next`}
+                          </span>
+                        </p>
+                      )}
                       {draw.parts ? (
                         <ClassicCard
                           parts={draw.parts}

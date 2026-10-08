@@ -5,7 +5,6 @@ import { describe, expect, it } from "vitest";
 import { loadAtoms } from "../content";
 import {
   categoriesNaming,
-  conceptGloss,
   PROMPT_BANK,
   PROMPT_CATEGORIES,
   PROMPT_USE_CASES,
@@ -223,20 +222,5 @@ describe("the categories' concepts", () => {
     expect(categoriesNaming("want").map((c) => c.id)).toEqual(["situation"]);
     expect(categoriesNaming("space-work").map((c) => c.id)).toEqual(["location"]);
     expect(categoriesNaming("commitment")).toEqual([]);
-  });
-
-  it("read the advice as the gloss: the last sentence of howToUse, lower-cased to follow a dash", () => {
-    for (const c of PROMPT_CATEGORIES) {
-      const gloss = conceptGloss(c.howToUse);
-      expect(gloss.length, c.id).toBeGreaterThan(10);
-      expect(c.howToUse.toLowerCase(), c.id).toContain(gloss.toLowerCase());
-      expect(gloss.charAt(0), c.id).toBe(gloss.charAt(0).toLowerCase());
-      expect(gloss, c.id).toMatch(/[.!?]$/);
-    }
-    expect(
-      conceptGloss(
-        "Two people with something already between them. Play what is between them, not the label.",
-      ),
-    ).toBe("play what is between them, not the label.");
   });
 });

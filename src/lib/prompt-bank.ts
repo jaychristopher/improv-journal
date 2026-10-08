@@ -371,18 +371,6 @@ export function categoriesNaming(atomId: string): PromptKindInfo[] {
 }
 
 /**
- * The gloss after a concept's title: the last sentence of `howToUse`, since
- * the sentence before it restates the prompt and the last one is the advice.
- * "…Play what is between them, not the label." becomes "play what is between
- * them, not the label." after the dash.
- */
-export function conceptGloss(howToUse: string): string {
-  const sentences = howToUse.match(/[^.!?]+[.!?]+/g) ?? [howToUse];
-  const last = sentences[sentences.length - 1].trim();
-  return last.charAt(0).toLowerCase() + last.slice(1);
-}
-
-/**
  * The tool page, for the try line on a concept. It once carried
  * `?category=<kind>` so the first tap skipped to that kind; since the kind
  * is the first tap (2026-09-30) the page is enough.

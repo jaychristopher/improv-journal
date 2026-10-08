@@ -98,7 +98,7 @@ describe("PromptTryLine", () => {
   });
 });
 
-describe("the generator's concept line", () => {
+describe("the slide carries the prompt and the controls", () => {
   beforeEach(() => {
     // A clean device: nothing set in the cog, nothing seen.
     window.localStorage.clear();
@@ -109,31 +109,47 @@ describe("the generator's concept line", () => {
     document.body.style.overflow = "";
   });
 
-  it("names the category's concept under a drawn prompt, with the resolved link", async () => {
-    const concepts = await resolvePromptConcepts();
-    render(<PromptGenerator surface="tool-page" concepts={concepts} />);
+  /**
+   * Cut on 2026-10-08: "we have a ton of noise, the user wants a word ... for
+   * each element we need to have a REALLY good reason for it to be on the
+   * screen if its not simply the word or a way to move to the next one."
+   *
+   * The how-to sentence, the coaching line and the theory gloss came off the
+   * slide. The gloss was derived from the how-to sentence, so the slide had
+   * been printing one sentence twice — the duplication was structural, not a
+   * mistake somebody made once. The theory link moved into this page's own
+   * prose rather than being deleted, where it is server-rendered and so can
+   * actually be followed; the test below holds that end of it.
+   */
+  it("prints no theory, no how-to and no coaching under a drawn prompt", () => {
+    render(<PromptGenerator surface="tool-page" />);
     const relationship = PROMPT_CATEGORIES.find((c) => c.id === "relationship");
     expect(relationship).toBeDefined();
     if (!relationship) return;
     fireEvent.click(screen.getByRole("button", { name: relationship.label }));
-    expect(screen.getByTestId("prompt-text")).toBeTruthy();
+    // Guard the guard: a prompt really is on screen, so the absences below
+    // are the notes being gone and not the whole card failing to render.
+    expect(screen.getByTestId("prompt-text").textContent?.length ?? 0).toBeGreaterThan(10);
 
-    const line = document.querySelector("[data-prompt-concept]");
-    expect(line).not.toBeNull();
-    expect(line?.getAttribute("data-prompt-concept")).toBe("relationship");
-    expect(line?.textContent).toContain("The idea behind it");
-    expect(line?.textContent).toContain("play what is between them, not the label.");
-    expect(line?.querySelector("a")?.getAttribute("href")).toBe(concepts.relationship[0].href);
+    expect(document.querySelector("[data-prompt-concept]")).toBeNull();
+    expect(document.querySelector('[data-testid="prompt-coach"]')).toBeNull();
+    const dialog = screen.getByRole("dialog").textContent ?? "";
+    expect(dialog).not.toContain("The idea behind it");
+    expect(dialog).not.toContain(relationship.howToUse);
   });
 
-  it("renders no concept line for the task category, which has no concept", async () => {
-    const concepts = await resolvePromptConcepts();
-    render(<PromptGenerator surface="tool-page" concepts={concepts} />);
-    const task = PROMPT_CATEGORIES.find((c) => c.id === "task");
-    if (!task) return;
-    fireEvent.click(screen.getByRole("button", { name: task.label }));
+  it("shows no pool count and no elapsed clock", () => {
+    // Both were on screen on every single draw and neither was asked for.
+    // The countdown survives only where the cog has set an interval, because
+    // then the card advances on its own and the clock is that feature saying
+    // when; a clean device has set none, so there should be no clock at all.
+    render(<PromptGenerator surface="tool-page" />);
+    const location = PROMPT_CATEGORIES.find((c) => c.id === "location");
+    if (!location) return;
+    fireEvent.click(screen.getByRole("button", { name: location.label }));
     expect(screen.getByTestId("prompt-text")).toBeTruthy();
-    expect(document.querySelector("[data-prompt-concept]")).toBeNull();
+    expect(document.querySelector('[data-testid="prompt-clock"]')).toBeNull();
+    expect(screen.getByRole("dialog").textContent ?? "").not.toMatch(/\d+ of \d+ left/);
   });
 
   it("lands a concept's link on a page whose hero offers that kind as one tap", () => {
@@ -150,21 +166,20 @@ describe("the generator's concept line", () => {
 });
 
 /**
- * On the built page. The concept line itself renders inside the dialog,
- * which is client-only by design (prompt-generator-rendered.test.ts guards
- * that no dialog markup ships), so the server html cannot carry
- * `data-prompt-concept`; what it carries is the map the page hands the
- * generator, serialised into the RSC payload — each concept's route, by
- * name. That is the fact worth guarding: a page that stops resolving the map
- * ships a generator that renders no concept line at all.
+ * On the built page. The theory links are ordinary server-rendered anchors in
+ * the page's prose since 2026-10-08, not a map serialised into the generator's
+ * RSC payload, so this can assert the thing a reader and a crawler both get: a
+ * followable link per kind. A page that stops resolving the map now drops
+ * visible links rather than silently emptying a line inside a dialog.
  */
 describe("the built tool page", () => {
-  it.runIf(built)("hands the generator every resolved concept route", async () => {
+  it.runIf(built)("links every resolved concept from its own prose", async () => {
     const html = fs.readFileSync(TOOL, "utf8");
     const map = await resolvePromptConcepts();
     const links = Object.values(map).flat();
     expect(links.length).toBeGreaterThanOrEqual(7);
-    for (const link of links) expect(html, link.id).toContain(link.href);
+    for (const link of links) expect(html, link.id).toContain(`href="${link.href}"`);
+    expect(html).toContain("The idea behind it is");
     expect(html).toContain('href="/threads/anatomy-of-a-scene"');
   });
 });

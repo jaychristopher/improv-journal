@@ -75,8 +75,10 @@ describe("the classic kind", () => {
       "prompt_generated",
       expect.objectContaining({ category: "classic" }),
     );
-    // The concept under it is the classic's own, base reality.
-    expect(dialog.textContent).toContain(CLASSIC_KIND.howToUse);
+    // And the three lines and the controls are all it carries: the how-to
+    // sentence came off the slide on 2026-10-08 and lives in the tool page's
+    // own prose, which is where it was already being duplicated from.
+    expect(dialog.textContent).not.toContain(CLASSIC_KIND.howToUse);
   });
 
   it("redraws only the line that was tapped", () => {
@@ -148,10 +150,16 @@ describe("the keys and the clock", () => {
     expect(within(dialog).getByRole("button", { name: CLASSIC_KIND.label })).toBeTruthy();
   });
 
-  it("shows how long the current prompt has been up, with no control to set", () => {
+  it("shows no clock until the cog sets an interval", () => {
+    // It used to count up on every slide, beside how many were left. Both came
+    // off on 2026-10-08: a stopwatch nobody started is not a reason to take a
+    // line. The countdown when an interval *is* set is still there, and is
+    // covered in prompt-generator-component, because then the card moves on by
+    // itself and the clock is that feature saying when.
     render(<PromptGenerator surface="tool-page" />);
     openTo(PROMPT_CATEGORIES[0].label);
-    expect(screen.getByTestId("prompt-clock").textContent).toMatch(/^\d+:\d\d on this one$/);
+    expect(screen.getByTestId("prompt-text")).toBeTruthy();
+    expect(document.querySelector('[data-testid="prompt-clock"]')).toBeNull();
   });
 });
 
@@ -173,16 +181,21 @@ describe("what a row can say", () => {
     for (const p of coached) expect(p.coach!.length, p.text).toBeLessThanOrEqual(110);
   });
 
-  it("shows the coaching line under the prompt that carries it", () => {
+  it("keeps the coaching line off the slide, on the prompt that carries one", () => {
+    // Printed under every coached prompt until 2026-10-08, when the slide was
+    // cut back to the prompt and the controls. The rows still carry their
+    // coaching — the test above holds that data and its length — and nothing
+    // prints it. If it is given a home again it should be one a reader opts
+    // into, rather than a line competing with the prompt.
     leaveOnly("first-line", "She has your eyes.");
     render(<PromptGenerator surface="tool-page" />);
     const dialog = openTo(PROMPT_CATEGORIES[1].label);
     expect(dialog.querySelector('[data-testid="prompt-text"]')?.textContent).toBe(
       "She has your eyes.",
     );
-    expect(dialog.querySelector('[data-testid="prompt-coach"]')?.textContent).toContain(
-      "Whoever hears it decides who she is",
-    );
+    const row = PROMPT_BANK.find((p) => p.text === "She has your eyes.");
+    expect(row?.coach).toContain("Whoever hears it decides who she is");
+    expect(dialog.querySelector('[data-testid="prompt-coach"]')).toBeNull();
   });
 
   it("says who a prompt needs when the row says so, and links the pair guide", () => {

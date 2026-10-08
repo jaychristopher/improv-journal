@@ -288,14 +288,16 @@ describe("PromptGenerator", () => {
         "prompt_generator_auto",
         expect.objectContaining({ every: 30 }),
       );
-      // Off by default: with no time set the clock counts up and nothing moves.
+      // Off by default: with no time set nothing moves and no clock shows.
       fireEvent.click(within(dialog).getByRole("button", { name: "Settings" }));
       fireEvent.click(within(dialog).getByRole("button", { name: /^off$/i }));
       fireEvent.click(within(dialog).getByRole("button", { name: /^done$/i }));
       const held = within(dialog).getByTestId("prompt-text").textContent;
       act(() => vi.advanceTimersByTime(60_000));
       expect(within(dialog).getByTestId("prompt-text").textContent).toBe(held);
-      expect(within(dialog).getByTestId("prompt-clock").textContent).toMatch(/on this one$/);
+      // With the interval off there is no clock at all now: the count-up was
+      // cut on 2026-10-08 and only a set interval's countdown remains.
+      expect(within(dialog).queryByTestId("prompt-clock")).toBeNull();
     } finally {
       vi.useRealTimers();
     }

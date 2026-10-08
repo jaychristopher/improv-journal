@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { PromptGenerator } from "@/components/PromptGenerator";
 import { Prose } from "@/components/Prose";
 import { TableOfContents } from "@/components/TableOfContents";
+import type { PromptConceptLink } from "@/lib/prompt-bank";
 import {
   categoryAnchor,
   PROMPT_BANK,
@@ -71,10 +72,46 @@ const SECTIONS = [
   { id: "questions", text: "Questions About Improv Generators", level: 2 as const },
 ];
 
+/**
+ * A kind's concepts as links in the prose.
+ *
+ * All of them, not just the first. Two kinds declare two — a location is
+ * `environment` and `space-work`, something already wrong is `want` and
+ * `tilt` — and while the generator printed only the first, the rest were
+ * still being serialised into its RSC payload, where they were data and not
+ * links anybody could follow. Rendering them here makes every resolved
+ * concept a real anchor, which is what tracker entry 332 was after.
+ */
+function Ideas({ links }: { links: PromptConceptLink[] }) {
+  if (links.length === 0) return null;
+  return (
+    <>
+      {" "}
+      {links.length > 1 ? "The ideas behind it are " : "The idea behind it is "}
+      {links.map((link, i) => (
+        <span key={link.id}>
+          {i > 0 ? (i === links.length - 1 ? " and " : ", ") : ""}
+          <Link href={link.href}>{link.title}</Link>
+        </span>
+      ))}
+      .
+    </>
+  );
+}
+
 export default async function ImprovPromptGeneratorPage() {
-  // The categories' concepts, resolved here because the generator is a
-  // client component and cannot read the graph (tracker entry 332).
+  /**
+   * Each kind's concept, for the prose below.
+   *
+   * It used to be resolved here and handed to the generator, which printed
+   * "The idea behind it" under every drawn prompt. That line came off the
+   * slide on 2026-10-08 with the rest of the noise, and the link moved here
+   * rather than being deleted: this is server-rendered, so it is a real
+   * internal link that a crawler can follow, which the one inside a client
+   * dialog never was (tracker entry 332 wanted the link, not the placement).
+   */
   const concepts = await resolvePromptConcepts();
+  const wordIdeas = concepts[WORD_KIND.id] ?? [];
   const counts = PROMPT_CATEGORIES.map((category) => ({
     category,
     count: PROMPT_BANK.filter((p) => p.category === category.id).length,
@@ -102,7 +139,7 @@ export default async function ImprovPromptGeneratorPage() {
         <p className="text-foreground/60 mt-2 text-sm">{DESCRIPTION}</p>
       </header>
 
-      <PromptGenerator surface="tool-page" concepts={concepts} />
+      <PromptGenerator surface="tool-page" />
 
       <TableOfContents headings={SECTIONS} />
 
@@ -126,18 +163,23 @@ export default async function ImprovPromptGeneratorPage() {
           categories come from:
         </p>
         <ul>
-          {counts.map(({ category, count }) => (
-            <li key={category.id}>
-              <strong>{category.label}</strong> ({count}) &mdash;{" "}
-              <Link href={`/improv-prompts#${categoryAnchor(category)}`}>{category.heading}</Link>.{" "}
-              {category.howToUse}
-            </li>
-          ))}
+          {counts.map(({ category, count }) => {
+            const ideas = concepts[category.id] ?? [];
+            return (
+              <li key={category.id}>
+                <strong>{category.label}</strong> ({count}) &mdash;{" "}
+                <Link href={`/improv-prompts#${categoryAnchor(category)}`}>{category.heading}</Link>
+                . {category.howToUse}
+                <Ideas links={ideas} />
+              </li>
+            );
+          })}
         </ul>
         <p>
           Outside that count: <strong>one word</strong> ({WORD_BANK.length}) &mdash;{" "}
           <Link href={`/improv-prompts#${categoryAnchor(WORD_KIND)}`}>{WORD_KIND.heading}</Link>.{" "}
           {WORD_KIND.howToUse}
+          <Ideas links={wordIdeas} />
         </p>
 
         <h2 id="how-it-ranks-them">How It Ranks Them</h2>

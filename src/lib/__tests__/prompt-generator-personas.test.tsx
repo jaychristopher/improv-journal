@@ -6,9 +6,18 @@ const { trackMock } = vi.hoisted(() => ({ trackMock: vi.fn() }));
 vi.mock("@/lib/analytics", () => ({ trackEvent: trackMock }));
 
 import { PromptGenerator } from "@/components/PromptGenerator";
-import { CLASSIC_KIND, PROMPT_CATEGORIES, PROMPT_KINDS } from "@/lib/prompt-bank";
+import { CLASSIC_KIND, PROMPT_BANK, PROMPT_CATEGORIES, PROMPT_KINDS } from "@/lib/prompt-bank";
+import { SEEN_STORAGE_KEY } from "@/lib/prompt-generator";
 
 const SETTINGS_KEY = "improv-prompts:settings:v1";
+
+/** Pin one prompt of a category by marking the rest of that category seen. */
+function leaveOnly(category: string, text: string) {
+  const ids = PROMPT_BANK.filter((p) => p.category === category && p.text !== text).map(
+    (p) => p.id,
+  );
+  window.localStorage.setItem(SEEN_STORAGE_KEY, JSON.stringify(ids));
+}
 
 /**
  * What walking twenty-four people through the generator asked for
@@ -115,10 +124,23 @@ describe("what the personas asked for", () => {
   });
 
   it("E: a show, set in the cog, puts the notes under the buttons; the blend keeps them under the prompt", () => {
+    /**
+     * The notes are only the cast line now. The how-to sentence, the coaching
+     * line and the theory gloss came off the slide on 2026-10-08, so a prompt
+     * without a cast has no notes at all and this read null until the draw
+     * was pinned to one that carries a cast. The rule it checks is unchanged:
+     * with the room set to a show a laptop is a projector, and the audience
+     * should see the question rather than the host's notes.
+     */
+    const TASK = "Two people folding a fitted sheet";
+    const task = PROMPT_CATEGORIES.find((c) => c.id === "task")!;
+
     window.localStorage.setItem(SETTINGS_KEY, JSON.stringify({ room: "show" }));
+    leaveOnly("task", TASK);
     render(<PromptGenerator surface="tool-page" />);
-    const dialog = openTo(PROMPT_CATEGORIES[0].label);
+    const dialog = openTo(task.label);
     const notes = dialog.querySelector('[data-testid="prompt-notes"]') as HTMLElement;
+    expect(notes).not.toBeNull();
     expect(notes.getAttribute("data-notes")).toBe("foot");
     const another = within(dialog).getByRole("button", { name: /another/i });
     expect(another.compareDocumentPosition(notes) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
@@ -126,9 +148,11 @@ describe("what the personas asked for", () => {
     cleanup();
 
     window.localStorage.clear();
+    leaveOnly("task", TASK);
     render(<PromptGenerator surface="tool-page" />);
-    const blended = openTo(PROMPT_CATEGORIES[0].label);
+    const blended = openTo(task.label);
     const blendedNotes = blended.querySelector('[data-testid="prompt-notes"]') as HTMLElement;
+    expect(blendedNotes).not.toBeNull();
     expect(blendedNotes.getAttribute("data-notes")).toBe("card");
     const blendedAnother = within(blended).getByRole("button", { name: /another/i });
     expect(
