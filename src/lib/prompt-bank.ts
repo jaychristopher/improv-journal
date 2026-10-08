@@ -23,6 +23,7 @@
  */
 
 import { PROMPT_ROWS } from "./prompt-bank-data";
+import { PROMPT_TASK_LINES } from "./prompt-lines-data";
 import {
   ANYWHERE,
   PROMPT_SETTING_ROWS,
@@ -98,6 +99,12 @@ export interface Prompt {
    * pure axes were not enough. Empty where nothing combines.
    */
   settings: readonly PromptSetting[];
+  /**
+   * This prompt as one line of the classic, where it differs from the prompt
+   * itself. Only tasks have one: a What must not name or count people, since
+   * the Who has already said who is there — see prompt-lines-data.ts.
+   */
+  line?: string;
   /** A pair worth naming, or a group of three or more; unsaid for most. */
   cast?: PromptCast;
   /** One coaching line for the room — what to fight about, what to play straight. */
@@ -414,6 +421,15 @@ export function settingsFor(text: string): readonly PromptSetting[] {
   return raw.split("|") as PromptSetting[];
 }
 
+/**
+ * A prompt as one line of the classic: the What's own phrasing where there is
+ * one, the prompt itself everywhere else. Everything that renders or copies a
+ * classic line goes through this, so the two cannot drift apart on one surface.
+ */
+export function classicLine(prompt: Prompt): string {
+  return prompt.line ?? prompt.text;
+}
+
 export function rowToPrompt(
   category: Prompt["category"],
   [text, specific, open, charge, doable, grounded, flags = "", coach]: WordRow,
@@ -428,6 +444,7 @@ export function rowToPrompt(
     loud: flags.includes("l"),
     combinable: CLASSIC_SET.has(category) && !flags.includes("x"),
     settings: settingsFor(text),
+    ...(category === "task" && PROMPT_TASK_LINES[text] ? { line: PROMPT_TASK_LINES[text] } : {}),
     ...(flags.includes("g") ? { cast: "group" as const } : {}),
     ...(flags.includes("d") ? { cast: "pair" as const } : {}),
     ...(coach ? { coach } : {}),

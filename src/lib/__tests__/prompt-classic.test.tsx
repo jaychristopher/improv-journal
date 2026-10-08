@@ -12,6 +12,7 @@ import { PromptGenerator } from "@/components/PromptGenerator";
 import {
   CLASSIC_KIND,
   CLASSIC_PARTS,
+  classicLine,
   DEFAULT_USE_CASE,
   PROMPT_BANK,
   PROMPT_CATEGORIES,
@@ -67,7 +68,9 @@ describe("the classic kind", () => {
     for (const part of CLASSIC_PARTS) {
       const pool = poolFor(PROMPT_BANK, part, DEFAULT_USE_CASE, { combinable: true });
       expect(
-        pool.map((p) => p.text),
+        // classicLine, not text: the What renders its own phrasing and the
+        // other two fall through to the prompt (2026-10-08).
+        pool.map((p) => classicLine(p)),
         part,
       ).toContain(lineText(dialog, part));
     }
@@ -79,6 +82,20 @@ describe("the classic kind", () => {
     // sentence came off the slide on 2026-10-08 and lives in the tool page's
     // own prose, which is where it was already being duplicated from.
     expect(dialog.textContent).not.toContain(CLASSIC_KIND.howToUse);
+  });
+
+  it("puts no cast in the What on the card itself", () => {
+    // The data is held above; this is the surface, because the card could
+    // render `prompt.text` and pass every assertion about `prompt.line`.
+    render(<PromptGenerator surface="tool-page" />);
+    const dialog = openTo(CLASSIC_KIND.label);
+    const what = dialog.querySelector('[data-testid="classic-task"]')?.textContent ?? "";
+    const lines = new Set(
+      PROMPT_BANK.filter((p) => p.category === "task" && p.combinable).map((p) => classicLine(p)),
+    );
+    expect(what.length).toBeGreaterThan(5);
+    expect(lines.has(what), what).toBe(true);
+    expect(what).not.toMatch(/\b(someone|two people|a person|people)\b/i);
   });
 
   it("redraws only the line that was tapped", () => {
@@ -265,6 +282,48 @@ describe("the classic's lines name one axis each", () => {
     const pool = PROMPT_BANK.filter((p) => p.category === "location" && p.combinable);
     expect(pool.length).toBeGreaterThanOrEqual(70);
     expect(pool.filter((p) => CAST.test(p.text)).map((p) => p.text)).toEqual([]);
+  });
+
+  /**
+   * Reported on 2026-10-08: "why say 'two neighbours' then 'two people' - we
+   * already know its two people", on a draw whose Who was "Two neighbours who
+   * only ever meet on recycling day" and whose What was "Two people setting a
+   * table for more guests than there are chairs".
+   *
+   * The rule the test below this one enforces was too weak: it allowed a task
+   * to name its cast generically, on the reasoning that "two people" collides
+   * with nothing. It collides with the Who, which has already said who is
+   * there, and sometimes it contradicts the count — a group photo "of people
+   * who will not stand still" put a crowd on a card whose Who named a pair.
+   *
+   * So a What names nobody. It may point back at the pair the Who established
+   * ("the other", "one of them", "neither of them"), since that refers to the
+   * cast rather than adding to it and several of these tasks need the
+   * asymmetry; it introduces no one new and counts no one.
+   */
+  it("gives every drawable What a phrasing with nobody in it", () => {
+    const tasks = PROMPT_BANK.filter((p) => p.category === "task" && p.combinable);
+    expect(tasks.length).toBeGreaterThanOrEqual(55);
+    // A missing line must fail rather than fall back to the prompt's own
+    // wording, which is the wording this is here to keep off the card.
+    expect(tasks.filter((p) => !p.line).map((p) => p.text)).toEqual([]);
+
+    const NAMES_PEOPLE =
+      /\b(someone|somebody|people|persons?|a man|a woman|guests|crowd|everyone|anybody)\b/i;
+    const naming = tasks.map((p) => classicLine(p)).filter((line) => NAMES_PEOPLE.test(line));
+    expect(naming).toEqual([]);
+  });
+
+  it("leaves the prompt itself alone, because it is a whole prompt elsewhere", () => {
+    // The line is a second phrasing, not a rewrite. Drawn on its own a task is
+    // a complete prompt and reads as one, and the guide and
+    // improv-games-for-kids list it that way; only the classic card uses the
+    // short form. If these ever became the same string the guide's
+    // drama-class list would be half rewritten, since it mixes these with
+    // prompts that are not combinable and keep their people on purpose.
+    const folding = PROMPT_BANK.find((p) => p.text === "Two people folding a fitted sheet");
+    expect(folding?.line).toBe("Folding a fitted sheet");
+    expect(folding?.text).toBe("Two people folding a fitted sheet");
   });
 
   it("keeps the excluded lines in the bank, where they are still good prompts", () => {

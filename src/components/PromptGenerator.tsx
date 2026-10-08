@@ -7,6 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 import {
   CLASSIC_PART_LABELS,
   CLASSIC_PARTS,
+  classicLine,
   type ClassicPart,
   DEFAULT_USE_CASE,
   PROMPT_BANK,
@@ -379,7 +380,9 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
       next.parts
         ? CLASSIC_PARTS.map(
             (part) =>
-              `${CLASSIC_PART_LABELS[part]}: ${next.parts?.[part]?.prompt.text ?? "every one seen"}`,
+              `${CLASSIC_PART_LABELS[part]}: ${
+                next.parts?.[part] ? classicLine(next.parts[part].prompt) : "every one seen"
+              }`,
           ).join(". ")
         : next.picks.length > 0
           ? next.picks.map((p) => p.prompt.text).join(". ")
@@ -416,7 +419,7 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
     const next: Draw = { ...draw, parts: { ...draw.parts, [part]: pick } };
     setCopied(false);
     setDraw(next);
-    setAnnounce(`${CLASSIC_PART_LABELS[part]}: ${pick.prompt.text}`);
+    setAnnounce(`${CLASSIC_PART_LABELS[part]}: ${classicLine(pick.prompt)}`);
   }
 
   function takeOver(event: React.MouseEvent<HTMLButtonElement>, why: string) {
@@ -961,7 +964,7 @@ function ClassicCard({
             data-part={part}
             onClick={() => onRedraw(part)}
             aria-label={`Change the ${CLASSIC_PART_LABELS[part].toLowerCase()} line: ${
-              pick ? pick.prompt.text : "every one seen, start this line again"
+              pick ? classicLine(pick.prompt) : "every one seen, start this line again"
             }`}
             title="Tap to change just this line"
             // The label stacks above the words below 360px and the words wrap
@@ -976,7 +979,7 @@ function ClassicCard({
               data-testid={`classic-${part}`}
               className="text-foreground-strong animate-fade-in text-xl leading-snug font-semibold tracking-tight text-balance [overflow-wrap:anywhere] sm:text-2xl lg:text-3xl xl:text-4xl"
             >
-              {pick ? pick.prompt.text : "Every one seen. Tap to start this line again."}
+              {pick ? classicLine(pick.prompt) : "Every one seen. Tap to start this line again."}
             </span>
           </ToolChoice>
         );

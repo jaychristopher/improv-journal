@@ -20,6 +20,7 @@
 
 import {
   CLASSIC_PARTS,
+  classicLine,
   type ClassicPart,
   type Prompt,
   type PromptUseCase,
@@ -198,7 +199,10 @@ export function redrawPool(
 
 /** The classic's three lines as one string, for the clipboard. */
 export function classicText(draw: ClassicDraw): string {
-  return CLASSIC_PARTS.map((part) => draw[part]?.prompt.text)
+  return CLASSIC_PARTS.map((part) => {
+    const pick = draw[part];
+    return pick ? classicLine(pick.prompt) : undefined;
+  })
     .filter((t): t is string => Boolean(t))
     .join("\n");
 }
