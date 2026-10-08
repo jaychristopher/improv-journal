@@ -470,6 +470,8 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
+      // The button has no visible label any more, so say it.
+      setAnnounce("Copied");
       trackEvent("prompt_copied", { use_case: room, category: kind });
     } catch {
       // No clipboard in this context. The text is on screen; nothing to do.
@@ -645,17 +647,57 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
             {announce}
           </div>
           <div className="flex items-center justify-between px-5 pt-[max(1rem,env(safe-area-inset-top))] pb-3 sm:px-8">
-            <div className="text-foreground-dim min-w-0 text-xs tracking-wider uppercase">
-              {step === "kind" && "What kind of start?"}
-              {step === "settings" && "Settings"}
+            <div className="flex min-w-0 items-center gap-1">
+              {/* A different kind, put where going back belongs: beside the
+                  name of the kind you are in, rather than a third button at
+                  the foot competing with the prompt (2026-10-08). The `k` key
+                  still does the same thing. */}
               {step === "prompt" && kindInfo && (
-                <span className="block truncate">
-                  {kindInfo.label}
-                  {roomSet && <> &middot; {roomInfo.label}</>}
-                </span>
+                <button
+                  type="button"
+                  onClick={() => setStep("kind")}
+                  aria-label="A different kind"
+                  title="A different kind"
+                  className="text-foreground/80 hover:text-foreground hover:bg-foreground/5 -ml-2 flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full transition-colors"
+                >
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
               )}
+              <div className="text-foreground-dim min-w-0 text-sm tracking-wider uppercase">
+                {step === "kind" && "What kind of start?"}
+                {step === "settings" && "Settings"}
+                {step === "prompt" && kindInfo && (
+                  <span className="block truncate">
+                    {kindInfo.label}
+                    {roomSet && <> &middot; {roomInfo.label}</>}
+                  </span>
+                )}
+              </div>
             </div>
             <div className="-mr-2 flex shrink-0 items-center gap-1">
+              {/* Copy, as an icon rather than a button at the foot. The label
+                  went with the button, so the confirmation is spoken into the
+                  live region as well as shown as a tick — without that, a
+                  screen reader got no acknowledgement at all. */}
+              {step === "prompt" && draw && hasPrompt(draw) && (
+                <button
+                  type="button"
+                  onClick={() => copyPrompt(textOf(draw))}
+                  aria-label={copied ? "Copied" : "Copy"}
+                  title={copied ? "Copied" : "Copy"}
+                  data-testid="prompt-copy"
+                  className="text-foreground/80 hover:text-foreground hover:bg-foreground/5 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition-colors"
+                >
+                  {copied ? <CheckIcon /> : <CopyIcon />}
+                </button>
+              )}
               {step !== "settings" && (
                 <button
                   type="button"
@@ -890,38 +932,27 @@ export function PromptGenerator({ surface }: { surface: PromptGeneratorSurface }
                   )}
                 </div>
 
-                <div className="mt-8 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+                {/* One button at the foot, and it is the one pressed over and
+                    over. Copy moved beside the cog and a different kind became
+                    the chevron by the title, so nothing down here competes
+                    with it. Full width on a phone, where a button pinned to
+                    one corner is the harder target; to the right from `sm`. */}
+                <div className="mt-8 flex justify-end" data-testid="prompt-actions">
                   {hasPrompt(draw) ? (
-                    <>
-                      <ToolAction
-                        onClick={() => drawFrom(kindInfo.id)}
-                        className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
-                      >
-                        {draw.picks.length > 1 ? "Another hand" : "Another one"}
-                      </ToolAction>
-                      <ToolAction
-                        kind="secondary"
-                        onClick={() => copyPrompt(textOf(draw))}
-                        className="min-h-12 px-5 text-sm font-medium"
-                      >
-                        {copied ? "Copied" : "Copy"}
-                      </ToolAction>
-                    </>
+                    <ToolAction
+                      onClick={() => drawFrom(kindInfo.id)}
+                      className="min-h-16 w-full px-10 text-lg sm:w-auto sm:px-14"
+                    >
+                      {draw.picks.length > 1 ? "Next hand" : "Next"}
+                    </ToolAction>
                   ) : (
                     <ToolAction
                       onClick={() => drawFrom(kindInfo.id, true)}
-                      className="min-h-14 flex-1 px-5 text-base sm:flex-none sm:px-8"
+                      className="min-h-16 w-full px-10 text-lg sm:w-auto sm:px-14"
                     >
                       Start again
                     </ToolAction>
                   )}
-                  <ToolAction
-                    kind="secondary"
-                    onClick={() => setStep("kind")}
-                    className="min-h-12 px-5 text-sm font-medium"
-                  >
-                    A different kind
-                  </ToolAction>
                 </div>
                 {notesAtFoot && notes}
               </div>
@@ -1149,6 +1180,27 @@ function KindIcon({ kind, className }: { kind: PromptKind; className: string }) 
         </svg>
       );
   }
+}
+
+function CopyIcon() {
+  return (
+    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M8 7V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M5 8h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"
+      />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m5 13 4 4L19 7" />
+    </svg>
+  );
 }
 
 function CogIcon() {

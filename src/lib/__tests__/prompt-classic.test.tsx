@@ -160,7 +160,7 @@ describe("the keys and the clock", () => {
     fireEvent.keyDown(document.body, { key: " " });
     expect(generated()).toBe(3);
     // A focused control keeps its own meaning for Space.
-    const another = within(dialog).getByRole("button", { name: /another/i });
+    const another = within(dialog).getByRole("button", { name: /next/i });
     fireEvent.keyDown(another, { key: " " });
     expect(generated()).toBe(3);
     fireEvent.keyDown(document.body, { key: "k" });

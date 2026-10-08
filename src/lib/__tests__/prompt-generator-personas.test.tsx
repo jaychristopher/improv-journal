@@ -78,7 +78,7 @@ describe("what the personas asked for", () => {
     expect(live.getAttribute("aria-live")).toBe("polite");
     expect(live.textContent).toBe(text.textContent);
     // Another one: focus and the announcement move to the new card.
-    fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /next/i }));
     const next = dialog.querySelector('[data-testid="prompt-text"]') as HTMLElement;
     expect(document.activeElement).toBe(next);
     expect(live.textContent).toBe(next.textContent);
@@ -142,7 +142,7 @@ describe("what the personas asked for", () => {
     const notes = dialog.querySelector('[data-testid="prompt-notes"]') as HTMLElement;
     expect(notes).not.toBeNull();
     expect(notes.getAttribute("data-notes")).toBe("foot");
-    const another = within(dialog).getByRole("button", { name: /another/i });
+    const another = within(dialog).getByRole("button", { name: /next/i });
     expect(another.compareDocumentPosition(notes) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     fireEvent.keyDown(document, { key: "Escape" });
     cleanup();
@@ -154,7 +154,7 @@ describe("what the personas asked for", () => {
     const blendedNotes = blended.querySelector('[data-testid="prompt-notes"]') as HTMLElement;
     expect(blendedNotes).not.toBeNull();
     expect(blendedNotes.getAttribute("data-notes")).toBe("card");
-    const blendedAnother = within(blended).getByRole("button", { name: /another/i });
+    const blendedAnother = within(blended).getByRole("button", { name: /next/i });
     expect(
       blendedNotes.compareDocumentPosition(blendedAnother) & Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy();

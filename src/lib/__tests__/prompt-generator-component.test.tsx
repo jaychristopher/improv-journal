@@ -112,7 +112,7 @@ describe("PromptGenerator", () => {
     const seenTexts = new Set<string>();
     seenTexts.add(screen.getByTestId("prompt-text").textContent ?? "");
     for (let i = 1; i < pool.length; i++) {
-      fireEvent.click(screen.getByRole("button", { name: /another/i }));
+      fireEvent.click(screen.getByRole("button", { name: /next/i }));
       const text = screen.getByTestId("prompt-text").textContent ?? "";
       expect(seenTexts.has(text), text).toBe(false);
       seenTexts.add(text);
@@ -121,7 +121,7 @@ describe("PromptGenerator", () => {
     expect(readSeen().length).toBe(pool.length);
 
     // One more and the pool is dry: the tool says so and offers a fresh start.
-    fireEvent.click(screen.getByRole("button", { name: /another/i }));
+    fireEvent.click(screen.getByRole("button", { name: /next/i }));
     expect(screen.queryByTestId("prompt-text")).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: /start again/i }));
     expect(textsInBank.has(screen.getByTestId("prompt-text").textContent ?? "")).toBe(true);
@@ -200,7 +200,7 @@ describe("PromptGenerator", () => {
       const prompt = byText.get(text);
       expect(prompt, text).toBeDefined();
       expect(prompt?.personal || prompt?.adult || prompt?.loud, text).toBeFalsy();
-      if (i < pool.length - 1) fireEvent.click(screen.getByRole("button", { name: /another/i }));
+      if (i < pool.length - 1) fireEvent.click(screen.getByRole("button", { name: /next/i }));
     }
   });
 
@@ -227,7 +227,7 @@ describe("PromptGenerator", () => {
   it("forgets what this device has seen from the settings, so every pool starts again", () => {
     render(<PromptGenerator surface="guide-hero" />);
     const dialog = openWith(PROMPT_CATEGORIES[0].label);
-    fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /next/i }));
     expect(readSeen().length).toBe(2);
     fireEvent.click(within(dialog).getByRole("button", { name: "Settings" }));
     const forget = within(dialog).getByRole("button", { name: /forget what this device/i });
@@ -260,7 +260,7 @@ describe("PromptGenerator", () => {
     expect(within(dialog).queryByTestId("prompt-text")).toBeNull();
     // The hand has focus, so a screen reader reads all four.
     expect(document.activeElement).toBe(within(dialog).getByTestId("prompt-set"));
-    fireEvent.click(within(dialog).getByRole("button", { name: /another hand/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /next hand/i }));
     expect(readSeen().length).toBe(8);
     // The classic ignores the count: one card, three lines.
     fireEvent.click(within(dialog).getByRole("button", { name: /different kind/i }));
@@ -302,6 +302,72 @@ describe("PromptGenerator", () => {
       vi.useRealTimers();
     }
   });
+  /**
+   * Where the slide's controls sit, after 2026-10-08.
+   *
+   * "Instead of 'A different kind' button on bottom, we should put a back
+   * chevron next to the 'A shared task' in the top left... Instead of
+   * 'Another one' we could make a 'Next' button that is bigger and centered
+   * on the bottom right. Copy can be an icon next to the cog in the top right
+   * rather than a full button on bottom."
+   *
+   * The foot had three buttons for one job each, and the job done over and
+   * over was one of them. Now the foot carries only that one.
+   */
+  it("leaves one action at the foot, and it is Next", () => {
+    render(<PromptGenerator surface="tool-page" />);
+    const dialog = openWith(PROMPT_CATEGORIES[0].label);
+    const foot = dialog.querySelector('[data-testid="prompt-actions"]') as HTMLElement;
+    const buttons = within(foot).getAllByRole("button");
+    expect(buttons).toHaveLength(1);
+    expect(buttons[0].textContent).toMatch(/next/i);
+    // Copy and a different kind still exist — in the header, not down here.
+    expect(within(foot).queryByRole("button", { name: "Copy" })).toBeNull();
+    expect(within(foot).queryByRole("button", { name: "A different kind" })).toBeNull();
+    expect(within(dialog).queryByRole("button", { name: /^another/i })).toBeNull();
+  });
+
+  it("goes back to the kinds from the chevron beside the title", () => {
+    render(<PromptGenerator surface="tool-page" />);
+    const dialog = openWith(PROMPT_CATEGORIES[0].label);
+    fireEvent.click(within(dialog).getByRole("button", { name: "A different kind" }));
+    expect(within(dialog).getByRole("button", { name: WORD_KIND.label })).toBeTruthy();
+  });
+
+  it("copies from the header icon and says so out loud", async () => {
+    // The icon has no visible label, so the only acknowledgement a screen
+    // reader can get is the live region. Without this the control would be
+    // silent for the people who most need telling that it worked.
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.assign(navigator, { clipboard: { writeText } });
+    render(<PromptGenerator surface="tool-page" />);
+    const dialog = openWith(PROMPT_CATEGORIES[0].label);
+    const shown = within(dialog).getByTestId("prompt-text").textContent ?? "";
+    expect(shown.length).toBeGreaterThan(5);
+
+    fireEvent.click(within(dialog).getByRole("button", { name: "Copy" }));
+    await vi.waitFor(() => expect(writeText).toHaveBeenCalledWith(shown));
+    await vi.waitFor(() =>
+      expect(within(dialog).getByTestId("prompt-announce").textContent).toBe("Copied"),
+    );
+    // And the control renames itself, so its name is never stale.
+    expect(within(dialog).getByRole("button", { name: "Copied" })).toBeTruthy();
+  });
+
+  it("gives every icon-only control a name and a target worth hitting", () => {
+    // Four of the five controls on a slide are now icons. An icon button with
+    // no accessible name is an unlabelled button, and `h-11 w-11` is 44px,
+    // comfortably over the 24px WCAG 2.2 asks for.
+    render(<PromptGenerator surface="tool-page" />);
+    const dialog = openWith(PROMPT_CATEGORIES[0].label);
+    for (const name of ["A different kind", "Copy", "Settings", "Close"]) {
+      const button = within(dialog).getByRole("button", { name });
+      expect(button, name).toBeTruthy();
+      expect(button.className, name).toContain("h-11");
+      expect(button.className, name).toContain("w-11");
+    }
+  });
+
   it("deals a word from its own bank, never twice, in hands, and keeps a school room to the safe ones", () => {
     const words = new Map(WORD_BANK.map((w) => [w.text, w]));
     render(<PromptGenerator surface="guide-hero" />);
@@ -312,7 +378,7 @@ describe("PromptGenerator", () => {
       expect(words.has(text), text).toBe(true);
       expect(seen.has(text), text).toBe(false);
       seen.add(text);
-      fireEvent.click(within(dialog).getByRole("button", { name: /another one/i }));
+      fireEvent.click(within(dialog).getByRole("button", { name: /next/i }));
     }
     expect(readSeen().filter((id) => id.startsWith("word:"))).toHaveLength(21);
     expect(trackMock).toHaveBeenCalledWith(
@@ -324,7 +390,7 @@ describe("PromptGenerator", () => {
     fireEvent.click(within(dialog).getByRole("button", { name: "4" }));
     fireEvent.click(within(dialog).getByRole("button", { name: /a school drama room/i }));
     fireEvent.click(within(dialog).getByRole("button", { name: /^done$/i }));
-    fireEvent.click(within(dialog).getByRole("button", { name: /another/i }));
+    fireEvent.click(within(dialog).getByRole("button", { name: /next/i }));
     const hand = within(dialog)
       .getAllByTestId("prompt-item")
       .map((li) => li.textContent?.replace(/^\d+/, "") ?? "");
