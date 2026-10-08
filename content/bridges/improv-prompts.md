@@ -57,7 +57,7 @@ primary_cta_target: first-line-drill
 secondary_cta_target: beginner-foundations
 status: draft
 created: "2026-08-22"
-updated: "2026-09-30"
+updated: "2026-10-08"
 ---
 
 # Improv Prompts: 573 Scene Starters for Class or Stage
